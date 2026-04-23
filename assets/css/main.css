@@ -444,6 +444,100 @@ body {
 }
 .plan-saved::before { content: "●"; color: #28a745; font-size: 0.5rem; }
 
+/* ── Goal queue ──────────────────────────────────────────────────────────── */
+.goal-queue {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-q);
+  margin-bottom: var(--sp-h);
+}
+.goal-card {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-h);
+  padding: var(--sp-h);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: default;
+}
+.goal-card.dragging { opacity: 0.4; }
+.goal-card.drag-over { border-color: var(--gold); box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold) 30%, transparent); }
+.goal-card-handle {
+  cursor: grab;
+  color: var(--muted);
+  font-size: var(--fs-lg);
+  line-height: 1;
+  user-select: none;
+  flex-shrink: 0;
+}
+.goal-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.goal-card-label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goal-card-reqs {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+.goal-card-remove {
+  flex-shrink: 0;
+  font-size: var(--fs-xs);
+  padding: 2px var(--sp-q);
+  color: var(--muted);
+}
+.goal-adder {
+  display: flex;
+  gap: var(--sp-h);
+  margin-bottom: var(--sp-h);
+}
+.goal-adder select { flex: 1; }
+.goal-custom-form {
+  margin-top: var(--sp-h);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-h);
+}
+.goal-custom-form summary {
+  cursor: pointer;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  list-style: none;
+}
+.goal-custom-form summary::before { content: "+ "; color: var(--gold); }
+.goal-custom-form[open] summary::before { content: "– "; }
+.cg-req-list, .cg-req-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-q);
+}
+.cg-req-row {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--sp-h);
+}
+.route-goal-divider {
+  list-style: none;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  padding: var(--sp-h) 0 var(--sp-q);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--sp-q);
+}
+
 /* ── Node page ───────────────────────────────────────────────────────────── */
 .node-page { max-width: unset; margin: 0 auto; padding: var(--sp-2) var(--sp); }
 .node-page h1 { font-size: var(--fs-2xl); padding: var(--sp) 0; }

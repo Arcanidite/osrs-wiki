@@ -1,0 +1,5 @@
+{"id":"quest-dt","label":"Desert Treasure","reqs":{"magic":50,"thieving":53,"slayer":10,"firemaking":50},"terminal":"quest-dt"}
+{"id":"quest-mm","label":"Monkey Madness I","reqs":{"attack":43,"defence":43},"terminal":"quest-mm"}
+{"id":"barrows","label":"Barrows runs","reqs":{"attack":60,"strength":60,"defence":60,"prayer":43},"terminal":"unlock-barrows"}
+{"id":"gwd","label":"God Wars Dungeon","reqs":{"strength":60,"prayer":43},"terminal":"unlock-gwd"}
+{"id":"raids-cox","label":"Chambers of Xeric","reqs":{"attack":75,"strength":75,"defence":75,"ranged":75,"magic":75,"prayer":74},"terminal":"unlock-cox"}
