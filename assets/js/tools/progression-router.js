@@ -396,18 +396,18 @@
     `).join("");
 
     list.querySelectorAll("[data-load]").forEach((btn) => {
-      btn.addEventListener("click", () => loadPlan(plans[+btn.dataset.load], skills));
+      btn.addEventListener("click", () => loadPlan(plans[+btn.dataset.load]));
     });
     list.querySelectorAll("[data-delete]").forEach((btn) => {
       btn.addEventListener("click", () => { store.deletePlan(+btn.dataset.delete); renderPlans(); });
     });
   }
 
-  // skills captured in closure after init resolves
-  let skills = [];
+  // skill name list captured in closure after init resolves
+  let skillNames = [];
 
   function loadPlan(plan) {
-    applyProfile({ skills: plan.skills, style: plan.style }, skills);
+    applyProfile({ skills: plan.skills, style: plan.style }, skillNames);
     if (plan.goals) {
       goalQueue = plan.goals;
       store.saveGoals(goalQueue);
@@ -427,21 +427,21 @@
       ]);
     } catch { return; }
 
-    skills = deriveSkills(steps);
+    skillNames = deriveSkills(steps);
 
-    buildSkillGrid(skills);
+    buildSkillGrid(skillNames);
     buildPresetSelect(presets);
     buildRegionExcludes(regions);
 
     const saved = store.profile();
-    if (Object.keys(saved).length) applyProfile(saved, skills);
+    if (Object.keys(saved).length) applyProfile(saved, skillNames);
 
     goalQueue = store.goals();
     renderGoalQueue();
 
     els.inputs().forEach((el) => {
       el.addEventListener("change", () => {
-        store.saveProfile(readProfile(skills));
+        store.saveProfile(readProfile(skillNames));
         const status = els.saveStatus();
         if (status) status.hidden = false;
       });
@@ -457,7 +457,7 @@
       if (els.presetSel()) els.presetSel().value = "";
     });
 
-    els.cgAddReq()?.addEventListener("click", () => addReqRow(skills));
+    els.cgAddReq()?.addEventListener("click", () => addReqRow(skillNames));
 
     els.cgSubmit()?.addEventListener("click", () => {
       const goal = readCustomGoal();
@@ -475,14 +475,14 @@
         els.steps().hidden = true;
         return;
       }
-      const profile = readProfile(skills);
+      const profile = readProfile(skillNames);
       const path    = routeMulti(goalQueue, steps, profile);
       renderSteps(path);
       window._routerLastPath = { path, profile, goals: goalQueue };
     });
 
     els.resetBtn()?.addEventListener("click", () => {
-      skills.forEach((sk) => { const el = els.skillInput(sk); if (el) el.value = 1; });
+      skillNames.forEach((sk) => { const el = els.skillInput(sk); if (el) el.value = 1; });
       if (els.style()) els.style().value = "balanced";
       goalQueue = [];
       store.saveGoals(goalQueue);
