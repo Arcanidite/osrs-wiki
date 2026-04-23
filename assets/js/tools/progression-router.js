@@ -7,9 +7,9 @@
   const STORE_PLANS      = "osrs-router-plans";
   const STORE_GOALS      = "osrs-router-goals";
   const STORE_ACTIVE     = "osrs-router-active";
-  const STORE_STEP_NOTES = "osrs-step-notes";  // {stepId: noteText}
+  const STORE_STEP_NOTES = "osrs-step-notes";
 
-  // ── Data loading ──────────────────────────────────────────────────────────
+  // ── Data ──────────────────────────────────────────────────────────────────
   async function loadJsonl(url) {
     const text = await fetch(url).then((r) => r.text());
     return text.trim().split("\n").map((l) => JSON.parse(l));
@@ -24,79 +24,91 @@
 
   // ── Persistence ───────────────────────────────────────────────────────────
   const store = {
-    profile:     () => JSON.parse(localStorage.getItem(STORE_PROFILE) ?? "{}"),
-    saveProfile: (p) => localStorage.setItem(STORE_PROFILE, JSON.stringify(p)),
+    profile:      ()      => JSON.parse(localStorage.getItem(STORE_PROFILE) ?? "{}"),
+    saveProfile:  (p)     => localStorage.setItem(STORE_PROFILE, JSON.stringify(p)),
 
-    plans:       () => JSON.parse(localStorage.getItem(STORE_PLANS) ?? "[]"),
-    savePlan: (plan) => {
-      const plans = store.plans();
-      plans.push(plan);
+    plans:        ()      => JSON.parse(localStorage.getItem(STORE_PLANS) ?? "[]"),
+    savePlan:     (plan)  => {
+      const plans = store.plans(); plans.push(plan);
       localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
       return plans.length - 1;
     },
-    updatePlan: (idx, plan) => {
-      const plans = store.plans();
-      plans[idx] = plan;
+    updatePlan:   (i, p)  => {
+      const plans = store.plans(); plans[i] = p;
       localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
     },
-    deletePlan: (idx) => {
-      const plans = store.plans();
-      plans.splice(idx, 1);
+    deletePlan:   (i)     => {
+      const plans = store.plans(); plans.splice(i, 1);
       localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
     },
 
-    goals:      () => JSON.parse(localStorage.getItem(STORE_GOALS)  ?? "[]"),
-    saveGoals:  (g) => localStorage.setItem(STORE_GOALS,  JSON.stringify(g)),
+    goals:        ()      => JSON.parse(localStorage.getItem(STORE_GOALS)  ?? "[]"),
+    saveGoals:    (g)     => localStorage.setItem(STORE_GOALS,  JSON.stringify(g)),
 
-    active:     () => JSON.parse(localStorage.getItem(STORE_ACTIVE) ?? "null"),
-    saveActive: (p) => localStorage.setItem(STORE_ACTIVE, JSON.stringify(p)),
+    active:       ()      => JSON.parse(localStorage.getItem(STORE_ACTIVE) ?? "null"),
+    saveActive:   (p)     => localStorage.setItem(STORE_ACTIVE, JSON.stringify(p)),
 
-    // Per-step notes: read all, write one, clear all
-    stepNotes:      ()           => JSON.parse(localStorage.getItem(STORE_STEP_NOTES) ?? "{}"),
-    saveStepNote:   (id, text)   => {
-      const notes = store.stepNotes();
-      if (text.trim()) notes[id] = text.trim();
-      else delete notes[id];
-      localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(notes));
+    stepNotes:    ()      => JSON.parse(localStorage.getItem(STORE_STEP_NOTES) ?? "{}"),
+    saveStepNote: (id, t) => {
+      const n = store.stepNotes();
+      if (t.trim()) n[id] = t.trim(); else delete n[id];
+      localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(n));
     },
-    applyStepNotes: (notesMap)   => localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(notesMap ?? {})),
-    clearStepNotes: ()           => localStorage.removeItem(STORE_STEP_NOTES),
+    applyNotes:   (m)     => localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(m ?? {})),
+    clearNotes:   ()      => localStorage.removeItem(STORE_STEP_NOTES),
   };
 
-  // ── Active plan index (which saved plan is currently loaded) ──────────────
-  // -1 means unsaved route; >=0 means a saved plan slot
-  let activePlanIdx = -1;
+  // ── Mutable plan state ────────────────────────────────────────────────────
+  // currentPath: the live ordered step list shown in the route panel.
+  // pinnedExclusions: step ids the user has manually removed — router won't re-add them.
+  // pinnedInserts: user-inserted custom steps, spliced back in after every recompute
+  //   by their anchor (the id of the step they were inserted after, or "start").
+  let currentPath      = [];
+  let pinnedExclusions = new Set();
+  let pinnedInserts    = [];   // [{anchor: stepId|"start", step: {...}}]
+  let activePlanIdx    = -1;
+  let goalQueue        = [];
+  let skillNames       = [];
 
-  // ── DOM refs ──────────────────────────────────────────────────────────────
+  // Cached data from JSONL — available after init
+  let allSteps   = [];
+  let allGoals   = [];
+  let allRegions = [];
+
+  // ── DOM ───────────────────────────────────────────────────────────────────
   const $ = (id) => document.getElementById(id);
   const els = {
-    inputs:     () => document.querySelectorAll("#router-inputs input, #router-inputs select"),
-    skillInput: (sk) => $(`rt-${sk}`),
-    skillGrid:  () => $("rt-skill-grid"),
-    style:      () => $("rt-style"),
-    calcBtn:    () => $("rt-calculate"),
-    resetBtn:   () => $("rt-reset"),
-    empty:      () => $("rt-empty"),
-    steps:      () => $("rt-steps"),
-    saveStatus: () => $("rt-save-status"),
-    planName:   () => $("rt-plan-name"),
-    planDesc:   () => $("rt-plan-desc"),
-    saveBtn:    () => $("rt-save-plan"),
-    planList:   () => $("rt-plan-list"),
-    noPlans:    () => $("rt-no-plans"),
-    goalQueue:  () => $("rt-goal-queue"),
-    noGoals:    () => $("rt-no-goals"),
-    presetSel:  () => $("rt-preset-select"),
-    addPreset:  () => $("rt-add-preset"),
-    cgLabel:    () => $("cg-label"),
-    cgTerminal: () => $("cg-terminal"),
-    cgReqs:     () => $("cg-reqs"),
-    cgAddReq:   () => $("cg-add-req"),
-    cgSubmit:   () => $("cg-submit"),
-    routeBar:   () => $("rt-route-bar"),
+    inputs:    () => document.querySelectorAll("#router-inputs input, #router-inputs select"),
+    skillInput:(sk) => $(`rt-${sk}`),
+    skillGrid: () => $("rt-skill-grid"),
+    style:     () => $("rt-style"),
+    calcBtn:   () => $("rt-calculate"),
+    resetBtn:  () => $("rt-reset"),
+    empty:     () => $("rt-empty"),
+    steps:     () => $("rt-steps"),
+    saveStatus:() => $("rt-save-status"),
+    planName:  () => $("rt-plan-name"),
+    planDesc:  () => $("rt-plan-desc"),
+    saveBtn:   () => $("rt-save-plan"),
+    planList:  () => $("rt-plan-list"),
+    noPlans:   () => $("rt-no-plans"),
+    goalQueue: () => $("rt-goal-queue"),
+    noGoals:   () => $("rt-no-goals"),
+    presetSel: () => $("rt-preset-select"),
+    addPreset: () => $("rt-add-preset"),
+    cgLabel:   () => $("cg-label"),
+    cgTerminal:() => $("cg-terminal"),
+    cgReqs:    () => $("cg-reqs"),
+    cgAddReq:  () => $("cg-add-req"),
+    cgSubmit:  () => $("cg-submit"),
+    routeBar:  () => $("rt-route-bar"),
   };
 
-  // ── Skill grid ────────────────────────────────────────────────────────────
+  function escHtml(s) {
+    return String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+
+  // ── Profile ───────────────────────────────────────────────────────────────
   function buildSkillGrid(skills) {
     const grid = els.skillGrid();
     if (!grid) return;
@@ -104,45 +116,38 @@
       <div class="form-group">
         <label for="rt-${sk}">${sk.charAt(0).toUpperCase() + sk.slice(1)}</label>
         <input type="number" id="rt-${sk}" min="1" max="99" value="1">
-      </div>
-    `).join("");
+      </div>`).join("");
   }
 
   function buildRegionExcludes(regions) {
-    const container = $("rt-region-excludes");
-    if (!container) return;
-    container.innerHTML = regions.map((r) => `
+    const c = $("rt-region-excludes");
+    if (!c) return;
+    c.innerHTML = regions.map((r) => `
       <label class="region-exclude-item">
         <input type="checkbox" value="region-${r.id}"> ${r.label}
-      </label>
-    `).join("");
+      </label>`).join("");
   }
 
   function buildPresetSelect(presets) {
     const sel = els.presetSel();
     if (!sel) return;
     sel.innerHTML = `<option value="">Add preset goal…</option>` +
-      presets.map((p) => `<option value="${p.id}">${p.label}</option>`).join("");
+      presets.map((p) => `<option value="${p.id}">${escHtml(p.label)}</option>`).join("");
   }
 
-  // ── Profile ───────────────────────────────────────────────────────────────
-  function readExcludedRegions() {
-    return Array.from(document.querySelectorAll("#rt-region-excludes input:checked")).map((el) => el.value);
-  }
-
-  function readProfile(skills) {
+  function readProfile() {
     return {
-      skills: skills.reduce((acc, sk) => {
+      skills: skillNames.reduce((acc, sk) => {
         acc[sk] = parseInt(els.skillInput(sk)?.value ?? 1, 10) || 1;
         return acc;
       }, {}),
       style:          els.style()?.value ?? "balanced",
-      excludeRegions: readExcludedRegions(),
+      excludeRegions: Array.from(document.querySelectorAll("#rt-region-excludes input:checked")).map((el) => el.value),
     };
   }
 
-  function applyProfile(p, skills) {
-    skills.forEach((sk) => {
+  function applyProfile(p) {
+    skillNames.forEach((sk) => {
       const el = els.skillInput(sk);
       if (el && p.skills?.[sk]) el.value = p.skills[sk];
     });
@@ -155,10 +160,9 @@
   }
 
   // ── Goal queue ────────────────────────────────────────────────────────────
-  let goalQueue = [];
-
   function reqsSummary(reqs) {
-    return Object.entries(reqs ?? {}).map(([sk, lvl]) => `${sk} ${lvl}`).join(", ") || "no skill reqs";
+    const parts = Object.entries(reqs ?? {}).map(([sk, lvl]) => `${sk} ${lvl}`);
+    return parts.join(", ") || "no reqs";
   }
 
   function renderGoalQueue() {
@@ -167,6 +171,7 @@
     if (!ul) return;
     ul.innerHTML = "";
     none.hidden = !!goalQueue.length;
+
     goalQueue.forEach((goal, i) => {
       const li = document.createElement("li");
       li.className = "goal-card";
@@ -175,24 +180,96 @@
       li.innerHTML = `
         <span class="goal-card-handle" aria-hidden="true">⠿</span>
         <span class="goal-card-body">
-          <span class="goal-card-label">${goal.label}</span>
+          <span class="goal-card-label">${escHtml(goal.label)}</span>
           <span class="goal-card-reqs">${reqsSummary(goal.reqs)}</span>
         </span>
-        <button class="btn btn-ghost goal-card-remove" data-idx="${i}" title="Remove">✕</button>
-      `;
+        <span class="goal-card-btns">
+          <button class="btn btn-ghost goal-card-edit" data-idx="${i}" title="Edit">✎</button>
+          <button class="btn btn-ghost goal-card-remove" data-idx="${i}" title="Remove">✕</button>
+        </span>`;
       ul.appendChild(li);
     });
+
     wireDrag(ul);
+
+    ul.querySelectorAll(".goal-card-edit").forEach((btn) => {
+      btn.addEventListener("click", () => openGoalEditor(+btn.dataset.idx));
+    });
     ul.querySelectorAll(".goal-card-remove").forEach((btn) => {
       btn.addEventListener("click", () => {
         goalQueue.splice(+btn.dataset.idx, 1);
         store.saveGoals(goalQueue);
         renderGoalQueue();
+        recompute();
       });
     });
   }
 
-  // ── Drag-to-reorder ───────────────────────────────────────────────────────
+  // Inline editor for an existing goal card
+  function openGoalEditor(idx) {
+    const ul = els.goalQueue();
+    const card = ul?.querySelector(`.goal-card[data-idx="${idx}"]`);
+    if (!card) return;
+    const goal = goalQueue[idx];
+
+    const form = document.createElement("li");
+    form.className = "goal-edit-form";
+    form.innerHTML = `
+      <div class="goal-edit-row">
+        <input class="ge-label" type="text" value="${escHtml(goal.label)}" placeholder="Goal label">
+        <input class="ge-terminal" type="text" value="${escHtml(goal.terminal ?? "")}" placeholder="Terminal step id (opt)">
+      </div>
+      <div class="ge-reqs" id="ge-reqs-${idx}"></div>
+      <div class="goal-edit-actions">
+        <button class="btn btn-ghost ge-add-req" style="font-size:var(--fs-xs)">+ req</button>
+        <button class="btn btn-primary ge-save">Save</button>
+        <button class="btn btn-ghost ge-cancel">Cancel</button>
+      </div>`;
+
+    const reqsContainer = form.querySelector(`#ge-reqs-${idx}`);
+    Object.entries(goal.reqs ?? {}).forEach(([sk, lvl]) => appendReqRow(reqsContainer, sk, lvl));
+
+    form.querySelector(".ge-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
+    form.querySelector(".ge-cancel").addEventListener("click", () => {
+      form.replaceWith(card);
+    });
+    form.querySelector(".ge-save").addEventListener("click", () => {
+      const label = form.querySelector(".ge-label").value.trim();
+      if (!label) return;
+      const reqs = {};
+      reqsContainer.querySelectorAll(".ge-req-row").forEach((row) => {
+        const sk  = row.querySelector(".ge-req-skill").value;
+        const lvl = parseInt(row.querySelector(".ge-req-level").value, 10);
+        if (sk && lvl > 1) reqs[sk] = lvl;
+      });
+      goalQueue[idx] = {
+        ...goal,
+        label,
+        reqs,
+        terminal: form.querySelector(".ge-terminal").value.trim() || null,
+      };
+      store.saveGoals(goalQueue);
+      renderGoalQueue();
+      recompute();
+    });
+
+    card.replaceWith(form);
+  }
+
+  function appendReqRow(container, skill, level) {
+    const row = document.createElement("div");
+    row.className = "ge-req-row";
+    row.innerHTML = `
+      <select class="ge-req-skill">
+        ${skillNames.map((sk) => `<option value="${sk}"${sk === skill ? " selected" : ""}>${sk}</option>`).join("")}
+      </select>
+      <input class="ge-req-level" type="number" min="1" max="99" value="${level ?? 1}" style="width:3.5rem">
+      <button class="btn btn-ghost ge-req-rm" style="font-size:var(--fs-xs);padding:1px var(--sp-q)">✕</button>`;
+    row.querySelector(".ge-req-rm").addEventListener("click", () => row.remove());
+    container.appendChild(row);
+  }
+
+  // ── Drag-to-reorder goal queue ────────────────────────────────────────────
   function wireDrag(ul) {
     let dragIdx = null;
     ul.querySelectorAll(".goal-card").forEach((card) => {
@@ -209,30 +286,30 @@
       });
       card.addEventListener("drop", (e) => {
         e.preventDefault();
-        const dropIdx = +card.dataset.idx;
+        const to = +card.dataset.idx;
         card.classList.remove("drag-over");
-        if (dragIdx === null || dragIdx === dropIdx) return;
+        if (dragIdx === null || dragIdx === to) return;
         const [moved] = goalQueue.splice(dragIdx, 1);
-        goalQueue.splice(dropIdx, 0, moved);
+        goalQueue.splice(to, 0, moved);
         store.saveGoals(goalQueue);
         renderGoalQueue();
+        recompute();
       });
     });
   }
 
   // ── Custom goal form ──────────────────────────────────────────────────────
-  function addReqRow(skills) {
+  function addReqRow() {
     const container = els.cgReqs();
     if (!container) return;
     const row = document.createElement("div");
     row.className = "cg-req-row";
     row.innerHTML = `
       <select class="cg-req-skill">
-        ${skills.map((sk) => `<option value="${sk}">${sk.charAt(0).toUpperCase() + sk.slice(1)}</option>`).join("")}
+        ${skillNames.map((sk) => `<option value="${sk}">${sk.charAt(0).toUpperCase() + sk.slice(1)}</option>`).join("")}
       </select>
       <input type="number" class="cg-req-level" min="1" max="99" value="1" style="width:4rem">
-      <button class="btn btn-ghost cg-req-remove" style="font-size:var(--fs-xs);padding:2px var(--sp-q)">✕</button>
-    `;
+      <button class="btn btn-ghost cg-req-remove" style="font-size:var(--fs-xs);padding:2px var(--sp-q)">✕</button>`;
     row.querySelector(".cg-req-remove").addEventListener("click", () => row.remove());
     container.appendChild(row);
   }
@@ -246,18 +323,13 @@
       const lvl = parseInt(row.querySelector(".cg-req-level")?.value ?? 1, 10);
       if (sk && lvl > 1) reqs[sk] = lvl;
     });
-    return {
-      id:       `custom-${Date.now()}`,
-      label,
-      reqs,
-      terminal: els.cgTerminal()?.value.trim() || null,
-    };
+    return { id: `custom-${Date.now()}`, label, reqs, terminal: els.cgTerminal()?.value.trim() || null };
   }
 
   function clearCustomForm() {
-    if (els.cgLabel())    els.cgLabel().value    = "";
-    if (els.cgTerminal()) els.cgTerminal().value = "";
-    if (els.cgReqs())     els.cgReqs().innerHTML  = "";
+    if (els.cgLabel())     els.cgLabel().value     = "";
+    if (els.cgTerminal())  els.cgTerminal().value  = "";
+    if (els.cgReqs())      els.cgReqs().innerHTML  = "";
   }
 
   // ── Routing ───────────────────────────────────────────────────────────────
@@ -279,11 +351,11 @@
     return 1;
   }
 
-  function locationAccessible(step, completedIds, excludedRegions, completedQuests) {
+  function locationAccessible(step, completedIds, excluded, completedQuests) {
     const loc = step.location;
     if (!loc) return true;
     const region = loc.region ?? "global";
-    if (region !== "global" && excludedRegions.includes("region-" + region)) return false;
+    if (region !== "global" && excluded.includes("region-" + region)) return false;
     if (loc.quest_gate && !completedIds.has(loc.quest_gate) && !completedQuests.has(loc.quest_gate)) return false;
     return true;
   }
@@ -296,54 +368,47 @@
     );
   }
 
-  // ── Min-heap ──────────────────────────────────────────────────────────────
   class MinHeap {
     constructor() { this._h = []; }
-    push(item, priority) {
-      this._h.push({ item, priority });
-      this._bubbleUp(this._h.length - 1);
-    }
+    push(item, p) { this._h.push({ item, p }); this._up(this._h.length - 1); }
     pop() {
-      const top = this._h[0];
-      const last = this._h.pop();
-      if (this._h.length) { this._h[0] = last; this._siftDown(0); }
+      const top = this._h[0], last = this._h.pop();
+      if (this._h.length) { this._h[0] = last; this._down(0); }
       return top?.item;
     }
     get size() { return this._h.length; }
-    _bubbleUp(i) {
+    _up(i) {
       while (i > 0) {
         const p = (i - 1) >> 1;
-        if (this._h[p].priority <= this._h[i].priority) break;
-        [this._h[p], this._h[i]] = [this._h[i], this._h[p]];
-        i = p;
+        if (this._h[p].p <= this._h[i].p) break;
+        [this._h[p], this._h[i]] = [this._h[i], this._h[p]]; i = p;
       }
     }
-    _siftDown(i) {
+    _down(i) {
       const n = this._h.length;
       while (true) {
-        let min = i, l = 2*i+1, r = 2*i+2;
-        if (l < n && this._h[l].priority < this._h[min].priority) min = l;
-        if (r < n && this._h[r].priority < this._h[min].priority) min = r;
-        if (min === i) break;
-        [this._h[min], this._h[i]] = [this._h[i], this._h[min]];
-        i = min;
+        let m = i, l = 2*i+1, r = 2*i+2;
+        if (l < n && this._h[l].p < this._h[m].p) m = l;
+        if (r < n && this._h[r].p < this._h[m].p) m = r;
+        if (m === i) break;
+        [this._h[m], this._h[i]] = [this._h[i], this._h[m]]; i = m;
       }
     }
   }
 
-  function routeGoal(steps, profile, goal, skills, completedIds, completedQuests) {
+  function routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded) {
     const target   = goal.reqs ?? {};
     const terminal = goal.terminal ?? null;
-    const excluded = profile.excludeRegions ?? [];
     const path     = [];
-    const remaining = new Set(steps.map((s) => s.id).filter((id) => !completedIds.has(id)));
+    const remaining = new Set(
+      steps.map((s) => s.id).filter((id) => !completedIds.has(id) && !pinnedExclusions.has(id))
+    );
 
-    const eligible = () => {
+    const buildHeap = () => {
       const heap = new MinHeap();
       for (const id of remaining) {
         const step = steps.find((s) => s.id === id);
-        if (!step) continue;
-        if (!meetsReqs(step.reqs, skills)) continue;
+        if (!step || !meetsReqs(step.reqs, skills)) continue;
         if (!locationAccessible(step, completedIds, excluded, completedQuests)) continue;
         if (!isUseful(step, skills, target, terminal)) continue;
         heap.push(step, costFor(step, profile.style));
@@ -351,158 +416,131 @@
       return heap;
     };
 
-    let heap = eligible();
+    let heap = buildHeap();
     while (heap.size > 0) {
-      const allMet       = Object.entries(target).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl);
-      const terminalDone = !terminal || completedIds.has(terminal);
-      if (allMet && terminalDone) break;
+      if (Object.entries(target).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl) &&
+          (!terminal || completedIds.has(terminal))) break;
 
       const best = heap.pop();
-      if (!best) break;
-      if (!remaining.has(best.id)) { heap = eligible(); continue; }
+      if (!best || !remaining.has(best.id)) { heap = buildHeap(); continue; }
 
       path.push({ ...best, _goalLabel: goal.label, _reqs: goal.reqs });
       remaining.delete(best.id);
       completedIds.add(best.id);
       if ((best.tags ?? []).includes("quest")) completedQuests.add(best.id);
       skills = applyGrants(best.grants, skills);
-      heap = eligible();
+      heap = buildHeap();
     }
-
     return { path, skills, completedIds, completedQuests };
   }
 
-  function globalCeiling(goals) {
-    return goals.reduce((ceil, goal) => {
-      Object.entries(goal.reqs ?? {}).forEach(([sk, lvl]) => {
-        if (lvl > (ceil[sk] ?? 0)) ceil[sk] = lvl;
-      });
-      return ceil;
-    }, {});
-  }
-
-  function markOpportunities(path, allSteps, goals) {
-    const laterGoalIds = new Set(goals.map((g) => g.terminal).filter(Boolean));
-    const laterReqs    = goals.slice(1).flatMap((g) => Object.keys(g.reqs ?? {}));
-
-    return path.map((step) => {
-      const region = step.location?.region;
-      if (!region || region === "global") return step;
-
-      const opportunistic = allSteps.filter((s) =>
-        s.location?.region === region &&
-        !path.some((p) => p.id === s.id) &&
-        (laterGoalIds.has(s.id) || laterReqs.includes(Object.keys(s.grants ?? {})[0]))
-      );
-
-      return opportunistic.length
-        ? { ...step, _opportunities: opportunistic.map((s) => s.label) }
-        : step;
-    });
-  }
-
   function routeMulti(goals, steps, profile) {
-    const ceiling       = globalCeiling(goals);
     let skills          = { ...profile.skills };
     let completedIds    = new Set();
     let completedQuests = new Set();
+    const excluded      = profile.excludeRegions ?? [];
 
-    const fullPath = goals.flatMap((goal) => {
-      const result = routeGoal(steps, profile, goal, skills, completedIds, completedQuests);
-      skills          = result.skills;
-      completedIds    = result.completedIds;
-      completedQuests = result.completedQuests;
-      return result.path.map((step) => {
-        const grants = Object.entries(step.grants ?? {});
-        const isMilestone = grants.length > 0 && grants.every(([sk, lvl]) =>
-          (ceiling[sk] ?? 0) > lvl
-        );
-        return { ...step, _isMilestone: isMilestone };
-      });
+    return goals.flatMap((goal) => {
+      const r = routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded);
+      skills          = r.skills;
+      completedIds    = r.completedIds;
+      completedQuests = r.completedQuests;
+      return r.path;
     });
+  }
 
-    return markOpportunities(fullPath, steps, goals);
+  // Apply pinnedInserts: splice user-inserted custom steps back into a freshly
+  // computed path based on their anchor (the step id they were inserted after).
+  function applyPinnedInserts(path) {
+    let result = [...path];
+    pinnedInserts.forEach(({ anchor, step }) => {
+      if (result.some((s) => s.id === step.id)) return; // already present
+      const anchorIdx = anchor === "start" ? -1 : result.findIndex((s) => s.id === anchor);
+      result.splice(anchorIdx + 1, 0, step);
+    });
+    return result;
+  }
+
+  // ── Recompute: run route from current goal queue + profile, apply pins ────
+  function recompute() {
+    if (!goalQueue.length) return;
+    const profile  = readProfile();
+    const computed = routeMulti(goalQueue, allSteps, profile);
+    const path     = applyPinnedInserts(computed);
+    currentPath    = path;
+    window._routerLastPath = { path, profile, goals: goalQueue };
+    renderSteps(path);
   }
 
   // ── Render ────────────────────────────────────────────────────────────────
   function xpBadge(xp) {
-    const total = Object.values(xp ?? {}).reduce((a, b) => a + b, 0);
-    return total ? `<span class="step-badge xp">+${total.toLocaleString()} xp</span>` : "";
+    const t = Object.values(xp ?? {}).reduce((a, b) => a + b, 0);
+    return t ? `<span class="step-badge xp">+${t.toLocaleString()} xp</span>` : "";
   }
-
   function invBadge(step) {
     return step.inv_used ? `<span class="step-badge inv">${step.inv_used} inv slots</span>` : "";
   }
-
   function reqBadge(reqs) {
     const parts = Object.entries(reqs ?? {}).map(([sk, lvl]) => `${sk} ${lvl}`);
     return parts.length ? `<span class="step-badge req">Req: ${parts.join(", ")}</span>` : "";
   }
-
   function locationBadge(step) {
     const loc = step.location;
     if (!loc || loc.region === "global" || !loc.region) return "";
-    const zone  = loc.zone ? ` / ${loc.zone.replace(/-/g, " ")}` : "";
-    const label = loc.region.replace(/-/g, " ") + zone;
-    const gate  = loc.quest_gate ? ` · after ${loc.quest_gate.replace(/-/g, " ")}` : "";
-    return `<span class="step-badge loc" title="Location">${label}${gate}</span>`;
+    const zone  = loc.zone  ? ` / ${loc.zone.replace(/-/g," ")}` : "";
+    const label = loc.region.replace(/-/g," ") + zone;
+    const gate  = loc.quest_gate ? ` · after ${loc.quest_gate.replace(/-/g," ")}` : "";
+    return `<span class="step-badge loc">${escHtml(label + gate)}</span>`;
+  }
+  function goalBadge(step) {
+    return step._goalLabel
+      ? `<span class="step-badge goal-lbl" title="Goal">${escHtml(step._goalLabel)}</span>`
+      : "";
   }
 
-  function opportunityBadge(step) {
-    if (!step._opportunities?.length) return "";
-    return `<span class="step-badge opp" title="${step._opportunities.join(", ")}">+${step._opportunities.length} nearby</span>`;
-  }
-
-  function goalDividerHtml(goal) {
-    const targets = Object.entries(goal._reqs ?? {})
-      .map(([sk, lvl]) => `${sk.charAt(0).toUpperCase() + sk.slice(1)} ${lvl}`)
-      .join(" · ");
-    const targetsHtml = targets ? `<span class="route-goal-targets">${targets}</span>` : "";
-    return `<li class="route-goal-divider">${goal._goalLabel}${targetsHtml}</li>`;
-  }
-
-  // Insert-step row rendered between steps
+  // Insert row between steps
   function insertRowHtml(afterIdx) {
     return `<li class="route-insert-row" data-after="${afterIdx}">
-      <button class="btn btn-ghost insert-step-btn" data-after="${afterIdx}" title="Insert step here">+ insert step</button>
+      <button class="btn btn-ghost insert-step-btn" data-after="${afterIdx}">+ insert</button>
     </li>`;
   }
 
-  // Inline insert form — replaces the insert row on click
-  function buildInsertForm(_afterIdx, onCommit, onCancel) {
+  function buildInsertForm(afterIdx, onCommit, onCancel) {
     const li = document.createElement("li");
     li.className = "route-insert-form";
     li.innerHTML = `
-      <input class="ins-label" type="text" placeholder="Step label" style="flex:1">
+      <input class="ins-label"  type="text" placeholder="Step label" style="flex:1">
       <input class="ins-detail" type="text" placeholder="Detail (optional)" style="flex:2">
       <button class="btn btn-primary ins-add">Add</button>
-      <button class="btn btn-ghost ins-cancel">Cancel</button>
-    `;
+      <button class="btn btn-ghost ins-cancel">Cancel</button>`;
     li.querySelector(".ins-add").addEventListener("click", () => {
       const label = li.querySelector(".ins-label").value.trim();
       if (!label) return;
-      onCommit({
-        id:       `custom-insert-${Date.now()}`,
+      const anchorStep = afterIdx >= 0 ? currentPath[afterIdx] : null;
+      const step = {
+        id:         `custom-insert-${Date.now()}`,
         label,
-        detail:   li.querySelector(".ins-detail").value.trim(),
-        _custom:  true,
-        _goalLabel: "",
-        _reqs: {},
-      });
+        detail:     li.querySelector(".ins-detail").value.trim(),
+        reqs:       {},
+        grants:     {},
+        _custom:    true,
+        _goalLabel: anchorStep?._goalLabel ?? "",
+        _reqs:      {},
+      };
+      pinnedInserts.push({ anchor: anchorStep?.id ?? "start", step });
+      onCommit(step, afterIdx);
     });
     li.querySelector(".ins-cancel").addEventListener("click", onCancel);
     return li;
   }
 
-  // ── Step-note binding ─────────────────────────────────────────────────────
-  // Called after renderSteps injects HTML — wires textarea persistence per step id.
-  function wireStepNotes(container, notes) {
+  function wireStepNotes(container) {
+    const notes = store.stepNotes();
     container.querySelectorAll(".step-note").forEach((ta) => {
       const id = ta.dataset.stepId;
       if (notes[id]) ta.value = notes[id];
       ta.addEventListener("input", () => {
         store.saveStepNote(id, ta.value);
-        // keep active plan's stepNotes in sync if a plan is loaded
         if (activePlanIdx >= 0) {
           const plans = store.plans();
           if (plans[activePlanIdx]) {
@@ -514,7 +552,39 @@
     });
   }
 
-  // ── Route bar (above route output, only when route is displayed) ──────────
+  // Inline step label/detail editor — does NOT trigger recompute (user override)
+  function wireStepEdit(container) {
+    container.querySelectorAll(".step-title, .step-detail").forEach((el) => {
+      el.addEventListener("dblclick", () => {
+        const isTitle = el.classList.contains("step-title");
+        const input = document.createElement("input");
+        input.type  = "text";
+        input.value = el.textContent;
+        input.className = isTitle ? "step-title-edit" : "step-detail-edit";
+        el.replaceWith(input);
+        input.focus();
+        input.select();
+        const commit = () => {
+          const stepLi = input.closest(".route-step");
+          const idx    = stepLi ? +stepLi.dataset.stepIdx : -1;
+          const val    = input.value.trim();
+          if (idx >= 0 && val) {
+            currentPath[idx] = { ...currentPath[idx], [isTitle ? "label" : "detail"]: val };
+            if (window._routerLastPath) window._routerLastPath.path = currentPath;
+          }
+          const span = document.createElement("span");
+          span.className = el.className;
+          span.textContent = val || el.textContent;
+          input.replaceWith(span);
+          wireStepEdit(container);
+        };
+        input.addEventListener("blur",    commit);
+        input.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); commit(); } });
+      });
+    });
+  }
+
+  // ── Route bar ─────────────────────────────────────────────────────────────
   function renderRouteBar(path) {
     const bar = els.routeBar();
     if (!bar) return;
@@ -523,163 +593,132 @@
 
     const isLoaded = activePlanIdx >= 0;
     const plans    = store.plans();
-    const planName = isLoaded ? plans[activePlanIdx]?.name ?? "" : "";
+    const name     = isLoaded ? (plans[activePlanIdx]?.name ?? "") : "";
 
     bar.innerHTML = `
       <span class="route-bar-name">
         ${isLoaded
-          ? `<input class="route-name-input" type="text" value="${escHtml(planName)}" title="Rename plan">`
-          : `<span class="route-bar-label">Unsaved route</span>`
-        }
+          ? `<input class="route-name-input" type="text" value="${escHtml(name)}" title="Rename plan">`
+          : `<span class="route-bar-label">Unsaved route</span>`}
       </span>
       <span class="route-bar-actions">
         ${isLoaded ? `<button class="btn btn-ghost rbar-update">Update plan</button>` : ""}
         ${isLoaded ? `<button class="btn btn-ghost rbar-delete" style="color:#c00">Delete plan</button>` : ""}
-      </span>
-    `;
+      </span>`;
 
     if (isLoaded) {
-      const nameInput = bar.querySelector(".route-name-input");
-      nameInput?.addEventListener("change", () => {
-        const plans = store.plans();
-        if (plans[activePlanIdx]) {
-          plans[activePlanIdx].name = nameInput.value.trim() || plans[activePlanIdx].name;
-          store.updatePlan(activePlanIdx, plans[activePlanIdx]);
-          store.saveActive(plans[activePlanIdx]);
-          renderPlans();
-        }
-      });
-
-      bar.querySelector(".rbar-update")?.addEventListener("click", () => {
-        const last = window._routerLastPath;
-        if (!last?.path?.length) return;
-        const plans = store.plans();
-        if (!plans[activePlanIdx]) return;
-        const updated = {
-          ...plans[activePlanIdx],
-          goals:     last.goals,
-          style:     last.profile.style,
-          skills:    last.profile.skills,
-          steps:     last.path,
-          stepNotes: store.stepNotes(),
-          date:      new Date().toLocaleDateString(),
-        };
+      bar.querySelector(".route-name-input")?.addEventListener("change", (e) => {
+        const p = store.plans()[activePlanIdx];
+        if (!p) return;
+        const updated = { ...p, name: e.target.value.trim() || p.name };
         store.updatePlan(activePlanIdx, updated);
         store.saveActive(updated);
         renderPlans();
-        renderRouteBar(last.path);
       });
-
+      bar.querySelector(".rbar-update")?.addEventListener("click", () => {
+        const last = window._routerLastPath;
+        if (!last?.path?.length) return;
+        const p = store.plans()[activePlanIdx];
+        if (!p) return;
+        const updated = { ...p, goals: last.goals, style: last.profile.style,
+          skills: last.profile.skills, steps: last.path, stepNotes: store.stepNotes(),
+          date: new Date().toLocaleDateString() };
+        store.updatePlan(activePlanIdx, updated);
+        store.saveActive(updated);
+        renderPlans(); renderRouteBar(last.path);
+      });
       bar.querySelector(".rbar-delete")?.addEventListener("click", () => {
         store.deletePlan(activePlanIdx);
         store.saveActive(null);
         activePlanIdx = -1;
-        renderPlans();
-        renderRouteBar([]);
+        renderPlans(); renderRouteBar([]);
         els.empty().hidden = false;
         els.empty().textContent = "Plan deleted.";
         els.steps().hidden = true;
+        currentPath = [];
       });
     }
   }
-
-  function escHtml(s) {
-    return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-  }
-
-  // ── Current path state (for insert mutations) ─────────────────────────────
-  let currentPath = [];
 
   function renderSteps(path) {
     currentPath = path;
     const stepsEl = els.steps();
     const emptyEl = els.empty();
     if (!path.length) {
-      emptyEl.hidden = false;
-      stepsEl.hidden = true;
-      emptyEl.textContent = "No route found for these inputs. Try adjusting your goals or stats.";
-      renderRouteBar([]);
-      return;
+      emptyEl.hidden = false; stepsEl.hidden = true;
+      emptyEl.textContent = "No route found. Adjust your goals or stats.";
+      renderRouteBar([]); return;
     }
-    emptyEl.hidden = true;
-    stepsEl.hidden = false;
+    emptyEl.hidden = true; stepsEl.hidden = false;
 
-    const notes = store.stepNotes();
-    let stepNum  = 0;
-    let lastGoal = null;
-    const milestonesByGoal = path.reduce((acc, step) => {
-      if (step._isMilestone) (acc[step._goalLabel] ??= []).push(step.label);
-      return acc;
-    }, {});
+    // Render insert row before step 0 as well
+    const rows = [insertRowHtml(-1)];
 
-    const rows = [];
     path.forEach((step, i) => {
-      if (step._goalLabel !== lastGoal) {
-        lastGoal = step._goalLabel;
-        rows.push(goalDividerHtml(step));
-        const mentions = milestonesByGoal[step._goalLabel];
-        if (mentions?.length) {
-          rows.push(`<li class="route-milestone-mentions">Along the way: ${mentions.join(", ")}</li>`);
-        }
-      }
-
-      if (step._isMilestone) return;
-
-      stepNum++;
-      const noteVal = escHtml(notes[step.id] ?? "");
-      rows.push(`<li class="route-step${step._custom ? " route-step-custom" : ""}" data-step-idx="${i}">
-        <span class="step-num">${stepNum}</span>
+      rows.push(`<li class="route-step" data-step-idx="${i}">
+        <span class="step-num">${i + 1}</span>
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
-          <textarea class="step-note" data-step-id="${escHtml(step.id)}" rows="1"
-            placeholder="Add a note…">${noteVal}</textarea>
+          <textarea class="step-note" data-step-id="${escHtml(step.id)}" rows="1" placeholder="Add a note…"></textarea>
         </span>
         <span class="step-meta">
+          ${goalBadge(step)}
           ${locationBadge(step)}
-          ${opportunityBadge(step)}
           ${xpBadge(step.xp)}
           ${invBadge(step)}
           ${reqBadge(step.reqs)}
+          <button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>
         </span>
       </li>`);
-
-      // Insert row after every non-milestone step
       rows.push(insertRowHtml(i));
     });
 
     stepsEl.innerHTML = rows.join("");
 
-    wireStepNotes(stepsEl, notes);
-    wireInsertRows(stepsEl, path);
+    wireStepNotes(stepsEl);
+    wireStepEdit(stepsEl);
+    wireInsertRows(stepsEl);
+    wireStepRemove(stepsEl);
     renderRouteBar(path);
   }
 
-  // Wire insert-step affordances
-  function wireInsertRows(stepsEl, path) {
+  function wireInsertRows(stepsEl) {
     stepsEl.querySelectorAll(".insert-step-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         const afterIdx = +btn.dataset.after;
         const row = btn.closest(".route-insert-row");
         const form = buildInsertForm(
           afterIdx,
-          (newStep) => {
-            // splice into currentPath and re-render
+          (step, idx) => {
             currentPath = [
-              ...currentPath.slice(0, afterIdx + 1),
-              newStep,
-              ...currentPath.slice(afterIdx + 1),
+              ...currentPath.slice(0, idx + 1),
+              step,
+              ...currentPath.slice(idx + 1),
             ];
             if (window._routerLastPath) window._routerLastPath.path = currentPath;
             renderSteps(currentPath);
           },
-          () => {
-            // cancel: restore insert row
-            row.outerHTML = insertRowHtml(afterIdx);
-            wireInsertRows(stepsEl, path);
-          }
+          () => { row.outerHTML = insertRowHtml(afterIdx); wireInsertRows(stepsEl); }
         );
         row.replaceWith(form);
+      });
+    });
+  }
+
+  function wireStepRemove(stepsEl) {
+    stepsEl.querySelectorAll(".step-remove-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const idx  = +btn.dataset.stepIdx;
+        const step = currentPath[idx];
+        if (!step) return;
+        // Add to exclusions so recompute won't re-insert it
+        if (!step._custom) pinnedExclusions.add(step.id);
+        // Remove from pinned inserts if it was one
+        pinnedInserts = pinnedInserts.filter((p) => p.step.id !== step.id);
+        currentPath.splice(idx, 1);
+        if (window._routerLastPath) window._routerLastPath.path = currentPath;
+        renderSteps(currentPath);
       });
     });
   }
@@ -698,36 +737,30 @@
         <span class="step-num" style="background:var(--gold)">${plan.steps.length}</span>
         <span class="step-body">
           <span class="plan-list-name" data-plan-idx="${i}">${escHtml(plan.name)}</span>
-          <span class="step-detail">${plan.goals?.length ?? 1} goal(s) · Style: ${plan.style} · Saved ${plan.date}</span>
+          <span class="step-detail">${plan.goals?.length ?? 1} goal(s) · ${plan.style} · ${plan.date}</span>
           ${plan.desc ? `<span class="plan-notes">${escHtml(plan.desc)}</span>` : ""}
         </span>
         <span class="step-meta plan-actions">
           <button class="btn btn-ghost plan-action-btn" data-load="${i}">Load</button>
           <button class="btn btn-ghost plan-action-btn plan-delete" data-delete="${i}">Delete</button>
         </span>
-      </li>
-    `).join("");
+      </li>`).join("");
 
-    // Inline rename: click the title span → becomes input
     list.querySelectorAll(".plan-list-name").forEach((span) => {
       span.addEventListener("click", () => {
         const idx   = +span.dataset.planIdx;
         const input = document.createElement("input");
         input.className = "plan-rename-input";
-        input.type      = "text";
-        input.value     = plans[idx].name;
-        span.replaceWith(input);
-        input.focus();
-        input.select();
+        input.type = "text"; input.value = plans[idx].name;
+        span.replaceWith(input); input.focus(); input.select();
         const commit = () => {
           const name = input.value.trim() || plans[idx].name;
           const updated = { ...plans[idx], name };
           store.updatePlan(idx, updated);
-          if (activePlanIdx === idx) store.saveActive(updated);
+          if (activePlanIdx === idx) { store.saveActive(updated); renderRouteBar(currentPath); }
           renderPlans();
-          if (activePlanIdx === idx) renderRouteBar(currentPath);
         };
-        input.addEventListener("blur",    commit);
+        input.addEventListener("blur", commit);
         input.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); commit(); } });
       });
     });
@@ -739,23 +772,19 @@
       btn.addEventListener("click", () => {
         const idx = +btn.dataset.delete;
         store.deletePlan(idx);
-        if (activePlanIdx === idx) {
-          activePlanIdx = -1;
-          store.saveActive(null);
-        } else if (activePlanIdx > idx) {
-          activePlanIdx--;
-        }
+        if (activePlanIdx === idx) { activePlanIdx = -1; store.saveActive(null); }
+        else if (activePlanIdx > idx) activePlanIdx--;
         renderPlans();
-        if (window._routerLastPath) renderRouteBar(currentPath);
+        renderRouteBar(currentPath);
       });
     });
   }
 
-  let skillNames = [];
-
   function loadPlan(plan, idx) {
-    activePlanIdx = idx ?? -1;
-    applyProfile({ skills: plan.skills, style: plan.style }, skillNames);
+    activePlanIdx    = idx ?? -1;
+    pinnedExclusions = new Set();
+    pinnedInserts    = (plan.pinnedInserts ?? []);
+    applyProfile({ skills: plan.skills, style: plan.style });
     if (plan.goals) {
       goalQueue = plan.goals;
       store.saveGoals(goalQueue);
@@ -763,8 +792,8 @@
     }
     if (els.planName()) els.planName().value = plan.name;
     if (els.planDesc()) els.planDesc().value = plan.desc ?? "";
-    // Restore per-step notes from plan snapshot
-    store.applyStepNotes(plan.stepNotes ?? {});
+    store.applyNotes(plan.stepNotes ?? {});
+    currentPath = plan.steps;
     renderSteps(plan.steps);
     window._routerLastPath = { path: plan.steps, profile: { skills: plan.skills, style: plan.style }, goals: plan.goals ?? [] };
     store.saveActive(plan);
@@ -772,54 +801,52 @@
 
   // ── Boot ──────────────────────────────────────────────────────────────────
   async function init() {
-    let steps, presets, regions;
     try {
-      [steps, presets, regions] = await Promise.all([
+      [allSteps, allGoals, allRegions] = await Promise.all([
         loadJsonl(STEPS_URL),
         loadJsonl(GOALS_URL),
         loadJsonl(REGIONS_URL),
       ]);
     } catch { return; }
 
-    skillNames = deriveSkills(steps);
-
+    skillNames = deriveSkills(allSteps);
     buildSkillGrid(skillNames);
-    buildPresetSelect(presets);
-    buildRegionExcludes(regions);
+    buildPresetSelect(allGoals);
+    buildRegionExcludes(allRegions);
 
     const saved = store.profile();
-    if (Object.keys(saved).length) applyProfile(saved, skillNames);
+    if (Object.keys(saved).length) applyProfile(saved);
 
     goalQueue = store.goals();
     renderGoalQueue();
 
-    // Autoload last active plan
     const active = store.active();
     if (active?.steps?.length) {
-      const plans = store.plans();
-      const idx   = plans.findIndex((p) => p.name === active.name && p.date === active.date);
+      const idx = store.plans().findIndex((p) => p.name === active.name && p.date === active.date);
       loadPlan(active, idx);
     }
 
     els.inputs().forEach((el) => {
       el.addEventListener("change", () => {
-        store.saveProfile(readProfile(skillNames));
-        const status = els.saveStatus();
-        if (status) status.hidden = false;
+        store.saveProfile(readProfile());
+        const s = els.saveStatus(); if (s) s.hidden = false;
+        // Recompute on style/skill change if route is active
+        if (currentPath.length) recompute();
       });
     });
 
     els.addPreset()?.addEventListener("click", () => {
       const key    = els.presetSel()?.value;
-      const preset = presets.find((p) => p.id === key);
+      const preset = allGoals.find((p) => p.id === key);
       if (!preset) return;
       goalQueue.push({ id: preset.id, label: preset.label, reqs: preset.reqs, terminal: preset.terminal });
       store.saveGoals(goalQueue);
       renderGoalQueue();
       if (els.presetSel()) els.presetSel().value = "";
+      recompute();
     });
 
-    els.cgAddReq()?.addEventListener("click", () => addReqRow(skillNames));
+    els.cgAddReq()?.addEventListener("click", () => addReqRow());
 
     els.cgSubmit()?.addEventListener("click", () => {
       const goal = readCustomGoal();
@@ -828,38 +855,34 @@
       store.saveGoals(goalQueue);
       renderGoalQueue();
       clearCustomForm();
+      recompute();
     });
 
     els.calcBtn()?.addEventListener("click", () => {
       if (!goalQueue.length) {
         els.empty().hidden = false;
         els.empty().textContent = "Add at least one goal to your queue.";
-        els.steps().hidden = true;
-        return;
+        els.steps().hidden = true; return;
       }
-      const profile = readProfile(skillNames);
-      const path    = routeMulti(goalQueue, steps, profile);
-      activePlanIdx = -1;  // fresh route is unsaved
-      renderSteps(path);
-      window._routerLastPath = { path, profile, goals: goalQueue };
+      pinnedExclusions = new Set();
+      pinnedInserts    = [];
+      activePlanIdx    = -1;
+      recompute();
     });
 
     els.resetBtn()?.addEventListener("click", () => {
       skillNames.forEach((sk) => { const el = els.skillInput(sk); if (el) el.value = 1; });
       if (els.style()) els.style().value = "balanced";
-      goalQueue = [];
-      activePlanIdx = -1;
-      store.saveGoals(goalQueue);
-      store.saveActive(null);
-      store.clearStepNotes();
+      goalQueue = []; activePlanIdx = -1;
+      pinnedExclusions = new Set(); pinnedInserts = []; currentPath = [];
+      store.saveGoals(goalQueue); store.saveActive(null); store.clearNotes();
       renderGoalQueue();
       els.empty().hidden = false;
       els.empty().textContent = "Add goals to your queue and click Calculate Route.";
       els.steps().hidden = true;
-      currentPath = [];
       renderRouteBar([]);
       localStorage.removeItem(STORE_PROFILE);
-      if (els.saveStatus()) els.saveStatus().hidden = true;
+      const s = els.saveStatus(); if (s) s.hidden = true;
     });
 
     els.saveBtn()?.addEventListener("click", () => {
@@ -868,21 +891,20 @@
       const name = els.planName()?.value.trim() || `Plan ${store.plans().length + 1}`;
       const desc = els.planDesc()?.value.trim() ?? "";
       const plan = {
-        name,
-        desc,
-        goals:     last.goals,
-        style:     last.profile.style,
-        skills:    last.profile.skills,
-        steps:     last.path,
-        stepNotes: store.stepNotes(),
-        date:      new Date().toLocaleDateString(),
+        name, desc,
+        goals:         last.goals,
+        style:         last.profile.style,
+        skills:        last.profile.skills,
+        steps:         last.path,
+        stepNotes:     store.stepNotes(),
+        pinnedInserts: pinnedInserts,
+        date:          new Date().toLocaleDateString(),
       };
       activePlanIdx = store.savePlan(plan);
       store.saveActive(plan);
       if (els.planName()) els.planName().value = "";
       if (els.planDesc()) els.planDesc().value = "";
-      renderPlans();
-      renderRouteBar(last.path);
+      renderPlans(); renderRouteBar(last.path);
     });
 
     renderPlans();

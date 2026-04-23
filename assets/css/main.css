@@ -421,7 +421,25 @@ body {
 .step-badge.xp  { background: #d4edda; color: #1a5c2a; }
 .step-badge.inv { background: #d1ecf1; color: #0c5460; }
 .step-badge.loc { background: #e8e0f5; color: #4a2d8a; text-transform: capitalize; }
-.step-badge.opp { background: #fff3e0; color: #7a4800; cursor: default; }
+.step-badge.opp      { background: #fff3e0; color: #7a4800; cursor: default; }
+.step-badge.goal-lbl { background: #eef2ff; color: #3730a3; font-style: italic; }
+
+/* Step remove button — sits in step-meta column */
+.step-remove-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); color: var(--muted); opacity: 0; transition: opacity 0.1s; }
+.route-step:hover .step-remove-btn { opacity: 1; }
+
+/* Inline step label/detail edit inputs */
+.step-title-edit {
+  font-size: var(--fs-sm); font-weight: 600;
+  border: none; border-bottom: 1px solid var(--accent);
+  background: transparent; padding: 0; width: 100%;
+}
+.step-detail-edit {
+  font-size: var(--fs-xs); color: var(--muted);
+  border: none; border-bottom: 1px dashed var(--border);
+  background: transparent; padding: 0; width: 100%;
+}
+.step-title-edit:focus, .step-detail-edit:focus { outline: none; }
 
 /* ── Per-step notes ──────────────────────────────────────────────────────── */
 .step-note {
@@ -554,12 +572,26 @@ body {
   font-size: var(--fs-xs);
   color: var(--muted);
 }
-.goal-card-remove {
-  flex-shrink: 0;
+.goal-card-btns { display: flex; gap: 2px; flex-shrink: 0; }
+.goal-card-remove, .goal-card-edit {
   font-size: var(--fs-xs);
   padding: 2px var(--sp-q);
   color: var(--muted);
 }
+/* Goal inline editor */
+.goal-edit-form {
+  padding: var(--sp-h);
+  background: var(--card);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  display: flex; flex-direction: column; gap: var(--sp-q);
+}
+.goal-edit-row { display: flex; gap: var(--sp-h); }
+.goal-edit-row input { flex: 1; font-size: var(--fs-xs); padding: 2px var(--sp-q); border: 1px solid var(--border); border-radius: var(--radius); }
+.ge-reqs { display: flex; flex-direction: column; gap: 2px; }
+.ge-req-row { display: flex; gap: var(--sp-q); align-items: center; }
+.ge-req-row select, .ge-req-row input { font-size: var(--fs-xs); padding: 1px var(--sp-q); border: 1px solid var(--border); border-radius: var(--radius); }
+.goal-edit-actions { display: flex; gap: var(--sp-q); justify-content: flex-end; }
 .goal-adder {
   display: flex;
   gap: var(--sp-h);
