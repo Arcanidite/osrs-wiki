@@ -79,14 +79,29 @@
     const results = document.querySelector("[data-catalog-results]");
     if (!input || !results || !catalog.entries?.length) return;
 
+    const dismiss = () => { results.hidden = true; results.innerHTML = ""; };
+
     input.addEventListener("input", () => {
       const q = input.value.trim().toLowerCase();
-      if (!q) { results.hidden = true; results.innerHTML = ""; return; }
+      if (!q) { dismiss(); return; }
       const hits = catalog.entries.filter(
         (e) => (e.name ?? "").toLowerCase().includes(q) || (e.summary ?? "").toLowerCase().includes(q)
       );
       results.hidden = !hits.length;
       results.innerHTML = hits.map(entryCard).join("");
+    });
+
+    input.addEventListener("blur", () => {
+      // delay so clicks on result links register before dismissal
+      setTimeout(dismiss, 150);
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!input.contains(e.target) && !results.contains(e.target)) dismiss();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") { dismiss(); input.blur(); }
     });
   }
 

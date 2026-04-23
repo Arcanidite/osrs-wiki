@@ -100,7 +100,12 @@ body {
 }
 
 /* Search */
-.search-bar { position: relative; margin-left: auto; }
+.search-bar {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
 .search-bar input {
   padding: 0.4rem 0.75rem;
   border: 1px solid #555;
@@ -108,10 +113,12 @@ body {
   background: #3a3a3a;
   color: #fff;
   width: 220px;
+  line-height: 1.4;
 }
+.search-bar input::placeholder { color: #999; }
 .search-results {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 6px);
   right: 0;
   width: 320px;
   background: #fff;
@@ -121,6 +128,7 @@ body {
   overflow-y: auto;
   z-index: 100;
   padding: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Landing */
