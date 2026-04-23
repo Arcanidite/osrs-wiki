@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — {{ site.data.site.name }}</title>
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+  <main id="main-content">
+    <div class="tool-page">
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p class="node-summary">{{ page.summary }}</p>{% endif %}
+      {{ content }}
+    </div>
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/catalog.js' | relative_url }}" data-baseurl="{{ site.baseurl }}"></script>
+  {% if page.tool_script %}
+    <script src="{{ page.tool_script | relative_url }}" data-baseurl="{{ site.baseurl }}"></script>
+  {% endif %}
+</body>
+</html>

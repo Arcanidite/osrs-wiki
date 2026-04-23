@@ -1,6 +1,46 @@
 {
   "nodes": [
     {
+      "id": "getting-started",
+      "label": "Getting Started",
+      "url": "/guides/getting-started",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": {
+        "page_class": "article",
+        "icon": { "name": "guide" },
+        "summary": "New player tips and progression phase breakdown.",
+        "tags": ["guides"],
+        "preview": {
+          "excerpt": "Everything a new player needs to know — from your first steps in Lumbridge to understanding the core progression phases.",
+          "stats": [
+            { "label": "Type", "value": "Article" },
+            { "label": "Audience", "value": "New players" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "progression-router",
+      "label": "Progression Router",
+      "url": "/tools/progression-router",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": {
+        "page_class": "tool",
+        "icon": { "name": "tool" },
+        "summary": "Smart routing tool that calculates an optimal progression path based on your goals and current stats.",
+        "tags": ["tools"],
+        "preview": {
+          "excerpt": "Input your current levels, goals, and constraints. The router calculates an optimal step-by-step path accounting for level gates, XP requirements, inventory, and item pre-requisites.",
+          "stats": [
+            { "label": "Type", "value": "Tool" },
+            { "label": "Saves to", "value": "localStorage" }
+          ]
+        }
+      }
+    },
+    {
       "id": "home",
       "label": "Home",
       "url": "/",
@@ -266,6 +306,8 @@
     }
   ],
   "edges": [
+    { "from": "root",    "to": "getting-started", "rel": "child" },
+    { "from": "root",    "to": "progression-router", "rel": "child" },
     { "from": "root",    "to": "home",     "rel": "child" },
     { "from": "root",    "to": "skills",   "rel": "child" },
     { "from": "root",    "to": "combat",   "rel": "child" },

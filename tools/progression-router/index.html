@@ -1,0 +1,89 @@
+---
+layout: tool
+title: "Progression Router"
+node_id: "progression-router"
+page_class: tool
+summary: "Calculate an optimal step-by-step path based on your current stats, goals, inventory constraints, and item pre-requisites."
+tags: ["tools"]
+tool_script: "/assets/js/tools/progression-router.js"
+---
+
+<div class="tool-row">
+
+  <aside class="tool-panel" id="router-inputs">
+    <h2>Your Profile</h2>
+
+    <div class="form-group">
+      <label for="rt-attack">Attack</label>
+      <input type="number" id="rt-attack" name="attack" min="1" max="99" value="1">
+    </div>
+    <div class="form-group">
+      <label for="rt-strength">Strength</label>
+      <input type="number" id="rt-strength" name="strength" min="1" max="99" value="1">
+    </div>
+    <div class="form-group">
+      <label for="rt-defence">Defence</label>
+      <input type="number" id="rt-defence" name="defence" min="1" max="99" value="1">
+    </div>
+    <div class="form-group">
+      <label for="rt-ranged">Ranged</label>
+      <input type="number" id="rt-ranged" name="ranged" min="1" max="99" value="1">
+    </div>
+    <div class="form-group">
+      <label for="rt-magic">Magic</label>
+      <input type="number" id="rt-magic" name="magic" min="1" max="99" value="1">
+    </div>
+    <div class="form-group">
+      <label for="rt-prayer">Prayer</label>
+      <input type="number" id="rt-prayer" name="prayer" min="1" max="99" value="1">
+    </div>
+
+    <div class="form-group" style="margin-top: var(--sp)">
+      <label for="rt-goal">Goal</label>
+      <select id="rt-goal" name="goal">
+        <option value="">Select a goal…</option>
+        <option value="quest-dt">Desert Treasure</option>
+        <option value="quest-mm">Monkey Madness</option>
+        <option value="barrows">Barrows runs</option>
+        <option value="gwd">God Wars Dungeon</option>
+        <option value="raids-cox">Chambers of Xeric</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="rt-style">Training preference</label>
+      <select id="rt-style" name="style">
+        <option value="balanced">Balanced</option>
+        <option value="efficient">XP efficient</option>
+        <option value="afk">AFK-friendly</option>
+        <option value="gp">GP-positive</option>
+      </select>
+    </div>
+
+    <div style="display:flex; gap: var(--sp-h); margin-top: var(--sp-h)">
+      <button class="btn btn-primary" id="rt-calculate">Calculate Route</button>
+      <button class="btn btn-ghost" id="rt-reset">Reset</button>
+    </div>
+
+    <div class="plan-saved" id="rt-save-status" hidden>Profile auto-saved</div>
+  </aside>
+
+  <section class="tool-panel" id="router-output">
+    <h2>Route</h2>
+    <div id="rt-empty" style="color: var(--muted); font-size: var(--fs-sm)">
+      Set your stats and goal, then click <strong>Calculate Route</strong>.
+    </div>
+    <ul class="route-steps" id="rt-steps" hidden></ul>
+
+    <div id="rt-plans" style="margin-top: var(--sp)">
+      <h2>Saved Plans</h2>
+      <div style="display:flex; gap: var(--sp-h); margin-bottom: var(--sp-h)">
+        <input type="text" id="rt-plan-name" placeholder="Plan name…" style="flex:1; padding: var(--sp-q) var(--sp-h); border: 1px solid var(--border); border-radius: var(--radius); font-size: var(--fs-sm);">
+        <button class="btn btn-ghost" id="rt-save-plan">Save current route</button>
+      </div>
+      <ul class="route-steps" id="rt-plan-list"></ul>
+      <p id="rt-no-plans" style="font-size: var(--fs-xs); color: var(--muted)">No saved plans yet.</p>
+    </div>
+  </section>
+
+</div>

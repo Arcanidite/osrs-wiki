@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — {{ site.data.site.name }}</title>
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+  <main id="main-content">
+    <article class="article-page">
+      <h1>{{ page.title }}</h1>
+
+      <div class="article-meta">
+        {% if page.page_class %}<span class="article-tag">{{ page.page_class }}</span>{% endif %}
+        {% for tag in page.tags %}<span class="article-tag">{{ tag }}</span>{% endfor %}
+        {% if page.updated %}<span>Updated {{ page.updated }}</span>{% endif %}
+      </div>
+
+      {% if page.toc %}
+        <nav class="article-toc">
+          <strong>Contents</strong>
+          <ol>
+            {% for item in page.toc %}
+              <li><a href="#{{ item.id }}">{{ item.label }}</a></li>
+            {% endfor %}
+          </ol>
+        </nav>
+      {% endif %}
+
+      {{ content }}
+    </article>
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/catalog.js' | relative_url }}" data-baseurl="{{ site.baseurl }}"></script>
+</body>
+</html>

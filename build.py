@@ -140,12 +140,17 @@ def emit_catalog(nodes):
     return {"version": "1.0.0", "entries": entries}
 
 
+LAYOUT_MAP = {"article": "article", "tool": "tool", "data": "node"}
+
 def emit_pages(nodes, children, parents):
     pages = {}
     for node in nodes.values():
         url = node["url"].strip("/")
         if not url:
             continue
+        meta = node.get("meta", {})
+        page_class = meta.get("page_class", "")
+        layout = LAYOUT_MAP.get(page_class, "node")
         kids = [
             {"id": nodes[c]["id"], "label": nodes[c]["label"], "url": nodes[c]["url"]}
             for c in children.get(node["id"], [])
@@ -159,17 +164,19 @@ def emit_pages(nodes, children, parents):
                 break
             breadcrumb.insert(0, {"label": nodes[p]["label"], "url": nodes[p]["url"]})
             cur = p
-        pages[url] = {
-            "path": ROOT / url / "index.html",
-            "front": {
-                "layout": "node",
-                "title": node["label"],
-                "node_id": node["id"],
-                "summary": node.get("meta", {}).get("summary", ""),
-                "breadcrumb": breadcrumb,
-                "children": kids,
-            },
+        front = {
+            "layout": layout,
+            "title": node["label"],
+            "node_id": node["id"],
+            "summary": meta.get("summary", ""),
+            "page_class": page_class,
+            "tags": meta.get("tags", []),
+            "breadcrumb": breadcrumb,
+            "children": kids,
         }
+        if page_class == "tool":
+            front["tool_script"] = f"/assets/js/tools/{node['id']}.js"
+        pages[url] = {"path": ROOT / url / "index.html", "front": front}
     return pages
 
 
