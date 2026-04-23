@@ -1,6 +1,6 @@
 (function () {
   const CATALOG_URL = document.querySelector("[data-catalog-grid]")
-    ?.dataset.catalogSource ?? "/_data/catalog.json";
+    ?.dataset.catalogSource ?? "/assets/data/catalog.json";
 
   async function load() {
     const endpoint = document.querySelector("[data-catalog-endpoint]")?.dataset.catalogEndpoint

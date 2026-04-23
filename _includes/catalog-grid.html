@@ -1,3 +1,3 @@
-<section class="catalog-grid" data-catalog-grid data-catalog-source="{{ include.source | default: '/assets/data/catalog.json' }}">
+<section class="catalog-grid" data-catalog-grid data-catalog-source="{{ include.source | default: '/assets/data/catalog.json' | relative_url }}">
   <p class="catalog-empty" data-catalog-empty>No entries loaded.</p>
 </section>
