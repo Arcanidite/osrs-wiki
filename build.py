@@ -130,6 +130,9 @@ def emit_catalog(nodes):
             "url": n["url"],
             "category": n["type"],
             "summary": n.get("meta", {}).get("summary", ""),
+            "icon": n.get("meta", {}).get("icon"),
+            "tags": n.get("meta", {}).get("tags", []),
+            "preview": n.get("meta", {}).get("preview"),
         }
         for n in nodes.values()
         if "search" in n.get("slots", [])

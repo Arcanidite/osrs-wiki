@@ -6,77 +6,310 @@
       "name": "Attack",
       "url": "/skills/attack",
       "category": "page",
-      "summary": "The Attack skill determines accuracy in melee combat."
+      "summary": "The Attack skill determines accuracy in melee combat.",
+      "icon": {
+        "name": "attack"
+      },
+      "tags": [
+        "skills",
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Attack is a melee combat skill which determines the accuracy of a player's attacks when using melee weapons. Higher Attack allows the use of stronger weapons.",
+        "stats": [
+          {
+            "label": "Max level",
+            "value": "99"
+          },
+          {
+            "label": "Type",
+            "value": "Melee"
+          },
+          {
+            "label": "XP/hr (AFK)",
+            "value": "~40k"
+          }
+        ]
+      }
     },
     {
       "id": "strength",
       "name": "Strength",
       "url": "/skills/strength",
       "category": "page",
-      "summary": "Strength increases the maximum melee damage a player can deal."
+      "summary": "Strength increases the maximum melee damage a player can deal.",
+      "icon": {
+        "name": "strength"
+      },
+      "tags": [
+        "skills",
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Strength is a melee combat skill that determines the amount of damage a player can inflict in combat. Higher Strength levels allow players to deal more damage per hit.",
+        "stats": [
+          {
+            "label": "Max level",
+            "value": "99"
+          },
+          {
+            "label": "Type",
+            "value": "Melee"
+          },
+          {
+            "label": "XP/hr (AFK)",
+            "value": "~45k"
+          }
+        ]
+      }
     },
     {
       "id": "defence",
       "name": "Defence",
       "url": "/skills/defence",
       "category": "page",
-      "summary": "Defence reduces the chance of being hit by opponents."
+      "summary": "Defence reduces the chance of being hit by opponents.",
+      "icon": {
+        "name": "defence"
+      },
+      "tags": [
+        "skills",
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Defence is a melee combat skill that decreases the likelihood of an opponent successfully landing a hit on a player. Higher Defence allows use of stronger armour.",
+        "stats": [
+          {
+            "label": "Max level",
+            "value": "99"
+          },
+          {
+            "label": "Type",
+            "value": "Melee"
+          },
+          {
+            "label": "XP/hr (AFK)",
+            "value": "~30k"
+          }
+        ]
+      }
     },
     {
       "id": "ranged",
       "name": "Ranged",
       "url": "/skills/ranged",
       "category": "page",
-      "summary": "Ranged allows combat from a distance using projectiles."
+      "summary": "Ranged allows combat from a distance using projectiles.",
+      "icon": {
+        "name": "ranged"
+      },
+      "tags": [
+        "skills",
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Ranged is a combat skill that allows players to attack from a distance using bows, crossbows, and thrown weapons. It is one of the three combat styles.",
+        "stats": [
+          {
+            "label": "Max level",
+            "value": "99"
+          },
+          {
+            "label": "Type",
+            "value": "Ranged"
+          },
+          {
+            "label": "XP/hr (AFK)",
+            "value": "~50k"
+          }
+        ]
+      }
     },
     {
       "id": "magic",
       "name": "Magic",
       "url": "/skills/magic",
       "category": "page",
-      "summary": "Magic enables spellcasting using runes."
+      "summary": "Magic enables spellcasting using runes.",
+      "icon": {
+        "name": "magic"
+      },
+      "tags": [
+        "skills",
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Magic is one of the most versatile skills in the game, used for combat, teleportation, enchanting, and alchemy. Spells require runes to cast.",
+        "stats": [
+          {
+            "label": "Max level",
+            "value": "99"
+          },
+          {
+            "label": "Type",
+            "value": "Magic"
+          },
+          {
+            "label": "XP/hr (AFK)",
+            "value": "~60k"
+          }
+        ]
+      }
     },
     {
       "id": "prayer",
       "name": "Prayer",
       "url": "/skills/prayer",
       "category": "page",
-      "summary": "Prayer grants temporary combat boosts and protection."
+      "summary": "Prayer grants temporary combat boosts and protection.",
+      "icon": {
+        "name": "prayer"
+      },
+      "tags": [
+        "skills",
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Prayer is a skill that can be trained by burying bones or offering them at the altar in Edgeville Monastery. Active prayers drain prayer points over time.",
+        "stats": [
+          {
+            "label": "Max level",
+            "value": "99"
+          },
+          {
+            "label": "Type",
+            "value": "Support"
+          },
+          {
+            "label": "XP/hr (AFK)",
+            "value": "varies"
+          }
+        ]
+      }
     },
     {
       "id": "melee",
       "name": "Melee",
       "url": "/combat/melee",
       "category": "page",
-      "summary": "Overview of melee combat mechanics."
+      "summary": "Overview of melee combat mechanics.",
+      "icon": {
+        "name": "melee"
+      },
+      "tags": [
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Melee combat uses Attack, Strength, and Defence skills. Weapon choice, combat style, and enemy weaknesses all affect damage and accuracy.",
+        "stats": [
+          {
+            "label": "Skills used",
+            "value": "Attack, Strength, Defence"
+          },
+          {
+            "label": "Range",
+            "value": "Adjacent"
+          }
+        ]
+      }
     },
     {
       "id": "bosses",
       "name": "Bosses",
       "url": "/combat/bosses",
       "category": "page",
-      "summary": "List of boss monsters and their mechanics."
+      "summary": "List of boss monsters and their mechanics.",
+      "icon": {
+        "name": "bosses"
+      },
+      "tags": [
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Bosses are powerful monsters that typically require high combat stats and specific strategies to defeat. They drop valuable and unique items.",
+        "stats": [
+          {
+            "label": "Difficulty",
+            "value": "High"
+          },
+          {
+            "label": "Rewards",
+            "value": "Unique drops"
+          }
+        ]
+      }
     },
     {
       "id": "weapons",
       "name": "Weapons",
       "url": "/items/weapons",
       "category": "page",
-      "summary": "Weapons available in Old School RuneScape."
+      "summary": "Weapons available in Old School RuneScape.",
+      "icon": {
+        "name": "weapons"
+      },
+      "tags": [
+        "items",
+        "combat"
+      ],
+      "preview": {
+        "excerpt": "Weapons vary by attack style, speed, and level requirement. Melee weapons include swords and axes; ranged weapons include bows and crossbows.",
+        "stats": [
+          {
+            "label": "Categories",
+            "value": "Melee, Ranged, Magic"
+          }
+        ]
+      }
     },
     {
       "id": "armour",
       "name": "Armour",
       "url": "/items/armour",
       "category": "page",
-      "summary": "Armour sets and their defensive stats."
+      "summary": "Armour sets and their defensive stats.",
+      "icon": {
+        "name": "armour"
+      },
+      "tags": [
+        "items"
+      ],
+      "preview": {
+        "excerpt": "Armour provides defensive bonuses against melee, ranged, and magic attacks. Sets are typically unlocked at specific Defence levels.",
+        "stats": [
+          {
+            "label": "Stat types",
+            "value": "Stab, Slash, Crush, Magic, Ranged"
+          }
+        ]
+      }
     },
     {
       "id": "runes",
       "name": "Runes",
       "url": "/items/runes",
       "category": "page",
-      "summary": "Runes used for casting Magic spells."
+      "summary": "Runes used for casting Magic spells.",
+      "icon": {
+        "name": "runes"
+      },
+      "tags": [
+        "items",
+        "magic"
+      ],
+      "preview": {
+        "excerpt": "Runes are small, magical stones used to cast spells. They can be purchased from magic shops, crafted via Runecraft, or obtained as drops.",
+        "stats": [
+          {
+            "label": "Skill",
+            "value": "Magic / Runecraft"
+          },
+          {
+            "label": "Types",
+            "value": "Air, Water, Earth, Fire, Mind, Body, Cosmic, Chaos, Nature, Law, Death, Blood, Soul"
+          }
+        ]
+      }
     }
   ]
 }
