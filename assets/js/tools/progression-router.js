@@ -67,6 +67,7 @@
   let currentPath      = [];
   let pinnedExclusions = new Set();
   let pinnedInserts    = [];   // [{anchor: stepId|"start", step: {...}}]
+  let manualQuestDone  = new Set(); // quest ids checked off by user
   let activePlanIdx    = -1;
   let goalQueue        = [];
   let skillNames       = [];
@@ -475,8 +476,8 @@
 
   function routeMulti(goals, steps, profile) {
     let skills          = { ...profile.skills };
-    let completedIds    = new Set();
-    let completedQuests = new Set();
+    let completedIds    = new Set([...manualQuestDone]);
+    let completedQuests = new Set([...manualQuestDone]);
     const excluded      = profile.excludeRegions ?? [];
 
     return goals.flatMap((goal) => {
@@ -715,11 +716,14 @@
     const rows = [insertRowHtml(-1)];
 
     path.forEach((step, i) => {
-      rows.push(`<li class="route-step" data-step-idx="${i}">
+      const isQuest = (step.tags ?? []).includes("quest");
+      const questDone = manualQuestDone.has(step.id);
+      rows.push(`<li class="route-step${questDone ? " quest-done" : ""}" data-step-idx="${i}">
         <span class="step-num">${i + 1}</span>
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
+          ${isQuest ? `<label class="quest-done-label"><input type="checkbox" class="quest-done-cb" data-step-id="${escHtml(step.id)}"${questDone ? " checked" : ""}> Mark complete</label>` : ""}
           <textarea class="step-note" data-step-id="${escHtml(step.id)}" rows="1" placeholder="Add a note…"></textarea>
         </span>
         <span class="step-meta">
@@ -729,6 +733,7 @@
           ${invBadge(step)}
           ${reqBadge(step.reqs)}
           ${constraintBadges(step.reqs)}
+          ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           <button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>
         </span>
       </li>`);
@@ -741,6 +746,8 @@
     wireStepEdit(stepsEl);
     wireInsertRows(stepsEl);
     wireStepRemove(stepsEl);
+    wireQuestCheckboxes(stepsEl);
+    wireStepEditBtn(stepsEl);
     renderRouteBar(path);
   }
 
@@ -778,6 +785,127 @@
         // Remove from pinned inserts if it was one
         pinnedInserts = pinnedInserts.filter((p) => p.step.id !== step.id);
         currentPath.splice(idx, 1);
+        if (window._routerLastPath) window._routerLastPath.path = currentPath;
+        renderSteps(currentPath);
+      });
+    });
+  }
+
+  function wireQuestCheckboxes(container) {
+    container.querySelectorAll(".quest-done-cb").forEach((cb) => {
+      cb.addEventListener("change", () => {
+        const id = cb.dataset.stepId;
+        cb.checked ? manualQuestDone.add(id) : manualQuestDone.delete(id);
+        recompute();
+      });
+    });
+  }
+
+  function wireStepEditBtn(container) {
+    container.querySelectorAll(".step-edit-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const idx  = +btn.dataset.stepIdx;
+        const step = currentPath[idx];
+        if (!step?._custom) return;
+        const li = btn.closest(".route-step");
+
+        const skillOpts = skillNames.map((sk) =>
+          `<option value="${sk}">${skillLabel(sk)}</option>`).join("");
+        const reqs   = normalizeReqs(step.reqs);
+        const grants = step.grants ?? {};
+        const reqPairs   = Object.entries(reqs.skills   ?? {});
+        const grantPairs = Object.entries(grants);
+
+        const form = document.createElement("div");
+        form.className = "step-edit-form";
+        form.innerHTML = `
+          <div class="sef-row">
+            <input class="sef-label"  type="text" value="${escHtml(step.label)}"       placeholder="Label">
+            <input class="sef-detail" type="text" value="${escHtml(step.detail ?? "")}" placeholder="Detail">
+          </div>
+          <div class="sef-section">Reqs
+            <div class="sef-reqs">${reqPairs.map(([,lvl]) =>
+              `<span class="sef-pair"><select class="sef-sk">${skillOpts}</select><input type="number" class="sef-lvl" min="1" max="99" value="${lvl}"><button class="btn btn-ghost sef-rm">✕</button></span>`
+            ).join("")}</div>
+            <button class="btn btn-ghost sef-add-req">+ req</button>
+          </div>
+          <div class="sef-section">Grants
+            <div class="sef-grants">${grantPairs.map(([,lvl]) =>
+              `<span class="sef-pair"><select class="sef-sk">${skillOpts}</select><input type="number" class="sef-lvl" min="1" max="99" value="${lvl}"><button class="btn btn-ghost sef-rm">✕</button></span>`
+            ).join("")}</div>
+            <button class="btn btn-ghost sef-add-grant">+ grant</button>
+          </div>
+          <div class="sef-actions">
+            <button class="btn btn-primary sef-commit">Save</button>
+            <button class="btn btn-ghost sef-cancel">Cancel</button>
+          </div>`;
+
+        // Pre-select skill values
+        const pairEls = (sel) => form.querySelectorAll(sel + " .sef-pair");
+        const setSk = (pairEl, sk) => { const s = pairEl.querySelector(".sef-sk"); if (s) s.value = sk; };
+        pairEls(".sef-reqs").forEach((p, i)   => setSk(p, reqPairs[i]?.[0]   ?? skillNames[0]));
+        pairEls(".sef-grants").forEach((p, i) => setSk(p, grantPairs[i]?.[0] ?? skillNames[0]));
+
+        const addRow = (container) => {
+          const span = document.createElement("span");
+          span.className = "sef-pair";
+          span.innerHTML = `<select class="sef-sk">${skillOpts}</select><input type="number" class="sef-lvl" min="1" max="99" value="1"><button class="btn btn-ghost sef-rm">✕</button>`;
+          span.querySelector(".sef-rm").addEventListener("click", () => span.remove());
+          container.appendChild(span);
+        };
+
+        form.querySelectorAll(".sef-rm").forEach((b) => b.addEventListener("click", () => b.closest(".sef-pair").remove()));
+        form.querySelector(".sef-add-req").addEventListener("click",   () => addRow(form.querySelector(".sef-reqs")));
+        form.querySelector(".sef-add-grant").addEventListener("click", () => addRow(form.querySelector(".sef-grants")));
+
+        const readPairs = (sel) => Object.fromEntries(
+          [...form.querySelectorAll(sel + " .sef-pair")].map((p) => [
+            p.querySelector(".sef-sk").value, +p.querySelector(".sef-lvl").value,
+          ])
+        );
+
+        form.querySelector(".sef-commit").addEventListener("click", () => {
+          const label  = form.querySelector(".sef-label").value.trim()  || step.label;
+          const detail = form.querySelector(".sef-detail").value.trim() || "";
+          currentPath[idx] = { ...step, label, detail,
+            reqs:   { skills: readPairs(".sef-reqs") },
+            grants: readPairs(".sef-grants") };
+          if (window._routerLastPath) window._routerLastPath.path = currentPath;
+          renderSteps(currentPath);
+        });
+        form.querySelector(".sef-cancel").addEventListener("click", () => renderSteps(currentPath));
+
+        li.replaceWith(form);
+      });
+    });
+  }
+
+  // ── Step bank ─────────────────────────────────────────────────────────────
+  function renderStepBank() {
+    const list   = $("rt-bank-list");
+    const filter = $("rt-bank-filter");
+    if (!list) return;
+    const q = (filter?.value ?? "").toLowerCase();
+    const visible = allSteps.filter((s) =>
+      !q || s.label.toLowerCase().includes(q) || (s.tags ?? []).some((t) => t.includes(q))
+    );
+    list.innerHTML = visible.map((s) => `
+      <li class="route-step bank-step" data-step-id="${escHtml(s.id)}">
+        <span class="step-body">
+          <span class="step-title">${escHtml(s.label)}</span>
+          <span class="step-detail">${escHtml(s.detail ?? "")}</span>
+        </span>
+        <span class="step-meta">
+          ${(s.tags ?? []).map((t) => `<span class="step-badge">${t}</span>`).join("")}
+          <button class="btn btn-ghost bank-add-btn" data-step-id="${escHtml(s.id)}">Add</button>
+        </span>
+      </li>`).join("");
+
+    list.querySelectorAll(".bank-add-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const step = allSteps.find((s) => s.id === btn.dataset.stepId);
+        if (!step) return;
+        currentPath.push(step);
         if (window._routerLastPath) window._routerLastPath.path = currentPath;
         renderSteps(currentPath);
       });
@@ -844,6 +972,7 @@
   function loadPlan(plan, idx) {
     activePlanIdx    = idx ?? -1;
     pinnedExclusions = new Set();
+    manualQuestDone  = new Set();
     pinnedInserts    = (plan.pinnedInserts ?? []);
     applyProfile({ skills: plan.skills, style: plan.style });
     if (plan.goals) {
@@ -875,6 +1004,8 @@
     buildSkillGrid(skillNames);
     buildPresetSelect(allGoals);
     buildRegionExcludes(allRegions);
+    renderStepBank();
+    $("rt-bank-filter")?.addEventListener("input", renderStepBank);
 
     const saved = store.profile();
     if (Object.keys(saved).length) applyProfile(saved);
@@ -928,6 +1059,7 @@
       }
       pinnedExclusions = new Set();
       pinnedInserts    = [];
+      manualQuestDone  = new Set();
       activePlanIdx    = -1;
       recompute();
     });
@@ -936,7 +1068,7 @@
       skillNames.forEach((sk) => { const el = els.skillInput(sk); if (el) el.value = 1; });
       if (els.style()) els.style().value = "balanced";
       goalQueue = []; activePlanIdx = -1;
-      pinnedExclusions = new Set(); pinnedInserts = []; currentPath = [];
+      pinnedExclusions = new Set(); pinnedInserts = []; currentPath = []; manualQuestDone = new Set();
       store.saveGoals(goalQueue); store.saveActive(null); store.clearNotes();
       renderGoalQueue();
       els.empty().hidden = false;

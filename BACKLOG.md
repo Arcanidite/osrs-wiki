@@ -99,7 +99,7 @@ The distinction between "goal" (an objective for the router) and "step" (a unit 
 
 **What it should do:** A collapsible "Step bank" panel lists all steps from `steps.jsonl` (filterable by label/tag). Each entry has an "Add to plan" button that appends the step to `currentPath` (or inserts at a cursor position) and triggers recompute-consolidation. Custom steps can also be created here instead of only via the inline insert form.
 
-**Status:** TODO
+**Status:** DONE ✓ (appends to end; cursor-position insert is a future enhancement)
 
 ---
 
@@ -109,7 +109,7 @@ The distinction between "goal" (an objective for the router) and "step" (a unit 
 
 **What it should do:** Clicking the label or detail of any step activates an inline edit mode (input fields). Committing updates `currentPath` in place. Applies to both preset and custom steps — label is always editable, detail is always editable, reqs/grants editable on custom steps. Does not trigger a full recompute (the user chose to override).
 
-**Status:** TODO
+**Status:** DONE ✓ — dblclick edits label/detail on all steps; ✎ button on custom steps opens reqs/grants editor
 
 ---
 
@@ -117,7 +117,7 @@ The distinction between "goal" (an objective for the router) and "step" (a unit 
 
 Quest-tagged steps in the route output should render a checkbox. Checking it marks the quest complete, updates `completedQuests` state, and triggers a re-route from that checkpoint forward.
 
-**Status:** TODO — quest state tracking added to router logic but no UI checkpoint yet.
+**Status:** DONE ✓
 
 ---
 
@@ -144,6 +144,9 @@ Extraction pipeline is in place. Location data remains empty until fresh XTEA ke
 - `[req:data]` — `train-mm-tunnels`, `unlock-barrows`, `unlock-gwd` migrated to structured reqs ✓ (pending commit)
 - `[req:constraints]` — `constraints.jsonl`: 20 entries covering equipment, inv_item, inv_free, item_on_item, item_on_object, object_interact, region_order, graph_ref types ✓ (pending commit)
 - `[req:router]` — `normalizeReqs`, extended `meetsReqs`, `constraintBadges` renderer (eq/itm/inv/constraint badges) ✓ (pending commit)
+- `[router:quest-state]` — quest checkbox per step, `manualQuestDone` Set seeds router, recompute on check ✓ (pending commit)
+- `[router:step-bank]` — collapsible panel, filter by label/tag, Add appends to plan ✓ (pending commit)
+- `[router:step-edit]` — dblclick label/detail all steps; ✎ opens reqs/grants form on custom steps ✓ (pending commit)
 - `[router:live-recompute]` — goal queue mutations + stat changes trigger recompute ✓ (`41f3af3`)
 - `[router:goal-edit]` — inline goal card editor ✓ (`41f3af3`)
 - `[router:uniform-steps]` — contiguous numbering, goal badge inline ✓ (`41f3af3`)

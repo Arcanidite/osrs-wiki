@@ -449,9 +449,33 @@ body {
 .step-badge.itm        { background: #ecfdf5; color: #065f46; }
 .step-badge.constraint { background: #f3f4f6; color: #374151; cursor: help; }
 
-/* Step remove button — sits in step-meta column */
-.step-remove-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); color: var(--muted); opacity: 0; transition: opacity 0.1s; }
-.route-step:hover .step-remove-btn { opacity: 1; }
+/* Step remove / edit buttons */
+.step-remove-btn, .step-edit-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); color: var(--muted); opacity: 0; transition: opacity 0.1s; }
+.route-step:hover .step-remove-btn,
+.route-step:hover .step-edit-btn { opacity: 1; }
+
+/* Quest completion checkbox */
+.quest-done-label { display: flex; align-items: center; gap: 4px; font-size: var(--fs-xs); color: var(--muted); margin-top: 2px; cursor: pointer; }
+.quest-done-label input { cursor: pointer; }
+.route-step.quest-done .step-title { text-decoration: line-through; opacity: 0.55; }
+.route-step.quest-done .step-num { background: #6b7280; }
+
+/* Custom step edit form */
+.step-edit-form { padding: var(--sp-h); border-bottom: 1px dashed var(--accent); display: flex; flex-direction: column; gap: var(--sp-h); }
+.sef-row { display: flex; gap: var(--sp-h); }
+.sef-row input { flex: 1; font-size: var(--fs-xs); padding: 2px var(--sp-q); border: 1px solid var(--border); border-radius: var(--radius); }
+.sef-section { font-size: var(--fs-xs); font-weight: 600; display: flex; flex-direction: column; gap: var(--sp-q); }
+.sef-reqs, .sef-grants { display: flex; flex-wrap: wrap; gap: var(--sp-q); }
+.sef-pair { display: flex; align-items: center; gap: 2px; }
+.sef-pair select, .sef-pair input { font-size: var(--fs-xs); padding: 1px 4px; border: 1px solid var(--border); border-radius: var(--radius); }
+.sef-pair input { width: 3rem; }
+.sef-actions { display: flex; gap: var(--sp-q); }
+
+/* Step bank */
+#rt-bank summary { font-size: var(--fs-sm); font-weight: 600; }
+.bank-step { cursor: default; }
+.bank-add-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); opacity: 0; transition: opacity 0.1s; }
+.bank-step:hover .bank-add-btn { opacity: 1; }
 
 /* Inline step label/detail edit inputs */
 .step-title-edit {
