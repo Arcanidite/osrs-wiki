@@ -11,26 +11,18 @@
 
     <ul class="nav-links" data-catalog-nav>
       {% for item in site.data.nav %}
-        {% include nav-item.html item=item %}
+        <li class="nav-item{% if item.children.size > 0 %} has-dropdown{% endif %}">
+          <a href="{{ baseurl }}{{ item.url }}">{{ item.label }}</a>
+          {% if item.children.size > 0 %}
+            <ul class="dropdown">
+              {% for child in item.children %}
+                <li><a href="{{ baseurl }}{{ child.url }}">{{ child.label }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
       {% endfor %}
     </ul>
-
-    {% assign boxes = site.data.comboboxes %}
-    {% if boxes.size > 0 %}
-      <div class="nav-comboboxes">
-        {% for box in boxes %}
-          {% if box.options.size > 0 %}
-            <label class="combobox-label" for="cb-{{ box.id }}">{{ box.label }}</label>
-            <select class="nav-combobox" id="cb-{{ box.id }}" data-nav-combobox>
-              <option value="">{{ box.label }}</option>
-              {% for opt in box.options %}
-                <option value="{{ baseurl }}{{ opt.url }}">{{ opt.label }}</option>
-              {% endfor %}
-            </select>
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endif %}
 
     {% if site.data.site.search_enabled %}
       <div class="search-bar">
