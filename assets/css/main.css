@@ -127,9 +127,37 @@ body {
   border-radius: 4px;
   max-height: 400px;
   overflow-y: auto;
-  z-index: 100;
-  padding: 0.5rem;
+  z-index: 300;
+  padding: 0.25rem 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.search-result-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.1s;
+}
+.search-result-item:hover,
+.search-result-item.is-active {
+  background: #f0ede5;
+  outline: none;
+}
+.sri-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.sri-summary {
+  font-size: 0.78rem;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Landing */

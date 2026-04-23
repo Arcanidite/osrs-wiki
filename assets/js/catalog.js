@@ -76,34 +76,65 @@
     </article>`;
   }
 
+  function searchRow(entry) {
+    const href = entry.url ? BASE + entry.url : "";
+    return `<a class="search-result-item" href="${href}" data-search-item>
+      <span class="sri-name">${entry.name ?? ""}</span>
+      ${entry.summary ? `<span class="sri-summary">${entry.summary}</span>` : ""}
+    </a>`;
+  }
+
   function wireSearch(catalog) {
     const input = document.querySelector("[data-catalog-search]");
     const results = document.querySelector("[data-catalog-results]");
     if (!input || !results || !catalog.entries?.length) return;
 
-    const dismiss = () => { results.hidden = true; results.innerHTML = ""; };
+    let cursor = -1;
+
+    const items = () => Array.from(results.querySelectorAll("[data-search-item]"));
+
+    const highlight = (idx) => {
+      items().forEach((el, i) => el.classList.toggle("is-active", i === idx));
+      cursor = idx;
+    };
+
+    const dismiss = () => {
+      results.hidden = true;
+      results.innerHTML = "";
+      cursor = -1;
+    };
 
     input.addEventListener("input", () => {
+      cursor = -1;
       const q = input.value.trim().toLowerCase();
       if (!q) { dismiss(); return; }
       const hits = catalog.entries.filter(
         (e) => (e.name ?? "").toLowerCase().includes(q) || (e.summary ?? "").toLowerCase().includes(q)
       );
       results.hidden = !hits.length;
-      results.innerHTML = hits.map(entryCard).join("");
+      results.innerHTML = hits.map(searchRow).join("");
     });
 
-    input.addEventListener("blur", () => {
-      // delay so clicks on result links register before dismissal
-      setTimeout(dismiss, 150);
+    input.addEventListener("keydown", (e) => {
+      const list = items();
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        highlight(Math.min(cursor + 1, list.length - 1));
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        highlight(Math.max(cursor - 1, 0));
+      } else if (e.key === "Enter" && cursor >= 0) {
+        e.preventDefault();
+        list[cursor]?.click();
+      } else if (e.key === "Escape") {
+        dismiss(); input.blur();
+      }
     });
+
+    input.addEventListener("blur", () => setTimeout(dismiss, 150));
 
     document.addEventListener("click", (e) => {
       if (!input.contains(e.target) && !results.contains(e.target)) dismiss();
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") { dismiss(); input.blur(); }
     });
   }
 
