@@ -420,6 +420,22 @@ body {
 .step-badge.req { background: #fef3cd; color: #7a5c00; }
 .step-badge.xp  { background: #d4edda; color: #1a5c2a; }
 .step-badge.inv { background: #d1ecf1; color: #0c5460; }
+.step-badge.loc { background: #e8e0f5; color: #4a2d8a; text-transform: capitalize; }
+
+.region-exclude-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-q);
+  margin-top: var(--sp-q);
+}
+.region-exclude-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-h);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+.region-exclude-item input { cursor: pointer; }
 
 .plan-saved {
   font-size: var(--fs-xs); color: var(--muted);

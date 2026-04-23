@@ -1,6 +1,201 @@
 {
   "nested": [
     {
+      "id": "regions",
+      "label": "Regions",
+      "url": "/regions",
+      "type": "group",
+      "slots": [
+        "nav",
+        "sitemap"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ]
+      },
+      "children": [
+        {
+          "id": "region-global",
+          "label": "Global",
+          "url": "/regions/global",
+          "type": "region",
+          "slots": [
+            "sitemap"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "region-misthalin",
+          "label": "Misthalin",
+          "url": "/regions/misthalin",
+          "type": "region",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ],
+            "summary": "Starting region. Lumbridge, Varrock, Draynor."
+          },
+          "children": []
+        },
+        {
+          "id": "region-morytania",
+          "label": "Morytania",
+          "url": "/regions/morytania",
+          "type": "region",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ],
+            "summary": "Undead-heavy region. Requires Priest in Peril. Contains Barrows and Slayer Tower.",
+            "preview": {
+              "excerpt": "Morytania is locked behind Priest in Peril. Home to Barrows, the Slayer Tower, and high-level Slayer tasks.",
+              "stats": [
+                {
+                  "label": "Quest gate",
+                  "value": "Priest in Peril"
+                }
+              ]
+            }
+          },
+          "children": []
+        },
+        {
+          "id": "region-kandarin",
+          "label": "Kandarin",
+          "url": "/regions/kandarin",
+          "type": "region",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ],
+            "summary": "Large western region. Ardougne, Camelot, NMZ."
+          },
+          "children": []
+        },
+        {
+          "id": "region-troll-country",
+          "label": "Troll Country",
+          "url": "/regions/troll-country",
+          "type": "region",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ],
+            "summary": "Northern mountains. God Wars Dungeon."
+          },
+          "children": []
+        },
+        {
+          "id": "region-ape-atoll",
+          "label": "Ape Atoll",
+          "url": "/regions/ape-atoll",
+          "type": "region",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ],
+            "summary": "Monkey island. Locked behind Monkey Madness I. Best melee training.",
+            "preview": {
+              "excerpt": "Ape Atoll is unlocked by completing Monkey Madness I. Contains the Maniacal Monkey tunnels — the best melee XP in the game.",
+              "stats": [
+                {
+                  "label": "Quest gate",
+                  "value": "Monkey Madness I"
+                }
+              ]
+            }
+          },
+          "children": []
+        },
+        {
+          "id": "region-kharidian-desert",
+          "label": "Kharidian Desert",
+          "url": "/regions/kharidian-desert",
+          "type": "region",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ],
+            "summary": "Desert region. Al Kharid, Pyramid, Desert Treasure."
+          },
+          "children": []
+        },
+        {
+          "id": "region-zeah",
+          "label": "Zeah",
+          "url": "/regions/zeah",
+          "type": "region",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ],
+            "summary": "Continent of Zeah. Chambers of Xeric. Partially quest-gated.",
+            "preview": {
+              "excerpt": "Zeah is a large continent with multiple sub-regions. Chambers of Xeric — the most valuable raid — is located here.",
+              "stats": [
+                {
+                  "label": "Raid",
+                  "value": "Chambers of Xeric"
+                }
+              ]
+            }
+          },
+          "children": []
+        },
+        {
+          "id": "region-wilderness",
+          "label": "Wilderness",
+          "url": "/regions/wilderness",
+          "type": "region",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "tags": [
+              "regions"
+            ],
+            "summary": "PvP-enabled region. KBD lair, Revenant caves, high-risk rewards."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
       "id": "getting-started",
       "label": "Getting Started",
       "url": "/guides/getting-started",
@@ -556,6 +751,56 @@
     }
   ],
   "flat": [
+    {
+      "id": "regions",
+      "label": "Regions",
+      "url": "/regions"
+    },
+    {
+      "id": "region-global",
+      "label": "Global",
+      "url": "/regions/global"
+    },
+    {
+      "id": "region-misthalin",
+      "label": "Misthalin",
+      "url": "/regions/misthalin"
+    },
+    {
+      "id": "region-morytania",
+      "label": "Morytania",
+      "url": "/regions/morytania"
+    },
+    {
+      "id": "region-kandarin",
+      "label": "Kandarin",
+      "url": "/regions/kandarin"
+    },
+    {
+      "id": "region-troll-country",
+      "label": "Troll Country",
+      "url": "/regions/troll-country"
+    },
+    {
+      "id": "region-ape-atoll",
+      "label": "Ape Atoll",
+      "url": "/regions/ape-atoll"
+    },
+    {
+      "id": "region-kharidian-desert",
+      "label": "Kharidian Desert",
+      "url": "/regions/kharidian-desert"
+    },
+    {
+      "id": "region-zeah",
+      "label": "Zeah",
+      "url": "/regions/zeah"
+    },
+    {
+      "id": "region-wilderness",
+      "label": "Wilderness",
+      "url": "/regions/wilderness"
+    },
     {
       "id": "getting-started",
       "label": "Getting Started",

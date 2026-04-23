@@ -337,6 +337,315 @@
       }
     },
     {
+      "id": "region-misthalin",
+      "name": "Misthalin",
+      "url": "/regions/misthalin",
+      "category": "region",
+      "summary": "Starting region. Lumbridge, Varrock, Draynor.",
+      "icon": null,
+      "tags": [
+        "regions"
+      ],
+      "preview": null
+    },
+    {
+      "id": "region-morytania",
+      "name": "Morytania",
+      "url": "/regions/morytania",
+      "category": "region",
+      "summary": "Undead-heavy region. Requires Priest in Peril. Contains Barrows and Slayer Tower.",
+      "icon": null,
+      "tags": [
+        "regions"
+      ],
+      "preview": {
+        "excerpt": "Morytania is locked behind Priest in Peril. Home to Barrows, the Slayer Tower, and high-level Slayer tasks.",
+        "stats": [
+          {
+            "label": "Quest gate",
+            "value": "Priest in Peril"
+          }
+        ]
+      }
+    },
+    {
+      "id": "region-kandarin",
+      "name": "Kandarin",
+      "url": "/regions/kandarin",
+      "category": "region",
+      "summary": "Large western region. Ardougne, Camelot, NMZ.",
+      "icon": null,
+      "tags": [
+        "regions"
+      ],
+      "preview": null
+    },
+    {
+      "id": "region-troll-country",
+      "name": "Troll Country",
+      "url": "/regions/troll-country",
+      "category": "region",
+      "summary": "Northern mountains. God Wars Dungeon.",
+      "icon": null,
+      "tags": [
+        "regions"
+      ],
+      "preview": null
+    },
+    {
+      "id": "region-ape-atoll",
+      "name": "Ape Atoll",
+      "url": "/regions/ape-atoll",
+      "category": "region",
+      "summary": "Monkey island. Locked behind Monkey Madness I. Best melee training.",
+      "icon": null,
+      "tags": [
+        "regions"
+      ],
+      "preview": {
+        "excerpt": "Ape Atoll is unlocked by completing Monkey Madness I. Contains the Maniacal Monkey tunnels — the best melee XP in the game.",
+        "stats": [
+          {
+            "label": "Quest gate",
+            "value": "Monkey Madness I"
+          }
+        ]
+      }
+    },
+    {
+      "id": "region-kharidian-desert",
+      "name": "Kharidian Desert",
+      "url": "/regions/kharidian-desert",
+      "category": "region",
+      "summary": "Desert region. Al Kharid, Pyramid, Desert Treasure.",
+      "icon": null,
+      "tags": [
+        "regions"
+      ],
+      "preview": null
+    },
+    {
+      "id": "region-zeah",
+      "name": "Zeah",
+      "url": "/regions/zeah",
+      "category": "region",
+      "summary": "Continent of Zeah. Chambers of Xeric. Partially quest-gated.",
+      "icon": null,
+      "tags": [
+        "regions"
+      ],
+      "preview": {
+        "excerpt": "Zeah is a large continent with multiple sub-regions. Chambers of Xeric — the most valuable raid — is located here.",
+        "stats": [
+          {
+            "label": "Raid",
+            "value": "Chambers of Xeric"
+          }
+        ]
+      }
+    },
+    {
+      "id": "region-wilderness",
+      "name": "Wilderness",
+      "url": "/regions/wilderness",
+      "category": "region",
+      "summary": "PvP-enabled region. KBD lair, Revenant caves, high-risk rewards.",
+      "icon": null,
+      "tags": [
+        "regions"
+      ],
+      "preview": null
+    },
+    {
+      "id": "quest-priest-in-peril",
+      "name": "Priest in Peril",
+      "url": "/quests/priest-in-peril",
+      "category": "quest",
+      "summary": "Unlocks Morytania region access.",
+      "icon": null,
+      "tags": [
+        "quests"
+      ],
+      "preview": null
+    },
+    {
+      "id": "quest-mm",
+      "name": "Monkey Madness I",
+      "url": "/quests/monkey-madness",
+      "category": "quest",
+      "summary": "Unlocks Ape Atoll and MM Tunnels. Grants large combat XP.",
+      "icon": null,
+      "tags": [
+        "quests"
+      ],
+      "preview": null
+    },
+    {
+      "id": "quest-dt",
+      "name": "Desert Treasure",
+      "url": "/quests/desert-treasure",
+      "category": "quest",
+      "summary": "Unlocks Ancient Magicks. Requires 50 Magic, 53 Thieving, 10 Slayer, 50 Firemaking.",
+      "icon": null,
+      "tags": [
+        "quests"
+      ],
+      "preview": null
+    },
+    {
+      "id": "quest-regicide",
+      "name": "Regicide",
+      "url": "/quests/regicide",
+      "category": "quest",
+      "summary": "Unlocks access to Zul-Andra and Zulrah.",
+      "icon": null,
+      "tags": [
+        "quests"
+      ],
+      "preview": null
+    },
+    {
+      "id": "quest-tale-of-arrav",
+      "name": "Tale of the Righteous",
+      "url": "/quests/tale-of-the-righteous",
+      "category": "quest",
+      "summary": "Zeah intro quest. Partially enables CoX access.",
+      "icon": null,
+      "tags": [
+        "quests"
+      ],
+      "preview": null
+    },
+    {
+      "id": "monster-abyssal-demon",
+      "name": "Abyssal Demon",
+      "url": "/combat/monsters/abyssal-demon",
+      "category": "monster",
+      "summary": "Level 124 Slayer monster. Requires 85 Slayer. Drops Abyssal Whip.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "slayer"
+      ],
+      "preview": null
+    },
+    {
+      "id": "monster-zulrah",
+      "name": "Zulrah",
+      "url": "/combat/monsters/zulrah",
+      "category": "monster",
+      "summary": "Solo boss in Zul-Andra. Requires Regicide. Drops Toxic Blowpipe and Magic Fang.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "bosses"
+      ],
+      "preview": null
+    },
+    {
+      "id": "monster-kbd",
+      "name": "King Black Dragon",
+      "url": "/combat/monsters/kbd",
+      "category": "monster",
+      "summary": "Wilderness boss. Drops Dragon pickaxe and KBD heads.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "bosses"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-abyssal-whip",
+      "name": "Abyssal Whip",
+      "url": "/items/weapons/abyssal-whip",
+      "category": "item",
+      "summary": "Best-in-slot melee training weapon. Requires 70 Attack.",
+      "icon": null,
+      "tags": [
+        "items",
+        "weapons"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-toxic-blowpipe",
+      "name": "Toxic Blowpipe",
+      "url": "/items/weapons/toxic-blowpipe",
+      "category": "item",
+      "summary": "Fast ranged weapon from Zulrah. Requires 75 Ranged.",
+      "icon": null,
+      "tags": [
+        "items",
+        "weapons"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-magic-fang",
+      "name": "Magic Fang",
+      "url": "/items/weapons/magic-fang",
+      "category": "item",
+      "summary": "Zulrah drop. Used to create Toxic Trident.",
+      "icon": null,
+      "tags": [
+        "items"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-twisted-bow",
+      "name": "Twisted Bow",
+      "url": "/items/weapons/twisted-bow",
+      "category": "item",
+      "summary": "Chambers of Xeric unique. Best-in-slot ranged weapon. Requires 75 Ranged.",
+      "icon": null,
+      "tags": [
+        "items",
+        "weapons"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-scythe",
+      "name": "Scythe of Vitur",
+      "url": "/items/weapons/scythe",
+      "category": "item",
+      "summary": "Theatre of Blood unique. Best melee weapon for multi-target.",
+      "icon": null,
+      "tags": [
+        "items",
+        "weapons"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-kodai-wand",
+      "name": "Kodai Wand",
+      "url": "/items/weapons/kodai-wand",
+      "category": "item",
+      "summary": "Chambers of Xeric unique. Best-in-slot magic weapon.",
+      "icon": null,
+      "tags": [
+        "items",
+        "weapons"
+      ],
+      "preview": null
+    },
+    {
+      "id": "reward-pool-cox",
+      "name": "CoX Reward Pool",
+      "url": "/combat/bosses/cox-rewards",
+      "category": "reward-pool",
+      "summary": "Unique drops from Chambers of Xeric including Twisted Bow, Kodai Wand, and Scythe.",
+      "icon": null,
+      "tags": [
+        "rewards",
+        "raids"
+      ],
+      "preview": null
+    },
+    {
       "id": "runes",
       "name": "Runes",
       "url": "/items/runes",

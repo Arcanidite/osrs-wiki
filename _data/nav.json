@@ -1,5 +1,21 @@
 [
   {
+    "id": "regions",
+    "label": "Regions",
+    "url": "/regions",
+    "type": "group",
+    "slots": [
+      "nav",
+      "sitemap"
+    ],
+    "meta": {
+      "tags": [
+        "regions"
+      ]
+    },
+    "children": []
+  },
+  {
     "id": "getting-started",
     "label": "Getting Started",
     "url": "/guides/getting-started",

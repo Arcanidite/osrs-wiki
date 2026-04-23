@@ -51,14 +51,21 @@
   const SKILLS = ["attack","strength","defence","ranged","magic","prayer"];
 
   // ── Profile read/write ────────────────────────────────────────────────────
+  function readExcludedRegions() {
+    return Array.from(
+      document.querySelectorAll("#rt-region-excludes input:checked")
+    ).map((el) => el.value);
+  }
+
   function readProfile() {
     return {
       skills: SKILLS.reduce((acc, sk) => {
         acc[sk] = parseInt(els.skillInput(sk)?.value ?? 1, 10) || 1;
         return acc;
       }, {}),
-      goal:  els.goal()?.value  ?? "",
-      style: els.style()?.value ?? "balanced",
+      goal:            els.goal()?.value  ?? "",
+      style:           els.style()?.value ?? "balanced",
+      excludeRegions:  readExcludedRegions(),
     };
   }
 
@@ -69,6 +76,11 @@
     });
     if (p.goal  && els.goal())  els.goal().value  = p.goal;
     if (p.style && els.style()) els.style().value = p.style;
+    if (p.excludeRegions?.length) {
+      document.querySelectorAll("#rt-region-excludes input").forEach((el) => {
+        el.checked = p.excludeRegions.includes(el.value);
+      });
+    }
   }
 
   // ── Graph / Dijkstra ──────────────────────────────────────────────────────
@@ -90,36 +102,52 @@
     return 1;
   }
 
+  // Returns true if this step's location is accessible given completed path
+  // and excluded regions.
+  function locationAccessible(step, completedIds, excludedRegions) {
+    const loc = step.location;
+    if (!loc) return true;
+
+    const region = loc.region ?? "global";
+    if (region !== "global" && excludedRegions.includes("region-" + region)) return false;
+
+    // quest_gate: step requires a quest to be completed first
+    if (loc.quest_gate && !completedIds.has(loc.quest_gate)) return false;
+
+    return true;
+  }
+
   function route(steps, profile, goalDef) {
     const target = goalDef.reqs;
     const terminal = goalDef.terminal;
+    const excluded = profile.excludeRegions ?? [];
 
-    // BFS/greedy: collect steps whose reqs we can satisfy in order,
-    // until all target reqs are met and terminal step is included.
     const skills = { ...profile.skills };
     const path = [];
+    const completedIds = new Set();
     const remaining = new Set(steps.map((s) => s.id));
 
     let changed = true;
     while (changed) {
       changed = false;
       const allReqsMet = Object.entries(target).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl);
-      const terminalDone = path.some((s) => s.id === terminal);
+      const terminalDone = completedIds.has(terminal);
       if (allReqsMet && terminalDone) break;
 
-      // find the best unlockable step not yet taken
       let best = null, bestCost = Infinity;
       for (const id of remaining) {
         const step = steps.find((s) => s.id === id);
-        if (!step || !meetsReqs(step.reqs, skills)) continue;
-        const useful = isUseful(step, skills, target, terminal, path);
-        if (!useful) continue;
+        if (!step) continue;
+        if (!meetsReqs(step.reqs, skills)) continue;
+        if (!locationAccessible(step, completedIds, excluded)) continue;
+        if (!isUseful(step, skills, target, terminal, completedIds)) continue;
         const cost = costFor(step, profile.style);
         if (cost < bestCost) { bestCost = cost; best = step; }
       }
       if (!best) break;
       path.push(best);
       remaining.delete(best.id);
+      completedIds.add(best.id);
       Object.assign(skills, applyGrants(best.grants, skills));
       changed = true;
     }
@@ -127,9 +155,10 @@
     return path;
   }
 
-  function isUseful(step, skills, target, terminal, path) {
+  function isUseful(step, skills, target, terminal, completedIds) {
     if (step.id === terminal) return true;
-    // step grants something toward target
+    // unlock steps that gate later useful steps (quest gates)
+    if ((step.tags ?? []).includes("unlock") || (step.tags ?? []).includes("quest")) return true;
     return Object.entries(step.grants ?? {}).some(([sk, lvl]) =>
       (target[sk] ?? 0) > 0 && lvl > (skills[sk] ?? 1) && lvl <= (target[sk] ?? 0)
     );
@@ -153,6 +182,15 @@
     return `<span class="step-badge req">Req: ${parts.join(", ")}</span>`;
   }
 
+  function locationBadge(step) {
+    const loc = step.location;
+    if (!loc || loc.region === "global" || !loc.region) return "";
+    const zone = loc.zone ? ` / ${loc.zone.replace(/-/g, " ")}` : "";
+    const label = loc.region.replace(/-/g, " ") + zone;
+    const gate = loc.quest_gate ? ` · after ${loc.quest_gate.replace(/-/g, " ")}` : "";
+    return `<span class="step-badge loc" title="Location">${label}${gate}</span>`;
+  }
+
   function renderSteps(path) {
     const stepsEl = els.steps();
     const emptyEl = els.empty();
@@ -172,6 +210,7 @@
           <span class="step-detail">${step.detail ?? ""}</span>
         </span>
         <span class="step-meta">
+          ${locationBadge(step)}
           ${xpBadge(step.xp)}
           ${invBadge(step)}
           ${reqBadge(step.reqs)}

@@ -184,6 +184,8 @@ def write_pages(pages):
     for url, page in pages.items():
         path = page["path"]
         path.parent.mkdir(parents=True, exist_ok=True)
+        if path.exists() and path.stat().st_size > 200:
+            continue  # preserve hand-authored pages
         front = page["front"]
         lines = ["---"]
         for k, v in front.items():

@@ -285,6 +285,52 @@
         }
       }
     },
+    { "id": "regions", "label": "Regions", "url": "/regions", "type": "group", "slots": ["nav", "sitemap"], "meta": { "tags": ["regions"] } },
+
+    { "id": "region-global",           "label": "Global",            "url": "/regions/global",           "type": "region", "slots": ["sitemap"], "meta": { "tags": ["regions"] } },
+    { "id": "region-misthalin",        "label": "Misthalin",         "url": "/regions/misthalin",        "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Starting region. Lumbridge, Varrock, Draynor." } },
+    { "id": "region-morytania",        "label": "Morytania",         "url": "/regions/morytania",        "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Undead-heavy region. Requires Priest in Peril. Contains Barrows and Slayer Tower.", "preview": { "excerpt": "Morytania is locked behind Priest in Peril. Home to Barrows, the Slayer Tower, and high-level Slayer tasks.", "stats": [{ "label": "Quest gate", "value": "Priest in Peril" }] } } },
+    { "id": "region-kandarin",         "label": "Kandarin",          "url": "/regions/kandarin",         "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Large western region. Ardougne, Camelot, NMZ." } },
+    { "id": "region-troll-country",    "label": "Troll Country",     "url": "/regions/troll-country",    "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Northern mountains. God Wars Dungeon." } },
+    { "id": "region-ape-atoll",        "label": "Ape Atoll",         "url": "/regions/ape-atoll",        "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Monkey island. Locked behind Monkey Madness I. Best melee training.", "preview": { "excerpt": "Ape Atoll is unlocked by completing Monkey Madness I. Contains the Maniacal Monkey tunnels — the best melee XP in the game.", "stats": [{ "label": "Quest gate", "value": "Monkey Madness I" }] } } },
+    { "id": "region-kharidian-desert", "label": "Kharidian Desert",  "url": "/regions/kharidian-desert", "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Desert region. Al Kharid, Pyramid, Desert Treasure." } },
+    { "id": "region-zeah",             "label": "Zeah",              "url": "/regions/zeah",             "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Continent of Zeah. Chambers of Xeric. Partially quest-gated.", "preview": { "excerpt": "Zeah is a large continent with multiple sub-regions. Chambers of Xeric — the most valuable raid — is located here.", "stats": [{ "label": "Raid", "value": "Chambers of Xeric" }] } } },
+    { "id": "region-wilderness",       "label": "Wilderness",        "url": "/regions/wilderness",       "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "PvP-enabled region. KBD lair, Revenant caves, high-risk rewards." } },
+
+    { "id": "zone-stronghold",  "label": "Stronghold of Security", "url": "/regions/misthalin/stronghold",  "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-lumbridge",   "label": "Lumbridge",              "url": "/regions/misthalin/lumbridge",   "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-varrock",     "label": "Varrock",                "url": "/regions/misthalin/varrock",     "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-barrows",     "label": "Barrows",                "url": "/regions/morytania/barrows",     "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-slayer-tower","label": "Slayer Tower",           "url": "/regions/morytania/slayer-tower","type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-nmz",         "label": "Nightmare Zone",         "url": "/regions/kandarin/nmz",          "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-gwd",         "label": "God Wars Dungeon",       "url": "/regions/troll-country/gwd",     "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-mm-tunnels",  "label": "MM Tunnels",             "url": "/regions/ape-atoll/mm-tunnels",  "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-pyramid",     "label": "Pyramid",                "url": "/regions/kharidian-desert/pyramid","type": "zone","slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-cox",         "label": "Chambers of Xeric",      "url": "/regions/zeah/cox",              "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-shayzien",    "label": "Shayzien",               "url": "/regions/zeah/shayzien",         "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-zul-andra",   "label": "Zul-Andra",              "url": "/regions/kandarin/zul-andra",    "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+    { "id": "zone-kbd-lair",    "label": "KBD Lair",               "url": "/regions/wilderness/kbd-lair",   "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
+
+    { "id": "quest-priest-in-peril", "label": "Priest in Peril", "url": "/quests/priest-in-peril", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Unlocks Morytania region access." } },
+    { "id": "quest-mm",              "label": "Monkey Madness I", "url": "/quests/monkey-madness", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Unlocks Ape Atoll and MM Tunnels. Grants large combat XP." } },
+    { "id": "quest-dt",              "label": "Desert Treasure", "url": "/quests/desert-treasure", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Unlocks Ancient Magicks. Requires 50 Magic, 53 Thieving, 10 Slayer, 50 Firemaking." } },
+    { "id": "quest-regicide",        "label": "Regicide", "url": "/quests/regicide", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Unlocks access to Zul-Andra and Zulrah." } },
+    { "id": "quest-tale-of-arrav",   "label": "Tale of the Righteous", "url": "/quests/tale-of-the-righteous", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Zeah intro quest. Partially enables CoX access." } },
+
+    { "id": "monster-abyssal-demon", "label": "Abyssal Demon", "url": "/combat/monsters/abyssal-demon", "type": "monster", "slots": ["search"], "meta": { "tags": ["combat","slayer"], "summary": "Level 124 Slayer monster. Requires 85 Slayer. Drops Abyssal Whip." } },
+    { "id": "monster-zulrah",        "label": "Zulrah",        "url": "/combat/monsters/zulrah",        "type": "monster", "slots": ["search"], "meta": { "tags": ["combat","bosses"], "summary": "Solo boss in Zul-Andra. Requires Regicide. Drops Toxic Blowpipe and Magic Fang." } },
+    { "id": "monster-kbd",           "label": "King Black Dragon","url": "/combat/monsters/kbd",         "type": "monster", "slots": ["search"], "meta": { "tags": ["combat","bosses"], "summary": "Wilderness boss. Drops Dragon pickaxe and KBD heads." } },
+
+    { "id": "item-abyssal-whip",    "label": "Abyssal Whip",    "url": "/items/weapons/abyssal-whip",    "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Best-in-slot melee training weapon. Requires 70 Attack." } },
+    { "id": "item-toxic-blowpipe",  "label": "Toxic Blowpipe",  "url": "/items/weapons/toxic-blowpipe",  "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Fast ranged weapon from Zulrah. Requires 75 Ranged." } },
+    { "id": "item-magic-fang",      "label": "Magic Fang",      "url": "/items/weapons/magic-fang",      "type": "item", "slots": ["search"], "meta": { "tags": ["items"], "summary": "Zulrah drop. Used to create Toxic Trident." } },
+    { "id": "item-twisted-bow",     "label": "Twisted Bow",     "url": "/items/weapons/twisted-bow",     "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Chambers of Xeric unique. Best-in-slot ranged weapon. Requires 75 Ranged." } },
+    { "id": "item-scythe",          "label": "Scythe of Vitur", "url": "/items/weapons/scythe",          "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Theatre of Blood unique. Best melee weapon for multi-target." } },
+    { "id": "item-kodai-wand",      "label": "Kodai Wand",      "url": "/items/weapons/kodai-wand",      "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Chambers of Xeric unique. Best-in-slot magic weapon." } },
+    { "id": "item-kbd-heads",       "label": "KBD Heads",       "url": "/items/kbd-heads",               "type": "item", "slots": [], "meta": { "tags": ["items"] } },
+
+    { "id": "reward-pool-cox", "label": "CoX Reward Pool", "url": "/combat/bosses/cox-rewards", "type": "reward-pool", "slots": ["search"], "meta": { "tags": ["rewards","raids"], "summary": "Unique drops from Chambers of Xeric including Twisted Bow, Kodai Wand, and Scythe." } },
+
     {
       "id": "runes",
       "label": "Runes",
@@ -306,6 +352,7 @@
     }
   ],
   "edges": [
+    { "from": "root",    "to": "regions",          "rel": "child" },
     { "from": "root",    "to": "getting-started", "rel": "child" },
     { "from": "root",    "to": "progression-router", "rel": "child" },
     { "from": "root",    "to": "home",     "rel": "child" },
@@ -327,6 +374,52 @@
     { "from": "magic",   "to": "runes",    "rel": "related" },
     { "from": "combat",  "to": "skills",   "rel": "related" },
     { "from": "weapons", "to": "attack",   "rel": "related" },
-    { "from": "armour",  "to": "defence",  "rel": "related" }
+    { "from": "armour",  "to": "defence",  "rel": "related" },
+
+    { "from": "regions", "to": "region-global",           "rel": "child" },
+    { "from": "regions", "to": "region-misthalin",        "rel": "child" },
+    { "from": "regions", "to": "region-morytania",        "rel": "child" },
+    { "from": "regions", "to": "region-kandarin",         "rel": "child" },
+    { "from": "regions", "to": "region-troll-country",    "rel": "child" },
+    { "from": "regions", "to": "region-ape-atoll",        "rel": "child" },
+    { "from": "regions", "to": "region-kharidian-desert", "rel": "child" },
+    { "from": "regions", "to": "region-zeah",             "rel": "child" },
+    { "from": "regions", "to": "region-wilderness",       "rel": "child" },
+
+    { "from": "region-misthalin",       "to": "zone-stronghold",    "rel": "zone-contains" },
+    { "from": "region-misthalin",       "to": "zone-lumbridge",     "rel": "zone-contains" },
+    { "from": "region-misthalin",       "to": "zone-varrock",       "rel": "zone-contains" },
+    { "from": "region-morytania",       "to": "zone-barrows",       "rel": "zone-contains" },
+    { "from": "region-morytania",       "to": "zone-slayer-tower",  "rel": "zone-contains" },
+    { "from": "region-kandarin",        "to": "zone-nmz",           "rel": "zone-contains" },
+    { "from": "region-troll-country",   "to": "zone-gwd",           "rel": "zone-contains" },
+    { "from": "region-ape-atoll",       "to": "zone-mm-tunnels",    "rel": "zone-contains" },
+    { "from": "region-kharidian-desert","to": "zone-pyramid",       "rel": "zone-contains" },
+    { "from": "region-zeah",            "to": "zone-cox",           "rel": "zone-contains" },
+    { "from": "region-zeah",            "to": "zone-shayzien",      "rel": "zone-contains" },
+
+    { "from": "quest-priest-in-peril",  "to": "region-morytania",   "rel": "quest-unlocks" },
+    { "from": "quest-mm",               "to": "zone-mm-tunnels",    "rel": "quest-unlocks" },
+    { "from": "quest-tale-of-arrav",    "to": "zone-cox",           "rel": "quest-unlocks" },
+    { "from": "quest-dt",               "to": "zone-pyramid",       "rel": "quest-unlocks" },
+
+    { "from": "monster-abyssal-demon",  "to": "item-abyssal-whip",  "rel": "drops" },
+    { "from": "monster-abyssal-demon",  "to": "zone-slayer-tower",  "rel": "located-in" },
+    { "from": "monster-zulrah",         "to": "item-toxic-blowpipe","rel": "drops" },
+    { "from": "monster-zulrah",         "to": "item-magic-fang",    "rel": "drops" },
+    { "from": "monster-zulrah",         "to": "zone-zul-andra",     "rel": "located-in" },
+    { "from": "quest-regicide",         "to": "zone-zul-andra",     "rel": "quest-unlocks" },
+    { "from": "monster-kbd",            "to": "item-kbd-heads",     "rel": "drops" },
+    { "from": "monster-kbd",            "to": "zone-kbd-lair",      "rel": "located-in" },
+    { "from": "region-wilderness",      "to": "zone-kbd-lair",      "rel": "zone-contains" },
+
+    { "from": "reward-pool-cox",        "to": "item-twisted-bow",   "rel": "tier" },
+    { "from": "reward-pool-cox",        "to": "item-scythe",        "rel": "tier" },
+    { "from": "reward-pool-cox",        "to": "item-kodai-wand",    "rel": "tier" },
+    { "from": "zone-cox",               "to": "reward-pool-cox",    "rel": "reward-source" },
+
+    { "from": "item-abyssal-whip",      "to": "attack",             "rel": "requires-skill" },
+    { "from": "item-twisted-bow",       "to": "ranged",             "rel": "requires-skill" },
+    { "from": "item-toxic-blowpipe",    "to": "ranged",             "rel": "requires-skill" }
   ]
 }
