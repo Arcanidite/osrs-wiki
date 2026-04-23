@@ -53,6 +53,7 @@
     steps:      () => $("rt-steps"),
     saveStatus: () => $("rt-save-status"),
     planName:   () => $("rt-plan-name"),
+    planNotes:  () => $("rt-plan-notes"),
     saveBtn:    () => $("rt-save-plan"),
     planList:   () => $("rt-plan-list"),
     noPlans:    () => $("rt-no-plans"),
@@ -294,7 +295,7 @@
         if (cost < bestCost) { bestCost = cost; best = step; }
       }
       if (!best) break;
-      path.push({ ...best, _goalLabel: goal.label });
+      path.push({ ...best, _goalLabel: goal.label, _reqs: goal.reqs });
       remaining.delete(best.id);
       completedIds.add(best.id);
       skills = applyGrants(best.grants, skills);
@@ -304,14 +305,33 @@
     return { path, skills, completedIds };
   }
 
+  // Per-skill max level required across all goals — used to suppress intermediate milestones.
+  function globalCeiling(goals) {
+    return goals.reduce((ceil, goal) => {
+      Object.entries(goal.reqs ?? {}).forEach(([sk, lvl]) => {
+        if (lvl > (ceil[sk] ?? 0)) ceil[sk] = lvl;
+      });
+      return ceil;
+    }, {});
+  }
+
   function routeMulti(goals, steps, profile) {
+    const ceiling    = globalCeiling(goals);
     let skills       = { ...profile.skills };
     let completedIds = new Set();
     return goals.flatMap((goal) => {
       const result = routeGoal(steps, profile, goal, skills, completedIds);
       skills       = result.skills;
       completedIds = result.completedIds;
-      return result.path;
+      // Tag steps whose every skill grant is superseded by a higher ceiling entry
+      // as milestones — they'll show as mentions in the divider, not numbered steps.
+      return result.path.map((step) => {
+        const grants = Object.entries(step.grants ?? {});
+        const isMilestone = grants.length > 0 && grants.every(([sk, lvl]) =>
+          (ceiling[sk] ?? 0) > lvl
+        );
+        return { ...step, _isMilestone: isMilestone };
+      });
     });
   }
 
@@ -339,6 +359,16 @@
     return `<span class="step-badge loc" title="Location">${label}${gate}</span>`;
   }
 
+  function goalDividerHtml(goal) {
+    const targets = Object.entries(goal._reqs ?? {})
+      .map(([sk, lvl]) => `${sk.charAt(0).toUpperCase() + sk.slice(1)} ${lvl}`)
+      .join(" · ");
+    const targetsHtml = targets
+      ? `<span class="route-goal-targets">${targets}</span>`
+      : "";
+    return `<li class="route-goal-divider">${goal._goalLabel}${targetsHtml}</li>`;
+  }
+
   function renderSteps(path) {
     const stepsEl = els.steps();
     const emptyEl = els.empty();
@@ -351,15 +381,30 @@
     emptyEl.hidden = true;
     stepsEl.hidden = false;
 
-    let stepNum  = 0;
-    let lastGoal = null;
+    let stepNum   = 0;
+    let lastGoal  = null;
+    // Collect milestones per goal label for mention rendering
+    const milestonesByGoal = path.reduce((acc, step) => {
+      if (step._isMilestone) (acc[step._goalLabel] ??= []).push(step.label);
+      return acc;
+    }, {});
+
     stepsEl.innerHTML = path.map((step) => {
+      const parts = [];
+
+      if (step._goalLabel !== lastGoal) {
+        lastGoal = step._goalLabel;
+        parts.push(goalDividerHtml(step));
+        const mentions = milestonesByGoal[step._goalLabel];
+        if (mentions?.length) {
+          parts.push(`<li class="route-milestone-mentions">Along the way: ${mentions.join(", ")}</li>`);
+        }
+      }
+
+      if (step._isMilestone) return parts.join("");
+
       stepNum++;
-      const divider = step._goalLabel !== lastGoal
-        ? `<li class="route-goal-divider">${step._goalLabel}</li>`
-        : "";
-      lastGoal = step._goalLabel;
-      return `${divider}<li class="route-step">
+      parts.push(`<li class="route-step">
         <span class="step-num">${stepNum}</span>
         <span class="step-body">
           <span class="step-title">${step.label}</span>
@@ -371,7 +416,8 @@
           ${invBadge(step)}
           ${reqBadge(step.reqs)}
         </span>
-      </li>`;
+      </li>`);
+      return parts.join("");
     }).join("");
   }
 
@@ -387,6 +433,7 @@
         <span class="step-body">
           <span class="step-title">${plan.name}</span>
           <span class="step-detail">${plan.goals?.length ?? 1} goal(s) · Style: ${plan.style} · Saved ${plan.date}</span>
+          ${plan.notes ? `<span class="plan-notes">${plan.notes}</span>` : ""}
         </span>
         <span class="step-meta">
           <button class="btn btn-ghost" style="font-size:var(--fs-xs);padding:2px var(--sp-q)" data-load="${i}">Load</button>
@@ -413,6 +460,8 @@
       store.saveGoals(goalQueue);
       renderGoalQueue();
     }
+    if (els.planName())  els.planName().value  = plan.name;
+    if (els.planNotes()) els.planNotes().value = plan.notes ?? "";
     renderSteps(plan.steps);
   }
 
@@ -497,16 +546,19 @@
     els.saveBtn()?.addEventListener("click", () => {
       const last = window._routerLastPath;
       if (!last?.path?.length) return;
-      const name = els.planName()?.value.trim() || `Plan ${store.plans().length + 1}`;
+      const name  = els.planName()?.value.trim() || `Plan ${store.plans().length + 1}`;
+      const notes = els.planNotes()?.value.trim() ?? "";
       store.savePlan({
         name,
+        notes,
         goals:  last.goals,
         style:  last.profile.style,
         skills: last.profile.skills,
         steps:  last.path,
         date:   new Date().toLocaleDateString(),
       });
-      if (els.planName()) els.planName().value = "";
+      if (els.planName())  els.planName().value  = "";
+      if (els.planNotes()) els.planNotes().value = "";
       renderPlans();
     });
 

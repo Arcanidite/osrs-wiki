@@ -528,6 +528,9 @@ body {
 }
 .route-goal-divider {
   list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-h);
   font-size: var(--fs-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -536,6 +539,28 @@ body {
   padding: var(--sp-h) 0 var(--sp-q);
   border-bottom: 1px solid var(--border);
   margin-bottom: var(--sp-q);
+}
+.route-goal-targets {
+  font-weight: 400;
+  font-size: var(--fs-xs);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--muted);
+}
+.route-milestone-mentions {
+  list-style: none;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  font-style: italic;
+  padding: var(--sp-q) 0 var(--sp-h) 0;
+}
+.plan-notes {
+  display: block;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 2px;
+  white-space: pre-wrap;
 }
 
 /* ── Node page ───────────────────────────────────────────────────────────── */
