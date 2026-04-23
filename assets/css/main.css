@@ -421,6 +421,7 @@ body {
 .step-badge.xp  { background: #d4edda; color: #1a5c2a; }
 .step-badge.inv { background: #d1ecf1; color: #0c5460; }
 .step-badge.loc { background: #e8e0f5; color: #4a2d8a; text-transform: capitalize; }
+.step-badge.opp { background: #fff3e0; color: #7a4800; cursor: default; }
 
 .region-exclude-list {
   display: flex;
@@ -562,6 +563,9 @@ body {
   margin-top: 2px;
   white-space: pre-wrap;
 }
+.plan-actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-q); }
+.plan-action-btn { font-size: var(--fs-xs); padding: 2px var(--sp-q); text-align: center; }
+.plan-delete { color: #c00; }
 
 /* ── Node page ───────────────────────────────────────────────────────────── */
 .node-page { max-width: unset; margin: 0 auto; padding: var(--sp-2) var(--sp); }

@@ -68,6 +68,10 @@ tool_script: "/assets/js/tools/progression-router.js"
             <div id="cg-reqs" class="cg-req-list"></div>
             <button class="btn btn-ghost" id="cg-add-req" style="margin-top:var(--sp-q); font-size:var(--fs-xs)">+ Add requirement</button>
           </div>
+          <div class="form-group">
+            <label>Goal note <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+            <textarea id="cg-note" placeholder="e.g. Do this before the quest chain…" style="width:100%;resize:vertical;min-height:2.5rem;font-family:inherit;font-size:var(--fs-sm);padding:var(--sp-q) var(--sp-h);border:1px solid var(--border);border-radius:var(--radius)"></textarea>
+          </div>
           <button class="btn btn-primary" id="cg-submit" style="margin-top:var(--sp-h); width:100%">Add to queue</button>
         </div>
       </details>
@@ -95,8 +99,8 @@ tool_script: "/assets/js/tools/progression-router.js"
           style="flex:1; padding:var(--sp-q) var(--sp-h); border:1px solid var(--border); border-radius:var(--radius); font-size:var(--fs-sm);">
         <button class="btn btn-ghost" id="rt-save-plan">Save route</button>
       </div>
-      <textarea id="rt-plan-notes" placeholder="Notes (optional)…"
-        style="width:100%; padding:var(--sp-q) var(--sp-h); border:1px solid var(--border); border-radius:var(--radius); font-size:var(--fs-sm); resize:vertical; min-height:3rem; margin-bottom:var(--sp-h); font-family:inherit;"></textarea>
+      <textarea id="rt-plan-desc" placeholder="Description (optional)…"
+        style="width:100%; padding:var(--sp-q) var(--sp-h); border:1px solid var(--border); border-radius:var(--radius); font-size:var(--fs-sm); resize:vertical; min-height:2.5rem; margin-bottom:var(--sp-h); font-family:inherit;"></textarea>
       <ul class="route-steps" id="rt-plan-list"></ul>
       <p id="rt-no-plans" style="font-size:var(--fs-xs); color:var(--muted)">No saved plans yet.</p>
     </div>

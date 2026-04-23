@@ -1,11 +1,12 @@
 (function () {
-  const BASE      = document.querySelector("[data-baseurl]")?.dataset.baseurl ?? "";
+  const BASE        = document.querySelector("[data-baseurl]")?.dataset.baseurl ?? "";
   const STEPS_URL   = BASE + "/assets/data/tools/steps.jsonl";
   const GOALS_URL   = BASE + "/assets/data/tools/goals.jsonl";
   const REGIONS_URL = BASE + "/assets/data/tools/regions.jsonl";
   const STORE_PROFILE = "osrs-router-profile";
   const STORE_PLANS   = "osrs-router-plans";
   const STORE_GOALS   = "osrs-router-goals";
+  const STORE_ACTIVE  = "osrs-router-active";
 
   // ── Data loading ──────────────────────────────────────────────────────────
   async function loadJsonl(url) {
@@ -13,7 +14,6 @@
     return text.trim().split("\n").map((l) => JSON.parse(l));
   }
 
-  // Derive the full skill set from the union of reqs/grants keys in steps.
   function deriveSkills(steps) {
     return [...new Set(steps.flatMap((s) => [
       ...Object.keys(s.reqs  ?? {}),
@@ -36,8 +36,10 @@
       plans.splice(idx, 1);
       localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
     },
-    goals:     () => JSON.parse(localStorage.getItem(STORE_GOALS) ?? "[]"),
-    saveGoals: (goals) => localStorage.setItem(STORE_GOALS, JSON.stringify(goals)),
+    goals:      () => JSON.parse(localStorage.getItem(STORE_GOALS)  ?? "[]"),
+    saveGoals:  (g) => localStorage.setItem(STORE_GOALS,  JSON.stringify(g)),
+    active:     () => JSON.parse(localStorage.getItem(STORE_ACTIVE) ?? "null"),
+    saveActive: (p) => localStorage.setItem(STORE_ACTIVE, JSON.stringify(p)),
   };
 
   // ── DOM refs ──────────────────────────────────────────────────────────────
@@ -53,7 +55,7 @@
     steps:      () => $("rt-steps"),
     saveStatus: () => $("rt-save-status"),
     planName:   () => $("rt-plan-name"),
-    planNotes:  () => $("rt-plan-notes"),
+    planDesc:   () => $("rt-plan-desc"),
     saveBtn:    () => $("rt-save-plan"),
     planList:   () => $("rt-plan-list"),
     noPlans:    () => $("rt-no-plans"),
@@ -68,7 +70,7 @@
     cgSubmit:   () => $("cg-submit"),
   };
 
-  // ── Skill grid (built from data, not hardcoded) ───────────────────────────
+  // ── Skill grid ────────────────────────────────────────────────────────────
   function buildSkillGrid(skills) {
     const grid = els.skillGrid();
     if (!grid) return;
@@ -80,7 +82,6 @@
     `).join("");
   }
 
-  // ── Region excludes (built from regions data) ────────────────────────────
   function buildRegionExcludes(regions) {
     const container = $("rt-region-excludes");
     if (!container) return;
@@ -91,7 +92,6 @@
     `).join("");
   }
 
-  // ── Preset select (built from goals data) ─────────────────────────────────
   function buildPresetSelect(presets) {
     const sel = els.presetSel();
     if (!sel) return;
@@ -253,16 +253,16 @@
     return 1;
   }
 
-  function locationAccessible(step, completedIds, excludedRegions) {
+  function locationAccessible(step, completedIds, excludedRegions, completedQuests) {
     const loc = step.location;
     if (!loc) return true;
     const region = loc.region ?? "global";
     if (region !== "global" && excludedRegions.includes("region-" + region)) return false;
-    if (loc.quest_gate && !completedIds.has(loc.quest_gate)) return false;
+    if (loc.quest_gate && !completedIds.has(loc.quest_gate) && !completedQuests.has(loc.quest_gate)) return false;
     return true;
   }
 
-  function isUseful(step, skills, target, terminal, completedIds) {
+  function isUseful(step, skills, target, terminal) {
     if (terminal && step.id === terminal) return true;
     if ((step.tags ?? []).includes("unlock") || (step.tags ?? []).includes("quest")) return true;
     return Object.entries(step.grants ?? {}).some(([sk, lvl]) =>
@@ -270,42 +270,87 @@
     );
   }
 
-  function routeGoal(steps, profile, goal, skills, completedIds) {
+  // ── Min-heap (priority queue for Dijkstra) ────────────────────────────────
+  class MinHeap {
+    constructor() { this._h = []; }
+    push(item, priority) {
+      this._h.push({ item, priority });
+      this._bubbleUp(this._h.length - 1);
+    }
+    pop() {
+      const top = this._h[0];
+      const last = this._h.pop();
+      if (this._h.length) { this._h[0] = last; this._siftDown(0); }
+      return top?.item;
+    }
+    get size() { return this._h.length; }
+    _bubbleUp(i) {
+      while (i > 0) {
+        const p = (i - 1) >> 1;
+        if (this._h[p].priority <= this._h[i].priority) break;
+        [this._h[p], this._h[i]] = [this._h[i], this._h[p]];
+        i = p;
+      }
+    }
+    _siftDown(i) {
+      const n = this._h.length;
+      while (true) {
+        let min = i, l = 2*i+1, r = 2*i+2;
+        if (l < n && this._h[l].priority < this._h[min].priority) min = l;
+        if (r < n && this._h[r].priority < this._h[min].priority) min = r;
+        if (min === i) break;
+        [this._h[min], this._h[i]] = [this._h[i], this._h[min]];
+        i = min;
+      }
+    }
+  }
+
+  // Dijkstra-style: expand candidates in cost order rather than scanning linearly.
+  // Each iteration we push eligible steps onto a heap keyed by cost, pop the
+  // cheapest, apply it, and re-seed the heap with newly unlocked candidates.
+  function routeGoal(steps, profile, goal, skills, completedIds, completedQuests) {
     const target   = goal.reqs ?? {};
     const terminal = goal.terminal ?? null;
     const excluded = profile.excludeRegions ?? [];
     const path     = [];
     const remaining = new Set(steps.map((s) => s.id).filter((id) => !completedIds.has(id)));
 
-    let changed = true;
-    while (changed) {
-      changed = false;
-      const allMet       = Object.entries(target).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl);
-      const terminalDone = !terminal || completedIds.has(terminal);
-      if (allMet && terminalDone) break;
-
-      let best = null, bestCost = Infinity;
+    const eligible = () => {
+      const heap = new MinHeap();
       for (const id of remaining) {
         const step = steps.find((s) => s.id === id);
         if (!step) continue;
         if (!meetsReqs(step.reqs, skills)) continue;
-        if (!locationAccessible(step, completedIds, excluded)) continue;
-        if (!isUseful(step, skills, target, terminal, completedIds)) continue;
-        const cost = costFor(step, profile.style);
-        if (cost < bestCost) { bestCost = cost; best = step; }
+        if (!locationAccessible(step, completedIds, excluded, completedQuests)) continue;
+        if (!isUseful(step, skills, target, terminal)) continue;
+        heap.push(step, costFor(step, profile.style));
       }
+      return heap;
+    };
+
+    // Seed once, then rebuild only when state changes unlock new candidates.
+    // Rebuild threshold: every step taken (small candidate sets in practice).
+    let heap = eligible();
+    while (heap.size > 0) {
+      const allMet       = Object.entries(target).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl);
+      const terminalDone = !terminal || completedIds.has(terminal);
+      if (allMet && terminalDone) break;
+
+      const best = heap.pop();
       if (!best) break;
+      if (!remaining.has(best.id)) { heap = eligible(); continue; }
+
       path.push({ ...best, _goalLabel: goal.label, _reqs: goal.reqs });
       remaining.delete(best.id);
       completedIds.add(best.id);
+      if ((best.tags ?? []).includes("quest")) completedQuests.add(best.id);
       skills = applyGrants(best.grants, skills);
-      changed = true;
+      heap = eligible();
     }
 
-    return { path, skills, completedIds };
+    return { path, skills, completedIds, completedQuests };
   }
 
-  // Per-skill max level required across all goals — used to suppress intermediate milestones.
   function globalCeiling(goals) {
     return goals.reduce((ceil, goal) => {
       Object.entries(goal.reqs ?? {}).forEach(([sk, lvl]) => {
@@ -315,16 +360,40 @@
     }, {});
   }
 
+  // ── Opportunistic chaining ────────────────────────────────────────────────
+  // For each non-global region visited in the path, surface steps from later
+  // goals that share that region and could be piggy-backed. Adds a hint badge.
+  function markOpportunities(path, allSteps, goals) {
+    const laterGoalIds = new Set(goals.map((g) => g.terminal).filter(Boolean));
+    const laterReqs    = goals.slice(1).flatMap((g) => Object.keys(g.reqs ?? {}));
+
+    return path.map((step) => {
+      const region = step.location?.region;
+      if (!region || region === "global") return step;
+
+      const opportunistic = allSteps.filter((s) =>
+        s.location?.region === region &&
+        !path.some((p) => p.id === s.id) &&
+        (laterGoalIds.has(s.id) || laterReqs.includes(Object.keys(s.grants ?? {})[0]))
+      );
+
+      return opportunistic.length
+        ? { ...step, _opportunities: opportunistic.map((s) => s.label) }
+        : step;
+    });
+  }
+
   function routeMulti(goals, steps, profile) {
-    const ceiling    = globalCeiling(goals);
-    let skills       = { ...profile.skills };
-    let completedIds = new Set();
-    return goals.flatMap((goal) => {
-      const result = routeGoal(steps, profile, goal, skills, completedIds);
-      skills       = result.skills;
-      completedIds = result.completedIds;
-      // Tag steps whose every skill grant is superseded by a higher ceiling entry
-      // as milestones — they'll show as mentions in the divider, not numbered steps.
+    const ceiling       = globalCeiling(goals);
+    let skills          = { ...profile.skills };
+    let completedIds    = new Set();
+    let completedQuests = new Set();
+
+    const fullPath = goals.flatMap((goal) => {
+      const result = routeGoal(steps, profile, goal, skills, completedIds, completedQuests);
+      skills          = result.skills;
+      completedIds    = result.completedIds;
+      completedQuests = result.completedQuests;
       return result.path.map((step) => {
         const grants = Object.entries(step.grants ?? {});
         const isMilestone = grants.length > 0 && grants.every(([sk, lvl]) =>
@@ -333,6 +402,8 @@
         return { ...step, _isMilestone: isMilestone };
       });
     });
+
+    return markOpportunities(fullPath, steps, goals);
   }
 
   // ── Render ────────────────────────────────────────────────────────────────
@@ -359,6 +430,11 @@
     return `<span class="step-badge loc" title="Location">${label}${gate}</span>`;
   }
 
+  function opportunityBadge(step) {
+    if (!step._opportunities?.length) return "";
+    return `<span class="step-badge opp" title="Nearby steps you could do here">+${step._opportunities.length} nearby</span>`;
+  }
+
   function goalDividerHtml(goal) {
     const targets = Object.entries(goal._reqs ?? {})
       .map(([sk, lvl]) => `${sk.charAt(0).toUpperCase() + sk.slice(1)} ${lvl}`)
@@ -381,9 +457,8 @@
     emptyEl.hidden = true;
     stepsEl.hidden = false;
 
-    let stepNum   = 0;
-    let lastGoal  = null;
-    // Collect milestones per goal label for mention rendering
+    let stepNum  = 0;
+    let lastGoal = null;
     const milestonesByGoal = path.reduce((acc, step) => {
       if (step._isMilestone) (acc[step._goalLabel] ??= []).push(step.label);
       return acc;
@@ -412,6 +487,7 @@
         </span>
         <span class="step-meta">
           ${locationBadge(step)}
+          ${opportunityBadge(step)}
           ${xpBadge(step.xp)}
           ${invBadge(step)}
           ${reqBadge(step.reqs)}
@@ -433,11 +509,11 @@
         <span class="step-body">
           <span class="step-title">${plan.name}</span>
           <span class="step-detail">${plan.goals?.length ?? 1} goal(s) · Style: ${plan.style} · Saved ${plan.date}</span>
-          ${plan.notes ? `<span class="plan-notes">${plan.notes}</span>` : ""}
+          ${plan.desc ? `<span class="plan-notes">${plan.desc}</span>` : ""}
         </span>
-        <span class="step-meta">
-          <button class="btn btn-ghost" style="font-size:var(--fs-xs);padding:2px var(--sp-q)" data-load="${i}">Load</button>
-          <button class="btn btn-ghost" style="font-size:var(--fs-xs);padding:2px var(--sp-q);color:#c00" data-delete="${i}">Delete</button>
+        <span class="step-meta plan-actions">
+          <button class="btn btn-ghost plan-action-btn" data-load="${i}">Load</button>
+          <button class="btn btn-ghost plan-action-btn plan-delete" data-delete="${i}">Delete</button>
         </span>
       </li>
     `).join("");
@@ -450,7 +526,6 @@
     });
   }
 
-  // skill name list captured in closure after init resolves
   let skillNames = [];
 
   function loadPlan(plan) {
@@ -460,9 +535,10 @@
       store.saveGoals(goalQueue);
       renderGoalQueue();
     }
-    if (els.planName())  els.planName().value  = plan.name;
-    if (els.planNotes()) els.planNotes().value = plan.notes ?? "";
+    if (els.planName()) els.planName().value = plan.name;
+    if (els.planDesc()) els.planDesc().value = plan.desc ?? "";
     renderSteps(plan.steps);
+    store.saveActive(plan);
   }
 
   // ── Boot ──────────────────────────────────────────────────────────────────
@@ -487,6 +563,12 @@
 
     goalQueue = store.goals();
     renderGoalQueue();
+
+    // Autoload last active plan if one exists
+    const active = store.active();
+    if (active?.steps?.length) {
+      loadPlan(active);
+    }
 
     els.inputs().forEach((el) => {
       el.addEventListener("change", () => {
@@ -535,6 +617,7 @@
       if (els.style()) els.style().value = "balanced";
       goalQueue = [];
       store.saveGoals(goalQueue);
+      store.saveActive(null);
       renderGoalQueue();
       els.empty().hidden = false;
       els.empty().textContent = "Add goals to your queue and click Calculate Route.";
@@ -546,19 +629,21 @@
     els.saveBtn()?.addEventListener("click", () => {
       const last = window._routerLastPath;
       if (!last?.path?.length) return;
-      const name  = els.planName()?.value.trim() || `Plan ${store.plans().length + 1}`;
-      const notes = els.planNotes()?.value.trim() ?? "";
-      store.savePlan({
+      const name = els.planName()?.value.trim() || `Plan ${store.plans().length + 1}`;
+      const desc = els.planDesc()?.value.trim() ?? "";
+      const plan = {
         name,
-        notes,
+        desc,
         goals:  last.goals,
         style:  last.profile.style,
         skills: last.profile.skills,
         steps:  last.path,
         date:   new Date().toLocaleDateString(),
-      });
-      if (els.planName())  els.planName().value  = "";
-      if (els.planNotes()) els.planNotes().value = "";
+      };
+      store.savePlan(plan);
+      store.saveActive(plan);
+      if (els.planName()) els.planName().value = "";
+      if (els.planDesc()) els.planDesc().value = "";
       renderPlans();
     });
 
