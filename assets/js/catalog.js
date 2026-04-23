@@ -1,6 +1,7 @@
 (function () {
+  const BASE = document.currentScript?.dataset.baseurl ?? "";
   const CATALOG_URL = document.querySelector("[data-catalog-grid]")
-    ?.dataset.catalogSource ?? "/assets/data/catalog.json";
+    ?.dataset.catalogSource ?? BASE + "/assets/data/catalog.json";
 
   async function load() {
     const endpoint = document.querySelector("[data-catalog-endpoint]")?.dataset.catalogEndpoint
@@ -66,11 +67,12 @@
   }
 
   function entryCard(entry) {
+    const href = entry.url ? BASE + entry.url : "";
     return `<article class="entry-card" data-entry-id="${entry.id ?? ""}">
       <h3>${entry.name ?? ""}</h3>
       ${entry.category ? `<span class="entry-category">${entry.category}</span>` : ""}
       ${entry.summary ? `<p>${entry.summary}</p>` : ""}
-      ${entry.url ? `<a href="${entry.url}">View</a>` : ""}
+      ${href ? `<a href="${href}">View</a>` : ""}
     </article>`;
   }
 
