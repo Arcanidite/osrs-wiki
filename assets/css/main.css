@@ -423,6 +423,69 @@ body {
 .step-badge.loc { background: #e8e0f5; color: #4a2d8a; text-transform: capitalize; }
 .step-badge.opp { background: #fff3e0; color: #7a4800; cursor: default; }
 
+/* ── Per-step notes ──────────────────────────────────────────────────────── */
+.step-note {
+  width: 100%; margin-top: var(--sp-q);
+  font-size: var(--fs-xs); font-family: inherit;
+  padding: 2px var(--sp-q);
+  border: 1px solid transparent; border-radius: var(--radius);
+  background: transparent; color: var(--muted);
+  resize: none; overflow: hidden;
+  transition: border-color 0.15s, background 0.15s;
+}
+.step-note:focus, .step-note:not(:placeholder-shown) {
+  border-color: var(--border); background: var(--bg);
+  color: var(--ink); outline: none;
+}
+
+/* ── Route bar (plan name + crud above route) ────────────────────────────── */
+.route-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--sp-h); padding: var(--sp-q) 0 var(--sp-h);
+  border-bottom: 1px solid var(--border); margin-bottom: var(--sp-h);
+  font-size: var(--fs-sm);
+}
+.route-bar-label { color: var(--muted); font-style: italic; }
+.route-name-input {
+  font-size: var(--fs-sm); font-weight: 600;
+  border: none; border-bottom: 1px dashed var(--border);
+  background: transparent; padding: 0 2px; width: 16rem;
+}
+.route-name-input:focus { outline: none; border-bottom-color: var(--accent); }
+.route-bar-actions { display: flex; gap: var(--sp-q); }
+
+/* ── Insert step affordance ──────────────────────────────────────────────── */
+.route-insert-row {
+  text-align: center; padding: 0;
+  border-bottom: none; background: none;
+}
+.insert-step-btn {
+  font-size: 0.65rem; color: var(--muted); padding: 1px var(--sp-h);
+  opacity: 0; transition: opacity 0.15s;
+}
+.route-steps:hover .insert-step-btn,
+.route-insert-row:hover .insert-step-btn { opacity: 1; }
+.route-insert-form {
+  display: flex; gap: var(--sp-q); align-items: center;
+  padding: var(--sp-q) 0;
+  border-bottom: 1px dashed var(--border);
+}
+.route-insert-form input {
+  font-size: var(--fs-xs); padding: 2px var(--sp-q);
+  border: 1px solid var(--border); border-radius: var(--radius);
+}
+.route-step-custom .step-num { background: var(--accent); }
+
+/* ── Plan list inline rename ─────────────────────────────────────────────── */
+.plan-list-name { cursor: pointer; font-weight: 600; }
+.plan-list-name:hover { text-decoration: underline dotted; }
+.plan-rename-input {
+  font-size: var(--fs-sm); font-weight: 600;
+  border: none; border-bottom: 1px solid var(--accent);
+  background: transparent; padding: 0 2px; width: 100%;
+}
+.plan-rename-input:focus { outline: none; }
+
 .region-exclude-list {
   display: flex;
   flex-direction: column;

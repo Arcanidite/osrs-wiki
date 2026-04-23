@@ -3,10 +3,11 @@
   const STEPS_URL   = BASE + "/assets/data/tools/steps.jsonl";
   const GOALS_URL   = BASE + "/assets/data/tools/goals.jsonl";
   const REGIONS_URL = BASE + "/assets/data/tools/regions.jsonl";
-  const STORE_PROFILE = "osrs-router-profile";
-  const STORE_PLANS   = "osrs-router-plans";
-  const STORE_GOALS   = "osrs-router-goals";
-  const STORE_ACTIVE  = "osrs-router-active";
+  const STORE_PROFILE    = "osrs-router-profile";
+  const STORE_PLANS      = "osrs-router-plans";
+  const STORE_GOALS      = "osrs-router-goals";
+  const STORE_ACTIVE     = "osrs-router-active";
+  const STORE_STEP_NOTES = "osrs-step-notes";  // {stepId: noteText}
 
   // ── Data loading ──────────────────────────────────────────────────────────
   async function loadJsonl(url) {
@@ -25,10 +26,17 @@
   const store = {
     profile:     () => JSON.parse(localStorage.getItem(STORE_PROFILE) ?? "{}"),
     saveProfile: (p) => localStorage.setItem(STORE_PROFILE, JSON.stringify(p)),
+
     plans:       () => JSON.parse(localStorage.getItem(STORE_PLANS) ?? "[]"),
     savePlan: (plan) => {
       const plans = store.plans();
       plans.push(plan);
+      localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
+      return plans.length - 1;
+    },
+    updatePlan: (idx, plan) => {
+      const plans = store.plans();
+      plans[idx] = plan;
       localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
     },
     deletePlan: (idx) => {
@@ -36,11 +44,28 @@
       plans.splice(idx, 1);
       localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
     },
+
     goals:      () => JSON.parse(localStorage.getItem(STORE_GOALS)  ?? "[]"),
     saveGoals:  (g) => localStorage.setItem(STORE_GOALS,  JSON.stringify(g)),
+
     active:     () => JSON.parse(localStorage.getItem(STORE_ACTIVE) ?? "null"),
     saveActive: (p) => localStorage.setItem(STORE_ACTIVE, JSON.stringify(p)),
+
+    // Per-step notes: read all, write one, clear all
+    stepNotes:      ()           => JSON.parse(localStorage.getItem(STORE_STEP_NOTES) ?? "{}"),
+    saveStepNote:   (id, text)   => {
+      const notes = store.stepNotes();
+      if (text.trim()) notes[id] = text.trim();
+      else delete notes[id];
+      localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(notes));
+    },
+    applyStepNotes: (notesMap)   => localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(notesMap ?? {})),
+    clearStepNotes: ()           => localStorage.removeItem(STORE_STEP_NOTES),
   };
+
+  // ── Active plan index (which saved plan is currently loaded) ──────────────
+  // -1 means unsaved route; >=0 means a saved plan slot
+  let activePlanIdx = -1;
 
   // ── DOM refs ──────────────────────────────────────────────────────────────
   const $ = (id) => document.getElementById(id);
@@ -68,6 +93,7 @@
     cgReqs:     () => $("cg-reqs"),
     cgAddReq:   () => $("cg-add-req"),
     cgSubmit:   () => $("cg-submit"),
+    routeBar:   () => $("rt-route-bar"),
   };
 
   // ── Skill grid ────────────────────────────────────────────────────────────
@@ -270,7 +296,7 @@
     );
   }
 
-  // ── Min-heap (priority queue for Dijkstra) ────────────────────────────────
+  // ── Min-heap ──────────────────────────────────────────────────────────────
   class MinHeap {
     constructor() { this._h = []; }
     push(item, priority) {
@@ -305,9 +331,6 @@
     }
   }
 
-  // Dijkstra-style: expand candidates in cost order rather than scanning linearly.
-  // Each iteration we push eligible steps onto a heap keyed by cost, pop the
-  // cheapest, apply it, and re-seed the heap with newly unlocked candidates.
   function routeGoal(steps, profile, goal, skills, completedIds, completedQuests) {
     const target   = goal.reqs ?? {};
     const terminal = goal.terminal ?? null;
@@ -328,8 +351,6 @@
       return heap;
     };
 
-    // Seed once, then rebuild only when state changes unlock new candidates.
-    // Rebuild threshold: every step taken (small candidate sets in practice).
     let heap = eligible();
     while (heap.size > 0) {
       const allMet       = Object.entries(target).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl);
@@ -360,9 +381,6 @@
     }, {});
   }
 
-  // ── Opportunistic chaining ────────────────────────────────────────────────
-  // For each non-global region visited in the path, surface steps from later
-  // goals that share that region and could be piggy-backed. Adds a hint badge.
   function markOpportunities(path, allSteps, goals) {
     const laterGoalIds = new Set(goals.map((g) => g.terminal).filter(Boolean));
     const laterReqs    = goals.slice(1).flatMap((g) => Object.keys(g.reqs ?? {}));
@@ -432,31 +450,161 @@
 
   function opportunityBadge(step) {
     if (!step._opportunities?.length) return "";
-    return `<span class="step-badge opp" title="Nearby steps you could do here">+${step._opportunities.length} nearby</span>`;
+    return `<span class="step-badge opp" title="${step._opportunities.join(", ")}">+${step._opportunities.length} nearby</span>`;
   }
 
   function goalDividerHtml(goal) {
     const targets = Object.entries(goal._reqs ?? {})
       .map(([sk, lvl]) => `${sk.charAt(0).toUpperCase() + sk.slice(1)} ${lvl}`)
       .join(" · ");
-    const targetsHtml = targets
-      ? `<span class="route-goal-targets">${targets}</span>`
-      : "";
+    const targetsHtml = targets ? `<span class="route-goal-targets">${targets}</span>` : "";
     return `<li class="route-goal-divider">${goal._goalLabel}${targetsHtml}</li>`;
   }
 
+  // Insert-step row rendered between steps
+  function insertRowHtml(afterIdx) {
+    return `<li class="route-insert-row" data-after="${afterIdx}">
+      <button class="btn btn-ghost insert-step-btn" data-after="${afterIdx}" title="Insert step here">+ insert step</button>
+    </li>`;
+  }
+
+  // Inline insert form — replaces the insert row on click
+  function buildInsertForm(_afterIdx, onCommit, onCancel) {
+    const li = document.createElement("li");
+    li.className = "route-insert-form";
+    li.innerHTML = `
+      <input class="ins-label" type="text" placeholder="Step label" style="flex:1">
+      <input class="ins-detail" type="text" placeholder="Detail (optional)" style="flex:2">
+      <button class="btn btn-primary ins-add">Add</button>
+      <button class="btn btn-ghost ins-cancel">Cancel</button>
+    `;
+    li.querySelector(".ins-add").addEventListener("click", () => {
+      const label = li.querySelector(".ins-label").value.trim();
+      if (!label) return;
+      onCommit({
+        id:       `custom-insert-${Date.now()}`,
+        label,
+        detail:   li.querySelector(".ins-detail").value.trim(),
+        _custom:  true,
+        _goalLabel: "",
+        _reqs: {},
+      });
+    });
+    li.querySelector(".ins-cancel").addEventListener("click", onCancel);
+    return li;
+  }
+
+  // ── Step-note binding ─────────────────────────────────────────────────────
+  // Called after renderSteps injects HTML — wires textarea persistence per step id.
+  function wireStepNotes(container, notes) {
+    container.querySelectorAll(".step-note").forEach((ta) => {
+      const id = ta.dataset.stepId;
+      if (notes[id]) ta.value = notes[id];
+      ta.addEventListener("input", () => {
+        store.saveStepNote(id, ta.value);
+        // keep active plan's stepNotes in sync if a plan is loaded
+        if (activePlanIdx >= 0) {
+          const plans = store.plans();
+          if (plans[activePlanIdx]) {
+            plans[activePlanIdx].stepNotes = store.stepNotes();
+            store.updatePlan(activePlanIdx, plans[activePlanIdx]);
+          }
+        }
+      });
+    });
+  }
+
+  // ── Route bar (above route output, only when route is displayed) ──────────
+  function renderRouteBar(path) {
+    const bar = els.routeBar();
+    if (!bar) return;
+    bar.hidden = !path.length;
+    if (!path.length) return;
+
+    const isLoaded = activePlanIdx >= 0;
+    const plans    = store.plans();
+    const planName = isLoaded ? plans[activePlanIdx]?.name ?? "" : "";
+
+    bar.innerHTML = `
+      <span class="route-bar-name">
+        ${isLoaded
+          ? `<input class="route-name-input" type="text" value="${escHtml(planName)}" title="Rename plan">`
+          : `<span class="route-bar-label">Unsaved route</span>`
+        }
+      </span>
+      <span class="route-bar-actions">
+        ${isLoaded ? `<button class="btn btn-ghost rbar-update">Update plan</button>` : ""}
+        ${isLoaded ? `<button class="btn btn-ghost rbar-delete" style="color:#c00">Delete plan</button>` : ""}
+      </span>
+    `;
+
+    if (isLoaded) {
+      const nameInput = bar.querySelector(".route-name-input");
+      nameInput?.addEventListener("change", () => {
+        const plans = store.plans();
+        if (plans[activePlanIdx]) {
+          plans[activePlanIdx].name = nameInput.value.trim() || plans[activePlanIdx].name;
+          store.updatePlan(activePlanIdx, plans[activePlanIdx]);
+          store.saveActive(plans[activePlanIdx]);
+          renderPlans();
+        }
+      });
+
+      bar.querySelector(".rbar-update")?.addEventListener("click", () => {
+        const last = window._routerLastPath;
+        if (!last?.path?.length) return;
+        const plans = store.plans();
+        if (!plans[activePlanIdx]) return;
+        const updated = {
+          ...plans[activePlanIdx],
+          goals:     last.goals,
+          style:     last.profile.style,
+          skills:    last.profile.skills,
+          steps:     last.path,
+          stepNotes: store.stepNotes(),
+          date:      new Date().toLocaleDateString(),
+        };
+        store.updatePlan(activePlanIdx, updated);
+        store.saveActive(updated);
+        renderPlans();
+        renderRouteBar(last.path);
+      });
+
+      bar.querySelector(".rbar-delete")?.addEventListener("click", () => {
+        store.deletePlan(activePlanIdx);
+        store.saveActive(null);
+        activePlanIdx = -1;
+        renderPlans();
+        renderRouteBar([]);
+        els.empty().hidden = false;
+        els.empty().textContent = "Plan deleted.";
+        els.steps().hidden = true;
+      });
+    }
+  }
+
+  function escHtml(s) {
+    return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+
+  // ── Current path state (for insert mutations) ─────────────────────────────
+  let currentPath = [];
+
   function renderSteps(path) {
+    currentPath = path;
     const stepsEl = els.steps();
     const emptyEl = els.empty();
     if (!path.length) {
       emptyEl.hidden = false;
       stepsEl.hidden = true;
       emptyEl.textContent = "No route found for these inputs. Try adjusting your goals or stats.";
+      renderRouteBar([]);
       return;
     }
     emptyEl.hidden = true;
     stepsEl.hidden = false;
 
+    const notes = store.stepNotes();
     let stepNum  = 0;
     let lastGoal = null;
     const milestonesByGoal = path.reduce((acc, step) => {
@@ -464,26 +612,28 @@
       return acc;
     }, {});
 
-    stepsEl.innerHTML = path.map((step) => {
-      const parts = [];
-
+    const rows = [];
+    path.forEach((step, i) => {
       if (step._goalLabel !== lastGoal) {
         lastGoal = step._goalLabel;
-        parts.push(goalDividerHtml(step));
+        rows.push(goalDividerHtml(step));
         const mentions = milestonesByGoal[step._goalLabel];
         if (mentions?.length) {
-          parts.push(`<li class="route-milestone-mentions">Along the way: ${mentions.join(", ")}</li>`);
+          rows.push(`<li class="route-milestone-mentions">Along the way: ${mentions.join(", ")}</li>`);
         }
       }
 
-      if (step._isMilestone) return parts.join("");
+      if (step._isMilestone) return;
 
       stepNum++;
-      parts.push(`<li class="route-step">
+      const noteVal = escHtml(notes[step.id] ?? "");
+      rows.push(`<li class="route-step${step._custom ? " route-step-custom" : ""}" data-step-idx="${i}">
         <span class="step-num">${stepNum}</span>
         <span class="step-body">
-          <span class="step-title">${step.label}</span>
-          <span class="step-detail">${step.detail ?? ""}</span>
+          <span class="step-title">${escHtml(step.label)}</span>
+          <span class="step-detail">${escHtml(step.detail ?? "")}</span>
+          <textarea class="step-note" data-step-id="${escHtml(step.id)}" rows="1"
+            placeholder="Add a note…">${noteVal}</textarea>
         </span>
         <span class="step-meta">
           ${locationBadge(step)}
@@ -493,23 +643,63 @@
           ${reqBadge(step.reqs)}
         </span>
       </li>`);
-      return parts.join("");
-    }).join("");
+
+      // Insert row after every non-milestone step
+      rows.push(insertRowHtml(i));
+    });
+
+    stepsEl.innerHTML = rows.join("");
+
+    wireStepNotes(stepsEl, notes);
+    wireInsertRows(stepsEl, path);
+    renderRouteBar(path);
   }
 
+  // Wire insert-step affordances
+  function wireInsertRows(stepsEl, path) {
+    stepsEl.querySelectorAll(".insert-step-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const afterIdx = +btn.dataset.after;
+        const row = btn.closest(".route-insert-row");
+        const form = buildInsertForm(
+          afterIdx,
+          (newStep) => {
+            // splice into currentPath and re-render
+            currentPath = [
+              ...currentPath.slice(0, afterIdx + 1),
+              newStep,
+              ...currentPath.slice(afterIdx + 1),
+            ];
+            if (window._routerLastPath) window._routerLastPath.path = currentPath;
+            renderSteps(currentPath);
+          },
+          () => {
+            // cancel: restore insert row
+            row.outerHTML = insertRowHtml(afterIdx);
+            wireInsertRows(stepsEl, path);
+          }
+        );
+        row.replaceWith(form);
+      });
+    });
+  }
+
+  // ── Plan list ─────────────────────────────────────────────────────────────
   function renderPlans() {
     const plans = store.plans();
     const list  = els.planList();
     const none  = els.noPlans();
+    if (!list) return;
     if (!plans.length) { list.innerHTML = ""; none.hidden = false; return; }
     none.hidden = true;
+
     list.innerHTML = plans.map((plan, i) => `
-      <li class="route-step">
+      <li class="route-step plan-list-item" data-plan-idx="${i}">
         <span class="step-num" style="background:var(--gold)">${plan.steps.length}</span>
         <span class="step-body">
-          <span class="step-title">${plan.name}</span>
+          <span class="plan-list-name" data-plan-idx="${i}">${escHtml(plan.name)}</span>
           <span class="step-detail">${plan.goals?.length ?? 1} goal(s) · Style: ${plan.style} · Saved ${plan.date}</span>
-          ${plan.desc ? `<span class="plan-notes">${plan.desc}</span>` : ""}
+          ${plan.desc ? `<span class="plan-notes">${escHtml(plan.desc)}</span>` : ""}
         </span>
         <span class="step-meta plan-actions">
           <button class="btn btn-ghost plan-action-btn" data-load="${i}">Load</button>
@@ -518,17 +708,53 @@
       </li>
     `).join("");
 
+    // Inline rename: click the title span → becomes input
+    list.querySelectorAll(".plan-list-name").forEach((span) => {
+      span.addEventListener("click", () => {
+        const idx   = +span.dataset.planIdx;
+        const input = document.createElement("input");
+        input.className = "plan-rename-input";
+        input.type      = "text";
+        input.value     = plans[idx].name;
+        span.replaceWith(input);
+        input.focus();
+        input.select();
+        const commit = () => {
+          const name = input.value.trim() || plans[idx].name;
+          const updated = { ...plans[idx], name };
+          store.updatePlan(idx, updated);
+          if (activePlanIdx === idx) store.saveActive(updated);
+          renderPlans();
+          if (activePlanIdx === idx) renderRouteBar(currentPath);
+        };
+        input.addEventListener("blur",    commit);
+        input.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); commit(); } });
+      });
+    });
+
     list.querySelectorAll("[data-load]").forEach((btn) => {
-      btn.addEventListener("click", () => loadPlan(plans[+btn.dataset.load]));
+      btn.addEventListener("click", () => loadPlan(plans[+btn.dataset.load], +btn.dataset.load));
     });
     list.querySelectorAll("[data-delete]").forEach((btn) => {
-      btn.addEventListener("click", () => { store.deletePlan(+btn.dataset.delete); renderPlans(); });
+      btn.addEventListener("click", () => {
+        const idx = +btn.dataset.delete;
+        store.deletePlan(idx);
+        if (activePlanIdx === idx) {
+          activePlanIdx = -1;
+          store.saveActive(null);
+        } else if (activePlanIdx > idx) {
+          activePlanIdx--;
+        }
+        renderPlans();
+        if (window._routerLastPath) renderRouteBar(currentPath);
+      });
     });
   }
 
   let skillNames = [];
 
-  function loadPlan(plan) {
+  function loadPlan(plan, idx) {
+    activePlanIdx = idx ?? -1;
     applyProfile({ skills: plan.skills, style: plan.style }, skillNames);
     if (plan.goals) {
       goalQueue = plan.goals;
@@ -537,7 +763,10 @@
     }
     if (els.planName()) els.planName().value = plan.name;
     if (els.planDesc()) els.planDesc().value = plan.desc ?? "";
+    // Restore per-step notes from plan snapshot
+    store.applyStepNotes(plan.stepNotes ?? {});
     renderSteps(plan.steps);
+    window._routerLastPath = { path: plan.steps, profile: { skills: plan.skills, style: plan.style }, goals: plan.goals ?? [] };
     store.saveActive(plan);
   }
 
@@ -564,10 +793,12 @@
     goalQueue = store.goals();
     renderGoalQueue();
 
-    // Autoload last active plan if one exists
+    // Autoload last active plan
     const active = store.active();
     if (active?.steps?.length) {
-      loadPlan(active);
+      const plans = store.plans();
+      const idx   = plans.findIndex((p) => p.name === active.name && p.date === active.date);
+      loadPlan(active, idx);
     }
 
     els.inputs().forEach((el) => {
@@ -608,6 +839,7 @@
       }
       const profile = readProfile(skillNames);
       const path    = routeMulti(goalQueue, steps, profile);
+      activePlanIdx = -1;  // fresh route is unsaved
       renderSteps(path);
       window._routerLastPath = { path, profile, goals: goalQueue };
     });
@@ -616,12 +848,16 @@
       skillNames.forEach((sk) => { const el = els.skillInput(sk); if (el) el.value = 1; });
       if (els.style()) els.style().value = "balanced";
       goalQueue = [];
+      activePlanIdx = -1;
       store.saveGoals(goalQueue);
       store.saveActive(null);
+      store.clearStepNotes();
       renderGoalQueue();
       els.empty().hidden = false;
       els.empty().textContent = "Add goals to your queue and click Calculate Route.";
       els.steps().hidden = true;
+      currentPath = [];
+      renderRouteBar([]);
       localStorage.removeItem(STORE_PROFILE);
       if (els.saveStatus()) els.saveStatus().hidden = true;
     });
@@ -634,17 +870,19 @@
       const plan = {
         name,
         desc,
-        goals:  last.goals,
-        style:  last.profile.style,
-        skills: last.profile.skills,
-        steps:  last.path,
-        date:   new Date().toLocaleDateString(),
+        goals:     last.goals,
+        style:     last.profile.style,
+        skills:    last.profile.skills,
+        steps:     last.path,
+        stepNotes: store.stepNotes(),
+        date:      new Date().toLocaleDateString(),
       };
-      store.savePlan(plan);
+      activePlanIdx = store.savePlan(plan);
       store.saveActive(plan);
       if (els.planName()) els.planName().value = "";
       if (els.planDesc()) els.planDesc().value = "";
       renderPlans();
+      renderRouteBar(last.path);
     });
 
     renderPlans();
