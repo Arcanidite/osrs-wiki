@@ -213,6 +213,9 @@ body {
 .sp-stats td { color: var(--ink); font-weight: 600; }
 
 /* ── Layout shell ────────────────────────────────────────────────────────── */
+#main-content {
+  padding: var(--sp) var(--sp);
+}
 .page-wrap {
   max-width: 1100px;
   margin: 0 auto;
