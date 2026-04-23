@@ -1,0 +1,22 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      {% if site.data.site.logo %}
+        <img src="{{ site.data.site.logo }}" alt="{{ site.data.site.name }}">
+      {% else %}
+        {{ site.data.site.name }}
+      {% endif %}
+    </a>
+    <ul class="nav-links" data-catalog-nav>
+      {% for link in site.data.nav.links %}
+        <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+    {% if site.data.site.search_enabled %}
+      <div class="search-bar">
+        <input type="search" id="wiki-search" placeholder="Search..." aria-label="Search wiki" data-catalog-search>
+        <div id="search-results" class="search-results" data-catalog-results hidden></div>
+      </div>
+    {% endif %}
+  </nav>
+</header>

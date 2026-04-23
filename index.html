@@ -1,0 +1,20 @@
+---
+layout: default
+title: Home
+---
+
+<div class="landing">
+  <section class="hero" data-catalog-hero>
+    <h1 data-catalog-bind="site.name">{{ site.data.site.name }}</h1>
+    {% if site.data.site.tagline %}
+      <p class="tagline" data-catalog-bind="site.tagline">{{ site.data.site.tagline }}</p>
+    {% else %}
+      <p class="tagline" data-catalog-bind="site.tagline"></p>
+    {% endif %}
+  </section>
+
+  <section class="category-list" data-catalog-categories>
+  </section>
+
+  {% include catalog-grid.html %}
+</div>

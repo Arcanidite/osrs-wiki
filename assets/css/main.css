@@ -1,0 +1,123 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8f6f0;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a { color: #ccc; text-decoration: none; }
+.nav-links a:hover { color: #fff; }
+
+/* Search */
+.search-bar { position: relative; margin-left: auto; }
+.search-bar input {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #3a3a3a;
+  color: #fff;
+  width: 220px;
+}
+.search-results {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 100;
+  padding: 0.5rem;
+}
+
+/* Landing */
+.landing { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+.hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+.hero h1 { font-size: 2.25rem; }
+.hero .tagline { color: #555; margin-top: 0.5rem; }
+
+/* Categories */
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.category-card {
+  background: #fff;
+  border: 1px solid #e0ddd5;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+.category-card h2 { font-size: 1rem; margin-bottom: 0.25rem; }
+.category-card p { font-size: 0.85rem; color: #666; }
+
+/* Catalog grid */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.catalog-empty { color: #888; text-align: center; padding: 2rem; grid-column: 1/-1; }
+
+.entry-card {
+  background: #fff;
+  border: 1px solid #e0ddd5;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.entry-card h3 { font-size: 1rem; }
+.entry-category {
+  font-size: 0.75rem;
+  background: #eee;
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  width: fit-content;
+}
+.entry-card p { font-size: 0.85rem; color: #555; }
+.entry-card a { font-size: 0.85rem; color: #3a7bd5; }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  color: #999;
+  border-top: 1px solid #e0ddd5;
+  margin-top: 3rem;
+}
