@@ -374,6 +374,28 @@ body {
 .form-group input:focus,
 .form-group select:focus { outline: 2px solid var(--gold); border-color: var(--gold); }
 
+/* Skill grid: 3-col compact, abbreviated labels */
+#rt-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-q) var(--sp-h);
+  margin-bottom: var(--sp-h);
+}
+#rt-skill-grid .form-group { margin-bottom: 0; gap: 1px; }
+#rt-skill-grid label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  color: var(--muted);
+}
+#rt-skill-grid input[type=number] {
+  padding: 2px var(--sp-q);
+  font-size: var(--fs-xs);
+  text-align: center;
+  width: 100%;
+}
+
 .btn {
   padding: var(--sp-h) var(--sp);
   border: none; border-radius: var(--radius);
@@ -422,7 +444,10 @@ body {
 .step-badge.inv { background: #d1ecf1; color: #0c5460; }
 .step-badge.loc { background: #e8e0f5; color: #4a2d8a; text-transform: capitalize; }
 .step-badge.opp      { background: #fff3e0; color: #7a4800; cursor: default; }
-.step-badge.goal-lbl { background: #eef2ff; color: #3730a3; font-style: italic; }
+.step-badge.goal-lbl   { background: #eef2ff; color: #3730a3; font-style: italic; }
+.step-badge.eq         { background: #fce7f3; color: #9d174d; }
+.step-badge.itm        { background: #ecfdf5; color: #065f46; }
+.step-badge.constraint { background: #f3f4f6; color: #374151; cursor: help; }
 
 /* Step remove button — sits in step-meta column */
 .step-remove-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); color: var(--muted); opacity: 0; transition: opacity 0.1s; }

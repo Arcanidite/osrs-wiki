@@ -1,0 +1,19 @@
+{"id":"c:equip-rune-plate","type":"equipment","label":"Equip rune platebody","item":"rune_platebody","slot":"body","optional":false}
+{"id":"c:equip-rune-legs","type":"equipment","label":"Equip rune platelegs","item":"rune_platelegs","slot":"legs","optional":false}
+{"id":"c:equip-abyssal-whip","type":"equipment","label":"Equip abyssal whip","item":"abyssal_whip","slot":"weapon","optional":false}
+{"id":"c:equip-defender","type":"equipment","label":"Equip defender (any tier)","item":"dragon_defender","slot":"shield","optional":true,"note":"Any tier defender is sufficient"}
+{"id":"c:inv-food","type":"inventory_item","label":"Food in inventory","item":"food","quantity":4,"note":"Any food stack counts"}
+{"id":"c:inv-prayer-pots","type":"inventory_item","label":"Prayer potions in inventory","item":"prayer_potion","quantity":2}
+{"id":"c:inv-free-4","type":"inv_free","label":"4 free inventory slots","slots":4}
+{"id":"c:inv-free-6","type":"inv_free","label":"6 free inventory slots","slots":6}
+{"id":"c:use-tinderbox-on-log","type":"item_on_item","label":"Use tinderbox on log","source_item":"tinderbox","target_item":"logs","result":"fire","grants_step":"quest-priest-in-peril"}
+{"id":"c:use-key-on-door","type":"item_on_object","label":"Use key on door","item":"brass_key","object_id":1579,"object_name":"Barbarian Village door","region":"barbarian-village"}
+{"id":"c:talk-to-npc-lumbridge-guide","type":"object_interact","label":"Talk to Lumbridge Guide","object_type":"npc","object_id":3008,"action":"Talk-to","region":"misthalin","zone":"lumbridge"}
+{"id":"c:open-bank-lumbridge","type":"object_interact","label":"Open Lumbridge bank","object_type":"object","object_id":25808,"action":"Bank","region":"misthalin","zone":"lumbridge"}
+{"id":"c:climb-stronghold-floor1","type":"object_interact","label":"Climb stairs to Stronghold floor 1","object_type":"object","object_id":17387,"action":"Climb-down","region":"misthalin","zone":"stronghold-of-security","prerequisite_region":"misthalin"}
+{"id":"c:barrows-crypt-enter","type":"object_interact","label":"Enter Barrows crypt","object_type":"object","object_id":20973,"action":"Climb-into","region":"morytania","zone":"barrows","quest_gate":"quest-priest-in-peril"}
+{"id":"c:region-seq-morytania","type":"region_order","label":"Complete Priest in Peril before entering Morytania","before_step":"quest-priest-in-peril","unlocks_region":"morytania"}
+{"id":"c:region-seq-zeah","type":"region_order","label":"Complete Tale of the Righteous before CoX","before_step":"quest-tale-of-arrav","unlocks_region":"zeah"}
+{"id":"c:region-seq-ape-atoll","type":"region_order","label":"Complete Monkey Madness I before Ape Atoll training","before_step":"quest-mm","unlocks_region":"ape-atoll"}
+{"id":"c:graph-node-barrows","type":"graph_ref","label":"Barrows node in site graph","node_id":"barrows","edge_type":"prerequisite","depends_on":["c:region-seq-morytania","c:equip-rune-plate","c:inv-food","c:inv-prayer-pots"]}
+{"id":"c:graph-node-gwd","type":"graph_ref","label":"GWD node in site graph","node_id":"unlock-gwd","edge_type":"prerequisite","depends_on":["c:inv-free-6","c:inv-food","c:inv-prayer-pots"]}

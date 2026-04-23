@@ -139,6 +139,15 @@ Extraction pipeline is in place. Location data remains empty until fresh XTEA ke
 
 ## Completed
 
+- `[profile:skill-grid]` — 3-col compact grid, abbreviated labels with title tooltip, CSS `#rt-skill-grid` ✓ (pending commit)
+- `[req:schema]` — extended step `reqs` schema: `{skills, items, equipment, inv_free, constraints}`, backward-compat normalizer in router ✓ (pending commit)
+- `[req:data]` — `train-mm-tunnels`, `unlock-barrows`, `unlock-gwd` migrated to structured reqs ✓ (pending commit)
+- `[req:constraints]` — `constraints.jsonl`: 20 entries covering equipment, inv_item, inv_free, item_on_item, item_on_object, object_interact, region_order, graph_ref types ✓ (pending commit)
+- `[req:router]` — `normalizeReqs`, extended `meetsReqs`, `constraintBadges` renderer (eq/itm/inv/constraint badges) ✓ (pending commit)
+- `[router:live-recompute]` — goal queue mutations + stat changes trigger recompute ✓ (`41f3af3`)
+- `[router:goal-edit]` — inline goal card editor ✓ (`41f3af3`)
+- `[router:uniform-steps]` — contiguous numbering, goal badge inline ✓ (`41f3af3`)
+- `[router:step-remove]` — ✕ per step, `pinnedExclusions` set ✓ (`41f3af3`)
 - `[router:step-notes]` — per-step note textarea, `osrs-step-notes` localStorage, serialised into plan ✓ (`a0743d0`)
 - `[router:step-insert]` — inline insert form between steps, splices into `currentPath` ✓ (`a0743d0`)
 - `[router:plan-crud]` — route bar with rename/update/delete for loaded plan ✓ (`a0743d0`)

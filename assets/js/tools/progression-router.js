@@ -2,7 +2,8 @@
   const BASE        = document.querySelector("[data-baseurl]")?.dataset.baseurl ?? "";
   const STEPS_URL   = BASE + "/assets/data/tools/steps.jsonl";
   const GOALS_URL   = BASE + "/assets/data/tools/goals.jsonl";
-  const REGIONS_URL = BASE + "/assets/data/tools/regions.jsonl";
+  const REGIONS_URL      = BASE + "/assets/data/tools/regions.jsonl";
+  const CONSTRAINTS_URL  = BASE + "/assets/data/tools/constraints.jsonl";
   const STORE_PROFILE    = "osrs-router-profile";
   const STORE_PLANS      = "osrs-router-plans";
   const STORE_GOALS      = "osrs-router-goals";
@@ -71,9 +72,10 @@
   let skillNames       = [];
 
   // Cached data from JSONL — available after init
-  let allSteps   = [];
-  let allGoals   = [];
-  let allRegions = [];
+  let allSteps       = [];
+  let allGoals       = [];
+  let allRegions     = [];
+  let allConstraints = [];   // {id, type, ...} — constraints.jsonl
 
   // ── DOM ───────────────────────────────────────────────────────────────────
   const $ = (id) => document.getElementById(id);
@@ -109,12 +111,23 @@
   }
 
   // ── Profile ───────────────────────────────────────────────────────────────
+  // Short display labels for the 3-col compact grid
+  const SKILL_ABBR = {
+    attack:"Atk", strength:"Str", defence:"Def", hitpoints:"HP", prayer:"Pray",
+    magic:"Mage", ranged:"Rng", slayer:"Slay", cooking:"Cook", firemaking:"FM",
+    thieving:"Thiev", crafting:"Craft", smithing:"Smith", mining:"Mine",
+    woodcutting:"WC", fishing:"Fish", fletching:"Fletch", herblore:"Herb",
+    agility:"Agil", runecraft:"RC", construction:"Con", farming:"Farm",
+    hunter:"Hunt",
+  };
+  function skillLabel(sk) { return SKILL_ABBR[sk] ?? (sk.charAt(0).toUpperCase() + sk.slice(1)); }
+
   function buildSkillGrid(skills) {
     const grid = els.skillGrid();
     if (!grid) return;
     grid.innerHTML = skills.map((sk) => `
       <div class="form-group">
-        <label for="rt-${sk}">${sk.charAt(0).toUpperCase() + sk.slice(1)}</label>
+        <label for="rt-${sk}" title="${sk.charAt(0).toUpperCase() + sk.slice(1)}">${skillLabel(sk)}</label>
         <input type="number" id="rt-${sk}" min="1" max="99" value="1">
       </div>`).join("");
   }
@@ -333,8 +346,34 @@
   }
 
   // ── Routing ───────────────────────────────────────────────────────────────
+  // Normalize legacy flat {skill:lvl} shape to structured shape
+  function normalizeReqs(reqs) {
+    if (!reqs || typeof reqs !== "object") return { skills: {} };
+    if (reqs.skills !== undefined || reqs.items !== undefined ||
+        reqs.equipment !== undefined || reqs.inv_free !== undefined ||
+        reqs.constraints !== undefined) return reqs;
+    return { skills: reqs };   // legacy flat form
+  }
+
   function meetsReqs(reqs, skills) {
-    return Object.entries(reqs ?? {}).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl);
+    const r = normalizeReqs(reqs);
+    // Skills
+    if (!Object.entries(r.skills ?? {}).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl)) return false;
+    // Items — treated as soft hints; the router doesn't track inventory state yet,
+    // so we pass these unless a constraint_ref makes it hard. Future: inv simulation.
+    // inv_free — same; pass through until inv simulation is wired.
+    // Constraints — evaluate resolvable types; skip graph_ref and object_interact
+    // (those require runtime game state unavailable client-side).
+    for (const cid of (r.constraints ?? [])) {
+      const c = allConstraints.find((x) => x.id === cid);
+      if (!c) continue;
+      if (c.type === "region_order") {
+        // before_step must already be in completedIds — checked in locationAccessible,
+        // so skip here to avoid double-gating.
+      }
+      // equipment/inventory/graph_ref/object types are advisory at routing time.
+    }
+    return true;
   }
 
   function applyGrants(grants, skills) {
@@ -481,8 +520,29 @@
     return step.inv_used ? `<span class="step-badge inv">${step.inv_used} inv slots</span>` : "";
   }
   function reqBadge(reqs) {
-    const parts = Object.entries(reqs ?? {}).map(([sk, lvl]) => `${sk} ${lvl}`);
+    const r = normalizeReqs(reqs);
+    const parts = Object.entries(r.skills ?? {}).map(([sk, lvl]) => `${skillLabel(sk)} ${lvl}`);
     return parts.length ? `<span class="step-badge req">Req: ${parts.join(", ")}</span>` : "";
+  }
+  function constraintBadges(reqs) {
+    const r = normalizeReqs(reqs);
+    const out = [];
+    (r.equipment ?? []).forEach(({ item, slot, optional }) =>
+      out.push(`<span class="step-badge eq" title="${optional ? "optional" : "required"}">${slot}: ${item.replace(/_/g," ")}${optional ? "?" : ""}</span>`)
+    );
+    (r.items ?? []).forEach((item) =>
+      out.push(`<span class="step-badge itm">${item.replace(/_/g," ")}</span>`)
+    );
+    if (r.inv_free)
+      out.push(`<span class="step-badge inv">${r.inv_free} free slots</span>`);
+    (r.constraints ?? []).forEach((cid) => {
+      const c = allConstraints.find((x) => x.id === cid);
+      if (!c) return;
+      const icon = { region_order:"📍", item_on_item:"🔗", item_on_object:"🔗",
+                     object_interact:"⚙", graph_ref:"◈", equipment:"🛡", inventory_item:"🎒", inv_free:"📦" }[c.type] ?? "·";
+      out.push(`<span class="step-badge constraint" title="${escHtml(c.label)}">${icon}</span>`);
+    });
+    return out.join("");
   }
   function locationBadge(step) {
     const loc = step.location;
@@ -668,6 +728,7 @@
           ${xpBadge(step.xp)}
           ${invBadge(step)}
           ${reqBadge(step.reqs)}
+          ${constraintBadges(step.reqs)}
           <button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>
         </span>
       </li>`);
@@ -802,10 +863,11 @@
   // ── Boot ──────────────────────────────────────────────────────────────────
   async function init() {
     try {
-      [allSteps, allGoals, allRegions] = await Promise.all([
+      [allSteps, allGoals, allRegions, allConstraints] = await Promise.all([
         loadJsonl(STEPS_URL),
         loadJsonl(GOALS_URL),
         loadJsonl(REGIONS_URL),
+        loadJsonl(CONSTRAINTS_URL),
       ]);
     } catch { return; }
 
