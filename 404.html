@@ -1,0 +1,72 @@
+---
+layout: default
+title: Page Not Found
+permalink: /404.html
+---
+
+<div class="not-found">
+  <h1>Page not found</h1>
+  <p id="nf-path"></p>
+  <div id="nf-match" hidden>
+    <p>Did you mean:</p>
+    <ul id="nf-suggestions"></ul>
+  </div>
+  <div id="nf-nomatch" hidden>
+    <p>No matching pages found. <a href="{{ site.baseurl }}/">Return home</a>.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  const BASE = {{ site.baseurl | jsonify }};
+  const CATALOG = BASE + "/assets/data/catalog.json";
+
+  const raw = window.location.pathname;
+  const path = raw.startsWith(BASE) ? raw.slice(BASE.length) : raw;
+  const segments = path.replace(/^\/|\/$/g, "").toLowerCase().split("/").filter(Boolean);
+
+  document.getElementById("nf-path").textContent = "Requested: " + raw;
+
+  if (!segments.length) return;
+
+  fetch(CATALOG)
+    .then(function (r) { return r.json(); })
+    .then(function (catalog) {
+      const scored = catalog.entries
+        .map(function (e) {
+          const eSegs = e.url.replace(/^\/|\/$/g, "").toLowerCase().split("/").filter(Boolean);
+          const hits = segments.reduce(function (acc, s) {
+            return acc + eSegs.filter(function (es) { return es.includes(s) || s.includes(es); }).length;
+          }, 0);
+          return { entry: e, score: hits };
+        })
+        .filter(function (s) { return s.score > 0; })
+        .sort(function (a, b) { return b.score - a.score; })
+        .slice(0, 5);
+
+      if (!scored.length) {
+        document.getElementById("nf-nomatch").hidden = false;
+        return;
+      }
+
+      const list = document.getElementById("nf-suggestions");
+      scored.forEach(function (s) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = BASE + s.entry.url;
+        a.textContent = s.entry.name;
+        if (s.entry.summary) {
+          const small = document.createElement("small");
+          small.textContent = " — " + s.entry.summary;
+          a.appendChild(small);
+        }
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      document.getElementById("nf-match").hidden = false;
+    })
+    .catch(function () {
+      document.getElementById("nf-nomatch").hidden = false;
+    });
+})();
+</script>

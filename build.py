@@ -1,5 +1,5 @@
 """
-Graph → Jekyll data artifacts.
+Graph → Jekyll data artifacts + stub pages.
 
 Reads graph.json, resolves node/edge associations, emits:
   _data/nav.json        — hierarchical tree for SSR nav/sub-nav
@@ -7,6 +7,7 @@ Reads graph.json, resolves node/edge associations, emits:
   _data/comboboxes.json — grouped option sets for any combobox surface
   _data/related.json    — per-node related-link sets
   assets/data/catalog.json — client-side search/catalog feed
+  <url>/index.html      — stub page per graph node (skips home "/")
 """
 
 import json
@@ -28,15 +29,17 @@ def index(graph):
     nodes = {n["id"]: n for n in graph["nodes"]}
     children = defaultdict(list)
     related = defaultdict(list)
+    parents = {}
 
     for edge in graph["edges"]:
         if edge["rel"] == "child":
             children[edge["from"]].append(edge["to"])
+            parents[edge["to"]] = edge["from"]
         elif edge["rel"] == "related":
             related[edge["from"]].append(edge["to"])
             related[edge["to"]].append(edge["from"])
 
-    return nodes, children, related
+    return nodes, children, related, parents
 
 
 def build_tree(node_id, nodes, children, depth=0):
@@ -134,6 +137,58 @@ def emit_catalog(nodes):
     return {"version": "1.0.0", "entries": entries}
 
 
+def emit_pages(nodes, children, parents):
+    pages = {}
+    for node in nodes.values():
+        url = node["url"].strip("/")
+        if not url:
+            continue
+        kids = [
+            {"id": nodes[c]["id"], "label": nodes[c]["label"], "url": nodes[c]["url"]}
+            for c in children.get(node["id"], [])
+            if c in nodes
+        ]
+        breadcrumb = []
+        cur = node["id"]
+        while cur in parents:
+            p = parents[cur]
+            if p == "root":
+                break
+            breadcrumb.insert(0, {"label": nodes[p]["label"], "url": nodes[p]["url"]})
+            cur = p
+        pages[url] = {
+            "path": ROOT / url / "index.html",
+            "front": {
+                "layout": "node",
+                "title": node["label"],
+                "node_id": node["id"],
+                "summary": node.get("meta", {}).get("summary", ""),
+                "breadcrumb": breadcrumb,
+                "children": kids,
+            },
+        }
+    return pages
+
+
+def write_pages(pages):
+    for url, page in pages.items():
+        path = page["path"]
+        path.parent.mkdir(parents=True, exist_ok=True)
+        front = page["front"]
+        lines = ["---"]
+        for k, v in front.items():
+            lines.append(f"{k}: {json.dumps(v, ensure_ascii=False)}")
+        lines += ["---", ""]
+        if front["children"]:
+            lines.append('<ul class="node-children">')
+            for c in front["children"]:
+                lines.append(f'  <li><a href="{{{{ site.baseurl }}}}{c["url"]}">{c["label"]}</a></li>')
+            lines.append("</ul>")
+            lines.append("")
+        path.write_text("\n".join(lines), encoding="utf-8")
+        print(f"  wrote {path.relative_to(ROOT)}")
+
+
 def write(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -142,14 +197,16 @@ def write(path, data):
 
 def main():
     graph = load()
-    nodes, children, related = index(graph)
-    root_tree = build_tree("root", {"root": {"id": "root", "label": "root", "url": "/", "type": "root", "slots": [], "meta": {}}, **nodes}, children)
+    nodes, children, related, parents = index(graph)
+    root_node = {"id": "root", "label": "root", "url": "/", "type": "root", "slots": [], "meta": {}}
+    root_tree = build_tree("root", {"root": root_node, **nodes}, children)
 
     write(DATA_DIR / "nav.json",        emit_nav(root_tree))
     write(DATA_DIR / "sitemap.json",    emit_sitemap(root_tree))
     write(DATA_DIR / "comboboxes.json", emit_comboboxes(nodes, children))
     write(DATA_DIR / "related.json",    emit_related(nodes, related))
     write(ASSETS_DATA_DIR / "catalog.json", emit_catalog(nodes))
+    write_pages(emit_pages(nodes, children, parents))
 
     print("done.")
 

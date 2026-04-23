@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — {{ site.data.site.name }}</title>
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+  <main id="main-content" class="node-page">
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}
+      <p class="node-summary">{{ page.summary }}</p>
+    {% endif %}
+
+    {% if page.node_id %}
+      {% assign rel = site.data.related[page.node_id] %}
+      {% if rel and rel.size > 0 %}
+        <section class="related-links">
+          <h2>Related</h2>
+          <ul>
+            {% for r in rel %}
+              <li><a href="{{ site.baseurl }}{{ r.url }}">{{ r.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endif %}
+    {% endif %}
+
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/catalog.js' | relative_url }}"></script>
+</body>
+</html>
