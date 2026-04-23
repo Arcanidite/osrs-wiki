@@ -1,0 +1,58 @@
+{
+  "magic": [
+    {
+      "id": "runes",
+      "label": "Runes",
+      "url": "/items/runes"
+    }
+  ],
+  "runes": [
+    {
+      "id": "magic",
+      "label": "Magic",
+      "url": "/skills/magic"
+    }
+  ],
+  "combat": [
+    {
+      "id": "skills",
+      "label": "Skills",
+      "url": "/skills"
+    }
+  ],
+  "skills": [
+    {
+      "id": "combat",
+      "label": "Combat",
+      "url": "/combat"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "attack",
+      "label": "Attack",
+      "url": "/skills/attack"
+    }
+  ],
+  "attack": [
+    {
+      "id": "weapons",
+      "label": "Weapons",
+      "url": "/items/weapons"
+    }
+  ],
+  "armour": [
+    {
+      "id": "defence",
+      "label": "Defence",
+      "url": "/skills/defence"
+    }
+  ],
+  "defence": [
+    {
+      "id": "armour",
+      "label": "Armour",
+      "url": "/items/armour"
+    }
+  ]
+}

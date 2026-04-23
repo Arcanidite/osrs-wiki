@@ -1,0 +1,154 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "label": "Home",
+      "url": "/",
+      "type": "page",
+      "slots": ["nav", "sitemap"],
+      "meta": {}
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "url": "/skills",
+      "type": "group",
+      "slots": ["nav", "sitemap", "combobox"],
+      "meta": { "combobox_label": "Browse Skills" }
+    },
+    {
+      "id": "combat",
+      "label": "Combat",
+      "url": "/combat",
+      "type": "group",
+      "slots": ["nav", "sitemap", "combobox"],
+      "meta": { "combobox_label": "Browse Combat" }
+    },
+    {
+      "id": "items",
+      "label": "Items",
+      "url": "/items",
+      "type": "group",
+      "slots": ["nav", "sitemap", "combobox"],
+      "meta": { "combobox_label": "Browse Items" }
+    },
+    {
+      "id": "quests",
+      "label": "Quests",
+      "url": "/quests",
+      "type": "group",
+      "slots": ["nav", "sitemap"],
+      "meta": {}
+    },
+    {
+      "id": "attack",
+      "label": "Attack",
+      "url": "/skills/attack",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "icon": "sword", "summary": "The Attack skill determines accuracy in melee combat." }
+    },
+    {
+      "id": "strength",
+      "label": "Strength",
+      "url": "/skills/strength",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "icon": "fist", "summary": "Strength increases the maximum melee damage a player can deal." }
+    },
+    {
+      "id": "defence",
+      "label": "Defence",
+      "url": "/skills/defence",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "icon": "shield", "summary": "Defence reduces the chance of being hit by opponents." }
+    },
+    {
+      "id": "ranged",
+      "label": "Ranged",
+      "url": "/skills/ranged",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "icon": "bow", "summary": "Ranged allows combat from a distance using projectiles." }
+    },
+    {
+      "id": "magic",
+      "label": "Magic",
+      "url": "/skills/magic",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "icon": "staff", "summary": "Magic enables spellcasting using runes." }
+    },
+    {
+      "id": "prayer",
+      "label": "Prayer",
+      "url": "/skills/prayer",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "icon": "bone", "summary": "Prayer grants temporary combat boosts and protection." }
+    },
+    {
+      "id": "melee",
+      "label": "Melee",
+      "url": "/combat/melee",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "summary": "Overview of melee combat mechanics." }
+    },
+    {
+      "id": "bosses",
+      "label": "Bosses",
+      "url": "/combat/bosses",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "summary": "List of boss monsters and their mechanics." }
+    },
+    {
+      "id": "weapons",
+      "label": "Weapons",
+      "url": "/items/weapons",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "summary": "Weapons available in Old School RuneScape." }
+    },
+    {
+      "id": "armour",
+      "label": "Armour",
+      "url": "/items/armour",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search"],
+      "meta": { "summary": "Armour sets and their defensive stats." }
+    },
+    {
+      "id": "runes",
+      "label": "Runes",
+      "url": "/items/runes",
+      "type": "page",
+      "slots": ["nav", "sitemap", "search", "combobox"],
+      "meta": { "summary": "Runes used for casting Magic spells." }
+    }
+  ],
+  "edges": [
+    { "from": "root",    "to": "home",     "rel": "child" },
+    { "from": "root",    "to": "skills",   "rel": "child" },
+    { "from": "root",    "to": "combat",   "rel": "child" },
+    { "from": "root",    "to": "items",    "rel": "child" },
+    { "from": "root",    "to": "quests",   "rel": "child" },
+    { "from": "skills",  "to": "attack",   "rel": "child" },
+    { "from": "skills",  "to": "strength", "rel": "child" },
+    { "from": "skills",  "to": "defence",  "rel": "child" },
+    { "from": "skills",  "to": "ranged",   "rel": "child" },
+    { "from": "skills",  "to": "magic",    "rel": "child" },
+    { "from": "skills",  "to": "prayer",   "rel": "child" },
+    { "from": "combat",  "to": "melee",    "rel": "child" },
+    { "from": "combat",  "to": "bosses",   "rel": "child" },
+    { "from": "items",   "to": "weapons",  "rel": "child" },
+    { "from": "items",   "to": "armour",   "rel": "child" },
+    { "from": "items",   "to": "runes",    "rel": "child" },
+    { "from": "magic",   "to": "runes",    "rel": "related" },
+    { "from": "combat",  "to": "skills",   "rel": "related" },
+    { "from": "weapons", "to": "attack",   "rel": "related" },
+    { "from": "armour",  "to": "defence",  "rel": "related" }
+  ]
+}

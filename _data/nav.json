@@ -1,0 +1,246 @@
+[
+  {
+    "id": "home",
+    "label": "Home",
+    "url": "/",
+    "type": "page",
+    "slots": [
+      "nav",
+      "sitemap"
+    ],
+    "meta": {},
+    "children": []
+  },
+  {
+    "id": "skills",
+    "label": "Skills",
+    "url": "/skills",
+    "type": "group",
+    "slots": [
+      "nav",
+      "sitemap",
+      "combobox"
+    ],
+    "meta": {
+      "combobox_label": "Browse Skills"
+    },
+    "children": [
+      {
+        "id": "attack",
+        "label": "Attack",
+        "url": "/skills/attack",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "icon": "sword",
+          "summary": "The Attack skill determines accuracy in melee combat."
+        },
+        "children": []
+      },
+      {
+        "id": "strength",
+        "label": "Strength",
+        "url": "/skills/strength",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "icon": "fist",
+          "summary": "Strength increases the maximum melee damage a player can deal."
+        },
+        "children": []
+      },
+      {
+        "id": "defence",
+        "label": "Defence",
+        "url": "/skills/defence",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "icon": "shield",
+          "summary": "Defence reduces the chance of being hit by opponents."
+        },
+        "children": []
+      },
+      {
+        "id": "ranged",
+        "label": "Ranged",
+        "url": "/skills/ranged",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "icon": "bow",
+          "summary": "Ranged allows combat from a distance using projectiles."
+        },
+        "children": []
+      },
+      {
+        "id": "magic",
+        "label": "Magic",
+        "url": "/skills/magic",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "icon": "staff",
+          "summary": "Magic enables spellcasting using runes."
+        },
+        "children": []
+      },
+      {
+        "id": "prayer",
+        "label": "Prayer",
+        "url": "/skills/prayer",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "icon": "bone",
+          "summary": "Prayer grants temporary combat boosts and protection."
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "combat",
+    "label": "Combat",
+    "url": "/combat",
+    "type": "group",
+    "slots": [
+      "nav",
+      "sitemap",
+      "combobox"
+    ],
+    "meta": {
+      "combobox_label": "Browse Combat"
+    },
+    "children": [
+      {
+        "id": "melee",
+        "label": "Melee",
+        "url": "/combat/melee",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Overview of melee combat mechanics."
+        },
+        "children": []
+      },
+      {
+        "id": "bosses",
+        "label": "Bosses",
+        "url": "/combat/bosses",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "List of boss monsters and their mechanics."
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "items",
+    "label": "Items",
+    "url": "/items",
+    "type": "group",
+    "slots": [
+      "nav",
+      "sitemap",
+      "combobox"
+    ],
+    "meta": {
+      "combobox_label": "Browse Items"
+    },
+    "children": [
+      {
+        "id": "weapons",
+        "label": "Weapons",
+        "url": "/items/weapons",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Weapons available in Old School RuneScape."
+        },
+        "children": []
+      },
+      {
+        "id": "armour",
+        "label": "Armour",
+        "url": "/items/armour",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Armour sets and their defensive stats."
+        },
+        "children": []
+      },
+      {
+        "id": "runes",
+        "label": "Runes",
+        "url": "/items/runes",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search",
+          "combobox"
+        ],
+        "meta": {
+          "summary": "Runes used for casting Magic spells."
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "quests",
+    "label": "Quests",
+    "url": "/quests",
+    "type": "group",
+    "slots": [
+      "nav",
+      "sitemap"
+    ],
+    "meta": {},
+    "children": []
+  }
+]

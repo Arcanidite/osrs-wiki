@@ -94,5 +94,14 @@
     return String(str).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
   }
 
+  function wireComboboxes() {
+    document.querySelectorAll("[data-nav-combobox]").forEach((sel) => {
+      sel.addEventListener("change", () => {
+        if (sel.value) window.location.href = sel.value;
+      });
+    });
+  }
+
   load();
+  wireComboboxes();
 })();

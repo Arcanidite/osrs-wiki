@@ -1,0 +1,14 @@
+{% assign item = include.item %}
+{% assign baseurl = site.baseurl | default: "" %}
+<li class="nav-item{% if item.children.size > 0 %} has-children{% endif %} type-{{ item.type }}">
+  <a href="{{ baseurl }}{{ item.url }}">{{ item.label }}</a>
+  {% if item.children.size > 0 %}
+    <ul class="sub-nav">
+      {% for child in item.children %}
+        <li class="nav-item type-{{ child.type }}">
+          <a href="{{ baseurl }}{{ child.url }}">{{ child.label }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</li>

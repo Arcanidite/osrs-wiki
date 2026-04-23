@@ -1,6 +1,82 @@
 {
   "version": "1.0.0",
-  "source": null,
-  "categories": [],
-  "entries": []
+  "entries": [
+    {
+      "id": "attack",
+      "name": "Attack",
+      "url": "/skills/attack",
+      "category": "page",
+      "summary": "The Attack skill determines accuracy in melee combat."
+    },
+    {
+      "id": "strength",
+      "name": "Strength",
+      "url": "/skills/strength",
+      "category": "page",
+      "summary": "Strength increases the maximum melee damage a player can deal."
+    },
+    {
+      "id": "defence",
+      "name": "Defence",
+      "url": "/skills/defence",
+      "category": "page",
+      "summary": "Defence reduces the chance of being hit by opponents."
+    },
+    {
+      "id": "ranged",
+      "name": "Ranged",
+      "url": "/skills/ranged",
+      "category": "page",
+      "summary": "Ranged allows combat from a distance using projectiles."
+    },
+    {
+      "id": "magic",
+      "name": "Magic",
+      "url": "/skills/magic",
+      "category": "page",
+      "summary": "Magic enables spellcasting using runes."
+    },
+    {
+      "id": "prayer",
+      "name": "Prayer",
+      "url": "/skills/prayer",
+      "category": "page",
+      "summary": "Prayer grants temporary combat boosts and protection."
+    },
+    {
+      "id": "melee",
+      "name": "Melee",
+      "url": "/combat/melee",
+      "category": "page",
+      "summary": "Overview of melee combat mechanics."
+    },
+    {
+      "id": "bosses",
+      "name": "Bosses",
+      "url": "/combat/bosses",
+      "category": "page",
+      "summary": "List of boss monsters and their mechanics."
+    },
+    {
+      "id": "weapons",
+      "name": "Weapons",
+      "url": "/items/weapons",
+      "category": "page",
+      "summary": "Weapons available in Old School RuneScape."
+    },
+    {
+      "id": "armour",
+      "name": "Armour",
+      "url": "/items/armour",
+      "category": "page",
+      "summary": "Armour sets and their defensive stats."
+    },
+    {
+      "id": "runes",
+      "name": "Runes",
+      "url": "/items/runes",
+      "category": "page",
+      "summary": "Runes used for casting Magic spells."
+    }
+  ]
 }

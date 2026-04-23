@@ -1,0 +1,28 @@
+[
+  {
+    "id": "skills",
+    "label": "Browse Skills",
+    "options": []
+  },
+  {
+    "id": "combat",
+    "label": "Browse Combat",
+    "options": []
+  },
+  {
+    "id": "items",
+    "label": "Browse Items",
+    "options": [
+      {
+        "id": "runes",
+        "label": "Runes",
+        "url": "/items/runes"
+      }
+    ]
+  },
+  {
+    "id": "runes",
+    "label": "Runes",
+    "options": []
+  }
+]
