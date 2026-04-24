@@ -175,6 +175,14 @@ Filter bar above the route output to show/hide steps by state: all, completed, i
 
 ---
 
+## [router:step-form-reqs-ui] Req/grant editor — labeled containers with skill sprite icons
+
+In the unified step creation form (`buildStepForm`), reqs and grants each live in their own labeled container (e.g. "Requirements" / "Grants") rather than sharing a row. Each container uses a flex-row wrapping layout. Skill selects are replaced with sprite-icon pills: skill icon (from the item sprite atlas or a dedicated skills spritesheet) + level input + remove button. Visual distinction between req (red-tinted) and grant (green-tinted) pill groups makes the form self-documenting at a glance.
+
+**Status:** TODO
+
+---
+
 ## [router:dep-guard] Dependency order enforcement — block invalid reorders and deletes
 
 When the user attempts to drag-reorder a step to a position where its `reqs` would be unmet (or where a downstream step's reqs would be broken), the system rejects the drop and shows a toast — no silent invalid state. Same guard applies to step removal: if a step is a prerequisite for a later step still in the plan, the remove is blocked with a toast naming the dependent step(s). No action that creates an unresolvable dependency chain is permitted.
