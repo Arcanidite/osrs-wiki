@@ -813,6 +813,10 @@ display: flex;
   font-size: var(--fs-xs);
   color: var(--muted);
 }
+.goal-edit-actions {
+  display: flex;
+  flex-direction: column;
+}
 .goal-card-btns { display: flex; gap: 2px; flex-shrink: 0; }
 .ins-step-card { background: var(--faint); border: 1px dashed var(--border); }
 .ins-step-card .goal-card-body { cursor: pointer; }
