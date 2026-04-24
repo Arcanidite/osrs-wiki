@@ -171,7 +171,7 @@ Extraction pipeline is in place. Location data remains empty until fresh XTEA ke
 
 Filter bar above the route output to show/hide steps by state: all, completed, incomplete, focal (user-starred). Tab pane wraps the route panel so multiple plans can be open simultaneously as named tabs — switching tabs swaps the active `currentPath` + goal queue context without navigating away. Each tab is independently editable and persists its own state.
 
-**Status:** TODO
+**Status:** DONE ✓ — `planTabs[]` + `activeTabIdx`; `saveToTab`/`loadFromTab` swap full plan state on tab click; `renderTabBar` injects `.rt-tab-btn` elements; dblclick renames tab; `＋` adds new tab; filter bar with All/Incomplete/Complete/Focal buttons; `★` focal star per step; `applyStepFilter` hides rows by CSS class/data attr
 
 ---
 
@@ -179,7 +179,7 @@ Filter bar above the route output to show/hide steps by state: all, completed, i
 
 In the unified step creation form (`buildStepForm`), reqs and grants each live in their own labeled container (e.g. "Requirements" / "Grants") rather than sharing a row. Each container uses a flex-row wrapping layout. Skill selects are replaced with sprite-icon pills: skill icon (from the item sprite atlas or a dedicated skills spritesheet) + level input + remove button. Visual distinction between req (red-tinted) and grant (green-tinted) pill groups makes the form self-documenting at a glance.
 
-**Status:** TODO
+**Status:** DONE ✓ — `makeSkillPill(sk,lvl,tint)` + `readSkillPills(el)` shared by `buildStepForm` and `wireStepEditBtn`; labeled req (red) / grant (green) `.ins-skill-section` containers; letter-badge icon (no spritesheet dependency); same pill UI in inline insert and custom step editor
 
 ---
 

@@ -63,18 +63,63 @@
   };
 
   // ── Mutable plan state ────────────────────────────────────────────────────
-  // currentPath: the live ordered step list shown in the route panel.
-  // pinnedExclusions: step ids the user has manually removed — router won't re-add them.
-  // pinnedInserts: user-inserted custom steps, spliced back in after every recompute
-  //   by their anchor (the id of the step they were inserted after, or "start").
   let currentPath      = [];
   let pinnedExclusions = new Set();
-  let pinnedInserts    = [];   // [{anchor: stepId|"start", step: {...}}]
-  let manualQuestDone  = new Set(); // quest ids checked off by user
+  let pinnedInserts    = [];
+  let manualQuestDone  = new Set();
   let activePlanIdx    = -1;
   let goalQueue        = [];
   let skillNames       = [];
-  let excludedRegions  = [];   // string ids, driven by region tagbox
+  let excludedRegions  = [];
+
+  // ── Tab state ─────────────────────────────────────────────────────────────
+  let planTabs     = [];   // [{id, name, path, goalQueue, pinnedExclusions, pinnedInserts, manualQuestDone, focalSteps, activePlanIdx}]
+  let activeTabIdx = 0;
+  let activeFilter = "all";  // all | incomplete | complete | focal
+
+  function makeTab(name) {
+    return { id: Date.now() + Math.random(), name, path: [], goalQueue: [], pinnedExclusions: new Set(), pinnedInserts: [], manualQuestDone: new Set(), focalSteps: new Set(), activePlanIdx: -1 };
+  }
+  function saveToTab() {
+    const t = planTabs[activeTabIdx];
+    if (!t) return;
+    t.path = currentPath; t.goalQueue = [...goalQueue];
+    t.pinnedExclusions = pinnedExclusions; t.pinnedInserts = [...pinnedInserts];
+    t.manualQuestDone = manualQuestDone; t.activePlanIdx = activePlanIdx;
+  }
+  function loadFromTab(idx) {
+    const t = planTabs[idx];
+    if (!t) return;
+    currentPath = t.path; goalQueue = [...t.goalQueue];
+    pinnedExclusions = t.pinnedExclusions; pinnedInserts = [...t.pinnedInserts];
+    manualQuestDone = t.manualQuestDone; activePlanIdx = t.activePlanIdx;
+    activeTabIdx = idx;
+  }
+  function renderTabBar() {
+    const bar = $("rt-tab-bar");
+    if (!bar) return;
+    const newBtn = bar.querySelector(".rt-tab-new");
+    [...bar.querySelectorAll(".rt-tab-btn")].forEach((b) => b.remove());
+    planTabs.forEach((t, i) => {
+      const btn = document.createElement("button");
+      btn.className = "rt-tab-btn" + (i === activeTabIdx ? " active" : "");
+      btn.textContent = t.name || `Plan ${i + 1}`;
+      btn.title = "Double-click to rename";
+      btn.addEventListener("click", () => {
+        if (i === activeTabIdx) return;
+        saveToTab();
+        loadFromTab(i);
+        renderTabBar();
+        renderGoalQueue();
+        renderSteps(currentPath);
+      });
+      btn.addEventListener("dblclick", () => {
+        const name = window.prompt("Tab name:", t.name || `Plan ${i + 1}`);
+        if (name !== null) { planTabs[i].name = name.trim() || `Plan ${i + 1}`; renderTabBar(); }
+      });
+      bar.insertBefore(btn, newBtn);
+    });
+  }
 
   // Cached data from JSONL — available after init
   let allSteps       = [];
@@ -563,53 +608,45 @@
     const { afterIdx = -1, onCommit, onCancel } = opts;
     const li = document.createElement("li");
     li.className = "route-insert-form";
-    const skillOpts = skillNames.map((sk) =>
-      `<option value="${sk}">${skillLabel(sk)}</option>`).join("");
     li.innerHTML = `
       <div class="ins-row">
         <input class="ins-label"  type="text" placeholder="Step label">
         <input class="ins-detail" type="text" placeholder="Detail (optional)">
       </div>
-      <div class="ins-row ins-req-row" style="display:none">
-        <span class="ins-reqs"></span>
-        <button class="btn btn-ghost ins-add-req" style="font-size:var(--fs-xs)">+ req</button>
-        <span class="ins-grants-wrap">
-          <span class="ins-grants"></span>
-          <button class="btn btn-ghost ins-add-grant" style="font-size:var(--fs-xs)">+ grant</button>
-        </span>
+      <div class="ins-adv-block" style="display:none">
+        <div class="ins-skill-section ins-skill-section--req">
+          <div class="ins-skill-header">
+            <span class="ins-skill-title req">Requirements</span>
+            <button class="btn btn-ghost ins-add-req">+ add</button>
+          </div>
+          <div class="ins-skill-pills ins-reqs"></div>
+        </div>
+        <div class="ins-skill-section ins-skill-section--grant">
+          <div class="ins-skill-header">
+            <span class="ins-skill-title grant">Grants</span>
+            <button class="btn btn-ghost ins-add-grant">+ add</button>
+          </div>
+          <div class="ins-skill-pills ins-grants"></div>
+        </div>
       </div>
       <div class="ins-row">
-        <button class="btn btn-ghost ins-toggle-adv" style="font-size:var(--fs-xs)">reqs/grants ▸</button>
+        <button class="btn btn-ghost ins-toggle-adv">reqs/grants ▸</button>
         <button class="btn btn-primary ins-add">Add</button>
         <button class="btn btn-ghost ins-cancel">Cancel</button>
       </div>`;
 
     const reqWrap   = li.querySelector(".ins-reqs");
     const grantWrap = li.querySelector(".ins-grants");
-    const advRow    = li.querySelector(".ins-req-row");
+    const advBlock  = li.querySelector(".ins-adv-block");
     let advOpen = false;
-
-    const addPair = (container) => {
-      const span = document.createElement("span");
-      span.className = "sef-pair";
-      span.innerHTML = `<select class="sef-sk">${skillOpts}</select><input type="number" class="sef-lvl" min="1" max="99" value="1"><button class="btn btn-ghost sef-rm">✕</button>`;
-      span.querySelector(".sef-rm").addEventListener("click", () => span.remove());
-      container.appendChild(span);
-    };
 
     li.querySelector(".ins-toggle-adv").addEventListener("click", () => {
       advOpen = !advOpen;
-      advRow.style.display = advOpen ? "flex" : "none";
+      advBlock.style.display = advOpen ? "flex" : "none";
       li.querySelector(".ins-toggle-adv").textContent = advOpen ? "reqs/grants ▾" : "reqs/grants ▸";
     });
-    li.querySelector(".ins-add-req").addEventListener("click",   () => addPair(reqWrap));
-    li.querySelector(".ins-add-grant").addEventListener("click", () => addPair(grantWrap));
-
-    const readPairs = (el) => Object.fromEntries(
-      [...el.querySelectorAll(".sef-pair")].map((p) => [
-        p.querySelector(".sef-sk").value, +p.querySelector(".sef-lvl").value,
-      ])
-    );
+    li.querySelector(".ins-add-req").addEventListener("click",   () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
+    li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
 
     li.querySelector(".ins-add").addEventListener("click", () => {
       const label = li.querySelector(".ins-label").value.trim();
@@ -619,8 +656,8 @@
         id:         `custom-${Date.now()}`,
         label,
         detail:     li.querySelector(".ins-detail").value.trim(),
-        reqs:       { skills: readPairs(reqWrap) },
-        grants:     readPairs(grantWrap),
+        reqs:       { skills: readSkillPills(reqWrap) },
+        grants:     readSkillPills(grantWrap),
         _custom:    true,
         _goalLabel: anchorStep?._goalLabel ?? "",
         _reqs:      {},
@@ -768,14 +805,17 @@
       return valid;
     });
 
+    const tab = planTabs[activeTabIdx];
     path.forEach((step, i) => {
       const isQuest   = (step.tags ?? []).includes("quest");
       const questDone = manualQuestDone.has(step.id);
       const stepDone  = questDone;
+      const isFocal   = tab?.focalSteps?.has(step.id);
       const valid     = seqValid[i];
       const grantSkills = Object.keys(normalizeReqs(step.grants).skills ?? {}).join(" ");
       const grantAttr   = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
-      rows.push(`<li class="route-step${stepDone ? " step-done quest-done" : ""}${valid ? "" : " step-seq-invalid"}" data-step-idx="${i}" draggable="true"${grantAttr}>
+      const focalAttr   = isFocal ? ' data-focal="1"' : "";
+      rows.push(`<li class="route-step${stepDone ? " step-done quest-done" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="true"${grantAttr}${focalAttr}>
         <span class="step-drag-handle" title="Drag to reorder">⠿</span>
         <label class="step-num-wrap">
           <input type="checkbox" class="step-done-cb" data-step-id="${escHtml(step.id)}"${isQuest ? ' data-is-quest="1"' : ""}${stepDone ? " checked" : ""}>
@@ -797,6 +837,7 @@
           ${constraintBadges(step.reqs)}
         </span>
         <span class="step-actions">
+          <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           <button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>
         </span>
@@ -814,7 +855,59 @@
     wireStepEditBtn(stepsEl);
     wireDragSort(stepsEl);
     wireReqScroll(stepsEl);
+    wireFocalBtns(stepsEl);
+    applyStepFilter(stepsEl, activeFilter);
+    const fb = $("rt-filter-bar");
+    if (fb) fb.hidden = !path.length;
     renderRouteBar(path);
+  }
+
+  function applyStepFilter(stepsEl, filter) {
+    stepsEl.querySelectorAll(".route-step[data-step-idx]").forEach((li) => {
+      const done  = li.classList.contains("step-done");
+      const focal = li.dataset.focal === "1";
+      li.hidden = filter === "complete"   ? !done
+                : filter === "incomplete" ? done
+                : filter === "focal"      ? !focal
+                : false;
+    });
+  }
+
+  function wireFilterBar() {
+    const bar = $("rt-filter-bar");
+    if (!bar) return;
+    bar.querySelectorAll(".rt-filter-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        bar.querySelectorAll(".rt-filter-btn").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeFilter = btn.dataset.filter;
+        applyStepFilter(els.steps(), activeFilter);
+      });
+    });
+  }
+
+  function wireFocalBtns(stepsEl) {
+    const tab = planTabs[activeTabIdx];
+    stepsEl.querySelectorAll(".step-focal-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const idx  = +btn.dataset.stepIdx;
+        const step = currentPath[idx];
+        if (!step || !tab) return;
+        const li = btn.closest(".route-step");
+        if (tab.focalSteps.has(step.id)) {
+          tab.focalSteps.delete(step.id);
+          btn.classList.remove("focal-on");
+          li.classList.remove("step-focal");
+          delete li.dataset.focal;
+        } else {
+          tab.focalSteps.add(step.id);
+          btn.classList.add("focal-on");
+          li.classList.add("step-focal");
+          li.dataset.focal = "1";
+        }
+        if (activeFilter === "focal") applyStepFilter(stepsEl, activeFilter);
+      });
+    });
   }
 
   function wireReqScroll(stepsEl) {
@@ -938,6 +1031,38 @@
     });
   }
 
+  function makeSkillPill(sk, lvl, tint) {
+    const pill = document.createElement("span");
+    pill.className = `ins-skill-pill ins-skill-pill--${tint}`;
+    const icon = document.createElement("span");
+    icon.className = "ins-skill-icon";
+    icon.textContent = sk.charAt(0).toUpperCase();
+    const sel = document.createElement("select");
+    sel.className = "ins-pill-sk";
+    skillNames.forEach((s) => {
+      const opt = document.createElement("option");
+      opt.value = s; opt.textContent = skillLabel(s);
+      if (s === sk) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    sel.addEventListener("change", () => { icon.textContent = sel.value.charAt(0).toUpperCase(); });
+    const input = document.createElement("input");
+    input.type = "number"; input.className = "ins-pill-lvl"; input.min = 1; input.max = 99; input.value = lvl ?? 1;
+    const rm = document.createElement("button");
+    rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
+    rm.addEventListener("click", () => pill.remove());
+    pill.append(icon, sel, input, rm);
+    return pill;
+  }
+
+  function readSkillPills(container) {
+    return Object.fromEntries(
+      [...container.querySelectorAll(".ins-skill-pill")].map((p) => [
+        p.querySelector(".ins-pill-sk").value, +p.querySelector(".ins-pill-lvl").value,
+      ])
+    );
+  }
+
   function wireStepEditBtn(container) {
     container.querySelectorAll(".step-edit-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -946,12 +1071,8 @@
         if (!step?._custom) return;
         const li = btn.closest(".route-step");
 
-        const skillOpts = skillNames.map((sk) =>
-          `<option value="${sk}">${skillLabel(sk)}</option>`).join("");
         const reqs   = normalizeReqs(step.reqs);
         const grants = step.grants ?? {};
-        const reqPairs   = Object.entries(reqs.skills   ?? {});
-        const grantPairs = Object.entries(grants);
 
         const form = document.createElement("div");
         form.className = "step-edit-form";
@@ -960,53 +1081,39 @@
             <input class="sef-label"  type="text" value="${escHtml(step.label)}"       placeholder="Label">
             <input class="sef-detail" type="text" value="${escHtml(step.detail ?? "")}" placeholder="Detail">
           </div>
-          <div class="sef-section">Reqs
-            <div class="sef-reqs">${reqPairs.map(([,lvl]) =>
-              `<span class="sef-pair"><select class="sef-sk">${skillOpts}</select><input type="number" class="sef-lvl" min="1" max="99" value="${lvl}"><button class="btn btn-ghost sef-rm">✕</button></span>`
-            ).join("")}</div>
-            <button class="btn btn-ghost sef-add-req">+ req</button>
+          <div class="ins-skill-section ins-skill-section--req">
+            <div class="ins-skill-header">
+              <span class="ins-skill-title req">Requirements</span>
+              <button class="btn btn-ghost sef-add-req">+ add</button>
+            </div>
+            <div class="ins-skill-pills sef-reqs"></div>
           </div>
-          <div class="sef-section">Grants
-            <div class="sef-grants">${grantPairs.map(([,lvl]) =>
-              `<span class="sef-pair"><select class="sef-sk">${skillOpts}</select><input type="number" class="sef-lvl" min="1" max="99" value="${lvl}"><button class="btn btn-ghost sef-rm">✕</button></span>`
-            ).join("")}</div>
-            <button class="btn btn-ghost sef-add-grant">+ grant</button>
+          <div class="ins-skill-section ins-skill-section--grant">
+            <div class="ins-skill-header">
+              <span class="ins-skill-title grant">Grants</span>
+              <button class="btn btn-ghost sef-add-grant">+ add</button>
+            </div>
+            <div class="ins-skill-pills sef-grants"></div>
           </div>
           <div class="sef-actions">
             <button class="btn btn-primary sef-commit">Save</button>
             <button class="btn btn-ghost sef-cancel">Cancel</button>
           </div>`;
 
-        // Pre-select skill values
-        const pairEls = (sel) => form.querySelectorAll(sel + " .sef-pair");
-        const setSk = (pairEl, sk) => { const s = pairEl.querySelector(".sef-sk"); if (s) s.value = sk; };
-        pairEls(".sef-reqs").forEach((p, i)   => setSk(p, reqPairs[i]?.[0]   ?? skillNames[0]));
-        pairEls(".sef-grants").forEach((p, i) => setSk(p, grantPairs[i]?.[0] ?? skillNames[0]));
+        const reqWrap   = form.querySelector(".sef-reqs");
+        const grantWrap = form.querySelector(".sef-grants");
+        Object.entries(reqs.skills ?? {}).forEach(([sk, lvl]) => reqWrap.appendChild(makeSkillPill(sk, lvl, "req")));
+        Object.entries(grants).forEach(([sk, lvl]) => grantWrap.appendChild(makeSkillPill(sk, lvl, "grant")));
 
-        const addRow = (container) => {
-          const span = document.createElement("span");
-          span.className = "sef-pair";
-          span.innerHTML = `<select class="sef-sk">${skillOpts}</select><input type="number" class="sef-lvl" min="1" max="99" value="1"><button class="btn btn-ghost sef-rm">✕</button>`;
-          span.querySelector(".sef-rm").addEventListener("click", () => span.remove());
-          container.appendChild(span);
-        };
-
-        form.querySelectorAll(".sef-rm").forEach((b) => b.addEventListener("click", () => b.closest(".sef-pair").remove()));
-        form.querySelector(".sef-add-req").addEventListener("click",   () => addRow(form.querySelector(".sef-reqs")));
-        form.querySelector(".sef-add-grant").addEventListener("click", () => addRow(form.querySelector(".sef-grants")));
-
-        const readPairs = (sel) => Object.fromEntries(
-          [...form.querySelectorAll(sel + " .sef-pair")].map((p) => [
-            p.querySelector(".sef-sk").value, +p.querySelector(".sef-lvl").value,
-          ])
-        );
+        form.querySelector(".sef-add-req").addEventListener("click",   () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
+        form.querySelector(".sef-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
 
         form.querySelector(".sef-commit").addEventListener("click", () => {
           const label  = form.querySelector(".sef-label").value.trim()  || step.label;
           const detail = form.querySelector(".sef-detail").value.trim() || "";
           currentPath[idx] = { ...step, label, detail,
-            reqs:   { skills: readPairs(".sef-reqs") },
-            grants: readPairs(".sef-grants") };
+            reqs:   { skills: readSkillPills(reqWrap) },
+            grants: readSkillPills(grantWrap) };
           if (window._routerLastPath) window._routerLastPath.path = currentPath;
           renderSteps(currentPath);
         });
@@ -1161,6 +1268,21 @@
     buildRegionTagbox(allRegions);
     renderStepBank();
     $("rt-bank-filter")?.addEventListener("input", renderStepBank);
+
+    // ── Tabs bootstrap ────────────────────────────────────────────────────────
+    planTabs = [makeTab("Plan 1")];
+    activeTabIdx = 0;
+    renderTabBar();
+    wireFilterBar();
+    $("rt-tab-new")?.addEventListener("click", () => {
+      saveToTab();
+      planTabs.push(makeTab(`Plan ${planTabs.length + 1}`));
+      loadFromTab(planTabs.length - 1);
+      goalQueue = []; currentPath = []; pinnedExclusions = new Set(); pinnedInserts = []; manualQuestDone = new Set(); activePlanIdx = -1;
+      renderTabBar();
+      renderGoalQueue();
+      renderSteps([]);
+    });
 
     const saved = store.profile();
     if (Object.keys(saved).length) applyProfile(saved, allRegions);

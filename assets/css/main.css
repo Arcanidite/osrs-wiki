@@ -522,16 +522,29 @@ body {
 .route-steps:has(.step-badge[data-req-skill="construction"]:hover) .route-step[data-grants-skill~="construction"] { box-shadow: inset 0 0 0 2px #f59e0b; }
 .route-steps:has(.step-badge[data-req-skill="farming"]:hover) .route-step[data-grants-skill~="farming"] { box-shadow: inset 0 0 0 2px #f59e0b; }
 
-/* Custom step edit form */
+/* Custom step edit form + unified insert form skill sections */
 .step-edit-form { padding: var(--sp-h); border-bottom: 1px dashed var(--accent); display: flex; flex-direction: column; gap: var(--sp-h); }
 .sef-row { display: flex; gap: var(--sp-h); }
 .sef-row input { flex: 1; font-size: var(--fs-xs); padding: 2px var(--sp-q); border: 1px solid var(--border); border-radius: var(--radius); }
-.sef-section { font-size: var(--fs-xs); font-weight: 600; display: flex; flex-direction: column; gap: var(--sp-q); }
-.sef-reqs, .sef-grants { display: flex; flex-wrap: wrap; gap: var(--sp-q); }
-.sef-pair { display: flex; align-items: center; gap: 2px; }
-.sef-pair select, .sef-pair input { font-size: var(--fs-xs); padding: 1px 4px; border: 1px solid var(--border); border-radius: var(--radius); }
-.sef-pair input { width: 3rem; }
 .sef-actions { display: flex; gap: var(--sp-q); }
+.ins-adv-block { display: flex; flex-direction: column; gap: var(--sp-h); padding: var(--sp-q) 0; }
+.ins-skill-section { display: flex; flex-direction: column; gap: var(--sp-q); padding: var(--sp-q) var(--sp-h); border-radius: var(--radius); }
+.ins-skill-section--req   { background: #fff1f2; border: 1px solid #fecdd3; }
+.ins-skill-section--grant { background: #f0fdf4; border: 1px solid #bbf7d0; }
+.ins-skill-header { display: flex; align-items: center; gap: var(--sp-h); }
+.ins-skill-title { font-size: var(--fs-xs); font-weight: 700; }
+.ins-skill-title.req   { color: #be123c; }
+.ins-skill-title.grant { color: #15803d; }
+.ins-skill-pills { display: flex; flex-wrap: wrap; gap: var(--sp-q); margin-top: 2px; }
+.ins-skill-pill { display: flex; align-items: center; gap: 3px; padding: 2px 4px; border-radius: var(--radius); }
+.ins-skill-pill--req   { background: #ffe4e6; }
+.ins-skill-pill--grant { background: #dcfce7; }
+.ins-skill-icon { width: 1.1rem; height: 1.1rem; border-radius: 50%; font-size: 0.6rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.ins-skill-pill--req   .ins-skill-icon { background: #be123c; color: #fff; }
+.ins-skill-pill--grant .ins-skill-icon { background: #15803d; color: #fff; }
+.ins-pill-sk  { font-size: var(--fs-xs); padding: 1px 2px; border: 1px solid var(--border); border-radius: var(--radius); max-width: 5rem; }
+.ins-pill-lvl { width: 2.8rem; font-size: var(--fs-xs); padding: 1px 4px; border: 1px solid var(--border); border-radius: var(--radius); }
+.ins-pill-rm  { font-size: 0.6rem; padding: 0 3px; color: var(--muted); opacity: 0.6; }
 
 /* Step bank */
 #rt-bank summary { font-size: var(--fs-sm); font-weight: 600; }
@@ -566,6 +579,44 @@ body {
   border-color: var(--border); background: var(--bg);
   color: var(--ink); outline: none;
 }
+
+/* ── Plan tab bar ────────────────────────────────────────────────────────── */
+.rt-tab-bar {
+  display: flex; align-items: center; gap: var(--sp-q);
+  border-bottom: 2px solid var(--border); padding-bottom: 2px;
+  margin-bottom: var(--sp-h); flex-wrap: wrap;
+}
+.rt-tab-btn {
+  font-size: var(--fs-xs); padding: 2px var(--sp-h);
+  border-radius: var(--radius) var(--radius) 0 0;
+  border: 1px solid transparent; border-bottom: none;
+  color: var(--muted); background: none; cursor: pointer;
+  transition: color 0.1s, background 0.1s;
+}
+.rt-tab-btn:hover { color: var(--ink); background: var(--bg); }
+.rt-tab-btn.active { color: var(--ink); background: var(--bg); border-color: var(--border); font-weight: 600; }
+.rt-tab-new { font-size: var(--fs-sm); padding: 0 var(--sp-h); color: var(--muted); line-height: 1.6; }
+.rt-tab-new:hover { color: var(--ink); }
+
+/* ── Step filter bar ─────────────────────────────────────────────────────── */
+.rt-filter-bar {
+  display: flex; gap: var(--sp-q); margin-bottom: var(--sp-h);
+  padding: var(--sp-q) 0; border-bottom: 1px solid var(--border);
+}
+.rt-filter-btn {
+  font-size: var(--fs-xs); padding: 2px var(--sp-h);
+  border-radius: var(--radius); border: 1px solid var(--border);
+  background: none; color: var(--muted); cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+.rt-filter-btn:hover { background: var(--bg); color: var(--ink); }
+.rt-filter-btn.active { background: var(--dark); color: #fff; border-color: var(--dark); }
+
+/* ── Focal star ──────────────────────────────────────────────────────────── */
+.step-focal-btn { color: var(--muted); opacity: 0; transition: opacity 0.1s, color 0.1s; }
+.route-step:hover .step-focal-btn { opacity: 0.5; }
+.step-focal-btn.focal-on { opacity: 1 !important; color: #f59e0b; }
+.route-step.step-focal { background: #fffbeb; }
 
 /* ── Route bar (plan name + crud above route) ────────────────────────────── */
 .route-bar {
