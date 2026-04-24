@@ -431,6 +431,7 @@ body {
 .step-drag-handle {
   cursor: grab; color: var(--muted); font-size: 1rem; line-height: 2rem;
   opacity: 0; transition: opacity 0.1s; user-select: none;
+  height: 100%; padding: var(--sp-q);
 }
 .route-step:hover .step-drag-handle { opacity: 1; }
 .route-step.drag-ghost { opacity: 0.4; }
