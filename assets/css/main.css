@@ -717,6 +717,7 @@ body {
 .rtb-input {
   border: none; outline: none; flex: 1; min-width: 6rem;
   font-size: var(--fs-sm); background: transparent; padding: 0;
+  justify-content: space-between; gap: var(--sp-q);
 }
 .rtb-dropdown {
   position: absolute; top: 100%; left: 0; right: 0; z-index: 20;
