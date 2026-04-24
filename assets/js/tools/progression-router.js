@@ -426,8 +426,13 @@
 
   function applyGrants(grants, skills) {
     const next = { ...skills };
-    Object.entries(grants ?? {}).forEach(([sk, lvl]) => { if (lvl > (next[sk] ?? 1)) next[sk] = lvl; });
+    Object.entries(grants ?? {}).forEach(([sk, lvl]) => { if (lvl !== true && lvl > (next[sk] ?? 1)) next[sk] = lvl; });
     return next;
+  }
+
+  function applyTagGrants(grants, tags) {
+    Object.entries(grants ?? {}).forEach(([k, v]) => { if (v === true) tags.add(k); });
+    return tags;
   }
 
   function costFor(step, style) {
@@ -872,7 +877,7 @@
         <label class="step-num-wrap">
           <input type="checkbox" class="step-done-cb" data-step-id="${escHtml(step.id)}"${isQuest ? ' data-is-quest="1"' : ""}${stepDone ? " checked" : ""}>
           <span class="step-num">${i + 1}</span>
-          <span class="step-done-icon" aria-hidden="true">✓</span>
+          <span class="step-done-icon" aria-hidden="true" data-state="incomplete">○</span>
         </label>
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
@@ -1071,11 +1076,14 @@
       cb.addEventListener("change", () => {
         const { stepId, isQuest } = cb.dataset;
         const li = cb.closest(".route-step");
+        const icon = li.querySelector(".step-done-icon");
         if (cb.checked) {
           li.classList.add("step-done");
+          if (icon) { icon.dataset.state = "complete"; icon.textContent = "✓"; }
           if (isQuest) { manualQuestDone.add(stepId); li.classList.add("quest-done"); }
         } else {
           li.classList.remove("step-done");
+          if (icon) { icon.dataset.state = "incomplete"; icon.textContent = "○"; }
           if (isQuest) { manualQuestDone.delete(stepId); li.classList.remove("quest-done"); }
         }
         if (isQuest) recompute();
