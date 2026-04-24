@@ -589,7 +589,7 @@ body {
   padding: 2px var(--sp-q);
   border: 1px solid var(--border); border-radius: var(--radius);
   background: transparent; color: var(--muted);
-  resize: vertical; overflow: hidden;
+  resize: vertical; overflow: hidden; flex-grow: 1;
   transition: border-color 0.15s, background 0.15s; max-height: 5rem;
 }
 .step-note:focus, .step-note:not(:placeholder-shown) {
