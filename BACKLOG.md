@@ -217,6 +217,16 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 ---
 
+## [router:insert-prereq-inject] Auto-inject synthetic prereq steps on custom insert
+
+**What exists:** When a custom step is inserted with `reqs.skills` entries, the seq-dot may go red if the cumulative skill state at that position doesn't satisfy the req. No remediation happens automatically.
+
+**What it should do:** On commit of a custom insert, simulate cumulative skill state at `afterIdx`. For each req skill not yet satisfied at that position, auto-insert a synthetic prereq step immediately before the inserted step — `{ id: "custom-prereq-${skill}-${ts}", label: "Train ${skill} to ${level}", grants: { [skill]: level }, _custom: true }`. Each synthetic step is also pushed to `pinnedInserts` with the same anchor chain so recomputes respect it. The user can edit or remove synthetic steps like any other custom step. No manual intervention needed to fix seq-dot red.
+
+**Status:** TODO
+
+---
+
 ## Completed
 
 - `[router:step-grid-layout]` — `.route-step` grid `2rem 1fr auto auto`; `step-actions` 4th column for remove/edit buttons ✓ (pending commit)
