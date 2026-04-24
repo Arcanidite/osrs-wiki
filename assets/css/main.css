@@ -451,7 +451,7 @@ body {
 .route-step:last-child { border-bottom: none; }
 .route-step[hidden] { display: none; }
 .step-num {
-  height: 2rem;    border-radius: var(--sp-h);    background: var(--dark);
+  height: 2rem;    border-radius: var(--sp-q);    background: var(--dark);
   color: #fff;    font-size: var(--fs-xs);    font-weight: 700;
   display: flex;    align-items: center;    justify-content: center;
   flex-shrink: 0;
