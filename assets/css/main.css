@@ -421,12 +421,19 @@ body {
 .route-steps { list-style: none; }
 .route-step {
   display: grid;
-  grid-template-columns: auto auto 1fr auto auto 0.25rem;
+  grid-template-columns: auto auto 1fr min-content auto 0.25rem;
   gap: var(--sp-h);
   align-items: start;
   padding: var(--sp-h) 0;
   border-bottom: 1px solid var(--border);
   font-size: var(--fs-sm);
+}
+.route-step .step-meta{
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: end;
+  flex-wrap: wrap;
 }
 .step-drag-handle {
   cursor: grab; color: var(--muted); font-size: 1rem; line-height: 2rem;
