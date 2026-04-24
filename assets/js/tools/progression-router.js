@@ -100,11 +100,14 @@
     if (!bar) return;
     const newBtn = bar.querySelector(".rt-tab-new");
     [...bar.querySelectorAll(".rt-tab-btn")].forEach((b) => b.remove());
+    let dragFrom = -1;
     planTabs.forEach((t, i) => {
       const btn = document.createElement("button");
       btn.className = "rt-tab-btn" + (i === activeTabIdx ? " active" : "");
       btn.textContent = t.name || `Plan ${i + 1}`;
       btn.title = "Double-click to rename";
+      btn.draggable = true;
+      btn.dataset.tabIdx = i;
       btn.addEventListener("click", () => {
         if (i === activeTabIdx) return;
         saveToTab();
@@ -127,25 +130,16 @@
           }
         }
       });
-      btn.draggable = true;
-      btn.dataset.tabIdx = i;
-      btn.addEventListener("dragstart", (e) => {
-        e.dataTransfer.effectAllowed = "move";
-        e.dataTransfer.setData("text/plain", String(i));
-        btn.classList.add("tab-dragging");
-      });
-      btn.addEventListener("dragend", () => btn.classList.remove("tab-dragging"));
-      btn.addEventListener("dragover", (e) => { e.preventDefault(); e.dataTransfer.dropEffect = "move"; });
-      btn.addEventListener("drop", (e) => {
-        e.preventDefault();
-        const fromIdx = +e.dataTransfer.getData("text/plain");
-        const toIdx   = i;
-        if (fromIdx === toIdx) return;
-        const moved = planTabs.splice(fromIdx, 1)[0];
-        planTabs.splice(toIdx, 0, moved);
-        if (activeTabIdx === fromIdx) activeTabIdx = toIdx;
-        else if (fromIdx < activeTabIdx && toIdx >= activeTabIdx) activeTabIdx--;
-        else if (fromIdx > activeTabIdx && toIdx <= activeTabIdx) activeTabIdx++;
+      btn.addEventListener("dragstart", () => { dragFrom = i; btn.classList.add("tab-drag-ghost"); });
+      btn.addEventListener("dragend",   () => btn.classList.remove("tab-drag-ghost"));
+      btn.addEventListener("dragover",  (e) => e.preventDefault());
+      btn.addEventListener("drop", () => {
+        if (dragFrom < 0 || dragFrom === i) { dragFrom = -1; return; }
+        const activeId = planTabs[activeTabIdx]?.id;
+        const moved = planTabs.splice(dragFrom, 1)[0];
+        planTabs.splice(i, 0, moved);
+        activeTabIdx = planTabs.findIndex((t) => t.id === activeId);
+        dragFrom = -1;
         renderTabBar();
       });
       bar.insertBefore(btn, newBtn);
