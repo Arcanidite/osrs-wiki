@@ -742,10 +742,9 @@ display: flex;
 }
 .rtb-tags { display: contents; }
 .rtb-tag {
-  display: flex; align-items: center; gap: 2px;
+  display: flex; align-items: center; gap: var(--sp-q);
   background: var(--gold); color: #fff;
-  border-radius: var(--sp-q);
-  padding: 1px var(--sp-h);
+  border-radius: var(--sp-q); padding: 1px var(--sp-h);
   font-size: var(--fs-xs); font-weight: 600;
 }
 .rtb-tag-rm {
