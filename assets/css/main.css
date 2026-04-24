@@ -383,12 +383,12 @@ body {
 
 /* Skill grid: 3-col compact, abbreviated labels */
 #rt-skill-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--sp-q) var(--sp-h);
-  margin-bottom: var(--sp-h);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--sp-q) var(--sp-h);
+    margin-bottom: var(--sp-h);
 }
-#rt-skill-grid .form-group { margin-bottom: 0; gap: 1px; }
+#rt-skill-grid .form-group { margin-bottom: 0; gap: var(--sp-h); display: contents; }
 #rt-skill-grid label {
   font-size: 0.65rem;
   font-weight: 600;
@@ -398,7 +398,7 @@ body {
 }
 #rt-skill-grid input[type=number] {
   padding: 2px var(--sp-q);
-  font-size: var(--fs-xs);
+  font-size: var(--fs);
   text-align: center;
   width: 100%;
 }
