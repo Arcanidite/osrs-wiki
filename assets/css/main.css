@@ -560,20 +560,47 @@ body {
 }
 .plan-rename-input:focus { outline: none; }
 
-.region-exclude-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-q);
-  margin-top: var(--sp-q);
+/* ── Region tag combobox ─────────────────────────────────────────────────── */
+.region-tagbox {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-q) var(--sp-h);
+  display: flex; flex-wrap: wrap; gap: var(--sp-q);
+  background: var(--card);
+  min-height: 2rem;
 }
-.region-exclude-item {
-  display: flex;
-  align-items: center;
-  gap: var(--sp-h);
-  font-size: var(--fs-sm);
-  cursor: pointer;
+.rtb-tags { display: contents; }
+.rtb-tag {
+  display: flex; align-items: center; gap: 2px;
+  background: var(--gold); color: #fff;
+  border-radius: var(--sp-q);
+  padding: 1px var(--sp-h);
+  font-size: var(--fs-xs); font-weight: 600;
 }
-.region-exclude-item input { cursor: pointer; }
+.rtb-tag-rm {
+  background: none; border: none; cursor: pointer;
+  color: rgba(255,255,255,0.8); font-size: 0.6rem; padding: 0 1px;
+  line-height: 1;
+}
+.rtb-tag-rm:hover { color: #fff; }
+.rtb-input {
+  border: none; outline: none; flex: 1; min-width: 6rem;
+  font-size: var(--fs-sm); background: transparent; padding: 0;
+}
+.rtb-dropdown {
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 20;
+  background: var(--card); border: 1px solid var(--border);
+  border-top: none; border-radius: 0 0 var(--radius) var(--radius);
+  list-style: none; margin: 0; padding: 0;
+  max-height: 180px; overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,.08);
+}
+.rtb-option {
+  padding: var(--sp-q) var(--sp-h);
+  font-size: var(--fs-sm); cursor: pointer;
+}
+.rtb-option:hover { background: var(--faint); }
 
 .plan-saved {
   font-size: var(--fs-xs); color: var(--muted);
@@ -599,16 +626,6 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   cursor: default;
-}
-.goal-card.dragging { opacity: 0.4; }
-.goal-card.drag-over { border-color: var(--gold); box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold) 30%, transparent); }
-.goal-card-handle {
-  cursor: grab;
-  color: var(--muted);
-  font-size: var(--fs-lg);
-  line-height: 1;
-  user-select: none;
-  flex-shrink: 0;
 }
 .goal-card-body {
   flex: 1;
@@ -648,36 +665,6 @@ body {
 .ge-req-row { display: flex; gap: var(--sp-q); align-items: center; }
 .ge-req-row select, .ge-req-row input { font-size: var(--fs-xs); padding: 1px var(--sp-q); border: 1px solid var(--border); border-radius: var(--radius); }
 .goal-edit-actions { display: flex; gap: var(--sp-q); justify-content: flex-end; }
-.goal-adder {
-  display: flex;
-  gap: var(--sp-h);
-  margin-bottom: var(--sp-h);
-}
-.goal-adder select { flex: 1; }
-.goal-custom-form {
-  margin-top: var(--sp-h);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: var(--sp-h);
-}
-.goal-custom-form summary {
-  cursor: pointer;
-  font-size: var(--fs-sm);
-  font-weight: 600;
-  list-style: none;
-}
-.goal-custom-form summary::before { content: "+ "; color: var(--gold); }
-.goal-custom-form[open] summary::before { content: "– "; }
-.cg-req-list, .cg-req-row {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-q);
-}
-.cg-req-row {
-  flex-direction: row;
-  align-items: center;
-  gap: var(--sp-h);
-}
 .route-goal-divider {
   list-style: none;
   display: flex;

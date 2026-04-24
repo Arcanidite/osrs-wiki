@@ -71,6 +71,7 @@
   let activePlanIdx    = -1;
   let goalQueue        = [];
   let skillNames       = [];
+  let excludedRegions  = [];   // string ids, driven by region tagbox
 
   // Cached data from JSONL — available after init
   let allSteps       = [];
@@ -81,7 +82,7 @@
   // ── DOM ───────────────────────────────────────────────────────────────────
   const $ = (id) => document.getElementById(id);
   const els = {
-    inputs:    () => document.querySelectorAll("#router-inputs input, #router-inputs select"),
+    inputs:    () => document.querySelectorAll("#router-inputs input[id^='rt-'], #router-inputs select"),
     skillInput:(sk) => $(`rt-${sk}`),
     skillGrid: () => $("rt-skill-grid"),
     style:     () => $("rt-style"),
@@ -97,13 +98,6 @@
     noPlans:   () => $("rt-no-plans"),
     goalQueue: () => $("rt-goal-queue"),
     noGoals:   () => $("rt-no-goals"),
-    presetSel: () => $("rt-preset-select"),
-    addPreset: () => $("rt-add-preset"),
-    cgLabel:   () => $("cg-label"),
-    cgTerminal:() => $("cg-terminal"),
-    cgReqs:    () => $("cg-reqs"),
-    cgAddReq:  () => $("cg-add-req"),
-    cgSubmit:  () => $("cg-submit"),
     routeBar:  () => $("rt-route-bar"),
   };
 
@@ -133,20 +127,68 @@
       </div>`).join("");
   }
 
-  function buildRegionExcludes(regions) {
-    const c = $("rt-region-excludes");
-    if (!c) return;
-    c.innerHTML = regions.map((r) => `
-      <label class="region-exclude-item">
-        <input type="checkbox" value="region-${r.id}"> ${r.label}
-      </label>`).join("");
+  // ── Region tag combobox ───────────────────────────────────────────────────
+  function buildRegionTagbox(regions) {
+    const input    = $("rt-region-input");
+    const dropdown = $("rt-region-dropdown");
+    if (!input || !dropdown) return;
+
+    const showDropdown = (q) => {
+      const hits = regions.filter((r) =>
+        r.label.toLowerCase().includes(q) && !excludedRegions.includes(r.id)
+      );
+      if (!hits.length) { dropdown.hidden = true; return; }
+      dropdown.innerHTML = hits.map((r) =>
+        `<li class="rtb-option" data-id="${r.id}">${escHtml(r.label)}</li>`
+      ).join("");
+      dropdown.hidden = false;
+      dropdown.querySelectorAll(".rtb-option").forEach((li) => {
+        li.addEventListener("mousedown", (e) => {
+          e.preventDefault();
+          addRegionTag(r => r.id === li.dataset.id, regions);
+          input.value = "";
+          dropdown.hidden = true;
+        });
+      });
+    };
+
+    input.addEventListener("input", () => showDropdown(input.value.trim().toLowerCase()));
+    input.addEventListener("blur",  () => setTimeout(() => { dropdown.hidden = true; }, 150));
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        const first = dropdown.querySelector(".rtb-option");
+        if (first) { addRegionTag((r) => r.id === first.dataset.id, regions); input.value = ""; dropdown.hidden = true; }
+      } else if (e.key === "Escape") {
+        dropdown.hidden = true;
+      }
+    });
   }
 
-  function buildPresetSelect(presets) {
-    const sel = els.presetSel();
-    if (!sel) return;
-    sel.innerHTML = `<option value="">Add preset goal…</option>` +
-      presets.map((p) => `<option value="${p.id}">${escHtml(p.label)}</option>`).join("");
+  function addRegionTag(pred, regions) {
+    const r = regions.find(pred);
+    if (!r || excludedRegions.includes(r.id)) return;
+    excludedRegions.push(r.id);
+    renderRegionTags(regions);
+    store.saveProfile(readProfile());
+    if (currentPath.length) recompute();
+  }
+
+  function renderRegionTags(regions) {
+    const container = $("rt-region-tags");
+    if (!container) return;
+    container.innerHTML = excludedRegions.map((id) => {
+      const r = regions.find((x) => x.id === id);
+      return `<span class="rtb-tag">${escHtml(r?.label ?? id)}<button class="rtb-tag-rm" data-id="${id}" aria-label="Remove">✕</button></span>`;
+    }).join("");
+    container.querySelectorAll(".rtb-tag-rm").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        excludedRegions = excludedRegions.filter((id) => id !== btn.dataset.id);
+        renderRegionTags(regions);
+        store.saveProfile(readProfile());
+        if (currentPath.length) recompute();
+      });
+    });
   }
 
   function readProfile() {
@@ -156,20 +198,19 @@
         return acc;
       }, {}),
       style:          els.style()?.value ?? "balanced",
-      excludeRegions: Array.from(document.querySelectorAll("#rt-region-excludes input:checked")).map((el) => el.value),
+      excludeRegions: excludedRegions.map((id) => "region-" + id),
     };
   }
 
-  function applyProfile(p) {
+  function applyProfile(p, regions) {
     skillNames.forEach((sk) => {
       const el = els.skillInput(sk);
       if (el && p.skills?.[sk]) el.value = p.skills[sk];
     });
     if (p.style && els.style()) els.style().value = p.style;
     if (p.excludeRegions?.length) {
-      document.querySelectorAll("#rt-region-excludes input").forEach((el) => {
-        el.checked = p.excludeRegions.includes(el.value);
-      });
+      excludedRegions = p.excludeRegions.map((v) => v.replace(/^region-/, ""));
+      if (regions?.length) renderRegionTags(regions);
     }
   }
 
@@ -189,10 +230,8 @@
     goalQueue.forEach((goal, i) => {
       const li = document.createElement("li");
       li.className = "goal-card";
-      li.draggable = true;
       li.dataset.idx = i;
       li.innerHTML = `
-        <span class="goal-card-handle" aria-hidden="true">⠿</span>
         <span class="goal-card-body">
           <span class="goal-card-label">${escHtml(goal.label)}</span>
           <span class="goal-card-reqs">${reqsSummary(goal.reqs)}</span>
@@ -203,8 +242,6 @@
         </span>`;
       ul.appendChild(li);
     });
-
-    wireDrag(ul);
 
     ul.querySelectorAll(".goal-card-edit").forEach((btn) => {
       btn.addEventListener("click", () => openGoalEditor(+btn.dataset.idx));
@@ -283,69 +320,6 @@
     container.appendChild(row);
   }
 
-  // ── Drag-to-reorder goal queue ────────────────────────────────────────────
-  function wireDrag(ul) {
-    let dragIdx = null;
-    ul.querySelectorAll(".goal-card").forEach((card) => {
-      card.addEventListener("dragstart", (e) => {
-        dragIdx = +card.dataset.idx;
-        card.classList.add("dragging");
-        e.dataTransfer.effectAllowed = "move";
-      });
-      card.addEventListener("dragend", () => card.classList.remove("dragging"));
-      card.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        ul.querySelectorAll(".goal-card").forEach((c) => c.classList.remove("drag-over"));
-        card.classList.add("drag-over");
-      });
-      card.addEventListener("drop", (e) => {
-        e.preventDefault();
-        const to = +card.dataset.idx;
-        card.classList.remove("drag-over");
-        if (dragIdx === null || dragIdx === to) return;
-        const [moved] = goalQueue.splice(dragIdx, 1);
-        goalQueue.splice(to, 0, moved);
-        store.saveGoals(goalQueue);
-        renderGoalQueue();
-        recompute();
-      });
-    });
-  }
-
-  // ── Custom goal form ──────────────────────────────────────────────────────
-  function addReqRow() {
-    const container = els.cgReqs();
-    if (!container) return;
-    const row = document.createElement("div");
-    row.className = "cg-req-row";
-    row.innerHTML = `
-      <select class="cg-req-skill">
-        ${skillNames.map((sk) => `<option value="${sk}">${sk.charAt(0).toUpperCase() + sk.slice(1)}</option>`).join("")}
-      </select>
-      <input type="number" class="cg-req-level" min="1" max="99" value="1" style="width:4rem">
-      <button class="btn btn-ghost cg-req-remove" style="font-size:var(--fs-xs);padding:2px var(--sp-q)">✕</button>`;
-    row.querySelector(".cg-req-remove").addEventListener("click", () => row.remove());
-    container.appendChild(row);
-  }
-
-  function readCustomGoal() {
-    const label = els.cgLabel()?.value.trim();
-    if (!label) return null;
-    const reqs = {};
-    els.cgReqs()?.querySelectorAll(".cg-req-row").forEach((row) => {
-      const sk  = row.querySelector(".cg-req-skill")?.value;
-      const lvl = parseInt(row.querySelector(".cg-req-level")?.value ?? 1, 10);
-      if (sk && lvl > 1) reqs[sk] = lvl;
-    });
-    return { id: `custom-${Date.now()}`, label, reqs, terminal: els.cgTerminal()?.value.trim() || null };
-  }
-
-  function clearCustomForm() {
-    if (els.cgLabel())     els.cgLabel().value     = "";
-    if (els.cgTerminal())  els.cgTerminal().value  = "";
-    if (els.cgReqs())      els.cgReqs().innerHTML  = "";
-  }
-
   // ── Routing ───────────────────────────────────────────────────────────────
   // Normalize legacy flat {skill:lvl} shape to structured shape
   function normalizeReqs(reqs) {
@@ -356,23 +330,20 @@
     return { skills: reqs };   // legacy flat form
   }
 
-  function meetsReqs(reqs, skills) {
+  // ctx: { completedIds: Set, freeSlots: number }
+  function meetsReqs(reqs, skills, ctx) {
     const r = normalizeReqs(reqs);
-    // Skills
+    const { completedIds = new Set(), freeSlots = 28 } = ctx ?? {};
+
     if (!Object.entries(r.skills ?? {}).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl)) return false;
-    // Items — treated as soft hints; the router doesn't track inventory state yet,
-    // so we pass these unless a constraint_ref makes it hard. Future: inv simulation.
-    // inv_free — same; pass through until inv simulation is wired.
-    // Constraints — evaluate resolvable types; skip graph_ref and object_interact
-    // (those require runtime game state unavailable client-side).
+
+    if (r.inv_free && freeSlots < r.inv_free) return false;
+
     for (const cid of (r.constraints ?? [])) {
       const c = allConstraints.find((x) => x.id === cid);
       if (!c) continue;
-      if (c.type === "region_order") {
-        // before_step must already be in completedIds — checked in locationAccessible,
-        // so skip here to avoid double-gating.
-      }
-      // equipment/inventory/graph_ref/object types are advisory at routing time.
+      if (c.type === "region_order" && c.before_step && !completedIds.has(c.before_step)) return false;
+      if (c.type === "inv_free"     && c.slots       && freeSlots < c.slots)              return false;
     }
     return true;
   }
@@ -436,19 +407,22 @@
     }
   }
 
-  function routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded) {
-    const target   = goal.reqs ?? {};
-    const terminal = goal.terminal ?? null;
-    const path     = [];
+  function routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded, freeSlots) {
+    const target    = goal.reqs ?? {};
+    const terminal  = goal.terminal ?? null;
+    const path      = [];
+    let   invFree   = freeSlots ?? 28;
     const remaining = new Set(
       steps.map((s) => s.id).filter((id) => !completedIds.has(id) && !pinnedExclusions.has(id))
     );
+
+    const ctx = () => ({ completedIds, freeSlots: invFree });
 
     const buildHeap = () => {
       const heap = new MinHeap();
       for (const id of remaining) {
         const step = steps.find((s) => s.id === id);
-        if (!step || !meetsReqs(step.reqs, skills)) continue;
+        if (!step || !meetsReqs(step.reqs, skills, ctx())) continue;
         if (!locationAccessible(step, completedIds, excluded, completedQuests)) continue;
         if (!isUseful(step, skills, target, terminal)) continue;
         heap.push(step, costFor(step, profile.style));
@@ -468,10 +442,12 @@
       remaining.delete(best.id);
       completedIds.add(best.id);
       if ((best.tags ?? []).includes("quest")) completedQuests.add(best.id);
-      skills = applyGrants(best.grants, skills);
-      heap = buildHeap();
+      skills  = applyGrants(best.grants, skills);
+      // Items consumed free up inv slots; items acquired consume them
+      invFree = Math.min(28, Math.max(0, invFree - (best.inv_used ?? 0) + (best.inv_removes?.length ?? 0)));
+      heap    = buildHeap();
     }
-    return { path, skills, completedIds, completedQuests };
+    return { path, skills, completedIds, completedQuests, freeSlots: invFree };
   }
 
   function routeMulti(goals, steps, profile) {
@@ -479,12 +455,14 @@
     let completedIds    = new Set([...manualQuestDone]);
     let completedQuests = new Set([...manualQuestDone]);
     const excluded      = profile.excludeRegions ?? [];
+    let freeSlots       = 28;
 
     return goals.flatMap((goal) => {
-      const r = routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded);
+      const r = routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded, freeSlots);
       skills          = r.skills;
       completedIds    = r.completedIds;
       completedQuests = r.completedQuests;
+      freeSlots       = r.freeSlots;
       return r.path;
     });
   }
@@ -881,33 +859,52 @@
   }
 
   // ── Step bank ─────────────────────────────────────────────────────────────
+  // Bank shows allSteps (individual steps) + allGoals (preset goal bundles).
+  // Adding from bank pushes into goalQueue, not currentPath.
   function renderStepBank() {
     const list   = $("rt-bank-list");
     const filter = $("rt-bank-filter");
     if (!list) return;
     const q = (filter?.value ?? "").toLowerCase();
-    const visible = allSteps.filter((s) =>
+
+    // Goals appear first as "goal" entries, then individual steps
+    const goalEntries = allGoals.map((g) => ({ ...g, _bankType: "goal" }));
+    const stepEntries = allSteps.map((s) => ({ ...s, _bankType: "step" }));
+    const pool = [...goalEntries, ...stepEntries];
+
+    const visible = pool.filter((s) =>
       !q || s.label.toLowerCase().includes(q) || (s.tags ?? []).some((t) => t.includes(q))
     );
+
+    const alreadyQueued = new Set(goalQueue.map((g) => g.id));
+
     list.innerHTML = visible.map((s) => `
       <li class="route-step bank-step" data-step-id="${escHtml(s.id)}">
         <span class="step-body">
           <span class="step-title">${escHtml(s.label)}</span>
-          <span class="step-detail">${escHtml(s.detail ?? "")}</span>
+          ${s.detail ? `<span class="step-detail">${escHtml(s.detail)}</span>` : ""}
         </span>
         <span class="step-meta">
           ${(s.tags ?? []).map((t) => `<span class="step-badge">${t}</span>`).join("")}
-          <button class="btn btn-ghost bank-add-btn" data-step-id="${escHtml(s.id)}">Add</button>
+          ${s._bankType === "goal" ? `<span class="step-badge goal-lbl">goal</span>` : ""}
+          <button class="btn btn-ghost bank-add-btn" data-step-id="${escHtml(s.id)}"${alreadyQueued.has(s.id) ? " disabled" : ""}>
+            ${alreadyQueued.has(s.id) ? "Added" : "Add"}
+          </button>
         </span>
       </li>`).join("");
 
-    list.querySelectorAll(".bank-add-btn").forEach((btn) => {
+    list.querySelectorAll(".bank-add-btn:not([disabled])").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const step = allSteps.find((s) => s.id === btn.dataset.stepId);
-        if (!step) return;
-        currentPath.push(step);
-        if (window._routerLastPath) window._routerLastPath.path = currentPath;
-        renderSteps(currentPath);
+        const entry = pool.find((s) => s.id === btn.dataset.stepId);
+        if (!entry) return;
+        const qEntry = entry._bankType === "goal"
+          ? { id: entry.id, label: entry.label, reqs: entry.reqs ?? {}, terminal: entry.terminal ?? null }
+          : { id: entry.id, label: entry.label, reqs: normalizeReqs(entry.reqs).skills ?? {}, terminal: entry.id };
+        goalQueue.push(qEntry);
+        store.saveGoals(goalQueue);
+        renderGoalQueue();
+        renderStepBank();
+        recompute();
       });
     });
   }
@@ -974,7 +971,7 @@
     pinnedExclusions = new Set();
     manualQuestDone  = new Set();
     pinnedInserts    = (plan.pinnedInserts ?? []);
-    applyProfile({ skills: plan.skills, style: plan.style });
+    applyProfile({ skills: plan.skills, style: plan.style, excludeRegions: plan.excludeRegions ?? [] }, allRegions);
     if (plan.goals) {
       goalQueue = plan.goals;
       store.saveGoals(goalQueue);
@@ -1002,13 +999,12 @@
 
     skillNames = deriveSkills(allSteps);
     buildSkillGrid(skillNames);
-    buildPresetSelect(allGoals);
-    buildRegionExcludes(allRegions);
+    buildRegionTagbox(allRegions);
     renderStepBank();
     $("rt-bank-filter")?.addEventListener("input", renderStepBank);
 
     const saved = store.profile();
-    if (Object.keys(saved).length) applyProfile(saved);
+    if (Object.keys(saved).length) applyProfile(saved, allRegions);
 
     goalQueue = store.goals();
     renderGoalQueue();
@@ -1028,29 +1024,6 @@
       });
     });
 
-    els.addPreset()?.addEventListener("click", () => {
-      const key    = els.presetSel()?.value;
-      const preset = allGoals.find((p) => p.id === key);
-      if (!preset) return;
-      goalQueue.push({ id: preset.id, label: preset.label, reqs: preset.reqs, terminal: preset.terminal });
-      store.saveGoals(goalQueue);
-      renderGoalQueue();
-      if (els.presetSel()) els.presetSel().value = "";
-      recompute();
-    });
-
-    els.cgAddReq()?.addEventListener("click", () => addReqRow());
-
-    els.cgSubmit()?.addEventListener("click", () => {
-      const goal = readCustomGoal();
-      if (!goal) return;
-      goalQueue.push(goal);
-      store.saveGoals(goalQueue);
-      renderGoalQueue();
-      clearCustomForm();
-      recompute();
-    });
-
     els.calcBtn()?.addEventListener("click", () => {
       if (!goalQueue.length) {
         els.empty().hidden = false;
@@ -1067,10 +1040,12 @@
     els.resetBtn()?.addEventListener("click", () => {
       skillNames.forEach((sk) => { const el = els.skillInput(sk); if (el) el.value = 1; });
       if (els.style()) els.style().value = "balanced";
-      goalQueue = []; activePlanIdx = -1;
+      goalQueue = []; activePlanIdx = -1; excludedRegions = [];
       pinnedExclusions = new Set(); pinnedInserts = []; currentPath = []; manualQuestDone = new Set();
       store.saveGoals(goalQueue); store.saveActive(null); store.clearNotes();
       renderGoalQueue();
+      renderRegionTags(allRegions);
+      renderStepBank();
       els.empty().hidden = false;
       els.empty().textContent = "Add goals to your queue and click Calculate Route.";
       els.steps().hidden = true;
@@ -1086,13 +1061,14 @@
       const desc = els.planDesc()?.value.trim() ?? "";
       const plan = {
         name, desc,
-        goals:         last.goals,
-        style:         last.profile.style,
-        skills:        last.profile.skills,
-        steps:         last.path,
-        stepNotes:     store.stepNotes(),
-        pinnedInserts: pinnedInserts,
-        date:          new Date().toLocaleDateString(),
+        goals:          last.goals,
+        style:          last.profile.style,
+        skills:         last.profile.skills,
+        excludeRegions: last.profile.excludeRegions,
+        steps:          last.path,
+        stepNotes:      store.stepNotes(),
+        pinnedInserts:  pinnedInserts,
+        date:           new Date().toLocaleDateString(),
       };
       activePlanIdx = store.savePlan(plan);
       store.saveActive(plan);

@@ -13,6 +13,8 @@
   const ATLAS_PATH = "/assets/data/cache/sprites/items-atlas.json";
   const SHEET_PATH = "/assets/data/cache/sprites/items.png";
   const PACK_PATH  = "/assets/data/cache/items.pack";
+  const SS_ATLAS   = "osrs-sprite-atlas";
+  const SS_PACK    = "osrs-sprite-pack";
 
   let _base    = "";
   let _atlas   = null;   // {id: {x,y,w,h}}
@@ -20,11 +22,22 @@
   let _byId    = null;   // {id: packRecord}
   let _byName  = null;   // {"lowercase name": packRecord}
   let _promise = null;
+  let _cssCache = new Map(); // itemId → CSS string, in-memory only
+
+  // ── Session cache helpers ──────────────────────────────────────────────────
+  function ssGet(key) {
+    try { const v = sessionStorage.getItem(key); return v ? JSON.parse(v) : null; } catch { return null; }
+  }
+  function ssSet(key, val) {
+    try { sessionStorage.setItem(key, JSON.stringify(val)); } catch { /* quota exceeded — skip */ }
+  }
 
   // ── Pack reader ────────────────────────────────────────────────────────────
   // Binary format: "OSRP" + 4B count + N×12B index (id:4LE, offset:4LE, len:4LE) + JSON blobs
 
   async function readPack(url) {
+    const cached = ssGet(SS_PACK);
+    if (cached) return cached;
     const buf  = await fetch(url).then((r) => r.arrayBuffer());
     const view = new DataView(buf);
     const magic = String.fromCharCode(view.getUint8(0), view.getUint8(1), view.getUint8(2), view.getUint8(3));
@@ -40,7 +53,16 @@
       const rec    = JSON.parse(dec.decode(new Uint8Array(buf, offset, len)));
       result[id]   = rec;
     }
+    ssSet(SS_PACK, result);
     return result;
+  }
+
+  async function fetchAtlas(url) {
+    const cached = ssGet(SS_ATLAS);
+    if (cached) return cached;
+    const atlas = await fetch(url).then((r) => r.json());
+    ssSet(SS_ATLAS, atlas);
+    return atlas;
   }
 
   function loadImage(src) {
@@ -60,7 +82,7 @@
       if (_promise) return _promise;
       _base = base ?? "";
       _promise = Promise.all([
-        fetch(_base + ATLAS_PATH).then((r) => r.json()),
+        fetchAtlas(_base + ATLAS_PATH),
         loadImage(_base + SHEET_PATH),
         readPack(_base + PACK_PATH),
       ]).then(([atlas, sheet, pack]) => {
@@ -87,9 +109,13 @@
     /** CSS background shorthand for use with a sized container. */
     css(itemId) {
       if (!_atlas || !_sheet) return "";
+      const key = +itemId;
+      if (_cssCache.has(key)) return _cssCache.get(key);
       const e = _atlas[itemId] ?? _atlas[String(itemId)];
       if (!e) return "";
-      return `url('${_base + SHEET_PATH}') -${e.x}px -${e.y}px / ${_sheet.naturalWidth}px ${_sheet.naturalHeight}px no-repeat`;
+      const val = `url('${_base + SHEET_PATH}') -${e.x}px -${e.y}px / ${_sheet.naturalWidth}px ${_sheet.naturalHeight}px no-repeat`;
+      _cssCache.set(key, val);
+      return val;
     },
 
     /** Full pack record for an item by numeric ID. */

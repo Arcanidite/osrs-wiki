@@ -4,6 +4,36 @@ Tracking file for unimplemented requests. Each item has a semantic label in `[br
 
 ---
 
+## [router:region-tagbox] Region exclude as tag combobox
+
+**Status:** DONE ✓ — `.region-tagbox` combobox with tag chips; `excludedRegions[]` state; persisted in profile + plan
+
+---
+
+## [router:step-bank-as-queue] Step bank is the goal queue source; no separate bank in route panel
+
+**Status:** DONE ✓ — bank moved to left panel, lists allGoals + allSteps; "Add" pushes to goalQueue; bank removed from route output section
+
+---
+
+## [router:no-drag] Goal queue non-draggable
+
+**Status:** DONE ✓ — drag handle, `wireDrag`, and drag CSS removed
+
+---
+
+## [router:constraint-validation] Constraint workflow validation as hard gates
+
+**Status:** DONE ✓ — `meetsReqs` enforces `region_order.before_step`, `inv_free` constraint slots; `routeGoal` tracks `freeSlots` across steps
+
+---
+
+## [sprite:asset-cache] Atlas + pack cached in sessionStorage; CSS string cached in-memory Map
+
+**Status:** DONE ✓
+
+---
+
 ## Design: What the planner should be
 
 The progression router is a **mutable plan editor**, not a one-shot generator. The user builds a plan by picking goals, the system proposes a valid ordered step sequence, and the user refines it — editing, inserting, removing, annotating. Nothing is immutable after generation.
@@ -160,6 +190,11 @@ Extraction pipeline is in place. Location data remains empty until fresh XTEA ke
 - `[router:opportunistic]` — `markOpportunities` region-chaining hints ✓ (`94bd463`)
 - `[router:autoload]` — `STORE_ACTIVE` autoload on init ✓ (`94bd463`)
 - `[router:plan-actions-grid]` — equal-width Load/Delete via CSS grid ✓ (`94bd463`)
+- `[sprite:asset-cache]` — sessionStorage atlas+pack; in-memory CSS Map in SpriteAtlas.css() ✓ (pending commit)
+- `[router:region-tagbox]` — region exclude tagbox combobox ✓ (pending commit)
+- `[router:step-bank-as-queue]` — bank in left panel, adds to goalQueue ✓ (pending commit)
+- `[router:no-drag]` — goal queue drag removed ✓ (pending commit)
+- `[router:constraint-validation]` — region_order + inv_free as hard router gates ✓ (pending commit)
 - `[sprite:page-integration]` — sprite.js in node/tool layouts; catalog.js hydrates item sprites via SpriteAtlas; `item_id` on catalog item entries ✓ (pending commit)
 - `[sprite:atlas]` — `sprite.js` module ✓ (`94bd463`)
 - `[cache:sprites]` — `items.png` + `items-atlas.json` ✓ (`e442afd`)

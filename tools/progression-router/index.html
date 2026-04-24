@@ -10,7 +10,7 @@ tool_script: "/assets/js/tools/progression-router.js"
 
 <div class="tool-row">
 
-  <!-- ── Left panel: profile + goal queue ─────────────────────────────── -->
+  <!-- ── Left panel: profile + step bank + goal queue ─────────────────────── -->
   <aside class="tool-panel" id="router-inputs">
 
     <h2>Your Stats</h2>
@@ -30,51 +30,30 @@ tool_script: "/assets/js/tools/progression-router.js"
 
     <div class="form-group" style="margin-top:var(--sp)">
       <label>Exclude regions</label>
-      <div id="rt-region-excludes" class="region-exclude-list">
-        <!-- populated from regions.jsonl by progression-router.js -->
+      <div id="rt-region-excludes" class="region-tagbox">
+        <div class="rtb-tags" id="rt-region-tags"></div>
+        <input type="text" class="rtb-input" id="rt-region-input" placeholder="Add region…" autocomplete="off">
+        <ul class="rtb-dropdown" id="rt-region-dropdown" hidden></ul>
       </div>
+    </div>
+
+    <!-- Step bank -->
+    <div style="margin-top:var(--sp); border-top:1px solid var(--border); padding-top:var(--sp)">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--sp-h)">
+        <h2 style="padding:0; margin:0">Step Bank</h2>
+      </div>
+      <input type="search" id="rt-bank-filter" placeholder="Filter steps…"
+        style="width:100%; padding:var(--sp-q) var(--sp-h); border:1px solid var(--border); border-radius:var(--radius); font-size:var(--fs-sm); margin-bottom:var(--sp-h); box-sizing:border-box">
+      <ul class="route-steps" id="rt-bank-list" style="max-height:260px; overflow-y:auto"></ul>
     </div>
 
     <!-- Goal queue -->
     <div style="margin-top:var(--sp); border-top:1px solid var(--border); padding-top:var(--sp)">
       <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--sp-h)">
         <h2 style="padding:0; margin:0">Goal Queue</h2>
-        <span style="font-size:var(--fs-xs); color:var(--muted)">drag to reorder</span>
       </div>
-
       <ul class="goal-queue" id="rt-goal-queue"></ul>
-      <p id="rt-no-goals" style="font-size:var(--fs-xs); color:var(--muted); padding:var(--sp-h) 0">No goals yet. Add one below.</p>
-
-      <!-- Quick-add preset (options populated from goals.jsonl) -->
-      <div class="goal-adder" id="rt-preset-adder">
-        <select id="rt-preset-select"></select>
-        <button class="btn btn-ghost" id="rt-add-preset">Add</button>
-      </div>
-
-      <!-- Custom goal form -->
-      <details class="goal-custom-form" id="rt-custom-form">
-        <summary>Add custom goal</summary>
-        <div style="padding-top:var(--sp-h)">
-          <div class="form-group">
-            <label>Goal label</label>
-            <input type="text" id="cg-label" placeholder="e.g. Unlock Fire Cape">
-          </div>
-          <div class="form-group">
-            <label>Terminal step ID <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
-            <input type="text" id="cg-terminal" placeholder="e.g. unlock-barrows">
-          </div>
-          <div class="form-group">
-            <label>Skill requirements</label>
-            <div id="cg-reqs" class="cg-req-list"></div>
-            <button class="btn btn-ghost" id="cg-add-req" style="margin-top:var(--sp-q); font-size:var(--fs-xs)">+ Add requirement</button>
-          </div>
-          <div class="form-group">
-            <label>Goal note <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
-            <textarea id="cg-note" placeholder="e.g. Do this before the quest chain…" style="width:100%;resize:vertical;min-height:2.5rem;font-family:inherit;font-size:var(--fs-sm);padding:var(--sp-q) var(--sp-h);border:1px solid var(--border);border-radius:var(--radius)"></textarea>
-          </div>
-          <button class="btn btn-primary" id="cg-submit" style="margin-top:var(--sp-h); width:100%">Add to queue</button>
-        </div>
-      </details>
+      <p id="rt-no-goals" style="font-size:var(--fs-xs); color:var(--muted); padding:var(--sp-h) 0">No goals yet. Add steps from the bank above.</p>
     </div>
 
     <div style="display:flex; gap:var(--sp-h); margin-top:var(--sp)">
@@ -84,7 +63,7 @@ tool_script: "/assets/js/tools/progression-router.js"
     <div class="plan-saved" id="rt-save-status" hidden>Profile auto-saved</div>
   </aside>
 
-  <!-- ── Right panel: route output + saved plans ──────────────────────── -->
+  <!-- ── Right panel: route output + saved plans ──────────────────────────── -->
   <section class="tool-panel" id="router-output">
     <h2>Route</h2>
     <div class="route-bar" id="rt-route-bar" hidden></div>
@@ -92,16 +71,6 @@ tool_script: "/assets/js/tools/progression-router.js"
       Add goals to your queue and click <strong>Calculate Route</strong>.
     </div>
     <ul class="route-steps" id="rt-steps" hidden></ul>
-
-    <!-- Step bank -->
-    <details id="rt-bank" style="margin-top:var(--sp); border-top:1px solid var(--border); padding-top:var(--sp)">
-      <summary style="cursor:pointer; font-weight:600; font-size:var(--fs-sm); user-select:none">Step Bank</summary>
-      <div style="margin-top:var(--sp-h)">
-        <input type="search" id="rt-bank-filter" placeholder="Filter steps…"
-          style="width:100%; padding:var(--sp-q) var(--sp-h); border:1px solid var(--border); border-radius:var(--radius); font-size:var(--fs-sm); margin-bottom:var(--sp-h); box-sizing:border-box">
-        <ul class="route-steps" id="rt-bank-list" style="max-height:320px; overflow-y:auto"></ul>
-      </div>
-    </details>
 
     <div id="rt-plans" style="margin-top:var(--sp); border-top:1px solid var(--border); padding-top:var(--sp)">
       <h2 style="padding-top:0">Saved Plans</h2>
