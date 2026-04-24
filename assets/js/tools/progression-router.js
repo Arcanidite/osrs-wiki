@@ -894,7 +894,7 @@
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
-          <textarea class="step-note" data-step-id="${escHtml(step.id)}" rows="1" placeholder="Add a note…"></textarea>
+          <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…"></textarea>
         </span>
         <span class="step-meta">
           <span class="step-seq-dot${valid ? " valid" : " invalid"}" title="${valid ? "Requirements met" : "Requirements not met at this position"}"></span>
