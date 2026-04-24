@@ -305,6 +305,30 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 ---
 
+## [router:seq-dot-as-border] Replace seq-dot with green border on step-num circle
+
+The `.step-seq-dot` valid/invalid indicator should be replaced with a colored border on the step-num circle itself: green border when valid, red border (or no border) when invalid. Remove the separate dot element from the step HTML and CSS.
+
+**Status:** TODO
+
+---
+
+## [router:complete-implies-prereqs] Checking a step complete marks upstream prereqs complete too
+
+When the user checks a step as complete, any earlier steps in the route whose `grants` satisfy this step's `reqs` should also be considered complete (visually `step-done`) without requiring the user to manually check them. If a downstream step is already checked complete, its prereqs are implicitly satisfied for display purposes — no recompute triggered, purely visual propagation.
+
+**Status:** TODO
+
+---
+
+## [router:filter-hides-insert-rows] Hide insert rows adjacent to filtered-out steps
+
+When a filter is active, `.route-insert-row` elements adjacent to hidden `.route-step` entries are still visible. The fix: hide insert rows entirely during any active filter (show only when filter is `all`). The insert affordance only makes sense in the unfiltered view — filtering is for reading, not editing.
+
+**Status:** TODO
+
+---
+
 ## Completed
 
 - `[router:step-grid-layout]` — `.route-step` grid `2rem 1fr auto auto`; `step-actions` 4th column for remove/edit buttons ✓ (pending commit)

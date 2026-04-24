@@ -888,7 +888,7 @@
         <span class="step-drag-handle" title="Drag to reorder">⠿</span>
         <label class="step-num-wrap">
           <input type="checkbox" class="step-done-cb" data-step-id="${escHtml(step.id)}"${isQuest ? ' data-is-quest="1"' : ""}${stepDone ? " checked" : ""}>
-          <span class="step-num">${i + 1}</span>
+          <span class="step-num" data-valid="${valid}">${i + 1}</span>
           <span class="step-done-icon" aria-hidden="true" data-state="incomplete">○</span>
         </label>
         <span class="step-body">
@@ -897,7 +897,6 @@
           <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…"></textarea>
         </span>
         <span class="step-meta">
-          <span class="step-seq-dot${valid ? " valid" : " invalid"}" title="${valid ? "Requirements met" : "Requirements not met at this position"}"></span>
           ${goalBadge(step)}
           ${locationBadge(step)}
           ${xpBadge(step.xp)}
@@ -932,6 +931,8 @@
   }
 
   function applyStepFilter(stepsEl, filter) {
+    const isFiltered = filter !== "all";
+    stepsEl.querySelectorAll(".route-insert-row").forEach((r) => { r.hidden = isFiltered; });
     stepsEl.querySelectorAll(".route-step[data-step-idx]").forEach((li) => {
       const done  = li.classList.contains("step-done");
       const focal = li.dataset.focal === "1";
@@ -1083,19 +1084,34 @@
     });
   }
 
+  function markStepDone(li, done) {
+    const icon = li.querySelector(".step-done-icon");
+    const cb   = li.querySelector(".step-done-cb");
+    if (done) {
+      li.classList.add("step-done");
+      if (icon) { icon.dataset.state = "complete"; icon.textContent = "✓"; }
+      if (cb) cb.checked = true;
+    } else {
+      li.classList.remove("step-done");
+      if (icon) { icon.dataset.state = "incomplete"; icon.textContent = "○"; }
+      if (cb) cb.checked = false;
+    }
+  }
+
   function wireStepDoneToggles(container) {
     container.querySelectorAll(".step-done-cb").forEach((cb) => {
       cb.addEventListener("change", () => {
         const { stepId, isQuest } = cb.dataset;
-        const li = cb.closest(".route-step");
-        const icon = li.querySelector(".step-done-icon");
+        const li  = cb.closest(".route-step");
+        const idx = +li.dataset.stepIdx;
         if (cb.checked) {
-          li.classList.add("step-done");
-          if (icon) { icon.dataset.state = "complete"; icon.textContent = "✓"; }
+          markStepDone(li, true);
+          container.querySelectorAll(".route-step[data-step-idx]").forEach((sib) => {
+            if (+sib.dataset.stepIdx < idx && !sib.classList.contains("step-done")) markStepDone(sib, true);
+          });
           if (isQuest) { manualQuestDone.add(stepId); li.classList.add("quest-done"); }
         } else {
-          li.classList.remove("step-done");
-          if (icon) { icon.dataset.state = "incomplete"; icon.textContent = "○"; }
+          markStepDone(li, false);
           if (isQuest) { manualQuestDone.delete(stepId); li.classList.remove("quest-done"); }
         }
         if (isQuest) recompute();

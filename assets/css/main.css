@@ -443,11 +443,8 @@ body {
 .route-step:hover .step-drag-handle { opacity: 1; }
 .route-step.drag-ghost { opacity: 0.4; }
 .route-step.step-seq-invalid { background: #fff8f8; }
-.step-seq-dot {
-  width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex-shrink: 0;
-}
-.step-seq-dot.valid   { background: #28a745; }
-.step-seq-dot.invalid { background: #dc3545; }
+.step-num[data-valid="true"]  { box-shadow: 0 0 0 2px #28a745; }
+.step-num[data-valid="false"] { box-shadow: 0 0 0 2px #dc3545; }
 .step-actions { display: flex; flex-direction: column; 
     justify-content: space-between; gap: var(--sp-q); 
     height: 100%; }
