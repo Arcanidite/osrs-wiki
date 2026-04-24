@@ -385,12 +385,12 @@ body {
 #rt-skill-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: var(--sp-q) var(--sp-h);
+    gap: var(--sp-q);
     margin-bottom: var(--sp-h);
 }
 #rt-skill-grid .form-group { margin-bottom: 0; gap: var(--sp-h); display: contents; }
 #rt-skill-grid label {
-  font-size: 0.65rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .03em;
@@ -400,7 +400,7 @@ body {
   padding: 2px var(--sp-q);
   font-size: var(--fs);
   text-align: center;
-  width: 100%;
+  width: 3rem;
 }
 
 .btn {
