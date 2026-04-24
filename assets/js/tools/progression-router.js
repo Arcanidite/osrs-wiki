@@ -540,31 +540,84 @@
       : "";
   }
 
-  // Insert row between steps
-  function insertRowHtml(afterIdx) {
-    return `<li class="route-insert-row" data-after="${afterIdx}">
-      <button class="btn btn-ghost insert-step-btn" data-after="${afterIdx}">+ insert</button>
-    </li>`;
+  // ── Toast notification ───────────────────────────────────────────────────
+  function showToast(msg) {
+    let t = $("rt-toast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "rt-toast"; t.className = "rt-toast";
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.classList.add("rt-toast--show");
+    clearTimeout(t._tid);
+    t._tid = setTimeout(() => t.classList.remove("rt-toast--show"), 3200);
   }
 
-  function buildInsertForm(afterIdx, onCommit, onCancel) {
+  // ── Unified step creation form (inline insert + bank new-step) ────────────
+  // opts: { afterIdx?: number, asGoal?: bool, onCommit(step, afterIdx), onCancel() }
+  function buildStepForm(opts) {
+    const { afterIdx = -1, onCommit, onCancel } = opts;
     const li = document.createElement("li");
     li.className = "route-insert-form";
+    const skillOpts = skillNames.map((sk) =>
+      `<option value="${sk}">${skillLabel(sk)}</option>`).join("");
     li.innerHTML = `
-      <input class="ins-label"  type="text" placeholder="Step label" style="flex:1">
-      <input class="ins-detail" type="text" placeholder="Detail (optional)" style="flex:2">
-      <button class="btn btn-primary ins-add">Add</button>
-      <button class="btn btn-ghost ins-cancel">Cancel</button>`;
+      <div class="ins-row">
+        <input class="ins-label"  type="text" placeholder="Step label">
+        <input class="ins-detail" type="text" placeholder="Detail (optional)">
+      </div>
+      <div class="ins-row ins-req-row" style="display:none">
+        <span class="ins-reqs"></span>
+        <button class="btn btn-ghost ins-add-req" style="font-size:var(--fs-xs)">+ req</button>
+        <span class="ins-grants-wrap">
+          <span class="ins-grants"></span>
+          <button class="btn btn-ghost ins-add-grant" style="font-size:var(--fs-xs)">+ grant</button>
+        </span>
+      </div>
+      <div class="ins-row">
+        <button class="btn btn-ghost ins-toggle-adv" style="font-size:var(--fs-xs)">reqs/grants ▸</button>
+        <button class="btn btn-primary ins-add">Add</button>
+        <button class="btn btn-ghost ins-cancel">Cancel</button>
+      </div>`;
+
+    const reqWrap   = li.querySelector(".ins-reqs");
+    const grantWrap = li.querySelector(".ins-grants");
+    const advRow    = li.querySelector(".ins-req-row");
+    let advOpen = false;
+
+    const addPair = (container) => {
+      const span = document.createElement("span");
+      span.className = "sef-pair";
+      span.innerHTML = `<select class="sef-sk">${skillOpts}</select><input type="number" class="sef-lvl" min="1" max="99" value="1"><button class="btn btn-ghost sef-rm">✕</button>`;
+      span.querySelector(".sef-rm").addEventListener("click", () => span.remove());
+      container.appendChild(span);
+    };
+
+    li.querySelector(".ins-toggle-adv").addEventListener("click", () => {
+      advOpen = !advOpen;
+      advRow.style.display = advOpen ? "flex" : "none";
+      li.querySelector(".ins-toggle-adv").textContent = advOpen ? "reqs/grants ▾" : "reqs/grants ▸";
+    });
+    li.querySelector(".ins-add-req").addEventListener("click",   () => addPair(reqWrap));
+    li.querySelector(".ins-add-grant").addEventListener("click", () => addPair(grantWrap));
+
+    const readPairs = (el) => Object.fromEntries(
+      [...el.querySelectorAll(".sef-pair")].map((p) => [
+        p.querySelector(".sef-sk").value, +p.querySelector(".sef-lvl").value,
+      ])
+    );
+
     li.querySelector(".ins-add").addEventListener("click", () => {
       const label = li.querySelector(".ins-label").value.trim();
       if (!label) return;
       const anchorStep = afterIdx >= 0 ? currentPath[afterIdx] : null;
       const step = {
-        id:         `custom-insert-${Date.now()}`,
+        id:         `custom-${Date.now()}`,
         label,
         detail:     li.querySelector(".ins-detail").value.trim(),
-        reqs:       {},
-        grants:     {},
+        reqs:       { skills: readPairs(reqWrap) },
+        grants:     readPairs(grantWrap),
         _custom:    true,
         _goalLabel: anchorStep?._goalLabel ?? "",
         _reqs:      {},
@@ -574,6 +627,13 @@
     });
     li.querySelector(".ins-cancel").addEventListener("click", onCancel);
     return li;
+  }
+
+  // Insert row between steps
+  function insertRowHtml(afterIdx) {
+    return `<li class="route-insert-row" data-after="${afterIdx}">
+      <button class="btn btn-ghost insert-step-btn" data-after="${afterIdx}">+ insert</button>
+    </li>`;
   }
 
   function wireStepNotes(container) {
@@ -696,10 +756,21 @@
     // Render insert row before step 0 as well
     const rows = [insertRowHtml(-1)];
 
+    // Pre-compute cumulative skill state to flag invalid steps
+    let cumSkills = { ...readProfile().skills };
+    const seqValid = path.map((step) => {
+      const r = normalizeReqs(step.reqs);
+      const valid = Object.entries(r.skills ?? {}).every(([sk, lvl]) => (cumSkills[sk] ?? 1) >= lvl);
+      cumSkills = applyGrants(step.grants, cumSkills);
+      return valid;
+    });
+
     path.forEach((step, i) => {
-      const isQuest = (step.tags ?? []).includes("quest");
+      const isQuest  = (step.tags ?? []).includes("quest");
       const questDone = manualQuestDone.has(step.id);
-      rows.push(`<li class="route-step${questDone ? " quest-done" : ""}" data-step-idx="${i}">
+      const valid    = seqValid[i];
+      rows.push(`<li class="route-step${questDone ? " quest-done" : ""}${valid ? "" : " step-seq-invalid"}" data-step-idx="${i}" draggable="true">
+        <span class="step-drag-handle" title="Drag to reorder">⠿</span>
         <span class="step-num">${i + 1}</span>
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
@@ -708,6 +779,7 @@
           <textarea class="step-note" data-step-id="${escHtml(step.id)}" rows="1" placeholder="Add a note…"></textarea>
         </span>
         <span class="step-meta">
+          <span class="step-seq-dot${valid ? " valid" : " invalid"}" title="${valid ? "Requirements met" : "Requirements not met at this position"}"></span>
           ${goalBadge(step)}
           ${locationBadge(step)}
           ${xpBadge(step.xp)}
@@ -731,6 +803,7 @@
     wireStepRemove(stepsEl);
     wireQuestCheckboxes(stepsEl);
     wireStepEditBtn(stepsEl);
+    wireDragSort(stepsEl);
     renderRouteBar(path);
   }
 
@@ -739,9 +812,9 @@
       btn.addEventListener("click", () => {
         const afterIdx = +btn.dataset.after;
         const row = btn.closest(".route-insert-row");
-        const form = buildInsertForm(
+        const form = buildStepForm({
           afterIdx,
-          (step, idx) => {
+          onCommit: (step, idx) => {
             currentPath = [
               ...currentPath.slice(0, idx + 1),
               step,
@@ -750,9 +823,46 @@
             if (window._routerLastPath) window._routerLastPath.path = currentPath;
             renderSteps(currentPath);
           },
-          () => { row.outerHTML = insertRowHtml(afterIdx); wireInsertRows(stepsEl); }
-        );
+          onCancel: () => { row.outerHTML = insertRowHtml(afterIdx); wireInsertRows(stepsEl); },
+        });
         row.replaceWith(form);
+      });
+    });
+  }
+
+  function wireDragSort(stepsEl) {
+    let dragIdx = -1;
+    stepsEl.querySelectorAll(".route-step[draggable]").forEach((li) => {
+      li.addEventListener("dragstart", (e) => {
+        dragIdx = +li.dataset.stepIdx;
+        e.dataTransfer.effectAllowed = "move";
+        li.classList.add("drag-ghost");
+      });
+      li.addEventListener("dragend", () => li.classList.remove("drag-ghost"));
+      li.addEventListener("dragover", (e) => { e.preventDefault(); e.dataTransfer.dropEffect = "move"; });
+      li.addEventListener("drop", (e) => {
+        e.preventDefault();
+        const dropIdx = +li.dataset.stepIdx;
+        if (dragIdx < 0 || dragIdx === dropIdx) return;
+        const moved = currentPath.splice(dragIdx, 1)[0];
+        currentPath.splice(dropIdx, 0, moved);
+        // Update pinned insert anchors for the moved step
+        pinnedInserts = pinnedInserts.map((p) =>
+          p.step.id === moved.id
+            ? { ...p, anchor: dropIdx > 0 ? (currentPath[dropIdx - 1]?.id ?? "start") : "start" }
+            : p
+        );
+        if (window._routerLastPath) window._routerLastPath.path = currentPath;
+        const invalids = [];
+        let cs = { ...readProfile().skills };
+        currentPath.forEach((s) => {
+          const r = normalizeReqs(s.reqs);
+          if (!Object.entries(r.skills ?? {}).every(([sk, lvl]) => (cs[sk] ?? 1) >= lvl)) invalids.push(s.label);
+          cs = applyGrants(s.grants, cs);
+        });
+        renderSteps(currentPath);
+        if (invalids.length) showToast(`Req not met at current position: ${invalids.slice(0, 3).join(", ")}`);
+        dragIdx = -1;
       });
     });
   }
