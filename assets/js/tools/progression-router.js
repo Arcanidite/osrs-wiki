@@ -1235,18 +1235,22 @@
     if (!plans.length) { list.innerHTML = ""; none.hidden = false; return; }
     none.hidden = true;
 
-    list.innerHTML = plans.map((plan, i) => `
+    list.innerHTML = plans.map((plan, i) => {
+      const total = plan.steps?.length ?? 0;
+      const done  = plan.steps?.filter((s) => s.done).length ?? 0;
+      return `
       <li class="route-step plan-list-item" data-plan-idx="${i}">
-        <span class="step-num" style="background:var(--gold)">0 / ${plan.steps.length}</span>
+        <span class="step-num" style="background:var(--gold)" title="${total} steps">${done} / ${total}</span>
         <span class="step-body">
           <span class="plan-list-name" data-plan-idx="${i}">${escHtml(plan.name)}</span>
-          <span class="step-detail">${plan.goals?.length ?? 1} goal(s) · ${plan.style} · ${plan.date}</span>
+          <span class="step-detail">${plan.goals?.length ?? 1} goal(s) · ${plan.date}</span>
         </span>
         <span class="step-meta plan-actions">
-          <button class="btn btn-ghost plan-action-btn" data-load="${i}">View</button>
+          <button class="btn btn-ghost plan-action-btn" data-view="${i}">View</button>
           <button class="btn btn-ghost plan-action-btn plan-delete" data-delete="${i}">Remove</button>
         </span>
-      </li>`).join("");
+      </li>`;
+    }).join("");
 
     list.querySelectorAll(".plan-list-name").forEach((span) => {
       span.addEventListener("click", () => {
@@ -1267,13 +1271,13 @@
       });
     });
 
-    list.querySelectorAll("[data-load]").forEach((btn) => {
+    list.querySelectorAll("[data-view]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const idx = +btn.dataset.load;
-        const existingTabIdx = planTabs.findIndex((t) => t.activePlanIdx === idx);
-        if (existingTabIdx >= 0) {
+        const idx = +btn.dataset.view;
+        const existing = planTabs.findIndex((t) => t.activePlanIdx === idx);
+        if (existing >= 0) {
           saveToTab();
-          loadFromTab(existingTabIdx);
+          loadFromTab(existing);
           renderTabBar();
           renderGoalQueue();
           renderSteps(currentPath);
