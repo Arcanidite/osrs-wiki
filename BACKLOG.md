@@ -167,6 +167,48 @@ Extraction pipeline is in place. Location data remains empty until fresh XTEA ke
 
 ---
 
+## [router:plan-filter] Route plan step filter + tab pane navigation
+
+Filter bar above the route output to show/hide steps by state: all, completed, incomplete, focal (user-starred). Tab pane wraps the route panel so multiple plans can be open simultaneously as named tabs — switching tabs swaps the active `currentPath` + goal queue context without navigating away. Each tab is independently editable and persists its own state.
+
+**Status:** TODO
+
+---
+
+## [router:dep-guard] Dependency order enforcement — block invalid reorders and deletes
+
+When the user attempts to drag-reorder a step to a position where its `reqs` would be unmet (or where a downstream step's reqs would be broken), the system rejects the drop and shows a toast — no silent invalid state. Same guard applies to step removal: if a step is a prerequisite for a later step still in the plan, the remove is blocked with a toast naming the dependent step(s). No action that creates an unresolvable dependency chain is permitted.
+
+**Status:** TODO
+
+---
+
+## [router:req-highlight] Req badge hover highlights + focus-scroll to prerequisite step
+
+Hovering a `req` badge on a step highlights the step(s) in the route that satisfy that requirement (CSS `[data-grants-skill]` attribute selector driven — no JS event listeners needed for the highlight itself). Clicking the badge smooth-scrolls to the earliest satisfying step and briefly pulses it. Inset box-shadow used for the highlight to avoid layout shift.
+
+**Implementation note:** steps emit `data-grants-skill="attack strength …"` attributes; req badges emit `data-req-skill="attack"`. CSS `:has()` + attribute selector drives the highlight purely in CSS. JS only for the scroll-to behavior on click.
+
+**Status:** TODO
+
+---
+
+## [router:step-complete-toggle] Per-step completion toggle — ergonomic placement under step number
+
+Every step (not just quests) gets a completion toggle. Visually: a transient check/cross icon directly below the step number circle, shown on hover or when checked — rendered as an SVG or HTML entity, toggled via CSS `:checked` state on a visually-hidden checkbox. Removes the separate inline `Mark complete` label. Checked state applies `step-done` class (line-through, muted) without triggering a recompute.
+
+**Status:** TODO
+
+---
+
+## [router:git-versioning] LocalStorage plan versioning — git-object model with diffing
+
+Auto-save every plan mutation to localStorage using a git-inspired object store: content-addressed blobs (SHA-1 or xxHash of serialised state), commit objects (blob pointer + parent hash + timestamp), HEAD ref per plan. Enables undo/redo, diff between versions, and branch-style plan variants without re-implementing persistence logic in plain JS. Evaluate a WASM-compiled libgit2 or isomorphic-git running entirely in the browser as the storage backend — no server required. Validate locally (Node REPL or browser devtools) before wiring into the router UI.
+
+**Status:** TODO
+
+---
+
 ## Completed
 
 - `[router:step-grid-layout]` — `.route-step` grid `2rem 1fr auto auto`; `step-actions` 4th column for remove/edit buttons ✓ (pending commit)
