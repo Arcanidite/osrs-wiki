@@ -594,9 +594,10 @@ body {
 
 /* ── Plan tab bar ────────────────────────────────────────────────────────── */
 .rt-tab-bar {
-  display: flex; align-items: center; gap: var(--sp-q);
-  border-bottom: 2px solid var(--border); padding-bottom: 2px;
-  margin-bottom: var(--sp-h); flex-wrap: wrap;
+display: flex;
+    align-items: center; gap: var(--sp-q); border-bottom: 2px solid var(--border);
+    padding-bottom: 2px; margin: var(--sp-h) auto;
+    flex-wrap: wrap; position: sticky; top: 0px; background: inherit; z-index: 10; padding-top: var(--sp-q);
 }
 .rt-tab-btn {
   font-size: var(--fs-xs); padding: 2px var(--sp-h);
@@ -612,6 +613,7 @@ body {
 .rt-tab-btn.tab-dragging { opacity: 0.4; }
 .rt-tab-new { font-size: var(--fs-sm); padding: 0 var(--sp-h); color: var(--muted); line-height: 1.6; }
 .rt-tab-new:hover { color: var(--ink); }
+.rt-main { height: 100%; }
 
 /* Sidebar layout */
 .rt-sidebar { display: flex; flex-direction: column; gap: var(--sp); }
@@ -660,7 +662,6 @@ body {
   display: flex; align-items: center; gap: var(--sp-h);
   padding: var(--sp-h) var(--sp);
   background: var(--card); border-bottom: 1px solid var(--border);
-  position: sticky; top: 0; z-index: 10;
 }
 .route-bar-count { font-size: var(--fs-xs); color: var(--muted); margin-left: auto; }
 .route-name-input {
