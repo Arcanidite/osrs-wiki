@@ -400,8 +400,8 @@
     if (!reqs || typeof reqs !== "object") return { skills: {} };
     if (reqs.skills !== undefined || reqs.items !== undefined ||
         reqs.equipment !== undefined || reqs.inv_free !== undefined ||
-        reqs.constraints !== undefined) return reqs;
-    return { skills: reqs };   // legacy flat form
+        reqs.constraints !== undefined) return { ...reqs, tags: reqs.tags ?? [] };
+    return { skills: reqs, tags: [] };   // legacy flat form
   }
 
   // ctx: { completedIds: Set, freeSlots: number }
@@ -419,18 +419,20 @@
       if (c.type === "region_order" && c.before_step && !completedIds.has(c.before_step)) return false;
       if (c.type === "inv_free"     && c.slots       && freeSlots < c.slots)              return false;
     }
+    const grantedTags = new Set(skills._tags ?? []);
+    if (!(r.tags ?? []).every((t) => grantedTags.has(t))) return false;
     return true;
   }
 
   function applyGrants(grants, skills) {
     const next = { ...skills };
-    Object.entries(grants ?? {}).forEach(([sk, lvl]) => { if (lvl !== true && lvl > (next[sk] ?? 1)) next[sk] = lvl; });
+    const tags = new Set(next._tags ?? []);
+    Object.entries(grants ?? {}).forEach(([k, v]) => {
+      if (v === true) tags.add(k);
+      else if (typeof v === "number" && v > (next[k] ?? 1)) next[k] = v;
+    });
+    next._tags = [...tags];
     return next;
-  }
-
-  function applyTagGrants(grants, tags) {
-    Object.entries(grants ?? {}).forEach(([k, v]) => { if (v === true) tags.add(k); });
-    return tags;
   }
 
   function costFor(step, style) {
@@ -676,9 +678,11 @@
         <div class="ins-skill-section ins-skill-section--grant">
           <div class="ins-skill-header">
             <span class="ins-skill-title grant">Grants</span>
-            <button class="btn btn-ghost ins-add-grant">+ add</button>
+            <button class="btn btn-ghost ins-add-grant">+ skill</button>
+            <button class="btn btn-ghost ins-add-tag-grant">+ tag</button>
           </div>
           <div class="ins-skill-pills ins-grants"></div>
+          <div class="ins-tag-grants"></div>
         </div>
       </div>
       <div class="ins-row">
@@ -699,6 +703,18 @@
     });
     li.querySelector(".ins-add-req").addEventListener("click",   () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
     li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
+    li.querySelector(".ins-add-tag-grant").addEventListener("click", () => {
+      const tagWrap = li.querySelector(".ins-tag-grants");
+      const pill = document.createElement("span");
+      pill.className = "ins-tag-pill";
+      const inp = document.createElement("input");
+      inp.type = "text"; inp.className = "ins-tag-input"; inp.placeholder = "tag name";
+      const rm = document.createElement("button");
+      rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
+      rm.addEventListener("click", () => pill.remove());
+      pill.append(inp, rm);
+      tagWrap.appendChild(pill);
+    });
 
     li.querySelector(".ins-add").addEventListener("click", () => {
       const label = li.querySelector(".ins-label").value.trim();
@@ -709,7 +725,14 @@
         label,
         detail:     li.querySelector(".ins-detail").value.trim(),
         reqs:       { skills: readSkillPills(reqWrap) },
-        grants:     readSkillPills(grantWrap),
+        grants: (() => {
+          const g = readSkillPills(grantWrap);
+          li.querySelectorAll(".ins-tag-grants .ins-tag-pill").forEach((p) => {
+            const v = p.querySelector(".ins-tag-input")?.value.trim();
+            if (v) g[v] = true;
+          });
+          return g;
+        })(),
         _custom:    true,
         _goalLabel: anchorStep?._goalLabel ?? "",
         _reqs:      {},
