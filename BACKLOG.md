@@ -187,7 +187,7 @@ In the unified step creation form (`buildStepForm`), reqs and grants each live i
 
 When the user attempts to drag-reorder a step to a position where its `reqs` would be unmet (or where a downstream step's reqs would be broken), the system rejects the drop and shows a toast — no silent invalid state. Same guard applies to step removal: if a step is a prerequisite for a later step still in the plan, the remove is blocked with a toast naming the dependent step(s). No action that creates an unresolvable dependency chain is permitted.
 
-**Status:** TODO
+**Status:** DONE ✓ — `seqInvalids(trial)` pre-validates reorder/remove; toast on block; currentPath only mutated on valid trial
 
 ---
 
@@ -197,7 +197,7 @@ Hovering a `req` badge on a step highlights the step(s) in the route that satisf
 
 **Implementation note:** steps emit `data-grants-skill="attack strength …"` attributes; req badges emit `data-req-skill="attack"`. CSS `:has()` + attribute selector drives the highlight purely in CSS. JS only for the scroll-to behavior on click.
 
-**Status:** TODO
+**Status:** DONE ✓ — `data-grants-skill` on `<li>`, `data-req-skill` on req badge; CSS `:has()` per-skill highlight rules; `wireReqScroll` handles click scroll + `req-pulse` animation
 
 ---
 
@@ -205,7 +205,7 @@ Hovering a `req` badge on a step highlights the step(s) in the route that satisf
 
 Every step (not just quests) gets a completion toggle. Visually: a transient check/cross icon directly below the step number circle, shown on hover or when checked — rendered as an SVG or HTML entity, toggled via CSS `:checked` state on a visually-hidden checkbox. Removes the separate inline `Mark complete` label. Checked state applies `step-done` class (line-through, muted) without triggering a recompute.
 
-**Status:** TODO
+**Status:** DONE ✓ — `.step-num-wrap` label wraps hidden `.step-done-cb` + `.step-done-icon` (✓); CSS `:has(:checked)` shows icon; `step-done` class on `<li>` strikes title; quest steps still trigger recompute via `manualQuestDone`
 
 ---
 

@@ -503,8 +503,11 @@
   }
   function reqBadge(reqs) {
     const r = normalizeReqs(reqs);
-    const parts = Object.entries(r.skills ?? {}).map(([sk, lvl]) => `${skillLabel(sk)} ${lvl}`);
-    return parts.length ? `<span class="step-badge req">Req: ${parts.join(", ")}</span>` : "";
+    const entries = Object.entries(r.skills ?? {});
+    if (!entries.length) return "";
+    const skills = entries.map(([sk]) => sk).join(" ");
+    const parts  = entries.map(([sk, lvl]) => `${skillLabel(sk)} ${lvl}`);
+    return `<span class="step-badge req" data-req-skill="${escHtml(skills)}">Req: ${parts.join(", ")}</span>`;
   }
   function constraintBadges(reqs) {
     const r = normalizeReqs(reqs);
@@ -766,16 +769,22 @@
     });
 
     path.forEach((step, i) => {
-      const isQuest  = (step.tags ?? []).includes("quest");
+      const isQuest   = (step.tags ?? []).includes("quest");
       const questDone = manualQuestDone.has(step.id);
-      const valid    = seqValid[i];
-      rows.push(`<li class="route-step${questDone ? " quest-done" : ""}${valid ? "" : " step-seq-invalid"}" data-step-idx="${i}" draggable="true">
+      const stepDone  = questDone;
+      const valid     = seqValid[i];
+      const grantSkills = Object.keys(normalizeReqs(step.grants).skills ?? {}).join(" ");
+      const grantAttr   = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
+      rows.push(`<li class="route-step${stepDone ? " step-done quest-done" : ""}${valid ? "" : " step-seq-invalid"}" data-step-idx="${i}" draggable="true"${grantAttr}>
         <span class="step-drag-handle" title="Drag to reorder">⠿</span>
-        <span class="step-num">${i + 1}</span>
+        <label class="step-num-wrap">
+          <input type="checkbox" class="step-done-cb" data-step-id="${escHtml(step.id)}"${isQuest ? ' data-is-quest="1"' : ""}${stepDone ? " checked" : ""}>
+          <span class="step-num">${i + 1}</span>
+          <span class="step-done-icon" aria-hidden="true">✓</span>
+        </label>
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
-          ${isQuest ? `<label class="quest-done-label"><input type="checkbox" class="quest-done-cb" data-step-id="${escHtml(step.id)}"${questDone ? " checked" : ""}> Mark complete</label>` : ""}
           <textarea class="step-note" data-step-id="${escHtml(step.id)}" rows="1" placeholder="Add a note…"></textarea>
         </span>
         <span class="step-meta">
@@ -801,10 +810,26 @@
     wireStepEdit(stepsEl);
     wireInsertRows(stepsEl);
     wireStepRemove(stepsEl);
-    wireQuestCheckboxes(stepsEl);
+    wireStepDoneToggles(stepsEl);
     wireStepEditBtn(stepsEl);
     wireDragSort(stepsEl);
+    wireReqScroll(stepsEl);
     renderRouteBar(path);
+  }
+
+  function wireReqScroll(stepsEl) {
+    stepsEl.querySelectorAll(".step-badge[data-req-skill]").forEach((badge) => {
+      badge.addEventListener("click", () => {
+        const skills = badge.dataset.reqSkill.split(" ");
+        const target = stepsEl.querySelector(
+          skills.map((sk) => `[data-grants-skill~="${sk}"]`).join(",")
+        );
+        if (!target) return;
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        target.classList.add("req-pulse");
+        target.addEventListener("animationend", () => target.classList.remove("req-pulse"), { once: true });
+      });
+    });
   }
 
   function wireInsertRows(stepsEl) {
@@ -830,6 +855,16 @@
     });
   }
 
+  function seqInvalids(path) {
+    let cs = { ...readProfile().skills };
+    return path.reduce((acc, s) => {
+      const r = normalizeReqs(s.reqs);
+      if (!Object.entries(r.skills ?? {}).every(([sk, lvl]) => (cs[sk] ?? 1) >= lvl)) acc.push(s.label);
+      cs = applyGrants(s.grants, cs);
+      return acc;
+    }, []);
+  }
+
   function wireDragSort(stepsEl) {
     let dragIdx = -1;
     stepsEl.querySelectorAll(".route-step[draggable]").forEach((li) => {
@@ -843,25 +878,23 @@
       li.addEventListener("drop", (e) => {
         e.preventDefault();
         const dropIdx = +li.dataset.stepIdx;
-        if (dragIdx < 0 || dragIdx === dropIdx) return;
-        const moved = currentPath.splice(dragIdx, 1)[0];
-        currentPath.splice(dropIdx, 0, moved);
-        // Update pinned insert anchors for the moved step
+        if (dragIdx < 0 || dragIdx === dropIdx) { dragIdx = -1; return; }
+        const trial = [...currentPath];
+        const [moved] = trial.splice(dragIdx, 1);
+        trial.splice(dropIdx, 0, moved);
+        const invalids = seqInvalids(trial);
+        if (invalids.length) {
+          showToast(`Can't reorder: req not met for ${invalids.slice(0, 2).join(", ")}`);
+          dragIdx = -1; return;
+        }
+        currentPath = trial;
         pinnedInserts = pinnedInserts.map((p) =>
           p.step.id === moved.id
             ? { ...p, anchor: dropIdx > 0 ? (currentPath[dropIdx - 1]?.id ?? "start") : "start" }
             : p
         );
         if (window._routerLastPath) window._routerLastPath.path = currentPath;
-        const invalids = [];
-        let cs = { ...readProfile().skills };
-        currentPath.forEach((s) => {
-          const r = normalizeReqs(s.reqs);
-          if (!Object.entries(r.skills ?? {}).every(([sk, lvl]) => (cs[sk] ?? 1) >= lvl)) invalids.push(s.label);
-          cs = applyGrants(s.grants, cs);
-        });
         renderSteps(currentPath);
-        if (invalids.length) showToast(`Req not met at current position: ${invalids.slice(0, 3).join(", ")}`);
         dragIdx = -1;
       });
     });
@@ -873,23 +906,34 @@
         const idx  = +btn.dataset.stepIdx;
         const step = currentPath[idx];
         if (!step) return;
-        // Add to exclusions so recompute won't re-insert it
+        const trial = currentPath.filter((_, j) => j !== idx);
+        const invalids = seqInvalids(trial);
+        if (invalids.length) {
+          showToast(`Can't remove: downstream step requires it (${invalids.slice(0, 2).join(", ")})`);
+          return;
+        }
         if (!step._custom) pinnedExclusions.add(step.id);
-        // Remove from pinned inserts if it was one
         pinnedInserts = pinnedInserts.filter((p) => p.step.id !== step.id);
-        currentPath.splice(idx, 1);
+        currentPath = trial;
         if (window._routerLastPath) window._routerLastPath.path = currentPath;
         renderSteps(currentPath);
       });
     });
   }
 
-  function wireQuestCheckboxes(container) {
-    container.querySelectorAll(".quest-done-cb").forEach((cb) => {
+  function wireStepDoneToggles(container) {
+    container.querySelectorAll(".step-done-cb").forEach((cb) => {
       cb.addEventListener("change", () => {
-        const id = cb.dataset.stepId;
-        cb.checked ? manualQuestDone.add(id) : manualQuestDone.delete(id);
-        recompute();
+        const { stepId, isQuest } = cb.dataset;
+        const li = cb.closest(".route-step");
+        if (cb.checked) {
+          li.classList.add("step-done");
+          if (isQuest) { manualQuestDone.add(stepId); li.classList.add("quest-done"); }
+        } else {
+          li.classList.remove("step-done");
+          if (isQuest) { manualQuestDone.delete(stepId); li.classList.remove("quest-done"); }
+        }
+        if (isQuest) recompute();
       });
     });
   }
