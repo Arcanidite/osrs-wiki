@@ -615,7 +615,7 @@ body {
   transition: color 0.1s, background 0.1s;
 }
 .rt-tab-btn:hover { color: var(--ink); background: var(--bg); }
-.rt-tab-btn.active { color: var(--ink); background: var(--bg); border-color: var(--border); font-weight: 600; }
+.rt-tab-btn.active { color: var(--ink); background: var(--bg); border-color: var(--border); }
 .rt-tab-btn.tab-drag-ghost { opacity: 0.4; }
 .rt-tab-btn[draggable] { cursor: grab; }
 .rt-tab-btn.tab-dragging { opacity: 0.4; }
