@@ -447,12 +447,12 @@ body {
 .route-step:last-child { border-bottom: none; }
 .route-step[hidden] { display: none; }
 .step-num {
-  width: 2rem; height: 2rem;
-  border-radius: 50%;
-  background: var(--dark); color: #fff;
-  font-size: var(--fs-xs); font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
+  height: 2rem;    border-radius: var(--sp-h);    background: var(--dark);
+  color: #fff;    font-size: var(--fs-xs);    font-weight: 700;
+  display: flex;    align-items: center;    justify-content: center;
   flex-shrink: 0;
+  white-space: nowrap;
+  padding: var(--sp-h);
 }
 .step-body { display: flex; flex-direction: column; gap: 2px; }
 .step-title { font-weight: 600; color: var(--ink); }
@@ -655,13 +655,12 @@ body {
 
 /* ── Route bar (plan name + crud above route) ────────────────────────────── */
 .route-bar {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: var(--sp-h); padding: var(--sp-q) 0 var(--sp-h);
-  border-bottom: 1px solid var(--border); margin-bottom: var(--sp-h);
-  font-size: var(--fs-sm);
-  position: sticky; top: 0; z-index: 10; background: var(--card);
+  display: flex; align-items: center; gap: var(--sp-h);
+  padding: var(--sp-h) var(--sp);
+  background: var(--card); border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 10;
 }
-.route-bar-label { color: var(--muted); font-style: italic; }
+.route-bar-count { font-size: var(--fs-xs); color: var(--muted); margin-left: auto; }
 .route-name-input {
   font-size: var(--fs-sm); font-weight: 600;
   border: none; border-bottom: 1px dashed var(--border);

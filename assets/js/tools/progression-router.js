@@ -807,27 +807,25 @@
     bar.hidden = !path.length;
     if (!path.length) return;
 
-    const isLoaded = activePlanIdx >= 0;
-    const plans    = store.plans();
-    const name     = isLoaded ? (plans[activePlanIdx]?.name ?? "") : "";
+    const plans = store.plans();
+    const name  = activePlanIdx >= 0 ? (plans[activePlanIdx]?.name ?? "Route") : "Route";
 
-    bar.innerHTML = isLoaded
-      ? `<input class="route-name-input" type="text" value="${escHtml(name)}" title="Rename plan">`
-      : `<span class="route-bar-label">Unsaved route</span>`;
+    bar.innerHTML = `
+      <input class="route-name-input" type="text" value="${escHtml(name)}" title="Rename plan">
+      <span class="route-bar-count">${path.length} step${path.length !== 1 ? "s" : ""}</span>`;
 
-    if (isLoaded) {
-      bar.querySelector(".route-name-input")?.addEventListener("change", (e) => {
-        const p = store.plans()[activePlanIdx];
-        if (!p) return;
-        const newName = e.target.value.trim() || p.name;
-        const updated = { ...p, name: newName };
-        store.updatePlan(activePlanIdx, updated);
-        store.saveActive(updated);
-        planTabs[activeTabIdx].name = newName;
-        renderTabBar();
-        renderPlans();
-      });
-    }
+    bar.querySelector(".route-name-input")?.addEventListener("change", (e) => {
+      const trimmed = e.target.value.trim();
+      if (!trimmed || activePlanIdx < 0) return;
+      const p = store.plans()[activePlanIdx];
+      if (!p) return;
+      const updated = { ...p, name: trimmed };
+      store.updatePlan(activePlanIdx, updated);
+      store.saveActive(updated);
+      if (planTabs[activeTabIdx]) planTabs[activeTabIdx].name = trimmed;
+      renderTabBar();
+      renderPlans();
+    });
   }
 
   function renderSteps(path) {
