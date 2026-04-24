@@ -307,25 +307,19 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 ## [router:seq-dot-as-border] Replace seq-dot with green border on step-num circle
 
-The `.step-seq-dot` valid/invalid indicator should be replaced with a colored border on the step-num circle itself: green border when valid, red border (or no border) when invalid. Remove the separate dot element from the step HTML and CSS.
-
-**Status:** TODO
+**Status:** DONE ✓ — `data-valid` attr on `.step-num`; `box-shadow: 0 0 0 2px` green/red; dot span removed (`a62d912`)
 
 ---
 
 ## [router:complete-implies-prereqs] Checking a step complete marks upstream prereqs complete too
 
-When the user checks a step as complete, any earlier steps in the route whose `grants` satisfy this step's `reqs` should also be considered complete (visually `step-done`) without requiring the user to manually check them. If a downstream step is already checked complete, its prereqs are implicitly satisfied for display purposes — no recompute triggered, purely visual propagation.
-
-**Status:** TODO
+**Status:** DONE ✓ — `markStepDone` helper; checking step N propagates `markStepDone(true)` to all unchecked steps with lower `data-step-idx` (`a62d912`)
 
 ---
 
 ## [router:filter-hides-insert-rows] Hide insert rows adjacent to filtered-out steps
 
-When a filter is active, `.route-insert-row` elements adjacent to hidden `.route-step` entries are still visible. The fix: hide insert rows entirely during any active filter (show only when filter is `all`). The insert affordance only makes sense in the unfiltered view — filtering is for reading, not editing.
-
-**Status:** TODO
+**Status:** DONE ✓ — `applyStepFilter` sets `r.hidden = isFiltered` on all `.route-insert-row` when filter !== `all` (`a62d912`)
 
 ---
 

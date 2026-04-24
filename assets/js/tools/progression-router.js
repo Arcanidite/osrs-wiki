@@ -1098,6 +1098,36 @@
     }
   }
 
+  function propagatePrereqsDone(container, fromIdx) {
+    // Collect skills/tags needed by steps at fromIdx and above that are already marked done.
+    // Walk backwards; mark a step done only if it grants something in the needed set.
+    const needed = new Set();
+    const addReqs = (step) => {
+      const r = normalizeReqs(step?.reqs);
+      Object.keys(r.skills ?? {}).forEach((sk) => needed.add(sk));
+      (r.tags ?? []).forEach((t) => needed.add(t));
+    };
+    // Seed from the checked step itself and any already-done downstream steps.
+    const liItems = [...container.querySelectorAll(".route-step[data-step-idx]")]
+      .sort((a, b) => +a.dataset.stepIdx - +b.dataset.stepIdx);
+    liItems.filter((li) => +li.dataset.stepIdx >= fromIdx || li.classList.contains("step-done"))
+      .forEach((li) => addReqs(currentPath[+li.dataset.stepIdx]));
+
+    // Walk backwards from fromIdx-1, propagating.
+    [...liItems].reverse().forEach((li) => {
+      const i = +li.dataset.stepIdx;
+      if (i >= fromIdx || li.classList.contains("step-done")) return;
+      const step   = currentPath[i];
+      const grants = step?.grants ?? {};
+      const grantsSkills = Object.entries(grants).filter(([, v]) => typeof v === "number").map(([k]) => k);
+      const grantsTags   = Object.entries(grants).filter(([, v]) => v === true).map(([k]) => k);
+      if ([...grantsSkills, ...grantsTags].some((g) => needed.has(g))) {
+        markStepDone(li, true);
+        addReqs(step);
+      }
+    });
+  }
+
   function wireStepDoneToggles(container) {
     container.querySelectorAll(".step-done-cb").forEach((cb) => {
       cb.addEventListener("change", () => {
@@ -1106,9 +1136,7 @@
         const idx = +li.dataset.stepIdx;
         if (cb.checked) {
           markStepDone(li, true);
-          container.querySelectorAll(".route-step[data-step-idx]").forEach((sib) => {
-            if (+sib.dataset.stepIdx < idx && !sib.classList.contains("step-done")) markStepDone(sib, true);
-          });
+          propagatePrereqsDone(container, idx);
           if (isQuest) { manualQuestDone.add(stepId); li.classList.add("quest-done"); }
         } else {
           markStepDone(li, false);
