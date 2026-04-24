@@ -1285,6 +1285,8 @@
           const updated = { ...plans[idx], name };
           store.updatePlan(idx, updated);
           if (activePlanIdx === idx) { store.saveActive(updated); renderRouteBar(currentPath); }
+          const tabWithPlan = planTabs.findIndex((t) => t.activePlanIdx === idx);
+          if (tabWithPlan >= 0) { planTabs[tabWithPlan].name = name; renderTabBar(); }
           renderPlans();
         };
         input.addEventListener("blur", commit);
@@ -1303,6 +1305,9 @@
           renderGoalQueue();
           renderSteps(currentPath);
         } else {
+          saveToTab();
+          planTabs.push(makeTab(plans[idx].name));
+          activeTabIdx = planTabs.length - 1;
           loadPlan(plans[idx], idx);
         }
       });
