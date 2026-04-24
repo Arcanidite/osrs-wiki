@@ -115,7 +115,17 @@
       });
       btn.addEventListener("dblclick", () => {
         const name = window.prompt("Tab name:", t.name || `Plan ${i + 1}`);
-        if (name !== null) { planTabs[i].name = name.trim() || `Plan ${i + 1}`; renderTabBar(); }
+        if (name !== null) {
+          planTabs[i].name = name.trim() || `Plan ${i + 1}`;
+          renderTabBar();
+          const pi = planTabs[i].activePlanIdx;
+          if (pi >= 0) {
+            const updated = { ...store.plans()[pi], name: planTabs[i].name };
+            store.updatePlan(pi, updated);
+            store.saveActive(updated);
+            renderPlans();
+          }
+        }
       });
       bar.insertBefore(btn, newBtn);
     });
@@ -139,9 +149,6 @@
     empty:     () => $("rt-empty"),
     steps:     () => $("rt-steps"),
     saveStatus:() => $("rt-save-status"),
-    planName:  () => $("rt-plan-name"),
-    planDesc:  () => $("rt-plan-desc"),
-    saveBtn:   () => $("rt-save-plan"),
     planList:  () => $("rt-plan-list"),
     noPlans:   () => $("rt-no-plans"),
     goalQueue: () => $("rt-goal-queue"),
@@ -528,6 +535,22 @@
   }
 
   // ── Recompute: run route from current goal queue + profile, apply pins ────
+  function buildPlanObj(name) {
+    const last = window._routerLastPath;
+    const profile = readProfile();
+    return {
+      name,
+      goals:          last?.goals ?? goalQueue,
+      style:          profile.style,
+      skills:         profile.skills,
+      excludeRegions: profile.excludeRegions,
+      steps:          currentPath,
+      stepNotes:      store.stepNotes(),
+      pinnedInserts:  pinnedInserts,
+      date:           new Date().toLocaleDateString(),
+    };
+  }
+
   function recompute() {
     if (!goalQueue.length) return;
     const profile  = readProfile();
@@ -536,6 +559,18 @@
     currentPath    = path;
     window._routerLastPath = { path, profile, goals: goalQueue };
     renderSteps(path);
+    if (activePlanIdx >= 0) {
+      const existing = store.plans()[activePlanIdx];
+      store.updatePlan(activePlanIdx, buildPlanObj(existing?.name ?? `Plan ${activePlanIdx + 1}`));
+      store.saveActive(store.plans()[activePlanIdx]);
+    } else if (path.length > 0) {
+      const name = `Route #${store.plans().length + 1}`;
+      activePlanIdx = store.savePlan(buildPlanObj(name));
+      planTabs[activeTabIdx].name = name;
+      renderTabBar();
+      renderPlans();
+      store.saveActive(store.plans()[activePlanIdx]);
+    }
   }
 
   // ── Render ────────────────────────────────────────────────────────────────
@@ -1186,15 +1221,14 @@
 
     list.innerHTML = plans.map((plan, i) => `
       <li class="route-step plan-list-item" data-plan-idx="${i}">
-        <span class="step-num" style="background:var(--gold)">${plan.steps.length}</span>
+        <span class="step-num" style="background:var(--gold)">0 / ${plan.steps.length}</span>
         <span class="step-body">
           <span class="plan-list-name" data-plan-idx="${i}">${escHtml(plan.name)}</span>
           <span class="step-detail">${plan.goals?.length ?? 1} goal(s) · ${plan.style} · ${plan.date}</span>
-          ${plan.desc ? `<span class="plan-notes">${escHtml(plan.desc)}</span>` : ""}
         </span>
         <span class="step-meta plan-actions">
-          <button class="btn btn-ghost plan-action-btn" data-load="${i}">Load</button>
-          <button class="btn btn-ghost plan-action-btn plan-delete" data-delete="${i}">Delete</button>
+          <button class="btn btn-ghost plan-action-btn" data-load="${i}">View</button>
+          <button class="btn btn-ghost plan-action-btn plan-delete" data-delete="${i}">Remove</button>
         </span>
       </li>`).join("");
 
@@ -1218,7 +1252,19 @@
     });
 
     list.querySelectorAll("[data-load]").forEach((btn) => {
-      btn.addEventListener("click", () => loadPlan(plans[+btn.dataset.load], +btn.dataset.load));
+      btn.addEventListener("click", () => {
+        const idx = +btn.dataset.load;
+        const existingTabIdx = planTabs.findIndex((t) => t.activePlanIdx === idx);
+        if (existingTabIdx >= 0) {
+          saveToTab();
+          loadFromTab(existingTabIdx);
+          renderTabBar();
+          renderGoalQueue();
+          renderSteps(currentPath);
+        } else {
+          loadPlan(plans[idx], idx);
+        }
+      });
     });
     list.querySelectorAll("[data-delete]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -1243,10 +1289,10 @@
       store.saveGoals(goalQueue);
       renderGoalQueue();
     }
-    if (els.planName()) els.planName().value = plan.name;
-    if (els.planDesc()) els.planDesc().value = plan.desc ?? "";
     store.applyNotes(plan.stepNotes ?? {});
     currentPath = plan.steps;
+    planTabs[activeTabIdx].name = plan.name;
+    renderTabBar();
     renderSteps(plan.steps);
     window._routerLastPath = { path: plan.steps, profile: { skills: plan.skills, style: plan.style }, goals: plan.goals ?? [] };
     store.saveActive(plan);
@@ -1333,29 +1379,6 @@
       renderRouteBar([]);
       localStorage.removeItem(STORE_PROFILE);
       const s = els.saveStatus(); if (s) s.hidden = true;
-    });
-
-    els.saveBtn()?.addEventListener("click", () => {
-      const last = window._routerLastPath;
-      if (!last?.path?.length) return;
-      const name = els.planName()?.value.trim() || `Plan ${store.plans().length + 1}`;
-      const desc = els.planDesc()?.value.trim() ?? "";
-      const plan = {
-        name, desc,
-        goals:          last.goals,
-        style:          last.profile.style,
-        skills:         last.profile.skills,
-        excludeRegions: last.profile.excludeRegions,
-        steps:          last.path,
-        stepNotes:      store.stepNotes(),
-        pinnedInserts:  pinnedInserts,
-        date:           new Date().toLocaleDateString(),
-      };
-      activePlanIdx = store.savePlan(plan);
-      store.saveActive(plan);
-      if (els.planName()) els.planName().value = "";
-      if (els.planDesc()) els.planDesc().value = "";
-      renderPlans(); renderRouteBar(last.path);
     });
 
     renderPlans();
