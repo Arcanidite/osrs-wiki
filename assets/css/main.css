@@ -353,7 +353,7 @@ body {
 }
 .tool-row {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: min-content 1fr;
   gap: var(--sp);
   align-items: start;
 }
@@ -615,7 +615,7 @@ body {
 
 /* Sidebar layout */
 .rt-sidebar { display: flex; flex-direction: column; gap: var(--sp); }
-.sidebar-header { display: flex; justify-content: flex-end; padding-bottom: var(--sp-h); }
+.sidebar-header { display: flex; justify-content: flex-end; }
 .sidebar-burger { font-size: var(--fs-lg); }
 .sidebar-panel { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .sidebar-panel-hd { display: flex; align-items: center; justify-content: space-between; padding: var(--sp-h) var(--sp); background: var(--faint); cursor: default; }
@@ -626,7 +626,7 @@ body {
 .sidebar-actions { display: flex; gap: var(--sp-h); margin-top: auto; padding-top: var(--sp); }
 
 /* Sidebar collapsed state */
-.tool-row.sidebar-collapsed #router-inputs { width: 2.5rem; min-width: 2.5rem; overflow: hidden; }
+.tool-row.sidebar-collapsed #router-inputs { width: fit-content; min-width: 2.5rem; overflow: hidden; }
 .tool-row.sidebar-collapsed #router-inputs .sidebar-panel,
 .tool-row.sidebar-collapsed #router-inputs .sidebar-actions { display: none; }
 
