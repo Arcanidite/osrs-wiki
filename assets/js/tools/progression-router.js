@@ -94,6 +94,10 @@
     pinnedExclusions = t.pinnedExclusions; pinnedInserts = [...t.pinnedInserts];
     manualQuestDone = t.manualQuestDone; activePlanIdx = t.activePlanIdx;
     activeTabIdx = idx;
+    if (t.activePlanIdx >= 0) {
+      const p = store.plans()[t.activePlanIdx];
+      if (p) t.name = p.name;
+    }
   }
   function renderTabBar() {
     const bar = $("rt-tab-bar");
@@ -1310,7 +1314,7 @@
     }
     store.applyNotes(plan.stepNotes ?? {});
     currentPath = plan.steps;
-    planTabs[activeTabIdx].name = plan.name;
+    if (planTabs[activeTabIdx]) { planTabs[activeTabIdx].name = plan.name; planTabs[activeTabIdx].activePlanIdx = activePlanIdx; }
     renderTabBar();
     renderSteps(plan.steps);
     window._routerLastPath = { path: plan.steps, profile: { skills: plan.skills, style: plan.style }, goals: plan.goals ?? [] };
