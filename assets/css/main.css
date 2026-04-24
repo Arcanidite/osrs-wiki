@@ -624,14 +624,14 @@ body {
 
 /* Sidebar layout */
 .rt-sidebar { display: flex; flex-direction: column; gap: var(--sp); display: flex; background: none;
-  border: none; padding: unset; margin: unset;
+  border: none; padding: unset; margin: unset; min-width: 306px;
 }
 .sidebar-header { display: flex; justify-content: flex-end; }
 .sidebar-burger { font-size: var(--fs-lg); background: white; }
 .sidebar-panel { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .sidebar-panel-hd { display: flex; align-items: center; justify-content: space-between; padding: var(--sp-h) var(--sp); background: var(--faint); cursor: default; }
 .sidebar-panel-hd h2 { margin: 0; padding: 0; font-size: var(--fs-sm); }
-.sidebar-collapse-btn { background: none; border: none; cursor: pointer; color: var(--muted); font-size: var(--fs-sm); padding: 0; }
+.sidebar-collapse-btn { background: none; border: none; cursor: pointer; color: var(--muted); font-size: var(--fs-sm); padding: 0.25rem; }
 .sidebar-panel-body { padding: var(--sp-h); background: white; }
 .sidebar-panel-body--collapsed { display: none; }
 .sidebar-actions { display: flex; gap: var(--sp-h); margin-top: auto; padding-top: var(--sp); }
