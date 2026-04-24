@@ -657,17 +657,36 @@
   }
 
   // ── Unified step creation form (inline insert + bank new-step) ────────────
-  // opts: { afterIdx?: number, asGoal?: bool, onCommit(step, afterIdx), onCancel() }
   function buildStepForm(opts) {
     const { afterIdx = -1, onCommit, onCancel } = opts;
+
     const li = document.createElement("li");
-    li.className = "route-insert-form";
-    li.innerHTML = `
-      <div class="ins-row">
-        <input class="ins-label"  type="text" placeholder="Step label">
-        <input class="ins-detail" type="text" placeholder="Detail (optional)">
-      </div>
-      <div class="ins-adv-block" style="display:none">
+    li.className = "goal-card ins-step-card";
+
+    function showCard() {
+      li.innerHTML = `
+        <span class="goal-card-body">
+          <span class="goal-card-label ins-card-label">New step</span>
+          <span class="goal-card-reqs"></span>
+        </span>
+        <span class="goal-card-btns">
+          <button class="btn btn-ghost ins-card-edit" title="Configure step">✎</button>
+          <button class="btn btn-ghost ins-card-cancel" title="Cancel">✕</button>
+        </span>`;
+      li.querySelector(".ins-card-edit").addEventListener("click", showForm);
+      li.querySelector(".goal-card-body").addEventListener("click", showForm);
+      li.querySelector(".ins-card-cancel").addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (onCancel) onCancel();
+      });
+    }
+
+    function showForm() {
+      li.innerHTML = `
+        <div class="goal-edit-row">
+          <input class="ins-label" type="text" placeholder="Step label">
+          <input class="ins-detail" type="text" placeholder="Detail (optional)">
+        </div>
         <div class="ins-skill-section ins-skill-section--req">
           <div class="ins-skill-header">
             <span class="ins-skill-title req">Requirements</span>
@@ -684,85 +703,57 @@
           <div class="ins-skill-pills ins-grants"></div>
           <div class="ins-tag-grants"></div>
         </div>
-      </div>
-      <div class="ins-row">
-        <button class="btn btn-ghost ins-toggle-adv">reqs/grants ▸</button>
-        <button class="btn btn-primary ins-add">Add</button>
-        <button class="btn btn-ghost ins-cancel">Cancel</button>
-      </div>`;
+        <div class="goal-edit-actions">
+          <button class="btn btn-primary ins-add">Add</button>
+          <button class="btn btn-ghost ins-cancel">Cancel</button>
+        </div>`;
 
-    const reqWrap   = li.querySelector(".ins-reqs");
-    const grantWrap = li.querySelector(".ins-grants");
-    const advBlock  = li.querySelector(".ins-adv-block");
-    let advOpen = false;
+      const reqWrap   = li.querySelector(".ins-reqs");
+      const grantWrap = li.querySelector(".ins-grants");
 
-    li.querySelector(".ins-toggle-adv").addEventListener("click", () => {
-      advOpen = !advOpen;
-      advBlock.style.display = advOpen ? "flex" : "none";
-      li.querySelector(".ins-toggle-adv").textContent = advOpen ? "reqs/grants ▾" : "reqs/grants ▸";
-    });
-    li.querySelector(".ins-add-req").addEventListener("click",   () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
-    li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
-    li.querySelector(".ins-add-tag-grant").addEventListener("click", () => {
-      const tagWrap = li.querySelector(".ins-tag-grants");
-      const pill = document.createElement("span");
-      pill.className = "ins-tag-pill";
-      const inp = document.createElement("input");
-      inp.type = "text"; inp.className = "ins-tag-input"; inp.placeholder = "tag name";
-      const rm = document.createElement("button");
-      rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
-      rm.addEventListener("click", () => pill.remove());
-      pill.append(inp, rm);
-      tagWrap.appendChild(pill);
-    });
-
-    li.querySelector(".ins-add").addEventListener("click", () => {
-      const label = li.querySelector(".ins-label").value.trim();
-      if (!label) return;
-      const anchorStep = afterIdx >= 0 ? currentPath[afterIdx] : null;
-      const step = {
-        id:         `custom-${Date.now()}`,
-        label,
-        detail:     li.querySelector(".ins-detail").value.trim(),
-        reqs:       { skills: readSkillPills(reqWrap) },
-        grants: (() => {
+      li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
+      li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
+      li.querySelector(".ins-add-tag-grant").addEventListener("click", () => {
+        const tagWrap = li.querySelector(".ins-tag-grants");
+        const pill = document.createElement("span");
+        pill.className = "ins-tag-pill";
+        const inp = document.createElement("input");
+        inp.type = "text"; inp.className = "ins-tag-input"; inp.placeholder = "tag name";
+        const rm = document.createElement("button");
+        rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
+        rm.addEventListener("click", () => pill.remove());
+        pill.append(inp, rm);
+        tagWrap.appendChild(pill);
+      });
+      li.querySelector(".ins-cancel").addEventListener("click", showCard);
+      li.querySelector(".ins-add").addEventListener("click", () => {
+        const label = li.querySelector(".ins-label").value.trim();
+        if (!label) return;
+        const anchorStep = afterIdx >= 0 ? currentPath[afterIdx] : null;
+        const grants = (() => {
           const g = readSkillPills(grantWrap);
           li.querySelectorAll(".ins-tag-grants .ins-tag-pill").forEach((p) => {
             const v = p.querySelector(".ins-tag-input")?.value.trim();
             if (v) g[v] = true;
           });
           return g;
-        })(),
-        _custom:    true,
-        _goalLabel: anchorStep?._goalLabel ?? "",
-        _reqs:      {},
-      };
-      const cumSkills = currentPath.slice(0, afterIdx + 1).reduce(
-        (sk, s) => applyGrants(s.grants, sk),
-        readProfile().skills
-      );
-      const unsatisfied = Object.entries(normalizeReqs(step.reqs).skills ?? {})
-        .filter(([sk, lvl]) => (cumSkills[sk] ?? 1) < lvl);
-      const synthetics = unsatisfied.map(([sk, lvl]) => ({
-        id:         `custom-prereq-${sk}-${Date.now()}`,
-        label:      `Train ${sk} to ${lvl}`,
-        grants:     { [sk]: lvl },
-        reqs:       { skills: {} },
-        _custom:    true,
-        _goalLabel: step._goalLabel,
-        _reqs:      {},
-      }));
-      let insertAt = afterIdx;
-      synthetics.forEach((syn, i) => {
-        const prevAnchor = i === 0 ? (anchorStep?.id ?? "start") : synthetics[i - 1].id;
-        pinnedInserts.push({ anchor: prevAnchor, step: syn });
-        currentPath.splice(insertAt + 1, 0, syn);
-        insertAt++;
+        })();
+        const step = {
+          id:         `custom-${Date.now()}`,
+          label,
+          detail:     li.querySelector(".ins-detail").value.trim(),
+          reqs:       { skills: readSkillPills(reqWrap) },
+          grants,
+          _custom:    true,
+          _goalLabel: anchorStep?._goalLabel ?? "",
+          _reqs:      {},
+        };
+        pinnedInserts.push({ anchor: anchorStep?.id ?? "start", step });
+        onCommit(step, afterIdx);
       });
-      pinnedInserts.push({ anchor: synthetics.length ? synthetics[synthetics.length - 1].id : (anchorStep?.id ?? "start"), step });
-      onCommit(step, insertAt);
-    });
-    li.querySelector(".ins-cancel").addEventListener("click", onCancel);
+    }
+
+    showCard();
     return li;
   }
 

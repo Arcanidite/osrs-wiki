@@ -813,6 +813,8 @@ display: flex;
   color: var(--muted);
 }
 .goal-card-btns { display: flex; gap: 2px; flex-shrink: 0; }
+.ins-step-card { background: var(--faint); border: 1px dashed var(--border); }
+.ins-step-card .goal-card-body { cursor: pointer; }
 .goal-card-remove, .goal-card-edit {
   font-size: var(--fs-xs);
   padding: 2px var(--sp-q);
