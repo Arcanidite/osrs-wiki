@@ -493,7 +493,7 @@ body {
   font-size: 1rem; color: var(--muted);
   line-height: 1; opacity: 0; transition: opacity 0.1s;
 }
-.route-step:hover .step-done-icon { opacity: 0.4; }
+.route-step .step-done-icon { opacity: 0.4; }
 .step-done-cb:checked ~ .step-done-icon,
 .step-num-wrap:has(.step-done-cb:checked) .step-done-icon { opacity: 1; }
 .step-done-icon[data-state="complete"] { color: #28a745; }
