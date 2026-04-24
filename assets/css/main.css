@@ -824,7 +824,6 @@ display: flex;
 .ins-step-card .goal-card-body { cursor: pointer; }
 .goal-card-remove, .goal-card-edit {
   font-size: var(--fs-xs);
-  padding: 2px var(--sp-q);
   color: var(--muted);
 }
 /* Goal inline editor */
