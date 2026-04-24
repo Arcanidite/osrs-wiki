@@ -872,7 +872,7 @@ display: flex;
   white-space: pre-wrap;
 }
 .plan-actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-q); }
-.plan-action-btn { font-size: var(--fs-xs); padding: var(--sp-h); text-align: center; }
+.plan-action-btn { font-size: var(--fs-xs); padding: var(--sp-h); text-align: center; width: 100%; }
 .plan-delete { color: #c00; }
 
 /* ── Node page ───────────────────────────────────────────────────────────── */
