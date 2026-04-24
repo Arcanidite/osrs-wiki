@@ -472,9 +472,11 @@ body {
 .step-badge.constraint { background: #f3f4f6; color: #374151; cursor: help; }
 
 /* Step remove / edit buttons */
-.step-remove-btn, .step-edit-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); color: var(--muted); opacity: 0; transition: opacity 0.1s; }
+.step-remove-btn, .step-edit-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); opacity: 0; transition: opacity 0.1s; }
 .route-step:hover .step-remove-btn,
 .route-step:hover .step-edit-btn { opacity: 1; }
+.step-edit-btn {  color: var(--muted); }
+.step-remove-btn {  color: #c00; }
 .bank-step { grid-template-columns: 1fr auto; }
 .plan-list-item .step-meta { grid-column: 4 / span 2; }
 
