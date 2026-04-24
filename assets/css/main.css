@@ -516,7 +516,7 @@ body {
 @keyframes req-pulse { 0%,100% { box-shadow: inset 0 0 0 2px #f59e0b; } 50% { box-shadow: inset 0 0 0 4px #f59e0b; } }
 .route-step.req-pulse { animation: req-pulse 0.5s ease 2; }
 .route-steps:has(.step-badge[data-req-skill]:hover) .route-step { transition: box-shadow 0.15s; }
-.route-steps:has(.step-badge[data-req-skill*="attack"]:hover) .route-step[data-grants-skill~="attack"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="attack"]:hover) .route-step[data-grants-skill~="attack"] { position: sticky; box-shadow: inset 0 0 0 2px #f59e0b; }
 .route-steps:has(.step-badge[data-req-skill*="strength"]:hover) .route-step[data-grants-skill~="strength"] { box-shadow: inset 0 0 0 2px #f59e0b; }
 .route-steps:has(.step-badge[data-req-skill*="defence"]:hover) .route-step[data-grants-skill~="defence"] { box-shadow: inset 0 0 0 2px #f59e0b; }
 .route-steps:has(.step-badge[data-req-skill*="ranged"]:hover) .route-step[data-grants-skill~="ranged"] { box-shadow: inset 0 0 0 2px #f59e0b; }
@@ -604,7 +604,7 @@ body {
 .rt-tab-bar {
   display: flex;
   gap: var(--sp-q); border-bottom: 2px solid var(--border);
-  padding-bottom: 2px; margin: var(--sp-h) auto;
+  padding: var(--sp-h) 0px; margin: var(--sp-h) auto;
   flex-wrap: wrap; position: sticky; top: 0px; background: inherit; z-index: 10; padding-top: var(--sp-q);
 }
 .rt-tab-btn {
@@ -650,7 +650,7 @@ body {
 display: flex;
     gap: var(--sp-q); margin-bottom: var(--sp-h);
     padding: var(--sp-q) 0; border-bottom: 1px solid var(--border);
-    position: sticky; top: 2rem; background: inherit; z-index: 10;
+    position: sticky; top: 2.3rem; background: inherit; z-index: 10;
 }
 .rt-filter-btn {
   font-size: var(--fs-xs); padding: 2px var(--sp-h);
