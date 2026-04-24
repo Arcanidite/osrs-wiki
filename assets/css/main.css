@@ -653,6 +653,9 @@ body {
   padding: var(--sp-h) 0;
   border-bottom: 1px dashed var(--border);
 }
+.route-insert-row:hover {
+  background: #fffbeb;
+}
 .ins-row { display: flex; gap: var(--sp-q); align-items: center; flex-wrap: wrap; }
 .ins-row input {
   flex: 1; min-width: 6rem;
