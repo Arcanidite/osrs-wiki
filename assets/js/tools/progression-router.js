@@ -1296,7 +1296,10 @@
 
     list.querySelectorAll("[data-view]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const idx = +btn.dataset.view;
+        const idx   = +btn.dataset.view;
+        const fresh = store.plans();
+        const plan  = fresh[idx];
+        if (!plan) return;
         const existing = planTabs.findIndex((t) => t.activePlanIdx === idx);
         if (existing >= 0) {
           saveToTab();
@@ -1306,9 +1309,12 @@
           renderSteps(currentPath);
         } else {
           saveToTab();
-          planTabs.push(makeTab(plans[idx].name));
+          const tab = makeTab(plan.name);
+          tab.activePlanIdx = idx;
+          planTabs.push(tab);
           activeTabIdx = planTabs.length - 1;
-          loadPlan(plans[idx], idx);
+          loadPlan(plan, idx);
+          renderGoalQueue();
         }
       });
     });

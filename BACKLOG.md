@@ -229,89 +229,79 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 ## [ui:step-num-wrap-gap] `.step-num-wrap` gap + done-icon states
 
-`.step-num-wrap` needs `gap: 0.5rem`. The `.step-done-icon` should render three states — incomplete (hollow circle or `○`), indeterminate (`◐`), and checked (`✓`) — at `font-size: 1rem`.
-
-**Status:** TODO
+**Status:** DONE ✓ — `gap: 0.5rem`, `font-size: 1rem`, `data-state` driven ○/◐/✓ icon (`2b4132c`)
 
 ---
 
 ## [layout:sidebar-isolation] Sidebar panels as isolated collapsible containers
 
-Stats, Step Bank, Goal Queue, and Plan entries should each be their own collapsible container in the sidebar, not children of a unified `.tool-panel`. A burger/toggle icon on the sidebar collapses the entire sidebar so the route plan can take full width.
-
-**Status:** TODO
+**Status:** DONE ✓ — each panel is `<section class="sidebar-panel">` with `.sidebar-panel-hd` collapse toggle; burger collapses full sidebar via `.sidebar-collapsed` class
 
 ---
 
 ## [layout:rt-plans-own-container] Saved plans panel above the tool panel, not in the main flow
 
-`#rt-plans` should live above the route tab container (not inside the right `.tool-panel`), as its own full-width panel. The save-plan form (name input + save button) can be removed since plans are auto-saved on mutation.
-
-**Status:** TODO
+**Status:** DONE ✓ — `#sp-plans` in sidebar above main; save-plan form removed
 
 ---
 
 ## [router:auto-save-plan] Plans auto-saved on mutation; no explicit save step
 
-On every `recompute()` that produces a non-empty path, upsert the current plan to localStorage (insert if `activePlanIdx === -1`, update in place if `activePlanIdx >= 0`). Auto-generate a unique name (`"Route #N"`) if no name exists. Remove the "Save route" button + plan name/desc textarea from the UI. Plan list `View` button opens a tab (reuses existing tab if plan already open); tab label = plan name; renaming tab renames the plan.
-
-**Status:** TODO
+**Status:** DONE ✓ — `upsertActivePlan()` called from `recompute()` on non-empty path; no save button (`7ecb921`)
 
 ---
 
 ## [router:plan-list-redesign] Plan list: steps-done metric, View/Remove actions
 
-Replace `step-num` step count bubble with a `X / Y steps done` metric. Rename `Load` → `View` (opens plan in a tab, reuses if already open). Rename `Delete` → `Remove`. Drop desc field from list item. Inline rename on name click stays.
-
-**Status:** TODO
+**Status:** DONE ✓ — step count bubble, View/Remove buttons, tab-reuse on View (`20f3c0b`)
 
 ---
 
 ## [router:sticky-plan-bar] Sticky bar across top of plan step container per tab
 
-A bar fixed to the top of the route step container (within the tab) showing plan name + any relevant quick actions. The `Update plan` and `Delete plan` buttons are not needed since plans are auto-saved.
-
-**Status:** TODO
+**Status:** DONE ✓ — `renderRouteBar` simplified to sticky name input + step count; Update/Delete removed (`ea20aee`)
 
 ---
 
 ## [router:filter-hidden-css] Step filter visibility driven by CSS `[hidden]` attribute
 
-The All/Incomplete/Complete/Focal filter buttons currently toggle a JS class but elements are not actually hidden. `applyStepFilter` should set the HTML `hidden` attribute on non-matching `<li>` elements (or use a CSS `[data-filter-hidden]` attribute) so the DOM actually collapses them.
-
-**Status:** TODO
+**Status:** DONE ✓ — `.route-step[hidden] { display: none; }` rule present; `applyStepFilter` sets `li.hidden`
 
 ---
 
 ## [router:tab-drag-sort] Tabs sortable via drag
 
-Tab buttons in `.rt-tab-bar` should be draggable to reorder. Dragging a tab reorders `planTabs[]` and re-renders the tab bar; `activeTabIdx` follows the moved tab.
-
-**Status:** TODO
+**Status:** DONE ✓ — `draggable=true` on tab buttons; drop reorders `planTabs[]`, identity-tracks `activeTabIdx` (`fe2a3f4`)
 
 ---
 
 ## [router:tag-grants] Tag-based grants and reqs on steps
 
-`grants` should support arbitrary string tags (not just skill levels), e.g. `{ "has-barrows-gear": true }`. `reqs` should be able to target those tags: `{ tags: ["has-barrows-gear"] }`. The router's `meetsReqs` accumulates granted tags alongside skill state and validates tag reqs. Allows ad-hoc steps not tied to game-data skill progression.
-
-**Status:** TODO
+**Status:** DONE ✓ — `applyGrants` accumulates `true`-valued entries into `_tags`; `meetsReqs` validates `r.tags` against `_tags`; `+ tag` pill button in step form (`47106ef`)
 
 ---
 
 ## [router:goal-queue-in-tab] Goal queue as tab-scoped section, not sidebar
 
-Since goal queues are already per-tab state, move the Goal Queue panel from the sidebar into the tab content area (below the sticky plan bar, above the step list). Sidebar retains Stats and Step Bank only.
-
-**Status:** TODO
+**Status:** DONE ✓ — `#rt-goal-queue-wrap` in main `#router-output`; sidebar has Stats + Step Bank + Plans only
 
 ---
 
 ## [router:tabname-plan-bound] Tab names bound to plan names
 
-Tab label always reflects the plan's stored name. Renaming a tab (dblclick) updates the plan name in localStorage. Loading a plan into a tab updates that tab's label. New tabs without a saved plan use a generated name that becomes the plan name on first auto-save.
+**Status:** DONE ✓ — `loadFromTab` syncs name from plan; dblclick rename writes back to plan; `loadPlan` updates tab name (`ec1cc01`)
 
-**Status:** TODO
+---
+
+## [router:view-opens-new-tab] View plan always opens in a new tab, not the current one
+
+**Status:** DONE ✓ — `else` branch now pushes `makeTab` + sets `activeTabIdx` before `loadPlan` (`a138bbb`)
+
+---
+
+## [router:rename-syncs-tab] Renaming a plan syncs tab label immediately
+
+**Status:** DONE ✓ — inline rename `commit` finds tab by `activePlanIdx`, updates `planTabs[n].name`, calls `renderTabBar()` (`a138bbb`)
 
 ---
 
