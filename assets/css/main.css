@@ -440,7 +440,8 @@ body {
 }
 .step-seq-dot.valid   { background: #28a745; }
 .step-seq-dot.invalid { background: #dc3545; }
-.step-actions { display: flex; flex-direction: column; gap: 2px; align-items: flex-end; }
+.step-actions { display: flex; flex-direction: column; 
+    justify-content: space-between; gap: var(--sp-q); align-items: flex-end; }
 .route-step:last-child { border-bottom: none; }
 .step-num {
   width: 2rem; height: 2rem;
