@@ -1423,7 +1423,7 @@
     $("rt-sidebar-burger")?.addEventListener("click", () => {
       const row = $("rt-tool-row");
       const collapsed = row.classList.toggle("sidebar-collapsed");
-      $("rt-sidebar-burger").textContent = collapsed ? "▶" : "☰";
+      $("rt-sidebar-burger").textContent = collapsed ? "▶" : "◀";
     });
 
     document.querySelectorAll(".sidebar-collapse-btn").forEach((btn) => {
