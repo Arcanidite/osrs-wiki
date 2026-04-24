@@ -718,8 +718,30 @@
         _goalLabel: anchorStep?._goalLabel ?? "",
         _reqs:      {},
       };
-      pinnedInserts.push({ anchor: anchorStep?.id ?? "start", step });
-      onCommit(step, afterIdx);
+      const cumSkills = currentPath.slice(0, afterIdx + 1).reduce(
+        (sk, s) => applyGrants(s.grants, sk),
+        readProfile().skills
+      );
+      const unsatisfied = Object.entries(normalizeReqs(step.reqs).skills ?? {})
+        .filter(([sk, lvl]) => (cumSkills[sk] ?? 1) < lvl);
+      const synthetics = unsatisfied.map(([sk, lvl]) => ({
+        id:         `custom-prereq-${sk}-${Date.now()}`,
+        label:      `Train ${sk} to ${lvl}`,
+        grants:     { [sk]: lvl },
+        reqs:       { skills: {} },
+        _custom:    true,
+        _goalLabel: step._goalLabel,
+        _reqs:      {},
+      }));
+      let insertAt = afterIdx;
+      synthetics.forEach((syn, i) => {
+        const prevAnchor = i === 0 ? (anchorStep?.id ?? "start") : synthetics[i - 1].id;
+        pinnedInserts.push({ anchor: prevAnchor, step: syn });
+        currentPath.splice(insertAt + 1, 0, syn);
+        insertAt++;
+      });
+      pinnedInserts.push({ anchor: synthetics.length ? synthetics[synthetics.length - 1].id : (anchorStep?.id ?? "start"), step });
+      onCommit(step, insertAt);
     });
     li.querySelector(".ins-cancel").addEventListener("click", onCancel);
     return li;
