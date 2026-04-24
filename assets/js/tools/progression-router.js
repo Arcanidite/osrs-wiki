@@ -1143,6 +1143,7 @@
           if (isQuest) { manualQuestDone.delete(stepId); li.classList.remove("quest-done"); }
         }
         if (isQuest) recompute();
+        else renderPlans();
       });
     });
   }
@@ -1302,7 +1303,9 @@
 
     list.innerHTML = plans.map((plan, i) => {
       const total = plan.steps?.length ?? 0;
-      const done  = plan.steps?.filter((s) => s.done).length ?? 0;
+      const done  = i === activePlanIdx
+        ? ($("rt-steps")?.querySelectorAll(".route-step.step-done").length ?? 0)
+        : 0;
       return `
       <li class="route-step plan-list-item" data-plan-idx="${i}">
         <span class="step-num" style="background:var(--gold)" title="${total} steps">${done} / ${total}</span>

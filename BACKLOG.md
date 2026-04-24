@@ -323,6 +323,22 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 ---
 
+## [router:plan-list-done-count] Plan list done count doesn't reflect checked steps
+
+The `X / total` metric in the plan list item is computed from `plan.steps` at save time and never updates as the user checks steps off in the active route. The done count should be derived live from the DOM (count `.route-step.step-done` in `#rt-steps`) when the active plan is rendered, and update after every step toggle.
+
+**Status:** TODO
+
+---
+
+## [router:insert-ui-matches-goal-queue] Insert step UI matches goal queue card structure
+
+The inline insert form (`buildStepForm`) should use the same card/pill UI as goal queue entries — same layout, same interaction pattern (click to expand, same label+detail fields, same reqs/grants pills). The goal queue CRUD flow is the established pattern; the insert form should not be a divergent UI.
+
+**Status:** TODO
+
+---
+
 ## Completed
 
 - `[router:step-grid-layout]` — `.route-step` grid `2rem 1fr auto auto`; `step-actions` 4th column for remove/edit buttons ✓ (pending commit)
