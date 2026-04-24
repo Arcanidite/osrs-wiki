@@ -461,7 +461,7 @@ body {
   white-space: nowrap;
   padding: var(--sp-h);
 }
-.step-body { display: flex; flex-direction: column; gap: 2px; }
+.step-body { display: flex; flex-direction: column; gap: 2px; height: 100%; }
 .step-title { font-weight: 600; color: var(--ink); }
 .step-detail { font-size: var(--fs-xs); color: var(--muted); }
 .step-meta { display: flex; flex-direction: column; gap: 2px; align-items: flex-end; }
@@ -499,6 +499,7 @@ body {
 .step-done-icon {
   font-size: 1rem; color: var(--muted);
   line-height: 1; transition: opacity 0.1s;
+  padding: var(--sp-q);
 }
 .route-step .step-done-icon { opacity: 0.4; }
 .step-done-cb:checked ~ .step-done-icon,
