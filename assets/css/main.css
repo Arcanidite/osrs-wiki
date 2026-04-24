@@ -602,10 +602,10 @@ body {
 
 /* ── Plan tab bar ────────────────────────────────────────────────────────── */
 .rt-tab-bar {
-display: flex;
-    gap: var(--sp-q); border-bottom: 2px solid var(--border);
-    padding-bottom: 2px; margin: var(--sp-h) auto;
-    flex-wrap: wrap; position: sticky; top: 0px; background: inherit; z-index: 10; padding-top: var(--sp-q);
+  display: flex;
+  gap: var(--sp-q); border-bottom: 2px solid var(--border);
+  padding-bottom: 2px; margin: var(--sp-h) auto;
+  flex-wrap: wrap; position: sticky; top: 0px; background: inherit; z-index: 10; padding-top: var(--sp-q);
 }
 .rt-tab-btn {
   font-size: var(--fs-xs); padding: 2px var(--sp-h);
