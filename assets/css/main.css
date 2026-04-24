@@ -603,7 +603,7 @@ body {
 /* ── Plan tab bar ────────────────────────────────────────────────────────── */
 .rt-tab-bar {
 display: flex;
-    align-items: center; gap: var(--sp-q); border-bottom: 2px solid var(--border);
+    gap: var(--sp-q); border-bottom: 2px solid var(--border);
     padding-bottom: 2px; margin: var(--sp-h) auto;
     flex-wrap: wrap; position: sticky; top: 0px; background: inherit; z-index: 10; padding-top: var(--sp-q);
 }
@@ -619,7 +619,7 @@ display: flex;
 .rt-tab-btn.tab-drag-ghost { opacity: 0.4; }
 .rt-tab-btn[draggable] { cursor: grab; }
 .rt-tab-btn.tab-dragging { opacity: 0.4; }
-.rt-tab-new { font-size: var(--fs-sm); padding: 0 var(--sp-h); color: var(--muted); line-height: 1.6; }
+.rt-tab-new { font-size: var(--fs-sm); padding: 0 var(--sp-h); color: var(--muted); line-height: 1.6; border: 1px solid transparent; border-bottom: none; }
 .rt-tab-new:hover { color: var(--ink); }
 .rt-main { height: 100%; }
 
