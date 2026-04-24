@@ -421,7 +421,7 @@ body {
 .route-steps { list-style: none; }
 .route-step {
   display: grid;
-  grid-template-columns: 1rem 2rem 1fr auto auto;
+  grid-template-columns: auto auto 1fr auto auto;
   gap: var(--sp-h);
   align-items: start;
   padding: var(--sp-h) 0;
