@@ -619,7 +619,7 @@ body {
 .rt-tab-btn.tab-drag-ghost { opacity: 0.4; }
 .rt-tab-btn[draggable] { cursor: grab; }
 .rt-tab-btn.tab-dragging { opacity: 0.4; }
-.rt-tab-new { font-size: var(--fs-sm); padding: 0 var(--sp-h); color: var(--muted); line-height: 1.6; border-color: var(--border); border: 1px solid transparent; border-bottom: none; }
+.rt-tab-new { font-size: var(--fs-sm); padding: 0 var(--sp-h); color: var(--muted); line-height: 1.6; border-color: var(--border); border-bottom: none; }
 .rt-tab-new:hover { color: var(--ink); }
 .rt-main { height: 100%; }
 
