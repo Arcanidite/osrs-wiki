@@ -399,7 +399,7 @@ body {
 #rt-skill-grid input[type=number] {
   padding: 2px var(--sp-q);
   font-size: var(--fs);
-  text-align: center;
+  text-align: left;
   width: 3rem;
 }
 
