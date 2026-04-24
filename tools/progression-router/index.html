@@ -8,65 +8,74 @@ tags: ["tools"]
 tool_script: "/assets/js/tools/progression-router.js"
 ---
 
-<div class="tool-row">
+<div class="tool-row" id="rt-tool-row">
 
-  <!-- ── Left panel: profile + step bank + goal queue ─────────────────────── -->
-  <aside class="tool-panel" id="router-inputs">
-
-    <h2>Your Stats</h2>
-    <div class="skill-grid" id="rt-skill-grid">
-      <!-- populated from steps.jsonl skill union by progression-router.js -->
+  <!-- ── Sidebar ───────────────────────────────────────────────────────────── -->
+  <aside class="tool-panel rt-sidebar" id="router-inputs">
+    <div class="sidebar-header">
+      <button class="btn btn-ghost sidebar-burger" id="rt-sidebar-burger" title="Collapse sidebar">☰</button>
     </div>
 
-    <div class="form-group" style="margin-top:var(--sp)">
-      <label for="rt-style">Training preference</label>
-      <select id="rt-style">
-        <option value="balanced">Balanced</option>
-        <option value="efficient">XP efficient</option>
-        <option value="afk">AFK-friendly</option>
-        <option value="gp">GP-positive</option>
-      </select>
-    </div>
-
-    <div class="form-group" style="margin-top:var(--sp)">
-      <label>Exclude regions</label>
-      <div id="rt-region-excludes" class="region-tagbox">
-        <div class="rtb-tags" id="rt-region-tags"></div>
-        <input type="text" class="rtb-input" id="rt-region-input" placeholder="Add region…" autocomplete="off">
-        <ul class="rtb-dropdown" id="rt-region-dropdown" hidden></ul>
+    <section class="sidebar-panel" id="sp-stats">
+      <div class="sidebar-panel-hd">
+        <h2>Your Stats</h2>
+        <button class="sidebar-collapse-btn" data-target="sp-stats-body">▾</button>
       </div>
-    </div>
-
-    <!-- Step bank -->
-    <div style="margin-top:var(--sp); border-top:1px solid var(--border); padding-top:var(--sp)">
-      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--sp-h)">
-        <h2 style="padding:0; margin:0">Step Bank</h2>
+      <div class="sidebar-panel-body" id="sp-stats-body">
+        <div class="skill-grid" id="rt-skill-grid"></div>
+        <div class="form-group" style="margin-top:var(--sp)">
+          <label for="rt-style">Training preference</label>
+          <select id="rt-style">
+            <option value="balanced">Balanced</option>
+            <option value="efficient">XP efficient</option>
+            <option value="afk">AFK-friendly</option>
+            <option value="gp">GP-positive</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-top:var(--sp)">
+          <label>Exclude regions</label>
+          <div id="rt-region-excludes" class="region-tagbox">
+            <div class="rtb-tags" id="rt-region-tags"></div>
+            <input type="text" class="rtb-input" id="rt-region-input" placeholder="Add region…" autocomplete="off">
+            <ul class="rtb-dropdown" id="rt-region-dropdown" hidden></ul>
+          </div>
+        </div>
+        <div class="plan-saved" id="rt-save-status" hidden>Profile auto-saved</div>
       </div>
-      <input type="search" id="rt-bank-filter" placeholder="Filter steps…"
-        style="width:100%; padding:var(--sp-q) var(--sp-h); border:1px solid var(--border); border-radius:var(--radius); font-size:var(--fs-sm); margin-bottom:var(--sp-h); box-sizing:border-box">
-      <ul class="route-steps" id="rt-bank-list" style="max-height:260px; overflow-y:auto"></ul>
-    </div>
+    </section>
 
-    <!-- Goal queue -->
-    <div style="margin-top:var(--sp); border-top:1px solid var(--border); padding-top:var(--sp)">
-      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--sp-h)">
-        <h2 style="padding:0; margin:0">Goal Queue</h2>
+    <section class="sidebar-panel" id="sp-bank">
+      <div class="sidebar-panel-hd">
+        <h2>Step Bank</h2>
+        <button class="sidebar-collapse-btn" data-target="sp-bank-body">▾</button>
       </div>
-      <ul class="goal-queue" id="rt-goal-queue"></ul>
-      <p id="rt-no-goals" style="font-size:var(--fs-xs); color:var(--muted); padding:var(--sp-h) 0">No goals yet. Add steps from the bank above.</p>
-    </div>
+      <div class="sidebar-panel-body" id="sp-bank-body">
+        <input type="search" id="rt-bank-filter" placeholder="Filter steps…"
+          style="width:100%; padding:var(--sp-q) var(--sp-h); border:1px solid var(--border); border-radius:var(--radius); font-size:var(--fs-sm); margin-bottom:var(--sp-h); box-sizing:border-box">
+        <ul class="route-steps" id="rt-bank-list" style="max-height:260px; overflow-y:auto"></ul>
+      </div>
+    </section>
 
-    <div style="display:flex; gap:var(--sp-h); margin-top:var(--sp)">
+    <section class="sidebar-panel" id="sp-plans">
+      <div class="sidebar-panel-hd">
+        <h2>Saved Plans</h2>
+        <button class="sidebar-collapse-btn" data-target="sp-plans-body">▾</button>
+      </div>
+      <div class="sidebar-panel-body" id="sp-plans-body">
+        <ul class="route-steps" id="rt-plan-list"></ul>
+        <p id="rt-no-plans" style="font-size:var(--fs-xs); color:var(--muted)">No saved plans yet.</p>
+      </div>
+    </section>
+
+    <div class="sidebar-actions">
       <button class="btn btn-primary" id="rt-calculate">Calculate Route</button>
       <button class="btn btn-ghost" id="rt-reset">Reset</button>
     </div>
-    <div class="plan-saved" id="rt-save-status" hidden>Profile auto-saved</div>
   </aside>
 
-  <!-- ── Right panel: route output + saved plans ──────────────────────────── -->
-  <section class="tool-panel" id="router-output">
+  <!-- ── Main: tab bar + route output ─────────────────────────────────────── -->
+  <section class="tool-panel rt-main" id="router-output">
     <div class="rt-tab-bar" id="rt-tab-bar">
-      <!-- tab buttons injected by JS -->
       <button class="btn btn-ghost rt-tab-new" id="rt-tab-new" title="New plan tab">＋</button>
     </div>
     <div class="route-bar" id="rt-route-bar" hidden></div>
@@ -76,16 +85,20 @@ tool_script: "/assets/js/tools/progression-router.js"
       <button class="rt-filter-btn" data-filter="complete">Complete</button>
       <button class="rt-filter-btn" data-filter="focal">Focal ★</button>
     </div>
+
+    <!-- Goal queue lives here now (per-tab) -->
+    <div class="rt-goal-queue-wrap" id="rt-goal-queue-wrap">
+      <div class="rt-goal-queue-hd">
+        <span class="rt-goal-queue-title">Goal Queue</span>
+      </div>
+      <ul class="goal-queue" id="rt-goal-queue"></ul>
+      <p id="rt-no-goals" style="font-size:var(--fs-xs); color:var(--muted); padding:var(--sp-h) 0">No goals yet. Add steps from the bank.</p>
+    </div>
+
     <div id="rt-empty" style="color:var(--muted); font-size:var(--fs-sm)">
       Add goals to your queue and click <strong>Calculate Route</strong>.
     </div>
     <ul class="route-steps" id="rt-steps" hidden></ul>
-
-    <div id="rt-plans" style="margin-top:var(--sp); border-top:1px solid var(--border); padding-top:var(--sp)">
-      <h2 style="padding-top:0">Saved Plans</h2>
-      <ul class="route-steps" id="rt-plan-list"></ul>
-      <p id="rt-no-plans" style="font-size:var(--fs-xs); color:var(--muted)">No saved plans yet.</p>
-    </div>
   </section>
 
 </div>

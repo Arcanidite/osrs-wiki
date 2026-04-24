@@ -607,6 +607,28 @@ body {
 .rt-tab-new { font-size: var(--fs-sm); padding: 0 var(--sp-h); color: var(--muted); line-height: 1.6; }
 .rt-tab-new:hover { color: var(--ink); }
 
+/* Sidebar layout */
+.rt-sidebar { display: flex; flex-direction: column; gap: var(--sp); }
+.sidebar-header { display: flex; justify-content: flex-end; padding-bottom: var(--sp-h); }
+.sidebar-burger { font-size: var(--fs-lg); }
+.sidebar-panel { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.sidebar-panel-hd { display: flex; align-items: center; justify-content: space-between; padding: var(--sp-h) var(--sp); background: var(--faint); cursor: default; }
+.sidebar-panel-hd h2 { margin: 0; padding: 0; font-size: var(--fs-sm); }
+.sidebar-collapse-btn { background: none; border: none; cursor: pointer; color: var(--muted); font-size: var(--fs-sm); padding: 0; }
+.sidebar-panel-body { padding: var(--sp); }
+.sidebar-panel-body--collapsed { display: none; }
+.sidebar-actions { display: flex; gap: var(--sp-h); margin-top: auto; padding-top: var(--sp); }
+
+/* Sidebar collapsed state */
+.tool-row.sidebar-collapsed #router-inputs { width: 2.5rem; min-width: 2.5rem; overflow: hidden; }
+.tool-row.sidebar-collapsed #router-inputs .sidebar-panel,
+.tool-row.sidebar-collapsed #router-inputs .sidebar-actions { display: none; }
+
+/* Goal queue in tab */
+.rt-goal-queue-wrap { border-bottom: 1px solid var(--border); padding: var(--sp-h) 0 var(--sp) 0; margin-bottom: var(--sp-h); }
+.rt-goal-queue-hd { display: flex; align-items: center; margin-bottom: var(--sp-h); }
+.rt-goal-queue-title { font-weight: 600; font-size: var(--fs-sm); color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+
 /* ── Step filter bar ─────────────────────────────────────────────────────── */
 .rt-filter-bar {
   display: flex; gap: var(--sp-q); margin-bottom: var(--sp-h);

@@ -1325,6 +1325,21 @@
       renderSteps([]);
     });
 
+    $("rt-sidebar-burger")?.addEventListener("click", () => {
+      const row = $("rt-tool-row");
+      const collapsed = row.classList.toggle("sidebar-collapsed");
+      $("rt-sidebar-burger").textContent = collapsed ? "▶" : "☰";
+    });
+
+    document.querySelectorAll(".sidebar-collapse-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const body = $(btn.dataset.target);
+        if (!body) return;
+        const hidden = body.classList.toggle("sidebar-panel-body--collapsed");
+        btn.textContent = hidden ? "▸" : "▾";
+      });
+    });
+
     const saved = store.profile();
     if (Object.keys(saved).length) applyProfile(saved, allRegions);
 
