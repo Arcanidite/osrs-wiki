@@ -591,8 +591,8 @@ body {
   padding: 2px var(--sp-q);
   border: 1px solid transparent; border-radius: var(--radius);
   background: transparent; color: var(--muted);
-  resize: none; overflow: hidden;
-  transition: border-color 0.15s, background 0.15s;
+  resize: vertical; overflow: hidden;
+  transition: border-color 0.15s, background 0.15s; max-height: 5rem;
 }
 .step-note:focus, .step-note:not(:placeholder-shown) {
   border-color: var(--border); background: var(--bg);
