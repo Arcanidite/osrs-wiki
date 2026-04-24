@@ -486,7 +486,7 @@ body {
 .route-step:hover .step-edit-btn { opacity: 1; }
 .step-edit-btn {  color: var(--muted); }
 .step-remove-btn {  color: #c00; }
-.bank-step { grid-template-columns: 1fr auto; }
+.bank-step { grid-template-columns: auto; }
 .plan-list-item .step-meta { grid-column: 4 / span 2; }
 
 /* Per-step done toggle (under step-num circle) */
