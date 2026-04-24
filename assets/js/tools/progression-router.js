@@ -559,20 +559,24 @@
   }
 
   // ── Recompute: run route from current goal queue + profile, apply pins ────
-  function buildPlanObj(name) {
-    const last = window._routerLastPath;
-    const profile = readProfile();
-    return {
-      name,
-      goals:          last?.goals ?? goalQueue,
-      style:          profile.style,
-      skills:         profile.skills,
-      excludeRegions: profile.excludeRegions,
-      steps:          currentPath,
-      stepNotes:      store.stepNotes(),
-      pinnedInserts:  pinnedInserts,
-      date:           new Date().toLocaleDateString(),
+  function upsertActivePlan(path, profile) {
+    const plans = store.plans();
+    const name  = activePlanIdx >= 0 ? (plans[activePlanIdx]?.name ?? `Route ${plans.length + 1}`) : `Route ${plans.length + 1}`;
+    const plan  = {
+      name, goals: goalQueue, style: profile.style,
+      skills: profile.skills, excludeRegions: profile.excludeRegions,
+      steps: path, stepNotes: store.stepNotes(),
+      pinnedInserts, date: new Date().toLocaleDateString(),
     };
+    if (activePlanIdx >= 0 && plans[activePlanIdx]) {
+      store.updatePlan(activePlanIdx, plan);
+    } else {
+      activePlanIdx = store.savePlan(plan);
+    }
+    store.saveActive(plan);
+    if (planTabs[activeTabIdx]) { planTabs[activeTabIdx].name = name; planTabs[activeTabIdx].activePlanIdx = activePlanIdx; }
+    renderTabBar();
+    renderPlans();
   }
 
   function recompute() {
@@ -582,19 +586,8 @@
     const path     = applyPinnedInserts(computed);
     currentPath    = path;
     window._routerLastPath = { path, profile, goals: goalQueue };
+    if (path.length) upsertActivePlan(path, profile);
     renderSteps(path);
-    if (activePlanIdx >= 0) {
-      const existing = store.plans()[activePlanIdx];
-      store.updatePlan(activePlanIdx, buildPlanObj(existing?.name ?? `Plan ${activePlanIdx + 1}`));
-      store.saveActive(store.plans()[activePlanIdx]);
-    } else if (path.length > 0) {
-      const name = `Route #${store.plans().length + 1}`;
-      activePlanIdx = store.savePlan(buildPlanObj(name));
-      planTabs[activeTabIdx].name = name;
-      renderTabBar();
-      renderPlans();
-      store.saveActive(store.plans()[activePlanIdx]);
-    }
   }
 
   // ── Render ────────────────────────────────────────────────────────────────
