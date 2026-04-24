@@ -463,7 +463,7 @@ body {
 .step-body { display: flex; flex-direction: column; gap: 2px; height: 100%; }
 .step-title { font-weight: 600; color: var(--ink); }
 .step-detail { font-size: var(--fs-xs); color: var(--muted); }
-.step-meta { display: flex; flex-direction: column; gap: 2px; align-items: flex-end; }
+.step-meta { display: flex; flex-direction: column; gap: 2px; }
 .step-badge {
   font-size: var(--fs-xs); padding: 1px var(--sp-q);
   border-radius: var(--sp-q); background: #eee;
