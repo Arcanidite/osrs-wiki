@@ -793,6 +793,7 @@ display: flex;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   cursor: default;
+  height: 100%;
 }
 .goal-card-body {
   flex: 1;
