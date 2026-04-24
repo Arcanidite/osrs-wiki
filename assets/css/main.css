@@ -445,6 +445,7 @@ body {
     justify-content: space-between; gap: var(--sp-q); 
     height: 100%; }
 .route-step:last-child { border-bottom: none; }
+.route-step[hidden] { display: none; }
 .step-num {
   width: 2rem; height: 2rem;
   border-radius: 50%;
