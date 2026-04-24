@@ -631,6 +631,7 @@ body {
   gap: var(--sp-h); padding: var(--sp-q) 0 var(--sp-h);
   border-bottom: 1px solid var(--border); margin-bottom: var(--sp-h);
   font-size: var(--fs-sm);
+  position: sticky; top: 0; z-index: 10; background: var(--card);
 }
 .route-bar-label { color: var(--muted); font-style: italic; }
 .route-name-input {

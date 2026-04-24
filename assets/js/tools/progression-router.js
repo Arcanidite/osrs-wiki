@@ -772,47 +772,21 @@
     const plans    = store.plans();
     const name     = isLoaded ? (plans[activePlanIdx]?.name ?? "") : "";
 
-    bar.innerHTML = `
-      <span class="route-bar-name">
-        ${isLoaded
-          ? `<input class="route-name-input" type="text" value="${escHtml(name)}" title="Rename plan">`
-          : `<span class="route-bar-label">Unsaved route</span>`}
-      </span>
-      <span class="route-bar-actions">
-        ${isLoaded ? `<button class="btn btn-ghost rbar-update">Update plan</button>` : ""}
-        ${isLoaded ? `<button class="btn btn-ghost rbar-delete" style="color:#c00">Delete plan</button>` : ""}
-      </span>`;
+    bar.innerHTML = isLoaded
+      ? `<input class="route-name-input" type="text" value="${escHtml(name)}" title="Rename plan">`
+      : `<span class="route-bar-label">Unsaved route</span>`;
 
     if (isLoaded) {
       bar.querySelector(".route-name-input")?.addEventListener("change", (e) => {
         const p = store.plans()[activePlanIdx];
         if (!p) return;
-        const updated = { ...p, name: e.target.value.trim() || p.name };
+        const newName = e.target.value.trim() || p.name;
+        const updated = { ...p, name: newName };
         store.updatePlan(activePlanIdx, updated);
         store.saveActive(updated);
+        planTabs[activeTabIdx].name = newName;
+        renderTabBar();
         renderPlans();
-      });
-      bar.querySelector(".rbar-update")?.addEventListener("click", () => {
-        const last = window._routerLastPath;
-        if (!last?.path?.length) return;
-        const p = store.plans()[activePlanIdx];
-        if (!p) return;
-        const updated = { ...p, goals: last.goals, style: last.profile.style,
-          skills: last.profile.skills, steps: last.path, stepNotes: store.stepNotes(),
-          date: new Date().toLocaleDateString() };
-        store.updatePlan(activePlanIdx, updated);
-        store.saveActive(updated);
-        renderPlans(); renderRouteBar(last.path);
-      });
-      bar.querySelector(".rbar-delete")?.addEventListener("click", () => {
-        store.deletePlan(activePlanIdx);
-        store.saveActive(null);
-        activePlanIdx = -1;
-        renderPlans(); renderRouteBar([]);
-        els.empty().hidden = false;
-        els.empty().textContent = "Plan deleted.";
-        els.steps().hidden = true;
-        currentPath = [];
       });
     }
   }
