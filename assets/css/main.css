@@ -587,7 +587,7 @@ body {
 
 /* ── Per-step notes ──────────────────────────────────────────────────────── */
 .step-note {
-  width: 100%; margin-top: var(--sp-q);
+  width: 100%;
   font-size: var(--fs-xs); font-family: inherit;
   padding: 2px var(--sp-q);
   border: 1px solid var(--border); border-radius: var(--radius);
