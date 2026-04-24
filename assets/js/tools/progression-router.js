@@ -127,6 +127,27 @@
           }
         }
       });
+      btn.draggable = true;
+      btn.dataset.tabIdx = i;
+      btn.addEventListener("dragstart", (e) => {
+        e.dataTransfer.effectAllowed = "move";
+        e.dataTransfer.setData("text/plain", String(i));
+        btn.classList.add("tab-dragging");
+      });
+      btn.addEventListener("dragend", () => btn.classList.remove("tab-dragging"));
+      btn.addEventListener("dragover", (e) => { e.preventDefault(); e.dataTransfer.dropEffect = "move"; });
+      btn.addEventListener("drop", (e) => {
+        e.preventDefault();
+        const fromIdx = +e.dataTransfer.getData("text/plain");
+        const toIdx   = i;
+        if (fromIdx === toIdx) return;
+        const moved = planTabs.splice(fromIdx, 1)[0];
+        planTabs.splice(toIdx, 0, moved);
+        if (activeTabIdx === fromIdx) activeTabIdx = toIdx;
+        else if (fromIdx < activeTabIdx && toIdx >= activeTabIdx) activeTabIdx--;
+        else if (fromIdx > activeTabIdx && toIdx <= activeTabIdx) activeTabIdx++;
+        renderTabBar();
+      });
       bar.insertBefore(btn, newBtn);
     });
   }
