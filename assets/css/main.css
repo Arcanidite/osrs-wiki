@@ -363,7 +363,7 @@ body {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: var(--sp);
+  padding: var(--sp-h);
 }
 .tool-panel h2 { padding-top: 0; margin-top: 0; }
 
