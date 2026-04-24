@@ -786,7 +786,6 @@ display: flex;
 }
 .goal-card {
   display: flex;
-  align-items: center;
   gap: var(--sp-h);
   padding: var(--sp-h);
   background: var(--card);
