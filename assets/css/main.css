@@ -641,7 +641,7 @@ body {
   border-bottom: none; background: none;
 }
 .insert-step-btn {
-  font-size: 0.65rem; color: var(--muted); padding: 1px var(--sp-h);
+  font-size: 0.65rem; color: var(--muted); padding: 0.25rem var(--sp-h);
   opacity: 0; transition: opacity 0.15s;
 }
 .route-steps:hover .insert-step-btn,
