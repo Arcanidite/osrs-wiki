@@ -560,6 +560,7 @@
       "name": "Abyssal Whip",
       "url": "/items/weapons/abyssal-whip",
       "category": "item",
+      "item_id": 4151,
       "summary": "Best-in-slot melee training weapon. Requires 70 Attack.",
       "icon": null,
       "tags": [
@@ -573,6 +574,7 @@
       "name": "Toxic Blowpipe",
       "url": "/items/weapons/toxic-blowpipe",
       "category": "item",
+      "item_id": 12926,
       "summary": "Fast ranged weapon from Zulrah. Requires 75 Ranged.",
       "icon": null,
       "tags": [
@@ -586,6 +588,7 @@
       "name": "Magic Fang",
       "url": "/items/weapons/magic-fang",
       "category": "item",
+      "item_id": 12932,
       "summary": "Zulrah drop. Used to create Toxic Trident.",
       "icon": null,
       "tags": [
@@ -598,6 +601,7 @@
       "name": "Twisted Bow",
       "url": "/items/weapons/twisted-bow",
       "category": "item",
+      "item_id": 20997,
       "summary": "Chambers of Xeric unique. Best-in-slot ranged weapon. Requires 75 Ranged.",
       "icon": null,
       "tags": [
@@ -611,6 +615,7 @@
       "name": "Scythe of Vitur",
       "url": "/items/weapons/scythe",
       "category": "item",
+      "item_id": 22325,
       "summary": "Theatre of Blood unique. Best melee weapon for multi-target.",
       "icon": null,
       "tags": [
@@ -624,6 +629,7 @@
       "name": "Kodai Wand",
       "url": "/items/weapons/kodai-wand",
       "category": "item",
+      "item_id": 21006,
       "summary": "Chambers of Xeric unique. Best-in-slot magic weapon.",
       "icon": null,
       "tags": [

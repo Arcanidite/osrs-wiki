@@ -125,7 +125,7 @@ Quest-tagged steps in the route output should render a checkbox. Checking it mar
 
 `assets/js/sprite.js` is implemented but not yet included in any page layout or wired into the catalog grid.
 
-**Status:** TODO
+**Status:** DONE ✓ — sprite.js loaded in node/tool layouts; catalog.js hydrates `.sri-sprite[data-item-id]` placeholders after SpriteAtlas.load(); item entries in catalog.json carry `item_id` field
 
 ---
 
@@ -160,6 +160,7 @@ Extraction pipeline is in place. Location data remains empty until fresh XTEA ke
 - `[router:opportunistic]` — `markOpportunities` region-chaining hints ✓ (`94bd463`)
 - `[router:autoload]` — `STORE_ACTIVE` autoload on init ✓ (`94bd463`)
 - `[router:plan-actions-grid]` — equal-width Load/Delete via CSS grid ✓ (`94bd463`)
+- `[sprite:page-integration]` — sprite.js in node/tool layouts; catalog.js hydrates item sprites via SpriteAtlas; `item_id` on catalog item entries ✓ (pending commit)
 - `[sprite:atlas]` — `sprite.js` module ✓ (`94bd463`)
 - `[cache:sprites]` — `items.png` + `items-atlas.json` ✓ (`e442afd`)
 - `[cache:maptiles]` — 1,150 region chunks + manifest ✓ (`e442afd`)

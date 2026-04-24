@@ -19,6 +19,7 @@
     hydrateCategories(catalog);
     hydrateGrid(catalog);
     wireSearch(catalog);
+    window.SpriteAtlas?.load(BASE).then(() => hydrateSprites(document));
   }
 
   // ── Hydration ────────────────────────────────────────────────────────────
@@ -62,6 +63,7 @@
   function entryCard(entry) {
     const href = entry.url ? BASE + entry.url : "";
     return `<article class="entry-card" data-entry-id="${entry.id ?? ""}">
+      ${entry.item_id != null ? `<span class="ec-icon">${iconEl(entry.icon, entry.name, entry.item_id)}</span>` : ""}
       <h3>${entry.name ?? ""}</h3>
       ${entry.category ? `<span class="entry-category">${entry.category}</span>` : ""}
       ${entry.summary ? `<p>${entry.summary}</p>` : ""}
@@ -71,11 +73,24 @@
 
   // ── Icon ─────────────────────────────────────────────────────────────────
 
-  function iconEl(icon, label) {
+  function iconEl(icon, label, itemId) {
+    if (itemId != null) return `<span class="sri-sprite" data-item-id="${itemId}">${(label ?? "?")[0].toUpperCase()}</span>`;
     if (!icon) return `<span class="sri-badge">${(label ?? "?")[0].toUpperCase()}</span>`;
     if (icon.path) return `<img class="sri-icon" src="${BASE}${icon.path}" alt="${label ?? ""}">`;
-    // name-only: letter badge with data attr for future sprite swap
     return `<span class="sri-badge" data-icon="${icon.name}">${(label ?? icon.name)[0].toUpperCase()}</span>`;
+  }
+
+  // ── Sprite hydration ──────────────────────────────────────────────────────
+
+  function hydrateSprites(root) {
+    if (!window.SpriteAtlas?.ready) return;
+    root.querySelectorAll(".sri-sprite[data-item-id]").forEach((el) => {
+      const css = SpriteAtlas.css(+el.dataset.itemId);
+      if (!css) return;
+      el.style.background = css;
+      el.style.backgroundSize = "auto";
+      el.textContent = "";
+    });
   }
 
   // ── Search result row ────────────────────────────────────────────────────
@@ -85,7 +100,7 @@
     const hasPreview = !!(entry.preview?.excerpt || entry.preview?.stats?.length);
     return `<a class="search-result-item" href="${href}" data-search-item${hasPreview ? ` data-has-preview` : ""}>
       <span class="sri-lead">
-        ${iconEl(entry.icon, entry.label ?? entry.name)}
+        ${iconEl(entry.icon, entry.label ?? entry.name, entry.item_id)}
         <span class="sri-text">
           <span class="sri-name">${entry.name ?? ""}</span>
           ${entry.summary ? `<span class="sri-summary">${entry.summary}</span>` : ""}
@@ -189,6 +204,7 @@
         )
         .join("");
       results.hidden = false;
+      hydrateSprites(results);
     };
 
     input.addEventListener("input", (e) => render(e.target.value.trim().toLowerCase()));
