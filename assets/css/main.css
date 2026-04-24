@@ -808,6 +808,9 @@ display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.ins-card-label{
+  height: 100%;
+}
 .goal-card-reqs {
   font-size: var(--fs-xs);
   color: var(--muted);
