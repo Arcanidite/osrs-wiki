@@ -421,13 +421,14 @@ body {
 .route-steps { list-style: none; }
 .route-step {
   display: grid;
-  grid-template-columns: 2rem 1fr auto;
+  grid-template-columns: 2rem 1fr auto auto;
   gap: var(--sp-h);
   align-items: start;
   padding: var(--sp-h) 0;
   border-bottom: 1px solid var(--border);
   font-size: var(--fs-sm);
 }
+.step-actions { display: flex; flex-direction: column; gap: 2px; align-items: flex-end; }
 .route-step:last-child { border-bottom: none; }
 .step-num {
   width: 2rem; height: 2rem;
@@ -460,12 +461,15 @@ body {
 .step-remove-btn, .step-edit-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); color: var(--muted); opacity: 0; transition: opacity 0.1s; }
 .route-step:hover .step-remove-btn,
 .route-step:hover .step-edit-btn { opacity: 1; }
+.bank-step { grid-template-columns: 1fr auto; }
+.plan-list-item .step-meta { grid-column: 3 / span 2; }
 
 /* Quest completion checkbox */
 .quest-done-label { display: flex; align-items: center; gap: 4px; font-size: var(--fs-xs); color: var(--muted); margin-top: 2px; cursor: pointer; }
 .quest-done-label input { cursor: pointer; }
+.route-step.quest-done { box-shadow: inset 3px 0 0 #28a745; }
 .route-step.quest-done .step-title { text-decoration: line-through; opacity: 0.55; }
-.route-step.quest-done .step-num { background: #6b7280; }
+.route-step.quest-done .step-num { background: #28a745; }
 
 /* Custom step edit form */
 .step-edit-form { padding: var(--sp-h); border-bottom: 1px dashed var(--accent); display: flex; flex-direction: column; gap: var(--sp-h); }

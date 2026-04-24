@@ -16,11 +16,14 @@
     return text.trim().split("\n").map((l) => JSON.parse(l));
   }
 
-  function deriveSkills(steps) {
-    return [...new Set(steps.flatMap((s) => [
-      ...Object.keys(s.reqs  ?? {}),
-      ...Object.keys(s.grants ?? {}),
-    ]))].sort();
+  const SKILL_ORDER = [
+    "attack","strength","defence","hitpoints","ranged","prayer","magic",
+    "cooking","woodcutting","fletching","fishing","firemaking","crafting",
+    "smithing","mining","herblore","agility","thieving","slayer",
+    "farming","runecraft","hunter","construction",
+  ];
+  function deriveSkills() {
+    return SKILL_ORDER;
   }
 
   // ── Persistence ───────────────────────────────────────────────────────────
@@ -711,6 +714,8 @@
           ${invBadge(step)}
           ${reqBadge(step.reqs)}
           ${constraintBadges(step.reqs)}
+        </span>
+        <span class="step-actions">
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           <button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>
         </span>
@@ -997,7 +1002,7 @@
       ]);
     } catch { return; }
 
-    skillNames = deriveSkills(allSteps);
+    skillNames = deriveSkills();
     buildSkillGrid(skillNames);
     buildRegionTagbox(allRegions);
     renderStepBank();

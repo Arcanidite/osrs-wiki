@@ -3,3 +3,25 @@
 {"id":"barrows","label":"Barrows runs","reqs":{"attack":60,"strength":60,"defence":60,"prayer":43},"terminal":"unlock-barrows"}
 {"id":"gwd","label":"God Wars Dungeon","reqs":{"strength":60,"prayer":43},"terminal":"unlock-gwd"}
 {"id":"raids-cox","label":"Chambers of Xeric","reqs":{"attack":75,"strength":75,"defence":75,"ranged":75,"magic":75,"prayer":74},"terminal":"unlock-cox"}
+{"id":"goal-99-attack","label":"99 Attack","reqs":{"attack":1},"terminal":"train-attack-99"}
+{"id":"goal-99-strength","label":"99 Strength","reqs":{"strength":1},"terminal":"train-strength-99"}
+{"id":"goal-99-defence","label":"99 Defence","reqs":{"defence":1},"terminal":"train-defence-80"}
+{"id":"goal-99-ranged","label":"99 Ranged","reqs":{"ranged":1},"terminal":"train-ranged-99"}
+{"id":"goal-99-magic","label":"99 Magic","reqs":{"magic":1},"terminal":"train-magic-94"}
+{"id":"goal-99-prayer","label":"99 Prayer","reqs":{"prayer":1},"terminal":"train-prayer-74"}
+{"id":"goal-99-cooking","label":"99 Cooking","reqs":{"cooking":1},"terminal":"train-cooking-99"}
+{"id":"goal-99-woodcutting","label":"99 Woodcutting","reqs":{"woodcutting":1},"terminal":"train-woodcutting-99"}
+{"id":"goal-99-fletching","label":"99 Fletching","reqs":{"fletching":1},"terminal":"train-fletching-99"}
+{"id":"goal-99-fishing","label":"99 Fishing","reqs":{"fishing":1},"terminal":"train-fishing-99"}
+{"id":"goal-99-firemaking","label":"99 Firemaking","reqs":{"firemaking":1},"terminal":"train-firemaking-99"}
+{"id":"goal-99-crafting","label":"99 Crafting","reqs":{"crafting":1},"terminal":"train-crafting-99"}
+{"id":"goal-99-smithing","label":"99 Smithing","reqs":{"smithing":1},"terminal":"train-smithing-99"}
+{"id":"goal-99-mining","label":"99 Mining","reqs":{"mining":1},"terminal":"train-mining-99"}
+{"id":"goal-99-herblore","label":"99 Herblore","reqs":{"herblore":1},"terminal":"train-herblore-99"}
+{"id":"goal-99-agility","label":"99 Agility","reqs":{"agility":1},"terminal":"train-agility-99"}
+{"id":"goal-99-thieving","label":"99 Thieving","reqs":{"thieving":1},"terminal":"train-thieving-99"}
+{"id":"goal-99-slayer","label":"99 Slayer","reqs":{"slayer":1},"terminal":"train-slayer-99"}
+{"id":"goal-99-farming","label":"99 Farming","reqs":{"farming":1},"terminal":"train-farming-99"}
+{"id":"goal-99-runecraft","label":"99 Runecraft","reqs":{"runecraft":1},"terminal":"train-runecraft-99"}
+{"id":"goal-99-hunter","label":"99 Hunter","reqs":{"hunter":1},"terminal":"train-hunter-99"}
+{"id":"goal-99-construction","label":"99 Construction","reqs":{"construction":1},"terminal":"train-construction-99"}

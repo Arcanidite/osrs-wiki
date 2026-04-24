@@ -169,6 +169,9 @@ Extraction pipeline is in place. Location data remains empty until fresh XTEA ke
 
 ## Completed
 
+- `[router:step-grid-layout]` — `.route-step` grid `2rem 1fr auto auto`; `step-actions` 4th column for remove/edit buttons ✓ (pending commit)
+- `[router:quest-done-style]` — green inset left-border shadow + green step-num on quest-done ✓ (pending commit)
+- `[router:full-skill-coverage]` — `SKILL_ORDER` canonical 23-skill list; `deriveSkills()` always returns full set; 138 steps across all skills with milestone sub-steps; 27 goals in goals.jsonl ✓ (pending commit)
 - `[profile:skill-grid]` — 3-col compact grid, abbreviated labels with title tooltip, CSS `#rt-skill-grid` ✓ (pending commit)
 - `[req:schema]` — extended step `reqs` schema: `{skills, items, equipment, inv_free, constraints}`, backward-compat normalizer in router ✓ (pending commit)
 - `[req:data]` — `train-mm-tunnels`, `unlock-barrows`, `unlock-gwd` migrated to structured reqs ✓ (pending commit)
