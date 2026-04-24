@@ -466,7 +466,7 @@ body {
 .step-detail { font-size: var(--fs-xs); color: var(--muted); }
 .step-meta { display: flex; flex-direction: column; gap: 2px; align-items: flex-end; }
 .step-badge {
-  font-size: 0.65rem; padding: 1px var(--sp-q);
+  font-size: var(--fs-xs); padding: 1px var(--sp-q);
   border-radius: var(--sp-q); background: #eee;
   white-space: nowrap;
 }
