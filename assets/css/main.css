@@ -589,7 +589,7 @@ body {
   width: 100%; margin-top: var(--sp-q);
   font-size: var(--fs-xs); font-family: inherit;
   padding: 2px var(--sp-q);
-  border: 1px solid transparent; border-radius: var(--radius);
+  border: 1px solid var(--border); border-radius: var(--radius);
   background: transparent; color: var(--muted);
   resize: vertical; overflow: hidden;
   transition: border-color 0.15s, background 0.15s; max-height: 5rem;
