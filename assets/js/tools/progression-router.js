@@ -11,6 +11,7 @@
   const STORE_STEP_NOTES    = "osrs-step-notes";
   const STORE_CUSTOM_GOALS  = "osrs-router-custom-goals";
   const STORE_TAGS          = "osrs-router-tags";
+  const STORE_LOADOUTS      = "osrs-router-loadouts";
 
   // ── Data ──────────────────────────────────────────────────────────────────
   async function loadJsonl(url) {
@@ -68,6 +69,13 @@
 
     tags:      () => new Set(JSON.parse(localStorage.getItem(STORE_TAGS) ?? "[]")),
     saveTags:  (s) => localStorage.setItem(STORE_TAGS, JSON.stringify([...s].sort())),
+
+    loadouts:      ()         => JSON.parse(localStorage.getItem(STORE_LOADOUTS) ?? "{}"),
+    saveLoadout:   (id, rows) => {
+      const m = store.loadouts();
+      if (rows?.length) m[id] = rows; else delete m[id];
+      localStorage.setItem(STORE_LOADOUTS, JSON.stringify(m));
+    },
   };
 
   // ── Mutable plan state ────────────────────────────────────────────────────
@@ -1366,7 +1374,8 @@
       if (satisfied && !manualStepDone.has(step.id)) manualStepDone.add(step.id);
     });
 
-    const tab = planTabs[activeTabIdx];
+    const tab       = planTabs[activeTabIdx];
+    const loadouts  = store.loadouts();
     path.forEach((step, i) => {
       const isQuest   = (step.tags ?? []).includes("quest");
       const questDone = manualQuestDone.has(step.id);
@@ -1377,6 +1386,10 @@
       const grantSkills  = grantEntries.map(([sk, lvl]) => `${sk}:${lvl}`).join(" ");
       const grantAttr    = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
       const focalAttr   = isFocal ? ' data-focal="1"' : "";
+      const loadout   = loadouts[step.id];
+      const loadoutBadge = loadout?.length
+        ? `<span class="step-badge step-loadout-badge" data-step-id="${escHtml(step.id)}" title="View loadout">🎒 ${loadout.length} item${loadout.length !== 1 ? "s" : ""}</span>`
+        : "";
       rows.push(`<li class="route-step${stepDone ? " step-done" : ""}${step._capstone ? " step-capstone" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="${step._capstone ? "false" : "true"}"${grantAttr}${focalAttr}>
         <span class="step-drag-handle" title="Drag to reorder" ${step._capstone ? 'style="visibility:hidden"' : ""}>⠿</span>
         <label class="step-num-wrap">
@@ -1396,9 +1409,11 @@
           ${invBadge(step)}
           ${reqBadge(step.reqs)}
           ${constraintBadges(step.reqs)}
+          ${loadoutBadge}
         </span>
         <span class="step-actions">
           <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
+          <button class="btn btn-ghost step-loadout-btn" data-step-id="${escHtml(step.id)}" title="Attach loadout">🎒</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           ${step._capstone
             ? `${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}`
@@ -1420,6 +1435,7 @@
     wireDragSort(stepsEl);
     wireReqScroll(stepsEl);
     wireFocalBtns(stepsEl);
+    wireLoadoutBtns(stepsEl);
     applyStepFilter(stepsEl, activeFilter);
     const fb = $("rt-filter-bar");
     if (fb) fb.hidden = !path.length;
@@ -1774,8 +1790,8 @@
     icon.className = "ins-item-icon";
     const atlas = window.SpriteAtlas;
     if (atlas?.ready) {
-      const css = atlas.css(+itemId);
-      if (css) { icon.style.cssText = css; icon.style.display = "inline-block"; icon.style.width = "18px"; icon.style.height = "16px"; }
+      const bg = atlas.css(+itemId); const d = atlas.dims(+itemId);
+      if (bg) { icon.style.background = bg; if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; } }
       else icon.textContent = "?";
     } else icon.textContent = "?";
     const label = document.createElement("span");
@@ -1876,6 +1892,274 @@
       name: p.querySelector(".ins-item-name")?.textContent ?? "",
     }));
     return box;
+  }
+
+  // ── Loadout analysis ───────────────────────────────────────────────────────
+
+  // Mean RGB fingerprint for a 36×32 RGBA pixel buffer
+  function meanRGB(data) {
+    let r = 0, g = 0, b = 0, n = 0;
+    for (let i = 0; i < data.length; i += 4) {
+      if (data[i + 3] < 16) continue; // skip near-transparent
+      r += data[i]; g += data[i + 1]; b += data[i + 2]; n++;
+    }
+    return n ? [r / n, g / n, b / n] : [0, 0, 0];
+  }
+
+  function rgbDist([r1, g1, b1], [r2, g2, b2]) {
+    return Math.sqrt((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2);
+  }
+
+  // Async: build {id → [r,g,b]} from localStorage data URLs via ImageBitmap
+  async function buildFingerprintsAsync() {
+    if (window._atlasFpPromise) return window._atlasFpPromise;
+    window._atlasFpPromise = (async () => {
+      const fp = {};
+      const spriteIds = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k?.startsWith("osrs-sprite-") && k !== "osrs-sprite-atlas" && k !== "osrs-sprite-pack") {
+          spriteIds.push(k.slice("osrs-sprite-".length));
+        }
+      }
+      // Process sequentially to avoid thundering-herd on ImageBitmap decode
+      const oc  = new OffscreenCanvas(36, 32);
+      const ctx = oc.getContext("2d");
+      for (const id of spriteIds) {
+        const url = localStorage.getItem(`osrs-sprite-${id}`);
+        if (!url) continue;
+        try {
+          const blob = await fetch(url).then((r) => r.blob());
+          const bmp  = await createImageBitmap(blob);
+          ctx.clearRect(0, 0, 36, 32);
+          ctx.drawImage(bmp, 0, 0);
+          bmp.close();
+          fp[id] = meanRGB(ctx.getImageData(0, 0, 36, 32).data);
+        } catch { /* skip corrupt entry */ }
+      }
+      return fp;
+    })();
+    return window._atlasFpPromise;
+  }
+
+  // Extract slot image data from canvas at OSRS inventory grid position
+  // cols=4, rows=7, slot=36×32, gap=2px each side → stride=38×34
+  const SLOT_W = 36, SLOT_H = 32, SLOT_COLS = 4, SLOT_ROWS = 7;
+
+  function extractSlots(canvas) {
+    const ctx = canvas.getContext("2d");
+    const W = canvas.width, H = canvas.height;
+    // Auto-detect grid origin: find top-left such that slots fill image
+    // Simple: assume image IS the inventory grid (user crops to it)
+    const strideX = Math.floor(W / SLOT_COLS);
+    const strideY = Math.floor(H / SLOT_ROWS);
+    const slots = [];
+    for (let row = 0; row < SLOT_ROWS; row++) {
+      for (let col = 0; col < SLOT_COLS; col++) {
+        const x = col * strideX + Math.floor((strideX - SLOT_W) / 2);
+        const y = row * strideY + Math.floor((strideY - SLOT_H) / 2);
+        slots.push({ slot: row * SLOT_COLS + col, data: ctx.getImageData(Math.max(0, x), Math.max(0, y), SLOT_W, SLOT_H).data });
+      }
+    }
+    return slots;
+  }
+
+  async function analyzeLoadoutImage(canvas) {
+    const fp = await buildFingerprintsAsync();
+    const fpEntries = Object.entries(fp);
+    if (!fpEntries.length) return [];
+    const slots = extractSlots(canvas);
+    const atlas = window.SpriteAtlas;
+    return slots.map(({ slot, data }) => {
+      const slotFp = meanRGB(data);
+      const isBlank = slotFp[0] < 8 && slotFp[1] < 8 && slotFp[2] < 8;
+      if (isBlank) return { slot, candidates: [] };
+      const ranked = fpEntries
+        .map(([id, f]) => ({ id: +id, dist: rgbDist(slotFp, f) }))
+        .sort((a, b) => a.dist - b.dist)
+        .slice(0, 3)
+        .map(({ id, dist }) => ({ id, dist, entry: atlas?.entry(id) }))
+        .filter((c) => c.entry);
+      return { slot, candidates: ranked };
+    }).filter((s) => s.candidates.length);
+  }
+
+  function renderLoadoutLightbox(loadoutRows) {
+    const existing = document.getElementById("loadout-lightbox");
+    if (existing) existing.remove();
+    const overlay = document.createElement("div");
+    overlay.id = "loadout-lightbox";
+    overlay.className = "loadout-lightbox";
+    const modal = document.createElement("div");
+    modal.className = "loadout-modal";
+    const header = document.createElement("div");
+    header.className = "loadout-modal-hd";
+    header.innerHTML = `<span>Loadout</span><button class="btn btn-ghost loadout-close">✕</button>`;
+    header.querySelector(".loadout-close").addEventListener("click", () => overlay.remove());
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) overlay.remove(); });
+    const grid = document.createElement("div");
+    grid.className = "loadout-grid";
+    const atlas = window.SpriteAtlas;
+    for (let slot = 0; slot < SLOT_COLS * SLOT_ROWS; slot++) {
+      const row = loadoutRows.find((r) => r.slot === slot);
+      const cell = document.createElement("div");
+      cell.className = "loadout-cell";
+      if (row) {
+        const icon = document.createElement("span");
+        icon.className = "ins-item-icon";
+        const bg = atlas?.css(row.itemId); const d = atlas?.dims(row.itemId);
+        if (bg) { icon.style.background = bg; if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; } }
+        icon.title = row.name;
+        cell.appendChild(icon);
+      }
+      grid.appendChild(cell);
+    }
+    modal.append(header, grid);
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+  }
+
+  function openLoadoutPanel(stepId, li) {
+    const existing = li.querySelector(".loadout-panel");
+    if (existing) { existing.remove(); return; }
+    const panel = document.createElement("div");
+    panel.className = "loadout-panel";
+
+    const dropzone = document.createElement("div");
+    dropzone.className = "loadout-dropzone";
+    dropzone.textContent = "Paste or drop inventory screenshot here";
+    dropzone.tabIndex = 0;
+
+    const slotGrid = document.createElement("div");
+    slotGrid.className = "loadout-slot-grid";
+    slotGrid.hidden = true;
+
+    const actions = document.createElement("div");
+    actions.className = "loadout-actions";
+    const saveBtn = document.createElement("button");
+    saveBtn.className = "btn btn-primary"; saveBtn.textContent = "Save loadout"; saveBtn.hidden = true;
+    const cancelBtn = document.createElement("button");
+    cancelBtn.className = "btn btn-ghost"; cancelBtn.textContent = "Cancel";
+    cancelBtn.addEventListener("click", () => panel.remove());
+    actions.append(saveBtn, cancelBtn);
+
+    let pendingLoadout = [];
+
+    const processImage = async (img) => {
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth || img.width;
+      canvas.height = img.naturalHeight || img.height;
+      canvas.getContext("2d").drawImage(img, 0, 0);
+      dropzone.textContent = "Analysing…";
+      const results = await analyzeLoadoutImage(canvas);
+      pendingLoadout = [];
+      slotGrid.innerHTML = "";
+      slotGrid.hidden = false;
+      const atlas = window.SpriteAtlas;
+      for (let slot = 0; slot < SLOT_COLS * SLOT_ROWS; slot++) {
+        const res  = results.find((r) => r.slot === slot);
+        const cell = document.createElement("div");
+        cell.className = "loadout-edit-cell";
+        cell.dataset.slot = slot;
+        if (res?.candidates?.length) {
+          const top = res.candidates[0];
+          const icon = document.createElement("span");
+          icon.className = "ins-item-icon";
+          const bg = atlas?.css(top.id); const d = atlas?.dims(top.id);
+          if (bg) { icon.style.background = bg; if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; } }
+          cell.appendChild(icon);
+          cell.title = top.entry?.name ?? String(top.id);
+          pendingLoadout.push({ slot, itemId: top.id, name: top.entry?.name ?? String(top.id) });
+          // Alt candidates as small dots for correction
+          if (res.candidates.length > 1) {
+            const alts = document.createElement("div");
+            alts.className = "loadout-alts";
+            res.candidates.slice(1).forEach((c) => {
+              const alt = document.createElement("span");
+              alt.className = "loadout-alt-dot ins-item-icon";
+              const bg2 = atlas?.css(c.id); const d2 = atlas?.dims(c.id);
+              if (bg2) { alt.style.background = bg2; if (d2) { alt.style.width = `${Math.round(d2.w * 0.6)}px`; alt.style.height = `${Math.round(d2.h * 0.6)}px`; } }
+              alt.title = c.entry?.name ?? String(c.id);
+              alt.addEventListener("click", () => {
+                const idx = pendingLoadout.findIndex((r) => r.slot === slot);
+                if (idx >= 0) pendingLoadout[idx] = { slot, itemId: c.id, name: c.entry?.name ?? String(c.id) };
+                icon.style.background = bg2 ?? "";
+                if (d2) { icon.style.width = `${d2.w}px`; icon.style.height = `${d2.h}px`; }
+                cell.title = c.entry?.name ?? String(c.id);
+              });
+              alts.appendChild(alt);
+            });
+            cell.appendChild(alts);
+          }
+        }
+        slotGrid.appendChild(cell);
+      }
+      dropzone.textContent = "Replace image";
+      saveBtn.hidden = false;
+    };
+
+    const handleFile = (file) => {
+      if (!file?.type.startsWith("image/")) return;
+      const url = URL.createObjectURL(file);
+      const img = new Image();
+      img.onload = () => { processImage(img); URL.revokeObjectURL(url); };
+      img.src = url;
+    };
+
+    dropzone.addEventListener("paste", (e) => {
+      const item = [...(e.clipboardData?.items ?? [])].find((it) => it.type.startsWith("image/"));
+      if (item) { e.preventDefault(); handleFile(item.getAsFile()); }
+    });
+    document.addEventListener("paste", function onPaste(e) {
+      if (!panel.isConnected) { document.removeEventListener("paste", onPaste); return; }
+      const item = [...(e.clipboardData?.items ?? [])].find((it) => it.type.startsWith("image/"));
+      if (item) { e.preventDefault(); handleFile(item.getAsFile()); }
+    }, { once: false });
+    dropzone.addEventListener("dragover", (e) => { e.preventDefault(); dropzone.classList.add("drag-over"); });
+    dropzone.addEventListener("dragleave", () => dropzone.classList.remove("drag-over"));
+    dropzone.addEventListener("drop", (e) => {
+      e.preventDefault(); dropzone.classList.remove("drag-over");
+      handleFile(e.dataTransfer.files[0]);
+    });
+    dropzone.addEventListener("click", () => {
+      const inp = document.createElement("input");
+      inp.type = "file"; inp.accept = "image/*";
+      inp.addEventListener("change", () => handleFile(inp.files[0]));
+      inp.click();
+    });
+
+    saveBtn.addEventListener("click", () => {
+      store.saveLoadout(stepId, pendingLoadout);
+      panel.remove();
+      renderSteps(currentPath);
+    });
+
+    const existingLoad = store.loadouts()[stepId];
+    if (existingLoad?.length) {
+      const clearBtn = document.createElement("button");
+      clearBtn.className = "btn btn-ghost"; clearBtn.textContent = "Clear loadout";
+      clearBtn.addEventListener("click", () => { store.saveLoadout(stepId, null); panel.remove(); renderSteps(currentPath); });
+      actions.insertBefore(clearBtn, cancelBtn);
+    }
+
+    panel.append(dropzone, slotGrid, actions);
+    li.querySelector(".step-body")?.after(panel);
+  }
+
+  function wireLoadoutBtns(container) {
+    container.querySelectorAll(".step-loadout-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const li = btn.closest(".route-step");
+        if (!li) return;
+        openLoadoutPanel(btn.dataset.stepId, li);
+      });
+    });
+    container.querySelectorAll(".step-loadout-badge").forEach((badge) => {
+      badge.addEventListener("click", () => {
+        const rows = store.loadouts()[badge.dataset.stepId];
+        if (rows?.length) renderLoadoutLightbox(rows);
+      });
+    });
   }
 
   function wireStepEditBtn(container) {

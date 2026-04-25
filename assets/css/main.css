@@ -623,6 +623,59 @@ body {
   border-color: var(--border); color: var(--ink); outline: none;
 }
 
+/* ── Loadout panel ───────────────────────────────────────────────────────── */
+.loadout-panel {
+  grid-column: 1 / -1;
+  display: flex; flex-direction: column; gap: var(--sp-h);
+  padding: var(--sp-h); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  margin-top: var(--sp-h);
+}
+.loadout-dropzone {
+  border: 2px dashed var(--border); border-radius: var(--radius);
+  padding: var(--sp-2); text-align: center; font-size: var(--fs-xs); color: var(--muted);
+  cursor: pointer; transition: border-color 0.15s, background 0.15s;
+}
+.loadout-dropzone:hover, .loadout-dropzone.drag-over {
+  border-color: var(--gold); background: var(--faint);
+}
+.loadout-slot-grid {
+  display: grid; grid-template-columns: repeat(4, 40px); gap: 4px;
+}
+.loadout-edit-cell {
+  width: 40px; height: 36px; background: #1a1a1a; border-radius: 3px;
+  display: flex; align-items: center; justify-content: center; position: relative;
+  overflow: visible;
+}
+.loadout-alts {
+  position: absolute; bottom: -22px; left: 0; display: flex; gap: 2px; z-index: 5;
+}
+.loadout-alt-dot { cursor: pointer; opacity: 0.6; }
+.loadout-alt-dot:hover { opacity: 1; }
+.loadout-actions { display: flex; gap: var(--sp-h); }
+
+/* ── Loadout lightbox ────────────────────────────────────────────────────── */
+.loadout-lightbox {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+}
+.loadout-modal {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: var(--sp-2); display: flex; flex-direction: column; gap: var(--sp-h);
+  max-width: 90vw;
+}
+.loadout-modal-hd {
+  display: flex; justify-content: space-between; align-items: center;
+  font-weight: 600; font-size: var(--fs-sm);
+}
+.loadout-grid {
+  display: grid; grid-template-columns: repeat(4, 40px); gap: 4px;
+}
+.loadout-cell {
+  width: 40px; height: 36px; background: #1a1a1a; border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+}
+.step-loadout-badge { cursor: pointer; }
+
 /* ── Plan tab bar ────────────────────────────────────────────────────────── */
 .rt-tab-bar {
   display: flex;
