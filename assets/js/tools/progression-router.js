@@ -344,6 +344,7 @@
     customGoals.forEach((g) => {
       Object.entries(g.grants ?? {}).forEach(([k, v]) => { if (v === true) tags.add(k); });
     });
+    document.querySelectorAll(".region-tagbox--grant .rtb-tag[data-tag]").forEach((el) => tags.add(el.dataset.tag));
     return [...tags];
   }
 
@@ -459,6 +460,7 @@
     Object.entries(normalizeReqs(goal.reqs).skills ?? {}).forEach(([sk, lvl]) => appendReqRow(reqsContainer, sk, lvl));
     const existingGrants = goal.grants ?? {};
     const tagGrantBox    = makeTagReqBox(Object.entries(existingGrants).filter(([, v]) => v === true).map(([k]) => k));
+    tagGrantBox.classList.add("region-tagbox--grant");
     form.querySelector(".ge-tag-grants-wrap").appendChild(tagGrantBox);
     Object.entries(existingGrants).forEach(([k, v]) => {
       if (typeof v === "number") grantsWrap.appendChild(makeSkillPill(k, v, "grant"));
@@ -525,6 +527,7 @@
     const tagBox        = makeTagReqBox([]);
     form.querySelector(".cg-tag-reqs-wrap").appendChild(tagBox);
     const tagGrantBox   = makeTagReqBox([]);
+    tagGrantBox.classList.add("region-tagbox--grant");
     form.querySelector(".cg-tag-grants-wrap").appendChild(tagGrantBox);
 
     form.querySelector(".cg-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
@@ -884,6 +887,7 @@
       li.querySelector(".ins-tag-reqs-wrap").appendChild(tagBox);
 
       const tagGrantBox = makeTagReqBox([]);
+      tagGrantBox.classList.add("region-tagbox--grant");
       li.querySelector(".ins-tag-grants-wrap").appendChild(tagGrantBox);
 
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
