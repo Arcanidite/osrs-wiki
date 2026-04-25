@@ -1004,6 +1004,44 @@
     t._tid = setTimeout(() => t.classList.remove("rt-toast--show"), 3200);
   }
 
+  function synthPrereqs(step, skillsAtPos) {
+    const nr      = normalizeReqs(step.reqs);
+    const synths  = [];
+
+    Object.entries(nr.skills ?? {}).forEach(([sk, needed]) => {
+      if ((skillsAtPos[sk] ?? 1) >= needed) return;
+      const fromLvl = skillsAtPos[sk] ?? 1;
+      synths.push({
+        id:         `synth-${sk}-${needed}-${Date.now()}`,
+        label:      `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${fromLvl}→${needed}`,
+        detail:     "Synthetic step — no matching step found in bank.",
+        reqs:       { skills: { [sk]: fromLvl } },
+        grants:     { [sk]: needed },
+        _custom:    true,
+        _synthetic: true,
+        _goalLabel: step._goalLabel ?? "",
+      });
+    });
+
+    (nr.tags ?? []).forEach((tag) => {
+      const granted = currentPath.slice(0, currentPath.indexOf(step) + 1)
+        .some((s) => (s.grants ?? {})[tag] === true);
+      if (granted) return;
+      synths.push({
+        id:         `synth-tag-${tag}-${Date.now()}`,
+        label:      `Obtain ${tag}`,
+        detail:     "Synthetic step — no matching step found in bank.",
+        reqs:       { skills: {}, tags: [] },
+        grants:     { [tag]: true },
+        _custom:    true,
+        _synthetic: true,
+        _goalLabel: step._goalLabel ?? "",
+      });
+    });
+
+    return synths;
+  }
+
   // ── Unified step creation form (inline insert + bank new-step) ────────────
   function buildStepForm(opts) {
     const { afterIdx = -1, onCommit, onCancel } = opts;
@@ -1089,8 +1127,19 @@
         };
         mergeTags(step.reqs.tags ?? []);
         mergeTags(Object.keys(step.grants).filter((k) => step.grants[k] === true));
+        const baseSkills  = window._routerLastPath?.profile?.skills ?? {};
+        const skillsAtPos = currentPath.slice(0, afterIdx + 1)
+          .reduce((sk, s) => applyGrants(s.grants, sk), { ...baseSkills });
+        const prereqs = synthPrereqs(step, skillsAtPos);
+        let insertAt = afterIdx;
+        prereqs.forEach((pre) => {
+          const preAnchor = insertAt >= 0 ? currentPath[insertAt]?.id ?? "start" : "start";
+          pinnedInserts.push({ anchor: preAnchor, step: pre });
+          currentPath.splice(insertAt + 1, 0, pre);
+          insertAt++;
+        });
         pinnedInserts.push({ anchor: anchorStep?.id ?? "start", step });
-        onCommit(step, afterIdx);
+        onCommit(step, insertAt);
       });
     }
 
