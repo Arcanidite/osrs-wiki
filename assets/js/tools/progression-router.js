@@ -1919,121 +1919,30 @@
   }
 
   // ── Loadout analysis ───────────────────────────────────────────────────────
-  // Strategy: cross-pattern pixel lookup + neighbor verification + 1D score accumulation.
+  // Strategy: bucket-gated cross-pattern scoring.
   //
-  // Build phase  — per sprite: extract center row + center column pixels (the X/cross).
-  //   Store as flat Int16Array [dx0,dy0,r0,g0,b0, dx1,dy1,r1,g1,b1, ...] relative to
-  //   sprite center. Skip transparent pixels. The cross has at most W+H-1 opaque pixels.
+  // Build phase  — SpriteAtlas.buildBuckets() (called on load, cached):
+  //   Each localStorage sprite's cross pixels (center row + center col) are quantized
+  //   to coarse RGB buckets (5 bits/channel). Map<bucketKey, [{id, cross}]>.
   //
-  // Scan phase   — over the full image in one pass (1D index = y*W + x):
-  //   For each pixel p, check every sprite's cross pixels: does p.rgb match any cross
-  //   pixel within tolerance? If yes, verify that pixel's 8 neighbors each match the
-  //   corresponding adjacent cross pixel. Accumulate neighbor-hit count into a 1D
-  //   Int32Array score[p] for that sprite.
+  // Scan phase   — one pass over verbatim upload pixels:
+  //   For each opaque pixel p, compute its bucket key. Look up candidate sprites from
+  //   that bucket only. For each candidate cross pixel that color-matches p (within
+  //   CROSS_TOL), compute the implied sprite-center and verify 8 neighbors. Accumulate
+  //   neighbor-hit counts into a per-sprite Int32Array score buffer.
   //
   // Result phase — find score peaks in each grid slot region; top sprite per slot wins.
 
   const SLOT_W = 36, SLOT_H = 32, SLOT_COLS = 4, SLOT_ROWS = 7;
-  const CROSS_TOL = 28;   // per-channel tolerance for cross pixel match
-  const NBR_TOL   = 38;   // per-channel tolerance for neighbor verification
-  // 8-neighbor offsets as [dx, dy] pairs
+  const CROSS_TOL = 28;
+  const NBR_TOL   = 38;
   const NBR8 = [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]];
 
-  // Build cross fingerprint for one sprite's pixel buffer (SLOT_W × SLOT_H RGBA).
-  // Returns Int16Array [dx,dy,r,g,b, ...] — coords relative to sprite center.
-  function buildCross(pixels) {
-    const cx = (SLOT_W - 1) >> 1, cy = (SLOT_H - 1) >> 1;
-    const tmp = [];
-    // center row
-    for (let x = 0; x < SLOT_W; x++) {
-      const i = (cy * SLOT_W + x) * 4;
-      if (pixels[i + 3] >= 16) tmp.push(x - cx, 0, pixels[i], pixels[i+1], pixels[i+2]);
-    }
-    // center column (skip center pixel already added)
-    for (let y = 0; y < SLOT_H; y++) {
-      if (y === cy) continue;
-      const i = (y * SLOT_W + cx) * 4;
-      if (pixels[i + 3] >= 16) tmp.push(0, y - cy, pixels[i], pixels[i+1], pixels[i+2]);
-    }
-    return new Int16Array(tmp);
-  }
-
-  // Build cross lookup: { id → Int16Array } for all cached sprites.
-  async function buildCrossLookup() {
-    if (window._atlasFpPromise) return window._atlasFpPromise;
-    window._atlasFpPromise = (async () => {
-      const lookup = {};
-      const oc = new OffscreenCanvas(SLOT_W, SLOT_H);
-      const ctx = oc.getContext("2d");
-      for (let i = 0; i < localStorage.length; i++) {
-        const k = localStorage.key(i);
-        if (!k?.startsWith("osrs-sprite-") || k === "osrs-sprite-atlas" || k === "osrs-sprite-pack") continue;
-        const id  = k.slice("osrs-sprite-".length);
-        const url = localStorage.getItem(k);
-        if (!url) continue;
-        try {
-          const bmp = await createImageBitmap(await fetch(url).then(r => r.blob()));
-          ctx.clearRect(0, 0, SLOT_W, SLOT_H);
-          ctx.drawImage(bmp, 0, 0);
-          bmp.close();
-          lookup[id] = buildCross(ctx.getImageData(0, 0, SLOT_W, SLOT_H).data);
-        } catch { /* skip corrupt */ }
-      }
-      return lookup;
-    })();
-    return window._atlasFpPromise;
-  }
-
-  // Pixel match within per-channel tolerance.
   const pixMatch = (d, i, r, g, b, tol) =>
     Math.abs(d[i] - r) <= tol && Math.abs(d[i+1] - g) <= tol && Math.abs(d[i+2] - b) <= tol;
 
-  // Scan the full image for matches of one sprite's cross.
-  // Accumulates neighbor-hit counts into score[] (length imgW*imgH, pre-allocated).
-  // Returns total score across all image positions (used to rank sprites).
-  function scanCross(imgData, imgW, imgH, cross, score) {
-    const len = cross.length;
-    // Build a quick color set for the cross pixels to pre-filter candidate positions.
-    // For each pixel p in the image, check if it matches any cross pixel's color.
-    // If so, compute the implied sprite-center position and add neighbor hits to score.
-    for (let p = 0; p < score.length; p++) score[p] = 0;
-
-    let total = 0;
-    for (let py = 0; py < imgH; py++) {
-      for (let px = 0; px < imgW; px++) {
-        const pi = (py * imgW + px) * 4;
-        if (imgData[pi + 3] < 16) continue;
-        // Check each cross pixel: does this image pixel match it?
-        for (let ci = 0; ci < len; ci += 5) {
-          const dx = cross[ci], dy = cross[ci+1], cr = cross[ci+2], cg = cross[ci+3], cb = cross[ci+4];
-          if (!pixMatch(imgData, pi, cr, cg, cb, CROSS_TOL)) continue;
-          // This image pixel matches cross pixel at offset (dx,dy) from sprite center.
-          // Implied sprite center: (cx, cy) = (px - dx, py - dy)
-          const cx = px - dx, cy = py - dy;
-          if (cx < 0 || cy < 0 || cx >= imgW || cy >= imgH) continue;
-          // Verify 8 neighbors of the matched cross pixel against their cross neighbors.
-          let hits = 1;
-          for (let n = 0; n < 8; n++) {
-            const ndx = dx + NBR8[n][0], ndy = dy + NBR8[n][1];
-            // Find this neighbor in the cross
-            for (let ni = 0; ni < len; ni += 5) {
-              if (cross[ni] !== ndx || cross[ni+1] !== ndy) continue;
-              const nx = cx + ndx, ny = cy + ndy;
-              if (nx < 0 || ny < 0 || nx >= imgW || ny >= imgH) break;
-              const ni2 = (ny * imgW + nx) * 4;
-              if (pixMatch(imgData, ni2, cross[ni+2], cross[ni+3], cross[ni+4], NBR_TOL)) hits++;
-              break;
-            }
-          }
-          if (hits >= 2) {
-            score[cy * imgW + cx] += hits;
-            total += hits;
-          }
-        }
-      }
-    }
-    return total;
-  }
+  // Quantize to the same 5-bit-per-channel bucket key used by SpriteAtlas.buildBuckets.
+  const pxBucket = (r, g, b) => (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10);
 
   // Detect inventory grid slot centres via 1D projection of dark-background pixels.
   function detectGrid(imgData, imgW, imgH) {
@@ -2044,7 +1953,6 @@
         colAcc[p % imgW]++; rowAcc[(p / imgW) | 0]++;
       }
     }
-    // Find N peaks spaced ~stride apart by scanning expected-width windows.
     const peaksIn = (acc, n) => {
       const stride = acc.length / n;
       return Array.from({ length: n }, (_, k) => {
@@ -2057,15 +1965,52 @@
     return { centresX: peaksIn(colAcc, SLOT_COLS), centresY: peaksIn(rowAcc, SLOT_ROWS) };
   }
 
+  // Single-pass bucket-gated scan. Populates scoreMap: Map<id, Int32Array(imgW*imgH)>.
+  function scanBuckets(imgData, imgW, imgH, buckets, scoreMap) {
+    for (let py = 0; py < imgH; py++) {
+      for (let px = 0; px < imgW; px++) {
+        const pi = (py * imgW + px) * 4;
+        if (imgData[pi + 3] < 16) continue;
+        const pr = imgData[pi], pg = imgData[pi+1], pb = imgData[pi+2];
+        const candidates = buckets.get(pxBucket(pr, pg, pb));
+        if (!candidates) continue;
+        for (const { id, cross } of candidates) {
+          const len = cross.length;
+          for (let ci = 0; ci < len; ci += 5) {
+            const dx = cross[ci], dy = cross[ci+1], cr = cross[ci+2], cg = cross[ci+3], cb = cross[ci+4];
+            if (!pixMatch(imgData, pi, cr, cg, cb, CROSS_TOL)) continue;
+            const scx = px - dx, scy = py - dy;
+            if (scx < 0 || scy < 0 || scx >= imgW || scy >= imgH) continue;
+            let hits = 1;
+            for (let n = 0; n < 8; n++) {
+              const ndx = dx + NBR8[n][0], ndy = dy + NBR8[n][1];
+              for (let ni = 0; ni < len; ni += 5) {
+                if (cross[ni] !== ndx || cross[ni+1] !== ndy) continue;
+                const nx = scx + ndx, ny = scy + ndy;
+                if (nx < 0 || ny < 0 || nx >= imgW || ny >= imgH) break;
+                const ni2 = (ny * imgW + nx) * 4;
+                if (pixMatch(imgData, ni2, cross[ni+2], cross[ni+3], cross[ni+4], NBR_TOL)) hits++;
+                break;
+              }
+            }
+            if (hits >= 2) {
+              let sc = scoreMap.get(id);
+              if (!sc) { sc = new Int32Array(imgW * imgH); scoreMap.set(id, sc); }
+              sc[scy * imgW + scx] += hits;
+            }
+          }
+        }
+      }
+    }
+  }
+
   // For each grid slot, find the best-scoring sprite in the score buffer.
-  // score is a Map<id, Int32Array(imgW*imgH)>.
   function pickBestPerSlot(scoreMap, centresX, centresY, imgW, atlas) {
     const hw = SLOT_W >> 1, hh = SLOT_H >> 1;
     return centresX.flatMap((cx, col) =>
       centresY.flatMap((cy, row) => {
         const x0 = Math.max(0, cx - hw), x1 = Math.min(imgW, cx + hw);
         const y0 = Math.max(0, cy - hh), y1 = Math.min((scoreMap.values().next().value?.length / imgW | 0), cy + hh);
-        // Accumulate per-sprite totals within this slot region (1D scan of the region rows)
         const ranked = [...scoreMap.entries()].flatMap(([id, sc]) => {
           let s = 0;
           for (let sy = y0; sy < y1; sy++) {
@@ -2080,26 +2025,16 @@
   }
 
   async function analyzeLoadoutImage(canvas) {
-    const lookup = await buildCrossLookup();
-    const ids = Object.keys(lookup);
-    if (!ids.length) return [];
-    const ctx    = canvas.getContext("2d");
-    const imgW   = canvas.width, imgH = canvas.height;
+    const buckets = await window.SpriteAtlas.buildBuckets(SLOT_W, SLOT_H);
+    if (!buckets.size) return [];
+    const ctx     = canvas.getContext("2d");
+    const imgW    = canvas.width, imgH = canvas.height;
     const imgData = ctx.getImageData(0, 0, imgW, imgH).data;
-    const atlas  = window.SpriteAtlas;
 
     const { centresX, centresY } = detectGrid(imgData, imgW, imgH);
-
-    // One shared score buffer per sprite, reused across the scan.
-    const scoreBuf = new Int32Array(imgW * imgH);
-    // Collect per-sprite score maps only for sprites that score above zero.
     const scoreMap = new Map();
-    for (const id of ids) {
-      const total = scanCross(imgData, imgW, imgH, lookup[id], scoreBuf);
-      if (total > 0) scoreMap.set(id, scoreBuf.slice()); // copy only when hit
-    }
-
-    return pickBestPerSlot(scoreMap, centresX, centresY, imgW, atlas);
+    scanBuckets(imgData, imgW, imgH, buckets, scoreMap);
+    return pickBestPerSlot(scoreMap, centresX, centresY, imgW, window.SpriteAtlas);
   }
 
   function renderLoadoutLightbox(loadoutRows) {

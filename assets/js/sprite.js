@@ -88,7 +88,8 @@
         try { localStorage.setItem(LS_PFX + id, dataUrl); } catch { /* quota */ }
         _cssCache.delete(+id);
         window.dispatchEvent(new CustomEvent("osrs-sprite-ready", { detail: { id: +id, dataUrl } }));
-        window._atlasFpPromise = null; // invalidate fingerprint cache on new store
+        window._atlasFpPromise = null;
+        SpriteAtlas.invalidateBuckets();
         if (--remaining === 0) { worker.terminate(); }
       };
       worker.postMessage({ bitmap, entries: uncached }, [bitmap]);
@@ -104,6 +105,44 @@
       img.src = src;
     });
   }
+
+  // ── Bucket fingerprint ─────────────────────────────────────────────────────
+  // Quantise an RGB triple to a coarse bucket key (5 bits per channel).
+  // Coarseness matches CROSS_TOL (~28): adjacent buckets cover ±16, two steps cover ±32.
+  const bucketKey = (r, g, b) => (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10);
+
+  // Build cross pixels [(dx,dy,r,g,b)…] for a SLOT_W×SLOT_H RGBA pixel buffer.
+  function crossPixels(pixels, slotW, slotH) {
+    const cx = (slotW - 1) >> 1, cy = (slotH - 1) >> 1;
+    const out = [];
+    for (let x = 0; x < slotW; x++) {
+      const i = (cy * slotW + x) * 4;
+      if (pixels[i + 3] >= 16) out.push(x - cx, 0, pixels[i], pixels[i+1], pixels[i+2]);
+    }
+    for (let y = 0; y < slotH; y++) {
+      if (y === cy) continue;
+      const i = (y * slotW + cx) * 4;
+      if (pixels[i + 3] >= 16) out.push(0, y - cy, pixels[i], pixels[i+1], pixels[i+2]);
+    }
+    return new Int16Array(out);
+  }
+
+  // Load one localStorage sprite entry → {id, cross} or null.
+  async function loadEntry(key, slotW, slotH) {
+    const url = localStorage.getItem(key);
+    if (!url) return null;
+    const id = key.slice(LS_PFX.length);
+    try {
+      const bmp = await createImageBitmap(await fetch(url).then(r => r.blob()));
+      const oc  = new OffscreenCanvas(slotW, slotH);
+      const ctx = oc.getContext("2d");
+      ctx.drawImage(bmp, 0, 0);
+      bmp.close();
+      return { id, cross: crossPixels(ctx.getImageData(0, 0, slotW, slotH).data, slotW, slotH) };
+    } catch { return null; }
+  }
+
+  let _bucketsPromise = null;
 
   // ── Public API ─────────────────────────────────────────────────────────────
 
@@ -180,6 +219,42 @@
 
     /** True once load() has resolved. */
     get ready() { return _atlas !== null && _byId !== null; },
+
+    /**
+     * Build (or return cached) a bucket map for pixel-matching uploads.
+     * Map<bucketKey, [{id, cross: Int16Array}]>
+     * slotW/slotH default to 36×32 (inventory slot size used by the router).
+     */
+    buildBuckets(slotW = 36, slotH = 32) {
+      if (_bucketsPromise) return _bucketsPromise;
+      _bucketsPromise = (async () => {
+        const keys = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k?.startsWith(LS_PFX) && k !== SS_ATLAS && k !== SS_PACK) keys.push(k);
+        }
+        const BATCH = 64;
+        const entries = [];
+        for (let i = 0; i < keys.length; i += BATCH) {
+          const batch = await Promise.all(keys.slice(i, i + BATCH).map(k => loadEntry(k, slotW, slotH)));
+          batch.forEach(e => { if (e) entries.push(e); });
+        }
+        const map = new Map();
+        for (const e of entries) {
+          for (let ci = 0; ci < e.cross.length; ci += 5) {
+            const k = bucketKey(e.cross[ci+2], e.cross[ci+3], e.cross[ci+4]);
+            let bucket = map.get(k);
+            if (!bucket) { bucket = []; map.set(k, bucket); }
+            if (!bucket.some(x => x.id === e.id)) bucket.push(e);
+          }
+        }
+        return map;
+      })();
+      return _bucketsPromise;
+    },
+
+    /** Invalidate the bucket cache (called when new sprites are stored). */
+    invalidateBuckets() { _bucketsPromise = null; },
   };
 
   root.SpriteAtlas = SpriteAtlas;
