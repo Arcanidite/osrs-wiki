@@ -888,15 +888,9 @@
       });
     });
 
-    synths.sort((a, b) => {
-      const aReq = Math.min(...Object.values(a.reqs?.skills ?? { _: 0 }));
-      const bReq = Math.min(...Object.values(b.reqs?.skills ?? { _: 0 }));
-      return aReq - bReq;
-    });
     if (!synths.length) return path;
-    const init = path.slice(0, -1);
-    const last = path.slice(-1);
-    return [...init, ...synths, ...last];
+    const reqKey = (s) => Math.min(...Object.values(s.reqs?.skills ?? { _: 0 }));
+    return [...path, ...synths].sort((a, b) => reqKey(a) - reqKey(b));
   }
 
   function routeMulti(goals, steps, profile) {
