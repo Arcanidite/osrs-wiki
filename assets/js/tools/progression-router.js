@@ -545,6 +545,7 @@
       goalQueue[idx] = { ...goal, label, reqs, grants, terminal: form.querySelector(".ge-terminal").value.trim() || null };
       store.saveGoals(goalQueue);
       renderGoalQueue();
+      renderStepBank();
       recompute();
     });
 
@@ -687,11 +688,14 @@
     return true;
   }
 
-  function isUseful(step, skills, target, terminal) {
+  function isUseful(step, skills, target, terminal, grantedTags) {
     if (terminal && step.id === terminal) return true;
     if ((step.tags ?? []).includes("unlock") || (step.tags ?? []).includes("quest")) return true;
+    const targetSkills = target.skills ?? target;
+    const targetTags   = new Set(target.tags ?? []);
+    if ([...targetTags].some((t) => !grantedTags.has(t) && (step.grants ?? {})[t] === true)) return true;
     return Object.entries(step.grants ?? {}).some(([sk, lvl]) =>
-      (target[sk] ?? 0) > 0 && lvl > (skills[sk] ?? 1) && lvl <= (target[sk] ?? 0)
+      (targetSkills[sk] ?? 0) > 0 && lvl > (skills[sk] ?? 1) && lvl <= (targetSkills[sk] ?? 0)
     );
   }
 
@@ -724,11 +728,14 @@
   }
 
   function routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded, freeSlots) {
-    const target    = goal.reqs ?? {};
-    const terminal  = goal.terminal ?? null;
-    const path      = [];
-    let   invFree   = freeSlots ?? 28;
-    const remaining = new Set(
+    const normTarget  = normalizeReqs(goal.reqs ?? {});
+    const targetSkills = normTarget.skills ?? {};
+    const targetTags   = normTarget.tags ?? [];
+    const terminal    = goal.terminal ?? null;
+    const path        = [];
+    let   invFree     = freeSlots ?? 28;
+    let   grantedTags = new Set();
+    const remaining   = new Set(
       steps.map((s) => s.id).filter((id) => !completedIds.has(id) && !pinnedExclusions.has(id))
     );
 
@@ -740,16 +747,20 @@
         const step = steps.find((s) => s.id === id);
         if (!step || !meetsReqs(step.reqs, skills, ctx())) continue;
         if (!locationAccessible(step, completedIds, excluded, completedQuests)) continue;
-        if (!isUseful(step, skills, target, terminal)) continue;
+        if (!isUseful(step, skills, { skills: targetSkills, tags: targetTags }, terminal, grantedTags)) continue;
         heap.push(step, costFor(step, profile.style));
       }
       return heap;
     };
 
+    const goalMet = () =>
+      Object.entries(targetSkills).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl) &&
+      targetTags.every((t) => grantedTags.has(t)) &&
+      (!terminal || completedIds.has(terminal));
+
     let heap = buildHeap();
     while (heap.size > 0) {
-      if (Object.entries(target).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl) &&
-          (!terminal || completedIds.has(terminal))) break;
+      if (goalMet()) break;
 
       const best = heap.pop();
       if (!best || !remaining.has(best.id)) { heap = buildHeap(); continue; }
@@ -758,6 +769,7 @@
       remaining.delete(best.id);
       completedIds.add(best.id);
       if ((best.tags ?? []).includes("quest")) completedQuests.add(best.id);
+      Object.entries(best.grants ?? {}).forEach(([k, v]) => { if (v === true) grantedTags.add(k); });
       skills  = applyGrants(best.grants, skills);
       // Items consumed free up inv slots; items acquired consume them
       invFree = Math.min(28, Math.max(0, invFree - (best.inv_used ?? 0) + (best.inv_removes?.length ?? 0)));
