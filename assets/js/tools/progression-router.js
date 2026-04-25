@@ -1779,54 +1779,91 @@
     return pill;
   }
 
-  function readItemPills(container) {
-    return [...container.querySelectorAll(".ins-item-pill")].map((p) => +p.dataset.itemId);
-  }
-
   function makeItemPickerBox(selected, tint) {
-    const wrap = document.createElement("div");
-    wrap.className = "ins-item-picker-wrap";
-    const pillsEl = document.createElement("div");
-    pillsEl.className = "ins-item-pills";
-    const input = document.createElement("input");
-    input.className = "rtb-input ins-item-input"; input.type = "text"; input.placeholder = "item…";
+    const box      = document.createElement("div");
+    box.className  = "region-tagbox";
+    const pillsEl  = document.createElement("span");
+    pillsEl.className = "rtb-tags";
+    const input    = document.createElement("input");
+    input.className = "rtb-input"; input.type = "text"; input.placeholder = "item…";
     const dropdown = document.createElement("ul");
-    dropdown.className = "rtb-dropdown ins-item-dropdown"; dropdown.hidden = true;
-    wrap.append(pillsEl, input, dropdown);
+    dropdown.className = "rtb-dropdown"; dropdown.hidden = true;
+    box.append(pillsEl, input, dropdown);
 
     (selected ?? []).forEach(({ id, name }) => pillsEl.appendChild(makeItemPill(id, name, tint)));
 
-    const atlas = window.SpriteAtlas;
-    input.addEventListener("input", () => {
-      const q = input.value.trim();
-      if (!q || !atlas?.ready) { dropdown.hidden = true; return; }
-      const results = atlas.search(q).slice(0, 12);
+    const atlas = () => window.SpriteAtlas;
+
+    const highlightItem = (name, q) => {
+      const idx = name.toLowerCase().indexOf(q.toLowerCase());
+      if (idx < 0) return escHtml(name);
+      const indices = Array.from({ length: q.length }, (_, i) => idx + i);
+      return highlightTag(name, indices, true);
+    };
+
+    const renderItemOption = (id, name, q) => {
+      const li = document.createElement("li");
+      li.className = "rtb-option";
+      li.dataset.itemId = id;
+      const ico = document.createElement("span");
+      ico.className = "ins-item-icon";
+      const css = atlas()?.css(id);
+      if (css) { ico.style.cssText = css; ico.style.display = "inline-block"; ico.style.width = "18px"; ico.style.height = "16px"; }
+      const label = document.createElement("span");
+      label.innerHTML = q ? highlightItem(name, q) : escHtml(name);
+      li.append(ico, label);
+      li.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+        pillsEl.appendChild(makeItemPill(id, name, tint));
+        input.value = ""; dropdown.hidden = true;
+      });
+      return li;
+    };
+
+    const showDropdown = (q) => {
+      const a = atlas();
+      if (!a?.ready) { dropdown.hidden = true; return; }
+      const current = new Set([...pillsEl.querySelectorAll("[data-item-id]")].map((p) => p.dataset.itemId));
+      const results = a.search(q || "").slice(0, 12).filter((r) => !current.has(String(r.id)));
       if (!results.length) { dropdown.hidden = true; return; }
       dropdown.innerHTML = "";
-      results.forEach(({ id, name }) => {
-        const li = document.createElement("li");
-        li.className = "rtb-option ins-item-option";
-        const ico = document.createElement("span");
-        ico.className = "ins-item-icon";
-        const css = atlas.css(id);
-        if (css) { ico.style.cssText = css; ico.style.display = "inline-block"; ico.style.width = "18px"; ico.style.height = "16px"; }
-        li.append(ico, ` ${escHtml(name)}`);
-        li.addEventListener("mousedown", (e) => {
-          e.preventDefault();
-          pillsEl.appendChild(makeItemPill(id, name, tint));
-          input.value = ""; dropdown.hidden = true;
-        });
-        dropdown.appendChild(li);
-      });
+      results.forEach(({ id, name }) => dropdown.appendChild(renderItemOption(id, name, q)));
       dropdown.hidden = false;
-    });
-    input.addEventListener("blur", () => { setTimeout(() => { dropdown.hidden = true; }, 150); });
+    };
 
-    wrap.readItems = () => readItemPills(pillsEl).map((id) => {
-      const name = pillsEl.querySelector(`[data-item-id="${id}"] .ins-item-name`)?.textContent ?? String(id);
-      return { id, name };
+    let activeIdx = -1;
+    const setActive = (idx) => {
+      const opts = [...dropdown.querySelectorAll(".rtb-option")];
+      opts.forEach((o, i) => o.classList.toggle("rtb-option--active", i === idx));
+      activeIdx = idx;
+    };
+
+    input.addEventListener("input", () => { activeIdx = -1; showDropdown(input.value.trim()); });
+    input.addEventListener("focus", () => { if (!input.value.trim()) showDropdown(""); });
+    input.addEventListener("blur",  () => setTimeout(() => { dropdown.hidden = true; activeIdx = -1; }, 150));
+    input.addEventListener("keydown", (e) => {
+      const opts = [...dropdown.querySelectorAll(".rtb-option")];
+      if (e.key === "ArrowDown") {
+        e.preventDefault(); setActive(Math.min(activeIdx + 1, opts.length - 1));
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault(); setActive(Math.max(activeIdx - 1, -1));
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        const active = activeIdx >= 0 ? opts[activeIdx] : null;
+        if (active) { pillsEl.appendChild(makeItemPill(+active.dataset.itemId, active.querySelector("span:last-child")?.textContent ?? "", tint)); input.value = ""; dropdown.hidden = true; activeIdx = -1; }
+      } else if (e.key === "Escape") {
+        dropdown.hidden = true; activeIdx = -1;
+      } else if (e.key === "Backspace" && input.value === "") {
+        const last = pillsEl.querySelector("[data-item-id]:last-of-type");
+        if (last) last.remove();
+      }
     });
-    return wrap;
+
+    box.readItems = () => [...pillsEl.querySelectorAll("[data-item-id]")].map((p) => ({
+      id: +p.dataset.itemId,
+      name: p.querySelector(".ins-item-name")?.textContent ?? "",
+    }));
+    return box;
   }
 
   function wireStepEditBtn(container) {
