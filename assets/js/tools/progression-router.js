@@ -1320,7 +1320,9 @@
         <span class="step-actions">
           <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
-          ${step._capstone ? "" : `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>`}
+          ${step._capstone
+            ? `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" data-capstone="true" title="Remove goal">✕</button>`
+            : `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>`}
         </span>
       </li>`);
       rows.push(insertRowHtml(i));
@@ -1449,6 +1451,7 @@
   function seqInvalids(path) {
     let cs = { ...readProfile().skills };
     return path.reduce((acc, s) => {
+      if (s._capstone) return acc;
       const r = normalizeReqs(s.reqs);
       if (!Object.entries(r.skills ?? {}).every(([sk, lvl]) => (cs[sk] ?? 1) >= lvl)) acc.push(s.label);
       cs = applyGrants(s.grants, cs);
@@ -1497,7 +1500,20 @@
         const idx  = +btn.dataset.stepIdx;
         const step = currentPath[idx];
         if (!step) return;
-        if (step._capstone) { showToast("Remove the goal from the queue to remove its capstone."); return; }
+        if (step._capstone) {
+          const goalId = step.id.replace(/^capstone-/, "");
+          const qi = goalQueue.findIndex((g) => g.id === goalId || `capstone-${g.id}` === step.id);
+          if (qi !== -1) {
+            pinnedInserts = pinnedInserts.filter((p) =>
+              p.step._goalLabel !== goalQueue[qi].label && p.step.id !== step.id
+            );
+            goalQueue.splice(qi, 1);
+            store.saveGoals(goalQueue);
+            renderGoalQueue();
+            recompute();
+          }
+          return;
+        }
         const trial = currentPath.filter((_, j) => j !== idx);
         const invalids = seqInvalids(trial);
         if (invalids.length) {
