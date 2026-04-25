@@ -339,6 +339,67 @@
     return [...tags];
   }
 
+  function openTagPicker(anchorEl, onSelect) {
+    document.querySelector(".tag-picker-dropdown")?.remove();
+    const known = collectGrantedTags();
+
+    const drop = document.createElement("div");
+    drop.className = "tag-picker-dropdown";
+
+    const search = document.createElement("input");
+    search.type = "search"; search.placeholder = "filter or new tag…";
+
+    const list = document.createElement("div");
+    list.className = "tag-picker-list";
+
+    const newRow = document.createElement("div");
+    newRow.className = "tag-picker-new";
+    newRow.textContent = "＋ new tag";
+
+    const selectedVals = () => {
+      const wrap = anchorEl.closest(".ins-skill-section") ?? anchorEl.closest(".goal-edit-form");
+      if (!wrap) return new Set();
+      return new Set([...wrap.querySelectorAll(".ge-tag-req-input")].map((i) => i.value).filter(Boolean));
+    };
+
+    const buildList = (filter) => {
+      list.innerHTML = "";
+      const active = selectedVals();
+      known.filter((t) => t.toLowerCase().includes(filter.toLowerCase())).forEach((t) => {
+        const lbl = document.createElement("label");
+        const chk = document.createElement("input");
+        chk.type = "checkbox"; chk.value = t;
+        if (active.has(t)) { chk.checked = true; chk.disabled = true; lbl.classList.add("disabled"); }
+        chk.addEventListener("change", () => { if (chk.checked) { onSelect(t); chk.disabled = true; lbl.classList.add("disabled"); } });
+        lbl.append(chk, t);
+        list.appendChild(lbl);
+      });
+    };
+
+    buildList("");
+    search.addEventListener("input", () => buildList(search.value));
+    search.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter" || !search.value.trim()) return;
+      onSelect(search.value.trim());
+      drop.remove();
+    });
+    newRow.addEventListener("click", () => {
+      if (search.value.trim()) onSelect(search.value.trim());
+      drop.remove();
+    });
+
+    drop.append(search, list, newRow);
+    document.body.appendChild(drop);
+
+    const rect = anchorEl.getBoundingClientRect();
+    drop.style.top  = `${rect.bottom + 4}px`;
+    drop.style.left = `${rect.left}px`;
+
+    const close = (e) => { if (!drop.contains(e.target) && e.target !== anchorEl) { drop.remove(); document.removeEventListener("pointerdown", close); } };
+    setTimeout(() => document.addEventListener("pointerdown", close), 0);
+    search.focus();
+  }
+
   // Inline editor for an existing goal card
   function openGoalEditor(idx) {
     const ul = els.goalQueue();
@@ -361,7 +422,6 @@
         </div>
         <div class="ge-reqs"></div>
         <div class="ge-tag-reqs"></div>
-        <div class="ge-tag-panel" style="display:none"></div>
       </div>
       <div class="ins-skill-section ins-skill-section--grant">
         <div class="ins-skill-header">
@@ -379,7 +439,6 @@
 
     const reqsContainer  = form.querySelector(".ge-reqs");
     const tagReqsWrap    = form.querySelector(".ge-tag-reqs");
-    const tagPanel       = form.querySelector(".ge-tag-panel");
     const grantsWrap     = form.querySelector(".ge-grants");
     const tagGrantsWrap  = form.querySelector(".ge-tag-grants");
 
@@ -395,21 +454,8 @@
     });
 
     form.querySelector(".ge-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
-    form.querySelector(".ge-add-tag-req").addEventListener("click", () => {
-      const known = collectGrantedTags();
-      if (known.length) {
-        tagPanel.style.display = tagPanel.style.display === "none" ? "flex" : "none";
-        tagPanel.innerHTML = "";
-        known.forEach((t) => {
-          const btn = document.createElement("button");
-          btn.className = "btn btn-ghost ge-tag-choice";
-          btn.textContent = t;
-          btn.addEventListener("click", () => { appendTagReqPill(tagReqsWrap, t); tagPanel.style.display = "none"; });
-          tagPanel.appendChild(btn);
-        });
-      } else {
-        appendTagReqPill(tagReqsWrap, "");
-      }
+    form.querySelector(".ge-add-tag-req").addEventListener("click", (e) => {
+      openTagPicker(e.currentTarget, (tag) => appendTagReqPill(tagReqsWrap, tag));
     });
     form.querySelector(".ge-add-grant").addEventListener("click", () => grantsWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
     form.querySelector(".ge-add-tag-grant").addEventListener("click", () => appendTagGrantPill(tagGrantsWrap, ""));
@@ -780,7 +826,6 @@
           </div>
           <div class="ins-skill-pills ins-reqs"></div>
           <div class="ins-tag-reqs"></div>
-          <div class="ins-tag-req-panel" style="display:none"></div>
         </div>
         <div class="ins-skill-section ins-skill-section--grant">
           <div class="ins-skill-header">
@@ -798,25 +843,11 @@
 
       const reqWrap       = li.querySelector(".ins-reqs");
       const tagReqWrap    = li.querySelector(".ins-tag-reqs");
-      const tagReqPanel   = li.querySelector(".ins-tag-req-panel");
       const grantWrap     = li.querySelector(".ins-grants");
 
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
-      li.querySelector(".ins-add-tag-req").addEventListener("click", () => {
-        const known = collectGrantedTags();
-        if (known.length) {
-          tagReqPanel.style.display = tagReqPanel.style.display === "none" ? "flex" : "none";
-          tagReqPanel.innerHTML = "";
-          known.forEach((t) => {
-            const btn = document.createElement("button");
-            btn.className = "btn btn-ghost ge-tag-choice";
-            btn.textContent = t;
-            btn.addEventListener("click", () => { appendTagReqPill(tagReqWrap, t); tagReqPanel.style.display = "none"; });
-            tagReqPanel.appendChild(btn);
-          });
-        } else {
-          appendTagReqPill(tagReqWrap, "");
-        }
+      li.querySelector(".ins-add-tag-req").addEventListener("click", (e) => {
+        openTagPicker(e.currentTarget, (tag) => appendTagReqPill(tagReqWrap, tag));
       });
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
       li.querySelector(".ins-add-tag-grant").addEventListener("click", () => {
