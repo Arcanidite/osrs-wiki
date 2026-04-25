@@ -429,7 +429,7 @@ The inline insert form (`buildStepForm`) should use the same card/pill UI as goa
 
 Req and grant sections in step/goal forms should support items (not just skills/tags). Items have: name, icon (from sprite atlas as data-blob), source attribution tags, description, related items. The item picker uses the same tag-filter approach as tags but ranks by name, source tags, reqs, related items. Items display icon + name in the picker dropdown (no full metadata, just enough to identify). Pill display shows icon inline.
 
-**Status:** TODO
+**Status:** DONE ✓ — `makeItemPill(itemId, name, tint)` sprite icon + name + rm; `makeItemPickerBox(selected, tint)` tagbox-style input with `SpriteAtlas.search()` dropdown; `readItemPills(wrap)` → id array; wired into `openGoalEditor` + `buildStepForm` req/grant sections; stored as `reqs.atlas_items` / `grants.atlas_items` (`5f8ab5e`)
 
 ---
 
