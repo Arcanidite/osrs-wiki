@@ -1959,11 +1959,12 @@
   }
 
   // Serialize bucket map for transfer to worker: [[bucketKey, [[id, Int16Array], ...]], ...]
+  // Each Int16Array buffer is transferred once — dedup by identity to avoid DataCloneError.
   function serializeBuckets(buckets) {
-    const entries = [], transfers = [];
+    const entries = [], seen = new Set(), transfers = [];
     for (const [k, sprites] of buckets) {
       const spriteEntries = sprites.map(({ id, cross }) => {
-        transfers.push(cross.buffer);
+        if (!seen.has(cross.buffer)) { seen.add(cross.buffer); transfers.push(cross.buffer); }
         return [id, cross];
       });
       entries.push([k, spriteEntries]);
@@ -1985,6 +1986,11 @@
         const CROSS_TOL = ${CROSS_TOL}, NBR_TOL = ${NBR_TOL};
         const SLOT_W = ${SLOT_W}, SLOT_H = ${SLOT_H};
         const SLOT_COLS = ${SLOT_COLS}, SLOT_ROWS = ${SLOT_ROWS};
+        // A center position only scores if ≥5 of 8 neighbors also match — rules out noise hits.
+        const HIT_MIN = 5;
+        // Minimum total slot score: cross has at most SLOT_W+SLOT_H-1 pixels; require
+        // the equivalent of several full cross-width matches before declaring a winner.
+        const SCORE_MIN = (${SLOT_W} + ${SLOT_H} - 1) * HIT_MIN * 2;
 
         self.onmessage = ({ data: { imgData, imgW, imgH, bucketEntries, centresX, centresY } }) => {
           const buckets = new Map(bucketEntries.map(([k, sprites]) =>
@@ -2017,7 +2023,7 @@
                       break;
                     }
                   }
-                  if (hits >= 2) {
+                  if (hits >= HIT_MIN) {
                     let sc = scoreMap.get(id);
                     if (!sc) { sc = new Int32Array(imgW * imgH); scoreMap.set(id, sc); }
                     sc[scy * imgW + scx] += hits;
@@ -2039,7 +2045,7 @@
                   const base = sy * imgW;
                   for (let sx = x0; sx < x1; sx++) s += sc[base + sx];
                 }
-                return s > 0 ? [{ id: +id, score: s }] : [];
+                return s >= SCORE_MIN ? [{ id: +id, score: s }] : [];
               }).sort((a, b) => b.score - a.score).slice(0, 5);
               return ranked.length ? [{ slot: row * SLOT_COLS + col, candidates: ranked }] : [];
             })
