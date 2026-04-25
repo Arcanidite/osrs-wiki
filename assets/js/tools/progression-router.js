@@ -1796,7 +1796,7 @@
     const input    = document.createElement("input");
     input.className = "rtb-input"; input.type = "text"; input.placeholder = "item…";
     const dropdown = document.createElement("ul");
-    dropdown.className = "rtb-dropdown"; dropdown.hidden = true;
+    dropdown.className = "rtb-dropdown rtb-dropdown--item"; dropdown.hidden = true;
     box.append(pillsEl, input, dropdown);
 
     (selected ?? []).forEach(({ id, name }) => pillsEl.appendChild(makeItemPill(id, name, tint)));

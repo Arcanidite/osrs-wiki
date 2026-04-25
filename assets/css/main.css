@@ -794,13 +794,14 @@ display: flex;
   box-shadow: 0 var(--blur-sm) var(--sp-h) rgba(0,0,0,.08);
 }
 .rtb-option {
-  display: grid;
   padding: var(--sp-q) var(--sp-h);
   font-size: var(--fs-sm);
   cursor: pointer;
-  grid-template-columns: auto auto;
 }
 .rtb-option:hover, .rtb-option--active { background: var(--faint); }
+.rtb-dropdown--item { display: grid; grid-template-columns: auto 1fr; }
+.rtb-dropdown--item .rtb-option { display: contents; }
+.rtb-dropdown--item .rtb-option:hover > *, .rtb-dropdown--item .rtb-option--active > * { background: var(--faint); }
 .rtb-tag:focus {
   outline: 2px solid var(--gold);
   outline-offset: var(--pad-1px);
