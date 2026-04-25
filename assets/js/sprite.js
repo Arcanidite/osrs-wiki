@@ -15,16 +15,14 @@
   const PACK_PATH  = "/assets/data/cache/items.pack";
   const SS_ATLAS   = "osrs-sprite-atlas";
   const SS_PACK    = "osrs-sprite-pack";
-  const LS_SHEET   = "osrs-sprite-sheet-dataurl";
+  const LS_PFX     = "osrs-sprite-";   // localStorage key per item: osrs-sprite-{id}
 
-  let _base       = "";
-  let _atlas      = null;   // {id: {x,y,w,h}}
-  let _sheet      = null;   // HTMLImageElement
-  let _sheetUrl   = null;   // data URL used in css() — never a network path
-  let _byId       = null;   // {id: packRecord}
-  let _byName     = null;   // {"lowercase name": packRecord}
+  let _base    = "";
+  let _atlas   = null;   // {id: {x,y,w,h}}
+  let _byId    = null;   // {id: packRecord}
+  let _byName  = null;   // {"lowercase name": packRecord}
   let _promise = null;
-  let _cssCache = new Map(); // itemId → CSS string, in-memory only
+  let _cssCache = new Map(); // itemId → css string, in-memory
 
   // ── Session cache helpers ──────────────────────────────────────────────────
   function ssGet(key) {
@@ -67,24 +65,24 @@
     return atlas;
   }
 
-  function loadImage(src) {
-    const cached = localStorage.getItem(LS_SHEET);
-    const dataUrl = cached ?? null;
-    const fromUrl = (url) => new Promise((resolve, reject) => {
+  function cropSprites(atlas, img) {
+    const c = document.createElement("canvas");
+    const ctx = c.getContext("2d");
+    Object.entries(atlas).forEach(([id, e]) => {
+      if (localStorage.getItem(LS_PFX + id)) return;
+      c.width = e.w; c.height = e.h;
+      ctx.clearRect(0, 0, e.w, e.h);
+      ctx.drawImage(img, e.x, e.y, e.w, e.h, 0, 0, e.w, e.h);
+      try { localStorage.setItem(LS_PFX + id, c.toDataURL("image/png")); } catch { /* quota */ }
+    });
+  }
+
+  function loadSheet(src) {
+    return new Promise((resolve, reject) => {
       const img = new Image();
       img.onload  = () => resolve(img);
       img.onerror = reject;
-      img.src = url;
-    });
-    if (dataUrl) return fromUrl(dataUrl).then((img) => { _sheetUrl = dataUrl; return img; });
-    return fromUrl(src).then((img) => {
-      const c = document.createElement("canvas");
-      c.width = img.naturalWidth; c.height = img.naturalHeight;
-      c.getContext("2d").drawImage(img, 0, 0);
-      const url = c.toDataURL("image/png");
-      try { localStorage.setItem(LS_SHEET, url); } catch { /* quota — skip cache */ }
-      _sheetUrl = url;
-      return img;
+      img.src = src;
     });
   }
 
@@ -97,37 +95,41 @@
       _base = base ?? "";
       _promise = Promise.all([
         fetchAtlas(_base + ATLAS_PATH),
-        loadImage(_base + SHEET_PATH),
+        loadSheet(_base + SHEET_PATH),
         readPack(_base + PACK_PATH),
       ]).then(([atlas, sheet, pack]) => {
         _atlas  = atlas;
-        _sheet  = sheet;
         _byId   = pack;
         _byName = Object.values(pack).reduce((m, rec) => {
           if (rec.name) m[rec.name.toLowerCase()] = rec;
           if (rec.slug) m[rec.slug] = rec;
           return m;
         }, {});
+        cropSprites(atlas, sheet);
       });
       return _promise;
     },
 
     /** Draw item icon onto a 2D canvas context at (dx, dy). */
     draw(ctx, itemId, dx, dy) {
-      if (!_atlas || !_sheet) return;
+      if (!_atlas) return;
       const e = _atlas[itemId] ?? _atlas[String(itemId)];
       if (!e) return;
-      ctx.drawImage(_sheet, e.x, e.y, e.w, e.h, dx, dy, e.w, e.h);
+      const dataUrl = localStorage.getItem(LS_PFX + itemId);
+      if (!dataUrl) return;
+      const img = new Image();
+      img.onload = () => ctx.drawImage(img, dx, dy);
+      img.src = dataUrl;
     },
 
-    /** CSS background shorthand for use with a sized container. */
+    /** CSS background for a sized container — data URL, no coordinates needed. */
     css(itemId) {
-      if (!_atlas || !_sheet) return "";
+      if (!_atlas) return "";
       const key = +itemId;
       if (_cssCache.has(key)) return _cssCache.get(key);
-      const e = _atlas[itemId] ?? _atlas[String(itemId)];
-      if (!e) return "";
-      const val = `url('${_sheetUrl}') -${e.x}px -${e.y}px / ${_sheet.naturalWidth}px ${_sheet.naturalHeight}px no-repeat`;
+      const dataUrl = localStorage.getItem(LS_PFX + key);
+      if (!dataUrl) return "";
+      const val = `url('${dataUrl}') no-repeat center / contain`;
       _cssCache.set(key, val);
       return val;
     },
@@ -156,7 +158,7 @@
     },
 
     /** True once load() has resolved. */
-    get ready() { return _atlas !== null && _sheet !== null; },
+    get ready() { return _atlas !== null && _byId !== null; },
   };
 
   root.SpriteAtlas = SpriteAtlas;
