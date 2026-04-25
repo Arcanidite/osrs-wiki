@@ -1510,7 +1510,8 @@
             goalQueue.splice(qi, 1);
             store.saveGoals(goalQueue);
             renderGoalQueue();
-            recompute();
+            if (!goalQueue.length) { currentPath = []; renderSteps([]); }
+            else recompute();
           }
           return;
         }
