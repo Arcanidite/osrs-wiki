@@ -340,6 +340,7 @@
         goalQueue.splice(+btn.dataset.idx, 1);
         store.saveGoals(goalQueue);
         renderGoalQueue();
+        renderStepBank();
         recompute();
       });
     });
@@ -1510,6 +1511,7 @@
             goalQueue.splice(qi, 1);
             store.saveGoals(goalQueue);
             renderGoalQueue();
+            renderStepBank();
             if (!goalQueue.length) {
               currentPath = [];
               renderSteps([]);
