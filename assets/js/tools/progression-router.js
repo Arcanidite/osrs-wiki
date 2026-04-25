@@ -368,6 +368,8 @@
       if (t[i] === q[qi]) { matched.push(i); qi++; }
     }
     if (qi < q.length) return { score: 0, serial: false, indices: [] };
+    const hasRun = matched.some((v, i) => i > 0 && v === matched[i - 1] + 1);
+    if (!hasRun) return { score: 0, serial: false, indices: [] };
     const union = new Set([...q, ...t]).size;
     return { score: matched.length / union, serial: false, indices: matched };
   }
