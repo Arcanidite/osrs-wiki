@@ -106,38 +106,65 @@
     });
   }
 
-  // ── Bucket fingerprint ─────────────────────────────────────────────────────
-  // Bucket key: center pixel quantized to 5 bits/channel. Sprites are bucketed
-  // by their exact center pixel color — scan only tests candidates whose center
-  // matches the image pixel being tested.
-  const bucketKey = (r, g, b) => (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10);
+  // ── Multi-anchor cross fingerprint ────────────────────────────────────────
+  //
+  // Each sprite gets 6 anchors placed at the 2/5 offset within each third of
+  // the icon (upper-left, upper-center, upper-right, mid-left, mid-center, mid-right).
+  // Each anchor stores 4 cross tiers as independent checksums:
+  //   tier 0: 1×1  — the single center pixel         [r,g,b,n]
+  //   tier 1: 3×3  — the 8 border pixels of a 3×3    [r,g,b,n]
+  //   tier 2: 5×5  — the 16 border pixels of a 5×5   [r,g,b,n]
+  //   tier 3: 7×7  — the 24 border pixels of a 7×7   [r,g,b,n]
+  // Only opaque pixels (alpha >= 16) count. Stored as Int32Array, 16 values per anchor.
+  // Buckets are keyed by tier-0 (center pixel) of each anchor — 6 entries per sprite.
 
-  // Build progressive ring checksums for a slotW×slotH RGBA pixel buffer.
-  // Ring r = all pixels at Chebyshev distance exactly r from center.
-  // Checksum = [sumR, sumG, sumB, count] packed as Int32Array [r0,g0,b0,n0, r1,g1,b1,n1, ...].
-  // Only opaque pixels (alpha >= 16) contribute. Ring 0 is the single center pixel.
-  function buildRings(pixels, slotW, slotH) {
-    const cx = (slotW - 1) >> 1, cy = (slotH - 1) >> 1;
-    const maxR = Math.min(cx, cy);
-    const tmp = new Array(maxR + 1).fill(null).map(() => [0, 0, 0, 0]);
-    for (let y = 0; y < slotH; y++) {
-      for (let x = 0; x < slotW; x++) {
-        const i = (y * slotW + x) * 4;
-        if (pixels[i + 3] < 16) continue;
-        const r = Math.max(Math.abs(x - cx), Math.abs(y - cy));
-        if (r > maxR) continue;
-        tmp[r][0] += pixels[i]; tmp[r][1] += pixels[i+1];
-        tmp[r][2] += pixels[i+2]; tmp[r][3]++;
+  const FP_TIERS = 4;          // tier 0..3  → cross size 1,3,5,7
+  const FP_ANCHOR_COLS = 3;
+  const FP_ANCHOR_ROWS = 2;
+  const FP_ANCHORS = FP_ANCHOR_COLS * FP_ANCHOR_ROWS;  // 6
+  const FP_VALUES  = FP_TIERS * 4;   // [r,g,b,n] × 4 tiers per anchor
+
+  // Compute anchor positions: 2/5 into each column/row third of the icon.
+  function anchorPositions(slotW, slotH) {
+    const pos = [];
+    for (let row = 0; row < FP_ANCHOR_ROWS; row++) {
+      for (let col = 0; col < FP_ANCHOR_COLS; col++) {
+        const x = Math.round((col + 0.4) * slotW / FP_ANCHOR_COLS);
+        const y = Math.round((row + 0.4) * slotH / FP_ANCHOR_ROWS);
+        pos.push(x, y);
       }
     }
-    const out = new Int32Array((maxR + 1) * 4);
-    tmp.forEach(([sr, sg, sb, n], r) => {
-      out[r*4] = sr; out[r*4+1] = sg; out[r*4+2] = sb; out[r*4+3] = n;
-    });
-    return out;
+    return pos; // flat [x0,y0, x1,y1, ...]
   }
 
-  // Load one localStorage sprite → {id, rings, pixels} or null.
+  // Build cross-tier checksums for one anchor at (ax, ay) in an RGBA pixel buffer.
+  // Returns 16 Int32 values [r,g,b,n] × 4 tiers, written into out[] at offset.
+  function buildAnchorTiers(pixels, slotW, slotH, ax, ay, out, offset) {
+    for (let t = 0; t < FP_TIERS; t++) {
+      const half = t; // cross extends ±t from center; tier 0 = center only
+      let sr = 0, sg = 0, sb = 0, n = 0;
+      for (let dy = -half; dy <= half; dy++) {
+        for (let dx = -half; dx <= half; dx++) {
+          if (Math.max(Math.abs(dx), Math.abs(dy)) !== half) continue; // border only
+          const x = ax + dx, y = ay + dy;
+          if (x < 0 || y < 0 || x >= slotW || y >= slotH) continue;
+          const i = (y * slotW + x) * 4;
+          if (pixels[i + 3] < 16) continue;
+          sr += pixels[i]; sg += pixels[i+1]; sb += pixels[i+2]; n++;
+        }
+      }
+      const base = offset + t * 4;
+      out[base] = sr; out[base+1] = sg; out[base+2] = sb; out[base+3] = n;
+    }
+  }
+
+  // Bucket key: 5 bits/channel from a raw RGB triple.
+  const bucketKey = (r, g, b) => (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10);
+
+  // Load one localStorage sprite → {id, anchors, anchorPos, pixels} or null.
+  //   anchors:   Int32Array, FP_ANCHORS × FP_VALUES entries
+  //   anchorPos: flat [x,y,...] for each anchor (6 pairs)
+  //   pixels:    Uint8Array, slotW × slotH × 4
   async function loadEntry(key, slotW, slotH) {
     const url = localStorage.getItem(key);
     if (!url) return null;
@@ -148,8 +175,13 @@
       const ctx = oc.getContext("2d");
       ctx.drawImage(bmp, 0, 0);
       bmp.close();
-      const raw = ctx.getImageData(0, 0, slotW, slotH).data;
-      return { id, rings: buildRings(raw, slotW, slotH), pixels: new Uint8Array(raw.buffer) };
+      const raw       = ctx.getImageData(0, 0, slotW, slotH).data;
+      const anchorPos = anchorPositions(slotW, slotH);
+      const anchors   = new Int32Array(FP_ANCHORS * FP_VALUES);
+      for (let a = 0; a < FP_ANCHORS; a++) {
+        buildAnchorTiers(raw, slotW, slotH, anchorPos[a*2], anchorPos[a*2+1], anchors, a * FP_VALUES);
+      }
+      return { id, anchors, anchorPos, pixels: new Uint8Array(raw.buffer) };
     } catch { return null; }
   }
 
@@ -233,7 +265,7 @@
 
     /**
      * Build (or return cached) a bucket map for pixel-matching uploads.
-     * Map<bucketKey, [{id, cross: Int16Array}]>
+     * Map<bucketKey, [{id, anchorIdx, anchors, anchorPos, pixels}]>
      * slotW/slotH default to 36×32 (inventory slot size used by the router).
      */
     buildBuckets(slotW = 36, slotH = 32) {
@@ -250,14 +282,18 @@
           const batch = await Promise.all(keys.slice(i, i + BATCH).map(k => loadEntry(k, slotW, slotH)));
           batch.forEach(e => { if (e) entries.push(e); });
         }
-        // Bucket by center pixel (ring 0, single pixel: sumR/1, sumG/1, sumB/1).
+        // One bucket entry per anchor per sprite, keyed by that anchor's tier-0 pixel.
+        // Bucket value: { id, anchorIdx, anchors, anchorPos, pixels }
         const map = new Map();
         for (const e of entries) {
-          if (e.rings[3] === 0) continue; // center pixel transparent — skip
-          const k = bucketKey(e.rings[0], e.rings[1], e.rings[2]);
-          let bucket = map.get(k);
-          if (!bucket) { bucket = []; map.set(k, bucket); }
-          bucket.push(e);
+          for (let a = 0; a < FP_ANCHORS; a++) {
+            const base = a * FP_VALUES;
+            if (e.anchors[base + 3] === 0) continue; // anchor center transparent
+            const k = bucketKey(e.anchors[base], e.anchors[base+1], e.anchors[base+2]);
+            let bucket = map.get(k);
+            if (!bucket) { bucket = []; map.set(k, bucket); }
+            bucket.push({ id: e.id, anchorIdx: a, anchors: e.anchors, anchorPos: e.anchorPos, pixels: e.pixels });
+          }
         }
         return map;
       })();
@@ -266,6 +302,11 @@
 
     /** Invalidate the bucket cache (called when new sprites are stored). */
     invalidateBuckets() { _bucketsPromise = null; },
+
+    /** Fingerprint constants needed by the scan worker. */
+    get fpConsts() {
+      return { FP_TIERS, FP_ANCHORS, FP_VALUES, FP_ANCHOR_COLS, FP_ANCHOR_ROWS };
+    },
   };
 
   root.SpriteAtlas = SpriteAtlas;
