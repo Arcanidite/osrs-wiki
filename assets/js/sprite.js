@@ -107,27 +107,37 @@
   }
 
   // ── Bucket fingerprint ─────────────────────────────────────────────────────
-  // Quantise an RGB triple to a coarse bucket key (5 bits per channel).
-  // Coarseness matches CROSS_TOL (~28): adjacent buckets cover ±16, two steps cover ±32.
+  // Bucket key: center pixel quantized to 5 bits/channel. Sprites are bucketed
+  // by their exact center pixel color — scan only tests candidates whose center
+  // matches the image pixel being tested.
   const bucketKey = (r, g, b) => (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10);
 
-  // Build cross pixels [(dx,dy,r,g,b)…] for a SLOT_W×SLOT_H RGBA pixel buffer.
-  function crossPixels(pixels, slotW, slotH) {
+  // Build progressive ring checksums for a slotW×slotH RGBA pixel buffer.
+  // Ring r = all pixels at Chebyshev distance exactly r from center.
+  // Checksum = [sumR, sumG, sumB, count] packed as Int32Array [r0,g0,b0,n0, r1,g1,b1,n1, ...].
+  // Only opaque pixels (alpha >= 16) contribute. Ring 0 is the single center pixel.
+  function buildRings(pixels, slotW, slotH) {
     const cx = (slotW - 1) >> 1, cy = (slotH - 1) >> 1;
-    const out = [];
-    for (let x = 0; x < slotW; x++) {
-      const i = (cy * slotW + x) * 4;
-      if (pixels[i + 3] >= 16) out.push(x - cx, 0, pixels[i], pixels[i+1], pixels[i+2]);
-    }
+    const maxR = Math.min(cx, cy);
+    const tmp = new Array(maxR + 1).fill(null).map(() => [0, 0, 0, 0]);
     for (let y = 0; y < slotH; y++) {
-      if (y === cy) continue;
-      const i = (y * slotW + cx) * 4;
-      if (pixels[i + 3] >= 16) out.push(0, y - cy, pixels[i], pixels[i+1], pixels[i+2]);
+      for (let x = 0; x < slotW; x++) {
+        const i = (y * slotW + x) * 4;
+        if (pixels[i + 3] < 16) continue;
+        const r = Math.max(Math.abs(x - cx), Math.abs(y - cy));
+        if (r > maxR) continue;
+        tmp[r][0] += pixels[i]; tmp[r][1] += pixels[i+1];
+        tmp[r][2] += pixels[i+2]; tmp[r][3]++;
+      }
     }
-    return new Int16Array(out);
+    const out = new Int32Array((maxR + 1) * 4);
+    tmp.forEach(([sr, sg, sb, n], r) => {
+      out[r*4] = sr; out[r*4+1] = sg; out[r*4+2] = sb; out[r*4+3] = n;
+    });
+    return out;
   }
 
-  // Load one localStorage sprite entry → {id, cross} or null.
+  // Load one localStorage sprite → {id, rings, pixels} or null.
   async function loadEntry(key, slotW, slotH) {
     const url = localStorage.getItem(key);
     if (!url) return null;
@@ -138,7 +148,8 @@
       const ctx = oc.getContext("2d");
       ctx.drawImage(bmp, 0, 0);
       bmp.close();
-      return { id, cross: crossPixels(ctx.getImageData(0, 0, slotW, slotH).data, slotW, slotH) };
+      const raw = ctx.getImageData(0, 0, slotW, slotH).data;
+      return { id, rings: buildRings(raw, slotW, slotH), pixels: new Uint8Array(raw.buffer) };
     } catch { return null; }
   }
 
@@ -239,14 +250,14 @@
           const batch = await Promise.all(keys.slice(i, i + BATCH).map(k => loadEntry(k, slotW, slotH)));
           batch.forEach(e => { if (e) entries.push(e); });
         }
+        // Bucket by center pixel (ring 0, single pixel: sumR/1, sumG/1, sumB/1).
         const map = new Map();
         for (const e of entries) {
-          for (let ci = 0; ci < e.cross.length; ci += 5) {
-            const k = bucketKey(e.cross[ci+2], e.cross[ci+3], e.cross[ci+4]);
-            let bucket = map.get(k);
-            if (!bucket) { bucket = []; map.set(k, bucket); }
-            if (!bucket.some(x => x.id === e.id)) bucket.push(e);
-          }
+          if (e.rings[3] === 0) continue; // center pixel transparent — skip
+          const k = bucketKey(e.rings[0], e.rings[1], e.rings[2]);
+          let bucket = map.get(k);
+          if (!bucket) { bucket = []; map.set(k, bucket); }
+          bucket.push(e);
         }
         return map;
       })();

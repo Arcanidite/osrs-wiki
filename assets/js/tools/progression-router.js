@@ -1934,8 +1934,6 @@
   // Result phase — find score peaks in each grid slot region; top sprite per slot wins.
 
   const SLOT_W = 36, SLOT_H = 32, SLOT_COLS = 4, SLOT_ROWS = 7;
-  const CROSS_TOL = 28;
-  const NBR_TOL   = 38;
 
   // Detect inventory grid slot centres via 1D projection of dark-background pixels.
   function detectGrid(imgData, imgW, imgH) {
@@ -1958,95 +1956,132 @@
     return { centresX: peaksIn(colAcc, SLOT_COLS), centresY: peaksIn(rowAcc, SLOT_ROWS) };
   }
 
-  // Serialize bucket map for transfer to worker: [[bucketKey, [[id, Int16Array], ...]], ...]
-  // Each Int16Array buffer is transferred once — dedup by identity to avoid DataCloneError.
+  // Serialize bucket map for transfer to worker.
+  // Each sprite's rings (Int32Array) and pixels (Uint8Array) buffers are transferred once.
   function serializeBuckets(buckets) {
     const entries = [], seen = new Set(), transfers = [];
     for (const [k, sprites] of buckets) {
-      const spriteEntries = sprites.map(({ id, cross }) => {
-        if (!seen.has(cross.buffer)) { seen.add(cross.buffer); transfers.push(cross.buffer); }
-        return [id, cross];
+      const spriteEntries = sprites.map(({ id, rings, pixels }) => {
+        if (!seen.has(rings.buffer))  { seen.add(rings.buffer);  transfers.push(rings.buffer); }
+        if (!seen.has(pixels.buffer)) { seen.add(pixels.buffer); transfers.push(pixels.buffer); }
+        return [id, rings, pixels];
       });
       entries.push([k, spriteEntries]);
     }
     return { entries, transfers };
   }
 
-  // Offload the scan + slot-pick entirely to a worker so the UI thread is never blocked.
+  // Offload scan + slot-pick to a worker. Upload imgData is verbatim — zero processing.
   function scanBucketsAsync(imgData, imgW, imgH, buckets, centresX, centresY) {
     return new Promise((resolve) => {
       const { entries, transfers } = serializeBuckets(buckets);
-      // imgData buffer is also transferred — zero-copy into worker
       transfers.push(imgData.buffer);
       const src = `
-        const pixMatch = (d,i,r,g,b,t) =>
-          Math.abs(d[i]-r)<=t && Math.abs(d[i+1]-g)<=t && Math.abs(d[i+2]-b)<=t;
-        const pxBucket = (r,g,b) => (r>>3)|((g>>3)<<5)|((b>>3)<<10);
-        const NBR8 = [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]];
-        const CROSS_TOL = ${CROSS_TOL}, NBR_TOL = ${NBR_TOL};
         const SLOT_W = ${SLOT_W}, SLOT_H = ${SLOT_H};
         const SLOT_COLS = ${SLOT_COLS}, SLOT_ROWS = ${SLOT_ROWS};
-        // A center position only scores if ≥5 of 8 neighbors also match — rules out noise hits.
-        const HIT_MIN = 5;
-        // Minimum total slot score: cross has at most SLOT_W+SLOT_H-1 pixels; require
-        // the equivalent of several full cross-width matches before declaring a winner.
-        const SCORE_MIN = (${SLOT_W} + ${SLOT_H} - 1) * HIT_MIN * 2;
+        const CX = (SLOT_W - 1) >> 1, CY = (SLOT_H - 1) >> 1;
+        const MAX_R = Math.min(CX, CY);
+        // Per-channel tolerance for ring checksum comparison (sum-level, scales with ring size).
+        const RING_TOL = 18;
+        // Minimum literal pixel match ratio (opaque pixels only) to accept a candidate.
+        const MATCH_RATIO = 0.72;
+        // Per-pixel per-channel tolerance for literal comparison.
+        const PIX_TOL = 22;
+
+        const pxBucket = (r,g,b) => (r>>3)|((g>>3)<<5)|((b>>3)<<10);
+
+        // Verify progressive rings of a candidate against the image at implied top-left (ox,oy).
+        // rings: Int32Array [sumR,sumG,sumB,count, ...] per ring.
+        // Returns true only if all rings pass checksum within tolerance.
+        function ringsMatch(imgData, imgW, imgH, ox, oy, rings) {
+          const nRings = rings.length >> 2;
+          for (let ri = 0; ri < nRings; ri++) {
+            const expR = rings[ri*4], expG = rings[ri*4+1], expB = rings[ri*4+2], expN = rings[ri*4+3];
+            if (expN === 0) continue;
+            let sr = 0, sg = 0, sb = 0, n = 0;
+            const rMin = ri === 0 ? 0 : ri, rMax = ri;
+            for (let dy = -rMax; dy <= rMax; dy++) {
+              for (let dx = -rMax; dx <= rMax; dx++) {
+                if (Math.max(Math.abs(dx), Math.abs(dy)) !== ri) continue;
+                const ix = ox + CX + dx, iy = oy + CY + dy;
+                if (ix < 0 || iy < 0 || ix >= imgW || iy >= imgH) continue;
+                const ii = (iy * imgW + ix) * 4;
+                if (imgData[ii+3] < 16) continue;
+                sr += imgData[ii]; sg += imgData[ii+1]; sb += imgData[ii+2]; n++;
+              }
+            }
+            // Allow count mismatch up to 2 (border clipping), but require sum to match.
+            if (Math.abs(n - expN) > 2) return false;
+            if (n === 0) continue;
+            const scale = n / expN;
+            if (Math.abs(sr - expR * scale) > RING_TOL * n) return false;
+            if (Math.abs(sg - expG * scale) > RING_TOL * n) return false;
+            if (Math.abs(sb - expB * scale) > RING_TOL * n) return false;
+          }
+          return true;
+        }
+
+        // Literal pixel comparison between sprite pixels and image region at (ox,oy).
+        // Returns matched/total ratio for opaque sprite pixels.
+        function literalMatch(imgData, imgW, imgH, ox, oy, spritePixels) {
+          let matched = 0, total = 0;
+          for (let sy = 0; sy < SLOT_H; sy++) {
+            for (let sx = 0; sx < SLOT_W; sx++) {
+              const si = (sy * SLOT_W + sx) * 4;
+              if (spritePixels[si+3] < 16) continue;
+              total++;
+              const ix = ox + sx, iy = oy + sy;
+              if (ix < 0 || iy < 0 || ix >= imgW || iy >= imgH) continue;
+              const ii = (iy * imgW + ix) * 4;
+              if (imgData[ii+3] < 16) continue;
+              if (Math.abs(imgData[ii]   - spritePixels[si])   <= PIX_TOL &&
+                  Math.abs(imgData[ii+1] - spritePixels[si+1]) <= PIX_TOL &&
+                  Math.abs(imgData[ii+2] - spritePixels[si+2]) <= PIX_TOL) matched++;
+            }
+          }
+          return total > 0 ? matched / total : 0;
+        }
 
         self.onmessage = ({ data: { imgData, imgW, imgH, bucketEntries, centresX, centresY } }) => {
           const buckets = new Map(bucketEntries.map(([k, sprites]) =>
-            [k, sprites.map(([id, cross]) => ({ id, cross: new Int16Array(cross) }))]
+            [k, sprites.map(([id, rings, pixels]) => ({
+              id,
+              rings: new Int32Array(rings),
+              pixels: new Uint8Array(pixels),
+            }))]
           ));
-          const scoreMap = new Map();
-          for (let py = 0; py < imgH; py++) {
-            for (let px = 0; px < imgW; px++) {
-              const pi = (py * imgW + px) * 4;
-              if (imgData[pi + 3] < 16) continue;
-              const pr = imgData[pi], pg = imgData[pi+1], pb = imgData[pi+2];
-              const candidates = buckets.get(pxBucket(pr, pg, pb));
-              if (!candidates) continue;
-              for (const { id, cross } of candidates) {
-                const len = cross.length;
-                for (let ci = 0; ci < len; ci += 5) {
-                  const dx = cross[ci], dy = cross[ci+1], cr = cross[ci+2], cg = cross[ci+3], cb = cross[ci+4];
-                  if (!pixMatch(imgData, pi, cr, cg, cb, CROSS_TOL)) continue;
-                  const scx = px - dx, scy = py - dy;
-                  if (scx < 0 || scy < 0 || scx >= imgW || scy >= imgH) continue;
-                  let hits = 1;
-                  for (let n = 0; n < 8; n++) {
-                    const ndx = dx + NBR8[n][0], ndy = dy + NBR8[n][1];
-                    for (let ni = 0; ni < len; ni += 5) {
-                      if (cross[ni] !== ndx || cross[ni+1] !== ndy) continue;
-                      const nx = scx + ndx, ny = scy + ndy;
-                      if (nx < 0 || ny < 0 || nx >= imgW || ny >= imgH) break;
-                      const ni2 = (ny * imgW + nx) * 4;
-                      if (pixMatch(imgData, ni2, cross[ni+2], cross[ni+3], cross[ni+4], NBR_TOL)) hits++;
-                      break;
-                    }
-                  }
-                  if (hits >= HIT_MIN) {
-                    let sc = scoreMap.get(id);
-                    if (!sc) { sc = new Int32Array(imgW * imgH); scoreMap.set(id, sc); }
-                    sc[scy * imgW + scx] += hits;
-                  }
-                }
-              }
-            }
-          }
 
-          // Pick best per slot inside the worker too — only ship compact results back.
+          // For each grid slot centre, test all image positions within the slot region.
+          // A candidate wins the slot if it passes all ring checksums and literal ratio >= MATCH_RATIO.
           const hw = SLOT_W >> 1, hh = SLOT_H >> 1;
           const results = centresX.flatMap((cx, col) =>
             centresY.flatMap((cy, row) => {
-              const x0 = Math.max(0, cx - hw), x1 = Math.min(imgW, cx + hw);
-              const y0 = Math.max(0, cy - hh), y1 = Math.min((scoreMap.values().next().value?.length / imgW | 0), cy + hh);
-              const ranked = [...scoreMap.entries()].flatMap(([id, sc]) => {
-                let s = 0;
-                for (let sy = y0; sy < y1; sy++) {
-                  const base = sy * imgW;
-                  for (let sx = x0; sx < x1; sx++) s += sc[base + sx];
+              const x0 = Math.max(0, cx - hw), x1 = Math.min(imgW - SLOT_W, cx + hw);
+              const y0 = Math.max(0, cy - hh), y1 = Math.min(imgH - SLOT_H, cy + hh);
+              // Collect center pixel of each candidate to bucket-gate per image position.
+              const slotScores = new Map();
+              for (let iy = y0; iy <= y1; iy++) {
+                for (let ix = x0; ix <= x1; ix++) {
+                  // The implied sprite top-left is (ix - CX, iy - CY); center of sprite → (ix, iy).
+                  const imgCenterI = (iy * imgW + ix) * 4;
+                  if (imgData[imgCenterI+3] < 16) continue;
+                  const bk = pxBucket(imgData[imgCenterI], imgData[imgCenterI+1], imgData[imgCenterI+2]);
+                  const candidates = buckets.get(bk);
+                  if (!candidates) continue;
+                  const ox = ix - CX, oy = iy - CY;
+                  for (const { id, rings, pixels } of candidates) {
+                    if (!ringsMatch(imgData, imgW, imgH, ox, oy, rings)) continue;
+                    const ratio = literalMatch(imgData, imgW, imgH, ox, oy, pixels);
+                    if (ratio < MATCH_RATIO) continue;
+                    const prev = slotScores.get(id) ?? 0;
+                    if (ratio > prev) slotScores.set(id, ratio);
+                  }
                 }
-                return s >= SCORE_MIN ? [{ id: +id, score: s }] : [];
-              }).sort((a, b) => b.score - a.score).slice(0, 5);
+              }
+              const ranked = [...slotScores.entries()]
+                .map(([id, score]) => ({ id: +id, score }))
+                .sort((a, b) => b.score - a.score)
+                .slice(0, 5);
               return ranked.length ? [{ slot: row * SLOT_COLS + col, candidates: ranked }] : [];
             })
           );
