@@ -690,7 +690,7 @@
 
   function isUseful(step, skills, target, terminal, grantedTags) {
     if (terminal && step.id === terminal) return true;
-    if ((step.tags ?? []).includes("unlock") || (step.tags ?? []).includes("quest")) return true;
+    if ((step.tags ?? []).includes("unlock")) return true;
     const targetSkills = target.skills ?? target;
     const targetTags   = new Set(target.tags ?? []);
     if ([...targetTags].some((t) => !grantedTags.has(t) && (step.grants ?? {})[t] === true)) return true;
