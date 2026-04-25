@@ -355,8 +355,10 @@
     const input    = document.createElement("input");
     input.className = "rtb-input"; input.type = "text"; input.placeholder = "tag…";
     const dropdown = document.createElement("ul");
-    dropdown.className = "rtb-dropdown"; dropdown.hidden = true;
-    box.append(tagsSpan, input, dropdown);
+    dropdown.className = "rtb-dropdown rtb-dropdown--fixed";
+    box.append(tagsSpan, input);
+
+    const hideDropdown = () => dropdown.remove();
 
     const addTag = (tag) => {
       const t = tag.trim();
@@ -373,29 +375,38 @@
     const showDropdown = (q) => {
       const current = new Set([...tagsSpan.querySelectorAll(".rtb-tag[data-tag]")].map((s) => s.dataset.tag));
       const hits = collectGrantedTags().filter((t) => t.toLowerCase().includes(q.toLowerCase()) && !current.has(t));
-      if (!hits.length) { dropdown.hidden = true; return; }
+      if (!hits.length) { hideDropdown(); return; }
       dropdown.innerHTML = hits.map((t) => `<li class="rtb-option">${escHtml(t)}</li>`).join("");
+      if (!dropdown.isConnected) document.body.appendChild(dropdown);
+      const r = input.getBoundingClientRect();
+      dropdown.style.top   = r.bottom + "px";
+      dropdown.style.left  = r.left + "px";
+      dropdown.style.width = Math.max(r.width, 160) + "px";
       dropdown.hidden = false;
       dropdown.querySelectorAll(".rtb-option").forEach((li) => {
         li.addEventListener("mousedown", (e) => {
           e.preventDefault();
           addTag(li.textContent);
           input.value = "";
-          dropdown.hidden = true;
+          hideDropdown();
         });
       });
     };
 
+    document.addEventListener("pointerdown", (e) => {
+      if (!box.contains(e.target) && !dropdown.contains(e.target)) hideDropdown();
+    });
+
     input.addEventListener("input", () => showDropdown(input.value.trim()));
-    input.addEventListener("blur",  () => setTimeout(() => { dropdown.hidden = true; }, 150));
+    input.addEventListener("blur",  () => setTimeout(() => { hideDropdown(); }, 150));
     input.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.preventDefault();
         const first = dropdown.querySelector(".rtb-option");
-        if (!dropdown.hidden && first) { addTag(first.textContent); input.value = ""; dropdown.hidden = true; }
-        else if (input.value.trim()) { addTag(input.value.trim()); input.value = ""; dropdown.hidden = true; }
+        if (dropdown.isConnected && first) { addTag(first.textContent); input.value = ""; hideDropdown(); }
+        else if (input.value.trim()) { addTag(input.value.trim()); input.value = ""; hideDropdown(); }
       } else if (e.key === "Escape") {
-        dropdown.hidden = true;
+        hideDropdown();
       }
     });
 
