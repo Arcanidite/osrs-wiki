@@ -775,7 +775,7 @@ display: flex;
   padding: var(--sp-q) var(--sp-h);
   font-size: var(--fs-sm); cursor: pointer;
 }
-.rtb-option:hover { background: var(--faint); }
+.rtb-option:hover, .rtb-option--active { background: var(--faint); }
 .rtb-tag:focus {
   outline: 2px solid var(--gold);
   outline-offset: 1px;

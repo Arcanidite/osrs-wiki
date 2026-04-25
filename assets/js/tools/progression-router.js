@@ -439,16 +439,30 @@
       dropdown.hidden = false;
     };
 
-    input.addEventListener("input", () => showDropdown(input.value.trim()));
-    input.addEventListener("blur",  () => setTimeout(() => { dropdown.hidden = true; }, 150));
+    let activeIdx = -1;
+    const setActive = (idx) => {
+      const opts = [...dropdown.querySelectorAll(".rtb-option")];
+      opts.forEach((o, i) => o.classList.toggle("rtb-option--active", i === idx));
+      activeIdx = idx;
+    };
+
+    input.addEventListener("input", () => { activeIdx = -1; showDropdown(input.value.trim()); });
+    input.addEventListener("blur",  () => setTimeout(() => { dropdown.hidden = true; activeIdx = -1; }, 150));
     input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
+      const opts = [...dropdown.querySelectorAll(".rtb-option")];
+      if (e.key === "ArrowDown") {
         e.preventDefault();
-        const first = dropdown.querySelector(".rtb-option");
-        if (!dropdown.hidden && first) { addTag(first.dataset.tag); input.value = ""; dropdown.hidden = true; }
+        setActive(Math.min(activeIdx + 1, opts.length - 1));
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        setActive(Math.max(activeIdx - 1, -1));
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        const active = activeIdx >= 0 ? opts[activeIdx] : null;
+        if (active) { addTag(active.dataset.tag); input.value = ""; dropdown.hidden = true; activeIdx = -1; }
         else if (input.value.trim()) { addTag(input.value.trim()); input.value = ""; dropdown.hidden = true; }
       } else if (e.key === "Escape") {
-        dropdown.hidden = true;
+        dropdown.hidden = true; activeIdx = -1;
       } else if (e.key === "Backspace" && input.value === "") {
         const last = tagsSpan.querySelector(".rtb-tag:last-of-type");
         if (last) last.remove();
