@@ -1385,7 +1385,7 @@
           <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           ${step._capstone
-            ? `${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" data-capstone="true" title="Remove goal">✕</button>`
+            ? `${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}`
             : `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>`}
         </span>
       </li>`);
