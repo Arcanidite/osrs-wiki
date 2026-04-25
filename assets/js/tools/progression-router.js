@@ -163,8 +163,6 @@
     skillInput:(sk) => $(`rt-${sk}`),
     skillGrid: () => $("rt-skill-grid"),
     style:     () => $("rt-style"),
-    calcBtn:   () => $("rt-calculate"),
-    resetBtn:  () => $("rt-reset"),
     empty:     () => $("rt-empty"),
     steps:     () => $("rt-steps"),
     saveStatus:() => $("rt-save-status"),
@@ -1002,7 +1000,14 @@
             if (window._routerLastPath) window._routerLastPath.path = currentPath;
             renderSteps(currentPath);
           },
-          onCancel: () => { row.outerHTML = insertRowHtml(afterIdx); wireInsertRows(stepsEl); },
+          onCancel: () => {
+            const fresh = document.createElement("li");
+            fresh.className = "route-insert-row";
+            fresh.dataset.after = afterIdx;
+            fresh.innerHTML = `<button class="btn btn-ghost insert-step-btn" data-after="${afterIdx}">+ insert</button>`;
+            form.replaceWith(fresh);
+            wireInsertRows(stepsEl);
+          },
         });
         row.replaceWith(form);
       });
@@ -1456,35 +1461,6 @@
       });
     });
 
-    els.calcBtn()?.addEventListener("click", () => {
-      if (!goalQueue.length) {
-        els.empty().hidden = false;
-        els.empty().textContent = "Add at least one goal to your queue.";
-        els.steps().hidden = true; return;
-      }
-      pinnedExclusions = new Set();
-      pinnedInserts    = [];
-      manualQuestDone  = new Set();
-      activePlanIdx    = -1;
-      recompute();
-    });
-
-    els.resetBtn()?.addEventListener("click", () => {
-      skillNames.forEach((sk) => { const el = els.skillInput(sk); if (el) el.value = 1; });
-      if (els.style()) els.style().value = "balanced";
-      goalQueue = []; activePlanIdx = -1; excludedRegions = [];
-      pinnedExclusions = new Set(); pinnedInserts = []; currentPath = []; manualQuestDone = new Set();
-      store.saveGoals(goalQueue); store.saveActive(null); store.clearNotes();
-      renderGoalQueue();
-      renderRegionTags(allRegions);
-      renderStepBank();
-      els.empty().hidden = false;
-      els.empty().textContent = "Add goals to your queue and click Calculate Route.";
-      els.steps().hidden = true;
-      renderRouteBar([]);
-      localStorage.removeItem(STORE_PROFILE);
-      const s = els.saveStatus(); if (s) s.hidden = true;
-    });
 
     renderPlans();
   }

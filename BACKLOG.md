@@ -339,6 +339,38 @@ The inline insert form (`buildStepForm`) should use the same card/pill UI as goa
 
 ---
 
+## [router:goal-queue-grants-and-tags] Goal queue entries support grants + tag reqs; tag reuse panel
+
+Goal queue cards need a grants section (same skill/tag pill UI as step inserts). Reqs should also accept tags, not just skills. A tag selection panel (similar to step bank, multi-select) lets users pick previously-granted tags rather than typing free-form. Tags are scoped to the active plan's accumulated grants — the panel lists all tags that have been granted by any step or goal in the current route.
+
+**Status:** TODO
+
+---
+
+## [router:insert-cancel-no-parent] Insert card cancel button throws NoModificationAllowedError
+
+`ins-card-cancel` click handler calls `onCancel()` which does `row.outerHTML = insertRowHtml(afterIdx)` — but at that point `row` is the `.route-insert-row` that was already `replaceWith(form)`, so it has no parent. Fix: the cancel handler should call `li.replaceWith(originalRow)` where `originalRow` is the original `.route-insert-row` element captured before replacement, or reconstruct and insert the insert row back via the parent reference captured at form-build time.
+
+**Status:** TODO
+
+---
+
+## [router:remove-calculate-reset] Remove Calculate Route and Reset buttons; auto-route on goal queue change
+
+`Calculate Route` manually triggers `recompute()` — but recompute already fires on every goal queue mutation. The button is redundant and overrides the current tab's route state. `Reset` is also a footgun. Remove both buttons from the HTML and JS. Goal queue changes are the only trigger for recompute; the tab system handles isolation.
+
+**Status:** TODO
+
+---
+
+## [router:insert-step-body-title-style] Insert form title/detail inputs styled like step-body elements
+
+The insert form label/detail inputs should visually match `.step-title` / `.step-detail` in the route step body — same font size, weight, and inline appearance. The form fields should feel like editing the step in place, not a separate modal form.
+
+**Status:** TODO
+
+---
+
 ## Completed
 
 - `[router:step-grid-layout]` — `.route-step` grid `2rem 1fr auto auto`; `step-actions` 4th column for remove/edit buttons ✓ (pending commit)
