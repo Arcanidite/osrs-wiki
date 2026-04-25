@@ -608,10 +608,10 @@
   }
 
   function openCustomGoalForm() {
-    const list = $("rt-bank-list");
-    if (!list || list.querySelector(".custom-goal-form")) return;
+    const wrap = $("rt-bank-forms");
+    if (!wrap || wrap.querySelector(".custom-goal-form")) return;
 
-    const form = document.createElement("li");
+    const form = document.createElement("div");
     form.className = "custom-goal-form goal-edit-form";
     form.innerHTML = `
       <div class="goal-edit-row">
@@ -669,14 +669,14 @@
       renderStepBank();
     });
 
-    list.prepend(form);
+    wrap.prepend(form);
     form.querySelector(".cg-label")?.focus();
   }
 
   function openCustomCapstoneForm() {
-    const list = $("rt-bank-list");
-    if (!list || list.querySelector(".custom-capstone-form")) return;
-    const form = document.createElement("li");
+    const wrap = $("rt-bank-forms");
+    if (!wrap || wrap.querySelector(".custom-capstone-form")) return;
+    const form = document.createElement("div");
     form.className = "custom-capstone-form goal-edit-form";
     form.innerHTML = `
       <div class="goal-edit-row">
@@ -2284,9 +2284,7 @@
 
     const alreadyQueued = new Set(goalQueue.map((g) => g.id));
 
-    const existingForm = list.querySelector(".custom-goal-form");
     list.innerHTML = "";
-    if (existingForm) list.appendChild(existingForm);
 
     ranked.forEach(({ entry: s, matches }) => {
       const li = document.createElement("li");
