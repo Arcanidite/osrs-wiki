@@ -1822,8 +1822,9 @@
       li.dataset.itemName = name;
       const ico = document.createElement("span");
       ico.className = "ins-item-icon";
-      const bg = atlas()?.css(id);
-      if (bg) ico.style.background = bg;
+      const a = atlas();
+      const bg = a?.css(id); const d = a?.dims(id);
+      if (bg) { ico.style.background = bg; if (d) { ico.style.width = `${d.w}px`; ico.style.height = `${d.h}px`; } }
       const label = document.createElement("span");
       label.innerHTML = q ? highlightItem(name, q) : escHtml(name);
       li.append(ico, label);

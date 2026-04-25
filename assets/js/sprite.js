@@ -118,6 +118,12 @@
       return val;
     },
 
+    /** Sprite dimensions {w, h} from the atlas, or null if not found. */
+    dims(itemId) {
+      const e = _atlas?.[itemId] ?? _atlas?.[String(itemId)];
+      return e ? { w: e.w, h: e.h } : null;
+    },
+
     /** Full pack record for an item by numeric ID. */
     entry(itemId) {
       return _byId?.[itemId] ?? _byId?.[String(itemId)] ?? null;
