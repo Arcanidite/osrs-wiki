@@ -447,7 +447,7 @@
     };
 
     input.addEventListener("input", () => { activeIdx = -1; showDropdown(input.value.trim()); });
-    input.addEventListener("blur",  () => setTimeout(() => { dropdown.hidden = true; activeIdx = -1; }, 150));
+    input.addEventListener("blur",  () => setTimeout(() => { if (input.value.trim()) { addTag(input.value.trim()); input.value = ""; } dropdown.hidden = true; activeIdx = -1; }, 150));
     input.addEventListener("keydown", (e) => {
       const opts = [...dropdown.querySelectorAll(".rtb-option")];
       if (e.key === "ArrowDown") {
