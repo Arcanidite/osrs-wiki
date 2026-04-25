@@ -1810,22 +1810,24 @@
       return highlightTag(name, indices, true);
     };
 
+    const pick = (id, name) => {
+      pillsEl.appendChild(makeItemPill(id, name, tint));
+      input.value = ""; activeIdx = -1; showDropdown("");
+    };
+
     const renderItemOption = (id, name, q) => {
       const li = document.createElement("li");
       li.className = "rtb-option";
       li.dataset.itemId = id;
+      li.dataset.itemName = name;
       const ico = document.createElement("span");
       ico.className = "ins-item-icon";
-      const css = atlas()?.css(id);
-      if (css) { ico.style.cssText = css; ico.style.display = "" }
+      const bg = atlas()?.css(id);
+      if (bg) ico.style.background = bg;
       const label = document.createElement("span");
       label.innerHTML = q ? highlightItem(name, q) : escHtml(name);
       li.append(ico, label);
-      li.addEventListener("mousedown", (e) => {
-        e.preventDefault();
-        pillsEl.appendChild(makeItemPill(id, name, tint));
-        input.value = ""; dropdown.hidden = true;
-      });
+      li.addEventListener("mousedown", (e) => { e.preventDefault(); pick(id, name); });
       return li;
     };
 
@@ -1858,8 +1860,8 @@
         e.preventDefault(); setActive(Math.max(activeIdx - 1, -1));
       } else if (e.key === "Enter") {
         e.preventDefault();
-        const active = activeIdx >= 0 ? opts[activeIdx] : null;
-        if (active) { pillsEl.appendChild(makeItemPill(+active.dataset.itemId, active.querySelector("span:last-child")?.textContent ?? "", tint)); input.value = ""; dropdown.hidden = true; activeIdx = -1; }
+        const active = opts[activeIdx] ?? (dropdown.hidden ? null : opts[0]);
+        if (active) { pick(+active.dataset.itemId, active.dataset.itemName ?? ""); }
       } else if (e.key === "Escape") {
         dropdown.hidden = true; activeIdx = -1;
       } else if (e.key === "Backspace" && input.value === "") {

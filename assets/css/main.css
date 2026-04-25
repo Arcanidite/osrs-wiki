@@ -861,10 +861,11 @@ mark.rtb-hl-fuzzy {
 .ins-card-label{
   height: 100%;
 }
-.ins-item-icon{
-  height: 100%;
-  width: auto;
-  aspect-ratio: 1;
+.ins-item-icon {
+  display: inline-block;
+  width: 20px; height: 20px;
+  flex-shrink: 0;
+  image-rendering: pixelated;
 }
 .goal-card-reqs {
   font-size: var(--fs-xs);
