@@ -65,21 +65,35 @@
     return atlas;
   }
 
-  function cropSprites(atlas, img) {
-    const c = document.createElement("canvas");
-    const ctx = c.getContext("2d");
-    Object.entries(atlas).forEach(([id, e]) => {
-      if (localStorage.getItem(LS_PFX + id)) return;
-      c.width = e.w; c.height = e.h;
-      ctx.clearRect(0, 0, e.w, e.h);
-      ctx.drawImage(img, e.x, e.y, e.w, e.h, 0, 0, e.w, e.h);
-      try { localStorage.setItem(LS_PFX + id, c.toDataURL("image/png")); } catch { /* quota */ }
+  function cropSpritesAsync(atlas, img) {
+    const uncached = Object.entries(atlas).filter(([id]) => !localStorage.getItem(LS_PFX + id));
+    if (!uncached.length) return;
+    createImageBitmap(img).then((bitmap) => {
+      const src = `
+        self.onmessage = ({ data: { bitmap, entries } }) => {
+          entries.forEach(([id, e]) => {
+            const oc = new OffscreenCanvas(e.w, e.h);
+            oc.getContext("2d").drawImage(bitmap, e.x, e.y, e.w, e.h, 0, 0, e.w, e.h);
+            oc.convertToBlob({ type: "image/png" }).then((blob) => {
+              const fr = new FileReader();
+              fr.onload = () => self.postMessage({ id, dataUrl: fr.result });
+              fr.readAsDataURL(blob);
+            });
+          });
+        };
+      `;
+      const worker = new Worker(URL.createObjectURL(new Blob([src], { type: "text/javascript" })));
+      worker.onmessage = ({ data: { id, dataUrl } }) => {
+        try { localStorage.setItem(LS_PFX + id, dataUrl); } catch { /* quota */ }
+      };
+      worker.postMessage({ bitmap, entries: uncached }, [bitmap]);
     });
   }
 
   function loadSheet(src) {
     return new Promise((resolve, reject) => {
       const img = new Image();
+      img.crossOrigin = "anonymous";
       img.onload  = () => resolve(img);
       img.onerror = reject;
       img.src = src;
