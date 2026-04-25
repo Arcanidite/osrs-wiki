@@ -811,6 +811,56 @@
     return { path, skills, completedIds, completedQuests, freeSlots: invFree };
   }
 
+  function synthFillGaps(path, goalReqs, finalSkills, allSkills) {
+    const grantedTags = path.reduce((acc, s) => {
+      Object.entries(s.grants ?? {}).forEach(([k, v]) => { if (v === true) acc.add(k); });
+      return acc;
+    }, new Set());
+
+    const maxGranted = (sk) => path.reduce((mx, s) => {
+      const v = (s.grants ?? {})[sk];
+      return typeof v === "number" ? Math.max(mx, v) : mx;
+    }, -Infinity);
+
+    const synths = [];
+
+    Object.entries(goalReqs.skills ?? {}).forEach(([sk, needed]) => {
+      if ((finalSkills[sk] ?? 1) >= needed) return;
+      const top = maxGranted(sk);
+      const fromLvl = top > -Infinity ? top : (allSkills[sk] ?? 1);
+      if (fromLvl >= needed) return;
+      synths.push({
+        id:         `synth-${sk}-${needed}-${Date.now()}`,
+        label:      `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${fromLvl}→${needed}`,
+        detail:     "Synthetic step — no matching step found in bank.",
+        reqs:       { skills: { [sk]: fromLvl } },
+        grants:     { [sk]: needed },
+        _custom:    true,
+        _synthetic: true,
+        _goalLabel: path[0]?._goalLabel ?? "",
+      });
+    });
+
+    (goalReqs.tags ?? []).forEach((tag) => {
+      if (grantedTags.has(tag)) return;
+      synths.push({
+        id:         `synth-tag-${tag}-${Date.now()}`,
+        label:      `Obtain ${tag}`,
+        detail:     "Synthetic step — no matching step found in bank.",
+        reqs:       { skills: {}, tags: [] },
+        grants:     { [tag]: true },
+        _custom:    true,
+        _synthetic: true,
+        _goalLabel: path[0]?._goalLabel ?? "",
+      });
+    });
+
+    if (!synths.length) return path;
+    const init = path.slice(0, -1);
+    const last = path.slice(-1);
+    return [...init, ...synths, ...last];
+  }
+
   function routeMulti(goals, steps, profile) {
     let skills          = { ...profile.skills };
     let completedIds    = new Set([...manualQuestDone]);
@@ -819,11 +869,18 @@
     let freeSlots       = 28;
 
     return goals.flatMap((goal) => {
+      const skillsAtGoalStart = { ...skills };
       const r = routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded, freeSlots);
       skills          = r.skills;
       completedIds    = r.completedIds;
       completedQuests = r.completedQuests;
       freeSlots       = r.freeSlots;
+
+      const filled = synthFillGaps(r.path, normalizeReqs(goal.reqs), r.skills, skillsAtGoalStart);
+      // re-apply grants from synthetic steps so downstream goals see them
+      const synthSteps = filled.filter((s) => s._synthetic);
+      skills = synthSteps.reduce((sk, s) => applyGrants(s.grants, sk), r.skills);
+
       const capstone = {
         id:         `capstone-${goal.id}`,
         label:      goal.label,
@@ -834,7 +891,7 @@
         _goalLabel: goal.label,
         _capstone:  true,
       };
-      return [...r.path, capstone];
+      return [...filled, capstone];
     });
   }
 
