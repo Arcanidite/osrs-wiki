@@ -473,6 +473,9 @@ body {
 .step-actions { display: flex; flex-direction: column; 
     justify-content: space-between; gap: var(--sp-q); 
     height: 100%; }
+.step-actions > * {
+  background: white;
+}
 .route-step:last-child { border-bottom: none; }
 .route-step[hidden] { display: none; }
 .step-num {
@@ -637,7 +640,7 @@ body {
   padding: 0.125rem var(--sp-q);
   border: 1px solid var(--border); border-radius: var(--radius);
   background: transparent; color: var(--muted);
-  resize: vertical; overflow: hidden; flex-grow: 1;
+  resize: vertical; overflow: hidden; flex-grow: 1; background: white;
   transition: border-color 0.15s, background 0.15s; max-height: 5rem;
 }
 .step-note:focus, .step-note:not(:placeholder-shown) {
