@@ -1322,7 +1322,7 @@
           <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           ${step._capstone
-            ? `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" data-capstone="true" title="Remove goal">✕</button>`
+            ? `${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" data-capstone="true" title="Remove goal">✕</button>`
             : `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>`}
         </span>
       </li>`);
@@ -1335,6 +1335,7 @@
     wireStepEdit(stepsEl);
     wireInsertRows(stepsEl);
     wireStepRemove(stepsEl);
+    wireCapstoneFill(stepsEl);
     wireStepDoneToggles(stepsEl);
     wireStepEditBtn(stepsEl);
     wireDragSort(stepsEl);
@@ -1537,6 +1538,39 @@
         pinnedInserts = pinnedInserts.filter((p) => p.step.id !== step.id);
         currentPath = trial;
         if (window._routerLastPath) window._routerLastPath.path = currentPath;
+        renderSteps(currentPath);
+        upsertActivePlan(currentPath, readProfile());
+      });
+    });
+  }
+
+  function wireCapstoneFill(stepsEl) {
+    stepsEl.querySelectorAll(".step-fill-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const idx  = +btn.dataset.stepIdx;
+        const step = currentPath[idx];
+        if (!step?._capstone) return;
+        let cs = { ...readProfile().skills };
+        currentPath.slice(0, idx).forEach((s) => { cs = applyGrants(s.grants, cs); });
+        const goalLabel = step._goalLabel ?? step.label;
+        const synths = [];
+        const r = normalizeReqs(step.reqs);
+        Object.entries(r.skills ?? {}).forEach(([sk, needed]) => {
+          if ((cs[sk] ?? 1) >= needed) return;
+          const fromLvl = cs[sk] ?? 1;
+          synths.push({
+            id: `synth-${sk}-${needed}-${Date.now()}`,
+            label: `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${fromLvl}→${needed}`,
+            detail: "Synthetic step — no matching step found in bank.",
+            reqs: { skills: { [sk]: fromLvl } },
+            grants: { [sk]: needed },
+            _custom: true, _synthetic: true, _goalLabel: goalLabel,
+          });
+        });
+        if (!synths.length) return;
+        const reqKey = (s) => Math.min(...Object.values(s.reqs?.skills ?? { _: 0 }));
+        synths.sort((a, b) => reqKey(a) - reqKey(b));
+        currentPath.splice(idx, 0, ...synths);
         renderSteps(currentPath);
         upsertActivePlan(currentPath, readProfile());
       });
