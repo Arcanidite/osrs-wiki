@@ -1817,7 +1817,7 @@
       const ico = document.createElement("span");
       ico.className = "ins-item-icon";
       const css = atlas()?.css(id);
-      if (css) { ico.style.cssText = css; ico.style.display = "inline-block"; ico.style.width = "18px"; ico.style.height = "16px"; }
+      if (css) { ico.style.cssText = css; ico.style.display = "" }
       const label = document.createElement("span");
       label.innerHTML = q ? highlightItem(name, q) : escHtml(name);
       li.append(ico, label);
