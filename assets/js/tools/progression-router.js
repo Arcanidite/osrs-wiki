@@ -341,6 +341,15 @@
       const g = s.grants ?? {};
       Object.entries(g).forEach(([k, v]) => { if (v === true) tags.add(k); });
     });
+    // live DOM tag-req pills (free-typed by user)
+    document.querySelectorAll(".ge-tag-req-input, .ins-tag-input").forEach((inp) => {
+      const v = inp.value.trim();
+      if (v) tags.add(v);
+    });
+    // custom goal grants
+    customGoals.forEach((g) => {
+      Object.entries(g.grants ?? {}).forEach(([k, v]) => { if (v === true) tags.add(k); });
+    });
     return [...tags];
   }
 
