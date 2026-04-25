@@ -653,6 +653,58 @@
     });
 
     list.prepend(form);
+    form.querySelector(".cg-label")?.focus();
+  }
+
+  function openCustomCapstoneForm() {
+    const list = $("rt-bank-list");
+    if (!list || list.querySelector(".custom-capstone-form")) return;
+    const form = document.createElement("li");
+    form.className = "custom-capstone-form goal-edit-form";
+    form.innerHTML = `
+      <div class="goal-edit-row">
+        <input class="cc-label" type="text" placeholder="Capstone label">
+      </div>
+      <div class="ins-skill-section ins-skill-section--req">
+        <div class="ins-skill-header">
+          <span class="ins-skill-title req">Requirements</span>
+          <button class="btn btn-ghost cc-add-req">+ skill</button>
+        </div>
+        <div class="cc-reqs"></div>
+        <div class="cc-tag-reqs-wrap"></div>
+      </div>
+      <div class="goal-edit-actions">
+        <button class="btn btn-primary cc-save">Save</button>
+        <button class="btn btn-ghost cc-cancel">Cancel</button>
+      </div>`;
+    const reqsContainer = form.querySelector(".cc-reqs");
+    const tagBox = makeTagReqBox([]);
+    form.querySelector(".cc-tag-reqs-wrap").appendChild(tagBox);
+    form.querySelector(".cc-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
+    form.querySelector(".cc-cancel").addEventListener("click", () => { form.remove(); });
+    form.querySelector(".cc-save").addEventListener("click", () => {
+      const label = form.querySelector(".cc-label").value.trim();
+      if (!label) return;
+      const reqs = { skills: {}, tags: [] };
+      reqsContainer.querySelectorAll(".ge-req-row").forEach((row) => {
+        const sk  = row.querySelector(".ge-req-skill").value;
+        const lvl = parseInt(row.querySelector(".ge-req-level").value, 10);
+        if (sk && lvl > 1) reqs.skills[sk] = lvl;
+      });
+      reqs.tags = tagBox.readTags();
+      const id = "user-capstone-" + Date.now();
+      const capstone = {
+        id, label, detail: "", reqs, grants: {}, tags: ["capstone"],
+        _capstone: true, _custom: true, _goalLabel: label,
+      };
+      currentPath.push(capstone);
+      pinnedInserts.push({ anchor: currentPath[currentPath.length - 2]?.id ?? "start", step: capstone });
+      renderSteps(currentPath);
+      upsertActivePlan(currentPath, readProfile());
+      form.remove();
+    });
+    list.prepend(form);
+    form.querySelector(".cc-label")?.focus();
   }
 
   function appendReqRow(container, skill, level) {
@@ -1288,6 +1340,16 @@
       return valid;
     });
 
+    // Auto-mark steps done when profile already satisfies all their skill reqs at that point
+    const profileSkills = readProfile().skills;
+    path.forEach((step) => {
+      if (step._capstone) return;
+      const r = normalizeReqs(step.reqs);
+      const satisfied = Object.entries(r.skills ?? {}).every(([sk, lvl]) => (profileSkills[sk] ?? 1) >= lvl)
+        && Object.keys(r.skills ?? {}).length > 0;
+      if (satisfied && !manualStepDone.has(step.id)) manualStepDone.add(step.id);
+    });
+
     const tab = planTabs[activeTabIdx];
     path.forEach((step, i) => {
       const isQuest   = (step.tags ?? []).includes("quest");
@@ -1295,8 +1357,9 @@
       const stepDone  = questDone || manualStepDone.has(step.id);
       const isFocal   = tab?.focalSteps?.has(step.id);
       const valid     = seqValid[i];
-      const grantSkills = Object.keys(normalizeReqs(step.grants).skills ?? {}).join(" ");
-      const grantAttr   = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
+      const grantEntries = Object.entries(normalizeReqs(step.grants).skills ?? {});
+      const grantSkills  = grantEntries.map(([sk, lvl]) => `${sk}:${lvl}`).join(" ");
+      const grantAttr    = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
       const focalAttr   = isFocal ? ' data-focal="1"' : "";
       rows.push(`<li class="route-step${stepDone ? " step-done" : ""}${step._capstone ? " step-capstone" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="${step._capstone ? "false" : "true"}"${grantAttr}${focalAttr}>
         <span class="step-drag-handle" title="Drag to reorder" ${step._capstone ? 'style="visibility:hidden"' : ""}>⠿</span>
@@ -1446,6 +1509,7 @@
           },
         });
         row.replaceWith(form);
+        form.querySelector(".ins-label")?.focus();
       });
     });
   }
@@ -1840,7 +1904,9 @@
       (s.tags ?? []).forEach((t) => {
         const badge = document.createElement("span");
         badge.className = "step-badge";
-        badge.textContent = t;
+        const tagMatch = matches.find((m) => m.field === "tag" && m.text === t);
+        if (tagMatch) badge.innerHTML = highlightTag(t, tagMatch.indices, tagMatch.serial);
+        else badge.textContent = t;
         meta.appendChild(badge);
       });
 
@@ -2064,8 +2130,9 @@
     buildSkillGrid(skillNames);
     buildRegionTagbox(allRegions);
     renderStepBank();
-    $("rt-bank-filter")?.addEventListener("input", renderStepBank);
+    $("rt-bank-filter")?.addEventListener("input", () => { renderStepBank(); const l = $("rt-bank-list"); if (l) l.scrollTop = 0; });
     $("rt-new-goal-btn")?.addEventListener("click", openCustomGoalForm);
+    $("rt-new-capstone-btn")?.addEventListener("click", openCustomCapstoneForm);
 
     // ── Tabs bootstrap ────────────────────────────────────────────────────────
     planTabs = [makeTab("Plan 1")];

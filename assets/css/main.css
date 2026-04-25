@@ -548,29 +548,29 @@ body {
 @keyframes req-pulse { 0%,100% { box-shadow: inset 0 0 0 2px #f59e0b; } 50% { box-shadow: inset 0 0 0 4px #f59e0b; } }
 .route-step.req-pulse { animation: req-pulse 0.5s ease 2; }
 .route-steps:has(.step-badge[data-req-skill]:hover) .route-step { transition: box-shadow 0.15s; }
-.route-steps:has(.step-badge[data-req-skill*="attack"]:hover) .route-step[data-grants-skill~="attack"] { position: sticky; box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="strength"]:hover) .route-step[data-grants-skill~="strength"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="defence"]:hover) .route-step[data-grants-skill~="defence"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="ranged"]:hover) .route-step[data-grants-skill~="ranged"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="magic"]:hover) .route-step[data-grants-skill~="magic"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="prayer"]:hover) .route-step[data-grants-skill~="prayer"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="hitpoints"]:hover) .route-step[data-grants-skill~="hitpoints"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="slayer"]:hover) .route-step[data-grants-skill~="slayer"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="agility"]:hover) .route-step[data-grants-skill~="agility"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="herblore"]:hover) .route-step[data-grants-skill~="herblore"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="thieving"]:hover) .route-step[data-grants-skill~="thieving"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="crafting"]:hover) .route-step[data-grants-skill~="crafting"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="fletching"]:hover) .route-step[data-grants-skill~="fletching"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="mining"]:hover) .route-step[data-grants-skill~="mining"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="smithing"]:hover) .route-step[data-grants-skill~="smithing"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="fishing"]:hover) .route-step[data-grants-skill~="fishing"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="cooking"]:hover) .route-step[data-grants-skill~="cooking"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="firemaking"]:hover) .route-step[data-grants-skill~="firemaking"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="woodcutting"]:hover) .route-step[data-grants-skill~="woodcutting"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="runecraft"]:hover) .route-step[data-grants-skill~="runecraft"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="hunter"]:hover) .route-step[data-grants-skill~="hunter"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="construction"]:hover) .route-step[data-grants-skill~="construction"] { box-shadow: inset 0 0 0 2px #f59e0b; }
-.route-steps:has(.step-badge[data-req-skill*="farming"]:hover) .route-step[data-grants-skill~="farming"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="attack:"]:hover) .route-step[data-grants-skill*="attack:"] { position: sticky; box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="strength:"]:hover) .route-step[data-grants-skill*="strength:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="defence:"]:hover) .route-step[data-grants-skill*="defence:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="ranged:"]:hover) .route-step[data-grants-skill*="ranged:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="magic:"]:hover) .route-step[data-grants-skill*="magic:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="prayer:"]:hover) .route-step[data-grants-skill*="prayer:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="hitpoints:"]:hover) .route-step[data-grants-skill*="hitpoints:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="slayer:"]:hover) .route-step[data-grants-skill*="slayer:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="agility:"]:hover) .route-step[data-grants-skill*="agility:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="herblore:"]:hover) .route-step[data-grants-skill*="herblore:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="thieving:"]:hover) .route-step[data-grants-skill*="thieving:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="crafting:"]:hover) .route-step[data-grants-skill*="crafting:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="fletching:"]:hover) .route-step[data-grants-skill*="fletching:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="mining:"]:hover) .route-step[data-grants-skill*="mining:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="smithing:"]:hover) .route-step[data-grants-skill*="smithing:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="fishing:"]:hover) .route-step[data-grants-skill*="fishing:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="cooking:"]:hover) .route-step[data-grants-skill*="cooking:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="firemaking:"]:hover) .route-step[data-grants-skill*="firemaking:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="woodcutting:"]:hover) .route-step[data-grants-skill*="woodcutting:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="runecraft:"]:hover) .route-step[data-grants-skill*="runecraft:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="hunter:"]:hover) .route-step[data-grants-skill*="hunter:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="construction:"]:hover) .route-step[data-grants-skill*="construction:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
+.route-steps:has(.step-badge[data-req-skill*="farming:"]:hover) .route-step[data-grants-skill*="farming:"] { box-shadow: inset 0 0 0 2px #f59e0b; }
 
 /* Custom step edit form + unified insert form skill sections */
 /* Capstone teal caution stripe */
