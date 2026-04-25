@@ -1931,30 +1931,7 @@
   //   CROSS_TOL), compute the implied sprite-center and verify 8 neighbors. Accumulate
   //   neighbor-hit counts into a per-sprite Int32Array score buffer.
   //
-  // Result phase — find score peaks in each grid slot region; top sprite per slot wins.
-
-  const SLOT_W = 36, SLOT_H = 32, SLOT_COLS = 4, SLOT_ROWS = 7;
-
-  // Detect inventory grid slot centres via 1D projection of dark-background pixels.
-  function detectGrid(imgData, imgW, imgH) {
-    const colAcc = new Int32Array(imgW), rowAcc = new Int32Array(imgH);
-    for (let i = 0; i < imgData.length; i += 4) {
-      if (imgData[i] < 100 && imgData[i+1] < 80 && imgData[i+2] < 65 && imgData[i+3] >= 16) {
-        const p = i >> 2;
-        colAcc[p % imgW]++; rowAcc[(p / imgW) | 0]++;
-      }
-    }
-    const peaksIn = (acc, n) => {
-      const stride = acc.length / n;
-      return Array.from({ length: n }, (_, k) => {
-        const lo = Math.floor(k * stride), hi = Math.min(acc.length, Math.ceil((k+1) * stride));
-        let best = lo, bv = -1;
-        for (let i = lo; i < hi; i++) if (acc[i] > bv) { bv = acc[i]; best = i; }
-        return best;
-      });
-    };
-    return { centresX: peaksIn(colAcc, SLOT_COLS), centresY: peaksIn(rowAcc, SLOT_ROWS) };
-  }
+  const SLOT_W = 36, SLOT_H = 32;
 
   // Serialize bucket map for worker transfer. Each unique buffer transferred once.
   function serializeBuckets(buckets) {
@@ -1969,32 +1946,55 @@
     return { entries, transfers };
   }
 
-  // Offload scan + slot-pick to a worker. Upload imgData is verbatim — zero processing.
-  function scanBucketsAsync(imgData, imgW, imgH, buckets, centresX, centresY) {
+  // Offload scan to a worker. imgData is verbatim getImageData — no JS-side processing.
+  // Worker applies 3×3 Gaussian blur internally before matching (query image only).
+  // Returns flat ranked array [{id, score}] after NMS — no slot assignment.
+  function scanBucketsAsync(imgData, imgW, imgH, buckets) {
     const { FP_TIERS, FP_ANCHORS, FP_VALUES } = window.SpriteAtlas.fpConsts;
     return new Promise((resolve) => {
       const { entries, transfers } = serializeBuckets(buckets);
       transfers.push(imgData.buffer);
       const src = `
-        const SLOT_W=${SLOT_W}, SLOT_H=${SLOT_H}, SLOT_COLS=${SLOT_COLS}, SLOT_ROWS=${SLOT_ROWS};
+        const SLOT_W=${SLOT_W}, SLOT_H=${SLOT_H};
         const FP_TIERS=${FP_TIERS}, FP_ANCHORS=${FP_ANCHORS}, FP_VALUES=${FP_VALUES};
-        // Maximum cross half-size (tier 3 = ±3 → 7×7 window).
-        const FP_HALF = FP_TIERS - 1;
-        // Per-channel tolerance per pixel for tier checksum comparison.
-        const TIER_TOL = 12;
-        // Minimum anchors that must agree before literal check.
-        const ANCHOR_MIN = 2;
-        // Minimum literal pixel match ratio (opaque pixels only) to accept.
-        const MATCH_RATIO = 0.68;
-        // Per-pixel per-channel tolerance for literal comparison.
-        const PIX_TOL = 20;
+        const TIER_TOL  = 14;   // per-pixel per-channel tolerance for tier checksums
+        const ANCHOR_MIN = 2;   // distinct anchors that must agree before literal check
+        const MATCH_RATIO = 0.65; // masked NCC threshold (opaque-pixel ratio)
+        const PIX_TOL   = 22;   // per-channel tolerance for literal pixel comparison
+        // NMS suppression radius — hits within this many pixels of a better hit are dropped.
+        const NMS_R = Math.max(SLOT_W, SLOT_H) >> 1;
 
         const pxBucket = (r,g,b) => (r>>3)|((g>>3)<<5)|((b>>3)<<10);
 
-        // Verify tiers 1..FP_TIERS-1 of one anchor at image position (imgAx, imgAy).
-        // anchors: Int32Array for this sprite; anchorOff: byte offset of this anchor's tiers.
-        // Returns true only if all remaining tiers match within tolerance.
-        function tiersMatch(imgData, imgW, imgH, imgAx, imgAy, anchors, anchorOff) {
+        // 3×3 Gaussian blur (σ≈0.85) applied to query image in-worker.
+        // Operates on a copy — original imgData untouched for bucket hashing.
+        // Kernel: [1,2,1 / 2,4,2 / 1,2,1] / 16
+        function gaussBlur(src, w, h) {
+          const dst = new Uint8ClampedArray(src.length);
+          for (let y = 0; y < h; y++) {
+            for (let x = 0; x < w; x++) {
+              const i = (y * w + x) * 4;
+              for (let c = 0; c < 3; c++) {
+                let s = 0, wt = 0;
+                for (let dy = -1; dy <= 1; dy++) {
+                  for (let dx = -1; dx <= 1; dx++) {
+                    const nx = x+dx, ny = y+dy;
+                    if (nx < 0 || ny < 0 || nx >= w || ny >= h) continue;
+                    const k = (1 + (dx===0?1:0)) * (1 + (dy===0?1:0));
+                    s += src[(ny*w+nx)*4+c] * k; wt += k;
+                  }
+                }
+                dst[i+c] = s / wt;
+              }
+              dst[i+3] = src[i+3]; // preserve alpha
+            }
+          }
+          return dst;
+        }
+
+        // Progressive tier verification at image anchor position (imgAx, imgAy).
+        // Uses blurred image for comparison; early-exits on first tier mismatch.
+        function tiersMatch(blurred, imgW, imgH, imgAx, imgAy, anchors, anchorOff) {
           for (let t = 1; t < FP_TIERS; t++) {
             const base = anchorOff + t * 4;
             const expR = anchors[base], expG = anchors[base+1], expB = anchors[base+2], expN = anchors[base+3];
@@ -2003,59 +2003,65 @@
             for (let dy = -t; dy <= t; dy++) {
               for (let dx = -t; dx <= t; dx++) {
                 if (Math.max(Math.abs(dx), Math.abs(dy)) !== t) continue;
-                const ix = imgAx + dx, iy = imgAy + dy;
+                const ix = imgAx+dx, iy = imgAy+dy;
                 if (ix < 0 || iy < 0 || ix >= imgW || iy >= imgH) continue;
-                const ii = (iy * imgW + ix) * 4;
-                if (imgData[ii+3] < 16) continue;
-                sr += imgData[ii]; sg += imgData[ii+1]; sb += imgData[ii+2]; n++;
+                const ii = (iy*imgW+ix)*4;
+                if (blurred[ii+3] < 16) continue;
+                sr += blurred[ii]; sg += blurred[ii+1]; sb += blurred[ii+2]; n++;
               }
             }
             if (n === 0 && expN > 2) return false;
             if (n === 0) continue;
-            const tol = TIER_TOL * n;
-            const sc = n / expN;
-            if (Math.abs(sr - expR*sc) > tol) return false;
-            if (Math.abs(sg - expG*sc) > tol) return false;
-            if (Math.abs(sb - expB*sc) > tol) return false;
+            const sc = n / expN, tol = TIER_TOL * n;
+            if (Math.abs(sr - expR*sc) > tol || Math.abs(sg - expG*sc) > tol || Math.abs(sb - expB*sc) > tol) return false;
           }
           return true;
         }
 
-        // Literal comparison: opaque sprite pixels vs image at sprite top-left (ox, oy).
-        function literalMatch(imgData, imgW, imgH, ox, oy, spritePixels) {
+        // Masked NCC-style literal match: compare opaque sprite pixels to blurred image.
+        // Returns [ratio, ox, oy] — ratio = matched opaque pixels / total opaque pixels.
+        function literalMatch(blurred, imgW, imgH, ox, oy, spritePixels) {
           let matched = 0, total = 0;
           for (let sy = 0; sy < SLOT_H; sy++) {
             const iy = oy + sy;
             if (iy < 0 || iy >= imgH) continue;
             for (let sx = 0; sx < SLOT_W; sx++) {
               const si = (sy * SLOT_W + sx) * 4;
-              if (spritePixels[si+3] < 16) continue;
+              if (spritePixels[si+3] < 16) continue; // mask: skip transparent sprite pixels
               total++;
               const ix = ox + sx;
               if (ix < 0 || ix >= imgW) continue;
               const ii = (iy * imgW + ix) * 4;
-              if (imgData[ii+3] < 16) continue;
-              if (Math.abs(imgData[ii]   - spritePixels[si])   <= PIX_TOL &&
-                  Math.abs(imgData[ii+1] - spritePixels[si+1]) <= PIX_TOL &&
-                  Math.abs(imgData[ii+2] - spritePixels[si+2]) <= PIX_TOL) matched++;
+              if (blurred[ii+3] < 16) continue;
+              if (Math.abs(blurred[ii]   - spritePixels[si])   <= PIX_TOL &&
+                  Math.abs(blurred[ii+1] - spritePixels[si+1]) <= PIX_TOL &&
+                  Math.abs(blurred[ii+2] - spritePixels[si+2]) <= PIX_TOL) matched++;
             }
           }
           return total > 0 ? matched / total : 0;
         }
 
-        self.onmessage = ({ data: { imgData, imgW, imgH, bucketEntries, centresX, centresY } }) => {
-          // Reconstruct typed arrays and bucket map.
+        // Non-maximum suppression: remove hits within NMS_R of a higher-scoring hit.
+        function nms(hits) {
+          hits.sort((a, b) => b.score - a.score);
+          const keep = [];
+          for (const h of hits) {
+            if (keep.every(k => Math.abs(k.ox - h.ox) > NMS_R || Math.abs(k.oy - h.oy) > NMS_R))
+              keep.push(h);
+          }
+          return keep;
+        }
+
+        self.onmessage = ({ data: { imgData, imgW, imgH, bucketEntries } }) => {
           const buckets = new Map(bucketEntries.map(([k, sprites]) =>
             [k, sprites.map(([id, anchorIdx, anchors, anchorPos, pixels]) => ({
-              id,
-              anchorIdx,
+              id, anchorIdx,
               anchors:   new Int32Array(anchors),
-              anchorPos: anchorPos,      // plain array, no transfer
+              anchorPos,
               pixels:    new Uint8Array(pixels),
             }))]
           ));
 
-          // Collect unique sprites by id for literal check; anchorPos is uniform across all.
           const spriteById = new Map();
           let sharedAnchorPos = null;
           for (const sprites of buckets.values()) {
@@ -2064,94 +2070,78 @@
               if (!sharedAnchorPos) sharedAnchorPos = s.anchorPos;
             }
           }
+          if (!sharedAnchorPos) { self.postMessage([]); return; }
 
-          const hw = SLOT_W >> 1, hh = SLOT_H >> 1;
-          const results = centresX.flatMap((cx, col) =>
-            centresY.flatMap((cy, row) => {
-              const x0 = Math.max(0,             cx - hw);
-              const x1 = Math.min(imgW - SLOT_W, cx + hw);
-              const y0 = Math.max(0,             cy - hh);
-              const y1 = Math.min(imgH - SLOT_H, cy + hh);
-              if (!sharedAnchorPos || x1 < x0 || y1 < y0) return [];
+          // Blur query image once — used for tier verification and literal matching.
+          const blurred = gaussBlur(imgData, imgW, imgH);
+          const ap = sharedAnchorPos;
 
-              const ap = sharedAnchorPos;
-              // Phase 1: accumulate per-sprite anchor hit counts and the position that
-              // produced the most hits (used as the literal-check origin).
-              // hitCount: Map<id, number>  bestPos: Map<id, [ox,oy]>
-              const hitCount = new Map();
-              const bestPos  = new Map();  // id → [ox, oy, hitsSoFar]
+          // Full-image scan: slide sprite placement window across entire image.
+          const hitCount = new Map();   // id → total anchor hits
+          const bestPos  = new Map();   // id → [ox, oy, hitsSoFar]
 
-              for (let oy = y0; oy <= y1; oy++) {
-                for (let ox = x0; ox <= x1; ox++) {
-                  for (let a = 0; a < FP_ANCHORS; a++) {
-                    const imgAx = ox + ap[a*2], imgAy = oy + ap[a*2+1];
-                    if (imgAx < 0 || imgAy < 0 || imgAx >= imgW || imgAy >= imgH) continue;
-                    const ii = (imgAy * imgW + imgAx) * 4;
-                    if (imgData[ii+3] < 16) continue;
-                    const bk = pxBucket(imgData[ii], imgData[ii+1], imgData[ii+2]);
-                    const candidates = buckets.get(bk);
-                    if (!candidates) continue;
-                    for (const { id, anchorIdx, anchors } of candidates) {
-                      if (anchorIdx !== a) continue;
-                      if (!tiersMatch(imgData, imgW, imgH, imgAx, imgAy, anchors, a * FP_VALUES)) continue;
-                      const prev = hitCount.get(id) ?? 0;
-                      const next = prev + 1;
-                      hitCount.set(id, next);
-                      // Track the position with the most anchor agreements.
-                      const bp = bestPos.get(id);
-                      if (!bp || next > bp[2]) bestPos.set(id, [ox, oy, next]);
-                    }
-                  }
+          for (let oy = 0; oy <= imgH - SLOT_H; oy++) {
+            for (let ox = 0; ox <= imgW - SLOT_W; ox++) {
+              for (let a = 0; a < FP_ANCHORS; a++) {
+                const imgAx = ox + ap[a*2], imgAy = oy + ap[a*2+1];
+                if (imgAx < 0 || imgAy < 0 || imgAx >= imgW || imgAy >= imgH) continue;
+                const ii = (imgAy * imgW + imgAx) * 4;
+                // Bucket on raw imgData (unblurred center pixel for hash consistency).
+                if (imgData[ii+3] < 16) continue;
+                const bk = pxBucket(imgData[ii], imgData[ii+1], imgData[ii+2]);
+                const candidates = buckets.get(bk);
+                if (!candidates) continue;
+                for (const { id, anchorIdx, anchors } of candidates) {
+                  if (anchorIdx !== a) continue;
+                  if (!tiersMatch(blurred, imgW, imgH, imgAx, imgAy, anchors, a * FP_VALUES)) continue;
+                  const prev = hitCount.get(id) ?? 0;
+                  const next = prev + 1;
+                  hitCount.set(id, next);
+                  const bp = bestPos.get(id);
+                  if (!bp || next > bp[2]) bestPos.set(id, [ox, oy, next]);
                 }
               }
+            }
+          }
 
-              // Phase 2: literal check for sprites with >= ANCHOR_MIN total anchor hits.
-              const ranked = [];
-              for (const [id, hits] of hitCount) {
-                if (hits < ANCHOR_MIN) continue;
-                const bp = bestPos.get(id);
-                if (!bp) continue;
-                const sp = spriteById.get(id);
-                if (!sp) continue;
-                const ratio = literalMatch(imgData, imgW, imgH, bp[0], bp[1], sp.pixels);
-                if (ratio >= MATCH_RATIO) ranked.push({ id: +id, score: ratio });
-              }
-              ranked.sort((a, b) => b.score - a.score);
-              return ranked.length ? [{ slot: row * SLOT_COLS + col, candidates: ranked.slice(0, 5) }] : [];
-            })
-          );
-          self.postMessage(results);
+          // Literal check for anchor-confirmed candidates.
+          const rawHits = [];
+          for (const [id, hits] of hitCount) {
+            if (hits < ANCHOR_MIN) continue;
+            const bp = bestPos.get(id);
+            if (!bp) continue;
+            const sp = spriteById.get(id);
+            if (!sp) continue;
+            const ratio = literalMatch(blurred, imgW, imgH, bp[0], bp[1], sp.pixels);
+            if (ratio >= MATCH_RATIO) rawHits.push({ id: +id, score: ratio, ox: bp[0], oy: bp[1] });
+          }
+
+          // NMS then strip position — caller only needs id + score.
+          const kept = nms(rawHits).map(({ id, score }) => ({ id, score }));
+          self.postMessage(kept);
         };
       `;
       const worker = new Worker(URL.createObjectURL(new Blob([src], { type: "text/javascript" })));
       worker.onmessage = ({ data }) => { worker.terminate(); resolve(data); };
-      worker.postMessage(
-        { imgData, imgW, imgH, bucketEntries: entries, centresX, centresY },
-        transfers
-      );
+      worker.postMessage({ imgData, imgW, imgH, bucketEntries: entries }, transfers);
     });
   }
 
-  // For each grid slot, hydrate worker results with atlas pack entries.
-  function hydrateSlots(slots, atlas) {
-    return slots.flatMap(({ slot, candidates }) => {
-      const hydrated = candidates
-        .map(({ id, score }) => ({ id, score, entry: atlas?.entry(id) }))
-        .filter(c => c.entry);
-      return hydrated.length ? [{ slot, candidates: hydrated }] : [];
-    });
+  // Hydrate worker results with atlas pack entries.
+  function hydrateFindings(findings, atlas) {
+    return findings
+      .map(({ id, score }) => ({ id, score, entry: atlas?.entry(id) }))
+      .filter(f => f.entry);
   }
 
   async function analyzeLoadoutImage(canvas) {
     const buckets = await window.SpriteAtlas.buildBuckets(SLOT_W, SLOT_H);
     if (!buckets.size) return [];
-    const ctx     = canvas.getContext("2d");
-    const imgW    = canvas.width, imgH = canvas.height;
+    const ctx   = canvas.getContext("2d");
+    const imgW  = canvas.width, imgH = canvas.height;
     const imgData = ctx.getImageData(0, 0, imgW, imgH).data;
-
-    const { centresX, centresY } = detectGrid(imgData, imgW, imgH);
-    const slots = await scanBucketsAsync(imgData, imgW, imgH, buckets, centresX, centresY);
-    return hydrateSlots(slots, window.SpriteAtlas);
+    const raw = await scanBucketsAsync(imgData, imgW, imgH, buckets);
+    return hydrateFindings(raw, window.SpriteAtlas);
   }
 
   function renderLoadoutLightbox(loadoutRows) {
@@ -2164,25 +2154,24 @@
     modal.className = "loadout-modal";
     const header = document.createElement("div");
     header.className = "loadout-modal-hd";
-    header.innerHTML = `<span>Loadout</span><button class="btn btn-ghost loadout-close">✕</button>`;
+    header.innerHTML = `<span>Loadout (${loadoutRows.length} item${loadoutRows.length !== 1 ? "s" : ""})</span><button class="btn btn-ghost loadout-close">✕</button>`;
     header.querySelector(".loadout-close").addEventListener("click", () => overlay.remove());
     overlay.addEventListener("click", (e) => { if (e.target === overlay) overlay.remove(); });
-    const grid = document.createElement("div");
-    grid.className = "loadout-grid";
-    for (let slot = 0; slot < SLOT_COLS * SLOT_ROWS; slot++) {
-      const row = loadoutRows.find((r) => r.slot === slot);
-      const cell = document.createElement("div");
-      cell.className = "loadout-cell";
-      if (row) {
-        const icon = document.createElement("span");
-        icon.className = "ins-item-icon";
-        icon.title = row.name;
-        applySpriteBg(icon, row.itemId);
-        cell.appendChild(icon);
-      }
-      grid.appendChild(cell);
-    }
-    modal.append(header, grid);
+    const list = document.createElement("div");
+    list.className = "loadout-findings";
+    loadoutRows.forEach(({ itemId, name }) => {
+      const row = document.createElement("div");
+      row.className = "loadout-finding-row";
+      const icon = document.createElement("span");
+      icon.className = "ins-item-icon";
+      icon.title = name;
+      applySpriteBg(icon, itemId);
+      const label = document.createElement("span");
+      label.textContent = name;
+      row.append(icon, label);
+      list.appendChild(row);
+    });
+    modal.append(header, list);
     overlay.appendChild(modal);
     document.body.appendChild(overlay);
   }
@@ -2219,91 +2208,50 @@
       canvas.height = img.naturalHeight || img.height;
       canvas.getContext("2d").drawImage(img, 0, 0);
       dropzone.textContent = "Analysing…";
-      const results = await analyzeLoadoutImage(canvas);
-      pendingLoadout = [];
+      const findings = await analyzeLoadoutImage(canvas);
+      pendingLoadout = findings.map(({ id, entry }) => ({ itemId: id, name: entry?.name ?? String(id) }));
       slotGrid.innerHTML = "";
       slotGrid.hidden = false;
 
-      const setSlot = (slot, itemId, name) => {
-        const idx = pendingLoadout.findIndex((r) => r.slot === slot);
-        if (idx >= 0) pendingLoadout[idx] = { slot, itemId, name };
-        else pendingLoadout.push({ slot, itemId, name });
-      };
-      const clearSlot = (slot) => {
-        const idx = pendingLoadout.findIndex((r) => r.slot === slot);
-        if (idx >= 0) pendingLoadout.splice(idx, 1);
-      };
+      if (!findings.length) {
+        const empty = document.createElement("div");
+        empty.className = "loadout-empty";
+        empty.textContent = "No items identified.";
+        slotGrid.appendChild(empty);
+      } else {
+        findings.forEach(({ id, score, entry }) => {
+          const name = entry?.name ?? String(id);
+          const cell = document.createElement("div");
+          cell.className = "loadout-finding-row";
 
-      for (let slot = 0; slot < SLOT_COLS * SLOT_ROWS; slot++) {
-        const res  = results.find((r) => r.slot === slot);
-        const cell = document.createElement("div");
-        cell.className = "loadout-edit-cell";
-        cell.dataset.slot = slot;
+          const icon = document.createElement("span");
+          icon.className = "ins-item-icon";
+          applySpriteBg(icon, id);
 
-        const icon = document.createElement("span");
-        icon.className = "ins-item-icon";
+          const label = document.createElement("span");
+          label.className = "loadout-finding-name";
+          label.textContent = name;
 
-        const editBtn = document.createElement("button");
-        editBtn.className = "btn btn-ghost loadout-cell-edit";
-        editBtn.textContent = "✎";
-        editBtn.title = "Set item";
+          const badge = document.createElement("span");
+          badge.className = "loadout-finding-score";
+          badge.textContent = `${Math.round(score * 100)}%`;
 
-        const clearBtn = document.createElement("button");
-        clearBtn.className = "btn btn-ghost loadout-cell-clear";
-        clearBtn.textContent = "✕";
-        clearBtn.title = "Clear slot";
-
-        if (res?.candidates?.length) {
-          const top = res.candidates[0];
-          applySpriteBg(icon, top.id);
-          cell.title = top.entry?.name ?? String(top.id);
-          setSlot(slot, top.id, top.entry?.name ?? String(top.id));
-        }
-
-        let picker = null;
-        let pickerObserver = null;
-        const closePicker = () => {
-          pickerObserver?.disconnect(); pickerObserver = null;
-          picker?.remove(); picker = null;
-        };
-
-        clearBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          clearSlot(slot);
-          icon.style.background = "";
-          icon.style.width = "";
-          icon.style.height = "";
-          cell.title = "";
-          closePicker();
-        });
-
-        editBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          if (picker) { closePicker(); return; }
-          picker = document.createElement("div");
-          picker.className = "loadout-cell-picker";
-          const pb = makeItemPickerBox([], "req");
-          picker.appendChild(pb);
-          const pillsEl = pb.querySelector(".rtb-tags");
-          pickerObserver = new MutationObserver(() => {
-            const items = pb.readItems();
-            if (!items.length) return;
-            const { id, name } = items[0];
-            setSlot(slot, id, name);
-            applySpriteBg(icon, id);
-            cell.title = name;
-            closePicker();
+          const rmBtn = document.createElement("button");
+          rmBtn.className = "btn btn-ghost ins-pill-rm";
+          rmBtn.textContent = "✕";
+          rmBtn.addEventListener("click", () => {
+            pendingLoadout = pendingLoadout.filter(r => r.itemId !== id);
+            cell.remove();
+            saveBtn.hidden = pendingLoadout.length === 0;
           });
-          pickerObserver.observe(pillsEl, { childList: true });
-          cell.appendChild(picker);
-          pb.querySelector(".rtb-input")?.focus();
-        });
 
-        cell.append(icon, editBtn, clearBtn);
-        slotGrid.appendChild(cell);
+          cell.append(icon, label, badge, rmBtn);
+          slotGrid.appendChild(cell);
+        });
       }
+
       dropzone.textContent = "Replace image";
-      saveBtn.hidden = false;
+      saveBtn.hidden = pendingLoadout.length === 0;
     };
 
     const handleFile = (file) => {
