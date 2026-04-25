@@ -794,8 +794,11 @@ display: flex;
   box-shadow: 0 var(--blur-sm) var(--sp-h) rgba(0,0,0,.08);
 }
 .rtb-option {
+  display: grid;
   padding: var(--sp-q) var(--sp-h);
-  font-size: var(--fs-sm); cursor: pointer;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  grid-template-columns: auto auto;
 }
 .rtb-option:hover, .rtb-option--active { background: var(--faint); }
 .rtb-tag:focus {
@@ -856,6 +859,11 @@ mark.rtb-hl-fuzzy {
 }
 .ins-card-label{
   height: 100%;
+}
+.ins-item-icon{
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1;
 }
 .goal-card-reqs {
   font-size: var(--fs-xs);
