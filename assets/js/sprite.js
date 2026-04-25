@@ -119,7 +119,7 @@
           if (rec.slug) m[rec.slug] = rec;
           return m;
         }, {});
-        cropSprites(atlas, sheet);
+        cropSpritesAsync(atlas, sheet);
       });
       return _promise;
     },
