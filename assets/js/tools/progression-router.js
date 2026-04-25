@@ -1936,13 +1936,6 @@
   const SLOT_W = 36, SLOT_H = 32, SLOT_COLS = 4, SLOT_ROWS = 7;
   const CROSS_TOL = 28;
   const NBR_TOL   = 38;
-  const NBR8 = [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]];
-
-  const pixMatch = (d, i, r, g, b, tol) =>
-    Math.abs(d[i] - r) <= tol && Math.abs(d[i+1] - g) <= tol && Math.abs(d[i+2] - b) <= tol;
-
-  // Quantize to the same 5-bit-per-channel bucket key used by SpriteAtlas.buildBuckets.
-  const pxBucket = (r, g, b) => (r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10);
 
   // Detect inventory grid slot centres via 1D projection of dark-background pixels.
   function detectGrid(imgData, imgW, imgH) {
@@ -1965,63 +1958,112 @@
     return { centresX: peaksIn(colAcc, SLOT_COLS), centresY: peaksIn(rowAcc, SLOT_ROWS) };
   }
 
-  // Single-pass bucket-gated scan. Populates scoreMap: Map<id, Int32Array(imgW*imgH)>.
-  function scanBuckets(imgData, imgW, imgH, buckets, scoreMap) {
-    for (let py = 0; py < imgH; py++) {
-      for (let px = 0; px < imgW; px++) {
-        const pi = (py * imgW + px) * 4;
-        if (imgData[pi + 3] < 16) continue;
-        const pr = imgData[pi], pg = imgData[pi+1], pb = imgData[pi+2];
-        const candidates = buckets.get(pxBucket(pr, pg, pb));
-        if (!candidates) continue;
-        for (const { id, cross } of candidates) {
-          const len = cross.length;
-          for (let ci = 0; ci < len; ci += 5) {
-            const dx = cross[ci], dy = cross[ci+1], cr = cross[ci+2], cg = cross[ci+3], cb = cross[ci+4];
-            if (!pixMatch(imgData, pi, cr, cg, cb, CROSS_TOL)) continue;
-            const scx = px - dx, scy = py - dy;
-            if (scx < 0 || scy < 0 || scx >= imgW || scy >= imgH) continue;
-            let hits = 1;
-            for (let n = 0; n < 8; n++) {
-              const ndx = dx + NBR8[n][0], ndy = dy + NBR8[n][1];
-              for (let ni = 0; ni < len; ni += 5) {
-                if (cross[ni] !== ndx || cross[ni+1] !== ndy) continue;
-                const nx = scx + ndx, ny = scy + ndy;
-                if (nx < 0 || ny < 0 || nx >= imgW || ny >= imgH) break;
-                const ni2 = (ny * imgW + nx) * 4;
-                if (pixMatch(imgData, ni2, cross[ni+2], cross[ni+3], cross[ni+4], NBR_TOL)) hits++;
-                break;
-              }
-            }
-            if (hits >= 2) {
-              let sc = scoreMap.get(id);
-              if (!sc) { sc = new Int32Array(imgW * imgH); scoreMap.set(id, sc); }
-              sc[scy * imgW + scx] += hits;
-            }
-          }
-        }
-      }
+  // Serialize bucket map for transfer to worker: [[bucketKey, [[id, Int16Array], ...]], ...]
+  function serializeBuckets(buckets) {
+    const entries = [], transfers = [];
+    for (const [k, sprites] of buckets) {
+      const spriteEntries = sprites.map(({ id, cross }) => {
+        transfers.push(cross.buffer);
+        return [id, cross];
+      });
+      entries.push([k, spriteEntries]);
     }
+    return { entries, transfers };
   }
 
-  // For each grid slot, find the best-scoring sprite in the score buffer.
-  function pickBestPerSlot(scoreMap, centresX, centresY, imgW, atlas) {
-    const hw = SLOT_W >> 1, hh = SLOT_H >> 1;
-    return centresX.flatMap((cx, col) =>
-      centresY.flatMap((cy, row) => {
-        const x0 = Math.max(0, cx - hw), x1 = Math.min(imgW, cx + hw);
-        const y0 = Math.max(0, cy - hh), y1 = Math.min((scoreMap.values().next().value?.length / imgW | 0), cy + hh);
-        const ranked = [...scoreMap.entries()].flatMap(([id, sc]) => {
-          let s = 0;
-          for (let sy = y0; sy < y1; sy++) {
-            const base = sy * imgW;
-            for (let sx = x0; sx < x1; sx++) s += sc[base + sx];
+  // Offload the scan + slot-pick entirely to a worker so the UI thread is never blocked.
+  function scanBucketsAsync(imgData, imgW, imgH, buckets, centresX, centresY) {
+    return new Promise((resolve) => {
+      const { entries, transfers } = serializeBuckets(buckets);
+      // imgData buffer is also transferred — zero-copy into worker
+      transfers.push(imgData.buffer);
+      const src = `
+        const pixMatch = (d,i,r,g,b,t) =>
+          Math.abs(d[i]-r)<=t && Math.abs(d[i+1]-g)<=t && Math.abs(d[i+2]-b)<=t;
+        const pxBucket = (r,g,b) => (r>>3)|((g>>3)<<5)|((b>>3)<<10);
+        const NBR8 = [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]];
+        const CROSS_TOL = ${CROSS_TOL}, NBR_TOL = ${NBR_TOL};
+        const SLOT_W = ${SLOT_W}, SLOT_H = ${SLOT_H};
+        const SLOT_COLS = ${SLOT_COLS}, SLOT_ROWS = ${SLOT_ROWS};
+
+        self.onmessage = ({ data: { imgData, imgW, imgH, bucketEntries, centresX, centresY } }) => {
+          const buckets = new Map(bucketEntries.map(([k, sprites]) =>
+            [k, sprites.map(([id, cross]) => ({ id, cross: new Int16Array(cross) }))]
+          ));
+          const scoreMap = new Map();
+          for (let py = 0; py < imgH; py++) {
+            for (let px = 0; px < imgW; px++) {
+              const pi = (py * imgW + px) * 4;
+              if (imgData[pi + 3] < 16) continue;
+              const pr = imgData[pi], pg = imgData[pi+1], pb = imgData[pi+2];
+              const candidates = buckets.get(pxBucket(pr, pg, pb));
+              if (!candidates) continue;
+              for (const { id, cross } of candidates) {
+                const len = cross.length;
+                for (let ci = 0; ci < len; ci += 5) {
+                  const dx = cross[ci], dy = cross[ci+1], cr = cross[ci+2], cg = cross[ci+3], cb = cross[ci+4];
+                  if (!pixMatch(imgData, pi, cr, cg, cb, CROSS_TOL)) continue;
+                  const scx = px - dx, scy = py - dy;
+                  if (scx < 0 || scy < 0 || scx >= imgW || scy >= imgH) continue;
+                  let hits = 1;
+                  for (let n = 0; n < 8; n++) {
+                    const ndx = dx + NBR8[n][0], ndy = dy + NBR8[n][1];
+                    for (let ni = 0; ni < len; ni += 5) {
+                      if (cross[ni] !== ndx || cross[ni+1] !== ndy) continue;
+                      const nx = scx + ndx, ny = scy + ndy;
+                      if (nx < 0 || ny < 0 || nx >= imgW || ny >= imgH) break;
+                      const ni2 = (ny * imgW + nx) * 4;
+                      if (pixMatch(imgData, ni2, cross[ni+2], cross[ni+3], cross[ni+4], NBR_TOL)) hits++;
+                      break;
+                    }
+                  }
+                  if (hits >= 2) {
+                    let sc = scoreMap.get(id);
+                    if (!sc) { sc = new Int32Array(imgW * imgH); scoreMap.set(id, sc); }
+                    sc[scy * imgW + scx] += hits;
+                  }
+                }
+              }
+            }
           }
-          return s > 0 ? [{ id: +id, score: s, entry: atlas?.entry(+id) }] : [];
-        }).filter(c => c.entry).sort((a, b) => b.score - a.score).slice(0, 5);
-        return ranked.length ? [{ slot: row * SLOT_COLS + col, candidates: ranked }] : [];
-      })
-    );
+
+          // Pick best per slot inside the worker too — only ship compact results back.
+          const hw = SLOT_W >> 1, hh = SLOT_H >> 1;
+          const results = centresX.flatMap((cx, col) =>
+            centresY.flatMap((cy, row) => {
+              const x0 = Math.max(0, cx - hw), x1 = Math.min(imgW, cx + hw);
+              const y0 = Math.max(0, cy - hh), y1 = Math.min((scoreMap.values().next().value?.length / imgW | 0), cy + hh);
+              const ranked = [...scoreMap.entries()].flatMap(([id, sc]) => {
+                let s = 0;
+                for (let sy = y0; sy < y1; sy++) {
+                  const base = sy * imgW;
+                  for (let sx = x0; sx < x1; sx++) s += sc[base + sx];
+                }
+                return s > 0 ? [{ id: +id, score: s }] : [];
+              }).sort((a, b) => b.score - a.score).slice(0, 5);
+              return ranked.length ? [{ slot: row * SLOT_COLS + col, candidates: ranked }] : [];
+            })
+          );
+          self.postMessage(results);
+        };
+      `;
+      const worker = new Worker(URL.createObjectURL(new Blob([src], { type: "text/javascript" })));
+      worker.onmessage = ({ data }) => { worker.terminate(); resolve(data); };
+      worker.postMessage(
+        { imgData, imgW, imgH, bucketEntries: entries, centresX, centresY },
+        transfers
+      );
+    });
+  }
+
+  // For each grid slot, hydrate worker results with atlas pack entries.
+  function hydrateSlots(slots, atlas) {
+    return slots.flatMap(({ slot, candidates }) => {
+      const hydrated = candidates
+        .map(({ id, score }) => ({ id, score, entry: atlas?.entry(id) }))
+        .filter(c => c.entry);
+      return hydrated.length ? [{ slot, candidates: hydrated }] : [];
+    });
   }
 
   async function analyzeLoadoutImage(canvas) {
@@ -2032,9 +2074,8 @@
     const imgData = ctx.getImageData(0, 0, imgW, imgH).data;
 
     const { centresX, centresY } = detectGrid(imgData, imgW, imgH);
-    const scoreMap = new Map();
-    scanBuckets(imgData, imgW, imgH, buckets, scoreMap);
-    return pickBestPerSlot(scoreMap, centresX, centresY, imgW, window.SpriteAtlas);
+    const slots = await scanBucketsAsync(imgData, imgW, imgH, buckets, centresX, centresY);
+    return hydrateSlots(slots, window.SpriteAtlas);
   }
 
   function renderLoadoutLightbox(loadoutRows) {
