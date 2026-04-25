@@ -1919,179 +1919,187 @@
   }
 
   // ── Loadout analysis ───────────────────────────────────────────────────────
+  // Strategy: cross-pattern pixel lookup + neighbor verification + 1D score accumulation.
+  //
+  // Build phase  — per sprite: extract center row + center column pixels (the X/cross).
+  //   Store as flat Int16Array [dx0,dy0,r0,g0,b0, dx1,dy1,r1,g1,b1, ...] relative to
+  //   sprite center. Skip transparent pixels. The cross has at most W+H-1 opaque pixels.
+  //
+  // Scan phase   — over the full image in one pass (1D index = y*W + x):
+  //   For each pixel p, check every sprite's cross pixels: does p.rgb match any cross
+  //   pixel within tolerance? If yes, verify that pixel's 8 neighbors each match the
+  //   corresponding adjacent cross pixel. Accumulate neighbor-hit count into a 1D
+  //   Int32Array score[p] for that sprite.
+  //
+  // Result phase — find score peaks in each grid slot region; top sprite per slot wins.
 
-  // Thumbnail dimensions for fingerprinting — small enough to be fast, large
-  // enough to preserve spatial structure (colour layout, not just mean).
-  const FP_W = 9, FP_H = 8;
   const SLOT_W = 36, SLOT_H = 32, SLOT_COLS = 4, SLOT_ROWS = 7;
+  const CROSS_TOL = 28;   // per-channel tolerance for cross pixel match
+  const NBR_TOL   = 38;   // per-channel tolerance for neighbor verification
+  // 8-neighbor offsets as [dx, dy] pairs
+  const NBR8 = [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]];
 
-  // Downsample a full-res RGBA Uint8ClampedArray (srcW×srcH) to FP_W×FP_H
-  // by averaging blocks. Returns Float32Array length FP_W*FP_H*3 (rgb only).
-  function downsample(data, srcW, srcH) {
-    const out = new Float32Array(FP_W * FP_H * 3);
-    const bw = srcW / FP_W, bh = srcH / FP_H;
-    for (let ty = 0; ty < FP_H; ty++) {
-      for (let tx = 0; tx < FP_W; tx++) {
-        let r = 0, g = 0, b = 0, n = 0;
-        const x0 = Math.floor(tx * bw), x1 = Math.floor((tx + 1) * bw);
-        const y0 = Math.floor(ty * bh), y1 = Math.floor((ty + 1) * bh);
-        for (let sy = y0; sy < y1; sy++) {
-          for (let sx = x0; sx < x1; sx++) {
-            const i = (sy * srcW + sx) * 4;
-            if (data[i + 3] < 16) continue; // skip transparent
-            r += data[i]; g += data[i + 1]; b += data[i + 2]; n++;
-          }
-        }
-        const base = (ty * FP_W + tx) * 3;
-        if (n) { out[base] = r / n; out[base + 1] = g / n; out[base + 2] = b / n; }
-      }
+  // Build cross fingerprint for one sprite's pixel buffer (SLOT_W × SLOT_H RGBA).
+  // Returns Int16Array [dx,dy,r,g,b, ...] — coords relative to sprite center.
+  function buildCross(pixels) {
+    const cx = (SLOT_W - 1) >> 1, cy = (SLOT_H - 1) >> 1;
+    const tmp = [];
+    // center row
+    for (let x = 0; x < SLOT_W; x++) {
+      const i = (cy * SLOT_W + x) * 4;
+      if (pixels[i + 3] >= 16) tmp.push(x - cx, 0, pixels[i], pixels[i+1], pixels[i+2]);
     }
-    return out;
+    // center column (skip center pixel already added)
+    for (let y = 0; y < SLOT_H; y++) {
+      if (y === cy) continue;
+      const i = (y * SLOT_W + cx) * 4;
+      if (pixels[i + 3] >= 16) tmp.push(0, y - cy, pixels[i], pixels[i+1], pixels[i+2]);
+    }
+    return new Int16Array(tmp);
   }
 
-  // Sum of squared differences between two FP_W×FP_H thumbnails.
-  // Pixels where the sprite thumbnail is all-zero (transparent block) are skipped.
-  function ssd(a, b) {
-    let s = 0, n = 0;
-    for (let i = 0; i < a.length; i += 3) {
-      if (b[i] === 0 && b[i + 1] === 0 && b[i + 2] === 0) continue; // transparent block
-      const dr = a[i] - b[i], dg = a[i + 1] - b[i + 1], db = a[i + 2] - b[i + 2];
-      s += dr * dr + dg * dg + db * db; n++;
-    }
-    return n ? s / n : Infinity; // normalise by opaque pixel count
-  }
-
-  // Returns true if the slot region is essentially empty (inventory background).
-  // OSRS inventory bg is ~#3b3023 — dark brownish. Accept a ±30 per-channel window.
-  function isSlotEmpty(data) {
-    let matches = 0, total = 0;
-    for (let i = 0; i < data.length; i += 4) {
-      if (data[i + 3] < 16) continue;
-      total++;
-      if (data[i] < 90 && data[i + 1] < 70 && data[i + 2] < 55) matches++;
-    }
-    return total === 0 || matches / total > 0.72;
-  }
-
-  // Build {id → Float32Array(FP_W*FP_H*3)} fingerprint map from localStorage data URLs.
-  async function buildFingerprintsAsync() {
+  // Build cross lookup: { id → Int16Array } for all cached sprites.
+  async function buildCrossLookup() {
     if (window._atlasFpPromise) return window._atlasFpPromise;
     window._atlasFpPromise = (async () => {
-      const fp = {};
-      const spriteIds = [];
+      const lookup = {};
+      const oc = new OffscreenCanvas(SLOT_W, SLOT_H);
+      const ctx = oc.getContext("2d");
       for (let i = 0; i < localStorage.length; i++) {
         const k = localStorage.key(i);
-        if (k?.startsWith("osrs-sprite-") && k !== "osrs-sprite-atlas" && k !== "osrs-sprite-pack") {
-          spriteIds.push(k.slice("osrs-sprite-".length));
-        }
-      }
-      const oc  = new OffscreenCanvas(SLOT_W, SLOT_H);
-      const ctx = oc.getContext("2d");
-      for (const id of spriteIds) {
-        const url = localStorage.getItem(`osrs-sprite-${id}`);
+        if (!k?.startsWith("osrs-sprite-") || k === "osrs-sprite-atlas" || k === "osrs-sprite-pack") continue;
+        const id  = k.slice("osrs-sprite-".length);
+        const url = localStorage.getItem(k);
         if (!url) continue;
         try {
-          const blob = await fetch(url).then((r) => r.blob());
-          const bmp  = await createImageBitmap(blob);
+          const bmp = await createImageBitmap(await fetch(url).then(r => r.blob()));
           ctx.clearRect(0, 0, SLOT_W, SLOT_H);
           ctx.drawImage(bmp, 0, 0);
           bmp.close();
-          const pixels = ctx.getImageData(0, 0, SLOT_W, SLOT_H).data;
-          fp[id] = downsample(pixels, SLOT_W, SLOT_H);
-        } catch { /* skip */ }
+          lookup[id] = buildCross(ctx.getImageData(0, 0, SLOT_W, SLOT_H).data);
+        } catch { /* skip corrupt */ }
       }
-      return fp;
+      return lookup;
     })();
     return window._atlasFpPromise;
   }
 
-  // Detect OSRS inventory grid origin and stride in a pasted screenshot.
-  // Scans horizontal/vertical projections for the slot-border colour (#494034).
-  // Falls back to uniform division if detection fails.
-  function detectGrid(ctx, W, H) {
-    const fullData = ctx.getImageData(0, 0, W, H).data;
-    // Count "slot background" pixels per row and column
-    const colScore = new Float32Array(W);
-    const rowScore = new Float32Array(H);
-    for (let y = 0; y < H; y++) {
-      for (let x = 0; x < W; x++) {
-        const i = (y * W + x) * 4;
-        // slot bg: dark brown, R<100 G<80 B<65
-        if (fullData[i] < 100 && fullData[i + 1] < 80 && fullData[i + 2] < 65) {
-          colScore[x]++; rowScore[y]++;
+  // Pixel match within per-channel tolerance.
+  const pixMatch = (d, i, r, g, b, tol) =>
+    Math.abs(d[i] - r) <= tol && Math.abs(d[i+1] - g) <= tol && Math.abs(d[i+2] - b) <= tol;
+
+  // Scan the full image for matches of one sprite's cross.
+  // Accumulates neighbor-hit counts into score[] (length imgW*imgH, pre-allocated).
+  // Returns total score across all image positions (used to rank sprites).
+  function scanCross(imgData, imgW, imgH, cross, score) {
+    const len = cross.length;
+    // Build a quick color set for the cross pixels to pre-filter candidate positions.
+    // For each pixel p in the image, check if it matches any cross pixel's color.
+    // If so, compute the implied sprite-center position and add neighbor hits to score.
+    for (let p = 0; p < score.length; p++) score[p] = 0;
+
+    let total = 0;
+    for (let py = 0; py < imgH; py++) {
+      for (let px = 0; px < imgW; px++) {
+        const pi = (py * imgW + px) * 4;
+        if (imgData[pi + 3] < 16) continue;
+        // Check each cross pixel: does this image pixel match it?
+        for (let ci = 0; ci < len; ci += 5) {
+          const dx = cross[ci], dy = cross[ci+1], cr = cross[ci+2], cg = cross[ci+3], cb = cross[ci+4];
+          if (!pixMatch(imgData, pi, cr, cg, cb, CROSS_TOL)) continue;
+          // This image pixel matches cross pixel at offset (dx,dy) from sprite center.
+          // Implied sprite center: (cx, cy) = (px - dx, py - dy)
+          const cx = px - dx, cy = py - dy;
+          if (cx < 0 || cy < 0 || cx >= imgW || cy >= imgH) continue;
+          // Verify 8 neighbors of the matched cross pixel against their cross neighbors.
+          let hits = 1;
+          for (let n = 0; n < 8; n++) {
+            const ndx = dx + NBR8[n][0], ndy = dy + NBR8[n][1];
+            // Find this neighbor in the cross
+            for (let ni = 0; ni < len; ni += 5) {
+              if (cross[ni] !== ndx || cross[ni+1] !== ndy) continue;
+              const nx = cx + ndx, ny = cy + ndy;
+              if (nx < 0 || ny < 0 || nx >= imgW || ny >= imgH) break;
+              const ni2 = (ny * imgW + nx) * 4;
+              if (pixMatch(imgData, ni2, cross[ni+2], cross[ni+3], cross[ni+4], NBR_TOL)) hits++;
+              break;
+            }
+          }
+          if (hits >= 2) {
+            score[cy * imgW + cx] += hits;
+            total += hits;
+          }
         }
       }
     }
-    // Smooth and find valley centres (slot interiors are dark, borders darker still —
-    // actually slot centres score high, so find columns with locally max score spaced ~strideX apart)
-    const estStrideX = W / SLOT_COLS, estStrideY = H / SLOT_ROWS;
-    // Use projection peaks to find slot centres
-    const centresX = findPeaks(colScore, SLOT_COLS, estStrideX);
-    const centresY = findPeaks(rowScore, SLOT_ROWS, estStrideY);
-    if (centresX.length === SLOT_COLS && centresY.length === SLOT_ROWS) {
-      return { centresX, centresY };
-    }
-    // Fallback: uniform
-    return {
-      centresX: Array.from({ length: SLOT_COLS }, (_, i) => Math.round(estStrideX * (i + 0.5))),
-      centresY: Array.from({ length: SLOT_ROWS }, (_, i) => Math.round(estStrideY * (i + 0.5))),
-    };
+    return total;
   }
 
-  // Find N evenly-spaced peaks in a 1-D score array with expected spacing ~stride.
-  function findPeaks(scores, n, stride) {
-    const len = scores.length;
-    const peaks = [];
-    let start = 0;
-    for (let k = 0; k < n; k++) {
-      const end = Math.min(len, Math.round(start + stride));
-      let best = start, bestVal = -1;
-      for (let i = start; i < end; i++) {
-        if (scores[i] > bestVal) { bestVal = scores[i]; best = i; }
+  // Detect inventory grid slot centres via 1D projection of dark-background pixels.
+  function detectGrid(imgData, imgW, imgH) {
+    const colAcc = new Int32Array(imgW), rowAcc = new Int32Array(imgH);
+    for (let i = 0; i < imgData.length; i += 4) {
+      if (imgData[i] < 100 && imgData[i+1] < 80 && imgData[i+2] < 65 && imgData[i+3] >= 16) {
+        const p = i >> 2;
+        colAcc[p % imgW]++; rowAcc[(p / imgW) | 0]++;
       }
-      peaks.push(best);
-      start = end;
     }
-    return peaks;
+    // Find N peaks spaced ~stride apart by scanning expected-width windows.
+    const peaksIn = (acc, n) => {
+      const stride = acc.length / n;
+      return Array.from({ length: n }, (_, k) => {
+        const lo = Math.floor(k * stride), hi = Math.min(acc.length, Math.ceil((k+1) * stride));
+        let best = lo, bv = -1;
+        for (let i = lo; i < hi; i++) if (acc[i] > bv) { bv = acc[i]; best = i; }
+        return best;
+      });
+    };
+    return { centresX: peaksIn(colAcc, SLOT_COLS), centresY: peaksIn(rowAcc, SLOT_ROWS) };
   }
 
-  function extractSlots(canvas) {
-    const ctx = canvas.getContext("2d");
-    const W = canvas.width, H = canvas.height;
-    const { centresX, centresY } = detectGrid(ctx, W, H);
-    const hw = Math.floor(SLOT_W / 2), hh = Math.floor(SLOT_H / 2);
+  // For each grid slot, find the best-scoring sprite in the score buffer.
+  // score is a Map<id, Int32Array(imgW*imgH)>.
+  function pickBestPerSlot(scoreMap, centresX, centresY, imgW, atlas) {
+    const hw = SLOT_W >> 1, hh = SLOT_H >> 1;
     return centresX.flatMap((cx, col) =>
-      centresY.map((cy, row) => {
-        const x = Math.max(0, Math.min(W - SLOT_W, cx - hw));
-        const y = Math.max(0, Math.min(H - SLOT_H, cy - hh));
-        return { slot: row * SLOT_COLS + col, data: ctx.getImageData(x, y, SLOT_W, SLOT_H).data };
+      centresY.flatMap((cy, row) => {
+        const x0 = Math.max(0, cx - hw), x1 = Math.min(imgW, cx + hw);
+        const y0 = Math.max(0, cy - hh), y1 = Math.min((scoreMap.values().next().value?.length / imgW | 0), cy + hh);
+        // Accumulate per-sprite totals within this slot region (1D scan of the region rows)
+        const ranked = [...scoreMap.entries()].flatMap(([id, sc]) => {
+          let s = 0;
+          for (let sy = y0; sy < y1; sy++) {
+            const base = sy * imgW;
+            for (let sx = x0; sx < x1; sx++) s += sc[base + sx];
+          }
+          return s > 0 ? [{ id: +id, score: s, entry: atlas?.entry(+id) }] : [];
+        }).filter(c => c.entry).sort((a, b) => b.score - a.score).slice(0, 5);
+        return ranked.length ? [{ slot: row * SLOT_COLS + col, candidates: ranked }] : [];
       })
     );
   }
 
-  // SSD_THRESHOLD: mean per-pixel SSD below which we accept a match.
-  // Each channel is 0–255, so 255²=65025 max per pixel per channel.
-  // A value of 1800 means ~42/255 average channel deviation — tight enough to reject noise.
-  const SSD_THRESHOLD = 1800;
-
   async function analyzeLoadoutImage(canvas) {
-    const fp = await buildFingerprintsAsync();
-    const fpEntries = Object.entries(fp);
-    if (!fpEntries.length) return [];
-    const slots = extractSlots(canvas);
-    const atlas = window.SpriteAtlas;
-    return slots.flatMap(({ slot, data }) => {
-      if (isSlotEmpty(data)) return [];
-      const slotThumb = downsample(data, SLOT_W, SLOT_H);
-      const ranked = fpEntries
-        .map(([id, thumb]) => ({ id: +id, score: ssd(slotThumb, thumb) }))
-        .filter((c) => c.score < SSD_THRESHOLD)
-        .sort((a, b) => a.score - b.score)
-        .slice(0, 5)
-        .map(({ id, score }) => ({ id, score, entry: atlas?.entry(id) }))
-        .filter((c) => c.entry);
-      return ranked.length ? [{ slot, candidates: ranked }] : [];
-    });
+    const lookup = await buildCrossLookup();
+    const ids = Object.keys(lookup);
+    if (!ids.length) return [];
+    const ctx    = canvas.getContext("2d");
+    const imgW   = canvas.width, imgH = canvas.height;
+    const imgData = ctx.getImageData(0, 0, imgW, imgH).data;
+    const atlas  = window.SpriteAtlas;
+
+    const { centresX, centresY } = detectGrid(imgData, imgW, imgH);
+
+    // One shared score buffer per sprite, reused across the scan.
+    const scoreBuf = new Int32Array(imgW * imgH);
+    // Collect per-sprite score maps only for sprites that score above zero.
+    const scoreMap = new Map();
+    for (const id of ids) {
+      const total = scanCross(imgData, imgW, imgH, lookup[id], scoreBuf);
+      if (total > 0) scoreMap.set(id, scoreBuf.slice()); // copy only when hit
+    }
+
+    return pickBestPerSlot(scoreMap, centresX, centresY, imgW, atlas);
   }
 
   function renderLoadoutLightbox(loadoutRows) {
