@@ -217,13 +217,31 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 ---
 
+## [router:synthetic-prereqs] Synthetic prerequisite steps when router can't satisfy a goal req
+
+**What exists:** `routeGoal` only selects from `allSteps`. If no step in the bank grants a required skill level or tag, the router silently falls short — the capstone renders with a red seq-dot and no steps bridge the gap. Same issue on custom inserts: inserting a step with an unmet skill req leaves the seq-dot red with no remediation.
+
+**What it should do:**
+
+1. **Post-route gap fill (goals):** After `routeGoal` returns, compare the final skill state against `goal.reqs.skills`. For each skill `sk` where `finalSkills[sk] < required[sk]`, and no step in the returned path already grants enough of `sk`, synthesise a training step: `{ id: "synth-${sk}-${lvl}-${ts}", label: "Train ${skill} to ${lvl}", detail: "Synthetic — no matching step found in bank", grants: { [sk]: lvl }, reqs: { skills: { [sk]: currentLvl } }, _custom: true, _synthetic: true }`. Insert it just before the capstone. For tag reqs not satisfied, synthesise a tag-grant step similarly.
+
+2. **Continuity from existing plan steps:** Before synthesising, check whether an existing step in the current `path` already grants the skill at a lower level. If so, the synthetic step's req should chain from that grant level (not from the profile baseline), and its label should reflect the delta (e.g. "Train Fishing 58→75").
+
+3. **Custom insert gap fill:** On commit of a custom insert (`ins-add` handler), simulate cumulative skill state at `afterIdx` by replaying `applyGrants` across `currentPath.slice(0, afterIdx + 1)`. For each req skill in the inserted step not satisfied at that position, auto-insert a synthetic prereq step immediately before the inserted step. Push it to `pinnedInserts` with anchor chained to the previous step. Same for tag reqs.
+
+4. **Synthetic steps are editable/removable** like any custom step — same ✕ and ✎ affordances. `_synthetic: true` flag is the only distinction.
+
+**Status:** TODO
+
+---
+
 ## [router:insert-prereq-inject] Auto-inject synthetic prereq steps on custom insert
 
 **What exists:** When a custom step is inserted with `reqs.skills` entries, the seq-dot may go red if the cumulative skill state at that position doesn't satisfy the req. No remediation happens automatically.
 
-**What it should do:** On commit of a custom insert, simulate cumulative skill state at `afterIdx`. For each req skill not yet satisfied at that position, auto-insert a synthetic prereq step immediately before the inserted step — `{ id: "custom-prereq-${skill}-${ts}", label: "Train ${skill} to ${level}", grants: { [skill]: level }, _custom: true }`. Each synthetic step is also pushed to `pinnedInserts` with the same anchor chain so recomputes respect it. The user can edit or remove synthetic steps like any other custom step. No manual intervention needed to fix seq-dot red.
+**What it should do:** Superseded by `[router:synthetic-prereqs]` which covers both goal routing and custom inserts in one pass.
 
-**Status:** TODO
+**Status:** SUPERSEDED → see [router:synthetic-prereqs]
 
 ---
 
@@ -360,6 +378,30 @@ The inline insert form (`buildStepForm`) should use the same card/pill UI as goa
 ## [router:insert-step-body-title-style] Insert form title/detail inputs styled like step-body elements
 
 **Status:** DONE ✓ — `.ins-label`/`.ins-detail` CSS matches `.step-title`/`.step-detail`; wrapped in `.ins-step-body` flex column (`638838c`)
+
+---
+
+## [router:tag-req-non-skill] Tag req fields support non-skill requisites (quests, items, custom tags)
+
+**Status:** DONE ✓ — `makeTagReqBox` tagbox in all three forms; `knownTags` localStorage pool; `mergeTags` on save; `scoreTag`/`rankTags`/`highlightTag` fuzzy+Jaccard ranking with serial/fuzzy highlight; backspace removes last pill; pills focusable + Delete removes (`a27cb84`, `d25232f`, `4acc02f`)
+
+---
+
+## [router:tag-picker-persistent-source] Tag dropdown sources from persistent localStorage pool, not DOM
+
+**Status:** DONE ✓ — `STORE_TAGS` + `store.tags()`/`store.saveTags()`; `knownTags` Set seeded from all jsonl + saved plans + goals on init; `collectGrantedTags()` returns `[...knownTags].sort()`; no DOM scraping (`a27cb84`)
+
+---
+
+## [router:step-done-persists] Non-quest step done state persists across recomputes
+
+**Status:** DONE ✓ — `manualStepDone` Set mirrors `manualQuestDone`; saved/loaded per tab; restored in `renderSteps`; `propagatePrereqsDone` registers auto-propagated steps (`828476c`)
+
+---
+
+## [router:custom-goals-bank] User-created goals in Step Bank
+
+**Status:** DONE ✓ — `＋ New goal` button; `openCustomGoalForm()` inline form reusing all editor helpers; `customGoals[]` + `STORE_CUSTOM_GOALS`; custom badge + ✕ delete in bank list (`ceff58c`)
 
 ---
 
