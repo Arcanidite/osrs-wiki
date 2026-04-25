@@ -644,8 +644,7 @@ body {
   transition: border-color 0.15s, background 0.15s; max-height: 5rem;
 }
 .step-note:focus, .step-note:not(:placeholder-shown) {
-  border-color: var(--border); background: var(--bg);
-  color: var(--ink); outline: none;
+  border-color: var(--border); color: var(--ink); outline: none;
 }
 
 /* ── Plan tab bar ────────────────────────────────────────────────────────── */
