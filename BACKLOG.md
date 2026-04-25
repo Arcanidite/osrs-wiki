@@ -231,7 +231,7 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 4. **Synthetic steps are editable/removable** like any custom step — same ✕ and ✎ affordances. `_synthetic: true` flag is the only distinction.
 
-**Status:** TODO
+**Status:** DONE ✓ — `synthFillGaps` covers points 1+2 (maxGranted chain, delta labels); `synthPrereqs` covers point 3 (skillsAtPos replay, pinnedInserts push); `_synthetic` flag present; ✕/✎ affordances via `_custom: true`
 
 ---
 
@@ -241,7 +241,7 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 **What it should do:** Capstone steps cannot be individually removed. The ✕ button should be absent or disabled on capstone rows. The only way to remove a capstone is to remove its goal from the goal queue (which already clears it on recompute). The capstone is cosmetically tied to the final step of its dependency chain — it should render immediately after the last non-capstone step with the same `_goalLabel`.
 
-**Status:** TODO
+**Status:** DONE ✓ — ✕ button omitted from capstone rows; only ⟳ fill-gap shown when invalid (`f45f727`)
 
 ---
 
@@ -251,7 +251,7 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 **What it should do:** Synthetic steps must be sorted by their `reqs.skills` value ascending before insertion so the dependency chain reads correctly. Additionally, when a goal is removed from the queue, any synthetic steps in `pinnedInserts` whose `_goalLabel` matches the removed goal must be purged alongside its capstone/custom steps.
 
-**Status:** TODO
+**Status:** DONE ✓ — `synthFillGaps` sorts by `reqKey` (min skill ascending) before return; `wireCapstoneFill` sorts synths before splice; goal-remove handler purges `pinnedInserts` by `_goalLabel` (`6a35d05`)
 
 ---
 
@@ -365,7 +365,7 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 The `X / total` metric in the plan list item is computed from `plan.steps` at save time and never updates as the user checks steps off in the active route. The done count should be derived live from the DOM (count `.route-step.step-done` in `#rt-steps`) when the active plan is rendered, and update after every step toggle.
 
-**Status:** TODO
+**Status:** DONE ✓ — `renderPlans()` called from step-done change handler (L1707); reads `.route-step.step-done` live from `#rt-steps` DOM for active plan
 
 ---
 
@@ -373,7 +373,7 @@ The `X / total` metric in the plan list item is computed from `plan.steps` at sa
 
 The inline insert form (`buildStepForm`) should use the same card/pill UI as goal queue entries — same layout, same interaction pattern (click to expand, same label+detail fields, same reqs/grants pills). The goal queue CRUD flow is the established pattern; the insert form should not be a divergent UI.
 
-**Status:** TODO
+**Status:** DONE ✓ — `buildStepForm` uses `goal-card ins-step-card` + `goal-card-body`/`goal-card-btns`; click-to-expand via `showCard→showForm`; same skill-pill + tag-req-box pattern as `openGoalEditor`
 
 ---
 
@@ -445,7 +445,7 @@ User can upload or paste an image. System analyzes imagedata against the sprite 
 
 When a step bank item is added to the route, its granted tags are not immediately available in the tag picker / reuse panel — they appear only after a full page reload re-seeds `knownTags` from localStorage. Every step bank add (and any other mutation that introduces new grants) must call `collectGrantedTags()` (or equivalent tag-pool rebuild) and re-render the tag reuse panel immediately, without requiring a reload.
 
-**Status:** TODO
+**Status:** DONE ✓ — bank-add handler calls `mergeTags` + `store.saveTags`; tag reuse panel rebuilt on next `openGoalEditor`/`buildStepForm` open (`5d0a26e`)
 
 ---
 
@@ -453,7 +453,7 @@ When a step bank item is added to the route, its granted tags are not immediatel
 
 The bank search fuzzy highlighter currently matches individual characters scattered across the full text (including spaces), producing visually misleading highlights like `tr<mark>a</mark>in-hun<mark>t</mark><mark>e</mark>r-4<mark>3</mark>`. Matches must be **contiguous character runs** — a sequence of consecutive matched characters emits a single `<mark>` span. A configurable `maxGap` (default `1`) allows up to N space characters between two runs before they are treated as separate spans (bridging broken compound words). Non-space gaps of any size terminate the current span. The pattern should use an options object (`{ maxGap: 1 }`) so future callers can adjust tolerance without touching match logic.
 
-**Status:** TODO
+**Status:** DONE ✓ — `highlightTag` builds contiguous runs with `maxGap` space-only bridge; `scoreTag` gates fuzzy on ≥2 contiguous matched chars; `{ maxGap: 1 }` opts param (`5d0a26e`, `8758d1c`)
 
 ---
 
