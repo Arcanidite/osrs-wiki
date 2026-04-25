@@ -235,6 +235,26 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 ---
 
+## [router:capstone-locked] Capstone steps locked — unremovable unless final dep step removed
+
+**What exists:** Capstone steps render with a ✕ remove button like every other step. Removing them silently deletes the goal marker with no guard.
+
+**What it should do:** Capstone steps cannot be individually removed. The ✕ button should be absent or disabled on capstone rows. The only way to remove a capstone is to remove its goal from the goal queue (which already clears it on recompute). The capstone is cosmetically tied to the final step of its dependency chain — it should render immediately after the last non-capstone step with the same `_goalLabel`.
+
+**Status:** TODO
+
+---
+
+## [router:synth-ordering] Synthetic steps generated out of order after goal queue mutations
+
+**What exists:** `synthFillGaps` appends synths before the last element of the goal's sub-path. When a goal is removed and recompute fires, stale synthetic steps from `pinnedInserts` or leftover path state can appear out of sequence (e.g. `40→58` following `58→75` fishing).
+
+**What it should do:** Synthetic steps must be sorted by their `reqs.skills` value ascending before insertion so the dependency chain reads correctly. Additionally, when a goal is removed from the queue, any synthetic steps in `pinnedInserts` whose `_goalLabel` matches the removed goal must be purged alongside its capstone/custom steps.
+
+**Status:** TODO
+
+---
+
 ## [router:insert-prereq-inject] Auto-inject synthetic prereq steps on custom insert
 
 **What exists:** When a custom step is inserted with `reqs.skills` entries, the seq-dot may go red if the cumulative skill state at that position doesn't satisfy the req. No remediation happens automatically.

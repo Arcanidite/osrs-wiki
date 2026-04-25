@@ -1288,7 +1288,7 @@
         <span class="step-actions">
           <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
-          <button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>
+          ${step._capstone ? "" : `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>`}
         </span>
       </li>`);
       rows.push(insertRowHtml(i));
@@ -1465,6 +1465,7 @@
         const idx  = +btn.dataset.stepIdx;
         const step = currentPath[idx];
         if (!step) return;
+        if (step._capstone) { showToast("Remove the goal from the queue to remove its capstone."); return; }
         const trial = currentPath.filter((_, j) => j !== idx);
         const invalids = seqInvalids(trial);
         if (invalids.length) {
