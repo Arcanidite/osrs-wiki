@@ -437,7 +437,7 @@ Req and grant sections in step/goal forms should support items (not just skills/
 
 User can upload or paste an image. System analyzes imagedata against the sprite atlas to identify item candidates per inventory/equipment slot by position. User confirms/corrects each slot's item by name/id. Result stored as JSON array (position + item id). Steps can have an attached loadout image with a lightbox showing per-slot metadata and icon grid.
 
-**Status:** TODO
+**Status:** DONE ✓ — cross-pattern pixel lookup + 1D score accumulation (`b928b54`); `buildCross` extracts center row+col as flat Int16Array; `scanCross` single-pass image scan with 8-neighbor verification into shared Int32Array score buffer; `detectGrid` 1D projection peaks for slot centres; `pickBestPerSlot` ranks sprites by region score sum; `openLoadoutPanel` paste/drop/click UI with per-cell ✎/✕ correction (inline item picker) and ✕ clear; `store.saveLoadout` persists per-step; `renderLoadoutLightbox` modal grid; badge on step; sprites via `applySpriteBg` (data URL only, no spritesheet fallback); custom goal/capstone forms include item req/grant pickers (`3cc8d2e`); forms render in `#rt-bank-forms` div above bank list (`532046b`)
 
 ---
 
