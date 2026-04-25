@@ -624,6 +624,7 @@
         </div>
         <div class="cg-reqs"></div>
         <div class="cg-tag-reqs-wrap"></div>
+        <div class="cg-item-reqs-wrap"></div>
       </div>
       <div class="ins-skill-section ins-skill-section--grant">
         <div class="ins-skill-header">
@@ -632,19 +633,24 @@
         </div>
         <div class="ins-skill-pills cg-grants"></div>
         <div class="cg-tag-grants-wrap"></div>
+        <div class="cg-item-grants-wrap"></div>
       </div>
       <div class="goal-edit-actions">
         <button class="btn btn-primary cg-save">Save</button>
         <button class="btn btn-ghost cg-cancel">Cancel</button>
       </div>`;
 
-    const reqsContainer = form.querySelector(".cg-reqs");
-    const grantsWrap    = form.querySelector(".cg-grants");
-    const tagBox        = makeTagReqBox([]);
+    const reqsContainer  = form.querySelector(".cg-reqs");
+    const grantsWrap     = form.querySelector(".cg-grants");
+    const tagBox         = makeTagReqBox([]);
     form.querySelector(".cg-tag-reqs-wrap").appendChild(tagBox);
-    const tagGrantBox   = makeTagReqBox([]);
+    const tagGrantBox    = makeTagReqBox([]);
     tagGrantBox.classList.add("region-tagbox--grant");
     form.querySelector(".cg-tag-grants-wrap").appendChild(tagGrantBox);
+    const itemReqBox     = makeItemPickerBox([], "req");
+    form.querySelector(".cg-item-reqs-wrap").appendChild(itemReqBox);
+    const itemGrantBox   = makeItemPickerBox([], "grant");
+    form.querySelector(".cg-item-grants-wrap").appendChild(itemGrantBox);
 
     form.querySelector(".cg-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
     form.querySelector(".cg-add-grant").addEventListener("click", () => grantsWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
@@ -653,7 +659,7 @@
     form.querySelector(".cg-save").addEventListener("click", () => {
       const label = form.querySelector(".cg-label").value.trim();
       if (!label) return;
-      const reqs = { skills: {}, tags: [] };
+      const reqs = { skills: {}, tags: [], atlas_items: itemReqBox.readItems() };
       reqsContainer.querySelectorAll(".ge-req-row").forEach((row) => {
         const sk  = row.querySelector(".ge-req-skill").value;
         const lvl = parseInt(row.querySelector(".ge-req-level").value, 10);
@@ -662,6 +668,8 @@
       reqs.tags = tagBox.readTags();
       const grants = readSkillPills(grantsWrap);
       tagGrantBox.readTags().forEach((t) => { grants[t] = true; });
+      itemGrantBox.readItems().forEach(({ id, name }) => { grants[`item:${id}`] = { id, name }; });
+      grants.atlas_items = itemGrantBox.readItems();
       mergeTags(reqs.tags);
       mergeTags(Object.keys(grants).filter((k) => grants[k] === true));
       customGoals.push({ id: "custom-goal-" + Date.now(), label, reqs, grants, terminal: null });
@@ -689,20 +697,23 @@
         </div>
         <div class="cc-reqs"></div>
         <div class="cc-tag-reqs-wrap"></div>
+        <div class="cc-item-reqs-wrap"></div>
       </div>
       <div class="goal-edit-actions">
         <button class="btn btn-primary cc-save">Save</button>
         <button class="btn btn-ghost cc-cancel">Cancel</button>
       </div>`;
     const reqsContainer = form.querySelector(".cc-reqs");
-    const tagBox = makeTagReqBox([]);
+    const tagBox        = makeTagReqBox([]);
     form.querySelector(".cc-tag-reqs-wrap").appendChild(tagBox);
+    const itemReqBox    = makeItemPickerBox([], "req");
+    form.querySelector(".cc-item-reqs-wrap").appendChild(itemReqBox);
     form.querySelector(".cc-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
     form.querySelector(".cc-cancel").addEventListener("click", () => { form.remove(); });
     form.querySelector(".cc-save").addEventListener("click", () => {
       const label = form.querySelector(".cc-label").value.trim();
       if (!label) return;
-      const reqs = { skills: {}, tags: [] };
+      const reqs = { skills: {}, tags: [], atlas_items: itemReqBox.readItems() };
       reqsContainer.querySelectorAll(".ge-req-row").forEach((row) => {
         const sk  = row.querySelector(".ge-req-skill").value;
         const lvl = parseInt(row.querySelector(".ge-req-level").value, 10);
@@ -720,7 +731,7 @@
       upsertActivePlan(currentPath, readProfile());
       form.remove();
     });
-    list.prepend(form);
+    wrap.prepend(form);
     form.querySelector(".cc-label")?.focus();
   }
 
