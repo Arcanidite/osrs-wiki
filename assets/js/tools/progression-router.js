@@ -791,7 +791,17 @@
       completedIds    = r.completedIds;
       completedQuests = r.completedQuests;
       freeSlots       = r.freeSlots;
-      return r.path;
+      const capstone = {
+        id:         `capstone-${goal.id}`,
+        label:      goal.label,
+        detail:     reqsSummary(goal.reqs),
+        reqs:       goal.reqs ?? {},
+        grants:     goal.grants ?? {},
+        tags:       ["capstone"],
+        _goalLabel: goal.label,
+        _capstone:  true,
+      };
+      return [...r.path, capstone];
     });
   }
 
@@ -1115,7 +1125,7 @@
       const grantSkills = Object.keys(normalizeReqs(step.grants).skills ?? {}).join(" ");
       const grantAttr   = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
       const focalAttr   = isFocal ? ' data-focal="1"' : "";
-      rows.push(`<li class="route-step${stepDone ? " step-done quest-done" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="true"${grantAttr}${focalAttr}>
+      rows.push(`<li class="route-step${stepDone ? " step-done" : ""}${step._capstone ? " step-capstone" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="true"${grantAttr}${focalAttr}>
         <span class="step-drag-handle" title="Drag to reorder">⠿</span>
         <label class="step-num-wrap">
           <input type="checkbox" class="step-done-cb" data-step-id="${escHtml(step.id)}"${isQuest ? ' data-is-quest="1"' : ""}${stepDone ? " checked" : ""}>
@@ -1376,12 +1386,12 @@
         if (cb.checked) {
           markStepDone(li, true);
           propagatePrereqsDone(container, idx);
-          if (isQuest) { manualQuestDone.add(stepId); li.classList.add("quest-done"); }
-          else { manualStepDone.add(stepId); }
+          if (isQuest) manualQuestDone.add(stepId);
+          else manualStepDone.add(stepId);
         } else {
           markStepDone(li, false);
-          if (isQuest) { manualQuestDone.delete(stepId); li.classList.remove("quest-done"); }
-          else { manualStepDone.delete(stepId); }
+          if (isQuest) manualQuestDone.delete(stepId);
+          else manualStepDone.delete(stepId);
         }
         if (isQuest) recompute();
         else renderPlans();
