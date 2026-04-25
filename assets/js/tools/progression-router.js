@@ -10,6 +10,7 @@
   const STORE_ACTIVE     = "osrs-router-active";
   const STORE_STEP_NOTES    = "osrs-step-notes";
   const STORE_CUSTOM_GOALS  = "osrs-router-custom-goals";
+  const STORE_TAGS          = "osrs-router-tags";
 
   // ── Data ──────────────────────────────────────────────────────────────────
   async function loadJsonl(url) {
@@ -64,6 +65,9 @@
 
     customGoals:      ()  => JSON.parse(localStorage.getItem(STORE_CUSTOM_GOALS) ?? "[]"),
     saveCustomGoals:  (g) => localStorage.setItem(STORE_CUSTOM_GOALS, JSON.stringify(g)),
+
+    tags:      () => new Set(JSON.parse(localStorage.getItem(STORE_TAGS) ?? "[]")),
+    saveTags:  (s) => localStorage.setItem(STORE_TAGS, JSON.stringify([...s].sort())),
   };
 
   // ── Mutable plan state ────────────────────────────────────────────────────
@@ -75,6 +79,7 @@
   let activePlanIdx    = -1;
   let goalQueue        = [];
   let customGoals      = [];
+  let knownTags        = new Set();
   let skillNames       = [];
   let excludedRegions  = [];
 
@@ -337,16 +342,13 @@
   }
 
   function collectGrantedTags() {
-    const tags = new Set();
-    [...currentPath, ...goalQueue].forEach((s) => {
-      const g = s.grants ?? {};
-      Object.entries(g).forEach(([k, v]) => { if (v === true) tags.add(k); });
-    });
-    customGoals.forEach((g) => {
-      Object.entries(g.grants ?? {}).forEach(([k, v]) => { if (v === true) tags.add(k); });
-    });
-    document.querySelectorAll(".region-tagbox .rtb-tag[data-tag]").forEach((el) => tags.add(el.dataset.tag));
-    return [...tags];
+    return [...knownTags].sort();
+  }
+
+  function mergeTags(iterable) {
+    let changed = false;
+    for (const t of iterable) { if (t && !knownTags.has(t)) { knownTags.add(t); changed = true; } }
+    if (changed) store.saveTags(knownTags);
   }
 
   function makeTagReqBox(initialTags) {
@@ -483,6 +485,8 @@
       reqs.tags = tagBox.readTags();
       const grants = readSkillPills(grantsWrap);
       tagGrantBox.readTags().forEach((t) => { grants[t] = true; });
+      mergeTags(reqs.tags);
+      mergeTags(Object.keys(grants).filter((k) => grants[k] === true));
       goalQueue[idx] = { ...goal, label, reqs, grants, terminal: form.querySelector(".ge-terminal").value.trim() || null };
       store.saveGoals(goalQueue);
       renderGoalQueue();
@@ -547,6 +551,8 @@
       reqs.tags = tagBox.readTags();
       const grants = readSkillPills(grantsWrap);
       tagGrantBox.readTags().forEach((t) => { grants[t] = true; });
+      mergeTags(reqs.tags);
+      mergeTags(Object.keys(grants).filter((k) => grants[k] === true));
       customGoals.push({ id: "custom-goal-" + Date.now(), label, reqs, grants, terminal: null });
       store.saveCustomGoals(customGoals);
       renderStepBank();
@@ -913,6 +919,8 @@
           _goalLabel: anchorStep?._goalLabel ?? "",
           _reqs:      {},
         };
+        mergeTags(step.reqs.tags ?? []);
+        mergeTags(Object.keys(step.grants).filter((k) => step.grants[k] === true));
         pinnedInserts.push({ anchor: anchorStep?.id ?? "start", step });
         onCommit(step, afterIdx);
       });
@@ -1629,6 +1637,17 @@
     if (Object.keys(saved).length) applyProfile(saved, allRegions);
 
     customGoals = store.customGoals();
+    knownTags = store.tags();
+    const extractTags = (obj) => {
+      const r = normalizeReqs(obj.reqs);
+      (r.tags ?? []).forEach((t) => knownTags.add(t));
+      Object.entries(obj.grants ?? {}).forEach(([k, v]) => { if (v === true) knownTags.add(k); });
+      (obj.tags ?? []).forEach((t) => knownTags.add(t));
+    };
+    [...allSteps, ...allGoals].forEach(extractTags);
+    [...customGoals, ...store.goals()].forEach(extractTags);
+    store.plans().forEach((p) => (p.steps ?? []).forEach(extractTags));
+    store.saveTags(knownTags);
     goalQueue = store.goals();
     renderGoalQueue();
 
