@@ -333,6 +333,10 @@
     });
     ul.querySelectorAll(".goal-card-remove").forEach((btn) => {
       btn.addEventListener("click", () => {
+        const removed = goalQueue[+btn.dataset.idx];
+        pinnedInserts = pinnedInserts.filter((p) =>
+          p.step._goalLabel !== removed.label && p.step.id !== `capstone-${removed.id}`
+        );
         goalQueue.splice(+btn.dataset.idx, 1);
         store.saveGoals(goalQueue);
         renderGoalQueue();
@@ -1247,6 +1251,13 @@
           li.dataset.focal = "1";
         }
         if (activeFilter === "focal") applyStepFilter(stepsEl, activeFilter);
+        if (activePlanIdx >= 0) {
+          const plans = store.plans();
+          if (plans[activePlanIdx]) {
+            plans[activePlanIdx].focalSteps = [...tab.focalSteps];
+            store.updatePlan(activePlanIdx, plans[activePlanIdx]);
+          }
+        }
       });
     });
   }
@@ -1663,9 +1674,29 @@
       btn.addEventListener("click", () => {
         const idx = +btn.dataset.delete;
         store.deletePlan(idx);
-        if (activePlanIdx === idx) { activePlanIdx = -1; store.saveActive(null); }
-        else if (activePlanIdx > idx) activePlanIdx--;
+        const removedTabIdx = planTabs.findIndex((t) => t.activePlanIdx === idx);
+        if (removedTabIdx !== -1) planTabs.splice(removedTabIdx, 1);
+        planTabs.forEach((t) => { if (t.activePlanIdx > idx) t.activePlanIdx--; });
+        if (removedTabIdx !== -1) {
+          activeTabIdx = Math.max(0, Math.min(activeTabIdx, planTabs.length - 1));
+          if (planTabs.length > 0) {
+            const nextTab = planTabs[activeTabIdx];
+            activePlanIdx = nextTab.activePlanIdx ?? -1;
+            goalQueue = nextTab.goalQueue ?? [];
+            currentPath = nextTab.path ?? [];
+            pinnedInserts = nextTab.pinnedInserts ?? [];
+          } else {
+            activePlanIdx = -1;
+            store.saveActive(null);
+          }
+        } else {
+          if (activePlanIdx === idx) { activePlanIdx = -1; store.saveActive(null); }
+          else if (activePlanIdx > idx) activePlanIdx--;
+        }
+        renderTabBar();
         renderPlans();
+        renderGoalQueue();
+        renderSteps(currentPath);
         renderRouteBar(currentPath);
       });
     });
