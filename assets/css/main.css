@@ -867,7 +867,7 @@ mark.rtb-hl-fuzzy {
   display: flex; flex-direction: column; gap: var(--sp-q);
 }
 .goal-edit-row { display: flex; flex-direction: column; gap: var(--sp-h); }
-.goal-edit-row input { flex: 1; font-size: var(--fs-xs); padding: 2px var(--sp-q); border: 1px solid var(--border); border-radius: var(--radius); }
+.goal-edit-row input { flex: 1; width: 100%; box-sizing: border-box; font-size: var(--fs-sm); padding: var(--sp-q) var(--sp-h); border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); outline: none; }
 .ge-reqs { display: flex; flex-direction: column; gap: 2px; }
 .ge-req-row { display: flex; gap: var(--sp-q); align-items: center; }
 .ge-req-row select, .ge-req-row input { font-size: var(--fs-xs); padding: 1px var(--sp-q); border: 1px solid var(--border); border-radius: var(--radius); }
