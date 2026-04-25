@@ -564,6 +564,8 @@ body {
 .ins-pill-rm  { font-size: 0.6rem; padding: 0 3px; color: var(--muted); opacity: 0.6; }
 .ins-tag-pill { display: inline-flex; align-items: center; gap: var(--sp-q); background: #e8f4e8; border: 1px solid #b2d8b2; border-radius: var(--radius); padding: 2px var(--sp-q); font-size: var(--fs-xs); }
 .ins-tag-input { border: none; background: transparent; font-size: var(--fs-xs); width: 8rem; }
+.ge-tag-panel { flex-wrap: wrap; gap: var(--sp-q); padding: var(--sp-q) 0; }
+.ge-tag-choice { font-size: var(--fs-xs); padding: 2px var(--sp-h); background: #e8f4e8; border: 1px solid #b2d8b2; }
 
 /* Step bank */
 #rt-bank summary { font-size: var(--fs-sm); font-weight: 600; }

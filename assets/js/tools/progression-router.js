@@ -288,7 +288,9 @@
 
   // ── Goal queue ────────────────────────────────────────────────────────────
   function reqsSummary(reqs) {
-    const parts = Object.entries(reqs ?? {}).map(([sk, lvl]) => `${sk} ${lvl}`);
+    const r     = normalizeReqs(reqs);
+    const parts = Object.entries(r.skills ?? {}).map(([sk, lvl]) => `${sk} ${lvl}`);
+    (r.tags ?? []).forEach((t) => parts.push(`[${t}]`));
     return parts.join(", ") || "no reqs";
   }
 
@@ -328,6 +330,15 @@
     });
   }
 
+  function collectGrantedTags() {
+    const tags = new Set();
+    [...currentPath, ...goalQueue].forEach((s) => {
+      const g = s.grants ?? {};
+      Object.entries(g).forEach(([k, v]) => { if (v === true) tags.add(k); });
+    });
+    return [...tags];
+  }
+
   // Inline editor for an existing goal card
   function openGoalEditor(idx) {
     const ul = els.goalQueue();
@@ -342,35 +353,87 @@
         <input class="ge-label" type="text" value="${escHtml(goal.label)}" placeholder="Goal label">
         <input class="ge-terminal" type="text" value="${escHtml(goal.terminal ?? "")}" placeholder="Terminal step id (opt)">
       </div>
-      <div class="ge-reqs" id="ge-reqs-${idx}"></div>
+      <div class="ins-skill-section ins-skill-section--req">
+        <div class="ins-skill-header">
+          <span class="ins-skill-title req">Requirements</span>
+          <button class="btn btn-ghost ge-add-req">+ skill</button>
+          <button class="btn btn-ghost ge-add-tag-req">+ tag</button>
+        </div>
+        <div class="ge-reqs"></div>
+        <div class="ge-tag-reqs"></div>
+        <div class="ge-tag-panel" style="display:none"></div>
+      </div>
+      <div class="ins-skill-section ins-skill-section--grant">
+        <div class="ins-skill-header">
+          <span class="ins-skill-title grant">Grants</span>
+          <button class="btn btn-ghost ge-add-grant">+ skill</button>
+          <button class="btn btn-ghost ge-add-tag-grant">+ tag</button>
+        </div>
+        <div class="ins-skill-pills ge-grants"></div>
+        <div class="ins-tag-grants ge-tag-grants"></div>
+      </div>
       <div class="goal-edit-actions">
-        <button class="btn btn-ghost ge-add-req" style="font-size:var(--fs-xs)">+ req</button>
         <button class="btn btn-primary ge-save">Save</button>
         <button class="btn btn-ghost ge-cancel">Cancel</button>
       </div>`;
 
-    const reqsContainer = form.querySelector(`#ge-reqs-${idx}`);
-    Object.entries(goal.reqs ?? {}).forEach(([sk, lvl]) => appendReqRow(reqsContainer, sk, lvl));
+    const reqsContainer  = form.querySelector(".ge-reqs");
+    const tagReqsWrap    = form.querySelector(".ge-tag-reqs");
+    const tagPanel       = form.querySelector(".ge-tag-panel");
+    const grantsWrap     = form.querySelector(".ge-grants");
+    const tagGrantsWrap  = form.querySelector(".ge-tag-grants");
+
+    // Populate existing skill reqs
+    Object.entries(normalizeReqs(goal.reqs).skills ?? {}).forEach(([sk, lvl]) => appendReqRow(reqsContainer, sk, lvl));
+    // Populate existing tag reqs
+    (normalizeReqs(goal.reqs).tags ?? []).forEach((t) => appendTagReqPill(tagReqsWrap, t));
+    // Populate existing grants
+    const existingGrants = goal.grants ?? {};
+    Object.entries(existingGrants).forEach(([k, v]) => {
+      if (typeof v === "number") grantsWrap.appendChild(makeSkillPill(k, v, "grant"));
+      else if (v === true) appendTagGrantPill(tagGrantsWrap, k);
+    });
 
     form.querySelector(".ge-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
-    form.querySelector(".ge-cancel").addEventListener("click", () => {
-      form.replaceWith(card);
+    form.querySelector(".ge-add-tag-req").addEventListener("click", () => {
+      const known = collectGrantedTags();
+      if (known.length) {
+        tagPanel.style.display = tagPanel.style.display === "none" ? "flex" : "none";
+        tagPanel.innerHTML = "";
+        known.forEach((t) => {
+          const btn = document.createElement("button");
+          btn.className = "btn btn-ghost ge-tag-choice";
+          btn.textContent = t;
+          btn.addEventListener("click", () => { appendTagReqPill(tagReqsWrap, t); tagPanel.style.display = "none"; });
+          tagPanel.appendChild(btn);
+        });
+      } else {
+        appendTagReqPill(tagReqsWrap, "");
+      }
     });
+    form.querySelector(".ge-add-grant").addEventListener("click", () => grantsWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
+    form.querySelector(".ge-add-tag-grant").addEventListener("click", () => appendTagGrantPill(tagGrantsWrap, ""));
+
+    form.querySelector(".ge-cancel").addEventListener("click", () => form.replaceWith(card));
     form.querySelector(".ge-save").addEventListener("click", () => {
       const label = form.querySelector(".ge-label").value.trim();
       if (!label) return;
-      const reqs = {};
+      const reqs = { skills: {}, tags: [] };
       reqsContainer.querySelectorAll(".ge-req-row").forEach((row) => {
         const sk  = row.querySelector(".ge-req-skill").value;
         const lvl = parseInt(row.querySelector(".ge-req-level").value, 10);
-        if (sk && lvl > 1) reqs[sk] = lvl;
+        if (sk && lvl > 1) reqs.skills[sk] = lvl;
       });
-      goalQueue[idx] = {
-        ...goal,
-        label,
-        reqs,
-        terminal: form.querySelector(".ge-terminal").value.trim() || null,
-      };
+      tagReqsWrap.querySelectorAll(".ge-tag-req-pill").forEach((p) => {
+        const v = p.querySelector(".ge-tag-req-input")?.value.trim();
+        if (v) reqs.tags.push(v);
+      });
+      const grants = readSkillPills(grantsWrap);
+      tagGrantsWrap.querySelectorAll(".ins-tag-pill").forEach((p) => {
+        const v = p.querySelector(".ins-tag-input")?.value.trim();
+        if (v) grants[v] = true;
+      });
+      goalQueue[idx] = { ...goal, label, reqs, grants, terminal: form.querySelector(".ge-terminal").value.trim() || null };
       store.saveGoals(goalQueue);
       renderGoalQueue();
       recompute();
@@ -390,6 +453,30 @@
       <button class="btn btn-ghost ge-req-rm" style="font-size:var(--fs-xs);padding:1px var(--sp-q)">✕</button>`;
     row.querySelector(".ge-req-rm").addEventListener("click", () => row.remove());
     container.appendChild(row);
+  }
+
+  function appendTagReqPill(container, tag) {
+    const pill = document.createElement("span");
+    pill.className = "ins-tag-pill ge-tag-req-pill";
+    const inp = document.createElement("input");
+    inp.type = "text"; inp.className = "ins-tag-input ge-tag-req-input"; inp.placeholder = "tag"; inp.value = tag ?? "";
+    const rm = document.createElement("button");
+    rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
+    rm.addEventListener("click", () => pill.remove());
+    pill.append(inp, rm);
+    container.appendChild(pill);
+  }
+
+  function appendTagGrantPill(container, tag) {
+    const pill = document.createElement("span");
+    pill.className = "ins-tag-pill";
+    const inp = document.createElement("input");
+    inp.type = "text"; inp.className = "ins-tag-input"; inp.placeholder = "tag"; inp.value = tag ?? "";
+    const rm = document.createElement("button");
+    rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
+    rm.addEventListener("click", () => pill.remove());
+    pill.append(inp, rm);
+    container.appendChild(pill);
   }
 
   // ── Routing ───────────────────────────────────────────────────────────────
