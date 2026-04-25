@@ -351,6 +351,42 @@
     if (changed) store.saveTags(knownTags);
   }
 
+  function scoreTag(query, tag) {
+    const q = query.toLowerCase(), t = tag.toLowerCase();
+    const si = t.indexOf(q);
+    if (si !== -1) {
+      const indices = Array.from({ length: q.length }, (_, i) => si + i);
+      return { score: 1 + q.length / t.length, serial: true, indices };
+    }
+    const matched = [];
+    let qi = 0;
+    for (let i = 0; i < t.length && qi < q.length; i++) {
+      if (t[i] === q[qi]) { matched.push(i); qi++; }
+    }
+    if (qi < q.length) return { score: 0, serial: false, indices: [] };
+    const union = new Set([...q, ...t]).size;
+    return { score: matched.length / union, serial: false, indices: matched };
+  }
+
+  function rankTags(query, candidates) {
+    return candidates
+      .map((tag) => ({ tag, ...scoreTag(query, tag) }))
+      .filter((r) => r.score > 0)
+      .sort((a, b) => b.score - a.score || (b.serial ? 1 : 0) - (a.serial ? 1 : 0));
+  }
+
+  function highlightTag(tag, indices, serial) {
+    const esc = (c) => c === "&" ? "&amp;" : c === "<" ? "&lt;" : c === ">" ? "&gt;" : c === '"' ? "&quot;" : c;
+    if (serial && indices.length) {
+      const pre  = [...tag.slice(0, indices[0])].map(esc).join("");
+      const mid  = [...tag.slice(indices[0], indices[indices.length - 1] + 1)].map(esc).join("");
+      const post = [...tag.slice(indices[indices.length - 1] + 1)].map(esc).join("");
+      return `${pre}<mark class="rtb-hl-serial">${mid}</mark>${post}`;
+    }
+    const set = new Set(indices);
+    return [...tag].map((c, i) => set.has(i) ? `<mark class="rtb-hl-fuzzy">${esc(c)}</mark>` : esc(c)).join("");
+  }
+
   function makeTagReqBox(initialTags) {
     const box      = document.createElement("div");
     box.className  = "region-tagbox";
@@ -366,28 +402,41 @@
       const t = tag.trim();
       if (!t) return;
       const span = document.createElement("span");
-      span.className = "rtb-tag"; span.dataset.tag = t;
+      span.className = "rtb-tag"; span.dataset.tag = t; span.tabIndex = 0;
       const rm = document.createElement("button");
       rm.className = "rtb-tag-rm"; rm.textContent = "✕"; rm.setAttribute("aria-label", "Remove");
       rm.addEventListener("click", () => span.remove());
+      span.addEventListener("keydown", (e) => {
+        if (e.key === "Delete" || e.key === "Backspace") { span.remove(); input.focus(); }
+      });
       span.append(t, rm);
       tagsSpan.appendChild(span);
     };
 
+    const renderOption = (r, q) => {
+      const li = document.createElement("li");
+      li.className = "rtb-option";
+      li.dataset.tag = r.tag;
+      li.innerHTML = q ? highlightTag(r.tag, r.indices, r.serial) : escHtml(r.tag);
+      li.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+        addTag(li.dataset.tag);
+        input.value = "";
+        dropdown.hidden = true;
+      });
+      return li;
+    };
+
     const showDropdown = (q) => {
       const current = new Set([...tagsSpan.querySelectorAll(".rtb-tag[data-tag]")].map((s) => s.dataset.tag));
-      const hits = collectGrantedTags().filter((t) => t.toLowerCase().includes(q.toLowerCase()) && !current.has(t));
-      if (!hits.length) { dropdown.hidden = true; return; }
-      dropdown.innerHTML = hits.map((t) => `<li class="rtb-option">${escHtml(t)}</li>`).join("");
+      const pool = collectGrantedTags().filter((t) => !current.has(t));
+      const results = q
+        ? rankTags(q, pool)
+        : pool.map((tag) => ({ tag, score: 0, serial: false, indices: [] })).sort((a, b) => a.tag.length - b.tag.length);
+      if (!results.length) { dropdown.hidden = true; return; }
+      dropdown.innerHTML = "";
+      results.forEach((r) => dropdown.appendChild(renderOption(r, q)));
       dropdown.hidden = false;
-      dropdown.querySelectorAll(".rtb-option").forEach((li) => {
-        li.addEventListener("mousedown", (e) => {
-          e.preventDefault();
-          addTag(li.textContent);
-          input.value = "";
-          dropdown.hidden = true;
-        });
-      });
     };
 
     input.addEventListener("input", () => showDropdown(input.value.trim()));
@@ -396,10 +445,13 @@
       if (e.key === "Enter") {
         e.preventDefault();
         const first = dropdown.querySelector(".rtb-option");
-        if (!dropdown.hidden && first) { addTag(first.textContent); input.value = ""; dropdown.hidden = true; }
+        if (!dropdown.hidden && first) { addTag(first.dataset.tag); input.value = ""; dropdown.hidden = true; }
         else if (input.value.trim()) { addTag(input.value.trim()); input.value = ""; dropdown.hidden = true; }
       } else if (e.key === "Escape") {
         dropdown.hidden = true;
+      } else if (e.key === "Backspace" && input.value === "") {
+        const last = tagsSpan.querySelector(".rtb-tag:last-of-type");
+        if (last) last.remove();
       }
     });
 

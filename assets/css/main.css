@@ -776,6 +776,22 @@ display: flex;
   font-size: var(--fs-sm); cursor: pointer;
 }
 .rtb-option:hover { background: var(--faint); }
+.rtb-tag:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+}
+mark.rtb-hl-serial {
+  background: #ffe066;
+  color: inherit;
+  border-radius: 2px;
+  padding: 0;
+}
+mark.rtb-hl-fuzzy {
+  background: #ffb347;
+  color: inherit;
+  border-radius: 2px;
+  padding: 0;
+}
 
 .plan-saved {
   font-size: var(--fs-xs); color: var(--muted);
