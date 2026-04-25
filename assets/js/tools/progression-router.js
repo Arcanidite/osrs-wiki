@@ -71,6 +71,7 @@
   let pinnedExclusions = new Set();
   let pinnedInserts    = [];
   let manualQuestDone  = new Set();
+  let manualStepDone   = new Set();
   let activePlanIdx    = -1;
   let goalQueue        = [];
   let customGoals      = [];
@@ -83,21 +84,21 @@
   let activeFilter = "all";  // all | incomplete | complete | focal
 
   function makeTab(name) {
-    return { id: Date.now() + Math.random(), name, path: [], goalQueue: [], pinnedExclusions: new Set(), pinnedInserts: [], manualQuestDone: new Set(), focalSteps: new Set(), activePlanIdx: -1 };
+    return { id: Date.now() + Math.random(), name, path: [], goalQueue: [], pinnedExclusions: new Set(), pinnedInserts: [], manualQuestDone: new Set(), manualStepDone: new Set(), focalSteps: new Set(), activePlanIdx: -1 };
   }
   function saveToTab() {
     const t = planTabs[activeTabIdx];
     if (!t) return;
     t.path = currentPath; t.goalQueue = [...goalQueue];
     t.pinnedExclusions = pinnedExclusions; t.pinnedInserts = [...pinnedInserts];
-    t.manualQuestDone = manualQuestDone; t.activePlanIdx = activePlanIdx;
+    t.manualQuestDone = manualQuestDone; t.manualStepDone = manualStepDone; t.activePlanIdx = activePlanIdx;
   }
   function loadFromTab(idx) {
     const t = planTabs[idx];
     if (!t) return;
     currentPath = t.path; goalQueue = [...t.goalQueue];
     pinnedExclusions = t.pinnedExclusions; pinnedInserts = [...t.pinnedInserts];
-    manualQuestDone = t.manualQuestDone; activePlanIdx = t.activePlanIdx;
+    manualQuestDone = t.manualQuestDone; manualStepDone = t.manualStepDone; activePlanIdx = t.activePlanIdx;
     activeTabIdx = idx;
     if (t.activePlanIdx >= 0) {
       const p = store.plans()[t.activePlanIdx];
@@ -1033,7 +1034,7 @@
     path.forEach((step, i) => {
       const isQuest   = (step.tags ?? []).includes("quest");
       const questDone = manualQuestDone.has(step.id);
-      const stepDone  = questDone;
+      const stepDone  = questDone || manualStepDone.has(step.id);
       const isFocal   = tab?.focalSteps?.has(step.id);
       const valid     = seqValid[i];
       const grantSkills = Object.keys(normalizeReqs(step.grants).skills ?? {}).join(" ");
@@ -1044,7 +1045,7 @@
         <label class="step-num-wrap">
           <input type="checkbox" class="step-done-cb" data-step-id="${escHtml(step.id)}"${isQuest ? ' data-is-quest="1"' : ""}${stepDone ? " checked" : ""}>
           <span class="step-num" data-valid="${valid}">${i + 1}</span>
-          <span class="step-done-icon" aria-hidden="true" data-state="incomplete">○</span>
+          <span class="step-done-icon" aria-hidden="true" data-state="${stepDone ? 'complete' : 'incomplete'}">${stepDone ? '✓' : '○'}</span>
         </label>
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
@@ -1285,6 +1286,7 @@
       const grantsTags   = Object.entries(grants).filter(([, v]) => v === true).map(([k]) => k);
       if ([...grantsSkills, ...grantsTags].some((g) => needed.has(g))) {
         markStepDone(li, true);
+        if (currentPath[i]?.id) manualStepDone.add(currentPath[i].id);
         addReqs(step);
       }
     });
@@ -1300,9 +1302,11 @@
           markStepDone(li, true);
           propagatePrereqsDone(container, idx);
           if (isQuest) { manualQuestDone.add(stepId); li.classList.add("quest-done"); }
+          else { manualStepDone.add(stepId); }
         } else {
           markStepDone(li, false);
           if (isQuest) { manualQuestDone.delete(stepId); li.classList.remove("quest-done"); }
+          else { manualStepDone.delete(stepId); }
         }
         if (isQuest) recompute();
         else renderPlans();
@@ -1556,6 +1560,7 @@
     activePlanIdx    = idx ?? -1;
     pinnedExclusions = new Set();
     manualQuestDone  = new Set();
+    manualStepDone   = new Set();
     pinnedInserts    = (plan.pinnedInserts ?? []);
     applyProfile({ skills: plan.skills, style: plan.style, excludeRegions: plan.excludeRegions ?? [] }, allRegions);
     if (plan.goals) {
@@ -1599,7 +1604,7 @@
       saveToTab();
       planTabs.push(makeTab(`Plan ${planTabs.length + 1}`));
       loadFromTab(planTabs.length - 1);
-      goalQueue = []; currentPath = []; pinnedExclusions = new Set(); pinnedInserts = []; manualQuestDone = new Set(); activePlanIdx = -1;
+      goalQueue = []; currentPath = []; pinnedExclusions = new Set(); pinnedInserts = []; manualQuestDone = new Set(); manualStepDone = new Set(); activePlanIdx = -1;
       renderTabBar();
       renderGoalQueue();
       renderSteps([]);
