@@ -533,6 +533,7 @@
           <button class="btn btn-ghost ge-add-req">+ skill</button>
         </div>
         <div class="ge-reqs"></div>
+        <div class="ge-item-reqs-wrap"></div>
         <div class="ge-tag-reqs-wrap"></div>
       </div>
       <div class="ins-skill-section ins-skill-section--grant">
@@ -541,6 +542,7 @@
           <button class="btn btn-ghost ge-add-grant">+ skill</button>
         </div>
         <div class="ins-skill-pills ge-grants"></div>
+        <div class="ge-item-grants-wrap"></div>
         <div class="ge-tag-grants-wrap"></div>
       </div>
       <div class="goal-edit-actions">
@@ -553,11 +555,16 @@
     const tagBox         = makeTagReqBox(normalizeReqs(goal.reqs).tags ?? []);
     form.querySelector(".ge-tag-reqs-wrap").appendChild(tagBox);
 
+    const itemReqBox = makeItemPickerBox(normalizeReqs(goal.reqs).atlas_items ?? [], "req");
+    form.querySelector(".ge-item-reqs-wrap").appendChild(itemReqBox);
+
     Object.entries(normalizeReqs(goal.reqs).skills ?? {}).forEach(([sk, lvl]) => appendReqRow(reqsContainer, sk, lvl));
     const existingGrants = goal.grants ?? {};
     const tagGrantBox    = makeTagReqBox(Object.entries(existingGrants).filter(([, v]) => v === true).map(([k]) => k));
     tagGrantBox.classList.add("region-tagbox--grant");
     form.querySelector(".ge-tag-grants-wrap").appendChild(tagGrantBox);
+    const itemGrantBox = makeItemPickerBox(existingGrants.atlas_items ?? [], "grant");
+    form.querySelector(".ge-item-grants-wrap").appendChild(itemGrantBox);
     Object.entries(existingGrants).forEach(([k, v]) => {
       if (typeof v === "number") grantsWrap.appendChild(makeSkillPill(k, v, "grant"));
     });
@@ -576,8 +583,10 @@
         if (sk && lvl > 1) reqs.skills[sk] = lvl;
       });
       reqs.tags = tagBox.readTags();
+      reqs.atlas_items = itemReqBox.readItems();
       const grants = readSkillPills(grantsWrap);
       tagGrantBox.readTags().forEach((t) => { grants[t] = true; });
+      grants.atlas_items = itemGrantBox.readItems();
       mergeTags(reqs.tags);
       mergeTags(Object.keys(grants).filter((k) => grants[k] === true));
       goalQueue[idx] = { ...goal, label, reqs, grants, terminal: form.querySelector(".ge-terminal").value.trim() || null };
@@ -1164,6 +1173,7 @@
             <button class="btn btn-ghost ins-add-req">+ skill</button>
           </div>
           <div class="ins-skill-pills ins-reqs"></div>
+          <div class="ins-item-reqs-wrap"></div>
           <div class="ins-tag-reqs-wrap"></div>
         </div>
         <div class="ins-skill-section ins-skill-section--grant">
@@ -1172,6 +1182,7 @@
             <button class="btn btn-ghost ins-add-grant">+ skill</button>
           </div>
           <div class="ins-skill-pills ins-grants"></div>
+          <div class="ins-item-grants-wrap"></div>
           <div class="ins-tag-grants-wrap"></div>
         </div>
         <div class="goal-edit-actions">
@@ -1183,10 +1194,14 @@
       const grantWrap = li.querySelector(".ins-grants");
       const tagBox    = makeTagReqBox([]);
       li.querySelector(".ins-tag-reqs-wrap").appendChild(tagBox);
+      const itemReqBox = makeItemPickerBox([], "req");
+      li.querySelector(".ins-item-reqs-wrap").appendChild(itemReqBox);
 
       const tagGrantBox = makeTagReqBox([]);
       tagGrantBox.classList.add("region-tagbox--grant");
       li.querySelector(".ins-tag-grants-wrap").appendChild(tagGrantBox);
+      const itemGrantBox = makeItemPickerBox([], "grant");
+      li.querySelector(".ins-item-grants-wrap").appendChild(itemGrantBox);
 
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
@@ -1198,13 +1213,14 @@
         const grants = (() => {
           const g = readSkillPills(grantWrap);
           tagGrantBox.readTags().forEach((t) => { g[t] = true; });
+          g.atlas_items = itemGrantBox.readItems();
           return g;
         })();
         const step = {
           id:         `custom-${Date.now()}`,
           label,
           detail:     li.querySelector(".ins-detail").value.trim(),
-          reqs:       { skills: readSkillPills(reqWrap), tags: tagBox.readTags() },
+          reqs:       { skills: readSkillPills(reqWrap), tags: tagBox.readTags(), atlas_items: itemReqBox.readItems() },
           grants,
           _custom:    true,
           _goalLabel: anchorStep?._goalLabel ?? "",
@@ -1739,6 +1755,78 @@
         p.querySelector(".ins-pill-sk").value, +p.querySelector(".ins-pill-lvl").value,
       ])
     );
+  }
+
+  function makeItemPill(itemId, name, tint) {
+    const pill = document.createElement("span");
+    pill.className = `ins-skill-pill ins-skill-pill--${tint} ins-item-pill`;
+    pill.dataset.itemId = itemId;
+    const icon = document.createElement("span");
+    icon.className = "ins-item-icon";
+    const atlas = window.SpriteAtlas;
+    if (atlas?.ready) {
+      const css = atlas.css(+itemId);
+      if (css) { icon.style.cssText = css; icon.style.display = "inline-block"; icon.style.width = "18px"; icon.style.height = "16px"; }
+      else icon.textContent = "?";
+    } else icon.textContent = "?";
+    const label = document.createElement("span");
+    label.className = "ins-item-name"; label.textContent = name;
+    label.dataset.itemId = itemId;
+    const rm = document.createElement("button");
+    rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
+    rm.addEventListener("click", () => pill.remove());
+    pill.append(icon, label, rm);
+    return pill;
+  }
+
+  function readItemPills(container) {
+    return [...container.querySelectorAll(".ins-item-pill")].map((p) => +p.dataset.itemId);
+  }
+
+  function makeItemPickerBox(selected, tint) {
+    const wrap = document.createElement("div");
+    wrap.className = "ins-item-picker-wrap";
+    const pillsEl = document.createElement("div");
+    pillsEl.className = "ins-item-pills";
+    const input = document.createElement("input");
+    input.className = "rtb-input ins-item-input"; input.type = "text"; input.placeholder = "item…";
+    const dropdown = document.createElement("ul");
+    dropdown.className = "rtb-dropdown ins-item-dropdown"; dropdown.hidden = true;
+    wrap.append(pillsEl, input, dropdown);
+
+    (selected ?? []).forEach(({ id, name }) => pillsEl.appendChild(makeItemPill(id, name, tint)));
+
+    const atlas = window.SpriteAtlas;
+    input.addEventListener("input", () => {
+      const q = input.value.trim();
+      if (!q || !atlas?.ready) { dropdown.hidden = true; return; }
+      const results = atlas.search(q).slice(0, 12);
+      if (!results.length) { dropdown.hidden = true; return; }
+      dropdown.innerHTML = "";
+      results.forEach(({ id, name }) => {
+        const li = document.createElement("li");
+        li.className = "rtb-option ins-item-option";
+        const ico = document.createElement("span");
+        ico.className = "ins-item-icon";
+        const css = atlas.css(id);
+        if (css) { ico.style.cssText = css; ico.style.display = "inline-block"; ico.style.width = "18px"; ico.style.height = "16px"; }
+        li.append(ico, ` ${escHtml(name)}`);
+        li.addEventListener("mousedown", (e) => {
+          e.preventDefault();
+          pillsEl.appendChild(makeItemPill(id, name, tint));
+          input.value = ""; dropdown.hidden = true;
+        });
+        dropdown.appendChild(li);
+      });
+      dropdown.hidden = false;
+    });
+    input.addEventListener("blur", () => { setTimeout(() => { dropdown.hidden = true; }, 150); });
+
+    wrap.readItems = () => readItemPills(pillsEl).map((id) => {
+      const name = pillsEl.querySelector(`[data-item-id="${id}"] .ins-item-name`)?.textContent ?? String(id);
+      return { id, name };
+    });
+    return wrap;
   }
 
   function wireStepEditBtn(container) {
