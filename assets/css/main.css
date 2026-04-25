@@ -489,7 +489,7 @@ body {
 .step-badge {
   font-size: var(--fs-xs); padding: 1px var(--sp-q);
   border-radius: var(--sp-q); background: #eee;
-  white-space: nowrap;
+  white-space: nowrap; align-content: center;
 }
 .step-badge.req { background: #fef3cd; color: #7a5c00; }
 .step-badge.xp  { background: #d4edda; color: #1a5c2a; }
