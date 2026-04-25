@@ -1510,8 +1510,18 @@
             goalQueue.splice(qi, 1);
             store.saveGoals(goalQueue);
             renderGoalQueue();
-            if (!goalQueue.length) { currentPath = []; renderSteps([]); }
-            else recompute();
+            if (!goalQueue.length) {
+              currentPath = [];
+              renderSteps([]);
+              if (activePlanIdx >= 0) {
+                const plans = store.plans();
+                if (plans[activePlanIdx]) {
+                  store.updatePlan(activePlanIdx, { ...plans[activePlanIdx], steps: [], goals: [] });
+                }
+              }
+              store.saveActive(null);
+              renderPlans();
+            } else recompute();
           }
           return;
         }
@@ -1526,6 +1536,7 @@
         currentPath = trial;
         if (window._routerLastPath) window._routerLastPath.path = currentPath;
         renderSteps(currentPath);
+        upsertActivePlan(currentPath, readProfile());
       });
     });
   }
