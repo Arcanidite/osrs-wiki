@@ -319,7 +319,7 @@
       li.innerHTML = `
         <span class="goal-card-body">
           <span class="goal-card-label">${escHtml(goal.label)}</span>
-          <span class="goal-card-reqs">${reqsSummary(goal.reqs)}</span>
+          <span class="goal-card-reqs">Requires: ${reqsSummary(goal.reqs)}</span>
         </span>
         <span class="goal-card-btns">
           <button class="btn btn-ghost goal-card-edit" data-idx="${i}" title="Edit">✎</button>
