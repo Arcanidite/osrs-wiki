@@ -1812,7 +1812,7 @@
 
     const pick = (id, name) => {
       pillsEl.appendChild(makeItemPill(id, name, tint));
-      input.value = ""; activeIdx = -1; showDropdown("");
+      input.value = ""; activeIdx = -1; dropdown.hidden = true;
     };
 
     const renderItemOption = (id, name, q) => {
