@@ -19,7 +19,6 @@
 
   let _base     = "";
   let _atlas    = null;   // {id: {x,y,w,h}}
-  let _sheet    = null;   // HTMLImageElement — held until worker finishes cropping
   let _byId     = null;   // {id: packRecord}
   let _byName   = null;   // {"lowercase name": packRecord}
   let _promise  = null;
@@ -68,7 +67,7 @@
 
   function cropSpritesAsync(atlas, img) {
     const uncached = Object.entries(atlas).filter(([id]) => !localStorage.getItem(LS_PFX + id));
-    if (!uncached.length) { _sheet = null; return; }
+    if (!uncached.length) { return; }
     let remaining = uncached.length;
     createImageBitmap(img).then((bitmap) => {
       const src = `
@@ -88,7 +87,8 @@
       worker.onmessage = ({ data: { id, dataUrl } }) => {
         try { localStorage.setItem(LS_PFX + id, dataUrl); } catch { /* quota */ }
         _cssCache.delete(+id);
-        if (--remaining === 0) { _sheet = null; worker.terminate(); }
+        window.dispatchEvent(new CustomEvent("osrs-sprite-ready", { detail: { id: +id, dataUrl } }));
+        if (--remaining === 0) { worker.terminate(); }
       };
       worker.postMessage({ bitmap, entries: uncached }, [bitmap]);
     });
@@ -117,7 +117,6 @@
         readPack(_base + PACK_PATH),
       ]).then(([atlas, sheet, pack]) => {
         _atlas  = atlas;
-        _sheet  = sheet;
         _byId   = pack;
         _byName = Object.values(pack).reduce((m, rec) => {
           if (rec.name) m[rec.name.toLowerCase()] = rec;
@@ -141,7 +140,7 @@
       img.src = dataUrl;
     },
 
-    /** CSS background for a sized container — data URL once cached, atlas coords as fallback. */
+    /** CSS background for a sized container — data URL from localStorage only, empty string if not yet cached. */
     css(itemId) {
       if (!_atlas) return "";
       const key = +itemId;
@@ -152,10 +151,7 @@
         _cssCache.set(key, val);
         return val;
       }
-      if (!_sheet) return "";
-      const e = _atlas[key] ?? _atlas[String(key)];
-      if (!e) return "";
-      return `url('${_sheet.src}') -${e.x}px -${e.y}px / ${_sheet.naturalWidth}px ${_sheet.naturalHeight}px no-repeat`;
+      return "";
     },
 
     /** Sprite dimensions {w, h} from the atlas, or null if not found. */

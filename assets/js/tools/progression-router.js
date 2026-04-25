@@ -1793,18 +1793,33 @@
     );
   }
 
+  function applySpriteBg(icon, itemId) {
+    const a = window.SpriteAtlas;
+    if (!a?.ready) return;
+    const id = +itemId;
+    const d  = a.dims(id);
+    const apply = (bg) => {
+      icon.style.background = bg;
+      if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; }
+      icon.textContent = "";
+    };
+    const bg = a.css(id);
+    if (bg) { apply(bg); return; }
+    const onReady = (e) => {
+      if (e.detail.id !== id) return;
+      apply(`url('${e.detail.dataUrl}') no-repeat center / contain`);
+      window.removeEventListener("osrs-sprite-ready", onReady);
+    };
+    window.addEventListener("osrs-sprite-ready", onReady);
+  }
+
   function makeItemPill(itemId, name, tint) {
     const pill = document.createElement("span");
     pill.className = `ins-skill-pill ins-skill-pill--${tint} ins-item-pill`;
     pill.dataset.itemId = itemId;
     const icon = document.createElement("span");
     icon.className = "ins-item-icon";
-    const atlas = window.SpriteAtlas;
-    if (atlas?.ready) {
-      const bg = atlas.css(+itemId); const d = atlas.dims(+itemId);
-      if (bg) { icon.style.background = bg; if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; } }
-      else icon.textContent = "?";
-    } else icon.textContent = "?";
+    applySpriteBg(icon, itemId);
     const label = document.createElement("span");
     label.className = "ins-item-name"; label.textContent = name;
     label.dataset.itemId = itemId;
@@ -1849,9 +1864,7 @@
       li.dataset.itemName = name;
       const ico = document.createElement("span");
       ico.className = "ins-item-icon";
-      const a = atlas();
-      const bg = a?.css(id); const d = a?.dims(id);
-      if (bg) { ico.style.background = bg; if (d) { ico.style.width = `${d.w}px`; ico.style.height = `${d.h}px`; } }
+      applySpriteBg(ico, id);
       const label = document.createElement("span");
       label.innerHTML = q ? highlightItem(name, q) : escHtml(name);
       li.append(ico, label);
@@ -2010,7 +2023,6 @@
     overlay.addEventListener("click", (e) => { if (e.target === overlay) overlay.remove(); });
     const grid = document.createElement("div");
     grid.className = "loadout-grid";
-    const atlas = window.SpriteAtlas;
     for (let slot = 0; slot < SLOT_COLS * SLOT_ROWS; slot++) {
       const row = loadoutRows.find((r) => r.slot === slot);
       const cell = document.createElement("div");
@@ -2018,9 +2030,8 @@
       if (row) {
         const icon = document.createElement("span");
         icon.className = "ins-item-icon";
-        const bg = atlas?.css(row.itemId); const d = atlas?.dims(row.itemId);
-        if (bg) { icon.style.background = bg; if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; } }
         icon.title = row.name;
+        applySpriteBg(icon, row.itemId);
         cell.appendChild(icon);
       }
       grid.appendChild(cell);
@@ -2066,7 +2077,6 @@
       pendingLoadout = [];
       slotGrid.innerHTML = "";
       slotGrid.hidden = false;
-      const atlas = window.SpriteAtlas;
       for (let slot = 0; slot < SLOT_COLS * SLOT_ROWS; slot++) {
         const res  = results.find((r) => r.slot === slot);
         const cell = document.createElement("div");
@@ -2076,26 +2086,22 @@
           const top = res.candidates[0];
           const icon = document.createElement("span");
           icon.className = "ins-item-icon";
-          const bg = atlas?.css(top.id); const d = atlas?.dims(top.id);
-          if (bg) { icon.style.background = bg; if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; } }
+          applySpriteBg(icon, top.id);
           cell.appendChild(icon);
           cell.title = top.entry?.name ?? String(top.id);
           pendingLoadout.push({ slot, itemId: top.id, name: top.entry?.name ?? String(top.id) });
-          // Alt candidates as small dots for correction
           if (res.candidates.length > 1) {
             const alts = document.createElement("div");
             alts.className = "loadout-alts";
             res.candidates.slice(1).forEach((c) => {
               const alt = document.createElement("span");
               alt.className = "loadout-alt-dot ins-item-icon";
-              const bg2 = atlas?.css(c.id); const d2 = atlas?.dims(c.id);
-              if (bg2) { alt.style.background = bg2; if (d2) { alt.style.width = `${Math.round(d2.w * 0.6)}px`; alt.style.height = `${Math.round(d2.h * 0.6)}px`; } }
+              applySpriteBg(alt, c.id);
               alt.title = c.entry?.name ?? String(c.id);
               alt.addEventListener("click", () => {
                 const idx = pendingLoadout.findIndex((r) => r.slot === slot);
                 if (idx >= 0) pendingLoadout[idx] = { slot, itemId: c.id, name: c.entry?.name ?? String(c.id) };
-                icon.style.background = bg2 ?? "";
-                if (d2) { icon.style.width = `${d2.w}px`; icon.style.height = `${d2.h}px`; }
+                applySpriteBg(icon, c.id);
                 cell.title = c.entry?.name ?? String(c.id);
               });
               alts.appendChild(alt);
