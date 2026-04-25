@@ -1256,6 +1256,7 @@
           if (plans[activePlanIdx]) {
             plans[activePlanIdx].focalSteps = [...tab.focalSteps];
             store.updatePlan(activePlanIdx, plans[activePlanIdx]);
+            store.saveActive(plans[activePlanIdx]);
           }
         }
       });
@@ -1796,7 +1797,8 @@
     const active = store.active();
     if (active?.steps?.length) {
       const idx = store.plans().findIndex((p) => p.name === active.name && p.date === active.date);
-      loadPlan(active, idx);
+      const plan = idx >= 0 ? store.plans()[idx] : active;
+      loadPlan(plan, idx);
     }
 
     els.inputs().forEach((el) => {
