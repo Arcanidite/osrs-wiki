@@ -341,9 +341,7 @@ The inline insert form (`buildStepForm`) should use the same card/pill UI as goa
 
 ## [router:goal-queue-grants-and-tags] Goal queue entries support grants + tag reqs; tag reuse panel
 
-Goal queue cards need a grants section (same skill/tag pill UI as step inserts). Reqs should also accept tags, not just skills. A tag selection panel (similar to step bank, multi-select) lets users pick previously-granted tags rather than typing free-form. Tags are scoped to the active plan's accumulated grants — the panel lists all tags that have been granted by any step or goal in the current route.
-
-**Status:** TODO
+**Status:** DONE ✓ — `openGoalEditor` has grants (skill/tag pills) + tag reqs; `collectGrantedTags()` builds reuse panel from `currentPath`+`goalQueue`; `reqsSummary` shows tags as `[tag]` (`849837c`)
 
 ---
 
@@ -361,9 +359,7 @@ Goal queue cards need a grants section (same skill/tag pill UI as step inserts).
 
 ## [router:insert-step-body-title-style] Insert form title/detail inputs styled like step-body elements
 
-The insert form label/detail inputs should visually match `.step-title` / `.step-detail` in the route step body — same font size, weight, and inline appearance. The form fields should feel like editing the step in place, not a separate modal form.
-
-**Status:** TODO
+**Status:** DONE ✓ — `.ins-label`/`.ins-detail` CSS matches `.step-title`/`.step-detail`; wrapped in `.ins-step-body` flex column (`638838c`)
 
 ---
 
