@@ -771,11 +771,6 @@ display: flex;
   max-height: 180px; overflow-y: auto;
   box-shadow: 0 4px 8px rgba(0,0,0,.08);
 }
-.rtb-dropdown--fixed {
-  position: fixed;
-  border-top: 1px solid var(--border);
-  border-radius: var(--radius);
-}
 .rtb-option {
   padding: var(--sp-q) var(--sp-h);
   font-size: var(--fs-sm); cursor: pointer;
