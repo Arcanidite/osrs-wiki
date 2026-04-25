@@ -1757,9 +1757,18 @@
         b.className = "step-badge goal-lbl"; b.textContent = "goal";
         meta.appendChild(b);
       } else if (s._bankType === "custom-goal") {
-        const b = document.createElement("span");
-        b.className = "step-badge bank-custom-lbl"; b.textContent = "custom";
-        meta.appendChild(b);
+        const tags = s.tags ?? [];
+        if (tags.length) {
+          tags.forEach((t) => {
+            const b = document.createElement("span");
+            b.className = "step-badge bank-custom-lbl"; b.textContent = t;
+            meta.appendChild(b);
+          });
+        } else {
+          const b = document.createElement("span");
+          b.className = "step-badge bank-custom-lbl"; b.textContent = "custom";
+          meta.appendChild(b);
+        }
       }
 
       const addBtn = document.createElement("button");
