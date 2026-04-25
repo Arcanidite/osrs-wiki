@@ -15,12 +15,14 @@
   const PACK_PATH  = "/assets/data/cache/items.pack";
   const SS_ATLAS   = "osrs-sprite-atlas";
   const SS_PACK    = "osrs-sprite-pack";
+  const LS_SHEET   = "osrs-sprite-sheet-dataurl";
 
-  let _base    = "";
-  let _atlas   = null;   // {id: {x,y,w,h}}
-  let _sheet   = null;   // HTMLImageElement
-  let _byId    = null;   // {id: packRecord}
-  let _byName  = null;   // {"lowercase name": packRecord}
+  let _base       = "";
+  let _atlas      = null;   // {id: {x,y,w,h}}
+  let _sheet      = null;   // HTMLImageElement
+  let _sheetUrl   = null;   // data URL used in css() — never a network path
+  let _byId       = null;   // {id: packRecord}
+  let _byName     = null;   // {"lowercase name": packRecord}
   let _promise = null;
   let _cssCache = new Map(); // itemId → CSS string, in-memory only
 
@@ -66,11 +68,23 @@
   }
 
   function loadImage(src) {
-    return new Promise((resolve, reject) => {
+    const cached = localStorage.getItem(LS_SHEET);
+    const dataUrl = cached ?? null;
+    const fromUrl = (url) => new Promise((resolve, reject) => {
       const img = new Image();
       img.onload  = () => resolve(img);
       img.onerror = reject;
-      img.src = src;
+      img.src = url;
+    });
+    if (dataUrl) return fromUrl(dataUrl).then((img) => { _sheetUrl = dataUrl; return img; });
+    return fromUrl(src).then((img) => {
+      const c = document.createElement("canvas");
+      c.width = img.naturalWidth; c.height = img.naturalHeight;
+      c.getContext("2d").drawImage(img, 0, 0);
+      const url = c.toDataURL("image/png");
+      try { localStorage.setItem(LS_SHEET, url); } catch { /* quota — skip cache */ }
+      _sheetUrl = url;
+      return img;
     });
   }
 
@@ -113,7 +127,7 @@
       if (_cssCache.has(key)) return _cssCache.get(key);
       const e = _atlas[itemId] ?? _atlas[String(itemId)];
       if (!e) return "";
-      const val = `url('${_base + SHEET_PATH}') -${e.x}px -${e.y}px / ${_sheet.naturalWidth}px ${_sheet.naturalHeight}px no-repeat`;
+      const val = `url('${_sheetUrl}') -${e.x}px -${e.y}px / ${_sheet.naturalWidth}px ${_sheet.naturalHeight}px no-repeat`;
       _cssCache.set(key, val);
       return val;
     },

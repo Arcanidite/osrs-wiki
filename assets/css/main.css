@@ -799,7 +799,7 @@ display: flex;
   cursor: pointer;
 }
 .rtb-option:hover, .rtb-option--active { background: var(--faint); }
-.rtb-dropdown--item { display: grid; grid-template-columns: auto 1fr; gap: var(--sp-q); }
+.rtb-dropdown--item:not([hidden]) { display: grid; grid-template-columns: auto 1fr; gap: var(--sp-q); }
 .rtb-dropdown--item .rtb-option { display: contents; }
 .rtb-dropdown--item .rtb-option:hover > *, .rtb-dropdown--item .rtb-option--active > * { background: var(--faint); }
 .rtb-tag:focus {
