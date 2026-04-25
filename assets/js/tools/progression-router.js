@@ -775,9 +775,12 @@
         <div class="ins-skill-section ins-skill-section--req">
           <div class="ins-skill-header">
             <span class="ins-skill-title req">Requirements</span>
-            <button class="btn btn-ghost ins-add-req">+ add</button>
+            <button class="btn btn-ghost ins-add-req">+ skill</button>
+            <button class="btn btn-ghost ins-add-tag-req">+ tag</button>
           </div>
           <div class="ins-skill-pills ins-reqs"></div>
+          <div class="ins-tag-reqs"></div>
+          <div class="ins-tag-req-panel" style="display:none"></div>
         </div>
         <div class="ins-skill-section ins-skill-section--grant">
           <div class="ins-skill-header">
@@ -793,10 +796,28 @@
           <button class="btn btn-ghost ins-cancel">Cancel</button>
         </div>`;
 
-      const reqWrap   = li.querySelector(".ins-reqs");
-      const grantWrap = li.querySelector(".ins-grants");
+      const reqWrap       = li.querySelector(".ins-reqs");
+      const tagReqWrap    = li.querySelector(".ins-tag-reqs");
+      const tagReqPanel   = li.querySelector(".ins-tag-req-panel");
+      const grantWrap     = li.querySelector(".ins-grants");
 
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
+      li.querySelector(".ins-add-tag-req").addEventListener("click", () => {
+        const known = collectGrantedTags();
+        if (known.length) {
+          tagReqPanel.style.display = tagReqPanel.style.display === "none" ? "flex" : "none";
+          tagReqPanel.innerHTML = "";
+          known.forEach((t) => {
+            const btn = document.createElement("button");
+            btn.className = "btn btn-ghost ge-tag-choice";
+            btn.textContent = t;
+            btn.addEventListener("click", () => { appendTagReqPill(tagReqWrap, t); tagReqPanel.style.display = "none"; });
+            tagReqPanel.appendChild(btn);
+          });
+        } else {
+          appendTagReqPill(tagReqWrap, "");
+        }
+      });
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
       li.querySelector(".ins-add-tag-grant").addEventListener("click", () => {
         const tagWrap = li.querySelector(".ins-tag-grants");
@@ -823,11 +844,16 @@
           });
           return g;
         })();
+        const tagReqs = [];
+        li.querySelectorAll(".ins-tag-reqs .ge-tag-req-pill").forEach((p) => {
+          const v = p.querySelector(".ge-tag-req-input")?.value.trim();
+          if (v) tagReqs.push(v);
+        });
         const step = {
           id:         `custom-${Date.now()}`,
           label,
           detail:     li.querySelector(".ins-detail").value.trim(),
-          reqs:       { skills: readSkillPills(reqWrap) },
+          reqs:       { skills: readSkillPills(reqWrap), tags: tagReqs },
           grants,
           _custom:    true,
           _goalLabel: anchorStep?._goalLabel ?? "",
