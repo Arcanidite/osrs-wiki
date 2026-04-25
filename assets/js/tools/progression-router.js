@@ -442,10 +442,9 @@
         <div class="ins-skill-header">
           <span class="ins-skill-title grant">Grants</span>
           <button class="btn btn-ghost ge-add-grant">+ skill</button>
-          <button class="btn btn-ghost ge-add-tag-grant">+ tag</button>
         </div>
         <div class="ins-skill-pills ge-grants"></div>
-        <div class="ins-tag-grants ge-tag-grants"></div>
+        <div class="ge-tag-grants-wrap"></div>
       </div>
       <div class="goal-edit-actions">
         <button class="btn btn-primary ge-save">Save</button>
@@ -454,20 +453,19 @@
 
     const reqsContainer  = form.querySelector(".ge-reqs");
     const grantsWrap     = form.querySelector(".ge-grants");
-    const tagGrantsWrap  = form.querySelector(".ge-tag-grants");
     const tagBox         = makeTagReqBox(normalizeReqs(goal.reqs).tags ?? []);
     form.querySelector(".ge-tag-reqs-wrap").appendChild(tagBox);
 
     Object.entries(normalizeReqs(goal.reqs).skills ?? {}).forEach(([sk, lvl]) => appendReqRow(reqsContainer, sk, lvl));
     const existingGrants = goal.grants ?? {};
+    const tagGrantBox    = makeTagReqBox(Object.entries(existingGrants).filter(([, v]) => v === true).map(([k]) => k));
+    form.querySelector(".ge-tag-grants-wrap").appendChild(tagGrantBox);
     Object.entries(existingGrants).forEach(([k, v]) => {
       if (typeof v === "number") grantsWrap.appendChild(makeSkillPill(k, v, "grant"));
-      else if (v === true) appendTagGrantPill(tagGrantsWrap, k);
     });
 
     form.querySelector(".ge-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
     form.querySelector(".ge-add-grant").addEventListener("click", () => grantsWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
-    form.querySelector(".ge-add-tag-grant").addEventListener("click", () => appendTagGrantPill(tagGrantsWrap, ""));
 
     form.querySelector(".ge-cancel").addEventListener("click", () => form.replaceWith(card));
     form.querySelector(".ge-save").addEventListener("click", () => {
@@ -481,10 +479,7 @@
       });
       reqs.tags = tagBox.readTags();
       const grants = readSkillPills(grantsWrap);
-      tagGrantsWrap.querySelectorAll(".ins-tag-pill").forEach((p) => {
-        const v = p.querySelector(".ins-tag-input")?.value.trim();
-        if (v) grants[v] = true;
-      });
+      tagGrantBox.readTags().forEach((t) => { grants[t] = true; });
       goalQueue[idx] = { ...goal, label, reqs, grants, terminal: form.querySelector(".ge-terminal").value.trim() || null };
       store.saveGoals(goalQueue);
       renderGoalQueue();
@@ -516,10 +511,9 @@
         <div class="ins-skill-header">
           <span class="ins-skill-title grant">Grants</span>
           <button class="btn btn-ghost cg-add-grant">+ skill</button>
-          <button class="btn btn-ghost cg-add-tag-grant">+ tag</button>
         </div>
         <div class="ins-skill-pills cg-grants"></div>
-        <div class="ins-tag-grants cg-tag-grants"></div>
+        <div class="cg-tag-grants-wrap"></div>
       </div>
       <div class="goal-edit-actions">
         <button class="btn btn-primary cg-save">Save</button>
@@ -528,13 +522,13 @@
 
     const reqsContainer = form.querySelector(".cg-reqs");
     const grantsWrap    = form.querySelector(".cg-grants");
-    const tagGrantsWrap = form.querySelector(".cg-tag-grants");
     const tagBox        = makeTagReqBox([]);
     form.querySelector(".cg-tag-reqs-wrap").appendChild(tagBox);
+    const tagGrantBox   = makeTagReqBox([]);
+    form.querySelector(".cg-tag-grants-wrap").appendChild(tagGrantBox);
 
     form.querySelector(".cg-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
     form.querySelector(".cg-add-grant").addEventListener("click", () => grantsWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
-    form.querySelector(".cg-add-tag-grant").addEventListener("click", () => appendTagGrantPill(tagGrantsWrap, ""));
 
     form.querySelector(".cg-cancel").addEventListener("click", () => { form.remove(); renderStepBank(); });
     form.querySelector(".cg-save").addEventListener("click", () => {
@@ -548,10 +542,7 @@
       });
       reqs.tags = tagBox.readTags();
       const grants = readSkillPills(grantsWrap);
-      tagGrantsWrap.querySelectorAll(".ins-tag-pill").forEach((p) => {
-        const v = p.querySelector(".ins-tag-input")?.value.trim();
-        if (v) grants[v] = true;
-      });
+      tagGrantBox.readTags().forEach((t) => { grants[t] = true; });
       customGoals.push({ id: "custom-goal-" + Date.now(), label, reqs, grants, terminal: null });
       store.saveCustomGoals(customGoals);
       renderStepBank();
@@ -571,18 +562,6 @@
       <button class="btn btn-ghost ge-req-rm" style="font-size:var(--fs-xs);padding:1px var(--sp-q)">✕</button>`;
     row.querySelector(".ge-req-rm").addEventListener("click", () => row.remove());
     container.appendChild(row);
-  }
-
-  function appendTagGrantPill(container, tag) {
-    const pill = document.createElement("span");
-    pill.className = "ins-tag-pill";
-    const inp = document.createElement("input");
-    inp.type = "text"; inp.className = "ins-tag-input"; inp.placeholder = "tag"; inp.value = tag ?? "";
-    const rm = document.createElement("button");
-    rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
-    rm.addEventListener("click", () => pill.remove());
-    pill.append(inp, rm);
-    container.appendChild(pill);
   }
 
   // ── Routing ───────────────────────────────────────────────────────────────
@@ -890,10 +869,9 @@
           <div class="ins-skill-header">
             <span class="ins-skill-title grant">Grants</span>
             <button class="btn btn-ghost ins-add-grant">+ skill</button>
-            <button class="btn btn-ghost ins-add-tag-grant">+ tag</button>
           </div>
           <div class="ins-skill-pills ins-grants"></div>
-          <div class="ins-tag-grants"></div>
+          <div class="ins-tag-grants-wrap"></div>
         </div>
         <div class="goal-edit-actions">
           <button class="btn btn-primary ins-add">Add</button>
@@ -905,20 +883,11 @@
       const tagBox    = makeTagReqBox([]);
       li.querySelector(".ins-tag-reqs-wrap").appendChild(tagBox);
 
+      const tagGrantBox = makeTagReqBox([]);
+      li.querySelector(".ins-tag-grants-wrap").appendChild(tagGrantBox);
+
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
-      li.querySelector(".ins-add-tag-grant").addEventListener("click", () => {
-        const tagWrap = li.querySelector(".ins-tag-grants");
-        const pill = document.createElement("span");
-        pill.className = "ins-tag-pill";
-        const inp = document.createElement("input");
-        inp.type = "text"; inp.className = "ins-tag-input"; inp.placeholder = "tag name";
-        const rm = document.createElement("button");
-        rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
-        rm.addEventListener("click", () => pill.remove());
-        pill.append(inp, rm);
-        tagWrap.appendChild(pill);
-      });
       li.querySelector(".ins-cancel").addEventListener("click", showCard);
       li.querySelector(".ins-add").addEventListener("click", () => {
         const label = li.querySelector(".ins-label").value.trim();
@@ -926,10 +895,7 @@
         const anchorStep = afterIdx >= 0 ? currentPath[afterIdx] : null;
         const grants = (() => {
           const g = readSkillPills(grantWrap);
-          li.querySelectorAll(".ins-tag-grants .ins-tag-pill").forEach((p) => {
-            const v = p.querySelector(".ins-tag-input")?.value.trim();
-            if (v) g[v] = true;
-          });
+          tagGrantBox.readTags().forEach((t) => { g[t] = true; });
           return g;
         })();
         const step = {
