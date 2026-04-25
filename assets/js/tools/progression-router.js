@@ -1485,7 +1485,16 @@
   }
 
   function wireReqScroll(stepsEl) {
+    let hlStyle = null;
     stepsEl.querySelectorAll(".step-badge[data-req-skill]").forEach((badge) => {
+      badge.addEventListener("mouseenter", () => {
+        const skills = badge.dataset.reqSkill.split(" ");
+        const rules  = skills.map((sk) => `.route-step[data-grants-skill~="${sk}"] { box-shadow: inset 0 0 0 2px #f59e0b; transition: box-shadow 0.15s; }`).join("\n");
+        hlStyle = document.createElement("style");
+        hlStyle.textContent = rules;
+        stepsEl.prepend(hlStyle);
+      });
+      badge.addEventListener("mouseleave", () => { hlStyle?.remove(); hlStyle = null; });
       badge.addEventListener("click", () => {
         const skills = badge.dataset.reqSkill.split(" ");
         const target = stepsEl.querySelector(
