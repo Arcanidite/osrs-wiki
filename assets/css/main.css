@@ -806,18 +806,19 @@ display: flex;
   outline: 2px solid var(--gold);
   outline-offset: var(--pad-1px);
 }
-mark.rtb-hl-serial {
+mark.rtb-hl-serial,
+mark.rtb-hl-fuzzy {
+  display: inline;
   background: #ffe066;
   color: inherit;
   border-radius: var(--gap-xs);
   padding: 0;
+  margin: 0;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  font: inherit;
 }
-mark.rtb-hl-fuzzy {
-  background: #ffb347;
-  color: inherit;
-  border-radius: var(--gap-xs);
-  padding: 0;
-}
+mark.rtb-hl-fuzzy { background: #ffb347; }
 
 .plan-saved {
   font-size: var(--fs-xs); color: var(--muted);
