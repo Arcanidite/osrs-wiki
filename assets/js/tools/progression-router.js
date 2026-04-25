@@ -345,7 +345,7 @@
     customGoals.forEach((g) => {
       Object.entries(g.grants ?? {}).forEach(([k, v]) => { if (v === true) tags.add(k); });
     });
-    document.querySelectorAll(".region-tagbox--grant .rtb-tag[data-tag]").forEach((el) => tags.add(el.dataset.tag));
+    document.querySelectorAll(".region-tagbox .rtb-tag[data-tag]").forEach((el) => tags.add(el.dataset.tag));
     return [...tags];
   }
 
