@@ -8,7 +8,8 @@
   const STORE_PLANS      = "osrs-router-plans";
   const STORE_GOALS      = "osrs-router-goals";
   const STORE_ACTIVE     = "osrs-router-active";
-  const STORE_STEP_NOTES = "osrs-step-notes";
+  const STORE_STEP_NOTES    = "osrs-step-notes";
+  const STORE_CUSTOM_GOALS  = "osrs-router-custom-goals";
 
   // ── Data ──────────────────────────────────────────────────────────────────
   async function loadJsonl(url) {
@@ -60,6 +61,9 @@
     },
     applyNotes:   (m)     => localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(m ?? {})),
     clearNotes:   ()      => localStorage.removeItem(STORE_STEP_NOTES),
+
+    customGoals:      ()  => JSON.parse(localStorage.getItem(STORE_CUSTOM_GOALS) ?? "[]"),
+    saveCustomGoals:  (g) => localStorage.setItem(STORE_CUSTOM_GOALS, JSON.stringify(g)),
   };
 
   // ── Mutable plan state ────────────────────────────────────────────────────
@@ -69,6 +73,7 @@
   let manualQuestDone  = new Set();
   let activePlanIdx    = -1;
   let goalQueue        = [];
+  let customGoals      = [];
   let skillNames       = [];
   let excludedRegions  = [];
 
@@ -486,6 +491,78 @@
     });
 
     card.replaceWith(form);
+  }
+
+  function openCustomGoalForm() {
+    const list = $("rt-bank-list");
+    if (!list || list.querySelector(".custom-goal-form")) return;
+
+    const form = document.createElement("li");
+    form.className = "custom-goal-form goal-edit-form";
+    form.innerHTML = `
+      <div class="goal-edit-row">
+        <input class="cg-label" type="text" placeholder="Goal label">
+      </div>
+      <div class="ins-skill-section ins-skill-section--req">
+        <div class="ins-skill-header">
+          <span class="ins-skill-title req">Requirements</span>
+          <button class="btn btn-ghost cg-add-req">+ skill</button>
+          <button class="btn btn-ghost cg-add-tag-req">+ tag</button>
+        </div>
+        <div class="cg-reqs"></div>
+        <div class="cg-tag-reqs"></div>
+      </div>
+      <div class="ins-skill-section ins-skill-section--grant">
+        <div class="ins-skill-header">
+          <span class="ins-skill-title grant">Grants</span>
+          <button class="btn btn-ghost cg-add-grant">+ skill</button>
+          <button class="btn btn-ghost cg-add-tag-grant">+ tag</button>
+        </div>
+        <div class="ins-skill-pills cg-grants"></div>
+        <div class="ins-tag-grants cg-tag-grants"></div>
+      </div>
+      <div class="goal-edit-actions">
+        <button class="btn btn-primary cg-save">Save</button>
+        <button class="btn btn-ghost cg-cancel">Cancel</button>
+      </div>`;
+
+    const reqsContainer = form.querySelector(".cg-reqs");
+    const tagReqsWrap   = form.querySelector(".cg-tag-reqs");
+    const grantsWrap    = form.querySelector(".cg-grants");
+    const tagGrantsWrap = form.querySelector(".cg-tag-grants");
+
+    form.querySelector(".cg-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
+    form.querySelector(".cg-add-tag-req").addEventListener("click", (e) => {
+      openTagPicker(e.currentTarget, (tag) => appendTagReqPill(tagReqsWrap, tag));
+    });
+    form.querySelector(".cg-add-grant").addEventListener("click", () => grantsWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
+    form.querySelector(".cg-add-tag-grant").addEventListener("click", () => appendTagGrantPill(tagGrantsWrap, ""));
+
+    form.querySelector(".cg-cancel").addEventListener("click", () => { form.remove(); renderStepBank(); });
+    form.querySelector(".cg-save").addEventListener("click", () => {
+      const label = form.querySelector(".cg-label").value.trim();
+      if (!label) return;
+      const reqs = { skills: {}, tags: [] };
+      reqsContainer.querySelectorAll(".ge-req-row").forEach((row) => {
+        const sk  = row.querySelector(".ge-req-skill").value;
+        const lvl = parseInt(row.querySelector(".ge-req-level").value, 10);
+        if (sk && lvl > 1) reqs.skills[sk] = lvl;
+      });
+      tagReqsWrap.querySelectorAll(".ge-tag-req-pill").forEach((p) => {
+        const v = p.querySelector(".ge-tag-req-input")?.value.trim();
+        if (v) reqs.tags.push(v);
+      });
+      const grants = readSkillPills(grantsWrap);
+      tagGrantsWrap.querySelectorAll(".ins-tag-pill").forEach((p) => {
+        const v = p.querySelector(".ins-tag-input")?.value.trim();
+        if (v) grants[v] = true;
+      });
+      customGoals.push({ id: "custom-goal-" + Date.now(), label, reqs, grants, terminal: null });
+      store.saveCustomGoals(customGoals);
+      renderStepBank();
+    });
+
+    list.prepend(form);
   }
 
   function appendReqRow(container, skill, level) {
@@ -1390,10 +1467,11 @@
     if (!list) return;
     const q = (filter?.value ?? "").toLowerCase();
 
-    // Goals appear first as "goal" entries, then individual steps
-    const goalEntries = allGoals.map((g) => ({ ...g, _bankType: "goal" }));
-    const stepEntries = allSteps.map((s) => ({ ...s, _bankType: "step" }));
-    const pool = [...goalEntries, ...stepEntries];
+    // Custom goals first, then server goals, then individual steps
+    const customEntries = customGoals.map((g) => ({ ...g, _bankType: "custom-goal" }));
+    const goalEntries   = allGoals.map((g) => ({ ...g, _bankType: "goal" }));
+    const stepEntries   = allSteps.map((s) => ({ ...s, _bankType: "step" }));
+    const pool = [...customEntries, ...goalEntries, ...stepEntries];
 
     const visible = pool.filter((s) =>
       !q || s.label.toLowerCase().includes(q) || (s.tags ?? []).some((t) => t.includes(q))
@@ -1410,9 +1488,11 @@
         <span class="step-meta">
           ${(s.tags ?? []).map((t) => `<span class="step-badge">${t}</span>`).join("")}
           ${s._bankType === "goal" ? `<span class="step-badge goal-lbl">goal</span>` : ""}
+          ${s._bankType === "custom-goal" ? `<span class="step-badge goal-lbl">custom</span>` : ""}
           <button class="btn btn-ghost bank-add-btn" data-step-id="${escHtml(s.id)}"${alreadyQueued.has(s.id) ? " disabled" : ""}>
             ${alreadyQueued.has(s.id) ? "Added" : "Add"}
           </button>
+          ${s._bankType === "custom-goal" ? `<button class="btn btn-ghost bank-del-btn" data-step-id="${escHtml(s.id)}" style="color:var(--danger,#c00)">✕</button>` : ""}
         </span>
       </li>`).join("");
 
@@ -1420,14 +1500,24 @@
       btn.addEventListener("click", () => {
         const entry = pool.find((s) => s.id === btn.dataset.stepId);
         if (!entry) return;
-        const qEntry = entry._bankType === "goal"
-          ? { id: entry.id, label: entry.label, reqs: entry.reqs ?? {}, terminal: entry.terminal ?? null }
+        const qEntry = (entry._bankType === "goal" || entry._bankType === "custom-goal")
+          ? { id: entry.id, label: entry.label, reqs: entry.reqs ?? {}, grants: entry.grants ?? {}, terminal: entry.terminal ?? null }
           : { id: entry.id, label: entry.label, reqs: normalizeReqs(entry.reqs).skills ?? {}, terminal: entry.id };
         goalQueue.push(qEntry);
         store.saveGoals(goalQueue);
         renderGoalQueue();
         renderStepBank();
         recompute();
+      });
+    });
+
+    list.querySelectorAll(".bank-del-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const idx = customGoals.findIndex((g) => g.id === btn.dataset.stepId);
+        if (idx === -1) return;
+        customGoals.splice(idx, 1);
+        store.saveCustomGoals(customGoals);
+        renderStepBank();
       });
     });
   }
@@ -1553,6 +1643,7 @@
     buildRegionTagbox(allRegions);
     renderStepBank();
     $("rt-bank-filter")?.addEventListener("input", renderStepBank);
+    $("rt-new-goal-btn")?.addEventListener("click", openCustomGoalForm);
 
     // ── Tabs bootstrap ────────────────────────────────────────────────────────
     planTabs = [makeTab("Plan 1")];
@@ -1587,6 +1678,7 @@
     const saved = store.profile();
     if (Object.keys(saved).length) applyProfile(saved, allRegions);
 
+    customGoals = store.customGoals();
     goalQueue = store.goals();
     renderGoalQueue();
 
