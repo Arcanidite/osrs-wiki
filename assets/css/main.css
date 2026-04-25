@@ -573,6 +573,18 @@ body {
 .route-steps:has(.step-badge[data-req-skill*="farming"]:hover) .route-step[data-grants-skill~="farming"] { box-shadow: inset 0 0 0 2px #f59e0b; }
 
 /* Custom step edit form + unified insert form skill sections */
+/* Capstone teal caution stripe */
+.step-capstone {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 6px,
+    rgba(32,178,170,0.08) 6px,
+    rgba(32,178,170,0.08) 12px
+  );
+  border-left: 3px solid #20b2aa;
+}
+
 .step-edit-form { padding: var(--sp-h); border-bottom: 1px dashed var(--accent); display: flex; flex-direction: column; gap: var(--sp-h); }
 .sef-row { display: flex; gap: var(--sp-h); }
 .sef-row input { flex: 1; font-size: var(--fs-xs); padding: 0.125rem var(--sp-q); border: 1px solid var(--border); border-radius: var(--radius); }

@@ -985,9 +985,9 @@
     const r = normalizeReqs(reqs);
     const entries = Object.entries(r.skills ?? {});
     if (!entries.length) return "";
-    const skills = entries.map(([sk]) => sk).join(" ");
+    const skillsWithLevels = entries.map(([sk, lvl]) => `${sk}:${lvl}`).join(" ");
     const parts  = entries.map(([sk, lvl]) => `${skillLabel(sk)} ${lvl}`);
-    return `<span class="step-badge req" data-req-skill="${escHtml(skills)}">Req: ${parts.join(", ")}</span>`;
+    return `<span class="step-badge req" data-req-skill="${escHtml(skillsWithLevels)}">Req: ${parts.join(", ")}</span>`;
   }
   function constraintBadges(reqs) {
     const r = normalizeReqs(reqs);
