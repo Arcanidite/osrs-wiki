@@ -493,3 +493,5 @@ The bank search fuzzy highlighter currently matches individual characters scatte
 - `[cache:sprites]` — `items.png` + `items-atlas.json` ✓ (`e442afd`)
 - `[cache:maptiles]` — 1,150 region chunks + manifest ✓ (`e442afd`)
 - `[cache:items-npcs-objects]` — `.pack` files extracted ✓ (`e442afd`)
+- `[sprite:bucket-fingerprint]` — `SpriteAtlas.buildBuckets()`: 6 anchors/sprite at 2/5 offsets, 4 progressive cross tiers (1×1→7×7) as checksums, parallel batch load, keyed by tier-0 center pixel ✓ (`a8a9bd1`)
+- `[router:item-image-analysis]` — worker-offloaded scan: bucket-gated anchor lookup → progressive tier verification → Gaussian blur + masked NCC literal match → NMS; findings-list output (icon+name+score%) replacing slot grid ✓ (`0555702`)
