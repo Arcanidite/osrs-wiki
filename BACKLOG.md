@@ -425,6 +425,22 @@ The inline insert form (`buildStepForm`) should use the same card/pill UI as goa
 
 ---
 
+## [router:item-req-grant-pipeline] Item req/grant fields with atlas icons + tag filter
+
+Req and grant sections in step/goal forms should support items (not just skills/tags). Items have: name, icon (from sprite atlas as data-blob), source attribution tags, description, related items. The item picker uses the same tag-filter approach as tags but ranks by name, source tags, reqs, related items. Items display icon + name in the picker dropdown (no full metadata, just enough to identify). Pill display shows icon inline.
+
+**Status:** TODO
+
+---
+
+## [router:item-image-upload] Inventory image upload → slot analysis → loadout JSON
+
+User can upload or paste an image. System analyzes imagedata against the sprite atlas to identify item candidates per inventory/equipment slot by position. User confirms/corrects each slot's item by name/id. Result stored as JSON array (position + item id). Steps can have an attached loadout image with a lightbox showing per-slot metadata and icon grid.
+
+**Status:** TODO
+
+---
+
 ## [router:step-bank-tag-recompute] Step bank inserts don't update tag pool until page refresh
 
 When a step bank item is added to the route, its granted tags are not immediately available in the tag picker / reuse panel — they appear only after a full page reload re-seeds `knownTags` from localStorage. Every step bank add (and any other mutation that introduces new grants) must call `collectGrantedTags()` (or equivalent tag-pool rebuild) and re-render the tag reuse panel immediately, without requiring a reload.
