@@ -478,6 +478,14 @@ body {
 .step-badge.eq         { background: #fce7f3; color: #9d174d; }
 .step-badge.itm        { background: #ecfdf5; color: #065f46; }
 .step-badge.constraint { background: #f3f4f6; color: #374151; cursor: help; }
+.step-badge.bank-custom-lbl { background: #fdf4e7; color: #92400e; font-style: italic; }
+.bank-match-ctx {
+  font-size: var(--fs-xs); color: var(--muted);
+  display: flex; gap: var(--sp-q); align-items: baseline;
+}
+.bank-match-ctx em { font-style: normal; color: #999; min-width: 2.5rem; }
+.bank-add-btn { opacity: 1 !important; font-size: var(--fs-sm); padding: 0 var(--sp-q); }
+.bank-add-btn[disabled] { opacity: 0.35 !important; cursor: not-allowed; }
 
 /* Step remove / edit buttons */
 .step-remove-btn, .step-edit-btn { font-size: var(--fs-xs); opacity: 0; transition: opacity 0.1s; }
@@ -569,8 +577,6 @@ body {
 /* Step bank */
 #rt-bank summary { font-size: var(--fs-sm); font-weight: 600; }
 .bank-step { cursor: default; }
-.bank-add-btn { font-size: var(--fs-xs); padding: 1px var(--sp-q); opacity: 0; transition: opacity 0.1s; }
-.bank-step:hover .bank-add-btn { opacity: 1; }
 
 /* Inline step label/detail edit inputs */
 .step-title-edit {

@@ -1649,40 +1649,145 @@
   // ── Step bank ─────────────────────────────────────────────────────────────
   // Bank shows allSteps (individual steps) + allGoals (preset goal bundles).
   // Adding from bank pushes into goalQueue, not currentPath.
+  function flattenEntry(entry) {
+    const fields = [];
+    if (entry.label)  fields.push({ field: "label",  text: entry.label });
+    if (entry.detail) fields.push({ field: "detail", text: entry.detail });
+    if (entry.id)     fields.push({ field: "id",     text: entry.id });
+    (entry.tags ?? []).forEach((t) => fields.push({ field: "tag", text: t }));
+    const nr = normalizeReqs(entry.reqs);
+    Object.entries(nr.skills ?? {}).forEach(([sk, lvl]) =>
+      fields.push({ field: "req", text: `${sk} ${lvl}` })
+    );
+    (nr.tags ?? []).forEach((t) => fields.push({ field: "req", text: t }));
+    Object.entries(entry.grants ?? {}).forEach(([k, v]) => {
+      if (typeof v === "number") fields.push({ field: "grant", text: `${k} ${v}` });
+      else if (v === true)       fields.push({ field: "grant", text: k });
+    });
+    if (entry.location?.region) fields.push({ field: "loc", text: entry.location.region });
+    if (entry.location?.quest_gate) fields.push({ field: "quest", text: entry.location.quest_gate });
+    return fields;
+  }
+
+  function scoreBankEntry(query, entry) {
+    if (!query) return { score: 0, matches: [] };
+    const fields = flattenEntry(entry);
+    const matches = [];
+    let best = 0;
+    fields.forEach(({ field, text }) => {
+      const r = scoreTag(query, text);
+      if (r.score > 0) {
+        matches.push({ field, text, ...r });
+        if (r.score > best) best = r.score;
+      }
+    });
+    return { score: best, matches };
+  }
+
   function renderStepBank() {
     const list   = $("rt-bank-list");
     const filter = $("rt-bank-filter");
     if (!list) return;
-    const q = (filter?.value ?? "").toLowerCase();
+    const q = (filter?.value ?? "").trim();
 
-    // Custom goals first, then server goals, then individual steps
     const customEntries = customGoals.map((g) => ({ ...g, _bankType: "custom-goal" }));
     const goalEntries   = allGoals.map((g) => ({ ...g, _bankType: "goal" }));
     const stepEntries   = allSteps.map((s) => ({ ...s, _bankType: "step" }));
     const pool = [...customEntries, ...goalEntries, ...stepEntries];
 
-    const visible = pool.filter((s) =>
-      !q || s.label.toLowerCase().includes(q) || (s.tags ?? []).some((t) => t.includes(q))
-    );
+    let ranked;
+    if (!q) {
+      ranked = pool.map((s) => ({ entry: s, score: 0, matches: [] }));
+    } else {
+      ranked = pool
+        .map((s) => ({ entry: s, ...scoreBankEntry(q, s) }))
+        .filter((r) => r.score > 0)
+        .sort((a, b) => b.score - a.score);
+    }
 
     const alreadyQueued = new Set(goalQueue.map((g) => g.id));
 
-    list.innerHTML = visible.map((s) => `
-      <li class="route-step bank-step" data-step-id="${escHtml(s.id)}">
-        <span class="step-body">
-          <span class="step-title">${escHtml(s.label)}</span>
-          ${s.detail ? `<span class="step-detail">${escHtml(s.detail)}</span>` : ""}
-        </span>
-        <span class="step-meta">
-          ${(s.tags ?? []).map((t) => `<span class="step-badge">${t}</span>`).join("")}
-          ${s._bankType === "goal" ? `<span class="step-badge goal-lbl">goal</span>` : ""}
-          ${s._bankType === "custom-goal" ? `<span class="step-badge goal-lbl">custom</span>` : ""}
-          <button class="btn btn-ghost bank-add-btn" data-step-id="${escHtml(s.id)}"${alreadyQueued.has(s.id) ? " disabled" : ""}>
-            ${alreadyQueued.has(s.id) ? "Added" : "Add"}
-          </button>
-          ${s._bankType === "custom-goal" ? `<button class="btn btn-ghost bank-del-btn" data-step-id="${escHtml(s.id)}" style="color:var(--danger,#c00)">✕</button>` : ""}
-        </span>
-      </li>`).join("");
+    const existingForm = list.querySelector(".custom-goal-form");
+    list.innerHTML = "";
+    if (existingForm) list.appendChild(existingForm);
+
+    ranked.forEach(({ entry: s, matches }) => {
+      const li = document.createElement("li");
+      li.className = "route-step bank-step";
+      li.dataset.stepId = s.id;
+
+      const body = document.createElement("span");
+      body.className = "step-body";
+
+      const titleEl = document.createElement("span");
+      titleEl.className = "step-title";
+      const labelMatch = matches.find((m) => m.field === "label");
+      titleEl.innerHTML = labelMatch ? highlightTag(s.label, labelMatch.indices, labelMatch.serial) : escHtml(s.label);
+      body.appendChild(titleEl);
+
+      if (s.detail) {
+        const detailEl = document.createElement("span");
+        detailEl.className = "step-detail";
+        const detailMatch = matches.find((m) => m.field === "detail");
+        detailEl.innerHTML = detailMatch ? highlightTag(s.detail, detailMatch.indices, detailMatch.serial) : escHtml(s.detail);
+        body.appendChild(detailEl);
+      }
+
+      matches.filter((m) => !["label","detail"].includes(m.field)).forEach((m) => {
+        const ctx = document.createElement("span");
+        ctx.className = `step-detail bank-match-ctx bank-match-${m.field}`;
+        ctx.innerHTML = `<em>${m.field}:</em> ${highlightTag(m.text, m.indices, m.serial)}`;
+        body.appendChild(ctx);
+      });
+
+      li.appendChild(body);
+
+      const meta = document.createElement("span");
+      meta.className = "step-meta";
+
+      (s.tags ?? []).forEach((t) => {
+        const badge = document.createElement("span");
+        badge.className = "step-badge";
+        badge.textContent = t;
+        meta.appendChild(badge);
+      });
+
+      if (s._bankType === "goal") {
+        const b = document.createElement("span");
+        b.className = "step-badge goal-lbl"; b.textContent = "goal";
+        meta.appendChild(b);
+      } else if (s._bankType === "custom-goal") {
+        const b = document.createElement("span");
+        b.className = "step-badge bank-custom-lbl"; b.textContent = "custom";
+        meta.appendChild(b);
+      }
+
+      const addBtn = document.createElement("button");
+      addBtn.className = "btn btn-ghost bank-add-btn";
+      addBtn.dataset.stepId = s.id;
+      if (alreadyQueued.has(s.id)) {
+        addBtn.disabled = true;
+        addBtn.title = "Already in plan route";
+        addBtn.textContent = "＋";
+      } else {
+        addBtn.title = "Add to goal queue";
+        addBtn.textContent = "＋";
+      }
+      meta.appendChild(addBtn);
+
+      if (s._bankType === "custom-goal") {
+        const delBtn = document.createElement("button");
+        delBtn.className = "btn btn-ghost bank-del-btn";
+        delBtn.dataset.stepId = s.id;
+        delBtn.title = "Delete custom goal";
+        delBtn.textContent = "✕";
+        delBtn.style.color = "var(--danger, #c00)";
+        meta.appendChild(delBtn);
+      }
+
+      li.appendChild(meta);
+      list.appendChild(li);
+    });
 
     list.querySelectorAll(".bank-add-btn:not([disabled])").forEach((btn) => {
       btn.addEventListener("click", () => {
