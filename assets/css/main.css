@@ -509,7 +509,7 @@ body {
 .route-step.step-done .step-title { text-decoration: line-through; opacity: 0.55; }
 .route-step:has(.step-done-cb[data-is-quest]:checked) { box-shadow: inset 3px 0 0 #28a745; }
 .route-step:has(.step-done-cb[data-is-quest]:checked) .step-num { background: #28a745; }
-.route-step.step-capstone { box-shadow: inset 3px 0 0 var(--gold); font-weight: 600; background: var(--faint); }
+.route-step.step-capstone { box-shadow: inset 3px 0 0 var(--gold); font-weight: 600; }
 .route-step.step-capstone .step-num { background: var(--gold); }
 
 /* Req badge hover — highlight steps that grant the hovered req (CSS-only) */
