@@ -341,77 +341,68 @@
       const g = s.grants ?? {};
       Object.entries(g).forEach(([k, v]) => { if (v === true) tags.add(k); });
     });
-    // live DOM tag-req pills (free-typed by user)
-    document.querySelectorAll(".ge-tag-req-input, .ins-tag-input").forEach((inp) => {
-      const v = inp.value.trim();
-      if (v) tags.add(v);
-    });
-    // custom goal grants
     customGoals.forEach((g) => {
       Object.entries(g.grants ?? {}).forEach(([k, v]) => { if (v === true) tags.add(k); });
     });
     return [...tags];
   }
 
-  function openTagPicker(anchorEl, onSelect) {
-    document.querySelector(".tag-picker-dropdown")?.remove();
-    const known = collectGrantedTags();
+  function makeTagReqBox(initialTags) {
+    const box      = document.createElement("div");
+    box.className  = "region-tagbox";
+    const tagsSpan = document.createElement("span");
+    tagsSpan.className = "rtb-tags";
+    const input    = document.createElement("input");
+    input.className = "rtb-input"; input.type = "text"; input.placeholder = "tag…";
+    const dropdown = document.createElement("ul");
+    dropdown.className = "rtb-dropdown"; dropdown.hidden = true;
+    box.append(tagsSpan, input, dropdown);
 
-    const drop = document.createElement("div");
-    drop.className = "tag-picker-dropdown";
-
-    const search = document.createElement("input");
-    search.type = "search"; search.placeholder = "filter or new tag…";
-
-    const list = document.createElement("div");
-    list.className = "tag-picker-list";
-
-    const newRow = document.createElement("div");
-    newRow.className = "tag-picker-new";
-    newRow.textContent = "＋ new tag";
-
-    const selectedVals = () => {
-      const wrap = anchorEl.closest(".ins-skill-section") ?? anchorEl.closest(".goal-edit-form");
-      if (!wrap) return new Set();
-      return new Set([...wrap.querySelectorAll(".ge-tag-req-input")].map((i) => i.value).filter(Boolean));
+    const addTag = (tag) => {
+      const t = tag.trim();
+      if (!t) return;
+      const span = document.createElement("span");
+      span.className = "rtb-tag"; span.dataset.tag = t;
+      const rm = document.createElement("button");
+      rm.className = "rtb-tag-rm"; rm.textContent = "✕"; rm.setAttribute("aria-label", "Remove");
+      rm.addEventListener("click", () => span.remove());
+      span.append(t, rm);
+      tagsSpan.appendChild(span);
     };
 
-    const buildList = (filter) => {
-      list.innerHTML = "";
-      const active = selectedVals();
-      known.filter((t) => t.toLowerCase().includes(filter.toLowerCase())).forEach((t) => {
-        const lbl = document.createElement("label");
-        const chk = document.createElement("input");
-        chk.type = "checkbox"; chk.value = t;
-        if (active.has(t)) { chk.checked = true; chk.disabled = true; lbl.classList.add("disabled"); }
-        chk.addEventListener("change", () => { if (chk.checked) { onSelect(t); chk.disabled = true; lbl.classList.add("disabled"); } });
-        lbl.append(chk, t);
-        list.appendChild(lbl);
+    const showDropdown = (q) => {
+      const current = new Set([...tagsSpan.querySelectorAll(".rtb-tag[data-tag]")].map((s) => s.dataset.tag));
+      const hits = collectGrantedTags().filter((t) => t.toLowerCase().includes(q.toLowerCase()) && !current.has(t));
+      if (!hits.length) { dropdown.hidden = true; return; }
+      dropdown.innerHTML = hits.map((t) => `<li class="rtb-option">${escHtml(t)}</li>`).join("");
+      dropdown.hidden = false;
+      dropdown.querySelectorAll(".rtb-option").forEach((li) => {
+        li.addEventListener("mousedown", (e) => {
+          e.preventDefault();
+          addTag(li.textContent);
+          input.value = "";
+          dropdown.hidden = true;
+        });
       });
     };
 
-    buildList("");
-    search.addEventListener("input", () => buildList(search.value));
-    search.addEventListener("keydown", (e) => {
-      if (e.key !== "Enter" || !search.value.trim()) return;
-      onSelect(search.value.trim());
-      drop.remove();
+    input.addEventListener("input", () => showDropdown(input.value.trim()));
+    input.addEventListener("blur",  () => setTimeout(() => { dropdown.hidden = true; }, 150));
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        const first = dropdown.querySelector(".rtb-option");
+        if (!dropdown.hidden && first) { addTag(first.textContent); input.value = ""; dropdown.hidden = true; }
+        else if (input.value.trim()) { addTag(input.value.trim()); input.value = ""; dropdown.hidden = true; }
+      } else if (e.key === "Escape") {
+        dropdown.hidden = true;
+      }
     });
-    newRow.addEventListener("click", () => {
-      if (search.value.trim()) onSelect(search.value.trim());
-      drop.remove();
-    });
 
-    drop.append(search, list, newRow);
-    document.body.appendChild(drop);
+    initialTags.forEach(addTag);
 
-    const rect = anchorEl.getBoundingClientRect();
-    drop.style.top  = `${rect.bottom + 4}px`;
-    drop.style.left = `${rect.left}px`;
-
-    const close = (e) => { if (!drop.contains(e.target) && e.target !== anchorEl) { drop.remove(); document.removeEventListener("pointerdown", close); } };
-    setTimeout(() => document.addEventListener("pointerdown", close), 0);
-    search.focus();
+    box.readTags = () => [...tagsSpan.querySelectorAll(".rtb-tag[data-tag]")].map((s) => s.dataset.tag);
+    return box;
   }
 
   // Inline editor for an existing goal card
@@ -432,10 +423,9 @@
         <div class="ins-skill-header">
           <span class="ins-skill-title req">Requirements</span>
           <button class="btn btn-ghost ge-add-req">+ skill</button>
-          <button class="btn btn-ghost ge-add-tag-req">+ tag</button>
         </div>
         <div class="ge-reqs"></div>
-        <div class="ge-tag-reqs"></div>
+        <div class="ge-tag-reqs-wrap"></div>
       </div>
       <div class="ins-skill-section ins-skill-section--grant">
         <div class="ins-skill-header">
@@ -452,15 +442,12 @@
       </div>`;
 
     const reqsContainer  = form.querySelector(".ge-reqs");
-    const tagReqsWrap    = form.querySelector(".ge-tag-reqs");
     const grantsWrap     = form.querySelector(".ge-grants");
     const tagGrantsWrap  = form.querySelector(".ge-tag-grants");
+    const tagBox         = makeTagReqBox(normalizeReqs(goal.reqs).tags ?? []);
+    form.querySelector(".ge-tag-reqs-wrap").appendChild(tagBox);
 
-    // Populate existing skill reqs
     Object.entries(normalizeReqs(goal.reqs).skills ?? {}).forEach(([sk, lvl]) => appendReqRow(reqsContainer, sk, lvl));
-    // Populate existing tag reqs
-    (normalizeReqs(goal.reqs).tags ?? []).forEach((t) => appendTagReqPill(tagReqsWrap, t));
-    // Populate existing grants
     const existingGrants = goal.grants ?? {};
     Object.entries(existingGrants).forEach(([k, v]) => {
       if (typeof v === "number") grantsWrap.appendChild(makeSkillPill(k, v, "grant"));
@@ -468,9 +455,6 @@
     });
 
     form.querySelector(".ge-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
-    form.querySelector(".ge-add-tag-req").addEventListener("click", (e) => {
-      openTagPicker(e.currentTarget, (tag) => appendTagReqPill(tagReqsWrap, tag));
-    });
     form.querySelector(".ge-add-grant").addEventListener("click", () => grantsWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
     form.querySelector(".ge-add-tag-grant").addEventListener("click", () => appendTagGrantPill(tagGrantsWrap, ""));
 
@@ -484,10 +468,7 @@
         const lvl = parseInt(row.querySelector(".ge-req-level").value, 10);
         if (sk && lvl > 1) reqs.skills[sk] = lvl;
       });
-      tagReqsWrap.querySelectorAll(".ge-tag-req-pill").forEach((p) => {
-        const v = p.querySelector(".ge-tag-req-input")?.value.trim();
-        if (v) reqs.tags.push(v);
-      });
+      reqs.tags = tagBox.readTags();
       const grants = readSkillPills(grantsWrap);
       tagGrantsWrap.querySelectorAll(".ins-tag-pill").forEach((p) => {
         const v = p.querySelector(".ins-tag-input")?.value.trim();
@@ -516,10 +497,9 @@
         <div class="ins-skill-header">
           <span class="ins-skill-title req">Requirements</span>
           <button class="btn btn-ghost cg-add-req">+ skill</button>
-          <button class="btn btn-ghost cg-add-tag-req">+ tag</button>
         </div>
         <div class="cg-reqs"></div>
-        <div class="cg-tag-reqs"></div>
+        <div class="cg-tag-reqs-wrap"></div>
       </div>
       <div class="ins-skill-section ins-skill-section--grant">
         <div class="ins-skill-header">
@@ -536,14 +516,12 @@
       </div>`;
 
     const reqsContainer = form.querySelector(".cg-reqs");
-    const tagReqsWrap   = form.querySelector(".cg-tag-reqs");
     const grantsWrap    = form.querySelector(".cg-grants");
     const tagGrantsWrap = form.querySelector(".cg-tag-grants");
+    const tagBox        = makeTagReqBox([]);
+    form.querySelector(".cg-tag-reqs-wrap").appendChild(tagBox);
 
     form.querySelector(".cg-add-req").addEventListener("click", () => appendReqRow(reqsContainer));
-    form.querySelector(".cg-add-tag-req").addEventListener("click", (e) => {
-      openTagPicker(e.currentTarget, (tag) => appendTagReqPill(tagReqsWrap, tag));
-    });
     form.querySelector(".cg-add-grant").addEventListener("click", () => grantsWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
     form.querySelector(".cg-add-tag-grant").addEventListener("click", () => appendTagGrantPill(tagGrantsWrap, ""));
 
@@ -557,10 +535,7 @@
         const lvl = parseInt(row.querySelector(".ge-req-level").value, 10);
         if (sk && lvl > 1) reqs.skills[sk] = lvl;
       });
-      tagReqsWrap.querySelectorAll(".ge-tag-req-pill").forEach((p) => {
-        const v = p.querySelector(".ge-tag-req-input")?.value.trim();
-        if (v) reqs.tags.push(v);
-      });
+      reqs.tags = tagBox.readTags();
       const grants = readSkillPills(grantsWrap);
       tagGrantsWrap.querySelectorAll(".ins-tag-pill").forEach((p) => {
         const v = p.querySelector(".ins-tag-input")?.value.trim();
@@ -585,18 +560,6 @@
       <button class="btn btn-ghost ge-req-rm" style="font-size:var(--fs-xs);padding:1px var(--sp-q)">✕</button>`;
     row.querySelector(".ge-req-rm").addEventListener("click", () => row.remove());
     container.appendChild(row);
-  }
-
-  function appendTagReqPill(container, tag) {
-    const pill = document.createElement("span");
-    pill.className = "ins-tag-pill ge-tag-req-pill";
-    const inp = document.createElement("input");
-    inp.type = "text"; inp.className = "ins-tag-input ge-tag-req-input"; inp.placeholder = "tag"; inp.value = tag ?? "";
-    const rm = document.createElement("button");
-    rm.className = "btn btn-ghost ins-pill-rm"; rm.textContent = "✕";
-    rm.addEventListener("click", () => pill.remove());
-    pill.append(inp, rm);
-    container.appendChild(pill);
   }
 
   function appendTagGrantPill(container, tag) {
@@ -908,10 +871,9 @@
           <div class="ins-skill-header">
             <span class="ins-skill-title req">Requirements</span>
             <button class="btn btn-ghost ins-add-req">+ skill</button>
-            <button class="btn btn-ghost ins-add-tag-req">+ tag</button>
           </div>
           <div class="ins-skill-pills ins-reqs"></div>
-          <div class="ins-tag-reqs"></div>
+          <div class="ins-tag-reqs-wrap"></div>
         </div>
         <div class="ins-skill-section ins-skill-section--grant">
           <div class="ins-skill-header">
@@ -927,14 +889,12 @@
           <button class="btn btn-ghost ins-cancel">Cancel</button>
         </div>`;
 
-      const reqWrap       = li.querySelector(".ins-reqs");
-      const tagReqWrap    = li.querySelector(".ins-tag-reqs");
-      const grantWrap     = li.querySelector(".ins-grants");
+      const reqWrap   = li.querySelector(".ins-reqs");
+      const grantWrap = li.querySelector(".ins-grants");
+      const tagBox    = makeTagReqBox([]);
+      li.querySelector(".ins-tag-reqs-wrap").appendChild(tagBox);
 
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
-      li.querySelector(".ins-add-tag-req").addEventListener("click", (e) => {
-        openTagPicker(e.currentTarget, (tag) => appendTagReqPill(tagReqWrap, tag));
-      });
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
       li.querySelector(".ins-add-tag-grant").addEventListener("click", () => {
         const tagWrap = li.querySelector(".ins-tag-grants");
@@ -961,16 +921,11 @@
           });
           return g;
         })();
-        const tagReqs = [];
-        li.querySelectorAll(".ins-tag-reqs .ge-tag-req-pill").forEach((p) => {
-          const v = p.querySelector(".ge-tag-req-input")?.value.trim();
-          if (v) tagReqs.push(v);
-        });
         const step = {
           id:         `custom-${Date.now()}`,
           label,
           detail:     li.querySelector(".ins-detail").value.trim(),
-          reqs:       { skills: readSkillPills(reqWrap), tags: tagReqs },
+          reqs:       { skills: readSkillPills(reqWrap), tags: tagBox.readTags() },
           grants,
           _custom:    true,
           _goalLabel: anchorStep?._goalLabel ?? "",
