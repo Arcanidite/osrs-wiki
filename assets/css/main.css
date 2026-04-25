@@ -646,11 +646,20 @@ body {
   display: flex; align-items: center; justify-content: center; position: relative;
   overflow: visible;
 }
-.loadout-alts {
-  position: absolute; bottom: -22px; left: 0; display: flex; gap: 2px; z-index: 5;
+.loadout-edit-cell:hover .loadout-cell-edit,
+.loadout-edit-cell:hover .loadout-cell-clear { opacity: 1; pointer-events: auto; }
+.loadout-cell-edit, .loadout-cell-clear {
+  position: absolute; opacity: 0; pointer-events: none; transition: opacity 0.1s;
+  font-size: 0.6rem; padding: 0 2px; line-height: 1.2;
+  background: rgba(0,0,0,0.75); color: #fff; border: none; cursor: pointer; border-radius: 2px;
 }
-.loadout-alt-dot { cursor: pointer; opacity: 0.6; }
-.loadout-alt-dot:hover { opacity: 1; }
+.loadout-cell-edit { top: 1px; right: 1px; }
+.loadout-cell-clear { bottom: 1px; right: 1px; }
+.loadout-cell-picker {
+  position: absolute; top: 100%; left: 0; z-index: 20;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: var(--sp-q); min-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 .loadout-actions { display: flex; gap: var(--sp-h); }
 
 /* ── Loadout lightbox ────────────────────────────────────────────────────── */

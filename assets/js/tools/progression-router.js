@@ -1920,21 +1920,60 @@
 
   // ── Loadout analysis ───────────────────────────────────────────────────────
 
-  // Mean RGB fingerprint for a 36×32 RGBA pixel buffer
-  function meanRGB(data) {
-    let r = 0, g = 0, b = 0, n = 0;
-    for (let i = 0; i < data.length; i += 4) {
-      if (data[i + 3] < 16) continue; // skip near-transparent
-      r += data[i]; g += data[i + 1]; b += data[i + 2]; n++;
+  // Thumbnail dimensions for fingerprinting — small enough to be fast, large
+  // enough to preserve spatial structure (colour layout, not just mean).
+  const FP_W = 9, FP_H = 8;
+  const SLOT_W = 36, SLOT_H = 32, SLOT_COLS = 4, SLOT_ROWS = 7;
+
+  // Downsample a full-res RGBA Uint8ClampedArray (srcW×srcH) to FP_W×FP_H
+  // by averaging blocks. Returns Float32Array length FP_W*FP_H*3 (rgb only).
+  function downsample(data, srcW, srcH) {
+    const out = new Float32Array(FP_W * FP_H * 3);
+    const bw = srcW / FP_W, bh = srcH / FP_H;
+    for (let ty = 0; ty < FP_H; ty++) {
+      for (let tx = 0; tx < FP_W; tx++) {
+        let r = 0, g = 0, b = 0, n = 0;
+        const x0 = Math.floor(tx * bw), x1 = Math.floor((tx + 1) * bw);
+        const y0 = Math.floor(ty * bh), y1 = Math.floor((ty + 1) * bh);
+        for (let sy = y0; sy < y1; sy++) {
+          for (let sx = x0; sx < x1; sx++) {
+            const i = (sy * srcW + sx) * 4;
+            if (data[i + 3] < 16) continue; // skip transparent
+            r += data[i]; g += data[i + 1]; b += data[i + 2]; n++;
+          }
+        }
+        const base = (ty * FP_W + tx) * 3;
+        if (n) { out[base] = r / n; out[base + 1] = g / n; out[base + 2] = b / n; }
+      }
     }
-    return n ? [r / n, g / n, b / n] : [0, 0, 0];
+    return out;
   }
 
-  function rgbDist([r1, g1, b1], [r2, g2, b2]) {
-    return Math.sqrt((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2);
+  // Sum of squared differences between two FP_W×FP_H thumbnails.
+  // Pixels where the sprite thumbnail is all-zero (transparent block) are skipped.
+  function ssd(a, b) {
+    let s = 0, n = 0;
+    for (let i = 0; i < a.length; i += 3) {
+      if (b[i] === 0 && b[i + 1] === 0 && b[i + 2] === 0) continue; // transparent block
+      const dr = a[i] - b[i], dg = a[i + 1] - b[i + 1], db = a[i + 2] - b[i + 2];
+      s += dr * dr + dg * dg + db * db; n++;
+    }
+    return n ? s / n : Infinity; // normalise by opaque pixel count
   }
 
-  // Async: build {id → [r,g,b]} from localStorage data URLs via ImageBitmap
+  // Returns true if the slot region is essentially empty (inventory background).
+  // OSRS inventory bg is ~#3b3023 — dark brownish. Accept a ±30 per-channel window.
+  function isSlotEmpty(data) {
+    let matches = 0, total = 0;
+    for (let i = 0; i < data.length; i += 4) {
+      if (data[i + 3] < 16) continue;
+      total++;
+      if (data[i] < 90 && data[i + 1] < 70 && data[i + 2] < 55) matches++;
+    }
+    return total === 0 || matches / total > 0.72;
+  }
+
+  // Build {id → Float32Array(FP_W*FP_H*3)} fingerprint map from localStorage data URLs.
   async function buildFingerprintsAsync() {
     if (window._atlasFpPromise) return window._atlasFpPromise;
     window._atlasFpPromise = (async () => {
@@ -1946,8 +1985,7 @@
           spriteIds.push(k.slice("osrs-sprite-".length));
         }
       }
-      // Process sequentially to avoid thundering-herd on ImageBitmap decode
-      const oc  = new OffscreenCanvas(36, 32);
+      const oc  = new OffscreenCanvas(SLOT_W, SLOT_H);
       const ctx = oc.getContext("2d");
       for (const id of spriteIds) {
         const url = localStorage.getItem(`osrs-sprite-${id}`);
@@ -1955,38 +1993,86 @@
         try {
           const blob = await fetch(url).then((r) => r.blob());
           const bmp  = await createImageBitmap(blob);
-          ctx.clearRect(0, 0, 36, 32);
+          ctx.clearRect(0, 0, SLOT_W, SLOT_H);
           ctx.drawImage(bmp, 0, 0);
           bmp.close();
-          fp[id] = meanRGB(ctx.getImageData(0, 0, 36, 32).data);
-        } catch { /* skip corrupt entry */ }
+          const pixels = ctx.getImageData(0, 0, SLOT_W, SLOT_H).data;
+          fp[id] = downsample(pixels, SLOT_W, SLOT_H);
+        } catch { /* skip */ }
       }
       return fp;
     })();
     return window._atlasFpPromise;
   }
 
-  // Extract slot image data from canvas at OSRS inventory grid position
-  // cols=4, rows=7, slot=36×32, gap=2px each side → stride=38×34
-  const SLOT_W = 36, SLOT_H = 32, SLOT_COLS = 4, SLOT_ROWS = 7;
+  // Detect OSRS inventory grid origin and stride in a pasted screenshot.
+  // Scans horizontal/vertical projections for the slot-border colour (#494034).
+  // Falls back to uniform division if detection fails.
+  function detectGrid(ctx, W, H) {
+    const fullData = ctx.getImageData(0, 0, W, H).data;
+    // Count "slot background" pixels per row and column
+    const colScore = new Float32Array(W);
+    const rowScore = new Float32Array(H);
+    for (let y = 0; y < H; y++) {
+      for (let x = 0; x < W; x++) {
+        const i = (y * W + x) * 4;
+        // slot bg: dark brown, R<100 G<80 B<65
+        if (fullData[i] < 100 && fullData[i + 1] < 80 && fullData[i + 2] < 65) {
+          colScore[x]++; rowScore[y]++;
+        }
+      }
+    }
+    // Smooth and find valley centres (slot interiors are dark, borders darker still —
+    // actually slot centres score high, so find columns with locally max score spaced ~strideX apart)
+    const estStrideX = W / SLOT_COLS, estStrideY = H / SLOT_ROWS;
+    // Use projection peaks to find slot centres
+    const centresX = findPeaks(colScore, SLOT_COLS, estStrideX);
+    const centresY = findPeaks(rowScore, SLOT_ROWS, estStrideY);
+    if (centresX.length === SLOT_COLS && centresY.length === SLOT_ROWS) {
+      return { centresX, centresY };
+    }
+    // Fallback: uniform
+    return {
+      centresX: Array.from({ length: SLOT_COLS }, (_, i) => Math.round(estStrideX * (i + 0.5))),
+      centresY: Array.from({ length: SLOT_ROWS }, (_, i) => Math.round(estStrideY * (i + 0.5))),
+    };
+  }
+
+  // Find N evenly-spaced peaks in a 1-D score array with expected spacing ~stride.
+  function findPeaks(scores, n, stride) {
+    const len = scores.length;
+    const peaks = [];
+    let start = 0;
+    for (let k = 0; k < n; k++) {
+      const end = Math.min(len, Math.round(start + stride));
+      let best = start, bestVal = -1;
+      for (let i = start; i < end; i++) {
+        if (scores[i] > bestVal) { bestVal = scores[i]; best = i; }
+      }
+      peaks.push(best);
+      start = end;
+    }
+    return peaks;
+  }
 
   function extractSlots(canvas) {
     const ctx = canvas.getContext("2d");
     const W = canvas.width, H = canvas.height;
-    // Auto-detect grid origin: find top-left such that slots fill image
-    // Simple: assume image IS the inventory grid (user crops to it)
-    const strideX = Math.floor(W / SLOT_COLS);
-    const strideY = Math.floor(H / SLOT_ROWS);
-    const slots = [];
-    for (let row = 0; row < SLOT_ROWS; row++) {
-      for (let col = 0; col < SLOT_COLS; col++) {
-        const x = col * strideX + Math.floor((strideX - SLOT_W) / 2);
-        const y = row * strideY + Math.floor((strideY - SLOT_H) / 2);
-        slots.push({ slot: row * SLOT_COLS + col, data: ctx.getImageData(Math.max(0, x), Math.max(0, y), SLOT_W, SLOT_H).data });
-      }
-    }
-    return slots;
+    const { centresX, centresY } = detectGrid(ctx, W, H);
+    const hw = Math.floor(SLOT_W / 2), hh = Math.floor(SLOT_H / 2);
+    return centresX.flatMap((cx, col) =>
+      centresY.map((cy, row) => {
+        const x = Math.max(0, Math.min(W - SLOT_W, cx - hw));
+        const y = Math.max(0, Math.min(H - SLOT_H, cy - hh));
+        return { slot: row * SLOT_COLS + col, data: ctx.getImageData(x, y, SLOT_W, SLOT_H).data };
+      })
+    );
   }
+
+  // SSD_THRESHOLD: mean per-pixel SSD below which we accept a match.
+  // Each channel is 0–255, so 255²=65025 max per pixel per channel.
+  // A value of 1800 means ~42/255 average channel deviation — tight enough to reject noise.
+  const SSD_THRESHOLD = 1800;
 
   async function analyzeLoadoutImage(canvas) {
     const fp = await buildFingerprintsAsync();
@@ -1994,18 +2080,18 @@
     if (!fpEntries.length) return [];
     const slots = extractSlots(canvas);
     const atlas = window.SpriteAtlas;
-    return slots.map(({ slot, data }) => {
-      const slotFp = meanRGB(data);
-      const isBlank = slotFp[0] < 8 && slotFp[1] < 8 && slotFp[2] < 8;
-      if (isBlank) return { slot, candidates: [] };
+    return slots.flatMap(({ slot, data }) => {
+      if (isSlotEmpty(data)) return [];
+      const slotThumb = downsample(data, SLOT_W, SLOT_H);
       const ranked = fpEntries
-        .map(([id, f]) => ({ id: +id, dist: rgbDist(slotFp, f) }))
-        .sort((a, b) => a.dist - b.dist)
-        .slice(0, 3)
-        .map(({ id, dist }) => ({ id, dist, entry: atlas?.entry(id) }))
+        .map(([id, thumb]) => ({ id: +id, score: ssd(slotThumb, thumb) }))
+        .filter((c) => c.score < SSD_THRESHOLD)
+        .sort((a, b) => a.score - b.score)
+        .slice(0, 5)
+        .map(({ id, score }) => ({ id, score, entry: atlas?.entry(id) }))
         .filter((c) => c.entry);
-      return { slot, candidates: ranked };
-    }).filter((s) => s.candidates.length);
+      return ranked.length ? [{ slot, candidates: ranked }] : [];
+    });
   }
 
   function renderLoadoutLightbox(loadoutRows) {
@@ -2077,38 +2163,79 @@
       pendingLoadout = [];
       slotGrid.innerHTML = "";
       slotGrid.hidden = false;
+
+      const setSlot = (slot, itemId, name) => {
+        const idx = pendingLoadout.findIndex((r) => r.slot === slot);
+        if (idx >= 0) pendingLoadout[idx] = { slot, itemId, name };
+        else pendingLoadout.push({ slot, itemId, name });
+      };
+      const clearSlot = (slot) => {
+        const idx = pendingLoadout.findIndex((r) => r.slot === slot);
+        if (idx >= 0) pendingLoadout.splice(idx, 1);
+      };
+
       for (let slot = 0; slot < SLOT_COLS * SLOT_ROWS; slot++) {
         const res  = results.find((r) => r.slot === slot);
         const cell = document.createElement("div");
         cell.className = "loadout-edit-cell";
         cell.dataset.slot = slot;
+
+        const icon = document.createElement("span");
+        icon.className = "ins-item-icon";
+
+        const editBtn = document.createElement("button");
+        editBtn.className = "btn btn-ghost loadout-cell-edit";
+        editBtn.textContent = "✎";
+        editBtn.title = "Set item";
+
+        const clearBtn = document.createElement("button");
+        clearBtn.className = "btn btn-ghost loadout-cell-clear";
+        clearBtn.textContent = "✕";
+        clearBtn.title = "Clear slot";
+
         if (res?.candidates?.length) {
           const top = res.candidates[0];
-          const icon = document.createElement("span");
-          icon.className = "ins-item-icon";
           applySpriteBg(icon, top.id);
-          cell.appendChild(icon);
           cell.title = top.entry?.name ?? String(top.id);
-          pendingLoadout.push({ slot, itemId: top.id, name: top.entry?.name ?? String(top.id) });
-          if (res.candidates.length > 1) {
-            const alts = document.createElement("div");
-            alts.className = "loadout-alts";
-            res.candidates.slice(1).forEach((c) => {
-              const alt = document.createElement("span");
-              alt.className = "loadout-alt-dot ins-item-icon";
-              applySpriteBg(alt, c.id);
-              alt.title = c.entry?.name ?? String(c.id);
-              alt.addEventListener("click", () => {
-                const idx = pendingLoadout.findIndex((r) => r.slot === slot);
-                if (idx >= 0) pendingLoadout[idx] = { slot, itemId: c.id, name: c.entry?.name ?? String(c.id) };
-                applySpriteBg(icon, c.id);
-                cell.title = c.entry?.name ?? String(c.id);
-              });
-              alts.appendChild(alt);
-            });
-            cell.appendChild(alts);
-          }
+          setSlot(slot, top.id, top.entry?.name ?? String(top.id));
         }
+
+        clearBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          clearSlot(slot);
+          icon.style.background = "";
+          icon.style.width = "";
+          icon.style.height = "";
+          cell.title = "";
+          picker?.remove(); picker = null;
+        });
+
+        let picker = null;
+        editBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          if (picker) { picker.remove(); picker = null; return; }
+          picker = document.createElement("div");
+          picker.className = "loadout-cell-picker";
+          const pb = makeItemPickerBox([], "req");
+          picker.appendChild(pb);
+          // Intercept pick: apply to cell and close picker
+          const origReadItems = pb.readItems.bind(pb);
+          const pillsEl = pb.querySelector(".rtb-tags");
+          const observer = new MutationObserver(() => {
+            const items = origReadItems();
+            if (!items.length) return;
+            const { id, name } = items[0];
+            setSlot(slot, id, name);
+            applySpriteBg(icon, id);
+            cell.title = name;
+            picker.remove(); picker = null;
+          });
+          observer.observe(pillsEl, { childList: true });
+          cell.appendChild(picker);
+          pb.querySelector(".rtb-input")?.focus();
+        });
+
+        cell.append(icon, editBtn, clearBtn);
         slotGrid.appendChild(cell);
       }
       dropzone.textContent = "Replace image";

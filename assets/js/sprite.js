@@ -88,6 +88,7 @@
         try { localStorage.setItem(LS_PFX + id, dataUrl); } catch { /* quota */ }
         _cssCache.delete(+id);
         window.dispatchEvent(new CustomEvent("osrs-sprite-ready", { detail: { id: +id, dataUrl } }));
+        window._atlasFpPromise = null; // invalidate fingerprint cache on new store
         if (--remaining === 0) { worker.terminate(); }
       };
       worker.postMessage({ bitmap, entries: uncached }, [bitmap]);
