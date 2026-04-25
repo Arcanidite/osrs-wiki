@@ -1757,7 +1757,9 @@
         b.className = "step-badge goal-lbl"; b.textContent = "goal";
         meta.appendChild(b);
       } else if (s._bankType === "custom-goal") {
-        const tags = s.tags ?? [];
+        const tags = (s.tags ?? []).length
+          ? s.tags
+          : Object.entries(s.grants ?? {}).filter(([, v]) => v === true).map(([k]) => k);
         if (tags.length) {
           tags.forEach((t) => {
             const b = document.createElement("span");
