@@ -1298,8 +1298,8 @@
       const grantSkills = Object.keys(normalizeReqs(step.grants).skills ?? {}).join(" ");
       const grantAttr   = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
       const focalAttr   = isFocal ? ' data-focal="1"' : "";
-      rows.push(`<li class="route-step${stepDone ? " step-done" : ""}${step._capstone ? " step-capstone" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="true"${grantAttr}${focalAttr}>
-        <span class="step-drag-handle" title="Drag to reorder">⠿</span>
+      rows.push(`<li class="route-step${stepDone ? " step-done" : ""}${step._capstone ? " step-capstone" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="${step._capstone ? "false" : "true"}"${grantAttr}${focalAttr}>
+        <span class="step-drag-handle" title="Drag to reorder" ${step._capstone ? 'style="visibility:hidden"' : ""}>⠿</span>
         <label class="step-num-wrap">
           <input type="checkbox" class="step-done-cb" data-step-id="${escHtml(step.id)}"${isQuest ? ' data-is-quest="1"' : ""}${stepDone ? " checked" : ""}>
           <span class="step-num" data-valid="${valid}">${i + 1}</span>
@@ -1475,6 +1475,7 @@
         e.preventDefault();
         const dropIdx = +li.dataset.stepIdx;
         if (dragIdx < 0 || dragIdx === dropIdx) { dragIdx = -1; return; }
+        if (currentPath[dragIdx]?._capstone || currentPath[dropIdx]?._capstone) { dragIdx = -1; return; }
         const trial = [...currentPath];
         const [moved] = trial.splice(dragIdx, 1);
         trial.splice(dropIdx, 0, moved);
