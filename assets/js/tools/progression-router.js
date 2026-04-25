@@ -2184,6 +2184,13 @@
           setSlot(slot, top.id, top.entry?.name ?? String(top.id));
         }
 
+        let picker = null;
+        let pickerObserver = null;
+        const closePicker = () => {
+          pickerObserver?.disconnect(); pickerObserver = null;
+          picker?.remove(); picker = null;
+        };
+
         clearBtn.addEventListener("click", (e) => {
           e.stopPropagation();
           clearSlot(slot);
@@ -2191,30 +2198,27 @@
           icon.style.width = "";
           icon.style.height = "";
           cell.title = "";
-          picker?.remove(); picker = null;
+          closePicker();
         });
 
-        let picker = null;
         editBtn.addEventListener("click", (e) => {
           e.stopPropagation();
-          if (picker) { picker.remove(); picker = null; return; }
+          if (picker) { closePicker(); return; }
           picker = document.createElement("div");
           picker.className = "loadout-cell-picker";
           const pb = makeItemPickerBox([], "req");
           picker.appendChild(pb);
-          // Intercept pick: apply to cell and close picker
-          const origReadItems = pb.readItems.bind(pb);
           const pillsEl = pb.querySelector(".rtb-tags");
-          const observer = new MutationObserver(() => {
-            const items = origReadItems();
+          pickerObserver = new MutationObserver(() => {
+            const items = pb.readItems();
             if (!items.length) return;
             const { id, name } = items[0];
             setSlot(slot, id, name);
             applySpriteBg(icon, id);
             cell.title = name;
-            picker.remove(); picker = null;
+            closePicker();
           });
-          observer.observe(pillsEl, { childList: true });
+          pickerObserver.observe(pillsEl, { childList: true });
           cell.appendChild(picker);
           pb.querySelector(".rtb-input")?.focus();
         });
