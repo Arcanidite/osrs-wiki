@@ -379,7 +379,7 @@
       .sort((a, b) => b.score - a.score || (b.serial ? 1 : 0) - (a.serial ? 1 : 0));
   }
 
-  function highlightTag(tag, indices, serial) {
+  function highlightTag(tag, indices, serial, opts = { maxGap: 1 }) {
     const esc = (c) => c === "&" ? "&amp;" : c === "<" ? "&lt;" : c === ">" ? "&gt;" : c === '"' ? "&quot;" : c;
     if (serial && indices.length) {
       const pre  = [...tag.slice(0, indices[0])].map(esc).join("");
@@ -387,8 +387,39 @@
       const post = [...tag.slice(indices[indices.length - 1] + 1)].map(esc).join("");
       return `${pre}<mark class="rtb-hl-serial">${mid}</mark>${post}`;
     }
-    const set = new Set(indices);
-    return [...tag].map((c, i) => set.has(i) ? `<mark class="rtb-hl-fuzzy">${esc(c)}</mark>` : esc(c)).join("");
+    if (!indices.length) return [...tag].map(esc).join("");
+    const chars = [...tag];
+    const set   = new Set(indices);
+    const { maxGap = 1 } = opts;
+    // Build contiguous runs: extend run across gaps of only space chars (≤ maxGap).
+    // Runs shorter than 2 matched chars are discarded as noise.
+    const runs = [];
+    let run = null;
+    for (let i = 0; i < chars.length; i++) {
+      if (set.has(i)) {
+        if (!run) run = { start: i, end: i, matched: 1 };
+        else { run.end = i; run.matched++; }
+      } else if (run) {
+        const gap    = i - run.end;
+        const onlySpace = chars.slice(run.end + 1, i + 1).every((c) => c === " ");
+        if (gap <= maxGap && onlySpace) {
+          // space-only gap within tolerance — extend run
+        } else {
+          if (run.matched >= 2) runs.push({ start: run.start, end: run.end });
+          run = null;
+        }
+      }
+    }
+    if (run && run.matched >= 2) runs.push({ start: run.start, end: run.end });
+    if (!runs.length) return chars.map(esc).join("");
+    let out = "", pos = 0;
+    for (const { start, end } of runs) {
+      out += chars.slice(pos, start).map(esc).join("");
+      out += `<mark class="rtb-hl-fuzzy">${chars.slice(start, end + 1).map(esc).join("")}</mark>`;
+      pos = end + 1;
+    }
+    out += chars.slice(pos).map(esc).join("");
+    return out;
   }
 
   function makeTagReqBox(initialTags) {
@@ -1809,6 +1840,7 @@
           : { id: entry.id, label: entry.label, reqs: normalizeReqs(entry.reqs).skills ?? {}, terminal: entry.id };
         goalQueue.push(qEntry);
         store.saveGoals(goalQueue);
+        mergeTags(Object.entries(qEntry.grants ?? {}).filter(([, v]) => v === true).map(([k]) => k));
         renderGoalQueue();
         renderStepBank();
         recompute();

@@ -425,6 +425,22 @@ The inline insert form (`buildStepForm`) should use the same card/pill UI as goa
 
 ---
 
+## [router:step-bank-tag-recompute] Step bank inserts don't update tag pool until page refresh
+
+When a step bank item is added to the route, its granted tags are not immediately available in the tag picker / reuse panel — they appear only after a full page reload re-seeds `knownTags` from localStorage. Every step bank add (and any other mutation that introduces new grants) must call `collectGrantedTags()` (or equivalent tag-pool rebuild) and re-render the tag reuse panel immediately, without requiring a reload.
+
+**Status:** TODO
+
+---
+
+## [router:fuzzy-match-contiguous] Fuzzy match highlights contiguous spans only; configurable gap allowance
+
+The bank search fuzzy highlighter currently matches individual characters scattered across the full text (including spaces), producing visually misleading highlights like `tr<mark>a</mark>in-hun<mark>t</mark><mark>e</mark>r-4<mark>3</mark>`. Matches must be **contiguous character runs** — a sequence of consecutive matched characters emits a single `<mark>` span. A configurable `maxGap` (default `1`) allows up to N space characters between two runs before they are treated as separate spans (bridging broken compound words). Non-space gaps of any size terminate the current span. The pattern should use an options object (`{ maxGap: 1 }`) so future callers can adjust tolerance without touching match logic.
+
+**Status:** TODO
+
+---
+
 ## Completed
 
 - `[router:step-grid-layout]` — `.route-step` grid `2rem 1fr auto auto`; `step-actions` 4th column for remove/edit buttons ✓ (pending commit)
