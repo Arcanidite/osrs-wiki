@@ -681,8 +681,8 @@
 
     function showForm() {
       li.innerHTML = `
-        <div class="goal-edit-row">
-          <input class="ins-label" type="text" placeholder="Step label">
+        <div class="ins-step-body">
+          <input class="ins-label" type="text" placeholder="Step label…">
           <input class="ins-detail" type="text" placeholder="Detail (optional)">
         </div>
         <div class="ins-skill-section ins-skill-section--req">

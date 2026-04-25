@@ -349,17 +349,13 @@ Goal queue cards need a grants section (same skill/tag pill UI as step inserts).
 
 ## [router:insert-cancel-no-parent] Insert card cancel button throws NoModificationAllowedError
 
-`ins-card-cancel` click handler calls `onCancel()` which does `row.outerHTML = insertRowHtml(afterIdx)` — but at that point `row` is the `.route-insert-row` that was already `replaceWith(form)`, so it has no parent. Fix: the cancel handler should call `li.replaceWith(originalRow)` where `originalRow` is the original `.route-insert-row` element captured before replacement, or reconstruct and insert the insert row back via the parent reference captured at form-build time.
-
-**Status:** TODO
+**Status:** DONE ✓ — `onCancel` now creates a fresh `<li>` and calls `form.replaceWith(fresh)` instead of mutating the detached `row.outerHTML` (`168f20f`)
 
 ---
 
-## [router:remove-calculate-reset] Remove Calculate Route and Reset buttons; auto-route on goal queue change
+## [router:remove-calculate-reset] Remove Calculate Route and Reset buttons
 
-`Calculate Route` manually triggers `recompute()` — but recompute already fires on every goal queue mutation. The button is redundant and overrides the current tab's route state. `Reset` is also a footgun. Remove both buttons from the HTML and JS. Goal queue changes are the only trigger for recompute; the tab system handles isolation.
-
-**Status:** TODO
+**Status:** DONE ✓ — buttons removed from HTML, `els.calcBtn`/`els.resetBtn` and their handlers removed from JS (`168f20f`)
 
 ---
 
