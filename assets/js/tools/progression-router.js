@@ -688,9 +688,9 @@
     return true;
   }
 
-  function isUseful(step, skills, target, terminal, grantedTags) {
+  function isUseful(step, skills, target, terminal, grantedTags, neededGates) {
     if (terminal && step.id === terminal) return true;
-    if ((step.tags ?? []).includes("unlock")) return true;
+    if (neededGates?.has(step.id)) return true;
     const targetSkills = target.skills ?? target;
     const targetTags   = new Set(target.tags ?? []);
     if ([...targetTags].some((t) => !grantedTags.has(t) && (step.grants ?? {})[t] === true)) return true;
@@ -741,13 +741,42 @@
 
     const ctx = () => ({ completedIds, freeSlots: invFree });
 
+    // Quest/unlock steps are only useful if they gate a step we actually need.
+    // Recompute transitively: a gate is needed if it unlocks a needed step or another needed gate.
+    const computeNeededGates = () => {
+      const needed = new Set();
+      const directlyUseful = (s) => {
+        const tSkills = targetSkills;
+        const tTags   = new Set(targetTags);
+        if (terminal && s.id === terminal) return true;
+        if ([...tTags].some((t) => !grantedTags.has(t) && (s.grants ?? {})[t] === true)) return true;
+        return Object.entries(s.grants ?? {}).some(([sk, lvl]) =>
+          (tSkills[sk] ?? 0) > 0 && lvl > (skills[sk] ?? 1) && lvl <= (tSkills[sk] ?? 0)
+        );
+      };
+      let changed = true;
+      while (changed) {
+        changed = false;
+        for (const id of remaining) {
+          const s = steps.find((x) => x.id === id);
+          if (!s) continue;
+          const gate = s.location?.quest_gate;
+          if (gate && !needed.has(gate) && (directlyUseful(s) || needed.has(s.id))) {
+            needed.add(gate); changed = true;
+          }
+        }
+      }
+      return needed;
+    };
+
     const buildHeap = () => {
+      const neededGates = computeNeededGates();
       const heap = new MinHeap();
       for (const id of remaining) {
         const step = steps.find((s) => s.id === id);
         if (!step || !meetsReqs(step.reqs, skills, ctx())) continue;
         if (!locationAccessible(step, completedIds, excluded, completedQuests)) continue;
-        if (!isUseful(step, skills, { skills: targetSkills, tags: targetTags }, terminal, grantedTags)) continue;
+        if (!isUseful(step, skills, { skills: targetSkills, tags: targetTags }, terminal, grantedTags, neededGates)) continue;
         heap.push(step, costFor(step, profile.style));
       }
       return heap;
@@ -826,6 +855,7 @@
       skills: profile.skills, excludeRegions: profile.excludeRegions,
       steps: path, stepNotes: store.stepNotes(),
       pinnedInserts, date: new Date().toLocaleDateString(),
+      focalSteps: [...(planTabs[activeTabIdx]?.focalSteps ?? [])],
     };
     if (activePlanIdx >= 0 && plans[activePlanIdx]) {
       store.updatePlan(activePlanIdx, plan);
@@ -1655,7 +1685,11 @@
     }
     store.applyNotes(plan.stepNotes ?? {});
     currentPath = plan.steps;
-    if (planTabs[activeTabIdx]) { planTabs[activeTabIdx].name = plan.name; planTabs[activeTabIdx].activePlanIdx = activePlanIdx; }
+    if (planTabs[activeTabIdx]) {
+      planTabs[activeTabIdx].name = plan.name;
+      planTabs[activeTabIdx].activePlanIdx = activePlanIdx;
+      planTabs[activeTabIdx].focalSteps = new Set(plan.focalSteps ?? []);
+    }
     renderTabBar();
     renderSteps(plan.steps);
     window._routerLastPath = { path: plan.steps, profile: { skills: plan.skills, style: plan.style }, goals: plan.goals ?? [] };
