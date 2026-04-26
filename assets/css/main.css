@@ -639,7 +639,26 @@ body {
   border-color: var(--gold); background: var(--faint);
 }
 .loadout-slot-grid {
-  display: grid; grid-template-columns: repeat(4, 40px); gap: 4px;
+  display: grid;
+  gap: var(--sp-h);
+  font-size: var(--fs-xs);
+  overflow: hidden;
+  height: fit-content;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 14rem));
+  place-content: center;
+  padding: var(--sp-q);
+}
+.loadout-finding-row {
+  display: grid;
+  text-overflow: ellipsis;
+  gap: var(--sp-h);
+  width: min-content;
+  justify-content: space-between;
+  grid-template-columns: auto 5rem min-content min-content;
+  align-items: start;
+  padding: var(--sp-q);
+  box-shadow: 0 0 0 1px;
+  height: min-content;
 }
 .loadout-edit-cell {
   width: 40px; height: 36px; background: #1a1a1a; border-radius: 3px;

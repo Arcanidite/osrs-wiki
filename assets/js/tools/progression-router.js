@@ -2053,7 +2053,7 @@
           badge.textContent = `${Math.round(score * 100)}%`;
 
           const rmBtn = document.createElement("button");
-          rmBtn.className = "btn btn-ghost ins-pill-rm";
+          rmBtn.className = "btn btn-ghost";
           rmBtn.textContent = "✕";
           rmBtn.addEventListener("click", () => {
             pendingLoadout = pendingLoadout.filter(r => r.itemId !== id);
