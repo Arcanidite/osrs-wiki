@@ -1820,15 +1820,6 @@
   // Shared registry of icon elements waiting for a sprite to load.
   // Map<itemId:number, Set<element>> — drained by one shared listener.
   // Detached elements (dropdown rebuilt) are silently dropped on drain.
-  const _pendingIcons = new Map();  // id → Set<element>
-  window.addEventListener("osrs-sprite-ready", ({ detail: { id, dataUrl } }) => {
-    const set = _pendingIcons.get(id);
-    if (!set) return;
-    const bg = `url('${dataUrl}') no-repeat center / contain`;
-    for (const el of set) { if (el.isConnected) { el.style.background = bg; el.textContent = ""; } }
-    _pendingIcons.delete(id);
-  });
-
   function applySpriteBg(icon, itemId) {
     const a = window.SpriteAtlas;
     if (!a?.ready) return;
@@ -1836,11 +1827,7 @@
     const d  = a.dims(id);
     if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; }
     const bg = a.css(id);
-    if (bg) { icon.style.background = bg; icon.textContent = ""; return; }
-    // Sprite not in cache yet — register for the ready event.
-    let set = _pendingIcons.get(id);
-    if (!set) { set = new Set(); _pendingIcons.set(id, set); }
-    set.add(icon);
+    if (bg) { icon.style.background = bg; }
   }
 
   function makeItemPill(itemId, name, tint) {

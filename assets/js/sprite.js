@@ -22,13 +22,14 @@
   const SS_HIST_PACK = "osrs-hist-pack";
   const LS_PFX     = "osrs-sprite-";   // localStorage key per item: osrs-sprite-{id}
 
-  let _base     = "";
+  let _base        = "";
   let _atlas       = null;   // {id: {x,y,w,h}}
   let _byId        = null;   // {id: packRecord}
   let _byName      = null;   // {"lowercase name": packRecord}
   let _promise     = null;
   let _cssCache    = new Map(); // itemId → css string, in-memory
   let _sheetBitmap = null;      // ImageBitmap of the full spritesheet, for NCC matching
+  let _sheetUrl    = "";        // URL of the spritesheet for CSS background-position
 
   // ── Session cache helpers ──────────────────────────────────────────────────
   function ssGet(key) {
@@ -72,45 +73,20 @@
     return atlas;
   }
 
-  function cropSpritesAsync(atlas, img) {
-    const uncached = Object.entries(atlas).filter(([id]) => !localStorage.getItem(LS_PFX + id));
-    if (!uncached.length) { return; }
-    let remaining = uncached.length;
-    createImageBitmap(img).then((bitmap) => {
-      const src = `
-        self.onmessage = ({ data: { bitmap, entries } }) => {
-          entries.forEach(([id, e]) => {
-            const oc = new OffscreenCanvas(e.w, e.h);
-            oc.getContext("2d").drawImage(bitmap, e.x, e.y, e.w, e.h, 0, 0, e.w, e.h);
-            oc.convertToBlob({ type: "image/png" }).then((blob) => {
-              const fr = new FileReader();
-              fr.onload = () => self.postMessage({ id, dataUrl: fr.result });
-              fr.readAsDataURL(blob);
-            });
-          });
-        };
-      `;
-      const worker = new Worker(URL.createObjectURL(new Blob([src], { type: "text/javascript" })));
-      worker.onmessage = ({ data: { id, dataUrl } }) => {
-        try { localStorage.setItem(LS_PFX + id, dataUrl); } catch { /* quota — css() falls back to _cssCache */ }
-        // Populate in-memory cache so css() works even when localStorage is full.
-        _cssCache.set(+id, `url('${dataUrl}') no-repeat center / contain`);
-        window.dispatchEvent(new CustomEvent("osrs-sprite-ready", { detail: { id: +id, dataUrl } }));
-        window._atlasFpPromise = null;
-        SpriteAtlas.invalidateBuckets();
-        if (--remaining === 0) { worker.terminate(); }
-      };
-      worker.postMessage({ bitmap, entries: uncached }, [bitmap]);
-    });
-  }
+  // cropSpritesAsync removed — css() uses spritesheet background-position directly,
+  // which works as soon as the atlas JSON loads with no Worker or data-URL generation.
 
   function loadSheet(src) {
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      img.crossOrigin = "anonymous";
-      img.onload  = () => resolve(img);
-      img.onerror = reject;
-      img.src = src;
+    // Fetch as blob so _sheetUrl is an in-memory object URL — no repeated network
+    // requests for sprite CSS, and no localStorage/Worker needed for icon display.
+    return fetch(src).then(r => r.blob()).then(blob => {
+      _sheetUrl = URL.createObjectURL(blob);
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload  = () => resolve(img);
+        img.onerror = reject;
+        img.src = _sheetUrl;
+      });
     });
   }
 
@@ -202,6 +178,7 @@
     load(base) {
       if (_promise) return _promise;
       _base = base ?? "";
+      _sheetUrl = _base + SHEET_PATH;
       _promise = Promise.all([
         fetchAtlas(_base + ATLAS_PATH),
         loadSheet(_base + SHEET_PATH),
@@ -214,36 +191,34 @@
           if (rec.slug) m[rec.slug] = rec;
           return m;
         }, {});
+        // Sheet bitmap for NCC matching only — non-blocking, doesn't affect css().
         createImageBitmap(sheet).then(bmp => { _sheetBitmap = bmp; });
-        cropSpritesAsync(atlas, sheet);
+        // Signal that atlas + sheet are ready so pending dropdowns can render.
+        window.dispatchEvent(new CustomEvent("osrs-sprite-ready", { detail: { id: -1, dataUrl: null } }));
       });
       return _promise;
     },
 
     /** Draw item icon onto a 2D canvas context at (dx, dy). */
     draw(ctx, itemId, dx, dy) {
-      if (!_atlas) return;
+      if (!_atlas || !_sheetUrl) return;
       const e = _atlas[itemId] ?? _atlas[String(itemId)];
       if (!e) return;
-      const dataUrl = localStorage.getItem(LS_PFX + itemId);
-      if (!dataUrl) return;
       const img = new Image();
-      img.onload = () => ctx.drawImage(img, dx, dy);
-      img.src = dataUrl;
+      img.onload = () => ctx.drawImage(img, e.x, e.y, e.w, e.h, dx, dy, e.w, e.h);
+      img.src = _sheetUrl;
     },
 
-    /** CSS background for a sized container — data URL from localStorage only, empty string if not yet cached. */
+    /** CSS background for a sprite container sized by dims(). Returns "" until atlas is ready. */
     css(itemId) {
-      if (!_atlas) return "";
+      if (!_atlas || !_sheetUrl) return "";
       const key = +itemId;
       if (_cssCache.has(key)) return _cssCache.get(key);
-      const dataUrl = localStorage.getItem(LS_PFX + key);
-      if (dataUrl) {
-        const val = `url('${dataUrl}') no-repeat center / contain`;
-        _cssCache.set(key, val);
-        return val;
-      }
-      return "";
+      const e = _atlas[key] ?? _atlas[String(key)];
+      if (!e) return "";
+      const val = `url('${_sheetUrl}') ${-e.x}px ${-e.y}px no-repeat`;
+      _cssCache.set(key, val);
+      return val;
     },
 
     /** Sprite dimensions {w, h} from the atlas, or null if not found. */

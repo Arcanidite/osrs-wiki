@@ -947,6 +947,7 @@ mark.rtb-hl-fuzzy { background: #ffb347; }
   display: inline-block;
   flex-shrink: 0;
   image-rendering: pixelated;
+  overflow: hidden;
 }
 .goal-card-reqs {
   font-size: var(--fs-xs);
