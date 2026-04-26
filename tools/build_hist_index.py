@@ -4,13 +4,10 @@ Build the colour-histogram index for screenshot item detection.
 Output: assets/data/cache/items-hist.pack  (OSRP format)
 
 Each record: { "id": N, "hist": [[r,g,b,n], ...] }
-  hist = list of [r,g,b,count] entries for non-background opaque pixels
+  hist = list of [r,g,b,count] entries for opaque sprite pixels (alpha >= 128)
   in the lower portion of the sprite (top STACK_ROW_FRAC excluded).
-  Colours are stored at full 8-bit precision; the JS reader quantises
-  them to 5 bits/channel for bucket lookup.
-
-Background used: OSRS inventory BG [62,53,41] (the standard screenshot colour).
-Items with fewer than MIN_ITEM_PX distinct non-BG pixels are omitted.
+  Colours are quantised to 5 bits/channel for bucket lookup.
+  No background compositing — histograms are BG-agnostic.
 """
 
 import json
@@ -29,39 +26,31 @@ ATLAS       = ROOT / "assets/data/cache/sprites/items-atlas.json"
 SHEET       = ROOT / "assets/data/cache/sprites/items.png"
 OUT         = ROOT / "assets/data/cache/items-hist.pack"
 
-SLOT_W, SLOT_H = 36, 32
-BG             = np.array([62, 53, 41], dtype=np.float32)   # OSRS inventory BG
-BG_DEV_MIN     = 15.0    # pixels closer than this to BG are considered background
-STACK_ROW_FRAC = 0.35    # exclude top fraction of sprite (stack-count text area)
-MIN_ITEM_PX    = 5       # skip sprites with fewer non-BG pixels than this
-
-
-def composite(rgba: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    a   = rgba[:, :, 3:4].astype(np.float32) / 255.0
-    rgb = rgba[:, :, :3].astype(np.float32)
-    return (rgb * a + BG * (1.0 - a)).astype(np.float32), rgba[:, :, 3] >= 16
+SLOT_W, SLOT_H  = 36, 32
+ALPHA_MIN       = 128    # only pixels with alpha >= this are considered item pixels
+STACK_ROW_FRAC  = 0.35   # exclude top fraction of sprite (stack-count text area)
+MIN_ITEM_PX     = 5      # skip sprites with fewer opaque pixels than this
 
 
 def quantise5(v: int) -> int:
     return (v >> 3) & 0x1F   # 5-bit per channel
 
 
-def item_hist(rgb: np.ndarray, mask: np.ndarray) -> list[list[int]]:
+def item_hist(rgba: np.ndarray) -> list[list[int]]:
     """
-    Returns [[r5,g5,b5,count], ...] — colours quantised to 5 bits/channel,
-    non-BG opaque pixels in the lower portion of the sprite.
-    Quantisation matches the JS bucket-key computation, and halves storage.
+    Returns [[r5,g5,b5,count], ...] — colours quantised to 5 bits/channel.
+    Uses only pixels with alpha >= ALPHA_MIN, making the histogram BG-agnostic.
+    Excludes the top STACK_ROW_FRAC of the sprite to skip stack-count overlays.
     """
+    opaque = rgba[:, :, 3] >= ALPHA_MIN
     row_cut = round(SLOT_H * STACK_ROW_FRAC)
-    lo      = mask.copy()
+    lo = opaque.copy()
     lo[:row_cut, :] = False
-    use = lo if lo.sum() >= MIN_ITEM_PX else mask
-    px  = rgb[use]
-    dist = np.linalg.norm(px - BG, axis=-1)
-    valid = px[dist > BG_DEV_MIN].astype(int)
-    if len(valid) < MIN_ITEM_PX:
+    use = lo if lo.sum() >= MIN_ITEM_PX else opaque
+    px = rgba[:, :, :3][use].astype(int)
+    if len(px) < MIN_ITEM_PX:
         return []
-    quant = [(quantise5(r), quantise5(g), quantise5(b)) for r, g, b in valid]
+    quant = [(quantise5(r), quantise5(g), quantise5(b)) for r, g, b in px]
     counts = Counter(quant)
     return [[int(r), int(g), int(b), int(n)] for (r, g, b), n in sorted(counts.items())]
 
@@ -80,9 +69,8 @@ def main() -> None:
         if e["w"] != SLOT_W or e["h"] != SLOT_H:
             skipped += 1
             continue
-        raw      = sheet[e["y"]:e["y"]+SLOT_H, e["x"]:e["x"]+SLOT_W]
-        rgb, mask = composite(raw)
-        h        = item_hist(rgb, mask)
+        raw = sheet[e["y"]:e["y"]+SLOT_H, e["x"]:e["x"]+SLOT_W]
+        h   = item_hist(raw)
         if not h:
             skipped += 1
             continue
