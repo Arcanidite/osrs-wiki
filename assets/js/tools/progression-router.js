@@ -1956,7 +1956,7 @@
     await atlas.loadHistIndex();
     const ctx     = canvas.getContext("2d");
     const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    const hits    = atlas.detectItems(imgData);
+    const hits    = await atlas.matchItems(imgData);
     return hits.map(({ id, score }) => ({ id, score, entry: atlas.entry(id) })).filter(h => h.entry);
   }
 

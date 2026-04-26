@@ -23,11 +23,12 @@
   const LS_PFX     = "osrs-sprite-";   // localStorage key per item: osrs-sprite-{id}
 
   let _base     = "";
-  let _atlas    = null;   // {id: {x,y,w,h}}
-  let _byId     = null;   // {id: packRecord}
-  let _byName   = null;   // {"lowercase name": packRecord}
-  let _promise  = null;
-  let _cssCache = new Map(); // itemId → css string, in-memory
+  let _atlas       = null;   // {id: {x,y,w,h}}
+  let _byId        = null;   // {id: packRecord}
+  let _byName      = null;   // {"lowercase name": packRecord}
+  let _promise     = null;
+  let _cssCache    = new Map(); // itemId → css string, in-memory
+  let _sheetBitmap = null;      // ImageBitmap of the full spritesheet, for NCC matching
 
   // ── Session cache helpers ──────────────────────────────────────────────────
   function ssGet(key) {
@@ -212,6 +213,7 @@
           if (rec.slug) m[rec.slug] = rec;
           return m;
         }, {});
+        createImageBitmap(sheet).then(bmp => { _sheetBitmap = bmp; });
         cropSpritesAsync(atlas, sheet);
       });
       return _promise;
@@ -428,6 +430,151 @@
       for (const h of raw) {
         if (seenId.has(h.id)) continue;
         if (kept.some(k => Math.abs(k.x - h.x) < nmsRadius && Math.abs(k.y - h.y) < nmsRadius)) continue;
+        kept.push(h);
+        seenId.add(h.id);
+      }
+      return kept;
+    },
+
+    /**
+     * Exact-match item detection via NCC against spritesheet tiles.
+     *
+     * Uses histogram as a fast candidate pre-filter per window, then verifies
+     * each candidate with normalised cross-correlation against the actual sprite
+     * pixels (alpha-masked). Returns [{id, score, x, y}] sorted score desc.
+     *
+     * score === 1.0 means pixel-perfect match. Anything >= nccMin is returned.
+     *
+     * Options:
+     *   bg      — [r,g,b] BG override; estimated from corners if omitted
+     *   nccMin  — minimum NCC to accept a match (default 0.85)
+     *   topK    — max histogram candidates to NCC-verify per window (default 5)
+     */
+    async matchItems(imageData, opts = {}) {
+      if (!_histEntries || !_sheetBitmap || !_atlas) throw new Error("atlas not ready");
+      const { width: W, height: H, data: px } = imageData;
+      const nccMin = opts.nccMin ?? 0.85;
+      const topK   = opts.topK   ?? 5;
+      const BG_DEV_SQ = 225;
+
+      const [bgR, bgG, bgB] = opts.bg ?? _cornerBg(px, W, H);
+
+      // Draw full sheet once into an OffscreenCanvas for tile access.
+      const sheetOC  = new OffscreenCanvas(_sheetBitmap.width, _sheetBitmap.height);
+      const sheetCtx = sheetOC.getContext("2d");
+      sheetCtx.drawImage(_sheetBitmap, 0, 0);
+
+      const tileOC  = new OffscreenCanvas(HIST_SLOT_W, HIST_SLOT_H);
+      const tileCtx = tileOC.getContext("2d");
+
+      // Precompute per-sprite mean/std over alpha-masked pixels for NCC denominator.
+      const spriteStats = new Map(); // id → {mu, sigma, alphaMask: Uint8Array, rgb: Float32Array}
+      const getSpriteStats = (id) => {
+        if (spriteStats.has(id)) return spriteStats.get(id);
+        const e = _atlas[id] ?? _atlas[String(id)];
+        if (!e || e.w !== HIST_SLOT_W || e.h !== HIST_SLOT_H) return null;
+        tileCtx.clearRect(0, 0, HIST_SLOT_W, HIST_SLOT_H);
+        tileCtx.drawImage(sheetOC, e.x, e.y, HIST_SLOT_W, HIST_SLOT_H, 0, 0, HIST_SLOT_W, HIST_SLOT_H);
+        const td = tileCtx.getImageData(0, 0, HIST_SLOT_W, HIST_SLOT_H).data;
+        const n  = HIST_SLOT_W * HIST_SLOT_H;
+        const rgb  = new Float32Array(n * 3);
+        const mask = new Uint8Array(n);
+        let sum = 0, cnt = 0;
+        for (let i = 0; i < n; i++) {
+          const opaque = td[i*4+3] >= 128;
+          mask[i] = opaque ? 1 : 0;
+          if (!opaque) continue;
+          const lum = 0.299*td[i*4] + 0.587*td[i*4+1] + 0.114*td[i*4+2];
+          rgb[i*3] = td[i*4]; rgb[i*3+1] = td[i*4+1]; rgb[i*3+2] = td[i*4+2];
+          sum += lum; cnt++;
+        }
+        if (cnt < 10) return null;
+        const mu = sum / cnt;
+        let vsum = 0;
+        for (let i = 0; i < n; i++) {
+          if (!mask[i]) continue;
+          const lum = 0.299*rgb[i*3] + 0.587*rgb[i*3+1] + 0.114*rgb[i*3+2];
+          vsum += (lum - mu) ** 2;
+        }
+        const sigma = Math.sqrt(vsum / cnt);
+        const stats = { mu, sigma, mask, rgb, cnt };
+        spriteStats.set(id, stats);
+        return stats;
+      };
+
+      const stride = HIST_SLOT_W >> 1;
+      const raw = [];
+
+      for (let wy = 0; wy <= H - HIST_SLOT_H; wy += stride) {
+        for (let wx = 0; wx <= W - HIST_SLOT_W; wx += stride) {
+          // Build query histogram and luminance buffer for this window.
+          const qHist = new Map();
+          const qLum  = new Float32Array(HIST_SLOT_W * HIST_SLOT_H);
+          let nonBgPx = 0, qSum = 0;
+          for (let dy = 0; dy < HIST_SLOT_H; dy++) {
+            for (let dx = 0; dx < HIST_SLOT_W; dx++) {
+              const pi = ((wy + dy) * W + (wx + dx)) * 4;
+              const dr = px[pi]-bgR, dg = px[pi+1]-bgG, db = px[pi+2]-bgB;
+              const isBg = dr*dr + dg*dg + db*db <= BG_DEV_SQ;
+              const lum  = 0.299*px[pi] + 0.587*px[pi+1] + 0.114*px[pi+2];
+              qLum[dy * HIST_SLOT_W + dx] = lum;
+              if (isBg) continue;
+              nonBgPx++;
+              qSum += lum;
+              const k = (px[pi]>>3) | ((px[pi+1]>>3)<<5) | ((px[pi+2]>>3)<<10);
+              qHist.set(k, (qHist.get(k) ?? 0) + 1);
+            }
+          }
+          if (nonBgPx < 10) continue;
+
+          // Histogram pre-filter: top-K candidates by overlap score.
+          const candidates = new Set();
+          for (const k of qHist.keys()) {
+            const b = _histBuckets.get(k);
+            if (b) for (const id of b) candidates.add(id);
+          }
+          if (!candidates.size) continue;
+
+          const scored = [];
+          for (const id of candidates) {
+            const ref = _histEntries[id];
+            if (!ref) continue;
+            let overlap = 0;
+            for (const [k, n] of ref.counts) overlap += Math.min(qHist.get(k) ?? 0, n);
+            scored.push([overlap / ref.total, id]);
+          }
+          scored.sort((a, b) => b[0] - a[0]);
+          const topCands = scored.slice(0, topK).map(([, id]) => id);
+
+          // NCC verification against actual sprite pixels.
+          let bestNcc = -1, bestId = -1;
+          for (const id of topCands) {
+            const s = getSpriteStats(id);
+            if (!s || s.sigma < 1) continue;
+            const qMu = qSum / s.cnt;   // mean over sprite's masked region
+            let num = 0, qVar = 0;
+            for (let i = 0; i < HIST_SLOT_W * HIST_SLOT_H; i++) {
+              if (!s.mask[i]) continue;
+              const qv = qLum[i] - qMu;
+              const sv = 0.299*s.rgb[i*3] + 0.587*s.rgb[i*3+1] + 0.114*s.rgb[i*3+2] - s.mu;
+              num  += qv * sv;
+              qVar += qv * qv;
+            }
+            const ncc = num / (Math.sqrt(qVar) * s.sigma * s.cnt);
+            if (ncc > bestNcc || (ncc === bestNcc && (bestId < 0 || id < bestId))) {
+              bestNcc = ncc; bestId = id;
+            }
+          }
+          if (bestNcc >= nccMin) raw.push({ id: bestId, score: bestNcc, x: wx, y: wy });
+        }
+      }
+
+      // NMS: highest NCC per neighbourhood, one result per id.
+      raw.sort((a, b) => b.score - a.score);
+      const kept = [], seenId = new Set();
+      for (const h of raw) {
+        if (seenId.has(h.id)) continue;
+        if (kept.some(k => Math.abs(k.x-h.x) < HIST_SLOT_W && Math.abs(k.y-h.y) < HIST_SLOT_H)) continue;
         kept.push(h);
         seenId.add(h.id);
       }
