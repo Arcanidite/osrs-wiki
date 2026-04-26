@@ -1085,6 +1085,14 @@
   function invBadge(step) {
     return step.inv_used ? `<span class="step-badge inv">${step.inv_used} inv slots</span>` : "";
   }
+  function itemIconsHtml(items, tint) {
+    if (!items?.length) return "";
+    return `<span class="step-items-row step-items-row--${tint}">${
+      items.map(({ id, name }) =>
+        `<span class="step-item-chip" title="${escHtml(name)}"><span class="ins-item-icon" data-item-id="${+id}"></span></span>`
+      ).join("")
+    }</span>`;
+  }
   function reqBadge(reqs) {
     const r = normalizeReqs(reqs);
     const entries = Object.entries(r.skills ?? {});
@@ -1312,7 +1320,34 @@
             store.updatePlan(activePlanIdx, plans[activePlanIdx]);
           }
         }
+        checkToggleVisibility(ta);
       });
+    });
+    requestAnimationFrame(() => {
+      container.querySelectorAll(".step-note").forEach((ta) => {
+        checkToggleVisibility(ta);
+        const toggle = ta.closest(".step-note-wrap")?.querySelector(".step-note-toggle");
+        if (!toggle) return;
+        toggle.addEventListener("click", () => {
+          const expand = !ta.classList.contains("expanded");
+          ta.classList.toggle("expanded", expand);
+          ta.style.height = expand ? ta.scrollHeight + "px" : "";
+          toggle.textContent = expand ? "▲ less" : "▼ more";
+        });
+      });
+    });
+  }
+
+  function checkToggleVisibility(ta) {
+    const toggle = ta.closest(".step-note-wrap")?.querySelector(".step-note-toggle");
+    if (!toggle) return;
+    const overflows = ta.value.trim().length > 0 && ta.scrollHeight > ta.clientHeight + 2;
+    if (overflows) toggle.hidden = false;
+  }
+
+  function wireStepItemIcons(container) {
+    container.querySelectorAll(".step-item-chip .ins-item-icon[data-item-id]").forEach((el) => {
+      applySpriteBg(el, +el.dataset.itemId);
     });
   }
 
@@ -1435,7 +1470,12 @@
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
-          <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…"></textarea>
+          ${itemIconsHtml(normalizeReqs(step.reqs).atlas_items, "req")}
+          ${itemIconsHtml(normalizeReqs(step.grants).atlas_items, "grant")}
+          <span class="step-note-wrap">
+            <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
+            <button class="step-note-toggle btn btn-ghost" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
+          </span>
         </span>
         <span class="step-meta">
           ${goalBadge(step)}
@@ -1471,6 +1511,7 @@
     wireReqScroll(stepsEl);
     wireFocalBtns(stepsEl);
     wireLoadoutBtns(stepsEl);
+    wireStepItemIcons(stepsEl);
     applyStepFilter(stepsEl, activeFilter);
     const fb = $("rt-filter-bar");
     if (fb) fb.hidden = !path.length;
@@ -2505,6 +2546,10 @@
     const base = document.currentScript?.dataset?.baseurl
       ?? document.querySelector("[data-baseurl]")?.dataset?.baseurl ?? "";
     window.SpriteAtlas?.load(base);   // kick off async sprite extraction; idempotent
+    window.addEventListener("osrs-sprite-ready", () => {
+      const stepsEl = els.steps();
+      if (stepsEl) wireStepItemIcons(stepsEl);
+    }, { once: true });
 
     try {
       [allSteps, allGoals, allRegions, allConstraints] = await Promise.all([

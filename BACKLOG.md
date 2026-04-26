@@ -495,3 +495,29 @@ The bank search fuzzy highlighter currently matches individual characters scatte
 - `[cache:items-npcs-objects]` — `.pack` files extracted ✓ (`e442afd`)
 - `[sprite:bucket-fingerprint]` — `SpriteAtlas.buildBuckets()`: 6 anchors/sprite at 2/5 offsets, 4 progressive cross tiers (1×1→7×7) as checksums, parallel batch load, keyed by tier-0 center pixel ✓ (`a8a9bd1`)
 - `[router:item-image-analysis]` — worker-offloaded scan: bucket-gated anchor lookup → progressive tier verification → Gaussian blur + masked NCC literal match → NMS; findings-list output (icon+name+score%) replacing slot grid ✓ (`0555702`)
+
+---
+
+## [router:step-item-icons] Item icons on step entries from reqs/grants atlas_items
+
+When a step's `reqs.atlas_items` or `grants.atlas_items` is non-empty, display inline icon chips on the step entry in the route plan. Req-tinted chips (gold border) for reqs, grant-tinted chips (green border) for grants. Icons use `applySpriteBg` against the loaded spritesheet blob URL.
+
+**Status:** DONE ✓ — `itemIconsHtml(items, tint)` emits `.step-items-row`/`.step-item-chip` HTML; `wireStepItemIcons` applies sprite backgrounds post-render; `osrs-sprite-ready` handler rewires after atlas load
+
+---
+
+## [router:step-notes-expand] Notes expand/collapse toggle when content exceeds 1 row
+
+Step note textarea starts collapsed at 1 row. If the saved note content overflows that height, a "▼ more" toggle button appears. Clicking it expands the textarea to full content height; clicking again collapses.
+
+**Status:** DONE ✓ — `.step-note-wrap` + `.step-note-toggle`; `checkToggleVisibility` run in `requestAnimationFrame` post-render; toggle sets `expanded` class + explicit `style.height`
+
+---
+
+## [data:graph-dal] Client-side graph edge/node DAL — interface-principled, localStorage-backed
+
+Refactor all client-side in-memory data sources (plans, step notes, tags, loadouts, custom goals, etc.) to go through a typed graph DAL (data access layer). The DAL exposes a stable interface — `node(type, id)`, `edge(type, from, to)`, `query({ type, filter })`, `upsert(node)`, `link(edge)`, `unlink(edge)` — backed by localStorage (or IndexedDB for larger payloads). Nodes are typed entities (plan, step, goal, tag, item, loadout). Edges are typed relations (plan→step, step→tag, step→item, goal→step, etc.). All current `store.*` calls become DAL calls. The DAL is interface-principled: callers program against the interface, not the storage backend, so swapping localStorage → IndexedDB → remote requires no call-site changes.
+
+**Why:** All data is currently stored as flat blobs per `STORE_*` key — no relational structure, no cross-reference, no query capability. The graph model unifies disparate store keys into a coherent schema and enables cross-entity queries (e.g. "all steps that require item X").
+
+**Status:** TODO — start after [router:step-item-icons] and [router:step-notes-expand] are shipped

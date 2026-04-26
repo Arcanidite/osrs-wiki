@@ -609,18 +609,38 @@ body {
 .ins-detail { font-size: var(--fs-xs); color: var(--muted); border: none; background: transparent; width: 100%; padding: 0; }
 .ins-label:focus, .ins-detail:focus { outline: none; }
 
+/* ── Per-step item icons ─────────────────────────────────────────────────── */
+.step-items-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.step-item-chip {
+  display: inline-flex; align-items: center;
+  border-radius: var(--radius); padding: 1px;
+  background: var(--faint); border: 1px solid var(--border);
+  cursor: default;
+}
+.step-item-chip .ins-item-icon { width: 36px; height: 32px; }
+.step-items-row--req .step-item-chip { border-color: color-mix(in srgb, var(--gold) 40%, var(--border)); }
+.step-items-row--grant .step-item-chip { border-color: color-mix(in srgb, green 30%, var(--border)); }
+
 /* ── Per-step notes ──────────────────────────────────────────────────────── */
+.step-note-wrap { display: flex; flex-direction: column; gap: 2px; }
+.step-note-toggle {
+  align-self: flex-start; font-size: var(--fs-xs);
+  padding: 0 var(--sp-q); color: var(--muted);
+  border: none; background: none; cursor: pointer;
+}
 .step-note {
   width: 100%;
   font-size: var(--fs-xs); font-family: inherit;
   padding: 0.125rem var(--sp-q);
   border: 1px solid var(--border); border-radius: var(--radius);
-  background: transparent; color: var(--muted);
-  resize: vertical; overflow: hidden; flex-grow: 1; background: white;
-  transition: border-color 0.15s, background 0.15s; max-height: 5rem;
+  background: white; color: var(--muted);
+  resize: none; overflow: hidden;
+  height: 1.75em;
+  transition: height 0.15s, border-color 0.15s;
 }
+.step-note.expanded { overflow: auto; resize: vertical; }
 .step-note:focus, .step-note:not(:placeholder-shown) {
-  border-color: var(--border); color: var(--ink); outline: none; grid-row: 2;
+  border-color: var(--border); color: var(--ink); outline: none;
 }
 
 /* ── Loadout panel ───────────────────────────────────────────────────────── */
