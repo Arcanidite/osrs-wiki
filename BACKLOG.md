@@ -241,7 +241,7 @@ Auto-save every plan mutation to localStorage using a git-inspired object store:
 
 **What it should do:** Capstone steps cannot be individually removed. The ✕ button should be absent or disabled on capstone rows. The only way to remove a capstone is to remove its goal from the goal queue (which already clears it on recompute). The capstone is cosmetically tied to the final step of its dependency chain — it should render immediately after the last non-capstone step with the same `_goalLabel`.
 
-**Status:** DONE ✓ — ✕ button omitted from capstone rows; only ⟳ fill-gap shown when invalid (`f45f727`)
+**Status:** REVISED — capstone ✕ button restored. Clicking it removes the goal from the queue and triggers recompute (same as removing the goal from the goal queue directly). Title reads "Remove goal" to distinguish from step removal.
 
 ---
 

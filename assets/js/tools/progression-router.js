@@ -1427,7 +1427,7 @@
           <button class="btn btn-ghost step-loadout-btn" data-step-id="${escHtml(step.id)}" title="Attach loadout">🎒</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           ${step._capstone
-            ? `${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}`
+            ? `${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove goal">✕</button>`
             : `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>`}
         </span>
       </li>`);
@@ -1793,24 +1793,29 @@
     );
   }
 
+  // Shared registry of icon elements waiting for a sprite to load.
+  // Map<itemId:number, Set<element>> — drained by one shared listener.
+  // Detached elements (dropdown rebuilt) are silently dropped on drain.
+  const _pendingIcons = new Map();
+  window.addEventListener("osrs-sprite-ready", ({ detail: { id, dataUrl } }) => {
+    const set = _pendingIcons.get(id);
+    if (!set) return;
+    const bg = `url('${dataUrl}') no-repeat center / contain`;
+    for (const el of set) { if (el.isConnected) { el.style.background = bg; el.textContent = ""; } }
+    _pendingIcons.delete(id);
+  });
+
   function applySpriteBg(icon, itemId) {
     const a = window.SpriteAtlas;
     if (!a?.ready) return;
     const id = +itemId;
     const d  = a.dims(id);
-    const apply = (bg) => {
-      icon.style.background = bg;
-      if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; }
-      icon.textContent = "";
-    };
+    if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; }
     const bg = a.css(id);
-    if (bg) { apply(bg); return; }
-    const onReady = (e) => {
-      if (e.detail.id !== id) return;
-      apply(`url('${e.detail.dataUrl}') no-repeat center / contain`);
-      window.removeEventListener("osrs-sprite-ready", onReady);
-    };
-    window.addEventListener("osrs-sprite-ready", onReady);
+    if (bg) { icon.style.background = bg; icon.textContent = ""; return; }
+    let set = _pendingIcons.get(id);
+    if (!set) { set = new Set(); _pendingIcons.set(id, set); }
+    set.add(icon);
   }
 
   function makeItemPill(itemId, name, tint) {
@@ -1919,229 +1924,16 @@
   }
 
   // ── Loadout analysis ───────────────────────────────────────────────────────
-  // Strategy: bucket-gated cross-pattern scoring.
-  //
-  // Build phase  — SpriteAtlas.buildBuckets() (called on load, cached):
-  //   Each localStorage sprite's cross pixels (center row + center col) are quantized
-  //   to coarse RGB buckets (5 bits/channel). Map<bucketKey, [{id, cross}]>.
-  //
-  // Scan phase   — one pass over verbatim upload pixels:
-  //   For each opaque pixel p, compute its bucket key. Look up candidate sprites from
-  //   that bucket only. For each candidate cross pixel that color-matches p (within
-  //   CROSS_TOL), compute the implied sprite-center and verify 8 neighbors. Accumulate
-  //   neighbor-hit counts into a per-sprite Int32Array score buffer.
-  //
-  const SLOT_W = 36, SLOT_H = 32;
-
-  // Serialize bucket map for worker transfer. Each unique buffer transferred once.
-  function serializeBuckets(buckets) {
-    const entries = [], seen = new Set(), transfers = [];
-    const track = (buf) => { if (!seen.has(buf)) { seen.add(buf); transfers.push(buf); } };
-    for (const [k, sprites] of buckets) {
-      entries.push([k, sprites.map(({ id, anchorIdx, anchors, anchorPos, pixels }) => {
-        track(anchors.buffer); track(pixels.buffer);
-        return [id, anchorIdx, anchors, anchorPos, pixels];
-      })]);
-    }
-    return { entries, transfers };
-  }
-
-  // Offload scan to a worker. imgData is verbatim getImageData — no JS-side processing.
-  // Worker applies 3×3 Gaussian blur internally before matching (query image only).
-  // Returns flat ranked array [{id, score}] after NMS — no slot assignment.
-  function scanBucketsAsync(imgData, imgW, imgH, buckets) {
-    const { FP_TIERS, FP_ANCHORS, FP_VALUES } = window.SpriteAtlas.fpConsts;
-    return new Promise((resolve) => {
-      const { entries, transfers } = serializeBuckets(buckets);
-      transfers.push(imgData.buffer);
-      const src = `
-        const SLOT_W=${SLOT_W}, SLOT_H=${SLOT_H};
-        const FP_TIERS=${FP_TIERS}, FP_ANCHORS=${FP_ANCHORS}, FP_VALUES=${FP_VALUES};
-        const TIER_TOL  = 14;   // per-pixel per-channel tolerance for tier checksums
-        const ANCHOR_MIN = 2;   // distinct anchors that must agree before literal check
-        const MATCH_RATIO = 0.65; // masked NCC threshold (opaque-pixel ratio)
-        const PIX_TOL   = 22;   // per-channel tolerance for literal pixel comparison
-        // NMS suppression radius — hits within this many pixels of a better hit are dropped.
-        const NMS_R = Math.max(SLOT_W, SLOT_H) >> 1;
-
-        const pxBucket = (r,g,b) => (r>>3)|((g>>3)<<5)|((b>>3)<<10);
-
-        // 3×3 Gaussian blur (σ≈0.85) applied to query image in-worker.
-        // Operates on a copy — original imgData untouched for bucket hashing.
-        // Kernel: [1,2,1 / 2,4,2 / 1,2,1] / 16
-        function gaussBlur(src, w, h) {
-          const dst = new Uint8ClampedArray(src.length);
-          for (let y = 0; y < h; y++) {
-            for (let x = 0; x < w; x++) {
-              const i = (y * w + x) * 4;
-              for (let c = 0; c < 3; c++) {
-                let s = 0, wt = 0;
-                for (let dy = -1; dy <= 1; dy++) {
-                  for (let dx = -1; dx <= 1; dx++) {
-                    const nx = x+dx, ny = y+dy;
-                    if (nx < 0 || ny < 0 || nx >= w || ny >= h) continue;
-                    const k = (1 + (dx===0?1:0)) * (1 + (dy===0?1:0));
-                    s += src[(ny*w+nx)*4+c] * k; wt += k;
-                  }
-                }
-                dst[i+c] = s / wt;
-              }
-              dst[i+3] = src[i+3]; // preserve alpha
-            }
-          }
-          return dst;
-        }
-
-        // Progressive tier verification at image anchor position (imgAx, imgAy).
-        // Uses blurred image for comparison; early-exits on first tier mismatch.
-        function tiersMatch(blurred, imgW, imgH, imgAx, imgAy, anchors, anchorOff) {
-          for (let t = 1; t < FP_TIERS; t++) {
-            const base = anchorOff + t * 4;
-            const expR = anchors[base], expG = anchors[base+1], expB = anchors[base+2], expN = anchors[base+3];
-            if (expN === 0) continue;
-            let sr = 0, sg = 0, sb = 0, n = 0;
-            for (let dy = -t; dy <= t; dy++) {
-              for (let dx = -t; dx <= t; dx++) {
-                if (Math.max(Math.abs(dx), Math.abs(dy)) !== t) continue;
-                const ix = imgAx+dx, iy = imgAy+dy;
-                if (ix < 0 || iy < 0 || ix >= imgW || iy >= imgH) continue;
-                const ii = (iy*imgW+ix)*4;
-                if (blurred[ii+3] < 16) continue;
-                sr += blurred[ii]; sg += blurred[ii+1]; sb += blurred[ii+2]; n++;
-              }
-            }
-            if (n === 0 && expN > 2) return false;
-            if (n === 0) continue;
-            const sc = n / expN, tol = TIER_TOL * n;
-            if (Math.abs(sr - expR*sc) > tol || Math.abs(sg - expG*sc) > tol || Math.abs(sb - expB*sc) > tol) return false;
-          }
-          return true;
-        }
-
-        // Masked NCC-style literal match: compare opaque sprite pixels to blurred image.
-        // Returns [ratio, ox, oy] — ratio = matched opaque pixels / total opaque pixels.
-        function literalMatch(blurred, imgW, imgH, ox, oy, spritePixels) {
-          let matched = 0, total = 0;
-          for (let sy = 0; sy < SLOT_H; sy++) {
-            const iy = oy + sy;
-            if (iy < 0 || iy >= imgH) continue;
-            for (let sx = 0; sx < SLOT_W; sx++) {
-              const si = (sy * SLOT_W + sx) * 4;
-              if (spritePixels[si+3] < 16) continue; // mask: skip transparent sprite pixels
-              total++;
-              const ix = ox + sx;
-              if (ix < 0 || ix >= imgW) continue;
-              const ii = (iy * imgW + ix) * 4;
-              if (blurred[ii+3] < 16) continue;
-              if (Math.abs(blurred[ii]   - spritePixels[si])   <= PIX_TOL &&
-                  Math.abs(blurred[ii+1] - spritePixels[si+1]) <= PIX_TOL &&
-                  Math.abs(blurred[ii+2] - spritePixels[si+2]) <= PIX_TOL) matched++;
-            }
-          }
-          return total > 0 ? matched / total : 0;
-        }
-
-        // Non-maximum suppression: remove hits within NMS_R of a higher-scoring hit.
-        function nms(hits) {
-          hits.sort((a, b) => b.score - a.score);
-          const keep = [];
-          for (const h of hits) {
-            if (keep.every(k => Math.abs(k.ox - h.ox) > NMS_R || Math.abs(k.oy - h.oy) > NMS_R))
-              keep.push(h);
-          }
-          return keep;
-        }
-
-        self.onmessage = ({ data: { imgData, imgW, imgH, bucketEntries } }) => {
-          const buckets = new Map(bucketEntries.map(([k, sprites]) =>
-            [k, sprites.map(([id, anchorIdx, anchors, anchorPos, pixels]) => ({
-              id, anchorIdx,
-              anchors:   new Int32Array(anchors),
-              anchorPos,
-              pixels:    new Uint8Array(pixels),
-            }))]
-          ));
-
-          const spriteById = new Map();
-          let sharedAnchorPos = null;
-          for (const sprites of buckets.values()) {
-            for (const s of sprites) {
-              if (!spriteById.has(s.id)) spriteById.set(s.id, s);
-              if (!sharedAnchorPos) sharedAnchorPos = s.anchorPos;
-            }
-          }
-          if (!sharedAnchorPos) { self.postMessage([]); return; }
-
-          // Blur query image once — used for tier verification and literal matching.
-          const blurred = gaussBlur(imgData, imgW, imgH);
-          const ap = sharedAnchorPos;
-
-          // Full-image scan: slide sprite placement window across entire image.
-          const hitCount = new Map();   // id → total anchor hits
-          const bestPos  = new Map();   // id → [ox, oy, hitsSoFar]
-
-          for (let oy = 0; oy <= imgH - SLOT_H; oy++) {
-            for (let ox = 0; ox <= imgW - SLOT_W; ox++) {
-              for (let a = 0; a < FP_ANCHORS; a++) {
-                const imgAx = ox + ap[a*2], imgAy = oy + ap[a*2+1];
-                if (imgAx < 0 || imgAy < 0 || imgAx >= imgW || imgAy >= imgH) continue;
-                const ii = (imgAy * imgW + imgAx) * 4;
-                // Bucket on raw imgData (unblurred center pixel for hash consistency).
-                if (imgData[ii+3] < 16) continue;
-                const bk = pxBucket(imgData[ii], imgData[ii+1], imgData[ii+2]);
-                const candidates = buckets.get(bk);
-                if (!candidates) continue;
-                for (const { id, anchorIdx, anchors } of candidates) {
-                  if (anchorIdx !== a) continue;
-                  if (!tiersMatch(blurred, imgW, imgH, imgAx, imgAy, anchors, a * FP_VALUES)) continue;
-                  const prev = hitCount.get(id) ?? 0;
-                  const next = prev + 1;
-                  hitCount.set(id, next);
-                  const bp = bestPos.get(id);
-                  if (!bp || next > bp[2]) bestPos.set(id, [ox, oy, next]);
-                }
-              }
-            }
-          }
-
-          // Literal check for anchor-confirmed candidates.
-          const rawHits = [];
-          for (const [id, hits] of hitCount) {
-            if (hits < ANCHOR_MIN) continue;
-            const bp = bestPos.get(id);
-            if (!bp) continue;
-            const sp = spriteById.get(id);
-            if (!sp) continue;
-            const ratio = literalMatch(blurred, imgW, imgH, bp[0], bp[1], sp.pixels);
-            if (ratio >= MATCH_RATIO) rawHits.push({ id: +id, score: ratio, ox: bp[0], oy: bp[1] });
-          }
-
-          // NMS then strip position — caller only needs id + score.
-          const kept = nms(rawHits).map(({ id, score }) => ({ id, score }));
-          self.postMessage(kept);
-        };
-      `;
-      const worker = new Worker(URL.createObjectURL(new Blob([src], { type: "text/javascript" })));
-      worker.onmessage = ({ data }) => { worker.terminate(); resolve(data); };
-      worker.postMessage({ imgData, imgW, imgH, bucketEntries: entries }, transfers);
-    });
-  }
-
-  // Hydrate worker results with atlas pack entries.
-  function hydrateFindings(findings, atlas) {
-    return findings
-      .map(({ id, score }) => ({ id, score, entry: atlas?.entry(id) }))
-      .filter(f => f.entry);
-  }
+  // Colour-histogram sliding-window detection via SpriteAtlas.detectItems().
+  // Index loaded from items-hist.pack; no localStorage sprites required.
 
   async function analyzeLoadoutImage(canvas) {
-    const buckets = await window.SpriteAtlas.buildBuckets(SLOT_W, SLOT_H);
-    if (!buckets.size) return [];
-    const ctx   = canvas.getContext("2d");
-    const imgW  = canvas.width, imgH = canvas.height;
-    const imgData = ctx.getImageData(0, 0, imgW, imgH).data;
-    const raw = await scanBucketsAsync(imgData, imgW, imgH, buckets);
-    return hydrateFindings(raw, window.SpriteAtlas);
+    const atlas = window.SpriteAtlas;
+    await atlas.loadHistIndex();
+    const ctx     = canvas.getContext("2d");
+    const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const hits    = atlas.detectItems(imgData);
+    return hits.map(({ id, score }) => ({ id, score, entry: atlas.entry(id) })).filter(h => h.entry);
   }
 
   function renderLoadoutLightbox(loadoutRows) {
@@ -2692,6 +2484,10 @@
 
   // ── Boot ──────────────────────────────────────────────────────────────────
   async function init() {
+    const base = document.currentScript?.dataset?.baseurl
+      ?? document.querySelector("[data-baseurl]")?.dataset?.baseurl ?? "";
+    window.SpriteAtlas?.load(base);   // kick off async sprite extraction; idempotent
+
     try {
       [allSteps, allGoals, allRegions, allConstraints] = await Promise.all([
         loadJsonl(STEPS_URL),

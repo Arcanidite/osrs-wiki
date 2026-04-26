@@ -8,13 +8,18 @@
  *   SpriteAtlas.entry(4151);                       // full pack record for item
  *   SpriteAtlas.byName("abyssal whip");            // record by name (lowercase)
  *   SpriteAtlas.search("whip");                    // array of matching records
+ *
+ * Screenshot detection (colour-histogram, scale-invariant):
+ *   await SpriteAtlas.loadHistIndex(baseUrl);      // load items-hist.pack once
+ *   const hits = SpriteAtlas.detectItems(imageData, { bg }); // [{itemId,score,col,row}, ...]
  */
 (function (root) {
   const ATLAS_PATH = "/assets/data/cache/sprites/items-atlas.json";
   const SHEET_PATH = "/assets/data/cache/sprites/items.png";
   const PACK_PATH  = "/assets/data/cache/items.pack";
-  const SS_ATLAS   = "osrs-sprite-atlas";
-  const SS_PACK    = "osrs-sprite-pack";
+  const SS_ATLAS     = "osrs-sprite-atlas";
+  const SS_PACK      = "osrs-sprite-pack";
+  const SS_HIST_PACK = "osrs-hist-pack";
   const LS_PFX     = "osrs-sprite-";   // localStorage key per item: osrs-sprite-{id}
 
   let _base     = "";
@@ -35,8 +40,9 @@
   // ── Pack reader ────────────────────────────────────────────────────────────
   // Binary format: "OSRP" + 4B count + N×12B index (id:4LE, offset:4LE, len:4LE) + JSON blobs
 
-  async function readPack(url) {
-    const cached = ssGet(SS_PACK);
+  async function readPack(url, cacheKey) {
+    const key    = cacheKey ?? SS_PACK;
+    const cached = ssGet(key);
     if (cached) return cached;
     const buf  = await fetch(url).then((r) => r.arrayBuffer());
     const view = new DataView(buf);
@@ -53,7 +59,7 @@
       const rec    = JSON.parse(dec.decode(new Uint8Array(buf, offset, len)));
       result[id]   = rec;
     }
-    ssSet(SS_PACK, result);
+    ssSet(key, result);
     return result;
   }
 
@@ -307,7 +313,152 @@
     get fpConsts() {
       return { FP_TIERS, FP_ANCHORS, FP_VALUES, FP_ANCHOR_COLS, FP_ANCHOR_ROWS };
     },
+
+    // ── Histogram-based screenshot detection ────────────────────────────────
+    //
+    // Scale-invariant item detection using a colour-histogram index.
+    // Works on any screenshot layout — inventory, bank, equipment, loose items.
+    // No grid assumption. Uses a sliding SLOT_W×SLOT_H window at half-slot
+    // stride, matches each window by histogram overlap, then NMS deduplicates.
+    //
+    // Index: items-hist.pack (built at site build time). Each entry stores
+    // (r5,g5,b5,count) tuples — colours quantised to 5 bits/channel, lower
+    // 65% of sprite only (upper 35% excluded to skip stack-count overlays).
+
+    /** Load the histogram index from items-hist.pack. Call once per base URL. */
+    loadHistIndex(base) {
+      if (_histPromise) return _histPromise;
+      _histPromise = readPack((base ?? _base) + HIST_PACK_PATH, SS_HIST_PACK).then((pack) => {
+        _histEntries = {};
+        _histBuckets = new Map();
+        // Sort ascending so canonical (lowest) IDs are inserted first per bucket.
+        const ids = Object.keys(pack).map(Number).sort((a, b) => a - b);
+        for (const id of ids) {
+          const hist = pack[id]?.hist;
+          if (!hist || !hist.length) continue;
+          let total = 0;
+          const counts = new Map();
+          for (const [r, g, b, n] of hist) {
+            const k = r | (g << 5) | (b << 10);
+            counts.set(k, (counts.get(k) ?? 0) + n);
+            total += n;
+          }
+          if (total < 5) continue;
+          _histEntries[id] = { id, counts, total };
+          for (const k of counts.keys()) {
+            let bucket = _histBuckets.get(k);
+            if (!bucket) { bucket = []; _histBuckets.set(k, bucket); }
+            bucket.push(id);
+          }
+        }
+      });
+      return _histPromise;
+    },
+
+    /**
+     * Detect all items in an ImageData (e.g. from canvas.getImageData).
+     *
+     * Slides a SLOT_W×SLOT_H window across the full image at SLOT_W/2 stride.
+     * No grid or layout assumed — works on inventory, bank, equipment, mixed.
+     *
+     * Returns [{id, score, x, y}, ...] deduplicated by NMS, sorted by score desc.
+     *
+     * Options:
+     *   bg        — [r,g,b] override; estimated from corners if omitted
+     *   minScore  — overlap threshold (default 0.60)
+     *   nmsRadius — suppression radius in px (default SLOT_W)
+     */
+    detectItems(imageData, opts = {}) {
+      if (!_histEntries) throw new Error("call loadHistIndex() and await it first");
+      const { width: W, height: H, data: px } = imageData;
+      const minScore  = opts.minScore  ?? 0.60;
+      const nmsRadius = opts.nmsRadius ?? HIST_SLOT_W;
+      const BG_DEV_SQ = 225;   // 15² — skip pixels within L2=15 of BG
+
+      const [bgR, bgG, bgB] = opts.bg ?? _cornerBg(px, W, H);
+
+      // Slide window at half-slot stride; collect best (score, id) per position.
+      const stride = HIST_SLOT_W >> 1;
+      const raw = [];   // {id, score, x, y}
+
+      for (let wy = 0; wy <= H - HIST_SLOT_H; wy += stride) {
+        for (let wx = 0; wx <= W - HIST_SLOT_W; wx += stride) {
+          // Build histogram for this window.
+          const qHist = new Map();
+          let nonBgPx = 0;
+          for (let dy = 0; dy < HIST_SLOT_H; dy++) {
+            for (let dx = 0; dx < HIST_SLOT_W; dx++) {
+              const i  = ((wy + dy) * W + (wx + dx)) * 4;
+              const dr = px[i] - bgR, dg = px[i+1] - bgG, db = px[i+2] - bgB;
+              if (dr*dr + dg*dg + db*db <= BG_DEV_SQ) continue;
+              nonBgPx++;
+              const k = (px[i] >> 3) | ((px[i+1] >> 3) << 5) | ((px[i+2] >> 3) << 10);
+              qHist.set(k, (qHist.get(k) ?? 0) + 1);
+            }
+          }
+          if (nonBgPx < 10) continue;
+
+          // Candidate set via bucket lookup.
+          const candidates = new Set();
+          for (const k of qHist.keys()) {
+            const b = _histBuckets.get(k);
+            if (b) for (const id of b) candidates.add(id);
+          }
+          if (!candidates.size) continue;
+
+          // Score; tie-break to lowest id (canonical before LMS/variants).
+          let bestScore = 0, bestId = -1;
+          for (const id of candidates) {
+            const ref = _histEntries[id];
+            if (!ref) continue;
+            let overlap = 0;
+            for (const [k, n] of ref.counts) overlap += Math.min(qHist.get(k) ?? 0, n);
+            const score = overlap / ref.total;
+            if (score > bestScore || (score === bestScore && (bestId < 0 || id < bestId))) {
+              bestScore = score; bestId = id;
+            }
+          }
+          if (bestScore >= minScore) raw.push({ id: bestId, score: bestScore, x: wx, y: wy });
+        }
+      }
+
+      // NMS: keep highest-score hit per neighbourhood, deduplicate same id.
+      raw.sort((a, b) => b.score - a.score);
+      const kept = [], seenId = new Set();
+      for (const h of raw) {
+        if (seenId.has(h.id)) continue;
+        if (kept.some(k => Math.abs(k.x - h.x) < nmsRadius && Math.abs(k.y - h.y) < nmsRadius)) continue;
+        kept.push(h);
+        seenId.add(h.id);
+      }
+      return kept;
+    },
   };
+
+  // ── Histogram detection state ──────────────────────────────────────────────
+  const HIST_PACK_PATH = "/assets/data/cache/items-hist.pack";
+  const HIST_SLOT_W    = 36;
+  const HIST_SLOT_H    = 32;
+  let _histPromise = null;
+  let _histEntries = null;   // {id: {id, counts: Map<k,n>, total}}
+  let _histBuckets = null;   // Map<k, id[]>
+
+  // ── Helpers ────────────────────────────────────────────────────────────────
+
+  function _cornerBg(px, W, H) {
+    const freq = new Map();
+    const sample = (x, y) => {
+      const i = (y * W + x) * 4;
+      const k = (px[i] << 16) | (px[i+1] << 8) | px[i+2];
+      freq.set(k, (freq.get(k) ?? 0) + 1);
+    };
+    for (let y = 0; y < 4; y++) for (let x = 0; x < 4; x++) {
+      sample(x, y); sample(W-1-x, y); sample(x, H-1-y); sample(W-1-x, H-1-y);
+    }
+    let best = 0, bestK = 0;
+    for (const [k, n] of freq) if (n > best) { best = n; bestK = k; }
+    return [(bestK >> 16) & 0xff, (bestK >> 8) & 0xff, bestK & 0xff];
+  }
 
   root.SpriteAtlas = SpriteAtlas;
 })(window);
