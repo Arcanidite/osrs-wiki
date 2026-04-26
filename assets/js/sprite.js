@@ -437,146 +437,169 @@
     },
 
     /**
-     * Exact-match item detection via NCC against spritesheet tiles.
+     * Exact-match item detection via per-window histogram shortlist + NCC verification.
      *
-     * Uses histogram as a fast candidate pre-filter per window, then verifies
-     * each candidate with normalised cross-correlation against the actual sprite
-     * pixels (alpha-masked). Returns [{id, score, x, y}] sorted score desc.
+     * Phase 1 — sliding window histogram (stride = SLOT_W/2): for each window position
+     * find the top histogram candidates by colour-bucket overlap. This gives a candidate
+     * list with an associated anchor position for each candidate.
      *
-     * score === 1.0 means pixel-perfect match. Anything >= nccMin is returned.
+     * Phase 2 — NCC template match: for each (candidate, anchor) pair, search a small
+     * radius (±SLOT_W/2) around the anchor at stride=1 and compute NCC. NCC=1.0 means
+     * verbatim pixel-exact match against the sprite alpha mask.
+     *
+     * Phase 3 — NMS: suppress duplicates by position and ID.
+     *
+     * Returns [{id, score, x, y}] sorted score desc.
      *
      * Options:
-     *   bg      — [r,g,b] BG override; estimated from corners if omitted
-     *   nccMin  — minimum NCC to accept a match (default 0.85)
-     *   topK    — max histogram candidates to NCC-verify per window (default 5)
+     *   bg       — [r,g,b] BG override; estimated from dominant image colour if omitted
+     *   nccMin   — minimum NCC to accept (default 0.85)
+     *   winTopK  — max candidates per histogram window to carry to NCC (default 30)
      */
     async matchItems(imageData, opts = {}) {
       if (!_histEntries || !_sheetBitmap || !_atlas) throw new Error("atlas not ready");
       const { width: W, height: H, data: px } = imageData;
-      const nccMin = opts.nccMin ?? 0.85;
-      const topK   = opts.topK   ?? 5;
+      const nccMin  = opts.nccMin  ?? 0.85;
+      const winTopK = opts.winTopK ?? 30;
       const BG_DEV_SQ = 225;
 
       const [bgR, bgG, bgB] = opts.bg ?? _cornerBg(px, W, H);
 
-      // Draw full sheet once into an OffscreenCanvas for tile access.
+      // Sprite sheet canvas — drawn once for tile reads.
       const sheetOC  = new OffscreenCanvas(_sheetBitmap.width, _sheetBitmap.height);
-      const sheetCtx = sheetOC.getContext("2d");
+      const sheetCtx = sheetOC.getContext("2d", { willReadFrequently: true });
       sheetCtx.drawImage(_sheetBitmap, 0, 0);
 
       const tileOC  = new OffscreenCanvas(HIST_SLOT_W, HIST_SLOT_H);
-      const tileCtx = tileOC.getContext("2d");
+      const tileCtx = tileOC.getContext("2d", { willReadFrequently: true });
 
-      // Precompute per-sprite mean/std over alpha-masked pixels for NCC denominator.
-      const spriteStats = new Map(); // id → {mu, sigma, alphaMask: Uint8Array, rgb: Float32Array}
+      // Sprite luminance stats, cached per ID.
+      const spriteStats = new Map();
       const getSpriteStats = (id) => {
         if (spriteStats.has(id)) return spriteStats.get(id);
         const e = _atlas[id] ?? _atlas[String(id)];
         if (!e || e.w !== HIST_SLOT_W || e.h !== HIST_SLOT_H) return null;
         tileCtx.clearRect(0, 0, HIST_SLOT_W, HIST_SLOT_H);
         tileCtx.drawImage(sheetOC, e.x, e.y, HIST_SLOT_W, HIST_SLOT_H, 0, 0, HIST_SLOT_W, HIST_SLOT_H);
-        const td = tileCtx.getImageData(0, 0, HIST_SLOT_W, HIST_SLOT_H).data;
-        const n  = HIST_SLOT_W * HIST_SLOT_H;
-        const rgb  = new Float32Array(n * 3);
-        const mask = new Uint8Array(n);
+        const td  = tileCtx.getImageData(0, 0, HIST_SLOT_W, HIST_SLOT_H).data;
+        const n   = HIST_SLOT_W * HIST_SLOT_H;
+        const lum = new Float32Array(n);
+        const msk = new Uint8Array(n);
         let sum = 0, cnt = 0;
         for (let i = 0; i < n; i++) {
-          const opaque = td[i*4+3] >= 128;
-          mask[i] = opaque ? 1 : 0;
-          if (!opaque) continue;
-          const lum = 0.299*td[i*4] + 0.587*td[i*4+1] + 0.114*td[i*4+2];
-          rgb[i*3] = td[i*4]; rgb[i*3+1] = td[i*4+1]; rgb[i*3+2] = td[i*4+2];
-          sum += lum; cnt++;
+          if (td[i*4+3] < 128) continue;
+          msk[i] = 1;
+          const l = 0.299*td[i*4] + 0.587*td[i*4+1] + 0.114*td[i*4+2];
+          lum[i] = l; sum += l; cnt++;
         }
         if (cnt < 10) return null;
         const mu = sum / cnt;
-        let vsum = 0;
-        for (let i = 0; i < n; i++) {
-          if (!mask[i]) continue;
-          const lum = 0.299*rgb[i*3] + 0.587*rgb[i*3+1] + 0.114*rgb[i*3+2];
-          vsum += (lum - mu) ** 2;
-        }
-        const sigma = Math.sqrt(vsum / cnt);
-        const stats = { mu, sigma, mask, rgb, cnt };
-        spriteStats.set(id, stats);
-        return stats;
+        let sVar = 0;
+        for (let i = 0; i < n; i++) { if (msk[i]) { const d = lum[i]-mu; sVar += d*d; } }
+        const s = { mu, sVar, msk, lum, cnt };
+        spriteStats.set(id, s);
+        return s;
       };
 
-      const stride = HIST_SLOT_W >> 1;
-      const raw = [];
+      // Precompute full-image luminance.
+      const imgLum = new Float32Array(W * H);
+      for (let i = 0; i < W * H; i++)
+        imgLum[i] = 0.299*px[i*4] + 0.587*px[i*4+1] + 0.114*px[i*4+2];
+
+      // NCC at a specific (wx, wy) for a given sprite stats object.
+      const nccAt = (s, wx, wy) => {
+        let qSum = 0;
+        for (let i = 0; i < HIST_SLOT_W * HIST_SLOT_H; i++) {
+          if (!s.msk[i]) continue;
+          qSum += imgLum[(wy + ((i / HIST_SLOT_W) | 0)) * W + (wx + i % HIST_SLOT_W)];
+        }
+        const qMu = qSum / s.cnt;
+        let num = 0, qVar = 0;
+        for (let i = 0; i < HIST_SLOT_W * HIST_SLOT_H; i++) {
+          if (!s.msk[i]) continue;
+          const dy = (i / HIST_SLOT_W) | 0, dx = i % HIST_SLOT_W;
+          const qv = imgLum[(wy + dy) * W + (wx + dx)] - qMu;
+          const sv = s.lum[i] - s.mu;
+          num  += qv * sv;
+          qVar += qv * qv;
+        }
+        return qVar < 1 ? 0 : num / Math.sqrt(qVar * s.sVar);
+      };
+
+      // Phase 1+2 — slide window, per-window shortlist, NCC search.
+      const stride  = HIST_SLOT_W >> 1;   // 18px
+      const radius  = stride;             // search ±18px around anchor
+      const pending = new Map();           // id → best {score, x, y}
 
       for (let wy = 0; wy <= H - HIST_SLOT_H; wy += stride) {
         for (let wx = 0; wx <= W - HIST_SLOT_W; wx += stride) {
-          // Build query histogram and luminance buffer for this window.
-          const qHist = new Map();
-          const qLum  = new Float32Array(HIST_SLOT_W * HIST_SLOT_H);
-          let nonBgPx = 0, qSum = 0;
+          // Build window histogram.
+          const wHist = new Map();
+          let nonBg = 0;
           for (let dy = 0; dy < HIST_SLOT_H; dy++) {
             for (let dx = 0; dx < HIST_SLOT_W; dx++) {
-              const pi = ((wy + dy) * W + (wx + dx)) * 4;
+              const pi = ((wy+dy)*W + (wx+dx)) * 4;
               const dr = px[pi]-bgR, dg = px[pi+1]-bgG, db = px[pi+2]-bgB;
-              const isBg = dr*dr + dg*dg + db*db <= BG_DEV_SQ;
-              const lum  = 0.299*px[pi] + 0.587*px[pi+1] + 0.114*px[pi+2];
-              qLum[dy * HIST_SLOT_W + dx] = lum;
-              if (isBg) continue;
-              nonBgPx++;
-              qSum += lum;
+              if (dr*dr+dg*dg+db*db <= BG_DEV_SQ) continue;
+              nonBg++;
               const k = (px[pi]>>3) | ((px[pi+1]>>3)<<5) | ((px[pi+2]>>3)<<10);
-              qHist.set(k, (qHist.get(k) ?? 0) + 1);
+              wHist.set(k, (wHist.get(k)??0)+1);
             }
           }
-          if (nonBgPx < 10) continue;
+          if (nonBg < 10) continue;
 
-          // Histogram pre-filter: top-K candidates by overlap score.
-          const candidates = new Set();
-          for (const k of qHist.keys()) {
+          // Top candidates by histogram overlap score.
+          const cands = new Set();
+          for (const k of wHist.keys()) {
             const b = _histBuckets.get(k);
-            if (b) for (const id of b) candidates.add(id);
+            if (b) for (const id of b) cands.add(id);
           }
-          if (!candidates.size) continue;
-
-          const scored = [];
-          for (const id of candidates) {
+          const topCands = [];
+          for (const id of cands) {
             const ref = _histEntries[id];
             if (!ref) continue;
-            let overlap = 0;
-            for (const [k, n] of ref.counts) overlap += Math.min(qHist.get(k) ?? 0, n);
-            scored.push([overlap / ref.total, id]);
+            let ov = 0;
+            for (const [k,n] of ref.counts) ov += Math.min(wHist.get(k)??0, n);
+            // Combined: ov²/(nonBg*ref.total) — rewards items that both cover their
+            // own histogram AND explain a large share of the window's non-BG pixels.
+            topCands.push([ov * ov / (nonBg * ref.total), id]);
           }
-          scored.sort((a, b) => b[0] - a[0]);
-          const topCands = scored.slice(0, topK).map(([, id]) => id);
+          topCands.sort((a,b) => b[0]-a[0]);
+          const minHist = topCands.length > 0 ? topCands[0][0] * 0.50 : 0;
 
-          // NCC verification against actual sprite pixels.
-          let bestNcc = -1, bestId = -1;
-          for (const id of topCands) {
+          // NCC search in radius around this window anchor.
+          for (const [hs, id] of topCands.slice(0, winTopK)) {
+            if (hs < minHist) break;
             const s = getSpriteStats(id);
-            if (!s || s.sigma < 1) continue;
-            const qMu = qSum / s.cnt;   // mean over sprite's masked region
-            let num = 0, qVar = 0;
-            for (let i = 0; i < HIST_SLOT_W * HIST_SLOT_H; i++) {
-              if (!s.mask[i]) continue;
-              const qv = qLum[i] - qMu;
-              const sv = 0.299*s.rgb[i*3] + 0.587*s.rgb[i*3+1] + 0.114*s.rgb[i*3+2] - s.mu;
-              num  += qv * sv;
-              qVar += qv * qv;
-            }
-            const ncc = num / (Math.sqrt(qVar) * s.sigma * s.cnt);
-            if (ncc > bestNcc || (ncc === bestNcc && (bestId < 0 || id < bestId))) {
-              bestNcc = ncc; bestId = id;
+            if (!s || s.sVar < 1) continue;
+            const x0 = Math.max(0, wx - radius), x1 = Math.min(W - HIST_SLOT_W, wx + radius);
+            const y0 = Math.max(0, wy - radius), y1 = Math.min(H - HIST_SLOT_H, wy + radius);
+            for (let sy = y0; sy <= y1; sy++) {
+              for (let sx = x0; sx <= x1; sx++) {
+                const ncc = nccAt(s, sx, sy);
+                const cur = pending.get(id);
+                if (!cur || ncc > cur.score) pending.set(id, { score: ncc, x: sx, y: sy });
+              }
             }
           }
-          if (bestNcc >= nccMin) raw.push({ id: bestId, score: bestNcc, x: wx, y: wy });
         }
       }
 
-      // NMS: highest NCC per neighbourhood, one result per id.
-      raw.sort((a, b) => b.score - a.score);
-      const kept = [], seenId = new Set();
+      // Phase 3 — filter by nccMin, NMS by position.
+      const raw = [];
+      for (const [id, best] of pending) {
+        if (best.score >= nccMin) {
+          const s = spriteStats.get(id);
+          raw.push({ id, ...best, _cnt: s ? s.cnt : 0 });
+        }
+      }
+      // Sort: higher score first; ties broken by more opaque pixels (larger sprite wins).
+      raw.sort((a, b) => b.score - a.score || b._cnt - a._cnt);
+      const kept = [], seenPos = [];
       for (const h of raw) {
-        if (seenId.has(h.id)) continue;
-        if (kept.some(k => Math.abs(k.x-h.x) < HIST_SLOT_W && Math.abs(k.y-h.y) < HIST_SLOT_H)) continue;
-        kept.push(h);
-        seenId.add(h.id);
+        if (seenPos.some(p => Math.abs(p.x - h.x) < HIST_SLOT_W && Math.abs(p.y - h.y) < HIST_SLOT_H)) continue;
+        kept.push({ id: h.id, score: h.score, x: h.x, y: h.y });
+        seenPos.push({ x: h.x, y: h.y });
       }
       return kept;
     },
@@ -593,18 +616,19 @@
   // ── Helpers ────────────────────────────────────────────────────────────────
 
   function _cornerBg(px, W, H) {
+    // Sample every 4th pixel to find the dominant (background) colour.
+    // Quantise to 5 bits/channel so nearby shades cluster together.
     const freq = new Map();
-    const sample = (x, y) => {
-      const i = (y * W + x) * 4;
-      const k = (px[i] << 16) | (px[i+1] << 8) | px[i+2];
-      freq.set(k, (freq.get(k) ?? 0) + 1);
-    };
-    for (let y = 0; y < 4; y++) for (let x = 0; x < 4; x++) {
-      sample(x, y); sample(W-1-x, y); sample(x, H-1-y); sample(W-1-x, H-1-y);
+    for (let y = 0; y < H; y += 4) {
+      for (let x = 0; x < W; x += 4) {
+        const i = (y * W + x) * 4;
+        const k = (px[i]>>3) | ((px[i+1]>>3)<<5) | ((px[i+2]>>3)<<10);
+        freq.set(k, (freq.get(k) ?? 0) + 1);
+      }
     }
     let best = 0, bestK = 0;
     for (const [k, n] of freq) if (n > best) { best = n; bestK = k; }
-    return [(bestK >> 16) & 0xff, (bestK >> 8) & 0xff, bestK & 0xff];
+    return [((bestK)&31)<<3, ((bestK>>5)&31)<<3, ((bestK>>10)&31)<<3];
   }
 
   root.SpriteAtlas = SpriteAtlas;
