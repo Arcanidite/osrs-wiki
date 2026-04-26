@@ -30,51 +30,75 @@
   }
 
   // ── Persistence ───────────────────────────────────────────────────────────
+
+  function lsSet(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* quota */ }
+  }
+
+  // Plans store steps as slim refs: preset steps → {id} only; custom/synthetic/
+  // capstone steps keep all fields. Reconstructed on load via expandSteps().
+  function slimSteps(steps) {
+    return (steps ?? []).map((s) =>
+      (s._custom || s._synthetic || s._capstone) ? s : { id: s.id }
+    );
+  }
+  function expandSteps(slim) {
+    const idx = Object.fromEntries((allSteps ?? []).map((s) => [s.id, s]));
+    return (slim ?? []).map((s) =>
+      (s._custom || s._synthetic || s._capstone || Object.keys(s).length > 1)
+        ? s
+        : (idx[s.id] ?? s)
+    );
+  }
+  function slimPlan(plan) {
+    return { ...plan, steps: slimSteps(plan.steps) };
+  }
+
   const store = {
     profile:      ()      => JSON.parse(localStorage.getItem(STORE_PROFILE) ?? "{}"),
-    saveProfile:  (p)     => localStorage.setItem(STORE_PROFILE, JSON.stringify(p)),
+    saveProfile:  (p)     => lsSet(STORE_PROFILE, p),
 
     plans:        ()      => JSON.parse(localStorage.getItem(STORE_PLANS) ?? "[]"),
     savePlan:     (plan)  => {
-      const plans = store.plans(); plans.push(plan);
-      localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
+      const plans = store.plans(); plans.push(slimPlan(plan));
+      lsSet(STORE_PLANS, plans);
       return plans.length - 1;
     },
     updatePlan:   (i, p)  => {
-      const plans = store.plans(); plans[i] = p;
-      localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
+      const plans = store.plans(); plans[i] = slimPlan(p);
+      lsSet(STORE_PLANS, plans);
     },
     deletePlan:   (i)     => {
       const plans = store.plans(); plans.splice(i, 1);
-      localStorage.setItem(STORE_PLANS, JSON.stringify(plans));
+      lsSet(STORE_PLANS, plans);
     },
 
     goals:        ()      => JSON.parse(localStorage.getItem(STORE_GOALS)  ?? "[]"),
-    saveGoals:    (g)     => localStorage.setItem(STORE_GOALS,  JSON.stringify(g)),
+    saveGoals:    (g)     => lsSet(STORE_GOALS, g),
 
     active:       ()      => JSON.parse(localStorage.getItem(STORE_ACTIVE) ?? "null"),
-    saveActive:   (p)     => localStorage.setItem(STORE_ACTIVE, JSON.stringify(p)),
+    saveActive:   (p)     => lsSet(STORE_ACTIVE, p ? slimPlan(p) : null),
 
     stepNotes:    ()      => JSON.parse(localStorage.getItem(STORE_STEP_NOTES) ?? "{}"),
     saveStepNote: (id, t) => {
       const n = store.stepNotes();
       if (t.trim()) n[id] = t.trim(); else delete n[id];
-      localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(n));
+      lsSet(STORE_STEP_NOTES, n);
     },
-    applyNotes:   (m)     => localStorage.setItem(STORE_STEP_NOTES, JSON.stringify(m ?? {})),
+    applyNotes:   (m)     => lsSet(STORE_STEP_NOTES, m ?? {}),
     clearNotes:   ()      => localStorage.removeItem(STORE_STEP_NOTES),
 
     customGoals:      ()  => JSON.parse(localStorage.getItem(STORE_CUSTOM_GOALS) ?? "[]"),
-    saveCustomGoals:  (g) => localStorage.setItem(STORE_CUSTOM_GOALS, JSON.stringify(g)),
+    saveCustomGoals:  (g) => lsSet(STORE_CUSTOM_GOALS, g),
 
     tags:      () => new Set(JSON.parse(localStorage.getItem(STORE_TAGS) ?? "[]")),
-    saveTags:  (s) => localStorage.setItem(STORE_TAGS, JSON.stringify([...s].sort())),
+    saveTags:  (s) => lsSet(STORE_TAGS, [...s].sort()),
 
     loadouts:      ()         => JSON.parse(localStorage.getItem(STORE_LOADOUTS) ?? "{}"),
     saveLoadout:   (id, rows) => {
       const m = store.loadouts();
       if (rows?.length) m[id] = rows; else delete m[id];
-      localStorage.setItem(STORE_LOADOUTS, JSON.stringify(m));
+      lsSet(STORE_LOADOUTS, m);
     },
   };
 
@@ -2470,15 +2494,16 @@
       renderGoalQueue();
     }
     store.applyNotes(plan.stepNotes ?? {});
-    currentPath = plan.steps;
+    const steps = expandSteps(plan.steps);
+    currentPath = steps;
     if (planTabs[activeTabIdx]) {
       planTabs[activeTabIdx].name = plan.name;
       planTabs[activeTabIdx].activePlanIdx = activePlanIdx;
       planTabs[activeTabIdx].focalSteps = new Set(plan.focalSteps ?? []);
     }
     renderTabBar();
-    renderSteps(plan.steps);
-    window._routerLastPath = { path: plan.steps, profile: { skills: plan.skills, style: plan.style }, goals: plan.goals ?? [] };
+    renderSteps(steps);
+    window._routerLastPath = { path: steps, profile: { skills: plan.skills, style: plan.style }, goals: plan.goals ?? [] };
     store.saveActive(plan);
   }
 
@@ -2548,7 +2573,7 @@
     };
     [...allSteps, ...allGoals].forEach(extractTags);
     [...customGoals, ...store.goals()].forEach(extractTags);
-    store.plans().forEach((p) => (p.steps ?? []).forEach(extractTags));
+    store.plans().forEach((p) => expandSteps(p.steps).forEach(extractTags));
     store.saveTags(knownTags);
     goalQueue = store.goals();
     renderGoalQueue();
