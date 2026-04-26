@@ -1820,7 +1820,7 @@
   // Shared registry of icon elements waiting for a sprite to load.
   // Map<itemId:number, Set<element>> — drained by one shared listener.
   // Detached elements (dropdown rebuilt) are silently dropped on drain.
-  const _pendingIcons = new Map();
+  const _pendingIcons = new Map();  // id → Set<element>
   window.addEventListener("osrs-sprite-ready", ({ detail: { id, dataUrl } }) => {
     const set = _pendingIcons.get(id);
     if (!set) return;
@@ -1837,6 +1837,7 @@
     if (d) { icon.style.width = `${d.w}px`; icon.style.height = `${d.h}px`; }
     const bg = a.css(id);
     if (bg) { icon.style.background = bg; icon.textContent = ""; return; }
+    // Sprite not in cache yet — register for the ready event.
     let set = _pendingIcons.get(id);
     if (!set) { set = new Set(); _pendingIcons.set(id, set); }
     set.add(icon);
@@ -1903,7 +1904,12 @@
 
     const showDropdown = (q) => {
       const a = atlas();
-      if (!a?.ready) { dropdown.hidden = true; return; }
+      if (!a?.ready) {
+        // Atlas still loading — retry on the first sprite-ready event.
+        const retry = () => { window.removeEventListener("osrs-sprite-ready", retry); showDropdown(q); };
+        window.addEventListener("osrs-sprite-ready", retry);
+        dropdown.hidden = true; return;
+      }
       const current = new Set([...pillsEl.querySelectorAll("[data-item-id]")].map((p) => p.dataset.itemId));
       const results = a.search(q || "").slice(0, 12).filter((r) => !current.has(String(r.id)));
       if (!results.length) { dropdown.hidden = true; return; }

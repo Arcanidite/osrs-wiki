@@ -92,8 +92,9 @@
       `;
       const worker = new Worker(URL.createObjectURL(new Blob([src], { type: "text/javascript" })));
       worker.onmessage = ({ data: { id, dataUrl } }) => {
-        try { localStorage.setItem(LS_PFX + id, dataUrl); } catch { /* quota */ }
-        _cssCache.delete(+id);
+        try { localStorage.setItem(LS_PFX + id, dataUrl); } catch { /* quota — css() falls back to _cssCache */ }
+        // Populate in-memory cache so css() works even when localStorage is full.
+        _cssCache.set(+id, `url('${dataUrl}') no-repeat center / contain`);
         window.dispatchEvent(new CustomEvent("osrs-sprite-ready", { detail: { id: +id, dataUrl } }));
         window._atlasFpPromise = null;
         SpriteAtlas.invalidateBuckets();
