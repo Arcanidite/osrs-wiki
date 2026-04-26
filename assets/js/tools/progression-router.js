@@ -4,14 +4,17 @@
   const GOALS_URL   = BASE + "/assets/data/tools/goals.jsonl";
   const REGIONS_URL      = BASE + "/assets/data/tools/regions.jsonl";
   const CONSTRAINTS_URL  = BASE + "/assets/data/tools/constraints.jsonl";
-  const STORE_PROFILE    = "osrs-router-profile";
-  const STORE_PLANS      = "osrs-router-plans";
-  const STORE_GOALS      = "osrs-router-goals";
-  const STORE_ACTIVE     = "osrs-router-active";
-  const STORE_STEP_NOTES    = "osrs-step-notes";
-  const STORE_CUSTOM_GOALS  = "osrs-router-custom-goals";
-  const STORE_TAGS          = "osrs-router-tags";
-  const STORE_LOADOUTS      = "osrs-router-loadouts";
+  // Legacy keys — used only in migrateLegacyStore(), removed after migration.
+  const _LEGACY = {
+    PROFILE:      "osrs-router-profile",
+    PLANS:        "osrs-router-plans",
+    GOALS:        "osrs-router-goals",
+    ACTIVE:       "osrs-router-active",
+    STEP_NOTES:   "osrs-step-notes",
+    CUSTOM_GOALS: "osrs-router-custom-goals",
+    TAGS:         "osrs-router-tags",
+    LOADOUTS:     "osrs-router-loadouts",
+  };
 
   // ── Data ──────────────────────────────────────────────────────────────────
   async function loadJsonl(url) {
@@ -30,10 +33,6 @@
   }
 
   // ── Persistence ───────────────────────────────────────────────────────────
-
-  function lsSet(key, value) {
-    try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* quota */ }
-  }
 
   // Plans store steps as slim refs: preset steps → {id} only; custom/synthetic/
   // capstone steps keep all fields. Reconstructed on load via expandSteps().
@@ -54,53 +53,100 @@
     return { ...plan, steps: slimSteps(plan.steps) };
   }
 
-  const store = {
-    profile:      ()      => JSON.parse(localStorage.getItem(STORE_PROFILE) ?? "{}"),
-    saveProfile:  (p)     => lsSet(STORE_PROFILE, p),
+  // One-time forward migration: reads legacy flat keys → DAL nodes, then removes them.
+  function migrateLegacyStore() {
+    const d = window.DAL;
+    if (d.node("meta", "migrated")) return;
+    const get = (k) => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } };
 
-    plans:        ()      => JSON.parse(localStorage.getItem(STORE_PLANS) ?? "[]"),
-    savePlan:     (plan)  => {
-      const plans = store.plans(); plans.push(slimPlan(plan));
-      lsSet(STORE_PLANS, plans);
-      return plans.length - 1;
-    },
-    updatePlan:   (i, p)  => {
-      const plans = store.plans(); plans[i] = slimPlan(p);
-      lsSet(STORE_PLANS, plans);
-    },
-    deletePlan:   (i)     => {
-      const plans = store.plans(); plans.splice(i, 1);
-      lsSet(STORE_PLANS, plans);
-    },
+    const oldPlans = get(_LEGACY.PLANS);
+    if (oldPlans?.length) {
+      const order = oldPlans.map((p, i) => {
+        const id = `plan:${Date.now() + i}`;
+        d.upsert("plan", id, p);
+        return id;
+      });
+      d.upsert("meta", "plan:order", order);
+    }
+    const oldProfile = get(_LEGACY.PROFILE);
+    if (oldProfile)   d.upsert("meta", "profile", oldProfile);
+    const oldGoals = get(_LEGACY.GOALS);
+    if (oldGoals)     d.upsert("meta", "goals", oldGoals);
+    const oldActive = get(_LEGACY.ACTIVE);
+    if (oldActive)    d.upsert("meta", "active", oldActive);
+    const oldNotes = get(_LEGACY.STEP_NOTES);
+    if (oldNotes)     d.upsert("meta", "step-notes", oldNotes);
+    const oldCustom = get(_LEGACY.CUSTOM_GOALS);
+    if (oldCustom)    d.upsert("meta", "custom-goals", oldCustom);
+    const oldTags = get(_LEGACY.TAGS);
+    if (oldTags)      d.upsert("meta", "tags", oldTags);
+    const oldLoadouts = get(_LEGACY.LOADOUTS);
+    if (oldLoadouts)  Object.entries(oldLoadouts).forEach(([id, rows]) => d.upsert("loadout", id, { rows }));
 
-    goals:        ()      => JSON.parse(localStorage.getItem(STORE_GOALS)  ?? "[]"),
-    saveGoals:    (g)     => lsSet(STORE_GOALS, g),
+    Object.values(_LEGACY).forEach(k => localStorage.removeItem(k));
+    d.upsert("meta", "migrated", true);
+  }
 
-    active:       ()      => JSON.parse(localStorage.getItem(STORE_ACTIVE) ?? "null"),
-    saveActive:   (p)     => lsSet(STORE_ACTIVE, p ? slimPlan(p) : null),
+  const store = (() => {
+    const d = () => window.DAL;
+    const planOrder = () => d().node("meta", "plan:order")?.data ?? [];
+    const savePlanOrder = (ids) => d().upsert("meta", "plan:order", ids);
 
-    stepNotes:    ()      => JSON.parse(localStorage.getItem(STORE_STEP_NOTES) ?? "{}"),
-    saveStepNote: (id, t) => {
-      const n = store.stepNotes();
-      if (t.trim()) n[id] = t.trim(); else delete n[id];
-      lsSet(STORE_STEP_NOTES, n);
-    },
-    applyNotes:   (m)     => lsSet(STORE_STEP_NOTES, m ?? {}),
-    clearNotes:   ()      => localStorage.removeItem(STORE_STEP_NOTES),
+    return {
+      profile:     () => d().node("meta", "profile")?.data ?? {},
+      saveProfile: (p) => d().upsert("meta", "profile", p),
 
-    customGoals:      ()  => JSON.parse(localStorage.getItem(STORE_CUSTOM_GOALS) ?? "[]"),
-    saveCustomGoals:  (g) => lsSet(STORE_CUSTOM_GOALS, g),
+      plans: () => planOrder().map(id => d().node("plan", id)?.data).filter(Boolean),
+      savePlan: (plan) => {
+        const order = planOrder();
+        const id = `plan:${Date.now()}`;
+        d().upsert("plan", id, slimPlan(plan));
+        order.push(id);
+        savePlanOrder(order);
+        return order.length - 1;
+      },
+      updatePlan: (i, p) => {
+        const id = planOrder()[i];
+        if (id) d().upsert("plan", id, slimPlan(p));
+      },
+      deletePlan: (i) => {
+        const order = planOrder();
+        const id = order[i];
+        if (!id) return;
+        d().remove("plan", id);
+        order.splice(i, 1);
+        savePlanOrder(order);
+      },
 
-    tags:      () => new Set(JSON.parse(localStorage.getItem(STORE_TAGS) ?? "[]")),
-    saveTags:  (s) => lsSet(STORE_TAGS, [...s].sort()),
+      goals:     () => d().node("meta", "goals")?.data ?? [],
+      saveGoals: (g) => d().upsert("meta", "goals", g),
 
-    loadouts:      ()         => JSON.parse(localStorage.getItem(STORE_LOADOUTS) ?? "{}"),
-    saveLoadout:   (id, rows) => {
-      const m = store.loadouts();
-      if (rows?.length) m[id] = rows; else delete m[id];
-      lsSet(STORE_LOADOUTS, m);
-    },
-  };
+      active:     () => d().node("meta", "active")?.data ?? null,
+      saveActive: (p) => p ? d().upsert("meta", "active", slimPlan(p)) : d().remove("meta", "active"),
+
+      stepNotes:    () => d().node("meta", "step-notes")?.data ?? {},
+      saveStepNote: (id, t) => {
+        const n = store.stepNotes();
+        if (t.trim()) n[id] = t.trim(); else delete n[id];
+        d().upsert("meta", "step-notes", n);
+      },
+      applyNotes: (m) => d().upsert("meta", "step-notes", m ?? {}),
+      clearNotes: () => d().remove("meta", "step-notes"),
+
+      customGoals:     () => d().node("meta", "custom-goals")?.data ?? [],
+      saveCustomGoals: (g) => d().upsert("meta", "custom-goals", g),
+
+      tags:     () => new Set(d().node("meta", "tags")?.data ?? []),
+      saveTags: (s) => d().upsert("meta", "tags", [...s].sort()),
+
+      loadouts: () => Object.fromEntries(
+        d().query({ type: "loadout" }).map(n => [n.id, n.data.rows])
+      ),
+      saveLoadout: (id, rows) => rows?.length
+        ? d().upsert("loadout", id, { rows })
+        : d().remove("loadout", id),
+    };
+  })();
 
   // ── Mutable plan state ────────────────────────────────────────────────────
   let currentPath      = [];
@@ -2545,6 +2591,7 @@
   async function init() {
     const base = document.currentScript?.dataset?.baseurl
       ?? document.querySelector("[data-baseurl]")?.dataset?.baseurl ?? "";
+    migrateLegacyStore();
     window.SpriteAtlas?.load(base);   // kick off async sprite extraction; idempotent
     window.addEventListener("osrs-sprite-ready", () => {
       const stepsEl = els.steps();
