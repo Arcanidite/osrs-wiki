@@ -2229,45 +2229,74 @@
         const form = document.createElement("div");
         form.className = "step-edit-form";
         form.innerHTML = `
-          <div class="sef-row">
-            <input class="sef-label"  type="text" value="${escHtml(step.label)}"       placeholder="Label">
+          <div class="ins-step-body">
+            <input class="sef-label"  type="text" value="${escHtml(step.label)}"        placeholder="Label">
             <input class="sef-detail" type="text" value="${escHtml(step.detail ?? "")}" placeholder="Detail">
           </div>
           <div class="ins-skill-section ins-skill-section--req">
             <div class="ins-skill-header">
               <span class="ins-skill-title req">Requirements</span>
-              <button class="btn btn-ghost sef-add-req">+ add</button>
+              <button class="btn btn-ghost sef-add-req">+ skill</button>
             </div>
             <div class="ins-skill-pills sef-reqs"></div>
+            <div class="sef-item-reqs-wrap"></div>
+            <div class="sef-tag-reqs-wrap"></div>
           </div>
           <div class="ins-skill-section ins-skill-section--grant">
             <div class="ins-skill-header">
               <span class="ins-skill-title grant">Grants</span>
-              <button class="btn btn-ghost sef-add-grant">+ add</button>
+              <button class="btn btn-ghost sef-add-grant">+ skill</button>
             </div>
             <div class="ins-skill-pills sef-grants"></div>
+            <div class="sef-item-grants-wrap"></div>
+            <div class="sef-tag-grants-wrap"></div>
           </div>
-          <div class="sef-actions">
+          <div class="goal-edit-actions">
             <button class="btn btn-primary sef-commit">Save</button>
             <button class="btn btn-ghost sef-cancel">Cancel</button>
           </div>`;
 
         const reqWrap   = form.querySelector(".sef-reqs");
         const grantWrap = form.querySelector(".sef-grants");
-        Object.entries(reqs.skills ?? {}).forEach(([sk, lvl]) => reqWrap.appendChild(makeSkillPill(sk, lvl, "req")));
-        Object.entries(grants).forEach(([sk, lvl]) => grantWrap.appendChild(makeSkillPill(sk, lvl, "grant")));
 
+        Object.entries(reqs.skills ?? {}).forEach(([sk, lvl]) => reqWrap.appendChild(makeSkillPill(sk, lvl, "req")));
+        Object.entries(grants).forEach(([sk, v]) => {
+          if (typeof v === "number") grantWrap.appendChild(makeSkillPill(sk, v, "grant"));
+        });
+
+        const tagBox = makeTagReqBox(reqs.tags ?? []);
+        form.querySelector(".sef-tag-reqs-wrap").appendChild(tagBox);
+        const tagGrantBox = makeTagReqBox(
+          Object.entries(grants).filter(([, v]) => v === true).map(([k]) => k)
+        );
+        tagGrantBox.classList.add("region-tagbox--grant");
+        form.querySelector(".sef-tag-grants-wrap").appendChild(tagGrantBox);
+
+        const itemReqBox   = makeItemPickerBox(reqs.atlas_items ?? [], "req");
+        const itemGrantBox = makeItemPickerBox(grants.atlas_items ?? [], "grant");
+        form.querySelector(".sef-item-reqs-wrap").appendChild(itemReqBox);
+        form.querySelector(".sef-item-grants-wrap").appendChild(itemGrantBox);
+
+        form.querySelector(".sef-label")?.focus();
         form.querySelector(".sef-add-req").addEventListener("click",   () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
         form.querySelector(".sef-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
 
         form.querySelector(".sef-commit").addEventListener("click", () => {
           const label  = form.querySelector(".sef-label").value.trim()  || step.label;
           const detail = form.querySelector(".sef-detail").value.trim() || "";
-          currentPath[idx] = { ...step, label, detail,
-            reqs:   { skills: readSkillPills(reqWrap) },
-            grants: readSkillPills(grantWrap) };
+          const newGrants = readSkillPills(grantWrap);
+          tagGrantBox.readTags().forEach((t) => { newGrants[t] = true; });
+          newGrants.atlas_items = itemGrantBox.readItems();
+          currentPath[idx] = {
+            ...step, label, detail,
+            reqs:   { skills: readSkillPills(reqWrap), tags: tagBox.readTags(), atlas_items: itemReqBox.readItems() },
+            grants: newGrants,
+          };
+          mergeTags(tagBox.readTags());
+          mergeTags(tagGrantBox.readTags());
           if (window._routerLastPath) window._routerLastPath.path = currentPath;
           renderSteps(currentPath);
+          upsertActivePlan(currentPath, readProfile());
         });
         form.querySelector(".sef-cancel").addEventListener("click", () => renderSteps(currentPath));
 
