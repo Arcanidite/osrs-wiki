@@ -1300,6 +1300,7 @@
       const itemGrantBox = makeItemPickerBox([], "grant");
       li.querySelector(".ins-item-grants-wrap").appendChild(itemGrantBox);
 
+      li.querySelector(".ins-label")?.focus();
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
       li.querySelector(".ins-cancel").addEventListener("click", showCard);
