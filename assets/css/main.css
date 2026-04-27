@@ -472,9 +472,7 @@ body {
 .route-step.step-seq-invalid { background: #fff8f8; }
 .step-num[data-valid="true"]  { box-shadow: 0 0 0.2rem 0.02rem #02ff3c; }
 .step-num[data-valid="false"]  { box-shadow: 0 0 0.2rem 0.02rem #dc3545; }
-.step-actions { display: flex; flex-direction: column; 
-    justify-content: space-between; gap: var(--sp-q); 
-    height: 100%; }
+.step-actions { display: flex; flex-direction: column; gap: var(--sp-q); height: 100%; }
 .step-actions > * {
   background: white;
 }
