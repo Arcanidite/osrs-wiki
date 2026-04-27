@@ -488,7 +488,7 @@ body {
   white-space: nowrap;
   padding: var(--sp-h);
 }
-.step-body { display: flex; flex-direction: column; gap: var(--gap-xs); }
+.step-body { display: grid; gap: var(--gap-xs); justify-content: space-between; grid-auto-flow: row; }
 .step-title { font-weight: 600; color: var(--ink); }
 .step-detail { font-size: var(--fs-xs); color: var(--muted); }
 .step-meta { display: flex; flex-direction: column; gap: var(--gap-xs); }
@@ -613,7 +613,7 @@ body {
 
 /* ── Qual sections (unified req/grant chips for all node types) ──────────── */
 .step-qual-section {
-  display: flex; flex-direction: column; gap: 2px;
+  display: flex; flex-direction: column; gap: 2px; grid-row: 2;
 }
 .step-qual-section-hd {
   display: flex; align-items: center; gap: var(--gap-xs);
@@ -654,7 +654,7 @@ body {
 .step-qual-chip--item .ins-item-icon { width: 32px; height: 28px; }
 
 /* ── Per-step notes ──────────────────────────────────────────────────────── */
-.step-note-row { display: flex; flex-direction: column; gap: 2px; }
+.step-note-row { display: flex; grid-column: span 2; }
 .step-note-toggle {
   display: flex; align-items: center; gap: 6px;
   width: 100%; border: none; background: none; cursor: pointer;
