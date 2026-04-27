@@ -610,16 +610,20 @@ body {
 .ins-label:focus, .ins-detail:focus { outline: none; }
 
 /* ── Per-step item icons ─────────────────────────────────────────────────── */
-.step-items-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.step-items-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-top: 2px; }
+.step-items-label {
+  font-size: var(--fs-xs); font-weight: 600; margin-right: 2px;
+}
+.step-items-row--req  .step-items-label { color: #b47a00; }
+.step-items-row--grant .step-items-label { color: #2e7d32; }
 .step-item-chip {
   display: inline-flex; align-items: center;
   border-radius: var(--radius); padding: 1px;
-  background: var(--faint); border: 1px solid var(--border);
   cursor: default;
 }
 .step-item-chip .ins-item-icon { width: 36px; height: 32px; }
-.step-items-row--req .step-item-chip { border-color: color-mix(in srgb, var(--gold) 40%, var(--border)); }
-.step-items-row--grant .step-item-chip { border-color: color-mix(in srgb, green 30%, var(--border)); }
+.step-items-row--req  .step-item-chip { background: #fffbe6; border: 1px solid #c89a00; }
+.step-items-row--grant .step-item-chip { background: #f1f8f1; border: 1px solid #4caf50; }
 
 /* ── Per-step notes ──────────────────────────────────────────────────────── */
 .step-note-wrap { display: flex; flex-direction: column; gap: 2px; }

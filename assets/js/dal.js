@@ -31,6 +31,11 @@
     unlink(type, from, to)        { delete _g().e[ek(type, from, to)]; _w(); },
     edgesFrom(type, from)         { return Object.values(_g().e).filter(e => e.type === type && e.from === from); },
     edgesTo(type, to)             { return Object.values(_g().e).filter(e => e.type === type && e.to === to); },
+    unlinkAll(type, from)         {
+      const g = _g(), pfx = `${type}\x1f${from}\x1f`;
+      Object.keys(g.e).forEach(k => { if (k.startsWith(pfx)) delete g.e[k]; });
+      _w();
+    },
 
     invalidate() { _c = null; },
   };

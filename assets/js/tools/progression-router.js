@@ -1107,9 +1107,28 @@
       activePlanIdx = store.savePlan(plan);
     }
     store.saveActive(plan);
+    syncItemEdges(path);
     if (planTabs[activeTabIdx]) { planTabs[activeTabIdx].name = name; planTabs[activeTabIdx].activePlanIdx = activePlanIdx; }
     renderTabBar();
     renderPlans();
+  }
+
+  // Index atlas_items from each step's reqs/grants as typed DAL edges so any
+  // module can query "all steps requiring item X" via dal.edgesTo("step:req-item", id).
+  function syncItemEdges(path) {
+    const d = window.DAL;
+    path.forEach(step => {
+      d.unlinkAll("step:req-item",   step.id);
+      d.unlinkAll("step:grant-item", step.id);
+      (step.reqs?.atlas_items ?? []).forEach(({ id, name }) => {
+        d.upsert("item", String(id), { name });
+        d.link("step:req-item", step.id, String(id));
+      });
+      (step.grants?.atlas_items ?? []).forEach(({ id, name }) => {
+        d.upsert("item", String(id), { name });
+        d.link("step:grant-item", step.id, String(id));
+      });
+    });
   }
 
   function recompute() {
@@ -1133,7 +1152,8 @@
   }
   function itemIconsHtml(items, tint) {
     if (!items?.length) return "";
-    return `<span class="step-items-row step-items-row--${tint}">${
+    const label = tint === "req" ? "Req:" : "Grants:";
+    return `<span class="step-items-row step-items-row--${tint}"><span class="step-items-label">${label}</span>${
       items.map(({ id, name }) =>
         `<span class="step-item-chip" title="${escHtml(name)}"><span class="ins-item-icon" data-item-id="${+id}"></span></span>`
       ).join("")
@@ -1499,7 +1519,7 @@
       const stepDone  = questDone || manualStepDone.has(step.id);
       const isFocal   = tab?.focalSteps?.has(step.id);
       const valid     = seqValid[i];
-      const grantEntries = Object.entries(normalizeReqs(step.grants).skills ?? {});
+      const grantEntries = Object.entries(step.grants ?? {}).filter(([, v]) => typeof v === "number");
       const grantSkills  = grantEntries.map(([sk, lvl]) => `${sk}:${lvl}`).join(" ");
       const grantAttr    = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
       const focalAttr   = isFocal ? ' data-focal="1"' : "";
@@ -1517,8 +1537,8 @@
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
-          ${itemIconsHtml(normalizeReqs(step.reqs).atlas_items, "req")}
-          ${itemIconsHtml(normalizeReqs(step.grants).atlas_items, "grant")}
+          ${itemIconsHtml(step.reqs?.atlas_items, "req")}
+          ${itemIconsHtml(step.grants?.atlas_items, "grant")}
           <span class="step-note-wrap">
             <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
             <button class="step-note-toggle btn btn-ghost" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
@@ -1985,7 +2005,7 @@
         window.addEventListener("osrs-sprite-ready", retry);
         dropdown.hidden = true; return;
       }
-      const current = new Set([...pillsEl.querySelectorAll("[data-item-id]")].map((p) => p.dataset.itemId));
+      const current = new Set([...pillsEl.querySelectorAll(".ins-item-pill")].map((p) => p.dataset.itemId));
       const results = a.search(q || "").slice(0, 12).filter((r) => !current.has(String(r.id)));
       if (!results.length) { dropdown.hidden = true; return; }
       dropdown.innerHTML = "";
@@ -2021,7 +2041,7 @@
       }
     });
 
-    box.readItems = () => [...pillsEl.querySelectorAll("[data-item-id]")].map((p) => ({
+    box.readItems = () => [...pillsEl.querySelectorAll(".ins-item-pill")].map((p) => ({
       id: +p.dataset.itemId,
       name: p.querySelector(".ins-item-name")?.textContent ?? "",
     }));
