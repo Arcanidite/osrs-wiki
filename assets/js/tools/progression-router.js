@@ -583,6 +583,7 @@
     initialTags.forEach(addTag);
 
     box.readTags = () => [...tagsSpan.querySelectorAll(".rtb-tag[data-tag]")].map((s) => s.dataset.tag);
+    box.addTag   = addTag;
     return box;
   }
 
@@ -1208,6 +1209,70 @@
   }
 
   // ── Unified step creation form (inline insert + bank new-step) ────────────
+  // ── Qual pick mode ────────────────────────────────────────────────────────
+  // Activated when user clicks a 🎯 picker button in the insert form.
+  // Attaches hover/click handlers to all .route-step <li> elements.
+  // Clicking a step merges its req or grant edges into the form boxes.
+  let _pickMode = null;
+
+  function enterPickMode({ tint, stepsEl, reqWrap, grantWrap, tagBox, tagGrantBox, itemReqBox, itemGrantBox, btnEl }) {
+    if (_pickMode) exitPickMode();
+    btnEl.classList.add("pick-active");
+    stepsEl.classList.add("pick-mode");
+
+    const onStep = (e) => {
+      const li = e.currentTarget;
+      const stepIdx = +li.dataset.stepIdx;
+      const step = currentPath[stepIdx];
+      if (!step) return exitPickMode();
+      const edgeType = tint === "req" ? "step:req" : "step:grant";
+      dal().edgesFrom(edgeType, step.id).forEach(e => {
+        const { value, label: qLabel } = e.data ?? {};
+        const key = e.to;
+        const ns  = key.slice(0, key.indexOf(":"));
+        const raw = key.slice(ns.length + 1);
+        if (ns === "skill") {
+          const wrap = tint === "req" ? reqWrap : grantWrap;
+          const existing = [...wrap.querySelectorAll(".ins-skill-pill")].find(p => p.querySelector(".ins-pill-sk").value === raw);
+          if (existing) existing.querySelector(".ins-pill-lvl").value = value;
+          else wrap.appendChild(makeSkillPill(raw, value, tint));
+        } else if (ns === "tag") {
+          const box = tint === "req" ? tagBox : tagGrantBox;
+          if (!box.querySelector(`[data-tag="${raw}"]`)) box.addTag(raw);
+        } else if (ns === "item") {
+          const box = tint === "req" ? itemReqBox : itemGrantBox;
+          const name = qLabel ?? raw;
+          if (!box.querySelector(`[data-item-id="${raw}"]`)) box.addItem(+raw, name);
+        }
+      });
+      exitPickMode();
+    };
+
+    const onKey = (e) => { if (e.key === "Escape") exitPickMode(); };
+
+    const steps = [...stepsEl.querySelectorAll(".route-step")];
+    steps.forEach(li => {
+      li.classList.add("pick-target");
+      li.addEventListener("click", onStep);
+    });
+    document.addEventListener("keydown", onKey, { once: true });
+
+    _pickMode = { stepsEl, steps, onStep, onKey, btnEl };
+  }
+
+  function exitPickMode() {
+    if (!_pickMode) return;
+    const { stepsEl, steps, onStep, onKey, btnEl } = _pickMode;
+    stepsEl.classList.remove("pick-mode");
+    btnEl.classList.remove("pick-active");
+    steps.forEach(li => {
+      li.classList.remove("pick-target");
+      li.removeEventListener("click", onStep);
+    });
+    document.removeEventListener("keydown", onKey);
+    _pickMode = null;
+  }
+
   function buildStepForm(opts) {
     const { afterIdx = -1, onCommit, onCancel } = opts;
 
@@ -1224,6 +1289,7 @@
           <div class="ins-skill-header">
             <span class="ins-skill-title req">Requirements</span>
             <button class="btn btn-ghost ins-add-req">+ skill</button>
+            <button class="btn btn-ghost ins-pick-req" title="Pick reqs from a step">⊕</button>
           </div>
           <div class="ins-skill-pills ins-reqs"></div>
           <div class="ins-item-reqs-wrap"></div>
@@ -1233,6 +1299,7 @@
           <div class="ins-skill-header">
             <span class="ins-skill-title grant">Grants</span>
             <button class="btn btn-ghost ins-add-grant">+ skill</button>
+            <button class="btn btn-ghost ins-pick-grant" title="Pick grants from a step">⊕</button>
           </div>
           <div class="ins-skill-pills ins-grants"></div>
           <div class="ins-item-grants-wrap"></div>
@@ -1259,7 +1326,19 @@
       li.querySelector(".ins-label")?.focus();
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
-      li.querySelector(".ins-cancel").addEventListener("click", () => { if (onCancel) onCancel(); });
+      const stepsEl = li.closest(".route-steps");
+      if (stepsEl) {
+        const pickArgs = { reqWrap, grantWrap, tagBox, tagGrantBox, itemReqBox, itemGrantBox, stepsEl };
+        li.querySelector(".ins-pick-req").addEventListener("click", (e) => {
+          e.stopPropagation();
+          enterPickMode({ ...pickArgs, tint: "req", btnEl: e.currentTarget });
+        });
+        li.querySelector(".ins-pick-grant").addEventListener("click", (e) => {
+          e.stopPropagation();
+          enterPickMode({ ...pickArgs, tint: "grant", btnEl: e.currentTarget });
+        });
+      }
+      li.querySelector(".ins-cancel").addEventListener("click", () => { exitPickMode(); if (onCancel) onCancel(); });
       li.querySelector(".ins-add").addEventListener("click", () => {
         const label = li.querySelector(".ins-label").value.trim();
         if (!label) return;
@@ -2020,6 +2099,7 @@
       id: +p.dataset.itemId,
       name: p.querySelector(".ins-item-name")?.textContent ?? "",
     }));
+    box.addItem = (id, name) => { if (!pillsEl.querySelector(`[data-item-id="${id}"]`)) pillsEl.appendChild(makeItemPill(id, name, tint)); };
     return box;
   }
 
@@ -2232,6 +2312,7 @@
             <div class="ins-skill-header">
               <span class="ins-skill-title req">Requirements</span>
               <button class="btn btn-ghost sef-add-req">+ skill</button>
+              <button class="btn btn-ghost sef-pick-req" title="Pick reqs from a step">⊕</button>
             </div>
             <div class="ins-skill-pills sef-reqs"></div>
             <div class="sef-item-reqs-wrap"></div>
@@ -2241,6 +2322,7 @@
             <div class="ins-skill-header">
               <span class="ins-skill-title grant">Grants</span>
               <button class="btn btn-ghost sef-add-grant">+ skill</button>
+              <button class="btn btn-ghost sef-pick-grant" title="Pick grants from a step">⊕</button>
             </div>
             <div class="ins-skill-pills sef-grants"></div>
             <div class="sef-item-grants-wrap"></div>
@@ -2276,6 +2358,19 @@
         form.querySelector(".sef-add-req").addEventListener("click",   () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
         form.querySelector(".sef-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
 
+        const stepsEl = $("rt-steps");
+        if (stepsEl) {
+          const pickArgs = { reqWrap, grantWrap, tagBox, tagGrantBox, itemReqBox, itemGrantBox, stepsEl };
+          form.querySelector(".sef-pick-req").addEventListener("click", (e) => {
+            e.stopPropagation();
+            enterPickMode({ ...pickArgs, tint: "req", btnEl: e.currentTarget });
+          });
+          form.querySelector(".sef-pick-grant").addEventListener("click", (e) => {
+            e.stopPropagation();
+            enterPickMode({ ...pickArgs, tint: "grant", btnEl: e.currentTarget });
+          });
+        }
+
         form.querySelector(".sef-commit").addEventListener("click", () => {
           const label  = form.querySelector(".sef-label").value.trim()  || step.label;
           const detail = form.querySelector(".sef-detail").value.trim() || "";
@@ -2287,6 +2382,7 @@
             reqs:   { skills: readSkillPills(reqWrap), tags: tagBox.readTags(), atlas_items: itemReqBox.readItems() },
             grants: newGrants,
           };
+          exitPickMode();
           mergeTags(tagBox.readTags());
           mergeTags(tagGrantBox.readTags());
           syncQualEdges([currentPath[idx]]);
@@ -2294,7 +2390,7 @@
           renderSteps(currentPath);
           upsertActivePlan(currentPath, readProfile());
         });
-        form.querySelector(".sef-cancel").addEventListener("click", () => renderSteps(currentPath));
+        form.querySelector(".sef-cancel").addEventListener("click", () => { exitPickMode(); renderSteps(currentPath); });
 
         li.replaceWith(form);
       });
