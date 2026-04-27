@@ -654,7 +654,7 @@ body {
 .step-qual-chip--item .ins-item-icon { width: 32px; height: 28px; }
 
 /* ── Per-step notes ──────────────────────────────────────────────────────── */
-.step-note-wrap { display: flex; flex-direction: column; gap: 2px; }
+.step-note-row { display: flex; flex-direction: column; gap: 2px; grid-column: 1 / -1; }
 .step-note-toggle {
   align-self: flex-start; font-size: var(--fs-xs);
   padding: 0 var(--sp-q); color: var(--muted);

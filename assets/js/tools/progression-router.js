@@ -1347,7 +1347,7 @@
     requestAnimationFrame(() => {
       container.querySelectorAll(".step-note").forEach((ta) => {
         checkToggleVisibility(ta);
-        const toggle = ta.closest(".step-note-wrap")?.querySelector(".step-note-toggle");
+        const toggle = ta.closest(".step-note-row")?.querySelector(".step-note-toggle");
         if (!toggle) return;
         toggle.addEventListener("click", () => {
           const expand = !ta.classList.contains("expanded");
@@ -1360,7 +1360,7 @@
   }
 
   function checkToggleVisibility(ta) {
-    const toggle = ta.closest(".step-note-wrap")?.querySelector(".step-note-toggle");
+    const toggle = ta.closest(".step-note-row")?.querySelector(".step-note-toggle");
     if (!toggle) return;
     const overflows = ta.value.trim().length > 0 && ta.scrollHeight > ta.clientHeight + 2;
     if (overflows) toggle.hidden = false;
@@ -1489,10 +1489,10 @@
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
           ${qualRowsHtml(step)}
-          <span class="step-note-wrap">
-            <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
-            <button class="step-note-toggle btn btn-ghost" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
-          </span>
+        </span>
+        <span class="step-note-row">
+          <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
+          <button class="step-note-toggle btn btn-ghost" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
         </span>
         <span class="step-meta">
           ${goalBadge(step)}
