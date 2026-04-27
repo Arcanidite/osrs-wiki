@@ -1489,10 +1489,10 @@
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
           ${qualRowsHtml(step)}
-        </span>
-        <span class="step-note-row">
-          <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
-          <button class="step-note-toggle" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
+          <span class="step-note-row">
+            <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
+            <button class="step-note-toggle" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
+          </span>
         </span>
         <span class="step-meta">
           ${goalBadge(step)}
