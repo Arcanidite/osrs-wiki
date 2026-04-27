@@ -1,3 +1,5 @@
+/* ── Directive: do not use margin. Use gap, padding, or grid placement. ──── */
+
 /* ── Tokens ──────────────────────────────────────────────────────────────── */
 :root {
   --sp:     1rem;     /* 16px base unit */
@@ -486,7 +488,7 @@ body {
   white-space: nowrap;
   padding: var(--sp-h);
 }
-.step-body { display: flex; flex-direction: column; gap: var(--gap-xs); height: 100%; }
+.step-body { display: grid; gap: var(--gap-xs); height: 100%; grid-auto-rows: 1fr; }
 .step-title { font-weight: 600; color: var(--ink); }
 .step-detail { font-size: var(--fs-xs); color: var(--muted); }
 .step-meta { display: flex; flex-direction: column; gap: var(--gap-xs); }
@@ -610,11 +612,11 @@ body {
 
 /* ── Qual rows (unified req/grant chips for all node types) ──────────────── */
 .step-qual-row {
-  display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-top: 3px;
+  display: flex; flex-wrap: wrap; gap: 4px; align-items: center; height: 100%;
 }
 .step-qual-label {
   font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.04em; margin-right: 4px; min-width: 4.5rem;
+  letter-spacing: 0.04em; padding-right: 4px; min-width: 4.5rem;
 }
 .step-qual-row--req   .step-qual-label { color: #b47a00; }
 .step-qual-row--grant .step-qual-label { color: #2e7d32; }
