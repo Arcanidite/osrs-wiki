@@ -1392,6 +1392,24 @@
     </li>`;
   }
 
+  function wireNoteAddBtns(container) {
+    container.querySelectorAll(".step-note-add-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id   = btn.dataset.stepId;
+        const body = btn.closest(".route-step")?.querySelector(".step-body");
+        if (!body || body.querySelector(".step-note-row")) return;
+        const row  = document.createElement("span");
+        row.className = "step-note-row";
+        row.innerHTML = `<textarea class="step-note" data-step-id="${escHtml(id)}" placeholder="Add a note…" rows="1"></textarea>
+          <button class="step-note-toggle" data-step-id="${escHtml(id)}" hidden>▼ more</button>`;
+        body.appendChild(row);
+        wireStepNotes(row);
+        btn.remove();
+        row.querySelector(".step-note")?.focus();
+      });
+    });
+  }
+
   function wireStepNotes(container) {
     const notes = store.stepNotes();
     container.querySelectorAll(".step-note").forEach((ta) => {
@@ -1530,6 +1548,7 @@
 
     const tab       = planTabs[activeTabIdx];
     const loadouts  = store.loadouts();
+    const notes     = store.stepNotes();
     path.forEach((step, i) => {
       const isQuest   = (step.tags ?? []).includes("quest");
       const questDone = manualQuestDone.has(step.id);
@@ -1557,10 +1576,10 @@
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
           ${qualRowsHtml(step)}
-          <span class="step-note-row">
+          ${notes[step.id] ? `<span class="step-note-row">
             <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
             <button class="step-note-toggle" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
-          </span>
+          </span>` : ""}
         </span>
         <span class="step-meta">
           ${goalBadge(step)}
@@ -1572,6 +1591,7 @@
         </span>
         <span class="step-actions">
           <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
+          ${!notes[step.id] ? `<button class="btn btn-ghost step-note-add-btn" data-step-id="${escHtml(step.id)}" title="Add note">✎</button>` : ""}
           <button class="btn btn-ghost step-loadout-btn" data-step-id="${escHtml(step.id)}" title="Attach loadout">🎒</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           ${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}
@@ -1590,6 +1610,7 @@
     wireGapFill(stepsEl);
     wireStepDoneToggles(stepsEl);
     wireStepEditBtn(stepsEl);
+    wireNoteAddBtns(stepsEl);
     wireDragSort(stepsEl);
     wireQualLinks(stepsEl);
     wireFocalBtns(stepsEl);
