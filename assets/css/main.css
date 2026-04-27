@@ -636,7 +636,7 @@ body {
   grid-template-rows: var(--qual-row-h, 1.75rem);
 }
 .step-qual-row {
-  display: flex; flex-wrap: wrap; gap: 4px; align-items: stretch; min-height: 0;
+  display: flex; flex-wrap: wrap; gap: 4px;
 }
 .step-qual-chip {
   display: inline-flex; align-items: center; gap: 3px;

@@ -1613,10 +1613,12 @@
       const overflow = section.querySelector(".step-qual-overflow");
       const toggle   = section.querySelector(".step-qual-toggle");
       if (!overflow || !toggle) return;
-      const rowH = overflow.scrollHeight;
-      const chipH = overflow.querySelector(".step-qual-chip")?.offsetHeight ?? 28;
+      const chips = [...overflow.querySelectorAll(".step-qual-chip")];
+      const tallest = chips.reduce((h, c) => Math.max(h, c.offsetHeight), 0);
+      if (tallest) chips.forEach(c => c.style.minHeight = `${tallest}px`);
+      const chipH = tallest || 28;
       overflow.style.setProperty("--qual-row-h", `${chipH + 4}px`);
-      if (rowH > chipH + 8) {
+      if (overflow.scrollHeight > chipH + 8) {
         section.classList.add("step-qual-section--collapsed");
         toggle.hidden = false;
         toggle.addEventListener("click", () => {
