@@ -1471,15 +1471,17 @@
       const stepDone  = questDone || manualStepDone.has(step.id);
       const isFocal   = tab?.focalSteps?.has(step.id);
       const valid     = seqValid[i];
-      const grantKeys = dal().edgesFrom("step:grant", step.id)
-        .map(e => e.data?.value != null ? `${e.to}:${e.data.value}` : e.to).join(" ");
+      const encodeQualKeys = edges => edges.map(e => e.data?.value != null ? `${e.to}:${e.data.value}` : e.to).join(" ");
+      const grantKeys = encodeQualKeys(dal().edgesFrom("step:grant", step.id));
+      const reqKeys   = encodeQualKeys(dal().edgesFrom("step:req",   step.id));
       const grantAttr = grantKeys ? ` data-grants="${escHtml(grantKeys)}"` : "";
+      const reqAttr   = reqKeys   ? ` data-reqs="${escHtml(reqKeys)}"` : "";
       const focalAttr   = isFocal ? ' data-focal="1"' : "";
       const loadout   = loadouts[step.id];
       const loadoutBadge = loadout?.length
         ? `<span class="step-badge step-loadout-badge" data-step-id="${escHtml(step.id)}" title="View loadout">🎒 ${loadout.length} item${loadout.length !== 1 ? "s" : ""}</span>`
         : "";
-      rows.push(`<li class="route-step${stepDone ? " step-done" : ""}${step._capstone ? " step-capstone" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="${step._capstone ? "false" : "true"}"${grantAttr}${focalAttr}>
+      rows.push(`<li class="route-step${stepDone ? " step-done" : ""}${step._capstone ? " step-capstone" : ""}${valid ? "" : " step-seq-invalid"}${isFocal ? " step-focal" : ""}" data-step-idx="${i}" draggable="${step._capstone ? "false" : "true"}"${grantAttr}${reqAttr}${focalAttr}>
         <span class="step-drag-handle" title="Drag to reorder" ${step._capstone ? 'style="visibility:hidden"' : ""}>⠿</span>
         <label class="step-num-wrap">
           <input type="checkbox" class="step-done-cb" data-step-id="${escHtml(step.id)}"${isQuest ? ' data-is-quest="1"' : ""}${stepDone ? " checked" : ""}>
@@ -1595,15 +1597,17 @@
   function wireQualLinks(stepsEl) {
     let hlStyle = null;
     stepsEl.querySelectorAll("[data-qual-key]").forEach((chip) => {
-      const key = chip.dataset.qualKey;
+      const key  = chip.dataset.qualKey;
+      const isReq = chip.classList.contains("step-qual-chip--req");
+      const attr  = isReq ? "data-grants" : "data-reqs";
       chip.addEventListener("mouseenter", () => {
         hlStyle = document.createElement("style");
-        hlStyle.textContent = `.route-step[data-grants~="${key}"] { box-shadow: inset 0 0 0 2px #f59e0b; transition: box-shadow 0.15s; }`;
+        hlStyle.textContent = `.route-step[${attr}~="${key}"] { box-shadow: inset 0 0 0 2px #f59e0b; transition: box-shadow 0.15s; }`;
         stepsEl.prepend(hlStyle);
       });
       chip.addEventListener("mouseleave", () => { hlStyle?.remove(); hlStyle = null; });
       chip.addEventListener("click", () => {
-        const target = stepsEl.querySelector(`[data-grants~="${key}"]`);
+        const target = stepsEl.querySelector(`[${attr}~="${key}"]`);
         if (!target) return;
         target.scrollIntoView({ behavior: "smooth", block: "center" });
         target.classList.add("req-pulse");
