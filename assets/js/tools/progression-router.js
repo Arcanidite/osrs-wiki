@@ -1238,7 +1238,6 @@
     };
 
     const onChip = (e) => {
-      e.stopPropagation();
       const chip = e.currentTarget;
       const key  = chip.dataset.qualKey;
       if (!key) return;
