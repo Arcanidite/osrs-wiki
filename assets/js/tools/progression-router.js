@@ -1492,7 +1492,7 @@
         </span>
         <span class="step-note-row">
           <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
-          <button class="step-note-toggle btn btn-ghost" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
+          <button class="step-note-toggle" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
         </span>
         <span class="step-meta">
           ${goalBadge(step)}
