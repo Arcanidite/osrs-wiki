@@ -624,7 +624,7 @@ body {
 .step-qual-chip {
   display: inline-flex; align-items: center; gap: 3px;
   border-radius: var(--radius); padding: 2px 6px;
-  font-size: var(--fs-xs); cursor: default; white-space: nowrap;
+  font-size: var(--fs-xs); cursor: default; white-space: nowrap; height: 100%;
 }
 .step-qual-chip--req   { background: #fffbe6; border: 1px solid #c89a00; color: #7a5c00; }
 .step-qual-chip--grant { background: #f1f8f1; border: 1px solid #4caf50; color: #1a5c2a; }
