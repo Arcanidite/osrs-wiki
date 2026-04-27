@@ -557,7 +557,7 @@ body {
 .route-steps.pick-mode .route-step.pick-target:hover { background: #fffbe6; }
 .btn.pick-active { background: var(--gold); color: #fff; border-color: var(--gold); }
 .route-steps.pick-mode .step-qual-chip { cursor: crosshair; transition: box-shadow 0.1s; }
-.route-steps.pick-mode .step-qual-chip:hover { box-shadow: 0 0 0 2px var(--gold); }
+.route-steps.pick-mode .step-qual-chip:hover { box-shadow: inset 0 0 0 2px var(--gold); }
 
 /* Custom step edit form + unified insert form skill sections */
 /* Capstone teal caution stripe */
