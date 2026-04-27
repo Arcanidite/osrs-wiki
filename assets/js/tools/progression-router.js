@@ -1220,13 +1220,6 @@
     btnEl.classList.add("pick-active");
     stepsEl.classList.add("pick-mode");
 
-    let activePopover = null;
-
-    const dismissPopover = () => {
-      activePopover?.remove();
-      activePopover = null;
-    };
-
     const mergeEdge = (edge) => {
       const { value, label: qLabel } = edge.data ?? {};
       const key = edge.to;
@@ -1238,93 +1231,49 @@
         if (existing) existing.querySelector(".ins-pill-lvl").value = value;
         else wrap.appendChild(makeSkillPill(raw, value, tint));
       } else if (ns === "tag") {
-        const box = tint === "req" ? tagBox : tagGrantBox;
-        if (!box.querySelector(`[data-tag="${raw}"]`)) box.addTag(raw);
+        (tint === "req" ? tagBox : tagGrantBox).addTag(raw);
       } else if (ns === "item") {
-        const box = tint === "req" ? itemReqBox : itemGrantBox;
-        if (!box.querySelector(`[data-item-id="${raw}"]`)) box.addItem(+raw, qLabel ?? raw);
+        (tint === "req" ? itemReqBox : itemGrantBox).addItem(+raw, qLabel ?? raw);
       }
     };
 
-    const onStep = (e) => {
+    const onChip = (e) => {
       e.stopPropagation();
-      const li = e.currentTarget;
-      const stepIdx = +li.dataset.stepIdx;
-      const step = currentPath[stepIdx];
-      if (!step) return exitPickMode();
-
-      dismissPopover();
-
+      const chip = e.currentTarget;
+      const key  = chip.dataset.qualKey;
+      if (!key) return;
+      const stepLi  = chip.closest(".route-step");
+      const stepIdx = stepLi ? +stepLi.dataset.stepIdx : -1;
+      const step    = currentPath[stepIdx];
+      if (!step) return;
       const allEdges = [...dal().edgesFrom("step:req", step.id), ...dal().edgesFrom("step:grant", step.id)];
-      if (!allEdges.length) return;
-
-      const popover = document.createElement("div");
-      popover.className = "qual-pick-popover";
-
-      const chips = allEdges.map(edge => {
-        const { value, label: qLabel } = edge.data ?? {};
-        const key = edge.to;
-        const ns  = key.slice(0, key.indexOf(":"));
-        const raw = key.slice(ns.length + 1);
-        const chip = document.createElement("button");
-        chip.className = "qual-pick-chip";
-        chip.dataset.selected = "false";
-        const nsEl = document.createElement("span");
-        nsEl.className = "step-qual-ns"; nsEl.textContent = ns;
-        const valEl = document.createElement("span");
-        valEl.className = "step-qual-val";
-        valEl.textContent = ns === "skill"
-          ? `${raw.charAt(0).toUpperCase() + raw.slice(1)} ${value}`
-          : ns === "item" ? (qLabel ?? raw) : raw;
-        chip.append(nsEl, valEl);
-        chip.addEventListener("click", (ev) => {
-          ev.stopPropagation();
-          const sel = chip.dataset.selected !== "true";
-          chip.dataset.selected = String(sel);
-        });
-        chip._edge = edge;
-        return chip;
+      const edge = allEdges.find(e => {
+        const token = e.data?.value != null ? `${e.to}:${e.data.value}` : e.to;
+        return token === key;
       });
-
-      chips.forEach(c => popover.appendChild(c));
-
-      const confirm = document.createElement("button");
-      confirm.className = "btn btn-primary qual-pick-confirm";
-      confirm.textContent = "Add selected";
-      confirm.addEventListener("click", (ev) => {
-        ev.stopPropagation();
-        chips.filter(c => c.dataset.selected === "true").forEach(c => mergeEdge(c._edge));
-        dismissPopover();
-        exitPickMode();
-      });
-      popover.appendChild(confirm);
-
-      li.appendChild(popover);
-      activePopover = popover;
+      if (edge) mergeEdge(edge);
     };
 
-    const onKey = (e) => { if (e.key === "Escape") { dismissPopover(); exitPickMode(); } };
+    const onKey = (e) => { if (e.key === "Escape") exitPickMode(); };
+
+    const chips = [...stepsEl.querySelectorAll(".step-qual-chip[data-qual-key]")];
+    chips.forEach(c => c.addEventListener("click", onChip));
 
     const steps = [...stepsEl.querySelectorAll(".route-step")];
-    steps.forEach(li => {
-      li.classList.add("pick-target");
-      li.addEventListener("click", onStep);
-    });
+    steps.forEach(li => li.classList.add("pick-target"));
+
     document.addEventListener("keydown", onKey, { once: true });
 
-    _pickMode = { stepsEl, steps, onStep, onKey, btnEl, dismissPopover };
+    _pickMode = { stepsEl, steps, chips, onChip, onKey, btnEl };
   }
 
   function exitPickMode() {
     if (!_pickMode) return;
-    const { stepsEl, steps, onStep, onKey, btnEl, dismissPopover } = _pickMode;
-    dismissPopover?.();
+    const { stepsEl, steps, chips, onChip, onKey, btnEl } = _pickMode;
     stepsEl.classList.remove("pick-mode");
     btnEl.classList.remove("pick-active");
-    steps.forEach(li => {
-      li.classList.remove("pick-target");
-      li.removeEventListener("click", onStep);
-    });
+    steps.forEach(li => li.classList.remove("pick-target"));
+    chips.forEach(c => c.removeEventListener("click", onChip));
     document.removeEventListener("keydown", onKey);
     _pickMode = null;
   }
