@@ -977,7 +977,7 @@ mark.rtb-hl-fuzzy { background: #ffb347; }
   margin-bottom: var(--sp-h);
 }
 .goal-card {
-  display: flex;
+  display: grid;
   gap: var(--sp-h);
   padding: var(--sp-h);
   background: var(--card);
