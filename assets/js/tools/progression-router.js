@@ -199,6 +199,47 @@
   let allRegions     = [];
   let allConstraints = [];   // {id, type, ...} — constraints.jsonl
 
+  const dal = () => window.DAL;
+
+  // Qual edge builders — map step reqs/grants to typed qualifier edges
+  function reqQuals(reqs) {
+    const r = normalizeReqs(reqs), q = [];
+    Object.entries(r.skills ?? {}).forEach(([sk, lvl]) => q.push({ to: `skill:${sk}`, data: { cmp: "gte", value: lvl } }));
+    (r.tags ?? []).forEach(t => q.push({ to: `tag:${t}`, data: { cmp: "has" } }));
+    (r.atlas_items ?? []).forEach(({ id }) => q.push({ to: `item:${id}`, data: { cmp: "has" } }));
+    return q;
+  }
+  function grantQuals(grants) {
+    const q = [];
+    Object.entries(grants ?? {}).forEach(([k, v]) => {
+      if (typeof v === "number") q.push({ to: `skill:${k}`, data: { cmp: "gte", value: v } });
+      else if (v === true)       q.push({ to: `tag:${k}`,   data: { cmp: "has" } });
+    });
+    (grants?.atlas_items ?? []).forEach(({ id }) => q.push({ to: `item:${id}`, data: { cmp: "has" } }));
+    return q;
+  }
+
+  // Routing state: flat qual-keyed object { "skill:attack": 70, "tag:member": true, "item:123": true }
+  function toState(skills) {
+    const s = {};
+    Object.entries(skills).forEach(([k, v]) => {
+      if      (k === "_tags")         (v ?? []).forEach(t  => { s[`tag:${t}`]  = true; });
+      else if (k === "_items")        (v ?? []).forEach(id => { s[`item:${id}`] = true; });
+      else if (typeof v === "number") s[`skill:${k}`] = v;
+    });
+    return s;
+  }
+  function fromState(state) {
+    const sk = {}, tags = [], items = [];
+    Object.entries(state).forEach(([k, v]) => {
+      if      (k.startsWith("skill:")) sk[k.slice(6)] = v;
+      else if (k.startsWith("tag:"))   tags.push(k.slice(4));
+      else if (k.startsWith("item:"))  items.push(k.slice(5));
+    });
+    sk._tags = tags; sk._items = items;
+    return sk;
+  }
+
   // ── DOM ───────────────────────────────────────────────────────────────────
   const $ = (id) => document.getElementById(id);
   const els = {
@@ -779,34 +820,18 @@
   }
 
   // ctx: { completedIds: Set, freeSlots: number }
-  function meetsReqs(reqs, skills, ctx) {
-    const r = normalizeReqs(reqs);
+  function meetsReqs(step, state, ctx) {
     const { completedIds = new Set(), freeSlots = 28 } = ctx ?? {};
-
-    if (!Object.entries(r.skills ?? {}).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl)) return false;
-
+    if (!dal().satisfies(dal().edgesFrom("step:req", step.id), state)) return false;
+    const r = step.reqs ?? {};
     if (r.inv_free && freeSlots < r.inv_free) return false;
-
     for (const cid of (r.constraints ?? [])) {
       const c = allConstraints.find((x) => x.id === cid);
       if (!c) continue;
       if (c.type === "region_order" && c.before_step && !completedIds.has(c.before_step)) return false;
       if (c.type === "inv_free"     && c.slots       && freeSlots < c.slots)              return false;
     }
-    const grantedTags = new Set(skills._tags ?? []);
-    if (!(r.tags ?? []).every((t) => grantedTags.has(t))) return false;
     return true;
-  }
-
-  function applyGrants(grants, skills) {
-    const next = { ...skills };
-    const tags = new Set(next._tags ?? []);
-    Object.entries(grants ?? {}).forEach(([k, v]) => {
-      if (v === true) tags.add(k);
-      else if (typeof v === "number" && v > (next[k] ?? 1)) next[k] = v;
-    });
-    next._tags = [...tags];
-    return next;
   }
 
   function costFor(step, style) {
@@ -826,15 +851,10 @@
     return true;
   }
 
-  function isUseful(step, skills, target, terminal, grantedTags, neededGates) {
+  function isUseful(step, state, targetEdges, terminal, neededGates) {
     if (terminal && step.id === terminal) return true;
     if (neededGates?.has(step.id)) return true;
-    const targetSkills = target.skills ?? target;
-    const targetTags   = new Set(target.tags ?? []);
-    if ([...targetTags].some((t) => !grantedTags.has(t) && (step.grants ?? {})[t] === true)) return true;
-    return Object.entries(step.grants ?? {}).some(([sk, lvl]) =>
-      (targetSkills[sk] ?? 0) > 0 && lvl > (skills[sk] ?? 1) && lvl <= (targetSkills[sk] ?? 0)
-    );
+    return dal().progresses(dal().edgesFrom("step:grant", step.id), targetEdges, state);
   }
 
   class MinHeap {
@@ -866,32 +886,22 @@
   }
 
   function routeGoal(steps, profile, goal, skills, completedIds, completedQuests, excluded, freeSlots) {
-    const normTarget  = normalizeReqs(goal.reqs ?? {});
-    const targetSkills = normTarget.skills ?? {};
-    const targetTags   = normTarget.tags ?? [];
+    const targetEdges = reqQuals(goal.reqs ?? {});
     const terminal    = goal.terminal ?? null;
     const path        = [];
+    let   state       = toState(skills);
     let   invFree     = freeSlots ?? 28;
-    let   grantedTags = new Set();
     const remaining   = new Set(
       steps.map((s) => s.id).filter((id) => !completedIds.has(id) && !pinnedExclusions.has(id))
     );
 
     const ctx = () => ({ completedIds, freeSlots: invFree });
 
-    // Quest/unlock steps are only useful if they gate a step we actually need.
-    // Recompute transitively: a gate is needed if it unlocks a needed step or another needed gate.
     const computeNeededGates = () => {
       const needed = new Set();
-      const directlyUseful = (s) => {
-        const tSkills = targetSkills;
-        const tTags   = new Set(targetTags);
-        if (terminal && s.id === terminal) return true;
-        if ([...tTags].some((t) => !grantedTags.has(t) && (s.grants ?? {})[t] === true)) return true;
-        return Object.entries(s.grants ?? {}).some(([sk, lvl]) =>
-          (tSkills[sk] ?? 0) > 0 && lvl > (skills[sk] ?? 1) && lvl <= (tSkills[sk] ?? 0)
-        );
-      };
+      const directlyUseful = (s) =>
+        (terminal && s.id === terminal) ||
+        dal().progresses(dal().edgesFrom("step:grant", s.id), targetEdges, state);
       let changed = true;
       while (changed) {
         changed = false;
@@ -912,81 +922,68 @@
       const heap = new MinHeap();
       for (const id of remaining) {
         const step = steps.find((s) => s.id === id);
-        if (!step || !meetsReqs(step.reqs, skills, ctx())) continue;
+        if (!step || !meetsReqs(step, state, ctx())) continue;
         if (!locationAccessible(step, completedIds, excluded, completedQuests)) continue;
-        if (!isUseful(step, skills, { skills: targetSkills, tags: targetTags }, terminal, grantedTags, neededGates)) continue;
+        if (!isUseful(step, state, targetEdges, terminal, neededGates)) continue;
         heap.push(step, costFor(step, profile.style));
       }
       return heap;
     };
 
     const goalMet = () =>
-      Object.entries(targetSkills).every(([sk, lvl]) => (skills[sk] ?? 1) >= lvl) &&
-      targetTags.every((t) => grantedTags.has(t)) &&
-      (!terminal || completedIds.has(terminal));
+      dal().satisfies(targetEdges, state) && (!terminal || completedIds.has(terminal));
 
     let heap = buildHeap();
     while (heap.size > 0) {
       if (goalMet()) break;
-
       const best = heap.pop();
       if (!best || !remaining.has(best.id)) { heap = buildHeap(); continue; }
-
       path.push({ ...best, _goalLabel: goal.label, _reqs: goal.reqs });
       remaining.delete(best.id);
       completedIds.add(best.id);
       if ((best.tags ?? []).includes("quest")) completedQuests.add(best.id);
-      Object.entries(best.grants ?? {}).forEach(([k, v]) => { if (v === true) grantedTags.add(k); });
-      skills  = applyGrants(best.grants, skills);
-      // Items consumed free up inv slots; items acquired consume them
+      state   = dal().coalesce(dal().edgesFrom("step:grant", best.id), state);
       invFree = Math.min(28, Math.max(0, invFree - (best.inv_used ?? 0) + (best.inv_removes?.length ?? 0)));
       heap    = buildHeap();
     }
-    return { path, skills, completedIds, completedQuests, freeSlots: invFree };
+    return { path, skills: fromState(state), completedIds, completedQuests, freeSlots: invFree };
   }
 
   function synthFillGaps(path, goalReqs, finalSkills, allSkills) {
-    const grantedTags = path.reduce((acc, s) => {
-      Object.entries(s.grants ?? {}).forEach(([k, v]) => { if (v === true) acc.add(k); });
-      return acc;
-    }, new Set());
-
-    const maxGranted = (sk) => path.reduce((mx, s) => {
-      const v = (s.grants ?? {})[sk];
-      return typeof v === "number" ? Math.max(mx, v) : mx;
+    const finalState = toState(finalSkills);
+    const allState   = toState(allSkills);
+    const maxGranted = (key) => path.reduce((mx, s) => {
+      const e = dal().edge("step:grant", s.id, key);
+      return e?.data?.cmp === "gte" ? Math.max(mx, e.data.value) : mx;
     }, -Infinity);
+
+    const makeSynth = (id, label, reqs, grants) => {
+      const s = { id, label, detail: "Synthetic step — no matching step found in bank.",
+                  reqs, grants, _custom: true, _synthetic: true, _goalLabel: path[0]?._goalLabel ?? "" };
+      syncQualEdges([s]);
+      return s;
+    };
 
     const synths = [];
 
     Object.entries(goalReqs.skills ?? {}).forEach(([sk, needed]) => {
-      if ((finalSkills[sk] ?? 1) >= needed) return;
-      const top = maxGranted(sk);
-      const fromLvl = top > -Infinity ? top : (allSkills[sk] ?? 1);
+      if ((finalState[`skill:${sk}`] ?? 1) >= needed) return;
+      const top     = maxGranted(`skill:${sk}`);
+      const fromLvl = top > -Infinity ? top : (allState[`skill:${sk}`] ?? 1);
       if (fromLvl >= needed) return;
-      synths.push({
-        id:         `synth-${sk}-${needed}-${Date.now()}`,
-        label:      `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${fromLvl}→${needed}`,
-        detail:     "Synthetic step — no matching step found in bank.",
-        reqs:       { skills: { [sk]: fromLvl } },
-        grants:     { [sk]: needed },
-        _custom:    true,
-        _synthetic: true,
-        _goalLabel: path[0]?._goalLabel ?? "",
-      });
+      synths.push(makeSynth(
+        `synth-${sk}-${needed}-${Date.now()}`,
+        `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${fromLvl}→${needed}`,
+        { skills: { [sk]: fromLvl } }, { [sk]: needed }
+      ));
     });
 
     (goalReqs.tags ?? []).forEach((tag) => {
-      if (grantedTags.has(tag)) return;
-      synths.push({
-        id:         `synth-tag-${tag}-${Date.now()}`,
-        label:      `Obtain ${tag}`,
-        detail:     "Synthetic step — no matching step found in bank.",
-        reqs:       { skills: {}, tags: [] },
-        grants:     { [tag]: true },
-        _custom:    true,
-        _synthetic: true,
-        _goalLabel: path[0]?._goalLabel ?? "",
-      });
+      if (finalState[`tag:${tag}`]) return;
+      synths.push(makeSynth(
+        `synth-tag-${tag}-${Date.now()}`, `Obtain ${tag}`,
+        { skills: {}, tags: [] }, { [tag]: true }
+      ));
     });
 
     if (!synths.length) return path;
@@ -1010,9 +1007,11 @@
       freeSlots       = r.freeSlots;
 
       const filled = synthFillGaps(r.path, normalizeReqs(goal.reqs), r.skills, skillsAtGoalStart);
-      // re-apply grants from synthetic steps so downstream goals see them
       const synthSteps = filled.filter((s) => s._synthetic);
-      skills = synthSteps.reduce((sk, s) => applyGrants(s.grants, sk), r.skills);
+      skills = fromState(synthSteps.reduce(
+        (st, s) => dal().coalesce(dal().edgesFrom("step:grant", s.id), st),
+        toState(r.skills)
+      ));
 
       const capstone = {
         id:         `capstone-${goal.id}`,
@@ -1057,27 +1056,19 @@
       activePlanIdx = store.savePlan(plan);
     }
     store.saveActive(plan);
-    syncItemEdges(path);
+    syncQualEdges(path);
     if (planTabs[activeTabIdx]) { planTabs[activeTabIdx].name = name; planTabs[activeTabIdx].activePlanIdx = activePlanIdx; }
     renderTabBar();
     renderPlans();
   }
 
-  // Index atlas_items from each step's reqs/grants as typed DAL edges so any
-  // module can query "all steps requiring item X" via dal.edgesTo("step:req-item", id).
-  function syncItemEdges(path) {
-    const d = window.DAL;
-    path.forEach(step => {
-      d.unlinkAll("step:req-item",   step.id);
-      d.unlinkAll("step:grant-item", step.id);
-      (step.reqs?.atlas_items ?? []).forEach(({ id, name }) => {
-        d.upsert("item", String(id), { name });
-        d.link("step:req-item", step.id, String(id));
-      });
-      (step.grants?.atlas_items ?? []).forEach(({ id, name }) => {
-        d.upsert("item", String(id), { name });
-        d.link("step:grant-item", step.id, String(id));
-      });
+  function syncQualEdges(steps) {
+    const d = dal();
+    steps.forEach(s => {
+      d.unlinkAll("step:req",   s.id);
+      d.unlinkAll("step:grant", s.id);
+      reqQuals(s.reqs).forEach(({ to, data })   => d.link("step:req",   s.id, to, data));
+      grantQuals(s.grants).forEach(({ to, data }) => d.link("step:grant", s.id, to, data));
     });
   }
 
@@ -1165,39 +1156,33 @@
     t._tid = setTimeout(() => t.classList.remove("rt-toast--show"), 3200);
   }
 
-  function synthPrereqs(step, skillsAtPos) {
-    const nr      = normalizeReqs(step.reqs);
-    const synths  = [];
+  function synthPrereqs(step, stateAtPos) {
+    const nr     = normalizeReqs(step.reqs);
+    const goalLbl = step._goalLabel ?? "";
+    const makeSynth = (id, label, reqs, grants) => {
+      const s = { id, label, detail: "Synthetic step — no matching step found in bank.",
+                  reqs, grants, _custom: true, _synthetic: true, _goalLabel: goalLbl };
+      syncQualEdges([s]);
+      return s;
+    };
 
+    const synths = [];
     Object.entries(nr.skills ?? {}).forEach(([sk, needed]) => {
-      if ((skillsAtPos[sk] ?? 1) >= needed) return;
-      const fromLvl = skillsAtPos[sk] ?? 1;
-      synths.push({
-        id:         `synth-${sk}-${needed}-${Date.now()}`,
-        label:      `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${fromLvl}→${needed}`,
-        detail:     "Synthetic step — no matching step found in bank.",
-        reqs:       { skills: { [sk]: fromLvl } },
-        grants:     { [sk]: needed },
-        _custom:    true,
-        _synthetic: true,
-        _goalLabel: step._goalLabel ?? "",
-      });
+      const cur = stateAtPos[`skill:${sk}`] ?? 1;
+      if (cur >= needed) return;
+      synths.push(makeSynth(
+        `synth-${sk}-${needed}-${Date.now()}`,
+        `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${cur}→${needed}`,
+        { skills: { [sk]: cur } }, { [sk]: needed }
+      ));
     });
 
     (nr.tags ?? []).forEach((tag) => {
-      const granted = currentPath.slice(0, currentPath.indexOf(step) + 1)
-        .some((s) => (s.grants ?? {})[tag] === true);
-      if (granted) return;
-      synths.push({
-        id:         `synth-tag-${tag}-${Date.now()}`,
-        label:      `Obtain ${tag}`,
-        detail:     "Synthetic step — no matching step found in bank.",
-        reqs:       { skills: {}, tags: [] },
-        grants:     { [tag]: true },
-        _custom:    true,
-        _synthetic: true,
-        _goalLabel: step._goalLabel ?? "",
-      });
+      if (stateAtPos[`tag:${tag}`]) return;
+      synths.push(makeSynth(
+        `synth-tag-${tag}-${Date.now()}`, `Obtain ${tag}`,
+        { skills: {}, tags: [] }, { [tag]: true }
+      ));
     });
 
     return synths;
@@ -1296,10 +1281,10 @@
         };
         mergeTags(step.reqs.tags ?? []);
         mergeTags(Object.keys(step.grants).filter((k) => step.grants[k] === true));
-        const baseSkills  = window._routerLastPath?.profile?.skills ?? {};
-        const skillsAtPos = currentPath.slice(0, afterIdx + 1)
-          .reduce((sk, s) => applyGrants(s.grants, sk), { ...baseSkills });
-        const prereqs = synthPrereqs(step, skillsAtPos);
+        const stateAtPos = currentPath.slice(0, afterIdx + 1)
+          .reduce((st, s) => dal().coalesce(dal().edgesFrom("step:grant", s.id), st),
+                  toState(window._routerLastPath?.profile?.skills ?? {}));
+        const prereqs = synthPrereqs(step, stateAtPos);
         let insertAt = afterIdx;
         prereqs.forEach((pre) => {
           const preAnchor = insertAt >= 0 ? currentPath[insertAt]?.id ?? "start" : "start";
@@ -1442,23 +1427,21 @@
     // Render insert row before step 0 as well
     const rows = [insertRowHtml(-1)];
 
-    // Pre-compute cumulative skill state to flag invalid steps
-    let cumSkills = { ...readProfile().skills };
+    // Pre-compute cumulative qual state to flag invalid steps
+    let seqState = toState(readProfile().skills);
     const seqValid = path.map((step) => {
-      const r = normalizeReqs(step.reqs);
-      const valid = Object.entries(r.skills ?? {}).every(([sk, lvl]) => (cumSkills[sk] ?? 1) >= lvl);
-      cumSkills = applyGrants(step.grants, cumSkills);
+      const valid = dal().satisfies(dal().edgesFrom("step:req", step.id), seqState);
+      seqState = dal().coalesce(dal().edgesFrom("step:grant", step.id), seqState);
       return valid;
     });
 
-    // Auto-mark steps done when profile already satisfies all their skill reqs at that point
-    const profileSkills = readProfile().skills;
+    // Auto-mark steps done when profile already satisfies all their skill reqs
+    const profileState = toState(readProfile().skills);
     path.forEach((step) => {
       if (step._capstone) return;
-      const r = normalizeReqs(step.reqs);
-      const satisfied = Object.entries(r.skills ?? {}).every(([sk, lvl]) => (profileSkills[sk] ?? 1) >= lvl)
-        && Object.keys(r.skills ?? {}).length > 0;
-      if (satisfied && !manualStepDone.has(step.id)) manualStepDone.add(step.id);
+      const gteReqs = dal().edgesFrom("step:req", step.id).filter(e => e.data?.cmp === "gte");
+      if (gteReqs.length && dal().satisfies(gteReqs, profileState) && !manualStepDone.has(step.id))
+        manualStepDone.add(step.id);
     });
 
     const tab       = planTabs[activeTabIdx];
@@ -1630,6 +1613,7 @@
               step,
               ...currentPath.slice(idx + 1),
             ];
+            syncQualEdges([step]);
             if (window._routerLastPath) window._routerLastPath.path = currentPath;
             renderSteps(currentPath);
           },
@@ -1649,12 +1633,10 @@
   }
 
   function seqInvalids(path) {
-    let cs = { ...readProfile().skills };
+    let state = toState(readProfile().skills);
     return path.reduce((acc, s) => {
-      if (s._capstone) return acc;
-      const r = normalizeReqs(s.reqs);
-      if (!Object.entries(r.skills ?? {}).every(([sk, lvl]) => (cs[sk] ?? 1) >= lvl)) acc.push(s.label);
-      cs = applyGrants(s.grants, cs);
+      if (!s._capstone && !dal().satisfies(dal().edgesFrom("step:req", s.id), state)) acc.push(s.label);
+      state = dal().coalesce(dal().edgesFrom("step:grant", s.id), state);
       return acc;
     }, []);
   }
@@ -1749,22 +1731,26 @@
         const idx  = +btn.dataset.stepIdx;
         const step = currentPath[idx];
         if (!step?._capstone) return;
-        let cs = { ...readProfile().skills };
-        currentPath.slice(0, idx).forEach((s) => { cs = applyGrants(s.grants, cs); });
+        let cs = currentPath.slice(0, idx).reduce(
+          (st, s) => dal().coalesce(dal().edgesFrom("step:grant", s.id), st),
+          toState(readProfile().skills)
+        );
         const goalLabel = step._goalLabel ?? step.label;
         const synths = [];
         const r = normalizeReqs(step.reqs);
         Object.entries(r.skills ?? {}).forEach(([sk, needed]) => {
-          if ((cs[sk] ?? 1) >= needed) return;
-          const fromLvl = cs[sk] ?? 1;
-          synths.push({
+          const cur = cs[`skill:${sk}`] ?? 1;
+          if (cur >= needed) return;
+          const synth = {
             id: `synth-${sk}-${needed}-${Date.now()}`,
-            label: `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${fromLvl}→${needed}`,
+            label: `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${cur}→${needed}`,
             detail: "Synthetic step — no matching step found in bank.",
-            reqs: { skills: { [sk]: fromLvl } },
+            reqs: { skills: { [sk]: cur } },
             grants: { [sk]: needed },
             _custom: true, _synthetic: true, _goalLabel: goalLabel,
-          });
+          };
+          syncQualEdges([synth]);
+          synths.push(synth);
         });
         if (!synths.length) return;
         const reqKey = (s) => Math.min(...Object.values(s.reqs?.skills ?? { _: 0 }));
@@ -2264,6 +2250,7 @@
           };
           mergeTags(tagBox.readTags());
           mergeTags(tagGrantBox.readTags());
+          syncQualEdges([currentPath[idx]]);
           if (window._routerLastPath) window._routerLastPath.path = currentPath;
           renderSteps(currentPath);
           upsertActivePlan(currentPath, readProfile());
@@ -2606,6 +2593,7 @@
       ]);
     } catch { return; }
 
+    syncQualEdges(allSteps);
     skillNames = deriveSkills();
     buildSkillGrid(skillNames);
     buildRegionTagbox(allRegions);
