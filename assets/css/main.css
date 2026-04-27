@@ -546,8 +546,7 @@ body {
 .route-step.step-capstone { box-shadow: inset 0.1875rem 0 0 var(--gold); font-weight: 600; }
 .route-step.step-capstone .step-num { background: var(--gold); }
 
-/* Req badge hover — exact skill:level highlight injected via JS style tag */
-.step-badge[data-req-skill] { cursor: pointer; }
+/* Req chip hover — exact skill:level highlight injected via JS style tag */
 @keyframes req-pulse { 0%,100% { box-shadow: inset 0 0 0 2px #f59e0b; } 50% { box-shadow: inset 0 0 0 4px #f59e0b; } }
 .route-step.req-pulse { animation: req-pulse 0.5s ease 2; }
 
@@ -609,21 +608,31 @@ body {
 .ins-detail { font-size: var(--fs-xs); color: var(--muted); border: none; background: transparent; width: 100%; padding: 0; }
 .ins-label:focus, .ins-detail:focus { outline: none; }
 
-/* ── Per-step item icons ─────────────────────────────────────────────────── */
-.step-items-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-top: 2px; }
-.step-items-label {
-  font-size: var(--fs-xs); font-weight: 600; margin-right: 2px;
+/* ── Qual rows (unified req/grant chips for all node types) ──────────────── */
+.step-qual-row {
+  display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-top: 3px;
 }
-.step-items-row--req  .step-items-label { color: #b47a00; }
-.step-items-row--grant .step-items-label { color: #2e7d32; }
-.step-item-chip {
-  display: inline-flex; align-items: center;
-  border-radius: var(--radius); padding: 1px;
-  cursor: default;
+.step-qual-label {
+  font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.04em; margin-right: 4px; min-width: 4.5rem;
 }
-.step-item-chip .ins-item-icon { width: 36px; height: 32px; }
-.step-items-row--req  .step-item-chip { background: #fffbe6; border: 1px solid #c89a00; }
-.step-items-row--grant .step-item-chip { background: #f1f8f1; border: 1px solid #4caf50; }
+.step-qual-row--req   .step-qual-label { color: #b47a00; }
+.step-qual-row--grant .step-qual-label { color: #2e7d32; }
+.step-qual-chip {
+  display: inline-flex; align-items: center; gap: 3px;
+  border-radius: var(--radius); padding: 2px 6px;
+  font-size: var(--fs-xs); cursor: default; white-space: nowrap;
+}
+.step-qual-chip--req   { background: #fffbe6; border: 1px solid #c89a00; color: #7a5c00; }
+.step-qual-chip--grant { background: #f1f8f1; border: 1px solid #4caf50; color: #1a5c2a; }
+.step-qual-ns {
+  font-size: 0.65rem; font-weight: 700; opacity: 0.6;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.step-qual-val { font-weight: 500; }
+.step-qual-chip--item { padding: 1px 4px 1px 6px; }
+.step-qual-chip--item .ins-item-icon { width: 32px; height: 28px; }
+.step-qual-chip[data-req-skill] { cursor: pointer; }
 
 /* ── Per-step notes ──────────────────────────────────────────────────────── */
 .step-note-wrap { display: flex; flex-direction: column; gap: 2px; }

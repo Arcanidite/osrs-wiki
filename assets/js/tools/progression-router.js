@@ -1091,35 +1091,35 @@
   function invBadge(step) {
     return step.inv_used ? `<span class="step-badge inv">${step.inv_used} inv slots</span>` : "";
   }
-  function itemIconsHtml(items, tint) {
-    if (!items?.length) return "";
-    const label = tint === "req" ? "Req:" : "Grants:";
-    return `<span class="step-items-row step-items-row--${tint}"><span class="step-items-label">${label}</span>${
-      items.map(({ id, name }) =>
-        `<span class="step-item-chip" title="${escHtml(name)}"><span class="ins-item-icon" data-item-id="${+id}"></span></span>`
-      ).join("")
-    }</span>`;
+  function qualChipHtml(edge, tint) {
+    const { cmp, value, label: qLabel } = edge.data ?? {};
+    const key = edge.to;
+    const ns  = key.slice(0, key.indexOf(":"));
+    const raw = key.slice(ns.length + 1);
+    if (ns === "skill") {
+      const skillsAttr = `${raw}:${value}`;
+      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--skill" data-req-skill="${escHtml(skillsAttr)}" title="${escHtml(skillLabel(raw))} ${value}"><span class="step-qual-ns">skl</span><span class="step-qual-val">${escHtml(skillLabel(raw))} ${value}</span></span>`;
+    }
+    if (ns === "item") {
+      const name = qLabel ?? raw;
+      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--item" title="${escHtml(name)}"><span class="step-qual-ns">itm</span><span class="ins-item-icon" data-item-id="${+raw}"></span></span>`;
+    }
+    if (ns === "tag") {
+      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--tag" title="${escHtml(raw)}"><span class="step-qual-ns">tag</span><span class="step-qual-val">${escHtml(raw)}</span></span>`;
+    }
+    return `<span class="step-qual-chip step-qual-chip--${tint}" title="${escHtml(key)}"><span class="step-qual-ns">${escHtml(ns)}</span><span class="step-qual-val">${escHtml(raw)}</span></span>`;
   }
-  function reqBadge(reqs) {
-    const r = normalizeReqs(reqs);
-    const entries = Object.entries(r.skills ?? {});
-    if (!entries.length) return "";
-    const skillsWithLevels = entries.map(([sk, lvl]) => `${sk}:${lvl}`).join(" ");
-    const parts  = entries.map(([sk, lvl]) => `${skillLabel(sk)} ${lvl}`);
-    return `<span class="step-badge req" data-req-skill="${escHtml(skillsWithLevels)}">Req: ${parts.join(", ")}</span>`;
-  }
-  function grantBadge(grants) {
-    const entries = Object.entries(grants ?? {}).filter(([k, v]) => typeof v === "number" && k !== "atlas_items");
-    if (!entries.length) return "";
-    const parts = entries.map(([sk, lvl]) => `${skillLabel(sk)} ${lvl}`);
-    return `<span class="step-badge grant">Grants: ${parts.join(", ")}</span>`;
-  }
-  function tagChipsHtml(tags, tint) {
-    if (!tags?.length) return "";
-    const label = tint === "req" ? "Tag req:" : "Tag grants:";
-    return `<span class="step-items-row step-items-row--${tint}"><span class="step-items-label">${label}</span>${
-      tags.map(t => `<span class="step-item-chip step-tag-chip">${escHtml(t)}</span>`).join("")
-    }</span>`;
+  function qualRowsHtml(step) {
+    const d    = dal();
+    const reqs = d.edgesFrom("step:req",   step.id);
+    const gras = d.edgesFrom("step:grant", step.id);
+    const reqRow = reqs.length
+      ? `<span class="step-qual-row step-qual-row--req"><span class="step-qual-label">Requires</span>${reqs.map(e => qualChipHtml(e, "req")).join("")}</span>`
+      : "";
+    const graRow = gras.length
+      ? `<span class="step-qual-row step-qual-row--grant"><span class="step-qual-label">Grants</span>${gras.map(e => qualChipHtml(e, "grant")).join("")}</span>`
+      : "";
+    return reqRow + graRow;
   }
   function constraintBadges(reqs) {
     const r = normalizeReqs(reqs);
@@ -1361,7 +1361,7 @@
   }
 
   function wireStepItemIcons(container) {
-    container.querySelectorAll(".step-item-chip .ins-item-icon[data-item-id]").forEach((el) => {
+    container.querySelectorAll(".ins-item-icon[data-item-id]").forEach((el) => {
       applySpriteBg(el, +el.dataset.itemId);
     });
   }
@@ -1483,10 +1483,7 @@
         <span class="step-body">
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
-          ${itemIconsHtml(step.reqs?.atlas_items, "req")}
-          ${tagChipsHtml(normalizeReqs(step.reqs).tags, "req")}
-          ${itemIconsHtml(step.grants?.atlas_items, "grant")}
-          ${tagChipsHtml(Object.keys(step.grants ?? {}).filter(k => step.grants[k] === true), "grant")}
+          ${qualRowsHtml(step)}
           <span class="step-note-wrap">
             <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
             <button class="step-note-toggle btn btn-ghost" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
@@ -1497,8 +1494,6 @@
           ${locationBadge(step)}
           ${xpBadge(step.xp)}
           ${invBadge(step)}
-          ${reqBadge(step.reqs)}
-          ${grantBadge(step.grants)}
           ${constraintBadges(step.reqs)}
           ${loadoutBadge}
         </span>
@@ -1593,7 +1588,7 @@
 
   function wireReqScroll(stepsEl) {
     let hlStyle = null;
-    stepsEl.querySelectorAll(".step-badge[data-req-skill]").forEach((badge) => {
+    stepsEl.querySelectorAll("[data-req-skill]").forEach((badge) => {
       badge.addEventListener("mouseenter", () => {
         const skills = badge.dataset.reqSkill.split(" ");
         const rules  = skills.map((sk) => `.route-step[data-grants-skill~="${sk}"] { box-shadow: inset 0 0 0 2px #f59e0b; transition: box-shadow 0.15s; }`).join("\n");
