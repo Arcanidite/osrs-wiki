@@ -1278,7 +1278,7 @@
   }
 
   function buildStepForm(opts) {
-    const { afterIdx = -1, onCommit, onCancel, stepsEl: outerStepsEl = null } = opts;
+    const { afterIdx = -1, onCommit, onCancel } = opts;
 
     const li = document.createElement("li");
     li.className = "goal-card ins-step-card";
@@ -1330,7 +1330,7 @@
       li.querySelector(".ins-label")?.focus();
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
-      const stepsEl = li.closest(".route-steps") ?? outerStepsEl;
+      const stepsEl = li.closest(".route-steps") ?? els.steps();
       if (stepsEl) {
         const pickArgs = { reqWrap, grantWrap, tagBox, tagGrantBox, itemReqBox, itemGrantBox, stepsEl };
         li.querySelector(".ins-pick-req").addEventListener("click", (e) => {
@@ -1712,7 +1712,6 @@
         const row = btn.closest(".route-insert-row");
         const form = buildStepForm({
           afterIdx,
-          stepsEl,
           onCommit: (step, idx) => {
             currentPath = [
               ...currentPath.slice(0, idx + 1),
