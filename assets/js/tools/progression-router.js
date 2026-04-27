@@ -4,18 +4,6 @@
   const GOALS_URL   = BASE + "/assets/data/tools/goals.jsonl";
   const REGIONS_URL      = BASE + "/assets/data/tools/regions.jsonl";
   const CONSTRAINTS_URL  = BASE + "/assets/data/tools/constraints.jsonl";
-  // Legacy keys — used only in migrateLegacyStore(), removed after migration.
-  const _LEGACY = {
-    PROFILE:      "osrs-router-profile",
-    PLANS:        "osrs-router-plans",
-    GOALS:        "osrs-router-goals",
-    ACTIVE:       "osrs-router-active",
-    STEP_NOTES:   "osrs-step-notes",
-    CUSTOM_GOALS: "osrs-router-custom-goals",
-    TAGS:         "osrs-router-tags",
-    LOADOUTS:     "osrs-router-loadouts",
-  };
-
   // ── Data ──────────────────────────────────────────────────────────────────
   async function loadJsonl(url) {
     const text = await fetch(url).then((r) => r.text());
@@ -51,40 +39,6 @@
   }
   function slimPlan(plan) {
     return { ...plan, steps: slimSteps(plan.steps) };
-  }
-
-  // One-time forward migration: reads legacy flat keys → DAL nodes, then removes them.
-  function migrateLegacyStore() {
-    const d = window.DAL;
-    if (d.node("meta", "migrated")) return;
-    const get = (k) => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } };
-
-    const oldPlans = get(_LEGACY.PLANS);
-    if (oldPlans?.length) {
-      const order = oldPlans.map((p, i) => {
-        const id = `plan:${Date.now() + i}`;
-        d.upsert("plan", id, p);
-        return id;
-      });
-      d.upsert("meta", "plan:order", order);
-    }
-    const oldProfile = get(_LEGACY.PROFILE);
-    if (oldProfile)   d.upsert("meta", "profile", oldProfile);
-    const oldGoals = get(_LEGACY.GOALS);
-    if (oldGoals)     d.upsert("meta", "goals", oldGoals);
-    const oldActive = get(_LEGACY.ACTIVE);
-    if (oldActive)    d.upsert("meta", "active", oldActive);
-    const oldNotes = get(_LEGACY.STEP_NOTES);
-    if (oldNotes)     d.upsert("meta", "step-notes", oldNotes);
-    const oldCustom = get(_LEGACY.CUSTOM_GOALS);
-    if (oldCustom)    d.upsert("meta", "custom-goals", oldCustom);
-    const oldTags = get(_LEGACY.TAGS);
-    if (oldTags)      d.upsert("meta", "tags", oldTags);
-    const oldLoadouts = get(_LEGACY.LOADOUTS);
-    if (oldLoadouts)  Object.entries(oldLoadouts).forEach(([id, rows]) => d.upsert("loadout", id, { rows }));
-
-    Object.values(_LEGACY).forEach(k => localStorage.removeItem(k));
-    d.upsert("meta", "migrated", true);
   }
 
   const store = (() => {
@@ -2641,7 +2595,6 @@
   async function init() {
     const base = document.currentScript?.dataset?.baseurl
       ?? document.querySelector("[data-baseurl]")?.dataset?.baseurl ?? "";
-    migrateLegacyStore();
     window.SpriteAtlas?.load(base);   // kick off async sprite extraction; idempotent
     window.addEventListener("osrs-sprite-ready", () => {
       const stepsEl = els.steps();
