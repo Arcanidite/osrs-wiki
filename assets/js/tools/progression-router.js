@@ -1666,12 +1666,14 @@
       const isReq = chip.classList.contains("step-qual-chip--req");
       const attr  = isReq ? "data-grants" : "data-reqs";
       chip.addEventListener("mouseenter", () => {
+        if (_pickMode) return;
         hlStyle = document.createElement("style");
         hlStyle.textContent = `.route-step[${attr}~="${key}"] { box-shadow: inset 0 0 0 2px #f59e0b; transition: box-shadow 0.15s; }`;
         stepsEl.prepend(hlStyle);
       });
       chip.addEventListener("mouseleave", () => { hlStyle?.remove(); hlStyle = null; });
       chip.addEventListener("click", () => {
+        if (_pickMode) return;
         const target = stepsEl.querySelector(`[${attr}~="${key}"]`);
         if (!target) return;
         target.scrollIntoView({ behavior: "smooth", block: "center" });
