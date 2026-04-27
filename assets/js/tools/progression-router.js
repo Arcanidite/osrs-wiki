@@ -1092,22 +1092,23 @@
     return step.inv_used ? `<span class="step-badge inv">${step.inv_used} inv slots</span>` : "";
   }
   function qualChipHtml(edge, tint) {
-    const { cmp, value, label: qLabel } = edge.data ?? {};
+    const { value, label: qLabel } = edge.data ?? {};
     const key = edge.to;
     const ns  = key.slice(0, key.indexOf(":"));
     const raw = key.slice(ns.length + 1);
+    const qkey = escHtml(key);
     if (ns === "skill") {
-      const skillsAttr = `${raw}:${value}`;
-      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--skill" data-req-skill="${escHtml(skillsAttr)}" title="${escHtml(skillLabel(raw))} ${value}"><span class="step-qual-ns">skl</span><span class="step-qual-val">${escHtml(skillLabel(raw))} ${value}</span></span>`;
+      const full = raw.charAt(0).toUpperCase() + raw.slice(1);
+      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--skill" data-qual-key="${qkey}" title="${full} ${value}"><span class="step-qual-ns">skl</span><span class="step-qual-val">${full} ${value}</span></span>`;
     }
     if (ns === "item") {
       const name = qLabel ?? raw;
-      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--item" title="${escHtml(name)}"><span class="step-qual-ns">itm</span><span class="ins-item-icon" data-item-id="${+raw}"></span></span>`;
+      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--item" data-qual-key="${qkey}" title="${escHtml(name)}"><span class="step-qual-ns">itm</span><span class="ins-item-icon" data-item-id="${+raw}"></span></span>`;
     }
     if (ns === "tag") {
-      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--tag" title="${escHtml(raw)}"><span class="step-qual-ns">tag</span><span class="step-qual-val">${escHtml(raw)}</span></span>`;
+      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--tag" data-qual-key="${qkey}" title="${escHtml(raw)}"><span class="step-qual-ns">tag</span><span class="step-qual-val">${escHtml(raw)}</span></span>`;
     }
-    return `<span class="step-qual-chip step-qual-chip--${tint}" title="${escHtml(key)}"><span class="step-qual-ns">${escHtml(ns)}</span><span class="step-qual-val">${escHtml(raw)}</span></span>`;
+    return `<span class="step-qual-chip step-qual-chip--${tint}" data-qual-key="${qkey}" title="${escHtml(key)}"><span class="step-qual-ns">${escHtml(ns)}</span><span class="step-qual-val">${escHtml(raw)}</span></span>`;
   }
   function qualRowsHtml(step) {
     const d    = dal();
@@ -1465,9 +1466,8 @@
       const stepDone  = questDone || manualStepDone.has(step.id);
       const isFocal   = tab?.focalSteps?.has(step.id);
       const valid     = seqValid[i];
-      const grantEntries = Object.entries(step.grants ?? {}).filter(([, v]) => typeof v === "number");
-      const grantSkills  = grantEntries.map(([sk, lvl]) => `${sk}:${lvl}`).join(" ");
-      const grantAttr    = grantSkills ? ` data-grants-skill="${escHtml(grantSkills)}"` : "";
+      const grantKeys = dal().edgesFrom("step:grant", step.id).map(e => e.to).join(" ");
+      const grantAttr = grantKeys ? ` data-grants="${escHtml(grantKeys)}"` : "";
       const focalAttr   = isFocal ? ' data-focal="1"' : "";
       const loadout   = loadouts[step.id];
       const loadoutBadge = loadout?.length
@@ -1518,7 +1518,7 @@
     wireStepDoneToggles(stepsEl);
     wireStepEditBtn(stepsEl);
     wireDragSort(stepsEl);
-    wireReqScroll(stepsEl);
+    wireQualLinks(stepsEl);
     wireFocalBtns(stepsEl);
     wireLoadoutBtns(stepsEl);
     wireStepItemIcons(stepsEl);
@@ -1586,22 +1586,18 @@
     });
   }
 
-  function wireReqScroll(stepsEl) {
+  function wireQualLinks(stepsEl) {
     let hlStyle = null;
-    stepsEl.querySelectorAll("[data-req-skill]").forEach((badge) => {
-      badge.addEventListener("mouseenter", () => {
-        const skills = badge.dataset.reqSkill.split(" ");
-        const rules  = skills.map((sk) => `.route-step[data-grants-skill~="${sk}"] { box-shadow: inset 0 0 0 2px #f59e0b; transition: box-shadow 0.15s; }`).join("\n");
+    stepsEl.querySelectorAll("[data-qual-key]").forEach((chip) => {
+      const key = chip.dataset.qualKey;
+      chip.addEventListener("mouseenter", () => {
         hlStyle = document.createElement("style");
-        hlStyle.textContent = rules;
+        hlStyle.textContent = `.route-step[data-grants~="${key}"] { box-shadow: inset 0 0 0 2px #f59e0b; transition: box-shadow 0.15s; }`;
         stepsEl.prepend(hlStyle);
       });
-      badge.addEventListener("mouseleave", () => { hlStyle?.remove(); hlStyle = null; });
-      badge.addEventListener("click", () => {
-        const skills = badge.dataset.reqSkill.split(" ");
-        const target = stepsEl.querySelector(
-          skills.map((sk) => `[data-grants-skill~="${sk}"]`).join(",")
-        );
+      chip.addEventListener("mouseleave", () => { hlStyle?.remove(); hlStyle = null; });
+      chip.addEventListener("click", () => {
+        const target = stepsEl.querySelector(`[data-grants~="${key}"]`);
         if (!target) return;
         target.scrollIntoView({ behavior: "smooth", block: "center" });
         target.classList.add("req-pulse");
