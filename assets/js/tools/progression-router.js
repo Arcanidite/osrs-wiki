@@ -1225,8 +1225,8 @@
       const stepIdx = +li.dataset.stepIdx;
       const step = currentPath[stepIdx];
       if (!step) return exitPickMode();
-      const edgeType = tint === "req" ? "step:req" : "step:grant";
-      dal().edgesFrom(edgeType, step.id).forEach(e => {
+      const allEdges = [...dal().edgesFrom("step:req", step.id), ...dal().edgesFrom("step:grant", step.id)];
+      allEdges.forEach(e => {
         const { value, label: qLabel } = e.data ?? {};
         const key = e.to;
         const ns  = key.slice(0, key.indexOf(":"));
