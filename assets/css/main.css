@@ -488,7 +488,7 @@ body {
   white-space: nowrap;
   padding: var(--sp-h);
 }
-.step-body { display: grid; gap: var(--gap-xs); justify-content: space-between; grid-auto-flow: row; }
+.step-body { display: grid; gap: var(--sp-h); justify-content: space-between; grid-auto-flow: row; }
 .step-title { font-weight: 600; color: var(--ink); }
 .step-detail { font-size: var(--fs-xs); color: var(--muted); }
 .step-meta { display: flex; flex-direction: column; gap: var(--gap-xs); }

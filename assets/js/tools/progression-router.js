@@ -1609,14 +1609,16 @@
         target.addEventListener("animationend", () => target.classList.remove("req-pulse"), { once: true });
       });
     });
+    const globalTallest = [...stepsEl.querySelectorAll(".step-qual-chip")]
+      .reduce((h, c) => Math.max(h, c.offsetHeight), 0);
+    if (globalTallest) {
+      stepsEl.querySelectorAll(".step-qual-chip").forEach(c => c.style.minHeight = `${globalTallest}px`);
+    }
+    const chipH = globalTallest || 28;
     stepsEl.querySelectorAll(".step-qual-section").forEach((section) => {
       const overflow = section.querySelector(".step-qual-overflow");
       const toggle   = section.querySelector(".step-qual-toggle");
       if (!overflow || !toggle) return;
-      const chips = [...overflow.querySelectorAll(".step-qual-chip")];
-      const tallest = chips.reduce((h, c) => Math.max(h, c.offsetHeight), 0);
-      if (tallest) chips.forEach(c => c.style.minHeight = `${tallest}px`);
-      const chipH = tallest || 28;
       overflow.style.setProperty("--qual-row-h", `${chipH + 4}px`);
       if (overflow.scrollHeight > chipH + 8) {
         section.classList.add("step-qual-section--collapsed");
