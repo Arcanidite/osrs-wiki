@@ -1096,11 +1096,10 @@
     const key = edge.to;
     const ns  = key.slice(0, key.indexOf(":"));
     const raw = key.slice(ns.length + 1);
-    const qkey = escHtml(key);
+    const qkey = escHtml(value != null ? `${key}:${value}` : key);
     if (ns === "skill") {
       const full = raw.charAt(0).toUpperCase() + raw.slice(1);
-      const vkey = escHtml(`${key}:${value}`);
-      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--skill" data-qual-key="${vkey}" title="${full} ${value}"><span class="step-qual-ns">skl</span><span class="step-qual-val">${full} ${value}</span></span>`;
+      return `<span class="step-qual-chip step-qual-chip--${tint} step-qual-chip--skill" data-qual-key="${qkey}" title="${full} ${value}"><span class="step-qual-ns">skl</span><span class="step-qual-val">${full} ${value}</span></span>`;
     }
     if (ns === "item") {
       const name = qLabel ?? raw;
@@ -1473,7 +1472,7 @@
       const isFocal   = tab?.focalSteps?.has(step.id);
       const valid     = seqValid[i];
       const grantKeys = dal().edgesFrom("step:grant", step.id)
-        .map(e => e.data?.cmp === "gte" ? `${e.to}:${e.data.value}` : e.to).join(" ");
+        .map(e => e.data?.value != null ? `${e.to}:${e.data.value}` : e.to).join(" ");
       const grantAttr = grantKeys ? ` data-grants="${escHtml(grantKeys)}"` : "";
       const focalAttr   = isFocal ? ' data-focal="1"' : "";
       const loadout   = loadouts[step.id];
