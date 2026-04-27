@@ -1216,7 +1216,7 @@
   let _pickMode = null;
 
   function enterPickMode({ tint, stepsEl, reqWrap, grantWrap, tagBox, tagGrantBox, itemReqBox, itemGrantBox, btnEl }) {
-    if (_pickMode) exitPickMode();
+    if (_pickMode) { if (_pickMode.btnEl === btnEl) return exitPickMode(); exitPickMode(); }
     btnEl.classList.add("pick-active");
     stepsEl.classList.add("pick-mode");
 
