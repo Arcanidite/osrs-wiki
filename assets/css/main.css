@@ -556,6 +556,24 @@ body {
 .route-steps.pick-mode .route-step.pick-target { cursor: pointer; outline: 2px dashed var(--gold); outline-offset: -2px; transition: background 0.1s; }
 .route-steps.pick-mode .route-step.pick-target:hover { background: #fffbe6; }
 .btn.pick-active { background: var(--gold); color: #fff; border-color: var(--gold); }
+.qual-pick-popover {
+  position: absolute; z-index: 100;
+  display: flex; flex-wrap: wrap; gap: var(--sp-q); align-items: center;
+  padding: var(--sp-q) var(--sp-h);
+  background: var(--card); border: 1px solid var(--gold);
+  border-radius: var(--radius); box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  max-width: 28rem;
+}
+.qual-pick-chip {
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 2px 7px; border-radius: var(--radius);
+  font-size: var(--fs-xs); cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+}
+.qual-pick-chip[data-selected="true"] { background: #fffbe6; border-color: var(--gold); color: var(--ink); font-weight: 600; }
+.qual-pick-confirm { align-self: center; padding: 2px var(--sp-h); font-size: var(--fs-xs); }
+.route-step { position: relative; }
 
 /* Custom step edit form + unified insert form skill sections */
 /* Capstone teal caution stripe */

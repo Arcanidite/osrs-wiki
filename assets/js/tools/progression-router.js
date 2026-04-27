@@ -1220,35 +1220,90 @@
     btnEl.classList.add("pick-active");
     stepsEl.classList.add("pick-mode");
 
+    let activePopover = null;
+
+    const dismissPopover = () => {
+      activePopover?.remove();
+      activePopover = null;
+    };
+
+    const mergeEdge = (edge) => {
+      const { value, label: qLabel } = edge.data ?? {};
+      const key = edge.to;
+      const ns  = key.slice(0, key.indexOf(":"));
+      const raw = key.slice(ns.length + 1);
+      if (ns === "skill") {
+        const wrap = tint === "req" ? reqWrap : grantWrap;
+        const existing = [...wrap.querySelectorAll(".ins-skill-pill")].find(p => p.querySelector(".ins-pill-sk").value === raw);
+        if (existing) existing.querySelector(".ins-pill-lvl").value = value;
+        else wrap.appendChild(makeSkillPill(raw, value, tint));
+      } else if (ns === "tag") {
+        const box = tint === "req" ? tagBox : tagGrantBox;
+        if (!box.querySelector(`[data-tag="${raw}"]`)) box.addTag(raw);
+      } else if (ns === "item") {
+        const box = tint === "req" ? itemReqBox : itemGrantBox;
+        if (!box.querySelector(`[data-item-id="${raw}"]`)) box.addItem(+raw, qLabel ?? raw);
+      }
+    };
+
     const onStep = (e) => {
+      e.stopPropagation();
       const li = e.currentTarget;
       const stepIdx = +li.dataset.stepIdx;
       const step = currentPath[stepIdx];
       if (!step) return exitPickMode();
+
+      dismissPopover();
+
       const allEdges = [...dal().edgesFrom("step:req", step.id), ...dal().edgesFrom("step:grant", step.id)];
-      allEdges.forEach(e => {
-        const { value, label: qLabel } = e.data ?? {};
-        const key = e.to;
+      if (!allEdges.length) return;
+
+      const popover = document.createElement("div");
+      popover.className = "qual-pick-popover";
+
+      const chips = allEdges.map(edge => {
+        const { value, label: qLabel } = edge.data ?? {};
+        const key = edge.to;
         const ns  = key.slice(0, key.indexOf(":"));
         const raw = key.slice(ns.length + 1);
-        if (ns === "skill") {
-          const wrap = tint === "req" ? reqWrap : grantWrap;
-          const existing = [...wrap.querySelectorAll(".ins-skill-pill")].find(p => p.querySelector(".ins-pill-sk").value === raw);
-          if (existing) existing.querySelector(".ins-pill-lvl").value = value;
-          else wrap.appendChild(makeSkillPill(raw, value, tint));
-        } else if (ns === "tag") {
-          const box = tint === "req" ? tagBox : tagGrantBox;
-          if (!box.querySelector(`[data-tag="${raw}"]`)) box.addTag(raw);
-        } else if (ns === "item") {
-          const box = tint === "req" ? itemReqBox : itemGrantBox;
-          const name = qLabel ?? raw;
-          if (!box.querySelector(`[data-item-id="${raw}"]`)) box.addItem(+raw, name);
-        }
+        const chip = document.createElement("button");
+        chip.className = "qual-pick-chip";
+        chip.dataset.selected = "false";
+        const nsEl = document.createElement("span");
+        nsEl.className = "step-qual-ns"; nsEl.textContent = ns;
+        const valEl = document.createElement("span");
+        valEl.className = "step-qual-val";
+        valEl.textContent = ns === "skill"
+          ? `${raw.charAt(0).toUpperCase() + raw.slice(1)} ${value}`
+          : ns === "item" ? (qLabel ?? raw) : raw;
+        chip.append(nsEl, valEl);
+        chip.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          const sel = chip.dataset.selected !== "true";
+          chip.dataset.selected = String(sel);
+        });
+        chip._edge = edge;
+        return chip;
       });
-      exitPickMode();
+
+      chips.forEach(c => popover.appendChild(c));
+
+      const confirm = document.createElement("button");
+      confirm.className = "btn btn-primary qual-pick-confirm";
+      confirm.textContent = "Add selected";
+      confirm.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        chips.filter(c => c.dataset.selected === "true").forEach(c => mergeEdge(c._edge));
+        dismissPopover();
+        exitPickMode();
+      });
+      popover.appendChild(confirm);
+
+      li.appendChild(popover);
+      activePopover = popover;
     };
 
-    const onKey = (e) => { if (e.key === "Escape") exitPickMode(); };
+    const onKey = (e) => { if (e.key === "Escape") { dismissPopover(); exitPickMode(); } };
 
     const steps = [...stepsEl.querySelectorAll(".route-step")];
     steps.forEach(li => {
@@ -1257,12 +1312,13 @@
     });
     document.addEventListener("keydown", onKey, { once: true });
 
-    _pickMode = { stepsEl, steps, onStep, onKey, btnEl };
+    _pickMode = { stepsEl, steps, onStep, onKey, btnEl, dismissPopover };
   }
 
   function exitPickMode() {
     if (!_pickMode) return;
-    const { stepsEl, steps, onStep, onKey, btnEl } = _pickMode;
+    const { stepsEl, steps, onStep, onKey, btnEl, dismissPopover } = _pickMode;
+    dismissPopover?.();
     stepsEl.classList.remove("pick-mode");
     btnEl.classList.remove("pick-active");
     steps.forEach(li => {
