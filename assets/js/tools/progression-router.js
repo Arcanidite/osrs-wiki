@@ -1108,6 +1108,19 @@
     const parts  = entries.map(([sk, lvl]) => `${skillLabel(sk)} ${lvl}`);
     return `<span class="step-badge req" data-req-skill="${escHtml(skillsWithLevels)}">Req: ${parts.join(", ")}</span>`;
   }
+  function grantBadge(grants) {
+    const entries = Object.entries(grants ?? {}).filter(([k, v]) => typeof v === "number" && k !== "atlas_items");
+    if (!entries.length) return "";
+    const parts = entries.map(([sk, lvl]) => `${skillLabel(sk)} ${lvl}`);
+    return `<span class="step-badge grant">Grants: ${parts.join(", ")}</span>`;
+  }
+  function tagChipsHtml(tags, tint) {
+    if (!tags?.length) return "";
+    const label = tint === "req" ? "Tag req:" : "Tag grants:";
+    return `<span class="step-items-row step-items-row--${tint}"><span class="step-items-label">${label}</span>${
+      tags.map(t => `<span class="step-item-chip step-tag-chip">${escHtml(t)}</span>`).join("")
+    }</span>`;
+  }
   function constraintBadges(reqs) {
     const r = normalizeReqs(reqs);
     const out = [];
@@ -1471,7 +1484,9 @@
           <span class="step-title">${escHtml(step.label)}</span>
           <span class="step-detail">${escHtml(step.detail ?? "")}</span>
           ${itemIconsHtml(step.reqs?.atlas_items, "req")}
+          ${tagChipsHtml(normalizeReqs(step.reqs).tags, "req")}
           ${itemIconsHtml(step.grants?.atlas_items, "grant")}
+          ${tagChipsHtml(Object.keys(step.grants ?? {}).filter(k => step.grants[k] === true), "grant")}
           <span class="step-note-wrap">
             <textarea class="step-note" data-step-id="${escHtml(step.id)}" placeholder="Add a note…" rows="1"></textarea>
             <button class="step-note-toggle btn btn-ghost" data-step-id="${escHtml(step.id)}" hidden>▼ more</button>
@@ -1483,6 +1498,7 @@
           ${xpBadge(step.xp)}
           ${invBadge(step)}
           ${reqBadge(step.reqs)}
+          ${grantBadge(step.grants)}
           ${constraintBadges(step.reqs)}
           ${loadoutBadge}
         </span>
@@ -1705,6 +1721,13 @@
               store.saveActive(null);
               renderPlans();
             } else recompute();
+          } else {
+            const goalLabel = step._goalLabel ?? step.label;
+            currentPath = currentPath.filter(s => s._goalLabel !== goalLabel && s.id !== step.id);
+            pinnedInserts = pinnedInserts.filter(p => p.step._goalLabel !== goalLabel && p.step.id !== step.id);
+            if (window._routerLastPath) window._routerLastPath.path = currentPath;
+            renderSteps(currentPath);
+            upsertActivePlan(currentPath, readProfile());
           }
           return;
         }
