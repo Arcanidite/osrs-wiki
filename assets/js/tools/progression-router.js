@@ -773,13 +773,9 @@
   }
 
   // ── Routing ───────────────────────────────────────────────────────────────
-  // Normalize legacy flat {skill:lvl} shape to structured shape
   function normalizeReqs(reqs) {
     if (!reqs || typeof reqs !== "object") return { skills: {} };
-    if (reqs.skills !== undefined || reqs.items !== undefined ||
-        reqs.equipment !== undefined || reqs.inv_free !== undefined ||
-        reqs.constraints !== undefined) return { ...reqs, tags: reqs.tags ?? [] };
-    return { skills: reqs, tags: [] };   // legacy flat form
+    return { ...reqs, tags: reqs.tags ?? [] };
   }
 
   // ctx: { completedIds: Set, freeSlots: number }
