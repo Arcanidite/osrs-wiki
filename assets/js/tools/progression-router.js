@@ -206,7 +206,7 @@
     const r = normalizeReqs(reqs), q = [];
     Object.entries(r.skills ?? {}).forEach(([sk, lvl]) => q.push({ to: `skill:${sk}`, data: { cmp: "gte", value: lvl } }));
     (r.tags ?? []).forEach(t => q.push({ to: `tag:${t}`, data: { cmp: "has" } }));
-    (r.atlas_items ?? []).forEach(({ id }) => q.push({ to: `item:${id}`, data: { cmp: "has" } }));
+    (r.atlas_items ?? []).forEach(({ id, name }) => q.push({ to: `item:${id}`, data: { cmp: "has", label: name } }));
     return q;
   }
   function grantQuals(grants) {
@@ -1490,9 +1490,8 @@
           <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
           <button class="btn btn-ghost step-loadout-btn" data-step-id="${escHtml(step.id)}" title="Attach loadout">🎒</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
-          ${step._capstone
-            ? `${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove goal">✕</button>`
-            : `<button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="Remove step">✕</button>`}
+          ${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}
+          <button class="btn btn-ghost step-remove-btn" data-step-idx="${i}" title="${step._capstone ? "Remove goal" : "Remove step"}">✕</button>
         </span>
       </li>`);
       rows.push(insertRowHtml(i));
@@ -1504,7 +1503,7 @@
     wireStepEdit(stepsEl);
     wireInsertRows(stepsEl);
     wireStepRemove(stepsEl);
-    wireCapstoneFill(stepsEl);
+    wireGapFill(stepsEl);
     wireStepDoneToggles(stepsEl);
     wireStepEditBtn(stepsEl);
     wireDragSort(stepsEl);
@@ -1725,40 +1724,52 @@
     });
   }
 
-  function wireCapstoneFill(stepsEl) {
-    stepsEl.querySelectorAll(".step-fill-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const idx  = +btn.dataset.stepIdx;
-        const step = currentPath[idx];
-        if (!step?._capstone) return;
-        let cs = currentPath.slice(0, idx).reduce(
-          (st, s) => dal().coalesce(dal().edgesFrom("step:grant", s.id), st),
-          toState(readProfile().skills)
-        );
-        const goalLabel = step._goalLabel ?? step.label;
-        const synths = [];
-        const r = normalizeReqs(step.reqs);
-        Object.entries(r.skills ?? {}).forEach(([sk, needed]) => {
-          const cur = cs[`skill:${sk}`] ?? 1;
-          if (cur >= needed) return;
-          const synth = {
-            id: `synth-${sk}-${needed}-${Date.now()}`,
-            label: `Train ${sk.charAt(0).toUpperCase() + sk.slice(1)} ${cur}→${needed}`,
-            detail: "Synthetic step — no matching step found in bank.",
-            reqs: { skills: { [sk]: cur } },
-            grants: { [sk]: needed },
-            _custom: true, _synthetic: true, _goalLabel: goalLabel,
-          };
-          syncQualEdges([synth]);
-          synths.push(synth);
-        });
-        if (!synths.length) return;
-        const reqKey = (s) => Math.min(...Object.values(s.reqs?.skills ?? { _: 0 }));
-        synths.sort((a, b) => reqKey(a) - reqKey(b));
-        currentPath.splice(idx, 0, ...synths);
-        renderSteps(currentPath);
-        upsertActivePlan(currentPath, readProfile());
+  function fillGap(idx) {
+    const step  = currentPath[idx];
+    const state = currentPath.slice(0, idx).reduce(
+      (st, s) => dal().coalesce(dal().edgesFrom("step:grant", s.id), st),
+      toState(readProfile().skills)
+    );
+    const goalLabel = step._goalLabel ?? step.label;
+
+    const synths = dal().edgesFrom("step:req", step.id)
+      .filter(e => !dal().satisfies([e], state))
+      .map(e => {
+        const { cmp, value, label: qLabel } = e.data ?? {};
+        const key = e.to;
+        const ns  = key.slice(0, key.indexOf(":"));
+        const raw = key.slice(ns.length + 1);
+        let id, label, reqs, grants;
+        if (cmp === "gte") {
+          const cur = state[key] ?? 1;
+          id     = `synth-${raw}-${value}-${Date.now()}`;
+          label  = `Train ${raw.charAt(0).toUpperCase() + raw.slice(1)} ${cur}→${value}`;
+          reqs   = { skills: { [raw]: cur } };
+          grants = { [raw]: value };
+        } else {
+          const name = qLabel ?? raw;
+          id     = `synth-${key}-${Date.now()}`;
+          label  = `Obtain ${name}`;
+          reqs   = { skills: {}, tags: [] };
+          grants = ns === "item" ? { atlas_items: [{ id: raw, name }] } : { [raw]: true };
+        }
+        const s = { id, label, detail: "Synthetic step — no matching step found in bank.",
+                    reqs, grants, _custom: true, _synthetic: true, _goalLabel: goalLabel };
+        syncQualEdges([s]);
+        return s;
       });
+
+    if (!synths.length) return;
+    const reqKey = (s) => Math.min(...Object.values(s.reqs?.skills ?? { _: 0 }));
+    synths.sort((a, b) => reqKey(a) - reqKey(b));
+    currentPath.splice(idx, 0, ...synths);
+    renderSteps(currentPath);
+    upsertActivePlan(currentPath, readProfile());
+  }
+
+  function wireGapFill(stepsEl) {
+    stepsEl.querySelectorAll(".step-fill-btn").forEach((btn) => {
+      btn.addEventListener("click", () => fillGap(+btn.dataset.stepIdx));
     });
   }
 
