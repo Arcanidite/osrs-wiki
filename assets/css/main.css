@@ -431,7 +431,7 @@ body {
 }
 
 .btn {
-  padding: var(--sp-h) var(--sp);
+  padding: var(--sp-q) var(--sp-q);
   border: none; border-radius: var(--radius);
   font-size: var(--fs-sm); font-weight: 600;
   cursor: pointer; transition: background 0.15s;
