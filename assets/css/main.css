@@ -488,7 +488,7 @@ body {
   white-space: nowrap;
   padding: var(--sp-h);
 }
-.step-body { display: grid; gap: var(--gap-xs); height: 100%; grid-auto-rows: 1fr; }
+.step-body { display: flex; flex-direction: column; gap: var(--gap-xs); }
 .step-title { font-weight: 600; color: var(--ink); }
 .step-detail { font-size: var(--fs-xs); color: var(--muted); }
 .step-meta { display: flex; flex-direction: column; gap: var(--gap-xs); }
@@ -611,20 +611,37 @@ body {
 .ins-detail { font-size: var(--fs-xs); color: var(--muted); border: none; background: transparent; width: 100%; padding: 0; }
 .ins-label:focus, .ins-detail:focus { outline: none; }
 
-/* ── Qual rows (unified req/grant chips for all node types) ──────────────── */
-.step-qual-row {
-  display: flex; flex-wrap: wrap; gap: 4px; align-items: center; height: 100%;
+/* ── Qual sections (unified req/grant chips for all node types) ──────────── */
+.step-qual-section {
+  display: flex; flex-direction: column; gap: 2px;
+}
+.step-qual-section-hd {
+  display: flex; align-items: center; gap: var(--gap-xs);
 }
 .step-qual-label {
   font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.04em; padding-right: 4px; min-width: 4.5rem;
+  letter-spacing: 0.04em; min-width: 4.5rem;
 }
-.step-qual-row--req   .step-qual-label { color: #b47a00; }
-.step-qual-row--grant .step-qual-label { color: #2e7d32; }
+.step-qual-section--req   .step-qual-label { color: #b47a00; }
+.step-qual-section--grant .step-qual-label { color: #2e7d32; }
+.step-qual-toggle {
+  font-size: 0.65rem; font-weight: 700; opacity: 0.55; padding: 0 4px;
+  line-height: 1; color: inherit;
+}
+.step-qual-overflow {
+  display: grid; grid-template-rows: 1fr; overflow: hidden;
+  transition: grid-template-rows 0.2s ease;
+}
+.step-qual-section--collapsed .step-qual-overflow {
+  grid-template-rows: var(--qual-row-h, 1.75rem);
+}
+.step-qual-row {
+  display: flex; flex-wrap: wrap; gap: 4px; align-items: flex-start; min-height: 0;
+}
 .step-qual-chip {
   display: inline-flex; align-items: center; gap: 3px;
   border-radius: var(--radius); padding: 2px 6px;
-  font-size: var(--fs-xs); cursor: default; white-space: nowrap; height: 100%;
+  font-size: var(--fs-xs); cursor: default; white-space: nowrap;
 }
 .step-qual-chip--req   { background: #fffbe6; border: 1px solid #c89a00; color: #7a5c00; }
 .step-qual-chip--grant { background: #f1f8f1; border: 1px solid #4caf50; color: #1a5c2a; }

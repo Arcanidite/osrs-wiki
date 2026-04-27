@@ -1110,17 +1110,22 @@
     }
     return `<span class="step-qual-chip step-qual-chip--${tint}" data-qual-key="${qkey}" title="${escHtml(key)}"><span class="step-qual-ns">${escHtml(ns)}</span><span class="step-qual-val">${escHtml(raw)}</span></span>`;
   }
+  function qualSectionHtml(edges, tint) {
+    if (!edges.length) return "";
+    const label = tint === "req" ? "Requires" : "Grants";
+    const chips = edges.map(e => qualChipHtml(e, tint)).join("");
+    return `<span class="step-qual-section step-qual-section--${tint}">` +
+      `<span class="step-qual-section-hd">` +
+        `<span class="step-qual-label">${label}</span>` +
+        `<button class="step-qual-toggle btn btn-ghost" hidden aria-expanded="false">+more</button>` +
+      `</span>` +
+      `<span class="step-qual-overflow"><span class="step-qual-row step-qual-row--${tint}">${chips}</span></span>` +
+    `</span>`;
+  }
   function qualRowsHtml(step) {
-    const d    = dal();
-    const reqs = d.edgesFrom("step:req",   step.id);
-    const gras = d.edgesFrom("step:grant", step.id);
-    const reqRow = reqs.length
-      ? `<span class="step-qual-row step-qual-row--req"><span class="step-qual-label">Requires</span>${reqs.map(e => qualChipHtml(e, "req")).join("")}</span>`
-      : "";
-    const graRow = gras.length
-      ? `<span class="step-qual-row step-qual-row--grant"><span class="step-qual-label">Grants</span>${gras.map(e => qualChipHtml(e, "grant")).join("")}</span>`
-      : "";
-    return reqRow + graRow;
+    const d = dal();
+    return qualSectionHtml(d.edgesFrom("step:req",   step.id), "req") +
+           qualSectionHtml(d.edgesFrom("step:grant", step.id), "grant");
   }
   function constraintBadges(reqs) {
     const r = normalizeReqs(reqs);
@@ -1603,6 +1608,24 @@
         target.classList.add("req-pulse");
         target.addEventListener("animationend", () => target.classList.remove("req-pulse"), { once: true });
       });
+    });
+    stepsEl.querySelectorAll(".step-qual-section").forEach((section) => {
+      const overflow = section.querySelector(".step-qual-overflow");
+      const toggle   = section.querySelector(".step-qual-toggle");
+      if (!overflow || !toggle) return;
+      const rowH = overflow.scrollHeight;
+      const chipH = overflow.querySelector(".step-qual-chip")?.offsetHeight ?? 28;
+      overflow.style.setProperty("--qual-row-h", `${chipH + 4}px`);
+      if (rowH > chipH + 8) {
+        section.classList.add("step-qual-section--collapsed");
+        toggle.hidden = false;
+        toggle.addEventListener("click", () => {
+          const collapsed = section.classList.contains("step-qual-section--collapsed");
+          section.classList.toggle("step-qual-section--collapsed", !collapsed);
+          toggle.setAttribute("aria-expanded", String(collapsed));
+          toggle.textContent = collapsed ? "less" : "+more";
+        });
+      }
     });
   }
 
