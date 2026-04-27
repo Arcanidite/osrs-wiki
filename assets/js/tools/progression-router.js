@@ -1591,7 +1591,7 @@
         </span>
         <span class="step-actions">
           <button class="btn btn-ghost step-focal-btn${isFocal ? " focal-on" : ""}" data-step-idx="${i}" title="Mark focal">★</button>
-          ${!notes[step.id] ? `<button class="btn btn-ghost step-note-add-btn" data-step-id="${escHtml(step.id)}" title="Add note">✎</button>` : ""}
+          ${!notes[step.id] ? `<button class="btn btn-ghost step-note-add-btn" data-step-id="${escHtml(step.id)}" title="Add note">📝</button>` : ""}
           <button class="btn btn-ghost step-loadout-btn" data-step-id="${escHtml(step.id)}" title="Attach loadout">🎒</button>
           ${step._custom ? `<button class="btn btn-ghost step-edit-btn" data-step-idx="${i}" title="Edit step">✎</button>` : ""}
           ${!valid ? `<button class="btn btn-ghost step-fill-btn" data-step-idx="${i}" title="Generate missing prerequisite steps">⟳ fill gap</button>` : ""}
