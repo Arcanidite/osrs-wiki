@@ -1214,24 +1214,6 @@
     const li = document.createElement("li");
     li.className = "goal-card ins-step-card";
 
-    function showCard() {
-      li.innerHTML = `
-        <span class="goal-card-body">
-          <span class="goal-card-label ins-card-label">New step</span>
-          <span class="goal-card-reqs"></span>
-        </span>
-        <span class="goal-card-btns">
-          <button class="btn btn-ghost ins-card-edit" title="Configure step">✎</button>
-          <button class="btn btn-ghost ins-card-cancel" title="Cancel">✕</button>
-        </span>`;
-      li.querySelector(".ins-card-edit").addEventListener("click", showForm);
-      li.querySelector(".goal-card-body").addEventListener("click", showForm);
-      li.querySelector(".ins-card-cancel").addEventListener("click", (e) => {
-        e.stopPropagation();
-        if (onCancel) onCancel();
-      });
-    }
-
     function showForm() {
       li.innerHTML = `
         <div class="ins-step-body">
@@ -1277,7 +1259,7 @@
       li.querySelector(".ins-label")?.focus();
       li.querySelector(".ins-add-req").addEventListener("click", () => reqWrap.appendChild(makeSkillPill(skillNames[0], 1, "req")));
       li.querySelector(".ins-add-grant").addEventListener("click", () => grantWrap.appendChild(makeSkillPill(skillNames[0], 1, "grant")));
-      li.querySelector(".ins-cancel").addEventListener("click", showCard);
+      li.querySelector(".ins-cancel").addEventListener("click", () => { if (onCancel) onCancel(); });
       li.querySelector(".ins-add").addEventListener("click", () => {
         const label = li.querySelector(".ins-label").value.trim();
         if (!label) return;
@@ -1316,7 +1298,7 @@
       });
     }
 
-    showCard();
+    showForm();
     return li;
   }
 
