@@ -629,14 +629,14 @@ body {
   line-height: 1; color: inherit;
 }
 .step-qual-overflow {
-  display: grid; grid-template-rows: 1fr; overflow: hidden;
+  display: grid; grid-template-rows: max-content; overflow: hidden;
   transition: grid-template-rows 0.2s ease;
 }
 .step-qual-section--collapsed .step-qual-overflow {
   grid-template-rows: var(--qual-row-h, 1.75rem);
 }
 .step-qual-row {
-  display: flex; flex-wrap: wrap; gap: 4px; align-items: flex-start; min-height: 0;
+  display: flex; flex-wrap: wrap; gap: 4px; align-items: stretch; min-height: 0;
 }
 .step-qual-chip {
   display: inline-flex; align-items: center; gap: 3px;
