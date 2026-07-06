@@ -1,0 +1,15 @@
+---
+layout: "tool"
+title: "Bestiary"
+node_id: "bestiary"
+summary: "All 3,522 attackable monsters."
+page_class: "tool"
+tags: ["combat", "monsters"]
+breadcrumb: [{"label": "Combat", "url": "/combat"}]
+children: []
+tool_script: "/assets/js/tools/db.js"
+---
+
+<div id="db-root" data-db-kind="npcs" data-db-filter='{"attackable": true}'></div>
+<noscript><p>The database browser requires JavaScript. Raw data: <code>/assets/data/cache/</code>.</p></noscript>
+<p class="data-source">Source: RuneLite cache extraction (<code>npcs.pack</code>) · stamp 2026-07-06. Only fields present in the game cache are shown — nothing here is estimated or hand-invented.</p>

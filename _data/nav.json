@@ -347,6 +347,329 @@
           }
         },
         "children": []
+      },
+      {
+        "id": "hitpoints",
+        "label": "Hitpoints",
+        "url": "/skills/hitpoints",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Your life points.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "cooking",
+        "label": "Cooking",
+        "url": "/skills/cooking",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Cook food for healing.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "woodcutting",
+        "label": "Woodcutting",
+        "url": "/skills/woodcutting",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Chop trees for logs.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "fletching",
+        "label": "Fletching",
+        "url": "/skills/fletching",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Craft bows and ammunition.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "fishing",
+        "label": "Fishing",
+        "url": "/skills/fishing",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Catch fish.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "firemaking",
+        "label": "Firemaking",
+        "url": "/skills/firemaking",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Light fires and lanterns.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "crafting",
+        "label": "Crafting",
+        "url": "/skills/crafting",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Craft jewellery, leather and glass.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "smithing",
+        "label": "Smithing",
+        "url": "/skills/smithing",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Smelt and smith metal gear.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "mining",
+        "label": "Mining",
+        "url": "/skills/mining",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Mine ores and gems.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "herblore",
+        "label": "Herblore",
+        "url": "/skills/herblore",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Mix potions.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "agility",
+        "label": "Agility",
+        "url": "/skills/agility",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Shortcuts and run energy.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "thieving",
+        "label": "Thieving",
+        "url": "/skills/thieving",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Pickpocket and steal.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "slayer",
+        "label": "Slayer",
+        "url": "/skills/slayer",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Assigned monster hunting; gates many monsters.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "farming",
+        "label": "Farming",
+        "url": "/skills/farming",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Grow crops.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "runecraft",
+        "label": "Runecraft",
+        "url": "/skills/runecraft",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Craft runes from essence.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "hunter",
+        "label": "Hunter",
+        "url": "/skills/hunter",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Trap creatures.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "construction",
+        "label": "Construction",
+        "url": "/skills/construction",
+        "type": "page",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Build a player-owned house.",
+          "tags": [
+            "skills"
+          ],
+          "generated": true
+        },
+        "children": []
       }
     ]
   },
@@ -432,6 +755,47 @@
               }
             ]
           }
+        },
+        "children": []
+      },
+      {
+        "id": "monsters",
+        "label": "Monsters",
+        "url": "/combat/monsters",
+        "type": "group",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "3,522 attackable monsters from the cache.",
+          "tags": [
+            "combat",
+            "monsters"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "bestiary",
+        "label": "Bestiary",
+        "url": "/combat/bestiary",
+        "type": "group",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "All 3,522 attackable monsters from the cache — combat level, stats, actions.",
+          "tags": [
+            "combat",
+            "monsters",
+            "database"
+          ],
+          "generated": true
         },
         "children": []
       }
@@ -548,6 +912,46 @@
               }
             ]
           }
+        },
+        "children": []
+      },
+      {
+        "id": "item-db",
+        "label": "Item Database",
+        "url": "/items/all",
+        "type": "group",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "Browse all 13,667 items from the game cache — stats, requirements, examine text.",
+          "tags": [
+            "items",
+            "database"
+          ],
+          "generated": true
+        },
+        "children": []
+      },
+      {
+        "id": "item-equipment",
+        "label": "Equipment",
+        "url": "/items/equipment",
+        "type": "group",
+        "slots": [
+          "nav",
+          "sitemap",
+          "search"
+        ],
+        "meta": {
+          "summary": "All 4,791 equipable items by slot.",
+          "tags": [
+            "items",
+            "equipment"
+          ],
+          "generated": true
         },
         "children": []
       }

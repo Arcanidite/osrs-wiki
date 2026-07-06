@@ -17,6 +17,27 @@
 - **Avoid:** enumerate every option with where / how-unlocked / yield (brief §5.11); let the optimizer
   compute the best over the **available** set (§5.0/§5.12). Never store "best" — compute it.
 
+## [G-2] objects.pack names are garbage — don't build object entries from it
+
+- **Trap:** treating `objects.pack` (805 records) as presentable content. 793/805 names are
+  `object_N` placeholders and the other 12 are binary junk (`ÿÿO…`); only `actions`/`tags` survived.
+- **Why it bites:** generating object entry pages would mean inventing names — fabricated data.
+- **Avoid:** wiki population skips objects entirely. Fix upstream name decoding in
+  `Dump.java`/`extract_cache.py` (likely tied to the stale-XTEA/locations issue, see DEVLOG)
+  before object entries exist.
+- **source/stamp:** observed in cache extraction · 2026-07-06
+
+## [G-3] NPC ids are variant-heavy — dedupe by (name, combat level) for display
+
+- **Trap:** rendering one entry per NPC id; 12,076 ids collapse to ~4,451 names (3,522 attackable
+  ids → 1,638 distinct monsters).
+- **Why it bites:** entry lists look spammed with identical rows; but per-id deep links still
+  matter (quest states reference specific variants).
+- **Avoid:** group rows by (name, combat_level) and list variant ids inside the entry — what
+  `assets/js/tools/db.js` does. Future drop-table/bestiary data should attach to the group,
+  not one arbitrary id.
+- **source/stamp:** cache extraction · 2026-07-06
+
 <!-- Append new gotchas below. Template:
 ## [G-N] <short title>
 - **Trap:** <the wrong assumption / mistake>

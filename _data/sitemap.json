@@ -527,6 +527,329 @@
             }
           },
           "children": []
+        },
+        {
+          "id": "hitpoints",
+          "label": "Hitpoints",
+          "url": "/skills/hitpoints",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Your life points.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "cooking",
+          "label": "Cooking",
+          "url": "/skills/cooking",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Cook food for healing.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "woodcutting",
+          "label": "Woodcutting",
+          "url": "/skills/woodcutting",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Chop trees for logs.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "fletching",
+          "label": "Fletching",
+          "url": "/skills/fletching",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Craft bows and ammunition.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "fishing",
+          "label": "Fishing",
+          "url": "/skills/fishing",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Catch fish.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "firemaking",
+          "label": "Firemaking",
+          "url": "/skills/firemaking",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Light fires and lanterns.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "crafting",
+          "label": "Crafting",
+          "url": "/skills/crafting",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Craft jewellery, leather and glass.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "smithing",
+          "label": "Smithing",
+          "url": "/skills/smithing",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Smelt and smith metal gear.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "mining",
+          "label": "Mining",
+          "url": "/skills/mining",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Mine ores and gems.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "herblore",
+          "label": "Herblore",
+          "url": "/skills/herblore",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Mix potions.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "agility",
+          "label": "Agility",
+          "url": "/skills/agility",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Shortcuts and run energy.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "thieving",
+          "label": "Thieving",
+          "url": "/skills/thieving",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Pickpocket and steal.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "slayer",
+          "label": "Slayer",
+          "url": "/skills/slayer",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Assigned monster hunting; gates many monsters.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "farming",
+          "label": "Farming",
+          "url": "/skills/farming",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Grow crops.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "runecraft",
+          "label": "Runecraft",
+          "url": "/skills/runecraft",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Craft runes from essence.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "hunter",
+          "label": "Hunter",
+          "url": "/skills/hunter",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Trap creatures.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "construction",
+          "label": "Construction",
+          "url": "/skills/construction",
+          "type": "page",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Build a player-owned house.",
+            "tags": [
+              "skills"
+            ],
+            "generated": true
+          },
+          "children": []
         }
       ]
     },
@@ -612,6 +935,143 @@
                 }
               ]
             }
+          },
+          "children": []
+        },
+        {
+          "id": "monsters",
+          "label": "Monsters",
+          "url": "/combat/monsters",
+          "type": "group",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "3,522 attackable monsters from the cache.",
+            "tags": [
+              "combat",
+              "monsters"
+            ],
+            "generated": true
+          },
+          "children": [
+            {
+              "id": "bestiary-lvl-1-20",
+              "label": "Combat 1–20",
+              "url": "/combat/monsters/lvl-1-20",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "577 monsters in this bracket.",
+                "tags": [
+                  "combat",
+                  "monsters"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "bestiary-lvl-21-50",
+              "label": "Combat 21–50",
+              "url": "/combat/monsters/lvl-21-50",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "758 monsters in this bracket.",
+                "tags": [
+                  "combat",
+                  "monsters"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "bestiary-lvl-51-100",
+              "label": "Combat 51–100",
+              "url": "/combat/monsters/lvl-51-100",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "912 monsters in this bracket.",
+                "tags": [
+                  "combat",
+                  "monsters"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "bestiary-lvl-101-200",
+              "label": "Combat 101–200",
+              "url": "/combat/monsters/lvl-101-200",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "648 monsters in this bracket.",
+                "tags": [
+                  "combat",
+                  "monsters"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "bestiary-lvl-200-plus",
+              "label": "Combat 200+",
+              "url": "/combat/monsters/lvl-200-plus",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "497 monsters in this bracket.",
+                "tags": [
+                  "combat",
+                  "monsters"
+                ],
+                "generated": true
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "bestiary",
+          "label": "Bestiary",
+          "url": "/combat/bestiary",
+          "type": "group",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "All 3,522 attackable monsters from the cache — combat level, stats, actions.",
+            "tags": [
+              "combat",
+              "monsters",
+              "database"
+            ],
+            "generated": true
           },
           "children": []
         }
@@ -730,6 +1190,294 @@
             }
           },
           "children": []
+        },
+        {
+          "id": "item-db",
+          "label": "Item Database",
+          "url": "/items/all",
+          "type": "group",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "Browse all 13,667 items from the game cache — stats, requirements, examine text.",
+            "tags": [
+              "items",
+              "database"
+            ],
+            "generated": true
+          },
+          "children": []
+        },
+        {
+          "id": "item-equipment",
+          "label": "Equipment",
+          "url": "/items/equipment",
+          "type": "group",
+          "slots": [
+            "nav",
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "All 4,791 equipable items by slot.",
+            "tags": [
+              "items",
+              "equipment"
+            ],
+            "generated": true
+          },
+          "children": [
+            {
+              "id": "item-slot-head",
+              "label": "Head slot",
+              "url": "/items/equipment/head",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "933 head items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-cape",
+              "label": "Cape slot",
+              "url": "/items/equipment/cape",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "345 cape items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-neck",
+              "label": "Neck slot",
+              "url": "/items/equipment/neck",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "209 neck items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-ammo",
+              "label": "Ammo slot",
+              "url": "/items/equipment/ammo",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "206 ammo items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-weapon",
+              "label": "Weapon slot",
+              "url": "/items/equipment/weapon",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "726 weapon items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-2h",
+              "label": "2h weapons",
+              "url": "/items/equipment/2h",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "386 2h items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-shield",
+              "label": "Shield slot",
+              "url": "/items/equipment/shield",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "364 shield items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-body",
+              "label": "Body slot",
+              "url": "/items/equipment/body",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "549 body items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-legs",
+              "label": "Legs slot",
+              "url": "/items/equipment/legs",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "523 legs items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-hands",
+              "label": "Hands slot",
+              "url": "/items/equipment/hands",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "215 hands items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-feet",
+              "label": "Feet slot",
+              "url": "/items/equipment/feet",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "205 feet items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            },
+            {
+              "id": "item-slot-ring",
+              "label": "Ring slot",
+              "url": "/items/equipment/ring",
+              "type": "group",
+              "slots": [
+                "sitemap",
+                "search"
+              ],
+              "meta": {
+                "summary": "130 ring items from the cache.",
+                "tags": [
+                  "items",
+                  "equipment"
+                ],
+                "generated": true
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "item-quest-items",
+          "label": "Quest Items",
+          "url": "/items/quest-items",
+          "type": "group",
+          "slots": [
+            "sitemap",
+            "search"
+          ],
+          "meta": {
+            "summary": "2,302 quest-flagged items.",
+            "tags": [
+              "items",
+              "quests"
+            ],
+            "generated": true
+          },
+          "children": []
         }
       ]
     },
@@ -746,6 +1494,25 @@
         "tags": [
           "quests"
         ]
+      },
+      "children": []
+    },
+    {
+      "id": "npc-directory",
+      "label": "NPC Directory",
+      "url": "/npcs",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "All 12,076 NPCs from the cache — actions, tags, combat.",
+        "tags": [
+          "npcs",
+          "database"
+        ],
+        "generated": true
       },
       "children": []
     }
@@ -852,6 +1619,91 @@
       "url": "/skills/prayer"
     },
     {
+      "id": "hitpoints",
+      "label": "Hitpoints",
+      "url": "/skills/hitpoints"
+    },
+    {
+      "id": "cooking",
+      "label": "Cooking",
+      "url": "/skills/cooking"
+    },
+    {
+      "id": "woodcutting",
+      "label": "Woodcutting",
+      "url": "/skills/woodcutting"
+    },
+    {
+      "id": "fletching",
+      "label": "Fletching",
+      "url": "/skills/fletching"
+    },
+    {
+      "id": "fishing",
+      "label": "Fishing",
+      "url": "/skills/fishing"
+    },
+    {
+      "id": "firemaking",
+      "label": "Firemaking",
+      "url": "/skills/firemaking"
+    },
+    {
+      "id": "crafting",
+      "label": "Crafting",
+      "url": "/skills/crafting"
+    },
+    {
+      "id": "smithing",
+      "label": "Smithing",
+      "url": "/skills/smithing"
+    },
+    {
+      "id": "mining",
+      "label": "Mining",
+      "url": "/skills/mining"
+    },
+    {
+      "id": "herblore",
+      "label": "Herblore",
+      "url": "/skills/herblore"
+    },
+    {
+      "id": "agility",
+      "label": "Agility",
+      "url": "/skills/agility"
+    },
+    {
+      "id": "thieving",
+      "label": "Thieving",
+      "url": "/skills/thieving"
+    },
+    {
+      "id": "slayer",
+      "label": "Slayer",
+      "url": "/skills/slayer"
+    },
+    {
+      "id": "farming",
+      "label": "Farming",
+      "url": "/skills/farming"
+    },
+    {
+      "id": "runecraft",
+      "label": "Runecraft",
+      "url": "/skills/runecraft"
+    },
+    {
+      "id": "hunter",
+      "label": "Hunter",
+      "url": "/skills/hunter"
+    },
+    {
+      "id": "construction",
+      "label": "Construction",
+      "url": "/skills/construction"
+    },
+    {
       "id": "combat",
       "label": "Combat",
       "url": "/combat"
@@ -865,6 +1717,41 @@
       "id": "bosses",
       "label": "Bosses",
       "url": "/combat/bosses"
+    },
+    {
+      "id": "monsters",
+      "label": "Monsters",
+      "url": "/combat/monsters"
+    },
+    {
+      "id": "bestiary-lvl-1-20",
+      "label": "Combat 1–20",
+      "url": "/combat/monsters/lvl-1-20"
+    },
+    {
+      "id": "bestiary-lvl-21-50",
+      "label": "Combat 21–50",
+      "url": "/combat/monsters/lvl-21-50"
+    },
+    {
+      "id": "bestiary-lvl-51-100",
+      "label": "Combat 51–100",
+      "url": "/combat/monsters/lvl-51-100"
+    },
+    {
+      "id": "bestiary-lvl-101-200",
+      "label": "Combat 101–200",
+      "url": "/combat/monsters/lvl-101-200"
+    },
+    {
+      "id": "bestiary-lvl-200-plus",
+      "label": "Combat 200+",
+      "url": "/combat/monsters/lvl-200-plus"
+    },
+    {
+      "id": "bestiary",
+      "label": "Bestiary",
+      "url": "/combat/bestiary"
     },
     {
       "id": "items",
@@ -887,9 +1774,89 @@
       "url": "/items/runes"
     },
     {
+      "id": "item-db",
+      "label": "Item Database",
+      "url": "/items/all"
+    },
+    {
+      "id": "item-equipment",
+      "label": "Equipment",
+      "url": "/items/equipment"
+    },
+    {
+      "id": "item-slot-head",
+      "label": "Head slot",
+      "url": "/items/equipment/head"
+    },
+    {
+      "id": "item-slot-cape",
+      "label": "Cape slot",
+      "url": "/items/equipment/cape"
+    },
+    {
+      "id": "item-slot-neck",
+      "label": "Neck slot",
+      "url": "/items/equipment/neck"
+    },
+    {
+      "id": "item-slot-ammo",
+      "label": "Ammo slot",
+      "url": "/items/equipment/ammo"
+    },
+    {
+      "id": "item-slot-weapon",
+      "label": "Weapon slot",
+      "url": "/items/equipment/weapon"
+    },
+    {
+      "id": "item-slot-2h",
+      "label": "2h weapons",
+      "url": "/items/equipment/2h"
+    },
+    {
+      "id": "item-slot-shield",
+      "label": "Shield slot",
+      "url": "/items/equipment/shield"
+    },
+    {
+      "id": "item-slot-body",
+      "label": "Body slot",
+      "url": "/items/equipment/body"
+    },
+    {
+      "id": "item-slot-legs",
+      "label": "Legs slot",
+      "url": "/items/equipment/legs"
+    },
+    {
+      "id": "item-slot-hands",
+      "label": "Hands slot",
+      "url": "/items/equipment/hands"
+    },
+    {
+      "id": "item-slot-feet",
+      "label": "Feet slot",
+      "url": "/items/equipment/feet"
+    },
+    {
+      "id": "item-slot-ring",
+      "label": "Ring slot",
+      "url": "/items/equipment/ring"
+    },
+    {
+      "id": "item-quest-items",
+      "label": "Quest Items",
+      "url": "/items/quest-items"
+    },
+    {
       "id": "quests",
       "label": "Quests",
       "url": "/quests"
+    },
+    {
+      "id": "npc-directory",
+      "label": "NPC Directory",
+      "url": "/npcs"
     }
   ]
 }

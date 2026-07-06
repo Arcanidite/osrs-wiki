@@ -54,5 +54,33 @@
       "label": "Armour",
       "url": "/items/armour"
     }
+  ],
+  "item-equipment": [
+    {
+      "id": "item-db",
+      "label": "Item Database",
+      "url": "/items/all"
+    }
+  ],
+  "item-db": [
+    {
+      "id": "item-equipment",
+      "label": "Equipment",
+      "url": "/items/equipment"
+    }
+  ],
+  "bestiary": [
+    {
+      "id": "npc-directory",
+      "label": "NPC Directory",
+      "url": "/npcs"
+    }
+  ],
+  "npc-directory": [
+    {
+      "id": "bestiary",
+      "label": "Bestiary",
+      "url": "/combat/bestiary"
+    }
   ]
 }

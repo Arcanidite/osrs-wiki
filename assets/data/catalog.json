@@ -560,7 +560,6 @@
       "name": "Abyssal Whip",
       "url": "/items/weapons/abyssal-whip",
       "category": "item",
-      "item_id": 4151,
       "summary": "Best-in-slot melee training weapon. Requires 70 Attack.",
       "icon": null,
       "tags": [
@@ -574,7 +573,6 @@
       "name": "Toxic Blowpipe",
       "url": "/items/weapons/toxic-blowpipe",
       "category": "item",
-      "item_id": 12926,
       "summary": "Fast ranged weapon from Zulrah. Requires 75 Ranged.",
       "icon": null,
       "tags": [
@@ -588,7 +586,6 @@
       "name": "Magic Fang",
       "url": "/items/weapons/magic-fang",
       "category": "item",
-      "item_id": 12932,
       "summary": "Zulrah drop. Used to create Toxic Trident.",
       "icon": null,
       "tags": [
@@ -601,7 +598,6 @@
       "name": "Twisted Bow",
       "url": "/items/weapons/twisted-bow",
       "category": "item",
-      "item_id": 20997,
       "summary": "Chambers of Xeric unique. Best-in-slot ranged weapon. Requires 75 Ranged.",
       "icon": null,
       "tags": [
@@ -615,7 +611,6 @@
       "name": "Scythe of Vitur",
       "url": "/items/weapons/scythe",
       "category": "item",
-      "item_id": 22325,
       "summary": "Theatre of Blood unique. Best melee weapon for multi-target.",
       "icon": null,
       "tags": [
@@ -629,7 +624,6 @@
       "name": "Kodai Wand",
       "url": "/items/weapons/kodai-wand",
       "category": "item",
-      "item_id": 21006,
       "summary": "Chambers of Xeric unique. Best-in-slot magic weapon.",
       "icon": null,
       "tags": [
@@ -677,6 +671,510 @@
           }
         ]
       }
+    },
+    {
+      "id": "item-db",
+      "name": "Item Database",
+      "url": "/items/all",
+      "category": "group",
+      "summary": "Browse all 13,667 items from the game cache — stats, requirements, examine text.",
+      "icon": null,
+      "tags": [
+        "items",
+        "database"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-equipment",
+      "name": "Equipment",
+      "url": "/items/equipment",
+      "category": "group",
+      "summary": "All 4,791 equipable items by slot.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-head",
+      "name": "Head slot",
+      "url": "/items/equipment/head",
+      "category": "group",
+      "summary": "933 head items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-cape",
+      "name": "Cape slot",
+      "url": "/items/equipment/cape",
+      "category": "group",
+      "summary": "345 cape items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-neck",
+      "name": "Neck slot",
+      "url": "/items/equipment/neck",
+      "category": "group",
+      "summary": "209 neck items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-ammo",
+      "name": "Ammo slot",
+      "url": "/items/equipment/ammo",
+      "category": "group",
+      "summary": "206 ammo items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-weapon",
+      "name": "Weapon slot",
+      "url": "/items/equipment/weapon",
+      "category": "group",
+      "summary": "726 weapon items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-2h",
+      "name": "2h weapons",
+      "url": "/items/equipment/2h",
+      "category": "group",
+      "summary": "386 2h items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-shield",
+      "name": "Shield slot",
+      "url": "/items/equipment/shield",
+      "category": "group",
+      "summary": "364 shield items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-body",
+      "name": "Body slot",
+      "url": "/items/equipment/body",
+      "category": "group",
+      "summary": "549 body items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-legs",
+      "name": "Legs slot",
+      "url": "/items/equipment/legs",
+      "category": "group",
+      "summary": "523 legs items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-hands",
+      "name": "Hands slot",
+      "url": "/items/equipment/hands",
+      "category": "group",
+      "summary": "215 hands items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-feet",
+      "name": "Feet slot",
+      "url": "/items/equipment/feet",
+      "category": "group",
+      "summary": "205 feet items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-slot-ring",
+      "name": "Ring slot",
+      "url": "/items/equipment/ring",
+      "category": "group",
+      "summary": "130 ring items from the cache.",
+      "icon": null,
+      "tags": [
+        "items",
+        "equipment"
+      ],
+      "preview": null
+    },
+    {
+      "id": "item-quest-items",
+      "name": "Quest Items",
+      "url": "/items/quest-items",
+      "category": "group",
+      "summary": "2,302 quest-flagged items.",
+      "icon": null,
+      "tags": [
+        "items",
+        "quests"
+      ],
+      "preview": null
+    },
+    {
+      "id": "monsters",
+      "name": "Monsters",
+      "url": "/combat/monsters",
+      "category": "group",
+      "summary": "3,522 attackable monsters from the cache.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "monsters"
+      ],
+      "preview": null
+    },
+    {
+      "id": "bestiary",
+      "name": "Bestiary",
+      "url": "/combat/bestiary",
+      "category": "group",
+      "summary": "All 3,522 attackable monsters from the cache — combat level, stats, actions.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "monsters",
+        "database"
+      ],
+      "preview": null
+    },
+    {
+      "id": "bestiary-lvl-1-20",
+      "name": "Combat 1–20",
+      "url": "/combat/monsters/lvl-1-20",
+      "category": "group",
+      "summary": "577 monsters in this bracket.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "monsters"
+      ],
+      "preview": null
+    },
+    {
+      "id": "bestiary-lvl-21-50",
+      "name": "Combat 21–50",
+      "url": "/combat/monsters/lvl-21-50",
+      "category": "group",
+      "summary": "758 monsters in this bracket.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "monsters"
+      ],
+      "preview": null
+    },
+    {
+      "id": "bestiary-lvl-51-100",
+      "name": "Combat 51–100",
+      "url": "/combat/monsters/lvl-51-100",
+      "category": "group",
+      "summary": "912 monsters in this bracket.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "monsters"
+      ],
+      "preview": null
+    },
+    {
+      "id": "bestiary-lvl-101-200",
+      "name": "Combat 101–200",
+      "url": "/combat/monsters/lvl-101-200",
+      "category": "group",
+      "summary": "648 monsters in this bracket.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "monsters"
+      ],
+      "preview": null
+    },
+    {
+      "id": "bestiary-lvl-200-plus",
+      "name": "Combat 200+",
+      "url": "/combat/monsters/lvl-200-plus",
+      "category": "group",
+      "summary": "497 monsters in this bracket.",
+      "icon": null,
+      "tags": [
+        "combat",
+        "monsters"
+      ],
+      "preview": null
+    },
+    {
+      "id": "npc-directory",
+      "name": "NPC Directory",
+      "url": "/npcs",
+      "category": "group",
+      "summary": "All 12,076 NPCs from the cache — actions, tags, combat.",
+      "icon": null,
+      "tags": [
+        "npcs",
+        "database"
+      ],
+      "preview": null
+    },
+    {
+      "id": "hitpoints",
+      "name": "Hitpoints",
+      "url": "/skills/hitpoints",
+      "category": "page",
+      "summary": "Your life points.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "cooking",
+      "name": "Cooking",
+      "url": "/skills/cooking",
+      "category": "page",
+      "summary": "Cook food for healing.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "woodcutting",
+      "name": "Woodcutting",
+      "url": "/skills/woodcutting",
+      "category": "page",
+      "summary": "Chop trees for logs.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "fletching",
+      "name": "Fletching",
+      "url": "/skills/fletching",
+      "category": "page",
+      "summary": "Craft bows and ammunition.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "fishing",
+      "name": "Fishing",
+      "url": "/skills/fishing",
+      "category": "page",
+      "summary": "Catch fish.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "firemaking",
+      "name": "Firemaking",
+      "url": "/skills/firemaking",
+      "category": "page",
+      "summary": "Light fires and lanterns.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "crafting",
+      "name": "Crafting",
+      "url": "/skills/crafting",
+      "category": "page",
+      "summary": "Craft jewellery, leather and glass.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "smithing",
+      "name": "Smithing",
+      "url": "/skills/smithing",
+      "category": "page",
+      "summary": "Smelt and smith metal gear.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "mining",
+      "name": "Mining",
+      "url": "/skills/mining",
+      "category": "page",
+      "summary": "Mine ores and gems.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "herblore",
+      "name": "Herblore",
+      "url": "/skills/herblore",
+      "category": "page",
+      "summary": "Mix potions.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "agility",
+      "name": "Agility",
+      "url": "/skills/agility",
+      "category": "page",
+      "summary": "Shortcuts and run energy.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "thieving",
+      "name": "Thieving",
+      "url": "/skills/thieving",
+      "category": "page",
+      "summary": "Pickpocket and steal.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "slayer",
+      "name": "Slayer",
+      "url": "/skills/slayer",
+      "category": "page",
+      "summary": "Assigned monster hunting; gates many monsters.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "farming",
+      "name": "Farming",
+      "url": "/skills/farming",
+      "category": "page",
+      "summary": "Grow crops.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "runecraft",
+      "name": "Runecraft",
+      "url": "/skills/runecraft",
+      "category": "page",
+      "summary": "Craft runes from essence.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "url": "/skills/hunter",
+      "category": "page",
+      "summary": "Trap creatures.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
+    },
+    {
+      "id": "construction",
+      "name": "Construction",
+      "url": "/skills/construction",
+      "category": "page",
+      "summary": "Build a player-owned house.",
+      "icon": null,
+      "tags": [
+        "skills"
+      ],
+      "preview": null
     }
   ]
 }

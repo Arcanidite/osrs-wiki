@@ -91,4 +91,30 @@ Rebuild phase P0 of `PROGRESSION_ROUTER_BRIEF.md` (§8): behavior-preserving ext
 
 ---
 
+### 2026-07-06 — Wiki populated from cache packs (items/NPCs databases + skill content)
+
+`tools/build_wiki_from_cache.py` (idempotent; reruns `build.py`) populates topics/entries from the
+RuneLite cache extraction — nothing hand-invented, every page carries a source/stamp line.
+
+- **Entry databases, client-rendered from the packs themselves** (`assets/js/pack-reader.js` OSRP
+  reader + `assets/js/tools/db.js` browser: search, facets, sort, chunked list, hash-routed detail
+  `#<id>` so every entry is deep-linkable):
+  - `/items/all` (13,667 items, sprite icons), `/items/equipment/<slot>` ×12, `/items/weapons`,
+    `/items/armour`, `/items/runes`, `/items/quest-items`
+  - `/combat/bestiary` (3,522 attackable ids grouped → 1,638 monsters; verified stats labels, see
+    GAME_KB), `/combat/monsters/lvl-*` ×5 brackets, `/npcs` (all 12,076)
+- **Skill pages** — all 23 exist; each has an SSR equipment-unlock table from items.pack reqs
+  (e.g. Attack 503, Defence 989, Ranged 539) + training steps from `steps.jsonl`. Hand summaries preserved.
+- **Graph-driven**: 40 generated nodes/edges appended to `graph.json` (`meta.generated`), nav/sitemap/
+  search/catalog regenerated via `build.py`; hubs (`/items`, `/skills`, `/combat/monsters`,
+  `/items/equipment`) rebuilt with counts.
+- **Header search deep-searches the packs** (lazy-loaded on 3+ chars) — "game database" result group
+  links into the db pages (`assets/js/catalog.js`).
+- **Objects skipped on purpose**: cache object names are garbage (GAME_GOTCHAS G-2) — no fabricated entries.
+- CSS: `.data-table`, `.db-*`, `.hub-count`, `.data-source` appended to `main.css`.
+- Verified headless: items db + detail (#4151 → Abyssal whip), bestiary + Zulrah variants/stats,
+  deep search groups. Router tests unaffected (23/23).
+
+---
+
 <!-- Add entries below as features are built out -->

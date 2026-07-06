@@ -1,10 +1,15 @@
 ---
-layout: "node"
+layout: "tool"
 title: "Runes"
 node_id: "runes"
-summary: "Runes used for casting Magic spells."
-page_class: ""
+summary: "Runes for spellcasting (all items named “… rune”)."
+page_class: "tool"
 tags: ["items", "magic"]
 breadcrumb: [{"label": "Items", "url": "/items"}]
 children: []
+tool_script: "/assets/js/tools/db.js"
 ---
+
+<div id="db-root" data-db-kind="items" data-db-filter='{"nameSuffix": " rune"}'></div>
+<noscript><p>The database browser requires JavaScript. Raw data: <code>/assets/data/cache/</code>.</p></noscript>
+<p class="data-source">Source: RuneLite cache extraction (<code>items.pack</code>) · stamp 2026-07-06. Only fields present in the game cache are shown — nothing here is estimated or hand-invented.</p>

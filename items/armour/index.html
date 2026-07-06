@@ -1,10 +1,15 @@
 ---
-layout: "node"
+layout: "tool"
 title: "Armour"
 node_id: "armour"
-summary: "Armour sets and their defensive stats."
-page_class: ""
-tags: ["items"]
+summary: "Wearable defensive equipment from the cache."
+page_class: "tool"
+tags: ["items", "combat"]
 breadcrumb: [{"label": "Items", "url": "/items"}]
 children: []
+tool_script: "/assets/js/tools/db.js"
 ---
+
+<div id="db-root" data-db-kind="items" data-db-filter='{"slot": ["head", "body", "legs", "shield", "hands", "feet"]}'></div>
+<noscript><p>The database browser requires JavaScript. Raw data: <code>/assets/data/cache/</code>.</p></noscript>
+<p class="data-source">Source: RuneLite cache extraction (<code>items.pack</code>) · stamp 2026-07-06. Only fields present in the game cache are shown — nothing here is estimated or hand-invented.</p>

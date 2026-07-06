@@ -5,17 +5,31 @@
       "label": "Getting Started",
       "url": "/guides/getting-started",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
         "page_class": "article",
-        "icon": { "name": "guide" },
+        "icon": {
+          "name": "guide"
+        },
         "summary": "New player tips and progression phase breakdown.",
-        "tags": ["guides"],
+        "tags": [
+          "guides"
+        ],
         "preview": {
           "excerpt": "Everything a new player needs to know — from your first steps in Lumbridge to understanding the core progression phases.",
           "stats": [
-            { "label": "Type", "value": "Article" },
-            { "label": "Audience", "value": "New players" }
+            {
+              "label": "Type",
+              "value": "Article"
+            },
+            {
+              "label": "Audience",
+              "value": "New players"
+            }
           ]
         }
       }
@@ -25,17 +39,31 @@
       "label": "Progression Router",
       "url": "/tools/progression-router",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
         "page_class": "tool",
-        "icon": { "name": "tool" },
+        "icon": {
+          "name": "tool"
+        },
         "summary": "Smart routing tool that calculates an optimal progression path based on your goals and current stats.",
-        "tags": ["tools"],
+        "tags": [
+          "tools"
+        ],
         "preview": {
           "excerpt": "Input your current levels, goals, and constraints. The router calculates an optimal step-by-step path accounting for level gates, XP requirements, inventory, and item pre-requisites.",
           "stats": [
-            { "label": "Type", "value": "Tool" },
-            { "label": "Saves to", "value": "localStorage" }
+            {
+              "label": "Type",
+              "value": "Tool"
+            },
+            {
+              "label": "Saves to",
+              "value": "localStorage"
+            }
           ]
         }
       }
@@ -45,7 +73,10 @@
       "label": "Home",
       "url": "/",
       "type": "page",
-      "slots": ["nav", "sitemap"],
+      "slots": [
+        "nav",
+        "sitemap"
+      ],
       "meta": {}
     },
     {
@@ -53,10 +84,16 @@
       "label": "Skills",
       "url": "/skills",
       "type": "group",
-      "slots": ["nav", "sitemap", "combobox"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "combobox"
+      ],
       "meta": {
         "combobox_label": "Browse Skills",
-        "tags": ["skills"]
+        "tags": [
+          "skills"
+        ]
       }
     },
     {
@@ -64,10 +101,16 @@
       "label": "Combat",
       "url": "/combat",
       "type": "group",
-      "slots": ["nav", "sitemap", "combobox"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "combobox"
+      ],
       "meta": {
         "combobox_label": "Browse Combat",
-        "tags": ["combat"]
+        "tags": [
+          "combat"
+        ]
       }
     },
     {
@@ -75,10 +118,16 @@
       "label": "Items",
       "url": "/items",
       "type": "group",
-      "slots": ["nav", "sitemap", "combobox"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "combobox"
+      ],
       "meta": {
         "combobox_label": "Browse Items",
-        "tags": ["items"]
+        "tags": [
+          "items"
+        ]
       }
     },
     {
@@ -86,9 +135,14 @@
       "label": "Quests",
       "url": "/quests",
       "type": "group",
-      "slots": ["nav", "sitemap"],
+      "slots": [
+        "nav",
+        "sitemap"
+      ],
       "meta": {
-        "tags": ["quests"]
+        "tags": [
+          "quests"
+        ]
       }
     },
     {
@@ -96,17 +150,35 @@
       "label": "Attack",
       "url": "/skills/attack",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "attack" },
+        "icon": {
+          "name": "attack"
+        },
         "summary": "The Attack skill determines accuracy in melee combat.",
-        "tags": ["skills", "combat"],
+        "tags": [
+          "skills",
+          "combat"
+        ],
         "preview": {
           "excerpt": "Attack is a melee combat skill which determines the accuracy of a player's attacks when using melee weapons. Higher Attack allows the use of stronger weapons.",
           "stats": [
-            { "label": "Max level", "value": "99" },
-            { "label": "Type", "value": "Melee" },
-            { "label": "XP/hr (AFK)", "value": "~40k" }
+            {
+              "label": "Max level",
+              "value": "99"
+            },
+            {
+              "label": "Type",
+              "value": "Melee"
+            },
+            {
+              "label": "XP/hr (AFK)",
+              "value": "~40k"
+            }
           ]
         }
       }
@@ -116,17 +188,35 @@
       "label": "Strength",
       "url": "/skills/strength",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "strength" },
+        "icon": {
+          "name": "strength"
+        },
         "summary": "Strength increases the maximum melee damage a player can deal.",
-        "tags": ["skills", "combat"],
+        "tags": [
+          "skills",
+          "combat"
+        ],
         "preview": {
           "excerpt": "Strength is a melee combat skill that determines the amount of damage a player can inflict in combat. Higher Strength levels allow players to deal more damage per hit.",
           "stats": [
-            { "label": "Max level", "value": "99" },
-            { "label": "Type", "value": "Melee" },
-            { "label": "XP/hr (AFK)", "value": "~45k" }
+            {
+              "label": "Max level",
+              "value": "99"
+            },
+            {
+              "label": "Type",
+              "value": "Melee"
+            },
+            {
+              "label": "XP/hr (AFK)",
+              "value": "~45k"
+            }
           ]
         }
       }
@@ -136,17 +226,35 @@
       "label": "Defence",
       "url": "/skills/defence",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "defence" },
+        "icon": {
+          "name": "defence"
+        },
         "summary": "Defence reduces the chance of being hit by opponents.",
-        "tags": ["skills", "combat"],
+        "tags": [
+          "skills",
+          "combat"
+        ],
         "preview": {
           "excerpt": "Defence is a melee combat skill that decreases the likelihood of an opponent successfully landing a hit on a player. Higher Defence allows use of stronger armour.",
           "stats": [
-            { "label": "Max level", "value": "99" },
-            { "label": "Type", "value": "Melee" },
-            { "label": "XP/hr (AFK)", "value": "~30k" }
+            {
+              "label": "Max level",
+              "value": "99"
+            },
+            {
+              "label": "Type",
+              "value": "Melee"
+            },
+            {
+              "label": "XP/hr (AFK)",
+              "value": "~30k"
+            }
           ]
         }
       }
@@ -156,17 +264,35 @@
       "label": "Ranged",
       "url": "/skills/ranged",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "ranged" },
+        "icon": {
+          "name": "ranged"
+        },
         "summary": "Ranged allows combat from a distance using projectiles.",
-        "tags": ["skills", "combat"],
+        "tags": [
+          "skills",
+          "combat"
+        ],
         "preview": {
           "excerpt": "Ranged is a combat skill that allows players to attack from a distance using bows, crossbows, and thrown weapons. It is one of the three combat styles.",
           "stats": [
-            { "label": "Max level", "value": "99" },
-            { "label": "Type", "value": "Ranged" },
-            { "label": "XP/hr (AFK)", "value": "~50k" }
+            {
+              "label": "Max level",
+              "value": "99"
+            },
+            {
+              "label": "Type",
+              "value": "Ranged"
+            },
+            {
+              "label": "XP/hr (AFK)",
+              "value": "~50k"
+            }
           ]
         }
       }
@@ -176,17 +302,35 @@
       "label": "Magic",
       "url": "/skills/magic",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "magic" },
+        "icon": {
+          "name": "magic"
+        },
         "summary": "Magic enables spellcasting using runes.",
-        "tags": ["skills", "combat"],
+        "tags": [
+          "skills",
+          "combat"
+        ],
         "preview": {
           "excerpt": "Magic is one of the most versatile skills in the game, used for combat, teleportation, enchanting, and alchemy. Spells require runes to cast.",
           "stats": [
-            { "label": "Max level", "value": "99" },
-            { "label": "Type", "value": "Magic" },
-            { "label": "XP/hr (AFK)", "value": "~60k" }
+            {
+              "label": "Max level",
+              "value": "99"
+            },
+            {
+              "label": "Type",
+              "value": "Magic"
+            },
+            {
+              "label": "XP/hr (AFK)",
+              "value": "~60k"
+            }
           ]
         }
       }
@@ -196,17 +340,35 @@
       "label": "Prayer",
       "url": "/skills/prayer",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "prayer" },
+        "icon": {
+          "name": "prayer"
+        },
         "summary": "Prayer grants temporary combat boosts and protection.",
-        "tags": ["skills", "combat"],
+        "tags": [
+          "skills",
+          "combat"
+        ],
         "preview": {
           "excerpt": "Prayer is a skill that can be trained by burying bones or offering them at the altar in Edgeville Monastery. Active prayers drain prayer points over time.",
           "stats": [
-            { "label": "Max level", "value": "99" },
-            { "label": "Type", "value": "Support" },
-            { "label": "XP/hr (AFK)", "value": "varies" }
+            {
+              "label": "Max level",
+              "value": "99"
+            },
+            {
+              "label": "Type",
+              "value": "Support"
+            },
+            {
+              "label": "XP/hr (AFK)",
+              "value": "varies"
+            }
           ]
         }
       }
@@ -216,16 +378,30 @@
       "label": "Melee",
       "url": "/combat/melee",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "melee" },
+        "icon": {
+          "name": "melee"
+        },
         "summary": "Overview of melee combat mechanics.",
-        "tags": ["combat"],
+        "tags": [
+          "combat"
+        ],
         "preview": {
           "excerpt": "Melee combat uses Attack, Strength, and Defence skills. Weapon choice, combat style, and enemy weaknesses all affect damage and accuracy.",
           "stats": [
-            { "label": "Skills used", "value": "Attack, Strength, Defence" },
-            { "label": "Range", "value": "Adjacent" }
+            {
+              "label": "Skills used",
+              "value": "Attack, Strength, Defence"
+            },
+            {
+              "label": "Range",
+              "value": "Adjacent"
+            }
           ]
         }
       }
@@ -235,16 +411,30 @@
       "label": "Bosses",
       "url": "/combat/bosses",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "bosses" },
+        "icon": {
+          "name": "bosses"
+        },
         "summary": "List of boss monsters and their mechanics.",
-        "tags": ["combat"],
+        "tags": [
+          "combat"
+        ],
         "preview": {
           "excerpt": "Bosses are powerful monsters that typically require high combat stats and specific strategies to defeat. They drop valuable and unique items.",
           "stats": [
-            { "label": "Difficulty", "value": "High" },
-            { "label": "Rewards", "value": "Unique drops" }
+            {
+              "label": "Difficulty",
+              "value": "High"
+            },
+            {
+              "label": "Rewards",
+              "value": "Unique drops"
+            }
           ]
         }
       }
@@ -254,15 +444,27 @@
       "label": "Weapons",
       "url": "/items/weapons",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "weapons" },
+        "icon": {
+          "name": "weapons"
+        },
         "summary": "Weapons available in Old School RuneScape.",
-        "tags": ["items", "combat"],
+        "tags": [
+          "items",
+          "combat"
+        ],
         "preview": {
           "excerpt": "Weapons vary by attack style, speed, and level requirement. Melee weapons include swords and axes; ranged weapons include bows and crossbows.",
           "stats": [
-            { "label": "Categories", "value": "Melee, Ranged, Magic" }
+            {
+              "label": "Categories",
+              "value": "Melee, Ranged, Magic"
+            }
           ]
         }
       }
@@ -272,154 +474,1962 @@
       "label": "Armour",
       "url": "/items/armour",
       "type": "page",
-      "slots": ["nav", "sitemap", "search"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
       "meta": {
-        "icon": { "name": "armour" },
+        "icon": {
+          "name": "armour"
+        },
         "summary": "Armour sets and their defensive stats.",
-        "tags": ["items"],
+        "tags": [
+          "items"
+        ],
         "preview": {
           "excerpt": "Armour provides defensive bonuses against melee, ranged, and magic attacks. Sets are typically unlocked at specific Defence levels.",
           "stats": [
-            { "label": "Stat types", "value": "Stab, Slash, Crush, Magic, Ranged" }
+            {
+              "label": "Stat types",
+              "value": "Stab, Slash, Crush, Magic, Ranged"
+            }
           ]
         }
       }
     },
-    { "id": "regions", "label": "Regions", "url": "/regions", "type": "group", "slots": ["nav", "sitemap"], "meta": { "tags": ["regions"] } },
-
-    { "id": "region-global",           "label": "Global",            "url": "/regions/global",           "type": "region", "slots": ["sitemap"], "meta": { "tags": ["regions"] } },
-    { "id": "region-misthalin",        "label": "Misthalin",         "url": "/regions/misthalin",        "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Starting region. Lumbridge, Varrock, Draynor." } },
-    { "id": "region-morytania",        "label": "Morytania",         "url": "/regions/morytania",        "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Undead-heavy region. Requires Priest in Peril. Contains Barrows and Slayer Tower.", "preview": { "excerpt": "Morytania is locked behind Priest in Peril. Home to Barrows, the Slayer Tower, and high-level Slayer tasks.", "stats": [{ "label": "Quest gate", "value": "Priest in Peril" }] } } },
-    { "id": "region-kandarin",         "label": "Kandarin",          "url": "/regions/kandarin",         "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Large western region. Ardougne, Camelot, NMZ." } },
-    { "id": "region-troll-country",    "label": "Troll Country",     "url": "/regions/troll-country",    "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Northern mountains. God Wars Dungeon." } },
-    { "id": "region-ape-atoll",        "label": "Ape Atoll",         "url": "/regions/ape-atoll",        "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Monkey island. Locked behind Monkey Madness I. Best melee training.", "preview": { "excerpt": "Ape Atoll is unlocked by completing Monkey Madness I. Contains the Maniacal Monkey tunnels — the best melee XP in the game.", "stats": [{ "label": "Quest gate", "value": "Monkey Madness I" }] } } },
-    { "id": "region-kharidian-desert", "label": "Kharidian Desert",  "url": "/regions/kharidian-desert", "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Desert region. Al Kharid, Pyramid, Desert Treasure." } },
-    { "id": "region-zeah",             "label": "Zeah",              "url": "/regions/zeah",             "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "Continent of Zeah. Chambers of Xeric. Partially quest-gated.", "preview": { "excerpt": "Zeah is a large continent with multiple sub-regions. Chambers of Xeric — the most valuable raid — is located here.", "stats": [{ "label": "Raid", "value": "Chambers of Xeric" }] } } },
-    { "id": "region-wilderness",       "label": "Wilderness",        "url": "/regions/wilderness",       "type": "region", "slots": ["sitemap", "search"], "meta": { "tags": ["regions"], "summary": "PvP-enabled region. KBD lair, Revenant caves, high-risk rewards." } },
-
-    { "id": "zone-stronghold",  "label": "Stronghold of Security", "url": "/regions/misthalin/stronghold",  "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-lumbridge",   "label": "Lumbridge",              "url": "/regions/misthalin/lumbridge",   "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-varrock",     "label": "Varrock",                "url": "/regions/misthalin/varrock",     "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-barrows",     "label": "Barrows",                "url": "/regions/morytania/barrows",     "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-slayer-tower","label": "Slayer Tower",           "url": "/regions/morytania/slayer-tower","type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-nmz",         "label": "Nightmare Zone",         "url": "/regions/kandarin/nmz",          "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-gwd",         "label": "God Wars Dungeon",       "url": "/regions/troll-country/gwd",     "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-mm-tunnels",  "label": "MM Tunnels",             "url": "/regions/ape-atoll/mm-tunnels",  "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-pyramid",     "label": "Pyramid",                "url": "/regions/kharidian-desert/pyramid","type": "zone","slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-cox",         "label": "Chambers of Xeric",      "url": "/regions/zeah/cox",              "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-shayzien",    "label": "Shayzien",               "url": "/regions/zeah/shayzien",         "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-zul-andra",   "label": "Zul-Andra",              "url": "/regions/kandarin/zul-andra",    "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-    { "id": "zone-kbd-lair",    "label": "KBD Lair",               "url": "/regions/wilderness/kbd-lair",   "type": "zone", "slots": [], "meta": { "tags": ["zones"] } },
-
-    { "id": "quest-priest-in-peril", "label": "Priest in Peril", "url": "/quests/priest-in-peril", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Unlocks Morytania region access." } },
-    { "id": "quest-mm",              "label": "Monkey Madness I", "url": "/quests/monkey-madness", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Unlocks Ape Atoll and MM Tunnels. Grants large combat XP." } },
-    { "id": "quest-dt",              "label": "Desert Treasure", "url": "/quests/desert-treasure", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Unlocks Ancient Magicks. Requires 50 Magic, 53 Thieving, 10 Slayer, 50 Firemaking." } },
-    { "id": "quest-regicide",        "label": "Regicide", "url": "/quests/regicide", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Unlocks access to Zul-Andra and Zulrah." } },
-    { "id": "quest-tale-of-arrav",   "label": "Tale of the Righteous", "url": "/quests/tale-of-the-righteous", "type": "quest", "slots": ["search"], "meta": { "tags": ["quests"], "summary": "Zeah intro quest. Partially enables CoX access." } },
-
-    { "id": "monster-abyssal-demon", "label": "Abyssal Demon", "url": "/combat/monsters/abyssal-demon", "type": "monster", "slots": ["search"], "meta": { "tags": ["combat","slayer"], "summary": "Level 124 Slayer monster. Requires 85 Slayer. Drops Abyssal Whip." } },
-    { "id": "monster-zulrah",        "label": "Zulrah",        "url": "/combat/monsters/zulrah",        "type": "monster", "slots": ["search"], "meta": { "tags": ["combat","bosses"], "summary": "Solo boss in Zul-Andra. Requires Regicide. Drops Toxic Blowpipe and Magic Fang." } },
-    { "id": "monster-kbd",           "label": "King Black Dragon","url": "/combat/monsters/kbd",         "type": "monster", "slots": ["search"], "meta": { "tags": ["combat","bosses"], "summary": "Wilderness boss. Drops Dragon pickaxe and KBD heads." } },
-
-    { "id": "item-abyssal-whip",    "label": "Abyssal Whip",    "url": "/items/weapons/abyssal-whip",    "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Best-in-slot melee training weapon. Requires 70 Attack." } },
-    { "id": "item-toxic-blowpipe",  "label": "Toxic Blowpipe",  "url": "/items/weapons/toxic-blowpipe",  "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Fast ranged weapon from Zulrah. Requires 75 Ranged." } },
-    { "id": "item-magic-fang",      "label": "Magic Fang",      "url": "/items/weapons/magic-fang",      "type": "item", "slots": ["search"], "meta": { "tags": ["items"], "summary": "Zulrah drop. Used to create Toxic Trident." } },
-    { "id": "item-twisted-bow",     "label": "Twisted Bow",     "url": "/items/weapons/twisted-bow",     "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Chambers of Xeric unique. Best-in-slot ranged weapon. Requires 75 Ranged." } },
-    { "id": "item-scythe",          "label": "Scythe of Vitur", "url": "/items/weapons/scythe",          "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Theatre of Blood unique. Best melee weapon for multi-target." } },
-    { "id": "item-kodai-wand",      "label": "Kodai Wand",      "url": "/items/weapons/kodai-wand",      "type": "item", "slots": ["search"], "meta": { "tags": ["items","weapons"], "summary": "Chambers of Xeric unique. Best-in-slot magic weapon." } },
-    { "id": "item-kbd-heads",       "label": "KBD Heads",       "url": "/items/kbd-heads",               "type": "item", "slots": [], "meta": { "tags": ["items"] } },
-
-    { "id": "reward-pool-cox", "label": "CoX Reward Pool", "url": "/combat/bosses/cox-rewards", "type": "reward-pool", "slots": ["search"], "meta": { "tags": ["rewards","raids"], "summary": "Unique drops from Chambers of Xeric including Twisted Bow, Kodai Wand, and Scythe." } },
-
+    {
+      "id": "regions",
+      "label": "Regions",
+      "url": "/regions",
+      "type": "group",
+      "slots": [
+        "nav",
+        "sitemap"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ]
+      }
+    },
+    {
+      "id": "region-global",
+      "label": "Global",
+      "url": "/regions/global",
+      "type": "region",
+      "slots": [
+        "sitemap"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ]
+      }
+    },
+    {
+      "id": "region-misthalin",
+      "label": "Misthalin",
+      "url": "/regions/misthalin",
+      "type": "region",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ],
+        "summary": "Starting region. Lumbridge, Varrock, Draynor."
+      }
+    },
+    {
+      "id": "region-morytania",
+      "label": "Morytania",
+      "url": "/regions/morytania",
+      "type": "region",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ],
+        "summary": "Undead-heavy region. Requires Priest in Peril. Contains Barrows and Slayer Tower.",
+        "preview": {
+          "excerpt": "Morytania is locked behind Priest in Peril. Home to Barrows, the Slayer Tower, and high-level Slayer tasks.",
+          "stats": [
+            {
+              "label": "Quest gate",
+              "value": "Priest in Peril"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "region-kandarin",
+      "label": "Kandarin",
+      "url": "/regions/kandarin",
+      "type": "region",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ],
+        "summary": "Large western region. Ardougne, Camelot, NMZ."
+      }
+    },
+    {
+      "id": "region-troll-country",
+      "label": "Troll Country",
+      "url": "/regions/troll-country",
+      "type": "region",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ],
+        "summary": "Northern mountains. God Wars Dungeon."
+      }
+    },
+    {
+      "id": "region-ape-atoll",
+      "label": "Ape Atoll",
+      "url": "/regions/ape-atoll",
+      "type": "region",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ],
+        "summary": "Monkey island. Locked behind Monkey Madness I. Best melee training.",
+        "preview": {
+          "excerpt": "Ape Atoll is unlocked by completing Monkey Madness I. Contains the Maniacal Monkey tunnels — the best melee XP in the game.",
+          "stats": [
+            {
+              "label": "Quest gate",
+              "value": "Monkey Madness I"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "region-kharidian-desert",
+      "label": "Kharidian Desert",
+      "url": "/regions/kharidian-desert",
+      "type": "region",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ],
+        "summary": "Desert region. Al Kharid, Pyramid, Desert Treasure."
+      }
+    },
+    {
+      "id": "region-zeah",
+      "label": "Zeah",
+      "url": "/regions/zeah",
+      "type": "region",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ],
+        "summary": "Continent of Zeah. Chambers of Xeric. Partially quest-gated.",
+        "preview": {
+          "excerpt": "Zeah is a large continent with multiple sub-regions. Chambers of Xeric — the most valuable raid — is located here.",
+          "stats": [
+            {
+              "label": "Raid",
+              "value": "Chambers of Xeric"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "region-wilderness",
+      "label": "Wilderness",
+      "url": "/regions/wilderness",
+      "type": "region",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "regions"
+        ],
+        "summary": "PvP-enabled region. KBD lair, Revenant caves, high-risk rewards."
+      }
+    },
+    {
+      "id": "zone-stronghold",
+      "label": "Stronghold of Security",
+      "url": "/regions/misthalin/stronghold",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-lumbridge",
+      "label": "Lumbridge",
+      "url": "/regions/misthalin/lumbridge",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-varrock",
+      "label": "Varrock",
+      "url": "/regions/misthalin/varrock",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-barrows",
+      "label": "Barrows",
+      "url": "/regions/morytania/barrows",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-slayer-tower",
+      "label": "Slayer Tower",
+      "url": "/regions/morytania/slayer-tower",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-nmz",
+      "label": "Nightmare Zone",
+      "url": "/regions/kandarin/nmz",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-gwd",
+      "label": "God Wars Dungeon",
+      "url": "/regions/troll-country/gwd",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-mm-tunnels",
+      "label": "MM Tunnels",
+      "url": "/regions/ape-atoll/mm-tunnels",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-pyramid",
+      "label": "Pyramid",
+      "url": "/regions/kharidian-desert/pyramid",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-cox",
+      "label": "Chambers of Xeric",
+      "url": "/regions/zeah/cox",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-shayzien",
+      "label": "Shayzien",
+      "url": "/regions/zeah/shayzien",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-zul-andra",
+      "label": "Zul-Andra",
+      "url": "/regions/kandarin/zul-andra",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "zone-kbd-lair",
+      "label": "KBD Lair",
+      "url": "/regions/wilderness/kbd-lair",
+      "type": "zone",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "zones"
+        ]
+      }
+    },
+    {
+      "id": "quest-priest-in-peril",
+      "label": "Priest in Peril",
+      "url": "/quests/priest-in-peril",
+      "type": "quest",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "quests"
+        ],
+        "summary": "Unlocks Morytania region access."
+      }
+    },
+    {
+      "id": "quest-mm",
+      "label": "Monkey Madness I",
+      "url": "/quests/monkey-madness",
+      "type": "quest",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "quests"
+        ],
+        "summary": "Unlocks Ape Atoll and MM Tunnels. Grants large combat XP."
+      }
+    },
+    {
+      "id": "quest-dt",
+      "label": "Desert Treasure",
+      "url": "/quests/desert-treasure",
+      "type": "quest",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "quests"
+        ],
+        "summary": "Unlocks Ancient Magicks. Requires 50 Magic, 53 Thieving, 10 Slayer, 50 Firemaking."
+      }
+    },
+    {
+      "id": "quest-regicide",
+      "label": "Regicide",
+      "url": "/quests/regicide",
+      "type": "quest",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "quests"
+        ],
+        "summary": "Unlocks access to Zul-Andra and Zulrah."
+      }
+    },
+    {
+      "id": "quest-tale-of-arrav",
+      "label": "Tale of the Righteous",
+      "url": "/quests/tale-of-the-righteous",
+      "type": "quest",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "quests"
+        ],
+        "summary": "Zeah intro quest. Partially enables CoX access."
+      }
+    },
+    {
+      "id": "monster-abyssal-demon",
+      "label": "Abyssal Demon",
+      "url": "/combat/monsters/abyssal-demon",
+      "type": "monster",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "combat",
+          "slayer"
+        ],
+        "summary": "Level 124 Slayer monster. Requires 85 Slayer. Drops Abyssal Whip."
+      }
+    },
+    {
+      "id": "monster-zulrah",
+      "label": "Zulrah",
+      "url": "/combat/monsters/zulrah",
+      "type": "monster",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "combat",
+          "bosses"
+        ],
+        "summary": "Solo boss in Zul-Andra. Requires Regicide. Drops Toxic Blowpipe and Magic Fang."
+      }
+    },
+    {
+      "id": "monster-kbd",
+      "label": "King Black Dragon",
+      "url": "/combat/monsters/kbd",
+      "type": "monster",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "combat",
+          "bosses"
+        ],
+        "summary": "Wilderness boss. Drops Dragon pickaxe and KBD heads."
+      }
+    },
+    {
+      "id": "item-abyssal-whip",
+      "label": "Abyssal Whip",
+      "url": "/items/weapons/abyssal-whip",
+      "type": "item",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "items",
+          "weapons"
+        ],
+        "summary": "Best-in-slot melee training weapon. Requires 70 Attack."
+      }
+    },
+    {
+      "id": "item-toxic-blowpipe",
+      "label": "Toxic Blowpipe",
+      "url": "/items/weapons/toxic-blowpipe",
+      "type": "item",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "items",
+          "weapons"
+        ],
+        "summary": "Fast ranged weapon from Zulrah. Requires 75 Ranged."
+      }
+    },
+    {
+      "id": "item-magic-fang",
+      "label": "Magic Fang",
+      "url": "/items/weapons/magic-fang",
+      "type": "item",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "items"
+        ],
+        "summary": "Zulrah drop. Used to create Toxic Trident."
+      }
+    },
+    {
+      "id": "item-twisted-bow",
+      "label": "Twisted Bow",
+      "url": "/items/weapons/twisted-bow",
+      "type": "item",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "items",
+          "weapons"
+        ],
+        "summary": "Chambers of Xeric unique. Best-in-slot ranged weapon. Requires 75 Ranged."
+      }
+    },
+    {
+      "id": "item-scythe",
+      "label": "Scythe of Vitur",
+      "url": "/items/weapons/scythe",
+      "type": "item",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "items",
+          "weapons"
+        ],
+        "summary": "Theatre of Blood unique. Best melee weapon for multi-target."
+      }
+    },
+    {
+      "id": "item-kodai-wand",
+      "label": "Kodai Wand",
+      "url": "/items/weapons/kodai-wand",
+      "type": "item",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "items",
+          "weapons"
+        ],
+        "summary": "Chambers of Xeric unique. Best-in-slot magic weapon."
+      }
+    },
+    {
+      "id": "item-kbd-heads",
+      "label": "KBD Heads",
+      "url": "/items/kbd-heads",
+      "type": "item",
+      "slots": [],
+      "meta": {
+        "tags": [
+          "items"
+        ]
+      }
+    },
+    {
+      "id": "reward-pool-cox",
+      "label": "CoX Reward Pool",
+      "url": "/combat/bosses/cox-rewards",
+      "type": "reward-pool",
+      "slots": [
+        "search"
+      ],
+      "meta": {
+        "tags": [
+          "rewards",
+          "raids"
+        ],
+        "summary": "Unique drops from Chambers of Xeric including Twisted Bow, Kodai Wand, and Scythe."
+      }
+    },
     {
       "id": "runes",
       "label": "Runes",
       "url": "/items/runes",
       "type": "page",
-      "slots": ["nav", "sitemap", "search", "combobox"],
+      "slots": [
+        "nav",
+        "sitemap",
+        "search",
+        "combobox"
+      ],
       "meta": {
-        "icon": { "name": "runes" },
+        "icon": {
+          "name": "runes"
+        },
         "summary": "Runes used for casting Magic spells.",
-        "tags": ["items", "magic"],
+        "tags": [
+          "items",
+          "magic"
+        ],
         "preview": {
           "excerpt": "Runes are small, magical stones used to cast spells. They can be purchased from magic shops, crafted via Runecraft, or obtained as drops.",
           "stats": [
-            { "label": "Skill", "value": "Magic / Runecraft" },
-            { "label": "Types", "value": "Air, Water, Earth, Fire, Mind, Body, Cosmic, Chaos, Nature, Law, Death, Blood, Soul" }
+            {
+              "label": "Skill",
+              "value": "Magic / Runecraft"
+            },
+            {
+              "label": "Types",
+              "value": "Air, Water, Earth, Fire, Mind, Body, Cosmic, Chaos, Nature, Law, Death, Blood, Soul"
+            }
           ]
         }
+      }
+    },
+    {
+      "id": "item-db",
+      "label": "Item Database",
+      "url": "/items/all",
+      "type": "group",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Browse all 13,667 items from the game cache — stats, requirements, examine text.",
+        "tags": [
+          "items",
+          "database"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-equipment",
+      "label": "Equipment",
+      "url": "/items/equipment",
+      "type": "group",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "All 4,791 equipable items by slot.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-head",
+      "label": "Head slot",
+      "url": "/items/equipment/head",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "933 head items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-cape",
+      "label": "Cape slot",
+      "url": "/items/equipment/cape",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "345 cape items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-neck",
+      "label": "Neck slot",
+      "url": "/items/equipment/neck",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "209 neck items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-ammo",
+      "label": "Ammo slot",
+      "url": "/items/equipment/ammo",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "206 ammo items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-weapon",
+      "label": "Weapon slot",
+      "url": "/items/equipment/weapon",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "726 weapon items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-2h",
+      "label": "2h weapons",
+      "url": "/items/equipment/2h",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "386 2h items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-shield",
+      "label": "Shield slot",
+      "url": "/items/equipment/shield",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "364 shield items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-body",
+      "label": "Body slot",
+      "url": "/items/equipment/body",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "549 body items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-legs",
+      "label": "Legs slot",
+      "url": "/items/equipment/legs",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "523 legs items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-hands",
+      "label": "Hands slot",
+      "url": "/items/equipment/hands",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "215 hands items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-feet",
+      "label": "Feet slot",
+      "url": "/items/equipment/feet",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "205 feet items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-slot-ring",
+      "label": "Ring slot",
+      "url": "/items/equipment/ring",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "130 ring items from the cache.",
+        "tags": [
+          "items",
+          "equipment"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "item-quest-items",
+      "label": "Quest Items",
+      "url": "/items/quest-items",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "2,302 quest-flagged items.",
+        "tags": [
+          "items",
+          "quests"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "monsters",
+      "label": "Monsters",
+      "url": "/combat/monsters",
+      "type": "group",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "3,522 attackable monsters from the cache.",
+        "tags": [
+          "combat",
+          "monsters"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "bestiary",
+      "label": "Bestiary",
+      "url": "/combat/bestiary",
+      "type": "group",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "All 3,522 attackable monsters from the cache — combat level, stats, actions.",
+        "tags": [
+          "combat",
+          "monsters",
+          "database"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "bestiary-lvl-1-20",
+      "label": "Combat 1–20",
+      "url": "/combat/monsters/lvl-1-20",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "577 monsters in this bracket.",
+        "tags": [
+          "combat",
+          "monsters"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "bestiary-lvl-21-50",
+      "label": "Combat 21–50",
+      "url": "/combat/monsters/lvl-21-50",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "758 monsters in this bracket.",
+        "tags": [
+          "combat",
+          "monsters"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "bestiary-lvl-51-100",
+      "label": "Combat 51–100",
+      "url": "/combat/monsters/lvl-51-100",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "912 monsters in this bracket.",
+        "tags": [
+          "combat",
+          "monsters"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "bestiary-lvl-101-200",
+      "label": "Combat 101–200",
+      "url": "/combat/monsters/lvl-101-200",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "648 monsters in this bracket.",
+        "tags": [
+          "combat",
+          "monsters"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "bestiary-lvl-200-plus",
+      "label": "Combat 200+",
+      "url": "/combat/monsters/lvl-200-plus",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "497 monsters in this bracket.",
+        "tags": [
+          "combat",
+          "monsters"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "npc-directory",
+      "label": "NPC Directory",
+      "url": "/npcs",
+      "type": "group",
+      "slots": [
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "All 12,076 NPCs from the cache — actions, tags, combat.",
+        "tags": [
+          "npcs",
+          "database"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "hitpoints",
+      "label": "Hitpoints",
+      "url": "/skills/hitpoints",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Your life points.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "cooking",
+      "label": "Cooking",
+      "url": "/skills/cooking",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Cook food for healing.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "woodcutting",
+      "label": "Woodcutting",
+      "url": "/skills/woodcutting",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Chop trees for logs.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "fletching",
+      "label": "Fletching",
+      "url": "/skills/fletching",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Craft bows and ammunition.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "fishing",
+      "label": "Fishing",
+      "url": "/skills/fishing",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Catch fish.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "firemaking",
+      "label": "Firemaking",
+      "url": "/skills/firemaking",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Light fires and lanterns.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "crafting",
+      "label": "Crafting",
+      "url": "/skills/crafting",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Craft jewellery, leather and glass.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "smithing",
+      "label": "Smithing",
+      "url": "/skills/smithing",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Smelt and smith metal gear.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "mining",
+      "label": "Mining",
+      "url": "/skills/mining",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Mine ores and gems.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "herblore",
+      "label": "Herblore",
+      "url": "/skills/herblore",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Mix potions.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "agility",
+      "label": "Agility",
+      "url": "/skills/agility",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Shortcuts and run energy.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "thieving",
+      "label": "Thieving",
+      "url": "/skills/thieving",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Pickpocket and steal.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "slayer",
+      "label": "Slayer",
+      "url": "/skills/slayer",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Assigned monster hunting; gates many monsters.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "farming",
+      "label": "Farming",
+      "url": "/skills/farming",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Grow crops.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "runecraft",
+      "label": "Runecraft",
+      "url": "/skills/runecraft",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Craft runes from essence.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "hunter",
+      "label": "Hunter",
+      "url": "/skills/hunter",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Trap creatures.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
+      }
+    },
+    {
+      "id": "construction",
+      "label": "Construction",
+      "url": "/skills/construction",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "summary": "Build a player-owned house.",
+        "tags": [
+          "skills"
+        ],
+        "generated": true
       }
     }
   ],
   "edges": [
-    { "from": "root",    "to": "regions",          "rel": "child" },
-    { "from": "root",    "to": "getting-started", "rel": "child" },
-    { "from": "root",    "to": "progression-router", "rel": "child" },
-    { "from": "root",    "to": "home",     "rel": "child" },
-    { "from": "root",    "to": "skills",   "rel": "child" },
-    { "from": "root",    "to": "combat",   "rel": "child" },
-    { "from": "root",    "to": "items",    "rel": "child" },
-    { "from": "root",    "to": "quests",   "rel": "child" },
-    { "from": "skills",  "to": "attack",   "rel": "child" },
-    { "from": "skills",  "to": "strength", "rel": "child" },
-    { "from": "skills",  "to": "defence",  "rel": "child" },
-    { "from": "skills",  "to": "ranged",   "rel": "child" },
-    { "from": "skills",  "to": "magic",    "rel": "child" },
-    { "from": "skills",  "to": "prayer",   "rel": "child" },
-    { "from": "combat",  "to": "melee",    "rel": "child" },
-    { "from": "combat",  "to": "bosses",   "rel": "child" },
-    { "from": "items",   "to": "weapons",  "rel": "child" },
-    { "from": "items",   "to": "armour",   "rel": "child" },
-    { "from": "items",   "to": "runes",    "rel": "child" },
-    { "from": "magic",   "to": "runes",    "rel": "related" },
-    { "from": "combat",  "to": "skills",   "rel": "related" },
-    { "from": "weapons", "to": "attack",   "rel": "related" },
-    { "from": "armour",  "to": "defence",  "rel": "related" },
-
-    { "from": "regions", "to": "region-global",           "rel": "child" },
-    { "from": "regions", "to": "region-misthalin",        "rel": "child" },
-    { "from": "regions", "to": "region-morytania",        "rel": "child" },
-    { "from": "regions", "to": "region-kandarin",         "rel": "child" },
-    { "from": "regions", "to": "region-troll-country",    "rel": "child" },
-    { "from": "regions", "to": "region-ape-atoll",        "rel": "child" },
-    { "from": "regions", "to": "region-kharidian-desert", "rel": "child" },
-    { "from": "regions", "to": "region-zeah",             "rel": "child" },
-    { "from": "regions", "to": "region-wilderness",       "rel": "child" },
-
-    { "from": "region-misthalin",       "to": "zone-stronghold",    "rel": "zone-contains" },
-    { "from": "region-misthalin",       "to": "zone-lumbridge",     "rel": "zone-contains" },
-    { "from": "region-misthalin",       "to": "zone-varrock",       "rel": "zone-contains" },
-    { "from": "region-morytania",       "to": "zone-barrows",       "rel": "zone-contains" },
-    { "from": "region-morytania",       "to": "zone-slayer-tower",  "rel": "zone-contains" },
-    { "from": "region-kandarin",        "to": "zone-nmz",           "rel": "zone-contains" },
-    { "from": "region-troll-country",   "to": "zone-gwd",           "rel": "zone-contains" },
-    { "from": "region-ape-atoll",       "to": "zone-mm-tunnels",    "rel": "zone-contains" },
-    { "from": "region-kharidian-desert","to": "zone-pyramid",       "rel": "zone-contains" },
-    { "from": "region-zeah",            "to": "zone-cox",           "rel": "zone-contains" },
-    { "from": "region-zeah",            "to": "zone-shayzien",      "rel": "zone-contains" },
-
-    { "from": "quest-priest-in-peril",  "to": "region-morytania",   "rel": "quest-unlocks" },
-    { "from": "quest-mm",               "to": "zone-mm-tunnels",    "rel": "quest-unlocks" },
-    { "from": "quest-tale-of-arrav",    "to": "zone-cox",           "rel": "quest-unlocks" },
-    { "from": "quest-dt",               "to": "zone-pyramid",       "rel": "quest-unlocks" },
-
-    { "from": "monster-abyssal-demon",  "to": "item-abyssal-whip",  "rel": "drops" },
-    { "from": "monster-abyssal-demon",  "to": "zone-slayer-tower",  "rel": "located-in" },
-    { "from": "monster-zulrah",         "to": "item-toxic-blowpipe","rel": "drops" },
-    { "from": "monster-zulrah",         "to": "item-magic-fang",    "rel": "drops" },
-    { "from": "monster-zulrah",         "to": "zone-zul-andra",     "rel": "located-in" },
-    { "from": "quest-regicide",         "to": "zone-zul-andra",     "rel": "quest-unlocks" },
-    { "from": "monster-kbd",            "to": "item-kbd-heads",     "rel": "drops" },
-    { "from": "monster-kbd",            "to": "zone-kbd-lair",      "rel": "located-in" },
-    { "from": "region-wilderness",      "to": "zone-kbd-lair",      "rel": "zone-contains" },
-
-    { "from": "reward-pool-cox",        "to": "item-twisted-bow",   "rel": "tier" },
-    { "from": "reward-pool-cox",        "to": "item-scythe",        "rel": "tier" },
-    { "from": "reward-pool-cox",        "to": "item-kodai-wand",    "rel": "tier" },
-    { "from": "zone-cox",               "to": "reward-pool-cox",    "rel": "reward-source" },
-
-    { "from": "item-abyssal-whip",      "to": "attack",             "rel": "requires-skill" },
-    { "from": "item-twisted-bow",       "to": "ranged",             "rel": "requires-skill" },
-    { "from": "item-toxic-blowpipe",    "to": "ranged",             "rel": "requires-skill" }
+    {
+      "from": "root",
+      "to": "regions",
+      "rel": "child"
+    },
+    {
+      "from": "root",
+      "to": "getting-started",
+      "rel": "child"
+    },
+    {
+      "from": "root",
+      "to": "progression-router",
+      "rel": "child"
+    },
+    {
+      "from": "root",
+      "to": "home",
+      "rel": "child"
+    },
+    {
+      "from": "root",
+      "to": "skills",
+      "rel": "child"
+    },
+    {
+      "from": "root",
+      "to": "combat",
+      "rel": "child"
+    },
+    {
+      "from": "root",
+      "to": "items",
+      "rel": "child"
+    },
+    {
+      "from": "root",
+      "to": "quests",
+      "rel": "child"
+    },
+    {
+      "from": "skills",
+      "to": "attack",
+      "rel": "child"
+    },
+    {
+      "from": "skills",
+      "to": "strength",
+      "rel": "child"
+    },
+    {
+      "from": "skills",
+      "to": "defence",
+      "rel": "child"
+    },
+    {
+      "from": "skills",
+      "to": "ranged",
+      "rel": "child"
+    },
+    {
+      "from": "skills",
+      "to": "magic",
+      "rel": "child"
+    },
+    {
+      "from": "skills",
+      "to": "prayer",
+      "rel": "child"
+    },
+    {
+      "from": "combat",
+      "to": "melee",
+      "rel": "child"
+    },
+    {
+      "from": "combat",
+      "to": "bosses",
+      "rel": "child"
+    },
+    {
+      "from": "items",
+      "to": "weapons",
+      "rel": "child"
+    },
+    {
+      "from": "items",
+      "to": "armour",
+      "rel": "child"
+    },
+    {
+      "from": "items",
+      "to": "runes",
+      "rel": "child"
+    },
+    {
+      "from": "magic",
+      "to": "runes",
+      "rel": "related"
+    },
+    {
+      "from": "combat",
+      "to": "skills",
+      "rel": "related"
+    },
+    {
+      "from": "weapons",
+      "to": "attack",
+      "rel": "related"
+    },
+    {
+      "from": "armour",
+      "to": "defence",
+      "rel": "related"
+    },
+    {
+      "from": "regions",
+      "to": "region-global",
+      "rel": "child"
+    },
+    {
+      "from": "regions",
+      "to": "region-misthalin",
+      "rel": "child"
+    },
+    {
+      "from": "regions",
+      "to": "region-morytania",
+      "rel": "child"
+    },
+    {
+      "from": "regions",
+      "to": "region-kandarin",
+      "rel": "child"
+    },
+    {
+      "from": "regions",
+      "to": "region-troll-country",
+      "rel": "child"
+    },
+    {
+      "from": "regions",
+      "to": "region-ape-atoll",
+      "rel": "child"
+    },
+    {
+      "from": "regions",
+      "to": "region-kharidian-desert",
+      "rel": "child"
+    },
+    {
+      "from": "regions",
+      "to": "region-zeah",
+      "rel": "child"
+    },
+    {
+      "from": "regions",
+      "to": "region-wilderness",
+      "rel": "child"
+    },
+    {
+      "from": "region-misthalin",
+      "to": "zone-stronghold",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-misthalin",
+      "to": "zone-lumbridge",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-misthalin",
+      "to": "zone-varrock",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-morytania",
+      "to": "zone-barrows",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-morytania",
+      "to": "zone-slayer-tower",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-kandarin",
+      "to": "zone-nmz",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-troll-country",
+      "to": "zone-gwd",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-ape-atoll",
+      "to": "zone-mm-tunnels",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-kharidian-desert",
+      "to": "zone-pyramid",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-zeah",
+      "to": "zone-cox",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "region-zeah",
+      "to": "zone-shayzien",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "quest-priest-in-peril",
+      "to": "region-morytania",
+      "rel": "quest-unlocks"
+    },
+    {
+      "from": "quest-mm",
+      "to": "zone-mm-tunnels",
+      "rel": "quest-unlocks"
+    },
+    {
+      "from": "quest-tale-of-arrav",
+      "to": "zone-cox",
+      "rel": "quest-unlocks"
+    },
+    {
+      "from": "quest-dt",
+      "to": "zone-pyramid",
+      "rel": "quest-unlocks"
+    },
+    {
+      "from": "monster-abyssal-demon",
+      "to": "item-abyssal-whip",
+      "rel": "drops"
+    },
+    {
+      "from": "monster-abyssal-demon",
+      "to": "zone-slayer-tower",
+      "rel": "located-in"
+    },
+    {
+      "from": "monster-zulrah",
+      "to": "item-toxic-blowpipe",
+      "rel": "drops"
+    },
+    {
+      "from": "monster-zulrah",
+      "to": "item-magic-fang",
+      "rel": "drops"
+    },
+    {
+      "from": "monster-zulrah",
+      "to": "zone-zul-andra",
+      "rel": "located-in"
+    },
+    {
+      "from": "quest-regicide",
+      "to": "zone-zul-andra",
+      "rel": "quest-unlocks"
+    },
+    {
+      "from": "monster-kbd",
+      "to": "item-kbd-heads",
+      "rel": "drops"
+    },
+    {
+      "from": "monster-kbd",
+      "to": "zone-kbd-lair",
+      "rel": "located-in"
+    },
+    {
+      "from": "region-wilderness",
+      "to": "zone-kbd-lair",
+      "rel": "zone-contains"
+    },
+    {
+      "from": "reward-pool-cox",
+      "to": "item-twisted-bow",
+      "rel": "tier"
+    },
+    {
+      "from": "reward-pool-cox",
+      "to": "item-scythe",
+      "rel": "tier"
+    },
+    {
+      "from": "reward-pool-cox",
+      "to": "item-kodai-wand",
+      "rel": "tier"
+    },
+    {
+      "from": "zone-cox",
+      "to": "reward-pool-cox",
+      "rel": "reward-source"
+    },
+    {
+      "from": "item-abyssal-whip",
+      "to": "attack",
+      "rel": "requires-skill"
+    },
+    {
+      "from": "item-twisted-bow",
+      "to": "ranged",
+      "rel": "requires-skill"
+    },
+    {
+      "from": "item-toxic-blowpipe",
+      "to": "ranged",
+      "rel": "requires-skill"
+    },
+    {
+      "from": "items",
+      "to": "item-db",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "items",
+      "to": "item-equipment",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-head",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-cape",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-neck",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-ammo",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-weapon",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-2h",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-shield",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-body",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-legs",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-hands",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-feet",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-slot-ring",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "items",
+      "to": "item-quest-items",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "combat",
+      "to": "monsters",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "monsters",
+      "to": "monster-abyssal-demon",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "monsters",
+      "to": "monster-kbd",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "monsters",
+      "to": "monster-zulrah",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "combat",
+      "to": "bestiary",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "monsters",
+      "to": "bestiary-lvl-1-20",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "monsters",
+      "to": "bestiary-lvl-21-50",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "monsters",
+      "to": "bestiary-lvl-51-100",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "monsters",
+      "to": "bestiary-lvl-101-200",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "monsters",
+      "to": "bestiary-lvl-200-plus",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "root",
+      "to": "npc-directory",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "hitpoints",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "cooking",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "woodcutting",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "fletching",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "fishing",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "firemaking",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "crafting",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "smithing",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "mining",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "herblore",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "agility",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "thieving",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "slayer",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "farming",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "runecraft",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "hunter",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "skills",
+      "to": "construction",
+      "rel": "child",
+      "generated": true
+    },
+    {
+      "from": "item-equipment",
+      "to": "item-db",
+      "rel": "related",
+      "generated": true
+    },
+    {
+      "from": "bestiary",
+      "to": "npc-directory",
+      "rel": "related",
+      "generated": true
+    }
   ]
 }

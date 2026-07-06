@@ -157,6 +157,64 @@
     return { show, hide, el };
   })();
 
+  // ── Deep search (cache packs) ────────────────────────────────────────────
+  // Lazily loads the RuneLite cache packs on the first 3+ char query and
+  // appends item/monster entry hits linking into the database pages.
+
+  const packs = (() => {
+    let _promise = null;
+    const parse = (buf) => {
+      const view = new DataView(buf);
+      if (String.fromCharCode(view.getUint8(0), view.getUint8(1), view.getUint8(2), view.getUint8(3)) !== "OSRP") return [];
+      const n = view.getUint32(4, true);
+      const dec = new TextDecoder();
+      const out = new Array(n);
+      for (let i = 0; i < n; i++) {
+        const off = view.getUint32(8 + i * 12 + 4, true), len = view.getUint32(8 + i * 12 + 8, true);
+        out[i] = JSON.parse(dec.decode(new Uint8Array(buf, off, len)));
+      }
+      return out;
+    };
+    const fetchPack = (url) => fetch(url).then((r) => r.arrayBuffer()).then(parse).catch(() => []);
+    return {
+      load() {
+        _promise = _promise ?? Promise.all([
+          fetchPack(BASE + "/assets/data/cache/items.pack"),
+          fetchPack(BASE + "/assets/data/cache/npcs.pack"),
+        ]);
+        return _promise;
+      },
+    };
+  })();
+
+  function deepSearch(q, [items, npcs]) {
+    const hitItems = [];
+    for (const it of items) {
+      if (hitItems.length >= 8) break;
+      if (it.name.toLowerCase().includes(q)) hitItems.push(it);
+    }
+    const hitNpcs = [];
+    const seen = new Set();
+    for (const n of npcs) {
+      if (hitNpcs.length >= 8) break;
+      const key = `${n.name}\x1f${n.combat_level}`;
+      if (seen.has(key) || !n.name.toLowerCase().includes(q)) continue;
+      seen.add(key);
+      hitNpcs.push(n);
+    }
+    return [
+      ...hitItems.map((it) => ({
+        name: it.name, item_id: it.id, url: `/items/all/#${it.id}`,
+        summary: it.examine ?? "", tags: ["item"],
+      })),
+      ...hitNpcs.map((n) => ({
+        name: n.name, url: ((n.actions ?? []).includes("Attack") ? `/combat/bestiary/#${n.id}` : `/npcs/#${n.id}`),
+        summary: n.combat_level > 0 ? `Combat level ${n.combat_level}` : "NPC",
+        tags: ["monster"],
+      })),
+    ];
+  }
+
   // ── Search wiring ────────────────────────────────────────────────────────
 
   function wireSearch(catalog) {
@@ -180,15 +238,8 @@
       preview.hide();
     };
 
-    const render = (q) => {
-      cursor = -1;
-      if (!q) { dismiss(); return; }
-      const hits = catalog.entries.filter(
-        (e) => (e.name ?? "").toLowerCase().includes(q)
-          || (e.summary ?? "").toLowerCase().includes(q)
-          || (e.tags ?? []).some((t) => t.toLowerCase().includes(q))
-      );
-      if (!hits.length) { dismiss(); return; }
+    const paint = (hits, deep) => {
+      if (!hits.length && !deep.length) { dismiss(); return; }
 
       // group by first tag, ungrouped last
       const groups = hits.reduce((acc, e) => {
@@ -202,9 +253,29 @@
           `${tag ? `<div class="sri-group-label">${tag}</div>` : ""}` +
           entries.map(searchRow).join("")
         )
-        .join("");
+        .join("")
+        + (deep.length
+          ? `<div class="sri-group-label">game database</div>` + deep.map(searchRow).join("")
+          : "");
       results.hidden = false;
       hydrateSprites(results);
+    };
+
+    const render = (q) => {
+      cursor = -1;
+      if (!q) { dismiss(); return; }
+      const hits = catalog.entries.filter(
+        (e) => (e.name ?? "").toLowerCase().includes(q)
+          || (e.summary ?? "").toLowerCase().includes(q)
+          || (e.tags ?? []).some((t) => t.toLowerCase().includes(q))
+      );
+      paint(hits, []);
+      if (q.length >= 3) {
+        packs.load().then((data) => {
+          if (input.value.trim().toLowerCase() !== q) return;
+          paint(hits, deepSearch(q, data));
+        });
+      }
     };
 
     input.addEventListener("input", (e) => render(e.target.value.trim().toLowerCase()));
