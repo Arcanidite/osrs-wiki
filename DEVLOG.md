@@ -65,4 +65,30 @@ Running log of features, integrations, and decisions. Add an entry when somethin
 
 ---
 
+### 2026-07-06 — Progression Router P0: monolith → modules + headless test harness
+
+Rebuild phase P0 of `PROGRESSION_ROUTER_BRIEF.md` (§8): behavior-preserving extraction of the 2,837-line
+`assets/js/tools/progression-router.js` into `assets/js/router/` ES modules.
+
+- `router/graph.js` — node/edge graph + monotone cmp registry (`gte`/`has`), **absorbed `assets/js/dal.js`**
+  (deleted; nothing else consumed `window.DAL`). Storage-injectable: browser uses the same `osrs-graph:v1`
+  localStorage payload (existing saves carry over), tests use in-memory. Editor still exposes `window.DAL`.
+- `router/model.js` — state vectors (`toState`/`fromState`), req/grant → qual-edge compilation, `syncQualEdges`.
+- `router/planner/greedy.js` — Algorithm A extracted verbatim, pure/DOM-free; context via `env`
+  (`graph`, `constraints`, `pinnedExclusions`, `manualQuestDone`, injectable `now` for deterministic synth ids).
+- `router/planner/index.js` — the §5.2 planner seam: `plan(goals, steps, profile, env, config) → {path, diagnostics}`.
+- `router/load.js`, `router/persist.js` — JSONL parse/fetch; graph-backed plan/notes/tags store.
+- `router/editor/index.js` — all DOM/wiring, derived from the monolith by **mechanical code-motion**
+  (script deleted moved ranges, patched 3 call sites) to guarantee parity. Entry point stays
+  `assets/js/tools/progression-router.js` (now a module shim); `tool.html` loads `tool_script` with
+  `type="module"` and no longer includes `dal.js`.
+- `tests/` — 23 Node tests (`npm test`, node:test, zero deps): cmp monotonicity, model round-trips,
+  planner invariants (capstones, goal satisfaction, region exclusion, pins, honest synth placeholders,
+  determinism), and **pinned baseline route fixtures** over the real JSONL
+  (`tests/fixtures/baseline-routes.json`; re-pin intentionally via `npm run fixtures`).
+- Verified in headless Chromium (Playwright shell): boot renders 23 skills + 165 bank entries; adding a
+  bank goal computes an 11-step route through the new module chain; no console errors.
+
+---
+
 <!-- Add entries below as features are built out -->

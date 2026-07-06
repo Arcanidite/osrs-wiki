@@ -17,11 +17,10 @@
     </div>
   </main>
   {% include footer.html %}
-  <script src="{{ '/assets/js/dal.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/sprite.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/catalog.js' | relative_url }}" data-baseurl="{{ site.baseurl }}"></script>
   {% if page.tool_script %}
-    <script src="{{ page.tool_script | relative_url }}" data-baseurl="{{ site.baseurl }}"></script>
+    <script type="module" src="{{ page.tool_script | relative_url }}" data-baseurl="{{ site.baseurl }}"></script>
   {% endif %}
 </body>
 </html>

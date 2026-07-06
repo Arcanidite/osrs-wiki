@@ -399,8 +399,9 @@ Generalize the current `step` into an **option**: any XP source, reward source, 
 
 ```
 assets/js/
-  dal.js                     # graph + monotone cmp registry (keep; extend comparators here)
   router/
+    graph.js                 # node/edge graph + monotone cmp registry (P0: absorbed dal.js;
+                             #   storage-injectable — localStorage in browser, in-memory in tests)
     load.js                  # fetch + parse JSONL; validate schemas; surface bad rows loudly
     model.js                 # state, predicates, req/grant compilation to qual-edges
     cost.js                  # CostModel: estimateDuration ladder + config (§4). PURE.
@@ -413,9 +414,15 @@ assets/js/
       beam.js                # Algorithm E (k-best)
       diagnostics.js         # explainability payloads
     editor/                  # DOM/render/wiring — everything in §2.5
-    persist.js               # DAL-backed plans/tabs/notes/pins (slim/expand)
+    persist.js               # graph-backed plans/tabs/notes/pins (slim/expand)
 tests/                       # headless: planner correctness, cost ladder, monotonicity, parity
 ```
+
+> **As-built note (P0, 2026-07-06):** the original plan kept `assets/js/dal.js`; in practice nothing but
+> the router consumed `window.DAL`, so the graph + cmp registry moved wholesale into `router/graph.js`
+> as an ES module (`createGraph(storage)`) and `dal.js` was deleted. The browser instance uses the same
+> `osrs-graph:v1` localStorage payload, so existing user saves carry over; the editor still exposes the
+> instance as `window.DAL` for console debugging.
 **Hard separation:** `cost.js` and everything under `planner/` are **pure and DOM-free**, unit-tested in
 Node against the real `*.jsonl` fixtures. The editor imports the planner, never the reverse.
 
@@ -451,6 +458,9 @@ Node against the real `*.jsonl` fixtures. The editor imports the planner, never 
 
 - **P0 — Extract & test-harness the baseline.** Pull `progression-router.js` apart into the §6 layout
   *without behavior change*; add Node fixtures from the real JSONL; pin baseline output.
+  **[DONE 2026-07-06]** — editor extracted by mechanical code-motion; planner/graph/model/persist pure;
+  23 Node tests incl. pinned route fixtures (`npm test`, re-pin via `npm run fixtures`); headless-browser
+  smoke verified boot + goal-add + route render.
 - **P1 — CostModel (§4).** Implement the duration ladder + config + confidence surfacing. Wire the
   "Costing" panel. This is where the honest-placeholder rule lives.
 - **P2 — Planner seam + Greedy (A) + Topological (B).** Ship B as `auto` default; keep A as fallback and
@@ -470,8 +480,8 @@ Node against the real `*.jsonl` fixtures. The editor imports the planner, never 
 - **Do not overwrite real data with estimates.** `xp`/`reqs`/`grants` are read-only to the optimizer.
 - **Do not require a backend.** Static-site constraint holds; optimizer degrades gracefully.
 - **Do not regress the editor.** The mutable-plan experience is the product; the optimizer serves it.
-- **Access note:** the live repo is `Arcanidite/osrs-wiki`. The local `gh` identity here is `PowerCreek`
-  — confirm write access (collaborator) before targeting PRs at it, or fork.
+- **Access note:** the live repo is `Arcanidite/osrs-wiki` (`Arcanidite` is an org). The local `gh`
+  identity `PowerCreek` has **admin** on it (verified 2026-07-06); target PRs/pushes at it directly.
 
 ---
 

@@ -12,6 +12,11 @@ plugins:
 
 data_dir: _data
 
+exclude:
+  - tests/
+  - package.json
+  - node_modules/
+
 defaults:
   - scope:
       path: ""
