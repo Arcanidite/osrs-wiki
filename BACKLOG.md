@@ -521,3 +521,25 @@ Refactor all client-side in-memory data sources (plans, step notes, tags, loadou
 **Why:** All data is currently stored as flat blobs per `STORE_*` key — no relational structure, no cross-reference, no query capability. The graph model unifies disparate store keys into a coherent schema and enables cross-entity queries (e.g. "all steps that require item X").
 
 **Status:** TODO — start after [router:step-item-icons] and [router:step-notes-expand] are shipped
+
+---
+
+## [client:collision-flags] World client — tile collision from map data
+
+**Status:** TODO — blocked on re-extraction. The map dump renders terrain colours only; tile
+movement/blocking flags (walls, water, objects) were not exported, so `/play` movement is
+unobstructed. Needs `Dump.java` to emit per-tile collision masks alongside the PNGs.
+
+## [client:locations-spawns] World client — object/NPC placement in the world
+
+**Status:** TODO — blocked on XTEA key refresh (see DEVLOG cache-extraction constraint).
+`locations.pack` is empty; we know *what* 12,076 NPCs / 805 objects are, not *where* they are.
+Once keys are refreshed: render object footprints + NPC spawn markers on `/play`, link markers
+to the bestiary/db entries.
+
+## [client:simulation] World client — game systems (combat/skilling/quests)
+
+**Status:** TODO — cannot be extracted, only re-implemented. RuneLite and the cache contain
+definitions and assets, not game logic; the simulation is server-side at Jagex. Any gameplay
+must be rebuilt from *sourced* formulas (OSRS Wiki documents combat math, xp tables, etc.) under
+the KB protocol — no guessed mechanics. Sequence after collision + spawns exist.

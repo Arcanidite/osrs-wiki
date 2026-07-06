@@ -117,4 +117,27 @@ RuneLite cache extraction — nothing hand-invented, every page carries a source
 
 ---
 
+### 2026-07-06 — Standalone top-down 2D world client (`/play`)
+
+Walk the real extracted map in the browser — no server, tick-accurate movement.
+
+- `assets/js/tools/world-client.js` + `play/index.html`: canvas client streaming the map dump
+  (`assets/data/cache/map/*.png.gz`, gunzipped in-browser via DecompressionStream, LRU bitmap
+  cache), nearest-neighbour retro scaling (×2/×4/×8 of the 4 px/tile source). Click-to-walk
+  (Bresenham path) + WASD, camera lerp between ticks, procedural avatar, landmark jump (debug),
+  coords/tick HUD. Movement is tick-true: 600 ms/tick, 1 tile walk / 2 run (OSRS Wiki "Game tick").
+- **Scope honesty (page says so too):** terrain only. No collision (dump lacks tile flags —
+  BACKLOG `[client:collision-flags]`), no world NPC/object placement (`locations.pack` empty until
+  XTEA refresh — `[client:locations-spawns]`), and no extracted game logic — combat/quests/drops are
+  server-side at Jagex, absent from RuneLite/cache by design; gameplay systems must be re-implemented
+  from sourced formulas (`[client:simulation]`).
+- **Map-dump finding (GAME_GOTCHAS G-4):** dump region ids (1936–8359) are *not* live OSRS region
+  ids — sequential-archive artifact — but the space is internally coherent (neighbours stitch into
+  continuous terrain; verified visually). `/play` treats manifest bx/by as its own world space.
+  218/1150 tiles are flat ocean.
+- Verified headless: spawn (928, 1952), click walked exactly 6 tiles east across ticks, terrain
+  renders (screenshot). CSS `.wc-*` appended to `main.css`; `world-client` node added to graph nav.
+
+---
+
 <!-- Add entries below as features are built out -->

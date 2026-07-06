@@ -1515,6 +1515,28 @@
         "generated": true
       },
       "children": []
+    },
+    {
+      "id": "world-client",
+      "label": "World Client",
+      "url": "/play",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "page_class": "tool",
+        "icon": {
+          "name": "tool"
+        },
+        "summary": "Walk the real extracted game world — top-down 2D, tick-accurate.",
+        "tags": [
+          "tools"
+        ]
+      },
+      "children": []
     }
   ],
   "flat": [
@@ -1857,6 +1879,11 @@
       "id": "npc-directory",
       "label": "NPC Directory",
       "url": "/npcs"
+    },
+    {
+      "id": "world-client",
+      "label": "World Client",
+      "url": "/play"
     }
   ]
 }

@@ -38,6 +38,19 @@
   not one arbitrary id.
 - **source/stamp:** cache extraction · 2026-07-06
 
+## [G-4] Map-dump region ids don't match live OSRS region numbering
+
+- **Trap:** treating `assets/data/cache/map/manifest.json` region ids / bx,by as live OSRS world
+  coordinates (e.g. expecting Lumbridge at region 12850 — absent; dump ids run 1936–8359, rx ≤ 32).
+- **Why it bites:** any cross-reference against OSRS Wiki coordinates or the router's region model
+  will point at the wrong place; the dump's id space comes from the sequential-archive patch in
+  `RegionLoader.java`, not from real (rx<<8|ry) region ids.
+- **Avoid:** the dump is **internally coherent** (neighbouring ids stitch into continuous terrain —
+  verified visually 2026-07-06), so treat manifest bx/by as a self-contained coordinate space, which
+  is what `/play` does. Re-derive the true mapping only when re-extracting with fixed region naming.
+  Also: 218/1150 tiles are flat ocean; tiles are terrain-only (no walls/objects rendered).
+- **source/stamp:** cache extraction + visual stitch verification · 2026-07-06
+
 <!-- Append new gotchas below. Template:
 ## [G-N] <short title>
 - **Trap:** <the wrong assumption / mistake>
