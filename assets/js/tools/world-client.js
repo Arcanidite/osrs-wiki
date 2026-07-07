@@ -66,13 +66,21 @@ async function init() {
     root.innerHTML = "<p>This browser lacks DecompressionStream (needed for the map data).</p>";
     return;
   }
-  const [manifest, objectDefs, npcDefs, equipMap, dropsMap] = await Promise.all([
+  const [manifest, objectDefs, npcDefs, equipMap, dropsMap, shopRecs] = await Promise.all([
     fetch(`${DATA}/map/manifest.json`).then((r) => r.json()),
     readPack(`${DATA}/objects.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
     readPack(`${DATA}/npcs.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
     readPack(`${DATA}/equipment.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
     readPack(`${DATA}/drops.pack`).then((recs) => new Map(recs.map((r) => [r.id, r.drops]))),
+    readPack(`${DATA}/shops.pack`),
   ]);
+  // shop lookup: explicit npc-id bindings win over name bindings
+  const shopByNpcId = new Map();
+  const shopByNpcName = new Map();
+  for (const s of shopRecs) {
+    for (const id of s.npcIds ?? []) shopByNpcId.set(id, s);
+    for (const nm of s.npcNames ?? []) shopByNpcName.set(nm, s);
+  }
   const regionAt = (x, y) => ((x >> 6) << 8) | (y >> 6);
 
   root.innerHTML = `
@@ -105,6 +113,7 @@ async function init() {
       <div class="wc-side-body" data-panel="skills" hidden></div>
     </div>
     <div class="wc-bank" hidden></div>
+    <div class="wc-bank wc-shop" hidden></div>
     <div class="wc-log"></div>
     <p class="wc-help">Left-click: walk / default action · right-click: option menu (real cache
       actions) · WASD/arrows step · R run · C collision · O objects · 600 ms ticks.
@@ -483,6 +492,88 @@ async function init() {
     paintSprites();
   }
 
+  // ── shop panel (stock from shops.pack — RSPS-derived, see GAME_KB) ────────
+  // price multipliers: Apollo (rev-377 RSPS) Shop.kt — specialty sells at
+  // value / buys at 0.6×; general stores sell at ceil(0.8×) / buy at 0.4×.
+  // restock cadence: rsmod Lumbridge axeshop restockCycles=100 ticks.
+  const SHOP_RESTOCK_TICKS = 100;
+  const shopEl = root.querySelector(".wc-shop");
+  const shopState = new Map(); // shop id -> Map itemId -> live qty
+  let openShop = null;
+  const shopLive = (rec) => {
+    if (!shopState.has(rec.id))
+      shopState.set(rec.id, new Map(rec.stock.map((s) => [s.itemId, s.qty])));
+    return shopState.get(rec.id);
+  };
+  const shopSellPrice = (rec, s) => rec.buys === "any" ? Math.ceil(0.8 * s.value) : s.value;
+  const shopBuyPrice = (rec, s) => Math.floor((rec.buys === "any" ? 0.4 : 0.6) * s.value);
+  const coinsHeld = () => state.raw.inv.find((it) => it.id === COINS_ID)?.qty ?? 0;
+
+  function openShopUI(rec) {
+    openShop = rec;
+    shopEl.hidden = false;
+    renderShop();
+  }
+  function renderShop() {
+    if (!openShop || shopEl.hidden) return;
+    const rec = openShop;
+    const live = shopLive(rec);
+    const stockById = new Map(rec.stock.map((s) => [s.itemId, s]));
+    const sellable = (it) => stockById.has(it.id);
+    shopEl.innerHTML = `<div class="wc-bank-hd"><b>${esc(rec.name)}</b>
+        <i>${coinsHeld().toLocaleString()} coins</i>
+        <button class="btn wc-shop-close">✕</button></div>
+      <div class="wc-bank-cols">
+        <div><h3>Shop</h3>${rec.stock.map((s) => {
+          const q = live.get(s.itemId) ?? s.qty;
+          return `<button class="wc-bank-row" data-b="${s.itemId}"${q <= 0 ? " disabled" : ""}>` +
+            `${spriteSpan(s.itemId, s.itemName)} ${esc(s.itemName)} × ${q} — ` +
+            `${shopSellPrice(rec, s).toLocaleString()} gp</button>`;
+        }).join("")}</div>
+        <div><h3>Sell (items this shop deals in)</h3>${state.raw.inv.map((it, i) =>
+          sellable(it)
+            ? `<button class="wc-bank-row" data-s="${i}">${spriteSpan(it.id, it.name)} ` +
+              `${esc(it.name)}${it.qty > 1 ? ` × ${it.qty}` : ""} — ` +
+              `${shopBuyPrice(rec, stockById.get(it.id)).toLocaleString()} gp</button>`
+            : "").join("") || "<i>nothing this shop wants</i>"}</div>
+      </div>`;
+    shopEl.querySelector(".wc-shop-close").addEventListener("click", () => {
+      shopEl.hidden = true;
+      openShop = null;
+    });
+    shopEl.querySelectorAll("[data-b]").forEach((b) =>
+      b.addEventListener("click", () => {
+        const s = stockById.get(+b.dataset.b);
+        const q = live.get(s.itemId) ?? s.qty;
+        if (q <= 0) { say("The shop has run out of stock."); return; }
+        const price = shopSellPrice(rec, s);
+        if (coinsHeld() < price) { say("You don't have enough coins."); return; }
+        if (!state.addItem({ id: s.itemId, name: s.itemName, stackable: s.stackable })) {
+          say("You don't have enough inventory space.");
+          return;
+        }
+        if (price > 0) state.removeItem(COINS_ID, price);
+        live.set(s.itemId, q - 1);
+        dirty = true;
+        renderShop();
+        renderPanels();
+      }));
+    shopEl.querySelectorAll("[data-s]").forEach((b) =>
+      b.addEventListener("click", () => {
+        const it = state.raw.inv[+b.dataset.s];
+        const s = it && stockById.get(it.id);
+        if (!s) return;
+        const price = shopBuyPrice(rec, s);
+        if (!state.removeItem(it.id, 1)) return;
+        if (price > 0) state.addItem({ id: COINS_ID, name: "Coins", stackable: true }, price);
+        live.set(s.itemId, (live.get(s.itemId) ?? s.qty) + 1);
+        dirty = true;
+        renderShop();
+        renderPanels();
+      }));
+    paintSprites();
+  }
+
   const KEY_DIRS = {
     w: [0, 1], arrowup: [0, 1], s: [0, -1], arrowdown: [0, -1],
     a: [-1, 0], arrowleft: [-1, 0], d: [1, 0], arrowright: [1, 0],
@@ -595,11 +686,12 @@ async function init() {
       return;
     }
     if (action === "Trade") {
+      const shop = shopByNpcId.get(npc.id) ?? shopByNpcName.get(name);
+      if (shop) { openShopUI(shop); return; }
       dialogue(name, [
-        "Shop stock and prices are server-side data with no public sourced",
-        "dataset (checked osrsbox-db and mejrs/data_osrs, 2026-07-07).",
-        "BACKLOG: shop stock dataset needed (wiki-derived shops.json) —",
-        "trading opens once a sourced stock table exists."]);
+        "This NPC's shop isn't in any sourced stock table (19 shops are,",
+        "from the Apollo RSPS dataset — see GAME_KB). Unsourced shops",
+        "stay closed rather than invent stock."]);
       return;
     }
     toast(`${action} ${name} — no sourced mechanic for this yet`);
@@ -902,6 +994,17 @@ async function init() {
     climbTick();
     pickupTick();
     wanderTick();
+    if (tick % SHOP_RESTOCK_TICKS === 0 && shopState.size) {
+      // stock drifts 1 toward its initial amount (rsmod restock cadence)
+      for (const [shopId, live] of shopState) {
+        const rec = shopRecs.find((r) => r.id === shopId);
+        for (const s of rec.stock) {
+          const q = live.get(s.itemId) ?? s.qty;
+          if (q !== s.qty) live.set(s.itemId, q + Math.sign(s.qty - q));
+        }
+      }
+      renderShop();
+    }
     if (groundItems.length) groundItems = groundItems.filter((g) => g.despawnTick > tick);
     if (tick % SIM_CONFIG.hpRegenTicks === 0 && state.raw.hp < state.level("hitpoints")) {
       state.raw.hp++;

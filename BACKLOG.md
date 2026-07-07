@@ -558,9 +558,11 @@ equip/unequip UI; swings use worn stab attack + melee strength). DROP TABLES SHI
 (drops.pack from osrsbox-db, 2,086 npcs / 58,375 entries validated against npcs.pack+items.pack;
 ground-item loot with Take + despawn; unsourced tables drop nothing, say so). NPC WANDER AI
 SHIPPED 2026-07-07 (bounded random walk around spawn, collision-honoring; radius/cadence are
-labelled placeholders in npc-ai.js). REMAINING (each blocked on a sourced dataset): shop
-stock/prices — NO public dataset exists (osrsbox-db + mejrs/data_osrs checked 2026-07-07;
-need a wiki-derived shops.json), quests, dialogue scripts.
+labelled placeholders in npc-ai.js). SHOPS SHIPPED 2026-07-07 (RSPS-derived: 19 starter-city shops / 166 stock lines parsed
+from Apollo@87553a8 shop DSL — data only; values from osrsbox cost; bindings id+name-validated,
+swordshop pair spawn-verified; buy/sell UI with Apollo price multipliers + rsmod restock
+cadence; labelled approximation, see GAME_KB + GOTCHAS G-5). REMAINING (each blocked on a
+sourced dataset): shops beyond the starter cities, quests, dialogue scripts.
 
 ## [client:fidelity-gate] World client ships only at gameplay fidelity
 

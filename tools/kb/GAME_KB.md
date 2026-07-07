@@ -142,12 +142,43 @@
   uniformly.
 
 ### Shop stock (NOT sourced — refused)
+> **[STALE — superseded 2026-07-07 by "Shop stock (shops.pack)" below: RSPS repos were
+> approved as data sources and Apollo's shop tables filled the gap.]**
 - **Fact:** shop stock/prices are server-side; NO public sourced dataset exists as of
   2026-07-07 — checked osrsbox-db `docs/shops.json` (404), `data/shops/shops.json` (404),
   mejrs/data_osrs repo listing (no shop file), other GitHub candidates (404). Trade therefore
   opens an honest dialogue naming the gap (BACKLOG: wiki-derived shops.json) instead of an
   invented stock list.
 - **stamp:** 2026-07-07
+
+### Shop stock (shops.pack) — RSPS-derived approximation
+- **Fact source (data only, no code copied):** shop tables parsed from the Apollo RSPS
+  (revision 377) Kotlin shop DSL —
+  `github.com/apollo-rsps/apollo` @ `87553a83840503815ce9d0a1dd39a28855d3b561`,
+  `game/plugin/locations/{lumbridge,varrock,falador,al-kharid,edgeville}/src/shops.plugin.kts`.
+  19 shops kept / 166 stock entries (4 duplicate general stores collapsed into one record;
+  1 stock entry dropped — Thessalia's "Cape" is ambiguous in OSRS naming, never guessed;
+  1 commented-out shop in the source skipped). Item base values (`value` per entry) come from
+  osrsbox-db `items-complete.json` `cost`. Price multipliers are Apollo's `Shop.kt` numbers:
+  specialty shops sell at value / buy at 0.6×value; general stores sell at ceil(0.8×value) /
+  buy at 0.4×value. Restock cadence (stock drifts 1 toward initial per 100 ticks) is from
+  rsmod (`github.com/rsmod/rsmod` @ `fa13b3f67172ef36e15d6b1514358aee61411796`,
+  `content/areas/city/lumbridge/.../LumbridgeInvs.kt` `restockCycles = 100`).
+- **Validation:** every stock item resolves against items.pack (case-insensitive; documented
+  cache suffix conventions "(Unpoisoned)"/"(item)" only — e.g. Bronze arrow → 882); operator
+  NPC names must exist in npcs.pack with a Trade action. The Varrock Swordshop shares the
+  "Shop keeper"/"Shop assistant" names with general stores, so it is bound by explicit npc
+  ids 2884/2885 — verified via npc-spawns: those ids spawn at (3203,3397)/(3205,3399), the
+  swordshop building, while all other same-named ids spawn at known general-store sites.
+  Honesty-guard test re-checks all bindings + stock every run.
+- **source:** Apollo + rsmod (RSPS, cited above) + osrsbox-db values ·
+  **stamp:** 2026-07-07 · **tool:** `tools/build_shops.py`
+- **caveat:** **RSPS-derived approximation — server emulations vary from live.** Apollo
+  targets revision 377 (2006); starter-town stock is largely stable into OSRS but is NOT
+  live-verified (e.g. OSRS general stores no longer sell Newcomer map quantities identically,
+  and members shops differ). Prices are value-derived per Apollo's multipliers, not live shop
+  price curves (OSRS adjusts price with stock level). Shops beyond the five starter cities
+  remain unsourced and stay closed.
 
 ## Facts by option `id`
 

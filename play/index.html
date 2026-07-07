@@ -87,12 +87,20 @@ tool_script: "/assets/js/tools/world-client.js"
   still. Exact wander radius/cadence are unpublished server data — the Chebyshev-5 radius
   and ~1.8 s step are labelled placeholders in <code>assets/js/world/npc-ai.js</code>.</p>
 
+  <p><strong>Shops trade.</strong> 19 starter-city shops (the general stores plus the
+  specialty shops of Lumbridge, Varrock, Falador, Al Kharid and Edgeville — 166 stock lines)
+  buy and sell for coins. Stock tables are parsed from the open-source Apollo RSPS
+  (data only, cited in <code>GAME_KB</code>), item values from osrsbox-db, and every item and
+  NPC binding is test-verified against the real caches — the Varrock swordshop keeper is
+  disambiguated from general-store keepers by his actual spawn tile. <strong>Honesty note:</strong>
+  this is an <em>RSPS-derived approximation</em> (rev-377 emulation; stock and value-based
+  prices are not live-verified) and shops beyond these cities stay closed rather than guess.</p>
+
   <h2>Still missing, and exactly why</h2>
   <ul>
-    <li><strong>Shop stock/prices</strong> — server-side data with no public sourced dataset
-      (osrsbox-db and mejrs/data_osrs checked 2026-07-07 — none exists). BACKLOG: shop stock
-      dataset needed (wiki-derived shops.json); Trade says so in-game rather than inventing
-      a stock list. (<code>BACKLOG [client:simulation]</code>)</li>
+    <li><strong>Shops beyond the five starter cities</strong> — no sourced stock tables yet;
+      their Trade says so in-game rather than inventing a stock list.
+      (<code>BACKLOG [client:simulation]</code>)</li>
     <li><strong>Quests, dialogue scripts</strong> — run on Jagex servers and are not present in
       any client data; they can only be re-implemented from sourced formulas under
       the KB no-fabrication protocol. (<code>BACKLOG [client:simulation]</code>)</li>

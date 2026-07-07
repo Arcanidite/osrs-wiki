@@ -57,6 +57,22 @@
   Also: 218/1150 tiles are flat ocean; tiles are terrain-only (no walls/objects rendered).
 - **source/stamp:** cache extraction + visual stitch verification · 2026-07-06
 
+## [G-5] RSPS data is revision-bound — validate every id, bind shop npcs by verified id
+
+- **Trap:** treating RSPS (private-server) repo data as OSRS-current: Apollo targets rev 377
+  (2006), 2004scape targets 2004 — their npc ids (e.g. Apollo's Shop keeper 524) do NOT match
+  OSRS npcs.pack ids, and item names drift ("Cape", "Waterskin" fill-states). Also: one OSRS
+  npc NAME can serve different shops — "Shop keeper"/"Shop assistant" run every general store
+  AND the Varrock Swordshop.
+- **Why it bites:** binding shops by RSPS npc id points at the wrong (or no) OSRS npc; binding
+  by name alone would open the general store inside the Varrock swordshop.
+- **Avoid:** discard RSPS npc ids entirely; bind by OSRS npc NAME validated against npcs.pack
+  (Trade action required), and where names collide, disambiguate with our own spawn data
+  (swordshop pair 2884/2885 verified by spawn coordinates at the swordshop building). Unresolved
+  names (Thessalia's "Cape") are dropped, never remapped by guesswork. Where osrsbox/wiki data
+  also exists, it wins — RSPS fills gaps only, labelled "RSPS-derived approximation".
+- **source/stamp:** Apollo@87553a8 shop DSL extraction · 2026-07-07
+
 <!-- Append new gotchas below. Template:
 ## [G-N] <short title>
 - **Trap:** <the wrong assumption / mistake>

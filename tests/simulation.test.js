@@ -362,3 +362,34 @@ test("swing with gear bonuses hits harder than without", () => {
   // no-opts call keeps the old behaviour (backward compat)
   assert.deepEqual(swing(me, foe, seq([0, 0.999])), bare);
 });
+
+// ── shops (RSPS-derived stock, see GAME_KB) ─────────────────────────────────
+test("shops.pack item + npc bindings match the packs (honesty guard)", () => {
+  const itemNames = new Map(readPackRecords("items.pack").map((r) => [r.id, r.name]));
+  const npcById = new Map(readPackRecords("npcs.pack").map((r) => [r.id, r]));
+  const npcNames = new Map();
+  for (const r of npcById.values()) {
+    if ((r.actions ?? []).includes("Trade"))
+      npcNames.set(r.name, (npcNames.get(r.name) ?? 0) + 1);
+  }
+  const shops = readPackRecords("shops.pack");
+  assert.ok(shops.length >= 15, `sourced shop coverage (got ${shops.length})`);
+  for (const shop of shops) {
+    assert.ok(["any", "owned"].includes(shop.buys), `${shop.name} buys policy`);
+    assert.ok((shop.npcIds?.length ?? 0) + (shop.npcNames?.length ?? 0) > 0,
+      `${shop.name} has an npc binding`);
+    for (const id of shop.npcIds ?? []) {
+      const npc = npcById.get(id);
+      assert.ok(npc, `${shop.name} npc ${id} exists in npcs.pack`);
+      assert.ok((npc.actions ?? []).includes("Trade"), `${shop.name} npc ${id} has Trade`);
+    }
+    for (const nm of shop.npcNames ?? [])
+      assert.ok(npcNames.get(nm) > 0, `${shop.name} npc name '${nm}' has Trade npcs`);
+    assert.ok(shop.stock.length > 0, `${shop.name} has stock`);
+    for (const s of shop.stock) {
+      assert.equal(itemNames.get(s.itemId), s.itemName, `${shop.name} item ${s.itemId}`);
+      assert.ok(Number.isInteger(s.qty) && s.qty >= 0, `${shop.name} qty of ${s.itemId}`);
+      assert.ok(Number.isInteger(s.value) && s.value >= 0, `${shop.name} value of ${s.itemId}`);
+    }
+  }
+});
