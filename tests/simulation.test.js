@@ -219,3 +219,76 @@ test("sourced tables carry the documented values", () => {
   assert.deepEqual(PICKPOCKET.Man, { level: 1, xp: 8, coins: 3, stunTicks: 8, stunDamage: 1 });
   assert.equal(FISHING.Net.xp, 10);
 });
+
+// ── equipment (gear bonuses) ────────────────────────────────────────────────
+import { SLOT_BONUS_KEYS } from "../assets/js/world/combat.js";
+
+function readPackRecords(name) {
+  const buf = readFileSync(join(ROOT, "assets", "data", "cache", name));
+  const n = buf.readUInt32LE(4);
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    const off = buf.readUInt32LE(8 + i * 12 + 4);
+    const len = buf.readUInt32LE(8 + i * 12 + 8);
+    out.push(JSON.parse(buf.subarray(off, off + len).toString("utf8")));
+  }
+  return out;
+}
+
+test("equipment.pack item ids match items.pack names (id-honesty-guard)", () => {
+  const itemNames = new Map(readPackRecords("items.pack").map((r) => [r.id, r.name]));
+  const equipment = readPackRecords("equipment.pack");
+  assert.ok(equipment.length > 1000, `pack has real coverage (got ${equipment.length})`);
+  const slots = new Set(["head", "cape", "neck", "ammo", "weapon", "body",
+    "shield", "legs", "hands", "feet", "ring", "2h"]);
+  for (const rec of equipment) {
+    assert.equal(itemNames.get(rec.id), rec.name, `equipment ${rec.id}`);
+    assert.ok(slots.has(rec.slot), `slot of ${rec.id}: ${rec.slot}`);
+    for (const k of SLOT_BONUS_KEYS)
+      assert.equal(typeof rec.bonuses[k], "number", `${rec.id}.bonuses.${k}`);
+  }
+});
+
+test("getBonuses sums across slots; equip/unequip round-trip", () => {
+  const equipMap = new Map([
+    [1, { id: 1, name: "Mock sword", slot: "weapon",
+          bonuses: { attack_stab: 10, melee_strength: 7, prayer: 1 } }],
+    [2, { id: 2, name: "Mock helm", slot: "head",
+          bonuses: { attack_stab: 2, defence_crush: 5, prayer: 1 } }],
+  ]);
+  const p = createPlayerState();
+  p.addItem({ id: 1, name: "Mock sword" });
+  p.addItem({ id: 2, name: "Mock helm" });
+  assert.ok(p.equip({ id: 1, name: "Mock sword", slot: "weapon" }));
+  assert.ok(p.equip({ id: 2, name: "Mock helm", slot: "head" }));
+  assert.equal(p.invCount(), 0);
+  const b = p.getBonuses(equipMap);
+  assert.equal(b.attack_stab, 12, "attack_stab sums across slots");
+  assert.equal(b.melee_strength, 7);
+  assert.equal(b.defence_crush, 5);
+  assert.equal(b.prayer, 2);
+  assert.equal(b.ranged_strength, 0, "unworn bonus keys default to 0");
+  // swapping into an occupied slot returns the old piece to the inventory
+  p.addItem({ id: 3, name: "Mock dagger" });
+  assert.ok(p.equip({ id: 3, name: "Mock dagger", slot: "weapon" }));
+  assert.ok(p.hasItem(1), "old weapon back in inventory");
+  // unequip round-trip + persistence
+  assert.ok(p.unequip("head"));
+  assert.ok(p.hasItem(2));
+  const q = createPlayerState(JSON.parse(JSON.stringify(p.toJSON())));
+  assert.equal(q.raw.equipped.weapon.id, 3, "equipped survives serialization");
+});
+
+test("swing with gear bonuses hits harder than without", () => {
+  const seq = (vals) => { let i = 0; return () => vals[Math.min(i++, vals.length - 1)]; };
+  const foe = npcCombatants([3, 4, 1, 12, 1, 1]);
+  const me = { attack: 40, strength: 40, defence: 40 };
+  const bare = swing(me, foe, seq([0, 0.999]));
+  const geared = swing(me, foe, seq([0, 0.999]), { attBonus: 82, strBonus: 82 });
+  assert.ok(bare.hit && geared.hit);
+  assert.ok(geared.damage > bare.damage,
+    `geared ${geared.damage} > bare ${bare.damage}`);
+  assert.equal(geared.damage, maxHit(40, 82), "damage capped at gear max hit");
+  // no-opts call keeps the old behaviour (backward compat)
+  assert.deepEqual(swing(me, foe, seq([0, 0.999])), bare);
+});

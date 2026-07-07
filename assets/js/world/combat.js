@@ -45,12 +45,23 @@ export function hitChance(atk, def) {
   return atk > def ? 1 - (def + 2) / (2 * (atk + 1)) : atk / (2 * (def + 1));
 }
 
+// Equipment bonus fields, in equipment.pack order (source: osrsbox-db
+// items-complete.json equipment block · stamp 2026-07-07).
+export const SLOT_BONUS_KEYS = [
+  "attack_stab", "attack_slash", "attack_crush", "attack_magic", "attack_ranged",
+  "defence_stab", "defence_slash", "defence_crush", "defence_magic", "defence_ranged",
+  "melee_strength", "ranged_strength", "magic_damage", "prayer",
+];
+
 // One melee swing. attacker/defender: {attack, strength, defence} levels.
+// opts: {attBonus, strBonus} — summed gear bonuses (default 0 = unarmed,
+// keeping the pre-gear call sites working unchanged).
 // → { hit: bool, damage: int }
-export function swing(attacker, defender, rng = Math.random) {
-  const chance = hitChance(attackRoll(attacker.attack), defenceRoll(defender.defence));
+export function swing(attacker, defender, rng = Math.random, opts = {}) {
+  const { attBonus = 0, strBonus = 0 } = opts;
+  const chance = hitChance(attackRoll(attacker.attack, attBonus), defenceRoll(defender.defence));
   if (rng() >= chance) return { hit: false, damage: 0 };
-  return { hit: true, damage: 1 + Math.floor(rng() * maxHit(attacker.strength)) };
+  return { hit: true, damage: 1 + Math.floor(rng() * maxHit(attacker.strength, strBonus)) };
 }
 
 // npcs.pack stats order verified in GAME_KB: [att, def, str, hp, ranged, magic]

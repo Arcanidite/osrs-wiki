@@ -63,10 +63,11 @@ async function init() {
     root.innerHTML = "<p>This browser lacks DecompressionStream (needed for the map data).</p>";
     return;
   }
-  const [manifest, objectDefs, npcDefs] = await Promise.all([
+  const [manifest, objectDefs, npcDefs, equipMap] = await Promise.all([
     fetch(`${DATA}/map/manifest.json`).then((r) => r.json()),
     readPack(`${DATA}/objects.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
     readPack(`${DATA}/npcs.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
+    readPack(`${DATA}/equipment.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
   ]);
   const regionAt = (x, y) => ((x >> 6) << 8) | (y >> 6);
 
@@ -92,9 +93,11 @@ async function init() {
     <div class="wc-side">
       <div class="wc-side-tabs">
         <button class="wc-tab active" data-tab="inv">Inventory</button>
+        <button class="wc-tab" data-tab="equip">Equipment</button>
         <button class="wc-tab" data-tab="skills">Skills</button>
       </div>
       <div class="wc-side-body" data-panel="inv"></div>
+      <div class="wc-side-body" data-panel="equip" hidden></div>
       <div class="wc-side-body" data-panel="skills" hidden></div>
     </div>
     <div class="wc-bank" hidden></div>
@@ -321,23 +324,66 @@ async function init() {
 
   // ── side panel (inventory / skills) ──────────────────────────────────────
   const invPanel = root.querySelector('[data-panel="inv"]');
+  const equipPanel = root.querySelector('[data-panel="equip"]');
   const skillsPanel = root.querySelector('[data-panel="skills"]');
   root.querySelectorAll(".wc-tab").forEach((b) =>
     b.addEventListener("click", () => {
       root.querySelectorAll(".wc-tab").forEach((x) => x.classList.toggle("active", x === b));
-      invPanel.hidden = b.dataset.tab !== "inv";
-      skillsPanel.hidden = b.dataset.tab !== "skills";
+      root.querySelectorAll(".wc-side-body").forEach((p) => { p.hidden = p.dataset.panel !== b.dataset.tab; });
     }));
 
   function spriteSpan(id, name) {
     return `<span class="sri-sprite" data-item-id="${id}" title="${esc(name)}">${esc(name[0])}</span>`;
   }
+  const EQUIP_SLOTS = ["head", "cape", "neck", "ammo", "weapon", "2h", "body", "shield", "legs", "hands", "feet", "ring"];
   function renderPanels() {
     invPanel.innerHTML = `<div class="wc-inv-grid">` +
-      state.raw.inv.map((it) =>
-        `<span class="wc-inv-slot">${spriteSpan(it.id, it.name)}` +
+      state.raw.inv.map((it, i) =>
+        `<span class="wc-inv-slot${equipMap.has(it.id) ? " wc-equipable" : ""}" data-i="${i}">` +
+        `${spriteSpan(it.id, it.name)}` +
         (it.qty > 1 ? `<span class="wc-qty">${it.qty}</span>` : "") + `</span>`).join("") +
       `</div><div class="wc-inv-count">${state.invCount()} / 28</div>`;
+    // click an equippable inventory item → "Equip" option (real slot from equipment.pack)
+    invPanel.querySelectorAll(".wc-inv-slot.wc-equipable").forEach((el) =>
+      el.addEventListener("click", () => {
+        const it = state.raw.inv[+el.dataset.i];
+        const rec = it && equipMap.get(it.id);
+        if (!rec) return;
+        menuEl.innerHTML = `<div class="wc-menu-title">Choose Option</div>
+          <button type="button" class="wc-menu-row" data-eq>Equip <b>${esc(it.name)}</b></button>
+          <button type="button" class="wc-menu-row" data-no>Cancel</button>`;
+        const r = el.getBoundingClientRect(), rr = root.getBoundingClientRect();
+        menuEl.style.left = `${Math.max(0, r.left - rr.left - 60)}px`;
+        menuEl.style.top = `${r.bottom - rr.top + 2}px`;
+        menuEl.hidden = false;
+        menuEl.querySelector("[data-eq]").addEventListener("click", () => {
+          hideMenu();
+          if (state.equip({ id: it.id, name: it.name, slot: rec.slot })) {
+            say(`You equip the ${it.name.toLowerCase()}.`);
+            dirty = true;
+            renderPanels();
+          }
+        });
+        menuEl.querySelector("[data-no]").addEventListener("click", hideMenu);
+      }));
+    equipPanel.innerHTML = EQUIP_SLOTS.map((slot) => {
+      const worn = state.raw.equipped[slot];
+      return `<div class="wc-skill-row wc-equip-row"><span>${esc(slot)}</span>` +
+        (worn
+          ? `<b>${spriteSpan(worn.id, worn.name)} ${esc(worn.name)}</b>` +
+            `<i><button class="btn wc-unequip" data-slot="${esc(slot)}">Unequip</button></i>`
+          : `<b class="wc-equip-empty">empty</b><i></i>`) + `</div>`;
+    }).join("") + (() => {
+      const b = state.getBonuses(equipMap);
+      return `<div class="wc-equip-bonuses"><i>Att (stab) ${b.attack_stab} · Str ${b.melee_strength} · ` +
+        `Def (stab/slash/crush) ${b.defence_stab}/${b.defence_slash}/${b.defence_crush} · Prayer ${b.prayer}</i></div>`;
+    })();
+    equipPanel.querySelectorAll(".wc-unequip").forEach((btn) =>
+      btn.addEventListener("click", () => {
+        if (!state.unequip(btn.dataset.slot)) { say("Your inventory is too full."); return; }
+        dirty = true;
+        renderPanels();
+      }));
     const vitals = `<div class="wc-skill-row"><span>Hitpoints</span>` +
       `<b>${state.raw.hp} / ${state.level("hitpoints")}</b><i></i></div>` +
       `<div class="wc-skill-row"><span>Prayer pts</span>` +
@@ -526,8 +572,10 @@ async function init() {
     const me = { attack: state.level("attack"), strength: state.level("strength"), defence: state.level("defence") };
     const foe = npcCombatants(npc.def.stats);
     const st = npcHp(npc);
-    // player swing (sourced formulas; gear bonuses not yet extracted → 0)
-    const mine = swing(me, foe);
+    // player swing — sourced formulas over worn-gear bonuses (equipment.pack,
+    // stab attack + melee strength; NPC gear bonuses aren't extracted → 0)
+    const bon = state.getBonuses(equipMap);
+    const mine = swing(me, foe, Math.random, { attBonus: bon.attack_stab, strBonus: bon.melee_strength });
     st.hp -= mine.damage;
     say(mine.hit ? `You hit ${mine.damage}.` : "You miss.");
     if (mine.damage) {
