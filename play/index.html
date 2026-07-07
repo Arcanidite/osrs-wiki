@@ -51,11 +51,16 @@ tool_script: "/assets/js/tools/world-client.js"
   nearest walkable mapped tile (validated: the Lumbridge kitchen trapdoor lands in the real cellar
   beside its real exit ladder). Unmapped destinations refuse honestly instead of guessing.</p>
 
+  <p><strong>NPCs are in the world.</strong> 18,888 spawn points (validated against the real NPC
+  cache — Hans, the Cook and the tutors stand in Lumbridge where they should) render as markers
+  with game-style hover text ("Talk-to Man (level-2)") and right-click menus listing each NPC's
+  real cache actions. Spawn coordinates are server-side data, so they come from the community
+  dataset behind the OSRS Wiki world map (mejrs/data_osrs, stamped in
+  <code>tools/kb/GAME_KB.md</code>) — best-effort, may drift after game updates. Talking, combat
+  and pickpocketing are not yet simulated; selecting those walks you over and says so.</p>
+
   <h2>Still missing, and exactly why</h2>
   <ul>
-    <li><strong>NPCs in the world</strong> — NPC spawn points are not part of the cache (they are
-      server-side data); rendering NPCs needs a separately sourced spawn dataset.
-      (<code>BACKLOG [client:locations-spawns]</code>)</li>
     <li><strong>The simulation</strong> — combat, quests, drops and AI run on Jagex servers and are
       not present in any client data; they can only be re-implemented from sourced formulas under
       the KB no-fabrication protocol. (<code>BACKLOG [client:simulation]</code>)</li>

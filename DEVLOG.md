@@ -263,4 +263,24 @@ hit-testing scales CSS→canvas px so hover/click tiles are exact; main.css link
 
 ---
 
+### 2026-07-07 — NPCs in the world; climb variants + passage transports resolved
+
+- **NPC spawns** (agent-datamined under the KB protocol, fetchstrip noise discipline):
+  `tools/build_npc_spawns.py` ingests the community dataset behind the OSRS Wiki world map
+  (`mejrs/data_osrs` `NPCList_OSRS.json` — spawn coords are server-side, not cache data),
+  validates every id against `npcs.pack` (18,888 kept / 5,222 dropped as absent from this cache
+  snapshot), and emits per-region/plane `assets/data/cache/npc-spawns/*.json.gz` (1,075 buckets,
+  4.3 MB). Lumbridge validation: Hans, Cook, the tutors, Father Aereck et al. resolve at the
+  right tiles. Sourced + caveated in GAME_KB ("NPC spawn points").
+- **Client NPC layer:** yellow spawn markers (minimap colour convention), hover
+  "<action> Name (level-X)", right-click menus with each NPC's real cache actions, click walks
+  adjacent; interactions themselves (dialogue/combat/thieving) honestly report unsimulated.
+- **Climb variants resolved:** generic "Climb" opens the game's up/down choice when both exist;
+  "Top-floor"/"Bottom-floor" jump to the highest mapped floor / ground; cave/tunnel/passage
+  transports (Enter/Exit/Go-through/Crawl-through/…) reuse the documented dungeon-band convention.
+- Verified headless: hover "Talk-to Man (level-2)" beside Lumbridge spawn; menu rows
+  [Talk-to, Attack, Pickpocket, Walk here, Cancel]. 56/56 tests.
+
+---
+
 <!-- Add entries below as features are built out -->

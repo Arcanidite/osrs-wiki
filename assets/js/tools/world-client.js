@@ -60,9 +60,10 @@ async function init() {
     root.innerHTML = "<p>This browser lacks DecompressionStream (needed for the map data).</p>";
     return;
   }
-  const [manifest, objectDefs] = await Promise.all([
+  const [manifest, objectDefs, npcDefs] = await Promise.all([
     fetch(`${DATA}/map/manifest.json`).then((r) => r.json()),
     readPack(`${DATA}/objects.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
+    readPack(`${DATA}/npcs.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
   ]);
   const regionAt = (x, y) => ((x >> 6) << 8) | (y >> 6);
 
@@ -122,8 +123,10 @@ async function init() {
   // ── region data (bitmaps + collision + locs), LRU-capped ────────────────
   const bitmaps = new Map();
   const grids = new Map();
-  const regionLocs = new Map();  // rid -> loc[] ; loc = {id,type,rot,x,y,def,key}
-  const locByTile = new Map();   // "x,y" -> loc (footprint-expanded)
+  const regionLocs = new Map();  // "rid:plane" -> loc[]
+  const locByTile = new Map();   // "plane:x,y" -> loc (footprint-expanded)
+  const regionNpcs = new Map();  // "rid:plane" -> npc[] (static spawn points)
+  const npcByTile = new Map();   // "plane:x,y" -> npc
   const lru = [];
 
   function indexLoc(loc) {
@@ -139,6 +142,12 @@ async function init() {
         locByTile.set(`${loc.plane}:${loc.x + ox},${loc.y + oy}`, loc);
   }
   const locAt = (x, y) => locByTile.get(`${player.plane}:${x},${y}`);
+  const npcAt = (x, y) => npcByTile.get(`${player.plane}:${x},${y}`);
+  // NPC as a pseudo-loc so the walk/arrive machinery applies unchanged
+  const npcTarget = (n) => ({
+    x: n.x, y: n.y, w: 1, h: 1, type: 10, def: n.def, _npc: true,
+    key: `npc:${n.id}:${n.x}:${n.y}:${n.plane}`,
+  });
 
   async function loadRegion(rid, plane) {
     const rk = `${rid}:${plane}`;
@@ -153,16 +162,18 @@ async function init() {
     grids.set(rk, "loading");
     const sfx = plane === 0 ? "" : `.${plane}`;
     try {
-      const [imgRes, colRes, locRes] = await Promise.all([
+      const [imgRes, colRes, locRes, npcRes] = await Promise.all([
         fetch(`${DATA}/map/${rid}${sfx}.png.gz`),
         fetch(`${DATA}/collision/${rid}${sfx}.bin.gz`),
         fetch(`${DATA}/locs/${rid}${sfx}.json.gz`),
+        fetch(`${DATA}/npc-spawns/${rid}${sfx}.json.gz`),
       ]);
       if (!imgRes.ok || !colRes.ok) throw new Error("missing");
-      const [blob, buf, locsRaw] = await Promise.all([
+      const [blob, buf, locsRaw, npcsRaw] = await Promise.all([
         gunzip(imgRes).then((r) => r.blob()),
         gunzip(colRes).then((r) => r.arrayBuffer()),
         locRes.ok ? gunzip(locRes).then((r) => r.json()) : [],
+        npcRes.ok ? gunzip(npcRes).then((r) => r.json()).catch(() => []) : [],
       ]);
       bitmaps.set(rk, await createImageBitmap(blob));
       grids.set(rk, new Uint16Array(buf));
@@ -175,6 +186,11 @@ async function init() {
         }));
       locs.forEach(indexLoc);
       regionLocs.set(rk, locs);
+      const npcs = npcsRaw
+        .filter(([id]) => npcDefs.has(id))
+        .map(([id, lx, ly]) => ({ id, x: bx + lx, y: by + ly, plane, def: npcDefs.get(id) }));
+      for (const n of npcs) npcByTile.set(`${plane}:${n.x},${n.y}`, n);
+      regionNpcs.set(rk, npcs);
       lru.push(rk);
       while (lru.length > 100) {
         const old = lru.shift();
@@ -187,6 +203,9 @@ async function init() {
             for (let oy = 0; oy < l.h; oy++)
               locByTile.delete(`${l.plane}:${l.x + ox},${l.y + oy}`);
         regionLocs.delete(old);
+        for (const n of regionNpcs.get(old) ?? [])
+          npcByTile.delete(`${n.plane}:${n.x},${n.y}`);
+        regionNpcs.delete(old);
       }
     } catch {
       bitmaps.set(rk, "missing");
@@ -367,6 +386,31 @@ async function init() {
     toastEl._t = setTimeout(() => { toastEl.hidden = true; }, 2600);
   }
 
+  const TRANSPORT_ACTIONS = new Set(
+    ["Enter", "Exit", "Go-through", "Crawl-through", "Climb-through", "Climb-into", "Climb-out"]);
+  const caveLike = (loc) =>
+    /cave|tunnel|hole|entrance|crevice|crack|passage|trapdoor|stairs/i.test(loc.def.name);
+
+  function startClimb(dest, msg) {
+    if (!dest) { say("It doesn't lead anywhere from here."); return; }
+    climbing = { ...dest, tries: 0 };
+    say(msg);
+  }
+
+  function chooseClimb(up, down) {
+    menuEl.innerHTML = `<div class="wc-menu-title">Climb up or down?</div>
+      <button type="button" class="wc-menu-row" data-c="up">Climb up</button>
+      <button type="button" class="wc-menu-row" data-c="down">Climb down</button>`;
+    menuEl.style.left = "40%";
+    menuEl.style.top = "35%";
+    menuEl.hidden = false;
+    menuEl.querySelectorAll(".wc-menu-row").forEach((b) =>
+      b.addEventListener("click", () => {
+        hideMenu();
+        startClimb(b.dataset.c === "up" ? up : down, "You climb...");
+      }));
+  }
+
   const isBank = (loc) =>
     /^Bank (booth|chest)/.test(loc.def.name) &&
     (loc.def.actions ?? []).some((a) => a === "Bank" || a === "Use");
@@ -374,6 +418,10 @@ async function init() {
   const isDepleted = (loc) => (depleted.get(loc.key) ?? 0) > tick;
 
   function performAction(loc, action) {
+    if (loc._npc) {
+      toast(`${action} ${loc.def.name} — NPC interactions not simulated yet (see BACKLOG [client:simulation])`);
+      return;
+    }
     if (isDoor(loc) && (action === "Open" || action === "Close")) {
       toggleDoor(loc);
       return;
@@ -394,10 +442,30 @@ async function init() {
       return;
     }
     if (isClimbAction(action)) {
-      const dest = climbDestination({ x: player.x, y: player.y, plane: player.plane }, action);
-      if (!dest) { say("It doesn't lead anywhere from here."); return; }
-      climbing = { ...dest, tries: 0 };
-      say(action === "Climb-up" ? "You climb up..." : "You climb down...");
+      startClimb(climbDestination(player, action), action === "Climb-up" ? "You climb up..." : "You climb down...");
+      return;
+    }
+    if (action === "Climb") {
+      // generic Climb: the game asks which way — offer both when both exist
+      const up = climbDestination(player, "Climb-up");
+      const down = climbDestination(player, "Climb-down");
+      if (up && down) { chooseClimb(up, down); return; }
+      startClimb(up ?? down, "You climb...");
+      return;
+    }
+    if (action === "Top-floor" || action === "Bottom-floor") {
+      const planes = manifest[regionAt(player.x, player.y)]?.planes ?? [0];
+      const target = action === "Top-floor" ? Math.max(...planes) : 0;
+      if (target === player.plane) { say("You are already there."); return; }
+      startClimb({ x: player.x, y: player.y, plane: target }, "You take the staircase...");
+      return;
+    }
+    if (TRANSPORT_ACTIONS.has(action) && caveLike(loc)) {
+      // passage transports use the same documented dungeon-band convention
+      const dest = player.y >= 6400
+        ? { x: player.x, y: player.y - 6400, plane: 0 }
+        : { x: player.x, y: player.y + 6400, plane: 0 };
+      startClimb(dest, "You go through...");
       return;
     }
     if (ROCKS[loc.id] && action === "Mine") {
@@ -559,8 +627,13 @@ async function init() {
   let hoverTile = null;
   canvas.addEventListener("mousemove", (e) => {
     hoverTile = tileFromEvent(e);
+    const npc = npcAt(hoverTile.x, hoverTile.y);
     const loc = locAt(hoverTile.x, hoverTile.y);
-    if (loc) {
+    if (npc) {
+      const acts = (npc.def.actions ?? []).filter(Boolean);
+      const lvl = npc.def.combat_level > 0 ? ` (level-${npc.def.combat_level})` : "";
+      hoverEl.textContent = `${acts[0] ?? ""} ${npc.def.name}${lvl}`;
+    } else if (loc) {
       const acts = menuActions(loc);
       hoverEl.textContent = `${acts[0] ?? ""} ${loc.def.name}` +
         (acts.length > 1 ? ` / ${acts.length - 1} more` : "");
@@ -572,6 +645,11 @@ async function init() {
   canvas.addEventListener("click", (e) => {
     hideMenu();
     const t = tileFromEvent(e);
+    const npc = npcAt(t.x, t.y);
+    if (npc && objEl.checked) {
+      const acts = (npc.def.actions ?? []).filter(Boolean);
+      if (acts.length) { walkToLoc(npcTarget(npc), acts[0]); canvas.focus(); return; }
+    }
     const loc = locAt(t.x, t.y);
     if (loc && objEl.checked) {
       const acts = menuActions(loc);
@@ -589,6 +667,12 @@ async function init() {
     const t = tileFromEvent(e);
     const loc = locAt(t.x, t.y);
     const rows = [];
+    const npc = npcAt(t.x, t.y);
+    if (npc && objEl.checked) {
+      const lvl = npc.def.combat_level > 0 ? ` (level-${npc.def.combat_level})` : "";
+      for (const a of (npc.def.actions ?? []).filter(Boolean))
+        rows.push({ label: `${esc(a)} <b>${esc(npc.def.name)}${lvl}</b>`, run: () => walkToLoc(npcTarget(npc), a) });
+    }
     if (loc && objEl.checked) {
       for (const a of menuActions(loc))
         rows.push({ label: `${esc(a)} <b>${esc(loc.def.name)}</b>`, run: () => walkToLoc(loc, a) });
@@ -723,7 +807,18 @@ async function init() {
     }
 
     if (objEl.checked) drawLocs(c);
-    if (colEl.checked) drawCollision(c);
+    if (objEl.checked) {
+      ctx.fillStyle = "#f5e642";
+      for (const [, npcs] of regionNpcs) {
+        if (!Array.isArray(npcs)) continue;
+        for (const n of npcs) {
+          if (n.plane !== player.plane) continue;
+          const [sx, sy] = toScreen(c, n.x, n.y);
+          if (sx < -tilePx || sy < -tilePx || sx > canvas.width || sy > canvas.height) continue;
+          ctx.fillRect(sx + tilePx / 2 - tilePx / 6, sy + tilePx / 2 - tilePx / 6, tilePx / 3, tilePx / 3);
+        }
+      }
+    }
 
     const dest = path[path.length - 1];
     if (dest) {

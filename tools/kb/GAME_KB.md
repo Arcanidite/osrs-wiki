@@ -64,6 +64,28 @@
   Ore/pickaxe item ids test-guarded against `items.pack`.
 - **Placeholder:** per-roll success chance (same labelled `GATHER_CONFIG` model as woodcutting).
 
+### NPC spawn points (npc-spawns/)
+- **Fact:** NPC spawn coordinates are server-side data (not in the game client cache); the authoritative
+  community dataset is `NPCList_OSRS.json` from `github.com/mejrs/data_osrs`. Each record carries
+  `id` (NPC id), `x`/`y` (world coordinates), and `p` (plane 0-3). The dataset is bucketed into
+  per-region gzip files under `assets/data/cache/npc-spawns/` using
+  `rid = ((x>>6)<<8)|(y>>6)`, `localX = x&63`, `localY = y&63`, matching the world client region
+  formula. Each file holds `[[npcId, localX, localY], ...]`; plane 0 is `<rid>.json.gz`, planes 1-3
+  are `<rid>.<plane>.json.gz`.
+- **Counts (build 2026-07-07):** source records 24,110 → kept 18,888 / dropped 5,222
+  (1,346 distinct NPC ids absent from npcs.pack, i.e. server-only or removed ids);
+  1,075 region-plane files across 1,076 total files (including manifest.json); total 4.3 MB on disk.
+- **Validation — Lumbridge (region 12850, rx=50 ry=50):** 129 plane-0 spawns confirmed; names
+  include Hans, Cook, Woodsman tutor, Ironman tutor, Melee/Ranged/Magic/Prayer combat tutors,
+  Father Aereck, Lumbridge Guide, Man, Woman, Goblin, Rat, Cow, Sheep — all resolving correctly
+  against npcs.pack. World coordinates land in the valid OSRS range (x 1024–4200, y 2400–12800).
+- **source:** `https://raw.githubusercontent.com/mejrs/data_osrs/master/NPCList_OSRS.json` ·
+  **stamp:** 2026-07-07 · **tool:** `tools/build_npc_spawns.py`
+- **caveat:** spawn data is community-maintained (reverse-engineered / crowdsourced), not
+  cache-extracted. It may drift from the live game after updates that add, relocate, or remove
+  NPC spawns. Treat as a best-effort approximation; re-run `build_npc_spawns.py` against a
+  refreshed source after major game updates.
+
 ## Facts by option `id`
 
 <!-- One entry per catalogued option. Template:
