@@ -1175,20 +1175,6 @@
         "skills"
       ],
       "preview": null
-    },
-    {
-      "id": "world-client",
-      "name": "World Client",
-      "url": "/play",
-      "category": "page",
-      "summary": "Walk the real extracted game world — top-down 2D, tick-accurate.",
-      "icon": {
-        "name": "tool"
-      },
-      "tags": [
-        "tools"
-      ],
-      "preview": null
     }
   ]
 }

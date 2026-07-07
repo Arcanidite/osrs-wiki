@@ -543,3 +543,13 @@ to the bestiary/db entries.
 definitions and assets, not game logic; the simulation is server-side at Jagex. Any gameplay
 must be rebuilt from *sourced* formulas (OSRS Wiki documents combat math, xp tables, etc.) under
 the KB protocol — no guessed mechanics. Sequence after collision + spawns exist.
+
+## [client:fidelity-gate] World client ships only at gameplay fidelity
+
+**Status:** STANDING GATE (requester directive, 2026-07-07). `/play` (or any playable client
+surface) must not be deployed unless it is true to actual gameplay — no watered-down
+approximations on the live site. The 2026-07-06 terrain-walking client was reverted under this
+gate (code in git history, `620cce5`). Prerequisite chain before re-deploying:
+`[client:collision-flags]` → `[client:locations-spawns]` → `[client:simulation]` (re-implemented
+from sourced mechanics under the KB no-fabrication protocol), each verified against real game
+behavior before the surface goes live.

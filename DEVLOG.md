@@ -119,6 +119,11 @@ RuneLite cache extraction — nothing hand-invented, every page carries a source
 
 ### 2026-07-06 — Standalone top-down 2D world client (`/play`)
 
+> **[REVERTED 2026-07-07]** — undeployed per the fidelity gate (BACKLOG `[client:fidelity-gate]`):
+> the game client only ships when gameplay-true to the real game. Terrain-walking without
+> collision/spawns/simulation doesn't meet that bar. Code preserved in git history (`620cce5`);
+> the G-4 map findings and `[client:*]` backlog items remain valid.
+
 Walk the real extracted map in the browser — no server, tick-accurate movement.
 
 - `assets/js/tools/world-client.js` + `play/index.html`: canvas client streaming the map dump
