@@ -279,6 +279,44 @@ test("getBonuses sums across slots; equip/unequip round-trip", () => {
   assert.equal(q.raw.equipped.weapon.id, 3, "equipped survives serialization");
 });
 
+// ── npc wander AI ───────────────────────────────────────────────────────────
+import { npcWanderStep, WANDER_RADIUS } from "../assets/js/world/npc-ai.js";
+
+// rng that yields a fixed (dx, dy): floor(r*3)-1 maps 0→-1, 0.34→0, 0.67→+1
+const dirRng = (dx, dy) => {
+  const v = { "-1": 0, 0: 0.34, 1: 0.67 };
+  const seq = [v[dx], v[dy]];
+  let i = 0;
+  return () => seq[i++ % 2];
+};
+const OPEN = () => 0;          // no collision anywhere
+const WALLED = () => 256;      // FULL everywhere → every step blocked
+
+test("npcWanderStep: blocked in all directions yields null", () => {
+  const npc = { x: 10, y: 10, spawnX: 10, spawnY: 10 };
+  for (const dx of [-1, 0, 1])
+    for (const dy of [-1, 0, 1])
+      assert.equal(npcWanderStep(npc, WALLED, dirRng(dx, dy)), null, `dir ${dx},${dy}`);
+  // (0,0) is refused even on open ground — not a step
+  assert.equal(npcWanderStep(npc, OPEN, dirRng(0, 0)), null);
+});
+
+test("npcWanderStep: open ground step succeeds and moves one tile", () => {
+  const npc = { x: 10, y: 10, spawnX: 10, spawnY: 10 };
+  assert.deepEqual(npcWanderStep(npc, OPEN, dirRng(1, 0)), { x: 11, y: 10 });
+  assert.deepEqual(npcWanderStep(npc, OPEN, dirRng(-1, 1)), { x: 9, y: 11 });
+});
+
+test("npcWanderStep: refuses to leave the spawn radius (Chebyshev ≤ 5)", () => {
+  const edge = { x: 10 + WANDER_RADIUS, y: 10, spawnX: 10, spawnY: 10 };
+  assert.equal(npcWanderStep(edge, OPEN, dirRng(1, 0)), null, "beyond east edge");
+  assert.equal(npcWanderStep(edge, OPEN, dirRng(1, 1)), null, "beyond diagonal");
+  assert.deepEqual(npcWanderStep(edge, OPEN, dirRng(-1, 0)), { x: 14, y: 10 },
+    "stepping back inside is allowed");
+  assert.deepEqual(npcWanderStep(edge, OPEN, dirRng(0, 1)), { x: 15, y: 11 },
+    "sliding along the edge stays at radius 5");
+});
+
 // ── drop tables ─────────────────────────────────────────────────────────────
 test("drops.pack npc ids match npcs.pack (honesty guard)", () => {
   const npcIds = new Set(readPackRecords("npcs.pack").map((r) => r.id));

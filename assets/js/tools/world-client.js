@@ -27,6 +27,9 @@ import { climbDestination, isClimbAction, settleTile } from "../world/climb.js";
 import {
   SIM_CONFIG, swing, npcCombatants, PICKPOCKET, FISHING, COINS_ID,
 } from "../world/combat.js";
+import {
+  npcWanderStep, WANDER_STEP_TICKS, WANDER_RETRY_TICKS,
+} from "../world/npc-ai.js";
 
 const SAVE_KEY = "osrs-world:v1";
 
@@ -195,7 +198,10 @@ async function init() {
       regionLocs.set(rk, locs);
       const npcs = npcsRaw
         .filter(([id]) => npcDefs.has(id))
-        .map(([id, lx, ly]) => ({ id, x: bx + lx, y: by + ly, plane, def: npcDefs.get(id) }));
+        .map(([id, lx, ly]) => ({
+          id, x: bx + lx, y: by + ly, spawnX: bx + lx, spawnY: by + ly,
+          plane, def: npcDefs.get(id), nextMoveTick: 0,
+        }));
       for (const n of npcs) npcByTile.set(`${plane}:${n.x},${n.y}`, n);
       regionNpcs.set(rk, npcs);
       lru.push(rk);
@@ -306,7 +312,8 @@ async function init() {
   const npcState = new Map(); // npc key -> {hp, deadUntil} (session-local)
   let combat = null;          // {npc, key, nextSwing}
   let stunnedUntil = 0;
-  const npcKey = (n) => `${n.id}:${n.x}:${n.y}:${n.plane}`;
+  // keyed by SPAWN coordinates — stable while the npc wanders
+  const npcKey = (n) => `${n.id}:${n.spawnX ?? n.x}:${n.spawnY ?? n.y}:${n.plane}`;
   const npcHp = (n) => {
     const k = npcKey(n);
     if (!npcState.has(k)) npcState.set(k, { hp: npcCombatants(n.def.stats).hitpoints, deadUntil: 0 });
@@ -629,6 +636,12 @@ async function init() {
       st.deadUntil = tick + SIM_CONFIG.npcRespawnTicks;
       say(`The ${npc.def.name.toLowerCase()} dies.`);
       rollDrops(npc);
+      // the respawn happens at the spawn point (grey marker until then)
+      const deathTile = `${npc.plane}:${npc.x},${npc.y}`;
+      if (npcByTile.get(deathTile) === npc) npcByTile.delete(deathTile);
+      npc.x = npc.spawnX ?? npc.x;
+      npc.y = npc.spawnY ?? npc.y;
+      npcByTile.set(`${npc.plane}:${npc.x},${npc.y}`, npc);
       combat = null;
       dirty = true;
       renderPanels();
@@ -793,6 +806,32 @@ async function init() {
     }
   }
 
+  // ── NPC wander (bounded random walk around the spawn point) ──────────────
+  function wanderTick() {
+    for (const [, npcs] of regionNpcs) {
+      if (!Array.isArray(npcs)) continue;
+      for (const n of npcs) {
+        if (n.plane !== player.plane) continue;
+        // viewport-only: skip NPCs far from the camera (cheap)
+        if (Math.max(Math.abs(n.x - player.x), Math.abs(n.y - player.y)) > 15) continue;
+        if (tick < (n.nextMoveTick ?? 0)) continue;
+        if (npcDead(n) || combat?.npc === n) { n.nextMoveTick = tick + WANDER_RETRY_TICKS; continue; }
+        const step = npcWanderStep(n, flagsAt, Math.random);
+        const stepKey = step && `${n.plane}:${step.x},${step.y}`;
+        if (step && !npcByTile.has(stepKey) && !(step.x === player.x && step.y === player.y)) {
+          const oldKey = `${n.plane}:${n.x},${n.y}`;
+          if (npcByTile.get(oldKey) === n) npcByTile.delete(oldKey);
+          n.x = step.x;
+          n.y = step.y;
+          npcByTile.set(stepKey, n);
+          n.nextMoveTick = tick + WANDER_STEP_TICKS;
+        } else {
+          n.nextMoveTick = tick + WANDER_RETRY_TICKS; // blocked/refused: retry shortly
+        }
+      }
+    }
+  }
+
   function walkToLoc(loc, action) {
     // Goal set = every tile you could interact from: the footprint's adjacent
     // ring (walls/doors additionally: the tile itself + across the edge).
@@ -860,6 +899,7 @@ async function init() {
     combatTick();
     climbTick();
     pickupTick();
+    wanderTick();
     if (groundItems.length) groundItems = groundItems.filter((g) => g.despawnTick > tick);
     if (tick % SIM_CONFIG.hpRegenTicks === 0 && state.raw.hp < state.level("hitpoints")) {
       state.raw.hp++;
