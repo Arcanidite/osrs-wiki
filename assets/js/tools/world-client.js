@@ -63,11 +63,12 @@ async function init() {
     root.innerHTML = "<p>This browser lacks DecompressionStream (needed for the map data).</p>";
     return;
   }
-  const [manifest, objectDefs, npcDefs, equipMap] = await Promise.all([
+  const [manifest, objectDefs, npcDefs, equipMap, dropsMap] = await Promise.all([
     fetch(`${DATA}/map/manifest.json`).then((r) => r.json()),
     readPack(`${DATA}/objects.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
     readPack(`${DATA}/npcs.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
     readPack(`${DATA}/equipment.pack`).then((recs) => new Map(recs.map((r) => [r.id, r]))),
+    readPack(`${DATA}/drops.pack`).then((recs) => new Map(recs.map((r) => [r.id, r.drops]))),
   ]);
   const regionAt = (x, y) => ((x >> 6) << 8) | (y >> 6);
 
@@ -312,6 +313,47 @@ async function init() {
     return npcState.get(k);
   };
   const npcDead = (n) => npcHp(n).deadUntil > tick;
+
+  // ── ground items (sourced drop tables, drops.pack) ───────────────────────
+  const GROUND_DESPAWN_TICKS = 200; // ≈2 min at 600 ms/tick (game convention)
+  let groundItems = [];  // [{x, y, plane, id, name, qty, stackable, despawnTick}]
+  let pickup = null;     // ground item we're walking to take
+  const groundAt = (x, y) =>
+    groundItems.find((g) => g.plane === player.plane && g.x === x && g.y === y);
+
+  function rollDrops(npc) {
+    const table = dropsMap.get(npc.id);
+    if (!table) {
+      say(`No sourced drop table for ${npc.def.name} (${npc.id}) — nothing is invented.`);
+      return;
+    }
+    for (const d of table) {
+      if (Math.random() >= d.rarity) continue;
+      const qty = d.qtyMin + Math.floor(Math.random() * (d.qtyMax - d.qtyMin + 1));
+      groundItems.push({
+        x: npc.x, y: npc.y, plane: npc.plane, id: d.itemId, name: d.itemName,
+        qty, stackable: d.stackable || d.noted, despawnTick: tick + GROUND_DESPAWN_TICKS,
+      });
+    }
+  }
+
+  function pickupTick() {
+    if (!pickup) return;
+    if (!groundItems.includes(pickup)) { pickup = null; return; } // despawned
+    if (player.x !== pickup.x || player.y !== pickup.y || player.plane !== pickup.plane) {
+      if (!path.length) pickup = null; // couldn't reach it
+      return;
+    }
+    if (!state.addItem({ id: pickup.id, name: pickup.name, stackable: pickup.stackable }, pickup.qty)) {
+      say("Your inventory is too full.");
+    } else {
+      say(`You take the ${pickup.name.toLowerCase()}${pickup.qty > 1 ? ` × ${pickup.qty}` : ""}.`);
+      groundItems = groundItems.filter((g) => g !== pickup);
+      dirty = true;
+      renderPanels();
+    }
+    pickup = null;
+  }
 
   const logEl = root.querySelector(".wc-log");
   function say(msg) {
@@ -585,7 +627,8 @@ async function init() {
     }
     if (st.hp <= 0) {
       st.deadUntil = tick + SIM_CONFIG.npcRespawnTicks;
-      say(`The ${npc.def.name.toLowerCase()} dies. (Drop tables are server data — nothing is invented.)`);
+      say(`The ${npc.def.name.toLowerCase()} dies.`);
+      rollDrops(npc);
       combat = null;
       dirty = true;
       renderPanels();
@@ -756,6 +799,7 @@ async function init() {
     // BFS picks the minimum-cost goal, so we stop at the NEAR side instead of
     // circling to whatever tile is closest to the object's centre.
     pending = { loc, action };
+    pickup = null;
     const goals = [];
     if (loc.type <= 3) {
       goals.push({ x: loc.x, y: loc.y });
@@ -782,7 +826,7 @@ async function init() {
     kdx = Math.sign(kdx); kdy = Math.sign(kdy);
     if (tick < stunnedUntil) { kdx = 0; kdy = 0; path = []; }
     if (kdx || kdy) {
-      path = []; pending = null; gathering = null; combat = null;
+      path = []; pending = null; gathering = null; combat = null; pickup = null;
       for (let i = 0; i < speed; i++) {
         if (canStep(flagsAt, player.x, player.y, kdx, kdy)) {
           player.x += kdx; player.y += kdy;
@@ -815,6 +859,8 @@ async function init() {
     gatherTick();
     combatTick();
     climbTick();
+    pickupTick();
+    if (groundItems.length) groundItems = groundItems.filter((g) => g.despawnTick > tick);
     if (tick % SIM_CONFIG.hpRegenTicks === 0 && state.raw.hp < state.level("hitpoints")) {
       state.raw.hp++;
       dirty = true;
@@ -870,10 +916,13 @@ async function init() {
     hoverTile = tileFromEvent(e);
     const npc = npcAt(hoverTile.x, hoverTile.y);
     const loc = locAt(hoverTile.x, hoverTile.y);
-    if (npc) {
+    const gi = groundAt(hoverTile.x, hoverTile.y);
+    if (npc && !npcDead(npc)) {
       const acts = (npc.def.actions ?? []).filter(Boolean);
       const lvl = npc.def.combat_level > 0 ? ` (level-${npc.def.combat_level})` : "";
       hoverEl.textContent = `${acts[0] ?? ""} ${npc.def.name}${lvl}`;
+    } else if (gi) {
+      hoverEl.textContent = `Take ${gi.name}`;
     } else if (loc) {
       const acts = menuActions(loc);
       hoverEl.textContent = `${acts[0] ?? ""} ${loc.def.name}` +
@@ -887,9 +936,16 @@ async function init() {
     hideMenu();
     const t = tileFromEvent(e);
     const npc = npcAt(t.x, t.y);
-    if (npc && objEl.checked) {
+    if (npc && !npcDead(npc) && objEl.checked) {
       const acts = (npc.def.actions ?? []).filter(Boolean);
       if (acts.length) { walkToLoc(npcTarget(npc), acts[0]); canvas.focus(); return; }
+    }
+    const gi = groundAt(t.x, t.y);
+    if (gi) {
+      pickup = gi; pending = null; gathering = null;
+      path = findPath(flagsAt, player.x, player.y, gi.x, gi.y);
+      canvas.focus();
+      return;
     }
     const loc = locAt(t.x, t.y);
     if (loc && objEl.checked) {
@@ -897,6 +953,7 @@ async function init() {
       if (acts.length) { walkToLoc(loc, acts[0]); canvas.focus(); return; }
     }
     pending = null;
+    pickup = null;
     path = findPath(flagsAt, player.x, player.y, t.x, t.y);
     canvas.focus();
   });
@@ -914,11 +971,18 @@ async function init() {
       for (const a of (npc.def.actions ?? []).filter(Boolean))
         rows.push({ label: `${esc(a)} <b>${esc(npc.def.name)}${lvl}</b>`, run: () => walkToLoc(npcTarget(npc), a) });
     }
+    const gi = groundAt(t.x, t.y);
+    if (gi) {
+      rows.push({ label: `Take <b>${esc(gi.name)}</b>`, run: () => {
+        pickup = gi; pending = null; gathering = null;
+        path = findPath(flagsAt, player.x, player.y, gi.x, gi.y);
+      } });
+    }
     if (loc && objEl.checked) {
       for (const a of menuActions(loc))
         rows.push({ label: `${esc(a)} <b>${esc(loc.def.name)}</b>`, run: () => walkToLoc(loc, a) });
     }
-    rows.push({ label: "Walk here", run: () => { pending = null; path = findPath(flagsAt, player.x, player.y, t.x, t.y); } });
+    rows.push({ label: "Walk here", run: () => { pending = null; pickup = null; path = findPath(flagsAt, player.x, player.y, t.x, t.y); } });
     rows.push({ label: "Cancel", run: () => {} });
     menuEl.innerHTML = `<div class="wc-menu-title">Choose Option</div>` +
       rows.map((r, i) =>
@@ -1060,6 +1124,16 @@ async function init() {
           ctx.fillRect(sx + tilePx / 2 - tilePx / 6, sy + tilePx / 2 - tilePx / 6, tilePx / 3, tilePx / 3);
         }
       }
+    }
+
+    // ground items: small red dot at tile centre (minimap item convention)
+    for (const g of groundItems) {
+      if (g.plane !== player.plane) continue;
+      const [sx, sy] = toScreen(c, g.x, g.y);
+      if (sx < -tilePx || sy < -tilePx || sx > canvas.width || sy > canvas.height) continue;
+      const d = Math.max(2, tilePx / 8);
+      ctx.fillStyle = "#e33232";
+      ctx.fillRect(sx + tilePx / 2 - d / 2, sy + tilePx / 2 - d / 2, d, d);
     }
 
     const dest = path[path.length - 1];

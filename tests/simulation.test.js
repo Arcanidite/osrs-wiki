@@ -279,6 +279,38 @@ test("getBonuses sums across slots; equip/unequip round-trip", () => {
   assert.equal(q.raw.equipped.weapon.id, 3, "equipped survives serialization");
 });
 
+// ── drop tables ─────────────────────────────────────────────────────────────
+test("drops.pack npc ids match npcs.pack (honesty guard)", () => {
+  const npcIds = new Set(readPackRecords("npcs.pack").map((r) => r.id));
+  const drops = readPackRecords("drops.pack");
+  assert.ok(drops.length > 1000, `pack has real coverage (got ${drops.length})`);
+  for (let i = 0; i < 10; i++) {
+    const rec = drops[Math.floor(Math.random() * drops.length)];
+    assert.ok(npcIds.has(rec.id), `npc ${rec.id} exists in npcs.pack`);
+    assert.ok(Array.isArray(rec.drops) && rec.drops.length > 0, `npc ${rec.id} has drops`);
+  }
+});
+
+test("drops.pack item ids match items.pack (honesty guard)", () => {
+  const itemNames = new Map(readPackRecords("items.pack").map((r) => [r.id, r.name]));
+  const drops = readPackRecords("drops.pack");
+  for (let i = 0; i < 25; i++) {
+    const rec = drops[Math.floor(Math.random() * drops.length)];
+    for (const d of rec.drops)
+      assert.equal(itemNames.get(d.itemId), d.itemName, `npc ${rec.id} drop ${d.itemId}`);
+  }
+});
+
+test("drop rarity is a valid probability, quantities are sane", () => {
+  for (const rec of readPackRecords("drops.pack")) {
+    for (const d of rec.drops) {
+      assert.ok(d.rarity > 0 && d.rarity <= 1, `npc ${rec.id} drop ${d.itemId} rarity ${d.rarity}`);
+      assert.ok(Number.isInteger(d.qtyMin) && Number.isInteger(d.qtyMax) &&
+        d.qtyMin >= 0 && d.qtyMin <= d.qtyMax, `npc ${rec.id} drop ${d.itemId} qty`);
+    }
+  }
+});
+
 test("swing with gear bonuses hits harder than without", () => {
   const seq = (vals) => { let i = 0; return () => vals[Math.min(i++, vals.length - 1)]; };
   const foe = npcCombatants([3, 4, 1, 12, 1, 1]);
