@@ -540,8 +540,10 @@ right-click option menus with the real cache actions, walk-to-object, and doors/
 genuinely toggle passage (clearing exactly the wall edges their closed state clips —
 Python↔JS mapping consistency is test-pinned). NPCS DONE ✓ 2026-07-07 — spawn points from the sourced community dataset
 (mejrs/data_osrs, validated against npcs.pack; 18,888 kept / 5,222 dropped; see GAME_KB) render
-with real action menus. Upper floors shipped same day. Remaining: NPC behaviour (wander/respawn)
-and interaction systems (dialogue/combat/thieving) — [client:simulation].
+with real action menus. Upper floors shipped same day. Combat/thieving/fishing/prayer/search
+SHIPPED 2026-07-07 (sourced formulas + tables; see combat.js + GAME_KB). Remaining under
+[client:simulation]: dialogue scripts, shop stock/prices, drop tables, gear bonuses, NPC
+movement AI — each needs a sourced dataset.
 
 ## [client:simulation] World client — game systems (combat/skilling/quests)
 

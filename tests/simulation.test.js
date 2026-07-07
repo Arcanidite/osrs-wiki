@@ -175,3 +175,47 @@ test("settleTile spirals to nearest walkable, refuses unmapped areas", () => {
   assert.deepEqual(settleTile(flags, 3, 3, FULLBIT), { x: 3, y: 3 }, "already walkable");
   assert.equal(settleTile((x, y) => null, 0, 0, FULLBIT), null, "unmapped → refuse");
 });
+
+// ── combat / npc-interaction systems ────────────────────────────────────────
+import { maxHit, hitChance, attackRoll, defenceRoll, swing, npcCombatants, PICKPOCKET, FISHING, COINS_ID } from "../assets/js/world/combat.js";
+
+test("melee formulas match documented anchors", () => {
+  assert.equal(maxHit(1), 1, "unarmed max hit at level 1");
+  assert.equal(maxHit(99), 11, "unarmed max hit at 99 strength (documented)");
+  assert.equal(attackRoll(1), 9 * 64);
+  assert.equal(defenceRoll(1), 9 * 64);
+  const even = hitChance(576, 576);
+  assert.ok(even > 0.45 && even < 0.55, "evenly matched ≈ 50%");
+  assert.ok(hitChance(10000, 576) > 0.9, "overwhelming attack");
+  assert.ok(hitChance(576, 10000) < 0.1, "overwhelming defence");
+});
+
+test("swing respects rng bounds and npc stats order", () => {
+  const foe = npcCombatants([3, 4, 1, 12, 1, 1]); // Goblin (verified order)
+  assert.deepEqual(foe, { attack: 3, defence: 4, strength: 1, hitpoints: 12 });
+  const hit = swing({ attack: 99, strength: 99, defence: 99 }, foe, () => 0.0);
+  assert.ok(hit.hit && hit.damage >= 1 && hit.damage <= maxHit(99));
+  const miss = swing({ attack: 1, strength: 1, defence: 1 }, npcCombatants([99, 99, 99, 99]), () => 0.99);
+  assert.equal(miss.hit, false);
+});
+
+test("interaction item ids match items.pack (honesty guard)", () => {
+  const buf = readFileSync(join(ROOT, "assets", "data", "cache", "items.pack"));
+  const n = buf.readUInt32LE(4);
+  const byId = new Map();
+  for (let i = 0; i < n; i++) {
+    const off = buf.readUInt32LE(8 + i * 12 + 4);
+    const len = buf.readUInt32LE(8 + i * 12 + 8);
+    const rec = JSON.parse(buf.subarray(off, off + len).toString("utf8"));
+    byId.set(rec.id, rec.name);
+  }
+  assert.equal(byId.get(COINS_ID), "Coins");
+  assert.equal(byId.get(FISHING.Net.itemId), "Raw shrimps");
+  assert.ok(byId.get(FISHING.Net.tool).startsWith("Small fishing net"),
+    `net tool name: ${byId.get(FISHING.Net.tool)}`);
+});
+
+test("sourced tables carry the documented values", () => {
+  assert.deepEqual(PICKPOCKET.Man, { level: 1, xp: 8, coins: 3, stunTicks: 8, stunDamage: 1 });
+  assert.equal(FISHING.Net.xp, 10);
+});

@@ -283,4 +283,28 @@ hit-testing scales CSS→canvas px so hover/click tiles are exact; main.css link
 
 ---
 
+### 2026-07-07 — All remaining "not simulated" interactions implemented
+
+`assets/js/world/combat.js` (pure, tested) + client wiring. Every previously-stubbed action now
+has a concrete system; only server-side *datasets* (not verbs) remain outstanding.
+
+- **Combat (Attack):** documented melee formulas — max hit `floor(0.5 + effStr·(bonus+64)/640)`
+  (anchors tested: 1 at str 1, 11 unarmed at 99), accuracy roll ratio, 4-tick unarmed speed,
+  4×damage style XP + 1.33×damage Hitpoints XP; real NPC stats via the verified stats order;
+  HP pool (start Hitpoints 10 = 1,154 xp, 1 hp/min regen), NPC death → grayed marker + respawn
+  (placeholder timer), player death → Lumbridge respawn. **No drops — drop tables are server data.**
+  Labelled approximations: gear bonuses 0 (not extracted), no NPC movement AI, SIM_CONFIG knobs.
+- **Pickpocket:** sourced Man/Woman table (lvl 1, 8 xp, 3 coins; fail = ~5 s stun + 1 damage);
+  unsourced NPCs refuse rather than guess loot.
+- **Fishing:** Net spots → Raw shrimps, lvl 1, 10 xp (net in starting kit); other methods
+  refuse pending sourced tables.
+- **Prayer:** altars restore points to Prayer level. **Search:** the documented default
+  "nothing of interest" (yield tables are server data). **Read / Talk-to / Trade:** dialogue
+  frame stating scripts/stock are server-side and unsourced. **Bankers/Deposit boxes** open the
+  bank; **full-block gates (types 9-11)** open/close their footprint clipping.
+- Vitals (HP/Prayer) persist and render in the Skills panel; stuns block movement; moving breaks
+  combat. Item-id honesty guards extended (Coins/Raw shrimps/net). 60/60 tests.
+
+---
+
 <!-- Add entries below as features are built out -->

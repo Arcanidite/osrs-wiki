@@ -73,7 +73,7 @@ export function createPlayerState(saved) {
       return true;
     },
 
-    toJSON() { return { xp: s.xp, inv: s.inv, bank: s.bank }; },
+    toJSON() { return { xp: s.xp, inv: s.inv, bank: s.bank, hp: s.hp, prayer: s.prayer }; },
   };
   return api;
 }

@@ -56,8 +56,18 @@ tool_script: "/assets/js/tools/world-client.js"
   with game-style hover text ("Talk-to Man (level-2)") and right-click menus listing each NPC's
   real cache actions. Spawn coordinates are server-side data, so they come from the community
   dataset behind the OSRS Wiki world map (mejrs/data_osrs, stamped in
-  <code>tools/kb/GAME_KB.md</code>) — best-effort, may drift after game updates. Talking, combat
-  and pickpocketing are not yet simulated; selecting those walks you over and says so.</p>
+  <code>tools/kb/GAME_KB.md</code>) — best-effort, may drift after game updates. </p>
+
+  <p><strong>NPC interactions perform.</strong> Attack fights with the documented melee formulas
+  over the real cache stats (max hit, accuracy rolls, 4 × damage combat XP + 1.33 × Hitpoints XP,
+  4-tick unarmed speed; you start at Hitpoints 10) — NPCs hit back, die, respawn, and drop
+  <em>nothing</em>, because drop tables are server data we won't invent. Pickpocketing works where
+  sourced (Man/Woman: 8 Thieving xp, 3 coins; failure stuns and hurts). Net fishing spots yield
+  raw shrimps (10 Fishing xp; a small net is in the starting kit). Bankers bank. Altars restore
+  Prayer points. Searching scenery gives the game's default "nothing of interest". Talk-to and
+  Trade open a dialogue frame that says plainly that dialogue scripts and shop stock are
+  server-side and unsourced — never invented. Gear bonuses, NPC movement AI, and success rates
+  are labelled approximations/placeholders in <code>assets/js/world/combat.js</code>.</p>
 
   <h2>Still missing, and exactly why</h2>
   <ul>

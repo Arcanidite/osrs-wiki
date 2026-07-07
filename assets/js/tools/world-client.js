@@ -24,6 +24,9 @@ import {
 } from "../world/gather.js";
 import { createPlayerState } from "../world/player-state.js";
 import { climbDestination, isClimbAction, settleTile } from "../world/climb.js";
+import {
+  SIM_CONFIG, swing, npcCombatants, PICKPOCKET, FISHING, COINS_ID,
+} from "../world/combat.js";
 
 const SAVE_KEY = "osrs-world:v1";
 
@@ -145,8 +148,8 @@ async function init() {
   const npcAt = (x, y) => npcByTile.get(`${player.plane}:${x},${y}`);
   // NPC as a pseudo-loc so the walk/arrive machinery applies unchanged
   const npcTarget = (n) => ({
-    x: n.x, y: n.y, w: 1, h: 1, type: 10, def: n.def, _npc: true,
-    key: `npc:${n.id}:${n.x}:${n.y}:${n.plane}`,
+    x: n.x, y: n.y, w: 1, h: 1, type: 10, def: n.def, _npc: true, _npcRef: n,
+    plane: n.plane, key: `npc:${n.id}:${n.x}:${n.y}:${n.plane}`,
   });
 
   async function loadRegion(rid, plane) {
@@ -280,8 +283,9 @@ async function init() {
   let saved = null;
   try { saved = JSON.parse(localStorage.getItem(SAVE_KEY) ?? "null"); } catch {}
   const state = createPlayerState(saved);
-  // sandbox starting kit (bronze tools; granted once if absent everywhere)
-  for (const kit of [{ id: 1351, name: "Bronze axe" }, { id: 1265, name: "Bronze pickaxe" }]) {
+  // sandbox starting kit (bronze tools + net; granted once if absent everywhere)
+  for (const kit of [{ id: 1351, name: "Bronze axe" }, { id: 1265, name: "Bronze pickaxe" },
+                     { id: 303, name: "Small fishing net" }]) {
     const owned = state.hasItem(kit.id) || state.raw.bank.some((it) => it.id === kit.id);
     if (!owned) state.addItem(kit);
   }
@@ -291,6 +295,20 @@ async function init() {
     dirty = false;
   };
   const depleted = new Map(); // loc.key -> respawn tick (session-local)
+  // new accounts start at Hitpoints 10 (sourced); hp/prayer pools persist
+  if (!state.raw.xp.hitpoints) { state.raw.xp.hitpoints = 1154; dirty = true; }
+  if (state.raw.hp == null) state.raw.hp = state.level("hitpoints");
+  if (state.raw.prayer == null) state.raw.prayer = state.level("prayer");
+  const npcState = new Map(); // npc key -> {hp, deadUntil} (session-local)
+  let combat = null;          // {npc, key, nextSwing}
+  let stunnedUntil = 0;
+  const npcKey = (n) => `${n.id}:${n.x}:${n.y}:${n.plane}`;
+  const npcHp = (n) => {
+    const k = npcKey(n);
+    if (!npcState.has(k)) npcState.set(k, { hp: npcCombatants(n.def.stats).hitpoints, deadUntil: 0 });
+    return npcState.get(k);
+  };
+  const npcDead = (n) => npcHp(n).deadUntil > tick;
 
   const logEl = root.querySelector(".wc-log");
   function say(msg) {
@@ -320,12 +338,15 @@ async function init() {
         `<span class="wc-inv-slot">${spriteSpan(it.id, it.name)}` +
         (it.qty > 1 ? `<span class="wc-qty">${it.qty}</span>` : "") + `</span>`).join("") +
       `</div><div class="wc-inv-count">${state.invCount()} / 28</div>`;
+    const vitals = `<div class="wc-skill-row"><span>Hitpoints</span>` +
+      `<b>${state.raw.hp} / ${state.level("hitpoints")}</b><i></i></div>` +
+      `<div class="wc-skill-row"><span>Prayer pts</span>` +
+      `<b>${state.raw.prayer} / ${state.level("prayer")}</b><i></i></div>`;
     const skills = Object.keys(state.raw.xp);
-    skillsPanel.innerHTML = skills.length
-      ? skills.map((sk) =>
+    skillsPanel.innerHTML = vitals + (skills.length ? "" : "")
+      + skills.map((sk) =>
           `<div class="wc-skill-row"><span>${esc(sk)}</span>` +
-          `<b>${state.level(sk)}</b><i>${Math.floor(state.xp(sk)).toLocaleString()} xp</i></div>`).join("")
-      : `<div class="wc-skill-row">No XP yet — chop a tree.</div>`;
+          `<b>${state.level(sk)}</b><i>${Math.floor(state.xp(sk)).toLocaleString()} xp</i></div>`).join("");
     window.SpriteAtlas?.ready
       ? paintSprites()
       : (window.SpriteAtlas?.load(BASE),
@@ -417,9 +438,171 @@ async function init() {
   const isTree = (loc) => TREES[loc.def.name] != null;
   const isDepleted = (loc) => (depleted.get(loc.key) ?? 0) > tick;
 
+  function dialogue(name, lines) {
+    menuEl.innerHTML = `<div class="wc-menu-title">${esc(name)}</div>` +
+      lines.map((l) => `<div class="wc-menu-row wc-dialogue-line">${esc(l)}</div>`).join("") +
+      `<button type="button" class="wc-menu-row"><b>Continue</b></button>`;
+    menuEl.style.left = "25%";
+    menuEl.style.top = "30%";
+    menuEl.hidden = false;
+    menuEl.querySelector("button").addEventListener("click", hideMenu);
+  }
+
+  function performNpcAction(npc, action) {
+    const name = npc.def.name;
+    if (npcDead(npc)) { say("They're not here right now."); return; }
+    if (action === "Attack") {
+      if (!(npc.def.actions ?? []).includes("Attack")) return;
+      combat = { npc, key: npcKey(npc), nextSwing: tick };
+      say(`You attack the ${name.toLowerCase()}...`);
+      return;
+    }
+    if (action === "Pickpocket") {
+      const p = PICKPOCKET[name];
+      if (!p) { say(`Pickpocket data for ${name} isn't sourced yet — refusing to guess loot.`); return; }
+      if (state.level("thieving") < p.level) { say(`You need level ${p.level} Thieving.`); return; }
+      if (Math.random() < SIM_CONFIG.thieveChanceBase) {
+        state.addItem({ id: COINS_ID, name: "Coins", stackable: true }, p.coins);
+        const { levelled } = state.addXp("thieving", p.xp);
+        say(`You pick the ${name.toLowerCase()}'s pocket. (+${p.xp} Thieving xp, ${p.coins} coins)`);
+        if (levelled) say(`Your Thieving level is now ${levelled}.`);
+      } else {
+        stunnedUntil = tick + p.stunTicks;
+        state.raw.hp = Math.max(0, state.raw.hp - p.stunDamage);
+        say(`You fail to pick the pocket — you've been stunned!`);
+        checkDeath();
+      }
+      dirty = true;
+      renderPanels();
+      return;
+    }
+    if (["Net", "Bait", "Lure", "Cage", "Harpoon", "Small Net", "Big Net"].includes(action)) {
+      const fkind = FISHING[action];
+      if (!fkind) { say(`${action} fishing needs gear/catch data not yet sourced.`); return; }
+      if (!state.hasItem(fkind.tool)) { say(`You need a ${fkind.toolName.toLowerCase()} to fish here.`); return; }
+      if (state.level("fishing") < fkind.level) { say(`You need level ${fkind.level} Fishing.`); return; }
+      gathering = { loc: npcTarget(npc), kind: "fish", fkind, nextRoll: tick + GATHER_CONFIG.rollTicks };
+      say("You cast out your net...");
+      return;
+    }
+    if (action === "Bank" || action === "Collect") {
+      bankEl.hidden = false;
+      renderBank();
+      return;
+    }
+    if (action === "Talk-to") {
+      const extra = (npc.def.actions ?? []).includes("Bank")
+        ? "(As a banker, their Bank option works.)"
+        : "";
+      dialogue(name, [
+        "Dialogue scripts live on the game servers and aren't part of any",
+        "extracted data — so nothing is invented here.", extra].filter(Boolean));
+      return;
+    }
+    if (action === "Trade") {
+      dialogue(name, [
+        "Shop stock and prices are server-side data that hasn't been",
+        "sourced yet — trading opens once a sourced stock table exists."]);
+      return;
+    }
+    toast(`${action} ${name} — no sourced mechanic for this yet`);
+  }
+
+  function checkDeath() {
+    if (state.raw.hp > 0) return;
+    say("Oh dear, you are dead! You respawn in Lumbridge.");
+    state.raw.hp = state.level("hitpoints");
+    combat = null; gathering = null;
+    teleport(3222, 3218, 0);
+    dirty = true;
+  }
+
+  function combatTick() {
+    if (!combat) return;
+    const { npc } = combat;
+    if (!adjacentTo(npcTarget(npc)) || npcDead(npc)) { combat = null; return; }
+    if (tick < combat.nextSwing) return;
+    combat.nextSwing = tick + SIM_CONFIG.attackSpeedTicks;
+    const me = { attack: state.level("attack"), strength: state.level("strength"), defence: state.level("defence") };
+    const foe = npcCombatants(npc.def.stats);
+    const st = npcHp(npc);
+    // player swing (sourced formulas; gear bonuses not yet extracted → 0)
+    const mine = swing(me, foe);
+    st.hp -= mine.damage;
+    say(mine.hit ? `You hit ${mine.damage}.` : "You miss.");
+    if (mine.damage) {
+      const { levelled } = state.addXp("attack", 4 * mine.damage);
+      state.addXp("hitpoints", Math.floor(1.33 * mine.damage * 100) / 100);
+      if (levelled) say(`Your Attack level is now ${levelled}.`);
+    }
+    if (st.hp <= 0) {
+      st.deadUntil = tick + SIM_CONFIG.npcRespawnTicks;
+      say(`The ${npc.def.name.toLowerCase()} dies. (Drop tables are server data — nothing is invented.)`);
+      combat = null;
+      dirty = true;
+      renderPanels();
+      return;
+    }
+    // retaliation
+    const theirs = swing(foe, me);
+    if (theirs.hit) {
+      state.raw.hp = Math.max(0, state.raw.hp - theirs.damage);
+      say(`The ${npc.def.name.toLowerCase()} hits you for ${theirs.damage}.`);
+      checkDeath();
+    }
+    dirty = true;
+    renderPanels();
+  }
+
   function performAction(loc, action) {
     if (loc._npc) {
-      toast(`${action} ${loc.def.name} — NPC interactions not simulated yet (see BACKLOG [client:simulation])`);
+      performNpcAction(loc._npcRef, action);
+      return;
+    }
+    if (action === "Search") {
+      // the documented default for searchable scenery; specific yields are
+      // server data and never guessed
+      say(`You search the ${loc.def.name.toLowerCase()} but find nothing of interest.`);
+      return;
+    }
+    if (action === "Pray" || action === "Pray-at") {
+      state.raw.prayer = state.level("prayer");
+      say("You recharge your Prayer points.");
+      dirty = true;
+      renderPanels();
+      return;
+    }
+    if (action === "Read") {
+      dialogue(loc.def.name, [
+        "The text on this is stored server-side and hasn't been extracted —",
+        "nothing is invented here."]);
+      return;
+    }
+    if ((action === "Open" || action === "Close") && loc.type >= 9 && loc.type <= 11) {
+      // full-block gates/doors: toggle the footprint's FULL clipping
+      const k = loc.key;
+      const tiles = [];
+      for (let ox = 0; ox < loc.w; ox++)
+        for (let oy = 0; oy < loc.h; oy++)
+          tiles.push({ x: loc.x + ox, y: loc.y + oy, mask: FULL });
+      if (openDoors.has(k)) {
+        for (const e of openDoors.get(k)) {
+          const ck = `${loc.plane}:${e.x},${e.y}`;
+          cleared.set(ck, (cleared.get(ck) ?? 0) & ~e.mask);
+        }
+        openDoors.delete(k);
+      } else {
+        for (const e of tiles) {
+          const ck = `${loc.plane}:${e.x},${e.y}`;
+          cleared.set(ck, (cleared.get(ck) ?? 0) | e.mask);
+        }
+        openDoors.set(k, tiles);
+      }
+      return;
+    }
+    if (action === "Deposit") {
+      bankEl.hidden = false;
+      renderBank();
       return;
     }
     if (isDoor(loc) && (action === "Open" || action === "Close")) {
@@ -488,13 +671,15 @@ async function init() {
     if (tick < gathering.nextRoll) return;
     gathering.nextRoll = tick + GATHER_CONFIG.rollTicks;
 
-    const skill = kind === "tree" ? "woodcutting" : "mining";
+    const skill = kind === "tree" ? "woodcutting" : kind === "fish" ? "fishing" : "mining";
     const roll = kind === "tree"
       ? chopRoll(loc.def.name, state.level(skill), (id) => state.hasItem(id))
-      : mineRoll(loc.id, state.level(skill), (id) => state.hasItem(id));
+      : kind === "fish"
+        ? { ok: Math.random() < SIM_CONFIG.fishChanceBase, fish: gathering.fkind }
+        : mineRoll(loc.id, state.level(skill), (id) => state.hasItem(id));
     if (roll.error) { gathering = null; return; }
     if (!roll.ok) return;
-    const res = roll.tree ?? roll.rock;
+    const res = roll.tree ?? roll.rock ?? roll.fish;
     if (!state.addItem({ id: res.itemId, name: res.item })) {
       say("Your inventory is too full to hold any more.");
       gathering = null;
@@ -547,8 +732,9 @@ async function init() {
       if (d) { kdx += d[0]; kdy += d[1]; }
     }
     kdx = Math.sign(kdx); kdy = Math.sign(kdy);
+    if (tick < stunnedUntil) { kdx = 0; kdy = 0; path = []; }
     if (kdx || kdy) {
-      path = []; pending = null; gathering = null;
+      path = []; pending = null; gathering = null; combat = null;
       for (let i = 0; i < speed; i++) {
         if (canStep(flagsAt, player.x, player.y, kdx, kdy)) {
           player.x += kdx; player.y += kdy;
@@ -577,8 +763,15 @@ async function init() {
         else toast(`I can't reach that.`);
       }
     }
+    if (tick < stunnedUntil) { posEl.textContent += ""; }
     gatherTick();
+    combatTick();
     climbTick();
+    if (tick % SIM_CONFIG.hpRegenTicks === 0 && state.raw.hp < state.level("hitpoints")) {
+      state.raw.hp++;
+      dirty = true;
+      renderPanels();
+    }
     for (const [key, until] of depleted) if (until <= tick) depleted.delete(key);
     if (dirty && tick % 5 === 0) save();
     const floor = player.plane > 0 ? ` · floor ${player.plane}`
@@ -815,6 +1008,7 @@ async function init() {
           if (n.plane !== player.plane) continue;
           const [sx, sy] = toScreen(c, n.x, n.y);
           if (sx < -tilePx || sy < -tilePx || sx > canvas.width || sy > canvas.height) continue;
+          ctx.fillStyle = npcDead(n) ? "rgba(150,150,150,0.5)" : "#f5e642";
           ctx.fillRect(sx + tilePx / 2 - tilePx / 6, sy + tilePx / 2 - tilePx / 6, tilePx / 3, tilePx / 3);
         }
       }
