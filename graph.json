@@ -1843,6 +1843,27 @@
         ],
         "generated": true
       }
+    },
+    {
+      "id": "world-client",
+      "label": "World Client",
+      "url": "/play",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "page_class": "tool",
+        "icon": {
+          "name": "tool"
+        },
+        "summary": "Walk the real game world — top-down 2D, tick-accurate, real collision.",
+        "tags": [
+          "tools"
+        ]
+      }
     }
   ],
   "edges": [
@@ -2430,6 +2451,11 @@
       "to": "npc-directory",
       "rel": "related",
       "generated": true
+    },
+    {
+      "from": "root",
+      "to": "world-client",
+      "rel": "child"
     }
   ]
 }

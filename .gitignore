@@ -6,3 +6,4 @@ Gemfile.lock
 vendor/
 __pycache__/
 node_modules/
+tools/.openrs2-cache/

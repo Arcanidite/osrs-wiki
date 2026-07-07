@@ -18,6 +18,9 @@
   compute the best over the **available** set (§5.0/§5.12). Never store "best" — compute it.
 
 ## [G-2] objects.pack names are garbage — don't build object entries from it
+> **[STALE — superseded 2026-07-07]** `tools/openrs2_extract.py` decodes object configs
+> directly from the OpenRS2 cache (2499); `objects.pack` is regenerated with real names,
+> sizes and clip data. The trap below documents the old Dump.java output.
 
 - **Trap:** treating `objects.pack` (805 records) as presentable content. 793/805 names are
   `object_N` placeholders and the other 12 are binary junk (`ÿÿO…`); only `actions`/`tags` survived.
@@ -39,6 +42,9 @@
 - **source/stamp:** cache extraction · 2026-07-06
 
 ## [G-4] Map-dump region ids don't match live OSRS region numbering
+> **[STALE — superseded 2026-07-07]** the map + collision set is re-extracted from OpenRS2
+> cache 2499 with **real** region ids/coordinates (index-5 ref table is properly named;
+> `m/l{x}_{y}` hashes resolve). The trap below documents the old sequential-id dump only.
 
 - **Trap:** treating `assets/data/cache/map/manifest.json` region ids / bx,by as live OSRS world
   coordinates (e.g. expecting Lumbridge at region 12850 — absent; dump ids run 1936–8359, rx ≤ 32).

@@ -1143,3 +1143,17 @@ mark.rtb-hl-fuzzy { background: #ffb347; }
 .db-fields th { width: 11rem; color: var(--muted); font-weight: 500; }
 .db-loading, .db-error { font-size: var(--fs-sm); color: var(--muted); }
 
+
+/* ── World client ────────────────────────────────────────────────────────── */
+.wc-hud { display: flex; flex-wrap: wrap; gap: var(--sp); align-items: center; margin-bottom: var(--sp-h); font-size: var(--fs-sm); }
+.wc-hud .wc-pos { font-weight: 700; min-width: 11rem; }
+.wc-hud label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); }
+.wc-hud .wc-tick { color: var(--muted); margin-left: auto; font-size: var(--fs-xs); }
+.wc-zoom button { padding: 1px var(--sp-q); border: 1px solid var(--border); background: none; border-radius: var(--radius); cursor: pointer; }
+.wc-zoom button.active { background: var(--gold); }
+.wc-canvas { width: 100%; display: block; border: 1px solid var(--border); border-radius: var(--radius); background: #1e2a38; image-rendering: pixelated; outline: none; cursor: crosshair; }
+.wc-help { font-size: var(--fs-xs); color: var(--muted); margin-top: var(--sp-q); }
+.wc-notes { margin-top: var(--sp-2); }
+.wc-notes h2 { font-size: var(--fs-lg); margin: var(--sp) 0 var(--sp-h); }
+.wc-notes ul { font-size: var(--fs-sm); padding-left: 1.2rem; }
+.wc-notes li { margin-bottom: var(--sp-q); }

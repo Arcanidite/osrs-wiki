@@ -1,0 +1,38 @@
+---
+layout: "tool"
+title: "World Client"
+node_id: "world-client"
+summary: "Walk the real game world — top-down 2D, tick-accurate movement with the game's actual collision."
+page_class: "tool"
+tags: ["tools", "world", "database"]
+breadcrumb: []
+children: []
+tool_script: "/assets/js/tools/world-client.js"
+---
+
+<div id="world-root"></div>
+
+<section class="wc-notes">
+  <h2>What this is</h2>
+  <p>The world and its collision are decoded from the real game cache
+  (OpenRS2 archive, cache&nbsp;2499 · build&nbsp;236 · 2026-03-18) by
+  <code>tools/openrs2_extract.py</code>: terrain block flags, wall edges and corners, and
+  object footprints honoring each object's clip type — the same static clipping rules the
+  game applies. Movement is tick-true: one game tick every 600&nbsp;ms, 1 tile/tick walking,
+  2 running; click-to-walk uses the game-style breadth-first search with no corner cutting
+  (source: OSRS Wiki, “Game tick” / “Pathfinding”). Press <kbd>C</kbd> to see the collision
+  overlay.</p>
+
+  <h2>Still missing, and exactly why</h2>
+  <ul>
+    <li><strong>NPCs &amp; objects rendered in the world</strong> — placements are now decodable
+      (locations decrypt with published XTEA keys); rendering them in the client is next.
+      (<code>BACKLOG [client:locations-spawns]</code>)</li>
+    <li><strong>The simulation</strong> — combat, quests, drops and AI run on Jagex servers and are
+      not present in any client data; they can only be re-implemented from sourced formulas under
+      the KB no-fabrication protocol. (<code>BACKLOG [client:simulation]</code>)</li>
+  </ul>
+  <p class="data-source">Source: OpenRS2 cache 2499 (build 236, 2026-03-18) + OSRS Wiki movement
+  mechanics · stamp 2026-07-07. Region ids/coordinates are the game's real ones
+  (supersedes the 2026-04 garbled-id dump — see <code>tools/kb/GAME_GOTCHAS.md</code> G-4).</p>
+</section>

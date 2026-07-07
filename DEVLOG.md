@@ -145,4 +145,39 @@ Walk the real extracted map in the browser — no server, tick-accurate movement
 
 ---
 
+### 2026-07-07 — Real collision + `/play` restored (OpenRS2 extraction pipeline)
+
+Collision gate item done: the world client is back, with the game's actual static clipping.
+
+**New extraction pipeline — `tools/openrs2_extract.py`** (pure Python, no Java/Windows deps):
+fetches the OSRS cache per-group from the public OpenRS2 archive (pinned **cache 2499, build 236,
+2026-03-18**) with its published XTEA keys; HTTP responses cached in `tools/.openrs2-cache/` (ignored).
+Implements js5 containers (gzip/bzip2 + XTEA), index-255 reference tables (djb2-named groups —
+so **real region ids**, superseding the garbled sequential-id dump; G-4 stale), multi-file config
+groups, and decoders for terrain (u16-opcode format incl. the extra-plane trailer some regions
+carry), locations, object/underlay/overlay configs. Format notes learned empirically, each validated
+by exact stream consumption across all 60,805 object defs: op78/79 carry a retain byte in this rev;
+op93 = two u24s; op95/96 = u8. Known-object checks: Tree (1276) 2×2 "Chop down", Bank booth (10583).
+
+**Collision** (`assets/data/cache/collision/<rid>.bin.gz`, u16/tile, y-major): terrain block flags
+with the bridge plane-shift rule, wall edge flags by loc type/rotation **mirrored onto neighbours**,
+corner-pillar flags, diagonal walls, object footprints (rotated sizeX/sizeY) honoring each object's
+`interactType`, clipped floor decorations; cross-region spills handled on a world grid.
+2,868 regions emitted (309 lack usable location keys → terrain-only there).
+**Map tiles** re-rendered in true coordinates from underlay/overlay colours (flat retro palette).
+**objects.pack** regenerated: 16,412 named interactable objects (was 805 garbage-named; G-2 stale).
+
+**Client** (`/play` restored): `assets/js/world/collision.js` — pure movement/pathfinding module
+implementing the game rules (edge/corner checks, no diagonal corner-cutting, W-E-S-N-diagonals BFS
+with nearest-approach fallback) — plus `world-client.js` streaming map+collision regions, tick-true
+movement (600 ms; 1 walk / 2 run), collision debug overlay (C), landmark travel.
+
+**Verified:** 39/39 node tests — 11 synthetic movement-rule tests + 5 integration tests over the
+real Lumbridge data (spawn walkable, River Lum blocks, approach stops on bank, cross-town path
+every-step-legal, castle wall edges block straight passage, 2,868-region manifest integrity);
+headless browser walk: spawn (3222,3218) → click-east lands (3227,3218) exactly; collision overlay
+screenshot matches the real castle/river layout.
+
+---
+
 <!-- Add entries below as features are built out -->
