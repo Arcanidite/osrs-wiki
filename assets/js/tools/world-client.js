@@ -39,6 +39,9 @@ const LANDMARKS = [
 
 const root = document.getElementById("world-root");
 
+const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
 async function gunzip(res) {
   return new Response(res.body.pipeThrough(new DecompressionStream("gzip")));
 }
@@ -297,11 +300,15 @@ async function init() {
 
   // ── input ─────────────────────────────────────────────────────────────────
   const tileFromEvent = (e) => {
+    // canvas attribute pixels ≠ CSS pixels when layout stretches the element —
+    // scale event coords into the canvas's drawing space before tile math
     const r = canvas.getBoundingClientRect();
+    const px = (e.clientX - r.left) * (canvas.width / r.width);
+    const py = (e.clientY - r.top) * (canvas.height / r.height);
     const c = cam();
     return {
-      x: Math.floor(c.x + (e.clientX - r.left - canvas.width / 2) / tilePx),
-      y: Math.floor(c.y - (e.clientY - r.top - canvas.height / 2) / tilePx),
+      x: Math.floor(c.x + (px - canvas.width / 2) / tilePx),
+      y: Math.floor(c.y - (py - canvas.height / 2) / tilePx),
     };
   };
 
@@ -340,21 +347,30 @@ async function init() {
     const rows = [];
     if (loc && objEl.checked) {
       for (const a of menuActions(loc))
-        rows.push({ label: `${a} <b>${loc.def.name}</b>`, run: () => walkToLoc(loc, a) });
+        rows.push({ label: `${esc(a)} <b>${esc(loc.def.name)}</b>`, run: () => walkToLoc(loc, a) });
     }
     rows.push({ label: "Walk here", run: () => { pending = null; path = findPath(flagsAt, player.x, player.y, t.x, t.y); } });
     rows.push({ label: "Cancel", run: () => {} });
     menuEl.innerHTML = `<div class="wc-menu-title">Choose Option</div>` +
-      rows.map((r, i) => `<div class="wc-menu-row" data-i="${i}">${r.label}</div>`).join("");
-    const rect = root.getBoundingClientRect();
-    menuEl.style.left = `${e.clientX - rect.left}px`;
-    menuEl.style.top = `${e.clientY - rect.top}px`;
+      rows.map((r, i) =>
+        `<button type="button" class="wc-menu-row" data-i="${i}">${r.label}</button>`).join("");
     menuEl.hidden = false;
+    // position at the cursor, clamped inside the root so it stays choosable
+    const rect = root.getBoundingClientRect();
+    const mw = menuEl.offsetWidth, mh = menuEl.offsetHeight;
+    menuEl.style.left = `${Math.max(0, Math.min(e.clientX - rect.left, rect.width - mw - 2))}px`;
+    menuEl.style.top = `${Math.max(0, Math.min(e.clientY - rect.top, rect.height - mh - 2))}px`;
     menuEl.querySelectorAll(".wc-menu-row").forEach((el) =>
-      el.addEventListener("mousedown", () => { rows[+el.dataset.i].run(); hideMenu(); }));
+      el.addEventListener("click", (ev) => {
+        ev.preventDefault();
+        ev.stopPropagation();
+        rows[+el.dataset.i].run();
+        hideMenu();
+        canvas.focus();
+      }));
   });
-  document.addEventListener("mousedown", (e) => {
-    if (!menuEl.contains(e.target)) hideMenu();
+  document.addEventListener("pointerdown", (e) => {
+    if (!menuEl.hidden && !menuEl.contains(e.target)) hideMenu();
   });
 
   canvas.addEventListener("keydown", (e) => {

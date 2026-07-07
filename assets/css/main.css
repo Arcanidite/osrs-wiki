@@ -1167,3 +1167,4 @@ mark.rtb-hl-fuzzy { background: #ffb347; }
 .wc-menu-row:hover { background: #6d6455; }
 .wc-toast { position: absolute; left: 50%; transform: translateX(-50%); top: 4.5rem; z-index: 30; background: rgba(20,20,20,0.9); color: #ffd54a; padding: var(--sp-q) var(--sp); border-radius: var(--radius); font-size: var(--fs-sm); }
 #world-root { position: relative; }
+.wc-menu-row { display: block; width: 100%; text-align: left; background: none; border: 0; font: inherit; }
