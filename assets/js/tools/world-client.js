@@ -25,7 +25,7 @@ import {
 import { createPlayerState } from "../world/player-state.js";
 import { climbDestination, isClimbAction, settleTile } from "../world/climb.js";
 import {
-  SIM_CONFIG, swing, npcCombatants, PICKPOCKET, FISHING, COINS_ID,
+  SIM_CONFIG, swing, npcCombatants, statRandomChance, PICKPOCKET, FISHING, COINS_ID,
 } from "../world/combat.js";
 import {
   npcWanderStep, WANDER_STEP_TICKS, WANDER_RETRY_TICKS,
@@ -647,7 +647,7 @@ async function init() {
       const p = PICKPOCKET[name];
       if (!p) { say(`Pickpocket data for ${name} isn't sourced yet — refusing to guess loot.`); return; }
       if (state.level("thieving") < p.level) { say(`You need level ${p.level} Thieving.`); return; }
-      if (Math.random() < SIM_CONFIG.thieveChanceBase) {
+      if (Math.random() < statRandomChance(state.level("thieving"), p.successLow, p.successHigh)) {
         state.addItem({ id: COINS_ID, name: "Coins", stackable: true }, p.coins);
         const { levelled } = state.addXp("thieving", p.xp);
         say(`You pick the ${name.toLowerCase()}'s pocket. (+${p.xp} Thieving xp, ${p.coins} coins)`);
@@ -873,7 +873,9 @@ async function init() {
     const roll = kind === "tree"
       ? chopRoll(loc.def.name, state.level(skill), (id) => state.hasItem(id))
       : kind === "fish"
-        ? { ok: Math.random() < SIM_CONFIG.fishChanceBase, fish: gathering.fkind }
+        ? { ok: Math.random() < statRandomChance(state.level("fishing"),
+              gathering.fkind.successLow, gathering.fkind.successHigh),
+            fish: gathering.fkind }
         : mineRoll(loc.id, state.level(skill), (id) => state.hasItem(id));
     if (roll.error) { gathering = null; return; }
     if (!roll.ok) return;

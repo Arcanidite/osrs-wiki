@@ -3,14 +3,16 @@
 // SOURCED (OSRS Wiki "Non-player character" / community server research,
 // stamp 2026-07-07): ambient NPCs wander a bounded area around their spawn
 // point and never leave it; wandering respects the same static collision as
-// players. Exact radius and step cadence are server data Jagex never
-// published — the numbers below are labelled placeholders:
-//   WANDER_RADIUS 5      (Chebyshev tiles from spawn — placeholder)
-//   WANDER_STEP_TICKS 3  (~1.8 s between steps — placeholder cadence)
+// players. Step cadence is server data Jagex never published:
+//   WANDER_RADIUS 5      RSPS-derived (rsmod@fa13b3f NpcTypeBuilder.kt
+//                        DEFAULT_WANDER_RANGE=5; 2004scape's per-npc
+//                        wanderrange corpus peaks at 3) — approximation;
+//                        real per-npc ranges exist and aren't modelled
+//   WANDER_STEP_TICKS 3  (~1.8 s between steps — UNKNOWN placeholder cadence)
 //   WANDER_RETRY_TICKS 2 (retry delay after a blocked/refused step)
 import { canStep } from "./collision.js";
 
-export const WANDER_RADIUS = 5;      // UNKNOWN placeholder (Chebyshev ≤ 5)
+export const WANDER_RADIUS = 5;      // RSPS-derived default (see header)
 export const WANDER_STEP_TICKS = 3;  // UNKNOWN placeholder (~1.8 s cadence)
 export const WANDER_RETRY_TICKS = 2; // UNKNOWN placeholder
 

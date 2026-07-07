@@ -180,6 +180,36 @@
   price curves (OSRS adjusts price with stock level). Shops beyond the five starter cities
   remain unsourced and stay closed.
 
+### Simulation parameter defaults (RSPS-derived approximations)
+- **Facts (data only, cited per value; server emulations vary from live):**
+  - **NPC respawn** `SIM_CONFIG.npcRespawnTicks = 100`:
+    `github.com/rsmod/rsmod` @ `fa13b3f67172ef36e15d6b1514358aee61411796`
+    `engine/game/src/main/kotlin/org/rsmod/game/type/npc/NpcTypeBuilder.kt`
+    `DEFAULT_RESPAWN_RATE = 100`; corroborated by `github.com/2004Scape/Server`
+    @ `647886c42f8a22c0f18e5dbe79c2697f052f8d2e` (modal per-npc `respawnrate=100`,
+    103 of ~250 configs).
+  - **NPC wander radius** `WANDER_RADIUS = 5` (npc-ai.js): rsmod (same commit/file)
+    `DEFAULT_WANDER_RANGE = 5`. 2004scape's per-npc `wanderrange` corpus peaks at 3 —
+    per-npc ranges exist in the real game and are NOT modelled (uniform 5 here).
+  - **Success-chance model** `statRandomChance(level, low, high)`: the documented Jagex
+    low/high interpolation — `floor(low·(99−lvl)/98) + floor(high·(lvl−1)/98) + 1` vs
+    `random(256)` — per the 2004scape engine `STAT_RANDOM` opcode
+    (`src/engine/script/handlers/PlayerOps.ts`). Formula/data only.
+  - **Pickpocket Man/Woman** success `low 180 / high 240`
+    (`data/src/scripts/skill_thieving/configs/pickpocking/pickpocket.dbrow`,
+    `success_chance,180,240`; its `experience,80` = 8 xp — matches our wiki value ✓).
+  - **Net fishing (shrimps)** success `low 48 / high 256`
+    (`data/src/scripts/skill_fishing/configs/fishing.struct`,
+    `fishing_struct_shrimps`; its `productexp,100` = 10 xp — matches our wiki value ✓).
+- **Still UNKNOWN placeholders (no source found):** wander step cadence
+  (`WANDER_STEP_TICKS`/`WANDER_RETRY_TICKS`), all `GATHER_CONFIG` knobs (2004scape does
+  carry per-tree/axe woodcutting low/high tables — a future upgrade candidate, would
+  replace the linear `chanceBase/chanceScale` model).
+- **source:** rsmod + 2004scape/Server (RSPS, commits above) · **stamp:** 2026-07-07
+- **caveat:** RSPS-derived approximation — 2004scape emulates **2004-era** RuneScape; its
+  thieving/fishing rates predate OSRS rebalances. Values are config knobs, upgradeable the
+  moment wiki/Jagex numbers surface. Conflict with wiki stun length recorded in GOTCHAS G-6.
+
 ## Facts by option `id`
 
 <!-- One entry per catalogued option. Template:

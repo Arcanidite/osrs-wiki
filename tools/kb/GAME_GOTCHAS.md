@@ -73,6 +73,19 @@
   also exists, it wins — RSPS fills gaps only, labelled "RSPS-derived approximation".
 - **source/stamp:** Apollo@87553a8 shop DSL extraction · 2026-07-07
 
+## [G-6] Wiki vs 2004scape conflicts — wiki wins, record the loser
+
+- **Trap:** silently averaging or swapping in RSPS values where a wiki-sourced value already
+  exists. Example: pickpocket-failure stun — OSRS Wiki says ~5 s (8 ticks, what we ship);
+  2004scape's `pickpocket.dbrow` says `stun_ticks,13` (7.8 s, 2004-era).
+- **Why it bites:** 2004scape emulates 2004 RuneScape; OSRS rebalanced many rates. Mixing
+  eras produces numbers that match neither game.
+- **Avoid:** wiki/osrsbox values always win; RSPS fills gaps only. When both exist and
+  disagree, keep the wiki value and record the conflict here. Current conflicts:
+  stun_ticks 8 (wiki, shipped) vs 13 (2004scape) — xp/coins/level agree across sources.
+  Also note 2004scape stores XP ×10 (`experience,80` = 8 xp).
+- **source/stamp:** 2004scape@647886c vs OSRS Wiki · 2026-07-07
+
 <!-- Append new gotchas below. Template:
 ## [G-N] <short title>
 - **Trap:** <the wrong assumption / mistake>

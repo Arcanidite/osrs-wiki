@@ -13,19 +13,32 @@
 //   - altars restore prayer points to full (max = Prayer level)
 //   - most searchable scenery yields nothing ("nothing of interest") — specific
 //     search tables are server data and are NOT modelled
+// RSPS-DERIVED (data only, cited per knob — approximations; server emulations
+// vary from live):
+//   - npc respawn default, pickpocket/net-fishing success low/high pairs, and
+//     the documented stat_random level interpolation (see statRandomChance)
 // APPROXIMATIONS (labelled, config-tunable — not published by Jagex):
 //   - NPC attack/defence equipment bonuses aren't in our extraction → 0
-//   - NPC aggression/movement AI not modelled (fights happen in place)
-//   - thieving/fishing success chances, NPC respawn times → SIM_CONFIG
-//   - drop tables are server data → defeated NPCs drop nothing (never faked)
+//   - NPC aggression not modelled (wander is: assets/js/world/npc-ai.js)
+//   - drop tables: sourced per-npc via drops.pack (osrsbox); unsourced npcs
+//     drop nothing (never faked)
 
 export const SIM_CONFIG = {
-  npcRespawnTicks: 50,     // UNKNOWN placeholder (~30 s)
-  thieveChanceBase: 0.7,   // UNKNOWN placeholder
-  fishChanceBase: 0.4,     // UNKNOWN placeholder
+  // RSPS-derived (rsmod@fa13b3f NpcTypeBuilder.kt DEFAULT_RESPAWN_RATE=100;
+  // corroborated by 2004scape@647886c modal npc respawnrate=100) — approximation
+  npcRespawnTicks: 100,
   attackSpeedTicks: 4,     // unarmed weapon speed (sourced)
   hpRegenTicks: 100,       // 1 hp per minute (sourced)
 };
+
+// Jagex's documented low/high success interpolation: chance rises linearly
+// with level from (low+1)/256 at 1 to (high+1)/256 at 99. Formula per the
+// 2004scape engine STAT_RANDOM opcode (data/formula only; widely documented).
+export function statRandomChance(level, low, high) {
+  const value = Math.floor((low * (99 - level)) / 98)
+    + Math.floor((high * (level - 1)) / 98) + 1;
+  return Math.min(value, 256) / 256;
+}
 
 const eff = (level) => level + 8;
 
@@ -70,14 +83,21 @@ export function npcCombatants(stats) {
   return { attack, defence, strength, hitpoints };
 }
 
+// successLow/High: RSPS-derived (2004scape@647886c pickpocket.dbrow
+// success_chance 180,240 for man/woman) — approximation. stunTicks 8 keeps the
+// wiki ~5 s value (2004scape says 13; conflict recorded in GAME_GOTCHAS G-6).
 export const PICKPOCKET = {
-  "Man":   { level: 1, xp: 8, coins: 3, stunTicks: 8, stunDamage: 1 },
-  "Woman": { level: 1, xp: 8, coins: 3, stunTicks: 8, stunDamage: 1 },
+  "Man":   { level: 1, xp: 8, coins: 3, stunTicks: 8, stunDamage: 1, successLow: 180, successHigh: 240 },
+  "Woman": { level: 1, xp: 8, coins: 3, stunTicks: 8, stunDamage: 1, successLow: 180, successHigh: 240 },
 };
 
 export const FISHING = {
   // fishing spots are NPCs; action → catch table (only sourced entries)
-  "Net": { level: 1, xp: 10, item: "Raw shrimps", itemId: 317, tool: 303, toolName: "Small fishing net" },
+  // successLow/High: RSPS-derived (2004scape@647886c fishing_struct_shrimps
+  // success_low 48 / success_high 256; its productexp 100 = 10 xp matches the
+  // wiki value we already carry) — approximation
+  "Net": { level: 1, xp: 10, item: "Raw shrimps", itemId: 317, tool: 303, toolName: "Small fishing net",
+           successLow: 48, successHigh: 256 },
 };
 
 export const COINS_ID = 995;

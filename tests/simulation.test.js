@@ -177,7 +177,7 @@ test("settleTile spirals to nearest walkable, refuses unmapped areas", () => {
 });
 
 // ── combat / npc-interaction systems ────────────────────────────────────────
-import { maxHit, hitChance, attackRoll, defenceRoll, swing, npcCombatants, PICKPOCKET, FISHING, COINS_ID } from "../assets/js/world/combat.js";
+import { maxHit, hitChance, attackRoll, defenceRoll, swing, npcCombatants, statRandomChance, PICKPOCKET, FISHING, COINS_ID } from "../assets/js/world/combat.js";
 
 test("melee formulas match documented anchors", () => {
   assert.equal(maxHit(1), 1, "unarmed max hit at level 1");
@@ -216,8 +216,20 @@ test("interaction item ids match items.pack (honesty guard)", () => {
 });
 
 test("sourced tables carry the documented values", () => {
-  assert.deepEqual(PICKPOCKET.Man, { level: 1, xp: 8, coins: 3, stunTicks: 8, stunDamage: 1 });
+  assert.deepEqual(PICKPOCKET.Man, { level: 1, xp: 8, coins: 3, stunTicks: 8, stunDamage: 1,
+    successLow: 180, successHigh: 240 });
   assert.equal(FISHING.Net.xp, 10);
+  assert.equal(FISHING.Net.successLow, 48);
+  assert.equal(FISHING.Net.successHigh, 256);
+});
+
+test("statRandomChance follows the documented low/high interpolation", () => {
+  // level 1 → (low+1)/256, level 99 → (high+1)/256 (capped at 1), monotonic
+  assert.equal(statRandomChance(1, 180, 240), 181 / 256);
+  assert.equal(statRandomChance(99, 180, 240), 241 / 256);
+  assert.equal(statRandomChance(99, 48, 256), 1, "high 256 → guaranteed at 99");
+  const l1 = statRandomChance(1, 48, 256), l50 = statRandomChance(50, 48, 256);
+  assert.ok(l1 < l50 && l50 < 1, `monotonic: ${l1} < ${l50} < 1`);
 });
 
 // ── equipment (gear bonuses) ────────────────────────────────────────────────
