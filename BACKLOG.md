@@ -534,12 +534,13 @@ binaries + true-coordinate map tiles. `/play` movement + BFS pathing honor them
 
 ## [client:locations-spawns] World client — object/NPC placement in the world
 
-**Status:** UNBLOCKED 2026-07-07 (was: XTEA refresh) — OpenRS2 publishes valid keys for
-cache 2499; `tools/openrs2_extract.py` already decrypts and decodes locations for collision.
-Remaining work: emit per-region location data for the client and render object footprints +
-NPC spawn markers on `/play`, linked to the bestiary/db entries. (NPC spawn points are a
-separate dataset not in the cache — only object locations are; NPC spawns need a sourced
-dataset before rendering.)
+**Status:** OBJECTS DONE ✓ 2026-07-07 — `locs/<rid>.json.gz` (57,130 interactable
+placements, plane 0) + `objects.pack` action lists drive `/play`: game-style hover text,
+right-click option menus with the real cache actions, walk-to-object, and doors/gates that
+genuinely toggle passage (clearing exactly the wall edges their closed state clips —
+Python↔JS mapping consistency is test-pinned). REMAINING: NPC spawn points are not in the
+cache (server-side data) — rendering NPCs needs a separately sourced spawn dataset; upper
+floors (plane > 0) not yet served/rendered.
 
 ## [client:simulation] World client — game systems (combat/skilling/quests)
 

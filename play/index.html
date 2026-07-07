@@ -23,11 +23,21 @@ tool_script: "/assets/js/tools/world-client.js"
   (source: OSRS Wiki, “Game tick” / “Pathfinding”). Press <kbd>C</kbd> to see the collision
   overlay.</p>
 
+  <p><strong>Objects are live:</strong> every interactable object placement (57,130 across the
+  world) is decoded from the cache with its real right-click menu — hover shows the game-style
+  “<em>default action</em> Name” text, right-click opens the option list exactly as the cache
+  defines it, and clicking walks you there. <strong>Doors and gates genuinely open</strong>:
+  opening clears exactly the wall edges their closed state clips, so buildings are navigable —
+  the same passage semantics as the game. Other actions walk you to the object and report that
+  their effect isn't simulated yet; nothing is faked.</p>
+
   <h2>Still missing, and exactly why</h2>
   <ul>
-    <li><strong>NPCs &amp; objects rendered in the world</strong> — placements are now decodable
-      (locations decrypt with published XTEA keys); rendering them in the client is next.
+    <li><strong>NPCs in the world</strong> — NPC spawn points are not part of the cache (they are
+      server-side data); rendering NPCs needs a separately sourced spawn dataset.
       (<code>BACKLOG [client:locations-spawns]</code>)</li>
+    <li><strong>Upper floors</strong> — the client renders plane 0; staircases/ladders list their
+      real actions but plane changes aren't simulated yet.</li>
     <li><strong>The simulation</strong> — combat, quests, drops and AI run on Jagex servers and are
       not present in any client data; they can only be re-implemented from sourced formulas under
       the KB no-fabrication protocol. (<code>BACKLOG [client:simulation]</code>)</li>

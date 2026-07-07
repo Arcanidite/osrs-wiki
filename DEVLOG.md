@@ -180,4 +180,28 @@ screenshot matches the real castle/river layout.
 
 ---
 
+### 2026-07-07 — Interactable objects live on `/play`: real menus, real doors
+
+- **Data:** `tools/openrs2_extract.py --locs` emits `assets/data/cache/locs/<rid>.json.gz` —
+  57,130 plane-0 placements of objects that carry cache actions (`[[id, loc_type, rot, lx, ly]]`),
+  1,355 regions. `objects.pack` now preserves the full 5-slot action array in cache order
+  (first action = the game's default left-click option).
+- **Client interaction model** (`world-client.js`): hover shows the game-style
+  "<em>default action</em> Name (/ n more)" text; right-click opens a Choose Option menu listing
+  the object's real cache actions + Walk here; selecting an action BFS-walks the player to the
+  object (footprints are clipped, so the approach lands adjacent naturally).
+  **Doors/gates open for real:** wall-type locs with an Open action toggle passage by clearing
+  exactly the wall edges their closed state clips (`wallEdges()` in `assets/js/world/collision.js`
+  mirrors the extractor's mapping; consistency is pinned by a test over the real Lumbridge grid —
+  the collision data carries precisely the predicted bits, and clearing them flips `canStep`).
+  Open doors render green; menu/hover flip to Close. All other actions walk to the object and
+  report "not simulated yet" — no faked outcomes.
+- **Verified:** 41/41 tests (loc feed integrity, door-passage flip on real doors); headless UI
+  smoke on the real Lumbridge Door (3226,3214): hover "Open Door" → menu ["Open Door", "Walk here",
+  "Cancel"] → click walks adjacent and opens → hover "Close Door"; screenshot confirms markers +
+  open-door rendering.
+- NPC spawns remain outside the cache (server-side); tracked in `[client:locations-spawns]`.
+
+---
+
 <!-- Add entries below as features are built out -->

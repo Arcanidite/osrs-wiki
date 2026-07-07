@@ -52,6 +52,39 @@ export function canStep(get, x, y, dx, dy) {
   return canCardinal(get, x, y, dx, dy);
 }
 
+// Wall-loc edge mapping — mirrors the extractor's collision builder
+// (tools/openrs2_extract.py wall_flags). Used by the client to toggle door
+// passage: opening a door clears exactly the edges its closed state set.
+// → { own: mask on the loc tile, neighbours: [{dx, dy, mask}] }
+export function wallEdges(locType, rot) {
+  if (locType === 0 || locType === 2) {
+    const sides = {
+      0: [WALL_W, { dx: -1, dy: 0, mask: WALL_E }],
+      1: [WALL_N, { dx: 0, dy: 1, mask: WALL_S }],
+      2: [WALL_E, { dx: 1, dy: 0, mask: WALL_W }],
+      3: [WALL_S, { dx: 0, dy: -1, mask: WALL_N }],
+    };
+    let own = sides[rot][0];
+    const neighbours = [sides[rot][1]];
+    if (locType === 2) {
+      const r2 = (rot + 1) & 3;
+      own |= sides[r2][0];
+      neighbours.push(sides[r2][1]);
+    }
+    return { own, neighbours };
+  }
+  if (locType === 1 || locType === 3) {
+    const corners = {
+      0: [CORNER_NW, { dx: -1, dy: 1, mask: CORNER_SE }],
+      1: [CORNER_NE, { dx: 1, dy: 1, mask: CORNER_SW }],
+      2: [CORNER_SE, { dx: 1, dy: -1, mask: CORNER_NW }],
+      3: [CORNER_SW, { dx: -1, dy: -1, mask: CORNER_NE }],
+    };
+    return { own: corners[rot][0], neighbours: [corners[rot][1]] };
+  }
+  return { own: 0, neighbours: [] };
+}
+
 // The game's checked directions, in its evaluation order.
 const DIRS = [
   [-1, 0], [1, 0], [0, -1], [0, 1],        // W E S N

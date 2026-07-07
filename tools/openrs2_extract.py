@@ -583,7 +583,7 @@ def load_configs():
     return objects, unders, overs, variant_used
 
 
-def build():
+def build(locs_only=False):
     from PIL import Image  # noqa: F401  (import check before long fetch)
     keys = load_keys()
     terrain_idx, locs_idx = map_group_index()
@@ -627,6 +627,7 @@ def build():
                 if settings[p][x][y] & 1:
                     world.add(bx + x, by + y, FULL)
 
+    region_locs = {}   # rid -> [[obj_id, type, rot, lx, ly], ...] (interactable, plane 0)
     for (rx, ry), gid in locs_idx.items():
         raw = got.get((5, gid))
         key = keys.get((rx << 8) | ry)
@@ -640,6 +641,7 @@ def build():
             continue
         settings = terrains.get((rx, ry), (None,))[0]
         bx, by = rx * MAPSQ, ry * MAPSQ
+        interactable = region_locs.setdefault((rx << 8) | ry, [])
         for obj_id, ltype, rot, z, lx, ly in locs:
             # bridge shift: locs on plane 1 above a bridge tile belong to ground
             eff_z = z
@@ -648,7 +650,13 @@ def build():
             if eff_z != 0:
                 continue
             d = objects.get(obj_id)
-            if d is None or d["interactType"] == 0:
+            if d is None:
+                continue
+            # interactable placements → per-region loc feed (real cache
+            # actions drive the client's context menus / navigation)
+            if d["name"] != "null" and any(a for a in d["actions"]):
+                interactable.append([obj_id, ltype, rot, lx, ly])
+            if d["interactType"] == 0:
                 continue
             if ltype in (0, 1, 2, 3):
                 own, nbs = wall_flags(ltype, rot)
@@ -668,6 +676,30 @@ def build():
                 world.add(bx + lx, by + ly, FULL)
 
     print(f"collision built ({undecryptable} squares without usable keys/locs)")
+
+    # ── emit interactable locations ──
+    locs_dir = OUT / "locs"
+    locs_dir.mkdir(parents=True, exist_ok=True)
+    for f in locs_dir.glob("*.json.gz"):
+        f.unlink()
+    locs_manifest = {}
+    total_locs = 0
+    for rid, entries in region_locs.items():
+        if not entries:
+            continue
+        (locs_dir / f"{rid}.json.gz").write_bytes(
+            gzip.compress(json.dumps(entries, separators=(",", ":")).encode(), 9))
+        locs_manifest[str(rid)] = len(entries)
+        total_locs += len(entries)
+    (locs_dir / "manifest.json").write_text(json.dumps(
+        {"source": f"OpenRS2 {STAMP}", "plane": 0,
+         "format": "[[obj_id, loc_type, rotation, local_x, local_y], ...] — objects with cache actions only",
+         "regions": locs_manifest}))
+    print(f"locs: {total_locs} interactable placements across {len(locs_manifest)} regions")
+
+    if locs_only:
+        emit_objects_pack(objects)
+        return
 
     # ── emit ──
     map_dir = OUT / "map"
@@ -694,16 +726,20 @@ def build():
     (col_dir / "manifest.json").write_text(json.dumps({**meta, "regions": manifest}))
     print(f"emitted {len(manifest)} regions → map/ + collision/")
 
-    # objects.pack with real names (same action filter as the old extractor)
+    emit_objects_pack(objects)
+
+
+def emit_objects_pack(objects):
+    """objects.pack with real names + full action list (order preserved —
+    the first action is the game's default left-click option)."""
     recs = []
     for oid, d in sorted(objects.items()):
-        actions = [a for a in d["actions"] if a]
-        if not actions or d["name"] == "null":
+        if not any(a for a in d["actions"]) or d["name"] == "null":
             continue
         recs.append({
             "id": oid, "name": d["name"],
             "slug": d["name"].lower().replace(" ", "-").replace("'", ""),
-            "actions": actions, "sizeX": d["sizeX"], "sizeY": d["sizeY"],
+            "actions": d["actions"], "sizeX": d["sizeX"], "sizeY": d["sizeY"],
             "interactType": d["interactType"], "wallOrDoor": d["wallOrDoor"],
         })
     pack_write(recs, OUT / "objects.pack")
@@ -735,5 +771,7 @@ def verify():
 if __name__ == "__main__":
     if "--build" in sys.argv:
         build()
+    elif "--locs" in sys.argv:
+        build(locs_only=True)
     else:
         verify()

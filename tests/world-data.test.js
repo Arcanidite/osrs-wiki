@@ -92,3 +92,68 @@ test("collision data exists for the whole emitted region set", () => {
     assert.ok(g && g.length === 4096, `region ${rid} grid intact`);
   }
 });
+
+// ── object locations + door passage (real Lumbridge data) ──────────────────
+import { wallEdges } from "../assets/js/world/collision.js";
+
+const LOCS = join(ROOT, "assets", "data", "cache", "locs");
+const OBJECTS_PACK = join(ROOT, "assets", "data", "cache", "objects.pack");
+
+function readObjectsPack() {
+  const buf = readFileSync(OBJECTS_PACK);
+  const n = buf.readUInt32LE(4);
+  const out = new Map();
+  for (let i = 0; i < n; i++) {
+    const off = buf.readUInt32LE(8 + i * 12 + 4);
+    const len = buf.readUInt32LE(8 + i * 12 + 8);
+    const rec = JSON.parse(buf.subarray(off, off + len).toString("utf8"));
+    out.set(rec.id, rec);
+  }
+  return out;
+}
+
+test("Lumbridge loc feed: real named objects with cache actions", () => {
+  const locs = JSON.parse(gunzipSync(readFileSync(join(LOCS, "12850.json.gz"))).toString());
+  const defs = readObjectsPack();
+  assert.ok(locs.length > 50, `expected >50 locs, got ${locs.length}`);
+  const names = new Set(locs.map(([id]) => defs.get(id)?.name));
+  for (const expected of ["Tree", "Door", "Large door"])
+    assert.ok(names.has(expected), `${expected} placed in Lumbridge`);
+  for (const [id] of locs)
+    assert.ok((defs.get(id)?.actions ?? []).some(Boolean), `object ${id} has actions`);
+});
+
+test("doors: extractor wall flags match wallEdges(), clearing them opens passage", () => {
+  const locs = JSON.parse(gunzipSync(readFileSync(join(LOCS, "12850.json.gz"))).toString());
+  const defs = readObjectsPack();
+  const doors = locs.filter(([id, type]) =>
+    type <= 3 && (defs.get(id)?.actions ?? []).includes("Open"));
+  assert.ok(doors.length >= 5, `expected >=5 doors/gates, got ${doors.length}`);
+
+  const cleared = new Map();
+  const openFlags = (x, y) => {
+    const f = flagsAt(x, y);
+    if (f == null) return null;
+    return f & ~(cleared.get(`${x},${y}`) ?? 0);
+  };
+
+  let verified = 0;
+  for (const [id, type, rot, lx, ly] of doors) {
+    if (type === 1 || type === 3) continue; // corner pillars: no edge passage
+    const x = 3200 + lx, y = 3200 + ly;
+    const { own, neighbours } = wallEdges(type, rot);
+    const f = flagsAt(x, y);
+    assert.equal(f & own, own,
+      `collision grid carries the door's wall bits at (${x},${y}) type ${type} rot ${rot}`);
+    // pick the edge direction and confirm passage flips when cleared
+    const n = neighbours[0];
+    if (flagsAt(x + n.dx, y + n.dy) == null) continue;
+    const before = canStep(openFlags, x, y, n.dx, n.dy);
+    cleared.set(`${x},${y}`, own);
+    cleared.set(`${x + n.dx},${y + n.dy}`, n.mask);
+    const after = canStep(openFlags, x, y, n.dx, n.dy);
+    cleared.clear();
+    if (!before && after) verified++;
+  }
+  assert.ok(verified >= 3, `door passage flip verified on ${verified} doors`);
+});

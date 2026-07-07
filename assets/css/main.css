@@ -1157,3 +1157,13 @@ mark.rtb-hl-fuzzy { background: #ffb347; }
 .wc-notes h2 { font-size: var(--fs-lg); margin: var(--sp) 0 var(--sp-h); }
 .wc-notes ul { font-size: var(--fs-sm); padding-left: 1.2rem; }
 .wc-notes li { margin-bottom: var(--sp-q); }
+
+/* ── World client: object interaction ────────────────────────────────────── */
+.wc-hover { color: var(--gold); font-weight: 600; min-width: 12rem; font-size: var(--fs-sm); }
+.wc-menu { position: absolute; z-index: 40; background: #5d5447; border: 1px solid #2e2a24; border-radius: 2px; min-width: 10rem; font-size: var(--fs-sm); box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+.wc-menu-title { background: #000; color: #5d5447; padding: 2px var(--sp-h); font-size: var(--fs-xs); }
+.wc-menu-row { padding: 2px var(--sp-h); color: #fff; cursor: pointer; white-space: nowrap; }
+.wc-menu-row b { color: #ff9040; font-weight: 600; }
+.wc-menu-row:hover { background: #6d6455; }
+.wc-toast { position: absolute; left: 50%; transform: translateX(-50%); top: 4.5rem; z-index: 30; background: rgba(20,20,20,0.9); color: #ffd54a; padding: var(--sp-q) var(--sp); border-radius: var(--radius); font-size: var(--fs-sm); }
+#world-root { position: relative; }
