@@ -561,8 +561,12 @@ SHIPPED 2026-07-07 (bounded random walk around spawn, collision-honoring; radius
 labelled placeholders in npc-ai.js). SHOPS SHIPPED 2026-07-07 (RSPS-derived: 19 starter-city shops / 166 stock lines parsed
 from Apollo@87553a8 shop DSL — data only; values from osrsbox cost; bindings id+name-validated,
 swordshop pair spawn-verified; buy/sell UI with Apollo price multipliers + rsmod restock
-cadence; labelled approximation, see GAME_KB + GOTCHAS G-5). REMAINING (each blocked on a
-sourced dataset): shops beyond the starter cities, quests, dialogue scripts.
+cadence; labelled approximation, see GAME_KB + GOTCHAS G-5). SIM PARAMS upgraded 2026-07-07 (respawn/wander/thieve/fish
+defaults now RSPS-derived with citations — see GAME_KB "Simulation parameter defaults").
+REMAINING (each blocked on a sourced dataset): shops beyond the starter cities, quests,
+dialogue scripts, GATHER_CONFIG success rates (2004scape per-tree/axe low/high tables are a
+candidate), drop tables for the 914 osrsbox-missing npcs (2004scape's are script logic in
+2004-era ids — skipped as not cheaply extractable).
 
 ## [client:fidelity-gate] World client ships only at gameplay fidelity
 

@@ -332,4 +332,31 @@ Three sourced systems + one honest refusal. 69/69 tests.
 
 ---
 
+### 2026-07-07 — RSPS repos approved as data sources: shops live, params sourced
+
+Directive: OSRS private-server codebases + RuneLite may be mined for DATA (never code, never
+dialogue), cited repo+commit+path, labelled "RSPS-derived approximation", ids validated
+against our packs. 71/71 tests.
+
+- **Shops (shops.pack + Trade UI):** Apollo (rev 377) `shops.plugin.kts` DSL parsed for the
+  five starter cities → 19 shops / 166 stock entries (values from osrsbox `cost`; 1 ambiguous
+  'Cape' entry dropped). Bindings by OSRS npc NAME validated in npcs.pack; the Varrock
+  Swordshop pair (2884/2885) bound by id after spawn-coordinate verification (same names as
+  general-store keepers — GOTCHAS G-5). Buy/sell UI with Apollo's value multipliers and
+  rsmod's restockCycles=100 drift; unsourced shops still refuse honestly.
+- **Sim params:** npcRespawnTicks 50→100 (rsmod DEFAULT_RESPAWN_RATE, 2004scape corroborates);
+  flat thieve/fish chance knobs replaced by the documented low/high level interpolation
+  (`statRandomChance`) with 2004scape's Man/Woman 180/240 and shrimps 48/256 pairs — both
+  files' XP values independently corroborate our wiki-sourced 8/10 xp. WANDER_RADIUS 5 label
+  upgraded to RSPS-derived (rsmod default). Wiki-vs-2004scape stun conflict recorded (G-6,
+  wiki wins). Still UNKNOWN: wander cadence, GATHER_CONFIG rates (2004scape has per-tree/axe
+  low/high woodcutting tables — future upgrade candidate).
+- **Drop tables for osrsbox's 914 missing npcs: skipped (not cheap).** 2004scape's tables are
+  RuneScript control flow (`data/src/scripts/drop tables/scripts/*.rs2`), keyed by 2004-era
+  script names; rsmod content has none. Zenyte source: no public repo found (GitHub search).
+- Checked and empty: osrsbox shops.json (404), mejrs/data_osrs (no shop file),
+  Tomm0017/rsmod (engine-only shops), rsmod content (1 shop, used for restock only).
+
+---
+
 <!-- Add entries below as features are built out -->
