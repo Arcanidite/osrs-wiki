@@ -204,4 +204,25 @@ screenshot matches the real castle/river layout.
 
 ---
 
+### 2026-07-07 — `/play` actions perform: woodcutting, banking, inventory/skills
+
+Context-menu fix + first simulated systems (menu rows are real buttons chosen on click;
+hit-testing scales CSS→canvas px so hover/click tiles are exact; main.css links cache-busted).
+
+- **Simulation modules** (pure, node-tested): `assets/js/world/xp.js` (documented XP curve,
+  anchor-tested: 83 → lvl 2, 13,034,431 → lvl 99), `gather.js` (sourced tree/axe tables — see
+  GAME_KB "Woodcutting"; the four unpublished rates are labelled `GATHER_CONFIG` placeholders),
+  `player-state.js` (28-slot inventory w/ stacking, bank, xp/levels, serialization).
+- **Client**: chop sessions run on game ticks (walk-to via BFS, axe + level gating with real
+  requirements, logs+XP on success, level-up messages, tree depletion/respawn state, felled trees
+  lose their menu until respawn), bank booths/chests open a working deposit/withdraw panel,
+  side panel with Inventory (sprite icons) / Skills tabs, message log, state persisted to
+  localStorage (`osrs-world:v1`; bronze-axe sandbox starting kit).
+- **Honesty guard in CI**: `tests/simulation.test.js` verifies every tree/axe item id against the
+  real `items.pack` name — the tables cannot silently drift from the cache. 49/49 tests.
+- Verified headless: hover "Chop down Tree / 1 more" → click → walked to the real tree at
+  (3217,3231) → "You get some logs. (+25 Woodcutting xp)" → inventory 2/28.
+
+---
+
 <!-- Add entries below as features are built out -->

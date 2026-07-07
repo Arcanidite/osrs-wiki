@@ -19,6 +19,10 @@ import {
   canStep, findPath, wallEdges, FULL, WALL_N, WALL_E, WALL_S, WALL_W,
 } from "../world/collision.js";
 import { readPack } from "../pack-reader.js";
+import { TREES, GATHER_CONFIG, bestAxe, chopRoll } from "../world/gather.js";
+import { createPlayerState } from "../world/player-state.js";
+
+const SAVE_KEY = "osrs-world:v1";
 
 const BASE = document.querySelector("[data-baseurl]")?.dataset.baseurl ?? "";
 const DATA = `${BASE}/assets/data/cache`;
@@ -77,8 +81,20 @@ async function init() {
     <canvas class="wc-canvas" tabindex="0"></canvas>
     <div class="wc-menu" hidden></div>
     <div class="wc-toast" hidden></div>
+    <div class="wc-side">
+      <div class="wc-side-tabs">
+        <button class="wc-tab active" data-tab="inv">Inventory</button>
+        <button class="wc-tab" data-tab="skills">Skills</button>
+      </div>
+      <div class="wc-side-body" data-panel="inv"></div>
+      <div class="wc-side-body" data-panel="skills" hidden></div>
+    </div>
+    <div class="wc-bank" hidden></div>
+    <div class="wc-log"></div>
     <p class="wc-help">Left-click: walk / default action · right-click: option menu (real cache
-      actions) · WASD/arrows step · R run · C collision · O objects · 600 ms ticks.</p>`;
+      actions) · WASD/arrows step · R run · C collision · O objects · 600 ms ticks.
+      Doors open, trees chop (XP/levels/inventory), bank booths bank. Numbers that Jagex never
+      published (success/respawn rates) are labelled placeholders — see page notes.</p>`;
 
   const canvas = root.querySelector(".wc-canvas");
   const ctx = canvas.getContext("2d");
@@ -201,8 +217,10 @@ async function init() {
     return "Open";
   }
 
-  // actions shown for a loc — real cache list; open doors offer Close
+  // actions shown for a loc — real cache list; open doors offer Close;
+  // felled trees have no options until they respawn
   function menuActions(loc) {
+    if (isDepleted(loc)) return [];
     const acts = (loc.def.actions ?? []).filter(Boolean);
     if (isDoor(loc) && openDoors.has(loc.key))
       return ["Close", ...acts.filter((a) => a !== "Open")];
@@ -213,9 +231,97 @@ async function init() {
   const spawn = LANDMARKS[0];
   const player = { x: spawn.x, y: spawn.y, px: spawn.x, py: spawn.y };
   let path = [];
-  let pending = null;  // {loc, action} — runs when we arrive next to it
+  let pending = null;    // {loc, action} — runs when we arrive next to it
+  let gathering = null;  // {loc, treeName, nextRoll} — active skilling session
   let tick = 0;
   const keys = new Set();
+
+  // ── simulation state (persisted) ─────────────────────────────────────────
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(SAVE_KEY) ?? "null"); } catch {}
+  const state = createPlayerState(saved);
+  if (!saved) state.addItem({ id: 1351, name: "Bronze axe" }); // sandbox starting kit
+  let dirty = !saved;
+  const save = () => {
+    try { localStorage.setItem(SAVE_KEY, JSON.stringify(state.toJSON())); } catch {}
+    dirty = false;
+  };
+  const depleted = new Map(); // loc.key -> respawn tick (session-local)
+
+  const logEl = root.querySelector(".wc-log");
+  function say(msg) {
+    const div = document.createElement("div");
+    div.textContent = msg;
+    logEl.appendChild(div);
+    while (logEl.children.length > 7) logEl.firstChild.remove();
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+
+  // ── side panel (inventory / skills) ──────────────────────────────────────
+  const invPanel = root.querySelector('[data-panel="inv"]');
+  const skillsPanel = root.querySelector('[data-panel="skills"]');
+  root.querySelectorAll(".wc-tab").forEach((b) =>
+    b.addEventListener("click", () => {
+      root.querySelectorAll(".wc-tab").forEach((x) => x.classList.toggle("active", x === b));
+      invPanel.hidden = b.dataset.tab !== "inv";
+      skillsPanel.hidden = b.dataset.tab !== "skills";
+    }));
+
+  function spriteSpan(id, name) {
+    return `<span class="sri-sprite" data-item-id="${id}" title="${esc(name)}">${esc(name[0])}</span>`;
+  }
+  function renderPanels() {
+    invPanel.innerHTML = `<div class="wc-inv-grid">` +
+      state.raw.inv.map((it) =>
+        `<span class="wc-inv-slot">${spriteSpan(it.id, it.name)}` +
+        (it.qty > 1 ? `<span class="wc-qty">${it.qty}</span>` : "") + `</span>`).join("") +
+      `</div><div class="wc-inv-count">${state.invCount()} / 28</div>`;
+    const skills = Object.keys(state.raw.xp);
+    skillsPanel.innerHTML = skills.length
+      ? skills.map((sk) =>
+          `<div class="wc-skill-row"><span>${esc(sk)}</span>` +
+          `<b>${state.level(sk)}</b><i>${Math.floor(state.xp(sk)).toLocaleString()} xp</i></div>`).join("")
+      : `<div class="wc-skill-row">No XP yet — chop a tree.</div>`;
+    window.SpriteAtlas?.ready
+      ? paintSprites()
+      : (window.SpriteAtlas?.load(BASE),
+         window.addEventListener("osrs-sprite-ready", paintSprites, { once: true }));
+  }
+  function paintSprites() {
+    const a = window.SpriteAtlas;
+    if (!a?.ready) return;
+    root.querySelectorAll(".sri-sprite[data-item-id]").forEach((el) => {
+      const css = a.css(+el.dataset.itemId);
+      if (css) { el.style.background = css; el.textContent = ""; }
+    });
+  }
+
+  // ── bank panel ────────────────────────────────────────────────────────────
+  const bankEl = root.querySelector(".wc-bank");
+  function renderBank() {
+    if (bankEl.hidden) return;
+    bankEl.innerHTML = `<div class="wc-bank-hd"><b>Bank</b>
+        <button class="btn wc-bank-depall">Deposit all</button>
+        <button class="btn wc-bank-close">✕</button></div>
+      <div class="wc-bank-cols">
+        <div><h3>Bank</h3>${state.raw.bank.map((it) =>
+          `<button class="wc-bank-row" data-w="${it.id}">${spriteSpan(it.id, it.name)} ${esc(it.name)} × ${it.qty}</button>`).join("") || "<i>empty</i>"}</div>
+        <div><h3>Inventory</h3>${state.raw.inv.map((it, i) =>
+          `<button class="wc-bank-row" data-d="${it.id}">${spriteSpan(it.id, it.name)} ${esc(it.name)}${it.qty > 1 ? ` × ${it.qty}` : ""}</button>`).join("") || "<i>empty</i>"}</div>
+      </div>`;
+    bankEl.querySelector(".wc-bank-close").addEventListener("click", () => { bankEl.hidden = true; });
+    bankEl.querySelector(".wc-bank-depall").addEventListener("click", () => {
+      state.depositAll(); dirty = true; renderBank(); renderPanels();
+    });
+    bankEl.querySelectorAll("[data-d]").forEach((b) =>
+      b.addEventListener("click", () => { state.deposit(+b.dataset.d); dirty = true; renderBank(); renderPanels(); }));
+    bankEl.querySelectorAll("[data-w]").forEach((b) =>
+      b.addEventListener("click", () => {
+        if (!state.withdraw(+b.dataset.w)) say("Your inventory is full.");
+        dirty = true; renderBank(); renderPanels();
+      }));
+    paintSprites();
+  }
 
   const KEY_DIRS = {
     w: [0, 1], arrowup: [0, 1], s: [0, -1], arrowdown: [0, -1],
@@ -236,12 +342,60 @@ async function init() {
     toastEl._t = setTimeout(() => { toastEl.hidden = true; }, 2600);
   }
 
+  const isBank = (loc) =>
+    /^Bank (booth|chest)/.test(loc.def.name) &&
+    (loc.def.actions ?? []).some((a) => a === "Bank" || a === "Use");
+  const isTree = (loc) => TREES[loc.def.name] != null;
+  const isDepleted = (loc) => (depleted.get(loc.key) ?? 0) > tick;
+
   function performAction(loc, action) {
     if (isDoor(loc) && (action === "Open" || action === "Close")) {
       toggleDoor(loc);
       return;
     }
+    if (isBank(loc) && (action === "Bank" || action === "Use")) {
+      bankEl.hidden = false;
+      renderBank();
+      return;
+    }
+    if (isTree(loc) && action.startsWith("Chop")) {
+      if (isDepleted(loc)) { say("The tree has been felled."); return; }
+      const t = TREES[loc.def.name];
+      const lvl = state.level("woodcutting");
+      if (!bestAxe((id) => state.hasItem(id), lvl)) { say("You need an axe you can use to chop this tree."); return; }
+      if (lvl < t.level) { say(`You need a Woodcutting level of ${t.level} to chop this tree.`); return; }
+      gathering = { loc, treeName: loc.def.name, nextRoll: tick + GATHER_CONFIG.rollTicks };
+      say("You swing your axe at the tree...");
+      return;
+    }
     toast(`${action} ${loc.def.name} — not simulated yet (see BACKLOG [client:simulation])`);
+  }
+
+  function gatherTick() {
+    if (!gathering) return;
+    const { loc, treeName } = gathering;
+    if (!adjacentTo(loc) || isDepleted(loc)) { gathering = null; return; }
+    if (tick < gathering.nextRoll) return;
+    gathering.nextRoll = tick + GATHER_CONFIG.rollTicks;
+    const roll = chopRoll(treeName, state.level("woodcutting"), (id) => state.hasItem(id));
+    if (roll.error) { gathering = null; return; }
+    if (!roll.ok) return;
+    const t = roll.tree;
+    if (!state.addItem({ id: t.itemId, name: t.item })) {
+      say("Your inventory is too full to hold any more logs.");
+      gathering = null;
+      return;
+    }
+    const { levelled } = state.addXp("woodcutting", t.xp);
+    say(`You get some ${t.item.toLowerCase()}. (+${t.xp} Woodcutting xp)`);
+    if (levelled) say(`Your Woodcutting level is now ${levelled}.`);
+    dirty = true;
+    renderPanels();
+    if (Math.random() < GATHER_CONFIG.depleteChance) {
+      depleted.set(loc.key, tick + GATHER_CONFIG.respawnTicks);
+      say("The tree falls.");
+      gathering = null;
+    }
   }
 
   function walkToLoc(loc, action) {
@@ -263,7 +417,7 @@ async function init() {
     }
     kdx = Math.sign(kdx); kdy = Math.sign(kdy);
     if (kdx || kdy) {
-      path = []; pending = null;
+      path = []; pending = null; gathering = null;
       for (let i = 0; i < speed; i++) {
         if (canStep(flagsAt, player.x, player.y, kdx, kdy)) {
           player.x += kdx; player.y += kdy;
@@ -292,6 +446,9 @@ async function init() {
         else toast(`I can't reach that.`);
       }
     }
+    gatherTick();
+    for (const [key, until] of depleted) if (until <= tick) depleted.delete(key);
+    if (dirty && tick % 5 === 0) save();
     posEl.textContent = `(${player.x}, ${player.y}) · region ${regionAt(player.x, player.y)}`;
     tickEl.textContent = `tick ${tick}`;
   }
@@ -426,7 +583,7 @@ async function init() {
           if (own & WALL_E) ctx.fillRect(sx + tilePx - t, sy, t, tilePx);
           if (!(own & 15)) ctx.fillRect(sx, sy, t, t); // corner pillars
         } else {
-          ctx.strokeStyle = "rgba(255,213,74,0.8)";
+          ctx.strokeStyle = isDepleted(loc) ? "rgba(150,150,150,0.5)" : "rgba(255,213,74,0.8)";
           ctx.lineWidth = 1;
           ctx.strokeRect(sx + 1.5, sy + 1.5, w - 3, h - 3);
         }
@@ -509,6 +666,7 @@ async function init() {
     requestAnimationFrame(draw);
   }
   requestAnimationFrame(draw);
+  renderPanels();
   canvas.focus();
 }
 

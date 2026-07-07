@@ -544,10 +544,13 @@ floors (plane > 0) not yet served/rendered.
 
 ## [client:simulation] World client — game systems (combat/skilling/quests)
 
-**Status:** TODO — cannot be extracted, only re-implemented. RuneLite and the cache contain
-definitions and assets, not game logic; the simulation is server-side at Jagex. Any gameplay
-must be rebuilt from *sourced* formulas (OSRS Wiki documents combat math, xp tables, etc.) under
-the KB protocol — no guessed mechanics. Sequence after collision + spawns exist.
+**Status:** IN PROGRESS 2026-07-07 — cannot be extracted, only re-implemented from sourced
+mechanics (KB protocol). SHIPPED: doors/gates (passage), Woodcutting gathering (sourced XP/level
+tables, documented XP curve, real item ids test-pinned; success/deplete/respawn rates are
+labelled GATHER_CONFIG placeholders), 28-slot inventory + skills + bank (deposit/withdraw),
+localStorage persistence, message log. NEXT candidates (each needs a sourced dataset first):
+mining (needs rock-object-id → ore table), fishing (spots are NPCs — blocked on NPC spawns),
+firemaking, prayer/altars, plane changes for stairs/ladders, combat (needs full formula sourcing).
 
 ## [client:fidelity-gate] World client ships only at gameplay fidelity
 

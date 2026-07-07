@@ -43,6 +43,17 @@
   Real cache data, not an artifact.
 - **source:** `tools/extract_cache.py` over osrsbox items-cache + live cache dump · **stamp:** 2026-07-06.
 
+### Woodcutting (drives /play gathering + future router options)
+- **Facts (sourced, OSRS Wiki · stamp 2026-07-07):** log XP/level per tree — Tree/Dead tree →
+  Logs lvl 1 / 25 xp; Oak 15 / 37.5; Willow 30 / 67.5; Teak 35 / 85; Maple 45 / 100; Mahogany
+  50 / 125; Yew 60 / 175; Magic 75 / 250. Axe Woodcutting reqs: bronze/iron 1, steel 6, black 11,
+  mithril 21, adamant 31, rune 41, dragon 61. XP curve per the documented formula
+  (anchors: lvl 2 = 83 xp, lvl 99 = 13,034,431 xp). Item ids cross-checked against `items.pack`
+  by `tests/simulation.test.js` — the table cannot silently drift from the cache.
+- **Placeholders (NOT game facts):** per-roll success chance model, roll cadence, depletion odds,
+  respawn time — Jagex has never published these; they live in `GATHER_CONFIG`
+  (`assets/js/world/gather.js`), labelled, user-tunable, never asserted as real rates.
+
 ## Facts by option `id`
 
 <!-- One entry per catalogued option. Template:
