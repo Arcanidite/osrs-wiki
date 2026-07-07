@@ -67,3 +67,50 @@ export function chopRoll(treeName, wcLevel, hasItem, rng = Math.random) {
   const chance = Math.min(0.95, GATHER_CONFIG.chanceBase + GATHER_CONFIG.chanceScale * over);
   return { ok: rng() < chance, tree };
 }
+
+// ── Mining ───────────────────────────────────────────────────────────────────
+// SOURCED (OSRS Wiki rock pages, stamp 2026-07-07): rock object ids (validated
+// against extracted placements at known mine sites, e.g. SE Varrock), Mining
+// level reqs, XP per ore, respawn times. Rocks always deplete after one ore
+// (standard rocks — documented behaviour). Ore/pickaxe item ids are
+// cross-checked against items.pack by tests. Per-roll success chance remains
+// a labelled placeholder (same model/knobs as GATHER_CONFIG).
+
+export const ROCKS = (() => {
+  const ores = [
+    { ids: [11161, 10943, 10079], item: "Copper ore", itemId: 436, level: 1,  xp: 17.5, respawnTicks: 4 },
+    { ids: [11361, 11360],        item: "Tin ore",    itemId: 438, level: 1,  xp: 17.5, respawnTicks: 4 },
+    { ids: [11365, 11364, 42833, 36203], item: "Iron ore", itemId: 440, level: 15, xp: 35, respawnTicks: 9 },
+    { ids: [11367, 11366, 36204], item: "Coal",       itemId: 453, level: 30, xp: 50, respawnTicks: 50 },
+  ];
+  const byId = {};
+  for (const o of ores) for (const id of o.ids) byId[id] = o;
+  return byId;
+})();
+
+export const PICKAXES = [
+  { id: 11920, name: "Dragon pickaxe",  level: 61 },
+  { id: 1275,  name: "Rune pickaxe",    level: 41 },
+  { id: 1271,  name: "Adamant pickaxe", level: 31 },
+  { id: 1273,  name: "Mithril pickaxe", level: 21 },
+  { id: 1269,  name: "Steel pickaxe",   level: 6 },
+  { id: 1267,  name: "Iron pickaxe",    level: 1 },
+  { id: 1265,  name: "Bronze pickaxe",  level: 1 },
+];
+
+export function bestPickaxe(hasItem, miningLevel) {
+  for (const p of PICKAXES) {
+    if (miningLevel >= p.level && hasItem(p.id)) return p;
+  }
+  return null;
+}
+
+export function mineRoll(rockObjectId, miningLevel, hasItem, rng = Math.random) {
+  const rock = ROCKS[rockObjectId];
+  if (!rock) return { error: "not-a-rock" };
+  if (!bestPickaxe(hasItem, miningLevel)) return { error: "no-pickaxe" };
+  if (miningLevel < rock.level) return { error: "level", need: rock.level };
+  const over = Math.min(1, (miningLevel - rock.level) / 98);
+  const chance = Math.min(0.95, GATHER_CONFIG.chanceBase + GATHER_CONFIG.chanceScale * over);
+  return { ok: rng() < chance, rock };
+}

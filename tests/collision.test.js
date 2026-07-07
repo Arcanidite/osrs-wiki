@@ -97,3 +97,29 @@ test("findPath: never cuts corners en route", () => {
     cur = p;
   }
 });
+
+test("multi-goal BFS stops at the NEAR side of an object instead of circling", () => {
+  // 3x3 full block at (10..12, 10..12); player approaches from the west.
+  const cells = {};
+  for (let x = 10; x <= 12; x++) for (let y = 10; y <= 12; y++) cells[`${x},${y}`] = FULL;
+  const goals = [];
+  for (let ox = -1; ox <= 3; ox++)
+    for (let oy = -1; oy <= 3; oy++)
+      if (ox === -1 || oy === -1 || ox === 3 || oy === 3)
+        goals.push({ x: 10 + ox, y: 10 + oy });
+  const path = findPath(grid(cells), 5, 11, 11, 11, { goals });
+  const end = path[path.length - 1];
+  assert.deepEqual(end, { x: 9, y: 11 }, "stops on the west ring tile");
+  assert.equal(path.length, 4, "no detour around the block");
+});
+
+test("multi-goal BFS: door reachable only from the far side routes there", () => {
+  // wall segment: FULL columns at x=3 except a 'door tile' gap at (3,0) whose
+  // west edge is walled — goals are both sides of the door edge.
+  const cells = { "3,0": WALL_W, "2,0": WALL_E };
+  for (let y = -3; y <= 3; y++) if (y !== 0) cells[`3,${y}`] = FULL;
+  const goals = [{ x: 3, y: 0 }, { x: 2, y: 0 }];
+  const path = findPath(grid(cells), 0, 0, 3, 0, { goals });
+  const end = path[path.length - 1];
+  assert.deepEqual(end, { x: 2, y: 0 }, "stops on the near side of the door edge");
+});

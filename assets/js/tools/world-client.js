@@ -19,7 +19,9 @@ import {
   canStep, findPath, wallEdges, FULL, WALL_N, WALL_E, WALL_S, WALL_W,
 } from "../world/collision.js";
 import { readPack } from "../pack-reader.js";
-import { TREES, GATHER_CONFIG, bestAxe, chopRoll } from "../world/gather.js";
+import {
+  TREES, ROCKS, GATHER_CONFIG, bestAxe, bestPickaxe, chopRoll, mineRoll,
+} from "../world/gather.js";
 import { createPlayerState } from "../world/player-state.js";
 
 const SAVE_KEY = "osrs-world:v1";
@@ -39,6 +41,7 @@ const LANDMARKS = [
   { name: "Al Kharid", x: 3293, y: 3186 },
   { name: "Ardougne", x: 2662, y: 3305 },
   { name: "Catherby", x: 2809, y: 3435 },
+  { name: "Varrock SE mine", x: 3285, y: 3365 },
 ];
 
 const root = document.getElementById("world-root");
@@ -240,7 +243,11 @@ async function init() {
   let saved = null;
   try { saved = JSON.parse(localStorage.getItem(SAVE_KEY) ?? "null"); } catch {}
   const state = createPlayerState(saved);
-  if (!saved) state.addItem({ id: 1351, name: "Bronze axe" }); // sandbox starting kit
+  // sandbox starting kit (bronze tools; granted once if absent everywhere)
+  for (const kit of [{ id: 1351, name: "Bronze axe" }, { id: 1265, name: "Bronze pickaxe" }]) {
+    const owned = state.hasItem(kit.id) || state.raw.bank.some((it) => it.id === kit.id);
+    if (!owned) state.addItem(kit);
+  }
   let dirty = !saved;
   const save = () => {
     try { localStorage.setItem(SAVE_KEY, JSON.stringify(state.toJSON())); } catch {}
@@ -364,8 +371,18 @@ async function init() {
       const lvl = state.level("woodcutting");
       if (!bestAxe((id) => state.hasItem(id), lvl)) { say("You need an axe you can use to chop this tree."); return; }
       if (lvl < t.level) { say(`You need a Woodcutting level of ${t.level} to chop this tree.`); return; }
-      gathering = { loc, treeName: loc.def.name, nextRoll: tick + GATHER_CONFIG.rollTicks };
+      gathering = { loc, kind: "tree", nextRoll: tick + GATHER_CONFIG.rollTicks };
       say("You swing your axe at the tree...");
+      return;
+    }
+    if (ROCKS[loc.id] && action === "Mine") {
+      if (isDepleted(loc)) { say("There is no ore currently available in this rock."); return; }
+      const rock = ROCKS[loc.id];
+      const lvl = state.level("mining");
+      if (!bestPickaxe((id) => state.hasItem(id), lvl)) { say("You need a pickaxe you can use to mine this rock."); return; }
+      if (lvl < rock.level) { say(`You need a Mining level of ${rock.level} to mine this rock.`); return; }
+      gathering = { loc, kind: "rock", nextRoll: tick + GATHER_CONFIG.rollTicks };
+      say("You swing your pickaxe at the rock...");
       return;
     }
     toast(`${action} ${loc.def.name} — not simulated yet (see BACKLOG [client:simulation])`);
@@ -373,25 +390,34 @@ async function init() {
 
   function gatherTick() {
     if (!gathering) return;
-    const { loc, treeName } = gathering;
+    const { loc, kind } = gathering;
     if (!adjacentTo(loc) || isDepleted(loc)) { gathering = null; return; }
     if (tick < gathering.nextRoll) return;
     gathering.nextRoll = tick + GATHER_CONFIG.rollTicks;
-    const roll = chopRoll(treeName, state.level("woodcutting"), (id) => state.hasItem(id));
+
+    const skill = kind === "tree" ? "woodcutting" : "mining";
+    const roll = kind === "tree"
+      ? chopRoll(loc.def.name, state.level(skill), (id) => state.hasItem(id))
+      : mineRoll(loc.id, state.level(skill), (id) => state.hasItem(id));
     if (roll.error) { gathering = null; return; }
     if (!roll.ok) return;
-    const t = roll.tree;
-    if (!state.addItem({ id: t.itemId, name: t.item })) {
-      say("Your inventory is too full to hold any more logs.");
+    const res = roll.tree ?? roll.rock;
+    if (!state.addItem({ id: res.itemId, name: res.item })) {
+      say("Your inventory is too full to hold any more.");
       gathering = null;
       return;
     }
-    const { levelled } = state.addXp("woodcutting", t.xp);
-    say(`You get some ${t.item.toLowerCase()}. (+${t.xp} Woodcutting xp)`);
-    if (levelled) say(`Your Woodcutting level is now ${levelled}.`);
+    const skillLabel = skill[0].toUpperCase() + skill.slice(1);
+    const { levelled } = state.addXp(skill, res.xp);
+    say(`You get some ${res.item.toLowerCase()}. (+${res.xp} ${skillLabel} xp)`);
+    if (levelled) say(`Your ${skillLabel} level is now ${levelled}.`);
     dirty = true;
     renderPanels();
-    if (Math.random() < GATHER_CONFIG.depleteChance) {
+    if (kind === "rock") {
+      // standard rocks always deplete after one ore (documented); respawn sourced per ore
+      depleted.set(loc.key, tick + res.respawnTicks);
+      gathering = null;
+    } else if (Math.random() < GATHER_CONFIG.depleteChance) {
       depleted.set(loc.key, tick + GATHER_CONFIG.respawnTicks);
       say("The tree falls.");
       gathering = null;
@@ -399,11 +425,23 @@ async function init() {
   }
 
   function walkToLoc(loc, action) {
-    // Path toward the object; footprints are FULL so BFS approach lands on
-    // the nearest open adjacent tile. Doors' own tiles are walkable targets.
+    // Goal set = every tile you could interact from: the footprint's adjacent
+    // ring (walls/doors additionally: the tile itself + across the edge).
+    // BFS picks the minimum-cost goal, so we stop at the NEAR side instead of
+    // circling to whatever tile is closest to the object's centre.
     pending = { loc, action };
+    const goals = [];
+    if (loc.type <= 3) {
+      goals.push({ x: loc.x, y: loc.y });
+      for (const n of wallEdges(loc.type, loc.rot).neighbours)
+        goals.push({ x: loc.x + n.dx, y: loc.y + n.dy });
+    }
+    for (let ox = -1; ox <= loc.w; ox++)
+      for (let oy = -1; oy <= loc.h; oy++)
+        if (ox === -1 || oy === -1 || ox === loc.w || oy === loc.h)
+          goals.push({ x: loc.x + ox, y: loc.y + oy });
     path = findPath(flagsAt, player.x, player.y,
-      loc.x + ((loc.w - 1) >> 1), loc.y + ((loc.h - 1) >> 1));
+      loc.x + ((loc.w - 1) >> 1), loc.y + ((loc.h - 1) >> 1), { goals });
   }
 
   function doTick() {
@@ -539,6 +577,8 @@ async function init() {
   });
   canvas.addEventListener("keyup", (e) => keys.delete(e.key.toLowerCase()));
   canvas.addEventListener("blur", () => keys.clear());
+  // scrolling over the game view must never move the page
+  canvas.addEventListener("wheel", (e) => e.preventDefault(), { passive: false });
   root.querySelectorAll(".wc-zoom button").forEach((b) =>
     b.addEventListener("click", () => {
       tilePx = SRC_PX * +b.dataset.z;

@@ -54,6 +54,16 @@
   respawn time — Jagex has never published these; they live in `GATHER_CONFIG`
   (`assets/js/world/gather.js`), labelled, user-tunable, never asserted as real rates.
 
+### Mining (drives /play gathering + future router options)
+- **Facts (sourced, OSRS Wiki rock pages · stamp 2026-07-07):** rock object ids — copper
+  11161/10943/10079, tin 11361/11360, iron 11365/11364/42833/36203, coal 11367/11366/36204 —
+  **validated against extracted placements at known mine sites** (SE Varrock mine shows exactly
+  these iron/copper ids at the real coordinates). Level/XP: copper & tin 1 / 17.5, iron 15 / 35,
+  coal 30 / 50. Respawns: copper/tin 2.4 s, iron 5.4 s, coal 30 s. Standard rocks always deplete
+  after one ore. Pickaxe reqs: bronze/iron 1, steel 6, mithril 21, adamant 31, rune 41, dragon 61.
+  Ore/pickaxe item ids test-guarded against `items.pack`.
+- **Placeholder:** per-roll success chance (same labelled `GATHER_CONFIG` model as woodcutting).
+
 ## Facts by option `id`
 
 <!-- One entry per catalogued option. Template:

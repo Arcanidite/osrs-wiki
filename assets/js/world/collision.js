@@ -92,18 +92,27 @@ const DIRS = [
 ];
 
 // BFS over a bounded window (the game searches a 128×128 area). Returns the
-// tile path (excluding start); when the target is unreachable, routes to the
-// nearest reachable tile to the target (approach behaviour).
-export function findPath(get, sx, sy, tx, ty, { window: win = 128, maxLen = 4096 } = {}) {
+// tile path (excluding start); when no goal is reachable, routes to the
+// nearest reachable tile to the intent point (approach behaviour).
+//
+// `opts.goals` — optional array of {x, y} acceptable destination tiles
+// (e.g. every tile adjacent to an object's footprint, or both sides of a
+// door). BFS explores in increasing cost, so the FIRST goal reached is the
+// minimum-cost one — the player stops at the near side of an object instead
+// of circling to a tile that merely looks closer to its centre.
+export function findPath(get, sx, sy, tx, ty, { window: win = 128, maxLen = 4096, goals = null } = {}) {
   const half = win >> 1;
   const x0 = sx - half, y0 = sy - half;
   const inWin = (x, y) => x >= x0 && x < x0 + win && y >= y0 && y < y0 + win;
   if (!inWin(tx, ty)) {
-    // clamp target into the search window edge
+    // clamp intent point into the search window edge
     tx = Math.max(x0, Math.min(x0 + win - 1, tx));
     ty = Math.max(y0, Math.min(y0 + win - 1, ty));
   }
   const idx = (x, y) => (y - y0) * win + (x - x0);
+  const goalSet = goals
+    ? new Set(goals.filter((g) => inWin(g.x, g.y)).map((g) => idx(g.x, g.y)))
+    : new Set([idx(tx, ty)]);
   const prev = new Int32Array(win * win).fill(-1);
   const seen = new Uint8Array(win * win);
   seen[idx(sx, sy)] = 1;
@@ -112,10 +121,11 @@ export function findPath(get, sx, sy, tx, ty, { window: win = 128, maxLen = 4096
   const dist = (x, y) => Math.max(Math.abs(x - tx), Math.abs(y - ty));
   let bestDist = dist(sx, sy);
 
+  outer:
   while (queue.length) {
     const next = [];
     for (const [x, y] of queue) {
-      if (x === tx && y === ty) { best = [x, y]; queue = []; break; }
+      if (goalSet.has(idx(x, y))) { best = [x, y]; break outer; }
       const d = dist(x, y);
       if (d < bestDist) { bestDist = d; best = [x, y]; }
       for (const [dx, dy] of DIRS) {
@@ -127,7 +137,6 @@ export function findPath(get, sx, sy, tx, ty, { window: win = 128, maxLen = 4096
         next.push([nx, ny]);
       }
     }
-    if (!queue.length) break;
     queue = next;
   }
 

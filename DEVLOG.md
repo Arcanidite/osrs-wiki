@@ -225,4 +225,23 @@ hit-testing scales CSS→canvas px so hover/click tiles are exact; main.css link
 
 ---
 
+### 2026-07-07 — Navigation approach fix, wheel capture, Mining
+
+- **Multi-goal pathfinding** (`collision.js findPath` gains `opts.goals`): interactions now
+  target *every* tile adjacent to the object footprint (walls/doors: both sides of the edge);
+  BFS explores by increasing cost so the first goal reached is the minimum-cost one — the player
+  stops at the **near side** instead of circling to whatever tile was closest to the object's
+  centre. Test-pinned (near-side stop, no-detour length, far-side-only door routing).
+- **Wheel capture:** scrolling over the canvas no longer scrolls the page.
+- **Mining shipped:** copper/tin/iron/coal. Rock object ids sourced from OSRS Wiki rock pages
+  and cross-validated against extracted placements at real mine sites (SE Varrock shows exactly
+  the sourced iron/copper ids); level reqs/XP/respawns sourced; standard rocks deplete after one
+  ore (documented). Ore + pickaxe item ids test-guarded against `items.pack`; rock ids checked
+  against `objects.pack` Mine actions. Starting kit gains a bronze pickaxe; "Varrock SE mine"
+  landmark added. Per-roll success chance remains the labelled `GATHER_CONFIG` placeholder.
+- Verified headless: travel → hover "Mine Iron rocks" → click walks to the rock → authentic
+  level gate ("You need a Mining level of 15") at Mining 1. 55/55 tests.
+
+---
+
 <!-- Add entries below as features are built out -->

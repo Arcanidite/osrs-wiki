@@ -96,3 +96,56 @@ test("state serialization round-trip", () => {
   assert.equal(q.level("woodcutting"), p.level("woodcutting"));
   assert.equal(q.invCount(), 1);
 });
+
+// ── mining ──────────────────────────────────────────────────────────────────
+import { ROCKS, PICKAXES, bestPickaxe, mineRoll } from "../assets/js/world/gather.js";
+
+test("ore/pickaxe item ids match the real items.pack names (honesty guard)", () => {
+  const buf = readFileSync(join(ROOT, "assets", "data", "cache", "items.pack"));
+  const n = buf.readUInt32LE(4);
+  const byId = new Map();
+  for (let i = 0; i < n; i++) {
+    const off = buf.readUInt32LE(8 + i * 12 + 4);
+    const len = buf.readUInt32LE(8 + i * 12 + 8);
+    const rec = JSON.parse(buf.subarray(off, off + len).toString("utf8"));
+    byId.set(rec.id, rec.name);
+  }
+  const seen = new Set();
+  for (const rock of Object.values(ROCKS)) {
+    if (seen.has(rock.itemId)) continue;
+    seen.add(rock.itemId);
+    assert.equal(byId.get(rock.itemId), rock.item, `ore item ${rock.itemId}`);
+  }
+  for (const p of PICKAXES)
+    assert.equal(byId.get(p.id), p.name, `pickaxe ${p.id}`);
+});
+
+test("rock object ids exist in the extracted objects.pack with a Mine action", () => {
+  const buf = readFileSync(join(ROOT, "assets", "data", "cache", "objects.pack"));
+  const n = buf.readUInt32LE(4);
+  const byId = new Map();
+  for (let i = 0; i < n; i++) {
+    const off = buf.readUInt32LE(8 + i * 12 + 4);
+    const len = buf.readUInt32LE(8 + i * 12 + 8);
+    const rec = JSON.parse(buf.subarray(off, off + len).toString("utf8"));
+    byId.set(rec.id, rec);
+  }
+  let found = 0;
+  for (const id of Object.keys(ROCKS).map(Number)) {
+    const def = byId.get(id);
+    if (!def) continue; // some ids are variants without actions in this cache
+    assert.ok((def.actions ?? []).includes("Mine"), `object ${id} has Mine`);
+    found++;
+  }
+  assert.ok(found >= 6, `at least 6 rock ids present with Mine (got ${found})`);
+});
+
+test("mineRoll gates on pickaxe and level", () => {
+  const hasBronzePick = (id) => id === 1265;
+  assert.equal(mineRoll(11161, 1, () => false).error, "no-pickaxe");
+  assert.equal(mineRoll(11365, 1, hasBronzePick).error, "level");
+  assert.equal(mineRoll(11365, 1, hasBronzePick).need, 15);
+  assert.equal(mineRoll(11161, 1, hasBronzePick, () => 0).ok, true);
+  assert.equal(mineRoll(9999999, 1, hasBronzePick).error, "not-a-rock");
+  assert.equal(bestPickaxe(hasBronzePick, 1)?.name, "Bronze pickaxe");
+});
