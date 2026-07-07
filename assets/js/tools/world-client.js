@@ -596,8 +596,10 @@ async function init() {
     }
     if (action === "Trade") {
       dialogue(name, [
-        "Shop stock and prices are server-side data that hasn't been",
-        "sourced yet — trading opens once a sourced stock table exists."]);
+        "Shop stock and prices are server-side data with no public sourced",
+        "dataset (checked osrsbox-db and mejrs/data_osrs, 2026-07-07).",
+        "BACKLOG: shop stock dataset needed (wiki-derived shops.json) —",
+        "trading opens once a sourced stock table exists."]);
       return;
     }
     toast(`${action} ${name} — no sourced mechanic for this yet`);

@@ -551,10 +551,16 @@ movement AI — each needs a sourced dataset.
 mechanics (KB protocol). SHIPPED: doors/gates (passage), Woodcutting gathering (sourced XP/level
 tables, documented XP curve, real item ids test-pinned; success/deplete/respawn rates are
 labelled GATHER_CONFIG placeholders), 28-slot inventory + skills + bank (deposit/withdraw),
-localStorage persistence, message log. NEXT candidates (each needs a sourced dataset first):
-mining (needs rock-object-id → ore table), fishing (spots are NPCs — blocked on NPC spawns),
-firemaking, prayer/altars, combat (needs full formula sourcing). Plane changes SHIPPED
+localStorage persistence, message log. Plane changes SHIPPED
 2026-07-07 (stairs/ladders/trapdoors — coordinate-convention destinations, see DEVLOG).
+GEAR BONUSES SHIPPED 2026-07-07 (equipment.pack from osrsbox-db, 2,229 items id+name-validated;
+equip/unequip UI; swings use worn stab attack + melee strength). DROP TABLES SHIPPED 2026-07-07
+(drops.pack from osrsbox-db, 2,086 npcs / 58,375 entries validated against npcs.pack+items.pack;
+ground-item loot with Take + despawn; unsourced tables drop nothing, say so). NPC WANDER AI
+SHIPPED 2026-07-07 (bounded random walk around spawn, collision-honoring; radius/cadence are
+labelled placeholders in npc-ai.js). REMAINING (each blocked on a sourced dataset): shop
+stock/prices — NO public dataset exists (osrsbox-db + mejrs/data_osrs checked 2026-07-07;
+need a wiki-derived shops.json), quests, dialogue scripts.
 
 ## [client:fidelity-gate] World client ships only at gameplay fidelity
 

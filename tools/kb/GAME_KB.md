@@ -86,6 +86,69 @@
   NPC spawns. Treat as a best-effort approximation; re-run `build_npc_spawns.py` against a
   refreshed source after major game updates.
 
+### Equipment bonuses (equipment.pack)
+- **Fact:** per-item equipment bonuses (attack_stab/slash/crush/magic/ranged, defence_×5,
+  melee_strength, ranged_strength, magic_damage, prayer) and the 12 gear slots
+  (head/cape/neck/ammo/weapon/body/shield/legs/hands/feet/ring/2h) come from the osrsbox-db
+  community database; values are copied into `assets/data/cache/equipment.pack` EXACTLY as
+  sourced — no inflation, no invented defaults.
+- **Counts (build 2026-07-07):** source 24,735 items → kept 2,229 / dropped 22,506
+  (20,850 not equipable or no equipment block; 1,607 name-mismatch vs items.pack — wiki
+  disambiguation suffixes like "(Unpoisoned)"; 49 ids absent from items.pack; 0 bad slots).
+  Every kept record's id+name is test-guarded against `items.pack`
+  (`tests/simulation.test.js` id-honesty-guard).
+- **source:** `https://raw.githubusercontent.com/osrsbox/osrsbox-db/master/docs/items-complete.json` ·
+  **stamp:** 2026-07-07 · **tool:** `tools/build_equipment.py`
+- **caveat:** osrsbox-db is community-maintained and its item names carry wiki disambiguation
+  suffixes our cache snapshot lacks — those items are DROPPED rather than fuzzily matched, so
+  coverage is conservative (2,229 of ~4,791 equipable cache items). Combat currently applies
+  only stab attack + melee strength (melee model); the other 12 bonus fields are stored and
+  summed but await ranged/magic combat models.
+
+### NPC drop tables (drops.pack)
+- **Fact:** drop tables are server-side data; the sourced community dataset is osrsbox-db
+  `monsters-complete.json` (per-npc `drops[{id, name, quantity, noted, rarity}]`, rarity a
+  float probability where 1 = always, 1/128 = 0.0078125). Emitted to
+  `assets/data/cache/drops.pack` as `{id: npcId, drops: [{itemId, itemName, qtyMin, qtyMax,
+  rarity, stackable, noted}]}` — quantity ranges "1-5" parsed to min/max, rarity kept exactly
+  as sourced, stackable taken from items.pack (cache fact).
+- **Counts (build 2026-07-07):** source 3,000 monsters → kept 2,086 npcs / 58,375 drop
+  entries; dropped 914 npcs (271 ids absent from npcs.pack, 643 with no valid drops) and
+  8,300 entries (8,297 item-name mismatch — same wiki-suffix drift as equipment, 3 bad
+  quantity, 0 bad rarity, 0 missing item ids).
+- **Validation:** every npc id checked against npcs.pack, every drop's item id+name against
+  items.pack at build time; test suite re-samples both guards plus 0 < rarity ≤ 1 and
+  qtyMin ≤ qtyMax on every run. Spot-check: Goblin (3029) → Bones @ 1.0, Coins tiers,
+  Hammer 0.117 — matches the public wiki table.
+- **source:** `https://raw.githubusercontent.com/osrsbox/osrsbox-db/master/docs/monsters-complete.json` ·
+  **stamp:** 2026-07-07 · **tool:** `tools/build_drops.py`
+- **caveat:** community-scraped from the wiki; rare-drop-table nesting and multi-roll kills
+  (`rolls` field) are NOT modelled — the client rolls each entry independently once per kill,
+  which slightly misstates yield for multi-roll bosses. NPCs without a table drop nothing and
+  say so (never faked).
+
+### NPC wander AI (npc-ai.js)
+- **Fact (sourced, OSRS Wiki "Non-player character" · stamp 2026-07-07):** ambient NPCs wander
+  a bounded area around their fixed spawn point and never leave it; movement respects the same
+  static collision as players; NPCs engaged in combat stop wandering; respawns occur at the
+  spawn point.
+- **PLACEHOLDERS (labelled, NOT game facts):** exact wander radius, step cadence, and direction
+  distribution are unpublished server data. Our model — Chebyshev ≤ 5 tiles of spawn, one
+  random 8-direction step every ~3 ticks (retry 2 on refusal), viewport-only simulation —
+  lives in `assets/js/world/npc-ai.js` (`WANDER_RADIUS`, `WANDER_STEP_TICKS`,
+  `WANDER_RETRY_TICKS`), each labelled UNKNOWN placeholder.
+- **caveat:** aggression, chasing, and per-npc wander ranges (some NPCs are stationary by
+  design, e.g. shopkeepers behind counters) are not modelled — every ambient NPC wanders
+  uniformly.
+
+### Shop stock (NOT sourced — refused)
+- **Fact:** shop stock/prices are server-side; NO public sourced dataset exists as of
+  2026-07-07 — checked osrsbox-db `docs/shops.json` (404), `data/shops/shops.json` (404),
+  mejrs/data_osrs repo listing (no shop file), other GitHub candidates (404). Trade therefore
+  opens an honest dialogue naming the gap (BACKLOG: wiki-derived shops.json) instead of an
+  invented stock list.
+- **stamp:** 2026-07-07
+
 ## Facts by option `id`
 
 <!-- One entry per catalogued option. Template:

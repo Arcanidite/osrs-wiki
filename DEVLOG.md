@@ -307,4 +307,29 @@ has a concrete system; only server-side *datasets* (not verbs) remain outstandin
 
 ---
 
+### 2026-07-07 — Gear bonuses, drop tables, NPC wander; shops honestly blocked
+
+Three sourced systems + one honest refusal. 69/69 tests.
+
+- **Gear (equipment.pack):** `tools/build_equipment.py` over osrsbox-db `items-complete.json`
+  — 2,229 equipable items kept (id+name cross-validated against items.pack; 1,607 name-drift +
+  49 missing-id records dropped, reasons printed). 14 bonus fields copied exactly as sourced.
+  `swing()` grew `{attBonus, strBonus}` opts (backward-compatible); player-state grew
+  `equipped`/`equip`/`unequip`/`getBonuses`; client has an Equipment tab + Equip option on
+  inventory items, and combat uses worn stab attack + melee strength.
+- **Drops (drops.pack):** `tools/build_drops.py` over osrsbox-db `monsters-complete.json` —
+  2,086 npcs / 58,375 entries kept (npc ids validated against npcs.pack; item id+name against
+  items.pack; 8,297 name-drift entries dropped). Rarities are the source's floats, untouched.
+  Kills roll the table → ground items (red dots, Take, 200-tick despawn); npcs without a
+  sourced table log "No sourced drop table" and drop nothing.
+- **NPC wander (npc-ai.js):** pure `npcWanderStep` — random 8-dir step, Chebyshev ≤ 5 of
+  spawn, collision-checked; client moves viewport-local npcs every ~3 ticks, dead/fighting
+  npcs stand still, respawns land at spawn. Radius/cadence are labelled placeholders
+  (unpublished server data).
+- **Shops:** NO sourced dataset exists — osrsbox-db `shops.json` (404), mejrs/data_osrs (no
+  shop file in the repo listing), other candidates 404. Trade dialogue + /play notes + BACKLOG
+  now state the gap explicitly instead of inventing stock. (KB no-fabrication protocol.)
+
+---
+
 <!-- Add entries below as features are built out -->

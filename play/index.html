@@ -60,19 +60,41 @@ tool_script: "/assets/js/tools/world-client.js"
 
   <p><strong>NPC interactions perform.</strong> Attack fights with the documented melee formulas
   over the real cache stats (max hit, accuracy rolls, 4 × damage combat XP + 1.33 × Hitpoints XP,
-  4-tick unarmed speed; you start at Hitpoints 10) — NPCs hit back, die, respawn, and drop
-  <em>nothing</em>, because drop tables are server data we won't invent. Pickpocketing works where
+  4-tick unarmed speed; you start at Hitpoints 10) — NPCs hit back, die, and respawn at their
+  spawn point. Pickpocketing works where
   sourced (Man/Woman: 8 Thieving xp, 3 coins; failure stuns and hurts). Net fishing spots yield
   raw shrimps (10 Fishing xp; a small net is in the starting kit). Bankers bank. Altars restore
   Prayer points. Searching scenery gives the game's default "nothing of interest". Talk-to and
   Trade open a dialogue frame that says plainly that dialogue scripts and shop stock are
-  server-side and unsourced — never invented. Gear bonuses, NPC movement AI, and success rates
-  are labelled approximations/placeholders in <code>assets/js/world/combat.js</code>.</p>
+  server-side and unsourced — never invented. Success rates remain labelled
+  approximations/placeholders in <code>assets/js/world/combat.js</code>.</p>
+
+  <p><strong>Gear works.</strong> 2,229 equipable items carry their real bonuses
+  (osrsbox-db equipment data, id+name test-verified against the item cache — items whose
+  names drifted from this cache snapshot are dropped, never guessed). Click an equippable
+  inventory item to Equip it; the Equipment tab shows worn gear per slot with summed bonuses,
+  and combat swings genuinely use your stab attack + melee strength bonuses in the documented
+  formulas.</p>
+
+  <p><strong>Monsters drop loot.</strong> 2,086 NPCs have sourced drop tables (osrsbox-db,
+  58,375 entries; every item id+name validated against the item cache, rarities kept exactly
+  as sourced). Kills roll the real table; loot lands on the ground as small red dots
+  (Take on hover/click, ≈2-minute despawn). NPCs <em>without</em> a sourced table say so in
+  the log and drop nothing — never invented.</p>
+
+  <p><strong>NPCs wander.</strong> Ambient NPCs randomly walk within a bounded radius of
+  their spawn point, respecting the same collision as you; fighting or dead NPCs stand
+  still. Exact wander radius/cadence are unpublished server data — the Chebyshev-5 radius
+  and ~1.8 s step are labelled placeholders in <code>assets/js/world/npc-ai.js</code>.</p>
 
   <h2>Still missing, and exactly why</h2>
   <ul>
-    <li><strong>The simulation</strong> — combat, quests, drops and AI run on Jagex servers and are
-      not present in any client data; they can only be re-implemented from sourced formulas under
+    <li><strong>Shop stock/prices</strong> — server-side data with no public sourced dataset
+      (osrsbox-db and mejrs/data_osrs checked 2026-07-07 — none exists). BACKLOG: shop stock
+      dataset needed (wiki-derived shops.json); Trade says so in-game rather than inventing
+      a stock list. (<code>BACKLOG [client:simulation]</code>)</li>
+    <li><strong>Quests, dialogue scripts</strong> — run on Jagex servers and are not present in
+      any client data; they can only be re-implemented from sourced formulas under
       the KB no-fabrication protocol. (<code>BACKLOG [client:simulation]</code>)</li>
   </ul>
   <p class="data-source">Source: OpenRS2 cache 2499 (build 236, 2026-03-18) + OSRS Wiki movement
