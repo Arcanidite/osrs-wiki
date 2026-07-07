@@ -244,4 +244,23 @@ hit-testing scales CSS→canvas px so hover/click tiles are exact; main.css link
 
 ---
 
+### 2026-07-07 — Vertical movement: planes 0–3 + underground; climb actions live
+
+- **Multi-plane extraction** (`openrs2_extract.py`): per-plane collision worlds (bridge flag
+  shifts a tile's content down one plane at every level), per-plane interactable locs
+  (74,007 across 2,238 region-planes), per-plane map tiles — empty upper planes skipped
+  (+3,222 upper sheets). Renderer reworked to 64×64 + NEAREST resize (~16× faster). Plane-0
+  filenames unchanged; upper planes are `<rid>.<z>.*`; manifest lists planes per region.
+- **Climb conventions** (`assets/js/world/climb.js`, tested): exact climb destinations are
+  server-side data, so we use the documented coordinate conventions — same tile plane ±1 for
+  stairs/ladders, the standard ±6,400-tile offset for trapdoors/dungeons — and settle on the
+  nearest walkable mapped tile; unmapped destinations refuse. Client is fully plane-aware
+  (region/loc/door caches keyed by plane, HUD shows floor/underground).
+- **Validation:** headless round-trip — "Climb-down Trapdoor" in the Lumbridge kitchen at
+  (3209,3216) lands at (3208,9615) in region 12950, the *real mapped cellar*, with the real exit
+  Ladder adjacent; "Climb-up Ladder" returns to the surface at (3208,3215). The ±6400 convention
+  drops precisely into real dungeon content. 56/56 tests.
+
+---
+
 <!-- Add entries below as features are built out -->

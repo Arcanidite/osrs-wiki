@@ -23,6 +23,7 @@ import {
   TREES, ROCKS, GATHER_CONFIG, bestAxe, bestPickaxe, chopRoll, mineRoll,
 } from "../world/gather.js";
 import { createPlayerState } from "../world/player-state.js";
+import { climbDestination, isClimbAction, settleTile } from "../world/climb.js";
 
 const SAVE_KEY = "osrs-world:v1";
 
@@ -135,18 +136,27 @@ async function init() {
     loc.w = sx; loc.h = sy;
     for (let ox = 0; ox < sx; ox++)
       for (let oy = 0; oy < sy; oy++)
-        locByTile.set(`${loc.x + ox},${loc.y + oy}`, loc);
+        locByTile.set(`${loc.plane}:${loc.x + ox},${loc.y + oy}`, loc);
   }
+  const locAt = (x, y) => locByTile.get(`${player.plane}:${x},${y}`);
 
-  async function loadRegion(rid) {
-    if (bitmaps.has(rid) || !(rid in manifest)) return;
-    bitmaps.set(rid, "loading");
-    grids.set(rid, "loading");
+  async function loadRegion(rid, plane) {
+    const rk = `${rid}:${plane}`;
+    if (bitmaps.has(rk) || !(rid in manifest)) return;
+    if (plane > 0 && !(manifest[rid].planes ?? [0]).includes(plane)) {
+      // no upper-floor data here: void render, fully blocked
+      bitmaps.set(rk, "missing");
+      grids.set(rk, "missing");
+      return;
+    }
+    bitmaps.set(rk, "loading");
+    grids.set(rk, "loading");
+    const sfx = plane === 0 ? "" : `.${plane}`;
     try {
       const [imgRes, colRes, locRes] = await Promise.all([
-        fetch(`${DATA}/map/${rid}.png.gz`),
-        fetch(`${DATA}/collision/${rid}.bin.gz`),
-        fetch(`${DATA}/locs/${rid}.json.gz`),
+        fetch(`${DATA}/map/${rid}${sfx}.png.gz`),
+        fetch(`${DATA}/collision/${rid}${sfx}.bin.gz`),
+        fetch(`${DATA}/locs/${rid}${sfx}.json.gz`),
       ]);
       if (!imgRes.ok || !colRes.ok) throw new Error("missing");
       const [blob, buf, locsRaw] = await Promise.all([
@@ -154,18 +164,18 @@ async function init() {
         gunzip(colRes).then((r) => r.arrayBuffer()),
         locRes.ok ? gunzip(locRes).then((r) => r.json()) : [],
       ]);
-      bitmaps.set(rid, await createImageBitmap(blob));
-      grids.set(rid, new Uint16Array(buf));
+      bitmaps.set(rk, await createImageBitmap(blob));
+      grids.set(rk, new Uint16Array(buf));
       const bx = (rid >> 8) << 6, by = (rid & 255) << 6;
       const locs = locsRaw
         .filter(([id]) => objectDefs.has(id))
         .map(([id, type, rot, lx, ly]) => ({
-          id, type, rot, x: bx + lx, y: by + ly,
-          def: objectDefs.get(id), key: `${rid}:${id}:${lx}:${ly}`,
+          id, type, rot, x: bx + lx, y: by + ly, plane,
+          def: objectDefs.get(id), key: `${rk}:${id}:${lx}:${ly}`,
         }));
       locs.forEach(indexLoc);
-      regionLocs.set(rid, locs);
-      lru.push(rid);
+      regionLocs.set(rk, locs);
+      lru.push(rk);
       while (lru.length > 100) {
         const old = lru.shift();
         const b = bitmaps.get(old);
@@ -175,12 +185,12 @@ async function init() {
         for (const l of regionLocs.get(old) ?? [])
           for (let ox = 0; ox < l.w; ox++)
             for (let oy = 0; oy < l.h; oy++)
-              locByTile.delete(`${l.x + ox},${l.y + oy}`);
+              locByTile.delete(`${l.plane}:${l.x + ox},${l.y + oy}`);
         regionLocs.delete(old);
       }
     } catch {
-      bitmaps.set(rid, "missing");
-      grids.set(rid, "missing");
+      bitmaps.set(rk, "missing");
+      grids.set(rk, "missing");
     }
   }
 
@@ -189,10 +199,10 @@ async function init() {
   const cleared = new Map();   // "x,y" -> mask
 
   const flagsAt = (x, y) => {
-    const g = grids.get(regionAt(x, y));
+    const g = grids.get(`${regionAt(x, y)}:${player.plane}`);
     if (!(g instanceof Uint16Array)) return null;
     let f = g[(y & 63) * REGION + (x & 63)];
-    const c = cleared.get(`${x},${y}`);
+    const c = cleared.get(`${player.plane}:${x},${y}`);
     if (c) f &= ~c;
     return f;
   };
@@ -203,7 +213,7 @@ async function init() {
   function toggleDoor(loc) {
     if (openDoors.has(loc.key)) {
       for (const e of openDoors.get(loc.key)) {
-        const k = `${e.x},${e.y}`;
+        const k = `${loc.plane}:${e.x},${e.y}`;
         cleared.set(k, (cleared.get(k) ?? 0) & ~e.mask);
       }
       openDoors.delete(loc.key);
@@ -213,7 +223,7 @@ async function init() {
     const edges = [{ x: loc.x, y: loc.y, mask: own }];
     for (const n of neighbours) edges.push({ x: loc.x + n.dx, y: loc.y + n.dy, mask: n.mask });
     for (const e of edges) {
-      const k = `${e.x},${e.y}`;
+      const k = `${loc.plane}:${e.x},${e.y}`;
       cleared.set(k, (cleared.get(k) ?? 0) | e.mask);
     }
     openDoors.set(loc.key, edges);
@@ -232,12 +242,20 @@ async function init() {
 
   // ── player / tick state ───────────────────────────────────────────────────
   const spawn = LANDMARKS[0];
-  const player = { x: spawn.x, y: spawn.y, px: spawn.x, py: spawn.y };
+  const player = { x: spawn.x, y: spawn.y, px: spawn.x, py: spawn.y, plane: 0 };
   let path = [];
   let pending = null;    // {loc, action} — runs when we arrive next to it
-  let gathering = null;  // {loc, treeName, nextRoll} — active skilling session
+  let gathering = null;  // {loc, kind, nextRoll} — active skilling session
+  let climbing = null;   // destination awaiting region data to settle onto
   let tick = 0;
   const keys = new Set();
+
+  function teleport(x, y, plane) {
+    player.x = player.px = x;
+    player.y = player.py = y;
+    player.plane = plane;
+    path = []; pending = null; gathering = null;
+  }
 
   // ── simulation state (persisted) ─────────────────────────────────────────
   let saved = null;
@@ -375,6 +393,13 @@ async function init() {
       say("You swing your axe at the tree...");
       return;
     }
+    if (isClimbAction(action)) {
+      const dest = climbDestination({ x: player.x, y: player.y, plane: player.plane }, action);
+      if (!dest) { say("It doesn't lead anywhere from here."); return; }
+      climbing = { ...dest, tries: 0 };
+      say(action === "Climb-up" ? "You climb up..." : "You climb down...");
+      return;
+    }
     if (ROCKS[loc.id] && action === "Mine") {
       if (isDepleted(loc)) { say("There is no ore currently available in this rock."); return; }
       const rock = ROCKS[loc.id];
@@ -485,10 +510,34 @@ async function init() {
       }
     }
     gatherTick();
+    climbTick();
     for (const [key, until] of depleted) if (until <= tick) depleted.delete(key);
     if (dirty && tick % 5 === 0) save();
-    posEl.textContent = `(${player.x}, ${player.y}) · region ${regionAt(player.x, player.y)}`;
+    const floor = player.plane > 0 ? ` · floor ${player.plane}`
+      : player.y >= 6400 ? " · underground" : "";
+    posEl.textContent = `(${player.x}, ${player.y}) · region ${regionAt(player.x, player.y)}${floor}`;
     tickEl.textContent = `tick ${tick}`;
+  }
+
+  function climbTick() {
+    if (!climbing) return;
+    const { x, y, plane } = climbing;
+    const rk = `${regionAt(x, y)}:${plane}`;
+    const g = grids.get(rk);
+    if (g === undefined || g === "loading") {
+      loadRegion(regionAt(x, y), plane);
+      if (++climbing.tries > 20) { climbing = null; say("That way isn't mapped; staying put."); }
+      return;
+    }
+    climbing = null;
+    if (!(g instanceof Uint16Array)) { say("That way isn't mapped; staying put."); return; }
+    const flags = (tx, ty) => {
+      const gg = grids.get(`${regionAt(tx, ty)}:${plane}`);
+      return gg instanceof Uint16Array ? gg[(ty & 63) * REGION + (tx & 63)] : null;
+    };
+    const spot = settleTile(flags, x, y, FULL);
+    if (!spot) { say("There's nowhere to stand over there."); return; }
+    teleport(spot.x, spot.y, plane);
   }
   let lastTick = performance.now();
   setInterval(() => { lastTick = performance.now(); doTick(); }, TICK_MS);
@@ -510,7 +559,7 @@ async function init() {
   let hoverTile = null;
   canvas.addEventListener("mousemove", (e) => {
     hoverTile = tileFromEvent(e);
-    const loc = locByTile.get(`${hoverTile.x},${hoverTile.y}`);
+    const loc = locAt(hoverTile.x, hoverTile.y);
     if (loc) {
       const acts = menuActions(loc);
       hoverEl.textContent = `${acts[0] ?? ""} ${loc.def.name}` +
@@ -523,7 +572,7 @@ async function init() {
   canvas.addEventListener("click", (e) => {
     hideMenu();
     const t = tileFromEvent(e);
-    const loc = locByTile.get(`${t.x},${t.y}`);
+    const loc = locAt(t.x, t.y);
     if (loc && objEl.checked) {
       const acts = menuActions(loc);
       if (acts.length) { walkToLoc(loc, acts[0]); canvas.focus(); return; }
@@ -538,7 +587,7 @@ async function init() {
   canvas.addEventListener("contextmenu", (e) => {
     e.preventDefault();
     const t = tileFromEvent(e);
-    const loc = locByTile.get(`${t.x},${t.y}`);
+    const loc = locAt(t.x, t.y);
     const rows = [];
     if (loc && objEl.checked) {
       for (const a of menuActions(loc))
@@ -587,8 +636,7 @@ async function init() {
   root.querySelector(".wc-landmark").addEventListener("change", (e) => {
     if (!e.target.value) return;
     const [x, y] = e.target.value.split(",").map(Number);
-    player.x = player.px = x; player.y = player.py = y;
-    path = []; pending = null;
+    teleport(x, y, 0);
     e.target.value = "";
     canvas.focus();
   });
@@ -605,9 +653,10 @@ async function init() {
   ];
 
   function drawLocs(c) {
-    for (const [rid, locs] of regionLocs) {
+    for (const [, locs] of regionLocs) {
       if (!Array.isArray(locs)) continue;
       for (const loc of locs) {
+        if (loc.plane !== player.plane) continue;
         const [sx, sy] = toScreen(c, loc.x, loc.y + loc.h - 1);
         const w = loc.w * tilePx, h = loc.h * tilePx;
         if (sx + w < 0 || sy + h < 0 || sx > canvas.width || sy > canvas.height) continue;
@@ -664,8 +713,8 @@ async function init() {
     for (let bx = rx0; bx < c.x + halfW; bx += REGION) {
       for (let by = ry0; by < c.y + halfH; by += REGION) {
         const rid = ((bx >> 6) << 8) | (by >> 6);
-        const bmp = bitmaps.get(rid);
-        if (bmp === undefined) loadRegion(rid);
+        const bmp = bitmaps.get(`${rid}:${player.plane}`);
+        if (bmp === undefined) loadRegion(rid, player.plane);
         if (!(bmp instanceof ImageBitmap)) continue;
         const sx = (bx - c.x) * tilePx + canvas.width / 2;
         const sy = (c.y - (by + REGION)) * tilePx + canvas.height / 2;

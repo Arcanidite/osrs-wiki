@@ -550,7 +550,8 @@ tables, documented XP curve, real item ids test-pinned; success/deplete/respawn 
 labelled GATHER_CONFIG placeholders), 28-slot inventory + skills + bank (deposit/withdraw),
 localStorage persistence, message log. NEXT candidates (each needs a sourced dataset first):
 mining (needs rock-object-id → ore table), fishing (spots are NPCs — blocked on NPC spawns),
-firemaking, prayer/altars, plane changes for stairs/ladders, combat (needs full formula sourcing).
+firemaking, prayer/altars, combat (needs full formula sourcing). Plane changes SHIPPED
+2026-07-07 (stairs/ladders/trapdoors — coordinate-convention destinations, see DEVLOG).
 
 ## [client:fidelity-gate] World client ships only at gameplay fidelity
 

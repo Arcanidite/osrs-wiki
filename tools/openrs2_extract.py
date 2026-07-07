@@ -485,32 +485,38 @@ def wall_flags(loc_type, rot):
 
 
 class World:
-    """sparse world-tile grids keyed by region, cross-border writes allowed."""
+    """sparse world-tile grids keyed by (region, plane), cross-border writes ok."""
 
     def __init__(self, region_ids):
-        self.grids = {rid: bytearray(MAPSQ * MAPSQ * 2) for rid in region_ids}
+        self._rids = set(region_ids)
+        self.grids = {}  # (rid, plane) -> bytearray (lazy — most upper planes stay empty)
 
-    def add(self, wx, wy, flag):
+    def add(self, wx, wy, plane, flag):
         rid = ((wx >> 6) << 8) | (wy >> 6)
-        g = self.grids.get(rid)
-        if g is None:
+        if rid not in self._rids:
             return
+        g = self.grids.get((rid, plane))
+        if g is None:
+            g = self.grids[(rid, plane)] = bytearray(MAPSQ * MAPSQ * 2)
         i = ((wy & 63) * MAPSQ + (wx & 63)) * 2
         cur = g[i] | (g[i + 1] << 8)
         cur |= flag
         g[i] = cur & 0xFF
         g[i + 1] = (cur >> 8) & 0xFF
 
+    def grid(self, rid, plane):
+        return self.grids.get((rid, plane)) or bytearray(MAPSQ * MAPSQ * 2)
+
 
 # ── map tile renderer (flat underlay/overlay colours) ────────────────────────
 
-def render_region(settings, overlay, underlay, under_defs, over_defs):
+def render_region(settings, overlay, underlay, under_defs, over_defs, plane=0):
     from PIL import Image
-    img = Image.new("RGB", (MAPSQ * PX, MAPSQ * PX), (0, 0, 0))
+    img = Image.new("RGB", (MAPSQ, MAPSQ), (30, 42, 56))
     pixels = img.load()
 
     def tile_rgb(x, y):
-        ov = overlay[0][x][y]
+        ov = overlay[plane][x][y]
         if ov > 0:
             d = over_defs.get(ov - 1, {})
             rgb = d.get("rgb")
@@ -520,7 +526,7 @@ def render_region(settings, overlay, underlay, under_defs, over_defs):
                 return 0x4E6B8A        # textured overlay (e.g. water) fallback tone
             if rgb == 0xFF00FF:
                 rgb = None
-        un = underlay[0][x][y]
+        un = underlay[plane][x][y]
         if un > 0:
             return under_defs.get(un - 1, {}).get("rgb", 0x555555)
         return None                    # void
@@ -528,15 +534,15 @@ def render_region(settings, overlay, underlay, under_defs, over_defs):
     for x in range(MAPSQ):
         for y in range(MAPSQ):
             rgb = tile_rgb(x, y)
-            if rgb is None:
-                c = (30, 42, 56)
-            else:
-                c = ((rgb >> 16) & 255, (rgb >> 8) & 255, rgb & 255)
-            py0 = (MAPSQ - 1 - y) * PX  # north at top
-            for dx in range(PX):
-                for dy in range(PX):
-                    pixels[x * PX + dx, py0 + dy] = c
-    return img
+            if rgb is not None:
+                pixels[x, MAPSQ - 1 - y] = ((rgb >> 16) & 255, (rgb >> 8) & 255, rgb & 255)
+    return img.resize((MAPSQ * PX, MAPSQ * PX), Image.NEAREST)
+
+
+def plane_has_content(settings, overlay, underlay, plane):
+    s, o, u = settings[plane], overlay[plane], underlay[plane]
+    return any(s[x][y] or o[x][y] or u[x][y]
+               for x in range(MAPSQ) for y in range(MAPSQ))
 
 
 # ── pipeline ─────────────────────────────────────────────────────────────────
@@ -622,12 +628,17 @@ def build(locs_only=False):
         bx, by = rx * MAPSQ, ry * MAPSQ
         for x in range(MAPSQ):
             for y in range(MAPSQ):
-                # bridge rule: if plane-1 tile is a bridge, ground floor uses plane-1 flags
-                p = 1 if (settings[1][x][y] & 2) else 0
-                if settings[p][x][y] & 1:
-                    world.add(bx + x, by + y, FULL)
+                # bridge rule: a bridge flag at plane 1 shifts that tile's
+                # content down one plane on every level
+                shift = 1 if (settings[1][x][y] & 2) else 0
+                for z in range(4):
+                    zz = z + shift
+                    if zz > 3:
+                        continue
+                    if settings[zz][x][y] & 1:
+                        world.add(bx + x, by + y, z, FULL)
 
-    region_locs = {}   # rid -> [[obj_id, type, rot, lx, ly], ...] (interactable, plane 0)
+    region_locs = {}   # (rid, plane) -> [[obj_id, type, rot, lx, ly], ...] (interactable)
     for (rx, ry), gid in locs_idx.items():
         raw = got.get((5, gid))
         key = keys.get((rx << 8) | ry)
@@ -641,39 +652,39 @@ def build(locs_only=False):
             continue
         settings = terrains.get((rx, ry), (None,))[0]
         bx, by = rx * MAPSQ, ry * MAPSQ
-        interactable = region_locs.setdefault((rx << 8) | ry, [])
+        rid = (rx << 8) | ry
         for obj_id, ltype, rot, z, lx, ly in locs:
-            # bridge shift: locs on plane 1 above a bridge tile belong to ground
+            # bridge shift: locs above a bridge tile belong one plane lower
             eff_z = z
             if settings and (settings[1][lx][ly] & 2):
                 eff_z = z - 1
-            if eff_z != 0:
+            if not (0 <= eff_z <= 3):
                 continue
             d = objects.get(obj_id)
             if d is None:
                 continue
-            # interactable placements → per-region loc feed (real cache
+            # interactable placements → per-region/plane loc feed (real cache
             # actions drive the client's context menus / navigation)
             if d["name"] != "null" and any(a for a in d["actions"]):
-                interactable.append([obj_id, ltype, rot, lx, ly])
+                region_locs.setdefault((rid, eff_z), []).append([obj_id, ltype, rot, lx, ly])
             if d["interactType"] == 0:
                 continue
             if ltype in (0, 1, 2, 3):
                 own, nbs = wall_flags(ltype, rot)
-                world.add(bx + lx, by + ly, own)
+                world.add(bx + lx, by + ly, eff_z, own)
                 for dx, dy, f in nbs:
-                    world.add(bx + lx + dx, by + ly + dy, f)
+                    world.add(bx + lx + dx, by + ly + dy, eff_z, f)
             elif ltype == 9:                          # diagonal wall
-                world.add(bx + lx, by + ly, FULL)
+                world.add(bx + lx, by + ly, eff_z, FULL)
             elif ltype in (10, 11):                   # game object footprint
                 sx, sy = d["sizeX"], d["sizeY"]
                 if rot in (1, 3):
                     sx, sy = sy, sx
                 for ox in range(sx):
                     for oy in range(sy):
-                        world.add(bx + lx + ox, by + ly + oy, FULL)
+                        world.add(bx + lx + ox, by + ly + oy, eff_z, FULL)
             elif ltype == 22 and d["interactType"] == 1:  # clipped floor decoration
-                world.add(bx + lx, by + ly, FULL)
+                world.add(bx + lx, by + ly, eff_z, FULL)
 
     print(f"collision built ({undecryptable} squares without usable keys/locs)")
 
@@ -684,18 +695,19 @@ def build(locs_only=False):
         f.unlink()
     locs_manifest = {}
     total_locs = 0
-    for rid, entries in region_locs.items():
+    for (rid, plane), entries in region_locs.items():
         if not entries:
             continue
-        (locs_dir / f"{rid}.json.gz").write_bytes(
+        name = f"{rid}.json.gz" if plane == 0 else f"{rid}.{plane}.json.gz"
+        (locs_dir / name).write_bytes(
             gzip.compress(json.dumps(entries, separators=(",", ":")).encode(), 9))
-        locs_manifest[str(rid)] = len(entries)
+        locs_manifest[f"{rid}:{plane}"] = len(entries)
         total_locs += len(entries)
     (locs_dir / "manifest.json").write_text(json.dumps(
-        {"source": f"OpenRS2 {STAMP}", "plane": 0,
+        {"source": f"OpenRS2 {STAMP}", "planes": "0-3 (plane 0 unsuffixed, else <rid>.<plane>)",
          "format": "[[obj_id, loc_type, rotation, local_x, local_y], ...] — objects with cache actions only",
          "regions": locs_manifest}))
-    print(f"locs: {total_locs} interactable placements across {len(locs_manifest)} regions")
+    print(f"locs: {total_locs} interactable placements across {len(locs_manifest)} region-planes")
 
     if locs_only:
         emit_objects_pack(objects)
@@ -711,20 +723,29 @@ def build(locs_only=False):
         f.unlink()
 
     manifest = {}
+    upper = 0
     for (rx, ry), parts in terrains.items():
         rid = (rx << 8) | ry
-        img = render_region(*parts, unders, overs)
-        buf = io.BytesIO()
-        img.save(buf, "PNG", optimize=True)
-        (map_dir / f"{rid}.png.gz").write_bytes(gzip.compress(buf.getvalue(), 9))
-        (col_dir / f"{rid}.bin.gz").write_bytes(gzip.compress(bytes(world.grids[rid]), 9))
-        manifest[str(rid)] = {"bx": rx * MAPSQ, "by": ry * MAPSQ}
+        settings = parts[0]
+        planes = [0] + [z for z in (1, 2, 3) if plane_has_content(*parts, z)
+                        or (rid, z) in world.grids or ((rid, z) in region_locs)]
+        for z in planes:
+            suffix = "" if z == 0 else f".{z}"
+            img = render_region(*parts, unders, overs, z)
+            buf = io.BytesIO()
+            img.save(buf, "PNG", optimize=True)
+            (map_dir / f"{rid}{suffix}.png.gz").write_bytes(gzip.compress(buf.getvalue(), 9))
+            (col_dir / f"{rid}{suffix}.bin.gz").write_bytes(
+                gzip.compress(bytes(world.grid(rid, z)), 9))
+            if z:
+                upper += 1
+        manifest[str(rid)] = {"bx": rx * MAPSQ, "by": ry * MAPSQ, "planes": planes}
     meta = {"source": f"OpenRS2 {STAMP}", "px_per_tile": PX,
             "collision_format": "u16le per tile, y-major; bits: N,E,S,W walls / NE,SE,SW,NW corners / 256 full",
-            "plane": 0}
+            "planes": "per-region list in manifest; plane 0 unsuffixed, else <rid>.<plane>"}
     (map_dir / "manifest.json").write_text(json.dumps(manifest))
     (col_dir / "manifest.json").write_text(json.dumps({**meta, "regions": manifest}))
-    print(f"emitted {len(manifest)} regions → map/ + collision/")
+    print(f"emitted {len(manifest)} regions (+{upper} upper-plane sheets) → map/ + collision/")
 
     emit_objects_pack(objects)
 

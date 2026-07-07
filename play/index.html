@@ -42,13 +42,20 @@ tool_script: "/assets/js/tools/world-client.js"
   are test-verified against the real item cache. Actions without an implemented system still say
   so rather than faking an outcome.</p>
 
+  <p><strong>Vertical movement works.</strong> All four floors and the underground are extracted
+  (per-plane terrain, collision, and objects — 3,222 upper-floor region sheets). Staircases and
+  ladders climb between floors; trapdoors and cellar ladders drop into the real mapped dungeons.
+  <em>Convention note:</em> each climbable's exact destination tile is server-side data not present
+  in the cache, so we use the game's documented coordinate conventions — same tile one plane
+  up/down, and the standard 6,400-tile north offset for underground areas — then settle on the
+  nearest walkable mapped tile (validated: the Lumbridge kitchen trapdoor lands in the real cellar
+  beside its real exit ladder). Unmapped destinations refuse honestly instead of guessing.</p>
+
   <h2>Still missing, and exactly why</h2>
   <ul>
     <li><strong>NPCs in the world</strong> — NPC spawn points are not part of the cache (they are
       server-side data); rendering NPCs needs a separately sourced spawn dataset.
       (<code>BACKLOG [client:locations-spawns]</code>)</li>
-    <li><strong>Upper floors</strong> — the client renders plane 0; staircases/ladders list their
-      real actions but plane changes aren't simulated yet.</li>
     <li><strong>The simulation</strong> — combat, quests, drops and AI run on Jagex servers and are
       not present in any client data; they can only be re-implemented from sourced formulas under
       the KB no-fabrication protocol. (<code>BACKLOG [client:simulation]</code>)</li>

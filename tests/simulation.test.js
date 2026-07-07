@@ -149,3 +149,29 @@ test("mineRoll gates on pickaxe and level", () => {
   assert.equal(mineRoll(9999999, 1, hasBronzePick).error, "not-a-rock");
   assert.equal(bestPickaxe(hasBronzePick, 1)?.name, "Bronze pickaxe");
 });
+
+// ── climbing conventions ────────────────────────────────────────────────────
+import { climbDestination, settleTile, DUNGEON_DY } from "../assets/js/world/climb.js";
+
+test("climb conventions: planes up/down, dungeon band, edges refused", () => {
+  const at = (x, y, plane) => ({ x, y, plane });
+  assert.deepEqual(climbDestination(at(3206, 3208, 0), "Climb-up"),
+    { x: 3206, y: 3208, plane: 1, kind: "up" });
+  assert.deepEqual(climbDestination(at(3206, 3208, 2), "Climb-down"),
+    { x: 3206, y: 3208, plane: 1, kind: "down" });
+  assert.deepEqual(climbDestination(at(3209, 3216, 0), "Climb-down"),
+    { x: 3209, y: 3216 + DUNGEON_DY, plane: 0, kind: "dungeon" });
+  assert.deepEqual(climbDestination(at(3209, 9616, 0), "Climb-up"),
+    { x: 3209, y: 9616 - DUNGEON_DY, plane: 0, kind: "surface" });
+  assert.equal(climbDestination(at(0, 0, 3), "Climb-up"), null, "no plane 4");
+  assert.equal(climbDestination(at(3209, 9616, 0), "Climb-down"), null, "no double dungeon");
+  assert.equal(climbDestination(at(0, 0, 0), "Examine"), null);
+});
+
+test("settleTile spirals to nearest walkable, refuses unmapped areas", () => {
+  const FULLBIT = 256;
+  const flags = (x, y) => (x === 5 && y === 5 ? FULLBIT : (x > 20 ? null : 0));
+  assert.deepEqual(settleTile(flags, 5, 5, FULLBIT), { x: 4, y: 4 });
+  assert.deepEqual(settleTile(flags, 3, 3, FULLBIT), { x: 3, y: 3 }, "already walkable");
+  assert.equal(settleTile((x, y) => null, 0, 0, FULLBIT), null, "unmapped → refuse");
+});
