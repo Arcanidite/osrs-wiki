@@ -426,6 +426,31 @@ Refines §5.8 with three requirements from live use:
 Guidance shape stays a DAG with ready-set choice (§5.4); "cyclic" daily/repeatable options enter the
 catalog as repeatable options costed per §4, never as hardcoded loops.
 
+### 5.14 Opportunistic + pre-emptive scheduling (2026-07-10 addendum)
+
+Two locality principles the scheduler must honor, both **computed per-plan, never stored** (§5.0):
+
+1. **Opportunistic interleaving (spatial locality — "while you're here").** Plan simulation tracks the
+   player's location through the sequence (options carry `where`, §5.11; travel term, §4.2). At each
+   point, steps from *later* in the plan — or cheap catalog options not strictly required — are
+   candidates for early execution when the **marginal cost while nearby** (Δtravel + step time) beats
+   their cost at their currently-scheduled position. Classic cheapest-insertion over the route: the
+   plan clusters errands by place, instead of revisiting regions because the goal order said so.
+
+2. **Pre-emptive acquisition (temporal ripeness — "while the time is ripe").** Just-in-time is the
+   *worst* default. Every prerequisite has a **scheduling window** [first available → first needed];
+   place it at the **minimum-marginal-cost point** in that window, not the latest: buy future supplies
+   during the shop visit you're already making, bank-batch materials for three later steps in one
+   withdrawal, do the 2-minute detour prerequisite now because the plan already routes past its door.
+   Batching is the same rule applied to sets: combine window-overlapping same-place prerequisites into
+   one visit when the combined marginal cost is lower.
+
+Interaction with §5.13: opportunistic/pre-emptive placements must still respect weighted flowtime —
+an errand cluster that meaningfully delays a heavily-weighted focus goal is rejected unless its
+computed savings outweigh the weighted delay. Diagnostics (§5.10) must annotate every displaced step:
+"scheduled early: you pass through Varrock at step 12 (saves ~N travel)" — zero-ambiguity guidance
+downstream (guide-chain plugin) depends on these explanations rendering as plain instructions.
+
 ## 6. Module layout (target)
 
 ```
