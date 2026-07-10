@@ -395,6 +395,37 @@ Generalize the current `step` into an **option**: any XP source, reward source, 
 - **UI:** generalize the existing region-*exclusion* combobox into a region **inclusion lock** (pick the
   allowed regions) plus membership/mode toggles. Exclusion remains a special case of the same filter.
 
+### 5.13 Start-anywhere, preference-weighted, milestone-aware scheduling (2026-07-10 addendum)
+
+Refines §5.8 with three requirements from live use:
+
+1. **Start from any character sheet.** The profile is never assumed fresh: the planner input is the
+   *current* state vector (skills/quests/items/unlocks), and requirement closure (§5.4) subtracts what
+   is already satisfied. Concretely for the RuneLite guide-chain plugin: the plugin exports the live
+   character sheet (skills, quest states via the client API) → the planner plans the *remainder* →
+   emits a guide-chain JSON. No guide is a fixed list; every guide is a plan computed from "here."
+
+2. **Preference weighting without bum-rushing (weighted completion time).** The user marks focus
+   goals with weights `w_g ≥ 1`. Objective becomes **weighted flowtime**:
+   `minimize Σ_g w_g · t_complete(g)` (t from the §4 CostModel). This is the classic scheduling form
+   whose optimum *naturally interleaves*: shared prerequisites and cheap en-route work still schedule
+   early when they reduce weighted completion, and focus goals pull forward only where the marginal
+   delay to everything else is justified. A per-goal **tunnel slider** maps to `w_g → ∞` ("really
+   really want it"), which degenerates to strict-priority routing. Queue order (§5.8) becomes just a
+   weight preset.
+
+3. **Milestone/QoL value, computed not stored (§5.0 applies).** The option catalog (§5.11) tags
+   unlock options (transport, diaries, graceful-tier QoL, bank/route shorteners, higher-order
+   milestones) — but their *value* is never a stored score: an unlock's value = **time saved on the
+   remainder of this plan if taken now** (re-cost the residual plan with vs. without it). The planner
+   surfaces "detour worth it" steps when `time_saved · horizon > detour_cost`. This is what replaces
+   brute-force "train X to Z": the schedule spreads across skills/quests/unlocks because the objective
+   rewards unlocks that compound, not levels for their own sake. Diagnostics (§5.10) must show each
+   scheduled step's contribution (which goal-weights and which computed unlock savings placed it).
+
+Guidance shape stays a DAG with ready-set choice (§5.4); "cyclic" daily/repeatable options enter the
+catalog as repeatable options costed per §4, never as hardcoded loops.
+
 ## 6. Module layout (target)
 
 ```
