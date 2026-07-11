@@ -92,10 +92,48 @@ def enrich(plan, catalog):
     }
 
 
+MODE_NOTE = {
+    "streamline": "Focused grind while the levels are still fast.",
+    "rotate": "Rotation block — swapped in at ~1h to break the abysmal grind (see progression-philosophy).",
+}
+
+
+def block_step(b):
+    return {
+        "id": f"{b['skill']}-{b['from']}-{b['to']}",
+        "instruction": f"Train {b['skill'].title()} to {b['to']} (~{b['hours']}h).",
+        "detail": MODE_NOTE.get(b["mode"], ""),
+        "highlights": [],
+        "mapMarkers": [],
+        "completionConditions": [skill_cond(b["skill"], b["to"])],
+    }
+
+
+def enrich_schedule(scheduled):
+    goal = scheduled["goal"]
+    steps = [block_step(b) for b in scheduled["blocks"]]
+    steps.append({
+        "id": f"steer-{goal['id']}",
+        "instruction": f"Steer point — {goal['label']} reached.",
+        "detail": "A milestone/unlock moment: re-decide your next goal from here.",
+        "highlights": [], "mapMarkers": [], "completionConditions": [{"type": "MANUAL"}],
+    })
+    return {
+        "id": "route-" + goal["id"],
+        "name": f"{goal['label']} — Scheduled Route",
+        "description": "Streamlined then round-robin-paced route from the progression-router "
+                       "planner + anti-monotony scheduler.",
+        "steps": steps,
+    }
+
+
 def main():
-    plan = json.load(sys.stdin)
+    payload = json.load(sys.stdin)
+    if "blocks" in payload:                        # scheduled input (schedule.py)
+        json.dump(enrich_schedule(payload), sys.stdout, indent=2)
+        return
     catalog = json.loads((Path(__file__).parent / "catalog.json").read_text())
-    json.dump(enrich(plan, catalog), sys.stdout, indent=2)
+    json.dump(enrich(payload, catalog), sys.stdout, indent=2)
 
 
 if __name__ == "__main__":
