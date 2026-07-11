@@ -504,6 +504,8 @@ body {
 .step-badge.eq         { background: #fce7f3; color: #9d174d; }
 .step-badge.itm        { background: #ecfdf5; color: #065f46; }
 .step-badge.constraint { background: #f3f4f6; color: #374151; cursor: help; }
+.step-badge.hours      { background: #e0f2fe; color: #075985; }
+.step-badge.rotate     { background: #fee2e2; color: #991b1b; cursor: help; }
 .step-badge.bank-custom-lbl { background: #fdf4e7; color: #92400e; font-style: italic; }
 .bank-match-ctx {
   font-size: var(--fs-xs); color: var(--muted);

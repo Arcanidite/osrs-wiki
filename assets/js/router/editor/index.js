@@ -9,6 +9,7 @@ import {
 } from "../model.js";
 import { createStore, expandSteps } from "../persist.js";
 import { plan as runPlanner } from "../planner/index.js";
+import { hoursForStep, isAbysmal, loadRates } from "../schedule.js";
 
   const BASE        = document.querySelector("[data-baseurl]")?.dataset.baseurl ?? "";
   const STEPS_URL   = BASE + "/assets/data/tools/steps.jsonl";
@@ -752,6 +753,19 @@ import { plan as runPlanner } from "../planner/index.js";
     const t = Object.values(xp ?? {}).reduce((a, b) => a + b, 0);
     return t ? `<span class="step-badge xp">+${t.toLocaleString()} xp</span>` : "";
   }
+  function fmtHours(h) {
+    return h < 1 ? `${Math.round(h * 60)}m` : `${h.toFixed(1)}h`;
+  }
+  // Time-to-train + pacing: streamlined while fast, ⟲ when the per-level grind is
+  // abysmal (a round-robin candidate — see progression-philosophy).
+  function hoursBadge(step) {
+    const h = hoursForStep(step);
+    if (!h) return "";
+    const rot = isAbysmal(step)
+      ? ` <span class="step-badge rotate" title="Abysmal per-level — round-robin this to break monotony">⟲ rotate</span>`
+      : "";
+    return `<span class="step-badge hours" title="Estimated time to train">~${fmtHours(h)}</span>${rot}`;
+  }
   function invBadge(step) {
     return step.inv_used ? `<span class="step-badge inv">${step.inv_used} inv slots</span>` : "";
   }
@@ -1248,6 +1262,7 @@ import { plan as runPlanner } from "../planner/index.js";
           ${goalBadge(step)}
           ${locationBadge(step)}
           ${xpBadge(step.xp)}
+          ${hoursBadge(step)}
           ${invBadge(step)}
           ${constraintBadges(step.reqs)}
           ${loadoutBadge}
@@ -2415,6 +2430,7 @@ import { plan as runPlanner } from "../planner/index.js";
         loadJsonl(GOALS_URL),
         loadJsonl(REGIONS_URL),
         loadJsonl(CONSTRAINTS_URL),
+        loadRates(BASE + "/assets/data/tools"),   // pacing rates for the hours badge
       ]);
     } catch { return; }
 

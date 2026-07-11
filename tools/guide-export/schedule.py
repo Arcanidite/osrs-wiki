@@ -17,7 +17,7 @@ ABYSMAL_HOURS_PER_LEVEL = 1.0   # a level slower than this -> rotate instead of 
 DEFAULT_RATE = 30000            # xp/hr when a skill has no rate row
 MAX_LEVEL = 99
 
-RATES = json.loads((Path(__file__).parent / "rates.json").read_text())
+RATES = json.loads((Path(__file__).parents[2] / "assets" / "data" / "tools" / "rates.json").read_text())
 
 
 def _xp_table():
