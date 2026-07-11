@@ -1,0 +1,8 @@
+{
+  "_comment": "Render-metadata catalog: router zone -> map marker + representative training NPC highlight. Hand-built for the combat slice; later sourced from cache extraction.",
+  "zones": {
+    "lumbridge-farm":    {"x": 3235, "y": 3295, "plane": 0, "label": "Lumbridge chickens", "npc": 1173, "npcLabel": "Chicken"},
+    "lumbridge":         {"x": 3259, "y": 3266, "plane": 0, "label": "Lumbridge cows",     "npc": 397,  "npcLabel": "Cow"},
+    "barbarian-village": {"x": 3081, "y": 3420, "plane": 0, "label": "Barbarian Village",   "npc": 3103, "npcLabel": "Barbarian"}
+  }
+}
