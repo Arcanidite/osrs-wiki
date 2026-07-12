@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Creature of Fenkenstrain
+|image = [[File:Creature of Fenkenstrain reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Thieving|1,000}} [[Thieving]] experience
+*The [[Ring of charos]], which allows access to the [[Werewolf Agility Course]], and, when activated during [[Garden of Tranquillity]], reduced cost to many transport links.
+}}

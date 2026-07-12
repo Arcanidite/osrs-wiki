@@ -1,0 +1,10 @@
+==Reward==
+[[File:Garden of Tranquillity reward scroll.png|centre]]
+*{{Skill clickpic|Quest|2}} [[Quest points]]
+*{{Skill clickpic|Farming|5,000}} [[Farming]] [[experience]]
+*An activated [[ring of charos]] - Players can wear the activated ring to charm various [[Non-player character|NPC]]s to pay less for certain services, or get choices that are otherwise unavailable.
+*An [[apple tree seed]]
+*An [[acorn]]
+*5 [[Guam seed]]s
+*4 Dose [[compost potion]], can be used on a full compost bin to turn [[compost]] into [[supercompost]].
+*After the quest, the player can visit the garden and pick 4 [[White tree fruit|fruits]] from the white tree. They regrow after some time, similar to other fruit bearing trees. Each fruit restores about 8% of [[energy]].

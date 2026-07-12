@@ -1,0 +1,7 @@
+===Killing the Ghasts===
+{{Checklist|*Leave the grotto and stand next to rotting plants (logs, bushes, branches) in the swamp.
+*Using the [[silver sickle (b)]]'s [[Bloom]] ability (requires prayer points), harvest the swamp plants and fill your druid pouch with them.
+*Use your filled druid pouch on [[Ghast]]s to make them attackable, kill three of them.
+*Return to the nature spirit by clicking the grotto in the cave and he'll redecorate the grotto.
+**If you plan on completing the [[Morytania Diary]], pray at the altar now.
+*'''Congratulations, quest complete!'''}}

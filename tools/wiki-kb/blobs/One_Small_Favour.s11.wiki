@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = One Small Favour
+|image = [[File:One Small Favour reward scroll.png|centre]]
+|qp = 2
+|rewards = *Two [[Antique lamp (One Small Favour)|experience lamps]] giving 10,000 [[experience]] to any skill of your choice. Skill must be at least level 30
+*A [[steel key ring]]
+*The ability to make and drink [[Guthix rest]] tea
+*The ability to craft [[pot lid]]s
+*Access to the [[gnome glider]] route to the [[Feldip Hills]]
+
+Unlocks:
+* [[Slagilith]] accessible in the [[Nightmare Zone]]
+}}

@@ -1,0 +1,41 @@
+===The Menaphites===
+====Pickpocketing====
+{{Checklist|
+*Go to [[Ali the Operator]] and ask to join his gang (big purple tent, south-west){{Chat option|1Yes, of course, those bandits should be taught a lesson.|2No thanks.}}
+*Attempt to pickpocket a [[villager]] once then return to Ali the Operator. {{Chat option|1Yeah, I could do with a bit of advice.|2No thanks.}}
+*Talk to the [[street urchin]] near the centre town well.
+**Pay him ten coins
+*Pickpocket the villager with an arrow over their head. 
+*Talk to Ali the Operator {{Chat option|1Yeah, I could do with a bit of advice.}}
+*Equip the [[oak blackjack]] and then lure a villager into a secluded area.
+**Knock out the villager with the [[blackjack]] equipped
+**Pickpocket the villager
+}}
+
+====Jewels====
+{{Checklist|
+*Talk to Ali the Operator.
+*Put on the [[desert disguise]] and gloves.
+*Hide behind the large cactus near the mayor's house (the large house to the East by the fountain).
+*Use the [[keys]] on the door.
+*Go up the stairs in the north-eastern corner.
+*Search the landscape picture near the bed.
+*Hit the button on the dial to reset it.
+**Click on 1, 1, 2, 3, 5, 8, in that order, clockwise.
+*Give the [[jewels]] to Ali the Operator.
+}}
+
+====Traitor====
+{{Checklist|*Talk to Ali the Operator.
+*Talk to a Menaphite Thug.
+*Talk to Ali the Operator. {{Chat option|2No thanks.}}
+*Talk to Ali the barman. {{Chat option|3I'm looking for Traitorous Ali.|1No thanks I'm ok.}}
+*Buy special sauce from the kebab seller. He can be found north-west of the well in the middle of the town. {{Chat option|3Would you sell me that bottle of special kebab sauce?|2No thanks, I'm good.}}
+*Use it on a trough behind the camel shop.
+*Use a bucket on the dung if it is brown. Obtain three more buckets of dung if you plan to complete [[My Arm's Big Adventure]].
+*Use a coin on the snake charmer's money pot, sitting south of the bar {{Chat option|1Wow, a snake charmer. Can I have a go? Can I have a go? Please?}} with 2 free inventory spaces to get a [[snake charm]] and a [[snake basket]].
+*Use the snake charm on a [[desert snake]] north of the Menaphite tent until it goes into the [[snake basket]].
+*Go to [[Ali the Hag]] north-west of the kebab seller. Talk to her twice to give her the [[snake basket]] and [[Ugthanki dung]] to receive the [[hag's poison]] in exchange.
+*Use the hag's poison on the table with a beer in the bar.
+*Talk to Ali the Operator.
+}}

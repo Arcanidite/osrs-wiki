@@ -1,0 +1,7 @@
+===Brother Althric at the Edgeville monastery===
+''Item required: a fishing rod''
+
+{{Checklist|* Talk to [[Brother Althric]] {{Chat option| 2}}
+* Run over to [[Edgeville]] and throw the [[ring of charos(a)]] down the well.
+* Take 4 seeds from the red, pink, and white roses.
+* Retrieve your ring with a fishing rod.}}

@@ -1,0 +1,37 @@
+==Details==
+{{Quest details
+|start = Talk to [[Rantz]] by the eastern coast of [[Feldip Hills]], east of [[fairy ring]] {{Fairycode|aks}}.
+|startmap = 2630,2981
+|difficulty = Intermediate
+|description = Rantz the Ogre needs to feed his demanding children, Fycie and Bugs, so he wants to go Big Chompy Bird hunting. Problem is, he's all fingers and thumbs when it comes to making ogre arrows.
+
+Could someone please give him a hand?
+|length = Short
+|requirements = * {{SCP|Fletching|5|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Cooking|30|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Ranged|30|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* The ability to defend against level 64 [[wolves]] and level 53 [[ogre]]s
+|items = * Any [[axe]] that you can use ([[Blessed axe]] does not work)
+* [[Feather]]s (100 to be safe; coloured feathers from {{SCP|Hunter|link=yes}} work)
+** Bringing {{Coins|50}} to buy 25 feathers from [[Fycie]] also works
+* [[Knife]] (or {{Coins|10}} to buy a knife and chisel from [[Bugs]])
+* [[Chisel]] (or {{Coins|10}} to buy a knife and chisel from [[Bugs]]) 
+* 4 [[wolf bones]] (obtainable during the quest from level 65 [[wolves]] or from level 14 [[wolves]] in the [[Stronghold of Security]])
+* [[Cabbage]] (obtainable during the quest, Draynor cabbage will not work)
+* [[Tomato]] (obtainable during the quest)
+* [[Onion]] (obtainable during the quest)
+* [[Potato]] (obtainable during the quest)
+* [[Equa leaves]] (obtainable during the quest)
+* [[Doogle leaves]] (obtainable during the quest)
+|recommended = * {{SCP|Combat|25|link=yes}}
+* [[Armour]] and [[weapons]] (but not gear that reduces your chance to hit with [[Ranged]], as this can cause you not to hit the [[chompy bird]])
+* [[Stamina potion|Stamina]] or [[energy potion]]s and some [[food]]
+* [[Feldip hills teleport]] or [[Fairy Rings]] to {{fairycode|aks}} (or [[gnome glider]] after completion of [[One Small Favour]])
+|kills = * [[Chompy bird]] ''(level 6)''
+* [[Wolf|Wolves]] ''(level 64)'' (optional)
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

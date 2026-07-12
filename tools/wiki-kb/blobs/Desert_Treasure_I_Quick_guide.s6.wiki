@@ -1,0 +1,16 @@
+===Ice diamond===
+''Items required: runes to cast [[fire spells]] to unfreeze the Trolls after killing [[Kamil]], any sweet food (from [[Troll child]]'s list), spiked boots (get these from [[Dunstan]] with a pair of climbing boots and an iron bar), climbing boots or [[Trollheim Teleport]], enough food and combat equipment to kill 5 Ice Trolls and Kamil. '''Prayer and restore/super restore/menaphite remedy potions highly recommended.'''''
+[[File:Ice Path map.png|alt=ice path map|thumb|525x525px|After reaching [[Trollheim]], the [[Ice Path]] is due north-west.]]
+'''''Note:''' Only fire spells will work if using Magic on [[Kamil]]. [[Iban Blast]], [[Flames of Zamorak]], and [[trident of the seas]]' built in spell cannot damage [[Kamil]]. Additionally, '''your stats will be constantly drained during this fight'''; keep this in mind when selecting the fire spell you will use. Note you cannot run in the area, so there's no point in bringing graceful set.''
+{{Checklist|
+*Give your sweet food to the [[Troll child]] north-west of Trollheim by right-clicking and '''using''' the cake on the troll child.
+*Talk to the [[Troll child]]. {{Chat option|1Yes}}
+*Enter the ice gate and kill 5 [[ice trolls]].
+**Note: You won't need to kill the trolls again if you teleport out and come back
+*Enter the cave.
+*Follow the path then kill [[Kamil]] (it is advised to approach with protect from magic to force him to teleport into range, then protect from melee, and manually cast your spells).
+*Continue west and follow the long icy path.
+*Wear spiked boots and climb the ice ledge, follow the new path.
+*Go through the gate and smash the trolls frozen in ice by using your fire spell on each of them. Talk to them for the ice diamond.
+}}
+'''Tip:''' Use a ring of dueling to teleport to Ferox Enclave and use the pools to restore all your combat stats and prayer before proceeding.

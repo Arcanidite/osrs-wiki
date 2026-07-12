@@ -1,0 +1,10 @@
+===Bloated toads===
+{{Checklist|
+*Ask Rantz all possible questions. {{Chat option|1How do we make the chompies come?|2What are 'fatsy toadies'?|3Where do we put the fatsy toadies?|4What do you mean 'sneaky..sneaky, stick da chompy?'|5Ok, thanks.}}
+*Enter the cave north of Rantz.
+*Talk to [[Fycie]] and [[Bugs]].
+*Attempt to unlock the [[Locked Ogre chest|chest]] until it [[Unlocked Ogre chest|opens]] and search it to obtain [[ogre bellows]].
+*At the nearby swamp (south-west), look for swamp bubbles and click on them to fill up the ogre bellow.
+*Use the ogre bellows on a [[Swamp Toad|swamp toad]] to obtain a "[[bloated toad]]".
+**Collect 3 Bloated toads to save you a trip in future. You can only hold 3 at one time.
+}}

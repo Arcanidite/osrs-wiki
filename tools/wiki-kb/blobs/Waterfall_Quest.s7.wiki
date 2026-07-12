@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Waterfall Quest
+|image = [[File:Waterfall Quest reward scroll.png|centre]]
+|qp = 1
+|rewards = * {{SCP|Strength|13,750}} [[Strength]] experience
+*{{SCP|Attack|13,750}} [[Attack]] experience
+*2 [[Diamond]]s
+*2 [[Gold bar]]s
+*40 [[Mithril seeds]]
+}}

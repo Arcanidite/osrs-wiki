@@ -1,0 +1,27 @@
+==Details==
+{{Quest details
+|description = Investigate the death of elven leaders of old. Search for the elf King Baxtorian's tomb and discover the mysterious hidden treasure of the waterfall.
+|start = Talk to [[Almera]] in her house north-east of [[Baxtorian Falls]].
+|startmap = 2521,3497
+|difficulty = Intermediate
+|length = Short
+|requirements = The ability to withstand and evade attacks from level 86 [[Fire Giant]]s and level 84 [[Moss Guardian]] without any equipment.
+|items = * 6 [[Air rune]]s
+* 6 [[Earth rune]]s
+* 6 [[Water rune]]s
+* [[Rope]]
+|recommended = * {{SCP|Combat|25|link=yes}}
+* 15 or more [[Hitpoints]] (to run past enemies safely)
+* [[Food]]
+* Fast travel to several locations
+**[[Baxtorian Falls]] to start the quest, plus one additional trip - [[games necklace]] to [[Barbarian Outpost]], [[Minigame Teleport]] to [[Barbarian Assault]], or [[skills necklace]] to [[Fishing Guild]]
+**[[Tree Gnome Village (location)|Tree Gnome Village]] (1 trip) - [[Spirit tree]], [[fairy ring]] {{fairycode|ciq}}, [[Ardougne cloak]] 1-4 to [[Ardougne Monastery]], [[Minigame Teleport]] to [[Fishing Trawler]], or [[ring of dueling]] to [[Castle Wars]]
+**[[Glarial's Tomb]] (1 trip) - [[skills necklace]] to [[Fishing Guild]], [[games necklace]] to [[Barbarian Outpost]], or [[Minigame Teleport]] to [[Barbarian Assault]]
+|ironman = [[File:Ultimate ironman chat badge.png]] You must briefly visit Glarial's Tomb, which has [[Glarial's Tomb#Restricted items|significant item restrictions]].
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

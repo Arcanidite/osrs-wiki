@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|name = Temple of Ikov
+|image = 
+[[File:Temple of Ikov reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Ranged|10,500}} [[Ranged]] [[experience]]
+*{{SCP|Fletching|8,000}} [[Fletching]] experience
+*[[Armadyl pendant]] (if you sided with [[Lucien]], you must kill [[Guardians of Armadyl]] to obtain it)
+*[[Pendant of Lucien]], which grants access to a door in the [[Temple of Ikov (dungeon)|Temple of Ikov]]
+*Optional; [[Boots of lightness]]
+*Optional; [[Shiny key]], for a shortcut between the Temple of Ikov and [[McGrubor's Wood]]
+*Completing this quest awards the player with 5 [[kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]]
+}}

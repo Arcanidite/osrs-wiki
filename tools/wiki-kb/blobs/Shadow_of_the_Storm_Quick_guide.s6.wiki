@@ -1,0 +1,11 @@
+===The final fight===
+{{Instance}}
+'''NOTE:''' this boss can be flinched by standing behind the north-western torch.
+
+UIM concerns: If you die during the fight, all your items will appear on the ground outside the portal in the temple. {{Checklist|
+*Talk to Matthew to start the incantation, say it '''backwards'''. {{Chat option|1Yes}}
+*Kill [[Agrith Naar]] with any weapon, but the final blow must be with Silverlight. The demon will heal if you run away as the final blow is being dealt.
+*Unequip Silverlight.
+*Choose your reward to finish the quest.
+*'''Congratulations, quest complete!'''
+}}

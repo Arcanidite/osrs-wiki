@@ -1,0 +1,4 @@
+===Getting started===
+{{Checklist|
+*Talk to [[Rantz]] East-north-east of [[Feldip Hills]] ([[fairy ring]] {{Fairycode|aks}}). {{Chat option|1Yes.}}
+}}

@@ -1,0 +1,21 @@
+==Details==
+{{Quest details
+|start = Talk to [[King Narnode Shareen]] in the [[Grand Tree]].
+|startmap = 2466,3495
+|difficulty = Intermediate
+|description = The [[Grand Tree]], which shelters the majority of the small gnome population of Gielinor, is dying. Is it human sabotage or an inside job? Help [[King Shareen]] to find the true cause and save the tree gnomes from an uncertain fate.
+|length = Medium
+|requirements = * {{SCP|Agility|25|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 172 [[Black demon (The Grand Tree)|Black demon]] (safespottable for Ranged and Magic or melee using a [[halberd]]).
+|items = * 1,000 [[coins]] if you previously chose not to help [[Femi]] on your first entry to the [[Tree Gnome Stronghold]] (not required if you never used the gate entrance)
+|recommended = *{{SCP|Combat|50|link=yes}}
+*[[Stamina potion|Stamina]] or [[energy potions]]
+*[[Combat equipment]] to defeat a level 172 [[Black demon (The Grand Tree)|Black demon]], [[Magic]] recommended
+*Fast travel to several locations:
+**[[Tree Gnome Stronghold]] to start the quest, plus 2 additional trips - [[spirit tree]] from [[Grand Exchange]] or [[Battlefield]], [[slayer ring]] to the [[Stronghold Slayer Cave]], [[Balloon Transport System]], or [[necklace of passage]] to the [[Outpost]]
+**[[Hazelmere]]'s house (1 trip) - [[fairy ring]] {{Fairycode|cls}}, [[Watchtower Teleport]], [[Teleport to House]] (Yanille), [[Minigame Teleport]] to [[Nightmare Zone]] or [[Fishing Trawler]], [[Ardougne cloak]] 1-4 to [[Ardougne Monastery]], or [[ring of dueling]] to [[Castle Wars]]
+|kills = * [[Black demon (The Grand Tree)|Black demon]] ''(level 172)'' (can be safespotted)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

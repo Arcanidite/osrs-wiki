@@ -1,0 +1,12 @@
+===Dealing with the thugs===
+{{Checklist|
+*Prepare for battle and talk to the [[Menaphite Leader]] (just outside the tent).
+*Kill the [[Tough Guy]] ''(level 75)'' ([[safespot]] behind bush). He drops a [[willow blackjack]].
+*Talk to a villager. {{Chat option|2Ok I'll get to it.}}
+*Talk to the [[Bandit Leader]] wandering around the northern [[magic carpet]] station.
+*Kill the [[bandit champion]] ''(level 70)'' (safespot behind chair in house to the east). He drops an [[adamant scimitar]] (if you have a [[willow blackjack]] in your inventory).
+*Talk to a villager.
+*Talk to [[Ali the Mayor]] by the well in village centre.
+*Return to [[Ali Morrisane]] (with whom you started the quest). {{Chat option|1No, I'm really too busy.}}
+*'''Congratulations, quest complete!'''
+}}

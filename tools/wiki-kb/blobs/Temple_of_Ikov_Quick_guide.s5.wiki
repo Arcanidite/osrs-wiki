@@ -1,0 +1,14 @@
+===Killing the Fire Warrior===
+''Items required for this part: Pendant of lucien, ice arrows, a bow that can fire ice arrows (yew or better), 20 un-noted limpwurt root. Items suggested: food and armour; if necessary, the limpwurt roots can be retrieved from a bank after killing the fire warrior.''
+{{Checklist|*Go back through the north gate with the [[Pendant of lucien]] equipped.
+*Continue straight north to a small room containing a lever.
+*Right-click the lever and search for traps. (Requires 42 Thieving) Then pull the lever.
+*Go west then north through the doors.
+*A [[Fire Warrior of Lesarkus]] will spawn in the room upon attempting to enter the second door.
+*Kill him with your ice arrows.
+**Use [[protect from magic]] to take no damage.
+*Give [[Winelda]] 20 ''unnoted'' [[limpwurt roots]] all at once. She will teleport you to the other side of the lava.
+**'''Ultimate Ironmen should be extremely cautious if juggling items here.''' As soon as you hand in the limpwurt roots, Winelda will teleport you across the lava. You will NOT be able to turn around or get back to her. 
+*''Optional: follow the path to its end and take the [[shiny key]] to access this dungeon from [[McGrubor's Wood]].''
+*Push the wall to the north leading to a room full of [[Guardians of Armadyl]].
+*Pick the good or evil path.}}

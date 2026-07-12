@@ -1,0 +1,6 @@
+===Elstan south of Falador===
+''Item required: a marigold seed''
+
+{{Checklist|* Talk to [[Elstan]], {{Chat option|1| 2| 3| 2| 2| 1}}
+* Grow [[marigolds]] in the patch.
+* Once grown, give them to Elstan for the delphinium seeds}}

@@ -1,0 +1,37 @@
+==Details==
+{{Quest details
+|start = Talk to [[Pirate Pete]] on the dock north of [[Port Phasmatys]].
+|startmap = 3678,3537
+|difficulty = Experienced
+|description = Zombie pirates have arisen on [[Braindeath Island]], and they don't look friendly! Production of 'rum' has stopped, and the pirate brewers are running scared. Can you overcome the horde of drunken, undead pirates? Can you even get to the island without getting a splitting headache?
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[Zogre Flesh Eaters]]
+***[[Big Chompy Bird Hunting]]
+***[[Jungle Potion]]
+****[[Druidic Ritual]]
+**[[Priest in Peril]]
+*{{SCP|Crafting|42|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Farming|40|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Prayer|47|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Slayer|42|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Fishing|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} <ref>Fishing requirement can be bypassed if obtaining 5 [[Karamthulhu]]s from [[Zombie swab]]s or [[Zombie pirate (Braindeath Island)|Zombie pirates]]</ref>
+
+*The ability to kill a [[combat level]] 150 [[Evil spirit|monster]] (can be [[safespotted]])
+|recommended = *{{SCP|Combat|50|link=yes}}
+*Means to deal damage at range ([[Magic]], [[Ranged]], or a [[Halberd]]) '''or''' means to negate [[disease]] (such as [[Slayer gloves]], [[Sanfew serum]], or a [[Relicym's balm]])
+*[[Ectophial]] for fast travel to the quest starting point
+*[[Stamina potion|Stamina]] or [[energy potion]]s
+*[[Ring of Charos (a)]] and a [[tinderbox]] for some funny dialogue with [[50% Luke]]
+|kills = *[[Evil spirit]] ''(level 150) (safespottable)'' 
+*[[Fever spider]] ''(level 49) (safespottable)''
+|items = *[[Rake]] (obtainable during the quest)
+*[[Seed dibber]] (obtainable during the quest) or partial completion of the [[Farming]] portion of the [[Barbarian Training]] [[miniquest]]
+*[[Bucket]] (obtainable during the quest)
+*At least 47 [[prayer points]] for the ''[[Rum Deal#Evil spirits|Evil spirits]]'' part of the quest
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}
+
+<references />

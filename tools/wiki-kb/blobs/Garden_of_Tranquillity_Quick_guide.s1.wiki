@@ -1,0 +1,48 @@
+==Details==
+{{Quest details
+|start = Speak to [[Ellamaria]] in the garden of [[Varrock Palace]].
+|difficulty = 2
+|description = 'Queen of Varrock seeks experienced gardener to help construct a garden of peace and serenity as surprise for husband.
+
+Only serious Farmers need apply. Peasants welcome (although not that welcome). Tools not supplied.
+
+Please note: under no circumstances are the contents of this message to be disclosed to Rollie – um, one means King Roald.'
+|length = Long (Must wait for several crops to grow)
+|requirements = *{{Skill clickpic|Farming|25}} [[Farming]]
+*Completion of [[Creature of Fenkenstrain]]
+|items = *The [[ring of charos]]
+*All [[tool leprechaun]] tools
+**A [[rake]]
+**A [[seed dibber]]
+**A [[spade]]
+**[[Secateurs]] ([[Magic secateurs]] work)
+**A [[watering can]]
+**A [[gardening trowel]]
+*3-5 [[supercompost]] (for marigolds, cabbage, and onions to make them survive better)
+*A [[marigold seed]]
+*3-6 [[Cabbage seed]]s (planting both allotments isn't required but doubles chances of surviving)
+*3-6 [[Onion seed]]s (planting both allotments isn't required but doubles chances of surviving)
+**All three different seeds can be bought from the [[Draynor Seed Market]]
+**Farming payment will not work for this quest
+*[[Rune dust]]
+**Use a [[hammer]] or [[chisel]] on [[Rune essence|rune]]/[[pure essence]]
+**Use a [[pestle and mortar]] on [[rune shards]]
+*2 [[Plant cure]]s (more is advised for diseased plants along the way)
+
+*A [[filled plant pot]]
+*2 [[Compost]]
+'''Recommended:'''
+*An [[amulet of nature]]
+*Something to do while you wait for patches to grow
+*A [[fishing rod|fishing]]/[[fly fishing rod]] (at least in your bank; ultimately optional but highly recommended)
+*[[Items]] and [[runes]] to teleport to the following locations:
+**[[Varrock]]
+**[[Draynor Village]] ([[amulet of glory]])
+**[[Port Phasmatys]] farm ([[Ectophial]])
+**[[Ardougne]] farm
+**[[Catherby]] farm
+**[[Burthorpe]] tavern ([[games necklace]])
+**[[Edgeville Monastery]] ([[combat bracelet]] or [[amulet of glory]] to [[Edgeville]])
+**[[Lumbridge]]
+**[[Falador]]
+}}

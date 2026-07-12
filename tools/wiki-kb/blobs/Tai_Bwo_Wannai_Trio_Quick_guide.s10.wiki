@@ -1,0 +1,9 @@
+===Finishing up===
+{{Checklist|
+*Either use a Brimhaven House teleport, fairy ring {{Fairycode|CKR}} or simply walk back to the quest start.
+*Talk to Timfraku {{Chat option|1Oh it was nothing really.}} and finish the quest.
+*(Optional) Before leaving, talk to Tiadeche in the south-western house in Tai Bwo Wannai for 5,000 Fishing experience.
+*(Optional) Before leaving, talk to Tinsay in the middle southern house in Tai Bwo Wannai for the ability to catch and cook karambwans and to receive 5,000 Cooking experience.
+*(Optional) Before leaving, talk to Tamayu in the south-eastern house in Tai Bwo Wannai to receive a karambwan-poisoned rune spear, as well as 2,500 Attack and Strength experience.
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,9 @@
+===The "cursed" voyage===
+{{Checklist|*You will have to steer left or right using the controls on the interface. The progress bar will indicate how far you have to go to reach the island.
+When the top arrow tilts to the left, click on the right arrow.
+
+When the top arrow tilts to the right, click on the left arrow.
+
+Changing the height of the sails will alter how drastically the boat shifts from side to side. Having the boat's sails as large as possible when going in a straight line will allow for a more consistent travel route.
+*Once the progress bar is filled, you will arrive at Fossil Island.
+*'''Congratulations, quest complete!'''}}

@@ -1,0 +1,4 @@
+===Trollish===
+{{Checklist|
+*Talk to [[Herman Caranos]] at the [[Piscatoris Fishing Colony]] (north of [[Fairy rings|Fairy ring]] {{fairycode|AKQ}}); [[cutscene]] is optional. {{Chat option|1What's the rush?|1Do you need any help?|2I'm a brave adventurer! Can I try?}}
+}}

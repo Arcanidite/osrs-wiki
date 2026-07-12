@@ -1,0 +1,7 @@
+===Stagnant water===
+{{Checklist|
+*Talk to Captain Braindeath. You will automatically get a bucket in your inventory if you don't have one.
+*Leave the building using the stairs to the south, head west to the bridge, and open the gate north of [[50% Luke]].
+*Head north to the water source on the map, and fill the bucket with stagnant water.
+*Return to the brewery and add the stagnant water to the hopper. (Ectophial and talking to Pirate Pete is faster than walking back.)
+}}

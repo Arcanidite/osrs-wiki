@@ -1,0 +1,7 @@
+===Starting off===
+{{Checklist|
+*Talk to [[King Bolren]] in [[Tree Gnome Village (location)|Tree Gnome Village]]. Accept the quest and you will be taken out of the maze and placed at the north-west corner. {{Chat option|1Can I help at all?|1I would be glad to help.}}
+*Walk slightly north and speak to [[Commander Montai]] (red hat) at the south-west edge of the [[battlefield]], south of the river. {{Chat option|1Ok, I'll gather some wood.}}
+*Talk to him again to give him 6 [[logs]].
+*Then talk to him a third time. {{Chat option|2I'll try my best.}}
+}}

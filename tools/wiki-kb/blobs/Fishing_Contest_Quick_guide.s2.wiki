@@ -1,0 +1,12 @@
+==Walkthrough==
+{{Map|x=2842|y=3486|x:2876,y:3483,desc:[[Austri]]|x:2821,y:3487,desc:[[Vestri]]|plane=0|mapID=0|zoom=1|height=250|width=225|align=right|mtype=pin|caption=This quest can be started from either side of the White Wolf Mountain.}}
+{{Checklist|*Speak to either dwarves on either side of the [[White Wolf Mountain]]. {{Chat option|1I was wondering what was down those stairs?|2Why not?|3If you were my friend I wouldn't mind it.|1Well, let's be friends!|1And how am I meant to do that?}} '''Note:''' Starting on the west side makes travelling by foot easier.
+*If you need [[garlic]], go to [[Seers' Village]] and take it from the house south-west of the bank (it spawns on the table).
+*Bring a [[spade]] and make your way to [[McGrubor's Wood]] (either enter through the back or teleport to [[fairy ring]] {{fairycode|ALS}} if you completed at least half of [[Fairytale II - Cure a Queen]]) to gather '''3''' [[red vine worm]]. You can collect them by checking the vine just west of the [[fairy ring]] {{fairycode|ALS}}.
+* Either walk south to [[Hemenster]] or teleport to the [[Ranging Guild]] via your [[combat bracelet]] and go north-west.
+*If you don't have a Fishing Rod, purchase one from [[Grandpa Jack]] for {{Nocoins|5|c}} in the house outside [[Hemenster]] entrance.
+*Enter [[Hemenster]] with the Fishing pass in your inventory.
+*Put a [[Garlic]] in the pipes to the north. '''Make sure to finish the dialogue.'''
+*Pay Bonzo 5 coins. ''Wait for the [[Sinister Stranger]] to move away from the pipes.'' Start fishing and wait for the contest to end.
+*After winning the contest, make your way back to the dwarf and show him the trophy.
+*'''Congratulations, quest complete!'''}}

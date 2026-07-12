@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Rum Deal
+|image = [[File:Rum Deal reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Fishing|7,000}} [[Fishing]] experience
+*{{SCP|Prayer|7,000}} [[Prayer]] experience
+*{{SCP|Farming|7,000}} [[Farming]] experience
+*The [[Holy wrench]] (while in your inventory, this grants more [[prayer points]] when drinking a [[prayer potion]])
+*Access to [[Braindeath Island]]
+}}

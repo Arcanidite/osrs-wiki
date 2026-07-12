@@ -1,0 +1,40 @@
+==Details==
+{{Quest details
+|start = Read the [[signpost (Creature of Fenkenstrain)|signpost]] in the middle of [[Canifis]].
+|startmap = 3488,3485
+|difficulty = Intermediate
+|description = [[Dr Fenkenstrain]], master and sole occupant of the castle to the north-east of [[Canifis]], needs a new servant to go on a dark errand for him.
+
+Do you have the stomach to help Fenkenstrain complete his twisted purpose?
+|length = Medium
+|requirements = * Completion of [[Priest in Peril]]
+* Partial completion of [[The Restless Ghost]]
+* {{SCP|Crafting|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Thieving|25|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* Able to defeat a level 51 monster and run past level 72 monsters
+|items = * [[Ghostspeak amulet]]
+* [[Silver bar]]
+* 3 [[bronze wire]] (unnoted)
+* [[Needle]] ([[costume needle]] does not work)
+* 5 [[thread]]
+* [[Spade]]
+* 50 [[coins]] '''OR''' 1 [[law rune|law]] & 1 [[air rune]] for [[Telekinetic Grab]] (requires {{SCP|Magic|33|link=yes}})
+|recommended = * {{SCP|Combat|30|link=yes}}
+*Combat equipment to defeat a level 51 [[Experiment]]
+* [[Food]] and [[Holy symbol]] (protection against [[Feral Vampyre]]s) for low combat levels
+*[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*Fast travel to several locations
+**[[Canifis]] to start the quest - [[Salve Graveyard Teleport]] or [[Kharyrll Teleport]] or [[fairy ring]] {{Fairycode|cks}}
+**[[Fenkenstrain's Castle]] (2 trips) - [[Fenkenstrain's Castle Teleport]]
+*Quick access to a furnace:
+**[[Ectophial]] or 2 [[ecto-token]]s for access to the [[Port Phasmatys]] furnace
+**[[Amulet of glory]] to [[Edgeville]]
+|kills = * [[Experiment]] ''(level 51)'' - can be safespotted or flinched
+|ironman = * {{SCP|Smithing|4|link=yes}} {{Boostable|yes}} (to make a [[bronze wire]])
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}

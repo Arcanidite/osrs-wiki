@@ -1,0 +1,8 @@
+===Rallying the troops===
+{{Checklist|
+*Talk to Father Badden outside.
+*Convince Father Reen to join the ritual. {{Chat option|3Oh, don't be so simple-minded!}}
+*Talk to the golem, he will refuse to help. {{Chat option|3I could just reprogram you again.}}
+*Use the Strange implement on the golem to reprogram him.
+*Talk to the golem again to make him enter the dungeon.
+}}

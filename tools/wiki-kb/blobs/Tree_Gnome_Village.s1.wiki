@@ -1,0 +1,24 @@
+==Details==
+{{Quest details
+|description = The tree gnomes are in trouble. General Khazard's forces are hunting them to extinction.
+
+Find your way through the hedge maze to the gnomes secret treetop village.
+
+Then help the gnomes fight Khazard and retrieve the orbs of protection.
+|start = Talk to [[King Bolren]] at the centre of the [[Tree Gnome Village (location)|Tree Gnome Village]] [[Gnome Maze|maze]].
+|startmap = 2542,3169
+|difficulty = Intermediate
+|length = Short
+|requirements = * The ability to defeat a level 112 [[Khazard warlord]]
+|items = * 6 normal [[logs]] (or an [[axe]], obtainable during the quest by killing [[goblin]]s in the Tree Gnome Village maze, or retrievable from the [[canoe station]] near the north entrance to the maze, if you have one stored)
+* Combat equipment
+* Food
+|kills = * [[Khazard warlord]] ''(level 112)'' (can be safespotted)
+|recommended = * {{SCP|Combat|45|link=yes}}
+*[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*Fast travel to [[Tree Gnome Village (location)|Tree Gnome Village]] to start the quest - [[Castle Wars]] minigame teleport, [[ring of dueling]] to [[Castle Wars]], [[fairy ring]] to {{fairycode|ciq}}, [[Ardougne cloak]] 1-4, or  [[necklace of passage]] to [[The Outpost]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking the {{ilink|Nature's Accord (Demonic Pacts League)|Nature's Accord}} relic will auto-complete the quest
+</poem>
+}}

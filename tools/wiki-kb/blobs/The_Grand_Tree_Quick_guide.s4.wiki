@@ -1,0 +1,6 @@
+===Glough===
+{{Map|x=2477|y=3463|r=3|width=250|height=250|mtype=square|align=right|caption=Glough's house location.}}
+{{Checklist|
+*Return to [[King Narnode Shareen|King Shareen]]. He will ask what the message says. Tell him: {{Chat option|1I think so.|5None of the above.|5None of the above.|2A man came to me with the King's seal.|1I gave the man Daconia rocks.|4And Daconia rocks will kill the tree!}}
+*Head south. At the bottom of the incline, turn east and go up the ladder to speak with [[Glough]].
+}}

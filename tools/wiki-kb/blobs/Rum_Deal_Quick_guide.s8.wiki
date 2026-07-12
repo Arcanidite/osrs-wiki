@@ -1,0 +1,7 @@
+===The spider carcass===
+{{Checklist|
+*Talk to Captain Braindeath. (Complete the dialogue or the fever spider corpse won't drop)
+*Climb down the nearby ladder.
+*Kill a fever spider (can be safespotted by standing north-west of the ladder) 
+* Put its body in the hopper on the top floor.
+}}

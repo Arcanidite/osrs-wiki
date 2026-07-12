@@ -1,0 +1,10 @@
+===Tomb Raiding===
+{{Checklist|
+*Bank all items EXCEPT Glarial's pebble, some food and a transport method ''(Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).''
+** For low levels, as [[Glarial's Tomb]] is single-way combat, it is recommended to initiate combat with a skeleton once inside to prevent being attacked by Moss giants which damage the player significantly more.
+** For Ultimate Ironmen there is a table (in the house you got [[Book on Baxtorian]] from) you can place your items on for temporary safe-keeping.
+** If you die while in the tomb, your gravestone will spawn on the surface.
+*Head to [[Glarial's Tombstone]], east of the Waterfall. Use the pebble on it to enter.
+*Go west, search the chest to find [[Glarial's amulet]]. ''(Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground)''.
+*Return and go the other way to search the tomb to find [[Glarial's urn]].
+}}

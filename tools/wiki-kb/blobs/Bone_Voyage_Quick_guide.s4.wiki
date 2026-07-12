@@ -1,0 +1,8 @@
+===The finishing touches===
+{{Checklist|
+*Go to the [[canal barge]] north of The Digsite and speak to the [[barge foreman]].
+*Speak to the [[sawmill operator]] in the [[Lumber Yard]]. {{Chat option|3I'm here on behalf of the museum archaeological team.}}
+*Bring the [[sawmill proposal]] to the sawmill operator in the [[Woodcutting Guild]]. {{Chat option|3I'm here on behalf of the museum archaeological team.}}
+**If you don't have the requirements to enter, just try and open the eastern gate of the guild to complete this step.
+*Bring the [[sawmill agreement]] back to the Lumber Yard's sawmill operator. {{Chat option|3I'm here on behalf of the museum archaeological team.}}
+}}

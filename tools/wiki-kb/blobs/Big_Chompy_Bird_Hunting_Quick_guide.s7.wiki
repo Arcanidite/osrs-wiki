@@ -1,0 +1,17 @@
+===Cooking the bird===
+{{Map|mtype=pin|align=right|caption=Seasoning locations.
+|x:2562,y:2972,title:[[Doogle leaves]],desc:
+|x:2583,y:2965,title:[[Onion]],desc:
+|x:2584,y:2966,title:[[Tomato]],desc:
+|x:2587,y:2973,title:[[Cabbage]],desc:
+|x:2642,y:2959,title:[[Potato]],desc:
+|x:2639,y:2952,title:[[Equa leaves]],desc:
+|x:2630,y:2981,title:[[Rantz]],desc:
+}}
+{{Checklist|
+*Go back into the cave and talk to Fycie and Bugs.
+*Obtain the ingredients that they've asked for. The image on this page shows their location.
+*Use the [[raw chompy]] on the spit-roast north of Rantz (the fire outside of the cave).
+*Talk to Rantz.
+*'''Congratulations, quest complete!'''
+}}

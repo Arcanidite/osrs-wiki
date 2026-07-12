@@ -1,0 +1,4 @@
+===Ghostspeak amulet===
+{{Checklist|*Talk to [[Father Urhney]] inside the hut. {{Chat option|2 Father Aereck sent me to talk to you.|1 He's got a ghost haunting his graveyard.}}
+*Head to the small room in the Lumbridge graveyard south of the church.
+*Equip the [[Ghostspeak amulet]] and click the coffin, talk to the ghost. {{Chat option|1 Yep, now tell me what the problem is.}}}}

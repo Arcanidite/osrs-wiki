@@ -1,0 +1,6 @@
+===Lyra west of Port Phasmatys===
+''Items required: 3-6 onion seeds Fairy ring a*l*q''
+
+{{Checklist|* Talk to [[Lyra]] {{Chat option| 1| 2| 2| 2| 2| 2| 2| 2| 1.}}
+* Grow [[onions]] (both patches reduce chance of failure).
+* Once grown, talk to Lyra for the orchid seeds.}}

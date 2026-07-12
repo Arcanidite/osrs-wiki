@@ -1,0 +1,17 @@
+===Raising an Army===
+{{Needed|7 [[bones]], [[airtight pot]] OR [[pot]] with [[pot lid]], [[brown apron]] (can ask [[Malignius Mortifer|Malignius]] for one).<br/>'''If not banking afterwards:''' [[Food]], [[Armour]], [[Melee weapon|Melee]] or [[Ranged weapons|Ranged weapon]], [[Prayer potions]].}}
+
+'''Note''': ''You must exit the colony to use the [[Nightmare Zone]] [[minigame teleport]] to reach [[Yanille]].''
+{{Checklist|
+*Talk to [[Wizard Frumscone]] in the basement of the [[Wizards' Guild]] in Yanille. {{Chat option|2I'll see what the necromancer needs me to do.}}
+}}
+
+'''Note''': ''The southern portal on the {{FloorNumber|uk=2}} of the Wizards' Guild will teleport you to the [[Dark Wizards' Tower]], just north-west of [[Malignius Mortifer]].''
+{{Checklist|
+*Talk to Malignius Mortifer south of [[Falador]]. {{Chat option|2I need help with saving a fishing colony.}} He will give you a brown apron in order to be allowed entry to the [[Crafting Guild]].
+*Talk to the [[Master Crafter]] with dreadlocks in the Crafting Guild on the east side.
+**If you brought [[soft clay]], use it on the potter's wheel, then the potter's oven to make a [[pot]] and [[pot lid]]. If you brought a [[pickaxe]], mine some clay and follow the step above.
+*Use Pot and Pot Lid together to make Airtight Pot.}}
+'''Note''': ''Malignius Mortifer will refuse to give you bone seeds if you are wearing or holding Saradomin-affiliated gear. It is not suggested to drop any gear as you will be teleported back to the Fishing Colony.
+{{Checklist|
+*Talk to Malignius Mortifer to teleport back to the Fishing Colony. {{Chat option|2I've spoken to the master crafter...}}}}

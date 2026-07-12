@@ -1,0 +1,25 @@
+===Walkthrough===
+----
+[[File:Cook (Lumbridge) chathead.png|left]]
+{{Needed|An [[eye of newt]], a [[greenman's ale]], a [[rotten tomato]], [[ashes]], and a [[fruit blast]] (or 8 gold and a [[knife]])}}
+
+The [[Cook (Lumbridge)|Cook]] tells you that he needs a [[Eye of newt|newt's eye]], a [[Greenman's ale]], a [[rotten tomato]], and a [[dirty blast]] in order to prepare for the centennial feast. If you ask him how to make a dirty blast, he will tell you to add [[ashes]] to a [[fruit blast]]. He will give you {{NoCoins|100}} [[coins]] to buy everything, and he will allow you to keep the change.
+
+====Gathering the ingredients====
+* An [[eye of newt]] can be bought from [[Herblore shops]] or [[Betty's Magic Emporium.|Betty's Magic Emporium]] in [[Port Sarim]].
+* [[Greenman's ale]] is sold in [[Yanille]] at the [[Dragon Inn]] bar for {{NoCoins|10}} coins.
+* A [[rotten tomato]] can be bought from a [[Pelters' Veg Stall]] near [[pillory]] cages in [[Varrock]], [[Seers' Village]], [[Yanille]], and [[Hosidius]] or [[Shop of Distaste]] at the [[Emir's Arena]] for {{NoCoins|1}} coin.
+* A [[fruit blast]] can be bought from the [[Grand Exchange]] or chosen as a reward when handing in Digsite exam certificates to [[Curator Haig Halen]] in [[Varrock]] after completion of [[The Dig Site]]. All of the ingredients required to make one can be obtained in the [[Gnome Stronghold]] from [[Hudo]].
+** '''{{Colour|red|Warning:}}''' A [[premade fr' blast]] will '''not''' work. 
+** Burn a fire for [[ashes]] or kill an [[elemental wizard]], then add them to the [[fruit blast]] for a [[dirty blast]].
+
+;Creating a [[fruit blast]] from scratch
+#Go to [[Grand Tree Groceries]] (north-west corner of the {{FloorNumber|uk=1}} of the [[Grand Tree]]) and pick up the [[cocktail shaker]] spawn on the table. Buy 2 [[lemon]]s, 1 [[pineapple]], and 1 [[orange]] from [[Hudo]]. 
+#Run over to where [[Heckel Funch]] is (in the south-east corner) to find a [[Cocktail glass]] spawn.
+#Mix the [[cocktail shaker]] and select "Fruit Blast."
+#Use a [[knife]] to [[Lemon slices|slice]] (not [[Lemon chunks|dice]]) the remaining [[lemon]], then pour your [[cocktail shaker]] to create a [[fruit blast]].
+#Finally, use the ashes on the [[fruit blast]] to make the [[dirty blast]].
+
+Once you have all 4 items, give them to the Cook. Enter the dining room to open up the rest of [[Recipe for Disaster]].
+
+'''Congratulations, quest complete!''' (''for now...'')

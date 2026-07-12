@@ -1,0 +1,10 @@
+===The final battle===
+{{Needed|Combat equipment, [[10th squad sigil]]|recommended=Teleportation, prayer potions and high healing food are highly recommended}}
+{{Checklist|
+*Prepare for final battle.
+*Equip the [[10th squad sigil]] when you are ready to fight the [[Jungle Demon]].
+**Tip: Use [[Protect from Magic]] prayer and stay out of melee range to avoid taking damage.
+*Kill the Jungle Demon.
+*Return to the Grand Tree and talk to [[King Narnode Shareen]].
+*'''Congratulations, quest complete!'''
+}}

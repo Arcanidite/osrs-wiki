@@ -1,0 +1,9 @@
+===Investigation===
+{{Needed|1000 [[coins]] (if you haven't helped [[Femi]]).|recommended=A [[teleport]] out of [[Karamja]].}}
+{{Checklist|*Return to [[King Narnode Shareen|King Shareen]], and he will tell you that [[Glough]] has caught a human. Ask to see the prisoner.
+*Talk to the prisoner [[Charlie (prisoner)|Charlie]] on the top floor of the Grand Tree. '''Make sure to finish the entire conversation!'''
+*Go to Glough's house. Search the [[cupboard (The Grand Tree)|cupboard]], and you will find his [[Glough's journal|journal]].
+*Talk to Glough and wait to be arrested.
+*Talk to Charlie; he will tell you about the [[Ship Yard|shipyard]] on [[Karamja]]; the password is '''Ka-Lu-Min'''.
+*[[King Narnode Shareen|The king]] appears and tells you to escape using the [[gnome glider]] on top of the tree.
+*Travel with the glider.}}

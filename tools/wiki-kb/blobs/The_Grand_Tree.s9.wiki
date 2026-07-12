@@ -1,0 +1,17 @@
+==Rewards==
+{{Quest rewards
+|name = The Grand Tree
+|image = [[File:The Grand Tree reward scroll.png|centre]]
+|qp = 5
+|rewards = *{{SCP|Attack|18,400}} [[Attack]] [[experience]]
+*{{SCP|Agility|7,900}} [[Agility]] [[experience]]
+*{{SCP|Magic|2,150}} [[Magic]] [[experience]]
+*Access to the [[Grand Tree mine|mine]] under the [[Grand Tree]].
+*Access to the [[Gnome glider]] transportation system.
+*Ability to use the [[Rocks (Tree Gnome Stronghold)|rocks]] as an [[Agility shortcut]] from the Grand Tree to the [[Barbarian Outpost]] (with 37 [[Agility]]).
+*Ability to use the spirit tree in the Stronghold after the completion of [[Tree Gnome Village]].
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]].
+
+Unlocks:
+* [[Black demon]] accessible in the [[Nightmare Zone]].
+}}

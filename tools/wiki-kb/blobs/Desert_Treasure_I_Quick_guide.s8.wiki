@@ -1,0 +1,29 @@
+===The Ancient Pyramid===
+''Items required: all four diamonds. Recommended: weight-reducing gear, stamina potion, energy potion, antipoison, prayer potions and high-healing food.''
+{{Checklist|
+*Go south-east of [[Eblis]] and place a diamond in each of the pyramid's obelisks.
+*Enter the pyramid from the top.
+*Run through each floor and don't stop or a trap may send you back to the start. Traps may still trigger regardless. Beware [[Mummies]] and [[Scarabs]] as they can hit over 20.
+}}
+{|class="wikitable" style="border-style:none;"
+!Level 1
+!Level 2
+!Level 3
+!Level 4
+|-
+|
+[[File:Ancient Pyramid level 1.png|centre|Level 1 of the Ancient Pyramid|250px]]
+|
+[[File:Ancient Pyramid level 2.png|centre|Level 2 of the Ancient Pyramid|250px]]
+|
+[[File:Ancient Pyramid level 3.png|centre|Level 3 of the Ancient Pyramid|250px]]
+|
+[[File:Ancient Pyramid level 4.png|centre|Level 4 of the Ancient Pyramid|250px]]
+|}
+{{Checklist|
+*Talk to [[Azzanadra]] at the end.
+**Praying at the altar twice after completing the quest will unlock a hard task in the Desert area.
+*'''Congratulations, quest complete!'''
+}}
+
+'''''Note:''' Talk to Eblis after the quest to buy an [[Ancient staff]] for 80,000 coins, or buy one from the GE for {{Coins|{{GEP|Ancient staff}}}}.''

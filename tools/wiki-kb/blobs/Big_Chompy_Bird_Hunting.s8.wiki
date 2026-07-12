@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Big Chompy Bird Hunting
+|image = [[File:Big Chompy Bird Hunting reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Fletching|262|link=yes}} [[experience]]
+*{{SCP|Cooking|1,470|link=yes}} experience
+*{{SCP|Ranged|735|link=yes}} experience
+*An [[ogre bow]]
+*The ability to fletch [[ogre arrow]]s
+*The ability to cook [[chompy bird]]s and earn a [[bowman hat]]
+}}

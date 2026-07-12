@@ -1,0 +1,14 @@
+===The statues===
+{{Checklist|* Talk to Ellamaria, ask about the statues to get a trolley.}}
+'''''Lumbridge Castle'''''
+
+{{Checklist|* Use the trolley on the statue of a king.
+* Push the trolley east over the bridge.
+* Place the statue on the eastern plinth in the garden.}}
+
+'''''Falador Square'''''
+
+{{Checklist|* Use the trolley on the Saradomin statue.
+* Push the trolley north through the gate.
+* Watch the cutscene.
+* Place the  statue on the southern plinth in the garden.}}

@@ -1,0 +1,18 @@
+===Speaking to the store owners===
+{{Checklist|
+*Visit the following districts and speak to their respective store owners about their city:
+}}
+{|class=wikitable style="text-align:center;"
+|{{Map|name=Leenz|x=1808|y=3726|squareX=10|squareY=8|mtype=square|caption=[[Leenz]] from [[Port Piscarilius]]<br />{{Chat option|3 Can I ask you about Piscarilius?|2 What is there to do in Piscarilius?}}|width=220|height=220}}
+|{{Map|name=Horace|x=1774|y=3588|r=3|mtype=square|caption=[[Horace]] from [[Hosidius]]<br />{{Chat option|3 Can I ask you about Hosidius?|2 What is there to do in Hosidius?}}|width=220|height=220}}
+|{{Map|name=Jennifer|1517,3594|1522,3594|1522,3588|1517,3588|mtype=polygon|caption=[[Jennifer (Shayzien)|Jennifer]] from [[Shayzien]]<br />{{Chat option|3 Can I ask you about Shayzien?|2 What is there to do in Shayzien?}}|width=220|height=220}}
+|{{Map|name=Munty|1548,3755|1558,3755|1558,3746|1548,3746|mtype=polygon|caption=[[Munty]] from [[Lovakengj]]<br />{{Chat option|4 Can I ask you about Lovakengj?|2 What is there to do in Lovakengj?}}|width=220|height=220}}
+|{{Map|name=Regath|x=1720|y=3724|squareX=10|squareY=18|mtype=square|caption=[[Regath]] from [[Arceuus]]<br />{{Chat option|4 Can I ask you about Arceuus?|2 What is there to do in Arceuus?}}|width=220|height=220}}
+|}
+{{Checklist|
+*Return to [[Veos]] in [[Port Piscarilius]] after speaking with all store owners. {{Chat option|4 Let's talk about your client...}}
+*Use your [[Games necklace]] [[Wintertodt Camp]] teleport and run south until you reach the dark terrain with purple crystals, then east. Alternatively, if you have access to [[fairy ring]]s, use code {{Fairycode|CIS}}.
+*Activate the [[Mysterious orb (Client of Kourend)|mysterious orb]] in your inventory while near the [[Dark Altar]], east of Trossa and north of the fairy ring.
+*Return to [[Veos]]. {{Chat option|4 Let's talk about your client...}}
+*'''Congratulations, quest complete!'''
+}}

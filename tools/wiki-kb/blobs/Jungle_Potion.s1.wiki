@@ -1,0 +1,21 @@
+==Details==
+{{Quest details
+|start = Talk to [[Trufitus]] in [[Tai Bwo Wannai]].
+|startmap = 2810,3086
+|difficulty = Novice
+|description = [[Trufitus Shakaya]] of the [[Tai Bwo Wannai Village]] requires that you collect five special jungle herbs for a potion so he can commune with his Gods.
+|length = Short
+|requirements = * Completion of [[Druidic Ritual]]
+* {{SCP|Herblore|3|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defend against level 53 [[Jogre]]s and level 46 [[Harpie Bug Swarm]]s.
+|items = 
+|recommended = * {{SCP|Combat|20|link=yes}}
+* 1-2 [[antidote++]] or other [[antipoison]] potions
+* [[Food]]
+* [[Stamina potion]]s
+* [[Combat equipment]] to kill a level 53 [[Jogre]] for an easy [[Karamja Diary]] task
+* Fast travel to [[Tai Bwo Wannai Village]] to start the quest - [[Brimhaven teleport]], [[Teleport to House]] (Brimhaven), [[Captain Barnaby]]'s ship from [[Ardougne]] to Brimhaven, [[fairy ring]] {{fairycode|ckr}} or [[amulet of glory]] to [[Karamja]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Karamja}} {{okay}} will auto-complete the quest
+</poem>
+}}

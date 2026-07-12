@@ -1,0 +1,14 @@
+====Traitor====
+{{Checklist|*Talk to Ali the Operator.
+*Talk to a Menaphite Thug.
+*Talk to Ali the Operator. {{Chat option|2No thanks.}}
+*Talk to Ali the barman. {{Chat option|3I'm looking for Traitorous Ali.|1No thanks I'm ok.}}
+*Buy special sauce from the kebab seller. He can be found north-west of the well in the middle of the town. {{Chat option|3Would you sell me that bottle of special kebab sauce?|2No thanks, I'm good.}}
+*Use it on a trough behind the camel shop.
+*Use a bucket on the dung if it is brown. Obtain three more buckets of dung if you plan to complete [[My Arm's Big Adventure]].
+*Use a coin on the snake charmer's money pot, sitting south of the bar {{Chat option|1Wow, a snake charmer. Can I have a go? Can I have a go? Please?}} with 2 free inventory spaces to get a [[snake charm]] and a [[snake basket]].
+*Use the snake charm on a [[desert snake]] north of the Menaphite tent until it goes into the [[snake basket]].
+*Go to [[Ali the Hag]] north-west of the kebab seller. Talk to her twice to give her the [[snake basket]] and [[Ugthanki dung]] to receive the [[hag's poison]] in exchange.
+*Use the hag's poison on the table with a beer in the bar.
+*Talk to Ali the Operator.
+}}

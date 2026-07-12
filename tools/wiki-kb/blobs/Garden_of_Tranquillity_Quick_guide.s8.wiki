@@ -1,0 +1,7 @@
+===Dantaera in Catherby===
+''Item required: a filled plant pot'' ''(can be bought from the nearby store)''
+
+{{Checklist|* Talk to [[Dantaera]] {{Chat option| 1| 2| 2| 2}}
+* Travel to [[Ice Mountain]].
+* Use [[secateurs]] on the White Tree located on the northern part of the Ice Mountain.
+* Put the cutting in your plant pot and water it.}}

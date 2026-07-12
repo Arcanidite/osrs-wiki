@@ -1,0 +1,82 @@
+==Details==
+{{Quest details
+|start = Talk to [[Yanni Salika]] in [[Shilo Village (location)|Shilo Village]].
+|startmap = 2835,2987
+|difficulty = Experienced
+|description = If you're new to Shilo Village after solving the mystery (or even if you did it some time ago), you may like to check out Yanni Salika's antiques shop.
+
+He's a busy chap, revamping antique items, checking out new stock from potential adventurers and maybe he'll have a small<sup>(1)</sup> favour to ask of you? Probably nothing particularly large, Yanni isn't a demanding<sup>(2)</sup> person, should hardly take you any time<sup>(3)</sup> at all really, something to do when you have a spare moment.
+
+That's assuming there aren't any complications.
+
+1: - Perception of the word "small" may be open to interpretation.
+
+2: - In a recent vote, Yanni Salika was only voted the second most demanding person in Shilo Village.
+
+3: - As everyone knows, time is relative.
+|length = Long
+|requirements = * Completion of the following quests:
+** [[Rune Mysteries]]
+** [[Shilo Village]]
+*** [[Jungle Potion]]
+**** [[Druidic Ritual]]
+* {{SCP|Agility|36|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* {{SCP|Crafting|25|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* {{SCP|Herblore|18|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* {{SCP|Smithing|30|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+|items = * 4 [[steel bar]]s
+* [[Bronze bar]]
+* [[Iron bar]]
+* The ingredients required to make a [[Guthix rest]]:
+** 2 [[Guam leaves]]
+** [[Marrentill]]
+** [[Harralander]]
+** [[Cup of hot water]] (obtainable during the quest)
+* [[Hammer]] (obtainable during the quest) or [[Imcando hammer]]
+* 5 [[pigeon cage|pigeon cages]] (obtainable during the quest)
+** '''Note:''' The pigeons do not need to be let out of the cages.
+* [[Pot]] (obtainable during the quest)
+* [[Soft clay]] (obtained during the quest)
+* Two of each of the following cut gems, or a [[chisel]] to cut the uncut gems received during the quest (high chance to crush them, up to 2 replacements available for {{NoCoins|500|c}} each during the quest)
+** [[Opal]]
+** [[Jade (gem)|Jade]]
+** [[Red topaz]]
+** [[Sapphire]] (cannot be crushed, so you may choose to bring a [[chisel]] instead to cut the uncut sapphires given during the quest)
+|recommended = * {{SCP|Combat|45|link=yes}}
+* [[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s.
+* Fast travel to several locations
+** Shilo Village (travel to [[Brimhaven]] and take the cart or use [[Fairy Rings]] to {{Fairycode|ckr}})
+** Port Sarim and Draynor Village ([[amulet of glory]] or [[Explorer's Ring 2]])
+** Varrock ([[Varrock teleport]])
+** Barbarian Village and Dwarven Mine ([[Skull Sceptre]] or [[combat bracelet]] to the [[Edgeville Monastery]])
+** Taverley ([[House teleport]]s or [[Balloon transport system]])
+** White Wolf Mountain ([[gnome glider]])
+** Catherby and Seers' Village ([[Camelot teleport]], or [[Catherby teleport]] and [[combat bracelet]] teleport to the [[Ranging Guild]])
+** Fishing Guild ([[skills necklace]] or [[Fishing guild teleport]])
+** East Ardougne ([[Ardougne teleport]])
+** Port Khazard ([[Ardougne cloak]] teleport to the [[Ardougne Monastery]], [[Khazard teleport]] or [[Fishing Trawler]] [[Minigame Teleport]])
+** Feldip Hills ([[Feldip hills teleport]] or use [[Fairy Rings]] to {{Fairycode|aks}} or the jungle [[Eagle transport system]])
+*A method of defeating [[Slagilith]], which reduces damage by 67% when a pickaxe is not equipped:
+**Any [[pickaxe]] - the highest level you can wield if not using [[Magic]]
+**Runes to cast any [[combat spell]] - this will circumvent the damage reduction as long as any pickaxe is wielded
+**A [[crush weapon]] if not using a [[pickaxe]]
+* [[Armour]] and some [[food]]
+* [[Lockpick]] to enter the [[H.A.M. Hideout]] if your [[Thieving]] level is low
+|kills = * [[Slagilith]] ''(level 92)''
+* [[Dwarf gang member]]s ''(level 44/48/49)'' ([[Multicombat area]])
+|ironman = *A method of acquiring [[Marrentill]]:
+**1/14.8 drop from [[chaos druid]]s for the grimy herb.
+**Picking the herbs in the [[Sorceress's Garden]] winter garden for [[marrentill]] (1/3.85). Requires completion of {{SCP|Quest}} Prince Ali Rescue.
+*A method of acquiring [[Harralander]]:
+**1/25.4 drop from [[chaos druid]]s for the grimy herb. Requires {{SCP|Herblore|20|link=yes}} to clean.
+**Picking the herbs in the [[Sorceress's Garden]] winter garden for [[harralander]] (1/4.09). Requires completion of {{SCP|Quest}} Prince Ali Rescue.
+*A method of acquiring [[Guam leaves]]:
+**1/11.1 drop from [[chaos druid]]s for the grimy herb.
+**Picking the herbs in the [[Sorceress's Garden]] winter garden for [[guam leaves]] (1/3.37). Requires completion of {{SCP|Quest}} Prince Ali Rescue.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+'''The quest is otherwise not completable.'''
+</poem>
+}}

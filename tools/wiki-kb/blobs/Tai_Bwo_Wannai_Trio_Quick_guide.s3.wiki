@@ -1,0 +1,5 @@
+====Banana rum====
+{{Checklist|*Travel to [[Musa Point]] with an [[amulet of glory]]
+**Pick a banana if you don't have one already
+*Run south into the pub and buy a Karamjan rum off Zembo for {{Coins|30}}
+*Use the knife on the banana, then use the [[sliced banana]] on your rum.  Unlike normal Karamjan rum, this version is safe to teleport with}}

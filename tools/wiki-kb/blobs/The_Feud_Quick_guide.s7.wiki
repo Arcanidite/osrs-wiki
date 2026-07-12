@@ -1,0 +1,12 @@
+====Pickpocketing====
+{{Checklist|
+*Go to [[Ali the Operator]] and ask to join his gang (big purple tent, south-west){{Chat option|1Yes, of course, those bandits should be taught a lesson.|2No thanks.}}
+*Attempt to pickpocket a [[villager]] once then return to Ali the Operator. {{Chat option|1Yeah, I could do with a bit of advice.|2No thanks.}}
+*Talk to the [[street urchin]] near the centre town well.
+**Pay him ten coins
+*Pickpocket the villager with an arrow over their head. 
+*Talk to Ali the Operator {{Chat option|1Yeah, I could do with a bit of advice.}}
+*Equip the [[oak blackjack]] and then lure a villager into a secluded area.
+**Knock out the villager with the [[blackjack]] equipped
+**Pickpocket the villager
+}}

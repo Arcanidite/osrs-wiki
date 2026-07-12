@@ -1,0 +1,16 @@
+===The vampyre===
+{{Checklist|
+*Go back and speak to [[King Roald]].
+*Take 25 '''unnoted''' [[pure essence|pure]] or [[rune essence]], a [[bucket]], a weapon and 1 free inventory slot.
+**As a low level, you may need to make more than two trips if you will be taking food, although the Monk can be [[safespot]]ted over the pews using ranged or magic.
+*Enter the temple again and proceed up the stairs, then the ladder until you reach the {{FloorNumber|uk=2}}. Talk to [[Drezel]]. {{Chat option|2 So, what now?|1 Yes, of course.}}
+*Kill the level 30 [[Monk of Zamorak]] on the {{FloorNumber|uk=1}} to obtain a [[golden key]].
+*Go back to the trapdoor where you killed the [[Temple Guardian]], climb down, and go through the first door.
+*Study the monuments until you find one with a key.
+*Use the golden key on the monument.
+*Use the bucket on the well in the middle of the monuments.
+*Go back to the top floor of the temple where [[Drezel]] is located.
+*Use the [[Iron key]] on the cell door and open it.
+*Talk to [[Drezel]].
+*Use the [[blessed water|blessed bucket of water]] on the [[Coffin (Priest in Peril)|coffin]].
+}}

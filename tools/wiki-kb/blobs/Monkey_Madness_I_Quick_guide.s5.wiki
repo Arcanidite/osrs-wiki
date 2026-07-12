@@ -1,0 +1,11 @@
+===Obtaining amulet parts===
+[[File:Monkey Madness I - M'amulet mould location.png|thumb|250px|[[M'amulet mould]] location.]]
+{{Checklist|
+*Follow the blue path to the U-shaped building and enter through the southern door.
+**'''Stay on the dark brown floor''' or you will alert the guards.
+*Search the stacked crates on the light brown floor for [[Monkey dentures]]. (Complete the dialogue)
+*Search the south-eastern crate to fall into a cave.{{Chat option|1Yes, I'm sure.}}
+**Heal up before you do, you can take fall damage.
+*Search the crates in the north-west for a [[M'amulet mould]].
+*You may now teleport away.
+}}

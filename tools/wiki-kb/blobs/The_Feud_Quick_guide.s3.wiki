@@ -1,0 +1,5 @@
+===Getting Started===
+{{Checklist|
+*Talk to [[Ali Morrisane]] next to the Silk Stall in [[Al Kharid]]. {{Chat option|1If you are, then why are you still selling goods from a stall?|2I'd like to help you but.....|1Yes.|2Okay.}}
+*Buy a [[kharidian headpiece]] and a [[fake beard]] and combine them.
+}}

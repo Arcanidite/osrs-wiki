@@ -1,0 +1,32 @@
+==Details==
+{{Quest details
+|start = Talk to [[Father Reen]] south of [[Al Kharid]] bank.
+|startmap = 3271,3158
+|difficulty = Intermediate
+|description = A sinister group of dark wizards is attempting to summon Agrith-Naar, a demon of exceptional mystical power. Rather than try to prevent them, a Saradominist priest asks the player to help summon the demon and then kill it once and for all.
+
+But all is not as it seems...
+|length = Medium
+|requirements = *{{SCP|Crafting|30|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+*Completion of the following quests:
+**[[The Golem]]
+**[[Demon Slayer]]
+*The ability to defeat a level 100 demon
+|items = *[[Silverlight]] (obtainable at start of quest)
+*[[Strange implement]] (obtainable during quest)
+*Any black outfit (minimum of 3 pieces, see [[Shadow_of_the_Storm#Starting_Out|below]] for the allowed gear — the dyed [[Silverlight]] '''does not''' count as a piece of black clothing)
+**'''Note:''' You can make a [[black desert robe]] and [[black desert shirt|shirt]] during the quest if you brought a [[desert robe]] and [[desert shirt|shirt]]
+*[[Black dye]] (from grinding a black mushroom using a pestle and mortar alongside a vial)
+*[[Silver bar]]
+*Means to enter the desert (such as the [[Shantay pass (item)|Shantay pass]], [[Desert amulet 2]], [[Teleport tablets]] or [[Teleport scrolls|scrolls]], [[Fairy rings]] or the [[Pharaoh's sceptre]])
+|kills = [[Agrith-Naar]] ''(level 100)''
+|recommended = *{{SCP|Combat|50|link=yes}}
+*Fast travel to Al Kharid to start the quest ([[amulet of glory]] or [[ring of dueling]])
+*Fast travel to Uzer ([[necklace of passage]] to Eagles' Eyrie, [[Fairy Rings]] to {{fairycode|dlq}} or using the [[magic carpet]] transport)
+*[[Food]] and [[armour]] to defeat a level 100 demon
+*2 [[waterskin]]s
+*[[Chisel]] and [[hammer]] (optional to obtain several gems from the throne, unless already taken during [[The Golem]])
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}

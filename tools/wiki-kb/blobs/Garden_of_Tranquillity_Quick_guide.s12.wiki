@@ -1,0 +1,10 @@
+=== Gardening ===
+''Items required: 2 buckets of compost or supercompost. ''
+
+{{Checklist|* Return to Ellamaria’s garden and fill the 2 plant pots with compost.
+*Plant everything. They take 10-15 minutes to grow and cannot die.
+* Talk to Ellamaria.
+* Talk to King Roald, options: 1, 2, 2. (Make sure you have the Ring of charos (a) equipped when talking to King Roald or he will not follow you into the garden.)
+* Watch the cutscene.}}
+
+Quest complete!

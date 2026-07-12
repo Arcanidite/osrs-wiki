@@ -1,0 +1,75 @@
+== Details ==
+<onlyinclude> 
+<includeonly>
+
+==Freeing Pirate Pete==
+===Details===
+</includeonly>
+{{Quest details
+|start = Inspect [[Pirate Pete]] in the Lumbridge Castle dining room.
+|startmap = 1862,5347
+|difficulty = Special
+|description = Pirate Pete needs a fishcake to be protected. Talk to the Lumbridge Cook to learn how to make one.
+|length = Medium
+|requirements = *{{SCP|Cooking|31|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* Completion of the following quests: 
+**[[Recipe for Disaster/Another Cook's Quest]]
+***[[Cook's Assistant]]
+*The ability to defeat 5 level 30 monsters.
+|items = *A [[raw cod]] (It's highly recommended to get at least 3 of all the ingredients, as the Fishcake can burn)
+*A [[pestle and mortar]]
+*[[Bread]] (at least 3 recommended)
+*A [[knife]]
+*A [[fishbowl]] (empty)
+*A [[needle]] ([[Costume needle]] does not work)
+*3 [[bronze wire]]
+|kills = *5 [[Mudskipper]]s ''(level 30/31)''
+*[[Crab]] ''(level 21/23)''
+|ironman = [[File:Ultimate ironman chat badge.png]] This quest has a weight limit.
+*{{SCP|Crafting|42|link=yes}} {{Boostable|yes}} (If crafting a [[fishbowl]] yourself or by completing [[Rum Deal]])
+*{{SCP|Smithing|4|link=yes}} {{Boostable|yes}} (To make the bronze wire.)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}
+
+===Walkthrough===
+----
+{{Needed|A [[pestle and mortar]], a [[raw cod]], a [[knife]], and [[bread]]}}
+[[File:Pirate Pete chathead.png|left]]
+'''Inspect Pirate Pete in the Lumbridge Castle dining room to start the quest.''' Talk to the [[Cook (Lumbridge)|Cook]] in the next room. He will tell you to get [[ground cod]], [[breadcrumbs]], [[ground giant crab meat]], and [[ground kelp]]. He will tell you that [[Murphy]] in [[Port Khazard]] will help you get the crab meat and kelp. '''Make sure to ask him each available question pertaining to the ingredients, or you may not be able to make them. If you are at the end of the quest, and you cannot make the fishcake, simply inspect Pirate Pete in the dining room, and then talk to the cook again.'''
+*Ground cod - Use your [[pestle and mortar]] on your [[raw cod]].
+*Breadcrumbs - Use your [[knife]] on your [[bread]].
+'''Note:''' It's recommended that you get extra kelp and crab meat, especially if you have a low [[Cooking]] level, as if you burn the [[fishcake]], you will have to go back to do it all over again. Luckily, you don't need any more [[bronze wire]] and hides, so just get extra cod, bread, kelp, and the meat.
+
+====Under the sea====
+{{Needed|A [[pestle and mortar]], ''A [[fishbowl]] (empty), a [[needle]], 3 [[bronze wires]], weight less than 28 kg, at least 5 free inventory spaces|recommended=A weapon}}
+[[File:Recipe for Disaster - Freeing Pirate Pete - Mogre Camp.png|thumb|220px|Underwater, talking to Nung.]]
+Go to [[Murphy]], who can be found at [[Port Khazard]] ([[Minigame Teleport]] to the [[Fishing Trawler]]), to get your [[fishbowl]] made into a [[diving apparatus]]. Put it on, then ask to go diving. Your weight must be under 28 kilograms. Have multiple empty inventory spots, as you will not be able to drop items underwater if you need to pick up new items. The nearby [[Bank chest]] may be useful. You may not bring a [[Cat]] with you, on the ground or in your inventory, and attempting to will prompt some amusing dialogue from Murphy.
+
+Once you're underwater, find a [[kelp (scenery)|tall plant]], and pick it for the [[kelp]]. '''Get some extras in case you burn the [[fishcake]].''' Then, look for a crab pen to the north. Talk to [[Nung]]. He will tell you to get him five [[mudskipper hide]]s. 
+
+:'''Note''': If using [[rings of recoil]] for the following [[mudskipper]] and [[crab]] kills, at least one damage must be dealt by the player to receive the hides.
+
+Head to the entrance to the mudskippers' cave, on the western wall of the underwater area. Pick up five [[Rock (Mogre Camp)|rocks]] near the entrance to the cave and then enter the cave. While in the cave (and the crab pen thereafter), you will be able to wield weapons as normal as you will be standing upright. Kill five [[mudskipper]]s (level 30 and 31) to get hides. You can do this in multiple trips if inventory space is tight as Nung will accept any hides you currently carry. ('''Remember to give them to Nung before surfacing, as they will disappear!''') Take them back to Nung. Give him your [[needle]] and three [[bronze wire]]; he will let you into the crab pen after this.
+
+In the pen, kill a [[crab]] and collect its meat. Grind the crabmeat and kelp with a [[pestle and mortar]]. '''Get some extras in case you burn the [[fishcake]]'''.
+
+Return to and speak with the [[Cook (Lumbridge)|Cook]]. Use the ingredients on each other, and cook it to get a [[fishcake]]. '''Right-click and use it on (don't eat it!)''' [[Pirate Pete]] in the dining room for your reward.
+
+===Rewards===
+----
+{{Quest rewards
+|name = Recipe for Disaster/Freeing Pirate Pete
+|image = [[File:Recipe for Disaster (Freeing Pirate Pete) reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Cooking|1,000}} [[Cooking]] experience
+*{{SCP|Crafting|1,000}} [[Crafting]] experience
+*{{SCP|Fishing|1,000}} [[Fishing]] experience
+*{{SCP|Smithing|1,000}} [[Smithing]] experience
+*The ability to go diving and fight [[crab]]s (you need your [[diving apparatus]])
+*The ability to cook [[crab meat]] (heals 10 hitpoints in 5 bites)
+*The ability to kill crabs to get their shells and claws, which can be made into a [[Crab helmet|helmet]] and [[Crab claw|gloves]] with a [[chisel]]
+*Further access to the [[Culinaromancer's Chest]]
+}}</onlyinclude>

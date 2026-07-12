@@ -1,0 +1,12 @@
+===The Nature Spirit===
+{{Needed|[[Silver sickle]], [[Ghostspeak amulet]]}}
+{{Checklist|*Run back to [[Drezel]] and ask him to bless you.
+**UIM Note: If you discarded your [[Wolfbane]], you will first have to take the replacement dagger and then speak to him to be blessed.
+*Enter the swamp, stand next to a rotting log in the swamp and cast the druidic spell.
+*Quickly pick a mushroom growing from the log and bring it back to Filliman's camp.
+* Talk to Filliman to ensure he is standing outside between all 3 stones.
+*Use the mushroom on the [[stone (Nature Spirit)#Brown|light-brown stone]].
+*Use the used spell card on the [[stone (Nature Spirit)#Grey|grey stone]].
+*Stand on the [[stone (Nature Spirit)#Orange|orange stone]] and tell Filliman you've solved the puzzle. {{Chat option|3I think I've solved the puzzle!}}
+*Enter the hole under the tree then search the grotto in the middle of the cave.
+*Give the nature spirit your [[silver sickle]] by talking to him and he will give you a [[druid pouch]].}}

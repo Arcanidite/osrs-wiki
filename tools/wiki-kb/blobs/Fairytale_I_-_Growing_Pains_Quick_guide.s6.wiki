@@ -1,0 +1,11 @@
+===Battle the Tanglefoot===
+{{Needed|[[dramen staff]], [[magic secateurs]], [[food]], and [[armour]].}}
+{{Checklist|
+{{Instance}}
+*Travel to [[Zanaris]] with your Magic secateurs and prepare for the [[Tanglefoot]] fight.
+*Run south of the wheat fields to the Cosmic Altar and squeeze-through the gap in the western wall.
+*Equip your Magic secateurs, run to the end of the tunnel and defeat Tanglefoot. (Turn on [[Protect from Melee]] if you have the level for it. You can also lure the Tanglefoot around the mushrooms to the east to be able to [[flinch]] it.)
+*Pick up the [[Queen's secateurs]].
+*Talk to the [[Fairy Godfather]].
+*'''Congratulations, quest complete!'''
+}}

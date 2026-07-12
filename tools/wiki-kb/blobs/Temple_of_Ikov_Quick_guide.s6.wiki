@@ -1,0 +1,5 @@
+===Good path ===
+{{Checklist|*Remove your Pendant of lucien and talk to a Guardian of Armadyl. {{Chat option|1I seek the Staff of Armadyl.|1Lucien will give me a grand reward for it!|3You're right, it's time for my yearly bath.|1Ok! I'll help!}}
+*Enter the building west of the [[Grand Exchange]] wearing your [[Armadyl pendant]] and kill [[Lucien]] (level 14).
+}}
+'''Congratulations, quest complete!'''

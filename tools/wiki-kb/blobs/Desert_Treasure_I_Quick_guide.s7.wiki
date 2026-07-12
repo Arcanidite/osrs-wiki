@@ -1,0 +1,18 @@
+===Blood diamond===
+[[File:Graveyard Map.png|thumb|300px|Reaching [[Dessous]] in the [[Morytania Graveyard]].]]
+''Items required: [[Silver bar]], [[spice]], [[garlic powder]] (or [[garlic]] and [[pestle and mortar]]), [[food]], [[prayer potions]], and ('''after Entrana!''') [[combat equipment]]. Means of travel to [[Draynor]] is also helpful.''
+
+''Recommended: Consider bringing your [[Druid pouch]] to prevent ghasts from rotting your food as you run through the swamp''
+{{Checklist|
+*Talk to [[Malak]] in the Canifis pub. {{Chat option|5I am looking for a special Diamond...|1Yes|3How can I kill Dessous?}}
+*Travel to the [[Draynor Sewer]] and give [[Ruantun]] a silver bar for a silver pot.
+**You can go upstairs in [[Morgan]]'s house and search the cupboard to get [[garlic]] if needed. Grind your garlic with a pestle and mortar to receive garlic powder. 
+*Take the silver pot to the [[High Priest (Entrana)|High Priest]] in the [[Entrana]] church and he will enchant it.
+*Talk to [[Malak]] (He '''will''' damage you for five hitpoints here, but he '''cannot''' kill you).
+*Add spices and garlic powder to the pot of blood.
+*Prepare for a tough boss fight (combat gear, high healing food).
+*Go to the [[Morytania Graveyard]] north of Castle Drakan (see map).
+*Pour your pot of blood on the tomb and defeat [[Dessous]]
+**Dessous has 99 Defence and 150 defence against slash and is generally very strong against melee. Recommended to range/mage him.
+**You can avoid taking damage by alternating between protection from melee and protection from range each game tick. (Note: if you leave the fight you will need to make a new pot of blood but you keep your blessed pot)
+*Return to [[Malak]] and claim the [[blood diamond]].}}

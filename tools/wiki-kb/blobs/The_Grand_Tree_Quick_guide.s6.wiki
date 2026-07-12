@@ -1,0 +1,8 @@
+===Karamja===
+{{Checklist|
+*The glider will crash near the [[Ship Yard]]. Run east past the level 53 [[jogre]]s to the Ship Yard gate.
+*Open the gate and tell the [[Shipyard worker|worker]] Glough sent you, then give the password '''Ka-Lu-Min'''. {{Chat option|2Glough sent me.|1Ka.|2Lu.|2Min.}}
+*Find the [[Foreman]] on the southern dock. Kill him or talk to him to get a [[lumber order]].
+**If you talk to him, he will ask you some security questions. {{Chat option|3Sadly his wife is no longer with us!|2He loves worm holes.|1Anita.}}
+*Take the lumber order to [[King Narnode Shareen|the king]]. (Teleport into the stronghold or get [[Femi]] to sneak you in, costing 1,000 coins if you didn't help her earlier). The king will not believe you when you show him the lumber order.
+}}

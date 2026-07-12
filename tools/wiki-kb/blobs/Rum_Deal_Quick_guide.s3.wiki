@@ -1,0 +1,6 @@
+===Starting out===
+{{Checklist|
+*Take a rake and a seed dibber from the leprechaun if you haven't got one already.
+*Talk to [[Pirate Pete]] on the dock north-east of the Ectofuntus, decline the money. {{Chat option|1Yes!|1Of course, I fear no demon!|1Nonsense! Keep the money!}}
+*Finish talking to [[Captain Braindeath]]. Make sure you have at least one inventory space available to get the Blindweed seed (don't cancel the dialogue after the cutscene).
+}}

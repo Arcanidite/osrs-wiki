@@ -1,0 +1,11 @@
+===Tuzo===
+{{Map|x=2391|y=3511|r=3|width=250|height=250|align=right|caption=Anita's house on the map.|mtype=square}}
+{{Needed|[[Lumber order]].}}
+{{Checklist|
+*Speak to [[Charlie (prisoner)|Charlie]] again on the top floor of the [[Grand Tree]].
+*Speak to [[Anita]] up the stairs west of the swamp, north-west of the Grand Tree. She will give you a [[Glough's key|key]]. {{Chat option|1}}
+*Go to Glough's house, and use the key to open the chest and take the [[invasion plans]]. '''Make sure to complete the dialogue window to receive the plans!'''
+*Take the invasion plans to the king. He will give you four letters made of sticks (you'll need 4 empty inventory spaces).
+*Climb the watchtower in Glough's house (tree in the east part of his house). Use the sticks with the four pillars to spell out '''TUZO'''. If you are under 25 [[Agility]], eat your [[summer pie]] now.
+*Bank if needed and prepare for the battle, then go down the trapdoor.
+}}

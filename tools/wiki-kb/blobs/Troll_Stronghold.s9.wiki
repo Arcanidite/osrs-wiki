@@ -1,0 +1,8 @@
+==Required for completing==
+Completion of Troll Stronghold is required for the following:
+* [[Desert Treasure I]]
+* [[Devious Minds]]
+* [[Eadgar's Ruse]]
+* [[Monkey Madness II]]
+* [[Troll Romance]]
+* {{SCP|Agility|15|link=yes}} and defeating [[Dad]] are prerequisites for entry to the [[God Wars Dungeon]] (without [[Ghommal's hilt 1|Ghommals Hilt]]).

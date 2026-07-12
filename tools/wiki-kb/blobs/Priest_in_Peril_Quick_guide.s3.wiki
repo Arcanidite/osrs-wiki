@@ -1,0 +1,10 @@
+===Starting out===
+{{Checklist|
+*Speak to [[King Roald]]. {{Chat option|1 I'm looking for a quest!|1 Yes.|3 I'll get going.}}
+*Bring a ranged or melee weapon for the next part, to kill the [[Temple Guardian]].
+**Magic attacks and the [[Dwarf Multicannon]] will not work.
+*Head to the temple east of [[Varrock]] by the river.
+*Click on the large door. {{Chat option|1 Roald sent me to check on Drezel.|1 Sure. I'm a helpful person!}}
+*Climb down the trapdoor just to the north. {{Chat option|1 Yes.}}
+*Kill the [[Temple Guardian]]. Players may safespot it by getting it stuck in the middle section of the room against the east wall and standing on the east wall one section north.
+}}

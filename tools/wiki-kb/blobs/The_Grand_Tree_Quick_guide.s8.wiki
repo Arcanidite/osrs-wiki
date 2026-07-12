@@ -1,0 +1,14 @@
+===Encountering the Black demon===
+{{Needed|[[Combat]] [[Worn equipment|equipment]] and [[food]] to last in a fight against a level 172 [[Black demon (The Grand Tree)|black demon]].}}
+[[File:Black demon (The Grand Tree, 1) safespot.png|thumb|Recommended safespot, located directly north of the entrance ladder.]]
+
+{{Checklist|
+*After you enter and talk to Glough, a level 172 [[Black demon (The Grand Tree)|black demon]] will appear and attack you.
+**Immediately after the cutscene ends, run to the tile directly north of the ladder. The black demon will become stuck behind the daconia rocks in front of you as he approaches. Attack with [[ranged]], [[magic]], or a [[halberd]].
+**'''Warning:''' The demon will despawn after a while if it is not killed within 10 minutes exactly. If this happens, you'll have to exit through the ladder in the centre of the cave and go through Glough's trapdoor again.
+*Kill the demon. Walk along the passage until you find [[King Narnode Shareen|King Shareen]] standing by a ladder.
+*Talk to the king, and he will ask you to locate the last [[daconia rock]]. ''Fully complete the dialogue; otherwise, you cannot continue.''
+*Search the [[Root (The Grand Tree)|roots]] until you find it (make sure to click continue on the dialogue when you find the stone).
+*Talk to the king one last time.
+*'''Congratulations, quest complete!'''
+}}

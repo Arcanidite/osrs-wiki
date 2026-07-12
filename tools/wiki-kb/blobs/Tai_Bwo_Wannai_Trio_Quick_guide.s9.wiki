@@ -1,0 +1,20 @@
+===Helping the brothers===
+{{Checklist|*Head to {{Fairycode|DKP}} - it is south of Musa point.
+*Grab the [[seaweed]] nearby if you don't have one already
+*Talk to [[Tiadeche]], who is directly north-east of the fairy ring {{Fairycode|DKP}}.
+*Use your Raw karambwanji on the Karambwan vessel. Then use the baited Karambwan vessel on Tiadeche. {{Chat option|1Yes}}
+**Ironmen: Fish and cook a karambwan until you get a [[poison karambwan]]. Use your [[pestle and mortar]] on it to create poison [[karambwan paste]], then use that paste on your spear to make a Spear(kp).
+*Use the fairy ring right next to you and use the code {{Fairycode|CKR}} - it's north-west of Shilo village, south of the lake between Shilo village and Tai Bwo Wannai village.
+*Run north-east to the mine. Talk to [[Tamayu]] twice {{Chat option|3When will you succeed?|1Yes}} and watch a cutscene.
+*Right click and use your '''Agility potion (4 dose)''' and '''Spear (kp)''' on him - '''make sure he takes both'''.
+*Talk to him again {{Chat option|3Take me on your next hunt for the Shaikahan.}}, watch the cutscene. Make sure he kills the beast or you won't finish the quest,
+*Kill a monkey in this area with magic or ranged, take its corpse.
+*Use the corpse on Tamayu.
+*Use your seaweed on the monkey skin to get a seaweed sandwich.
+*Either run south-west or use another fairy ring teleport to go back to {{Fairycode|CKR}}.
+*Climb up the hill and cross the bridge onto [[Cairn Isle]], WALK across the bridge.
+*Talk to [[Tinsay]] and hand him all the food he requests {{Chat option|1Yes.}} whenever prompted. (He will ask for the Rum with a banana, a “seaweed in monkey skin sandwich” which is just the seaweed sandwich, and the marinated Jogre bones that you previously created. *DO NOT BURY THEM*
+*After handing him the [[marinated j' bones]], use your empty (or filled) [[karambwan vessel]] on him and you'll receive a [[crafting manual]].
+*Head to fairy ring {{Fairycode|DKP}}.
+*Talk to Tiadeche, use your manual on him and he will agree to go back to the village (but he'll stay for now).
+}}

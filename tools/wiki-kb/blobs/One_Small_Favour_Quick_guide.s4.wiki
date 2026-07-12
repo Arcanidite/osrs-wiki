@@ -1,0 +1,38 @@
+===Completing the favours===
+{{Checklist|
+*Talk to Gnormadium Avlafrim. {{Chat option|4I've fixed all the lights!}}
+*Talk to Rantz. {{Chat option|2Ok, I've helped that Gnome, he shouldn't bother you anymore.}}
+*'''Travel Tip:''' Watchtower teleport run north-east. Monastery Teleport via [[Ardougne cloak]] then south-east or use Port Khazard Teleport from [[Lunar Spellbook]], or use the minigame teleport to [[Fishing Trawler]] or fairy ring {{fairycode|DJP}} and run south
+*Talk to [[Tindel Marchant]]. {{Chat option|2I have the mattress.}}
+*Talk to Wizard Cromperty in Ardougne. {{Chat option|4I have that iron oxide you asked for!}} ({{Chat option|2Chat.|4I have that iron oxide you asked for!}} if you have completed the Ardougne Medium Diary)
+*''Take 5 pigeon cages (south of the north Ardougne bank) if needed, and get ready to fight [[Slagilith]].''
+*Return to the fishing guild cave, stand in front of the sculpture and read the animate rock scroll.
+*Kill the level 92 [[Slagilith]].
+**67% damage reduction when pickaxe not equipped, weak to crush attacks and magic. Combat spells will deal full damage as long as a pickaxe is equipped. Can be safespotted.
+*Read the scroll again to free [[Petra]]. Make sure you '''finish the dialogue''' with her, or else you won't be able to make progress.
+*Talk to [[Phantuwti Fanstuwi Farsight]] in Seers' Village. {{Chat option|4I've released Petra, she should have returned.|4I'll run through you if you don't give me that weather report.|2Why can't you get a clear picture?|2Which special Seers tools do you mean?|2You're talking in riddles, just give me a straight answer!|1What do you mean, 'special combination of items'?}}
+*Climb to the roof of his house search the weather vane, use a hammer on it and search it again for 3 parts.
+*Use each part on an anvil while holding a bronze, iron, and steel bar. There is an anvil north of his house.
+*Put each part back on the vane.
+*Talk to Phantuwti Fanstuwi Farsight. {{Chat option|4I've fixed the weather vane!}}
+*Talk to Arhein in Catherby. {{Chat option|4I have the weather report for you.}}
+*Talk to Captain Bleemadge on White Wolf Mountain. {{Chat option|2Hey there, did you get your T.R.A.S.H?}}
+*Talk to Sanfew in Taverley. {{Chat option|3Hi there, the Gnome Pilot has agreed to take you to see the ogres!}} ({{Chat option|2Hi there, the Gnome Pilot has agreed to take you to see the ogres!)}} if you have completed [[Eadgar's Ruse]])
+*'''Travel Tip:''' Use a [[skills necklace]] to teleport to the [[Mining Guild]] or use the [[combat bracelet]] to teleport to the [[Edgeville Monastery]]
+*''Gather combat gear and a weapon for killing Hammerspike's gangsters (Combat levels 44, 48, and 49)''
+*Go and talk to Hammerspike Stoutbeard in the Dwarven Mine.
+*Kill his gang members, then talk to him again.
+*Talk to Tassie Slipcast in Barbarian Village. She will give you clay. Spin it into a pot lid, then fire the pot lid in the pottery oven.
+*Use the pot lid on an empty pot. This is found in the house to the north.
+*Talk to the Apothecary with the pot lid and a pot. {{Chat option|2Talk about One Small Favour.}} ({{Chat option|3Talk about One Small Favour)}} if you have completed [[A Tail of Two Cats]])
+*''Bring 5 pigeon cages for the next step.''
+*Talk to Horvik in the [[Horvik's Smithy|Varrock Armour shop]]. {{Chat option|3I have the tincture and breathing salts.}}
+*Talk to Horvik '''again'''. {{Chat option|3I have the five pigeon cages you asked for!}}
+*Talk to Seth Groats at the [[Lumbridge]] chicken farm.
+*Talk to Johanhus in the H.A.M. camp. {{Chat option|4You're in luck, I managed to swing that chicken deal for you.}}
+*Talk to Aggie in Draynor. {{Chat option|1Good news! Jimmy has been released!}}
+*Talk to Brian in Port Sarim. {{Chat option|3I've returned with good news.}}
+*Talk to a Jungle forester south of Shilo Village. {{Chat option|1Good news, I have your sharpened axe!}}
+*Talk to Yanni in Shilo Village, wait for the dialogue to finish. {{Chat option|2Here's the red mahogany you asked for.}}
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,6 @@
+====Pasty bones====
+{{Checklist|*Go towards fairy ring {{Fairycode|CKR}} south of Tai Bwo Wannai, then run north to the fishing spots
+*Fish 45 raw karambwanji. These are stackable, and will be needed for the rest of the quest
+*Use your pestle and mortar on one of the raw karambwanji to get [[karambwanji paste]]
+*Use the paste on the [[burnt jogre bones]] to get [[pasty jogre bones]]
+*  *('''DO NOT BURY''')* Cook the pasty jogre bones to get [[marinated jogre bones]]}}

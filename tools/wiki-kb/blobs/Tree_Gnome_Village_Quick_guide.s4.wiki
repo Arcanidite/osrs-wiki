@@ -1,0 +1,24 @@
+===The three trackers===
+{{Map
+|align=right
+|width=250
+|height=250
+|x=2511
+|y=3250
+|mtype=square
+|zoom=2
+|caption=Tracker gnome locations.
+|x:2504,y:3263,r:3,desc:Tracker gnome 1
+|x:2524,y:3257,r:3,desc:Tracker gnome 2
+|x:2492,y:3231,r:3,desc:Tracker gnome 3
+}}
+{{Checklist|
+*Talk to the second tracker gnome in a building towards the east side of the Khazard Stronghold.
+*Talk to the first tracker gnome around the north-west of the Khazard Stronghold.
+*Talk to the third tracker gnome in the south-west corner of the Khazard Stronghold. Pay attention to his dialogue, he will give you the coordinates for the [[ballista (Tree Gnome Village)|ballista]]:
+** "Less than my hands" - 0001
+** "More than my head less than my fingers" - 0002
+** "More than we, less than our feet" - 0003
+** "My legs and your legs" - 0004
+*''Fire'' the ballista located in the south-west corner of the battlefield, past the bridge, and enter the coordinates as given by the third tracker gnome.
+}}

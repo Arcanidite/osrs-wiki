@@ -1,0 +1,30 @@
+==Details==
+{{Quest details
+|start = Talk to [[Denulth]] in [[Burthorpe]].
+|startmap = 2896,3528
+|difficulty = Intermediate
+|description = The Imperial Guard raid was a failure, and Dunstan's son has been captured by the trolls!
+
+Journey through Trollheim to the Troll Stronghold, and rescue him!
+|length = Short
+|requirements = * Completion of {{SCP|Quest}} [[Death Plateau]]
+* {{SCP|Agility|15|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} (47 is recommended)
+* The ability to defeat a level 113 [[Troll General]] (can be [[safespot]]ted)
+|items = * [[Climbing boots]] or 12 [[coins]] to buy them
+|recommended = * {{SCP|Combat|50|link=yes}}
+* [[Weapon]] capable of safespotting ([[Ranged]], [[Magic]], or a [[Halberd]])
+*[[Armour]] and some [[food]]
+*{{SCP|Prayer|43|link=yes}} for [[Protect from Melee]] and [[Protect from Missiles]]
+*At least {{SCP|Thieving|30|link=yes}} {{Boostable|yes}} to prevent a fight with two level 71 guards (higher levels are recommended for higher chance of success)
+*[[Games necklace]] for Burthorpe teleports
+*[[Stamina potion|Stamina]] or [[energy potion]]s
+|kills = * [[Dad]] ''(level 101)'' (can be safespotted)
+* [[Troll General]] ''(level 113)'' (can be safespotted)
+* [[Berry]] and [[Twig]] ''(both level 71)'' (can be safespotted) '''Only''' if you have less than {{SCP|Thieving|30|link=yes}} or fail to pickpocket them (can be safespotted)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

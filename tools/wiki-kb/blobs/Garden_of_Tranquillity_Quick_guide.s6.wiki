@@ -1,0 +1,6 @@
+===Kragen north of Ardougne===
+''Items required: 3-6 cabbage seeds Fairy ring b*l*r''
+
+{{Checklist|* Talk to [[Kragen]] {{Chat option|1| 2| 2| 2| 2| 2| 1}}
+* Grow [[cabbages]] (both patches reduce chance of failure).
+* Once grown, talk to Kragen for the snowdrop seeds.}}

@@ -1,0 +1,36 @@
+==Details==
+{{Quest details
+|start = Talk to [[Lucien]] at the [[Flying Horse Inn]] in the north-western corner of [[East Ardougne]].
+|startmap = 2573,3320
+|difficulty = Intermediate
+|description = A mysterious stranger called Lucien asks you to go on a mission deep under the Temple of Ikov in central Kandarin. He wants you to retrieve an artefact known as the Staff of Armadyl. After you retrieve it, the quest doesn't stop there... Are you on the side of good or evil?
+|length = Medium
+|requirements = * {{SCP|Thieving|42|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Ranged|40|link=yes}} {{Boostable|no}} {{Questreqstart|no}} - bypassable <ref>This requirement can be bypassed - [[Temple_of_Ikov#Fire_Warrior_of_Lesarkus|see below]]</ref>
+* The ability to defeat a level 84 enemy with Ranged
+|items = * Any [[bow]] capable of firing [[ice arrows]] ([[yew bow]] or better) '''or''' any [[Ranged#Weapons|thrown weapon]]
+* 20 unnoted [[limpwurt root]]s
+*A method of reducing your weight to at least -1kg temporarily:
+**[[Boots of lightness]] (can be obtained during the quest with a [[light source]] and [[slash weapon]], such as a [[lit candle]] and [[knife]])
+**Other forms of [[weight-reducing clothing]] such as the [[graceful outfit]]
+|recommended = *{{SCP|Combat|45|link=yes}}
+*{{SCP|Prayer|43|link=yes}} and [[prayer potions]] for [[protection prayers]]
+*[[Food]] if low level or without [[Protect from Melee]] and [[Protect from Magic]]
+*[[Ranged armour]]
+* [[Ava's accumulator]]
+* Fast travel to several locations
+**The entrance of the [[Temple of Ikov (dungeon)|Temple of Ikov]] ([[skills necklace]] to the Fishing Guild, [[combat bracelet]] to the Ranged Guild or [[Fairy Rings]] to {{fairycode|blr}})
+**Ardougne ([[Ardougne teleport]] or [[Ardougne cloak]])
+**Edgeville ([[amulet of glory]] to Edgeville, [[ring of wealth]] to Grand Exchange or [[Fairy Rings]] to {{fairycode|dkr}})
+|kills = * [[Fire Warrior of Lesarkus]] ''(level 84)''
+* [[Guardian of Armadyl]] ''(level 43) (Safespottable)'' - only if siding with Lucien
+* [[Lucien]] ''(level 14)'' - only if siding with the Guardians of Armadyl
+|ironman = * [[File:Ultimate ironman chat badge.png]] 20 unnoted items need to be delivered at once. 
+*A method of defeating the [[Fire Warrior of Lesarkus]]:
+**{{SCP|Ranged|40}} {{Boostable|no}} and access to a [[Yew longbow]] or better. [[Yew longbow]]s can be obtained as a rare drop from [[young impling]]s.
+**'''OR''' [[Darts]] or [[Throwing knives]] to bypass the Ranged requirement.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}
+<references/>

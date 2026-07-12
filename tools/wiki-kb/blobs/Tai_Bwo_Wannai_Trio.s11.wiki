@@ -1,0 +1,16 @@
+==Rewards==
+{{Quest rewards
+|image=[[File:Tai Bwo Wannai Trio reward scroll.png|centre]]
+|qp=2
+|rewards=
+*2,000 [[Coins]] (awarded by [[Timfraku]] immediately upon quest completion)
+*{{SCP|Cooking|5,000}} [[Cooking]] [[experience]] (claimed upon speaking to [[Tinsay]] after quest completion)
+*{{SCP|Fishing|5,000}} [[Fishing]] experience (claimed upon speaking to [[Tiadeche]] after quest completion)
+*{{SCP|Attack|2,500}} [[Attack]] experience, {{SCP|Strength|2,500}} [[Strength]] experience, and a [[Rune_spear#Karambwan_poison|karambwan-poisoned rune spear]] (claimed upon speaking to [[Tamayu]] after quest completion)
+*Access to [[Tamayu's Spear Stall]] (sells [[cleaning cloth]]s)
+*Access to [[Tiadeche's Karambwan Stall]] (sells [[raw karambwan]]s and [[karambwan vessel]]s)
+*The ability to pray at the newly repaired tribal statue (works like an [[altar]]) by talking to [[Tinsay]] and [[Tiadeche]] in the village after the quest
+*The ability to catch and cook karambwans by talking to [[Tinsay]] in the village after the quest
+*The ability to fight the [[The Shaikahan|Shaikahan]] (level 83 - you need a [[Karambwan paste|kp]] [[spear]] to hit it)
+*The ability to use [[Tai bwo wannai teleport]] scrolls
+*The ability to take part in the [[Smithing]] section of the [[Barbarian Training]] [[miniquest]] (Requires talking to [[Tamayu]] and claiming combat xp after quest completion).}}

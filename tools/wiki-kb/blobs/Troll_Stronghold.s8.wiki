@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Troll Stronghold
+|image = [[File:Troll Stronghold reward scroll.png|centre]]
+|qp = 1
+|rewards = *[[Law talisman]] (if you lose it, you can get another from [[Dunstan]] for 1,000 [[coins]])
+* [[Law talisman|Law talismans]] can be obtained via [[Guardians of the Rift]]
+*Ability to make [[law rune]]s
+*Access to [[Trollheim]], the [[Troll Stronghold (location)|Troll Stronghold]] and the [[Law Altar]]
+*Ability to access the [[God Wars Dungeon]] (though it can be accessed without the quest via the [[Ghommal's Hilt]] teleport)
+
+Unlocks:
+* [[Dad]] accessible in the [[Nightmare Zone]]
+}}

@@ -1,0 +1,7 @@
+===Trouble in Zanaris===
+{{Needed|[[dramen staff]] or [[Lunar staff]], and one free inventory space.}}
+{{Checklist|
+*Travel to [[Zanaris]] (with your [[dramen staff]] or [[Lunar staff]] equipped, enter the small shack south of [[Lumbridge Castle]] in [[Lumbridge Swamp]]). (If you need to collect the [[spade]], enter the shack without the staff equipped first and collect it).
+*Run to the throne room and Talk to the [[Fairy Godfather]]. {{Chat option|2Where's the Fairy Queen?}}
+*Run north of the bank and talk to [[Fairy Nuff]] to get the [[symptoms list]].
+*Speak to [[Zandar Horfyre]] on the top floor of the [[Dark Wizards' Tower]] just north of the [[Makeover mage]].}}

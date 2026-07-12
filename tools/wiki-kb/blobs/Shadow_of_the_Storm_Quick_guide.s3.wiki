@@ -1,0 +1,9 @@
+===Starting out===
+{{Checklist|
+*Talk to [[Father Reen]] outside [[Al Kharid]] bank. {{Chat option|1That's me!}}
+*Travel to the [[Ruins of Uzer]] via the [[magic carpet]] south of Al Kharid (or use the [[necklace of passage]] teleport to [[Eagle's Eyrie]] and run south-east). You can also use a fairy ring ({{Fairycode|DLQ}}) and go north-east.
+*Talk to [[Father Badden]] near the ruin entrance. {{Chat option|1Reen sent me.|3So what do you want me to do?|1How can I do that?}} '''Be sure to have Silverlight''' in your inventory.
+*Pick and use a black mushroom (or black dye) on Silverlight to dye it black (you can find some beside the staircase).
+*Go down the stairs and grab a copy of the [[Strange implement]] in the north-west corner of the ruin.
+*Talk to [[Evil Dave]] in the dungeon wearing your 3 black items and your dyed Silverlight. {{Chat option|2I want to join your group.|1I'm evil!}}
+}}

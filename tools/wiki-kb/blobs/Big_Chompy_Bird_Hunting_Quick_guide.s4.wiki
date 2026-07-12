@@ -1,0 +1,12 @@
+===Fletching some arrows===
+*Note: You must make the arrows yourself to progress.
+
+{{Checklist|
+*Chop down at least 3 [[achey tree]]s immediately south-west of Rantz.
+*Use a [[knife]] on the [[Achey tree logs|logs]] to make [[ogre arrow shaft]]s.
+*Use 100 [[feather]]s on the ogre arrow shafts.
+*Obtain 4 [[wolf bones]] (south-west from Rantz).
+*Use a [[chisel]] on the bones.
+*Use the [[wolfbone arrowtips]] on the [[flighted ogre arrow]]s.
+*Use the [[ogre arrow]]s on Rantz.
+}}

@@ -1,0 +1,22 @@
+===Starting out===
+''Items required (may be noted): 650 coins, ashes, blood rune, bones, 6 molten glass, 12 magic logs, charcoal and 6 steel bars.''
+
+''Recommended: waterskins, a charged ring of dueling, 400 coins for carpet rides to Bedabin Camp, stamina potions, 2 Shantay passes, Digsite teleport''
+
+''[[File:Ultimate ironman chat badge.png]] Ultimate Ironmen: You can deliver the supplies in several trips (use the items on [[Eblis]]).''
+
+[[File:Desert Treasure mirrors.png|thumb|220px|The mirrors, made by [[Eblis]].]]
+{{Checklist|
+*Talk to [[Asgarnia Smith]] in the [[Bedabin camp]] by the magic carpet with at least one inventory slot free. {{Chat option|2Do you have any quests?|1Yes, I'll help you.}}
+*Go to the Digsite Exam Centre and talk to [[Terry Balando]]. {{Chat option|1Ask about the Desert Treasure quest.}}
+*Talk to him again for a translation. {{Chat option|1Ask about the Desert Treasure quest.}}
+*Talk to Asgarnia Smith in the desert. {{Chat option|2Don't read book}}
+*Talk to him again. {{Chat option|1Help him}}
+*Run south to the bandit camp and buy a drink in the pub for 650 coins. (If you are wearing any saradomin or zamorak  items e.g. unholy blessing, remove them now so you don't get attacked by the Bandits) {{Chat option|2Buy a drink|1Buy a beer}}
+*Talk to the bartender again. {{Chat option|2I heard about four diamonds...}}
+*Talk to [[Eblis]] in or just outside of the small rectangular building east of the bar. {{Chat option|4Tell me of The four diamonds of Azzanadra|1Yes|1Yes, I will go get those for you.}}
+*Deliver all the required items to Eblis by using them on him (items can remain noted), then talk to him again.
+*Go south-east to the mirrors, and talk to Eblis there.
+Collect the 4 diamonds, they may be obtained in any order.}}
+
+'''''Note:''' At any point with one of the diamonds in your inventory, a level 95 [[stranger]] may randomly appear and attack you with a poisoned dragon dagger. You may place the diamonds in the pyramid or your bank at any point to avoid this.''

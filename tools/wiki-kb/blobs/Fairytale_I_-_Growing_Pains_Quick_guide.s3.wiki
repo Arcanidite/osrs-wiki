@@ -1,0 +1,13 @@
+===Starting out===
+{{Needed|None.}}
+{{Checklist|
+*Talk to [[Martin the Master Gardener]] in [[Draynor Village]]. {{Chat option|2Quest.|1Anything I can help with?|1Now that I think about it, you're right!}}
+**Note: Do not pickpocket Martin or you won't be able to continue for 10 minutes of in-game time.
+*Talk to 5 [[Group of Advanced Gardeners]] members. They are any of the gardeners found near farming patches that tend to your crops. Any of them will work except for [[Ayesha]] in [[Al Kharid]], and ones found on [[Great Kourend]]. '''Note:''' The following is ''a suggested path'' you can take to speak to farmers quickly:
+**Run north-west and talk to [[Elstan]] Allotment/Flower/Herb patch. {{Chat option|1Are you a member of the Group of Advanced Gardeners?}}
+***If you do not have secateurs or a spade, buy them from the Sarah in the building next to the cabbage patch.
+**Run south and talk to [[Frizzy Skernip]]. {{Chat option|1Are you a member of the Group of Advanced Gardeners?}}
+**[[Spirit tree|GE spirit tree]] teleport to [[Gnome Stronghold]], run east and talk to [[Bolongo]]. {{Chat option|1Are you a member of the Group of Advanced Gardeners?}}
+**Run south-west and talk to [[Prissy Scilla]] at the tree patch. {{Chat option|1Are you a member of the Group of Advanced Gardeners?}}
+**Teleport to Falador, run east to the park and talk to [[Heskel]] at the tree patch. ([[Ring of wealth]]'s Falador teleport option takes you there directly). {{Chat option|1Are you a member of the Group of Advanced Gardeners?}}
+*Return to the Draynor Village market and talk to Martin. {{Chat option|2Quest.}}}}

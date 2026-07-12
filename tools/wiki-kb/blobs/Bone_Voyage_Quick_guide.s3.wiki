@@ -1,0 +1,4 @@
+===Starting out===
+{{Checklist|
+*Speak to [[Curator Haig Halen]] in the [[Varrock Museum]]. {{Chat option|1Have you any interesting news?|1Sign me up!}}
+}}

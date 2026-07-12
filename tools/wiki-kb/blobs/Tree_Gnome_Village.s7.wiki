@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Tree Gnome Village
+|image = [[File:Tree Gnome Village reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Attack|11,450}} [[Attack]] [[experience]]
+*Use of [[spirit tree]]s for transportation
+*The [[Gnome amulet]]
+
+Unlocks:
+* [[Khazard warlord]] accessible in the [[Nightmare Zone]].
+}}

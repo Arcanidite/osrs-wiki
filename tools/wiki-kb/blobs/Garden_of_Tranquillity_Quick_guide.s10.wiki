@@ -1,0 +1,9 @@
+===Bernald behind the Burthorpe pub===
+''Items required: a rune/pure essence, a hammer, 2 plant cures, and a pestle and mortar.''
+
+{{Checklist|* Talk to [[Bernald]] {{Chat option|2| 1}}
+* Use 1 plant cure on the vines.
+* Talk to [[Bernald]] again.
+* Talk to [[Alain]] by the Taverley tree patch{{Chat option| 1| 1}}
+* Use [[rune dust]] on the other plant cure and use it on the vines.
+* Talk to [[Bernald]] to get the [[vine seeds]].}}

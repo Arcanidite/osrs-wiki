@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Shadow of the Storm
+|image = [[File:Shadow of the Storm reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*10,000 [[experience]] in any [[combat]] skill other than [[Prayer]].
+*[[Silverlight]] turns into the [[Darklight]] sword - it has a [[special attack]] and is even more powerful against [[demon]]s. It costs slightly more to replace.
+*Six cut gems: two [[sapphire]]s, two [[rubies]] and two [[emerald]]s, if you use a hammer and chisel on the demon's throne and had not yet removed them during [[The Golem]].
+
+Unlocks:
+* [[Agrith-Naar]] accessible in the [[Nightmare Zone]].
+}}

@@ -1,0 +1,12 @@
+===Shadow diamond===
+''Items required: 20+ [[lockpicks]], [[antipoison]], [[food]], 5,000 [[coins]], [[magic combat equipment]], [[Prayer potion|Prayer]]/[[Super restores]] to combat the [[Prayer drain]]. Note: [[Tiles]] by the [[general store]] in the [[Bandit camp]] will unnote any items for a small fee, and nearby [[Bandit (Bandit Camp)|bandits]] can be [[pickpocketed]] for [[Antipoison]] and [[lockpicks]].''
+[[File:Shadow Dungeon map.png|thumb|centre|500px|[[Shadow Dungeon]]]]
+{{Checklist|
+*Talk to [[Rasolo]] outside the house south of [[Baxtorian Falls]]. {{Chat option|3Ask about the Diamonds of Azzanadra|1Yes}}
+*Go to the most southern tent in the [[Bandit Camp (Kharidian Desert)|Bandit camp]]. Bring antipoison, food, and 20+ lockpicks (you can bring noted ones and coins to exchange with [[Tiles]] in Bandit camp's general store, 5 coins for each lockpick) (For ironmen, note that both lockpicks and antipoisons may be pickpocketed from the [[Bandit (Bandit Camp)|Bandits]] in the vicinity).
+*Unlock the [[secure chest]] (the 3 locks must be picked consecutively, it can take upwards of 100 tries to open the chest and is dependent upon Thieving level).
+*Give the gilded cross to Rasolo. Even if your inventory is full, the cross will instantly be swapped for the ring.
+*Equip the visibility ring and climb down the ladder east of Rasolo in the fenced area.
+*Run through the dungeon, kill [[Damis]] in his 2 forms and pick up the shadow diamond (his second form drains player's prayer rapidly, it is advised to safespot Damis, this can be done by hitting a bat or rat and stacking npcs behind). Kill a [[Shadow Hound]] to complete a task in the Hard Kandarin Diary. 
+**Note: If you run too fast and too far out of Damis' range, he will vanish once more into the shadows. If this happens, go back into the maze where you first enter the large area with Damis' spawn. He will re-appear in the form he disappeared in, with hitpoints reset to full.
+}}

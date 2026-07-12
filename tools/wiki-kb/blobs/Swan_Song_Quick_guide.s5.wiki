@@ -1,0 +1,8 @@
+===Battle at the Colony===
+{{Needed|[[Food]], [[Armour]], [[Melee weapon|Melee]] or [[Ranged weapons|Ranged weapon]], [[Prayer potions]] to kill Sea Trolls.}}
+{{Checklist|
+{{Instance}}
+*Return to the Colony and talk to the Wise Old Man.
+*Kill the level 79 [[Sea Trolls]] and enter the Colony (collect 7 of their bones if needed).
+*Talk to Herman (east building). '''''Note:''''' ''You will need to click inside of the building as clicking directly on Herman (or the Wise Old Man later) will make your character run outside the building to the north.''
+}}

@@ -1,0 +1,7 @@
+===The River Salve===
+{{Checklist|
+*Talk to [[Drezel]] again.
+*Go back down the trapdoor, through the monument room, and proceed through the eastern door. Talk to [[Drezel]].
+*Give him 50 '''unnoted''' essence (this will take a few trips without using [[essence pouch|pouches]]).
+*'''Congratulations, quest complete!'''
+}}

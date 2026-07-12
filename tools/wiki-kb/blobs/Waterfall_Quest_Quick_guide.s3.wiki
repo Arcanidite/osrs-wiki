@@ -1,0 +1,10 @@
+===The Treasure===
+'''''Items required:''' [[Rope]].''
+{{Checklist|
+*Speak to [[Almera]] north-east of [[Baxtorian Falls]]. {{Chat option|1How can I help?}} (use Games Teleport to Barbarian Outpost and head south to the top of the hill)
+*Board the raft west of the house.
+*Speak to [[Hudon]]. '''Make sure to go through all dialogue or the upcoming book will not spawn.''' 
+*Walk to the southern end of the island and swim in the water.
+*Enter the large building to the north, where [[Hadley]] is.
+*Go upstairs and search the southernmost [[bookcase (Waterfall Quest)|bookcase]] on the eastern wall for a [[Book on Baxtorian]].
+*Left-click ''Read'' [[Book on Baxtorian]] and close the book again, or the key will not appear for the next part.}}

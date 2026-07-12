@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Client of Kourend
+|image = [[File:Client of Kourend reward scroll.png|centre]]
+|qp = 1
+|rewards = * Two [[Antique lamp (Client of Kourend)|antique lamps]] which provide 500 experience each in a skill of the player's choosing
+*[[Kharedst's memoirs]]
+*[[Kourend Castle Teleport]] spell
+}}

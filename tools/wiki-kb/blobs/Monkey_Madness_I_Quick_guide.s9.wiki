@@ -1,0 +1,18 @@
+=== An audience with King Awowogei ===
+{{Needed|[[Karamjan monkey greegree]], [[M'speak amulet]], at least one empty inventory slot|recommended=[[Mithril Seeds]] or [[log]] and [[tinderbox]] to skip finding Kruk or Garkor.}}
+{{Checklist|
+*Head to the [[Ardougne Zoo]] and equip your [[Karamjan monkey greegree]], then talk to the [[Monkey minder]]. If you haven't talked to him before, click through his dialogue (ask any question), then equip the [[Karamjan monkey greegree]].
+*Equip your [[M'speak amulet]] and talk to a monkey, it will [[Monkey (Monkey Madness I)|jump in your bag]].
+*Remove your greegree and talk to the minder again.
+*'''Travel by foot''' (walk or run) back to the Grand Tree, then return to Ape Atoll by talking to [[Daero]], [[Waydar]], and [[Lumdo]]. '''Do not use any means of teleportation.'''
+*Equip your [[M'speak amulet]] and [[Karamjan monkey greegree]]. '''Ape Atoll is no longer your enemy when wearing a greegree!'''
+*If you want to skip going to talk to [[Kruk]] and you brought mithril seeds or tinderbox and logs you can stand on the east side of the [[Elder Guard]] and plant the [[mithril seeds]] or light a fire to be force moved one tile west and thus bypass needing to talk to [[Kruk]] or to [[Garkor]].
+*Follow the red path, go through the gates, then walk east to the coast and talk to [[Garkor]].
+*Talk to the nearby [[Elder Guard]].
+*Head to the west coast of the island (orange path), then climb up the hill to the south.
+*Climb the ladder, walk across the bridge, climb down, and talk to [[Kruk]].
+*Talk to [[Awowogei]].
+*Talk to Awowogei again. Then talk to the Elder Guard again to be let out.
+*Talk to Garkor and watch the cutscene.
+*Talk to Garkor again to get the [[10th squad sigil]].
+}}

@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Death Plateau
+|image = [[File:Death Plateau reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Attack|3,000}} [[Attack]] [[experience]]
+*[[Steel claws]]
+*The ability to make [[claws]]
+*Ability to purchase and wear [[climbing boots]] from [[Tenzing]]
+}}

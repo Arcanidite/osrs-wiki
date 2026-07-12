@@ -1,0 +1,31 @@
+==Details==
+{{Quest details
+|start = Talk to [[Denulth]] in his tent in [[Burthorpe]].
+|startmap = 2896,3528
+|difficulty = Novice
+|length = Short
+|description = Trolls have come down from the north and are camped on Death Plateau. They are using this base to launch attacks on the principality of Burthorpe!
+The Imperial Guard is taking heavy losses. They need your help!
+|members = Yes
+|items = * 60 [[coins]] (bring 1000 for the gambling dice with Harold part)
+*10 unnoted [[bread]]
+*10 unnoted cooked [[trout]]
+*[[Iron bar]]
+*[[Asgarnian ale]] (can be found on the bar at the pub in [[Burthorpe]])
+|recommended = *[[Premade blurb' sp.]] or [[Blurberry special]] (strongly recommended, trivialises the dice betting segment)
+*[[Games necklace]] for [[Burthorpe]] teleports or [[Combat bracelet]] for [[Warriors' Guild]] teleports
+*[[Stamina potion|Stamina]] or [[energy potions]]
+|ironman = [[File:Ultimate ironman chat badge.png]] Players need 21 empty inventory spaces to deliver items to Tenzing.
+*A method to obtain an iron bar:
+**{{SCP|Mining|15}} [[Mining]] and {{SCP|Smithing|15}} [[Smithing]] if smelting [[iron ore]]
+**Spawn in [[Thurid's Brain Buckets]] on the [[Sunset Coast]] in [[Varlamore]] (requires {{SCP|Quest|[[Children of the Sun]]}})
+**Spawn in level 18 [[Wilderness]] north-west of the [[Ferox Enclave]], next to the bears west of the Graveyard of Shadows. Accessible via {{SCP|Minigame|Clan Wars}} [[Minigame Teleport]]
+**1/42.67 drop from [[dwarf|dwarves]] ({{SCP|Combat|10}}) in the mines under Falador
+**1/34.42 drop from sorting [[small salvage]] with {{SCP|Sailing|15|link=yes}}
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

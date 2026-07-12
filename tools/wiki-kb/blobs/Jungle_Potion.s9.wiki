@@ -1,0 +1,8 @@
+==Rewards==
+{{Quest rewards
+|name = Jungle Potion
+|image = [[File:Jungle Potion reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*{{SCP|Herblore|775}} [[Herblore]] [[experience]]
+}}

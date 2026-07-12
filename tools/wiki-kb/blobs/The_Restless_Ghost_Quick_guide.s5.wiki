@@ -1,0 +1,5 @@
+===The skull===
+{{Checklist|*Head to the [[Wizards' Tower]], and climb down the ladder to the basement. (Use [[Necklace of passage]] to teleport to [[Wizards' Tower]] if you have one.)
+*Search the altar, and you will receive a [[ghost's skull]]. A level 13 [[Skeleton (The Restless Ghost)|skeleton]] will appear, you don't have to kill it, just leave.
+*Go back to the graveyard and use the skull on the coffin with it open.
+*'''Congratulations, quest complete!'''}}

@@ -1,0 +1,45 @@
+==Details==
+{{Quest details
+|start = Talk to [[Dimintheis]] in south-eastern [[Varrock]].
+|startmap = 3279,3404
+|difficulty = Experienced
+|description = There is a man in [[Varrock]] who needs a bit of help. He is of noble heritage, but without his family's crest, he can't prove it. Unfortunately, his three sons took the crest with them when they left, scattering all across Gielinor.
+|length = Medium
+|requirements = * {{SCP|Mining|40|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Smithing|40|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Magic|59|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Crafting|40|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 170 [[Demons|demon]] (can be [[safespot]]ted)
+|items = * [[Shrimps]]
+* [[Salmon]]
+* [[Tuna]]
+* [[Bass]]
+* [[Swordfish]]
+* [[Pickaxe]] - [[Adamant pickaxe|adamant]] or [[Rune pickaxe|rune]] (41+ Mining) highly recommended
+* 2 [[Ruby|cut rubies]]
+* [[Ring mould]]
+* [[Necklace mould]]
+* Any [[poison cure]] (you will lose this item). Does not need to contain full doses.
+* Means to cast all 4 [[Blast spells]]
+|recommended = * {{SCP|Combat|55|link=yes}}
+* An extra [[antipoison]] potion for yourself (for the [[poison spider]]s in [[Edgeville Dungeon]])
+*Fast travel to several locations
+**[[Varrock]] to start the quest plus 2 additional trips - [[Varrock Teleport]], [[Chronicle]], [[Skills necklace]] to [[Cooks' Guild]], or [[Ring of wealth]] to [[Grand Exchange]]
+**[[Catherby]] (1 trip) - [[Catherby Teleport]], [[Camelot Teleport]], or [[Gnome glider]] to White Wolf Mountain
+**[[Al Kharid]] (2 trips) - [[Ring of dueling]] to [[Emir's Arena]], [[Ring of the elements]] to [[Fire Altar]], or [[Amulet of glory]]
+**[[Dwarven Mine]] (1 trip) - [[Combat bracelet]] to [[Edgeville Monastery]] or [[Falador Teleport]]
+**[[Witchaven]] (1 trip) - [[Ardougne Teleport]], [[fairy ring]] {{fairycode|blr}}, or [[Ardougne cloak]] 1-4
+**[[Jolly Boar Inn]] east of Varrock (1 trip) - [[Lumberyard Teleport]], [[Ring of the elements]] to [[Earth Altar]], [[Balloon transport system]] to [[Varrock]], [[Varrock Teleport]], or [[Digsite Teleport]]
+**[[Edgeville]] (1 trip) - [[Amulet of glory]], [[Combat bracelet]] to [[Edgeville Monastery]], [[fairy ring]] {{fairycode|dkr}}, or [[Varrock Teleport]]
+|kills = * [[Chronozon]] ''(level 170)'' (can be safespotted)
+|ironman = '''{{Colour|red|Warning:}}''' [[File:Hardcore ironman chat badge.png]] The player visits the [[Wilderness]] section of [[Edgeville Dungeon]]
+*Obtaining the cooked fish:
+**All raw fish except salmon can be found at [[Frankie's Fishing Emporium]] in Port Piscarilius
+**[[Salmon]] can be purchased cooked from the [[West Ardougne General Store]]
+**[[Swordfish]] can be purchased cooked from [[The Shrimp and Parrot]] in [[Brimhaven]], and 5 are received as a reward from {{SCP|Quest}} [[Tribal Totem]]
+**[[Bass]] can be obtained cooked as a 1/50 drop from [[Ankou]]s, or from [[Gourmet impling]]s with {{SCP|Hunter|28|link=no}} {{Boostable|yes}}. Bass can also be purchased cooked from the [[Warrior Guild Food Shop]].
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

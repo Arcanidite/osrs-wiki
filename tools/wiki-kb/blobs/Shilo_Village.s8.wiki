@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Shilo Village
+|image = [[File:Shilo Village reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Crafting|3,875}} Crafting [[experience]]
+*Access to [[Shilo Village (location)|Shilo Village]]
+*Ability to quick travel to Shilo Village using the [[Shilo Village cart system|cart]] near the [[Brimhaven]] docks
+*After completing the quest, you can sell every item you obtained during the quest to [[Yanni Salika]] in Shilo Village for a total of {{Coins|2000}} — 100 each for the [[stone-plaque]], [[tattered scroll]], [[crumpled scroll]], [[Bervirius notes]], and the [[Bone key (Shilo Village)|bone key]]; 500 for the [[locating crystal]]; and 1000 for the [[beads of the dead]].
+*Ability to charter the [[Lady of the Waves]] west to Shilo Village to [[Port Khazard]] or [[Port Sarim]]
+*[[Nazastarool]] accessible in the [[Nightmare Zone]].
+}}

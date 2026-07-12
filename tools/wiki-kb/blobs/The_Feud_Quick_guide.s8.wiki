@@ -1,0 +1,12 @@
+====Jewels====
+{{Checklist|
+*Talk to Ali the Operator.
+*Put on the [[desert disguise]] and gloves.
+*Hide behind the large cactus near the mayor's house (the large house to the East by the fountain).
+*Use the [[keys]] on the door.
+*Go up the stairs in the north-eastern corner.
+*Search the landscape picture near the bed.
+*Hit the button on the dial to reset it.
+**Click on 1, 1, 2, 3, 5, 8, in that order, clockwise.
+*Give the [[jewels]] to Ali the Operator.
+}}

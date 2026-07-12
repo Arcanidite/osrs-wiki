@@ -1,0 +1,5 @@
+===The Wise Old Man===
+{{Needed|5 [[Blood runes]], 10 [[Mist runes]], 10 [[Lava runes]].}}
+{{Checklist|
+*Talk to the [[Wise Old Man]] in [[Draynor Village]].
+}}

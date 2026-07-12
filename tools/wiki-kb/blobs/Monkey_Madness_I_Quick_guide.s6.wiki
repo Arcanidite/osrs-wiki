@@ -1,0 +1,35 @@
+===Meeting Zooknock===
+{{map|mapID=10014|width=550|height=340|zoom=2|mtype=pin|group=dungeon|align=center
+|mtype:pin,icon:yellowPin,desc:Entrance,2763:9103
+|mtype:pin,icon:cyanPin,desc:Zooknock,2805:9145
+|mtype:dot,fill:#42BA42,desc:Monkey Zombie\, lvl 98
+,2763:9118,2764:9133,2765:9113,2769:9094,2772:9110,2774:9093,2777:9144,2779:9119,2779:9129,2781:9092,2788:9103,2793:9129,2794:9117,2799:9112,2801:9097,2807:9131,2809:9104,2810:9111,2810:9123,2719:9147,2752:9144,2740:9138,2742:9146,2694:9115,2697:9130,2698:9145,2702:9093,2714:9095,2726:9107,2728:9097
+|mtype:dot,fill:#A1A1AA,desc:Skeleton\, lvl 142
+,2710:9135,2711:9130,2714:9135,2715:9132,2735:9119,2736:9121,2738:9124,2740:9120,2741:9103,2741:9124,2743:9105,2744:9100,2745:9102,2704:9109,2707:9112,2708:9103,2711:9109
+|caption={{mapkey
+|title=Ape Atoll Dungeon
+|line1=...yellow,text=Entrance
+|line2=dot...#42BA42,text=[[Monkey Zombie|Monkey Zombie, lvl 98]]
+|line3=dot...#A1A1AA,text=[[Skeleton (Ape Atoll)|Skeleton, lvl 142]]
+|line4=...cyan,text=[[Zooknock]]}}
+}}
+{{Needed|[[Lockpick]], [[Monkey dentures]], [[M'amulet mould]], [[Ball of Wool]], and [[Gold bar]]|recommended=Good [[food]], [[prayer potion]]s, [[antipoison]], and [[stamina potion]] or [[energy potion]]s}}
+{{Checklist|
+*Now is an ideal time to resupply at a bank before heading into the [[Ape Atoll Dungeon]].
+*Return to Ape Atoll by talking to [[Daero]], [[Waydar]], and [[Lumdo]].
+*Follow the yellow path west and climb down the ladder into the [[Ape Atoll Dungeon]].
+*Run to the end of the dungeon.
+**Use [[Protect from Melee]] prayer and ignore all the hazards, eating food and drinking potions as needed.
+*Talk to [[Zooknock]].
+*Use your [[Monkey dentures]], [[M'amulet mould]], and [[Gold bar]] on [[Zooknock]].
+**Talk to [[Zooknock]] to get an [[Enchanted bar]] and your [[M'amulet mould]] back.
+**'''Do not''' use the m'amulet mould on Zooknock when you already have the enchanted bar, otherwise he will keep it and you will have to obtain another. 
+*Teleport away, then return by talking to [[Daero]], [[Waydar]], and [[Lumdo]].
+*Follow the red path, get arrested, escape, then follow the pink path to the temple.
+*(Note: bearded guards cannot be walked through!) Enter the [[trapdoor (Temple of Marimbo)|trapdoor]]. You may need to climb up the ladder to the south then down in the east to avoid the gorillas.
+*With a [[M'amulet mould]] in your inventory, use the [[Enchanted bar]] with a wall of flames, then string it with your [[Ball of wool]] to create the [[M'speak amulet]].
+*''Optional'': If you plan on doing the [[Freeing King Awowogei]] section of [[Recipe for Disaster]]:
+**Kill one of the [[Monkey Zombie]]s and pick up the [[Small zombie monkey bones|zombie monkey bones]].
+**Climb back up the rope, kill one of the [[Monkey Guard]]s and pick up the [[Gorilla bones|gorilla bones]].
+***If you're having trouble with the guard, stay out of melee range so it doesn't heal.
+}}

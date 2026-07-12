@@ -1,0 +1,40 @@
+==Details==
+{{Quest details
+|start = Talk to [[Mosol Rei]] outside of [[Shilo Village (location)|Shilo Village]] in the south part of [[Karamja]].
+|startmap = 2881,2951
+|difficulty = Intermediate
+|description = A foul mist and a plague of undead have overtaken Shilo Village. Can you stop the queen of the dead and save the village?
+|length = Medium
+|requirements = * Completion of the following quests:
+** [[Jungle Potion]]
+*** [[Druidic Ritual]]
+* {{SCP|Crafting|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Agility|32|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* Must be able to defend from many [[Undead one]]s (level 61-73) and able to defeat three monsters that are about level 90.
+|items = * [[Spade]] (can be purchased at the [[Jiminua's Jungle Store|store]] north of [[Tai Bwo Wannai]] for 4 [[coins]])
+* A lit [[torch]] (bruma works), [[candle]] or [[black candle]] (an [[unlit torch]] and [[tinderbox]] can be purchased at the [[Jiminua's Jungle Store|store]] north of [[Tai Bwo Wannai]] for a total of 7 [[coins]])
+**'''you will not get this item back!'''
+**[[Lanterns]] or [[Firemaking cape]] don't work
+* [[Rope]] (can be purchased at the [[Jiminua's Jungle Store|store]] north of [[Tai Bwo Wannai]] for 27 [[coins]])
+* [[Bronze wire]]
+** [[Bronze bar]] and [[hammer]] to create one (both can be purchased at the [[Jiminua's Jungle Store|store]] north of [[Tai Bwo Wannai]] for a total of 13 [[coins]], there is an [[Anvil]] nearby)
+* [[Chisel]] (can be purchased at the [[Jiminua's Jungle Store|store]] north of [[Tai Bwo Wannai]] for 1 [[coins]])
+* 3 regular [[bones]] (obtainable during the quest)
+|recommended = * {{SCP|Combat|45|link=yes}}
+* Good [[food]] and [[armour]] or {{SCP|Prayer|43|link=yes}} for [[Protect from Melee]] (enough to make it through two long tunnels of level 73 monsters)
+* [[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*[[Antipoison]] if below {{SCP|Combat|65|link=yes}} for the [[tribesmen]] found around [[Karamja]] with [[poison]] that hits for '''11 each'''
+* [[Combat equipment]] to defeat [[Nazastarool]]'s three forms (all safespottable with [[Ranged]], [[Magic]] or a [[halberd]])
+**{{SCP|Magic|13|link=yes}}+ to cast [[Fire spells]] (40% elemental weakness) or {{SCP|Magic|39|link=yes}} to cast [[Crumble Undead]] is recommended to kill him faster
+*Quick access to fairy rings and/or gnome glider is highly recommended - you may consider using a [[ring of dueling]] for quick access to a glider at [[Emir's Arena]], and the [[Ardougne cloak]] 1-4 for quick access to a [[fairy ring]]
+* Fast travel to several locations:
+**East of [[Shilo Village (location)|Shilo Village]] to start the quest - [[Gnome glider]], [[fairy ring]] {{fairycode|ckr}}, [[Tai Bwo Wannai Teleport]] or [[Teleport to House]] (Brimhaven)
+**[[Tai Bwo Wannai]] (2 trips) - [[Tai Bwo Wannai Teleport]], [[fairy ring]] {{fairycode|ckr}}, or [[Teleport to House]] (Brimhaven)
+**Eastern [[Karamja]] (2 trips) - [[Gnome glider]] or [[fairy ring]] {{fairycode|dkp}}
+**[[Cairn Isle]] (2 trips) - [[fairy ring]] {{fairycode|ckr}} or [[Tai Bwo Wannai Teleport]] (only useful for the second trip)
+|kills = * [[Nazastarool]] in 3 forms, levels 91, 68, and 93. (safespottable)
+|ironman = {{SCP|Smithing|4|link=yes}} {{Boostable|yes}} (to make a [[bronze wire]])
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Karamja}} {{okay}} will auto-complete the quest
+</poem>
+}}

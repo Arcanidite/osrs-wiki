@@ -1,0 +1,56 @@
+==Details==
+{{Quest details
+|start = Talk to [[Timfraku]] in his house in [[Tai Bwo Wannai]].
+|startmap = 2782,3087
+|difficulty = Intermediate
+|description = In Jungle Potion, the Shaman Trufitus communed with the gods to determine the fate of his people.
+
+Now, Timfraku, the Chief of Tai Bwo Wannai, wishes to see his people and family return to the abandoned village.
+
+Help a depressed fisherman, encourage a raging hunter and satiate an eccentric priest in this extreme test of aptitude and patience!
+|length = Medium
+|requirements = * {{SCP|Agility|15|link=yes}} {{Boostable|Yes}} {{Questreqstart|no}}
+* {{SCP|Cooking|30|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* {{SCP|Fishing|5|link=yes}} {{Boostable|Yes}} {{Questreqstart|no}} <ref>Level 65 is required if you wish to catch the [[Raw karambwan]] yourself.</ref>
+* Completion of the following quests:
+** [[Jungle Potion]]
+*** [[Druidic Ritual]]
+|items = * [[Knife]] or bladed weapon, such as a [[Sword]] or a [[Spear]]
+* [[Sliced banana]] (obtainable during the quest)
+* [[Small fishing net]]
+* [[Pestle and mortar]] (obtainable during the quest for 6 gp)
+* 2 [[Logs]] to quickly make [[Poison karambwan]] at fishing site and to cook [[Pasty jogre bones]] later in the quest
+* [[Iron spear]], [[Steel spear]], [[Mithril spear]], [[Adamant spear]], [[Rune spear]] or [[Dragon spear]] which will be consumed during the quest.
+* [[Agility potion|Agility potion(4)]] (must be 4 doses)
+* [[Ranged]] [[equipment]], [[Magic]] [[equipment]], or a [[halberd]] to kill a [[monkey]] for a [[monkey corpse]] (adjacent melee does 0 damage to monkeys)
+* [[Tinderbox]] (If you wish to avoid running back to the range in Brimhaven)
+* [[Jogre bones]] (obtainable during the quest)
+* [[Seaweed]] (obtainable during the quest)
+* [[Karamjan rum]] or 30 coins to purchase (if obtaining the rum before starting, add the sliced banana or the rum will disappear when you leave the island)
+|recommended = * {{SCP|Firemaking|30|link=yes}} {{Boostable|no}} {{Questreqstart|no}} to make [[burnt jogre bones]] on a fire instead of at a [[furnace]]
+* Extra [[Raw karambwan]] in case you burn the one given to you by [[Tiadeche]]
+* Access to the [[gnome glider]] system (requires partial completion of [[The Grand Tree]] quest)
+* [[Rimmington teleport|Rimmington]] or [[Ardougne teleport]], as well as [[coins]] if you are [[Charter ship|chartering a ship]] to [[Brimhaven]]
+* [[Stamina potion]]s
+* [[Food]]
+* [[Antidote++]] or other [[Antipoison]]s
+* [[Amulet of glory]]
+* [[Brimhaven teleport]]
+* [[Weight-reducing clothing]]
+* [[Lunar staff|Lunar]]/[[Dramen staff]] for [[fairy rings]]
+* {{SCP|Ranged|42|link=yes}}, {{SCP|Agility|53|link=yes}}, {{SCP|Strength|21|link=yes}}, a [[mith grapple]], and [[Crossbow (weapon)|crossbow]] for the [[Strong Tree (Karamja)|Strong Tree]] [[shortcut]]
+|kills = * [[Monkey]] ''(level 3)''
+|ironman = * A method of obtaining an [[agility potion(4)]]:
+** {{SCP|Herblore|34|link=yes}} {{Boostable|yes}} to create one
+** Giving [[Dr Jekyll]] a clean [[irit leaf]] during the [[Jekyll and Hyde]] [[random event]]
+** Killing [[Skeleton (Tarn's Lair)|skeletons]] in [[Tarn's Lair]] for a 1/25.6 drop per 2 dose potion, which can then be [[decanting|decanted]] into a 4 dose
+** A possible [[Icthlarin's Little Helper#Walkthrough|reward]] from defeating the [[apparition]] during [[Icthlarin's Little Helper]]
+** A possible reward from a [[Apprentice potion pack]] obtained through [[Mastering Mixology]]
+* {{SCP|Fishing|65|link=yes}} {{Boostable|yes}} to catch [[raw karambwan]] (necessary if you burn the one given to you)
+* The ability to defeat a level 53 enemy (can be safespotted and the bones telegrabbed at the [[Ardougne Zoo]])
+* Obtaining an [[iron spear]] or better. A [[steel spear]] spawns in the Ancient Prison in [[Neypotzli]] at the western wall. Alternatively, it may be bought from the [[Mount Karuulm Weapon Shop]], [[Fortis Blacksmith]] in [[Varlamore]], or dropped by enemies such as [[Moss Giant]]s, [[Jogres]], [[Tribesmen]], and [[Hobgoblins]]
+|leagueRegion = <poem>
+{{LeagueRegion|Karamja}} — location requirement
+</poem>
+}}
+<references/>
