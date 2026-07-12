@@ -1,0 +1,12 @@
+{"coarse_id": "rfd-subquests", "name": "Recipe for Disaster subquest completion", "status": "authored", "steps": ["rfd-intro", "rfd-goblins", "rfd-mountain-dwarf", "rfd-pirate-pete", "rfd-evil-dave", "rfd-skrach", "rfd-sir-amik", "rfd-awowogei", "rfd-finale"]}
+{"coarse_id": "prayer-pot-supply-coarse", "name": "Prayer potion supply chain (blocks all PvM)", "status": "stub", "steps": []}
+{"coarse_id": "slayer-herb-workflow", "name": "Slayer herb seed workflow (herblore self-sufficiency)", "status": "stub", "steps": []}
+{"coarse_id": "mm1-greegree-routing", "name": "Monkey Madness I greegree routing (4 trips)", "status": "stub", "steps": []}
+{"coarse_id": "combat-training-routing", "name": "Combat training routing heuristic (crabs vs slayer)", "status": "stub", "steps": []}
+{"coarse_id": "gear-tier-contents", "name": "Gear tier contents per combat stage", "status": "stub", "steps": []}
+{"coarse_id": "boss-raid-entry-mechanics", "name": "Boss/raid entry mechanics (Warriors Guild → Barrows → GWD)", "status": "stub", "steps": []}
+{"coarse_id": "herblore-recipe-secondaries", "name": "Herblore recipe→secondary item chains", "status": "stub", "steps": []}
+{"coarse_id": "farm-run-loop-patterns", "name": "Farm run loop patterns", "status": "stub", "steps": []}
+{"coarse_id": "banking-inventory-patterns", "name": "Banking and inventory management patterns", "status": "stub", "steps": []}
+{"coarse_id": "dt-safespots", "name": "Desert Treasure safespot routes", "status": "stub", "steps": []}
+{"coarse_id": "turael-skip-sequence", "name": "Turael skip Slayer sequence", "status": "stub", "steps": []}

@@ -65,20 +65,28 @@ def phase_name(kind, label):
 
 
 def topo_order(steps):
-    """Valid play order: emit a step once its skill reqs are met, applying grants.
-    Produces field applied additively (local dict only — ordering guard, not planner state)."""
+    """Valid play order: emit a step once its skill reqs AND tag reqs are met.
+    Produces/grants applied additively (local dict only — ordering guard, not planner state).
+    S7: tag reqs from reqs.tags checked against state tag:* keys, enabling bootstrap-before-loop
+    ordering (supply loop steps carry reqs.tags:['bootstrap-<chain>'])."""
     state, remaining, ordered = {}, list(steps), []
     lvl = lambda k: state.get(k, 1)
+    has_tag = lambda t: state.get(f"tag:{t}", False)
     while remaining:
         progressed = False
         for s in list(remaining):
-            reqs = (s.get("reqs") or {}).get("skills", {}) or {}
-            if all(lvl(k) >= v for k, v in reqs.items()):
+            skill_reqs = (s.get("reqs") or {}).get("skills", {}) or {}
+            tag_reqs   = (s.get("reqs") or {}).get("tags",   []) or []
+            skills_ok = all(lvl(k) >= v for k, v in skill_reqs.items())
+            tags_ok   = all(has_tag(t) for t in tag_reqs)
+            if skills_ok and tags_ok:
                 ordered.append(s)
-                # Apply grants (skill levels)
+                # Apply grants: skill levels + boolean tags
                 for k, v in (s.get("grants") or {}).items():
                     if isinstance(v, (int, float)):
                         state[k] = max(lvl(k), v)
+                    elif v is True:
+                        state[f"tag:{k}"] = True
                 # Apply produces additively (S7 — local ordering guard only)
                 for k, v in (s.get("produces") or {}).items():
                     if isinstance(v, (int, float)):
@@ -89,6 +97,30 @@ def topo_order(steps):
             ordered.extend(remaining)
             break
     return ordered
+
+
+# P8 — insert_supply_steps: annotate supply steps with their Supply: phase label.
+# AOT and "either"-timing supply steps get _supply_phase set so phased_steps_with_steer
+# can group them under the Supply: <chain> phase before their consuming milestone.
+# JIT supply steps are left unannotated — they co-locate in the consumer's phase.
+def insert_supply_steps(ordered, supply_chains):
+    """P8: Annotate supply steps with Supply: phase label.
+    AOT/either-timing steps → _supply_phase = phase_name("supply", chain_label).
+    JIT steps → no annotation (stays in consumer's milestone phase).
+    Bootstrap steps → always AOT, get _supply_phase like other AOT supply steps.
+    """
+    chain_label = {c["id"]: c["label"] for c in (supply_chains or [])}
+    result = []
+    for step in ordered:
+        chain_id = step.get("_supply_chain") or step.get("supply_chain")
+        if chain_id and step.get("_supply"):
+            timing = step.get("timing")
+            # JIT steps co-locate with their consumer; everything else is supply-phase
+            if timing != "jit":
+                label = chain_label.get(chain_id, chain_id.replace("-", " ").title())
+                step = {**step, "_supply_phase": phase_name("supply", label)}
+        result.append(step)
+    return result
 
 
 # Factual, own-words note on what each milestone unlocks — the "why" that turns a
@@ -281,15 +313,20 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
     state = {}
     out = []
     lvl = lambda k: state.get(k, 1)
+    has_tag = lambda t: state.get(f"tag:{t}", False)
 
     def apply_step(step):
         for k, v in (step.get("grants") or {}).items():
             if isinstance(v, (int, float)):
                 state[k] = max(lvl(k), v)
+            elif v is True:
+                state[f"tag:{k}"] = True
 
     def ready(step):
         reqs = _skill_reqs(step)
-        return all(lvl(k) >= v for k, v in reqs.items())
+        tag_reqs = (step.get("reqs") or {}).get("tags", []) or []
+        return (all(lvl(k) >= v for k, v in reqs.items()) and
+                all(has_tag(t) for t in tag_reqs))
 
     def advances_skills(step, target_skills):
         grants = step.get("grants") or {}
@@ -310,6 +347,23 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
         remaining.remove(step)
         apply_step(step)
         return step
+
+    # P8 supply phases: collect supply steps grouped by chain_id.
+    # They are emitted just before the first milestone whose reqs.tags includes
+    # supply-<chain>, creating a "Supply: <chain-label>" phase block.
+    # chain_id -> {"phase": phase_str, "steps": [step, ...]}
+    supply_by_chain = {}
+    non_supply = []
+    for step in remaining:
+        sp_phase = step.get("_supply_phase")
+        chain_id = step.get("_supply_chain") or step.get("supply_chain")
+        if sp_phase and chain_id:
+            if chain_id not in supply_by_chain:
+                supply_by_chain[chain_id] = {"phase": sp_phase, "steps": []}
+            supply_by_chain[chain_id]["steps"].append(step)
+        else:
+            non_supply.append(step)
+    remaining = non_supply
 
     # Steer-points only claim steps that materially advance them (steer_id match
     # or their unlock skills); they NEVER drain unrelated steps. A steer-point the
@@ -337,6 +391,31 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
         m = anchor
         phase = phase_name("toward", m["label"])
         target = _skill_reqs(m)
+
+        # P8: emit supply phases for any supply-<chain> tags this milestone requires.
+        # This creates "Supply: <chain>" phase blocks immediately before the
+        # milestone's training steps, before greedy has consumed those supply steps.
+        # Also pulls JIT supply steps for the same chain from remaining (they were
+        # separated before milestone processing since they lack _supply_phase).
+        for tag in ((m.get("reqs") or {}).get("tags", []) or []):
+            if tag.startswith("supply-"):
+                chain_id = tag[len("supply-"):]
+                if chain_id in supply_by_chain:
+                    entry = supply_by_chain.pop(chain_id)
+                    phase_str = entry["phase"]
+                    for sup_step in entry["steps"]:
+                        apply_step(sup_step)
+                        out.append({"step": sup_step, "phase": phase_str})
+                    # Also pull JIT supply steps for this chain from remaining.
+                    # JIT steps weren't annotated with _supply_phase but belong here.
+                    jit_steps = [s for s in remaining
+                                 if (s.get("_supply_chain") or s.get("supply_chain")) == chain_id
+                                 and ready(s)]
+                    for jit in jit_steps:
+                        remaining.remove(jit)
+                        apply_step(jit)
+                        out.append({"step": jit, "phase": phase_str})
+
         met = lambda: all(lvl(k) >= v for k, v in target.items())
         while not met():
             step = take(lambda s, _t=target: advances_skills(s, _t)) or take(lambda s: True)
@@ -349,6 +428,11 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
         out.append({"milestone": m, "phase": phase})
 
     endgame = phase_name("endgame", "")
+    # Any supply phases not yet emitted (no matching milestone) → endgame section.
+    for entry in supply_by_chain.values():
+        for sup_step in entry["steps"]:
+            apply_step(sup_step)
+            out.append({"step": sup_step, "phase": entry["phase"]})
     for sp in pending_steer:
         out.append({"steer": sp, "phase": endgame})
     for step in remaining:
@@ -433,7 +517,7 @@ def _region_phase(step):
     return phase_name("region", region.replace("-", " ").title()) if region else "General training"
 
 
-def enrich(plan, catalog, steer_points):
+def enrich(plan, catalog, steer_points, supply_chains=None):
     goal = plan["goal"]
     zones = catalog.get("zones", {})
     reals = [s for s in plan["path"] if not s.get("_capstone")]
@@ -445,6 +529,9 @@ def enrich(plan, catalog, steer_points):
     # P7 — topo_order (hub_batches is Lane 3+; here topo is the dep guard).
     ordered = topo_order(clean)
 
+    # P8 — insert_supply_steps: annotate AOT supply steps with Supply: phase label.
+    ordered = insert_supply_steps(ordered, supply_chains or [])
+
     # P9 — re-attach overlay nodes adjacent to their (possibly reordered) anchors.
     ordered_with_overlays = reattach_overlays(ordered, overlays)
 
@@ -454,6 +541,8 @@ def enrich(plan, catalog, steer_points):
         for s in ordered_with_overlays:
             if s.get("_bg"):
                 steps_out.append(_bg_step(s, phase_name("background", ""), zones))
+            elif s.get("_supply"):
+                steps_out.append(_train_step(s, s.get("_supply_phase") or _region_phase(s), zones))
             else:
                 steps_out.append(_train_step(s, _region_phase(s), zones))
         steps = steps_out
@@ -540,6 +629,13 @@ def load_steer_points(data_dir):
     return [json.loads(l) for l in lines if l.strip()]
 
 
+def _load_jsonl(path):
+    """Load a .jsonl file; return empty list if missing."""
+    if not path.exists():
+        return []
+    return [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+
 def main():
     payload = json.load(sys.stdin)
     if "blocks" in payload:                        # scheduled input (schedule.py)
@@ -547,14 +643,12 @@ def main():
         return
     catalog = json.loads((Path(__file__).parent / "catalog.json").read_text())
 
-    # Load steer_points.jsonl from data directory.
+    # Load data files from tools data directory.
     data_dir = Path(__file__).parent.parent.parent / "assets" / "data" / "tools"
-    sp_path = data_dir / "steer_points.jsonl"
-    steer_points = []
-    if sp_path.exists():
-        steer_points = [json.loads(l) for l in sp_path.read_text().splitlines() if l.strip()]
+    steer_points  = _load_jsonl(data_dir / "steer_points.jsonl")
+    supply_chains = _load_jsonl(data_dir / "supply_chains.jsonl")
 
-    json.dump(enrich(payload, catalog, steer_points), sys.stdout, indent=2)
+    json.dump(enrich(payload, catalog, steer_points, supply_chains), sys.stdout, indent=2)
 
 
 if __name__ == "__main__":

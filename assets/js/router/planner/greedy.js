@@ -9,6 +9,7 @@
 
 import { normalizeReqs, reqQuals, toState, fromState, reqsSummary, syncQualEdges } from "../model.js";
 import { weaveOverlays } from "./overlay.js";
+import { burndownResolve } from "./burndown.js";
 
 class MinHeap {
   constructor() { this._h = []; }
@@ -54,6 +55,9 @@ export function meetsReqs(env, step, state, ctx) {
 }
 
 export function costFor(step, style) {
+  // Supply steps are mandatory prerequisites — assign near-zero cost so they
+  // are always preferred when useful (S6/S3 hard rule: supply before bossing).
+  if (step._supply) return 0.0001;
   const xpSum = Object.values(step.xp ?? {}).reduce((a, b) => a + b, 0);
   if (style === "efficient") return xpSum > 0 ? 1 / xpSum : 100;
   if (style === "afk")       return step.inv_used ?? 1;
@@ -73,6 +77,9 @@ export function locationAccessible(step, completedIds, excluded, completedQuests
 function isUseful(env, step, state, targetEdges, terminal, neededGates) {
   if (terminal && step.id === terminal) return true;
   if (neededGates?.has(step.id)) return true;
+  // Supply-chain and quest-prereq steps are mandatory — treat as always-useful
+  // when their own requirements are met (S8: demandSet overrides deferred_until).
+  if (env.demandSet?.has(step.id)) return true;
   return env.graph.progresses(env.graph.edgesFrom("step:grant", step.id), targetEdges, state);
 }
 
@@ -93,6 +100,8 @@ function routeGoal(env, steps, profile, goal, skills, completedIds, completedQue
     const needed = new Set();
     const directlyUseful = (s) =>
       (terminal && s.id === terminal) ||
+      // Supply/demand steps are always useful; propagate their quest gates too (S8).
+      env.demandSet?.has(s.id) ||
       graph.progresses(graph.edgesFrom("step:grant", s.id), targetEdges, state);
     let changed = true;
     while (changed) {
@@ -200,18 +209,35 @@ export function routeMulti(goals, steps, profile, env) {
   const excluded      = profile.excludeRegions ?? [];
   let freeSlots       = 28;
 
+  // P1 burndownResolve — resolve goal item/quest reqs into supply+bootstrap steps
+  // before bank-split. Returns injected supply steps, sanitized goals (S6 tag-bridge),
+  // and demandSet (S8: supply-critical ids that override deferred_until).
+  const { injectedSteps, sanitizedGoals, demandSet } = burndownResolve(
+    goals,
+    steps,
+    env.supplyChains ?? [],
+    env.coarseExpansions ?? []
+  );
+
+  // Sync injected supply steps into the graph so greedy can qualify them.
+  if (injectedSteps.length) syncQualEdges(env.graph, injectedSteps);
+
+  // Merge injected supply steps into the full step pool (supply steps first for
+  // dep-ordering; dedup by id so original steps aren't duplicated if burndown
+  // re-wraps a step that already exists in the bank).
+  const injectedIds = new Set(injectedSteps.map((s) => s.id));
+  const mergedSteps = [
+    ...injectedSteps,
+    ...steps.filter((s) => !injectedIds.has(s.id)),
+  ];
+
+  // Expose demandSet on env so overlay.js / sequencer (Lane 3) can access it (S8).
+  env.demandSet = demandSet;
+
   // P2 bank split — exclude slot-typed steps (background/passive) from the greedy heap;
   // they are woven back in by weaveOverlays (P4) after routing.
-  const activeSteps  = steps.filter((s) => !s.slot || s.slot.type === "alternation");
-  const overlaySteps = steps.filter((s) => s.slot && s.slot.type !== "alternation");
-
-  // S6 sanitize shim — strip reqs.items/reqs.quests before greedy so nothing
-  // half-fires; burndown.js (Lane 2+) owns item/quest resolution and rewrites
-  // them into reqs.tags before greedy sees them.
-  const sanitizedGoals = goals.map((g) => {
-    const { items: _i, quests: _q, ...reqs } = g.reqs ?? {};
-    return { ...g, reqs };
-  });
+  const activeSteps  = mergedSteps.filter((s) => !s.slot || s.slot.type === "alternation");
+  const overlaySteps = mergedSteps.filter((s) => s.slot && s.slot.type !== "alternation");
 
   const path = sanitizedGoals.flatMap((goal) => {
     const skillsAtGoalStart = { ...skills };

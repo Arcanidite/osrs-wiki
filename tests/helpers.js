@@ -16,11 +16,16 @@ export function readData(name) {
 }
 
 export function loadFixtures() {
+  const tryRead = (name) => {
+    try { return readData(name); } catch { return []; }
+  };
   return {
-    steps:       readData("steps"),
-    goals:       readData("goals"),
-    regions:     readData("regions"),
-    constraints: readData("constraints"),
+    steps:             readData("steps"),
+    goals:             readData("goals"),
+    regions:           readData("regions"),
+    constraints:       readData("constraints"),
+    supplyChains:      tryRead("supply_chains"),
+    coarseExpansions:  tryRead("coarse_expansions"),
   };
 }
 
@@ -30,12 +35,14 @@ export function counterNow(start = 1) {
   return () => n++;
 }
 
-export function makeEnv({ steps, constraints }, overrides = {}) {
+export function makeEnv({ steps, constraints, supplyChains = [], coarseExpansions = [] }, overrides = {}) {
   const graph = createGraph();
   syncQualEdges(graph, steps);
   return {
     graph,
     constraints,
+    supplyChains,
+    coarseExpansions,
     pinnedExclusions: new Set(),
     manualQuestDone:  new Set(),
     now: counterNow(),
