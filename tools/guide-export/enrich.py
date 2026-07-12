@@ -615,6 +615,42 @@ def _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id):
     return topo_order(list(ordered) + to_inject)
 
 
+def _select_branch_drops(coarse_expansions, atoms_by_id):
+    """branch{} selection (GRANULARITY U9): for each alt_group keep the FIRST member
+    in registry order (= preference; empty `when` is always eligible — full when-gating
+    is Lane 3), drop the rest. Returns the set of atom ids to remove."""
+    seen, drop = set(), set()
+    for exp in (coarse_expansions or []):
+        for sid in exp.get("steps", []):
+            branch = ((atoms_by_id or {}).get(sid) or {}).get("branch") or {}
+            group = branch.get("alt_group")
+            if not group:
+                continue
+            drop.add(sid) if group in seen else seen.add(group)
+    return drop
+
+
+def _coalesce_checkpoints(steps, checkpoint_member):
+    """Keep steps sharing a checkpoint contiguous (stable, first-appearance block order).
+    A later member is pulled up next to its block's current last member so the checkpoint
+    header renders once; non-members keep their relative position."""
+    if not checkpoint_member:
+        return steps
+    result, block_end = [], {}
+    for s in steps:
+        cp = checkpoint_member.get(s.get("id"))
+        if cp is None or cp not in block_end:
+            result.append(s)
+            if cp is not None:
+                block_end[cp] = len(result) - 1
+            continue
+        pos = block_end[cp] + 1
+        result.insert(pos, s)
+        block_end = {k: (v + 1 if v >= pos and k != cp else v) for k, v in block_end.items()}
+        block_end[cp] = pos
+    return result
+
+
 def enrich(plan, catalog, steer_points, supply_chains=None,
            coarse_expansions=None, atoms_by_id=None):
     goal = plan["goal"]
@@ -632,6 +668,11 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # Handles the 'unwind via coarse_expansions' path (ctr-* combat atoms).
     ordered = _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id)
 
+    # branch{} selection: keep one member per alt_group (crabs XOR slayer, etc.).
+    branch_drops = _select_branch_drops(coarse_expansions, atoms_by_id)
+    if branch_drops:
+        ordered = [s for s in ordered if s.get("id") not in branch_drops]
+
     # P8 — insert_supply_steps: annotate AOT supply steps with Supply: phase label.
     ordered = insert_supply_steps(ordered, supply_chains or [])
 
@@ -640,6 +681,8 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
 
     # Build checkpoint index from authored expansions (used in both paths below).
     checkpoint_start, checkpoint_member = _build_checkpoint_index(coarse_expansions)
+    # Keep checkpoint members contiguous so each header renders exactly once.
+    ordered_with_overlays = _coalesce_checkpoints(ordered_with_overlays, checkpoint_member)
     # coarse_id lookup for _checkpoint_step id generation
     step_to_coarse = {}
     cp_counter = {}
