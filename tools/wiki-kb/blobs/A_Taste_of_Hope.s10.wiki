@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = A Taste of Hope
+|image = [[File:A Taste of Hope reward scroll.png|center]]
+|qp = 1
+|rewards =
+*[[Ivandis flail]] - A weapon that can damage the [[vyrewatch]]
+*[[Drakan's medallion]] - An amulet that gives the player unlimited teleports to the [[Theatre of Blood]]
+*[[Tome of experience (A Taste of Hope)|Tome of experience]], granting 2,500 experience to any three skills of the player's choosing (level 35 or over). Can be the same skill.
+}}

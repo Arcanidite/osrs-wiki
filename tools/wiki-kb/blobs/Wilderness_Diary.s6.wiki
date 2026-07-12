@@ -1,0 +1,80 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Wilderness" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Cast any of the 3 [[God spells]] against another player in the [[Wilderness]].
+''Note: You have to successfully hit the player, so multiple casts are recommended.
+
+''[[God spells]] must first be cast 100 times inside the [[Mage Arena]] before they can be cast elsewhere, but this task is just as completable inside the arena.
+|
+*{{SCP|Quest}} Completion of [[Mage Arena I]]
+*{{SCP|Magic|60|link=y}} 
+*Any [[Staves#God_staves|god staff]] and means to cast its related [[God spells|god spell]] ({{RuneReq|Blood=2|Fire=1-4|Air=1-4}} per cast)
+|-
+|2. [[Charge Air Orb|Charge]] an [[Air Orb]].
+|
+*{{SCP|Magic|66|link=y}}
+*[[Unpowered orb]] and means to cast [[Charge Air Orb]] ({{RuneReq|Air=30|Cosmic=3}})
+|-
+|3. Catch a [[Black salamander (Hunter)|Black Salamander]] in the [[Wilderness]].
+|
+*{{SCP|Hunter|67|link=y}}
+*[[Small fishing net]] and a [[rope]]
+|-
+|4. Smith an [[Adamant scimitar]] in the [[Resource Area]].
+''Note: With 75 [[Woodcutting]] and 75 [[Firemaking]], you can bring any [[axe]] and a [[tinderbox]] to cut and burn some [[magic logs]] for an [[#Elite|elite task]].''
+|
+*{{SCP|Smithing|75|link=y}}
+*[[Hammer]] and 2 [[adamantite bar]]s
+*6,000-7,500 [[coins]]{{efn|name=FeeHard|The regular fee to enter the [[Resource Area]] is 7,500 [[coins]]. This is reduced to 6,000 [[coins]] when the rewards for the [[#Medium|medium tasks]] are claimed.}}
+|-
+|5. Kill a [[Lava Dragon]].
+''Note: [[Lava dragon]]s are found on [[Lava Dragon Isle]].
+|
+*Protection from [[dragonfire]] recommended if not safe spotting and [[weapon]]ry to slay it
+|-
+|6. Kill the [[Chaos Elemental]].
+|
+*See the [[Chaos Elemental/Strategies|strategy guide]]
+|-
+|7. Kill the [[Crazy archaeologist|Crazy Arc.]]{{sic|Boss name is shortened from "Crazy archaeologist" in-game, this is transcribed verbatim.}}, [[Chaos Fanatic]] & [[Scorpia]].
+''Note: While these bosses can be killed in any order, completing or updating any other task in-between will reset the progress for this task.''
+|
+*See the individual strategy guides for the [[Crazy archaeologist/Strategies|Crazy archaeologist]], [[Chaos Fanatic/Strategies|Chaos Fanatic]], and [[Scorpia/Strategies|Scorpia]]
+|-
+|8. Take the [[Rocks (Wilderness, Trollheim)|agility shortcut]] from [[Trollheim]] into the [[Wilderness]].
+''Note: Not to be confused with the [[Rocky handholds (God Wars Dungeon, Wilderness)|rocky shortcut]] further north. The [[Rocks (Wilderness, Trollheim)|shortcut]] for this task goes in one direction, and cannot be used to leave the [[Wilderness]] again. 
+|
+*{{SCP|Agility|64|link=y}}
+*{{SCP|Quest}} Partial completion of [[Troll Stronghold]], or completion of the {{SCP|combatachievement}} [[Combat Achievements/Easy|Easy Combat Achievements]] for [[Ghommal's hilt 1]]
+|-
+|9. Kill a [[Spiritual warrior]] in the [[Wilderness God Wars Dungeon|Wilderness Godwars Dungeon]].
+''Note: With 83 [[Slayer]], you can also kill a [[spiritual mage]] here to complete an [[#Hard|elite task]]
+|
+*{{SCP|Agility|60|link=y}} or {{SCP|Strength|60|link=y}}, and {{SCP|Slayer|68|link=y}}
+*[[Weaponry]] and [[God_Wars_Dungeon#God-related_protection|god equipment]]
+|-
+|10. Fish some [[Raw Lava Eel]] in the [[Wilderness]].
+|
+*{{SCP|Fishing|53|link=y}} and {{SCP|Herblore|25|link=y}}
+*[[Oily fishing rod]], [[fishing bait]]
+*[[Knife]], [[Wilderness sword 1]] or [[Wilderness sword 2|2]], or a [[slashing weapon]]
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Wilderness sword 3]]:
+**Identical stats to a [[mithril sword]] (only weighs negligibly more)
+**One daily teleport to the [[Fountain of Rune]]
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 experience in any skill of at least level 50
+*Entrance fee for the [[Resource Area]] lowered to 3,750 [[coins]], down from 6,000 [[coins]]
+*Possess up to 5 [[ecumenical key]]s at a time, up from 4
+*[[Ecumenical key]]s can now be sold to the [[Lesser Fanatic]] in [[Edgeville]] for 61,500 [[coins]] each
+*[[Lundail]] offers you 120 random [[runes]] for free every day, worth an average of {{NoCoins|{{#var:avgrune}}*120}} [[coins]] on the [[Grand Exchange]]
+*50% more [[Lava scale shard|lava shards]] from grinding [[lava scale]]s
+*67% more loot from [[Chest (Rogues' Castle|chests]] in the [[Rogues' Castle]], up from 33%
+*You can now select your destination when using [[Wilderness obelisk]]s, instead of being teleported to a random obelisk
+*You'll no longer have a delay of 3 [[tick]]s (1.8 seconds) when using a teleport in the [[Revenant Caves]] or any of the [[Wilderness#Bosses|Wilderness boss caves]].
+*[[Wine of zamorak]] taken from the [[Chaos Temple (hut)]] and [[Deep Wilderness Dungeon]] will now be [[noted]]
+*Access to [[Spindel]], [[Artio]], and [[Calvar'ion]]

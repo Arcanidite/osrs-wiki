@@ -1,0 +1,76 @@
+==Details==
+{{Quest details
+|start = Talk to to [[Veliaf Hurtz]] in the [[Myreque Hideout]] below the [[Canifis]] pub.
+|startmap = 3506,9839
+|difficulty = Intermediate
+|description = After the attack on the Myreque by Vanstrom Klause and with the deaths of both Sani and Harold, Veliaf is counting on you to help. Now that the Myreque freedom fighters' base camp has been revealed, they'll need to move on and set up base somewhere else.
+
+Veliaf has heard of a little known village south of Mort'ton, referred to as 'Burgh de Rott'. This could be just the place to set up operations to strike back against the evil of Lowerniel Vergidiyad Drakan and his Vampyric overlordship in Morytania. And who knows what other secrets about Morytania and its dark past will be revealed?
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[In Search of the Myreque]]
+***[[Nature Spirit]]
+****[[Priest in Peril]]
+****[[The Restless Ghost]]
+*{{SCP|Agility|25|link=yes}} {{Boostable|Yes}} {{Questreqstart|}}
+*{{SCP|Crafting|25|link=yes}} {{Boostable|No}} {{Questreqstart|}}
+*{{SCP|Mining|15|link=yes}} {{Boostable|No}} {{Questreqstart|}}
+*{{SCP|Magic|7|link=yes}} {{Boostable|Yes}} {{Questreqstart|}}
+|items = *A method to damage vampyres, either:
+**[[Efaritay's aid]] equipped in combination with any weapon OR
+**[[Silver weaponry]], which includes:
+***[[Wolfbane dagger]]
+***A [[Silver sickle (b)|blessed]] or [[Silver sickle|regular]] silver sickle
+***A [[blessed axe]] (obtained during [[Animal Magnetism]])
+***[[Silverlight]] (obtained during [[Demon Slayer]]), [[Darklight]] (obtained during Shadow of the Storm), [[Arclight]], or [[Emberlight]]
+*1 piece of any [[food]] to enter [[Burgh de Rott]] for the first time
+*A [[spade]]
+*1-5 [[bucket]]s (5 is '''highly recommended''' to save time)
+*Any [[pickaxe]]
+*A [[hammer]] ([[Imcando hammer]] works.)
+*11 [[plank]]s (Only regular planks will work.)
+*44 [[nails]] (42 are obtainable during the quest)
+*[[Swamp paste]]
+*10 [[raw mackerel]] or 10 [[Snail meat]]s (randomly chosen, but you can manipulate the choice)
+*10 [[bronze axe]]s
+*4 [[tinderbox]]es
+*2 [[steel bar]]s
+*[[Coal]]
+*[[Soft clay]]
+*[[Rope]]
+*A [[silver bar]]
+*A [[mithril bar]]
+*A [[sapphire]]
+*On the [[standard spellbook]] for [[Lvl-1 Enchant]]:
+**A [[cosmic rune]]
+**A [[water rune]]
+*Optional to give to [[Ivan Strom]] ('''''Strongly'' recommended if you don't have a high [[combat level]]''' 85+, you will not get the items back):
+**A [[steel med helm]]
+**A [[steel chainbody]]
+**[[Steel platelegs]]
+**A [[silver sickle]]
+**15 [[stew]] (highest healing), [[salmon]], [[snail]]s, or [[Cooked slimy eel|slimy eel]]s
+|recommended = *{{SCP|Combat|45|link=yes}}
+*Fast travel to several locations
+**[[Myreque Hideout]] to start the quest plus 2 additional trips - [[fairy ring]] {{fairycode|DLS}}, [[Kharyrll Teleport]], [[Salve Graveyard Teleport]],  [[Slayer ring]] to [[Slayer Tower]], or [[Fenkenstrain's Castle Teleport]]
+**[[Burgh de Rott]] (3 trips) - [[Mort'ton Teleport]], [[Shades of Mort'ton]] minigame teleport, [[Barrows Teleport]], or [[fairy ring]]  {{Fairycode|bkr}} and take the [[swamp boaty]]
+**Any [[furnace]] (1 trip) - [[Amulet of glory]] to [[Edgeville]], [[Ectophial]], [[TzHaar Fight Pit]] minigame teleport, or [[fairy ring]] to [[Zanaris]]
+**[[Paterdomus Temple]] west of [[Canifis]] (1 trip) - [[fairy ring]] {{fairycode|CKS}}, [[Salve Graveyard Teleport]], [[Kharyrll Teleport]], or [[Slayer ring]] to [[Slayer Tower]]
+|kills = *[[Gadderanks]] ''(level 35)'' (safespottable)
+*2 [[Vampyre Juvinate]]s ''(level 54)'' (safespottable)
+*2 [[Vampyre Juvinate]]s ''(level 75)'' '''or''' 4 level 50s depending on route taken
+|ironman = *Obtaining 2 steel bars:
+**{{SCP|Smithing|30|link=yes}} to smith one from 2 [[coal]] and 1 [[iron ore]]
+**Completing {{SCP|Quest}} [[Daddy's Home]] rewards 5 steel bars
+**1/21.33 drop from [[black knight|black knights]] ({{SCP|Combat|33}})
+**1/21.33 drop from [[moss giants]] ({{SCP|Combat|42}})
+*Obtaining a mithril bar:
+**{{SCP|Smithing|50|link=yes}} {{Boostable|yes}} to smith one
+**1/21.33 drop from [[chaos dwarves]] ({{SCP|Combat|48}}) in the [[Taverley Dungeon]]
+*Obtaining steel equipment to give to Ivan Strom
+**The steel med helm, chainbody and platelegs can all be bought from [[Blair's Armour]] in [[Shayzien]]
+*Raw mackerel can be bought from [[Frankie's Fishing Emporium]] in [[Port Piscarilius]]. Note that you can reroll the random requirement to avoid needing to kill snails.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}

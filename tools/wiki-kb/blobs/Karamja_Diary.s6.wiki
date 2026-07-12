@@ -1,0 +1,69 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Karamja" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+| 1. Become the Champion of the [[TzHaar Fight Pit|Fight Pits]].
+''Note: In Deadman Mode, this task is instead "Speak to TzHaar-Mej-Kah at the Fight Pits."
+| 
+*At least one other player
+*[[Weapon]]ry, optionally
+|-
+| 2. Kill a [[Ket-Zek]] in the [[TzHaar Fight Cave|Fight Caves]].
+''Note: [[Ket-Zek]]s start to appear on the 31st wave. You can leave the arena safely after killing it.
+
+''This wave can be reached with relatively little effort, as long as the [[Yt-MejKot]]s are kept out of melee range and [[Protect from Missiles]] is used against the [[Tok-Xil]]s. Though, you may as well try to complete the entire [[TzHaar Fight Cave|Fight Caves]] when going for this task.
+|
+*See the [[TzHaar Fight Cave/Strategies|strategy guide]]
+|-
+| 3. Eat an [[oomlie wrap]].
+|
+*[[Cooked oomlie wrap]], or the requirements to make it ({{SCP|Cooking|50|link=yes}} {{boostable|n}}, a [[palm leaf]], and a [[raw oomlie]])
+|-
+| 4. Craft some [[nature rune]]s from Essence.
+|
+*{{SCP|Runecraft|44|link=yes}}
+*[[Pure essence|Pure]] or [[daeyalt essence]]
+*Access to the [[Nature Altar]] ([[nature talisman]]/[[Nature tiara|tiara]], [[catalytic talisman]]/[[Catalytic tiara|tiara]], or the [[Abyss]])
+|-
+| 5. Cook a [[Raw karambwan|karambwan]] thoroughly.
+|
+*{{SCP|Quest}} Completion of [[Tai Bwo Wannai Trio]] (speak to [[Tinsay]] after the quest) 
+*{{SCP|Cooking|30|link=yes}}
+*[[Raw karambwan]], multiple recommended in case of [[Burnt karambwan|burning]] one
+|-
+| 6. Kill a [[Death wing|deathwing]]{{sic}} in the [[Shaman Caves|dungeon]] under the [[Kharazi Jungle]].
+|
+*{{SCP|Quest}} Partial completion of [[Legends' Quest]]
+**The quest can be started without all the required skills, but reaching this area requires {{SCP|Agility|50|link=yes}}, {{SCP|Thieving|50|link=yes}}, {{SCP|Mining|52|link=yes}}, and {{SCP|Strength|50|link=yes}} (all boostable).
+*Any [[axe]], any [[Machete (weapon)|machete]], any [[pickaxe]], and a [[lockpick]]
+|-
+| 7. Use the [[Strong_Tree_(Karamja)|crossbow shortcut]] south of the [[Karamja Volcano|volcano]].
+|
+*{{SCP|Agility|53|link=yes}}, {{SCP|Ranged|42|link=yes}} and {{SCP|Strength|21|link=yes}}
+*[[Mith grapple]]{{efn|[[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].}} and any [[Crossbow (weapon)|crossbow]]
+|-
+| 8. Collect 5 [[Palm leaf|palm leaves]].
+''Note: You can just drop and pick up the same palm leaf five times.''
+|
+*{{SCP|Quest}} Partial completion of [[Legends' Quest]]
+*Any [[axe]] and [[Machete (weapon)|machete]], or {{SCP|Agility|79|link=yes}} for the [[Vine (Kharazi Jungle)|vine shortcut]]
+|-
+| 9. Be assigned a [[Slayer]] task by the [[Duradel|Slayer Master]] in [[Shilo Village (location)|Shilo Village]].
+| 
+*{{SCP|Quest}} Completion of [[Shilo Village]]
+*{{SCP|Combat|100|link=yes}} and {{SCP|Slayer|50|link=yes}}, or a [[Slayer cape]]
+|-
+| 10. Kill a [[metal dragon]] in [[Brimhaven Dungeon]].
+|
+*{{SCP|Woodcutting|10|link=yes}}
+*Any [[axe]], protection from [[dragonfire]], and [[weapon]]ry
+*875 [[coins]] (unless you have unlocked permanently free access via either [[Saniboch]] or [[Banisoch]])
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Karamja gloves 3]]:
+**Unlimited teleports to the underground portion of the [[Shilo Village mine]]
+**[[Jiminua's Jungle Store]] and the [[Karamja General Store]] are now also affected by the gloves' [[Karamja gloves#Discounted shops|discounted store prices]]
+*[[Antique lamp (Karamja Diary)|Antique lamp]] worth 10,000 experience in any skill of at least level 40 (instead of the usual [[Antique lamp (hard)|antique lamp]] for this tier)

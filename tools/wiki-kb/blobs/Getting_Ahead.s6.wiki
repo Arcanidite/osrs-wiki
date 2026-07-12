@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Getting Ahead
+|image = [[File:Getting Ahead reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*3,000 [[coins]] — If not claimed at quest completion due to no available inventory space, talk to [[Gordon]] again after the quest for the reward
+*{{SCP|Crafting|4,000|link=yes}} [[experience]]
+*{{SCP|Construction|3,200|link=yes}} [[experience]]
+*Access to a [[tannery]] in the [[Kebos Lowlands]] (speak to Mary to access tanning services)
+
+Unlocks:
+* [[Headless Beast]] accessible in the [[Nightmare Zone]]
+}}

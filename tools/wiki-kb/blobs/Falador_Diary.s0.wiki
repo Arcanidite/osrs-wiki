@@ -1,0 +1,18 @@
+{{External|rs=Falador achievements}}
+{{Infobox Achievement Diary
+|name = Falador Diary
+|image = [[File:Falador Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Falador]], [[Rimmington]], [[Taverley]], [[Burthorpe]], [[Mudskipper Point]], and [[Port Sarim]]
+|members = Yes
+|reward = [[Falador shield|Shield]]
+|taskmasters = [[Sir Rebral]]
+|leagueRegion = Asgarnia
+}}
+{{Map|name=Sir Rebral|x=2978|y=3347|r=3|height=250|width=250|caption=Sir Rebral's location|align=left|mtype=square}}
+The '''Falador Diary''' is an [[Achievement Diary]] whose tasks revolve around areas in and near [[Falador]], such as [[Burthorpe]], [[Rimmington]], and [[Taverley]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements. For the [[#Elite|elite tier]] of this diary, the player must have completed all [[quest]]s, or achieved [[level 99]] in any skill.
+
+Rewards can be claimed from [[Sir Rebral]] in the [[White Knights' Castle]]'s courtyard in [[Falador]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

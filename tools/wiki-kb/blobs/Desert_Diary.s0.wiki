@@ -1,0 +1,18 @@
+{{External|rs=Desert achievements}}
+{{Infobox Achievement Diary
+|name = Desert Diary
+|image = [[File:Desert Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Kharidian Desert]] (not including [[Al Kharid]])
+|members = Yes
+|reward = [[Desert amulet|Amulet]]
+|taskmasters = [[Jarr]]
+|leagueRegion = Desert
+}}
+{{Map|name=Desert Diary|x=3302|y=3122|r=5|width=250|height=250|caption=Jarr's location|align=left|mtype=square}}
+The '''Desert Diary''' is an [[Achievement Diary]] whose tasks revolve around areas within the [[Kharidian Desert]], such as [[Pollnivneach]], [[Nardah]], and [[Sophanem]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from [[Jarr]] in the [[Shantay Pass]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

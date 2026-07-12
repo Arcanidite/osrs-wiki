@@ -1,0 +1,29 @@
+==Details==
+{{Quest details
+|start = Talk to [[Olaf Hradson]] east of [[Rellekka]], just south of the [[Rellekka Hunter area]].
+|startmap = 2724,3729
+|difficulty = Intermediate
+|description = Poor Olaf Hradson. He has to live up to such expectations. His ancestors sailed all over the world, and now he has to go out and prove himself their equal. If only he could read a map... If only he could sail... If only he hadn't crashed! Can you help a depressed and soggy Fremennik regain his pride, and possibly the lost treasure of his grandfather?
+|length = Short
+|requirements = *Completion of [[The Fremennik Trials]]
+*{{SCP|Firemaking|40|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+*{{SCP|Woodcutting|50|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+*The ability to defeat a level 100 monster
+|items = *Any [[woodcutting]] [[axe]]
+*[[Tinderbox]]
+*[[Spade]]
+*6 [[Rope]]s (obtainable during the quest)
+*4 free [[inventory]] slots (10 if not bringing your own ropes)
+|recommended = *{{SCP|Combat|50+|link=yes}}
+*{{SCP|Agility|50+|link=yes}} is an advantage (57+ for [[Rellekka]] east fence shortcut)
+*Combat equipment (using [[Crumble Undead]] and/or a [[salve amulet (i)]] is useful here as all enemies are [[undead]])
+*[[Food]] and [[prayer potion]]s
+*[[Summer pie]]s or [[agility potion]]s
+*[[Stamina potion|Stamina]] or [[energy potions]]
+*Fast travel to Olaf ([[Fairy Rings]] to {{fairycode|dks}}, [[Enchanted Lyre]], [[Fremennik sea boots]], [[House teleport]] if your house is in Rellekka, or [[Slayer ring]] to Fremennik Slayer Dungeon)
+|kills = *[[Skeleton fremennik]] ''(level 40)''
+*[[Ulfric]] ''(level 100)'' ([[safespot]]table)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|start = Talk to [[Launa]] east of [[Varrock]], just south of the [[Earth Altar]].
+|startmap = 3308,3454
+|difficulty = Intermediate
+|description = A rift in the ground has opened up releasing all manner of strange monsters into the lands near the Digsite. A sorrowful mother waits at the top of the rift for her long lost son, who has been missing for 25 years. You can journey down into the rift for an adventure full of twisted monsters all created from the mind of a young boy driven to madness through incarceration.
+|length = Short
+|requirements = The ability to defeat level 45+ enemies.
+|items = *[[Rope]]
+*A [[weapon]]
+|recommended = *{{SCP|Combat|30|link=yes}}
+*[[Food]]
+*[[Digsite pendant]] or [[Digsite teleport]]
+*3-4 [[antidote++]] or [[antipoison]]
+*[[Armour]]
+*A method of attacking with [[Ranged]] or [[Magic]]
+*A fast weapon, such as [[bronze dart]]s
+|kills = *7-8 [[angry unicorn]]s, [[angry bear]]s, [[angry giant rat]]s, and/or [[angry goblin]]s
+*5 [[fear reaper]]s ''(level 42)''
+*6 [[confusion beast]]s ''(level 43)'' — must tank them, cannot kill
+*5 [[hopeless creature]]s ''(level 40)''
+*3 parts of [[Tolna]] ''(level 46)''
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

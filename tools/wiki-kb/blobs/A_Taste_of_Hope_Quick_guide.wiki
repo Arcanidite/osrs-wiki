@@ -1,0 +1,111 @@
+{{Quick Guide}}
+{{clear}}
+==Details==
+{{Quest details page|A Taste of Hope}}
+
+==Walkthrough==
+===Starting out===
+'''Items required:''' ''None'' <br/>
+'''Recommended:''' ''[[Pickaxe]], [[Ectophial]], and 20,000 [[coins]] (to travel quickly to the [[Theatre of Blood]] via [[Andras]])''
+
+Start this quest by speaking to [[Garth (Theatre of Blood)|Garth]], outside [[Ver Sinhaza]] (the [[Theatre of Blood]]), which is located on the eastern side of [[Meiyerditch]].
+[[File:Darkness of Hallowvale - route to lab.png|thumb|upright|right|Path to the base.]]
+{{Checklist|
+*Speak to [[Garth (Theatre of Blood)|Garth]] {{Chat option|1Yes please.}}.
+*Travel to the [[Myreque base|Myreque Hideout]] in [[Meiyerditch]], the following method can be used to arrive there quickly:
+**From the [[Theatre of Blood]], go through the western exit into [[Meiyerditch]].
+**Speak to a nearby [[Vyrewatch]] and ask to be sent to the mines.
+**Mine 15 Daeyalt ores and place them in the nearby minecart. After this, speak to a Vampyre Juvinate to leave. If you have no pickaxe, talk to a miner to obtain a bronze one.
+**You will appear up on the surface. On the right is a map of the route to take to get to the hideout; follow the blue path down to the leftmost green dot.
+**Climb up the ladder in the house with the green dot, jump east to the floorboards, and climb down the stairs into the house with the rightmost green dot.
+**Walk south-east and push the wall to pass through.
+**Press the decorated wall and then open the lumpy rug south-east of it to reveal a hidden trapdoor.
+*Climb down the trapdoor and speak to [[Safalaan]] in the north part of the underground base.
+*Return to the Theatre of Blood.
+}}
+
+===Vampyric Espionage===
+'''Items required''': ''1,000 coins'' <br/>
+'''Recommended''': ''Food (for low HP players)''
+{{Checklist|
+*Attempt to climb up the rubble west of the bank, within [[Ver Sinhaza]].
+*Speak to [[Harpert]] west of the bank and pay him 1,000 coins {{Chat option|1Fine, here's the money.}}.
+*Climb the rubble.
+*Climb the steam vent directly to the north-east when it is inactive.
+**Players may take damage from the boiling hot steam that comes out from the vents. Some food may be necessary for lower level players.
+*Run to the north and jump off the roof.
+*Continue north and climb up the third vent.
+*Run east and climb up and down the roof section to cross the gap.
+*Run east and then south to the red window, look through it. (Be sure you complete the dialogue once the cut-scene is finished, otherwise your quest log won't update. Your health will be restored upon completing the dialogue.) 
+}}
+
+===The myth of Serafina===
+'''Items required:''' ''[[Combat equipment]] (melee recommended), [[food]]'' <br/>
+'''Recommended:''' ''[[Vial of water]], [[Pestle and mortar]] (both obtainable during quest), [[Restore]] or [[Super Restore]]''
+{{Checklist|
+*Return to [[Safalaan]] using the method listed above and speak to him {{Chat option|1I do.}}.
+*Speak to [[Flaygian Screwte]] {{Chat option|2Anything to report?|2Why?}}.
+*Speak to [[Safalaan]].
+*Go to Serafina's house.
+**Upon exiting the hideout, push the wall, climb up the stairs, jump the gap and then climb down the ladder.
+**Head north through the first three doors in a line, then head west until you reach the Meiyerditch wall.
+**Head north-west to reach a broken fountain.
+**Climb down the stairs of the house south of the fountain.
+*Speak to [[Safalaan]].
+*Search the crates and barrels around the basement to obtain [[mysterious meat]], [[mysterious herb]], a vial and a [[pestle and mortar]] (the last two being optional if you brought them with you)
+**If you didn't bring a [[vial of water]], fill the vial at the [[Broken_Fountain|broken fountain]] upstairs.
+*Use the mysterious herb on the vial of water.
+*Use the pestle and mortar on the mysterious meat.
+*Use the [[mysterious crushed meat]] on the [[Unfinished potion (A Taste of Hope)|unfinished potion]].
+*Use the finished [[Potion (A Taste of Hope)|potion]] on the door.
+*Speak to [[Safalaan]] {{Chat option|1Yes.}}.
+*Make the potion again, but this time use the ingredients on the [[Vial of blood (A Taste of Hope)|vial of blood]] instead of a vial of water.
+*Use the [[blood potion]] on the door {{Chat option|1Yes.}}, open and search the chest to receive the [[Old notes (A Taste of Hope)|old notes]].
+*Talk to [[Safalaan]] with the notes {{Chat option|1Here you go.}}.
+{{Instance}}
+*Return to the [[Myreque Hideout#The Meiyerditch Hideout|Myreque hideout]] and speak to [[Safalaan]] to start a cutscene.
+*Defeat the [[abomination]]. ('''Note:''' Complete the post-fight dialogue until the point where the Myreque leave or you'll have to return to the Hideout.)
+}}
+
+===The legendary weapon===
+'''Items required:''' ''[[Emerald]], [[chisel]], 3 [[air rune]]s and 1 [[cosmic rune]], and [[Rod of ivandis]] (very important, you must receive [[Flaygian's notes]] before you can reclaim the [[Rod of Ivandis]] from [[Veliaf]])!'' <br/>
+'''Recommended:''' ''[[Morytania legs 3]] or [[Morytania legs 4|4]] for quick transport to southern [[Meiyerditch]] or Spider cave teleport.''
+{{Checklist|*Teleport to [[Burgh de Rott]], and take the boat to Meiyerditch.
+*Head to [[Old Man Ral]]'s house in the centre of southern [[Meiyerditch]]. Enter the secondary Myreque base via the trapdoor in the north room.
+*Speak to [[Safalaan]].
+*Speak to [[Vertida Sefalatis]].
+*Read [[Flaygian's notes]].
+*If you haven't made another [[Rod of Ivandis]], you can now return to [[Veliaf Hurtz]] at [[Burgh de Rott]] hideout to reclaim it.
+*In Old Man Ral's basement, search the nearby crates to find a [[silver sickle]] (b) and a [[chain]].
+*Attach the emerald to the sickle to create an [[emerald sickle (b)]].
+*Then, cast [[Lvl-2 Enchant]] on the emerald sickle, or use an [[enchant emerald or jade]] [[tablet]] on it.
+*Finally, use the chain on the [[Enchanted emerald sickle (b)]] or the Rod of Ivandis to create the [[Ivandis flail]].
+*Speak to [[Safalaan]].
+}}
+
+===The Taste of Hope===
+'''Items required:''' ''[[Ivandis flail]], melee combat equipment'' <br/>
+'''Recommended:''' ''[[Food]], [[prayer potions]]''
+{{Checklist|
+*Go to the [[Theatre of Blood]] (run east of  [[Old Man Ral]]'s house and go through the Ver Sinhaza castle walls) and speak to [[Kael Forshaw]] by the noticeboard. 
+*Defeat [[Ranis Drakan]].
+**Ranis Drakan is level 233, and can only be harmed by the [[Ivandis flail]]. He will use melee and magic attacks that can hit up to 20. He can also cast [[Blood Barrage]], which can heal him for half of the damage dealt. Occasionally, he will charge an attack and explode, hitting up to 30. The damage can be reduced by running away from him when he is charging the attack.
+**After he reaches 65% and 25% of his health, he'll summon two level 87 [[vyrewatch]] and will fly airborne. He will regularly launch blood bombs at your current square, which can hit up to 30; you can simply walk backwards one square to lure the vyrewatch to the affected square, so the bombs hurt them instead.
+**After killing them, he will go berserk and attack the player. During this last phase, his attacks are much faster and accurate, but only have a max hit of 6. Using [[Protect from Melee]] will easily defeat him in the last phase.
+*Speak to [[Kael Forshaw]] again.
+}}
+===Finishing up===
+{{Checklist|
+*Speak to [[Safalaan]], found in the hideout under [[Old Man Ral]]'s house.
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|A Taste of Hope}}
+
+== Required for completing ==
+Completion of A Taste of Hope is required for the following:
+
+* [[Sins of the Father]]
+* [[A Night at the Theatre]]
+{{A Taste of Hope}}

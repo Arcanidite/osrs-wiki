@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Haunted Mine
+|image = [[File:Haunted Mine reward scroll.png|centre]]
+|qp = 2
+|rewards = *{{SCP|Strength|22,000}} [[Strength]] [[experience]]
+*The ability to make the [[Salve amulet]], which when equipped gives combat bonuses against undead monsters.
+*Access to a [[Abandoned Mine#Shortcut after the quest|shortcut]] to the [[crystal outcrop]]s
+*Access to [[Tarn's Lair]]
+
+Unlocks:
+* [[Treus Dayth]] accessible in the [[Nightmare Zone]].
+}}

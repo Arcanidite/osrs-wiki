@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|name = Land of the Goblins
+|image = [[File:Land of the Goblins reward scroll.png|center]]
+|qp = 2
+|rewards =
+* {{SCP|Agility|8,000}} [[Agility]] experience
+* {{SCP|Fishing|8,000}} [[Fishing]] experience
+* {{SCP|Thieving|8,000}} [[Thieving]] experience
+* {{SCP|Herblore|8,000}} [[Herblore]] experience
+* Access to the [[Goblin Temple]] (with an [[altar]] to recharge prayer points).
+* Access to [[Yu'biusk]], using [[fairy ring]] code {{Fairycode|BLQ}}.
+* Ability to purchase [[plain of mud sphere]]s that transport you to the [[Goblin Cave]].
+* Ability to make [[goblin potion]]s.
+}}

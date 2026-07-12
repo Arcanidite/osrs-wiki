@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = Ernest the Chicken
+|image = [[File:Ernest the Chicken reward scroll.png|centre]]
+|qp = 4
+|rewards =
+*300 [[Coins]]
+*Access to the [[Killerwatt Plane]] ''([[Members]] only)''
+
+}}

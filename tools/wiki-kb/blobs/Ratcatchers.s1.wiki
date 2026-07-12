@@ -1,0 +1,43 @@
+==Details==
+{{Quest details
+|start = Talk to [[Gertrude]] west of [[Varrock]].
+|startmap = 3150,3412
+|difficulty = Intermediate
+|description = Gertrude knows of some ratcatchers in Varrock, pay her a visit and she may tell you of their whereabouts. Perhaps they could show you and your cat a few pointers about rat catching.
+
+Enter the subterranean world of the rat catchers and discover more of your cat's true potential.
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[Icthlarin's Little Helper]]
+***[[Gertrude's Cat]]
+
+*Access to [[Keldagrim]] 
+**[[The Giant Dwarf]] started
+|items = *Any type of [[cat]] or [[hellcat]] (for most of the quest, a cat with a high successful [[rat catch rate]] is recommended, and [[overgrown cat]]s cannot be used there -- during the [[Ratcatchers#Hooknosed Jack|Hooknosed Jack part]] of the quest, any cat with strong [[Cat#Combat_stats|combat stats]] is recommended)
+*4 [[cheese]] (or 4 [[Poisoned cheese]])
+*[[Rat poison]] (if cheese is not already poisoned; can be found in the [[Clock Tower Basement]]), or made during the quest with the following items:
+**[[Vial|Empty vial]]
+**Cleaned [[kwuarm]] (grimy will not work; [[Zahur]] in [[Nardah]] cleans grimy herbs for 200 coins)
+**[[Red spiders' eggs]]
+*Cleaned [[marrentill]] (grimy will not work)
+*[[Unicorn horn dust]]
+*[[Bucket of milk]] or [[Bottomless milk bucket]]
+*[[Catspeak amulet]], '''even if''' [[Dragon Slayer II]] is completed
+*[[Pot of weeds]] (use an [[empty pot]] with [[weeds]])
+*[[Tinderbox]]
+*101 [[coins]] (or 51 [[coins]] with a [[ring of charos (a)]])
+*[[Snake charm]] (obtained from [[The Feud]] or during the quest)
+*1 free inventory space
+|recommended = *8-10 [[fish]] to heal your cat ([[leaping trout]]/[[leaping salmon]] won't work); [[raw karambwanji]] stack and can free space
+*[[Ring of charos (a)]] to spend fewer coins on [[Ali the Snake Charmer]]
+*Fast travel to several locations
+**[[Varrock]] ([[Varrock teleport]], [[Chronicle]] or [[combat bracelet]] to the Champions' Guild)
+**[[Port Sarim]] ([[Rimmington teleport]], [[Teleport to House]] if your house is in Rimmington, [[Explorer's Ring 2]], [[amulet of glory]] to Draynor Village, [[skills necklace]] to the Crafting Guild or [[Fairy Rings]] to {{fairycode|aiq}})
+**[[Pollnivneach]] ([[Pollnivneach teleport]], [[Teleport to House]] if your house is in Pollnivneach or [[Magic Carpet]] transport)
+**[[Ardougne]] ([[Ardougne teleport]])
+**[[Keldagrim]] ([[Blast Furnace]] [[Minigame Teleport]], [[Varrock teleport]], [[ring of wealth]] to the Grand Exchange or [[Fairy rings]] to {{fairycode|dks}} or {{fairycode|dkr}})
+|kills = None, but your cat will have to fight the [[King rat]]
+|leagueRegion = <poem>
+Impossible to complete, as it requires visits to {{LeagueRegion|Asgarnia}}, {{LeagueRegion|Desert}}, {{LeagueRegion|Kandarin}}, and {{LeagueRegion|Fremennik}}
+</poem>
+}}

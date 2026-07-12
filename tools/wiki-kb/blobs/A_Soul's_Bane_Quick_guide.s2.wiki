@@ -1,0 +1,56 @@
+==Walkthrough==
+{{Instance}}
+'''Note:''' If you log out, you lose your progress and appear above the rift next time you log in. However, you can clear a room and exit, with your progress starting over to the last room you cleared. 
+
+===Starting out===
+{{Checklist|
+*From Varrock, head north-east towards the [[Digsite]] talk to [[Launa]] by the rift. {{Chat option|1Would you like me to go down and look for your husband and son?}}
+*Enter the rift with your rope.
+**'''Note''': This will generate a cut scene.  Do not click outside of the text boxes as you will return to the surface.
+}}
+
+===Room 1 - Anger===
+{{Checklist|
+*Use weapons from the rack to kill monsters until rage bar is full. '''(Logging out will reset the rage bar)'''
+**[[Anger sword]] - kills [[Angry unicorn]].
+**[[Anger spear]] - kills [[Angry bear]].
+**[[Anger mace]] - kills [[Angry giant rat]].
+**[[Anger battleaxe]] - kills [[Angry goblin]].
+*When your rage bar is full you'll get a cutscene '''(this gives 40 Attack experience!)'''.
+*Head east to the next cave.
+}}
+
+===Room 2 - Fear===
+{{Checklist|
+*Look inside the dark holes, some will have a [[fear reaper]].
+**''You cannot search the same hole repeatedly. Search the holes going clock-wise for as many rotations as it takes to get your kills.''
+*Kill 5 or 6 reapers to get a cutscene.
+*Enter the black hole to the west.
+}}
+
+===Room 3 - Confusion===
+{{Checklist|
+*Defeat [[confusion beast]]s until you find the one that takes damage. The "fake" ones give combat XP on missed hits and will vanish after 8 hits.
+**''You can disengage a beast by running to the opposite end of the room.''
+**If you're attacking a fake one, you can swap to a fast attacking weapon to kill it faster.
+** If you quickly swap after attacking one(darts/knife), you can check for 2 fakes and only have to hit one of them 8 times
+*Repeat until one door remains to get the cutscene.
+*Enter the remaining confusing door.
+}}
+
+===Room 4 - Hopelessness===
+{{Checklist|
+*Kill all the [[hopeless creature]]s 3 times each.
+*Cross the bridge and prepare to fight Tolna (3 level-46 monsters).
+}}
+
+===Finishing up===
+{{Checklist|
+Note: You must finish the final cutscene/dialogue before attacking the heads or you will be returned to the entrance!
+*Kill the 3 heads.
+**Use [[Protect from Missiles]] to take no damage if ranging, or [[Protect from Melee]] to take no damage if meleeing (if low level).
+*Talk to Tolna.
+*Talk to him again on the surface.
+*'''Congratulations, quest complete!'''
+**'''Note:''' Re-enter the rift once you've completed the quest to complete a task from the [[Varrock Diary#Medium|Varrock Medium Achievement Diary]].
+}}

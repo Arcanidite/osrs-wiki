@@ -1,0 +1,62 @@
+==Walkthrough==
+===Starting out===
+{{Checklist|
+*Talk to the [[Odd Old Man]] in [[Silvarea]], north-east of [[Varrock]], north of the [[Digsite]], during the conversation he will mention boiling the bones in vinegar.. {{Chat option|1|1}}
+}}
+
+===Gathering the bones===
+* Gather the following bones by killing the appropriate monsters, all of which can be easily obtained by walking south of the Odd Old Man, down to Lumbridge, into the Lumbridge Swamp, and finishing on Karamja (use the first suggested location of each monster to follow this path):
+
+{| class="wikitable lighttable align-center-1"
+! colspan="2" |Bone
+!Monster
+!Locations (preferable) - Click to mark
+|-
+|{{plinkt|Giant rat bone}}
+|[[Giant rat]]
+|South-east of [[Varrock]] by the [[South-east Varrock mine|mine]], [[Varrock Sewer]], [[Lumbridge Swamp]], near the [[Port Sarim jail]].
+|-
+|{{plinkt|Unicorn bone}}
+|[[Unicorn]]
+|The forest south-east of [[Varrock]], [[Lumbridge Swamp]], by [[Draynor Village]], south of [[Edgeville]], west of [[Catherby]], on [[Entrana]] (west from the [[Law Altar]]), next to [[fairy ring]] {{Fairycode|bis}} in [[Ardougne Zoo]].
+|-
+|{{plinkt|Bear ribs}}
+|[[Bear]]
+|South of [[Varrock]], above [[Varrock Sewer]], north of [[Falador]], [[Ardougne Zoo]] (with mage/ranged and [[Telekinetic Grab]]) or just south-west of the [[Legends' Guild]] ([[fairy ring]] {{Fairycode|blr}}).
+|-
+|{{plinkt|Ram skull}}
+|[[Ram]]
+|The forest south-east of [[Varrock]], in [[Fred the Farmer|Fred the Farmer's]] sheep pen (north of Lumbridge), north of [[Falador]], the farm near [[Ardougne]] (west of [[fairy ring]] {{Fairycode|blr}}).
+|-
+|{{plinkt|Goblin skull}}
+|[[Goblin]]
+|Both east and west of [[Lumbridge]], north of [[Ardougne]] (the [[goblin]]s at the farm south of Varrock '''do not''' drop the bone).
+|-
+|{{plinkt|Big frog leg}}
+|[[Big frog]]
+|[[Lumbridge Swamp]] - Both the Level 10 and 24 big frogs can be killed to acquire the bone.
+|-
+|{{plinkt|Monkey paw}}
+|[[Monkey]]
+|West of the [[Karamja Volcano]] at the entrance to Brimhaven. south [[Karamja]] (right next to fairy ring {{Fairycode|ckr}}), [[Ardougne Zoo]] (if you choose to go to Ardougne Zoo, you must bring [[ranged]] and/or [[magic]] [[equipment]] and have 33 Magic for [[Telekinetic Grab]]).
+|-
+|{{plinkt|Giant bat wing}}
+|[[Giant bat]]
+|[[Crandor and Karamja Dungeon]] (which can be accessed on the [[Karamja Volcano]]), Taverley Dungeon, outside [[Keep Le Faye]] (north of fairy ring {{Fairycode|blr}}), [[Yanille]] dungeon.
+|}
+
+===Polishing the bones===
+{{Checklist|
+*Talk to [[Fortunato]] located in [[Draynor]] marketplace and buy 8 [[jug of vinegar]].
+*Use all of the [[Jug of vinegar|jugs of vinegar]] with all the pots to make 8 [[pots of vinegar]]. If intending to do [[Rag and Bone Man II]], buy 27 more (35 total) jugs of vinegar to save time.
+*Use all of the bones with your pots of vinegar to get 8 [[bones in vinegar]].
+*Withdraw a tinderbox and either 8 [[logs]] or an [[axe]]
+* With the logs in your inventory, return to the [[Odd Old Man]]
+*For each bone in vinegar do:
+**Place a set of logs on the pot-boiler next to the old man.
+**Use a bone in vinegar with the pot-boiler.
+**Light the set of logs with your [[tinderbox]].
+**Wait 12 seconds until the fire is consumed and remove the pot from the pot-boiler. (Alternatively, hop worlds after lighting the logs for them to be finished when you log back in)
+*Talk to the [[Odd Old Man]].
+*'''Congratulations, quest complete!'''
+}}

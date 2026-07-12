@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|name = Skippy and the Mogres
+|description = Help a drunken man haunted by the curse of the Mogres.
+|startmap = 2977,3195
+|start = Speak to [[Skippy]] located south-east of the town of [[Rimmington]].
+|update = Mogres, Lizards, Pet Fish, Potions and Potatoes!
+|difficulty = Novice
+|length = Very Short
+|members = Yes
+|requirements = *{{SCP|Cooking|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = *[[Bucket of water]]
+*[[Nettle tea]]
+**[[Nettle-water]]
+***[[Bowl of water]]
+***[[Nettles]] (more than one with low Cooking level, as it can fail due to over boiling)
+****[[Gloves]] to pick the nettles ([[leather gloves]] are obtainable during the quest)
+*[[Hangover cure]] or the ingredients to make one:
+**[[Chocolate dust]]
+***[[Chocolate bar]]
+***[[Knife]] or [[pestle and mortar]]
+**[[Bucket of milk]]
+**[[Snape grass]]
+|recommended = *{{SCP|Slayer|32|link=yes}} {{Boostable|yes}} and [[fishing explosive]]s to slay [[mogre]]s after the miniquest
+|leagueRegion = {{LeagueRegion|Asgarnia}} - location requirement
+}}

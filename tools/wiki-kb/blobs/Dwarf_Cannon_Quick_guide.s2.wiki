@@ -1,0 +1,27 @@
+==Walkthrough==
+===Getting started===
+{{Checklist|*Talk to [[Captain Lawgof]] by the [[Coal Trucks|Coal truck mining site]] west of [[Seers' Village]]. {{Chat option|1Yes.}} 
+([[Fairy ring]] code {{Fairycode|ALS}}, run east and squeeze-through the loose railing and continue west. Alternatively, use a [[skills necklace]] teleport to the Fishing Guild, run west and then north.)}}
+
+===Repair and retrieval===
+{{Checklist|*Pick up the [[hammer]] in the house to the east if you do not have one.
+*Fix the six bent railings of the west and south sides of the fence.
+*Talk to [[Captain Lawgof]].
+*Go to the tower south of the gate.
+*Climb up two ladders and take the [[Dwarf remains]].
+*Talk to Captain Lawgof.
+*Run south (or teleport to the Fishing Guild) and enter the cave at the south-east corner of the [[Fishing Guild]].
+*In the cave, go as far north-west as possible. In the north-westernmost room, search the [[Crate (Dwarf Cannon)|northernmost crate]] by the east wall to find [[Lollk]]. You don't need to finish the conversation. 
+*Talk to Captain Lawgof. {{Chat option|1Okay, I'll see what I can do.}}
+*Use the toolkit you got from Captain Lawgof on the broken multicannon next to him. (''In this order:'')
+**Use the hook tool (right) on the spring.
+**Use the pliers (middle) on the safety switch at the bottom.
+**Use the tooth tool (left) on the gear located at the bottom of the hammer.
+*Talk to Captain Lawgof. {{Chat option|2Okay then, just for you!}}
+**'''Note:''' This conversation must be completely finished.}}
+
+===Finishing up===
+{{Checklist|*Go to the [[Dwarven Black Guard]] camp north-east of [[Falador]] / south of [[Ice Mountain]] / west of Barbarian village.
+*In the outpost, talk to [[Nulodion]]. He is in the house on the west side of the mining camp.
+*Return to [[Captain Lawgof]], bring [[Nulodion's notes]] and your [[cannonball mould]] with you.
+*'''Congratulations, quest complete!'''}}

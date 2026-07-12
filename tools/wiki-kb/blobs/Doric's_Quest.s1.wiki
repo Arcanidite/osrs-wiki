@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|start = Talk to [[Doric]] in the small house north of [[Falador]], just outside the east gate of [[Taverley]].
+|startmap = 2952,3451
+|difficulty = Novice
+|description = Doric the dwarf is happy to let you use his anvils but first he would like you to run an errand for him.
+|length = Very Short
+|requirements = None
+|items = 
+* 6 [[clay]] (not [[soft clay]])
+* 4 [[copper ore]]s
+* 2 [[iron ore]]s
+|recommended = 
+* [[Pickaxe]] and {{SCP|Mining|15|link=yes}} {{Boostable|yes}} if you wish to mine the ores yourself ([[bronze pickaxe]] obtained during the quest)
+|ironman = 
+*A method of obtaining [[iron ore]]:
+**{{SCP|Mining|15|link=yes}} {{Boostable|yes}} to mine it
+**As a 1/20 drop from [[Flesh Crawlers]] in the [[Stronghold of Security]]
+**As a 1/8.667 drop from [[Mind Golem]]s in the [[Ruins of Camdozaal]] (requires {{SCP|Quest}} [[Below Ice Mountain]])
+**As a drop from [[Iron ore#Item sources|other monsters]]
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

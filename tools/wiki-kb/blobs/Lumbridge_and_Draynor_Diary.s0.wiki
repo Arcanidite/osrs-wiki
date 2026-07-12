@@ -1,0 +1,18 @@
+{{External|rs=Lumbridge achievements}}
+{{Infobox Achievement Diary
+|name = Lumbridge & Draynor Diary
+|image = [[File:Lumbridge & Draynor Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Lumbridge]], [[Draynor]], [[Al Kharid]], [[Dorgesh-Kaan]] and [[Zanaris]]
+|members = Yes
+|reward = [[Explorer's ring|Ring]]
+|taskmasters = [[Hatius Cosaintus]]
+|leagueRegion = Misthalin
+}}
+{{Map|name=Lumbridge & Draynor Diary|x=3234|y=3214|r=3|width=250|height=250|caption=Hatius Cosaintus's location|align=left|mtype=square}}
+The '''Lumbridge & Draynor Diary''' is an [[Achievement Diary]] whose tasks revolve around areas in and around [[Lumbridge]], such as [[Draynor Village]], [[Al Kharid]], [[Dorgesh-Kaan]], and [[Zanaris]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from [[Hatius Cosaintus]] east of [[Lumbridge Castle]]'s courtyard in [[Lumbridge]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

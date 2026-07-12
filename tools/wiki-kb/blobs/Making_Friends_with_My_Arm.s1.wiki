@@ -1,0 +1,56 @@
+==Details==
+{{Quest details
+|start = Talk to [[Burntmeat]] in the [[Troll Stronghold (location)|Troll Stronghold's]] kitchen.
+|startmap = 2841,10060,plane:1
+|difficulty = Master
+|description = My Arm, the troll from ''My Arm's Big Adventure'', must embark on another journey of discovery. This time, you'll be escorting him to Weiss, a newly discovered troll town in the far north of the world, so he can share his wisdom ''*cough*'' with the inhabitants, in exchange for learning about their inventions.
+
+Life's journeys can take us to some strange places, but My Arm is about to face the greatest adventure of all - true love. Plus, they'd like him to kill the Wise Old Man of Draynor Village, which doesn't sound like a clever move. Can you help My Arm get a grip on the situation and woo the fair Snowflake over the objections of her father, Mother? Or will My Arm be left to a loveless life of loneliness?
+|length = Medium
+|requirements = *{{SCP|Firemaking|66|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Mining|72|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Construction|35|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+*{{SCP|Agility|68|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*It is beneficial to have a higher [[Agility]] level.
+*Completion of the following quests:
+**[[My Arm's Big Adventure]]
+***[[Eadgar's Ruse]]
+****[[Druidic Ritual]]
+****[[Troll Stronghold]]
+*****[[Death Plateau]]
+***[[The Feud]]
+***[[Jungle Potion]]
+**[[Swan Song]]
+***[[One Small Favour]]
+****[[Rune Mysteries]]
+****[[Shilo Village]]
+***[[Garden of Tranquillity]]
+****[[Creature of Fenkenstrain]]
+*****[[Priest in Peril]]
+*****[[The Restless Ghost]]
+**[[Cold War]]
+**[[Romeo & Juliet]]
+|items = *[[Saw]]
+*[[Bolt of cloth]]
+*5 [[mahogany plank]]s
+*[[Cadava berries]]
+*[[Bucket of water]] (obtainable during quest)
+*[[Rope]] (obtainable during quest)
+*[[Pickaxe]] (obtainable during quest)
+*[[Hammer]] (obtainable during quest)
+*[[Combat equipment]] (preferably [[Melee]] or [[Ranged]])
+*[[Climbing boots]] (if not using Trollheim teleports)
+|recommended = *{{SCP|Combat|65|link=yes}}
+*A teleport to [[Draynor Village]]
+*Access to [[fairy ring]]s
+*[[Stamina potion]]s
+*[[Trollheim]] teleports
+*A [[Varrock]] teleport
+*A [[Rellekka]] teleport
+|kills = *[[Don't Know What]] (Level 163)
+*[[Mother]] (level 198)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

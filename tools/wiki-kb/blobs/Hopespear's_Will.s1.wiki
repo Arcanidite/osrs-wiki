@@ -1,0 +1,29 @@
+==Details==
+{{Quest details
+|description = Help an old goblin spirit return the remains of his successors to the lost goblin homeland.
+|start = Speak to [[Hopespear]] in the crypt of the [[Goblin Temple]].
+|startmap = 3742,4387
+|difficulty = Master
+|length = Short
+|members = Yes
+|requirements = * Started [[The Restless Ghost]]
+* Completion of [[Desert Treasure I]]
+* Completion of [[Fairytale II - Cure a Queen]]
+* Completion of [[Land of the Goblins]]
+* {{SCP|Prayer|50|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+|items = * [[Ghostspeak amulet]] or [[Morytania legs 2]] or better
+* [[Ring of visibility]] or [[ring of shadows]]
+* [[Goblin potion]]
+* [[Dramen staff|Dramen]] or [[lunar staff]] (unless the [[Lumbridge & Draynor Diary]] has been fully completed)
+* Food and potions to defeat 5 enemies without armour, weapons, or magic
+|recommended = * Combat potions
+* {{SCP|Combat|90|link=yes}}
+* [[Plain of mud sphere]] or charged [[skills necklace]]
+* Quick access to [[fairy rings]]
+|kills = * [[Snothead]] (level 32)
+* [[Snailfeet]] (level 56)
+* [[Mosschin]] (level 88)
+* [[Redeyes]] (level 121)
+* [[Strongbones]] (level 184)
+|leagueRegion = Not completable, as prerequisite quests require access to Misthalin.
+}}

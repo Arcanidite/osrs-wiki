@@ -1,0 +1,34 @@
+==Walkthrough==
+{{Checklist|*Talk to [[Veronica]]. {{Chat option|1Aha, sounds like a quest. I'll help.}}
+*Enter the manor.
+*Pick up [[poison (item)|poison]] from the room south of the kitchen, on the west side of the {{FloorNumber|uk=0}}.
+*Pick up the [[fish food]] on the {{FloorNumber|uk=1}}, in the room south of the stairs containing the [[ghost]].
+*Use the fish food on the poison to make [[poisoned fish food]].
+*Search the bookcase on the western {{FloorNumber|uk=0}}.
+[[File:Ernest the Chicken - Oil can map.png|frame|right]]
+*Climb down the ladder and complete the lever puzzle.
+**Pull levers B then A down.
+**Enter door 1.
+**Pull lever D down.
+**Enter door 1.
+**Pull levers B, then A up.
+**Enter doors 3, 4, and 5.
+**Pull levers E, then F down.
+**Enter doors 6 and 7.
+**Pull lever C down.
+**Enter doors 7 and 6.
+**Pull lever E up.
+**Enter doors 6, 8, and 3.
+**Go through door 9 and grab the [[oil can]].
+*Go up the ladder and pull the lever.
+*Pick up the spade in the far eastern room on the {{FloorNumber|uk=0}}.
+*Exit out the back door in the same room.
+*Go north around the back of the manor to the west to the compost heap.
+*Search the [[compost heap]] to get a [[key (Ernest the Chicken)|key]].
+*Go south and use the poisoned fish food on the [[Fountain (Draynor Manor)|fountain]] in the south-west corner of the grounds.
+*Search the poisoned fountain to retrieve a [[pressure gauge]].  	
+*Return to the manor and pick up the [[rubber tube]] in the room north of the stairs on the {{FloorNumber|uk=0}} containing an aggressive [[Skeleton (Draynor Manor)|skeleton]].
+*Climb up the stairs, then climb up the spiral staircase to the west.
+*Talk to [[Professor Oddenstein]]. {{Chat option|1I'm looking for a guy called Ernest.|2Change him back this instant!}}
+*Talk to him again to give him the items.
+*'''Congratulations, quest complete!'''}}

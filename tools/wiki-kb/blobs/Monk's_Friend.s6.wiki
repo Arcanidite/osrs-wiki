@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = Monk's Friend
+|image = [[File:Monk's Friend reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+* {{SCP|Woodcutting|2,000}} [[Woodcutting]] [[experience]]
+*8 [[Law rune]]s
+*Brother Omad will throw parties for you by speaking to him.
+}}

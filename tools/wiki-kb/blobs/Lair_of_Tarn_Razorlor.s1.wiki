@@ -1,0 +1,23 @@
+==Details==
+{{Quest details
+|start = Enter the Lair of Tarn Razorlor.
+|startmap = 3424,9661
+|difficulty = Experienced
+|length = Medium
+|description = Explore the lair of [[Tarn Razorlor]] within the Haunted Mine and obtain an upgrade to the salve amulet.
+|members = Yes
+|requirements =
+*{{SCP|Slayer|40|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*The [[Haunted Mine]] quest is required to access [[Tarn's Lair]].
+|items = *100 [[coins]] required each time you use the banker [[Odovacar]] (optional)
+|kills = Level 69 mutant [[Tarn]], followed by a level 69 ghost [[Tarn]]
+|recommended =
+*{{SCP|Combat|50|link=yes}}
+*{{SCP|Prayer|43|link=yes}} to use [[Protect from Melee]]
+*[[Slayer ring]] (allows one to skip the "Getting to Tarn Razorlor" section and start right at entrance into Tarn's Lair)
+*A [[stamina potion]] if manually navigating Tarn's Lair
+*Combat equipment
+*Food
+*Multiple [[prayer potion]]s (Prayer is rapidly drained while fighting Tarn)
+|leagueRegion = {{LeagueRegion|Morytania}} - location requirement
+}}

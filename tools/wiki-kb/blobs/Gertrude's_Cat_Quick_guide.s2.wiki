@@ -1,0 +1,13 @@
+==Walkthrough==
+{{Checklist|notoggleparent=true|*Talk to [[Gertrude]]. {{Chat option|1Yes}}
+*Pick up [[doogle leaves]] from behind Gertrude's house and use them on your [[raw sardine]] to make [[seasoned sardine]].
+*Go to [[Varrock Square]]'s newsstand and talk to either [[Shilop]] or [[Wilough]], you need 100 coins. {{Chat option|2What will make you tell me?|2Okay then, I'll pay.}}
+*Go to the [[Lumber Yard]] north-east of [[Varrock]] and climb-over the broken fence.
+**Chop down a dying tree to complete an [[easy Varrock Diary]] task.
+*Go up the ladder in the middle of the Lumber Yard.
+*Use a [[bucket of milk]] then use a [[Seasoned sardine]] on [[Gertrude's cat (NPC)|Gertrude's cat]].
+*Try to pick her up again then go down the ladder.
+*Search the [[crate (Gertrude's Cat)|crates]] with a yellow "Search crate" option and a yellow "Mew!" above them until you find [[Fluffs' kitten]]. (Searching the same crate repeatedly will not work.)
+*Go back up the ladder and use [[Fluffs' kitten]] on [[Gertrude's cat (NPC)|Gertrude's cat]].
+*Return to Gertrude.
+*'''Congratulations, quest complete!'''}}

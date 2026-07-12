@@ -1,0 +1,74 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Lumbridge & Draynor" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Cast [[Bones to Peaches]] in [[Al Kharid palace]].
+''Note: Using the [[Bones to peaches (tablet)|Bones to Peaches tablet]] does not count.
+|
+*{{SCP|Magic|60|link=y}}
+*Access to [[Bones to Peaches]] via the [[Mage Training Arena]]
+*[[Bones]] and means to cast [[Bones to Peaches]] ({{RuneReq|Nature=2|Earth=4|Water=4}})
+|-
+|2. Squeeze past the [[Jutting_wall_(Zanaris)#Medium|jutting wall]] on your way to the [[cosmic altar]].
+|
+*{{SCP|Quest}} Completion of [[Lost City]]
+*{{SCP|Agility|46|link=y}}
+*[[Dramen staff|Dramen]] or [[Lunar staff]] to enter [[Zanaris]], or access to the [[Abyss]]
+|-
+|3. Craft 56 [[Cosmic runes]] simultaneously from Essence without the use of [[Runic extract|Extracts]].
+|
+*{{SCP|Quest}} Completion of [[Lost City]]
+*{{SCP|Runecraft|59|link=y}}
+*28 [[Pure essence|pure]] or [[daeyalt essence]] (less may suffice with [[Raiments of the Eye]] pieces){{efn|To guarantee the task completes, bring at least 26 essence with 1 piece, 24 with 2 pieces, 22 with 3 pieces, or 19 with the full [[Raiments of the Eye]] set.}}
+*Access to the [[Cosmic Altar]] ([[cosmic talisman]]/[[Cosmic tiara|tiara]], [[catalytic talisman]]/[[Catalytic tiara|tiara]], or the [[Abyss]])
+|-
+|4. Travel from [[Lumbridge]] to [[Edgeville]] on a [[Waka Canoe]].
+|
+*{{SCP|Woodcutting|57|link=y}}
+*Any [[axe]]
+|-
+|5. Collect at least 100 [[Tears of Guthix (minigame)|Tears of Guthix]] in one visit.
+''Note: This [[Tears of Guthix (minigame)|minigame]] can only be tried once a week, so be aware. Each [[quest point]] increases the time you can spend collecting tears by one [[game tick]]. It's recommended to have at least 150 quest points before trying this task. See the [[Tears of Guthix (minigame)]]'' page ''for other strategies you can use to maximize points.'' 
+|
+*{{SCP|Quest}} Completion of [[Tears of Guthix (quest)|Tears of Guthix]]
+*[[Games necklace]] recommended for quick access
+|-
+|6. Take the [[Dorgesh-Kaan–Keldagrim train system|train]] from [[Dorgesh-Kaan]] to [[Keldagrim]].
+|
+*{{SCP|Quest}} Completion of [[Another Slice of H.A.M.]]
+|-
+|7. Purchase some [[Barrows gloves]] from the [[Culinaromancer's Chest|Lumbridge bank chest]]{{sic}}.
+|
+*{{SCP|Quest}} Full completion of [[Recipe for Disaster]]
+*130,000 [[coins]]
+|-
+|8. Pick some [[Belladonna]] from the [[farming patch]] at [[Draynor Manor]].
+|
+*{{SCP|Farming|63|link=y}}
+*[[Belladonna seed]], [[seed dibber]], [[spade]], [[rake]] and any [[gloves]]
+|-
+|9. Light your [[mining helmet]] in the [[Lumbridge castle]] basement.
+|
+*{{SCP|Firemaking|65|link=y}}
+*[[Tinderbox]] and [[mining helmet]]
+|-
+|10. Recharge your [[prayer]] at [[Emir's Arena]] with [[Smite]] activated.
+|
+*{{SCP|Prayer|52|link=y}}
+|-
+|11. Craft, string and enchant an [[Amulet of Power]] in [[Lumbridge]].
+''Note: Doing this upstairs in [[Lumbridge Castle]] does not count.''
+|
+*{{SCP|Crafting|70|link=y}} and {{SCP|Magic|57|link=y}}
+*[[Gold bar]], [[Diamond|cut diamond]], [[amulet mould]], [[ball of wool]]
+*Means to cast [[Lvl-4 Enchant]] ({{RuneReq|Cosmic=1|Earth=10}})
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Explorer's ring 3]]:
+**Can restore 50% of [[Energy|run energy]] four times a day
+**Unlimited teleports to the [[cabbage]] patch of [[South Falador Farm]]
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 experience in any skill level of at least level 50
+*10% increased experience from [[Tears of Guthix (minigame)|Tears of Guthix]]

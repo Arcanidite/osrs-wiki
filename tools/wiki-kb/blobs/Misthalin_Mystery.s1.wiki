@@ -1,0 +1,15 @@
+==Details==
+{{Quest details
+|start = Talk to [[Abigale]] or [[Hewey]] in the south-eastern corner of [[Lumbridge Swamp]], near the [[fishing spots]].
+|startmap = 3236,3155
+|difficulty = Novice
+|description = A woman cries as a man lays dying, desperately they beg you to stop a cryptic killer before their friends suffer a similar fate.
+|length = Short
+|items = * [[Bucket]] (obtainable during quest)
+*[[Tinderbox]] (obtainable during quest)
+*[[Knife]] (obtainable during quest)
+|kills = None
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

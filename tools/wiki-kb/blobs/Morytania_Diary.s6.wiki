@@ -1,0 +1,82 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Morytania" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Enter the [[Kharyrll Portal]] in your [[POH]].
+''Note: Teleporting to [[Kharyrll]] from a more expensive [[portal nexus]] also counts for this task. Higher-tier materials can optionally be used for the [[Portal space|portal]] and [[Portal_chamber#Centrepiece|centrepiece]].''
+|
+*{{SCP|Quest}} Completion of [[Desert Treasure I]]
+*{{SCP|Magic|66|link=y}} and {{SCP|Construction|50|link=y}}
+*100,000 [[coins]], 2 [[limestone brick]]s, 3 [[teak plank]]s, [[hammer]], and [[saw]] to construct a [[portal chamber]] with an activatable [[teak portal]] and [[teleport focus]], if you haven't already
+*200 [[law rune]]s and 100 [[blood rune]]s to direct a portal to [[Kharyrll]], or 2000 law runes and 1000 blood runes if adding the portal to a [[portal nexus]] instead
+|-
+|2. Climb up the [[Spikey_chain_(Slayer_Tower)#Advanced|advanced spike chain]] within [[Slayer Tower]].
+''Note: This chain is located on the {{FloorNumber|uk=1}} near the [[Infernal Mage]]s, leading to the {{FloorNumber|uk=2}} to near the [[Nechryael]].''
+|
+*{{SCP|Agility|71|link=y}} {{Boostable|yes}}
+*[[Slayer helmet]] or [[nose peg]] recommended against the [[aberrant spectre]]s, when climbing the [[Spikey_chain_(Slayer_Tower)|spikey chain]] on the {{FloorNumber|uk=0}} as a shortcut to the [[Spikey_chain_(Slayer_Tower)#Advanced|advanced spikey chain]]
+*Only a successful climb (not taking damage) will count as task completed.
+|-
+|3. Harvest some [[Watermelon]] from the [[Allotment patch]] on [[Harmony Island]].
+|
+*{{SCP|Quest}} Started [[The Great Brain Robbery]]
+*{{SCP|Farming|47|link=y}}
+*3 [[watermelon seed]]s, [[spade]], [[seed dibber]] (or [[Barbarian Farming]]), and a [[rake]]
+*[[Ultracompost]] recommended
+|-
+|4. Chop and burn some [[mahogany logs]] on [[Mos Le'Harmless]].
+|
+*{{SCP|Quest}} Completion of [[Cabin Fever]]
+*{{SCP|Woodcutting|50|link=y}} and {{SCP|Firemaking|50|link=y}}
+*Any [[axe]] and a [[tinderbox]]
+*[[Witchwood icon]] and a [[light source]] (if [[Fire of Eternal Light]] has not been built) recommended
+|-
+|5. Complete a [[Temple Trekking|temple trek]] with a hard companion.
+''Note: Completion of [[Darkness of Hallowvale]] unlocks the reverse route. It's not necessary to complete any events for this task. In Deadman Mode, the task is instead "Speak to a hard companion about completing a Temple Trek."''
+|
+*{{SCP|Quest}} Completion of [[In Aid of the Myreque]]
+*See the [[Temple_Trekking#Recommendations|recommendations]]
+|-
+|6. Kill a [[cave horror|Cave Horror]].
+|
+*{{SCP|Quest}} Completion of [[Cabin Fever]]
+*{{SCP|Slayer|58|link=y}}
+*[[Witchwood icon]] and a [[light source]] 
+|-
+|7. Harvest some [[Mushroom|Bittercap Mushrooms]] from the patch in [[Canifis]].
+|
+*{{SCP|Farming|53|link=y}}
+*[[Mushroom spore]], [[seed dibber]] (or [[Barbarian Farming]]), and a [[rake]]
+*[[Ultracompost]] recommended
+|-
+|8. Pray at the [[Nature Grotto|Altar of Nature]] with [[Piety]] activated.
+|
+*{{SCP|Quest}} Completion of [[Nature Spirit]] and the [[Knight Waves Training Grounds]] (which requires completion of [[King's Ransom]])
+*{{SCP|Prayer|70|link=y}} and {{SCP|Defence|70|link=y}} (neither [[Temporary skill boost|boostable]])
+*[[Dramen staff|Dramen]] or [[Lunar staff]] recommended to travel to [[Fairy ring]] code {{Fairycode|bip}}
+|-
+|9. Use the shortcut to get to the bridge over [[River Salve|the Salve]].
+''Note: You have to use the shortcut to go downwards for this task, not upwards.
+|
+*{{SCP|Agility|65|link=y}}
+|-
+|10. Mine some [[Mithril ore]] in the [[Abandoned Mine]].
+|
+*{{SCP|Quest}} Completion of [[Haunted Mine]]
+*{{SCP|Mining|55|link=y}}
+*Any [[pickaxe]]
+*[[Crystal-mine key]] recommended (allows use of veins on Level 2, right next to the secret entrance)
+|}
+===Rewards===
+*[[Morytania legs 3]]:
+**Unlimited teleports to [[Burgh de Rott]]
+*[[Bonecrusher]], claimable from a [[ghost disciple]] while wearing a [[ghostspeak amulet]] or [[Morytania legs 3]]+
+**An additional item that, when carried, causes [[Remains#Bones|bones]] dropped from killed monsters to be automatically buried, granting half the usual [[Prayer]] experience that would have been granted for burying them normally
+**This item is [[Bonecrusher#Charging|charged]] with a small amount of [[ecto-token]]s
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 experience in any skill of at least level 50
+*[[Robin]] exchanges 26 [[Remains#Bones|bones]] of any kind daily for a [[bucket of slime]] and a pot of [[bonemeal]] each, up from 13
+*Double [[Mort myre fungus|Mort myre fungi]] when casting [[Bloom]]
+*50% more [[Prayer]] experience from burning shade remains
+*50% more [[runes]] from the [[Barrows chest]]
+*7.5% more [[Slayer]] experience in the [[Slayer Tower]] while on a [[Slayer task]] (instead of 5%)

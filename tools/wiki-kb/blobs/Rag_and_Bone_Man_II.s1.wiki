@@ -1,0 +1,48 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Odd Old Man]] in [[Silvarea]] north-east of [[Varrock]], by the [[Limestone Mine]].
+|startmap = 3362,3507
+|difficulty = Experienced
+|description = An archeological bone gathering quest. Requires the start and/or completion of multiple quests. Lots of creatures and animals necessary to be scavenged for specific bones, that will then need to be cleaned and given to the [[Odd Old Man]] for his marvelous collection of bone remains.
+|length = Medium
+|members = Yes
+|requirements = *{{SCP|Slayer|40|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Defence|20|link=yes}} {{Boostable|no}} {{Questreqstart|}} to wield a [[mirror shield]] to kill a [[basilisk]] (though not necessary; see below)
+*Completed [[Rag and Bone Man I]] {{Questreqstart|yes}}
+*Completed [[Skippy and the Mogres]] {{Questreqstart|no}}
+*Completed [[Horror from the Deep]] or partial completion of [[The Fremennik Trials]] {{Questreqstart|no}}
+*Partial completion of [[Creature of Fenkenstrain]] {{Questreqstart|no}}
+*Partial completion of [[Waterfall Quest]] {{Questreqstart|no}}
+*The ability to kill several high-level monsters
+|items = *27 [[pot]]s
+*27 [[jugs of vinegar]] (bought from [[Fortunato]] for 27 coins)
+*27 sets of [[logs]] (any logs - normal logs can be obtained on the path just below the [[Odd Old Man]]'s hut if you bring an [[axe]]).
+*[[Tinderbox]]
+*[[Light source]]
+*[[Dusty key]] (if under {{SCP|Agility|70|link=yes}})
+*[[Rope]]
+*Combat gear to kill [[zogre]]s (an [[ogre composite bow]] with [[brutal arrow]]s or runes for [[Crumble Undead]] casts is advised)
+'''Slayer equipment:'''
+*[[Ice cooler]]s
+*[[Fishing explosive]]s
+*[[Mirror shield]] or [[V's shield]] (unless using a workaround - see guide for how to get around using this)
+|recommended = *{{SCP|Combat|40|link=yes}}
+*[[Anti-dragon shield]] (if concerned about [[blue dragon]]s while in [[Taverley Dungeon]])
+*Partial completion of [[Zogre Flesh Eaters]] for access to [[brutal arrows]] for killing [[zogres]]
+*[[Inoculation bracelet]], or [[Relicym's balm]] or [[Sanfew serum]] (to deflect or cure disease when killing zogres)
+*[[Dramen staff]] or [[lunar staff]] would save a great deal of time by using [[fairy rings]]
+*[[Digsite pendant]]
+*[[Ectophial]]
+*[[Fenkenstrain's Castle Teleport]]
+*[[Ring of dueling]]
+*[[Enchanted lyre]]
+*[[Games necklace]]
+*[[Log basket]] for just 1 trip with bones in vinegar
+*[[Runes]] or [[Magic Tablet|tablets]] for teleporting all across [[Gielinor]] (if no better travelling method is available)
+'''Slayer Equipment:'''
+*[[Spiny helmet]] or [[Slayer helmet]]
+|kills = Several (27): see below.
+|leagueRegion = <poem>
+Impossible to complete, as it requires visits to {{LeagueRegion|Asgarnia}}, {{LeagueRegion|Kandarin}}, {{LeagueRegion|Desert}}, {{LeagueRegion|Fremennik}}, and {{LeagueRegion|Morytania}}. As such, players are advised not to start the quest, so that the quest-specific bones do not pollute the ground. If the player has started the quest, the pollution can be avoided by keeping the bone in the inventory or bank.
+</poem>
+}}

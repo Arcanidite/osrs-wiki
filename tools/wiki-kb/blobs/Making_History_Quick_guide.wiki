@@ -1,0 +1,58 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Making History}}
+
+==Walkthrough==
+===Starting out===
+{{Checklist|*Walk to or use the [[necklace of passage]] to teleport to the [[outpost]] north-west of Ardougne.
+*Talk to [[Jorral]]. {{Chat option|1Tell me more.|1Ok, I'll make a stand for history!}}
+*Complete the next 3 segments in any order.
+}}
+
+===Erin the silver merchant===
+{{Map|2442,3139|mtype=square|r=4|align=right|width=250|height=250|caption=The location to dig for the chest.}}
+{{Checklist|
+*Talk to the [[Silver merchant]] in the [[East Ardougne]] market. {{Chat option|2Ask about the outpost.}}
+*Dig with your spade to find the [[Chest (Making History)|chest]] buried north of [[Castle Wars]].
+*Open the chest with the [[enchanted key]] to get a journal.
+}}
+
+===Droalak the Ghost===
+{{Checklist|
+*Equip your [[Ghostspeak amulet]] and talk to [[Droalak]] outside the Port Phasmatys general store.
+*In the building east of the general store, directly south of the pub, give [[Melina]] a strung sapphire amulet.
+*Talk to Droalak to receive a scroll.
+}}
+
+===Dron the Warrior===
+{{Checklist|*Go to [[Rellekka]] and talk to [[Blanin]] east of the longhall.
+*Talk to [[Dron]] north of the longhall. {{Chat option|3I'm after important answers.|2Why, you're the famous warrior Dron!}} Answers:
+**Quick answers: {{Chat option|2An iron mace|1Breakfast|2Lunch|1Bunnies|2Red|236|18|3Fifth and Fourth|3North East side of town|1Blanin|1Fluffy|112, but what does that have to do with anything?}}
+**He wields an '''iron mace''' in battle. {{Chat option|2An iron mace}}
+**He eats '''rats''' for '''breakfast'''. {{Chat option|1Breakfast}}
+**He eats '''kittens''' for '''lunch'''. {{Chat option|2Lunch}}
+**He eats '''bunnies''' for '''tea'''. {{Chat option|1Bunnies}}
+**His favourite drink is '''red''' spider blood. {{Chat option|2Red}}
+**He is '''36 years, 8 months (21 days) old.''' {{Chat option|236|18}}
+**He studies the '''Fifth''' and '''Fourth''' ages. {{Chat option|3Fifth and Fourth}}
+**His house is on the '''north-east side''' of town. {{Chat option|3North East side of town}}
+**His brother's name is '''Blanin'''. {{Chat option|1Blanin}}
+**His pet cat is named '''Fluffy'''. {{Chat option|1Fluffy}}
+**5 plus 7 is '''12''' {{Chat option|112, but what does that have to do with anything?}}
+}}
+
+===Reporting back===
+{{Checklist|
+*Talk to Jorral, back at the outpost, with the scroll and journal.
+*Talk to [[King Lathas]], located on the {{FloorNumber|uk=1}} of the [[Ardougne Castle]]. {{Chat option|1F}}
+*Talk to Jorral, back at the outpost.
+*'''Congratulations, quest complete!'''
+}}
+==Rewards==
+{{Quest rewards page|Making History}}
+
+{{Making History}}
+
+[[Category:Quick guides]]

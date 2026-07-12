@@ -1,0 +1,23 @@
+==Details==
+{{Quest details
+|start = Talk to [[Redbeard Frank]] at the northernmost dock at [[Port Sarim]], just outside [[The Rusty Anchor]].
+|startmap = 3052,3252
+|difficulty = Novice
+|description = Redbeard Frank knows the location of pirate treasure, but he'll only part with the knowledge for a bottle of [[Karamjan rum]].
+|length = Very Short
+|requirements = Able to defeat or run away from a [[Combat level]] 4 [[gardener]].
+|items = *[[Karamjan rum]] (obtainable during the quest for 30 coins)
+*[[White apron]] (obtainable during the quest in Port Sarim at [[Gerrant's Fishy Business.]])
+*60 [[coins]] (only 30 are needed if using a [[Ring of charos|Ring of charos(a)]])
+*10 [[banana]]s (obtainable during the quest)
+*[[Spade]] (obtainable during the quest)
+|recommended = *Fast travel to several locations
+**[[Port Sarim]] to start the quest - [[Amulet of glory]] to [[Draynor Village]] or [[Explorer's ring]] 2-4 or [[Teleport to House]] (Rimmington) or [[Skills necklace]] to [[Crafting Guild]]
+**[[Varrock]] (1 trip) - [[Varrock Teleport]] or [[Chronicle]] or [[Ring of wealth]] or [[Skills necklace]]
+**[[Falador Park]] (1 trip) - [[Ring of wealth]] or [[Falador Teleport]]
+|kills = [[Gardener]] ''(level 4, optional)''
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}

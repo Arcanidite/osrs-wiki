@@ -1,0 +1,121 @@
+{{External|rs}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Elemental Workshop I
+|number = 53
+|image = [[File:Elemental Workshop I.png|300px]]
+|release = [[2 June]] [[2004]]
+|update = Elemental Workshop Quest
+|members = Yes
+|series = [[Quests/Series#Elemental Workshop|Elemental Workshop]], #1
+|developer = Dylan C
+}}
+'''Elemental Workshop I''' is a [[quest]] in which you find a mysterious book in [[Seers' Village]], guiding along the rediscovery of the [[Elemental Workshop (location)|eponymous workshop]] and the lost magical [[elemental ore]].
+
+==Details==
+{{Quest details
+|start = Search the [[bookcase (Elemental Workshop I)|bookcase]] in the house immediately south-west of the [[Seers' Village]] bank.
+|startmap = 2716,3481
+|difficulty = Novice
+|description = Hundreds of years ago, a mineral was found that had the ability to change the property of Magic.
+
+The magicians, fearing the effect this may have on their profession, sealed this Workshop forever; or so they had hoped. See if you can rediscover the lost knowledge of elemental ore.
+|length = Very Short
+|requirements = * {{SCP|Mining|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} {{Refn|This requirement can be bypassed if another player mines the rock.|group=t}}
+* {{SCP|Smithing|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Crafting|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = * [[Knife]] (obtainable during the quest) or a [[slash weapon]] (e.g. [[dagger]] or [[scimitar]])
+* [[Pickaxe]]
+* [[Needle]] (obtainable during the quest, '''[[Costume needle]] does not work''')
+* [[Thread]]
+* [[Leather]] (obtainable during the quest)
+* [[Hammer]]
+* 4 [[coal]] (4 more for each additional bar you would like to produce)
+|recommended = * {{SCP|Combat|15|link=yes}}
+* [[Camelot teleport]]
+* Combat equipment for lower levels
+|kills = * [[Earth elemental]] ''(level 35)''
+|ironman = * {{SCP|Mining|30|link=yes}} {{Boostable|yes}} (if mining the coal)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}
+{{Reflist|group=t}}
+
+==Walkthrough==
+[[File:Elemental Workshop I - Odd looking wall.png|thumb|195x195px|The odd looking wall.]]
+[[File:Elemental Workshop I - Fixing bellows.png|thumb|195x195px|A player fixes the bellows.]]
+===Bound under lock and key===
+Head to [[Seers' Village]] and into the house immediately south-west of the bank, indicated by the quest start icon. Search the [[bookcase (Elemental Workshop I)|bookcase]] on the east wall to receive a [[battered book]]. '''Read it''' to start the quest. 
+
+The book details the discovery of a new ore in the [[Fifth Age]], and the workshop erected to work the new material. After the true power of the unique ore was realised, the workshop was closed and bound under lock and key. The book hints that the secret to entering the workshop lies within it.
+
+After reading it, use a [[knife]] (one spawns in the house north of the church) or [[slash weapon]] on the book to get a [[battered key]], turning it into a [[slashed book]] in the process. '''Do not drop''' the slashed book.
+
+Enter the northern building with the [[anvil]] icon, and use the key on the odd-looking wall with the strange crack. Climb down the stairs you find there to enter the [[Elemental Workshop (location)|workshop]].[[File:Elemental Workshop (location) map.png|thumb|left|200px|A map of the [[Elemental Workshop (location)|dungeon]].]]
+[[File:Elemental Workshop I - Filling a stone bowl.png|thumb|195x195px|A player filling a stone bowl with lava.]]
+[[File:Elemental Workshop I Location of Leather.png|alt=Located in the north-west section of crates.|thumb|195x195px|The crate containing leather.]]
+[[File:Elemental Workshop I Location of Stone Bowl.png|alt=Located in the north eastern part of the central area.|thumb|195x195px|The crate containing a stone bowl.]]
+
+===Restarting===
+{{Needed|skills={{SCP|Crafting|20}} {{Boostable|yes}} to fix the [[bellows (Elemental Workshop)|bellows]], {{SCP|Mining|20}} {{Boostable|yes}} to mine an [[elemental rock]]}}
+In the northern chamber is an inactive [[Water wheel (Elemental Workshop)|water wheel]], with two water controls to the west and east of it. Turn the east water control and then the west one to change them both to green (this must be done in order, turn the west one back if you turned it first). After this, pull the lever next to the water wheel. The water wheel should now be spinning.
+
+Next you will need to repair the bellows, found in the eastern chamber. If you did not bring leather and a needle, they may be found in a [[Crate (Elemental Workshop I, leather)|crate]] in the north-western part of the central room, and a [[Crate (Elemental Workshop I, needle)|stacked crate]] in the western room respectively.
+
+Fix the bellows with a spool of thread and leather ({{SCP|Crafting|20}}), then pull the lever next to it. The bellows should begin pumping air. 
+
+Head into the western cavern and attempt to mine an elemental rock ({{SCP|Mining|20}}). The rock springs to life, yells, and attacks you. Kill the [[earth elemental]], and pick up the [[elemental ore]] that it drops. The elementals walking around do not count; it must be an elemental awoken by an attempt to mine them.
+
+:'''Tip:''' Kill two more if you want to save time for [[Elemental Workshop II]], or three more if you also want a [[Mind shield]] after completing that quest.
+
+:'''Tip:''' You may choose to kill one of each elemental in the workshop to complete an easy [[Easy Kandarin Diary|Kandarin Diary]] task. You must kill a regular earth elemental for this, not the ones that are mined first.
+
+Finally, head back to the central chamber. Search the [[Boxes (Elemental Workshop)|boxes]] north-east of the hatch to obtain [[a stone bowl]]. Fill it with lava from the lava trough in the southern chamber, then use it on the [[furnace]] to the east in the same chamber. The inside of the furnace should now glow orange.
+
+===A lost art===
+{{Needed|skills={{SCP|Smithing|20}} {{Boostable|yes}} to smith [[elemental metal]] and [[elemental shield]]}}
+Proceed to use the elemental ore, along with four [[coal]], on the furnace to obtain an [[elemental metal]] ({{SCP|Smithing|20}}). If this does not work, ensure that you used the elemental ore on the furnace rather than the coal, and that both the water wheel and bellows were successfully activated in the previous steps.
+
+With the [[slashed book]] in your inventory, use the elemental metal on the workbench in the centre to make an [[elemental shield]] ({{SCP|Smithing|20}}). If you are unable to craft the shield, destroy the slashed book and obtain a new one from the bookcase.
+
+'''Congratulations, quest complete!'''
+
+:'''Tip''': You may choose to create more shields after the quest, returning with the battered key, slashed book and 4 coal to smelt with the elemental ore. The shield may also be sold on the [[Grand Exchange]] for {{Coins|{{GEP|Elemental shield}}}} gold, costing {{Coins|{{GEP|Coal}}*4}} to create.
+
+==Rewards==
+{{Quest rewards
+|name = Elemental Workshop I
+|image = [[File:Elemental Workshop I reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*{{SCP|Crafting|5,000}} [[Crafting]] experience
+*{{SCP|Smithing|5,000}} [[Smithing]] experience
+*Access to the [[Elemental Workshop (location)|Elemental Workshop]]
+*An [[elemental shield]], as well as the ability to make and wield them
+}}
+
+==Required for completing==
+Completion of Elemental Workshop I is required for the following:
+*[[Elemental Workshop II]] <sup>[[Elemental Workshop II/Quick guide|(Quick guide)]]</sup>
+*An easy task in the [[Kandarin Diary]] (partial completion required)
+
+==Transcript==
+{{Hastranscript|quest}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 15 October 2015
+|update = The Max Cape
+|poll = 
+|change = Added the apostrophe to Seers' Village in the Elemental Workshop quest journal.
+}}
+{{Subject changes
+|date = 2 October 2006
+|update = Elemental Workshop II
+|change = The quest was renamed from "Elemental Workshop" to "Elemental Workshop I".
+}}
+{{Subject changes footer}}
+
+{{Elemental Workshop I}}

@@ -1,0 +1,72 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Kourend & Kebos" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Enter the [[Woodcutting Guild]].
+|
+*{{SCP|Woodcutting|60|link=y}}
+|-
+|2. Smelt an [[Adamantite bar]] in [[The Forsaken Tower (location)|The Forsaken Tower]].
+''Note: Using the [[Superheat Item]] spell does not count.
+|
+*{{SCP|Quest}} Completion of [[The Forsaken Tower]]
+*{{SCP|Smithing|70|link=y}}
+*[[Adamantite ore]] and 6 [[coal]]
+|-
+|3. Kill a [[Lizardman shaman#Lizardman Temple|Lizardman Shaman]] in the [[Lizardman Temple]].
+|
+*See the [[Lizardman shaman/Strategies|strategy guide]]
+|-
+|4. Mine some [[Lovakite ore|Lovakite]].
+|
+*{{SCP|Mining|65|link=y}}
+*Any [[pickaxe]]
+|-
+|5. Plant some [[Logavano seed]]s at the [[Tithe Farm]].
+|
+*{{SCP|Farming|74|link=y}}{{Boostable|yes}}
+*[[Seed dibber]]
+|-
+|6. Kill a [[Zombie (Shayzien Crypts)|Zombie]] in the [[Shayzien Crypts]].
+|
+*[[Combat gear]] and a [[light source]]
+|-
+|7. Teleport to [[Kourend Castle|Xeric's Heart]] using [[Xeric's Talisman]].
+|
+*[[Xeric's talisman]] charged with a [[lizardman fang]], or a [[mounted xeric's talisman]] inside any [[player-owned house]] (see the [[House party]] worlds)
+|-
+|8. Deliver an [[Stealing artefacts|artefact]] to [[Captain Khaled]].
+|
+*{{SCP|Thieving|49|link=y}}
+*[[Lockpick]]
+|-
+|9. Kill a [[Wyrm]] in the [[Karuulm Slayer Dungeon]].
+|
+*{{SCP|Slayer|62|link=y}}
+*[[Combat gear]]
+*[[Boots of stone]], [[boots of brimstone|brimstone]], or [[granite boots|granite]]
+|-
+|10. Cast [[Monster Examine]] on a [[Mountain troll|Troll]] south of [[Mount Quidamortem]].
+|
+*{{SCP|Quest}} Completion of [[Dream Mentor]]
+*{{SCP|Magic|66|link=y}}
+*[[Lunar spellbook]] selected
+*Means to cast [[Monster Examine]] ({{RuneReq|Astral=1|Mind=1|Cosmic=1}})
+|-
+|}
+
+===Rewards===
+*[[Rada's blessing 3]]:
+**Unlimited teleports to the [[Kourend Woodland]]
+**Three daily teleports to the top of [[Mount Karuulm]]
+**6% chance to catch two [[fish]] at once anywhere when equipped, excluding at [[Tempoross]]' [[Tempoross Cove|Cove]] (no additional experience granted)
+**Has a [[Prayer bonus]] of +1 when equipped, similar to the [[God blessing|god blessings]]
+*[[Ash sanctifier]], claimable from [[Tyss]]
+**An additional item that, when carried, causes [[Remains#Demonic ashes|demonic ashes]] dropped from killed monsters to be automatically scattered, granting half the [[Prayer]] experience that would have been granted for scattering them normally
+**This item is charged with [[death rune]]s
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 experience in any skill of at least level 50
+*Any [[slayer helmet]] can be used in place of a [[Shayzien helm (5)]] for its [[Shayzien armour (tier 5)|protection]] against [[lizardman shaman]]s, after talking to [[Captain Cleive]] (requires having the helm in your [[collection log]])
+*60% discount on [[Eodan]]'s [[tanner|tanning]] services, up from 40%
+*5% increased chance to save a [[Farming#Variable crop yield|"harvest life"]] at the [[herb patch]]es in [[Hosidius]] and the [[Farming Guild]], slightly increasing your harvest yield
+*[[Thirus]] offers you 40 [[dynamite]] for free every day, worth a total of {{NoCoins|{{GEP|Dynamite}}*40}} [[coins]] on the [[Grand Exchange]]

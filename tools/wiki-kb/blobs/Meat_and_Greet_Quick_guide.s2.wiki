@@ -1,0 +1,23 @@
+==Walkthrough==
+{{Checklist|* Talk to [[Emelio]] in south-east [[Outer Fortis]]{{chat option|1Yes.}}
+* Talk to the [[Spice Merchant]] in the [[Bazaar]] about missing delivery{{chat option|2I'm here about a missing delivery.}}
+* Open the box using the code '''2546'''.
+* Talk to [[Alba]] at the north of [[Ortus Farm]] just outside the western entryway of the city, in the building north of the Buffalo pen.
+* Go west of the farm to the wolf den and inside the cave and kill the [[Dire Wolf Alpha]]. Bring food, as this fight takes place in a multicombat area with both melee and ranged damage being dealt simultaneously.
+* Return to Alba.
+* Return to Emelio
+* Talk to Emelio again and give him these numbers:
+** 4 portions of meat
+** 2 portions of salad
+** 1 portion of spice
+** 3 portions of sauce
+* Give the [[test kebab]] to [[Vincens]], [[Renata]] or [[Lucas]] outside.
+* Talk to Emelio again.
+* Talk to [[Lelia]] inside the [[Fortis Colosseum]]. She can be found in the southern room.
+* Fight and defeat the [[Minotaur (Meat and Greet)|Minotaur]].
+** Protect from Melee. When he says '''"Moo!"''' switch to Protect from Magic. 
+** When he says '''"Moooo!"''', he will attack 1 tick faster.
+** If you die or escape, talk to Lelia to re-enter the fight.
+** Occasionally, the Minotaur will yell '''"moo"''' and attack with Melee.
+* Talk to Lelia after defeating the minotaur.
+* Talk to Emelio to finish the quest.}}

@@ -1,0 +1,17 @@
+{{Infobox Achievement Diary
+|name = Kourend & Kebos Diary
+|image = [[File:Kourend & Kebos Diary.png]]
+|release = [[10 January]] [[2019]]
+|update = The Kebos Lowlands
+|areas = [[Great Kourend]], [[Kebos Lowlands]]
+|members = Yes
+|reward = [[Rada's blessing|Blessing]]
+|taskmasters = [[Elise]]
+|leagueRegion = Kourend
+}}
+{{Map|name=Elise|x=1648|y=3665|r=3|mtype=square|width=250|height=250|caption=Elise's location|align=left}}
+The '''Kourend & Kebos Diary''' is an [[Achievement Diary]] whose tasks revolve around areas in [[Great Kourend]] as well as the [[Kebos Lowlands]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from [[Elise]], south-east of the [[statue of King Rada I]] in the courtyard of the [[Kourend Castle]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

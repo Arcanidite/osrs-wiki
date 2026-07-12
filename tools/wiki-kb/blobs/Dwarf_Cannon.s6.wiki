@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name=Dwarf Cannon
+|image=[[File:Dwarf Cannon reward scroll.png|centre]]
+|qp=1
+|rewards=* {{SCP|Crafting|750}} [[Crafting]] [[experience]]
+*The ability to buy and use a [[dwarf multicannon]]
+*The ability to make [[cannonball]]s
+*[[Titles|Membership of the Black Guard]]
+}}

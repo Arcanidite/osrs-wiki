@@ -1,0 +1,90 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Cabin Fever}}
+
+==Walkthrough==
+===Setting sail===
+{{Checklist|
+*Travel to [[Port Phasmatys]] (take a [[charter ship]] if you don't have [[Ectophial]]).
+*Talk to Bill Teach in the inn. {{Chat option|1Yes, I've always wanted to be a pirate!|1Yes, I am a man of my word.}}
+*Run to the dock, board the eastern-most ship.
+*Talk to Bill Teach. {{Chat option|1Let's go Cap'n!}}
+}}
+===Sabotage===
+{{Checklist|
+*Open the repair locker, take 4 ropes.
+*Open the gun locker, take 1 [[fuse]].
+*Take the tinderbox spawn at the south end of the ship
+*Climb the ship's ladder, then use the climbing net connected to the mast.
+*Use rope on the hoisted sail.
+*Use the fuse on their powder barrel.
+*Use the tinderbox to light the fuse (this can fail).
+*Climb their climbing net and use a rope on the hoisted sail.
+*Talk to Bill Teach.
+}}
+
+===Fixing the leaks===
+{{Checklist|
+*Descend the ship's ladder.
+*Take from the repair locker:
+**6 planks.
+**A hammer.
+**30 [[tacks]].
+**3 swamp paste.
+*Repair the leaky holes and use swamp paste to waterproof them.
+*Talk to Bill Teach.
+}}
+
+===Pirate plunder===
+{{Checklist|
+*Swing back over to the enemy ship.
+*Climb down their ladder.
+*Gather 10 [[plunder]] by:
+**Plunder their chest,
+**Ransack their barrel,
+**Loot their crate,
+**Hop worlds to collect more plunder quickly.
+*Swing across with the plunder.
+*Deposit the plunder in the chest on the lower deck.
+*Talk to Bill Teach.
+}}
+
+===Cannon===
+{{Checklist|
+*Search the gun locker and take a [[cannon barrel (Cabin Fever)|cannon barrel]].
+*Repair the [[Cannon (Cabin Fever)#Exploded|broken cannon]] on the top deck.
+*Talk to Bill Teach.
+*Search the gun locker, take a [[ramrod]], a few fuses, and some cannon [[canister]]s.
+*Take some powder from the barrel next to the cannon.
+**Use [[gunpowder]] on the cannon.
+**Then the ramrod.
+**Then the canister.
+**Then a fuse.
+**Fire the cannon! (Make sure pirates line up with your cannon before firing)
+***Note: If you have your "NPC 'Attack' option" set to "Hidden" you will not be able to damage the pirates.
+**Use the ramrod on the cannon again to clean it.
+*Repeat until 3 pirates die (OR until you run out of cannon canisters in your inventory, and when you try to take more it will say "you do not need a canister round right now" move on to the next step: Talk to Bill Teach).
+**Note: it may be faster to intentionally run out of canisters.
+*Talk to Bill Teach.
+*Search the gun locker, take several [[cannon ball (Cabin Fever)|cannon ball]]s, fuses, and cannon barrels. Take gunpowder from the barrel next to the cannon.
+*Fire the cannon with cannonballs until you put three holes in the enemy's ship. This is done with the same sequence above except instead of a canister, a cannonball is used instead - you will likely have to fire it more than three times and possibly repair it multiple times.
+**The sequence goes:
+***Right-click Empty-Out Cannon
+***Ramrod to clean
+***Add powder
+***Ramrod the powder down
+***Cannon ball
+***Fuse
+***Fire
+*'''Congratulations, quest complete!'''
+**Talk to Bill Teach in the pub afterwards to get your share of the loot, 10,000 coins.
+}}
+==Rewards==
+{{Quest rewards page|Cabin Fever}}
+
+==Required for completing==
+*[[The Great Brain Robbery]]
+
+{{Cabin Fever}}

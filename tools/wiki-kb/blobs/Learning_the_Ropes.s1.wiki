@@ -1,0 +1,16 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Quest Guide]] on [[Tutorial Island]].
+|startmap = 3094, 3107
+|difficulty = Novice
+|length = Very Short
+|description = N/A
+|requirements = 
+|items = 
+|recommended = 
+|kills = 2 [[Giant rat (Tutorial Island)|Giant rats]] (level 3) 
+|ironman = You must talk to the [[Ironman tutor (Tutorial Island)|Ironman tutor]] at the end of the quest to choose your [[Ironman Mode]] restrictions.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

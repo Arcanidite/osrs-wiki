@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Meat and Greet
+|image = [[File:Meat and Greet reward scroll.png|centre]]
+|qp = 1
+|rewards =
+* {{SCP|Cooking|8,000}} [[Cooking]] experience
+* Access to [[Emelio's Kebab Shop]]
+}}

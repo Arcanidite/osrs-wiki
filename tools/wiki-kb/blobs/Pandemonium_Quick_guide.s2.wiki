@@ -1,0 +1,38 @@
+==Walkthrough==
+===Salvaging===
+{{Checklist|
+*Talk to [[Will]] or [[Anne]] at the south docks of [[Port Sarim]] {{Chat option|1 Yes|1 I guess I'm ready...}} to accept their shipwreck salvaging job.
+*''Navigate'' the helm to take control of the ship.
+*Navigate south through the [[Bay of Sarim]] until you reach east of the [[Karamja Shipyard]].
+**Click the minimap or water to set your heading in that direction.
+**Click to ''trim'' the sails when a gust of wind arises for a speed boost.
+*''Un-set'' the sails when Will says you have arrived.
+*''Deploy'' the [[Salvaging hook (Pandemonium quest)|salvaging hook]], after which you will be pushed overboard.
+}}
+
+===Facilities===
+{{Checklist|
+*Talk to [['Squawking' Steve Beanie]] at the [[The Pandemonium (Pub)|Pandemonium Pub]].
+*Talk to [[Ribs (The Pandemonium)|Ribs]] just to the north to discuss the map. {{Chat option|Any}}
+*Talk to 'Squawking' Steve Beanie again. {{Chat option|2 About Will and Anne...|2 Do you have any idea where Will and Anne might have gone?}}
+*Head east to the docks and talk to [[Junior Jim]] to get a [[raft]] in exchange for the salvaged [[old cup]]. He will take you to the shipyard.
+**If needed, take a [[hammer]] and [[saw]] from the crates just to the south.
+*''Board'' the gangplank to your raft and ''build'' a cargo hold in the [[facility hotspot]].
+*''Disembark'' the gangplank and talk to Junior Jim again to return to the Pandemonium and receive a [[Captain's log]].
+}}
+
+===Cargo courier===
+{{Needed|Free hands to carry cargo (no weapons equipped).}}
+{{Checklist|
+*''Board'' the gangplank to the north-east.
+*Navigate north through [[Mudskipper Sound]] and the [[Bay of Sarim]] until you reach Port Sarim.
+**Optionally use the buoy to dock your raft, then ''disembark'' the gangplank.
+*Take cargo from the [[ledger table]] near the docks and board the gangplank again.
+**Open the basic cargo hold to store the cargo.
+*Navigate back to the docks at the Pandemonium.
+**Open the basic cargo hold and withdraw the cargo.
+*''Disembark'' the gangplank and deposit the cargo at the ledger table.
+*Talk to Junior Jim to let him know you delivered his cargo.
+*Talk to 'Squawking' Steve Beanie in the pub for an update on Will and Anne.
+*'''Congratulations, quest complete!'''
+}}

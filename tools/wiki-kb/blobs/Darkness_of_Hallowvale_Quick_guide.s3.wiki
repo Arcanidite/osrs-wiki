@@ -1,0 +1,11 @@
+===Starting out===
+'''''Items needed:''' 2 [[planks]], 8 [[nails]] and a [[hammer]]''
+{{Checklist|
+*Travel to [[Burgh de Rott]].
+*Talk to [[Veliaf Hurtz]] in the pub basement. {{Chat option|4Is there something I can do to help out?|1Yes, please tell me more.|1What is the Sanguinesti region?|2How can I search for the Sanguinesti order of the Myreque?|3Can you tell me about the Sanguinesti Myreque?|4How should I get into the Sanguinesti region?|5Okay, thanks.}}
+*Go south-east to the docks where there's a hut with a boat in it.
+*Use a [[plank]] on the boat.
+*Use a [[plank]] on the boat chute.
+*Push the boat down the chute.
+*Board the boat.
+}}

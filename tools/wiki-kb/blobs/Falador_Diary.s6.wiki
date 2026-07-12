@@ -1,0 +1,76 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Falador" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Craft 140 [[Mind rune]]s simultaneously from Essence without the use of [[Extracts]].
+''Note: [[Mind core|Mind cores]] do not count.''
+|
+*{{SCP|Runecraft|56|link=y}}
+*{{SCP|Runecraft|42|link=y}} with 3+ [[Raiments of the Eye]] pieces
+*28 [[Pure essence|pure]], [[Daeyalt essence|daeyalt]], or [[rune essence]] (less may suffice at higher [[Runecraft]] levels)
+*Access to the [[Mind Altar]] ([[mind talisman]]/[[mind tiara|tiara]], [[catalytic talisman]]/[[Catalytic tiara|tiara]], or the [[Abyss]])
+|-
+|2. Change your [[heraldic crest|family crest]] to the [[Saradomin]] symbol.
+''Note: This is done by talking to [[Sir Renitee]].''
+|
+*{{SCP|Prayer|70|link=yes}} {{Boostable|n}}
+*{{SCP|Construction|16|link=yes}}{{Boostable|y}}
+*5,000 [[coins]] (an additional 5,000 [[coins]] if your randomised [[heraldic crest|family crest]] already is [[Saradomin]], to change to another and back)
+|-
+|3. Kill the [[Giant Mole]] beneath [[Falador Park]].
+|
+*[[Spade]] and [[light source]]
+*See the [[Giant Mole/Strategies|strategy guide]]
+|-
+|4. Kill a [[Skeletal Wyvern]] in the [[Asgarnia Ice Dungeon]].
+|
+*{{SCP|Slayer|72|link=yes}} {{Boostable|y}}
+*Protection from the wyvern's [[icy breath]] and [[weapon]]ry to slay it
+|-
+|5. Complete a lap of the [[Falador Rooftop Course|Falador rooftop agility course]].
+|
+*{{SCP|Agility|50|link=yes}} {{Boostable|y}}
+|-
+|6. Enter the [[mining guild]] while wearing a [[Prospector helmet]].
+''Note: This helmet can be obtained from the [[Motherlode Mine]] or the [[Volcanic Mine]].''
+|
+*{{SCP|Mining|60|link=yes}}
+*[[Prospector helmet]] or [[golden prospector helmet]]
+|-
+|7. Kill the [[Blue Dragon]] under the [[Heroes' Guild]].
+|
+*{{SCP|Quest}} Completion of the [[Heroes' Quest]]
+*Protection from [[dragonfire]] and [[weapon]]ry to slay it
+|-
+|8. Crack a [[Wall safe (lobby)|wall safe]] within [[Rogues' Den]].
+''Note: [[Wall safe]]s in the maze do not count towards completing this task.''
+|
+*{{SCP|Thieving|50|link=yes}}
+|-
+|9. Recharge your [[prayer]] in the [[Rimmington church|Port Sarim church]] while wearing full [[Proselyte armour|Proselyte]].
+|
+*{{SCP|Quest}} Completion of [[The Slug Menace]]
+*{{SCP|Defence|30|link=yes}}
+*{{SCP|Prayer|20|link=yes}}
+*Full [[Proselyte armour]]
+|-
+|10. Enter the [[Warriors' Guild]].
+|
+*130 combined levels in {{SCP|Attack|link=yes}} and {{SCP|Strength|link=yes}}, or level 99 in either
+|-
+|11. Equip a [[dwarven helmet]] within the [[dwarven mine]]s.
+|
+*{{SCP|Quest}} Completion of [[Grim Tales]]
+*{{SCP|Defence|50|link=yes}}
+*[[Dwarven helmet]]
+|}
+
+===Rewards===
+*[[Falador shield 3]]:
+**Can restore full [[prayer points]] once a day
+**Indicates the [[Giant Mole]]'s location when equipped or held in the inventory in the [[Mole Hole]]
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 experience in any skill of at least level 50
+*The [[Giant Mole]]'s [[mole skin]] and [[Mole claw|claw]] drops will be [[Bank note|noted]]
+*Access to the [[bank]] chest and [[Bank Deposit Box|bank deposit box]] in the [[Crafting Guild]]
+*Access to the [[Crevice (Heroes' Guild)|shortcut]] to the [[Fountain of Heroes]] in the [[Heroes' Guild]] basement (with 67 [[Agility]])

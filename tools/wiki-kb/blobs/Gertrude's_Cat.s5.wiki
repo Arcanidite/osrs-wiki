@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Gertrude's Cat
+|image = [[File:Gertrude's Cat reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Cooking|1,525}} [[Cooking]] [[experience]]
+*Your own [[kitten]]
+*[[Chocolate cake]]
+*[[Stew]]
+*[[Gertrude]] will now sell kittens for you to raise for {{NoCoins|100}} coins each.
+}}
+
+Note for '''[[ironmen]]:''' Keep the [[chocolate cake]] quest reward for the [[A Tail of Two Cats]] [[quest]] and the [[stew]] for the [[The Queen of Thieves]] quest.

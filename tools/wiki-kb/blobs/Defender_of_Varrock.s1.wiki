@@ -1,0 +1,41 @@
+==Details==
+{{Quest details
+|start = Talk to [[Elias White]] in the [[Jolly Boar Inn]].
+|startmap = 3283,3501
+|difficulty = Experienced
+|description = Long ago, one man wielding a magic shield stood against the undead armies of the Mahjarrat. His name was Arrav, and he was strong and noble, but the fates had spoken: his downfall at the hands of the evil necromancer Zemouregal was inevitable. In one last desperate act to save his people, Arrav flung the shield towards the town now known as Varrock, protecting it from further harm. In that very moment, Zemouregal struck him down. Standing over the fatally wounded hero, Zemouregal made a promise:
+
+"When I return, you shall lead my armies. You shall be my greatest champion, and suffer under the knowledge that while you hoped to save your people, you will instead be their doom."
+
+Now, there is fear in the air. Whispers of the dead rising. Could this be the time of the prophesied return?
+|length = Medium
+|requirements = * {{SCP|Smithing|55|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Hunter|52|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+**[[Shield of Arrav]]
+**[[Temple of Ikov]]
+**[[Below Ice Mountain]]
+**[[Family Crest]]
+**[[Garden of Tranquillity]]
+***[[Creature of Fenkenstrain]]
+****[[Priest in Peril]]
+****[[The Restless Ghost]]
+**[[What Lies Below]]
+***[[Rune Mysteries]]
+**[[Romeo & Juliet]]
+**[[Demon Slayer]]
+|items = * [[Chaos core]] (obtainable during the quest)
+*[[Barronite deposit]] or a [[pickaxe]] to mine one
+|recommended = * {{SCP|Combat|65|link=yes}}
+*[[Ring of the elements]] or [[Lumberyard teleport]]
+*[[Mind Altar teleport]] or [[Lassar teleport]]
+*Multiple [[Varrock teleport|Varrock Teleports]]
+*43 [[Prayer]] for [[Protect from Melee]]
+*[[Salve Amulet]]
+*[[Food]] and/or [[Prayer Potion|Prayer potions]]
+|kills = * At least six [[Armoured_zombie_(Defender_of_Varrock)|armoured zombie]]s (level 85)
+* Multiple [[Chaos Golem]]s (level 70)
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

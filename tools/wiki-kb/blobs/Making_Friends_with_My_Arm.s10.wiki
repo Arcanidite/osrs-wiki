@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|name = Making Friends with My Arm
+|image = [[File:Making Friends with My Arm reward scroll.png|center]]
+|qp = 2
+|rewards =
+*{{SCP|Construction|10,000}} [[Construction]] [[experience]]
+*{{SCP|Firemaking|40,000}} [[Firemaking]] [[experience]]
+*{{SCP|Mining|50,000}} [[Mining]] [[experience]]
+*{{SCP|Agility|50,000}} [[Agility]] [[experience]]
+*Access to the [[Salt Mine]]s
+*Ability to build [[fire pit]]s
+*A new [[Disease (Farming)|disease]]-free [[herb patch]] in [[Weiss]] (requires building the [[fire of nourishment]] before use)
+*Ability to direct a teleport room portal to Troll Stronghold with a combination of salt
+}}

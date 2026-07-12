@@ -1,0 +1,43 @@
+===[[Lizard]]===
+''Lacertilia Giganteus'', Latin for "Giant lizard" Display number 4
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|How does a lizard regulate body heat?
+|
+*Chilli sauce
+*Fire
+*'''Sunlight''' {{Okay}}
+|-
+|Who discovered how to kill lizards?
+|
+*Admiral Bake
+*'''The Slayer Masters''' {{Okay}}
+*The Wise Old Man
+|-
+|How many eyes does a lizard have?
+|
+*Two
+*'''Three''' {{Okay}}
+*Six
+|-
+|What order do lizards belong to?
+|
+*Mammal
+*'''Squamata''' {{Okay}}
+*Insecta
+|-
+|What happens when a lizard becomes cold?
+|
+*'''It becomes sleepy''' {{Okay}}
+*It becomes aggressive
+*It explodes
+|-
+|Lizard skin is made of the same substance as?
+|
+*'''Hair''' {{Okay}}
+*Bone
+*Wood
+|}

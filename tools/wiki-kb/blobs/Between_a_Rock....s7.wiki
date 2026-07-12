@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Between a Rock...
+|image = [[File:Between a Rock... reward scroll.png|centre]]
+|qp = 2
+|rewards = *{{SCP|Defence|5,000|link=yes}} experience
+*{{SCP|Mining|5,000|link=yes}} experience
+*{{SCP|Smithing|5,000|link=yes}} experience
+*A [[rune pickaxe]]
+*A [[gold helmet]]
+*Access to the [[Arzinian Mine]] full of [[gold rocks]] and [[gold vein]]s. A nearby dwarf at the river will bank the player's [[gold ore]] for a charge of 20% of the ores, rounded up (10% with the [[ring of charos (a)]]).
+*The ability to teleport to Dondakan's rock using a [[ring of wealth]]
+}}

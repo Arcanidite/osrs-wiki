@@ -1,0 +1,14 @@
+===Urgent business===
+[[File:Darkness of Hallowvale - route to lab.png|thumb|right|Path to the ladder and laboratory.]]
+{{Checklist|
+*Travel to the [[Paterdomus Temple]] ([[Fairy rings|fairy ring]] {{Fairycode|CKS}}).
+*Talk to [[Drezel]] in [[Paterdomus]], underneath the temple.
+*Take the west exit, past the [[monument|monuments]].
+**Optionally, with {{SCP|Agility|65|link=yes}}, instead exit toward [[Canifis]] and take the [[Ornate railing|shortcut]] up the side of the temple.
+*Search the [[Bush (Darkness of Hallowvale)|bush]] slightly south-west of the steps leading to the temple.
+*Wait for the cutscene to finish.
+*Return to speak with [[Drezel]]. He will give you runes to use [[Varrock Teleport]].
+*Teleport or travel to [[Varrock]] and talk to [[King Roald]] in the palace. {{Chat option|1Talk to the King about Morytania.|4What should I do now?}} The king will teleport you back to Paterdomus if you ask the right question. 
+*Travel back to [[Burgh de Rott]].
+*Talk to [[Veliaf Hurtz]] in the pub basement.
+}}

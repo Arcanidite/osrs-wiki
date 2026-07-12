@@ -1,0 +1,31 @@
+==Walkthrough==
+{{Checklist|* Talk to the guard out front of [[Sinclair Mansion]] and agree to help. {{Chat option|1 Sure, I'll help.}}
+* Go north-west and investigate the sacks in the shed, take '''4 flypapers'''.
+* Go inside the mansion and take the '''pungent pot''' and '''criminal's dagger'''.
+* Investigate the smashed window on the eastern side for the '''criminal's thread'''.
+* Search the barrels in the bedroom owned by the following two suspects to get '''2 silver items'''.
+** If the thread is red, search the barrels belonging to Bob and Carol.
+** If the thread is green, search the barrels belonging to Anna and David.
+** If the thread is blue, search the barrels belonging to Elizabeth and Frank.
+* Go to the kitchen and fill your pot with flour from the barrel.
+* Use flour and flypaper to dust each silver item and the dagger.
+* Use the silver items' prints on the dagger's print until you get a match. Remember who it is.
+** Anna
+** Bob
+** Frank
+** David
+** Carol
+** Elizabeth
+* Talk to Gossip outside the front gate of the mansion and ask who he thinks is responsible. {{Chat option|2 Who do you think was responsible?}}
+* Talk to the poison salesman in the [[Seers' Village]] pub, ask who he sold poison to. (Select Murder Mystery quest) (Be sure to not select the Fremennik Trials option.) {{Chat option|2Who did you sell Poison to at the house?}}
+* Talk to the person whose prints matched, ask why they bought poison. {{Chat option|4 Why'd you buy poison the other day?}}
+* Search the item they ''say'' they used the poison on.
+** Anna - Compost heap
+** Bob - Beehive in cow pen
+** Frank - Family Crest, east of the front door
+** David - [[Spiders' nest]], upstairs between the two rooms with three beds each in them
+** Carol - Kitchen drain, west of the front door
+** Elizabeth - The fountain
+*'''Drop the silver necklace''' (if you took it from Anna's barrel) before talking to the guard if you want to keep it, you can't get it back afterward.
+* Talk to a guard. {{Chat option|3 I know who did it!}}
+*'''Congratulations, quest complete!'''}}

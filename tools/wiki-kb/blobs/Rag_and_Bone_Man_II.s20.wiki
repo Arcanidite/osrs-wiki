@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = Rag and Bone Man II
+|image = [[File:Rag and Bone Man II reward scroll (Ram skull helm and Bonesack).png|center]]
+| qp = 1
+|rewards = 
+*{{SCP|Prayer|5,000|link=yes}} experience
+*[[Bonesack]]
+*[[Ram skull helm]]
+}}

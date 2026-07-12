@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Devious Minds
+|image = [[File:Devious Minds reward scroll.png|centre]]
+|qp = 1
+|rewards = *{{SCP|Fletching|5,000}} [[Fletching]] experience
+*{{SCP|Runecraft|5,000}} [[Runecraft]] experience
+*{{SCP|Smithing|6,500}} [[Smithing]] experience
+}}

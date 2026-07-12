@@ -1,0 +1,36 @@
+==Details==
+{{Quest details
+|start = Talk to [[Dondakan the Dwarf]] at the [[Keldagrim south-west mine]].
+|startmap = 2821,10168
+|difficulty = Experienced
+|description = Hidden away from the fearsome trolls and the roaming Fremennik, the dwarves delve deep beneath the mountains in search for the ore they need to support their home of Keldagrim. One dwarf in particular, however, has for years been trying to crack open a rock that seems to be impervious to any material that he's tried on it. Convinced that solving the riddle of the rock will lead him to unimaginable wealth, he has spent the later part of his life on just this lump of stone. Help him out, but take care you don't end up in a tight spot!
+|length = Medium
+|requirements = * Completion of the following quests:
+** [[Dwarf Cannon]]
+** [[Fishing Contest]]
+* {{SCP|Defence|30|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Mining|40|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Smithing|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 75-125 enemy ''(depends on how much gold you mine)''
+|items = * A [[pickaxe]]
+* 4 [[gold bar]]s (You will need an extra bar and [[Telekinetic Grab|telegrab]] if you want to keep a [[golden cannonball]] for after the quest)
+* A [[hammer]]
+* An [[ammo mould]] ''(can be bought for 5 coins during the quest)'' or a [[double ammo mould]]
+* ~830 [[coins]] ''(for cart and ferry)''
+|recommended = * {{SCP|Combat|50|link=yes}}
+* Combat gear
+* A [[Falador teleport]]
+* A [[Combat bracelet]] (to teleport to the [[Edgeville Monastery|Monastery]])
+* A [[Camelot Teleport]]
+* [[Ring of charos (a)]]
+* A [[Lunar staff|lunar]] or [[dramen staff]]
+* An [[amulet of glory]] for a teleport to Edgeville for the furnace
+* [[Stamina Potion]] to reduce travel time
+|kills = * [[Scorpion]](s) ''(level 14)''
+* [[Arzinian Being of Bordanzan]] ''(level 75-125)''
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+{{LeagueRegion|Fremennik}} — location requirement
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}

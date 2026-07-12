@@ -1,0 +1,8 @@
+===Welcome to Meiyerditch===
+'''Note:''' while in [[Meiyerditch]] if you are provoked by a [[Vyrewatch]] you can log out to avoid any interactions with them.
+{{Checklist|
+*Go north-west a short distance (still on the pier), search the floor then kick it down and climb down.
+*Climb over the wall rubble and talk to any [[Meiyerditch citizen]]. {{Chat option|4(whisper) Do you know about the Myreque?|4(whisper) I really need to meet the Myreque.|4How can Old Man Ral help me?}}
+*Talk to [[Old Man Ral]] to the north. {{Chat option|4Someone said you could help me.|4Old Man Ral, the sage of Sanguinesti.}}
+*Climb up the ladder in the building south-west of [[Old Man Ral]].
+}}

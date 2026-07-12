@@ -1,0 +1,24 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Odd Old Man]] in [[Silvarea]] north-east of [[Varrock]], by the [[Limestone Mine]].
+|startmap = 3360,3504
+|difficulty = Novice
+|description = Everybody needs some body, and the Odd Old Man knows exactly which bits of those bodies he needs. Can you help him finish his extensive and extremely creepy collection?
+|length = Short
+|requirements = None
+|items = *8 [[coins]] for 8 [[pot of vinegar|pots of vinegar]] (bring 68 coins if walking to and from [[Karamja]] for boat fare)
+*8 [[pot]]s
+*8 [[logs]] of any type (or an [[axe]] to obtain them)
+*[[Tinderbox]]
+|recommended =
+*{{SCP|Combat|15|link=yes}}
+*[[Teleport]] [[runes]] or [[tablet]]s to [[Varrock]] and [[Lumbridge]]
+*[[Digsite pendant]] or [[Digsite teleport]] for quick access to the Odd Old Man's house
+*[[Amulet of glory]] for quick access to [[Draynor Village]] and [[Karamja]]
+*[[Dramen staff]] for Fairy Ring teleports
+*Access to the [[Balloon transport system]] and [[Willow logs]] to use it
+|kills = Several (8): see below.
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

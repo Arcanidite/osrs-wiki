@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|name = Cabin Fever
+|image = [[File:Cabin Fever reward scroll.png|centre]]
+|qp = 2
+|rewards = *{{SCP|Crafting|7,000}} [[Crafting]] [[experience]]
+*{{SCP|Smithing|7,000}} [[Smithing]] experience
+*{{SCP|Agility|7,000}} [[Agility]] experience
+*10,000 [[coins]] (only if you speak to [[Bill Teach]] after the quest)
+*Access to [[Mos Le'Harmless]]
+*Access to kill [[cave horror]]s
+*The [[Book o' piracy]]
+*[[Charter ship]] prices are halved
+*Ability to play the [[Trouble Brewing]] minigame
+}}

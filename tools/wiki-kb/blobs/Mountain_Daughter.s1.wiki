@@ -1,0 +1,29 @@
+==Details==
+{{Quest details
+|start = Talk to [[Hamal the Chieftain]] in the [[Mountain Camp]] east of [[Rellekka]] (to access the camp, see [[Mountain Daughter#Walkthrough|below]])
+|startmap = 2808,3672
+|difficulty = Intermediate
+|description = Ages ago, a small tribe of people split off from the Fremennik in Rellekka and decided to inhabit the mountains to the east of town. There they lived as nomads for many years, but now the chieftain of the camp has lost his daughter and will not move on before she has been found. Has she run away, has she been eaten by trolls, or is there something more sinister going on? Only you can find out.
+|length = Medium
+|requirements = * {{SCP|Agility|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} <ref>Entering the Mountain Camp initially requires 10 Agility.</ref>
+* The ability to defeat a level 70 [[The Kendal|monster]] (can be [[safespot|safespotted]])
+|items = * [[Rope]]
+* [[Pickaxe]]
+* [[Axe]]
+* [[Plank]]
+* [[Staff]] or a [[pole]] (obtainable during the quest, [[Dramen Staff]] does not work, but [[elemental staves]] and [[Lunar staff]] do work)
+* [[Gloves]] (excluding: [[Slayer gloves|Slayer]], [[Ranger gloves|Ranger]], [[Moonclan gloves|Moonclan]], [[Lunar gloves|Lunar]], [[vambraces]], [[mystic]] and random event apparel)
+|recommended = * {{SCP|Combat|40|link=yes}}
+*[[Combat equipment]]
+* [[Stamina potion|Stamina]] or [[energy potions]]
+* [[Weight-reducing clothing]]
+* Fast travel to the [[White Wolf Mountain]] ([[gnome glider]] through [[Ring of dueling]] or [[Royal seed pod]], or alternatively a [[Camelot teleport]])
+* Fast travel to the [[Mountain Camp]] ([[Slayer ring]] or [[Fairy Rings]] to {{Fairycode|ajr}} and head north, or [[Camelot Teleport]])
+* Fast travel to [[Rellekka]] ([[Enchanted lyre]] or [[Fremennik sea boots]], or [[House teleport]] if your house is in Rellekka)
+* 8 free inventory spaces
+|kills = * [[The Kendal]] ''(level 70)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}
+<references/>

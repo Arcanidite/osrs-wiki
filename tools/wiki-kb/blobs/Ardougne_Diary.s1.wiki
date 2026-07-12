@@ -1,0 +1,211 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Thieving = 5
+|Total = 36
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Biohazard"
+|[[Biohazard]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|}
+| style="vertical-align: top" |
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Strength = 38
+|Agility = 39
+|Smithing = 1
+|SmithingNotes = <ref name="IronMed">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Ranged = 25
+|Thieving = 38
+|Crafting = 49
+|CraftingNotes = <ref name="SandMed">[[File:Ultimate ironman chat badge.png]] [[Ironman Mode#Ultimate|Ultimate Ironmen]] only need 36 [[Crafting]] and do not have to complete [[The Hand in the Sand]].</ref>
+|Firemaking = 50
+|Magic = 51
+|Fletching = 1
+|FletchingNotes = <ref name="IronMed"/>
+|Woodcutting = 36
+|Farming = 31
+|Construction = 10
+|Quest = 20
+|Total = 391
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|- data-rowid="The Hand in the Sand"
+|[[The Hand in the Sand]] <ref name="SandMed"/>
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|- data-rowid="Underground Pass"
+|[[Underground Pass]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Started [[Sea Slug]]
+|-
+|Partial completion of [[Watchtower]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 52
+|Strength = 50
+|Agility = 56
+|Smithing = 68
+|Herblore = 45
+|Fishing = 53
+|Ranged = 60
+|Thieving = 72
+|Cooking = 53
+|Prayer = 42
+|Crafting = 50
+|CraftingNotes = <ref>[[File:Ironman chat badge.png]] To obtain a [[skills necklace]], [[ironmen]] need either 72 Crafting and 68 Magic (both boostable), or luck from [[Reward casket (elite)|elite clues]].</ref>
+|Firemaking = 50
+|Magic = 66
+|Fletching = 5
+|FletchingNotes = <ref name="IronMed">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Woodcutting = 50
+|Runecraft = 65
+|Farming = 70
+|Construction = 50
+|Hunter = 59
+|Quest = 107
+|Total = 1029
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|- data-rowid="The Hand in the Sand"
+|[[The Hand in the Sand]] <ref name="SandHard">[[File:Ultimate ironman chat badge.png]] [[Ironman Mode#Ultimate|Ultimate Ironmen]] do not have to complete [[The Hand in the Sand]].</ref>
+|- data-rowid="Legends' Quest"
+|[[Legends' Quest]]
+|- data-rowid="Monkey Madness I"
+|[[Monkey Madness I]]
+|- data-rowid="Mourning's End Part II"
+|[[Mourning's End Part II]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|- data-rowid="Watchtower"
+|[[Watchtower]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Started [[Sea Slug]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 52
+|Strength = 50
+|Agility = 90
+|Smithing = 91
+|Herblore = 45
+|Fishing = 81
+|FishingNotes = {{boostable|n}}
+|Ranged = 60
+|Thieving = 82
+|Cooking = 91
+|Prayer = 42
+|Crafting = 50
+|Firemaking = 50
+|Magic = 94
+|Fletching = 69
+|Woodcutting = 50
+|Runecraft = 65
+|Farming = 85
+|Construction = 50
+|Hunter = 59
+|Quest = 107
+|Total = 1269
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|- data-rowid="The Hand in the Sand"
+|[[The Hand in the Sand]] <ref name="SandHard">[[File:Ultimate ironman chat badge.png]] [[Ironman Mode#Ultimate|Ultimate Ironmen]] do not have to complete [[The Hand in the Sand]].</ref>
+|- data-rowid="Haunted Mine"
+|[[Haunted Mine]]
+|- data-rowid="Legends' Quest"
+|[[Legends' Quest]]
+|- data-rowid="Monkey Madness I"
+|[[Monkey Madness I]]
+|- data-rowid="Mourning's End Part II"
+|[[Mourning's End Part II]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|- data-rowid="Watchtower"
+|[[Watchtower]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Started [[Sea Slug]]
+|-
+|Reach 800,000 [[Nightmare Zone]] points (or 400,000 with the [[Combat_Achievements/Hard|hard tier]] of the [[Combat Achievements]])
+|}
+|}
+{{Reflist}}
+
+|-|
+</tabber>

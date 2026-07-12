@@ -1,0 +1,18 @@
+==Details==
+{{Quest details
+|start = Talk to [[Will]] and [[Anne]] on the docks of Port Sarim.
+|startmap = 3025,3209
+|difficulty = Novice
+|description = Embark on your first voyage and unlock the Sailing skill.
+|length = Short
+|requirements = 
+|items = * [[Hammer]] (obtainable during the quest)
+* [[Saw]] (obtainable during the quest)
+|recommended = Fast travel to [[Port Sarim]] to start the quest; Teleport to pest control via minigame teleport or [[Pest control teleport]] and cross to Port Sarim, [[Teleport to House]] (Rimmington), [[skills necklace]] to [[Crafting Guild]], [[Rat Pits]] grouping teleport, [[amulet of glory]] to [[Draynor Village]], or [[explorer's ring]] 2-4
+|kills = 
+|ironman = 
+(Quest info)
+|leagueRegion = <poem>
+Starts in {{LeagueRegion|Asgarnia}} but is inaccessible due to [[Sailing]] being unavailable in the [[Demonic Pacts League]].
+</poem>
+}}

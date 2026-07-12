@@ -1,0 +1,15 @@
+==Details==
+{{Quest details
+|start = Talk to [[Brother Omad]] at the [[Ardougne Monastery]] south of [[East Ardougne]].
+|startmap = 2606,3209
+|difficulty = Novice
+|description = A monk's child has had their blanket stolen. Find the thieves' den and return the blanket, then help Brother Omad organise the drinks for the child's birthday party.
+|length = Very Short
+|requirements = The ability to run past two level 14 thieves, and one level 26.
+|items = * [[Jug of water]]
+* Regular [[logs]] or a regular [[plank]]
+|recommended =*Fast travel to [[Ardougne Monastery]] to start the quest - [[Ardougne cloak]] 1-4 or [[Ardougne Teleport]] or [[Spirit tree]] to [[Battlefield]] or [[fairy ring]] to {{fairycode|djp}} or [[Captain Barnaby]]'s ship from [[Rimmington]] or [[Brimhaven]]
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}

@@ -1,0 +1,27 @@
+==Walkthrough==
+===Starting out===
+{{Needed|[[Pot of flour]]}}
+{{Checklist|*Speak to [[Gordon]] south of the [[Farming Guild]]. {{Chat option|1Need a hand with anything?|1Yes.}}
+*Speak to [[Mary_(Getting_Ahead)|Mary]] inside the main building west of Gordon.
+
+===Tracking down the beast===
+{{Needed|Combat equipment}}
+*Use a [[pot of flour]] on the southern gate next to the cow pen east of Gordon.
+*Follow the trail of flour south past the bridge then west to the cave at the [[Kebos Lowlands mine]].
+*Kill the [[Headless Beast]].
+**''Optional'': Mine some [[clay]] in the mine and pick up two [[plank]]s just to the west while you're here.
+*Go back and speak to [[Gordon]].
+
+===Making the fake head===
+{{Needed|[[Soft clay]], [[knife]], [[bear fur]], [[needle]], [[thread]], [[red dye]], [[hammer]], [[saw]], two [[plank]]s, six nails of any kind}}
+*Speak to [[Gordon]].
+*Speak to [[Mary_(Getting_Ahead)|Mary]].
+*Make a [[clay head]] by using a [[knife]] on the [[soft clay]]. {{Chat option|1Yes.}}
+*Speak to [[Gordon]].
+*Make a [[fur head]] by using [[bear fur]] or [[grey wolf fur]] on the head while having a [[needle]] and [[thread]]. {{Chat option|1Yes.}}
+*Speak to [[Gordon]] again.
+*Make a [[bloody head]] by using [[red dye]] on the head. {{Chat option|1Yes.}}
+*Speak to [[Gordon]] again.
+*Mount the bloody head in the Mounted Head Space on the wall south of the stairs using two planks and six nails.
+*Speak to [[Gordon]] one more time.
+*'''Congratulations, quest complete!'''}}

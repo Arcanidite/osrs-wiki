@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|image=[[File:Dragon Slayer reward scroll.png|centre]]|name=Dragon Slayer I|qp=2|rewards=*{{SCP|Strength|18,650}} [[Strength]] experience
+*{{SCP|Defence|18,650}} [[Defence]] experience
+*The ability to be assigned [[dragons]] as a Slayer task (immediately after starting the quest)
+*The ability to use [[Dragonfire#Protection|dragonfire protection]] (partial completion required)
+*The ability to equip a [[green d'hide body]], [[rune platebody]], and [[dragon platebody]]
+*The ability to hire the ghost of [[Cabin Boy Jenkins]] as a [[crewmate]] with {{SCP|Sailing|60|link=yes}}.
+}}
+
+*Access to [[Crandor]]
+*Access to the [[Corsair Cove Resource Area]]
+
+Unlocks:
+* [[Elvarg]] accessible in the [[Nightmare Zone]].

@@ -1,0 +1,46 @@
+==Details==
+{{Quest details
+|start = Talk to [[Garth (Theatre of Blood)|Garth]] in [[Ver Sinhaza]] by the entrance to the [[Theatre of Blood]].
+|startmap = 3668,3215
+|difficulty = Experienced
+|description = For many years, the Myreque have fought back against the reign of the Drakans. To many, they act as a glimmer of hope in an otherwise miserable existence. In recent times, the Myreque have been beset by disaster, with numerous members meeting a gruesome end at the hands of Vanstrom Klause, the brutal henchman of the Drakans. However, while the Myreque may be in their darkest hour, hope still remains. Thanks to a recent discovery in the laboratories deep beneath Meiyerditch, the Myreque may have finally found a way to take the fight to the vampyres.
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[Darkness of Hallowvale]]
+***[[In Aid of the Myreque]]
+****[[In Search of the Myreque]]
+*****[[Nature Spirit]]
+******[[Priest in Peril]]
+******[[The Restless Ghost]]
+*{{SCP|Crafting|48|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Agility|45|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Attack|40|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Herblore|40|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Slayer|38|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+|items = *1,000 [[coins]] (More if taking [[Andras]]' boat from the [[Ectofuntus]], 10,000 each trip)
+*[[Knife]] or [[sickle]]
+*[[Emerald]]
+*[[Chisel]]
+*Either:
+**3 [[air rune]]s, 1 [[cosmic rune]], and having your magic set to the [[standard spells|standard Spellbook]]
+**An [[enchant emerald or jade]] [[tablet]]
+*[[Rod of ivandis]] (obtainable during the quest)
+*[[Pestle and mortar]] (obtainable during the quest)
+*[[Vial of water]] (obtained during the quest)
+*[[Weapons]] and [[armour]]
+|recommended = *{{SCP|Combat|70|link=yes}}
+*[[Pickaxe]] (can be obtained during the quest)
+*[[Stamina potion]] and [[weight-reducing clothing]]
+*[[Explorer's ring]] for the run-energy regeneration function
+*[[Morytania legs 3]] or [[Morytania legs 4|4]] or another means of reaching [[Burgh de Rott]] quickly to reach [[Meiyerditch]]
+**Alternatively: An [[ectophial]] and an additional 10,000 coins per trip for taking [[Andras]]' boat ride from Port Phasmatys
+** Consider the [[Shades of Mort'ton (minigame)|Shades of Mort'ton]] minigame teleport as well.
+*[[Restore potion]] or [[super restore]] to restore stats during the [[abomination]] fight.
+|kills = *[[Abomination]] (Level 149)
+*[[Ranis Drakan]] (level 233) (must be fought using melee)
+*4 [[vyrewatch]] (level 87)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}
+'''Please Note:''' Whilst the requirements for this quest are relatively low, the final boss fight is '''very hard''' for lower [[combat level]] players. It is recommended to have at least 60+ in [[Melee]] skills and 43+ [[Prayer]] minimum.

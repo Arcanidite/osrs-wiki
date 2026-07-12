@@ -1,0 +1,43 @@
+==Details==
+{{Quest details
+|start = Talk to [[Velorina]] in [[Port Phasmatys]].
+|startmap = 3677,3510
+|difficulty = Intermediate
+|description = East of [[Canifis]] is a ghost port. Not meaning that it's deserted. It's full of ghosts! For some reason, they're unable to pass on to the afterlife, but some aren't happy with that. Can you help?
+|length = Medium
+|requirements = * Completed [[Priest in Peril]]
+* Completed [[The Restless Ghost]]
+* {{SCP|Agility|25|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Cooking|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = * Some amount of [[Ecto-tokens]]:
+** 31 [[Ecto-token]]s (16 with [[ring of charos (a)]])
+** OR 25 Ecto-tokens (10 with ring) using [[charter ship]]s
+** OR 1 bone, 1 pot, and 1 bucket for every 5 ecto-tokens required (see [[Ghosts_Ahoy#Pre-quest: Obtaining Ecto-tokens at the Ectofuntus|Pre-quest]] for more info)
+* ~400 [[Coins]]
+* [[Ghostspeak amulet]]
+* [[Bucket of milk]]
+* [[Silk]]
+* 3 colours of [[dye]] (The dye colours you will need are random. If you want to save a trip, have 3 [[Red dye|red]], 3 [[Blue dye|blue]], and 3 [[yellow dye]]s. That way, you can mix whatever colours you end up needing.)
+*[[Spade]]
+*[[Oak longbow]]
+*[[Knife]] (can be purchased from the Canifis general store)
+*[[Needle]] and [[thread]] (can be purchased from the Canifis general store) or a [[costume needle]]
+* One extra [[bucket of slime]] for colouring the bed sheet (can be purchased from a [[Charter ship]] crewmember at the port).
+* [[Nettle tea]] (prepared ahead of time, within a [[bowl of water]]) ''or'' items to make nettle tea:
+** A [[tinderbox]] and a [[log]] of which you have the [[Firemaking]] level to light. Tinderbox can be purchased from the general store during quest
+**[[Gloves]] (must be closed fingered - [[Slayer gloves]], [[Ranger gloves]], [[Infinity gloves]], [[Moonclan gloves]], [[Granite gloves]], [[Lunar gloves]] and [[Beekeeper's gloves]] won't work)
+**[[Nettles]] (obtainable during the quest)
+**[[Bowl of water]] (empty bowl can be purchased during quest -- the [[gold bowl]] won't work)
+|recommended = * {{SCP|Combat|15|link=yes}}
+* Level {{SCP|Agility|58}} [[Agility]] (can be boosted) to save time at the [[Ectofuntus]]
+* [[Food]] and [[weapon]]s to defeat a level 32 foe
+* 2-3 [[Stamina potion]]s
+* Fast travel between quest locations ([[Slayer ring]] to Slayer Tower, [[Fenkenstrain's castle teleport]], [[Kharyrll teleport|Canifis teleport]] or [[Fairy Rings]]).
+|kills = * [[Giant lobster (Ghosts Ahoy)|Giant lobster]] ''(level 32)'' Can be [[safespot]]ted.
+|ironman = [[File:Ultimate_ironman_chat_badge.png]] [[Nettle tea]] and [[bucket of milk]] can be combined before the quest starts to save inventory space
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}

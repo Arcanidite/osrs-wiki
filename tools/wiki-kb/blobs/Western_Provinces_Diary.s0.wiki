@@ -1,0 +1,17 @@
+{{Infobox Achievement Diary
+|name = Western Provinces Diary
+|image = [[File:Western Provinces Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Tree Gnome Stronghold]], [[Feldip Hills]], [[Ape Atoll]], [[Pest Control Island]], and [[Tirannwn]]
+|members = Yes
+|reward = [[Western banner|Banner]]
+|taskmasters = [[Elder Gnome child]]
+|leagueRegion = Kandarin&Tirannwn
+}}
+{{Map|name=Elder Gnome child|x=2467|y=3459|r=5|mtype=square|height=250|width=250|align=left|caption=Elder gnome child's location}}
+The '''Western Provinces Diary''' is an [[Achievement Diary]] whose tasks revolve around areas in the western provinces of [[Gielinor]], such as the [[Tree Gnome Stronghold]], [[Feldip Hills]], [[Tirannwn]], and [[Ape Atoll]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from the [[Elder Gnome child]] just south of the [[Grand Tree]] in the [[Tree Gnome Stronghold]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

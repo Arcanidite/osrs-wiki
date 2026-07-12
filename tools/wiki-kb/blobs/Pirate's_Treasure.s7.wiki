@@ -1,0 +1,8 @@
+==Reward==
+{{Quest rewards
+|name = Pirate's Treasure
+|image = [[File:Pirate's Treasure reward scroll.png|centre]]
+|qp = 2
+|rewards =
+*Access to [[Casket (Pirate's Treasure)|One-Eyed Hector's Treasure Chest]] (contains a [[gold ring]], an [[emerald]], and 450 [[coins]]).
+}}

@@ -1,0 +1,41 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Monk (Devious Minds)|monk]] outside the [[Paterdomus Temple]], at the northern end of the [[River Salve]].
+|startmap = 3406,3492
+|difficulty = Experienced
+|description = No-one likes to miss a good ceremony, least of all a poor lowly monk who needs your assistance! Will you be able to aid him and make his dreams come true?
+|length = Short
+|requirements = *{{SCP|Smithing|65|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Runecraft|50|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Fletching|50|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+*Completion of the following quests:
+**[[Wanted!]]
+***[[Recruitment Drive]]
+****[[Black Knights' Fortress]]
+****[[Druidic Ritual]]
+***[[The Lost Tribe]]
+****[[Goblin Diplomacy]]
+****[[Rune Mysteries]]
+***[[Priest in Peril]]
+***[[Enter the Abyss]]
+**[[Troll Stronghold]]
+***[[Death Plateau]]
+**[[Doric's Quest]]
+|items = *A [[mithril 2h sword]]
+*A [[bow string]]
+*A non-degraded [[large pouch|large]] or [[colossal pouch]]
+:''(You '''will''' lose all 3 items!)'' unless a colossal pouch is used.
+|recommended = *{{SCP|Combat|30|link=yes}}
+*[[Falador teleport]]s
+*[[Lumberyard teleport]]s,  a [[Digsite pendant]], a [[Salve graveyard teleport (tablet)]], or a [[Dramen staff|Dramen]]/[[Lunar staff]]
+*An [[amulet of glory]] or [[Paddewwa teleport]]s
+|kills = [[Abyssal creature]]s level 41+ (if not using [[Guardians of the Rift]] to obtain a large pouch)
+|ironman = 
+*[[Mithril 2h sword]] can be purchased at [[Gaius' Two Handed Shop]] in [[Taverley]] for {{Coins|2600}}
+[[File:Ultimate ironman chat badge.png]] The player visits [[Entrana]] for a portion of the quest. Plan ahead as the Large Pouch with the orb in it is lost on death. 
+'''{{Colour|red|Warning:}}''' [[File:Hardcore_ironman_chat_badge.png]] The quest involves travelling via the [[Abyss]] located in level 4-7 [[Wilderness]], with a chance of getting killed by other players.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

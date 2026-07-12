@@ -1,0 +1,38 @@
+==Details==
+{{Quest details
+|start = Talk to [[Vanstrom Klause]] at the [[Hair of the Dog]] tavern in [[Canifis]].
+|startmap = 3503,3477
+|difficulty = Intermediate
+|description = Canifis is experiencing an upsurge in new faces and a new stranger has appeared with a job to track down some local heroes known only as "The Myreque". The Myreque are fighting a desperate battle against the darkness of Morytania and he wishes to take them weapons to aid in the battle. Can you help him out?
+|length = Short
+|requirements = * Completion of the following quests:
+** [[Nature Spirit]]
+*** [[Priest in Peril]]
+*** [[The Restless Ghost]]
+* {{SCP|Agility|25|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* The ability to defeat a level 97 foe ([[safespot]]table)
+|items = * A [[steel longsword]]
+* 2 [[steel sword]]s
+* A [[steel mace]]
+* A [[steel warhammer]]
+* A [[steel dagger]]
+* 225 [[steel nails]]
+* A [[Druid pouch]] containing at least 5 charges (3 charges must be added per fill)
+**6 [[Mort myre fungus]] OR 3 [[Mort myre pear]] OR 3 [[Mort myre stem]] to fill the pouch
+**A [[Silver sickle (b)]] to collect these items for the charges if not buying from the [[Grand Exchange]]
+* A [[hammer]] or [[Imcando hammer]]
+* 6 normal [[plank]]s
+* 10 [[coins]] ''or'' a [[ring of charos (a)]]
+|recommended = * {{SCP|Combat|45|link=yes}}
+* {{SCP|Prayer|43}} [[Prayer]] for [[Protect from Melee]]
+* [[Prayer potion]]s
+* [[Food]]
+*Fast travel to several locations
+**[[Canifis]] to start the quest - [[Kharyrll Teleport]], [[Salve Graveyard Teleport]], [[fairy ring]] {{fairycode|CKS}}, [[Slayer ring]] to [[Slayer Tower]], or [[Fenkenstrain's Castle Teleport]]
+**[[Mort'ton]] (1 trip) - [[Mort'ton Teleport]], [[Shades of Mort'ton]] minigame teleport, [[Barrows Teleport]], or [[fairy ring]]  {{Fairycode|bkr}} and take the [[swamp boaty]]
+|kills = * [[Skeleton Hellhound]] ''(level 97)'' - safespottable
+|ironman = All of the required steel weapons can be purchased from [[Briget's Weapons]] in [[Shayzien]], except for the [[steel warhammer]], which can be purchased from [[Vigr's Warhammers]] in [[Keldagrim]], or from [[Mount Karuulm Weapon Shop]] in [[Mount Karuulm]].
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}

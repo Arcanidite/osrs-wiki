@@ -1,0 +1,42 @@
+==Details==
+{{Quest details
+|description = A messenger has an important letter for you. Apparently, a great treasure lies with the God Wars Dungeon beneath Trollheim. Defeat the leaders of each of the four armies and claim your prize behind the frozen door...
+|start = Receive an [[important letter]] from a [[Messenger (The Frozen Door)|messenger]].
+|difficulty = Master
+|length = Short
+|members = Yes
+|requirements = * Completion of [[Desert Treasure I]]
+* {{SCP|Agility|70|link=yes}} {{Boostable|no}} {{Questreqstart|No}}
+* {{SCP|Hitpoints|70|link=yes}} {{Boostable|yes}} {{Questreqstart|No}}
+* {{SCP|Ranged|70|link=yes}} {{Boostable|no}} {{Questreqstart|No}}
+* {{SCP|Strength|70|link=yes}} {{Boostable|no}} {{Questreqstart|No}}
+|items = * [[Mith grapple]]
+* A [[Crossbow (weapon)|crossbow]]
+* 2 [[rope]]s to reach [[Saradomin's Encampment]]; one-time only
+* A [[hammer]] or [[dragon warhammer]]
+|recommended = * {{SCP|Combat|90|link=yes}}
+* Equipment to kill all four [[God Wars Dungeon]] generals
+|kills = * [[Kree'arra]] ''(level 580)''
+* [[General Graardor]] ''(level 624)''
+* [[Commander Zilyana]] ''(level 596)''
+* [[K'ril Tsutsaroth]] ''(level 650)''
+
+Alternatives:
+
+*[[Flight Kilisa]] ''(level 159)''
+*[[Wingman Skree]] ''(level 143)''
+*[[Flockleader Geerin]] ''(level 149)''
+*[[Sergeant Strongstack]] ''(level 141)''
+*[[Sergeant Steelwill]] ''(level 142)''
+*[[Sergeant Grimspike]] ''(level 142)''
+*[[Bree]] ''(level 146)''
+*[[Starlight]] ''(level 149)''
+*[[Growler]] ''(level 139)''
+*[[Tstanon Karlak]] ''(level 145)''
+*[[Zakl'n Gritch]] ''(level 142)''
+*[[Balfrug Kreeyath]] ''(level 151)''
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} - location requirement
+The miniquest '''does not''' require completion of [[Desert Treasure I]]
+</poem>
+}}

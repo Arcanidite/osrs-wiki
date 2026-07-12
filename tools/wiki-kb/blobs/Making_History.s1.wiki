@@ -1,0 +1,34 @@
+==Details==
+{{Quest details
+|start = Talk to [[Jorral]] in the [[outpost]] north-west of [[West Ardougne]].
+|startmap = 2435,3346
+|difficulty = Intermediate
+|description = A secluded outpost has served the City of Ardougne for generations, playing stage to many exceptional events. Its current occupant wants to employ your skills to construct its true history before time runs out and history itself is wiped away!
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Priest in Peril]]
+**[[The Restless Ghost]]
+|items = *[[Spade]]
+*[[Sapphire amulet]]
+*[[Ghostspeak amulet]] or [[Morytania legs 2]] or higher
+*A way to enter [[Port Phasmatys]]
+**Completion of [[Ghosts Ahoy]] ''or''
+**2 [[ecto-token]] ''or''
+**1 [[bone]], 1 [[pot]] and 1 [[bucket]] to earn 5 ecto-tokens (you still only need two) ''or''
+**5,200 gold for a [[Charter ship]] to [[Port Phasmatys]] (cheaper depending upon where you travel from and if you use [[ring of charos]]).
+|recommended = 
+*[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*Fast travel to several locations
+**[[The Outpost]] (3 trips) - [[Necklace of passage]] or [[Ardougne Teleport]]
+**[[East Ardougne]] (2 trips) - [[Ardougne Teleport]]
+**[[Port Phasmatys]] (1 trip) - [[Ectophial]] or [[Fairy ring]] to {{fairycode|alq}} or [[Charter ship]] to [[Port Phasmatys]] for {{Coins|5200}}
+**[[Castle Wars]] (1 trip) - [[Ring of dueling]] or [[Castle Wars]] [[minigame teleport]] or [[Fairy ring]] to {{fairycode|bkp}}
+**[[Rellekka]] (1 trip) - [[Fremennik sea boots]] 1-4 or [[Enchanted lyre]] or [[Rellekka teleport]] or [[Fairy ring]] to {{fairycode|dks}}
+|ironman = *{{SCP|Crafting|24}} [[Crafting]] (if making own [[sapphire amulet (u)]])
+|leagueRegion = <poem>
+{{LeagueRegion|Fremennik}} — location requirement
+{{LeagueRegion|Kandarin}} — location requirement
+{{LeagueRegion|Morytania}} — location requirement
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

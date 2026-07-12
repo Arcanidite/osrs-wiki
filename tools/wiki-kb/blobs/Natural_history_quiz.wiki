@@ -1,0 +1,637 @@
+{{external|rs}}
+{{Redirect|Quiz|the random event NPC|Quiz master}}
+The '''natural history quiz''' is the basement section of the [[Varrock Museum]] [[miniquest]]. It consists of 14 creature displays in which the player must answer 3 questions correctly in order to earn 2 [[kudos]] each for a total of 28.
+
+Each of the rooms has a [[Natural historian]] who will give a lecture about each creature for which the quiz is based on.
+
+To start the quiz, speak to [[Orlando Smith]], who is located on the basement floor in the centre of the room. Click on the plaque in front of a display to get a question. After answering 3 questions correctly, the quiz questions are replaced by the common name and scientific name of the animal.
+
+Most of the answers are straightforward, and as you only need to get three correct, a good approach is simply to attempt the quiz. However, all the answers are contained in the Natural historians' lectures and the sections of this article.
+
+Orlando's message:
+*Correct: Nice job, mate. That looks about right.
+*Wrong: Hmm, I don't think that's right, mate. Try again.
+*Finished: Bonza, mate! I think that's all of them.
+**Note: After finishing the quiz for each display, the questions will no longer be available.
+*"This looks like some sort of quiz. I wonder if I can take part..." Getting this message means the player needs to talk to Orlando first.
+
+;Rewards
+
+Once all questions are complete, speak to Orlando again to receive 1000 XP in both [[Hunter]] and [[Slayer]]. If this is the first Slayer experience you have received, you won't receive a free [[enchanted gem]] from the [[Slayer master]]s during your first assignment and will need to pay one [[Coins|coin]] for it instead.
+
+==North room==
+===[[Lizard]]===
+''Lacertilia Giganteus'', Latin for "Giant lizard" Display number 4
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|How does a lizard regulate body heat?
+|
+*Chilli sauce
+*Fire
+*'''Sunlight''' {{Okay}}
+|-
+|Who discovered how to kill lizards?
+|
+*Admiral Bake
+*'''The Slayer Masters''' {{Okay}}
+*The Wise Old Man
+|-
+|How many eyes does a lizard have?
+|
+*Two
+*'''Three''' {{Okay}}
+*Six
+|-
+|What order do lizards belong to?
+|
+*Mammal
+*'''Squamata''' {{Okay}}
+*Insecta
+|-
+|What happens when a lizard becomes cold?
+|
+*'''It becomes sleepy''' {{Okay}}
+*It becomes aggressive
+*It explodes
+|-
+|Lizard skin is made of the same substance as?
+|
+*'''Hair''' {{Okay}}
+*Bone
+*Wood
+|}
+
+===Battle [[tortoise]]===
+''Testudines Giganteus'', Latin for "Giant tortoise" Display number 3
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is the name of the oldest tortoise ever recorded?
+|
+*Healthorg
+*'''Mibbiwocket''' {{Okay}}
+*Snookums
+|-
+|What is a tortoise's favourite food?
+|
+*Sharks
+*Kebabs
+*'''Vegetables''' {{Okay}}
+|-
+|Name the explorer who discovered the world's oldest tortoise.
+|
+*'''Admiral Bake''' {{Okay}}
+*Captain Cook
+*Ensign Chef
+|-
+|How does the tortoise protect itself?
+|
+*Thick skin
+*Magic
+*'''Hard shell''' {{Okay}}
+|-
+|If a tortoise had twenty rings on its shell, how old would it be?
+|
+*Ten years
+*'''Twenty years''' {{Okay}}
+*Sixty years
+|-
+|Which race breeds tortoises for battle?
+|
+*'''Gnomes''' {{Okay}}
+*Orks
+*Elves
+|}
+
+===[[Dragon (race)|Dragon]]===
+"Draconis Rex", Latin for "king dragon" Display number 1
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is considered a delicacy by dragons?
+|
+*Adventurers
+*'''Runite''' {{Okay}}
+*Cheese
+|-
+|What is the best defence against a dragon's attack?
+|
+*'''Anti-dragon-breath shield''' {{Okay}}
+*Rune plate
+*Cats
+|-
+|How long do dragons live?
+|
+*Fifty years
+*Forever
+*'''Unknown''' {{Okay}}
+|-
+|Which of these is not a type of dragon?
+|
+*Coloured
+*'''Elemental''' {{Okay}}
+*Ferrous
+|-
+|What is the favoured territory of a dragon?
+|
+*Swamps
+*'''Old battle sites''' {{Okay}}
+*Lumbridge Castle
+|-
+|Approximately how many feet tall do dragons stand?
+|
+*'''Twelve''' {{Okay}}
+*Six
+*Ten
+|}
+
+===[[Wyvern]]===
+''Draconis Ossis'', Latin for "bone dragon" Display number 2
+{| class="wikitable sortable mw-collapsible"
+|+
+! Question !! Answer
+|-
+| How did the wyverns die out? ||
+*'''Climate change''' {{Okay}}
+*Disease
+*Marauding adventurers
+|-
+| How many legs does a wyvern have? ||
+*'''Two''' {{Okay}}
+*Five
+*Six
+|-
+| Where have wyvern bones been found? ||
+* Ape Atoll
+*Al Kharid
+*'''Asgarnia''' {{Okay}}
+|-
+| Which genus does the wyvern theoretically belong to? ||
+* Invertebrates
+*'''Reptiles''' {{Okay}}
+*Mammals
+|-
+| What are the wyverns' closest relations? ||
+* Lizards
+*Snakes
+*'''Dragons''' {{Okay}}
+|-
+| What is the ambient temperature of wyvern bones? ||
+* Room temperature
+*'''Below room temperature''' {{Okay}}
+*Above room temperature
+|}
+
+==East room==
+===[[Snail]]===
+Giant Snail (''Achatina Acidia Giganteus)'', Latin for "giant acid snail" Display number 14
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is special about the shell of the giant Morytanian snail?
+|
+*It glows in the dark
+*It is very tasty
+*'''It is resistant to acid''' {{Okay}}
+|-
+|How do Morytanian snails capture their prey?
+|
+*Aggressive marketing
+*'''Spitting acid''' {{Okay}}
+*Hex them until they glow
+|-
+|Which of these is a snail byproduct?
+|
+*'''Fireproof oil''' {{Okay}}
+*A musical instrument
+*Snail-a-cola
+|-
+|What does 'Achatina Acidia' mean?
+|
+*Giant acid-spitting snail
+*'''Acid-spitting snail''' {{Okay}}
+*Giant cheese-spitting snail
+|-
+|How do snails move?
+|
+*Flapping their wings
+*'''Contracting and stretching''' {{Okay}}
+*Hopping about
+|-
+|What is the 'trapdoor', which snails use to cover the entrance to their shells called?
+|
+*'''An operculum''' {{Okay}}
+*A caldarium
+*A tavernium
+|}
+
+===[[Snake]]===
+''Serpentes Fellis'', Latin for 'serpent gallbladder' Display number 13
+
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is snake venom adapted from?
+|
+*Ear wax
+*'''Stomach acid''' {{Okay}}
+*Saliva
+|-
+|Aside from their noses, what do snakes use to smell?
+|
+*'''Tongue''' {{Okay}}
+*Eyes
+*Ears
+|-
+|If a snake sticks its tongue out at you, what is it doing?
+|
+*Being rude
+*Seeing how you taste
+*'''Seeing how you smell''' {{Okay}}
+|-
+|If some snakes use venom to kill their prey, what do other snakes use?
+|
+*Fire
+*'''Constriction''' {{Okay}}
+*Magic
+|-
+|Lizards and snakes belong to the same order - what is it?
+|
+*'''Squamata''' {{Okay}}
+*Insecta
+*Sarcopterghii
+|-
+|Which habitat do snakes prefer?
+|
+*The desert
+*The ocean
+*'''Anywhere''' {{Okay}}
+|}
+
+===[[Sea slug (race)|Sea slug]]===
+''Opisthobranchia Alucinor'', literally "Behind gill dream" Display number 12
+
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|We assume that sea slugs have a stinging organ on their soft skin - what is it called?
+|
+*'''Nematocysts''' {{Okay}}
+*Hematocysts
+*Pematocysts
+|-
+|Why has the museum never examined a live sea slug?
+|
+*The sea slugs are shy
+*'''The researchers keep vanishing''' {{Okay}}
+*Sea slugs are extinct
+|-
+|What do we think the sea slug feeds upon?
+|
+*Blood
+*'''Seaweed''' {{Okay}}
+*Insects
+|-
+|What are the two fangs presumed to be used for?
+|
+*'''Defence or display''' {{Okay}}
+*Attacking prey
+*Latching on to objects
+|-
+|Off of which coastline would you find sea slugs?
+|
+*Karamja
+*Miscellania
+*'''Ardougne''' {{Okay}}
+|-
+|In what way are sea slugs similar to snails?
+|
+*They eat lettuce
+*They move very slowly
+*'''They have a hard shell''' {{Okay}}
+|}
+
+===[[Monkey]]===
+''Simiiformes Karamjan'', Latin for "Karamjan primate" Display number 11
+
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|Which type of primates do monkeys belong to?
+|
+*'''Simian''' {{Okay}}
+*Hominid
+*Lagomorpha
+|-
+|Which have the lighter colour: Karamjan or Harmless monkeys?
+|
+*They are the same
+*Karamjan
+*'''Harmless''' {{Okay}}
+|-
+|Monkeys love bananas. What else do they like to eat?
+|
+*Chili
+*Seaweed
+*'''Bitternuts''' {{Okay}}
+|-
+|There are two known families of monkeys. One is Karamjan, the other is...?
+|
+*Pointless
+*'''Harmless''' {{Okay}}
+*Hairless
+|-
+|What colour mohawk do Karamjan monkeys have?
+|
+*'''Red''' {{Okay}}
+*Blue
+*Green
+|-
+|What have Karamjan monkeys taken a deep dislike to?
+|
+*'''Seaweed''' {{Okay}}
+*Chili
+*Taxes
+|}
+==South room==
+===[[Kalphite Queen]]===
+'''Kalphiscarabeinae Pasha''', Latin for 'kalphite-scarab', 'Pasha' is an Ottoman rank corresponding to 'Lord' Display number 10
+
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|Kalphites are ruled by a...?
+|
+*King
+*'''Pasha''' {{Okay}}
+*Caliph
+|-
+|What is the lowest caste in kalphite society?
+|
+*Prince
+*Soldier
+*'''Worker''' {{Okay}}
+|-
+|What are the armoured plates on a kalphite called?
+|
+*Hauberk
+*'''Lamellae''' {{Okay}}
+*Shield
+|-
+|Are kalphites carnivores, herbivores, or omnivores?
+|
+*Omnivores
+*Herbivores
+*'''Carnivores''' {{Okay}}
+|-
+|What are kalphites assumed to have evolved from?
+|
+*'''Scarab beetles''' {{Okay}}
+*Penguins
+*Dragons
+|-
+|Name the prominent figure in kalphite mythology?
+|
+*Postie Pete
+*'''Scabaras''' {{Okay}}
+*Jorral the Historian
+|}
+===[[Terrorbird]]===
+''Aves Terror'' literally 'Bird terror', correctly translated as ''Aves Formidonis'' Display number 9
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is a terrorbird's preferred food?
+|
+*'''Anything''' {{Okay}}
+*Pizza
+*Vegetables
+|-
+|Who use terrorbirds as mounts?
+|
+*Dwarves
+*'''Gnomes''' {{Okay}}
+*Goblins
+|-
+|Where do terrorbirds get most of their water?
+|
+*Streams and rivers
+*Licking trees
+*'''Eating plants''' {{Okay}}
+|-
+|How many claws do terrorbirds have?
+|
+*Two
+*'''Four''' {{Okay}}
+*Six
+|-
+|What do terrorbirds eat to aid digestion?
+|
+*Blurite
+*'''Stones''' {{Okay}}
+*Paper
+|-
+|How many teeth do terrorbirds have?
+|
+*28
+*14
+*'''0''' {{Okay}}
+|}
+
+==West room==
+===[[Penguin]]===
+''Spheniscidae Callidus, ''Latin for "Cunning Penguin" Display number 8
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|Which sense do penguins rely on when hunting?
+|
+*Smell
+*Taste
+*'''Sight''' {{Okay}}
+|-
+|Which skill seems unusual for the penguins to possess?
+|
+*'''Planning''' {{Okay}}
+*Fishing
+*Sleeping
+|-
+|How do penguins keep warm?
+|
+*'''A layer of fat''' {{Okay}}
+*Vigorous exercise
+*Magic
+|-
+|What is the preferred climate for penguins?
+|
+*'''Cold''' {{Okay}}
+*Hot
+*Damp
+|-
+|Describe the behaviour of penguins?
+|
+*'''Social''' {{Okay}}
+*Asocial
+*Hive
+|-
+|When do penguins fast?
+|
+*Just before dawn
+*'''During breeding''' {{Okay}}
+*During the night
+|}
+
+===[[Mole]]===
+Giant Mole (''Talpidae Wysonian'', Latin for 'Mole of Wyson') Display number 7
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What habitat do moles prefer?
+|
+*'''Subterranean''' {{Okay}}
+*Any
+*Subaquatic
+|-
+|Why are moles considered to be an agricultural pest?
+|
+*'''They dig holes''' {{Okay}}
+*They eat food meant for livestock
+*They attack farmers
+|-
+|Who discovered giant moles?
+|
+*Sir Tiffy Cashien
+*Ak-Haranu
+*'''Wyson the Gardener''' {{Okay}}
+|-
+|What would you call a group of young moles?
+|
+*A litter
+*A mess
+*'''A labour''' {{Okay}}
+|-
+|What is a mole's favourite food?
+|
+*'''Insects and other invertebrates''' {{Okay}}
+*Humans and gnomes
+*Seeds and plant roots
+|-
+|Which family do moles belong to?
+|
+*The Malpidae family
+*'''The Talpidae family''' {{Okay}}
+*The Falpidae family
+|}
+
+===[[Camel]]===
+''Camelus Bactrian'', (Latin for "Bactrian camel") Display number 6
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is produced by feeding chilli to a camel?
+|
+*An irate camel
+*'''Toxic dung''' {{Okay}}
+*An undead bactrian
+|-
+|If an ugthanki has one, how many does a bactrian have?
+|
+*One
+*'''Two''' {{Okay}}
+*Four
+|-
+|Camels:herbivore, carnivore or omnivore?
+|
+*Herbivore
+*Carnivore
+*'''Omnivore''' {{Okay}}
+|-
+|What is the usual mood for a camel?
+|
+*'''Annoyed''' {{Okay}}
+*Bemused
+*Cheerful
+|-
+|Where would you find an ugthanki?
+|
+*'''Al Kharid''' {{Okay}}
+*Morytania
+*Nowhere
+|-
+|Which camel byproduct is known to be very nutritious?
+|
+*'''Milk''' {{Okay}}
+*Dung
+*Meat
+|}
+
+===[[Leech]]===
+Giant Leech (''Hirudinea Acidia'', Latin for "Sharp") Display number 5
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is the favoured habitat of leeches?
+|
+*'''Water''' {{Okay}}
+*Desert
+*Trees
+|-
+|What shape is the inside of a leech's mouth?
+|
+*Star-shaped
+*'X'-shaped
+*''''Y'-shaped''' {{Okay}}
+|-
+|Which of these is not eaten by leeches?
+|
+*Meat
+*'''Apples''' {{Okay}}
+*Blood
+|-
+|What contributed to the giant growth of Morytanian leeches?
+|
+*'''Environment''' {{Okay}}
+*Healthy living
+*Magic
+|-
+|What is special about the Morytanian leeches?
+|
+*They sing
+*'''They attack by jumping''' {{Okay}}
+*They have legs
+|-
+|How does a leech change when it feeds?
+|
+*It turns blue
+*It starts singing
+*'''It doubles in size''' {{Okay}}
+|}
+{{Miniquests}}
+[[Category:Miniquests]]

@@ -1,0 +1,16 @@
+==Rewards==
+{{Quest rewards
+|name = In Search of the Myreque
+|image = [[File:In Search of the Myreque reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Attack|600}} [[Attack]] [[experience]]
+*{{SCP|Defence|600}} [[Defence]] experience
+*{{SCP|Strength|600}} [[Strength]] experience
+*{{SCP|Hitpoints|600}} [[Hitpoints]] experience
+*{{SCP|Crafting|600}} [[Crafting]] experience
+*Access to [[The Hollows|the Hollows]] and [[fairy ring]] {{fairycode|dls}}
+
+Unlocks:
+* [[Skeleton Hellhound]] accessible in the [[Nightmare Zone]].
+}}

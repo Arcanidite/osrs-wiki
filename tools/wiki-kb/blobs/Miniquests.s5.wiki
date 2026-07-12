@@ -1,0 +1,30 @@
+===Lore===
+{| class="wikitable lighttable"
+! Name
+! Requirements
+! Length
+! Unlock
+! How to start
+|-
+| Recovering [[Copper's crimson collar]]
+| Completion of [[Client of Kourend]]
+| Short
+| None
+| Use [[wolf bones]] on [[Veos]] after completing [[Client of Kourend]], but before progressing too far in [[A Kingdom Divided]].
+|-
+| [[Spirit of Adventure]]
+| [[Ghostspeak amulet]] or [[Morytania legs 2]] or above
+| Short
+| None
+| Talk to the [[Ghost (Bernina)]] near the [[Auburn Valley]] coast wearing a [[ghostspeak amulet]].
+|-
+| [[Lost Lover]]
+| None
+| Short
+| None
+| Talk to either [[Fabia]] or [[Xilo]] in the [[Tlati Rainforest]].
+|}
+{{Miniquests}}
+</noinclude>
+
+[[Category:Members]]

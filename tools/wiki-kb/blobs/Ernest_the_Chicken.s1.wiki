@@ -1,0 +1,20 @@
+==Details==
+{{Quest details
+|start = Talk to [[Veronica]], south of [[Draynor Manor]] by the gate.
+|startmap = 3110,3330
+|difficulty = Novice
+|description = Veronica is very worried. Her fiancé went into the big spooky manor house to ask for directions. An hour later and he's still not out yet.
+|length = Very Short
+|requirements = *The ability to defend from a level 22 [[Skeleton]].
+|items = 
+* [[Spade]] (obtainable during the quest)
+* [[Fish food]] (obtainable during the quest)
+* [[Poison (item)|Poison]] (obtainable during the quest)
+|recommended = 
+*''(Members only)'' Fast travel to Draynor Manor ([[Draynor Manor Teleport]] or [[amulet of glory]])
+* [[Food]] (If lower hp a lvl 22 skeleton and dead trees attack you)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

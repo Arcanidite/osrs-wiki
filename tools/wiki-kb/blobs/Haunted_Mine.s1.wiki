@@ -1,0 +1,36 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Zealot]] by the [[Abandoned Mine]] in the south-western corner of [[Morytania]].
+|startmap = 3444,3257
+|difficulty = Experienced
+|description = Recent forays into Morytania by some of Saradomin's more fanatical supporters have unearthed murky rumours concerning an abandoned mine in the south.
+
+Legend speaks of an unusual material, hidden in the depths of the mines, that is somehow linked to the desolation and fear that now surrounds the place. Do you have the nerve to find out more, and enter the haunted mines of Morytania?
+|length = Short
+|requirements = * Completion of the following quests:
+** [[Priest in Peril]]
+* {{SCP|Crafting|35||link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 95 enemy
+* Access to [[Abandoned Mine]]
+|items = * A [[chisel]] (obtainable during the quest)
+|recommended = * {{SCP|Combat|50|link=yes}}
+* {{SCP|Agility|15|link=yes}} {{Boostable|Yes}} if climbing over the mine cart and crawling down the cart tunnel of the front entrance
+* {{SCP|Prayer|40|link=yes}}
+* 2 empty inventory spaces, one for [[Zealot's key]] and one for the [[glowing fungus]]
+*Fast travel to [[Abandoned Mine]] to start the quest - [[Mort'ton Teleport]], [[fairy ring]] {{fairycode|BIP}} (req {{SCP|Agility|50|link=yes}}), [[Shades of Mort'ton (minigame)|Shades of Mort'ton minigame]] teleport, [[Barrows Teleport]], [[fairy ring]] {{fairycode|BKR}} and take the [[swamp boaty]] (requires completion of [[In Search of the Myreque]])
+*A filled [[druid pouch]] if not using the [[low fence]] agility shortcut from Burgh de Rott to skip the swamp section
+* A [[pickaxe]] to mine mithril ore after the quest for the hard [[Morytania Diary]] (obtainable during the quest) (requires {{SCP|Mining|55|link=yes}})
+* A [[Slayer Ring]] for easy completion of the [[Lair of Tarn Razorlor]] miniquest after completing [[Haunted Mine]]
+The boss fight at the end of the quest is '''considerably''' more difficult than the boss's combat level may suggest. It is highly recommended to bring:
+* Good combat equipment (at least level 50 is advised)
+* [[Magic]] is recommended — see the [[Haunted_mine#Treus's wrath|boss section]] of the guide for more details
+* 1-2 [[prayer potion]]s
+* 1 [[stamina potion]] or 1 [[super energy potion]]
+* Combat stat boosting [[potions]] (depending on your [[attack style]])
+* '''Plenty''' of good [[food]] is strongly recommended for all levels, regardless of equipment and [[Defence]]
+* [[Dragon dagger]] or another weapon with a high-hitting [[special attack]]
+|kills = * [[Treus Dayth]] ''(level 95)''
+|leagueRegion = <poem>
+{{LeagueRegion|Morytania}} — location requirement
+</poem>
+}}

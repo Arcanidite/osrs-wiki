@@ -1,0 +1,54 @@
+==Walkthrough==
+
+===Starting out===
+{{Checklist|
+*Speak to [[Ur-tag]] or [[Ambassador Alvijar]] in the north-east part of Dorgesh-Kaan's middle level. {{Chat option|1What are you arguing about?|1I'd love to help!}}
+}}
+
+===Excavation===
+{{Checklist|
+*Head to the south-west corner of the city's middle level.
+*Enter the doorway with the transportation symbol on the minimap.
+*Walk south on the tracks and talk to [[Tegdak]].
+*Dig up artefacts from the ground with the trowel (there are six artefacts total).
+*Use artefacts on the specimen table to clean them.
+*Talk to Tegdak. [[Zanik]] will automatically follow you after (if you don't have a follower already).
+}}
+
+===To the village===
+''Items required: ranged or magic weapon/armour, recommended: food.''
+{{Checklist|
+*Make sure [[Zanik]] is following you.
+**If Zanik is not following you, head back to the cave and talk to her.
+*Talk to the [[Goblin scribe]] in the house west of [[Ur-tag]] where you started the quest.
+*Speak to [[Oldak]] in the north-west corner of the city's lower level (there are stairs down in the house west of the scribe) to teleport to the [[Goblin Village]].
+}}
+
+===The H.A.M-bush===
+{{Instance}}
+{{Checklist|
+*Talk to [[General Wartface]] or [[Bentnoze]]. A cutscene will start.
+*Run south to the ladder, stay behind the houses on the west side to not get hit.
+*Climb up and kill the [[H.A.M. Mage]] and [[H.A.M. Archer]], you must use magic or ranged. Throwing [[dart]]s can work, only if you use the "long range" combat style. If you forgot a magic or ranged weapon, a crossbow and 50 bronze bolts spawns just to the west of your character upstairs.
+*Talk to General Wartface or General Bentnoze to receive [[ancient mace]] and two goblin warriors}}
+
+===Getting past the guards===
+{{Instance}}
+{{Checklist|
+*Go to the [[Lumbridge Swamp Cave]] entrance (outside by the giant frogs in Lumbridge Swamp) 
+*Talk to one of the goblin sergeants.
+*Read the following steps before doing them as this next section is time sensitive.
+*#Enter the caves then climb down the nearby ladder.
+*#As soon as you're down, talk to the sergeants and tell one of them to wait. {{Chat option|2One of you wait here}}
+*#Run to the room and enter.
+*#Wait for 2 [[Guard (Another Slice of H.A.M.)|guards]] to pass.
+*#Tell your sergeant to wait in the room. {{Chat option|1Wait here}}
+*#Run up to the boxes to trigger a 3rd guard and run back to the room so he doesn't see you.
+*#After the 3rd guard passes, ask your sergeant to follow you again. {{Chat option|2Follow me}}
+*#'''Walk''' (do not run) to the end of the tunnel and the final guard will attack your sergeant.
+*#Climb down the ladder to fight [[Sigmund]] - '''Use the [[Ancient mace]]'s special attack ONLY AFTER he starts using prayer to disable it for the entire fight.'''
+*Defeat Sigmund.
+*Untie [[Zanik]].
+*'''Congratulations, quest complete!'''
+**'''Optional:''' Ride the train to [[Keldagrim]] to complete a hard task of the [[Lumbridge & Draynor Diary]].
+}}

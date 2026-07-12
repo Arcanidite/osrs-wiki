@@ -1,0 +1,36 @@
+==Details==
+{{Quest details
+|start = Talk to [[Gordon]] on [[Gordon and Mary's farm|his farm]] south of the [[Farming Guild]].
+|startmap = 1248,3686
+|difficulty = Intermediate
+|description = Gordon and Mary are two small-town farmers with a big problem – some heinous beastie keeps taking their livestock! Luckily they've hit upon a solution. They just need some brave adventurer to venture into the creature's lair and bring them back its head. We can't envisage any complications with such a routine matter, right?
+|length = Short
+|requirements = *{{SCP|Crafting|30|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Construction|26|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = *[[Bear fur]], [[grey wolf fur]], or [[Fur]] (a [[Grizzly bear]] and [[bear cub]] spawn west of the farm and two [[black bear]]s spawn east of the farm)
+*[[Soft clay]] or a [[pickaxe]] you can use
+** [[Clay rocks]] are found in the [[Kebos Lowlands mine]] passed during the quest;
+** Gordon's house has a water source and a bucket spawn;
+** There is a [[Bronze pickaxe]] spawn at the mine, stuck in some [[Rocks (Getting Ahead)|rocks]].
+*[[Hammer]] (obtainable near the cattle gate) or [[Imcando hammer]]
+*[[Saw]] (obtainable in the shed north of the house) or [[Amy's saw]]
+*2 normal [[plank]]s (obtainable near the cave entrance)
+*At least 6 [[nails]] of any kind (iron nails can be found in the workbench north of the house, and more than 6 is recommended in case you bend a few)
+*[[Knife]] (obtainable on the kitchen table in the house)
+*[[Red dye]] (obtainable from the [[Shelves (Getting Ahead)|shelves]] in the house)
+*[[Pot of flour]] (obtainable upstairs in the house)
+*[[Needle]] (obtainable upstairs in the house) or [[Costume needle]]
+*[[Thread]] (obtainable upstairs in the house) unless you're using the [[Costume needle]]
+|recommended = *{{SCP|Combat|45|link=yes}}
+*Fast travel to the [[Farming Guild]] ([[Skills necklace]], [[Battlefront Teleport]], [[Farming Cape]], or [[Fairy Rings]] to {{fairycode|CIR}})
+*Combat equipment to fight a level 82 beast.
+*(optional) Various items to show Gordon for amusing dialogue.
+**Nielan's journal (obtained by searching the skeleton in the [[Headless Beast's Lair]])
+**[[Big bones]]
+**[[Ensouled bear head]]
+**[[Bearhead]]
+|kills = [[Headless Beast]] (level-82)
+|leagueRegion = <poem>
+{{LeagueRegion|Kourend}} — location requirement
+</poem>
+}}

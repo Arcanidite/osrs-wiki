@@ -1,0 +1,69 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Fremennik" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Teleport to [[Trollheim]].
+|
+*{{SCP|Quest}} Completion of [[Eadgar's Ruse]]
+*{{SCP|Magic|61|link=y}}
+*Means to cast [[Trollheim Teleport]] ({{RuneReq|Law=2|Fire=2}})
+|-
+|2. Catch a [[Sabre-toothed Kyatt]].
+|
+*{{SCP|Hunter|55|link=y}}
+*[[Teasing stick]], [[logs]], and a [[knife]]
+|-
+|3. Mix a [[Super defence|super defence]] potion in the [[Fremennik Province]].
+''Note: This has to be done in or near [[Rellekka]].
+|
+*{{SCP|Herblore|66|link=y}}
+*[[Cadantine potion (unf)]] and [[white berries]]
+|-
+|4. Steal from the [[Green_Gemstone_Gems|Keldagrim Gem Stall]].
+|
+*{{SCP|Quest}} Started [[The Giant Dwarf]]
+*{{SCP|Thieving|75|link=y}}
+|-
+|5. Craft a [[Neitiznot shield]] on [[Neitiznot]].
+|
+*{{SCP|Quest}} Partial completion of [[The Fremennik Isles]]
+*{{SCP|Woodcutting|56|link=y}}
+*[[Hammer]], [[rope]], a set of [[bronze nails]], and 2 [[arctic pine logs]].
+|-
+|6. Mine 5 [[Adamantite ore]]s on [[Jatizso]].
+|
+*{{SCP|Quest}} Started [[The Fremennik Isles]]
+*{{SCP|Mining|70|link=y}}
+*Any [[pickaxe]]
+|-
+|7. Obtain 100% [[Managing Miscellania|support]] from your kingdom subjects.
+|
+*{{SCP|Quest}} Partial completion of [[Throne of Miscellania]]
+*[[Rake]], [[pickaxe]], [[axe]], [[harpoon]] and/or [[lobster pot]], depending on how you plan to [[Managing_Miscellania#Approval_rating_calculations|gain]] support
+|-
+|8. Teleport to [[Waterbirth Island]].
+|
+*{{SCP|Quest}} Completion of [[Lunar Diplomacy]]
+*{{SCP|Magic|72|link=y}}
+*[[Lunar spellbook]] selected
+*Means to cast [[Waterbirth Teleport]] ({{RuneReq|Law=1|Astral=2|Water=1}})
+|-
+|9. Obtain the [[Blast Furnace Foreman]]s permission to use the [[Blast Furnace]] for free.<br/>
+''Note: With the requirements, talk to him and use the following dialogue options {{Chat option|1What?|3Can I use the furnace to smelt ore?|1I have level 60!}}. Selecting the wrong choices may require you to pay him, in which case you can [[World switching|hop to another world]] to try again.
+|
+*{{SCP|Quest}} Started [[The Giant Dwarf]]
+*{{SCP|Smithing|60|link=y}} {{Boostable|n}}
+|}
+
+===Rewards===
+*[[Fremennik sea boots 3]]:
+**Five daily teleports to the [[Rellekka]] marketplace
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 experience in any skill of at least level 50
+*Roughly 18% increased experience and 25% more [[mark of grace|marks of grace]] from the [[Rellekka Rooftop Course]]{{CiteDiscord|author=Mod Lykos|url=https://discord.com/channels/177206626514632704/514602892292784139/1397002033911038144|date=21 July 2025|quote=for the Pollnivneach and Rellekka courses, there is a 1/3 chance to have the timer be two minutes if you've completed the hard tier of the respective diary|image=Lykos Desert and Frem diary mark of grace bonus.png|archiveurl=https://reldo.runescape.wiki/i/27962785#chat-messages-514602892292784139-1397002033911038144|archivedate=2026-03-07}}
+*[[Adamantite bar]]s from [[aviansie]] killed in the [[God Wars Dungeon]] are now [[noted]]
+*[[Enchanted lyre]] and its [[Enchanted lyre(i)|imbued variant]] can now be played to teleport to [[Waterbirth Island]], aside from [[Rellekka]]
+*Access to [[Tan Leather]] and [[Recharge Dragonstone]] from the [[Lunar spellbook]]
+*[[Stony basalt]] now teleports you on top of the [[Troll Stronghold (location)|Troll Stronghold]], past the [[Rocks (Troll Stronghold)|rocky shortcut]] (this requires 73 [[Agility]])
+*[[Fossegrimen]] will [[enchanted lyre(i)|imbue your lyre]] with infinite charges for 400 of each required fish, down from 600
+*Access to [[Bosun Zarah]] as a crewmate after the completion of [[Royal Trouble]] (requires 80 [[Sailing]])

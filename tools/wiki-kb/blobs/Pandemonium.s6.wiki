@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name=Pandemonium|image=[[File:Pandemonium reward scroll.png|centre]]|qp=1|rewards=
+*{{SCP|Sailing|300|link=yes}} experience
+**An additional {{SCP|Sailing|100|link=yes}} experience is gained when delivering the cargo, for a total of 400 experience
+*Access to the [[Sailing]] skill
+*Access to [[The Pandemonium]]
+*A [[raft]]
+*25 [[sawmill coupon (wood plank)]]
+*2 [[repair kit]]s
+*A [[spyglass]]
+}}

@@ -1,0 +1,39 @@
+==Details==
+{{Quest details
+|start = Talk to [[Larrissa]] outside the [[Lighthouse]] north of [[Barbarian Outpost]].
+|startmap = 2508,3634
+|difficulty = Intermediate
+|description = The lighthouse protecting Kandarin's north-western coastline has mysteriously stopped operating, and contact with the lighthouse keeper Jossik has been lost.
+
+The Council would greatly appreciate it if somebody could discover for them what has happened to this most vital landscape feature.
+|length = Short
+|requirements = * {{SCP|Agility|35|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* Completion of {{SCP|Quest}} [[Alfred Grimhand's Barcrawl]]
+|items = *[[Fire rune]]
+*[[Air rune]]
+*[[Water rune]]
+*[[Earth rune]]
+*Any [[sword]] or [[longsword]] that you are willing to lose (except [[rusty sword]] and [[prop sword]])
+*Any [[arrow]] (except [[ogre arrows]] and [[training arrows]])
+*[[Molten glass]]
+*[[Tinderbox]]
+*[[Hammer]]
+* 60 [[steel nails]]
+* 2 regular [[plank]]s (can be obtained from [[Barbarian Outpost]])
+*[[Swamp tar]]
+*At least one [[combat style]] to defeat the [[Dagannoth Mother]] - she cycles every 18 seconds between only being vulnerable to one of six different types of attack
+**'''Highly recommended''' to bring means to deal damage with all of the elemental [[Magic]] types ([[air spell|air]], [[water spell|water]], [[earth spell|earth]], and [[fire spells]])
+**You may also bring means to deal [[Ranged]] and [[Melee]] damage (she has high resistance to melee)
+|recommended = * {{SCP|Prayer|40|link=yes}} for [[Protect from Missiles]] against the [[Dagannoth Mother]]'s ranged attacks
+* {{SCP|Combat|50|link=yes}}
+* [[Armour]] and some [[food]]
+*{{SCP|Magic|13|link=yes}}+ to cast each elemental spell
+* Fast travel to several locations 
+**[[Lighthouse]] to start the quest plus one additional trip - [[fairy ring]] {{fairycode|alp}}, [[games necklace]] to [[Barbarian Outpost]] or [[Minigame Teleport]] to [[Barbarian Assault]]
+**[[Barbarian Outpost]] (1 trip) - [[games necklace]] or [[Minigame Teleport]] to [[Barbarian Assault]]
+|kills = * [[Dagannoth (Horror from the Deep)]] ''(level 100)''  ''(can be completely safespotted)'' 
+* [[Dagannoth Mother]] ''(level 100)''  ''(with use of a safespot and [[Protect from Missiles]], all damage can be negated)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

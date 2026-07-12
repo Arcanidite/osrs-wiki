@@ -1,0 +1,50 @@
+{{external|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Olaf's Quest}}
+
+==Walkthrough==
+===Starting out===
+{{Checklist|'''''Items required''': any axe''
+*Talk to [[Olaf Hradson]] west of fairy ring {{fairycode|dks}}. {{Chat option|1}}
+*Chop the [[windswept tree]] up the mountain to the east and just north of the fairy ring and obtain [[Windswept Logs]].
+*Take the logs back to Olaf.}}
+
+===Helping Olaf===
+{{Checklist|'''''Items Required:''' [[tinderbox]]''
+
+'''''Recommended:''' [[stamina potion]]s, [[super energy potion]]''
+*Travel to [[Rellekka]] and talk to [[Ingrid Hradson]] who is near the well (water drop on map) (Enchanted Lyre or [[Fremennik sea boots 1]]).
+*Talk to [[Volf Olafson]] who is outside the helmet shop to the north.
+*Return to, and talk to Olaf (Teleport to a Fairy Ring, or use the agility shortcut to the East)
+*Use the [[damp planks]] on the fire pit (embers) next to Olaf.
+*Talk to Olaf again. {{Chat option|2}}
+}}
+
+===Treasure trail===
+{{Checklist|'''''Items required:''' spade, weapon, armour, food''
+
+'''''Recommended:''' agility potions, stamina potions, super energy potions''
+*Return to the tree and dig next to it.
+*Go all the way east in the tunnel and then north.
+* (Optional): Kill a [[brine rat]] here to complete a [[Fremennik Medium Diary]] achievement (requires 47 [[Slayer]]).
+*Kill a [[skeleton fremennik]] and pick up the key it drops.
+*Search the picture wall to the far west.
+**East, North, West, South, and then the very bottom ("Confirm").
+*Search the wall again to walk through.
+*Pick up two rotten barrels and six ropes in the next room.
+*Go to the bridge to the north-east and use the barrels on the missing portions; a higher level Agility helps (If you fall, you will need to go through the cave again.) (Recommended: [[stamina potion]]s.)
+*Open the gate.
+**Pick the shape that matches the loop part of the shown key. If you fall after opening the gate, you will need to retrieve a new key.
+**If you fall off the bridge after opening the gate, you have to reobtain a key to open the gate in the middle again.}}
+
+===Finishing up===
+{{Checklist|*Search the chest located in the old ship and kill [[Ulfric]] (level 100, uses [[melee]]).
+**The safespot for [[Ulfric]] is the dirt north of his grave stone
+*Search the chest again.
+*'''Congratulations, quest complete!'''}}
+
+==Rewards==
+{{Quest rewards page|Olaf's Quest}}
+{{Olaf's Quest}}

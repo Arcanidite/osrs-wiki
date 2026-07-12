@@ -1,0 +1,7 @@
+==Rewards==
+{{Quest rewards
+|name=Olaf's Quest|image=[[File:Olaf's Quest reward scroll.png|centre]]|qp=1|rewards=*{{SCP|Defence|12,000}} [[Defence]] [[experience]]
+*20,000 [[coins]]
+*4 cut [[ruby|rubies]]
+*Access to a cave where you can fight [[brine rat]]s.
+*A piece of [[Parchment (Olaf's Quest)|parchment]] telling you of other shipwrecks with more treasure (in the upcoming quest The Graveyard).}}

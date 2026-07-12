@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|start = Begin this mini-quest by getting your [[enchanted key|enchanted key]]. If lost, it can be reclaimed from the [[silver merchant]] in [[East Ardougne]] for 500 coins.
+|startmap = 2658,3315
+|description = Use the enchanted key to find buried treasure across Gielinor.
+|length = Medium
+|requirements = Finished [[Making History]]
+|items = *[[Enchanted key]] (remove from your [[steel key ring]] if you previously put it there)
+*[[Spade]]
+|recommended = *[[Weight-reducing clothing]]
+*[[Stamina potion|Stamina]] or [[energy potion]]s
+*Fast travel between several locations
+**Rellekka ([[Enchanted lyre]] or [[Fremennik sea boots]], or [[House teleport]] if your house is in Rellekka)
+**Ardougne ([[Ardougne teleport]] or [[Ardougne cloak]])
+**Tree Gnome Stronghold ([[Balloon Transport System]], [[gnome glider]], [[spirit tree]], [[Slayer ring]] to the Slayer Cave or [[necklace of passage]] to the Outpost)
+**North of Falador ([[Skull Sceptre]] or [[combat bracelet]] to the Monastery)
+**South of Falador ([[skills necklace]] to the Crafting Guild)
+**Varrock ([[Varrock teleport]], [[Chronicle]] or [[combat bracelet]] to Champions' Guild)
+**Mudskipper Point ([[Rat Pits]] [[minigame]] teleport or [[Fairy Rings]] to {{Fairycode|aiq}})
+**Lumbridge Swamp ([[Lumbridge teleport]] or [[necklace of passage]] to the Wizards' Tower)
+**Al Kharid ([[ring of dueling]] or [[amulet of glory]])
+|difficulty = Intermediate
+|leagueRegion = <Poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

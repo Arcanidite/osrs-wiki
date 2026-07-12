@@ -1,0 +1,57 @@
+==Walkthrough==
+===Starting the quest===
+'''''Items required: '''a cat '''or''' kitten, 5 death runes, a catspeak amulet''
+{{Checklist|
+*Talk to [[Unferth]] in his house in northern [[Burthorpe]] with the [[catspeak amulet]] equipped and your cat with you. {{Chat option|1I'll help you.}}
+*Speak to [[Hild]] in the building north-east of Unferth's house.
+*Hild requires 5 death runes to enchant the catspeak amulet.
+}}
+
+===Cat hunt===
+
+'''''Recommended: '''a Varrock teleport''
+{{Checklist|
+*Locate [[Bob the cat]] using the catspeak amulet (a full list of locations can be found on the [[A Tail of Two Cats|full guide]] page [[A Tail of Two Cats#Cat hunt|here]]) and talk to him by doing the following:
+**The fastest way to find Bob, is go to the western [[Varrock]] anvil or the garden of the [[Draynor Manor]] and world-hop until you find him or you can use the steps below to find him legitimately.
+**Right click on the 'Locate' option on the amulet in your equipped items.
+**Click on the whiskers until the arrow and the eyes glow white.
+**Follow the arrow until you find Bob.
+}}
+
+===Strong lineage===
+{{Checklist|
+*Talk to [[Gertrude]] in her house west of Varrock. {{Chat option|1Ask about Bob's parents.}}
+*Speak to [[Reldo]] in the [[Varrock Palace]] library. {{Chat option|1Ask about Robert the Strong.}}
+*Find and speak to Bob the cat again.
+**Bob may be in the same location you previously found him, so check there first.
+}}
+
+===Memories and Bob's list===
+'''''Items required: '''Catspeak amulet (wear it), logs, a tinderbox, a bucket of milk, a chocolate cake (must be a full cake), shears, a rake, a seed dibber, 4 potato seeds''
+
+'''''Recommended items: '''Varrock teleport, games necklace, Desert Amulet, Nardah teleport AND coins for the magic carpets OR Desert clothing AND waterskins. [[Fairy ring]] {{Fairycode|AKP}} can also be used if [[Beneath Cursed Sands]] has been completed to the point where the player enters the [[Necropolis|necropolis]].
+
+{{Checklist|
+*Go to [[Sophanem]] and speak to the [[Sphinx]] {{Chat option|1Ask the Sphinx for help for Bob.|2}}
+*Return to Unferth's house in Burthorpe and do the following:
+**Use your [[rake]] on the [[patch]] and plant [[potato seed]]s in it and wait until they are grown. Your cat will notify you when they are done (the patch will take 15–35 minutes to grow).
+**Make the [[bed (A Tail of Two Cats)|bed]].
+**Use the [[logs]] on the [[fireplace (A Tail of Two Cats)|fireplace]]. Then light the fireplace.
+**Use the [[chocolate cake]] and [[bucket of milk]] on the southern [[table (A Tail of Two Cats)|table]].
+**Use your [[shears]] on Unferth to cut his hair. You will continue this animation until he becomes bald.
+*Talk to Unferth once all the chores are done.
+}}
+
+===Down with the "sickness"===
+'''''Items required:''' White robe top and bottom (Desert clothing and Druid robes are fine, but Desert legs do not work), Catspeak amulet(e), vial of water''
+
+'''''Recommended items: '''Varrock teleport''
+
+{{Checklist|
+*Travel to Varrock and speak with the [[Apothecary]]. {{Chat option|2Talk about A Tail of Two Cats.}}
+*Go to Unferth, unequip any weapons and equip the [[doctor's hat]] or [[nurse hat]] and [[desert clothing]] (top and bottom, make sure the clothing is white) and speak to him with a vial of water in your inventory.
+*Locate Bob the cat again and talk to him. (Note that left clicking on Bob or Neite will interrupt the cutscene,  putting you in Burthorpe but requiring you to find Bob and start it again).
+*After the cutscene, talk to Unferth again.
+}}
+
+'''Congratulations, quest complete!'''

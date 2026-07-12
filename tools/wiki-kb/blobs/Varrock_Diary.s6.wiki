@@ -1,0 +1,71 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style="width:750px;" data-diary-name="Varrock" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Trade furs with the [[Fancy-dress shop owner|Fancy Dress Seller]] for a [[spottier cape]] and equip it.
+|
+*{{SCP|Hunter|66|link=y}} {{Boostable|n}}
+*800 [[coins]]
+*2 [[dashing kebbit fur]] (requires {{SCP|Hunter|69|link=y}} {{Boostable|y}} if playing as [[Ironman Mode|Ironman]])
+|-
+|2. Speak to [[Orlando Smith]] when you have achieved 153 [[Kudos]].
+|
+*See [[Kudos]] for all activities that grant them
+|-
+|3. Make a [[Waka canoe]] near [[Edgeville]].
+|
+*{{SCP|Woodcutting|57|link=y}}
+*Any [[axe]]
+|-
+|4. Teleport to [[Paddewwa]].
+|
+*{{SCP|Quest}} Completion of [[Desert Treasure I]]
+*{{SCP|Magic|54|link=y}}
+*[[Ancient Magicks]] selected
+*Means to cast [[Paddewwa Teleport]] ({{RuneReq|Law=2|Air=1|Fire=1}})
+|-
+|5. Teleport to [[Barbarian Village]] with a [[skull sceptre]].
+|
+*[[Skull sceptre]], or the required items to [[Skull_sceptre#Creating_the_Sceptre|create]] it
+|-
+|6. Chop some [[yew logs]] in [[Varrock]] and burn them at the top of the [[Varrock chapel|Varrock church]].
+''Note: There is a [[yew tree]] next to the church. Completing or updating any other task in-between these steps will reset the progress for this task. In Deadman Mode, the task is instead "Burn some Yew logs at the top of the Varrock church with 60 Woodcutting."''
+|
+*{{SCP|Woodcutting|60|link=y}} and {{SCP|Firemaking|60|link=y}}
+*Any [[axe]] and [[tinderbox]]
+|-
+|7. Have the [[Estate agent|Varrock estate agent]] decorate your [[Player-owned house|house]] with [[Fancy Stone]].
+''Note: You must finish the dialogue or the task will not count as completed.''
+|
+*{{SCP|Construction|50|link=y}} {{Boostable|n}}
+*25,000 [[coins]]
+*Additional 5,000 [[coins]] if already using [[Fancy Stone]], to change to something else and back
+|-
+|8. Collect at least 2 [[yew roots]] from the [[Tree patch]] in [[Varrock Palace]].
+''Note: While 60 [[Farming]] is required to grow the [[Yew tree (Farming)|yew tree]], you'll need 68 [[Farming]] to dig up more than a single [[Yew root|root]].
+|
+*{{SCP|Farming|68|link=y}} and {{SCP|Woodcutting|60|link=y}}
+*[[Yew sapling]], any [[axe]], and a [[spade]]
+*10 [[cactus spine]]s recommended to pay the [[Treznor|gardener]]''
+|-
+|9. Pray at the [[altar]] in [[Varrock palace]] with [[Smite]] active.
+''Note: The altar is found on the {{FloorNumber|uk=1}} of the palace.
+|
+*{{SCP|Prayer|52|link=y}} {{boostable|n}}
+|-
+|10. Squeeze through the [[Obstacle pipe (Edgeville Dungeon)|obstacle pipe]] in [[Edgeville dungeon]].
+|
+*{{SCP|Agility|51|link=y}}
+|}
+
+===Rewards=== 
+*[[Varrock armour 3]]:
+**Can be worn in place of a [[chef's hat]] to access the [[Cooks' Guild]]
+**While worn, 10% chance of mining double [[ore]]s up to and including [[adamantite ore|adamantite]], as well as [[Mining enhancers#List of affected rocks|various other minerals]] (experience granted for both minerals)
+**While worn, 10% chance of smelting 2 [[bar|bars]] at once, up to and including [[adamantite bar|adamantite]], when using the [[Edgeville furnace]] (experience granted for both bars)
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 experience in any skill of at least level 50
+*[[Zaff]] will sell you 60 [[bank note|noted]] [[Battlestaff|battlestaves]] as a single stack every day for 420,000 [[coins]], resellable on the [[Grand Exchange]] for a profit of {{NoCoins|{{GEPT|Battlestaff|60}}-420000}} [[coins]] (after tax)<ref name="WhyWasThisInTheLead"/>
+*The [[skull sceptre]] will now hold up to 22 [[Skull_sceptre#Using_the_Sceptre|charges]], up from 18
+*Individual parts used to make the [[skull sceptre]] now give three extra [[Bone fragments|bone fragments]] per component when chiselled
+*Access to the [[bank]] in the [[Cooks' Guild]] and a [[range]] at only 2 tiles away from it

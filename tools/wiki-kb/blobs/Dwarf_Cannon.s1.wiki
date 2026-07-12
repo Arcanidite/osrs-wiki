@@ -1,0 +1,22 @@
+==Details==
+{{Quest details
+|start = Talk to [[Captain Lawgof]], south of the [[Coal Trucks]], north-west of the [[Fishing Guild]].
+|startmap = 2567,3461
+|difficulty = Novice
+|description = For several years now, the Dwarven Black Guard have been developing the latest in projectile warfare.
+
+With the constant attack of goblin renegades, the dwarven troops who protect the mines need to put this secret weapon into action.
+
+Only with your help can the true power of this cannon be harnessed!
+|length = Short
+|items = *[[Hammer]] (obtained during the quest)
+|recommended = * [[Food]] at very low combat levels.
+* [[Stamina potion|Stamina]] or [[energy potion]]s.
+* Fast travel to several locations:
+** West of the [[Coal Trucks]] to start the quest plus 1 additional trip - [[skills necklace]] to [[Fishing Guild]] or [[games necklace]] to [[Barbarian Outpost]]
+** [[Goblin Cave]] (1 trip) - [[skills necklace]] to [[Fishing Guild]]
+** [[Dwarven Mine]] entrance (1 trip) - [[Amulet of glory]] to [[Edgeville]], [[combat bracelet]] to the Monastery, or [[Skull Sceptre]] to Barbarian Village.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+</poem>
+}}

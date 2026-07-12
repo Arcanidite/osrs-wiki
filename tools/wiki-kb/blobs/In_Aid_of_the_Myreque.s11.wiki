@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name=In Aid of the Myreque|image=[[File:In Aid of the Myreque reward scroll.png|centre]]|qp=2|rewards=*{{SCP|Attack|2,000}} [[Attack]] experience
+*{{SCP|Strength|2,000}} [[Strength]] experience
+*{{SCP|Crafting|2,000}} [[Crafting]] experience
+*{{SCP|Defence|2,000}} [[Defence]] experience
+*Access to [[Burgh de Rott]]
+*Access to the [[Temple Trekking]] [[Minigames|minigame]]
+*A [[Gadderhammer]] from defeating [[Gadderanks]]
+*The ability to make the [[Rod of Ivandis]]
+*The ability to hire [[Oarswoman Olga]] as a [[crewmate]] with {{SCP|Sailing|65|link=yes}}
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]]}}

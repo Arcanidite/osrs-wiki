@@ -1,0 +1,22 @@
+==Details==
+{{Quest details
+|start = Talk to [[Aris]] in the tent on the western side of [[Varrock Square]].
+|startmap = 3203,3424
+|difficulty = Novice
+|description = A mighty demon is being summoned to destroy the city of Varrock. You find out you are the one destined to stop him (or at least try).
+|length = Short
+|requirements = The ability to defeat a level 27 [[Delrith|demon]] aided by three level 20 [[Dark wizard]]s and two level 7 Dark wizards using the [[Silverlight]] in melee.
+|items = *A [[water]] container, such as a [[bucket of water]] (obtainable during the quest)
+*25 [[bones]] (can't be [[noted]], but can be delivered in increments)
+*1 [[coin]]
+|kills = [[Delrith]] ''(level 27)''
+|recommended = * {{SCP|Combat|15|link=yes}}
+*[[Armour]] and some [[food]]
+*Fast travel to several locations
+**[[Varrock]] to start the quest - [[Varrock teleport]] or [[Chronicle]] or [[Skills necklace]] to [[Cooks' Guild]] ''([[Members only]])'' or [[Ring of wealth]] to [[Grand Exchange]] ''(Members only)''
+**[[Wizard's Tower]] (1 trip) - [[Necklace of passage]] or [[Amulet of the eye]] or [[Amulet of glory]] to [[Draynor Village]] ''(All Members only)''
+**[[Champions' Guild]] (1 trip) - [[Chronicle]] or [[Combat bracelet]] ''(Members only)'' or [[Varrock Teleport]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}

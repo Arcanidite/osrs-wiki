@@ -1,0 +1,5 @@
+==Rewards==
+{{Quest rewards
+|name=Ghosts Ahoy|image=[[File:Ghosts Ahoy reward scroll.png|centre]]|qp=2|rewards=*{{SCP|Prayer|2,400}} [[Prayer]] [[experience]]
+*Free passage into [[Port Phasmatys]]
+*The [[Ectophial]], which allows direct teleport to the [[Ectofuntus]], is refilled from the Ectofuntus.}}

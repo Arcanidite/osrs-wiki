@@ -1,0 +1,24 @@
+==Details==
+{{Quest details
+|start = Talk to [[Emelio]] at his home in [[Outer Fortis]].
+|startmap = 1754,3074
+|difficulty = Experienced
+|description = Bring the joy of kebabs to the land of Varlamore.
+|length = Short
+|requirements = 
+* Completion of the following quests:
+** [[Children of the Sun]]
+|items = 
+|recommended = 
+* {{SCP|Combat|60}} [[Combat level]]
+* {{SCP|Prayer|43+}} [[Prayer]] to use [[Protect from Melee]] and [[Protect from Magic]]
+* [[Stamina potions]] or [[energy potions]]
+* Combat equipment
+* Food
+|kills = 
+* [[Dire Wolf Alpha]] ''(level 113)''
+* [[Minotaur (Meat and Greet)|Minotaur]] ''(level 193)''
+|leagueRegion = <poem>
+{{LeagueRegion|Varlamore}} — location requirement
+</poem>
+}}

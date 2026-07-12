@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Another Slice of H.A.M.
+|image = [[File:Another Slice of H.A.M. reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Mining|3,000|link=yes}} [[experience]]
+*{{SCP|Prayer|3,000|link=yes}} experience
+*The [[ancient mace]]
+*The ability to buy [[Goblin Village]] [[Goblin village sphere|teleport sphere]]s
+*Free access to the [[Dorgesh-Kaan–Keldagrim train system]]
+}}

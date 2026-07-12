@@ -1,0 +1,18 @@
+{{External|rs=Morytania achievements}}
+{{Infobox Achievement Diary
+|name = Morytania Diary
+|image = [[File:Morytania Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Morytania]], [[Paterdomus]], [[Harmony Island]] and [[Mos Le'Harmless]]
+|members = Yes
+|reward = [[Morytania legs|Platelegs]]
+|taskmasters = [[Le-sabrè]]
+|leagueRegion = Morytania
+}}
+{{Map|name=Le-sabrè|x=3465|y=3478|r=4|mtype=square|height=250|width=250|align=left|caption=Le-sabrè's location}}
+The '''Morytania Diary''' is an [[Achievement Diary]] whose tasks revolve around areas within and around [[Morytania]], such as [[Paterdomus]], [[Harmony Island]], and [[Mos Le'Harmless]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Completion of [[Priest in Peril]] is required for all tasks, as it is needed to enter Morytania. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from [[Le-sabrè]] just west of [[Canifis]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

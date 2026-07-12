@@ -1,0 +1,55 @@
+==Walkthrough==
+===Getting started===
+{{Checklist|
+*Talk to [[Abigale]] in the south-east corner of Lumbridge Swamp and offer your help. {{Chat option|1What has happened here?|1What do you want me to do?}}
+*Take the [[rowboat (Misthalin Mystery)|boat]] found further south.
+*If needed, take a [[bucket (Misthalin Mystery)|bucket]] from the fountain to the west.
+*Head to the west of the manor.
+*Use the bucket on the [[a barrel of rainwater (Misthalin Mystery)|barrel of rainwater]] to empty it.
+*Take the [[manor key]] from the bottom of the empty barrel.
+*Enter the manor doors using the manor key.
+}}
+
+===Riddle 1===
+{{Checklist|
+*If needed, take the [[knife]] from the [[table (Misthalin Mystery)|table]].
+*Attempt to open the door with the pink knob to the north.
+*Take the [[Notes (Misthalin Mystery - 1)|note]] on the ground next to you and read it.
+*Go to the room south-west from the entry hall, and use the knife on the [[painting (Misthalin Mystery)|painting]] with the gloomy valley on the east wall.
+*Search the slashed painting to obtain a [[Ruby key (Misthalin Mystery)|ruby key]].
+*Go to the room south-east from the entry hall. If needed, take a [[tinderbox]] from the [[shelves (Misthalin Mystery)|shelves]].
+*Use the tinderbox on the four [[Candle (Misthalin Mystery)|unlit candles]] throughout the eastern room.
+*Use the tinderbox on the [[barrel (Misthalin Mystery)|barrel with the fuse]].
+*Exit the room to trigger the explosion.
+}}
+
+===Riddle 2===
+{{Checklist|
+*Re-enter the south-east room and climb over the damaged wall.
+*Head north, then west, and click "observe" on the tree across from Lacey.
+*Pick any chat option the [[Killer]] gives you; the answer does not matter.
+*Take the [[Notes (Misthalin Mystery - 2)|note]] and read it.
+*Play the notes D-E-A-D on the [[piano (Misthalin Mystery)|piano]] in the north-eastern corner of the manor.
+*Search the piano to get an [[emerald key]].
+}}
+
+===Riddle 3===
+{{Checklist|
+*Return to the mansion via the damaged wall.
+*Open the door with the green knob north of the entrance, west of the door with the pink knob.
+*Attempt to open the door to the west with the [[Bandos godsword]] inside.
+*Take the [[Notes (Misthalin Mystery - 3)|note]] and read it.
+*Head through the south-eastern room with the damaged wall, then to the room north of it. Use the knife on the unlit fireplace.
+*Search the fireplace and enter the following gems in this order:<br/>''Sapphire – Diamond – Zenyte – Emerald – Onyx – Ruby.''
+*Search the fireplace again to get the [[sapphire key]].
+}}
+
+===Showdown===
+{{Checklist|
+*Open the westernmost door with the blue knob in the room where you slashed the painting.
+*The killer will hide in wardrobes and throw knives. The player can know which wardrobe the killer is hiding in by looking for a brief black shadow surrounding the wardrobe. You must push the mirror and have it face the wardrobe before a knife is thrown. Repeat this until a cutscene.
+*After the cutscene, take the [[killer's knife]], wield it and attack Abigale.
+*Attempt to exit the room.
+*Talk to [[Mandy]] outside the manor.
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = Doric's Quest
+|image = [[File:Doric's Quest reward scroll.png|centre]]
+|qp = 1
+|rewards =*{{SCP|Mining|1,300}} [[Mining]] [[experience]]
+*180 [[coins]]
+*The ability to use [[Doric]]'s [[anvil]]s
+*Bronze pickaxe given at the start of the quest
+}}

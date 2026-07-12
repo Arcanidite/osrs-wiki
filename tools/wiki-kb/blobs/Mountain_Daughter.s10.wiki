@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Mountain Daughter
+|image = [[File:Mountain Daughter reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Prayer|2,000}} [[Prayer]] [[experience]]
+*{{SCP|Attack|1,000}} [[Attack]] experience
+*The [[Bearhead]]
+*The ability to pass into the [[Mountain Camp]] over the rockslide
+
+Unlocks:
+* [[The Kendal]] accessible in the [[Nightmare Zone]].
+}}

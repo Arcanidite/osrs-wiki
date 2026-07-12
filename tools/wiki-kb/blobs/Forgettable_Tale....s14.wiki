@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = Forgettable Tale...
+|image = [[File:Forgettable Tale of a Drunken Dwarf reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Cooking|5,000}} [[Cooking]] [[experience]]
+*{{SCP|Farming|5,000}} [[Farming]] experience
+*2 [[Dwarven stout (m)]]
+}}

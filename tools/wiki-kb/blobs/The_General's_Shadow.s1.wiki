@@ -1,0 +1,30 @@
+==Details==
+{{Quest details
+|start = Speak to the ghost of [[General Khazard]] roaming around the woods south-east of [[Rellekka]].
+|startmap = 2716,3631
+|description = Assist General Khazard and relay information from his scouts across Gielinor back to him.
+|length = Medium
+|requirements = *[[Curse of the Empty Lord]], for full [[ghostly robes]]
+**Started [[Desert Treasure I]], for the [[ring of visibility]]
+*[[Fight Arena]]
+|items = *40 coins (70 coins if using boat to Karamja)
+*[[Ghostspeak amulet]] (Morytania legs will not work)
+*All pieces of the [[Ghostly robes]] set
+*A [[ring of visibility]]
+|recommended = *{{SCP|Combat|60|link=yes}}
+*Combat equipment and [[food]] (prayer cannot be used)
+*Fast travel to several locations:
+**South-east of [[Rellekka]] to start the quest plus one additional trip - [[fairy ring]] {{fairycode|ajr}}, [[Teleport to House]] (Rellekka), or [[Fremennik sea boots 1]]+
+**[[Seers Village]] (1 trip) - [[Camelot Teleport]]
+**[[Tai Bwo Wannai]] (1 trip) - [[Tai bwo wannai teleport]] or [[fairy ring]] {{fairycode|ckr}}
+**[[Tree Gnome Stronghold]] entrance (1 trip)- [[Necklace of passage]] (The Outpost), [[Spirit tree]] (Gnome Stronghold), or [[Slayer ring]] (Stronghold Slayer Cave)
+**[[Draynor Manor]] western fence (1 trip)- [[Explorer's Ring 2]]+, [[Amulet of glory]] (Draynor Village), or [[Draynor Manor Teleport]]
+**[[Shantay Pass]] (1 trip) - [[Amulet of glory]] (Al Kharid), [[fairy ring]] {{fairycode|biq}}
+**[[Goblin Cave]] (1 trip) - [[Skills necklace]] (Fishing Guild) or [[Ardougne Teleport]]
+|kills = [[Bouncer (ghost)|Ghost of Bouncer]] (level 160) (cannot use Prayer; safespottable)
+|difficulty = Experienced
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the miniquest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the miniquest
+</poem>
+}}

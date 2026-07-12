@@ -1,0 +1,49 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Guildmaster]] in the [[Champions' Guild]].
+|startmap = 3190,3360
+|difficulty = Experienced
+|description = Prove yourself a true champion. Kill the mighty dragon Elvarg of Crandor and earn the right to buy and wear the Rune platebody.
+|length = Medium
+|requirements = * {{SCP|Quest|32}} [[Quest points]] to enter the Champions' Guild  {{Questreqstart|yes}}
+* The ability to defeat a level 83 [[Elvarg|dragon]]
+|items = * [[Unfired bowl]] (can be made with [[soft clay]] on a [[Potter's Wheel]] with {{SCP|Crafting|8}} [[Crafting]])
+* [[Wizard's mind bomb]] (can be bought in the [[Rising Sun Inn]] in [[Falador]] or [[The Toad and Chicken]] in [[Burthorpe]])
+* [[Lobster pot]] (can be bought from any [[Fishing shops|fishing shop]])
+* [[Silk]] (can be bought from [[Thessalia]] for 30 coins or the [[Al Kharid]] silk stall for 3 coins -- members can steal it from the [[Ardougne]] [[silk stall]] with {{SCP|Thieving|20}} [[Thieving]])
+* [[Magic]]/[[ranged]] [[weapon]] as well as a [[law rune|law]] and [[air rune]] (to cast [[Telekinetic Grab]] if your Magic level is 33 or higher) '''or''' 10,000 coins
+* [[Hammer]]
+* [[Anti-dragon shield]] (obtainable during the quest)
+* 90 [[steel nails]] (Members can buy these from the [[Sawmill operator]] north-east of [[Varrock]], they can also be smithed at {{SCP|Smithing|34}} [[Smithing]] using 6 [[steel bar]]s by all players)
+* 3 [[plank]]s (only normal planks work)
+** [[Free-to-play]]: Buy from [[Sawmill operator]] at the [[sawmill]] or pick up the spawns in the [[Graveyard of Shadows]], level 19 [[Wilderness]]
+** [[Member]]: [[Plank#Spawns|Several other spawn locations]] or buy them at the [[sawmill]]
+* 2,000 [[coins]]
+|recommended = * {{SCP|Combat|45|link=yes}}
+* {{SCP|Magic|33|link=yes}}{{Boostable|yes}}, otherwise you will have to pay 10,000 [[coins]].
+* {{SCP|Prayer|37|link=yes}}{{Boostable|no}} for [[Protect from Magic]] against Elvarg's magic attacks.
+* ''(Members only)'' [[Antifire potion]]s to significantly lower Elvarg's dragonfire attack damage
+*[[Weight-reducing clothing]] ''(Members only)'' and [[Stamina potion|stamina]] ''(Members only)'' or [[energy potion]]s
+* Fast travel to  several locations
+**[[Champions' Guild]] to start the quest, plus one additional trip - [[Chronicle]], [[Varrock Teleport]], or [[combat bracelet]] ''(Members only)''
+**[[Edgeville]] (2 trips) - [[Amulet of glory]] ''(Members only)'', [[Combat bracelet]] ''(Members only)'', [[fairy ring]] {{fairycode|dkr}} ''(Members only)'', [[Varrock Teleport]], [[Canoe]]
+**[[Melzar's Maze]] (1 trip) - [[Teleport to House]] ''(Members only)'' (Rimmington), [[Skills necklace]] to [[Crafting Guild]] ''(Members only)''
+**[[Ice Mountain]] (1 trip) -  [[Combat bracelet]] to Edgeville Monastery ''(Members only)'', [[Amulet of glory]] to Edgeville ''(Members only)'', [[Falador Teleport]]
+**[[Port Sarim]] (1 trip) - [[Amulet of glory]] to [[Draynor Village]] ''(Members only)'', [[Explorer's ring]] 2-4 ''(Members only)'', [[Teleport to House]] (Rimmington) ''(Members only)'', [[Skills necklace]] to [[Crafting Guild]] ''(Members only)''
+**'''Optional:''' [[Karamja Volcano]] for shortcut to return to the Elvarg fight - [[amulet of glory]] to [[Karamja]] ''(Members only)''
+|kills = * [[Zombie rat]]s ''(level 3)''*
+* [[Ghost (Melzar's Maze)|Ghost]]s ''(level 19)''*
+* [[Skeleton (Melzar's Maze)|Skeleton]]s ''(level 22)''*
+* [[Zombie (Melzar's Maze)|Zombies]] ''(level 24)''*
+* [[Melzar the Mad]] ''(level 43)''
+* [[Lesser demon (Melzar's Maze)|Lesser demon]] ''(level 82)''
+* [[Wormbrain]] ''(level 2) - optional''
+* [[Elvarg]] ''(level 83)''
+
+''An asterisk denotes that there is only one of each monster that drops the required key. They can be noted by small differences in appearance stated later in the guide.''
+|ironman = * {{SCP|Crafting|8}} [[Crafting]] {{Boostable|yes}} to create an [[unfired bowl]]
+*(Free-to play only) {{SCP|Smithing|34}} [[Smithing]] {{Boostable|yes}} to create [[steel nails]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

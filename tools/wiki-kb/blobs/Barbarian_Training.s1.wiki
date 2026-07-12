@@ -1,0 +1,48 @@
+==Details==
+{{Quest details
+|start = Speak to [[Otto Godblessed]] in [[Otto's Grotto|his grotto]] at the lake atop [[Baxtorian Falls]].
+|startmap = 2504,3488
+|difficulty = Experienced
+|length = Medium
+|description = Otto Godblessed has been researching his history and training people in the ways of his ancestors, and now he's ready to teach you. From his hut on the banks of the lake at the top of Baxtorian Falls, you'll go Fishing with your bare hands, mix fish eggs into your potions, wield one-handed spears and, finally, go deep into the ancient cavern beneath the lake.
+|requirements = * Completion of [[Tai Bwo Wannai Trio]] {{Questreqstart|no}}
+* {{SCP|Fishing|55|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Firemaking|35|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* {{SCP|Strength|35|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* {{SCP|Agility|15|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* {{SCP|Farming|15|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* {{SCP|Crafting|11|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* {{SCP|Smithing|5|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* {{SCP|Herblore|4|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+|items = *Farming:
+** Any [[seed]] that can be planted with a [[seed dibber]] (such as [[Allotment patch|allotment]] and [[Herb patch|herb]] seeds) and a free Farming patch for it (part 1)
+** Any [[sapling]] and a free Farming patch for it (part 2)
+** A [[spade]] (part 2)
+** An [[axe]] or 200 [[coins]] (part 2, to clear a required patch if it is occupied)
+*Firemaking:
+**Any [[bow]] ''except'' [[Twisted bow|twisted]], [[Cursed goblin bow|cursed]], [[Dark bow|dark]], [[Crystal bow|crystal]], [[ogre bow|ogre]], [[Rain bow|rain]], or the [[signed oak bow]] (part 1)
+**[[Oak logs]] (can get some oak logs north of [[Otto's house]], down a hill) (part 1)
+**A [[tinderbox]] (part 2)
+**An [[axe]] (part 2)
+*Fishing:
+**Some [[fishing bait]] or [[feather]]s
+**A [[knife]]
+*Smithing:
+**[[Hammer]]
+**Two metal [[bars]] of a level you can smith
+**Two [[logs]] corresponding to the type of metal bars you are using. [[bronze bar|Bronze]], [[iron bar|iron]], [[steel bar|steel]], [[mithril bar|mithril]], [[adamantite bar|adamantite]], and [[runite bar|runite bars]] require [[logs|normal]], [[Oak logs|oak]], [[Willow logs|willow]], [[Maple logs|maple]], [[Yew logs|yew]], or [[magic logs]], respectively.
+*Herblore:
+**A normal [[attack potion]] (2 doses)
+**[[Roe]] (can be obtained during Barbarian Fishing)
+**A [[knife]] for [[roe]] or [[caviar]]
+|recommended = * {{SCP|Combat|70|link=yes}}
+* A [[games necklace]] to teleport to the [[Barbarian Outpost]]
+* [[Armour]], [[weapon]]s, and [[food]] for fighting [[Mithril dragon]]s to obtain [[chewed bones]]
+* A [[tinderbox]]
+* [[Camelot teleport|Teleport to Camelot]] or [[Catherby teleport]] for [[Catherby]] beach or transport to the [[Fishing Guild]] (Note you must have level 68 Fishing to enter the [[Fishing Guild]])
+|kills = * Multiple [[mithril dragon]]s ''(level 304)''
+|leagueRegion = <poem>
+{{LeagueRegion|Karamja}} - location requirement
+{{LeagueRegion|Kandarin}} - location requirement
+</poem>
+}}

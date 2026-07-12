@@ -1,0 +1,57 @@
+==Walkthrough==
+===Organised Zombies?===
+{{Needed|Combat equipment, 3 free inventory spaces
+|recommended=[[Varrock Teleport]]s}}
+[[File:Defender of Varrock - Path to Zemouregal's Base.png|right|300px]]
+{{Checklist|
+* Talk to [[Elias White]] in the [[Jolly Boar Inn]]. {{Chat option|1Yes.}}
+* Inspect the plant outside the inn.
+* Follow the trail west, and inspect the rocks.
+* Follow the '''southern''' trail, and inspect the plant.
+* Follow the '''eastern''' trail, and inspect the spiny bush to get a [[Grubby key (Defender of Varrock)|grubby key]].
+* Follow the '''eastern''' trail through the gate, and inspect the green bush.
+* Follow the '''eastern''' trail, and inspect the small bush.
+* Follow the '''northern''' trail, and run past the end to find a trapdoor.
+* Upon entering the dungeon, finish the dialogue with Elias. {{Chat option|1Let's do it.}}
+* Run north a little bit to the end, then look east over the balcony.
+* After the cutscene, run west and pick up three bottles.
+* Kill three armoured zombies and use a bottle on the red mist they leave behind.
+* After getting three bottles of red mist, open the west door to find [[Arrav]].
+* Once Arrav leaves, head further north through the corridor.
+* Kill three additional armoured zombies and use a bottle on the red mist they leave behind. (Be sure to stop here if you're planning to kill zombies in the quest instance, going further will end the instance and put you with other players)
+* Open the east door. Run further east a little bit to the end, then look south over the balcony.
+* After the cutscene, leave the dungeon.
+}}
+
+===The Sacred Forge===
+{{Needed|[[Barronite deposit]] and [[chaos core]] or a pickaxe and combat equipment|recommended=[[Mind Altar Teleport]], [[Varrock Teleport]]s}}
+{{Checklist|
+* Speak to Elias at Varrock Palace and report your findings.
+* After finishing speaking to Captain Rovin, head to the [[Ruins of Camdozaal]]
+* Speak to [[Ramarno]] at the [[Sacred Forge]] and ask him about a shield. {{Chat option|2I need your help with a shield.}} or {{Chat option|3I need your help with a shield.}} or {{Chat option|4I need your help with a shield.}} depending on previous quests (If he is not at the Forge, you need to speak to him at the big door shortly after you enter the ruins).
+* Use a [[chaos core]] on a [[barronite deposit]]
+** Chaos cores are dropped by [[Chaos Golem]]s in the south-eastern end in the ruins, at a rate of 2/15.
+** Barronite deposits have a 24% chance of being obtained whilst mining [[barronite rocks]] at the [[Camdozaal Mines]], just west of the Sacred Forge; a [[bronze pickaxe]] can be obtained from a nearby barrel.
+* Use the [[imbued barronite]] on the Sacred Forge.
+}}
+
+===The True Descendant===
+{{Needed|None
+|recommended=[[Stamina potion|Stamina]] or [[super energy]] potions}}
+{{Checklist|*Head to the [[Varrock Palace]].
+* Speak to [[Captain Rovin]] two flights up the north-western staircase to receive the Shield of Arrav.
+* Head to the [[Varrock Palace]] library and speak to [[Reldo]].
+* Search the scrolls by the flipped table in the north-east corner to obtain the list of elders.
+* Read the List of elders and the Varrock Census west of the scrolls in the library.
+* Speak to the following NPCs until one of them mentions the Fitzharmon family (Make sure to finish the dialogue or it will not register.):
+** [[Aeonisig Raispher]] - Varrock Palace, throne room ({{Map|type=maplink|x=3222|y=3471|mtype=pin|desc=Aeonisig Raispher}})
+** [[King Roald]] - Varrock Palace, throne room ({{Map|type=maplink|x=3222|y=3471|mtype=pin|desc=King Roald}})
+** [[Sir Prysin]] - Varrock Palace, south-west ({{Map|type=maplink|x=3203|y=3472|mtype=pin|desc=Enhtor Prysin}})
+** [[Romeo]] - Varrock Square ({{Map|type=maplink|x=3211|y=3425|mtype=pin|desc=Romeo Gontamue}})
+** [[Horvik]] - In his [[Horvik's Armour Shop.|Armour Shop]] ({{Map|type=maplink|x=3230|y=3437|mtype=pin|desc=Horvik Ravitz}})
+** [[Curator Haig Halen]] - [[Varrock Museum]] ({{Map|type=maplink|x=3260|y=3451|mtype=pin|desc=Haig Halen}})
+* Head to south-east Varrock (you can use the Rat Pits (Varrock) minigame teleport), inside the gated area, and speak to [[Dimintheis]]. {{Chat option|2I need your help with the zombie invasion.}}
+* Watch the cutscene and finish the dialogue with Captain Rovin.
+}}
+
+'''Congratulations, quest complete!'''

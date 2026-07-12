@@ -1,0 +1,7 @@
+===Finishing up===
+'''''Items Needed:''' [[Sealed message]]''
+{{Checklist|
+*Travel back to [[Burgh de Rott]].
+*Talk to [[Veliaf Hurtz]] in the pub basement. {{Chat option|1I have a message for you from Safalaan.}}
+*'''Congratulations, quest complete!'''
+}}

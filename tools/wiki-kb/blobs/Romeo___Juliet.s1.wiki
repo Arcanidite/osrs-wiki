@@ -1,0 +1,13 @@
+==Details==
+{{Quest details
+|start = Talk to Romeo in [[Varrock Square]].
+|startmap = 3211,3423
+|difficulty = Novice
+|description = [[Romeo]] and [[Juliet]] are desperately in love, but Juliet's father doesn't approve. Help them to find a way to get married and live happily ever after.
+|length = Short
+|items = *[[Cadava berries]] (obtainable during the quest)
+|recommended = Fast travel to [[Varrock]] to start the quest - [[Varrock Teleport]] or [[Chronicle]] or [[Ring of wealth]] to [[Grand Exchange]] or [[Skills necklace]] to [[Cooks' Guild]]
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

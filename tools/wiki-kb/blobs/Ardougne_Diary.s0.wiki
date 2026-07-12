@@ -1,0 +1,18 @@
+{{External|rs=Ardougne achievements}}
+{{Infobox Achievement Diary
+|name = Ardougne Diary
+|image = [[File:Ardougne Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Ardougne]], [[Port Khazard]] and [[Yanille]]
+|members = Yes
+|reward = [[Ardougne cloak|Cloak]]
+|taskmasters = [[Two-pints]]
+|leagueRegion = Kandarin
+}}
+{{Map|name=Ardougne Diary|x=2574|y=3323|r=5|width=250|height=250|caption=Two-pints's location|align=left|mtype=square|group=1}}
+The '''Ardougne Diary''' is an [[Achievement Diary]] whose tasks revolve around areas in and near [[Ardougne]], such as [[Yanille]] and [[Port Khazard]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from [[Two-pints]] in the [[Flying Horse Inn]], in [[East Ardougne]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

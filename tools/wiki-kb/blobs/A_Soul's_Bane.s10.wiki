@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = A Soul's Bane
+|image = [[File:A Soul's Bane reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Defence|500}} [[Defence]] [[experience]]
+*{{SCP|Hitpoints|500}} [[Hitpoints]] experience
+*500 {{plink|Coins}}
+*Access to [[Tolna's rift]] for combat training
+}}

@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = A Porcine of Interest
+|image = [[File:A Porcine of Interest reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*5,000 [[coins]]
+*{{SCP|Slayer|1,000}} [[Slayer]] experience
+*30 [[Slayer reward point]]s
+*Access to the [[Sourhog Cave]] and [[sourhog]] Slayer tasks from Spria
+*Existing [[slayer helmet]]s will have [[reinforced goggles]] added to them
+*[[Spria]] will now be able to give you Slayer tasks
+}}

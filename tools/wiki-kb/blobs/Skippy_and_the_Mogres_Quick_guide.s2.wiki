@@ -1,0 +1,9 @@
+==Walkthrough==
+
+{{Checklist|*Right-click "Sober-Up" [[Skippy]] south-east of Rimmington ([[bucket of water]] required). {{Chat option|1Throw the water!}}
+*'''Right-click use''' the [[nettle tea]] on Skippy. (Do '''not''' accidentally drink it!)
+*Talk to Skippy
+*Use the [[chocolate dust]] on the [[bucket of milk]].
+*Use the [[snape grass]] on the [[chocolatey milk]] (Do '''not''' accidentally drink the milk!)
+*Use the [[hangover cure]] on Skippy.
+*'''Congratulations, miniquest complete!'''}}

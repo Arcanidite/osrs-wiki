@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = Imp Catcher
+|image = [[File:Imp Catcher reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*{{SCP|Magic|875}} [[Magic]] experience
+*The [[amulet of accuracy]]
+*After the quest players can obtain more amulets by speaking to Wizard Mizgog with a complete set of beads.
+}}

@@ -1,0 +1,10 @@
+==Walkthrough==
+{{Map|name=Doric|x=2952|y=3452|r=4|height=250|width=250|mtype=square|align=right|caption=The quest's start location.}}
+{{Checklist|*Obtain 2 [[iron ore]]s, 4 [[copper ore]]s, and 6 [[clay]] '''un-noted''' from either of the following methods:
+**Buy from the [[Grand Exchange]] for: {{Coins|{{GEP|Iron ore|2}} + {{GEP|Copper ore|4}} + {{GEP|Clay|6}}}}
+**Head to the [[Dwarven Mine]] on the south side of the Ice mountain (east from the quest start) with a [[pickaxe]] (Doric will give you a [[bronze pickaxe]] at the start of the quest):
+***2 [[iron ore]]s and 4 [[copper ore]]s can be mined at a spot just south-east of the ladder down into the mine.
+***6 [[clay]] can be mined south of the iron and copper, near the [[Agility]] [[shortcut]].
+***Players with very low combat levels should be wary of the aggressive [[Scorpion|Scorpions]] and [[King Scorpion|King Scorpions]]. Bring food if required.
+*Talk to [[Doric]] with the '''un-noted''' items in your inventory. {{Chat option|1I wanted to use your anvils.|1Yes, I will get you the materials.}}
+*'''Congratulations, quest complete!'''}}

@@ -1,0 +1,69 @@
+==Walkthrough==
+===The rock===
+{{Needed|[[Ring of charos (a)]] or 2 [[coins]].}}
+{{Checklist|
+*Find the [[Dwarven Ferryman]]. Either enter the tunnel and subsequent cave just south of the [[Polar Hunter area]] ([[fairy ring]] {{fairycode|DKS}}) '''OR''' go to northern part of Keldagrim and use the Travel option on the Dwarven Boatman.
+*Talk to the [[Dwarven Ferryman]] (not the Dwarven Boatman) and use the [[ring of charos (a)]] {{Chat option|3(Charm) I don't have any money on me.}} or use the Travel option to go across the river.
+*Run north and east across the bridge and west past the second wooden bridge to talk to [[Dondakan]]. {{Chat option|2Why are you firing a cannon at a wall?|1So why were you trying to get through the rock again?|1Sounds interesting!}}
+*Go to western [[Keldagrim]] and talk to the [[Dwarven Engineer]] in the [[Consortium|Trading Consortium]]'s palace smithing shop.
+**'''Note''': The [[Dwarven Boatman]] (near the Dwarven Ferryman) will take you quickly to northern Keldagrim and back.
+}}
+
+===Finding the pages===
+{{Needed|Any [[pickaxe]], weapon to kill a scorpion.}}
+{{Checklist|
+*Go to the [[Ice Mountain]] entrance of the [[Dwarven Mine]] and talk to [[Rolad]] in the east house (chat will disengage once then re-engage).
+** (Optional) Purchase the ammo mould from Nulodion here
+*Go down the trapdoor to the Dwarven Mine. Complete the following in any order until you receive the respective [[pages]]:
+**Kill [[Scorpion]]s for [[book page 1]].
+**Search the mine carts for [[book page 2]].
+**Mine any rocks '''except''' Adamantite or Coal for [[book page 3]].
+*Talk to [[Rolad]]. {{Chat option|2Of course. (lie)}} (chat will again disengage then re-engage)
+*Read [[Dwarven lore]] '''in its entirety and keep it for later'''.
+}}
+'''Note''': Buy an [[Ammo mould]] from [[Nulodion]] in the western building if you need one before leaving.
+
+===The golden cannonball===
+{{Needed|[[Ammo mould]], 1 [[gold bar]].}}
+{{Checklist|
+*Go back to the Keldagrim mines and talk to [[Dondakan]].
+*Use a gold bar on him.
+*Go to any furnace and use a gold bar on the furnace to make a [[Cannon ball (Between a Rock...)|golden cannon ball]]. Edgeville is recommended for easy fairy ring or [[Keldagrim minecart]] access.
+*Use the golden cannon ball on [[Dondakan]] to receive a [[Schematic (Dondakan)|Schematic]]. {{Chat option|1Yes, I'm sure this will crack open the rock.|1So you want to... fire me into the rock?|2I can't argue with that, shoot me in!}}
+}}
+
+===The gold helmet and schematics===
+{{Needed|[[Schematic (Dondakan)|Schematic]], 3 [[gold bars]], hammer.}}
+{{Checklist|
+*Read the [[Dwarven lore]] book to receive the [[base schematics]]. {{Chat option|1Yes}}
+*Go back to the Dwarf Engineer at the Western Trade Consortium to get the [[Schematics (Dwarf Engineer)|Schematics]]''.''
+*Use your [[gold bar]] on the nearby anvil to make a [[gold helmet]]. 
+** (Optional) Smith the gold helmet in the wilderness [[Resource Area]] to complete a [[Wilderness Diary]] Medium Achievement.}}
+
+===Completing the schematics===
+{{Needed|[[Gold helmet]], [[Schematic (Dondakan)|Schematic]], [[Schematics (Dwarf Engineer)|Schematics]], [[Base schematics]].|recommended=Camelot Teleport.}}
+{{Checklist|
+*Go to the pub in the [[White Wolf Tunnel|White Wolf Mountain passage]] and speak to [[Khorvak]]. {{Chat option|1No, I've had enough of buying drinks for people!}}
+*Assemble the schematics per below to get the completed [[Schematic (complete)|Schematic]]:
+}}
+[[File:Between a Rock... schematics.png|frame|centre]]
+===Final battle===
+{{Needed|[[Gold helmet]], [[Schematics]], 2 coins, food, armour, your best wield-able pickaxe, 6 free inventory spaces.|recommended=15 total free inventory spaces.}}
+{{Checklist|
+*Equip your [[Gold helmet]] and pickaxe and prepare to kill a level 75-125 [[Arzinian Avatar]].
+*Talk to [[Dondakan]] with the schematics. {{Chat option|1You may fire when ready!}}
+}}
+'''Note''': At this point, you have eight minutes to finish this part of the quest. If you do not finish within eight minutes, you must restart from this step. Do not remove the Gold helmet or you will be teleported outside and have to restart.
+{{Checklist|
+*Mine 6 OR 15 [[Gold ore]] (keep them in your inventory. If you aren't going to get 15, just get 6 as there is no benefit before 15). Getting 15 reduces the boss's level from 125 to 75, so this is recommended for lower-level players. 
+*Go to the centre of the area.
+*Go through the first set of flames.
+*Talk to the second set of flames.
+*Kill the [[Arzinian Avatar]]. It will be either [[Arzinian Avatar of Magic]] (if your highest combat stat is a [[melee]] stat), [[Arzinian Avatar of Ranging]] (if your highest combat stat is [[Magic]]), or [[Arzinian Avatar of Strength]] (if your highest combat stat is [[Ranged]]). Choose combat equipment and prayers accordingly. See [[Arzinian Avatar]] for more details.
+}}'''Tip''': If you are going for the [[Music cape]], re-enter the mine before you drop the helmet to unlock the song [[In Between]].
+
+===Finishing up===
+{{Checklist|
+*Talk to [[Dondakan]].
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,84 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Ardougne" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Enter the [[Unicorn]] pen in [[Ardougne zoo]] using [[Fairy ring]]s.
+|
+*{{SCP|Quest}} Started [[Fairytale II - Cure a Queen]]
+*[[Dramen staff|Dramen]] or [[Lunar staff]] to travel to [[Fairy ring]] code {{Fairycode|bis}}.
+|-
+|2. Grapple over [[Yanille]]'s south wall.
+|
+*{{SCP|Agility|39|link=y}}, {{SCP|Strength|38|link=y}} and {{SCP|Ranged|21|link=y}}
+*[[Mith grapple]]{{efn|[[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].}} and any [[Crossbow (weapon)|crossbow]]
+|-
+|3. Harvest some [[Strawberry|strawberries]] from the [[Ardougne farm|Ardougne farming patch]].
+|
+*{{SCP|Farming|31|link=y}}
+*3 [[strawberry seed]]s, [[spade]], [[seed dibber]] (or [[Barbarian Farming]]), and a [[rake]]
+*[[Basket of apples]] recommended to pay the [[Kragen|nearby farmer]] to protect the crop
+|-
+|4. Cast the [[Ardougne Teleport]] spell.
+|
+*{{SCP|Quest}} Completion of [[Plague City]]
+*{{SCP|Magic|51|link=y}}
+*Means to cast [[Ardougne Teleport]] ({{RuneReq|Water=2|Law=2}})
+|-
+|5. Travel to [[Castle Wars|Castlewars]]{{sic}} by [[Balloon transport system|Hot Air Balloon]].
+|
+*{{SCP|Quest}} Completion of [[Enlightened Journey]]
+*{{SCP|Firemaking|50|link=y}}
+*[[Yew log]]
+*If the [[Balloon_transport_system#Castle_Wars|route]] has not been unlocked yet, 11 total [[yew logs]] are required to unlock it before flying ''again'' to [[Castle Wars]] to complete this task. Upon unlocking the route, you may use 1 normal [[Logs|log]] to depart to [[Taverley]] before returning to Castle Wars for the task completion.
+|-
+|6. Claim [[buckets of sand]] from [[Bert]] in [[Yanille]].
+''Note: [[Ultimate Ironman|Ultimate Ironmen]] must instead fill a bucket with sand from Bert's [[sand pit]].
+|
+*{{SCP|Quest}} Completion of [[The Hand in the Sand]] (unless playing as [[Ultimate Ironman]])
+* [[Bucket]]
+|-
+|7. Catch any fish on the [[Fishing Platform]].
+|
+*{{SCP|Quest}} Started [[Sea Slug]]
+*A [[small fishing net]]
+|-
+|8. Pickpocket the [[master farmer]] north of [[Ardougne]].
+|
+*{{SCP|Thieving|38|link=y}}
+|-
+|9. Collect some [[cave nightshade|Nightshade]] from the [[Skavid Caves]].
+''Note: It can be found in the northernmost cave.''
+|
+*{{SCP|Quest}} Partial completion of [[Watchtower]]
+*Any [[light source]] and the [[Skavid map]]
+|-
+|10. Kill a [[swordchick]] in the [[Tower of Life (building)|Tower of Life]].
+|
+*{{SCP|Quest}} Completion of [[Tower of Life]]
+*[[Raw chicken]] and [[raw swordfish]]
+*[[Weaponry]]
+|-
+|11. Equip [[Iban's staff (u)|Iban's upgraded staff]] or upgrade an [[Iban's staff|Iban staff]].
+''Note: You can upgrade the staff without equipping it.''
+|
+*{{SCP|Quest}} Completion of [[Underground Pass]]
+*[[Iban's upgraded staff]], or 200,000 [[coins]] and [[Iban's staff]] to have the [[Dark Mage]] in [[West Ardougne]] upgrade it
+|-
+|12. Visit the Island East of the [[Necromancer Tower|Necromancer's tower]].
+|
+*{{SCP|Quest}} Started [[Fairytale II - Cure a Queen]]
+*[[Dramen staff|Dramen]] or [[Lunar staff]] to travel to [[Fairy ring]] code {{Fairycode|air}}
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Ardougne cloak 2]]:
+**Three daily teleports to the [[farming patch]] at the [[Ardougne farm]]
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 [[experience]] in any skill of at least level 40
+*Drops from [[Unicow]]s, [[Newtroost]]s, and [[Spidine]]s will be [[noted]] in the [[Creature Creation]] activity
+*[[Wizard Cromperty]] offers you 100 [[noted]] [[pure essence]] for free every day
+*Ability to change the [[ring of life]] teleport location to [[Ardougne]]
+*Chance on receiving additional [[runes]] at the [[Ourania Altar]] (chance [[Ourania_Altar#Ardougne_diary|varies]] per rune)
+*10% increased chance of successfully [[Thieving#Pickpocketing|pickpocketing]] within [[Ardougne]]
+*Hold up to 56 [[coin pouch]]es at a time, up from 28

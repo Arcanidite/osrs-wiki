@@ -1,0 +1,7 @@
+==Reward==
+{{Quest rewards
+|name = Black Knights' Fortress
+|image = [[File:Black Knights' Fortress reward scroll.png|centre]]
+|qp = 3
+|rewards = * 2,500 [[Coins]]
+}}

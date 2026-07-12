@@ -1,0 +1,62 @@
+==Details==
+{{Quest details
+|start = Talk to [[King Narnode Shareen]] in the [[Grand Tree]].
+|startmap = 2466,3495
+|difficulty = Grandmaster
+|description = Glough, the war criminal set on eradicating humans and overthrowing Gielinor, has escaped the watch of the Grand Tree gnomes.
+
+With a history of leaving large-scale conflicts and warfare in his wake, Glough must be tracked down and stopped. King Narnode Shareen needs your help.
+|length = Very Long
+|requirements = *Completion of the following quests:
+**[[Enlightened Journey]]
+***[[Balloon transport system#Grand Tree|Balloon flight route]] to [[Gnome Stronghold]] must be unlocked to start the quest.
+**[[The Eyes of Glouphrie]]
+**[[Recipe for Disaster/Freeing_King_Awowogei|Recipe for Disaster]] (Freeing King [[Awowogei]])
+***[[Monkey Madness I]]
+****[[The Grand Tree]]
+****[[Tree Gnome Village]]
+**[[Troll Stronghold]]
+***[[Death Plateau]]
+**[[Watchtower]]
+*{{SCP|Slayer|69|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Crafting|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Hunter|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Agility|55|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Thieving|55|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Firemaking|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}} (for [[Gnome Stronghold]] [[Balloon transport system#Grand Tree|Route]])
+It is beneficial to have a high [[Combat]] and [[Agility]] level.
+|items = *A [[lemon]]
+*[[Grapes]]
+*A [[pestle and mortar]]
+*A [[pickaxe]] (if you choose the tanking route)
+*[[Logs]]
+*A [[light source]]
+*A [[hammer]] (obtainable during the quest)
+*A [[chisel]] (obtainable during the quest)
+*A [[m'speak amulet]]
+*A [[monkey talisman]] (obtainable during the quest)
+*A [[ninja monkey greegree]] (small or medium)
+*A [[slash weapon]] (to slash webs if you choose the tanking route - [[Wilderness sword]] of any tier recommended for this due to 100% web slash ability).
+*The [[Translation book]] from [[The Grand Tree]]. If you have lost it a replacement can be obtained from King Narnode during the quest.
+|recommended = *[[Magic logs]] (for flying back to [[Gnome Stronghold]])
+*Food ([[monkfish]] or better)
+*[[Stamina potion]]s
+*[[Prayer potion]]s
+*[[Antidote+]] or [[Serpentine helm]]
+*A good [[Weapons|weapon]]
+*[[Weight-reducing clothing]] such as [[Graceful outfit]]
+*[[Armour]] with high [[Melee]]/[[Ranged]] [[Defence]]
+*A [[Teleportation#Single-click_teleports|one-click emergency teleport]]
+* {{SCP|Combat|90|link=yes}}
+|kills = *[[Kruk]] ''(level 207)''
+*[[Keef]] ''(level 178)''
+*[[Kob]] ''(level 185)''
+*7 [[Tortured gorilla]]s ''(level 142)''
+*2 [[Tortured gorilla]]s ''(level 141)''
+*2 [[Demonic gorilla]]s ''(level 275)''
+*[[Glough]] ''(level 431)''
+|ironman = [[File:Ultimate ironman chat badge.png]] The player briefly visits [[Entrana]].
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

@@ -1,0 +1,50 @@
+==Details==
+{{Quest details
+|start = Talk to [[Auguste]] on [[Entrana]].
+|startmap = 2810,3356
+|difficulty = Intermediate
+|description = On the peaceful island of Entrana, a lone monk has tired of his life of simplicity and quiet reflection. Auguste wants to boldly write his name in the history books; to craftily defeat the laws of physics; to miraculously sail through the air... preferably not to horribly explode into a ball of flaming death. Of course, to do all this, he'll need the help of a worldly adventurer: are you bold enough to merrily laugh in the face of the unknown?
+|length = Short
+|requirements = *{{SCP|Quest|20|link=yes}} {{Questreqstart|}}
+*{{SCP|Firemaking|20|link=yes}} {{Boostable|Yes}} {{Questreqstart|yes}}
+*{{SCP|Farming|30|link=yes}} {{Boostable|Yes}} {{Questreqstart|yes}}
+*{{SCP|Crafting|36|link=yes}} {{Boostable|yes}} {{Questreqstart|yes}}
+|items = 
+*TRIP 1 (starting the quest):
+**3 unnoted [[papyrus]]
+**1 [[ball of wool]]
+**A full [[Potatoes|sack of potatoes]] (item is called [[Potatoes(10)]]) (there are potatoes growing in [[Entrana]] in the house east of Auguste, bring another [[empty sack]] if picking here)
+**8 [[empty sack]]s – bring 9 sacks if planning to fill one with [[potatoes]] on [[Entrana]].
+**1 unlit [[candle]] or [[black candle]] (can be obtained during quest by stealing candles in Entrana church)
+**[[Yellow dye]]
+**[[Red dye]]
+**10 unnoted [[silk]]
+**A [[bowl]] (obtainable during quest)
+*TRIP 2 (building the third balloon)
+**At least 10 normal [[logs]]
+**A [[tinderbox]]
+**12 unnoted [[willow branch]]es (buy from the [[Grand Exchange]], or plant a [[willow sapling]] and wait 4 hours.)
+***Note: The player receives a [[Auguste's sapling|willow sapling]] during the quest, although planting one beforehand may be faster. You will also receive a basket of apples to pay to protect the tree.
+***[[Secateurs]] (only if planting the tree) (can also be exchanged from a [[Tool Leprechaun]] if placed there before)
+***A [[rake]] (only if planting the tree) (can also be exchanged from a [[Tool Leprechaun]] if placed there before)
+***A [[spade]] (only if planting the tree) (can also be exchanged from a [[Tool Leprechaun]] if placed there before)
+|recommended =
+*Supplies if you wish to unlock additional locations in the [[balloon transport system]] after the quest. You may choose to store the supplies in [[log storage]] for use in future trips even if you don't currently meet the requirements to unlock a route. The storage may store a total of 100 logs per type. A minimum of 10 of the relevant type is required per route unlock (3 for magic logs).
+**10-90 additional [[logs]] (noted) (keep in mind you will need 1 regular log per return to [[Entrana]] to unlock additional routes)
+**10-100 [[oak logs]] (noted) - [[Crafting Guild]] unlock ({{SCP|Firemaking|30}})
+**10-100 [[willow logs]] (noted) - [[Varrock]] unlock ({{SCP|Firemaking|40}})
+**10-100 [[yew logs]] (noted) [[Castle Wars]] unlock ({{SCP|Firemaking|50}})
+**3-100 [[magic logs]] (noted) [[Grand Tree]] unlock ({{SCP|Firemaking|60}})
+*Fast travel to [[Entrana]] via [[Port Sarim]] (2 trips):
+**[[Minigame Teleport]] to [[Pest Control]] then take the boat to [[Port Sarim]]
+**[[Minigame Teleport]] to [[Rat Pits]] (requires {{SCP|Quest}} Ratcatchers)
+**[[Ring of the Elements]] to [[Air Altar]]
+**[[Amulet of glory]] to [[Draynor Village]]
+**[[Explorer's ring 2]]+
+|ironman = * [[File:Ironman chat badge.png]] {{SCP|Farming|30|link=yes}} {{Boostable|Yes}} and a minimum of 4 hours required to grow a [[Willow Tree (Farming)|willow tree]], plus another hour for the willow branches to grow.
+* [[File:Ultimate ironman chat badge.png]] The player visits [[Entrana]]
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

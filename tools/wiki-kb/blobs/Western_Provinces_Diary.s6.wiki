@@ -1,0 +1,101 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Western Provinces" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Kill an [[Elf]] with a [[Crystal bow]].
+''Note: an inactive bow can be used if equipped whilst the elf dies to poison.''
+|
+*{{SCP|Quest}} Completion of [[Roving Elves]]
+*{{SCP|Ranged|70|link=y}} {{boostable|n}}
+*[[Crystal bow]] or [[Bow of faerdhinen]]
+|-
+|2. Catch and cook a [[Monkfish]] in [[Piscatoris]].
+''Note: [[Monkfish]] is caught in the [[Piscatoris Fishing Colony]].
+|
+*{{SCP|Quest}} Completion of [[Swan Song]]
+*{{SCP|Fishing|62|link=y}} and {{SCP|Cooking|62|link=y}}
+*[[Small fishing net]]
+|-
+|3. Complete a Veteran game of [[Pest Control]].
+''Note: You must've earnt [[Void Knight commendation points|commendation points]] for this task to count as completed. In Deadman Mode, the task is instead "Attempt to board the veteran Pest Control lander with at least 100 combat."''
+|
+*{{SCP|Combat|100|link=y}}
+|-
+|4. Catch a [[Dashing Kebbit]].
+''Note: This [[kebbit]] is found in the [[Piscatoris falconry area]].'' 
+|
+*{{SCP|Hunter|69|link=y}} {{boostable|y}}
+*500 [[coins]]
+|-
+|5. Complete a lap of the [[Ape Atoll agility course]].
+|
+*{{SCP|Quest}} Partial completion of [[Monkey Madness I]]
+*{{SCP|Agility|48|link=y}}
+*[[Ninja monkey greegree]] or [[Kruk monkey greegree]] (other [[greegree]]s will cause you to fail the course)
+|-
+|6. Chop and burn some [[Mahogany logs]] on [[Ape Atoll]].
+''Note: Logs burnt by the [[Infernal axe]] do not count towards this task.''
+|
+*{{SCP|Quest}} Partial completion of [[Monkey Madness I]]
+*{{SCP|Woodcutting|50|link=y}} and {{SCP|Firemaking|50|link=y}}
+*Any [[axe]] (excluding [[felling axe]]s) and a [[tinderbox]]
+*
+|-
+|7. Mine some [[Adamantite ore]] in [[Tirannwn]].
+''Note: This can be done in the [[Isafdar mine]] outside of [[Lletya]], or the [[Trahaearn mine]] in [[Prifddinas]] (with completion of [[Song of the Elves]]).''
+|
+*{{SCP|Quest}} Started [[Regicide]]
+*{{SCP|Mining|70|link=y}} {{boostable|y}}
+*Any [[pickaxe]]
+|-
+|8. Check the health of your [[Palm tree]] in [[Lletya]].
+|
+*{{SCP|Quest}} Started [[Mourning's End Part I]]
+*{{SCP|Farming|68|link=y}} {{boostable|y}}
+*[[Palm sapling]], [[rake]], and [[spade]]
+*15 [[Papaya fruit|papayas]] recommended to pay the [[Liliwen|gardener]]
+|-
+|9. Claim a [[Chompy bird hat]] from [[Rantz]] after registering at least 300 kills.
+''Note: You need to have a ([[comp ogre bow|comp]]) [[ogre bow]] in your inventory to claim hats.''
+|
+*{{SCP|Quest}} Completion of [[Big Chompy Bird Hunting]]
+*[[Ogre bellows]], ([[comp ogre bow|comp]]) [[ogre bow]], and [[ogre arrows|ogre]] or [[brutal arrows]]
+*300 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|-
+|10. Build an [[Isafdar (painting)|Isafdar painting]] in your [[Hall (quest trophies)|POH Quest hall]].
+|
+*{{SCP|Quest}} Completion of [[Roving Elves]]
+*{{SCP|Construction|65|link=y}} {{boostable|y}}
+*3 [[mahogany plank]]s, [[saw]], and [[hammer]]
+*[[Isafdar painting]] (bought from [[Sir Renitee]] for 2,000 [[coins]])
+*25,000 [[coins]] to construct a [[Hall (quest trophies)|Quest Hall]] if you haven't already
+|-
+|11. Kill [[Zulrah]].
+''Note: In Deadman Mode, the task is listed as "Attempt to visit Zulrah.", but doing so will not complete the task, and you must kill Zulrah like normal to complete it.''
+|
+*{{SCP|Quest}} Started [[Regicide]]
+*See the [[Zulrah/Strategies|strategy guide]]
+|-
+|12. Teleport to [[Ape Atoll]].
+|
+*{{SCP|Quest}} Completion of the [[Recipe for Disaster/Freeing King Awowogei|Awowogei subquest]] of [[Recipe for Disaster]] 
+*{{SCP|Magic|64|link=y}} {{boostable|y}}
+*Means to cast [[Ape Atoll Teleport (standard)|Ape Atoll Teleport]] ({{RuneReq|Law=2|Fire=2|Water=2|Banana=1}})
+|-
+|13. Pickpocket a [[Gnome]].
+|
+*{{SCP|Thieving|75|link=yes}} {{Boostable|y}}
+|}
+
+===Rewards===
+*[[Western banner 3]]:
+**Depicts a [[gnome child]]
+**One daily teleport to the [[Piscatoris Fishing Colony]]
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 [[experience]] in any skill of at least level 50
+*[[Rantz]] offers you 100 [[ogre arrow]]s for free every day, worth a total of {{NoCoins|{{GEP|Ogre arrow|100}}}} [[coins]] on the [[Grand Exchange]]
+*[[Teleport crystal]]s will now hold up to 5 charges, up from 3
+*The [[void knight top]] and [[void knight robe|robe]] can now be upgraded into an [[elite void top]] and [[elite void robe|robe]] for 200 [[Void Knight commendation points|commendation points]] each, by speaking to the [[Elite Void Knight]]
+*Access to the room with the [[monkey skull]] in the [[Temple of Marimbo Dungeon]], allowing you to make the [[ancient gorilla greegree]]
+*Access to the [[Hunting expert]]'s private [[Red chinchompa hunting ground]]
+*[[Islwyn]] now sells [[Crystal halberd]]s for 750,000 [[coins]], which can be wielded with 70 [[Attack]] and 35 [[Strength]], and you gain the ability to create them yourself (with 78 [[Crafting]] and 78 [[Smithing]])

@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Rag and Bone Man I
+|image = [[File:Rag and Bone Man I reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+* {{SCP|Cooking|500}} [[Cooking]] [[experience]]
+*{{SCP|Prayer|500}} [[Prayer]] experience
+}}

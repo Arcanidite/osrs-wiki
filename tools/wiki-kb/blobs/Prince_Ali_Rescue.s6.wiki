@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Prince Ali Rescue
+|image = [[File:Prince Ali Rescue reward scroll.png|centre]]
+|qp = 3
+|rewards =
+*700 [[coins]]
+*Free passage through the [[Lumbridge]] - [[Al Kharid]] toll gate from now on.
+*(Members) Access to the [[Sorceress's Garden]] [[Thieving]] [[minigame]].
+*(Members) Use of the window shortcut at the rear of [[Al Kharid Palace]] (requires 70 [[Agility]]).
+}}

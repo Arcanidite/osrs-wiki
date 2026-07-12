@@ -1,0 +1,18 @@
+{{External|rs=Wilderness achievements}}
+{{Infobox Achievement Diary
+|name = Wilderness Diary
+|image = [[File:Wilderness Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Wilderness]], [[Wilderness God Wars Dungeon]]
+|members = Yes
+|reward = [[Wilderness sword|Sword]]
+|taskmasters = [[Lesser Fanatic]]
+|leagueRegion = Wilderness
+}}
+{{Map|name=Lesser Fanatic|x=3121|y=3516|align=left|width=250|height=250|r=4|mtype=square|caption=Lesser Fanatic's location}}
+The '''Wilderness Diary''' is an [[Achievement Diary]] whose tasks are exclusively done within the [[Wilderness]]. Therefore, players should be prepared for attacks from [[Player killing|player killers]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from the [[Lesser Fanatic]] east of the [[Edgeville]] jailhouse and nearby the bridge, outside of the Wilderness. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

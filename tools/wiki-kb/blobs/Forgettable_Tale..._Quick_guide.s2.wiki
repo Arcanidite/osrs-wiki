@@ -1,0 +1,104 @@
+==Walkthrough==
+'''Note:''' This quest involves waiting for 15-20 minutes twice. If you don't want to do this quest intermittently, you can bring something to fill this time with, such as runes and items for [[High Level Alchemy]]. For the first waiting period there is a bank nearby.
+
+===Starting out===
+''Items required: 2 beers''
+{{Checklist|*Talk to [[Commander Veldaban]] in Keldagrim, just west of the bank. This will begin a cutscene (note: If you click the east side of the bridge directly as the cutscene begins your avatar will migrate east during the cutscene). {{Chat option|1Very interested!|1Yes.|1Sounds like just the job for me!}}
+*Buy 3 beers from the pub south of the drunken dwarf's house if you don't have them already. {{Chat option|2I'd like a beer please.|1Pay.}}
+*Speak to the drunken dwarf in the middle of East Keldagrim (north-east of the kebab shop, there's a bar south). {{Chat option|2I need to know about the Red Axe...}}
+*Talk to him again and give him a beer. {{Chat option|2I need to know about the Red Axe...}}
+}}
+
+===Getting the seeds===
+''Items required: a random item (see [[Forgettable Tale...|full guide]] for details), beer, Dwarven stout (spawns on the table)''
+{{Checklist|
+*Speak to the rowdy dwarf outside the East Keldagrim pub, he will request a random item. Get it and bring it to him. (If you buy it at the Grand Exchange, use the free minecart transport north-west in the GE.)
+*Travel to the tunnel under White Wolf Mountain (Optional: Buy White Wolf Mountain ticket (100 coins) from Keldagrim Cart Conductor to travel to the White Wolf Mountain tunnel. Use the south minecart track.)
+*Talk to [[Khorvak]] in the pub under White Wolf Mountain {{Chat option|1What if I offer you a drink?}}.
+*Give a dwarven stout to Khorvak. (If you didn't bring a dwarven stout, pick up the dwarven stout spawn from table in pub.)
+*(Optional) Buy a Keldagrim ticket from the Cart Conductor under White Wolf Mountain for 100 coins (50 if [[Ring of charos]] is used) to get back to Keldagrim, or teleport to Blast Furnace minigame.
+*Talk to [[Gauss]] in the bar south of the bank (western side of Keldagrim). Give him cheers with another beer.
+}}
+
+===Planting the crops===
+''Items required: rake, Kelda seeds, seed dibber''
+{{Checklist|
+*Go to the "Kelda Hops Patch" just south-east of the bank. Speak with Rind The Gardener, or you will receive a message that you should ask for permission before using the patch.
+*Plant the kelda seeds (there is a rake south of the patch).
+*They will grow in 15–20 minutes and cannot die. You will get a chat notification when ready (you can be logged out while waiting).
+*Harvest the kelda hops.
+}}
+
+===Brewing===
+''Items required: 2 buckets of water, 2 barley malts, kelda hops, empty beer glass, and ale yeast or a pot and 25 coins''
+{{Checklist|
+*Go upstairs in the East Keldagrim pub.
+*If you did not bring ale yeast, buy ale yeast from [[Blandebir]] for 25 coins (empty pot spawn can be found near the vat). {{Chat option|4Do you have any spare ale yeast?|1That's a good deal - please fill my pot with ale yeast for 25GP.}}
+*Add to the vat in this order:
+**2 buckets of water.
+**2 barley malts.
+**Kelda hops.
+**Ale yeast.
+*Wait 15–20 minutes for the notification again.
+*Turn the valve and use an empty beer glass on the barrel.
+*Return to the drunken dwarf's house, north-east of the Kebab shop, and talk about the Red Axe. {{Chat option|2I need to know about the Red Axe...}}}}
+
+===Exploring the closed tunnel===
+{{Checklist|
+*Talk to the southernmost cart conductor in south-eastern Keldagrim. {{Chat option|1Ask about closed off tunnel.}}
+**Only one of them will let you ask about the closed-off tunnel.
+*Talk to the director of the mining company you joined in [[The Giant Dwarf]], which is located upstairs in either the west or the east marketplace (Palace). If you don't remember which company you joined just go from director to director. The only one with time to speak with you is yours. {{Chat option|3Can you help me with a boarded up tunnel?}}
+*Return to the minecarts and ride the southernmost cart (no ticket necessary, but need both hands free).
+}}
+====Room 1====
+{{Checklist|
+*Search the [[box (Forgettable Tale...)|box]].
+*Use the [[dwarven machinery]].
+*Set up the path shown in the "Part 1" image and click OK.
+*Ride the cart, collect more stones from the box.
+*Return on the cart to the start point, then input the next path.
+*Collect the stones and return again.
+*Input the third path to move on to the next room.
+}}
+<gallery captionalign="center" position="center" widths="240px">
+Forgettable Tale - cart 1-1.png|Part 1
+Forgettable Tale - cart 1-2.png|Part 2
+Forgettable Tale - cart 1-3.png|Part 3
+</gallery>
+
+====Room 2====
+{{Checklist|
+*Listen to the conversation, crawl to the other side, and leave.
+}}
+====Room 3====
+{{Checklist|
+*Complete the puzzle in the same manner as the first one.
+}}
+<gallery captionalign="center" position="center" widths="240px">
+Forgettable Tale - cart 2-1.png|Part 1
+Forgettable Tale - cart 2-2.png|Part 2
+Forgettable Tale - cart 2-3.png|Part 3
+</gallery>
+====Room 4====
+{{Checklist|
+*Search the crates and bookshelves until you've read 3 documents relating to the Red Axe, then continue into the next room.
+}}
+====Room 5====
+{{Checklist|
+*Complete the puzzle in the same manner as the previous ones.}}
+<gallery captionalign="center" position="center" widths="240px">
+Forgettable Tale - cart 3-1.png|Part 1
+Forgettable Tale - cart 3-2.png|Part 2
+Forgettable Tale - cart 3-3.png|Part 3
+</gallery>
+====Room 6====
+{{Checklist|
+*Watch the cutscene.
+}}
+
+===Finishing up===
+{{Checklist|*Buy a [[kebab]] from the [[kebab shop]] and a [[beer]] in the pub (both in East Keldagrim) if you don't already have them.
+*Talk to [[Commander Veldaban]] (west of the bank).
+*Return back to the eastern pub (on the '''east side''' of Keldagrim) and drink your beer and eat your kebab.
+*'''Congratulations, quest complete!'''
+}}

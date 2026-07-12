@@ -1,0 +1,2 @@
+==Rewards==
+{{Quest rewards|name=Romeo & Juliet|image=[[File:Romeo & Juliet reward scroll.png|centre]]|qp=5|rewards=}}

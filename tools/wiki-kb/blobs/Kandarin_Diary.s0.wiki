@@ -1,0 +1,18 @@
+{{External|rs=Seers' Village achievements}}
+{{Infobox Achievement Diary
+|name = Kandarin Diary
+|image = [[File:Kandarin Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Seers' Village]], [[Catherby]], [[Hemenster]], [[Barbarian Outpost]]
+|members = Yes
+|reward = [[Kandarin headgear|Headgear]]
+|taskmasters = [[The 'Wedge']]
+|leagueRegion = Kandarin
+}}
+{{Map|name=The 'Wedge'|x=2759|y=3476|align=left|width=250|height=250|r=4|mtype=square|caption=Location of The 'Wedge'}}
+The '''Kandarin Diary''' is an [[Achievement Diary]] whose tasks revolve around areas in and near the northern part of [[Kandarin]], such as [[Seers' Village]], [[Catherby]], and the [[Barbarian Outpost]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from [[The 'Wedge']] outside the entrance to [[Camelot]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.

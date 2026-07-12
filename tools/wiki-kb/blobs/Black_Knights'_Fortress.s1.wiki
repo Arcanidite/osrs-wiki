@@ -1,0 +1,25 @@
+==Details==
+{{Quest details
+|start = Talk to [[Sir Amik Varze]] on the {{FloorNumber|uk=2}} of the [[White Knights' Castle]]'s western tower in [[Falador]].
+|startmap = 2959,3336,plane:2
+|difficulty = Intermediate
+|description = The Black Knights are up to no good. You are hired by the white knights to spy on them and destroy their secret weapon.
+|length = Very Short
+|requirements = * {{SCP|Quest|12}} [[Quest points]] {{Questreqstart|yes}}
+* The ability to evade level 33 [[Black Knight]]s
+|items = * [[Cabbage]] (can be obtained from the cabbage patch in [[Edgeville Monastery]] and [[South Falador Farm]], as well as [[Lumbridge Castle#Cellar|Lumbridge cellar]]. Cabbages obtained from [[Draynor Manor]] '''CANNOT''' be used)
+* [[Iron chainbody]] (can be purchased at [[Horvik's Armour Shop]] in [[Varrock]] and from [[Wayne's Chains - Chainmail Specialist|Wayne's Chains]] in [[Falador]])
+* [[Bronze med helm]] (can be purchased in the helmet shop in [[Barbarian Village]], spawns by the backdoor of [[Draynor Manor]])
+|recommended = * {{SCP|Combat|15|link=yes}}
+* [[Food]]
+* [[Armour]]
+* [[Falador teleport]]s
+* ''([[Members]] only)'' [[Combat bracelet]] to the [[Edgeville Monastery|Monastery]] and head west towards the [[Black Knights' Fortress (location)|Black Knights' Fortress]]
+|kills = None
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

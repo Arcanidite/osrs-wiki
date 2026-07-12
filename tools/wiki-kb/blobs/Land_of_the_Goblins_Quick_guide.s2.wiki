@@ -1,0 +1,80 @@
+==Walkthrough==
+===Grubfoot's Dream===
+{{Needed|[[Light sources#Light sources|Light source]], no pets following the player}}
+{{Checklist|
+* Talk to [[Grubfoot]] in the [[Dorgeshuun Mines]], right outside the main entrance to [[Dorgesh-Kaan]]. {{Chat option|1Yes}}
+* Enter Dorgesh-Kaan and head north-west to [[Oldak]]'s laboratory.
+* Talk to [[Zanik]] in the laboratory. {{Chat option|3 So why have you come to talk to Zanik?|3 What was this new dream?|Any|1 I'm ready.}}
+}}
+
+===Impostor Among Goblins===
+{{Needed|[[Toadflax potion (unf)]]|recommended=[[Skills necklace]], enough inventory space to unequip all of your items.}}
+{{Checklist|
+* Head north-west to the temple entrance stairs blocked by two [[Goblin guard (Land of the Goblins)|goblin guards]].
+** Pick a [[black mushroom]] if you don't already have [[black dye]].
+* Talk to the guards for Zanik to pass.
+* Head over and talk to the [[Makeover Mage]] south-west of [[Falador]] using a [[skills necklace]] to the [[crafting guild]] or a Falador teleport. {{Chat option|4 Can you turn me into a goblin?|1 I need to slip past some goblin guards.|2 Can you turn me into a goblin or not?}}
+* Pick the [[pharmakos bush]] outside the building and use the [[pharmakos berries|berries]] on an [[toadflax potion (unf)|unfinished toadflax potion]] to create a [[goblin potion]].
+}}
+
+===The Temple of Tribes===
+{{Needed|No pets following the player or in your inventory, [[Goblin potion]], [[black dye]] (or a [[black mushroom]], an empty [[vial]] and a [[pestle and mortar]]), [[goblin mail]] (obtainable during quest)|recommended=Enough inventory space to unequip your gear, [[Dorgesh-kaan sphere]]}}
+{{Checklist|
+* Return to the [[Goblin Cave]] located nearby the [[Fishing Guild]] by any means, most commonly a [[skills necklace]] to the [[fishing guild]].
+* In front of the goblin guards, drink the [[goblin potion]] (pick any goblin appearance).
+* Create a black dye if needed, by using a pestle and mortar on a black mushroom with a vial in inventory.
+** Pick a [[black mushroom]] by the entrance if you don't already have [[black dye]].
+* Climb down the entrance. {{Chat option|2 Me want get into temple.|1 Yes, me [goblin name].}}
+* Use black dye on your goblin mail and wear it. Search the crates in the main temple room for a free goblin mail.
+* Enter the north-eastern room.
+* Search the crate in the room for a [[Dorgesh-kaan sphere]] to free Zanik.
+* Talk to Zanik in the prison cell with a Dorgesh-kaan sphere in inventory.
+* Head back to the main room, and talk to [[High Priest Bighead]] in the northern part of the temple and take the test. {{Chat option|1 I understand Big High War God.|1 True.|1 Big High War God commands it.|2 False.|2 Goblins not mighty warriors before he chose us.|2 False.|1 That one of the commandments.|2 Lead goblins to victory over whole world.|1 Me want to know about Yu'biusk.|2 Where is Yu'biusk?|1 Can I talk to old high priests?}}
+*Re-enter the north-eastern room where the goblins are wearing black goblin-mail and pickpocket the priest for his [[Huzamogaarb key]]. 
+}}
+
+===Keys to the Crypt===
+{{Needed|[[Fishing rod]], [[raw slimy eel]], 5 [[coins]], [[blue dye]], [[orange dye]], [[purple dye]], [[yellow dye]], [[black goblin mail]], [[goblin potion]], black key from previous section, [[combat]] equipment for the next section|recommended=Two teleports to [[Draynor Village]], [[combat bracelet]] for [[Ranging Guild]] teleport}}
+{{Checklist|
+* Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.
+* Talk to [[Aggie]] in Draynor Village. {{Chat option|2 Can you make dyes for me please?|4 Can you make black or white dye?}}
+* Acquire a [[raw slimy eel]] and head to the [[Fishing Contest]] area in [[Hemenster]] with a fishing rod.
+* Click the gate. {{Chat option|3 I need to catch a Hemenster Whitefish.}}
+* Catch a [[whitefish]].
+* Return to Aggie to receive a [[white goblin mail]]. {{Chat option|2 Can you make dyes for me please?|4 Could you remove the dye from this goblin mail?}}
+* Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.
+* Steal the [[Saragorgak key]] from the priest in the western room of the temple. 
+** Remove the goblin mail to leave the room quicker.
+* Repeat the operation of stealing keys and dying your mail in the following order:
+** Yellow (north-west)
+** Purple (south-west)
+** Orange (south-east)
+** Blue (east)
+* Before you leave, unlock the crypt with the six keys to give you more inventory space.}}
+
+===High Priests of Ages Past===
+{{Checklist|
+*Prepare for a fight
+* Enter the crypt (large door north of the temple).
+* Use the "Say-name" option on each of the graves. After defeating them, talk to them.
+** South-west: [[Snothead]] {{Chat option|2 What was your predecessor's name?}}
+** South-east: [[Snailfeet]] {{Chat option|2 What was your predecessor's name?}}
+** North-west: [[Mosschin]] {{Chat option|2 What was your predecessor's name?}}
+** North-east: [[Redeyes]] {{Chat option|2 What was your predecessor's name?}}
+** North: [[Strongbones]] (ignore the [[skoblin]]s and use [[Protect from Magic]]) {{Chat option|1 Where is Yu'biusk?}}
+* Ensure you ask [[Strongbones]] where Yu'biusk is before leaving.
+}}
+
+===Path to Yu'biusk===
+{{Needed|A [[light source]]|recommended=[[Dorgesh-kaan sphere]] or a [[dramen staff|dramen]] or [[lunar staff]] (with [[Fairytale II - Cure a Queen]] started to the point of unlocking [[fairy rings]])}}
+{{Checklist|
+* Return to Dorgesh-Kaan and speak to Zanik in Oldak's laboratory.
+* With a light source, go to Oldak in [[Dorgesh-Kaan South Dungeon]] located beneath the [[Dorgesh-Kaan Agility Course|agility course]] which is in the south end of Dorgesh-Kaan.
+** Option 1: If the player has access to fairy rings, use the code {{Fairycode|AJQ}}.
+** Option 2: Use a Dorgesh-kaan sphere and go south into the [[Dorgesh-Kaan Agility Course|agility course]], and go down the ladder. Follow the path east in the [[Dorgesh-Kaan South Dungeon|dungeon]].
+** Option 3: Run south to the south end of Dorgesh-Kaan to the [[Dorgesh-Kaan Agility Course|agility course]], and go down the ladder. Follow the path east in the [[Dorgesh-Kaan South Dungeon|dungeon]].
+* Speak to Oldak.
+* Click on the machines next to Oldak; use the combination '''9-4-1''' to activate the machine.
+* Open the strange box in the north-western part of [[Yu'biusk]] for a cutscene.
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,32 @@
+==Details==
+{{Quest details
+|start = Talk to [[Hassan]] in the palace at [[Al Kharid]].
+|startmap = 3301,3163
+|difficulty = Novice
+|description = Prince Ali of Al Kharid has been kidnapped by the scheming Lady Keli. You are hired to stage a rescue mission.
+|length = Short
+|requirements = The ability to get past [[aggressive]] [[combat level]] 26 [[jail guard]]s.
+|items = *[[Soft clay]]
+*3 [[balls of wool]]
+*[[Yellow dye]] or 2 [[onion]]s and 5 [[coins]]
+*[[Redberries]]
+*[[Ashes]]
+*[[Bucket of water]] or [[jug of water]] (obtainable during quest)
+*[[Pot of flour]]
+*[[Bronze bar]]
+*[[Pink skirt]]
+*3 [[beer]]s
+*[[Rope]] (can be bought during the quest from [[Ned]] for 18 [[coins]])
+*30-40 [[coins]] for the Al Kharid [[toll gate]] if not using teleports to and from Al Kharid
+|recommended = * {{SCP|Combat|10|link=yes}}
+*Fast travel to several locations:
+**''(Members only)'' Al Kharid (2 trips) - [[Amulet of glory]] or [[ring of dueling]]
+**''(Members only)'' Draynor Village (2 trips) - [[Amulet of glory]] or [[necklace of passage]] to Wizards' Tower
+*Quick access to a furnace:
+**''(Members only)'' [[Amulet of glory]] to [[Edgeville]]
+**[[Lumbridge Teleport]] or [[Lumbridge Home Teleport]]
+|kills = [[Jail guard]] (level 26, optional)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}

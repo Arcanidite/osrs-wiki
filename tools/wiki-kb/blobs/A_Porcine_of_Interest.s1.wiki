@@ -1,0 +1,21 @@
+==Details==
+{{Quest details
+|start = Read the town [[Notice board (Draynor Village)|notice board]] in [[Draynor Village]], behind [[Fortunato]]'s [[Wine Shop]].
+|startmap = 3086,3251
+|difficulty = Novice
+|description = Ah, the Falador Farm - filled with cabbages, cows, and even a sleepy sheepdog. A peaceful place, where you can learn to churn butter, give a dog a bone, or purchase various Farming supplies. What was once a place of happiness, joy and wholesome dairy goods has of late become dominated by a vile presence. Each morning Sarah wakes to find her crops destroyed, her cows cowering, and her loyal sheepdog looking... sheepish.<br><br>
+She's had enough, but she thinks she's got the culprit on the trot. Can you help her track down... A Porcine of Interest?
+|length = Very Short
+|items = * [[Rope]]
+* [[Knife]] or a [[slash weapon]] (except [[abyssal whip]], [[abyssal tentacle]], [[noxious halberd]], or [[dragon claws]]) (obtainable during the quest)
+|recommended = *{{SCP|Combat|20|link=yes}}
+*[[Stamina potion|Stamina]] or [[energy potion]]s
+*Combat equipment and some food
+*[[Amulet of glory]] for fast travel to [[Draynor Village]]
+*[[Explorer's ring 2]] or above or [[ring of the elements]] for fast travel to the [[Falador farm]]
+*{{SCP|Agility|31|link=yes}} and a [[chronicle]] or [[combat bracelet]] to the Champions' Guild for a shortcut
+|kills = [[Sourhog]] (level 37)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+</poem>
+}}

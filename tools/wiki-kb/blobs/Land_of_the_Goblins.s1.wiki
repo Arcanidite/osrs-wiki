@@ -1,0 +1,53 @@
+==Details==
+{{Quest details
+|start = Talk to [[Grubfoot]] in the [[Dorgesh-Kaan mine]].
+|startmap = 3319,9616
+|difficulty = Experienced
+|description = The most ancient goblin legends speak of Yu'biusk, the far-off land that saw the origin of the goblin race. Now, one goblin has had a vision of this land and believes it is Zanik's destiny to lead all goblins to live there in peace and safety - but Zanik will not be able to realise her destiny without your help.
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[Another Slice of H.A.M.]]
+***[[Death to the Dorgeshuun]]
+****[[The Lost Tribe]]
+*****[[Goblin Diplomacy]]
+*****[[Rune Mysteries]]
+***[[The Giant Dwarf]]
+***[[The Dig Site]]
+**[[Fishing Contest]]
+*{{SCP|Agility|38|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Fishing|40|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Thieving|45|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Herblore|48|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = * A [[Light sources#Light sources|light source]]
+* [[Toadflax potion (unf)]]
+* [[Goblin mail]] (obtainable during quest)
+** 6 goblin mails are recommended
+* [[Yellow dye]]
+* [[Blue dye]]
+* [[Orange dye]]
+* [[Purple dye]]
+* [[Black dye]] ([[black mushroom]] obtainable during quest)
+** An empty [[vial]] and a [[pestle and mortar]] if making the black dye during the quest
+* [[Fishing rod]] ([[oily fishing rod]] will not work)
+* [[Raw slimy eel]]
+* 5 [[coins]]
+|recommended = *{{SCP|Combat|65|link=yes}}
+* Combat equipment
+* [[Tinderbox]] if not using a [[Light sources#Light sources|non-extinguishable light source]]
+* Two or more [[Dorgesh-kaan sphere]]s (obtainable during quest with [[law runes]] and [[molten glass]]) 
+* A [[dramen staff|dramen]] or [[lunar staff]] for using [[fairy rings]]
+* A [[skills necklace]] to reach the [[Makeover Mage]], [[Fishing Guild]] and [[Goblin Cave]] quicker
+* A [[combat bracelet]] to reach [[Hemenster]] quicker, as well as the Fishing Guild and Goblin Cave
+* Teleports to [[Lumbridge]]
+* Teleports to [[Draynor Village]]
+*[[Explorer's ring 3]] or [[Explorer's ring 4|4]]
+|kills = * [[Snothead]] (level 32)
+* [[Snailfeet]] (level 56)
+* [[Mosschin]] (level 88)
+* [[Redeyes]] (level 121)
+* [[Strongbones]] (level 184)
+|ironman = * [[File:Ultimate ironman chat badge.png]] The player needs to unequip all items in addition to carrying the required items.
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

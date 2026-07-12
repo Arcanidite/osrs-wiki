@@ -1,0 +1,34 @@
+==Details==
+{{Quest details
+|start = Talk to [[Ur-tag]] in [[Dorgesh-Kaan]].
+|startmap = 2733,5365,plane:1
+|difficulty = Intermediate
+|description = The dwarves are building a new underground rail link between their city of Keldagrim and the cave goblins' Dorgesh-Kaan, but work is being held up by the discovery of ancient goblin artefacts, and they need the help of a qualified archaeologist. Helping them out should be simple enough - unless you stumble upon another H.A.M. plot against the city.
+|length = Short
+|requirements = *{{SCP|Attack|15|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Prayer|25|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*Completion of the following quests:
+**[[Death to the Dorgeshuun]]
+***[[The Lost Tribe]]
+****[[Goblin Diplomacy]]
+****[[Rune Mysteries]]
+**[[The Giant Dwarf]]
+**[[The Dig Site]]
+*The ability to defeat a level 64 (using any combat style) and two level 30 enemies using either [[Ranged]] or [[Magic]].
+|items = *A [[light source]]
+*[[Trowel]] (obtained during the quest)
+*[[Specimen brush]] (obtained during the quest)
+*Magic or Ranged [[equipment|gear]] for enemy fight ''(cannot use [[Melee]] on them)''
+|recommended = *{{SCP|Combat|35|link=yes}}
+*Fast teleports to [[Lumbridge Swamp]] ([[Ring of the elements]] to [[water altar]], [[amulet of glory]] to [[Draynor Village]], [[Lumbridge teleport]], or [[Home Teleport]])
+*[[Food]]
+*[[Stamina]] potions
+*A [[tinderbox]] to relight light source.
+*At least eight empty inventory spaces at the start of the quest
+|kills = *[[H.A.M. Archer]] ''(level 30)''
+*[[H.A.M. Mage]] ''(level 30)''
+*[[Sigmund#Another_Slice_of_H.A.M.]] ''(level 64)''
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

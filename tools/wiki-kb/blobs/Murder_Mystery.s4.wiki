@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Murder Mystery
+|image = [[File:Murder Mystery reward scroll.png|centre]]
+|qp = 3
+|rewards = 
+*{{SCP|Crafting|1,406}} [[Crafting]] [[experience]]
+*2,000 [[Coins]]
+}}

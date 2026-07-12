@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name=Ratcatchers
+|image=[[File:Ratcatchers reward scroll.png|centre]]
+|qp=2
+|rewards=*{{SCP|Thieving|4,500}} [[Thieving]] [[experience]]
+*A [[rat pole]]
+*The ability to train overgrown cats into [[Wily cat|wily]] and [[lazy cat]]s.
+*The ability to name your wily or lazy [[cat]] (up to six letters long).
+*Access to the [[Rat Pits]].
+*The ability to use the [[Minigame Teleport]] to the rat pits in [[Port Sarim]], [[Ardougne]], [[Varrock]], and [[Keldagrim]].
+}}

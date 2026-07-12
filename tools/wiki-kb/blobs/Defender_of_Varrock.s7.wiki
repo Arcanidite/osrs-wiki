@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Defender of Varrock
+|image = [[File:Defender of Varrock reward scroll.png|center]]
+|qp = 2
+|rewards = 
+* {{SCP|Smithing|15,000|link=yes}} [[experience]]
+* {{SCP|Hunter|15,000|link=yes}} [[experience]]
+* Access to [[Zemouregal's Base]]
+* Ability to claim 5 [[Kudos]] and an [[Antique lamp (Varrock Museum)#Defender of Varrock|Antique lamp]] rewarding 5,000 XP in any skill of at least level 30 from [[Historian Minas]] after completion of the quest
+}}

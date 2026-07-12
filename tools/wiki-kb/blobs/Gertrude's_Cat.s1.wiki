@@ -1,0 +1,23 @@
+==Details==
+{{Quest details
+|start = Talk to [[Gertrude]] in her house just west of [[Varrock]].
+|startmap = 3150,3412
+|difficulty = Novice
+|description = Gertrude has lost her cat Fluffs and desperately wants to find her. Can you help bring her home?
+|length = Very Short
+|items = * [[Bucket of milk]]
+* 100 [[coins]]
+* [[Seasoned sardine]] (Bought from the [[Grand Exchange]]) or alternatively:
+** [[Raw sardine]] (can be bought from [[Gerrant's Fishy Business.]])
+** [[Doogle leaves]] (obtainable during the quest)
+|recommended = *[[Ring of charos (a)]] (to choose the colour of your [[kitten]])
+*[[Axe]] and 100 coins to cut down a dying tree in the [[Lumber Yard]] and create a normal plank for two [[easy Varrock Diary]] tasks.
+*Fast travel to several locations
+**[[Cooks' Guild]] in [[Varrock]] (2 trips) - [[Skills necklace]] or [[Varrock Teleport]] or [[Ring of wealth]] to [[Grand Exchange]] or [[Chronicle]]
+**[[Lumberyard]] east of [[Varrock]] (1 trip) - [[Lumberyard Teleport]] or [[Ring of the elements]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

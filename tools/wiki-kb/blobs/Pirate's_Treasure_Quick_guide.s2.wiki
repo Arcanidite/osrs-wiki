@@ -1,0 +1,28 @@
+==Walkthrough==
+===Captain Redbeard===
+{{Checklist|*Talk to [[Redbeard Frank]] by the pub to the north [[Port Sarim]] dock. {{Chat option|1I'm in search of treasure.|1Ok, I will bring you some rum}}
+*Travel to [[Karamja]] for 30 coins (talk to [[Seaman Thresnor]], [[Seaman Lorris]], or [[Captain Tobias]] on the south-west docks).}}
+
+===The island of Karamja===
+{{Checklist|*Head west to the [[Karamja Wines, Spirits, and Beers]] bar and buy one [[Karamjan rum]] for 30 coins. (Do not try to leave the island with the rum.)
+*Grab 10 Bananas from the nearby trees.
+*Talk to [[Luthas]] the banana farmer about the customs workers, {{Chat option|2That customs officer is annoying isn't she?}} then talk to him again to ask for a job. {{Chat option|1Could you offer me employment on your plantation?}}
+*Place your rum in the crate outside, then right-click Fill to add the 10 bananas (the crate outside, not in the bedroom. Careful not to eat the bananas).
+*Talk to Luthas and get your payment from him.
+*Take the boat back to Port Sarim. {{Chat option|1Can I journey on this ship?|2Search away, I have nothing to hide.|10k.}}}}
+
+===Back at Port Sarim===
+{{Checklist|*Take a white apron from the fishing store [[Gerrant's Fishy Business.]].
+*Talk to [[Wydin]] in the food store South of Gerrant's and get a job while wearing your white apron. {{Chat option|4Well, can I get a job here?}}
+*Search the crate with the banana on it to get the rum.
+*Give the rum to [[Redbeard Frank]], he will give you a [[Chest key (Pirate's Treasure)|key]]. {{Chat option|1Ok thanks, I'll go and get it.}}
+*Go upstairs in the [[Blue Moon Inn]] in [[Varrock]] and use your key on the chest in the room directly west. Read the [[pirate message]].}}
+
+[[File:Pirate's Treasure - Buried treasure location.png|thumb|284x284px|Location of the buried treasure.]]
+
+===Buried treasure===
+{{Checklist|*Head to [[Falador Park]].
+**If you didn't have a spade already, you can get one from the [[Estate agent]]'s house on the south-west side of the park, right next to the study desk.
+*Dig in Falador park, kill the [[Gardener]] (or run away to despawn him).
+*Dig again to get a casket.
+*'''Congratulations, quest complete!'''}}

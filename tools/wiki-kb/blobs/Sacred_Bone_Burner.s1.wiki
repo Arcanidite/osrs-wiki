@@ -1,0 +1,60 @@
+==Faith level==
+In order to increase their faith level, the player will need to offer draconic bones at the burner. Specifically, only [[babydragon bones]], [[dragon bones]], [[lava dragon bones]], and [[superior dragon bones]] offered at the burner will increase the player's faith level. For this purpose, lava dragon bones count as 2 and superior dragon bones count as 3.
+
+Initially, if the player attempted to kill [[Olbertus]], their faith level will act as though only a single bone has already been offered, meaning they will need to offer an additional 199 points worth of eligible bones at the burner to revert the [[Cursed Altar]] in the western part of the dungeon to a regular altar again; '''no''' Prayer experience will be granted for offerings until the curse is lifted. However, if the player gave Olbertus the five dragonstones instead, their faith level will act as if they had already offered 100 bones (indicated by the message ''The shrine is smooth to the touch. You faintly sense Ralos' power.'').
+
+Once a total of 200 points worth of eligible bones have been offered, the shrine will become hot to the touch and a [[temple key]] will appear for the player to take. This key can be used to permanently unlock the remaining gates in the dungeon. While the burner will still continue to provide increased Prayer experience, no more special effects occur in the dungeon for offerings made past this point.
+
+Players can check their faith level via the "Check-Faith" option on the burner to get a rough indication of how many eligible bones have been offered. The message also displays any time they offer eligible bones.
+{|class="wikitable align-center-1"
+! Bones offered
+! Message
+! Effect
+|-
+| None
+| The shrine is icy to the touch, you do not sense any divine presence.
+| The burner provides no Prayer experience for offered bones or ashes.
+|-
+| 50
+| The shrine is cold to the touch, you do not sense any divine presence.
+| No new effects.
+|-
+| 100
+| The shrine is smooth to the touch. You faintly sense Ralos' power.
+| The burner now provides 300% Prayer experience for offered bones or ashes.
+|-
+| 150
+| The shrine is warm to the touch, Ralos' power is growing.
+| No new effects.
+|-
+| 200
+| The shrine is hot to the touch as it swells with Ralos' power.
+| The player is offered a temple key.
+|}
+===Cost per 100 restoration===
+{|class="wikitable sortable align-center-1"
+! colspan="2" | Offering type
+! Total cost
+! GP/XP<ref group="n" name="xp">GP/XP of the latter 100 bones, as the first 100 do not give experience at all.</ref>
+|-
+| {{plinkt|Babydragon bones}}
+| {{Coins|{{GEP|Babydragon bones|100}}}}
+| {{Coins|{{GEP|Babydragon bones}} / (30 * 3)}}
+|-
+| {{plinkt|Dragon bones}}
+| {{Coins|{{GEP|Dragon bones|100}}}}
+| {{Coins|{{GEP|Dragon bones}} / (72 * 3)}}
+|-
+| {{plinkt|Lava dragon bones}}
+| {{Coins|{{GEP|Lava dragon bones|50}}}}
+| {{Coins|{{GEP|Lava dragon bones}} / (85 * 3)}}
+|-
+| {{plinkt|Superior dragon bones}}<ref group="n" name="superior">Require {{SCP|Prayer|70|link=yes}} to use.</ref>
+| {{Coins|{{GEP|Superior dragon bones|34}}}}
+| {{Coins|{{GEP|Superior dragon bones}} / (150 * 3)}}
+|-
+| {{plinkt|Dragonstone}}<ref group="n" name="dragonstone">Can only be given to prevent the altar from becoming cursed in the first place.</ref>
+| {{Coins|{{GEP|Dragonstone|5}}}}
+| {{NA}}
+|}
+<references group="n" />

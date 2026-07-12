@@ -1,0 +1,74 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Wilderness" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Mine some [[Mithril ore]] in the [[wilderness]].
+|
+*{{SCP|Mining|55|link=y}}
+*Any [[pickaxe]]
+|-
+|2. Chop some [[yew logs]] from a fallen [[Ent]].
+''Note: This must be done within the [[Wilderness]]. You can find [[ent]]s north and east of the [[Chaos Temple (Wilderness)|chaos temple]] with the [[elder chaos druid]]s.
+|
+*{{SCP|Woodcutting|61|link=y}}{{Boostable|no}}
+*Any [[axe]] and [[weapon]]ry
+|-
+|3. Enter the [[Wilderness God Wars Dungeon|Wilderness Godwars Dungeon]].
+''Note: While you're here, with a high enough [[Slayer]] level you can also complete another medium task and a [[#Hard|hard task]] by killing a [[bloodveld]] and [[spiritual warrior]], respectively.
+|
+*{{SCP|Agility|60|link=y}} or {{SCP|Strength|60|link=y}}
+*[[God_Wars_Dungeon#God-related_protection|God equipment]] recommended if going further inside
+|-
+|4. Complete a lap of the [[Wilderness Agility course]].
+|
+*{{SCP|Agility|52|link=y}}
+|-
+|5. Kill a [[Green Dragon]].
+''Note: This must be done within the [[Wilderness]].''
+|
+*Protection from [[dragonfire]] recommended if not safe spotting and [[weapon]]ry to slay it
+|-
+|6. Kill an [[Ankou]] in the [[Wilderness]].
+|
+*[[Weaponry]]
+|-
+|7. [[Charge Earth Orb|Charge]] an [[Earth Orb]].
+|
+*{{SCP|Magic|60|link=y}}
+*[[Unpowered orb]] and means to cast [[Charge Earth Orb]] ({{RuneReq|Cosmic=3|Earth=30}})
+|-
+|8. Kill a [[Bloodveld]] in the [[Wilderness God Wars Dungeon|Wilderness Godwars Dungeon]].
+''Note: Can be [[safespot]]ted in the south-west corner while having a [[Saradomin item|Saradomin]] and [[Zamorak item]] equipped.
+|
+*{{SCP|Agility|60|link=y}} or {{SCP|Strength|60|link=y}}, and {{SCP|Slayer|50|link=y}}
+*[[Weaponry]] and [[God_Wars_Dungeon#God-related_protection|god equipment]]
+|-
+|9. Talk to the [[Emblem Trader]] in Edgeville about emblems. (He's just north of the bank)
+|{{NA|None}}
+|-
+|10. Smith a [[Gold helmet|Golden helmet]]{{Sic}} in the [[Resource Area]].
+''Note: You cannot do this while you already have a [[gold helmet]] in your inventory or bank, this must be dropped first. With 75 [[Smithing]], you can bring 2 [[Adamantite bar|adamantite bars]] here as well to smith an [[adamant scimitar]] for a [[#Hard|hard task]].
+|
+*{{SCP|Quest}} Partial completion of [[Between a Rock...]]
+*{{SCP|Smithing|50|link=y}}
+*7500 [[coins]], 3 [[gold bar]]s, and a [[hammer]]
+|-
+|11. Open the [[Muddy Chest]] in the [[lava maze]].
+''Note: With 53 [[Fishing]], you can bring an [[oily fishing rod]] and [[fishing bait]] to catch a [[raw lava eel]] for a [[#Hard|hard task]].
+|
+*[[Muddy key]]
+*[[Knife]], [[Wilderness sword 1]], or a [[slashing weapon]] (Or with {{SCP|Agility|82|link=y}} using the Stepping Stone shortcut North of the Lava Maze)
+|}
+===Rewards===
+*[[Wilderness sword 2]]:
+**Identical stats to a [[steel sword]]
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*Entrance fee for the [[Resource Area]] lowered to 6,000 [[coins]], down from 7,500 [[coins]]
+*Possess up to 4 [[ecumenical key]]s at a time, up from 3
+*[[Lundail]] offers you 80 random [[runes]] for free every day, worth a total average of {{NoCoins|{{#var:avgrune}}*80}} [[coins]] on the [[Grand Exchange]]
+*Access to the [[Crevice (Deep Wilderness Dungeon)|crevice shortcut]] in the [[Deep Wilderness Dungeon]] (with 46 [[Agility]])
+*Access to [[Callisto]], [[Venenatis]], and [[Vet'ion]]
+*15% more chance to receive drops from cutting fallen [[ent]]s
+*Ability to obtain loot from [[Chest (Rogues' Castle)|chests]] in the [[Rogues' Castle]] 
+*[[Zombie pirate]]s you kill have a 50% chance of dropping something in addition to their [[bones]], up from 15%{{CiteTwitter|author=Jagex|url=https://x.com/OldSchoolRS/status/1805957139111858323|date=26 June 2024|archiveurl=https://reldo.runescape.wiki/i/27962683|archivedate=26 June 2024|quote=PSA: We've deployed a hotfix which reduces your chance to roll on the Zombie Pirates' drop table from 50% to 15% if you have not completed the Wilderness Medium Diary.}}

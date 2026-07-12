@@ -1,0 +1,30 @@
+==Rewards==
+'''God Spears:'''
+
+*[[Saradomin mjolnir]] [[File:Saradomin mjolnir.png|Saradomin mjolnir]]
+*[[Guthix mjolnir]] [[File:Guthix mjolnir.png|Guthix mjolnir]]
+*[[Zamorak mjolnir]] [[File:Zamorak mjolnir.png|Zamorak mjolnir]]
+
+'''Ores:'''
+
+*60 [[iron ore]]s
+*30 [[mithril ore]]s
+
+'''Runes & essence:'''
+
+*263 [[pure essence]]
+*20 [[mind rune]]s
+*60 [[earth rune]]s
+*50 [[fire rune]]s
+*30 [[water rune]]s
+*30 [[law rune]]s
+*15 [[death rune]]s
+
+'''Arrows & arrowtips:'''
+
+*20 [[iron arrows]]
+*40 [[steel arrows]]
+*30 [[mithril arrows]]
+*40 [[iron arrowtips]]
+
+This would sell for a total of {{NoCoins|{{GEP|Iron ore|60}}+{{GEP|Mithril ore|30}}+{{GEP|Pure essence|263}}+{{GEP|Mind rune|20}}+{{GEP|Earth rune|60}}+{{GEP|Fire rune|50}}+{{GEP|Water rune|30}}+{{GEP|Law rune|30}}+{{GEP|Death rune|15}}+{{GEP|Iron arrow|20}}+{{GEP|Steel arrow|40}}+{{GEP|Mithril arrow|30}}+{{GEP|Iron arrowtips|40}}+ {{GEP|Saradomin mjolnir}}+ {{GEP|Zamorak mjolnir}}+ {{GEP|Guthix mjolnir}}|c}} on the [[Grand Exchange]].

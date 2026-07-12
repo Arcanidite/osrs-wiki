@@ -1,0 +1,7 @@
+==Rewards==
+{{Quest rewards
+|name=A Tail of Two Cats|image=[[File:A Tail of Two Cats reward scroll.png|centre]]|qp=2|rewards=*A [[Doctor's hat]] or [[Nurse hat]] (you can switch by destroying your hat and requesting a new one from the Apothecary)
+*A [[present]] containing:
+**Two [[Antique lamp (A Tail of Two Cats)|antique lamps]] worth 2,500 [[experience]] each in [[skills]] of your choice over 30
+**A [[Mouse toy]] (can be used to play with your cat, and functions as a fun weapon at the [[Emir's Arena]])
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]].}}

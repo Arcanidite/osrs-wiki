@@ -1,0 +1,56 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|In Search of the Myreque}}
+
+==Walkthrough==
+{{Checklist|
+*Talk to [[Vanstrom Klause]] in the Canifis pub (near the staircase). {{fairycode|CKS}} {{Chat option|1Why do they need help? Are they in trouble?|4Perhaps I could help you out here.}}
+*Grab the 6 wooden planks, 10 coins, a hammer, all the steel weapons and nails, and fill your Druid Pouch if you haven't done so already before teleporting!
+*Travel to [[Mort'ton]] ([[Mort'ton teleport]], [[Minigame teleport]] to [[Shades of Mort'ton (minigame)|Shades of Mort'ton]], [[Barrows teleport]], {{Fairycode|bip}} with 50 Agility, {{Fairycode|bkr}} and get [[Swamp Boaty]], or run from Canifis)
+*Talk to [[Cyreg Paddlehorn]] (east, by the boat). {{Chat option|2Well, I guess they'll just die without weapons.|2Resourceful enough to get their own steel weapons?|3If you don't tell me, their deaths are on your head!|3What kind of man are you to say that you don't care?|1Give wooden planks to Cyreg}}
+*Board the boat. (Be sure to have filled your Druid Pouch before attempting to board the boat!)
+*Go north and climb the tree rope bridge.
+*Repair the bridge.
+*Continue north and talk to [[Curpile Fyod]]. {{Chat option|1I've come to help the Myreque, I've brought weapons.}}
+**Check the spelling of your answers before choosing them.
+}}
+{| class="wikitable"
+!Question
+!Answer
+|-
+|''Who is the only female in the Myreque?''||Sani Piliu
+|-
+|''Who is the leader of the Myreque in Mort Myre?''||Veliaf Hurtz
+|-
+|''What is the boatman's name?''||Cyreg Paddlehorn
+|-
+|''What vampyre family rules over Morytania?''||Drakan
+|-
+|''Who is the youngest member of the Myreque?''||Ivan Strom
+|-
+|''Which member of the Myreque was originally a scholar?''
+|Polmafi Ferdygris
+|}
+[[File:In Search of the Myreque - Skeleton Hellhound safespot.png|thumb|The safespot for killing the hellhound with magic attacks.]]
+{{Checklist|
+*Go north and enter the wooden doors set into the hill.
+*Head north-west following the eastern wall to the north west until you find an alcove. Enter the cave entrance in the southern wall of this alcove.
+*Talk to Veliaf  (no chat options needed).
+*Talk to everyone else (no chat options needed).
+*Talk to Veliaf (talk to him and give him your steel weapons).
+*Kill the level 97 Skeleton Hellhound (you can [[safespot]] the hellhound by luring it to the north-east side of the room, to the right of the north barrel or below the north-east bed shown in the picture on the right).
+*Talk to Veliaf, ask how to get out. {{Chat option|3How do I get out of here?|3Ok, thanks.}}
+*Go back by entering the cave entrance and search the wall to the north.
+*Climb up the ladder in the north side of the room.
+*Talk to the Stranger in the Canifis pub (the one sitting in the chair where Vanstrom Klause was).
+*'''Congratulations, quest complete!'''
+}}
+==Rewards==
+{{Quest rewards page|In Search of the Myreque}}
+
+==Required for completing==
+Completion of In Search of the Myreque is required for the following:
+*[[In Aid of the Myreque]]
+{{In Search of the Myreque}}

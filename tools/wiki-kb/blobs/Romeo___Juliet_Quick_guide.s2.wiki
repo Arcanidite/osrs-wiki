@@ -1,0 +1,10 @@
+==Walkthrough==
+{{Checklist|*Talk to [[Romeo]] in [[Varrock Square]]. {{Chat option|1Perhaps I could help to find her for you?|1Yes, ok, I'll let her know.}}
+*Talk to [[Juliet]] on the upper floor balcony of the mansion west of [[Varrock west bank]]. {{Chat option|1|1}} or she will provide you a letter if [[Recipe for Disaster]] is incomplete.
+*Give Juliet's letter to [[Romeo]]. {{Chat option|4}}
+*Talk to [[Father Lawrence]] in the church east of the [[Varrock Palace]].
+*If you don't already have [[cadava berries]], you can pick them directly west of the [[South-east Varrock mine]].
+*Talk to the [[Apothecary]] south of Varrock west bank. {{Chat option|2Talk about something else.|1Talk about Romeo & Juliet.}} ({{Chat option|2Talk about something else.|2Talk about Romeo & Juliet.}} If you have done [[Ratcatchers]], {{Chat option|3Talk about something else.|2Talk about Romeo & Juliet.}} If you have done [[A Tail of Two Cats]].)
+*Give the potion to [[Juliet]].
+*Go back to [[Romeo]] and tell him to meet Juliet in the crypt.
+*'''Congratulations, quest complete!'''}}

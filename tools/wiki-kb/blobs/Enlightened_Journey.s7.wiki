@@ -1,0 +1,16 @@
+==Rewards==
+{{Quest rewards
+|name = Enlightened Journey
+|image = [[File:Enlightened Journey reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Crafting|2,000}} [[Crafting]] [[experience]]
+*{{SCP|Farming|3,000}} [[Farming]] experience
+*{{SCP|Woodcutting|1,500}} [[Woodcutting]] experience
+*{{SCP|Firemaking|4,000}} [[Firemaking]] experience
+*The [[Bomber jacket]] and [[Bomber cap|cap]]
+**[[Gnome goggles]] from the [[Gnome Restaurant]] [[Minigames|minigame]] can be combined with the bomber cap by talking with [[Auguste]]
+*Access to the [[balloon transport system]]
+**4 new routes available to be flown, when successfully flown they provide an additional 2,000 Firemaking experience per route.
+*Ability to make [[origami balloon]]s
+}}

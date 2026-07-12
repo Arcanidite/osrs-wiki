@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Misthalin Mystery
+|image = [[File:Misthalin Mystery reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*[[Uncut ruby]]
+*[[Uncut emerald]]
+*[[Uncut sapphire]]
+*{{SCP|Crafting|600}} [[Crafting]] [[experience]]
+}}

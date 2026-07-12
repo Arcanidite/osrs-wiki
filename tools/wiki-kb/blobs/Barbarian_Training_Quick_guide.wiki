@@ -1,0 +1,76 @@
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Barbarian Training}}
+
+==Walkthrough==
+===Fishing===
+====Heavy rod fishing====
+'''Items required:''' ''[[Fishing bait]] or [[feathers]], a [[knife]]''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about heavy rod fishing.{{Chat option|2What can I learn about the use of a fishing rod?}}
+* Search the [[barbarian bed]] to obtain a [[barbarian rod]].
+* Catch a leaping fish at one of the nearby [[Fishing spot (barbarian)|fishing spots]].
+* Dissect the leaping fish with the knife to obtain [[roe]]. Keep the roe for later.
+* Talk to Otto again and tell him of your success.{{Chat option|2I've fished with a barbarian rod!}}
+}}
+====Barehanded fishing====
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about barehanded fishing.{{Chat option|1Please teach me of your cunning with harpoons.}}
+* Go to any [[Fishing spot (cage, harpoon)|fishing spot that requires a harpoon]].
+* Talk to Otto again and tell him of your success.{{Chat option|1I've fished with my hands!}}
+}}
+
+===Firemaking===
+====Lighting fires with a bow====
+'''Items required:''' ''Any standard [[bow]] made with logs, one set of [[oak logs]]''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about firemaking.{{Chat option|3I'm ready for your firemaking wisdom. Please instruct me.}}
+* Use the logs on the bow. See the table for skill requirements.
+* Talk to Otto again and tell him of your success.{{Chat option|3I've set fire to logs with a bow!}}
+}}
+====Pyre ships====
+'''Items required:''' ''Any woodcutting [[axe]], some [[logs]], and a [[tinderbox]] or suitable bow''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about firemaking again.{{Chat option|3I have completed firemaking with a bow. What follows this?}}
+* Kill [[mithril dragon]]s until one of them drops a set of [[chewed bones]] (3/128 drop rate).
+* Construct a funeral pyre at one of the [[pyre site]]s using the logs. Light it on fire.
+}}
+
+===Farming===
+====Bare-handed planting====
+'''Items required:''' ''Any [[seed]] ('''except''' grape seeds) that can be planted with a [[seed dibber]] (bring multiple in case you crush the first seed), 1 free [[Farming/Patch locations|Farming patch]].''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about farming.{{Chat option|4How can I use my strength in the ways of agriculture?}}
+* Go to the farming patch and plant the seed you have.
+* Talk to Otto again and tell him of your success.{{Chat option|4I've planted seeds with my fists!}}
+}}
+
+====Pot-smashing====
+'''Items required:''' ''A [[spade]], any [[sapling]], 1 free [[Farming/Patch locations|Farming patch]].''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about farming again.{{Chat option|4Are there any other fist related farming activities I can learn?}}
+* Go to the farming patch and plant the sapling you have.
+* Talk to Otto again and tell him of your success.{{Chat option|4I've smashed a pot whilst farming!}}
+}}
+
+===Smithing===
+'''Items required:''' ''Two [[bronze bar]]s, two [[logs]], and a [[hammer]]''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about spears.{{Chat option|1Tell me more about the use of spears.}}
+* Use one of the bronze bar and logs on the nearby [[barbarian anvil]]. Make '''only one''' [[bronze spear]].
+* Ask Otto about spears again.{{Chat option|1Tell me more about the use of spears.}}
+* Ask Otto about hastae. {{Chat option|1What of the one-handed spears of which you spoke?}}
+* Use the other bronze bar and logs on the nearby [[barbarian anvil]]. Make a [[bronze hasta]].
+* Ask Otto about hastae again. {{Chat option|1What of the one-handed spears of which you spoke?}}
+}}
+
+===Herblore===
+'''Items required:''' ''A normal [[attack potion]] (2 doses), [[roe]], and a [[knife]].''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about herblore.{{Chat option|2What was that secret knowledge of herblore we talked of?}}
+* Right-click "Use" the roe on the attack potion.
+* Talk to Otto again and tell him of your success.{{Chat option|2I've made a barbarian potion!}}
+}}
+
+{{Barbarian Training}}

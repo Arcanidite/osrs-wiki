@@ -1,0 +1,11 @@
+===Locating the laboratory===
+'''''Items Needed:''' [[Knife]], [[Message (fireplace)|message]], [[large ornate key]]; and one [[law rune]] and one [[air rune]] for [[Telekinetic Grab]] ([[standard spellbook]]) (can be obtained in the [[Broken rune case]]).''
+{{Checklist|
+*Exit the base, climb up the stairs, jump the gap, then climb down the ladder
+*Travel north towards the mine until you find a bright, red and yellow tapestry inside a building adjacent to the Eastern city wall.
+*Slash the tapestry with your [[knife]].
+*Walk through it and use the [[large ornate key]] on the [[Vampyre statue|statue]].
+*Open the door, climb-down the staircase and use [[Telekinetic Grab]] on [[Haemalchemy volume 1]].
+**'''Note:''' If needed, runes for [[Telekinetic Grab]] can be found in the [[Broken rune case]].
+*Return to the base and talk to [[Safalaan]] one final time and give him [[Haemalchemy volume 1]].
+}}

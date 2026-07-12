@@ -1,0 +1,14 @@
+==Details==
+{{Quest details
+|start = Talk to any [[Guard (Sinclair Mansion)|guard]] around the [[Sinclair Mansion]], north  of [[Seers' Village]] and [[Camelot]].
+|startmap = 2741,3562
+|difficulty = Novice
+|description = Old man Sinclair has been found dead in his mansion! Unfortunately, the local authorities are having some trouble figuring out who's the guilty party. Maybe the unbiased eye of a passing adventurer will be of help.
+|length = Short
+|items = * [[Pot]]
+|recommended = * 16 empty [[inventory]] spaces
+* [[Weight-reducing clothing]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

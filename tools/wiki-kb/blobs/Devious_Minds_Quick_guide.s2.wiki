@@ -1,0 +1,29 @@
+==Walkthrough==
+===Starting out===
+{{Checklist|'''''Items required: '''None''
+*Talk to the monk outside of the [[Paterdomus Temple]], which is east of [[Varrock]]. {{Chat option|1Sure thing, what do you need?}} (You can use [[fairy ring]] code {{Fairycode|CKS}} and then run west and climb the shortcut to arrive there quickly). }}
+
+===A strange weapon===
+{{Checklist|'''''Items required: '''[[bow string]], ''[[Mithril 2h sword]] or 3 [[mithril bars]] and a hammer
+*Go to [[Doric]]'s house north of [[Falador]].
+*Use the [[mithril 2h sword]] on Doric's Whetstone to make a [[slender blade]].
+*Attach the [[bow string]] to it to make the [[bow-sword]].}}
+
+===A gift for Entrana===
+{{Checklist|'''''Items required: '''[[Large pouch]], food/prayer for the Abyss enemies''
+*Head back to the monk. {{Chat option|1Yep, got it right here for you.}}
+*Use the [[Orb (Devious Minds)|orb]] on the [[Large pouch]].
+**[[File:Ultimate ironman chat badge.png]] Ultimate Ironmen: The Large pouch is lost upon death if the orb is inside it. Use the orb on the pouch only after 'banking' for Entrana.
+*Bank your [[weapons]] and [[armour]] and take out supplies to protect against the monsters in the [[Abyss]].
+*Go to the [[Law Altar]] through the [[Abyss]].
+*Exit the portal and head to the church on Entrana.}}
+
+
+===Surprise!===
+{{Checklist|*Use the pouch on the church altar and wait for the cut-scene to finish.
+*Talk to the [[High Priest]].
+*Head back to the monk in [[Paterdomus]].
+*Search the [[Dead Monk]].
+*Go back to [[Entrana]] and speak with the [[High Priest (Entrana)|High Priest]]. ([[Rat Pits]] [[Minigame Teleport]] will take players to Port Sarim. Requires [[Ratcatchers]] quest. Players can also use the Minigame [[Pest Control]] teleport which is very close to Port Sarim)
+*Head to [[Falador]] Park and talk to [[Sir Tiffy Cashien]]. {{Chat option|1Devious Minds.}}
+*'''Congratulations, quest complete!'''}}

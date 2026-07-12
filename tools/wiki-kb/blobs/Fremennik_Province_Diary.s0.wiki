@@ -1,0 +1,19 @@
+{{External|rs=Fremennik achievements}}
+{{Infobox Achievement Diary
+|name = Fremennik Diary
+|image = [[File:Fremennik Diary.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|areas = [[Rellekka]], [[Lunar Isle]], [[Jatizso]], [[Neitiznot]], [[Keldagrim]], [[God Wars Dungeon]], [[Troll Stronghold (location)|Troll Stronghold]]
+|members = Yes
+|reward = [[Fremennik sea boots|Boots]]
+|taskmasters = [[Thorodin]]
+|leagueRegion = Fremennik
+}}
+The '''Fremennik Diary''' is an [[Achievement Diary]] whose tasks revolve around areas within the [[Fremennik Province]], such as [[Neitiznot]] and [[Jatizso]], [[Miscellania]] and [[Etceteria]], the [[God Wars Dungeon]], [[Lunar Isle]], and [[Waterbirth Island]].
+
+Several skill, quest, and item requirements are needed to complete all tasks. Unless stated otherwise, [[temporary skill boost]]s can be used to meet the skill requirements.
+
+Rewards can be claimed from [[Thorodin]] just south of [[Rellekka]]. Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.
+
+{{Map|name=Thorodin|x=2659|y=3627|align=left|width=250|height=250|r=4|mtype=square|caption=Thorodin's location}}{{Clear|left}}

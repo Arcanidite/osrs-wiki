@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|start = Talk to [[Wizard Mizgog]] on the top floor of the [[Wizards' Tower]].
+|startmap = 3103,3164,plane:2
+|difficulty = Novice
+|description = The Wizard Grayzag has summoned hundreds of little imps. They have stolen a lot of things belonging to the Wizard Mizgog including his magic beads.
+|length = Short
+|items = * [[Black bead]]
+*[[Yellow bead]]
+*[[Red bead]]
+*[[White bead]]
+|recommended = *''(Members only)'' Fast travel to the [[Wizards' Tower]] ([[necklace of passage]], [[amulet of glory]] to Draynor Village, or [[Fairy Rings]] to {{Fairycode|dis}})
+|kills = *Multiple [[imp]]s ''(level 2)'' ('''optional''' unless [[Ironman Mode|ironman]])
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

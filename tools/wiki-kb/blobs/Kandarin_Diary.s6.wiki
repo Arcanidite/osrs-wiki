@@ -1,0 +1,85 @@
+==Hard==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Kandarin" data-diary-tier="Hard"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Catch a [[Leaping Sturgeon]].
+''Note: Must be caught at [[Otto's Grotto]] for this task.
+|
+*Access to [[Barbarian Fishing]]
+*{{SCP|Fishing|70|link=y}}, {{SCP|Agility|45|link=y}}, and {{SCP|Strength|45|link=y}}
+*[[Barbarian rod]] and suitable bait ([[fishing bait]], [[feather]]s, [[fish offcuts]], [[roe]], or [[caviar]])
+|-
+|2. Complete a lap of the [[Seers' Village Rooftop Course|Seers' Village agility course]].
+|
+*{{SCP|Agility|60|link=y}}
+|-
+|3. Create a [[Yew Longbow]] from scratch around [[Seers' Village]].
+''Note: This requires chopping a [[yew tree]] in the village, cutting the [[yew logs]] into a [[yew longbow (u)]], then finishing it with a [[bow string]]. Completing or updating any other task in-between these steps will reset the progress for this task.''
+|
+*{{SCP|Fletching|70|link=y}} and {{SCP|Woodcutting|60|link=y}}
+*Any [[axe]], [[bow string]] (can be spun from [[flax]]), and a [[knife]]
+|-
+|4. Enter the [[Seers' Village courthouse]] with [[piety]] turned on.
+|
+*{{SCP|Quest}} Completion of [[King's Ransom]] and the [[Knight Waves Training Grounds]]
+*{{SCP|Prayer|70|link=y}} and {{SCP|Defence|70|link=y}} (neither [[Temporary skill boost|boostable]])
+|-
+|5. Charge a [[Water Orb]].
+|
+*{{SCP|Magic|56|link=y}}
+*[[Dusty key]] or {{SCP|Agility|70|link=y}}
+*[[Unpowered orb]] and means to cast [[Charge Water Orb]] ({{RuneReq|Cosmic=3|Water=30}})
+*Protection from [[dragonfire]] recommended
+|-
+|6. Burn some [[Maple logs]] with a bow in [[Seers' Village]].
+|
+*Access to [[Barbarian Firemaking]]
+*{{SCP|Firemaking|65|link=y}}
+*[[Maple logs]], and any [[bow]] (except the [[Twisted bow|twisted]], [[Cursed goblin bow|cursed]], [[Dark bow|dark]], [[Crystal bow|crystal]], [[ogre bow|ogre]], [[Rain bow|rain]], [[Starter bow|starter]] or [[signed oak bow]])
+|-
+|7. Kill a [[Shadow Hound]] in the [[Shadow dungeon]].
+|
+*{{SCP|Quest}} Started [[Desert Treasure I]]
+*{{SCP|Thieving|53|link=y}}
+*[[Ring of visibility]] (or a [[ring of shadows]]) and [[weapon]]ry
+|-
+|8. Kill a [[Mithril Dragon]].
+''Note: The mithril dragon fought during [[Dragon Slayer II]] does not count for this task.''
+|
+*Access to [[Barbarian Firemaking]]
+*[[Weaponry]] and protection from [[dragonfire]]
+|-
+|9. Purchase and equip a [[granite body]] from [[Barbarian Assault]].
+''Note: This requires having defeated the [[Penance Queen]] at the end of [[Barbarian Assault]]. Buying and equipping the [[granite body]] counts as two separate steps, and completing or updating any other task in-between these steps will reset the progress for this task.
+|
+*{{SCP|Strength|50|link=y}} and {{SCP|Defence|50|link=y}}
+*See the [[Barbarian_Assault#Gameplay|gameplay overview]] and the [[Barbarian Assault/Strategies|strategy guide]]
+*95,000 [[coins]] to purchase the [[granite body]]
+|-
+|10. Have the [[Estate agent|Seers' estate agent]] decorate your [[Player-owned house|house]] with [[Fancy Stone]].
+''Note: You must finish the dialogue or the task will not count as completed.''
+|
+*{{SCP|Construction|50|link=y}} {{Boostable|n}}
+*25,000 [[coins]]
+*Additional 5,000 [[coins]] if already using [[Fancy Stone]], to change to something else and back
+|-
+|11. Smith an [[Adamant spear]] at [[Otto's Grotto]].
+|
+*Access to [[Barbarian Smithing]]
+*{{SCP|Smithing|75|link=y}}
+*[[Yew logs]], [[adamantite bar]], and a [[hammer]]
+|}
+
+===Rewards===
+*[[Kandarin headgear 3]]:
+**One daily teleport to [[Sherlock]]
+*[[Antique lamp (hard)|Antique lamp]] worth 15,000 experience in any skill of at least level 50
+*[[Coal trucks]] can hold up to 308 [[coal]], up from 280
+*The [[flax keeper]] will offer you 120 [[Bank note|noted]] [[bow string]]s every day for 120 noted [[flax]], for a profit of {{NoCoins|({{GEP|Bow string}}-{{GEP|Flax}})*120}} [[coins]] on the [[Grand Exchange]]
+*15% more [[mark of grace|marks of grace]] from the [[Seers' Village Rooftop Course]], up from 10%
+*10% increased chance to save a [[Farming#Variable crop yield|"harvest life"]] at the [[herb patch]] in [[Catherby]], up from 5%
+*25% discount on [[Thormac]]s' [[Mystic staff|enchanting]] services (requires completion of [[Scorpion Catcher]])
+*10% more [[honour points]] from [[Barbarian Assault]]
+*[[Camelot Teleport]] can now be used to teleport to [[Seers' Village bank]] instead
+*10% increased chance to trigger the special effect of [[enchanted bolts]], even in [[PvP]] (stacks additively with other increases, such as that of the [[Armadyl crossbow]]'s special attack){{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1480491964260925444|date=10 January 2022|archiveurl=https://reldo.runescape.wiki/i/105529|archivedate=11 January 2022|quote=The diary reward adds an extra 10% of the base chance.}}

@@ -1,0 +1,139 @@
+==Walkthrough==
+===Starting out===
+{{Checklist|
+*Talk to the [[Odd Old Man]] north of the [[Digsite]], north of the [[Limestone mine]]}}
+
+===Gathering the bones===
+*Gather the following bones by killing the appropriate monsters (listed locations are the most convenient ones):
+{| class="wikitable sortable lighttable"
+!Monster
+!Drops
+!Locations (preferable) - Click to mark
+|-
+|[[Bat]]
+|[[Bat wing]]
+|Near the [[Odd Old Man]] ([[giant bat]]s '''do not''' drop [[Bat wing]]s).
+|-
+|[[Undead cow]]
+|[[Undead cow ribs]]
+|In the farm north-west of [[Port Phasmatys]].
+|-
+|[[Experiment]]
+|[[Experiment bone]]
+|Under the grave south-east of [[Fenkenstrain's Castle]] (requires partial completion of [[Creature of Fenkenstrain]]), [[manhole (witch's house)|manhole]] east of Taverley POH or level-109 mice (requires partial completion of [[Grim Tales]]).
+|-
+|[[Werewolf]]
+|[[Werewolf bone]]
+|[[Canifis]] (can only be dropped by the werewolf form of the Canifis citizens).
+|-
+|[[Ghoul]]
+|[[Ghoul bone]]
+|[[Canifis]] graveyard (between [[Canifis]] and [[Paterdomus Temple]], near [[fairy ring]] {{Fairycode|CKS}}).
+|-
+|[[Zombie]]
+|[[Zombie bone]]
+|[[Varrock Sewers]], [[Edgeville Dungeon]], [[Draynor Sewers]] ('''cannot''' be obtained in the [[Stronghold of Security]]).
+|-
+|[[Rat]]
+|[[Rat bone]]
+|[[Varrock Sewers]], [[Lumbridge Castle]], [[Draynor Sewers]] ([[giant rat]]s '''do not''' drop).
+|-
+|[[Moss giant]]
+|[[Moss giant bone]]
+|[[Varrock Sewers]] (Knife/Slash weapon required for spiderweb), west of the [[Fishing Guild]], [[Crandor]], [[Moss Giant Island]] west of [[Brimhaven]] (requires 10 [[Agility]]), [[Brimhaven Dungeon]] (Requires axe, and 875gp).
+|-
+|[[Cave goblin (monster)]]
+|[[Cave goblin skull]]
+|[[Lumbridge Swamp Caves]], [[Dorgesh-Kaan mine]]s.
+|-
+|[[Jackal]]
+|[[Jackal bone]]
+|North of [[Nardah]] and south-west of [[Ruins of Uzer]] (directly south-west of [[fairy ring]] {{Fairycode|DLQ}}); also found at the same location as the vultures, north-west of [[Agility Pyramid]]).
+|-
+|[[Lizard|Massive desert lizard]]
+|[[Desert lizard bone]]
+|North of [[Nardah]] and south-west of [[Ruins of Uzer]] in the [[Kharidian Desert]] (north of [[fairy ring]] {{Fairycode|DLQ}}) (marked on map). You must kill '''level 42''' [[Lizard]] (greyish skin) (requires [[ice cooler]]s). It is '''NOT''' dropped by the level 24 [[desert lizard]].
+|-
+|[[Vulture]]
+|[[Vulture wing]]
+|South-west of [[Nardah]] and north-west of [[Agility Pyramid]] in the [[Kharidian Desert]] (marked on map) (bring [[Ranged]]/[[Magic]] or hop worlds until you find a non-flying one).
+|-
+|[[Seagull]]
+|[[Seagull wing]]
+|[[Port Sarim]] docks, [[Corsair Cove]]
+|-
+|[[Ice giant]]
+|[[Ice giant ribs]]
+|[[Asgarnian Ice Dungeon]] Fairy ring {{Fairycode|AIQ}} dungeon entrance is north (Ice Warriors will often interrupt), [[White Wolf Mountain]] (bring a pickaxe to clear rockslide on mountain).  Village south-west of Wintertodt (multi-combat)
+|-
+|[[Mogre]]
+|[[Mogre bone]]
+|[[Mudskipper Point]] by fairy ring {{Fairycode|AIQ}} (use [[fishing explosive]] on "Ominous Fishing Spot") (requires full completion of [[Skippy and the Mogres]] miniquest).
+|-
+|[[Snake]]
+|[[Snake spine]]
+|Snakes all over [[Karamja]], [[desert snake]]s close to the [[jackal]]s in the [[Kharidian Desert]], [[Ardougne Zoo]] next to the Jogres (with [[Telekinetic Grab]]).
+|-
+|[[Jogre]]
+|[[Jogre bone]]
+|[[Pothole Dungeon]] in northern [[Karamja|Karamja near]] the sea, near the glider (fairy ring {{fairycode|DKP}}), [[Ardougne Zoo]] (with [[Telekinetic Grab]]) (make sure you pick up the '''[[Jogre bone]]''', not the [[Jogre bones]]).
+|-
+|[[Baby blue dragon]]
+|[[Baby dragon bone]]
+|[[Taverley Dungeon]] (requires [[dusty key]]), [[Isle of Souls Dungeon]]
+|-
+|[[Troll]]
+|[[Troll bone]]
+|[[Trollheim]] (especially the western part of it), [[Keldagrim]] entrance, [[Death Plateau (location)|Death Plateau]] in [[Burthorpe]], [[Troll Country]].
+|-
+|[[Rabbit]]/[[Bunny]]
+|[[Rabbit bone]]
+|South-east of [[Rellekka]] and north-west of [[Fairy rings|fairy ring]] {{Fairycode|AJR}} (marked by rare trees icon), [[Miscellania]], [[Tirannwn]], [[Nature Altar]] (with [[Telegrab]]).
+|-
+|[[Basilisk]]
+|[[Basilisk bone]]
+|[[Fremennik Slayer Dungeon]] ([[fairy ring]] {{Fairycode|AJR}}).
+
+*'''Note:''' 40 [[Slayer]] and a [[mirror shield]] are required to kill basilisks.
+*'''Note:''' It is possible to kill Basilisks without a Mirror shield by using [[poison]] and multiple [[rings of recoil]] for melee, or by using a [[safespot]] across some rocks for ranged or magic.
+|-
+|[[Dagannoth]]
+|[[Dagannoth ribs]]
+|Basement level of the [[Lighthouse]] by [[fairy ring]] {{Fairycode|ALP}} (requires full completion of [[Horror from the Deep]]), [[Waterbirth Island]] ('''cannot''' be obtained in [[Catacombs of Kourend]]{{fact}}).
+|-
+|[[Fire giant]]
+|[[Fire giant bone]]
+|[[Waterfall Dungeon]] (requires partial completion of [[Waterfall Quest]], [[rope]]), [[Brimhaven Dungeon]] (Requires axe, 875gp and 12 Agility) ('''cannot''' be obtained in [[Nieve]]'s [[Slayer Stronghold]]).
+|-
+|[[Terrorbird]]
+|[[Terrorbird wing]]
+|[[Tree Gnome Stronghold]] (there is a [[terrorbird]] pen on the west side of the Gnome Stronghold across the river) ([[mounted terrorbird gnome]]s '''do not''' drop the bone.)
+|-
+|[[Wolf]]
+|[[Wolf bone]]
+|[[Feldip Hills]] (just east of [[fairy ring]] {{Fairycode|AKS}}), [[White Wolf Mountain]], [[Rellekka]], [[Ardougne Zoo]] (with [[Telekinetic Grab]]) ('''cannot''' be obtained in Stronghold of Security).
+|-
+|[[Ogre]]
+|[[Ogre ribs]]
+|[[Feldip Hills]] (just north of [[fairy ring]] {{Fairycode|AKS}}).
+|-
+|[[Zogre]]
+|[[Zogre bone]]
+|[[Jiggig]], east of [[fairy ring]] {{Fairycode|BKP}} (requires start of [[Zogre Flesh Eaters]]). ([[Ogre bow]]/[[Comp ogre bow]] with [[brutal arrows]] or [[Crumble Undead]] casts are a must).
+|}
+
+===Polishing the bones===
+{{Checklist|
+*Talk to [[Fortunato]] located in [[Draynor]] marketplace and buy 27 [[jug of vinegar]].
+*Use all of the [[Jug of vinegar|jugs of vinegar]] with all the pots to make 27 [[pots of vinegar]].
+*Use all of the bones with your pots of vinegar to get 27 [[bones in vinegar]].
+*Withdraw a tinderbox and either [[logs]] or an [[axe]]. Each [[bones in vinegar]] will require 1 set of [[logs]]. There are trees nearby that can be cut for logs.
+*Return back to the [[Odd Old Man]] and talk to him.
+*For each bone in vinegar do the following:
+**Place a set of logs on the pot-boiler next to the old man.
+**Use a bone in vinegar with the pot-boiler.
+**Light the set of logs with your [[tinderbox]].
+**Wait 12 seconds until the fire is consumed and remove the pot from the pot-boiler. (Alternatively, hop worlds after lighting the logs for them to be finished when you log back in)
+*Talk to the [[Odd Old Man]].
+*'''Congratulations, quest complete!'''
+}}

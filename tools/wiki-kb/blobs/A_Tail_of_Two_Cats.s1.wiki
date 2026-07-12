@@ -1,0 +1,37 @@
+==Details==
+{{Quest details
+|start = Talk to [[Unferth]] at his house in [[Burthorpe]].
+|startmap = 2919,3558
+|difficulty = Intermediate
+|description = Missing: small black cat, answers to the name of Bob.
+
+Last seen on the 19th of Bennath. Please contact Unferth in Burthorpe.
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[Icthlarin's Little Helper]]
+***[[Gertrude's Cat]]
+|items = *[[Cat]] or [[kitten]] ([[Hellcat]]s work. Be sure to bring [[fish]] for your kitten if you're using one.)
+*[[Catspeak amulet]]
+*5 [[death rune]]s
+*[[Chocolate cake]] (made with [[cake]] and [[chocolate bar]] or [[chocolate dust]] with 50 {{SCP|Cooking}})
+*[[Logs]]
+*[[Tinderbox]]
+*[[Bucket of milk]] (or one use of the [[Bottomless milk bucket]])
+*[[Shears]]
+*4 [[potato seed]]s
+*[[Rake]]
+*[[Seed dibber]] (or partial completion of the [[Farming]] portion of [[Barbarian Training]])
+*[[Vial of water]]
+*[[Desert shirt]] (obtainable during quest) or [[Druid's robe top]] (The [[desert outfit]] does not work)
+*[[Desert robe]] (obtainable during quest) or [[Druid's robe]] (The [[desert outfit]] does not work)
+|recommended = *Fast travel to Burthorpe ([[games necklace]] or [[Burthorpe Games Room]] [[minigame]] teleport)
+*Fast travel to Varrock ([[Varrock teleport]])
+*Fast travel to Sophanem ([[Magic carpet]]s, [[Nardah teleport]], or [[Pharaoh's Sceptre]]) or fairy ring AKP and run north. (Fairy ring requires partial completion of [[Beneath Cursed Sands]] and 62 {{SCP|Agility}})
+**[[Ring of charos (a)]] for discounted magic carpet rides or [[hard Desert Diary]] completed
+* [[Waterskin]] (one is enough) or a [[Circlet of water]]
+* [[Stamina Potion]] or full [[Graceful outfit]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

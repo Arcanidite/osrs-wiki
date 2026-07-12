@@ -1,0 +1,14 @@
+==Walkthrough==
+{{Map|name=Frozen Door|2884,5279|r=2|mtype=square|mapID=7|align=right|caption=The location of the [[Frozen Door]].}}
+{{Checklist|*After the completion of the [[Desert Treasure I]] [[quest]], a [[Messenger (The Frozen Door)|messenger]] will randomly appear to deliver an [[important letter]].
+*Read the letter to start the miniquest, then destroy it.
+*Kill all four [[God Wars Dungeon]] generals once each, to obtain their pieces of the [[Frozen key (The Frozen Door)|frozen key]].
+**[[Kree'arra]] ([[Frozen key piece (armadyl)]])
+**[[General Graardor]] ([[Frozen key piece (bandos)]])
+**[[Commander Zilyana]] ([[Frozen key piece (saradomin)]])
+**[[K'ril Tsutsaroth]] ([[Frozen key piece (zamorak)]])
+*Assemble the key pieces into the frozen key, by using the 'assemble' option on any of them while they are all in the inventory.
+*Travel to the [[Frozen Door]], located in the southern part of the God War Dungeon, just east of the entrance to [[Armadyl's Eyrie]].
+*Use the key to open the door.
+*Talk to [[Ashuelot Reis]].
+*'''Congratulations, miniquest complete!'''}}
