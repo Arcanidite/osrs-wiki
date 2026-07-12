@@ -430,3 +430,32 @@ one of the six scramblers, not just this one.
   otherwise the build lane inherits an invisible dependency on code that was only
   ever vocabulary. Hit twice this session (routes + wikibox both phantom; lightbox
   real but in a different surface than implied).
+[classify] diaries fan-out: re-ran and found all 48 area-tier rows already contributed by an earlier pass this session (Achievement_Diary sections 0-3 already in manifest, timestamps ~08:03-08:05Z) -- pure verification run, no new fetches/writes needed.
+
+## prioritize retro
+- DEPTH QUEUE built over the 267 classify:* rows (191 quest/48 diary/28 miniquest), ranked
+  route-prereqs + steer-point enablers first: excluded 22 titles already fully researched
+  (steps.jsonl ids / contrib `quests:*` rows) and 24 titles already targets of pending/claimed
+  `wave3:*` bundles (would have duplicated in-flight work under a parallel key namespace --
+  see gotcha), leaving 221 real candidates.
+- Two genuine orphan gaps surfaced that NO existing wave3 bundle covers: Rune Mysteries (gates
+  steer-ardougne-easy-diary task 1, and is the single most-referenced prereq quest on the wiki)
+  and Goblin Diplomacy (the real gate on the already-built rfd-goblins step, EXTRAPOLATION item
+  7) -- both lead depth:01. Eadgar's Ruse also promoted to depth:01: it resolves the ungrounded
+  Trollheim-tele-vs-climbing-boots branch on unlock-gwd (EXTRAPOLATION item 133), a live GAP no
+  wave3 bundle names.
+- Queued exactly 4 bundles of 15 via `queue add "depth:NN-<theme>"` with the directive's schema
+  ({targets, grain: "quick-guide walkthrough + reqs/rewards", schema: "questdb"}): 01 orphan
+  gates + all-region EASY diaries, 02 keystone quest-cape unlocks (Animal Magnetism/Lunar
+  Diplomacy/Legends'+Heroes' Quest tier), 03 medium-tier diary continuation + the elf-chain
+  opener (Mourning's End I/II, Roving Elves, Regicide), 04 miniquest unlocks (Mage Arena,
+  Enter the Abyss, Curse of the Empty Lord -- the last one directly informs
+  wave3:morytania-prayer-pvm's still-open altar-branch decision) + 4 support quests.
+- Wrote study/DEPTH_BACKLOG.md as 5 ordered bands (A remaining spine quests -> B non-elite
+  diary tail -> C misc miniquests -> D elite diaries -> E post-2019/capstone quest tail) so a
+  later burst pulls band-by-band without re-deriving the exclusion math; total accounted for
+  267 = 22 done + 24 wave3-covered + 60 bundled + 161 backlogged (89+15+16+12+29), verified by
+  script before any file write.
+- Read-only against the wiki this pass (directive: "quick pass -- no fetching"); all ranking
+  came from contrib.jsonl/steps.jsonl/goals.jsonl/steer_points.jsonl/EXTRAPOLATION.md +
+  general OSRS quest-unlock knowledge, not fresh fetches. No wikicli get/search calls made.
