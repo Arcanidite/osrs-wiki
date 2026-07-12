@@ -1,0 +1,14 @@
+==Creation==
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 1
+|skill1exp = 15
+|members = Yes
+|ticks = 2
+|mat1 = Arrow shaft
+|mat1quantity = 15
+|mat2 = Feather
+|mat2quantity = 15
+|output1 = Headless arrow
+|output1quantity = 15
+}}

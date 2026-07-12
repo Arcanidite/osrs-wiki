@@ -1,0 +1,19 @@
+==Transportation==
+Several transport options bring players into or close to Lumbridge, listed here with their arrival destination. From closest to farthest:
+*{{Plink|Lumbridge Home Teleport}} — castle courtyard, once every 30 minutes. No [[Magic]] requirement or [[rune]] cost.
+*{{Plink|Lumbridge Teleport}} — castle courtyard.
+*{{Plink|Death|pic=Skull (status) icon|txt=Dying}} — castle courtyard (only if a respawn is set there). Players should bank items before doing this.
+**The {{Plink|ring of returning}} and the{{Plink|Respawn Teleport}} spell work the same way.
+* {{plink|Canoe|pic=Paddle}} — Lumbridge canoe station.
+*{{Plink|Amulet of glory}} — nearby [[Al Kharid]] or [[Draynor Village]].
+*{{Plink|Gnome glider|pic=Gnome goggles}} — Al Kharid.
+*{{Plink|Fairy ring|pic=Fairy ring (Construction) icon|txt=Fairy code}} {{Fairycode|DIS}} — [[Wizard's Tower]].
+**Taking any fairy ring to [[Zanaris]] then leaving also leads to the [[Lumbridge shed]].
+*{{Plink|Cowbell amulet}} — inside the [[Lumbridge cow field|cow field]].
+
+=== Shortcuts ===
+* [[Broken raft]] - A grapple spot between Al Kharid and Lumbridge requiring {{SCP|Agility|8|link=yes}}.
+
+* [[Fence (Varrock)|Fence]] - A fence requiring {{SCP|Agility|13|link=yes}}.
+* [[Stepping stone (Lumbridge Swamp)|Stepping stone]] - A stepping stone providing quick access to the Kalphite lair, requiring {{SCP|Agility|66|link=yes}}.
+The [[Gate (Al Kharid)|Al Kharid gate]], found east of [[Lozar's house]], connects Lumbridge to its neighbour city [[Al Kharid]]. Until the player has completed [[Prince Ali Rescue]] [[quest]], it will cost 10 [[coins]] to pass either way through this gate to Al Kharid, though it can be avoided with a long detour north of the [[Groats' farm]]. [[Group Ironman Mode|Group Ironmen]] can find the portal to the Node on the north wall of the castle.

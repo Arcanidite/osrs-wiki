@@ -1,0 +1,35 @@
+==Trivia==
+{{User stats
+|Attack = 3
+|Hitpoints = 10
+|Mining = 3
+|Strength = 3
+|Agility = 1
+|Smithing = 3
+|Defence = 3
+|Herblore = 1
+|Fishing = 3
+|Ranged = 3
+|Thieving = 1
+|Cooking = 3
+|Prayer = 3
+|Crafting = 1
+|Firemaking = 3
+|Magic = 3
+|Fletching = 1
+|Woodcutting = 3
+|Runecraft = 1
+|Slayer = 1
+|Farming = 1
+|Construction = 1
+|Hunter = 1
+}}
+*The maximum total level achievable on Tutorial Island is 57.
+*The maximum experience achievable on Tutorial Island is 3334 experience points, although to get that much you must get lucky in Magic training.
+*The highest experience one can get in a skill (except Hitpoints) is 210 for Cooking.
+*The best melee weapon is a bronze sword. The best (and only) Ranged weapon is a shortbow with bronze arrows as ammunition. The best (and only) shield is a wooden shield.
+*Although there is no magic weapon, the bronze dagger gives +1 Magic attack bonus, and is the best Magic weapon available on the island.
+*Even though there is a poll booth on the Tutorial Island the characters can't vote because it requires higher level than the maximum level obtainable on the isle.
+*On certain occasions, an NPC called [[Skippy]] can be found in the starting building where the [[#Gielinor Guide|Gielinor Guide]] resides. Skippy allows players to skip the entirety of the tutorial. He cannot be found there permanently, in order to decrease the amount of [[bot]]s entering the game.
+*[[Vannaka]], the [[#Combat_Instructor|Combat Instructor]], can also be found on the mainland as a [[Slayer Master]].
+*If you speak with the Magic Instructor to get runes with a full inventory, it will erroneously tell you that Terrova gave you air and mind runes, despite no runes being added.

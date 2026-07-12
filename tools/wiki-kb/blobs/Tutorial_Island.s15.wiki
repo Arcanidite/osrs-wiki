@@ -1,0 +1,6 @@
+=== Account guide ===
+[[File:Financial Advisor chathead.png|left]]
+The [[Account Guide]] instructs players about their [[account]] (i.e. their character). He will explain the [[Account Management]] menu and the various options within it: [[members]]hip, [[world]]s, swapping worlds with the [[world switcher]] in the logout menu, the store, [[bond]]s, the inbox, the [[name changer]] and various useful links at the bottom of the menu.
+
+The Account Guide will also mention account safety and security, which are strengthened with [[bank PIN]]s and [[authenticator]]s. For that topic, he redirects to the Customer Support webpage.
+[[File:Tutorial Island chapel.png|thumb|width=500x500|The next-to-last building on Tutorial Island: the chapel.]]

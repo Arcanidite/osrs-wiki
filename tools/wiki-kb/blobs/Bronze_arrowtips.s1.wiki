@@ -1,0 +1,14 @@
+==Creation==
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 5
+|skill1boostable = Yes
+|skill1exp = 12.5
+|members = Yes
+|ticks = 5
+|tools = Hammer
+|facilities = Anvil
+|mat1 = Bronze bar
+|output1 = Bronze arrowtips
+|output1quantity = 15
+}}

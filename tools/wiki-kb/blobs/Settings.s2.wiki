@@ -1,0 +1,43 @@
+===General===
+'''''Note:''' These options are currently only available on [[Old School RuneScape Mobile|Mobile]] and [[Official Client]].''
+
+{| class="wikitable" style="width:800px"
+!Setting
+!Function
+|-
+|Tile highlighting
+|When enabled, hold {{Key press|Shift}} and right-click the ground to place highlights.
+|-
+|Tile highlight colour
+|What colour your marked tiles will show up as.
+|-
+|Highlight entities on mouse-over
+|Adds a highlight to entities when you hover the mouse cursor over them.
+|-
+|Highlight hovered tile
+|When enabled, highlights the tile under the mouse.
+|-
+|Highlight hovered tile - Always on top
+|When enabled, shows the hovered tile highlight over objects in the world.
+|-
+|Highlight hovered tile - Colour
+|Colour to highlight the tile under the mouse.
+|-
+|Highlight current tile
+|When enabled, highlights the tile you are currently on.
+|-
+|Highlight current tile - Always on top
+|When enabled, shows the current tile highlight over objects in the world.
+|-
+|Highlight current tile - Colour
+|Colour to highlight the tile you are currently on.
+|-
+|Highlight destination tile
+|When enabled, highlights the tile you are moving to.
+|-
+|Highlight destination tile - Always on top
+|When enabled, shows the destination tile highlight over objects in the world.
+|-
+|Highlight destination tile - Colour
+|Colour to highlight the tile you are moving to.
+|}

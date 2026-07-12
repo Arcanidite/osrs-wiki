@@ -1,0 +1,15 @@
+==List of quests==
+</noinclude>
+{{Sync}}
+<dpl>
+ namespace =
+ uses = Template:Infobox Quest
+ uses = Template:Quest rewards
+ order = ascending
+ category = Free-to-play quests
+ notcategory = Future content
+ notcategory = Quick guides
+ include = {Infobox Quest}:number:name,{Quest details}:difficulty:length,{Quest rewards}:qp,{Infobox Quest}:series:release
+ format = {| class="wikitable lighttable sortable qc-active oqg-table sticky-header align-center-1 align-center-5 align-center-6 autosort=1²{comma}²a" | \n! # !! Name !! Difficulty !! Length !! {{SCP|Quest}} !! Series !! Release date,\n|- data-rowid="%PAGE%"\n|,,\n|}
+ tablerow = %%,data-sort-value="²{#dplreplace:²{#dplreplace:%PAGE%|A\s|}²|The\s|}²"|[[%PAGE%]],||data-sort-value="²{#switch:%%|Novice=1|Intermediate=2|Experienced=3|Master=4|Grandmaster=5|Special=6}²"|%%,data-sort-value="²{#switch:%%|Very Short=0|Short=1|Short – Medium=2|Short – Long=3|Medium=4|Medium – Long=5|Long=6|Very Long=7}²"|%%,||%%,||²{#ifeq:%%|None|data-sort-value="" {{NA}}|%%}²,%%,||%%
+</dpl><noinclude>

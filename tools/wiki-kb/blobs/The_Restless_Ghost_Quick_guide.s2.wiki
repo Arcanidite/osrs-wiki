@@ -1,0 +1,15 @@
+==Walkthrough==
+===Getting started===
+{{Checklist|*Talk to [[Father Aereck]] in the [[Lumbridge]] church. ([[Lumbridge teleport]] can be used for quick travel to [[Lumbridge]]) {{Chat option|3 I'm looking for a quest!|1 Ok, let me help then.}}
+*Go through the [[Lumbridge Graveyard|graveyard's]] southern exit and head to the hut west of [[Lumbridge Swamp]].}}
+
+===Ghostspeak amulet===
+{{Checklist|*Talk to [[Father Urhney]] inside the hut. {{Chat option|2 Father Aereck sent me to talk to you.|1 He's got a ghost haunting his graveyard.}}
+*Head to the small room in the Lumbridge graveyard south of the church.
+*Equip the [[Ghostspeak amulet]] and click the coffin, talk to the ghost. {{Chat option|1 Yep, now tell me what the problem is.}}}}
+
+===The skull===
+{{Checklist|*Head to the [[Wizards' Tower]], and climb down the ladder to the basement. (Use [[Necklace of passage]] to teleport to [[Wizards' Tower]] if you have one.)
+*Search the altar, and you will receive a [[ghost's skull]]. A level 13 [[Skeleton (The Restless Ghost)|skeleton]] will appear, you don't have to kill it, just leave.
+*Go back to the graveyard and use the skull on the coffin with it open.
+*'''Congratulations, quest complete!'''}}

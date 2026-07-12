@@ -1,0 +1,16 @@
+==Details==
+{{Quest details
+|start = Talk to [[Veos]] in [[The Sheared Ram]] in [[Lumbridge]].
+|startmap = 3228,3242
+|difficulty = Novice
+|description = Veos has long been a lover of treasure hunts and his latest hunt has brought him to Lumbridge. However, not knowing the area well, Veos could use some help finding this treasure.
+|length = Very Short
+|items = * [[Spade]] (the [[Eastfloor spade]] does not work)
+|recommended = * [[Energy potion]]s or [[stamina potion]]s ''([[Members]] only)''
+*Fast travel to [[Draynor Village]] (1 trip) - [[Amulet of glory]] ''([[Members]] only)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kourend}} {{okay}} will auto-complete the quest
+</poem>
+}}

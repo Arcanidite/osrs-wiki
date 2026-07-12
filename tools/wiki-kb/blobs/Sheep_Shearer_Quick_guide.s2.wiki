@@ -1,0 +1,17 @@
+==Walkthrough==
+===If you already have the 20 unnoted balls of wool===
+{{Checklist|*Talk to [[Fred the Farmer]] north of [[Lumbridge]]. {{Chat option|1I'm looking for a quest.}}
+*Fred takes the 20 [[balls of wool]].
+*'''Congratulations, quest complete!'''}}
+
+===If you don't have the balls of wool===
+{{Checklist|*Talk to [[Fred the Farmer]] north of [[Lumbridge]]. {{Chat option|1I'm looking for a quest. |1Yes.}}
+**He will give you [[shears]] if you do not have them.
+*Enter the sheep pen to the east, connected to his house and shear sheep for 20 [[wool]].
+**[[File:Ultimate ironman chat badge.png]] Ultimate Ironmen: You can deliver the balls of wool in several trips. You do not have to deliver all 20 at once.
+::'''Note:''' You cannot shear [[Ram]]s or "[[The Thing]]". If you attack a ram and cannot kill it, run out of the pen until it stops targeting you.
+*Go to the {{FloorNumber|uk=1}} of [[Lumbridge Castle]].
+*Click on the [[spinning wheel]] in the southern room to spin the wool.
+*With 20 '''un-noted''' [[balls of wool]], return to [[Fred the Farmer]].
+*Talk to [[Fred the Farmer]] and hand them in. {{Chat option|1I need to talk to you about shearing these sheep!}}
+*'''Congratulations, quest complete!'''}}

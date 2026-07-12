@@ -1,0 +1,106 @@
+==Creation==
+<tabber>
+Logs=
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 2
+|ticksnote = Make-X is 2, then 3 ticks
+|tools = Knife
+|mat1 = Logs
+|output1 = Arrow shaft
+|output1quantity = 15
+}}
+|-|
+Oak=
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 15
+|skill1boostable = Yes
+|skill1exp = 10
+|members = Yes
+|ticks = 2
+|ticksnote = Make-X is 2, then 3 ticks
+|tools = Knife
+|mat1 = Oak logs
+|output1 = Arrow shaft
+|output1quantity = 30
+}}
+|-|
+Willow=
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 30
+|skill1boostable = Yes
+|skill1exp = 15
+|members = Yes
+|ticks = 2
+|ticksnote = Make-X is 2, then 3 ticks
+|tools = Knife
+|mat1 = Willow logs
+|output1 = Arrow shaft
+|output1quantity = 45
+}}
+|-|
+Maple=
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 45
+|skill1boostable = Yes
+|skill1exp = 20
+|members = Yes
+|ticks = 2
+|ticksnote = Make-X is 2, then 3 ticks
+|tools = Knife
+|mat1 = Maple logs
+|output1 = Arrow shaft
+|output1quantity = 60
+}}
+|-|
+Yew=
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 60
+|skill1boostable = Yes
+|skill1exp = 25
+|members = Yes
+|ticks = 2
+|ticksnote = Make-X is 2, then 3 ticks
+|tools = Knife
+|mat1 = Yew logs
+|output1 = Arrow shaft
+|output1quantity = 75
+}}
+|-|
+Magic=
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 75
+|skill1boostable = Yes
+|skill1exp = 30
+|members = Yes
+|ticks = 2
+|ticksnote = Make-X is 2, then 3 ticks
+|tools = Knife
+|mat1 = Magic logs
+|output1 = Arrow shaft
+|output1quantity = 90
+}}
+|-|
+Redwood=
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 90
+|skill1boostable = Yes
+|skill1exp = 35
+|members = Yes
+|ticks = 2
+|ticksnote = Make-X is 2, then 3 ticks
+|tools = Knife
+|mat1 = Redwood logs
+|output1 = Arrow shaft
+|output1quantity = 105
+}}
+</tabber>

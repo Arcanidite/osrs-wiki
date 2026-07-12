@@ -1,0 +1,50 @@
+==Creation==
+{{Switch infobox
+|text1 = Unpoisoned
+|item1 = {{Recipe
+|skill1 = Fletching
+|skill1lvl = 1
+|skill1exp = 19.5
+|members = Yes
+|ticks = 2
+|mat1 = Headless arrow
+|mat1quantity = 15
+|mat2 = Bronze arrowtips
+|mat2quantity = 15
+|output1 = Bronze arrow
+|output1quantity = 15
+}}
+|text2 = Poison
+|item2 = {{Recipe
+|members = Yes
+|ticks = 0
+|mat1 = Bronze arrow
+|mat1quantity = 5
+|mat2 = Weapon poison
+|mat2quantity = 1
+|output1 = Bronze arrow(p)
+|output1quantity = 5
+}}
+|text3 = Poison+
+|item3 = {{Recipe
+|members = Yes
+|ticks = 0
+|mat1 = Bronze arrow
+|mat1quantity = 5
+|mat2 = Weapon poison(+)
+|mat2quantity = 1
+|output1 = Bronze arrow(p+)
+|output1quantity = 5
+}}
+|text4 = Poison++
+|item4 = {{Recipe
+|members = Yes
+|ticks = 0
+|mat1 = Bronze arrow
+|mat1quantity = 5
+|mat2 = Weapon poison(++)
+|mat2quantity = 1
+|output1 = Bronze arrow(p++)
+|output1quantity = 5
+}}
+}}

@@ -233,3 +233,200 @@ one of the six scramblers, not just this one.
   ROW (G12) but excluded them from wave scoping, and only the ledger cross-check made
   that call defensible. Future extrapolation briefs should say: "gap = missing knowledge
   or missing rows; open tickets are inventory, not gaps — list them once, scope them never."
+
+## totalscope retro
+- Enumerated the full quest/miniquest/diary surface via wikicli category+links
+  traversal: 197 real quests (union of Category:Quests minus ~10 meta pages, plus
+  Category:Free-to-play quests + Category:Members' quests, plus 4 uncategorized
+  stragglers found only by diffing the three sources), 28 miniquests (Category:
+  Miniquests minus /Quick guide dupes + self-named subcats), 12 Achievement Diaries
+  (no working diary category exists — sourced from links "Achievement Diary" filtered
+  to "<Region> Diary" pattern instead).
+- Deduped against contrib.jsonl's quests:* keys (17 unique quest titles already
+  contributed: Priest in Peril, Nature Spirit, Druidic Ritual, Bone Voyage, Tale of
+  the Righteous, Cook's Assistant, Fairytale I, The Feud, Lost City, Swan Song,
+  Monkey Madness I, Desert Treasure I, and 5 RFD pages) — left in scope per the
+  brief's literal prefix list (questdb:*/quests:*) the study:multiquest-im:* rows that
+  also touched Client of Kourend/Fairy ring, since that prefix wasn't named.
+- Emitted 12 bundles (<=20 titles each): 9 quest-sweep chunks (180 remaining quests,
+  alphabetically chunked — deliberately skipped thematic/region tagging from memory
+  since bundle grouping is organizational metadata, not a wiki-sourced claim, and
+  alphabetical chunking is deterministic/error-free vs guessed questline groupings),
+  2 miniquest-sweep chunks (28), 1 diary-sweep bundle (12).
+- Queued 3 wave4:* tickets (minigames, skill-unlocks, collection-log) per brief,
+  payload-only, not bundled.
+- CANONICAL-TRIGGER MINT: Category:<umbrella> is not a reliable "give me every X" source
+  on this wiki — it silently mixes list/meta pages with real content pages and can omit
+  real members from its own subcategories. Any future full-surface enumeration should
+  budget for a 3-way union (umbrella category, minus known meta-page suffixes, union'd
+  against the cleaner F2P/P2P-style subcategories) rather than trusting one members()
+  call, and should verify a diary/achievement-style category exists before relying on it
+  (Category:Achievement Diary returns empty; the real index is the article's own link list).
+
+## step0-tutorial retro
+- Contributed 24 origin:tutorial:01..24 rows in strict chronological order: Character
+  Creator -> Gielinor Guide -> settings (display/zoom, audio, controls+dialogue-skip
+  keys) -> Survival Expert (fish/chop/light fire/cook) -> kitchen (bread + music
+  unlock) -> Quest Guide -> Mining Instructor (mine/smelt/smith) -> Combat Instructor
+  (melee rat, ranged rat) -> bank + Account Guide -> chapel Prayer instructor +
+  Ironman tutor -> Magic Instructor (Wind Strike) -> leave via Lumbridge Home
+  Teleport -> mainland arrival (spawn-point branch) -> Skippy full-skip trivia aside.
+  Refs: Tutorial_Island.s1/s5/s7/s14/s16/s19/s21/s24, Settings.s7/s12/s15,
+  Game_controls.s5, Speedrunning.s1/s2 (title "Quest Speedrunning").
+- Honest gap: the brief named "Speedrunning guide/Tutorial Island" as a grounding
+  source, but no such page exists -- row 03 is a dedicated disclosure row instead of
+  a fabricated route, citing what the Speedrunning page actually says (tutorial is
+  skipped on those worlds, not routed through). The only real wiki-grounded
+  speedrun-efficiency material for step 0 is: Settings/Game-controls dialogue-skip
+  keys (spacebar, number keys) + run toggle, and the Skippy anti-bot skip-NPC trivia
+  (explicitly flagged as unreliable, not the baseline).
+- Two "??"-flagged items left unresolved per own-words discipline rather than
+  guessed: (1) the wiki's own wording on bread-ingredient replenishment vs. the
+  music-tutorial gate is internally unclear; (2) Group Ironman's branch to "The
+  Node" south of the Magic building has no further wiki detail on its internal
+  steps.
+- CANONICAL-TRIGGER MINT: when a brief names two grounding sources for a topic and
+  one of them turns out not to exist as advertised (checked via search, not
+  assumed), the correct move is a disclosure row citing what the source ACTUALLY
+  says (even if it's "this doesn't cover what you'd expect"), not silent omission
+  and not inventing the missing content — the disclosure itself is the honest
+  degradation GRANULARITY §7 asks for ("Accuracy bar... honest degradation over
+  invented precision").
+
+## early-mainland retro
+- 9/9 origin:mainland:01-09 rows contributed, 0 blocked. Covered: Tutorial Island exit
+  mechanics + dual spawn point, Lumbridge General Store as the one hard gear gate (Spade
+  for XMTS), all four canonical Lumbridge quest openers (Cook's Assistant reused prior
+  blobs per brief; Restless Ghost, Sheep Shearer, X Marks the Spot fetched fresh) at
+  start-coord/route/reward grain, first-hour travel budget, and a synthesized efficient
+  ordering (castle-local pair first, Wizard's Tower detour third, Draynor/Falador/Port
+  Sarim loop last).
+- Confirmed [origin-tutorial]'s same-session finding independently: no Xerxes/DunkingOreos
+  study notes exist in study/, and the wiki's own "Speedrunning"-family pages are about the
+  seasonal minigame (tutorial skipped entirely on those worlds) not quest-ordering
+  strategy — zero usable ordering source there. origin:mainland:08's route is grounded
+  instead in each quest's own Details{startmap} coordinate + Lumbridge's Quests/Buildings
+  sections; origin:mainland:09 flags this gap explicitly for override by a future agent
+  with real speedrunner notes.
+- Reconfirmed the [quests] gotcha (Quick guide "Details" H2 is a content-free transclusion
+  stub) on all four openers — main quest page Details section is the only real source for
+  start NPC/coords/items/requirements; consistent enough across two fan-outs now that it
+  reads as a stable wiki convention, not a one-off.
+- All non-GE sourcing held without needing a rewrite: Cook's Assistant's egg/milk/flour and
+  Sheep Shearer's wool/shears are all free field-gather or NPC-handout; Spade purchase from
+  Lumbridge General Store (named vendor, not GE) is the only shop-gated item in scope.
+- CANONICAL-TRIGGER MINT: when a brief names specific community sources (author/channel
+  notes) that live outside the wiki, it should say up front what to do if those notes
+  don't exist yet in study/ — treat as optional-if-present rather than a blocking
+  dependency, and ground the deliverable in primary wiki pages instead. Two independent
+  agents this session (origin-tutorial, origin-mainland) hit the identical gap and had to
+  make that call unprompted; stating it in the brief would save the duplicated judgment.
+
+## miniquests retro
+- Classified all 28 miniquests, 0 skipped (contrib.jsonl had no pre-existing
+  classify:* keys). Names sourced from `members "Category:Miniquests"` (minus
+  /Quick guide pages and Category: entries) since section 1's "List of
+  miniquests" table is DPL-generated (uses=Infobox Miniquest over
+  Category:Miniquests) and the static wikitext fetch returns the DPL template
+  source, not rendered rows -- no per-item difficulty/length/series text exists
+  there to cite, so those fields are "??" for all 28 per the values-only-from-
+  the-table rule (kind="miniquest" uniformly; members/difficulty/qp/series "??"
+  across the board, no such columns exist anywhere on this page).
+- 7 of the 28 category members are flagged by the page's own prose ("One-off
+  content without miniquest designation") yet still sit inside Category:Miniquests:
+  Sacred Bone Burner, Rogue Trader, Knight Waves, Natural history quiz, Ancient
+  key (Tombs of Amascut), Spirit of Adventure, Lost Lover. Section 2's literal
+  wikitables (real Length/Requirements/Unlock columns) gave real length + notes
+  for exactly these 7 -- used them, refs cite both Miniquests.s1 and .s2.
+- 28-count cross-checked against an unrelated prior agent's retro entry
+  ("2 miniquest-sweep chunks (28)") -- independent confirmation the category-
+  membership approach lands on the same real set the guide-export pipeline
+  already treats as canonical.
+- CANONICAL-TRIGGER MINT: before trusting `get --section` on any wiki list/
+  index page, sections-scan it AND skim the fetched text for a `<dpl>` block --
+  DPL-templated tables render server-side and are invisible to raw wikitext
+  fetch; `members "Category:X"` (the category the dpl targets) is the correct
+  fallback for name enumeration, and any columns *populated from other pages'
+  templates* (not literal in the dpl's own `format`/`tablerow` strings) must be
+  "??" rather than guessed or fetched per-page.
+
+## quests (classify) retro
+- 191/191 quest rows classified, 0 skipped (contrib.jsonl had no prior "classify:quest"
+  keys). kind="quest" + members=f2p/p2p are real (derived from category membership, the
+  same filter the page's own DPL query uses); difficulty/length/qp/series are "??" for
+  every row -- see [classify] gotcha, this is a structural wall not a shortcut.
+- MAJOR FINDING: Quests/List (and its three transcluded sub-pages) render entirely via
+  <dpl> extension queries -- zero literal quest data in wikitext, only the query
+  definition. `get --strip` cannot help here; --strip removes noise from real content,
+  it doesn't expand server-side templates. Confirmed by fetching Quests/Free-to-play.s2
+  and Quests/Members.s2 directly (1038B/1256B of pure DPL config, no rows).
+- Fell back to `members Category:Free-to-play quests` / `Category:Members' quests` to
+  recover the real population + f2p/p2p split, since that's the exact filter the DPL
+  itself queries on -- this is enumeration, not an individual-quest-page fetch, so it
+  stays inside the hard limit while still being grounded in the page's actual query logic
+  rather than guessed.
+- Two correctness traps caught before writing rows: (1) Category:Members' quests
+  includes "Recipe for Disaster/Full guide" (a guide meta-page, not a quest) which the
+  real DPL explicitly excludes via `nottitlematch = %Full guide%`; (2) it also includes
+  "Fallen From Grace" and "The Graveyard", both tagged Category:Future content (unreleased,
+  DPL excludes via `notcategory = Future content`). Both caught by reading the DPL config
+  text itself rather than trusting raw category membership.
+- Did NOT touch Miniquests -- its DPL table has a different column set (no # or QP column,
+  matching neither the task's described master-table columns nor a real quest), and a
+  concurrent sibling classify agent's 28 "classify:<miniquest>" rows landed in contrib.jsonl
+  during this run, confirming that was the right split.
+- CANONICAL-TRIGGER MINT: when falling back to `members "Category:X"` because a page's
+  table is DPL (per the miniquests-retro mint above), don't stop at raw category
+  membership -- read the `<dpl>` block's own `notcategory=`/`nottitlematch=` lines first,
+  they name real exclusions (meta pages the category over-includes, unreleased/Future
+  content rows) that a plain member-list diff will silently miss and raw membership alone
+  will get wrong.
+
+## diaries (classify) retro
+- 48/48 area-tier rows classified (12 areas x 4 tiers), 0 skipped (contrib.jsonl had
+  no prior "classify:diary-*" keys). Areas + tier count sourced from section 1's
+  "List of diaries" wikitable (literal, not DPL) -- 12 area rows each with 4 numbered
+  reward items (cloak/amulet/shield/... 1-4) mapping 1:1 to Easy/Medium/Hard/Elite,
+  cross-confirmed by section 2's tabber which names the same 4 tiers explicitly.
+- kind="diary" uniform; area/tier real (from the table); tasks_count "??" for every
+  row -- no fetchable section on this page carries a per-area-tier task count, see
+  [classify] gotcha for why the three candidate tables all fall short.
+- Followed the domain-specific key/field spec in this brief (classify:diary-<area>-
+  <tier>, fields kind/area/tier/tasks_count) rather than the generic miniquest/quest
+  schema (kind/members/difficulty/length/qp/series/notes) also mentioned in the same
+  prompt -- the two are for different item shapes (area-tier cross rows vs one-row-
+  per-title) and only one can be literally satisfied; flagged the ambiguity via
+  feedback rather than guessing silently.
+- Area name -> slug is my own normalization (lowercase, "&" -> "and", spaces -> "-"):
+  Kourend & Kebos -> kourend-and-kebos, Lumbridge & Draynor -> lumbridge-and-draynor.
+  No prior multi-word-area slug precedent existed in steps.jsonl to match against
+  (only single-area "steer-ardougne-easy-diary" was found).
+- Stayed inside the hard limit: fetched only Achievement_Diary sections 0/1/2/3 (all
+  on the one named page), zero individual diary/quest pages touched.
+
+## materialize retro
+- Wrote design/MATERIALIZATION.md (requisite graph → played checklist: DAG edges vs
+  non-DAG interleave, speedrun cost model from STEP 0 via the 33 origin:* rows,
+  pull-forward = compounding unlocks / defer = deferred_until + sub-0.5 steer /
+  deterministic 4-rung tie-break ladder; gating semantics locked/available/done with
+  equal-grade + two-way check preserved and locked-is-advisory) and
+  design/FRAMES_GALLERY.md (media[] schema with mandatory state{} provenance grounded
+  in spike observed.json, shell-level gallery pane + lightbox outside the htmx swap
+  zones, manifest-driven lazy /media blob route, plugin thumbnail-only note). Four
+  lanes named: M1 origin content, M2 cost-model v2, M3 gating surface, F1 frames
+  gallery — all sequenced after SYNTHESIS Lanes 3/4, disjoint or explicitly ordered
+  on shared files.
+- COVERAGE.md named in the brief as "if present" does not exist (only EXTRAPOLATION.md
+  under tools/wiki-kb/study/) — treated as optional-if-present per the early-mainland
+  retro's mint; no blocking.
+- The ordinal-vs-cardinal cost split earned its keep: every place the brief wanted
+  "wall-clock drives linearization" but minutes are unmeasured, the design ranks
+  instead of numbers (supply < quest-XP < steered < train), and cardinal cost enters
+  only where est_minutes is sourced. No fabricated rates anywhere in either doc.
+- CANONICAL-TRIGGER MINT: when a design brief cites peer artifacts as already existing
+  ("the lightbox already exists", "same family as /icon and /wiki/page", "like
+  wikibox"), the designer's first act should be a grep for each named artifact, and
+  the design doc must state per artifact whether it is CODE or PLANNED-FAMILY —
+  otherwise the build lane inherits an invisible dependency on code that was only
+  ever vocabulary. Hit twice this session (routes + wikibox both phantom; lightbox
+  real but in a different surface than implied).

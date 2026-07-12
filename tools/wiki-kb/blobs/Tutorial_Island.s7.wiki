@@ -1,0 +1,48 @@
+==Building three: the quest house==
+
+=== Quest Guide ===
+[[File:Quest Guide chathead.png|left]]
+[[File:Quest house.png|thumb|width=500x500|The quest house, the third building on tutorial island.]]
+The [[Quest Guide]] tells the player all about [[quest]]s. He covers using the [[quest journal]] and the colours that the quests on that list can have:
+{{List|c=1
+|1=*<span style="color: Crimson;">Red</span> means the quest has not yet been started
+*<span style="color: Yellow;">Yellow</span> means started but not finished (in progress)
+*<span style="color: Green;">Green</span> means finished}}
+
+When clicking on a [[quest]], information about that quest will be displayed. If it is red, it will indicate where to find or start it and what the requirements are. If it is yellow, it will remind you what to do next.
+
+The starting point of a quest can be easily recognised by the quest icon {{SCP|Quest}} that can be found on the [[minimap]] (and on the [[world map]]). Such a symbol can be seen in the house the player is in right now. (Note that there are various icons to show different points of interest, which will help players find their way.)
+
+Finally, the Quest Guide will tell you what quests can be about and what rewards they might offer once completed.
+
+It is now time to go down the [[ladder]] and enter some [[List of dungeons|caves]], where players will forge and use weaponry.
+
+===Mining instructor===
+[[File:Mining Instructor chathead.png|left]]
+{{Map|name=Tutorial Island mine|3096,9516|mapID=10159|align=right|caption=A map of the [[Tutorial Island Dungeon]], where both the Mining Instructor and the Combat Instructor reside.}}
+The [[Mining Instructor]], Dezzick, teaches players the basics of [[Mining]] and [[Smithing]] (which includes [[Smithing#Smelting|smelting]]). He will hand out a [[bronze pickaxe]], which must be used to [[Mining|mine]] the nearby rocks, which contain copper and tin. ''If you are unsure which is which, you can hover your mouse over a rock, which will show its name in the upper-left corner.''
+
+When players have mined a [[copper]] ore and a [[tin]] ore, they can use the [[furnace]] to [[Smithing#Smelting|smelt]] the ores, combining them into a [[bronze bar]]. Dezzick will then give the player a [[hammer]], with which the player can [[Smithing|smith]] the bar into a [[bronze dagger]] on one of the nearby [[anvil]]s. 
+
+Unlike with other skills, progressing both Mining and Smithing to level 3 here is worthwhile, as almost nowhere else in the world one can find ores, a furnace and an anvil this close to each other.''
+
+===Combat instructor===
+[[File:Vannaka chathead.png|left]]
+The [[Combat Instructor]], Vannaka, teaches the basics of the [[Melee]] and [[Ranged]] [[Combat style|types of combat]]. '''''[[Pure]]s should pay attention to the "controlling combat experience" section below.''''' 
+
+====Melee====
+Players will now learn about the [[Worn Equipment|worn inventory]], where wielded and equipped items will end up and [[equipment stats]] can be shown. After the dagger is equipped, they will be given a [[bronze sword]] and a [[wooden shield]] and will be told about the [[combat options|combat interface]], where the [[Combat Options#Attack_types|attack style]] that will be used in combat can be selected. Different attack styles give different types of experience, and [[monsters]] are weak to specific attack styles.
+
+The player will now have to kill one of the nearby rats. To do so, they must wield the bronze sword, the bronze dagger, or neither of those (fight [[unarmed]]). The attack style they select will determine what skill they will be training: [[Attack]], [[Strength]] or [[Defence]]. <u>'''''[[Hitpoints]] cannot be trained on Tutorial Island.'''''</u>
+
+As soon as you attack an opponent—in this case one of the [[Giant rat (Tutorial Island)|giant rats]]—a [[Hitpoints#Fighting|health bar]] will appear above that opponent's head, and one above your own head will also appear as soon as the opponent strikes back. Note that a fatal hit cannot be received at this time: your health will likely drop to 1 but will never reach zero. As such, eating [[food]] to replenish health is not required. This is not the case outside of the tutorial.
+
+After killing one rat, you may continue with the tutorial.
+
+==== Ranged ====
+Next up, Vannaka will talk about [[Ranged]] combat. At this point, the rat pit cannot be re-entered. He will give the player a [[shortbow]] and 50 [[bronze arrow]]s, and once again the goal is to kill one single rat. Doing so will force the player to move on. When both the Melee and Ranged combat tasks are completed, the player may talk to the instructor to learn more about combat stats, melee combat, ranged combat and the [[Wilderness]].
+
+==== Controlling combat experience ====
+In the melee fight, when ''armed'' with the sword or dagger, the [[Combat Options#Accurate|accurate]] style trains Attack, [[Combat Options#Aggressive|aggressive]] trains Strength, and [[Combat Options#Defensive|defensive]] trains Defence. (Some other weapons, obtainable only after leaving Tutorial Island, may offer the [[Combat Options#Controlled|controlled]] style, which allows training all three skills at once (four when including Hitpoints).) When ''unarmed'', Punch trains Attack, Kick trains Strength, and Block trains Defence.
+
+If you ''kill'' a rat during the melee or ranged stage, the Combat Instructor will not allow you to attack another one, forcing you to continue the tutorial. Therefore, if you want to train more while on the island, it is suggested to deal 2 damage to a rat, run to the other side of the pit to exit combat (which enables you to attack another rat) and then repeat. When you have done this a couple of times, the chance increases you will accidentally attack a rat you have harmed before, killing it instantly; it will therefore become necessary to [[switch worlds]] regularly. If another player finishes off a rat that you have already done 2 damage to, that will count as ''your'' kill.

@@ -1,0 +1,13 @@
+==Details==
+{{Quest details
+|start = Talk to [[Fred the Farmer]] in the house by the [[sheep]] pen north of [[Lumbridge Castle]].
+|startmap = 3189,3273
+|difficulty = Novice
+|description = Fred the Farmer's sheep are getting mighty woolly. He will pay you to shear them.
+|length = Very Short
+|items = *20 [[balls of wool]] (unnoted)
+**[[Shears]] if obtaining [[wool]] to spin into balls of wool (obtained during the quest)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+</poem>
+}}

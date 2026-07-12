@@ -1,0 +1,4 @@
+==Item sources==
+{{Drop sources|Arrow shaft}}
+===Shop locations===
+{{Store locations list|Arrow shaft}}

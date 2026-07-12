@@ -1,0 +1,11 @@
+{{External|rs=Area Tasks achievements|dw}}
+{{redirect|Achievements|combat achievements|Combat Achievements|Steam profile achievements|Steam Achievements}}
+[[File:Achievement Diaries.png|left|130px]]
+[[File:Achievement Diary tab.png|frame|The Achievement Diary interface.]]
+The '''Achievement Diaries''' are sets of challenges exclusive to [[members]] that are completed for various rewards and benefits. These diaries consist of 492 tasks across 12 regions in [[Gielinor]], intended to test the player's skills and knowledge about ''[[Old School RuneScape]]''.
+
+The tasks of each diary are split into four tiers based on their perceived difficulty: easy, medium, hard, and elite. Easy tasks may simply involve browsing a [[shop]] or praying at an [[altar]], whereas the most difficult tasks involve surviving the [[TzHaar Fight Cave]] and having completed all [[quest]]s. The skill requirements for all tasks are also based on these tiers, with levels reaching up to 40 for easy tasks, 65 for medium tasks, 75 for hard tasks, and in the 90s for elite tasks ([[Ironman Mode|Ironmen]] may require even higher levels).
+
+Whenever the player has completed any diary tier, they may claim various rewards from that diary's taskmaster. Tasks can be completed from different tiers in any order, but claiming the rewards for a tier requires all preceding tiers of that diary to be completed as well. Rewards for each tier always include an [[antique lamp]] and an equippable item, in addition to various benefits such as increased [[experience]] rates and access to new areas.
+
+Players who have completed all the achievement diaries can purchase an [[achievement diary cape]] from [[Twiggy O'Korn]] in [[Draynor Village]] for 99,000 [[coins]]. Owning this cape grants the player the option add a cyan trim to their [[quest point cape]], and serves as one of the requirements to add a black trim to the [[music cape]].

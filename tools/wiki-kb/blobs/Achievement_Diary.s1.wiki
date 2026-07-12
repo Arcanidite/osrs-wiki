@@ -1,0 +1,118 @@
+==List of diaries==
+{| class="wikitable sortable lighttable align-right-1 align-center-2 align-center-3 align-center-4 align-center-5 align-center-9"
+|-
+!Area
+!colspan="5" |Main reward
+!Taskmaster
+!Highest skill
+|-
+|[[Ardougne Diary|Ardougne]]
+|{{plinkp|Ardougne cloak 1}}
+|{{plinkp|Ardougne cloak 2}}
+|{{plinkp|Ardougne cloak 3}}
+|{{plinkp|Ardougne cloak 4}}
+|[[Ardougne cloak|Cloak]]
+|[[Two-pints]]
+|data-sort-value=94|{{SCP|Magic|94|link=yes}}
+|-
+|[[Desert Diary|Desert]]
+|{{plinkp|Desert amulet 1}}
+|{{plinkp|Desert amulet 2}}
+|{{plinkp|Desert amulet 3}}
+|{{plinkp|Desert amulet 4}}
+|[[Desert amulet|Amulet]]
+|[[Jarr]]
+|data-sort-value=95|{{SCP|Fletching|95|link=yes}}
+|-
+|[[Falador Diary|Falador]]
+|{{plinkp|Falador shield 1}}
+|{{plinkp|Falador shield 2}}
+|{{plinkp|Falador shield 3}}
+|{{plinkp|Falador shield 4}}
+|[[Falador shield|Shield]]
+|[[Sir Rebral]]
+|data-sort-value=91|{{SCP|Farming|91|link=yes}}
+|-
+|[[Fremennik Diary|Fremennik Province]]
+|{{plinkp|Fremennik sea boots 1}}
+|{{plinkp|Fremennik sea boots 2}}
+|{{plinkp|Fremennik sea boots 3}}
+|{{plinkp|Fremennik sea boots 4}}
+|[[Fremennik sea boots|Sea boots]]
+|[[Thorodin]]
+|data-sort-value=83|{{SCP|Slayer|83|link=yes}}
+|-
+|[[Kandarin Diary|Kandarin]]
+|{{plinkp|Kandarin headgear 1}}
+|{{plinkp|Kandarin headgear 2}}
+|{{plinkp|Kandarin headgear 3}}
+|{{plinkp|Kandarin headgear 4}}
+|[[Kandarin headgear|Headgear]]
+|[[The 'Wedge']]
+|data-sort-value=90|{{SCP|Smithing|90|link=yes}}
+|-
+|[[Karamja Diary|Karamja]]
+|{{plinkp|Karamja gloves 1}}
+|{{plinkp|Karamja gloves 2}}
+|{{plinkp|Karamja gloves 3}}
+|{{plinkp|Karamja gloves 4}}
+|[[Karamja gloves|Gloves]]
+|[[Pirate Jackie the Fruit]]
+|data-sort-value=91|{{SCP|Runecraft|91|link=yes}}
+|-
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|{{plinkp|Rada's blessing 1}}
+|{{plinkp|Rada's blessing 2}}
+|{{plinkp|Rada's blessing 3}}
+|{{plinkp|Rada's blessing 4}}
+|[[Rada's blessing|Blessing]]
+|[[Elise]]
+|data-sort-value=95|{{SCP|Slayer|95|link=yes}}
+|-
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|{{plinkp|Explorer's ring 1}}
+|{{plinkp|Explorer's ring 2}}
+|{{plinkp|Explorer's ring 3}}
+|{{plinkp|Explorer's ring 4}}
+|[[Explorer's ring|Ring]]
+|[[Hatius Cosaintus]]
+|data-sort-value=88|{{SCP|Smithing|88|link=yes}}
+|-
+|[[Morytania Diary|Morytania]]
+|{{plinkp|Morytania legs 1}}
+|{{plinkp|Morytania legs 2}}
+|{{plinkp|Morytania legs 3}}
+|{{plinkp|Morytania legs 4}}
+|[[Morytania legs|Legs]]
+|[[Le-sabrè]]
+|data-sort-value=96|{{SCP|Fishing|96|link=yes}}
+|-
+|[[Varrock Diary|Varrock]]
+|{{plinkp|Varrock armour 1}}
+|{{plinkp|Varrock armour 2}}
+|{{plinkp|Varrock armour 3}}
+|{{plinkp|Varrock armour 4}}
+|[[Varrock armour|Armour]]
+|[[Toby]]
+|data-sort-value=95|{{SCP|Cooking|95|link=yes}}
+|-
+|[[Western Provinces Diary|Western Provinces]]
+|{{plinkp|Western banner 1}}
+|{{plinkp|Western banner 2}}
+|{{plinkp|Western banner 3}}
+|{{plinkp|Western banner 4}}
+|[[Western banner|Banner]]
+|[[Elder gnome child]]
+|data-sort-value=93|{{SCP|Slayer|93|link=yes}} {{Boostable|n}}
+|-
+|[[Wilderness Diary|Wilderness]]
+|{{plinkp|Wilderness sword 1}}
+|{{plinkp|Wilderness sword 2}}
+|{{plinkp|Wilderness sword 3}}
+|{{plinkp|Wilderness sword 4}}
+|[[Wilderness sword|Sword]]
+|[[Lesser Fanatic]]
+|data-sort-value=96|{{SCP|Magic|96|link=yes}}
+|}
+
+{{clear}}

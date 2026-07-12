@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = X Marks the Spot
+|image = [[File:X Marks the Spot reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*200 [[coins]]
+*[[Antique lamp (X Marks the Spot)|Antique lamp]] providing 300 experience in a skill of the player's choosing (can be reclaimed if lost or destroyed)
+*The ability to receive [[scroll box]]es
+*A [[Scroll box (beginner)|beginner scroll box]] (only if the player does not have one already in their possession; can be claimed later if players had one in their possession already)
+*+1 cap on all tiers of clue scrolls
+}}

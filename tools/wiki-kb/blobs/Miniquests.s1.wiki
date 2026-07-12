@@ -1,0 +1,17 @@
+==List of miniquests==
+</noinclude>
+{{Sync}}
+<dpl>
+ namespace =
+ uses = Template:Infobox Miniquest
+ order = ascending
+ category = Miniquests
+ notcategory = Future content
+ notcategory = Quick guides
+ notcategory = Discontinued content
+ notcategory = Sailing alpha content
+ notcategory = Sailing beta content
+ include = {Infobox Miniquest}:name,{Quest details}:difficulty:length,{Infobox Miniquest}:series:release,{Quest details}:leagueRegion
+ format = {| class="wikitable lighttable sortable qc-active oqg-table sticky-header align-center-4 autosort=1²{comma}²a" | \n! Name !! Difficulty !! Length !! Series !! Release date !! class="leagues-global-flag" | Leagues region,\n|- data-rowid="²{#dplreplace:%PAGE%|\s\(miniquest\)|}²"\n|,,\n|}
+ tablerow = data-sort-value="²{#dplreplace:²{#dplreplace:%PAGE%|A\s|}²|The\s|}²"|[[%PAGE%|²{#dplreplace:%PAGE%|\s\(miniquest\)|}²]],||data-sort-value="²{#switch:%%|Novice=1|Intermediate=2|Experienced=3|Master=4|Grandmaster=5|Special=6|#default=%%}²"|²{#switch:%%|1=Novice|2=Intermediate|3=Experienced|4=Master|5=Grandmaster|6=Special|#default=%%}²,data-sort-value="²{#switch:%%|Very Short=0|Short=1|Short – Medium=2|Short – Long=3|Medium=4|Medium – Long=5|Long=6|Very Long=7}²"|%%,||²{#ifeq:%%|None|data-sort-value="" {{NA}}|%%}²,%%,|| class="leagues-global-flag" | %%
+</dpl><noinclude>

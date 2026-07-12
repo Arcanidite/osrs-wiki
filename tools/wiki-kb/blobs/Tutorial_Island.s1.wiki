@@ -1,0 +1,23 @@
+== Building one: the starting house ==
+[[File:Gielinor Guide chathead.png|left]]
+
+=== Character customisation ===
+Upon logging in to the game for the first time after [[account]] creation, players will find themselves in the '''starting house''', found at the centre of Tutorial Island. The Character Creator interface will be open, which allows setting their character's appearance, such as body type, skin colour, and clothing styles. All of these customisation options can later be altered through [[Makeover]] for free after leaving Tutorial Island.
+[[File:Player customisation interface.png|thumb|A new player can begin customising their character upon account creation.|width=400x400]]
+[[File:Starting house.png|thumb|width=500x500|The first house on the island]]
+
+=== Gielinor Guide ===
+Inside the starting house is the [[Gielinor Guide]], the first [[non-player character]] (NPC) that players will encounter and talk to. He welcomes new arrivals to the world of [[Gielinor]] and teaches how to talk to its inhabitants. He'll also ask players their experience level. Players who select "brand new" or "played in the past" will then have access to the task system [[Adventure Paths]] once they arrive on the mainland. Finally, the guide will talk about the [[settings]] menu (options).
+
+To continue the tutorial, the player needs to go outside, through the door, and follow the path to meet their first instructor. Left-click somewhere on the ground to move there. The arrow keys can be used to rotate the camera and change the view.
+
+=== Survival Expert ===
+[[File:Survival Expert chathead.png|left]]
+Brynna, the [[Survival Expert]], gives players the basics for the survival skills: [[Fishing]], [[Woodcutting]], [[Firemaking]] and [[Cooking]]. She'll give players an [[item]]: a [[small fishing net]], which ends up in the [[inventory|backpack inventory]]. The small fishing net must be used with a [[fishing spot]] in the nearby pond, by clicking on such a spot, to catch some [[raw shrimps]]. Note that instructions given to your character can be seen in the top left corner.
+
+Catching some shrimps will gain you Fishing [[experience]], which can be seen in the [[skills]] menu or interface. There, the player can find all skills, their current [[level]]s and the amount of experience. A skill can be clicked on to open up the relevant skillguide. After gaining experience from Fishing, talking to Brynna will result in her giving the player a [[bronze axe]] and a [[tinderbox]]. The axe must be used to [[Woodcutting|cut]] a [[tree]] to collect some [[logs]].
+
+Click on the tinderbox to highlight (select) it, then clicking on the logs to use the tinderbox on them, will start the animation of lighting a [[fire]]. Players must [[Cooking|cook]] the raw shrimps on the fire. Once cooked, the [[shrimps]] (and [[food]] in general) can be eaten to replenish lost [[health]].
+
+'''''Note:''' almost all skills that can be trained on Tutorial Island can be trained to level 3, but this is the highest level available here. Much faster training methods exist off the island, and higher levels than 3 can only be obtained after finishing the tutorial.'' ''Everything gathered on Tutorial Island will be lost once the player [[#Leaving_the_island_&_arriving_on_the_mainland|leaves the island]]. For this reason, it's recommended to complete the tutorial in a way that best explains the game, and focus on increasing skills after leaving the tutorial.''
+[[File:Tutorial Island kitchen.png|thumb|width=500x500|The kitchen of Tutorial Island.]]

@@ -1,0 +1,18 @@
+==Details==
+{{Quest details
+|start = Talk to [[Father Aereck]] in the chapel south-east of [[Lumbridge Castle]].
+|startmap = 3243,3210
+|difficulty = Novice
+|description = A ghost is haunting [[Lumbridge]] graveyard. The priest of the Lumbridge church of [[Saradomin]] wants you to find out how to get rid of it.
+|length = Short
+|requirements = Capable of killing or running away from a [[combat level]] 13 [[skeleton]].
+|recommended = * {{SCP|Combat|10|link=yes}}
+*Fast travel to several locations
+**[[Wizard's Tower]] (1 trip) - [[Necklace of passage]] or [[Amulet of the eye]] or [[Amulet of glory]] to [[Draynor Village]] ''(All members only)''
+**[[Father Urhney]] in the [[Lumbridge Swamp]] (1 trip) - [[Necklace of passage]] to [[Wizard's Tower]] or [[Amulet of glory]] to [[Draynor Village]] ''(Both members only)''
+**[[Lumbridge]] (3 trips) - [[Lumbridge Teleport]] or [[Lumbridge Home Teleport]] (once)
+|kills = [[Skeleton (The Restless Ghost)|Skeleton]] ''(level 13)'' ''(can be avoided)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

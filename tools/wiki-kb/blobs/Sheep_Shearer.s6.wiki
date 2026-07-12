@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Sheep Shearer
+|image = [[File:Sheep Shearer reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*{{SCP|Crafting|150}} [[Crafting]] [[experience]] (An additional 50 experience if you make the balls of wool on a spinning wheel instead of buying it yourself)
+*60 [[coins]]
+}}

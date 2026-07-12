@@ -1,0 +1,9 @@
+==Reward==
+{{Quest rewards
+|name = The Restless Ghost
+|image = [[File:The Restless Ghost reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*{{SCP|Prayer|1,125}} [[Prayer]] [[experience]]
+*[[Ghostspeak amulet]] (keep for several quests and content in the future)
+}}

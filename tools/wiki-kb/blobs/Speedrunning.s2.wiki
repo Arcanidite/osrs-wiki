@@ -1,0 +1,18 @@
+==Restrictions==
+[[File:Quest Speedrunning - speedrunning a quest.png|thumb|300px|Players speedrunning the quest [[Ernest the Chicken]].]]
+Speedrunning worlds have the same mechanics as regular worlds '''during''' a speedrun, with a few exceptions:
+* The [[tutorial]] is skipped, meaning the player will start immediately in [[Lumbridge]].
+* All accounts are treated as [[ironmen]], so trading with other players and the [[Grand Exchange]] are disabled.
+* [[PvP]] is disabled.
+* No access to [[Castle Wars]], [[Emir's Arena]], [[Falador Party Room]], [[Fight Pits]], [[Last Man Standing]], [[Rat Pits]], [[Soul Wars]], or [[Trouble Brewing]].
+* Teleport cooldowns (e.g. [[Home Teleport]]) are paused on logout.
+* [[Shop]]s have a static stock and items will never sell out. Items can still be sold to shops, but will be instantly deleted.
+* Items picked up from the floor are player-specific, so waiting for item spawns will not be an issue.
+* Dropped items act as normal, but are deleted once the speedrun ends.
+* [[Fire]]s lit by players always burn out after one minute, and ashes only appear to the player who lit the fire as well.
+* Fired ammunition, such as arrows, only appears to the player themselves.
+* [[Death]] works as normal.
+
+If the player is '''not on''' a speedrun, extra exceptions apply:
+* [[Experience]] gain is disabled.
+* Deaths are safe and any items dropped on death are deleted. If the player dies, they will respawn in [[Lumbridge]] with the items they had.

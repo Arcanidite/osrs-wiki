@@ -1,0 +1,8 @@
+==Building six: the Magic building==
+[[File:Magic building.png|thumb|width=500x500|The final building non-Group Ironmen see before leaving the island.]]
+
+=== Magic instructor ===
+[[File:Magic Instructor chathead.png|left]]
+The [[Magic Instructor]], Terrova, instructs players in the [[Magic]] skill, the [[Spellbook|spellbook interface]] and its filter menu, and the casting of [[spell]]s. He will hand the player five [[air rune]]s and five [[mind rune]]s, which must be used to cast the offensive spell [[Wind Strike]] on one of the nearby [[Chicken (Tutorial Island)|chicken]]s.
+
+If players drop the runes and talk to the instructor again, more runes may be collected. Players can only cast Wind Strike on the chickens '''once''' before they are instructed to move on, and additional collected runes will vanish when leaving Tutorial Island. However, players can return to the rats to train Magic up to level 3 to bypass this restriction. This will require at most 32 of each rune, since you receive Magic experience even if you miss.

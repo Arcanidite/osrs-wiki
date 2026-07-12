@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|start = Talk to [[Elena]] in her house in [[East Ardougne]].
+|startmap = 2592,3336
+|difficulty = Novice
+|description = This is the second part of an ongoing adventure. Help Elena discover the truth about the infamous Ardougne plague.
+
+Smuggle test samples across Ardougne to Elena's old mentor.
+|length = Short
+|requirements = *Completion of [[Plague City]]
+|items =
+* [[Priest gown top]] and [[Priest gown bottom|bottom]] (can be obtained for free during the quest)
+* [[Gas mask]] (can be obtained for free from the cupboard in [[Edmond]] and [[Alrena]]'s house in [[East Ardougne]])
+|recommended = * {{SCP|Combat|10|link=yes}}
+*[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*Fast travel to several locations
+**[[East Ardougne]] to start the quest plus 1-2 trips - [[Ardougne Teleport]] or [[Skills necklace]] to [[Fishing Guild]] or [[Spirit tree]] to [[Battlefield]] or [[fairy ring]] to {{fairycode|djp}} or [[Captain Barnaby]]'s ship from [[Rimmington]] or [[Brimhaven]]
+**[[Rimmington]] (1 trip) - [[Teleport to House]] (the default house location is Rimmington) or [[Skills necklace]] to the Crafting Guild or [[Rat Pits]] [[minigame]] teleport
+**[[Varrock]] (1 trip) - [[Varrock teleport]] or [[Chronicle]] or [[Skills necklace]] to [[Crafting Guild]] or [[Ring of wealth]] to [[Grand Exchange]]
+|kills = * [[Mourner (boss)|Mourner]] ''(level 13)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

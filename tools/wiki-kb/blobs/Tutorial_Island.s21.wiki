@@ -1,0 +1,6 @@
+==Leaving the island & arriving on the mainland==
+Those that are ready to leave can speak with the Magic Instructor once more, who will direct you to use the [[Lumbridge Home Teleport]] spell from your spellbook. Moving on to the mainland will unlock access to the rest of the world of [[Gielinor]], the ability to speak in chat, and the ability to further train skills. Players will arrive in [[Lumbridge]], located north-east of Tutorial Island, with standard provisions.
+
+Before you teleport to the mainland, Terrova will ask you if you were planning to become an Ironman. If so, he will direct you back to the [[#Ironman Mode|Ironman tutor]] standing outside Terrova's house. If not, he will point out that in the town he will teleport the player to, Lumbridge, there are many tutors who are willing to teach about the many skills the player could learn.
+
+Players that ''did not'' unlock the task system [[Adventure Paths]] whilst talking to the [[#Gielinor Guide|Gielinor Guide]] at the start of the tutorial are now standing within or in front of the walled area of [[Lumbridge Castle]]. Those that ''did'' unlock that task system (''and'' have ''not'' chosen to play [[#Ironman Mode|Ironman Mode]]) will find themselves just outside the nearby [[The Sheared Ram|pub]], near [[Adventurer Jon]]. He will immediately call the player and tell them about Adventure Paths.

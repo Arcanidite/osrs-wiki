@@ -1,0 +1,527 @@
+==All requirements==
+The tables below show the total requirements for all diaries of the selected tier. Shown skill requirements include the levels needed for the listed quests, prerequired quests, and additional requirements.
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 40
+|Agility = 20
+|Smithing = 20
+|Herblore = 12
+|Fishing = 20
+|Ranged = 30
+|RangedNotes = {{boostable|n}}
+|Thieving = 25
+|Cooking = 30
+|Crafting = 23
+|CraftingNotes = <ref name="IronFish">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either 42 [[Crafting]] or completion of [[Skippy and the Mogres]] with 32 [[Slayer]] for a [[fishbowl]].</ref>
+|Firemaking = 15
+|Magic = 21
+|Fletching = 20
+|Woodcutting = 15
+|Runecraft = 9
+|Slayer = 15
+|SlayerNotes = <ref name="IronFish"/>
+|Farming = 23
+|FarmingNotes = <ref name="IronMed">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 47 [[Farming]] or the ability to kill [[gryphon]]s for a [[watermelon]].</ref>
+|Construction = 25
+|ConstructionNotes = {{boostable|n}}
+|Hunter = 11
+|Combat = 40
+|Total = 388
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Big Chompy Bird Hunting"
+|[[Big Chompy Bird Hunting]]
+|- data-rowid="Biohazard"
+|[[Biohazard]]
+|- data-rowid="Cook's Assistant"
+|[[Cook's Assistant]]
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|- data-rowid="Druidic Ritual"
+|[[Druidic Ritual]]
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]]
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|- data-rowid="The Knight's Sword"
+|[[The Knight's Sword]]
+|- data-rowid="Nature Spirit"
+|[[Nature Spirit]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Elemental Workshop I]]
+|-
+|Started [[The Giant Dwarf]]
+|-
+|Started [[Icthlarin's Little Helper]]
+|-
+|Started [[Troll Stronghold]]
+|-
+|Reach 30 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|-
+|Reach 50 [[kudos]] with the [[Varrock Museum]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 55
+|Strength = 38
+|StrengthNotes = <ref name="gwd">You'll need either 60 [[Strength]] or 60 [[Agility]] for the [[Wilderness God Wars Dungeon]], both of which are [[boostable]].</ref>
+|Agility = 52
+|AgilityNotes = <ref name="gwd"/>
+|Smithing = 50
+|SmithingNotes = {{boostable|n}}<ref name="IronMith">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Defence = 30
+|Herblore = 48
+|Fishing = 65
+|Ranged = 50
+|RangedNotes = {{boostable|n}}
+|Thieving = 47
+|Cooking = 43
+|Prayer = 47
+|Crafting = 50
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 50
+|Magic = 60
+|Fletching = 50
+|FletchingNotes = <ref name="IronMith"/>
+|Woodcutting = 61
+|WoodcuttingNotes = {{boostable|n}}
+|Runecraft = 23
+|Slayer = 50
+|Farming = 45
+|FarmingNotes = <ref name="IronFarm">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 47 [[Farming]] or the ability to kill [[gryphon]]s for a [[watermelon]].</ref>
+|Construction = 37
+|Hunter = 53
+|Combat = 70
+|Quest = 32
+|Total = 1023
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|- data-rowid="The Ascent of Arceuus"
+|[[The Ascent of Arceuus]]
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|- data-rowid="Cabin Fever"
+|[[Cabin Fever]]
+|- data-rowid="Cook's Assistant"
+|[[Cook's Assistant]]
+|- data-rowid="The Depths of Despair"
+|[[The Depths of Despair]]
+|- data-rowid="The Dig Site"
+|[[The Dig Site]]
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]]
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|- data-rowid="The Forsaken Tower"
+|[[The Forsaken Tower]]
+|- data-rowid="Garden of Tranquillity"
+|[[Garden of Tranquillity]]
+|- data-rowid="Ghosts Ahoy"
+|[[Ghosts Ahoy]]
+|- data-rowid="The Golem"
+|[[The Golem]]
+|- data-rowid="The Hand in the Sand"
+|[[The Hand in the Sand]] <ref name="Sand">[[File:Ultimate ironman chat badge.png]] [[Ironman Mode#Ultimate|Ultimate Ironmen]] do not have to complete [[The Hand in the Sand]].</ref>
+|- data-rowid="Horror from the Deep"
+|[[Horror from the Deep]]
+|- data-rowid="The Knight's Sword"
+|[[The Knight's Sword]]
+|- data-rowid="Lair of Tarn Razorlor"
+|[[Lair of Tarn Razorlor]]
+|- data-rowid="The Queen of Thieves"
+|[[The Queen of Thieves]]
+|- data-rowid="Recruitment Drive"
+|[[Recruitment Drive]]
+|- data-rowid="Skippy and the Mogres"
+|[[Skippy and the Mogres]]
+|- data-rowid="A Soul's Bane"
+|[[A Soul's Bane]]
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|- data-rowid="Tale of the Righteous"
+|[[Tale of the Righteous]]
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|- data-rowid="Underground Pass"
+|[[Underground Pass]]
+|- data-rowid="Waterfall Quest"
+|[[Waterfall Quest]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Own a [[Jagex Account]], or set up the older [[RuneScape Authenticator]]
+|-
+|Access to the [[Wilderness God Wars Dungeon]] <ref name="gwd"/>
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Started [[In Aid of the Myreque]]
+|-
+|Started [[Sea Slug]]
+|-
+|Started [[Troll Stronghold]]
+|-
+|Partial completion of [[Dragon Slayer I]]
+|-
+|Partial completion of [[Elemental Workshop II]]
+|-
+|Partial completion of [[Monkey Madness I]]
+|-
+|Partial completion of [[Olaf's Quest]]
+|-
+|Partial completion of [[One Small Favour]]
+|-
+|Partial completion of [[Ratcatchers]]
+|-
+|Partial completion of [[Tai Bwo Wannai Trio]]
+|-
+|Partial completion of [[Watchtower]]
+|-
+|Reach 125 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|-
+|Reach 50 [[kudos]] with the [[Varrock Museum]]
+|-
+|Reach 100% [[Tai Bwo Wannai Cleanup]] favour
+|}
+|}
+{{Reflist}}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 50
+|AttackNotes = <ref name="warriorsguild">You'll need 130 combined levels in [[Attack]] and [[Strength]], or level 99 in either.</ref>
+|Mining = 70
+|Strength = 50
+|StrengthNotes = <ref name="warriorsguild"/>
+|Agility = 71
+|Smithing = 75
+|Defence = 70
+|DefenceNotes = {{boostable|n}}
+|Herblore = 66
+|Fishing = 70
+|Ranged = 70
+|RangedNotes = {{boostable|n}}
+|Thieving = 75
+|Cooking = 70
+|Prayer = 70
+|PrayerNotes = {{boostable|n}}
+|Crafting = 70
+|Firemaking = 65
+|Magic = 72
+|Fletching = 70
+|Woodcutting = 71
+|Runecraft = 65
+|Slayer = 72
+|Farming = 74
+|Construction = 65
+|Hunter = 69
+|Combat = 100
+|Quest = 175
+|Total = 1540
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|- data-rowid="Another Slice of H.A.M."
+|[[Another Slice of H.A.M.]]
+|- data-rowid="The Ascent of Arceuus"
+|[[The Ascent of Arceuus]]
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|- data-rowid="Cabin Fever"
+|[[Cabin Fever]]
+|- data-rowid="Contact!"
+|[[Contact!]]
+|- data-rowid="The Depths of Despair"
+|[[The Depths of Despair]]
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]]
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|- data-rowid="The Feud"
+|[[The Feud]]
+|- data-rowid="The Forsaken Tower"
+|[[The Forsaken Tower]]
+|- data-rowid="Garden of Tranquillity"
+|[[Garden of Tranquillity]]
+|- data-rowid="Ghosts Ahoy"
+|[[Ghosts Ahoy]]
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|- data-rowid="The Hand in the Sand"
+|[[The Hand in the Sand]] <ref name="Sand">[[File:Ultimate ironman chat badge.png]] [[Ironman Mode#Ultimate|Ultimate Ironmen]] do not have to complete [[The Hand in the Sand]].</ref>
+|- data-rowid="In Aid of the Myreque"
+|[[In Aid of the Myreque]]
+|- data-rowid="The Knight's Sword"
+|[[The Knight's Sword]]
+|- data-rowid="Lair of Tarn Razorlor"
+|[[Lair of Tarn Razorlor]]
+|- data-rowid="Legends' Quest"
+|[[Legends' Quest]]
+|- data-rowid="Mage Arena I"
+|[[Mage Arena I]]
+|- data-rowid="Mourning's End Part II"
+|[[Mourning's End Part II]]
+|- data-rowid="The Queen of Thieves"
+|[[The Queen of Thieves]]
+|- data-rowid="Recipe for Disaster"
+|[[Recipe for Disaster]] fully completed
+|- data-rowid="Recruitment Drive"
+|[[Recruitment Drive]]
+|- data-rowid="Skippy and the Mogres"
+|[[Skippy and the Mogres]]
+|- data-rowid="A Soul's Bane"
+|[[A Soul's Bane]]
+|- data-rowid="The Slug Menace"
+|[[The Slug Menace]]
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|- data-rowid="Swan Song"
+|[[Swan Song]]
+|- data-rowid="Tai Bwo Wannai Trio"
+|[[Tai Bwo Wannai Trio]]
+|- data-rowid="Tale of the Righteous"
+|[[Tale of the Righteous]]
+|- data-rowid="Tears of Guthix"
+|[[Tears of Guthix]]
+|- data-rowid="Throne of Miscellania"
+|[[Throne of Miscellania]]
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|- data-rowid="Watchtower"
+|[[Watchtower]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Own a [[Jagex Account]], or set up the older [[RuneScape Authenticator]]
+|-
+|Access to [[Barbarian Fishing]], [[Barbarian Firemaking|Firemaking]], and [[Barbarian Smithing|Smithing]]
+|-
+|Access to the [[Bones to Peaches]] spell from the [[Mage Training Arena]]
+|-
+|Access to at least one of the three [[god spells]]
+|-
+|Access to the [[Warriors' Guild]] <ref name="warriorsguild"/>
+|-
+|Access to the [[Wilderness God Wars Dungeon]]
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Partial completion of [[Elemental Workshop II]]
+|-
+|Partial completion of [[Olaf's Quest]]
+|-
+|Partial completion of [[Ratcatchers]]
+|-
+|Completion of the [[Knight Waves Training Grounds]]
+|-
+|Defeat the [[Chaos elemental]]
+|-
+|Defeat the [[Crazy archaeologist]], [[Chaos fanatic]], and [[Scorpia]]
+|-
+|Defeat the [[Giant Mole]]
+|-
+|Defeat the [[Kalphite Queen]]
+|-
+|Defeat a [[Ket-Zek]] in the [[TzHaar Fight Cave]] on the 31st wave
+|-
+|Defeat a [[Lizardman shaman#Lizardman Temple|Lizardman Shaman]] in the [[Lizardman Temple]]
+|-
+|Defeat the [[Penance Queen]] and complete [[Barbarian Assault]]
+|-
+|Defeat [[Zulrah]]
+|-
+|Reach 300 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|-
+|Reach 153 [[kudos]] with the [[Varrock Museum]]
+|-
+|Reach 100% [[Tai Bwo Wannai Cleanup]] favour
+|-
+|Acquire a [[prospector helmet]] from the [[Motherlode Mine]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 50
+|AttackNotes = <ref name="warriorsguild">You'll need 130 combined levels in [[Attack]] and [[Strength]], or level 99 in either.</ref>
+|Hitpoints = 70
+|HitpointsNotes = {{boostable|n}}
+|Mining = 85
+|Strength = 76
+|StrengthNotes = <ref name="warriorsguild"/>
+|Agility = 90
+|Smithing = 91
+|Defence = 70
+|DefenceNotes = {{boostable|n}}
+|Herblore = 90
+|Fishing = 96
+|Ranged = 70
+|RangedNotes = {{boostable|n}}
+|Thieving = 91
+|ThievingNotes= {{boostable|n}}
+|Cooking = 95
+|Prayer = 85
+|PrayerNotes = {{boostable|n}}
+|Crafting = 85
+|Firemaking = 85
+|Magic = 96
+|Fletching = 95
+|Woodcutting = 90
+|Runecraft = 91
+|Slayer = 95
+|SlayerNotes = <ref>93 (non-boostable) is required to kill the [[Thermonuclear smoke devil]].</ref>
+|Farming = 91
+|Construction = 78
+|Hunter = 70
+|Sailing = 52
+|SailingNotes = {{boostable|n}}
+|HunterNotes = {{boostable|n}}
+|Combat = 100
+|Quest = {{Globals|quest points}}
+|Total = 1922
+|TotalNotes = <ref name="AllQuests">These skill requirements include the [[Quests#Skill_requirements|required levels]] to complete all quests. [[Ironman Mode|Ironmen]] may need even higher levels due to item requirements in certain quests.</ref>
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|-
+|[[Quests/List|All quests]] <ref name="AllQuests"/>
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Own a [[Jagex Account]], or set up the older [[RuneScape Authenticator]]
+|-
+|Access to [[Barbarian Fishing]], [[Barbarian Firemaking|Firemaking]], [[Barbarian Smithing|Smithing]], and [[Barbarian Herblore|Herblore]]
+|-
+|Access to the [[Bones to Peaches]] spell from the [[Mage Training Arena]]
+|-
+|Access to at least one of the three [[god spells]]
+|-
+|Access to the [[Warriors' Guild]] <ref name="warriorsguild"/>
+|-
+|Access to the [[Wilderness God Wars Dungeon]]
+|-
+|Completion of the [[Chambers of Xeric]]
+|-
+|Completion of the [[Knight Waves Training Grounds]]
+|-
+|Completion of the [[TzHaar Fight Cave]]
+|-
+|Defeat [[Callisto]] or [[Artio]], [[Venenatis]] or [[Spindel]], and [[Vet'ion]] or [[Calvar'ion]]
+|-
+|Defeat the [[Chaos elemental]]
+|-
+|Defeat the [[Crazy archaeologist]], [[Chaos fanatic]], and [[Scorpia]]
+|-
+|Defeat each of the [[Dagannoth Kings]]
+|-
+|Defeat the [[Giant Mole]]
+|-
+|Defeat all [[God_Wars_Dungeon#Generals|God Wars Dungeon generals]], except [[Nex]]
+|-
+|Defeat a [[Hydra]] in the [[Karuulm Slayer Dungeon]]
+|-
+|Defeat the [[Kalphite Queen]] and obtain her ([[Kq head (tattered)|tattered]]) [[Kq head|head]]
+|-
+|Defeat a [[Lizardman shaman#Lizardman Temple|Lizardman Shaman]] in the [[Lizardman Temple]]
+|-
+|Defeat the [[Penance Queen]] and acquire [[Barbarian_Assault#Rewards|level 5]] in all [[Barbarian Assault]] roles
+|-
+|Defeat [[Skotizo]]
+|-
+|Defeat the [[Thermonuclear smoke devil]]
+|-
+|Defeat [[Zulrah]]
+|-
+|Open the [[Chest (Barrows)|Barrows chest]] while wearing a full [[Barrows equipment|Barrows set]]
+|-
+|Open the [[Grand Gold Chest]] in the final room of [[Pyramid Plunder]]
+|-
+|Reach 1,000 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|-
+|Reach 153 [[kudos]] with the [[Varrock Museum]]
+|-
+|Reach 800,000 [[Nightmare Zone]] points (or 400,000 with the [[Combat_Achievements/Hard|hard tier]] of the [[Combat Achievements]])
+|-
+|Reach 100% [[Tai Bwo Wannai Cleanup]] favour
+|-
+|Reach the rank of [[White Knights#Knight rankings|White Knight Master]]
+|-
+|Acquire a [[prospector helmet]] from the [[Motherlode Mine]]
+|-
+|Acquire and wear any complete [[Void Knight equipment|void set]]
+|}
+|}
+{{Reflist}}
+
+|-|
+</tabber>

@@ -1,0 +1,96 @@
+==Controls==
+[[File:Controls options interface.png|thumb|right|The controls settings.]]
+===Control Options===
+{| class="wikitable" style="width:800px"
+!Setting
+!Function
+|-
+|Player Trade options
+|Choose whether the "Trade" [[Choose Option|option]] will be shown on players, if available. Enabled by default.
+|-
+|Player Report options
+|Choose whether the "Report" option will be shown on players, if available. Enabled by default.
+|-
+|Player/NPC attack options
+|Choose whether the first option on an NPC or player is "Attack". There are two separate settings, one for players and the other for NPCs.
+* '''Depends on combat levels''' - This is the default setting. If a monster's combat level is equal to or lower than yours, the first option will be "Attack". If it is higher, the first option will be "Walk here".
+* '''Left-click where available''' - This setting causes "Attack" to be the first option on every player or NPC.
+* '''Always right-click''' - This setting causes "Walk here" to be the first option on every player or NPC.
+* '''Hidden''' - This setting will cause the attack option to be omitted from right-clicking players or NPCs.
+* '''Right-click for clanmates''' - Click through clanmates.
+|-
+|PK Skull Prevention
+|When enabled, you will be prevented from attacking players in any way that would cause you to become [[Skull (status)|skull]]ed.
+|-
+|Single mouse button mode
+|Choose whether the mouse uses one or two buttons. If disabled, right-clicking will show a list of options and left-clicking will automatically choose the first option. If enabled, left-clicking will show the list instead.
+|-
+|Middle mouse button controls the camera
+|Choose whether the middle mouse button can be used to control the in-game camera.
+|-
+|Shift click to drop items
+|Choose whether holding the {{Key press|Shift}} key and left-clicking the mouse will drop an item from the inventory or not.
+|-
+|Anti Drag
+|([[Steam client]]s only) When enabled, disabled dragging items in inventory based on Anti Drag settings.
+|-
+|Anti Drag - Delay
+|([[Steam client]]s only) Can enter delay, in milliseconds, between dragging an item in the inventory and when it will actually start being dragged. Useful for preventing accidental drags. Value will be rounded to the nearest 20ms (max 5000).
+|-
+|Anti Drag - Enable Key
+|([[Steam client]]s only) When set, only disabled dragging in inventory while the key is held down. If no key is set, Anti Drag will always be on. Can choose between Always On, {{Key press|Shift}}, and {{Key press|Ctrl}}.
+|-
+|Anti Drag - Disable Key
+|([[Steam client]]s only) When set, enables dragging in inventory while the key is held down if Anti Drag is active. Can choose between None, {{Key press|Shift}}, and {{Key press|Ctrl}}.
+|-
+|Move follower options lower down
+|Choose whether the interacting options on a pet are all moved down to "Walk here" or not, preventing players from misclicking their pets when doing activities.
+|-
+|Ctrl+click to invert run mode
+|Set whether holding {{Key press|Ctrl}} when clicking to walk or interact will temporarily invert your selected run mode.
+|-
+|Show the function button
+|([[Mobile client]]s only) Choose whether the function button appears above Combat Options button to the left side of screen.
+|-
+|Select function-mode
+|([[Mobile client]]s only) Choose which 'function' the function button would be operating when active. 
+* '''Tap-to-drop''' for insta-dropping items in the [[inventory]] when tapped on.
+* '''Single-tap''' for bringing up the long-tap options in a quick tap, similar to Right-clicking on Desktop clients.
+* '''Keyboard''' for bringing up the keyboard, via tapping the function button, particularly for when chatbox is closed.
+|-
+|Deadzone adjuster
+|([[Mobile client]]s only) A slider that adjusts how far sidebar buttons are away from the edge of the device's screen.
+|-
+|Minimenu long-press time
+|([[Mobile client]]s only) A slider that adjusts, in milliseconds, the time it would take to open the minimenu when long-pressing.
+|-
+|Vibrate on interaction
+|([[Mobile client]]s only) When enabled, your device will vibrate when you perform any non-interface interaction (except Walk-here).
+|-
+|Vibrate on drag
+|([[Mobile client]]s only) When enabled, your device will vibrate when you begin dragging something in an interface.
+|-
+|Vibrate when minimenu opens
+|([[Mobile client]]s only) When enabled, your device will vibrate when the minimenu opens.
+|-
+|Vibrate on hovering over minimenu entries
+|([[Mobile client]]s only) When enabled, your device will vibrate when you hover over the different minimenu entries.
+|}
+
+===Keybinds===
+[[File:Keybinding interface.png|thumb|300px|The Keybinding interface.]]
+The Keybinds settings allows players can choose which F-keys will take the player to a certain side-panel.
+
+{| class="wikitable" style="width:800px"
+!Setting
+!Function
+|-
+|Modern Layout - Side panel can be closed by the hotkeys
+|When enabled, pressing the hotkey assigned to an already open side panel will close it.
+|-
+|Esc closes the current interface
+|When enabled, the escape key will close your active interface.
+|-
+|World Map Hotkey
+|Allows the [[world map]] to be opened by pressing {{keypress|Ctrl|M}}
+|}
