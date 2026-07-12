@@ -323,3 +323,10 @@ server** — simulating the client state for any progression point — never by 
 scenarios on a live account (slow, risky, one-shot capture). The plugin lane (Lane 4+)
 gates its rendering work on this harness. Live client stays untouched per the standing
 hard rules.
+
+Where the wiki has no page/datum for a viewport-level specific (exact widget layout,
+option text position, what actually renders at a given state), the simulated client is
+the **authoritative capture channel**: deterministic, reproducible, on-demand extraction
+of literal game specifics from the viewport — never happenstance screencaps, never
+guessing past a wiki gap. Source-of-truth order: wiki page (cited) → cache data (by id)
+→ simulated-viewport capture (recorded with the state that produced it).
