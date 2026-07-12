@@ -1,0 +1,98 @@
+# DESIGN-RETRO — reasoning wave (compact retro block per agent at finale)
+
+## background retro
+**Load-bearing decision**: background tasks are injected as `{_bg: true}` nodes BETWEEN foreground steps, never replacing them; cadence interrupts are non-blocking annotations when no break window exists. This preserves greedy's ordering invariant.
+**New primitives required**: `bg{}` descriptor on step nodes; `backgroundTask`/`cadenceMinutes`/`lifecycleState` on GuideStep; `weaveBackground()` post-pass in greedy.js; `_bg_step()` in enrich.py.
+**Deliberately left to synthesizer**: (1) shared "break" tag definition across all facets; (2) `est_minutes` field on steps (needed by background + likely others); (3) inventory budget arbitration when bg injects mid-slayer; (4) courier task cadence (speculative — must measure live).
+**Synthesizer MUST NOT MISS**: agility marks are yield annotations, NOT background tasks (pattern 6 embed, not cadence loop); kitten feeding is annotation-only, not a hard interrupt; slayer-seed hook wires pattern 8 into pattern 4 at planner level — this virtuous cycle is the heart of mid-game self-sufficiency; supply_threshold_jit is the bridge from ahead-of-time scheduling to JIT escalation (402:138 bias in data reflects this asymmetry).
+
+## steer retro
+**Load-bearing decision:** anchor_weight float (0–1) on each steer-point drives whether it
+becomes a hard phase boundary (>= 0.8), soft boundary (0.5–0.79), or inline waypoint (<0.5).
+This single scalar keeps the phase-count manageable without hard-coding every diary/unlock.
+Ardougne Easy Diary gets anchor_weight 1.0 — the canonical pattern-12 anchor from retros.
+
+**Deliberately left to synthesizer:**
+- Whether steer_points.jsonl is a separate file or an extension of goals.jsonl (OQ-1).
+- VARBIT/VARPLAYER condition type for access-unlock auto-detection (OQ-2).
+- STEER_HARD_THRESHOLD constant publication shared with interleave facet (OQ-3).
+- Recurring-loop lifecycle representation (birdhouses, herb runs) — steer marks recurring:true; interleave facet owns the cadence steps (OQ-4).
+
+**Synthesizer MUST NOT miss:**
+- steer_id foreign key on steps.jsonl nodes is the ONLY link from planner steps to steer-points; if omitted, phased_steps_with_steer() cannot group steps by steer intent.
+- supply_infra steer-points depend on supply facet step definitions; synthesizer must reconcile so neither facet double-defines the underlying steps.
+- pet-drop steer-points have anchor_weight 0.0 — they must appear in catalog (completeness) but never emit as phase boundaries.
+
+## sequencer retro
+**Load-bearing decision:** Keep background/passive steps entirely out of the greedy heap;
+inject them post-hoc via injectSlots(). Mixing them into the heap would let them consume
+priority slots away from goal-critical steps and corrupt the greedy's cost ordering.
+**Deliberately left to synthesizer:**
+- Authoring the background step bank (herb runs, birdhouses, seaweed) — sequencer only models
+  the slot schema; content is supply-chain facet's domain.
+- RECURRING completionCondition type in GuideStep — render facet must implement the timer.
+- Phase-naming registry — four facets will emit phase strings; need a shared contract.
+- AVG_STEP_MIN calibration — all background cadence timing is placeholder until measured.
+**Synthesizer MUST NOT MISS:**
+- OQ-5: hub_batches must run before topo_order, not after, to avoid dep-order violations.
+- OQ-4: deferred_until conflicts with supply-chain demand — needs explicit priority rule.
+- The `RECURRING` condition type lands between sequencer and render; assign it explicitly.
+
+## burndown retro
+**Load-bearing decision**: Items are NOT separate entities — they are edge weights on
+step→step dependency arcs. The `produces/consumes` fields on steps.jsonl encode supply
+chains without a new data tier. This keeps greedy.js extensible without a schema overhaul.
+
+**Resolution algorithm key move**: Cycle detection via VISITED set + bootstrap break.
+The herblore/herb-farming cycle is the canonical example; resolved by emitting a
+one-time low-tier gather before the loop is established. This is a general pattern for
+all self-feeding supply chains.
+
+**Left to synthesizer**: (1) Rate placeholders — decide config-file vs inline tooltip.
+(2) Background loop slot assignment — the interleaving facet must define the contract
+with loop:true steps. (3) Priority order for authoring the 28 stub coarse expansions.
+(4) Confirm Catherby charter pineapple source is still valid in current game.
+
+**Synthesizer MUST NOT MISS**:
+- RFD Pirate Pete is minigame-locked — no supply staging, breaks the general pattern.
+- The `reqs.items` goal field must not silently fail in greedy.js before burndown.js wires in.
+- Bootstrap gather steps (one-time, pre-loop) must be ordered BEFORE loop setup in topo_order.
+- Stew RNG steps need explicit player-facing rate uncertainty — do NOT fabricate attempt counts.
+
+## synthesis retro
+**The model in one paragraph**: A progression is a requisite burndown interleaved by one
+pipeline: burndown.js resolves goal item/quest reqs into gathered/produced roots (item math
+internal, bridged to greedy as tags + a demandSet); greedy routes ACTIVE steps only
+(slot-typed background/passive excluded; deferred_until holds breakpoint-trained skills
+unless demandSet overrides — hard requisites beat soft deferrals); weaveOverlays injects
+background setups/cadence chips/passive badges/alternation markers as _anchor-pinned nodes;
+enrich hub-batches BEFORE topo (topo is the dep guard), places supply steps by timing,
+re-pins overlays, and phases everything on steer-point anchors (anchor_weight >=0.8 hard),
+with phase_name() the sole author of phase strings and all unknown rates "??"/tuning
+placeholders.
+**Riskiest reconciliation**: S6 — routing item quantities around greedy entirely (tag-bridge
++ demandSet instead of numeric item state), because coalesce is max-semantics and reqs.items
+is silently ignored today; if the tag-bridge under-specifies quantities, plans pass greedy
+yet under-supply the goal — burndown.js execution-count math is the only guard.
+**FIRST lane**: Lane 1 — steer_points.jsonl (6 nodes) + steer_id on ~8 steps +
+bg-farm-allotment row + new overlay.js/tuning.js + 3-line greedy bank split + enrich
+phase_name()/steer emitters; web view shows steer phases + bg chips; zero Java churn.
+
+## lane1 retro
+landed:
+- steer_points.jsonl (6 nodes: fairy-rings/graceful/birdhouses/ultracompost/ardougne-easy-diary/nieve)
+- steps.jsonl: steer_id on 8 steps (4 agility, 2 quest/fishing/cooking) + bg-farm-allotment row (slot/produces/slot schema)
+- goals.jsonl: barrows.steer_points = [steer-graceful, steer-ardougne-easy-diary]
+- tuning.js: DEFAULT_STEP_MIN/STEER_HARD_THRESHOLD/STEER_SOFT_THRESHOLD
+- overlay.js: isBreak() + weaveOverlays() minimal — setup at first break, cadence chips if cadence_min set
+- greedy.js: P2 bank split, S6 sanitize shim, P4 weaveOverlays call; pipeline comment header
+- enrich.py: TUNING dict, phase_name() registry, P5 detach / P9 re-attach, phased_steps_with_steer (hard anchors only), _steer_step + _bg_step emitters, steer_points.jsonl loader
+- plan-multi.mjs: steer_points threaded into covered.goals entries
+result: route-p2p.json — 7 phases (2 steer-anchored), 1 bg chip, 54 steps; route-corpus.json additive-only (0 removed lines)
+stubbed for Lane 2+:
+- soft anchors (0.5–0.79), waypoints (<0.5) — Lane 3
+- hub_batches, deferred_until, passive embeds, alternation — Lane 3
+- burndown.js / supply chain resolution — Lane 2
+- plugin RECURRING condition, lifecycleState persistence, loops-lane panel — Lane 4
+- full bg step bank (herb-run, birdhouses etc.), steer catalog expansion — Lane 5
+integrator must redeploy: rebuild runelite-guide-chain with updated fixture files (route-p2p.json, route-corpus.json)

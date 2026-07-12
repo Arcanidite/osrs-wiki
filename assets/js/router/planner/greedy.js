@@ -2,8 +2,13 @@
 // verbatim from the monolith). Pure and DOM-free: all context arrives via
 // `env` — { graph, constraints, pinnedExclusions, manualQuestDone, now }.
 // `now` exists so tests can generate deterministic synthetic-step ids.
+//
+// Pipeline (S7): load → burndownResolve → bank-split → routeMulti(greedy) →
+//   weaveOverlays ‖ detach-overlays → hub_batches → topo_order →
+//   insert_supply_steps → re-attach → phased_steps_with_steer → emit
 
 import { normalizeReqs, reqQuals, toState, fromState, reqsSummary, syncQualEdges } from "../model.js";
+import { weaveOverlays } from "./overlay.js";
 
 class MinHeap {
   constructor() { this._h = []; }
@@ -195,9 +200,22 @@ export function routeMulti(goals, steps, profile, env) {
   const excluded      = profile.excludeRegions ?? [];
   let freeSlots       = 28;
 
-  return goals.flatMap((goal) => {
+  // P2 bank split — exclude slot-typed steps (background/passive) from the greedy heap;
+  // they are woven back in by weaveOverlays (P4) after routing.
+  const activeSteps  = steps.filter((s) => !s.slot || s.slot.type === "alternation");
+  const overlaySteps = steps.filter((s) => s.slot && s.slot.type !== "alternation");
+
+  // S6 sanitize shim — strip reqs.items/reqs.quests before greedy so nothing
+  // half-fires; burndown.js (Lane 2+) owns item/quest resolution and rewrites
+  // them into reqs.tags before greedy sees them.
+  const sanitizedGoals = goals.map((g) => {
+    const { items: _i, quests: _q, ...reqs } = g.reqs ?? {};
+    return { ...g, reqs };
+  });
+
+  const path = sanitizedGoals.flatMap((goal) => {
     const skillsAtGoalStart = { ...skills };
-    const r = routeGoal(env, steps, profile, goal, skills, completedIds, completedQuests, excluded, freeSlots);
+    const r = routeGoal(env, activeSteps, profile, goal, skills, completedIds, completedQuests, excluded, freeSlots);
     skills          = r.skills;
     completedIds    = r.completedIds;
     completedQuests = r.completedQuests;
@@ -222,4 +240,7 @@ export function routeMulti(goals, steps, profile, env) {
     };
     return [...filled, capstone];
   });
+
+  // P4 weaveOverlays — inject background/passive overlay steps at break anchors.
+  return weaveOverlays(path, overlaySteps, { ...env, profile });
 }

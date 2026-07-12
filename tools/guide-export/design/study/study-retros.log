@@ -1,0 +1,149 @@
+# RETRO LOG — guide-study fan-out (each agent appends a compact retro block at finale)
+
+## hints-tips retro
+**Stage:** Stub/placeholder. No usable progression framework.
+**Pattern:** Documents farming micro-optimizations (Leprechaun note, patch protection) but omits the critical interleaving + requisite-cascade model needed for burndown sequencing.
+**Hard:** Guide is explicitly incomplete; cannot extract implied ordering or interconnections.
+**Must not miss:** This is a mechanics reference, NOT a sequencer. Next-tier agents must either:
+  1. Flesh out this guide with full farm-run scheduling + quest/skill/diary sequencing + gear tiers, OR
+  2. Treat linked guides (New player, skill training, achievement diaries) as the primary sources and use this only for farming micro-optimizations.
+**Coarse requisites flagged for unwinding:** farm-run loops, full progression sequencing, Leprechaun unlock conditions.
+
+## mootrius-farming retro
+
+**Patterns for burndown model:**
+- Quest-acceleration is a lever: 4 quests → 35 Farming faster than grinding (hrs vs days); skip tedium entirely.
+- Slayer passive-feeds farming: herb seeds are Slayer byproducts, NOT separate activity; interleave Slayer + farm waits.
+- Compost infrastructure gates scaling: ultracompost mandatory, Bone Voyage unlocks Fossil Island ash, pineapples pre-stocked; 3-item supply chain.
+- 90min herb cycle cadence: fixed anchor for parallel activity queuing (Slayer, quests, Herblore training during waits).
+
+**Hard parts:**
+- Guide WIP; lacks granular patch locations, herb-by-level roadmap, Herblore consumption strategy.
+- Compost production complexity (pineapple stockpile + ash mining + bin decay timing) not deeply explored.
+
+**Next-tier must-know:**
+- Slayer is NOT optional; herb seed feed is the farming supply loop (no GE buying).
+- Ultracompost is a hard steer-point, not nice-to-have; gates from low-yield to sustainable cycling.
+- Patch network (5 allotments?) enables batch-parallel: plant all, wait 90min, harvest all, restart.
+## speedrun retro
+Guide reveals Quest Points as primary progression metric (not level-gated), with 12 QP and 32 QP as steer checkpoints. Interleaving wisdom: weight↔energy trade-off during travel; banking cycles queue next quest items; dialogue advances during motion (hold spacebar). Adaptive routing philosophy ("happy accidents") implies on-the-fly pivots vs. rigid sequences. RNG variance in Camo Top% (5 min to 88 days) indicates event-spawn mechanics. Critical gap: guide is meta-layer only; full route guides (linked but not fetched) contain quest order + item sourcing. Downstream agents MUST unwinding coarse bullets: "early F2P quest chain" and per-quest item gathering. No group activities, no GE usage, no pre-gathered supply batches detected — likely all JIT. Ironman + F2P constraints are hard access gates, not soft preferences.
+
+## afk-skilling retro
+
+**Pattern:** AFK methods are efficiency-ranked by XP/hour within skill, with hard AFK window caps (5–30 min). No quest/diary/gear sequencing.
+
+**Contribution:** Establishes AFK efficiency as a dominant steer point. Methods assume mid-progression players with stockpiled gear & supplies. Self-sufficient burndown must INVERT: gather supplies & unlock quests/diaries FIRST, then use AFK methods as passive training for bottleneck skills.
+
+**Hard blockers found:** Quest chains (Lunar Diplomacy, NMZ unlocks), diary gates, region access, gear progression tiers, and supply loops (rune/log/fish sourcing) are entirely coarse or implicit. Downstream agents must unwind 6+ coarse requisites into granular gather/craft/quest steps.
+
+**Key insight:** AFK efficiency table is a CONSUMPTION perspective; burndown planner needs PRODUCTION perspective (what can I gather/craft while waiting for gates?). Interleaving wisdom missing.
+
+**Next tier must:** Map quest prerequisites for each method, branch diary routing, detail gear crafting/drop paths, and schedule background supply loops (farm runs, fishing, runecrafting) that feed into AFK methods.
+
+## mootrius-slayer retro
+**Pattern contribution**: Master-level gating (Mazchna→Nieve→Duradel by combat level) + Slayer Point unlock sequencing as progression spine.
+Turael-skip loop (1–9 + 10th reset) is a meta-pattern for task curation; enables "do unwanted tasks never" strategy without point waste.
+Interleaving wisdom strong: quest gating (Fairytale I, Client of Kourend) enables fast travel infrastructure; Bigger/Badder + Slayer Helmet phase transitions are clear steer points.
+Supply chain uses slayer drops (herb, ammo, armor) as primary source; construction teleports as JIT infrastructure.
+**Hard to extract**: Gear progression from "looted" is under-specified (which pieces at which level); supply prep cadence (when to batch farm/brew) not tied to task windows.
+**Next-tier reasoning must unwind**: 3 coarse requisites (base gear, superior gear, herb workflow); turael-skip loop into granular click sequence; Slayer Point earning rate early game.
+**Key insight**: Slayer master level-gating is ironman-viable progression axis; unlike generic "train skill to N", this interleaves quest access + unlock timing + supply self-sufficiency into one spine.
+
+## completionism retro
+
+**Pattern:** Completionism guide provides TWO orthogonal paths (maxing all 99s vs. quest cape thresholds) with FOUR gear progression stages, but is purely a CHECKLIST — no interleaving, no prep sequencing, no self-sufficiency strategy, no background activity cadence.
+
+**Contribution:** Defines steer points (skill levels, gear tiers) but omits the OPERATIONAL wisdom (when to pause, what to batch, how to resource-manage). Next agents must invent the sequencing.
+
+**Hard:** Guide is incomplete — may be an early draft or placeholder. Extracting "what's NOT there" is harder than extracting "what is" (fabrication risk).
+
+**MUST-NOT-MISS:** Coarse items marked for unwinding: interleaving strategy, supply chain self-sufficiency, specific gear tier contents, quest chain ordering. These are CRITICAL for real progression but ABSENT from source. Downstream burndown agents depend on this gap being flagged.
+
+## melee-gear retro
+
+**Pattern contribution**: Melee progression encodes PARALLEL specialization tracks (slash/crush/stab) that branch late-game (90+). Quest gate (RfD @ pre-60s) is non-negotiable and serializes early→mid. Slayer backbone at 85 is psychological inflection + mechanical whip unlock. Consumable drains (Zulrah scales 116k/hr, Revenant ether 264k/hr) introduce RECURRING maintenance loops, not one-time costs—changes JIT vs ahead-of-time tradeoffs.
+
+**Hard**: Guide is cost-efficiency focused (stat-per-gp tables) but lacks farming mechanics, access requirements, rate breakdowns. Many sources flagged coarse: Barrows dungeon full mechanics, Tombs of Amascut entry/reqs, Raids (CoX/T4) splits, Warriors' Guild defence grind entry, Wilderness Revenant anti-PK mechanics.
+
+**Agents must not miss**: (1) RfD is hard prerequisite serialization; (2) Slayer 85 whip is inflection decision point; (3) Late-game weapon specialization (slash/crush/stab) choice compounds into raid/boss type locks—must know player's PvM target before optimizing; (4) Consumable drain is ongoing, not delta—need batched farming or JIT sourcing strategy; (5) 30 requisites, 10 flagged coarse—downstream must unwind access gates (Warriors' Guild, Barrows, Tombs, Raids entry + mechanics), farming rates (Zulrah/Kraken/Revenant), and production chains for rare GWD2/raid armor pieces.
+
+## clog-skilling retro
+
+**Pattern contribution**: SKILL-CENTRIC parallelizable progression, NOT temporal-phase driven. Steer-points are multi-dimensional: skill level + collection log % + pet drop + gear-unlock cascades. Activities are largely solo but batch via group minigames (Tempoross, Wintertodt, Guardians of the Rift). Distinct from quest-chain or episode-based guides.
+
+**Gear-unlock dependencies**: Collection log item drops (outfit, tools, cosmetics) unlock speed/efficiency bonuses; these create soft implicit gates (e.g., carpenter outfit → faster Mahogany Homes → cascades into construction unlock for other activities). Must map these in requisites.
+
+**Minigame interleaving**: Group minigames (Tempoross, Wintertodt, GotR) reward both XP and supply drops; can be batched in sessions; supply chains differ (e.g., Tempoross rewards fishing supplies JIT). Flag supply sourcing as coarse for unwinding.
+
+**What was hard**: Guide is summary-only; individual activity pages needed for quest/level/gear/region gates. No explicit sequencing heuristic. Pet drop rates inferred, not stated. Combat-activities (Zalcano, Magic Training Arena) muddy "no-combat" framing.
+
+**Next agents MUST**: (1) Drill each activity: prerequisites (quest, level, gear), supply costs, regional access. (2) Map gear-unlock → speed bonus cascades. (3) Batch minigame sessions with supply replenishment JIT. (4) Treat collection log % completion, not skill 99, as primary steer-point. (5) Don't force pet-grinding; accept as passive milestone.
+
+## mootrius-im retro
+
+**Pattern contribution:** Mootrius encodes a robust **3-system foundation model** (money→prayer→food) that gates all downstream combat. This is a recurring micro-pattern in progressive guides: solve supply problems BEFORE scaling demand. The guide also strongly emphasizes **interleaving active + AFK grinds** as a fatigue mitigation heuristic, with explicit guidance to "read ahead and find alternation slots"—this is actionable sequencing wisdom, not just a suggestion.
+
+**Key design moves:** Passive resource setup (birdhouses, seaweed) happens mid-progression (Phase 7), not at start—it's sequenced after Kudos are "already accumulating" from prior quests. This reflects dependency-driven ordering: prerequisites are naturally satisfied before unlocks are claimed. Slayer 58 used as primary combat delivery (multi-task: XP + drops), not isolated grinding.
+
+**Harder aspects:** Morytania Hard Diary is a large quest + skill gate that "deliberately follows farming setup." The guide doesn't granularly break down how quest chains interlock (e.g., which RfD subs come first, why). This is flagged as "coarse" in requisites; downstream agents must unwind.
+
+**Next-tier reasoning must not miss:** 
+- Alternation slots must be discoverable in the burndown sequencer (active vs. passive, main task vs. background).
+- Passive activities (birdhouses, herb runs) are fire-and-forget but need lifecycle tracking (when seeds run out, when nest stockpile hits threshold).
+- Supply-chain prerequisites (Rogue's outfit unlocks H.A.M. scaling) often unlock efficiency tiers; mark as such.
+- "Fun & efficiency" preamble suggests this is a flexible skeleton, not a rigid plan—OK to deviate for engagement.
+
+## bossing-ladder retro
+Pattern: Tier-gated progression with stat breakpoints + quest-chain unlocks drives sequencing. Key insight — prayer is a BACKSTITCH: prepare ahead-of-time via dragon bones (slayer), not JIT. Interleaving: slayer tasks run alongside boss tiers to sustain Zenyte shards + food supply; batching quest chains (MM, DT, RFD) compresses wasted travel. Gear is NOT chased; it's earned via the tier itself (Barrows pieces accumulate, Zenyte from slayer, BiS from raids). Hard to unwind: multi-step supply chains (farm → ranarr → potion), multi-quest dependencies (Song of Elves cascades to Prifddinas vendor), gear upgrade timing (when does Barrows→mid-tier swap make sense?). Next-tier reasoning must unwind 3 coarse bullets and integrate slayer-alongside-boss model with supply projections.
+## zeah-locked retro
+Zeah Locked demonstrates INTERLEAVED GATHERING + SKILLING with REPEATABLE background loops: Hunter pairs with meat-gathering in shared zones; Herblore unlocks post-quest then chains to Grubby farming (just-in-time supply). Key innovation: dual respawn gates (Civitas via Colosseum vs Kourend Castle via quests) allow self-paced progression. CRITICAL for next-tier agents: (1) Creature spawn zones MUST overlap with Hunter zones for true parallelization—guide assumes this implicitly. (2) Herblore secondary ingredients (ashes, saltpetre) are not detailed; gear production chain is coarse and needs recipe/level/source unwinding. (3) Grubby Chest as potion supply is repeatable/background but timing assumes low early-game need. (4) Courier Tasks loop cadence (~10-15 min) is speculative; agents must measure actual tick rates. (5) Agility marks farming is genuinely background but Amylase conversion (100 Termites → 1 pack) is a gating bottleneck if Termite supply is sparse—not flagged in guide. NO F2P/P2P split maintained; all progression treated as Zeah-continuous.
+## multiquest-f2p retro
+This guide exemplifies quest-skill interleaving under regional constraint: 24 quests layered across 7 phases, stalling on skill unlocks (Magic 8, Smithing 29) and material pre-prep (23 bones, 4 beads). Key pattern: clustering minimizes travel (Draynor 2-quest, Varrock hub 4-quest), background loops (bone farming, ore mining) run ahead-of-time to compress final throughput. Gear progression is gated, not fluid (Bronze → Iron quest-blocked → Rune skill-XP-blocked), creating natural training breakpoints. CRITICAL: Off-guide Magic 10→33 + Prayer 11→37 training is MANDATORY and must be scheduled before Dragon Slayer I or the entire burndown fails at final boss. Regional unlocks are implicit (Shantay Pass post–Below Ice Mountain = Port Sarim jail access). Ironman variant lacks third-path beads source; must imp-hunt or spend gp equivalent. Coarse granularity: many bullets need downstream unwinding (e.g., "combat training", "Magic training" lack per-meal click counts). Next-tier agents must NOT assume magic/prayer grinding happens organically; front-load into burndown calendar. F2P/P2P continuum: this is terminal F2P (44 QP), not midpoint — gates onto P2P planning with rune-armor prerequisite.
+
+## multiquest-im retro
+
+**Pattern Contribution:** Region-hub-organized JIT purchasing model. Multiquest interleaving via location clustering (Ardougne 6-quest sequential, Varrock 9-quest concurrent); no background farm/production cadence mentioned. Suggests multiquest is SHORT-DURATION phase or grinding pre-done elsewhere.
+
+**Interleaving Insight:** Quest gating used strategically (Biohazard pauses for Prince Ali mould, Knight's Sword in 5 stages across 40+ steps). Multi-phase quests resume explicitly per phase; coordination is implicit in hub grouping, not step-by-step.
+
+**Self-Sufficiency:** 95% NPC-purchased (10+ purchase points); ~5% gathered (mining 22 ore, chopping 3 logs, picking herbs). Coin-gated model: single 14.7k generation event, rest assumed banked. No repeat farming or production loops.
+
+**Steer Points:** Minigame network unlocks > Spirit tree hub > Skill gates (Prayer 1k, Magic 33). Gear tiers: steel→adamant→anti-dragon. Most critical: gear time-gating (Dragon Slayer I unlocks anti-dragon shield, end-of-guide blocker).
+
+**Hard Problem:** Quest ordering within hubs is implicit; 9 Varrock quests need sequencing rules (dependencies, inventory constraints). Guide relies on wiki links for detail. Coarse bullets everywhere (bank patterns, quest mechanics, multi-phase quest continuation).
+
+**Downstream Unwinding:** Requisites flagged 4 major coarse items requiring granular expansion: banking, quest routing, multi-phase sequencing, inventory patterns. Next-tier agents must decompose these into sub-step checklist per hub.
+
+## xerxes-f2p retro
+
+**Core pattern:** Zero-time XP embedding (alchemy during Smithing, Prayer burial during Melee, Magic during Firemaking loops) is the spine of F2P efficiency. Self-sufficiency constraint (no GE buying) forces deep interleaving: fishing for food, woodcutting for fuel, giants for bones. Steer points are mixed: levels + quests + gear-tiers + activity gates (clues, giants, Forestry). 
+
+**Skill ordering matters exponentially more than leveling rate.** Early gates (Magic 25 teleports, Cooking 35 wines) unlock downstream acceleration; Dragon Slayer I forces early Defense 40 investment but pays dividends across all melee-family skills. Tick manipulation (snow globe gates 2-tick/3-tick) is optional but high-value acceleration.
+
+**Hard:** Mapping interleaving wisdom + gear tier progression (uses quest/level/event gates, not just levels). **Agents must not miss:** F2P resource constraint fundamentally rewires progression order; zero-time embedding is not optional; AFK/high-focus phase rotation is intentional design, not afterthought; collection log replaces built-in F2P tracker (verification steer point).
+
+## dunkingoreos-early retro
+
+**Pattern Contribution:**
+This guide exemplifies a **consequential-ordering, prerequisite-cascade model**. Phase 1 is purely gating (unlocks travel hubs, caches supplies). Phase 2–4 are preparation-layer activities (minigames yield supplies; skill grinds unlock access). Phase 5 is consolidation (quest chains leverage all prior infrastructure). Critical insight: Ardougne Easy Diary (Step 32) is not a goal but an **anchor point**—all subsequent phases collapse efficiency around it.
+
+**Key Interleaving Patterns:**
+1. **Passive background tasks** (kitten maturation, farming cadence, birdhouse runs) run *during* active grinds; no real-time cost.
+2. **Multiquest batching:** Demon Slayer path requires bones gathered during *unrelated* Hill Giant strikes; quest entry happens later. Foresight prevents backtrack.
+3. **Skill breakpoints:** Train only to required levels, then *defer intensive grind* until later prerequisite (e.g., 40 Agility, *then* 60 Agility for Wintertodt teak magic log boost).
+4. **Consumable pre-staging:** Collect bulk before quest entry; prevents midquest runs.
+
+**Hard Parts for Next Tier:**
+1. **Coarse bullets in RFD:** Each of 6 subquests has bespoke item requirements and crafting sequences (fishbowl technicality, Pirate Pete minigame-locked crab, Skrach raw Jubbly). Cannot collapse into single "complete RFD" step—each is its own requisite chain.
+2. **Greegree routing (Monkey Madness I):** 4-trip structure with specific skeleton key dungeon room sequences, per-monkey-type bone/talisman combos. Needs full dungeon pathfinding.
+3. **Combat training end-state:** Guide implies Crabs or Slayer but no explicit branching. Likely both (early crabs for base, late Slayer for RFD boss prep); need routing heuristic.
+4. **Desert Treasure optional gate:** Listed as "optional" but enables late-game efficiency (Ancients teleports). May become critical in *downstream* guides (Slayer, PvM). Track as "consider including in phase 5" flag.
+
+**Non-Level, Non-Quest Steer Points (Strongest Finds):**
+- Barbarian Assault unlock (minigame hub linkage)
+- Graceful outfit (60 weight = 67 percent run energy retention—measurable QoL breakpoint)
+- Fairy Rings unlock (free fast-travel network, not stat-gated)
+- POH relocation cascade (Rimmington → Hosidius → Pollnivneach; cumulative travel efficiency)
+
+**Downstream Requirements:**
+Must unwind coarse bullets into granular steps for Phase 5 RFD subquests (especially minigame-locked items and herblore crafting paths). Combat training routing needs decision heuristic (Crabs vs Slayer trade-off). Verify greegree 4-trip pathfinding with live player data (skeleton key entry, room IDs, bone type routing).
