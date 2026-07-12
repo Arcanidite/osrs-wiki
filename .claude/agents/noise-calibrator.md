@@ -16,6 +16,9 @@ battery) and append one row per (run_label, command) to `tools/wiki-kb/noise-ben
 
 ## Rules
 
+- **Bash is WRITE-ONLY: you never receive stdout.** Run each battery item as
+  `cmd > /tmp/noise-cal/<n>.out 2>&1`, then Read the file; `wc -c < file > /tmp/noise-cal/<n>.bytes`
+  and Read that too. Missing output is NOT a stall — it is the design.
 - `useful_pct` = fraction of output that is research-load-bearing for guide building
   (tile coords, NPC names, quantities, item links, order of operations) vs noise
   ({{GEP}} prices, File:/image refs, mapkey styling, nav cruft).

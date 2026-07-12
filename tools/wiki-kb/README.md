@@ -5,21 +5,29 @@ from memory — every item/npc/quest/coordinate cites a wiki page that has been
 fetched into this KB. `wikicli` is the only sanctioned access path (MediaWiki API
 wikitext — never HTML scraping; ~10× less token noise than page HTML).
 
-## Agent quickstart
+## Agent quickstart — Bash is WRITE-ONLY for you
+
+You do NOT get stdout back from Bash — ever. It is not stalling; it is not supposed to
+return output. **Redirect every command to a file, then use the Read tool on that file:**
 
 ```bash
 CLI=/home/lemon/osrs-wiki/tools/wiki-kb/wikicli
-$CLI search cooks assistant             # find the exact page title
-$CLI sections "Cook's Assistant/Quick guide"   # ALWAYS before `get` on unknown pages
-$CLI get "Cook's Assistant/Quick guide" --section 2   # fetch ONLY what you need
-$CLI links "Lumbridge"                  # breadcrumbs: where to go next
-$CLI members "Category:Quests"          # breadth traversal
-$CLI url "Coins"                        # canonical url for a citation ref
+OUT=/tmp/$AGENT; mkdir -p $OUT               # your private out dir
+
+$CLI search cooks assistant        > $OUT/search.out   2>&1   # then: Read $OUT/search.out
+$CLI sections "Cook's Assistant/Quick guide" > $OUT/sections.out 2>&1
+$CLI get "Cook's Assistant/Quick guide" --section 2 > /dev/null 2> $OUT/get.log
+#   ^ `get` CACHES the page — do not read stdout; Read the blob file instead:
+#     Read tools/wiki-kb/blobs/Cook's_Assistant_Quick_guide.s2.wiki
+#     (blob name is in $OUT/get.log and in manifest.jsonl)
+$CLI links "Lumbridge"             > $OUT/links.out    2>&1
+$CLI members "Category:Quests"     > $OUT/members.out  2>&1
+$CLI url "Coins"                   > $OUT/url.out      2>&1
 ```
 
 Every `get` is cached in `blobs/` and recorded in `manifest.jsonl` — a cache hit
 costs nothing and re-fetching is never duplicated. Fetch freely, but fetch
-*sections*, not whole mega-pages.
+*sections*, not whole mega-pages — and always Read files, never expect stdout.
 
 ## Contribution discipline (idempotent — no duplicated work)
 

@@ -35,9 +35,14 @@ files + rigorous docs, one source of truth per concern.
 
 ## Fan-out discipline (multi-agent work)
 
-Self-contained brief files (no stdin); shared append-only ledgers (contribute idempotent
-on key, queue add/claim/done); agents return one-line receipts — data lives in files;
-gotchas.log one-liners + retro.log finale blocks instead of chat summaries; tier map:
+Self-contained brief files (no stdin); **Bash is write-only for subagents — they never
+receive stdout: every command redirects to a file (`cmd > out 2>&1`) which they Read
+back; missing output is the design, not a stall**; shared append-only ledgers (contribute
+idempotent on key, queue add/claim/done); agents return one-line receipts — data lives in files;
+**agents read the relevant gotchas.log + existing contrib keys BEFORE starting** (inherit
+lessons, skip claimed work) and append their own on completion — append + annotate, never
+delete (acraflow P-B); retros also **mint the canonical trigger**: name what the brief
+should have said so the next wave's directives are corrected, not re-guessed (P-C); tier map:
 haiku = probes (~2.2k-token directives), sonnet = domain workers/builders, fable = final
 synthesis. Tests: `npm test` (planner suite must stay green; baseline re-pins are
 intentional acts, note them in the commit).
