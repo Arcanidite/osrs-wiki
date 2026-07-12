@@ -7,5 +7,8 @@
 import { loadFixtures } from "../../tests/helpers.js";
 
 const data = loadFixtures();
-const goal = { id: "corpus", label: "Full Corpus Appendix", goals: [] };
+// train_methods:true — the appendix carries every train-* step (121 of them),
+// so it's the widest surface for the skill-method picker; enrich.py attaches
+// train_methods.jsonl methods[] by id (opt-in, byte-safe elsewhere).
+const goal = { id: "corpus", label: "Full Corpus Appendix", goals: [], train_methods: true };
 process.stdout.write(JSON.stringify({ goal, path: data.steps }, null, 1));

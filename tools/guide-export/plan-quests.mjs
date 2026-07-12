@@ -92,6 +92,9 @@ const covered = {
   // to an unordered dump. Scoped to this payload only so route-p2p.json /
   // route-corpus.json stay byte-identical (xp_fold defaults False elsewhere).
   xp_fold: true,
+  // train_methods:true — the quest-progression chain's training bands get the
+  // skill-method picker too (enrich.py attaches train_methods.jsonl by id).
+  train_methods: true,
   goals: goals.map((g) => {
     const san = sanitizedById.get(g.id) ?? g;
     return { id: g.id, label: g.label, reqs: san.reqs || g.reqs || {},
