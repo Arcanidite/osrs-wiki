@@ -39,6 +39,9 @@ Self-contained brief files (no stdin); **Bash is write-only for subagents — th
 receive stdout: every command redirects to a file (`cmd > out 2>&1`) which they Read
 back; missing output is the design, not a stall**; shared append-only ledgers (contribute
 idempotent on key, queue add/claim/done); agents return one-line receipts — data lives in files;
+prefer SHORT SYNCHRONOUS BURSTS over monolith workflows — concise prompts, explicit
+left/right scope limits per agent, parallel cached-KB fetches, each burst's rows feeding
+the next burst downstream;
 **agents read the relevant gotchas.log + existing contrib keys BEFORE starting** (inherit
 lessons, skip claimed work) and append their own on completion — append + annotate, never
 delete (acraflow P-B); retros also **mint the canonical trigger**: name what the brief
