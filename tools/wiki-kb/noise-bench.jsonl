@@ -4,3 +4,9 @@
 {"run": "baseline", "cmd": "get \"Guide:Leagues: Faux starting guide\" --section 1", "bytes": 301, "useful_pct": 85, "ts": "2026-07-12T06:17:39Z"}
 {"run": "baseline", "cmd": "links \"Lumbridge\" | head -40", "bytes": 510, "useful_pct": 90, "ts": "2026-07-12T06:17:39Z"}
 {"run": "baseline", "cmd": "members \"Free-to-play quests\" | head -20", "bytes": 367, "useful_pct": 95, "ts": "2026-07-12T06:17:39Z"}
+{"run": "strip-v1", "cmd": "sections \"Barrows\"", "bytes": 202, "useful_pct": 100, "ts": "2026-07-12T06:18:00Z"}
+{"run": "strip-v1", "cmd": "get \"Cook's Assistant/Quick guide\" --section 2 --strip", "bytes": 983, "useful_pct": 90, "ts": "2026-07-12T06:18:00Z"}
+{"run": "strip-v1", "cmd": "get \"Bucket of milk\" --strip", "bytes": 3388, "useful_pct": 80, "ts": "2026-07-12T06:18:00Z"}
+{"run": "strip-v1", "cmd": "get \"Guide:Leagues: Faux starting guide\" --section 1 --strip", "bytes": 365, "useful_pct": 90, "ts": "2026-07-12T06:18:00Z"}
+{"run": "strip-v1", "cmd": "links \"Lumbridge\" | head -40", "bytes": 510, "useful_pct": 90, "ts": "2026-07-12T06:18:00Z"}
+{"run": "strip-v1", "cmd": "members \"Free-to-play quests\" | head -20", "bytes": 344, "useful_pct": 95, "ts": "2026-07-12T06:18:00Z"}
