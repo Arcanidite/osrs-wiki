@@ -48,6 +48,9 @@ const sanitizedById = new Map(sanitizedGoals.map((g) => [g.id, g]));
 const covered = {
   id: opts.id,
   label: opts.label,
+  // train_methods:true — P2P chain's training bands get the skill-method picker
+  // too; enrich.py attaches train_methods.jsonl by id (opt-in, byte-safe).
+  train_methods: true,
   // steer_points threaded through so enrich.py can activate phase anchors per goal.
   // reqs uses sanitized version (with supply tags) so enrich.py sees tag-bridge.
   goals: goals.map((g) => {
