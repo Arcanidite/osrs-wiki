@@ -164,6 +164,13 @@ const covered = {
   // single cited detail line. Flagship Step0→Endgame chain opts in first;
   // enrich.py merges train_methods.jsonl by id (default OFF = byte-identical).
   train_methods: true,
+  // granular: true — attach the opportunistic-granularity sub-checklist (W3
+  // Faux-grain atoms, ATTACH model) onto every coarse quest-*/train-* step
+  // that has an authored expansion in coarse_expansions_oppgran.jsonl. The
+  // coarse step stays the routing/grant anchor; enrich.py merges the atoms
+  // in as subChecklist{atoms,checkpoints} underneath it (same opt-in shape
+  // as train_methods above).
+  granular: true,
   // steer_points deliberately dropped too (barrows normally carries steer-
   // graceful/steer-ardougne-easy-diary — see route-p2p.json's own "Toward
   // Ardougne Easy Diary" phase for that waypoint-card UX). Carrying them

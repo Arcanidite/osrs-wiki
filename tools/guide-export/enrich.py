@@ -918,6 +918,15 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # fixture); only training-heavy chains (grand) set goal.train_methods:true.
     train_methods = bool(goal.get("train_methods"))
 
+    # Opportunistic-granularity sub-checklist (W3 Faux-grain atoms, ATTACH not
+    # flat-injection — see main()'s extra_by_id merge + the attach loop below,
+    # and the granular sub-checklist render on the plugin side). The coarse
+    # step (quest-*/train-*) stays the routing/grant anchor; its atoms attach
+    # underneath as subChecklist{atoms,checkpoints}. Opt-in per route (default
+    # OFF → byte-identical for every pinned fixture); only plan-grand.mjs sets
+    # goal.granular:true so far.
+    granular = bool(goal.get("granular"))
+
     # [topo-quality] topo_xp_fold: a SEPARATE, additive opt-in knob for
     # topo_order's own XP fold, decoupled from xp_fold (which also flips on
     # phased_steps' quest_first / phased_steps_with_steer's advances_steer —
@@ -1093,6 +1102,8 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
                                for m in extra["mapMarkers"]]
         if train_methods and not s.get("methods") and extra.get("methods"):
             s["methods"] = extra["methods"]
+        if granular and not s.get("subChecklist") and extra.get("subChecklist"):
+            s["subChecklist"] = extra["subChecklist"]
 
     return {
         "id": "route-" + goal["id"],
@@ -1156,6 +1167,20 @@ def _load_jsonl(path):
     return [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
 
 
+# Render-relevant fields for a subChecklist atom (GRANULARITY atom{} ATTACH
+# model). label carries through as the atom's own instruction text (mirrors
+# _train_step's instruction field); "id"/"kind" are always non-empty.
+_SUBCHECKLIST_ATOM_FIELDS = ("id", "label", "detail", "atom", "hints", "refs",
+                             "produces", "consumes", "location", "kind")
+
+
+def _project_subchecklist_atom(row):
+    """Project a steps_oppgran.jsonl atom row down to the render-relevant
+    subChecklist shape, dropping fields that are empty/defaulted on that row
+    (e.g. no refs authored yet, no location) so the payload stays small."""
+    return {k: row[k] for k in _SUBCHECKLIST_ATOM_FIELDS if row.get(k)}
+
+
 def main():
     payload = json.load(sys.stdin)
     if "blocks" in payload:                        # scheduled input (schedule.py)
@@ -1192,6 +1217,25 @@ def main():
             sid = r.get("step_id")
             if sid:
                 extra_by_id.setdefault(sid, {})["methods"] = r.get("methods")
+
+    # Opportunistic-granularity sub-checklist data (steps_oppgran.jsonl atom
+    # rows + coarse_expansions_oppgran.jsonl checkpoints, minted by W3). ATTACH
+    # model: grouped by coarse_id (NOT flat-injected — _inject_coarse_atoms
+    # above is untouched), merged onto the matching coarse step's extra as
+    # subChecklist{atoms,checkpoints}; attached only when a goal opts in via
+    # granular:true (see enrich). Absent sidecar or flag off = every fixture
+    # byte-identical. Atom order follows each expansion's own `steps` list
+    # (same ordering contract _inject_coarse_atoms/_select_branch_drops use).
+    oppgran_by_id = {r["id"]: r for r in _load_jsonl(data_dir / "steps_oppgran.jsonl")}
+    for exp in _load_jsonl(data_dir / "coarse_expansions_oppgran.jsonl"):
+        cid = exp.get("coarse_id")
+        atoms = [_project_subchecklist_atom(oppgran_by_id[sid])
+                 for sid in exp.get("steps", []) if sid in oppgran_by_id]
+        if cid and atoms:
+            extra_by_id.setdefault(cid, {})["subChecklist"] = {
+                "atoms": atoms,
+                "checkpoints": exp.get("checkpoints", []),
+            }
 
     json.dump(
         enrich(payload, catalog, steer_points, supply_chains,
