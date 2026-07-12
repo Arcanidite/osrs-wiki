@@ -111,7 +111,10 @@ function findChainSource(itemId, stepsById, chainId) {
 // Dep-first: for a given step, resolve its consumed items before emitting the step.
 // visitedItems: Set of item_ids currently being recursively resolved (VISITED cycle guard).
 // emitted: Set of step_ids already output (global dedup).
-function resolveStepDeps(step, stepsById, chainId, visitedItems, emitted, demandSet) {
+// goalId: OPPORTUNISTIC_GRANULARITY §2a.1 — the queued goal this resolution serves,
+//   stamped onto each injected step's _payoff so P8's backward-propagation sweep can
+//   reuse the demand edge burndown already computes instead of it being discarded.
+function resolveStepDeps(step, stepsById, chainId, visitedItems, emitted, demandSet, goalId) {
   const out = [];
   for (const consumedItem of Object.keys(step.consumes ?? {})) {
     if (visitedItems.has(consumedItem)) {
@@ -119,6 +122,7 @@ function resolveStepDeps(step, stepsById, chainId, visitedItems, emitted, demand
       const bId = `bootstrap-gather-${consumedItem}-${chainId}`;
       if (!emitted.has(bId)) {
         const bootstrap = synthBootstrapGather(consumedItem, chainId);
+        bootstrap._payoff = { consumer: step.id, goal: goalId, item: consumedItem };
         logGotcha(
           `[lane2] VISITED cycle-break: item "${consumedItem}" is in-flight while resolving ` +
           `"${step.id}" in chain "${chainId}"; emitting one-time bootstrap gather`
@@ -134,12 +138,15 @@ function resolveStepDeps(step, stepsById, chainId, visitedItems, emitted, demand
     if (!source || emitted.has(source.id)) continue;
 
     visitedItems.add(consumedItem);
-    const depSteps = resolveStepDeps(source, stepsById, chainId, visitedItems, emitted, demandSet);
+    const depSteps = resolveStepDeps(source, stepsById, chainId, visitedItems, emitted, demandSet, goalId);
     out.push(...depSteps);
     visitedItems.delete(consumedItem);
 
     if (!emitted.has(source.id)) {
-      out.push({ ...source, _supply: true, _supply_chain: chainId });
+      out.push({
+        ...source, _supply: true, _supply_chain: chainId,
+        _payoff: { consumer: step.id, goal: goalId, item: consumedItem },
+      });
       emitted.add(source.id);
       demandSet.add(source.id);
     }
@@ -150,7 +157,8 @@ function resolveStepDeps(step, stepsById, chainId, visitedItems, emitted, demand
 // Fully resolve a supply chain dep-first from its terminal produce step.
 // Terminal step gets grants:{supply-<chainId>:true} for the S6 tag-bridge.
 // Herblore↔herb-farm cycle emits a bootstrap gather before any loop step.
-function resolveChain(chain, stepsById, emitted, demandSet) {
+// goalId: OPPORTUNISTIC_GRANULARITY §2a.1 — see resolveStepDeps' own note.
+function resolveChain(chain, stepsById, emitted, demandSet, goalId) {
   const chainId = chain.id;
   const visitedItems = new Set();
   const out = [];
@@ -178,6 +186,7 @@ function resolveChain(chain, stepsById, emitted, demandSet) {
       const bootstrapId = `bootstrap-gather-guam_weed-${chainId}`;
       if (!emitted.has(bootstrapId)) {
         const bootstrap = synthBootstrapGather("guam_weed", chainId);
+        bootstrap._payoff = { consumer: herbLoopStep.id, goal: goalId, item: "guam_weed" };
         out.push(bootstrap);
         emitted.add(bootstrapId);
         demandSet.add(bootstrapId);
@@ -200,11 +209,17 @@ function resolveChain(chain, stepsById, emitted, demandSet) {
     processedIds.add(stepId);
 
     // Resolve all dependencies of this step before emitting it
-    const deps = resolveStepDeps(step, stepsById, chainId, visitedItems, emitted, demandSet);
+    const deps = resolveStepDeps(step, stepsById, chainId, visitedItems, emitted, demandSet, goalId);
     out.push(...deps);
 
     if (!emitted.has(stepId)) {
-      out.push({ ...step, _supply: true, _supply_chain: chainId });
+      // Terminal step's output IS the goal's requested item — its consumer is the
+      // goal itself (§2a.1); non-terminal chain steps have no single-item consumer
+      // known at this point, so they stay unstamped (additive/optional field).
+      const payoff = stepId === terminalId
+        ? { consumer: goalId, goal: goalId, item: chain.output_item }
+        : null;
+      out.push({ ...step, _supply: true, _supply_chain: chainId, ...(payoff ? { _payoff: payoff } : {}) });
       emitted.add(stepId);
       demandSet.add(stepId);
     }
@@ -324,8 +339,11 @@ export function burndownResolve(goals, steps, supplyChains, coarseExpansions) {
     for (const [itemId] of Object.entries(itemReqs)) {
       const chain = chainByOutputItem.get(itemId);
       if (!chain) {
-        // No registered chain — emit a synthetic placeholder gather.
+        // No registered chain — emit a synthetic placeholder gather. Consumer is
+        // the goal itself (§2a.1): no chain step stands between this item and
+        // the goal's own reqs.items entry.
         const synth = synthGather(itemId, null);
+        synth._payoff = { consumer: goal.id, goal: goal.id, item: itemId };
         if (!emitted.has(synth.id)) {
           injected.push(synth);
           emitted.add(synth.id);
@@ -349,7 +367,7 @@ export function burndownResolve(goals, steps, supplyChains, coarseExpansions) {
 
       // Dep-first chain step resolution.
       // resolveChain deduplicates internally via emitted; push results directly.
-      const chainSteps = resolveChain(chain, stepsById, emitted, demandSet);
+      const chainSteps = resolveChain(chain, stepsById, emitted, demandSet, goal.id);
       injected.push(...chainSteps);
 
       // Collect the highest skill level required by any step in this chain.

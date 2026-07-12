@@ -26,6 +26,12 @@ import re
 import sys
 from pathlib import Path
 
+from backprop import build_source_index, collect_demands, backprop_collection_plan
+
+# Opportunistic-lookahead weave (OPPORTUNISTIC_GRANULARITY.md §2b): P8 label
+# for the always-skippable fallback stub paired with every re-pinned opp node.
+OPP_FALLBACK_LABEL = "Skip if already gathered"
+
 # Tuning constants — mirrored from assets/js/router/planner/tuning.js (S1, S3).
 # Update both files together when calibrating.
 TUNING = {
@@ -217,21 +223,122 @@ def hub_batches(steps):
     return result
 
 
-# P8 — insert_supply_steps: annotate supply steps with their Supply: phase label.
-# AOT and "either"-timing supply steps get _supply_phase set so phased_steps_with_steer
-# can group them under the Supply: <chain> phase before their consuming milestone.
-# JIT supply steps are left unannotated — they co-locate in the consumer's phase.
-def insert_supply_steps(ordered, supply_chains):
+def _opp_fallback_stub(item, consumer, source_step):
+    """optional:true skip-stub paired with an opportunistic re-pin (GRANULARITY
+    §3c branch{}): shares alt_group with its opp node so skipping the early
+    grab never blocks the consumer — U9's "skip degrades to today's dedicated-
+    supply behavior" guarantee. No completion-relevant fields beyond MANUAL:
+    the stub is pure enrichment, safe to render or ignore."""
+    label_item = item.replace("_", " ")
+    return {
+        "id": f"opp-stub-{item}-{consumer}",
+        "label": f"{OPP_FALLBACK_LABEL}: {label_item}",
+        "detail": f"Already gathered while at \"{source_step.get('label', label_item)}\" "
+                  "earlier in the route — nothing further to do here.",
+        "kind": "access",
+        "reqs": {"skills": {}}, "grants": {}, "tags": [],
+        "branch": {"alt_group": f"opp-{item}-{consumer}", "when": {}, "optional": True},
+        "_opportunistic_stub": True,
+    }
+
+
+def _weave_opportunistic(ordered, steps_bank, oppgran_rows, xp_fold):
+    """P8 opportunistic placement scan (OPPORTUNISTIC_GRANULARITY.md §2b): run
+    the backprop sweep (backprop.py, a port of the RUN-PROVEN backprop.js — see
+    that module's own docstring for why P8 ports rather than shells JS in) over
+    the route as topo_order (P7) left it, then for each "earliest-window" plan
+    re-pin the source step at its collection node via the SAME _anchor/_side
+    detach-reattach contract P5/P9 already use for overlay nodes, paired with
+    an always-skippable fallback stub before the consumer. "already-earliest"/
+    "no-window" plans are untouched — byte-identical fallback. sourceAfter-
+    Consumer faults are returned for the caller to print as lint, NEVER
+    silently reordered (a route/data fault to fix upstream, not paper over).
+    topo_order is re-run afterward as the mandatory requisite-order guard.
+    Returns (new_ordered, fault_plans[]).
+    """
+    by_id = {s["id"]: s for s in ordered if s.get("id")}
+    source_index = build_source_index(steps_bank, oppgran_rows)
+    proposed_by_id = {
+        row["proposed_row"]["id"]: row["proposed_row"]
+        for row in (oppgran_rows or []) if row.get("proposed_row")
+    }
+    plans = backprop_collection_plan(ordered, collect_demands(ordered), source_index)
+    faults = [p for p in plans if p.get("source_after_consumer")]
+
+    candidates = [
+        p for p in plans
+        if p["verdict"] == "earliest-window" and p.get("via_source") and p.get("collect_at_id")
+        and (p["via_source"] in by_id or p["via_source"] in proposed_by_id)
+    ]
+    candidate_source_ids = {p["via_source"] for p in candidates}
+    # Anchor-stability guard: never anchor a moving node onto another node this
+    # same batch is also moving (rare, but the collect-at node must be stable).
+    weaves = [p for p in candidates if p["collect_at_id"] not in candidate_source_ids]
+    if not weaves:
+        return ordered, faults
+
+    # One gather action can pay off several downstream consumers (e.g. one
+    # "fish trout" step covers both a combat band's food AND a later one's).
+    # Insert the PHYSICAL node exactly once — id uniqueness matters to the
+    # plugin's override/completion tracking — at its earliest collection
+    # window; every consumer still gets its own skip-stub.
+    weaves_by_source = {}
+    for p in weaves:
+        weaves_by_source.setdefault(p["via_source"], []).append(p)
+    for group in weaves_by_source.values():
+        group.sort(key=lambda p: p["collect_at_idx"])
+
+    repinned_ids = {sid for sid in weaves_by_source if sid in by_id}
+    base = [s for s in ordered if s.get("id") not in repinned_ids]
+
+    overlays = []
+    for source_id, group in weaves_by_source.items():
+        earliest = group[0]
+        item = earliest["item"]
+        source_step = {**(by_id.get(source_id) or proposed_by_id[source_id])}
+        source_step.update({
+            "_supply": True, "_supply_chain": source_step.get("_supply_chain") or source_step.get("supply_chain"),
+            "_opportunistic": True,
+            "paysOff": {"at": earliest["consumer_id"], "item": item},
+        })
+        overlays.append({"anchor_id": earliest["collect_at_id"], "side": "after", "node": source_step})
+        for plan in group:
+            consumer = plan["consumer_id"]
+            if consumer in by_id:  # horizon (goal-level) demands have no route node to anchor a stub to
+                overlays.append({"anchor_id": consumer, "side": "before",
+                                  "node": _opp_fallback_stub(item, consumer, source_step)})
+
+    return topo_order(reattach_overlays(base, overlays), xp_fold=xp_fold), faults
+
+
+# P8 — insert_supply_steps: (1) opportunistic placement scan, gated by
+# `opportunistic` (default False → byte-identical for every route that
+# doesn't opt in); (2) annotate remaining AOT/"either"-timing supply steps
+# with their Supply: phase label so phased_steps_with_steer can group them
+# under the Supply: <chain> phase before their consuming milestone. JIT supply
+# steps (and now opportunistically re-pinned ones — same co-location idea)
+# stay unannotated so they render inline wherever they landed.
+def insert_supply_steps(ordered, supply_chains, opportunistic=False,
+                         steps_bank=None, oppgran_rows=None, xp_fold=False):
     """P8: Annotate supply steps with Supply: phase label.
     AOT/either-timing steps → _supply_phase = phase_name("supply", chain_label).
     JIT steps → no annotation (stays in consumer's milestone phase).
     Bootstrap steps → always AOT, get _supply_phase like other AOT supply steps.
+    opportunistic=True (goal-gated, additive): runs the backprop weave first
+    (see _weave_opportunistic); sourceAfterConsumer faults print as lint.
     """
+    if opportunistic and steps_bank is not None:
+        ordered, faults = _weave_opportunistic(ordered, steps_bank, oppgran_rows, xp_fold)
+        for f in faults:
+            print(f"[og-w2 lint] source-after-consumer: \"{f['item']}\" needed by "
+                  f"{f['consumer_id']} but its bank source \"{f['via_source']}\" is scheduled "
+                  "later in the route — data fault, not auto-reordered.", file=sys.stderr)
+
     chain_label = {c["id"]: c["label"] for c in (supply_chains or [])}
     result = []
     for step in ordered:
         chain_id = step.get("_supply_chain") or step.get("supply_chain")
-        if chain_id and step.get("_supply"):
+        if chain_id and step.get("_supply") and not step.get("_opportunistic"):
             timing = step.get("timing")
             # JIT steps co-locate with their consumer; everything else is supply-phase
             if timing != "jit":
@@ -672,6 +779,19 @@ def _train_step(step, phase, zones, checkpoint=None):
     # annotates one (sequencer OQ-6).
     if step.get("_passiveOverlays"):
         out["passiveOverlays"] = step["_passiveOverlays"]
+    # OPPORTUNISTIC_GRANULARITY §2a.3 — paysOff breadcrumb on a re-pinned opp
+    # node ("↷ pays off at: <consumer>"); GuideStep.paysOff (guide-chain repo),
+    # additive-nullable, unknown-field-safe if the plugin hasn't picked it up
+    # yet.
+    if step.get("paysOff"):
+        out["paysOff"] = step["paysOff"]
+    # branch{} emits ONLY for the opportunistic fallback stub (§3c) — several
+    # existing bank rows (e.g. pps-04-source-vials, ctr-final alt_group) ALSO
+    # carry branch{} for the unrelated coarse-atom alt_group selection
+    # (_select_branch_drops); that field was never emitted before this change
+    # and must stay that way for byte-identical output on every pinned route.
+    if step.get("_opportunistic_stub") and step.get("branch"):
+        out["branch"] = step["branch"]
     # Quest reward XP — the efficiency lever. The planner credits it toward skill
     # progression (pruning covered training); surface it as a chip so the route
     # shows the payoff of doing the quest instead of grinding.
@@ -902,7 +1022,8 @@ def _coalesce_checkpoints(steps, checkpoint_member):
 
 
 def enrich(plan, catalog, steer_points, supply_chains=None,
-           coarse_expansions=None, atoms_by_id=None, extra_by_id=None):
+           coarse_expansions=None, atoms_by_id=None, extra_by_id=None,
+           steps_bank=None, oppgran_opp_rows=None):
     goal = plan["goal"]
     zones = catalog.get("zones", {})
     reals = [s for s in plan["path"] if not s.get("_capstone")]
@@ -926,6 +1047,11 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # OFF → byte-identical for every pinned fixture); only plan-grand.mjs sets
     # goal.granular:true so far.
     granular = bool(goal.get("granular"))
+
+    # OPPORTUNISTIC_GRANULARITY §2b — opportunistic-lookahead P8 weave. Opt-in
+    # per route (default OFF → byte-identical for every pinned fixture); only
+    # plan-grand.mjs sets goal.opportunistic:true so far.
+    opportunistic = bool(goal.get("opportunistic"))
 
     # [topo-quality] topo_xp_fold: a SEPARATE, additive opt-in knob for
     # topo_order's own XP fold, decoupled from xp_fold (which also flips on
@@ -994,8 +1120,12 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     if branch_drops:
         ordered = [s for s in ordered if s.get("id") not in branch_drops]
 
-    # P8 — insert_supply_steps: annotate AOT supply steps with Supply: phase label.
-    ordered = insert_supply_steps(ordered, supply_chains or [])
+    # P8 — insert_supply_steps: opportunistic placement scan (goal-gated) +
+    # annotate remaining AOT supply steps with their Supply: phase label.
+    ordered = insert_supply_steps(
+        ordered, supply_chains or [], opportunistic=opportunistic,
+        steps_bank=steps_bank, oppgran_rows=oppgran_opp_rows, xp_fold=topo_xp_fold,
+    )
 
     # P9 — re-attach overlay nodes adjacent to their (possibly reordered) anchors.
     ordered_with_overlays = reattach_overlays(ordered, overlays)
@@ -1237,10 +1367,19 @@ def main():
                 "checkpoints": exp.get("checkpoints", []),
             }
 
+    # OPPORTUNISTIC_GRANULARITY §2/§4 O-track — wiki-grounded opportunity rows
+    # (oppgran:opp:<item>@<zone> keys, contrib.jsonl idempotent ledger) feed
+    # backprop.py's source index alongside steps.jsonl's own produces{} edges.
+    # Absent ledger or flag off (opportunistic:false) = every fixture byte-identical.
+    contrib_path = Path(__file__).parent.parent / "wiki-kb" / "contrib.jsonl"
+    oppgran_opp_rows = [r for r in _load_jsonl(contrib_path)
+                         if r.get("key", "").startswith("oppgran:opp:")]
+
     json.dump(
         enrich(payload, catalog, steer_points, supply_chains,
                coarse_expansions=coarse_expansions, atoms_by_id=atoms_by_id,
-               extra_by_id=extra_by_id),
+               extra_by_id=extra_by_id, steps_bank=raw_steps,
+               oppgran_opp_rows=oppgran_opp_rows),
         sys.stdout, indent=2
     )
 

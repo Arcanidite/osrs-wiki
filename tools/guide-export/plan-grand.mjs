@@ -171,6 +171,13 @@ const covered = {
   // in as subChecklist{atoms,checkpoints} underneath it (same opt-in shape
   // as train_methods above).
   granular: true,
+  // opportunistic: true — OPPORTUNISTIC_GRANULARITY.md §2b P8 weave: re-pin
+  // each backprop-determined earliest-window supply/gather step at the
+  // route's earliest already-in-position node (instead of a dedicated later
+  // detour), paired with an always-skippable fallback stub. Flagship Step0→
+  // Endgame chain opts in first; enrich.py default OFF = byte-identical for
+  // every other route (p2p/corpus/quests/origin never set this).
+  opportunistic: true,
   // steer_points deliberately dropped too (barrows normally carries steer-
   // graceful/steer-ardougne-easy-diary — see route-p2p.json's own "Toward
   // Ardougne Easy Diary" phase for that waypoint-card UX). Carrying them
