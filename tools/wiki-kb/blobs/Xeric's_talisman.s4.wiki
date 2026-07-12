@@ -1,0 +1,12 @@
+==Locations==
+[[File:Xeric's talisman teleport.gif|thumb|120px|A player teleports using Xeric's talisman.]]All teleports are available by default except for [[Xeric's Honour]]. To permanently unlock this location, a player must first use an [[ancient tablet]] on the amulet. The tablet is obtained as a 1/10 chance reward from the [[Ancient chest]] after the [[Chambers of Xeric]] raid.
+
+Teleporting to [[Xeric's Heart]] using the talisman is a task in the [[Hard Kourend & Kebos Diary]].{{TeleportLocationTableHead}}
+{{TeleportLocationLine|name=1. [[Xeric's Lookout]], at its entrance south-east of [[Shayzien]].|x=1579|y=3530|mtype=pin}}
+{{TeleportLocationLine|name=2. Xeric's Glade, by the [[magic tree]]s north-east of the [[Hosidius]] farming patch.|x=1752|y=3566|mtype=pin}}
+{{TeleportLocationLine|name=3. Xeric's Inferno, at the [[lovakite]] [[furnace]] in the centre of [[Lovakengj]]|x=1504|y=3815|mtype=pin}}
+{{TeleportLocationLine|name=4. Xeric's Heart, next to the [[Statue (King Rada I)|statue]] at [[Kourend Castle]].|x=1644|y=3673|mtype=pin}}
+{{TeleportLocationLine|name=5. Xeric's Honour, at the summit of [[Mount Quidamortem]].
+
+Players must use an [[ancient tablet]] on the talisman before being able to teleport here.|x=1254|y=3560|mtype=pin}}
+{{TableBottom}}

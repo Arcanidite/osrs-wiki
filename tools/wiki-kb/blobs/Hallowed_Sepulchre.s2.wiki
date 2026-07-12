@@ -1,0 +1,20 @@
+==Requirements==
+{| class="qc-active"
+|
+*Access to the city of [[Darkmeyer]] 
+**Entering the Sepulchre requires completion of [[Sins of the Father]]
+|}
+*{{SCP|Agility|52|link=yes}} in order to enter the Sepulchre, with higher requirements to access the lower floors. The Agility requirements are not boostable.
+**Floor 2: {{SCP|Agility|62 Agility}}
+**Floor 3: {{SCP|Agility|72 Agility}}
+**Floor 4: {{SCP|Agility|82 Agility}}
+**Floor 5: {{SCP|Agility|92 Agility}}
+* (Recommended) {{SCP|Hitpoints|70+|link=yes}} to withstand damage from traps.
+* (Recommended) A [[Saradomin#Affiliated_items|Saradomin item]] is necessary to use the [[Magical Obelisk]]s at the end of each floor to restore run [[energy]]. Run energy will be '''drained''' if the player has ''any'' non-Saradomin God items equipped (such as an [[Armadyl crossbow]]).
+
+Looting the [[Coffin (Hallowed Sepulchre)|coffins]] is optional, but is the only way to obtain [[#Rewards|rewards]] like [[hallowed marks]]. The following minimum levels are required, depending on the obstacle blocking the coffin:
+*{{SCP|Thieving|66|link=yes}} {{Boostable|yes}}
+*{{SCP|Construction|56|link=yes}}{{Boostable|yes}} to pass [[Bridge (Hallowed Sepulchre)|broken bridges]] 
+*{{SCP|Prayer|54|link=yes}} to pass [[Saradomin brazier]]s
+*{{SCP|Magic|7|link=yes}} to pass [[portal frame]]s
+*{{SCP|Ranged|62|link=yes}} to pass [[Pillar (Hallowed Sepulchre)|pillars]]

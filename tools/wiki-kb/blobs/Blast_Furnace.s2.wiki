@@ -1,0 +1,8 @@
+==Transportation==
+[[File:Getting to Keldagrim.png|thumb|right|From [[Seers' Village]] and [[Camelot]], follow this path.]]
+The Blast Furnace is located in [[Keldagrim]]. To enter Keldagrim, the player must have started [[The Giant Dwarf]] [[quest]] by speaking to the Dwarven Boatman within the mines east of Rellekka. The map on the right shows a path the player can take walking from [[Seers' Village]]/[[Camelot]] to the mines east of Rellekka. Once the player has visited Keldagrim at least once, they can return via [[Keldagrim minecart system|mine cart]] from the [[Dwarven Mines]] under the [[Ice Mountain]] or the [[Grand Exchange]], or use [[Minigame Teleport]] to teleport right outside the Blast Furnace building.
+
+The [[Fairy ring]] system can be used in two ways: Either travel to ring {{Fairycode|dkr}} to go immediately west of the [[Grand Exchange]], use its underwall tunnel north of the ring (requires 21 [[Agility]]) and then the mine cart, or travel to ring {{Fairycode|dks}}, which puts the player a short walk to the south-west to the Keldagrim entrance.
+
+=== Bank chest ===
+Near the water pump and the coffer is a bank chest, which players can use to more efficiently use the furnace. Note that time spent with the bank chest interface open '''will''' deplete the coins in the coffer.

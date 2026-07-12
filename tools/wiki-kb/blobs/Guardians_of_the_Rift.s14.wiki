@@ -1,0 +1,37 @@
+===Rewards Guardian===
+{{Main|Rewards Guardian}}
+[[File:Rewards Guardian.png|thumb|right|The Rewards Guardian.]]
+Rewards from the Guardian include a standard loot table including runes and talismans, as well as various unique rewards.
+
+{| class="wikitable lighttable align-center-1" style=width:700px;
+! colspan="2" | Item
+! Info
+|-
+| {{plinkt|Abyssal pearls}}
+| Used to purchase items from the [[Temple Supplies]] shop.
+|-
+| {{plinkt|Intricate pouch}}
+| Can give a [[tarnished locket]] or a [[lost bag]]. Grants a random amount of runes or one of several dragon items.  Also has a chance at granting a [[Clue scroll (hard)|hard clue]]. 
+|-
+| {{plinkt|Atlax's diary}}
+| An old diary of someone's experiences at the Temple of the Eye.
+|-
+| {{plinkt|Elemental talisman}}
+| Grants access to all elemental [[runic altar]]s.
+|-
+| {{plinkt|Catalytic talisman}}
+| Grants access to all catalytic runic altars, provided the player has completed the quests to access those that require it.
+|-
+| {{plinkt|Abyssal needle}}
+| Combines all [[essence pouch]]es into one [[colossal pouch]] ({{SCP|Crafting|56|link=yes}} required). If the colossal pouch is lost, players may simply use a normal needle on the Rewards Guardian to obtain another Abyssal needle.
+|-
+| {{plinkt|Abyssal lantern}}
+| Gives various benefits within the minigame depending on the type of logs used to light it. Can also be purchased with 1500 pearls.
+|-
+| {{nowrap|{{plinkp|Abyssal red dye}} {{plinkp|Abyssal green dye}} {{plinkp|Abyssal blue dye}}}}
+| [[Abyssal dye]]s
+| Recolours the [[raiments of the eye]], [[lost bag]], and [[amulet of the eye]]. Comes in [[Abyssal red dye|red]], [[Abyssal green dye|green]], and [[Abyssal blue dye|blue]].
+|-
+| {{plinkt|Abyssal protector}}
+| An abyssal creature pet, similar to an [[Abyssal guardian (Guardians of the Rift)|abyssal guardian]].
+|}

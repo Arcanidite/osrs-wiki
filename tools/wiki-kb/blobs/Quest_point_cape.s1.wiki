@@ -1,0 +1,30 @@
+==Stats and benefits==
+
+=== Stats ===
+{{Infobox Bonuses
+|version1 = Untrimmed
+|version2 = Trimmed
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 0
+|dstab = +9
+|dslash = +9
+|dcrush = +9
+|dmagic = +9
+|drange = +9
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer1 = 0
+|prayer2 = +4
+|slot = cape
+|image1 = [[File:Quest point cape equipped.png]]
+|image2 = [[File:Quest point cape (t) equipped.png]]
+|altimage1 = [[File:Quest point cape equipped female.png|150px]]
+|altimage2 = [[File:Quest point cape (t) equipped female.png|150px]]
+}}
+
+===Cape benefits===
+In addition to the defensive stats above, the cape can teleport players to the [[Legends' Guild]] gates an unlimited number of times. This is especially convenient as it is the second [[Closest fairy ring to teleport|closest]] available teleport to a [[fairy ring]] after the [[player-owned house|POH]]. Additionally, players with the maximum number of quest points will find that the prices of dreams in the [[Nightmare Zone]] are reduced by 10,000 coins. The cape does not have to be worn to achieve this effect.

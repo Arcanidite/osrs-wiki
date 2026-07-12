@@ -1,0 +1,58 @@
+==Rewards==
+Once a contract is complete, players will receive [[carpenter points]] dependent on their job tier and [[Construction]] experience. In terms of experience efficient reward purchase order, the [[plank sack]] is the highest priority for continued Mahogany Homes training with, followed by Amy's saw, then Carpenter's Outfit pieces in any order. When using a [[plank sack]] alongside efficient teleports and the [[NPC Contact]] spell, players can expect to complete around 50-60 contracts per hour. The cost-per-point can be identified by averaging the cost per contract mentioned above. For instance, using mahogany planks would cost an estimated {{Nocoins|12.71*{{GEP|Mahogany plank}}*400+0.5*{{GEP|Steel bar}}*400|c}} in materials to obtain the full Carpenter's outfit. For the complete log you need to complete 975 Expert contracts at an estimated {{Nocoins|12.71*{{GEP|Mahogany plank}}*975+0.5*{{GEP|Steel bar}}*975|c}} cost.
+
+{| class="wikitable align-center-1"
+!Tier
+!{{SCP|Construction}}
+![[Carpenter points|Points]]<br>awarded
+!Experience<br>awarded
+!Experience<br>awarded<br />(with [[carpenter's outfit]])
+!Estimated<br>cost-per-point
+!Estimated<br>resources-per-point
+|-
+|Beginner
+|1
+|2
+|500
+|512.5
+|{{Coins|9.7*{{GEP|Plank}}/2+0.5*{{GEP|Steel bar}}/2}}
+|4.85 {{ilink|Plank|pic=Plank|txt=Planks}}<br>0.25 {{ilink|Steel bar|pic=Steel bar|txt=Steel bars}}
+|-
+|Novice
+|20
+|3
+|1,250
+|1,281.2
+|{{Coins|9.84*{{GEP|Oak plank}}/3+0.5*{{GEP|Steel bar}}/3}}
+|3.28 {{ilink|Oak plank|pic=Oak plank|txt=Oak planks}}<br>0.17 {{ilink|Steel bar|pic=Steel bar|txt=Steel bars}}
+
+|-
+|Adept
+|50
+|4
+|2,250
+|2,306.2
+|{{Coins|11.5*{{GEP|Teak plank}}/4+0.5*{{GEP|Steel bar}}/4}}
+|2.88 {{ilink|Teak plank|pic=Teak plank|txt=Teak planks}}<br>0.13 {{ilink|Steel bar|pic=Steel bar|txt=Steel bars}}
+|-
+|Expert
+|70
+|5
+|2,750
+|2,818.7
+|{{Coins|12.71*{{GEP|Mahogany plank}}/5+0.5*{{GEP|Steel bar}}/5}}
+|2.54 {{ilink|Mahogany plank|pic=Mahogany plank|txt=Mahogany planks}}<br>0.10 {{ilink|Steel bar|pic=Steel bar|txt=Steel bars}}
+|}
+
+===Stock===
+[[Carpenter points]] can be exchanged for various rewards at the [[Mahogany Homes Reward Shop]]:
+{{StoreTableHead|currency=Points|hidestock=y|hiderestock=y|hidebuy=y|hidege=y|hidecaption=y|column1=Notes|bucket=No}}
+{{StoreLine|name=Supply crate (Mahogany Homes)|displayname=Supply crate|sell=25|buy=N/A|stock=inf|gemw=no|column1=Contains [[Construction]] materials}}
+{{StoreLine|name=Amy's saw|sell=500|buy=N/A|stock=inf|gemw=no|column1=An equipable saw. Can be used for construction.}}
+{{StoreLine|name=Plank sack|sell=350|buy=N/A|stock=inf|gemw=no|column1=Holds up to 28 [[planks]].}}
+{{StoreLine|name=Hosidius blueprints|sell=2000|buy=N/A|stock=inf|gemw=no|column1=Unlocks the Hosidius Wall Kit.}}
+{{StoreLine|name=Carpenter's helmet|sell=400|buy=N/A|stock=inf|gemw=no|column1=A piece of the [[carpenter's outfit]].}}
+{{StoreLine|name=Carpenter's shirt|sell=800|buy=N/A|stock=inf|gemw=no|column1=A piece of the [[carpenter's outfit]].}}
+{{StoreLine|name=Carpenter's trousers|sell=600|buy=N/A|stock=inf|gemw=no|column1=A piece of the [[carpenter's outfit]].}}
+{{StoreLine|name=Carpenter's boots|sell=200|buy=N/A|stock=inf|gemw=no|column1=A piece of the [[carpenter's outfit]].}}
+{{StoreTableBottom}}

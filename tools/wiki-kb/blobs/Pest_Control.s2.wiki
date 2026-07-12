@@ -1,0 +1,9 @@
+==Outpost facilities==
+The Outpost contains various utilities, including:
+*[[Bank]]
+*[[General store]] - Sells unique items
+*[[Anvil]] - Nearby is a smith who can repair [[Barrows]] armour
+*[[Void Knight Archery Store]]
+*[[Void Knight Magic Store]] - Stocks [[body rune|body]], [[air rune|air]], [[water rune|water]], [[earth rune|earth]], [[fire rune|fire]], [[mind rune|mind]], [[chaos rune|chaos]], and [[death rune|death]] [[runes]]
+*Three {{wp|Landing Craft Vehicle Personnel|LCVP}}-style ships, called "landers" - Players board these to begin games of Pest Control
+*[[Port]] (requires level 50 [[Sailing]] to dock your boat here)

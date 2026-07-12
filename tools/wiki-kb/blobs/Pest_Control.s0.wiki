@@ -1,0 +1,34 @@
+{{External|rs}}
+{{Safe activity|instance=true}}
+{{HasStrategy}}
+{{Infobox Activity
+|name = Pest Control
+|image = [[File:Pest Control.png|300px]]
+|release = [[18 April]] [[2006]]
+|update = Pest Control
+|aka = PC
+|type = Minigame
+|members = Yes
+|location = [[Void Knights' Outpost]]
+|players = 5-25
+|skills = [[Combat]], [[Crafting]], [[Woodcutting]]
+|currency = [[Void Knight commendation points]]
+|tutorial = No
+|music = [[Pest Control (music track)|Pest Control]]
+|map = {{Map|name=Pest Control|x=2658|y=2625|zoom=1}}
+|leagueRegion = Asgarnia
+}}
+[[File:Pest Control logo.png|left]]
+{{Relativelocation
+|location=Pest Control
+|north=Void Knights' Outpost
+|south=Pest Control Island
+|east=Unknown
+|west=Unknown
+}}
+
+'''Pest Control''' is a co-operative combat-based [[minigame]], in which players defend the [[Void Knight (Pest Control)|Void Knight]] from an onslaught of pests, while also destroying the portals from which the monsters spawn.
+
+The only requirement to participate in Pest Control is a combat level of 40, 70 or 100 for Novice, Intermediate and Veteran games respectively. To play, players should board one of three landers corresponding to the desired difficulty on the [[Void Knights' Outpost]].
+
+Pest Control is notable for its reward of [[Void Knight equipment]], purchased using [[commendation points]] given to players '''actively''' participating in the minigame.

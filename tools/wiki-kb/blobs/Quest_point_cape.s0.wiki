@@ -1,0 +1,44 @@
+{{External|rs=Quest Cape}}
+{{Infobox Item
+|version1 = Untrimmed
+|version2 = Trimmed
+|name1 = Quest point cape
+|name2 = Quest point cape (t)
+|image1 = [[File:Quest point cape.png]]
+|image2 = [[File:Quest point cape (t).png]]
+|release1 = [[18 October]] [[2006]]
+|release2 = [[5 March]] [[2015]]
+|update1 = Capes of Achievement... and Goats!
+|update2 = Achievement Diaries
+|aka = QPC, QC, Quest cape
+|members = Yes
+|quest = No
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options1 = Wear, Teleport, Trim, Drop
+|options2 = Wear, Teleport, Untrim, Drop
+|wornoptions1 = Trim, Teleport
+|wornoptions2 = Untrim, Teleport
+|examine = The cape worn by only the most experienced adventurers.
+|value = 99000
+|weight = 0.453
+|id1 = 9813
+|id2 = 13068
+}}
+{{Synced switch
+|version1 = [[File:Quest point cape detail.png|left|120px]]
+|version2 = [[File:Quest point cape (t) detail.png|left|120px]]
+}}
+The '''quest point cape''' is a [[Cape of Accomplishment|cape of accomplishment]] that can be obtained by players who have completed all [[quests]] (excluding [[miniquests]]). The cape, along with the [[quest point hood]], can be purchased from the [[Wise Old Man]] in [[Draynor Village]] for 99,000 [[coins]]. To trim the cape, players must complete all [[achievement diaries]], thus earning them the [[achievement diary cape]] as well.
+
+Should a new quest be released, the cape will be unequipped, and the player will not be able to equip or operate it until the new quest is completed. If the player's inventory is full, the cape will be banked instead. In the event that their inventory and bank are both full, the cape will be '''lost''', and will have to be re-purchased from the Wise Old Man.
+
+The cape is a popular goal for [[Ironman Mode|ironmen]] due to its quick teleport to a [[Fairy rings|fairy ring]]. Additionally, performing the quest cape emote in the [[Wise Old Man]]'s house is an elite task in the [[Lumbridge & Draynor Diary]]. The emote can also be used at the top of [[White Knights' Castle|Falador Castle]] for a task in the [[elite Falador Diary]].
+
+Unlike skill hiscores, there is no official way to track the number of players who currently own the cape; it must be shared by Jagex. In February 2020, there were '''61,766''' current members who had obtained the quest point cape.{{CiteVideo|author=Old School RuneScape|title=OSRS Data Stream 2020 - Old School RuneScape's 7th Birthday!|url=https://www.youtube.com/watch?v=UfB2bBacxJ8&t=31m43s|timestamp=31m43s|date=26 February 2020|site=YouTube|notes=|name=}}
+
+{{Costume storage|cape rack|Quest point cape set, along with the [[Quest point hood|hood]]|set=true}} Players who own a quest cape but no longer have all quests completed will find they cannot store the cape until they re-complete all quests. However, quest capes that were already mounted on the cape rack prior to new quests becoming available will remain on the rack. Quest capes on cape racks therefore represent that the home owner at one point or another had attained all available quest points at the time of mounting. 
+[[File:Quest point cape emote.gif|thumb|200px|A player performing the Quest point cape's emote.|class=notpageimage]]
+{{Listen|align=right|title=The music that plays when you purchase a Cape of Accomplishment|desc=|filename=Cape of Accomplishment.ogg}}

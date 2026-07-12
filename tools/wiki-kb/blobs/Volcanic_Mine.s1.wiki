@@ -1,0 +1,6 @@
+==Transportation==
+As there is no grouping teleport for this minigame, the fastest methods are:
+
+* [[Volcanic mine teleport]] (purchased at [[Petrified Pete's Ore Shop]])
+* [[Digsite pendant]] to the [[Digsite]], travel to [[Fossil Island]] via the barge, then go East and climb up the [[Rope anchor]] (requires {{SCP|Agility|64}})
+* [[Digsite pendant]] to [[House on the Hill]], then [[Mycelium Transportation System]] to [[Verdant Valley]], then run east below the lava, then run north

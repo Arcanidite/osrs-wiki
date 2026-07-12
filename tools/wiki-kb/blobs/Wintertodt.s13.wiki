@@ -1,0 +1,40 @@
+===Reward experience===
+Players earn experience based on the activities they perform during the battle. The following activities provide experience as a multiple of the player's current level (for example, with level 50 Firemaking, lighting a brazier with a multiplier of 6x will reward 300 Firemaking experience):
+
+{| class="wikitable"
+!Activity
+!Skill rewarded
+!Level multiplier
+|-
+|Lighting a brazier
+|{{SCP|Firemaking}}
+|6x
+|-
+|Cutting a bruma root
+|{{SCP|Woodcutting}}
+|0.3x
+|-
+|Feeding a bruma root
+|{{SCP|Firemaking}}
+|3x
+|-
+|Fletching a bruma root
+|{{SCP|Fletching}}
+|0.6x
+|-
+|Feeding a bruma kindling
+|{{SCP|Firemaking}}
+|3.8x
+|-
+|Fixing a broken brazier
+|{{SCP|Construction}}
+|4x
+|-
+|Creating a rejuvenation potion
+|{{SCP|Herblore}}
+|0.1x
+|-
+|Subduing the Wintertodt with 500+ points
+|{{SCP|Firemaking}}
+|100x
+|}

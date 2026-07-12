@@ -1,0 +1,20 @@
+{{Dangerous|irs=yes}}
+{{Infobox Activity
+|name = Volcanic Mine
+|image = [[File:Volcanic Mine.png|300px]]
+|release = [[7 September]] [[2017]]
+|update = Fossil Island
+|type = Minigame
+|members = Yes
+|location = [[Fossil Island Volcano]]
+|players = 1-50
+|skills = [[Mining]]
+|currency = Points
+|tutorial = No
+|music = [[Lava is Mine]]
+|map = {{Map|name=Volcanic Mine|x=3814|y=3807|zoom=3}}
+|leagueRegion = Misthalin
+}}
+The '''Volcanic Mine''' is a large volcanic chamber found underneath the [[Fossil Island Volcano]]. The mine entrance is located in the north-east corner of the volcano, with [[Petrified Pete]] guarding its entrance. Players can participate in the eponymous [[minigame]] inside the mine.
+
+To enter the mine, players must have level 50 [[Mining]]. In addition, players must pay Petrified Pete 30 [[numulite]] each time to enter the mine. A one-time fee of 3,000 numulite can also be paid for permanent access.

@@ -1,0 +1,11 @@
+==Introduction==
+[[File:Captain Cain.png|thumb|right|110px|Captain Cain, who teaches the [[Barbarian Assault tutorial|tutorial]].]]
+[[File:Penance Fighter (wave 4).png|right|thumb|width=183x183|A [[Penance Fighter|Penance fighter]], fought by the attacker.]]
+
+The Barbarian Assault minigame is played on a battleground underneath the Barbarian Outpost, which was established by the Barbarians to fight against [[Penance]] creatures. Players can complete the [[Barbarian Assault Tutorial|tutorial]] by talking to [[Captain Cain]] in order to get a basic understanding of how the minigame is played.
+
+Players must form a team of five players in order to enter a game. There are four roles in total: attacker, defender, healer, and collector. One role will have two players; this can be any role, but it is typically the role of healer or attacker. Each role is needed to help the rest of the team complete a wave. '''If a teammate leaves or is killed at any time, the entire group must restart the wave from the beginning.''' Players must play the ten waves in order.
+
+Completion of each wave will reward each player with [[honour points]] specific to the role they chose. Honour points can be used to purchase a variety of combat-based equipment, such as the [[fighter torso]], known for its [[Strength bonus]]. Players can also gamble their points for a chance to receive the [[dragon chainbody]] or the [[Pet penance queen|Penance Queen pet]].
+
+Players can check how many honour points they have earned by talking to [[Commander Connad]] near the [[Barbarian Outpost#Bank chest|bank chest]], or by checking the [[Blackboard (Barbarian Assault)|blackboard]].

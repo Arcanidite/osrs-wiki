@@ -1,0 +1,22 @@
+==Transportation==
+{{Map|align=right|width=250|height=400|zoom=1|x=1640|y=3911
+|mtype:line,stroke-width:5
+,1630:3965,1630:3937,1627:3933,1627:3930,1630:3927,1637:3926,1640:3924,1644:3920,1644:3917,1642:3914,1640:3913
+,1635:3912,1611:3912,1609:3911,1607:3908,1607:3891,1608:3888,1609:3886,1615:3880,1630:3876
+,1633:3874,1634:3872,1634:3840,1636:3837,1639:3836,1666:3836
+|mtype:dot,fill:#00FF00,1630:3940
+|mtype:dot,fill:#FFA500,1671:3833
+|mtype:dot,fill:#03d196,1630:3840
+|mtype:rstext,weight:bold,label:Games necklace,colour:#00FF00,1632:3947
+|mtype:rstext,weight:bold,fontsize:12px,label:Fairy ring <br> {{Fairycode|cis}},colour:#F0FF00,1640:3870
+|mtype:rstext,weight:bold,fontsize:12px,label:Lovakengj<br> Minecart<br> Network,colour:#FFA500,1671:3850
+|mtype:rstext,weight:bold,fontsize:12px,label:Arceuus<br> Library<br> Teleport,colour:#03d196,1610:3838
+}}
+There are four main methods for travelling to the Wintertodt camp in order to enter the [[Doors of Dinh]]. These options, ordered from fast to slow, are:
+* Players can reach the camp via [[games necklace]], provided they have already taken [[Veos]]' ship to Great Kourend once.
+* Players can choose the [[Northern Tundras]] option in the [[Lovakengj Minecart Network]] which brings them just south-east of Wintertodt.
+* Players can use the [[fairy ring]] code {{Fairycode|CIS}} and walk west along the path, provided they have visited Great Kourend previously through some other means.
+* Players can use the [[Arceuus Home Teleport]] by switching to the [[Arceuus spellbook]] by speaking with [[Tyss]]. This can be done with no requirements and is particularly useful for players who chose to start their Ironman accounts by training at Wintertodt, as there are few fast travel methods at low levels for iron accounts.
+
+=== Bank chest ===
+There is a tent with a [[bank chest]] just east of the game necklace teleport location. Players can use this bank to prepare for the fight, or as a close bank to a teleport for tasks such as [[Slayer]] and [[Farming runs]]. Note that players fighting the Wintertodt will need to '''leave the game''' to use the bank.

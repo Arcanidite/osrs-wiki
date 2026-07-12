@@ -1,0 +1,53 @@
+==== Level Upgrades ====
+Players may upgrade the level in a particular role from level 1 up to level 5. By upgrading their levels, players gain extra abilities such as extra damage or higher healing. Obtaining the maximum level in all roles is one of the requirements needed to complete the [[Elite Kandarin Diary]]. A total of 1,400 honour points are needed to obtain a level 5 role. 5,600 points are required to obtain level 5 in all roles. Points cap at 5,000 in each role.
+
+A summary of the level upgrades for each role may be found in the following table:
+{| class="wikitable align-center-1 align-center-2"
+!Level
+!Honour Points
+![[File:Collector icon.png]] Collector
+![[File:Healer icon.png]] Healer
+![[File:Attacker icon.png]] Attacker
+![[File:Defender icon.png]] Defender<ref name="lure" group="D">Note that the in-game displayed reward for the Defender role is false. Upgrading beyond level 2 does not actually improve lure range, although level 5 is still required for the [[Elite Kandarin Diary]].</ref>
+|-
+|1
+|{{NA}}
+|Bag holds 2 eggs
+| Heals 10 hitpoints
+| +1 bonus damage
+| +4 luring range spaces
+|-
+|2
+|200
+|Bag holds 4 eggs
+Conversion chance ~20%
+|Heals 15 hitpoints
+| +2 bonus damage
+| +5 luring range spaces
+|-
+|3
+|300
+|Bag holds 6 eggs
+Conversion chance ~40%
+|Heals 20 hitpoints
+| +3 bonus damage
+| +5 luring range spaces
+|-
+|4
+|400 
+| Bag holds 7 eggs
+Conversion chance ~60%
+|Heals 25 hitpoints 
+| +4 bonus damage
+| +5 luring range spaces
+|-
+|5
+|500 
+|Bag holds 8 eggs
+Conversion chance ~85%
+|Heals 35 hitpoints
+| +5 bonus damage
+| +5 luring range spaces
+|}
+ 
+<references group="D" />

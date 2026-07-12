@@ -1,0 +1,4 @@
+==Transportation==
+The [[Minigame Teleport]] spell will take players directly to the [[Void Knights' Outpost]] (20 minute cooldown), as will [[Pest Control Teleport]]s, which are obtained as a reward from [[Treasure Trails]], and may also be bought from other players on the [[Grand Exchange]].
+
+Alternatively, players may travel to the island with the [[Squire (Void Knights)|squire]] found on the [[Port Sarim]] docks, south of the ship the [[Lady Lumbridge]].

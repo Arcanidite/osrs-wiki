@@ -580,3 +580,5 @@
 {"key": "wave4:minigames", "status": "done", "payload": {"result": "52 classify:minigame:* rows contributed (49 minigames + 3 D&D), 0 skipped"}, "ts": "2026-07-12T10:17:31Z"}
 {"key": "wave4:skill-unlocks", "status": "claimed", "payload": null, "ts": "2026-07-12T10:19:27Z"}
 {"key": "wave4:skill-unlocks", "status": "done", "payload": {"contributed": 115, "skipped": 0, "domain": "unlock", "source": "Unlockable content page, sections: Transportation/Magics/Locations/Guilds/Equipment/Doors and passages/Miscellaneous"}, "ts": "2026-07-12T10:22:22Z"}
+{"key": "minigamedb-suite", "status": "claimed", "payload": null, "ts": "2026-07-12T11:10:51Z"}
+{"key": "minigamedb-suite", "status": "done", "payload": null, "ts": "2026-07-12T11:16:14Z"}

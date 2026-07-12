@@ -1,0 +1,12 @@
+==Transportation==
+The [[Portal (Wizards' Tower)|portal]] to the Guardians of the Rift minigame resides in the basement of the [[Wizards' Tower]]. Players can get there faster than walking by using the following:
+* The [[amulet of the eye]] teleport.
+* A [[Minigame Teleport]] through any spellbook or the [[Grouping]] tab to Guardians of the Rift.
+* A [[necklace of passage]] teleport to the Wizards' Tower.
+* [[Fairy ring]] code {{Fairycode|dis}} to the Wizards' Tower.
+* An [[amulet of glory]] teleport to [[Draynor Village]] and walking south.
+* [[Lumbridge Home Teleport]] and walking south-west.
+* Teleporting to [[the Scar]] via [[ring of shadows]], requiring [[Desert Treasure II]].
+
+==== Bank chest ====
+Players looking to change their gear or inventory loadout may use the [[bank chest]] found just north of the portal. For players who are using the [[Scar essence mine]], as well as players who have the amulet of the eye, the bank is fairly close to a teleport, making it an efficient stop for players looking to bank and return.

@@ -1,0 +1,79 @@
+==Building a house==
+[[File:House Options interface.png|thumb|The House Options interface can be used to toggle Building Mode]]
+The player's first house starts off with only a parlour and garden, but new rooms and furniture can be easily built.
+
+===Building mode===
+{{Main|Building mode}}
+In order to begin customising a house, a player must enter their house with '''building mode''' turned on. This can be done either by entering portal in building mode or by changing the building mode settings in house options of the Settings menu. Changing the setting in the Settings menu while not in a house, the player will automatically be in building mode the next time they cast [[Teleport to House]]. The player cannot drop items while in building mode and pets are not allowed. Building mode cannot be turned on while guests are in the house.
+
+===Adding new rooms===
+While in building mode, players will see white doors in the entryways of all their rooms. Right-clicking on these and selecting '''build''' will allow the player to see a menu of all the rooms that can be built attached to that door. The player will also see the level requirement and the price of the new room. When a room is selected, the player will see a ghost version of the new room and will be able to rotate the room to any desired rotation provided that the doorways line up. If a room is occupying the spot the player wants to build, they are given the option to remove it, unless it is a menagerie or costume room, where it is moved instead to that location for the building fee.
+
+===Removing rooms===
+A room can be removed in building mode by right-clicking the door to the room and selecting the '''build''' option. This brings up a prompt asking if you want to remove the room. You cannot remove a room on the {{FloorNumber|uk=0}} that is supporting another room on the {{FloorNumber|uk=1}}. This rule does not apply to dungeon rooms under the {{FloorNumber|uk=0}} rooms.
+
+It is advisable to remove all the built items in a room before removing the room. In most cases, nothing is gained by removing items, but in some cases items are recovered. For example, armour, swords, and capes that are part of a display can be recovered.
+
+===Moving rooms===
+Rooms can be moved using the House Viewer, which can be found within the house options in your settings tab.
+
+[[File:House viewer interface.png]]
+
+[[File:House Viewer button location.png|The location of the House Viewer button]]
+
+===Planning the layout===
+The most important point to consider when designing the layout is which rooms are placed next to the garden portal. For beginning players, the [[workshop]] or [[kitchen]] can be the best rooms next to the portal because they offer fast training methods such as building flatpacks or larders. [[Portal chamber]]s are very useful to place directly adjacent to the portal, since this allows quick and easy access to teleports for when players wish to use their house as a teleport hub. Another room that is often put near the portal is a [[chapel]], which will allow players to train and recharge prayer more quickly.
+
+Another important point to consider when building a house is which direction that rooms face. While this is not a huge concern for most rooms, some orientations can make moving through the house much faster. For example, normal staircases can be annoying if built facing the wrong direction unlike [[spiral staircase]]s, which can be accessed from any side. When a staircase is added to a skill hall, it will connect to the room above or below by default if and only if the room is facing the proper direction. This restriction is in effect for both normal staircases and, even though they do not have a "direction", spiral staircases. Another good example is the orientation of the [[exit portal]].
+
+===Maximum number of rooms and area===
+From level 1 to 25 Construction, a maximum of 24 rooms (including gardens) can be built. At level 26 and every 6 levels thereafter to level 92, an additional room can be built. One additional room can also be built at levels 96 and 99, for a maximum of 38.
+
+There is also a maximum area that can be built on that also goes up with Construction level, starting at 3 rooms by 3 rooms up to 7 rooms by 7 rooms.
+
+As your maximum house dimensions goes up, so does your yard space. Yard space increases by adding a row to the top of your current yard space, and a column to the right. You should plan accordingly should you desire a centred house, as increasing your construction over time will off-centre it. Players who wish to centre a 3x3 or 4x4 house that is currently off-centre should move all rooms exactly one tile south-west using the House Viewer, starting with the most south-western room and ending with the most north-eastern room.
+{| class="wikitable" style="text-align:center;"
+|-
+!Construction<br/>level
+!Maximum number<br/>of rooms
+!Maximum house<br/>dimensions
+!Yard space
+|-
+|1||24||3×3||5×5
+|-
+|15||24||4×4||6×6
+|-
+|26||25||4×4||6×6
+|-
+|30||25||5×5||7×7
+|-
+|32||26||5×5||7×7
+|-
+|38||27||5×5||7×7
+|-
+|44||28||5×5||7×7
+|-
+|45||28||6×6||8×8
+|-
+|50||29||6×6||8×8
+|-
+|56||30||6×6||8×8
+|-
+|60||30||7×7||9×9
+|-
+|62||31||7×7||9×9
+|-
+|68||32||7×7||9×9
+|-
+|74||33||7×7||9×9
+|-
+|80||34||7×7||9×9
+|-
+|86||35||7×7||9×9
+|-
+|92||36||7×7||9×9
+|-
+|96||37||7×7||9×9
+|-
+|99||38||7×7||9×9
+|}

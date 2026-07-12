@@ -1,0 +1,53 @@
+===Reward shop===
+{{Main|Mysterious Hallowed Goods}}
+While looting [[Coffin (Hallowed Sepulchre)|coffins]] the player will be rewarded with [[Hallowed marks]]. These can be used in the reward shop in order to purchase the following unique items:
+{| class="wikitable align-center-1 align-center-3"
+! colspan="2" |Reward
+! style="white-space:nowrap;" |Cost in {{plinkp|Hallowed mark}}
+!Description
+|-
+|{{plinkt|Hallowed crystal shard|txt=Hallowed&nbsp;crystal&nbsp;shard}}
+|{{Currency|Hallowed mark|1}}
+|Used to teleport to the Hallowed Sepulchre lobby. They can be purchased from the [[Mysterious Hallowed Goods]] shop.
+|-
+|{{plinkt|Hallowed token}}
+|{{Currency|Hallowed mark|10}}
+|This token, when consumed within the Hallowed Sepulchre, will add an extra minute to the remaining time. You may use more than one token per attempt.
+|-
+|{{plinkt|Hallowed grapple}}
+|{{Currency|Hallowed mark|100}}
+|This grapple, when equipped in the ammo slot, will always succeed grappling a [[Pillar (Hallowed Sepulchre)|Pillar]].<br/>This grapple cannot be used anywhere outside of the crypt.
+|-
+|{{plinkt|Hallowed focus}}
+|{{Currency|Hallowed mark|100}}
+|This focus, when equipped in the off-hand slot, will guarantee the success of conjuring [[Portal Frame]]s (regardless of the spell used and the player's Magic level) as well as speed up the process.
+|-
+|{{plinkt|Hallowed symbol}}
+|{{Currency|Hallowed mark|100}}
+|This symbol, when equipped in the necklace slot, will halve the number of sacrifices required to light a [[Saradomin Brazier]] and speed up walking through prayer barriers.
+|-
+|{{plinkt|Hallowed hammer}}
+|{{Currency|Hallowed mark|100}}
+|This hammer will never break nails when repairing [[Bridge (Hallowed Sepulchre)|Broken Bridge]]s.<br/>This hammer is wieldable and cannot be used anywhere outside of the crypt.
+|-
+|{{plinkt|Hallowed ring}}
+|{{Currency|Hallowed mark|250}}
+|This ring, when equipped in the ring slot, will prevent the user from taking damage and save a bit of time when failing an obstacle.<br/>It will "teleport them in the nick of time" and send them back to the start of the obstacle reducing the time penalty, and eliminating the need to bring food.
+|-
+|{{plinkt|Dark dye}}
+|{{Currency|Hallowed mark|300}}
+|This dye can be used on any piece of the [[Graceful outfit|Graceful outfit]] to recolour it into the Hallowed Graceful variant. A total of 6 dark dyes are needed to recolour the full set.
+|-
+|{{plinkt|Dark acorn}}
+|{{Currency|Hallowed mark|3000}}
+|This acorn, when used on the [[Giant Squirrel]] [[Pet | pet]], will turn it into a black and red version to match the dark graceful set.<br/>It is a permanent unlock and can be toggled back to its original colour at any time.
+|-
+|{{plinkt|Hallowed sack}}
+|{{Currency|Hallowed mark|100}}
+|When opened, hallowed sacks give loot found in coffins within the Hallowed Sepulchre. <br/>Each sack gives five rolls from the low-tier loot table, one roll from the mid-tier loot table, and two rolls from the high-tier loot table.
+|}
+The equipable Hallowed items acquired from the shop count as Saradomin items for the purpose of regaining run energy from the Magical Obelisks at the end of each floor, as well as for protection purposes in [[God Wars Dungeon]].
+
+Players can also speak to the [[Mysterious Stranger (Hallowed Sepulchre)|Mysterious Stranger]] to unlock the option of creating private instances for a one-time fee of 200 hallowed marks. Private instances are useful for having consistent runs across all floors, as the timing for the traps can be off slightly if players are in a public instance that already has other players inside.
+
+Buying all items from the reward shop, including six dark dyes to recolour a full graceful set, and the option for a private instance, costs 5650 hallowed marks. This does not include the three consumable items: Hallowed tokens, Hallowed crystal shards, and Hallowed sacks.

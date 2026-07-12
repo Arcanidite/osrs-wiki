@@ -1,0 +1,77 @@
+{{External|rs}}
+[[File:Rogue mask chathead.png|left]]
+'''Rogue equipment''' is a set of [[skilling equipment]] obtained from a [[rogue's equipment crate]], which are obtained from successfully opening the [[wall safes]] at the end of the [[Rogues' Den]] minigame. As they are untradeable, the set effectively requires level 50 [[Agility]] and [[Thieving]] to wear.
+
+The set of clothing can be stored in an [[armour case]] within the [[costume room]] of a [[player-owned house]].
+
+While wearing pieces of the rogue armour, there is a chance of [[pickpocketing]] twice the loot from an [[NPC]], with the full set guaranteeing double loot with the exception of [[scroll boxes]] and [[coin pouch]]es, where the set instead has chance to give you one coin pouch as well as an amount of coins equal to the value of that pouch, rather than just two pouches. Each piece increases the chance of receiving double loot by 15%, unless all five components are worn together, in which case the odds of doubling the loot becomes 100%.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1096241044268769282|date=15 February 2019|archiveurl=https://reldo.runescape.wiki/i/102933|archivedate=25 February 2023|quote=It goes 15%, 30%, 45%, 60%, 100% as you equip five pieces.}} The rogue armour pieces are interchangeable for the sake of its set effect, only the number of pieces worn determines the overall activation rate.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1317554586077585410|date=17 October 2020|archiveurl=https://reldo.runescape.wiki/i/105642|archivedate=3 November 2021|quote=[Hey Ash, does each piece of rogue equipment give the same chance at doubling pickpocket loot?] They do.}} 
+
+{| class="wikitable align-center-1 align-center-2"
+!Equipped<br/>pieces
+!Activation<br/>chance
+|-
+|1
+|15%
+|-
+|2
+|30%
+|-
+|3
+|45%
+|-
+|4
+|60%
+|-
+|5
+|100%
+|}
+
+Experience drops remain unaffected when the rogue armour set effect doubles the loot of a pickpocket.
+
+The set effect does not affect stealing from chests, stalls, or activities such as [[Pyramid Plunder]], [[Hallowed Sepulchre]] or [[Underwater Agility and Thieving]]. It also does not affect the rate at which one receives [[Scroll box (medium)|scroll boxes]] of any tier.
+
+==Components==
+{{Infotable Bonuses|Rogue mask|Rogue top|Rogue gloves|Rogue trousers|Rogue boots}}
+
+==Gallery==
+<gallery heights="250" style="text-align:left">
+Rogue equipment equipped male.png|Rogue armour on body type A.
+Rogue equipment equipped female.png|Rogue armour on body type B.
+</gallery>
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 6 August 2020
+|update = PVP Changes
+|change = The Rogues' Kit set has been listed on the Equipment Info screen.
+}}
+{{Subject changes
+|change = The Rogue's set is now obtained from [[Rogue equipment crate]]s, allowing players to choose which piece of the outfit they wish to receive, allowing [[Ultimate ironmen]] to receive the full set once again.
+|date = 1 June 2017
+|update = The Inferno
+}}
+{{Subject changes
+|change = The Rogue's set is now obtained in a fixed order until the full set is owned, and randomly thereafter.
+|date = 18 May 2017
+|update = Imbue Your Sceptre, Double Your Deaths, and get 3 for 2 on membership
+}}
+{{Subject changes
+|change = Wearing items from the Rogues set increases the chance of pickpocketing double loot with the full set providing a 100% chance.
+|date = 1 September 2016
+|update = Skill Pets & Family Pest
+}}
+{{Subject changes footer}}
+
+==Trivia==
+*The level 135 [[Rogue]]s at the [[Rogues' Castle]] appear to be wearing a set of this armour.
+*Some items are unaffected by Rogue's Equipment, such as [[triangle sandwich]]es from the construction workers at the [[Tower of Life (building)|Tower of Life]].
+
+==References==
+{{Reflist}}
+
+{{Rogues' Den}}
+{{Skilling outfits}}
+[[Category:Armour]]
+[[Category:Clothing sets]]
+[[Category:Equipment sets]]

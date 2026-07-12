@@ -1,0 +1,4 @@
+=== Obtaining ===
+The amulet is an untradeable drop from killing [[lizardmen]], [[Lizardman brute|brutes]], and [[Lizardman shaman|shamans]]. The drop rate from monsters can be improved from 1 in 250 to 1 in 125 after completion of the [[easy Kourend & Kebos Diary]]. It can most easily be obtained from the lizardmen at a small skirmish next to a tent just slightly north of [[Lacerta Falls]] due to the abundance of NPC allies, multicombat fighting, and quick respawns.
+
+It can also be obtained by stealing from [[stone chest]]s in the [[Lizardman Temple]] beneath [[Molch]], at a rate of 1 in 300.

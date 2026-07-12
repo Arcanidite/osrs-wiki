@@ -1,0 +1,5 @@
+==Requirements==
+* Completion of [[Temple of the Eye]] quest
+* Level 10 [[Runecraft]] is required for Temple of the Eye, although only an additional 154 experience is needed to reach this level after completing its prerequisite quests. Level 27 Runecraft is required to play the minigame after quest completion. Due to experience gained from Temple of the Eye, players will have reached at least level 27 Runecraft before they start the minigame.  However in seasonal game modes such as [[Leagues]] it is possible to not meet this requirement if the quest is auto completed.
+* Any [[pickaxe]]
+* A [[chisel]] (only if crafting guardians)

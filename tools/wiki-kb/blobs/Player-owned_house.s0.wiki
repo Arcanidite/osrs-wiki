@@ -1,0 +1,10 @@
+{{External|rs|rsc=Player owned houses}}
+{{Redirect|House|Baba Yaga's house|House (Berty)}}
+{{Otheruses|def=no|a list of all items and upgrades within the Construction skill|Construction/Level up table}}
+A '''player-owned house''' (often shortened to '''POH''') is the focus of the [[Construction]] skill. It can be bought from an [[estate agent]] for {{Coins|1000}}, or received for free upon completion of the [[miniquest]] [[Daddy's Home]]. Players' houses are located in [[Rimmington]] by default but can be moved to one of 8 different cities for a fee by talking to an [[estate agent]], if the required (unboostable) Construction level is met. Players can enter the house through [[Portal (Player-owned house)|house portals]], labelled on the [[world map]] as [[File:House portal icon.png]]. For a list of pros and cons on different locations consult the [[Portal (Player-owned house)|house portal]] page.
+
+Additionally, owning a house is required for the following:
+* Ability to use an [[experience lamp]] on the Construction skill
+* Ability to gain Construction experience from repairing [[Wintertodt]] [[brazier]]s, [[Tempoross]] [[totem pole]]s, Tempoross [[Mast (Tempoross)|masts]] and [[Vale Totems|Vale Totem poles]]
+
+{{Table/POH locations}}

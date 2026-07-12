@@ -1,0 +1,20 @@
+{{Infobox Location
+|name = Motherlode Mine
+|image = [[File:Motherlode Mine.png|300px]]
+|release = [[24 April]] [[2014]]
+|update = The Motherlode Mine!
+|members = Yes
+|floors = 2
+|location = [[Dwarven Mine]] ([[Asgarnia]])
+|race = [[Human]]s, [[Dwarf|Dwarves]]
+|teleport = [[Skills necklace]] (Mining Guild)
+|music = [[Pick & Shovel]]
+|map = {{Map|name=Motherlode Mine|3744,5664|mapID=-1}}
+|type = dungeon
+|leagueRegion = Asgarnia
+}}
+The '''Motherlode Mine''' is a [[Members-only]] low-intensity [[Mining]] training area located in the [[Dwarven Mine]]. No level is required to access it, but {{SCP|Mining|30|link=yes}} {{Boostable|no}} is required to mine in the area. The activity involves mining [[ore vein]]s for [[pay dirt]], depositing the pay dirt into a [[hopper (Motherlode Mine)|hopper]] to clean it, then collecting cleaned ores as well as [[golden nuggets]] from the [[Sack (Motherlode Mine)|sack]] after a short delay.
+
+The mine consists of two levels, with the upper level requiring {{SCP|Mining|57|link=yes}}{{Boostable|no}} and a one time payment of 100 golden nuggets to access. The hopper on this level also requires an additional 50 nuggets to use.
+
+[[Golden nuggets]] can also be exchanged for a variety of [[Motherlode Mine#Rewards|other rewards]] from [[Prospector Percy]], including the [[Prospector set]], [[gem bag]] and [[coal bag]].

@@ -1,0 +1,56 @@
+==Rewards==
+[[Golden nugget]]s can be obtained by searching the sack after cleaning [[pay-dirt]], with each pay-dirt having a 3.13% chance of being a nugget, regardless of a player's [[Mining]] level. This means that, on average, a player should receive a golden nugget every 32 pay-dirts cleaned. 
+
+Golden nuggets stack, and will be collected all at once when searching the sack. Once obtained, they can be spent by speaking to Prospector Percy, to spend at either his [[Prospector Percy's Nugget Shop|shop]], or for various upgrades inside the Motherlode Mine.
+
+===Prospector Percy's Nugget Shop===
+{{Main|Prospector Percy's Nugget Shop}}
+
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=800|delta=0|currency=Golden nugget|column1=Exp boost|column2=Boost per nugget|hidege=yes|bucket=No}}
+{{StoreLine|name=Prospector helmet#Motherlode Mine|image=Prospector helmet.png|displayname=Prospector helmet|restock=1|stock=100|column1=0.4%|column2=0.010%/{{plinkp|Golden nugget}}|gemw=no}}
+{{StoreLine|name=Prospector jacket#Motherlode Mine|image=Prospector jacket.png|displayname=Prospector jacket|restock=1|stock=100|column1=0.8%|column2=0.013%/{{plinkp|Golden nugget}}|gemw=no}}
+{{StoreLine|name=Prospector legs#Motherlode Mine|image=Prospector legs.png|displayname=Prospector legs|restock=1|stock=100|column1=0.6%|column2=0.012%/{{plinkp|Golden nugget}}|gemw=no}}
+{{StoreLine|name=Prospector boots#Motherlode Mine|image=Prospector boots.png|displayname=Prospector boots|restock=1|stock=100|column1=0.2%|column2=0.007%/{{plinkp|Golden nugget}}|gemw=no}}
+{{StoreLine|name=Coal bag|bucketname=Coal bag#Closed|stock=1|column1=N/A|column2=N/A|gemw=no|restock=1}}
+{{StoreLine|name=Gem bag|bucketname=Gem bag#Closed|stock=1|column1=N/A|column2=N/A|gemw=no|restock=1}}
+{{StoreLine|name=Soft clay pack|bucketname=Soft clay pack#Golden nuggets|stock=1000|column1=N/A|column2=N/A|gemw=no|restock=1}}
+{{StoreLine|name=Bag full of gems|bucketname=Bag full of gems#Golden nuggets|image=Bag full of gems (golden nuggets).png|stock=100|column1=N/A|column2=N/A|gemw=no|restock=1}}
+{{StoreTableBottom}}
+
+===Motherlode Mine Upgrades===
+In addition to the rewards in Prospector Percy's shop, players can speak to [[Prospector Percy]] for the following upgrades inside the Motherlode Mine:
+{| class="wikitable sortable" style="text-align:center;"
+! Upgrade
+! {{plinkp|Golden nugget|txt=Golden nuggets}}
+|-
+| Upper floor{{efn|With 57 {{SCP|Mining}}}}
+| 100
+|-
+| Super Hopper
+| 50
+|-
+| Pay-dirt sack upgrade{{efn|Allows the [[Sack (Motherlode Mine)|pay-dirt sack]] to hold up to 189 pay-dirt, up from 108}}
+| 200
+|- class="sortbottom"
+! Total
+! 350
+|}
+{{Notelist}}
+
+Buying one of every unique item and upgrade (without selling back any of the [[prospector outfit]]) would cost a total of 730 golden nuggets.
+
+===Reward order===
+The [[Prospector helmet]] is required for a hard [[Falador Diary]] task. Players looking to complete the diary may consider purchasing the helmet first. If planning to do more [[Motherlode Mine]] in the future, it may be worth selling the helmet back for 32 nuggets (loss of 8) after completing the task in order to unlock the upper floor upgrades first. The helmet '''cannot''' be sold if purchased through the [[Volcanic Mine]] activity.
+
+The upper floor and hopper unlocks should be prioritized if players plan to do more Motherlode Mine, as these provide the most efficient [[Mining]] experience with less attention required.
+
+Outfit pieces should then be obtained in order of what has the highest bonus per nugget; jacket, legs, helmet, then boots. The [[Varrock armour 4]] may be used in place of a prospectors jacket when the elite [[Varrock Diary]] is completed.
+
+The [[coal bag]] is mainly used for [[Blast Furnace]] smithing, where it greatly affects XP and GP rates for any bars requiring coal. See 
+[[Blast Furnace/Strategies]] for a detailed overview.
+
+Purchasing the [[gem bag]] along with an equipped and '''charged''' [[amulet of glory]] will maximise gem collection without affecting experience rates. 
+
+The [[Sack (Motherlode Mine)|sack]] capacity upgrade may be purchased last, as the increased experience rates from an additional three deposits per inventory will be negligible compared to the upper level and prospector kit, and 200 [[golden nuggets]] is significantly more expensive.
+
+Players who wish to unlock the upper level will, on average, need to mine from level 30 to level 68, in order to receive enough golden nuggets for the full outfit and the upper level fee. On average, players will need to mine 17,519 pay-dirt to unlock the upper level, upgraded bag, and complete Prospector's kit.

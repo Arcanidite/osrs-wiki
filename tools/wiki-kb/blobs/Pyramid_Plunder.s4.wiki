@@ -1,0 +1,5 @@
+==Transportation==
+[[Jalsavrah]] is the northern pyramid in the city of [[Sophanem]]. You can get there in several ways;
+* Use the [[Pharaoh's sceptre]] to directly enter the minigame lobby of [[Jalsavrah]]. You have to charge the sceptre first by talking to the [[Guardian mummy]] inside this room.
+* Travel to [[fairy ring]] code {{fairycode|AKP}} and enter the city's eastern gate. This method requires unlocking the [[Necropolis]] during [[Beneath Cursed Sands]] and 62 [[Agility]], which can be boosted.
+* Take Shantay Pass Carpet  ('''OR''' break a [[Pollnivneach teleport]]/use the house portal) to Pollnivneach, then run south and ride the [[magic carpet]] from [[Pollnivneach]] to Sophanem for 400 [[coins]], or 200 with the [[Rogue Trader]] miniquest.

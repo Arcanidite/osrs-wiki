@@ -1,0 +1,9 @@
+==Starting a game==
+Pest Control can be played with between 5 and 25 players, in one of three difficulties (Novice, Intermediate, Veteran) depending on the lander the player chooses to board. It is recommended to use the offical worlds to find other players, as the landers will otherwise usually be empty without a dedicated group.
+
+Once at least 5 players have joined the lander, a 2 minute countdown begins before the game will start. If 25 players have joined, the game will begin automatically.
+
+If there are more than 25 players waiting on the lander, any players not taken will be assigned a greater priority of being taken in the next batch of players. This priority number will increase by 1 each time the player is not taken on a consecutive lander.
+
+===Restrictions===
+Pets are allowed on the island, but not on the landers or in the minigame itself. In addition, [[Dwarf multicannons]] and [[Alchemy spells]] may not be used during the activity. Finally, leaving the activity requires right-clicking the Squire by the boat and selecting "Leave"; teleports will not work.

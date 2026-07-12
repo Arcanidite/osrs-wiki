@@ -1,0 +1,50 @@
+==Rewards==
+{{Main|Petrified Pete's Ore Shop}}
+
+Should the player leave the mine alive '''via the rope exit''', they will gain participation points based on their performance in the minigame. Ore fragments obtained will automatically be given to [[Petrified Pete]]. In return, he will grant the player a chunk of [[Mining]] experience and reward points that can be spent at his [[Petrified Pete's Ore Shop|Ore Shop]]. [[Calcite]], [[pyrophosphite]], [[Fossil Island fossil|fossils]], and [[numulite]] earned from mining the rock will be kept. At the end of each game, Pete grants the player 3.8 Mining experience for each point earned (3.895 with the [[prospector kit]] bonus). Including the experience earned during the game, approximately 5.5 Mining experience is earned per point. Players who die or teleport out will have their fragments disintegrate into nothing and will not receive any points or bonus experience.
+
+The experience rates scale per level. At 50 Mining, the expected maximum is approximately 40,000 experience per hour (around 7200 points) and at 99 Mining, players can expect to get upwards of 85,000–95,000 experience per hour (around 15,400–17,200 points) with well-coordinated gameplay. This scaling is not entirely linear, as it is affected by the quality of the ore fragments mined, with the highest being runite unlocked at level 85.
+
+{| class="wikitable"
+!{{SCP|Mining}} Level
+!{{plinkp|Rune pickaxe}} XP/h
+!{{plinkp|Dragon pickaxe}} XP/h
+!{{plinkp|Crystal pickaxe}} XP/h
+|-
+|70
+|64,200
+|68,000
+|{{NA}}
+|-
+|75
+|65,200
+|69,000
+|75,000
+|-
+|80
+|68,000
+|72,000
+|81,000
+|-
+|85
+|71,800
+|76,000
+|86,000
+|-
+|90
+|74,700
+|79,000
+|90,000
+|-
+|95
+|76,500
+|81,000
+|91,000
+|-
+|99
+|79,300
+|84,000
+|94,000
+|}
+
+The maximum amount of points that the player can have is {{formatexpr|2^21-1}}. A warning message will be given when nearing the points cap. [[Runite ore]] typically gives the most value per point and each point has a maximum value of {{Coins|{{Max|{{GEP|Iron ore}}/30|{{GEP|Silver ore}}/55|{{GEP|Coal}}/60|{{GEP|Gold ore}}/150|{{GEP|Mithril ore}}/150|{{GEP|Adamantite ore}}/300|{{GEP|Runite ore}}/855|{{GEP|Volcanic ash}}/40|{{GEP|Calcite}}/70|{{GEP|Pyrophosphite}}/70}}}} at current GE prices. [[Volcanic ash]] is also somewhat valuable and useful for [[Ironman Mode|Ironmen]].

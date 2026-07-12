@@ -1,0 +1,83 @@
+== Rewards ==
+[[File:Commander Connad.png|thumb|width=328x328|Players can buy rewards from [[Commander Connad]].]]
+
+[[Honour points]] can be used to increase the level of each role, exchanged for combat equipment, or gambled. Players gain honour points at the end of each successful wave based on their performance in their role and the team's overall performance. With each successive wave, players earn more points as the difficulty increases. Upon killing the [[Penance Queen]] in the last wave, players will receive 80 honour points in their role and 5 points in the other 3 roles. Players can access their rewards by speaking to [[Commander Connad]] and accessing his [[Barbarian Assault Reward Shop|rewards shop]].
+
+==== Level Upgrades ====
+Players may upgrade the level in a particular role from level 1 up to level 5. By upgrading their levels, players gain extra abilities such as extra damage or higher healing. Obtaining the maximum level in all roles is one of the requirements needed to complete the [[Elite Kandarin Diary]]. A total of 1,400 honour points are needed to obtain a level 5 role. 5,600 points are required to obtain level 5 in all roles. Points cap at 5,000 in each role.
+
+A summary of the level upgrades for each role may be found in the following table:
+{| class="wikitable align-center-1 align-center-2"
+!Level
+!Honour Points
+![[File:Collector icon.png]] Collector
+![[File:Healer icon.png]] Healer
+![[File:Attacker icon.png]] Attacker
+![[File:Defender icon.png]] Defender<ref name="lure" group="D">Note that the in-game displayed reward for the Defender role is false. Upgrading beyond level 2 does not actually improve lure range, although level 5 is still required for the [[Elite Kandarin Diary]].</ref>
+|-
+|1
+|{{NA}}
+|Bag holds 2 eggs
+| Heals 10 hitpoints
+| +1 bonus damage
+| +4 luring range spaces
+|-
+|2
+|200
+|Bag holds 4 eggs
+Conversion chance ~20%
+|Heals 15 hitpoints
+| +2 bonus damage
+| +5 luring range spaces
+|-
+|3
+|300
+|Bag holds 6 eggs
+Conversion chance ~40%
+|Heals 20 hitpoints
+| +3 bonus damage
+| +5 luring range spaces
+|-
+|4
+|400 
+| Bag holds 7 eggs
+Conversion chance ~60%
+|Heals 25 hitpoints 
+| +4 bonus damage
+| +5 luring range spaces
+|-
+|5
+|500 
+|Bag holds 8 eggs
+Conversion chance ~85%
+|Heals 35 hitpoints
+| +5 bonus damage
+| +5 luring range spaces
+|}
+ 
+<references group="D" />
+
+==== Armour ====
+[[File:Fighter torso equipped.png|110px|right|thumb|A player wearing the fighter torso, the most commonly sought item from Barbarian Assault.]]
+Players can purchase Penance armour using their honour points. Certain items require the player to kill the [[Penance Queen]]. Points from all roles are required.
+
+{{StoreTableHead|hidecaption=yes|hidestock=yes|hiderestock=yes|hidege=yes|currency=Honour points|column1=Queen|bucket=No}}
+{{StoreLine|name=Fighter hat|sell=275 each role|buy=220 each role|column1=Yes|stock=|restock=}}
+{{StoreLine|name=Ranger hat|sell=275 each role|buy=220 each role|column1=Yes|stock=|restock=}}
+{{StoreLine|name=Healer hat|sell=275 each role|buy=220 each role|column1=Yes|stock=|restock=}}
+{{StoreLine|name=Runner hat|sell=275 each role|buy=220 each role|column1=Yes|stock=|restock=}}
+{{StoreLine|name=Fighter torso|sell=375 each role|buy=300 each role|column1=Yes|stock=|restock=}}
+{{StoreLine|name=Penance skirt|sell=375 each role|buy=300 each role|column1=Yes|stock=|restock=}}
+{{StoreLine|name=Runner boots|sell=100 each role|buy=80 each role|column1=No|stock=|restock=}}
+{{StoreLine|name=Penance gloves|sell=150 each role|buy=120 each role|column1=No|stock=|restock=}}
+{{StoreLine|name=Granite body|sell={{Coins|95,000}}|buy=N/A|column1=Yes|stock=|restock=}}
+{{StoreTableBottom}}
+
+The total amount in points for a Penance armour set (one hat, gloves, boots, torso, and skirt) is 1,275 points in each of the four different roles. For all items, one would need 2,100 points in every single one of the four different roles, 95,000 [[coins]], and 7 queen kills.
+
+If players have Penance gear they no longer need, they can use it on [[Commander Connad]] to receive a point refund equal to 80% of the purchase price; any queen kills spent will not be refunded. Players hoping to complete the [[collection log]] for Barbarian Assault only need 590 points in each role, assuming the most expensive item required is purchased and immediately sold.
+[[File:Penance Pet.png|thumb|width=100x100|The Penance pet, obtained at a rate of 1/1000 high gambles.]]
+
+==== Gambles ====
+{{Main|Barbarian Assault/Gambles}}
+Players can gamble their points in either a low, medium, or high gamble, in exchange for various resources, armour, and the [[Pet penance queen|Penance Queen pet]]. These gambles are known on mobile as "lucky dips."

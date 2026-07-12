@@ -1,0 +1,26 @@
+{{Infobox Item
+|name = Kharedst's memoirs
+|image = [[File:Kharedst's memoirs.png]]
+|release = [[9 November]] [[2017]]
+|update = The Queen of Thieves & The Depths of Despair
+|members = Yes
+|quest = [[Client of Kourend]]
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options = Reminisce, Wield, Read, Check, Destroy
+|wornoptions = Lunch by the Lancalliums, The Fisher's Flute, History and Hearsay, Jewellery of Jubilation, A Dark Disposition, Check
+|destroy = You can obtain another by speaking to Veos at the Piscarilius docks.
+|examine = The memoirs of a former ruler, written by his young heir.
+|value = 200
+|weight = 0.200
+|id = 21760
+}}
+[[File:Kharedst's memoirs detail.png|left|150px]]
+'''Kharedst's memoirs''' is a [[quest items|quest item]] reward in [[Client of Kourend]]. The book is obtained from [[Veos]], who bought it at an auction, and can be reclaimed by speaking to him (or [[Cabin Boy Herbert]] after partial completion of [[A Kingdom Divided]]) on the [[Port Piscarilius]] docks should players lose it.
+
+It is an equipable book that was a gift from [[King Kharedst IV]], the last king of Great Kourend, to his only daughter [[Rose]]. If players have lost the [[Page (Kharedst's memoirs)|pages]] before putting them in the book, they can be reclaimed from the respective lords of each Kourend house; see the table below for the relevant quests. If the book is charged when destroyed, all charges are retained. After completion of [[A Kingdom Divided]], the book gets upgraded to the [[book of the dead]], which is reclaimed from [[Commander Fullore]] instead. 
+
+The memoirs inside can be read, containing various outings Rose experienced with her father.
+{{ToC}}

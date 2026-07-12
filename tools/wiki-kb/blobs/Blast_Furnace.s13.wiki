@@ -1,0 +1,2 @@
+==Products==
+{{Uses facility list|Blast Furnace}}

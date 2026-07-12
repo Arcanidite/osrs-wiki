@@ -1,0 +1,57 @@
+==Requirements==
+To begin the minigame, at least '''five''' of the following quests must be completed:
+{{Sync}}
+{| width="50%" class="lighttable wikitable individual qc-active" style="text-align: center; " 
+|[[The Ascent of Arceuus]]<ref name="NMZ Melee" group="n">This quest is highly recommended for [[Meleeing]].</ref>
+|[[Contact!]]
+|[[The Corsair Curse]]
+|-
+|[[The Depths of Despair]]<ref name="NMZ Melee" group="n" />
+|[[Desert Treasure I]]<ref name="NMZ Non-Melee" group="n">This quest is highly recommended for [[Smoke Barrage]]/[[Smoke Burst|Burst]] or [[chinning]].</ref>
+|[[Dragon Slayer I]]
+|-
+|[[Dream Mentor]]
+|[[Fairytale I - Growing Pains]]
+|[[Family Crest]]
+|-
+|[[Fight Arena]]<ref name="NMZ Melee" group="n" />
+|[[The Fremennik Isles]]
+|[[Getting Ahead]]
+|-
+|[[The Grand Tree]]
+|[[The Great Brain Robbery]]
+|[[Grim Tales]]
+|-
+|[[Haunted Mine]]
+|[[Holy Grail]]
+|[[Horror from the Deep]]
+|-
+|[[In Search of the Myreque]]
+|[[Legends' Quest]]
+|[[Lost City]]<ref name="NMZ Melee" group="n" /><ref name="NMZ Non-Melee" group="n" />
+|-
+|[[Lunar Diplomacy]]
+|[[Monkey Madness I]]
+|[[Mountain Daughter]]<ref name="NMZ Melee" group="n" />
+|-
+|[[My Arm's Big Adventure]]
+|[[One Small Favour]]
+|[[Recipe for Disaster]]
+|-
+|[[Roving Elves]]
+|[[Shadow of the Storm]]
+|[[Shilo Village]]
+|-
+|[[Song of the Elves]]
+|[[Tale of the Righteous]]
+|[[Tree Gnome Village]]<ref name="NMZ Melee" group="n" /><ref name="NMZ Non-Melee" group="n" />
+|-
+|[[Troll Romance]]
+|[[Troll Stronghold]]
+|[[Vampyre Slayer]]<ref name="NMZ Melee" group="n" /><ref name="NMZ Non-Melee" group="n" />
+|-
+|[[What Lies Below]]<ref name="NMZ Melee" group="n" /><ref name="NMZ Non-Melee" group="n" />
+|[[Witch's House]]<ref name="NMZ Non-Melee" group="n" />
+| class="nohighlight" |
+|}
+<references group="n" />

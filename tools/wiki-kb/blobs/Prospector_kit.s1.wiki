@@ -1,0 +1,30 @@
+==Obtaining==
+{| class="wikitable lighttable sortable align-left-2" style="text-align:center;"
+! colspan="2" |Item
+! XP Boost
+! Buys for (in {{plinkp|Golden nugget}})
+! Sells for (in {{plinkp|Golden nugget}})
+! Boost (%pt. per {{plinkp|Golden nugget}})<sup>[1]</sup>
+|-
+|{{plinkt|Prospector helmet|txt=Helmet}}||+0.4%||40||32||0.010
+|-
+|{{plinkt|Prospector jacket|txt=Jacket}}||+0.8%||60||48||0.013
+|-
+|{{plinkt|Prospector legs|txt=Legs}}||+0.6%||50||40||0.012
+|-
+|{{plinkt|Prospector boots|txt=Boots}}||+0.2%||30||24||0.007
+|- class="sortbottom"
+! colspan="2" | Set bonus
+! +0.5%
+| {{NA|colspan="3"}}
+|-
+! colspan="2" | Complete set
+! +2.5%
+! 180
+! 144
+! 0.042
+|}
+
+When obtaining the set, it is slightly more efficient to start by purchasing the more expensive items first. This can be calculated by adding up the experience boosts one would get when buying the items in either order.
+
+<small>[1] This relates to the relative XP boost to the cost of the piece. Prospector armour doesn't increase golden nugget chance.</small>

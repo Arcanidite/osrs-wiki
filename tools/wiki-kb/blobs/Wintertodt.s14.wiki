@@ -1,0 +1,7 @@
+==Rewards==
+{{Main|Reward Cart}}
+Succeeding in subduing the Wintertodt with a minimum of 500 points will reward players with [[Firemaking]] [[experience]] (''Firemaking level * 100''), as well as being owed at least two rewards from the [[reward cart]]. Every 500 additional points will guarantee an extra reward owed. Additional points over each 500 point threshold give a linearly scaled percentage chance for an extra reward. For example, 1200 points would guarantee 3 rewards plus a 200/500 (40%) chance of getting a fourth reward. The reward cart can hold a maximum of 8,000 rewards.
+
+The player's skill levels will determine the rewards the player gets from searching the cart. High levelled players will get rarer rewards, with lower levelled rewards becoming less common the higher the player's level in that skill is. At the highest point, low levelled rewards are removed from the drop table. While players with low levels in those skills can get rare rewards, the drop rate is very low. The herb, ore, fish, uncut gem, seed drops, and logs are based on the player's [[Herblore]], [[Mining]], [[Fishing]], [[Crafting]], [[Farming]], and [[Woodcutting]] levels respectively,{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1051830039346597888|date=15 October 2018|archiveurl=https://reldo.runescape.wiki/i/100059|archivedate=30 May 2020}} at the time of ''searching'' the cart.
+
+{{Wintertodt/Rewards}}

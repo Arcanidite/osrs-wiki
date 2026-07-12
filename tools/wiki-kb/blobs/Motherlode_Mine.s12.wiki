@@ -1,0 +1,21 @@
+===Motherlode Mine Upgrades===
+In addition to the rewards in Prospector Percy's shop, players can speak to [[Prospector Percy]] for the following upgrades inside the Motherlode Mine:
+{| class="wikitable sortable" style="text-align:center;"
+! Upgrade
+! {{plinkp|Golden nugget|txt=Golden nuggets}}
+|-
+| Upper floor{{efn|With 57 {{SCP|Mining}}}}
+| 100
+|-
+| Super Hopper
+| 50
+|-
+| Pay-dirt sack upgrade{{efn|Allows the [[Sack (Motherlode Mine)|pay-dirt sack]] to hold up to 189 pay-dirt, up from 108}}
+| 200
+|- class="sortbottom"
+! Total
+! 350
+|}
+{{Notelist}}
+
+Buying one of every unique item and upgrade (without selling back any of the [[prospector outfit]]) would cost a total of 730 golden nuggets.

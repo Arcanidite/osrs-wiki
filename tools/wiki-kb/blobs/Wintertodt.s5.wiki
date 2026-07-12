@@ -1,0 +1,16 @@
+==Requirements==
+*Level {{SCP|Firemaking|50}} is required to participate in the Wintertodt fight.
+*Completion of {{SCP|Quest}} [[Druidic Ritual]] is optional to manually create [[rejuvenation potion]]s; otherwise, players can have [[Brew'ma]] do so on their behalf.
+* Owning a [[player-owned house]] is required to gain [[Construction]] experience from repairing broken [[brazier]]s.
+* Items (most are obtainable from [[crate (wintertodt)|crates]] upon entering the [[Doors of Dinh]]):
+** An [[axe]] ([[bronze axe]] obtainable in the Wintertodt)
+** A [[knife]] (obtainable in the Wintertodt)
+** A [[hammer]] (obtainable in the Wintertodt)
+** A [[tinderbox]] (obtainable in the Wintertodt) or [[bruma torch]]
+** Some [[Rejuvenation potion (unf)|rejuvenation potions]] to heal ([[Rejuvenation potion (unf)|unfinished potions]] and [[bruma herb]]s obtainable in the Wintertodt; optional if paired with [[Hitpoints#Regeneration|Hitpoints regenerating items]] such as [[Hitpoints cape]] and [[regen bracelet]])
+** At least four pieces of [[Wintertodt/Warm clothing|warm clothing]] (optional, highly recommended)
+
+=== Warm clothing ===
+{{Main|Wintertodt/Warm clothing}}Throughout the fight, the player will take intermittent passive damage as the cold of the Wintertodt begins to seep into their bones. This passive damage is scaled to each player's [[Firemaking]] level as well as the number of braziers that are currently lit. Wearing [[Wintertodt/Warm clothing|warm or winter-themed equipment]] will reduce the damage taken.
+
+'''Four''' of these warm items need to be equipped to receive the maximum damage-reduction. If the player is not wearing a minimum of four pieces, upon entering the prison, a game message will appear stating "''You feel the cold wind strike you as you enter; perhaps you should find some warmer clothes.''"

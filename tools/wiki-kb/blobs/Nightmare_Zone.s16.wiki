@@ -1,0 +1,28 @@
+===Benefits===
+[[File:Overload usage.gif|frame|A player uses an overload potion.]]
+Benefits include certain potions that can only be used within the minigame. The potions are sold by the dose and are automatically stored in the nearby barrels, with each barrel being able to hold up to 255 doses of each potion. Players can freely withdraw the desired number of doses of each potion before entering a dream, [[empty vial]]s are not required. Upon death in a dream, any unused potions are not lost.
+
+All Nightmare Zone potions (excluding [[Overload (Nightmare Zone)|overloads]], due to the damage dealt) can be drunk extremely quickly and do not delay any hits. Like [[combo food]]s, 28 doses of [[Absorption|absorption potion]] can be drunk at the speed of cleaning an inventory of [[herb]]s, by clicking on them one by one. This can also be done with food/other potions with Nightmare Zone potions, without delaying any hits.
+
+{| class="wikitable align-left-2" style="text-align:center;"
+! colspan="2" |Item
+!Points per dose
+! Effective cost{{efn|Based on average value of herb boxes.}}
+|-
+| {{plinkt|Super ranging (1)}}
+|250
+|{{Coins|{{#var:NMZPointValue}} * 250}}
+|-
+| {{plinkt|Super magic potion (1)}}
+|250
+|{{Coins|{{#var:NMZPointValue}} * 250}}
+|-
+| {{plinkt|Overload (1) (Nightmare Zone)|txt=Overload (1)|pic=Overload (1)}}
+|1,500
+|{{Coins|{{#var:NMZPointValue}} * 1500}}
+|-
+| {{plinkt|Absorption (1)}}
+|1,000
+|{{Coins|{{#var:NMZPointValue}} * 1000}}
+|}
+{{Notelist}}

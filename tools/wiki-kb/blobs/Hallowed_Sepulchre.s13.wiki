@@ -1,0 +1,18 @@
+===Agility pet===
+Upon returning to the Hallowed Sepulchre lobby via a magical obelisk, the player has a chance to receive the Agility [[pet]], the [[giant squirrel]]. The chance of obtaining the pet depends on the difficulty of the floor completed and is as follows:{{CiteVideo|url=https://youtu.be/DCC-PKa0eCo?t=1497|title=OSRS Modcast (Q&A) - Darkmeyer and Hallowed Sepulchre, Player Survey, and more!|timestamp=00:24:57|date=2020-05-27|author=Jagex|site=youtube.com}}
+
+{| class="wikitable"
+!Floor
+!{{SCP|Agility|link=yes}}
+!Probability
+|-
+| 1 || 52 || 1/35,000 {{^|Are we sure this isn't 1/32,000?}}
+|-
+| 2 || 62 || 1/16,000
+|-
+| 3 || 72 || 1/8,000
+|-
+| 4 || 82 || 1/4,000
+|-
+| 5 || 92 || 1/2,000
+|}

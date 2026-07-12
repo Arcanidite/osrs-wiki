@@ -1,0 +1,10 @@
+==Transportation==
+The Barbarian Assault arena can be found at the [[Barbarian Outpost]], just north of [[Baxtorian Falls]]. There are several methods by which players can get here:
+
+*[[Games necklace]] [[teleport]] — the quickest way to reach the [[Barbarian Outpost]].
+*[[Minigame Teleport]] — after choosing to skip or completing the tutorial, players are able to teleport directly there with the spell or through the [[grouping]] interface. Has a 20 minute cooldown.
+*[[Barbarian Teleport]] — the level-75 [[Lunar spell]] teleports the player directly to the Barbarian Outpost, requiring 3 [[fire rune]]s, 2 [[astral rune]]s, and 2 [[law rune]]s.
+*[[Tree Gnome Stronghold]] [[agility shortcut]] — at level 37 [[Agility]], players can scale the tree to the north-east of the Tree Gnome Stronghold. Completion of the [[The Grand Tree]] quest is required to use this shortcut.
+*[[Enchanted lyre]] — the lyre allows players to teleport to [[Rellekka]], then approach the Outpost from the [[Lighthouse]].
+*[[Player-owned house]] — players with houses located at Rellekka can use the [[house teleport]] and then follow the same route as the enchanted lyre teleport method.
+*[[Fairy ring]] teleport {{Fairycode|ALP}} — players can use the ring to teleport to the Lighthouse just north of Outpost.
