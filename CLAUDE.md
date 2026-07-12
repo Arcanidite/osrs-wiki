@@ -41,7 +41,9 @@ back; missing output is the design, not a stall**; shared append-only ledgers (c
 idempotent on key, queue add/claim/done); agents return one-line receipts — data lives in files;
 prefer SHORT SYNCHRONOUS BURSTS over monolith workflows — concise prompts, explicit
 left/right scope limits per agent, parallel cached-KB fetches, each burst's rows feeding
-the next burst downstream;
+the next burst downstream; CLASSIFY-FIRST: on an enumerated corpus the first burst only
+classifies (list/table pages, shallow rows, no per-item deep dives), a prioritizer emits
+a ranked depth-queue, and deep dives run downstream on prioritized subsets only;
 **agents read the relevant gotchas.log + existing contrib keys BEFORE starting** (inherit
 lessons, skip claimed work) and append their own on completion — append + annotate, never
 delete (acraflow P-B); retros also **mint the canonical trigger**: name what the brief
