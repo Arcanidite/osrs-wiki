@@ -316,7 +316,7 @@ def reattach_overlays(path, overlays):
     return result
 
 
-def phased_steps(ordered, milestones, xp_fold=False):
+def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
     """Segment steps into tight milestone episodes. Milestones are taken easiest
     first; each episode pulls exactly the not-yet-emitted training that advances
     toward its skill reqs, then emits the milestone as the episode's capstone.
@@ -332,7 +332,21 @@ def phased_steps(ordered, milestones, xp_fold=False):
     check itself is unconditional (safe — verified byte-identical against the
     pinned P2P/corpus fixtures); xp_fold (default False, see topo_order's
     docstring) additionally folds quest-reward XP into the skill portion, and
-    stays opt-in for the same fixture-parity reason."""
+    stays opt-in for the same fixture-parity reason.
+
+    [topo-quality] quest_first (default None → matches xp_fold, the exact
+    pre-fix combined behavior) is a SEPARATE opt-in, decoupled from xp_fold's
+    readiness-folding effect: xp_fold broadens which steps ready() considers
+    playable (no position/priority change — take() still scans `remaining` in
+    array order for the first ready match), while quest_first changes SELECTION
+    PRIORITY (a position-blind hunt for the first ready QUEST, ahead of
+    whatever's earliest-in-array). A route can want the former (fewer steps
+    stuck in the trailing 'Endgame & extras' catch-all because their reqs are
+    only satisfiable via quest-reward XP) WITHOUT the latter (which can reach
+    past a deliberately-first block, e.g. an origin/Tutorial-Island prefix —
+    see plan-grand.mjs's own xp_fold:false rationale). Every existing caller
+    passes quest_first=None, so it inherits xp_fold exactly as before this fix."""
+    quest_first = xp_fold if quest_first is None else bool(quest_first)
     ms = sorted(milestones, key=_difficulty)
     remaining, state, out = list(ordered), {}, []
     lvl = lambda k: state.get(k, 1)
@@ -380,7 +394,7 @@ def phased_steps(ordered, milestones, xp_fold=False):
     for m in ms:
         phase, target = phase_name("toward", m["label"]), _skill_reqs(m)
         while not met(target):
-            # quest-chain fix (xp_fold-gated, same fixture-parity reasoning as
+            # quest-chain fix (quest_first-gated, same fixture-parity reasoning as
             # above): quest steps never carry a `grants` skill entry (their reward
             # is `xp`, not a level floor — see model.js), so advances() can never
             # select one; a single broad-union milestone target (quest-progression)
@@ -389,8 +403,8 @@ def phased_steps(ordered, milestones, xp_fold=False):
             # earliest playable quests (Cook's Assistant/Restless Ghost-grade).
             # Pulling any ready quest first restores the expected quest-forward
             # narrative; falls back to training exactly when no quest is unlocked.
-            quest_first = (lambda s: _is_quest(s)) if xp_fold else (lambda s: False)
-            step = take(quest_first) or take(lambda s: advances(s, target)) or take(lambda s: True)
+            quest_first_pred = (lambda s: _is_quest(s)) if quest_first else (lambda s: False)
+            step = take(quest_first_pred) or take(lambda s: advances(s, target)) or take(lambda s: True)
             if step is None:
                 break                         # unmet prereq — capstone anyway
             out.append({"step": step, "phase": phase})
@@ -808,10 +822,25 @@ def _build_checkpoint_index(coarse_expansions):
     return checkpoint_start, checkpoint_member
 
 
-def _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id):
+def _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id, xp_fold=False):
     """Post-plan injection: for authored expansions whose atoms are absent from
     the ordered list, append the missing atoms so they flow through topo_order.
     This is the 'unwind via coarse_expansions' path (GRANULARITY §6 Lane 2 note).
+
+    [topo-quality] xp_fold must mirror the CALLER's own topo_order xp_fold
+    setting, not silently default to False: this function re-runs topo_order
+    from a blank state over `ordered` (an already-resolved, possibly XP-fold-
+    dependent sequence) + the newly-injected atoms. Diagnosed empirically
+    (temp instrumented copy, deleted after use): on route-quests (xp_fold True
+    upstream), re-simulating the combined 303-item list under the OLD
+    default (xp_fold=False here) made ~all of the already-validly-ordered 289
+    items look blocked again (their readiness depended on quest-reward-XP-
+    folded effective levels), collapsing into topo_order's unordered-dump
+    fallback (200/303, 66% — exactly the ratio measured in gotchas.log's
+    grand-chain retro). Re-validated: the FIRST topo_order pass alone (proper
+    xp_fold) already produces zero req-order violations for route-quests: the
+    fallback was entirely an artifact of THIS second, un-folded re-invocation,
+    not a genuine deadlock. Passing xp_fold through eliminates it.
     """
     if not coarse_expansions or not atoms_by_id:
         return ordered
@@ -833,7 +862,7 @@ def _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id):
                 ordered_ids.add(sid)
     if not to_inject:
         return ordered
-    return topo_order(list(ordered) + to_inject)
+    return topo_order(list(ordered) + to_inject, xp_fold=xp_fold)
 
 
 def _select_branch_drops(coarse_expansions, atoms_by_id):
@@ -883,6 +912,35 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # other caller gets xp_fold=False, the exact pre-fix behavior.
     xp_fold = bool(goal.get("xp_fold"))
 
+    # [topo-quality] topo_xp_fold: a SEPARATE, additive opt-in knob for
+    # topo_order's own XP fold, decoupled from xp_fold (which also flips on
+    # phased_steps' quest_first / phased_steps_with_steer's advances_steer —
+    # both position-blind scans of `remaining`, see grand-chain retro). A
+    # route can need topo-level folding (shrinks topo_order's unordered-dump
+    # fallback — a step's real playability often depends on quest-reward XP
+    # folded into effective skill level) WITHOUT wanting quest_first/
+    # advances_steer active (e.g. plan-grand.mjs's origin-prefix-must-open-
+    # first requirement, which quest_first breaks by reaching past the prefix
+    # for the first ready quest). Defaults to xp_fold itself, so every
+    # existing caller is byte-identical (p2p/corpus/origin: False either way;
+    # quests: True either way, already what it needs). Only plan-grand.mjs
+    # sets goal.topo_xp_fold explicitly, independent of its own xp_fold:false.
+    topo_xp_fold = goal.get("topo_xp_fold")
+    topo_xp_fold = xp_fold if topo_xp_fold is None else bool(topo_xp_fold)
+
+    # [topo-quality] phase_xp_fold: mirrors topo_xp_fold's decoupling, but for
+    # phased_steps' own readiness fold (see phased_steps' quest_first docstring).
+    # phased_steps(xp_fold=phase_xp_fold, quest_first=xp_fold): readiness folding
+    # (fewer steps stuck in the trailing "Endgame & extras" catch-all because
+    # topo_order (upstream) now resolves their order via quest-XP-folded
+    # effective levels but phased_steps' OWN local re-simulation still judged
+    # them un-ready under plain floors) is controlled by phase_xp_fold; the
+    # quest_first PRIORITY scan (the one that breaks an origin-prefix — see
+    # plan-grand.mjs) stays tied to the original goal-level xp_fold, unchanged.
+    # Defaults to xp_fold itself, so every existing caller is byte-identical.
+    phase_xp_fold = goal.get("phase_xp_fold")
+    phase_xp_fold = xp_fold if phase_xp_fold is None else bool(phase_xp_fold)
+
     # origin-chain fix (Lane M1, additive opt-in, same pattern as xp_fold
     # above): _inject_coarse_atoms/_select_branch_drops/_build_checkpoint_index
     # all scan EVERY authored coarse_expansions entry unconditionally — fine
@@ -905,12 +963,16 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # skill/tag/quest violation the move introduces.
     batched = hub_batches(clean)
 
-    # P7 — topo_order.
-    ordered = topo_order(batched, xp_fold=xp_fold)
+    # P7 — topo_order. Uses topo_xp_fold (decoupled from phased_steps' xp_fold —
+    # see the topo_xp_fold comment above).
+    ordered = topo_order(batched, xp_fold=topo_xp_fold)
 
     # Inject atoms from authored coarse_expansions not already in the plan.
     # Handles the 'unwind via coarse_expansions' path (ctr-* combat atoms).
-    ordered = _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id)
+    # [topo-quality] xp_fold propagated (was silently False) — see
+    # _inject_coarse_atoms' own docstring for the empirically-measured bug
+    # this fixes.
+    ordered = _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id, xp_fold=topo_xp_fold)
 
     # branch{} selection: keep one member per alt_group (crabs XOR slayer, etc.).
     branch_drops = _select_branch_drops(coarse_expansions, atoms_by_id)
@@ -983,7 +1045,8 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
                 ordered_with_overlays, milestones, steer_points, goal_steer_ids
             )
         else:
-            phased = phased_steps(ordered_with_overlays, milestones, xp_fold=xp_fold)
+            phased = phased_steps(ordered_with_overlays, milestones,
+                                   xp_fold=phase_xp_fold, quest_first=xp_fold)
 
         # P11 — emit each record, injecting checkpoint headers before first atom of each group.
         steps = []

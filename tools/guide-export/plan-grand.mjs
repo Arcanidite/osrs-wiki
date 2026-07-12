@@ -121,20 +121,22 @@ const covered = {
   // and every row there is trivially ready(). "Opens at Tutorial Island" is
   // the harder, non-negotiable requirement, so this chain ships xp_fold:false.
   //
-  // Consequence, reported not hidden: enrich.py's topo_order (P7) still can't
-  // fully re-derive this route's order either way — it hits its own documented
-  // "no remaining step's plain skill floor ever clears -> unordered dump"
-  // fallback partway through (~half the real steps land in that fallback,
-  // preserving whatever order routeMulti's JS-side effectiveLevel-aware router
-  // already gave them, just without Python-side re-validation). This is NOT
-  // novel to this driver — the SAME fallback already fires on the shipped
-  // route-quests.json (200/303 steps, a WORSE ratio) and route-p2p.json (both
-  // xp_fold:false already); it is an inherited enrich.py limitation, not
-  // something plan-grand.mjs introduces or that additive-only permits fixing
-  // here. Verified downstream effect: 0 goal-quests.jsonl chain breaks, a
-  // small number (see DEVLOG/gotchas) of reqs.quests/quest_gate/skill spot-
-  // check misses, concentrated in the fallback-dumped tail — same class of
-  // gap already accepted in the two existing fixtures that share this engine.
+  // [topo-quality] topo_xp_fold: true — a SEPARATE knob (enrich.py, decoupled
+  // from xp_fold above) that folds quest-reward XP into topo_order's OWN
+  // re-simulation only, WITHOUT touching phased_steps (phased_steps still
+  // gets this driver's xp_fold:false, so quest_first/advances_steer stay
+  // inert and the origin-prefix-first guarantee above is untouched — verified
+  // empirically: topo_order's admission order is identical for the origin
+  // prefix's first 3 ids with topo_xp_fold true vs false). This directly
+  // targets the "no remaining step's plain skill floor ever clears -> Python-
+  // side unordered dump" fallback documented in the xp_fold paragraph above:
+  // instrumented before/after (temp debug copy, deleted after use) — plain
+  // floors alone left topo_order's own re-simulation stuck at 95/181 real
+  // steps (52.5%) unresolved; folding quest-reward XP into ONLY that re-
+  // simulation (this flag) resolves all but 1/181 (0.6%). Not novel to this
+  // driver — the same fallback mechanism is documented on route-quests.json
+  // too (see enrich.py's _inject_coarse_atoms docstring for a related fix);
+  // this flag is the enrich.py-side, additive, opt-in mitigation for it.
   //
   // coarse_ids intentionally left unset (default, full unconditional
   // coarse_expansions scan): route-grand's path already contains ids from
@@ -143,6 +145,20 @@ const covered = {
   // content) so the same "any(sid in ordered_ids)" short-circuit that lets
   // route-p2p/route-corpus/route-quests leave it unset applies here too.
   xp_fold: false,
+  topo_xp_fold: true,
+  // [topo-quality] phase_xp_fold: true — same decoupling idea as
+  // topo_xp_fold, one level up: phased_steps' OWN local re-simulation (P10)
+  // was still judging many steps un-ready under plain skill floors even
+  // after topo_order (P7, upstream) started resolving them via quest-XP-
+  // folded effective levels, so they fell out of the single "Toward God Wars
+  // Dungeon" milestone episode and piled into the trailing "Endgame & extras"
+  // catch-all regardless of the topo_xp_fold fix above. phase_xp_fold widens
+  // phased_steps' readiness check the same way, WITHOUT touching quest_first
+  // (that stays tied to this driver's own xp_fold:false, so it's still
+  // inert — verified empirically: the origin prefix still opens the route
+  // with phase_xp_fold:true, since quest_first is what reaches past it, not
+  // the readiness fold itself).
+  phase_xp_fold: true,
   // steer_points deliberately dropped too (barrows normally carries steer-
   // graceful/steer-ardougne-easy-diary — see route-p2p.json's own "Toward
   // Ardougne Easy Diary" phase for that waypoint-card UX). Carrying them
