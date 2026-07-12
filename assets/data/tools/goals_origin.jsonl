@@ -1,0 +1,1 @@
+{"id": "goal-early-game", "label": "Early Game (Tutorial Island through first Lumbridge quests)", "reqs": {"skills": {}, "quests": ["quest-cooks-assistant", "quest-sheep-shearer", "quest-the-restless-ghost", "quest-x-marks-the-spot"]}, "terminal": "goal-early-game"}

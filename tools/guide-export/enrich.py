@@ -883,6 +883,20 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # other caller gets xp_fold=False, the exact pre-fix behavior.
     xp_fold = bool(goal.get("xp_fold"))
 
+    # origin-chain fix (Lane M1, additive opt-in, same pattern as xp_fold
+    # above): _inject_coarse_atoms/_select_branch_drops/_build_checkpoint_index
+    # all scan EVERY authored coarse_expansions entry unconditionally — fine
+    # for route-p2p/route-corpus/route-quests (their path already contains
+    # the full steps.jsonl corpus, so "any(sid in ordered_ids)" short-circuits
+    # every unrelated coarse), but a small standalone route (route-origin,
+    # 28 steps) contains NONE of e.g. prayer-pot-supply-coarse's ids, so that
+    # unconditional scan wrongly injects unrelated supply/combat atoms into
+    # it. goal.coarse_ids (default None → unchanged behavior for every
+    # existing caller) scopes coarse_expansions to a named allow-list.
+    coarse_ids = goal.get("coarse_ids")
+    if coarse_ids is not None:
+        coarse_expansions = [e for e in (coarse_expansions or []) if e.get("coarse_id") in coarse_ids]
+
     # P5 — detach overlay nodes before hub/topo reordering.
     clean, overlays = detach_overlays(reals)
 
