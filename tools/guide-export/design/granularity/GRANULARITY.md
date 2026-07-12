@@ -276,3 +276,34 @@ Everything lands inside the existing SYNTHESIS lanes — no new lane, no pass-or
 Grammar-first payoff: the 10 remaining coarse stubs now have a mechanical recipe (U1–U10)
 instead of a blank page, and every future guide-source study can be diffed against one
 verb table instead of re-derived.
+
+---
+
+## 7. ACTION GRAIN — the terminal north star (programmatic-play narration)
+
+Declared 2026-07-12. Below `atom{}` sits the final grain the chain converges toward:
+the checklist reads as if the system were playing the game programmatically — but the
+USER performs every input (overlay/checklist only; we never automate — unchanged hard rule).
+
+**Action lines.** An atom may expand to ordered, verbatim action lines, each one concrete
+enough for voice-over narration (ADA-508 spirit — "what do I physically do next"):
+`go to tile (3181,3288)` · `click "Steal-from" on Master Farmer` · `in the bank interface,
+withdraw 14 grimy ranarr` · `press continue through the dialogue`. Grammar per line:
+`{action}` = `{verb, target, option?, tile?, interface?, quantity?}` — the same 16-verb
+taxonomy (§1b), narrowed to one physical interaction per line. Every line inherits the
+step's refs[]; coords/options come from wiki `{{Map}}` pins and page data, never memory.
+
+**Named loops.** A repeated activity is defined ONCE as a loop — `loop{id, label,
+actions[], per_cycle: {produces/consumes}, rate: "??", period: "??"}` — with a distinctive
+label ("Ranarr herb-run loop", "Coal-bag blast cycle"), then REFERENCED from checklist
+entries: `run «Ranarr herb-run loop» ×N (until 20 prayer potions banked)`. Rates/timing
+are computed plug-ins (tuning/measured — never fabricated); loops interleave with other
+entries exactly like the background/cadence model (§ SYNTHESIS P4/weaveOverlays).
+
+**Equal-grade rule.** Expanded action lines and loop references are ordinary checklist
+items — never classed as sub-tasks/children; grouping is conveyed by checkpoint/phase
+labels only, and every item keeps the two-way done/uncheck state.
+
+**Accuracy bar.** A line ships only when the wiki grounds it (tile, option text, interface
+behavior). Ungrounded → the step stays at atom grain with a queued research item; honest
+degradation over invented precision.
