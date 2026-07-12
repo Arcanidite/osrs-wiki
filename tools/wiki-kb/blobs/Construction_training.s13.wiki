@@ -1,0 +1,31 @@
+===Levels 33–52/74: Oak larders ===
+From level 33 to 52, build [[oak larder]]s in the [[Kitchen]]. Oak larders require 8 [[oak plank]]s to build, and they grant 480 experience each.
+
+Players can gain up to around 480,000 experience per hour from level 50 onwards. If planning to keep using oak planks for cheaper experience, switch to [[oak dungeon doors]] ([[#Levels_74–99:_Oak_doors|listed below]]) at level 74 for faster rates.
+{| class="wikitable"
+!Levels
+!XP needed
+!colspan=2 | Object
+!# for goal
+!Planks required
+!Plank cost
+!Servant cost
+!Cost per XP
+|-
+|33–52
+|105,413
+|{{plinkt|Oak larder|pic=Oak larder icon|rowspan=2}}
+|{{plinkp|Oak larder|pic=Oak larder icon}} 220
+|{{plinkp|Oak plank}} 1,760
+|{{Coins|-{{GEP|Oak plank|1760}}}}
+|{{Coins|{{#expr:-1760*10000/8/24 round 0}}}} 
+|rowspan=2|{{Coins|-({{GEP|Oak plank}}+10000/8/24)/60}}<ref group=b>Cost per XP with servant.</ref><br/>/ {{Coins|-({{GEP|Oak plank}})/60 round 2}}<ref group=b>Cost per XP without servant.</ref>
+|-
+|33–74
+|1,078,031
+|{{plinkp|Oak larder|pic=Oak larder icon}} 2,246
+|{{plinkp|Oak plank}} 17,968
+|{{Coins|-{{GEP|Oak plank|17968}}}}
+|{{Coins|{{#expr:-17968*10000/8/24 round 0}}}}
+|}
+{{reflist|group=b}}

@@ -1,0 +1,146 @@
+{{External|rs|rsc}}
+{{Infobox Location
+|name = Barbarian Village
+|image = [[File:Barbarian Village.png|300px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|location = [[Misthalin]]
+|race = [[Barbarian]]s
+|teleport = {{*}} [[Skull sceptre]]<br>{{*}} [[Canoe]] to the Barbarian Village station<br>{{*}} [[Skills necklace]] teleport to the Cooking Guild<br>{{*}} [[Amulet of glory]] teleport to [[Edgeville]]
+|music = [[Barbarianism]]
+|map = {{Map|name=Barbarian Village|x=3080|y=3427|height=250}}
+|leagueRegion = Misthalin
+}}
+[[File:Barbarian Village standard.png|left|60px]]
+{{Relativelocation
+|location = Barbarian Village
+|north = Edgeville
+|east = Varrock
+|south = Draynor Village
+|west = Falador
+}}
+'''Barbarian Village''' is a small village south of [[Edgeville]] and west of [[Varrock]]. The entire village is a [[multicombat area]] containing many [[aggressive]] [[barbarian]]s, so low level players are advised to proceed with caution. Players can enter the [[Stronghold of Security]] through a hole in the centre of the village.
+
+==Transportation==
+Several transport options bring players into or close to Barbarian Village, listed here with their arrival destination. From closest to farthest:
+
+* {{plink|Skull sceptre}} — [[Stronghold of Security]] entrance.
+* {{plink|Canoe|pic=Paddle}} — Barbarian Village station. Requires 12 [[Woodcutting]].
+* {{plink|Skills necklace}} — [[Cooking Guild]], just east of the village.
+* {{plink|Amulet of glory}} — Edgeville centre, just north of the village.
+* {{plink|Minigame teleport|pic=Minigame icon}} — [[Soul Wars]], which has a [[Soul Wars Portal|portal]] to [[Edgeville]].
+* {{plink|Varrock Teleport}} — center of [[Varrock]], well east of the village.
+
+==History==
+{{LoreSources|Varrock Museum|the1=yes}}
+
+Almost 200 years ago, the lost art of [[Runecraft]] was rediscovered, allowing humans to quickly dominate most of [[Gielinor]], and marking the start of the [[Fifth Age]]. The nomadic mountain tribes of [[Rellekka]] embarked on a [[Runecrafting Crusades|crusade]] to stop the use of Magic and Runecrafting, which they believe belong only to the [[gods]]. During this time, the first [[Wizards' Tower]] was burned to the ground (although not by the barbarians), and the magic-using [[Imcando dwarf|Imcando dwarves]] were driven to near-extinction.
+
+As casualties mounted, however, the tribes dwindled and were dispersed, and the Barbarian Village was established in between what is now [[Varrock]] and [[Falador]] as a temporary outpost until the tribes could recover their numbers. Over time, the barbarians gradually settled down, and the village became a more permanent establishment.
+
+==Locations==
+[[File:Barbarian Village.png|thumb|A view of the village.]]
+
+=== Buildings ===
+{| class="wikitable"
+!Building
+!Description
+|-
+|[[Long Hall|Longhall]]
+|The largest building in the village. This is a popular area to train [[ranged]] [[combat]] by using the tables as cover, then moving out to collect [[arrows]] and drops.
+|-
+|Lookout tower
+|A tall building overlooking the path from [[Varrock]].
+|-
+|[[Peksa]]'s [[Helmet Shop]]
+|The only [[Free-to-play|non-members]] store where players can buy helmets other than [[black full helm]]s. Peksa sells and buys [[Medium helmet|medium]] and [[full helmet]]s of [[Bronze equipment|bronze]], [[Iron equipment|iron]], [[Steel equipment|steel]], [[Mithril equipment|mithril]], and [[Adamant equipment|adamant]].
+|-
+|Spinning hut
+|A small hut with a [[spinning wheel]].
+|-
+|Storage hut
+|A small hut with no application.
+|-
+|[[Tassie]]'s studio
+|A studio containing a [[pottery oven]] and a [[potter's wheel]], as well as a [[barbarian anvil]].
+|}
+[[File:Cryptic clue - search chest barbarian village.png|thumb|The spinning hut in Barbarian Village.]]
+
+=== Skill training spots ===
+Despite its small size, the village has a number of useful training spots and facilities:
+
+* The [[barbarian anvil]] can be used to make [[hastae]] after completing [[barbarian training]].
+* The [[Barbarian Village mine]] at the centre of the village contains [[coal]] and [[Tin ore|tin]].
+* Players can fish with [[feather]]s or [[fishing bait]] at the [[Fishing spots]] east of the village, requiring level 20 and 25 [[Fishing]].
+* There is a [[Permanent fire|never-ending fire]] west of the fishing spots, which is popular among [[free-to-play]] players for quickly cooking caught fish. There are also perpetually burning fires in the middle of Peksa's shop and at the end of the [[The Long Hall|longhall]].
+* The village is useful for [[Crafting]] training at low levels. Players can use [[soft clay]] with the [[Potter's Wheel|Potter's wheel]] and the [[pottery oven]] nearby to craft pottery items. In the free worlds, this is the only location of a potter's wheel and oven outside of the [[Crafting Guild]]. There is also a [[spinning wheel]] that can be used to make [[balls of wool]] and other spun items.
+
+=== Spawns ===
+{| class="wikitable"
+!Item
+!Spawns
+!Location
+!Map
+|-
+|{{Plink|Beer}}
+|3
+|Longhall table
+|{{Map|3077,3443|3077,3439|3080,3441|type=maplink|mtype=pin|group=beer}}
+|-
+|{{Plink|Bronze pickaxe}}
+|1
+|Spinning hut
+|{{Map|3081,3429|type=maplink|mtype=pin|group=Bronze pickaxe}}
+|-
+|{{Plink|Cooked meat}}
+|2
+|Longhall table
+|{{Map|3077,3441|3080,3443|type=maplink|mtype=pin|group=Cooked meat}}
+|-
+|{{Plink|Pot}}
+|1
+|Peksa's shop
+|{{Map|3074,3431|type=maplink|mtype=pin|group=Pot}}
+|}
+
+===Stronghold of Security===
+{{Main|Stronghold of Security}}
+Reached through a hole located in the mining area, the [[Stronghold of Security]], released on [[Update:Security and free-to-play update - the Stronghold of Security|4 July 2006]], is open to both [[members]] and [[free-to-play]] players. The medium-sized dungeon gives rewards for making it to the centre of each of its four levels, each of increasing difficulty. Various [[monsters]] inhabit each level, including [[goblin]]s, [[skeleton]]s, [[ankou]], and several monsters unique to the dungeon, such as [[Minotaur|minotaurs]].
+
+== Quests ==
+
+* [[Below Ice Mountain]]
+* [[One Small Favour]]
+
+==Inhabitants==
+
+=== Personalities ===
+
+* {{Chatl|Atlas}}, a skilled physical trainer.
+* {{Chatl|Checkal}}, a self-absorbed bodybuilder.
+* {{Chatl|Hunding}}, an aloof barbarian who will share the village's history if asked nicely.
+* {{Chatl|Litara}}, a barbarian waiting for her deceased brother [[Solztun]] to return from the [[Stronghold of Security]].
+* {{Chatl|Peksa}}, a helmet merchant.
+* {{Chatl|Sigurd}}, a [[canoe]] tutor.
+* {{Chatl|Tassie Slipcast}}, a non-barbarian potter who opened her studio on a loan.
+
+=== Monsters ===
+
+* [[Imp]] (x1)
+* [[Unicorn]] (x2)
+* [[Barbarian]] (x17)
+* [[Gunthor the brave]]
+
+== Music ==
+{| class="wikitable"
+!Name
+!Unlock location
+! class="unsortable" |Music track
+|-
+|[[Barbarianism]]
+|Barbarian Village
+|[[File:Barbarianism.ogg]]
+|}
+{{Barbarian Village}}
+[[Category:Misthalin]]

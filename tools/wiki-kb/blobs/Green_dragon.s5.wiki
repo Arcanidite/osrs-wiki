@@ -1,0 +1,6 @@
+===100%===
+{{DropsTableHead|dropversion=Regular}}
+{{DropsLine|name=Dragon bones|quantity=1|rarity=Always|raritynotes=<ref group=d>Dragon bones are dropped in [[bank note]] form if players have completed the [[Wilderness_Diary#Rewards_4|Elite Wilderness diary]] and are killing green dragons in the [[Wilderness]].</ref>}}
+{{DropsLine|name=Green dragonhide|quantity=1|rarity=Always}}
+{{DropsTableBottom}}
+{{reflist|group=d}}

@@ -1,0 +1,56 @@
+==Walkthrough==
+===Getting started===
+{{Checklist|
+*Talk to [[Trufitus]] in his house located north-east of [[Tai Bwo Wannai]]. {{Chat option|3It's a nice village, where is everyone?|1Me? How can I help?|1It sounds like just the challenge for me.}} Everytime you gather a new herb you need to go show it to [[Trufitus]] before being able to get a new kind of a herb.
+}}
+
+===Gathering herbs===
+{{Map|align=right|mtype=pin|caption=Locations of all materials.
+|2810,3086,title:[[Trufitus]],icon:bluePin,desc:
+|2764,3046,title:[[Snake weed]],desc:
+|2785,3047,title:[[Sito foil]],desc:
+|2824,3119,title:[[Rogue's purse]],desc:
+|2875,3121,title:[[Ardrigal]],desc:
+|2849,3033,title:[[Volencia moss]],desc:
+}}
+====Snake weed====
+{{Checklist|
+*Go south-west of Tai Bwo Wannai until green and yellow vines labelled '[[marshy jungle vine]]' are seen.
+*Search the vines and clean the herb. Your character may spend several minutes finding a herb.
+**'''Note:''' Take three if you intend to do [[Legends' Quest]] and [[Zogre Flesh Eaters]].
+*Talk to Trufitus. Make sure you cleaned the herb. {{Chat option|1Of course!}}
+}}
+
+====Ardrigal====
+{{Checklist|
+*Head north-east from Trufitus. There will be [[Harpie Bug Swarm|Harpie Bug Swarms]] and palm trees.
+*Search the [[palm tree (Ardrigal)|palm trees]] and clean the herb. 
+**'''Note:''' Take two if you intend to do [[Legends' Quest]].
+*Talk to Trufitus. {{Chat option|1Of course!}}
+}}
+
+====Sito foil====
+{{Checklist|
+*To the direct south of Tai Bwo Wannai Village is a patch of [[scorched earth]].
+*Search the scorched earth (the squares immediately next to the fire) for the herb and clean it.
+*Talk to Trufitus. {{Chat option|1Of course!}}
+}}
+
+====Volencia moss====
+{{Checklist|
+*Go south-east from Trufitus until you reach the [[Karamja Jungle mine]], marked with a [[File:Mining site icon.png]] pickaxe on minimap.
+*Search the [[rock (volencia moss)|rocks]] for the herb and clean it.
+**'''Note:''' Take two if you intend to do [[Fairytale I - Growing Pains]] (possible required item).
+*Talk to Trufitus. {{Chat option|1Of course!}}
+}}
+
+====Rogue's purse====
+{{Checklist|
+'''Note:''' The [[Rogue's purse]] must be obtained from the following method. Herbs gained anywhere else cannot be used.
+*Go back by the Harpie Bug Swarms and head north-west until a cave is seen over the cavern. Search the [[rocks (Pothole Dungeon)|rocks]] and enter the cave.
+*In the cave, head south, look for green spots on the wall labelled '[[Fungus covered Cavern wall]]', then search them and clean the herb. This process may take up to a minute. '''Do not try to use a Rogue's purse dropped by a Jogre. It <u>must</u> be obtained via searching the wall.'''
+**'''Note:''' Take two if you intend to do [[Zogre Flesh Eaters]].
+**Killing a Jogre inside this cave completes an easy [[Karamja Diary]] task, and is worth doing along the way.
+*Talk to Trufitus. {{Chat option|1Of course!}}
+*'''Congratulations, quest complete!'''
+}}

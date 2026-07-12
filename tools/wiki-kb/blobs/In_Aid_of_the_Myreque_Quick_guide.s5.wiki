@@ -1,0 +1,12 @@
+===Defending the village===
+{{Needed|[[Hammer]], [[tinderbox]], 2 [[steel bar]]s, 1 [[coal]], [[Efaritay's aid]] or a [[silver weaponry]] such as a [[silver sickle (b)]], and some food for lower-levelled players.}}
+{{Checklist|
+*Talk to [[Razvan]]. {{Chat option|4What should I do now?}}
+*Repair the [[furnace (Burgh de Rott)|furnace]] to the south-east. Use your steel bars, then coal, then tinderbox on the furnace.
+*Talk to [[Gadderanks]] in the general store.
+*Talk to the [[Vampyre Juvinate]] in the store.
+*Talk to [[Wiskit]].
+*Kill the two juvinates and then [[Gadderanks]] (you'll need a silver weapon or Wolfbane dagger or [[Efaritay's aid]] to damage them).
+*Talk to Gadderanks.
+*Talk to Veliaf Hurtz.
+}}

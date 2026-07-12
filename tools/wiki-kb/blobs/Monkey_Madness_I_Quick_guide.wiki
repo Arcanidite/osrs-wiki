@@ -1,0 +1,165 @@
+{{External|rs=Monkey Madness/Quick guide}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Monkey Madness I}}
+
+==Walkthrough==
+===Starting out===
+{{Needed|Good [[food]], [[antipoison]], [[lockpick]], and 2 empty inventory spaces.|recommended=}}
+[[File:Monkey Madness I - Spare controls.png|thumb|220px|The solution to the reinitialisation puzzle.]]
+{{Checklist|
+*Speak to [[King Narnode Shareen]] at the [[Grand Tree]]. {{Chat option|1Yes}}
+** Without an open inventory space, the [[gnome royal seal]] will be dropped on the ground.
+*Climb up the tree and take the glider to Gandius.
+*If you don't have the monkey bones yet, you can kill a monkey nearby for some. (If you have started Tai Bwo Wannai Trio, only a monkey corpse will drop. That will work as well)
+*Enter the [[Shipyard]] gate to the north. ''Make sure you have the Royal Seal with you.''
+*Speak with [[G.L.O. Caranock]] in the building south of the gate.
+*Return to King Narnode and speak to him. (Make sure you have 1 inventory space free as he will drop Narnode's orders to the floor otherwise).
+*Talk to [[Daero]] in the bar on the {{FloorNumber|uk=1}} (east side) of the Grand Tree. {{Chat option|1Talk about the journey...|4Return to previous menu|2Talk about the 1-th squad...|4Return to previous menu|3Talk about Caranock...|4Return to previous menu|4Leave...|1Who is it?}} Make sure to go through all of the Chat Options to be teleported to a new location. 
+*Talk (not "travel") to [[Daero]] again inside the hangar.
+*Click the panel in the south-eastern region of the hangar and solve the sliding puzzle. (guide [[Puzzle box guide|here]])
+**Alternatively, pay [[Glough]] (back in the Stronghold) {{Coins|200000}} to solve it for you.
+*Watch the cutscene. Talk to Daero, then [[Waydar]] to fly to Crash Island. {{Chat option|1Yes}}
+*Talk to [[Lumdo]].
+*Talk (not "travel") to Waydar twice, who will convince Lumdo to follow orders. {{Chat option|4I cannot convince Lumdo to take us to the island.}}
+*Talk to Lumdo again to travel west to Ape Atoll.
+}}
+
+===Ape Atoll===
+[[File:Monkey Madness I - Ape Atoll map.png|center|thumb|500px|A map of Ape Atoll marking the quest NPCs and routes. Keep this map handy!]]
+''Note: You will need to teleport away and return to the island several times.''<br/>
+''To get back to the Grand Tree, use a [[Ring of dueling]] to teleport to the Al Kharid PvP Arena, then take the Al Kharid [[gnome glider]].''
+
+*You may wish to keep [[Protect from Melee]] prayer on at all times, '''switching to [[Protect from Missiles]] prayer when you get near the gate (where indicated)'''.
+*If at any point in the island you have the guards called on you, it is recommended to log out or hop worlds to avoid going back to jail.
+[[File:Monkey Madness I - Jail map.png|The escape route.|thumb]]
+{{Checklist|
+*On the island, follow the red path on the map into the valley. You will be shot and arrested.
+*Watch the guards' pattern, pick the lock on your cell door and escape the prison.
+**Stay at least 2 squares away from the guards '''even while in the cell'''.
+*Follow the green path and talk to [[Garkor]] (Complete dialogue or Zooknock will not give you the m'speak amulet).
+}}
+===Obtaining amulet parts===
+[[File:Monkey Madness I - M'amulet mould location.png|thumb|250px|[[M'amulet mould]] location.]]
+{{Checklist|
+*Follow the blue path to the U-shaped building and enter through the southern door.
+**'''Stay on the dark brown floor''' or you will alert the guards.
+*Search the stacked crates on the light brown floor for [[Monkey dentures]]. (Complete the dialogue)
+*Search the south-eastern crate to fall into a cave.{{Chat option|1Yes, I'm sure.}}
+**Heal up before you do, you can take fall damage.
+*Search the crates in the north-west for a [[M'amulet mould]].
+*You may now teleport away.
+}}
+
+===Meeting Zooknock===
+{{map|mapID=10014|width=550|height=340|zoom=2|mtype=pin|group=dungeon|align=center
+|mtype:pin,icon:yellowPin,desc:Entrance,2763:9103
+|mtype:pin,icon:cyanPin,desc:Zooknock,2805:9145
+|mtype:dot,fill:#42BA42,desc:Monkey Zombie\, lvl 98
+,2763:9118,2764:9133,2765:9113,2769:9094,2772:9110,2774:9093,2777:9144,2779:9119,2779:9129,2781:9092,2788:9103,2793:9129,2794:9117,2799:9112,2801:9097,2807:9131,2809:9104,2810:9111,2810:9123,2719:9147,2752:9144,2740:9138,2742:9146,2694:9115,2697:9130,2698:9145,2702:9093,2714:9095,2726:9107,2728:9097
+|mtype:dot,fill:#A1A1AA,desc:Skeleton\, lvl 142
+,2710:9135,2711:9130,2714:9135,2715:9132,2735:9119,2736:9121,2738:9124,2740:9120,2741:9103,2741:9124,2743:9105,2744:9100,2745:9102,2704:9109,2707:9112,2708:9103,2711:9109
+|caption={{mapkey
+|title=Ape Atoll Dungeon
+|line1=...yellow,text=Entrance
+|line2=dot...#42BA42,text=[[Monkey Zombie|Monkey Zombie, lvl 98]]
+|line3=dot...#A1A1AA,text=[[Skeleton (Ape Atoll)|Skeleton, lvl 142]]
+|line4=...cyan,text=[[Zooknock]]}}
+}}
+{{Needed|[[Lockpick]], [[Monkey dentures]], [[M'amulet mould]], [[Ball of Wool]], and [[Gold bar]]|recommended=Good [[food]], [[prayer potion]]s, [[antipoison]], and [[stamina potion]] or [[energy potion]]s}}
+{{Checklist|
+*Now is an ideal time to resupply at a bank before heading into the [[Ape Atoll Dungeon]].
+*Return to Ape Atoll by talking to [[Daero]], [[Waydar]], and [[Lumdo]].
+*Follow the yellow path west and climb down the ladder into the [[Ape Atoll Dungeon]].
+*Run to the end of the dungeon.
+**Use [[Protect from Melee]] prayer and ignore all the hazards, eating food and drinking potions as needed.
+*Talk to [[Zooknock]].
+*Use your [[Monkey dentures]], [[M'amulet mould]], and [[Gold bar]] on [[Zooknock]].
+**Talk to [[Zooknock]] to get an [[Enchanted bar]] and your [[M'amulet mould]] back.
+**'''Do not''' use the m'amulet mould on Zooknock when you already have the enchanted bar, otherwise he will keep it and you will have to obtain another. 
+*Teleport away, then return by talking to [[Daero]], [[Waydar]], and [[Lumdo]].
+*Follow the red path, get arrested, escape, then follow the pink path to the temple.
+*(Note: bearded guards cannot be walked through!) Enter the [[trapdoor (Temple of Marimbo)|trapdoor]]. You may need to climb up the ladder to the south then down in the east to avoid the gorillas.
+*With a [[M'amulet mould]] in your inventory, use the [[Enchanted bar]] with a wall of flames, then string it with your [[Ball of wool]] to create the [[M'speak amulet]].
+*''Optional'': If you plan on doing the [[Freeing King Awowogei]] section of [[Recipe for Disaster]]:
+**Kill one of the [[Monkey Zombie]]s and pick up the [[Small zombie monkey bones|zombie monkey bones]].
+**Climb back up the rope, kill one of the [[Monkey Guard]]s and pick up the [[Gorilla bones|gorilla bones]].
+***If you're having trouble with the guard, stay out of melee range so it doesn't heal.
+}}
+
+===Well I'll be a monkey's uncle===
+{{Checklist|
+*Follow the pink path back to the jail, then the cyan path to the [[Monkey child]]'s house.
+**Keep an eye on [[The Monkey's Aunt]], it's only safe to be in the garden while she isn't near it.
+*Equip your [[M'speak amulet]] and talk to the monkey child.
+*Talk to the monkey child twice more. {{Chat option|4Well I'll be a monkey's uncle!|2How many bananas did Aunty want?}}
+*Pick 5 [[Banana]]s from the trees in the garden.
+*Talk to the monkey child to give him the bananas.
+*Leave the garden and wait for the aunt to pass through.
+*Talk to the monkey child to get a [[Monkey talisman]].
+*''Optional'': If you plan on doing the [[Freeing King Awowogei]] section of [[Recipe for Disaster]]:
+**Talk to the monkey child again. {{Chat option|2I've lost that toy you gave me...}}
+**Leave the garden, hop worlds or wait for the monkey child to stop crying.
+**Talk to the monkey child again. {{Chat option|2Wow - can I borrow it?|1Ok, I promise!}}
+**Repeat the above steps until you have four [[Monkey talisman]] in total.
+**If doing Freeing King Awowogei section, climb the ladder in the east building from Child, cross bridge east and there will be [[Monkey Archer]]s you can kill and pick up one set of [[Small ninja monkey bones|ninja monkey bones]]}}
+
+===The greegree===
+{{Needed|[[Monkey bones]] ''or'' [[Monkey corpse|corpse]], [[monkey talisman]]. (Bring extra [[monkey bones]] (Ninja, Gorilla, Zombie and Monkey if wanting all 4 greegrees), [[monkey talisman]]s if planning to do [[Freeing King Awowogei]] section of [[Recipe for Disaster]])}}
+{{Checklist|
+*Teleport away, then return by talking to [[Daero]], [[Waydar]], and [[Lumdo]].
+**Now is an ideal time to resupply at a bank for the Ape Atoll dungeon.
+**Bring good [[Food]], as well as [[Prayer potion|Prayer]], [[Antipoison]], and [[Stamina potion|Stamina]]/[[Energy potion|Energy]] potions.
+*Follow the yellow path west and climb down the ladder.
+*Run to the end of the dungeon.
+**Use Protect from Melee prayer and ignore all the hazards, eating food and drinking potions as needed.
+*Give Zooknock your [[Monkey talisman]] and [[Monkey bones]] (make sure these are bones from the regular monkeys; examine Text: ''These are small monkey bones.''). After a moment he will give you a [[Greegree]].
+**'''Do not''' accidentally bury the bones! Right click them and carefully select "use".
+**'''Do not''' leave the dialogue with Zooknock prematurely. Should the player exit the cutscene before it has finished, talking to Zooknock again will restart the cutscene, and no items will be lost.
+*''Optional'': If you plan on doing the [[Freeing King Awowogei]] section of [[Recipe for Disaster]]:
+**Talk to Zooknock again. {{Chat option|2|1}}
+**'''Use''' another talisman and bone on him. The type of bones you give him will determine the Greegree you receive. After a moment he will give you another [[Greegree]].
+**Repeat the above steps until you have four Greegrees in total. ([[Karamjan monkey greegree|Karamjan]], [[Ninja monkey greegree (small)|Ninja]], [[Zombie monkey greegree (small)|Zombie]], and [[Gorilla greegree|Gorilla]])
+*Note: Teleporting while wielding the Greegree will force it into your inventory. If your inventory is full then it will be dropped. If unnoticed, '''the Greegree can be lost.'''}}
+
+=== An audience with King Awowogei ===
+{{Needed|[[Karamjan monkey greegree]], [[M'speak amulet]], at least one empty inventory slot|recommended=[[Mithril Seeds]] or [[log]] and [[tinderbox]] to skip finding Kruk or Garkor.}}
+{{Checklist|
+*Head to the [[Ardougne Zoo]] and equip your [[Karamjan monkey greegree]], then talk to the [[Monkey minder]]. If you haven't talked to him before, click through his dialogue (ask any question), then equip the [[Karamjan monkey greegree]].
+*Equip your [[M'speak amulet]] and talk to a monkey, it will [[Monkey (Monkey Madness I)|jump in your bag]].
+*Remove your greegree and talk to the minder again.
+*'''Travel by foot''' (walk or run) back to the Grand Tree, then return to Ape Atoll by talking to [[Daero]], [[Waydar]], and [[Lumdo]]. '''Do not use any means of teleportation.'''
+*Equip your [[M'speak amulet]] and [[Karamjan monkey greegree]]. '''Ape Atoll is no longer your enemy when wearing a greegree!'''
+*If you want to skip going to talk to [[Kruk]] and you brought mithril seeds or tinderbox and logs you can stand on the east side of the [[Elder Guard]] and plant the [[mithril seeds]] or light a fire to be force moved one tile west and thus bypass needing to talk to [[Kruk]] or to [[Garkor]].
+*Follow the red path, go through the gates, then walk east to the coast and talk to [[Garkor]].
+*Talk to the nearby [[Elder Guard]].
+*Head to the west coast of the island (orange path), then climb up the hill to the south.
+*Climb the ladder, walk across the bridge, climb down, and talk to [[Kruk]].
+*Talk to [[Awowogei]].
+*Talk to Awowogei again. Then talk to the Elder Guard again to be let out.
+*Talk to Garkor and watch the cutscene.
+*Talk to Garkor again to get the [[10th squad sigil]].
+}}
+
+===The final battle===
+{{Needed|Combat equipment, [[10th squad sigil]]|recommended=Teleportation, prayer potions and high healing food are highly recommended}}
+{{Checklist|
+*Prepare for final battle.
+*Equip the [[10th squad sigil]] when you are ready to fight the [[Jungle Demon]].
+**Tip: Use [[Protect from Magic]] prayer and stay out of melee range to avoid taking damage.
+*Kill the Jungle Demon.
+*Return to the Grand Tree and talk to [[King Narnode Shareen]].
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|Monkey Madness I}}
+
+==Required for completing==
+Completion of Monkey Madness I is required for the following:
+
+*Completion of [[Recipe for Disaster]] - [[Freeing Awowogei]]
+*[[Monkey Madness II]]
+
+{{Monkey Madness I}}

@@ -1,0 +1,414 @@
+==Levels 15–99: Tree runs==
+[[File:Magic tree.png|right|321x321px]]
+{{Main|Farming runs#Tree run}}
+
+[[Farming runs|Tree runs]] are the most effective way to gain [[Farming]] [[experience]]. To do this, plant the highest-tier [[Tree patch|tree]], [[Fruit tree patch|fruit tree]], and [[hardwood tree]] [[Sapling|saplings]] available, along with the [[Special patches|special tree]] saplings ([[Calquat tree|calquat]], [[Celastrus tree|celastrus]], [[Crystal tree|crystal]], and [[Redwood tree (Farming)|redwood]]). After the trees have grown, check the health of a fully grown tree for Farming experience, pay the [[Group of Advanced Gardeners|gardener]] to chop down the tree, then replant the tree. Repeat until all patches have been checked and replanted.
+
+While tree runs are a passive training method, they offer by far the fastest effective experience. For example, if it took the player 5 minutes to do a tree run and the player gained 100,000 Farming experience from the run, the experience rate would effectively be 1,200,000 experience per hour (12 runs per one actively spent hour). Players would only spend 5 minutes on doing a run, then do something else while the trees grow.
+
+A tree run consisting of 6 [[Magic tree (Farming)|magic trees]], 6 [[Dragonfruit tree|dragonfruit trees]], 1 [[calquat tree]], and 1 [[celastrus tree]] takes around 5 minutes and 20 seconds. The run gives a total of 215,761.3 Farming experience when using payments, which would offer around 2,400,000 experience per actively spent hour. When including 4 [[Mahogany tree (Farming)|mahogany trees]] once every 4 days and a [[Redwood tree (Farming)|redwood tree]] once every 5 days, the effective rate is around 2,500,000 experience per actively spent hour.
+
+Even though it is only possible to do 1 or 2 tree runs per day, doing tree runs over time ends up being much faster than doing methods that offer faster experience in real time, such as farming allotments. Tree runs should be the first priority for Farming training, and active training methods should only be done if Farming is the player's last skill to level 99. Getting level 99 Farming should take around 3–4 months at most if the player does tree runs fairly consistently.
+
+===Recommended quests and stats===
+*{{SCP|Quest}} [[Tree Gnome Village]] and {{SCP|Quest}} [[The Grand Tree]] for access to [[spirit tree]]s for transportation.
+*{{SCP|Quest}} [[Bone Voyage]] for access to three hardwood patches on [[Fossil Island]].
+*{{SCP|Quest}} [[The Ribbiting Tale of a Lily Pad Labour Dispute]] for access to an additional hardwood patch in [[Varlamore]].
+*{{SCP|Quest}} [[Plague City]] for [[Ardougne Teleport]] (or [[Teleport to House]] to [[Rimmington]]) to access [[Brimhaven]] faster via [[Captain Barnaby]] (if the player does not have access to redirection scrolls or does not have the player-owned house in Brimhaven).
+*{{SCP|Quest}} [[Tai Bwo Wannai Trio]] to be able to use [[Tai bwo wannai teleport]] scrolls to the calquat patch.
+**Alternatively, started {{SCP|Quest}} [[Fairytale II - Cure a Queen]] for access to [[fairy rings]].
+*Started {{SCP|Quest}} [[Mourning's End Part I]] for access to the fruit tree patch in [[Lletya]] and [[teleport crystal]]s.
+* {{SCP|Quest}} [[Children of the Sun]] to access the patches in [[Varlamore]].
+* {{SCP|Quest}} [[Twilight's Promise]] to access the Quetzal Transport System. [[Kastori]] and [[Colossal Wyrm Remains|Colossal Wyrm]] landing sites will need to be built.
+*{{SCP|Quest}} [[Song of the Elves]] for access to the crystal tree patch.
+*{{SCP|Construction|40}} to be able to move the [[player-owned house]] to [[Brimhaven]]
+*{{SCP|Magic|40}} for casting [[teleportation spells]], although teleport tablets can be used instead.
+*{{SCP|Sailing|51}} required and {{SCP|Construction|50}} highly recommended for the [[Anglers' Retreat]] hardwood patch.
+
+===General information and tips===
+Pay the farmer to chop down the tree for replanting. This only costs a small amount of money and is significantly faster than chopping the tree. However, the celastrus tree has valuable harvest, so it can be worthwhile to spend extra time to gather the [[celastrus bark]]s.
+
+It is best to pay the farmer to look after the tree, so it cannot die and players are guaranteed to get the Farming experience from checking the health of the tree. The tree patch in Falador Park will never get diseased after completing the [[Falador Diary#Elite|elite Falador Diary]]. To save money, it can be worthwhile to treat certain patches with ultracompost instead of paying the farmer to look after the tree. This is slower overall however, because the tree will occasionally die and the player would have spent time for no experience gained. Reviving a dead tree with [[Resurrect Crops]] helps to reduce the number of trees lost this way.
+
+Buy the [[sapling]]s from the [[Grand Exchange]]. If seeking to save money, buy the tree seeds instead and grow them into saplings. Saplings are made by using a [[Tree_patch#Tree_seeds|tree seed]] on a [[filled plant pot]] while having a [[gardening trowel]] in the inventory, using a [[watering can]] on the [[seedling]]s to water them and then waiting for them to grow into saplings. Saplings grow while stored in bank, so players do not have to have them in their inventory. Players who have level 68 Magic and have completed [[Dream Mentor]] can use [[Humidify]] spell to water the seedlings faster.
+
+Regular trees are usually more expensive compared to the other trees. Players who are not in a rush to level up Farming are advised to only farm fruit trees, hardwood trees and special trees for cheaper experience. Depending on the prices, it can also be worthwhile to farm palm trees instead of dragonfruit trees at higher levels, as growing dragonfruit trees costs {{Coins|({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200)/17825}} per experience and palm trees would only cost {{Coins|({{GEP|Palm sapling}} + {{GEP|Papaya fruit|15}})/10509.6}} per experience, including the protection payments.
+
+Saplings cannot be unnoted at a Tool Leprechaun. If there is not enough room to hold all the saplings needed, resupply at a bank during the run.
+
+[[Farming boosts]] can be used to access different tiers of the [[Farming Guild]] before obtaining the level required. The level is only checked when attempting to enter the area.
+
+===Setup===
+{{Inventory
+|align = right|Coins 10000\2000000|Rune pouch|Spade|Eternal teleport crystal|Magic sapling|Magic sapling|Magic sapling|Magic sapling|Magic sapling|Magic sapling|Taverley teleport|Ring of wealth|Dragonfruit sapling\6;n|Brimhaven teleport|Catherby teleport (tablet)|Skills necklace|Crystal sapling|Bottomless compost bucket (full)|Calquat sapling|Tai bwo wannai teleport|Celastrus sapling|Redwood sapling|Coconut\1000;n|Poison ivy berries\24;n|Potato cactus\8;n|Dragonfruit\6;n|Mahogany sapling\3;n|Yanillian hops\75;n
+}}
+{{Rune pouch|align=right
+|1=Law rune
+|2=Lava rune
+|3=Mist rune
+}}
+{{Equipment
+|align = right
+|head = 
+|cape = 
+|neck = Digsite pendant
+|ammo = 
+|weapon = Dragon axe
+|torso = 
+|legs = 
+|shield = 
+|gloves = 
+|boots = 
+|ring = Slayer ring (eternal)
+}}
+*Saplings
+**7 tree (starting at {{SCP|Farming}}15 Farming)
+***One patch in the [[Farming Guild]] requires {{SCP|Farming}}65 Farming to access
+**7 fruit tree (starting at {{SCP|Farming}}27 Farming)
+***One patch in the Farming Guild requires {{SCP|Farming}}85 Farming to access
+**5 hardwood (starting at {{SCP|Farming}}35 Farming)
+***Three patches requires completion of [[Bone Voyage]] to access
+***One patch requires completion of [[The Ribbiting Tale of a Lily Pad Labour Dispute]] to access
+***Level {{SCP|Sailing|51}} required to access the [[Anglers' Retreat]] patch. Level {{SCP|Construction|50}} to build the rowboat to/from Corsair Cove (highly recommended)
+**3 calquat (starting at {{SCP|Farming}}72 Farming)
+**1 crystal (starting at {{SCP|Farming}}74 Farming)
+**1 celastrus (starting at {{SCP|Farming}}85 Farming)
+**1 redwood (starting at {{SCP|Farming}}90 Farming)
+*[[Spade]]
+*Payments in bank notes (recommended)
+**If not paying the farmer, a [[bottomless compost bucket]] containing [[ultracompost]], or [[runes]] for [[Fertile Soil]] spell and [[volcanic ash]]es (after reading the [[ash covered tome]])
+*Coins
+*[[Teleport tabs]] or runes for Taverley house or Falador teleport, Brimhaven house or Ardougne teleport, Catherby or Camelot teleport, Lumbridge teleport and Varrock teleport.
+*[[Skills necklace]] (for the tree and fruit tree patches in the [[Farming Guild]])
+*[[Ring of wealth]] (for access to the spirit tree at the Grand Exchange and slightly faster access to the Falador tree patch)
+**Alternatively, Falador Teleport and Varrock Teleport to the Grand Exchange (after medium Varrock Diary) can be used instead
+*[[Teleport crystal]] or its [[Eternal teleport crystal|eternal version]] (for access to Prifddinas and Lletya)
+*[[Digsite pendant]] (for the hardwood tree patches in Fossil Island)
+*[[Slayer ring]] (optional for Gnome Stronghold tree patch)
+*[[Tai bwo wannai teleport]] scroll (costs {{Coins|{{GEP|Tai bwo wannai teleport}}}}, recommended for the calquat patch)
+*[[Stamina potion]]
+*[[Farmer's outfit]] or [[graceful outfit]] (optional)
+
+For hardwood trees, if protection payment is skipped and [[ultracompost]] ({{Coins|{{GEP|Ultracompost}}}}) is used instead, growing [[teak]]s ({{SCP|Farming}}35 Farming) costs {{Coins|({{GEP|Teak sapling}} + {{GEP|Ultracompost}}) / (0.8 *7315)}} coins per experience, while [[mahogany]] trees ({{SCP|Farming}}55 Farming) costs {{Coins|({{GEP|Mahogany sapling}} + {{GEP|Ultracompost}}) / (0.8 *15,783)}} coins per experience.
+
+For specialty trees, growing [[calquat tree]] ({{SCP|Farming}}72 Farming) costs {{Coins|({{GEP|Calquat sapling}} + {{GEP|Poison ivy berries|8}}) / 12516.5}} coins per experience, requiring payment of 8 poison ivy berries.
+
+{| class="wikitable align-center-1"
+|+Tree table
+! rowspan=2 |{{SCP|Farming}} Level
+! rowspan=2 colspan=2 |Seed
+! rowspan=2 colspan=2 |Payment
+! rowspan=2 |Growth time
+! colspan=3 |Experience
+! rowspan=2 |Total cost<ref group="T">Seed Cost, Protection cost and 200 coins for removal.</ref>
+! rowspan=2 |GP/XP
+|-
+!Planting
+!Checking
+!Total
+|-
+|15
+|{{plinkt|Acorn}}
+|{{plinkp|Tomatoes(5)}}||1 [[Tomatoes|basket of tomatoes]]
+|3hr20m (5x40 min)
+|14
+|467.3
+|481.3
+|{{Coins|-({{GEP|Acorn}}+{{GEP|Tomatoes(5)}}+200)}}
+|{{Coins|-({{GEP|Acorn}}+{{GEP|Tomatoes(5)}}+200)/481.3}}
+|-
+|30
+|{{plinkt|Willow seed|txt=Willow}}
+|{{plinkp|Apples(5)}}||1 [[Apples|basket of apples]]
+|4hr00m (6x40 min)
+|25
+|1,456.5
+|1,481.5
+|{{Coins|-({{GEP|Willow seed}}+{{GEP|Apples(5)}}+200)}}
+|{{Coins|-({{GEP|Willow seed}}+{{GEP|Apples(5)}}+200)/1481.5}}
+|-
+|45
+|{{plinkt|Maple seed|txt=Maple}}
+|{{plinkp|Oranges(5)}}||1 [[Oranges|basket of oranges]]
+|5hr20m (8x40 min)
+|45
+|3,403.4
+|3,448.4
+|{{Coins|-({{GEP|Maple seed}}+{{GEP|Oranges(5)}}+200)}}
+|{{Coins|-({{GEP|Maple seed}}+{{GEP|Oranges(5)}}+200)/3448.4}}
+|-
+|60
+|{{plinkt|Yew seed|txt=Yew}}
+|{{plinkp|Cactus spine}}||10 [[cactus spine]]s
+|6hr40m (10x40 min)
+|81
+|7,069.9
+|7,150.9
+|{{Coins|-({{GEP|Yew seed}}+{{GEP|Cactus spine|10}}+200)}}
+|{{Coins|-({{GEP|Yew seed}}+{{GEP|Cactus spine|10}}+200)/7150.9}}
+|-
+|75
+|{{plinkt|Magic seed|txt=Magic}}
+|{{plinkp|Coconut}}||25 [[coconut]]s
+|8hr00m (12x40 min)
+|145.5
+|13,768.3
+|13,913.8
+|{{Coins|-({{GEP|Magic seed}}+{{GEP|Coconut|25}}+200)}}
+|{{Coins|-({{GEP|Magic seed}}+{{GEP|Coconut|25}}+200)/13913.8}}
+|}
+{{reflist|group=T}}
+
+{| class="wikitable align-center-1"
+|+Fruit tree table
+! rowspan=2 |{{SCP|Farming}} Level
+! rowspan=2 colspan=2 |Seed
+! rowspan=2 colspan=2 |Payment
+! rowspan=2 |Growth time
+! colspan=4 |Experience
+! colspan="2" |Total cost<ref group="F">Seed Cost, Protection cost and 200 coins for removal, minus worth what is harvested.</ref>
+! colspan="2" |GP/XP 
+|-
+!Plant
+!Check
+!Harvesting
+!Total
+!No harvest
+!Harvest
+!No harvest
+!Harvest
+|-
+|27
+|{{plinkt|Apple tree seed|txt=Apple}}
+|{{plinkp|Sweetcorn}}||9 [[sweetcorn]]s
+|16hr (6x160 min)
+|22
+|1,199.5
+|51
+|1,272.5
+|{{Coins|-({{GEP|Apple tree seed}}+{{GEP|Sweetcorn|9}}+200)}}
+|{{Coins|-({{GEP|Apple tree seed}}+{{GEP|Sweetcorn|9}}+200-{{GEP|Cooking apple|6}})}}
+|{{Coins|-({{GEP|Apple tree seed}}+{{GEP|Sweetcorn|9}}+200)/1221.5}}
+|{{Coins|-({{GEP|Apple tree seed}}+{{GEP|Sweetcorn|9}}+200-{{GEP|Cooking apple|6}})/1272.5}}
+|-
+|33
+|{{plinkt|Banana tree seed|txt=Banana}}
+|{{plinkp|Apples(5)}}||4 [[Apples|baskets of apples]]
+|16hr (6x160 min)
+|28
+|1,750.5
+|63
+|1,841.5
+|{{Coins|-({{GEP|Banana tree seed}}+{{GEP|Apples(5)|4}}+200)}}
+|{{Coins|-({{GEP|Banana tree seed}}+{{GEP|Apples(5)|4}}+200-{{GEP|Banana|6}})}}
+|{{Coins|-({{GEP|Banana tree seed}}+{{GEP|Apples(5)|4}}+200)/1778.5}}
+|{{Coins|-({{GEP|Banana tree seed}}+{{GEP|Apples(5)|4}}+200-{{GEP|Banana|6}})/1841.5}}
+|-
+|39
+|{{plinkt|Orange tree seed|txt=Orange}}
+|{{plinkp|Strawberries(5)}}||3 [[Strawberries|baskets of strawberries]]
+|16hr (6x160 min)
+|35.5
+|2,470.2
+|81
+|2,586.7
+|{{Coins|-({{GEP|Orange tree seed}}+{{GEP|Strawberries(5)|3}}+200)}}
+|{{Coins|-({{GEP|Orange tree seed}}+{{GEP|Strawberries(5)|3}}+200-{{GEP|Orange|6}})}}
+|{{Coins|-({{GEP|Orange tree seed}}+{{GEP|Strawberries(5)|3}}+200)/2505.7}}
+|{{Coins|-({{GEP|Orange tree seed}}+{{GEP|Strawberries(5)|3}}+200-{{GEP|Orange|6}})/2586.7}}
+|-
+|42
+|{{plinkt|Curry tree seed|txt=Curry}}
+|{{plinkp|Bananas(5)}}||5 [[Bananas|baskets of bananas]]
+|16hr (6x160 min)
+|40
+|2,906.9
+|90
+|3,036.9
+|{{Coins|-({{GEP|Curry tree seed}}+{{GEP|Bananas(5)|5}}+200)}}
+|{{Coins|-({{GEP|Curry tree seed}}+{{GEP|Bananas(5)|5}}+200-{{GEP|Curry leaf|6}})}}
+|{{Coins|-({{GEP|Curry tree seed}}+{{GEP|Bananas(5)|5}}+200)/2946.9}}
+|{{Coins|-({{GEP|Curry tree seed}}+{{GEP|Bananas(5)|5}}+200-{{GEP|Curry leaf|6}})/3036.9}}
+|-
+|51
+|{{plinkt|Pineapple seed|txt=Pineapple}}
+|{{plinkp|Watermelon}}||10 [[watermelon]]s
+|16hr (6x160 min)
+|57
+|4,605.7
+|129
+|4,791.7
+|{{Coins|-({{GEP|Pineapple seed}}+{{GEP|Watermelon|10}}+200)}}
+|{{Coins|-({{GEP|Pineapple seed}}+{{GEP|Watermelon|10}}+200-{{GEP|Pineapple|6}})}}
+|{{Coins|-({{GEP|Pineapple seed}}+{{GEP|Watermelon|10}}+200)/4662.7}}
+|{{Coins|-({{GEP|Pineapple seed}}+{{GEP|Watermelon|10}}+200-{{GEP|Pineapple|6}})/4791.7}}
+|-
+|57
+|{{plinkt|Papaya tree seed|txt=Papaya}}
+|{{plinkp|Pineapple}}||10 [[pineapple]]s
+|16hr (6x160 min)
+|72
+|6,146.4
+|162
+|6,380.4
+|{{Coins|-({{GEP|Papaya tree seed}}+{{GEP|Pineapple|10}}+200)}}
+|{{Coins|-({{GEP|Papaya tree seed}}+{{GEP|Pineapple|10}}+200-{{GEP|Papaya fruit|6}})}}
+|{{Coins|-({{GEP|Papaya tree seed}}+{{GEP|Pineapple|10}}+200)/6218.4}}
+|{{Coins|-({{GEP|Papaya tree seed}}+{{GEP|Pineapple|10}}+200-{{GEP|Papaya fruit|6}})/6380.4}}
+|-
+|68
+|{{plinkt|Palm tree seed|txt=Palm tree}}
+|{{plinkp|Papaya fruit}}||15 [[papaya fruit]]
+|16hr (6x160 min)
+|110.5
+|10,150.1
+|249
+|10,509.6
+|{{Coins|-({{GEP|Palm tree seed}}+{{GEP|Papaya fruit|15}}+200)}}
+|{{Coins|-({{GEP|Palm tree seed}}+{{GEP|Papaya fruit|15}}+200-{{GEP|Coconut|6}})}}
+|{{Coins|-({{GEP|Palm tree seed}}+{{GEP|Papaya fruit|15}}+200)/10260.6}}
+|{{Coins|-({{GEP|Palm tree seed}}+{{GEP|Papaya fruit|15}}+200-{{GEP|Coconut|6}})/10509.6}}
+|-
+|81
+|{{plinkt|Dragonfruit tree seed|txt=Dragonfruit}}
+|{{plinkp|Coconut}}||15 [[coconut]]
+|16hr (6x160 min)
+|140
+|17,335
+|420
+|17,825
+|{{Coins|-({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200)}}
+|{{Coins|-({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200-{{GEP|Dragonfruit|6}})}}
+|{{Coins|-({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200)/17475}}
+|{{Coins|-({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200-{{GEP|Dragonfruit|6}})/17825}}
+|}
+{{reflist|group=F}}
+''See also:'' [[Seeds#Trees]] and [[Seeds#Fruit trees]] for trees and protection.
+
+{| class="wikitable align-center-1"
+|+Hardwood tree table
+! rowspan=2 |{{SCP|Farming}} Level
+! rowspan=2 colspan=2 |Seed
+! rowspan=2 colspan=2 |Payment
+! rowspan=2 |Growth time
+! colspan=3 |Experience
+! rowspan=2 |Total cost<ref group="H">Seed Cost, Protection cost and 200 coins for removal.</ref>
+! rowspan=2 |GP/XP
+|-
+!Planting
+!Checking
+!Total
+|-
+|35
+|{{plinkt|Teak seed|txt=Teak}}
+|{{plinkp|Limpwurt root}}||15 [[limpwurt roots]]
+|74hr40m (7x640 min)
+|35
+|7,290
+|7,325
+|{{Coins|-({{GEP|Teak seed}}+{{GEP|Limpwurt root|15}}+200)}}
+|{{Coins|-({{GEP|Teak seed}}+{{GEP|Limpwurt root|15}}+200)/7325}}
+|-
+|55
+|{{plinkt|Mahogany seed|txt=Mahogany}}
+|{{plinkp|Yanillian hops}}||25 [[yanillian hops]]
+|85hr20m (8x640 min)
+|63
+|15,720
+|15,783
+|{{Coins|-({{GEP|Mahogany seed}}+{{GEP|Yanillian hops|25}}+200)}}
+|{{Coins|-({{GEP|Mahogany seed}}+{{GEP|Yanillian hops|25}}+200)/15783}}
+|-
+|66
+|{{plinkt|Camphor seed|txt=Camphor}}
+|{{plinkp|White berries}}||10 [[White berries]]
+|85hr20m (8x640 min)
+|88
+|17,840
+|17,928
+|{{Coins|-({{GEP|Camphor seed}}+{{GEP|White berries|10}}+200)}}
+|{{Coins|-({{GEP|Camphor seed}}+{{GEP|White berries|10}}+200)/17,928}}
+|-
+|80
+|{{plinkt|Ironwood seed|txt=Ironwood}}
+|{{plinkp|Curry leaf}}||10 [[Curry Leaf]]
+|85hr20m (8x640 min)
+|145
+|20,380
+|20,525
+|{{Coins|-({{GEP|Ironwood seed}}+{{GEP|Curry leaf|10}}+200)}}
+|{{Coins|-({{GEP|Ironwood seed}}+{{GEP|Curry leaf|10}}+200)/20,525}}
+|-
+|92
+|{{plinkt|Rosewood seed|txt=Rosewood}}
+|{{plinkp|Dragonfruit}}||8 [[Dragonfruit]]
+|106hr40m (10x640 min)
+|252
+|23,100
+|23,352
+|{{Coins|-({{GEP|Rosewood seed}}+{{GEP|Dragonfruit|8}}+200)}}
+|{{Coins|-({{GEP|Rosewood seed}}+{{GEP|Dragonfruit|8}}+200)/23,352}}
+|-
+|}
+{{reflist|group=H}}
+
+{| class="wikitable align-center-1"
+|+Special tree table
+! rowspan=2 |{{SCP|Farming}} Level
+! rowspan=2 colspan=2 |Seed
+! rowspan=2 colspan=2 |Payment
+! rowspan=2 |Growth time
+! colspan=4 |Experience
+! rowspan=2 |Total cost<ref group="S">Seed Cost, Protection cost and 200 coins for removal, minus the worth of what is harvested where applicable.</ref>
+! rowspan=2 |GP/XP
+|-
+!Planting
+!Checking
+!Harvesting
+!Total
+|-
+|72
+|{{plinkt|Calquat tree seed|txt=Calquat}}
+|{{plinkp|Poison ivy berries}}||8 [[poison ivy berries]]
+|21hr20m (8x160 min)
+|129.5
+|12,096
+|291
+|12,516.5
+|{{Coins|-({{GEP|Calquat tree seed}}+{{GEP|Poison ivy berries|8}}+200)}}
+|{{Coins|-({{GEP|Calquat tree seed}}+{{GEP|Poison ivy berries|8}}+200)/12516.5}}
+|-
+|74
+|{{plinkt|Crystal acorn}}
+|{{NA|colspan=2}}
+|8hr00m (6x80 min)
+|126
+|13,240
+|{{NA}}
+|13,366
+|<ref group="S">Crystal tree yields roughly 30 [[Crystal shard|crystal shards]] when treated with [[ultracompost]], which average roughly {{Coins|{{GEP|Divine super combat potion(4)}}*2.5-({{GEP|Super combat potion(4)}}*2.5)}} per shard when used to make [[Divine super combat potion|divine super combat potions]] with 97 [[Herblore]]. Profit assumes you traded in a crystal weapon seed to [[Pennant]] for a crystal acorn.</ref>
+|
+|-
+|85
+|{{plinkt|Celastrus seed|txt=Celastrus}}
+|{{plinkp|Potato cactus}}||8 [[potato cactus]]
+|13hr20m (5x160 min)
+|204
+|14,130
+|70.5<ref group="S">Yield increases depending on the type of [[compost]] used. A celastrus tree gives 9 barks on average when using ultracompost. ([[Farming#Average yield per crop type|see average yield calculation]])</ref>
+|14,404.5
+|{{Coins|-(({{GEP|Celastrus seed}}+{{GEP|Potato cactus|8}})+200)+{{GEP|Celastrus bark|9}}}}
+|{{Coins|(-(({{GEP|Celastrus seed}}+{{GEP|Potato cactus|8}})+200)+{{GEP|Celastrus bark|9}})/14450}}
+|-
+|90
+|{{plinkt|Redwood tree seed|txt=Redwood}}
+|{{plinkp|Dragonfruit}}||6 [[dragonfruit]]
+|106hr40m (10x640 min)
+|230
+|22,450
+|{{NA}}
+|22,680
+|{{Coins|-({{GEP|Redwood tree seed}}+{{GEP|Dragonfruit|6}}+2000)}}<ref group="S">Redwood trees cost 2000 coins to remove.</ref>
+|{{Coins|-({{GEP|Redwood tree seed}}+{{GEP|Dragonfruit|6}}+2000)/22680}} 
+|}
+{{reflist|group=S}}

@@ -1,0 +1,109 @@
+===Levels 95–99: Wrath runes===
+{{Equipment
+|align = right
+|head = Hat of the eye
+|cape = Crafting cape(t)
+|neck = Amulet of fury
+|ammo = 
+|weapon = Zamorakian hasta
+|torso = Robe top of the eye
+|legs = Robe bottoms of the eye
+|shield = Dragonfire shield
+|gloves = Regen bracelet
+|boots = Boots of the eye
+|ring = Ring of suffering (i)
+}}
+{{Inventory
+|align = right
+|1 = Pure essence
+|2 = Pure essence
+|3 = Pure essence
+|4 = Pure essence
+|5 = Colossal pouch
+|6 = Pure essence
+|7 = Pure essence
+|8 = Pure essence
+|9 = Mythical cape
+|10 = Pure essence
+|11 = Pure essence
+|12 = Pure essence
+|13 = Pure essence
+|14 = Pure essence
+|15 = Pure essence
+|16 = Pure essence
+|17 = Pure essence
+|18 = Pure essence
+|19 = Pure essence
+|20 = Pure essence
+|21 = Pure essence
+|22 = Pure essence
+|23 = Pure essence
+|24 = Pure essence
+|25 = Pure essence
+|26 = Pure essence
+|27 = Pure essence
+|28 = Pure essence
+}}
+Crafting [[wrath rune]]s is a profitable alternative to the faster methods. This method requires completion of [[Dragon Slayer II]]. Players will also need to run past aggressive dragons, so [[dragonfire]] protection is necessary.
+
+Players can gain up to around 44,880 experience per hour using this method assuming they are able to complete 85 runs/hour, though this requires decent focus and a nearly optimal setup to achieve. At this rate, players would also make {{Coins|{{GEP|Wrath rune|5610}}-{{GEP|Pure essence|5610}}}} profit per hour at the current rune prices ({{Coins|{{GEP|Wrath rune|5610*1.6|round=0}}-{{GEP|Pure essence|5610}}}} when using the [[Raiments of the Eye]]). Using this method from level 95 to 99 would take around 95 hours and would offer roughly {{Coins|{{GEP|Wrath rune|525000}}-{{GEP|Pure essence|525000}}}} profit. A more relaxed pace of 75 runs/hour would yield an hourly rate of 39,600 experience and {{Coins|{{GEP|Wrath rune|4950}}-{{GEP|Pure essence|4950}}}} profit ({{Coins|{{GEP|Wrath rune|4950*1.6|round=0}}-{{GEP|Pure essence|4950}}}} when using the Raiments of the Eye), and would take approximately 107 hours to reach level 99 from level 95. Higher rates are possible but difficult to achieve without a [[Max Cape]] or [[Runecraft Cape]] to eliminate the need for repairing essence pouches. 
+
+{| class="wikitable"
+|+Wrath Runes
+!Level {{SCP|Runecraft}}
+!XP/Run
+!Value/Run
+!XP 75 Runs/Hour
+!GP 75 Runs/Hour
+!XP 85 Runs/Hour
+!GP 85 Runs/Hour
+|-
+|95
+|528 {{efn|name=refColPouch|Assumes colossal pouch.}}
+|{{Coins|{{GEP|Wrath rune|66}} - {{GEP|Pure essence|66}}}}
+|39,600
+|{{Coins|{{GEP|Wrath rune|66}}*75 - {{GEP|Pure essence|66}}*75}}
+|44,880
+|{{Coins|{{GEP|Wrath rune|66}}*85 - {{GEP|Pure essence|66}}*85}}
+|}
+
+{| class="wikitable"
+|+Wrath Runes W/ Raiments of the Eye Full Set
+!Level {{SCP|Runecraft}}
+!XP/Run
+!Value/Run
+!XP 75 Runs/Hour
+!GP 75 Runs/Hour
+!XP 85 Runs/Hour
+!GP 85 Runs/Hour
+|-
+|95
+|528 {{efn|name=refColPouch}}
+|{{Coins|{{GEP|Wrath rune|66*1.6|round=0}} - {{GEP|Pure essence|66}}}}
+|39,600
+|{{Coins|{{GEP|Wrath rune|66*75*1.6|round=0}} - {{GEP|Pure essence|66}}*75}}
+|44,880
+|{{Coins|{{GEP|Wrath rune|66*85*1.6|round=0}} - {{GEP|Pure essence|66}}*85}}
+|}
+{{notelist}}
+
+====Setup and runecrafting====
+The optimal setup consists of the following:
+*[[Wrath tiara]]  or [[Raiments of the Eye]]
+*A shield that offers [[dragonfire]] protection, such as the [[dragonfire shield]]
+*[[Mythical cape]]
+*[[Bank teleport]], such as the [[Crafting cape]] or a [[ring of dueling]]
+*All essence pouches
+*[[Weight-reducing clothing]]
+*[[Regen bracelet]]
+*Some defensive equipment
+*Charged [[ring of endurance]]
+
+For efficient banking, players should have essence, 1-dose stamina potions, runes for [[NPC Contact]], and some cheap food near the 'Deposit inventory' button. Players are also recommended to lock their mythical cape and essence pouch using deposit lock in the bank settings. This way, players can quickly deposit all the crafted runes without depositing any necessary items.
+
+This method goes as follows:
+# Fill pouches and inventory with essence.
+# Teleport to [[Myths' Guild]] with the mythical cape.
+# Run through cave and into altar.
+# Craft wrath runes.
+# Teleport to a bank, and repeat the process. Drink stamina potions, eat food as needed, and repair the essence pouches as needed. Alternatively, you may teleport to your house or [[Nardah]] via the [[Desert Amulet 4]] to restore both health and run energy to conserve supplies.

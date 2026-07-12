@@ -1,0 +1,7 @@
+===Reporting back===
+{{Checklist|
+*Talk to Jorral, back at the outpost, with the scroll and journal.
+*Talk to [[King Lathas]], located on the {{FloorNumber|uk=1}} of the [[Ardougne Castle]]. {{Chat option|1F}}
+*Talk to Jorral, back at the outpost.
+*'''Congratulations, quest complete!'''
+}}

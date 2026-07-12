@@ -1,0 +1,89 @@
+===Levels 35–99: Tempoross===
+{{Main|Tempoross/Strategies}}
+
+Fighting the [[Tempoross]] on mass worlds offers relatively fast experience and requires fairly low amount of effort compared to the tick manipulation methods. Solo methods, [[Tempoross/Strategies#Specific methods|as detailed on the Strategies page]], can easily exceed the following group rates with only moderately more attention, and could also accelerate the acquisition of the [[Spirit angler's outfit]].
+
+'''Not cooking''' the [[Raw harpoonfish|harpoonfish]] means getting lower amounts of points/loot but significantly more Fishing experience. With a [[crystal harpoon]] and a Fishing level near 99, this is the fastest experience in the game if not using tick manipulation methods. With no crystal harpoon or if not near level 99 Fishing, [[drift net fishing]] will yield higher experience rates. 
+
+{| class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! colspan="4" | XP/h
+|-
+! {{plink|Harpoon|txt=Regular}}<ref group="n">The standard harpoon, the [[barb-tail harpoon]], and [[Barbarian Fishing]] all have the same experience rates.</ref>
+! {{plink|Dragon harpoon|txt=Dragon}}
+! {{plink|Infernal harpoon|txt=Infernal}}
+! {{plink|Crystal harpoon|txt=Crystal}}
+|-
+| 35
+| 30,000
+| {{NA}}
+| {{NA}}
+| {{NA}}
+|-
+| 70
+| 62,000
+| 66,000
+| {{NA}}
+| 77,000
+|-
+| 80
+| 65,000
+| 69,000
+| 71,000
+| 85,000
+|-
+| 90
+| 68,000
+| 72,000
+| 74,000
+| 92,000
+|-
+| 99
+| 70,000
+| 74,000
+| 76,000
+| 95,000<ref group="n">[[Update:Poll 82 Changes|As of 7th August 2024]], a "Solo Start" option has been added. Up to 102,000 experience per hour is possible without using another account.</ref>
+|}
+<references group="n" />
+
+'''Cooking''' the [[Raw harpoonfish|harpoonfish]] means lower experience rate but significantly more points and, therefore, loot. It is recommended for Ironman players and pet hunters to use the infernal harpoon when they reach the level requirements.
+
+{| class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! colspan="4" | XP/h
+|-
+! {{plink|Harpoon|txt=Regular}}<ref group="n">The standard [[harpoon]], the [[barb-tail harpoon]], and [[Barbarian Fishing]] all have the same experience rates.</ref>
+! {{plink|Dragon harpoon|txt=Dragon}}
+! {{plink|Infernal harpoon|txt=Infernal}}
+! {{plink|Crystal harpoon|txt=Crystal}}
+|-
+| 35
+| 22,000
+| {{NA}}
+| {{NA}}
+| {{NA}}
+|-
+| 70
+| 52,000
+| 54,000
+| {{NA}}
+| 58,000
+|-
+| 80
+| 56,000
+| 58,000
+| 60,000
+| 62,000
+|-
+| 90
+| 60,000
+| 62,000
+| 64,000
+| 66,000
+|-
+| 99
+| 64,000
+| 66,000
+| 68,000
+| 70,000
+|}<references group="n" />

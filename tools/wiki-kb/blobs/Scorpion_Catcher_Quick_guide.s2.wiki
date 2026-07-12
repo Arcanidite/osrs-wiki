@@ -1,0 +1,39 @@
+==Walkthrough==
+===Getting started===
+{{Map|name=Sorcerer's Tower|x=2702|y=3405|zoom=2|align=right|caption=The location of the Sorcerer's Tower.|width=220|height=220}}
+{{Checklist|
+*Talk to [[Thormac]] on the top floor of the [[Sorcerer's Tower]] south of [[Seers' Village]]. {{Chat option|1What do you need assistance with?|1So how would I go about catching them then?|2Ok, I will do it then}} ({{Fairycode|blr}})
+*Go to Seers Village and speak to a [[Seer]]. (Wait until the seer is done checking himself in the mirror.) {{Chat option|1Your friend Thormac sent me to speak to you.}} Be sure not to skip this step, as the scorpion in Taverley Dungeon is not accessible without first speaking to the seer.
+*Scorpions can be caught in any order and there is no need to return between each catch.
+}}
+
+{|
+|{{Map|2877,9796|name=Kharid Scorpion|caption=The location of the first Kharid Scorpion.|width=200|height=200|r=3|mtype=square|mapID=20}}
+|{{Map|2553,3570|name=Kharid Scorpion|caption=The location of the second Kharid Scorpion.|width=200|height=200|r=3|mtype=square}}
+|{{Map|3058,3488|name=Kharid Scorpion|plane=1|caption=The location of the third Kharid Scorpion.|width=200|height=200|r=3|mtype=square}}
+|}
+===First scorpion===
+{{Checklist|*Note: You will need a [[dusty key]] if you don't have 70 Agility, make sure to grab it before entering the dungeon.
+*Go into [[Taverley Dungeon]], (South Taverley) and go to the [[poison spider]] area.
+**If you need a [[dusty key]] head south to the [[Black Knights' Base]] and kill the [[jailer]]. Use the key on the jail cell and talk to [[Velrak the explorer]]. He will give you the key. Alternatively, a dusty key spawns deep in Taverley Dungeon, near the lava eel fishing spot south of the blue dragon area.
+*Directly south of the level 80 Agility shortcut, search the old wall to enter a small room.
+*Use the [[scorpion cage]] on the [[Kharid Scorpion]]. If you try to pick it up, it will sting you instead.}}
+
+===Second scorpion===
+{{Checklist|*Go to the [[Barbarian Outpost]] (a games necklace is helpful).
+*Go inside the fenced in area near the entrance to the agility course.
+*Go inside the building in the north-east corner of the area.
+*Use the [[scorpion cage]] on the [[Kharid Scorpion]]. If you try to pick it up, it will sting you instead.
+**Note: It is possible for the scorpion to be outside of the small room, in the Agility area, if someone has let it out.}}
+
+===Third scorpion===
+{{Checklist|*Go to the [[Edgeville Monastery|Monastery]] between [[Edgeville]] and [[Ice Mountain]] (a combat bracelet will take you right there).
+*Climb the eastern ladder and go to the east side of the floor.
+**Note: If the Monk stops you and says only members of the order may go upstairs, simply say that you want to join and you will be allowed to go upstairs.
+*Use the [[scorpion cage]] on the [[Kharid Scorpion]]. If you try to pick it up, it will sting you instead.}}
+
+===Finishing Up===
+{{Checklist|
+*Return the full scorpion cage to [[Thormac]].
+*'''Congratulations, quest complete!'''
+}}

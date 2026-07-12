@@ -1,0 +1,53 @@
+===Levels 9–44/80/99: Bird house trapping===
+{{Map|width=320|height=320|3677,3882|3678,3815|3763,3755|3768,3761|align=right|mtype=pin|caption=Bird house trapping locations.}}
+[[Bird house trapping]] is a recurring Hunter training method, much like [[Farming]]. To do a bird house run, set up bird house traps on [[Fossil Island]] and fill them with suitable seeds. After 50 minutes, dismantle the traps for Hunter experience and loot, and set them up again for the next run. There are four spots in which the player can place bird house traps, indicated by the [[File:Bird house site icon.png]] icon.
+
+For this method, players must have completed [[Bone Voyage]] to access Fossil Island. It is strongly recommended to have a lot of [[digsite pendant]]s for the fastest transportation to the island. Digsite pendants can be made by enchanting [[ruby necklace]]s using the [[Lvl-3 Enchant]] spell or the [[Enchant ruby or topaz|respective magic tablet]]. Being able to enchant ruby necklaces requires [[Kudos|finding]] a [[clean necklace]] and showing it to one of the archaeologists in the [[Varrock Museum]].
+
+Building a bird house requires a [[clockwork]], a log of the corresponding kind, a hammer, and a chisel. Having the [[Crafting]] level to build the bird houses is recommended, as the assembled traps are uncommonly traded in the [[Grand Exchange]]. When collecting a filled bird house, the clockwork will be returned, along with bird nests and feathers. Use cheap low-level [[seed]]s to fill the bird houses, such as [[Potato seed|potato]] or [[onion seed]]s.
+
+This method offers the fastest Hunter experience effectively up to level 80. It is viable even up to level 99, as long as obtaining levels quickly is not required. However, players may want to switch to [[drift net fishing]] at level 44 Hunter, as it is more efficient overall if the player also needs to train [[Fishing]]. For Hunter alone, this method is a lot better than the active training methods at lower levels. Players who seek for the fastest Hunter experience in real time likely find it best to do bird house runs for the majority of the experience at lower levels.
+
+The table below lists the experience for a single (full) birdhouse. Multiply this by 4 to get the total experience for a full run. One run takes around 73–90 seconds, which equates to 40–49 runs per actively spent hour.
+
+{{:Bird house trapping/Table}}
+
+====Initial bird house run====
+Items required for the initial bird house run and unlocking three [[Mycelium Transportation System|Mushtrees]], which assist with transport around the island later:
+*A [[digsite pendant]] with at least 3 charges
+*[[Hammer]]
+*[[Chisel]]
+*4 logs
+*4 [[clockwork]]s
+*40 seeds of any kind, eg [[Potato seed|potato]] or [[Onion seed|onion]] (20 if using [[wildblood seed]]s or herb seeds [[Ranarr seed|Ranarr]] and above)
+*1 stamina potion
+
+#Teleport to the Digsite using the Digsite pendant. Use the Quick-Travel option on the barge guard to travel to Fossil Island.
+#Run west to the swamp entrance. While running, use the clockworks on the logs to craft 4 bird houses.
+#Place a bird house at the space near the swamp entrance (at the more north-western entrance, by the birdhouse symbol.)
+#Use the seeds on the bird house (Needs to be done manually for all bird houses)
+#Run north-east to the hill, and follow the path to the [[House on the Hill]]. Climb the stairs until you reach an area with a Mushtree and some machines.
+#Use the Digsite pendant on the southern machine ([[Strange Machine]])  to unlock the teleport option on the Digsite pendant to Fossil Island.
+#Click on the Mushtree north to unlock the Mushtree teleport option to the House on the Hill.
+#Teleport to the Digsite and travel back to Fossil Island (or just walk back). From here, run north-west to the [[File:Bird house site icon.png]] icon at the north-west of the Mushroom forest.
+#Click on the Mushtree nearby to unlock the Mushtree teleport option to Mushroom Meadow.
+#Place a bird house to the spot north of the Mushtree.
+#Teleport to the Digsite and travel back to Fossil Island. From here, follow the coastline south until you see an opening in the north-east. Head a bit north-east and run inside the valley with two [[File:Bird house site icon.png]] icons.
+#Place the final two bird houses on the spots in the valley, and click on the Mushtree to unlock the Mushtree teleport option to Verdant Valley.
+
+====Doing a bird house run====
+After the initial run, the items required for a bird house run are as follows:
+*A [[Digsite pendant]] with at least 1 charge
+*[[Hammer]]
+*[[Chisel]]
+*4 logs or 4 [[bird houses]]
+*40 seeds of any kind (20 if using [[wildblood seed]]s or herb seeds [[Ranarr seed|Ranarr]] and above)
+*1 [[clockwork]] (optional but recommended)
+
+Bringing the extra clockwork allows the player to craft the bird houses while running to the next one. This will save a few seconds compared to crafting bird houses after harvesting them. Alternatively, craft the bird houses while storing them in the bank. While collecting your birdhouses you only need a replacement birdhouse and seeds. With this method, you will not need to use the hammer or chisel. This method shaves off a few seconds as there is no animation for crafting houses. While slower, birdhouses can be reset in a single click using the "Reset" right-click option on them, which will dismantle, craft, and place a new birdhouse, although seeds will still need to be added afterwards.
+
+Doing a bird house run goes as follows:
+#Teleport to Fossil Island using the Fossil Island option on the digsite pendant, and use the Mushtree to go to Verdant Valley. While running, use a log on the clockwork to craft a bird house.
+#Check and place the western bird house, followed by the eastern one.
+#Use the Mushtree to Mushroom Meadow, and check and place the bird house north of the Mushtree.
+#Run south to the Sticky Swamp entrance, and check and place the final bird house.

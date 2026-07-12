@@ -1,0 +1,31 @@
+==General training notes==
+Using the [[rapid]] attack style will offer the highest damage output and the fastest experience rates. For [[Chinchompa (weapon)|chinchompa]]s, the rapid attack style is called 'Medium fuse'. Longrange should only be used to train [[Defence]] while throwing chinchompas. Use the best [[ranged armour]] available to maximise damage output.
+
+[[Ava's device]]s return a percentage of certain ammunition fired. They are obtained from [[Ava]] after completing [[Animal Magnetism]], which requires level 30 Ranged. Wearing one of the devices will save a lot of money and time when using certain Ranged weapons (such as darts or shortbows), as the player does not need as much ammunition or to pick it up as often. Ammunition recovery will not work if wearing a [[Ava's_device#Metallic_interference|metallic body]].
+
+{| class="wikitable align-center-1 align-left-2" style="text-align:right"
+! colspan="2"|Device
+! {{SCP|Ranged}} req.
+! Recovery rate
+! Effectiveness <ref group="n">The number of times a given piece of ammunition can be used, on average, before being broken or lost.</ref>
+|-
+| {{plinkt|Ava's attractor}}
+| 30
+| 60%
+| 2.5
+|-
+| {{plinkt|Ava's accumulator}}
+| 50
+| 72%
+| 3.57
+|-
+| {{plinkt|Ava's assembler}} <ref group="n">Also requires a [[Vorkath's head]], which is obtainable after [[Dragon Slayer II]].</ref>
+| 70
+| 80%
+| 5
+|}
+<references group="n" />
+
+If picking up ammunition, speak to the [[Ranged combat tutor]] to toggle whether or not the ammunition will automatically be equipped.
+
+[[Void Knight equipment]] with the [[Void ranger helm]] is best against low defence monsters due to its damage-boosting set effect, while [[crystal armour]] or [[Masori armour]] are much better against higher defence monsters. Getting the void full set is not worthwhile timewise unless training to 99 using the fastest methods possible, however it is useful for [[Vorkath]], low-switch [[Zulrah]], [[Theatre of Blood]], and it is required for an [[elite Western Provinces Diary]] task. Completing the [[hard Western Provinces diary]] unlocks the elite upgrade for the void knight top and robe for an extra 400 [[Pest Control]] points.

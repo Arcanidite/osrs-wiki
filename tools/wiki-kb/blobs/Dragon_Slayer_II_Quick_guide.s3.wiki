@@ -1,0 +1,12 @@
+===Starting off===
+'''Items required:''' ''[[Pickaxe]], gear for killing a level 100 monster. '''Recommended''': [[Amulet of glory]], [[digsite pendant]].''
+
+{{Checklist|
+*Talk to [[Alec Kincade]] outside the [[Myths' Guild]] (spirit tree to Feldip Hills) to start the quest. {{Chat option|2How can I gain access to the Guild?|1Yes.}}
+*Talk to [[Dallas Jones]] at the Karamja pub at [[Musa Point]]. The fastest way there is amulet of glory to karamja, alternativley to take the boat from [[Port Sarim]].{{Chat option|2Yes I know it well.}}
+*Go to Elvarg's Lair under [[Crandor]] and talk to Dallas Jones (shortcut via the volcano on Karamja).
+*Right-click use your pickaxe on the Northern wall in the room you defeated Elvarg, then enter the tunnel. (Marked on minimap red wall line)
+*Investigate the [[Ancient Mural]] to the north. A level 100 [[Spawn (Dragon Slayer II)|spawn]] will attack you. Kill it.
+*Investigate the mural again.
+*Talk to Dallas Jones.
+}}

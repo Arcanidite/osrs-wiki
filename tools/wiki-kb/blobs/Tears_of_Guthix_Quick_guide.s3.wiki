@@ -1,0 +1,4 @@
+===Getting started===
+{{Checklist|*Note: If you've already completed [[The Lost Tribe]], you can get to Juna via the [[Lumbridge Castle]] cave. This negates the need for the [[Spiny helmet]] or [[Slayer helmet]]. Having a lit [[Sapphire lantern]] with oil saves time as well.
+**Simply squeeze through the hole, run south past Kazgar, use your pickaxe on the hole to clear it and climb through. Run straight south and jump across the stepping stones. Enter the south tunnel.
+*Talk to [[Juna]] in the [[Lumbridge Swamp Caves]]. {{Chat option|1Okay...}}}}

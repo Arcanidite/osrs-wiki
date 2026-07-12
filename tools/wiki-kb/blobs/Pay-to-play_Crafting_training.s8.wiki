@@ -1,0 +1,79 @@
+===Levels 1–83/99: Molten glass===
+Blowing [[molten glass]] with a [[glassblowing pipe]] offers very slow experience rates, but it requires little attention and a low amount of capital. Most low-level items are not viable due to high cost, but certain higher-level ones, such as unpowered orbs, may be very cheap depending on the prices. Consider making money through other means and training with faster methods, such as cutting low-level gems.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Crafting}} Level
+! colspan="2" rowspan="2" | Item
+! rowspan="2" |XP
+! rowspan="2" |XP/h<ref group="n">Assumes 1,750 glass items blown per hour.</ref>
+! colspan="3" |GE Price
+! rowspan="2" |GP/XP
+|-
+!Buy
+!Sell
+!Diff
+|-
+|1
+|{{plinkt|Beer glass}}
+|17.5||30,625
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Beer glass}}}}
+|{{Coins|{{GEPT|Beer glass}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Beer glass}}-{{GEP|Molten glass}})/17}}
+|-
+|4
+|{{plinkt|Empty candle lantern}}
+|19||33,250
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Empty candle lantern}}}}
+|{{Coins|{{GEPT|Empty candle lantern}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Empty candle lantern}}-{{GEP|Molten glass}})/19}}
+|-
+|12
+|{{plinkt|Empty oil lamp}}
+|25||43,750
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Empty oil lamp}}}}
+|{{Coins|{{GEPT|Empty oil lamp}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Empty oil lamp}}-{{GEP|Molten glass}})/25}}
+|-
+|33
+|{{plinkt|Vial}}
+|35||61,250
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Vial}}}}
+|{{Coins|{{GEPT|Vial}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Vial}}-{{GEP|Molten glass}})/35}}
+|-
+|42
+|{{plinkt|Empty fishbowl}}
+|42.5||74,375
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Empty fishbowl}}}}
+|{{Coins|{{GEPT|Empty fishbowl}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Empty fishbowl}}-{{GEP|Molten glass}})/42.5}}
+|-
+|46
+|{{plinkt|Unpowered orb}}
+|52.5||91,875
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Unpowered orb}}}}
+|{{Coins|{{GEPT|Unpowered orb}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Unpowered orb}}-{{GEP|Molten glass}})/52.5}}
+|-
+|49
+|{{plinkt|Lantern lens}}
+|55||96,250
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Lantern lens}}}}
+|{{Coins|{{GEPT|Lantern lens}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Lantern lens}}-{{GEP|Molten glass}})/55}}
+|-
+|87
+|{{plinkt|Empty light orb}}
+|70||122,500
+|{{Coins|{{GEP|Molten glass}}}}
+|Not sold
+|{{Coins|-{{GEP|Molten glass}}}}
+|{{Coins|-{{GEP|Molten glass}}/70}}
+|}<references group="n" />

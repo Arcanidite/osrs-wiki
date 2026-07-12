@@ -1,0 +1,138 @@
+===Comparison between bone offering methods===
+The table below compares the three primary methods of Prayer training for each type of bone at a '''gilded''' altar with two burners lit, the '''Chaos''' altar, and '''shards''' at the libation bowl. It does not include burying bones or using the Ectofuntus; for those methods, see [[Calculator:Prayer/Bones]].
+
+*This table assumes you manually 'use' bones on altars/chisels for faster experience. This results in 2,550 bones/hour offered at a gilded altar, 2,000 bones/hour offered at the Chaos altar (costing only 1,000 bones/hour), and 1,700 bones/hour blessed + chiseled + offered at the libation bowl.
+*Experience rates do not assume using alternative accounts for running bones and/or lighting burners. If using one, you can expect to achieve rates 20–25% higher at a gilded altar, 40–45% higher at the Chaos altar, and perhaps 30-35% higher at the libation bowl.
+*GP/XP for the Chaos altar assumes effectively getting twice the experience per bone. It also includes the 50 coins unnoting fee per bone (which effectively only applies to half the bones), but does not include the cost of teleports, supplies and potential loss to player killers.
+*XP/hour for the libation bowl assumes having level 62+ Prayer for 3 prayer recharges per inventory of wine. It is also based on the number of inventories of wine required by '''dragon bones'''; lower-tier bones will require fewer trips to the libation bowl due to producing fewer shards/hour, slightly increasing the XP/hour shown here; higher-tier bones will require more trips to the libation bowl, slightly reducing XP/hour shown here. See [[Calculator:Prayer/Blessed_Bone_Shards]] for a more precise breakdown with user inputs.
+*GP/hour for the libation bowl assumes using sunfire splinters and paying Virilis to un-note bones.
+
+{| class="wikitable sortable align-center-1"
+|+
+!colspan=2|Item
+!XP/h (Gilded)
+!XP/h (Chaos)
+!data-sort-type=number | XP/h (Shards)
+!GP/XP (Gilded)
+!GP/XP (Chaos)
+!data-sort-type=number | GP/XP (Shards)
+!GP/h (Gilded)
+!GP/h (Chaos)
+!data-sort-type=number | GP/h (Shards)
+|-
+|{{plinkt|Bones}}
+|40,162||31,500||40,800
+|{{Coins|-{{GEP|Bones}}/15.7}}||{{Coins|-({{GEP|Bones}}+50)/31.5}}||{{Coins|-({{GEP|Bones}}+10+{{GEP|sunfire splinters}}*0.020)/24}}
+|{{Coins|-{{GEP|Bones}}*2550}}||{{Coins|-{{GEP|Bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Bones}}+10+{{GEP|sunfire splinters}}*0.020)*1700 round 0}}}}
+|-
+|{{plinkt|Wolf bones}}
+|40,162||31,500||N/A
+|{{Coins|-{{GEP|Wolf bones}}/15.7}}||{{Coins|-({{GEP|Wolf bones}}+50)/31.5}}||N/A
+|{{Coins|-{{GEP|Wolf bones}}*2550}}||{{Coins|-{{GEP|Wolf bones}}*1000-50000}}||N/A
+|-
+|{{plinkt|Burnt bones}}
+|40,162||31,500||N/A
+|{{Coins|-{{GEP|Burnt bones}}/15.7}}||{{Coins|-({{GEP|Burnt bones}}+50)/31.5}}||N/A
+|{{Coins|-{{GEP|Burnt bones}}*2550}}||{{Coins|-{{GEP|Burnt bones}}*1000-50000}}||N/A
+|-
+|{{plinkt|Monkey bones}}
+|44,625||35,000||N/A
+|{{Coins|-{{GEP|Monkey bones}}/17.5}}||{{Coins|-({{GEP|Monkey bones}}+50)/35}}||N/A
+|{{Coins|-{{GEP|Monkey bones}}*2550}}||{{Coins|-{{GEP|Monkey bones}}*1000-50000}}||N/A
+|-
+|{{plinkt|Bat bones}}
+|47,302||37,100||51,000
+|{{Coins|-{{GEP|Bat bones}}/18.5}}||{{Coins|-({{GEP|Bat bones}}+50)/37.1}}||{{Coins|-({{GEP|Bat bones}}+10+{{GEP|sunfire splinters}}*0.025)/30}}
+|{{Coins|-{{GEP|Bat bones}}*2550}}||{{Coins|-{{GEP|Bat bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Bat bones}}+10+{{GEP|sunfire splinters}}*0.025)*1700 round 0}}}}
+|-
+|{{plinkt|Big bones}}
+|133,875||105,000||122,400
+|{{Coins|-{{GEP|Big bones}}/52.5}}||{{Coins|-({{GEP|Big bones}}+50)/105}}||{{Coins|-({{GEP|Big bones}}+10+{{GEP|sunfire splinters}}*0.060)/72}}
+|{{Coins|-{{GEP|Big bones}}*2550}}||{{Coins|-{{GEP|Big bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Big bones}}+10+{{GEP|sunfire splinters}}*0.060)*1700 round 0}}}}
+|-
+|{{plinkt|Jogre bones}}
+|133,875||105,000||N/A
+|{{Coins|-{{GEP|Jogre bones}}/52.5}}||{{Coins|-({{GEP|Jogre bones}}+50)/105}}||N/A
+|{{Coins|-{{GEP|Jogre bones}}*2550}}||{{Coins|-{{GEP|Jogre bones}}*1000-50000}}||N/A
+|-
+|{{plinkt|Wyrmling bones}}
+|187,425|| 147,000||214,200
+|{{Coins|-{{GEP|Wyrmling bones}}/73.5}}||{{Coins|-({{GEP|Wyrmling bones}}+50)/(2*73.5)}}||{{Coins|-({{GEP|Wyrmling bones}}+10+{{GEP|sunfire splinters}}*0.105)/126}}
+|{{Coins|-{{GEP|Wyrmling bones}}*2550}}||{{Coins|-{{GEP|Wyrmling bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Wyrmling bones}}+10+{{GEP|sunfire splinters}}*0.105)*1700 round 0}}}}
+|-
+|{{plinkt|Zogre bones}}
+|200,812||157,500||183,600
+|{{Coins|-{{GEP|Zogre bones}}/78.7}}||{{Coins|-({{GEP|Zogre bones}}+50)/157.5}}||{{Coins|-({{GEP|Zogre bones}}+10+{{GEP|sunfire splinters}}*0.090)/108}}
+|{{Coins|-{{GEP|Zogre bones}}*2550}}||{{Coins|-{{GEP|Zogre bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Zogre bones}}+10+{{GEP|sunfire splinters}}*0.090)*1700 round 0}}}}
+|-
+|{{plinkt|Shaikahan bones}}
+|223,125||175,000||N/A
+|{{Coins|-{{GEP|Shaikahan bones}}/87.5}}||{{Coins|-({{GEP|Shaikahan bones}}+50)/175}}||N/A
+|{{Coins|-{{GEP|Shaikahan bones}}*2550}}||{{Coins|-{{GEP|Shaikahan bones}}*1000-50000}}||N/A
+|-
+|{{plinkt|Babydragon bones}}
+|267,750||210,000||244,800
+|{{Coins|-{{GEP|Babydragon bones}}/105}}||{{Coins|-({{GEP|Babydragon bones}}+50)/210}}||{{Coins|-({{GEP|Babydragon bones}}+10+{{GEP|sunfire splinters}}*0.120)/144}}
+|{{Coins|-{{GEP|Babydragon bones}}*2550}}||{{Coins|-{{GEP|Babydragon bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Babydragon bones}}+10+{{GEP|sunfire splinters}}*0.120)*1700 round 0}}}}
+|-
+|{{plinkt|Wyrm bones}}
+|446,250||350,000||428,400
+|{{Coins|-{{GEP|Wyrm bones}}/175}}||{{Coins|-({{GEP|Wyrm bones}}+50)/350}}||{{Coins|-({{GEP|Wyrm bones}}+10+{{GEP|sunfire splinters}}*0.210)/252}}
+|{{Coins|-{{GEP|Wyrm bones}}*2550}}||{{Coins|-{{GEP|Wyrm bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Wyrm bones}}+10+{{GEP|sunfire splinters}}*0.210)*1700 round 0}}}}
+|-
+|{{plinkt|Wyvern bones}}
+|642,600||504,000||591,600
+|{{Coins|-{{GEP|Wyvern bones}}/252}}||{{Coins|-({{GEP|Wyvern bones}}+50)/504}}||{{Coins|-({{GEP|Wyvern bones}}+10+{{GEP|sunfire splinters}}*0.290)/348}}
+|{{Coins|-{{GEP|Wyvern bones}}*2550}}||{{Coins|-{{GEP|Wyvern bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Wyvern bones}}+10+{{GEP|sunfire splinters}}*0.290)*1700 round 0}}}}
+|-
+|{{plinkt|Dragon bones}}
+|642,600||504,000||591,600
+|{{Coins|-{{GEP|Dragon bones}}/252}}||{{Coins|-({{GEP|Dragon bones}}+50)/504}}||{{Coins|-({{GEP|Dragon bones}}+10+{{GEP|sunfire splinters}}*0.290)/348}}
+|{{Coins|-{{GEP|Dragon bones}}*2550}}||{{Coins|-{{GEP|Dragon bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Dragon bones}}+10+{{GEP|sunfire splinters}}*0.290)*1700 round 0}}}}
+|-
+|{{plinkt|Drake bones}}
+|714,000||560,000||683,400
+|{{Coins|-{{GEP|Drake bones}}/(80*3.5)}}||{{Coins|-({{GEP|Drake bones}}+50)/560}}||{{Coins|-({{GEP|Drake bones}}+10+{{GEP|sunfire splinters}}*0.335)/402}}
+|{{Coins|-{{GEP|Drake bones}}*2550}}||{{Coins|-{{GEP|Drake bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Drake bones}}+10+{{GEP|sunfire splinters}}*0.335)*1700 round 0}}}}
+|-
+|{{plinkt|Fayrg bones}}
+|749,700||588,000||683,400
+|{{Coins|-{{GEP|Fayrg bones}}/294}} ||{{Coins|-({{GEP|Fayrg bones}}+50)/588}}||{{Coins|-({{GEP|Fayrg bones}}+10+{{GEP|sunfire splinters}}*0.335)/402}}
+|{{Coins|-{{GEP|Fayrg bones}}*2550}}||{{Coins|-{{GEP|Fayrg bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Fayrg bones}}+10+{{GEP|sunfire splinters}}*0.335)*1700 round 0}}}}
+|-
+|{{plinkt|Lava dragon bones}}
+|758,625||595,000||693,600
+|{{Coins|-{{GEP|Lava dragon bones}}/297.5}}||{{Coins|-({{GEP|Lava dragon bones}}+50)/595}}||{{Coins|-({{GEP|Lava dragon bones}}+10+{{GEP|sunfire splinters}}*0.340)/408}}
+|{{Coins|-{{GEP|Lava dragon bones}}*2550}}||{{Coins|-{{GEP|Lava dragon bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Lava dragon bones}}+10+{{GEP|sunfire splinters}}*0.340)*1700 round 0}}}}
+|-
+|{{plinkt|Raurg bones}}
+|856,800 ||672,000||785,400
+|{{Coins|-{{GEP|Raurg bones}}/336}}||{{Coins|-({{GEP|Raurg bones}}+50)/672}}||{{Coins|-({{GEP|Raurg bones}}+10+{{GEP|sunfire splinters}}*0.385)/462}}
+|{{Coins|-{{GEP|Raurg bones}}*2550}}||{{Coins|-{{GEP|Raurg bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Raurg bones}}+10+{{GEP|sunfire splinters}}*0.385)*1700 round 0}}}}
+|-
+|{{plinkt|Frost dragon bones}}
+|892,500 ||700,000||818,125
+|{{Coins|-{{GEP|Frost dragon bones}}/300}}||{{Coins|-({{GEP|Frost dragon bones}}+50)/672}}||{{Coins|-({{GEP|Frost dragon bones}}+10+{{GEP|sunfire splinters}}*0.385)/462}}
+|{{Coins|-{{GEP|Frost dragon bones}}*2550}}||{{Coins|-{{GEP|Frost dragon bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Frost dragon bones}}+10+{{GEP|sunfire splinters}}*0.385)*1700 round 0}}}}
+|-
+|{{plinkt|Hydra bones}}
+|981,750||770,000||948,600
+|{{Coins|-{{GEP|Hydra bones}}/(110*3.5)}}||{{Coins|-({{GEP|Hydra bones}}+50)/770}}||{{Coins|-({{GEP|Hydra bones}}+10+{{GEP|sunfire splinters}}*0.465)/558}}
+|{{Coins|-{{GEP|Hydra bones}}*2550}} ||{{Coins|-{{GEP|Hydra bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Hydra bones}}+10+{{GEP|sunfire splinters}}*0.465)*1700 round 0}}}}
+|-
+|{{plinkt|Dagannoth bones}}
+|1,115,625||875,000||1,020,000
+|{{Coins|-{{GEP|Dagannoth bones}}/437.5}}||{{Coins|-({{GEP|Dagannoth bones}}+50)/875}}||{{Coins|-({{GEP|Dagannoth bones}}+10+{{GEP|sunfire splinters}}*0.500)/600}}
+|{{Coins|-{{GEP|Dagannoth bones}}*2550}}||{{Coins|-{{GEP|Dagannoth bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Dagannoth bones}}+10+{{GEP|sunfire splinters}}*0.500)*1700 round 0}}}}
+|-
+|{{plinkt|Ourg bones}}
+|1,249,500||980,000||1,173,000
+|{{Coins|-{{GEP|Ourg bones}}/490}}||{{Coins|-({{GEP|Ourg bones}}+50)/980}}||{{Coins|-({{GEP|Ourg bones}}+10+{{GEP|sunfire splinters}}*0.575)/690}}
+|{{Coins|-{{GEP|Ourg bones}}*2550}}||{{Coins|-{{GEP|Ourg bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Ourg bones}}+10+{{GEP|sunfire splinters}}*0.575)*1700 round 0}}}}
+|-
+|{{plinkt|Superior dragon bones}}<sup><ref group="n">Requires 70 Prayer to use.</ref></sup>
+|1,338,750||1,050,000||1,234,200
+|{{Coins|-{{GEP|Superior dragon bones}}/525}}||{{Coins|-({{GEP|Superior dragon bones}}+50)/1050}}||{{Coins|-({{GEP|Superior dragon bones}}+10+{{GEP|sunfire splinters}}*0.605)/726}}
+|{{Coins|-{{GEP|Superior dragon bones}}*2550}}||{{Coins|-{{GEP|Superior dragon bones}}*1000-50000}}||{{Coins|{{#expr:-({{GEP|Superior dragon bones}}+10+{{GEP|sunfire splinters}}*0.605)*1700 round 0}}}}
+|}
+<references group="n" />

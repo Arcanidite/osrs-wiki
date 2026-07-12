@@ -1,0 +1,68 @@
+{{Otheruses|the [[Woodcutting]] trees|the [[Farming]] trees|Rosewood tree (Farming)}}
+{{Infobox Scenery
+|version1 = Tree
+|version2 = Stump
+|name1 = Rosewood tree
+|name2 = Tree stump
+|image1 = [[File:Rosewood tree.png|x300px]]
+|image2 = [[File:Tree stump (rosewood tree).png|250px]]
+|release = [[19 November]] [[2025]]
+|update = Sailing is OUT TODAY!
+|members = Yes
+|quest = No
+|location = [[Drumstick Isle]]
+|options = Chop down
+|icon = [[File:Map icon - Rosewood tree.png]]
+|examine1 = A fancy tree with a rich red colour.
+|examine2 = This is what is left of a rosewood tree.
+|map = No
+|id1 = 58561
+|id2 = 58562
+|leagueRegion = No
+}}
+'''Rosewood tree''' is a tropical hardwood lumber tree found on [[Drumstick Isle]], requiring 79 [[Sailing]] to dock. Chopping them is the primary source of [[rosewood logs]]. It requires 92 [[Woodcutting]] to chop.
+
+A naturally occurring rosewood tree takes {{ticks|458}} to deplete. 
+
+A planted rosewood tree depletes at the same rate of all planted trees, having a 1/8 chance to be cut down when a log is gathered. This can make cutting a player-grown rosewood tree frustrating unless multiple are planted in one location (currently only possible at [[Fossil Island]]) due to the likelihood of only gaining a few logs before the tree is felled and the player must wait two minutes for it to respawn.
+
+==Tree locations==
+{{ObjectTableHead}}
+{{ObjectLocLine
+|name = Rosewood tree
+|location = [[Drumstick Isle]]
+|members = Yes
+|x:2135,y:3548|x:2154,y:3543|x:2153,y:3540|x:2153,y:3537|x:2150,y:3555|x:2150,y:3538|x:2149,y:3558|x:2148,y:3556|x:2137,y:3547|x:2137,y:3544
+|mapID = -1
+|mtype = pin
+|leagueRegion = N/A
+}}
+{{ObjectTableBottom}}
+
+==Woodcutting info==
+{{Woodcutting info
+|name = Rosewood tree
+|level = 92 
+|xp = 212.5
+|tool = [[Axe]]
+|time = 123 Seconds
+}}
+
+{{DropsTableHead}}
+{{DropsLineSkill|name=Rosewood logs|quantity=1|rarity=Always|skill=Woodcutting}}
+{{DropsTableBottom}}
+
+===Conditional drops===
+The following table shows items that can be received in addition to the main resource.
+
+{{DropsTableHead}}
+{{DropsLineSkill|name=Clue nest|quantity=1|rarity=Unknown|skill=Woodcutting|image=Clue nest (beginner).png|raritynotes=<ref group=d name=twitcher>[[Twitcher's gloves]] allow the wearer to make a specific type of nest 20% more likely to appear.</ref>|namenotes=<ref group=d>Clue nests will drop as [[Bird nest (empty)]] and [[scroll boxes]] after the completion of [[X Marks the Spot]]</ref>}}
+{{DropsLineSkill|name=Loop half of key (moon key)|quantity=1|rarity=1/482|raritynotes=<ref group=d name=varlamore>Only in [[Varlamore]]. Rosewood trees can currently only be chopped in Varlamore if one is grown in the [[Locus Oasis]] [[hardwood tree patch]].</ref>|skill=Woodcutting|leagueRegion=Varlamore}}
+{{DropsLineSkill|name=Ent seed|quantity=1|rarity=1/400|skill=Woodcutting|raritynotes=<ref group=d name=varlamore></ref>|image=Ent seed 3.png|leagueRegion=Varlamore}}
+{{DropsLineSkill|name=Beaver|quantity=1|rarity=1/70000|approx=yes|skill=Woodcutting|raritynotes=<ref group=d>Scales from 1 in 70,021 chance at level 92 to 1 in 69,846 chance at level 99.</ref>}}
+{{DropsTableBottom}}
+
+{{Sailing resources}}
+{{Trees}}
+
+[[Category:Needs skilling success chart]]

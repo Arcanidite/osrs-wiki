@@ -1,0 +1,38 @@
+===Levels 74–99: Oak doors===
+[[File:Dungeon door construction.png|thumb|The servant is forced to spawn right next to the player if the door is built when they return.]]
+Building [[Oak door|oak doors]] is a cheaper and less click-intensive alternative to mahogany or teak furniture. Building an oak door requires 10 oak planks and grants 600 Construction experience. Players can gain up to around 550,000 experience per hour at maximum efficiency.
+
+With the [[demon butler]], the player should hold down 1 constantly and use the 'build and remove' trick as seen above. Starting from a full inventory of planks, repeat the following steps:
+
+# Click the demon butler to make him fetch 25 [[oak plank]]s.
+# Build two doors and remove one. You should have 5-8 spare oak planks in your inventory at this point.
+# When the demon butler comes back, remove and build a door, then click the demon butler twice to take the remaining planks and send him away.
+# Return to step 2.
+Alternatively, asking the butler to fetch 20 oak planks will yield slightly lower experience rates while taking away some potential to make mistakes and reducing the amount of required steps per banking cycle. One can still expect to get upwards of 500,000 experience per hour even when making occasional mistakes and without paying full attention.
+
+Since oak dungeon doors are on the 1 option of their build interface, using two RuneLite plugins and holding 1 (Custom Menu Swaps and Menu Entry Swapper) allows for the least-intensive construction training approach that still outputs very good xp rates.
+
+* Use the custom swap "Talk-to,Demon Butler" to give him priority over the door on left clicks.
+* Menu entry swap the door space to ''build'', and the built doors to ''remove''.
+* Hold 1, and get familiar with the click timings. This eliminates having to switch keys and having to right click.
+
+{| class="wikitable"
+!Levels
+!XP needed
+!colspan=2 | Item
+!# for goal
+!Planks required
+!Plank cost
+!Servant cost
+!Cost per XP
+|-
+|74–99
+|11,938,153
+|{{plinkt|Oak door|pic=Oak door icon|txt=Oak door}}
+|{{plinkp|Oak door|pic=Oak door icon}} 19,897
+|{{plinkp|Oak plank}} 198,970
+|{{Coins|-{{GEP|Oak plank|198970}}}}
+|{{Coins|{{#expr:-198970*10000/8/25 round 0}}}} 
+|{{Coins|-({{GEP|Oak plank}}+10000/8/25)/60 round 2}}<ref group=g>Cost per XP with servant.</ref><br/>/ {{Coins|-({{GEP|Oak plank}})/60 round 2}}<ref group=g>Cost per XP without servant.</ref>
+|}
+{{reflist|group=g}}

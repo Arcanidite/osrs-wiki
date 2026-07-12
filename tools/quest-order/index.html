@@ -1,0 +1,65 @@
+---
+layout: tool
+title: "Quest Order"
+node_id: "quest-order"
+page_class: tool
+summary: "Walk the recommended quest order top-to-bottom. Enter your stats and tick off quests — the tool shows which you can do now, which are blocked and why, and your next quest. Region-lock aware for Leagues."
+tags: ["tools"]
+tool_script: "/assets/js/tools/quest-order.js"
+---
+
+<div class="qo-note" id="qo-note">
+  <strong>How this order is chosen.</strong> The sequence is the OSRS Wiki
+  <a href="https://oldschool.runescape.wiki/w/Optimal_quest_guide" target="_blank" rel="noopener">Optimal&nbsp;quest&nbsp;guide</a>,
+  read verbatim from the <a href="https://runelite.net/plugin-hub" target="_blank" rel="noopener">Quest&nbsp;Helper</a> plugin.
+  It is a <em>community-curated recommendation, not a computed optimum</em> — it minimises back-tracking and
+  keeps prerequisite chains intact, but "best" always depends on what's reachable for <em>your</em> account
+  (see <strong>Leagues</strong> below). Requirement data is extracted from Quest Helper's start-gates;
+  rows marked <span class="qo-warn">⚠</span> have extra entry requirements (varbit/item/sub-quest states) not captured here.
+</div>
+
+<div class="tool-row" id="qo-tool-row">
+
+  <aside class="tool-panel qo-sidebar" id="qo-inputs">
+    <section class="sidebar-panel">
+      <div class="sidebar-panel-hd"><h2>Your Stats</h2></div>
+      <div class="sidebar-panel-body">
+        <div class="qo-skill-grid" id="qo-skill-grid"></div>
+        <div class="qo-field">
+          <label for="qo-qp">Quest points</label>
+          <input type="number" id="qo-qp" min="0" max="300" value="0">
+        </div>
+        <div class="qo-field">
+          <label for="qo-combat">Combat level <span class="qo-muted">(optional)</span></label>
+          <input type="number" id="qo-combat" min="3" max="126" placeholder="—">
+        </div>
+        <button class="btn btn-ghost" id="qo-reset" style="width:100%;margin-top:8px">Reset stats &amp; progress</button>
+      </div>
+    </section>
+
+    <section class="sidebar-panel">
+      <div class="sidebar-panel-hd"><h2>Leagues / Region lock</h2></div>
+      <div class="sidebar-panel-body">
+        <p class="qo-muted" style="margin:0 0 6px">Select the regions your account can reach. Quests needing an
+          un-selected region are marked <span class="qo-pill qo-locked">LOCKED</span>. Leave all unchecked for a normal account.</p>
+        <div class="qo-region-grid" id="qo-region-grid"></div>
+      </div>
+    </section>
+  </aside>
+
+  <section class="tool-panel qo-main" id="qo-output">
+    <div class="qo-nextbar" id="qo-nextbar" hidden></div>
+    <div class="qo-filter-bar" id="qo-filter-bar">
+      <button class="qo-filter-btn active" data-filter="all">All</button>
+      <button class="qo-filter-btn" data-filter="cando">Can do now</button>
+      <button class="qo-filter-btn" data-filter="blocked">Blocked</button>
+      <button class="qo-filter-btn" data-filter="done">Done</button>
+      <button class="qo-filter-btn" data-filter="unranked">Not in guide</button>
+      <input type="search" id="qo-search" placeholder="Filter quests…">
+    </div>
+    <div class="qo-summary" id="qo-summary"></div>
+    <ol class="qo-list" id="qo-list"></ol>
+    <p id="qo-loading" class="qo-muted">Loading quests…</p>
+  </section>
+
+</div>

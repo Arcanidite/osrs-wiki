@@ -1,0 +1,12 @@
+====Chest #4====
+[[File:Mourning's End Part II - chest 4 solution.png|275px|right|thumb|Chest #4 solution.]]
+{{Checklist|
+*Take the east stairs to the middle floor.
+*Take out the {{plink|Cyan crystal (Mourning's End Part II)|txt=Cyan crystal}} and place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}} instead. The light will now be yellow.
+*Climb up the south ladder to the top floor.
+*Rotate {{plinkp|Hand mirror}} Mirror #7 to shine the light south. This light should be red. Run south to mirror 8.
+*{{plinkp|Hand mirror}} Mirror #8 point down toward the middle floor. Long side of the mirror should be pointing north.
+*Climb down the south ladder to the middle floor.
+*Use the rope shortcut to reach the bottom floor.
+*Head to {{plinkp|Hand mirror}} Mirror #9 and open the chest to obtain a {{plink|Blue crystal (Mourning's End Part II)|txt=Blue crystal}}.
+}}{{clear}}

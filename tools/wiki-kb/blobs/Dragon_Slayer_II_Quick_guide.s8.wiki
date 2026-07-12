@@ -1,0 +1,119 @@
+===The dragon key===
+{{Checklist|
+*Talk to [[Bob (cat)|Bob]] again.
+*You now need to collect the four parts of the key to open the door on [[Lithkren]].
+}}
+====Karamja key piece====
+{{Map|mtype=square|r=12|2946,2900|align=right|width=300|height=300|caption=Karamjan Temple entrance.|zoom=0}}
+'''Items required:''' ''[[Food]] to survive traps, [[prayer potion]]s to keep prayer on for long amounts of time, [[Machete]], any [[axe]]'' '''Note:''' Players with 79 [[Agility]] (boostable) can access a vine [[shortcut]] into the [[Kharazi Jungle]] without needing an axe or machete''.'' '''Recommended:''' ''Bring plenty of food and stamina potions as well as at least one prayer potion! Take the [[gnome glider]] to Karamja or bring {{coins|200}} for the [[Brimhaven]] cart ride. You can also teleport to the Gem Mine beneath Shilo Village using [[Karamja Gloves 3]] or 4.''
+{{Checklist|
+*Head to the south-eastern coast of the Kharazi Jungle and down the staircase into the maze. '''Turn off [[Auto Retaliate]]'''.
+*Navigate to the centre of the maze and take the key piece.
+**Avoid spikes and traps with thieving and agility.
+**Use protection prayers to protect from the golems' attacks.
+***Red: Melee
+***Green: Ranged
+***Blue: Magic
+*Once you have taken the [[Dragon key piece]], the plinth can be used to transport you out.
+}}
+[[File:Dragon Slayer II - Karamjan Temple maze route.png|thumb|center|300px|The route to the centre of the temple's maze. This map is flipped, making the top part south, and bottom part north.]]
+
+====Morytania key piece====
+'''Items required:''' ''[[Ghostspeak amulet]], a [[dragonstone]], 2 [[molten glass]], [[glassblowing pipe]], [[chisel]], and a [[spade]].'' '''Recommended:''' ''[[Ectophial]], [[amulet of glory]] or Draynor Manor tab, plenty of food (and filled [[druid pouch]]es if you have not lit the [[fire of dehumidification]]), [[stamina potion]].''
+[[File:Dragon Slayer II - Morytania key piece dig strategy.png|thumb|600px|A map of possible key piece locations, which splits Mort Myre Swamp into 6 sections, starting at the {{Fairycode|BKR}} fairy ring, then further subdivides sections past that.]]
+{{Checklist|
+*Talk to [[Reldo]] in the [[Varrock Castle]] library. {{Chat option|1Ask about Tristan.}}
+*Search the second bookcase from the north on the west side of the central row (see [[:File:Varrock census records location.png|this image]]).
+*Talk to Reldo again. {{Chat option|1Ask about Tristan.}}
+*Go to [[Port Phasmatys]] and speak to [[Sarah (Port Phasmatys)|Sarah]], west of the bank.
+*Bring a [[dragonstone]], 2 [[molten glass]], a [[glassblowing pipe]], and a [[chisel]] to [[Ava]] in [[Draynor Manor]]. {{Chat option|3I need your help with a key piece.}}
+*Use your glassblowing pipe on your dragonstone and use the [[inert locator orb]] on Ava to get a [[locator orb]].
+*Head to [[Mort Myre Swamp]] and use the locator to find the buried key piece. Bring food as the locator hurts you every time you use it.
+** The location is random inside the swamp. Each time you use the locator it will tell you which direction to go.
+** Start at {{Fairycode|BKR}} and feel your locator device.
+** If you get north-east, it will always be the lone purple spot that you need to cross the bridge to get to.
+** If you get south-west, south, or south-east, go to the centre of the subdivided area and scan again. For example, if you got west, go to the centre of the blue subdivision and scan there again. If you get west again, you've narrowed it down to a single dig spot.
+*Dig up the [[dragon key piece]].
+}}
+
+====Ungael key piece====
+'''Items required:''' ''Ranged gear, [[dragonfire]] and [[venom]] protection, food, and prayer.'' '''Recommended:''' ''[[Crumble Undead]] runes, [[toxic blowpipe]], [[salve amulet(ei)]], [[super antifire potion]], [[anti-venom+]], [[ranging potion]], [[prayer potion]], [[Cooked karambwan|karambwans]] and [[dark crab]]s or similar high healing foods.''
+
+{{Instance|irs=Torfinn|cost=100000}}
+
+[[File:Vorkath - deadly dragonfire.mp4|thumb|300px|Vorkath's deadly dragonfire attack directly striking a player.]]
+
+{{Checklist|
+*Ask [[Brundt the Chieftain]] in [[Rellekka]] about the dragonkin fortress. {{Chat option|2Ask about the dragonkin fortress.}} or {{Chat option|3Ask about the dragonkin fortress.}} if you don't own a [[seal of passage]] or {{Chat option|4Ask about the dragonkin fortress.}} if you haven't started the Fremennik Exiles quest, whichever refers to the fortress.
+*Prepare for a fight with [[Vorkath]]. See [[Vorkath/Strategies]] for recommended setups.
+**[[Super antifire]]s and [[Anti-venom+]] potions are highly recommended.
+**Set your quick prayers to [[protect from Magic]] and your best ranged attack prayer to allow easy re-enabling prayers.
+**[[Elite Void Knight equipment]] together with a crossbow and [[Ruby bolts (e)|ruby]]/[[Diamond bolts (e)|diamond]] bolts is recommended.
+**Turn off run to make evading the fire barrage special attack easier. Use Ctrl+click on tiles to run to that tile whenever necessary.
+*Talk to [[Torfinn]] on the dock to the north to go to [[Ungael]]. {{Chat option|1Yes please.}}
+*Kill [[Vorkath]].
+**Before the fight, put on [[Protect from Magic]] and drink your [[Anti-venom+]], [[Super antifire]], and [[Ranging potion]]s.
+***'''Make sure to re-pot during the fight''', Super antifire and anti-venom has a short duration (both 3 minutes).
+**Vorkath has several different regular attacks, including a melee attack. The two important ones are:
+***Orange fireball shot into the air - Move '''at least''' two squares away from your current location.
+***Pink fireball shot at you - Your prayers will be knocked off, turn them back on (using quick prayers).
+**After every six regular attacks, Vorkath will use one of his special attacks:
+***He will spit acid all over the crater and start firing fireballs very rapidly at your current location. Find a straight line clear of acid spots and '''walk''' back and forth along it to avoid the fireballs. See [[Vorkath/Strategies#Acid Pool Quickfire Barrage|the Vorkath strategy page]] for advanced tactics.
+***He will hit you with Dragonfire barrage, freezing you in an ice block. He will then summon a [[Zombified spawn]] that slowly walks to you, if it reaches you it will deal 30 damage. Kill it before it gets you, using [[Crumble Undead]] will guarantee a one-hit kill. You will stay frozen and Vorkath will stop attacking you until you kill the spawn or it reaches you. A possible strategy is to bring a [[slayer staff]] and setting the auto-cast to Crumble Undead, to reduce the need to click as accurately right away.
+*After you kill him, climb over the [[ice chunks (Vorkath)|ice chunks]] in the north of the crater (if required you can teleport out to restock for a dungeon part, Vorkath will remain dead). 
+*Walk along the path to the north-west of the island and enter the cave.
+**There are venomous spiders inside, don't forget your Anti-venom+.
+*Pull the [[lever (Ungael laboratory)|lever]] in the south-west section, then run to the room on the east wall before the timer runs out (you must have at least 15% run energy).
+*Search the [[stone chest (Ungael laboratory)|stone chest]] for a [[dragon key piece]] and an [[Ancient key (Dragon Slayer II)|ancient key]].
+}}
+
+====Kourend key piece====
+'''Items required:''' ''Food, light source, gear to protect from high level skeletons.''
+
+'''Recommended:''' ''Stamina potions''
+[[File:Dragon Slayer II crypt map.png|thumb|right|Map of the crypt.]]{{Checklist|
+*Enter the crypt whose entrance is found in the southern part of the [[Graveyard of Heroes]]. Follow the dirt path south to a small building.
+**Caution: The crypt is full of powerful aggressive skeletons and zombies that attack with all three combat styles.
+*Head to the bottom of the crypt and inspect the tomb to find the puzzle.
+*The solution to the puzzle is different for everyone. Refer to the table below to solve this puzzle.
+**"The one from '''[Location]''' sat at the north of the table": Place this statue '''north'''.
+**"Opposite the one with '''[Weapon]'''": Place this statue '''south.'''
+**"The one with '''[Weapon]''' asked the .....": Place this statue '''west.'''
+**Place the final statue '''east'''.
+*Search the tomb to get the [[Dragon key piece]].
+}}
+{| class="wikitable"
+!Person
+!Weapon
+!Location
+|-
+!Aivas
+|Crossbow
+|Zartharim
+|-
+!Camorra
+|Axe
+|Saranthium
+|-
+!Robert
+|Bow
+|Arkney
+|-
+!Tristan
+|Sword
+|Karville
+|}
+
+====Reforging the key====
+'''Items required:''' ''The 4 [[dragon key piece]]s, [[hammer]], [[Ancient key (Dragon Slayer II)|ancient key]], 3 casts of [[Fire Wave]] (21 [[fire rune]]s, 15 [[air rune]]s, 3 [[blood rune]]s).'' '''Recommended:''' ''Food, dragonfire protection, [[games necklace]], [[digsite pendant]].''
+{{Checklist|*Go to the [[Ancient Cavern]] (use a [[games necklace]] to teleport to Barbarian Outpost and run south to the whirlpool).
+*Descend the stairs and run south to another set of stairs which lead to the [[mithril dragon]] area.
+*Run west and open the [[mithril door]] in the middle of the area (with the three mithril dragons clumped together). You need the ancient key to open this door.
+*Cast [[Fire Wave]] or [[Fire Surge]] on the three dragon heads.
+*Leave the room and go east down the staircase, and then go to the south-western area of the caverns, and climb up the rough hewn steps there.
+*Use one of the anvils here to forge the [[dragon key]].
+*Return to Fossil Island and use the Rowboat to Lithkren (west of Mushroom Meadow Mushtree). Return to the area where Dallas Jones is.
+*Use the Dragon key on the [[ancient doors]].
+*Enter the doors and head up north and speak to Dallas to start a cutscene.
+*After the cutscene, make sure to finish the dialogue with Jardric and Bob.
+}}

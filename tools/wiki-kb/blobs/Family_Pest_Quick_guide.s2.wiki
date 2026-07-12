@@ -1,0 +1,8 @@
+==Walkthrough==
+{{Checklist|*Speak to [[Dimintheis]] (south-east Varrock). {{Chat option|1Have you got any quests for me?|2Oh come on, however menial, I want to help!}}
+*Speak to the brothers in any order. {{Chat option|1Family Pest}}
+**[[Avan]] is located in the [[Al Kharid mine]], north of [[Al Kharid]]. {{Chat option|1Family Pest}}
+**[[Caleb]] is located in [[Catherby]], in the building north-east of the bank. {{Chat option|1Family Pest}}
+**[[Johnathon]] is located upstairs in the [[Jolly Boar Inn]], north-east of [[Varrock]]. {{Chat option|1Family Pest}}
+*Return and speak to Dimintheis with 500,000 coins. {{Chat option|1Family Pest|1Yes}}
+*'''Congratulations, miniquest complete!'''}}

@@ -1,0 +1,7 @@
+====Lighting fires with a bow====
+'''Items required:''' ''Any standard [[bow]] made with logs, one set of [[oak logs]]''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about firemaking.{{Chat option|3I'm ready for your firemaking wisdom. Please instruct me.}}
+* Use the logs on the bow. See the table for skill requirements.
+* Talk to Otto again and tell him of your success.{{Chat option|3I've set fire to logs with a bow!}}
+}}

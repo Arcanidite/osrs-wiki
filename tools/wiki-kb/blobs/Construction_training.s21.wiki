@@ -1,0 +1,39 @@
+===Levels 66–74/99: Teak garden benches===
+Building [[teak garden bench]]es is the fastest way to use teak planks. They require 6 teak planks to build and give 540 experience each. This method is similar to gnome benches, offering slower (albeit still relatively fast) experience while being cheaper. As with gnome benches, this method requires precise timing and accurate clicks. Any mistakes will lower the experience rates considerably, and players may get faster rates with other options.
+
+Players can gain a maximum of around 700,000 experience per hour building garden benches at level 66 with perfect execution, however most players should expect to gain 500,000 to 600,000 experience per hour. With good execution, it should take roughly an hour to reach level 74, at which point players may consider building [[oak dungeon doors]] instead, which offer slightly slower experience rates at the benefit of potentially reduced cost. Likewise, players who wish to gain faster experience may find it better to spend extra money on building mahogany furniture instead, as this would save around 7–8 hours on the way to level 99 depending on the method and efficiency.
+
+{| class="wikitable"
+!Levels
+!XP needed
+!colspan=2 | Item
+!# for goal
+!Planks required
+!Plank cost
+!Servant cost
+!Cost per XP
+|-
+|66–69
+|171,797
+|{{plinkt|Teak garden bench|pic=Teak garden bench icon|rowspan=3}}
+|{{plinkp|Teak garden bench|pic=Teak garden bench icon}} 319
+|{{plinkp|Teak plank}} 1,914
+|{{Coins|-{{GEP|Teak plank|1914}}}}
+|{{Coins|{{#expr:-1914*10000/8/24 round 0}}}} 
+|rowspan=3|{{Coins|-({{GEP|Teak plank}}+10000/8/24)/90 round 2}}<ref group="f">Cost per XP with servant.</ref><br/>/ {{Coins|-({{GEP|Teak plank}})/90 round 2}}<ref group=f>Cost per XP without servant.</ref>
+|-
+|66–74
+|600,024
+|{{plinkp|Teak garden bench|pic=Teak garden bench icon}} 1,112
+|{{plinkp|Teak plank}} 6,672
+|{{Coins|-{{GEP|Teak plank|6672}}}}
+|{{Coins|{{#expr:-6672*10000/8/24 round 0}}}}
+|-
+|66–99
+|12,538,177
+|{{plinkp|Teak garden bench|pic=Teak garden bench icon}} 23,219
+|{{plinkp|Teak plank}} 139,314
+|{{Coins|-{{GEP|Teak plank|139314}}}}
+|{{Coins|{{#expr:-139314*10000/8/24 round 0}}}}
+|}
+{{reflist|group=f}}

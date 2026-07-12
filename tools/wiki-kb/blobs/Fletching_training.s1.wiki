@@ -1,0 +1,24 @@
+==Starting off==
+Early levels can be skipped by completing [[Quest experience rewards#Fletching|quests that give Fletching experience]]. Completing [[Animal Magnetism]], [[Big Chompy Bird Hunting]] and [[Zogre Flesh Eaters]] will grant a total of 3,262 Fletching experience, which will get the player up to level 18. These quests have few requirements and can be done at a low level. Completing [[Temple of Ikov]] and [[The Fremennik Trials]] will grant an additional 10,812 Fletching experience, which will get the player up to level 30.
+
+{| class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!data-sort-type="number"|Fletching<br/>requirement
+!Other requirements
+|-
+|[[Big Chompy Bird Hunting]]||262||{{SCP|Fletching|5}}||{{SCP|Ranged|30}}, {{SCP|Cooking|30}}
+|-
+|[[Animal Magnetism]]||1,000|| -||{{SCP|Slayer|18}}, {{SCP|Crafting|19}}, {{SCP|Ranged|30}}, {{SCP|Woodcutting|35}}
+|-
+|[[Zogre Flesh Eaters]]||2,000|| {{SCP|Fletching|30}}<br/>(if fletching your own [[comp ogre bow]])||{{SCP|Smithing|4}}, {{SCP|Herblore|8}}, {{SCP|Ranged|30}}
+|-
+|[[The Fremennik Trials]]||2,812||{{SCP|Fletching|25}}<br/>(if crafting your own lyre)
+|{{SCP|Woodcutting|40}}, {{SCP|Crafting|40}}<br/>(if crafting your own lyre)
+|-
+|[[Temple of Ikov]]||8,000|| -||{{SCP|Thieving|42}}, {{SCP|Ranged|40}}
+|-
+!Total
+!14,074
+!colspan="2"|
+|}

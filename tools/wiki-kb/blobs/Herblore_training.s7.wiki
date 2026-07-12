@@ -1,0 +1,4 @@
+===Degrime===
+An alternative, less click-intensive method, is to use the [[degrime]] [[Arceuus spell]], requiring 70 [[Magic]] and the completion of [[A Kingdom Divided]] to be cast. You can cast approximately 600 casts per hour (47-50k magic xp/h), while potentially making profit.
+
+{{DegrimeTable}}

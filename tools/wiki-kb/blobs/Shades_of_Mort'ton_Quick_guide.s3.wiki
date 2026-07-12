@@ -1,0 +1,5 @@
+===Start===
+{{Checklist|
+*Enter the ruined house in the south-west of [[Mort'ton]]. Search the shelf on the wall. '''Read the diary'''. After reading the diary, the quest is started and you are able to create [[Serum 207]].
+*If you didn't bring [[Tarromin potion (unf)]]: Pick up the empty vials (can be filled in the house north-east) and search the [[smashed table (Mort'ton)|smashed table]] for 2 [[grimy tarromin]] and one [[grimy rogue's purse]].
+}}

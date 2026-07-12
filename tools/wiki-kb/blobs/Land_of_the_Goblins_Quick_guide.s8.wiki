@@ -1,0 +1,13 @@
+===Path to Yu'biusk===
+{{Needed|A [[light source]]|recommended=[[Dorgesh-kaan sphere]] or a [[dramen staff|dramen]] or [[lunar staff]] (with [[Fairytale II - Cure a Queen]] started to the point of unlocking [[fairy rings]])}}
+{{Checklist|
+* Return to Dorgesh-Kaan and speak to Zanik in Oldak's laboratory.
+* With a light source, go to Oldak in [[Dorgesh-Kaan South Dungeon]] located beneath the [[Dorgesh-Kaan Agility Course|agility course]] which is in the south end of Dorgesh-Kaan.
+** Option 1: If the player has access to fairy rings, use the code {{Fairycode|AJQ}}.
+** Option 2: Use a Dorgesh-kaan sphere and go south into the [[Dorgesh-Kaan Agility Course|agility course]], and go down the ladder. Follow the path east in the [[Dorgesh-Kaan South Dungeon|dungeon]].
+** Option 3: Run south to the south end of Dorgesh-Kaan to the [[Dorgesh-Kaan Agility Course|agility course]], and go down the ladder. Follow the path east in the [[Dorgesh-Kaan South Dungeon|dungeon]].
+* Speak to Oldak.
+* Click on the machines next to Oldak; use the combination '''9-4-1''' to activate the machine.
+* Open the strange box in the north-western part of [[Yu'biusk]] for a cutscene.
+*'''Congratulations, quest complete!'''
+}}

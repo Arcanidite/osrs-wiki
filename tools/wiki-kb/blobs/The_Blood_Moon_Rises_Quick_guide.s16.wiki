@@ -1,0 +1,11 @@
+==Drakan's Siege==
+[[File:The Blood Moon Rises - Drakan fight round 2.mp4|thumb|400px|The player and Efaritay battle against Drakan. He will continue to use choreographed attacks that require near instant reactions in order to avoid damage.]]
+{{Checklist|
+* You will need to defend the aranei from the incoming portals with the ballista. The portals will always be one-shot, but they will eventually begin to spawn faster than you can shoot them down.
+
+* The next defence section requires you to heal aranaei and repairing the pillars and windows.
+
+* You will fight off Drakan once again. This time, the aranei and Efaritay will help you, but expect to pull your weight.
+* Alongside the spear lunges from the first encounter, Lowerniel will begin using cleaves that land as a 2x3 AoE in front of and behind him. Efaritay will occasionally heal you and the aranei, and you can always grab more supplies from the supply table if you die.
+* Once Drakan is at 58% health, a cutscene will play.
+}}

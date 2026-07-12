@@ -1,0 +1,13 @@
+====Chest #2====
+[[File:Mourning's End Part II - chest 2 solution.png|275px|right|thumb|Chest #2 solution.]]
+{{Checklist|
+*Reset the puzzle at the crystal dispenser and ''collect'' all items.
+*{{plinkp|Hand mirror}} Mirror #1 points north.
+*{{plinkp|Hand mirror}} Mirror #2 points west.
+*Place the {{plink|Cyan crystal (Mourning's End Part II)|txt=Cyan crystal}}. The light will turn cyan.
+*{{plinkp|Hand mirror}} Mirror #3 points north.
+*{{plinkp|Hand mirror}} Mirror #4 points east.
+*Place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}. The light will turn green.
+*Open the chest to obtain 2 mirrors.
+*Do NOT reset the puzzle.
+}}{{clear}}

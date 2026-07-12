@@ -1,0 +1,59 @@
+==Walkthrough==
+===Sinclair's Mansion===
+{{Checklist|
+''Grab all the required items at the start. You do not have to make bank trips during this quest.''
+*Speak with [[Gossip]] outside of [[Sinclair Mansion]]. {{Chat option|1}}
+*Speak with the guard in the courtyard to the north.
+*Break into the Smashed Window on the East side of the mansion.
+*Grab the [[Scrap paper]] in the dining room next to the fire place ({{FloorNumber|uk=0}}).
+*Go up the stairs to the {{FloorNumber|uk=1}} and then to the library in the centre.
+*Take the [[Address Form]] off the table and read it.
+*Search the bookcase on the Western wall for a Black knight helm.
+*Return to the guard via the smashed window.
+*Speak to him, using all three options so that he takes each of your three items
+*Speak with the Gossip using all three options.
+}}
+
+===Anna's Trial===
+{{Checklist|
+*Travel south to the Seer's Village courthouse. (South-East of the bank).
+*Speak to Anna. {{Chat option|1}}
+*Walk down the stairs to begin the trial.
+''For this part you need to speak to the Judge in order to call next witness and then speak to the witnesses to ask them questions.''
+*Call the Dog Handler as a witness. Ask him about the '''poison'''.
+*Call the Butler as a witness by speaking to the judge. Ask him about the '''dagger'''.
+*Call the Maid as a witness. Ask her about '''the night of the murder'''.
+*Ask the Maid (or anyone else) about the '''thread'''.
+''(If done correctly Anna should be pronounced '''not guilty''' and balloons will fall.)''
+*Exit the courtroom by clicking on the gate.
+*Speak again with Anna in her cell.
+}}
+
+===Camelot Castle's Prison===
+''Items needed: Telekinetic grab runes''{{Checklist|
+*Head east around [[Camelot Castle]], past the gate and to the north-east. Search the [[statue (King's Ransom)|statue]] to start a cutscene.
+'''''Clicking anywhere will end the cutscene and you will need to go through it again.'''''
+*Speak with [[Merlin]] inside the cell. {{Chat option|3What do we do now?}}
+*Reach for the [[vent (King's Ransom)|vent]] at the north of the cell.
+*Use [[Telekinetic Grab]] on the guard fixing his hair outside the cell
+**You can speak to the knights in the cell to receive a lockpick or runes for telekinetic grab.
+*Use the [[Hair clip]] or lockpick on the door to start a puzzle.
+**To complete this puzzle, you must set each of four tumblers to the correct height. The most foolproof way to do this (not necessarily the quickest) is to set all tumblers to the lowest height, and try the lock. If a tumbler shows a green circle, do not change that tumbler anymore (red and blue circles can be ignored). Increase the height by one on each other tumbler and try again. Continue until the lock unlocks. This method will take at most six attempts.
+*Climb up the staircases until you reach the top floor.
+*Search the [[table (King's Ransom)|table]].
+*Choose the round purple box second from the right.
+}}
+
+===Black Knights' Fortress===
+''Items needed: bronze med helm, iron chainbody, full black armour, granite, holy grail''{{Checklist|
+*Talk to [[Wizard Cromperty]] in [[Ardougne]] to receive an [[Animate rock scroll]].
+**You might already have the item in your bank from the quest [[One Small Favour]]. However, you must still talk to Cromperty. Be sure to go through all dialogue or else you will need to speak to him again.
+*Travel to the [[Black Knights' Fortress (location)|Black Knights' Fortress]] west of [[Edgeville]]/north of [[Ice Mountain]]. (Amulet of glory or combat bracelet (Monastery) provide convenient teleports)
+*Equip the [[black armour]] and enter the Black Knights' Fortress through the Sturdy door on the south wall.
+*Push the wall to the north.
+*Climb down the ladder.
+*Free [[King Arthur]] from his statue (requires the [[granite]]).
+*Talk to King Arthur to give him the [[bronze med helm]] and [[iron chainbody]].
+*Return to Camelot and speak to King Arthur in the castle by the round table.
+*'''Congratulations, quest complete!'''
+}}

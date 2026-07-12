@@ -1,0 +1,17 @@
+===The House on the Hill===
+'''''Recommended:''' Hand in the map pieces received in the house before heading outside the house (Open Stone Chest upstairs and downstairs)''
+[[File:Dragon Slayer II map puzzle solution.png|thumb|right|The solved map puzzle.]]
+
+{{Checklist|
+*Head to [[Fossil Island]] in the basement of the [[House on the Hill]] and talk to [[Dallas Jones]]. {{Chat option|1Ask about the island.}}
+*Find the missing 24 map pieces and use them on the map in the middle of the room. '''Note: You can hand your pieces to Dallas to save inventory space - Hand in 8 map pieces within the house before heading outside to save time.'''
+**Search the open chest north of the map for 5 pieces. 
+**Go upstairs, search the open stone chest on the north wall for 3 pieces.
+**Go outside, search the Fungi just north of the staircase for 4 pieces.
+**Search the Hook briar south of the house for 7 pieces.
+**Run to the east, search the mushtree for 5 pieces.
+*Talk to Dallas Jones and solve the map puzzle. {{Chat option|1Let's talk about the investigation.|1Let's do it!}}
+**Pieces can be clicked to rotate them, and also dragged to swap them.
+*Talk to Dallas Jones again.
+*Talk to [[Jardric]] at the [[museum camp]].
+}}

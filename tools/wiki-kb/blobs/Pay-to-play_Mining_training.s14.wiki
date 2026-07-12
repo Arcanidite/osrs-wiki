@@ -1,0 +1,37 @@
+===Levels 40–99: Gem rocks===
+[[File:Tick manipulation - gemstone mining.gif|thumb|Tick manipulation at [[gem rocks]]]]
+Mining [[gem rocks]] is a profitable alternative that offers comparable experience rates to granite when using tick manipulation. Gem rocks are also the fastest method on average to obtain the [[rock golem]] pet. Without tick manipulation, this method is considerably slower and only recommended for [[Ironman Mode|ironmen]] who need [[opal]]s, [[jade]]s, or [[red topaz]]es.
+
+For this method, players will need to have completed the [[Karamja Diary#Medium|medium Karamja Diary]] for access to the underground portion of the [[Shilo Village mine]]. The area has many gem rocks and a [[bank deposit box]] nearby. Without the diary completion this method is not worth doing, as the surface area has much fewer rocks. Wearing a charged [[amulet of glory]] is also required for the fastest rates. Having the [[gem bag]] (or better, the upgraded [[gem sack]]) is recommended to reduce dropping and banking.
+
+The experience rates in the table below assume wearing a charged amulet of glory and the [[prospector kit]]. At maximum rates players can expect {{Coins|1650*({{GEP|Uncut opal|0.4686}}+{{GEP|Uncut jade|0.2326}}+{{GEP|Uncut red topaz|0.1176}}+{{GEP|Uncut sapphire|0.0714}}+{{GEP|Uncut emerald|0.0394}}+{{GEP|Uncut ruby|0.0389}}+{{GEP|Uncut diamond|0.0315}})}} profit per hour.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+!{{SCP|Mining}} level
+!XP/h (3-tick) 
+!XP/h (w/o 3-tick) 
+|-
+|50
+|93,000
+|46,000
+|-
+|60
+|97,000
+|52,000
+|-
+|70
+|101,000
+|58,000
+|-
+|80
+|105,000
+|66,000
+|-
+|90
+|107,000
+|70,000
+|-
+|99
+|110,000
+|75,000
+|}

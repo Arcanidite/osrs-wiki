@@ -1,0 +1,900 @@
+===Levels 6–99: Other combination runes===
+{{#vardefine:rote|{{#expr:({{GEP|Law rune}}+{{GEP|Air rune}}+{{GEP|Fire rune}}+{{GEP|Water rune}}+{{GEP|Earth rune}})}}}}
+{{#vardefine:bind|{{#expr:({{GEP|Binding necklace}}/16)}}}}
+{{#vardefine:astral2|{{GEP|Astral rune|2}}}}
+{{#vardefine:ess|{{GEP|Pure essence}}}}
+{{#vardefine:estamhr|{{#expr:{{GEP|Extended stamina potion(4)}}*1.75}}}}
+{{#vardefine:waterTalisman|{{GEP|Water talisman}}}}
+{{#vardefine:earthTalisman|{{GEP|Earth talisman}}}}
+{{#vardefine:fireTalisman|{{GEP|Fire talisman}}}}
+{{#vardefine:airTalisman|{{GEP|Air talisman}}}}
+{{#vardefine:mudWaterProfit|{{#expr:{{GEP|Mud rune}}-{{GEP|Earth rune}}-{{#var:ess}}}}}}
+{{#vardefine:mudWaterProfitRaiments|{{#expr:{{GEP|Mud rune}}*1.6-{{GEP|Earth rune}}-{{#var:ess}}}}}}
+{{#vardefine:mudEarthProfit|{{#expr:{{GEP|Mud rune}}-{{GEP|Water rune}}-{{#var:ess}}}}}}
+{{#vardefine:mudEarthProfitRaiments|{{#expr:{{GEP|Mud rune}}*1.6-{{GEP|Water rune}}-{{#var:ess}}}}}}
+{{#vardefine:steamWaterProfit|{{#expr:{{GEP|Steam rune}}-{{GEP|Fire rune}}-{{#var:ess}}}}}}
+{{#vardefine:steamWaterProfitRaiments|{{#expr:{{GEP|Steam rune}}*1.6-{{GEP|Fire rune}}-{{#var:ess}}}}}}
+{{#vardefine:steamFireProfit|{{#expr:{{GEP|Steam rune}}-{{GEP|Water rune}}-{{#var:ess}}}}}}
+{{#vardefine:steamFireProfitRaiments|{{#expr:{{GEP|Steam rune}}*1.6-{{GEP|Water rune}}-{{#var:ess}}}}}}
+{{#vardefine:smokeProfit|{{#expr:{{GEP|Smoke rune}}-{{GEP|Air rune}}-{{#var:ess}}}}}}
+{{#vardefine:smokeProfitRaiments|{{#expr:{{GEP|Smoke rune}}*1.6-{{GEP|Air rune}}-{{#var:ess}}}}}}
+{{#vardefine:mistProfit|{{#expr:{{GEP|Mist rune}}-{{GEP|Air rune}}-{{#var:ess}}}}}}
+{{#vardefine:mistProfitRaiments|{{#expr:{{GEP|Mist rune}}*1.6-{{GEP|Air rune}}-{{#var:ess}}}}}}
+
+Crafting other [[combination rune]]s is a profitable alternative to [[lava rune]]s. The methods are almost identical, only bringing different runes and talismans and/or teleporting to a different elemental altar. The [[Water Altar]] has higher experience rates because [[ring of the elements]] teleports closer to it and the inside of the altar itself is smaller. This decrease in lap time outweighs the slight XP loss per essence compared to other altars. Also, because these laps are faster, more runes are crafted, so with [[Magic Imbue]] the best XP rate altar is also the most profitable.
+
+<tabber>
+Mud (Water Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|Assumes 7 extended stamina doses per hour|group="c"|name="ComboStams"}}
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 13
+| None
+| 24
+| {{#vardefine:xph|41942}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:mudWaterProfit}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 31
+| {{#vardefine:xph|49545}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(31*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| [[Colossal pouch|Colossal]]
+| 31
+| {{#vardefine:xph|50472}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(31*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 37
+| {{#vardefine:xph|59134}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(37*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(37*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Sm, Md, Lg
+| 39
+| {{#vardefine:xph|60578}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(39*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Colossal
+| 39
+| {{#vardefine:xph|63497}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(39*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 50
+| {{#vardefine:xph|74533}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(50*({{#var:mudWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Colossal
+| 50
+| {{#vardefine:xph|76874}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(50*({{#var:mudWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| 85
+| Colossal
+| 63
+| {{#vardefine:xph|96862}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(63*({{#var:mudWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| 99
+| Colossal
+| 63
+| {{#vardefine:xph|98229}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(63*({{#var:mudWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|}
+
+|-|
+Steam (Water Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 19
+| None
+| 24
+| {{#vardefine:xph|41942}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:steamWaterProfit}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 31
+| {{#vardefine:xph|49545}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(31*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| [[Colossal pouch|Colossal]]
+| 31
+| {{#vardefine:xph|50472}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(31*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 37
+| {{#vardefine:xph|59134}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(37*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(37*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Sm, Md, Lg
+| 39
+| {{#vardefine:xph|60578}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(39*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Colossal
+| 39
+| {{#vardefine:xph|63497}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(39*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 50
+| {{#vardefine:xph|74533}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(50*({{#var:steamWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Colossal
+| 50
+| {{#vardefine:xph|76874}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(50*({{#var:steamWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| 85
+| Colossal
+| 63
+| {{#vardefine:xph|96862}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(63*({{#var:steamWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| 99
+| Colossal
+| 63
+| {{#vardefine:xph|98229}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(63*({{#var:steamWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|}
+
+|-|
+Smoke (Fire Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 15
+| None
+| 24
+| {{#vardefine:xph|39086}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:smokeProfitRaiments}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:smokeProfit}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 31
+| {{#vardefine:xph|46470}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(31*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| [[Colossal pouch|Colossal]]
+| 31
+| {{#vardefine:xph|47279}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(31*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 37
+| {{#vardefine:xph|55465}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(37*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(37*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Sm, Md, Lg
+| 39
+| {{#vardefine:xph|56889}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(39*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Colossal
+| 39
+| {{#vardefine:xph|59480}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(39*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 50
+| {{#vardefine:xph|70223}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(50*({{#var:smokeProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Colossal
+| 50
+| {{#vardefine:xph|72346}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(50*({{#var:smokeProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| 85
+| Colossal
+| 63
+| {{#vardefine:xph|91156}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(63*({{#var:smokeProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| 99
+| Colossal
+| 63
+| {{#vardefine:xph|92340}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(63*({{#var:smokeProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|}
+
+|-|
+Mist (Water Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 6
+| None
+| 24
+| {{#vardefine:xph|38334}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:mistProfitRaiments}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:mistProfit}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 31
+| {{#vardefine:xph|45283}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(31*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| [[Colossal pouch|Colossal]]
+| 31
+| {{#vardefine:xph|46130}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(31*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 37
+| {{#vardefine:xph|54047}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(37*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(37*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Sm, Md, Lg
+| 39
+| {{#vardefine:xph|55367}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(39*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Colossal
+| 39
+| {{#vardefine:xph|58034}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(39*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 50
+| {{#vardefine:xph|68121}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(50*({{#var:mistProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| Colossal
+| 50
+| {{#vardefine:xph|70262}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(50*({{#var:mistProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| 85
+| Colossal
+| 63
+| {{#vardefine:xph|88530}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(63*({{#var:mistProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|-
+| 99
+| Colossal
+| 63
+| {{#vardefine:xph|89779}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(63*({{#var:mistProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+|}
+
+|-|
+</tabber>
+
+Without Magic Imbue, the price of talismans can have a significant effect on profits. Using the [[Earth Altar]] for [[mud rune]]s or [[Fire altar]] for [[steam rune]]s may be worth the slight XP loss since they use [[water talisman]]s instead.
+
+<tabber>
+Mud (Water Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+! rowspan="2" | {{plinkp|Abyssal pearls}}/h
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 13
+| None
+| 24
+| {{#vardefine:xph|41105}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}}) - ({{#var:earthTalisman}}) - ({{#var:rote}}) )/ (24*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:mudWaterProfit}}) - ({{#var:bind}}) - ({{#var:earthTalisman}}) - ({{#var:rote}}) )/ (24*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 30
+| {{#vardefine:xph|45356}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (30*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (30*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.74
+|-
+| [[Colossal pouch|Colossal]]
+| 30
+| {{#vardefine:xph|45997}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (30*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (30*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 4.16
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 36
+| {{#vardefine:xph|53427}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(36*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (36*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(36*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (36*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.58
+|-
+| Sm, Md, Lg
+| 38
+| {{#vardefine:xph|54869}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (38*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (38*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.50
+|-
+| Colossal
+| 38
+| {{#vardefine:xph|56008}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (38*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:mudWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:earthTalisman}})*2 - ({{#var:rote}}) )/ (38*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 8.00
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 48
+| {{#vardefine:xph|61552}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:earthTalisman}})*3 - ({{#var:rote}}) )/ (48*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:mudWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:earthTalisman}})*3 - ({{#var:rote}}) )/ (48*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.87
+|-
+| Colossal
+| 48
+| {{#vardefine:xph|64028}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:earthTalisman}})*3 - ({{#var:rote}}) )/ (48*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:mudWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:earthTalisman}})*3 - ({{#var:rote}}) )/ (48*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.07
+|-
+| 85
+| Colossal
+| 61
+| {{#vardefine:xph|76883}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:earthTalisman}})*3 - ({{#var:rote}}) )/ (61*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:mudWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:earthTalisman}})*3 - ({{#var:rote}}) )/ (61*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 17.11
+|-
+| 99
+| Colossal
+| 61
+| {{#vardefine:xph|92120}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:mudWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:earthTalisman}})*3 - ({{#var:rote}}) )/ (61*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:mudWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:earthTalisman}})*3 - ({{#var:rote}}) )/ (61*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|}
+
+|-|
+Steam (Water Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+! rowspan="2" | {{plinkp|Abyssal pearls}}/h
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 19
+| None
+| 24
+| {{#vardefine:xph|41105}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}}) - ({{#var:fireTalisman}}) - ({{#var:rote}}) )/ (24*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:steamWaterProfit}}) - ({{#var:bind}}) - ({{#var:fireTalisman}}) - ({{#var:rote}}) )/ (24*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 30
+| {{#vardefine:xph|45356}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (30*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (30*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.74
+|-
+| [[Colossal pouch|Colossal]]
+| 30
+| {{#vardefine:xph|45997}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (30*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (30*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 4.16
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 36
+| {{#vardefine:xph|53427}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(36*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (36*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(36*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (36*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.58
+|-
+| Sm, Md, Lg
+| 38
+| {{#vardefine:xph|54869}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (38*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (38*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.50
+|-
+| Colossal
+| 38
+| {{#vardefine:xph|56008}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (38*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:steamWaterProfit}}) - ({{#var:bind}})*2 - ({{#var:fireTalisman}})*2 - ({{#var:rote}}) )/ (38*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 8.00
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 48
+| {{#vardefine:xph|61552}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:fireTalisman}})*3 - ({{#var:rote}}) )/ (48*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:steamWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:fireTalisman}})*3 - ({{#var:rote}}) )/ (48*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.87
+|-
+| Colossal
+| 48
+| {{#vardefine:xph|64028}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:fireTalisman}})*3 - ({{#var:rote}}) )/ (48*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:steamWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:fireTalisman}})*3 - ({{#var:rote}}) )/ (48*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.07
+|-
+| 85
+| Colossal
+| 61
+| {{#vardefine:xph|76883}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:fireTalisman}})*3 - ({{#var:rote}}) )/ (61*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:steamWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:fireTalisman}})*3 - ({{#var:rote}}) )/ (61*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 17.11
+|-
+| 99
+| Colossal
+| 61
+| {{#vardefine:xph|92120}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:steamWaterProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:fireTalisman}})*3 - ({{#var:rote}}) )/ (61*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:steamWaterProfit}}) - ({{#var:bind}})*3 - ({{#var:fireTalisman}})*3 - ({{#var:rote}}) )/ (61*9.3) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|}
+
+|-|
+Steam (Fire Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+! rowspan="2" | {{plinkp|Abyssal pearls}}/h
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 19
+| None
+| 24
+| {{#vardefine:xph|40393}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}}) - ({{#var:waterTalisman}}) - ({{#var:rote}}) )/ (24*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:steamFireProfit}}) - ({{#var:bind}}) - ({{#var:waterTalisman}}) - ({{#var:rote}}) )/ (24*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 30
+| {{#vardefine:xph|44979}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (30*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:steamFireProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (30*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.45
+|-
+| [[Colossal pouch|Colossal]]
+| 30
+| {{#vardefine:xph|45575}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (30*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:steamFireProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (30*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.84
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 36
+| {{#vardefine:xph|53059}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(36*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (36*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(36*({{#var:steamFireProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (36*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.15
+|-
+| Sm, Md, Lg
+| 38
+| {{#vardefine:xph|54550}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (38*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:steamFireProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (38*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.08
+|-
+| Colossal
+| 38
+| {{#vardefine:xph|55665}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (38*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:steamFireProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (38*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 7.40
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 48
+| {{#vardefine:xph|61715}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (48*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:steamFireProfit}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (48*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.00
+|-
+| Colossal
+| 48
+| {{#vardefine:xph|64096}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (48*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:steamFireProfit}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (48*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 11.24
+|-
+| 85
+| Colossal
+| 61
+| {{#vardefine:xph|77258}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (61*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:steamFireProfit}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (61*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 15.99
+|-
+| 99
+| Colossal
+| 61
+| {{#vardefine:xph|91385}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:steamFireProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (61*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:steamFireProfit}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (61*10) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|}
+
+|-|
+Mud (Earth Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+! rowspan="2" | {{plinkp|Abyssal pearls}}/h
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 13
+| None
+| 24
+| {{#vardefine:xph|39469}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}}) - ({{#var:waterTalisman}}) - ({{#var:rote}}) )/ (24*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:mudEarthProfit}}) - ({{#var:bind}}) - ({{#var:waterTalisman}}) - ({{#var:rote}}) )/ (24*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 30
+| {{#vardefine:xph|43829}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (30*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:mudEarthProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (30*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.54
+|-
+| [[Colossal pouch|Colossal]]
+| 30
+| {{#vardefine:xph|44421}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (30*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:mudEarthProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (30*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.94
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 36
+| {{#vardefine:xph|51680}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(36*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (36*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(36*({{#var:mudEarthProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (36*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.28
+|-
+| Sm, Md, Lg
+| 38
+| {{#vardefine:xph|53114}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (38*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:mudEarthProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (38*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.21
+|-
+| Colossal
+| 38
+| {{#vardefine:xph|54205}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (38*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:mudEarthProfit}}) - ({{#var:bind}})*2 - ({{#var:waterTalisman}})*2 - ({{#var:rote}}) )/ (38*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 7.58
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 48
+| {{#vardefine:xph|59935}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (48*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:mudEarthProfit}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (48*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.27
+|-
+| Colossal
+| 48
+| {{#vardefine:xph|62277}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (48*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:mudEarthProfit}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (48*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 11.50
+|-
+| 85
+| Colossal
+| 61
+| {{#vardefine:xph|74978}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (61*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:mudEarthProfit}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (61*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 16.34
+|-
+| 99
+| Colossal
+| 61
+| {{#vardefine:xph|89039}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:mudEarthProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (61*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:mudEarthProfit}}) - ({{#var:bind}})*3 - ({{#var:waterTalisman}})*3 - ({{#var:rote}}) )/ (61*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|}
+
+|-|
+Smoke (Fire Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+! rowspan="2" | {{plinkp|Abyssal pearls}}/h
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 15
+| None
+| 24
+| {{#vardefine:xph|38373}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:smokeProfitRaiments}}) - ({{#var:bind}}) - ({{#var:airTalisman}}) - ({{#var:rote}}) )/ (24*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:smokeProfit}}) - ({{#var:bind}}) - ({{#var:airTalisman}}) - ({{#var:rote}}) )/ (24*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 30
+| {{#vardefine:xph|42730}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (30*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (30*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.45
+|-
+| [[Colossal pouch|Colossal]]
+| 30
+| {{#vardefine:xph|43297}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (30*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (30*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.84
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 36
+| {{#vardefine:xph|50406}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(36*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (36*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(36*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (36*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.15
+|-
+| Sm, Md, Lg
+| 38
+| {{#vardefine:xph|51822}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (38*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (38*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.08
+|-
+| Colossal
+| 38
+| {{#vardefine:xph|52881}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (38*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:smokeProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (38*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 7.40
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 48
+| {{#vardefine:xph|58629}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (48*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:smokeProfit}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (48*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.00
+|-
+| Colossal
+| 48
+| {{#vardefine:xph|60891}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (48*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:smokeProfit}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (48*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 11.24
+|-
+| 85
+| Colossal
+| 61
+| {{#vardefine:xph|73395}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (61*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:smokeProfit}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (61*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 15.99
+|-
+| 99
+| Colossal
+| 61
+| {{#vardefine:xph|86815}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:smokeProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (61*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:smokeProfit}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (61*9.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|}
+
+|-|
+Mist (Water Altar)=
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/h{{Refn|group="c"|name="ComboStams"}}
+! rowspan="2" | {{plinkp|Abyssal pearls}}/h
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 6
+| None
+| 24
+| {{#vardefine:xph|37569}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:mistProfitRaiments}}) - ({{#var:bind}}) - ({{#var:airTalisman}}) - ({{#var:rote}}) )/ (24*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(24*({{#var:mistProfit}}) - ({{#var:bind}}) - ({{#var:airTalisman}}) - ({{#var:rote}}) )/ (24*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 30
+| {{#vardefine:xph|41454}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (30*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (30*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 3.74
+|-
+| [[Colossal pouch|Colossal]]
+| 30
+| {{#vardefine:xph|42040}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (30*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(30*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (30*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 4.16
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 36
+| {{#vardefine:xph|48831}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(36*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (36*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(36*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (36*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.58
+|-
+| Sm, Md, Lg
+| 38
+| {{#vardefine:xph|50149}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (38*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (38*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 5.50
+|-
+| Colossal
+| 38
+| {{#vardefine:xph|51191}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (38*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(38*({{#var:mistProfit}}) - ({{#var:bind}})*2 - ({{#var:airTalisman}})*2 - ({{#var:rote}}) )/ (38*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 8.00
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 48
+| {{#vardefine:xph|56258}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (48*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:mistProfit}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (48*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.87
+|-
+| Colossal
+| 48
+| {{#vardefine:xph|58520}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (48*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(48*({{#var:mistProfit}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (48*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 12.07
+|-
+| 85
+| Colossal
+| 61
+| {{#vardefine:xph|70269}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (61*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:mistProfit}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (61*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 17.11
+|-
+| 99
+| Colossal
+| 61
+| {{#vardefine:xph|84196}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:mistProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (61*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| {{Coins|(61*({{#var:mistProfit}}) - ({{#var:bind}})*3 - ({{#var:airTalisman}})*3 - ({{#var:rote}}) )/ (61*8.5) * ({{#var:xph}}) - ({{#var:estamhr}}) }}
+| 0
+|}
+
+|-|
+</tabber>
+
+<references group="c" />

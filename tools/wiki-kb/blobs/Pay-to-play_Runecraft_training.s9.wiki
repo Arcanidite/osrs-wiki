@@ -1,0 +1,271 @@
+==Levels 23–99: Lava runes==
+{{#vardefine:rote|{{#expr:({{GEP|Law rune}}+{{GEP|Air rune}}+{{GEP|Fire rune}}+{{GEP|Water rune}}+{{GEP|Earth rune}})}}}}
+{{#vardefine:bind|{{#expr:({{GEP|Binding necklace}}/16)}}}}
+{{#vardefine:astral2|{{GEP|Astral rune|2}}}}
+{{#vardefine:ess|{{GEP|Pure essence}}}}
+{{#vardefine:estamhr|{{#expr:{{GEP|Extended stamina potion(4)}}*1.75}}}}
+{{#vardefine:earthTalisman|{{GEP|Earth talisman}}}}
+{{#vardefine:lavaProfit|{{#expr:{{GEP|Lava rune}}-{{GEP|Earth rune}}-{{#var:ess}}}}}}
+{{#vardefine:lavaProfitRaiments|{{#expr:{{GEP|Lava rune}}*1.6-{{GEP|Earth rune}}-{{#var:ess}}}}}}
+
+Crafting [[lava rune]]s is the fastest way to train Runecraft when not using essence runners. They are made by visiting the [[Fire Altar]] with essence and at least an equal amount of [[earth rune]]s. Having a [[binding necklace]] equipped ensures [[combination rune]]s are crafted 100% of the time.
+
+For the fastest rates, players will need level 82 [[Magic]] and completion of [[Lunar Diplomacy]] to cast [[Magic Imbue]] and [[NPC Contact]]. Magic Imbue negates the need for [[earth talisman]]s, improving profit and making banking easier. NPC Contact negates the need to visit [[Apprentice Cordelia]] or the [[Dark Mage (Abyss)|dark mage]] to repair pouches. However, this method is still effective even without the [[lunar spellbook]].
+
+===Solo lavas===
+Optimal setups include the following:
+
+{{Equipment
+|align = right
+|buttons = No
+|head = Hat of the eye
+|cape = Graceful cape
+|neck = Binding necklace
+|ammo = 
+|weapon =
+|torso = Robe top of the eye
+|legs = Robe bottoms of the eye
+|shield =
+|gloves = Graceful gloves
+|boots = Boots of the eye
+|ring = Ring of endurance
+}}
+
+* Full [[Raiments of the Eye]] to craft extra lava runes.
+* [[Hat of the eye]] attuned to a [[Fire tiara|fire]] or [[elemental tiara]] to access the [[Fire Altar]]. Without the hat, the tiaras can be used instead.
+* [[Binding necklace]] to consistently craft combination runes.
+* Weight-reducing clothing and [[ring of endurance]].
+* Banked stack of [[extended stamina potion(1)]] with automatic vial smashing turned on via [[barbarian guard]].
+* A large stack of [[earth rune]]s.
+* [[Essence pouch]]es for bringing extra [[pure essence]]. All available pouches should be used. You may wish to leave behind the [[small pouch]] at level 50, since otherwise this is the most difficult setup, but the extra 2 essence is almost always worth the slight increase in mistakes from the added difficulty.
+* [[Ring of the elements]] to get to the Fire Altar. [[Ring of dueling]] to [[Emir's Arena]] can also be used, but on average it's slightly further away and it's degradable.
+* [[Crafting cape]] or [[amulet of eternal glory]] for a [[bank teleport]]. With level 67 Sailing, [[sailors' amulet]] to [[Deepfin Point]] can be used instead. If these aren't an option, around 24 [[amulet of glory(4)]] and some [[charge dragonstone jewellery scroll]]s are the next best option. In this case, bring an equipped backup bank teleport such as [[ring of dueling]] to recover from mistakes. Other bank teleports are not recommended since they are either too far from the bank or have too wide a range of possible teleport destinations, making precise banking much more difficult.
+* Pure essence for the rest of the inventory.
+
+Menu Entry Swapper in [[RuneLite]] (or the equivalent on mobile) is useful to ensure no right clicks (or long clicks) are needed. True Tile is also helpful for timing clicks.
+
+If the binding necklace has fewer charges left than those needed for a single lap, it's advisable to destroy it on the way to the bank, then equip a fresh necklace while banking. This wastes some charges but makes the method a lot easier. This is most common at level 75 and above, where each lap uses 3 charges. The more difficult option is equipping the next necklace at the altar on the same tick that the previous one is destroyed, which can be done without any time loss, but will still cost 1 essence worth of XP.
+
+Experience rates shown are those realistically achievable by a competent player making a reasonable amount of mistakes. Rates assume unequipped teleports. While in theory equipped teleports would have higher rates due to being able to bring extra essence, in practice the extra mistakes make this close to a wash.
+
+Rates vary dramatically based on performance. Optimal laps are very short so inefficiencies can add up quickly, with most time losses occurring while banking and at the altar. Beginners can expect to get anywhere from 50-90% of the listed rates while learning. Maximum theoretical rates are roughly 9-12% higher, with up to 113,000 experience per hour being possible at level 85 Runecraft. (Level 99 Runecraft doesn't offer a higher ceiling, since having the [[Runecraft cape]] equipped means the [[Crafting cape]] must be unequipped, and the XP loss of 1 essence per lap is greater than the time save of not having to repair pouches. A [[max cape]] however would increase this to 114,200 experience per hour.)
+
+<tabber>
+Magic Imbue=
+
+{{Inventory|align=right
+|Earth rune\100000 |Small pouch |Large pouch  |Ring of the elements
+|Giant pouch |Medium pouch |Pure essence |Divine rune pouch
+|Amulet of eternal glory |Pure essence |Pure essence |Pure essence
+|Pure essence |Pure essence |Pure essence |Pure essence
+|Pure essence |Pure essence |Pure essence |Pure essence
+|Pure essence |Pure essence |Pure essence |Pure essence
+|Pure essence |Pure essence |Pure essence |Pure essence
+}}
+
+{{Rune pouch|align=right
+|1=Astral rune\16000
+|2=Cosmic rune\16000
+|3=Air rune\16000
+|4=Lava rune\1
+}}
+
+This method also requires the following:
+
+* [[Steam battlestaff]] for runes to cast [[Magic Imbue]]. [[Mist battlestaff]] and [[tome of fire]] (or [[smoke battlestaff]] and [[tome of water]]) can be used instead to also have unlimited [[air rune]]s, but this adds 1kg weight, requiring more stamina doses.
+* [[Rune pouch]] containing runes for [[NPC Contact]] and Magic Imbue. If using a [[divine rune pouch]] or source of unlimited air runes, lava runes can be added to the pouch as well so that they don't have to be deposited when banking.
+
+Repair pouches with NPC Contact while running to the altar, not at the bank. To do this, cast NPC Contact after clicking on the mysterious ruins. For fastest possible repairs, press space and click the ruins on the same tick that the player says "Can you repair my pouches?"
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/XP{{Refn|Assumes 7 extended stamina doses per hour|group="n"|name="LavaStams"}}
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 23
+| None
+| 24
+| {{#vardefine:xph|43200}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:lavaProfitRaiments}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(24*({{#var:lavaProfit}}) - ({{#var:bind}}) - ({{#var:astral2}}) - ({{#var:rote}}) )/ (24*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 31
+| {{#vardefine:xph|51362}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(31*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| [[Colossal pouch|Colossal]]
+| 31
+| {{#vardefine:xph|52256}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(31*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(31*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (31*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 37
+| {{#vardefine:xph|61303}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(37*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(37*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (37*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| Sm, Md, Lg
+| 39
+| {{#vardefine:xph|62878}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(39*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| Colossal
+| 39
+| {{#vardefine:xph|65741}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(39*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(39*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (39*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 50
+| {{#vardefine:xph|77614}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(50*({{#var:lavaProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| Colossal
+| 50
+| {{#vardefine:xph|79962}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(50*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(50*({{#var:lavaProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (50*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| 85
+| Colossal
+| 63
+| {{#vardefine:xph|100752}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(63*({{#var:lavaProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|-
+| 99
+| Colossal
+| 63
+| {{#vardefine:xph|102060}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(63*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(63*({{#var:lavaProfit}}) - ({{#var:bind}})*3 - ({{#var:astral2}}) - ({{#var:rote}}) )/ (63*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+|}
+
+{{Clear}}
+|-|
+
+Earth talisman=
+
+{{Inventory|align=right
+|Earth rune\100000 |Small pouch |Large pouch  |Ring of the elements
+|Giant pouch |Medium pouch |Earth talisman |Earth talisman
+|Amulet of eternal glory |Earth talisman |Pure essence |Pure essence
+|Pure essence |Pure essence |Pure essence |Pure essence
+|Pure essence |Pure essence |Pure essence |Pure essence
+|Pure essence |Pure essence |Pure essence |Pure essence
+|Pure essence |Pure essence |Pure essence |Pure essence
+}}
+
+This method also requires the following:
+
+* 1-3 [[earth talisman]]s depending on how many pouches are used.
+* A banked teleport to [[Temple of the Eye]] or some other means of repairing pouches.
+
+Repair pouches with [[Apprentice Cordelia]] by teleporting to [[Wizards' Tower]] with [[necklace of passage]] and running to [[Temple of the Eye]]. Rates consider the time to do this, but not the time required to obtain [[abyssal pearls]] to pay for this repair. Teleporting with [[amulet of the eye]] is faster and should give better rates, especially with larger pouches. Going directly to the [[Dark Mage (Abyss)|dark mage]] through [[The Abyss]] is also an option. [[NPC Contact]] is the fastest, but this method is usually done without the [[lunar spellbook]].
+
+{| class="wikitable"
+! rowspan="2" | {{SCP|Runecraft}} level
+! rowspan="2" | Pouches
+! rowspan="2" | Ess/lap
+! rowspan="2" | XP/h
+! colspan="2" | GP/XP{{Refn|group="n"|name="LavaStams"}}
+! rowspan="2" | {{plinkp|Abyssal pearls}}/h
+|-
+! With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+! No outfit
+|-
+| 23
+| None
+| 24
+| {{#vardefine:xph|42412}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(24*({{#var:lavaProfitRaiments}}) - ({{#var:bind}}) - ({{#var:rote}}) - ({{#var:earthTalisman}}) )/ (24*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(24*({{#var:lavaProfit}}) - ({{#var:bind}}) - ({{#var:rote}}) - ({{#var:earthTalisman}}) )/ (24*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 0
+|-
+| rowspan="2" | 25
+| [[Small pouch|Sm]], [[Medium pouch|Md]]
+| 30
+| {{#vardefine:xph|47228}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (30*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(30*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (30*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 3.45
+|-
+| [[Colossal pouch|Colossal]]
+| 30
+| {{#vardefine:xph|47854}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(30*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (30*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(30*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (30*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 3.84
+|-
+| rowspan="3" | 50
+| Md, [[Large pouch|Lg]]
+| 36
+| {{#vardefine:xph|55712}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(36*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (36*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(36*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (36*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 5.15
+|-
+| Sm, Md, Lg
+| 38
+| {{#vardefine:xph|57277}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (38*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(38*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (38*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 5.08
+|-
+| Colossal
+| 38
+| {{#vardefine:xph|58448}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(38*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (38*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(38*({{#var:lavaProfit}}) - ({{#var:bind}})*2 - ({{#var:rote}}) - ({{#var:earthTalisman}})*2 )/ (38*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 7.40
+|-
+| rowspan="2" | 75
+| Sm, Md, Lg, [[Giant pouch|Gt]]
+| 48
+| {{#vardefine:xph|64801}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:rote}}) - ({{#var:earthTalisman}})*3 )/ (48*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(48*({{#var:lavaProfit}}) - ({{#var:bind}})*3 - ({{#var:rote}}) - ({{#var:earthTalisman}})*3 )/ (48*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 12.00
+|-
+| Colossal
+| 48
+| {{#vardefine:xph|67301}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(48*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:rote}}) - ({{#var:earthTalisman}})*3 )/ (48*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(48*({{#var:lavaProfit}}) - ({{#var:bind}})*3 - ({{#var:rote}}) - ({{#var:earthTalisman}})*3 )/ (48*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 11.24
+|-
+| 85
+| Colossal
+| 61
+| {{#vardefine:xph|81121}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:rote}}) - ({{#var:earthTalisman}})*3 )/ (61*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(61*({{#var:lavaProfit}}) - ({{#var:bind}})*3 - ({{#var:rote}}) - ({{#var:earthTalisman}})*3 )/ (61*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 15.99
+|-
+| 99
+| Colossal
+| 61
+| {{#vardefine:xph|95954}} {{formatexpr|{{#var:xph}} round -2}}
+| {{Coins|(61*({{#var:lavaProfitRaiments}}) - ({{#var:bind}})*3 - ({{#var:rote}}) - ({{#var:earthTalisman}})*3 )/ (61*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| {{Coins|(61*({{#var:lavaProfit}}) - ({{#var:bind}})*3 - ({{#var:rote}}) - ({{#var:earthTalisman}})*3 )/ (61*10.5) - ({{#var:estamhr}}) / {{#var:xph}} }}
+| 0
+|}
+
+{{Clear}}
+|-|
+</tabber>
+
+<references group="n" />

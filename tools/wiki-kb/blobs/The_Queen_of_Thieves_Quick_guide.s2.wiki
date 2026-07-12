@@ -1,0 +1,22 @@
+==Walkthrough==
+{{Map|mtype=pin|align=right|caption=The locations of various NPCs during the quest.
+|1796,3782,title:[[Tomas Lawry]],icon:bluePin,desc:
+|1804,3737,title:[[Poor looking woman]],desc:
+|1794,3757,title:[[Robert O'Reilly]],desc:
+|1813,3745,title:[[The Warrens]],desc:
+|1848,3734,title:[[Conrad King]],desc:
+}}
+{{Map|name=The Queen of Thieves|x:1670,y:3677|x:1670,y:3684|x:1684,y:3684|x:1684,y:3677|plane=0|mapID=0|mtype=polygon|height=250|width=250|align=right|caption=The location of [[Councillor Hughes]]' house.}}
+{{Checklist|*Speak to [[Tomas Lawry]] outside the [[Port Piscarilius]] bank.{{Chat option|2I'm looking for a quest.|1Absolutely.|1Yes.}} (Grab a [[bowl]] from the [[general store]] on your way to the bank if you plan on making the [[stew]] yourself.)
+*Head south and speak to [[Robert O'Reilly]] in the house directly west of the bridge. He will ask for a [[stew]]. {{Chat option|1Okay.}} A [[stew]] can be made with [[raw beef]] and a [[potato]] purchased from [[Kenelme]] directly west along with a [[bowl]] from the general store south-east.
+*Enter the [[manhole (Port Piscarilius)|manhole]] to the east marked by the [[File:Dungeon map link icon.png]] icon, cross the bridge a bit to the south, continue west.
+*Speak to [[Devan Rutter]], near the fish stall. {{Chat option|1Nope, sounds good to me.}}
+*''Optional:'' Trade the General Store Shop Keeper in [[The Warrens]] for an [[Kourend & Kebos Diary#Easy|easy]] [[Kourend & Kebos Diary]] task.
+* Return to the surface from the way you entered and murder [[Conrad King]] (non-combat) on the dock on the southern side of the Piscarilius Foodhall (the largest building). Pick either option.
+*Go back down the manhole and enter the tent.
+*Speak to the Queen of Thieves.
+*Exit the sewers and travel south-west to [[Kingstown]] and enter the house immediately north from the entrance (south of the [[File:Rare trees icon.png]] icon), and climb the stairs to the {{FloorNumber|uk=1}}.
+*Picklock the chest in the east side of the room to find a [[Letter (The Queen of Thieves)|letter]]. (You may have to click the lock multiple times)
+*Return to [[Tomas Lawry]]. {{Chat option|1Let's talk about my quest.}}
+*Return to The Queen of Thieves (now called [[Lady Shauna Piscarilius]]).
+*'''Congratulations, quest complete!'''}}

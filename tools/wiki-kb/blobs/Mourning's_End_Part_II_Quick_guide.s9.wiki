@@ -1,0 +1,30 @@
+====Chest #5====
+=====Part 1=====
+[[File:Mourning's End Part II - chest 5 solution - part 1.png|275px|right|thumb|Chest #5, part 1.]]
+{{Checklist|
+*Reset the puzzle
+*{{plinkp|Hand mirror}} Mirror #1 points north.
+*{{plinkp|Hand mirror}} Mirror #2 points west.
+*{{plinkp|Hand mirror}} Mirror #3 points south.
+*Place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}. The light will turn yellow.
+*{{plinkp|Hand mirror}} Mirror #4 points east.
+*Cross the gap to the other side.
+*Place the {{plink|Blue crystal (Mourning's End Part II)|txt=Blue crystal}}.
+*Remove {{plinkp|Hand mirror}} Mirror #4.
+*Rotate {{plinkp|Hand mirror}} Mirror #3 points up.
+*Use the south stairs to head to the top floor.}}{{clear}}
+
+=====Part 2=====
+[[File:Mourning's End Part II - chest 5 solution - part 2.png|275px|right|thumb|Chest #5, part 2.]]
+{{Checklist|
+*Place {{plinkp|Hand mirror}} Mirror #4 in the new position pointing south.
+*Place the {{plink|Fractured crystal (Mourning's End Part II)|txt=Fractured crystal|pic=Fractured crystal (horizontal)}}.
+*{{plinkp|Hand mirror}} Mirror #5 makes the western light point down. Long side of the mirror should be pointing east.
+*{{plinkp|Hand mirror}} Mirror #6 makes the southern light point east.
+*{{plinkp|Hand mirror}} Mirror #7 points down. Long side of the mirror should be pointing west.
+*Go to the bottom floor.
+*{{plinkp|Hand mirror}} Mirror #8 points south.
+*{{plinkp|Hand mirror}} Mirror #9 points east.
+*{{plinkp|Hand mirror}} Mirror #10 points north.
+*Open the chest to obtain 3 mirrors and a second {{plink|Fractured crystal (horizontal)|txt=Fractured crystal}}.
+}}{{clear}}

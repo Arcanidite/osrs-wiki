@@ -1,0 +1,49 @@
+==Wyrd of the Hallowed==
+{{Checklist|
+* Make your way to [[Burgh de Rott]]. Gear up for a melee-based fight with the [[hallowed flail]].
+* Head to the ruined building to the north-east to find Ivan and Veliaf. ({{Map|type=maplink|x=3543|y=3258|mtype=pin}})
+* Talk to Veliaf and enter the nearby entry
+* You will fight the [[wyrd]]. He will knock back the player with every punch, so ensure there is space behind you.
+* The wyrd attacks in a repeating cycle with 2 melee attacks, a screech, another 2 melee attacks, another screech, then a double slam. This cycle repeats until around 60% health, where he will sometimes use a bloody screech in place of a regular screech. See the clips below for a demonstration.
+* Once the wyrd is at 10% health, a cutscene will play.
+}}
+<gallery mode="packed" heights="500" style="text-align:centre">
+The Blood Moon Rises - wyrd stomp dodging.mp4|The wyrd on his second set of melee attacks, attacking with his right arm, then his left. The player reacts accordingly and moves in position to dodge his double slam attack.
+The Blood Moon Rises - wyrd bloody screech.mp4|The wyrd performs a bloody screech. The player uses the path immediately available to them, taking some damage in the process.
+</gallery>
+
+===Night of the Blood Moon===
+{{Checklist|
+* Follow the bloody trail
+* Inspect the broken fence
+* Exit the Burgh de Rott hideout and gear up at the bank for another fight against Drakan.
+* When ready, talk to Sugadinti or Ivan to initiate a cutscene.
+** This fight is arguably easier than the previous with the assistance from all your allies, but you will still need to pull your weight. You will receive substantially more help, with Efaritay and Ivan both healing you periodically.
+** The mechanics for this fight are the same as before; however, the blood swipes will now take place three times, and Drakan will begin firing an additional orb after every special attack.
+** If you die or leave the fight, you can restart the fight by walking through the Drakan castle gates.
+* Once Drakan reaches ~30% (900hp) of his health, the fight will be over.
+}}
+
+===The Blood Moon Falls===
+{{Checklist|
+* Talk to Ivan after the cutscene ends.
+* Talk to Sugadinti
+* Travel to the [[Icyene Graveyard]]
+* Talk to Efaritay
+* Enter the portal to Vampyrium
+* Gear up at the supply chest on the north wall before starting the fight.
+* The final fight against Drakan has three distinct phases; for a detailed breakdown of the fight, see [[The Blood Moon Rises#Preparing for the final battle|here]].
+** Drakan can now use a four-attack spear combo once he is below 2,700 health, which also incorporates the slam attack.
+** Drakan will start phase 2 of the fight with blood waves, and can squeeze in magic attacks alongside his melee attacks.
+** Drakan will start phase 3 of the fight with spear dashes.
+* After defeating Drakan, finish the cutscene to complete the quest.
+}}
+
+<gallery mode="packed" heights="300" style="text-align:centre">
+The Blood Moon Rises - Drakan 4 way combo.mp4|Once Drakan is below 2,700 health, he may begin using the spear lunge attack four times.
+The Blood Moon Rises - Drakan final spear specials.mp4|Drakan using two different type of spear cleaves. The player dodges them perfectly, alongside the spear lunges that come after.
+The Blood Moon Rises - Drakan blood wave dodging.mp4|The player dodges the blood waves during the second phase of the fight.
+The Blood Moon Rises - Drakan dash.mp4|The player dodges Drakan's spear dash during the third phase of the fight.
+</gallery>
+
+{{The Blood Moon Rises}}

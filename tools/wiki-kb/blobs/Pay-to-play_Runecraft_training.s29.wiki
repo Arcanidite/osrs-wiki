@@ -1,0 +1,108 @@
+===Levels 90–99: Aether runes===
+{{#vardefine:lapsperhr1|70000/(45*20)}}
+{{#vardefine:lapsperhr2|99000/(64*20)}}
+{{#vardefine:lapsperhr3|102000/(64*20)}}
+{{#vardefine:imbueCost|{{#expr:{{GEP|Astral rune|2}}}}}}
+{{#vardefine:contactCost|{{#expr:{{GEP|Astral rune|2}}+{{GEP|Cosmic rune}}}}}}
+{{#vardefine:aetherCost|{{#expr:{{GEP|Soul rune}}+{{GEP|Pure essence}}}}}}
+{{#vardefine:catalyst|{{GEP|Aether catalyst}}}}
+{{#vardefine:duelperlap|{{#expr:({{GEP|Ring of dueling(8)}}/8)}}}}
+{{#vardefine:bindperlap|{{#expr:({{GEP|Binding necklace}}/5)}}}}
+{{#vardefine:stamperhr|{{GEP|Stamina potion(4)|2}}}}
+{{Equipment
+|align = right
+|head = Hat of the eye
+|cape = Construct. cape(t)
+|neck = Binding necklace
+|ammo = 
+|weapon = Mist battlestaff
+|torso = Robe top of the eye
+|legs = Robe bottoms of the eye
+|shield = Tome of fire
+|gloves = Graceful gloves
+|boots = Boots of the eye
+|ring = Ring of dueling
+}}
+{{Inventory
+|align = right
+|1 = Colossal pouch
+|2 = Pure essence
+|3 = Pure essence
+|4 = Pure essence
+|5 = Soul rune\100000
+|6 = Pure essence
+|7 = Pure essence
+|8 = Pure essence
+|9 = Pure essence
+|10 = Pure essence
+|11 = Pure essence
+|12 = Pure essence
+|13 = Pure essence
+|14 = Pure essence
+|15 = Pure essence
+|16 = Pure essence
+|17 = Pure essence
+|18 = Pure essence
+|19 = Pure essence
+|20 = Pure essence
+|21 = Pure essence
+|22 = Pure essence
+|23 = Pure essence
+|24 = Pure essence
+|25 = Pure essence
+|26 = Pure essence
+|27 = Aether catalyst\160000
+|28 = Divine rune pouch
+}}If you're not 99 runecrafting make sure to attach a cosmic or [[catalytic tiara|catalytic]] tiara to the [[Hat of the eye]]. Or bring a cosmic tiara, cosmic talisman, or use the abyss as a point of entry into the altar.{{Rune pouch
+| align = right
+| 1 = Astral rune\16000
+| 2 = Cosmic rune\16000
+| 3 = Aether rune\1
+| 4 = 
+}}
+
+Crafting [[aether rune]]s offers relatively fast experience and can be profitable depending on the [[Grand Exchange]] prices. They are crafted by using [[soul rune]]s on the [[Cosmic Altar]] with [[aether catalyst]] in the inventory. Crafting aether runes requires level 90 Runecraft.
+
+This method requires the following:
+* Soul runes and aether catalyst in the inventory.
+* Level 82 Magic to cast [[Magic Imbue]] and [[NPC Contact]], runes for them (astral, fire, water, air, and cosmic), and the [[rune pouch]] to save inventory space.
+** With completion of [[Lumbridge & Draynor Diary#Elite|elite Lumbridge & Draynor Diary]] wear a [[Mist battlestaff|mist]]/[[smoke battlestaff]] and a [[tome of fire]]/[[Tome of water|water]], respectively, to save runes.
+** The crafted aether runes can be used in place of a [[cosmic rune]] for the [[NPC Contact]] spell.
+* [[Binding necklace]]s to ensure [[combination rune]]s are crafted 100% of the time.
+* [[Colossal pouch]] (or [[essence pouch]]es up to giant) to carry more essence per run.
+* Fast access to [[fairy rings]]. The fairy ring in the [[player-owned house]] and using the [[Construct. cape|Construction cape]] teleport is the best option.
+** Alternatively, use the [[quest point cape]] teleport or the [[eternal slayer ring]].
+** Completion of the elite Lumbridge & Draynor Diary allows using fairy rings without a [[dramen staff]].
+* Level 66 Agility for access to the [[Jutting wall (Zanaris)|shortcut]] in [[Zanaris]].
+* A fast [[bank teleport]], such as the [[Crafting cape]] or a [[ring of dueling]].
+* [[Raiments of the Eye]] set for extra profit (strongly recommended for this method).
+
+Starting at the bank, use the fairy ring to Zanaris. Run south to the altar, going through the [[Jutting wall (Zanaris)|eastern jutting wall shortcut]]. Cast [[Magic Imbue]] and use soul runes on the altar to craft aether runes.
+
+Break a [[binding necklace]] when it has 1 charge left. As the player will craft runes 3 times per lap, a binding necklace lasts for 5 laps. The best way is to unequip the necklace and break it while running to the bank. Alternatively, withdraw an extra necklace and break it while running to the altar.
+
+Experience rates in the table below assume using the POH fairy ring with the Construction cape and [[Ring of dueling|rings of dueling]] to bank at [[Castle Wars]]. Expect lower rates if using worse teleports or having extra items in the inventory. The profit rates include the cost of teleports, [[NPC Contact]] runes (before level 99), and [[pure essence]]. At maximum efficiency, it is possible to gain up to 104,000 experience per hour at level 99.
+
+{| class="wikitable" 
+!rowspan=2 |{{SCP|Runecraft}} level
+!rowspan=2 |XP/h
+!colspan=2 |GP/h
+|-
+!With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+!No outfit
+|-
+|90 (no colossal pouch)
+|70,000
+|{{Coins|{{#expr:{{GEPT|Aether rune|70000/20*1.6}}-({{#var:aetherCost}}+{{#var:catalyst}}*1.6)*70000/20-{{#var:lapsperhr1}}*({{#var:imbueCost}}+{{#var:contactCost}}/11+{{#var:bindperlap}}+{{#var:duelperlap}})-{{#var:stamperhr}} round 0}}}}
+|{{Coins|{{#expr:{{GEPT|Aether rune|70000/20}}-({{#var:aetherCost}}+{{#var:catalyst}})*70000/20-{{#var:lapsperhr1}}*({{#var:imbueCost}}+{{#var:contactCost}}/11+{{#var:bindperlap}}+{{#var:duelperlap}})-{{#var:stamperhr}} round 0}}}}
+|-
+|90 (colossal pouch)
+|99,000
+|{{Coins|{{#expr:{{GEPT|Aether rune|99000/20*1.6}}-({{#var:aetherCost}}+{{#var:catalyst}}*1.6)*99000/20-{{#var:lapsperhr1}}*({{#var:imbueCost}}+{{#var:contactCost}}/8+{{#var:bindperlap}}+{{#var:duelperlap}})-{{#var:stamperhr}} round 0}}}}
+|{{Coins|{{#expr:{{GEPT|Aether rune|99000/20}}-({{#var:aetherCost}}+{{#var:catalyst}})*99000/20-{{#var:lapsperhr1}}*({{#var:imbueCost}}+{{#var:contactCost}}/8+{{#var:bindperlap}}+{{#var:duelperlap}})-{{#var:stamperhr}} round 0}}}}
+|-
+|99 (Runecraft cape)
+|102,000
+|{{Coins|{{#expr:{{GEPT|Aether rune|102000/20*1.6}}-({{#var:aetherCost}}+{{#var:catalyst}}*1.6)*102000/20-{{#var:lapsperhr1}}*({{#var:imbueCost}}+{{#var:bindperlap}}+{{#var:duelperlap}})-{{#var:stamperhr}} round 0}}}}
+|{{Coins|{{#expr:{{GEPT|Aether rune|102000/20}}-({{#var:aetherCost}}+{{#var:catalyst}})*102000/20-{{#var:lapsperhr1}}*({{#var:imbueCost}}+{{#var:bindperlap}}+{{#var:duelperlap}})-{{#var:stamperhr}} round 0}}}}
+|}

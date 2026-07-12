@@ -1,0 +1,24 @@
+==Walkthrough==
+{{Checklist|*Head to [[Goblin Village]] north of [[Falador]].
+*Gather the goblin mails from crates around Goblin Village:
+**Crate Behind the Generals' Hut to the north-east.
+**Crate in the hut south-west of the Generals.
+**Up the southernmost ladder there is a crate to the north of you.
+*Dye one set of goblin mail blue, another orange, and leave the third set brown.
+**Make orange dye by using red dye on yellow dye. {{Colour|red|Warning:}} Do not use both dyes separately on the goblin mail.
+*Talk to the goblin generals again and offer to pick a colour for them. {{Chat option|3 Do you want me to pick an armour colour for you?|1 Start the quest? |3 What about a different colour?}} ({{Chat option|2 So How is life for the goblins? | 3 Do you want me to pick an armour colour for you?|3 What about a different colour?}} if [[Dragon Slayer I]] is in progress).
+*Repeat this 2 more times until they settle on the brown armour. {{Chat option|1 I have some blue armour here|1 I have some brown armour here}}
+*'''Congratulations, quest complete!'''}}
+
+'''Congratulations, quest complete!'''
+
+===Ironman version===
+{{Checklist|*Offer to buy 2 [[woad leaves]] for 20 gp from [[Wyson the gardener]] in [[Falador Park]].
+*Take 2 [[onion|onions]] from the farm north of [[Rimmington]].
+*Buy 3 [[redberries]] from [[Wydin's Food Store]] in [[Port Sarim]] '''(hop worlds to replenish stock)'''. Buy 2 extra Redberries if you plan on doing [[The Knight's Sword]].
+*Take the ingredients, along with 15 gp to [[Aggie]] in [[Draynor Village]].
+**Use the woad leaves on her to make a [[blue dye]].
+**Use the redberries on her to make a [[red dye]].
+**Use the onions on her to make a [[yellow dye]] {{Colour|red|Warning:}} Do not eat with left-click.
+***Use the red dye on the yellow dye to create an [[orange dye]].
+*Continue with the normal guide.}}

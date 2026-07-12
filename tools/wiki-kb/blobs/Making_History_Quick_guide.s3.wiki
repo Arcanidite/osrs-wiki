@@ -1,0 +1,5 @@
+===Starting out===
+{{Checklist|*Walk to or use the [[necklace of passage]] to teleport to the [[outpost]] north-west of Ardougne.
+*Talk to [[Jorral]]. {{Chat option|1Tell me more.|1Ok, I'll make a stand for history!}}
+*Complete the next 3 segments in any order.
+}}

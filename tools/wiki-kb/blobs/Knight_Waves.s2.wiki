@@ -1,0 +1,15 @@
+==Strategy==
+[[File:Camelot training room safespot.png|thumb|You can wait until the health bar disappears, hit, and then return to the safespot and repeat until the knight dies.]]
+'''Note:''' You have a limited amount of time to fight each knight. The Knights will '''despawn''' if you take too long to kill them, logging out  and back in or teleporting away will resume the fight starting on that knight allowing you to use a bank. Also note that [[Magic]], [[Ranged]], and [[Prayer]] will not work in these fights. 
+
+A safe method to kill the knights is to hide behind the [[dummy]] while positioning the knight to be diagonally across from you and behind the dummy. This way, you can run up to the knight and hit him without fear of retaliation as long as you run back behind the dummy (i.e. [[flinching]]). A reliable way of setting this up is to draw the knight toward the north-east corner of the room, then southward to a tile directly west of a dummy, then duck in between the dummies. A general rule of thumb on when it's safe to hit the knight is when the knight's health bar disappears. Using the [[Dragon dagger (p++)]] [[special]] with this method is a good way to take down the knight's health. Do keep in mind that the knights may despawn if the fight takes too long, however.
+
+If you are going to fight the knights head on, [[monkfish]] or better is suggested. [[Cooked karambwan|Karambwan]] would be ideal, for their [[fast foods#Attack_delay|reduced attack delay]]. The knights can hit very high, up to 23 for the final knight. Keep in mind that there are 4 [[Defence]]-lowering knights, 3 [[Strength]]-lowering knights, and 3 [[Attack]]-lowering knights. 
+
+With at least 65 Attack, Strength and Defence, the activity can be completed relatively easily with a setup including a [[zombie axe]] or [[Zamorakian hasta]] (as all knights are weak to either slash or crush), a [[dragon defender]], and [[rune armour]]. If the zombie axe and Zamorakian hasta are unavailable, other weapon options include the [[abyssal whip]] or [[dragon scimitar]] for the slash-weak knights, and [[dragon mace]] or [[sarachnis cudgel]] for the crush-weak knights. An inventory consisting of 2 [[restore potion]]s, 1 each of [[attack potion|attack]], [[strength potion|strength]], and [[defence potion|defence]] potions, a [[special attack|spec weapon]] such as the [[dragon dagger]] or [[dragon mace]], and the remainder filled with [[Cooked karambwan|karambwan]]s should suffice to defeat all of the knights in one go.
+
+
+
+With Attack and Defence 70 a secondary strategy can be used.  
+
+For this the following is required: [[Guthan's armour set]], 2 or 3 [[Restore potion]]s and fill the rest of the inventory with food. Using the passive healing effect of the armour set allows you to reduce the amount of food required or stretch the supplies you have.

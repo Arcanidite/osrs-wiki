@@ -1,0 +1,7 @@
+====Pyre ships====
+'''Items required:''' ''Any woodcutting [[axe]], some [[logs]], and a [[tinderbox]] or suitable bow''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about firemaking again.{{Chat option|3I have completed firemaking with a bow. What follows this?}}
+* Kill [[mithril dragon]]s until one of them drops a set of [[chewed bones]] (3/128 drop rate).
+* Construct a funeral pyre at one of the [[pyre site]]s using the logs. Light it on fire.
+}}

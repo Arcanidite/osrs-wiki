@@ -1,0 +1,15 @@
+===Black Arm Gang===
+{{Checklist|
+*Talk to [[Charlie the Tramp]] located near the south entrance of [[Varrock]]. {{Chat option|5Is there anything down this alleyway?|2Do you think they would let me join?}}
+*Go down the alley (the door to the west) and enter the [[Black Arm Gang]] headquarters.
+*Talk to [[Katrine]]. {{Chat option|1I've heard you're the Black Arm Gang.|1I'd rather not reveal my sources.|1I want to become a member of your gang.|1Well, you can give me a try can't you?|1Ok, no problem.}}
+*Trade your partner for a [[weapon store key]].
+*Go to the south-east corner of Varrock and look for a small room with a ladder. It's connected to the west side of the building with the Chaos Altar in it.
+*Use the key on the door and climb up the ladder.
+*Kill the [[Weaponsmaster]], or use [[Telekinetic Grab]] to pick up two [[Phoenix crossbow]]s without fighting him.
+*Pick up both [[Phoenix crossbow]]s.
+*Take two [[Phoenix crossbow]]s to Katrine.
+'''You are now a member of the Black Arm Gang.'''
+*Go upstairs in the headquarters and open the [[cupboard (Shield of Arrav)|cupboard]] to the south of the stairs to find the right half of the [[broken shield#Right|Shield of Arrav]].
+}}
+<noinclude>[[Category:Shield of Arrav]]</noinclude>

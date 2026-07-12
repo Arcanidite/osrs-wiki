@@ -1,0 +1,5 @@
+===Ending===
+{{Checklist|
+*Return to [[Alec Kincade]] outside the [[Myths' Guild]]. {{Chat option|2Let's talk about my quest.}}
+*'''Congratulations, quest complete!'''
+}}

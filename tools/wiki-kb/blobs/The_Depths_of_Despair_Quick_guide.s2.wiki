@@ -1,0 +1,15 @@
+==Walkthrough==
+{{Map|name=Lord Kandur Hosidius|x=1782|y=3572|r=3|mtype=square|caption=The start point of the quest.|align=right|width=250|height=250}}
+{{Checklist|*Speak to [[Lord Kandur]] in the house west of the [[Vinery]] (Xeric's Glade teleport on talisman). {{Chat option|2Anything I can help you with?|1Yes.}}
+*Speak to [[Chef Olivia]] in Lord Kandur's kitchen.
+*Head to the [[Arceuus Library]] ([[fairy ring]] code {{Fairycode|CIS}}, or [[games necklace]] to [[Wintertodt Camp]], or [[Lovakengj Minecart Network]] to Arceuus) and speak to [[Galana]]. (north-east wing, {{FloorNumber|uk=0}})
+*Speak to Galana again. She will tell you where to find the [[Varlamore envoy]] book. This is random for everyone.
+*Read the Varlamore envoy book.
+*Enter the [[Crabclaw Caves]], marked by the [[File:Dungeon map link icon.png]] icon, south outside of the [[Woodcutting Guild]] near the water. Kill a sandcrab for easy diary while here. (Rada's blessing, Skills necklace teleport, Xeric's Talisman to Xeric's Look-Out, or Veos ship/charter ship to [[Land's End]])
+{{Instance}}
+*Navigate to the end of the caves and climb down the tunnel at the end.
+*Speak to [[Artur Hosidius]].
+*Kill the [[Sand Snake]] (level 36).
+*Search the chest.
+*Return to Lord Kandur Hosidius and talk to him.
+*'''Congratulations, quest complete!'''}}

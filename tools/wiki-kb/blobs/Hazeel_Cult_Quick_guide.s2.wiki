@@ -1,0 +1,49 @@
+==Walkthrough==
+{{Checklist|*Speak with [[Ceril Carnillean]] ({{FloorNumber|uk=0}} of the house south-west of East Ardougne castle) {{Chat option|1What's wrong?|1Yes.}}
+*Enter the [[Ardougne Sewers|Ardougne Sewers]] east of the [[clocktower]] (south of Valve 3)}}
+
+[[File:Hazeel Cult - Quest map.png|676x676px]] 
+
+Use this image as a reference for the following steps.
+
+<tabber>
+
+Side with Ceril=
+{{Checklist|
+*Talk to [[Clivet]] {{Chat option|2Alright, I've made my decision.|2I won't help you.}}
+*Go back outside
+*Turn Valve 1 '''RIGHT'''
+*Turn Valve 2 '''RIGHT'''
+*Turn Valve 3 '''LEFT'''
+*Turn Valve 4 '''RIGHT'''
+*Turn Valve 5 '''RIGHT'''
+*Head back to cave, board the raft, and talk to [[Alomone]].
+*Kill [[Alomone]] and loot the Carnillean armour from the chest.
+** (Optional) If you want extra pieces of armour, multiple can be obtained using the [[drop trick]]. It can not be reobtained after the quest.
+*Board the raft again and run back to the Carnilleans house.
+*Talk to [[Ceril Carnillean]] (quest incomplete!)
+*Search the [[cupboard (Hazeel Cult)|cupboard]] in the room upstairs east of the staircase to find the evidence.
+}}
+|-|
+Side with Hazeel=
+{{Checklist|
+*Talk to [[Clivet]] to receive a bottle of [[poison]] {{Chat option|2Alright, I've made my decision.|1I'll help you.|1Alright, how do I do it?}}
+*Turn Valve 1 '''RIGHT'''
+*Turn Valve 2 '''RIGHT'''
+*Go to the basement of the Carnilleans house (ladder)
+*Use the bottle of [[poison]] on the cooking range.
+*Talk to Ceril on the {{FloorNumber|uk=0}}.
+*Talk to Clivet.
+*Turn Valve 3 '''LEFT'''
+*Turn Valve 4 '''RIGHT'''
+*Turn Valve 5 '''RIGHT'''
+*Go back to the cave and board the raft.
+*Talk to [[Alomone]].
+*Go back to the Carnilleans' house.
+*Talk to [[Butler Jones]].
+*Go in the basement and search the [[crate (Hazeel Cult)|crate]] for a Chest key.
+*Go up the ladder and stairs and knock on the wall in the east room, and go up the ladder.
+*Unlock and search the chest to find [[Hazeel scroll|the scroll]].
+*Return to Alomone.
+}}
+</tabber>{{Checklist|*'''Congratulations, quest complete!'''}}

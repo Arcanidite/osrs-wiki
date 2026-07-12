@@ -1,0 +1,46 @@
+===Levels 83–99: Cutting amethyst===
+Cutting [[amethyst]] into ranging material with a chisel will often yield very small losses (or even profits) while also granting more experience than glassblowing, making it a viable method for those who are willing to sacrifice the speed of other methods for cheaper (or profitable) Crafting experience.
+{|class="wikitable sortable align-center-2"
+! rowspan="2" |{{SCP|Crafting}} Level
+! rowspan="2" colspan="2" |Amethyst item
+! rowspan="2" |XP
+! rowspan="2" |XP/h
+! colspan="3" |GE Price
+! rowspan="2" |GP/XP
+|-
+!Buy
+!Sell
+!Diff
+|-
+|83
+|{{plinkt|Amethyst bolt tips|txt=Bolt tips}}
+|60||165,000
+|{{Coins|{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst bolt tips|15}})}}
+|{{Coins|({{GEPT|Amethyst bolt tips|15}})-{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst bolt tips|15}}-{{GEP|Amethyst}})/60}}
+|-
+|85
+|{{plinkt|Amethyst arrowtips|txt=Arrowtips}}
+|60||165,000
+|{{Coins|{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst arrowtips|15}})}}
+|{{Coins|({{GEPT|Amethyst arrowtips|15}})-{{GEP|Amethyst}}}}
+|{{Coins|(({{GEPT|Amethyst arrowtips|15}})-{{GEP|Amethyst}})/60}}
+|-
+|87
+|{{plinkt|Amethyst javelin tips|txt=Javelin tips}}
+|60||165,000
+|{{Coins|{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst javelin tips|5}})}}
+|{{Coins|({{GEPT|Amethyst javelin tips|5}})-{{GEP|Amethyst}}}}
+|{{Coins|(({{GEPT|Amethyst javelin tips|5}})-{{GEP|Amethyst}})/60}}
+|-
+|89
+|{{plinkt|Amethyst dart tip|txt=Dart tip}}
+|60||165,000
+|{{Coins|{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst dart tip|8}})}}
+|{{Coins|({{GEPT|Amethyst dart tip|8}})-{{GEP|Amethyst}}}}
+|{{Coins|(({{GEPT|Amethyst dart tip|8}})-{{GEP|Amethyst}})/60}}
+|}

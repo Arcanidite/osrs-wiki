@@ -1,0 +1,15 @@
+===Finishing up===
+
+{{Checklist|
+*Take-from the jig to get a [[primed bar]].
+*Head down the stairs to the north-west.
+*Go through the east door. 
+*Use your primed bar with the extractor gun.
+*Operate the Extractor hat with the bar placed under the gun.
+**'''''Note:''''' '''Your magic level will be drained by 20.'''
+*Take-from the extractor gun to get a [[primed mind bar]].
+*Go up both spiral stairs 
+('''''Note:''''' Make sure you have the beaten book in your inventory. If you only have the slashed book you will automatically make a [[mind shield]] and not the [[mind helmet]].)
+*Use your primed mind bar on the workbench to smith a [[mind helmet]].
+*'''Congratulations, quest complete!'''
+}}

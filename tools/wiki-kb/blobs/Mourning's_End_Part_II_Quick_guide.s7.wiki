@@ -1,0 +1,15 @@
+====Chest #3====
+[[File:Mourning's End Part II - chest 3 solution.png|275px|right|thumb|Chest #3 solution.]]
+{{Checklist|
+*Pick up the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}} and replace it with {{plinkp|Hand mirror}} Mirror #5 pointing up to the top floor. Long side of the mirror should be pointing east.
+*Climb the north ladder to the top floor.
+*{{plinkp|Hand mirror}} Mirror #6 points west. The light to the west turns blue.
+*Go back to the middle floor and take the south stairs up to the top floor.
+*{{plinkp|Hand mirror}} Mirror #7 points down toward the middle floor. Long side of the mirror should be pointing east.
+*Climb to the bottom floor.
+*Head to {{plinkp|Hand mirror}} Mirror #8, going through the eastern yellow barrier. Turn {{plinkp|Hand mirror}} Mirror #8 to point south.
+*Go through the southern barrier and follow the path. Open the chest to obtain 2 mirrors and a {{plink|Fractured crystal (horizontal)|txt=Fractured crystal}}.
+*Go back through the southern barrier and rotate the mirror to point east.
+*Exit through the eastern barrier.
+*Do NOT reset the puzzle.
+}}{{clear}}

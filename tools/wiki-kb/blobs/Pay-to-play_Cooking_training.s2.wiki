@@ -1,0 +1,6 @@
+===Levels 1–30: Poison karambwan===
+From level 1 to 30, [[tick manipulation|1-tick]] cook [[raw karambwan]] into [[poison karambwan]]. Karambwan can be cooked without tick delay by holding down 1 and rapidly using raw karambwan on a fire or range. This method costs money, but the overall loss will be relatively small as reaching level 30 would take less than ten minutes.
+
+Note that cooking '''poison''' karambwan does not have any requirements, unlike [[cooked karambwan]].
+
+168 successfully cooked poison karambwan are required to reach level 30. Players are advised to buy at least 500 raw karambwan, as the burn rate is high at lower levels. Assuming all 500 raw karambwan are used to reach level 30, this would result in a loss of {{Coins|-{{GEP|Raw karambwan|500}}}}. If the player is not going to use tick manipulation, it is recommended to cook other fish (see below) as this is cheaper and it would offer similar experience rates.

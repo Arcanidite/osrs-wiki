@@ -1,0 +1,13 @@
+===Entering the temple===
+{{Needed|Full [[mourner gear]], [[chisel]].|recommended=[[teleport crystal|Elf teleport crystal]], teleport to [[Ardougne]], [[food]] and [[armour]]/[[prayer potions]] to run past high level monsters, 3 free inventory spaces}}
+[[File:Mourning's End Part II - Blackened crystal.png|275px|right|thumb|Map of the area and path to the blackened crystal.]]
+{{Checklist|
+*Talk to [[Arianwyn]] in [[Lletya]].
+*(optional) '''Note to Ironmen: ''' if you do not have a death talisman, search the bookshelves for a book titled [[Prifddinas' history]]. You might need it later as part of the 50 items and this will allow you to potentially save time and a charge on your teleport.
+*Wearing your mourner gear, talk to [[Essyllt]] under the hideout in [[West Ardougne]] (north-east corner of town). He gives you the [[new key]].
+*Run west through the cave, keep going until you find the dead bodies. There will be a cutscene.
+*Search a guard corpse for [[Edern's journal]].
+*Follow the red line in the map to get to the black crystal.
+*Use your chisel to chip off a piece.
+*Return and talk to [[Arianwyn]] in [[Lletya]] to enchant your crystal.
+}}

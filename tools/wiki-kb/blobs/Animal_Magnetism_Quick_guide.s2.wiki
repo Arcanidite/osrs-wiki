@@ -1,0 +1,41 @@
+==Walkthrough==
+===Undead chickens===
+{{Map|name=Old crone|x=3465|y=3560|3460,3556|3467,3556|3467, 3561|3460,3561|r=4|mtype=polygon|align=right|caption=The location of the old crone's house|width=180|height=180|zoom=1}}
+'''''Items needed:''' A [[ghostspeak amulet]], [[Ectophial]], and 20 [[ecto-tokens]] (bring 4 empty [[pot]]s, 4 empty [[bucket]]s and 4 bones if you wish to obtain the tokens during the quest)''
+{{Checklist|
+*Talk to [[Ava]] in the west wing of [[Draynor Manor]] and complete the dialogue. {{Chat option|1I would be happy to make your home into a better place.}}
+*Go to the [[undead chicken]] farm west of the [[Ectofuntus]] with your [[ghostspeak amulet]] and [[ecto-token]]s (or materials for them), and talk to [[Alice]]. {{Chat option|4I'm here about a quest.}}
+*Keep talking between Alice and [[Malcolm]] in the cow pen 4 times until she tells you to go to talk to the [[old crone]] for an amulet.
+*Run west of the farm until you reach the old crone's house just east of the [[Slayer Tower]].
+*Speak twice to the old crone to receive a [[crone-made amulet]]. {{Chat option|2I'm here about the farmers east of here.}}
+*Speak with Malcolm to give him the Crone-made amulet. {{Chat option|1Okay, you need it more than I do, I suppose.}}
+*Speak with Malcolm again.
+*After the cutscene, speak to Malcolm who will now sell you two [[undead chicken]]s for 20 [[ecto-token]]s. {{Chat option|1Could I buy those chickens now?|2Could I buy two chickens?}}
+}}
+===Magnet===
+{{Map|x=2979|y=3240|mtype=square|r=4|align=right|caption=Approximate area of where to stand facing north|width=180|height=180}}
+'''''Items needed:''' 5 [[iron bar]]s, a [[hammer]], [[Skills necklace]] for teleport to [[Crafting Guild]], and your two [[undead chicken]]s.''
+{{Checklist|
+*Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to [[Ava]].
+*Speak to the [[Witch]] in the north-west corner of Draynor Manor (inside the building).
+*Speak to the Witch again to receive a [[selected iron]].
+*Take the selected iron to the centre of the [[Rimmington mine]], face north, and use the hammer on it.
+*Return to Ava and give her the magnet.
+}}
+===Undead twigs===
+'''''Items needed:''' [[Mithril axe]], [[polished button]], [[hard leather]], [[games necklace]] for teleport to [[Burthorpe]], and a [[holy symbol]]''
+[[File:Translated notes interface.png|thumb|right|Translated notes]]
+{{Checklist|
+*Talk to Ava.
+*Use your axe on an [[Undead tree]] (not Dead tree) in front of the Manor (yellow examine).
+*Talk to Turael, the [[Slayer master]] in a house in south-eastern [[Burthorpe]]. {{Chat option|4I'm here about a quest.}}
+*Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory. {{Chat option|4Hello, I'm here about those trees again.|1I'd love one, thanks.}}
+*Return to the mansion and cut the undead tree again.
+*Bring the [[Undead twigs]] to Ava.
+*Talk to Ava again, and she will give you garbled [[Research notes (Animal Magnetism)|research notes]] that you need to solve.
+**To translate turn off all the green orbs except for the 2nd, 5th, and 9th (left to right, see image)
+*Talk to Ava again.
+*Combine the [[A pattern|solved notes]] with the polished button and the hard leather.
+*Give the container to Ava.
+*'''Congratulations, quest complete!'''
+}}

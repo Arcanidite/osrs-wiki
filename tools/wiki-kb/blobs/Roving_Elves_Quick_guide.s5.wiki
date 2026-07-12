@@ -1,0 +1,13 @@
+===Planting The Seed===
+{{Needed|rope, spade, consecration seed|recommended=[[games necklace]] (to [[Barbarian Outpost]]), Ardougne teleport.}}
+{{Checklist|*Enter the [[Waterfall Dungeon]].
+**Board the log raft north of [[Baxtorian Falls]].
+**Use a rope on the rock.
+**Use a rope on the dead tree.
+**Open the door to enter.
+*''(Skip this step if you already have the [[A key (Waterfall Dungeon)|key]].)'' Search the most northern crates in the east room for a key.
+*Take the west path all the way north.
+*Left click the seed in the final room to plant it.
+*Return to [[Islwyn]] to choose your reward.
+*'''Congratulations, quest complete!'''
+**Optional: Speak to Eluned to start Mourning's End Part I, which will allow you to receive the teleport crystal to Lletya.}}

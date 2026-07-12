@@ -1,0 +1,8 @@
+===Starting out===
+[[File:Elemental Workshop II - Beaten book location.png|thumb|Bookcase containing the Beaten book.]]
+{{Checklist|
+*Go to the [[Exam Centre]] south of the [[Digsite]]. (Varrock teleport then run east; or use a Digsite pendant/ teleport and walk south towards the exam centre; the Senntisten teleport from the Ancient Spellbook is quite close, and can be used from a Portal Nexus in a POH)
+*Search the most north-eastern of the south-eastern bookcases to find a [[beaten book]].
+*Read the beaten book, then read the scroll.
+*Keep the book.
+}}

@@ -1,0 +1,7 @@
+===Grubfoot's Dream===
+{{Needed|[[Light sources#Light sources|Light source]], no pets following the player}}
+{{Checklist|
+* Talk to [[Grubfoot]] in the [[Dorgeshuun Mines]], right outside the main entrance to [[Dorgesh-Kaan]]. {{Chat option|1Yes}}
+* Enter Dorgesh-Kaan and head north-west to [[Oldak]]'s laboratory.
+* Talk to [[Zanik]] in the laboratory. {{Chat option|3 So why have you come to talk to Zanik?|3 What was this new dream?|Any|1 I'm ready.}}
+}}

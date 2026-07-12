@@ -1,0 +1,16 @@
+===Dron the Warrior===
+{{Checklist|*Go to [[Rellekka]] and talk to [[Blanin]] east of the longhall.
+*Talk to [[Dron]] north of the longhall. {{Chat option|3I'm after important answers.|2Why, you're the famous warrior Dron!}} Answers:
+**Quick answers: {{Chat option|2An iron mace|1Breakfast|2Lunch|1Bunnies|2Red|236|18|3Fifth and Fourth|3North East side of town|1Blanin|1Fluffy|112, but what does that have to do with anything?}}
+**He wields an '''iron mace''' in battle. {{Chat option|2An iron mace}}
+**He eats '''rats''' for '''breakfast'''. {{Chat option|1Breakfast}}
+**He eats '''kittens''' for '''lunch'''. {{Chat option|2Lunch}}
+**He eats '''bunnies''' for '''tea'''. {{Chat option|1Bunnies}}
+**His favourite drink is '''red''' spider blood. {{Chat option|2Red}}
+**He is '''36 years, 8 months (21 days) old.''' {{Chat option|236|18}}
+**He studies the '''Fifth''' and '''Fourth''' ages. {{Chat option|3Fifth and Fourth}}
+**His house is on the '''north-east side''' of town. {{Chat option|3North East side of town}}
+**His brother's name is '''Blanin'''. {{Chat option|1Blanin}}
+**His pet cat is named '''Fluffy'''. {{Chat option|1Fluffy}}
+**5 plus 7 is '''12''' {{Chat option|112, but what does that have to do with anything?}}
+}}

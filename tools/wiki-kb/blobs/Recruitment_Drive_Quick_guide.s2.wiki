@@ -1,0 +1,56 @@
+==Walkthrough==
+{{Checklist|
+*Speak to [[Sir Amik Varze]] on the {{FloorNumber|uk=2}} of the western section of the [[White Knights' Castle]]. {{Chat option|1Yes please}}
+*Bank all equipped items and inventory.}}
+*'''{{Colour|red|Warning}}:''' Hardcore Ironmen '''will''' lose Hardcore status if they die to Sir Leye.
+*'''<u>Important:</u> '''Be prepared for Lady Table as you only have 10 seconds after entering to learn the answer.
+{{Checklist|
+*Speak to [[Sir Tiffy Cashien]] in the park to begin test. {{Chat option|3Yes, let's go!}}
+*5 of the following 7 puzzle rooms will appear in a random order. You will always fight Sir Leye.
+**'''Sir Kuam Ferentse'''
+***Pick up the Steel warhammer and equip.
+***Defeat [[Sir Leye]]. Prayer is allowed.
+**'''Lady Table (statue room):'''
+***Quickly look for the colour (bronze, silver, gold) that only has three statues.
+***Check which weapon is missing from that colour. (sword, halberd, axe, mace)
+***Select the one that was added after the time is up.
+***OR, simply take a screenshot to figure out which statue is missing.
+**'''Sir Ren Itchood (standing on a crate):'''
+***Ask for the clue to the door.
+***The answer is the first letter of each sentence.
+**'''Sir Tinley:'''
+***Left-click on Sir Tinley, finish the conversation. Press nothing until he speaks to you again.
+**'''Sir Spishyus (Grain, Chicken and Fox):'''
+***Grab chicken and cross. Unequip the chicken and cross back over.
+***Grab grain and cross. Unequip grain and pick up the chicken. Cross back over.
+***Unequip chicken, grab fox and cross. Unequip fox and cross back over.
+***Grab chicken and cross and unequip chicken.
+***Walk to the door.
+**'''Ms. Hynn Terprett (sitting on throne):'''
+***"Death sentence" riddle – ''Fed to wolves''
+***"Husband and daughter" riddle – ''10''
+***"Identical stones" riddle – ''Bucket A (32 degrees)''
+***"Fingers on left hand" riddle – ''0''
+***"Which is true" riddle – ''Three False''
+**'''Miss Cheevers (Bookshelf room):'''
+***'''First door:'''
+****Starting from the south-western corner, search:
+*****The most south-western bookshelf for a knife.
+*****All four of the most southern shelves with vials, take all of them.
+*****In the north-eastern corner, search the middle-sized crate next to the chest for a cake tin.
+*****All four northern shelves for the remaining vials, take all of them.
+****Take the spade from the table and use it on the bunsen burner.
+****Use the spade on the door.
+****Use cupric sulfate on door.
+****Use a vial of liquid on door.
+****Open the first door (do not walk through).
+***'''Second door: (Note: Nitrous oxide and tin ore powder resemble an empty vial!)'''
+****Use a vial of liquid on the cake tin. You may need to get another vial from the south shelves.
+****Use gypsum on tin (you may need to Use another vial of liquid on the tin after.)
+****Use tin on a key on the ground by the entrance portal.
+****Use cupric ore powder and tin ore powder on the tin.
+****Use tin on Bunsen burner.
+****Use knife on tin.
+****Use key on door and exit.
+*'''Congratulations, quest complete!'''
+}}

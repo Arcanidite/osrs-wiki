@@ -1,0 +1,29 @@
+==Walkthrough==
+===Starting off===
+{{Checklist|*Talk to [[Willow (Below Ice Mountain)|Willow]] on the path south of Ice Mountain, north of Falador. {{Chat option|1Yes.}}}}
+
+===Checkal===
+{{Checklist|*Speak to [[Checkal]] in [[Barbarian Village]] near the pottery oven building.
+*Speak to [[Atlas]] in [[The Long Hall]] tavern in Barbarian Village and complete training. {{Chat option|1Yes.}}
+**Take some [[cooked meat]] and a [[beer]] from the tables in [[The Long Hall]] if you do not have them already.
+*Return to Checkal and use the [[Flex]] emote when prompted.}}
+
+===Marley===
+'''Items required:''' a [[knife]], [[cooked meat]] and [[bread]].
+{{Checklist|*Speak to [[Marley]] in [[Edgeville]] at the yew trees. You MUST speak to Marley first or the cook wont give you the recipe.
+*Speak to the [[Cook (Blue Moon Inn)|cook]] in the east room of [[Blue Moon Inn]] in Varrock. He will give you the steak sandwich recipe. {{Chat option|1I was wondering if you'd be able to make me a Steak sandwich?}}
+*Create a [[steak sandwich]] by using a [[knife]] on [[cooked meat]] while having [[bread]] in your inventory.
+*Speak to [[Marley]] in [[Edgeville]] at the yew trees with the steak sandwich in your inventory.}}
+
+===Burntof===
+'''Items required:''' a [[beer]] '''or''' 3 [[coins]].
+{{Checklist|*Speak to [[Burntof]] in the [[Rising Sun Inn]] in Falador.
+**If you do not have a beer, buy any beer for 3 coins by talking to [[Emily]] or [[Kaylee]]. {{Chat option|1What ales are you serving?|1One Asgarnian Ale, please.}}
+*Choose any option in the game of rock paper scissors. {{Chat option|1|1|1}}}}
+
+===Entering the dungeon===
+'''Items recommended:''' Some food for low combat players, and any [[pickaxe]] or a weapon and armour to kill a level 25 monster.
+{{Checklist|*Go to the [[Blocked entry|entrance]] of the [[Ruins of Camdozaal]], at the west side of the [[Ice Mountain]], and talk to Willow (dungeon icon on minimap). {{Chat option|1Yes.}}
+*After the cutscene, kill the level 25 [[Ancient Guardian]] by attacking it or mining the 4 [[structural pillar]]s in the corners.
+*'''Congratulations, quest complete!'''
+**After the quest is complete, your character will speak with Ramarno, an Imcando dwarf found in the ruins.}}

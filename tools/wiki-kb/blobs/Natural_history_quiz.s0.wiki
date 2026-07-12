@@ -1,0 +1,20 @@
+{{external|rs}}
+{{Redirect|Quiz|the random event NPC|Quiz master}}
+The '''natural history quiz''' is the basement section of the [[Varrock Museum]] [[miniquest]]. It consists of 14 creature displays in which the player must answer 3 questions correctly in order to earn 2 [[kudos]] each for a total of 28.
+
+Each of the rooms has a [[Natural historian]] who will give a lecture about each creature for which the quiz is based on.
+
+To start the quiz, speak to [[Orlando Smith]], who is located on the basement floor in the centre of the room. Click on the plaque in front of a display to get a question. After answering 3 questions correctly, the quiz questions are replaced by the common name and scientific name of the animal.
+
+Most of the answers are straightforward, and as you only need to get three correct, a good approach is simply to attempt the quiz. However, all the answers are contained in the Natural historians' lectures and the sections of this article.
+
+Orlando's message:
+*Correct: Nice job, mate. That looks about right.
+*Wrong: Hmm, I don't think that's right, mate. Try again.
+*Finished: Bonza, mate! I think that's all of them.
+**Note: After finishing the quiz for each display, the questions will no longer be available.
+*"This looks like some sort of quiz. I wonder if I can take part..." Getting this message means the player needs to talk to Orlando first.
+
+;Rewards
+
+Once all questions are complete, speak to Orlando again to receive 1000 XP in both [[Hunter]] and [[Slayer]]. If this is the first Slayer experience you have received, you won't receive a free [[enchanted gem]] from the [[Slayer master]]s during your first assignment and will need to pay one [[Coins|coin]] for it instead.

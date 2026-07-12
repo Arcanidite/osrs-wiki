@@ -1,0 +1,12 @@
+===Finding Ana===
+{{Checklist|
+*Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.
+*Go through the cave entrance and head east until you're beside the mine cart.
+*Right-click search the nearby barrels to get a barrel. {{Chat option|1Yeah, cool!}}
+*Get into the mine cart by right-click searching it. {{Chat option|1Yes, of course.}} (If you fail to start the cutscene redo this step)
+}}
+'''{{Colour|Red|Warning}}:''' Do not talk to Ana, she will alert the guards.
+{{Checklist|
+*Take the west-north-west path and use a barrel on [[Ana]] (blonde hair at the end of the second north-western path).
+}}
+'''{{Colour|Red|Warning}}:''' Do not try to teleport with Ana in your inventory, the barrel will drop first.

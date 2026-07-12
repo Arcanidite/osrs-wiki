@@ -1,0 +1,12 @@
+==Another Night at the Theatre==
+{{Checklist|
+* Complete the dialogue at Burgh de Rott after the cutscene.
+* Teleport to Ver Sinhaza using Drakan's medallion.
+* Gear up for a wave based encounter against waves of nylocas, [[the Maiden of Sugadinti]], and the [[Nylocas Vasilias]]. It is recommended to bring your strongest melee weapon, as well as fast weapons for each style for ease of completion.
+* The rooms are significantly easier than during [[A Night at the Theatre]], so full gear swaps are not necessary, but can be helpful when fighting the Nylocas Vasilias.
+* Talk to Sugadinti just outside the notice board to begin the encounter.
+** Wave 1 - Nylocas (range, melee, and mage)
+** Wave 2 - [[The Maiden of Sugadinti]]
+** Wave 3 - Repeat of wave 1
+** Wave 4 - [[Nylocas Vasilias]]
+}}

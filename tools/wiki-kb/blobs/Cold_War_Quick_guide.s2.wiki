@@ -1,0 +1,119 @@
+==Walkthrough==
+===Penguin spotting===
+''Items needed: 10 Oak planks (unnoted), 10 steel nails, a hammer and a spade. (Note: Followers are not allowed.)''
+{{Checklist|
+*Talk to [[Larry]] by the penguin cage in the [[Ardougne Zoo]].  (If talking to Larry with all of the items in your inventory, Larry will automatically take you to the iceberg if you select you are ready){{Chat option|1Okay, why not?}}
+*Talk to Larry again. {{Chat option|1Yes, I have all the materials.|1Yes}}
+}}
+
+===Hello world!===
+{{Checklist|
+*Travel to the dock north-east of Rellekka and speak to Larry{{Chat option|1}} to sail to the Iceberg.
+*Use an oak plank on firm snow patch. 
+*Use your spade on, or dig next to, the newly built hut to cover it in snow.
+*Talk to Larry to enter the bird hide and '''PAY ATTENTION''' to this cutscene.
+**'''''Note:''' Take note of '''the 3 emotes the left penguin is doing''' (you will need this several times later, you can re-enter the snow bird hide to watch again before the next step if needed). If you moved onto next step, you cannot go back. You have to spend a lot of time guessing later.''
+**See the [[Cold War#Penguin spotting|full guide]] for a reference of emotes.
+*Talk to Larry. {{Chat option|1That's crazy!}}
+*Left-click Travel back to [[Rellekka]] using the nearby boat. {{Chat option|1Yes}}
+*Talk to Larry on the dock.
+*Read the clockwork book.
+}}
+
+===Clockwork penguin===
+{{Checklist|
+''Items needed: A regular plank, a steel bar OR a clockwork mechanism, and a piece of silk, access to a Crafting table 3 or better in a POH.''
+*Go to your POH and use your [[Crafting table 3]] to turn your steel bar into a clockwork mechanism. {{Chat option|3Clockwork mechanism}}
+*Click on the table again and select clockwork toy and then [[Clockwork suit|clockwork penguin]]. {{Chat option|4Clockwork toy|3Clockwork penguin}}
+*Return to Ardougne and talk to Larry. {{Chat option|1Yes, I have it.|1Yes}}
+*Talk to Larry once on the iceberg. {{Chat option|2It looks like a warning message to keep us away.|1Yes}}
+}}
+
+===Suit up!===
+{{Checklist|
+*Return to Ardougne Zoo once again.
+*Unequip both hands and cape slots and use the ''tuxedo-time'' option on Larry.
+*Enter the penguin pen and talk to the penguin. (only one of them has the "talk-to" option)
+**Use the 3 greeting emotes from earlier. Check your quest journal if you have forgotten, the emotes are noted in there. 
+*Read the mission report and exit the pen.
+*Talk to Larry to exit the suit.
+*Talk to Larry about the mission report}}
+===Incognito===
+{{Checklist|
+''Items needed: Clockwork suit, mission report, and ring of charos(a) or a raw cod''
+*Talk to Larry in [[Fred the Farmer]]'s sheep pen in Lumbridge.
+**Use the ''tuxedo-time'' option on Larry.
+*Talk to the penguins who are disguised as a sheep.
+*Do the greeting emotes.
+*Exit the penguin suit by talking to Larry.
+*Talk to Larry again so he teleports you to the Zoo. {{Chat option|1Yes}}
+*Use the ''tuxedo-time'' option on Larry.
+*Enter the penguin pen and talk to penguin. If using ring of charos(a), make sure it is equipped. {{Chat option|1The penguins in Lumbridge refuse to talk to me.|2I must have left the outpost before they gave out the phrase.|1Sure!}} Otherwise, use raw cod on Penguin.{{Chat option|1The penguins in Lumbridge refuse to talk to me.|1Uh, I forgot what the phase was.|1Sure!}} 
+*Exit the suit by talking to Larry.
+*Talk to Larry again.
+}}
+
+===Intelligence===
+{{Checklist| 
+''Item needed: Clockwork suit. Already bring: 5 feathers, Swamp tar, Mahogany plank, Leather.''
+*Go back to [[Fred the Farmer]]'s sheep pen.
+*Use the ''tuxedo-time'' option on Larry.
+*Talk to the sheep penguin.
+*Talk to Larry to exit suit.
+*Talk to Fred the Farmer. {{Chat option|3I need to talk to you about penguins.|1Bully Fred}} ({{Chat option|4I need to talk to you about penguins.|1Bully Fred}} if you have not completed sheep shearer)
+**Run north between the first field of cows and the mill toward the dairy cow icon on the map, and steal a cowbell from a dairy cow (right click) for later.
+**Kill a chicken if you need 5 feathers.
+*Get back into the Penguin suit and talk to the Sheep Penguin. {{Chat option|2The Farmer is harmless.}}
+**If you do not have swamp tar already, run to the Lumbridge swamp to grab some.
+*Talk to Larry again to get teleported to the iceberg. {{Chat option|1Yes}}
+*Talk to Larry once at the iceberg.}}
+
+===Surprise, surprise===
+{{Checklist|''Items needed: Swamp tar, 5 Feathers, Lumbridge Mission Report, Ardougne Mission Report''
+*Use the ''tuxedo-time'' option on Larry
+*Talk to [[KGP Agent]] north-west of Larry while in the penguin suit.
+*Do the greeting emotes.
+*Talk to [[Noodle]].
+*Talk to Noodle again to receive the [[Kgp id card|ID card]] and a mission report. {{Chat option|1Yeah, I got it.}}
+*Talk to KGP Agent.
+*Click on the [[Avalanche (scenery)|avalanche]].
+*Enter the first room to the west and talk to KGP Agent.
+*Exit room through the west door and then through the north door.
+*Walk north once outside to the agility course.
+}}
+===Agility course===
+''If you run out of food any time and do not wish to risk losing your items, you could un-equip the penguin suit, resulting in being caught and stunned, but otherwise returned to where Larry is on the Iceberg.''
+{{Checklist|
+*Climb down the steps and into the water.
+*Avoid the moving ice in the water.
+*Climb the stepping stone at the end.
+*Jump across the next stones until you reach an ice platform.
+*After you manage to cross, continue on the path until you come to a shelf with icicles on it. Use the ''tread-softly'' option to get across. You have to repeat this several times at each shelf. If you fail, you will be hit taking a small amount of damage.
+*Next, you have to climb up the ice using a 'Cross Ice' option. This can be very annoying, as you lose 2 hitpoints each time you fail, and the failure rate is surprisingly high. If you have only the minimal [[Agility]] — level 30, for example — a small amount of food may help.
+*After that, you have a small cutscene of you sliding down a hill.
+*Talk to [[Agility Instructor]].
+*Unequip the penguin suit and talk to Larry.
+}}
+
+==='Berg bards===
+''Items needed: Mahogany plank, Leather (not hard leather), and Cowbells''
+{{Checklist|* Use the ''tuxedo-time'' option on Larry and re-enter the outpost.
+*Talk to the KGP Agent by the control panel at the end of the main hall.
+*Talk to [[Ping]] or [[Pong]] in the east room.
+*Leave the outpost and head back to Larry.
+*Unequip the penguin suit.
+*Use mahogany plank on the [[leather]] to make [[penguin bongos]].
+*Use the ''tuxedo-time'' option on Larry.
+*Re-enter the outpost.
+*Talk to Ping or Pong again. {{Chat option|2Yes.}}
+*Use the Control panel in the main hall.
+*Enter the War Room to the east.
+}}
+
+===Conclusive evidence===
+{{Checklist|
+*Kill an icicle-wielding [[Icelord]] (you will receive a bonus '''40 [[Attack]] exp''' upon killing it.) and exit the pen using the door to the west.
+*Use the chasm to the east of the room to return to the surface.
+*Talk to Larry.
+*'''Congratulations, quest complete!'''
+}}

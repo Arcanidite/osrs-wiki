@@ -1,0 +1,88 @@
+==Treasure locations==
+There are a total of 11 treasure sites to be found. The first treasure site will always be south of Rellekka. The other ten locations are in a '''random order''' for each player, but the locations will be the same. All of the treasure sites are listed below.
+
+{| class="wikitable lighttable"
+!Area
+!Transportation
+!Loot
+! width="100" |Co-ordinates
+!Map
+!Image
+|-
+|South of [[Rellekka]]
+|Use [[fairy ring]] {{Fairycode|cjr}}, {{Fairycode|ajr}}, [[enchanted lyre]] teleport, [[Rellekka]] house portal.
+|20 [[steel arrows]], 10 [[mithril ore]]s, 15 [[law rune]]s
+|13 Degrees, 56 Minutes north<br/>8 Degrees, 43 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|2716,3606}}
+|[[File:The Enchanted Key Rellekka.png|220px]]
+|-
+|South of [[Ardougne]]
+|Fairy ring {{Fairycode|djp}}, [[Ardougne teleport (tablet)]], [[Ardougne cloak 1|Ardougne cloak]] teleport to the [[Ardougne Monastery|Monastery]], or use the [[charter ship]]s to sail to [[Port Khazard]] and walk north-west.
+|36 [[pure essence]], 15 [[iron ore]]s, 30 [[fire rune]]s
+|2 Degrees, 28 Minutes north, 5 Degrees, 24 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|2621,3239}}
+|[[File:The Enchanted Key Ardougne Monastery.png|220px]]
+|-
+|North of [[West Ardougne]]/South of [[Gnome Stronghold]]
+|[[Necklace of passage]] to the Outpost, [[Ardougne teleport (tablet)]] or use the [[spirit tree]] to the Gnome Stronghold and go south-west.
+|40 [[pure essence]], 20 [[iron arrowtips]], 20 [[fire rune]]s
+|6 Degrees, 54 Minutes North, 0 Degrees, 45 Minutes West
+|{{Map|mtype=square|r=3|width=220|height=220|2417,3382}}
+|[[File:The Enchanted Key West Ardougne.png|220px]]
+|-
+|[[Gnome Stronghold]]
+|[[Spirit tree]] teleport, [[Gnome glider]] to [[Ta Quir Priw]], [[Slayer ring]].
+|39 [[pure essence]], 20 [[iron arrowtips]], 30 [[water rune]]s
+|8 Degrees, 54 Minutes north<br/>0 Degrees, 15 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|2448,3443}}
+|[[File:The Enchanted Key Tree Gnome Stronghold.png|220px]]
+|-
+|[[Body Altar]]
+|[[Combat bracelet]] or [[teleport]] to [[Edgeville]] or [[Varrock]] and walk north-west of [[Barbarian Village]].
+|10 [[mithril ore]]s, 15 [[iron ore]]s, 45 [[earth rune]]s
+|8 Degrees, 33 Minutes north, 18 Degrees, 30 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|3033,3437}}
+|[[File:The Enchanted Key Body Altar.png|220px]]
+|-
+|[[Falador]]
+|[[Ring of the elements]] to [[Air Altar]], [[Falador teleport (tablet)]] and go to the south wall of Falador and use the agility shortcut then walk east. Or [[Balloon]] to [[Crafting Guild]] and walk north-east.
+|15 [[earth rune]]s, 20 [[iron arrows]], [[Saradomin mjolnir]]
+|4 Degrees, 20 Minutes north<br/>16 Degrees, 31 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|2972,3304}}
+|[[File:The Enchanted Key Falador.png|220px]]
+|-
+|[[Mudskipper Point]]
+|Use [[fairy ring]] {{Fairycode|aiq}}, or use the [[charter ship]]s to Port Sarim, then walk south to the Mudskipper Point.
+|15 [[iron ore]]s, 20 [[mithril arrows]], 15 [[death rune]]s
+|0 Degrees, 5 Minutes south<br/>17 Degrees, 58 Minute east
+|{{Map|mtype=square|r=3|width=220|height=220|3016,3166}}
+|[[File:The Enchanted Key Mudskipper Point.png|220px]]
+|-
+|[[Lumbridge Swamp]]
+|[[Ring of the elements]] to [[Water Altar]], [[Home teleport]] to Lumbridge, [[Lumbridge Teleport]], or Draynor teleport and walk to the swamp.
+|29 [[pure essence]], 20 [[mind rune]]s, 20 [[steel arrow]]s ('''Note that if you have stored the [[zombie head]] in your POH or destroyed it, you will dig up the zombie head first. Dig again for the treasure.''')
+|0 Degrees, 28 Minutes north, 22 Degrees, 24 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|3161,3176}}
+|[[File:The Enchanted Key Lumbridge Swamp.png|220px]]
+|-
+|[[Al Kharid]]
+|[[Ring of dueling]] teleport to [[Emir's Arena]], [[Home Teleport]] or Gnome glider and walk to Al Kharid.
+|40 [[pure essence]], 10 [[mithril ore]]s, [[Zamorak mjolnir]]
+|1 Degrees, 52 Minutes north<br/>26 Degrees, 39 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|3291,3220}}
+|[[File:The Enchanted Key Al Kharid.png|220px]]
+|-
+|[[South-east Varrock mine]]
+|[[Chronicle]], [[Digsite pendant]], [[Varrock teleport (tablet)]], [[Gnome glider]] to Lemanto Andra, [[Digsite teleport]], [[Senntisten teleport (tablet)]].
+|40 [[pure essence]], 15 [[iron ore]]s, [[Guthix mjolnir]]
+|5 Degrees, 50 Minutes north<br/>26 Degrees, 50 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|3299,3349}}
+|[[File:The Enchanted Key Exam Centre.png|220px]]
+|-
+|[[Grand Exchange]]
+|[[Varrock teleport (tablet)]], fairy ring {{Fairycode|dkr}}, or Edgeville teleport with an [[amulet of glory]], and then use the Agility shortcut into the Grand Exchange or walk around the wall.
+|39 [[pure essence]], 10 [[mithril arrows]], 15 [[law rune]]s
+|10 Degrees, 18 Minutes north<br/>22 Degrees, 26 Minutes east
+|{{Map|mtype=square|r=3|width=220|height=220|3160,3490}}
+|[[File:The Enchanted Key Grand Exchange.png|220px]]
+|}

@@ -7,3 +7,6 @@ vendor/
 __pycache__/
 node_modules/
 tools/.openrs2-cache/
+
+# nested guide-chain clone (separate repo — never commit into osrs-wiki)
+runelite-guide-chain/

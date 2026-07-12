@@ -1,0 +1,79 @@
+===Levels 1–99: Mahogany Homes===
+[[Mahogany Homes]] is a cheaper and less click-intensive alternative to the faster methods. Players work as a contractor for the Mahogany Homes company, repairing and replacing furniture in client NPCs' houses throughout [[Falador]], [[Varrock]], [[East Ardougne]], and [[Hosidius]]. 
+
+To begin, speak to [[Amy]] in Falador after acquiring a [[player-owned house]]. Have her assign a construction contract, travel to the client's house, refurbish the marked furniture, and talk to the client to finish. Subsequent contracts can also be assigned by [[Marlo]] in Varrock, [[Ellie]] in East Ardougne, or [[Angelo]] in Hosidius. They are found in the same buildings as the cities' respective [[estate agent]]s.
+
+Building the furniture requires the respective planks for the contract tier and [[steel bar]]s. A hammer and a saw is required to build the furniture. [[Nails]] are not required. For optimal rates, players will need [[Teleportation|teleports]] to all four cities, such as [[teleport tablets]] or [[runes]], and a charged [[Xeric's talisman]] for Hosidius.
+
+Completing a contract will reward the player with Construction experience and [[Carpenter points]]. The points can be exchanged for additional [[Mahogany Homes Reward Shop|rewards]], such as the [[Carpenter's outfit]], the [[plank sack]], and [[Supply crate (Mahogany Homes)|supply crates]]. Additionally, the client will offer the player a cup of tea, replenishing their [[run energy]] to 100% after completing the contract.
+
+Estimated costs for this training method are {{Coins|-({{GEP|Oak plank}}*9.84+{{GEP|Steel bar}}*0.5) / 1887.44 round 2}} GP/XP for Novice contracts, {{Coins|-({{GEP|Teak plank}}*11.5+{{GEP|Steel bar}}*0.5) / 3275.58 round 2}} GP/XP for Adept contracts, and {{Coins|-({{GEP|Mahogany plank}}*12.71+{{GEP|Steel bar}}*0.5) / 4373.37 round 2}} GP/XP for Expert contracts (see chart below).
+
+{| class="wikitable"
+!Levels
+!Tier
+!Estimated XP/h
+!Estimated XP/h (plank sack)
+!Planks/hr
+!Planks/hr (plank sack)
+!Bars/hr
+!Estimated GP/hr
+!Estimated GP/hr (plank sack)
+|-
+|1
+|Beginner
+|35,000–50,000
+|50,000–70,000
+|375–575
+|500–700
+|~24
+|{{Coins|-({{GEP|Plank|375}} + {{GEP|Steel bar|18}})}}
+|{{Coins|-({{GEP|Plank|400}} + {{GEP|Steel bar|18}})}}
+|-
+|20
+|Novice
+|80,000–95,000
+|110,000–140,000
+|450–545
+|625–780
+|~32
+|{{Coins|-({{GEP|Oak plank|400}} + {{GEP|Steel bar|22}})}}
+|{{Coins|-({{GEP|Oak plank|450}} + {{GEP|Steel bar|22}})}}
+|-
+|50
+|Adept
+|130,000–150,000
+|155,000–200,000
+|475–520
+|565–700
+|~36
+|{{Coins|-({{GEP|Teak plank|425}} + {{GEP|Steel bar|23}})}}
+|{{Coins|-({{GEP|Teak plank|475}} + {{GEP|Steel bar|23}})}}
+|-
+|70
+|Expert
+|185,000–210,000
+|240,000–280,000
+|475–555
+|625–725
+|~40
+|{{Coins|-({{GEP|Mahogany plank|463}} + {{GEP|Steel bar|25}})}}
+|{{Coins|-({{GEP|Mahogany plank|538}} + {{GEP|Steel bar|25}})}}
+|}
+{| class="wikitable"
+|-
+!Levels
+! Tier !! colspan=2 | Item !! Average !!  Average<br/>{{plink|Steel bar}} !! Average XP !! GP/XP !! Average XP (outfit) !! GP/XP (outfit)
+|-
+|1
+| Beginner||{{plinkt|Plank}} || 9.7 || 0.5 || 865.01 || {{Coins|-({{GEP|Plank}}*9.7+{{GEP|Steel bar}}*0.5) / 865.01 round 2}} || 874.14  || {{Coins|-({{GEP|Plank}}*9.7+{{GEP|Steel bar}}*0.5) / 874.14 round 2}}
+|-
+|20
+| Novice||{{plinkt|Oak plank}} || 9.84  || 0.5 || 1,887.44 || {{Coins|-({{GEP|Oak plank}}*9.84+{{GEP|Steel bar}}*0.5) / 1887.44 round 2}} || 1,903.38 || {{Coins|-({{GEP|Oak plank}}*9.84+{{GEP|Steel bar}}*0.5) / 1903.38 round 2}}
+|-
+|50
+| Adept|| {{plinkt|Teak plank}} || 11.5 || 0.5 || 3,275.58 || {{Coins|-({{GEP|Teak plank}}*11.5+{{GEP|Steel bar}}*0.5) / 3275.58 round 2}} || 3,301.22 || {{Coins|-({{GEP|Teak plank}}*11.5+{{GEP|Steel bar}}*0.5) / 3301.22 round 2}}
+|-
+|70
+| Expert || {{plinkt|Mahogany plank}} || 12.71 || 0.5 || 4,373.37 || {{Coins|-({{GEP|Mahogany plank}}*12.71+{{GEP|Steel bar}}*0.5) / 4373.37 round 2}} || 4,413.95 || {{Coins|-({{GEP|Mahogany plank}}*12.71+{{GEP|Steel bar}}*0.5) / 4413.95 round 2}}
+|}

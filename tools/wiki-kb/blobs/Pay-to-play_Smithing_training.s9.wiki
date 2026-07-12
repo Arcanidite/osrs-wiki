@@ -1,0 +1,26 @@
+===Levels 35–99: Smithing steel cannonballs===
+Smithing [[steel cannonball]]s offers even slower experience than dart tips, but requires even less attention, and usually makes a [[Money making guide/Smithing steel cannonballs|profit]]. 4 cannonballs are created per steel bar; a [[double ammo mould]] smelts two steel bars at once, doubling the experience rates. A full inventory takes 160 seconds to process using Make-X, or roughly half that with a double ammo mould. 
+
+At 87 [[Sailing]] players can smith cannonballs by using the [[ancient furnace]] in the [[Grimstone Dungeon]], which halves the time it takes to create cannonballs from 8 ticks to 4 ticks. Combining this with a double ammo mould, players can smith cannonballs at four times the normal speed with up to 6000 cannonballs per hour if using teleport methods to bank. 
+
+Experience and profit rates are listed in the table below. The numbers assume 2,400 cannonballs are made per hour, or twice that with a double ammo mould.
+{| class="wikitable sortable align-left-3 align-right-4 align-right-6" style="text-align:center;"
+!Level
+!colspan="2" | Mould
+!XP/Hour
+!Profit/Hour
+!Profit/XP
+|-
+|35
+|{{plinkt|Ammo mould}}
+|13,824
+|{{Coins|{{GEP|Steel cannonball|2400}}-{{GEP|Steel bar|600}}}}
+|{{Coins|({{GEP|Steel cannonball|4}}-{{GEP|Steel bar|1}})/25.6}}
+|-
+|35
+|{{plinkt|Double ammo mould}}
+|27,648
+|{{Coins|{{GEP|Steel cannonball|4800}}-{{GEP|Steel bar|1200}}}}
+|{{Coins|({{GEP|Steel cannonball|8}}-{{GEP|Steel bar|2}})/51.2}}
+|-
+|}

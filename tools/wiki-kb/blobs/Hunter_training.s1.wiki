@@ -1,0 +1,35 @@
+==General information and tips==
+Levelling up [[Hunter]] allows players to lay more traps at once. Training Hunter within the [[Wilderness]] allows players to deploy an extra trap.
+
+{| class="wikitable"
+![[File:Hunter icon.png|Hunter|link=Hunter]] Level
+!Concurrent traps
+!Wilderness
+|-
+|1
+|1
+|2
+|-
+|20
+|2
+|3
+|-
+|40
+|3
+|4
+|-
+|60
+|4
+|5
+|-
+|80
+|5
+|6
+|}
+
+===Recommended quests and diaries===
+*[[Bone Voyage]] for access to [[Fossil Island]], which is required for [[bird house trapping]] and [[drift net fishing]].
+*Starting [[Fairytale II - Cure a Queen]] for access to the [[fairy rings]].
+*Partial completion of [[Eagles' Peak]] is required for catching any chinchompas.
+**If planning to catch [[Black chinchompa (Hunter)|black chinchompa]]s, completion of the [[Wilderness Diary#Hard|hard Wilderness Diary]] is recommended for a fast access to the hunting area.
+**If planning to catch [[carnivorous chinchompa]]s, completion of [[Song of the Elves]] or the [[Western Provinces Diary#Hard|hard Western Provinces Diary]] is strongly recommended.

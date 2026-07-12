@@ -1,0 +1,62 @@
+===Levels 1–50: Making talisman tiaras===
+{{Equipment
+|align = right
+|buttons = No
+|head = Elemental tiara
+|cape = Graceful cape
+|neck = Amulet of glory(6)
+|ammo = 
+|weapon = 
+|torso = Graceful top
+|legs = Graceful legs
+|shield = 
+|gloves = Graceful gloves
+|boots = Graceful boots
+|ring = Ring of the elements
+}}
+Making talisman [[tiara]]s is one of the fastest training methods up to level 50. It also has no quest or skill level requirements. This method is fairly click-intensive and can be very expensive depending on the talisman prices, so it is only recommended for players who wish to get through the early levels as fast as possible and do not mind spending some money. Crafting [[lava rune]]s offers faster experience rates from level 50 onwards. Players who are looking for a lower-effort alternative to making talisman tiaras or crafting lava runes are advised to complete quests to skip the early levels and do the [[Guardians of the Rift]] minigame.
+
+Talisman tiaras are made by using a talisman on the corresponding altar with a tiara in the inventory. The tiara can be also used on the altar, but the left-click option on tiaras is wear, so it is suggested to use the talisman instead. Wearing a tiara also makes the altar left-click and removes an animation on getting into the altar.
+
+The [[ring of the elements]] is required for the fastest rates, as it provides fast teleports to all the elemental runic altars. Using an [[amulet of glory]] is recommended for fast banking, as equipping it allows the player to make 14 tiaras per inventory. A [[ring of dueling]] can alternatively be used for fast access to the altar and to the bank if making tiaras at the [[Fire Altar]].
+
+The experience rates assume 1,450 tiaras made per hour. With accurate clicks and good banking, it is possible to make up to around 1,550 tiaras per hour. The profit rates assume using a [[ring of the elements]] to get to the altar and the [[amulet of glory]] for banking. [[Elemental tiara]]s may not be viable due to low trading volumes.
+
+{| class="wikitable align-center-1 align-left-2" style="text-align:right;"
+!colspan="2" |Type
+!XP/h
+!GP/XP
+!Tiaras needed
+!Total profit (1–50)
+|-
+|{{plinkt|Air tiara}}
+|36,300
+|{{Coins|({{GEP|Air tiara|14}}-{{GEP|Air talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/350}}
+|4,054
+|{{Coins|{{#expr:({{GEP|Air tiara|14}}-{{GEP|Air talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/350*101333 round 0}}}}
+|-
+|{{plinkt|Water tiara}}
+|43,500
+|{{Coins|({{GEP|Water tiara|14}}-{{GEP|Water talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/420}}
+|3,378
+|{{Coins|{{#expr:({{GEP|Water tiara|14}}-{{GEP|Water talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/420*101333 round 0}}}}
+|-
+|{{plinkt|Earth tiara}}
+|47,100
+|{{Coins|({{GEP|Earth tiara|14}}-{{GEP|Earth talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/455}}
+|3,118
+|{{Coins|{{#expr:({{GEP|Earth tiara|14}}-{{GEP|Earth talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/455*101333 round 0}}}}
+|-
+|{{plinkt|Fire tiara}}
+|50,800
+|{{Coins|({{GEP|Fire tiara|14}}-{{GEP|Fire talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/490}}
+|2,896
+|{{Coins|{{#expr:({{GEP|Fire tiara|14}}-{{GEP|Fire talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/490*101333 round 0}}}}
+|-
+|{{plinkt|Elemental tiara}}
+|58,000
+|{{Coins|({{GEP|Elemental tiara|14}}-{{GEP|Elemental talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/560}}
+|2,534
+|{{Coins|{{#expr:({{GEP|Elemental tiara|14}}-{{GEP|Elemental talisman|14}}-{{GEP|Tiara|14}}-{{GEP|Law rune}}--{{GEP|Air rune}}--{{GEP|Water rune}}--{{GEP|Earth rune}}--{{GEP|Fire rune}})/560*101333 round 0}}}}
+|-
+|}

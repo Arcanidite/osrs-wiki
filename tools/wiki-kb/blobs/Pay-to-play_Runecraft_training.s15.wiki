@@ -1,0 +1,98 @@
+==Levels 1–99: Ourania Altar==
+Crafting runes at the [[Ourania Altar]] (also known as the [[Zamorak Magical Institute|ZMI]] Altar) is a profitable lower-effort alternative to lava runes. The altar can be accessed at any Runecraft level. Unlike the other runic altars, the Ourania Altar converts essence into a random assortment of runes, which improves in cash and experience value as the player levels Runecraft.
+
+For this method, players will need to have unlocked the [[Ourania Teleport]] on the [[Lunar spellbook]] for a fast access to the altar. This requires completion of [[Lunar Diplomacy]] and speaking to [[Baba Yaga]] while on the Lunar spellbook. Being on the Lunar spellbook is also needed for casting [[NPC Contact]] to quickly repair [[essence pouch]]es. Having level 71 Magic is '''strongly recommended''' to be able to cast both of these spells.
+
+Having the [[rune pouch]] is strongly recommended to have more inventory space for the essence. The [[medium Ardougne Diary]] reward increases the number of runes that are crafted; however no experience is given for the extra runes.
+
+The official worlds for the Ourania Altar are Worlds '''327''' and '''480'''. Use one of these worlds to have a lower chance of being targeted by the monsters, as the world will often be filled with other players training Runecraft. Alternatively, two alternate accounts can be used to lure the monsters so that they do not hit the player; this also allows training another skill such as [[Fletching training|Fletching]] whilst running to the altar for greater macro-efficiency.
+
+Experience rates are shown in the table below, and assume players have all of the [[essence pouch]]es available at each level. The rates and the experience per essence scale depending on the Runecraft level. At higher levels, the player can expect to make somewhere around 350,000–400,000 coins per hour depending on the rune prices.
+
+{| class="wikitable align-center-1 align-center-2 align-center-3 align-center-4 align-center-5"
+! rowspan="2" |{{SCP|Runecraft}} level
+! colspan="2" |XP/h
+! colspan="2" |XP/essence
+|-
+![[Pure essence|Pure]]
+![[Daeyalt essence|Daeyalt]]
+![[Pure essence|Pure]]
+![[Daeyalt essence|Daeyalt]]
+|-
+|1–9||{{formatnum:{{#expr:9.39*29*3600/48 round 0}}}}||{{formatnum:{{#expr:1.5*9.39*29*3600/48 round 0}}}}||9.39||{{formatnum:{{#expr:1.5*9.39  round 2}}}}
+|-
+|10–19||{{formatnum:{{#expr:10.52*29*3600/48 round 0}}}}||{{formatnum:{{#expr:1.5*10.52*29*3600/48 round 0}}}}||10.52||{{formatnum:{{#expr:1.5*10.52  round 2}}}}
+|-
+|20–24||{{formatnum:{{#expr:11.34*29*3600/48 round 0}}}}||{{formatnum:{{#expr:1.5*11.34*29*3600/48 round 0}}}}||11.34||{{formatnum:{{#expr:1.5*11.34  round 2}}}}
+|-
+|25–29||{{formatnum:{{#expr:11.34*34*(3600-15)/48 round 0}}}}||{{formatnum:{{#expr:1.5*11.34*34*(3600-15)/48 round 0}}}}||11.34||{{formatnum:{{#expr:1.5*11.34  round 2}}}}
+|-
+|30–39||{{formatnum:{{#expr:12.27*34*(3600-15)/48 round 0}}}}||{{formatnum:{{#expr:1.5*12.27*34*(3600-15)/48 round 0}}}}||12.27||{{formatnum:{{#expr:1.5*12.27  round 2}}}}
+|-
+|40–49||{{formatnum:{{#expr:12.90*34*(3600-15)/48 round 0}}}}||{{formatnum:{{#expr:1.5*12.90*34*(3600-15)/48 round 0}}}}||12.90||{{formatnum:{{#expr:1.5*12.90  round 2}}}}
+|-
+|50–59||{{formatnum:{{#expr:13.47*42*(3600-30)/48 round 0}}}}||{{formatnum:{{#expr:1.5*13.47*42*(3600-30)/48 round 0}}}}||13.47||{{formatnum:{{#expr:1.5*13.47  round 2}}}}
+|-
+|60–69||{{formatnum:{{#expr:13.63*42*(3600-30)/48 round 0}}}}||{{formatnum:{{#expr:1.5*13.63*42*(3600-30)/48 round 0}}}}||13.63||{{formatnum:{{#expr:1.5*13.63  round 2}}}}
+|-
+|70–74||{{formatnum:{{#expr:14.59*42*(3600-30)/48 round 0}}}}||{{formatnum:{{#expr:1.5*14.59*42*(3600-30)/48 round 0}}}}||14.59||{{formatnum:{{#expr:1.5*14.59  round 2}}}}
+|-
+|75–79||{{formatnum:{{#expr:14.59*53*(3600-45)/48 round 0}}}}||{{formatnum:{{#expr:1.5*14.59*53*(3600-45)/48 round 0}}}}||14.59||{{formatnum:{{#expr:1.5*14.59  round 2}}}}
+|-
+|80–84||{{formatnum:{{#expr:14.90*53*(3600-45)/48 round 0}}}}||{{formatnum:{{#expr:1.5*14.90*53*(3600-45)/48 round 0}}}}||14.90||{{formatnum:{{#expr:1.5*14.90  round 2}}}}
+|-
+|85–89||{{formatnum:{{#expr:14.90*66*(3600-60)/48 round 0}}}}||{{formatnum:{{#expr:1.5*14.90*66*(3600-60)/48 round 0}}}}||14.90||{{formatnum:{{#expr:1.5*14.90  round 2}}}}
+|-
+|90–98||{{formatnum:{{#expr:15.35*66*(3600-60)/48 round 0}}}}||{{formatnum:{{#expr:1.5*15.35*66*(3600-60)/48 round 0}}}}||15.35||{{formatnum:{{#expr:1.5*15.35  round 2}}}}
+|-
+|99||{{formatnum:{{#expr:15.58*66*3600/48 round 0}}}}||{{formatnum:{{#expr:1.5*15.58*66*3600/48 round 0}}}}||15.58||{{formatnum:{{#expr:1.5*15.58  round 2}}}}
+|}
+
+===Setup===
+{{Equipment
+|align = right
+|head = Hat of the eye
+|cape = Hitpoints cape
+|neck = Amulet of fury
+|ammo = Rada's blessing 4
+|weapon = Dust battlestaff
+|torso = Robe top of the eye
+|legs = Robe bottoms of the eye
+|shield = Crystal shield
+|gloves = Regen bracelet
+|boots = Boots of the eye
+|ring = Ring of endurance
+}}{{Inventory|Colossal pouch|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Rune pouch
+|align = right
+}}To quickly access the bank, players need to pay 20 of any kind of rune (excluding combination runes) by setting a quick-payment deal with [[Eniola]]. [[Mind rune|Mind]] or elemental runes are usually the cheapest option. Clear the rune pouch and essence pouch space holders and fill the entire bank with bank fillers (or use the bank's 'Deposit Lock Settings'). This way, the player can quickly deposit all the crafted runes without depositing any necessary items. Have essence, 1-dose [[stamina potion]]s, and [[cosmic rune]]s near the 'Deposit inventory' button for efficient banking.
+
+The optimal setup consists of the following:
+*All essence pouches available
+*[[Dust battlestaff]] (or a [[staff of earth]] and [[air rune]]s) for casting [[Ourania Teleport]] and [[NPC Contact]]
+*[[Rune pouch]] holding payment, [[astral rune|astral]], and [[law rune]]s. Bring [[cosmic rune]]s as well if using the [[divine rune pouch]].
+*Some defensive equipment (not needed if using alternative accounts to lure the monsters)
+*[[Raiments of the Eye]] set for extra profit (optional but recommended)
+*[[Ring of endurance]] with at least 500 charges (optional)
+
+Players who find that they are taking a lot of damage can wear the [[Hitpoints cape]] along with a [[regen bracelet]]. This will most likely outheal any damage taken. Lower-level players are advised to bring more defensive equipment (such as wearing a [[black d'hide body]] and a [[helm of neitiznot]]) and use cheap food to heal themselves if needed. A [[ring of suffering (i)]] can be considered as an alternative to the [[ring of endurance]] if greater defensive bonuses are desired, or the [[steel ring]]/[[granite ring (i)]] if the ring of suffering is too expensive.
+
+{{Rune pouch|Aether rune|Law rune|Astral rune|Mind rune
+| align = right
+}}
+
+Players who do not have level 71 [[Magic]] to cast [[Ourania Teleport]] can use the [[Ourania teleport (tablet)|respective teleport tablets]] instead, though this will require an extra inventory slot.
+
+At level 75 Runecraft and higher, players may opt to replace [[law rune]]s in the rune pouch with [[cosmic rune]]s. This removes the need to withdraw cosmic runes for casting [[NPC Contact]], and at higher levels it is very unlikely that the player will not craft any law runes at the altar. Players with the [[divine rune pouch]] can bring cosmic runes without this consideration.
+
+The inventory and gear setup provided assumes using the [[Lunar spellbook]] with 96 Magic to cast [[Spellbook Swap]] to [[Arceuus spellbook]] and castinng [[Vile Vigour]] for run energy as needed (otherwise utilise [[stamina potion]]s). [[Mind rune]]s should be set up to be used as default when banking with [[Eniola]].
+
+===Runecrafting and tips===
+Starting at the bank, run to the altar using the shorter route by running south and then east. Craft runes at the [[Ourania Altar|altar]] until you have run out of essence. Cast Ourania Teleport, run south-west to the ladder and climb down, and bank at Eniola. Drink a stamina potion dose to restore run energy whenever needed.
+
+Turn off [[Auto Retaliate]] and set NPC 'Attack' options to 'Hidden' to avoid attacking and retaliating against the monsters. Turning the camera south allows for easy vision while running to the ladder and throughout the cave.
+
+Instead of using stamina potions, players can restore run energy by casting [[Spellbook Swap]] to use [[Vile Vigour]] from the [[Arceuus spellbook]]. This method requires level 96 [[Magic]] and completion of [[A Kingdom Divided]]. Restore prayer points at the altar next to the [[Ourania Cave|Ourania Cave entrance]]. Casting Spellbook Swap or Vile Vigour does not interrupt running, so it is best to cast the spells while running to the ladder leading to the cave.
+
+Having the [[divine rune pouch]] allows the player to store [[Soul rune|soul]], [[Cosmic rune|cosmic]], [[Astral rune|astral]], and payment runes in one inventory spot. The player can use the [[law rune]]s acquired from runecrafting at the altar to cast [[Ourania Teleport]]. Alternatively, players can store [[Aether rune|aether]], law, astral, and payment runes. This will avoid the small chance of not creating a law rune at the altar.
+
+If there are multiple players training Runecraft in the same world, the player can get to the altar with less effort by trading or using an item on other players running to the altar, provided that they do not stop at all. Following other players (instead of trading or using an item on them) is not recommended, as players can get stuck behind walls if there is enough distance between them. Using the increased draw distance of approved, non-standard clients such as [[RuneLite]], it is possible to one-click from the cave entrance to the altar. This removes the need to follow others or click multiple times along the path.

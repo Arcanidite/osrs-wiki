@@ -1,0 +1,123 @@
+{{Confuse|Sleeping Giant}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Sleeping Giants
+|number = 154
+|image = [[File:Sleeping Giants.png|300px]]
+|release = [[8 June]] [[2022]]
+|update = Giants' Foundry
+|members = Yes
+|series = None
+|developer = [[Mod Oasis]]
+}}
+'''Sleeping Giants''' is a [[quest]] accompanying the [[Giants' Foundry]] [[minigame]]. The player assists [[Kovac]] the giant in investigating an ancient workshop beneath the [[Giants' Plateau]] seemingly built by giants, for giants.
+
+==Details==
+{{Quest details
+|start = Talk to [[Kovac]] at the [[Giants' Plateau]], east of [[Al Kharid]].
+|startmap = 3362,3146
+|difficulty = Intermediate
+|description = Ahh, giants. We all know them. Enormous humanoids hanging about Gielinor, simply minding their own business until some adventurer or another comes along to beat them up.
+
+But how much do we really know about these giants? What do they think about? Where did they come from? Would they enjoy making massive swords in some kind of... gargantuan workshop?
+
+All these questions, and more, will be answered in the quest Sleeping Giants! You'll help Kovac, a friendly giant who's discovered an ancient forge built to his giant-size proportions!
+|length = Very Short
+|requirements = *{{SCP|Smithing|15|link=yes}} {{Boostable|No}} {{Questreqstart|yes}}
+|recommended = 
+|items = * 3 [[oak logs]]
+* 1 [[wool]] ([[ball of wool]] will '''not''' work)
+* 10 [[nails]]
+* [[Hammer]] or [[Imcando hammer]] (Other types of hammers will not work)
+* [[Chisel]]
+* 1 [[bucket of water]] (Obtainable during quest) or [[ice gloves]]
+|kills = 
+|ironman = [[File:Ultimate_ironman_chat_badge.png]] 20 empty inventory spaces needed to search a crate.
+*A method of obtaining [[oak logs]]:
+**{{SCP|Woodcutting|15|link=yes}} to chop [[oak trees]]
+**1/17.2 drop from sorting [[small salvage]] with {{SCP|Sailing|15|link=yes}}, 1/11.6 from [[fishy salvage]] with {{SCP|Sailing|26|link=yes}}, 1/5.68 from [[barracuda salvage]] with {{SCP|Sailing|35|link=yes}}
+**1/16.2 drop from [[Brutus]] ({{SCP|Combat|30}}), requiring completion of {{SCP|Quest|The Ides of Milk}}
+|leagueRegion = <poem>
+{{LeagueRegion|Desert}} — location requirement
+</poem>
+}}
+
+==Walkthrough==
+===What is this? A workshop for giants?===
+{{Needed|3 [[oak logs]], 1 [[wool]], 10 [[nails]], 1 [[hammer]], 1 [[chisel]], 1 [[bucket of water]] or [[ice gloves]], 20 empty inventory spaces}}
+[[File:Sleeping Giants - entering the Giants' Foundry.png|thumb|300px|Kovac and the player enter the Giants' Foundry.]]
+[[File:Kovac chathead.png|left]]
+Make your way to the [[Giants' Plateau]] east of [[Al Kharid]]. The quickest way there is the [[Minigame Teleport]] to Giants' Foundry. Alternatively, travel to Al Kharid using an [[amulet of glory]] and head east from the palace. Past the [[Hill Giant (Giants' Plateau)|Hill Giants]], a singular Hill Giant with a "Strike" option rather than an "Attack" option can be seen by a [[Giant anvil (Giants' Plateau)|giant anvil]]. Attempt to strike the Hill Giant, and it will ask you to stop, requesting your help. Accept his request to start the quest.
+
+The Hill Giant, whose name is Kovac, will ask you to accompany him to the cave next to him. A cutscene will play, showing a workshop too big for regular-sized people to use. This is the [[Giants' Foundry]], where giants of ages past once forged weapons. Kovac wishes to restore the foundry to forge giant weapons to help his kin remember how civilised their race once was. 
+
+You must now repair the various features of the foundry that have been dilapidated. If you forgot to bring any of the required items, a big chest can be found which accesses your bank.
+* [[Trip hammer]] - 1x Oak log, 5x nails
+* [[Grindstone]] - Chisel
+* [[Polishing wheel]] - 2x Oak log, 5x nails, 1x wool
+
+===Make-A-Sword===
+[[File:Giants' Foundry - Foundry Overview.png|thumb|300px|An overview of the features in the Giants' Foundry.]]
+[[File:Ultimate_ironman_chat_badge.png]] You will need 20 empty inventory spaces for max 20 seconds. Drop your items, search the crate, speak to Kovac, use items on the crucible then recover items.
+
+'''Warning:''' The initial room is an instance, pick up any dropped items before talking to Kovac or they will be lost.
+
+Speak to Kovac once you've repaired the aforementioned objects. He will now ask that you make a sword for his old friend; this part of the quest acts as an interactive tutorial for the [[Giants' Foundry]] minigame.
+
+Search the crate near the cave exit for an assortment of bronze and iron items, and use them on the crucible. Once it is full, speak to Kovac again, and he will tell you to set up the mould for the sword's forte, blade, and tip which match the commission.
+
+Once you've got a fitting mould set, speak to Kovac and pour the molten metal from the crucible into the mould jig. With no weapon and shield equipped, use a [[bucket of water]] to cool the sword and obtain the [[preform]]. An empty bucket can be taken from the pile next to the polishing wheel, and filled by using the bucket on the waterfall. Alternatively, a bucket of water is not needed if you have [[ice gloves]] equipped.
+
+Now, you must refine the preform into a quality giant sword:
+* Heat the preform to maximum by using it on the [[lava pool]].  The "Heat-preform" option will increase the heat by small increments, while the "Dunk-preform" option will heat it faster. The temperature should be red.
+* Hit the preform with the Trip Hammer repaired earlier, repeating until progress bar is onto the yellow section. Be sure to keep the temperature in the red while doing this, otherwise the quality of the sword will decrease. Using the Trip Hammer will cool the preform.
+* Cool the preform using the [[Waterfall (Giants' Foundry)|waterfall]] until its temperature is almost green. The "Cool-preform" option will cool the preform slowly, while the "Quench-preform" option cools it more quickly.
+* Use the preform on Grindstone repaired earlier, repeating until progress is onto green section. Be sure to watch the temperature as the Grindstone will heat the preform during use.
+* Cool the preform in the waterfall until its temperature is high green.
+* Use the preform on the Polishing Wheel, repeating until the sword is complete. The Polishing Wheel will cool the preform during use, so be sure to watch the temperature.
+* '''Note:''' Kovac will accept any quality sword for the purpose of this quest, though he will comment on it being not quite up to standard.
+
+Once you've completed the sword, speak to Kovac again. He will reveal that the sword was made for his old friend [[Obor]], who resides in the [[Edgeville Dungeon]].
+
+Congratulations, quest complete!
+==Rewards==
+{{Quest rewards
+|name = Sleeping Giants
+|image = [[File:Sleeping Giants reward scroll.png|center]]
+|qp = 1
+|rewards =
+* {{SCP|Smithing|6,000}} [[Smithing]] experience
+* Access to the [[Giants' Foundry]]
+}}
+
+==Transcript==
+{{Hastranscript|Quest}}
+
+==Music==
+{| class="wikitable sortable"
+|-
+!Name
+! class="unsortable" | Unlock details
+! class="unsortable" | Music track
+|-
+|[[The Foundry]]
+|Unlocked upon entering the [[Giants' Foundry]]
+|[[File:The Foundry.ogg]]
+|}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 25 September 2024
+|update = Varlamore: The Rising Darkness is OUT NOW
+|change = Players will now receive a warning when attempting to drop an item within the Foundry during the quest.
+}}
+{{Subject changes footer}}
+
+==Developers==
+*'''Main developer(s):''' [[Mod Oasis]]
+* '''Quality Assurance''': [[Mod Moogle]]
+* '''Art''': [[Mod Brow]], [[Mod Ry]], [[Mod Soffan]], [[Mod West]]
+* '''Audio''': {{RSL|Mod Grace}}
+
+{{Sleeping Giants}}

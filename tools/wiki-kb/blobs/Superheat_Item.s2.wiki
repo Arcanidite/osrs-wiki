@@ -1,0 +1,7 @@
+==Cost==
+{{Spell cost table
+|Rune1 = nature
+|Rune1num = 1
+|Rune2 = fire
+|Rune2num = 4
+}}

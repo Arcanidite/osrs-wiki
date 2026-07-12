@@ -1,0 +1,79 @@
+{{External|rs|rsc|dw}}
+{{otheruses|the monster called a Cow}}
+{{Infobox Monster
+|version1 = 1
+|version2 = 2
+|version3 = 3
+|version4 = Isle of Souls
+|version5 = Zanaris
+|name = Cow
+|image1 = [[File:Cow (1).png|200px]]
+|image2 = [[File:Cow (2).png|200px]]
+|image3 = [[File:Cow (3).png|200px]]
+|image4 = [[File:Cow (Isle of Souls).png|200px]]
+|image5 = [[File:Cow (Zanaris).png|200px]]
+|release1 = [[4 January]] [[2001]]
+|release2 = 1-6 April [[2004]]
+|release3 = [[22 February]] [[2005]]
+|release4 = [[3 February]] [[2021]]
+|release5 = [[27 February]] [[2006]]
+|update1 = Runescape beta is now online!
+|update2 = 
+|update3 = Wilderness Capes, and Changes
+|update4 = The Isle of Souls
+|update5 = A Fairy Tale Part I - Growing Pains
+|members1 = No
+|members2 = No
+|members3 = No
+|members4 = Yes
+|members5 = Yes
+|combat = 2
+|size = 2
+|examine1 = Converts grass to beef.
+|examine2 = Beefy.
+|examine3 = Where beef comes from.
+|examine4 = A cow by any other name would smell as sweet.
+|examine5 = Converts grass to beef.
+|xpbonus = 0
+|max hit = 1
+|aggressive = No
+|poisonous = No
+|attack style = [[Crush]]
+|attack speed = 4
+|respawn = 45
+|slayxp = 8
+|cat = Cows
+|assignedby = turael,spria
+|hitpoints = 8
+|att = 1
+|str = 1
+|def = 1
+|mage = 1
+|range = 1
+|attbns = -15
+|strbns = -15
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = -21
+|dslash = -21
+|dcrush = -21
+|dmagic = -21
+|dlight = -21
+|dstandard = -21
+|dheavy = -21
+|poisonresistance = 100
+|venomresistance = 100
+|immunecannon = No
+|immunethrall = No
+|id1 = 2790
+|id2 = 2791
+|id3 = 2793
+|id4 = 2795
+|id5 = 5842
+}}
+[[File:Cow chathead.png|left]]
+'''Cows''' are common low [[Combat level|level]] [[monsters]] new players train on. They are one of the first NPCs new players see outside of [[Lumbridge]]. Cows can help new players earn money, [[Cooking]] [[experience]], and [[combat]] experience. The [[cowhide]]s that they [[Drops|drop]] can be tanned to make [[leather]] or [[hard leather]], or they can be sold for [[coins]] to players wanting to raise their [[Crafting]] level. 
+
+While most locations containing cows are crowded, there are some spots usually vacant, like the spot north of the windmill north-west of Lumbridge. Along with cows, you can also find [[Cow calf|cow calves]] and [[dairy cow]]s. Regular cows cannot be milked; attempting to do so using a bucket will display the message {{mes|Only dairy cows are suitable for milking.}}.

@@ -1,0 +1,9 @@
+====Heavy rod fishing====
+'''Items required:''' ''[[Fishing bait]] or [[feathers]], a [[knife]]''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about heavy rod fishing.{{Chat option|2What can I learn about the use of a fishing rod?}}
+* Search the [[barbarian bed]] to obtain a [[barbarian rod]].
+* Catch a leaping fish at one of the nearby [[Fishing spot (barbarian)|fishing spots]].
+* Dissect the leaping fish with the knife to obtain [[roe]]. Keep the roe for later.
+* Talk to Otto again and tell him of your success.{{Chat option|2I've fished with a barbarian rod!}}
+}}

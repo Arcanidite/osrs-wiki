@@ -1,0 +1,140 @@
+==Walkthrough==
+===Infiltration II===
+{{Needed|Two empty inventory spaces, [[Emissary Robes]], combat gear|recommended=[[Pendant of ates]], equip all spots not worn by the emissary robes}}
+{{Checklist|
+* Talk to Servius at the {{floor|uk=0}} of the [[Sunrise Palace]] to start the quest. {{Chat option|1Yes.}}
+* After the cutscene, make your way to the [[Twilight Temple]]. Search the chest at the [[Tower of Ascension]] for the emissary robes if needed.
+* Equip the emissary robes and enter the temple.
+* After the cutscene, attempt to go downstairs and choose the passcode "Final Dawn".
+* Enter the basement, and head east toward the backroom while avoiding the [[Emissary Enforcer]].
+* Enter the backroom and watch the cutscene.  
+* Search the large bed (south room) for a [[Key (The Final Dawn)|key]].
+* Open the drawer in either the south or north room for the [[canvas piece]].
+* Use the canvas piece on the [[Painting (Twilight Temple)|painting]] at the eastern end.
+* Inspect the painting and enter a hidden passage.  
+* Picklock the blue chest for an [[emissary scroll]]. To open the chest, simply move the tumblers by clicking on slots above them.
+** The fastest way to brute force the lock is to simply click confirm, see if any show up as green on the right, and if not, move everything up by one. This will take no more than eight tries for the final combination.
+* Fight the [[Emissary Enforcer]] (180 HP AoE melee):
+** You cannot teleport, pray, or change gear. If you die here, your gravestone will appear at the [[Twilight Temple]] entrance.  
+** Step back during normal attacks, and step sideways when he shouts {{overhead|Traitor!}} or {{overhead|Thief!}}  
+* Pick up and read the emissary scroll.  
+* Return to Queen Zyanyi at the top floor of the [[Sunrise Palace]].
+}}
+
+===Home Invasion===
+{{Needed|One of the following: bones, raw meat, cooked meat}}
+{{Checklist|
+* Go behind the safe house south of the western bank in [[Civitas illa Fortis]].
+* Talk to [[Captain Vibia]].
+* Inspect the southernmost window on the east side of the safe house.
+* Enter the window and use your chosen bones/meat on the dog.
+* Pet the dog for the door's passcode, "GUS".
+* Grab the sack of [[potatoes]]; empty the sack.
+* Take the [[knife]] nearby.
+* Head up to the middle floor and pick up the [[coin purse]].
+* Empty the purse, then head up to the top floor.
+* Use the knife on the diseased off-green potted plant for a [[Branch (The Final Dawn)|branch]].
+* Use the empty coin purse on the pot of sand to fill it up.
+* Use the branch and sandy coin purse on each other to create the [[makeshift blackjack]].
+* Show the sack and blackjack to [[Captain Vibia]] to initiate a cutscene.
+* Search Janus for a key which initiates another cutscene.
+* Agree to go with Queen Zyanyi to [[Cam Torum]]. {{Chat option|1Yes, let's go.}}
+}}
+
+===Dwarven Traitor===
+{{Needed|None, four empty inventory slots}}
+{{Checklist|
+* Speak to [[Attala]] in the [[Cam Torum]] market.
+* Enter [[Teumo]]'s house east of the bank.
+* Head upstairs and pick up the [[beer]].
+* Return downstairs and use the beer on [[Galna]].
+* Enter Teumo's basement. Search the cabinet to the south-west and grab one of each of the following beverages: [[steamforge brew]], [[dwarven stout]], beer, and [[wizard's mind bomb]].
+* Place the steamforge brew on the barrel directly south of the cabinet (indicated with "steam")
+* Place the stout directly east of this barrel (indicated with "black liquid")
+* Place the beer on the northern barrel (indicated with "smells like a standard Gielinorian pub")
+* Place the mind bomb on the south-eastern barrel (indicated with "bubbling")
+* Drink the beer on the barrel south of the staircase (indicated with "empty"), then place the [[beer glass]] on it.
+* Inspect the fireplace and pull a hidden lever.
+* Climb through the hole in the wall in the south-eastern room to initiate a cutscene.
+* Return to [[Servius]] and [[Attala]] in the basement and talk to them.
+}}
+
+===Interlopers in Neypotzli===
+{{Needed|Combat equipment, one empty slot}}
+{{Checklist|
+* Head to the bank and prepare for a fight against two level 160 cultists.
+* Head north to [[Neypotzli]] to have [[Eyatlalli]] give you a [[keystone fragment]].
+* Head through the Streambound and Earthbound Caverns, using the keystone to pinpoint the exact tile to resonate with the key.
+* Head to the Ancient Prison and use it in the room to the south-east in the section.
+* Touch the glowing symbol to initiate a cutscene.
+* Kill [[Lucius]] and [[Chimalli]].
+** Alternate Protect from Magic/Ranged. Step into golden circles to avoid Lucius' special, and avoid Chimalli's fire arrows by stepping away from where they will land.
+** Once one of them are defeated, the other will start to pierce prayer and perform special attacks more frequently.
+** It is recommended to kill Lucius first, since Chimalli's special attack is much easier to avoid, especially if using melee.
+* Talk to [[Attala]].
+}}
+
+===Crypt Assault===
+{{Needed|Combat equipment, food, combat and prayer potions, melee weapon}}
+{{Checklist|
+* Head to [[Tal Teklan]]. Servius is north-east of the [[Quetzal Transport System]] landing site, east of the altar.
+* The [[Crypt of Tonali]] is a fair distance to the south-east, just west of [[Kastori]].
+* Enter the Crypt of Tonali to initiate a cutscene.
+* Kill six waves of cultists; allies can be healed by using food on them. If all Tonali warriors and archers helping you die, the waves reset.
+* Complete all six waves successfully to initiate a cutscene. The fight will not start until after all the dialogue.
+* Kill [[Ennius Tullus]] (380 HP). He uses melee attacks (pray Protect from Melee), and can only be attacked with melee, using three special attacks:
+** '''Sunfire Blast:''' Circles will begin glowing around the area, indicating safespots for his upcoming attack.
+** '''Sunfire Strike:''' A row or column of sunfire through him. If the player is diagonally across, he will likewise launch one across himself.
+** '''Sunfire Smite:''' Disables the player's overhead prayers.
+** Upon reaching 0 health, he will enter the enrage phase, healing 120 health, attacking faster, and Sunfire Strike is enhanced to cover three rows/columns at a time.
+}}
+
+===The Tonali Cavern===
+{{Checklist|
+* After the cutscene, descend into the Tonali Cavern.
+* Make your way across the agility shortcuts or portals to reach the northern end of the cavern.
+* Inspect the [[Strange Platform]], as this unlocks an entrance from the surface directly east of Tal Teklan.
+* Proceed north slightly, and descend east into the sun puzzle room.
+* Search all the urns for [[Kuhu essence]].
+* The altars are numbered 1 to 8, with the first being the north-east altar and the next number in sequence going clockwise.
+* Inspect the sun statue for your puzzle; the wording will determine where you and Prince Itzla need to be positioned (The third number/word is not used):
+** Oma {{=}} 2
+** Naui {{=}} 4
+** Kuli {{=}} 5
+** Chaki {{=}} 6
+** Koma {{=}} 7
+** Ueai {{=}} 8
+** Makti {{=}} 10
+* For example, if the statue states "Naui Koma-Makti", Itzla needs to be placed by the fourth altar, while you need to go to the seventh altar.
+* Inspect the sun statue for the next engraving.
+* After successfully imbuing an altar three times, the puzzle is complete.
+* Descend west into the moon puzzle room.
+* Use pressure plates to move Prince Itzla and suppress a set of flames.
+* Search the [[old tools]] and obtain a [[knife blade]].
+* Pull the tree roots around the room for some [[ancient roots]].
+* Use the knife blade on the roots for some [[root kindling]].
+* Count the total amount of lit braziers from stepping on both pressure plates
+** Count the lit braziers while Itzla is standing on one pressure plate, tell him to move, count the lit braziers. Add the two numbers up, and that's how many kindlings you need to add to the statue. The total number will not change until you add the correct amount of kindlings.
+* Deposit the equivalent amount of root kindling in the moon statue.
+* Doing so correctly three times will complete the puzzle.
+* Leave the puzzle through the portal.
+* Follow Prince Itzla to unlock the northern doors.
+* Return to the surface and resupply for the final fight if needed; ranged style is recommended.
+}}
+
+===The Truth of Mokhaiotl===
+{{Needed|Combat equipment (ranged recommended), food, potions}}
+{{Checklist|
+* Return to the entrance to Mokhaiotl via [[Lift Platform (Crypt of Tonali)]] then traveling north. Enter the door to initiate a cutscene.
+* Defeat [[Augur Metzli]]. She has 600 Hitpoints, and uses special attacks every three attacks, after which she sometimes switches from ranged to magic and vice versa.
+** Dodge flame walls via a gap or gold symbol to teleport to a safe area.
+** She also uses the same special attacks used by Lucius and Ennius earlier. She may do them multiple times in a row.
+** Upon reaching 10% of her health, she will enter the enrage phase. She will target the quadrant that the player and Itzla are on. A white portal will additionally spawn to move to the next quadrant, avoiding damage from the attack.
+* After defeating Metzli, make your way to the next entrance at the northern end by using the stairs or jumping across the pillar (requires 75 [[Agility]]).
+* Enter the final chamber to initiate a cutscene. Note that clicking elsewhere during the dialogue will reset the player back outside the room. Should this happen, you will have to watch the cutscene again.
+* After the cutscene, search the skeleton next to the entrance for a [[Stone tablet (The Final Dawn)#Mokhaiotl|stone tablet]]. Read it.
+* Inspect the [[Sun Statue]] and [[Moon Statue]].
+* Interact with the final chamber to return to the Crypt of Tonali.
+* Finish the final conversation with Prince Itzla.
+* '''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,9 @@
+===Trousers===
+{{Needed|2 pieces of [[silk]], [[bear fur]], [[mourner trousers]], coins (if you need dyes), [[teleport crystal]]}}
+{{Checklist|
+*Teleport to [[Lletya]] using the [[teleport crystal]].
+*Talk to [[Arianwyn]].
+*Talk to [[Oronwen]] who is directly north-west of the teleport crystal's destination. {{Chat option|3Do you mend clothes?}}
+*Give her the silk, bear fur, and trousers.
+**''Buy dyes here if needed, you'll need more than 1 of each if you miss the target later on.''
+}}

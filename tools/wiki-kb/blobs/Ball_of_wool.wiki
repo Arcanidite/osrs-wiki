@@ -1,0 +1,94 @@
+{{External|rs|rsc|dw=Wool Thread}}
+{{Infobox Item
+|name = Ball of wool
+|image = [[File:Ball of wool.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Spun from wool.
+|value = 2
+|weight = 0.012
+|respawn = 100
+|exchange = Yes
+|id = 1759
+}}
+[[File:Ball of wool detail.png|left|100px]]
+A '''ball of wool''' is used in the [[Crafting]] [[skill]]. It is made by using a [[spinning wheel]].
+
+Players looking to obtain large numbers of balls of wool often use [[Neitiznot supplies.]] in [[Neitiznot]] as it has the largest stock of any store with a bank in the same building. After [[Monkey Madness II]], [[Hamab's Crafting Emporium]] on [[Ape Atoll]] is also located close to a bank.
+
+==Creation==
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 2.5
+|members = No
+|ticks = 3
+|facilities = Spinning wheel
+|mat1 = Wool
+|output1 = Ball of wool
+}}
+
+==Uses==
+It can be used on a [[kitten]] for increased attention duration.
+
+===Quests===
+*[[Sheep Shearer]]: 20 × balls of wool
+*[[Prince Ali Rescue]]: 3 × balls of wool to make a [[wig]]
+*[[Regicide]]: 4 × balls of wool to make a [[strip of cloth]]
+*[[Monkey Madness I]]: 1 × ball of wool to make a [[M'speak amulet]]
+*[[Recipe for Disaster]] ([[Recipe for Disaster/Freeing Skrach Uglogwee|Freeing Skrach Uglogwee]] subquest): 1 × ball of wool to make a [[balloon toad]]
+*[[Enlightened Journey]]: 1 × ball of wool
+
+==Products==
+{{Uses material list|Ball of wool}}
+
+==Item sources==
+{{Drop sources|Ball of wool}}
+
+===Shop locations===
+{{Store locations list|Ball of wool}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Ball of wool|location=[[Civitas illa Fortis]] {{FloorNumber|uk=1}}|members=Yes|1662,3100|plane=1|leagueRegion=Varlamore}}
+{{ItemSpawnTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 20 March 2024
+|update = Varlamore: Part One
+|change = Examine changed from ''Spun from sheeps' wool.'' to ''Spun from wool.'' with the release of alpacas.
+}}
+{{Subject changes
+|daterange = 14 – 22 November 2005
+|change = The item's examine was changed from "''Spun from sheeps wool.''" to "''Spun from sheeps' wool.''"
+}}
+{{Subject changes
+|date = 4 April 2005
+|update = Ali Morrisane and Pollnivneach
+|change = The item was graphically updated.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Ball of wool detail (historical).png|center|300x150px]]
+|[[File:Ball of wool detail.png|center|300x150px]]
+|-
+|[[File:Ball of wool (historical).png|center]]
+|[[File:Ball of wool.png|center]]
+|-
+|29 March 2004 ⁠–<br/>4 April 2005
+|4 April 2005 ⁠–<br/>present
+|}
+
+{{Sheep Shearer}}
+[[Category:Crafting items]]

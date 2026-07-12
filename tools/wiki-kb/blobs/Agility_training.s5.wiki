@@ -1,0 +1,74 @@
+===Levels 62–99: Hallowed Sepulchre===
+{{main|Hallowed Sepulchre/Strategies}}
+[[File:Hallowed Sepulchre Coffin.png|thumb|right|250px|The Hallowed Sepulchre.]]
+The [[Hallowed Sepulchre]] offers the fastest experience from level 62 onwards. In the Sepulchre, the player will need to run through each floor while avoiding various traps. Doing so as quickly as possible requires good practice and timing, especially on the later floors.
+
+To access the Hallowed Sepulchre, players must have completed [[Sins of the Father]]. Having level 66 [[Thieving]] to be able to loot the [[Grand Hallowed Coffin]] on floor 5 is recommended. If looting the other [[Coffin (Hallowed Sepulchre)|coffins]] on floors 4 and 5, the player will also need the following:
+* {{SCP|Construction|56|link=yes}} to pass [[Bridge (Hallowed Sepulchre)|broken bridges]] 
+* {{SCP|Prayer|54|link=yes}} to pass [[Saradomin brazier]]s
+* {{SCP|Magic|7+|link=yes}} to pass [[portal frame]]s
+* {{SCP|Ranged|62|link=yes}} to pass [[Pillar (Hallowed Sepulchre)|pillars]]
+
+Use [[Stamina potion|stamina potions]] (or some other form of run energy restoration) to restore [[Energy|run energy]]. Using the [[Magical Obelisk|obelisks]] to restore run energy is slower than drinking stamina potions, and with enough mistakes it is possible to run out of run energy during the floor.
+
+The activity becomes somewhat profitable at level 92 Agility, where the player can loot the Grand Hallowed Coffin. Most of the profit comes from the [[ring of endurance]], with the hourly profit currently being {{Mmgprofit|Hallowed Sepulchre (Floor 5)}}. Players can also loot the coffins on floors 4 and 5 for extra profit, though this will lower the experience rates slightly. Looting the coffins on floors 1–3 is not recommended except for obtaining [[hallowed mark]]s, as they offer much lower profit compared to the later floors.
+
+For 200 hallowed marks, players can unlock a [[Instance|private instance]] by speaking to the [[Mysterious Stranger (Hallowed Sepulchre)|Mysterious stranger]]. In a private instance the floors will always spawn on the same trap rotation. This makes the floors more predictable, which will increase long-term experience rates.
+
+The experience rates in the table below assume having good practice and using a private instance. Expect lower rates when learning. The maximum experience rate caps at around 102,000–105,000 experience per hour, or 105,000–108,000 experience per hour without looting the [[Grand Hallowed Coffin|Grand Coffin]].
+
+{| class="wikitable"
+! Floor
+! {{SCP|Agility}} level
+! Floor XP
+! Cumulative XP
+! Avg. floor completion time (s)
+! Downtime (s)
+! XP/h (grand coffin)
+! XP/h (F4–F5 looting)
+|-
+| 1
+| 52
+| 575
+| 575
+| 31
+| 15
+| 45,000
+| N/A
+|-
+| 2
+| 62
+| 925
+| 1,500
+| 41
+| 9
+| 56,300
+| N/A
+|-
+| 3
+| 72
+| 1,600
+| 3,100
+| 58
+| 8
+| 68,900
+| N/A
+|-
+| 4
+| 82
+| 2,875
+| 5,975
+| 100
+| 8
+| 79,700
+| 75,000
+|-
+| 5
+| 92
+| 5,725
+| 11,700
+| 136
+| 22
+| 98,500
+| 85,800
+|}

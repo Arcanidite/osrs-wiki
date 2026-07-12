@@ -1,0 +1,159 @@
+===Levels 1–15: Bagged plants===
+The fastest way to train the early levels is to plant [[bagged plant]]s in the [[player-owned house]]. However, it is significantly more expensive than planting seeds.
+
+If the [[garden supplier]] does not have enough stock, players can [[World switching|hop worlds]] to buy more bagged plants.
+
+The quickest way to plant them, assuming that your house is in [[Rimmington]], is to bring three watering cans, a stack of coins, and as many [[noted]] bagged plants as you can afford. You can hand your notes to [[Phials]] to un-note them (for a small fee) and refill your watering cans in the building just east of the well. 
+
+Right-click the plant space and click on Build. To make the process even faster, spam the 1 button while planting and removing the bagged plants. This will select the bagged plant and confirm the removal, allowing you to plant and remove plants very quickly.
+
+Bagged plants are one of the only ways to actively train farming without waiting for anything to grow.
+
+Training Farming to 15 from level 1 requires 17 [[bagged plant 1]]s, 17 [[bagged plant 2]]s, and 7 [[bagged plant 3]]s for a total of 172000 [[coins]], or 78 bagged plant 1s for 78000 [[coins]] when plants are bought from the npc shop.
+{| class="wikitable sortable align-center-1"
+|+Bagged plants table
+! |{{SCP|Construction}} Level
+! colspan=2 |Plant
+! |{{SCP|Farming}}Experience{{SCP|Construction}}
+! |GE Price
+! |GP/XP
+|-
+|1
+|{{plinkt|Bagged plant 1}}
+|31
+|{{Coins|-{{GEP|Bagged plant 1}}}}
+|{{Coins|-({{GEP|Bagged plant 1}})/31}}
+|-
+|6
+|{{plinkt|Bagged plant 2}}
+|70
+|{{Coins|-{{GEP|Bagged plant 2}}}}
+|{{Coins|-({{GEP|Bagged plant 2}})/70}}
+|-
+|12
+|{{plinkt|Bagged plant 3}}
+|100
+|{{Coins|-{{GEP|Bagged plant 3}}}}
+|{{Coins|-({{GEP|Bagged plant 3}})/100}}
+|-
+|5
+|{{plinkt|Bagged dead tree}}
+|31
+|{{Coins|-{{GEP|Bagged dead tree}}}}
+|{{Coins|-({{GEP|Bagged dead tree}})/31}}
+|-
+|10
+|{{plinkt|Bagged nice tree}}
+|44
+|{{Coins|-{{GEP|Bagged nice tree}}}}
+|{{Coins|-({{GEP|Bagged nice tree}})/44}}
+|-
+|15
+|{{plinkt|Bagged oak tree}}
+|70
+|{{Coins|-{{GEP|Bagged oak tree}}}}
+|{{Coins|-({{GEP|Bagged oak tree}})/70}}
+|-
+|30
+|{{plinkt|Bagged willow tree}}
+|100
+|{{Coins|-{{GEP|Bagged willow tree}}}}
+|{{Coins|-({{GEP|Bagged willow tree}})/100}}
+|-
+|45
+|{{plinkt|Bagged maple tree}}
+|122
+|{{Coins|-{{GEP|Bagged maple tree}}}}
+|{{Coins|-({{GEP|Bagged maple tree}})/122}}
+|-
+|60
+|{{plinkt|Bagged yew tree}}
+|141
+|{{Coins|-{{GEP|Bagged yew tree}}}}
+|{{Coins|-({{GEP|Bagged yew tree}})/141}}
+|-
+|75
+|{{plinkt|Bagged magic tree}}
+|223
+|{{Coins|-{{GEP|Bagged magic tree}}}}
+|{{Coins|-({{GEP|Bagged magic tree}})/223}}
+|-
+|56
+|{{plinkt|Thorny hedge (bagged)}}
+|72
+|{{Coins|-{{GEP|Thorny hedge (bagged)}}}}
+|{{Coins|-({{GEP|Thorny hedge (bagged)}})/72}}
+|-
+|60
+|{{plinkt|Nice hedge (bagged)}}
+|100
+|{{Coins|-{{GEP|Nice hedge (bagged)}}}}
+|{{Coins|-({{GEP|Nice hedge (bagged)}})/100}}
+|-
+|64
+|{{plinkt|Small box hedge (bagged)}}
+|122
+|{{Coins|-{{GEP|Small box hedge (bagged)}}}}
+|{{Coins|-({{GEP|Small box hedge (bagged)}})/122}}
+|-
+|65
+|{{plinkt|Topiary hedge (bagged)}}
+|141
+|{{Coins|-{{GEP|Topiary hedge (bagged)}}}}
+|{{Coins|-({{GEP|Topiary hedge (bagged)}})/141}}
+|-
+|72
+|{{plinkt|Fancy hedge (bagged)}}
+|158
+|{{Coins|-{{GEP|Fancy hedge (bagged)}}}}
+|{{Coins|-({{GEP|Fancy hedge (bagged)}})/158}}
+|-
+|76
+|{{plinkt|Tall fancy hedge (bagged)}}
+|223
+|{{Coins|-{{GEP|Tall fancy hedge (bagged)}}}}
+|{{Coins|-({{GEP|Tall fancy hedge (bagged)}})/223}}
+|-
+|80
+|{{plinkt|Tall box hedge (bagged)}}
+|316
+|{{Coins|-{{GEP|Tall box hedge (bagged)}}}}
+|{{Coins|-({{GEP|Tall box hedge (bagged)}})/316}}
+|-
+|66
+|{{plinkt|Bagged flower}}
+|70
+|{{Coins|-{{GEP|Bagged flower}}}}
+|{{Coins|-({{GEP|Bagged flower}})/70}}
+|-
+|66
+|{{plinkt|Bagged sunflower}}
+|70
+|{{Coins|-{{GEP|Bagged sunflower}}}}
+|{{Coins|-({{GEP|Bagged sunflower}})/70}}
+|-
+|71
+|{{plinkt|Bagged daffodils}}
+|100
+|{{Coins|-{{GEP|Bagged daffodils}}}}
+|{{Coins|-({{GEP|Bagged daffodils}})/100}}
+|-
+|71
+|{{plinkt|Bagged marigolds}}
+|100
+|{{Coins|-{{GEP|Bagged marigolds}}}}
+|{{Coins|-({{GEP|Bagged marigolds}})/100}}
+|-
+|76
+|{{plinkt|Bagged bluebells}}
+|122
+|{{Coins|-{{GEP|Bagged bluebells}}}}
+|{{Coins|-({{GEP|Bagged bluebells}})/122}}
+|-
+|76
+|{{plinkt|Bagged roses}}
+|122
+|{{Coins|-{{GEP|Bagged roses}}}}
+|{{Coins|-({{GEP|Bagged roses}})/122}}
+|-
+|}

@@ -1,0 +1,88 @@
+===Levels 40–99: Blast Furnace gold bars===
+{{Equipment
+| align = right
+| head = Graceful hood
+| cape = Spottier cape
+| neck = 
+| ammo = 
+| weapon = 
+| torso = Graceful top
+| legs = Graceful legs
+| shield = 
+| gloves = Goldsmith gauntlets
+| boots = Boots of lightness
+| ring = Ring of endurance
+}}
+Smelting [[gold bar]]s at the [[Blast Furnace]] becomes the fastest viable training method at level 40. This method costs money, and it can be fairly expensive depending on the Grand Exchange prices.
+
+For optimal rates, players will need [[goldsmith gauntlets]] for more experience per [[gold ore]] (increased from 22.5 to 56.2) and [[ice gloves]] to quickly cool the bar dispenser. The goldsmith gauntlets require completion of [[Family Crest]], and the ice gloves level 50 Mining (boostable) and killing the [[Ice Queen]]. Use [[stamina potion]]s to restore run energy. If available, also wear [[weight-reducing clothing]] and the [[ring of endurance]] with at least 500 charges to reduce run energy consumption.
+
+To gain access to [[Keldagrim]], talk to the [[Dwarven Boatman]] inside the dungeon east of [[Rellekka]] to start [[The Giant Dwarf]]. Once the quest has been started, players can get to the Blast Furnace by using the [[Minigame Teleport]] there or using the minecart from the Grand Exchange to Keldagrim. Use one of the official Blast Furnace worlds where dwarf NPCs will keep the furnace running for 72,000 coins per hour. Below level 60, the [[Blast Furnace Foreman]] will require a payment every 10 minutes to be able to use the furnace.
+
+To start off, deposit an inventory of gold ore into the ore belt while wearing goldsmith gauntlets; this is done to fill the bar dispenser and ensure that, with sufficient speed, you will never have to wait for the bar dispenser to be full. After that, this method goes as follows:
+# Withdraw an inventory of gold ore at the bank chest and deposit it into the conveyor belt.
+# '''AFTER''' the gold bars smelt and you gain experience (ensuring the goldsmith gauntlet experience rate), equip the ice gloves and quickly run to the bar dispenser to grab the bars.
+# Deposit the gold bars at the bank and withdraw more gold ore.  Re-equip goldsmith gauntlets.
+# Withdraw a stamina potion dose and drink it on the way to the conveyor belt to restore run energy when needed.
+
+The experience rates and costs are shown in the table below. The experience rates can vary depending on performance. The costs include the hourly Blast Furnace fee and the profit from selling the gold bars, and assume using 40 stamina potion doses per hour.
+{{#vardefine:BFCost|{{#expr:72000+{{GEP|Stamina potion(4)|10}}}}}}
+{| class="wikitable align-left-1" style="text-align:right;"
+!Method
+!XP/h
+!GP/h
+!GP/XP
+!Ores needed<br>(40–99) 
+!Total profit<br>(40–99)
+|-
+|Goldsmith gauntlets
+|380,000
+|{{Coins|{{#expr:380000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}} round 0}}}}
+|{{Coins|(380000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/380000}}
+|231,267
+|{{Coins|{{#expr:(380000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/380000*12997207 round 0}}}}
+|-
+|No goldsmith gauntlets
+|164,000
+|{{Coins|{{#expr:164000/22.5*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}} round 0}}}}
+|{{Coins|(164000/22.5*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/164000}}
+|577,654
+|{{Coins|{{#expr:(164000/22.5*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/164000*12997207 round 0}}}}
+|-
+|[[Smithing cape]]
+|410,000
+|{{Coins|{{#expr:410000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}} round 0}}}}
+|{{Coins|(410000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/410000}}
+|{{NA}}
+|{{NA}}
+|}
+
+To speed up banking, you can either:  
+* lock the inventory slots where your goldsmith gauntlets or ice gloves are.
+OR 
+* clear the placeholders for goldsmith gauntlets and ice gloves, and fill the bank with [[bank filler]]s. This way, the player can quickly deposit the bars without depositing any necessary items.
+
+Additionally to both options, have gold ore and 1-dose stamina potions near the 'Deposit inventory' button.
+
+With fast and accurate clicks, players can minimise downtime with a technique called 0-tick banking. To do this, the player needs to deposit the bars, withdraw gold ore, and start running back to the conveyor belt on the same tick. The easiest way to start running back to the conveyor belt is to click through the chatbox on resizable client layout. Enable 'Transparent chatbox' and 'Click through transparent chatbox' in the settings. Consistent 0-tick banking will increase experience rates to 390,000 experience per hour, or 420,000 experience per hour when wearing the Smithing cape.
+
+Gold bars can be smelted faster at the Blast Furnace by using one or three runners. Instead of banking for the ores, have runners trade more gold ore in exchange for gold bars. Because this method is '''very expensive''', it is only recommended for wealthy players who wish to gain experience as fast as possible and do not mind spending a lot of money. This method also requires good coordination and accurate clicks, as the player will need to quickly accept trades and smelt bars at the furnace.
+
+The experience rates and costs are shown in the table below. The profit rates assume paying 7 million coins per hour per runner and paying for the gold ore.
+
+{| class="wikitable"
+!Method
+!XP/h
+!GP/XP
+|-
+|1 runner
+|530,000
+|{{Coins|(-7000000-72000-530000/56.2*{{GEP|Gold ore}})/530000}}
+|-
+|3 runners
+|680,000
+|{{Coins|(-7000000*3-72000-680000/56.2*{{GEP|Gold ore}})/680000}}
+|}
+'''NOTE:''' It is highly recommended to ensure you don't have any '''uncollected''' '''[[Gold bar|gold bars]]''' in the [[bar dispenser]] when smelting additional [[gold ore]], otherwise only a small portion of the experience is awarded when the ore finishes smelting; the remainder is granted upon collecting the bars, making it a lot more click-intensive to maintain high xp rates with the [[goldsmith gauntlets]]. 
+
+''To maintain maximum efficiency with extra bars in the dispenser, you need to have goldsmith gauntlets equipped for the initial partial XP drop, equip your ice gloves and click the bar dispenser to open the collection dialogue, then go back to hover over the goldsmith gauntlets, and confirm the dialogue (by pressing 1 or Space). Then re-equip the gauntlets '''before the next game tick''', when the remaining experience is applied.''

@@ -1,0 +1,53 @@
+{{External|rs=Nature altar}}
+{{otheruses|the Nature Altar mentioned in the [[Morytania Diary|Morytania Achievement Diary]]|Nature Grotto|def=no}}
+{{Infobox Scenery
+|name = Altar
+|image = [[File:Altar (nature).png|300px]]
+|release = [[29 March]] [[2004]]
+|update = RS2 Launched!
+|members = Yes
+|quest = No
+|location = North of [[Shilo Village (location)|Shilo Village]]
+|options = Craft-rune
+|examine = A mysterious power emanates from this shrine.
+|map = {{Map|mtype=pin|x = 2399|y = 4840|mapID=-1}}
+|id = 34768
+|leagueRegion = Karamja
+}}
+The '''Nature Altar''' is a [[runic altar]] upon which [[nature rune]]s are crafted from [[pure essence]], providing 9 [[Runecraft]] [[experience]] per essence imbued. Level 44 [[Runecraft]] is required to craft nature runes.
+
+Players may create a [[nature tiara]] here by using either a [[nature talisman]] or a [[tiara]] on the altar whilst having both in their inventory, granting 45 [[Runecraft]] [[experience]]. A [[catalytic tiara]] can also be created here by using a [[catalytic talisman]] and [[gold tiara]], granting 42.5 Runecraft experience.
+
+Upon entering the Nature Altar, the [[music]] track [[Understanding]] plays.
+
+==Transportation==
+{{Map|name=Nature Altar|align=left|mtype=pin|x = 2868|y = 3018|height = 275|width = 275|caption = The location of the mysterious ruins used to enter the Nature Altar.}}
+The entrance to the altar can be found north of [[Shilo Village (location)|Shilo Village]]; players can teleport close by via [[Fairy rings|fairy ring]] code {{fairycode|ckr}} or using the [[Achievement diary cape]] teleport to [[Kaleb Paramaya]] along with the [[Rocks (Shilo Village)|rocks]] shortcut requiring 79 [[Agility]]. The altar can also be accessed through the [[Abyss]].
+
+To enter the [[Mysterious ruins#Nature|mysterious ruins]], players either have to use a [[nature talisman]] on the ruins, or click "Enter" on the ruins while wearing a [[nature tiara]]. Alternatively, a [[catalytic talisman]] or [[catalytic tiara|tiara]] can be used.
+{{Clear}}
+==Experience==
+The maximum likely limit for crafting nature runes in one visit is 134. This would be achieved by having 91 Runecraft, giving a 2x bonus, and carrying 67 essence to craft (27 in the normal inventory along with 40 in the [[colossal pouch]]). The maximum possible experience is 603 obtained while doing the above with pure essence. It will give 904.5 experience with [[daeyalt essence]].
+
+==Products==
+{{Uses facility list|Nature Altar, Catalytic runic altar}}
+
+==Changes==
+
+{{Subject changes header}}
+{{Subject changes
+|date = 23 March 2022
+|update = Guardians of the Rift Launch
+|poll = Old School Content Poll 76: Game Improvements
+|change = The pre-existing delay after using Essence on Runecraft Altars has been removed.
+}}
+{{Subject changes footer}}
+
+==Gallery==
+<gallery mode="packed" heights="150">
+Nature Altar outside.png|The entrance to the Nature Altar.
+Nature Altar inside.png|The inside of the Nature Altar.
+</gallery>
+
+{{Runecraft}}
+[[Category:Karamja]]

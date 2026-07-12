@@ -1,0 +1,7 @@
+===Finishing up===
+{{Checklist|
+*Return to Cairn Isle (fairy ring {{Fairycode|ckr}}).
+*Go through the well-stacked rocks.
+*Use the corpse on the dolmen.
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,69 @@
+==Locations==
+Tanners can be found in the following locations, marked with the "Tanner" icon ([[File:Tannery icon.png]]).
+
+{| class="wikitable sortable"
+!Name
+!Location
+!Members
+!Bank distance
+!Notes
+!Maplink
+!League Region
+|-
+|[[Ellis]] 
+|[[Al Kharid]]
+|{{Members|no}}
+|29-35
+|Both the [[ring of dueling]] and the [[amulet of glory]] can be used to teleport to Al Kharid, and Ellis is near a bank.
+|{{Map|name=Ellis|3274,3192|rectX=9|rectY=7|mtype=rectangle|type=maplink}}
+|{{LeagueRegion|Desert}}
+|-
+|[[Tanner (Crafting Guild)|Tanner]]
+|[[Crafting Guild]] {{FloorNumber|uk=1}}
+|{{Members|no}}
+|4-10 (hard [[Falador Diary]] or 99 [[Crafting]])<br/>
+106-112 (otherwise)
+|Requires {{SCP|Crafting|40|link=yes}}.
+|{{Map|name=Tanner (Crafting Guild)|2933,3285|plane=1|r=5|mtype=square|type=maplink}}
+||{{LeagueRegion|Asgarnia}}
+|-
+|[[Leatherworker]]
+|[[Ranging Guild]]
+|{{Members|yes}}
+|106 ([[Seers' Village]])
+|Requires {{SCP|Ranged|40|link=yes}}, and does not have a right-click option to open the shop interface.
+|{{Map|name=Leatherworker|2677,3433|r=4|mtype=square|type=maplink}}
+|{{LeagueRegion|Kandarin}}
+|-
+|[[Sbott]]
+|[[Canifis]]
+|{{Members|yes}}
+|25-32
+|He charges higher prices for tanning, a bit over twice what other tanners charge.
+|{{Map|name=Sbott|3488,3500|r=4|mtype=square|type=maplink}}
+|{{LeagueRegion|Morytania}}
+|-
+|[[Eodan]]
+|Crypt of the Moon ([[Forthos Dungeon]])
+|{{Members|yes}}
+|~108 (assuming shortcuts are unlocked)
+|He tans hides at a higher cost than other tanners, but this can be reduced by completing parts of the [[Kourend & Kebos Diary]]. This tanner's main purpose is to tan [[Dragonhide|dragonhides]] for players killing the [[Red dragon|red dragons]] in the dungeon, and it is not recommended to use him for regular purposes.
+|{{Map|name=Eodan|1810,9951|mapID=32|r=3|mtype=square|type=maplink}}
+|{{LeagueRegion|Kourend}}
+|-
+|[[Mary (Getting Ahead)|Mary]]
+|[[Kebos Lowlands]]
+|{{Members|yes}}
+|63-69
+|Requires the completion of [[Getting Ahead]] to use.
+|{{Map|name=Mary (Getting Ahead)|1239,3680|r=3|mtype=square|type=maplink}}
+|{{LeagueRegion|Kourend}}
+|-
+|[[Chouani]]
+|[[Auburnvale]]
+|{{Members|yes}}
+|44-48
+|Requires the completion of [[Children of the Sun]] to use.  Her tanning prices are the same as [[Sbott]]'s.
+|{{Map|name=Chouani|mtype=polygon|1372,3362|1372,3363|1371,3364|1370,3364|1366,3360|1366,3359|1370,3355|1371,3355|1375,3359|1375,3360|1374,3361|1373,3361|type=maplink}}
+|{{LeagueRegion|Varlamore}}
+|}

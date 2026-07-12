@@ -1,0 +1,14 @@
+====Karamja key piece====
+{{Map|mtype=square|r=12|2946,2900|align=right|width=300|height=300|caption=Karamjan Temple entrance.|zoom=0}}
+'''Items required:''' ''[[Food]] to survive traps, [[prayer potion]]s to keep prayer on for long amounts of time, [[Machete]], any [[axe]]'' '''Note:''' Players with 79 [[Agility]] (boostable) can access a vine [[shortcut]] into the [[Kharazi Jungle]] without needing an axe or machete''.'' '''Recommended:''' ''Bring plenty of food and stamina potions as well as at least one prayer potion! Take the [[gnome glider]] to Karamja or bring {{coins|200}} for the [[Brimhaven]] cart ride. You can also teleport to the Gem Mine beneath Shilo Village using [[Karamja Gloves 3]] or 4.''
+{{Checklist|
+*Head to the south-eastern coast of the Kharazi Jungle and down the staircase into the maze. '''Turn off [[Auto Retaliate]]'''.
+*Navigate to the centre of the maze and take the key piece.
+**Avoid spikes and traps with thieving and agility.
+**Use protection prayers to protect from the golems' attacks.
+***Red: Melee
+***Green: Ranged
+***Blue: Magic
+*Once you have taken the [[Dragon key piece]], the plinth can be used to transport you out.
+}}
+[[File:Dragon Slayer II - Karamjan Temple maze route.png|thumb|center|300px|The route to the centre of the temple's maze. This map is flipped, making the top part south, and bottom part north.]]

@@ -1,0 +1,10 @@
+==Walkthrough==
+{{Checklist|*Talk to the [[Mage of Zamorak]] in level 4-7 [[Wilderness]] near the river (Cannot be wearing a non-Zamorak God item).
+*Talk to the [[Mage of Zamorak]] in the [[Varrock#Altars of Zamorak|Altar of Zamorak]] in south-eastern [[Varrock]]. {{Chat option|2Where do you get your runes from?|1Yes}} (Note: If you have started (but not completed) the quest [[Wanted!]], you'll be given an additional dialogue option at the beginning where you will have to select what to discuss with the Mage. {{Chat option|1Runecrafting}}) Be sure to have a free inventory space for the scrying orb!
+*Go to the nearby runeshop and teleport to [[rune essence mine]]. ([[Aubury]])
+*Go to the bottom floor of [[Wizards' Tower]] (fairy ring {{Fairycode|dis}}) and teleport to [[rune essence mine]]. ([[Archmage Sedridor]])
+*Go to north-eastern [[Ardougne]] and teleport to [[rune essence mine]]. ([[Wizard Cromperty]])
+*Talk to the [[Mage of Zamorak]] in the [[Chaos Temple]] in south-eastern [[Varrock]].
+*Talk to him again to complete the miniquest.
+*Talk to him again about the dangers of the Abyss. {{Chat option|1So what is this 'abyss' stuff?}}
+*'''Congratulations, miniquest complete!'''}}

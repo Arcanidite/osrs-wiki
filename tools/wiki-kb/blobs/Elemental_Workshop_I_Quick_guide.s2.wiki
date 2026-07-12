@@ -1,0 +1,38 @@
+==Walkthrough==
+===Getting Started===
+{{Checklist|
+*In [[Seers' Village]], go to the house immediately south of the anvil.
+*Search the [[bookcase (Elemental Workshop I)|bookcase]] on the eastern wall to find a [[battered book]].
+*Read the book, then use a [[knife]] on it to get a [[Battered key]].
+** There is a knife spawn in the house north of the church if you forgot to bring one.
+**'''Note:''' You'll need the book later, so don't get rid of it.
+*Go to the building with anvil and open the Odd looking wall in the north (with the key in inventory).
+*Go down the stairs.
+}}
+
+===Repairing the Workshop===
+{{Checklist|
+*Go into the room to the north.
+*Turn the water controls east of the water wheel.
+*Turn the water controls west of the water wheel.
+*Pull the lever by the water wheel.
+*(Optional) Kill one of each of the Elemental to complete Kandarin Easy Task. For the Earth Elemental, you must defeat one of the actual Elementals walking around; the rock that turns into the Elemental won't count towards the requirement.
+*(Optional) To obtain [[leather]], search a [[Crate (Elemental Workshop I, leather)|crate]] north of the staircase in the middle room.
+*(Optional) To obtain a [[needle]], search the [[Crate (Elemental Workshop I, needle)|two stacked crates]] on the left as you enter the west room.
+*Go to the eastern room.
+*With a [[needle]], [[thread]], and [[leather]], fix the bellows.
+*Pull the lever by the bellows.
+*Go to the middle room and search the [[Boxes (Elemental Workshop)|boxes]] in the north-east to get [[a stone bowl]].
+*Go to the south room.
+*Use a stone bowl on the lava trough to the south.
+*Use the bowl of lava on the [[Furnace]] in the room.
+}}
+
+===Finishing up===
+{{Checklist|
+*Go to the western room and mine an [[elemental rock]].
+*Kill the [[Earth elemental]] and pick up the [[elemental ore]] it drops (get 2 more ores if you are planning to do [[Elemental Workshop II/Quick guide|Elemental Workshop II]]).
+*Use the elemental ore and four [[coal]] on the furnace in the southern room. You will get an [[Elemental metal]].
+*With the [[slashed book]], go to the middle room and smith an [[elemental shield]] by using the [[Elemental Bar|elemental metal]] on the workbench.
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,12 @@
+===The final battle===
+{{Checklist|
+{{Instance}}
+*Follow the passage north and enter the crevice at the end of the passage
+*Kill the [[Giant Sea Snake]]. Use protect from ranged prayer and attack at a distance (magic preferred).
+*Take the heavy box.
+*Leave the crevice of the boss room and climb up the rope for a shortcut back to Etceteria castle.
+*Talk to Queen Sigrid to receive a letter and 20000 gold. (You need two free inventory slots.)
+*Talk to King Vargas.
+}}
+
+Congratulations, quest complete!

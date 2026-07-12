@@ -1,0 +1,26 @@
+===Helping the fallen man===
+'''''Items required:''' 3 Kinds of [[food]], 6-7 of each, Seal of Passage.''
+{{Checklist|
+*Travel to [[Lunar Isle]].
+*Enter the mine in the north-east area of Lunar Isle.
+*Crawl through the cave entrance ({{SCP|Quest}} Quest minimap icon).
+*Talk to the fallen man, follow the dialogue and close the interface when it appears.
+*Feed him '''4''' food, starting with one you have seven of, while cycling through your different foods. '''Avoid using the same food twice in a row'''.
+*Talk to him again. {{Chat option|1Just don't worry.|1Of course.}}
+*Feed him '''4''' more food as before.
+*Talk to him and keep reassuring him with positive responses until he sits up (cutscene).
+*Feed him '''6''' more food.
+*Talk again multiple times using positive responses until he stands up (cutscene), and once more after he stands up.
+*Talk to [['Bird's-Eye' Jack]] in the bank. {{Chat option|2Cyrisus in the mine}}
+*Select the following equipment (if your combat level is determined by your '''melee''' skills):
+**[[Dragon med helm]]
+**[[Abyssal whip]]
+**[[Ahrim's robetop]]
+**[[Ahrim's robeskirt]]
+**[[Ranger boots]] 
+Use NPC Contact spell to make sure you get the right things for him.
+If your combat level is determined by your''' magic level, ''' use robin hood hat, dragon chainbody, black d'hide chaps, infinity boots and ancient staff. For ''' ranged ''' use splitbark helm, Karil's leathertop, Torag's platelegs, adamant boots and magic shortbow.
+*Return and talk to Cyrisus for a cutscene. {{Chat option|1Talk about the Armament}}
+*Use food on him until his health is at 100%. 
+*Talk to him again multiple times, giving positive responses until you receive a cutscene. If you don't receive it, feed him a couple more times.
+}}

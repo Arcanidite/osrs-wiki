@@ -1,0 +1,71 @@
+==Walkthrough==
+===Starting out===
+[[File:Eadgar's Ruse - Quest map.png|thumb|201px|Use one of these routes to get to Mad Eadgar's Cave. Using fairy rings and the eastern agility shortcuts result in the shortest travel time.]]
+
+''('''Required items: '''Vodka, Pineapple chunks, Climbing boots)''
+''('''Recommended items:''' Ardougne Teleport tablet or runes, prayer potions, food, armour, and a Dramen Staff, slayer ring, games necklace, or combat bracelet to get to Eadgar's Cave quickly)''
+{{Checklist|*Talk to [[Sanfew]] (top floor of the Taverley herblore store) {{Chat option|1Have you any more work for me, to help reclaim the circle?|1I'll do it.}}, or {{Chat option|2Ask general questions.|1Have you any more work for me, to help reclaim the circle?|1I'll do it.}} if you have completed [[Zogre Flesh Eaters]]).}}
+
+'''''Burthorpe Route'''''
+{{Checklist|*Climb to the top of Trollheim, using the agility shortcuts if you can to save time, and enter Eadgar's Cave (see map for path alternatives).
+*If you have not yet freed [[Eadgar]] in the troll stronghold's prison, pickpocket (30+ {{SCP|Thieving}}) or kill [[Berry]] the northern sleeping troll guard and use the [[cell key 2]] on Eadgar's cell. Check your '''Troll Stronghold''' quest log and there will be a line that will either say "I've rescued Godric" or "I've rescued Godric and Mad Eadgar" to make sure.
+*Speak with Eadgar in his cave. {{Chat option|1I need to find some goutweed.}}
+*Go to Burntmeat's Kitchen, which is at the south end of the middle floor of the stronghold.
+*Talk to [[Burntmeat]].
+*Return to Eadgar and speak with him.}}'''''Secret Door through Rellekka Route'''''{{Checklist|*For the secret door path, [[Slayer ring]] teleport to the Fremennik Slayer Dungeon or use the Fairy ring with (code {{fairycode|AJR}}) to teleport outside the Dungeon entrance.
+*Head north-east to a narrow passage, climb over the rocks, and go through the secret entrance to the north.
+**If you have not yet freed [[Eadgar]] in the troll stronghold's prison, pickpocket (30+ {{SCP|Thieving}}) or kill [[Berry]] the northern sleeping troll guard and use the [[cell key 2]] on Eagdar's cell. Check your '''Troll Stronghold''' quest log and there will be a line that will either say "I've rescued Godric" or "I've rescued Godric and Mad Eadgar" to make sure.
+*Head to Burntmeat's Kitchen, which is at the south end of the middle floor of the stronghold.
+*Talk to [[Burntmeat]].
+*Go speak with Eadgar, whose cave is at the top of Trollheim.
+}}
+
+===The parrot===
+'''''Required items: '''vodka, pineapple chunks''{{Checklist|*Travel to [[Ardougne Zoo]], talk to [[Parroty Pete]] and ask him both questions. {{Chat option|2When did you add it?|3What do you feed them?}}
+*Use vodka ('''right click it to avoid accidentally drinking it''') on the pineapple chunks.
+*Use [[alco-chunks]] on the aviary hatch (west side of parrot cage).
+*'''Do not drop the parrot or it will fly away and you will need to retrieve it from Eadgar'''.
+*Talk to Eadgar in his cave at Trollheim about making the fake human.
+*Go back to the Troll Stronghold. ''You may skip this and use the parrot on your way back to Eadgar in the next section if using the agility way.''
+*Run north and go down both flights of stairs.
+*Use the parrot on the rack north of the cells.}}
+
+===Making the "human"===
+''('''Required items: ''Climbing Boots, Tinderbox, Pestle and Mortar, 2 logs, 5 raw chicken, 10 grain, Ranarr potion (unf). Chicken, grain, 1 log and dirty robe can be handed in to Eadgar separately.)''
+{{Checklist|
+*Talk to [[Tegid]] in [[Taverley]] south-east of the Herblore store for a dirty robe. {{Chat option|2Sanfew won't be happy...}}
+**Pick up 10 [[Grain]] just south-west of Tegid if you need them. 
+**Kill 5 chickens on the way at [[Tenzing]]'s house if you need [[Raw chicken]].
+*Pick a [[Troll thistle|thistle]] in one of the grass patches near Eadgar's cave entrance. It is very small and coloured the same as the grass. Zoom in close on each patch to find a green flower around the patch of grass. It can be hard to see. Note that it only spawns in one of the patches of grass at a time.
+*Enter Eadgar's cave and talk to Eadgar.
+*Light a fire with your other log and cook the thistle on it to make a [[dried thistle]]. (You may also use one of the fires near the trolls to the west.)
+*Use the pestle and mortar on the dried thistle and add it to a ranarr potion (unf).
+*Talk to Eadgar.
+*Retrieve your parrot from the rack in the troll stronghold.
+*Talk to Eadgar.
+*Give the [[fake man]] to Burntmeat.
+*Search the kitchen drawers by the south wall to obtain a [[storeroom key]].
+}}
+
+===Getting the goutweed===
+[[File:Eadgar's Ruse - Goutweed map.png|thumb|250px]]
+{{Checklist|
+*Go down the nearby stairs inside the kitchen to the storeroom.
+*Sneak to the back and take goutweed. Note:
+
+Run to the tile next to the goutweed; clicking on the goutweed to move to it will get you stuck on the guard.
+
+You will take 0-6 damage if caught during the puzzle.
+
+::'''It is highly recommended you take 2 extra goutweed for Dream Mentor and Dragon Slayer II.''' You can only get one Goutweed per trip.
+
+If you stand on the same tile as the door (where you end up when you select -Open Door-) and -search- the Goutweed Crate just before the two Guards meet right below (south of) the door you can run straight through, depending on how the trolls are synced, which can be slightly off on some worlds. 
+
+::Another method is to start on the door tile like before and -search- Goutweed, just as the darker troll with a shield (slightly south-west of the door tile) makes its turn on the south-eastern corner of its square route (if you fail, remember which troll hit you and gauge the timing during your next try. 
+
+If you can't make it all the way in one go, use this same method of standing in the doorway & timing your run to the final hiding spot, tile just east of the goutweed crates.
+
+*Return the goutweed to Sanfew. {{Chat option|2}}
+*'''Congratulations, quest complete!'''
+}}
+{{Clear}}

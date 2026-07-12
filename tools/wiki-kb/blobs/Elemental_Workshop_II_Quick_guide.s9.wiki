@@ -1,0 +1,51 @@
+===Operating the machine===
+====The crane====
+
+{{Checklist|
+* On the south side place an elemental bar on the jig cart. (under the elemental claw)
+**'''''Note:''''' Crane controls in case you get stuck:
+**Raise/Lower crane: '''western lever'''
+**Rotate crane: '''eastern lever'''
+**
+*First, use the western lever (by the schematics crate) to raise the crane.
+*Use the eastern lever to rotate the crane.
+*Use the western lever twice to lower the crane into the lava and back up again.
+**'''At this point the elemental bar should be orange.'''
+*Use the eastern lever to rotate the crane over the cart.
+*Use the western lever twice to lower the bar onto the cart and release it.
+*Pull the lever just north of the claw controls to move the cart.
+**'''Note: The lever in front of the yellow sign moves the cart to the next station.'''
+}}
+
+====The press====
+
+{{Checklist|
+*Pull the western-most lever - in front of the press station - to flatten the bar once the cart has stopped.
+**'''''Note:''''' At this point the elemental bar should be flattened.
+*Pull the yellow sign lever again to move the cart to the next station.
+}}
+
+====The water tank====
+
+{{Checklist|
+*Pull the northern-most lever.
+*Turn the corkscrew lever twice.
+*Pull the northern-most lever again.
+*Turn the west water valve twice so that the valve opens and closes. The tank will fill.
+*Turn the east water valve twice so that the valve opens and closes. The tank will empty.
+*Pull the northern-most lever.
+**'''Note:''' At this point the elemental bar should be blue.
+*Turn the corkscrew lever twice.
+*Pull the northern-most lever to close the door.
+*Pull the yellow sign lever again.
+}}
+
+====Drying====
+
+{{Checklist|
+*Pull the east lever 
+**'''At this point the elemental bar should be white.'''
+**'''''Note:''''' The machine may need to be turned off and back on again for the bar to turn white.
+*Pull the east lever again to stop the fan.
+*Pull the yellow sign lever again.
+}}

@@ -1,0 +1,55 @@
+===Levels 48–99: Smithing armour===
+Smithing armour at an anvil is only recommended for account builds that cannot get [[goldsmith gauntlets]]. Depending on the Grand Exchange prices, adamant platebodies can be a viable alternative to smelting gold bars at the Blast Furnace as they offer relatively fast experience rates. Smith the highest-tier platebody available, starting from steel platebodies at level 48, moving to mithril at level 68 and then to adamant at level 88. From level 66 to 68, players can smith mithril platelegs or plateskirts as a slightly slower but cheaper alternative to steel platebodies.
+
+Due to low buy limits, some [[High Level Alchemy]] focused clan chats (commonly found in Varrock west bank of world 308) may offer to buy in bulk for a better rate than the Grand Exchange price, benefiting both seller and buyer. This can lower the loss from making low-level armour, and potentially make Smithing a profitable activity doing adamant platebodies to level 99.
+
+{| class="wikitable align-center-1 align-center-2"
+!Levels
+!colspan="2" | Item
+!XP/Hour
+!Profit/Hour
+!Profit/XP
+!Profit (HA)/Hour
+!Profit (HA)/XP
+|-
+|48–68
+|{{plinkt|Steel platebody}}
+|144,000
+|{{Coins|((({{GEPT|Steel platebody}} - {{GEP|Steel bar|5}})/187.5)*156200)}}
+|{{Coins|({{GEPT|Steel platebody}} - {{GEP|Steel bar|5}})/187.5}}
+|{{Coins|((({{HA|Steel platebody}} - {{GEP|Steel bar|5}} - {{GEP|Nature rune|1}})/187.5)*156200)}}
+|{{Coins|({{HA|Steel platebody}} - {{GEP|Steel bar|5}} - {{GEP|Nature rune|1}})/187.5}}
+|-
+|66–68
+|{{plinkt|Mithril platelegs}}
+|140,000
+|{{Coins|((({{GEPT|Mithril platelegs}} - {{GEP|Mithril bar|3}})/150)*144600)}}
+|{{Coins|({{GEPT|Mithril platelegs}} - {{GEP|Mithril bar|3}})/150}}
+|{{Coins|((({{HA|Mithril platelegs}} - {{GEP|Mithril bar|3}} - {{GEP|Nature rune|1}})/150)*144600)}}
+|{{Coins|({{HA|Mithril platelegs}} - {{GEP|Mithril bar|3}} - {{GEP|Nature rune|1}})/150}}
+|-
+|66–68
+|{{plinkt|Mithril plateskirt}}
+|140,000
+|{{Coins|((({{GEPT|Mithril plateskirt}} - {{GEP|Mithril bar|3}})/150)*144600)}}
+|{{Coins|({{GEPT|Mithril plateskirt}} - {{GEP|Mithril bar|3}})/150}}
+|{{Coins|((({{HA|Mithril plateskirt}} - {{GEP|Mithril bar|3}} - {{GEP|Nature rune|1}})/150)*144600)}}
+|{{Coins|({{HA|Mithril plateskirt}} - {{GEP|Mithril bar|3}} - {{GEP|Nature rune|1}})/150}}
+|-
+|68–88
+|{{plinkt|Mithril platebody}}
+|200,000
+|{{Coins|((({{GEPT|Mithril platebody}} - {{GEP|Mithril bar|5}})/250)*208300)}}
+|{{Coins|({{GEPT|Mithril platebody}} - {{GEP|Mithril bar|5}})/250}}
+|{{Coins|((({{HA|Mithril platebody}} - {{GEP|Mithril bar|5}} - {{GEP|Nature rune|1}})/250)*208300)}}
+|{{Coins|({{HA|Mithril platebody}} - {{GEP|Mithril bar|5}} - {{GEP|Nature rune|1}})/250}}
+|-
+|88–99
+|{{plinkt|Adamant platebody}}
+|240,000<br/>300,000<ref group="n">[[Experience]] per hour only obtainable wearing the [[Smiths' Uniform]] at the anvil in [[Prifddinas]]. When maintaining max efficiency: 1 tick banking, using a bar on the anvil and clicking the banker instead of the booth >310,000/h is obtainable.</ref>
+|{{Coins|((({{GEPT|Adamant platebody}} - {{GEP|Adamantite bar|5}})/312.5)*260400)}}<br/>{{Coins|((({{GEPT|Adamant platebody}} - {{GEP|Adamantite bar|5}})/312.5)*310000)}}
+|{{Coins|({{GEPT|Adamant platebody}} - {{GEP|Adamantite bar|5}})/312.5}}
+|{{Coins|((({{HA|Adamant platebody}} - {{GEP|Adamantite bar|5}} - {{GEP|Nature rune|1}})/312.5)*260400)}}<br/>{{Coins|((({{HA|Adamant platebody}} - {{GEP|Adamantite bar|5}} - {{GEP|Nature rune|1}})/312.5)*310000)}}
+|{{Coins|({{HA|Adamant platebody}} - {{GEP|Adamantite bar|5}} - {{GEP|Nature rune|1}})/312.5}}
+|}
+<references group="n" />

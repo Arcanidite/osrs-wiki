@@ -1,0 +1,92 @@
+===Levels 1–33: Starting off===
+The table below shows the furniture and materials needed to reach level 33. Be sure to bring a saw and a hammer in order to make furniture.
+
+Regular planks require using nails. Use [[steel nails]] or better, as lower-tier nails bend more often. Start using oak planks at level 15, as they are faster to use than regular planks as they do not require using nails.
+
+{| class="wikitable"
+!Levels
+!XP needed
+!colspan=2|Object
+!Room
+!Materials required (each)
+!XP each
+!# for goal
+!Materials required (total)
+!Money spent
+|-
+|1–4
+|276
+|{{ilinkt|Crude wooden chair}}
+|[[Parlour]]
+|2 {{plink|Plank}}, at least 2 {{plink|Steel nails}}
+|{{SCP|Construction}}58
+|{{plinkp|Crude wooden chair|pic=Crude wooden chair icon}} 5
+|10 {{plink|Plank}}, ~20 {{plink|Steel nails}}
+|{{Coins|-{{GEP|Plank|20}}-{{GEP|Steel nails|40}}}}
+|-
+|4–9
+|693
+|{{ilinkt|Wooden bookcase}}
+|[[Parlour]]
+|4 {{plink|Plank}}, at least 4 {{plink|Steel nails}}
+|{{SCP|Construction}}115
+|{{plinkp|Wooden bookcase|pic=Wooden bookcase icon}} 7
+|28 {{plink|Plank}}, ~56 {{plink|Steel nails}}
+|{{Coins|-{{GEP|Plank|28}}-{{GEP|Steel nails|58}}}}
+|-
+|9–15
+|1,442
+|{{ilinkt|Wooden larder}}
+|[[Kitchen]]
+|8 {{plink|Plank}}, at least 8 {{plink|Steel nails}}
+|{{SCP|Construction}}228
+|{{plinkp|Wooden larder|pic=Wooden larder icon}} 7
+|56 {{plink|Plank}}, ~112 {{plink|Steel nails}}
+|{{Coins|-{{GEP|Plank|56}}-{{GEP|Steel nails|58}}}}
+|-
+|15–16
+|335
+|{{ilinkt|Repair bench}}
+|[[Workshop]]
+|2 {{plink|Oak plank}}
+|{{SCP|Construction}}120
+|{{plinkp|Repair bench|pic=Repair bench icon}} 3
+|6 {{plink|Oak plank}}
+|{{Coins|-{{GEP|Oak plank|6}}}}
+|-
+|16–22
+|2,878
+|{{ilinkt|Crafting table 1}}
+|[[Workshop]]
+|4 {{plink|Oak plank}}
+|{{SCP|Construction}}240
+|{{plinkp|Crafting table 1|pic=Crafting table 1 icon}} 12
+|48 {{plink|Oak plank}}
+|{{Coins|-{{GEP|Oak plank|48}}}}
+|-
+|22–31
+|9,209
+|{{ilinkt|Oak dining table}}
+|[[Dining room]]
+|4 {{plink|Oak plank}}
+|{{SCP|Construction}}240
+|{{plinkp|Oak dining table|pic=Oak dining table icon}} 39
+|156 {{plink|Oak plank}}
+|{{Coins|-{{GEP|Oak plank|156}}}}
+|-
+|31–33
+|3,414
+|{{ilinkt|Carved oak table}}
+|[[Dining room]]
+|6 {{plink|Oak plank}}
+|{{SCP|Construction|360}}
+|{{plinkp|Carved oak table|pic=Carved oak table icon}} 10
+|60 {{plink|Oak plank}}
+|{{Coins|-{{GEP|Oak plank|60}}}}
+|-
+!1–33
+!18,247
+!{{NA||colspan=6}}
+!94 {{plink|Plank}}, 270 {{plink|Oak plank}},<br/> and ~188 {{plink|Steel nails}}
+!{{Coins|-({{GEP|Oak plank|270}}+{{GEP|Plank|94}}+{{GEP|Steel nails|188}})}} 
+|}

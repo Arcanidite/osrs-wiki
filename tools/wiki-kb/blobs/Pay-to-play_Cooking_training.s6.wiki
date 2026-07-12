@@ -1,0 +1,114 @@
+===Levels 10–99: Bake Pie===
+''Completion of the quest [[Lunar Diplomacy]] is required to cast [[Bake Pie]].''
+
+Baking pies using the [[Bake Pie]] spell offers relatively fast experience at a low amount of effort. It also offers passive [[Magic]] experience, which can be useful for some players. This method can be expensive due to the low supply of uncooked pies, however. Some options may also not be viable due to low trading volumes.
+
+Bake Pie is cast at a rate of once per 3 [[ticks]] instead of the 4 ticks on a range, yielding 33.33% faster cooking speeds. Additionally, the pies never burn. An inventory of 27 pies takes 81 ticks (48.6 seconds) to cook. 
+
+The experience rates in the table below assume players bake 1,885 pies per hour, which would also give 113,100 passive Magic experience per hour. The costs assume the player is wearing items that provide unlimited water and fire runes, such as a [[steam battlestaff]].
+
+{|class="wikitable sortable"
+!{{SCP|Cooking}} level
+!colspan="2"|Item
+!{{SCP|Cooking}} XP each
+!XP/h
+!Supply cost each
+!Profit each
+!Profit/XP
+|-
+|10
+|{{plinkt|Redberry pie}}
+|78
+|147,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked berry pie}}}}
+|{{Coins|{{GEPT|Redberry pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked berry pie}}}}
+|{{Coins|({{GEPT|Redberry pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked berry pie}})/78}}
+|-
+|20
+|{{plinkt|Meat pie}}
+|110
+|207,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked meat pie}}}}
+|{{Coins|{{GEPT|Meat pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked meat pie}}}}
+|{{Coins|({{GEPT|Meat pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked meat pie}})/110}}
+|-
+|29
+|{{plinkt|Mud pie}}
+|128
+|241,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw mud pie}}}}
+|{{Coins|{{GEPT|Mud pie}}-{{GEP|Astral rune}}-{{GEP|Raw mud pie}}}}
+|{{Coins|({{GEPT|Mud pie}}-{{GEP|Astral rune}}-{{GEP|Raw mud pie}})/128}}
+|-
+|30
+|{{plinkt|Apple pie}}
+|130
+|245,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked apple pie}}}}
+|{{Coins|{{GEPT|Apple pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked apple pie}}}}
+|{{Coins|({{GEPT|Apple pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked apple pie}})/130}}
+|-
+|34
+|{{plinkt|Garden pie}}
+|138
+|260,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw garden pie}}}}
+|{{Coins|{{GEPT|Garden pie}}-{{GEP|Astral rune}}-{{GEP|Raw garden pie}}}}
+|{{Coins|({{GEPT|Garden pie}}-{{GEP|Astral rune}}-{{GEP|Raw garden pie}})/138}}
+|-
+|47
+|{{plinkt|Fish pie}}
+|164
+|309,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw fish pie}}}}
+|{{Coins|{{GEPT|Fish pie}}-{{GEP|Astral rune}}-{{GEP|Raw fish pie}}}}
+|{{Coins|({{GEPT|Fish pie}}-{{GEP|Astral rune}}-{{GEP|Raw fish pie}})/164}}
+|-
+|52
+|{{plinkt|Botanical pie}}
+|180
+|339,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked botanical pie}}}}
+|{{Coins|{{GEPT|Botanical pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked botanical pie}}}}
+|{{Coins|({{GEPT|Botanical pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked botanical pie}})/180}}
+|-
+|60
+|{{plinkt|Mushroom pie}}
+|200
+|377,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked mushroom pie}}}}
+|{{Coins|{{GEPT|Mushroom pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked mushroom pie}}}}
+|{{Coins|({{GEPT|Mushroom pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked mushroom pie}})/200}}
+|-
+|70
+|{{plinkt|Admiral pie}}
+|210
+|396,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw admiral pie}}}}
+|{{Coins|{{GEPT|Admiral pie}}-{{GEP|Astral rune}}-{{GEP|Raw admiral pie}}}}
+|{{Coins|({{GEPT|Admiral pie}}-{{GEP|Astral rune}}-{{GEP|Raw admiral pie}})/210}}
+|-
+|73
+|{{plinkt|Dragonfruit pie}}
+|220
+|415,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked dragonfruit pie}}}}
+|{{Coins|{{GEPT|Dragonfruit pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked dragonfruit pie}}}}
+|{{Coins|({{GEPT|Dragonfruit pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked dragonfruit pie}})/220}}
+|-
+|85
+|{{plinkt|Wild pie}}
+|240
+|452,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw wild pie}}}}
+|{{Coins|{{GEPT|Wild pie}}-{{GEP|Astral rune}}-{{GEP|Raw wild pie}}}}
+|{{Coins|({{GEPT|Wild pie}}-{{GEP|Astral rune}}-{{GEP|Raw wild pie}})/240}}
+|-
+|95
+|{{plinkt|Summer pie}}
+|260
+|490,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw summer pie}}}}
+|{{Coins|{{GEPT|Summer pie}}-{{GEP|Astral rune}}-{{GEP|Raw summer pie}}}}
+|{{Coins|({{GEPT|Summer pie}}-{{GEP|Astral rune}}-{{GEP|Raw summer pie}})/260}}
+|}

@@ -1,0 +1,82 @@
+{{External|rs}}
+{{Infobox Item
+|name = Guam seed
+|image = [[File:Guam seed 1.png]] [[File:Guam seed 2.png]] [[File:Guam seed 3.png]] [[File:Guam seed 4.png]] [[File:Guam seed 5.png]]
+|release = [[6 June]] [[2005]]
+|update = Seeds, Bankspace And Advisors
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Drop
+|examine = A guam seed - plant in a herb patch.
+|value = 1
+|weight = 0.000
+|exchange = Yes
+|id = 5291
+}}
+[[File:Herb seed detail.png|left|140px]]
+'''Guam seeds''' can be planted in a [[herb patch]] at level 9 [[Farming]] to yield [[Grimy guam leaf|grimy guam leaves]], which, when [[Herb#Cleaning grimy herbs|cleaned]], are used in [[Herblore]] to make [[potions]].
+
+Nearby [[Group of Advanced Gardeners|gardeners]] will '''not''' watch over herb patches, nor will a fully-grown [[White lily (plant)|white lily plant]] protect them from [[Disease (Farming)|disease]].
+
+They are obtainable from sources such as [[monster]]s, [[seed pack]]s, and [[Master Farmer|master farmers]]. Completing [[Garden of Tranquillity]] rewards 5 guam seeds.
+
+One seed can be used on the [[Pet#Skilling pets|skilling pet]] [[Tangleroot]] to change its appearance.
+
+==Farming info==
+{{Farming page|Guam leaf (plant)}}
+<references/>
+
+===Average harvest yield===
+Guam has a minimum of 3 [[Farming#Variable crop yield|harvest lives]], increasing by 1 for each tier of [[compost]] used (for a maximum of 6 when using [[ultracompost]]). While harvesting guam leaves, there is a chance to not consume a harvest life dependent on the player's Farming level. This chance scales from 10.2% at level 1 to 31.6% at level 99, interpolating linearly in between.
+
+{{Farming yield calculator|name=Guam leaf|lvlreq=9|low=25|high=80|diary=y|farmingCape=y}}
+
+==Item sources==
+{{Drop sources|Guam seed}}
+
+==Gallery==
+<gallery captionalign="center" widths="120">
+Guam seed 1 detail.png|One guam seed
+Herb seed 2 detail.png|Two guam seeds
+Herb seed 3 detail.png|Three guam seeds
+Herb seed 4 detail.png|Four guam seeds
+Herb seed detail.png|Five guam seeds
+</gallery>
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 23 July 2020
+|update = Poll 71 and Ferox Enclave Updates
+|poll = Old School Content Poll 71: Gauntlet, Grotesques, CoX and more
+|change = The appearance of herbs planted in herb patches now match the herb's appearance in the player's inventory.
+}}
+{{Subject changes
+|date = 9 January 2020
+|update = Eating in the Bank
+|poll = Old School Content Poll 69: Game Improvements
+|change = Players can now dig up healthy herb patches before they're fully grown. To prevent players from gaining experience repeatedly by planting and digging up herb seeds, the experience usually gained from planting them is now given when harvesting them, alongside the usual harvesting experience.
+}}
+{{Subject changes
+|date = 8 February 2018
+|update = PvM QoL updates & Wilderness Rejuvenation improvements
+|poll = Quality of Life - PvM Suggestions 2018
+|change = The [[value]] was changed from 4 to 1 so that it would appear below less valuable seeds when on the ground.
+}}
+{{Subject changes
+|daterange = 9 – 23 August 2005
+|change = *The item was renamed from "Herb seed" to "Guam seed".
+*The item's examine was changed from "''A herb seed - plant in a herb patch.''" to "''A guam seed - plant in a herb patch.''"
+}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The item's examine was changed from "''Farming skill coming in July!''" to "''A herb seed - plant in a herb patch.''"
+}}
+{{Subject changes footer}}
+
+{{Seeds}}

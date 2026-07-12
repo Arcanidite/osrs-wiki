@@ -1,0 +1,11 @@
+===Serum 207===
+{{Checklist|
+*Make two [[Serum 207]] by adding clean tarromin to a vial of water and then adding ashes.
+*Use one dose on [[Razmire]] (afflicted) in the general store. {{Chat option|4What are all these shadowy creatures?|1Yes, I'll dispatch those dark and evil creatures.}} (Recommended to '''not''' use official Mort'ton temple World 377 yet to not get interrupted talking to the NPCs, until the step with repairing.)
+*Kill five loar shades and pick up their remains. '''Note:''' any shades that you killed before talking to Razmire will not count.
+*Return to Razmire and give him the remains. He may require more Serum 207.
+*Right click and open his General store, buy an Olive oil.
+*Open his builders' store, buy 5 timber beams, 5 limestone bricks, 25 swamp paste and optionally a [[Flamtaer hammer]].
+*Use the serum on [[Ulsquire Shauncy]], located in the house east of the general store. Talk to him with Loar Remains.
+*Talk to him '''again''' and ask about the remains and the temple. {{Chat option|1What did you find out about the remains?|2What can you tell me about that temple?}}
+}}

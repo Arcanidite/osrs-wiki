@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Hazeel Cult
+|image = [[File:Hazeel Cult reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*{{SCP|thieving|1500}} [[Thieving]] [[experience]]
+*2000 [[coins]] (plus 5 from the fake ending if you sided with the Carnillean family)
+*[[Hazeel's mark]] (if you sided with [[Hazeel]])
+*[[Carnillean armour]] (if you sided with [[Ceril]] and obtained an extra during the quest)
+*[[kudos|5 Kudos]], which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]]
+}}

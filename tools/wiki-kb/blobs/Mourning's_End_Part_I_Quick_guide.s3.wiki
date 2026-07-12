@@ -1,0 +1,9 @@
+===Starting the quest===
+'''''Recommended items:''' a weapon, [[food]], [[necklace of passage]] to teleport to the Outpost to get to Arandar, 8 free inventory spaces, a [[ring of dueling]] (optional, recommended to teleport out after you kill the Mourner) [[energy potions]] or [[stamina potions]] (optional, bring these throughout the entire quest)''
+{{Checklist|
+*Talk to [[Eluned]]. {{Chat option|1Yes, I should go see him now.}}
+*Talk to [[Arianwyn]] in [[Lletya]].
+*Teleport to the [[Outpost]] using your [[necklace of passage]].
+*Go to the [[Arandar]] Pass gate, west of the Outpost, and kill a [[mourner]] (this will drain your stats including hp to 20).
+*Take everything it drops (7 items), and hold onto them.
+*(Optional) Use a [[ring of dueling]] teleport to [[Ferox Enclave]] and drink from the [[Pool of Refreshment]] to negate mourner potion resetting stats and hp}}

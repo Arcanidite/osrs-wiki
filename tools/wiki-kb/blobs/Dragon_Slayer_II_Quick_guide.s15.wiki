@@ -1,0 +1,45 @@
+===The Assault===
+'''Items required:'''   ''4 free inventory spaces, dragonfire protection, combat gear, plenty of food.'' '''Recommended:''' ''[[Antidote++]], ranged gear, [[toxic blowpipe]], [[super antifire potion]], [[stamina potion]], [[insulated boots]].''
+{{Instance|irs=Torfinn|cost=100000}}
+{{Checklist|
+*Return to Rellekka and take the boat back to Ungael by speaking to Torfinn.
+*Hold off the assault on your ship for 4 minutes.
+**Click leaks to fill them.
+**Click fires to douse them.
+**Click injured Fremennik warriors to heal them.
+**Click damaged masts to repair them.
+*'''''There is a checkpoint after defending the ship from the assault.'''''
+*'''Put on your dragonfire protection.'''
+*Make your way towards Varrock's grand ship, fighting a [[red dragon]], [[iron dragon]], and [[brutal green dragon]] on the way.
+*Kill the two [[Green dragon|green]] and two [[Blue dragon|blue]] dragons battling the Varrockian soldiers.
+*'''''There is a checkpoint after killing these four dragons.''''' If necessary, teleport out and prepare for the next wave.
+*Kill the [[Black dragon|black]], [[Steel dragon|steel]] then [[brutal red dragon]]s that arrive on the ship one at a time.
+**When [[Galvek]] does a casting animation, '''run away from your current location.'''
+*'''''There is a checkpoint after killing the brutal red dragon.''''' If necessary, teleport out to prepare for the next three dragons.
+*Kill the [[Mithril dragon|mithril]], [[Adamant dragon|adamant]] then [[Rune dragon|rune]] dragons that arrive on the ship one at a time.
+**When [[Galvek]] does a casting animation, '''run away from your current location.'''
+**These three dragons have a melee, ranged, magic, and dragonfire attack.
+**The adamant dragon also has two special attacks:
+***A ranged attack with the [[Ruby bolts (e)|Blood Forfeit]] effect (hits through [[Protect from Missiles]]).
+***A poison attack that splashes and lands on nearby squares dealing lots of damage.
+****It is recommended to use [[Antidote++]] or other poison immunity to minimise this damage.
+**The rune dragon also has two special attacks:
+***A ranged attack with the [[Onyx bolts (e)|Life Leech]] effect (hits through [[Protect from Missiles]]).
+***An electric attack that hits nearby squares and arcs around the player, dealing rapid damage.
+****It is recommended to wear [[Insulated boots]] to minimise this damage.
+*'''''There is a checkpoint after killing the rune dragon.''''' Teleport out and stock up for the final battle.
+}}
+====The Final Battle====
+'''Items required:''' ''Dragonfire protection (both shield and potion are required, super antifire potions do '''not''' provide full protection!), ranged gear.'' '''Recommended:''' ''[[Ruby bolts (e)]] or [[ruby dragon bolts (e)]], 3-4 [[super restore(4)]], [[ranging potion(4)]], high-healing [[food]], [[stamina potion]], one-click teleport.  (TURN AUTO RETALIATE OFF IN ADVANCE as it is not really necessary for the fight and is likely to get you killed in the third phase). Thralls '''cannot''' be summoned in this fight.''
+{{Instance|irs=Torfinn|cost=100000}}
+{{Checklist|
+*Kill [[Galvek]] - he has four phases that have 300 hitpoints each.
+**Keep avoiding his ground-targeted fireballs.
+**Turn your prayers back on after his pink dragonfire knocks them off.
+***Setting your quick prayers to Protect from Magic and Eagle Eye/Rigour is beneficial to counter this attack.
+**Use [[Protect from Magic]] in phase 1, use [[Protect from Missiles]] in phases 2, 3 and 4.
+***Phase 1: Drops eight fire traps- don't get near them or you will be hit for all your health. Stay along the north side of the ship, one square directly south of Galvek, and run two squares south from your location to avoid the fireball, and return to your original position once the attack has failed to hit you.
+***Phase 2: Launches transparent projectile which drains stats, especially run energy.
+***Phase 3: Summons waves from either the north or south end, avoid them by standing in the gap. Turn off auto retaliate to not get pulled away from the gap.
+***Phase 4: Launches earth projectiles. Avoid these or you will be bound, and probably die.
+}}

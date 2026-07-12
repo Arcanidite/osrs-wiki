@@ -1,0 +1,56 @@
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 14 January 2026
+|update = New Player Improvements Round 2
+|change = Players can no longer train combat beyond level 3 on Tutorial Island by shooting seaborne NPCs.
+}}
+{{Subject changes
+|date = 22 October 2025
+|update = Grid Master Rewards, Poll & New Player Improvements
+|change = 
+* The "How familiar are you with Old School RuneScape?" question during character creation now has its own UI screen, featuring new progress pips.
+* Updated default settings for new players to improve visibility, usability, and accessibility.
+* Returning and experienced players receive sensible modern defaults (longer AFK timers and interface settings).
+* Tutorial Island is now a trackable miniquest with full Quest Journal integration.
+* Tutorial Island now rewards 1 [[quest point]].
+* Improved the control guide box to update dynamically, disappear, and reappear contextually.
+* NPC dialogue boxes have been rewritten for better clarity and character.
+* Added soft yellow highlights to important NPCs, Key tutorial objects, interactable objects, and Side-panel icons.
+* Woodcutting actions on Tutorial Island are now twice as fast (4 ticks instead of 8), and Fishing speed increased slightly (1 tick faster for shrimp catching).
+}}
+{{Subject changes
+|date = 25 October 2018
+|update = Halloween 2018 Event and Tutorial Island Improvements
+|change = 
+*Chopping wood and lighting a fire now comes before fishing and cooking a shrimp, and the first shrimp is no longer guaranteed to burn. Instead, the first is always successful. After that it can burn if you do more - 50% success at level 1.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1055752157079760896|date=26 October 2018|archiveurl=https://reldo.runescape.wiki/i/105388|archivedate=9 April 2022|notes=This reference may be outdated}}{{Fact|This is discussed on the talk page. The first one should be always successful only if the player receives an axe & tinderbox and/or chops a log and/or makes a fire. If the player uses another player's fire to cook a shrimp before doing any of that, the shrimp can be burnt with a 50% chance as before; if the shrimp is successfully cooked, the player can skip the woodcutting and firemaking part of the tutorial.}} The furnace at mining tutorial is now left-clickable.
+*Tutorials on [[music]], [[emotes]], and prospecting were removed. Learning to run was made optional.
+*Some other minor tweaks were made to impact the user interface, dialogue and default settings.
+}}
+{{Subject changes
+|date = 18 October 2018
+|update = Mobile Changes, Various Bugfixes and new Merch!
+|change = The first character met is now called Gielinor Guide instead of RuneScape Guide. [[Financial Advisor]] was replaced with [[Account Guide]].
+}}
+{{Subject changes
+|date = 28 April 2016
+|update = Calling Pets & Deadman Death
+|poll = 
+|change = Run energy is now restored at the end of the tutorial.
+}}
+{{Subject changes
+|date = 21 August 2014
+|update = In-Game Polls & Pet Insurance
+|change = Tutorial Island has been updated to provide information about in-game polls.
+}}
+{{Subject changes
+|date = 3 April 2014
+|update = Chaos Elemental Pet & World Map
+|change = Character customization on Tutorial island now correctly applies new hairstyles and outfits.
+}}
+{{Subject changes
+|date = 22 February 2013
+|update = Patch Notes (22 February 2013)
+|change = The respawn timer for resources and NPC's on Tutorial Island has been reduced.
+}}
+{{Subject changes footer}}

@@ -1,0 +1,2 @@
+===Levels 1–37: Questing===
+Early levels can be skipped by completing [[Quest experience rewards#Mining|quests that give Mining experience]]. Completing [[Doric's Quest]], [[The Dig Site]], [[Plague City]], [[The Giant Dwarf]], [[The Lost Tribe]] and [[Another Slice of H.A.M.]] grants a total of 27,525 Mining experience, which will get the player from level 1 to 37. All of these quests have low requirements, and completing them allows the player to use an [[adamant pickaxe]] right from the start.

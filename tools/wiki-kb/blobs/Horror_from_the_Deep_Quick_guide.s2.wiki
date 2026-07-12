@@ -1,0 +1,53 @@
+==Walkthrough==
+{{Checklist|
+*To begin the quest use the fairy ring code {{fairycode|ALP}} to teleport to the lighthouse. Alternatively, one could teleport to the Barbarian Outpost using a games necklace or [[Grouping teleport]] then hop over the rocks to the north to reach the lighthouse. 
+*Talk to [[Larrissa]]. {{Chat option|1With what?|1But how can I help?|1Okay, I'll help!|3I'll see what I can do}}
+*Run east to the second bridge, use a plank on it.
+*Jump the bridge and use a second plank on it.
+*Head over to Barbarian Outpost, enter the [[Barbarian Outpost Agility Course|Barbarian Outpost Agility arena]] and talk to [[Gunnjorn]] for a key. In order to enter the arena, you need to have completed the [[Alfred Grimhand's Barcrawl|barcrawl]] miniquest.
+**While at the outpost, prepare for the battle against the Dagannoth and Dagannoth Mother.
+**''(Optional)'' Complete a lap of the Agility course to complete a medium Kandarin task.
+*Talk to Larrissa again.
+*Go to the roof of the lighthouse and use the swamp tar, tinderbox, and molten glass on the lighting mechanism.
+*Climb down to the basement, use 1 of each elemental rune, any sword, and any arrow on the [[strange wall (Lighthouse)|strange wall]].
+*Open the eastern strange wall of the doorway, climb down the ladder and talk to [[Jossik]].
+*Kill the level 100 [[Dagannoth (Horror from the Deep)|Dagannoth]] then the level 100 [[Dagannoth Mother]] by using any elemental magic attack from the table below.}}
+::{|class="wikitable"
+!Image
+!Colour
+!Weakness
+!Attack Using
+|-
+|[[File:Dagannoth mother white.png|40px]]
+|White
+|[[Air spells]]
+|[[Wind Strike]], [[Wind Bolt|Bolt]], [[Wind Blast|Blast]], [[Wind Wave|Wave]], or [[Wind Surge|Surge]].
+|-
+|[[File:Dagannoth mother blue.png|40px]]
+|Blue
+|[[Water spells]]
+|[[Water Strike]], [[Water Bolt|Bolt]], [[Water Blast|Blast]], [[Water Wave|Wave]], or [[Water Surge|Surge]].
+|-
+|[[File:Dagannoth mother brown.png|40px]]
+|Brown
+|[[Earth spells]]
+|[[Earth Strike]], [[Earth Bolt|Bolt]], [[Earth Blast|Blast]], [[Earth Wave|Wave]], or [[Earth Surge|Surge]].
+|-
+|[[File:Dagannoth mother red.png|40px]]
+|Red
+|[[Fire spells]]
+|[[Fire Strike]], [[Fire Bolt|Bolt]], [[Fire Blast|Blast]], [[Fire Wave|Wave]], or [[Fire Surge|Surge]].
+|-
+|[[File:Dagannoth mother orange.png|40px]]
+|Orange
+|Melee
+|[[Melee]] attacks.
+|-
+|[[File:Dagannoth mother green.png|40px]]
+|Green
+|Ranged
+|[[Ranged]] attacks.
+|}
+{{Checklist|
+*'''Congratulations, quest complete!'''
+*Take the [[rusty casket]] you received from killing the [[Dagannoth mother]] to [[Jossik]] upstairs to receive a [[God book|damaged prayer book]] (choose any, you can buy the others from him afterwards for 5000 [[coins]] each). If you didn't receive a casket, he will give you one during the conversation.}}

@@ -1,0 +1,420 @@
+{{External|rs}}
+{{Infobox NPC
+|version1 = 1
+|version2 = 2
+|version3 = 3
+|version4 = 4
+|version5 = 5
+|version6 = 6
+|version7 = 7
+|version8 = 8
+|version9 = 9
+|version10 = 10
+|name = Master Farmer
+|image1 = [[File:Master Farmer.png|250x250px]]
+|image2 = [[File:Master Farmer (2).png|250x250px]]
+|image3 = [[File:Master Farmer (3).png|250x250px]]
+|image4 = [[File:Master Farmer (4).png|250x250px]]
+|image5 = [[File:Master Farmer (5).png|250x250px]]
+|image6 = [[File:Master Farmer (6).png|250x250px]]
+|image7 = [[File:Master Farmer (7).png|250x250px]]
+|image8 = [[File:Master Farmer (8).png|250x250px]]
+|image9 = [[File:Master Farmer (9).png|250x250px]]
+|image10 = [[File:Master Farmer (10).png|250x250px]]
+|release1 = [[6 June]] [[2005]]
+|release2 = [[6 June]] [[2005]]
+|release3 = [[9 November]] [[2022]]
+|release4 = [[9 November]] [[2022]]
+|release5 = [[20 March]] [[2024]]
+|release6 = [[20 March]] [[2024]]
+|release7 = [[23 July]] [[2025]]
+|release8 = [[23 July]] [[2025]]
+|release9 = [[23 July]] [[2025]]
+|release10 = [[23 July]] [[2025]]
+|update1 = Seeds, Bankspace And Advisors
+|update2 = Seeds, Bankspace And Advisors
+|update3 = Diversity & Inclusion Changes and Quest Speedrunning Updates
+|update4 = Diversity & Inclusion Changes and Quest Speedrunning Updates
+|update5 = Varlamore: Part One
+|update6 = Varlamore: Part One
+|update7 = Varlamore: The Final Dawn Out Now
+|update8 = Varlamore: The Final Dawn Out Now
+|update9 = Varlamore: The Final Dawn Out Now
+|update10 = Varlamore: The Final Dawn Out Now
+|members = Yes
+|race = [[Human]]
+|location1 = North of [[East Ardougne]]<br/>[[Draynor Village]]<br/>[[Farming Guild]]<br/>[[Hosidius]]
+|location2 = South of [[Varrock]]<br/>[[Farming Guild]]<br/>[[Hosidius]]
+|location3 = 
+|location4 = 
+|location5 = [[Outer Fortis]], [[Quetzacalli Gorge]]
+|location6 = [[Outer Fortis]], [[Ortus Farm]]
+|location7 = [[Kastori]]
+|location8 = [[Kastori]]
+|location9 = [[Kastori]]
+|location10 = [[Kastori]]
+|gender1 = Male
+|gender2 = Male
+|gender3 = Female
+|gender4 = Female
+|gender5 = Female
+|gender6 = Male
+|gender7 = Male
+|gender8 = Female
+|gender9 = Male
+|gender10 = Female
+|options1 = Pickpocket
+|options2 = Pickpocket
+|options3 = Pickpocket
+|options4 = Pickpocket
+|options5 = Talk-to, Pickpocket
+|options6 = Talk-to, Pickpocket
+|options7 = Talk-to, Pickpocket
+|options8 = Talk-to, Pickpocket
+|options9 = Talk-to, Pickpocket
+|options10 = Talk-to, Pickpocket
+|examine1 = A master at farming.
+|examine2 = A master at farming.
+|examine3 = A master at farming.
+|examine4 = A master at farming.
+|examine5 = An expert in farming.
+|examine6 = An expert in farming.
+|examine7 = An expert in farming.
+|examine8 = An expert in farming.
+|examine9 = An expert in farming.
+|examine10 = An expert in farming.
+|map = No
+|id1 = 5730
+|id2 = 5731
+|id3 = 11940
+|id4 = 11941
+|id5 = 13240,13241,13242,13243
+|id6 = 13236,13237,13238,13239
+|id7 = 14756
+|id8 = 14758
+|id9 = 14755
+|id10 = 14757
+|leagueRegion = Kourend,Kandarin,Misthalin,Varlamore
+}}
+{{Synced switch
+|version1 = [[File:Master Farmer chathead.png|left]]
+|version2 = [[File:Master Farmer chathead (2).png|left]]
+|version3 = [[File:Master Farmer chathead (3).png|left]]
+|version4 = [[File:Master Farmer chathead (4).png|left]]
+|version5 = [[File:Master Farmer chathead (5).png|left]]
+|version6 = [[File:Master Farmer chathead (6).png|left]]
+|version7 = [[File:Master Farmer chathead (7).png|left]]
+|version8 = [[File:Master Farmer chathead (8).png|left]]
+|version9 = [[File:Master Farmer chathead (9).png|left]]
+|version10 = [[File:Master Farmer chathead (10).png|left]]
+}}
+''' Master Farmers''' are adept farmers that can be [[pickpocketed]] to receive a variety of [[seeds]]. Level 38 [[Thieving]] is required to pickpocket them. Successful pickpockets can result in most types of seeds, excluding [[tree seed]]s and [[fruit tree seed]]s. 43 Thieving experience is granted upon successfully pickpocketing a Master Farmer. Failing to pickpocket a Master Farmer results in being [[stun (status)|stunned]] for five seconds and taking three hitpoints of damage. If the player's inventory is full, they will be unable to pickpocket them.
+
+At current [[Grand Exchange]] prices, a successful pickpocket is on average worth {{NoCoins|
+{{#vardefineecho:wew|{{#expr:
+.485 * (
+ 0.368*{{GEP|Potato seed|2.5}} +
+ 0.276*{{GEP|Onion seed|2}} +
+ 0.144*{{GEP|Cabbage seed|2}} +
+ 0.132*{{GEP|Tomato seed|1.5}} +
+ 0.046*{{GEP|Sweetcorn seed|1.5}} +
+ 0.025*{{GEP|Strawberry seed}} +
+ 0.011*{{GEP|Watermelon seed}}
+) +
+.243 * (
+ 0.229*{{GEP|Barley seed|2.5}} +
+ 0.228*{{GEP|Hammerstone seed|2}} +
+ 0.172*{{GEP|Asgarnian seed|1.5}} +
+ 0.171*{{GEP|Jute seed|2}} +
+ 0.114*{{GEP|Yanillian seed|1.5}} +
+ 0.054*{{GEP|Krandorian seed}} +
+ 0.029*{{GEP|Wildblood seed}}
+) +
+.122 * (
+ 0.376*{{GEP|Marigold seed}} +
+ 0.249*{{GEP|Nasturtium seed}} +
+ 0.161*{{GEP|Rosemary seed}} +
+ 0.119*{{GEP|Woad seed}} +
+ 0.095*{{GEP|Limpwurt seed}}
+) +
+.097 * (
+ 0.400*{{GEP|Redberry seed}} +
+ 0.280*{{GEP|Cadavaberry seed}} +
+ 0.200*{{GEP|Dwellberry seed}} +
+ 0.080*{{GEP|Jangerberry seed}} +
+ 0.029*{{GEP|Whiteberry seed}} +
+ 0.011*{{GEP|Poison ivy seed}}
+) +
+.048 * (
+ 0.320*{{GEP|Guam seed}} +
+ 0.218*{{GEP|Marrentill seed}} +
+ 0.149*{{GEP|Tarromin seed}} +
+ 0.101*{{GEP|Harralander seed}} +
+ 0.069*{{GEP|Ranarr seed}} +
+ 0.047*{{GEP|Toadflax seed}} +
+ 0.032*{{GEP|Irit seed}} +
+ 0.022*{{GEP|Avantoe seed}} +
+ 0.015*{{GEP|Kwuarm seed}} +
+ 0.010*{{GEP|Snapdragon seed}} +
+ 0.007*{{GEP|Cadantine seed}} +
+ 0.005*{{GEP|Lantadyme seed}} +
+ 0.003*{{GEP|Dwarf weed seed}} +
+ 0.002*{{GEP|Torstol seed}}
+) +
+.005 * (
+ 0.500*{{GEP|Mushroom spore}} +
+ 0.300*{{GEP|Belladonna seed}} +
+ 0.200*{{GEP|Cactus seed}}
+)
+ }}}}
+}} [[coins]], or {{NoCoins|{{#var:wew}}*2}} with the full [[Rogue equipment|rogue's outfit]]. At maximum efficiency of 3,000 pickpockets per hour without any failure, this equates to {{NoCoins|{{#var:wew}}*2*3000 round 1}} coins per hour.
+
+[[Ironman Mode|Ironmen]] looking for herb seeds can expect up to 60 high level seeds ([[ranarr seed|ranarr]] or higher) per hour at maximum efficiency.
+
+Before reaching 85 [[Farming]], players can expect a decreased drop rate for [[ranarr seed]]s, [[snapdragon seed]]s and [[torstol seed]]s.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1400868684474765314|date=4 June 2021|archiveurl=https://archive.is/587zW|archivedate=6 September 2021|quote=}}{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1460070685678747652|date=15 November 2021|archiveurl=https://archive.md/5xvrY|archivedate=27 November 2021|quote=}}
+
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Master Farmer
+|location = [[Farming Guild]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1236,y:3727|x:1247,y:3750|x:1264,y:3725
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Hosidius]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1761,y:3633|x:1787,y:3592
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Master Farmer
+|location = North of [[East Ardougne]]{{refn|group=note|The [[Medium Ardougne Diary]] reward does not apply here{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/886602198699974656|date=16 July 2017|archiveurl=https://archive.is/YiyvS|archivedate=30 May 2020|quote=[Does the master farmer north of ardy count as "in" ardy for the medium diary?] No, that's a bit too far outside the city.}}}}
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2636,y:3364
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Draynor Village]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3080,y:3250
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{LocLine
+|name = Master Farmer
+|location = South of [[Varrock]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3240,y:3345
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Outer Fortis]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1635,y:3051|x:1682,y:3052|x:1736,y:3064|x:1750,y:3066|x:1584,y:3090
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Ortus Farm]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1582,y:3131
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Quetzacalli Gorge]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1495,y:3234
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Kastori]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1366,y:3022|x:1367,y:3048|x:1351,y:3058|x:1371,y:3064
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocTableBottom}}
+{{reflist|group=note}}
+
+==Money making==
+{{Mmgsection|Pickpocketing master farmers}}
+
+==Pickpocketing==
+===Pickpocket chance===
+The chance of successfully pickpocketing a Master Farmer scales between 91/256 at level 1, and 241/256 at level 99.{{CiteTwitter|author=Mod Kieren|url=https://twitter.com/JagexKieren/status/691576301296164865|date=25 January 2016|archiveurl=https://archive.is/nVSVe|archivedate=30 May 2020|quote=Master farmers: 90/255 at lv1, 240/255 at 99.}}
+
+With the multiplicative +10% pickpocketing bonus from the hard [[Ardougne Diary]], players will stop failing to pickpocket them at level 94 Thieving.
+
+{{Skilling success chart|label=Master Farmer pickpocket chance
+|label1=Normal|low1=90|high1=240|req1=38|color1=gray|image1=Thief Master farmer.png
+|label2=Gloves of silence|low2=94|high2=252|req2=38|color2=darkblue|image2=Gloves of silence.png
+|label3=Ardougne Diary|low3=99|high3=264|req3=67|color3=black|image3=Ardougne cloak 3.png
+|label4=Thieving cape + Ardougne Diary|low4=108|high4=290|req4=99|color4=purple|image4=Thieving cape.png
+}}
+
+===Pickpocketing info===
+{{Thieving info
+|name = Master Farmer
+|level = 38
+|xp = 43
+|type = Pickpocket
+|timename = [[Stun_(status)#Thieving|Stun]] Timer
+|time = 5s
+|damage = 3
+}}
+
+===Loot===
+{{DropLogProject|kills=3467681}}
+
+Rates{{CiteTwitter|author=Mod Wolf|url=https://twitter.com/JagexWolf/status/834835144196358145|date=23 February 2017|archiveurl=https://archive.is/AKx7U|archivedate=30 May 2020|quote=Here's the pickpocket drop rates of Master Farmers!}} are accurate to 3 significant figures.
+
+====Allotments====
+''There is a 485/1000 chance of rolling the allotment seed drop table.''
+{{DropsTableHead}}
+{{DropsLineSkill|name=Potato seed|quantity=1-4|rarity=1/5.65|skill=Thieving}}
+{{DropsLineSkill|name=Onion seed|quantity=1-3|rarity=1/7.53|skill=Thieving}}
+{{DropsLineSkill|name=Cabbage seed|quantity=1-3|rarity=1/14.4|skill=Thieving}}
+{{DropsLineSkill|name=Tomato seed|quantity=1-2|rarity=1/15.7|skill=Thieving}}
+{{DropsLineSkill|name=Sweetcorn seed|quantity=1-2|rarity=1/45.2|skill=Thieving}}
+{{DropsLineSkill|name=Strawberry seed|quantity=1|rarity=1/90.4|skill=Thieving}}
+{{DropsLineSkill|name=Watermelon seed|quantity=1|rarity=1/189|skill=Thieving}}
+{{DropsLineSkill|name=Snape grass seed|quantity=1|rarity=1/260|raritynotes={{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1253020589310312448|date=22 April 2020|archiveurl=https://archive.is/NzdkA|archivedate=30 May 2020|quote=About 1 / 260 for the snape grass one, and 1 / 302 for ranarr.}}|skill=Thieving}}
+{{DropsTableBottom}}
+
+====Hops====
+''There is a 243/1000 chance of rolling the hops seed drop table.''
+{{DropsTableHead}}
+{{DropsLineSkill|name=Barley seed|quantity=1-12|rarity=1/18|skill=Thieving}}
+{{DropsLineSkill|name=Hammerstone seed|quantity=1-9|rarity=1/18|skill=Thieving}}
+{{DropsLineSkill|name=Asgarnian seed|quantity=1-6|rarity=1/23.9|skill=Thieving}}
+{{DropsLineSkill|name=Jute seed|quantity=1-9|rarity=1/24.1|skill=Thieving}}
+{{DropsLineSkill|name=Yanillian seed|quantity=1-6|rarity=1/36.1|skill=Thieving}}
+{{DropsLineSkill|name=Krandorian seed|quantity=1-6|rarity=1/72.2|skill=Thieving}}
+{{DropsLineSkill|name=Wildblood seed|quantity=1-3|rarity=1/142|skill=Thieving}}
+{{DropsTableBottom}}
+
+====Flowers====
+''There is a 122/1000 chance of rolling the flower seed drop table.''
+{{DropsTableHead}}
+{{DropsLineSkill|name=Marigold seed|quantity=1|rarity=1/21.8|skill=Thieving}}
+{{DropsLineSkill|name=Nasturtium seed|quantity=1|rarity=1/32.9|skill=Thieving}}
+{{DropsLineSkill|name=Rosemary seed|quantity=1|rarity=1/50.9|skill=Thieving}}
+{{DropsLineSkill|name=Woad seed|quantity=1|rarity=1/68.9|skill=Thieving}}
+{{DropsLineSkill|name=Limpwurt seed|quantity=1|rarity=1/86.3|skill=Thieving}}
+{{DropsTableBottom}}
+
+====Bushes====
+''There is a 97/1000 chance of rolling the bush seed drop table.''
+{{DropsTableHead}}
+{{DropsLineSkill|name=Redberry seed|quantity=1|rarity=1/25.8|skill=Thieving}}
+{{DropsLineSkill|name=Cadavaberry seed|quantity=1|rarity=1/36.8|skill=Thieving}}
+{{DropsLineSkill|name=Dwellberry seed|quantity=1|rarity=1/51.5|skill=Thieving}}
+{{DropsLineSkill|name=Jangerberry seed|quantity=1|rarity=1/129|skill=Thieving}}
+{{DropsLineSkill|name=Whiteberry seed|quantity=1|rarity=1/355|skill=Thieving}}
+{{DropsLineSkill|name=Poison ivy seed|quantity=1|rarity=1/937|skill=Thieving}}
+{{DropsTableBottom}}
+
+====Special====
+''There is a 5/1000 chance of rolling the special seed drop table.''
+{{DropsTableHead}}
+{{DropsLineSkill|name=Mushroom spore|quantity=1|rarity=1/492|skill=Thieving}}
+{{DropsLineSkill|name=Belladonna seed|quantity=1|rarity=1/820|skill=Thieving}}
+{{DropsLineSkill|name=Cactus seed|quantity=1|rarity=1/1230|skill=Thieving}}
+{{DropsLineSkill|name=Seaweed spore|quantity=1|rarity=1/1892|skill=Thieving}}
+{{DropsLineSkill|name=Potato cactus seed|quantity=1|rarity=1/2460|skill=Thieving}}
+{{DropsTableBottom}}
+
+====Herbs====
+''There is a 48/1000 chance of rolling the herb seed drop table.''
+{{DropsTableHead}}
+{{DropsLineSkill|name=Guam seed|quantity=1|rarity=1/58.36|altrarity=1/67.2|altraritydash=Yes|Raritynotes={{Refn|name=scales|group=d|Rarity scales with Farming level up to 85. Check the calculator below to view the rates at different levels.}}|skill=Thieving}}
+{{DropsLineSkill|name=Marrentill seed|quantity=1|rarity=1/95.6|skill=Thieving}}
+{{DropsLineSkill|name=Tarromin seed|quantity=1|rarity=1/140|skill=Thieving}}
+{{DropsLineSkill|name=Harralander seed|quantity=1|rarity=1/206|skill=Thieving}}
+{{DropsLineSkill|name=Ranarr seed|quantity=1|rarity=1/268.75|altrarity=1/555.83|altraritydash=yes|Raritynotes={{NamedRef|name=scales|group=d}}|skill=Thieving}}
+{{DropsLineSkill|name=Toadflax seed|quantity=1|rarity=1/443|skill=Thieving}}
+{{DropsLineSkill|name=Irit seed|quantity=1|rarity=1/651|skill=Thieving}}
+{{DropsLineSkill|name=Avantoe seed|quantity=1|rarity=1/947|skill=Thieving}}
+{{DropsLineSkill|name=Kwuarm seed|quantity=1|rarity=1/1389|skill=Thieving}}
+{{DropsLineSkill|name=Snapdragon seed|quantity=1|rarity=1/1854.4|altrarity=1/3835.23|altraritydash=yes|raritynotes={{NamedRef|name=scales|group=d}}|skill=Thieving}}
+{{DropsLineSkill|name=Cadantine seed|quantity=1|rarity=1/2976|skill=Thieving}}
+{{DropsLineSkill|name=Lantadyme seed|quantity=1|rarity=1/4167|skill=Thieving}}
+{{DropsLineSkill|name=Dwarf weed seed|quantity=1|rarity=1/6944|skill=Thieving}}
+{{DropsLineSkill|name=Torstol seed|quantity=1|rarity=1/9271.98|altrarity=1/19176.14|altraritydash=yes|raritynotes={{NamedRef|name=scales|group=d}}|skill=Thieving}}
+{{DropsTableBottom}}
+
+
+{{Calculator:Thieving/Master farmer special seed table}}
+
+==Dialogue==
+{{Hastranscript|npc}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 30 July 2025
+|update = Varlamore: Bug Fixes & More
+|change = Master Farmers in Civitas illa Fortis will no longer stand still indefinitely after being spoken to.
+}}
+{{Subject changes
+|date = 24 March 2021
+|update = Fishing Skill Boss and Easter Event
+|change = Master Farmers' drop tables for herb seeds now scale with Farming level. This is to stop bots using Master Farmers with very low stats. Herb seeds will now be worse below 75 Farming and better above 75 Farming, up to level 85.{{Efn|The blog incorrectly states the level as 71 Farming, but through crowdsourcing it has been confirmed it is 75.}}
+}}
+{{Subject changes
+|date = 16 September 2020
+|update = Poll 72 Updates
+|poll = Old School Content Poll 72: Costume Rooms & Skilling
+|change = Seaweed spores have been added to the master farmer's loot table.
+}}
+{{Subject changes footer}}
+{{Notelist}}
+
+==Trivia==
+* When failing to pickpocket a master farmer, they exclaim "Cor blimey," a [[wikipedia:British_slang|British slang]] phrase. 
+
+==References==
+{{Reflist}}
+
+{{Pickpocket}}

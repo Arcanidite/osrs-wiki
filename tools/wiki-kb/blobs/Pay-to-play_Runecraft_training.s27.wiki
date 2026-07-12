@@ -1,0 +1,45 @@
+===Levels 91–95/99: Double nature runes===
+''For more information about runecrafting through the Abyss, see [[Abyss/Strategies]]''.
+
+Even though [[nature rune]]s become available at level 44, it is not recommended to craft them before level 91 due to much lower profit. Crafting double nature runes without using the [[Achievement diary cape]] offers slow experience, but it can yield good profit depending on the rune prices. With the Achievement diary cape, experience and profit rates increase significantly, offering some of the highest profit per hour in Runecraft, along with competitive experience rates.
+
+There are four main ways to reach the nature altar: by using the [[Abyss]]; by using the [[Fairy rings|fairy ring]] {{Fairycode|ckr}} and running north-east; by using the [[Karamja gloves 3]] or [[Karamja gloves 4|4]] teleport to the [[Shilo Village mine]]; or by using the Achievement diary cape teleport to [[Kaleb Paramaya]]. Both the Karamja gloves and the Achievement diary cape methods require level 79 [[Agility]], in order to use the shortcut on the north wall of [[Shilo village]].
+
+The Achievement diary cape method is over twice as fast as the other methods; however, the cape has very high requirements. The Abyss, fairy ring and Karamja gloves methods are similar in speed. Players with level 79 Agility or higher should use the Karamja gloves method. Players with low Mining and Agility are likely to get higher rates using the fairy ring, and players without fast access to a fairy ring and without access to the Agility shortcut should use the Abyss.
+
+Players using the Achievement diary cape can use the cape's teleport to [[Jarr]] for banking, saving the need for an extra bank teleport item. For the fairy ring method, players will need to have a quick access to a fairy ring that does not take up inventory space, such as [[quest point cape]], [[Construct. cape|Construction cape]] or [[necklace of passage]], and use a [[ring of dueling]] to bank at [[Castle Wars]]. 
+
+Training Runecraft from level 91 to level 99 using this method requires 792,400 pure essence and yields 1,584,800 nature runes, which can be sold for tremendous profit.
+
+{| class="wikitable"
+|+Double Nature Runes{{Refn|Rates assume that you are using the [[colossal pouch]] and bringing 64 pure essence each run.|group=o}}
+!rowspan=2|Level {{SCP|Runecraft}}
+!rowspan=2|Teleportation Method
+!rowspan=2|XP/HR
+!colspan=2|GP/HR
+|-
+!No outfit
+!With {{plinkp|Raiments of the eye|pic=Hat of the eye}}
+|-
+|rowspan=4; style="text-align:center;" |91
+|style="text-align:center;" |Travel through the [[Abyss]]{{Refn|Abyss, fairy ring and Karamja gloves rates assume 55 runs per hour.|group=o|name=55 runs/hr}}
+|rowspan=3|31,680
+|rowspan=3|{{Coins|{{GEP|Nature rune|64*2*55}}}}
+|rowspan=3|{{Coins|{{GEP|Nature rune|64*2*55*1.6|round=0}}}}
+|-
+|style="text-align:center;" |{{plinkp|Fairy ring|pic=Dramen_staff}} {{Fairycode|ckr}}{{NamedRef|55 runs/hr|o}}
+|-
+|style="text-align:center;" |{{ilink|Karamja gloves 3|txt=Karamja gloves 3 or 4|pic=Karamja_gloves_3}}{{NamedRef|55 runs/hr|o}}
+|-
+|{{ilink|Achievement diary cape|pic=Achievement_diary_cape}}{{Refn|Achievement diary cape rates assume 120 runs per hour.|group=o}}
+|69,120
+|{{Coins|{{GEP|Nature rune|64*2*120}}}}
+|{{Coins|{{GEP|Nature rune|64*2*120*1.6|round=0}}}}
+|}
+{{Reflist|group=o}}
+Note: These figures above do not include the cost for recharging [[Amulet of glory|amulets of glory]], [[stamina potion]]s, and [[pure essence]].
+
+*Experience needed (91–99): 7,131,600
+*Pure essence needed: 792,400
+*№ of inventories (64 ess per inventory): 12,382
+*Total profit: {{Coins|{{GEP|Nature rune|1584800}}-{{GEP|Pure essence|792400}}}} (without outfit); {{Coins|{{GEP|Nature rune|2535680}}-{{GEP|Pure essence|792400}}}} (with outfit)

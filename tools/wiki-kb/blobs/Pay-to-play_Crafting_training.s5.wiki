@@ -1,0 +1,87 @@
+===Levels 54–77/99: Battlestaves===
+{{Var|perHour|2450}}
+Crafting battlestaves offers relatively fast experience and is usually cheaper compared to other methods. While this method is usually relatively cheap, buying the supplies requires a lot of capital.
+
+Fire and air battlestaves have comparable experience rates to green and blue d'hide bodies, respectively, so choose based on the Grand Exchange prices. Green and blue d'hide bodies require a lot less capital.
+
+Players who have completed tiers of the [[Varrock Diary]] may also purchase noted battlestaves daily from [[Zaff]] for a reduced price. This will save {{Coins|{{GEP|Battlestaff}}-7000}} per battlestaff compared to purchasing them from the Grand Exchange.
+
+[[#Levels 63/77–99: D'hide bodies|Crafting d'hide bodies]] becomes considerably faster at level 77 and even more so at level 84, but air battlestaves remain as a good cheaper alternative.
+
+The experience rates shown in the table below assume {{#var:perHour}} battlestaves crafted per hour. Expect lower rates if idling. With perfect banking, it is possible to craft up to 2,625 battlestaves per hour. [[High Level Alchemy]] can be cast on the battlestaves later to reduce costs while also gaining passive [[Magic]] experience. If including the time taken to cast High Level Alchemy, only 800 battlestaves can be made and alched per hour.
+
+{| class="wikitable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Crafting}} Level
+! colspan="2" rowspan="2" |Battlestaff
+! rowspan="2" |XP
+! rowspan="2" |XP/h
+! rowspan="2" |# to next
+! colspan="4" |Prices ([[Grand Exchange|GE]])
+! colspan="3" |Prices ([[High Alchemy|HA]])
+|-
+!Buy
+!Profit 
+!Total profit 
+!GP/XP 
+!Profit 
+!Total profit 
+!GP/XP 
+|-
+|54
+|{{plinkt|Water battlestaff|txt=Water}}
+|{{Var|xpWaterBattlestaff|100}} {{#var:xpWaterBattlestaff}} 
+|{{formatnum:{{#expr:{{#var:xpWaterBattlestaff}}*{{#var: perHour}}}}}}
+|{{Var|toNextWaterBattlestaff|736}} {{formatnum:{{#var:toNextWaterBattlestaff}}}} 
+|{{Coins|{{GEP|Battlestaff}}+{{GEP|Water orb}}}}
+|{{Coins|{{GEPT|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}}}}
+|{{Coins|({{GEPT|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}})*{{#var:toNextWaterBattlestaff}}}}
+|{{Coins|({{GEPT|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}})/{{#var:xpWaterBattlestaff}}}}
+|{{Coins|{{HA|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}}-{{GEP|Nature rune}})*{{#var:toNextWaterBattlestaff}}}}
+|{{Coins|({{HA|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}}-{{GEP|Nature rune}})/{{#var:xpWaterBattlestaff}}}}
+|-
+|58
+|{{plinkt|Earth battlestaff|txt=Earth}}
+|{{Var|xpEarthBattlestaff|112.5}} {{#var:xpEarthBattlestaff}} 
+|{{formatnum:{{#expr:{{#var:xpEarthBattlestaff}}*{{#var: perHour}}}}}}
+|{{Var|toNextEarthBattlestaff|972}} {{formatnum:{{#var:toNextEarthBattlestaff}}}} 
+|{{Coins|{{GEP|Battlestaff}}+{{GEP|Earth orb}}}}
+|{{Coins|{{GEPT|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}}}}
+|{{Coins|({{GEPT|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}})*{{#var:toNextEarthBattlestaff}}}}
+|{{Coins|({{GEPT|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}})/{{#var:xpEarthBattlestaff}}}}
+|{{Coins|{{HA|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}}-{{GEP|Nature rune}})*{{#var:toNextEarthBattlestaff}}}}
+|{{Coins|({{HA|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}}-{{GEP|Nature rune}})/{{#var:xpEarthBattlestaff}}}}
+|-
+|62
+|{{plinkt|Fire battlestaff|txt=Fire}}
+|{{Var|xpFireBattlestaff|125}} {{#var:xpFireBattlestaff}} 
+|{{formatnum:{{#expr:{{#var:xpFireBattlestaff}}*{{#var: perHour}}}}}}
+|{{Var|toNextFireBattlestaff|1300}} {{formatnum:{{#var:toNextFireBattlestaff}}}}
+
+|{{Coins|{{GEP|Battlestaff}}+{{GEP|Fire orb}}}}
+|{{Coins|{{GEPT|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}}}}
+|{{Coins|({{GEPT|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}})*{{#var:toNextFireBattlestaff}}}}
+|{{Coins|({{GEPT|Fire battlestaff}}-({{GEP|Battlestaff}}+{{GEP|Fire orb}}))/{{#var:xpFireBattlestaff}}}}
+|{{Coins|{{HA|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}}-{{GEP|Nature rune}})*{{#var:toNextFireBattlestaff}}}}
+|{{Coins|({{HA|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}}-{{GEP|Nature rune}})/{{#var:xpFireBattlestaff}}}}
+|-
+| rowspan="2" |66
+| rowspan="2" |{{plinkp|Air battlestaff}}
+| rowspan="2" |[[Air Battlestaff|Air]]
+| rowspan="2" |{{Var|xpAirBattlestaff|137.5}} {{#var:xpAirBattlestaff}} 
+| rowspan="2" |{{formatnum:{{#expr:{{#var:xpAirBattlestaff}}*{{#var: perHour}}}}}}
+|{{Var|to77AirBattlestaff|7123}} {{formatnum:{{#var:to77AirBattlestaff}}}}<ref name="to77" group="n">To [[Crafting]] level 77.</ref> 
+| rowspan="2" |{{Coins|{{GEP|Battlestaff}}+{{GEP|Air orb}}}}
+| rowspan="2" |{{Coins|{{GEPT|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}}}
+|{{Coins|({{GEPT|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}})*{{#var:to77AirBattlestaff}}}}<ref name="to77" group="n" />
+| rowspan="2" |{{Coins|(({{GEPT|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}))/{{#var:xpAirBattlestaff}}}}
+| rowspan="2" |{{Coins|{{HA|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}-{{GEP|Nature rune}})*{{#var:to77AirBattlestaff}}}}<ref name="to77" group="n" />
+| rowspan="2" |{{Coins|({{HA|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}-{{GEP|Nature rune}})/{{#var:xpAirBattlestaff}}}}
+|-
+|{{Var|to99AirBattlestaff|91187}} {{formatnum:{{#var:to99AirBattlestaff}}}}<ref name="to99" group="n">To [[Crafting]] level 99.</ref> 
+|{{Coins|({{GEPT|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}})*{{#var:to99AirBattlestaff}}}}<ref name="to99" group="n" />
+|{{Coins|({{HA|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}-{{GEP|Nature rune}})*{{#var:to99AirBattlestaff}}}}<ref name="to99" group="n" />
+|}<references group="n" />

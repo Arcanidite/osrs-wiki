@@ -1,0 +1,18 @@
+===Keys to the Crypt===
+{{Needed|[[Fishing rod]], [[raw slimy eel]], 5 [[coins]], [[blue dye]], [[orange dye]], [[purple dye]], [[yellow dye]], [[black goblin mail]], [[goblin potion]], black key from previous section, [[combat]] equipment for the next section|recommended=Two teleports to [[Draynor Village]], [[combat bracelet]] for [[Ranging Guild]] teleport}}
+{{Checklist|
+* Leave the cave; you can equip a piece of equipment to be thrown out of the cave, then you can teleport.
+* Talk to [[Aggie]] in Draynor Village. {{Chat option|2 Can you make dyes for me please?|4 Can you make black or white dye?}}
+* Acquire a [[raw slimy eel]] and head to the [[Fishing Contest]] area in [[Hemenster]] with a fishing rod.
+* Click the gate. {{Chat option|3 I need to catch a Hemenster Whitefish.}}
+* Catch a [[whitefish]].
+* Return to Aggie to receive a [[white goblin mail]]. {{Chat option|2 Can you make dyes for me please?|4 Could you remove the dye from this goblin mail?}}
+* Prepare dyes and return to the Goblin Temple wearing the white goblin mail. Do not teleport out of the temple if your inventory is full or you will lose your goblin mail.
+* Steal the [[Saragorgak key]] from the priest in the western room of the temple. 
+** Remove the goblin mail to leave the room quicker.
+* Repeat the operation of stealing keys and dying your mail in the following order:
+** Yellow (north-west)
+** Purple (south-west)
+** Orange (south-east)
+** Blue (east)
+* Before you leave, unlock the crypt with the six keys to give you more inventory space.}}

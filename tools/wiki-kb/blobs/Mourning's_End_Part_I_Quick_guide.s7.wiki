@@ -1,0 +1,20 @@
+===The sheep===
+{{Map|align=right|mtype=pin|caption=Location of the sheep.
+|2609,3389,title:Location of the yellow sheep,icon:yellowPin,desc:
+|2620,3368,title:Location of the green sheep,icon:greenPin,desc:
+|2608,3346,title:Location of the red sheep,icon:redPin,desc:
+|2569,3383,title:Location of the blue sheep,icon:bluePin,desc:
+}}
+{{Needed
+|at least 1 [[red dye|red]], [[green dye|green]], [[blue dye|blue]], and [[yellow dye]]; [[ogre bellows]]; [[fixed device]]
+|recommended=[[West Ardougne Teleport]], or [[Ardougne Teleport|East Ardougne Teleport]] and walk west; alternatively, use the [[Lever (Edgeville)|Edgeville Wilderness teleport lever]] to reach [[Ardougne]]
+}}
+{{Checklist|
+*Go to the [[Feldip Hills]] swamp (east of fairy ring {{Fairycode|AKS}}) or the less dangerous swamp south-west of [[Castle Wars]] (north-east of fairy ring {{Fairycode|BKP}})
+*Use the desired [[dye]] on an empty [[ogre bellow]], then the dyed [[ogre bellows]] on a [[swamp toad]] to get a [[coloured toad]] (at least 1 of each colour).
+*Re-dye one sheep in each group their respective colour.
+**Go to a [[sick-looking sheep|coloured sheep]] herd north of [[East Ardougne]] used in the [[Sheep Herder]] quest.
+**Use the respective [[coloured toad]] on the [[fixed device]] and equip it.
+**Select the ''Aim and Fire'' attack style.
+**Use the controls to aim at a [[sick-looking sheep|coloured sheep]] and fire the [[fixed device]].
+}}

@@ -1,0 +1,142 @@
+==Walkthrough==
+===Tiffy/Amik===
+'''''Items required: [[Law rune]], [[Enchanted gem]] and [[Molten glass]] '''OR''' 10k [[Coins]].'''''
+{{Checklist|
+*Speak with [[Sir Tiffy Cashien]] in [[Falador Park]]. {{Chat option|1Do you have any jobs for me yet?|1Yes, I'm interested.|1Ask about the Wanted! Quest|1How will all that help?}}
+*Go talk to [[Sir Amik Varze]] in the [[White Knights' Castle]] on the west side of the {{FloorNumber|uk=2}}. {{Chat option|3No, not right now...}}
+*Report back to Sir Tiffy. {{Chat option|1Ask about the Wanted! Quest}}
+*Head back to Sir Amik and talk to him again. {{Chat option|3Sure, I'll help you!}}
+*Report once more to Tiffy. {{Chat option|1Ask about the Wanted! Quest}}
+**{{Chat option|1Buy One}}: If you want to pay 10k coins for the [[Commorb]].
+**{{Chat option|2Have One Made|1YES}}: If you have the required materials to make the Commorb.
+*Use the "contact" option on the Commorb. {{Chat option|1Current Assignment}}
+}}
+
+===Daquarius===
+'''''Items required: Combat equipment, [[Commorb]].'''''
+{{Checklist|
+*Head over to [[Taverley Dungeon]].
+*Follow the dungeon north, then east and then south, down to the [[Black Knights' Base]].
+*Talk to [[Lord Daquarius]] in the south-western most room.
+*Kill a level 33 [[Black Knight]]; Daquarius will automatically speak to you once a knight is killed. You '''must''' finish this dialogue before speaking to him again!
+*Talk to Lord Daquarius again.
+}}
+===Mage of Zamorak===
+'''''Items required: 20 unnoted [[rune essence]] or [[pure essence]] (Must all be the same type), [[Commorb]].'''''
+{{Checklist|
+*Talk to the [[Mage of Zamorak]] {{Chat option|1Solus Dellagar}} (or {{Chat option|2}} if [[Temple of the Eye]] is completed.) in [[Varrock]] at the  [[Varrock#Altars_of_Zamorak|Altar of Chaos]].
+**If you have not yet started the [[Enter the Abyss]] miniquest, you must first talk to him in the Wilderness north-east of [[Edgeville]]. He will then tell you to talk to him in [[Varrock]].
+*Speak to him again to give him the 20 rune or pure essence. {{Chat option|1Solus Dellagar}}
+}}
+
+===Hunt for Solus===
+'''''Items required: [[Commorb]].'''''
+
+'''WARNING:''' This part of the quest can take '''20-30+ minutes''' (depending on which locations you must scan, and teleport availability), and there is no way to "click to continue" through  the dialogue with [[Savant]] during cut-scenes.
+{{Checklist|
+*Head to [[Canifis]] and [[Savant]] will call you. (fairy ring {{fairycode|CKS}})
+*Use the "scan" option of the [[Commorb]] near the bank in Canifis to unveil [[Solus Dellagar]].
+*Have a look at the item list in the table below to find Solus Dellagar's location. Scan with the Commorb at the location.
+**Keep tracking down Solus Dellagar by following the item clues until you get the 20 noted [[pure essence]]. There are 7 locations in total that you will visit.
+**Note: On the '''fourth''' scan location, Solus will ward the player off with a strong cast of [[Flames of Zamorak]], dealing a high percentage of your current [[Hitpoints]] total. This damage will not kill you and [[Savant]] will teleport you back to  [[Falador]]. 
+**Note: On the '''sixth''' scan location, Solus will summon a level 32 [[Black Knight]] that attempts to kill the player. Be prepared for this, however it is not necessary to kill this Black Knight.
+}}
+{| class="wikitable align-center-1"
+! colspan="2" |Item
+!Savant says
+!Location
+|-
+|{{plinkt|Fremennik purple cloak}}
+|It's... a cloak?
+|[[Rellekka]]
+|-
+|{{plinkt|Banana}}
+|It's... a banana?
+|[[Musa Point]] [[banana plantation]]
+|-
+|{{plinkt|Blue wizard hat}}
+|It's...a wizard hat?
+|[[Wizards' Tower]] south of Draynor Village, {{FloorNumber|uk=0}} library (fairy ring {{Fairycode|dis}})
+|-
+|{{plinkt|Bone spear}}
+|It's... a very strange weapon?
+|[[Dorgesh-Kaan mine]] - Bring a light source, and follow the goblin to the mines and [[Nardok's Bone Weapons]] in order to scan for Solus. You do '''not''' need to finish [[The Lost Tribe]] in order to complete this step. You only need to progress far enough in The Lost Tribe to clear the rubble in the Lumbridge castle basement and proceed through the tunnel behind it.
+|-
+|{{plinkt|Bear fur}}
+|It's... fur?
+|[[Ardougne Market]]
+|-
+|{{plinkt|Blue cape}}
+|It's a cape...
+|[[Champions' Guild]] - you need to be inside the guild before you scan your Commorb in order for Solus to appear
+|-
+|{{plinkt|Cake}}
+|It's... a cake?
+|[[Ardougne Market]]
+|-
+|{{plinkt|Castle wars ticket|txt=Castle{{nbsp}}wars{{nbsp}}ticket}}
+|It's... a ticket?
+|[[Castle Wars]]
+|-
+|{{plinkt|Cream hat}}
+|It's... a hat?
+|The [[Grand Tree]], next to [[King Narnode Shareen]] (not by the clothing store that sells the hat).
+|-
+|{{plinkt|Earmuffs}}
+|It's... ear muffs?
+|[[Canifis Slayer Tower]]
+|-
+|{{plinkt|Right eye patch}}
+|It's... an eye patch?
+|[[Brimhaven]] pub
+|-
+|{{plinkt|Fake beard}}
+|It's...a fake beard?
+|[[Ali Morrisane]]'s stall in [[Al Kharid]]
+|-
+|{{plinkt|Fremennik cloak|pic=Fremennik green cloak}}
+|It's... a cloak?
+|[[Rellekka]]
+|-
+|{{plinkt|Fur}}
+|It's... fur?
+|[[Ardougne Market]]
+|-
+|{{plinkt|Giant frog legs}}
+|It's... some big frogs legs?
+|[[Lumbridge Swamp Caves]] - Bring a [[light source]], a [[spiny helmet]], and if it is your first time entering, a [[rope]]. Head to the end of the caves near the level 99 frogs.<br/>Using the Tears of Guthix teleport from a games necklace and running north is a quick way to get there.
+|-
+|{{plinkt|Goblin mail}}
+|It's... goblin armour?
+|[[Goblin Village]]
+|-
+|{{plinkt|Greenman's ale}}
+|It's a beer?
+|[[Dragon Inn]] ([[Yanille]])
+|-
+|{{plinkt|Red vine worm}}
+|It's... a worm?
+|[[McGrubor's Wood]] (fairy ring {{Fairycode|als}})
+|-
+|{{plinkt|Pure essence}}<br />(20 noted)
+|It's some kind of highly magically susceptible rock...
+|[[Rune essence mine]]
+|-
+|{{plinkt|Toy horsey|pic=Black toy horsey}}
+|It's... a toy horse?
+|[[Draynor Village]], near [[Diango]]
+|-
+|{{plinkt|Unholy symbol}}
+|It's... an unholy symbol!
+|[[Shrine of Scorpius]], north of the [[Observatory]] with all the [[ghost]]s
+|}
+
+===Final Battle===
+'''''Items required: Combat equipment, Commorb.'''''
+{{Checklist|
+{{Instance}}
+*Head to the [[rune essence mine]] by talking to one of the teleporting mages.
+*Kill [[Solus]].
+*Head back to [[Falador]] and talk to [[Sir Amik Varze]] in the [[White Knights' Castle]].
+*'''Congratulations, quest complete!'''
+}}

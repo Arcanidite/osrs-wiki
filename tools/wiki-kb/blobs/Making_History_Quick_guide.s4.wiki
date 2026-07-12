@@ -1,0 +1,7 @@
+===Erin the silver merchant===
+{{Map|2442,3139|mtype=square|r=4|align=right|width=250|height=250|caption=The location to dig for the chest.}}
+{{Checklist|
+*Talk to the [[Silver merchant]] in the [[East Ardougne]] market. {{Chat option|2Ask about the outpost.}}
+*Dig with your spade to find the [[Chest (Making History)|chest]] buried north of [[Castle Wars]].
+*Open the chest with the [[enchanted key]] to get a journal.
+}}

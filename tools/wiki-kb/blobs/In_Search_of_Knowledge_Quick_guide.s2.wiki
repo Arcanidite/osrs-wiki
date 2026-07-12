@@ -1,0 +1,15 @@
+==Walkthrough==
+{{Checklist|*Talk to [[Brother Aimeri]] in the southern part of the [[Forthos Dungeon]] (by the entrance to [[Sarachnis]]).
+**Quick travel there includes: [[Watson teleport]] scroll, [[Xeric's Talisman]] to Xeric's Glade, [[Kourend Castle Teleport]] and [[skills necklace]] to the [[Woodcutting Guild]].
+*Use all 5 pieces of your food on him.
+*Talk to [[Brother Aimeri]] again, and ask who are you to start the miniquest. {{Chat option|2}}
+*Protect from Magic and then run west through the long hallway to the room with [[Undead Druid]]s.
+*Search the [[musty bookshelf|bookshelves]] until you have all three tomes:
+**[[Tome of the moon]]
+**[[Tome of the sun]]
+**[[Tome of the temple]]
+* Collect 4 of each [[tattered sun page|tattered sun]], [[tattered moon page|moon]] and [[tattered temple page|temple page]] by killing any monsters in the [[Forthos Dungeon]]. Put them in the corresponding tomes.
+**One suggested strategy that is fast, and somewhat AFKable, is to kill [[Temple spiders]] using multi-hit [[Ancient Magicks]] or a fast weapon, such as the [[Toxic Blowpipe]], with [[Protect from Melee]] activated making sure to [[Tolerance|reset aggression]] every 10 minutes.
+*Go to the [[Arceuus Library]]
+*Use the tomes on [[Logosia]]
+*'''Congratulations, miniquest complete!'''}}

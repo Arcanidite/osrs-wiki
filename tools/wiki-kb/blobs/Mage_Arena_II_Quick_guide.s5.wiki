@@ -1,0 +1,55 @@
+=== Killing the followers ===
+{{Inventory|align=right
+|1= Stamina potion(4)
+|2= Super restore(4)
+|3= Saradomin brew(4)
+|4= Energy potion(4)
+|5= Energy potion(4)
+|6= Enchanted symbol
+|7= Blood rune
+|8= Fire rune
+|9= Air rune
+|10= Ring of recoil
+|11= 
+|12= Wilderness sword 1
+|13= Shark
+|14= Shark
+|15= Shark
+|16= Shark
+|17= Shark
+|18= Shark
+|19= Shark
+|20= Shark
+|21= Shark
+|22= Shark
+|23= Shark
+|24= Shark
+|25= Shark
+|26= Shark
+|27= Shark
+|28= Royal seed pod
+}}
+{{Equipment
+| align = right
+| head = Cream hat
+| cape = Saradomin cape
+| neck = Amulet of magic
+| ammo = Rada's blessing 2
+| weapon = Saradomin staff
+| torso = Black d'hide body
+| legs = Black d'hide chaps
+| shield = Black d'hide shield
+| gloves = Rune gloves
+| boots = Mystic boots
+| ring = Ring of recoil
+| caption = Low-risk gear
+}}
+{{Needed|[[Enchanted symbol]], [[god staff]], runes for 50+ casts of a [[god spell]] ([[File:Blood rune.png]] [[blood rune]]s, [[File:Fire rune.png]] [[fire rune]]s, [[File:Air rune.png]] [[air rune]]s), food, [[blighted super restore|restore potions]], energy potions such as [[stamina potion|stamina]], item to cut web|recommended=Teleport item such as [[amulet of glory]], an [[antipoison]] potion if near [[poison spider]]s.}}
+{{Checklist|
+*Bring the appropriate [[god staff]] for the first follower you choose to kill and enough runes for at least 50 casts of the respective [[god spell]].
+*Go to the location of the follower you choose to kill and use the [[enchanted symbol]] to spawn the follower.
+*Kill the follower that spawns and pick up the remains it drops.
+*Go to [[Kolodion]] and give him the remains. This can be done one at a time or all at once. 
+*At the bank, refill your runes and supplies and switch to the [[god staff]] that matches your next follower. Repeat the above for the remaining two followers, going to Kolodion after each kill to give the dropped remains.
+*'''Congratulations, miniquest complete!'''
+}}

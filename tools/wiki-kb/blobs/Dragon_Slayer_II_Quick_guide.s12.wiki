@@ -1,0 +1,36 @@
+====Kourend key piece====
+'''Items required:''' ''Food, light source, gear to protect from high level skeletons.''
+
+'''Recommended:''' ''Stamina potions''
+[[File:Dragon Slayer II crypt map.png|thumb|right|Map of the crypt.]]{{Checklist|
+*Enter the crypt whose entrance is found in the southern part of the [[Graveyard of Heroes]]. Follow the dirt path south to a small building.
+**Caution: The crypt is full of powerful aggressive skeletons and zombies that attack with all three combat styles.
+*Head to the bottom of the crypt and inspect the tomb to find the puzzle.
+*The solution to the puzzle is different for everyone. Refer to the table below to solve this puzzle.
+**"The one from '''[Location]''' sat at the north of the table": Place this statue '''north'''.
+**"Opposite the one with '''[Weapon]'''": Place this statue '''south.'''
+**"The one with '''[Weapon]''' asked the .....": Place this statue '''west.'''
+**Place the final statue '''east'''.
+*Search the tomb to get the [[Dragon key piece]].
+}}
+{| class="wikitable"
+!Person
+!Weapon
+!Location
+|-
+!Aivas
+|Crossbow
+|Zartharim
+|-
+!Camorra
+|Axe
+|Saranthium
+|-
+!Robert
+|Bow
+|Arkney
+|-
+!Tristan
+|Sword
+|Karville
+|}

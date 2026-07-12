@@ -1,0 +1,8 @@
+=== Locating the followers ===
+
+{{Map:God followers spawn locations}}
+{{Needed|[[Enchanted symbol]], energy potions such as [[stamina potion|stamina]], food, item to cut web|recommended=Teleport item such as [[amulet of glory]], an [[antipoison]].}}
+{{Checklist|
+*Use the [[enchanted symbol]] in various areas in the Wilderness by process of "[[hot & cold]]", to find the location a follower spawns in. The location is random and different for each player, and changes occasionally.
+}}
+{{clear}}

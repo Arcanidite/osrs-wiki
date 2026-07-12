@@ -1,0 +1,84 @@
+===Levels 49–65/99: Stealing artefacts===
+{{Main|Stealing artefacts}}
+[[File:Stealing artefacts.png|300px|right|thumb|Stealing artefacts in Port Piscarilius.]]
+{{Equipment
+|align = right
+|head = Graceful hood
+|cape = Graceful cape
+|neck = 
+|ammo = Rada's blessing 4
+|weapon = 
+|torso = Graceful top
+|legs = Graceful legs
+|shield = Book of the dead
+|gloves = Graceful gloves
+|boots = Graceful boots
+|ring = Ring of endurance
+}}
+{{Inventory
+|align = right
+|Stolen pendant|Runite bolts\100000|Onyx bolt tips\100000|Onyx bolts
+|Stamina potion|Stamina potion|Stamina potion|Stamina potion
+|Stamina potion|Stamina potion|Stamina potion|Stamina potion
+|Stamina potion|Stamina potion|Stamina potion|Stamina potion
+|Stamina potion|Stamina potion|Stamina potion|Stamina potion
+|Stamina potion|Stamina potion|Stamina potion|Stamina potion
+|Stamina potion|Lockpick|Coins 10000\1000000|Divine rune pouch
+}}
+{{Rune pouch
+|align = right
+|1 = Law rune\10000
+|2 = Soul rune\10000
+|3 = Body rune\10000
+|4 = Mind rune\10000
+}}
+[[Stealing artefacts]] in [[Port Piscarilius]] offers the fastest experience from level 49 to 65. This method remains as a feasible alternative for players who prefer something less click-intensive, or for players who want to train Thieving while doing actions that can be done while moving. Such actions include [[Fletching#Projectiles|fletching ammo]], casting [[High Level Alchemy]], burning logs, cutting gems, making certain potions, and baking pies with the [[Bake Pie]] spell.
+
+To begin, lure two guards so that the bridges can be passed without being spotted. See [[Stealing artefacts|this page]] for details. Once the guards have been set up, this method goes as follows:
+# Talk to [[Captain Khaled]] to be assigned a house to steal from.
+# Use the [[book of the dead]]/[[Kharedst's memoirs]] teleport to the Fisher's Flute, and steal the artefact from drawers inside the assigned house. A [[lockpick]] is required for this.
+# Smuggle the artefact without getting caught by the guards.
+# Bring the stolen artefact to Captain Khaled, and repeat. Recharge the book of the dead at the [[Old Memorial]] and restore run energy whenever needed.
+
+Each successful heist yields Thieving experience and 500–1,000 coins. Getting caught will lower experience rates fairly notably, so it is usually better to wait for an opportune moment to sneak past the patrollers than risk getting caught.
+
+The experience rates in the table below assume using stamina potions, the book of the dead, and guard lures. With good practice, it is possible to gain up to 270,000–280,000 experience per hour at level 99.
+
+{| class="wikitable align-center-1 align-right-2"
+! {{SCP|Thieving}} level
+! XP/hour
+|-
+| 49
+| 150,000
+|-
+| 55
+| 163,000
+|-
+| 60
+| 174,000
+|-
+| 65
+| 186,000
+|-
+| 70
+| 197,000
+|-
+| 75
+| 208,000
+|-
+| 80
+| 219,000
+|-
+| 85
+| 230,000
+|-
+| 90
+| 241,000
+|-
+| 95
+| 252,000
+|-
+| 99
+| 261,000
+|}
+{{clear}}

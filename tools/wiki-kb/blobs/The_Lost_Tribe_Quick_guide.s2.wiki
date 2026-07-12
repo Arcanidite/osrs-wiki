@@ -1,0 +1,34 @@
+==Walkthrough==
+[[File:Dorgeshuun_Tunnels.png|thumb|400px|A map of the tunnels.]]
+{{Checklist|
+*Talk to [[Sigmund]] on the {{FloorNumber|uk=1}} of the Lumbridge Castle. {{Chat option|1Do you have any quests for me?|1Yes}}
+*Ask the following people about what happened in the cellar. You can stop when one mentions a goblin in the basement.
+**[[Duke Horacio]] {{Chat option|3What happened in the cellar?}} ({{Chat option|4What happened in the cellar?}} if started Dragon Slayer)
+**[[Cook_(Lumbridge)|Cook]] {{Chat option|5Do you know what happened in the castle cellar?}} ({{Chat option|2Do you know what happened in the castle cellar?}} if started [[Recipe for Disaster]])
+**[[Hans]] {{Chat option|1Do you know what happened in the cellar?}}
+**[[Father Aereck]] {{Chat option|4Do you know what happened in the castle cellar?}}
+**[[Bob]] {{Chat option|1Do you know what happened in the castle cellar?}}
+**[[Gee]] or [[Donie]] {{Chat option|5Do you know what happened in the castle cellar?}}
+*Talk to [[Duke Horacio]] again. {{Chat option|3The cook says he saw something in the cellar}} ({{Chat option|4The cook says he saw something in the cellar}} if started Dragon Slayer)
+*Climb-down the trapdoor in the kitchen on the {{FloorNumber|uk=0}}.
+*Use your [[pickaxe]] on the rubble in the basement and climb through the hole.
+*Light your [[light source]] and grab the [[Brooch (The Lost Tribe)|brooch]] which sits on the floor about 10 steps into cave. 
+*Show the brooch to the duke. {{Chat option|2Talk about something else.|3I dug through the rubble...}} or {{Chat option|4I dug through the rubble...}} or {{Chat option|3I dug through the rubble...}}
+*Go to the [[Varrock Palace]] library in [[Varrock]].
+* Talk to [[Reldo]]. {{Chat option|1...}} or {{Chat option|2}} if not started shield of Arrav
+*Search the northern [[Bookcase (The Lost Tribe)|bookcase]] on the west wall for goblin symbol book.
+*Read through the book.
+*Go to [[Goblin Village]] and talk to the generals, and mediate for them until you learn goblin emotes. {{Chat option|1Have you ever heard of the Dorgeshuun?|3It doesn't really matter|2Well either way they refused to fight|3Well I found a brooch underground...|3Well why not show me both greetings?}}
+*Go back to the Lumbridge Castle cellar and follow the map in the image on this page through the caves. Don't stray from it! (Clicking on the minimap also auto-paths the correct path)
+*At the end of the cave talk to [[Mistag]], and do your [[Goblin Bow]] in front of him.
+*Talk to Mistag then let him take you back to Lumbridge. {{Chat option|4Can you show me the way out of the mines?}}
+*Talk to the duke. He won't believe you. {{Chat option|3I've made contact with the cave goblins...}} or {{Chat option|4I've made contact with the cave goblins...}}
+*Pickpocket Sigmund and unlock his chest in the other room to find some [[HAM robes]]. Keep them for [[Death to the Dorgeshuun]].
+*Go to the [[HAM Dungeon|HAM lair]] west of Lumbridge Castle.
+*Pick the lock on the trapdoor and enter the lair.
+*Search the crate south of the ladder to find the stolen [[silverware]].
+*Bring the silverware to the Duke. He will fire Sigmund and give you a signed peace treaty. {{Chat option|3I found the missing silverware in the HAM cave!}}
+*Go into the basement again. Follow [[Kazgar]] to travel to Mistag. {{Chat option|2}}
+*Talk to Mistag, with the peace treaty in your inventory, and a cutscene will play.}}
+
+Congratulations, quest complete!

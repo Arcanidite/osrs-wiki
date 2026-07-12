@@ -1,0 +1,38 @@
+===Guardians of the Rift===
+{{Needed|[[Chisel]] and [[pickaxe]] (both obtainable during the relevant section)}}
+''Be advised this section has arrow prompts ([[File:Yellow arrow map marker.png|link=]]) throughout the tutorial. Follow the arrows to complete the quest.''
+{{Checklist|
+* Speak to each of the apprentices in no particular order.
+* Speak to Wizard Persten. The [[Guardians of the Rift]] tutorial begins after this step.
+* Speak to Apprentice Cordelia.
+* Speak to Apprentice Felix, then take a [[weak cell]] from the table.
+* Speak to Apprentice Tamara, then place the weak cell on the inactive cell tile near her.
+* Speak to Apprentice Felix.
+* Take a weak cell from the table, then click on the essence pile to assemble a guardian.
+* Repeat the previous step for the other essence pile.
+* Speak to Apprentice Tamara.
+* Mine five guardian fragments from the guardian remains.
+* Speak to Apprentice Felix.
+* Work at the workbench to turn guardian fragments into guardian essence.
+* Speak to Apprentice Tamara.
+* Take an [[uncharged cell]] from the table.
+* Enter the [[Mind Altar]] and click the altar.
+* Speak to Apprentice Tamara.
+* Click the weak cell tile, then power-up [[The Great Guardian]].
+* Speak to Apprentice Tamara.
+* Repeat the process of mining five guardian fragments and turning them into guardian essence.
+* Enter the [[Water Altar]] and click the altar
+* Power-up [[The Great Guardian]].
+* Speak to Apprentice Tamara.
+* Click on the Essence pile again to assemble another guardian. 
+* Speak to Apprentice Tamara.
+* Repeat the process of mining guardian fragments and turning them into guardian essence.
+* Take an uncharged cell from the table and use the water portal talisman on the water guardian.
+* Click the Water Altar.
+* Leave the altar and speak to Apprentice Tamara.
+* Place the cell you made on the cell tile.
+* Speak to Apprentice Tamara.
+* Power-up [[The Great Guardian]].
+* Upon completion of the tutorial, you will automatically exit and speak to Archmage Sedridor.
+*'''Congratulations, quest complete!'''
+}}

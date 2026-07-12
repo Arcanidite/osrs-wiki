@@ -1,0 +1,21 @@
+===Dreamland===
+'''''Items required:''' Dream potion, good [[food]], [[armour]], [[Weapons|weapon]], a [[tinderbox]], and to save a trip the [[seal of passage]].''
+
+'' For a detailed explanation of how to combat the upcoming enemies, refer to the [[Dream Mentor#The battles|full quest guide]].''
+
+'''Note:''' You cannot use Prayer. You cannot use emergency teleports - the only way to leave during the fight is using the lectern, however, you'll have to start over from the beginning.
+
+'''Magic Strategy 1:''' If you have [[Ancient Magicks]] unlocked, a simple strategy would be to bring runes for [[Blood Burst]] and [[Ice Burst]]. Setting your staff to autocast [[Blood Burst]] while manually casting [[Ice Burst]] to freeze the enemy as needed. The [[Burst spells]] area of effect damage works well against the multiple Doubt's which spawn around you. The healing effect of [[Blood Burst]] can keep you alive if you run out of food.
+{{Checklist|
+{{Instance}}
+*''Light'' the Ceremonial Brazier in the dream hall building.
+*Talk to [[Cyrisus]]. {{Chat option|1Yes, let's go!}}
+*During the fight, you can leave at any time by using the lectern, although this will force you to re-battle any defeated bosses.
+**Kill [[The Inadequacy]]
+**Kill [[The Everlasting]] - can be [[safespot]]ted by the lectern to the north
+**Kill [[The Untouchable]] - can be safespotted by the lectern to the north
+**Kill [[The Illusive]]
+*Return to the Oneiromancer. {{Chat option|2Cyrisus.}}
+*'''Congratulations, quest complete!'''
+}}
+{{Clear}}

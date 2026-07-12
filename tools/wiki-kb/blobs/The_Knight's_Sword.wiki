@@ -1,0 +1,125 @@
+{{External|rs|rsc=The knight's sword}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = The Knight's Sword
+|number = 14
+|image = [[File:The Knight's Sword.png|300px]]
+|release = [[6 April]] [[2001]]
+|update = Massive update!
+|members = No
+|series = None
+|developer = [[Paul Gower]]
+}}
+'''The Knight's Sword''' is a free-to-play intermediate [[Quests|quest]] in which the [[White Knight]] [[Squire Asrol]] needs help making [[Sir Vyvin]] a new ceremonial sword.
+
+==Details==
+{{Quest details
+|start = Talk to the [[squire]] in the courtyard of the [[White Knights' Castle]] in [[Falador]].
+|startmap = 2977,3342
+|difficulty = Intermediate
+|description = Sir Vyvin's squire is in trouble. He has accidentally lost Sir Vyvin's ceremonial sword. Help him find a replacement without Sir Vyvin finding out.
+|length = Short
+|requirements = * {{SCP|Mining|10|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to run from [[combat level|level]] 57 [[ice warrior]]s and level 53 [[ice giant]]s could help.
+|items = * [[Redberry pie]] (not [[half a redberry pie]])
+* 2 or 4 [[iron bar]]s (4 if you want your own [[blurite sword]])
+*1-3 [[Blurite ore]] (obtained during the quest) - optionally an additional ore each for your own blurite sword and the Falador easy diary ''(Members only)''
+* Any [[pickaxe]] (one spawns in Rimmington)
+|recommended = * {{SCP|Combat|20|link=yes}}
+* [[Armour]] and some [[food]] for aggressive enemies near the [[blurite rocks]]
+* Fast travel to several locations:
+**[[Falador]] to start the quest plus 2 additional trips - [[Falador Teleport]], [[Ring of wealth]] ''([[Members only]])''
+**[[Varrock]] (1 trip) - [[Varrock Teleport]], [[Chronicle]], [[Skills necklace]] to [[Cooks' Guild]] ''([[Members only]])'' or [[Ring of wealth]] to [[Grand Exchange]] ''(Members only)''
+**[[Mudskipper Point]] (2 trips) - [[fairy ring]] {{fairycode|aiq}} ''(Members only)'', [[Teleport to House]] (Rimmington) ''(Members only)'', [[Rat Pits]] minigame teleport ''(Members only)'', or [[Falador Teleport]]
+|ironman = 
+*A method to obtain iron bars:
+**{{SCP|Mining|15}} [[Mining]] and {{SCP|Smithing|15}} [[Smithing]] if smelting [[iron ore]]
+**Spawn in level 18 [[Wilderness]] north-west of the [[Ferox Enclave]], next to the bears west of the Graveyard of Shadows. Accessible via {{SCP|Minigame|Clan Wars}} [[Minigame Teleport]]
+**1/42.67 drop from [[dwarf|dwarves]] ({{SCP|Combat|10}}) in the mines under Falador
+**''(Members only)'' Spawn in [[Thurid's Brain Buckets]] on the [[Sunset Coast]] in [[Varlamore]] (requires {{SCP|Quest|[[Children of the Sun]]}})
+**''(Members only)'' 1/34.42 drop from sorting [[small salvage]] with {{SCP|Sailing|15|link=yes}}
+*A method to obtain a redberry pie:
+**{{SCP|Cooking|10}} [[Cooking]] to cook one. A pie dish can be found in the [[Varrock Palace]] kitchen, and [[redberries]] can be picked just west of the [[South-east Varrock mine]]
+**''(Members only)'' Purchased from [[Romily Weaklax]] in the [[Cooks' Guild]] with {{SCP|Cooking|32|link=yes}} and a [[chef's hat]]
+**''(Members only)'' Partial completion of [[Perilous Moons]] to purchase a Redberry pie from [[Yarnio]]
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}
+
+==Walkthrough==
+===Sword trouble===
+{{Map|name=Squire|x=2977|y=3342|r=3|mtype=square|align=right|caption=The location of Sir Vyvin's squire.|width=200|height=200}}
+{{Needed|recommended=Fast travel method to Varrock and Mudskipper Point}}
+[[File:Squire chathead.png|left|frameless]]
+Talk to the [[Squire]], found in the courtyard of the [[White Knights' Castle]] in [[Falador]]. He has lost [[Sir Vyvin]]'s sword, a family heirloom made many generations ago by the Imcando dwarves. Offer to make a new one and he will mention that [[Reldo]] the [[Varrock Palace]] librarian may know where to find an Imcando dwarf.
+
+:'''Note''': If you have already completed [[The Giant Dwarf]], skip the following step and go straight to [[Thurgo]]; otherwise you must talk to Reldo before you may continue.
+
+Talk to Reldo in the [[Varrock Palace]] library, the northernmost room on the ground floor. Ask him what he knows about Imcando dwarves, and he will point you towards [[Mudskipper Point]], just south of [[Port Sarim]].
+
+:'''Note:''' If you still need ingredients for the [[redberry pie]] required in the following section, you can take the [[pie dish]] from the kitchen to the east now, then pick [[redberries]] by the [[South-east Varrock mine]].
+ 
+{{Map|name=Thurgo|x=3001|y=3144|r=2|mtype=square|align=right|caption=The location of Thurgo, an Imcando dwarf.|width=200|height=200}}
+
+===Thurgo the Imcando dwarf===
+{{Needed|[[Redberry pie]]|recommended=Fast travel method to Falador}}
+[[File:Thurgo chathead.png|left|frameless|80px]]
+Head south of [[Port Sarim]] to find [[Thurgo]] on the west side of a hill, in his hut with the anvil. Ask him if he would like some [[redberry pie]], and he will take some and eat it. Ask if he can make a special sword, and he requests that you bring him a picture of the lost sword as a reference.
+{{Clear|left}}
+===Acquiring the picture===
+[[File:Portrait detail.png|left|100px|frameless]]
+Return to the Squire in the Falador Castle courtyard again, and he will mention that a [[portrait]] of Sir Vyvin's father includes the sword.
+
+'''Note:''' You must have spoken to the squire before you may obtain the portrait.
+
+From the courtyard of the [[White Knights' Castle]] in [[Falador]], go east through three doors, and then up the ladder. Go west through the door and then further west through the open doorway, then up the staircase. Sir Vyvin's room will be directly to the south. 
+
+You need to obtain the portrait by searching the [[Cupboard (The Knight's Sword)|cupboard]] inside his room, but Sir Vyvin will stop you if he is inside the room and looking towards the player. Open the door to his room and wait for him to walk out, or hop worlds until you find one where he is outside the room, then take the portrait from the cupboard.
+
+===Mining the blurite===
+{{Needed|A [[pickaxe]], the portrait, 2 [[iron bar]]s (4 if making extra sword)|recommended=Food and plate armour (slash resistant) for low levels, fast travel method to Mudskipper Point and Falador|skills={{SCP|Mining|10}} to mine [[blurite ore]]}}
+[[File:Asgarnia_Ice_Dungeon_safespot.png|thumb|left|220px|Safespot by the cave entrance sign.]]
+[[File:Asgarnian_Ice_Dungeon.png|thumb|right|240px|The Asgarnia Ice Dungeon.]]
+Return to [[Thurgo]] and give him the portrait. He now knows a [[blurite sword]] is what he needs to make, and you must obtain the [[blurite ore]] for it. This ore is only found in the [[Asgarnia Ice Dungeon]], located on the hill to the north east. '''All enemies in the dungeon are [[aggressive]], so get ready to run past them'''. Head down the ladder on the hill, run north through the dungeon until you reach the pirates, then head east down the first corridor and enter the large icy room, which contains several bright blue rocks to mine for the ore. At the south-eastern end of the icy room, there is an entrance to the [[skeletal wyvern]]s section of the cave. Standing directly in front of this entrance is a [[safespot]], which you may wait in until it is safe to mine the nearby rocks.
+
+'''Note''': Mine 1-2 extra if you are planning to complete the easy [[Falador Diary]] and/or want your own [[blurite sword]].
+{{Clear}}
+
+===Creating the sword===
+{{Needed|2 [[iron bar]]s (4 if making extra sword), [[blurite ore]] (2 if making extra sword)|recommended=an additional [[redberry pie]] if doing [[The Giant Dwarf]]}}
+[[File:Blurite sword detail.png|left|80px|frameless]]
+Return to [[Thurgo]] with your [[blurite ore]]s and your iron bars and he will make you a sword. If you want a sword for yourself, drop it and ask Thurgo for a replacement, then pick up the second sword again.
+
+'''Note''': [[Members]] planning on doing [[The Giant Dwarf]] soon after this quest are recommended to give Thurgo an additional [[redberry pie]] now to avoid a return trip during that quest.
+
+Go back to the [[Squire]] and he will take one of your blurite swords.
+
+'''Congratulations, quest complete!'''
+
+==Rewards==
+{{Quest rewards
+|name = The Knight's Sword
+|image = [[File:The Knight's Sword reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+* {{SCP|Smithing|12,725}} [[Smithing]] [[experience]]
+*A [[blurite sword]] (if you got [[Thurgo]] to make you an extra one)
+*The ability to smelt [[blurite ore]] into [[blurite bar]]s (members only)
+}}
+
+==Required for completing==
+Completion of The Knight's Sword is required for the following:
+
+* [[Prying Times]]
+
+==Transcript==
+{{hastranscript|quest}}
+
+==Trivia==
+*When trying to complete the quest while having the [[blurite sword]] equipped, the [[Squire]] would say "So can you un-equip it and hand it over to me now please?"
+*The [[Smithing]] experience granted by this quest is so much that, if the player's Smithing level is 1, it will be levelled up to 29 after this quest. If they start at 15 Smithing (to create the iron bars), it will be levelled up to 31.
+*This is the only free-to-play quest that requires a skill above level 1.
+
+{{The Knight's Sword}}
+{{DEFAULTSORT|Knight's Sword, The}}

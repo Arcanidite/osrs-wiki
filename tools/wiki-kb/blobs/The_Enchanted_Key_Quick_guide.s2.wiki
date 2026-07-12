@@ -1,0 +1,78 @@
+==Walkthrough==
+{{Map|align=right|mtype=pin|caption=Overview of treasure locations
+|2716,3606
+|2621,3239
+|2417,3382
+|2448,3443
+|3033,3437
+|2972,3304
+|3016,3166
+|3161,3176
+|3291,3220
+|3299,3349
+|3160,3490
+}}
+Begin this mini-quest by getting your [[enchanted key]]. Make sure you have completed the Making History quest, otherwise when you feel your Enchanted Key it will simply say, "You already have the journal." or "You've already delivered the journal." You will need to find treasure in the same manner as a game of hot and cold by "feeling" the key and reacting to its response.
+
+In three of the sites, there will be the God [[mjolnir]]s, or God spears:
+
+*[[Saradomin mjolnir]] [[File:Saradomin mjolnir.png|Saradomin mjolnir]]
+*[[Guthix mjolnir]] [[File:Guthix mjolnir.png|Guthix mjolnir]]
+*[[Zamorak mjolnir]] [[File:Zamorak mjolnir.png|Zamorak mjolnir]]
+
+This is the only way to obtain these unique weapons, other than trading with another player.
+
+===Temperature readings===
+The enchanted key changes temperature as the player moves about. Its temperature is based on the distance of the treasure from the player, measured in the number of steps (including diagonal steps) it would take to reach the treasure, ignoring any obstacles (this is the {{wp|Chebyshev distance}} between the player and treasure). The warmer the key gets, the closer the player is to the treasure. Clicking "Feel Enchanted key" gives information on its temperature, consisting of two parts described below. It is like playing the game of hot and cold.
+
+====First part====
+The following table indicates the 8 possible temperature readings based on the distance to the treasure (measured as described above):
+
+{| class="wikitable"
+!Distance
+!Temperature description
+|-
+|More than 1000 squares
+|'''It's freezing'''
+|-
+|701 to 1000 squares
+|'''It's very cold'''
+|-
+|401 to 700 squares
+|'''It's cold'''
+|-
+|101 to 400 squares
+|'''It's warm'''
+|-
+|61 to 100 squares
+|'''It's hot'''
+|-
+|31 to 60 squares
+|'''It's very hot'''
+|-
+|5 to 30 squares
+|'''Ouch! It's burning hot'''
+|-
+|Up to 4 squares
+|'''The key is steaming'''
+|}
+
+When a player receives the message "'''The key is steaming'''", they can use a [[spade]] to dig up the treasure. Note that, as indicated by the table, there is a 9 by 9 square region in which they may dig.
+
+====Second part====
+If the player has already felt the key since last logging on or finding treasure, the temperature reading will contain a second part, indicating whether the temperature is warmer, colder or the same
+as the last reading, thereby indicating whether the distance to the treasure (measured as described above) has increased, decreased, or is the same. The three descriptions are:
+
+*'''Warmer than last time''' - You are getting closer than before.
+*'''Colder than last time''' - You are getting farther away than before.
+*'''Same temperature as last time''' - You are the same distance away.
+
+Players may use this information to determine which direction to go, as follows:
+
+#Move one square north, south, east and west, taking temperature readings between each step.
+#One direction, for example north, will result in the message "'''Warmer than last time'''".
+#Move directly north while constantly taking readings, until the message "'''Same temperature as last time'''" is produced.
+#Move one square east and west, taking temperature readings between each step.
+#One direction, say east, will result in the message "'''Warmer than last time'''".
+#At this point the treasure is directly north-east of the player.
+#Move diagonally in this direction while taking readings, until the message "'''The key is steaming'''" is produced.

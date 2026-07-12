@@ -1,0 +1,45 @@
+{{External|rs}}
+{{Infobox Item
+|name = Sickle mould
+|image = [[File:Sickle mould.png]]
+|release = [[13 July]] [[2004]]
+|update = Nature Spirit Quest
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Used to make sickles.
+|value = 10
+|weight = 0.453
+|exchange = Yes
+|id = 2976
+}}
+[[File:Sickle mould detail.png|left|130px]]
+A '''sickle mould''' is a type of mould that can be used together with a [[silver bar]] to create a [[silver sickle]]. One can make a silver sickle at a [[Crafting]] level of 18.
+
+The sickle mould can be purchased from the following [[shop]]s:
+*[[Dommik's Crafting Store.|Dommik's Crafting Store]] in [[Al Kharid]]
+*[[Jamila's Craft Stall]] in [[Sophanem]]
+*[[Rasolo the Wandering Merchant]] west of the [[Fishing Guild]]
+*[[Rommik's Crafty Supplies]] in [[Rimmington]]
+
+==Products==
+{{Uses tool list|Sickle mould}}
+
+==Shop locations==
+{{Store locations list|Sickle mould}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|daterange = 26 April –<br/>6 June 2005
+|change = The item's examine was changed from "''Used to make sickles''"{{sic}} to "''Used to make sickles.''"
+}}
+{{Subject changes footer}}
+
+{{Nature Spirit}}
+{{Mould}}
+[[Category:Moulds]]

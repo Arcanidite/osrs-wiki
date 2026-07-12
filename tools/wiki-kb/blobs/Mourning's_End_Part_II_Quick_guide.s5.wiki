@@ -1,0 +1,17 @@
+====Chest #1====
+[[File:Mourning's End Part II - chest 1 solution.png|275px|right|thumb|Chest #1 solution.]]
+{{Checklist|
+*Go back to the [[Temple of Light]].
+*Take the eastern set stairs, that are directly in front of the entrance, to the middle floor.
+*Head to the area indicated by the rope on the guide map and use your rope on the rocks.
+*Drop your [[new key]].
+*Head to the area marked with mirror #1 just east of the stairs.
+*''Pull'' the crystal dispenser on the wall to reset the puzzle and then ''collect'' all of the items which includes mirrors and a {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}.{{Chat option|1Pull the lever.|1Pull it.|3Take all the items.}}
+*Place {{plinkp|Hand mirror}} Mirror #1 to shine the light north.
+*{{plinkp|Hand mirror}} Mirror #2 points west.
+*{{plinkp|Hand mirror}} Mirror #3 points south.
+*Place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}. The light will turn yellow.
+*{{plinkp|Hand mirror}} Mirror #4 points east.
+*Cross the gap to the other side. Use any agility boosts you have. You will have to cross this gap a second time later.
+*Open the chest to obtain 2 mirrors and a {{plink|Cyan crystal (Mourning's End Part II)|txt=Cyan crystal}}.
+}}{{clear}}

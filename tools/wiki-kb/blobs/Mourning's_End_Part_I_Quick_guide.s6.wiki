@@ -1,0 +1,13 @@
+===The mourners===
+{{Needed
+|[[Mourner outfit]], [[mourner letter]], [[feather]], [[soft leather]], [[magic log]], [[toad crunchies]] or [[premade t'd crunch]], 1 free inventory space
+|recommended=[[West Ardougne Teleport]], or [[Ardougne Teleport|East Ardougne Teleport]] and walk west; alternatively, use the [[Lever (Edgeville)|Edgeville Wilderness teleport lever]] to reach [[Ardougne]]
+}}
+{{Checklist|
+*Go to [[West Ardougne]].
+*Equip the full mourner outfit.
+*Enter the [[mourner HQ]] in the north-east corner of [[West Ardougne]].
+*Go down the [[trapdoor (Mourner Headquarters)|trapdoor]] and talk to [[Essyllt]] in the basement. (2 free inventory spaces needed)
+*Talk to the gnome on a rack. Select the chat option about being tickled and [[toad crunchies]]. {{Chat option|3You said about toad crunchies and being tickled.}}
+*Use the [[feather]] on him.
+*Release the gnome and talk to him with [[soft leather]], a [[magic log]], and either [[toad crunchies]] or [[premade t'd crunch]].}}

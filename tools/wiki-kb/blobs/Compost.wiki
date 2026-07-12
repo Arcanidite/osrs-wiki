@@ -1,0 +1,425 @@
+{{external|rs}}
+{{otheruses|the [[Farming]] item}}
+{{Infobox Item
+|name = Compost
+|image = [[File:Compost.png]]
+|release = [[11 July]] [[2005]]
+|update = Farming
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Empty, Drop
+|examine = Good for plants, helps them grow.
+|value = 20
+|weight = 3.000
+|exchange = Yes
+|id = 6032
+}}
+[[File:Compost detail.png|left|130px]]
+'''Compost''' is an item used in the [[Farming]] skill to reduce the chance of a farming patch becoming [[Disease (Farming)|diseased]] per growth stage by 50 %.{{CiteTwitter|author=Mod Kieren|url=https://twitter.com/JagexKieren/status/906202229677359104|date=7 September 2017|archiveurl=https://reldo.runescape.wiki/i/109604|archivedate=28 May 2020|quote=So with the release of [[Ultracompost]] I figured I'd explain how compost affects crops dying. Sorry it is very word heavy! Fire any questions:)}} When used on a farming patch, each bucket grants 18 Farming experience.
+
+It also increases the minimum yield and maximum number of harvests received from [[allotment]]s, [[hops]] and [[herb]]s.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1088561370432487424|date=24 January 2019|archiveurl=https://reldo.runescape.wiki/i/106504|archivedate=28 May 2020|quote=[Flower/berry/cactus patches] don't depend on the compost state. Allotments, hops and herbs do.}} The minimum number of herbs per harvest increases to 4.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1131004000256630791|date=22 May 2019|archiveurl=https://reldo.runescape.wiki/i/104362|archivedate=21 September 2021|quote=4 for standard compost, 5 for super compost, 6 for the ultra one.}} This also applies to [[giant seaweed]] patches [[underwater]]{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1019207794350845953|date=17 July 2018|archiveurl=https://reldo.runescape.wiki/i/108470|archivedate=28 May 2020|quote=[Does compost increase giant seaweed yield?] Yeah.}} and [[celastrus bark]] from a fully grown [[celastrus seed]].{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1088630402284224512|date=24 January 2019|archiveurl=https://reldo.runescape.wiki/i/98850|archivedate=28 May 2020|quote=Yes, celastrus would be helped by composting.}}
+
+Compost can be upgraded into [[supercompost]] by using one dose of [[compost potion]] on either a bucket of regular compost, or a [[compost bin]] filled with regular compost. Supercompost can also be made directly without a compost potion, by filling the compost bin with [[Supercompost#Suitable_items|higher-level produce]]. It can be upgraded further into [[ultracompost]] by using 25 [[volcanic ash]] on the bin of [[supercompost]], while [[big compost bin]]s, such as the one in the [[Farming Guild]], require 50 volcanic ash.
+
+==Uses==
+Three buckets of compost can be used as payment for a farmer to watch over [[barley seed]]s as they grow, or two buckets for [[potato seed]]s.
+
+==Farming info==
+{{Skill info
+|name = Compost
+|skill1name = Farming
+|skill1lvl = 1
+|skill1exp = 18
+|facilityname = [[Farming patch]]
+|facility = Any un-composted farming patch
+}}
+
+==Creation==
+Compost can be made at [[farming patches]] by putting 15 items (including [[weeds]], [[sweetcorn]], and other farming produce) into a [[compost bin]]. It takes 60 minutes after a compost bin is closed for the vegetation to become 15 [[buckets]] worth of compost. Filling a bucket with compost gives 4.5 Farming [[experience]], and collecting all of the compost from a full compost bin yields 67.5 Farming experience. 
+
+Compost can be bought from [[farming shops]], such as those near the cabbage patch south of [[Falador]], and [[Alice's Farming Shop]] north-west of [[Port Phasmatys]].
+
+<nowiki>*</nowiki>Ironmen wishing to create their own compost rather than buy it can use the [[Cabbages (plant)|cabbages]] south of the Falador allotment, the [[Potato|potatoes]] west of the Ardougne allotment, or the [[wheat]] north-east of the Catherby allotment on their respective compost bins as a free source of compost generation. The various [[Leaves (disambiguation)|leaves]] from [[Forestry]] also work well since they are gained passively through the activity and are stackable in the inventory.
+
+===Compost bin===
+{{Recipe
+|skill1 = Farming
+|skill1lvl = 1
+|skill1exp = 4.5
+|members = Yes
+|ticks = 4
+|facilities = Compost Bin
+|mat1 = Weeds
+|mat1quantity = 15
+|mat2 = Bucket
+|mat2quantity = 15
+|output1 = Compost
+|output1quantity = 15
+|output1subtxt = Compost bin
+}}
+
+===Big compost bin===
+{{Recipe
+|skill1 = Farming
+|skill1lvl = 45
+|skill1boostable = Yes
+|skill1exp = 4.5
+|members = Yes
+|ticks = 4
+|facilities = Big Compost Bin
+|mat1 = Weeds
+|mat1quantity = 30
+|mat2 = Bucket
+|mat2quantity = 30
+|output1 = Compost
+|output1quantity = 30
+|output1subtxt = Big compost bin
+}}
+
+==Suitable items==
+{| class="wikitable sortable align-center-1"
+! colspan="2" |Item
+! data-sort-type="number" |Cost to Fill
+! data-sort-type="number" |[[Big Compost Bin]]
+|-
+|{{plinkt|Weeds}}
+|{{Coins|{{GEP|Weeds|15}}}}
+|{{Coins|{{GEP|Weeds|30}}}}
+|-
+|{{plinkt|Grain}}
+|{{Coins|{{GEP|Grain|15}}}}
+|{{Coins|{{GEP|Grain|30}}}}
+|-
+|{{plinkt|Kebab}}
+|{{Coins|{{GEP|Kebab|15}}}}
+|{{Coins|{{GEP|Kebab|30}}}}
+|-
+|{{plinkt|Varlamorian kebab}}
+|{{Coins|{{GEP|Varlamorian kebab|15}}}}
+|{{Coins|{{GEP|Varlamorian kebab|30}}}}
+|-
+|{{plinkt|Flax}}
+|{{Coins|{{GEP|Flax|15}}}}
+|{{Coins|{{GEP|Flax|30}}}}
+|-
+|{{plinkt|Redberries}}
+|{{Coins|{{GEP|Redberries|15}}}}
+|{{Coins|{{GEP|Redberries|30}}}}
+|-
+|{{plinkt|Cadava berries}}
+|{{Coins|{{GEP|Cadava berries|15}}}}
+|{{Coins|{{GEP|Cadava berries|30}}}}
+|-
+|{{plinkt|Dwellberries}}
+|{{Coins|{{GEP|Dwellberries|15}}}}
+|{{Coins|{{GEP|Dwellberries|30}}}}
+|-
+|{{plinkt|Potato}}
+|{{Coins|{{GEP|Potato|15}}}}
+|{{Coins|{{GEP|Potato|30}}}}
+|-
+|{{plinkt|Onion}}
+|{{Coins|{{GEP|Onion|15}}}}
+|{{Coins|{{GEP|Onion|30}}}}
+|-
+|{{plinkt|Cabbage}}
+|{{Coins|{{GEP|Cabbage|15}}}}
+|{{Coins|{{GEP|Cabbage|30}}}}
+|-
+|{{plinkt|Cabbage (Draynor Manor)}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Tomato}}{{efn|If filling a bin with tomatoes, at least one compostable item must be of a different type. Otherwise, [[rotten tomato]]es will be produced.}}
+|{{Coins|{{GEP|Tomato|15}}}}
+|{{Coins|{{GEP|Tomato|30}}}}
+|-
+|{{plinkt|Sweetcorn}}
+|{{Coins|{{GEP|Sweetcorn|15}}}}
+|{{Coins|{{GEP|Sweetcorn|30}}}}
+|-
+|{{plinkt|Strawberry}}
+|{{Coins|{{GEP|Strawberry|15}}}}
+|{{Coins|{{GEP|Strawberry|30}}}}
+|-
+|{{plinkt|Lemon}}
+|{{Coins|{{GEP|Lemon|15}}}}
+|{{Coins|{{GEP|Lemon|30}}}}
+|-
+|{{plinkt|Lime}}
+|{{Coins|{{GEP|Lime|15}}}}
+|{{Coins|{{GEP|Lime|30}}}}
+|-
+|{{plinkt|Cooking apple}}
+|{{Coins|{{GEP|Cooking apple|15}}}}
+|{{Coins|{{GEP|Cooking apple|30}}}}
+|-
+|{{plinkt|Banana}}
+|{{Coins|{{GEP|Banana|15}}}}
+|{{Coins|{{GEP|Banana|30}}}}
+|-
+|{{plinkt|Orange}}
+|{{Coins|{{GEP|Orange|15}}}}
+|{{Coins|{{GEP|Orange|30}}}}
+|-
+|{{plinkt|Curry leaf}}
+|{{Coins|{{GEP|Curry leaf|15}}}}
+|{{Coins|{{GEP|Curry leaf|30}}}}
+|-
+|{{plinkt|Peach}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Watermelon slice}}
+|{{Coins|{{GEP|Watermelon slice|15}}}}
+|{{Coins|{{GEP|Watermelon slice|30}}}}
+|-
+|{{plinkt|Grimy ardrigal}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Ardrigal}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Grimy snake weed}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Snake weed}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Grimy volencia moss}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Volencia moss}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Grimy rogue's purse}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Rogue's purse}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Grimy sito foil}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Sito foil}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Guam leaf}}
+|{{Coins|{{GEP|Guam leaf|15}}}}
+|{{Coins|{{GEP|Guam leaf|30}}}}
+|-
+|{{plinkt|Grimy guam leaf}}
+|{{Coins|{{GEP|Grimy guam leaf|15}}}}
+|{{Coins|{{GEP|Grimy guam leaf|30}}}}
+|-
+|{{plinkt|Marrentill}}
+|{{Coins|{{GEP|Marrentill|15}}}}
+|{{Coins|{{GEP|Marrentill|30}}}}
+|-
+|{{plinkt|Grimy marrentill}}
+|{{Coins|{{GEP|Grimy marrentill|15}}}}
+|{{Coins|{{GEP|Grimy marrentill|30}}}}
+|-
+|{{plinkt|Tarromin}}
+|{{Coins|{{GEP|Tarromin|15}}}}
+|{{Coins|{{GEP|Tarromin|30}}}}
+|-
+|{{plinkt|Grimy tarromin}}
+|{{Coins|{{GEP|Grimy tarromin|15}}}}
+|{{Coins|{{GEP|Grimy tarromin|30}}}}
+|-
+|{{plinkt|Harralander}}
+|{{Coins|{{GEP|Harralander|15}}}}
+|{{Coins|{{GEP|Harralander|30}}}}
+|-
+|{{plinkt|Grimy harralander}}
+|{{Coins|{{GEP|Grimy harralander|15}}}}
+|{{Coins|{{GEP|Grimy harralander|30}}}}
+|-
+|{{plinkt|Ranarr weed}}
+|{{Coins|{{GEP|Ranarr weed|15}}}}
+|{{Coins|{{GEP|Ranarr weed|30}}}}
+|-
+|{{plinkt|Grimy ranarr weed}}
+|{{Coins|{{GEP|Grimy ranarr weed|15}}}}
+|{{Coins|{{GEP|Grimy ranarr weed|30}}}}
+|-
+|{{plinkt|Irit leaf}}
+|{{Coins|{{GEP|Irit leaf|15}}}}
+|{{Coins|{{GEP|Irit leaf|30}}}}
+|-
+|{{plinkt|Grimy irit leaf}}
+|{{Coins|{{GEP|Grimy irit leaf|15}}}}
+|{{Coins|{{GEP|Grimy irit leaf|30}}}}
+|-
+|{{plinkt|Barley}}
+|{{Coins|{{GEP|Barley|15}}}}
+|{{Coins|{{GEP|Barley|30}}}}
+|-
+|{{plinkt|Barley malt}}
+|{{Coins|{{GEP|Barley malt|15}}}}
+|{{Coins|{{GEP|Barley malt|30}}}}
+|-
+|{{plinkt|Hammerstone hops}}
+|{{Coins|{{GEP|Hammerstone hops|15}}}}
+|{{Coins|{{GEP|Hammerstone hops|30}}}}
+|-
+|{{plinkt|Asgarnian hops}}
+|{{Coins|{{GEP|Asgarnian hops|15}}}}
+|{{Coins|{{GEP|Asgarnian hops|30}}}}
+|-
+|{{plinkt|Jute fibre}}
+|{{Coins|{{GEP|Jute fibre|15}}}}
+|{{Coins|{{GEP|Jute fibre|30}}}}
+|-
+|{{plinkt|Kelda hops}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Yanillian hops}}
+|{{Coins|{{GEP|Yanillian hops|15}}}}
+|{{Coins|{{GEP|Yanillian hops|30}}}}
+|-
+|{{plinkt|Krandorian hops}}
+|{{Coins|{{GEP|Krandorian hops|15}}}}
+|{{Coins|{{GEP|Krandorian hops|30}}}}
+|-
+|{{plinkt|Wildblood hops}}
+|{{Coins|{{GEP|Wildblood hops|15}}}}
+|{{Coins|{{GEP|Wildblood hops|30}}}}
+|-
+|{{plinkt|Marigolds}}
+|{{coins|{{GEP|Marigolds|15}}}}
+|{{coins|{{GEP|Marigolds|30}}}}
+|-
+|{{plinkt|Rosemary}}
+|{{coins|{{GEP|Rosemary|15}}}}
+|{{coins|{{GEP|Rosemary|30}}}}
+|-
+|{{plinkt|Nasturtiums}}
+|{{coins|{{GEP|Nasturtiums|15}}}}
+|{{coins|{{GEP|Nasturtiums|30}}}}
+|-
+|{{plinkt|Woad leaf}}
+|{{coins|{{GEP|Woad leaf|15}}}}
+|{{coins|{{GEP|Woad leaf|30}}}}
+|-
+|{{plinkt|Limpwurt root}}
+|{{coins|{{GEP|Limpwurt root|15}}}}
+|{{coins|{{GEP|Limpwurt root|30}}}}
+|-
+|{{plinkt|Willow branch}}
+|{{Coins|{{GEP|Willow branch|15}}}}
+|{{Coins|{{GEP|Willow branch|30}}}}
+|-
+|{{plinkt|Rotten apple}}
+|{{NA|colspan=2|Not sold|data-sort=1e10}}
+|-
+|{{plinkt|Apple mush}}
+|{{Coins|{{GEP|Apple mush|15}}}}
+|{{Coins|{{GEP|Apple mush|30}}}}
+|-
+|{{plinkt|Seaweed}}
+|{{Coins|{{GEP|Seaweed|15}}}}
+|{{Coins|{{GEP|Seaweed|30}}}}
+|-
+|{{plinkt|Edible seaweed}}
+|{{Coins|{{GEP|Edible seaweed|15}}}}
+|{{Coins|{{GEP|Edible seaweed|30}}}}
+|-
+|{{plinkt|Giant seaweed}}
+|{{Coins|{{GEP|Giant seaweed|15}}}}
+|{{Coins|{{GEP|Giant seaweed|30}}}}
+|-
+|{{plinkt|Potato cactus}}
+|{{Coins|{{GEP|Potato cactus|15}}}}
+|{{Coins|{{GEP|Potato cactus|30}}}}
+|-
+|{{plinkt|Leaves}}
+|{{Coins|{{GEP|Leaves|15}}}}
+|{{Coins|{{GEP|Leaves|30}}}}
+|-
+|{{plinkt|Oak leaves}}
+|{{Coins|{{GEP|Oak leaves|15}}}}
+|{{Coins|{{GEP|Oak leaves|30}}}}
+|-
+|{{plinkt|Willow leaves}}
+|{{Coins|{{GEP|Willow leaves|15}}}}
+|{{Coins|{{GEP|Willow leaves|30}}}}
+|-
+|{{plinkt|Maple leaves}}
+|{{Coins|{{GEP|Maple leaves|15}}}}
+|{{Coins|{{GEP|Maple leaves|30}}}}
+|-
+|{{plinkt|Yew leaves}}
+|{{Coins|{{GEP|Yew leaves|15}}}}
+|{{Coins|{{GEP|Yew leaves|30}}}}
+|-
+|{{plinkt|Magic leaves}}
+|{{Coins|{{GEP|Magic leaves|15}}}}
+|{{Coins|{{GEP|Magic leaves|30}}}}
+|}
+{{notelist}}
+
+==Products==
+{{Uses material list|Compost}}
+
+==Item sources==
+{{Drop sources|Compost}}
+
+===Shop locations===
+{{Store locations list|Compost}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 10 September 2020
+|update = A Porcine of Interest
+|poll =
+|change = The [[Grand Exchange]] buy limit was changed from 600 to 2,000.
+}}
+{{Subject changes
+|date = 28 April 2016
+|update = Calling Pets & Deadman Death
+|poll = Old School Content Poll 41: Bank placeholders & Skillcapes
+|change = It is now possible to add compost or supercompost to any farming patch during any growth stage of a crop.
+}}
+{{Subject changes
+|date = 28 March 2006
+|update = Temple Trekking
+|change = The item's inventory sprite was rotated.
+}}
+{{Subject changes
+|date = 22 March 2006
+|update = In Aid of the Myreque
+|change = The item was graphically updated.
+}}
+{{Subject changes
+|date = 26 July 2005
+|update = The Forgettable Tale...
+|change = An "Empty" option was added.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Compost detail (historical, v1).png|center|300x150px]]
+|[[File:Compost detail (historical, v2).png|center|300x150px]]
+|[[File:Compost detail.png|center|300x150px]]
+|-
+|[[File:Compost (historical, v1).png|center]]
+|[[File:Compost (historical, v2).png|center]]
+|[[File:Compost.png|center]]
+|-
+|11 July 2005 ⁠–<br/>22 March 2006
+|22 March 2006 –<br/>28 March 2006
+|28 March 2006 –<br/>present
+|}
+
+==References==
+{{Reflist}}
+
+{{Buckets}}
+{{Pies}}
+{{Farming tools}}

@@ -1,0 +1,6 @@
+===Top===
+{{Needed|A [[bucket of water]], [[bloody mourner top]]|recommended=teleportation method to Taverley and to a bank}}
+{{Checklist|
+*Make your way to [[Tegid]] by the [[Taverley]] lake, and talk to him.
+*Search his laundry basket to get [[Tegid's soap]]. {{Chat option|1Steal the soap.}}
+*Use the soap on the [[bloody mourner top]] with a [[bucket of water]] in your inventory to clean it.}}

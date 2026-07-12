@@ -1,0 +1,14 @@
+=====Part 1=====
+[[File:Mourning's End Part II - chest 5 solution - part 1.png|275px|right|thumb|Chest #5, part 1.]]
+{{Checklist|
+*Reset the puzzle
+*{{plinkp|Hand mirror}} Mirror #1 points north.
+*{{plinkp|Hand mirror}} Mirror #2 points west.
+*{{plinkp|Hand mirror}} Mirror #3 points south.
+*Place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}. The light will turn yellow.
+*{{plinkp|Hand mirror}} Mirror #4 points east.
+*Cross the gap to the other side.
+*Place the {{plink|Blue crystal (Mourning's End Part II)|txt=Blue crystal}}.
+*Remove {{plinkp|Hand mirror}} Mirror #4.
+*Rotate {{plinkp|Hand mirror}} Mirror #3 points up.
+*Use the south stairs to head to the top floor.}}{{clear}}

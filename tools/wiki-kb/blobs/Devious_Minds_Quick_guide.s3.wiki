@@ -1,0 +1,3 @@
+===Starting out===
+{{Checklist|'''''Items required: '''None''
+*Talk to the monk outside of the [[Paterdomus Temple]], which is east of [[Varrock]]. {{Chat option|1Sure thing, what do you need?}} (You can use [[fairy ring]] code {{Fairycode|CKS}} and then run west and climb the shortcut to arrive there quickly). }}

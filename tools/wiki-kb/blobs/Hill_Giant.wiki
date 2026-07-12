@@ -1,0 +1,576 @@
+{{External|rs=Hill Giant|rsc=Giant}}
+{{HasTask|Hill giants}}
+{{Multi Infobox
+|text1 = Regular
+|item1 = 
+{{Infobox Monster
+|version1 = 1
+|version2 = 2
+|version3 = 3
+|version4 = 4
+|version5 = 5
+|version6 = 6
+|name = Hill Giant
+|image1 = [[File:Hill Giant.png|150px]]
+|image2 = [[File:Hill Giant (2).png|150px]]
+|image3 = [[File:Hill Giant (3).png|150px]]
+|image4 = [[File:Hill Giant (4).png|150px]]
+|image5 = [[File:Hill Giant (5).png|150px]]
+|image6 = [[File:Hill Giant (6).png|150px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|combat = 28
+|size = 2
+|examine = A very large foe.
+|xpbonus = 0
+|max hit = 4
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Crush]]
+|attack speed = 6
+|respawn = 30
+|slayxp = 35
+|cat = Hill Giants
+|assignedby = krystilia,mazchna,vannaka
+|hitpoints = 35
+|att = 18
+|str = 22
+|def = 26
+|mage = 1
+|range = 1
+|attbns = 18
+|strbns = 16
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|dlight = 0
+|dstandard = 0
+|dheavy = 0
+|elementalweaknesstype = Earth
+|elementalweaknesspercent = 25
+|poisonresistance = 0
+|venomresistance = 0
+|immunecannon = No
+|immunethrall = No
+|id1 = 2098,13502
+|id2 = 2099,13503
+|id3 = 2100,13504
+|id4 = 2101
+|id5 = 2102
+|id6 = 2103
+}}
+|text2 = Kourend
+|item2 =
+{{Infobox Monster
+|name = Hill Giant
+|image = [[File:Hill Giant (Kourend).png|150px]]
+|release = [[9 June]] [[2016]]
+|update = The Catacombs of Kourend
+|members = Yes
+|combat = 28
+|size = 2
+|examine = A very large foe that has been corrupted by the Dark Altar.
+|xpbonus = 0
+|max hit = 4
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Crush]]
+|attack speed = 6
+|respawn = 30
+|slayxp = 35
+|cat = Hill Giants
+|assignedby = mazchna,vannaka
+|hitpoints = 35
+|att = 18
+|str = 22
+|def = 26
+|mage = 1
+|range = 1
+|attbns = 18
+|strbns = 16
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|dlight = 0
+|dstandard = 0
+|dheavy = 0
+|elementalweaknesstype = Earth
+|elementalweaknesspercent = 25
+|poisonresistance = 0
+|venomresistance = 0
+|immunecannon = No
+|immunethrall = No
+|dropversion = Catacombs
+|id = 7261
+}}
+|text3 = Varlamore
+|item3 =
+{{Infobox Monster
+|version1 = Shirtless
+|version2 = Clothed
+|version3 = Helmetless
+|name = Hill Giant
+|image1 = [[File:Hill Giant (Varlamore, 1).png|x300px]]
+|image2 = [[File:Hill Giant (Varlamore, 2).png|x300px]]
+|image3 = [[File:Hill Giant (Varlamore, 3).png|x300px]]
+|release = [[20 March]] [[2024]]
+|update = Varlamore: Part One
+|members = Yes
+|combat = 28
+|size = 2
+|examine = A very large foe.
+|xpbonus = 0
+|max hit = 4
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Crush]]
+|attack speed = 6
+|respawn = 30
+|slayxp = 35
+|cat = Hill Giants
+|assignedby = mazchna,vannaka
+|hitpoints = 35
+|att = 18
+|str = 22
+|def = 26
+|mage = 1
+|range = 1
+|attbns = 18
+|strbns = 16
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|dlight = 0
+|dstandard = 0
+|dheavy = 0
+|elementalweaknesstype = Earth
+|elementalweaknesspercent = 25
+|poisonresistance = 0
+|venomresistance = 0
+|immunecannon = Not immune
+|immunethrall = Not immune
+|id1 = 12848
+|id2 = 12849
+|id3 = 12850
+}}
+|text4 = Plateau
+|item4 =
+{{Infobox Monster
+|version1 = Brassard
+|version2 = Hammer
+|version3 = Scimitar and singlet
+|name = Hill Giant
+|image1 = [[File:Hill Giant (Giants' Plateau, 1).png|x300px]]
+|image2 = [[File:Hill Giant (Giants' Plateau, 2).png|x300px]]
+|image3 = [[File:Hill Giant (Giants' Plateau, 3).png|x300px]]
+|release = [[16 July]] [[2020]]
+|update = Ferox Enclave
+|members = No
+|combat = 28
+|size = 2
+|examine = A very large foe.
+|xpbonus = 0
+|max hit = 4
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Crush]]
+|attack speed = 6
+|respawn = 30
+|slayxp = 35
+|cat = Hill Giants
+|assignedby = mazchna,vannaka
+|hitpoints = 35
+|att = 18
+|str = 22
+|def = 26
+|mage = 1
+|range = 1
+|attbns = 18
+|strbns = 16
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|dlight = 0
+|dstandard = 0
+|dheavy = 0
+|elementalweaknesstype = Earth
+|elementalweaknesspercent = 25
+|poisonresistance = 0
+|venomresistance = 0
+|immunecannon = No
+|immunethrall = No
+|dropversion = Giants' Plateau
+|id1 = 10374
+|id2 = 10375
+|id3 = 10376
+}}
+}}
+A '''Hill Giant''' is a type of [[Giant (race)|giant]] found in several locations around [[Gielinor]]. For [[free-to-play]], the [[Edgeville Dungeon]] offers the most spawns, while for [[members]], the Shayzien [[Giant Pit]] also has numerous spawns. The Edgeville dungeon may be accessed through the entrance located in the house north-east of [[Barbarian Village]] and west of the [[Cooks' Guild]] if the player has a [[brass key]]. The Edgeville Dungeon area is usually very crowded in free-to-play worlds, as players like to gather [[big bones]] to bury them for [[Prayer]] experience. Another free-to-play hill giants area was added at the [[Giants' Plateau]], near Al Kharid (located east of the Al Kharid General Store and [[Louie's Armoured Legs Bazaar.]], east past the gap in the gate). They are [[aggressiveness|aggressive]] to players below combat level 57.
+
+There are two Hill Giants in level 17-18 [[Wilderness]], but the area is unsuitable for training due to the possibility of [[player killing|player killers]] and its long distance from the nearest bank, found in [[Ferox Enclave]].
+
+Hill giants have relatively low [[Defence]] for their level, which makes them quite good for experience from level 30 to level 50. Killing them in the [[Catacombs of Kourend]] is also one of the fastest ways to farm for [[ancient shard]]s and [[dark totem]] pieces because of their low [[hitpoints]] relative to other catacombs monsters.
+
+Hill Giants have several unique drops, including [[giant champion scroll]]s and [[giant key]]s, which give players access to the [[Giant Champion]] and [[Obor]] boss fights (and to Obor's [[chest (Obor's lair)|chest]] after defeating him for the first time), respectively.
+
+The giants found on the [[Giants' Plateau]] share the same drops as all other hill giants, except that they drop [[steel scimitar]]s instead of [[steel longsword]]s and [[iron med helm]]s instead of [[iron full helm]]s.
+
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Hill Giant
+|location = [[Lava Maze]]
+|levels = 28
+|members = No
+|mapID = 0
+|plane = 0
+|x:3094,y:3849|x:3110,y:3854|x:3117,y:3854|x:3104,y:3875
+|mtype = pin
+|leagueRegion = wilderness
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = [[Giant Pit]]
+|levels = 28
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1446,y:3614|x:1448,y:3609|x:1440,y:3606|x:1440,y:3618|x:1441,y:3614|x:1448,y:3612|x:1444,y:3607|x:1447,y:3606|x:1439,y:3610|x:1448,y:3617|x:1444,y:3613|x:1442,y:3610|x:1446,y:3618
+|mtype = pin
+|leagueRegion = kourend
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = [[Gnome Maze]]
+|levels = 28
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2545,y:3144|x:2548,y:3147|x:2507,y:3149
+|mtype = pin
+|leagueRegion = kandarin
+|dropverison =
+}}
+{{LocLine
+|name = Hill Giant
+|location = North of the [[Observatory]]
+|levels = 28
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2438,y:3208|x:2438,y:3218|x:2439,y:3212|x:2441,y:3217|x:2443,y:3211|x:2445,y:3209
+|mtype = pin
+|leagueRegion = kandarin
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = South-west of [[Tree Gnome Stronghold]]
+|levels = 28
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2369,y:3394|x:2369,y:3401|x:2369,y:3404|x:2371,y:3398|x:2372,y:3395|x:2372,y:3401
+|mtype = pin
+|leagueRegion = kandarin
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = [[Boneyard Hunter area]]
+|levels = 28
+|members = No
+|mapID = 0
+|plane = 0
+|x:3307,y:3669|x:3300,y:3649
+|mtype = pin
+|leagueRegion = wilderness
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = [[Edgeville Dungeon]]
+|levels = 28
+|members = No
+|mapID = 12
+|plane = 0
+|x:3099,y:9832|x:3100,y:9836|x:3106,y:9827|x:3107,y:9835|x:3110,y:9845|x:3111,y:9841|x:3113,y:9831|x:3116,y:9832|x:3117,y:9835|x:3117,y:9843|x:3117,y:9850|x:3122,y:9844
+|mtype = pin
+|leagueRegion = misthalin
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = [[Taverley Dungeon]]
+|levels = 28
+|members = Yes
+|mapID = 20
+|plane = 0
+|x:2902,y:9736|x:2905,y:9732|x:2907,y:9735|x:2913,y:9732|x:2913,y:9741
+|mtype = pin
+|leagueRegion = asgarnia
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = [[Deep Wilderness Dungeon]]
+|levels = 28
+|members = Yes
+|mapID = 26
+|plane = 0
+|x:3042,y:10317|x:3044,y:10306|x:3045,y:10308|x:3045,y:10311|x:3045,y:10321|x:3046,y:10315
+|mtype = pin
+|leagueRegion = wilderness
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = [[Giants' Den]]
+|levels = 28
+|members = Yes
+|mapID = -1
+|x:1426,y:9887|x:1428,y:9884|x:1429,y:9880|x:1432,y:9888|x:1433,y:9879|x:1436,y:9883|x:1439,y:9886|x:1444,y:9881
+|mtype = pin
+|leagueRegion = kourend
+|dropversion =
+}}
+{{LocLine
+|name = Hill Giant
+|location = [[Catacombs of Kourend]]
+|levels = 28
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1665,y:10071|x:1634,y:10011|x:1634,y:10015|x:1637,y:10008|x:1638,y:10012|x:1647,y:10036|x:1650,y:10034|x:1650,y:10038|x:1655,y:10038|x:1662,y:10070|x:1662,y:10073|x:1663,y:10063|x:1663,y:10066
+|mtype = pin
+|leagueRegion = kourend
+|dropversion = Catacombs
+}}
+{{LocLine
+|name = Hill Giant (Giants' Plateau)
+|location = [[Giants' Plateau]]
+|levels = 28
+|members = No
+|mapID = 0
+|plane = 0
+|x:3372,y:3152|x:3373,y:3148|x:3375,y:3144|x:3376,y:3150|x:3379,y:3144|x:3380,y:3152|x:3381,y:3147
+|mtype = pin
+|leagueRegion = desert
+|dropversion = Giants' Plateau
+}}
+{{LocLine
+|name = Hill Giant (Varlamore)
+|location = [[Avium Savannah]]
+|levels = 28
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1614,y:2964|x:1619,y:2953|x:1617,y:2957|x:1620,y:2963|x:1613,y:2959|x:1623,y:2957
+|mtype = pin
+|leagueRegion = Varlamore
+|dropversion =
+}}
+{{LocTableBottom}}
+* [[Shaman Caves]] (Possible encounter when smashing [[Barrel (Shaman Caves)|barrels]])
+
+<gallery>
+File:Hill Giant (Edgeville Dungeon) safespot.png|A safespot for the hill giants in Edgeville Dungeon.
+File:Hill Giant (Giant Pit) safespot.png|Hill giant safespot in the Giant Pit.
+File:Hill Giant (Giants' Plateau) safespot.png|A safespot for the Hill Giants on Giants' Plateau using the Orchid.
+</gallery>
+
+==Money making==
+{{Mmgsection|Killing hill giants}}
+
+For low-level players, Hill Giants can be a great way to make money as they always drop [[big bones]], which are {{Coins|{{GEP|Big bones}}}} coins each. The major and most noticeable drawback for free-to-play players is that the [[Edgeville Dungeon]] is often crowded. 
+
+For free-to-play players with a high Defence (~65+), a good way to save run energy while killing Hill Giants is to only equip [[dragonhide armour]]. The relatively lower weight will allow the player to run further without exhausting your energy, and the player's Defence will be high enough to negate a large amount of potential damage.
+
+==Drops==
+{{DropLogProject|jagex=yes}}
+
+{{Average drop value|mob=Hill Giant}}
+===100%===
+{{DropsTableHead}}
+{{DropsLine|name=Big bones|quantity=1|rarity=Always}}
+{{DropsTableBottom}}
+
+===Pre-roll===
+{{DropsTableHead}}
+{{DropsLine|name=Giant key|quantity=1|rarity=1/128|raritynotes=<ref group=d>The drop rate is doubled in the [[Wilderness]].</ref>{{CiteDiscord|author=Mod Lykos|url=https://discord.com/channels/177206626514632704/424846377621651456/1346466801831383070|date=04 March 2025|quote=it's a 1/128 drop rate for the giant key outwith the wilderness and 1/64 inside it <br>if you don't get that, then everything else is calculated out of a x/126 rate|archiveurl=https://reldo.runescape.wiki/i/27962813#chat-messages-424846377621651456-1346466801831383070|archivedate=2026-03-08}}|altrarity=2/128}}
+{{DropsTableBottom}}
+
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLine|name=Iron dagger|quantity=1|rarity=4/128}}
+{{DropsLine|name=Iron med helm|quantity=1|rarity=5/128|dropversion=Giants' Plateau|raritynotes={{refn|group=d|name=giant|Only dropped by giants on the Giants' Plateau.}}}}
+{{DropsLine|name=Iron full helm|quantity=1|rarity=5/128|raritynotes={{refn|group=d|name=reg|Only dropped by giants not on the Giants' Plateau.}}}}
+{{DropsLine|name=Iron kiteshield|quantity=1|rarity=3/128}}
+{{DropsLine|name=Steel scimitar|quantity=1|rarity=2/128|dropversion=Giants' Plateau|raritynotes={{refn|group=d|name=giant}}}}
+{{DropsLine|name=Steel longsword|quantity=1|rarity=2/128|raritynotes={{refn|group=d|name=reg}}}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Runes and ammunition===
+{{DropsTableHead}}
+{{DropsLine|name=Iron arrow|quantity=3|rarity=6/128}}
+{{DropsLine|name=Fire rune|quantity=15|rarity=3/128}}
+{{DropsLine|name=Water rune|quantity=7|rarity=3/128}}
+{{DropsLine|name=Law rune|quantity=2|rarity=3/128}}
+{{DropsLine|name=Steel arrow|quantity=10|rarity=2/128}}
+{{DropsLine|name=Mind rune|quantity=3|rarity=2/128}}
+{{DropsLine|name=Cosmic rune|quantity=2|rarity=2/128}}
+{{DropsLine|name=Nature rune|quantity=6|rarity=2/128}}
+{{DropsLine|name=Chaos rune|quantity=2|rarity=1/128}}
+{{DropsLine|name=Death rune|quantity=2|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Herbs===
+''There is a 7/128 chance of rolling the herb drop table for [[members]].''
+{{DropsTableHead}}
+{{HerbDropLines|7/128|f2p=yes}}
+{{DropsTableBottom}}
+
+===Seeds===
+''There is an 18/128 chance of rolling the seed drop table for [[members]].''
+
+{{DropsTableHead}}
+{{GeneralSeedDropLines|18/128|28|f2p=yes}}
+{{DropsTableBottom}}
+
+===Coins===
+''The overall chance of rolling a coin drop is 65/128 in [[free-to-play]] and 40/128 for [[members]] with an average value of {{Coins|24}} and {{Coins|35}} respectively.''
+{{DropsTableHead}}
+{{DropsLine|name=Coins|namenotes={{(f)}}|quantity=5|rarity=18/128|raritynotes=<ref group="d" name="f2"/>}}
+{{DropsLine|name=Coins|quantity=38|rarity=14/128}}
+{{DropsLine|name=Coins|quantity=52|rarity=10/128}}
+{{DropsLine|name=Coins|quantity=15|rarity=8/128}}
+{{DropsLine|name=Coins|namenotes={{(f)}}|quantity=10|rarity=7/128|raritynotes=<ref group="d" name="f2">Only dropped in [[free-to-play]].</ref>}}
+{{DropsLine|name=Coins|quantity=8|rarity=6/128}}
+{{DropsLine|name=Coins|quantity=88|rarity=2/128}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Other===
+{{DropsTableHead}}
+{{DropsLine|name=Limpwurt root|quantity=1|rarity=11/128}}
+{{DropsLine|name=Beer|quantity=1|rarity=6/128}}
+{{DropsLine|name=Body talisman|quantity=1|rarity=2/128}}
+{{DropsLine|name=Nothing|rarity=1/128}}
+{{DropsTableBottom}}
+{{reflist|group=d}}
+
+===Gem drop table===
+{{GemDropTable|3/128|chaostalisman=yes|naturetalisman=yes|f2p=yes}}
+
+===Tertiary===
+{{DropsTableHead}}
+{{DropsLine|name=Key (medium)|namenotes={{(m)}}|quantity=1|rarity=Always|raritynotes=<ref group=d>The key is only dropped when completing a medium clue scroll asking the player to kill a [[Hill Giant]].</ref>|gemw=No}}
+{{DropsLine|name=Looting bag|namenotes={{(m)}}|quantity=1|rarity=1/5|raritynotes=<ref group=d>Looting bags are only dropped by those found in the [[Wilderness]].</ref>|gemw=No|leagueRegion=Wilderness}}
+{{DropsLine|name=Ensouled giant head|namenotes={{(m)}}|quantity=1|rarity=1/25}}
+{{DropsLineClue|type=beginner|rarity=1/50}}
+{{DropsLine|name=Long bone|namenotes={{(m)}}|quantity=1|rarity=1/400|gemw=No}}
+{{DropsLine|name=Giant champion scroll|namenotes={{(m)}}|quantity=1|rarity=1/5000|gemw=No}}
+{{DropsLine|name=Curved bone|namenotes={{(m)}}|quantity=1|rarity=1/5012.5|gemw=No}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Catacombs tertiary===
+{{CatacombsDropTable|combat=28|hitpoints=35|dropversion=Catacombs}}
+
+=== Wilderness Slayer tertiary ===
+{{WildernessSlayerDropTable|combat=28|hitpoints=35}}
+
+==Treasure Trails==
+*{{CrypticNPC|Killing a hill giant for a [[key (medium)|key]] to be able to search the crate on the {{FloorNumber|uk=2}} of [[Osten]]'s shop in [[Shayzien]]|medium|A graceful man of many colours, his crates must be full of many delights.}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 30 April 2020
+|update = Poll 70 and Bounty Hunter Changes
+|change = [[Krystilia]] can now assign [[bloodveld]]s, hill giants, [[moss giant]]s, [[black knight]]s, [[pirate]]s and [[zombie]]s as a [[Slayer]] task.
+}}
+{{Subject changes
+|date = 29 August 2006
+|update = Demons, Dragons and Giants
+|change = *The NPC was graphically updated again.
+*The NPC was renamed from "Hill giant" to "Hill Giant".
+}}
+{{Subject changes
+|date = 31 January 2005
+|update = Creature of Fenkenstrain
+|change = The NPC was renamed from "Giant" to "Hill giant".
+}}
+{{Subject changes
+|date = 26 January 2005
+|update = Slayer Skill
+|change = The NPC was graphically updated.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Hill Giant (historical v1).png|center|300x150px]]
+|[[File:Hill Giant (historical v2).png|center|300x150px]]
+|
+{{Synced switch
+|version1 = [[File:Hill Giant.png|center|300x150px]]
+|version2 = [[File:Hill Giant (2).png|center|300x150px]]
+|version3 = [[File:Hill Giant (3).png|center|300x150px]]
+|version4 = [[File:Hill Giant (4).png|center|300x150px]]
+|version5 = [[File:Hill Giant (5).png|center|300x150px]]
+|version6 = [[File:Hill Giant (6).png|center|300x150px]]
+}}
+|-
+|29 March 2004 –<br/>26 January 2005
+|26 January 2005 –<br/>29 August 2006
+|29 August 2006 –<br/>present
+|}
+
+==Trivia==
+*They were once just called 'Giants', but this was later changed by [[Jagex]] to avoid confusion between other [[giant]]s.
+*They are one of three kinds of giants available in free-to-play worlds, the other two being [[Moss giant]]s and [[Ice giant]]s.
+*Some Hill Giants appear to be wielding [[cleaver]]s, weapons from the [[Recipe for Disaster]] quest.
+*Despite being called "Hill Giants", the majority of the giants are found in [[dungeon]]s. The reason for the naming was revealed in a [[Postbag from the Hedge]]; they are called Hill Giants because the muscles on their arms resemble hills.{{CitePostbag|issue=11|author=Malvern|letter=Letter 10}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 25 June 2025
+|update = Summer Sweep Up: Combat
+|change = Hill giants now have a 25% [[elemental weakness]] to [[earth spells]].
+}}
+{{Subject changes footer}}
+
+==References==
+{{Reflist}}
+
+{{Giants}}
+{{Deep Wilderness Dungeon}}
+{{Edgeville Dungeon}}
+{{Lava Maze}}
+{{Taverley Dungeon}}

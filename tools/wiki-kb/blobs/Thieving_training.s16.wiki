@@ -1,0 +1,24 @@
+===Levels 91–99: Pyramid Plunder===
+{{Main|Pyramid Plunder}}
+[[File:Pyramid Plunder.png|300px|right|thumb|Pyramid Plunder in Sophanem]]
+The [[Pyramid Plunder]] minigame offers the fastest Thieving experience outside of the [[Wilderness]] from level 91 onwards. The strategy for Thieving experience is to loot the golden chest and all the urns in the last room, the golden chests along the way, and some urns in the second-to-last room if there is time. Players can begin training at Pyramid Plunder at level 71 or 81 as an alternative method to blackjacking or stealing artefacts, however, the experience rates are much lower before level 91.
+
+Players will need to have access to [[Sophanem]] by having started the quest [[Icthlarin's Little Helper]], or using a [[pharaoh's sceptre]] teleport to Jalsavrah. High-healing food (such as [[Saradomin brew]]s), some [[stamina potion]]s, and some form of antipoison (preferably [[araxyte venom sac]]s to save inventory space) are needed inside the pyramid. For the highest experience rates, players will also need a charged pharaoh's sceptre for a direct teleport to the [[guardian mummy]] and noted artefacts for recharging it. Completing task sets in the [[Desert Diary]] will increase the amount of charges the pharaoh's sceptre can hold. Should the player not be able to get a pharaoh's sceptre, completing [[Contact!]] is recommended to access the bank near the pyramid. Otherwise, the player would have to travel back to a bank far from Sophanem every time they need more supplies.
+
+While training, players may loot a [[pharaoh's sceptre]] from the golden chests. It can be sold for profit or kept for use. Banking the artefacts is not recommended as this would greatly lower experience rates, and the artefacts are not very valuable. However, the golden artefacts can recharge the pharaoh's sceptre.
+
+The experience rates in the table below assume soloing and using the pharaoh's sceptre teleport. Higher rates can be achieved by having a duo partner or an alternative account. It takes approximately 335 games to get from 91 to 99 in Pyramid Plunder.
+
+{| class="wikitable align-center-1 align-right-2"
+! {{SCP|Thieving}} levels
+! XP/hour
+|-
+| 71–80
+| 125,000
+|-
+| 81–90
+| 190,000
+|-
+| 91+
+| 270,000
+|}

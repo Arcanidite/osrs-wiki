@@ -210,6 +210,29 @@
   thieving/fishing rates predate OSRS rebalances. Values are config knobs, upgradeable the
   moment wiki/Jagex numbers surface. Conflict with wiki stun length recorded in GOTCHAS G-6.
 
+### Quest order + requirements (quests.jsonl)
+
+- **file:** `assets/data/tools/quests.jsonl` (272 quests), built by `tools/build_quests.py`.
+- **order:** `order_rank` is the position in the OSRS Wiki **Optimal quest guide**, read
+  verbatim from Quest Helper's `OptimalQuestGuide.java`. It is a curated recommendation, NOT
+  a computed optimum (see GOTCHAS [G-7]). `ironman_rank` = separate curated ironman order.
+  `in_wiki_oqg=false` marks quests appended by Quest Helper beyond the wiki guide list.
+- **requirements:** `req_skills` (skill→level), `req_quests` (prereq quest ids, all resolve
+  within the set), `req_quest_points`, `req_combat` — extracted from each helper's
+  `getGeneralRequirements()` start-gate only (see [G-8]). `req_partial=true` + `req_note`
+  flag quests whose entry gate also includes varbit/item/complex requirements not captured
+  (43/272). Empty requirements with note "no getGeneralRequirements()" = none recorded, not
+  asserted-none.
+- **leagues:** `league_regions` = the LeagueRegion(s) a quest needs, from
+  `LeagueQuestRegions.java` (207/272 tagged). A quest is reachable in a region-locked
+  Leagues account only if ALL its regions are unlocked — this is how "best is relative"
+  ([G-1]) is enforced at the endpoint.
+- **NOT included (honest gaps):** quest-point *rewards* per quest (only requirements), XP
+  rewards, and durations — none are fabricated. Add them from a sourced dataset later.
+- **endpoint:** `tools/quest-order/` renders the order and computes done/can-do/blocked/
+  region-locked per the player's stats.
+- **source:** quest-helper@Zoinkwiz + RuneLite `Quest.java` (names) · **stamp:** 2026-07-07
+
 ## Facts by option `id`
 
 <!-- One entry per catalogued option. Template:

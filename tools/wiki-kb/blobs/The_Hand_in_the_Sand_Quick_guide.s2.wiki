@@ -1,0 +1,50 @@
+==Walkthrough==
+===Sandy Hand===
+{{Needed|A [[beer]] (obtainable for 2 gp)}}
+{{Checklist|
+*Talk to [[Bert]] in [[Yanille]], in the house next to the POH Portal to get a [[Sandy hand]]. {{Chat option|2Eww a hand, in the sand! Why haven't you told the authorities?|1Yes.}}
+*Go to the [[Dragon Inn]] pub south of Bert's house. Buy a beer from the bartender (if you don't have one) and give the beer to the [[Guard Captain]].
+*Ring the bell at the [[Wizards' Guild]] (outside near eastern doors), or enter the guild with 66 [[Magic]], then talk to [[Zavistic Rarve]], who will take the Hand. If started [[Zogre Flesh Eaters]]: {{Chat option|2I have a rather sandy problem that I'd like to palm off on you.}}
+}}
+
+===Sandy the Slavedriver===
+{{Checklist|
+*Talk to [[Bert]] to get [[Bert's rota]].
+*Travel to [[Brimhaven]] and find [[Sandy]] in a small house south of [[The Shrimp and Parrot]] restaurant and north-west of the pub.
+*Search Sandy's desk to get [[Sandy's rota]].
+*Pickpocket [[Sandy]] until you get [[sand]].
+}}
+
+===Truth Serum===
+{{Needed|2 [[vials]], a [[lantern lens]], [[Bert's rota]], [[Sandy's rota]], [[redberries]] and [[white berries]], [[sand]]}}
+{{Checklist|
+*Travel back to [[Yanille]] and talk to [[Bert]] to receive [[a magic scroll]].
+*Ring the bell just outside the [[Wizards' Guild]] and talk to [[Zavistic Rarve]] again to receive a [[magical orb]].
+*Talk to [[Zavistic Rarve]] again. He will offer to teleport you to Port Sarim. {{Chat option|4Can you help me more?|1Yes, that would be great!}} ({{Chat option|2|4|1}} if started [[Zogre Flesh Eaters]])
+*Talk to [[Betty]] in Port Sarim Magic shop for a [[bottled water]]. {{Chat option|1Talk to Betty about the Hand in the Sand.}}
+*'''First''' add [[redberries]], then [[white berries]] to the bottled water in order to get a [[pink dye]].
+** Redberries can be bought at the food store in southern Port Sarim.
+*Dye the [[lantern lens]] to get a [[rose-tinted lens]].
+*Talk to Betty again so she puts the vial on the counter. {{Chat option|1Talk to Betty about the Hand in the Sand.}}
+*Go stand in the doorway and "use" the lens on the counter to get a [[truth serum]].
+*Talk to [[Betty]] one last time with sand in your inventory. {{Chat option|1Talk to Betty about the Hand in the Sand.}}
+}}
+
+===Sandy Truth-Be-Told===
+{{Needed|[[magical orb]], [[truth serum]]}}
+{{Checklist|
+*Travel to [[Brimhaven]] and talk to [[Sandy]].
+**Select an option until you distract him, and use the [[truth serum]] on Sandy's Coffee Mug. {{Chat option|1There's a herd of huge mutant herring about to drop from the sky!|2But the pygmy shrews have eaten all the sand!|3A small parrot with a pink banana is sitting outside your window!}}
+*Activate the [[magical orb]] and talk to [[Sandy]] again. '''Be sure to click every option.''' {{Chat option|1Why is Bert's rota different from the original?|1Why doesn't Bert remember the change in his hours?|1What happened to the wizard?}}
+}}
+
+===And Sandy said, "Drat-foiled again!"===
+{{Needed|5 [[earth runes]] and a [[bucket of sand]]}}
+{{Checklist|
+*Travel to [[Yanille]] and Ring the Bell at the [[Wizards' Guild]] to talk to [[Zavistic Rarve]]. 
+*Talk to [[Zavistic Rarve]] again to get a cut scene. 
+*Travel to [[Entrana]] and talk to [[Mazion]] at the sandpit to get a [[Wizard's head]].
+*Return to [[Yanille]], ring the bell and talk to [[Zavistic Rarve]].
+}}
+
+'''Congratulations, quest complete!'''

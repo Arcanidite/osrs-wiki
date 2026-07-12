@@ -1,0 +1,31 @@
+===Levels 1–30: Creating pyre logs===
+{{Inventory|align=right
+|Sacred oil |Sacred oil |Sacred oil |Sacred oil
+|Sacred oil |Sacred oil |Sacred oil |Sacred oil
+|Sacred oil |Sacred oil |Sacred oil |Sacred oil
+|Sacred oil  |Redwood logs |Redwood logs |Redwood logs
+|Redwood logs |Redwood logs |Redwood logs |Redwood logs
+|Redwood logs |Redwood logs |Redwood logs |Sacred oil
+|Redwood logs |Redwood logs |Redwood logs |Redwood logs
+}}
+1-tick creating [[pyre logs]] offers the fastest experience up to level 30. Pyre logs can be created without tick delay by holding down 1 or space and rapidly using [[sacred oil]] on logs. This requires completion of the [[Shades of Mort'ton]] [[quest]]. Pyre logs can be created at level 1, even if the logs would require a higher level to burn. Without tick manipulation this method offers much lower rates and is only viable as a potential [[money making method]].
+
+It is recommended to create [[redwood pyre logs|redwood]] or [[rosewood pyre logs]], as they have demand for [[Shades of Mort'ton (minigame)|cremating]] [[urium remains]] and they give the highest experience per log. Prices may vary, and re-selling other pyre logs than redwood or rosewood might be difficult. Check trade volume and actual prices in the [[Grand Exchange]] before attempting this method.
+
+With decent banking and accurate clicks, players can create 4,600 pyre logs per hour when 1-ticking. This translates to 92,000 experience per hour with redwood or rosewood logs. Without tick manipulation, players can only create 1,470 pyre logs per hour (29,400 experience per hour with redwood or rosewood logs).
+
+{{PyreTableHead}}
+{{PyreLine|logs=|oil=2|xp=10}}
+{{PyreLine|logs=Oak|oil=2|xp=10}}
+{{PyreLine|logs=Willow|oil=3|xp=15}}
+{{PyreLine|logs=Teak|oil=3|xp=15}}
+{{PyreLine|logs=Arctic pine|pyre=Arctic|oil=2|xp=10}}
+{{PyreLine|logs=Maple|oil=3|xp=15}}
+{{PyreLine|logs=Mahogany|oil=3|xp=15}}
+{{PyreLine|logs=Yew|oil=4|xp=20}}
+{{PyreLine|logs=Camphor|oil=4|xp=20}}
+{{PyreLine|logs=Magic|oil=4|xp=20}}
+{{PyreLine|logs=Ironwood|oil=4|xp=20}}
+{{PyreLine|logs=Redwood|oil=4|xp=20}}
+{{PyreLine|logs=Rosewood|oil=4|xp=20}}
+{{PyreTableBottom}}

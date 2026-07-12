@@ -1,0 +1,268 @@
+===Levels 73–99: Black chinchompas===
+'''Requires partial completion of the [[Eagles' Peak]] quest to be able to set box traps.'''
+[[File:Black chinchompa (Hunter).png|152px|right]] Hunting [[Black chinchompa (Hunter)|black chinchompas]] offers the fastest Hunter experience from level 73 onwards, and it is also profitable. They can only be found in the hunting area in level 32–36 Wilderness, however, this is a popular player killing hot spot.
+
+Players who do not wish to use tick manipulation, hunt in the Wilderness, or use alternative account are advised to train with Hunters' Rumours, as this offers similar experience rates.
+
+The fastest way to get there is to use a [[Wilderness Obelisk]] from the player-owned house or east of [[Corporeal Beast's Lair]] to level 35 Wilderness, then running a bit south-east (completion of hard tasks in the [[Wilderness Diary]] is strongly recommended). Alternatively, players can use a [[revenant cave teleport]] and run south. Another option is to use a [[Canoe|waka canoe]] from Edgeville to the Wilderness pond (requires 57 Woodcutting). Players with 99 Hunter can also use the [[Hunter cape]] teleport to black chinchompas.
+
+For the fastest rates, use a ranged weapon to shoot the stray chinchompas that wander far away from the box traps. Shooting a stray chinchompa forces a new one to spawn, and the newly spawned chinchompa usually goes much faster into the trap than a stray one.
+
+Box traps can be placed one tick faster via [[tick manipulation]]. When correctly timed, it is also possible to lay a trap instantly after picking up another (also known as trap resetting). This is done by moving to the desired spot on the same tick as laying the previous trap, picking up the next, and clicking it up as soon as possible in the inventory. This will increase experience rates, but requires more accurate clicks. For tick manipulation, use a knife and teak/mahogany logs instead of herb and tar, as it only requires 2 inventory spaces instead of 3.
+
+The overall process using tick manipulation and trap resetting looks like:
+
+* Check a filled box trap
+* Delay the skilling timer (e.g., use a knife on a teak/mahogany log) on the same tick
+* Click underneath your character to cancel the skilling action
+* Lay the box trap from your inventory
+* Walk to the next trap on the same tick
+* Check it as your character arrives
+* Lay the box trap from your inventory when it appears
+* Walk to the next trap on the same tick
+* Check, lay, and walk as above
+* Continue from the beginning of this list (by checking a trap and delaying the skilling timer)
+
+[[File:1tick6traps.gif|alt=Black chin 1 tick manipulation|thumb|Player resetting all traps using 1 tick manipulation|width=407x407]]Using a shooting alt is recommended for the fastest experience rates. Using a [[crystal bow]] on it is recommended, but a [[magic shortbow]] with cheap arrows will suffice if the account does not have the requirement for the crystal bow. The shooting alt can also be used to carry extra supplies, such as box traps (which allows for more inventory space for supplies for the main account), Saradomin brews, super restores and spare logs for tick manipulation (in case of mistakes).
+
+Experience rates shown in the table below assume using tick manipulation, having good practice with the method, and being attacked by a player killer once every 1–2 hours. Expect lower rates if learning or getting attacked more often. At level 99, the maximum possible experience rate caps at around 300,000 experience per hour when uninterrupted, using a shooting alt, and using tick manipulation.
+
+{| class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" |{{SCP|Hunter}} level
+! colspan="2" |Alt 
+! colspan="2" |Solo 
+|-
+!XP/h
+!GP/h
+!XP/h
+!GP/h
+|-
+|73
+|157,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*157000/315 round 0}}}}
+|145,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*145000/315 round 0}}}}
+|-
+|75
+|164,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*164000/315 round 0}}}}
+|151,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*151000/315 round 0}}}}
+|-
+|80
+|197,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*197000/315 round 0}}}}
+|167,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*167000/315 round 0}}}}
+|-
+|85
+|214,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*214000/315 round 0}}}}
+|182,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*182000/315 round 0}}}}
+|-
+|90
+|233,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*233000/315 round 0}}}}
+|197,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*197000/315 round 0}}}}
+|-
+|95
+|251,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*251000/315 round 0}}}}
+|213,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*213000/315 round 0}}}}
+|-
+|99
+|265,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*265000/315 round 0}}}}
+|225,000
+|{{Coins|{{#expr:{{GEPT|Black chinchompa}}*225000/315 round 0}}}}
+|}
+
+<gallery mode="packed">
+Black chinchompa north spawns.png|Northern spawn tiles
+Black chinchompa centre spawns.png|Centre spawn tiles
+Black chinchompa south spawns.png|Southern spawn tiles
+</gallery>
+
+====Combating against player killers====
+As black chinchompas reside in a hot spot in the Wilderness, the player may get attacked by player killers. It is recommended to have high Defence and Magic levels (90+) and wear good defensive gear to have higher chances of escaping. Having the [[Augury]] prayer (requires reading an [[arcane prayer scroll]] and 77 Prayer) is also strongly recommended as it increases the player's defences by 25% when activated. If the player can not use Augury, [[Mystic Vigour]] and [[Steel Skin]] should be used instead. Players will also need a teleport that works up to level 30 Wilderness, such as a [[royal seed pod]] or an [[amulet of glory]].
+
+It is generally best to use equipment that prioritises magic defence while having good defences against melee and ranged attacks. Setups can vary greatly depending on how much money the player has available and how much one is willing to risk in case of a death. When choosing protected items, the [[Masori body (f)]], a tank shield such as the [[Elysian spirit shield|elysian]]/[[spectral spirit shield]] or the [[dinh's bulwark]], the [[ring of suffering (i)]], the [[serpentine helm]], and the [[staff of the dead]] (if using an off-hand shield) are considered the best options. For low levels, it is recommended to bring something more replaceable that is still effective, such as [[black dragonhide armour]].
+
+The [[phoenix necklace]] restores the wearer's Hitpoints by 30% of maximum if they drop below 20% of the maximum. It is the best item to wear in the neck slot regardless of the setup, because it often saves the player from getting comboed by special attacks.
+
+Players will also need to bring an [[anti-venom+]] to cure venom or wear a serpentine helm in case a player killer is using a venom-inflicting weapon such as a [[toxic staff of the dead]].
+
+Flicking overhead prayers accordingly can reduce the damage taken from player killers' attacks. Set your quick prayers to Protect from Melee, Protect Item and Augury (or Mystic Vigour and Steel Skin if you do not have Augury unlocked). Protect from Melee makes you less vulnerable to rushers using [[Armadyl godsword]], [[dragon claws]] or [[granite maul]] special attacks, however if you see the player killer using [[Tele Block]], quickly switch to Protect from Magic to halve the duration of teleblock in case the player killer splashes. If you are frozen, switch between Protect from Missiles and Melee (sometimes Magic) depending on which combat style the player is attacking, and use Protect from Magic when you are unfrozen to reduce the damage from Ice Barrage.
+
+An escaping tactic is to bring a [[Zamorak godsword]] to freeze a player killer in place and log out while standing under them. The player killer will not unfreeze in time to retaliate. When timed correctly, the player can consistently escape with this method because the [[PJ timer]] is longer (12 seconds) than the logout delay while in combat (10 seconds). If using this tactic, enable [[PK Skull Prevention]] to avoid getting skull-tricked.
+
+<tabber>
+|-|
+Staff of the dead (high-risk) =
+This setup aims for the highest tanking potential using the staff of the dead along with expensive equipment with high, but reasonable risk. It is very unlikely to die to a player killer in the best listed setup, as long as the player keeps their Hitpoints high. This allows the player to keep training Hunter without constantly having to bank the chinchompas.
+
+{{Recommended equipment
+|style = Staff of the dead
+|head1 = {{plink|Serpentine helm}}
+|head2 = {{plink|Torag's helm}}
+|head3 = {{plink|Helm of neitiznot}}
+|neck1 = {{plink|Phoenix necklace}}
+|neck2 = {{plink|Amulet of glory}}
+|cape1 = {{plink|Construct. cape(t)|txt=Construction cape (t)}}
+|cape2 = {{plink|Cape of Accomplishment|pic=Strength cape(t)}}
+|cape3 = {{plink|God capes|pic=Saradomin cape}}
+|cape4 = {{plink|Ranging cape(t)}}<ref name=Noalt>Only if the player is not using an alternative account to shoot chinchompas.</ref>
+|cape5 = {{plink|Ava's accumulator}}<ref name=Noalt />
+|body1 = {{plink|Masori body (f)}}
+|body2 = {{plink|Armadyl chestplate}}
+|body3 = {{plink|Karil's leathertop}}
+|legs1 ={{plink|Masori chaps (f)}}
+|legs2 ={{plink|Armadyl chainskirt}}
+|legs3 = {{plink|Karil's leatherskirt}}
+|legs4 = {{plink|Black d'hide chaps}}
+|weapon1 = {{plink|Staff of the dead}}
+|weapon2 = {{plink|Magic shortbow}} or {{plink|Rune crossbow}}<ref name=Noalt />
+|shield1 = {{plink|Elysian spirit shield}}
+|shield2 = {{plink|Spectral spirit shield}}
+|ammo1 = {{plink|Rada's blessing 4}}
+|ammo2 = {{plink|God blessing|pic=Peaceful blessing}} / {{plink|Rada's blessing 3|txt=Rada's blessing 3/2}}
+|ammo3 = {{plink|Mithril arrow|txt=Cheap arrows}} or {{plink|Broad bolts}}<ref name=Noalt />
+|hands1 = {{plink|Barrows gloves}}
+|hands2 = {{plink|Black d'hide vambraces}}
+|feet1 = {{plink|Boots of brimstone}}
+|feet2 = {{plink|Bandos boots}}
+|feet3 = {{plink|Silly jester boots}}
+|feet4 = {{plink|Mystic boots}}
+|ring1 = {{plink|Ring of suffering (i)}}
+|ring2 = {{plink|Seers ring (i)}}
+|ring3 = {{plink|Steel ring}} / {{plink|Granite ring (i)}}
+}}
+<references/>
+
+{{Equipment
+|align = right
+|head = Serpentine helm
+|cape = Construct. cape(t)
+|neck = Phoenix necklace
+|ammo = Rada's blessing 4
+|weapon = Staff of the dead
+|torso = Masori body (f)
+|legs = Karil's leatherskirt
+|shield = Elysian spirit shield
+|gloves = Barrows gloves
+|boots = Boots of brimstone
+|ring = Ring of suffering (i)
+|caption = High-risk setup
+}}
+The damage reduction effect of the elysian spirit shield makes it the best option for the shield slot. The spectral spirit shield is much more affordable and its +30 Magic defence bonus significantly helps at not getting frozen or teleblocked, but it is also much worse at tanking Melee and Ranged attacks.
+
+The staff of the dead special attack halves the all Melee damage of your opponent(s) (all opponents that hit you in the time of the special attack) for one minute. A staff of light or staff of balance can also used instead as they have the exact same bonuses and special attack.
+
+If not using a shooting alt, bring a magic shortbow or rune crossbow with cheap arrows/bolts to shoot the stray chinchompas.
+
+Serpentine helm is the best option, as it provides immunity to venom when worn, saving an inventory space, has good Melee and Ranged defences and does not penalise Magic defence. However, it usually adds extra risk and should only be worn by players who are confident in their tanking abilities.
+
+The Construction cape is the best option for the cape slot as it can be used to quickly get back in case the player has to teleport out. If the player does not have 99 Construction, any other trimmed skillcape should be used instead, followed by god capes. Wearing a fire cape is also an option if the player does not mind risking it on death, as it has slightly better defensive stats than a skillcape. If the player is not using an alternative account, Ranging cape should be used, followed by Ava's accumulator.
+
+Players can optionally bring a Torag's platelegs switch for tanking Melee and Ranged attacks.
+
+==Recommended skills==
+*90+ {{SCP|Defence}} (75 required)
+*90+ {{SCP|Magic}} (75 required)
+*{{SCP|Attack|75}}
+*{{SCP|Ranged|70}}
+*{{SCP|Prayer|77}} ([[Augury]])
+
+==Inventory==
+*Box traps
+*[[Knife]], [[teak logs|teak]]/[[mahogany logs]] and [[celastrus bark]] for tick manipulation (recommended)
+*[[Amulet of glory]], [[royal seed pod]] or [[Slayer ring]] for teleporting out
+*5 [[super restore]]s
+*1-3 [[anglerfish]] for combo healing
+*[[Saradomin brew]]s
+*A [[Torag's platelegs]] switch for tanking Melee and Ranged attacks (optional)
+*A Ranged weapon and ammunition for shooting stray chinchompas if not using an alternative account
+*[[Anti-venom+]] if not wearing a serpentine helm
+
+|-|
+Dinh's bulwark (low-risk) =
+This setup uses the Dinh's bulwark for Melee and Ranged defence and Ranged armour for Magic defence. This is a much more affordable option compared to the high-risk setup and possesses significantly less risk, but also makes the player more vulnerable to player killers. Escaping player killers should be relatively easy with good prayer flicking, however it might be a good idea to bank chinchompas every so often to reduce the risk.
+
+{{Recommended equipment
+|style = Dinh's bulwark
+|head1 = {{plink|Serpentine helm}}
+|head2 = {{plink|Torag's helm}}
+|head3 = {{plink|Helm of neitiznot}}
+|neck1 = {{plink|Phoenix necklace}}
+|neck2 = {{plink|Amulet of glory}}
+|cape1 = {{plink|Construct. cape(t)|txt=Construction cape (t)}}
+|cape2 = {{plink|Cape of Accomplishment|pic=Strength cape(t)}}
+|cape3 = {{plink|God capes|pic=Saradomin cape}}
+|cape4 = {{plink|Ranging cape(t)}}<ref name=Noalt>Only if the player is not using an alternative account to shoot chinchompas.</ref>
+|cape5 = {{plink|Ava's accumulator}}<ref name=Noalt />
+|body1 = {{plink|Masori body (f)}} 
+|body2 = {{plink|Armadyl chestplate}}
+|body3 = {{plink|Karil's leathertop}}
+|body4 = {{plink|Black d'hide body}}
+|legs1 = {{plink|Black d'hide chaps}}
+|weapon1 = {{plink|Dinh's bulwark}}
+|weapon2 = {{plink|Magic shortbow}}<ref name=Noalt />
+|ammo1 = {{plink|Rada's blessing 4}}
+|ammo2 = {{plink|God blessing|pic=Peaceful blessing}} / {{plink|Rada's blessing 3|txt=Rada's blessing 3/2}}
+|ammo3 = {{plink|Mithril arrow|txt=Cheap arrows}}<ref name=Noalt />
+|hands1 = {{plink|Black d'hide vambraces}}
+|feet1 = {{plink|Silly jester boots}}
+|feet2 = {{plink|Mystic boots}}
+|feet3 = {{plink|Fremennik sea boots 4}}
+|ring1 = {{plink|Ring of suffering (i)}}
+|ring2 = {{plink|Seers ring (i)}}
+|ring3 = {{plink|Steel ring}} / {{plink|Granite ring (i)}}
+|ring4 = {{plink|Ring of wealth}}
+}}
+
+<references/>
+
+{{Equipment
+|align = right
+|head = Serpentine helm
+|cape = Construct. cape(t)
+|neck = Phoenix necklace
+|ammo = Rada's blessing 4
+|weapon = Dinh's bulwark
+|torso = Masori body (f)
+|legs = Black d'hide chaps
+|shield = 
+|gloves = Black d'hide vambraces
+|boots = Silly jester boots
+|ring = Ring of suffering (i)
+|caption = Low-risk setup
+}}
+Serpentine helm is the best option, as it provides immunity to venom when worn, saving an inventory space, has good Melee and Ranged defences and does not penalise Magic defence.
+
+If not using a shooting alt, bring a magic shortbow with cheap arrows to shoot the stray chinchompas. Simply switch to the Dinh's bulwark if attacked by a player killer.
+
+The Construction cape is the best option for the cape slot as it can be used to quickly get back in case the player has to teleport out. If the player does not have 99 Construction, any other trimmed skillcape should be used instead, followed by god capes. Wearing a fire cape is also an option if the player does not mind risking it on death, as it has slightly better defensive stats than a skillcape. If the player is not using an alternative account, Ranging cape should be used, followed by Ava's accumulator.
+
+Players can optionally bring a Torag's platelegs switch for tanking Melee and Ranged attacks.
+
+==Recommended skills==
+*90+ {{SCP|Defence}} (75 required)
+*90+ {{SCP|Magic}}
+*{{SCP|Attack|75}}
+*{{SCP|Ranged|70}}
+*{{SCP|Prayer|77}} ([[Augury]])
+
+==Inventory==
+*Box traps
+*[[Knife]], [[teak logs|teak]]/[[mahogany logs]] and [[celastrus bark]] for tick manipulation (recommended)
+*[[Amulet of glory]], [[royal seed pod]] or [[Slayer ring]] for teleporting out
+*5 [[super restore]]s
+*1-3 [[anglerfish]] for combo eating
+*[[Saradomin brew]]s
+*A [[Torag's platelegs]] switch for tanking Melee and Ranged attacks (optional)
+*A magic shortbow and cheap arrows for shooting stray chinchompas if not using an alternative account
+*[[Anti-venom+]] if not wearing a serpentine helm
+</tabber>

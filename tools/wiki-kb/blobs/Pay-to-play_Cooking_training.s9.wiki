@@ -1,0 +1,116 @@
+==Choosing Cooking locations==
+Cooking most foods takes four [[tick|game ticks]], and 28 can be cooked per inventory. Therefore, a full inventory takes 112 ticks or 67.2 seconds, making Cooking one of the least attentive skills in the game.
+
+Assuming no banking and no food burned, a player could theoretically cook up to 1,500 raw foods per hour; however, factoring in bank-time, players can expect to cook between 1,300 and 1,400. The following table compares the different cooking locations by their bank proximity and corresponding items cooked per hour. The table assumes the bank distance is ran, no food is burnt, and that banking takes 3 seconds (5 ticks).
+{| class="wikitable sortable" style="text-align:center;"
+! class="unsortable" |Location
+!Spaces from bank*
+!Time to cook full inventory and bank
+!Food cooked per hour (assuming 0 burned)
+! class="unsortable" |Benefits
+! class="unsortable" |Location
+|-
+|Theoretical maximum
+|0
+|67.2 seconds (112 ticks)
+|1500
+|N/A
+|N/A
+|-
+|[[Myths' Guild]]
+|0
+|70.2 seconds (117 ticks)
+|1435
+|Has a stove and a [[bank]] diagonally next to the stove, making it better than the [[Rogues' Den]] due to it being a stove and not a fire. Requires completion of [[Dragon Slayer II]].
+|Right next to the bank. The [[mythical cape]] will teleport you there directly.
+|-
+|[[Rogues' Den]]
+|0
+|70.2 seconds (117 ticks)
+|1435
+|The banker ([[Emerald Benedict]]) is just a step away from the fire and never moves, allowing players to cut down on time spent walking. The fire is everlasting, so there is no need to worry about relighting it, saving inventory space. On the downside, Rogues' Den only has a fire as the means to cook, so it is only usable for cooking fish or meat, and it does not offer the benefit of reduced burning on a range.
+|Start of the Rogues' Den, just below the [[Burthorpe]] pub. A [[games necklace]] will bring you very close to the pub.
+|-
+|[[Bank boat]]
+|0
+|70.2 seconds (117 ticks)
+|1435
+|Only has a requirement of 16 [[Sailing]] and 6 [[Construction]] to build a [[Skiff]] and a [[Range (facility)]]. Better location compared to [[Rogues' Den]] because this is a stove and not a fire. 
+|Sail to the North east of [[Sunbleak Island]] near the [[Bank boat]], place your boat right next to the bank and cook on your own [[Range (facility)]].
+|-
+|[[Mor Ul Rek]]
+|0
+|70.2 seconds (117 ticks)
+|1435
+|A sulphur vent is located right next to a bank chest. The TzHaar will only allow those who show a [[fire cape]] to the TzHaar-Ket guarding the entrance to enter this area. The sulphur vent functions as a fire, so it is only usable for cooking fish or meat, and it does not offer the benefit of reduced burning on a range.
+|In the inner area of the city.
+|-
+|[[Cooks' Guild]]
+|2
+|71.4 seconds (119 ticks)
+|1411
+|Few players, so peaceful cooking environment. Requires a [[chef's hat]] and 32 Cooking to enter. Completion of the [[Hard Varrock Diary]] or 99 Cooking is required to use the bank.
+|Just south of the Grand Exchange. Can be teleported to directly with a [[skills necklace]].
+|-
+|[[Sunbleak Island]]
+|2
+|71.4 seconds (119 ticks)
+|1411
+|Quiet area, very few players unless on a forestry world. Requires 72 [[Sailing]] to get here, 70 [[Construction]] to build the [[Cooking pot (amenity)|Cooking Pot]] and [[Bank chest (amenity)|Bank Chest.]]
+|West of [[Ironwood tree|Ironwood Trees]]
+|-
+|[[Hosidius]] [[clay oven]]
+|6
+|73.8 seconds (123 ticks)
+|1365
+|Decreases the chances of burning your food by 5%, and up to 10% with completion of the elite [[Kourend & Kebos Diary]]. Requires completion of the easy Kourend & Kebos diary to use.
+|South-east of the [[Mess Hall]].
+|-
+|[[Ruins of Unkah]]
+|6
+|73.8 seconds (123 ticks)
+|1365
+|An everlasting fire that acts as a range. Fish can be picked up from other players dropping their Tempoross [[reward pool]] rewards several spaces away.
+|West side of the [[Ruins of Unkah]] by the [[Sea Spirit Dock]].
+|-
+|[[Port Khazard]]
+|8
+|75 seconds (125 ticks)
+|1344
+|Quiet spot that is routinely empty with nice scenery. The fire is everlasting, and easy to reach via [[Charter ship]]. Using an [[Ectophial]] to teleport to [[Port Phasmatys]] and using the charter from there makes for a fairly quick commute.
+|North of [[Yanille]], along the ocean.
+|-
+|[[Wintertodt Camp]]
+|8
+|75 seconds (125 ticks)
+|1344
+|Because it counts as a campfire, there is a higher chance of burning than a range. It is, however, very easy to access and everlasting.
+|South-west of the Wintertodt bank chest.
+|-
+|[[Museum Camp]]
+|12
+|77.4 seconds (129 ticks)
+|1302
+|While slightly further away than the previous two, this source counts as a range, and puts you close to where you'd do [[birdhouse runs]] while training.
+|Just north-east of the [[Fossil Island]] bank.
+|-
+|[[Catherby]]
+|17
+|80.4 seconds (134 ticks)
+|1253
+|Fish can be picked up from those training fishing nearby, resulting in slower experience but at no cost.
+|Just east of bank. Close to [[Camelot teleport]].
+|-
+|[[Cooking range (Lumbridge Castle)|Lumbridge Castle]]
+|22
+|83.4 seconds (139 ticks)
+|1208
+|Reduces the level at which certain foods are burned. Requires completion of [[Cook's Assistant]] Quest. This location is not recommended at higher levels when food is no longer burned, but may save time at earlier levels, as trips take longer but more food is successfully cooked. It's slightly faster to stand east of the ladder before going up so you don't run around the ladder. See [[Cooking range (Lumbridge Castle)]] for which foods.
+|Ground floor of the [[Lumbridge Castle]]. Close to the [[Lumbridge Teleport]] spell location.
+|}
+<nowiki>*</nowiki>Running takes 0.5 ticks per square. A bank 4 tiles away will require you to traverse 8 tiles (there and back), so crossing 8 tiles at 2 tiles per tick will take 4 ticks.
+
+=== Calculating exact times ===
+To find the exact number of ticks to cook one inventory at any given location, players can first use the formula <chem>117+(tiles)</chem>, where <chem>117</chem> refers to the minimum ticks taken to cook and bank, and <chem>(tiles)</chem> refers to the number of tiles the cooking source is from the bank. If run is enabled, divide (tiles) by 2 and round up. Players can translate this into seconds by multiplying it by <math>0.6</math>, the number of seconds per tick.
+
+Players can then find out how many items they can cook in an hour by taking the number of ticks and putting it into the formula <chem>(3600/(x))*28</chem>. Here, <chem>3600</chem> refers to the number of seconds in an hour, <chem>x</chem> refers to the number of '''seconds''' it takes to do one inventory, and <chem>28</chem> refers to the number of inventory spaces the player has. Players should round down to the nearest whole number.

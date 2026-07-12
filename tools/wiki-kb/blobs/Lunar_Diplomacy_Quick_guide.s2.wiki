@@ -1,0 +1,700 @@
+==Walkthrough==
+'''Note:''' You must keep your [[seal of passage]], once obtained, on you '''at all times while on the [[Lunar Isle]]'''. If you do not, you will be teleported off of the isle if you try to talk to any [[NPC]].
+
+The lantern given during the quest does not come with oil in it, '''so bring a lightable regular [[bullseye lantern]]'''. If you put the emerald lens in the given lantern, drop it and ask for a new lens, which you then use on your working brought bullseye lantern.
+
+===Starting out===
+{{Needed|[[Tinderbox]], [[Bullseye lantern]] (one that you can light)
+|recommended=[[House teleport]] tablet or [[runes]].}}
+
+{{Checklist|
+*Talk to [[Lokar Searunner]] on the western most Rellekka docks.  D*K*S closest fairy ring. {{Chat option|2You've been away from these parts a while?|1Why did you leave?|1Why not, I've always wondered what the state of my innards are!}}
+*Speak to [[Brundt the Chieftain]] in the Longhall for a [[seal of passage]]. {{Chat option|1Ask about a Seal of Passage.}}
+*Return to [[Lokar Searunner]]. {{Chat option|1Arrr! Yar! Let's be on our way, yar!}}
+*Climb the ladders, and board the pirate ship. Talk to [[Captain Bentley]] about sailing to Lunar Isle. {{Chat option|4Can we sail to Lunar Isle now?}}
+*Speak to [[Captain Bentley]] again.
+*Climb down the nearby south stairs through the door, talk to [['Birds-Eye' Jack]].
+*Climb back up the stairs and talk to [[Captain Bentley]] again. {{Chat option|2Perhaps it's the Navigator's fault?}}
+*Climb back down the stairs and return to [['Birds-Eye' Jack]] again.
+}}
+
+===Talking to the crew===
+
+'''''NOTE:''' You '''must''' talk to them in order.''
+{{Checklist|
+*Talk to [['Eagle-eye' Shultz]] at the very front (north-end) of the ship.
+*Talk to the [[Cabin boy]] up one deck from the captain (south).
+*Talk to [['Beefy' Burns]] on the lowest level of the ship.
+*Talk to [['Lecherous' Lee]] at the very top-rear of the ship.
+*Talk to [[First mate 'Davey-boy']], on the deck level, south room.
+*Climb back up to the top, talk to the [[Cabin boy]] (2 inventory spaces required).
+}}
+
+===Searching for clues===
+{{Checklist|
+*Use the [[emerald lens]] on the [[bullseye lantern]] you brought. Light it with your tinderbox.
+**If you didn't bring a lightable lantern, you can make [[lamp oil]] in [[Rimmington]] and add it to the [[bullseye lantern (unf)]] given by the [[Cabin boy]], after using the [[emerald lens]] on it. If you lose your emerald lens for any reason, you can ask the Cabin boy for another one.
+**If you still own a [[sapphire lantern]] from the [[Tears of Guthix]] quest, you can use the emerald lens on the sapphire lantern.
+*Use the lantern on the following objects, and rub away the symbols:
+**'''Cannon''': Eastern cannon a few steps away (same level as [[Cabin boy]]).
+**'''Wallchart''': Climb down the stairs, southern-most room (on the wallchart north of the long wooden table).
+**'''Chest''': Lowest level of the ship, northern chest.
+**'''Support pillar''': Also lowest level, just north of Beefy Burns, the cook.
+**'''Crate''': Directly east of the [[cooking range]].
+*Talk to [[Captain Bentley]].
+}}
+
+===Lunar Isle===
+{{Needed|[[Guam leaf]], [[marrentill]], a [[pestle and mortar]], [[seal of passage]], and combat equipment and food for [[Suqah]]. There is a [[bank]] available on the island.}}
+
+{{Checklist|
+*Climb down the ladders and walk into the city (there will be a small cut-scene).
+*Run out of the city to the south-east part of the island. Talk to the [[Oneiromancer]].
+*Kill [[Suqah]] (safespottable), until you've received a [[suqah tooth]]. Keep any hides you get as drops (you will need a total of 4 hides later in the quest, which you can also collect later).
+*Return to the city, northern section. Enter the chicken house and talk to [[Baba Yaga]] (1 inventory space required). {{Chat option|2The Oneiromancer told me you may be able to help...}}
+*Exit the house and use the vial on a nearby water source.
+**Add the [[Guam leaf]] and [[marrentill]] to your vial.
+**''Ironmen: If you have guam and marrentill to get rid of, now is a good time do so for Herblore experience (~10,000 xp/hr). Destroy the vial after creating the guam-marr vial, reobtain one from Baba Yaga, and repeat.''
+**Grind the [[Suqah tooth]] and use it on the vial to complete the potion.
+*Return to the [[Oneiromancer]] with the potion.
+}}
+
+===Lunar Staff===
+{{Needed| [[Dramen staff]], ([[Air talisman|air]], [[Fire talisman|fire]], [[Water talisman|water]], and [[earth talisman]]) or ([[Air tiara|air]], [[Fire tiara|fire]], [[Water tiara|water]], and [[earth tiara]]) or ([[elemental talisman]]) or access to the [[Abyss]].
+|recommended=[[Amulet of glory]] or [[ring of dueling]] (if using the [[abyss]])}}
+
+'''Note:'''  if using fairy rings, you '''can not''' use lunar staves for fairy ring transport at this point in the quest.
+{{Checklist|
+*Use your Dramen staff/staves on the following altars '''in order''':
+**[[Air Altar]] (south of [[Falador]]).
+**[[Fire Altar]] (north of [[Al Kharid]] entrance of Emir's Arena).
+**[[Water Altar]] ([[Lumbridge Swamp]]).
+**[[Earth Altar]] (north-east of [[Varrock]]).
+*Travel back to Lunar Isle and give the [[Lunar staff]] to the [[Oneiromancer]]. Do not forget to bring your [[seal of passage]].
+}}
+
+===Ceremonial clothes===
+{{Needed|600 [[coins]], [[Seal of passage]], a [[pickaxe]], [[hammer]], a [[needle]], 2 [[thread]], a [[spade]], 4 [[Suqah hide]], and combat equipment and [[food]] for [[Suqah]]|recommended=[[Amulet of glory]] or [[ring of dueling]] (if using the [[abyss]]), [[runes]] for [[Superheat Item]]}}
+
+[[File:Mining stalagmite.png|thumb|220px|Mining the stalagmite for the [[Lunar helm|helm]].]]{{Checklist|
+*In the north-eastern part of the isle, climb down ladder to the Lunar Mine.
+*Mine a [[stalagmite]] for 1 [[lunar ore]]. Grab three extra ores to save time during [[The Fremennik Exiles]] quest.
+*Smelt the ore at a furnace or [[superheat]] the ore to receive a [[lunar bar]] (closest furnace and anvil is in Rellekka).
+*With a hammer, use the bar on an anvil to make the helm.
+*Go back to the Lunar Isle.
+*North-west in the city, talk to [[Pauline Polaris]] (1 inventory space required) '''Note: The chat options appear in a random order when guessing her real name.''' First guess must be Pauline. Pick the option that says '''"Jane Blud-Hagic-Maid."''' 
+*South in the city, talk to [[Meteora]].
+*Kill [[Suqahs]] until one drops [[a special tiara]]. Keep up to 4 hides the Suqahs drop. Make sure you have at least 4 hides.
+*Give Meteora the tiara.
+*South of the bank, talk to [[Rimae Sirsalis]] about ceremonial clothes. {{Chat option|2You know the ceremonial clothes?}}
+*Talk to [[Rimae Sirsalis]] again, she will tan your hides. {{Chat option|2You know the ceremonial clothes?|1That seems like a fair deal.}}
+*Craft a Lunar torso, trousers, gloves and boots from your hides.
+[[File:Lunar ring location.png|thumb|300px|[[Lunar ring]] location]]
+*Centre of the city, talk to [[Selene]]. {{Chat option|2I'm looking for a ring.}}
+*Exit the city and run south then west past the two bridges. With your spade, dig up the blue flowers furthest west to receive the lunar ring. (You must click continue on the chatbox!)
+*Give the [[Oneiromancer]] all your [[lunar gear]]. She will then give you all the items back. You will need to have 11 inventory spaces free (8 for your lunar gear and 3 other spaces) or you cannot continue.}}
+
+===Dreamville===
+{{Needed|[[Tinderbox]], [[axe]] (optional), [[Seal of passage]], [[kindling]], [[lunar gear]], [[Waking sleep vial]], [[combat spells]] to fight [[Me]] (level 79), food (recommended)}}
+{{Checklist|
+*Use the [[Waking sleep vial]] on the [[kindling]] you received.
+*Get your combat runes and supplies and '''wear all your lunar items (but do NOT bank your [[seal of passage]])'''. 4 inventory spaces are required.
+*Enter a long building on the western side of the village that has a ceremonial brazier and a staircase inside.
+*Light the ceremonial brazier then use the kindling on it.
+*Talk to the [[Ethereal Being]].
+*If you logout during the dream state you will have to speak to the [[Oneiromancer]] again to retrieve the [[Waking sleep vial]] and [[kindling]].
+}}
+====Dicing====
+{{Checklist|
+*Step on the [[platform (Lunar Diplomacy)#Fluke|south-western yellow platform]].
+*Talk to [[Ethereal Fluke]].
+*He will call out a number, you need to make the [[dice]] add up to the number he called. Roll the dice for the numbers in the answer that are not on the dice. E.g. for number 12, roll any dice that are numbers 4, 5 or 6.
+}}
+{|class="wikitable lighttable" style="text-align:center;"
+!Number
+!Answer
+|-
+|'''12'''||1, 1, 2, 2, 3, 3
+|-
+|'''13'''||1, 1, 2, 2, 3, 4
+|-
+|'''14'''||1, 1, 2, 2, 4, 4
+|-
+|'''15'''||1, 1, 2, 5, 3, 3
+|-
+|'''16'''||1, 1, 2, 5, 3, 4
+|-
+|'''17'''||1, 1, 2, 5, 4, 4
+|-
+|'''18'''||1, 1, 5, 5, 3, 3
+|-
+|'''19'''||1, 1, 5, 5, 3, 4
+|-
+|'''20'''||1, 1, 5, 5, 4, 4
+|-
+|'''21'''||1, 6, 2, 5, 3, 4
+|-
+|'''22'''||1, 6, 2, 5, 4, 4
+|-
+|'''23'''||1, 6, 5, 5, 3, 3
+|-
+|'''24'''||1, 6, 5, 5, 3, 4
+|-
+|'''25'''||1, 6, 5, 5, 4, 4
+|-
+|'''26'''||6, 6, 2, 5, 3, 4
+|-
+|'''27'''||6, 6, 2, 5, 4, 4
+|-
+|'''28'''||6, 6, 5, 5, 3, 3
+|-
+|'''29'''||6, 6, 5, 5, 3, 4
+|-
+|'''30'''||6, 6, 5, 5, 4, 4
+|}
+{{Checklist|
+*He will teleport you back to the centre area after 5-6 correct answers.
+*Talk to the Ethereal Being.
+}}
+
+====Number sequence====
+{{Checklist|
+*Step on the [[platform (Lunar Diplomacy)#Numerator|south-eastern purple platform]].
+*Talk to [[Ethereal Numerator]].
+*Click on the numbers to complete the patterns:
+}}
+
+{|class="wikitable lighttable" style="text-align:center;"
+!Sequence
+!Answer
+|-
+|'''0, 1, 3, 4'''||6, 7
+|-
+|'''1, 1, 1, 2, 1, 3, 1, 4'''||1, 5
+|-
+|'''1, 1, 2, 2, 3'''||3, 4
+|-
+|'''1, 1, 2, 3, 1, 1, 4'''||5, 1
+|-
+|'''1, 2, 3'''||4, 5
+|-
+|'''1, 3, 5'''||7, 9
+|-
+|'''1, 4, 2, 5'''||3, 6
+|-
+|'''1, 6, 2, 5'''||3, 4
+|-
+|'''1, 9, 2, 8'''||3, 7
+|-
+|'''2, 3, 5, 6'''||8, 9
+|-
+|'''2, 6, 3, 7'''||4, 8
+|-
+|'''3, 4, 2, 5'''||1, 6
+|-
+|'''7, 3, 6, 2'''||5, 1
+|-
+|'''8, 6, 4'''||2, 0
+|-
+|'''9, 7, 5'''||3, 1
+|-
+|'''9, 8, 7, 6'''||5, 4
+|}
+{{Checklist|
+*He eventually teleports you back to the middle.
+*Talk to the Ethereal Being.
+}}
+====Logging race====
+{{Checklist|*Step on the [[platform (Lunar Diplomacy)#Perceptive|north-eastern blue platform]].
+*Talk to [[Ethereal Perceptive]]. If you don't have an axe, he'll give you one. {{Chat option|1Ok, let's go!}}
+*Run west and chop 20 logs, depositing them on your log pile. (Warning: Pick up any items you dropped before handing in last log or you will be teleported away without time to grab them.)
+*He will teleport you once you've won the competition.
+*Talk to the Ethereal Being.
+}}
+
+====Memorization====
+{{Checklist|
+*Step on the [[platform (Lunar Diplomacy)#Guide|north-western grey platform]].
+*Talk to [[Ethereal Guide]].
+*Cross the chasm by jumping on the correct combination of Dream Puffs. Keep a note of the correct steps!
+}}
+
+
+{|class="underpasstable"
+|{{#vardefineecho:table|<table class="lighttable"><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr></table>}}
+|{{#var:table}}
+|{{#var:table}}
+|{{#var:table}}
+|}
+Patterns are when facing '''north'''. 
+{|
+|-
+|
+{|
+|-
+|
+{| class="wikitable"
+|+Path 1
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|
+|X
+|-
+|X
+|X
+|X
+|X
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|}
+|
+{| class="wikitable"
+|+Path 2
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|X
+|X
+|-
+|
+|
+|X
+|
+|-
+|
+|
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|X
+|X
+|X
+|-
+|
+|X
+|
+|
+|}
+|
+{| class="wikitable"
+|+Path 3
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|X
+|X
+|X
+|-
+|
+|X
+|
+|
+|-
+|
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|}
+|
+{| class="wikitable"
+|+Path 4
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|X
+|X
+|X
+|-
+|
+|X
+|
+|
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+{| class="wikitable"
+|+Path 5
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|X
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|X
+|X
+|X
+|X
+|-
+|X
+|
+|
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+{| class="wikitable"
+|+Path 6
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|X
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|-
+|X
+|X
+|X
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|
+|X
+|}
+|
+{| class="wikitable"
+|+Path 7
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|X
+|X
+|-
+|
+|X
+|X
+|
+|-
+|
+|X
+|
+|
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+{| class="wikitable"
+|+Path 8
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|-
+|
+|X
+|X
+|
+|-
+|X
+|X
+|
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+{| class="wikitable"
+|+Path 9
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+|-
+|X
+|X
+|X
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|
+|
+|-
+|
+|X
+|
+|
+|-
+|X
+|X
+|
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|
+|
+|
+|}
+|}
+
+{| class="wikitable"
+|+Path 10
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|X
+|X
+|X
+|-
+|
+|X
+|
+|
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+|}
+
+
+{{Checklist|
+*Once complete, talk to the Ethereal Being.
+}}
+
+====The race====
+{{Checklist|
+*Step on the [[platform (Lunar Diplomacy)#Expert|eastern grey platform]].
+*Talk to [[Ethereal Expert]] and start the race. {{Chat option|1Ok.}}
+*Turn on run, and keep it on while jumping the hurdles.
+*Jump over the Hurdles. If you fail 3 times you will lose the race.
+*After you have won talk to the Ethereal Being.
+}}
+====Copy cat====
+{{Checklist|
+*Step on the [[platform (Lunar Diplomacy)#Mimic|south-eastern green platform]].
+*Talk to [[Ethereal Mimic]]. {{Chat option|1Suppose I may as well have a go.}}
+*Click on him, then copy the emote that he performs. He teleports after each correct emote.
+*After 5 correct emotes, he'll teleport you back.
+}}
+====Defeating Me====
+{{Checklist|*Talk to the Ethereal Being to begin the final fight. {{Chat option|1Of course. I'm ready.}}
+*Kill [[Me]] (level 79, safespottable). (Cannot tele from this area, must kill Me or log out.)
+**You cannot equip any different equipment when fighting Me, however you can bring combat runes to make the fight drastically easier.  A tome of fire or any shield slot item can be used if equipped before entering the dream.
+}}
+
+===Finishing up===
+{{Checklist|
+*Read the lectern to return to Lunar Isle.
+*With the seal of passage equipped or in your inventory talk to the [[Oneiromancer]].
+*'''Congratulations, quest complete!'''
+}}

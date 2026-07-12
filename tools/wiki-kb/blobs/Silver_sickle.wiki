@@ -1,0 +1,78 @@
+{{External|rs}}
+{{Infobox Item
+|name = Silver sickle
+|image = [[File:Silver sickle.png]]
+|release = [[13 July]] [[2004]]
+|update = Nature Spirit Quest
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = It's a silver sickle.
+|value = 175
+|weight = 1.587
+|exchange = Yes
+|id = 2961
+}}
+
+[[File:Silver sickle detail.png|left|130px]]
+A '''silver sickle''' can be made at 18 [[Crafting]] with a [[silver bar]] and a [[sickle mould]] at a [[furnace]], granting 50 Crafting [[experience]]. It can be turned into a [[Silver sickle (b)]] during [[Nature Spirit]] [[quest]], and can also be blessed after the quest by dipping it in the pool of water in the [[Filliman Tarlock|nature spirit's]] [[Nature Grotto|grotto]]. A blessed sickle can be used to cast [[Bloom]]; when cast, this spell drains your [[prayer]] slightly, and if you are in the [[Mort Myre Swamp]], it may grow fungi, saplings and golden pears on rotting logs, branches, and small bushes respectively, which can be used to fill a [[druid pouch]].
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = +1
+|dcrush = +1
+|dmagic = +1
+|drange = +1
+|str = +1
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 5
+|attackrange = 1
+|combatstyle = Slash Sword
+|image = [[File:Silver sickle equipped.png]]
+|altimage = [[File:Silver sickle equipped female.png]]
+}}
+
+{{CombatStyles|Slash Sword|speed=5|attackrange=1}}
+
+==Treasure Trails==
+{{EmoteClueHeader}}
+{{EmoteClue|tier=medium|emote=Cry|emote2=Bow|location=Inside [[Hickton's Archery Emporium]] in [[Catherby]]|item1=Silver sickle|item2=blue boots|item3=hardleather body}}
+{{EmoteClueBottom}}
+
+==Creation==
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 18
+|skill1boostable = Yes
+|skill1exp = 50
+|members = Yes
+|ticks = 3
+|tools = Sickle mould
+|facilities = Furnace
+|mat1 = Silver bar
+|output1 = Silver sickle
+}}
+
+==Products==
+{{Uses material list|Silver sickle}}
+
+==Shop locations==
+{{Store locations list|Silver sickle}}
+
+{{Slash weapons}}
+{{Silver}}
+{{Nature Spirit}}
+{{Attribute affinities}}

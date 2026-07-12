@@ -1,0 +1,17 @@
+===Levels 47–62: Wilderness Agility Course===
+{{Inventory|align=right
+|Ice plateau teleport (tablet) |Knife |Stamina potion(4) |Stamina potion(4)
+|Stamina potion(4) |Stamina potion(4) |Stamina potion(4) |Stamina potion(4)
+|Summer pie |Summer pie |Summer pie |Summer pie
+|Summer pie |Summer pie |Summer pie |Summer pie
+| | | |
+| | | |
+| | | |
+}}
+The [[Wilderness Agility Course]] offers the fastest experience rates from level 47 to 62. Level 52 is normally required to enter the course, but this can be boosted from level 47 with a [[summer pie]]. However, level 49 is required to pass the [[Obstacle pipe (Wilderness Agility Course)|pipe obstacle]], requiring occasional re-boosting if below.
+
+The easiest way to get there is to break an [[Ice plateau teleport (tablet)|Ice Plateau Teleport tablet]] and run slightly south-east. Because this method involves the deep [[Wilderness]], players should keep the risk to the minimum as there is a good chance of encountering [[player killing|player killers]]. Bring some [[Summer pie|summer pies]] to boost the Agility level and to heal the damage taken from failing the obstacles. Additionally, bring a [[knife]] or [[Wilderness sword 1|Wilderness sword]] to slash [[Web|webs]] when going to the [[Mage Arena]] to bank for more supplies. [[Boots of lightness]] and the [[spottier cape]] can be worn to [[Weight-reducing clothing|reduce weight]].
+
+The experience bonus, [[wilderness agility ticket]], and [[Energy|run energy]] refill at the end of the lap is only received if the player has passed all the obstacles in order. If the player fails the [[Log balance (Wilderness Agility Course)|log balance]], walk past the [[Stepping stone (Wilderness Agility Course)|stepping stones]] to cross it again to be able to receive the completion bonus.
+
+Players can gain around 50,000–60,000 experience per hour when including fails and wilderness agility tickets. It also provides alchables, noted [[Blighted|blighted items]], and [[Clue scroll (medium)|medium clue scrolls]], making it a potentially [[Money making guide/Wilderness Agility Course|lucrative money maker]], even for [[Ironman Mode|Ironmen]].

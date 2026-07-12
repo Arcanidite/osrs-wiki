@@ -1,0 +1,4 @@
+===Levels 1–42: Questing===
+Early levels can be skipped by completing [[Quest experience rewards#Thieving|quests that give Thieving experience]]. Completing [[Biohazard]], [[Hazeel Cult]], [[Fight Arena]], [[Tower of Life]], and [[Tribal Totem]] grants a total of 7,200 experience, which will get the player from level 1 to 24. These quests can be easily done at a low level and they have minimal requirements, however some of them involve some sort of combat.
+
+Furthermore, completing [[The Queen of Thieves]], [[The Giant Dwarf]], [[Death to the Dorgeshuun]], [[The Golem]], [[Creature of Fenkenstrain]], [[Twilight's Promise]], [[Ethically Acquired Antiquities]], [[The Feud]], and [[Death on the Isle]] grants a total additional 41,500 experience, which will get the player up to level 42.

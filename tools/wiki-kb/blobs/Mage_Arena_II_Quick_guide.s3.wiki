@@ -1,0 +1,5 @@
+=== Starting out ===
+{{Needed|Item to cut web outside of Mage Arena bank, such as [[knife]], [[slash weapon]] or any [[Wilderness sword]].}}
+{{Checklist|
+*Talk to [[Kolodion]] at the [[Mage Arena]] bank located in level 53 [[Wilderness]] to receive an [[enchanted symbol]]. {{Chat option|3Are there any more challenges available?|1Great, I've been waiting for an improvement!}}
+}}

@@ -1,0 +1,34 @@
+===Levels 95/98–99+: Smithing 3-bar rune items===
+Smithing [[rune platelegs]], [[rune plateskirt|plateskirts]], or [[rune 2h sword|2h swords]] at an anvil offers decent experience, and it is also profitable. Players will need to have level 99 to be able to make these items, but [[Kovac's grog]] (starting from level 95) or [[Dwarven stout]] (starting from level 98) can be used to boost for that level. Each of these smithed items yields the same amount of experience, so players should make whatever offers the best profit. Players may also cast [[High Level Alchemy]] to increase profits, however this is only recommended if you have a lot of disposable gold.
+
+Assuming 60 grogs used at level 95, 900 items smithed per hour and alching the items, this would yield {{Coins|900*({{HA|Rune plateskirt}} - {{GEP|Nature rune}} - {{GEP|Runite bar|3}}) - {{GEP|Kovac's grog|60}}}} per hour with an expected GP/XP of {{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Kovac's grog}}/15))/225}};- When using [[preserve]] this would decrease to 40 grogs or {{Coins|900*({{HA|Rune plateskirt}} - {{GEP|Nature rune}} - {{GEP|Runite bar|3}}) - {{GEP|Kovac's grog|40}}}} per hour with an expected GP/XP of {{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Kovac's grog}}/22.5))/225}} ({{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Kovac's grog}}/45))/225}}  and {{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Kovac's grog}}/67.5))/225}} GP/XP at level 96 and 97 respectively), while normal dwarven stouts at 98 would yield {{Coins|900*({{HA|Rune plateskirt}} - {{GEP|Nature rune}} - {{GEP|Runite bar|3}}) - {{GEP|Dwarven stout|60}}}} for a GP/XP of {{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Dwarven stout}}/15))/225}}. 
+{| class="wikitable sortable align-center-1"
+! colspan="2" | Item
+!XP/Hour
+!Profit/Hour
+!Profit/XP
+!Profit (HA)/Hour
+!Profit (HA)/XP
+|-
+
+|{{plinkt|Rune platelegs|txt=Platelegs}}
+|210,000
+|{{Coins|963 * ({{GEPT|Rune platelegs}} - {{GEP|Runite bar|3}})}}
+|{{Coins|({{GEPT|Rune platelegs}} - {{GEP|Runite bar|3}})/225}}
+|{{Coins|963 * ({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})}}
+|{{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})/225}}
+|-
+|{{plinkt|Rune plateskirt|txt=Plateskirt}}
+|210,000
+|{{Coins|963 * ({{GEPT|Rune plateskirt}} - {{GEP|Runite bar|3}})}}
+|{{Coins|({{GEPT|Rune plateskirt}} - {{GEP|Runite bar|3}})/225}}
+|{{Coins|963 * ({{HA|Rune plateskirt}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})}}
+|{{Coins|({{HA|Rune plateskirt}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})/225}}
+|-
+|{{plinkt|Rune 2h sword|txt=2h sword}}
+|210,000
+|{{Coins|963 * ({{GEPT|Rune 2h sword}} - {{GEP|Runite bar|3}})}}
+|{{Coins|({{GEPT|Rune 2h sword}} - {{GEP|Runite bar|3}})/225}}
+|{{Coins|963 * ({{HA|Rune 2h sword}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})}}
+|{{Coins|({{HA|Rune 2h sword}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})/225}}
+|}

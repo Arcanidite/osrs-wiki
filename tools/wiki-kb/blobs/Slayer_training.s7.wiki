@@ -1,0 +1,11 @@
+==Recommended quests==
+Completing the following quests can improve the overall Slayer experience:
+
+* [[Animal Magnetism]] gives an [[Ava's device]], which reduces ammunition used while using [[Ranged]] weapons, and can be upgraded at higher ranged levels.
+
+*[[Desert Treasure I]] grants access to [[Ancient Magicks]], allowing the use of [[Ice Burst]]/[[Ice Barrage]] for Slayer tasks
+*[[Fairytale II - Cure a Queen]] grants access to [[fairy rings]], granting easy access to many Slayer locations
+*[[Dwarf Cannon]] gives the ability to use a [[dwarf multicannon]], speeding up tasks at the cost of [[Cannonball|cannonballs]]
+*[[Knight Waves Training Grounds]] unlocks the [[Piety]] prayer, boosting your melee stats 
+
+*[[Bear Your Soul]] unlocks the [[Soul bearer]], which can transport [[Ensouled head|ensouled heads]] to your bank

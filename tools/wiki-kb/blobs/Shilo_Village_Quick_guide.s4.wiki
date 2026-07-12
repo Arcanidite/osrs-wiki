@@ -1,0 +1,18 @@
+===Ah Za Rhoon===
+[[File:Ah Za Rhoon map.png|frame|center]]
+{{Checklist|
+*Head to the temple of [[Ah Za Rhoon]] south-west of the [[Shipyard (Karamja)|Shipyard]] and east of [[Shilo Village (location)|Shilo Village]] across the River Amja (the pile of rocks on the minimap). Use a gnome glider or Fairy ring {{Fairycode|DKP}}, or walk there by crossing the wooden log to the east, then head south until you reach a mound of earth surrounded by rocks.
+*Use your spade on the mound of earth.
+*Use a lit torch or candle on the fissure, then use your rope on the fissure. '''You will lose the item.'''
+*Search the fissure ({{SCP|Agility|32}}) to climb down and follow the cave south until you reach the stream.
+* Use your chisel on the stone at 4 to receive a stone-plaque. Read it.
+*Search the cave-in at 2 to enter a new cave. {{Chat option|1Yes, I'll wriggle through.}}
+*Search the loose rocks at 6 to find a tattered scroll. {{Chat option|1Yes, I'll carefully move the rocks to see what's behind them.}} '''Read the scroll.'''
+*Search the sacks at 7 to find a crumpled scroll. '''Read the scroll.'''
+*Search the ancient gallows at 8 to get the [[Zadimus corpse]]. {{Chat option|2Yes, I may find something else on the corpse.}}
+*Teleport out, or head back to the first area via the [[Cave in]] at 2.
+**If you went back to first area, leave by crafting the broken table at 3 into a raft, or by searching the rocks at 5. You will take heavy damage if you fail the search rocks at 5.
+*Return to Trufitus and use the 4 items you have collected on him.
+*Head west to the [[Tribal Statue]] near Trufitus' hut and bury the corpse.
+*Use the bone shard on Trufitus. {{Chat option|1It appeared when I buried Zadimus' corpse|1He said something after he gave it to me.|1The spirit said something about keys and kin?}}
+}}

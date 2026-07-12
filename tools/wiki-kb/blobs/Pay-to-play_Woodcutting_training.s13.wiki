@@ -1,0 +1,8 @@
+===Levels 88/89/90–99: Redwood trees===
+Cutting [[redwood tree]]s in the [[Woodcutting Guild]] requires very little attention and offers decent experience. Players can bank the [[Redwood logs|logs]] in the nearby bank chest. It is faster to simply drop the logs for the best experience rates. Fletching logs into stackable arrow shafts can also be convenient if the player would like to put less effort, as this does not require dropping logs. This will lower experience rates, however.
+
+Experience rates scale depending on level. When using the infernal or the dragon axe, players can expect to gain around 55,000–60,000 experience per hour at level 90, increasing to around 65,000 experience per hour at level 99. With the [[crystal axe]], players can gain up to around 70,000–75,000 experience per hour.
+
+Similar to teak trees, redwood trees in the [[Farming Guild]] can be cut using 1.5t woodcutting for up to 180,000 experience per hour using a crystal axe. This is especially useful for Ironman accounts looking to bank redwood logs.
+
+Redwoods can be cut reliably starting from level 88 using the [[Dragon axe]] special attack, a [[Lightbearer]], and the [[Preserve]] prayer. Players should also wear as much prayer boosting equipment as possible to reduce the drain rate of Preserve. At level 89, Preserve is no longer required as the Lightbearer will almost always restore the player's special attack energy before their level drops back below 90 unless the special attack was activated in the last segment (12 seconds) of the [[Temporary skill boost#Boost cycle|boost cycle]].

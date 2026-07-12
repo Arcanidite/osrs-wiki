@@ -1,0 +1,188 @@
+{{External|rs|rsc=Nature-Rune|dw=Nature Rune}}
+{{Infobox Item
+|name = Nature rune
+|image = [[File:Nature rune.png]]
+|release = [[24 May]] [[2001]]
+|update = New magic system online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Drop
+|examine = Used for alchemy spells.
+|value = 180
+|weight = 0.000
+|respawn = 200
+|exchange = Yes
+|id = 561
+}}
+[[File:Nature rune detail.png|left|120px]]
+'''Nature runes''' are [[runes]] used for transmutation spells such as [[Low Level Alchemy|Low]] and [[High Level Alchemy|High]] [[Alchemy spells|Alchemy]] and [[Superheat Item]]. They are also used for the spells [[Bind]], [[Snare]], and [[Entangle]], and several spells on the [[Lunar spellbook|Lunar]] and [[Arceuus spellbook|Arceuus spellbooks]]. They can be purchased from many [[magic shops]].
+
+Nature runes can be crafted from [[pure essence]] by [[members]] with level 44 [[Runecraft]] at the [[Nature Altar]], granting 9 [[experience]] per pure essence used. Players with 91 Runecraft will always craft two nature runes per essence.
+
+Nature runes are one of the most popular non-elemental runes traded in [[RuneScape|''Old School RuneScape'']] because many players need the runes to train their [[Magic]] using profitable spells such as [[High Level Alchemy]] and [[Plank Make]].
+
+Nature runes can be used to charge [[Bryophyta's staff]], allowing the player to save some runes and use spells that require nature runes without using an inventory space.
+
+==Obtaining==
+There is a lava-surrounded island in high-level [[Wilderness]], south-east of the [[Demonic Ruins]], where 2 nature rune spawns can be [[Telekinetic Grab|telegrabbed]]. Each of these spawns yields 3-4 nature runes.
+
+There are also some located on an island near the [[rock crab]]s by [[Rellekka]] that can be telegrabbed.
+
+They can also be obtained by stealing from locked [[Chest (nature runes)|chests]] in [[Ardougne]] and [[Rellekka]]. A [[Thieving]] level of 28 is needed to pick the locks.
+
+[[Dark wizard]]s can sometimes drop 4 nature runes when killed.
+
+==Runecraft info==
+Nature runes are crafted at the [[Nature Altar]] south-east of [[Tai Bwo Wannai]]. This altar is close to the fairy ring {{Fairycode|ckr}}.
+
+{{Tabber
+|tab1=Pure essence
+|tab1content={{Recipe
+|skill1 = Runecraft
+|skill1lvl = 44
+|skill1boostable = yes
+|skill1exp = 9
+|members = yes
+|ticks = 1
+|facilities = Nature Altar
+|tools = Nature tiara, Nature talisman
+|notes = [[Multiple runes|2 runes]] per essence after level 91.
+|mat1 = Pure essence
+|output1 = Nature rune
+}}
+|tab2=Daeyalt essence
+|tab2content={{Recipe
+|skill1 = Runecraft
+|skill1lvl = 44
+|skill1boostable = yes
+|skill1exp = 13.5
+|members = yes
+|ticks = 1
+|facilities = Nature Altar
+|tools = Nature tiara, Nature talisman
+|notes = [[Multiple runes|2 runes]] per essence after level 91.
+|mat1 = Daeyalt essence
+|mat1cost = no
+|output1 = Nature rune
+}}
+|tab3=Guardian essence
+|tab3content={{Recipe
+|skill1 = Runecraft
+|skill1lvl = 44
+|skill1boostable = yes
+|skill1exp = 9
+|members = yes
+|ticks = 1
+|facilities = Nature Altar
+|notes = [[Multiple runes|2 runes]] per essence after level 91.<br>
+Accessible only in the [[Guardians of the Rift]] minigame.
+|mat1 = Guardian essence
+|mat1cost = no
+|output1 = Nature rune
+|output2 = Catalytic guardian stone
+|output2cost = no
+}}
+|tab4 = Mangled extract
+|tab4content = {{Recipe
+|skill1 = Runecraft
+|skill1lvl = 60
+|notes =Started [[Desert Treasure II - The Fallen Empire]]
+|skill1boostable = no
+|skill1exp = 9
+|members = yes
+|ticks = 1
+|facilities = Nature Altar
+|tools = Nature tiara, Nature talisman
+|mat1 = Pure essence
+|mat2 = Mangled extract
+|mat2cost=12000
+|output1 = Nature rune
+|output1quantity = 61
+|output1quantitynote = The additional 60 runes from the extract are not affected by [[Raiments of the Eye]] or skill level.
+}}
+
+}}
+
+==Money making==
+{{Mmgsection|Crafting nature runes through the Abyss|Collecting nature runes|Crafting double nature runes (Achievement Diary Cape teleport)}}
+
+{{Nature Rune Spells}}
+
+==Products==
+{{Uses material list|Nature rune}}
+
+==Item sources==
+{{Drop sources|Nature rune}}
+
+===Shop locations===
+{{Store locations list|Nature rune}}
+
+====[[Rewards Guardian (Mage Training Arena)]]====
+Nature Runes can be bought for [[pizazz points]] awarded from participating in the rooms in the [[Mage Training Arena]].
+{| class="wikitable"
+!Item
+!Telekinetic
+!Alchemist
+!Enchantment
+!Graveyard
+|-
+|{{Plink|Nature rune}}
+|0
+|1
+|0
+|1
+|}
+
+===Item spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Nature rune|location=[[Rellekka]] - on a small island near the [[rock crab]]s{{Refn|name=telegrab|This spawn requires [[telekinetic grab]] to obtain.}}|members=Yes|2671,3737,qty:2|2672,3738,qty:2|leagueRegion=Fremennik}}
+{{ItemSpawnLine|name=Nature rune|location=[[Wilderness]] - on a small island south-east of the [[Demonic Ruins]]{{Refn|name=telegrab|This spawn requires [[telekinetic grab]] to obtain.}}|members=No|3311,3853,qty:3|3307,3859,qty:4|leagueRegion=Wilderness}}
+{{ItemSpawnTableBottom}}
+{{reflist|name=telegrab}}
+
+==Treasure Trails==
+*{{SherlockChallenge|Crafting a nature rune|elite}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 14 September 2022
+|update = Quest Speedrunning, Wilderness Boss Rework Rewards & Poison Dynamite Betas
+|poll = 
+|change = The item's [[Grand Exchange]] buy limit was increased from 12,000 to 18,000.
+}}
+{{Subject changes
+|date = 13 June 2005
+|update = RuneCraft Update and Tweaks
+|change = *The item's value was increased from 20 to 180.
+*The item was graphically updated for a second time.
+}}
+{{Subject changes
+|date = 1 June 2005
+|change = The item was graphically updated.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Nature rune detail (historical v1).png|center|300x150px]]
+|[[File:Nature rune detail (historical, v2).png|center|300x150px]]
+|[[File:Nature rune detail.png|center|300x150px]]
+|-
+|[[File:Nature rune (historical, v1).png|center]]
+|[[File:Nature rune (historical, v2).png|center]]
+|[[File:Nature rune.png|center]]
+|-
+|29 March 2004 –<br/>1 June 2005
+|1 June 2005 –<br/>13 June 2005
+|13 June 2005 –<br/>present
+|}
+
+==Trivia==
+*In ''RuneScape Classic'', the icon of a nature rune resembles a tree much more, with the top part being more ridged.
+
+{{Runes}}

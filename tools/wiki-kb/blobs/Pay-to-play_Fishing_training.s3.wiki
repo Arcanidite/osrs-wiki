@@ -1,0 +1,4 @@
+===Levels 1–24/33: Questing===
+Early levels can be skipped by completing [[Quest experience rewards#Fishing|quests that give Fishing experience]]. Completing [[Sea Slug]], [[Fishing Contest]], and the [[Recipe for Disaster/Freeing Pirate Pete|Freeing Pirate Pete]] quest of [[Recipe for Disaster]] will grant a total of 10,612 experience, which will get the player up to level 27. All of these quests have few requirements and can be done at a low level, and completing them is a much better route for early Fishing levels than catching fish. Notably, the experience reward from Sea Slug is enough to get the player from level 1 to 24, and it is faster to complete the quest than catch low-level fish.
+
+Completing [[Tai Bwo Wannai Trio]] and [[The Fremennik Trials]] will grant an additional 7,812 experience, which will get the player up to level 33, but they have higher requirements.

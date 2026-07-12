@@ -1,0 +1,428 @@
+===Levels 5–99: Crafting jewellery===
+Starting at level 5, players can begin crafting gold jewellery using a gold bar and the appropriate mould at a furnace. The type of jewellery crafted depends on the mould used, with rings, necklaces, amulets, and bracelets being the primary options.
+
+The best location for crafting is Prifddinas, as it features the shortest distance between a bank and a furnace. If you do not have access to [[Prifddinas]], [[Edgeville]] is the next best option. Another alternative is the [[Shilo Village (location)|Shilo Village]] furnace, which is even closer to the bank than Edgeville’s but requires a 20gp fee per use (players can deposit bulk payments in the coffer for convenience).
+
+If available, wearing weight-reducing clothing will help reduce run energy drain, making trips more efficient. At higher crafting levels, certain jewellery items, such as [[dragonstone]] can be profitable, though they tend to be traded in lower quantities.
+
+[[Zenyte]] and [[Onyx]] jewellery were not included because their profit margins are often inaccurate, they would also require an immense cash down to buy in bulk. [[Zenyte]]s are also rarely sold on the Grand Exchange. 
+
+The following rates used for experience per hour are {{#vardefineecho:metalgemhour|1400}} for a gem and metal bar, {{#vardefineecho:metalhour|1600}} for just metal bars, or {{#vardefineecho:stringhour|960}} for a gem and metal bar with stringing.
+
+{| class="wikitable sortable align-center-1 align-left-2 align-left-5" style="text-align: right;"
+! colspan="2" rowspan="2" | Item
+! colspan="2" data-sort-type="number" |{{SCP|Crafting|link=y}}
+! rowspan="2" |XP/hour
+! rowspan="2" |Materials
+! rowspan="2" |Profit/Loss
+! rowspan="2" |GP/hour
+! rowspan="2" |HA Profit/Loss
+|-
+!Level
+!Exp
+|-
+|{{plinkt|Opal ring}}
+|1
+|10
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 10}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}
+|{{Coins|{{GEPT|Opal ring}} - ({{GEP|Silver bar}} + {{GEP|Opal}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Opal ring}} - ({{GEP|Silver bar}} + {{GEP|Opal}}))}}
+|{{Coins|{{HA|Opal ring}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Opal necklace}}
+|16
+|35
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 35}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}
+|{{Coins|{{GEPT|Opal necklace}} - ({{GEP|Silver bar}} + {{GEP|Opal}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Opal necklace}} - ({{GEP|Silver bar}} + {{GEP|Opal}}))}}
+|{{Coins|{{HA|Opal necklace}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Opal bracelet}}
+|22
+|45
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 45}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}
+|{{Coins|{{GEPT|Opal bracelet}} - ({{GEP|Silver bar}} + {{GEP|Opal}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Opal bracelet}} - ({{GEP|Silver bar}} + {{GEP|Opal}}))}}
+|{{Coins|{{HA|Opal bracelet}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Opal amulet (u)}}
+|27
+|55
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 55}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}
+|{{Coins|{{GEPT|Opal amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Opal}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Opal amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Opal}}))}}
+|{{Coins|{{HA|Opal amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Opal amulet}}
+|27
+|59
+|{{formatnum:{{#expr:{{#var:stringhour}} * 59}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Opal amulet}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Opal amulet}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Opal amulet}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade ring}}
+|13
+|32
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 32}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}
+|{{Coins|{{GEPT|Jade ring}} - ({{GEP|Silver bar}} + {{GEP|Jade}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Jade ring}} - ({{GEP|Silver bar}} + {{GEP|Jade}}))}}
+|{{Coins|{{HA|Jade ring}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade necklace}}
+|25
+|54
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 54}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}
+|{{Coins|{{GEPT|Jade necklace}} - ({{GEP|Silver bar}} + {{GEP|Jade}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Jade necklace}} - ({{GEP|Silver bar}} + {{GEP|Jade}}))}}
+|{{Coins|{{HA|Jade necklace}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade bracelet}}
+|29
+|60
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 60}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}
+|{{Coins|{{GEPT|Jade bracelet}} - ({{GEP|Silver bar}} + {{GEP|Jade}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Jade bracelet}} - ({{GEP|Silver bar}} + {{GEP|Jade}}))}}
+|{{Coins|{{HA|Jade bracelet}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade amulet (u)}}
+|34
+|70
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 70}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}
+|{{Coins|{{GEPT|Jade amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Jade}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Jade amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Jade}}))}}
+|{{Coins|{{HA|Jade amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade amulet}}
+|34
+|74
+|{{formatnum:{{#expr:{{#var:stringhour}} * 74}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Jade amulet}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Jade amulet}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Jade amulet}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz ring}}
+|16
+|35
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 35}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}
+|{{Coins|{{GEPT|Topaz ring}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Topaz ring}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}}))}}
+|{{Coins|{{HA|Topaz ring}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz necklace}}
+|32
+|70
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 32}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}
+|{{Coins|{{GEPT|Topaz necklace}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Topaz necklace}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}}))}}
+|{{Coins|{{HA|Topaz necklace}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz bracelet}}
+|38
+|75
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 75}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}
+|{{Coins|{{GEPT|Topaz bracelet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Topaz bracelet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}}))}}
+|{{Coins|{{HA|Topaz bracelet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz amulet (u)}}
+|45
+|80
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 80}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}
+|{{Coins|{{GEPT|Topaz amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Topaz amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}}))}}
+|{{Coins|{{HA|Topaz amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz amulet}}
+|45
+|84
+|{{formatnum:{{#expr:{{#var:stringhour}} * 84}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Topaz amulet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Topaz amulet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Topaz amulet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Gold ring}}
+|5
+|15
+|{{formatnum:{{#expr:{{#var:metalhour}} * 15}}}}
+|{{plink|Gold bar}}
+|{{Coins|{{GEPT|Gold ring}} - ({{GEP|Gold bar}})}}
+|{{Coins|{{#var:metalhour}} * ({{GEPT|Gold ring}} - {{GEP|Gold bar}})}}
+|{{Coins|{{HA|Gold ring}} - ({{GEP|Gold bar}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Gold necklace}}
+|6
+|20
+|{{formatnum:{{#expr:{{#var:metalhour}} * 20}}}}
+|{{plink|Gold bar}}
+|{{Coins|{{GEPT|Gold necklace}} - ({{GEP|Gold bar}})}}
+|{{Coins|{{#var:metalhour}} * ({{GEPT|Gold necklace}} - ({{GEP|Gold bar}}))}}
+|{{Coins|{{HA|Gold necklace}} - ({{GEP|Gold bar}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Gold bracelet}}
+|7
+|25
+|{{formatnum:{{#expr:{{#var:metalhour}} * 25}}}}
+|{{plink|Gold bar}}
+|{{Coins|{{GEPT|Gold bracelet}} - {{GEP|Gold bar}}}}
+|{{Coins|{{#var:metalhour}} * ({{GEPT|Gold bracelet}} - {{GEP|Gold bar}})}}
+|{{Coins|{{HA|Gold bracelet}} - {{GEP|Gold bar}} + {{GEP|Nature rune}}}}
+|-
+|{{plinkt|Gold amulet (u)}}
+|8
+|30
+|{{formatnum:{{#expr:{{#var:metalhour}} * 30}}}}
+|{{plink|Gold bar}}
+|{{Coins|{{GEPT|Gold amulet (u)}} - ({{GEP|Gold bar}})}}
+|{{Coins|{{#var:metalhour}} * ({{GEPT|Gold amulet (u)}} - ({{GEP|Gold bar}}))}}
+|{{Coins|{{HA|Gold amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Gold amulet}}
+|8
+|34
+|{{formatnum:{{#expr:1010 * 34}}}}
+|{{plink|Gold bar}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Gold amulet}} - ({{GEP|Gold bar}} + {{GEP|Ball of wool}})}}
+|{{Coins|1010 * ({{GEPT|Gold amulet}} - ({{GEP|Gold bar}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Gold amulet}} - ({{GEP|Gold bar}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire ring}}
+|20
+|40
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 40}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}
+|{{Coins|{{GEPT|Sapphire ring}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Sapphire ring}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}}))}}
+|{{Coins|{{HA|Sapphire ring}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire necklace}}
+|22
+|55
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 55}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}
+|{{Coins|{{GEPT|Sapphire necklace}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Sapphire necklace}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}}))}}
+|{{Coins|{{HA|Sapphire necklace}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire bracelet}}
+|23
+|60
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 60}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}
+|{{Coins|{{GEPT|Sapphire bracelet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Sapphire bracelet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}}))}}
+|{{Coins|{{HA|Sapphire bracelet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire amulet (u)}}
+|24
+|65
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 65}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}
+|{{Coins|{{GEPT|Sapphire amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Sapphire amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}}))}}
+|{{Coins|{{HA|Sapphire amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire amulet}}
+|24
+|69
+|{{formatnum:{{#expr:{{#var:stringhour}} * 69}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Sapphire amulet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Sapphire amulet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Sapphire amulet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald ring}}
+|27
+|55
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 55}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}
+|{{Coins|{{GEPT|Emerald ring}} - ({{GEP|Gold bar}} + {{GEP|Emerald}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Emerald ring}} - ({{GEP|Gold bar}} + {{GEP|Emerald}}))}}
+|{{Coins|{{HA|Emerald ring}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald necklace}}
+|29
+|60
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 60}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}
+|{{Coins|{{GEPT|Emerald necklace}} - ({{GEP|Gold bar}} + {{GEP|Emerald}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Emerald necklace}} - ({{GEP|Gold bar}} + {{GEP|Emerald}}))}}
+|{{Coins|{{HA|Emerald necklace}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald bracelet}}
+|30
+|65
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 65}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}
+|{{Coins|{{GEPT|Emerald bracelet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Emerald bracelet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}}))}}
+|{{Coins|{{HA|Emerald bracelet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald amulet (u)}}
+|31
+|70
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 70}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}
+|{{Coins|{{GEPT|Emerald amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Emerald}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Emerald amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Emerald}}))}}
+|{{Coins|{{HA|Emerald amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald amulet}}
+|31
+|74
+|{{formatnum:{{#expr:{{#var:stringhour}} * 74}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Emerald amulet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Emerald amulet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Emerald amulet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby ring}}
+|34
+|70
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 70}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}
+|{{Coins|{{GEPT|Ruby ring}} - ({{GEP|Gold bar}} + {{GEP|Ruby}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Ruby ring}} - ({{GEP|Gold bar}} + {{GEP|Ruby}}))}}
+|{{Coins|{{HA|Ruby ring}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby necklace}}
+|40
+|75
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 75}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}
+|{{Coins|{{GEPT|Ruby necklace}} - ({{GEP|Gold bar}} + {{GEP|Ruby}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Ruby necklace}} - ({{GEP|Gold bar}} + {{GEP|Ruby}}))}}
+|{{Coins|{{HA|Ruby necklace}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby bracelet}}
+|42
+|80
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 80}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}
+|{{Coins|{{GEPT|Ruby bracelet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Ruby bracelet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}}))}}
+|{{Coins|{{HA|Ruby bracelet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby amulet (u)}}
+|50
+|85
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 85}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}
+|{{Coins|{{GEPT|Ruby amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Ruby}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Ruby amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Ruby}}))}}
+|{{Coins|{{HA|Ruby amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby amulet}}
+|50
+|89
+|{{formatnum:{{#expr:{{#var:stringhour}} * 89}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Ruby amulet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Ruby amulet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Ruby amulet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond ring}}
+|43
+|85
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 85}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}
+|{{Coins|{{GEPT|Diamond ring}} - ({{GEP|Gold bar}} + {{GEP|Diamond}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Diamond ring}} - ({{GEP|Gold bar}} + {{GEP|Diamond}}))}}
+|{{Coins|{{HA|Diamond ring}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond necklace}}
+|56
+|90
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 90}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}
+|{{Coins|{{GEPT|Diamond necklace}} - ({{GEP|Gold bar}} + {{GEP|Diamond}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Diamond necklace}} - ({{GEP|Gold bar}} + {{GEP|Diamond}}))}}
+|{{Coins|{{HA|Diamond necklace}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond bracelet}}
+|58
+|95
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 95}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}
+|{{Coins|{{GEPT|Diamond bracelet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Diamond bracelet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}}))}}
+|{{Coins|{{HA|Diamond bracelet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond amulet (u)}}
+|70
+|100
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 100}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}
+|{{Coins|{{GEPT|Diamond amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Diamond}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Diamond amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Diamond}}))}}
+|{{Coins|{{HA|Diamond amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond amulet}}
+|70
+|104
+|{{formatnum:{{#expr:{{#var:stringhour}} * 104}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Diamond amulet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Diamond amulet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Diamond amulet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragonstone ring}}
+|55
+|100
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 100}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}
+|{{Coins|{{GEPT|Dragonstone ring}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Dragonstone ring}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}}))}}
+|{{Coins|{{HA|Dragonstone ring}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragon necklace}}
+|72
+|105
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 105}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}
+|{{Coins|{{GEPT|Dragon necklace}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Dragon necklace}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}}))}}
+|{{Coins|{{HA|Dragon necklace}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragonstone bracelet}}
+|74
+|110
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 110}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}
+|{{Coins|{{GEPT|Dragonstone bracelet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Dragonstone bracelet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}}))}}
+|{{Coins|{{HA|Dragonstone bracelet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragonstone amulet (u)}}
+|80
+|150
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 150}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}
+|{{Coins|{{GEPT|Dragonstone amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Dragonstone amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}}))}}
+|{{Coins|{{HA|Dragonstone amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragonstone amulet}}
+|80
+|154
+|{{formatnum:{{#expr:{{#var:stringhour}} * 154}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Dragonstone amulet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Dragonstone amulet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Dragonstone amulet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|}

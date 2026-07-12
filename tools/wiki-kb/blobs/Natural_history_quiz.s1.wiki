@@ -1,0 +1,169 @@
+==North room==
+===[[Lizard]]===
+''Lacertilia Giganteus'', Latin for "Giant lizard" Display number 4
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|How does a lizard regulate body heat?
+|
+*Chilli sauce
+*Fire
+*'''Sunlight''' {{Okay}}
+|-
+|Who discovered how to kill lizards?
+|
+*Admiral Bake
+*'''The Slayer Masters''' {{Okay}}
+*The Wise Old Man
+|-
+|How many eyes does a lizard have?
+|
+*Two
+*'''Three''' {{Okay}}
+*Six
+|-
+|What order do lizards belong to?
+|
+*Mammal
+*'''Squamata''' {{Okay}}
+*Insecta
+|-
+|What happens when a lizard becomes cold?
+|
+*'''It becomes sleepy''' {{Okay}}
+*It becomes aggressive
+*It explodes
+|-
+|Lizard skin is made of the same substance as?
+|
+*'''Hair''' {{Okay}}
+*Bone
+*Wood
+|}
+
+===Battle [[tortoise]]===
+''Testudines Giganteus'', Latin for "Giant tortoise" Display number 3
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is the name of the oldest tortoise ever recorded?
+|
+*Healthorg
+*'''Mibbiwocket''' {{Okay}}
+*Snookums
+|-
+|What is a tortoise's favourite food?
+|
+*Sharks
+*Kebabs
+*'''Vegetables''' {{Okay}}
+|-
+|Name the explorer who discovered the world's oldest tortoise.
+|
+*'''Admiral Bake''' {{Okay}}
+*Captain Cook
+*Ensign Chef
+|-
+|How does the tortoise protect itself?
+|
+*Thick skin
+*Magic
+*'''Hard shell''' {{Okay}}
+|-
+|If a tortoise had twenty rings on its shell, how old would it be?
+|
+*Ten years
+*'''Twenty years''' {{Okay}}
+*Sixty years
+|-
+|Which race breeds tortoises for battle?
+|
+*'''Gnomes''' {{Okay}}
+*Orks
+*Elves
+|}
+
+===[[Dragon (race)|Dragon]]===
+"Draconis Rex", Latin for "king dragon" Display number 1
+{| class="wikitable sortable mw-collapsible"
+|+
+!Question
+!Answer
+|-
+|What is considered a delicacy by dragons?
+|
+*Adventurers
+*'''Runite''' {{Okay}}
+*Cheese
+|-
+|What is the best defence against a dragon's attack?
+|
+*'''Anti-dragon-breath shield''' {{Okay}}
+*Rune plate
+*Cats
+|-
+|How long do dragons live?
+|
+*Fifty years
+*Forever
+*'''Unknown''' {{Okay}}
+|-
+|Which of these is not a type of dragon?
+|
+*Coloured
+*'''Elemental''' {{Okay}}
+*Ferrous
+|-
+|What is the favoured territory of a dragon?
+|
+*Swamps
+*'''Old battle sites''' {{Okay}}
+*Lumbridge Castle
+|-
+|Approximately how many feet tall do dragons stand?
+|
+*'''Twelve''' {{Okay}}
+*Six
+*Ten
+|}
+
+===[[Wyvern]]===
+''Draconis Ossis'', Latin for "bone dragon" Display number 2
+{| class="wikitable sortable mw-collapsible"
+|+
+! Question !! Answer
+|-
+| How did the wyverns die out? ||
+*'''Climate change''' {{Okay}}
+*Disease
+*Marauding adventurers
+|-
+| How many legs does a wyvern have? ||
+*'''Two''' {{Okay}}
+*Five
+*Six
+|-
+| Where have wyvern bones been found? ||
+* Ape Atoll
+*Al Kharid
+*'''Asgarnia''' {{Okay}}
+|-
+| Which genus does the wyvern theoretically belong to? ||
+* Invertebrates
+*'''Reptiles''' {{Okay}}
+*Mammals
+|-
+| What are the wyverns' closest relations? ||
+* Lizards
+*Snakes
+*'''Dragons''' {{Okay}}
+|-
+| What is the ambient temperature of wyvern bones? ||
+* Room temperature
+*'''Below room temperature''' {{Okay}}
+*Above room temperature
+|}

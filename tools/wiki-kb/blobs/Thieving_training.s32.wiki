@@ -1,0 +1,6 @@
+===Levels 94–99: Master Farmers===
+At level 94 and after completing the [[Ardougne Diary#Hard|hard Ardougne Diary]], players can pickpocket [[Master Farmer]]s at 100% success rate. They yield [[Ranarr seed|ranarr]] and [[snapdragon seed]]s, which can be sold for very high profit. The rates for ranarr, snapdragon, and torstol seeds scales with the [[Farming]] level, up to level 85 Farming. Having at least level 75 Farming is recommended. Even though Master Farmers become available at level 38 [[Thieving]], pickpocketing them at lower levels offers poor experience rates and profit due to high fail rates.
+
+The best location to pickpocket a Master Farmer is in the house east of the [[Outer Fortis General Store]], south-east of [[Civitas illa Fortis]]. Talk to the Master Farmer inside to keep her in place, or lure her to a tile where she cannot move elsewhere.
+
+Players can gain up to 115,000–120,000 experience per hour.

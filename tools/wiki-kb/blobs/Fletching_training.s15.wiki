@@ -1,0 +1,35 @@
+=== Level 1–5/10: Arrow shafts ===
+{{plinkp|Arrow shaft}} The best way to get from level 1 to level 5 is by fletching [[Arrow shaft|arrow shafts]], which give 5 experience per log.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-3 align-left-4" style="text-align:right;"
+! {{SCP|Fletching}} Level
+! Item
+! XP
+! XP/h<ref>Assumes ~2,000 actions per hour.</ref>
+! Logs for goal
+! Material cost
+! Product value
+! Total profit
+! GP/XP
+|-
+|1–5
+|{{plinkp|Arrow shaft}}
+|5
+|10,000
+|78
+|{{Coins|{{GEP|Logs|79}}}}
+|{{Coins|{{GEP|Arrow shaft|1185}}}}
+|{{Coins|{{GEP|Arrow shaft|1185}}-{{GEP|Logs|79}}}}
+|{{Coins|({{GEP|Arrow shaft}}-{{GEP|Logs}})/5}}
+|-
+|1–10
+|{{plinkp|Arrow shaft}}
+|5
+|10,000
+|233
+|{{Coins|{{GEP|Logs|233}}}}
+|{{Coins|{{GEP|Arrow shaft|3465}}}}
+|{{Coins|{{GEP|Arrow shaft|3465}}-{{GEP|Logs|233}}}}
+|{{Coins|({{GEP|Arrow shaft}}-{{GEP|Logs}})/5}}
+|}
+<references/>

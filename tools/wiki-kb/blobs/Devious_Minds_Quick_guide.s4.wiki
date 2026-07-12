@@ -1,0 +1,5 @@
+===A strange weapon===
+{{Checklist|'''''Items required: '''[[bow string]], ''[[Mithril 2h sword]] or 3 [[mithril bars]] and a hammer
+*Go to [[Doric]]'s house north of [[Falador]].
+*Use the [[mithril 2h sword]] on Doric's Whetstone to make a [[slender blade]].
+*Attach the [[bow string]] to it to make the [[bow-sword]].}}

@@ -1,0 +1,257 @@
+===Reanimating ensouled heads===
+[[File:Ensouled dragon head detail.png|220x220px|right]]
+[[Reanimation spells|Reanimating]] [[ensouled head]]s and killing the reanimated monsters near the [[Dark Altar]] is a relatively slow training method, but it requires less effort than manually offering bones at a gilded altar or the Chaos altar. This method is mainly recommended for players who wish to save money on Prayer training and do not wish to go to the [[Wilderness]], as offering bones at the Chaos altar offers a lot faster experience and is usually comparable in terms of cost.
+
+For this method, using fairy ring code {{Fairycode|CIS}} for faster access to the Dark Altar, and a fast access to fairy rings, such as the [[Fairy ring (Construction)|fairy ring in the POH]], [[quest point cape]], or using the [[Salve Graveyard Teleport]]. Having the [[rune pouch]] is strongly recommended to save inventory space. It is also recommended to buy the ensouled heads in advance, as most of them have a low trade volumes on the Grand Exchange.
+
+Experience rates vary depending on the type of ensouled head used and combat stats. With high combat stats, players can reanimate up to 220 ensouled heads per hour. This equates to around 343,000 experience per hour when reanimating [[ensouled dragon head]]s. Higher rates can be achieved by using a cannon to kill the reanimated monsters faster, but this makes the method slightly more expensive. Players will also gain some passive combat and Magic experience from this method.
+
+More information about experience rates and costs can be seen at the [[Calculator:Prayer/Ensouled heads|calculator page]].
+*Experience rates assume 220 reanimated monsters are killed per hour. Slightly higher rates can be achieved by using the dwarf multicannon to kill reanimated monsters faster.
+*GP/XP includes the cost of the ensouled head and the runes required to cast the respective spell. It does not include the cost of supplies (such as [[super combat potion]]s) or teleports.
+
+{| class="wikitable sortable align-center-1 align-center-2"
+! rowspan="2" |{{SCP|Magic}} Level
+! colspan="3" |Ensouled head
+! colspan="2" |Required runes
+! rowspan="2" |Total cost
+! rowspan="2" |{{SCP|Prayer}} XP
+! rowspan="2" |{{SCP|Prayer}} XP/hr
+! rowspan="2" |GP/XP
+|-
+! colspan="2" |Head
+!Price
+!Runes
+!Price
+|-
+|16
+|{{plinkt|Ensouled goblin head}}
+|{{Coins|{{GEP|Ensouled goblin head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=2}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|{{Coins|{{GEP|Ensouled goblin head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+| 130
+|28,600
+|{{Coins|-({{GEP|Ensouled goblin head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2) / 130 round 2}}
+|-
+|16
+|{{plinkt|Ensouled monkey head}}
+|{{Coins|{{GEP|Ensouled monkey head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=2}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|{{Coins|{{GEP|Ensouled monkey head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|182
+|40,040
+| {{Coins|-({{GEP|Ensouled monkey head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2) / 182 round 2}}
+|-
+|16
+|{{plinkt|Ensouled imp head}}
+|{{Coins|{{GEP|Ensouled imp head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=2}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|{{Coins|{{GEP|Ensouled imp head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|286
+|62,920
+|{{Coins|-({{GEP|Ensouled imp head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2) / 286 round 2}}
+|-
+|16
+|{{plinkt|Ensouled minotaur head}}
+|{{Coins|{{GEP|Ensouled minotaur head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=2}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|{{Coins|{{GEP|Ensouled minotaur head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|364
+|80,080
+|{{Coins|-({{GEP|Ensouled minotaur head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2) / 364 round 2}}
+|-
+|16
+|{{plinkt|Ensouled scorpion head}}
+|{{Coins|{{GEP|Ensouled scorpion head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=2}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|{{Coins|{{GEP|Ensouled scorpion head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|454
+|99,880
+|{{Coins|-({{GEP|Ensouled scorpion head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2) / 454 round 2}}
+|-
+|16
+|{{plinkt|Ensouled bear head}}
+|{{Coins|{{GEP|Ensouled bear head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=2}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|{{Coins|{{GEP|Ensouled bear head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|480
+|105,600
+|{{Coins|-({{GEP|Ensouled bear head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2) / 480 round 2}}
+|-
+|16
+|{{plinkt|Ensouled unicorn head}}
+|{{Coins|{{GEP|Ensouled unicorn head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=2}}
+| {{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|{{Coins|{{GEP|Ensouled unicorn head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2}}
+|494
+|108,680
+| {{Coins|-({{GEP|Ensouled unicorn head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2) / 494 round 2}}
+|-
+|41
+|{{plinkt|Ensouled dog head}}
+|{{Coins|{{GEP|Ensouled dog head}}}}
+| nowrap="nowrap" | {{RuneReq|Body=4|Nature=3|Soul=1}}
+| {{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|{{Coins|{{GEP|Ensouled dog head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|520
+|114,400
+|{{Coins|-({{GEP|Ensouled dog head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2+{{GEP|Soul rune}}) / 520 round 2}}
+|-
+|41
+|{{plinkt|Ensouled chaos druid head}}
+|{{Coins|{{GEP|Ensouled chaos druid head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=3|Soul=1}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|{{Coins|{{GEP|Ensouled chaos druid head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|584
+|128,480
+|{{Coins|-({{GEP|Ensouled chaos druid head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2+{{GEP|Soul rune}}) / 584 round 2}}
+|-
+|41
+|{{plinkt|Ensouled giant head}}
+|{{Coins|{{GEP|Ensouled giant head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=3|Soul=1}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|{{Coins|{{GEP|Ensouled giant head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|650
+|143,000
+|{{Coins|-({{GEP|Ensouled giant head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2+{{GEP|Soul rune}}) / 650 round 2}}
+|-
+|41
+|{{plinkt|Ensouled ogre head}}
+|{{Coins|{{GEP|Ensouled ogre head}}}}
+| nowrap="nowrap" | {{RuneReq|Body=4|Nature=3|Soul=1}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|{{Coins|{{GEP|Ensouled ogre head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|716
+|157,520
+|{{Coins|-({{GEP|Ensouled ogre head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2+{{GEP|Soul rune}}) / 716 round 2}}
+|-
+|41
+|{{plinkt|Ensouled elf head}}
+|{{Coins|{{GEP|Ensouled elf head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=3|Soul=1}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|{{Coins|{{GEP|Ensouled elf head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|754
+|165,880
+|{{Coins|-({{GEP|Ensouled elf head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2+{{GEP|Soul rune}}) / 754 round 2}}
+|-
+|41
+|{{plinkt|Ensouled troll head}}
+|{{Coins|{{GEP|Ensouled troll head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=3|Soul=1}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|{{Coins|{{GEP|Ensouled troll head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|780
+|171,600
+|{{Coins|-({{GEP|Ensouled troll head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2+{{GEP|Soul rune}}) / 780 round 2}}
+|-
+|41
+|{{plinkt|Ensouled horror head}}
+|{{Coins|{{GEP|Ensouled horror head}}}}
+| nowrap="nowrap" |{{RuneReq|Body=4|Nature=3|Soul=1}}
+|{{Coins|{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|{{Coins|{{GEP|Ensouled horror head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*3+{{GEP|Soul rune}}}}
+|832
+|183,040
+|{{Coins|-({{GEP|Ensouled horror head}}+{{GEP|Body rune}}*4+{{GEP|Nature rune}}*2+{{GEP|Soul rune}}) / 832 round 2}}
+|-
+|72
+|{{plinkt|Ensouled kalphite head}}
+|{{Coins|{{GEP|Ensouled kalphite head}}}}
+| nowrap="nowrap" |{{RuneReq|Nature=3|Blood=1|Soul=2}}
+|{{Coins|{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|{{Coins|{{GEP|Ensouled kalphite head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|884
+|194,480
+|{{Coins|-({{GEP|Ensouled kalphite head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2) / 884 round 2}}
+|-
+|72
+|{{plinkt|Ensouled dagannoth head}}
+|{{Coins|{{GEP|Ensouled dagannoth head}}}}
+| nowrap="nowrap" |{{RuneReq|Nature=3|Blood=1|Soul=2}}
+|{{Coins|{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|{{Coins|{{GEP|Ensouled dagannoth head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|936
+|205,920
+|{{Coins|-({{GEP|Ensouled dagannoth head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2) / 936 round 2}}
+|-
+|72
+|{{plinkt|Ensouled bloodveld head}}
+|{{Coins|{{GEP|Ensouled bloodveld head}}}}
+| nowrap="nowrap" |{{RuneReq|Nature=3|Blood=1|Soul=2}}
+|{{Coins|{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|{{Coins|{{GEP|Ensouled bloodveld head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|1040
+|228,800
+|{{Coins|-({{GEP|Ensouled bloodveld head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2) / 1040 round 2}}
+|-
+|72
+|{{plinkt|Ensouled tzhaar head}}
+|{{Coins|{{GEP|Ensouled tzhaar head}}}}
+| nowrap="nowrap" |{{RuneReq|Nature=3|Blood=1|Soul=2}}
+|{{Coins|{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|{{Coins|{{GEP|Ensouled tzhaar head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|1104
+|242,880
+| {{Coins|-({{GEP|Ensouled tzhaar head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2) / 1104 round 2}}
+|-
+|72
+|{{plinkt|Ensouled demon head}}
+|{{Coins|{{GEP|Ensouled demon head}}}}
+| nowrap="nowrap" |{{RuneReq|Nature=3|Blood=1|Soul=2}}
+|{{Coins|{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|{{Coins|{{GEP|Ensouled demon head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|1170
+|257,400
+| {{Coins|-({{GEP|Ensouled demon head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2) / 1170 round 2}}
+|-
+|72
+|{{plinkt|Ensouled hellhound head}}
+|{{Coins|{{GEP|Ensouled hellhound head}}}}
+| nowrap="nowrap" |{{RuneReq|Nature=3|Blood=1|Soul=2}}
+|{{Coins|{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|{{Coins|{{GEP|Ensouled hellhound head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2}}
+|1200
+|264,000
+|{{Coins|-({{GEP|Ensouled hellhound head}}+{{GEP|Nature rune}}*3+{{GEP|Blood rune}}+{{GEP|Soul rune}}*2) / 1170 round 2}}
+|-
+|90
+|{{plinkt|Ensouled aviansie head}}
+|{{Coins|{{GEP|Ensouled aviansie head}}}}
+| nowrap="nowrap" | {{RuneReq|Nature=4|Blood=2|Soul=4}}
+|{{Coins|{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4}}
+|{{Coins|{{GEP|Ensouled aviansie head}}+{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4}}
+|1234
+|271,480
+|{{Coins|-({{GEP|Ensouled aviansie head}}+{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4) / 1234 round 2}}
+|-
+|90
+|{{plinkt|Ensouled abyssal head}}
+|{{Coins|{{GEP|Ensouled abyssal head}}}}
+| nowrap="nowrap" |{{RuneReq|Nature=4|Blood=2|Soul=4}}
+|{{Coins|{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4}}
+|{{Coins|{{GEP|Ensouled abyssal head}}+{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4}}
+|1300
+|286,000
+|{{Coins|-({{GEP|Ensouled abyssal head}}+{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4) / 1300 round 2}}
+|-
+|90
+|{{plinkt|Ensouled dragon head}}
+|{{Coins|{{GEP|Ensouled dragon head}}}}
+| nowrap="nowrap" |{{RuneReq|Nature=4|Blood=2|Soul=4}}
+|{{Coins|{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4}}
+|{{Coins|{{GEP|Ensouled dragon head}}+{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4}}
+|1560
+|343,200
+|{{Coins|-({{GEP|Ensouled dragon head}}+{{GEP|Nature rune}}*4+{{GEP|Blood rune}}*2+{{GEP|Soul rune}}*4) / 1560 round 2}}
+|-
+|}

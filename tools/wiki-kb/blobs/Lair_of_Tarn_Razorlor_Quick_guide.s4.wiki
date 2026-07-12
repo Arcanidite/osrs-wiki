@@ -1,0 +1,6 @@
+===Reaching the bank===
+The banker is to the north-east. To get there:
+*When entering the lair, go east past the floor traps, which are indicated by <span style="line-height:21px;">a big X across the floor tile,</span> and attacking monsters to the end of the passage.
+*Follow the path heading north ('''disarm''' the two wall traps by "searching" them, the southern one being attached to the western wall, the north one being attached to the eastern wall) the banker carrying a huge backpack at the end of the hall in a little room.
+*It costs 100 [[coins]] each time to use the bank. Some of the undead in the lair drop coins.
+*This is the last place to restock or heal prior to moving on to [[Tarn Razorlor]].

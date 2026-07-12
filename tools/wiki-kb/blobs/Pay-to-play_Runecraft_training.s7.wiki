@@ -1,0 +1,34 @@
+===Levels 1–32/34: Questing===
+Early levels can be almost completely skipped by completing [[Quest experience rewards#Runecraft|quests that give Runecraft experience]]. This allows the player to craft [[lava rune]]s or do the [[Guardians of the Rift]] [[Minigames|minigame]]. 
+{| class="wikitable"
+!Levels
+!Quest
+!Other requirements
+|-
+|1-9
+|[[Client of Kourend]]
+|None. Use both lamps on {{SCP|Runecraft}}.
+|-
+|9-11
+|[[The Ascent of Arceuus]]
+|{{SCP|Hunter|12}}
+|-
+|11-15
+|[[Enter the Abyss]]
+|[[Rune Mysteries]]
+|-
+|15-24
+|[[Temple of the Eye]]
+|None
+|-
+|24-30
+|[[The Eyes of Glouphrie]]
+|[[The Grand Tree]], {{SCP|Magic|46}}, {{SCP|Construction|5}}
+|-
+|30-32
+|[[The Slug Menace]]
+|[[Wanted!]], {{SCP|Thieving|30}},{{SCP|Slayer|30}},{{SCP|Crafting|30}}
+|}
+At level 32, it's recommended to train to level 35, and then complete [[What Lies Below]], for an 8,000 Runecrafting experience reward.
+
+[[Lunar Diplomacy]] grants an additional 5,000 experience, as does [[Perilous Moons]]. However, they both have fairly high requirements. Note that completing Lunar Diplomacy is eventually recommended, as being on the [[Lunar spellbook]] is highly recommended for crafting lava runes and for [[Ourania Altar]].

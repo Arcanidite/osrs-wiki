@@ -1,0 +1,249 @@
+{{Needed|recommended=Weight-reducing clothing, stamina potions, summer pies, 8 empty inventory slots.}}
+
+'''Note:''' It is recommended to charge your teleport crystals now if you're running low, since the area becomes instanced later on and you cannot do this until much later.
+
+Talk to [[Lord Ieuan Amlodd]] to be transported into the Grand Library.{{Chat option|1Yes.}}
+
+If you log out inside, you will be kicked out but your progress will be saved.
+
+====The Seal of the Forgotten====
+[[File:Song of the Elves - The Seal of the Forgotten.png|200px|right|thumb|The location of the Seal of the Forgotten.]]
+{{Checklist|
+*Touch the [[Seal of the Forgotten]] as indicated by the map.
+}}
+
+====The Seal of Ithell====
+{{Checklist|
+*Head to the south-east room directly east of the entrance.
+*Rotate the mirrors to reflect light to the end of the puzzle. Solution shown here:
+[[File:Song of the Elves - The Seal of Ithell puzzle solution.png|400px]]
+*Investigate the [[Seal of Ithell]] on the east side of the room. Talk to the memory to get teleported to the centre.{{Chat option|1Yes please.}}
+}}
+
+====The Seal of Cadarn====
+[[File:Song of the Elves - The Seal of Cadarn puzzle solution.png|275px|right|Solution for unlocking Cadarn's seal.|thumb]]
+{{Checklist|
+*Return to the centre room.
+*Collect the seven [[hand mirror]]s (these stack) and [[red crystal]] from the [[Crystal Dispenser]].{{Chat option|3Take everything.}}
+*Go to Mirror #1 as indicated on the map and use a mirror on the pillar, making the light reflect east.
+*Mirror #2 points down. (The base of the pillar lights up.)
+*Use the stairs to go to the bottom floor.
+*Mirror #3 points south.
+*The light automatically changes to blue.
+*Mirror #4 points west.
+*Mirror #5 points south.
+*Place the Red crystal. The light turns magenta.
+*Mirror #6 points east.
+*Mirror #7 points south.
+*Touch the [[Seal of Cadarn]]. Talk to the memory to get teleported to the centre.{{Chat option|1Yes please.}}
+}}
+
+====The Seal of Crwys====
+[[File:Song of the Elves - The Seal of Crwys puzzle solution.png|275px|right|Solution for unlocking Crwys's seal.|thumb]]
+{{Checklist|
+*Return to the centre room.
+*Pull the lever on the crystal dispenser then collect the ten [[hand mirror]]s and four crystals from the crystal dispenser.{{Chat option|4Pull the lever.|1Pull it.|3Take everything}}
+*Mirror #1 points west.
+*Mirror #2 points north.
+*Mirror #3 points west.
+*Place the [[fractured crystal]] on the pillar between Mirrors #3 and #4.
+*Mirror #4 points north.
+*Place the Green crystal, turning the light white.
+*Run around to get past the gap.
+*Mirror #5 points down.
+*Take the stairs to go down to the bottom floor.
+*Mirror #6 points east.
+*Mirror #7 points up.
+*Take the stairs to go up to the middle floor.
+*Place the Cyan crystal.
+*Take the stairs to go up to the top floor.
+*Mirror #8 points south.
+*Mirror #9 points down.
+*Take the stairs down to the middle floor.
+*Mirror #10 points south.
+*Interact with the [[Seal of Crwys]] south of Mirror #10. Talk to the memory to get teleported to the centre.{{Chat option|1Yes please.}}
+}}
+
+====The Seal of Amlodd====
+[[File:Song of the Elves - The Seal of Amlodd puzzle solution.png|275px|right|Solution for unlocking Amlodd's seal.|thumb]]
+{{Checklist|
+*Return to the centre room.
+*Pull the lever on the crystal dispenser then collect the sixteen [[hand mirror]]s and five crystals from the crystal dispenser.{{Chat option|4Pull the lever.|1Pull it.|3Take everything}}
+*Place the Fractured crystal, splitting the magenta light in 2.
+*Mirror #1 points north.
+*Place the Red crystal, turning the light red.
+*Mirror #2 points east.
+*Mirror #3 points north.
+*Mirror #4 points west.
+*Mirror #5 points down.
+*Take the stairs down to the bottom floor.
+*Mirror #6 points south.
+*Go back to the beginning on the middle floor where you put the Fractured crystal.
+*Mirror #7 points east.
+*Mirror #8 points down.
+*Take the stairs down to the bottom floor.
+*Mirror #9 points south.
+*Mirror #10 points west.
+*Mirror #11 points south.
+*Mirror #12 points west.
+*Mirror #13 points north.
+*Place the Green crystal, turning the light cyan.
+*Run around via the centre part of the map to cross the gap.
+*Place the Yellow crystal, turning the light green.
+*Mirror #14 points east.
+*Mirror #15 points east.
+*Mirror #16 points south.
+*Interact with the [[Seal of Amlodd]]. Talk to the memory to get teleported to the centre.{{Chat option|1Yes please.}}
+}}
+
+====The Seal of Meilyr====
+[[File:Song of the Elves - The Seal of Meilyr puzzle solution.png|275px|right|Solution for unlocking Meilyr's seal.|thumb]]
+{{Checklist|
+*Return to the centre room.
+*Pull the lever on the crystal dispenser then collect the eighteen [[hand mirror]]s and five crystals from the crystal dispenser.{{Chat option|2Pull the lever.|1Pull it.|3Take everything}}
+*Mirror #1 points east.
+*Mirror #2 points down.
+*Take the stairs down.
+*Mirror #3 points south.
+*Mirror #4 points west.
+*Mirror #5 points south.
+*Mirror #6 points west.
+*Mirror #7 points north.
+*Mirror #8 points west.
+*To cross the gap, you need to go back up to the middle floor. Then, run south-west until you reach the south-west stairs. Take the south-west staircase down to the bottom floor.
+*Mirror #9 points north.
+*Mirror #10 points up.
+*Take the stairs up to the middle floor.
+*Place the Red crystal, turning the light magenta.
+*Take the stairs up to the top floor.
+*Mirror #11 points north.
+*Go back to the middle floor to head to the location of Mirror #12.
+*Mirror #12 points up.
+*Run due east to take the east stairs up to the top floor.
+*Mirror #13 points north.
+*Mirror #14 points west.
+*Take the east staircase back to the middle floor.
+*Run to the north-west corner of the middle floor to take the north-west stairs up to the top floor.
+*Head one room south-east to the "Agility" section and cross the [[Floating Book|floating book]] handholds on the wall to reach the location of Mirror #15. If you fail, try to cross again.
+*Mirror #15 points north.
+*Mirror #16 points west.
+*Cross the book handholds back west.
+*Mirror #17 points south.
+*Mirror #18 points west.
+*Interact with the [[Seal of Meilyr]]. Talk to the memory to get teleported to the centre.{{Chat option|1Yes please.}}
+}}
+
+====The Seal of Hefin====
+[[File:Song of the Elves - The Seal of Hefin puzzle solution.png|275px|right|Solution for unlocking Hefin's seal.|thumb]]
+{{Checklist|*Return to the centre room.
+*Pull the lever on the crystal dispenser then collect the 20 [[hand mirror]]s and 5 crystals from the crystal dispenser.{{Chat option|2Pull the lever.|1Pull it.|3Take everything}}
+*Mirror #1 points east.
+*Mirror #2 points down.
+*Take the stairs down.
+*Mirror #3 points south.
+*Mirror #4 points west.
+*Mirror #5 points south.
+*Mirror #6 points west.
+*Mirror #7 points north.
+*Mirror #8 points west.
+*Head back to the middle floor to get to the location of Mirror #9. (You can world hop and talk to Lord Ieuan Amlodd to enter again. Your progress will be saved and you start at the entrance next to mirror 9)
+*Mirror #9 points south.
+*Mirror #10 points west.
+*Mirror #11 points north.
+*Go around to cross the gap. You will have to run past the area where the magenta light splits.
+*Mirror #12 points down.
+*Take the stairs down to the bottom floor.
+*Mirror #13 points east.
+*Mirror #14 points up.
+*Mirror #15 points north.
+*Mirror #16 points west.
+*Mirror #17 points up.
+*Take the stairs up twice to get to the top floor.
+*Mirror #18 points north.
+*Mirror #19 points west.
+*Mirror #20 points south.
+*Interact with the [[Seal of Hefin]]. Talk to the memory to get teleported to the centre.{{Chat option|1Yes please.}}
+}}
+
+====The Seal of Trahaearn====
+[[File:Song of the Elves - The Seal of Trahaearn puzzle solution.png|275px|right|Solution for unlocking Trahaearn's seal.|thumb]]
+{{Checklist|*Return to the centre room.
+*Pull the lever on the crystal dispenser then collect the 22 [[hand mirror]]s and 6 crystals from the crystal dispenser.{{Chat option|4Pull the lever.|1Pull it.|3Take everything}}
+*Mirror #1 points south.
+*Mirror #2 points west.
+*Mirror #3 points north.
+*Run around to get to the location of Mirror #4.
+*Mirror #4 points down.
+*Take the stairs down.
+*Mirror #5 points east.
+*Mirror #6 points up.
+*Take the stairs up twice to get to the top floor.
+*Mirror #7 points north.
+*Mirror #8 points east.
+*Go back to the middle floor and head to the most south-eastern stairs.
+*Take the south-east stairs up to the top floor.
+*Cross the book handholds agility shortcut to go west. If you fail, try again.
+*Mirror #9 points south.
+*Mirror #10 points east.
+*Place the Blue crystal.
+*Cross the shortcut back east.
+*Mirror #11 points south.
+*Mirror #12 points east.
+*Mirror #13 points north.
+*Mirror #14 points west.
+*Mirror #15 points north.
+*Go back to the middle floor.
+*Mirror #16 points north.
+*Mirror #17 points east.
+*Mirror #18 points up.
+*Take the stairs up to the top floor.
+*Mirror #19 points east.
+*Mirror #20 points north.
+*Mirror #21 points west.
+*Mirror #22 points south.
+*Interact with the [[Seal of Trahaearn]]. Talk to the memory to get teleported to the centre.{{Chat option|1Yes please.}}
+}}
+
+====The Seal of Iorwerth====
+[[File:Song of the Elves - The Seal of Iorwerth puzzle solution.png|275px|right|Solution for unlocking Iorwerth's seal.|thumb]]
+{{Checklist|*Return to the centre room.
+*Pull the lever on the crystal dispenser then collect the 26 [[hand mirror]]s and 7 crystals from the crystal dispenser.{{Chat option|4Pull the lever.|1Pull it.|3Take everything}}
+*Near the yellow lights, place the Cyan crystal, turning the yellow light green.
+*Place the Blue crystal, turning the green light cyan.
+*Mirror #1 points west.
+*Mirror #2 points down.
+*Take the stairs down.
+*Mirror #3 points north.
+*Place the [[Fractured crystal]].
+*Mirror #4 points east.
+*Mirror #5 points up.
+*Mirror #6 points south.
+*Mirror #7 points east.
+*Place the Yellow crystal, turning the light green.
+*Mirror #8 points north.
+*Mirror #9 points west.
+*Mirror #10 points north.
+*Mirror #11 points up.
+*Head up 1 floor to the middle floor.
+*Mirror #12 points south.
+*Place the Magenta crystal on the cyan light located right beside Mirror #12. The cyan light should turn blue.
+*Mirror #13 points north.
+*Mirror #14 points east.
+*Place the Red crystal, turning the yellow light red.
+*Mirror #15 points north.
+*Mirror #16 points west.
+*Mirror #17 points north.
+*Mirror #18 points east.
+*Mirror #19 points north.
+*Mirror #20 points up.
+*Go up to the top floor.
+*Mirror #21 points north.
+*Mirror #22 points west.
+*Mirror #23 points south.
+*Mirror #24 points down.
+*Mirror #25 points south.
+*Mirror #26 points down.
+*Go down to the middle floor.
+*Touch the [[Seal of Iorwerth]].
+*Teleport back to Lletya by world-hopping to any different world, or with your [[teleport crystal]]
+}}

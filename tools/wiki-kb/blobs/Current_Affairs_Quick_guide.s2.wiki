@@ -1,0 +1,31 @@
+==Walkthrough==
+===Animal workers===
+{{Checklist|
+*Talk to [[Arhein]] on the [[Catherby]] docks. {{Chat option|2 What's with the duck?|1 Yes.}}
+*Talk to [[Councillor Catherine]] in the council office in north-east Catherby.
+*Fill in [[form cr-4p]] with any information, and '''remember what you chose.'''
+**If you need charcoal, search the nearby cabinet.
+*Talk to [[Councillor Catherine]] again.
+}}
+
+===Fish mayor===
+{{Needed|50 coins.}}
+{{Checklist|
+*Talk to Arhein. {{Chat option|2 I need to find the Mayor of Catherby.}}
+*Talk to [[Harry]] at the fishing shop in east Catherby. {{Chat option|2 I'm here about the mayor.|1 Yes.}} He will sell you the [[mayoral fishbowl]] and [[tiny net]] for 50 coins.
+*Fish in the aquarium next to Harry to catch a mayorfish.
+*Talk to Arhein again to receive his mayoral chain. {{Chat option|2 About the mayor...}}
+*Talk to Councillor Catherine again and match the answers you gave earlier.
+*Use [[form 7r4-5h]] on the [[Mayor of catherby]] to sign it. Return the form to Catherine.
+*Talk to Arhein again to receive the [[current duck]]. {{Chat option|2 The by-law has been changed!}}
+}}
+
+===Current duck===
+{{Needed|Current duck.}}
+{{Checklist|
+*Board your boat to the south and sail east to find a small ripple in the water by the [[Obelisk of Water]].
+**When near the ripple, click on the current duck on your inventory to set it in the water.
+**Follow the duck until you get to the shore (near where [[Holgart]] is) and collect the duck.
+*Talk to Arhein again. {{Chat option|2 I've charted the currents!}}
+*'''Congratulations, quest complete!'''
+}}

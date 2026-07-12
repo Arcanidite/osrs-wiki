@@ -1,0 +1,14 @@
+==Walkthrough==
+{{Checklist|*Talk to a [[Barbarian Guard]] outside of the [[Barbarian Outpost]]. {{Chat option|1 I want to come through this gate|2 Looks can be deceiving, I am in face a barbarian}}
+*Talk to the [[Bartender (Blue Moon Inn)|Bartender]] at [[Blue Moon Inn]] in [[Varrock]]. {{Chat option|4 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to the [[Bartender (Jolly Boar Inn)|Bartender]] at [[Jolly Boar Inn]] in [[Varrock]], near the [[Lumber Yard]]. {{Chat option|4 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to [[Kaylee]] or [[Emily]] at [[Rising Sun Inn]] in [[Falador]]. {{Chat option|2 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to the [[Bartender (Rusty Anchor Inn)|Bartender]] at [[Rusty Anchor Inn]] in [[Port Sarim]]. {{Chat option|3 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to [[Zembo]] at [[Karamja Spirits Bar]] in [[Musa Point]]. {{Chat option|3 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to the [[Bartender (Dead Man's Chest)|Bartender]] at [[Dead Man's Chest]] in [[Brimhaven]]. {{Chat option|4 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to the [[Bartender (Flying Horse Inn)|Bartender]] at [[Flying Horse Inn]] in [[Ardougne]]. {{Chat option|3 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to the [[Bartender (Forester's Arms)|Bartender]] at [[Forester's Arms]] in [[Seers' Village]]. {{Chat option|3 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to [[Blurberry]] at [[Blurberry Bar]] in [[Tree Gnome Stronghold]](Grand Tree). {{Chat option|1 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to the [[Bartender (Dragon Inn)|Bartender]] at [[Dragon Inn]] in [[Yanille]]. {{Chat option|4 I'm doing Alfred Grimhand's Barcrawl.}}
+*Talk to a [[Barbarian Guard]] outside of the [[Barbarian Outpost]]. {{Chat option|1 I want to come through this gate|2 Looks can be deceiving, I am in fact a barbarian.}}
+*'''Congratulations, miniquest complete!'''}}

@@ -1,0 +1,90 @@
+===Herb runs===
+[[File:Torstol detail.png|right|170x170px]]
+{{Main|Farming runs#Herb run}}
+
+Herb runs offer good profit, and decent Farming experience when growing high-level herbs such as [[torstol]]s. Some players choose to do this to compensate the cost of doing tree runs, or to make money in general. Herbs take 80 minutes to grow. To gain extra Farming experience, players can farm [[allotments]] (such as [[snape grass]]) along with herb runs.
+
+Always treat herb patches with ultracompost. This minimises the chance of disease, increases the expected yield, and ensures the minimum amount of 6 herbs per seed when used along with magic secateurs.
+
+By default, three herb patches are available for the player, with the remaining seven requiring the following:
+
+*[[Morytania]]: Completion of [[Priest in Peril]]
+*[[Harmony Island]]: Completion of the elite Morytania Diary
+*[[Hosidius]]: Visit Kourend at least once
+*[[Farming Guild]]: 65 Farming
+*[[Troll Stronghold]]: Completed [[My Arm's Big Adventure]]
+*[[Weiss]]: Completed [[Making Friends with My Arm]] and additionally built a [[Fire of Nourishment]] by the patches
+*[[Civitas illa Fortis]]: Completed [[Children of the Sun]]
+
+====Setup====
+*Spade
+*Seed dibber (optional if [[Barbarian Training#Bare-handed planting|the seed planting portion]] of Barbarian Training is complete)
+*Rake (can be stored with the [[Tool Leprechaun]] most of the time when harvesting and replanting)
+*[[Farmer's outfit]] and [[Stamina potion]] or [[weight-reducing gear]]
+*Teleports for the various patches (best listed first)
+**Ardougne 
+***[[Ardougne cloak 4]] 
+***[[Ardougne cloak 3]] provides five daily teleports 
+***[[Ardougne cloak 2]] provides three daily teleports
+***[[Skills necklace]] (fishing guild) and run east
+**Catherby  
+***[[Catherby Teleport]] from the [[Lunar spellbook]] or its [[Catherby teleport (tablet)|tablet]]
+***[[Camelot Teleport]] and run due east
+**Falador 
+***[[Explorer's ring 3]] or [[Explorer's ring 4|4]] 
+***[[Explorer's ring 2]] provides three daily teleports
+***[[Ring of the elements|Ring of the Elements]] (air altar)
+**Farming Guild
+***[[Skills necklace]]
+***[[Fairy rings|Fairy ring]] {{Fairycode|CIR}} and run south-west
+***[[Spirit tree (Farming)|spirit tree]]
+**Harmony Island (unlocked after completion of the Elite [[Morytania Diary]])
+***[[Harmony Island Teleport]] or tablet
+***Any method to reach [[Port Phasmatys]] and talk to [[Bill Teach]]
+**Hosidius 
+***[[Xeric's talisman]] option Xeric's Glade
+***[[House portal]]
+***[[Spirit tree (Farming)|spirit tree]] and run east ({{SCP|Agility|45}})
+***[[Tithe Farm]] activity teleport
+***[[Fairy rings|Fairy ring]] {{Fairycode|AKR}} and run west
+**Morytania 
+***[[Ectophial]] and run west
+***[[Fenkenstrain's Castle Teleport]] from the [[Arceuus spellbook]] and run east
+***[[Fairy rings|Fairy ring]] {{Fairycode|ALQ}}
+**Troll Stronghold (unlocked after [[My Arm's Big Adventure]])
+***[[Stony basalt]] after [[Making Friends with My Arm]]
+***[[Troll stronghold teleport]] and descend west
+**Varlamore (unlocked after [[Children of the Sun]]) 
+***[[Perfected quetzal whistle]] or its variations and run north
+***[[Civitas illa Fortis Teleport]] or tablet and run west out of the city
+***[[Quetzal]] and run west
+***[[Fairy rings|Fairy ring]] {{Fairycode|AJP}} and run north-west
+**Weiss (unlocked after [[Making Friends with My Arm]] and lighting the [[Fire of Nourishment]] 
+***[[Icy basalt]]
+*[[Herb seed]]s
+*[[Herb Sack]] - can be used to store herbs instead of noting them at a [[Tool Leprechaun]], which can be helpful if growing several kinds of herbs
+*[[Magic secateurs]]
+*[[Bottomless compost bucket]] filled with [[ultracompost]]
+**Alternatively, [[ultracompost]]s can be brought, or runes for the [[Fertile Soil]] spell and [[volcanic ash]]es (after reading the [[ash covered tome]])
+
+====Allotment runs====
+At level 47 Farming, players can add allotment runs alongside their herb runs. Allotments usually consist of two sets of farmable patches, with the exception of the one on [[Harmony Island]], which only has one. This level allows players to start growing [[watermelon]]s. Each harvested watermelon provides 54.5 experience, and a fair amount of watermelons can be harvested with ultracompost and magic secateurs.
+
+Barring the patch on Harmony Island, all allotment patches are either watched by a gardener or have a flower patch. Players are highly encouraged to grow [[Nasturtium]]s on the flower patch, as this protects watermelons from disease and ensures they will never die, making yield the only priority. 
+
+At level 61 Farming, players should replace the allotments with [[snape grass]]; each harvested spike of grass provides 82 experience. The nasturtiums should also be replaced with [[White lily (plant)|white lilies]], as this protects all allotments from disease.
+
+By default, three locations are available to the player, with the other six requiring quests and/or additional requirements:
+
+*[[Falador]]: No requirements
+*[[Catherby]]: No requirements
+*[[Ardougne]]: No requirements
+*[[Morytania]]: Completed [[Priest in Peril]]
+*[[Hosidius]]: Visit Kourend at least once
+*[[Farming Guild]]: 45 Farming
+*[[Harmony Island]]: Started [[The Great Brain Robbery]]
+*[[Prifddinas]]: Completion of [[Song of the Elves]]
+*[[Civitas illa Fortis]]: Completion of [[Children of the Sun]]
+
+====GP/XP calculations====
+{{Main|Calculator:Farming/Herbs}}

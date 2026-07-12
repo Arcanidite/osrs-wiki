@@ -1,0 +1,49 @@
+{{external|rs}}
+{{Quick Guide}}
+ 
+==Details==
+{{Quest details page|Lost City}}
+
+==Walkthrough==
+{{Checklist|
+*Speak to the [[Warrior (Lost City)|Warrior]] north-west of [[Lumbridge Swamp]]. {{Chat option|1What are you camped here for?|1Who's Zanaris?|1If it's hidden how are you planning to find it?|2Looks like you don't know either.}}
+*Go north-west to the tree closest to the encampment and click on the tree with the '''chop''' option rather than '''chop down.''' [[Shamus]] will appear.
+*Talk to [[Shamus]]. {{Chat option|1How does it fit in a shed then? |1}}
+*Bank your axe. Bring items to make weapons or bows. Runes and food can be taken to Entrana. It is recommended to bring a teleportation method as well.
+**If you already have the required items you can go directly to Port Sarim and use the bank deposit box on the dock.
+**Bank '''all''' weapons and armour. You're allowed to take jewellery such as the ring of dueling, amulet of glory, combat bracelet, etc...
+**If you don't have a teleportation method, purchase a [[chronicle]] from [[Diango]] and charge it with [[teleport card]]s.
+*Go to the Port Sarim docks, south of the [[Rusty Anchor Inn]].
+*Talk to a [[Monk of Entrana]] and travel to [[Entrana]].
+*Cross the north-east bridge then go west until you see the [[Cave monk]], go down the ladder. (Note: Do not craft battlestaff or bow before you enter cave. Otherwise you will be knocked out and returned to Port Sarim)
+'''Warning:''' there are two [[Greater Demon]]s (Level 92) in the room before the [[Dramen tree]].
+*Kill [[Zombie (Entrana Dungeon)|zombies]] until they drop a [[bronze axe]] (about 40% drop chance per kill). 
+
+'''Caution: If you go through the magical door, you will be teleported into level 32 [[Wilderness]].'''
+*Go south-east past the demons and attempt to chop the tree.
+
+*Kill the [[Dramen Tree Spirit]] (there is a safespot behind the southern fungus formation).
+**Note: Do not use the mushroom by the demons outside of the room as a safespot. Even if you kill the tree spirit, they will respawn again after trying to cut the tree!
+*Chop the tree and use a knife on the branch obtained to make the [[dramen staff]].
+**Note: A dramen branch is required for the [[Freeing Sir Amik Varze]] subquest of [[Recipe for Disaster]], and another is useful for the smuggling into [[Thorvald]]'s trial in [[The Fremennik Trials]], but do not make them into staves yet. Cutting at least three branches is recommended.
+*Teleport out and go to the [[Lumbridge Swamp#Entrance to Zanaris shed|tool shed]] in the centre of [[Lumbridge Swamp]].
+*Wield a dramen staff and enter the tool shed.
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|Lost City}}
+
+==Required for completing==
+Completion of Lost City is required for the following quests:
+* [[Fairytale I - Growing Pains]]
+* [[Heroes' Quest]]
+* [[Lunar Diplomacy]]
+* [[Freeing Sir Amik Varze]]
+* [[Lumbridge & Draynor Medium Diary]]
+* [[Lumbridge & Draynor Hard Diary]]
+Completion of Lost City is also required for:
+* [[Slayer Master]] [[Chaeldar]]
+
+
+{{Lost City}}

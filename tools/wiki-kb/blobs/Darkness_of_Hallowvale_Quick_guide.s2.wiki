@@ -1,0 +1,152 @@
+==Walkthrough==
+===Starting out===
+'''''Items needed:''' 2 [[planks]], 8 [[nails]] and a [[hammer]]''
+{{Checklist|
+*Travel to [[Burgh de Rott]].
+*Talk to [[Veliaf Hurtz]] in the pub basement. {{Chat option|4Is there something I can do to help out?|1Yes, please tell me more.|1What is the Sanguinesti region?|2How can I search for the Sanguinesti order of the Myreque?|3Can you tell me about the Sanguinesti Myreque?|4How should I get into the Sanguinesti region?|5Okay, thanks.}}
+*Go south-east to the docks where there's a hut with a boat in it.
+*Use a [[plank]] on the boat.
+*Use a [[plank]] on the boat chute.
+*Push the boat down the chute.
+*Board the boat.
+}}
+
+===Welcome to Meiyerditch===
+'''Note:''' while in [[Meiyerditch]] if you are provoked by a [[Vyrewatch]] you can log out to avoid any interactions with them.
+{{Checklist|
+*Go north-west a short distance (still on the pier), search the floor then kick it down and climb down.
+*Climb over the wall rubble and talk to any [[Meiyerditch citizen]]. {{Chat option|4(whisper) Do you know about the Myreque?|4(whisper) I really need to meet the Myreque.|4How can Old Man Ral help me?}}
+*Talk to [[Old Man Ral]] to the north. {{Chat option|4Someone said you could help me.|4Old Man Ral, the sage of Sanguinesti.}}
+*Climb up the ladder in the building south-west of [[Old Man Ral]].
+}}
+
+===The sickle logo agility course===
+[[File:Darkness of Hallowvale map.png|thumb|250px|A map of Meiyerditch.]]
+'''''Items Needed:''' [[Knife]] (obtainable during the course)''
+{{Checklist|
+*Jump south to the floorboards.
+*Jump east to the floorboards.
+*Go to the north-east corner of the room, push the wall and go across the gap.
+*Crawl under the wall to the north.
+*Go north to the second room, look on the west side, push the wall and walk across it.
+*Climb down the ladder.
+*Search the table next to the wall, open the trapdoor table, and climb into it.
+*Climb up the shelf.
+*Crawl under the wall to the east side.
+*Jump to the floorboards to the east.
+*Climb down the ladder.
+*Search the pots near the eastern door to get a [[Door key (Darkness of Hallowvale)|door key]] and use it to open the door.
+*Climb up the ladder in the room to the east.
+*Jump south to the floorboards.
+*Go east, south, west and climb up the shelf.
+*Climb up the ladder.
+*Jump south again to the floorboards.
+*Climb down the ladder.
+*Go east through the rooms and walk across the washing line.
+*Climb down the ladder.
+*Push the wall to the north and walk across the floor.
+*Climb up the shelf to the north.
+*Climb down the shelf on the north-eastern side, below the floor.
+*Jump to the floorboards to the north-west.
+*Jump to the floorboards to the north.
+*Go north-west and then east (around a gap in the floor) and jump to the floorboards.
+*Climb up the ladder.
+*Search the western wall to find a [[ladder top]].
+*Climb down the ladder you came up, then repair the nearby broken ladder using the [[ladder top]]. Then climb down the fixed ladder. You are now in sector three.
+*Open the door and go north and slightly west, then north to a house with a fireplace in it. (go up the ladder if you need a [[knife]])
+*Go west through the door into the next room, then north out of the house until you see a barricade.
+*Go east past the sickle logo and the house directly south should have a ladder inside. Climb up the ladder.
+*Jump to the floorboards to the east.
+*Climb down the stairs.
+*Go south along the eastern side of the stairs. Search the wall. Use your knife on the wall, then push it.
+*Press the decorated wall on the northern side.
+*Open the [[lumpy rug]] (south-east square of the green rug).
+*Climb down the trapdoor to enter the [[Myreque Hideout#The Meiyerditch Hideout|hideout]].
+}}
+
+===Myreque meetings===
+{{Checklist|
+*Run north and talk to [[Vertida Sefalatis]].
+**'''Note:''' you may have to select chat option {{Chat option|2}} in order to receive the note from [[Vertida]]. Double check your quest log to make sure it's updated, or else you'll have to re-run the entire course again!
+*Travel back to [[Burgh de Rott]].
+*Talk to [[Veliaf Hurtz]] in the pub basement.
+}}
+
+===Urgent business===
+[[File:Darkness of Hallowvale - route to lab.png|thumb|right|Path to the ladder and laboratory.]]
+{{Checklist|
+*Travel to the [[Paterdomus Temple]] ([[Fairy rings|fairy ring]] {{Fairycode|CKS}}).
+*Talk to [[Drezel]] in [[Paterdomus]], underneath the temple.
+*Take the west exit, past the [[monument|monuments]].
+**Optionally, with {{SCP|Agility|65|link=yes}}, instead exit toward [[Canifis]] and take the [[Ornate railing|shortcut]] up the side of the temple.
+*Search the [[Bush (Darkness of Hallowvale)|bush]] slightly south-west of the steps leading to the temple.
+*Wait for the cutscene to finish.
+*Return to speak with [[Drezel]]. He will give you runes to use [[Varrock Teleport]].
+*Teleport or travel to [[Varrock]] and talk to [[King Roald]] in the palace. {{Chat option|1Talk to the King about Morytania.|4What should I do now?}} The king will teleport you back to Paterdomus if you ask the right question. 
+*Travel back to [[Burgh de Rott]].
+*Talk to [[Veliaf Hurtz]] in the pub basement.
+}}
+
+===Back to Meiyerditch===
+'''''Items Needed:''' [[Pickaxe]] (obtainable from [[Meiyerditch miner]]), [[knife]], 4 free inventory spaces.
+
+'''''Recommended:''' Combat equipment to protect and heal against [[Vanstrom Klause]]
+
+'''''Note:''' if using [[RuneLite]], switch off low detail when searching for sickle logos on the castle wall.''
+{{Checklist|
+*Return to [[Meiyerditch]] and speak to a [[Vyrewatch]]. {{Chat option|1Send me to the mines!}}
+*Talk to a [[Meiyerditch miner]] to get a pickaxe if you don't have one. {{Chat option|3How do you get out of here?}}
+*Mine the [[daeyalt rocks]] on the walls until you get 15 [[daeyalt ore]].
+*Use all 15 [[daeyalt ore|ores]] on the mine cart, then talk to a [[Vampyre Juvinate]].
+*Run to the [[Myreque Hideout#The Meiyerditch Hideout|Myreque Hideout]], marked on the map to the right. Follow the blue path from north to south.
+*Go south through 3 doors and up the ladder.
+*Jump to the floorboards to the east, climb down the stairs and enter the hideout.
+*Talk to [[Vertida]]. {{Chat option|1Okay, lead the way.}}
+*Climb down the ladder, out the door, run south and climb over the wall rubble where you came in to [[Meiyerditch]].
+*Run south and climb up the floor.
+*Run north up the slope and climb down the ladder.
+*Search the [[rocky surface]].
+*Go north through the [[Barricade (Darkness of Hallowvale)|barricade]].
+*Climb up the ladder.
+*Run north along the wall and climb up the ladder.
+*Climb down the next ladder.
+*Climb the castle wall to the north.
+*Run west along the wall clockwise and talk to [[Safalaan]]. Make sure you have 4 free inventory spaces.
+*Run west along the wall clockwise until you see a sickle logo on the floor of the wall you're walking on, on the '''north''' side of the castle.
+*Use the [[papyrus]] on the [[charcoal]] for the [[Castle sketch 1|first sketch]].
+*Run west counter-clockwise and do the same for the west sickle for the [[Castle sketch 2|second sketch]].
+*Wait for the cutscene to finish.
+*Run west counter-clockwise and do the same for the south sickle.
+**'''Note:''' use [[Protect from Melee]] when the cutscene begins to avoid taking damage from [[Vanstrom Klause]]. Prayers activated before the cutscene will be deactivate when you are attacked.
+*Let [[Vanstrom]] attack you five times, which will knock you out.
+*Go back and '''finish your [[Castle sketch 3|final sketch]].'''
+*Talk to [[Sarius Guile]] if she didn't automatically talk to you when [[Vanstrom]] knocked you out.
+*Speak to a nearby [[Vyrewatch]] and use the mine technique to get back to the base.
+*Walk to the house directly south-west of the house with the ladder leading to the [[Myreque Hideout#The Meiyerditch Hideout|Myreque Hideout]]. It contains a fireplace and a [[Portrait (Darkness of Hallowvale)|portrait]] on its south wall.
+*Use your [[knife]] on the fireplace for a [[Message (fireplace)|message]].
+**'''Note:''' if needed, there is a knife spawn upstairs.
+*Use your [[knife]] on the [[Portrait (Darkness of Hallowvale)|portrait]] for a [[large ornate key]].
+**'''Note:''' if you don't automatically obtain the [[large ornate key|key]], inspect the [[Portrait (Darkness of Hallowvale)|portrait]].
+*Return to the Myreque Hideout.
+*Talk to [[Safalaan]]. {{Chat option|2I have a message for you Safalaan - it may be important.}}. Afterwards, give him the [[Message (fireplace)|message]].
+}}
+
+===Locating the laboratory===
+'''''Items Needed:''' [[Knife]], [[Message (fireplace)|message]], [[large ornate key]]; and one [[law rune]] and one [[air rune]] for [[Telekinetic Grab]] ([[standard spellbook]]) (can be obtained in the [[Broken rune case]]).''
+{{Checklist|
+*Exit the base, climb up the stairs, jump the gap, then climb down the ladder
+*Travel north towards the mine until you find a bright, red and yellow tapestry inside a building adjacent to the Eastern city wall.
+*Slash the tapestry with your [[knife]].
+*Walk through it and use the [[large ornate key]] on the [[Vampyre statue|statue]].
+*Open the door, climb-down the staircase and use [[Telekinetic Grab]] on [[Haemalchemy volume 1]].
+**'''Note:''' If needed, runes for [[Telekinetic Grab]] can be found in the [[Broken rune case]].
+*Return to the base and talk to [[Safalaan]] one final time and give him [[Haemalchemy volume 1]].
+}}
+
+===Finishing up===
+'''''Items Needed:''' [[Sealed message]]''
+{{Checklist|
+*Travel back to [[Burgh de Rott]].
+*Talk to [[Veliaf Hurtz]] in the pub basement. {{Chat option|1I have a message for you from Safalaan.}}
+*'''Congratulations, quest complete!'''
+}}

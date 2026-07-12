@@ -1,0 +1,8 @@
+===Third key===
+{{Checklist|
+*Take 25 un-noted bones from your bank.
+**[[File:Ultimate ironman chat badge.png]] Ultimate Ironmen: You can deliver the bones a few at a time. You do not have to deliver all 25 at once.
+*Go to [[Wizards' Tower]] (south of [[Draynor Village]]) ([[fairy ring]] code {{fairycode|DIS}}).
+*Climb up the stairs and talk to [[Wizard Traiborn]]. {{Chat option|1Talk about Demon Slayer.|3Well, have you got any keys knocking around?|2I'll get the bones for you.}}
+*He will ask for 25 [[bones]] (noted will not work); bring him these and he will give you his key.
+}}

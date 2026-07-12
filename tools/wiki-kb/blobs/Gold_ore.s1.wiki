@@ -1,0 +1,9 @@
+==Mining info==
+{{Mining info
+|name = Gold rocks
+|level = 40
+|xp = 65
+|rock = [[Gold rocks]]
+|tool = [[Pickaxe]]
+|time = 1 minute
+}}

@@ -1,0 +1,12 @@
+===High Priests of Ages Past===
+{{Checklist|
+*Prepare for a fight
+* Enter the crypt (large door north of the temple).
+* Use the "Say-name" option on each of the graves. After defeating them, talk to them.
+** South-west: [[Snothead]] {{Chat option|2 What was your predecessor's name?}}
+** South-east: [[Snailfeet]] {{Chat option|2 What was your predecessor's name?}}
+** North-west: [[Mosschin]] {{Chat option|2 What was your predecessor's name?}}
+** North-east: [[Redeyes]] {{Chat option|2 What was your predecessor's name?}}
+** North: [[Strongbones]] (ignore the [[skoblin]]s and use [[Protect from Magic]]) {{Chat option|1 Where is Yu'biusk?}}
+* Ensure you ask [[Strongbones]] where Yu'biusk is before leaving.
+}}

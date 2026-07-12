@@ -1,0 +1,12 @@
+===Getting into the mine===
+{{Checklist|
+*Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. {{Chat option|1I've just arrived.|2Oh yes, that sounds interesting.|1What's that then?|1I can try to undo them for you.|1It's funny you should say that...|1Yeah, okay, let's give it a go.|1}} If you've already talked to him. {{Chat option|1Yeah, okay, let's give it a go.|1Yes, I'll trade.}} If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.
+*Equip the slave's clothes
+*Enter the mine to the north
+Warning: There are aggressive NPCs in this mine be careful if you are low level
+
+*Follow the path until you reach a guarded cave entrance.
+*Talk to one of the guards until he mentions a Tenti pineapple. {{Chat option|2I'd like to mine in a different area.|2Yes sir, you're quite right sir.|2Yes sir, we understand each other perfectly.}}
+*Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring {{Fairycode|BIQ}}.
+}}
+'''{{Colour|Red|Warning}}:''' You will be jailed if you don't unequip your slave robes before leaving the camp through the front gate OR if you exit the mine through the doors with them unequipped!

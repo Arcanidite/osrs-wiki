@@ -1,0 +1,32 @@
+==Walkthrough==
+===Unlocking Fairy Rings===
+{{Map|name=Martin the Master Gardener|x=3078|y=3258|r=4|mtype=square|width=250|height=250|align=right|caption=The start point.}}
+{{Checklist|
+*Take all required items with you.
+*Speak with [[Martin the Master Gardener]] in the Draynor Market. {{Chat option|2Quest.}}
+**Note: Do not pickpocket Martin or you won't be able to continue for 10 minutes of in-game time.
+*Wait 5 minutes (Real World Time) and speak to Martin the Master Gardener again. {{Chat option|2Quest.|1I suppose I'd better go see what the problem is then.}}
+*Now make your way to [[Fairy Nuff]]'s grotto in [[Zanaris]] just north of the bank.
+*Take Nuff's Healing certificate off the floor, right-click it and study it. (If lost, you can obtain another Healing certificate by searching the Potion shelves in Fairy Nuff's grotto.)
+*Head to the south-west area of Zanaris, read the [[Rune temple sign]] just south of the [[Cosmic Altar]].
+*Talk to the [[Fairy Godfather]] in the throne room. {{Chat option|1Where is the Fairy Queen?|2Where could she have been taken to?|1Yes, okay.}}
+*Talk to the [[Co-ordinator]] just north of the throne room. {{Chat option|2The fairy rings.}} <u>'''You can now use the [[fairy rings]].'''</u>
+*Talk to [[Fairy Fixit]] near the [[fairy ring]] west of the throne room. {{Chat option|1Why are you carrying that toolbox?}}
+}}
+
+===Curing the Queen===
+{{Checklist|
+*Now, equip your Dramen staff, and teleport using the fairy ring in this sequence: {{Fairycode|air}}, {{Fairycode|dlr}}, {{Fairycode|djq}} (You will not go anywhere), {{Fairycode|ajs}} - (Note: You can right click configure but you '''must''' have the [[Nuff's certificate]] in your inventory)
+*Talk to [[Fairy Nuff]] and [[Fairy Very Wise]] in the NE corner of the area.
+*Go back to [[Zanaris]] ({{Fairycode|bks}}) and pickpocket the [[Fairy Godfather]] while he and his henchmen aren't looking.
+*Go back to the hideout and give the [[Queen's secateurs]] to Fairy Nuff. ({{Fairycode|air}}, {{Fairycode|dlr}}, {{Fairycode|djq}}, {{Fairycode|ajs}})
+**Note: Do '''not''' mix the magic essence potion before learning how to make it from the Fairy or it will not revive the Fairy Queen when used on her.
+*Travel to fairy code {{Fairycode|CKP}}. Wait here (2-5 mins) until a [[star flower]] has grown then pick it. (You '''must''' have Nuff's certificate with you for this to work.)
+*Travel to fairy code {{Fairycode|DIR}}. Kill a [[gorak]] and pick up its [[gorak claws]]. Goraks can be safespotted using some terrain. 
+*Return to the hideout. ({{Fairycode|air}}, {{Fairycode|dlr}}, {{Fairycode|djq}}, {{Fairycode|ajs}})
+*Talk to [[Fairy Nuff]].
+*Now use the star flower on your [[vial of water]] and grind the gorak claws to receive [[gorak claw powder]], then use the two items on each other to make a [[magic essence]] potion.
+*RIGHT-CLICK use the magic essence on the queen, laying on the stretcher near Fairy Nuff.
+*Speak with the Fairy Queen to complete the quest.
+*'''Congratulations, quest complete!'''
+}}

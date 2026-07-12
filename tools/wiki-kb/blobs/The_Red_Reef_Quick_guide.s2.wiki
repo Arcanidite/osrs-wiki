@@ -1,0 +1,33 @@
+==Walkthrough==
+{{Checklist|
+* Talk to [[Elder Raley]] in his house just south of [[the Summer Shore]]'s bank. {{Chat option|1Yes.}}
+* Talk to [[Elder Katt]] at the entrance to [[the Sacred Grove]].
+* Talk to Floopa in the Sacred Grove.
+* Sail to [[Red Rock]], to the far west of [[the Great Conch]]. 
+**Optional: Inspect the [[Sailors' Marker]] next to [[Shipwright Sylvia]] to unlock the teleport for the [[sailor's amulet]]. [[Charter ship]]s will now take players here as well.
+* Talk to the [[receptionist]] in the building headquarters.
+* Inspect all [[Display (The Red Reef)|displays]].
+* Talk to [[Theodore Paxton]] in his office to the south.
+* Sail to [[Last Light]], south of Red Rock. {{Color|red|Warning:}} Combat starts immediately upon arrival at [[Last Light]]. There is a bank chest in the north-east of Red Rock if you need to stock up on supplies before the coming battle.
+**Upon approaching the island, two pirate ships will appear. '''Activate [[Protect from Range]] as soon as you see the pirate ships, as you may take player damage'''.
+**You must sink both boats, either using your cannons or killing all of the pirates on board with Magic or Ranged. The fight takes place in an instance which you may exit at any point by leaving the area.
+* Dock at [[Last Light]]. {{Color|red|Warning:}} Teleporting away from the island after docking will cause your ship to become lost at sea, along with its contents.
+** Upon docking your boat, you will immediately enter multi-combat with 6 level 52 [[Pirate (The Red Reef)|pirates]], all of whom attack with [[melee]] and must be defeated to progress. '''[[Protect from Melee]] will prevent all damage.'''
+**Escaping the area via the mooring port will cause the fight to reset. The four pirates outside may be [[safespotted]] by trapping them to the north of the Mooring point. The two pirates inside may be [[flinched]] by standing just north of the staircase. After defeating the 6 pirates, you will not need to defeat them again if you leave now.
+* Climb up the staircase twice to fight [[Black Eye Bethel]].
+** Step out of the way when she charges up an attack, and keep [[Protect from Melee]] active. Once she equips a [[dragon scimitar]], she can use its special attack to disable the player's protection prayer.
+* Return to [[Theodore Paxton]].
+* Sail to the middle of the [[Red Reef]], east of Red Rock,  and board The Zenith.
+**The quest is currently bugged and The Zenith is missing on some worlds. It should be where the map says "Red Reef" and if it's not there, hop worlds until you find it.
+* Talk to [[Spencer Brentwood]].
+* Equip the diving gear (or the [[Medallion of the deep]]) then talk to [[Spencer Brentwood]] again. If you forgot your diving gear, Spencer Brentwood will let you borrow some.(To board your boat to get your diving gear talk to Spencer to disembark.) 
+* Once under the sea talk to [[Spencer Brentwood]] and then go north and repair the coral dredger. A level 112 giant lobster will attack you.
+* Kill the [[Giant lobster (The Red Reef)|Giant lobster]].
+** Can be safe-spotted with Ranged/Magic by standing next to the dredger. 
+** Avoid its special attack by moving when blue particles appear under your character.
+* Repair the coral dredger by clicking on it, then head to the dredger to the south-east to talk to [[Spencer Brentwood]] again.
+* Once you are back on the ship talk to [[Spencer Brentwood]] once more to return to your ship.
+* Return back to [[Floopa]] at [[Elder Raley]]'s house.
+}}
+
+'''Congratulations, quest complete!'''

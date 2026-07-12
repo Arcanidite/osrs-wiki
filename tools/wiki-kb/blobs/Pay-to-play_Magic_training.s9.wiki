@@ -1,0 +1,4 @@
+===Levels 1–55: Splashing combat spells===
+[[Splashing]] [[combat spells]] on weak monsters offers very slow experience, but only requires player input once every 20 minutes. To splash, attack an NPC while wearing equipment that gives at least -64 Magic attack bonus. Although no damage is dealt, players will still gain the base experience from casting the spell. Simply equip any staff that can autocast the combat spell used (such as an elemental staff), turn on Auto Retaliate, and interact with the game client every 20 minutes to keep splashing the opponent.
+
+Experience rates vary depending on the spell used, ranging from 6,600 to 75,750 experience per hour. See [[Splashing/Guide|this page]] for more details about splashing.

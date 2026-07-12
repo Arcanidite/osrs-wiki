@@ -1,0 +1,171 @@
+{{External|rs|rsc|dw=Gold Bar}}
+{{Infobox Item
+|name = Gold bar
+|image = [[File:Gold bar.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = It's a bar of gold.
+|value = 300
+|weight = 1.814
+|respawn = 1500
+|exchange = Yes
+|id = 2357
+}}
+[[File:Gold bar detail.png|120px|left]]
+A '''gold bar''' is a [[bar]] of refined gold created through the [[Smithing]] [[skill]] at level 40 by using a [[gold ore]] with a [[furnace]], or by casting [[Superheat Item]] on it. By default, this gives 22.5 Smithing [[experience]] per bar, but if the [[goldsmith gauntlets]] from the [[Family Crest]] [[quest]] are worn, the experience given is boosted to 56.2.
+
+The primary use of gold bars is to create [[jewellery]] through the [[Crafting]] skill. To craft gold bars into jewellery, players must use a gold bar on a furnace with the proper [[mould]] in their [[inventory]]. If players wish to craft jewellery with [[gems]] inset, they must also have the respective cut gems.
+{| class="wikitable" style="text-align:center;"
+|+Gold [[jewellery]]
+|-
+!{{SCP|Crafting}} level
+!Product!!XP
+!Alch value
+!GE Price
+!Profit/loss
+|-
+|5||{{plink|Gold ring}}||15
+|{{Coins|{{Alch|Gold ring}}}}
+|{{Coins|{{GEP|Gold ring}}}}
+|{{Coins|{{GEP|Gold ring}}-{{GEP|Gold bar}}}}
+|-
+|6||{{plink|Gold necklace}}||20
+|{{Coins|{{Alch|Gold necklace}}}}
+|{{Coins|{{GEP|Gold necklace}}}}
+|{{Coins|{{GEP|Gold necklace}}-{{GEP|Gold bar}}}}
+|-
+|7||{{plink|Gold bracelet}}||25
+|{{Coins|{{Alch|Gold bracelet}}}}
+|{{Coins|{{GEP|Gold bracelet}}}}
+|{{Coins|{{GEP|Gold bracelet}}-{{GEP|Gold bar}}}}
+|- 
+|8||{{plink|Gold amulet (u)}}||30
+|{{Coins|{{Alch|Gold amulet (u)}}}}
+|{{Coins|{{GEP|Gold amulet (u)}}}}
+|{{Coins|{{GEP|Gold amulet (u)}}-{{GEP|Gold bar}}}}
+|-
+|42||{{plink|Gold tiara}}||35
+|{{Coins|{{Alch|Gold tiara}}}}
+|{{Coins|{{GEP|Gold tiara}}}}
+|{{Coins|{{GEP|Gold tiara}}-{{GEP|Gold bar}}}}
+|}
+
+Apart from jewellery, gold bars can be used to create [[gold helmet]]s, used in the [[Between a Rock...]] quest, [[gold bowl]]s which are used in the [[Legends' Quest]], and the [[enchanted bar]] used in [[Monkey Madness I]].
+
+Through questing, a player can obtain one gold bar upon completion of the [[Goblin Diplomacy]] quest, two from the [[Waterfall Quest]], and two from [[The Dig Site]] quest.
+
+Using the [[Telekinetic Grab]] spell, one can obtain a gold bar and a gold ore from the basement of [[Varrock west bank]] or gold bars in the [[Corsair Cove Dungeon]] (south of the bank vault). The northernmost section of the cave at [[Corsair Cove]] (accessible after [[Dragon Slayer I]]) has an additional three gold bar spawns available without the need of Telekinetic Grab.
+
+==Creation==
+<tabber>
+Standard=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 40
+|skill1boostable = Yes
+|skill1exp = 22.5
+|members = No
+|ticks = 5
+|ticksnote = Make-All option available
+|facilities = Furnace
+|mat1 = Gold ore
+|output1 = Gold bar
+|output1subtxt = Regular furnace
+}}
+|-|
+Blast Furnace=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 40
+|skill1boostable = Yes
+|skill1exp = 22.5
+|members = Yes
+|ticks = 11
+|ticksnote = Multiple bars are completed at once
+|facilities = Blast Furnace
+|mat1 = Gold ore
+|output1 = Gold bar
+|output1subtxt = Blast Furnace
+}}
+|-|
+Superheat=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 40
+|skill1boostable = Yes
+|skill1exp = 22.5
+|skill2 = Magic
+|skill2lvl = 43
+|skill2boostable = Yes
+|skill2exp = 53
+|members = No
+|ticks = 3
+|mat1 = Gold ore
+|mat3 = Nature rune
+|mat4 = Fire rune
+|mat4quantity = 4
+|output1 = Gold bar
+|output1subtxt = Superheat
+}}
+</tabber>
+
+==Smithing Table==
+{{Smithing/Gold bar}}
+
+==Products==
+{{Uses material list|Gold bar}}
+
+==Item sources==
+{{Drop sources|Gold bar}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Gold bar|location=[[Varrock]] - west bank basement{{Refn|name=telegrab,crack_the_clue_iii|This spawn requires [[telekinetic grab]] or completion of [[Crack the Clue III]] to obtain.}}|members=No|mapID=12
+|3192,9822|leagueRegion = Misthalin}}
+{{ItemSpawnLine|name=Gold bar|location=[[Corsair Cove Dungeon]] - eastern end{{Refn|name=telegrab}}|members=No|mapID=31
+|2057,8985|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Gold bar|location=[[Corsair Cove Dungeon]] - northern end{{Refn|name=dragon_slayer|This spawn requires completion of [[Dragon Slayer I]] and permission from [[Haris]] to access the area.}}|members=No|mapID=31
+|1965,9082|1967,9084|1968,9083|1969,9083|1973,9081|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Gold bar|location=[[Civitas illa Fortis]] - Thieves hideout ({{FloorNumber|uk=1}}){{Refn|name=telegrab|This spawn requires [[telekinetic grab]] to obtain.}}|members=Yes|1743,3176|plane=1|leagueRegion = Varlamore}}
+{{ItemSpawnTableBottom}}
+{{reflist|name=telegrab}}
+{{reflist|name=dragon_slayer}}
+{{reflist|name=crack_the_clue_iii}}
+
+===Shop locations===
+{{Store locations list|Gold bar}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 22 March 2023
+|update = Quest Speedrunning's Final Batch
+|change = When using a gold bar on a [[furnace]], you will no longer need to confirm you want to craft a [[Gold tiara]] if the only mould you have on you is a [[tiara mould]].
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Gold bar detail (beta).png|center|300x150px]]
+|[[File:Gold bar detail.png|center|300x150px]]
+|-
+|[[File:Gold bar (beta).png|center]]
+|[[File:Gold bar.png|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 –<br/>present
+|}
+
+==Trivia==
+* Gold was used as one of the tiers of post count badges on the [[RuneScape Forums|official Runescape Forums]]. Players needed to have made 750 posts to be given the gold badge.
+
+{{Bar}}
+{{Gold}}
+[[Category:Crafting items]]

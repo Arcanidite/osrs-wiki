@@ -1,0 +1,20 @@
+==Details==
+{{Quest details
+|start = Talk to [[Ceril Carnillean]] in [[East Ardougne]], just north of the [[Clock Tower]].
+|startmap = 2566,3270
+|difficulty = Novice
+|description = Discover the truth behind the Carnillean family fortune. Decide for yourself whether to aid the Carnilleans in retrieving stolen goods, or join the Hazeel cult members in their mission to resurrect the infamous Lord Hazeel.
+|length = Very Short
+|requirements = Able to defeat a level 13 cultist (this applies only if you're taking Ceril's side)
+|items = None
+|recommended = 
+* {{SCP|Combat|10|link=yes}}
+*[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*Fast travel to [[Ardougne]] to start the quest - [[Ardougne cloak]] 1-4 or [[Ardougne Teleport]] or [[Spirit tree]] to [[Battlefield]] or [[fairy ring]] to {{fairycode|djp}} or [[Captain Barnaby]]'s ship from [[Rimmington]] or [[Brimhaven]]
+|kills = [[Alomone]] (level 13) if taking Ceril's side
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

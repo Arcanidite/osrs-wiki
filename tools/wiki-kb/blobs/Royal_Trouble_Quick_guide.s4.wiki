@@ -1,0 +1,35 @@
+===The dungeon===
+{{Checklist|*Talk to King Vargas.
+*Talk to Advisor Ghrim. {{Chat option|1King Vargas asked me to talk to you.}}
+*Talk to the [[Sailor]] at the Miscellania docks. {{Chat option|2I'm looking for a sailor...}}
+*Talk to King Vargas with one open inventory slot to receive a scroll proving you are Regent of Miscellania.
+*Enter the dungeon, down the ladder in the courtyard (along the castle's south wall).
+*Talk to [[Donal]] in the pub. {{Chat option|1Of course. Dealing with monsters is what I do best!}}
+*Go north, take a pick (on the rock next to the dwarves) if you need coal.
+*Use the mining prop on the [[Crevice (Miscellania Dungeon)|crevice]] and proceed through the crevice.
+*Take an engine and put the 5 coal in it.
+*Take the following from the crates:
+**2 beams.
+**3 pulley beams.
+**1 rope.
+*Use a beam on a pulley beam to get a long pulley beam; use another regular beam on it to make a longer pulley beam.
+*To the '''broken scaffold''' add:
+**A pulley beam.
+**A longer pulley beam.
+**A pulley beam.
+**A rope.
+*Take:
+**1 beam.
+**1 rope.
+*Add a beam to the '''platform'''.
+*Put the engine on the '''engine platform'''.
+*If you haven't yet, add your five coal to the engine.
+*Use the lift and take the plank.
+*Enter the [[Tunnel (Miscellania Dungeon)|tunnel]], run east, and use your rope on the rock.
+**Keep running and make sure to continue through your character's dialogue.
+*Take the diary from the fire remains.
+*Use your plank to cross the rocks, be sure to '''collect all diary pages by searching the four additional fires through the cave'''.
+*Continue running and avoid the steam vents as they will damage you.
+*Read the diary and continue through the crevice, watch the cutscene.
+*Talk to [[Armod]].
+}}

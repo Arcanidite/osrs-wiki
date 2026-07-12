@@ -1,0 +1,7 @@
+===Obtaining the Seed===
+{{Needed|[[Glarial's pebble]]|recommended=[[skills necklace]], food, [[prayer potion]]s, [[ring of recoil]]}}
+{{Checklist|*Bank all your combat equipment, runes included.
+**Go to [[Tree Gnome Village dungeon]] and retrieve Glarial's pebble if you didn't save one from Waterfall Quest.
+*Travel north-west of the [[Fishing Guild]] and use [[Glarial's pebble]] on [[Glarial's tombstone]].
+*Kill a [[Moss Guardian]] (''level 84''). It will drop a [[consecration seed]].
+*Take the seed to Eluned.}}

@@ -1,0 +1,11 @@
+===Looty===
+{{Needed|[[Captain's log]]}}
+{{Checklist|
+*Talk to [['Squawking' Steve Beanie]] in the [[The Pandemonium (Pub)|the Pandemonium Pub]] {{Chat option|3 Got any work that needs doing here?|1 Yes.}}, with your [[Captain's log]] in your inventory, to accept the courier task. Note: you must have an empty courier task slot to accept.
+*Sail to [[Port Sarim]] and take cargo from the [[ledger table]].
+*Board your vessel and deposit the crate into the cargo hold.
+*Sail south to [[The Pandemonium]].
+**Dock your boat, withdraw the [[crate of pirate looty]] from the cargo hold, and disembark the vessel.
+**Deposit the crate at the ledger table on The Pandemonium docks.
+*Talk to 'Squawking' Steve Beanie. {{Chat option|3 I delivered that cargo for you.}}
+}}

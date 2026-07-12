@@ -1,0 +1,10 @@
+===Smithing===
+'''Items required:''' ''Two [[bronze bar]]s, two [[logs]], and a [[hammer]]''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about spears.{{Chat option|1Tell me more about the use of spears.}}
+* Use one of the bronze bar and logs on the nearby [[barbarian anvil]]. Make '''only one''' [[bronze spear]].
+* Ask Otto about spears again.{{Chat option|1Tell me more about the use of spears.}}
+* Ask Otto about hastae. {{Chat option|1What of the one-handed spears of which you spoke?}}
+* Use the other bronze bar and logs on the nearby [[barbarian anvil]]. Make a [[bronze hasta]].
+* Ask Otto about hastae again. {{Chat option|1What of the one-handed spears of which you spoke?}}
+}}

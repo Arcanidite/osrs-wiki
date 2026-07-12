@@ -1,0 +1,8 @@
+===Second key===
+{{Checklist|
+*Go to the kitchen to the north-east, on the {{FloorNumber|uk=0}}.
+**If you don't have a bucket of water, head up the staircase in the kitchen and grab one from the room to the east. Head back down to the kitchen and fill the bucket from the sink.
+*Use a bucket of water on the [[Drain (Demon Slayer)|drain]] outside of the eastern kitchen wall.
+*Climb down the [[manhole]] east of the palace, just outside the wall near the tree patch.
+*Take the north-west path down to the end and take the rusty Silverlight key from the floor. (It does not appear on the minimap)
+}}

@@ -1,0 +1,9 @@
+===Herblore===
+'''Items required:''' ''A normal [[attack potion]] (2 doses), [[roe]], and a [[knife]].''
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about herblore.{{Chat option|2What was that secret knowledge of herblore we talked of?}}
+* Right-click "Use" the roe on the attack potion.
+* Talk to Otto again and tell him of your success.{{Chat option|2I've made a barbarian potion!}}
+}}
+
+{{Barbarian Training}}

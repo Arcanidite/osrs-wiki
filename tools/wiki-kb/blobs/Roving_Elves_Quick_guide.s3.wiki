@@ -1,0 +1,7 @@
+===Tracking Islwyn===
+[[File:Isafdar map.png|thumb|350x350px]]
+{{Needed|recommended=teleport to Ardougne and either: [[ring of charos(a)]] & 1600gp '''''or''''' 3200gp for each trip.}}
+{{Checklist|*Head to [[Tirannwn]] (''[[Catherby teleport (tablet)]], use charter to Port Tyras'')
+*Track down [[Islwyn]], who will be either west of [[Lletya]] or north-east of the [[Tyras Camp]]. Use [[:File:Isafdar map.png|this map]] to assist you. (If the elves are not there, switch worlds until they appear)
+*Offer your help to Islwyn. {{Chat option|1Tell the truth?|1Maybe I could help.}}
+*Talk to [[Eluned]].}}

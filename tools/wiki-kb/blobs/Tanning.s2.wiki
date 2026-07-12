@@ -1,0 +1,106 @@
+==Leathers==
+Players can also tan hides themselves with the [[Lunar spells|Lunar spell]] [[Tan Leather]], which requires 78 [[Magic]] and the [[Fremennik Diary#Hard|Fremennik Hard Diaries]], without paying any coins. The cost of the spell whilst wearing a source of infinite fire runes (such as a [[Staff of fire]] or a [[Tome of fire|Tome of fire)]]) is {{NoCoins|{{#vardefineecho:costpercast|{{#expr:{{GEP|Astral rune|2}}+{{GEP|Nature rune|1}}}}}}|c}}, tanning up to 5 hides at once.
+{| class="wikitable align-center-1 align-center-3"
+! colspan="2" rowspan="2" |Raw material
+! colspan="2" rowspan="2" |Product
+! rowspan="2" |{{SCP|Crafting}} Level<ref>There is no Crafting level required to use a tanner to tan hides. Listed here is the minimum Crafting level required to make something using the leather.</ref>
+! colspan="3" |Tanning price
+! colspan="4" |Tanning profit
+|-
+!Standard
+![[Sbott]] (Canifis)/[[Chouani]] (Auburnvale)
+![[Eodan]] (Forthos)<ref name="Eodan">Eodan's prices adjust for each completed tier of the [[Kourend & Kebos Diary]].</ref>
+!Standard
+![[Sbott]] (Canifis)/[[Chouani]] (Auburnvale)
+![[Eodan]] (Forthos)<ref name="Eodan"/>
+![[Tan Leather]]<ref>Tan leather can tan up to five hides at once. Values show profit per hide, for tanning one hide up to five at once.</ref>
+|-
+|{{plinkt|Cowhide}}
+|{{plinkt|Leather}}
+|1
+|{{Coins|1}}
+|{{Coins|2}}
+|{{Coins|2}}-{{NoCoins|10}}
+|{{Coins|{{GEP|Leather}}-{{GEP|Cowhide}}-1}}
+|{{Coins|{{GEP|Leather}}-{{GEP|Cowhide}}-2}}
+|{{Coins|{{GEP|Leather}}-{{GEP|Cowhide}}-10}}-{{NoCoins|{{GEP|Leather}}-{{GEP|Cowhide}}-2}}
+|{{Coins|{{GEP|Leather}}-{{GEP|Cowhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Leather}}-{{GEP|Cowhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Cowhide}}
+|{{plinkt|Hard leather}}
+|28
+|{{Coins|3}}
+|{{Coins|5}}
+|{{Coins|6}}-{{NoCoins|30}}
+|{{Coins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-3}}
+|{{Coins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-5}}
+|{{Coins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-30}}-{{NoCoins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-6}}
+|{{Coins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Hard leather}}-{{GEP|Cowhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Snake hide}}
+|{{plinkt|Snakeskin}}
+|45
+|{{Coins|15}}
+|{{Coins|25}}
+|{{Coins|30}}-{{NoCoins|150}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-15}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-25}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-150}}-{{NoCoins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-30}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Snakeskin}}-{{GEP|Snake hide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Snake hide (swamp)}}
+|{{plinkt|Snakeskin}}
+|45
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-20}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-45}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-200}}-{{NoCoins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-40}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Green dragonhide}}
+|{{plinkt|Green dragon leather}}
+|57
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-20}}
+|{{Coins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-45}}
+|{{Coins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-200}}-{{NoCoins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-40}}
+|{{Coins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Green dragon leather}}-{{GEP|Green dragonhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Blue dragonhide}}
+|{{plinkt|Blue dragon leather}}
+|66
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-20}}
+|{{Coins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-45}}
+|{{Coins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-200}}-{{NoCoins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-40}}
+|{{Coins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Red dragonhide}}
+|{{plinkt|Red dragon leather}}
+|73
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-20}}
+|{{Coins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-45}}
+|{{Coins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-200}}-{{NoCoins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-40}}
+|{{Coins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Red dragon leather}}-{{GEP|Red dragonhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Black dragonhide}}
+|{{plinkt|Black dragon leather}}
+|79
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-20}}
+|{{Coins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-45}}
+|{{Coins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-200}}-{{NoCoins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-40}}
+|{{Coins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Black dragon leather}}-{{GEP|Black dragonhide}})-{{#var:costpercast}})/5}}
+|}
+{{Reflist}}

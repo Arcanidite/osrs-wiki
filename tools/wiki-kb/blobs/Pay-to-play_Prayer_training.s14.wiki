@@ -1,0 +1,228 @@
+===Offering bones at the Chaos Temple===
+[[File:Chaos Temple (hut).png|300px|right]]
+Offering [[remains#Bones|bones]] at the [[Chaos altar (Prayer)|altar]] within the [[Wilderness]]' [[Chaos Temple (hut)|Chaos Temple]] is a slightly slower but much cheaper alternative to the gilded altar in a [[Player-owned house|POH]]. As the temple is located in a [[multi-combat area]] within level 38 Wilderness and is a popular spot for  [[Player killing|player killers]], there is risk involved in this activity.
+
+The altar grants the same 350% experience per bone as the gilded altar (with both burners lit), but has an additional 50% chance for each offering to not be consumed, resulting in double the effective experience per inventory compared to the gilded altar.
+
+Players may take noted bones with them and un-note them at the [[Elder Chaos druid (NPC)|Elder Chaos druid]] NPC just outside of the Southern wall of the temple for 50 coins per note. While convenient, this increases the amount the player is risking to lose to player killers. Players who wish to minimise risk should take only an inventory of unnoted bones at a time and suicide (see [[Pay-to-play Prayer training#Planning to die|planning to die]] below) to bank for more bones.
+
+The fastest way to get to the altar is to use [[Ghorrock Teleport]] (or the respective house portal or the [[Ghorrock teleport (tablet)|teleport tablet]]) and run south.
+*Alternatively, players who have an [[Obelisk (Construction)|Ancient Obelisk]] in their player-owned house and have completed the [[Wilderness Diary#Hard|hard Wilderness Diary]] can use the reward to teleport to the obelisk at level 44 Wilderness and then run south.
+* Another option is to use [[Cemetery Teleport]] on the [[Arceuus spellbook]] (or the respective house portal) and run north. This is a slightly slower method, and it will put the player in Level-31 Wilderness in range of aggressive NPC's so logging out if a player-killer is waiting for you is usually not an option, and players' must run south to level-30 wilderness before they can attempt to teleport away if not [[tele-blocked]]. However, this method has lower requirements than the previous two.
+*Using the [[burning amulet]] to the [[Lava Maze]] entrance and running south-west has no quest or skill requirements, but is only recommended for players using the suicide strategy (see [[Pay-to-play Prayer training#Planning to die|planning to die]] below). The Lava Maze entrance is often crowded by player killers due to its proximity to [[Revenant Caves]], [[King Black Dragon Lair]], and [[Money making guide/Killing lava dragons|Lava Dragons]].
+
+Experience rates vary depending on the type of bones used and the number of player killers. '''When bringing noted bones''' and manually using the bones on the altar, players can gain up to 1,800,000 experience per hour with [[superior dragon bones]] or 860,000 experience per hour with [[dragon bones]]. Higher rates can be achieved by using runners. '''If suiciding''' for every inventory of bones, players can offer up to around 2,000 bones per hour. This would equate to 1,050,000 experience per hour with superior dragon bones and 500,000 experience per hour with dragon bones.
+
+====Strategies====
+As the altar can also be used to recharge Prayer points, players can keep Protect from Magic and Augury prayers up while offering bones and pray at the altar when needed.
+
+=====Planning to die=====
+{{Inventory
+|align = right|Locator orb|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones|Dragon bones
+}}
+Players who wish to minimise their risk can travel to the altar from the bank for every inventory of bones, and suicide to get to the bank faster. While this is much less risky than bringing noted bones to the altar, it is also slower.
+
+For this method, it is strongly recommended to have the [[respawn point]] in [[Ferox Enclave]] or [[Edgeville]]. They are the closest respawn points to a bank, but also cost 5,000,000 coins each to unlock. Alternatively, players can use PvP worlds, which have a bank chest right next to the respawn points.
+
+This method goes as follows:
+#Take bones, a teleport to the Wilderness, and optionally (recommended if you have high HP) a [[locator orb]], [[dwarven rock cake]], or [[enchanted symbol]] from the bank.
+#Teleport to the Wilderness, and run to the Chaos Temple. Offer the bones at the altar.
+#Lower Hitpoints to 1 then suicide to the [[Wine of zamorak|Wine of Zamorak]] on the table in the chaos altar. Alternatively, let the [[Chaos Fanatic]] kill you.
+#Run from the respawn point to the nearest bank to repeat the process.
+
+Players can optionally wear a piece of defensive equipment, such as the [[Dinh's bulwark]]. This way, players have a better chance of surviving player killers long enough so they can use up all their bones before dying.
+
+Alternatively, players can wear [[Zealot's robes]] when using the suicide strategy. The bone-saving effect of the altar stacks with the Zealot's robes, and wearing them would give slightly more value out of the bones. The Zealot's robes are protected over the bones on death, but the [[Protect Item]] prayer must be used to protect all 4 pieces upon death.
+
+===== Logging out=====
+If a player wishes to avoid encounters with player killers, an option is to keep the logout menu open with the cursor placed over the logout button. Consider using the <code>::renderself</code> [[chat interface]] setting to hide your character model on your own client, allowing you to see anyone who logs in beneath you. With careful attention, the player can quickly log out before being attacked. One disadvantage to this method is that it offers lower XP/hr than manually using the bones on the altar.
+
+====Bringing noted bones ====
+Bringing noted bones is riskier, but a lot faster than using the suicide method. However, it is only viable for either high-level or very low-level players.
+
+The Elder Chaos Druid located outside the Chaos Altar unnotes bones for 50 coins each.
+
+Very low-level players (combat level 3–20) are often too low-levelled to be targeted by player killers. Such players can usually bring higher amounts of noted bones with lower risk. However, some low-level [[combat pure]] player killers can sometimes be found at the altar, so some caution should still be given.
+
+High-level players should wear good defensive gear while 3- or 4-iteming more expensive armour pieces, and bring some [[Saradomin brew]]s along with [[sanfew serum]]s or [[super restore]]s to have a higher chance of escaping player killers. Players will also have very limited space for supplies, as it is best to have as much inventory space as possible for the bones.
+
+Gear setups can vary depending on how much money the player has available. It is generally best prioritise Magic defence while having decent defensive bonuses against Melee and Ranged attacks. When choosing protected items, the [[Masori body (f)|fortified Masori body]] or the [[Armadyl chestplate]], a tank shield such as elysian/spectral spirit shield or dinh's bulwark, and staff of the dead (if using an off-hand shield) are considered the best options. The rest of the equipment should consist of fairly cheap or easily replaceable items.
+
+If the player is confident using [[Protect Item]], the [[serpentine helm]] or the [[Masori chaps (f)|fortified Masori chaps]] (or the [[Armadyl chainskirt]]) can be brought as the extra item. It is still possible to get smited, so it may be a good idea to keep the smite risk reasonable. In a certain death situation prioritise having enough Prayer points to keep Protect Item active.
+
+[[Smite]] risks for certain items:
+*[[Serpentine helm]]: {{Coins|{{GEP|Serpentine helm (uncharged)}}+{{GEP|Zulrah's scales}}*200}}
+*[[Staff of the dead]]: {{Coins|{{GEP|Staff of the dead}}}}
+*[[Slayer helmet (i)]]: {{Coins|{{GEP|Black mask}}}}
+*[[Karil's leatherskirt]]: {{Coins|{{GEP|Karil's leatherskirt}}}}
+
+Generally it is best to wear a [[phoenix necklace]] to reduce the chance of getting combo-ed out along with a [[ring of wealth]], which offers a teleport out of the Wilderness while not taking up inventory space. With certain setups it may be better to bring a [[ring of suffering (i)]] and an [[amulet of glory]] for extra defence, although the player will miss out on the phoenix necklace's healing effect.
+
+<tabber>
+|-|
+High Magic defence =
+Using the [[staff of the dead]] with a powerful off-hand shield (such as the elysian or spectral spirit shield) offers the highest escaping potential. Having a very high Magic defence helps at not getting frozen inside the multi-combat area, thereby significantly increasing the chances of surviving. Players should keep the risk at a reasonable level, as it is still fairly likely to die to a larger team of player killers. Choose 3 pieces of equipment (4 if confident using [[Protect Item]]) that will be protected on death and some low-value equipment that you do not mind risking.
+
+{{Recommended equipment
+|style = High Magic defence
+|head1 = {{plink|Serpentine helm}}
+|head2 = {{plink|Slayer helmet (i)}}
+|head3 = {{plink|Helm of neitiznot}}
+|head4 = {{plink|Bearhead}}
+|neck1 = {{plink|Phoenix necklace}}
+|neck2 = {{plink|Amulet of glory}}
+|cape1 = {{plink|Cape of Accomplishment|pic=Strength cape(t)}}
+|cape2 = {{plink|God capes|pic=Saradomin cape}}
+|cape3 = {{plink|Cape of legends}}
+|body1 = {{plink|Masori body (f)}}
+|body2 = {{plink|Armadyl chestplate}}
+|body3 = {{plink|Karil's leathertop}}
+|body4 = {{plink|Black d'hide body}}
+|legs1 = {{plink|Masori chaps (f)}}
+|legs2 = {{plink|Armadyl chainskirt}}
+|legs3 = {{plink|Karil's leatherskirt}}
+|legs4 = {{plink|Black d'hide chaps}}
+|weapon1 = {{plink|Staff of the dead}} / {{plink|Staff of light}}
+|weapon2 = {{plink|Ancient staff}} / {{plink|Trident of the seas}}
+|weapon3 = {{plink|Lunar staff}}
+|weapon4 = {{plink|Staff of water}}
+|shield1 = {{plink|Elysian spirit shield}}
+|shield2 = {{plink|Spectral spirit shield}}
+|shield3 = {{plink|Dragonfire ward}} / {{plink|Twisted buckler}}
+|shield4 = {{plink|Dragonfire shield}}
+|ammo1 = {{plink|Rada's blessing 4}}
+|ammo2 = {{plink|God blessing|pic=Peaceful blessing}} / {{plink|Rada's blessing 3|txt=Rada's blessing 3/2}}
+|hands1 = {{plink|Confliction gauntlets}}
+|hands2 = {{plink|Black d'hide vambraces}}
+|feet1 = {{plink|Silly jester boots}}
+|feet2 = {{plink|Mystic boots}}
+|feet3 = {{plink|Fremennik sea boots 4}}
+|ring1 = {{plink|Ring of wealth}} <ref name="row" group="n">Ring of wealth is used to teleport out of the Wilderness, and it saves an inventory space when wearing a phoenix necklace.</ref>
+|ring2 = {{plink|Ring of suffering (i)}}
+}}
+<references group="n"/>
+
+{{Equipment
+|align = right
+|head = Serpentine helm
+|cape = Construct. cape(t)
+|neck = Phoenix necklace
+|ammo = Rada's blessing 4
+|weapon = Staff of the dead
+|torso = Masori body (f)
+|legs = Black d'hide chaps
+|shield = Elysian spirit shield
+|gloves = Black d'hide vambraces
+|boots = Silly jester boots
+|ring = Ring of wealth
+}}
+The elysian spirit shield is the best option for overall tanking due to its damage reduction effect. However, the spectral spirit shield is much more affordable and arguably almost as good due to its considerably higher Magic defence bonus. Wearing the spectral spirit shield makes it a lot less likely to get frozen inside the multi-combat area, but should this happen, the elysian spirit shield offers much better survivability.<br/>
+
+The staff of the dead has fairly high Magic defence and also offers a useful special attack, which halves the all Melee damage of your opponent(s) (all opponents that hit you in the time of the special attack) for one minute. A staff of light or staff of balance can also used instead as they have the exact same bonuses and special attack. Should the player not be able to use the staff of the dead, any other staff with high Magic defence bonus should be used instead.<br/>
+
+===Recommended skills===
+*90+ {{SCP|Defence}} (75 required)
+*90+ {{SCP|Magic}} (75 required)
+*{{SCP|Attack|75}}
+*{{SCP|Ranged|70}}
+*{{SCP|Prayer|77}} ([[Augury]])
+
+===Inventory===
+{{Inventory|align=right
+|Superior dragon bones\500;n |Superior dragon bones |Stamina potion(4) |Blighted manta ray
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Coins 10000\25000 |Blighted super restore(4) |Blighted super restore(4)
+}}
+*Noted bones
+*Coins
+*[[Teleport to house]] tablet or [[Burning amulet]] to get to the altar
+*1 [[stamina potion]]
+*4–6 [[Saradomin brew]]s
+*2–3 [[blighted super restore]]s
+**If not wearing a serpentine helm, bring 2–3 [[sanfew serum]]s instead for curing potential venom
+**If sanfew serums are not available, bring a 2-dose [[anti-venom+]] (optional)
+*1–2 [[blighted anglerfish]] or [[blighted manta ray|manta ray]] for combo healing (optional)
+*Rest unnoted bones
+
+|-|
+Dinh's bulwark =
+This setup uses the Dinh's bulwark for Melee and Ranged defence and other equipment for Magic defence. It is usually more affordable than the previous setup and it offers higher Ranged and Melee defences, at the expense of some Magic defence. Players should keep the risk at a reasonable level, as it is still fairly likely to die to a larger team of player killers.
+
+{{Recommended equipment
+|style = Dinh's bulwark
+|head1 = {{plink|Serpentine helm}}
+|head2 = {{plink|Slayer helmet (i)}}
+|head3 = {{plink|Helm of neitiznot}}
+|head4 = {{plink|Bearhead}}
+|neck1 = {{plink|Phoenix necklace}}
+|neck2 = {{plink|Amulet of glory}}
+|cape1 = {{plink|Cape of Accomplishment|pic=Strength cape(t)}}
+|cape2 = {{plink|God capes|pic=Saradomin cape}}
+|cape3 = {{plink|Cape of legends}}
+|body1 = {{plink|Masori body (f)}}
+|body2 = {{plink|Armadyl chestplate}}
+|body3 = {{plink|Karil's leathertop}}
+|body4 = {{plink|Black d'hide body}}
+|legs1 = {{plink|Masori chaps (f)}}
+|legs2 = {{plink|Armadyl chainskirt}}
+|legs3 = {{plink|Karil's leatherskirt}}
+|legs4 = {{plink|Black d'hide chaps}}
+|weapon1 = {{plink|Dinh's bulwark}}
+|ammo1 = {{plink|Rada's blessing 4}}
+|ammo2 = {{plink|God blessing|pic=Peaceful blessing}} / {{plink|Rada's blessing 3|txt=Rada's blessing 3/2}}
+|hands1 = {{plink|Black d'hide vambraces}}
+|feet1 = {{plink|Silly jester boots}}
+|feet2 = {{plink|Mystic boots}}
+|feet3 = {{plink|Fremennik sea boots 4}}
+|ring1 = {{plink|Ring of wealth}} <ref name="row" group="n">Ring of wealth is used to teleport out of the Wilderness, and it saves an inventory space when wearing a phoenix necklace.</ref>
+|ring2 = {{plink|Ring of suffering (i)}}
+}}
+<references group="n"/>
+
+{{Equipment
+|align = right
+|head = Serpentine helm
+|cape = Construct. cape(t)
+|neck = Phoenix necklace
+|ammo = Rada's blessing 4
+|weapon = Dinh's bulwark
+|torso = Masori body (f)
+|legs = Masori chaps (f)
+|shield =
+|gloves = Black d'hide vambraces
+|boots = Silly jester boots
+|ring = Ring of wealth
+}}
+
+===Recommended skills===
+*90+ {{SCP|Defence}} (75 required)
+*90+ {{SCP|Magic}}
+*{{SCP|Attack|75}}
+*{{SCP|Ranged|70}}
+*{{SCP|Prayer|77}} ([[Augury]])
+
+===Inventory===
+{{Inventory|align=right
+|Superior dragon bones\500;n |Superior dragon bones |Stamina potion(4) |Blighted manta ray
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Superior dragon bones |Superior dragon bones |Saradomin brew(4)
+|Superior dragon bones |Coins 10000\25000 |Blighted super restore(4) |Blighted super restore(4)
+}}
+*Noted bones
+*Coins
+*[[Teleport to house]] tablet or [[Burning amulet]] to get to the altar
+*1 [[stamina potion]]
+*4–6 [[Saradomin brew]]s
+*2–3 [[blighted super restore]]s
+**If not wearing a serpentine helm, bring 2–3 [[sanfew serum]]s instead for curing potential venom
+**If sanfew serums are not available, bring a 2-dose [[anti-venom+]] (optional)
+*1–2 [[blighted anglerfish]] or [[blighted manta ray|manta ray]] for combo healing (optional)
+*Rest unnoted bones
+</tabber>

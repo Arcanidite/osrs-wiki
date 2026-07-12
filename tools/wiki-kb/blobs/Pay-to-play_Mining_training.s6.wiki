@@ -1,0 +1,132 @@
+==Fastest experience==
+To gain Mining experience most efficiently, players should always drop the ores they mine (also known as "powermining" or "dropmining"). This can be done by holding the shift key and clicking on the ore once shift drop has been enabled in the [[Options#Controls|options]]. Mobile users can toggle the tap-drop option.
+
+===Levels 1–37: Questing===
+Early levels can be skipped by completing [[Quest experience rewards#Mining|quests that give Mining experience]]. Completing [[Doric's Quest]], [[The Dig Site]], [[Plague City]], [[The Giant Dwarf]], [[The Lost Tribe]] and [[Another Slice of H.A.M.]] grants a total of 27,525 Mining experience, which will get the player from level 1 to 37. All of these quests have low requirements, and completing them allows the player to use an [[adamant pickaxe]] right from the start.
+
+===Levels 1–15: Copper/Tin ore===
+From level 1 to 15, mine [[Copper ore|copper]] or [[tin ore|tin]]. This can be done anywhere, though the [[Lumbridge Swamp]] mining site is debatably the easiest due to its relative lack of players and aggressive monsters, and its collection of copper and tin rocks.
+
+===Levels 15–45/70: Iron ore===
+[[File:Iron ore powermining.gif|thumb|Mining iron in the Mining Guild.]]
+From level 15 to 45, mine [[iron ore|iron]]. Players who are inexperienced with tick manipulation methods, or do not plan to use tick manipulation at all, are advised to mine iron up to level 70 and continuing with other methods such as the [[#Levels 70–99: Volcanic Mine|Volcanic Mine]].
+
+Wearing [[Varrock armour 1]] or higher increases the overall experience rate for this method, as it gives the player 10% chance to mine 2 ores at once while worn.
+
+From level 15 to 60, mine iron at a location that has three [[iron rocks]] in a triangle. This formation allows the player to mine all three rocks without moving. Drop the ores while waiting for the rocks to respawn. There are 16 such locations available at this level: 
+
+# [[Legends' Guild mine|Legends' Guild Mine]]
+# [[Al Kharid Mine]]
+# [[Piscatoris mine|Piscatoris Mine]]
+# [[Lovakengj mine|Lovakengj Mine]]
+# [[Verdant Valley]]
+# [[Mount Karuulm mine|Mount Karuulm Mine]]
+# [[Resource Area]] (level 51 [[Wilderness]])
+# [[South Mor Ul Rek mine|South Mor Ul Rek Mine]]
+# [[Isle of Souls]]
+# [[Sisterhood Sanctuary mine|Sisterhood Sanctuary Mine]]
+# [[The Stranglewood mine|Stranglewood Mine]]
+# [[Cam Torum mine|Cam Torum Mine]]
+# [[Salvager Overlook|Salvager Overlook Mine]] (east)
+# [[Pandemonium Cave]]
+# [[Deepfin Mine]] (Requires 67 [[Sailing]])
+# [[Ynysdail]] (Requires 73 [[Sailing]])
+
+If using [[tick manipulation]], the best place to mine iron is in the [[Legends' Guild mine]] or the [[Isle of Souls mine]]. Both locations have 4 iron rocks close to each other. Start the 3-tick cycle with a herb and tar (or other suitable items) while moving between rocks, and drop the ores in between mines. Because this method is much harder and more advanced than using a triangle spot, it is only recommended for players who plan on 3-tick mining granite from level 45 onwards.
+
+From level 60 onwards, the pay-to-play area of the [[Mining Guild]] becomes the best option, as the [[respawn]] time for rocks mined in this area is halved. This makes it so the players do not have to wait for the rocks to respawn or use tick manipulation. With correct timing and accurate clicks, players can drop the ore between mines and keep mining continuously.
+
+Players can gain around 45,000–55,000 experience per hour below level 60 when not using tick manipulation. From level 60 and above, the maximum experience rate in the Mining Guild caps at around 70,000–80,000 experience per hour, depending on performance and the pickaxe used.
+
+Banking the ores is not recommended as this slows down experience rates a lot and the iron ores are usually not worth very much. Ironmen who wish to bank their ores are advised to use the pay-to-play area in the Mining Guild, which has a triangle spot near to the bank chest. For those below level 60, an alternative location to bank iron ores is the [[South-east_Ardougne_mine|Monastery Mine]], using the [[Ardougne_cloak_1|Ardougne cloak]] to teleport to the mine and then a bank teleportation method such as the [[Ring_of_dueling#(8)|ring of dueling]] teleport to Castle Wars to bank your ore.
+
+===Levels 45–99: Granite===
+[[File:Tick manipulation - Mining.gif|thumb|3-tick granite mining in action.]]
+[[Tick manipulation|3-tick]] mining [[granite]] (commonly referred to as "3t4g", 3-tick 4 granite) at the [[Bandit Camp Quarry]] or [[Cape Conch mine]] offers the fastest Mining experience from level 45 onwards. 3-tick mining is done by using [[swamp tar]] on a clean herb (or other suitable items) to set up the 3-tick cycle and then moving to a granite rock to mine it. When timed correctly, the player will skip the delay from moving to the granite rock and has a chance to receive a rock every three ticks. The player will need to move between four granite rocks to continuously keep up the 3-tick cycle.
+
+While 3-tick mining granite offers the fastest experience, it is very click-intensive and can be hard to learn. This method is not worth doing without tick manipulation, as the experience rates would be much lower. Players who are new to tick manipulation methods may find it worthwhile to train with iron before attempting to train with granite, as mining iron offers relatively high rates at lower levels.
+
+Experience rates shown in the table below assume wearing the Varrock armour, the prospector kit, and an uncharged [[celestial ring]]. The rate at level 99 also assumes wearing the [[Mining cape]]. At maximum efficiency, it is possible to gain up to 134,000 experience per hour at level 99, though players are more likely to see rates closer to around 120,000–125,000 experience per hour when including some mistakes. Without tick manipulation players can only gain around 63,000 experience per hour at best.
+
+{|class="wikitable align-center-1" style="text-align:right;" 
+! {{SCP|Mining}} level
+! {{SCP|Mining}} XP/h
+! {{SCP|Smithing}} XP/h ({{plinkp|Infernal pickaxe}})
+|-
+| 45
+| 87,000
+| {{NA}}
+|-
+| 55
+| 95,000
+| {{NA}}
+|-
+| 65
+| 103,000
+| 7,700
+|-
+| 75
+| 109,000
+| 8,200
+|-
+| 85
+| 114,000
+| 8,700
+|-
+| 95
+| 119,000
+| 9,100
+|-
+| 99
+| 126,000
+| 9,700
+|}
+
+====Setup and tips====
+{{Equipment
+| align = right
+| head = Prospector helmet
+| cape = Mining cape(t)
+| neck = Desert amulet 4
+| ammo = 
+| weapon = Infernal pickaxe
+| torso = Varrock armour 4
+| legs = Prospector legs
+| shield = 
+| gloves = 
+| boots = Prospector boots
+| ring = Celestial ring
+}}
+{{Inventory
+|align=right
+|Knife |Mahogany logs | |Dragon pickaxe
+|Teak logs | | |Dragon pickaxe
+| | | |Camulet
+|Swamp tar\1000 | | |Marrentill
+|Guam leaf | | |Herb sack
+| | | |Pestle and mortar
+| | | |Teleport to house (tablet)
+|}}
+The best place to mine granite is at the [[Cape Conch mine]], as the player will not need protection against [[desert heat]] like at the Bandit Camp Quarry. This requires partial completion of [[Troubled Tortugans]]. With 61 Agility, use fairy ring {{fairycode|cjq}}, climb down the [[Rocks (The Great Conch)|rocks]] shortcut to the south, then go east and use the [[Stepping stone (The Great Conch)|stepping stone]] shortcut. From there, continue running south-east to the mine. Without 61 Agility, sail to the docks or take a [[charter ship]] to the Great Conch, then take the [[Rowboat (The Great Conch)|Rowboat]] found on the docks to the eastern part of the island. From there, run south.
+
+If using the [[Bandit Camp Quarry]], teleport with the [[camulet]] to [[Enakhra's Temple]], navigate outside, and run a short distance south-west. After completing the [[Desert Diary Hard|hard Desert Diary]], players can teleport straight to the entrance instead. Players who have not completed [[Enakhra's Lament]] can use the [[Pharaoh's sceptre]] to teleport to the [[Ancient Pyramid]] and run west, take the ferry to the [[Ruins of Unkah]] and run north, or take the carpet to [[Bedabin Camp]] and run south. Alternatively, players who have started [[Beneath Cursed Sands]] can use the spot at the [[Necropolis mine]] near the fairy ring {{fairycode|akp}}.
+
+Players must have some sort of [[desert heat]] protection to survive at the Bandit Camp Quarry, such as
+* Wearing the [[Desert amulet 4]].
+* Wearing the [[Hitpoints cape]] with a [[regen bracelet]], which will outheal the damage taken from desert heat.
+* Bringing waterskins and filling them with the lunar spell [[Humidify]].
+* Wearing the [[circlet of water]]. This comes at the cost of 0.4% experience bonus from the Prospector helmet and 0.5% from the Prospector outfit set bonus.  
+
+Wearing [[Varrock armour 2]] or higher gives the player 10% chance to mine 2 ores at once while worn, which will increase experience rates. [[Varrock armour 4]] also acts as a [[prospector jacket]] for the prospector kit experience bonus.
+
+Using the [[infernal pickaxe]] is strongly recommended if the player can afford it, as it reduces the amount of granite that need to be dropped and also provides passive Smithing experience. One fully charged infernal pickaxe lasts for around 960,000 Mining experience. It can be charged with [[smouldering stone]]s or [[dragon pickaxe]]s, with the smouldering stone currently costing {{Coins|{{GEP|Smouldering stone}}}} and the dragon pickaxe {{Coins|{{GEP|Dragon pickaxe}}}}.
+
+If not using the infernal pickaxe, the pickaxe tier does not matter as it does not affect mining success rates. Because tick manipulation bypasses the normal pickaxe rate for mining rolls, the [[crystal pickaxe]] does not bring any benefits for this method.
+
+To minimise mouse movement, make the game client as small as possible and use the 'Modern' resizable client layout. Zoom in and turn the camera south so that there is as little distance from the inventory to the rocks as possible. Turning data orbs off is also helpful to prevent any misclicks when clicking on the southernmost rock.
+
+Players should drop the mined pieces of granite on the ground between mines. This is done by starting the 3-tick action and clicking on the next rock, quickly dropping the granite and clicking the rock again. This requires accurate clicking and some practice to perform consistently, but it is much more efficient than dropping a full inventory.
+
+Moreover, it is recommended to only drop 1 or 2 rocks at a time to avoid clicking the next rock too late. Because of how movement stalls work with tick manipulation, moving to the next rock will grant a second roll for a resource if the first one fails. This makes the player more likely to receive a rock. However, if the player clicks on the next rock too late, they will miss out on the additional roll and are less likely to receive a rock. Note that this mechanic is separate from mining enhancers, and the chance to get extra rocks from Varrock armour (or other mining enhancers) is applied after getting a successful roll.
+
+It is possible to use a [[bird snare]], [[box trap]], or [[rabbit snare]] to tick manipulate. An advantage of using bird snares is the ability to stack large quantities of them for a low cost, allowing for mistakes to be made (when compared to logs).

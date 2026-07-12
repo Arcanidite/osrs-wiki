@@ -1,0 +1,8 @@
+===Levels 20-55+: Grand Library of Great Kourend===
+{{Main|Arceuus Library}}
+
+This minigame, which involves finding and delivering the requested books to characters in the [[Arceuus Library]], offers fantastic experience rates without spending any runes. Each book delivered provides XP equivalent to 15 times the player's magic level (for reference, a genie lamp provides XP that is 10 times the level). However, this method is only really recommended if the player uses the Kourend Library RuneLite plugin to automatically highlight all the books' locations once a few of them are found, otherwise finding them becomes too slow and difficult.
+
+One advantage of this method beyond level 55 is that the player may incorporate casting [[High Level Alchemy]] during downtime to markedly augment their XP rates. Playing efficiently with the RuneLite plugin enabled can result in upwards of 120 books collected per hour. With efficient alchemising, this hybrid method can result in around 200,000 XP per hour at level 75 Magic, and can be highly profitable as well. Because alchemising does not scale with the player's Magic level, this method's effectiveness falls off as the player's Magic level increases, but it remains a viable method for players who wish to profit from levelling Magic.
+
+'''Note:''' there is no minimum Magic level to start partaking in this minigame. The Level 20 range is just an arbitrary recommendation.

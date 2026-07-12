@@ -1,0 +1,26 @@
+==Starting off==
+Completing [[Jungle Potion]], [[Recruitment Drive]] and [[The Dig Site]] quests will get the player from level 3 to 19.
+
+Here are some quests that grant Herblore experience which have little or no additional requirements:
+{|class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!Herblore req.
+!Other requirements
+|-
+|[[Druidic Ritual]]||250|| - || -
+|-
+|[[Jungle Potion]]||775||{{SCP|Herblore|3}}|| -
+|-
+|[[Recruitment Drive]]||1,000|| - || {{SCP|Quest|12}}
+|-
+|[[The Dig Site]]||2,000||{{SCP|Herblore|10}}|| {{SCP|Agility|10}}, {{SCP|Thieving|25}}
+|-
+|[[Shades of Mort'ton]]||2,000||{{SCP|Herblore|15}}|| {{SCP|Crafting|20}}, {{SCP|Firemaking|5}}
+|-
+|[[Zogre Flesh Eaters]]||2,000||{{SCP|Herblore|8}}|| {{SCP|Smithing|4}}, {{SCP|Ranged|30}}
+|-
+!Total
+!8,025
+!colspan="2"|
+|}

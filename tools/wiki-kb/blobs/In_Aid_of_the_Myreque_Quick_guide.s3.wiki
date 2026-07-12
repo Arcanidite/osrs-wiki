@@ -1,0 +1,5 @@
+===Starting out===
+{{Checklist|
+*Climb down the [[trapdoor (Canifis)|trapdoor]] behind the [[Hair of the Dog|Canifis pub]].
+*Search the [[wall (The Hollows)|wall]] and enter the cave entrance just south-east.
+*Talk to [[Veliaf Hurtz]]. {{Chat option|1I want to join your organisation.}}}}

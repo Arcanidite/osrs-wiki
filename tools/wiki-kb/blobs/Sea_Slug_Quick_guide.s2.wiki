@@ -1,0 +1,34 @@
+==Walkthrough==
+===The platform===
+{{Checklist|*Speak with [[Caroline]] in [[Witchaven]]. {{Chat option|1I suppose so, how do I get there?}}
+*Talk to [[Holgart]] (right next to Caroline) and give him the [[Swamp paste]].
+*Right-click Holgart and select the Travel option to travel to the fishing platform.
+*Pick up the [[Broken glass]] on the floor (hut to the west).
+*Go to the north-east corner of the platform and pick up some [[Damp sticks]].
+*Climb the ladder right next to the sticks.}}
+
+===Upper platform===
+{{Checklist|*Go inside the cabin on the west side of the platform and talk to [[Kennith]].
+*Go back down the ladder to the sea level.}}
+
+===Remote island===
+{{Checklist|*Travel or speak with [[Holgart]] for a trip to a remote island.
+*Talk to [[Kent]].
+*Talk to Holgart again to go back to the [[Fishing Platform]].}}
+
+===Saving Kennith===
+{{Checklist|*Speak with [[Bailey]] in the south-west cabin for an [[Unlit torch]].
+*Use the [[Broken glass]] on the [[Damp sticks]] to dry them.
+*Rub the [[Dry sticks]] together to light the torch.
+*Go back up the ladder.
+*Go talk to [[Kennith]] again.
+*From outside of the cabin, kick the [[badly repaired wall]] to make an opening.
+*Talk to Kennith again.
+*Just outside of Kennith's cabin, activate the [[crane (Sea Slug)|crane]] controls to rotate it (a cutscene will play if you've followed the steps correctly - '''make sure you've talked to Kennith after you've kicked in the wall''').
+*Go back down the ladder to the sea level.
+**Tip: Before leaving, you can catch a fish with a small fishing net on the downstairs platform to complete a task for the Ardougne Medium Diary .}}
+
+===Finishing up===
+{{Checklist|*Speak with [[Holgart]] again to return to the shore.
+*Report to [[Caroline]].
+*'''Congratulations, quest complete!'''}}

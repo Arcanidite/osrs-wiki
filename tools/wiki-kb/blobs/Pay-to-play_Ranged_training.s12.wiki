@@ -1,0 +1,78 @@
+===Levels 70–99: Pest Control===
+Participating at the [[Pest Control]] [[minigame]] and spending [[Void Knight commendation points]] on Ranged experience is an alternative training method at higher levels. Having a combat level of at least 100 for the veteran boat is recommended. Completion of the [[Easy Combat Achievements|easy]], [[Combat Achievements/Medium|medium]] and [[hard Combat Achievements]] increases the number of points earned per game.
+
+Experience rates in the table below assume 26 games per hour in the veteran boat, gaining 40,000 experience per hour from fighting pests, and spending 100 points at a time for 10% more experience per point.
+{| class="wikitable align-center-1" style="text-align:right"
+|+
+! rowspan="2" |{{SCP|Ranged}} levels
+! rowspan="2" |XP/point<br>(with 10% bonus)
+! colspan="4" |XP/h (points/game)
+|-
+!None (5)
+!Easy (6)
+!Medium (7)
+!Hard (8)
+|-
+|70–73
+|281.6
+|76,600
+|83,900
+|91,300
+|98,600
+|-
+|74–77
+|316.8
+|81,200
+|89,400
+|97,700
+|105,900
+|-
+|78–81
+|352.0
+|85,800
+|94,900
+|104,000
+|113,200
+|-
+|82–84
+|387.2
+|90,300
+|100,400
+|110,500
+|120,500
+|-
+|85–88
+|422.4
+|94,900
+|105,900
+|116,900
+|127,900
+|-
+|89–91
+|457.6
+|99,500
+|111,400
+|123,300
+|135,200
+|-
+|92–94
+|492.8
+|104,100
+|116,900
+|129,700
+|142,500
+|-
+|95–97
+|528.0
+|108,600
+|122,400
+|136,100
+|149,800
+|-
+|98–99
+|563.2
+|113,200
+|127,900
+|142,500
+|157,100
+|}

@@ -1,0 +1,21 @@
+==Walkthrough==
+{{Checklist|*Talk to [[Marlo]] in the house of the [[Varrock]] [[Estate Agent]] in north-east Varrock. {{Chat option|2What kind of favour do you want me to do?|3Tell me more about the job.|3Tell me where he lives, and I'll do the job.}}
+** Pick up a [[saw]] here if you didn't bring one.
+*Talk to [[Old Man Yarlo]] in his house south-west of [[Aubury's Rune Shop]].
+*Remove all of the old furniture in the house, for a total of 7 hotspots: 6 pieces of furniture and a rug.
+**one broken chair
+**one rotten carpet
+**two broken stools
+**two broken tables
+**one campbed
+*Talk to Old Man Yarlo again. {{Chat option|2Skip Yarlo's lecture. He'll offer it later if you like.}}
+* Search the [[crates (Daddy's Home)|crates]] with the black symbol on them west of the range for 3 [[waxwood log]]s.
+*Go to the [[Varrock sawmill]] and talk to the [[Sawmill operator]]. {{Chat option|1I need some waxwood planks for Old Man Yarlo.}}
+** Make 3 [[waxwood plank]]s using the waxwood logs.
+** Make 10 [[plank]]s now if you don't already have them.
+** Purchase your [[steel nails]] and five [[bolts of cloth]] now if you need them.
+*Go to Old Man Yarlo's home and build the new furniture (all white translucent objects).
+**Talk to Old Man Yarlo for a [[hammer]] and a [[saw]] if you didn't bring them. {{Chat option|3I need some tools.|1Yes please.}}
+*Talk to Old Man Yarlo.
+*Talk to Marlo to claim your reward. {{Chat option|1Yeah, what have you got for me?}}
+*'''Congratulations, miniquest complete!'''}}

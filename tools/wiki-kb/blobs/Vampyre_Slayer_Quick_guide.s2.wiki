@@ -1,0 +1,16 @@
+==Walkthrough==
+===A vampyre threat===
+{{Checklist|*Talk to [[Morgan]] in Draynor Village. {{Chat option|1Yes}}
+*Go upstairs in Morgan's house and take [[garlic]] from the [[cupboard (Morgan's home)|cupboard]].}}
+
+===The ex-slayer===
+{{Checklist|*Talk to [[Dr Harlow]] in the [[Blue Moon Inn]] in [[Varrock]], south of Varrock Centre. {{Chat option|1I need your help dealing with a vampyre.}}
+**Buy a beer if you haven't already.
+*Talk to Dr Harlow again and receive a [[stake]].
+**Buy a hammer from the general store just north of the bar if you haven't already.}}
+
+===Count Draynor ===
+{{Checklist|*Bring your combat gear ([[food]] recommended), [[garlic]], [[hammer]], and [[stake]] to [[Draynor Manor]].
+*Go to the basement (east stairs, not through the west room).
+*Open the coffin and kill [[Count Draynor]]. (You do not need to use the hammer/stake on him. Just kill him with them in your inventory).
+*'''Congratulations, quest complete!'''}}

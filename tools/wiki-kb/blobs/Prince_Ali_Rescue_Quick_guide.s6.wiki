@@ -1,0 +1,11 @@
+===Breaking out===
+{{Needed|3 [[beer]]s, [[rope]], [[Bronze key (Prince Ali Rescue)|bronze key]], [[wig]], [[paste]], and a [[pink skirt]]}}
+{{Checklist|
+*Go to the jailhouse.
+*Talk to [[Joe (jail)|Joe]] and offer him the 3 drinks. {{Chat option|1I have some beer here, fancy one?}}
+*Use the rope on [[Lady Keli]].
+*Open the prison door with the key.
+*Talk to [[Prince Ali]]. He will take the wig, skin paste, and pink skirt.
+*Report back to [[Chancellor Hassan]].
+*'''Congratulations, quest complete!'''
+}}

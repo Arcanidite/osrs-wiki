@@ -1,0 +1,7 @@
+===Repairing the temple===
+{{Checklist|
+*Head north-east of Mort'ton and repair the temple until you reach 100% repair and at least 20 sanctity. (Recommended to use official world 377.)
+*Light the sacred altar in the centre of the temple (or wait until someone else lights it if you don't have level 5 Firemaking)
+*Use your olive oil on the flame to make [[sacred oil]].
+*(Recommended) Use Serum 207 on the flame to make [[Serum 208]], which permanently cures NPCs.
+}}

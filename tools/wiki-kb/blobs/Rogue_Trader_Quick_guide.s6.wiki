@@ -1,0 +1,9 @@
+==Clothes==
+'''Items required:''' 3 Dyes of any colour, 3 animal hides of the same type
+
+{{Checklist|* Speak to [[Siamun]] in Sophanem
+*Speak to Ali Morrisane
+*Talk to Siamun again (2)
+
+Revisiting Siamun with dyes or hides will swap between two different lines of clothing
+}}

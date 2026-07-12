@@ -86,6 +86,43 @@
   Also note 2004scape stores XP ×10 (`experience,80` = 8 xp).
 - **source/stamp:** 2004scape@647886c vs OSRS Wiki · 2026-07-07
 
+## [G-7] Quest Helper's "optimal order" is a curated list, not a computed optimum
+
+- **Trap:** assuming the recommended quest order is produced by an algorithm you
+  can re-derive or "improve" by tuning weights. `QuestOrders.sortOptimalOrder()`
+  just sorts quests by their index in a hardcoded `ImmutableList` in
+  `OptimalQuestGuide.java`; that list is transcribed verbatim from the OSRS Wiki
+  "Optimal quest guide". No cost model, no search — it's a human-maintained
+  recommendation that minimises back-tracking and keeps prereq chains intact.
+- **Why it bites:** presenting it as "the computed best route" is a fabricated
+  claim (violates the no-fabrication rule) AND is wrong under region-locks —
+  "best" is relative to what's reachable (see [G-1]). A region-locked Leagues
+  account frequently can't follow the list at all.
+- **Avoid:** carry the order as a *sourced recommendation* (label + link to the
+  wiki guide), and compute doability/next-quest against the player's actual
+  stats + unlocked regions. The `tools/quest-order/` endpoint does this: order
+  from the guide, gating from extracted requirements, region-lock aware.
+  There is a separate `IronmanOptimalQuestGuide.java` (ironman order) — also curated.
+- **source/stamp:** quest-helper@Zoinkwiz OptimalQuestGuide.java / QuestOrders.java · 2026-07-07
+
+## [G-8] Quest entry requirements ≠ everything the quest needs; extract only the start-gate
+
+- **Trap:** scraping every `SkillRequirement`/`ItemRequirement` in a quest helper
+  file to build "requirements". Those include step-level needs (an item to bring,
+  a skill to use mid-quest) — regexing the whole file overstates the entry bar.
+- **Why it bites:** a quest would look blocked when you can actually start it; the
+  "can I do this yet?" gate becomes wrong. Also: some quests encode entry gates as
+  varbit/sub-quest states (e.g. MMII needs an RFD sub-quest via VarbitRequirement,
+  DSI needs 32 quest points) that a naive skill/quest scan misses entirely.
+- **Avoid:** scope extraction to `getGeneralRequirements()` (the canonical start
+  gate), resolve one level of local field refs, and FLAG (`req_partial`) any quest
+  whose gate includes varbit/item/complex requirements we couldn't statically read
+  — never silently present a partial gate as complete. `build_quests.py` does this;
+  43/272 quests are flagged partial. Enum constants also aren't file-ordered — two
+  quests sit before `COOKS_ASSISTANT`, so anchor parsing on the enum declaration,
+  not a presumed first entry.
+- **source/stamp:** tools/build_quests.py extraction · 2026-07-07
+
 <!-- Append new gotchas below. Template:
 ## [G-N] <short title>
 - **Trap:** <the wrong assumption / mistake>

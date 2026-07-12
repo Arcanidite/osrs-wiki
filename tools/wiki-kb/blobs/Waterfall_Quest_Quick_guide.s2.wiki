@@ -1,0 +1,48 @@
+==Walkthrough==
+===The Treasure===
+'''''Items required:''' [[Rope]].''
+{{Checklist|
+*Speak to [[Almera]] north-east of [[Baxtorian Falls]]. {{Chat option|1How can I help?}} (use Games Teleport to Barbarian Outpost and head south to the top of the hill)
+*Board the raft west of the house.
+*Speak to [[Hudon]]. '''Make sure to go through all dialogue or the upcoming book will not spawn.''' 
+*Walk to the southern end of the island and swim in the water.
+*Enter the large building to the north, where [[Hadley]] is.
+*Go upstairs and search the southernmost [[bookcase (Waterfall Quest)|bookcase]] on the eastern wall for a [[Book on Baxtorian]].
+*Left-click ''Read'' [[Book on Baxtorian]] and close the book again, or the key will not appear for the next part.}}
+
+===The Pebble===
+{{Checklist|
+*Enter the [[Tree Gnome Village (location)|Tree Gnome Village]] maze.
+** If you haven't started [[Tree Gnome Village]] yet, be sure to enter the village and start the quest so you won't have to redo the maze later on.
+*Enter the dungeon at the end of the maze.
+*Go east and search the off-coloured crate near the entrance of the room for a [[Key (Gnome Village Dungeon)|key]].
+*Go west and open the gate ("door") with the key.
+*Speak to [[Golrie]], he will give you [[Glarial's pebble]].
+** Keep the pebble in your bank for [[Roving Elves]] to save you some time in the future.
+}}
+
+===Tomb Raiding===
+{{Checklist|
+*Bank all items EXCEPT Glarial's pebble, some food and a transport method ''(Runes won't be allowed since you won't be able to enter the tomb if you have anything deemed "not peaceful" in your possession; Jewellery is allowed including any jewellery that has any combat bonuses. You must have at least 2 open inventory spaces).''
+** For low levels, as [[Glarial's Tomb]] is single-way combat, it is recommended to initiate combat with a skeleton once inside to prevent being attacked by Moss giants which damage the player significantly more.
+** For Ultimate Ironmen there is a table (in the house you got [[Book on Baxtorian]] from) you can place your items on for temporary safe-keeping.
+** If you die while in the tomb, your gravestone will spawn on the surface.
+*Head to [[Glarial's Tombstone]], east of the Waterfall. Use the pebble on it to enter.
+*Go west, search the chest to find [[Glarial's amulet]]. ''(Pick-up an extra amulet or two by dropping it from your inventory and picking them up from the ground)''.
+*Return and go the other way to search the tomb to find [[Glarial's urn]].
+}}
+
+===Baxtorian Treasures===
+''Items required: rope, 6 air runes, 6 water runes, 6 earth runes, Glarial's amulet and Glarial's urn, food.'' {{Checklist|
+*Head to the bank and get 6 air runes, 6 water runes, 6 earth runes, rope, some food, Glarial's amulet, and Glarial's urn. ''(Warning, there are several high level monsters in the waterfall dungeon.)'' Weapons and armour are also allowed in the cave, so feel free to get these back too.
+*Make your way back to Baxtorian falls, board the raft, use your rope on the rock (across the water to the south), then use your rope on the dead tree. '''DO NOT GET IN THE BARREL'''.
+*Carry/equip Glarial's amulet and enter the doorway.
+*Go to the right path and search the northernmost crates for a key.
+*Go back and to the left side, avoid the fire giants, use the key on the door.
+** Killing a fire giant is a medium [[Kandarin Diary]] task.
+*Use all 3 runes on each pillar (1 air, 1 water and 1 earth rune on each pillar).
+**Use an additional rune on each pillar to check if that type has already been added, yielding the message: "You've already placed this type of rune on the pillar."
+*After this, put Glarial's amulet on her statue. The ground will now rise to the chalice. '''Do not''' click ''Take treasure'', as you will be washed out of the cave. 
+*Use the [[Glarial's urn]] in your inventory on the chalice. (Make sure you have 5 free inventory slots).
+*'''Congratulations, quest complete!'''
+}}

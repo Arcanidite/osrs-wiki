@@ -1,0 +1,10 @@
+===A World United===
+'''Recommended:''' ''Teleports to Falador, Ardougne, Rellekka, and 2 teleports to Varrock.''
+{{Checklist|
+*Travel to [[Varrock]] and speak with [[King Roald]] about the dragon threat. {{Chat option|1Talk about the dragon threat.}}
+*Speak with the following rulers "about the dragon threat" in any order:
+**[[Sir Amik Varze]] in [[Falador]] {{Chat option|1Talk about the dragon threat.}}
+**[[King Lathas]] ([[King Thoros]] after [[Song of the Elves]]) in [[East Ardougne]] {{Chat option|1Talk about the dragon threat.}}
+**[[Brundt the Chieftain]] in [[Rellekka]] {{Chat option|2Talk about the dragon threat.}} or {{Chat option|3Talk about the dragon threat.}} if you completed [[The Fremennik Exiles]], whichever refers to the threat.
+*Return to Varrock and enter the dining room north of the throne room. {{Chat option|1It's a good plan.}}
+*Make sure to talk to [[Bob (cat)|Bob]] after exiting the dining room.}}

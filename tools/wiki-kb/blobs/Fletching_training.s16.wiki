@@ -1,0 +1,207 @@
+===Level 5–99: Bows===
+Making bows is a slower, less intensive method of training fletching that is usually cheap or profitable. Fletching [[Unstrung bow|unstrung bows]] is more AFK-able but yields less experience per hour, stringing bows is faster but requires paying more attention. Since fletching unstrung bows takes 3-ticks per bow, fletching an inventory takes 48.6 seconds; stringing bows takes 2-ticks per bow which makes an inventory take 16.8 seconds to string. If using the [[Fletching knife]] to fletch unstrung bows, expect close to the same xp rates as stringing, as the knife fletches in 2-ticks instead of 3. This results in approximately 2,700 bows fletched per hour, compared to 1,800 without the knife.
+
+Using a [[Bow string spool]] when stringing bows allows 27 bows to be strung per inventory instead of 14, reducing banking. This gives a slight increase to experience per hour (about 3%) but does not significantly change the rates shown in the table.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-3 align-left-4" style="text-align:right;"
+! rowspan="2" |{{SCP|Fletching}} Level
+! rowspan="2" colspan="3" |Bow
+! rowspan="2" |XP
+! colspan="3" |XP/h
+! rowspan="2" |# for goal
+! colspan="3" |Material cost
+! colspan="2" |Total profit
+! colspan="2" |GP/XP
+|-
+!Fletching<ref>Assumes 1,800 actions per hour.</ref>
+!Fletching knife<ref>Assumes 2,700 actions per hour.</ref>
+!Stringing<ref>Assumes 2,450 actions per hour.</ref>
+!Logs
+!Unstrung bows/String
+!Logs/String
+!Fletching
+!Stringing
+!Fletching
+!Stringing
+|-
+|5–10
+|{{plinkp|Shortbow (u)}}||{{plinkt|Shortbow|txt=Short}}
+|5
+|9,000
+|13,500
+|12,250
+|154
+|{{Coins|{{GEP|Logs|154}}}}
+|{{Coins|{{GEP|Shortbow (u)|154}}+{{GEP|Bow string|153}}}}
+|{{Coins|{{GEP|Logs|154}}+{{GEP|Bow string|154}}}}
+|{{Coins|{{GEP|Shortbow (u)|154}}-{{GEP|Logs|153}}}}
+|{{Coins|{{GEP|Shortbow|154}}-({{GEP|Shortbow (u)|154}}+{{GEP|Bow string|154}})}}
+|{{Coins|({{GEP|Shortbow (u)}}-{{GEP|Logs}})/5}}
+|{{Coins|({{GEP|Shortbow}}-({{GEP|Shortbow (u)}}+{{GEP|Bow string}}))/5}}
+|-
+|10–20
+|{{plinkp|Longbow (u)}}||{{plinkt|Longbow|txt=Long}}
+|10
+|18,000
+|27,000
+|24,500
+|332
+|{{Coins|{{GEP|Logs|332}}}}
+|{{Coins|{{GEP|Longbow (u)|332}}+{{GEP|Bow string|332}}}}
+|{{Coins|{{GEP|Logs|332}}+{{GEP|Bow string|332}}}}
+|{{Coins|{{GEP|Longbow (u)|332}}-{{GEP|Logs|332}}}}
+|{{Coins|{{GEP|Longbow|332}}-({{GEP|Longbow (u)|332}}+{{GEP|Bow string|332}})}}
+|{{Coins|({{GEP|Longbow (u)}}-{{GEP|Logs}})/10}}
+|{{Coins|({{GEP|Longbow}}-({{GEP|Longbow (u)}}+{{GEP|Bow string}}))/10}}
+|-
+|20–25
+|{{plinkp|Oak shortbow (u)}}||{{plinkt|Oak shortbow|txt=Oak short}}
+|16.5
+|29,700
+|44,550
+|40,425
+|205
+|{{Coins|{{GEP|Oak logs|205}}}}
+|{{Coins|{{GEP|Oak shortbow (u)|205}}+{{GEP|Bow string|205}}}}
+|{{Coins|{{GEP|Oak logs|205}}+{{GEP|Bow string|205}}}}
+|{{Coins|{{GEP|Oak shortbow (u)|205}}-{{GEP|Oak logs|205}}}}
+|{{Coins|{{GEP|Oak shortbow|205}}-({{GEP|Oak shortbow (u)|205}}+{{GEP|Bow string|205}})}}
+|{{Coins|({{GEP|Oak shortbow (u)}}-{{GEP|Oak logs}})/16.5}}
+|{{Coins|({{GEP|Oak shortbow}}-({{GEP|Oak shortbow (u)}}+{{GEP|Bow string}}))/16.5}}
+|-
+|25–35
+|{{plinkp|Oak longbow (u)}}||{{plinkt|Oak longbow|txt=Oak long}}
+|25
+|45,000
+|67,500
+|61,250
+|583
+|{{Coins|{{GEP|Oak logs|583}}}}
+|{{Coins|{{GEP|Oak longbow (u)|583}}+{{GEP|Bow string|583}}}}
+|{{Coins|{{GEP|Oak logs|583}}+{{GEP|Bow string|583}}}}
+|{{Coins|{{GEP|Oak longbow (u)|583}}-{{GEP|Oak logs|583}}}}
+|{{Coins|{{GEP|Oak longbow|583}}-({{GEP|Oak longbow (u)|583}}+{{GEP|Bow string|583}})}}
+|{{Coins|({{GEP|Oak longbow (u)}}-{{GEP|Oak logs}})/25}}
+|{{Coins|({{GEP|Oak longbow}}-({{GEP|Oak longbow (u)}}+{{GEP|Bow string}}))/25}}
+|-
+|35–40
+|{{plinkp|Willow shortbow (u)}}||{{plinkt|Willow shortbow|txt=Willow short}}
+|33.3
+|59,940
+|89,910
+|81,585
+|445
+|{{Coins|{{GEP|Willow logs|445}}}}
+|{{Coins|{{GEP|Willow shortbow (u)|445}}+{{GEP|Bow string|445}}}}
+|{{Coins|{{GEP|Willow logs|445}}+{{GEP|Bow string|445}}}}
+|{{Coins|{{GEP|Willow shortbow (u)|445}}-{{GEP|Willow logs|445}}}}
+|{{Coins|{{GEP|Willow shortbow|445}}-({{GEP|Willow shortbow (u)|445}}+{{GEP|Bow string|445}})}}
+|{{Coins|({{GEP|Willow shortbow (u)}}-{{GEP|Willow logs}})/33.3}}
+|{{Coins|({{GEP|Willow shortbow}}-({{GEP|Willow shortbow (u)}}+{{GEP|Bow string}}))/33.3}}
+|-
+|40–50
+|{{plinkp|Willow longbow (u)}}||{{plinkt|Willow longbow|txt=Willow long}}
+|41.5
+|74,700
+|112,050
+|101,675
+|1,545
+|{{Coins|{{GEP|Willow logs|1545}}}}
+|{{Coins|{{GEP|Willow longbow (u)|1545}}+{{GEP|Bow string|1545}}}}
+|{{Coins|{{GEP|Willow logs|1545}}+{{GEP|Bow string|1545}}}}
+|{{Coins|{{GEP|Willow longbow (u)|1545}}-{{GEP|Willow logs|1545}}}}
+|{{Coins|{{GEP|Willow longbow|1545}}-({{GEP|Willow longbow (u)|1545}}+{{GEP|Bow string|1545}})}}
+|{{Coins|({{GEP|Willow longbow (u)}}-{{GEP|Willow logs}})/41.5}}
+|{{Coins|({{GEP|Willow longbow}}-({{GEP|Willow longbow (u)}}+{{GEP|Bow string}}))/41.5}}
+|-
+|50–55
+|{{plinkp|Maple shortbow (u)}}||{{plinkt|Maple shortbow|txt=Maple short}}
+|50
+|90,000
+|135,000
+|122,500
+|1,307
+|{{Coins|{{GEP|Maple logs|1307}}}}
+|{{Coins|{{GEP|Maple shortbow (u)|1307}}+{{GEP|Bow string|1307}}}}
+|{{Coins|{{GEP|Maple logs|1307}}+{{GEP|Bow string|1307}}}}
+|{{Coins|{{GEP|Maple shortbow (u)|1307}}-{{GEP|Maple logs|1307}}}}
+|{{Coins|{{GEP|Maple shortbow|1307}}-({{GEP|Maple shortbow (u)|1307}}+{{GEP|Bow string|1307}})}}
+|{{Coins|({{GEP|Maple shortbow (u)}}-{{GEP|Maple logs}})/50}}
+|{{Coins|({{GEP|Maple shortbow}}-({{GEP|Maple shortbow (u)}}+{{GEP|Bow string}}))/50}}
+|-
+|55–65
+|{{plinkp|Maple longbow (u)}}||{{plinkt|Maple longbow|txt=Maple long}}
+|58.3
+|104,940
+|157,410
+|142,835
+|4,851
+|{{Coins|{{GEP|Maple logs|4851}}}}
+|{{Coins|{{GEP|Maple longbow (u)|4851}}+{{GEP|Bow string|4851}}}}
+|{{Coins|{{GEP|Maple logs|4851}}+{{GEP|Bow string|4851}}}}
+|{{Coins|{{GEP|Maple longbow (u)|4851}}-{{GEP|Maple logs|4851}}}}
+|{{Coins|{{GEP|Maple longbow|4851}}-({{GEP|Maple longbow (u)|4851}}+{{GEP|Bow string|4851}})}}
+|{{Coins|({{GEP|Maple longbow (u)}}-{{GEP|Maple logs}})/58.3}}
+|{{Coins|({{GEP|Maple longbow}}-({{GEP|Maple longbow (u)}}+{{GEP|Bow string}}))/58.3}}
+|-
+|65–70
+|{{plinkp|Yew shortbow (u)}}||{{plinkt|Yew shortbow|txt=Yew short}}
+|67.5
+|121,500
+|182,250
+|165,375
+|4,270
+|{{Coins|{{GEP|Yew logs|4270}}}}
+|{{Coins|{{GEP|Yew shortbow (u)|4270}}+{{GEP|Bow string|4270}}}}
+|{{Coins|{{GEP|Yew logs|4270}}+{{GEP|Bow string|4270}}}}
+|{{Coins|{{GEP|Yew shortbow (u)|4270}}-{{GEP|Yew logs|4270}}}}
+|{{Coins|{{GEP|Yew shortbow|4270}}-({{GEP|Yew shortbow (u)|4270}}+{{GEP|Bow string|4270}})}}
+|{{Coins|({{GEP|Yew shortbow (u)}}-{{GEP|Yew logs}})/67.5}}
+|{{Coins|({{GEP|Yew shortbow}}-({{GEP|Yew shortbow (u)}}+{{GEP|Bow string}}))/67.5}}
+|-
+|70–80
+|{{plinkp|Yew longbow (u)}}||{{plinkt|Yew longbow|txt=Yew long}}
+|75
+|135,000
+|202,500
+|183,750
+|16,646
+|{{Coins|{{GEP|Yew logs|16646}}}}
+|{{Coins|{{GEP|Yew longbow (u)|16646}}+{{GEP|Bow string|16646}}}}
+|{{Coins|{{GEP|Yew logs|16646}}+{{GEP|Bow string|16646}}}}
+|{{Coins|{{GEP|Yew longbow (u)|16646}}-{{GEP|Yew logs|16646}}}}
+|{{Coins|{{GEP|Yew longbow|16646}}-({{GEP|Yew longbow (u)|16646}}+{{GEP|Bow string|16646}})}}
+|{{Coins|({{GEP|Yew longbow (u)}}-{{GEP|Yew logs}})/75}}
+|{{Coins|({{GEP|Yew longbow}}-({{GEP|Yew longbow (u)}}+{{GEP|Bow string}}))/75}}
+|-
+|80–85
+|{{plinkp|Magic shortbow (u)}}||{{plinkt|Magic shortbow|txt=Magic short}}
+|83.3
+|149,940
+|224,910
+|203,350
+|15,277
+|{{Coins|{{GEP|Magic logs|15277}}}}
+|{{Coins|{{GEP|Magic shortbow (u)|15277}}+{{GEP|Bow string|15277}}}}
+|{{Coins|{{GEP|Magic logs|15277}}+{{GEP|Bow string|15277}}}}
+|{{Coins|{{GEP|Magic shortbow (u)|15277}}-{{GEP|Magic logs|15277}}}}
+|{{Coins|{{GEP|Magic shortbow|15277}}-({{GEP|Magic shortbow (u)|15277}}+{{GEP|Bow string|15277}})}}
+|{{Coins|({{GEP|Magic shortbow (u)}}-{{GEP|Magic logs}})/83.3}}
+|{{Coins|({{GEP|Magic shortbow}}-({{GEP|Magic shortbow (u)}}+{{GEP|Bow string}}))/83.3}}
+|-
+|85–99
+|{{plinkp|Magic longbow (u)}}||{{plinkt|Magic longbow|txt=Magic long}}
+|91.5
+|164,700
+|247,050
+|224,175
+|106,840
+|{{Coins|{{GEP|Magic logs|106840}}}}
+|{{Coins|{{GEP|Magic longbow (u)|106840}}+{{GEP|Bow string|106840}}}}
+|{{Coins|{{GEP|Magic logs|106840}}+{{GEP|Bow string|106840}}}}
+|{{Coins|{{GEP|Magic longbow (u)|106840}}-{{GEP|Magic logs|106840}}}}
+|{{Coins|{{GEP|Magic longbow|106840}}-({{GEP|Magic longbow (u)|106840}}+{{GEP|Bow string|106840}})}}
+|{{Coins|({{GEP|Magic longbow (u)}}-{{GEP|Magic logs}})/91.5}}
+|{{Coins|({{GEP|Magic longbow}}-({{GEP|Magic longbow (u)}}+{{GEP|Bow string}}))/91.5}}
+|}
+<references/>

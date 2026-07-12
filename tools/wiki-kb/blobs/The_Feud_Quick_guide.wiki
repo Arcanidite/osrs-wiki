@@ -1,0 +1,91 @@
+{{external|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|The Feud}}
+
+==Walkthrough==
+===Getting Started===
+{{Checklist|
+*Talk to [[Ali Morrisane]] next to the Silk Stall in [[Al Kharid]]. {{Chat option|1If you are, then why are you still selling goods from a stall?|2I'd like to help you but.....|1Yes.|2Okay.}}
+*Buy a [[kharidian headpiece]] and a [[fake beard]] and combine them.
+}}
+
+===Pollnivneach===
+{{Checklist|
+*Head to [[Pollnivneach]].
+*'''Use''' the 3 beers on [[Drunken Ali]] at the bar. (Make sure to use one beer on him, then talk to him in full, then use the second beer, talk in full, then finally the third beer, and talk in full.)  
+**'''Note:''' Don't skip dialogue after giving a beer.''' You can buy them from [[Ali the Barman]].
+*Talk to the [[Bandit (Pollnivneach)|bandits]] in Pollnivneach by the general store.
+*Go west of the bar and question the [[Menaphite Thug]]s.
+}}
+
+===Camels===
+{{Checklist|
+*Head to the camel store just north-west of the bar.
+*Talk to [[Ali the Camel Man]] to buy the camels for 500 coins. You will need two free spaces in your inventory. {{Chat option|4Are those camels around the side for sale?|2What price do you want for both of them?|3Would 500 gold coins for the pair of them do?}}
+*Talk to a Menaphite and a bandit to give them each a [[Receipt (The Feud)|receipt]].
+}}
+
+===The Menaphites===
+====Pickpocketing====
+{{Checklist|
+*Go to [[Ali the Operator]] and ask to join his gang (big purple tent, south-west){{Chat option|1Yes, of course, those bandits should be taught a lesson.|2No thanks.}}
+*Attempt to pickpocket a [[villager]] once then return to Ali the Operator. {{Chat option|1Yeah, I could do with a bit of advice.|2No thanks.}}
+*Talk to the [[street urchin]] near the centre town well.
+**Pay him ten coins
+*Pickpocket the villager with an arrow over their head. 
+*Talk to Ali the Operator {{Chat option|1Yeah, I could do with a bit of advice.}}
+*Equip the [[oak blackjack]] and then lure a villager into a secluded area.
+**Knock out the villager with the [[blackjack]] equipped
+**Pickpocket the villager
+}}
+
+====Jewels====
+{{Checklist|
+*Talk to Ali the Operator.
+*Put on the [[desert disguise]] and gloves.
+*Hide behind the large cactus near the mayor's house (the large house to the East by the fountain).
+*Use the [[keys]] on the door.
+*Go up the stairs in the north-eastern corner.
+*Search the landscape picture near the bed.
+*Hit the button on the dial to reset it.
+**Click on 1, 1, 2, 3, 5, 8, in that order, clockwise.
+*Give the [[jewels]] to Ali the Operator.
+}}
+
+====Traitor====
+{{Checklist|*Talk to Ali the Operator.
+*Talk to a Menaphite Thug.
+*Talk to Ali the Operator. {{Chat option|2No thanks.}}
+*Talk to Ali the barman. {{Chat option|3I'm looking for Traitorous Ali.|1No thanks I'm ok.}}
+*Buy special sauce from the kebab seller. He can be found north-west of the well in the middle of the town. {{Chat option|3Would you sell me that bottle of special kebab sauce?|2No thanks, I'm good.}}
+*Use it on a trough behind the camel shop.
+*Use a bucket on the dung if it is brown. Obtain three more buckets of dung if you plan to complete [[My Arm's Big Adventure]].
+*Use a coin on the snake charmer's money pot, sitting south of the bar {{Chat option|1Wow, a snake charmer. Can I have a go? Can I have a go? Please?}} with 2 free inventory spaces to get a [[snake charm]] and a [[snake basket]].
+*Use the snake charm on a [[desert snake]] north of the Menaphite tent until it goes into the [[snake basket]].
+*Go to [[Ali the Hag]] north-west of the kebab seller. Talk to her twice to give her the [[snake basket]] and [[Ugthanki dung]] to receive the [[hag's poison]] in exchange.
+*Use the hag's poison on the table with a beer in the bar.
+*Talk to Ali the Operator.
+}}
+
+===Dealing with the thugs===
+{{Checklist|
+*Prepare for battle and talk to the [[Menaphite Leader]] (just outside the tent).
+*Kill the [[Tough Guy]] ''(level 75)'' ([[safespot]] behind bush). He drops a [[willow blackjack]].
+*Talk to a villager. {{Chat option|2Ok I'll get to it.}}
+*Talk to the [[Bandit Leader]] wandering around the northern [[magic carpet]] station.
+*Kill the [[bandit champion]] ''(level 70)'' (safespot behind chair in house to the east). He drops an [[adamant scimitar]] (if you have a [[willow blackjack]] in your inventory).
+*Talk to a villager.
+*Talk to [[Ali the Mayor]] by the well in village centre.
+*Return to [[Ali Morrisane]] (with whom you started the quest). {{Chat option|1No, I'm really too busy.}}
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|The Feud}}
+
+==Required for completing==
+*[[My Arm's Big Adventure]]
+
+{{The Feud}}

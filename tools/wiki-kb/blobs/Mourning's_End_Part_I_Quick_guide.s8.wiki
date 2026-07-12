@@ -1,0 +1,20 @@
+===Poisoning the food supply===
+'''''Items needed:'''  [[barrel of naphtha]], [[mourner gear]], [[teleport crystal]], [[rotten apple]] (optional: necklace of passage, Ardougne teleport, & a teleport out)''
+{{Checklist|
+*Talk to the head mourner, [[Essyllt]].
+*Take the rotten apple, located north-west of the [[Mourner Headquarters]] by squeezing through the gap in the western fence.
+*Talk to [[Elena]] west of Ardougne log balance shortcut, you'll be given a [[sieve]].
+*Go to the [[apple orchard]] to the north-west, west of the [[Combat Training Camp]]. North-east of The Outpost using a [[necklace of passage]].
+*Pick up an empty barrel inside the orchard and use it on one of the Rotten Apple Piles.
+*Use your barrel of rotten apples on the apple press (slightly west of the rotten apple piles) to mash them.
+*Use your barrel of naphtha on your mushed apple barrel (in your inventory); then, use your sieve on it.
+**''See the [[Mourning's End Part I|full guide]] if you do not have a barrel of naphtha.''
+*Use the toxic naphtha on a '''range, not a fire'''. Make sure you have two open inventory spaces to receive both toxic powders.
+**There is a range in the mourner HQ that you can use to save time.
+*Add the toxic powder to grain sacks to poison any 2 of the food stores in [[West Ardougne]]. The closest 2 are:
+**The western room of the main building north of the town square.
+**The church south of the town square.
+*Talk to [[Essyllt]].
+*Talk to [[Arianwyn]] in [[Lletya]].
+*'''Congratulations, quest complete!'''
+}}

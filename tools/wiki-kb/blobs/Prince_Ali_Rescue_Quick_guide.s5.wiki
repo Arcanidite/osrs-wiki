@@ -1,0 +1,9 @@
+===Obtaining a key===
+{{Needed|[[soft clay]], and a [[bronze bar]]}}
+{{Checklist|
+*Go to the jailhouse east of Draynor Village (big red exclamation mark east of [[Draynor bank]]).
+*Talk to [[Lady Keli]]. {{Chat option|1Heard of you? You're famous in Gielinor!|1What is your latest plan then?|2How do you know someone won't try to free him?|1Could I see the key please?|1Could I touch the key for a moment please?}}
+*Take the [[key print]] and [[bronze bar]] to any [[furnace]] to smelt the [[Bronze key (Prince Ali Rescue|bronze key]]. 
+**The closest is in [[Lumbridge]]. [[Members]] may use a [[Amulet of glory]] to teleport to the [[Edgeville furnace]], and then to teleport to [[Draynor Village]] for the next section.
+*Talk to [[Leela]] south of the wheat fields in [[Draynor Village]] and talk to her. She will ask you to find the guard's weakness.
+}}

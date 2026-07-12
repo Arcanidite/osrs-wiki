@@ -1,0 +1,73 @@
+==Walkthrough==
+===Starting out===
+{{Checklist|
+*Talk to the [[Zealot]] outside the [[Abandoned Mine|mine]]. {{Chat option|1I follow the path of Saradomin.|1I come seeking challenges and quests.|1What quest is that then?|3Why was everyone in the mines slaughtered?|1Is there any other way into the mine?|1Where is the second entrance to the mines?|1Can I borrow your key?}}
+*Pickpocket him for the [[zealot's key]].
+*Climb over the cart to the south and crawl-down the cart tunnel.
+}}
+===Cave level 1===
+{{Checklist|
+*Run directly west through the cave and crawl-through the cart tunnel.
+*Re-enter the cave via the southern entrance.
+*Descend the nearby ladder.}}
+===Cave level 2===
+{{Checklist|
+*Go down the ladder directly east.
+}}
+===Cave level 3===
+{{Checklist|*Avoid touching mine carts.
+*Go south along the moving cart's tracks using the alcove for cover, then slightly west.
+*Climb down the ladder.
+}}
+===Cave level 4===
+[[File:Haunted Mine - Track map.png|thumb|220px|The mine cart route solution.]]
+[[File:Haunted Mine - Levers A-E.png|thumb|220px|Levers A-E. Camera facing west.]]
+[[File:Haunted Mine - Levers I-K.png|thumb|220px|Levers F-K. Camera facing east.]]
+{{Checklist|
+*Pick a glowing fungus. Don't take any random events that teleport you out of the mine from now on or your fungus will turn to ash.
+*Go NW and place the fungus in the searchable cart.
+*Go NW to check the [[points settings]]. (Board on a wall)
+}}
+{{Checklist|
+*Write down which levers need to change to match the correct setting to get to the ladder in the top-right corner.
+**The initial configuration will be different for each player. See pictures for the correct configuration and labels on each lever.
+*Go south-east and pull the needed levers (between A-E).
+*Go north-west and pull the needed levers (between F-K).
+*Return to the point settings and click start.
+}}
+If you mess up and '''the cart does not reach the ladder''', you will need to grab another fungus, put it in the mine cart, and send it down the track before continuing.
+
+===Finding the cart again===
+{{Checklist|
+*Leave the cave by going back the way you came
+**Go up the ladder by the glowing fungus spawn.
+**Go north past the haunted cart, then the first wing east, climb up the ladder.
+**Go west, climb up the ladder.
+**Go west and exit the cave.
+*Crawl-down the Cart tunnel to the north
+*Climb down the nearby ladder.
+*Go NE and climb down the ladder by the door.
+*Go west then north and climb down the ladder.
+*Search the cart for the fungus and take it. Do not drop until you have completed the quest!
+}}
+===Water valve===
+{{Checklist|
+*Climb up the ladder and start saving your run energy after you turn the water valve in the next step.
+*Go all the way east then south past the moving cart.
+*Climb down the ladder.
+*Head south and use the Zealot's key on the water valve.
+**'''Note:''' If you forgot a chisel be sure to grab the one near the lift before you open the valve; you won't have enough time to pick it up while running there.
+*Quickly run to the lift and take it down.
+*Go south then East and down the stairs.
+*Go through the door.
+*Pick up the innocent-looking key to start the boss fight.
+*Kill [[Treus Dayth]]. It is recommended to pray [[Protect from Missiles]] throughout the fight. A good way to fight this boss is to run near him after attacking; the goal is to force him into the north-eastern corner. Once this occurs, run west to the end of the detached northern shaft and attack him from a distance. This prevents him from teleporting around the mine while also negating crane damage, which should make the fight easier.
+**'''Note:''' If you teleport away, you will have to get another [[Glowing fungus]]. 
+**'''Note:''' If you die, you cannot get the [[Glowing fungus]] back from your grave in the flooded area. This is not a safe fight.
+**'''Note:''' If you are following the [[Optimal quest guide|Optimal Quest Guide]], using [[Crumble Undead]] is the most effective way to kill this boss.
+*Pick up the key 
+*Go back up the eastern stairs.
+*Go west and down those stairs. You will need the [[Glowing fungus]] to act as a light source.
+*Open the door and cut the crystal outcrop to the south-east with your chisel.
+*'''Congratulations, quest complete!'''
+}}

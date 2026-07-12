@@ -1,0 +1,216 @@
+===Levels 4–55/99: Enchanting bolts===
+Enchanting [[bolt tips|gem-tipped]] [[bolts]] using the [[Enchant Crossbow Bolt]] spell is one of the fastest ways to train magic and can be done while running or doing other activities. Each cast enchants a set of 10 bolts, and is automatically done every 3 ticks for 10 sets. With accurate timing, players can speed up the process by holding down the space bar and rapidly clicking on the spell. This way the spell can be cast every tick, which increases experience rates by an even larger amount. 
+
+Since bolts and runes are stackable, bolts are easily enchanted while doing other activities, such as questing, training Agility, or while running. Additionally, casting the spell does not interrupt other actions. 
+
+However, this method can be '''very expensive''', so it is only recommended for players who wish to progress through  early levels as fast as possible and are willing to invest large amounts of gp. Players who plan to train Magic passively while doing other activities are advised to switch to casting Low Level Alchemy at level 21, as this is much cheaper. At level 55, it is recommended to switch to casting [[High Level Alchemy]], which provides higher xp/cast and is more profitable. 
+
+Experience rates and costs are shown in the table below. Note that the prices may be inaccurate due to low trade volumes. Some options may also not be viable due to low supply.
+
+'''<big>Regular bolts:</big>'''
+
+{| class="wikitable sortable align-center-2"
+!{{SCP|Magic}} level
+! class="unsortable" colspan=2|Enchantment
+! class="unsortable" |Runes
+!XP/cast
+! data-sort-type="number"| Material cost each<ref>Assumes an elemental staff is used in place of basic runes.</ref>
+! data-sort-type="number"| Profit each
+!XP/h<ref>Assumes manual casting with occasional errors (5500 casts/h). If manually casting one can cast every game tick (6000 casts/h). Or if casting automatically one can cast at about 1/3 of this rate (~2000 casts/h).</ref>
+! data-sort-type="number"| GP/XP
+|-
+|4
+|{{plinkp|Opal bolts}}
+|[[Enchant Crossbow Bolt (Opal)|Opal]]
+|{{RuneReq|Cosmic = 1|Air = 2}}
+|9
+|{{Coins|{{GEP|Cosmic rune|1}}+{{GEP|Opal bolts|10}}}}
+|{{Coins|{{GEP|Opal bolts (e)|10}}-({{GEP|Cosmic rune|1}}+{{GEP|Opal bolts|10}})}}
+|49,500
+|{{Coins|({{GEP|Opal bolts (e)|10}}-({{GEP|Cosmic rune|1}}+{{GEP|Opal bolts|10}}))/9}}
+|-
+|7
+|{{plinkp|Sapphire bolts}}
+|[[Enchant Crossbow Bolt (Sapphire)|Sapphire]]
+|{{RuneReq|Cosmic = 1|Water = 1|Mind = 1}}
+|17
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Mind rune|1}}+{{GEP|Sapphire bolts|10}})}}
+|{{Coins|(({{GEP|Sapphire bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Mind rune|1}}+{{GEP|Sapphire bolts|10}}))}}
+|93,500
+|{{Coins|(({{GEP|Sapphire bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Mind rune|1}}+{{GEP|Sapphire bolts|10}}))/17}}
+|-
+|24
+|{{plinkp|Pearl bolts}}
+|[[Enchant Crossbow Bolt (Pearl)|Pearl]]
+|{{RuneReq|Cosmic = 1|Water = 2}}
+|29
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Pearl bolts|10}})}}
+|{{Coins|(({{GEP|Pearl bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Pearl bolts|10}}))}}
+|159,500
+|{{Coins|(({{GEP|Pearl bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Pearl bolts|10}}))/29}}
+|-
+|27
+|{{plinkp|Emerald bolts}}
+|[[Enchant Crossbow Bolt (Emerald)|Emerald]]
+|{{RuneReq|Cosmic = 1|Air = 3|Nature = 1}}
+|37
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Nature rune|1}}+{{GEP|Emerald bolts|10}})}}
+|{{Coins|(({{GEP|Emerald bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Nature rune|1}}+{{GEP|Emerald bolts|10}}))}}
+|203,500
+|{{Coins|(({{GEP|Emerald bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Nature rune|1}}+{{GEP|Emerald bolts|10}}))/37}}
+|-
+|29
+|{{plinkp|Topaz bolts}}
+|[[Enchant Crossbow Bolt (Red Topaz)|Topaz]]
+|{{RuneReq|Cosmic = 1|Fire = 2}}
+|33
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Topaz bolts|10}})}}
+|{{Coins|(({{GEP|Topaz bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Topaz bolts|10}}))}}
+|181,500
+|{{Coins|(({{GEP|Topaz bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Topaz bolts|10}}))/33}}
+|-
+|49
+|{{plinkp|Ruby bolts}}
+|[[Enchant Crossbow Bolt (Ruby)|Ruby]]
+|{{RuneReq|Cosmic = 1|Fire = 5|Blood = 1}}
+|59
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Blood rune|1}}+{{GEP|Ruby bolts|10}})}}
+|{{Coins|(({{GEP|Ruby bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Blood rune|1}}+{{GEP|Ruby bolts|10}}))}}
+|324,500
+|{{Coins|(({{GEP|Ruby bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Blood rune|1}}+{{GEP|Ruby bolts|10}}))/59}}
+|-
+|57
+|{{plinkp|Diamond bolts}}
+|[[Enchant Crossbow Bolt (Diamond)|Diamond]]
+|{{RuneReq|Cosmic=1|Earth=10|Law=2}}
+|67
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Law rune|2}}+{{GEP|Diamond bolts|10}})}}
+|{{Coins|(({{GEP|Diamond bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Law rune|2}}+{{GEP|Diamond bolts|10}}))}}
+|368,500
+|{{Coins|(({{GEP|Diamond bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Law rune|2}}+{{GEP|Diamond bolts|10}}))/67}}
+|-
+|68
+|{{plinkp|Dragonstone bolts}}
+|[[Enchant Crossbow Bolt (Dragonstone)|Dragonstone]]
+|{{RuneReq|Cosmic=1|Earth=15|Soul=1}}
+|78
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Soul rune|1}}+{{GEP|Dragonstone bolts|10}})}}
+|{{Coins|(({{GEP|Dragonstone bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Soul rune|1}}+{{GEP|Dragonstone bolts|10}}))}}
+|429,000
+|{{Coins|(({{GEP|Dragonstone bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Soul rune|1}}+{{GEP|Dragonstone bolts|10}}))/78}}
+|-
+|87
+|{{plinkp|Onyx bolts}}
+|[[Enchant Crossbow Bolt (Onyx)|Onyx]]
+|{{RuneReq|Cosmic=1|Fire=20|Death=1}}
+|97
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Death rune|1}}+{{GEP|Onyx bolts|10}})}}
+|{{Coins|(({{GEP|Onyx bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Death rune|1}}+{{GEP|Onyx bolts|10}}))}}<ref>Onyx Bolts (e) are profitable if High Alch'd, at {{Coins|90000-({{GEP|Cosmic rune|1}}+{{GEP|Death rune|1}}+{{GEP|Onyx bolts|10}} + {{GEP|Nature rune|10}})}} profit per 10 bolts enchanted/alch'd.</ref>
+|533,500
+|{{Coins|(({{GEP|Onyx bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Death rune|1}}+{{GEP|Onyx bolts|10}}))/97}}
+|}
+<references />
+
+'''<big>Dragon bolts:</big>'''
+
+{| class="wikitable sortable align-center-2"
+!{{SCP|Magic}} level
+! class="unsortable" colspan=2|Enchantment
+! class="unsortable" |Runes
+!XP/cast
+! data-sort-type="number"| Material cost each<ref>Assumes an elemental staff is used in place of basic runes.</ref>
+! data-sort-type="number"| Profit each
+!XP/h<ref>Assumes manual casting with occasional errors (5500 casts/h). If manually casting one can cast every game tick (6000 casts/h). Or if casting automatically one can cast at about 1/3 of this rate (~2000 casts/h).</ref>
+! data-sort-type="number"| GP/XP
+|-
+|4
+|{{plinkp|Opal dragon bolts}}
+|[[Enchant Crossbow Bolt (Opal)|Opal dragon]]
+|{{RuneReq|Cosmic = 1|Air = 2}}
+|9
+|{{Coins|{{GEP|Cosmic rune|1}}+{{GEP|Opal dragon bolts|10}}}}
+|{{Coins|{{GEP|Opal dragon bolts (e)|10}}-({{GEP|Cosmic rune|1}}+{{GEP|Opal dragon bolts|10}})}}
+|49,500
+|{{Coins|({{GEP|Opal dragon bolts (e)|10}}-({{GEP|Cosmic rune|1}}+{{GEP|Opal dragon bolts|10}}))/9}}
+|-
+|7
+|{{plinkp|Sapphire dragon bolts}}
+|[[Enchant Crossbow Bolt (Sapphire)|Sapphire dragon]]
+|{{RuneReq|Cosmic = 1|Water = 1|Mind = 1}}
+|17
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Mind rune|1}}+{{GEP|Sapphire dragon bolts|10}})}}
+|{{Coins|(({{GEP|Sapphire dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Mind rune|1}}+{{GEP|Sapphire dragon bolts|10}}))}}
+|93,500
+|{{Coins|(({{GEP|Sapphire dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Mind rune|1}}+{{GEP|Sapphire dragon bolts|10}}))/17}}
+|-
+|24
+|{{plinkp|Pearl dragon bolts}}
+|[[Enchant Crossbow Bolt (Pearl)|Pearl dragon]]
+|{{RuneReq|Cosmic = 1|Water = 2}}
+|29
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Pearl dragon bolts|10}})}}
+|{{Coins|(({{GEP|Pearl dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Pearl dragon bolts|10}}))}}
+|159,500
+|{{Coins|(({{GEP|Pearl dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Pearl dragon bolts|10}}))/29}}
+|-
+|27
+|{{plinkp|Emerald dragon bolts}}
+|[[Enchant Crossbow Bolt (Emerald)|Emerald dragon]]
+|{{RuneReq|Cosmic = 1|Air = 3|Nature = 1}}
+|37
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Nature rune|1}}+{{GEP|Emerald dragon bolts|10}})}}
+|{{Coins|(({{GEP|Emerald dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Nature rune|1}}+{{GEP|Emerald dragon bolts|10}}))}}
+|203,500
+|{{Coins|(({{GEP|Emerald dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Nature rune|1}}+{{GEP|Emerald dragon bolts|10}}))/37}}
+|-
+|29
+|{{plinkp|Topaz dragon bolts}}
+|[[Enchant Crossbow Bolt (Red Topaz)|Topaz dragon]]
+|{{RuneReq|Cosmic = 1|Fire = 2}}
+|33
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Topaz dragon bolts|10}})}}
+|{{Coins|(({{GEP|Topaz dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Topaz dragon bolts|10}}))}}
+|181,500
+|{{Coins|(({{GEP|Topaz dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Topaz dragon bolts|10}}))/33}}
+|-
+|49
+|{{plinkp|Ruby dragon bolts}}
+|[[Enchant Crossbow Bolt (Ruby)|Ruby dragon]]
+|{{RuneReq|Cosmic = 1|Fire = 5|Blood = 1}}
+|59
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Blood rune|1}}+{{GEP|Ruby dragon bolts|10}})}}
+|{{Coins|(({{GEP|Ruby dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Blood rune|1}}+{{GEP|Ruby dragon bolts|10}}))}}
+|324,500
+|{{Coins|(({{GEP|Ruby dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Blood rune|1}}+{{GEP|Ruby dragon bolts|10}}))/59}}
+|-
+|57
+|{{plinkp|Diamond dragon bolts}}
+|[[Enchant Crossbow Bolt (Diamond)|Diamond dragon]]
+|{{RuneReq|Cosmic=1|Earth=10|Law=2}}
+|67
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Law rune|2}}+{{GEP|Diamond dragon bolts|10}})}}
+|{{Coins|(({{GEP|Diamond dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Law rune|2}}+{{GEP|Diamond dragon bolts|10}}))}}
+|368,500
+|{{Coins|(({{GEP|Diamond dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Law rune|2}}+{{GEP|Diamond dragon bolts|10}}))/67}}
+|-
+|68
+|{{plinkp|Dragonstone dragon bolts}}
+|[[Enchant Crossbow Bolt (Dragonstone)|Dragonstone dragon]]
+|{{RuneReq|Cosmic=1|Earth=15|Soul=1}}
+|78
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Soul rune|1}}+{{GEP|Dragonstone dragon bolts|10}})}}
+|{{Coins|(({{GEP|Dragonstone dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Soul rune|1}}+{{GEP|Dragonstone dragon bolts|10}}))}}
+|429,000
+|{{Coins|(({{GEP|Dragonstone dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Soul rune|1}}+{{GEP|Dragonstone dragon bolts|10}}))/78}}
+|-
+|87
+|{{plinkp|Onyx dragon bolts}}
+|[[Enchant Crossbow Bolt (Onyx)|Onyx dragon]]
+|{{RuneReq|Cosmic=1|Fire=20|Death=1}}
+|97
+|{{Coins|({{GEP|Cosmic rune|1}}+{{GEP|Death rune|1}}+{{GEP|Onyx dragon bolts|10}})}}
+|{{Coins|(({{GEP|Onyx dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Death rune|1}}+{{GEP|Onyx dragon bolts|10}}))}}
+|533,500
+|{{Coins|(({{GEP|Onyx dragon bolts (e)|10}}*0.98)-({{GEP|Cosmic rune|1}}+{{GEP|Death rune|1}}+{{GEP|Onyx dragon bolts|10}}))/97}}
+|}
+<references />

@@ -1,0 +1,28 @@
+===Bolren's Little Dumpling===
+{{Needed|recommended=10-14 free inventory spaces to make room for crystalline disks.|[[Tree Gnome Village Dungeon key]]}}
+{{Colour-shape value|align=right}}
+[[File:Path of Glouphrie puzzle path w-disks.png|thumb|Path for the monolith puzzle]]
+{{Checklist|
+* Talk to [[King Bolren]] in the [[Tree Gnome Village (location)|Tree Gnome Village]]. {{Chat option|1Yes.}}
+* Squeeze through the loose railing to the south-west, and then run east to the ladder down to the [[Tree Gnome Village dungeon]].
+* Run west and talk to Golrie about anti-illusion devices. {{Chat option|1I need your help with a device.}}
+** If you don't have a [[Tree Gnome Village Dungeon key]] and Golrie is trapped behind the gate, search the distinct crate in the eastern area of the dungeon.
+** Unlock the gate and speak to Golrie again.
+* Enter the storeroom via the tunnel in the eastern area of the dungeon.
+* Push the monolith north.
+* Search the nearby chest for some discs.
+* Push the south-west monolith north.
+* Push the north-west monolith east.
+* Search the two chests by the northern tunnel. 
+* Push the small monolith south.
+* Push the north-west monolith west.
+* Search the chest for the [[strongroom key]] and [[crystal chime seed]].
+* Click on the [[singing bowl]] to create the [[crystal chime]] from the seed. You may have to instead select the 'Sing-crystal' on the [[singing bowl]] to complete this step. 
+* Push the south-east monolith west.
+* Enter the strongroom to the west.
+* Click the book on the lectern and watch each cutscene by selecting the chapter headers. (NOTE: DROPPED ITEMS WILL DISAPPEAR AFTER THE CUTSCENE)
+* Operate Yewnock's machine. 
+* Referencing the table to the right, insert discs on the left side of the machine to equal the values on the right side. Use Yewnock's exchanger to obtain shapes of lesser values. (NOTE: PICK UP ANY ITEMS YOU'VE DROPPED PRIOR TO CONFIRMING THE DISCS IN YEWNOCK'S MACHINE). If you are having trouble, see the full guide [[The Path of Glouphrie#Yewnock's Legacy|here]].
+* Return to [[King Bolren]] and kill the [[evil creature]].
+* Talk to him again.
+}}

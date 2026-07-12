@@ -1,0 +1,7 @@
+===Bob the Cat===
+'''Items required:''' ''[[Catspeak amulet (e)]].'' '''Recommended:''' ''Quick transportation to Sophanem.''
+{{Checklist|
+*Find [[Bob (cat)|Bob the Cat]] using your Catspeak amulet (e) and talk to him. (After finishing A Tail of Two Cats he will not be found at the Draynor Manor or Varrock west anvils but roams as usual. After an update he can be found in Burthorpe, else you will have to locate him using the Catspeak amulet (e))
+*Talk to the [[Sphinx]] in [[Sophanem]]. {{Chat option|1Ask the Sphinx for help with Bob's memories.}}
+**The sphinx will enchant you. You can now talk to cats without the catspeak amulet!
+}}

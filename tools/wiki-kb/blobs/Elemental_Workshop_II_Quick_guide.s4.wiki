@@ -1,0 +1,11 @@
+===The second key===
+
+{{Checklist|
+* Head back to the Anvil building in Seers Village and enter the odd-looking wall and down the staircase to the workshop.
+**using the [[battered key]] ([[Elemental Workshop I]]) (to re-obtain search the north-eastern [[bookcase (Elemental Workshop I)|bookcase]] in the house opposite to get both the key and book)
+* Go north to the water elemental room and search the machinery to the west to get a key.
+**'''''Note:''''' You must read the scroll obtained from the Beaten Book to search Machinery or the option will '''not''' appear.
+* If you didn't bring 2 elemental ores with you, go west and get them by killing 2 [[Earth elemental|Earth elementals]] (Mine the Elemental Rock for them to spawn).
+* Go south from the centre room and smelt your ores into bars, at the furnace.
+* Go down the hatch in the centre room with the key in your inventory.
+}}

@@ -1,0 +1,146 @@
+{{External|rs|rsc}}
+{{Infobox Location
+|name = Catherby
+|image = [[File:Catherby.png|300px]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|location = [[Kandarin]]
+|race = [[Human]]s
+|teleport = [[Catherby Teleport]]
+|music = [[Fishing (music track)|Fishing]]
+|map = {{Map|name=Catherby|x=2814|y=3443}}
+|type = settlement
+|leagueRegion = Kandarin
+}}
+[[File:Catherby icon detail.png|left|130px]]
+{{Relativelocation
+|location = Catherby
+|north = White Wolf Mountain
+|east = Taverley
+|south = Entrana
+|west = Seers' Village
+}}
+'''Catherby''' is a small [[fishing]] town located south-east of [[Camelot]] and west of [[White Wolf Mountain]]. It is a [[Members|members-only]] town with vast variety of [[fishing spots]] available on its shores for all levels of Fishing. It is also a popular town for [[Woodcutting|woodcutters]] due to the vast amount of trees to the west of the town.
+
+To the east of Catherby is White Wolf Mountain. This area can be deadly to low-level players as level 25 and 38 [[aggressive]] [[White wolf|white wolves]] inhabit this area. To the west of Catherby is Camelot and [[Seers' Village]], and to the south-west is the mighty city of [[East Ardougne]], the capital of [[Kandarin]].
+
+==Transportation==
+*Walk across White Wolf Mountain from [[Taverley]].
+** Take a [[gnome glider]] to the top of [[White Wolf Mountain]] and walk south.
+**Take the [[White Wolf Tunnel|Dwarven Pass]] under the mountain from Taverley (requires completion of [[Fishing Contest]]).
+*[[Camelot Teleport]], then run south-east.
+*[[Catherby Teleport]] from the [[Lunar spellbook]].
+*[[Kandarin headgear 3]]/[[Kandarin headgear_4|4]] teleport to [[Sherlock]] and run north-east.
+*Take a [[charter ship]] to Catherby docks.
+*[[Fairy ring]] code {{Fairycode|BLR}} - to the [[Legends' Guild]], then follow the coastline north-east.
+*[[Mooring point|Docking]] at the port with level 20 [[Sailing]].
+
+==Features==
+*A [[Catherby bank|bank]].
+*[[Fishing spot]]s for [[Small fishing net|small net]], [[Big fishing net|big net]], [[harpoon]], and [[lobster pot]] fishing.
+*A [[Farming]] [[allotment]] and [[Farming/Patch locations#Fruit tree patches|fruit tree patch]].
+*An [[Agility]] [[Mith grapple|grapple]] [[shortcut]] to [[Taverley]] that provides a quick link between both of the towns.
+*An Agility grapple shortcut from the [[Taverley Dungeon]] to Catherby.
+*Transportation to other docks or purchasing exotic items via the [[Charter ships|charter ship]].
+*A [[range]] for [[Cooking]], conveniently located on the way to the bank from the Fishing spots.
+*Two [[water]] sources.
+*[[Yew tree]]s and [[willow tree]]s for [[Woodcutting]].
+*[[Docking point]] for [[Sailing]], including a [[notice board]] and [[salvaging station]]
+
+==Shops==
+*[[Harry's Fishing Shop]]
+*[[Hickton's Archery Emporium]]: [[Hickton]], the shop owner, sells the [[Fletching cape]] for 99,000 [[coins]].
+*[[Arhein's General Goods]]
+*[[Candle Shop]]
+*[[Vanessa's Farming Shop]]
+*[[Trader Stan's Trading Post]]
+
+==Farming patches==
+To the north of Catherby lies a large Farming patch, containing two [[allotment]]s, one [[herb patch]], and one [[Farming/Patch locations#Allotment/Flower/Herb patches|flower patch]]. Standing nearby is, as usual, a handy [[tool leprechaun]]. Players can pay [[Dantaera]], the nearby [[Group of Advanced Gardeners|gardener]], to watch over their crops for them or for Farming supplies.
+
+Players who have completed the medium, hard, or elite levels of the [[Kandarin Diary]] will get a 5%, 10%, or 15% increase, respectively, to their Catherby herb patch yield. This stacks with the [[magic secateurs]]/[[Farming cape]]. Wearing the [[Kandarin headgear]] while harvesting is not required to gain the increased yield.
+
+There is also a [[Farming/Patch locations#Fruit tree patches|fruit tree patch]] located on the south-eastern beach near [[White Wolf Mountain]], for growing [[fruit tree]]s. Players can pay [[Ellena]] to watch over their fruit tree for them.
+
+==Fishing==
+[[File:Catherby beach.png|thumb|The famous sunny beaches of Catherby.]]
+This place has a great variety of fish for players with 68 [[Fishing]] or lower. There are [[fishing spots]] where players can use [[Small fishing net|small nets]], [[fishing rod]]s, [[Big fishing net|big nets]], [[harpoon]]s, and [[lobster pot]]s. This allows players to catch:
+
+*Small net: [[Raw shrimps|shrimp]], [[raw anchovies|anchovies]]
+*Fishing rod (bait): [[Raw sardine|sardine]], [[raw herring|herring]]
+*Big net: [[raw mackerel|mackerel]], [[raw cod|cod]], [[raw bass|bass]]
+*Harpoon: [[Raw tuna|tuna]], [[raw swordfish|swordfish]], [[raw shark|shark]]
+*Lobster pot: [[Raw lobster|lobster]]
+
+==Sailing info==
+Players can [[mooring point|dock]] at Catherby with level 20 [[Sailing]]. The dock south of the town offers the following utilities for sailors:
+*[[File:Shipwright map icon.png|link=Shipwright]] [[Shipwright]]
+*[[File:Port task board icon.png|link=Notice board]] [[Notice board]]
+*[[File:Salvaging station map icon.png|link=Salvaging station]] [[Salvaging station]]
+*[[File:Ledger table icon.png|link=Ledger table]] [[Ledger table]]
+*[[File:Bank icon.png|link=Bank deposit box]] [[Bank deposit box]]
+
+===Port tasks===
+The notice board offers eight [[port tasks]] selected from the following lists.
+
+'''[[Bounty tasks]]'''
+{{BountyTaskList|location=Catherby}}
+
+'''[[Courier tasks]]'''
+{{CourierTaskList|location=Catherby}}
+
+==Houses==
+In the small two-story house directly south of the [[Farming#Farming patches|farming patch]] is an [[insect repellent]] [[Spawning|spawn]]. This is used during the [[Merlin's Crystal]] and [[Troll Romance]] quests. Upstairs in this house is a [[jug of wine]] spawn.
+
+To the east of this house is another house that belongs to a man named [[Caleb]]. He is met during the [[Family Crest]] quest. Inside his house is a [[range]] and [[sink]]. There are also [[pie dish]], [[Burnt food|burnt fish]], [[jug of water]], [[knife]], and [[bucket of water]] spawns in his house too.
+
+To the east of Caleb's house is another house, containing three strange chests that are locked up in a cage.
+
+There is a house to the east of the bank with a range. This range is often used as it is very close to the [[Catherby bank|bank]].
+
+==Government==
+Catherby is part of the [[Kingdom of Kandarin]].  The local government of Catherby is run by the [[Mayor of Catherby]] and the Catherby Council, one member of which is [[Councillor Catherine]].  The Mayor of Catherby has been, for a long time, a fish.
+
+==Charter ship==
+The [[charter ship]]s also have a dock in the harbour at the south of Catherby. It provides rides to several other locations. After completing [[Cabin Fever]], the charter ship fare is reduced by 50%. Wearing the [[ring of charos(a)|ring of Charos(a)]] also reduces the fare by 50%. These two bonuses can be stacked to reduce the cost to 25%.
+
+{{Charter ship fares}}
+
+==Quests==
+*[[Fishing Contest]] - Talk to [[Vestri]] the dwarf at the entrance to the tunnel under [[White Wolf Mountain]] located north-east of Catherby.
+*[[Current Affairs]] - Talk to [[Arhein]] on the Catherby docks.
+
+==Monsters==
+*[[Man]] ''(level 2)''
+*[[Woman]] ''(level 2)''
+*[[Unicorn]] ''(level 15)''
+*[[Wolf]] ''(level 25/38)''
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 18 June 2015
+|update = Multiple Clues & Midsummer
+|change = The increased herb yields from Catherby herb patch and better chances at higher ores when cleaning pay-dirt diary rewards are now correctly being applied.
+}}
+{{Subject_changes
+|date = 5 December 2013
+|update = Patch Notes (5 December 2013)
+|change = The Thanksgiving party has been removed from Catherby.
+}}
+{{Subject changes
+|date = 28 November 2013
+|update = Patch Notes (28 November 2013)
+|change = Some gnomes have been added to Catherby beach, celebrating Thanksgiving with turkey you can eat or kick.
+}}
+{{Subject changes
+|date = 11 July 2013
+|update = Patch Notes (11 July 2013)
+|poll = Old School feature poll 6 - Castle Wars, etc.
+|change = Perdu, a travelling dwarven merchant, can now be found in Lumbridge, Falador, Catherby and Edgeville. He will return certain reward items to you if he thinks you've lost them, although his prices are higher than you'd have paid elsewhere.
+}}
+{{Subject changes footer}}
+
+{{Catherby}}
+[[Category:Kandarin]]

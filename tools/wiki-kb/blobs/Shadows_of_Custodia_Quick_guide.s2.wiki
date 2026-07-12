@@ -1,0 +1,24 @@
+==Walkthrough==
+
+{{Checklist|
+*Read the Noticeboard in the [[Auburn Pub]] {{Chat option|1Yes.}}
+*Talk to [[Marcus]] in the bar
+*Talk to the Bartender {{Chat option|2About the missing people...}}
+*Talk to [[Ictus]] north of the Quetzal and west of the nearby hill
+*Talk to [[Captain Ariadna]] in south-west Auburnvale, between the two guard towers
+*Talk to [[Francis (Auburnvale)|Francis]] or [[Aemilia]] in the house west of the bar
+*Inspect the western wall outside of their house then follow path of red marks to the river west of town.
+*Inspect the plank to use fishing rod (Fishing Rod Spawn just south west of floating plank) to fish up cloth
+*Return to Francis or Aemilia with the cloth
+*Follow the path indicated by the puddles west of town, then north around the mountain, until reaching a cave. Enter the cave
+*Talk to [[injured boy]]
+*Talk to Francis or Aemilia
+*Speak to [[Captain Ariadna]] at the West Entrance to town with 4 willow longbows ([[Renu]] to [[Arcuani's Archery Supplies|Tal Teklan Archery shop]] for quick bows)
+*Reinforce the west Wall of the house with the boys with 4x Maple Logs and a hammer. (Hammer be found in the house to the north. Maple Trees can be chopped nearby.)
+*Return to Francis or Aemilia, go upstairs and speak to [[Etz]] & [[Shas]] (the former injured boy(s))
+*Go back to the cave west of town
+*Talk to [[Antos]] (east side of the cave) and be prepared to kill 3 [[Strange creature (Shadows of Custodia)|Strange Creatures]] - protect from melee works but you can still take bleed damage.
+*Talk to Antos again to return to Auburnvale.
+*Talk to Captain Ariadna
+*Quest Complete
+}}

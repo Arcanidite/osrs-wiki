@@ -1,0 +1,21 @@
+==Walkthrough==
+===Getting started===
+{{Checklist|*Talk to [[Reldo]], located in the library in [[Varrock Palace]]. {{Chat option|1I'm in search of a quest.}}
+*Check the [[bookcase (Shield of Arrav)|bookcase]] with a bright blue book in the top shelf, and read the book.
+*Talk to Reldo again.
+After this point, you must choose to join either the [[Phoenix Gang]] or the [[Black Arm Gang]]. ('''Tip:''' Join the [[chat-channel]] "osrs soa" to find a partner before deciding.)}}
+<choose>
+<option>
+{{:Shield of Arrav/Quick guide/Phoenix Gang}}
+{{:Shield of Arrav/Quick guide/Black Arm Gang}}</option>
+<option>
+{{:Shield of Arrav/Quick guide/Black Arm Gang}}
+{{:Shield of Arrav/Quick guide/Phoenix Gang}}</option>
+</choose>
+
+===Finishing up===
+{{Checklist|*Take your half of the shield to [[Curator Haig Halen]], located in the [[Varrock Museum]].
+*Trade your half of the certificate with your partner. '''([[Ironmen]]: Use the certificate halves on your partner)'''
+*Use both halves of the certificate on each other to make a completed [[Certificate (Shield of Arrav)|certificate]].
+*Take the certificate to [[King Roald]] in the castle to receive your reward.
+*'''Congratulations, quest complete!'''}}

@@ -1,0 +1,61 @@
+==Walkthrough==
+===The adventurer===
+'''''Items needed: '''[[Climbing boots]] or 12 [[coins]]''
+{{Checklist|
+*Go to the [[Troll Stronghold (location)|Troll Stronghold]], head south then downstairs into the kitchen (fairycode {{Fairycode|AJR}} and enter from the back through the secret door where you freed the prisoners, or utilise a slayer ring and enter the mountain through the secret entrance, or [[Trollheim teleport]] and go west).
+*Speak to [[Burntmeat]]. {{Chat option|1What do you want now?|2Alright, I'll lend him a hand.}}
+*Talk to [[My Arm]], east of Burntmeat.
+}}
+
+===Getting the goutweed===
+'''''Items needed: ''' Three buckets of [[Ugthanki dung]], seven buckets of [[supercompost]] (or 7 supercompost stored in the [[Tool Leprechaun]]), a spade, [[climbing boots]], empty bucket (no need to bring one, there is one south of the Death Plateau cooking pot), at least one free inventory slot.''
+{{Checklist|
+*Reach the [[Death Plateau (location)|Death Plateau]]. ([[Games necklace]] or [[minigame teleport]] to [[Burthorpe]]). There will be [[thrower troll]]s on the way there and on the plateau itself; protect from ranged.
+*Use a bucket on the [[cooking pot (My Arm's Big Adventure)|cooking pot]] in the middle of the plateau with 1 free inventory space to get the [[goutweedy lump]].
+**A bucket spawns south of the cooking pot, if you forgot to bring one.
+*Go back to the [[Troll Stronghold (location)|Troll Stronghold]] and talk to My Arm.
+*After he brings you to a new area, talk to him again.
+*After reading the book he gave you, talk to him again.
+*Use three buckets of [[Ugthanki dung]] and seven buckets of [[supercompost]] on the soil patch.
+*Talk to My Arm.
+*Talk to [[Captain Barnaby]]. {{Chat option|1This is My Arm. We'd like to go to Karamja.}}
+}}
+
+===Getting the tubers===
+'''''Items needed: '''None if you already have 60% favour in [[Tai Bwo Wannai Cleanup]]. '''If not''', you'll need a machete, or at least 60 coins to buy one from the store north-west of the village.''
+
+'''''Note: '''If you plan on completing Karamja medium task diary, you may want to consider getting 100% favour first as you will lose the 60% here.''
+{{Checklist|
+*Meet up with My Arm at [[Tai Bwo Wannai]], east of the [[general store]]. Talk to him.
+*Talk to [[Murcaily]] near the hardwood grove. Make sure you have at least 1 free inventory space. {{Chat option|1A troll called My Arm wants a favour...}}
+**If Murcaily cannot be found, log out and log back in.
+**If you don't have 60% favour, raise it to 60% at least and talk to him again (you can't start the quest if you don't have 60% favour).
+*After the cutscene speak to My Arm, you will take the boat back to [[Ardougne]] where you can access the bank.
+}}
+
+===Teaching a troll to farm===
+'''''Items needed: '''[[Hardy gout tubers]], 17 coins or a [[rake]], [[seed dibber]], [[plant cure]], [[spade]], [[climbing boots]] and optionally, [[supercompost]] or [[ultracompost]] (Bottomless Compost Bucket will not work). Remember to bring food for the boss fight to save time.''
+{{Checklist|
+*Prepare yourself for a level 75 fight and a level 172 fight.
+*Go back to the roof of the Troll Stronghold by using ladder in the west room on the upper level where the [[Troll General]]s are.
+**Note: Obtain a [[spade]] from the [[Tool leprechaun]] if you do not already have one.
+*Talk to My Arm.
+*Give My Arm the tools he needs for farming in this order:
+**[[Rake]] (if My Arm breaks the rake, pick up the pieces, reassemble it, and give it back to him)
+**[[Supercompost]]/[[Ultracompost]] (Optional. If ultracompost/[[supercompost]] is not used, the patch may become diseased and will need to be cured. Regular compost has no effect.)
+**[[Hardy gout tubers]]
+**[[Seed dibber]]
+**[[Plant cure]] (if patch becomes diseased)
+{{Instance}}
+*Talk to My Arm.
+*Defeat the two monsters.
+**Note: It is possible to dodge the [[Giant Roc]]'s attacks by moving back and forth between tiles, but it is not possible to dodge its [[Stun (status)|stun]] attack.}}
+
+===The end===
+{{Checklist|
+*Talk to My Arm.
+*Give him a spade '''(if you don't have one, you can go back down and up the ladder to get the leprechaun to reappear). '''
+*Go back to [[Burntmeat]] in the kitchen.
+*Talk to My Arm on the roof.
+*'''Congratulations, quest complete!'''
+}}

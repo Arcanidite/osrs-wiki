@@ -1,0 +1,4 @@
+=== Offering bones at the Ectofuntus ===
+Worshiping the [[Ectofuntus]] gives 400% the normal experience. Although this is the second-highest guaranteed per-bone prayer bonus in the game, this is much less than the 700% theoretical average experience at the Chaos Altar. This is due to the 50% chance of the Chaos Altar not consuming bones. The libation bowl will either match the 400% increase in xp per bone, or exceed it, depending on the bone sacrificed and whether or not sunfire wine is used.
+
+The Ectofuntus is a less common method of training prayer due to it being much slower and not much cheaper than gilded altars, but it can be sped up considerably with the daily rewards provided by the [[Morytania Diary|Morytania Diaries]].

@@ -1,0 +1,5 @@
+===First key===
+{{Checklist|
+*Go to north-west corner of the palace and go up two flights of stairs.
+*Speak to [[Captain Rovin]] in the north-west tower on the {{FloorNumber|uk=2}} about the demon. {{Chat option|3Yes I know, but this is important.|1There's a demon who wants to invade this city.|2Yes, very.|2It's not them who are going to fight the demon, it's me.|3Sir Prysin said you would give me the key.|1Why did he give you one of the keys then?}}
+}}

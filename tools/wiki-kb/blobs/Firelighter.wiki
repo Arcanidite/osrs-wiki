@@ -1,0 +1,20 @@
+{{External|rs}}
+{{Otheruses|def=no|the item that can be charged with firelighters|Gnomish firelighter}}
+[[File:Red firelighter detail.png|right|120px]]
+'''Gnomish firelighters''' are stackable rewards from [[Treasure Trails]]. They can be used on regular [[logs]] to produce coloured logs, or on a [[gnomish firelighter]] to fill it. When used on logs, a message in the chatbox will state {{mes|You coat the logs with the ''[colour]'' chemicals.}} When the coloured logs are used with a [[tinderbox]], the flame will either be [[Blue logs|blue]], [[Red logs|red]], [[Purple logs|purple]], [[White logs|white]], or [[Green logs|green]], depending on the colour of the firelighter used.
+
+When burning the logs, the [[experience]] gained is increased by 10 points, for a total of 50. Additionally, the fire will always be lit on the first try; burning coloured logs can be a slight time-saver on early [[Firemaking]] training over regular logs and even oak logs.
+
+Gnomish firelighters can also be used to recolour a [[Phoenix]] to a different colour, which requires 250 of the desired firelighter; this permanently unlocks the recolour for the Phoenix pet and can be toggled through the [[metamorphosis]] option. Red firelighters are functionally useless on the Phoenix pet. 
+{{CostTableHead|class=sortable}}
+{{CostLine|Red firelighter}}
+{{CostLine|Green firelighter}}
+{{CostLine|Blue firelighter}}
+{{CostLine|Purple firelighter}}
+{{CostLine|White firelighter}}
+{{CostTableBottom}}
+
+==Trivia==
+*Gnomish firelighters were made tradeable along with the Treasure Trail Expansion on [[12 June]] [[2014]].
+
+{{Universal clue rewards}}

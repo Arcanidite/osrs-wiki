@@ -1,0 +1,7 @@
+===Levels 25–50: Fruit stalls===
+From level 25 to 50, steal from [[fruit stall]]s in [[Hosidius]]. The best place to do this is in the easternmost house near the beach (see the map), which has 2 stalls close to each other and no [[guard dog]]s patrolling nearby. Steal from both stalls as fast as possible and drop the fruit while running between them. Eat the [[strange fruit]]s or use [[stamina potion]]s to restore run energy. Players can gain up to 42,750 experience per hour, or 34,200 experience per hour if stealing only from one stall.
+
+[[File:Fruit Stall - trapping guard dogs.png|right|thumb|250px|The fruit stall found in front of Logava, with the guard dogs trapped between the wooden supports.]]
+If banking the fruits, steal from the stall at the Hosidius market. Bring 15–20 [[basket]]s and fill them to fit more fruits per trip. The guard dogs can be [[Safespot|corner-trapped]] by luring them slightly north and then standing directly south of the stall (see the image). However, if only banking the [[golovanova fruit top]]s, using the two stalls east of the market is recommended for faster experience rates.
+{{Map|x:1767,y:3598|x:1801,y:3607|x:1796,y:3607|align=right|mtype=pin|width=250|height=250|caption=Fruit stall locations in Hosidius.}}
+{{clear}}

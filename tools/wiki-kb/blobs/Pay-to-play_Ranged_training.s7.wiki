@@ -1,0 +1,67 @@
+===Levels 45–99: Chinning maniacal monkeys===
+[[File:Maniacal Monkey Chinning High Intensity.gif|thumb|Chinning maniacal monkeys.]]
+''For more information, see [[Maniacal monkey/Strategies]]''.
+
+{{Equipment
+|align = right
+|head = Void ranger helm
+|cape = Blessed dizana's quiver
+|neck = Necklace of anguish
+|ammo = Rada's blessing 4
+|weapon = Black chinchompa
+|torso = Elite void top
+|legs = Elite void robe
+|shield = Twisted buckler
+|gloves = Void knight gloves
+|boots = Avernic treads (max)
+|ring = Venator ring
+}}
+Throwing [[chinchompas]] (commonly known as "chinning") at [[maniacal monkey]]s is the fastest way to train Ranged. Maniacal monkeys are located in [[Kruk's Dungeon]] on [[Ape Atoll]], which requires having started chapter II of [[Monkey Madness II]] to access. While chinning is much faster than any other methods, it also costs money.
+
+For the fastest experience rates, use equipment that maximises [[Ranged Strength]], or [[Void Knight equipment|Void Knight ranged equipment]] for its damage buff. This is because the maniacal monkeys have low defence. [[Void Knight equipment]] is higher DPS<ref>Damage per second.</ref> than dragonhide armour due to its damage-boosting set effect; however [[Masori armour]] with [[Zaryte vambraces]] is better than standard [[Void Knight equipment]] <ref>In most setups Masori beats Void. That being said, DPS and therefore experience depends on ranged level, prayers used, other equipment used, and other factors. It's best to check your DPS yourself to compare.</ref> due to its ranged strength bonus increasing damage per second. [[Elite Void Knight equipment]] is best in slot for most players. This is because it often has marginally higher DPS but also the prayer bonus reduces the time needed to collect and drink prayer potions, further increasing experience rates. Though the difference is minimal, and both Void and Masori are excellent choices. If you don't have access to these, use [[Hueycoatl hide armour]] or [[Blessed dragonhide armour]]. 
+
+Maniacal monkeys drop 1-dose prayer potions which negates the cost of using Protect from Melee and damage-boosting prayers. Players who have completed the hard [[Morytania Diary]] can alternatively use a [[bonecrusher necklace]] to restore Prayer points.
+
+Experience rates in the table below assume wearing the best damage-boosting equipment available, using [[Rigour]], using two dancing accounts to stack the monkeys, using [[divine ranging potion]]s, and throwing 1,970 chinchompas per hour. With [[Eagle Eye]], the rates would be roughly 5–7% lower.
+
+{| class="wikitable align-center-1" style="text-align:right"
+!{{SCP|Ranged}} level
+!{{plinkp|Chinchompa}} XP/h
+!{{plinkp|Red chinchompa}} XP/h
+!{{plinkp|Black chinchompa}} XP/h
+|-
+|45
+|290,000
+|{{NA}}
+|{{NA}}
+|-
+|55
+|360,000
+|430,000
+|{{NA}}
+|-
+|65
+|470,000
+|540,000
+|690,000
+|-
+|75
+|570,000
+|670,000
+|830,000
+|-
+|85
+|640,000
+|740,000
+|930,000
+|-
+|95
+|710,000
+|810,000
+|1,000,000
+|-
+|99
+|740,000
+|840,000
+|1,030,000
+|}

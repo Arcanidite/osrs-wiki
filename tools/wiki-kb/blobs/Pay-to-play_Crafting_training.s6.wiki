@@ -1,0 +1,97 @@
+===Levels 63/77–99: D'hide bodies===
+{{Var|perHourNeedleThread|1685}}
+{{Var|perHourCostumeNeedle|1705}}
+{{Var|perHourTickManipulation|1783}}
+Crafting d'hide bodies becomes the fastest viable training method from level 77 onwards. Players can begin crafting green d'hide bodies at level 63, or blue d'hide bodies at level 71 as an alternative method to cutting gems or crafting battlestaves.
+
+Use the [[costume needle]] to craft 9 d'hide bodies per inventory. The player can obtain one from the [[Costumer]] in [[Aldarin]] after completing [[Death on the Isle]]. Without the costume needle, the player will need [[thread]] to craft d'hide bodies, which only allows making 8 d'hide bodies per inventory and will lower experience rates slightly.
+
+Turn on deposit lock in the bank menu to bank efficiently. This allows the player to only deposit d'hide bodies with the 'Deposit inventory' button without depositing the costume needle.
+
+The player can use [[tick manipulation]] to start the crafting process one tick faster. To do this, have an alternative account to lure aggressiveness of a gnome at the [[Gnome Stronghold south bank]]. Position the gnome so that they stand on an adjacent tile to the bank booth. Equip a [[shortbow]] (or similar) without ammo and set the attack option to Rapid. When banking, quickly attempt to attack the gnome before using the needle on a leather. This will skip the stall from making the first item when done correctly, which will increase experience rates slightly.
+
+Green and blue d'hide bodies offer comparable experience rates to fire and air battlestaves, respectively. Choose whichever is cheaper. However, green and blue d'hide bodies require a lot less capital. Black d'hide bodies offer the fastest experience but they are typically much more expensive compared to other methods, so look into cheaper alternatives if seeking to save money.
+
+The experience rates in the table below assume good banking and paying attention. Expect lower rates if idling or making mistakes with banking. With tick manipulation, players can craft up to {{#var:perHourTickManipulation}} d'hide bodies per hour. Without tick manipulation, it is possible to craft up to {{#var:perHourCostumeNeedle}} d'hide bodies per hour when using the costume needle. [[High Level Alchemy]] can be cast on the d'hide bodies later to reduce costs while also gaining passive [[Magic]] experience. The High Level Alchemy prices assume a [[staff of fire]] or equivalent is used. The self-tan prices assume buying untanned dragonhide and casting [[Tan Leather]] with a staff of fire or equivalent; each body requires 3 hides, so this adds 3/5 of one cast per body. If including the time taken to cast high alchemy, only about 700 d'hide bodies can be made and alched per hour.
+
+{| class="wikitable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Crafting}} Level
+! colspan="2" rowspan="2" |D'hide body
+! rowspan="2" |XP
+! colspan="3" |XP/h
+! colspan="4" |Prices ([[Grand Exchange|GE]])
+! colspan="2" |Prices ([[High Alchemy|HA]])
+! colspan="2" |Prices ([[High Alchemy|HA]], self-tan)
+|-
+!{{plinkp|Needle}}&{{Plinkp|thread}}<ref group="n">Assumes {{#var:perHourNeedleThread}} actions per hour when crafting eight d'hide bodies per inventory.</ref>
+!{{plinkp|Costume needle}}<ref group="n">Assumes {{#var:perHourCostumeNeedle}} actions per hour when crafting nine d'hide bodies per inventory.</ref>
+!Tick manip.<ref group="n">Assumes {{#var:perHourTickManipulation}} actions per hour when using tick manipulation and crafting nine d'hide bodies per inventory.</ref>
+!Buy
+!Profit
+!GP/XP
+!GP/XP (self-tan)<ref group="n">Assumes buying untanned dragonhide and casting [[Tan Leather]] with a [[staff of fire]] or equivalent. Each cast tans 5 hides and costs {{GEP|Nature rune}} + {{GEP|Astral rune|2}}, so each body adds 3/5 of that rune cost.</ref>
+!Profit
+!GP/XP
+!Profit
+!GP/XP
+|-
+|63
+|{{plinkt|Green d'hide body|txt=Green}}
+|{{Var|xpGreenDhide|186}} {{#var:xpGreenDhide}}
+|{{formatnum: {{#expr: {{#var:xpGreenDhide}} * {{#var:perHourNeedleThread}} }} }}
+|{{formatnum: {{#expr: {{#var:xpGreenDhide}} * {{#var:perHourCostumeNeedle}} }} }}
+|{{formatnum: {{#expr: {{#var:xpGreenDhide}} * {{#var:perHourTickManipulation}} }} }}
+|{{Coins|{{GEP|Green dragon leather|3}}}}
+|{{Coins|{{GEPT|Green d'hide body|1}}-{{GEP|Green dragon leather|3}}}}
+|{{Coins|({{GEPT|Green d'hide body|1}}-{{GEP|Green dragon leather|3}})/{{#var:xpGreenDhide}}}}
+|{{Coins|({{GEPT|Green d'hide body|1}}-{{GEP|Green dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5)/{{#var:xpGreenDhide}}}}
+|{{Coins|{{HA|Green d'hide body|1}}-{{GEP|Green dragon leather|3}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Green d'hide body|1}}-{{GEP|Green dragon leather|3}}-{{GEP|Nature rune}})/{{#var:xpGreenDhide}}}}
+|{{Coins|{{HA|Green d'hide body|1}}-{{GEP|Green dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Green d'hide body|1}}-{{GEP|Green dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}})/{{#var:xpGreenDhide}}}}
+|-
+|71
+|{{plinkt|Blue d'hide body|txt=Blue}}
+|{{Var|xpBlueDhide|210}} {{#var:xpBlueDhide}}
+|{{formatnum: {{#expr: {{#var:xpBlueDhide}} * {{#var:perHourNeedleThread}} }} }}
+|{{formatnum: {{#expr: {{#var:xpBlueDhide}} * {{#var:perHourCostumeNeedle}} }} }}
+|{{formatnum: {{#expr: {{#var:xpBlueDhide}} * {{#var:perHourTickManipulation}} }} }}
+|{{Coins|{{GEP|Blue dragon leather|3}}}}
+|{{Coins|{{GEPT|Blue d'hide body|1}}-{{GEP|Blue dragon leather|3}}}}
+|{{Coins|({{GEPT|Blue d'hide body|1}}-{{GEP|Blue dragon leather|3}})/{{#var:xpBlueDhide}}}}
+|{{Coins|({{GEPT|Blue d'hide body|1}}-{{GEP|Blue dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5)/{{#var:xpBlueDhide}}}}
+|{{Coins|{{HA|Blue d'hide body|1}}-{{GEP|Blue dragon leather|3}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Blue d'hide body|1}}-{{GEP|Blue dragon leather|3}}-{{GEP|Nature rune}})/{{#var:xpBlueDhide}}}}
+|{{Coins|{{HA|Blue d'hide body|1}}-{{GEP|Blue dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Blue d'hide body|1}}-{{GEP|Blue dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}})/{{#var:xpBlueDhide}}}}
+|-
+|77
+|{{plinkt|Red d'hide body|txt=Red}}
+|{{Var|xpRedDhide|234}} {{#var:xpRedDhide}}
+|{{formatnum: {{#expr: {{#var:xpRedDhide}} * {{#var:perHourNeedleThread}} }} }}
+|{{formatnum: {{#expr: {{#var:xpRedDhide}} * {{#var:perHourCostumeNeedle}} }} }}
+|{{formatnum: {{#expr: {{#var:xpRedDhide}} * {{#var:perHourTickManipulation}} }} }}
+|{{Coins|{{GEP|Red dragon leather|3}}}}
+|{{Coins|{{GEPT|Red d'hide body|1}}-{{GEP|Red dragon leather|3}}}}
+|{{Coins|({{GEPT|Red d'hide body|1}}-{{GEP|Red dragon leather|3}})/{{#var:xpRedDhide}}}}
+|{{Coins|({{GEPT|Red d'hide body|1}}-{{GEP|Red dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5)/{{#var:xpRedDhide}}}}
+|{{Coins|{{HA|Red d'hide body|1}}-{{GEP|Red dragon leather|3}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Red d'hide body|1}}-{{GEP|Red dragon leather|3}}-{{GEP|Nature rune}})/{{#var:xpRedDhide}}}}
+|{{Coins|{{HA|Red d'hide body|1}}-{{GEP|Red dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Red d'hide body|1}}-{{GEP|Red dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}})/{{#var:xpRedDhide}}}}
+|-
+|84
+|{{plinkt|Black d'hide body|txt=Black}}
+|{{Var|xpBlackDhide|258}} {{#var:xpBlackDhide}}
+|{{formatnum: {{#expr: {{#var:xpBlackDhide}} * {{#var:perHourNeedleThread}} }} }}
+|{{formatnum: {{#expr: {{#var:xpBlackDhide}} * {{#var:perHourCostumeNeedle}} }} }}
+|{{formatnum: {{#expr: {{#var:xpBlackDhide}} * {{#var:perHourTickManipulation}} }} }}
+|{{Coins|{{GEP|Black dragon leather|3}}}}
+|{{Coins|{{GEPT|Black d'hide body|1}}-{{GEP|Black dragon leather|3}}}}
+|{{Coins|({{GEPT|Black d'hide body|1}}-{{GEP|Black dragon leather|3}})/{{#var:xpBlackDhide}}}}
+|{{Coins|({{GEPT|Black d'hide body|1}}-{{GEP|Black dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5)/{{#var:xpBlackDhide}}}}
+|{{Coins|{{HA|Black d'hide body|1}}-{{GEP|Black dragon leather|3}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Black d'hide body|1}}-{{GEP|Black dragon leather|3}}-{{GEP|Nature rune}})/{{#var:xpBlackDhide}}}}
+|{{Coins|{{HA|Black d'hide body|1}}-{{GEP|Black dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Black d'hide body|1}}-{{GEP|Black dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}})/{{#var:xpBlackDhide}}}}
+|}<references group="n" />

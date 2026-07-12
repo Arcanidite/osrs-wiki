@@ -1,0 +1,74 @@
+===Levels 20–99: Smithing dart tips and nails===
+Smithing dart tips and nails offers slow experience, but it requires little attention. This method usually breaks even or makes a small profit due to their high demand. The player must have completed [[The Tourist Trap]] quest to be able to smith dart tips. 10 dart tips and 15 nails are created per bar. A full inventory takes 81 seconds to process using Make-X.
+
+Experience and profit rates are listed in the table below. The numbers assume 1300 bars are smithed per hour when wearing the [[Smiths' Uniform]] and 1060 without.
+{{#vardefine:bars_uniform|1300}}  {{#vardefine:bars|1060}} 
+{| class="wikitable sortable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Smithing}} level
+! rowspan="2" class="unsortable" |Bar
+! rowspan="2" class="unsortable" |Method
+! colspan="2" |Uniform
+! colspan="2" |No uniform
+! rowspan="2" |Profit/XP
+|-
+! XP/h
+! Profit/h
+! XP/h
+! Profit/h
+|-
+|4
+|{{plinkp|Bronze bar}}
+|[[Money making guide/Smithing bronze dart tips|Bronze dart tips]]
+|{{formatnum:{{#expr:12.5*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Bronze dart tip|13000}}-{{GEP|Bronze bar|1300}}}}
+|{{formatnum:{{#expr:12.5*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Bronze dart tip|10600}}-{{GEP|Bronze bar|1060}}}}
+|{{Coins|({{GEP|Bronze dart tip|10}} - {{GEP|Bronze bar}})/12.5}}
+|-
+|19
+|{{plinkp|Iron bar}}
+|[[Money making guide/Smithing iron dart tips|Iron dart tips]]
+|{{formatnum:{{#expr:25*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Iron dart tip|13000}}-{{GEP|Iron bar|1300}}}}
+|{{formatnum:{{#expr:25*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Iron dart tip|10600}}-{{GEP|Iron bar|1060}}}}
+|{{Coins|({{GEP|Iron dart tip|10}} - {{GEP|Iron bar}})/25}}
+|-
+|34
+|{{plinkp|Steel bar}}
+|[[Money making guide/Smithing steel dart tips|Steel dart tips]]
+|{{formatnum:{{#expr:37.5*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Steel dart tip|13000}}-{{GEP|Steel bar|1300}}}}
+|{{formatnum:{{#expr:37.5*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Steel dart tip|10600}}-{{GEP|Steel bar|1060}}}}
+|{{Coins|({{GEP|Steel dart tip|10}} - {{GEP|Steel bar}})/37.5}}
+|-
+
+|54
+|{{plinkp|Mithril bar}}
+|[[Mithril nails]]
+|{{formatnum:{{#expr:50*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Mithril nails|19500}}-{{GEP|Mithril bar|1300}}}}
+|{{formatnum:{{#expr:50*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Mithril nails|15900}}-{{GEP|Mithril bar|1060}}}}
+|{{Coins|({{GEP|Mithril nails|15}} - {{GEP|Mithril bar}})/50}}
+|-
+|74
+|{{plinkp|Adamantite bar}}
+|[[Money making guide/Smithing adamant dart tips|Adamant dart tips]]
+|{{formatnum:{{#expr:62.5*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Adamant dart tip|13000}}-{{GEP|Adamantite bar|1300}}}}
+|{{formatnum:{{#expr:62.5*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Adamant dart tip|10600}}-{{GEP|Adamantite bar|1060}}}}
+|{{Coins|({{GEP|Adamant dart tip|10}} - {{GEP|Adamantite bar}})/62.5}}
+|-
+|89
+|{{plinkp|Runite bar}}
+|[[Rune nails]]
+|{{formatnum:{{#expr:75*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Rune nails|19500}}-{{GEP|Runite bar|1300}}}}
+|{{formatnum:{{#expr:75*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Rune nails|15900}}-{{GEP|Runite bar|1060}}}}
+|{{Coins|({{GEP|Rune nails|15}} - {{GEP|Runite bar}})/75}}
+|-
+|}

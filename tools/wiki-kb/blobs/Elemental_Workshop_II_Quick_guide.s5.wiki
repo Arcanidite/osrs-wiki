@@ -1,0 +1,32 @@
+===Making Repairs===
+====The crane====
+
+{{Checklist|
+*Take-from the schematic crate to the south, take both schematics.
+*Go back upstairs and use one bar on the workbench to make a crane claw. '''Note: Don't accidentally let it create more than one.'''
+*Return downstairs to the two crane levers and pull the western one to lower the crane.
+*Use your claw on the old crane.
+}}
+
+====The junction box====
+[[File:Elemental Workshop II - Junction pipe placement.png|thumb|250px]]
+
+{{Checklist|*Climb the stairs to the south-west to get on the catwalk.
+*Open the junction box to the west.
+*Click the pipe ends, not the pipe, to connect them as shown.}}
+
+====Pipes and cogs====
+[[File:Elemental Workshop II - Cog placement.png|thumb|right|A visual of the correct cog placement]]
+{{Checklist|
+*Search all crates on the ground floor '''and''' the catwalk of the workshop until you find the following. IMPORTANT: Be sure to read the [[Crane schematic]] and [[Lever schematic]], or you will be unable to find all the pieces.
+**[[Pipe]]
+**[[Small cog]]
+**[[Medium cog]]
+**[[Large cog]] 
+* On the north side of the catwalk use the Pipe on the broken piping.
+*On the east side of the Ground floor use the cogs on the pins on the side of the machine that looks like a wind tunnel as shown.
+**Small cog on upper left pin
+**Medium cog on lower left pin
+**Large cog on right pin.
+*Pull the old lever to the right.
+**'''''Note:''''' The repairs are now complete. You will no longer need to head up to the catwalk again.}}

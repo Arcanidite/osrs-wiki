@@ -1,0 +1,53 @@
+==Walkthrough==
+{{Checklist|
+* Talk to [[Patzi]] to start the quest (fairy ring ({{Fairycode|ckq}}), then walk east).
+* Break into the house north of Patzi, west of the general store, via the southern House Window.  Wait for the guard to move away. 
+* Take uniform from the wardrobe on the ground floor
+* Speak to Patzi again 
+** Make sure to finish the dialogue, otherwise you cannot continue the quest}}
+
+{{Checklist| 
+* Equip both pieces of the uniform.
+* Head east up the stone steps, then south and speak to the Head Butler to enter the house. He will hold onto all of your items in the meantime.
+* Speak to Patzi
+* Speak to Constantinius, Cozyac, Pavo and Xocotla
+* Speak with Patzi again }}
+
+{{Checklist| 
+* Enter the cellar entrance. It is located just outside of the house, immediately north of the house's east exit.
+* Go all the way south and investigate the Antique wine against the wall.
+* Check on the man on the south end of the room to the east. }}
+{{Checklist|* Speak to Constantinius, Cozyac, Pavo and Xocotla.
+* Head back inside the wine cellar and investigate:
+** Jug by the stairs
+** South room's Small box
+** South room's Broken stool
+** East room's Broken pottery
+** East room's Livius, on the floor
+** East room's Wine storage, by the exit}}
+
+{{Checklist|
+* Speak to the guards Stradius and Hutza to discuss your clues.
+* Pickpocket Adala, Patzi, Constantinius, Cozyac, Pavo and Xocotla.
+* Inspect the Wine labels, Threatening note, Shipping contract and Drinking flask
+* Speak to one of the guards, either Stradius or Hutza.
+* Speak to all the suspects, then accuse Adala, and she'll fight you (level 49). Once defeated, she'll claim she's too weak to have killed anyone.}}
+
+{{Checklist|
+* Once Adala has been taken away, speak to Stradius, then head back to the ground floor, south to the cliff, round and climb up the Loose rocks shortcut, and speak to Stradius again.
+* Head down the stairs to the east, enter the backstage entrance, and question the Costumer.
+* Search the crate next to the stairs to discover it is full of poison.
+* Search the bookshelf on the west wall to uncover a secret passage to the wine cellar.
+* Search the costume rack along the north wall to discover a wine-stained costume.
+* Ask the Costumer about the actors, hidden passage, stained costume and the poison.
+* Go up the stairs and speak to Stradius again. Accuse Naiatli.
+* Confront Naiatli on stage and attack her when she runs away.
+* Speak to Stradius or Hutza to end the quest.}}
+
+'''QUEST COMPLETED''' 
+
+{{Checklist|* Speak to the [[Head Butler]] after the quest to claim a range of masks, and the [[Butler's tray|Butler's tray]].
+* Speak to the [[Costumer]] after the quest to claim your [[Costume needle|Costume needle]].
+* Pickpocket Constantinius for a [[Chest key (Fancy chest)|chest key]]. After using it to open the [[fancy chest]] in the south room of the cellar, the fountain to the south-west of Villa Lucens can be searched to find an [[Icon (Aldarin)|icon]].
+* Use the icon on the statue at the most north-eastern tip of Aldarin (Statue Holds bowl of blue fluid), and get your reward. (1 water rune, [[Pendant of ates|Pendant of ates]] teleport location)
+}}

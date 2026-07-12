@@ -1,0 +1,90 @@
+{{External|rs}}
+{{Otheruses|cooked monkfish|the raw form|raw monkfish}}
+{{Infobox Item
+|name = Monkfish
+|image = [[File:Monkfish.png]]
+|release = [[2 May]] [[2006]]
+|update = Return of the Wise Old Man!
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|edible = Yes
+|options = Eat, Drop
+|examine = A tasty fish.
+|value = 230
+|weight = 0.400
+|exchange = Yes
+|id = 7946
+}}
+[[File:Monkfish detail.png|left|100px]]
+'''Monkfish''' is a type of [[fish]] that restores 16 [[Hitpoints]] when eaten.  
+
+It can be obtained by cooking [[raw monkfish]] on a [[fire]] or [[cooking range]], requiring level 62 [[Cooking]] and granting 150 [[experience]] when successful. When cooking there is a chance to fail, resulting in a [[burnt monkfish]]. The [[burn rate]] decreases as the player's Cooking level increases, and it will stop burning entirely at Cooking level 90 on ranges and level 92 on fires. 
+
+When eaten, the message {{Mes|You eat the monkfish. 
+It heals some health.}} is displayed. 
+
+While the [[Swan Song]] quest must be completed to fish raw monkfish, there is no such requirement for cooking them. 
+
+Catching and cooking a monkfish is a requirement for the [[hard Western Provinces Diary]]. 
+
+==Creation==
+{{Recipe
+|skill1 = Cooking
+|skill1lvl = 62
+|skill1boostable = Yes
+|skill1exp = 150
+|members = Yes
+|ticks = 1
+|ticksnote = Increases to 4 when using an interface to select cooking option.
+|facilities = Cooking range
+|mat1 = Raw monkfish
+|output1 = Monkfish
+}}
+
+===Cooking chance===
+{{Skilling success chart|label=Monkfish cooking chance|showbefore=no
+|label1=Fire|low1=11|high1=275|req1=62|color1=orange|image1=Firemaking icon.png
+|label2=Range|low2=13|high2=280|req2=62|color2=saddlebrown|image2=Cooking range icon.png
+|label3=Gauntlets|low3=24|high3=290|req3=62|color3=grey|image3=Cooking gauntlets.png
+|label4=Hosidius +5%|low4=25|high4=292|req4=62|color4=red|image4=Cooking range icon.png
+|label5=Hosidius +10%|low5=38|high5=305|req5=79|color5=blue|image5=Cooking range icon.png
+|label6=Hosidius +5%, gauntlets|low6=36|high6=302|req6=62|color6=#ffcccb|image6=Cooking gauntlets.png
+|label7=Hosidius +10%, gauntlets|low7=49|high7=315|req7=79|color7=#ccccff|image7=Cooking gauntlets.png
+}}
+
+==Money making==
+{{Mmgsection|Cooking raw monkfish}}
+
+==Item sources==
+{{Drop sources|Monkfish}}
+
+===Shop locations===
+{{Store locations list|Monkfish}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 24 July 2007
+|update = King's Ransom
+|change = The item's inventory sprite was rotated.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Monkfish detail (historical).png|center|300x150px]]
+|[[File:Monkfish detail.png|center|300x150px]]
+|-
+|[[File:Monkfish (historical).png|center]]
+|[[File:Monkfish.png|center]]
+|-
+|2 May 2006 ⁠–<br/>24 July 2007
+|24 July 2007 ⁠–<br/>present
+|}
+
+{{Fish}}
+[[Category:Food]]

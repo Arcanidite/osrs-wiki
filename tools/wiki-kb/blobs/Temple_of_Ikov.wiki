@@ -1,0 +1,173 @@
+{{External|rs|rsc}}
+{{Otheruses|the quest|the dungeon|Temple of Ikov (dungeon)}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Temple of Ikov
+|number = 28
+|image = [[File:Temple of Ikov.png|300px]]
+|release = [[17 June]] [[2002]]
+|update = Latest RuneScape News (17 June 2002)
+|members = Yes
+|series = [[Quests/Series#Mahjarrat|Mahjarrat]], #5
+|developer = [[Paul Gower]]
+}}
+'''Temple of Ikov''' is a [[quest]] featuring [[Lucien]], a [[Mahjarrat]]. The quest revolves around the infiltration of the Temple of Ikov in order to steal a powerful artefact known as the [[Staff of Armadyl]].
+
+==Details==
+{{Quest details
+|start = Talk to [[Lucien]] at the [[Flying Horse Inn]] in the north-western corner of [[East Ardougne]].
+|startmap = 2573,3320
+|difficulty = Intermediate
+|description = A mysterious stranger called Lucien asks you to go on a mission deep under the Temple of Ikov in central Kandarin. He wants you to retrieve an artefact known as the Staff of Armadyl. After you retrieve it, the quest doesn't stop there... Are you on the side of good or evil?
+|length = Medium
+|requirements = * {{SCP|Thieving|42|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Ranged|40|link=yes}} {{Boostable|no}} {{Questreqstart|no}} - bypassable <ref>This requirement can be bypassed - [[Temple_of_Ikov#Fire_Warrior_of_Lesarkus|see below]]</ref>
+* The ability to defeat a level 84 enemy with Ranged
+|items = * Any [[bow]] capable of firing [[ice arrows]] ([[yew bow]] or better) '''or''' any [[Ranged#Weapons|thrown weapon]]
+* 20 unnoted [[limpwurt root]]s
+*A method of reducing your weight to at least -1kg temporarily:
+**[[Boots of lightness]] (can be obtained during the quest with a [[light source]] and [[slash weapon]], such as a [[lit candle]] and [[knife]])
+**Other forms of [[weight-reducing clothing]] such as the [[graceful outfit]]
+|recommended = *{{SCP|Combat|45|link=yes}}
+*{{SCP|Prayer|43|link=yes}} and [[prayer potions]] for [[protection prayers]]
+*[[Food]] if low level or without [[Protect from Melee]] and [[Protect from Magic]]
+*[[Ranged armour]]
+* [[Ava's accumulator]]
+* Fast travel to several locations
+**The entrance of the [[Temple of Ikov (dungeon)|Temple of Ikov]] ([[skills necklace]] to the Fishing Guild, [[combat bracelet]] to the Ranged Guild or [[Fairy Rings]] to {{fairycode|blr}})
+**Ardougne ([[Ardougne teleport]] or [[Ardougne cloak]])
+**Edgeville ([[amulet of glory]] to Edgeville, [[ring of wealth]] to Grand Exchange or [[Fairy Rings]] to {{fairycode|dkr}})
+|kills = * [[Fire Warrior of Lesarkus]] ''(level 84)''
+* [[Guardian of Armadyl]] ''(level 43) (Safespottable)'' - only if siding with Lucien
+* [[Lucien]] ''(level 14)'' - only if siding with the Guardians of Armadyl
+|ironman = * [[File:Ultimate ironman chat badge.png]] 20 unnoted items need to be delivered at once. 
+*A method of defeating the [[Fire Warrior of Lesarkus]]:
+**{{SCP|Ranged|40}} {{Boostable|no}} and access to a [[Yew longbow]] or better. [[Yew longbow]]s can be obtained as a rare drop from [[young impling]]s.
+**'''OR''' [[Darts]] or [[Throwing knives]] to bypass the Ranged requirement.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}
+<references/>
+
+==Walkthrough==
+===A mighty hero===
+Speak to [[Lucien]] in the [[Flying Horse Inn]] in the north-western corner of [[East Ardougne]]. He wants you to retrieve the [[Staff of Armadyl]] from the deserted [[Temple of Ikov (dungeon)|Temple of Ikov]]. Ask him why he can't get it himself, and he will explain that the guardians of the staff have set up a magical barrier that he is unable to overcome, and give you the [[Pendant of lucien]], which is required to enter the Chamber of Fear within the dungeon. He wants you to bring the staff to him in his house in [[Edgeville]] once you have found it.
+
+===The Temple of Ikov===
+{{Needed|pendant of lucien, 20 limpwurt roots, Yew bow or higher '''or''' throwing weapon, light source and knife (only if collecting the boots of lightness)|recommended=Ava's Accumulator, Ranged Armour and [[Protect from Magic]] for ranged style combat}}
+
+In the following section, you will need to briefly reduce your weight to -1kg or less. The easiest method is to use the [[boots of lightness]] found within the dungeon, but any [[weight-reducing clothing]] will work. 
+
+You may wish to bank the limpwurt roots/combat gear and do the dungeon in two trips. You may alternatively bring all of the gear required to complete the quest in one trip, provided you are '''willing to temporarily drop your items''' on the ground and pick them back up again after completing the weightless section (only takes a few seconds).
+
+The temple is located directly south of the [[Ranging Guild]] and west of the [[Sorcerer's Tower]]. Climb down the ladder to enter the [[Temple of Ikov (dungeon)|dungeon]].
+
+===The Boots of Lightness===
+[[File:Temple of Ikov - Bridge.png|thumb|220px|The unsteady bridge.]]
+
+If you have not yet collected your boots of lightness and are using it as your weight reducing method, from the entrance run to the west until you come to a set of stairs. You will need your light source with you to descend. Slash the web, pick up '''and equip''' the [[Boots of Lightness]], then return upstairs.
+
+===The Unsteady Bridge===
+Head through the northern gate of the room while wearing the pendant. Without wearing the pendant, you will stop and receive the message {{mes|As you reach to open the door a great terror overcomes you!}}
+
+Here you will find an unsteady bridge over lava. To successfully cross this bridge, '''your weight needs to be -1kg or less,''' '''{{Colour|red|or you will fail and take 20 damage!}}'''
+
+If you brought extra items, drop them now until your weight displays -2kg to be safe (you will need to pick up a lever weighing 0.056kg). '''Keep your pendant equipped, or you will be unable to retrieve your items if you messed up the weight and fall!'''
+
+Walk across the bridge and take the [[Lever (Temple of Ikov)|lever]] on the other side.
+
+:'''Note''': If you fell, you made a mistake with the weight and must walk to the south and take the ladder. You will appear just south of [[Hemenster]], walk east to return to the Temple of Ikov.
+
+Pick up any dropped items, then head back to the initial room and place the lever on the lever bracket on the wall south-west of the entrance ladder. '''Pull the lever''' to open the southern room. If you forget to pull the lever and leave the area, it will need to be reobtained.
+
+===The Ice Chamber===
+
+After pulling the lever, the southern gate will be unlocked. Enter it and follow the path to the ice chamber filled with level-61 [[ice spider]]s.
+
+You need to gather enough [[ice arrows]] in this room to battle the [[Fire Warrior of Lesarkus]]. If you've chosen to use throwing weapons, you only need to find at least 1 ice arrow. If using a bow, at least 20 arrows are recommended for low levels, though you can get by with much less if you have a high Ranged level and an [[Ava's device]]. 
+
+To gather [[ice arrows]], you must search the 6 [[Closed chest (Temple of Ikov)|chests]] in this room. Only one will contain arrows at a time. Each time you loot a chest with arrows, you'll obtain 1-5 arrows, and a chest is randomly selected as the next spawn for the arrows. '''After obtaining arrows from a chest, search it again''' as it's possible for it to be randomly selected in succession.
+
+===Fire Warrior of Lesarkus===
+{{Needed|skills={{SCP|Thieving|42}} {{Boostable|yes}} to disable a trap}}
+[[File:Temple of Ikov - Fire Warrior of Lesarkus.png|thumb|right|Duelling the [[Fire Warrior of Lesarkus]].]]
+
+When you have enough ice arrows, return to the entrance and again enter the north door with the [[Pendant of Lucien]] equipped. 
+
+:'''Tip:''' You may choose to unequip the pendant after entering if you want to utilise the [[neck slot]] for the following combat section.
+
+Continue north until you see a small alcove with a lever in it. Right-click the lever to ''Search for traps'' ({{SCP|Thieving|42}}), then pull it. '''{{Color|red|If you don't search the lever first, you will fall into a pit of spikes and take 20 damage.}}'''
+
+The door at the end of the western passage will now be unlocked. Open it to enter a room with a summoning mark in the middle of it. Attempt to open the door to the north, and you'll be stopped by the [[Fire Warrior of Lesarkus]].
+
+To continue you must defeat the Fire Warrior. He is intended to only take damage from ice arrows, however using throwing weapons with at least 1 ice arrow equipped will circumvent this without using up the arrows. After interrupting you, he will not attack until you either attack him first or talk to him. He uses solely magic, so [[Protect from Magic]] comes in handy. Using [[Ava's accumulator]] will assist you in not running out of arrows, though you can also pick up fallen arrows during the fight. If you take too long to defeat him or walk too far from the room, he will disappear and you will need to start the fight over.
+
+:'''Note''': If you use the wrong weapon or run out of ice arrows, he will stop the fight and boast that your weapons do nothing, but will not regenerate health if you resume the fight.
+
+After defeating him, proceed through the north door. You'll find [[Winelda]] the witch standing near a stream of lava. She will teleport you across if you hand her 20 unnoted limpwurt roots, '''all given at once'''.
+
+:'''Note''': In case you have to re-enter the room, you do not need to fight the Fire Warrior again or bring the witch more limpwurt roots.
+
+Pass the skeletons until you reach a room behind a brick wall. ''Push'' the wall to enter it.
+
+:'''Tip:''' Before entering consider picking up the [[shiny key]] found past the level-82 [[Lesser demon]]s further along the corridor, which will allow you to access a shortcut to [[McGrubor's Wood]] through a ladder next to the skeleons. This may be useful if you want to return to fight the monsters in this part of the dungeon after the quest.
+
+===Picking a side===
+At this stage you must decide whether to take the staff for Lucien, resulting in combat with a lvl 43 [[Guardian of Armadyl]], or whether to side with the [[Guardians of Armadyl]], who will ask you to defeat a lvl 14 [[Lucien]]. Your choice will have a minor impact on the [[While Guthix Sleeps]] quest dialogue. If you choose to side with Lucien and want to obtain the [[Pendant of Armadyl]] again after the quest (used as protection for the [[God Wars Dungeon]]), you will need to kill the guardians rather than talk to them. Otherwise, the rewards remain the same for both paths.
+
+===Side with the Guardians of Armadyl===
+[[File:Temple of Ikov - Lucien mind trick.gif|thumb|upright|200px|Lucien will use a mind trick on players who aren't wearing the pendant of Armadyl.]]
+{{Color|red|Warning:}} If you don't unequip your pendant or choose the wrong dialogue option, the guardian will attack you.
+
+Unequip your [[Pendant of Lucien]] and talk to the Guardian. Tell them that you seek the [[Staff of armadyl|Staff of Armadyl]] for [[Lucien]], then explain that Lucien offered a grand reward for it. The Guardian will offer to cleanse you to save your soul as a result of working for that 'spawn of evil'. Tell them it's time for "your yearly bath", and they will cleanse you with holy water. They will explain that Lucien is an undead necromancer that raised an army of the undead against Varrock a generation ago. Offer to help defeat him, and they will give you the [[Armadyl pendant]], which must be worn to defeat him. {{Chat option|1I seek the Staff of Armadyl.|1Lucien will give me a grand reward for it!|3You're right, it's time for my yearly bath.|1Ok! I'll help!}}
+
+Head towards Lucien's house which is between [[Edgeville]] and the [[Grand Exchange]]. Defeat him (level 14) while wearing the Armadyl pendant.
+
+'''Congratulations, quest complete!'''
+
+===Side with Lucien===
+[[File:Temple of Ikov - Staff of armadyl.png|thumb|left|200px|The [[Staff of Armadyl]] lying on a table.]]
+You may ignore the conversation with the Guardians. Try to take the [[Staff of Armadyl]] on the table in the north-west room. You will be attacked by a [[Guardian of Armadyl]] (Level 43). Defeat them, and take the staff.
+
+Head towards Lucien's house which is between [[Edgeville]] and the [[Grand Exchange]]. Hand him the staff to complete your quest.
+
+'''Congratulations, quest complete!'''
+{{Clear}}
+==Rewards==
+{{Quest rewards
+|name = Temple of Ikov
+|image = 
+[[File:Temple of Ikov reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Ranged|10,500}} [[Ranged]] [[experience]]
+*{{SCP|Fletching|8,000}} [[Fletching]] experience
+*[[Armadyl pendant]] (if you sided with [[Lucien]], you must kill [[Guardians of Armadyl]] to obtain it)
+*[[Pendant of Lucien]], which grants access to a door in the [[Temple of Ikov (dungeon)|Temple of Ikov]]
+*Optional; [[Boots of lightness]]
+*Optional; [[Shiny key]], for a shortcut between the Temple of Ikov and [[McGrubor's Wood]]
+*Completing this quest awards the player with 5 [[kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]]
+}}
+
+==Required for completing==
+Completion of Temple of Ikov is required for the following:
+* [[Desert Treasure I]]
+* [[Defender of Varrock]]
+
+==Transcript==
+{{hastranscript|Quest}}
+
+==Trivia==
+*Winelda's quote "Bubble bubble, toil and trouble!" is a common misquote of a famous line from William Shakespeare's play ''{{wp|Macbeth}}''.
+*Talking to Winelda for the first time with the 20 unnoted limpwurt in your inventory will automatically cut to the player telling Winelda that they have the limpwurt for her, despite never being told to get them.
+*Attempting to attack Lucien without the Armadyl pendant equipped will result in him waving his hand across your face, saying that you do not want to attack him and that he is your friend. This is a reference to the "Jedi mind trick" from ''{{wp|Star Wars}}''.
+*Previously, the reward scroll specified if the player sided with [[Lucien]] or [[Armadyl]].
+*The Fire Warrior of Lesarkus can be defeated without needing a yew bow by equipping ice arrows and using a throw weapon type such as darts, knives, or throwing axes.
+*In [[RuneScape Classic]], this quest originally gave players ''Level  ×'' 250 + 500 experience in [[Ranged]] and [[Fletching]]. Later, these were set at a static 10,500 and 8,000 experience respectively, corresponding to levels 40 and 30 using the original calculation.
+<gallery>
+Temple of Ikov reward scroll (Lucien).png|The previous quest completion scroll if you sided with Lucien.
+Temple of Ikov reward scroll (Armadyl).png|The previous quest completion scroll if you sided with Armadyl.
+</gallery>
+
+{{Temple of Ikov}}

@@ -1,0 +1,9 @@
+===Impostor Among Goblins===
+{{Needed|[[Toadflax potion (unf)]]|recommended=[[Skills necklace]], enough inventory space to unequip all of your items.}}
+{{Checklist|
+* Head north-west to the temple entrance stairs blocked by two [[Goblin guard (Land of the Goblins)|goblin guards]].
+** Pick a [[black mushroom]] if you don't already have [[black dye]].
+* Talk to the guards for Zanik to pass.
+* Head over and talk to the [[Makeover Mage]] south-west of [[Falador]] using a [[skills necklace]] to the [[crafting guild]] or a Falador teleport. {{Chat option|4 Can you turn me into a goblin?|1 I need to slip past some goblin guards.|2 Can you turn me into a goblin or not?}}
+* Pick the [[pharmakos bush]] outside the building and use the [[pharmakos berries|berries]] on an [[toadflax potion (unf)|unfinished toadflax potion]] to create a [[goblin potion]].
+}}

@@ -1,0 +1,20 @@
+===Robert the Strong===
+'''Items required:''' [[Seal of passage]], 1 [[astral rune]], a [[hammer]], a [[pestle and mortar]], [[goutweed]], [[dream vial]], a [[tinderbox]], melee gear (keep gear in the bank until lighting the brazier to save run energy).
+
+'''Recommended:''' A ''good crush weapon, food and prayer potion as the fight at the end might need it. An emergency teleport DOES work here.''
+{{Checklist|
+{{Instance|irs=at a chest near the brazier|cost=100000}}
+*'''Bring your seal of passage and make sure you have 1 free inventory space!''' Note: You can still use the bank run by [['Bird's-Eye' Jack]] without the seal; however, it is needed to speak to the [[Oneiromancer]].
+*Head to [[Lunar Isle]] and talk to the [[Oneiromancer]]. {{Chat option|3Bob's memories.|1.Yes.}}
+*Crush the astral rune with a hammer, then grind the [[astral rune shards]] with a pestle and mortar.
+*Make a [[dream potion]] by filling the [[dream vial]] with water (sink west of bank in town) and adding your [[goutweed]] and [[ground astral rune]].
+*Gear up for a fight, light the Ceremonial Brazier (located in the largest building on the island), and use your Dream potion on the flame.
+**You may leave to prepare by using the giant history book at the entrance, then rejoin the fight at any time by talking to Bob again.
+*Talk to [[Bob (cat)|Bob]] and [[Not Bob]], then exit out of the dream to gear up if you are not fully prepared. This also allows you to clear out the [[tinderbox]] and fill up with combat supplies.
+*Re-enter the dream by talking to Bob outside the brazier, and then head through the barrier and kill [[Robert the Strong]].
+**He can't be fought with ranged or magic, bring melee gear and a crush weapon.
+**He can hit heavy damage through [[Protect from Missiles]] but it reduces damage taken. Using [[chivalry]] or [[piety]] is recommended to speed up the fight, as the most challenging part about this fight is lasting long enough through the damage taken.
+**When he shouts {{overhead|See if you can hide from this!}}, run behind one of the pillars to avoid his special attack. If it hits you, it can deal up to 60 damage and will knock off your prayers.
+**[[Super combat potion]], an inventory full of food and a [[prayer potion]] are highly recommended. Do not underestimate this fight!
+}}
+*'''Note:''' If you leave the dream, you do '''NOT''' have to remake the dream potion! Talk to Bob to re-enter the dream.

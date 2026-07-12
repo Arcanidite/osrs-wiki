@@ -1,0 +1,47 @@
+==Walkthrough==
+===With friends like these...===
+{{Checklist|
+* Speak to [[Ennius Tullus|Ennius]] or [[Furia Tullus]] outside the [[Sunrise Palace]]. {{Chat option|1Yes.}}
+* Head south to the temple inside city walls and speak to [[Metzli, Teokan of Ranul]]. {{Chat option|1I'm meant to be meeting Prince Itzla here.}}
+* Head down the stairs into the temple crypt.
+* Head north through the gate and talk to [[Prince Itzla Arkan]] and [[Servius, Teokan of Ralos]].
+* Return to Ennius and Furia inside the Sunrise Palace, in the green area by the entrance, to receive a [[Varlamore crest]].
+}}
+
+===Oh Brother!===
+{{Checklist|
+* Six [[Knight of Varlamore (Children of the Sun)|Knight of Varlamore]] must now be found around the city.
+** Arrun and Claudia:
+*** Head south to the bazaar and talk to the first two [[Knight of Varlamore]].
+*** Pickpocket the [[Citizen (Twilight's Promise)|citizen]] in the sky blue toga in the bazaar to retrieve the [[stolen amulet]].
+*** Return to knights to give back the amulet.
+** Nel:
+*** Head to the Fortis Cothon (harbour) to the north-east of the city.
+*** Speak to the knight in the south-west corner of the cothon to find the correct crate (Make sure to finish the dialogue or you cannot successfully search the crate).
+*** Search the crate on the north-east side between two fishing barrels and opposite a bench.
+*** Speak to the knight again.
+** Mezan:
+*** Head inside the [[Fortis Colosseum]] and head north to the training area near the Gladiators. (Bring two different combat styles) (For non-combat accounts, [[poison dynamite]] and recoil can be used)
+*** Talk to the knight and fight him. (Swap combat styles when he prays)
+** Velam and Azali:
+*** Head south of the city walls to the pub, north of the [[Outer Fortis General Store]].
+*** Speak to both knights there and lead one of them to the fountain to the east. Make sure to keep talking to her to keep her from getting distracted, or alternatively you can use the Call Follower button from your inventory page. '''She will not follow you if you have a pet active'''
+*** After the short cutscene, speak to the knight again to progress the quest to the next step.
+* Head back to the Sunrise Palace and speak to Ennius and Furia. They will want you to search the Kualti Headquarters to the west for evidence.
+* Head to the headquarters (large building west of Sunrise Palace) and go to the top floor. Search the southern chest in the south-eastern room to find an [[incriminating letter]].
+* Read the letter.
+* Return to Ennius and Furia, and watch the cutscene.
+* Speak to Ennius again.
+}}
+
+===The Twilight Emissaries===
+{{Checklist|
+* Speak to [[Regulus Cento]] south-east of the palace. {{Chat option|2I was told to ask you about getting to the Teomat.}}
+* Feed [[Renu]]. 
+* Travel with Renu to [[Ralos' Rise]] (The Teomat).
+* Speak with Prince Itzla inside the Teomat temple.
+* Speak to Metzli in the northern building.
+* Defeat all 8 cultists.
+* Finish the cutscene and ensuing dialogue.
+* '''Congratulations, quest complete!'''
+}}

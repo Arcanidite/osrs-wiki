@@ -1,0 +1,13 @@
+===The plans===
+{{Checklist|
+*Talk to [[Al Shabim]] in the south tent in the [[Bedabin Camp]] (directly west of the Desert Mining Camp). You will be given a [[Bedabin key]]. {{Chat option|1I am looking for a pineapple.|1Yes, I'm interested.}}
+*Go back to the Desert Mining Camp. '''(Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)'''
+*Go up the ladder in the jail building and search the southernmost [[bookcase (The Tourist Trap)|bookcase]] on the western wall. A message should pop up stating '''"You notice several books on the subject of sailing."'''
+*In the same room, talk to [[Captain Siad]]. {{Chat option|1I wanted to have a chat?|5You seem to have a lot of books!|3So, you're interested in sailing?|1I could tell by the cut of your jib.}}
+*Open the chest to obtain the [[technical plans]]. (Make sure you click continue, so the plans go to your inventory)
+*Go back to the Bedabin Camp and show Al Shabim the plans. {{Chat option|1Yes, I'm very interested.|1Yes, I'm kind of curious.}}
+*Use the anvil in the northern tent. Following the plans, create a [[prototype dart]].
+**Use a bronze bar to create a [[prototype dart tip]].
+**Use 10 feathers on the tip to create the dart.
+*Take the dart to Al Shabim, who will in return give you the [[Tenti pineapple]].
+}}

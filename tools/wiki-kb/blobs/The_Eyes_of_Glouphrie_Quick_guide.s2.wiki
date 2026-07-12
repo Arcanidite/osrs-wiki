@@ -1,0 +1,68 @@
+==Walkthrough==
+===Digression===
+{{Checklist|
+*Talk to [[Brimstail]] in the cave found in the south-west corner of the Gnome Stronghold. {{Chat option|1What's that cute creature wandering around?|1Yes, that sounds fascinating...|1Oh, yes I love a bit of History.|1Of course!}}
+**Optionally right click teleport on Brimstail for an easy [[Western Provinces Diary]] completion
+}}
+
+===Elven Mystery===
+{{Checklist|
+*Inspect the singing bowl in the western portion of the cave.
+*To the north, attempt to unlock Oaknock's Machine.
+*Talk to Brimstail. {{Chat option|1I've had a look in the other room now.|1Of course, I'd love to!}}
+}}
+
+===Memories===
+{{Checklist|
+*Talk to [[Hazelmere]], located upstairs in his house (on the small island east of Yanille, fairy ring code {{fairycode|cls}} goes directly to his house, [[Nightmare Zone]] [[minigame teleport]] or Watchtower Teleport). There will be several cutscenes, the last being King Healthorg and the white Spirit Tree Argento. You'll know you're done when you get a [[Violet pentagon]] in your backpack.
+*Return to Brimstail. {{Chat option|1I've visited Hazelmere, he told me all sorts of interesting things.}}
+**Get the bucket of sap outside of Brimstail's cave on your way back.
+}}
+
+===Incapacitated===
+{{Needed|[[Hammer]], [[Pestle and Mortar]], [[Saw]], [[Mud rune]], [[Bucket of sap]], [[Maple logs]], [[Oak logs]]}}
+{{Checklist|
+*Use your Mud Rune on the Pestle and Mortar to make Ground Mud Runes.
+*Add the Ground Mud Runes to the Bucket of Sap to make Magic glue.
+*Repair Oaknock's machine (click on the machine twice).
+*Talk to Brimstail. {{Chat option|1I think I've fixed the machine now!}}
+}}
+
+===Anti-Illusion===
+{{Checklist|
+*Talk to Brimstail twice more to receive more discs. {{Chat option|1I }}
+*'''Optional''': Drop the discs and talk to Brimstail to receive even more discs. {{Chat option|1I can't work out what to do with these discs!}}
+}}
+
+===Front Panel===
+{{Checklist|
+* Head back to the Oaknock's machine and unlock the machine.
+}}
+
+===Control Panel===
+{{Colour-shape value|align=right}}
+{{Checklist|
+*Unlock the front panel by inserting a disc with a value equal to the green number. (When done, click the green box next to the number.)
+**You will need to exchange some of the tokens to obtain certain values. (see full guide [[The Eyes of Glouphrie#Sabotage|here]]).
+*Talk to Brimstail for more discs. {{Chat option|1I }}
+*Complete the three puzzles inside the unlocked machine
+**You need to fill up every slot, the first puzzle's single slot, the second's two slots, and the last puzzle's three slots.
+**You will need to exchange some of the tokens to obtain certain values. (see full guide [[The Eyes of Glouphrie#Sabotage|here]]).
+}}
+
+{{Checklist|
+*Talk to Brimstail. {{Chat option|1Phew! I've got that machine working now. What do I need to do now?}}}}
+
+===Assassination===
+{{Checklist|*Talk to Brimstail again. {{Chat option|2Phew! I've got that machine working now. What do I need to do now?}}
+*Kill all Evil Creatures: (wait for the whole death animation to end before running or teleporting away!). Their colour is now black.
+**The one by Brimstail, if you haven't killed it already.
+**One outside of the main gate (south-east from Brimstail's cave). Note: It must be killed within stronghold walls. If it is outside, simply kill it, let it spawn, and kill it again for credit.
+**One by the gnome agility course entrance (near the spirit tree).
+**One by King Narnode, at the bottom of the Grand Tree. If it is stuck behind a trapdoor, kill it with mage or range, or hop worlds. Make sure you wait a few seconds after killing before using the ladder.
+**One at the top of the Grand Tree, by the prison. '''Make sure you wait a few seconds after killing before using the ladder.'''
+**One by the giant tortoises north-west of the Grand Tree (in the pen north of the swamp).
+*Talk to King Narnode.
+**Optional: Use the [[crystal saw seed]] on the [[singing bowl]] by Brimstail to get an enchanted [[crystal saw]], and complete a medium Western Provinces diary task.
+*'''Congratulations, quest complete!'''
+}}

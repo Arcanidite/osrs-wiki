@@ -1,0 +1,14 @@
+==Blackjacks==
+'''Items required:''' ''100 coins (500 if travelling via [[magic carpet]]), food (for players with low hitpoints)''
+
+{{Checklist|
+Ali cannot sell both [[(o)|offensive]] and [[(d)|defensive]] blackjacks at the same time. The following process unlocks defensive blackjacks for sale.
+*Travel to [[Pollnivneach]].
+*Talk to the [[blackjack seller]]. {{Chat option|1Yes}}
+*Talk to the [[street urchin]] and pay him 100 coins. {{Chat option|2Yes}}
+*Talk to the blackjack seller again.
+*Travel back to Al Kharid. Talk to [[Ali Morrisane]]; he will now have [[(d)|defensive blackjacks]] for sale. Buy whatever defensive blackjacks you need now. (They won't be available after the next section; you'll have to repeat this section to get them again.)
+The following process unlocks [[(o)|offensive blackjacks]] for sale.
+*Return to the blackjack seller and talk to him. He will attempt to knock you out twice; this will damage the player. If you get knocked out, keep talking to him. {{Chat option|1I bet you couldn't knock me out with your blackjack.|2I'm sure. No pain, no gain. Grrr!|1Go again.}}
+*Travel back to Al Kharid. Talk to Ali Morrisane. He will now have offensive blackjacks for sale.
+To switch between offensive and defensive blackjacks, repeat their respective steps.}}

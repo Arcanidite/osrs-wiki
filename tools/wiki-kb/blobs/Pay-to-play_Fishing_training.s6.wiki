@@ -1,0 +1,86 @@
+===Levels 58–71/99: Barbarian Fishing===
+{{Main|Heavy rod fishing}}
+[[File:Tick manipulation - cut-eat Fishing.gif|thumb|3-tick Barbarian Fishing using the cut-eat method.]]
+3-tick [[Barbarian Training#Heavy rod fishing|Barbarian Fishing]] becomes one of the fastest training methods at level 58. This method offers small amounts of passive Agility and Strength experience, which makes it an efficient way to train Fishing for players with low Agility and Strength levels.
+
+Even though Barbarian Fishing becomes available at level 48, it is faster to do [[drift net fishing]] or 3-tick fly fishing until level 58, after which the player can catch [[leaping salmon]]. Without tick manipulation Barbarian Fishing is only recommended as a low-effort alternative that offers decent experience rates.
+
+Players must complete a portion of [[Barbarian Training]] to be able to catch [[leaping fish]]. Having level 30 [[Agility]] and [[Strength]] is required for catching leaping salmon, and level 45 in both for leaping sturgeon. Players will also need suitable bait, such as [[feather]]s, and a [[barbarian rod]] obtained from [[Otto's Grotto]]. For 3-ticking, players will also need suitable items such as herb and tar or knife and teak/mahogany logs, and a knife if also cutting the fish.
+
+The best spot for Barbarian Fishing is at the pond next to the [[Otto's Grotto]]. Players can quickly get there by using a [[games necklace]] or [[Minigame Teleport]] to [[Barbarian Assault]] and running south-west.
+
+The basic method for 3-tick fishing is to drop the fish between catches. To do so, start the 3-tick cycle, drop the fish using shift drop, and click on the fishing spot. This requires accurate clicking and some practice to perform consistently, but it is more efficient than dropping a full inventory.
+
+"Cut-eat" or "eat-cut" fishing (depending on the order) is a more advanced and slightly more click-intensive method. Having at least level 80 Cooking is recommended for a 100% cut rate for leaping salmon and sturgeon. Cut-eat fishing is done by starting a 3-tick cycle with herb and tar, cutting the fish with a knife and eating the roe/caviar to tick manipulate. When you run out of roe/caviar to be eaten and fish to be cut, use herb and tar to continue the 3-tick cycle. The benefits of this method is that it provides some passive [[Cooking]] experience, it does not require players to drop fish, and it is slightly cheaper due to [[fish offcuts]] also being produced which are used as bait over feathers. However, it is less predictable due to randomness being involved, which may take time getting used to. It is also stricter with timing; if the cutting and eating is done too late, the cycle becomes offset.
+
+If looking for a less intensive option, use the fishing spot at [[Mount Quidamortem]] and bank the fish at the [[Chambers of Xeric]] bank chest. Use the [[fish barrel]] for longer trips. Alternatively, use the spot at Otto's Grotto and simply drop the fish.
+
+The experience rates in the table below assume the player is not wearing the [[angler's outfit]]. The AFK rates include the time spent dropping the fish, and the actual rates vary depending on how fast the fish are dropped. The Cooking rates from using the cut-eat method assumes level 99 Cooking; having level 80 Cooking would lower the rate by roughly 1,000 Cooking experience per hour.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! colspan="3" | XP/h (AFK)
+! colspan="4" | XP/h (3-tick)
+|-
+! {{SCP|Fishing}}
+! {{SCP|Strength}}/{{SCP|Agility}}
+! {{SCP}} Total
+! {{SCP|Fishing}}
+! {{SCP|Strength}}/{{SCP|Agility}}
+! {{SCP|Cooking}}
+! {{SCP}} Total
+|-
+| 48
+| 23,000
+| 2,300
+| 27,600
+| 41,000
+| 4,100
+| 5,400
+| 54,600
+|-
+| 58
+| 37,000
+| 3,400
+| 43,800
+| 68,000
+| 6,300
+| 9,300
+| 89,900
+|-
+| 70
+| 48,000
+| 4,400
+| 56,800
+| 90,000
+| 8,200
+| 13,800
+| 120,200
+|-
+| 80
+| 52,000
+| 4,700
+| 61,400
+| 97,000
+| 8,800
+| 14,800
+| 129,400
+|-
+| 90
+| 54,000
+| 4,900
+| 63,800
+| 103,000
+| 9,300
+| 15,800
+| 137,400
+|-
+| 99
+| 57,000
+| 5,200
+| 67,400
+| 108,000
+| 9,800
+| 16,800
+| 144,400
+|}

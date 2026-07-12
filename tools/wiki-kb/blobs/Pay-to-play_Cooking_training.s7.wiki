@@ -1,0 +1,23 @@
+===Levels 35/68–99: Jug of wine===
+Making [[jug of wine|jugs of wine]] offers fast experience, though requires more attention than cooking fish or casting Bake Pie.
+
+Jugs of wine are made by combining [[grapes]] with [[jug of water|jugs of water]] to make [[unfermented wine]]s. After finishing an inventory, deposit the unfermented wines into the bank and continue by making another inventory. After 12 seconds pass without creating an unfermented wine, all unfermented wines in the player's bank and inventory will ferment into jugs of wine, giving 200 experience each. Players do not have to wait for the wines to ferment while making them.
+
+Grapes are added to jugs of water once per 2 ticks. However, with only 14 wines produced per inventory and with twice the creation speed, jugs of wine require more attention and banking than fish; one inventory of wines is created in 16.8 seconds, whereas an inventory of fish takes 67.2 seconds to cook.
+
+Below level 68, a [[jug of bad wine]] can be produced for 0 experience, with the failure chance scaling with level. If below level 68, only make enough wines to get to their next cooking level (and a few extra to account for failures), then pause for 12 seconds to let the wines ferment and gain the level.
+
+Players can gain up to 490,000 experience per hour from level 68 onwards. 
+
+Jugs of wine required: 62,147
+
+* Experience required: 12,429,399
+* {{Coins|{{GEP|Jug of water}}}} per [[jug of water]]
+* {{Coins|{{GEP|Grapes}}}} per [[grapes]]
+* {{Coins|{{GEPT|Jug of wine}}}} value per [[Jug of wine]]
+* {{Coins|{{#vardefineecho:winecost|{{#expr:{{GEPT|Jug of wine}}-{{GEP|Jug of water}}-{{GEP|Grapes}}}}}}}} cost per [[wine]]
+* {{Coins|{{#var:winecost}}/200 round 3}} cost per XP
+* {{Coins|{{#var:winecost}}*62147}} cost from level 68-99
+* {{Coins|{{#var:winecost}}*2450}} cost per hour (at 490,000 experience rate)
+* Experience per hour: from 470,000 to 490,000
+* Time spent: 25 hours, 30 minutes

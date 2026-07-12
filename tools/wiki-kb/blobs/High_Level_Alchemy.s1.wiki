@@ -1,0 +1,11 @@
+==Cost==
+The [[Explorer's ring 4]] can be used to cast High Level Alchemy up to 30 times per day without requiring any runes. Players will not gain any experience when casting High Level Alchemy this way, but this can be used regardless of the player's current [[spellbook]].
+
+Standing near the [[Fountain of Rune]] in the [[Wilderness]] allows players to cast High Level Alchemy without requiring any runes. Players will not gain any experience when casting High Level Alchemy this way. This method can be used to turn a greater profit when alching by removing the cost of runes, but comes with significant risk, as the Fountain of Rune is a hotspot for [[Player killing|player killers]].
+
+{{Spell cost table
+|Rune1 = fire
+|Rune1num = 5
+|Rune2 = nature
+|Rune2num = 1
+}}

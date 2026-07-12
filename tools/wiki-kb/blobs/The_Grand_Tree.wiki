@@ -1,0 +1,169 @@
+{{External|rs|rsc=Grand tree}}
+{{Otheruses|the quest|the location|Grand Tree}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = The Grand Tree
+|number = 40
+|image = [[File:The Grand Tree.png|300px]]
+|release = [[12 December]] [[2002]]
+|update = Agility skill online
+|members = Yes
+|series = [[Quests/Series#Gnome|Gnome]], #1
+|developer = [[Mod Tom|Tom W]]
+}}
+'''The Grand Tree''' is a [[gnome]] [[quest]] centred on protecting the [[Grand Tree]] from dying upon the gnome race.
+
+==Details==
+{{Quest details
+|start = Talk to [[King Narnode Shareen]] in the [[Grand Tree]].
+|startmap = 2466,3495
+|difficulty = Intermediate
+|description = The [[Grand Tree]], which shelters the majority of the small gnome population of Gielinor, is dying. Is it human sabotage or an inside job? Help [[King Shareen]] to find the true cause and save the tree gnomes from an uncertain fate.
+|length = Medium
+|requirements = * {{SCP|Agility|25|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 172 [[Black demon (The Grand Tree)|Black demon]] (safespottable for Ranged and Magic or melee using a [[halberd]]).
+|items = * 1,000 [[coins]] if you previously chose not to help [[Femi]] on your first entry to the [[Tree Gnome Stronghold]] (not required if you never used the gate entrance)
+|recommended = *{{SCP|Combat|50|link=yes}}
+*[[Stamina potion|Stamina]] or [[energy potions]]
+*[[Combat equipment]] to defeat a level 172 [[Black demon (The Grand Tree)|Black demon]], [[Magic]] recommended
+*Fast travel to several locations:
+**[[Tree Gnome Stronghold]] to start the quest, plus 2 additional trips - [[spirit tree]] from [[Grand Exchange]] or [[Battlefield]], [[slayer ring]] to the [[Stronghold Slayer Cave]], [[Balloon Transport System]], or [[necklace of passage]] to the [[Outpost]]
+**[[Hazelmere]]'s house (1 trip) - [[fairy ring]] {{Fairycode|cls}}, [[Watchtower Teleport]], [[Teleport to House]] (Yanille), [[Minigame Teleport]] to [[Nightmare Zone]] or [[Fishing Trawler]], [[Ardougne cloak]] 1-4 to [[Ardougne Monastery]], or [[ring of dueling]] to [[Castle Wars]]
+|kills = * [[Black demon (The Grand Tree)|Black demon]] ''(level 172)'' (can be safespotted)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}
+
+==Walkthrough==
+===The dying tree===
+{{Needed|recommended=Fast travel to Hazelmere and Tree Gnome Stronghold}}
+[[File:King Narnode Shareen chathead.png|left|frameless]]
+{{Map|x=2678|y=3086|plane=1|r=2|mtype=square|width=220|height=220|align=right|caption=Hazelmere's house on the map.}}
+Ensure you have two free inventory slots, then speak to [[King Narnode Shareen]] on the {{FloorNumber|uk=0}} of the [[Grand Tree]]. He will take you underground to show you the roots of the tree, which appear to be dying. He will give you a [[translation book]] and a [[bark sample]] and ask you to take the sample to [[Hazelmere]], the last surviving gnome mage involved in creating the tree.
+
+[[Hazelmere]] is found on a small island east of [[Yanille]], upstairs in his house. There are [[jungle spider]]s (level 44) on the way, although they are not [[poison]]ous.
+
+Talk to [[Hazelmere]], who will take your [[bark sample]], and after examining it, give you a [[Hazelmere's scroll|message]] written in his language.
+
+Return to King Narnode in the [[Grand Tree]], who will ask what the translation is. The correct translation can be deciphered using the [[translation book]] and reads: 
+
+{{quote|A man came to me with the King's seal.<br/>I gave the man [[Daconia stone|Daconia rocks]].<br/>And Daconia rocks will kill the tree!}}
+
+Give him the correct translation from the options offered, selecting none of the above for the first two choices. {{Chat option|1I think so.|5None of the above.|5None of the above.|2A man came to me with the King's seal.|1I gave the man Daconia rocks.|4And Daconia rocks will kill the tree!}}
+
+The king will exclaim that someone must have forged his seal to obtain the [[Daconia rock]]s, which were made as a "fail-safe" and are the only thing that can kill the tree. He will direct you to talk to [[Glough]], his head tree guardian. 
+
+===Charlie the prisoner===
+{{Needed|1,000 [[coins]] (if you haven't helped [[Femi]])|recommended=Fast travel to Tree Gnome Stronghold}}
+{{Map|x=2477|y=3463|r=3|width=220|height=220|mtype=square|align=right|caption=Glough's house location.}}
+[[File:Glough chathead.png|left|frameless]]
+Glough is located in a treehouse south of the [[Grand Tree]], east of the ramp by the hot air balloon. After remarking that humans can't be trusted, he will tell you that he will take care of the problem.
+
+Return to [[King Narnode Shareen]], who informs you that [[Glough]] has caught and imprisoned a human found with the [[Daconia rock]]s.
+
+[[File:The Grand Tree - Talking to Charlie.png|thumb|left|220px|Talking to Charlie.]]
+
+Head to the top floor to speak with [[Charlie (prisoner)|Charlie]] the prisoner. He tells you that Glough paid him to retrieve the rocks from Hazelmere. He doesn't know what Glough is up to, but suggests you search Glough's house for evidence.
+
+Go to Glough's house and search the [[cupboard (The Grand Tree)|cupboard]] to find his [[Glough's journal|journal]], which describes how he plans to convince the tree gnomes that humans are naturally evil and must be destroyed. Confront Glough, who calls a guard over to lock you in the cell next to Charlie's. Talk to Charlie, who mentions he delivered a large amount of gold to the [[Shipyard (Karamja)|shipyard]] on [[Karamja]]. He suggests you give the foreman there a visit to covertly see if he knows what Glough is up to, and gives you the password to access it, which is '''Ka-Lu-Min'''.
+
+[[King Shareen|The king]] will appear and apologise for Glough imprisoning you. He will tell you that guards are watching the entrances, and tells you to quickly escape on the [[Gnome glider]] on the top floor of the [[Grand Tree]], next to the cells. Talk to the pilot. He will ask you where you want to go and you will ask him to fly you to [[Karamja]].
+{{Clear|left}}
+===Karamja investigation===
+[[File:Foreman chathead.png|80px|left|frameless]]
+The glider will crash land just west of the Shipyard. Run east, avoiding the [[aggressive]] level 53 [[jogre]]s, and attempt to open the gate to the Shipyard. A [[shipyard worker]] will stop you; tell him Glough sent you, then give him the password '''Ka-Lu-Min'''.
+
+Once inside, find the level 23 [[foreman]] on the southern docks. You may either kill him or talk to him to receive a [[lumber order]].
+
+If you choose to talk to him, tell him Glough sent you, then answer some personal questions about Glough. He will ask how his wife is, select "'''Sadly his wife is no longer with us'''".
+He will then ask what his favourite dish is, select "'''Worm holes'''".
+Finally, he will ask for his new girlfriend's name, which is "'''Anita'''". {{Chat option|3Sadly his wife is no longer with us!|2He loves worm holes.|1Anita.}}
+
+You need to return to The Grand Tree to show the king the lumber order which is evidence of Glough's invasion plans, but Glough has ordered the guards not to let you in. If you have completed the [[Tree Gnome Village]] quest, you can sneak in by using the [[Battlefield]] [[spirit tree]] or the [[Grand Exchange]] [[spirit tree]].
+
+Alternatively, talk to [[Femi]] by the gate to the stronghold. Tell her you need to get inside, and she will sneak you in. She will help you for free if you never entered the stronghold through the gate before, or if you chose to help her move boxes the first time you entered. If you chose not to help her when you first entered, she will charge you 1,000 coins.
+
+===Tuzo===
+{{Needed|[[Lumber order]]|skills={{SCP|Agility|25}} {{Boostable|yes}} to climb the watchtower}}
+{{Map|x=2391|y=3511|r=3|width=220|height=220|align=left|caption=Anita's house on the map.|mtype=square}}
+[[File:The Grand Tree - Using the twigs.png|thumb|220px|Using the twigs on the pillars.]]
+
+After you show [[King Shareen|the king]] the [[Lumber order|note]] from the [[foreman]], he still will not believe your accusations, call you as paranoid as [[Glough]], and ask you to leave for your own safety.
+
+Speak to [[Charlie]] the prisoner again on the top floor of the [[Grand Tree]], who says he heard Glough mention a chest key that he left at his girlfriend [[Anita]]'s house. In the north-west corner of the stronghold, climb up the most north-western ladder by the tortoise pens to speak to [[Anita]] and she will give you [[Glough's key]] and ask you to return it to him.
+
+Go to Glough's house, and use the key to open the chest. Inside, you will find his [[invasion plans]] detailing his plan to seize control of [[Gielinor]]. '''Click continue''' to receive the plans.
+
+Ensure you have four free inventory spaces, then take the invasion plans to the king. He will still not believe you, stating that anyone could have made the plans. He will give you four bundles of [[twigs]], which was all his guards could find when searching Glough's house.
+
+Return to Glough's house, and climb up the watchtower. This tree is located on the east side of the {{FloorNumber|uk=1}} by the chest and requires {{SCP|Agility|25}} to climb. Up in the watchtower, you will find a stone stand and four pillars. Use the twigs with the four pillars to spell out ''TUZO'', starting from the far left. Using the [[Translation book]], this translates to "open." After you have placed the twigs on the four pillars, you will hear gears turning, activating the trap door on this platform, '''but do not go in yet unless you are prepared for the fight.'''
+
+{{Clear|left}}
+
+===Encountering the Black demon===
+{{Needed|[[Combat]] [[equipment]] and [[food]] to last in a fight against a level 172 [[Black demon (The Grand Tree)|Black demon]]}}
+[[File:Black demon (The Grand Tree, 1) safespot.png|thumb|250px|right|Safespot 1: The recommended safespot located directly north of the entrance ladder.]]
+
+Climb down the trapdoor into the cave below, and [[Glough]] will appear, threatening you with his plans to wipe out humans. '''Complete the conversation''' without interacting with anything else, or you will have to re-enter and repeat it. A level 172 [[Black demon (The Grand Tree)|black demon]] will appear down the tunnel and immediately attack you.
+
+It can be fought with any combat style, but can be [[safespotted]] with [[Ranged]], [[Magic]] or a [[halberd]]. To safespot, immediately move one tile to the north and then east (adjacent to the ladder, see the picture).
+
+[[Magic]] is recommended, as the demon has a negative magic defence bonus. Use [[water spells]] if available to you as it has a 40% [[Elemental weakness|weakness]] to water spells.
+
+:'''Note:''' If the demon is not killed within 10 minutes, it will '''disappear''' and the battle needs to be '''restarted'''. To do so, walk through the tunnel and leave through the ladder next to [[King Narnode Shareen]], and re-enter Glough's trapdoor.
+
+:'''Note for 10HP pures:''' With [[Bind]], it is possible to kill the demon with a cannon with at least 120 cannonballs.  When the scene begins, use Bind on the demon immediately and set up the cannon just 2-3 spaces west of the ladder you used to enter. If you die during setup the cannon will remain. You will know the cannon is in the right area if you can reload it from the ladder safespot. If the cannon aggros a rat during the fight without killing it, the cannon may stop firing, and you will need to take aggro from the demon by moving forward and back, or lure the rat away.
+
+===The adamant king===
+[[File:Daconia rock detail.png|left|70px]]
+After defeating the demon, walk along the passage until you find [[King Shareen]] standing by a ladder. Talk to him and tell him that Glough sent a demon to attack you. Not believing you, he will finally send a guard to scout for Glough, finding him hiding amongst the stones. The king apologises, and asks you to locate the last [[Daconia rock]].
+
+Ensure you have one free inventory space, then search the [[Root (The Grand Tree)|roots]] all around the area until you find the Daconia rock. It may be in any of the roots, so keep going until you have found the rock. '''Click continue''' once you find it or it won't appear in your inventory. If you somehow lose the rock, it'll spawn in the root where you first found it.
+
+Talk to King Shareen again for your reward for saving the Grand Tree.
+
+'''Congratulations, quest complete!'''
+
+==Rewards==
+{{Quest rewards
+|name = The Grand Tree
+|image = [[File:The Grand Tree reward scroll.png|centre]]
+|qp = 5
+|rewards = *{{SCP|Attack|18,400}} [[Attack]] [[experience]]
+*{{SCP|Agility|7,900}} [[Agility]] [[experience]]
+*{{SCP|Magic|2,150}} [[Magic]] [[experience]]
+*Access to the [[Grand Tree mine|mine]] under the [[Grand Tree]].
+*Access to the [[Gnome glider]] transportation system.
+*Ability to use the [[Rocks (Tree Gnome Stronghold)|rocks]] as an [[Agility shortcut]] from the Grand Tree to the [[Barbarian Outpost]] (with 37 [[Agility]]).
+*Ability to use the spirit tree in the Stronghold after the completion of [[Tree Gnome Village]].
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]].
+
+Unlocks:
+* [[Black demon]] accessible in the [[Nightmare Zone]].
+}}
+
+==Required for completing==
+Completion of The Grand Tree is required for the following:
+*[[Monkey Madness I]]
+*[[The Eyes of Glouphrie]]
+
+==Transcript==
+{{hastranscript|quest}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 21 April 2021
+|update = Fishing Trawler Improvements and Equipment Rebalance: Part One
+|change = Dialogue and quest progression in The Grand Tree quest has been improved.
+}}
+{{Subject changes
+|date = 25 April 2013
+|update = Patch Notes (25 April 2013)
+|change = The Grand Tree showdown with the Black demon now works like a cutscene.
+}}
+{{Subject changes footer}}
+
+{{The Grand Tree}}
+{{DEFAULTSORT|Grand Tree, The}}

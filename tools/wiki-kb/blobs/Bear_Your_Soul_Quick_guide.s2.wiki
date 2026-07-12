@@ -1,0 +1,10 @@
+==Walkthrough==
+{{Map|1632,3807|r=25|align=right|mtype=square|caption=The Arceuus Library is found in the north-west section of the city.}}
+{{Checklist|*Find and read the book [[Soul journey]] in the [[Arceuus Library]]. fairy code CIS.
+*Talk to [[Aretha]] at the [[Soul Altar]]. {{Chat option|3I've been reading your book...|1Yes please.}}
+*Go to the Arceuus church east of the library and climb up a staircase to get inside.
+*Climb down the inner staircase to the courtyard in the centre.
+*Dig anywhere to get the [[Damaged soul bearer]].
+*Speak to the [[Key Master]], who is found in [[Cerberus' Lair]] within the [[Taverley Dungeon]].
+*Receive the [[Soul bearer]].
+*'''Congratulations, quest complete!'''}}

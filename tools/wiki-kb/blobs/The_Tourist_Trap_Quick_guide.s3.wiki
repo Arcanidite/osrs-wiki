@@ -1,0 +1,4 @@
+===Getting started===
+{{Checklist|
+*Begin the quest by talking to [[Irena]], located just south of [[Shantay Pass]] (fairy ring {{Fairycode|BIQ}}, then run north-east). {{Chat option|1What's the matter?}}
+}}

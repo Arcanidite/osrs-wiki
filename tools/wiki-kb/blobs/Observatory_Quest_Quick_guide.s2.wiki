@@ -1,0 +1,74 @@
+==Walkthrough==
+[[File:Observatory Quest - Quest map.png|thumb|420px|Map Showing the [[Observatory Quest]] Legend:<br/>
+1: [[Observatory]],
+a: Furnace (for [[molten glass]] and [[Bronze bar]]),
+b: Planks (2x),
+c: Copper and tin mines,
+d: Sandpit,
+e: Superantipoison(1),
+f: Antipoison(1) chest,
+g: Trader Crewmember (sells [[Soda ash]] and [[Bucket of Sand]], both 5 coins each),
+A: Quest Area (Area to travel, from begin to end, if item collected beforehand).]]
+
+===Fixing the Observatory===
+{{Checklist|
+*Speak with the [[Observatory professor]]. {{Chat option|1 Talk about the Observatory quest.|2 An Observatory?|1 Sounds interesting. How can I help?}}
+*Give the Observatory professor the three [[plank]]s, [[bronze bar]] and [[molten glass]] (speak to him 3 separate times {{Chat option|1 Talk about the Observatory quest.}} each time).
+*Speak to the assistant.
+*Go up the east hill and down the stairs.
+*Once downstairs, search all the chests until you find the [[goblin kitchen key]] (most commonly found in south-eastern part when you go down the stairs, '''don't skip the dialogue once you find the key or you will not pick it up'''. If not found in the two chests directly south-east from the stairs, it is guaranteed to be in the last chest in the dungeon. The other chests will contain poisonous spiders.).
+*Head north from the entrance in the dungeon, then go west to the kitchen gate and prod the [[Goblin guard#Sleeping|sleeping guard]], then kill or trap him.
+*Open the gate and inspect the goblin stove.
+*Go back and speak to the professor with the [[lens mould]] in your inventory. {{Chat option|1 Talk about the Observatory quest.}} He will give back the needed molten glass for the next part. 
+*Use the [[molten glass]] on the [[lens mould]].
+*Speak to the professor to give him the [[lens mould]] and the [[observatory lens]]. {{Chat option|1 Talk about the Observatory quest.}}
+*Head back into the goblin dungeon.
+*Run past the kitchen and climb up the stairs in the south end of the dungeon. (During the cutscene, DO NOT CLICK on anything in the observatory or you'll have to restart the cutscene)
+
+}}
+
+===Finishing up===
+{{Checklist|
+*After the cutscene, talk to the professor upstairs and view the telescope. {{Chat option|1 Talk about the Observatory quest.}}
+*Talk to the professor again and identify the constellation you saw (see table below). {{Chat option|1 Talk about the Observatory quest.}}
+}}
+{|class="wikitable" style="text-align:center;"
+!Name & Reward
+!Picture
+!Name & Reward
+!Picture
+|-
+|'''Aquarius'''<br/>25 [[Water rune]]s, [[uncut sapphire]]
+|[[File:Star Chart Viewer Aquarius.png|180px]]
+|'''Aries'''<br/>875 [[Attack]] [[experience]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Aries.png|180px]]
+|-
+|'''Cancer'''<br/>[[Amulet of defence]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Cancer.png|180px]]
+|'''Capricorn'''<br/>875 [[Strength]] [[experience]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Capricorn.png|180px]]
+|-
+|'''Gemini'''<br/>[[Black 2h sword]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Gemini.png|180px]]
+|'''Leo'''<br/>875 [[Hitpoints]] [[experience]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Leo.png|180px]]
+|-
+|'''Libra'''<br/>3 [[Law rune]]s, [[uncut sapphire]]
+|[[File:Star Chart Viewer Libra.png|180px]]
+|'''Pisces'''<br/>3 [[Tuna]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Pisces.png|180px]]
+|-
+|'''Sagittarius'''<br/>[[Maple longbow]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Sagittarius.png|180px]]
+|'''Scorpio'''<br/>[[Weapon poison]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Scorpio.png|180px]]
+|-
+|'''Taurus'''<br/>[[Super strength|Super strength(1)]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Taurus.png|180px]]
+|'''Virgo'''<br/>875 [[Defence]] [[experience]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Virgo.png|180px]]
+|}
+
+{{Checklist|
+*'''Congratulations, quest complete!'''
+}}

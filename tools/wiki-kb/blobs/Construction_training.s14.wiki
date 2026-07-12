@@ -1,0 +1,193 @@
+===Levels 52–99: Mahogany furniture===
+Building mahogany furniture becomes the fastest viable training method at level 52. It is very expensive, so look into cheaper alternatives (such as teak or oak furniture) if trying to save money. Players can gain up to around 900,000 experience per hour with [[mahogany table]]s, or 1,100,000 experience per hour with [[gnome bench]]es.
+
+[[Mahogany table]]s in the [[dining room]] are the fastest way to use [[mahogany plank]]s until level 77. Each mahogany table requires 6 mahogany planks and gives 840 experience. The optimal method is to build 3 tables and remove 2 tables in the time the [[demon butler]] takes to fetch 24 planks from the bank (22 ticks/inventory cycle on a consistently low-ping world). In higher-ping worlds, it is recommended to remove 3 tables and build 2 tables (23 ticks/inventory) or build 2 tables and remove 2 tables (24 ticks/inventory) while the demon butler fetches planks. The 22-tick inventory cycle is shown below:
+{| class="wikitable"
+!Tick
+!Input 1
+!Input 2
+!Action 1
+!Action 2
+|-
+!1
+|1
+|Right-Left  Click
+|Remove
+|Build  Menu
+|-
+!2
+|6
+|
+|Build
+|
+|-
+!3
+|
+|
+|Build
+|
+|-
+!4
+|
+|
+|Build
+|
+|-
+!5
+|
+|Right-Left  Click
+|
+|Remove  Dialogue
+|-
+!6
+|1
+|Click  Demon Butler
+|Remove
+|Demon  Butler Menu
+|-
+!7
+|
+|Move  Mouse Back
+|
+|
+|-
+!8
+|1
+|Right-Left  Click
+|Demon  Butler Leaves
+|Build  Menu
+|-
+!9
+|6
+|
+|Build
+|
+|-
+!10
+|
+|
+|Build
+|
+|-
+!11
+|
+|
+|Build
+|
+|-
+!12
+|
+|Right-Left  Click
+|
+|Remove  Dialogue
+|-
+!13
+|1
+|Right-Left  Click
+|Remove
+|Build  Menu
+|-
+!14
+|6
+|
+|Build
+|
+|-
+!15
+|
+|
+|Build
+|
+|-
+!16
+|
+|
+|Build
+|
+|-
+!17
+|
+|Right-Left  Click
+|
+|Remove  Dialogue
+|-
+!18
+|1
+|Right-Left  Click
+|Remove
+|Build  Menu
+|-
+!19
+|6
+|
+|Build
+|
+|-
+!20
+|
+|
+|Build
+|(Demon  Butler Returns)
+|-
+!21
+|
+|
+|Build
+|
+|-
+!22
+|
+|Right-Left  Click
+|
+|Remove  Dialogue
+|}
+With good attention, players can easily expect to go from level 52 to level 77 within 2 hours.
+
+At level 77, players can build [[gnome bench]]es in the [[superior garden]], which offers the best possible experience rate of just over 1,100,000 experience per hour. Gnome benches require 6 mahogany planks and give 840 experience, just like the tables; however, benches can be built and removed in alternation since the two hotspots are adjacent to one another.
+
+The method for building gnome benches is as follows:
+
+#Stand on the inner tile between both bench hotspots with 18 Mahogany Planks. One bench should already be built.
+#Call servant and send the Demon Butler to bring 24 Mahogany Planks from your bank.
+#On the next tick, click to remove the built bench.
+#On the next tick, click to build on the ''other'' empty hotspot.
+#Every time you build a bench, repeat steps 3 and 4 until you run out of planks. 
+#The Demon Butler will return and restock your planks.
+#Remove and build one bench using the new supplies before returning to step 2.
+This method takes advantage of the fact that removing furniture takes only one tick and can occur simultaneously with opening the build interface to save time. This allows for a third build rotation while the Demon Butler is collecting supplies from the bank, as compared with only two rotations if building and removing on only one hotspot. 
+
+{| class="wikitable align-right-1"
+!Levels
+!XP needed
+!colspan=2 | Object
+!# for goal
+!Planks required
+!Plank cost
+!Servant cost
+!Cost per XP
+|-
+|52–77
+|1,351,921
+|{{plinkt|Mahogany table|pic=Mahogany table icon|rowspan=2}}
+|{{plinkp|Mahogany table|pic=Mahogany table icon}} 1,610
+|{{plinkp|Mahogany plank}} 9,660
+|{{Coins|-{{GEP|Mahogany plank|9660}}}}
+|{{Coins|{{#expr:-9660*10000/8/24 round 0}}}} 
+|rowspan=3|{{Coins|-({{GEP|Mahogany plank}}+10000/8/24)/140 round 2}}<ref group=c>Cost per XP with servant.</ref><br/>/ {{Coins|-({{GEP|Mahogany plank}})/140 round 2}}<ref group=c>Cost per XP without servant.</ref>
+|-
+|52–99
+|12,910,771
+|{{plinkp|Mahogany table|pic=Mahogany table icon}} 15,370
+|{{plinkp|Mahogany plank}} 92,220
+|{{Coins|-{{GEP|Mahogany plank|92214}}}}
+|{{Coins|{{#expr:-92214*10000/8/24 round 0}}}}
+|-
+|77–99
+|11,558,850
+|{{ilinkt|Gnome bench}}
+|{{plinkp|Gnome bench|pic=Gnome bench icon}} 13,761
+|{{plinkp|Mahogany plank}} 82,566
+|{{Coins|-{{GEP|Mahogany plank|82566}}}}
+|{{Coins|{{#expr:-82566*10000/8/24 round 0}}}}
+|}
+{{reflist|group=c}}

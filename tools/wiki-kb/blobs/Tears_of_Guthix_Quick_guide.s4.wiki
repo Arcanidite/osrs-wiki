@@ -1,0 +1,7 @@
+===The Bowl of Stone===
+{{Checklist|*Use a cut [[Sapphire]] on a [[Bullseye lantern (unf)|Bullseye lantern frame]].
+*Light the [[Sapphire lantern]] with a tinderbox.
+*Climb back up the rock to the north and then use the lantern on one of the [[Light creature]]s above the chasm.
+*Mine a rock, use a chisel on it and climb down the rocks to the east.
+*Talk to Juna.
+*'''Congratulations, quest complete!'''}}

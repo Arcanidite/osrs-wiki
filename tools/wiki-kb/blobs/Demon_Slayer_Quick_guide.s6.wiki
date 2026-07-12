@@ -1,0 +1,7 @@
+===Delrith===
+{{Checklist|
+*Return to Sir Prysin (south-west room of Varrock Castle) and give him the keys.
+*Wield Silverlight and go to the [[Dark wizard]]s by Varrock's south entrance. A cutscene will occur.
+*Defeat [[Delrith]]; right-click Delrith and banish him with the incantation seen earlier. The incantation varies from player to player; Aris will remind players of the incantation if forgotten.
+*'''Congratulations, quest complete!'''
+}}

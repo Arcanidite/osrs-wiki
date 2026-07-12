@@ -1,0 +1,52 @@
+==Walkthrough==
+===Getting started===
+{{Checklist|Bring all required items for the quest with you.
+*Talk to [[King Arthur]]. {{Chat option|1|1I want to become a knight of the round table!}}
+*Talk to [[Sir Gawain]], who can be found in the courtyard to the south or nearby in the castle. {{Chat option|3Do you know how Merlin got trapped?}}
+*Talk to [[Sir Lancelot]] upstairs. {{Chat option|3Any ideas on how to get into Morgan Le Faye's stronghold?}}
+*Go to [[Catherby]].
+**If you didn't bring a bucket of wax, grab [[insect repellent]] in the house north of the bank in Catherby.
+**Use the insect repellent on one of the beehives to the west with an empty bucket (a bucket can be found near the beehives) in your inventory to get a bucket of wax.
+*Hide in the crate east of the [[candle maker]]'s shop. {{Chat option|1Yes}} Wait and finish the cutscene. Climb out of the crate. {{Chat option|1Yes}}
+}}
+
+===Inside the keep===
+{{Checklist|
+*Climb to the top floor. The [[Renegade Knight]]s will attack you on your way up.
+*Attack [[Sir Mordred]]. He cannot be safespotted, but he can be flinched using the stairs (position him on the square left of the stairs whilst flinching from the square north-east of him). He can also be killed with [[rings of recoil]]s or by another account poisoning and attacking right before his death.
+*When Sir Mordred reaches 0 hitpoints, Morgan Le Faye will appear and ask that you spare him. Spare his life to discover how to save Merlin. {{Chat option|1Tell me how to untrap Merlin and I might.|2OK I will do all that.}} {{Colour|red|Warning:}} Do '''not''' interrupt the dialogue or you will have to fight Sir Mordred again.
+**If you don't already have bat bones, exit the keep through the west doors and kill a bat before leaving.
+**Can be recoiled down after dealing a 0 and not splashing Magic.}}
+
+===Black candle===
+{{Checklist|
+*Talk to the candle-maker in Catherby. {{Chat option|1Have you got any black candles?}}
+*Talk to him again for a black candle.
+}}
+
+===Excalibur===
+{{Checklist|
+*Talk to [[The Lady of the Lake]] south-east of [[Taverley]] on the peninsula. {{Chat option|3I seek the sword Excalibur.}}
+*Go to [[Port Sarim]]. (Make sure you have bread in your inventory.)
+*Enter the jewellery shop to the north.
+*Give the beggar your bread. {{Chat option|1Yes certainly.}} Finish the conversation. 
+}}
+
+===Ritual===
+{{Checklist|
+*Go to the Zamorakian temple in the south-east corner of Varrock. 
+*Check the Chaos Altar's inscription.
+*Return to Camelot with a tinderbox and enter the castle gates.
+*Go to the ritual site at the north-east corner of the Camelot castle grounds (a red star in the middle of 8 columns).
+*Stand on the star and light the black candle.
+*'''Drop''' the bat bones on the star.
+*The magic words are "Snarthon Candtrick Termanto".
+}}
+
+===Finishing up===
+{{Checklist|
+*Enter the castle and climb to the top of the south-east tower.
+*Smash the giant crystal with Excalibur. ('''Does not''' require 20 Attack, just use Excalibur on the crystal instead of attempting to wield it)
+*Talk to King Arthur.
+*'''Congratulations, quest complete!'''
+}}

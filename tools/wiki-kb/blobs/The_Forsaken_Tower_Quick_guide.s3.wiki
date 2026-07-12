@@ -1,0 +1,8 @@
+===Start===
+{{Checklist|
+*Talk to [[Lady Vulcana Lovakengj]] in the [[Lovakengj Assembly]] building to the west of the southern bank. ([[Xeric's Talisman]], Xeric's Inferno) {{Chat option|1Yes.|3I'll get going.}}
+*Go to the [[Wintertodt]] camp ([[Games necklace]] teleport).
+**Talk to [[Ignisia]] in the north-east of the camp if you haven't previously done so.
+*Talk to the dwarf [[Undor]] inside the camp. {{Chat option|4 I've been sent to help you.}}
+** If he tells you to talk to the "Fiery lass" Talk to Ignisia just to the north east, before returning to him. 
+}}

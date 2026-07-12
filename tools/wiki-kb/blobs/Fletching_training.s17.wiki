@@ -1,0 +1,29 @@
+=== Level 40–80: Battlestaves ===
+{{plinkp|Celastrus bark}} Fletching [[Battlestaff|battlestaves]] requires one piece of [[Celastrus bark]], and yields 80 experience per bark. Only level 40 is needed to fletch a [[battlestaff]], which makes it a better training method than fletching bows in this level range, but can be more costly. At level 80, players can fletch [[Magic shortbow|magic shortbows]] which yields more experience per action. With a [[Fletching knife]], the XP rates improve significantly.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-3 align-left-4" style="text-align:right;"
+! rowspan="2" |{{SCP|Fletching}} Level
+! rowspan="2" |Item
+! rowspan="2" |XP
+! colspan="2" |XP/h
+! rowspan="2" |# for goal
+! rowspan="2" |Material cost
+! rowspan="2" |Product value
+! rowspan="2" |Total profit
+! rowspan="2" |GP/XP
+|-
+!Fletching<ref>Assumes ~1,375 actions per hour.</ref>
+!Fletching knife<ref>Assumes ~1,787 actions per hour.</ref>
+|-
+|40–80
+|{{plinkp|Battlestaff}}
+|80
+|110,000
+|143,000
+|24,361
+|{{Coins|{{GEP|Celastrus bark|24361}}}}
+|{{Coins|{{GEP|Battlestaff|24361}}}}
+|{{Coins|{{GEP|Battlestaff|24361}}-{{GEP|Celastrus bark|24361}}}}
+|{{Coins|({{GEP|Battlestaff}}-{{GEP|Celastrus bark}})/80}}
+|}
+<references/>

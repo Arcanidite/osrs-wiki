@@ -1,0 +1,43 @@
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Tale of the Righteous}}
+
+==Walkthrough==
+{{Checklist|
+*Go to the house west of the [[The Cloak and Stagger]] tavern in [[Shayzien]]. ([[Xeric's Talisman]] - 1. Xeric's Lookout and run north-west) {Fairy Ring DJR}
+*Speak to [[Phileas Rimor]], and agree to help him. {{Chat option|2Do you need help with anything?|1Yes.}}
+*Gather a ranged weapon, a melee weapon (a pickaxe counts as a valid melee weapon), and runes to perform any magic attack if you have not already.
+*Go to the [[Arceuus Library]] (Fairy ring {{Fairycode|CIS}} or [[Lovakengj Minecart Network]]) and speak to [[Archeio]] to teleport to the [[Library Historical Archive]].
+*Speak to [[Pagida]], and agree to be teleported into the [[Tower of Magic]] prison. {{Chat option|2I have a question about King Shayzien VII.|1Yes please.}}
+*Push the strange device all the way west. From the north side, attack the device using magic.
+*From the south side, attack using melee. (Note: Make sure your NPC attack options are not set to hidden, or the Attack option will not appear!)
+*Push the strange device all the way east. From the south side, attack using ranged.
+*Investigate the skeleton in the northern cell.
+*Return to the quest start and talk to [[Phileas Rimor]] ([[Xeric's Talisman]] - 1. Xeric's Lookout and run north-west).
+*Go north-west to the [[War Tent]] in the south-west corner of the [[Shayzien Encampment]]. Go upstairs and speak to [[Lord Shiro Shayzien]].
+}}
+[[File:Path to Raids.png|thumb|380px|Getting to Mount Quidamortem from the [[Shayziens' Wall]].]]
+{{Checklist|
+*Travel to the summit of [[Mount Quidamortem]]. ([[Lovakengj Minecart Network]] or [[Xeric's Talisman]] - 5. Xeric's Honour if it is unlocked) or Fairy ring {{Fairycode|BLS}} (if unlocked)
+**(Optional) Speak to the [[Mountain Guide]] to unlock quick travel to and from the mountain.
+*Speak to [[Historian Duffy]]. (near the water symbol on the minimap) 
+*Use a [[rope]] on the crevice on the western side of the mountain, and enter the crevice. Go around to the south, not through the middle. (near the ! symbol on minimap)
+*Mine the Boulder.
+*Push the Boulder.
+*Attempt to pass the magic gate, and kill the [[Corrupt Lizardman]].
+*Pass through the magic gate and inspect the [[Unstable Altar]].
+*Hop worlds after you finish the dialogue to quickly leave the cave.
+*Speak to Historian Duffy again.
+*Go back to the unstable altar in the cave.
+*Speak to Duffy and then [[Gnosi]] near the unstable altar. Make sure to speak to them BOTH.
+*Speak to Lord Shiro Shayzien back at the war tent. (Fairy ring {{Fairycode|DJR}} or the [[Lovakengj Minecart Network]]) or Speak to the [[Mountain Guide]]
+*Return to Phileas's house and walk inside to get dialogue. He will not be there.
+*Return to Lord Shiro Shayzien once more.
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|Tale of the Righteous}}
+
+{{Tale of the Righteous}}

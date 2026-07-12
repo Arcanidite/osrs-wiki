@@ -1,0 +1,15 @@
+===Tomb of Rashiliyia===
+{{Checklist|*Prepare for the fight against [[Nazastarool]]. [[Crumble Undead]] is useful alongside [[Protect from Melee]].
+*With your three regular bones, bone shard and chisel, head south-east from fairy ring {{Fairycode|DKP}} to the north-eastern dot on the Karamja map above.
+*Search the unique bright green [[palm tree (Shilo Village)|palm tree]] '''from the north side''' to find two [[carved doors|doors]].
+*Search the doors to find the keyhole.
+*Use your chisel on the bone shard to make a bone key.
+*Equip the [[Beads of the dead]] then use the key on the doors.
+*Open the ancient gate (while wearing the beads of the dead necklace), then climb down the rocks.
+*Run west, south, then south-west through the dungeon to reach a pair of doors.
+*'''Use''' (don't bury) 3 regular [[bones]] on the [[tomb doors|doors]] (can kill skeletons, '''not zombies''' for the bones if you forgot).
+*Search the [[tomb dolmen (Rashiliyia's Tomb)|dolmen]], then defeat Nazastarool in his 3 forms. If you click away from the dialogue at the end of each form, click on the dolmen again to resume the other phases.
+**Use [[Protect from Melee]] or stand behind the dolmen to safespot him.
+*Take the [[Rashiliyia corpse]].}}
+
+'''Note:''' If you try to leave the cave the way you came in, the door will be locked and Rashiliyia will summon three [[Undead one|Undead ones]] to kill you. You can however still leave by using the bone key on the doors.

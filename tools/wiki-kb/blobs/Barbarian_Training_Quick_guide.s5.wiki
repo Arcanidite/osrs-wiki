@@ -1,0 +1,6 @@
+====Barehanded fishing====
+{{Checklist|
+* Talk to [[Otto Godblessed]] and ask him about barehanded fishing.{{Chat option|1Please teach me of your cunning with harpoons.}}
+* Go to any [[Fishing spot (cage, harpoon)|fishing spot that requires a harpoon]].
+* Talk to Otto again and tell him of your success.{{Chat option|1I've fished with my hands!}}
+}}

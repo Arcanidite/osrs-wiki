@@ -1,0 +1,9 @@
+===Searching for the Holy Grail===
+{{Checklist|
+*Bank all weapons and armour. Travel to [[Entrana]].
+*Talk to the [[High Priest (Entrana)|High Priest]] in the chapel. {{Chat option|3Ok, I will go searching.}}
+*Travel to [[Galahad]]'s house west of [[McGrubor's Wood]] ([[fairy ring]] code {{fairycode|ALS}}) or [[combat bracelet]] to [[Ranging Guild]].
+*Talk to [[Galahad]] and receive the [[holy table napkin]]. {{Chat option|4I seek an item from the realm of the Fisher King.}}
+**''(Talk to Galahad again to complete a task in the [[Kandarin easy diary]] {{Chat option|3Do you get lonely here on your own?}})''
+*Travel to [[Draynor Manor]]'s {{FloorNumber|uk=2}} southern-most room with the [[holy table napkin]] in your inventory and pick up 2 [[magic whistle]]s from the table. The whistles will not be visible until you enter the room.
+}}
