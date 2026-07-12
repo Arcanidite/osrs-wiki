@@ -8,6 +8,7 @@ import { plan } from "../assets/js/router/planner/index.js";
 import { routeMulti, costFor, isDeferrable } from "../assets/js/router/planner/greedy.js";
 import { weaveOverlays } from "../assets/js/router/planner/overlay.js";
 import { toState, reqQuals } from "../assets/js/router/model.js";
+import { SUPPLY_COST, QUEST_XP_COST, STEER_COST_DISCOUNT, STEER_HARD_THRESHOLD } from "../assets/js/router/planner/tuning.js";
 import { loadFixtures, makeEnv, freshProfile, queueGoal } from "./helpers.js";
 import { scenarios, runScenario } from "./generate-fixtures.js";
 
@@ -219,4 +220,71 @@ test("weaveOverlays: passive embeds_into badges ACTIVE hosts by tag, never a bg 
   assert.ok(!chip._passiveOverlays, "bg chip never receives a passive badge even though its tags match embeds_into");
   const badgedHost = result.find((s) => s.id === "train-x");
   assert.deepEqual(badgedHost._passiveOverlays, ["Zero-time embed"]);
+});
+
+// ── Lane M2 — linearizer cost-model v2 (MATERIALIZATION §1c), DEFAULT-OFF ──
+
+test("costFor: supply / quest-xp tiers read the named tuning constants (no bare literals)", () => {
+  assert.equal(costFor({ _supply: true }, "balanced"), SUPPLY_COST);
+  const quest = { kind: "quest", tags: ["quest"], xp: { cooking: 100 } };
+  assert.equal(costFor(quest, "balanced"), QUEST_XP_COST);
+});
+
+test("costFor v2 off (default arg): a hard steer point costs the same as equal-tier filler — discount inert", () => {
+  const steered = { tags: [], xp: {}, _steerPoint: { anchor_weight: 0.9 } };
+  const plain   = { tags: [], xp: {} };
+  assert.equal(costFor(steered, "balanced"), costFor(plain, "balanced"));
+});
+
+test("costFor v2 on: a hard steer point (anchor_weight >= STEER_HARD_THRESHOLD) is discounted by STEER_COST_DISCOUNT", () => {
+  const steered = { tags: [], xp: {}, _steerPoint: { anchor_weight: STEER_HARD_THRESHOLD } };
+  const plain   = { tags: [], xp: {} };
+  assert.equal(costFor(steered, "balanced", true), costFor(plain, "balanced", true) * STEER_COST_DISCOUNT);
+});
+
+test("costFor v2 on: a soft steer point (anchor_weight < STEER_HARD_THRESHOLD) gets no discount", () => {
+  const soft  = { tags: [], xp: {}, _steerPoint: { anchor_weight: STEER_HARD_THRESHOLD - 0.01 } };
+  const plain = { tags: [], xp: {} };
+  assert.equal(costFor(soft, "balanced", true), costFor(plain, "balanced", true));
+});
+
+test("cost-model v2: a compounding unlock (hard steer point) is pulled ahead of equal-cost filler", () => {
+  // Two independent skill bands, both eligible from minute 0, equal "balanced"
+  // cost (1 each) — a real tie, broken only by the steer discount when v2 is on.
+  const steps = [
+    { id: "filler",  label: "Filler",  reqs: { skills: {} }, grants: { fishing: 10 }, xp: { fishing: 500 }, tags: [] },
+    { id: "steered", label: "Steered", reqs: { skills: {} }, grants: { mining: 10 },  xp: { mining: 500 },  tags: [], steer_id: "sp-1" },
+  ];
+  const goal = { id: "g", label: "G", reqs: { skills: { fishing: 10, mining: 10 } }, grants: {}, terminal: null };
+  const steerPoints = [{ id: "sp-1", anchor_weight: 0.9 }];
+
+  const offEnv = makeEnv({ steps, steerPoints });
+  const offIds = routeMulti([goal], steps, freshProfile(), offEnv).map((s) => s.id);
+  assert.deepEqual(offIds, ["filler", "steered", "capstone-g"], "v2 off: stable authored order, no pull-forward");
+
+  const onEnv = makeEnv({ steps, steerPoints }, { tuning: { costModelV2: true } });
+  const onIds = routeMulti([goal], steps, freshProfile(), onEnv).map((s) => s.id);
+  assert.deepEqual(onIds, ["steered", "filler", "capstone-g"], "v2 on: the compounding unlock is pulled ahead of equal-cost filler");
+});
+
+test("cost-model v2: a hard steer point still honors deferred_until — the S8 gate precedes cost, discount never bypasses a hold", () => {
+  const steps = [
+    { id: "steered-deferred", label: "Steered but deferred", reqs: { skills: {} },
+      grants: { mining: 10 }, xp: { mining: 500 }, tags: [], steer_id: "sp-1",
+      deferred_until: ["never-queued-goal"] },
+  ];
+  const goal = { id: "g", label: "G", reqs: { skills: { mining: 10 } }, grants: {}, terminal: null };
+  const env  = makeEnv(
+    { steps, steerPoints: [{ id: "sp-1", anchor_weight: 0.9 }] },
+    { tuning: { costModelV2: true } }
+  );
+  const path = routeMulti([goal], steps, freshProfile(), env);
+  assert.ok(!path.some((s) => s.id === "steered-deferred"), "deferred_until still holds the step under v2 — the discount cannot override S8");
+});
+
+test("cost-model v2 flag-off: real steer_id/steer_points data merges inertly — routes stay byte-identical to no-data", () => {
+  const goals = data.goals.slice(0, 5).map(queueGoal);
+  const withSteerData = routeMulti(goals, data.steps, freshProfile(), makeEnv(data)).map((s) => s.id);
+  const withoutSteerData = routeMulti(goals, data.steps, freshProfile(), makeEnv({ ...data, steerPoints: [] })).map((s) => s.id);
+  assert.deepEqual(withSteerData, withoutSteerData, "v2 defaults off, so real steer_points.jsonl data merged onto real steps changes nothing");
 });

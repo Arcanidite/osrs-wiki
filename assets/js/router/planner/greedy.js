@@ -11,6 +11,10 @@ import { normalizeReqs, reqQuals, toState, fromState, reqsSummary, syncQualEdges
 import { effectiveLevel } from "../graph.js";
 import { weaveOverlays } from "./overlay.js";
 import { burndownResolve } from "./burndown.js";
+import {
+  COST_MODEL_V2, SUPPLY_COST, QUEST_XP_COST, STEER_COST_DISCOUNT, STEER_HARD_THRESHOLD,
+  STYLE_BASE_COST, EFFICIENT_NO_XP_COST, GP_MONEY_COST,
+} from "./tuning.js";
 
 class MinHeap {
   constructor() { this._h = []; }
@@ -55,19 +59,55 @@ export function meetsReqs(env, step, state, ctx) {
   return true;
 }
 
-export function costFor(step, style) {
+// Lane M2 (MATERIALIZATION §1c) — v2 defaults false (COST_MODEL_V2, gated by
+// env.tuning.costModelV2 in routeGoal below) so existing callers/tests that pass
+// only (step, style) keep the pre-M2 ladder byte-identical.
+export function costFor(step, style, v2 = false) {
   // Supply steps are mandatory prerequisites — assign near-zero cost so they
   // are always preferred when useful (S6/S3 hard rule: supply before bossing).
-  if (step._supply) return 0.0001;
+  if (step._supply) return SUPPLY_COST;
   // Quests with reward XP are the efficient-guide backbone: prefer them just
   // below supply so quest XP is banked before any grind (they are only pulled
   // when their XP still advances a needed skill — see isUseful). "quest primarily."
-  if (isQuestStep(step) && Object.keys(step.xp ?? {}).length) return 0.001;
+  if (isQuestStep(step) && Object.keys(step.xp ?? {}).length) return QUEST_XP_COST;
+  return baseCost(step, style, v2) * steerDiscount(step, v2);
+}
+
+// Ordinal style-cost tier, OR (M2, v2 only) the cardinal wall-clock cost when
+// est_minutes is actually sourced — "cardinal wall-clock value only enters where
+// est_minutes is sourced ... degrades to the ordinal ladder when null" (§1c). No
+// step in the current bank has a non-null est_minutes yet (S1: never estimated),
+// so this branch is presently dormant even with v2 on — honest, not fabricated.
+function baseCost(step, style, v2) {
+  if (v2 && step.est_minutes != null) return step.est_minutes;
   const xpSum = Object.values(step.xp ?? {}).reduce((a, b) => a + b, 0);
-  if (style === "efficient") return xpSum > 0 ? 1 / xpSum : 100;
-  if (style === "afk")       return step.inv_used ?? 1;
-  if (style === "gp")        return (step.tags ?? []).includes("money") ? 0.5 : 1;
-  return 1;
+  if (style === "efficient") return xpSum > 0 ? 1 / xpSum : EFFICIENT_NO_XP_COST;
+  if (style === "afk")       return step.inv_used ?? STYLE_BASE_COST;
+  if (style === "gp")        return (step.tags ?? []).includes("money") ? GP_MONEY_COST : STYLE_BASE_COST;
+  return STYLE_BASE_COST;
+}
+
+// Compounding-unlock discount (§1c "what gets pulled forward" / SYNTHESIS P3): a
+// step carrying a HARD steer point (_steerPoint merged at P2 bank-split below, by
+// steer_id FK) halves its own cost so it's chosen ahead of equal-cost filler — every
+// future minute is cheaper once it lands. Soft steer points (< STEER_HARD_THRESHOLD)
+// get no discount here; they're a phasing concern (enrich.py phase_name), not a
+// routing one.
+function steerDiscount(step, v2) {
+  if (!v2) return 1;
+  const w = step._steerPoint?.anchor_weight;
+  return typeof w === "number" && w >= STEER_HARD_THRESHOLD ? STEER_COST_DISCOUNT : 1;
+}
+
+// P2 bank split (M2) — join step.steer_id -> steer_points.jsonl record onto the
+// step as _steerPoint, mirroring the existing _supply annotation pattern (SYNTHESIS
+// P2 pass contract). Pure and unconditional (inert without v2: nothing else reads
+// _steerPoint); a step whose steer_id doesn't resolve stays unannotated — honest
+// MANUAL degrade, never an invented match.
+function mergeSteerPoints(steps, steerPoints) {
+  if (!steerPoints.length) return steps;
+  const byId = new Map(steerPoints.map((sp) => [sp.id, sp]));
+  return steps.map((s) => (s.steer_id && byId.has(s.steer_id)) ? { ...s, _steerPoint: byId.get(s.steer_id) } : s);
 }
 
 // A quest is "XP-useful" when its reward XP advances a skill still below the
@@ -126,6 +166,10 @@ function routeGoal(env, steps, profile, goal, skills, completedIds, completedQue
   const graph       = env.graph;
   const targetEdges = reqQuals(goal.reqs ?? {});
   const terminal    = goal.terminal ?? null;
+  // Lane M2 gate — env.tuning.costModelV2 mirrors the runtime-override channel
+  // overlay.js already uses for defaultStepMin; falls back to the tuning default
+  // (DEFAULT-OFF) when unset.
+  const costModelV2 = env.tuning?.costModelV2 ?? COST_MODEL_V2;
   const path        = [];
   let   state       = toState(skills);
   // Seed completed quests as quest:<id> so dependents' quest prereqs (reqs.quests)
@@ -169,7 +213,7 @@ function routeGoal(env, steps, profile, goal, skills, completedIds, completedQue
       if (!locationAccessible(step, completedIds, excluded, completedQuests)) continue;
       if (!isDeferrable(step, env, state)) continue;
       if (!isUseful(env, step, state, targetEdges, terminal, neededGates)) continue;
-      heap.push(step, costFor(step, profile.style));
+      heap.push(step, costFor(step, profile.style, costModelV2));
     }
     return heap;
   };
@@ -286,10 +330,16 @@ export function routeMulti(goals, steps, profile, env) {
   // purposes (all goals here are simultaneously queued, not routed in isolation).
   env.activeGoalIds = new Set(sanitizedGoals.map((g) => g.id));
 
+  // P2 bank split (M2) — merge _steerPoint onto matching steps (steer_id FK ->
+  // env.steerPoints, i.e. steer_points.jsonl) before the active/overlay split, per
+  // the SYNTHESIS P2 pass contract. Unconditional and inert without costModelV2
+  // (see costFor's steerDiscount) — costs stay untouched either way.
+  const steeredSteps = mergeSteerPoints(mergedSteps, env.steerPoints ?? []);
+
   // P2 bank split — exclude slot-typed steps (background/passive) from the greedy heap;
   // they are woven back in by weaveOverlays (P4) after routing.
-  const activeSteps  = mergedSteps.filter((s) => !s.slot || s.slot.type === "alternation");
-  const overlaySteps = mergedSteps.filter((s) => s.slot && s.slot.type !== "alternation");
+  const activeSteps  = steeredSteps.filter((s) => !s.slot || s.slot.type === "alternation");
+  const overlaySteps = steeredSteps.filter((s) => s.slot && s.slot.type !== "alternation");
 
   const path = sanitizedGoals.flatMap((goal) => {
     const skillsAtGoalStart = { ...skills };

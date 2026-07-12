@@ -26,6 +26,7 @@ export function loadFixtures() {
     constraints:       readData("constraints"),
     supplyChains:      tryRead("supply_chains"),
     coarseExpansions:  tryRead("coarse_expansions"),
+    steerPoints:       tryRead("steer_points"),
   };
 }
 
@@ -35,7 +36,7 @@ export function counterNow(start = 1) {
   return () => n++;
 }
 
-export function makeEnv({ steps, constraints, supplyChains = [], coarseExpansions = [] }, overrides = {}) {
+export function makeEnv({ steps, constraints, supplyChains = [], coarseExpansions = [], steerPoints = [] }, overrides = {}) {
   const graph = createGraph();
   syncQualEdges(graph, steps);
   return {
@@ -43,6 +44,7 @@ export function makeEnv({ steps, constraints, supplyChains = [], coarseExpansion
     constraints,
     supplyChains,
     coarseExpansions,
+    steerPoints,
     pinnedExclusions: new Set(),
     manualQuestDone:  new Set(),
     now: counterNow(),
