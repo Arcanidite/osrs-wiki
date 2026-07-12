@@ -1,0 +1,18 @@
+{{External|rs}}
+{{Infobox Activity
+|name = Impetuous Impulses
+|image = [[File:Hunting implings.png|300px]]
+|release = [[11 June]] [[2007]]
+|update = Impetuous Impulses
+|type = Minigame
+|members = Yes
+|location = [[Puro-Puro]]
+|players = 1
+|skills = [[Hunter]]
+|currency = None
+|tutorial = No
+|music = [[Impetuous]], [[Impulses]]
+|map = {{Map|name=Impetuous Impulses|x=2428|y=4446|zoom=3|mapID=28}}
+|leagueRegion = General
+}}
+'''Impetuous Impulses''' is a [[minigame]] based around the [[Hunter]] skill where players capture [[implings]], which are flying [[imp]]-like creatures, that can be caught to obtain trinkets and treasures that they have been stealing from all over [[Gielinor]]. This activity takes place in an area called [[Puro-Puro]].

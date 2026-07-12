@@ -1,0 +1,2 @@
+===Experience===
+Tagging a dispenser awards 30 [[Agility]] [[experience]] for every 10 Agility levels ('''including''' Agility boosts or drains), maxing out at 300 if boosting to level 100 Agility. Unlike obstacles, this is not affected by the 10% Karamja Gloves 2-4 bonus. [[Agility arena ticket]]s can be exchanged with Pirate Jackie the Fruit for 345 [[Agility]] [[experience]] per ticket. Players wearing [[Karamja gloves 2]], [[Karamja gloves 3|3]] or [[Karamja gloves 4|4]] will receive an additional 10% experience, giving 379.5 Agility experience per ticket.

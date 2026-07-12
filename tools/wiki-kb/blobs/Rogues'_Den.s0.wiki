@@ -1,0 +1,21 @@
+{{External|rs}}
+{{Infobox Activity
+|name = Rogues' Den
+|image = [[File:Rogues' Den.png|300px]]
+|release = [[22 June]] [[2005]]
+|update = Rogues Den + Tweaks
+|type = Minigame
+|members = Yes
+|location = Under [[The Toad and Chicken]]
+|players = 1
+|skills = [[Agility]], [[Thieving]]
+|currency = None
+|tutorial = No
+|music = [[The Far Side]], [[The Rogues' Den]]
+|map = {{Map|name=Rogues' Den|2906,3537|zoom=3|mtype=square|r=2}}
+|leagueRegion = Asgarnia
+}}
+[[File:Rogues' Den logo.jpg|left]]
+The '''Rogues' Den''' is a hideout located beneath a trapdoor in [[The Toad and Chicken]] inn in [[Burthorpe]], containing a variety of [[Thieving]] and [[Agility]] related activities. While there are no entry requirements, its main attraction is the Maze exploration minigame, which requires 50 Agility and 50 Thieving (unboostable). The maze is notable for offering a chance to earn pieces of [[Rogue equipment]], which provide a chance to receive double loot from [[Pickpocketing]]. Wearing the full set guarantees double loot. 
+
+Outside of the maze there are several shops, a fire next to a bank, and four wall safes with a chance to provide [[uncut gem]]s up to [[diamond]] or 20 to 40 [[coins]] when cracked open.

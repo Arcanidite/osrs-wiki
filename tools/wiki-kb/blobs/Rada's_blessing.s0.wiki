@@ -1,0 +1,44 @@
+'''Rada's blessings''' are rewards from the [[Kourend & Kebos Diary]], obtained by speaking to [[Elise]] in the [[Kourend Castle]] courtyard. 
+
+The different upgrades of Rada's blessings are:
+{| class="wikitable sortable"
+!colspan="2"|Equipment
+!Diary
+!Prayer Bonus
+!Chance of Catching an Extra Fish<ref>No extra fishing experience is granted</ref>
+![[Kourend Woodland]] Teleport
+![[Mount Karuulm]] Teleport
+|-
+|{{Plinkt|Rada's blessing 1}}
+|[[Kourend & Kebos Diary|Easy]]
+|0
+|2%
+|3 per day
+|(none)
+|-
+|{{Plinkt|Rada's blessing 2}}
+|[[Kourend & Kebos Diary|Medium]]
+| +1
+|4%
+|5 per day
+|(none)
+|-
+|{{Plinkt|Rada's blessing 3}}
+||[[Kourend & Kebos Diary|Hard]]
+| +1
+|6%
+|Unlimited
+|3 per day
+|-
+|{{Plinkt|Rada's blessing 4}}
+||[[Kourend & Kebos Diary|Elite]]
+| +2
+|8%
+|Unlimited
+|Unlimited
+|-
+|}
+{{Reflist}}
+
+{{Disambig}}
+[[Category:Achievement diaries]]

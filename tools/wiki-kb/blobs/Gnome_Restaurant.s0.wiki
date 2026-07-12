@@ -1,0 +1,23 @@
+{{External|rs|rsc=Gnome Restaurant (minigame)}}
+{{Infobox Activity
+|name = Gnome Restaurant
+|image = [[File:Gnome Restaurant.png|300px]]
+|release = [[7 August]] [[2006]]
+|update = Gnome Cuisine
+|type = Minigame
+|members = Yes
+|location = [[Grand Tree]], {{FloorNumber|uk=1}}
+|players = 1
+|skills = [[Cooking]]
+|currency = Reward points
+|tutorial = Yes
+|music = None
+|map = {{Map|x=2437|y=3500|zoom=3|plane=1}}
+|leagueRegion = Kandarin
+}}
+[[File:Gnome Restaurant logo.jpg|left]]
+'''Gnome Restaurant''', known by the gnomes as '''Aluft Aloft Gnome Food Delivery Service''', is a [[minigame]] that involves [[Gnome cooking]], and delivering your creations to various customers as quickly as possible. To start the minigame, talk to [[Gianne jnr.]] on the west end of the {{FloorNumber|uk=1}} of the [[Grand Tree]].
+
+It is strongly recommended that you have completed [[The Grand Tree]] quest before playing this minigame.
+
+Completing a delivery for the Gnome Restaurant is a requirement for the [[medium Western Provinces Diary]].

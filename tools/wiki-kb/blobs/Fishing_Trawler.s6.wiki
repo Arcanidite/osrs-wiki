@@ -1,0 +1,163 @@
+==Rewards==
+===Contribution meter===
+Players must earn at least 50 contribution points to search the [[Trawler net]] to receive [[Fishing]] [[experience]], saltwater [[fish]], and a chance at a piece of the [[angler's outfit]]. Points earned above 50 '''do not''' increase the chance of obtaining the outfit. A maximum of 255 points may be earned per game - a full contribution meter will yield 100% more fish compared to the minimum contribution, as well as doubling the chance of receiving the [[heron]] pet.
+
+The contribution meter will change colour from red to yellow at 50 points. The meter does not deplete; therefore, players are able to stop contributing after reaching their goal.
+
+{| class="wikitable"
+!Action
+!Points
+!Skill
+!XP
+|-
+|Bailing water
+|2
+|N/A
+|N/A
+|-
+|Filling a leak with swamp paste
+|5
+|{{SCP|Construction}}
+|5{{Refn|name=poh|group=a|A [[player-owned house|POH]] must be owned in order to receive [[Construction]] XP. Players without a house may still fix the broken rail to receive points, but no Construction experience will be gained (this also counts for applying swamp paste to leaks).}}
+|-
+|Repairing the net with a rope
+|7
+|{{SCP|Crafting}}
+|5
+|-
+|Attacking the kraken (per successful chop)
+|10
+|{{SCP|Woodcutting}}
+|5
+|-
+|Fixing a broken rail caused by the kraken
+|10
+|{{SCP|Construction}}
+|5{{NamedRef|name=poh|group=a}}
+|}
+{{Reflist|group="a"}}
+
+===Collecting rewards===
+The trawler net can be found on the [[Port Khazard]] dock after a successful voyage. When searching it, [[Temporary skill boost|boosts]] '''cannot''' be used to obtain higher-tier fish, and [[Temporary skill drain|drains]] '''cannot''' be used to obtain lower-tier fish. The collection interface allows automatic banking, dropping, or picking up of rewards. There is also a [[bank chest]] just west of the trawler net. Closing the rewards interface with items left to collect will cause them to drop on the ground.
+
+Rewards are preserved across hopping worlds or logging out, but boarding a new expedition '''will destroy''' any uncollected rewards. A warning dialogue appears if attempting to board the ship with rewards left to claim.
+
+===Rates===
+====Fish====
+Players are rewarded a number of fish equal to the boat's total catch (based on how many players participated, how long the nets were damaged, and how long the ship was slowed down by a kraken) divided by the number of players present at the beginning of the minigame. The type of fish caught is dependent on the player's Fishing level, as shown below. Fishing experience is granted based on the type of fish received, as shown further below.
+
+{{#vardefine:groupFish|14*({{GEP|Raw manta ray|0.785}}+{{GEP|Raw sea turtle|0.169}}+{{GEP|Raw shark|0.0362}})}}{{#vardefine:soloFish|21*({{GEP|Raw manta ray|0.785}}+{{GEP|Raw sea turtle|0.169}}+{{GEP|Raw shark|0.0362}})}}Completing the [[Ardougne Diary#Elite|elite Ardougne Diary]] yields 50% more fish, and a full contribution meter also yields an additional 50% more fish. 
+
+When playing in large groups, expect 13-15 fish per trip with a full contribution meter (worth {{NoCoins|{{#var:groupFish}}|c}} at level 99 Fishing which is {{NoCoins|{{#var:groupFish}}*60/6.5|c}}/hour), and experience rates of around 9,000 xp/hour. When playing solo, expect 20-22 fish per trip (worth {{NoCoins|{{#var:soloFish}}|c}} at level 99 Fishing which is {{NoCoins|{{#var:soloFish}}*60/7|c}}/hour), and experience rates of around 13,000 xp/hour.
+
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Raw shrimps|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Raw sardine|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Raw anchovies|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Oyster|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Raw tuna|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Raw lobster|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Raw swordfish|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Raw shark|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Raw sea turtle|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Raw manta ray|quantity=Varies|rarity=Varies}}
+{{DropsTableBottom}}
+
+{| class="wikitable sortable" style="text-align:center;"
+!colspan=2|Catch
+!Level
+!XP
+!GE Price
+|-
+|{{plinkt|Old boot|txt=Junk items}}
+|{{SCP|Fishing|15}}
+|0.5
+|N/A
+|-
+|{{plinkt|Raw shrimps}}
+|{{SCP|Fishing|15}}
+|0.7
+|{{Coins|{{GEP|Raw shrimps}}}}
+|-
+|{{plinkt|Raw anchovies}}
+|{{SCP|Fishing|15}}
+|0.7
+|{{Coins|{{GEP|Raw anchovies}}}}
+|-
+|{{plinkt|Raw sardine}}
+|{{SCP|Fishing|15}}
+|0.7
+|{{Coins|{{GEP|Raw sardine}}}}
+|-
+|{{plinkt|Oyster}}
+|{{SCP|Fishing|16}}
+|51
+|{{Coins|{{GEP|Oyster}}}}
+|-
+|{{plinkt|Raw tuna}}
+|{{SCP|Fishing|35}}
+|48
+|{{Coins|{{GEP|Raw tuna}}}}
+|-
+|{{plinkt|Raw lobster}}
+|{{SCP|Fishing|40}}
+|54
+|{{Coins|{{GEP|Raw lobster}}}}
+|-
+|{{plinkt|Raw swordfish}}
+|{{SCP|Fishing|50}}
+|60
+|{{Coins|{{GEP|Raw swordfish}}}}
+|-
+|{{plinkt|Raw shark}}
+|{{SCP|Fishing|76}}
+|66
+|{{Coins|{{GEP|Raw shark}}}}
+|-
+|{{plinkt|Raw sea turtle}}
+|{{SCP|Fishing|79}}
+|57
+|{{Coins|{{GEP|Raw sea turtle}}}}
+|-
+|{{plinkt|Raw manta ray}}
+|{{SCP|Fishing|81}}
+|69
+|{{Coins|{{GEP|Raw manta ray}}}}
+|}
+
+{{Skilling success chart|label=Fishing Trawler fish|xlabel=Fishing level|cascade=yes|showbefore=no
+|label1=Manta ray|low1=150|high1=200|req1=81|color1=#515581|image1=Raw manta ray.png
+|label2=Sea turtle|low2=150|high2=200|req2=79|color2=#67a340|image2=Raw sea turtle.png
+|label3=Shark|low3=150|high3=200|req3=76|color3=#736b6b|image3=Raw shark.png
+|label4=Swordfish|low4=150|high4=200|req4=50|color4=mediumorchid|image4=Raw swordfish.png
+|label5=Lobster|low5=150|high5=200|req5=40|color5=#854c22|image5=Raw lobster.png
+|label6=Tuna|low6=150|high6=200|req6=35|color6=grey|image6=Raw tuna.png
+|label7=Oyster|low7=150|high7=200|req7=16|color7=wheat|image7=Oyster.png
+|label8=Anchovies|low8=150|high8=200|req8=15|color8=blue|image8=Raw anchovies.png
+|label9=Sardine|low9=150|high9=200|req9=15|color9=green|image9=Raw sardine.png
+|label10=Shrimps|low10=150|high10=200|req10=15|color10=#b18065|image10=Raw shrimps.png
+}}
+
+Players may also receive "junk" items in their trawler nets, all being equally likely. Independent of Fishing level, between 0 and 2 junk are caught every time, where the chance for 1 is about 37% and the chance for 2 is about 16%.
+
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Broken arrow|quantity=Varies|rarity=Varies|gemw=no}}
+{{DropsLineReward|name=Broken glass|quantity=Varies|rarity=Varies|gemw=no}}
+{{DropsLineReward|name=Broken staff|quantity=Varies|rarity=Varies|gemw=no}}
+{{DropsLineReward|name=Buttons|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Damaged armour|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Old boot|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Pot|quantity=Varies|rarity=Varies}}
+{{DropsLineReward|name=Rusty sword|quantity=Varies|rarity=Varies}}
+{{DropsTableBottom}}
+
+====Uniques====
+There is a 1/12 chance{{CiteNews|url=https://secure.runescape.com/m=news/fishing-trawler-improvements-and-equipment-rebalance-part-one?oldschool=1|title=Fishing Trawler Improvements and Equipment Rebalance: Part One|newsdate=21 April 2021}} that players will receive a piece of the [[angler's outfit]] they do not already own. When equipped, pieces of the outfit grant a small [[experience]] bonus while [[Fishing]]. If the player's inventory is full and they attempt to pick up an outfit piece, the outfit piece will drop on the ground. The chance for a piece does not scale with the contribution meter beyond the initial threshold of 50 points. Players can receive two full sets, but the first set must be fully completed before obtaining pieces of the second set.
+
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Angler hat|quantity=1|rarity=1/12|raritynotes={{Refn|name=unique|group=d|Will not drop again until a full angler set is completed. A second set can then be obtained.}}|gemw=no}}
+{{DropsLineReward|name=Angler top|quantity=1|rarity=1/12|raritynotes={{NamedRef|name=unique|group=d}}|gemw=no}}
+{{DropsLineReward|name=Angler waders|quantity=1|rarity=1/12|raritynotes={{NamedRef|name=unique|group=d}}|gemw=no}}
+{{DropsLineReward|name=Angler boots|quantity=1|rarity=1/12|raritynotes={{NamedRef|name=unique|group=d}}|gemw=no}}
+{{DropsLineReward|name=Heron|quantity=1|rarity=1/5000|raritynotes={{Refn|name=heron|group=d|Requires successful mini-game completion. Scales up to 1/2,500 with a full contribution meter.}}|gemw=no}}
+{{DropsTableBottom}}{{Reflist|group="d"}}

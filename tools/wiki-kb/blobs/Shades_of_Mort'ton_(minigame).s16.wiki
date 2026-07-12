@@ -1,0 +1,33 @@
+===Unlocking chests===
+The intended rewards from this minigame come from using the [[shade key]]s on chests in the [[Shade Catacombs]]. These chests contain a variety of rewards that vary greatly in value. Inside the chest will usually be a few coins and one main reward which includes [[runes]], [[armour]], or a [[clue scroll]]. There is frequently [[swamp paste]] in the bottom of the chest as well. The tiers of armour and clue scrolls depend on the type of key:
+
+*[[Bronze chest]]s yield [[Steel equipment|Steel]] to [[Mithril equipment|Mithril]] items and [[Clue scroll (easy)|easy clue scrolls]]
+*[[Steel chest]]s yield [[Steel equipment|Steel]] to [[Adamant equipment|Adamant]] items and [[Clue scroll (medium)|medium clue scrolls]]
+*[[Black chest]]s yield [[Black equipment|Black]] to [[Adamant equipment|Adamant]] items and [[Clue scroll (medium)|medium clue scrolls]]
+*[[Silver chest]]s yield [[Black equipment|Black]] to [[Rune equipment|Rune]] items and [[Clue scroll (hard)|hard clue scrolls]]
+*[[Gold chest]]s yield [[Adamant equipment|Adamant]] to [[Dragon equipment|Dragon]] items and [[Clue scroll (elite)|elite clue scrolls]], as well as [[Zealot's robes]]
+
+Additionally, the colour of the loop defines the probability of the key yielding one of the more valuable items available. The order, from worst to best, is:
+
+'''Red < Brown < Crimson < Black < Purple'''
+
+For example, a [[Silver key black]] is ''more likely'' to yield a better treasure than a [[Silver key brown]], but all silver keys have the ''exact same'' set of possible rewards. Purple keys will have the highest chance of receiving a clue scroll.
+
+====Coin amounts====
+
+The amount of coins received from a chest partly depends on the other loot you obtained from the chest; if you receive expensive loot, you will receive less coins.
+
+The exact coin drop mechanics are as follows:
+
+The integer <math>\mathrm{RandomRoll}</math> is rolled between the following bounds:
+* '''Bronze chest''': 400 - 600
+* '''Steel chest''': 900 - 1100
+* '''Black chest''': 1500 - 2000
+* '''Silver chest''': 3600 - 7000
+* '''Gold chest''': 4500 - 9500
+
+The integer <math>\mathrm{MainLootValue}</math> is the [[value]] of the main loot. For each item, the value can be found in the infobox on its page. This value is then multiplied with the received quantity. For example, 15 [[death rune]]s have a value of <math>15*180=2700</math>, and a single [[bronze locks]] has a value of <math>800</math>. [[Swamp paste]] and [[flamtaer bag]]s are ''not'' included in this value.
+
+If <math>\mathrm{MainLootValue}\geq\mathrm{RandomRoll}</math>, no coins are dropped.
+
+If  <math>\mathrm{RandomRoll}\geq\mathrm{MainLootValue}</math>, the amount of dropped coins is <math>\left\lfloor\frac{\mathrm{RandomRoll} - \mathrm{MainLootValue}}{3}\right\rfloor</math>.

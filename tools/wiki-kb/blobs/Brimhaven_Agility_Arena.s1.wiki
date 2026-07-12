@@ -1,0 +1,10 @@
+==Transportation==
+There are several different methods for travelling to the Brimhaven Agility Arena. The best options, ordered from fast to slow, are:
+*Use the [[achievement diary cape]] teleport to [[Pirate Jackie the Fruit]].
+*Travel to [[Brimhaven]] via [[spirit tree]], if one is grown there, and run south.
+*If the [[player-owned house]] is located in Brimhaven, cast the [[Teleport to House]] spell, requiring level 40 [[Magic]], or break a [[teleport to house]] tablet to go there and run east.
+**Alternatively, use a [[scroll of redirection]] on a teleport to house tablet to redirect the tablet to Brimhaven.
+*Take the boat from [[East Ardougne]] or [[Rimmington]] to Brimhaven or alternatively take a [[charter ship]].
+*Teleport to [[Musa Point]] using an [[amulet of glory]] and run west.
+*[[Minigame Teleport]] to the [[TzHaar Fight Cave]], run east through outer [[Mor Ul Rek]] (past a bank), then leave out the [[Karamja Volcano]] and run west.
+*Teleport to [[Mor Ul Rek]] via [[Fairy rings|fairy ring]] ({{fairycode|BLP}}), run northeast to exit the volcano and then run west.

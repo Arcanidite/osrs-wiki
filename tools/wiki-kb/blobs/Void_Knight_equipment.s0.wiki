@@ -1,0 +1,10 @@
+{{External|rs=Void knight equipment}}
+{{redirect|Void}}
+{{otheruses|the regular version|the upgraded version|Elite Void Knight equipment}}
+'''Void Knight equipment''', often referred to as the '''void set''', '''void armour''', or simply just '''void''', is a set of armour which can be purchased from the Void Knights with the [[commendation points]] earned from [[Pest Control]]. To buy or equip any of the items (besides the [[Void seal|seal]]), a player must have 42 [[Attack]], [[Strength]], [[Defence]], [[Hitpoints]], [[Ranged]], and [[Magic]], along with 22 [[Prayer]].
+
+Void Knight armour contributes Defence bonuses to all stats equally (including Magic and Ranged) without lowering any attack bonuses. Wearing a complete set offers various combat bonuses which make the armour a popular choice for players using multiple attack styles.
+
+The equipment can be stored in the [[armour case]] of the [[costume room]] in a [[player-owned house]].
+
+Players can attach [[Shattered relics void ornament kit|Shattered relics void ornament kits]] to change the cosmetic look of the set pieces. Kits can be obtained from [[Leagues Tutor]], [[Leagues Reward Shop]], or Grand Exchange. This does not affect the stat bonuses. It can be dismantled at any time to return the original equipment and ornament kits to the inventory.

@@ -1,0 +1,116 @@
+==Obtaining==
+Void Knight equipment requires [[commendation points]], which must be obtained from [[Pest Control]]. Equipment can also be sold to the [[Dodgy Squire]] for 80% of the item's original commendation point value; for example, exchanging any of the helmets would return 160 commendation points, compared to the 200 the helmet originally cost.
+
+===Cost===
+In total, the minimum amount of points needed to get a set that provides the damage bonus is 850 [[commendation points]]. This cost includes only one helmet, and excludes the [[Void knight mace|mace]] and [[Void Knight seal|seal]]. An additional 400 points are needed to upgrade the robe and top to [[Elite Void Knight equipment]], for a total of 1250.
+
+Players will need an additional 400 points for the other two helmets; this brings the total points needed for a full set of elite void in every style to 1650.
+
+{| class="wikitable lighttable" style="text-align:center;"
+! Icon
+! Equipment
+! Commendations cost
+|-
+|{{plinkp|Void melee helm}} {{plinkp|Void ranger helm}} {{plinkp|Void mage helm}}
+|[[Void Knight helmet|Helmet]]
+|200 (each)
+|-
+|{{plinkt|Void knight top|txt=Top}}
+|250
+|-
+|{{plinkt|Void knight robe|txt=Robe}}
+|250
+|-
+|{{plinkt|Void knight gloves|txt=Gloves}}
+|150
+|-
+|{{plinkt|Void knight mace|txt=Mace}}
+|250
+|-
+|{{plinkt|Void seal|txt=Seal}}
+|10
+|}
+
+===Gaining commendations ===
+Players who wish to get the [[Void Knight top|top]], [[Void knight robe|bottom]], [[Void knight gloves|gloves]], and one [[Void Knight helmet|helmet]] must '''win''' the following number of games for the set:
+{| class="wikitable sortable"
+!Lander type
+!Combat achievement tier
+!# wins
+!Time (hh:mm)
+!Points/Win
+|-
+|Novice
+|None 
+| style="text-align: center;" |284
+| style="text-align: right;" |09:28
+|3
+|-
+|Novice
+|Easy
+| style="text-align: center;" |213
+| style="text-align: right;" |07:06
+|4
+|-
+|Novice
+|Medium
+| style="text-align: center;" |170
+| style="text-align: right;" |05:40
+|5
+|-
+|Novice
+|Hard and above
+| style="text-align: center;" |142
+| style="text-align: right;" |04:44
+|6
+|-
+|Intermediate
+|None
+| style="text-align: center;" |213
+| style="text-align: right;" |07:06
+|4
+|-
+|Intermediate
+|Easy
+| style="text-align: center;" |170
+| style="text-align: right;" |05:40
+|5
+|-
+|Intermediate
+|Medium
+| style="text-align: center;" |142
+| style="text-align: right;" |04:44
+|6
+|-
+|Intermediate
+|Hard and above
+| style="text-align: center;" |122
+| style="text-align: right;" |04:04
+|7
+|-
+|Veteran
+|None
+| style="text-align: center;" |170
+| style="text-align: right;" |05:40
+|5
+|-
+|Veteran
+|Easy
+| style="text-align: center;" |142
+| style="text-align: right;" |04:44
+|6
+|-
+|Veteran
+|Medium
+| style="text-align: center;" |122
+| style="text-align: right;" |04:04
+|7
+|-
+|Veteran
+|Hard and above
+| style="text-align: center;" |107
+| style="text-align: right;" |03:34
+|8
+|}
+
+'''Note:''' The time estimates above are under ideal conditions (minimal to no wait time between games, no losses, etc.) and assume 2 minutes per game. A more realistic time for the novice lander is 12–14 hours. The official world for Pest Control is 344.

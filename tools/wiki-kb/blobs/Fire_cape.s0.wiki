@@ -1,0 +1,54 @@
+{{External|rs|dw=Fire Cape}}
+{{Otheruses|the item obtained by defeating [[TzTok-Jad]]|the reward for achieving level 99 [[Firemaking]]|Firemaking cape|the item obtained by defeating [[TzKal-Zuk]]|Infernal cape}}
+{{Redirect|Fc|the in-game social feature|Chat-channel}}
+{{Infobox Item
+|version1 = Normal
+|version2 = Broken
+|version3 = Locked
+|name1 = Fire cape
+|name2 = Fire cape (broken)
+|name3 = Fire cape (l)
+|image1 = [[File:Fire cape.png]]
+|image2 = [[File:Fire cape (broken).png]]
+|image3 = [[File:Fire cape.png]]
+|release1 = [[4 October]] [[2005]]
+|release2 = [[21 July]] [[2016]]
+|release3 = [[29 August]] [[2019]]
+|update1 = TzHaar Fight Caves
+|update2 = Broken Armour & Open Beta
+|update3 = Last Man Standing (2019)
+|members = Yes
+|quest = No
+|tradeable = No
+|equipable1 = Yes
+|equipable2 = No
+|equipable3 = Yes
+|stackable = No
+|noteable = No
+|options1 = Wear, Drop
+|options2 = Drop
+|options3 = Wear, Drop
+|examine1 = A cape of fire.
+|examine2 = A broken cape of fire.
+|examine3 = A cape of fire.
+|value1 = 65007
+|value2 = 1
+|value3 = 65006
+|alchable = No
+|weight = 1.814
+|id1 = 6570
+|id2 = 20445
+|id3 = 24223
+|leagueRegion = Karamja
+}}
+{{Synced switch
+|version1 = [[File:Fire cape detail.png|left|150px]]
+|version2 = [[File:Fire cape (broken) detail.png|left|150px]]
+|version3 = [[File:Fire cape detail.png|left|left|150px]]
+}}
+The '''fire cape''' is a [[melee cape]] obtained as a reward for completing the [[TzHaar Fight Cave]]. It is the second best melee cape in the game, outclassed only by the [[infernal cape]].
+In order to obtain the fire cape, players must survive all waves of TzHaar Fight Caves and defeat [[TzTok-Jad]]. Note that the cape '''will not''' be awarded should both the player and TzTok-Jad die simultaneously, even though the [[boss log]] will count the kill. The player must be taken out of the cave by the game recognising TzTok-Jad's death; if they are removed from the cave due to dying, the game considers the player to have failed the challenge.
+
+A fire cape must be shown to [[TzHaar-Ket]] guards around the centre of the city to allow further access to [[Mor Ul Rek]]. This does not consume the fire cape. However, to enter the [[Inferno]], a fire cape must be sacrificed by giving it to [[TzHaar-Ket-Keh]]. This is a one-time fee.
+
+If the player dies a PvP death and the fire cape is unprotected, it will remain in the player's inventory; however, the item will be in a broken, unusable state and must be repaired by using it on [[Perdu]] and paying him {{NoCoins|150000}} [[coins]].

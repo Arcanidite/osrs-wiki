@@ -1,0 +1,63 @@
+{{External|rs}}
+{{Infobox Item
+|defver = 8
+|version1 = 1
+|version2 = 2
+|version3 = 3
+|version4 = 4
+|version5 = 5
+|version6 = 6
+|version7 = 7
+|version8 = 8
+|name1 = Games necklace(1)
+|name2 = Games necklace(2)
+|name3 = Games necklace(3)
+|name4 = Games necklace(4)
+|name5 = Games necklace(5)
+|name6 = Games necklace(6)
+|name7 = Games necklace(7)
+|name8 = Games necklace(8)
+|image1 = [[File:Games necklace(1).png]]
+|image2 = [[File:Games necklace(2).png]]
+|image3 = [[File:Games necklace(3).png]]
+|image4 = [[File:Games necklace(4).png]]
+|image5 = [[File:Games necklace(5).png]]
+|image6 = [[File:Games necklace(6).png]]
+|image7 = [[File:Games necklace(7).png]]
+|image8 = [[File:Games necklace(8).png]]
+|release = [[24 November]] [[2004]]
+|update = Burthorpe Games Room
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Rub, Drop
+|wornoptions = Burthorpe, Barbarian Outpost, Corporeal Beast, Tears of Guthix, Wintertodt Camp
+|examine = An enchanted necklace.
+|value = 1050
+|weight = 0.010
+|exchange1 = No
+|exchange2 = No
+|exchange3 = No
+|exchange4 = No
+|exchange5 = No
+|exchange6 = No
+|exchange7 = No
+|exchange8 = Yes
+|id1 = 3867
+|id2 = 3865
+|id3 = 3863
+|id4 = 3861
+|id5 = 3859
+|id6 = 3857
+|id7 = 3855
+|id8 = 3853
+}}
+[[File:Games necklace detail.png|left|140px]]
+A '''games necklace''' is a [[sapphire necklace]] which has been enchanted using the [[Lvl-1 Enchant]] spell. It has 8 charges which can teleport the player to [[Burthorpe]],  [[Barbarian Outpost]],  [[Corporeal Beast]], [[Tears of Guthix (minigame)|Tears of Guthix]], and the [[Wintertodt Camp]]. After all 8 charges are used, the necklace will be destroyed.
+
+When teleporting using the necklace, the message {{Mes|You rub the necklace...}} will be displayed, followed by a message with the number of charges remaining, ex. {{Mes|Your games necklace has three uses left.|colour=Purple}} If using the last charge on the necklace, the message {{Mes|Your games necklace crumbles to dust.|colour=Purple}} will be displayed instead. 
+
+When a games necklace has one charge remaining, it is recommended not to use the last charge, but instead to save it and cast [[High Level Alchemy]] on it, as the necklace's alchemy value is irrespective of its charge.

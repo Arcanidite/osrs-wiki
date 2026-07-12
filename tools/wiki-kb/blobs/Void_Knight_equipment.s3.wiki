@@ -1,0 +1,29 @@
+===Cost===
+In total, the minimum amount of points needed to get a set that provides the damage bonus is 850 [[commendation points]]. This cost includes only one helmet, and excludes the [[Void knight mace|mace]] and [[Void Knight seal|seal]]. An additional 400 points are needed to upgrade the robe and top to [[Elite Void Knight equipment]], for a total of 1250.
+
+Players will need an additional 400 points for the other two helmets; this brings the total points needed for a full set of elite void in every style to 1650.
+
+{| class="wikitable lighttable" style="text-align:center;"
+! Icon
+! Equipment
+! Commendations cost
+|-
+|{{plinkp|Void melee helm}} {{plinkp|Void ranger helm}} {{plinkp|Void mage helm}}
+|[[Void Knight helmet|Helmet]]
+|200 (each)
+|-
+|{{plinkt|Void knight top|txt=Top}}
+|250
+|-
+|{{plinkt|Void knight robe|txt=Robe}}
+|250
+|-
+|{{plinkt|Void knight gloves|txt=Gloves}}
+|150
+|-
+|{{plinkt|Void knight mace|txt=Mace}}
+|250
+|-
+|{{plinkt|Void seal|txt=Seal}}
+|10
+|}

@@ -1,0 +1,136 @@
+{{External|rs}}
+{{Infobox Item
+|name = Explorer's ring 4
+|image = [[File:Explorer's ring 4.png]]
+|release = [[5 March]] [[2015]]
+|update = Achievement Diaries
+|aka = Elite explorer ring
+|members = Yes
+|quest = No
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options = Wear, Check, Teleport, Functions, Drop
+|wornoptions = Teleport, Energy, Alchemy, Check
+|examine = A Lumbridge explorer's ring.
+|value = 0
+|weight = 0.006
+|id = 13128
+}}
+[[File:Explorer's ring 4 detail.png|left|150px]]
+The '''Explorer's ring 4''' is a reward from completing the [[Lumbridge & Draynor Diary Elite|elite Lumbridge & Draynor Diary]]. It is received from [[Hatius Cosaintus]] in [[Lumbridge]], and can be retrieved from him for free if lost. Multiple rings can be obtained for free.
+
+The Check option will send a chatbox message with the amount of energy restores, teleports, and alchemy casts remaining for that day.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = +1
+|slot = ring
+}}
+
+==Destination==
+{{Map|3052,3291|mtype=square|r=4|align=left}}{{clear|left}}
+
+==Benefits==
+[[File:Cabbage teleport.gif|thumb|250px|right|A player teleporting with the [[Explorer's ring]].]]
+*Cast [[Low Level Alchemy]] (requires [[Magic]] level 21) or [[High Level Alchemy]] (requires [[Magic]] level 55) without using any runes 30 times per day (however, does not grant any Magic XP for casting)
+**Holding the ring while casting this spell from the [[Standard spellbook|spellbook]] will cause [[Fire rune|fire]] and [[Nature rune|nature runes]] to be consumed before charges.
+**You can use items on the ring to alchemise them. By default this will trigger a warning which can be toggled in the settings.
+*Unlimited teleports to the cabbage patch near [[Falador farm]]
+*100% [[Energy|run energy]] replenishment, 3 times per day
+**When this is used, a message appears in the player's [[Chat Interface]] displaying the remaining charges.
+
+Daily charges for run energy restoration and free alchemy spells will only replenish after logging out and back in. 
+
+[[Lumbridge & Draynor Diary#Rewards_4|A number of other benefits]] are always active upon claiming rewards from the elite tier of the Lumbridge and Draynor diary.
+
+==Used in recommended equipment==
+{{Used in recommended equipment|Explorer's ring 4}}
+
+==Shop locations==
+{{Store locations list|Explorer's ring}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 26 March 2025
+|update = Poll 83 QoL Changes
+|poll = Poll 83 - Castle Wars, New Player Changes & More
+|change = Players can alchemise items by using it on the Explorer's ring.
+}}
+{{Subject changes
+|date = 12 February 2025
+|update = Royal Titans Feedback & 12th Birthday Celebrations
+|change = Casting alchemy spells while holding an Explorer's ring now consumes runes first, instead of ring charges.
+}}
+{{Subject changes
+|date = 5 October 2022
+|update = Clan Hall Upgrades & More
+|change = A "Check" option has been added to the Explorer's Ring to learn the number of Alchs, Teleports, and Run Restores left.
+}}
+{{Subject changes
+|date = 7 December 2017
+|update = The Corsair Curse and Wilderness Chaos Altar
+|change = The Explorer's rings will now display how many charges remain after using them.
+}}
+{{Subject changes
+|date = 27 October 2016
+|update = Deadman Changes & QOL
+|change =
+*The "Alchemy" option was added, allowing the free alchemy to be used regardless of which spellbook the player is using.
+*The "Recharge-energy" option was renamed to "Energy".
+}}
+{{Subject changes
+|date = 24 March 2016
+|update = White & Black Graceful
+|poll = Old School Content Poll 40: Vanilla LootShare & QoL
+|change = *It is now also possible to get multiple copies of achievement diary equipment by talking to relevant diary masters or by talking to Perdu, found upstairs in the Edgeville general store. Perdu will charge a small fee.
+*The "Destroy" option was replaced with a "Drop" option.
+}}
+{{Subject changes
+|date = 15 December 2015
+|update = Christmas 2015
+|poll = 
+|change = The Explorers' ring will no longer provide its free alchemy spells on F2P worlds.
+}}
+{{Subject changes
+|date = 15 October 2015
+|update = The Max Cape
+|poll = 
+|change = Exhausted is now spelled correctly when attempting to use the Explorer's ring.
+}}
+{{Subject changes
+|date = 8 October 2015
+|update = Smoke Battlestaff Buff
+|change = Adjusted the game message when the explorer's ring is out of run restore charges.
+}}
+{{Subject changes
+|date = 7 May 2015
+|update = Slayer Partners & Teleports
+|change = The teleport to the Falador cabbage patch has been given a [[graphical updates|graphical update]].
+}}
+{{Subject changes footer}}
+
+==Trivia==
+* The ring is also called in-game as the "elite explorer ring"{{sic}}, when a player selects the Alchemy option on an [[Explorer's ring 3]] and attempts to select the yet to be unlocked [[High Alchemy]] spell: {{mes|You need the elite explorer ring to do that.}}
+* Attempting to use the ring's own [[Alchemy]] spell on it will fail, instead saying {{mes|It feels wrong to use the ring's power on this item.}}
+** Casting the spell normally with runes will still work, although it will yield no coins.
+
+{{Achievement diary}}
+{{Teleportation items}}
+
+[[Category:Items with charges]]

@@ -1,0 +1,91 @@
+{{External|rs}}
+{{Infobox Item
+|version1 = Uncharged
+|version2 = (1)
+|version3 = (2)
+|version4 = (3)
+|version5 = (4)
+|version6 = (5)
+|version7 = (6)
+|name1 = Skills necklace
+|name2 = Skills necklace(1)
+|name3 = Skills necklace(2)
+|name4 = Skills necklace(3)
+|name5 = Skills necklace(4)
+|name6 = Skills necklace(5)
+|name7 = Skills necklace(6)
+|image1 = [[File:Skills necklace (uncharged).png]]
+|image2 = [[File:Skills necklace.png]]
+|image3 = [[File:Skills necklace.png]]
+|image4 = [[File:Skills necklace.png]]
+|image5 = [[File:Skills necklace.png]]
+|image6 = [[File:Skills necklace.png]]
+|image7 = [[File:Skills necklace.png]]
+|release1 = [[30 April]] [[2007]]
+|release2 = [[30 April]] [[2007]]
+|release3 = [[30 April]] [[2007]]
+|release4 = [[30 April]] [[2007]]
+|release5 = [[30 April]] [[2007]]
+|release6 = [[27 March]] [[2014]]
+|release7 = [[27 March]] [[2014]]
+|update1 = 24 Carat Update
+|update2 = 24 Carat Update
+|update3 = 24 Carat Update
+|update4 = 24 Carat Update
+|update5 = 24 Carat Update
+|update6 = Wilderness Feedback Update
+|update7 = Wilderness Feedback Update
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Rub, Drop
+|wornoptions1 = Rub
+|wornoptions2 = Fishing Guild, Mining Guild, Crafting Guild, Cooking Guild, Woodcutting Guild, Farming Guild
+|wornoptions3 = Fishing Guild, Mining Guild, Crafting Guild, Cooking Guild, Woodcutting Guild, Farming Guild
+|wornoptions4 = Fishing Guild, Mining Guild, Crafting Guild, Cooking Guild, Woodcutting Guild, Farming Guild
+|wornoptions5 = Fishing Guild, Mining Guild, Crafting Guild, Cooking Guild, Woodcutting Guild, Farming Guild
+|wornoptions6 = Fishing Guild, Mining Guild, Crafting Guild, Cooking Guild, Woodcutting Guild, Farming Guild
+|wornoptions7 = Fishing Guild, Mining Guild, Crafting Guild, Cooking Guild, Woodcutting Guild, Farming Guild
+|examine1 = You will need to recharge the necklace at the Legends Guild.
+|examine2 = This will help me travel.
+|examine3 = This will help me travel.
+|examine4 = This will help me travel.
+|examine5 = This will help me travel.
+|examine6 = This will help me travel.
+|examine7 = This will help me travel.
+|value = 20200
+|weight = 0.010
+|exchange1 = Yes
+|exchange2 = No
+|exchange3 = No
+|exchange4 = No
+|exchange5 = Yes
+|exchange6 = No
+|exchange7 = Yes
+|id1 = 11113
+|id2 = 11111
+|id3 = 11109
+|id4 = 11107
+|id5 = 11105
+|id6 = 11970
+|id7 = 11968
+}}
+{{Synced switch
+|version1 = [[File:Skills necklace (uncharged) detail.png|left|140px]]
+|version2 = [[File:Skills necklace detail.png|left|140px]]
+|version3 = [[File:Skills necklace detail.png|left|140px]]
+|version4 = [[File:Skills necklace detail.png|left|140px]]
+|version5 = [[File:Skills necklace detail.png|left|140px]]
+|version6 = [[File:Skills necklace detail.png|left|140px]]
+|version7 = [[File:Skills necklace detail.png|left|140px]]
+}}
+A '''skills necklace''' is a [[dragonstone necklace]] that has been enchanted by the [[Lvl-5 Enchant]] spell.
+
+A skills necklace can be recharged at the [[Totem Pole (Legends' Guild)|totem pole]] in the [[Legends' Guild]], at the [[Fountain of Uhld]] in the [[Myths' Guild]], or by casting [[Recharge Dragonstone]], giving it four charges. Players who have completed [[Legends' Quest]] can also recharge it at the [[Fountain of Rune]], giving it six charges.
+
+Like other dragonstone jewellery, it is one the [[Wilderness#Member_teleportation_up_to_level_30_Wilderness|few items]] whose teleports will work up to level 30 Wilderness, while most other means of [[teleport]]ation will not work above level 20 Wilderness.
+
+Wearing a skills necklace with at least one charge while [[Big fishing net|big net]] fishing will slightly increase the chance of finding a [[casket]].{{CiteTwitter|url=https://twitter.com/JagexAsh/status/1574717183888072705|author=Mod Ash|date=27 September 2022|archiveurl=https://reldo.runescape.wiki/i/99014|archivedate=20 December 2022|quote=Your chance of a casket from big net fishing [while wearing a charged skills necklace] is about 0.4 percentage points higher.}}

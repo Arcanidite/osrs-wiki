@@ -1,0 +1,7 @@
+==Gameplay==
+[[File:Tithe Farm.png|thumb|250px|A player tending to several [[logavano fruit]] plants.]]
+Once the player has chosen seeds appropriate to their Farming level, they may enter the farm and plant seeds in any of the empty patches. Each seed must be watered three times; before minutes 1, 2 and 3 respectively, or they will wilt and die. After 3 minutes they will be fully grown and may be harvested for fruit, which can then be deposited into any of several sacks around the farm for additional Farming experience. Fully grown plants cannot die. For every 3 plants a player deposits in the sack, they will earn 1 point and for every 100 plants deposited, they will earn an additional 2 points. These points may be spent to receive [[Farmer Gricoller's Rewards|rewards]].
+
+Players can double the growth rate by using [[Gricoller's fertiliser]] which is given to the player upon entering the farm, however this may be less efficient (see [[Tithe Farm/Strategies|Strategy]] section).
+
+Upon leaving the farm through the door, the game and score will be completely '''reset''' (though any earned points and experience will be kept). This includes removing seeds and collected fruits in the player's inventory. If the player logs out during a session, their score will remain and they'll keep all remaining seeds and collected fruits, but any planted crops will be '''lost'''.

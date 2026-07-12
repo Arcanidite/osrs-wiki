@@ -1,0 +1,9 @@
+==Transportation==
+To get to Soul Wars, one must enter the [[Soul Wars Portal]] in [[Edgeville]] or the [[Ferox Enclave Dungeon]]. It is located south-west of the bank, and west of the abandoned mausoleum. After going through the portal, the player will arrive at [[Nomad]]'s camp on the [[Isle of Souls]], where players can exchange [[Zeal]] for rewards, learn how to play Soul Wars, or join one of two teams to play Soul Wars. The northern region of the lobby area is a ''safe'' area from [[player versus player]] combat, while the southern region is ''unsafe'' and allows PvP combat on PvP worlds.
+
+*[[Minigame Teleport]] - teleport to Soul Wars, accessible through any spellbook or [[Grouping]] tab.
+*[[Amulet of glory]] - teleports outside of Edgeville bank.
+*[[Combat bracelet]] - teleports to the [[Edgeville Monastery|Monastery]] near [[Edgeville]].
+*[[Ring of dueling]] - teleports to [[Ferox Enclave]], where players can access the [[Ferox Enclave Dungeon]] and the portal.
+*[[Paddewwa Teleport]] - teleports the player into the [[Edgeville Dungeon]], just a few steps away. Uses the [[Ancient Magicks]] spellbook.
+*[[Fairy rings]] - {{fairycode|BJP}} on the northern side of the island.

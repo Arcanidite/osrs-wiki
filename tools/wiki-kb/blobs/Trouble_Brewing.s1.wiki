@@ -1,0 +1,5 @@
+==Transportation==
+* [[Rum (red)|Red]] or [[Rum (blue)|blue]] rum to teleport to Trouble Brewing
+* Teleport using [[Minigame Teleport]], either through any spellbook or the [[Grouping]] interface, by selecting Trouble Brewing. Requires completion of [[Cabin Fever]] and 40 [[Cooking]].
+* Use a [[Mos le'harmless teleport]] scroll, then run east
+* Teleport to [[Harmony Island]] and talk to [[Brother Tranquility]] to transport to [[Mos Le'Harmless]], then run east

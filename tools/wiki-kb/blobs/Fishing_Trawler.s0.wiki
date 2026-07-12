@@ -1,0 +1,30 @@
+{{External|rs|rsc}}
+{{Redirect|Trawler|the music track|Trawler (music track)|the sailing activity|Deep sea trawling}}
+{{HasStrategy}}
+{{Infobox Activity
+|name = Fishing Trawler
+|image = [[File:Fishing Trawler.png|300px]]
+|release = [[28 July]] [[2003]]
+|update = Trawler mini game
+|type = Minigame
+|members = Yes
+|location = [[Port Khazard]]
+|players = 1+
+|skills = [[Fishing]]
+|requirements = None <br> {{SCP|Fishing|15|link=yes}} to catch fish
+|currency = None
+|tutorial = None
+|music = [[Trawler Minor]], [[Trawler (music track)|Trawler]]
+|map = {{Map|name=Fishing Trawler|x=2669|y=3161|zoom=2}}
+|leagueRegion = Kandarin
+}}
+[[File:Fishing Trawler logo.png|left]]
+'''Fishing Trawler''' is a [[Fishing]] [[minigame]] in which players must prevent [[Murphy]]'s trawling boat from sinking for five minutes. The minigame can be played at any level, but 15 [[Fishing]] is required to receive any rewards.
+
+To play, board the fishing trawler docked at [[Port Khazard]] and wait for the next voyage.
+
+On return to the mainland, players who earned enough contribution points during the minigame may search the [[trawler net]] to receive an assortment of [[Fishing Trawler#Rewards|fish]] and [[Fishing]] experience, with a chance to receive pieces of the [[angler's outfit]]. 
+
+The activity is notable as the fastest method of earning the [[angler's outfit]]. Playing on the official worlds offers a faster and more relaxed route to obtaining the outfit, while playing solo or in small groups can result in more fish and [[Fishing]] experience.
+
+Starting a Fishing Trawler expedition is an [[Ardougne Diary#Easy|easy Ardougne Diary]] task. Catching a [[Raw manta ray|manta ray]] (requiring 81 Fishing) and then cooking it in Port Khazard (requiring 91 [[Cooking]]) is an [[Ardougne Diary#Elite|elite Ardougne Diary]] task.

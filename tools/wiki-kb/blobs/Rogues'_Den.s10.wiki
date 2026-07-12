@@ -1,0 +1,61 @@
+==Rewards==
+{{Main|Wall safe}}
+[[File:Rogue_equipment_equipped male.png|right|thumb|258x258px|A player with Body Type A wearing rogue armour.]]
+At the end of the maze are wall safes that can be cracked in order to receive a reward. The wall safe opened has no effect on whether or not the attempt is successful.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1322955037409222659|date=1 November 2020|archiveurl=https://reldo.runescape.wiki/i/102142|archivedate=3 November 2020|quote=Pick a random number 0-199. If it's higher than your current visible Thieving stat, you get:
+- 50% chance of being ejected, and getting no roll.
+- 50% chance of your Thieving draining by 1, but continuing with the roll.
+The roll is 3/8 for a kit, and 5/8 for a crate of outfit.}}
+
+Players will also receive 12 [[experience]] per stat level drained in both Agility and Thieving. To maximize Agility experience players can jump back and forth at the last pendulum before the wall safe until the Agility level reaches between 0 and 5. At level 99 Agility and level 80 Thieving, up to 22k Agility xp per hour can be gained, along with a small amount of Thieving xp.
+
+Players who successfully crack a wall safe are rewarded with one of the following items:
+*[[Rogue kit]], which can be turned once into a [[rope]], [[chisel]], [[tinderbox]], or a [[spade]].
+*[[Rogue's equipment crate]], which allows the player to select one piece of [[rogue equipment]]:
+**[[Rogue mask]] (+5 to all defensive stats)
+**[[Rogue top]] (+10 to all defensive stats)
+**[[Rogue trousers]] (+7 to all defensive stats)
+**[[Rogue gloves]] (+2 to all defensive stats)
+**[[Rogue boots]] (+2 to all defensive stats)
+**The player may alternatively choose to get a rogue kit from the crate.
+
+Per piece of equipment worn, there is a 15% chance of pickpocketing twice the loot from an [[NPC]]. Wearing the full set instead guarantees the double loot. Experience drops remain unaffected.
+
+Players can store the full set in their [[armour case]] in the [[costume room]] of their [[player-owned house]].
+{| class="wikitable"
+|+
+![[File:Thieving icon.png|24x24px]]
+!Chance for<br>[[Rogue's equipment crate]]<br>each attempt
+!Expected attempts<br>to crack a safe<br>for full set
+!Expected time<br>to get full set
+|-
+|50
+|39.2%
+|13
+|48 minutes
+|-
+|60
+|40.8%
+|12
+|45 minutes
+|-
+|70
+|42.3%
+|12
+|42 minutes
+|-
+|80
+|43.9%
+|11
+|23 minutes
+|-
+|90
+|45.5%
+|11
+|22 minutes
+|-
+|99
+|46.9%
+|11
+|22 minutes
+|}
+The percentage above includes failures to crack the safe as well as the chance of getting a [[rogue kit]] instead. As the success chance of a crack attempt is based on visible Thieving level, it will be influenced by any debuffs to your Thieving level suffered while navigating the maze. The calculations assume the player is taking no risks with the traps and is using stamina potions.

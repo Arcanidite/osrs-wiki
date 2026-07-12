@@ -1,0 +1,195 @@
+==Rewards==
+On dedicated Castle Wars worlds, members will earn one [[Plaudits|plaudit]] for every [[Castle Wars ticket]] earned. One plaudit can be exchanged with [[Lanthus]] for one [[Castle Wars supply crate]].
+
+The following ticket rewards for each game scenario are as follows:
+* Castle Wars worlds:
+#Shut-out win (1-0) = 4 tickets to winning team, 2 tickets for losing team.
+#Regular win (2-1) = 3 tickets to the winning team, 2 tickets for the losing team.
+#Scoreless Draw (0-0) = 2 tickets for both teams.
+#Draw with points (1-1) = 3 tickets for both teams.
+* Non-Castle Wars worlds:
+#Shut-out win (1-0) = 3 tickets to winning team, 1 ticket for losing team.
+#Regular win (2-1) = 2 tickets to the winning team, 1 ticket for the losing team.
+#Scoreless Draw (0-0) = 1 tickets for both teams.
+#Draw with points (1-1) = 2 tickets for both teams.
+
+At least 15 minutes spent in the game is required to earn tickets and plaudits. Players will not receive tickets if they have no available inventory slots.
+
+The tickets and all of the rewards are '''untradeable'''.
+{{Listen
+|title = You are victorious!
+|filename = Victory! (Castle Wars).ogg}}
+{{Listen
+|title = You have met your equal.
+|filename = Draw. (Castle Wars).ogg}}
+{{Listen
+|title = You were slaughtered...
+|filename = Slaughtered... (Castle Wars).ogg}}
+Tickets can be spent at the [[Castle Wars Ticket Exchange]] for the rewards below.
+
+{|class="wikitable mw-collapsible align-left-2 sortable" style="text-align:center;"
+! colspan="4" | Castle Wars Ticket Exchange
+|-
+! colspan="2" | Item
+!Price
+!Members
+|-
+|{{plinkt|Decorative full helm (red)|txt=Red decorative full helm}}
+|{{Currency|Castle wars ticket|{{+=|ttl|5|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative helm (red)|txt=Red decorative helm}}
+|{{Currency|Castle wars ticket|{{+=|ttl|4|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (red platebody)|txt=Red decorative body}}
+|{{Currency|Castle wars ticket|{{+=|ttl|8|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (red platelegs)|txt=Red decorative legs}}
+|{{Currency|Castle wars ticket|{{+=|ttl|6|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (red plateskirt)|txt=Red decorative skirt}}
+|{{Currency|Castle wars ticket|{{+=|ttl|6|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative boots (red)|txt=Red decorative boots}}
+|{{Currency|Castle wars ticket|{{+=|ttl|4|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative shield (red)|txt=Red decorative shield}}
+|{{Currency|Castle wars ticket|{{+=|ttl|6|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative sword (red)|txt=Red decorative sword}}
+|{{Currency|Castle wars ticket|{{+=|ttl|5|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative full helm (white)|txt=White decorative full helm}}
+|{{Currency|Castle wars ticket|{{+=|ttl|40|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative helm (white)|txt=White decorative helm}}
+|{{Currency|Castle wars ticket|{{+=|ttl|40|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (white platebody)|txt=White decorative body}}
+|{{Currency|Castle wars ticket|{{+=|ttl|80|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (white platelegs)|txt=White decorative legs}}
+|{{Currency|Castle wars ticket|{{+=|ttl|60|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (white plateskirt)|txt=White decorative skirt}}
+|{{Currency|Castle wars ticket|{{+=|ttl|60|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative boots (white)|txt=White decorative boots}}
+|{{Currency|Castle wars ticket|{{+=|ttl|40|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative shield (white)|txt=White decorative shield}}
+|{{Currency|Castle wars ticket|{{+=|ttl|60|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative sword (white)|txt=White decorative sword}}
+|{{Currency|Castle wars ticket|{{+=|ttl|50|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative full helm (gold)|txt=Gold decorative full helm}}
+|{{Currency|Castle wars ticket|{{+=|ttl|500|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative helm (gold)|txt=Gold decorative helm}}
+|{{Currency|Castle wars ticket|{{+=|ttl|400|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (gold platebody)|txt=Gold decorative body}}
+|{{Currency|Castle wars ticket|{{+=|ttl|800|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (gold platelegs)|txt=Gold decorative legs}}
+|{{Currency|Castle wars ticket|{{+=|ttl|600|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (gold plateskirt)|txt=Gold decorative skirt}}
+|{{Currency|Castle wars ticket|{{+=|ttl|600|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative boots (gold)|txt=Gold decorative boots}}
+|{{Currency|Castle wars ticket|{{+=|ttl|400|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative shield (gold)|txt=Gold decorative shield}}
+|{{Currency|Castle wars ticket|{{+=|ttl|600|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative sword (gold)|txt=Gold decorative sword}}
+|{{Currency|Castle wars ticket|{{+=|ttl|500|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Castlewars hood (Zamorak)}}
+|{{Currency|Castle wars ticket|{{+=|ttl|10|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Castlewars cloak (Zamorak)}}
+|{{Currency|Castle wars ticket|{{+=|ttl|10|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Castlewars hood (Saradomin)}}
+|{{Currency|Castle wars ticket|{{+=|ttl|10|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Castlewars cloak (Saradomin)}}
+|{{Currency|Castle wars ticket|{{+=|ttl|10|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Saradomin banner}}
+|{{Currency|Castle wars ticket|{{+=|ttl|100|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Zamorak banner}}
+|{{Currency|Castle wars ticket|{{+=|ttl|100|echo=2}}}}
+|{{Members|No}}
+|-
+|{{plinkt|Decorative armour (magic hat)|txt=Decorative magic hat}}
+|{{Currency|Castle wars ticket|{{+=|ttl|20|echo=2}}}}
+|{{Members|Yes}}
+|-
+|{{plinkt|Decorative armour (magic top)|txt=Decorative magic robe top}}
+|{{Currency|Castle wars ticket|{{+=|ttl|40|echo=2}}}}
+|{{Members|Yes}}
+|-
+|{{plinkt|Decorative armour (magic legs)|txt=Decorative magic robe legs}}
+|{{Currency|Castle wars ticket|{{+=|ttl|30|echo=2}}}}
+|{{Members|Yes}}
+|-
+|{{plinkt|Decorative armour (ranged top)|txt=Decorative ranged top}}
+|{{Currency|Castle wars ticket|{{+=|ttl|40|echo=2}}}}
+|{{Members|Yes}}
+|-
+|{{plinkt|Decorative armour (ranged legs)|txt=Decorative ranged legs}}
+|{{Currency|Castle wars ticket|{{+=|ttl|30|echo=2}}}}
+|{{Members|Yes}}
+|-
+|{{plinkt|Decorative armour (quiver)|txt=Decorative quiver}}
+|{{Currency|Castle wars ticket|{{+=|ttl|40|echo=2}}}}
+|{{Members|Yes}}
+|-
+|{{plinkt|Saradomin halo}}
+|{{Currency|Castle wars ticket|{{+=|ttl|75|echo=2}}}}
+|{{Members|Yes}}
+|-
+|{{plinkt|Zamorak halo}}
+|{{Currency|Castle wars ticket|{{+=|ttl|75|echo=2}}}}
+|{{Members|Yes}}
+|-
+|{{plinkt|Guthix halo}}
+|{{Currency|Castle wars ticket|{{+=|ttl|75|echo=2}}}}
+|{{Members|Yes}}
+|-
+! colspan="2" |'''Total'''
+|{{Currency|Castle wars ticket|{{#var:ttl}}}}
+|}

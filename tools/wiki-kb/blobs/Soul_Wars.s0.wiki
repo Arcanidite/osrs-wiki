@@ -1,0 +1,24 @@
+{{External|rs}}
+{{Otheruses|def=no|the music track|Soul Wars (music track)}}
+{{Safe activity|instance=true|pvp=true}}
+{{Infobox Activity
+|name = Soul Wars
+|image = [[File:Isle of Souls - Soul Wars lobby.png|300px]]
+|release = [[6 January]] [[2021]]
+|update = Soul Wars And 20th Anniversary Event
+|aka = SW
+|type = Minigame
+|members = Yes
+|location = [[Isle of Souls]]
+|players = 10 per team
+|skills = [[Combat]]
+|requirements = {{SCP|overall|500}} [[total level]]<br/>{{SCP|combat|40}} [[combat level]]
+|currency = [[Zeal Tokens]]
+|tutorial = Yes
+|music = [[Soul Wars (music track)|Soul Wars]], [[The Waiting Game]]
+|map = {{Map|x=2206|y=2900|zoom=0|mapID=-1}}
+|leagueRegion = Misthalin
+}}
+[[File:Soul Wars logo.png|left|150px]]
+[[File:Soul Wars logo (Minigame Teleport).png|left]]
+'''Soul Wars''' is a [[members]]-only team [[minigame]], a remake of the original {{RSL|Soul Wars}} released in ''RuneScape 2'' on 10 February 2009. In Soul Wars, two opposing teams compete against each other to gather [[soul fragment]]s and offer them to the [[Soul Obelisk]] in order to weaken, and ultimately defeat, each other's Avatars through combat. Each game lasts up to 15 minutes.

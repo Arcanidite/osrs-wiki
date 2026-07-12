@@ -1,0 +1,16 @@
+==Official worlds==
+Unlike most minigames, Last Man Standing can only be played on certain [[worlds]]. It should be noted that there are no differences in gameplay between free-to-play and members, as the items used within the minigame, which includes various equipment usually exclusive to members, cannot be brought outside. This makes the minigame the only place where free-to-play players can perform [[special attack]]s with the weapons provided and use [[Ancient Magicks]].
+{{#vardefine:weekly|{{#expr:floor(floor(({{#time:U}}-{{#time:U|24 September 2025 10:30:00 UTC}})/(60*60*24))/7) mod 2}}}}
+As with [[PvP worlds]], Last Man Standing worlds are often [[PvP_world#Rotation|rotated]] to provide fairer [[lag]] associated with ping/server latency to players across the world. The current active PvP world rotation is {{#switch:{{#var:weekly}}|0=[[Server#Rotation_A|Rotation A]]|1=[[Server#Rotation_B|Rotation B]]}}.{{purge|tag=sup}}
+
+{| class="wikitable sortable" style="text-align: left;"
+!World
+!Location
+!Members
+!Activity
+{{WorldLine|326|United Kingdom|mems=no|LMS Casual}}
+|-{{#switch:{{#var:weekly}}|0=-->{{WorldLine|390|Australia|mems=yes|LMS Competitive}}|1=}}
+{{WorldLine|469|United States (east)|mems=no|LMS Casual}}
+|-{{#switch:{{#var:weekly}}|0={{WorldLine|559|United Kingdom|mems=yes|LMS Competitive}}|1=}}
+|-{{#switch:{{#var:weekly}}|0=|1={{WorldLine|580|United States (east)|mems=yes|LMS Competitive}}}}
+|}

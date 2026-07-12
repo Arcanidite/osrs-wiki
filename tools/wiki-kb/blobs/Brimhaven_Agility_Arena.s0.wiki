@@ -1,0 +1,22 @@
+{{External|rs}}
+{{Dangerous}}
+{{Infobox Activity
+|name = Brimhaven Agility Arena
+|image = [[File:Brimhaven Agility Arena.png|300px]]
+|release = [[27 July]] [[2004]]
+|update = Agility, Potions and Parties!
+|type = Minigame
+|members = Yes
+|location = [[Brimhaven]]
+|players = 1
+|skills = [[Agility]]
+|currency = [[Brimhaven voucher]]
+|tutorial = No
+|music = [[Aztec]]
+|map = {{Map|name=Brimhaven Agility Arena|2809,3194|zoom=3|mtype=pin}}
+|leagueRegion = Karamja
+}}
+[[File:Brimhaven Agility Course logo.jpg|left]]
+The '''Brimhaven Agility Course''' is an [[Agility]]-training [[minigame]] located beneath [[Brimhaven]]. The course has no requirements to access other than a 200 [[coins]] fee paid to [[Cap'n Izzy No-Beard]] before each entry. Instead of running laps like other [[agility courses]], the player may navigate obstacles to reach [[ticket dispenser]]s scattered across platforms, in order to tag them for additional Agility experience, as well as [[Agility arena ticket]]s and [[Brimhaven voucher|Brimhaven vouchers]] which may be traded in for additional rewards.
+
+Though it is possible to reach dispensers without any [[Agility]] levels, level 20 Agility is required to pass the [[pressure pad (Brimhaven Agility Arena)|pressure pad]] and [[Floor spikes (Brimhaven Agility Arena)|floor spike]] obstacles, while level 40 Agility is required for the [[spinning blades (Brimhaven Agility Arena)|spinning blades]] and [[darts (brimhaven agility arena)|darts]].

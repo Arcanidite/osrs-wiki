@@ -1,0 +1,77 @@
+===Types===
+{{Main|Impling#Implings}}
+Almost all of the implings that players can catch using the Hunter skill can be encountered within the wheat maze while participating in Impetuous Impulses. The sole exception is the [[crystal impling]], which may only be caught within the walls of [[Prifddinas]].
+
+{| class="wikitable sortable align-center-1 align-center-3 align-center-4"
+! rowspan=2 colspan=2 |Name
+! rowspan=2 |{{SCP|Hunter}} level<br/>(barehanded)
+! rowspan=2 |[[Grand Exchange|GE]] Price (jar)
+! rowspan=2 style="white-space:nowrap;" |Average<br/>Loot Value<ref group="d">Value of returned [[impling jar]]s is excluded, since it represents the average value of the non-jarred implings, not those bought from the [[Grand Exchange]].</ref>
+|-
+|[[File:Baby impling icon.png|center]]
+|[[Baby impling]]
+|17 (27)
+|{{Coins|{{GEP|Baby impling jar}}}}
+|{{Coins|{{ImpValue|Baby}}}}
+|-
+|[[File:Young impling icon.png|center]]
+|[[Young impling]]
+|22 (32)
+|{{Coins|{{GEP|Young impling jar}}}}
+|{{Coins|{{ImpValue|Young}}}}
+|-
+|[[File:Gourmet impling icon.png|center]]
+|[[Gourmet impling]]
+|28 (38)
+|{{Coins|{{GEP|Gourmet impling jar}}}}
+|{{Coins|{{ImpValue|Gourmet}}}}
+|-
+|[[File:Earth impling icon.png|center]]
+|[[Earth impling]]
+|36 (46)
+|{{Coins|{{GEP|Earth impling jar}}}}
+|{{Coins|{{ImpValue|Earth}}}}
+|-
+|[[File:Essence impling icon.png|center]]
+|[[Essence impling]]
+|42 (52)
+|{{Coins|{{GEP|Essence impling jar}}}}
+|{{Coins|{{ImpValue|Essence}}}}
+|-
+|[[File:Eclectic impling icon.png|center]]
+|[[Eclectic impling]]
+|50 (60)
+|{{Coins|{{GEP|Eclectic impling jar}}}}
+|{{Coins|{{ImpValue|Eclectic}}}}
+|-
+|[[File:Nature impling icon.png|center]]
+|[[Nature impling]]
+|58 (68)
+|{{Coins|{{GEP|Nature impling jar}}}}
+|{{Coins|{{ImpValue|Nature}}}}
+|-
+|[[File:Magpie impling icon.png|center]]
+|[[Magpie impling]]
+|65 (75)
+|{{Coins|{{GEP|Magpie impling jar}}}}
+|{{Coins|{{ImpValue|Magpie}}}}
+|-
+|[[File:Ninja impling icon.png|center]]
+|[[Ninja impling]]
+|74 (84)
+|{{Coins|{{GEP|Ninja impling jar}}}}
+|{{Coins|{{ImpValue|Ninja}}}}
+|-
+|[[File:Dragon impling icon.png|center]]
+|[[Dragon impling]]
+|83 (93)
+|{{Coins|{{GEP|Dragon impling jar}}}}
+|{{Coins|{{ImpValue|Dragon}}}}
+|-
+|[[File:Lucky impling icon.png|center]]
+|[[Lucky impling]]
+|89 (99)
+|{{NA}}
+|{{Coins|{{ImpValue|Lucky}}}}
+|}
+{{Reflist|group="d"}}

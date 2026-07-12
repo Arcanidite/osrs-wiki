@@ -1,0 +1,31 @@
+{{External|rs}}
+{{Infobox Item
+|name = Camulet
+|image = [[File:Camulet.png]]
+|release = [[23 January]] [[2006]]
+|update = Enakhra's Lament
+|members = Yes
+|quest = [[Enakhra's Lament]]
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options = Wear, Check-charge, Rub, Drop
+|wornoptions = Check, Teleport, Temple, Surface
+|examine = An amulet of Camel-speak. It makes vague braying noises.
+|value = 1
+|weight = 0.007
+|id = 6707
+}}
+[[File:Camulet detail.png|left|150px]]
+'''Camulet''' is a reward from [[Enakhra's Lament]]. When equipped, its wearer can speak to certain [[camels]] found in [[Al Kharid]] and throughout the Kharidian desert.
+
+The Camulet has four charges to teleport to the desert, inside [[Enakhra's Temple]] near [[Lazim]]. With the hard [[Desert Diary]] completed, the teleport destination can be switched to the temple entrance near the [[Bandit Camp Quarry|quarry]].
+
+Using the Camulet to teleport to [[Enakhra's Temple]] is a requirement for the [[Medium Desert Diary]].
+
+To recharge the Camulet, players must use a [[bucket]] of [[Ugthanki dung]] on it, which will fully recharge the amulet. Players can receive dung by speaking to certain camels (after partial completion of [[My Arm's Big Adventure]]) while wearing the Camulet, such as [[Al the Camel]], who can be found outside the bank in [[Al Kharid]]. You'll also need a [[bucket]] to collect the dung. 
+
+If lost, it can be retrieved by speaking with [[Lazim]]. Multiple Camulets may be obtained using the [[drop trick]], but when a charge on one is consumed it is subtracted from all Camulets in the player's possession (similar to the way [[ring of recoil]] charges work).
+
+The player can pay [[Lazim]] {{NoCoins|1000000|c}} to have him enhance the Camulet to grant '''unlimited''' teleport charges instead of just 4. The upgrade is permanent and will take effect on other Camulets in the player's possession and on replacements given by [[Lazim]] should the player lose one.

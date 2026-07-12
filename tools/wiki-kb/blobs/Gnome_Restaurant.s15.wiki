@@ -1,0 +1,78 @@
+==Rewards==
+[[File:Reward token (Gnome Restaurant) detail.png|60px|left]]
+For each delivery, the player is given a tip by the gnome customer. The speed of delivery does not influence the rewards given as a tip, as long as the delivery is made within the allotted time.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/946762161870778368|date=29 December 2017|archiveurl=https://reldo.runescape.wiki/i/98693|archivedate=16 February 2023|quote=It doesn't affect the loot.}}
+{{clear}}
+===Reward tokens===
+In addition to the tip, you receive points for completing a delivery, which are stored on a [[Reward token (Gnome Restaurant)|reward token]]. Every easy delivery you make gives you one point. Hard deliveries earn three points. After you earn 12 points, you receive a reward token, which you can use to receive a free random gnome food item. After earning the token, every 12 points earned adds another food item to the delivery should you use the token.
+
+You can have up to ten items of food delivered to you at once, as the token stores up to 120 points. When having food delivered, there is a small delay between using the token and receiving the food. You will need free inventory spots to hold the food.
+
+Once '''ten''' tokens are received and '''unused''', Gianne acknowledges your hard work and says you should go on vacation, or you may continue delivering just for tips. At this point, you can repeatedly re-roll your delivery target by simply asking for a new job at any time, regardless of your current job state. Re-initiating dialogue with Gianne without finishing the dialogue for an undesirable order ensures the five minute timer does not trigger. This makes acquiring unique items, such as the scarf, much easier.  
+
+===Easy delivery tips===
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Coins|quantity=2-500|rarity=Always|bucket=No|gemw=No}}
+{{DropsTableBottom}}
+
+===Hard delivery item tips===
+{{DropLogProject|kills=3258|type=deliveries}}
+====Unique items====
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Gnome goggles|quantity=1|rarity=23/384|Approx=Yes|bucket=No|raritynotes=<ref group=d name="Ninto">Only available from [[Captain Ninto]] and [[Captain Daerkin]].</ref>{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1150705533655162880|date=15 July 2019|archiveurl=https://reldo.runescape.wiki/i/98631|archivedate=15 July 2019|quote=It's the same.}}}}
+{{DropsLineReward|name=Gnome scarf|quantity=1|rarity=23/384|Approx=Yes|bucket=No|raritynotes=<ref group=d name="Ninto" />{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/838408267940384768|date=5 March 2017|archiveurl=https://reldo.runescape.wiki/i/100511|archivedate=16 July 2019|quote=I think it's 1/17 once you're getting a tip off them.}}}}
+{{DropsLineReward|name=Gnomeball|quantity=1|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Grand seed pod|quantity=5|rarity=23/512|Approx=Yes|bucket=No|raritynotes=<ref group=d>Only available from [[Wingstone]], [[Penwie]], [[Brambickle]], and [[Professor Manglethorp]].</ref>}}
+{{DropsLineReward|name=Mint cake|quantity=1|rarity=23/512|Approx=Yes|bucket=No|raritynotes=<ref group=d>Only available from [[Wingstone]], [[Penwie]], and [[Brambickle]].</ref>}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+====Herbs====
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Toadflax|quantity=3|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Snapdragon|quantity=1|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Goutweed|quantity=1|rarity=23/512|Approx=Yes|bucket=No|raritynotes=<ref group=d>Available from [[Brambickle]].</ref>|gemw=No}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+====Gems====
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Uncut sapphire|quantity=6-16 (noted)|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Uncut emerald|quantity=3-5 (noted)|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Uncut ruby|quantity=2-4 (noted)|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Uncut diamond|quantity=1|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Uncut jade|quantity=2-3 (noted)|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Uncut opal|quantity=3 (noted)|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Uncut red topaz|quantity=1|rarity=10/128|Approx=Yes|bucket=No}}
+{{DropsTableBottom}}
+
+====Runes====
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Law rune|quantity=7-18|rarity=Rare|bucket=No|raritynotes=<ref group=d name="Runes">Available from [[Professor Imblewyn]] and [[Professor Onglewip]] only.</ref>}}
+{{DropsLineReward|name=Nature rune|quantity=9-15|rarity=Rare|bucket=No|raritynotes=<ref group=d name="Runes" />}}
+{{DropsLineReward|name=Chaos rune|quantity=15-27|rarity=Rare|bucket=No|raritynotes=<ref group=d name="Runes" />}}
+{{DropsLineReward|name=Cosmic rune|quantity=10-19|rarity=Rare|bucket=No|raritynotes=<ref group=d name="Runes" />}}
+{{DropsLineReward|name=Death rune|quantity=7-13|rarity=Rare|bucket=No|raritynotes=<ref group=d name="Runes" />}}
+{{DropsLineReward|name=Blood rune|quantity=6-10|rarity=Rare|bucket=No|raritynotes=<ref group=d name="Runes" />}}
+{{DropsLineReward|name=Soul rune|quantity=5-11|rarity=Rare|bucket=No|raritynotes=<ref group=d name="Runes" />}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+====Crossbow bolts====
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Mithril bolts|quantity=16-35|rarity=Common|bucket=No}}
+{{DropsLineReward|name=Adamant bolts|quantity=12-26|rarity=Uncommon|bucket=No}}
+{{DropsLineReward|name=Runite bolts|quantity=7-15|rarity=Rare|bucket=No}}
+{{DropsTableBottom}}
+
+====Other tips====
+{{DropsTableHead|leagueRegion=Kandarin}}
+{{DropsLineReward|name=Bird nest (seeds)|quantity=1|rarity=5/128|Approx=Yes|bucket=No}}
+{{DropsLineReward|name=Raw oomlie|quantity=1|rarity=23/512|Approx=Yes|bucket=No|raritynotes=<ref group=d>Only available from [[Penwie]].</ref>}}
+{{DropsLineReward|name=Pure essence|quantity=51-97|rarity=Rare|bucket=No|raritynotes=<ref group=d>Available from [[Professor Imblewyn]] and [[Professor Onglewip]] only.</ref>}}
+{{DropsLineReward|name=Snake charm|quantity=1|rarity=23/512|Approx=Yes|bucket=No|raritynotes=<ref group=d>Only available from [[Wingstone]].</ref>|gemw=No}}
+{{DropsLineReward|name=Loop half of key|quantity=1|rarity=23/640|Approx=Yes|bucket=No|raritynotes=<ref group=d>Slightly different rarity from pilots, explorers, and professors.</ref>}}
+{{DropsLineReward|name=Tooth half of key|quantity=1|rarity=23/640|Approx=Yes|bucket=No|raritynotes=<ref group=d>Slightly different rarity from pilots, explorers, and professors.</ref>}}
+{{DropsLineReward|name=Gold ore|quantity=6-11|rarity=23/512|Approx=Yes|bucket=No|raritynotes=<ref group=d name="Manglethorp">Only available from [[Professor Manglethorp]].</ref>}}
+{{DropsLineReward|name=Coal|quantity=12-22|rarity=23/512|Approx=Yes|bucket=No|raritynotes=<ref group=d name="Manglethorp" />}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}

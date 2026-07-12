@@ -1,0 +1,13 @@
+==Requirements==
+The following items must be brought with you:
+* A [[spade]]
+* A [[seed dibber]] (or completed [[Barbarian Training#Bare-handed planting|bare-handed planting]])
+* One or more [[watering can]]s. It is recommended to have 6 to 8 to avoid needing to refill water containers during a planting cycle while also minimising weight. A [[Gricoller's can]] can be bought and used instead once points are obtained.
+
+Before entering the planting area, players must pick up one of three tiers of seed from the table. Only one tier may be used at a time, and up to 10,000 may be picked up. Players should pick up the highest tier of seed they have the requirements for, as higher seeds yield more farming experience, with the game otherwise playing out identically.
+
+*[[Golovanova seed]]s ({{SCP|Farming|34}})
+*[[Bologano seed]]s ({{SCP|Farming|54}})
+*[[Logavano seed]]s ({{SCP|Farming|74}})
+
+Boosts '''can''' be used, but the level must be boosted before taking seeds '''and''' before planting them. Plants may be watered and harvested without boosting.

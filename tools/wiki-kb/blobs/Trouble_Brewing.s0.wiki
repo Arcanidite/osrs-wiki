@@ -1,0 +1,24 @@
+{{Safe activity}}
+{{External|rs}}
+{{Infobox Activity
+|name = Trouble Brewing
+|image = [[File:Trouble Brewing.png|300px]]
+|release = [[4 July]] [[2006]]
+|update = Trouble Brewing
+|type = Minigame
+|members = Yes
+|location = [[Mos Le'Harmless]]
+|players = 2+
+|skills = [[Cooking]], [[Woodcutting]], [[Firemaking]], [[Crafting]], [[Agility]], [[Strength]]
+|currency = [[Pieces of eight]]
+|tutorial = No
+|music = [[Distillery Hilarity]], [[Trouble Brewing (music track)|Trouble Brewing]]
+|map = {{Map|name=Trouble Brewing|x=3813|y=2973|zoom=1}}
+|leagueRegion = Morytania
+}}
+[[File:Trouble Brewing logo.png|left]]
+'''Trouble Brewing''' is a [[minigame]] that takes place on the east side of the pirate island of [[Mos Le'Harmless]]. The main goal of the game is to make as much rum as you can as fast as possible. To do this, there are a number of tasks that must be done, from gathering ingredients to taking care of the boilers.
+
+To access the minigame, you must have completed the [[Cabin Fever]] quest and have at least 40 [[Cooking]]. It is also recommended to bring [[weight-reducing clothing]], a [[m'speak amulet]] (not necessary after completion of [[Monkey Madness II]]), and a good woodcutting [[axe]] (though a [[bronze axe]] can be obtained inside the minigame).
+
+Completing a game of Trouble Brewing is a medium task for the [[Morytania achievement diary]]. You do not need to win the game or gain any [[pieces of eight]] to complete the task.

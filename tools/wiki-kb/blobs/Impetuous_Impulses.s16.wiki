@@ -1,0 +1,18 @@
+==Elnock's Exchange==
+[[File:Elnock's Exchange.png|thumb|right|Elnock's Exchange]]
+Players can trade in specific combinations of impling jars to [[Elnock Inquisitor]] in exchange for items that are helpful for capturing implings.
+
+{| class="wikitable"
+|-
+! colspan="2" | Elnock's Exchange
+|-
+!You Give... !! You Receive...
+|-
+|3 [[baby impling jar]]s, 2 [[young impling jar]]s, 1 [[gourmet impling jar]]|| [[Imp repellent]]
+|-
+|3 [[gourmet impling jar]]s, 2 [[earth impling jar]]s, 1 [[essence impling jar]]|| [[Magic butterfly net]]
+|-
+|3 [[essence impling jar]]s, 2 [[eclectic impling jar]]s, 1 [[nature impling jar]] || [[Jar generator]]
+|-
+|1 of any impling type || 3 [[impling jar]]s
+|}

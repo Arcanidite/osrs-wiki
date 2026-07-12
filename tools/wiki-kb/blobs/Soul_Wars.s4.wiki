@@ -1,0 +1,23 @@
+==Gameplay==
+The objective of the minigame is to defeat the opposing team's Avatar more times than they defeat yours in 15 minutes. The Avatars begin each battle with damage reduction of 100%. The red team's Avatar is the [[Avatar of Destruction]], while the blue team's Avatar is the [[Avatar of Creation]].
+
+In order to reduce the damage reduction percentage, players will have to gather [[soul fragment]]s as loot from monsters wandering around the minigame area, and offer them to the [[Soul Obelisk]]. Control over the Soul Obelisk is dependent on which team has more players within its vicinity; the team that does not have control of the obelisk will find that sacrificing soul fragments there will only be worth one-third of the contribution.
+
+Players can also gather [[Bones (Soul Wars)|bones]] and bury them at a graveyard to increase the percentage of their Avatar's damage reduction. If the bones are buried in a graveyard which that player's team does not have control over, it will only be worth one-third of the contribution. If a team's Avatar's health is low, or the other team has control of the Soul Obelisk, then more players are needed to gather and bury bones to increase the damage reduction percentage of their Avatar. Players can also stand near the Soul Obelisk to assist in its capture.
+
+The capes worn in Soul Wars act like [[team cape]]s, meaning that attacking is the default left-click option on any player of an opposing team, which is useful when one does not target a certain player and is in a crowded place such as the Soul Obelisk. The capes worn cannot be unequipped during a game and players attempting to attack teammates are disallowed from doing so.
+
+Players will have to maintain their activity bar in order to receive [[Zeal Tokens]], the minigame's reward currency. The activity bar entirely depletes after about three minutes of inactivity. A player that remains completely idle and lets their activity bar deplete will be kicked from the game and forced to wait 10 minutes before they can join another game of Soul Wars.
+
+Players can maintain their activity bar and earn Zeal Tokens by: 
+* Killing players - the amount of Zeal depends on how strong the opponent is relative to the player
+** The Zeal reward is determined by the difference in combat level between the player and their opponent, scaling linearly as the gap grows wider {{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1672563149160198144|date=24 June 2023|archiveurl=https://reldo.runescape.wiki/i/106103|archivedate=26 June 2023|quote=It's looking at your relative combat levels, yes. I didn't see any reference to brackets in the code, just linear scaling. Though in practice that can indirectly lead to thresholds existing just due to the rounding in the calculations.}}
+** Killing the same player multiple times will have lower Zeal returns over time
+* Healing teammates - players can use [[Bandages (Soul Wars)|bandages]] on their teammates to heal them
+* Burying bones - players can bury bones until their Avatar has 100% damage reduction
+* Sacrificing soul fragments - players can sacrifice soul fragments until the opposing team's Avatar has 0% damage reduction
+* Dealing damage to the opposing team's Avatar
+* Capturing graveyards or the Soul Obelisk
+* Killing NPCs (does not reward Zeal)
+* Destroying [[Barricade (Soul Wars)|barricades]] (does not reward Zeal)
+Despite being a PvP minigame and multi-combat, [[Heal Other]], [[Boost Potion Share]], and [[Energy Transfer]] are not allowed.

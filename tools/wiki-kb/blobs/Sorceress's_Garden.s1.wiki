@@ -1,0 +1,6 @@
+==Transportation==
+*[[Amulet of glory]] teleport to Al Kharid inside the palace, on the {{FloorNumber|uk=0}} in the southern room. This brings you close to both [[Osman]] and the mini-game, as well as a bank.
+*Members that have completed [[Prince Ali Rescue]] can use the Sorceress's Garden [[Minigame Teleport]] after asking [[Osman]] ([[Selim]] after completion of [[Beneath Cursed Sands]]) if he needs any help.
+*[[Gnome glider]] to travel to and from Al Kharid (after completing [[The Grand Tree]] quest).
+*From [[Lumbridge]], use the toll gate, which is free if the required quest [[Prince Ali Rescue]] [[Quests|quest]] is completed.
+*[[Ring of dueling]] teleport to the [[Emir's Arena]], just north-east of Al Kharid.

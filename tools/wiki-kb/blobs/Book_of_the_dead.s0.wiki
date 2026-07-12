@@ -1,0 +1,26 @@
+{{Infobox Item
+|name = Book of the dead
+|image = [[File:Book of the dead.png]]
+|release = [[16 June]] [[2021]]
+|update = A Kingdom Divided
+|members = Yes
+|quest = [[A Kingdom Divided]]
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options = Wield, Reminisce, Read, Check, Destroy
+|wornoptions = Lunch by the Lancalliums, The Fisher's Flute, History and Hearsay, Jewellery of Jubilation, A Dark Disposition, Check
+|destroy = You can obtain another from Commander Fullore at Kourend Castle.
+|examine = A book that grants its holder the powers of resurrection.
+|value = 80
+|weight = 0.200
+|id = 25818
+}}
+[[File:Book of the dead detail.png|left|150px]]
+The '''book of the dead''' is an equipable book obtained as a reward from completing [[A Kingdom Divided]]. Having it equipped or in the player's inventory is required when casting [[resurrection spells]].
+
+The book is an improved version of [[Kharedst's memoirs]], and offers the same teleports. The book offers as an additional 150 charges over the memories, resulting in a maximum of 250 charges if all five of the [[Page (Kharedst's memoirs)|pages]] from the [[Quests/Series#Kourend|original Kourend quests]] have been added.
+
+If lost, the book can be reclaimed from [[Commander Fullore]] on the ground floor of the [[Kourend Castle]]. Additional copies can be purchased from [[Perdu]] for {{Coins|9500}} coins each.
+{{ToC}}

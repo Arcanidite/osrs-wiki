@@ -1,0 +1,32 @@
+{{Safe activity|noitems=yes|pvp=yes}}
+{{Infobox Activity
+|name = Last Man Standing
+|image = [[File:Last Man Standing.png|300px]]
+|release = [[4 August]] [[2016]]
+|update = Last Man Standing
+|aka = LMS
+|type = Minigame
+|members = No
+|location = [[Ferox Enclave]]
+|players = 4-24
+|skills = [[Combat]]
+|requirements = None
+|currency = Points
+|tutorial = No
+|music = [[Last Man Standing (music track)|Last Man Standing]]
+|map = {{Map|name=Last Man Standing|x=3142|y=3636|zoom=2}}
+|leagueRegion = No
+}}
+[[File:Last Man Standing logo.png|left|100px]]
+[[File:Last Man Standing logo (Minigame Teleport).png|left]]
+'''Last Man Standing''', commonly referred to as '''LMS''', is a [[player-versus-player]] battle royale style [[minigame]] in which the player, along with 3-23 others, are transported onto an island where they must fight for survival, killing each other and looting any items they can to become the titular last man standing.
+
+Players can begin the minigame by speaking to [[Lisa]], located in [[Ferox Enclave]]. Items '''cannot''' be brought into the minigame; any items in the player's possession are temporarily taken away for the duration of the game, and are returned upon leaving the game.
+[[File:Last Man Standing lobby.png|thumb|left|The Last Man Standing lobby in Ferox Enclave.]]
+
+Upon speaking to Lisa, players will be given the choice to participate in one of three game modes:
+*'''Casual''' - Players can participate without reward and can begin a game with four players, though their rank on the highscores are not affected.
+*'''Competitive''' - Only playable on [[members|members' worlds]], players are rewarded points for playing and their rank on the highscores are affected. There must be 24 participants to begin a competitive game. After a game of competitive, the player's rating will get updated and displayed in the chat window.
+*'''High Stakes''' - Like competitive mode, but players must pay 500,000 coins to enter. This game mode is not always active; it is enabled by the Old School Team at their discretion. High Stakes cannot be played by [[Ironman]] accounts.
+
+Participating in Competitive and High Stakes requires players to have a minimum [[total level]] of 750 and 30 [[Quest points]], or a minimum total level of 1,500 if they have less than 30 Quest points.

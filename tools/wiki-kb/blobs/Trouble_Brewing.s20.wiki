@@ -1,0 +1,96 @@
+==Rewards==
+Different actions performed during the game reward players with different types of experience rewards, as well as rewarding contribution points during the game. After each game, 10 [[piece of eight|pieces of eight]] are awarded per bottle of rum produced by the team, regardless of the contribution by the player. On top of that, up to 100 pieces of eight are awarded, based on the contribution points gained during the game. For players contributing ingredients other than [[bucket of water|buckets of water]], there is also an experience reward of 100 [[Crafting]] experience, 250 [[Cooking]] experience, and 150 [[Firemaking]] experience, rewarded to the players who contributed at least one ingredient to the brewing process (3 [[bowl of red water|bowls of red]] or [[bowl of blue water|blue water]], or 1 of any other non-water ingredient).
+
+{{Skill info
+|name = Rum contribution reward
+|skill1name = Crafting
+|skill2name = Cooking
+|skill3name = Firemaking
+|skill1lvl = 1
+|skill2lvl = 1
+|skill3lvl = 1
+|skill1exp = 100
+|skill2exp = 250
+|skill3exp = 150
+}}
+
+Each resource you deposit into a [[Hopper (Trouble Brewing)|hopper]] counts for 1 piece of eight at the end of a game. The maximum amount of pieces of eight you can receive from a single game through gathering resources is 100. Resources applies to all the things you can deposit into the hoppers, including buckets of water which are the fastest resource to deposit and take around 3–4 minutes to reach the maximum point count per game.
+
+If you automatically joined at the half-way point in the game, any pieces of eight you earned will be halved (rounded down). The experience awarded at the end of the game is not changed when this happens, though.
+
+The table below shows the immediate experience reward granted for performing certain actions in the game, along with the contribution points towards the pieces of eight and towards the experience reward at the end of the game.
+
+{|class="wikitable"
+|-
+!Action !! XP Reward !! Contribution !! Rum XP
+|-
+|Buckets of water added||None||1||0
+|-
+|Coloured water added||{{SCP|Cooking|100}}||1||1/3
+|-
+|Sweetgrub obtained||{{SCP|Hunter|40}}||{{NA}}||{{NA}}
+|-
+|Sweetgrub added||{{SCP|Cooking|100}}||1||1
+|-
+|Scrapey tree bark obtained||{{SCP|Fletching|50}}||{{NA}}||{{NA}}
+|-
+|Scrapey tree bark added||{{SCP|Cooking|100}}||1||1
+|-
+|Bitternut obtained||{{SCP|Hunter|50}}||{{NA}}||{{NA}}
+|-
+|Bitternut added||{{SCP|Cooking|200}}||1||1
+|-
+|Log lit in boiler||{{SCP|Firemaking|100}}||1||0
+|-
+|Equipment sabotaged||{{SCP|Firemaking|50}}||1||0
+|-
+|Repair item created||{{SCP|Crafting|12.5}}||{{NA}}||{{NA}}
+|-
+|Water Pump repaired||{{SCP|Crafting|50}}||1||0
+|-
+|Other facility repaired||{{SCP|Crafting|12.5}}||1||0
+|-
+|Burning object doused (other than trees)||{{SCP|Firemaking|50}}||1||0
+|-
+|Monkey captured||{{SCP|Agility|15}}, {{SCP|Hunter|15}}||{{NA}}||{{NA}}
+|-
+|Boiler pressure increased||{{SCP|Strength|25}}||{{NA}}||{{NA}}
+|}
+
+===Honest Jimmy===
+{{main|Honest Jimmy's House of Stuff}}
+You can also talk to [[Honest Jimmy]] to use your [[pieces of eight]] and get some unique items such as naval clothing, pirate banners, [[the stuff]] (which increases the chance of getting a mature ale from personal [[Brewing|brewing]]), and [[rum (Trouble Brewing)|rum]] (acts as a consumable teleport to the Trouble Brewing area).  It takes 39,590 points to purchase all items from the shop. 
+
+{{StoreTableHead|sellmultiplier=10000|hidebuy=Yes|hidestock=Yes|hiderestock=Yes|hidege=yes|currency=Pieces of eight|hidecaption=yes|bucket=No}}
+{{StoreLine|name=Blue naval shirt|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Blue tricorn hat|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Blue navy slacks|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Green naval shirt|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Green tricorn hat|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Green navy slacks|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Red naval shirt|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Red tricorn hat|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Red navy slacks|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Brown naval shirt|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Brown tricorn hat|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Brown navy slacks|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Black naval shirt|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Black tricorn hat|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Black navy slacks|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Purple naval shirt|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Purple tricorn hat|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Purple navy slacks|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Grey naval shirt|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Grey tricorn hat|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Grey navy slacks|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Cutthroat flag|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Gilded smile flag|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Bronze fist flag|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Lucky shot flag|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Treasure flag|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Phasmatys flag|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=The stuff|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Rum (red)|sell=20|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Rum (blue)|sell=20|buy=N/A|gemw=no|restock=100}}
+{{StoreLine|name=Clue scroll (medium)|stock=inf|restock=N/A|buy=N/A|gemw=no|sell=5000}}
+{{StoreTableBottom}}

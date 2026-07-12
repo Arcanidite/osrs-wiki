@@ -1,0 +1,10 @@
+===Burning a Shade===
+[[File:Shades of Mort'ton - Burning shade remains.gif|thumb|right|250px||The Shade spirit is now free!]]
+{{Needed|[[Sacred oil]], [[logs]] or [[axe]], [[loar remains]], [[tinderbox]]|skills={{SCP|Firemaking|5}} {{Boostable|yes}} to use pyre logs on the funeral pyre}}
+
+If you do not yet have logs, cut down a nearby [[dead tree]]. Use your sacred oil on the [[logs]] to receive a [[pyre logs|pyre log]]. Then, head over to one of the funeral pyres, which are the brown patches on the map west of the General Store. Use the pyre logs on the funeral pyre, followed by the [[Loar remains]]. Light this and you will see a spirit rise from the pyre. ({{SCP|Firemaking|5}})
+
+Collect your reward from the stone pillar next to the pyre and head back to Ulsquire. Speak with him to prompt the end of the quest (use a serum if he has reverted to being afflicted).
+
+'''Congratulations, quest complete!'''
+{{clear}}

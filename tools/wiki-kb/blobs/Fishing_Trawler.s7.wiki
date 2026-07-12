@@ -1,0 +1,37 @@
+===Contribution meter===
+Players must earn at least 50 contribution points to search the [[Trawler net]] to receive [[Fishing]] [[experience]], saltwater [[fish]], and a chance at a piece of the [[angler's outfit]]. Points earned above 50 '''do not''' increase the chance of obtaining the outfit. A maximum of 255 points may be earned per game - a full contribution meter will yield 100% more fish compared to the minimum contribution, as well as doubling the chance of receiving the [[heron]] pet.
+
+The contribution meter will change colour from red to yellow at 50 points. The meter does not deplete; therefore, players are able to stop contributing after reaching their goal.
+
+{| class="wikitable"
+!Action
+!Points
+!Skill
+!XP
+|-
+|Bailing water
+|2
+|N/A
+|N/A
+|-
+|Filling a leak with swamp paste
+|5
+|{{SCP|Construction}}
+|5{{Refn|name=poh|group=a|A [[player-owned house|POH]] must be owned in order to receive [[Construction]] XP. Players without a house may still fix the broken rail to receive points, but no Construction experience will be gained (this also counts for applying swamp paste to leaks).}}
+|-
+|Repairing the net with a rope
+|7
+|{{SCP|Crafting}}
+|5
+|-
+|Attacking the kraken (per successful chop)
+|10
+|{{SCP|Woodcutting}}
+|5
+|-
+|Fixing a broken rail caused by the kraken
+|10
+|{{SCP|Construction}}
+|5{{NamedRef|name=poh|group=a}}
+|}
+{{Reflist|group="a"}}

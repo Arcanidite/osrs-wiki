@@ -1,0 +1,121 @@
+==Walkthrough==
+Enter the Rogues' Den without any items in your inventory or equipped and without any [[Pet|follower]]. You will automatically receive a [[mystic jewel]] to leave the Den whenever you want.
+
+For the most efficient path through the maze, either follow the instructions to import the '''tile markers''' above, or follow the below advice.
+
+====Pre-shortcut====
+{| class="wikitable"
+|+
+!Minimap
+!Screenshot
+!Description
+|-
+|[[File:Rogues' Den (1) map.png]]
+|[[File:Rogues' Den (1).png|260px]]
+|Walk over the floor traps at the start and go west through the contortion bars and pendulum.
+|-
+|[[File:Rogues' Den (2) map.png]]
+|[[File:Rogues' Den (2).png|260px]]
+|Avoid the traps by staying on the stairs and go through the north-west gate.
+|-
+|[[File:Rogues' Den (3) map.png]]
+|[[File:Rogues' Den (3).png|260px]]
+|Follow the line as shown to the side using the "run trick" where possible. Don't stand still on any traps or next to any wall traps.
+|-
+|[[File:Rogues' Den (4) map.png]]
+|[[File:Rogues' Den (4).png|260px]]
+|Climb across one of the two ledges and go north.
+|-
+|[[File:Rogues' Den (5) map.png]]
+|[[File:Rogues' Den (5).png|260px]]
+|Move past the blades and the pendulums.
+
+Be sure to left click on one of the blades otherwise your character will try to walk around them.
+
+Walk over the ledge to the next room.
+|-
+|[[File:Rogues' Den (6) map.png]]
+|[[File:Rogues' Den (6).png|260px]]
+|Be careful of the traps on the floor, and along the two walls.
+Click in between the two trap tiles, then click at the bend past all the traps.
+
+*If you have at least 80 [[Thieving]], unlock the doors and proceed to go right, left, left, and skip to '''[[Rogues' Den#Post-shortcut|post-shortcut]].'''
+*If not, enter the passageway as indicated by the black arrow and follow the '''[[Rogues' Den#Long route|long route]]'''.
+|}
+
+====Long route====
+{| class="wikitable"
+!Minimap
+!Screenshot
+!Description
+|-
+|[[File:Rogues' Den - long route (1) map.png|thumb]]
+|[[File:Rogues' Den - long route (1).png|thumb|216x216px]]
+|Go north through the passageway, over the blade, and through another passageway.
+|-
+|[[File:Rogues' Den - long route (2) map.png]]
+|[[File:Rogues' Den - long route (2).png|260px]]
+|Go east and stand before the traps (see screenshot), then click on the passageway while '''RUNNING''' so you will not activate the traps.
+|-
+|[[File:Rogues' Den - long route (3) map.png]]
+|[[File:Rogues' Den - long route (3).png|260px]]
+|Walk carefully around the spinning blades and climb the ledge.
+|-
+|[[File:Rogues' Den - long route (4) map.png]]
+|[[File:Rogues' Den - long route (4).png|260px]]
+|Right click on the first wall and use the function "Search wall" to temporarily disable this trap.
+Then '''RUN''' past the other three walls.
+|-
+|[[File:Rogues' Den - long route (5) map.png]]
+|[[File:Rogues' Den - long route (5).png|260px]]
+|Move past the blades into the next room.
+
+Grab the south-eastern [[Tiles (Rogues' Den)|tile]] (see screenshot) and open the door. Click on the tile in the puzzle screen and you can proceed.
+|-
+|[[File:Rogues' Den - long route (6) map.png]]
+|[[File:Rogues' Den - long route (6).png|260px]]
+|Pass through the grills as shown in the screenshot.
+|-
+|[[File:Rogues' Den - long route (7) map.png]]
+|[[File:Rogues' Den - long route (7).png|260px]]
+|Walk all the way to the south.
+
+Go to the west and stand still right before the three wall traps, Right click on the first wall and use the function "Search wall" to temporarily disable this trap. Then '''RUN''' past them.
+|-
+|[[File:Rogues' Den - long route (8) map.png]]
+|[[File:Rogues' Den - long route (8).png|260px]]
+|Enter the next room, stop right before the traps and '''RUN''' past them.
+Do the same for the next room and click on the pendulum.
+
+Watch out for the single floor trap in the small corridor after the pendulum.
+|-
+|[[File:Rogues' Den - long route (9) map.png]]
+|[[File:Rogues' Den - long route (9).png|260px]]
+|Go to the left and again stop right before the first floor trap, then '''RUN''' past all of them.
+|}
+
+====Post-shortcut====
+{| class="wikitable"
+!Minimap
+!Screenshot
+!Description
+|-
+|[[File:Rogues' Den - shortcut (1) map.png]]
+|[[File:Rogues' Den - shortcut (1).png|260px]]
+|Ignore the spinning blades.
+Stop before the first floor trap and '''RUN''' past all of them.
+|-
+|[[File:Rogues' Den - shortcut (2) map.png]]
+|[[File:Rogues' Den - shortcut (2).png|260px]]
+|Pick up the [[Flash powder]], but do not get close to a guard.
+Then, use the powder on the guard and '''RUN''' past him while he is stunned.
+
+Move past the last two pendulums and you have completed the maze.
+|-
+|[[File:Rogues' Den - shortcut (3) map.png]]
+|[[File:Rogues' Den - shortcut (3).png|260px]]
+|Crack any of [[wall safe]]s and you will teleport out of the maze.
+'''Note:''' There is a chance to fail the lockpicking and end up without reward.
+
+You might want to use an [[Energy potion|Energy]] or [[Stamina potion]] before attempting the maze again.
+|}

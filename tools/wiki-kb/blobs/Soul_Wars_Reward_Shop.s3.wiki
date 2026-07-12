@@ -1,0 +1,15 @@
+===Stock===
+{{StoreTableHead|currency=Zeal Tokens|hidestock=yes|hidecaption=yes|hiderestock=yes|column1=GP per Zeal}}
+{{StoreLine|stock=inf|sell=2500|buy=N/A|column1=N/A|name=Soul cape}}
+{{StoreLine|stock=inf|sell=250|buy=N/A|column1=N/A|name=Ectoplasmator}}
+{{StoreLine|stock=inf|sell=30|buy=N/A|column1={{Coins|{{Average drop value|mob=spoils of war|killname=opening|raw=y|round=1}}/30}}{{Efn|Based on the average price of opening a spoils of war|1}}|name=Spoils of war}}
+{{StoreLine|stock=inf|sell=10|buy=N/A|column1={{Coins|{{GEP|Blighted entangle sack|70}}/10}}|name=Blighted entangle sack|displayname=Blighted entangle sack (x70)}}
+{{StoreLine|stock=inf|sell=10|buy=N/A|column1={{Coins|{{GEP|Blighted teleport spell sack|50}}/10}}|name=Blighted teleport spell sack|displayname=Blighted teleport spell sack (x50)}}
+{{StoreLine|stock=inf|sell=10|buy=N/A|column1={{Coins|{{GEP|Blighted vengeance sack|50}}/10}}|name=Blighted vengeance sack|displayname=Blighted vengeance sack (x50)}}
+{{StoreLine|stock=inf|sell=10|buy=N/A|column1={{Coins|{{GEP|Blighted ancient ice sack|30}}/10}}|name=Blighted ancient ice sack|displayname=Blighted ancient ice sack (x30)}}
+{{StoreLine|stock=inf|sell=10|buy=N/A|column1={{Coins|{{GEP|Blighted manta ray|15}}/10}}|name=Blighted manta ray|displayname=Blighted manta ray (x15)}}
+{{StoreLine|stock=inf|sell=10|buy=N/A|column1={{Coins|{{GEP|Blighted anglerfish|15}}/10}}|name=Blighted anglerfish|displayname=Blighted anglerfish (x15)}}
+{{StoreLine|stock=inf|sell=10|buy=N/A|column1={{Coins|{{GEP|Blighted karambwan|12}}/10}}|name=Blighted karambwan|displayname=Blighted karambwan (x12)}}
+{{StoreLine|stock=inf|sell=10|buy=N/A|column1={{Coins|{{GEP|Blighted super restore(4)|4}}/10}}|name=Blighted super restore(4)|displayname=Blighted super restore(4) (x4)}}
+{{StoreTableBottom}}
+{{Notelist}}

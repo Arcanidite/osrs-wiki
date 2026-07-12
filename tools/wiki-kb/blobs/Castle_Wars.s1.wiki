@@ -1,0 +1,15 @@
+==Transportation==
+Castle Wars is found in the south-west corner of [[Kandarin]] and may be accessed via a number of ways:
+*Teleport using [[Minigame Teleport]], either through any spellbook or the [[Grouping]] interface, by selecting Castle Wars.
+*Using a [[ring of dueling]] to teleport directly there.
+*Travelling west from [[Yanille]] or [[Gu'Tanoth]].
+*The [[Balloon transport system]] has an endpoint just north-east of the entrance.
+*Walking south-west from [[Ardougne]].
+*The [[fairy ring]] code {{Fairycode|BKP}} is just south of Castle Wars.
+*Green [[Castle Wars portal]] just outside [[The Old Nite]] in east part of [[Ferox Enclave]].
+*South-West corner of the [[Grand Exchange]], speak to the [[Saradominist recruiter|Saradominist]]  or [[Zamorakian recruiter]].
+
+===Main lobby===
+Players waiting in the main lobby will find a bank chest, as well as [[Lanthus]], the manager of the minigame. Players can exchange tickets with Lanthus for rewards. 
+
+The [[ring of dueling]] will take players to the main lobby, and is commonly used as a quick teleport to a bank.

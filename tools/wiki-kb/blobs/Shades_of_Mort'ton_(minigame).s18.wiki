@@ -1,0 +1,36 @@
+===Uniques===
+In addition to the various loot obtained from the chests, there is also a chance to receive various unique rewards:
+
+{| class="wikitable lighttable align-center-1" style=width:700px;
+! colspan="2" | Item
+! Info
+|-
+| {{plinkt|Amulet of the damned}}
+| An amulet with the same stats as an [[amulet of glory]] that also provides buffs to [[barrows equipment]].
+|-
+| {{plinkt|Flamtaer bag}}
+| A bag that can store a large amount of temple building supplies ([[timber beam]]s, [[limestone bricks]], and [[swamp paste]]).
+|-
+| {{plinkt|Fine cloth}}
+| A material required for crafting [[splitbark armour]]. Higher tier chests have higher chances of yielding fine cloth.
+|-
+| {{nowrap|{{plinkp|Bronze locks}} {{plinkp|Steel locks}} {{plinkp|Black locks}} {{plinkp|Silver locks}} {{plinkp|Gold locks}}}}
+| [[Locks|Coffin locks]]
+| Locks required to upgrade the [[broken coffin]] into a wearable [[Coffin_(disambiguation)#Shades_of_Mort'ton_minigame|coffin]].
+|-
+| {{nowrap|{{plinkp|Bronze coffin}} {{plinkp|Steel coffin}} {{plinkp|Black coffin}} {{plinkp|Silver coffin}} {{plinkp|Gold coffin}}}}
+| [[Coffin_(disambiguation)#Shades_of_Mort'ton_minigame|Coffins]]
+| A large coffin that can be equipped to the cape slot which can store a set number of shade remains.
+|-
+| {{plinkt|Runescroll of swampbark}}
+| A scroll which, upon reading, unlocks the ability to craft [[swampbark armour]] from splitbark armour.{{efn|When obtained for the first time, it is dropped as the [[tree wizards' journal]]; the scroll is received when reading the journal. All subsequent drops result in the scroll being directly obtained instead of the journal.}}
+|-
+| {{plinkt|Runescroll of bloodbark}}
+| A scroll which, upon reading, unlocks the ability to craft [[bloodbark armour]] from splitbark armour.{{efn|When obtained for the first time, it is dropped as the [[bloody notes]]; the scroll is received when reading the notes. All subsequent drops result in the scroll being directly obtained instead of the notes.}}
+|-
+| {{nowrap|{{plinkp|Zealot's helm}} {{plinkp|Zealot's robe top}} {{plinkp|Zealot's robe bottom}} {{plinkp|Zealot's boots}}}}
+| [[Zealot's robes]]
+| A set of robes with high [[Prayer bonus]] which also provide a small chance of saving remains while training [[Prayer]].
+|-
+|}
+{{Notelist}}

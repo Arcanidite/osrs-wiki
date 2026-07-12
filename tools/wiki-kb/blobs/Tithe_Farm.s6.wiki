@@ -1,0 +1,88 @@
+===Reward shop===
+[[File:Farmer Gricoller's Rewards interface.png|thumb|250x250px|The rewards interface.]]
+{{Main|Farmer Gricoller's Rewards}}
+Multiple pieces of clothing can be purchased. Obtaining the full [[farmer's outfit]] requires a total of 400 points, with a total of 1150 points required for all untradeable rewards and unlocks.
+
+{| class="wikitable lighttable sortable align-center-1"
+! colspan="2" | Rewards
+! Points<br/>required
+! Time to Unlock {{Refn|Earning 35 points by harvesting 100 fruits with the 25x4 method takes roughly 19 minutes.}}
+! Notes
+|-
+| {{plinkp|Farmer's strawhat}}<br/>{{plinkp|Farmer's strawhat (female)}}
+| [[Farmer's strawhat]]
+| 75
+| 0 h 41 min
+| A piece of the [[farmer's outfit]]. Appearance differs between body types.{{Refn|Players will receive the version of the outfit of the body type that they are at the time the piece is obtained. After using the [[make-over mage]] to change body types, the player's farming outfit will convert to the body type they currently are when you try to equip it.|name=Outfit difference}}
+|-
+| {{plinkp|Farmer's jacket}}<br/>{{plinkp|Farmer's shirt}}
+| [[Farmer's jacket]]/[[Farmer's shirt|shirt]]
+| 150
+| 1 h 22 min
+| A piece of the [[farmer's outfit]]. Jacket is obtained if body type A; shirt if body type B.{{NamedRef|name=Outfit difference}}
+|-
+| {{plinkp|Farmer's boro trousers}}<br/>{{plinkp|Farmer's boro trousers (female)}}
+| [[Farmer's boro trousers]]
+| 125
+| 1 h 8 min
+| A piece of the [[farmer's outfit]]. Appearance differs between body types.{{NamedRef|name=Outfit difference}}
+|-
+| {{plinkp|Farmer's boots}}<br/>{{plinkp|Farmer's boots (female)}}
+| [[Farmer's boots]]
+| 50
+| 0 h 28 min
+| A piece of the [[farmer's outfit]]. Appearance slightly differs between body types.{{NamedRef|name=Outfit difference}}
+|- class="nohighlight"
+| {{plinkt|Compost}}
+| 1
+| 0 h 01 min
+| rowspan="2" | Reduces chance of crops becoming diseased while growing throughout the plant cycle and increasing the minimum and maximum number of crops received upon harvest. The supercompost version is more potent.
+|- class="nohighlight"
+| {{plinkt|Supercompost}}
+| 5
+| 0 h 03 min
+|- class="nohighlight"
+| {{plinkt|Grape seed}}
+| 2
+| 0 h 02 min
+| A tradeable seed that can be planted in the [[vinery]] to harvest [[grapes]].
+|- class="nohighlight"
+| {{Nowrap|<sup>20</sup> {{plinkp|Bologa's blessing}}}}
+| [[Bologa's blessing]]<br>(20 stack)
+| 1
+| 0 h 01 min
+| Converts 1 [[grapes]] into 1 [[Zamorak's grapes]] per scroll when harvesting them from the [[vinery]] or a [[Grapevine (item)|grapevine]]. Purchasing this requires level 50 Prayer and a one-time payment to [[Bologa]] for 75,000 coins while wearing an item [[Zamorak#Affiliated_items|affiliated with Zamorak]].
+1 point grants 20 blessings.
+|- class="nohighlight"
+| {{plinkt|Herb box}}
+| 30
+| 0 h 17 min
+| A box that contains an assortment of seven random [[grimy herbs]].
+|- class="nohighlight"
+| {{plinkt|Seed pack}}
+| 30
+| 0 h 17 min
+| A pack containing an assortment of random seeds, equivalent to a tier 3 Farming contract seed pack.
+|-
+|{{plinkt|Seed box}}
+| 250
+| 2 h 16 min
+| Stores any amount of six types of seeds.
+|-
+| {{plinkt|Herb sack}}
+| 250
+| 2 h 16 min
+| Stores 30 of each type of grimy herb. Requires 58 [[Herblore]] to buy and use.
+|-
+| {{plinkt|Gricoller's can}}
+| 200
+| 1 h 49 min
+| Acts as a [[watering can]] but holds 1,000 doses of water. This effectively lasts 333 plants within tithe farm before it needs refilling. Filled by using it on a water source.
+|-
+| {{plinkp|Weeds}}
+| [[Auto-weed]]
+| 50
+| 0 h 28 min
+| When enabled, weeds no longer grow in your Farming patches. This doesn't remove weeds that have already grown there, but it stops them from growing back.<br/>Once purchased, the ability can be turned on and off freely using the "Buy-1" button: green is active; grey is not.<br/>Note: This doesn't affect farming patches involved in [[Managing Miscellania]].
+|}
+{{Reflist}}

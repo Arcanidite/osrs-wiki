@@ -1,0 +1,461 @@
+==Gameplay==
+ 
+
+===Loar Shades===
+A [[combat level]] of at least 81 is recommended to avoid being targeted by the [[Loar Shade]]s whilst building the temple and cremating the shade remains. Once a shade targets a player, it can be lured through the entire length of the wandering path and halfway through [[Mort Myre Swamp]] before the shade is forced to turn back at a predetermined boundary. They will also actively wander to [[aggro]] on to a player from far distances and around objects. Mort'ton is a [[single-way combat]] zone, however other shades in the area will still aggro towards the player and tend to line up while waiting for the player to finish combat. The shades also appear in large numbers throughout the town which makes avoiding them difficult. When many players are at the temple, such as on World 377, the shades are less problematic for lower combat players since their aggression will be dispersed.
+
+'''Note for Ironmen:'''  You can access [[Fiyr Shade|Fiyr Shades]] via [[Temple Trekking]] by starting a hard run in [[Burgh de Rott]] and choosing route three. You will often have an encounter right away in Mort'ton with several of the shades. If you don't get an encounter in Mort'ton, you can instantly teleport back to Burgh de rott with the  [[Morytania legs 3|Morytania Legs 3]] and try again. You can get [[Fiyr remains]] very easily this way allowing you to skip the need for low level keys; you can get [[Silver key red|Silver keys]] or even [[Gold key red|Gold keys]] this way.
+
+===Building/defending the temple===
+Players will first need a [[hammer]], [[imcando hammer]], or [[Flamtaer hammer]] to build the temple, with the Flamtaer hammer being significantly better. A [[flamtaer bag]] is recommended to save inventory space as it can hold up to 60 [[timber beam]]s, 60 [[limestone bricks]], and 500 [[swamp paste]]. A [[flamtaer bracelet]] is highly recommended to speed up the building and '''significantly''' increase the speed at which Sanctity is gained.
+
+When starting, three figures will appear in the top-right corner of the screen:
+
+* '''Repair State''' - Indicates the condition of the temple, and is therefore shared among players. This value is raised by repairing the temple walls, and will gradually fall as shades attack and destroy them.
+
+* '''Resources''' - Represents the player's personal supply of building materials. All of these can be bought from [[Razmire Keelgan]] in [[Mort'ton]]. As the player repairs the temple, their resources will be consumed. 5% resources are added for each set of the following items used:
+** 1 x [[Timber beam]] or [[plank]] - Players can buy beams from [[Razmire Builders Merchants.|Razmire's builders store]] or planks from the Grand Exchange.
+** 1 x [[Limestone brick]] - Can be bought from Razmire's builders store or the Grand Exchange, or crafted from [[limestone]] using a [[chisel]], both of which are also sold by Razmire.
+** 5 x [[Swamp paste]] - Can be bought from Razmire's store, but is relatively expensive. Alternatively, players can buy them cheaply at [[Seb's Shipyard Supplies]] at a fixed price of {{Coins|39}} per swamp paste. Plenty of swamp paste can be received from the chests in the [[Shade Catacombs]], so rarely will there be a need to buy much if opening the chests. Swamp paste is also an occasional thank you gift when "curing" [[afflicted]] residents (see [[#Serum 208|Serum 208]] below). It can also be made from combining [[swamp tar]] and [[pot of flour|flour]].
+
+* '''Sanctity''' - A resource required to make [[sacred oil]] and [[Serum 208]]. Each player has their own level of Sanctity, which starts out at 0%. It increases by repairing or reinforcing the temple, or by killing the shades around it. When building the temple, approximately 5% Sanctity is earned for each 1% of resources spent, while killing the nearby shades will grant 2% Sanctity per kill. The player loses 1% Sanctity per minute, and will have their Sanctity reset to 0% upon log out. Repairing with a [[flamtaer bracelet]] equipped is recommended over killing shades due to its comparably higher Sanctity gain. Killing the shades is only recommended for players with high combat so as their Sanctity gain from kills doesn't get too offset from the natural drain.
+
+'''Note: The temple occasionally goes through a phase of 'resetting', where any attempts to repair it are outpaced by the walls decaying. In this case, it is advised to wait it out for a few minutes until repairing is possible again.'''
+
+===Sanctifying the oil===
+[[Sacred oil]] is created by sanctifying [[olive oil]]. Olive oil is sold in Razmire's general store or can be obtained by using serum on the afflicted. The olive oil must be sanctified by using it on the [[Fire altar (Flamtaer)|fire altar]] in the [[Flamtaer|temple]]. This process requires the player to have at least 10% Sanctity, with each sanctification costing 0.9% of Sanctity per dose of olive oil (2.7% for a 3 dose vial, 3.6% for a 4 dose vial). It is recommended to decant the olive oil into 4 dose vials before bringing them to save on inventory space.
+
+===Serum 208===
+[[Serum 208]] is created by using a [[Serum 207]] on the temple's fire altar. Doing so requires the player to have at least 20% Sanctity and costs 5% Sanctity ''per dose''. Serum 208 can be given to the [[Afflicted]] that wander the town to temporarily cure them, and they will reward the player with some coins and other small gifts. Both serums can be used to cure the Afflicted, however Serum 208 yields a greater reward, including the occasional [[Bronze key]].
+
+===Creating the pyre logs===
+[[Shade remains]] can only be cremated using pyre logs, which can be created by using [[sacred oil]] on various types of [[Log_(disambiguation)|logs]], providing a small amount of Firemaking experience. The table below shows what kind of pyre logs are required to burn which kind of shade remains, as well as the dosage of sacred oil required in creating them. The amount of Firemaking experience gained from cremating shades is increased by 50% upon the completion of the [[Morytania Diary#Elite|Morytania Elite Diary]].
+
+{| class="wikitable sortable align-center-1 align-right-3 align-right-4 align-center-5 align-center-6 align-center-7 align-center-8 align-center-9 align-center-10 align-center-11 align-right-12 align-right-13"
+! rowspan="2" colspan="2" | Type of log
+! colspan="2" | [[Firemaking]]
+! rowspan="2" | Required doses<br />of sacred oil
+! colspan="6" | Remains that can be cremated
+! rowspan="2" | Cost of<br />pyre log
+! rowspan="2" | Cost<br />per XP
+|-
+! Level
+! [[Experience]]
+! [[Loar remains|Loar]]
+! [[Phrin remains|Phrin]]
+! [[Riyl remains|Riyl]]
+! [[Asyn remains|Asyn]]
+! [[Fiyr remains|Fiyr]]
+! [[Urium remains|Urium]]
+|-
+|{{plinkt|Pyre logs|txt=Regular}}
+|5
+|50
+|2
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Pyre logs}}}}
+|{{Coins|-{{GEP|Pyre logs}}/50}}
+|-
+|{{plinkt|Oak pyre logs|txt=Oak}}
+|20
+|70
+|2
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Oak pyre logs}}}}
+|{{Coins|-{{GEP|Oak pyre logs}}/70}}
+|-
+|{{plinkt|Willow pyre logs|txt=Willow}}
+|35
+|100
+|3
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Willow pyre logs}}}}
+|{{Coins|-{{GEP|Willow pyre logs}}/100}}
+|-
+|{{plinkt|Teak pyre logs|txt=Teak}}
+|40
+|120
+|3
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Teak pyre logs}}}}
+|{{Coins|-{{GEP|Teak pyre logs}}/120}}
+|-
+|{{plinkt|Arctic pyre logs|txt=Arctic pine}}
+|47
+|158.5
+|2
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Arctic pyre logs}}}}
+|{{Coins|-{{GEP|Arctic pyre logs}}/158.5}}
+|-
+|{{plinkt|Maple pyre logs|txt=Maple}}
+|50
+|175
+|3
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Maple pyre logs}}}}
+|{{Coins|-{{GEP|Maple pyre logs}}/175}}
+|-
+|{{plinkt|Mahogany pyre logs|txt=Mahogany}}
+|55
+|210
+|3
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Mahogany pyre logs}}}}
+|{{Coins|-{{GEP|Mahogany pyre logs}}/210}}
+|-
+|{{plinkt|Yew pyre logs|txt=Yew}}
+|65
+|255
+|4
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{plinkp|Asyn remains}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Yew pyre logs}}}}
+|{{Coins|-{{GEP|Yew pyre logs}}/255}}
+|-
+|{{plinkt|Camphor pyre logs|txt=Camphor}}
+|71
+|320
+|4
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{plinkp|Asyn remains}}
+|{{NA}}
+|{{NA}}
+|{{Coins|-{{GEP|Camphor pyre logs}}}}
+|{{Coins|-{{GEP|Camphor pyre logs}}/320}}
+|-
+|{{plinkt|Magic pyre logs|txt=Magic}}
+|80
+|404.5
+|4
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{plinkp|Asyn remains}}
+|{{plinkp|Fiyr remains}}
+|{{NA}}
+|{{Coins|-{{GEP|Magic pyre logs}}}}
+|{{Coins|-{{GEP|Magic pyre logs}}/404.5}}
+|-
+|{{plinkt|Ironwood pyre logs|txt=Ironwood}}
+|85
+|435
+|4
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{plinkp|Asyn remains}}
+|{{plinkp|Fiyr remains}}
+|{{NA}}
+|{{Coins|-{{GEP|Ironwood pyre logs}}}}
+|{{Coins|-{{GEP|Ironwood pyre logs}}/435}}
+|-
+|{{plinkt|Redwood pyre logs|txt=Redwood}}
+|95
+|500
+|4
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{plinkp|Asyn remains}}
+|{{plinkp|Fiyr remains}}
+|{{plinkp|Urium remains}}
+|{{Coins|-{{GEP|Redwood pyre logs}}}}
+|{{Coins|-{{GEP|Redwood pyre logs}}/500}}
+|-
+|{{plinkt|Rosewood pyre logs|txt=Rosewood}}
+|97
+|590
+|4
+|{{plinkp|Loar remains}}
+|{{plinkp|Phrin remains}}
+|{{plinkp|Riyl remains}}
+|{{plinkp|Asyn remains}}
+|{{plinkp|Fiyr remains}}
+|{{plinkp|Urium remains}}
+|{{Coins|-{{GEP|Rosewood pyre logs}}}}
+|{{Coins|-{{GEP|Rosewood pyre logs}}/590}}
+|}
+
+===Killing the shades===
+To kill the [[shades (Shades of Mort'ton)|shades]], the player must first have access to them. [[Loar shade]]s are accessible by default as they just wander around Mort'ton and the temple. The other Mort'ton shades, however, are primarily found in the [[Shade Catacombs]] just north-west of the town, or as possible encounters during the [[Temple Trekking]] minigame. To get to these shades, players will need various types of [[shade keys|keys]] to get through the different doors. Fortunately, higher level keys will open the matching type of door as well as any lower tier door. For example, a steel key will open steel ''and'' bronze doors. The keys will not disintegrate when passing through the doors. For more information about the levels of keys and how to get them, see [[#Cremating the shades|Cremating the shades]].
+
+Shades are classified as undead, therefore the [[Salve amulet]] and its imbued forms will boost accuracy and damage when fighting them.
+
+[[Bleached bones]] can be saved from [[undead zealot]]s (who rarely appear when unlocking chests) to fully restore prayer points at the [[Altar (Shade Catacombs)|Shade Catacombs altar]].
+
+Because getting a key for the later areas can take some time, it is recommended for players to have at least one key of their highest accessible tier in the bank.
+
+{| class="wikitable"
+!Shade
+!Combat level
+!Key needed
+|-
+|[[Loar shade]]
+|40
+|{{NA}}
+|-
+|[[Phrin shade]]
+|60
+|[[Bronze key]]
+|-
+|[[Riyl shade]]
+|80
+|[[Steel key]]
+|-
+|[[Asyn shade]]
+|100
+|[[Black key]]
+|-
+|[[Fiyr shade]]
+|120
+|[[Silver key]]
+|-
+|[[Urium Shade|Urium shade]]
+|140
+|[[Gold key crimson|Gold key]]
+|}
+
+===Cremating the shades===
+[[File:Shades of Mort'ton - Burning shade remains.gif|frame|right|A shade being cremated.]]
+Once a player has shade remains and the appropriate pyre logs, they can cremate them by clicking on a [[funeral pyre]] with a [[tinderbox]] in their inventory; this will automatically place the pyre logs and shade remains, prioritising the highest tier log in the inventory. To manually cremate shade remains, the player must do the following:
+
+#Place pyre logs on any of the funeral pyres located around the south and west edge of Mort'ton.
+#Place the shade remains on top of the pyre logs.
+#Click the pyre to light it.
+
+An animation of a shade's spirit will float up into the air, then either a key or a stack of [[coins]] will appear on the pedestal nearby. The type of key depends on the type of shade remains used. The number of coins are roughly equal to the [[High Alchemy]] value of the item the player would have gotten from the key's corresponding chest. Players can leave the reward on the pedestal and then collect them all at once, however, they can despawn should the player take too long. Both keys and coins will despawn in 5 minutes (if no new coins are spawned to refresh the coin stack timer).
+
+All shades, except Loar Shades and Urium Shades, give keys of two metals - low tier trims (red/brown/crimson) for the higher tier metal and high tier trims (black/purple) for the lower tier metal. The amount of coins and type of key per remains is shown in the table below. The '''Fraction''' indicates the probability to obtain that metal key from that type of shade remains. For example, black keys are obtained fastest by burning riyl remains (0.665 > 0.282), and silver keys are obtained fastest by burning Fiyr remains (0.634 > 0.508).
+
+Each shade remains has a 0.21 chance of yielding coins, otherwise a key is obtained instead.
+{| class="wikitable"
+! colspan="2" | Shade remains
+!Coins
+!Low metal keys
+!Fraction
+!High metal keys
+!Fraction
+!Minimum log tier
+|-
+|{{plinkt|Loar remains|txt=Loar}}
+|200-300
+|{{NA}}
+|{{NA}}
+|{{plinkp|Bronze key red}}{{plinkp|Bronze key brown}}{{plinkp|Bronze key crimson}}
+|0.79
+|Normal
+|-
+|{{plinkt|Phrin remains|txt=Phrin}}
+|400-500
+|{{plinkp|Bronze key black}}{{plinkp|Bronze key purple}}
+|0.125
+|{{plinkp|Steel key red}}{{plinkp|Steel key brown}}{{plinkp|Steel key crimson}}
+|0.665
+|Normal
+|-
+|{{plinkt|Riyl remains|txt=Riyl}}
+|600-700
+|{{plinkp|Steel key black}}{{plinkp|Steel key purple}}
+|0.125
+|{{plinkp|Black key red}}{{plinkp|Black key brown}}{{plinkp|Black key crimson}}
+|0.665
+|Willow
+|-
+|{{plinkt|Asyn remains|txt=Asyn}}
+|800-900
+|{{plinkp|Black key crimson}}{{plinkp|Black key black}}{{plinkp|Black key purple}}
+|0.282
+|{{plinkp|Silver key red}}{{plinkp|Silver key brown}}
+|0.508
+|Yew
+|-
+|{{plinkt|Fiyr remains|txt=Fiyr}}
+|2000-4000
+|{{plinkp|Silver key brown}}{{plinkp|Silver key crimson}}{{plinkp|Silver key black}}{{plinkp|Silver key purple}}
+|0.634
+|{{plinkp|Gold key red}}
+|0.156
+|Magic
+|-
+|{{plinkt|Urium remains|txt=Urium}}
+|2000-7000
+|{{plinkp|Gold key red}}{{plinkp|Gold key brown}}{{plinkp|Gold key crimson}}{{plinkp|Gold key black}}{{plinkp|Gold key purple}}
+|0.79
+|{{NA}}
+|{{NA}}
+|Redwood
+|}
+
+[[Prayer]] experience is gained by burning the shades. The amount depends mainly on the type of shade cremated, and to a lesser extent on the type of log used. The experience obtained from each combination is shown in the table below. The amount of Prayer experience gained from cremating shades is increased by 50% upon the completion of the [[Morytania Diary#Hard|Morytania Hard Diary]].
+
+{| class="wikitable"
+! rowspan="2" colspan="2" | Type of log
+!Loar
+!Phrin
+!Riyl
+!Asyn
+!Fiyr
+!Urium
+|-
+!{{plinkp|Loar remains}}
+!{{plinkp|Phrin remains}}
+!{{plinkp|Riyl remains}}
+!{{plinkp|Asyn remains}}
+!{{plinkp|Fiyr remains}}
+!{{plinkp|Urium remains}}
+|-
+|{{plinkt|Pyre logs|txt=Normal}}
+|25
+|37.5
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Oak pyre logs|txt=Oak}}
+|33
+|45.5
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Willow pyre logs|txt=Willow}}
+|33.5
+|46
+|61
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Teak pyre logs|txt=Teak}}
+|33.7
+|46.2
+|61.2
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Arctic pyre logs|txt=Arctic}}
+|33.9
+|46.4
+|61.4
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Maple pyre logs|txt=Maple}}
+|34
+|46.5
+|61.5
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Mahogany pyre logs|txt=Mahogany}}
+|34.3
+|46.8
+|61.8
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Yew pyre logs|txt=Yew}}
+|34.5
+|47
+|62
+|79.5
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Camphor pyre logs|txt=Camphor}}
+|34.5
+|47.5
+|62
+|79.5
+|{{NA}}
+|{{NA}}
+|-
+|{{plinkt|Magic pyre logs|txt=Magic}}
+|35
+|47.5
+|62.5
+|80
+|100
+|{{NA}}
+|-
+|{{plinkt|Ironwood pyre logs|txt=Ironwood}}
+|35.5
+|47.5
+|62.5
+|80.5
+|100
+|{{NA}}
+|-
+|{{plinkt|Redwood pyre logs|txt=Redwood}}
+|35.5
+|48
+|63
+|80.5
+|100.5
+|120.5
+|-
+|{{plinkt|Rosewood pyre logs|txt=Rosewood}}
+|35.6
+|48
+|63
+|80.6
+|100.6
+|120.6
+|}
+
+===Unlocking the chests===
+{{Map|caption=The location of the entrance to the catacombs.|x=3485|y=3321|r=3|mtype=square|align=right|width=250|height=250}}
+[[File:Shade Catacombs map.png|thumb|The layout of the rooms of the catacombs.]]
+Once you have your keys, you can go into the catacombs and unlock the chests which the keys open. The entrance to the catacombs is north-west of town, a little north-east of the bridge, through some doors built into the north side of a hill. Look for a torch on the bank of the swamp.
+
+Each time you unlock a chest, the key will dissolve in the lock. If you want to come back and fight more of the shades in a certain area, '''make sure''' you save at least one key to get back through the doors with. Again, it might be a good idea to leave one key in your bank when you finish, in case you want to come back and play again later or are killed to retrieve your gear.
+
+To open a chest, match up the colour of the key with the lock of the chest, such as a Steel Key Black with a steel-trimmed chest with a lock painted black. If you're not sure the colour of the lock, you can examine the chest for more info. Once opened, the player will be rewarded in various loot (see [[#Unlocking chests|Unlocking chests]] below).

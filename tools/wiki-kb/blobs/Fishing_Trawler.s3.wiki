@@ -1,0 +1,4 @@
+==Starting a game==
+Only one voyage may be active at a time per [[World|server]], with the next voyage beginning one minute after the first player boards the ship. If a voyage is in progress, you may wait on the boat for it to finish. The time remaining will be regularly announced by Murphy.
+
+In total, a round takes roughly 6.5 minutes (5 minutes of trawling, 1 minute of docking, and 15 seconds of cutscene at both the start and end of the trawl).

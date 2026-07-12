@@ -1,0 +1,26 @@
+{{External|rs|rsc=Dramen Staff}}
+{{Infobox Item
+|name = Dramen staff
+|image = [[File:Dramen staff.png]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|quest = [[Lost City]]
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options = Wield, Drop
+|examine = Crafted from a Dramen tree branch.
+|value = 15
+|weight = 1.814
+|id = 772
+}}
+[[File:Dramen staff detail.png|left|150px]]
+The '''dramen staff''' allows players to enter [[Zanaris]] from the shed in the [[Lumbridge Swamp]] after completion of the [[Lost City]] quest. Players can obtain the staff by using a knife on a [[dramen branch]], which requires a [[Crafting]] level of 31. It is possible to return to [[Entrana]] and cut more branches from the [[Dramen tree]], although it is advised players make multiple staves upon completion of the quest, as this prevents the need for a return trip should the staff be lost. It is a [[blunt weapon]] and cannot [[autocast]] spells.
+
+The dramen staff is required to use the [[fairy rings|fairy ring transport system]], which requires [[Fairytale_II_-_Cure_a_Queen#Unlocking_fairy_rings|partial completion]] of the [[Fairytale II - Cure a Queen]] quest. Players who have completed the [[Elite Lumbridge & Draynor Diary]] can use them without the staff.
+
+During the [[Lunar Diplomacy]] quest, players upgrade their staff into a [[lunar staff]], which has the same effects, moderately better stats, can [[autocast]], and is always lost on [[death]].
+
+The dramen staff can also be used to defeat [[Koschei the Deathless]] during [[The Fremennik Trials]] quest by smuggling in a [[Dramen branch]] and a [[knife]].

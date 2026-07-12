@@ -1,0 +1,27 @@
+==Gameplay==
+[[File:Castle Wars map.png|350px|thumb|A detailed map of the Castle Wars Minigame]]
+The aim of the game is to take the enemy's standard (flag) from their castle and return it to the standard in your own castle, gaining one point each time. You must prevent the opposing team from taking your flag by blocking them from your castle (place [[barricade]]s, lock doors or collapse tunnels underground), or by killing them. Slain players will [[respawn]] in the starting area within the game, so both sides are constantly fighting with a near (if not totally) equal numbered team. This is a safe game, so if you die, you will '''not''' lose items. Each game lasts for 20 minutes, and the team with the most points at the end of the game is declared the winner. You will gain some rewards, as explained in the next section. To have more success in Castle Wars, it is better to have a higher [[Combat level]], but lower level players can focus on the defensive measures mentioned below.
+
+===Restrictions===
+The only items allowed inside the Castle Wars area are Castle Wars tickets, [[potions]], [[runes]], and [[Combat]]-related items such as [[armour]]—with the exception of scarves and [[capes]]. [[Food]] cannot be brought in, but [[bandages]] can be obtained within the arena, which are used to heal players in the same way as food. [[Alchemy spells]] and [[Enchantment spells#Enchanted gold and silver jewellery|jewellery enchantment spells]] cannot be used during the game. [[Lunar spells]] such as [[Heal Other]] and [[Cure Me]] can not be used during the game. The [[Dwarf multicannon]] cannot be brought into Castle Wars. Originally, players were allowed to bring their pet [[cat]]s into the arena, but after many players complained, [[Jagex]] removed this ability.
+
+Since this is a safe [[mini-game]], '''players do not have to worry about dying because they will not lose their items'''. Unlike the [[Emir's Arena]], [[arrows]] will not be returned after each match. It is the player's responsibility to pick up any projectiles fired if they choose to do so. However, if [[Ava's device]] is used on [[Lanthus]] before a player enters the game, he will collect ammunition for the player.
+
+Wearing equipment associated to any of the three gods can invoke funny behaviour in the [[Castle Wars#Waiting area|waiting area]], but this does not affect the game itself.
+
+Ironmen are not able to gain any combat xp inside Castle Wars. However, ironmen can gain magic xp from splashing if they use their own runes in place of a rune pouch.
+
+===The castles===
+The large square formation covering most of the map is the actual arena. Inside the arena, there are two smaller castles, one for each team. There are four levels to a castle. The {{FloorNumber|uk=0}} has two outer walls facing into the arena, one with a [[Large door (Castle Wars)|large door]] that can be attacked and broken down (or [[barricade]]d by the defending team) and another with a [[Door (Castle Wars)|smaller door]] that can be pick-locked (or locked by the defending team). The battlements on the {{FloorNumber|uk=0}} are accessible via a staircase near the small door, and there is a catapult on top of the outer wall. Within the walls, there is a staircase leading to the battlements, a staircase leading to the second level, a ladder leading to the second level, and a ladder leading to the underground passages. There are tables where [[climbing rope]]s, [[rock]]s, [[barricade]]s, [[pickaxes]], [[Toolkit (Castle Wars)|toolboxes]], [[bucket]]s, [[Rune pouch (Castle Wars)|rune pouches]], and [[explosive potion]]s are attainable. There is a [[Tap (Castle Wars)|tap]] and a [[tinderbox]] respawn. When players die, they are returned to a respawn room in the appropriate castle.
+
+====Second level====
+The {{FloorNumber|uk=1}} contains a passage bent at a right angle, enveloping that team's spawn room, which is only accessible to the castle's team. There is a staircase leading to the next level. Inside the spawn room, there is a [[bandage]] table, a [[tinderbox]] respawn, a ladder leading to the next level, and a portal to leave the current game.
+
+====Third level====
+The {{FloorNumber|uk=2}} has a small inside wall enveloping a trapdoor that leads down to that castle's spawn room. The trapdoor is only usable by that castle's team. There is a one-square-wide passage around this wall. A staircase leading to the highest level is located against one of the walls.
+
+====Fourth level====
+The highest floor contains only a standard stand, which may or may not hold that castle's team's standard, depending on whether the enemy team has taken the standard or not.
+
+====Underground====
+The underground passage level can be accessed by two ladders in the middle of the arena or by a ladder from either team's castle. Either castle's ladder is located at opposite ends of the underground area, each with two passages towards the central cavern. At the mouth (facing the centre area) of each passage, there is a deposit of rocks which may be removed or replaced with [[explosive potion]]s or [[pickaxes]]. The central area is a small castle that has two ladders leading up to the centre of the arena's ground level. This area can be used for [[ranging]] and [[maging]].

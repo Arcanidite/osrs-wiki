@@ -1,0 +1,3 @@
+==Rewards==
+* For every successful goal, a low amount (4–7) of Agility and Ranged experience is granted. Winning the game will reward an additional 25 experience in both skills.
+* If the player earns five points, they will receive a [[gnomeball]] upon exiting the pitch. Gnomeballs are worth {{NoCoins|{{GEP|Gnomeball}}}} coins on the [[Grand Exchange]]. Only one gnomeball may be awarded per game. Gnomeballs brought onto the pitch will be kept by the gnome ball referee until the player leaves the game. Additionally, players that brought a gnomeball to the game will not receive a new one from winning.

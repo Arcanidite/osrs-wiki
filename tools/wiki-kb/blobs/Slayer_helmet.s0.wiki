@@ -1,0 +1,35 @@
+{{External|rs}}
+{{Otheruses|the regular slayer helmet|the imbued version|Slayer helmet (i)}}
+{{Infobox Item
+|name = Slayer helmet
+|image = [[File:Slayer helmet.png]]
+|release = [[6 January]] [[2014]]
+|update = Second Slayer Batch: The Helm
+|aka = Slayer helm
+|members = Yes
+|quest = No
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options = Wear, Check, Disassemble, Drop
+|wornoptions = Check, Partner, Log
+|examine = You don't want to wear it inside-out.
+|value = 40000
+|weight = 2.267
+|id = 11864
+|leagueRegion = Morytania
+}}
+[[File:Slayer helmet detail.png|left|140px]]
+[[File:Slayer helmet chathead.png|left]]
+A '''Slayer helmet''' is a piece of headgear made by combining a [[nose peg]], [[facemask]], [[earmuffs]], [[spiny helmet]], [[enchanted gem]], and a [[black mask]] together. [[Reinforced goggles]] are additionally required only if the quest [[A Porcine of Interest]] is completed. The helmet can be created by players with level 55 [[Crafting]] ([[boosts]] work) and who have unlocked the "Malevolent masquerade" ability for 400 [[Slayer reward points]]. It requires 10 [[Defence]] to equip. Despite the helmet requiring a [[nose peg]], which requires 60 [[Slayer]] to equip, the Slayer helmet requires no particular Slayer level to wear.
+
+The helmet has the same defensive bonuses as a [[rune full helm]]. Additionally, while worn, the helmet provides the special effects of all of the Slayer equipment from which it was made. It will prevent infection from [[Nex]]'s virus attack, and can be used as [[warm clothing]] for [[Wintertodt]].
+
+When worn on a [[Slayer task|Slayer assignment]], the helmet provides an [[Attack]] and [[Strength]] boost of 16.67% (from the [[black mask]] used to make it) against monsters assigned as the player's Slayer task.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/689105142382198784|date=18 January 2016|archiveurl=https://reldo.runescape.wiki/i/108599|archivedate=26 May 2020|name=scuffedBuff}} This does '''not''' stack with the boosts given by the [[Salve amulet]] or its [[Salve amulet (e)|enchanted]]/[[Salve amulet(ei)|imbued]] variants against undead Slayer assignments. It '''does''' however stack with the 20% damage boost of a [[berserker necklace]] when using [[obsidian weapons]]. The helmet can be [[Slayer helmet (i)|imbued]] through [[Soul Wars]], the [[Nightmare Zone]], or [[Emir's Arena]] (with a [[scroll of imbuing]]) to provide a 15% boost to [[Ranged]] and [[Magic]] damage and accuracy as well, as detailed below.
+
+A lone exception to the boost application are the Awakened variants of [[Vardorvis]], [[Duke Sucellus]], [[The Leviathan]], and [[The Whisperer]] if assigned them as a slayer task. Additionally, the Slayer helmet's accuracy and damage bonuses do not apply to monsters outside of the designated assigned area (applicable when receiving tasks from [[Krystilia]] or [[Konar quo Maten]]), even if the monster type matches the task.
+
+When killed by another player, and the helmet is not one of the items protected on death, the Slayer helmet is converted to a black mask and dropped for that player. It does not drop coins and leave the owner with a broken Slayer helmet, like other untradeable gear would.{{CiteGeneral|format=Reddit|url=https://www.reddit.com/r/2007scape/comments/4okkhf/dev_blog_pvp_poh_rooms/d4dcjst|author=Mod Ronan|accessdate=24 August 2018|date=June 17 2016|title=Dev Blog: PvP & POH Rooms}}
+
+Players '''can''' own more than one Slayer helmet at a time.

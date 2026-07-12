@@ -1,0 +1,94 @@
+{{External|rs|rsc=Dragonstone Amulet}}
+{{Infobox Item
+|defver = 5
+|version1 = Uncharged
+|version2 = 1
+|version3 = 2
+|version4 = 3
+|version5 = 4
+|version6 = 5
+|version7 = 6
+|name1 = Amulet of glory
+|name2 = Amulet of glory(1)
+|name3 = Amulet of glory(2)
+|name4 = Amulet of glory(3)
+|name5 = Amulet of glory(4)
+|name6 = Amulet of glory(5)
+|name7 = Amulet of glory(6)
+|image1 = [[File:Amulet of glory.png]]
+|image2 = [[File:Amulet of glory(1).png]]
+|image3 = [[File:Amulet of glory(2).png]]
+|image4 = [[File:Amulet of glory(3).png]]
+|image5 = [[File:Amulet of glory(4).png]]
+|image6 = [[File:Amulet of glory(5).png]]
+|image7 = [[File:Amulet of glory(6).png]]
+|release1 = [[27 February]] [[2002]]
+|release2 = [[27 February]] [[2002]]
+|release3 = [[29 March]] [[2004]]
+|release4 = [[29 March]] [[2004]]
+|release5 = [[29 March]] [[2004]]
+|release6 = [[27 March]] [[2014]]
+|release7 = [[27 March]] [[2014]]
+|update1 = Latest RuneScape News (27 February 2002)
+|update2 = Latest RuneScape News (27 February 2002)
+|update3 = RS2 Launched!
+|update4 = RS2 Launched!
+|update5 = RS2 Launched!
+|update6 = Wilderness Feedback Update
+|update7 = Wilderness Feedback Update
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Rub, Drop
+|wornoptions1 = Rub
+|wornoptions2 = Edgeville, Karamja, Draynor Village, Al Kharid
+|wornoptions3 = Edgeville, Karamja, Draynor Village, Al Kharid
+|wornoptions4 = Edgeville, Karamja, Draynor Village, Al Kharid
+|wornoptions5 = Edgeville, Karamja, Draynor Village, Al Kharid
+|wornoptions6 = Edgeville, Karamja, Draynor Village, Al Kharid
+|wornoptions7 = Edgeville, Karamja, Draynor Village, Al Kharid
+|examine1 = A very powerful dragonstone amulet.
+|examine2 = A dragonstone amulet with 1 magic charge.
+|examine3 = A dragonstone amulet with 2 magic charges.
+|examine4 = A dragonstone amulet with 3 magic charges.
+|examine5 = A dragonstone amulet with 4 magic charges.
+|examine6 = A dragonstone amulet with 5 magic charges.
+|examine7 = A dragonstone amulet with 6 magic charges.
+|value = 17625
+|weight = 0.010
+|exchange1 = Yes
+|exchange2 = No
+|exchange3 = No
+|exchange4 = No
+|exchange5 = Yes
+|exchange6 = No
+|exchange7 = Yes
+|id1 = 1704
+|id2 = 1706
+|id3 = 1708
+|id4 = 1710
+|id5 = 1712
+|id6 = 11976
+|id7 = 11978
+}}
+{{Synced switch
+|version1 = [[File:Amulet of glory detail.png|left|140px]]
+|version2 = [[File:Amulet of glory(4) detail.png|left|140px]]
+|version3 = [[File:Amulet of glory(4) detail.png|left|140px]]
+|version4 = [[File:Amulet of glory(4) detail.png|left|140px]]
+|version5 = [[File:Amulet of glory(4) detail.png|left|140px]]
+|version6 = [[File:Amulet of glory(4) detail.png|left|140px]]
+|version7 = [[File:Amulet of glory(4) detail.png|left|140px]]
+}}
+The '''amulet of glory''' is a [[dragonstone amulet]] that has been enchanted by the [[Lvl-5 Enchant]] spell. After completion of [[Heroes' Quest]], it can be charged at the [[Fountain of Heroes]] and the [[Fountain of Rune]]. When charged at the Fountain of Rune they will have 6 charges instead of the normal 4. With the completion of [[Dragon Slayer II]], it can be charged at the [[Fountain of Uhld]] below the [[Myths' Guild]]. The amulet of glory is tradeable on the [[Grand Exchange]] only when it has zero, four, or six charges.
+
+It is a very popular amulet in [[members]]-only worlds amongst players of all levels, as it provides good damage bonuses, has no requirements to wear, is much less expensive than the [[amulet of fury]], and offers useful [[teleport]]s.
+
+Like other dragonstone jewellery, it is one of the [[Wilderness#Member_teleportation_up_to_level_30_Wilderness|few items]] with a teleportation ability that will work up to level 30 Wilderness, while most other means of teleportation will not work above level 20 Wilderness.
+
+A trimmed version, the [[amulet of glory (t)]], may be obtained from hard [[Treasure Trails]], but is no different than a normal amulet of glory aside from appearance and the inability to use it for certain Treasure Trail steps.
+
+Certain Treasure Trail clue steps in the Hard, Elite and Master tiers require having an amulet of glory equipped, which can be difficult for [[ironmen]], given the very high Crafting level of 80 required. However, this can be somewhat alleviated by using a [[mushroom pie]] to temporarily boost Crafting by 4 levels, meaning an actual Crafting level of 76 is required for these clue steps.

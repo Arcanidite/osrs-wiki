@@ -1,0 +1,123 @@
+==The gardens==
+[[File:Fountain (Sorceress's Garden).png|thumb|200px|Central garden's fountain]]
+{{Map|mtype=pin|align=right|caption=Location of the sorceress' house and Osman.
+|3286,3180,title:[[Osman]],desc:
+|3320,3139,title:Sorceress' Garden teleport,desc:
+}}
+
+The garden is divided into five areas. You appear in the central garden with a fountain and [[Del-Monty]] the cat. Drinking from the [[Fountain (Sorceress's Garden)|fountain]] will teleport you back to the Sorceress's house. Del-Monty will tell you about the garden and the minigame if you speak to him while wearing a [[catspeak amulet]] or have completed [[Dragon Slayer II]] to the point of being enchanted (after which the player can speak to cats without the amulet).
+
+Surrounding the central garden are four seasonal gardens, each of which has a [[Sq'irk tree]]:
+*The Winter garden has a tree with withered fruits.
+*The Spring garden has a tree with nearly-ripe fruits.
+*The Autumn garden has a tree with over-ripe fruits.
+*The Summer garden has a tree with perfectly ripe fruits.
+
+You can only enter a seasonal garden if your current [[Thieving]] level matches or exceeds the garden's required level. Fruits gained from a garden can be crushed into an empty [[beer glass]] using a [[pestle and mortar]] to make [[sq'irkjuice]]. Beer glasses needed for this minigame can be obtained for free by searching the [[Shelves (Sorceress's house)|shelves]] in the Sorceress's house.
+
+{|class="wikitable align-left-2" style="text-align:center;"
+!{{SCP|Thieving}} Level
+!Season
+!Sq'irk fruit
+!Sq'irk juice
+!# of sq'irks
+!Thieving boost
+![[Run energy]] recovery
+!Experience from [[Osman]]
+!Experience per fruit
+|-
+|{{NA}}
+|Winter
+|{{plinkp|Winter sq'irk}}
+|{{plinkp|Winter sq'irkjuice}}
+|5
+|0
+|5%
+|350
+|70
+|-
+|25
+|Spring
+|{{plinkp|Spring sq'irk}}
+|{{plinkp|Spring sq'irkjuice}}
+|4
+|1
+|10%
+|1,350
+|337.5
+|-
+|45
+|Autumn
+|{{plinkp|Autumn sq'irk}}
+|{{plinkp|Autumn sq'irkjuice}}
+|3
+|2
+|15%
+|2,350
+|783.3
+|-
+|65
+|Summer
+|{{plinkp|Summer sq'irk}}
+|{{plinkp|Summer sq'irkjuice}}
+|2
+|3
+|20%
+|3,000
+|1,500
+|}
+
+You can only pick one fruit per trip, or if you pick [[Herbs (Sorceress's Garden)|herbs]] instead, you will always get two clean herbs at once before you are teleported out of the garden. The types of herbs will vary, but picking them will always yield 50 [[Farming]] experience, or 25 experience per herb, regardless of which garden is chosen. You may enter the seasonal gardens again for more resources. Crushing sq'irks always gives 5 [[Cooking]] experience, regardless of the season.
+
+To leave the garden, simply drink from the fountain located in the central garden. Alternatively, use an [[amulet of glory]] or [[ring of dueling]] to teleport to [[Al Kharid]], which gets you close to [[Osman]] to hand him the sq'irkjuice.
+
+===Herb drop table===
+The herbs obtainable within the gardens are listed below.
+
+{{DropLogProject|jagex=yes}}{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/806478115396603905|date=7 December 2016|archiveurl=https://reldo.runescape.wiki/i/105952|archivedate=26 April 2020|quote=Someone wanted the herb chances from the Sorceress's Garden}}
+
+====Winter====
+{{DropsTableHead}}
+{{DropsLineReward|name=Guam leaf|quantity=1|rarity=16/54|bucket=No}}
+{{DropsLineReward|name=Marrentill|quantity=1|rarity=14/54|bucket=No}}
+{{DropsLineReward|name=Tarromin|quantity=1|rarity=13/54|bucket=No}}
+{{DropsLineReward|name=Harralander|quantity=1|rarity=11/54|bucket=No}}
+{{DropsTableBottom}}
+
+====Spring====
+{{DropsTableHead}}
+{{DropsLineReward|name=Guam leaf|quantity=1|rarity=16/75|bucket=No}}
+{{DropsLineReward|name=Marrentill|quantity=1|rarity=14/75|bucket=No}}
+{{DropsLineReward|name=Tarromin|quantity=1|rarity=13/75|bucket=No}}
+{{DropsLineReward|name=Harralander|quantity=1|rarity=12/75|bucket=No}}
+{{DropsLineReward|name=Irit leaf|quantity=1|rarity=11/75|bucket=No}}
+{{DropsLineReward|name=Avantoe|quantity=1|rarity=9/75|bucket=No}}
+{{DropsTableBottom}}
+
+====Autumn====
+{{DropsTableHead}}
+{{DropsLineReward|name=Guam leaf|quantity=1|rarity=16/99|bucket=No}}
+{{DropsLineReward|name=Marrentill|quantity=1|rarity=14/99|bucket=No}}
+{{DropsLineReward|name=Tarromin|quantity=1|rarity=13/99|bucket=No}}
+{{DropsLineReward|name=Harralander|quantity=1|rarity=12/99|bucket=No}}
+{{DropsLineReward|name=Irit leaf|quantity=1|rarity=11/99|bucket=No}}
+{{DropsLineReward|name=Avantoe|quantity=1|rarity=10/99|bucket=No}}
+{{DropsLineReward|name=Ranarr weed|quantity=1|rarity=9/99|bucket=No}}
+{{DropsLineReward|name=Kwuarm|quantity=1|rarity=8/99|bucket=No}}
+{{DropsLineReward|name=Cadantine|quantity=1|rarity=6/99|bucket=No}}
+{{DropsTableBottom}}
+
+====Summer====
+{{DropsTableHead}}
+{{DropsLineReward|name=Guam leaf|quantity=1|rarity=16/111|bucket=No}}
+{{DropsLineReward|name=Marrentill|quantity=1|rarity=14/111|bucket=No}}
+{{DropsLineReward|name=Tarromin|quantity=1|rarity=13/111|bucket=No}}
+{{DropsLineReward|name=Harralander|quantity=1|rarity=12/111|bucket=No}}
+{{DropsLineReward|name=Irit leaf|quantity=1|rarity=11/111|bucket=No}}
+{{DropsLineReward|name=Avantoe|quantity=1|rarity=10/111|bucket=No}}
+{{DropsLineReward|name=Ranarr weed|quantity=1|rarity=9/111|bucket=No}}
+{{DropsLineReward|name=Kwuarm|quantity=1|rarity=8/111|bucket=No}}
+{{DropsLineReward|name=Cadantine|quantity=1|rarity=7/111|bucket=No}}
+{{DropsLineReward|name=Lantadyme|quantity=1|rarity=6/111|bucket=No}}
+{{DropsLineReward|name=Dwarf weed|quantity=1|rarity=5/111|bucket=No}}
+{{DropsTableBottom}}

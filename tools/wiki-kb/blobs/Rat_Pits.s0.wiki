@@ -1,0 +1,21 @@
+{{External|rs}}
+{{Infobox Activity
+|name = Rat Pits
+|image = [[File:Rat Pits.png|300px]]
+|release = [[28 November]] [[2005]]
+|update = Rat Catchers and Rat Pits!
+|type = Minigame
+|members = Yes
+|location = * [[Varrock]] 
+* [[Ardougne]]
+* [[Keldagrim]]
+* [[Port Sarim]]
+|players = 2
+|tutorial = Yes
+|music = [[Bubble and Squeak]], [[Catch Me If You Can]], [[Rat a Tat Tat]], [[Sarim's Vermin]]
+|map = no
+|leagueRegion = No
+}}
+[[File:Rat Pits logo.png|left]]
+[[File:Rat Pits icon.png]]
+The '''Rat Pits''' are a [[minigame]] that involves [[pet cat]]s fighting against [[rat]]s in several underground gambling rings. There are a total of four pits throughout [[Gielinor]], located in [[Varrock]], [[Ardougne]], [[Keldagrim]], and [[Port Sarim]]. Access to the Rat Pits requires partial completion of [[Ratcatchers]], and the pits are unlocked one at a time throughout the [[quest]]. [[Ironman Mode|Ironmen]] cannot take part in this minigame.

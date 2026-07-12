@@ -1,0 +1,83 @@
+{{Infobox Item
+|name = Rada's blessing 4
+|image = [[File:Rada's blessing 4.png]]
+|release = [[10 January]] [[2019]]
+|update = The Kebos Lowlands
+|members = Yes
+|quest = No
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options = Equip, Kourend Woodland, Mount Karuulm, Drop
+|wornoptions = Kourend Woodland, Mount Karuulm
+|examine = A blessing scroll from distant lands.
+|value = 0
+|weight = 0.453
+|id = 22947
+|leagueRegion = Kourend
+}}
+[[File:Rada's blessing 4 detail.png|left|130x200px]]
+'''Rada's blessing 4''' is an [[Achievement diary]] reward for completing all [[Kourend & Kebos Diary Elite|elite Kourend & Kebos Diary]] tasks. It is given by [[Elise]] in the [[Kourend Castle]] courtyard, and can be retrieved for free if lost. Multiple can be obtained for free. Players can also trade with [[Perdu]] who sells blessings for 200 coins each, this is especially handy if buying bulk as [[Perdu]] allows the player to buy a full inventory at once. It can be stored in a [[tackle box]].
+
+Rada's blessing 4 gives the best-in-slot [[prayer bonus]] for the ammunition slot at +2, surpassing [[god blessing]]s.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = +2
+|slot = ammo
+}}
+
+==Teleportation options==
+{| class="wikitable"
+!Destination
+!Map
+|-
+|[[Kourend Woodland]]
+|{{Map|1549,3461|1559,3461|1559,3459|1560,3459|1560,3456|1559,3456|1559,3453|1560,3453|1560,3450|1557,3450|1557,3452|1556,3452|1556,3453|1555,3453|1555,3454|1554,3454|1554,3453|1553,3453|1553,3452|1552,3452|1552,3450|1549,3450|1549,3452|1550,3452|1550,3454|1549,3454|mtype=polygon}}
+|-
+|[[Mount Karuulm]]
+|{{Map|1311,3806|1312,3806|1312,3799|1313,3799|1313,3795|1310,3795|1310,3797|1311,3797|mtype=polygon}}
+|}
+==Benefits==
+;When worn
+* 8% chance to catch two fish at once everywhere (with [[Fishing enhancers#Exceptions|some exceptions]]) when equipped, the message {{Mes|Rada's blessing enabled you to catch an extra fish.}} will be displayed (no additional XP is given and no extra bait is consumed).
+* Additional +1 to blessing's prayer bonus compared to the [[Rada's blessing 3]]
+;When worn or in the player's inventory
+* Unlimited teleports to the [[Kourend Woodland]]
+* Unlimited teleports to [[Mount Karuulm]]
+[[Kourend & Kebos Diary#Rewards_4|A number of other benefits]] are always active upon claiming rewards from the elite tier of the Kourend and Kebos diary.
+
+==Used in recommended equipment==
+{{Used in recommended equipment|Rada's blessing 4}}
+
+==Shop locations==
+{{Store locations list|Rada's blessing}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 4 July 2019
+|update = Forthos Dungeon
+|poll = The Forthos Dungeon
+|change = Addition of Eodan tanning price reduction benefit.
+}}
+{{Subject changes footer}}
+
+{{Achievement diary}}
+{{Fishing equipment}}
+{{Teleportation items}}
+[[Category:Prayer items]]

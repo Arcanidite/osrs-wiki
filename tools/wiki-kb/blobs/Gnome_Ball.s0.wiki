@@ -1,0 +1,24 @@
+{{External|rs|rsc=Gnome Ball (minigame)}}
+{{Otheruses|Gnome Ball|the thrown item|Gnomeball}}
+{{Dangerous}}
+{{Infobox Activity
+|name = Gnome Ball
+|image = [[File:Gnome Ball.png|300x300px]]
+|release = [[28 January]] [[2003]]
+|update = Gnomeball
+|type = Minigame
+|members = Yes
+|location = [[Tree Gnome Stronghold]]
+|players = Any
+|skills = [[Ranged]], [[Agility]]
+|currency = None
+|tutorial = No
+|music = [[Gnomeball (music track)|Gnomeball]]
+|map = {{Map|name=Gnome Ball|2393,3496|2396,3493|2397,3493|2400,3496|2404,3496|2408,3492|2408,3485|2404,3481|2400,3481|2397,3484|2396,3484|2393,3481|2389,3481|2385,3485|2385,3486|2383,3488|2383,3489|2385,3491|2385,3492|2389,3496|zoom=2|mtype=polygon|title=Gnome Ball Field}}
+|leagueRegion = Kandarin
+}}
+'''Gnome Ball''' is a [[minigame]] in which one or more players attempt to score goals against [[gnome]]s. Goals are scored by throwing the [[gnomeball]] into the goal, and the game is won when five goals are scored. Players earn some [[Ranged]] and [[Agility]] [[experience]] upon scoring a goal and winning the game.
+
+When a player first enters the field, they should talk to the [[gnome ball referee]] to gain the ball.
+
+Scoring a goal in a Gnome Ball match is a requirement for the [[easy Western Provinces Diary]].

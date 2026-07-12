@@ -1,0 +1,37 @@
+{{External|rs}}
+{{Infobox Item
+|version1 = Full
+|version2 = Empty
+|name = Ectophial
+|image1 = [[File:Ectophial.png]]
+|image2 = [[File:Ectophial (empty).png]]
+|release = [[15 February]] [[2005]]
+|update = Ghosts Ahoy and Slayer Update
+|members = Yes
+|quest = [[Ghosts Ahoy]]
+|tradeable = No
+|equipable = No
+|stackable = No
+|noteable = No
+|options1 = Teleport, Drop
+|options2 = Drop
+|examine = The Ectophial.
+|value = 1
+|weight = 0.035
+|id1 = 4251
+|id2 = 4252
+}}
+{{Synced switch
+|version1 = [[File:Ectophial detail.png|left|60px]]
+|version2 = [[File:Ectophial (empty) detail.png|left|60px]]
+}}
+[[File:Ectophial.gif|180px|thumb|A player empties an ectophial to activate its teleportation.]]
+The '''ectophial''' is a reward for completing the [[Ghosts Ahoy]] quest. Players can empty it, causing them to be teleported to the [[Ectofuntus]] outside [[Port Phasmatys]]. Once the player teleports, they will automatically refill it. The player cannot interrupt the refilling animation themselves, and is immune to damage for the duration; on [[PvP world]]s, an attacker will still gain experience on a successful hit, but no damage will be dealt.
+
+When used to teleport to the Ectofuntus, the messages {{Mes|You empty the ectoplasm onto the ground around your feet...}} and {{Mes|...and the world changes around you.}} will be displayed. When refilling the ectophial, the message {{Mes|You refill the ectophial from the Ectofuntus.}} will be shown.
+
+If the player loses the ectophial, they can get a replacement from [[Velorina]] in Port Phasmatys (must wear a [[ghostspeak amulet]] or [[Morytania legs 2]] or better) or purchase it from [[Perdu]] for 4,600 coins. Claiming a replacement from Velorina will give the player a full ectophial. Claiming an ectophial from Velorina if the player already has one will give an empty one instead, which the player first has to fill at the Ectofuntus before they can use it.
+
+It can be used to quickly escape from fights because it is easy to replace, costs nothing, and is a one click teleport from your inventory.
+
+Like most teleport items, the ectophial does not work past level 20 [[Wilderness]].

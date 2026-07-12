@@ -1,0 +1,65 @@
+{{External|rs=Ring of duelling}}
+{{Infobox Item
+|defver = 8
+|version1 = (1)
+|version2 = (2)
+|version3 = (3)
+|version4 = (4)
+|version5 = (5)
+|version6 = (6)
+|version7 = (7)
+|version8 = (8)
+|name1 = Ring of dueling(1)
+|name2 = Ring of dueling(2)
+|name3 = Ring of dueling(3)
+|name4 = Ring of dueling(4)
+|name5 = Ring of dueling(5)
+|name6 = Ring of dueling(6)
+|name7 = Ring of dueling(7)
+|name8 = Ring of dueling(8)
+|image1 = [[File:Ring of dueling(1).png]]
+|image2 = [[File:Ring of dueling(2).png]]
+|image3 = [[File:Ring of dueling(3).png]]
+|image4 = [[File:Ring of dueling(4).png]]
+|image5 = [[File:Ring of dueling(5).png]]
+|image6 = [[File:Ring of dueling(6).png]]
+|image7 = [[File:Ring of dueling(7).png]]
+|image8 = [[File:Ring of dueling(8).png]]
+|release = [[20 April]] [[2004]]
+|update = Enchanting Rings
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Rub, Drop
+|wornoptions = Emir's Arena, Castle Wars, Ferox Enclave, Fortis Colosseum
+|examine = An enchanted ring.
+|value = 1275
+|weight = 0.006
+|exchange1 = No
+|exchange2 = No
+|exchange3 = No
+|exchange4 = No
+|exchange5 = No
+|exchange6 = No
+|exchange7 = No
+|exchange8 = Yes
+|id1 = 2566
+|id2 = 2564
+|id3 = 2562
+|id4 = 2560
+|id5 = 2558
+|id6 = 2556
+|id7 = 2554
+|id8 = 2552
+}}
+[[File:Ring of dueling detail.png|left|140px]]
+The '''ring of dueling''' is a teleportation ring that may be made by casting [[Lvl-2 Enchant]] on an [[emerald ring]], granting 37 [[Magic]] experience. A full ring of dueling will provide 8 teleports before it crumbles away into nothing. 
+
+When teleporting using the ring, the message {{Mes|You rub the ring...}} will be displayed, followed by a message with the number of charges remaining, ex. {{Mes|Your ring of dueling has four uses left.|colour=Purple}} If using the last charge on the ring, the message {{Mes|Your ring of dueling crumbles to dust.|colour=Purple}} will be displayed instead. 
+
+Due to the low cost of the ring, many players use it to bank quickly at the [[Castle Wars]] chest. Furthermore, the [[Ferox Enclave]] teleport allows a player to use the [[Pool of Refreshment]] whilst gaining full health, prayer and run energy, although the Ferox Enclave teleport places the player slightly farther away from a bank chest.
+
+Each charge costs {{NoCoins|{{GEP|Ring of dueling(8)|0.125}}}} [[coins]] if all 8 charges are used, {{NoCoins|({{GEP|Ring of dueling(8)}}+{{GEP|Nature rune}}-765)/7}} if using High Level Alchemy (as described below), or {{NoCoins|({{GEP|Ring of dueling(8)}}+{{GEP|Nature rune}}-510)/7}} if using [[Low Level Alchemy]]. Alternatively, [[Explorer's ring]] can be used 30 times per day for a cost of {{NoCoins|({{GEP|Ring of dueling(8)}}-510)/7}}. This is viable if fewer than 210 charges are used on average each day, though it gives no Magic experience.

@@ -1,0 +1,22 @@
+===Serum 207 and killing shades===
+{{Needed|1000+ [[coins]], 2 [[tarromin potion (unf)]] (or 2 [[tarromin]] and 2 [[vials of water]]), 2 [[ashes]], [[food]], [[armour]], and a [[weapon]]|skills={{SCP|Herblore|15}} {{Boostable|yes}} to create [[Serum 207]]}}
+[[File:Serum 207 (4) detail.png|left|70px]]
+Reading the book will now allow you to create [[Serum 207]], a potion which may be used on the afflicted in town to '''temporarily''' interact with them. If you don't already have a [[tarromin potion (unf)]], use [[tarromin]] on a [[vial of water]] ({{SCP|Herblore|12}}). Use [[ashes]] on the unfinished potion to create the Serum (also complete your second potion) ({{SCP|Herblore|15}}).
+
+:'''Note''': Serum 207 can be bought on the [[Grand Exchange]], but you must make at least one yourself for the purpose of this quest.
+
+[[File:Razmire General Store..png|thumb|250px]]
+
+Use the Serum on [[Razmire Keelgan]] in the [[general store]]. Ask him what all these shadowy creatures are, and he will tell you they are restless spirits of the dead. He asks you to kill 5 [[Loar Shade]]s (the level 40 green shadows) and collect their [[Loar remains|remains]] so that he may do some experiments on them.
+
+:'''Note''': The kills will only count after Razmire has asked you to kill them, and you must collect the remains via killing them.
+
+{{mes|That's all five Shades!}} will appear in the chat when you are done. Return to Razmire and use the Serum 207 on Razmire again, and he will take two of the shade remains from you. He then mentions that [[Ulsquire Shauncy]] might also be interested in seeing some shade remains.
+
+Before heading to Ulsquire, open the general store through Razmire and buy some [[olive oil]]. Then ask him to open the builders store, and buy 1-2 [[timber beam]], 1-2 [[limestone brick]], and 10-20 [[swamp paste]].
+
+:'''Note''': The supplies may be much more expensive on World 377 (the official Shades of Mor'ton minigame world) due to players buying them up, so consider switching worlds temporarily before buying them.
+
+Ulsquire can be found in the house right next to Razmire to the south-east. Give him a dose of Serum 207, and then one of your [[shade remains]]. Talk to him again, and ask what he found out from the remains. Ulsquire believes that the tormented spirits should be put to rest, and jokes about rebuilding the nearby [[Flamtaer|temple]] and experimenting with the sacred flame. Next, ask him what he can tell you about the temple. He will suggest that to rebuild it, you will need the items you have just bought from Razmire. {{Chat option|1What did you find out about the remains?|2What can you tell me about that temple?}}
+
+:'''Note''': Make sure you complete the dialogue options with Ulsquire, or interacting with the temple will result in the message {{Mes|You're not quite sure how to fix this}}.

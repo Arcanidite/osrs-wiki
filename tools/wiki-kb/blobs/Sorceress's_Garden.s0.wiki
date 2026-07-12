@@ -1,0 +1,29 @@
+{{Otheruses|the minigame|the music track|Sorceress's Garden (music track)}}{{External|rs}}
+{{Infobox Activity
+|name = Sorceress's Garden
+|image = [[File:Sorceress's Garden.png]]
+|release = [[12 February]] [[2007]]
+|update = A sq'irk a day...
+|type = Minigame
+|members = Yes
+|location = [[Al Kharid]]
+|players = 1
+|skills = [[Farming]], [[Thieving]]
+|currency = No
+|tutorial = No
+|music = [[Sorceress's Garden (music track)|Sorceress's Garden]], [[Garden of Winter]], [[Garden of Spring]], [[Garden of Summer]], [[Garden of Autumn]]
+|map = {{Map|name=Sorceress's Garden|2912,5472|mapID=-1}}
+|leagueRegion = Desert
+}}
+[[File:Sorceress's Garden logo.png|left]]
+{{Relative location
+|location = Sorceress's Garden
+|north = Al Kharid
+|east = Giants' Plateau
+|west = Shantay Pass
+|south = Kharidian Desert
+}}
+
+The '''Sorceress's Garden''' is a [[Thieving]]/[[Farming]] [[minigame]] located in [[Al Kharid]] which may be accessed after the completion of [[Prince Ali Rescue]]. In it, players attempt to sneak past guards in order to steal [[sq'irk]] fruit to make [[sq'irkjuice]], or [[herb]]s from the garden.
+
+Sq'irkjuice can be exchanged with [[Osman]] or [[Selim]] for Thieving experience or be used to temporarily boost your Thieving level and restore [[run energy]].

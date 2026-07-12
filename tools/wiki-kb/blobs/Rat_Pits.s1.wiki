@@ -1,0 +1,25 @@
+==Pits==
+There are 4 pits around Gielinor, each requiring a specific type of cat to take part. Players unlock each pit after helping the owner of the pit during the [[Ratcatchers]] quest.
+{| class="wikitable"
+! Location !! Cat type !! NPC !! Map
+|-
+|[[Ardougne]]<br>({{Map|type=maplink|mtype=pin|2561,3320|text=Entrance}})
+|[[Kitten]]
+|[[Jimmy Dazzler]]
+|{{Map|mapID=-1|width=200|height=200|2655,9637}}
+|-
+|[[Varrock]]<br>({{Map|type=maplink|mtype=pin|3267,3400|text=Entrance}})
+|[[Cat]]
+|[[Hooknosed Jack]]
+|{{Map|mapID=-1|width=200|height=200|2910,5093}}
+|-
+|[[Keldagrim]]<br>({{Map|type=maplink|mapID=-1|mtype=pin|2914,10188|text=Entrance}})
+|[[Overgrown cat]]
+|[[Smokin' Joe]]
+|{{Map|mapID=-1|width=200|height=200|1945,4701}}
+|-
+|[[Port Sarim]]<br>({{Map|type=maplink|mtype=pin|3018,3232|text=Entrance}})
+|[[Wily cat]]
+|[[The Face]]
+|{{Map|mapID=-1|width=200|height=200|2976,9643}}
+|}

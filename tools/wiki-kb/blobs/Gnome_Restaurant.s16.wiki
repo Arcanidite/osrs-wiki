@@ -1,0 +1,6 @@
+===Reward tokens===
+In addition to the tip, you receive points for completing a delivery, which are stored on a [[Reward token (Gnome Restaurant)|reward token]]. Every easy delivery you make gives you one point. Hard deliveries earn three points. After you earn 12 points, you receive a reward token, which you can use to receive a free random gnome food item. After earning the token, every 12 points earned adds another food item to the delivery should you use the token.
+
+You can have up to ten items of food delivered to you at once, as the token stores up to 120 points. When having food delivered, there is a small delay between using the token and receiving the food. You will need free inventory spots to hold the food.
+
+Once '''ten''' tokens are received and '''unused''', Gianne acknowledges your hard work and says you should go on vacation, or you may continue delivering just for tips. At this point, you can repeatedly re-roll your delivery target by simply asking for a new job at any time, regardless of your current job state. Re-initiating dialogue with Gianne without finishing the dialogue for an undesirable order ensures the five minute timer does not trigger. This makes acquiring unique items, such as the scarf, much easier.

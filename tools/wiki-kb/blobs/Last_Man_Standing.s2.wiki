@@ -1,0 +1,6 @@
+==Transportation==
+There are four safe methods of reaching Ferox Enclave that do not require players to traverse the Wilderness:
+* A [[ring of dueling]] will teleport directly here.
+* Teleport using [[Minigame Teleport]], either through any spellbook or the [[Grouping]] interface, by selecting Last Man Standing.
+* Using a [[waka canoe]] to row here (requires level 57 [[Woodcutting]]).
+* Via the [[Soul Wars]] portal to enter the [[Ferox Enclave Dungeon|Ferox Enclave dungeon]].

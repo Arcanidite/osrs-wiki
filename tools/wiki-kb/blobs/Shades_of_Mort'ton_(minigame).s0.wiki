@@ -1,0 +1,21 @@
+{{External|rs}}
+{{Otheruses|the minigame|the quest|Shades of Mort'ton}}
+{{Dangerous}}
+{{Infobox Activity
+|name = Shades of Mort'ton
+|image = [[File:Shades of Mort'ton (minigame).png|300px]]
+|release = [[18 October]] [[2004]]
+|update = Mortton Shades and Mage Armour
+|type = Minigame
+|members = Yes
+|location = [[Mort'ton]]
+|players = 1+
+|skills = [[Combat]], [[Crafting]], [[Firemaking]], [[Prayer]]
+|currency = None
+|tutorial = No
+|music = [[Lair]]
+|map = {{Map|name=Shades of Mort'ton (minigame)|x=3506|y=3316|r=5|mtype=square}}
+|leagueRegion = Morytania
+}}
+[[File:Shades of Mort'ton logo.png|left]]
+'''Shades of Mort'ton''' is a [[combat]] and [[skilling]] [[minigame]] that takes place in [[Mort'ton]]. Players are to defend and build the [[Flamtaer|Flamtaer temple]] and create [[pyre logs]] to cremate [[shade remains]], which have a chance to yield [[Shade key|keys]] used for unlocking special chests. The minigame can also yield [[Combat]], [[Crafting]], [[Firemaking]], and [[Prayer]] experience.
