@@ -164,12 +164,12 @@ const covered = {
   // single cited detail line. Flagship Step0→Endgame chain opts in first;
   // enrich.py merges train_methods.jsonl by id (default OFF = byte-identical).
   train_methods: true,
-  // granular: true — attach the opportunistic-granularity sub-checklist (W3
-  // Faux-grain atoms, ATTACH model) onto every coarse quest-*/train-* step
-  // that has an authored expansion in coarse_expansions_oppgran.jsonl. The
-  // coarse step stays the routing/grant anchor; enrich.py merges the atoms
-  // in as subChecklist{atoms,checkpoints} underneath it (same opt-in shape
-  // as train_methods above).
+  // granular: true — KEPT (task #9): naively dropping it regressed route-grand
+  // quest coverage 79→62, because quest_atoms keys off steps_quests.jsonl ids
+  // while route-grand routes several quests via steps.jsonl ids (quest-dt,
+  // quest-mm, …) — the id-spaces only partially overlap. Both mechanisms run
+  // (granular wins per enrich.py's guard); unifying properly means reconciling
+  // the quest id-spaces so quest_atoms alone covers all 89, a documented gap.
   granular: true,
   // quest_atoms: true — attach each quest step's ordered sub-checklist
   // (steps_quest_atoms.jsonl + quest_expansions.jsonl, minted by
