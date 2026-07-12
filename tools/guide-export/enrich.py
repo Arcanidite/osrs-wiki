@@ -441,10 +441,10 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
     return out
 
 
-def _train_step(step, phase, zones):
+def _train_step(step, phase, zones, checkpoint=None):
     cat = zones.get((step.get("location") or {}).get("zone"))
     conds = [skill_cond(k, v) for k, v in (step.get("grants") or {}).items() if k in SKILL_ENUM]
-    return {
+    out = {
         "id": step["id"],
         "phase": phase,
         "instruction": task_instruction(step),
@@ -454,6 +454,16 @@ def _train_step(step, phase, zones):
                         "label": cat.get("label")}] if cat else [],
         "completionConditions": conds or [{"type": "MANUAL"}],
     }
+    # Pass-through granularity fields (nullable; existing routes unaffected)
+    if step.get("atom") is not None:
+        out["atom"] = step["atom"]
+    if step.get("hints"):
+        out["hints"] = step["hints"]
+    if step.get("coarse_of"):
+        out["coarse_of"] = step["coarse_of"]
+    if checkpoint is not None:
+        out["checkpoint"] = checkpoint
+    return out
 
 
 def _milestone_step(milestone, phase):
@@ -488,6 +498,22 @@ def _steer_step(steer_pt, phase, waypoint=False):
     }
 
 
+def _checkpoint_step(label, phase, coarse_id, idx):
+    """Emit a checkpoint group-header record (same emitter pattern as _steer_step).
+    Visible in the plan list as a collapsible group header; styled as checkpoint-divider
+    in the web view. The `checkpoint` field is the rendering key for WebFragments."""
+    return {
+        "id": f"chkpt-{coarse_id}-{idx}",
+        "phase": phase,
+        "instruction": f"⧆ {label}",
+        "detail": "",
+        "highlights": [],
+        "mapMarkers": [],
+        "completionConditions": [{"type": "MANUAL"}],
+        "checkpoint": label,
+    }
+
+
 def _bg_step(step, phase, zones):
     """Emit a background overlay step card (slot.type == "background").
     slotType drives the plugin's loops-lane panel."""
@@ -517,7 +543,63 @@ def _region_phase(step):
     return phase_name("region", region.replace("-", " ").title()) if region else "General training"
 
 
-def enrich(plan, catalog, steer_points, supply_chains=None):
+def _build_checkpoint_index(coarse_expansions):
+    """Build two lookup maps from coarse_expansions checkpoints.
+    Returns:
+      checkpoint_start: {step_id → checkpoint_label} — only the first step of each checkpoint
+      checkpoint_member: {step_id → checkpoint_label} — all steps in each checkpoint
+    """
+    checkpoint_start = {}
+    checkpoint_member = {}
+    for exp in (coarse_expansions or []):
+        if exp.get("status") != "authored":
+            continue
+        steps_in_exp = exp.get("steps", [])
+        checkpoints = exp.get("checkpoints", [])
+        if not checkpoints:
+            continue
+        # Map checkpoint start → label; then propagate label to all steps until next checkpoint
+        cp_starts = {cp["start"]: cp["label"] for cp in checkpoints}
+        current_label = None
+        for sid in steps_in_exp:
+            if sid in cp_starts:
+                current_label = cp_starts[sid]
+                checkpoint_start[sid] = current_label
+            if current_label:
+                checkpoint_member[sid] = current_label
+    return checkpoint_start, checkpoint_member
+
+
+def _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id):
+    """Post-plan injection: for authored expansions whose atoms are absent from
+    the ordered list, append the missing atoms so they flow through topo_order.
+    This is the 'unwind via coarse_expansions' path (GRANULARITY §6 Lane 2 note).
+    """
+    if not coarse_expansions or not atoms_by_id:
+        return ordered
+    ordered_ids = {s.get("id") for s in ordered}
+    to_inject = []
+    for exp in coarse_expansions:
+        if exp.get("status") != "authored":
+            continue
+        exp_step_ids = exp.get("steps", [])
+        if not exp_step_ids:
+            continue
+        # Check if ANY atom from this expansion is already present
+        if any(sid in ordered_ids for sid in exp_step_ids):
+            continue
+        # None present → inject all available atoms for this expansion
+        for sid in exp_step_ids:
+            if sid in atoms_by_id and sid not in ordered_ids:
+                to_inject.append(atoms_by_id[sid])
+                ordered_ids.add(sid)
+    if not to_inject:
+        return ordered
+    return topo_order(list(ordered) + to_inject)
+
+
+def enrich(plan, catalog, steer_points, supply_chains=None,
+           coarse_expansions=None, atoms_by_id=None):
     goal = plan["goal"]
     zones = catalog.get("zones", {})
     reals = [s for s in plan["path"] if not s.get("_capstone")]
@@ -529,22 +611,52 @@ def enrich(plan, catalog, steer_points, supply_chains=None):
     # P7 — topo_order (hub_batches is Lane 3+; here topo is the dep guard).
     ordered = topo_order(clean)
 
+    # Inject atoms from authored coarse_expansions not already in the plan.
+    # Handles the 'unwind via coarse_expansions' path (ctr-* combat atoms).
+    ordered = _inject_coarse_atoms(ordered, coarse_expansions, atoms_by_id)
+
     # P8 — insert_supply_steps: annotate AOT supply steps with Supply: phase label.
     ordered = insert_supply_steps(ordered, supply_chains or [])
 
     # P9 — re-attach overlay nodes adjacent to their (possibly reordered) anchors.
     ordered_with_overlays = reattach_overlays(ordered, overlays)
 
+    # Build checkpoint index from authored expansions (used in both paths below).
+    checkpoint_start, checkpoint_member = _build_checkpoint_index(coarse_expansions)
+    # coarse_id lookup for _checkpoint_step id generation
+    step_to_coarse = {}
+    cp_counter = {}
+    for exp in (coarse_expansions or []):
+        if exp.get("status") != "authored":
+            continue
+        cid = exp["coarse_id"]
+        for cp in exp.get("checkpoints", []):
+            step_to_coarse[cp["start"]] = cid
+
     if not milestones:
         # Corpus/appendix: phase by region.
         steps_out = []
+        emitted_checkpoints = set()
         for s in ordered_with_overlays:
+            sid = s.get("id", "")
+            phase = phase_name("background", "") if s.get("_bg") else (
+                s.get("_supply_phase") or _region_phase(s) if s.get("_supply") else _region_phase(s)
+            )
+            # Emit checkpoint header before first step of each checkpoint group
+            if sid in checkpoint_start and sid not in emitted_checkpoints:
+                cp_label = checkpoint_start[sid]
+                coarse_id = step_to_coarse.get(sid, "unknown")
+                cp_idx = cp_counter.get(coarse_id, 0)
+                cp_counter[coarse_id] = cp_idx + 1
+                steps_out.append(_checkpoint_step(cp_label, phase, coarse_id, cp_idx))
+                emitted_checkpoints.add(sid)
+            cp = checkpoint_member.get(sid)
             if s.get("_bg"):
-                steps_out.append(_bg_step(s, phase_name("background", ""), zones))
+                steps_out.append(_bg_step(s, phase, zones))
             elif s.get("_supply"):
-                steps_out.append(_train_step(s, s.get("_supply_phase") or _region_phase(s), zones))
+                steps_out.append(_train_step(s, s.get("_supply_phase") or _region_phase(s), zones, checkpoint=cp))
             else:
-                steps_out.append(_train_step(s, _region_phase(s), zones))
+                steps_out.append(_train_step(s, _region_phase(s), zones, checkpoint=cp))
         steps = steps_out
     else:
         # P10 — phased_steps_with_steer or phased_steps.
@@ -562,8 +674,9 @@ def enrich(plan, catalog, steer_points, supply_chains=None):
         else:
             phased = phased_steps(ordered_with_overlays, milestones)
 
-        # P11 — emit each record.
+        # P11 — emit each record, injecting checkpoint headers before first atom of each group.
         steps = []
+        emitted_checkpoints = set()
         for e in phased:
             if "steer" in e:
                 steps.append(_steer_step(e["steer"], e["phase"]))
@@ -572,7 +685,18 @@ def enrich(plan, catalog, steer_points, supply_chains=None):
             elif e["step"].get("_bg"):
                 steps.append(_bg_step(e["step"], e["phase"], zones))
             else:
-                steps.append(_train_step(e["step"], e["phase"], zones))
+                sid = e["step"].get("id", "")
+                phase = e["phase"]
+                # Emit checkpoint header record before first step of each checkpoint group
+                if sid in checkpoint_start and sid not in emitted_checkpoints:
+                    cp_label = checkpoint_start[sid]
+                    coarse_id = step_to_coarse.get(sid, "unknown")
+                    cp_idx = cp_counter.get(coarse_id, 0)
+                    cp_counter[coarse_id] = cp_idx + 1
+                    steps.append(_checkpoint_step(cp_label, phase, coarse_id, cp_idx))
+                    emitted_checkpoints.add(sid)
+                cp = checkpoint_member.get(sid)
+                steps.append(_train_step(e["step"], phase, zones, checkpoint=cp))
 
     return {
         "id": "route-" + goal["id"],
@@ -645,10 +769,18 @@ def main():
 
     # Load data files from tools data directory.
     data_dir = Path(__file__).parent.parent.parent / "assets" / "data" / "tools"
-    steer_points  = _load_jsonl(data_dir / "steer_points.jsonl")
-    supply_chains = _load_jsonl(data_dir / "supply_chains.jsonl")
+    steer_points      = _load_jsonl(data_dir / "steer_points.jsonl")
+    supply_chains     = _load_jsonl(data_dir / "supply_chains.jsonl")
+    coarse_expansions = _load_jsonl(data_dir / "coarse_expansions.jsonl")
+    # Build atoms_by_id from steps.jsonl so _inject_coarse_atoms can look up atoms.
+    raw_steps   = _load_jsonl(data_dir / "steps.jsonl")
+    atoms_by_id = {s["id"]: s for s in raw_steps if s.get("coarse_of")}
 
-    json.dump(enrich(payload, catalog, steer_points, supply_chains), sys.stdout, indent=2)
+    json.dump(
+        enrich(payload, catalog, steer_points, supply_chains,
+               coarse_expansions=coarse_expansions, atoms_by_id=atoms_by_id),
+        sys.stdout, indent=2
+    )
 
 
 if __name__ == "__main__":
