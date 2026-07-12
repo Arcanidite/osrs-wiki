@@ -463,6 +463,8 @@ def _train_step(step, phase, zones, checkpoint=None):
         out["coarse_of"] = step["coarse_of"]
     if checkpoint is not None:
         out["checkpoint"] = checkpoint
+    if step.get("refs"):
+        out["refs"] = step["refs"]
     # Quest reward XP — the efficiency lever. The planner credits it toward skill
     # progression (pruning covered training); surface it as a chip so the route
     # shows the payoff of doing the quest instead of grinding.
@@ -486,7 +488,7 @@ def _is_quest(step):
 def _milestone_step(milestone, phase):
     reqs = _skill_reqs(milestone)
     note = MILESTONE_NOTE.get(milestone["id"], f"Requirements met — start {milestone['label']}.")
-    return {
+    out = {
         "id": "milestone-" + milestone["id"],
         "phase": phase,
         "instruction": f"★ {milestone['label']}",
@@ -494,6 +496,9 @@ def _milestone_step(milestone, phase):
         "highlights": [], "mapMarkers": [],
         "completionConditions": [skill_cond(k, v) for k, v in reqs.items()] or [{"type": "MANUAL"}],
     }
+    if milestone.get("refs"):
+        out["refs"] = milestone["refs"]
+    return out
 
 
 def _steer_step(steer_pt, phase, waypoint=False):
@@ -503,7 +508,7 @@ def _steer_step(steer_pt, phase, waypoint=False):
     skill_reqs = cond.get("skills", {})
     conds = [skill_cond(k, v) for k, v in skill_reqs.items()] or [{"type": "MANUAL"}]
     prefix = "⬡" if waypoint else "★"
-    return {
+    out = {
         "id": steer_pt["id"],  # id already carries the "steer-" prefix
         "phase": phase,
         "steerKind": steer_pt["kind"],
@@ -513,6 +518,9 @@ def _steer_step(steer_pt, phase, waypoint=False):
         "mapMarkers": [],
         "completionConditions": conds,
     }
+    if steer_pt.get("refs"):
+        out["refs"] = steer_pt["refs"]
+    return out
 
 
 def _checkpoint_step(label, phase, coarse_id, idx):
