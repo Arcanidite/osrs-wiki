@@ -1,0 +1,289 @@
+#!/usr/bin/env python3
+"""wikicli — low-noise OSRS-wiki access for research agents.
+
+The wiki is the SINGLE SOURCE OF TRUTH for guide-chain research. This CLI
+talks to the MediaWiki API (wikitext, never HTML scraping), caches every
+fetch as a blob, and keeps idempotent append-only ledgers so parallel agents
+never duplicate work and findings accumulate across sessions.
+
+Layout (everything lives beside this script):
+  blobs/<slug>.wiki    cached raw wikitext (slug = urlsafe title)
+  manifest.jsonl       {slug,title,url,sha1,bytes,fetched} per blob
+  contrib.jsonl        findings ledger — append-only, idempotent on "key"
+  queue.jsonl          work queue — append-only, last status per key wins
+  cli-feedback.log     improvement suggestions from agents (always welcome)
+  gotchas.log          process gotchas from agents
+  retro.log            per-agent retro blocks
+
+Commands (stdout = data, stderr = status; pipe-friendly):
+  search <terms...>            title candidates (opensearch)
+  get <title> [--section N]    wikitext, cached (run `sections` first on big pages)
+  sections <title>             numbered section map (index  name)
+  links <title>                outgoing article links (breadcrumbs)
+  members <category>           pages in a Category:... (breadth traversal)
+  url <title>                  canonical url for citations
+  manifest [substr]            cached blobs (optionally filtered)
+  contribute '<json>'          append finding iff its "key" is unseen
+  queue add <key> ['<json>']   idempotent enqueue
+  queue claim <key>            mark claimed (append-only)
+  queue done <key> ['<json>']  mark done
+  queue list [status]          resolved queue state
+  feedback '<text>'            suggest a CLI improvement (please do)
+"""
+import hashlib
+import json
+import re
+import subprocess
+import sys
+import urllib.parse
+import urllib.request
+from pathlib import Path
+
+API = "https://oldschool.runescape.wiki/api.php"
+BASE = "https://oldschool.runescape.wiki/w/"
+UA = "guide-chain-kb/1.0 (research tooling for a RuneLite guide plugin)"
+ROOT = Path(__file__).resolve().parent
+BLOBS = ROOT / "blobs"
+CACHE = ROOT / "cache"   # raw API-response cache: EVERY request hits disk first
+LEDGERS = {
+    "manifest": ROOT / "manifest.jsonl",
+    "contrib": ROOT / "contrib.jsonl",
+    "queue": ROOT / "queue.jsonl",
+    "feedback": ROOT / "cli-feedback.log",
+}
+TIMEOUT_S = 25
+
+
+def say(msg):
+    print(msg, file=sys.stderr)
+
+
+def die(msg):
+    sys.exit(f"wikicli: {msg}")
+
+
+def now():
+    return subprocess.run(["date", "-u", "+%Y-%m-%dT%H:%M:%SZ"],
+                          capture_output=True, text=True).stdout.strip()
+
+
+def api(params):
+    """One API call — but idempotent on disk: identical requests are served from
+    cache/ and NEVER re-hit the wiki (be a polite citizen of the knowledge base)."""
+    params = {**params, "format": "json", "formatversion": "2"}
+    query = urllib.parse.urlencode(sorted(params.items()))
+    hit = CACHE / (hashlib.sha1(query.encode()).hexdigest()[:16] + ".json")
+    if hit.exists():
+        say(f"api cache hit: {hit.name}")
+        return json.loads(hit.read_text())
+    req = urllib.request.Request(API + "?" + query, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=TIMEOUT_S) as resp:
+        data = json.load(resp)
+    err = data.get("error") if isinstance(data, dict) else None   # opensearch returns a list
+    if err:
+        die(f"wiki error: {err.get('info', err)}")
+    CACHE.mkdir(exist_ok=True)
+    hit.write_text(json.dumps(data))
+    return data
+
+
+def slugify(title):
+    safe = re.sub(r"[^A-Za-z0-9()'+._-]+", "_", title.replace(" ", "_"))
+    return safe.strip("_") or hashlib.sha1(title.encode()).hexdigest()[:12]
+
+
+def canonical_url(title):
+    return BASE + urllib.parse.quote(title.replace(" ", "_"), safe="_()'+:/")
+
+
+def append_ledger(name, line):
+    path = LEDGERS[name]
+    with path.open("a") as f:
+        f.write(line.rstrip("\n") + "\n")
+
+
+def ledger_rows(name):
+    path = LEDGERS[name]
+    if not path.exists():
+        return []
+    rows = []
+    for raw in path.read_text().splitlines():
+        raw = raw.strip()
+        if raw and not raw.startswith("#"):
+            rows.append(json.loads(raw))
+    return rows
+
+
+def parse_json_arg(raw, what):
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as e:
+        die(f"bad {what} json: {e}")
+
+
+# ── commands ──────────────────────────────────────────────────────────────────
+
+def cmd_search(args):
+    if not args:
+        die("search needs terms")
+    data = api({"action": "opensearch", "search": " ".join(args), "limit": "12"})
+    titles, urls = data[1], data[3]
+    for title, url in zip(titles, urls):
+        print(f"{title}\t{url}")
+
+
+def cmd_get(args):
+    title, section = _title_and_section(args)
+    slug = slugify(title) + (f".s{section}" if section else "")
+    blob = BLOBS / f"{slug}.wiki"
+    if blob.exists():
+        say(f"cache hit: blobs/{blob.name} ({blob.stat().st_size}B)")
+        print(blob.read_text())
+        return
+    params = {"action": "parse", "page": title, "prop": "wikitext", "redirects": "1"}
+    if section:
+        params["section"] = section
+    data = api(params)
+    text = re.sub(r"<!--.*?-->", "", data["parse"]["wikitext"], flags=re.S)
+    real = data["parse"]["title"]
+    BLOBS.mkdir(exist_ok=True)
+    blob.write_text(text)
+    append_ledger("manifest", json.dumps({
+        "slug": slug, "title": real, "url": canonical_url(real),
+        "section": section, "sha1": hashlib.sha1(text.encode()).hexdigest()[:12],
+        "bytes": len(text), "fetched": now()}))
+    say(f"fetched {len(text)}B -> blobs/{blob.name}")
+    print(text)
+
+
+def _title_and_section(args):
+    if not args:
+        die("get needs a title")
+    if "--section" not in args:
+        return " ".join(args), None
+    i = args.index("--section")
+    return " ".join(args[:i]), args[i + 1]
+
+
+def cmd_sections(args):
+    if not args:
+        die("sections needs a title")
+    data = api({"action": "parse", "page": " ".join(args),
+                "prop": "sections", "redirects": "1"})
+    for s in data["parse"]["sections"]:
+        indent = "  " * (int(s.get("toclevel", 1)) - 1)
+        print(f"{s['index']}\t{indent}{s['line']}")
+
+
+def cmd_links(args):
+    if not args:
+        die("links needs a title")
+    data = api({"action": "parse", "page": " ".join(args),
+                "prop": "links", "redirects": "1"})
+    mainspace = [l["title"] for l in data["parse"]["links"] if l.get("ns") == 0]
+    print("\n".join(mainspace))
+
+
+def cmd_members(args):
+    if not args:
+        die("members needs a category name")
+    name = " ".join(args)
+    name = name if name.startswith("Category:") else f"Category:{name}"
+    data = api({"action": "query", "list": "categorymembers",
+                "cmtitle": name, "cmlimit": "300"})
+    print("\n".join(m["title"] for m in data["query"]["categorymembers"]))
+
+
+def cmd_url(args):
+    if not args:
+        die("url needs a title")
+    print(canonical_url(" ".join(args)))
+
+
+def cmd_manifest(args):
+    needle = args[0].lower() if args else ""
+    rows = [r for r in ledger_rows("manifest") if needle in r["slug"].lower()]
+    for r in rows:
+        print(f"{r['slug']}\t{r['bytes']}B\t{r['title']}")
+    say(f"{len(rows)} blob(s)")
+
+
+def cmd_contribute(args):
+    if not args:
+        die("contribute needs a json payload with a \"key\"")
+    obj = parse_json_arg(args[0], "contribution")
+    key = obj.get("key")
+    if not key:
+        die("contribution needs a \"key\" field")
+    seen = {r.get("key") for r in ledger_rows("contrib")}
+    if key in seen:
+        say(f"duplicate key, skipped: {key}")
+        return
+    append_ledger("contrib", json.dumps({**obj, "ts": now()}))
+    say(f"contributed: {key}")
+
+
+def cmd_queue(args):
+    if not args:
+        die("queue needs add|claim|done|list")
+    sub, rest = args[0], args[1:]
+    if sub == "list":
+        return _queue_list(rest)
+    if sub not in ("add", "claim", "done"):
+        die(f"unknown queue subcommand: {sub}")
+    if not rest:
+        die(f"queue {sub} needs a key")
+    key, payload = rest[0], (parse_json_arg(rest[1], "payload") if len(rest) > 1 else None)
+    state = _queue_state()
+    if sub == "add" and key in state:
+        say(f"already queued ({state[key]['status']}), skipped: {key}")
+        return
+    status = {"add": "pending", "claim": "claimed", "done": "done"}[sub]
+    append_ledger("queue", json.dumps({"key": key, "status": status,
+                                       "payload": payload, "ts": now()}))
+    say(f"{key} -> {status}")
+
+
+def _queue_state():
+    state = {}
+    for r in ledger_rows("queue"):
+        state[r["key"]] = r          # append-only; last record per key wins
+    return state
+
+
+def _queue_list(rest):
+    want = rest[0] if rest else None
+    rows = [r for r in _queue_state().values() if not want or r["status"] == want]
+    for r in rows:
+        extra = json.dumps(r["payload"]) if r.get("payload") else ""
+        print(f"{r['status']}\t{r['key']}\t{extra}")
+    say(f"{len(rows)} item(s)")
+
+
+def cmd_feedback(args):
+    if not args:
+        die("feedback needs text")
+    append_ledger("feedback", f"[{now()}] {' '.join(args)}")
+    say("feedback logged — thank you")
+
+
+COMMANDS = {
+    "search": cmd_search, "get": cmd_get, "sections": cmd_sections,
+    "links": cmd_links, "members": cmd_members, "url": cmd_url,
+    "manifest": cmd_manifest, "contribute": cmd_contribute,
+    "queue": cmd_queue, "feedback": cmd_feedback,
+}
+
+
+def main():
+    argv = sys.argv[1:]
+    if not argv or argv[0] in ("-h", "--help", "help"):
+        sys.exit(__doc__)
+    cmd = COMMANDS.get(argv[0])
+    if not cmd:
+        die(f"unknown command: {argv[0]} (try --help)")
+    cmd(argv[1:])
+
+
+if __name__ == "__main__":
+    main()

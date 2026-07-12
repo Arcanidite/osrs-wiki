@@ -1,0 +1,24 @@
+==Walkthrough==
+{{Map
+|align=right
+|x=3166
+|y=3288
+|mtype=pin
+|x:3181,y:3288,icon:redPin,desc:Chicken coop
+|x:3177,y:3315,icon:bluePin,desc:Dairy cow field
+|x:3163,y:3289,icon:yellowPin,desc:Wheat field
+|caption={{mapkey
+ |title=Ingredient locations
+ |line1=...red,text=Chicken coop
+ |line2=...blue,text=Dairy cow field
+ |line3=...yellow,text=Wheat field
+}}
+}}
+{{Checklist|*Obtain the following items: a [[bucket of milk]], a [[pot of flour]], and an [[egg]]:
+**Buy from the [[Grand Exchange]] for {{Coins|{{GEP|Pot of flour|1}} + {{GEP|Bucket of milk|1}} + {{GEP|Egg|1}}}}
+**Create them yourself:
+***[[Bucket of milk]]: use a [[bucket]] (found in the cellar of [[Lumbridge castle]]) on a [[dairy cow]] in the [[Lumbridge cow field]].
+***[[Egg]]: spawns at the chicken farm north-west of the cow field.
+***[[Pot of flour]]: with an [[empty pot]] (found by the Cook in Lumbridge Castle), head to the [[Mill Lane Mill]] next to the cow pens and pick some [[grain]] from outside. Climb up to the top floor of the mill and use the grain with the hopper, then pull the lever. Climb down and take the flour from the flour bin with an [[empty pot]].
+*Talk to the [[Cook (Lumbridge)|Cook]] in [[Lumbridge Castle]]'s kitchen with all the items in your inventory. {{Chat option|1What's Wrong?|1Can I help?}}
+*'''Congratulations, quest complete!'''}}
