@@ -4,9 +4,12 @@
 Reads a plan (from plan.mjs) on stdin, enriches each step with render metadata,
 and emits a guide-chain guide {id,name,description,steps[]} on stdout.
 
-Pipeline (S7): load → burndownResolve → bank-split → routeMulti(greedy) →
-  weaveOverlays ‖ detach-overlays → hub_batches → topo_order →
-  insert_supply_steps → re-attach → phased_steps_with_steer → emit
+Pipeline (S7): load -> burndownResolve -> bank-split -> routeMulti(greedy) ->
+  weaveOverlays -> detach-overlays -> hub_batches -> topo_order ->
+  insert_supply_steps -> re-attach -> phased_steps_with_steer -> emit
+hub_batches runs BEFORE topo_order (S7 resolves sequencer OQ-5): topo is the
+dependency guard, so a hub reorder that violates a dep (skill/tag/quest) gets
+corrected by topo while the cluster otherwise stays contiguous.
 
 This is the keystone JOIN: router abstract plan (predicate reqs/grants) -> the
 plugin's render schema (instruction prose + highlights/markers + auto-advance
@@ -65,21 +68,32 @@ def phase_name(kind, label):
 
 
 def topo_order(steps):
-    """Valid play order: emit a step once its skill reqs AND tag reqs are met.
-    Produces/grants applied additively (local dict only — ordering guard, not planner state).
+    """Valid play order: emit a step once its skill reqs, tag reqs AND quest deps
+    are met. Produces/grants applied additively (local dict only — ordering guard,
+    not planner state).
     S7: tag reqs from reqs.tags checked against state tag:* keys, enabling bootstrap-before-loop
-    ordering (supply loop steps carry reqs.tags:['bootstrap-<chain>'])."""
+    ordering (supply loop steps carry reqs.tags:['bootstrap-<chain>']).
+    Lane 3: also tracks quest:<id> completion (own id, self-granted on emit) so
+    reqs.quests AND location.quest_gate are enforced here too — this is what makes
+    topo the real dep guard after hub_batches reorders a quest cluster (S7); on
+    the pre-Lane-3 input (greedy's own order) this is always already satisfied, a
+    no-op, since greedy itself never emits a gated quest before its gate."""
     state, remaining, ordered = {}, list(steps), []
     lvl = lambda k: state.get(k, 1)
     has_tag = lambda t: state.get(f"tag:{t}", False)
+    quest_done = lambda qid: state.get(f"quest:{qid}", False)
     while remaining:
         progressed = False
         for s in list(remaining):
             skill_reqs = (s.get("reqs") or {}).get("skills", {}) or {}
             tag_reqs   = (s.get("reqs") or {}).get("tags",   []) or []
-            skills_ok = all(lvl(k) >= v for k, v in skill_reqs.items())
-            tags_ok   = all(has_tag(t) for t in tag_reqs)
-            if skills_ok and tags_ok:
+            quest_reqs = (s.get("reqs") or {}).get("quests", []) or []
+            gate       = (s.get("location") or {}).get("quest_gate")
+            skills_ok  = all(lvl(k) >= v for k, v in skill_reqs.items())
+            tags_ok    = all(has_tag(t) for t in tag_reqs)
+            quests_ok  = all(quest_done(q) for q in quest_reqs)
+            gate_ok    = quest_done(gate) if gate else True
+            if skills_ok and tags_ok and quests_ok and gate_ok:
                 ordered.append(s)
                 # Apply grants: skill levels + boolean tags
                 for k, v in (s.get("grants") or {}).items():
@@ -91,12 +105,43 @@ def topo_order(steps):
                 for k, v in (s.get("produces") or {}).items():
                     if isinstance(v, (int, float)):
                         state[k] = state.get(k, 0) + v
+                if _is_quest(s):
+                    state[f"quest:{s['id']}"] = True
                 remaining.remove(s)
                 progressed = True
         if not progressed:               # unmet dep -> append remainder verbatim
             ordered.extend(remaining)
             break
     return ordered
+
+
+# P6 — hub_batches: cluster steps sharing a `hub` key contiguously, anchored at
+# the position of the cluster's EARLIEST member. Relative order is preserved
+# both within each cluster and among untouched steps — S7 relies on this
+# stability so the following topo_order pass only has to correct genuine
+# dependency violations the move introduces (e.g. a member whose skill reqs
+# aren't met at the new, earlier position), not reinvent order from scratch.
+# Steps without a `hub` pass straight through untouched.
+def hub_batches(steps):
+    first_idx, clusters = {}, {}
+    for i, s in enumerate(steps):
+        h = s.get("hub")
+        if not h:
+            continue
+        first_idx.setdefault(h, i)
+        clusters.setdefault(h, []).append(s)
+
+    result, flushed = [], set()
+    for i, s in enumerate(steps):
+        h = s.get("hub")
+        if not h:
+            result.append(s)
+            continue
+        if h in flushed or i != first_idx[h]:
+            continue                     # already flushed, or not the earliest member yet
+        result.extend(clusters[h])
+        flushed.add(h)
+    return result
 
 
 # P8 — insert_supply_steps: annotate supply steps with their Supply: phase label.
@@ -151,14 +196,14 @@ def _difficulty(milestone):
     return (max(reqs.values()) if reqs else 0, sum(reqs.values()))
 
 
-# P5 — detach overlay nodes (_bg: True) from path before hub/topo reordering.
-# Returns (clean_path, overlay_list) where overlay_list items are
-# {anchor_id, side, node} tuples.
+# P5 — detach overlay nodes (_bg: True, or Lane 3 _alternation: True) from path
+# before hub/topo reordering. Returns (clean_path, overlay_list) where
+# overlay_list items are {anchor_id, side, node} tuples.
 def detach_overlays(path):
     clean = []
     overlays = []
     for step in path:
-        if step.get("_bg"):
+        if step.get("_bg") or step.get("_alternation"):
             overlays.append({
                 "anchor_id": step.get("_anchor"),
                 "side": step.get("_side", "before"),
@@ -477,6 +522,14 @@ def _train_step(step, phase, zones, checkpoint=None):
         out["checkpoint"] = checkpoint
     if step.get("refs"):
         out["refs"] = step["refs"]
+    # FRAMES_GALLERY §2 — captured frames/gifs pass through verbatim (same pattern as refs).
+    if step.get("media"):
+        out["media"] = step["media"]
+    # Lane 3 — passiveOverlays: zero-time embed badges resolved onto this ACTIVE
+    # host by overlay.js (P4). Never present on a _bg chip — weaveOverlays never
+    # annotates one (sequencer OQ-6).
+    if step.get("_passiveOverlays"):
+        out["passiveOverlays"] = step["_passiveOverlays"]
     # Quest reward XP — the efficiency lever. The planner credits it toward skill
     # progression (pruning covered training); surface it as a chip so the route
     # shows the payoff of doing the quest instead of grinding.
@@ -572,6 +625,26 @@ def _bg_step(step, phase, zones):
         "highlights": [],
         "mapMarkers": [],
         "completionConditions": conds,
+    }
+
+
+def _alternation_step(step, phase):
+    """Emit an alternation-card divider record (Lane 3; same marker pattern as
+    _checkpoint_step): 3+ consecutive same-region active steps overlay.js found
+    that can be done in any order — a round-robin hint, not a forced sequence.
+    slotType:"alternation" (GuideStep.java union field, §1e) drives rendering;
+    plugin ignores unknown fields safely so alternationMembers is a safe extra."""
+    label = step.get("label", "Rotate tasks")
+    return {
+        "id": step["id"],
+        "phase": phase,
+        "slotType": "alternation",
+        "instruction": f"⇄ {label}",
+        "detail": "These steps are all in the same area — any order works.",
+        "highlights": [],
+        "mapMarkers": [],
+        "completionConditions": [{"type": "MANUAL"}],
+        "alternationMembers": step.get("_alternation_members", []),
     }
 
 
@@ -681,8 +754,13 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # P5 — detach overlay nodes before hub/topo reordering.
     clean, overlays = detach_overlays(reals)
 
-    # P7 — topo_order (hub_batches is Lane 3+; here topo is the dep guard).
-    ordered = topo_order(clean)
+    # P6 — hub_batches BEFORE P7 topo_order (S7): cluster quest hubs contiguous
+    # at their earliest member; topo is the dependency guard that corrects any
+    # skill/tag/quest violation the move introduces.
+    batched = hub_batches(clean)
+
+    # P7 — topo_order.
+    ordered = topo_order(batched)
 
     # Inject atoms from authored coarse_expansions not already in the plan.
     # Handles the 'unwind via coarse_expansions' path (ctr-* combat atoms).
@@ -721,9 +799,14 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
         emitted_checkpoints = set()
         for s in ordered_with_overlays:
             sid = s.get("id", "")
-            phase = phase_name("background", "") if s.get("_bg") else (
-                s.get("_supply_phase") or _region_phase(s) if s.get("_supply") else _region_phase(s)
-            )
+            if s.get("_bg"):
+                phase = phase_name("background", "")
+            elif s.get("_alternation"):
+                phase = _region_phase(s)
+            elif s.get("_supply"):
+                phase = s.get("_supply_phase") or _region_phase(s)
+            else:
+                phase = _region_phase(s)
             # Emit checkpoint header before first step of each checkpoint group
             if sid in checkpoint_start and sid not in emitted_checkpoints:
                 cp_label = checkpoint_start[sid]
@@ -733,10 +816,12 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
             cp = checkpoint_member.get(sid)
             if s.get("_bg"):
                 steps_out.append(_bg_step(s, phase, zones))
+            elif s.get("_alternation"):
+                steps_out.append(_alternation_step(s, phase))
             elif s.get("_supply"):
-                steps_out.append(_train_step(s, s.get("_supply_phase") or _region_phase(s), zones, checkpoint=cp))
+                steps_out.append(_train_step(s, phase, zones, checkpoint=cp))
             else:
-                steps_out.append(_train_step(s, _region_phase(s), zones, checkpoint=cp))
+                steps_out.append(_train_step(s, phase, zones, checkpoint=cp))
         steps = steps_out
     else:
         # P10 — phased_steps_with_steer or phased_steps.
@@ -764,6 +849,8 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
                 steps.append(_milestone_step(e["milestone"], e["phase"]))
             elif e["step"].get("_bg"):
                 steps.append(_bg_step(e["step"], e["phase"], zones))
+            elif e["step"].get("_alternation"):
+                steps.append(_alternation_step(e["step"], e["phase"]))
             else:
                 sid = e["step"].get("id", "")
                 phase = e["phase"]

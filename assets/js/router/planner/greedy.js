@@ -84,6 +84,23 @@ function questXpUseful(step, state, targetEdges) {
   });
 }
 
+// S8 — deferred_until vs supply demand (Lane 3 sequencer). Hard requisites beat
+// soft deferrals: a step whose id is in env.demandSet is never held, regardless
+// of deferred_until. Otherwise the hold releases once a named goal in
+// env.activeGoalIds is queued, or a tag: trigger has already been granted into
+// state (state["tag:<name>"] — set by another step's grants, same vocabulary
+// the S6 tag-bridge uses). A step with no deferred_until is never held.
+export function isDeferrable(step, env, state) {
+  const until = step.deferred_until;
+  if (!until || !until.length) return true;
+  if (env.demandSet?.has(step.id)) return true;
+  return until.some((trigger) =>
+    trigger.startsWith("tag:")
+      ? state[`tag:${trigger.slice(4)}`] === true
+      : env.activeGoalIds?.has(trigger) === true
+  );
+}
+
 export function locationAccessible(step, completedIds, excluded, completedQuests) {
   const loc = step.location;
   if (!loc) return true;
@@ -150,6 +167,7 @@ function routeGoal(env, steps, profile, goal, skills, completedIds, completedQue
       const step = steps.find((s) => s.id === id);
       if (!step || !meetsReqs(env, step, state, ctx())) continue;
       if (!locationAccessible(step, completedIds, excluded, completedQuests)) continue;
+      if (!isDeferrable(step, env, state)) continue;
       if (!isUseful(env, step, state, targetEdges, terminal, neededGates)) continue;
       heap.push(step, costFor(step, profile.style));
     }
@@ -263,6 +281,10 @@ export function routeMulti(goals, steps, profile, env) {
 
   // Expose demandSet on env so overlay.js / sequencer (Lane 3) can access it (S8).
   env.demandSet = demandSet;
+
+  // S8 — every goal queued in this routeMulti call is "active" for deferred_until
+  // purposes (all goals here are simultaneously queued, not routed in isolation).
+  env.activeGoalIds = new Set(sanitizedGoals.map((g) => g.id));
 
   // P2 bank split — exclude slot-typed steps (background/passive) from the greedy heap;
   // they are woven back in by weaveOverlays (P4) after routing.

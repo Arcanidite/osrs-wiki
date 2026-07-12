@@ -5,7 +5,8 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { plan } from "../assets/js/router/planner/index.js";
-import { routeMulti, costFor } from "../assets/js/router/planner/greedy.js";
+import { routeMulti, costFor, isDeferrable } from "../assets/js/router/planner/greedy.js";
+import { weaveOverlays } from "../assets/js/router/planner/overlay.js";
 import { toState, reqQuals } from "../assets/js/router/model.js";
 import { loadFixtures, makeEnv, freshProfile, queueGoal } from "./helpers.js";
 import { scenarios, runScenario } from "./generate-fixtures.js";
@@ -144,4 +145,78 @@ test("determinism: same inputs → identical route", () => {
   const a = routeMulti(goals, data.steps, freshProfile("efficient"), makeEnv(data)).map((s) => s.id);
   const b = routeMulti(goals, data.steps, freshProfile("efficient"), makeEnv(data)).map((s) => s.id);
   assert.deepEqual(a, b);
+});
+
+// ── Lane 3 — sequencer full (S8 deferred_until, overlay.js passive/alternation) ──
+
+test("isDeferrable: demandSet hard-overrides deferred_until (S8)", () => {
+  const step = { id: "s1", deferred_until: ["some-goal-never-queued"] };
+  const held      = { activeGoalIds: new Set(), demandSet: new Set() };
+  const demanded  = { activeGoalIds: new Set(), demandSet: new Set(["s1"]) };
+  assert.equal(isDeferrable(step, held, {}), false, "no trigger satisfied -> held");
+  assert.equal(isDeferrable(step, demanded, {}), true, "demandSet beats an unmet deferral");
+});
+
+test("isDeferrable: no deferred_until never holds; tag: trigger reads granted state", () => {
+  assert.equal(isDeferrable({ id: "s2" }, { activeGoalIds: new Set() }, {}), true);
+  const tagStep = { id: "s3", deferred_until: ["tag:bossing"] };
+  assert.equal(isDeferrable(tagStep, { activeGoalIds: new Set() }, {}), false, "tag not yet granted -> held");
+  assert.equal(isDeferrable(tagStep, { activeGoalIds: new Set() }, { "tag:bossing": true }), true, "tag granted -> released");
+});
+
+test("deferred_until holds a step until its named trigger goal is queued (S8)", () => {
+  const steps = [
+    { id: "deferred-goal-step", label: "Deferred until later-goal queued", reqs: { skills: {} },
+      grants: { attack: 60 }, xp: { attack: 1000 }, tags: ["combat"], deferred_until: ["later-goal"] },
+  ];
+  const goalA = { id: "goal-a", label: "A", reqs: { skills: { attack: 60 } }, grants: {}, terminal: null };
+
+  const held = routeMulti([goalA], steps, freshProfile(), makeEnv({ steps }));
+  assert.ok(!held.some((s) => s.id === "deferred-goal-step"), "step stays held while its trigger goal isn't queued");
+
+  const laterGoal = { id: "later-goal", label: "Later", reqs: { skills: { attack: 60 } }, grants: {}, terminal: null };
+  const released = routeMulti([goalA, laterGoal], steps, freshProfile(), makeEnv({ steps }));
+  assert.ok(released.some((s) => s.id === "deferred-goal-step"), "step releases once its trigger goal is queued (whole batch is 'active')");
+});
+
+test("deferred_until: tag: trigger releases only after that tag is actually granted (S8)", () => {
+  const steps = [
+    { id: "grant-bossing", label: "Unlock bossing access", reqs: { skills: {} }, grants: { bossing: true }, tags: [] },
+    { id: "deferred-tag-step", label: "Deferred tag-gated training", reqs: { skills: {} },
+      grants: { attack: 50 }, xp: { attack: 1000 }, tags: ["combat"], deferred_until: ["tag:bossing"] },
+  ];
+  const goals = [{ id: "g", label: "G", reqs: { skills: { attack: 50 }, tags: ["bossing"] }, grants: {}, terminal: null }];
+  const path = routeMulti(goals, steps, freshProfile(), makeEnv({ steps }));
+  const ids = path.map((s) => s.id);
+  assert.ok(ids.includes("grant-bossing"), "trigger step routed");
+  assert.ok(ids.includes("deferred-tag-step"), "deferred step released once its tag trigger fired");
+  assert.ok(ids.indexOf("grant-bossing") < ids.indexOf("deferred-tag-step"), "release only ever happens after the trigger, never before");
+});
+
+test("weaveOverlays: 3+ consecutive same-region actives get one alternation card, pinned before the run", () => {
+  const step = (id, region) => ({ id, label: id, tags: [], location: { region } });
+  const path = [step("a", "zone1"), step("b", "zone1"), step("c", "zone1"), step("d", "zone2")];
+  // No slot-typed steps in the bank at all — alternation must NOT depend on overlaySteps.
+  const result = weaveOverlays(path, [], makeEnv({ steps: [] }));
+  const marker = result.find((s) => s._alternation);
+  assert.ok(marker, "alternation card injected for the 3-run");
+  assert.deepEqual(marker._alternation_members, ["a", "b", "c"]);
+  assert.equal(result.indexOf(marker), result.indexOf(result.find((s) => s.id === "a")) - 1, "card sits immediately before the run");
+  assert.equal(result.filter((s) => s._alternation).length, 1, "the 1-member zone2 tail never gets a card");
+});
+
+test("weaveOverlays: passive embeds_into badges ACTIVE hosts by tag, never a bg chip", () => {
+  const passive = { id: "embed-x", label: "Zero-time embed", slot: { type: "passive", embeds_into: ["combat"] } };
+  // bg's OWN tags deliberately overlap "combat" — proves the chip is skipped
+  // structurally (never a host), not merely because tags happen not to match.
+  const bg = { id: "bg-x", label: "Loop", tags: ["background", "combat"], reqs: { skills: {} },
+               slot: { type: "background", cadence_min: null, lifecycle: { states: ["idle"], initial: "idle" } } };
+  const breakStep = { id: "break-1", label: "Bank", tags: ["banking"], location: { region: "r" } };
+  const host = { id: "train-x", label: "Train", tags: ["combat"], location: { region: "r" } };
+  const result = weaveOverlays([breakStep, host], [passive, bg], makeEnv({ steps: [] }));
+  const chip = result.find((s) => s._bg);
+  assert.ok(chip, "bg setup chip was injected at the break");
+  assert.ok(!chip._passiveOverlays, "bg chip never receives a passive badge even though its tags match embeds_into");
+  const badgedHost = result.find((s) => s.id === "train-x");
+  assert.deepEqual(badgedHost._passiveOverlays, ["Zero-time embed"]);
 });
