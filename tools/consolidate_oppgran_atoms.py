@@ -55,9 +55,34 @@ def read_jsonl(path):
                 yield json.loads(line)
 
 
+def build_ref_index():
+    """Quest/skill wiki refs keyed every way a coarse_id might resolve, so an
+    uncited atom can inherit its quest's citation (wiki = source of truth). Tries
+    quest_db.jsonl (264 cited), steps_quests.jsonl (188), and steps.jsonl's own
+    quest-step refs — first non-empty wins. Never fabricates: a coarse_id that
+    resolves nowhere leaves its atoms honestly uncited."""
+    index = {}
+    for name in ("quest_db.jsonl", "steps_quests.jsonl", "steps.jsonl"):
+        path = os.path.join(DATA, name)
+        for row in read_jsonl(path):
+            refs = row.get("refs")
+            rid = row.get("id")
+            if not refs or not rid:
+                continue
+            for key in (rid, f"quest-{rid}", rid.replace("quest-", "", 1)):
+                index.setdefault(key, refs)
+    return index
+
+
+def coarse_refs(coarse_id, ref_index):
+    return ref_index.get(coarse_id) or ref_index.get(coarse_id.replace("quest-", "", 1))
+
+
 def atom_rows_and_expansions():
     """Returns (step_rows_by_id, expansions_by_coarse) from the ledger, first
-    seen wins (idempotent ledger, but guard re-runs)."""
+    seen wins (idempotent ledger, but guard re-runs). Atoms with no per-row
+    refs inherit their coarse quest's wiki citation (build_ref_index)."""
+    ref_index = build_ref_index()
     step_rows, expansions = {}, {}
     for row in read_jsonl(CONTRIB):
         if row.get("kind") != "atoms":
@@ -66,12 +91,16 @@ def atom_rows_and_expansions():
         steps = row.get("steps") or []
         if not coarse_id or not steps or coarse_id in expansions:
             continue
+        qrefs = coarse_refs(coarse_id, ref_index)
         ids = []
         for s in steps:
             sid = s.get("id")
             if not sid or sid in step_rows:
                 continue
-            step_rows[sid] = normalize_step(s, coarse_id)
+            norm = normalize_step(s, coarse_id)
+            if not norm.get("refs") and qrefs:
+                norm["refs"] = qrefs
+            step_rows[sid] = norm
             ids.append(sid)
         expansions[coarse_id] = {
             "coarse_id": coarse_id,
@@ -79,6 +108,7 @@ def atom_rows_and_expansions():
             "status": "authored",
             "steps": ids,
             "checkpoints": row.get("checkpoints") or [],
+            "refs": qrefs or [],
         }
     return step_rows, expansions
 
