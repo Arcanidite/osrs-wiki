@@ -582,3 +582,351 @@
 {"key": "wave4:skill-unlocks", "status": "done", "payload": {"contributed": 115, "skipped": 0, "domain": "unlock", "source": "Unlockable content page, sections: Transportation/Magics/Locations/Guilds/Equipment/Doors and passages/Miscellaneous"}, "ts": "2026-07-12T10:22:22Z"}
 {"key": "minigamedb-suite", "status": "claimed", "payload": null, "ts": "2026-07-12T11:10:51Z"}
 {"key": "minigamedb-suite", "status": "done", "payload": null, "ts": "2026-07-12T11:16:14Z"}
+{"key": "norm-r-questdb-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T14:27:43Z"}
+{"key": "norm-r-questdb-01", "status": "claimed", "payload": null, "ts": "2026-07-12T14:27:43Z"}
+{"key": "norm-r-questdb-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T14:27:56Z"}
+{"key": "norm-r-questdb-02", "status": "claimed", "payload": null, "ts": "2026-07-12T14:27:56Z"}
+{"key": "norm-r-questdb-01", "status": "done", "payload": null, "ts": "2026-07-12T14:37:02Z"}
+{"key": "norm-r-questdb-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T14:37:38Z"}
+{"key": "norm-r-questdb-03", "status": "claimed", "payload": null, "ts": "2026-07-12T14:37:38Z"}
+{"key": "norm-r-questdb-02", "status": "done", "payload": null, "ts": "2026-07-12T14:37:55Z"}
+{"key": "norm-r-questdb-04", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T14:38:47Z"}
+{"key": "norm-r-questdb-04", "status": "claimed", "payload": null, "ts": "2026-07-12T14:38:47Z"}
+{"key": "norm-r-questdb-03", "status": "done", "payload": null, "ts": "2026-07-12T14:44:44Z"}
+{"key": "norm-r-questdb-04", "status": "done", "payload": null, "ts": "2026-07-12T14:45:25Z"}
+{"key": "norm-r-questdb-05", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T14:51:57Z"}
+{"key": "norm-r-questdb-05", "status": "claimed", "payload": null, "ts": "2026-07-12T14:51:57Z"}
+{"key": "norm-r-questdb-06", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T14:53:26Z"}
+{"key": "norm-r-questdb-06", "status": "claimed", "payload": null, "ts": "2026-07-12T14:53:26Z"}
+{"key": "norm-r-questdb-06", "status": "done", "payload": null, "ts": "2026-07-12T14:53:36Z"}
+{"key": "norm-r-questdb-07", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T14:54:00Z"}
+{"key": "norm-r-questdb-07", "status": "claimed", "payload": null, "ts": "2026-07-12T14:54:00Z"}
+{"key": "norm-r-questdb-05", "status": "done", "payload": null, "ts": "2026-07-12T14:55:13Z"}
+{"key": "norm-r-questdb-08", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T14:55:49Z"}
+{"key": "norm-r-questdb-08", "status": "claimed", "payload": null, "ts": "2026-07-12T14:55:49Z"}
+{"key": "norm-r-questdb-07", "status": "done", "payload": null, "ts": "2026-07-12T15:00:16Z"}
+{"key": "norm-r-questdb-09", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:00:42Z"}
+{"key": "norm-r-questdb-09", "status": "claimed", "payload": null, "ts": "2026-07-12T15:00:42Z"}
+{"key": "norm-r-questdb-08", "status": "done", "payload": null, "ts": "2026-07-12T15:01:46Z"}
+{"key": "norm-r-questdb-10", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:02:05Z"}
+{"key": "norm-r-questdb-10", "status": "claimed", "payload": null, "ts": "2026-07-12T15:02:05Z"}
+{"key": "norm-r-questdb-09", "status": "done", "payload": null, "ts": "2026-07-12T15:05:59Z"}
+{"key": "norm-r-questdb-10", "status": "done", "payload": null, "ts": "2026-07-12T15:08:00Z"}
+{"key": "norm-r-questdb-12", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:08:25Z"}
+{"key": "norm-r-questdb-12", "status": "claimed", "payload": null, "ts": "2026-07-12T15:08:25Z"}
+{"key": "norm-r-questdb-11", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:13:26Z"}
+{"key": "norm-r-questdb-11", "status": "claimed", "payload": null, "ts": "2026-07-12T15:13:26Z"}
+{"key": "norm-r-questdb-11", "status": "done", "payload": null, "ts": "2026-07-12T15:13:42Z"}
+{"key": "norm-r-questdb-12", "status": "done", "payload": null, "ts": "2026-07-12T15:13:51Z"}
+{"key": "norm-r-questdb-14", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:14:11Z"}
+{"key": "norm-r-questdb-14", "status": "claimed", "payload": null, "ts": "2026-07-12T15:14:11Z"}
+{"key": "norm-r-questdb-13", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:14:21Z"}
+{"key": "norm-r-questdb-13", "status": "claimed", "payload": null, "ts": "2026-07-12T15:14:21Z"}
+{"key": "norm-r-questdb-14", "status": "done", "payload": null, "ts": "2026-07-12T15:16:18Z"}
+{"key": "norm-r-questdb-13", "status": "done", "payload": null, "ts": "2026-07-12T15:20:52Z"}
+{"key": "norm-r-contrib-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:21:10Z"}
+{"key": "norm-r-contrib-02", "status": "claimed", "payload": null, "ts": "2026-07-12T15:21:10Z"}
+{"key": "norm-r-contrib-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:22:54Z"}
+{"key": "norm-r-contrib-01", "status": "claimed", "payload": null, "ts": "2026-07-12T15:22:54Z"}
+{"key": "norm-r-contrib-01", "status": "done", "payload": null, "ts": "2026-07-12T15:23:08Z"}
+{"key": "norm-r-contrib-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:27:26Z"}
+{"key": "norm-r-contrib-03", "status": "claimed", "payload": null, "ts": "2026-07-12T15:27:26Z"}
+{"key": "norm-r-contrib-02", "status": "done", "payload": null, "ts": "2026-07-12T15:29:32Z"}
+{"key": "norm-r-contrib-03", "status": "done", "payload": null, "ts": "2026-07-12T15:30:37Z"}
+{"key": "norm-r-contrib-04", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:32:13Z"}
+{"key": "norm-r-contrib-04", "status": "claimed", "payload": null, "ts": "2026-07-12T15:32:13Z"}
+{"key": "norm-r-contrib-05", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:32:23Z"}
+{"key": "norm-r-contrib-05", "status": "claimed", "payload": null, "ts": "2026-07-12T15:32:23Z"}
+{"key": "norm-r-contrib-05", "status": "done", "payload": null, "ts": "2026-07-12T15:32:33Z"}
+{"key": "norm-s-melee", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:33:16Z"}
+{"key": "norm-s-melee", "status": "claimed", "payload": null, "ts": "2026-07-12T15:33:16Z"}
+{"key": "norm-s-ranged", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:33:18Z"}
+{"key": "norm-s-ranged", "status": "claimed", "payload": null, "ts": "2026-07-12T15:33:18Z"}
+{"key": "norm-r-contrib-04", "status": "done", "payload": {"rows": 20}, "ts": "2026-07-12T15:34:14Z"}
+{"key": "norm-s-ranged", "status": "done", "payload": null, "ts": "2026-07-12T15:37:48Z"}
+{"key": "norm-s-melee", "status": "claimed", "payload": null, "ts": "2026-07-12T15:38:37Z"}
+{"key": "norm-s-melee", "status": "done", "payload": null, "ts": "2026-07-12T15:38:50Z"}
+{"key": "norm-s-ranged", "status": "claimed", "payload": null, "ts": "2026-07-12T15:39:00Z"}
+{"key": "norm-s-ranged", "status": "done", "payload": null, "ts": "2026-07-12T15:39:26Z"}
+{"key": "norm-s-magic", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:39:30Z"}
+{"key": "norm-s-magic", "status": "claimed", "payload": null, "ts": "2026-07-12T15:39:30Z"}
+{"key": "norm-s-prayer", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:40:10Z"}
+{"key": "norm-s-prayer", "status": "claimed", "payload": null, "ts": "2026-07-12T15:40:10Z"}
+{"key": "norm-s-melee", "status": "done", "payload": null, "ts": "2026-07-12T15:41:08Z"}
+{"key": "norm-s-prayer", "status": "claimed", "payload": null, "ts": "2026-07-12T15:41:34Z"}
+{"key": "norm-s-prayer", "status": "done", "payload": null, "ts": "2026-07-12T15:43:45Z"}
+{"key": "norm-s-mining", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:44:25Z"}
+{"key": "norm-s-mining", "status": "claimed", "payload": null, "ts": "2026-07-12T15:44:25Z"}
+{"key": "norm-s-magic", "status": "done", "payload": null, "ts": "2026-07-12T15:44:41Z"}
+{"key": "norm-s-smithing", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:44:59Z"}
+{"key": "norm-s-smithing", "status": "claimed", "payload": null, "ts": "2026-07-12T15:44:59Z"}
+{"key": "norm-s-mining", "status": "claimed", "payload": null, "ts": "2026-07-12T15:46:43Z"}
+{"key": "norm-s-smithing", "status": "claimed", "payload": null, "ts": "2026-07-12T15:47:33Z"}
+{"key": "norm-s-mining", "status": "done", "payload": null, "ts": "2026-07-12T15:47:44Z"}
+{"key": "norm-s-fishing", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:48:36Z"}
+{"key": "norm-s-fishing", "status": "claimed", "payload": null, "ts": "2026-07-12T15:48:36Z"}
+{"key": "norm-s-smithing", "status": "done", "payload": null, "ts": "2026-07-12T15:49:05Z"}
+{"key": "norm-s-cooking", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:49:38Z"}
+{"key": "norm-s-cooking", "status": "claimed", "payload": null, "ts": "2026-07-12T15:49:38Z"}
+{"key": "norm-s-smithing", "status": "done", "payload": null, "ts": "2026-07-12T15:52:35Z"}
+{"key": "norm-s-fishing", "status": "done", "payload": null, "ts": "2026-07-12T15:53:02Z"}
+{"key": "norm-s-cooking", "status": "done", "payload": null, "ts": "2026-07-12T15:53:23Z"}
+{"key": "norm-s-firemaking", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:53:48Z"}
+{"key": "norm-s-firemaking", "status": "claimed", "payload": null, "ts": "2026-07-12T15:53:48Z"}
+{"key": "norm-s-cooking", "status": "claimed", "payload": null, "ts": "2026-07-12T15:53:51Z"}
+{"key": "norm-s-woodcutting", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:53:56Z"}
+{"key": "norm-s-woodcutting", "status": "claimed", "payload": null, "ts": "2026-07-12T15:53:56Z"}
+{"key": "norm-s-cooking", "status": "done", "payload": null, "ts": "2026-07-12T15:54:16Z"}
+{"key": "norm-s-firemaking", "status": "claimed", "payload": null, "ts": "2026-07-12T15:54:50Z"}
+{"key": "norm-s-firemaking", "status": "done", "payload": null, "ts": "2026-07-12T15:56:22Z"}
+{"key": "norm-s-crafting", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:56:51Z"}
+{"key": "norm-s-crafting", "status": "claimed", "payload": null, "ts": "2026-07-12T15:56:51Z"}
+{"key": "norm-s-woodcutting", "status": "done", "payload": null, "ts": "2026-07-12T15:57:15Z"}
+{"key": "norm-s-runecraft", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T15:57:51Z"}
+{"key": "norm-s-runecraft", "status": "claimed", "payload": null, "ts": "2026-07-12T15:57:51Z"}
+{"key": "norm-s-fishing", "status": "claimed", "payload": null, "ts": "2026-07-12T15:58:42Z"}
+{"key": "norm-s-fishing", "status": "done", "payload": null, "ts": "2026-07-12T15:59:07Z"}
+{"key": "norm-s-woodcutting", "status": "claimed", "payload": null, "ts": "2026-07-12T15:59:40Z"}
+{"key": "norm-s-woodcutting", "status": "done", "payload": null, "ts": "2026-07-12T15:59:44Z"}
+{"key": "norm-s-crafting", "status": "claimed", "payload": null, "ts": "2026-07-12T15:59:50Z"}
+{"key": "norm-s-runecraft", "status": "claimed", "payload": null, "ts": "2026-07-12T16:00:32Z"}
+{"key": "norm-s-crafting", "status": "done", "payload": null, "ts": "2026-07-12T16:01:09Z"}
+{"key": "norm-s-herblore", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:01:53Z"}
+{"key": "norm-s-herblore", "status": "claimed", "payload": null, "ts": "2026-07-12T16:01:53Z"}
+{"key": "norm-s-runecraft", "status": "done", "payload": null, "ts": "2026-07-12T16:02:13Z"}
+{"key": "norm-s-crafting", "status": "done", "payload": null, "ts": "2026-07-12T16:05:45Z"}
+{"key": "norm-s-runecraft", "status": "done", "payload": null, "ts": "2026-07-12T16:05:56Z"}
+{"key": "norm-s-farming", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:06:32Z"}
+{"key": "norm-s-farming", "status": "claimed", "payload": null, "ts": "2026-07-12T16:06:32Z"}
+{"key": "norm-s-herblore", "status": "claimed", "payload": null, "ts": "2026-07-12T16:06:44Z"}
+{"key": "norm-s-farming", "status": "done", "payload": null, "ts": "2026-07-12T16:06:45Z"}
+{"key": "norm-s-herblore", "status": "done", "payload": null, "ts": "2026-07-12T16:06:53Z"}
+{"key": "norm-s-farming", "status": "claimed", "payload": null, "ts": "2026-07-12T16:07:26Z"}
+{"key": "norm-s-slayer", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:07:29Z"}
+{"key": "norm-s-slayer", "status": "claimed", "payload": null, "ts": "2026-07-12T16:07:29Z"}
+{"key": "norm-s-thieving", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:07:38Z"}
+{"key": "norm-s-thieving", "status": "claimed", "payload": null, "ts": "2026-07-12T16:07:38Z"}
+{"key": "norm-s-farming", "status": "done", "payload": null, "ts": "2026-07-12T16:07:55Z"}
+{"key": "norm-s-slayer", "status": "claimed", "payload": null, "ts": "2026-07-12T16:08:42Z"}
+{"key": "norm-s-thieving", "status": "done", "payload": null, "ts": "2026-07-12T16:11:18Z"}
+{"key": "norm-s-herblore", "status": "done", "payload": null, "ts": "2026-07-12T16:11:52Z"}
+{"key": "norm-s-agility", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:11:52Z"}
+{"key": "norm-s-agility", "status": "claimed", "payload": null, "ts": "2026-07-12T16:11:52Z"}
+{"key": "norm-s-slayer", "status": "done", "payload": null, "ts": "2026-07-12T16:12:46Z"}
+{"key": "norm-s-thieving", "status": "claimed", "payload": null, "ts": "2026-07-12T16:12:51Z"}
+{"key": "norm-s-slayer", "status": "done", "payload": null, "ts": "2026-07-12T16:13:04Z"}
+{"key": "norm-s-thieving", "status": "done", "payload": null, "ts": "2026-07-12T16:13:04Z"}
+{"key": "norm-s-hunter", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:13:39Z"}
+{"key": "norm-s-hunter", "status": "claimed", "payload": null, "ts": "2026-07-12T16:13:39Z"}
+{"key": "norm-s-agility", "status": "claimed", "payload": null, "ts": "2026-07-12T16:13:42Z"}
+{"key": "norm-s-hunter", "status": "claimed", "payload": null, "ts": "2026-07-12T16:14:08Z"}
+{"key": "norm-s-agility", "status": "done", "payload": null, "ts": "2026-07-12T16:14:45Z"}
+{"key": "norm-s-construction", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:15:28Z"}
+{"key": "norm-s-construction", "status": "claimed", "payload": null, "ts": "2026-07-12T16:15:29Z"}
+{"key": "norm-s-agility", "status": "done", "payload": null, "ts": "2026-07-12T16:18:13Z"}
+{"key": "norm-s-hunter", "status": "done", "payload": null, "ts": "2026-07-12T16:18:41Z"}
+{"key": "norm-s-hunter", "status": "done", "payload": null, "ts": "2026-07-12T16:18:51Z"}
+{"key": "norm-s-construction", "status": "claimed", "payload": null, "ts": "2026-07-12T16:19:03Z"}
+{"key": "norm-s-construction", "status": "done", "payload": null, "ts": "2026-07-12T16:19:32Z"}
+{"key": "norm-s-fletching", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:19:37Z"}
+{"key": "norm-s-fletching", "status": "claimed", "payload": null, "ts": "2026-07-12T16:19:37Z"}
+{"key": "norm-s-fletching", "status": "claimed", "payload": null, "ts": "2026-07-12T16:19:50Z"}
+{"key": "norm-q-asgarnia-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:20:28Z"}
+{"key": "norm-q-asgarnia-01", "status": "claimed", "payload": null, "ts": "2026-07-12T16:20:28Z"}
+{"key": "norm-s-fletching", "status": "done", "payload": null, "ts": "2026-07-12T16:23:33Z"}
+{"key": "norm-q-asgarnia-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:24:31Z"}
+{"key": "norm-q-asgarnia-02", "status": "claimed", "payload": null, "ts": "2026-07-12T16:24:32Z"}
+{"key": "norm-s-construction", "status": "done", "payload": null, "ts": "2026-07-12T16:24:45Z"}
+{"key": "norm-s-fletching", "status": "done", "payload": null, "ts": "2026-07-12T16:25:18Z"}
+{"key": "norm-q-asgarnia-01", "status": "done", "payload": null, "ts": "2026-07-12T16:25:33Z"}
+{"key": "norm-q-asgarnia-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:26:28Z"}
+{"key": "norm-q-asgarnia-03", "status": "claimed", "payload": null, "ts": "2026-07-12T16:26:28Z"}
+{"key": "norm-q-asgarnia-02", "status": "done", "payload": null, "ts": "2026-07-12T16:30:39Z"}
+{"key": "norm-q-asgarnia-03", "status": "done", "payload": null, "ts": "2026-07-12T16:32:05Z"}
+{"key": "norm-q-asgarnia-05", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:33:06Z"}
+{"key": "norm-q-asgarnia-05", "status": "claimed", "payload": null, "ts": "2026-07-12T16:33:06Z"}
+{"key": "norm-q-asgarnia-04", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:38:31Z"}
+{"key": "norm-q-asgarnia-04", "status": "claimed", "payload": null, "ts": "2026-07-12T16:38:31Z"}
+{"key": "norm-q-asgarnia-04", "status": "done", "payload": null, "ts": "2026-07-12T16:38:39Z"}
+{"key": "norm-q-asgarnia-05", "status": "done", "payload": null, "ts": "2026-07-12T16:39:57Z"}
+{"key": "norm-q-asgarnia-07", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:41:03Z"}
+{"key": "norm-q-asgarnia-07", "status": "claimed", "payload": null, "ts": "2026-07-12T16:41:04Z"}
+{"key": "norm-q-asgarnia-06", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:45:43Z"}
+{"key": "norm-q-asgarnia-06", "status": "claimed", "payload": null, "ts": "2026-07-12T16:45:43Z"}
+{"key": "norm-q-asgarnia-06", "status": "done", "payload": null, "ts": "2026-07-12T16:45:55Z"}
+{"key": "norm-q-asgarnia-08", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:46:37Z"}
+{"key": "norm-q-asgarnia-08", "status": "claimed", "payload": null, "ts": "2026-07-12T16:46:37Z"}
+{"key": "norm-q-asgarnia-07", "status": "done", "payload": null, "ts": "2026-07-12T16:47:57Z"}
+{"key": "norm-q-asgarnia-08", "status": "done", "payload": null, "ts": "2026-07-12T16:52:18Z"}
+{"key": "norm-q-desert-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:56:54Z"}
+{"key": "norm-q-desert-01", "status": "claimed", "payload": null, "ts": "2026-07-12T16:56:55Z"}
+{"key": "norm-q-desert-01", "status": "done", "payload": null, "ts": "2026-07-12T16:57:05Z"}
+{"key": "norm-q-desert-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:57:20Z"}
+{"key": "norm-q-desert-02", "status": "claimed", "payload": null, "ts": "2026-07-12T16:57:20Z"}
+{"key": "norm-q-desert-02", "status": "done", "payload": null, "ts": "2026-07-12T16:57:24Z"}
+{"key": "norm-q-desert-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:58:06Z"}
+{"key": "norm-q-desert-03", "status": "claimed", "payload": null, "ts": "2026-07-12T16:58:06Z"}
+{"key": "norm-q-desert-04", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T16:58:20Z"}
+{"key": "norm-q-desert-04", "status": "claimed", "payload": null, "ts": "2026-07-12T16:58:20Z"}
+{"key": "norm-q-desert-03", "status": "done", "payload": null, "ts": "2026-07-12T17:03:46Z"}
+{"key": "norm-q-fremennik-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:04:33Z"}
+{"key": "norm-q-fremennik-01", "status": "claimed", "payload": null, "ts": "2026-07-12T17:04:33Z"}
+{"key": "norm-q-desert-04", "status": "done", "payload": null, "ts": "2026-07-12T17:06:01Z"}
+{"key": "norm-q-fremennik-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:06:41Z"}
+{"key": "norm-q-fremennik-02", "status": "claimed", "payload": null, "ts": "2026-07-12T17:06:41Z"}
+{"key": "norm-q-fremennik-01", "status": "done", "payload": null, "ts": "2026-07-12T17:08:23Z"}
+{"key": "oppgran:depth:01", "status": "pending", "payload": {"note": "quest monoliths: quest-sheep-shearer..quest-goblin-diplomacy (mirrors og-g1 bounds). 12 quests in route order, 1 GE-violation FIX (quest-sheep-shearer recommends buying wool from GE).", "step_ids": ["quest-sheep-shearer", "quest-the-restless-ghost", "quest-x-marks-the-spot", "quest-a-porcine-of-interest", "quest-a-souls-bane", "quest-death-plateau", "quest-dorics-quest", "quest-dragon-slayer-i", "quest-dwarf-cannon", "quest-fight-arena", "quest-gertrudes-cat", "quest-goblin-diplomacy"], "fix_ids": ["quest-sheep-shearer"], "track": "granularize"}, "ts": "2026-07-12T17:10:03Z"}
+{"key": "oppgran:depth:02", "status": "pending", "payload": {"note": "quest monoliths: quest-hazeel-cult..quest-rag-and-bone-man-i (mirrors og-g2 bounds). 12 quests, 0 GE-violation flags in this slice.", "step_ids": ["quest-hazeel-cult", "quest-his-faithful-servants", "quest-icthlarins-little-helper", "quest-imp-catcher", "quest-making-history", "quest-misthalin-mystery", "quest-monks-friend", "quest-murder-mystery", "quest-natural-history-quiz", "quest-plague-city", "quest-biohazard", "quest-rag-and-bone-man-i"], "fix_ids": [], "track": "granularize"}, "ts": "2026-07-12T17:10:03Z"}
+{"key": "oppgran:depth:03", "status": "pending", "payload": {"note": "quest monoliths: quest-the-fremennik-trials..quest-the-golem (mirrors og-g3 bounds). Crosses s2/s3 boundary; 6 GE-violation FIX flags in the s3 tail (fishing-contest, knights-sword, sleeping-giants, creature-of-fenkenstrain, mountain-daughter, the-golem). NOTE for og-g3: my enumeration counts 13 quest ids in this window (incl. rfd-intro), one more than the manifests stated count of 12 -- confirm whether rfd-intro is in/out of scope before atomizing.", "step_ids": ["quest-the-fremennik-trials", "quest-tree-gnome-village", "quest-vampyre-slayer", "quest-waterfall-quest", "quest-witchs-potion", "quest-jungle-potion", "rfd-intro", "quest-fishing-contest", "quest-the-knights-sword", "quest-sleeping-giants", "quest-creature-of-fenkenstrain", "quest-mountain-daughter", "quest-the-golem"], "fix_ids": ["quest-fishing-contest", "quest-the-knights-sword", "quest-sleeping-giants", "quest-creature-of-fenkenstrain", "quest-mountain-daughter", "quest-the-golem"], "track": "granularize"}, "ts": "2026-07-12T17:10:03Z"}
+{"key": "oppgran:depth:04", "status": "pending", "payload": {"note": "quest monoliths: quest-elemental-workshop-i..quest-the-giant-dwarf (mirrors og-g4 bounds). 12 quests, 11 GE-violation FIX flags (elemental-workshop-i/ii, tribal-totem, underground-pass, in-search-of-the-myreque, the-grand-tree, eagles-peak, rfd-goblins, rfd-awowogei, unlock-barrows, haunted-mine) -- heaviest GE-fix concentration of any bundle; quest-family-crest, quest-lost-city, quest-in-aid-of-the-myreque(FIX), quest-the-feud, quest-shadow-storm, quest-the-giant-dwarf(FIX) also present, total count exceeds og-g4 stated 12 -- confirm exact window before atomizing.", "step_ids": ["quest-elemental-workshop-i", "quest-elemental-workshop-ii", "quest-tribal-totem", "quest-underground-pass", "quest-in-search-of-the-myreque", "quest-the-grand-tree", "quest-eagles-peak", "quest-mm", "rfd-goblins", "rfd-awowogei", "unlock-barrows", "quest-haunted-mine", "quest-family-crest", "quest-lost-city", "quest-in-aid-of-the-myreque", "quest-the-feud", "quest-shadow-storm", "quest-the-giant-dwarf"], "fix_ids": ["quest-elemental-workshop-i", "quest-elemental-workshop-ii", "quest-tribal-totem", "quest-underground-pass", "quest-in-search-of-the-myreque", "quest-the-grand-tree", "quest-eagles-peak", "rfd-goblins", "rfd-awowogei", "unlock-barrows", "quest-haunted-mine", "quest-in-aid-of-the-myreque", "quest-the-giant-dwarf"], "track": "granularize"}, "ts": "2026-07-12T17:10:03Z"}
+{"key": "oppgran:depth:05", "status": "pending", "payload": {"note": "quest monoliths: quest-the-hand-in-the-sand..quest-temple-of-ikov (mirrors og-g5 bounds). 12 quests from s4, 0 GE-violation flags (s4 slice had none flagged true).", "step_ids": ["quest-the-hand-in-the-sand", "quest-forgettable-tale", "quest-ghosts-ahoy", "quest-tears-of-guthix", "quest-the-garden-of-death", "quest-enlightened-journey", "quest-garden-of-tranquillity", "quest-enakhras-lament", "quest-ratcatchers", "quest-between-a-rock", "quest-spirits-of-the-elid", "quest-temple-of-ikov"], "fix_ids": [], "track": "granularize"}, "ts": "2026-07-12T17:10:30Z"}
+{"key": "oppgran:depth:06", "status": "pending", "payload": {"note": "quest monoliths: quest-rum-deal..quest-watchtower (mirrors og-g6 bounds, 7 quests). 0 GE-violation flags. quest-swan-song/quest-rfd-start/quest-dt classified atomic not quest-monolith in s4 -- excluded from this backlog (already fine-grained).", "step_ids": ["quest-rum-deal", "quest-tai-bwo", "quest-big-chompy", "quest-zogre-flesh-eaters", "quest-shades-of-mortton", "quest-the-dig-site", "quest-watchtower"], "fix_ids": [], "track": "granularize"}, "ts": "2026-07-12T17:10:30Z"}
+{"key": "oppgran:depth:07", "status": "pending", "payload": {"note": "train bands segment 1 (mirrors og-g7 bounds): train-strength-60..train-hunter-29, 15 bands from s2, exact match to stated count. 0 GE-violation flags in this slice.", "step_ids": ["train-strength-60", "train-prayer-43", "train-farming-17", "train-defence-40", "train-defence-60", "train-attack-60", "train-mining-30", "train-ranged-30", "train-magic-25", "train-fletching-20", "train-firemaking-15", "train-ranged-40", "train-ranged-55", "train-ranged-70", "train-hunter-29"], "fix_ids": [], "track": "granularize", "note2": "cap of 12/bundle waived here to preserve og-g7 pre-cordoned shape per brief override clause"}, "ts": "2026-07-12T17:10:30Z"}
+{"key": "oppgran:depth:08", "status": "pending", "payload": {"note": "train bands segment 2 (mirrors og-g8 bounds): train-fishing-40..train-magic-55, 15 bands from s3, exact match to stated count. 4 GE-violation FIX flags (train-fishing-40, train-firemaking-30, train-woodcutting-45, train-crafting-54).", "step_ids": ["train-fishing-40", "train-fishing-58", "train-fishing-70", "train-woodcutting-30", "train-firemaking-30", "train-crafting-40", "train-magic-43", "train-hunter-43", "train-woodcutting-45", "train-firemaking-50", "train-smithing-40", "train-mining-45", "train-crafting-54", "train-prayer-52", "train-magic-55"], "fix_ids": ["train-fishing-40", "train-firemaking-30", "train-woodcutting-45", "train-crafting-54"], "track": "granularize", "note2": "cap of 12/bundle waived here to preserve og-g8 pre-cordoned shape"}, "ts": "2026-07-12T17:10:30Z"}
+{"key": "oppgran:depth:09", "status": "pending", "payload": {"note": "train bands segment 3 (mirrors og-g9 bounds): train-magic-70..train-thieving-55, 13 bands, all from s3 tail. 2 GE-violation FIX flags (train-magic-70, train-cooking-40). FLAG for og-g9: stated last-id train-herblore-38 is classified atomic (not train-band) in s4 and sits far downstream past several quests -- my s3-only enumeration stops at train-thieving-55 (13 items, matching stated count exactly); train-slayer-50/train-smithing-60/synth-herblore-52-2/train-herblore-38 from s4 are NOT included here (unclear if in-scope, route-position ambiguous due to background-weave checkpoint numbering) -- confirm before atomizing to avoid double-claiming vs a possible og-g9-adjacent gap.", "step_ids": ["train-magic-70", "train-attack-70", "train-strength-70", "train-defence-70", "train-cooking-40", "train-cooking-58", "train-prayer-74", "synth-defence-75-6", "synth-magic-75-8", "synth-attack-75-4", "synth-strength-75-5", "train-cooking-74", "train-thieving-55"], "fix_ids": ["train-magic-70", "train-cooking-40"], "track": "granularize", "note2": "cap of 12/bundle waived here to preserve og-g9 pre-cordoned shape"}, "ts": "2026-07-12T17:10:30Z"}
+{"key": "oppgran:depth:10", "status": "pending", "payload": {"note": "travel-implicit pass (mirrors og-g10 scope). Cross-diff finding: across all four wave-1 classify slices (s1-s4, 205 rows total) only ONE step carries grain_class travel-implicit: ori-t-07-walk-to-survival-expert (tutorial island, zone lumbridge). og-g10 backlog is much smaller than its broad framing suggested -- confirm no travel-implicit rows exist beyond the classified 205-step range before treating this as complete.", "step_ids": ["ori-t-07-walk-to-survival-expert"], "fix_ids": [], "track": "granularize"}, "ts": "2026-07-12T17:10:31Z"}
+{"key": "oppgran:depth:11", "status": "pending", "payload": {"note": "opportunistic-map shortlist, ranks 1-7 of 13 (mirrors og-o1 top-half scope). Ranked by (route-distance saved, consumer criticality: goal-reqs > training-gate > supply top-up). 4 items from the raw opp-surface pool (raw_monkfish, ranarr_seed, volcanic_ash, and the pps-04 edge of coins) are EXCLUDED as known source-after-consumer route faults -- see notes.", "items": [{"rank": 1, "item": "food", "why": "no producer row exists; 3 consumers (ctr-05-kill-barbarians, ctr-07a-sand-crabs, ctr-07b-early-slayer) all training-gate, widest fan-out gap in the pool"}, {"rank": 2, "item": "compost", "why": "no producer row exists; 2 consumers (bg-farm-allotment, farm-herb-patch-guam) feeding the ranarr/prayer-potion supply chain"}, {"rank": 3, "item": "food_monkfish", "why": "cook-monkfish (s4) precedes barrows consumer (s4) in order -- goal-reqs criticality (feeds milestone-barrows); note its own input raw_monkfish is fault-blocked, ground the cook-monkfish->barrows edge only"}, {"rank": 4, "item": "prayer_potion_4", "why": "brew-prayer-potion sits immediately AFTER milestone-barrows header in s4 order -- verify this precedes actual barrows-run consumption, not just the milestone announcement, before grounding as in-position"}, {"rank": 5, "item": "guam_seed", "why": "no producer row; single consumer farm-herb-patch-guam, supply top-up tier"}, {"rank": 6, "item": "seeds", "why": "no producer row (generic); single consumer bg-farm-allotment, supply top-up tier"}, {"rank": 7, "item": "nature_rune", "why": "no producer row; consumer embed-alch-smithing not located in any wave-1 classified slice -- may be outside the 205-step classified range, needs a locate pass before grounding"}], "track": "opportunistic-map"}, "ts": "2026-07-12T17:10:54Z"}
+{"key": "oppgran:depth:12", "status": "pending", "payload": {"note": "opportunistic-map shortlist, ranks 8-13 of 13 (mirrors og-o2 bottom-half scope). Lower-payoff items, several already well-placed by the router (confirm-only, not weave-worthy).", "items": [{"rank": 8, "item": "coins", "why": "ctr-02-kill-cows (s2) source feeds ctr-03-buy-scimitar (s4, very late) -- valid long-carry edge, but coins are fungible/persistent so grounding value is low; NOTE the coins->pps-04-source-vials edge is excluded, see fault list"}, {"rank": 9, "item": "vial_of_water", "why": "producer pps-04-source-vials exists but consumers[] is empty in opp-surface -- data gap, likely implicit brew-prayer-potion consumer never wired; low actionability until the edge is added"}, {"rank": 10, "item": "snape_grass", "why": "gather-snape-grass (s1) already precedes brew-prayer-potion (s4) by design as part of the prayer-pot-supply-coarse background chain -- verdict: no-window, already optimally pre-staged, grounding = confirm zone/tile only"}, {"rank": 11, "item": "ultracompost", "why": "setup-ultracompost (s1) already precedes farm-ranarr-patch (s4) via the same background chain -- verdict: no-window, confirm-only"}, {"rank": 12, "item": "ranarr_weed", "why": "farm-ranarr-patch (s4 early) precedes brew-prayer-potion (s4 late) in order -- verdict: no-window/already-fine, confirm-only"}, {"rank": 13, "item": "pineapple", "why": "source-pineapples-charter is immediately adjacent to consumer setup-ultracompost in s1 array order -- verdict: no-window, already maximally tight, confirm zone/tile only"}], "excluded_no_consumer": ["allotment_produce", "bones", "cowhide", "feather", "guam_weed", "scimitar_best_tier"], "excluded_route_fault": ["raw_monkfish (gather-monkfish source appears AFTER cook-monkfish consumer in s4 order)", "ranarr_seed (pps-02-steal-ranarr-seeds source appears AFTER farm-ranarr-patch consumer in s4 order)", "volcanic_ash (gather-volcanic-ash source in s2 appears AFTER setup-ultracompost consumer in s1 order)", "coins pps-04-source-vials edge (ctr-02-kill-cows source in s2 appears AFTER pps-04-source-vials consumer in s1 order)"], "track": "opportunistic-map"}, "ts": "2026-07-12T17:10:55Z"}
+{"key": "norm-q-fremennik-02", "status": "done", "payload": null, "ts": "2026-07-12T17:12:27Z"}
+{"key": "norm-q-fremennik-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:13:18Z"}
+{"key": "norm-q-fremennik-03", "status": "claimed", "payload": null, "ts": "2026-07-12T17:13:18Z"}
+{"key": "norm-q-fremennik-03", "status": "done", "payload": null, "ts": "2026-07-12T17:13:28Z"}
+{"key": "norm-q-kandarin-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:14:11Z"}
+{"key": "norm-q-kandarin-02", "status": "claimed", "payload": null, "ts": "2026-07-12T17:14:11Z"}
+{"key": "oppgran:depth:01", "status": "claimed", "payload": null, "ts": "2026-07-12T17:15:21Z"}
+{"key": "oppgran:depth:02", "status": "claimed", "payload": null, "ts": "2026-07-12T17:16:11Z"}
+{"key": "norm-q-kandarin-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:19:05Z"}
+{"key": "norm-q-kandarin-01", "status": "claimed", "payload": null, "ts": "2026-07-12T17:19:05Z"}
+{"key": "norm-q-kandarin-01", "status": "done", "payload": null, "ts": "2026-07-12T17:19:12Z"}
+{"key": "norm-q-kandarin-02", "status": "done", "payload": null, "ts": "2026-07-12T17:19:33Z"}
+{"key": "norm-q-kandarin-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:20:05Z"}
+{"key": "norm-q-kandarin-03", "status": "claimed", "payload": null, "ts": "2026-07-12T17:20:05Z"}
+{"key": "norm-q-kandarin-04", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:20:16Z"}
+{"key": "norm-q-kandarin-04", "status": "claimed", "payload": null, "ts": "2026-07-12T17:20:16Z"}
+{"key": "oppgran:depth:01", "status": "done", "payload": {"note": "og-g1: 12 quest monoliths atomized (quest-sheep-shearer..quest-goblin-diplomacy), 152 atoms total, 18 \"??\" placeholders. 1 GE-violation FIX applied (quest-sheep-shearer, gather+produce wool instead of GE buy) plus 1 additional GE-mention found+fixed beyond the pre-flagged set (quest-gertrudes-cat seasoned-sardine). 2 genuine branch{} pairs authored (goblin-diplomacy mail-source + redberry-source). Contributed 12 oppgran:atoms:<quest-step-id> rows via contribute --file."}, "ts": "2026-07-12T17:25:19Z"}
+{"key": "norm-q-kandarin-03", "status": "done", "payload": null, "ts": "2026-07-12T17:26:05Z"}
+{"key": "norm-q-kandarin-05", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:26:55Z"}
+{"key": "norm-q-kandarin-05", "status": "claimed", "payload": null, "ts": "2026-07-12T17:26:55Z"}
+{"key": "oppgran:depth:03", "status": "claimed", "payload": null, "ts": "2026-07-12T17:27:04Z"}
+{"key": "norm-q-kandarin-04", "status": "done", "payload": null, "ts": "2026-07-12T17:28:07Z"}
+{"key": "oppgran:depth:02", "status": "done", "payload": {"contributed": ["oppgran:atoms:quest-hazeel-cult", "oppgran:atoms:quest-his-faithful-servants", "oppgran:atoms:quest-icthlarins-little-helper", "oppgran:atoms:quest-imp-catcher", "oppgran:atoms:quest-making-history", "oppgran:atoms:quest-misthalin-mystery", "oppgran:atoms:quest-monks-friend", "oppgran:atoms:quest-murder-mystery", "oppgran:atoms:quest-natural-history-quiz", "oppgran:atoms:quest-plague-city", "oppgran:atoms:quest-biohazard", "oppgran:atoms:quest-rag-and-bone-man-i"], "atom_count": 188, "ge_violation_found": ["quest-imp-catcher"]}, "ts": "2026-07-12T17:28:34Z"}
+{"key": "norm-q-kandarin-06", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:28:36Z"}
+{"key": "norm-q-kandarin-06", "status": "claimed", "payload": null, "ts": "2026-07-12T17:28:36Z"}
+{"key": "oppgran:depth:04", "status": "claimed", "payload": null, "ts": "2026-07-12T17:31:29Z"}
+{"key": "norm-q-kandarin-06", "status": "done", "payload": null, "ts": "2026-07-12T17:33:04Z"}
+{"key": "norm-q-karamja-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:33:40Z"}
+{"key": "norm-q-karamja-01", "status": "claimed", "payload": null, "ts": "2026-07-12T17:33:40Z"}
+{"key": "oppgran:depth:03", "status": "done", "payload": {"status": "complete", "result": "12 quests atomized (og-g3), 212 atoms total, rfd-intro confirmed OUT of scope (already atomic per route-grand.json atom field), 6 pre-flagged GE-violation fix_ids all confirmed FALSE POSITIVES (zero GE item-buy language on any of the 6 fetched pages)"}, "ts": "2026-07-12T17:35:42Z"}
+{"key": "oppgran:depth:05", "status": "claimed", "payload": null, "ts": "2026-07-12T17:37:01Z"}
+{"key": "norm-q-karamja-01", "status": "done", "payload": {"note": "2 quest-expansion rows contributed: tribal-totem (11 atoms/4 checkpoints), barbarian-training (29 atoms/8 checkpoints)"}, "ts": "2026-07-12T17:37:51Z"}
+{"key": "norm-q-kandarin-05", "status": "done", "payload": null, "ts": "2026-07-12T17:37:51Z"}
+{"key": "norm-q-kourend-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:38:22Z"}
+{"key": "norm-q-kourend-01", "status": "claimed", "payload": null, "ts": "2026-07-12T17:38:22Z"}
+{"key": "norm-q-kourend-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:38:59Z"}
+{"key": "norm-q-kourend-02", "status": "claimed", "payload": null, "ts": "2026-07-12T17:38:59Z"}
+{"key": "norm-q-kourend-01", "status": "done", "payload": null, "ts": "2026-07-12T17:43:48Z"}
+{"key": "norm-q-misc-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:44:32Z"}
+{"key": "norm-q-misc-01", "status": "claimed", "payload": null, "ts": "2026-07-12T17:44:32Z"}
+{"key": "norm-q-kourend-02", "status": "done", "payload": null, "ts": "2026-07-12T17:44:50Z"}
+{"key": "oppgran:depth:04", "status": "done", "payload": {"contributed": ["oppgran:atoms:quest-elemental-workshop-i", "oppgran:atoms:quest-elemental-workshop-ii", "oppgran:atoms:quest-tribal-totem", "oppgran:atoms:quest-underground-pass", "oppgran:atoms:quest-in-search-of-the-myreque", "oppgran:atoms:quest-the-grand-tree", "oppgran:atoms:quest-eagles-peak", "oppgran:atoms:quest-haunted-mine", "oppgran:atoms:quest-family-crest", "oppgran:atoms:quest-in-aid-of-the-myreque", "oppgran:atoms:quest-shadow-storm", "oppgran:atoms:quest-the-giant-dwarf"], "atom_count": 179, "ge_violation_found": ["quest-in-search-of-the-myreque"], "ge_violations_false_positive": ["quest-elemental-workshop-i", "quest-elemental-workshop-ii", "quest-tribal-totem", "quest-underground-pass", "quest-the-grand-tree", "quest-eagles-peak", "quest-haunted-mine", "quest-in-aid-of-the-myreque", "quest-the-giant-dwarf"], "scope_confirmed": "12 quest-* steps without atom{} in route-grand indices 115-155 (quest-mm/quest-lost-city/quest-the-feud already had atom{} and were excluded; rfd-goblins/rfd-awowogei/unlock-barrows excluded as non quest-* prefixed)"}, "ts": "2026-07-12T17:45:08Z"}
+{"key": "oppgran:depth:06", "status": "claimed", "payload": null, "ts": "2026-07-12T17:48:01Z"}
+{"key": "norm-q-misc-01", "status": "done", "payload": null, "ts": "2026-07-12T17:50:30Z"}
+{"key": "norm-q-misc-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:50:33Z"}
+{"key": "norm-q-misc-02", "status": "claimed", "payload": null, "ts": "2026-07-12T17:50:33Z"}
+{"key": "norm-q-misc-02", "status": "done", "payload": null, "ts": "2026-07-12T17:50:33Z"}
+{"key": "norm-q-misc-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:51:13Z"}
+{"key": "norm-q-misc-03", "status": "claimed", "payload": null, "ts": "2026-07-12T17:51:13Z"}
+{"key": "norm-q-misc-04", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:51:16Z"}
+{"key": "norm-q-misc-04", "status": "claimed", "payload": null, "ts": "2026-07-12T17:51:16Z"}
+{"key": "oppgran:depth:05", "status": "done", "payload": {"contributed": ["oppgran:atoms:quest-the-hand-in-the-sand", "oppgran:atoms:quest-forgettable-tale", "oppgran:atoms:quest-ghosts-ahoy", "oppgran:atoms:quest-tears-of-guthix", "oppgran:atoms:quest-the-garden-of-death", "oppgran:atoms:quest-enlightened-journey", "oppgran:atoms:quest-garden-of-tranquillity", "oppgran:atoms:quest-enakhras-lament", "oppgran:atoms:quest-ratcatchers", "oppgran:atoms:quest-between-a-rock", "oppgran:atoms:quest-spirits-of-the-elid", "oppgran:atoms:quest-temple-of-ikov"], "atom_count": 221, "ge_violation_found": ["quest-enlightened-journey"]}, "ts": "2026-07-12T17:52:57Z"}
+{"key": "oppgran:depth:06", "status": "done", "payload": {"contributed": 7, "skipped": 0}, "ts": "2026-07-12T17:55:08Z"}
+{"key": "norm-q-misc-04", "status": "done", "payload": null, "ts": "2026-07-12T17:56:42Z"}
+{"key": "norm-q-misc-05", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T17:57:17Z"}
+{"key": "norm-q-misc-05", "status": "claimed", "payload": null, "ts": "2026-07-12T17:57:17Z"}
+{"key": "norm-q-misc-03", "status": "done", "payload": null, "ts": "2026-07-12T17:58:29Z"}
+{"key": "norm-q-misc-06", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:06:31Z"}
+{"key": "norm-q-misc-06", "status": "claimed", "payload": null, "ts": "2026-07-12T18:06:31Z"}
+{"key": "norm-q-misc-06", "status": "done", "payload": null, "ts": "2026-07-12T18:06:44Z"}
+{"key": "norm-q-misc-05", "status": "done", "payload": null, "ts": "2026-07-12T18:07:37Z"}
+{"key": "norm-q-misc-07", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:08:10Z"}
+{"key": "norm-q-misc-07", "status": "claimed", "payload": null, "ts": "2026-07-12T18:08:10Z"}
+{"key": "oppgran:depth:07", "status": "claimed", "payload": null, "ts": "2026-07-12T18:08:39Z"}
+{"key": "oppgran:depth:07", "status": "done", "payload": {"contributed": ["oppgran:atoms:train-strength-60", "oppgran:atoms:train-prayer-43", "oppgran:atoms:train-farming-17", "oppgran:atoms:train-defence-40", "oppgran:atoms:train-defence-60", "oppgran:atoms:train-attack-60", "oppgran:atoms:train-mining-30", "oppgran:atoms:train-ranged-30", "oppgran:atoms:train-magic-25", "oppgran:atoms:train-fletching-20", "oppgran:atoms:train-firemaking-15", "oppgran:atoms:train-ranged-40", "oppgran:atoms:train-ranged-55", "oppgran:atoms:train-ranged-70", "oppgran:atoms:train-hunter-29"], "atom_count": 57, "placeholder_count": 59, "target_mismatches_fixed": ["train-strength-60 (moss_giant->hill_giant)", "train-attack-60 (moss_giant->hill_giant)", "train-defence-60 (moss_giant->flesh_crawler)", "train-defence-40 (ref Melee.s10->Barbarian.s0)", "train-ranged-30/40/55/70 (abstract crab->Sand Crab @ Hosidius)", "train-magic-25 (combat_spell_training placeholder->sand_crab)", "train-hunter-29 (fabricated Tropical Wagtail claim, zero hits in full page->real 3-phase Feldip/Piscatoris/Pandemonium progression)"], "xp_recomputed_from_experience_table_s2": true}, "ts": "2026-07-12T18:08:53Z"}
+{"key": "oppgran:depth:08", "status": "claimed", "payload": null, "ts": "2026-07-12T18:10:49Z"}
+{"key": "oppgran:depth:08", "status": "done", "payload": {"agent": "og-g8", "bands": 15, "atoms": 49, "fix_ids_confirmed": ["train-firemaking-30", "train-crafting-54"], "fix_ids_false_positive": ["train-fishing-40", "train-woodcutting-45"]}, "ts": "2026-07-12T18:11:02Z"}
+{"key": "norm-q-misc-08", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:14:49Z"}
+{"key": "norm-q-misc-08", "status": "claimed", "payload": null, "ts": "2026-07-12T18:14:49Z"}
+{"key": "norm-q-misc-08", "status": "done", "payload": null, "ts": "2026-07-12T18:14:50Z"}
+{"key": "norm-q-misc-09", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:15:34Z"}
+{"key": "norm-q-misc-09", "status": "claimed", "payload": null, "ts": "2026-07-12T18:15:34Z"}
+{"key": "norm-q-misc-07", "status": "done", "payload": null, "ts": "2026-07-12T18:16:09Z"}
+{"key": "oppgran:depth:10", "status": "claimed", "payload": null, "ts": "2026-07-12T18:16:49Z"}
+{"key": "oppgran:depth:10", "status": "done", "payload": {"agent": "og-g10", "result": "1 travel-implicit target confirmed already-atomic, enriched with grounded tile coords (2 candidates, version-ambiguous, flagged for Lane 5); no new atoms authored"}, "ts": "2026-07-12T18:16:49Z"}
+{"key": "norm-q-misc-10", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:16:51Z"}
+{"key": "norm-q-misc-10", "status": "claimed", "payload": null, "ts": "2026-07-12T18:16:51Z"}
+{"key": "oppgran:depth:11", "status": "claimed", "payload": null, "ts": "2026-07-12T18:19:18Z"}
+{"key": "norm-q-misc-09", "status": "done", "payload": null, "ts": "2026-07-12T18:21:38Z"}
+{"key": "oppgran:depth:12", "status": "claimed", "payload": null, "ts": "2026-07-12T18:21:53Z"}
+{"key": "norm-q-misc-11", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:22:09Z"}
+{"key": "norm-q-misc-11", "status": "claimed", "payload": null, "ts": "2026-07-12T18:22:09Z"}
+{"key": "oppgran:depth:11", "status": "done", "payload": {"contributed": 7, "proposed_rows": 5, "reused_existing": 2, "keys": ["oppgran:opp:food@barbarian-village", "oppgran:opp:compost@falador", "oppgran:opp:food_monkfish@catherby", "oppgran:opp:prayer_potion_4@global", "oppgran:opp:guam_seed@draynor-village", "oppgran:opp:seeds@draynor-village", "oppgran:opp:nature_rune@nature-altar"]}, "ts": "2026-07-12T18:24:58Z"}
+{"key": "oppgran:depth:12", "status": "done", "payload": {"agent": "og-o2", "items_grounded": 6, "no_window_verdicts": 5, "proposed_rows": 1, "contributed": ["oppgran:opp:coins@lumbridge", "oppgran:opp:vial_of_water@taverley", "oppgran:opp:snape_grass@waterbirth-island", "oppgran:opp:ultracompost@ectofuntus", "oppgran:opp:ranarr_weed@global", "oppgran:opp:pineapple@catherby"]}, "ts": "2026-07-12T18:25:47Z"}
+{"key": "norm-q-misc-10", "status": "done", "payload": null, "ts": "2026-07-12T18:26:02Z"}
+{"key": "norm-q-misc-12", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:26:45Z"}
+{"key": "norm-q-misc-12", "status": "claimed", "payload": null, "ts": "2026-07-12T18:26:46Z"}
+{"key": "norm-q-misc-11", "status": "done", "payload": null, "ts": "2026-07-12T18:30:53Z"}
+{"key": "norm-q-misc-13", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:32:24Z"}
+{"key": "norm-q-misc-13", "status": "claimed", "payload": null, "ts": "2026-07-12T18:32:24Z"}
+{"key": "norm-q-misc-12", "status": "done", "payload": null, "ts": "2026-07-12T18:34:00Z"}
+{"key": "norm-q-misthalin-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:34:39Z"}
+{"key": "norm-q-misthalin-01", "status": "claimed", "payload": null, "ts": "2026-07-12T18:34:39Z"}
+{"key": "norm-q-misc-13", "status": "done", "payload": null, "ts": "2026-07-12T18:34:46Z"}
+{"key": "norm-q-misthalin-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:35:29Z"}
+{"key": "norm-q-misthalin-02", "status": "claimed", "payload": null, "ts": "2026-07-12T18:35:29Z"}
+{"key": "norm-q-misthalin-01", "status": "done", "payload": null, "ts": "2026-07-12T18:39:31Z"}
+{"key": "norm-q-misthalin-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:40:06Z"}
+{"key": "norm-q-misthalin-03", "status": "claimed", "payload": null, "ts": "2026-07-12T18:40:06Z"}
+{"key": "norm-q-misthalin-02", "status": "done", "payload": null, "ts": "2026-07-12T18:43:06Z"}
+{"key": "norm-q-misthalin-04", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:43:40Z"}
+{"key": "norm-q-misthalin-04", "status": "claimed", "payload": null, "ts": "2026-07-12T18:43:40Z"}
+{"key": "norm-q-misthalin-03", "status": "done", "payload": null, "ts": "2026-07-12T18:44:19Z"}
+{"key": "norm-q-misthalin-05", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:45:21Z"}
+{"key": "norm-q-misthalin-05", "status": "claimed", "payload": null, "ts": "2026-07-12T18:45:21Z"}
+{"key": "norm-q-misthalin-05", "status": "done", "payload": null, "ts": "2026-07-12T18:51:34Z"}
+{"key": "norm-q-misthalin-04", "status": "done", "payload": null, "ts": "2026-07-12T18:51:40Z"}
+{"key": "norm-q-misthalin-06", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:52:09Z"}
+{"key": "norm-q-misthalin-06", "status": "claimed", "payload": null, "ts": "2026-07-12T18:52:09Z"}
+{"key": "norm-q-misthalin-07", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:53:23Z"}
+{"key": "norm-q-misthalin-07", "status": "claimed", "payload": null, "ts": "2026-07-12T18:53:23Z"}
+{"key": "norm-q-misthalin-07", "status": "done", "payload": null, "ts": "2026-07-12T18:53:29Z"}
+{"key": "norm-q-morytania-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T18:54:08Z"}
+{"key": "norm-q-morytania-01", "status": "claimed", "payload": null, "ts": "2026-07-12T18:54:08Z"}
+{"key": "norm-q-misthalin-06", "status": "done", "payload": null, "ts": "2026-07-12T18:59:18Z"}
+{"key": "norm-q-morytania-01", "status": "done", "payload": null, "ts": "2026-07-12T19:00:02Z"}
+{"key": "norm-q-morytania-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:00:07Z"}
+{"key": "norm-q-morytania-02", "status": "claimed", "payload": null, "ts": "2026-07-12T19:00:07Z"}
+{"key": "norm-q-morytania-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:00:34Z"}
+{"key": "norm-q-morytania-03", "status": "claimed", "payload": null, "ts": "2026-07-12T19:00:34Z"}
+{"key": "norm-q-morytania-02", "status": "done", "payload": null, "ts": "2026-07-12T19:06:48Z"}
+{"key": "norm-q-morytania-04", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:07:03Z"}
+{"key": "norm-q-morytania-04", "status": "claimed", "payload": null, "ts": "2026-07-12T19:07:03Z"}
+{"key": "norm-q-morytania-03", "status": "done", "payload": null, "ts": "2026-07-12T19:08:25Z"}
+{"key": "norm-q-morytania-04", "status": "done", "payload": null, "ts": "2026-07-12T19:12:50Z"}
+{"key": "norm-q-tirannwn-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:13:44Z"}
+{"key": "norm-q-tirannwn-01", "status": "claimed", "payload": null, "ts": "2026-07-12T19:13:44Z"}
+{"key": "norm-q-sea-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:15:02Z"}
+{"key": "norm-q-sea-01", "status": "claimed", "payload": null, "ts": "2026-07-12T19:15:02Z"}
+{"key": "norm-q-sea-01", "status": "done", "payload": null, "ts": "2026-07-12T19:15:08Z"}
+{"key": "norm-q-varlamore-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:16:08Z"}
+{"key": "norm-q-varlamore-01", "status": "claimed", "payload": null, "ts": "2026-07-12T19:16:08Z"}
+{"key": "norm-q-tirannwn-01", "status": "done", "payload": null, "ts": "2026-07-12T19:21:48Z"}
+{"key": "norm-q-varlamore-02", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:22:25Z"}
+{"key": "norm-q-varlamore-02", "status": "claimed", "payload": null, "ts": "2026-07-12T19:22:25Z"}
+{"key": "norm-q-varlamore-01", "status": "done", "payload": null, "ts": "2026-07-12T19:22:43Z"}
+{"key": "norm-q-varlamore-03", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:29:19Z"}
+{"key": "norm-q-varlamore-03", "status": "claimed", "payload": null, "ts": "2026-07-12T19:29:19Z"}
+{"key": "norm-q-varlamore-03", "status": "done", "payload": null, "ts": "2026-07-12T19:29:30Z"}
+{"key": "norm-q-varlamore-02", "status": "done", "payload": null, "ts": "2026-07-12T19:30:23Z"}
+{"key": "norm-q-wilderness-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:32:43Z"}
+{"key": "norm-q-wilderness-01", "status": "claimed", "payload": null, "ts": "2026-07-12T19:32:43Z"}
+{"key": "norm-q-wilderness-01", "status": "done", "payload": null, "ts": "2026-07-12T19:32:48Z"}

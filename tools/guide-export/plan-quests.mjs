@@ -95,6 +95,13 @@ const covered = {
   // train_methods:true — the quest-progression chain's training bands get the
   // skill-method picker too (enrich.py attaches train_methods.jsonl by id).
   train_methods: true,
+  // quest_atoms:true — attach each quest step's ordered sub-checklist
+  // (steps_quest_atoms.jsonl + quest_expansions.jsonl, minted by
+  // consolidate_quest_atoms.py from the questatoms normalizer fan-out) as
+  // subChecklist{atoms,checkpoints}. ATTACH model, not flat-injection: the
+  // quest step stays the routing/grant anchor (same opt-in shape as
+  // train_methods above; default OFF = byte-identical elsewhere).
+  quest_atoms: true,
   goals: goals.map((g) => {
     const san = sanitizedById.get(g.id) ?? g;
     return { id: g.id, label: g.label, reqs: san.reqs || g.reqs || {},

@@ -3,6 +3,14 @@
 ## faux retro
 - Guide checklist grain: verb + named target + quantity/threshold + parenthetical constraint; one step per bullet
 - Tightest granularity: "Sell 1 CAKE AT A TIME (not 5/10/50), need 260+ gp" — economic constraint embedded in step
+
+## norm-s-ranged retro
+- 5 held rows (train-ranged-30/40/55/70/99), all bands covered by one page: "Pay-to-play Ranged training" (title resolved as-given, no redirect trap hit).
+- 6 get calls total (s3 quest, s4 cannon, s7 chinning, s9 crabs, s10 weapons-redundant-with-s9, s12 pest control); s9/s4 were pre-cached hits (free) from an earlier stage's refs.
+- Trigger for next wave: check the `sections` byte-size listing BEFORE issuing a child-section get — parent sections often already embed their subsections in one fetch, so a naive per-subsection budget plan overspends by ~1 get per nested pair.
+- Continuity method names baked into rows (chickens/cows, Ogresses/Experiments, seagulls) predate the page's current crabs/cannon/chinning framing; kept as methods[0] per brief but flagged in notes rather than mis-cited to a section that doesn't mention them.
+- xp_hr only populated where the page states an exact number for that band's boundary level; table granularity (chinning: 45/55/65/75/85/95/99) left band-70 as "??" by design, not an oversight.
+- 70-99 band capped at 2 methods (continuity + Pest Control) to stay inside the 6-get budget — NMZ/Slayer-ranged/Venator-bow/skeletal-monkey sections were left unfetched and are good candidates for a follow-up depth pass if richer 70-99 alternatives are wanted.
 - Toggle states appear inline mid-bullet; guide renderer must parse embedded state changes, not treat them as standalone steps
 - Branching is relic-gated, single-depth, parenthetical labels — no nested paths
 - DPLTaskRow Task Reference section is a structured task index (22K+ bytes); useful but fetch last
@@ -715,3 +723,1017 @@ Canonical-trigger mint: for any future item/gear-unlock pass, "fetch the item's 
 - Every micro_prompt is fully interpolated (0.8-1.3k tokens): scope ids, exact page titles, one verbatim grep for held rows, output schema + key, inherited trap list (Quick-guide stubs, title redirects, coord envelope, section-suffixed slugs) -- built to kill the 80k-tokens-for-2k-of-work failure mode.
 - Flagged but deferred: all web/plugin render work (sub-checklist render, reqs/rewards/start blocks, methods picker) -- WebFragments.java has a concurrent edit in flight; follow-on tasks must rebase on it.
 Canonical-trigger mint: before designing normalization for any derived surface (catalog.jsonl, route fixtures), diff the derived rows against their SOURCE rows first -- here quest_db already held start/length/structured reqs that the catalog builder was dropping, so a chunk of the "missing structure" was a one-line builder fix, not fan-out research; scoping research before checking the builder would have re-fetched data the repo already held.
+## norm-r-questdb-01 retro
+- Scope: 20 diary rows (ardougne/desert/falador/fremennik-province/kandarin x easy/medium/hard/elite) in quest_db.jsonl -> cardfacts:diary:<id> contributions. Zero wiki fetches, per FIX-task discipline.
+- Decomposed notes prose into labeled facts (mechanics/boss/kills/combat/hazard/unlock/xp-note/start/length/difficulty/overview/required-for/caveat); dropped restatement of reqs.skills/quests (already structured on the source row) but surfaced reqs.other[] entries as new required-for/boss facts since that field has no other home.
+- reqs.items[] parsed into req_items[] by comma-splitting, tools/ingredients separated, quantities "??" unless a literal number was stated; one row (desert-elite) had 4 items with no matching task in the held 6-task breakdown -- kept them (not dropped) with an explicit "unverified use" note plus a caveat fact, per no-fabrication/no-silent-drop discipline.
+- xp-note recovery: 14/20 rows had rewards.xp="??" with the real figure only present inside an unlocks[] "Antique lamp worth N xp" line -- extracted mechanically per the easy/medium/hard/elite -> 2.5k/7.5k/15k/50k xp pattern, flagged with a caveat fact each time so downstream consumers know it wasn't in the expected field.
+- All 20 contribute calls succeeded on first pass (verified via contribute.out); no quarantines, no malformed JSON (validated labels against the closed enum + summary <=160 chars programmatically before writing).
+- Two new gotchas logged: (1) non-quest gates split unpredictably between reqs.quests (mixed in) and a separate reqs.other[] field depending on the row, (2) length field can be "??" even when the true count is stated in the row's own notes text.
+- Time budget: within normal range, no skips.
+## norm-r-questdb-02 retro
+- Scope: 20 diary rows (karamja/kourend-and-kebos/lumbridge-and-draynor/morytania/varrock x easy/medium/hard/elite) from quest_db.jsonl -> card-facts.
+- All 20 grepped rows found, all 20 contributed and confirmed present exactly once in contrib.jsonl (no collisions with a sibling agent's 20 other-region diary rows also landing this run).
+- Zero wiki fetches made (pure restructuring of already-held row prose), per FIX-task discipline.
+- Design call: dropped reqs.skills entirely (already structured, out of scope for this schema) and dropped real quest titles from reqs.quests/other, but kept non-title achievement-style entries mixed into those arrays as required-for facts.
+- Design call: for the 5 items-array elite-tier rows, one reqs.items string -> one req_items entry (not further split); ambiguous multi-quantity strings ("21,000 coins + 20 mahogany logs") get qty "??" with the full detail in note rather than guessing which number is "the" quantity.
+- Design call: notes-list task breakdowns (medium/hard/elite tiers) decomposed 1 task-clause -> 1 fact (mechanics/kills/boss/combat/items-note by content); the 4 generic-boilerplate easy-tier rows got only an overview+caveat pair instead of fabricated per-task facts.
+- No repo data files edited, no commits.
+## norm-r-questdb-03 retro
+- Scope: 20 quest_db.jsonl rows (8 diary tiers: western-provinces/wilderness x easy/medium/hard/elite; 12 quests).
+- Zero wiki fetches used, per FIX-task discipline; all facts decomposed from held reqs/rewards/start/length/notes prose.
+- All 12 quest rows resolved a steps_quests_id via slug grep against steps_quests.jsonl (100% hit rate).
+- Diary rows got steps_quests_id: null (no matching entity in steps_quests.jsonl -- diaries aren't quests).
+- Skipped restating reqs.skills/reqs.quests as facts (no enum label fits; already structured in the source row) -- kept only unstructured extras (reqs.other, per-task quest-gate nuance) as facts.
+- req_items qty left "??" whenever a reqs.items string bundled multiple items or gave no explicit count (e.g. "combat equipment", tiered ore options); optional:true only for parenthetical "(only needed if...)"/"(optional...)" style items.
+- Built+validated all 20 JSON payloads via one Python script (schema/enum/summary-length asserts) before contributing, to avoid shell-quoting issues on titles with apostrophes/exclamation marks (Wanted!, Dräpare).
+- All 20 contribute --file calls returned "contributed:" (no pre-existing keys skipped).
+## norm-r-questdb-04 retro
+- Scope: 20 quest_db.jsonl quest rows (a-kingdom-divided..bone-voyage), zero wiki fetches (FIX task, cli limited to queue/contribute/feedback).
+- All 20 rows found via one grep; all held prose was quest-kind (no diary rows in this alpha slice), simplifying card_kind to "quest" uniformly.
+- steps_quests_id resolved for 18/20 via direct "quest-<slug>" grep on steps_quests.jsonl; big-chompy-bird-hunting and bone-voyage had no match -> null (both are real gaps, not lookup failures -- neither appears under any alt slug either).
+- architectural-alliance got the "removed" fact label (game content removed 10 Jan 2024) plus overview/unlock/required-for/caveat -- treated as a normal quest row otherwise per the brief's schema, not specially excluded.
+- req_items parsing surfaced two recurring shapes needing judgment calls (logged as gotchas): either/or single-slot reqs (e.g. "Dusty key OR Agility 70/80 OR Key master teleport") collapsed to one req_items entry with the alternatives in note; compound per-leg bundles (Barbarian Training) got qty "??" rather than fragmenting.
+- All 20 summaries came in under the 160-char cap (109-150 range) on first pass, no rewrites needed.
+- Total: 20/20 rows contributed, all new keys (none pre-existed), zero skips.
+## norm-r-questdb-06 retro
+- FIX task, zero wiki fetches: pulled 20 quest_db.jsonl rows (dorics-quest..fight-arena) via grep, decomposed notes/rewards prose into typed facts + req_items per row.
+- Contributed 20/20 cardfacts:quest:<id> rows, all keys new (no pre-existing skips observed).
+- steps_quests_id resolved for 17/20 via quest-<slug> grep; druidic-ritual, fairytale-i-growing-pains, family-crest have no steps_quests.jsonl row (null, confirmed not a slug variant).
+- Kept reqs.skills/reqs.quests unrestated (already structured per prior [normalize-r] rule); pulled required-for facts from rewards.unlocks bundled "required for..." clauses and notes prose since those are cross-reference info with no other structured home.
+- 1 held-data caveat flagged (Enakhra's Lament Firemaking 45 not actually needed) plus 1 classification caveat (Family Pest calls itself a miniquest but card_kind enum has no miniquest slot).
+- No fabricated numbers; used "??" for unquantified compound req_items (e.g. DS2's "runes for 3 Fire Wave or 3 Fire Surge casts", EW2's ore/metal substitution clause).
+- Nothing skipped; batch completed within budget.
+
+## norm-r-questdb-05 retro
+- Scope: 20 quest_db.jsonl quest rows (cabin-fever..devious-minds), zero wiki fetches (FIX task, cli limited to queue/contribute/feedback).
+- All 20 rows found via one grep; all held prose was quest-kind, card_kind="quest" uniformly.
+- steps_quests_id resolved for 18/20 via direct "quest-<slug>" grep on steps_quests.jsonl; cooks-assistant and desert-treasure-i had no match -> null (confirmed via broader "quest-cook*"/"quest-desert*" grep, not lookup failures).
+- Reconfirmed [normalize-r] drop-if-already-structured rule for reqs.skills/reqs.quests throughout; caught myself once mid-draft restating desert-treasure-ii-the-fallen-empire's exact skill-level numbers in a "difficulty" fact and cut it before contributing -- also dropped an unverifiable superlative claim ("deepest chain of any quest") since no cross-quest comparison data was held.
+- New pattern logged as gotchas: (1) "required for X" strings embedded in rewards.unlocks get pulled into their own required-for fact despite technically living inside an already-structured array, since the schema has no other forward-gate slot; (2) xp-note facts are reserved for choice/condition-bearing or recovery-case xp values, not every stray lamp mention.
+- req_items decomposition: either/or single-slot reqs (Raw cod or ring of charos, Clockwork or steel bar) collapsed to one entry with the alternative in note per questdb-04 precedent; compound rune/material bundles (DT2's Blood/Ice/Smoke/Shadow Burst runes) got qty "??" with the full breakdown in note rather than fragmenting; desert-treasure-i's 18-item reqs.items list was decomposed in full per the "parse each string into one req_items entry" mandate despite its length.
+- All 20 summaries landed 74-123 chars, well under the 160 cap, no rewrites needed.
+## norm-r-questdb-07 retro
+- Scope: 20 quest_db.jsonl rows (fishing-contest..in-search-of-the-myreque), all card_kind=quest. Zero wiki fetches (FIX task, prose already held).
+- All 20 rows had a matching quest-<id> entry in steps_quests.jsonl -- steps_quests_id set on every row, no nulls needed this batch.
+- req_items rule adopted: quantity taken ONLY from the reqs.items string itself (single int, or "??" for ranges like "3-6"/"1-5"); quantities that only appear in the notes prose (e.g. "3 red vine worms") became separate items-note facts instead of leaking into req_items -- keeps parsing mechanical and traceable to source field.
+- Dropped one GE (Grand Exchange) purchase-path mention from imp-catcher's notes per standing "never GE" discipline; kept the kill-imps spawn locations only.
+- Dropped meta-commentary sentences that referenced other pipeline artifacts (DEPTH_BACKLOG promotion note on his-faithful-servants, in-search-of-knowledge's queue-payload correction) by recasting them as objective caveat/required-for facts rather than carrying the meta-narration verbatim.
+- All 20 contribute calls succeeded on first pass (fresh keys, no idempotent-skip collisions observed).
+- Summary field length checked programmatically: max 132 chars, all under the 160 cap.
+## norm-r-questdb-08 retro
+- Scope: 20 quest_db.jsonl rows (jungle-potion..monks-friend), FIX track, zero wiki fetches.
+- Wrote a small python generator (gen_cards.py) to assemble the 20 card-facts JSON rows instead of hand-typing shell JSON -- avoided all apostrophe/quote escaping issues (King's Ransom, Merlin's Crystal, Monk's Friend titles/refs).
+- steps_quests_id resolved for 18/20; lost-city and monkey-madness-i have no quest-<slug> entry in steps_quests.jsonl -> null (logged as gotcha).
+- req_items: parsed every reqs.items string into one entry each; "(only needed if...)"/parenthetical-optional phrasing -> optional:true (e.g. climbing boots in Making Friends with My Arm, pickaxe/slash weapon on MM2's tanking route, lit bullseye lantern "or swamp tar" in Lunar Diplomacy).
+- No fabricated numbers: used "??" for unitemized xp (Lost City, Lost Lover) and unspecified item quantities throughout.
+- All 20 contributed cleanly on first pass, no retries needed.
+## backend-arch retro
+- Scope: design-only lane -- wrote tools/guide-export/design/BACKEND_REPLAY.md (service-as-source-of-truth, observation ledger, capture-engine replay seam, QH-verbatim arrow plugin, reachability gate, 7-lane build plan). No code changes, no commits.
+- Grounding order that worked: memory files first (the 5 coordinator memories carry deployment truths PROTOCOL.md lacks, e.g. port 43599 and the WG direct-bind), then PROTOCOL.md, then SME_NOTES 15-21 + run_scenario.py + entity-kb SCHEMA, then quest-helper source via raw.githubusercontent probing. Each layer corrected the previous one's staleness.
+- Key design calls made (per no-optional-inquiries): ONE plugin + ONE service with hot-reloaded policy modules (supersedes v1's "second domain = second port" note); ledger = two append-only files (values.jsonl dedupe + order.jsonl transitions) with all indices derived/regenerable; order key = (session_epoch, tick, idx) using RuneLite client-thread dispatch order as the packet-order proxy with per-kind exact/tick confidence labels; QH arrows ported verbatim into the bridge plugin (BSD-2 attribution) rather than the native hintArrow slot.
+- Canonical trigger minted: when a design doc must extend a proven protocol/harness, first diff the protocol doc against the deployment memory addenda -- the doc states the contract, the memory states the truth; design against the truth and note the doc drift as a gotcha.
+## norm-r-questdb-09 retro
+- Task: restructure prose in 20 held quest_db.jsonl rows (mountain-daughter..ratcatchers) into card-facts contributions. Zero wiki fetches, as instructed.
+- All 20 rows found via one grep; all 20 contributed cleanly on first pass (no key collisions logged).
+- steps_quests_id lookup: 18/20 matched a quest-<slug> row in steps_quests.jsonl; nature-spirit and priest-in-peril had none, so steps_quests_id: null for those two (verified via individual greps, not just absence from the -e batch).
+- req_items: followed the literal "quantity only if the string states a digit" rule throughout, even for grammatically-singular nouns like "Pot"/"Rope"/"Chisel" -> qty "??". OR-alternative item strings (e.g. talisman/tiara/cape/50-junk-items) kept as one req_items entry with the alternatives folded into note, optional:false since one alternative is mandatory.
+- facts: decomposed notes/rewards/reqs prose into 6-8 typed facts per row using only the closed enum; advice/meta-commentary (e.g. "recommended", "saves a trip") went to hazard/items-note/caveat facts rather than being dropped when it was itself an objective claim about the quest.
+- No fabricated numbers; two rows (murder-mystery, pirates-treasure, prince-ali-rescue) have "xp": "None" in the source -> emitted as an xp-note fact stating no reward rather than "??".
+- Time: ~1 pass, no wiki-kb fetches needed (FIX-track, prose already held).
+## norm-r-questdb-10 retro
+- Scope: 20 quest_db.jsonl rows (Recipe for Disaster whole-chain + its 10 chapters, recruitment-drive, regicide, rogue-trader, romeo-and-juliet, roving-elves, royal-trouble, rum-deal, rune-mysteries, sacred-bone-burner).
+- Zero wiki fetches, as directed; restructured only already-held prose/reqs/rewards/notes into typed facts + req_items.
+- steps_quests_id resolved for 9/20 (freeing-the-lumbridge-guide, recruitment-drive, regicide, rogue-trader, romeo-and-juliet, roving-elves, royal-trouble, rune-mysteries, sacred-bone-burner); null for the other 11 (RFD umbrella + 8 other chapters + rum-deal) -- not present in steps_quests.jsonl.
+- Unknown numeric values ("??" appears for tchiki monkey nut qty, raw chompy meat qty, logs qty, charcoal qty, fishing bait qty, boss armour/potions qty, cadava berry qty, draconic bone qty) kept as "??" per discipline, never fabricated.
+- recruitment-drive's held xp reward is 1000.5 per skill (odd decimal) -- carried verbatim into xp-note + flagged via a caveat fact rather than rounded/altered.
+- All 20 contributes returned "contributed:" (no key collisions) on first attempt.
+## norm-r-questdb-11 retro
+Scope: 20 quest_db.jsonl rows (scorpion-catcher..temple-of-ikov), card-facts track, zero wiki fetches.
+All 20 grepped in one shot from quest_db.jsonl; all present, no gaps.
+steps_quests.jsonl lookup: 16/20 hit quest-<slug>, 4 null (shadow-of-the-storm, swan-song, tai-bwo-wannai-trio, tale-of-the-righteous).
+Decomposed every row's notes/rewards/reqs prose into labeled facts[] (overview/mechanics/combat/boss/start/length/xp-note/unlock/required-for/hazard/caveat/items-note as applicable); dropped advice-flavored asides that duplicated structured fields.
+req_items: parsed each reqs.items string into one entry; explicit counts kept as int, unstated/ambiguous counts set to "??" (e.g. Song of the Elves' "Flowers", Tai Bwo Wannai's "Jogre bones"); OR-alternatives folded into one entry's note rather than split, except where the alt was itself item-shaped enough to warrant a second row.
+Two rows (scrambled, shield-of-arrav) had empty reqs.items -> req_items: [].
+No fabricated numbers; unresearched xp (skippy-and-the-mogres, spirit-of-adventure) and unstated xp (shield-of-arrav, sins-of-the-father, tale-of-the-righteous) left as "??"/omitted per source, never invented.
+refs copied verbatim from quest_db.jsonl rows (including sheep-shearer's 3-slug array) -- minted nothing.
+All 20 contributed via wikicli contribute --file; queue add/claim/done clean.
+## norm-r-questdb-12 retro
+- 20/20 quest rows from quest_db.jsonl decomposed into card-facts (facts + req_items), zero wiki fetches.
+- steps_quests_id resolved for 19/20 via grep on steps_quests.jsonl; "the-feud" has no quest-the-feud row there -> null.
+- qty policy: only pulled digits explicitly present in the reqs.items string (e.g. "3 dwellberries"->3, "501+ coins"->501); unquantified nouns ("Tinderbox") left qty "??" per directive rather than assuming 1.
+- "(only needed if...)" parenthetical -> optional:true, used for the-grand-tree's 1,000 coins and one great-brain-robbery entry.
+- xp fields that were already "??" or a prose string (not a per-skill dict) surfaced as an xp-note fact quoting or flagging the held text, never fabricated.
+- All 20 contribute calls succeeded first try (cardfacts:quest:<id> keys); no reruns needed.
+## norm-r-questdb-14 retro
+4/4 rows contributed clean, zero wiki fetches (pure restructure of held quest_db.jsonl prose).
+All 4 steps_quests.jsonl ids resolved on first grep (quest-witchs-house/witchs-potion/x-marks-the-spot/zogre-flesh-eaters all present) -- no null cases this batch, unlike prior r-band shards.
+Only x-marks-the-spot had a reqs.items field (single spade + "Eastfloor spade does not work" caveat) -> one req_items entry.
+witchs-house's reqs.skills held a pure prose combat-encounter string with no skill/level pair at all -> combat fact, nothing left for a skill-level slot.
+zogre-flesh-eaters' rewards.unlocks needed triage: 4 genuine forward unlocks kept as unlock facts, one item-reward dropped (already-structured/one-time), one "Bonus:" advice line dropped per advice-rule.
+No "??" placeholders needed this batch -- all held text was clean enough to decompose without gaps.
+## norm-r-questdb-13 retro
+- 20/20 rows contributed clean, zero fetches (fix-track, prose-only restructuring).
+- steps_quests_id resolved for all 20 via one batched grep: slug == id verbatim for every row in this batch (no underscores/apostrophes/& to normalize), all found as "quest-<id>" in steps_quests.jsonl.
+- Fact labels used: overview/mechanics/boss/kills/combat/hazard/caveat/difficulty/required-for/items-note. Unused: start/length/unlock/xp-note/removed — all were redundant with quest_db's own structured start/length/rewards fields per the DROP-duplicates rule.
+- req_items: literal-quantity discipline (qty="??" unless a digit/number word is in the source string) applied uniformly; conditional "(unless X)"/"(only if you want Y)" parentheticals split into optional:true entries.
+- Trigger for next wave: brief could pre-state "req_items qty is literal, not inferred" — I derived that from the base micro_prompt correctly but it's a common trip point worth stating explicitly.
+## norm-r-contrib-01 retro
+Scope: 20 card-facts rows, FIX track, zero wiki fetches -- restructured 12 minigamedb + 8 unlockdb prose rows already held in contrib.jsonl into typed card-facts blocks.
+All 20 rows found via a single grep pass (exact key match, no misses).
+Every gate.skills/reqs.skills level stayed implicit (no card-facts slot for it) per the prior quest_db precedent, generalized here to minigame/unlock kinds.
+reqs.items -> req_items parsing needed one split (Hallowed Sepulchre: skill-recommendation clause vs. real item clause in one string).
+Multiple rows' rewards.items/unlocks fields were literally "??" in the source -- carried forward as caveat facts rather than invented.
+summary <=160 chars required 2 trim passes across roughly half the rows (long minigame/unlock names + numeric gates eat the budget fast).
+refs[] copied verbatim via direct JSON field pull in the generator script, not retyped, to guarantee zero drift from source.
+Trigger for next wave: when scoping a FIX-track card-facts batch, pre-budget summary drafts to ~140 chars, not 160, to avoid a second edit pass.
+## norm-r-contrib-02 retro
+- Scope: 20 held rows (4 unlockdb + 9 minigamedb... actually 4 unlockdb-first-batch +
+  9 minigamedb + 6 more unlockdb + 1 = 20) restructured into card-facts, zero wiki fetches.
+- Grep matched exactly 20/20 target keys first try -- no missing rows, no re-grep needed.
+- card-facts schema has no `location` field; folded minigame coords/site name into an
+  `overview` or `start` fact rather than drop them (checkable, objective info).
+- req_items only populated when reqs.items names genuine required/recommended items
+  (tools, enchant targets, component pieces, entry-fee coins); left empty + covered via
+  a `start`/`mechanics` fact when reqs.items was actually a carry-in restriction list
+  (Castle Wars, Soul Wars Nomad tutorial) -- forcing those into name/qty would misrepresent.
+- All 20 `contribute --file` calls returned `contributed: <key>` (no idempotent skips --
+  first write of every cardfacts: key).
+- Trigger for next wave: when a source row has `location`, tell normalizers explicitly
+  whether to fold it into `overview`/`start` or drop it -- ambiguity cost one design call.
+## norm-r-contrib-03 retro
+Scope: 20 held rows (9 unlockdb, 11 minigamedb) -> 20 cardfacts contributions, zero wiki fetches (pure restructure, per FIX-track discipline).
+All 20 contributed cleanly (no key collisions, idempotent contribute confirmed each row).
+Reused prior norm-r-contrib-01 precedents directly: diary-tier gate.items (not a real item) stays out of req_items and becomes a caveat fact; skill-level-only gate.skills stays implicit unless it carries a substitution/condition beyond the plain number (digsite-pendant's Magic 49-or-tablet got a mechanics fact).
+New pattern this batch: raid trio (CoX/ToB/ToA) and solo-gauntlet trio (Fight Caves/Inferno/Colosseum) share a near-identical req_items shape (combat gear + food/potions + prayer supplies) -- kept each row's own boss-name/wave-count specificity in the item name/note rather than genericizing, so cross-row comparison still works off req_items[0].name.
+Multi-item bundled strings (shades-of-mortton, impetuous-impulses, sorceress-garden, rat-pits) got split one-component-per-req_items-entry; qty stayed "??" wherever the source string had no explicit count.
+Trigger for next wave: when a gate.items string names a diary/achievement-tier (not a physical item), route it to a caveat fact + skip req_items outright rather than forcing a tier-label into req_items.name.
+No skips, no fetches, no repo data files touched.
+## norm-r-contrib-05 retro
+- Scope: 2 held contrib rows (unlockdb:lunar-spellbook, unlockdb:arceuus-spellbook), zero wiki fetches, pure restructure.
+- Both rows contributed clean: cardfacts:unlock:lunar-spellbook, cardfacts:unlock:arceuus-spellbook.
+- Lunar: gate.skills stayed implicit (per prior gotcha #31); pulled overview/unlock(Dream Mentor+Fremennik hard diary)/caveat(65Magic/40Def can be unmet post-quest) facts; req_items empty (gate.items=[]).
+- Arceuus: fully ungated base card -- novel shape, resolved by giving the access mechanism its own 'start' fact instead of emitting nothing; Construction-80 POH altar convenience got its own separate 'unlock' fact from the base-access 'start' fact; A Kingdom Divided expansion got a third 'unlock' fact.
+- Summaries needed 1 trim pass each to clear 160 chars (151/146 final).
+- No blockers, no "??" needed -- both rows' held text was complete for every fact/req_items decision.
+## norm-r-contrib-04 retro
+- Task: restructure 20 held prose rows (6 minigamedb + 14 unlockdb) into card-facts typed blocks, zero wiki fetches.
+- All 20 source rows found via one grep; all 20 contributed cleanly on first pass (no key collisions, no re-runs needed).
+- Facts per row ranged 4-9; req_items derived only from reqs.items/gate.items (many unlockdb rows had empty items -> empty req_items, correctly not fabricated).
+- Used "??" + caveat fact for: zalcano/giants-foundry unlocks (not stated), dragon-boots source monster (transclusion gap, already gotcha'd upstream), berserker-ring/bandos-chestplate/armadyl-crossbow travel/kill-count gates (explicitly deferred upstream to travel:/minigame-style rows).
+- Trigger for next wave: when a FIX-track card-facts prompt gives a closed label enum, decompose per-sentence rather than per-field -- source rows blend reqs/rewards/notes prose that doesn't line up 1:1 with facts labels, so treat every clause as its own candidate fact and only merge when two clauses share one label AND one topic.
+- No wiki fetches made; contrib.jsonl only read via grep, never edited. No repo data files touched.
+
+## norm-s-melee retro
+- 25/25 held train-*/train-att-str-stronghold/train-mm-tunnels/train-nmz rows got methods:<id> rows; all contribute calls succeeded (no pre-existing keys skipped).
+- Budget: only 2 genuinely new wikicli fetches (Pay-to-play_Melee_training s14 Wilderness Slayer, s15 Slayer+Gargoyles nested); everything else (s1,s4-s13, Stronghold_of_Security s3/s7, Nightmare_Zone s2/s3, Maniacal_monkey, Cow, Barbarian) was a manifest cache hit, well under the <=6 budget.
+- methods[0] continuity was straightforward for most rows but 3 needed a judgment call: train-attack-30/strength-30 (detail says "Cows/goblins" but the row's own atom+refs say rock_crab) -- resolved by keeping Cow as methods[0] (matches detail text, per the brief's literal continuity instruction) with Rock Crab as methods[1] (matches atom/refs); train-attack-60/strength-60/defence-60 name "Hill Giants" alongside Flesh Crawlers but Hill Giants has no wiki-cited card in this pass's fetch set, so methods[0] names only the grounded half (Flesh Crawlers/Zombies, Stronghold of Security) and Hill Giants is left as unfetched, not fabricated.
+- train-mm-tunnels flagged a genuine held-data vs. wiki mismatch: the row's own detail/location says Ape Atoll + "Monkey Madness I", but Maniacal_monkey's own page states the monsters are in Kruk's Dungeon during Monkey Madness II -- reqs.quests + method notes cite what the page states and the discrepancy is called out in the method's notes rather than silently reconciled either direction.
+- NMZ's real gate ("any 5 of ~30 quests", Nightmare_Zone.s3) doesn't fit a flat reqs.quests[] list of hard requirements -- encoded as a single descriptive string entry rather than listing all 30 as if each were mandatory.
+- xp_hr is "??" on every one of the 100 method entries -- Pay-to-play_Melee_training's {{Melee training monster}} template carries no xp/hr field at all, only combat/hitpoints/requirements/recommendations/advantages/disadvantages prose, confirming train-methods rows from this page will always need xp_hr backfilled from elsewhere (not fabricated here).
+## norm-s-ranged retro
+- Task was a re-dispatch of already-completed work: all 5 methods:train-ranged-{30,40,55,70,99} keys existed in contrib.jsonl before this run (queue showed "already queued (done)").
+- Independently fetched Pay-to-play_Ranged_training sections 1,3,4,7,9,12,13,15 (all cache hits except s1/s15/s13 first-fetch) and drafted parallel rows; content converged closely with the pre-existing contribution (same cannon/ogre 40,000xp/hr figure, same MM2-chinning + Pest Control picks for 70-99).
+- contribute --file correctly no-op'd on all 5 duplicate keys -- confirms idempotent-key discipline holds under literal re-dispatch, not just re-runs after a crash.
+- Trigger for next wave: before spending a fetch budget, grep contrib.jsonl for the task's expected key pattern (methods:<step-id-prefix>-*) -- a hit means the task is already done and only queue-done + a one-line receipt is needed, skip the wiki fetches entirely.
+- Title confirmed NOT redirected: "Pay-to-play Ranged training" stays as-is (Ranged is the stated exception in the Herblore/Farming/... no-prefix list).
+## norm-s-melee retro
+Scope: 25 train-* melee rows (attack/strength/defence/hitpoints bands + att-str-stronghold/mm-tunnels/nmz) against "Pay-to-play Melee training".
+Finding: all 25 methods:train-* keys + queue norm-s-melee:done already existed in contrib.jsonl/queue.jsonl at session start (a prior pass completed this exact task ~15:38 before this session's own claim). Independently re-derived the same 25-row method set (Chickens/Waterfall Quest/Cows/Rock Crabs/Barbarians/Chaos druids/Ogres/Stronghold flesh crawlers+zombies/Moss giants/Wilderness Slayer+Green dragon/NMZ tiers/Slayer/Gargoyles/Maniacal monkeys) from fresh fetches, then contribute skipped all 25 as duplicates -- convergent with the prior run's content on spot-check (same MM1-vs-MM2 caveat, same NMZ 5-of-30-quest caveat, same Gargoyle 75-Slayer gate).
+Root cause of the wasted pass: pre-start check grepped manifest.jsonl (blob cache) instead of contrib.jsonl (findings ledger) for existing methods:train-* keys, so the "check existing contrib keys first" step returned a false negative.
+Trigger for next brief: pre-start dedupe check must explicitly say "grep contrib.jsonl" (not manifest.jsonl) by name -- manifest hits are free/expected even when the finding itself is already done.
+No new contributions added (0/25 new, 25/25 already-done). No gotchas beyond the two logged.
+
+## norm-s-prayer retro
+- 4 held rows (train-prayer-22/43/52/74), 4 contribute rows, 0 pre-existing keys, 0 duplicate-run.
+- 6 gets on "Pay-to-play Prayer training" (s1,s4,s14,s19,s21,s23), all fresh (not cache hits) — page revision postdates the row refs.
+- Trigger for next wave: when a training page has visibly REORGANIZED (location-based sections vs old level-band sections), don't force-fit level_band headers — cite sections by what method they actually cover and note the drift instead of assuming row refs still point at matching prose.
+- Concrete xp_hr only survived for gilded-altar dragon bones (643,000), Chaos-Temple dragon bones (860,000 noted / 500,000 suicide), and ensouled dragon heads (343,000, Magic 90) — every big-bones/regular-bones/wyvern-bones rate is "??" because the page never states them, not because of a fetch gap.
+- Gather-not-GE held even though the page itself recommends buying ensouled heads on the GE — reframed as monster-drop gathering per hard rule.
+- Budget: 6/6 gets used, well under any retry pressure; no feedback filed (CLI worked cleanly, get-before-flags order respected per prior gotcha).
+
+## norm-s-magic retro
+- Held rows: 5 (train-magic-25/43/55/70/94), all bands from steps.jsonl grep.
+- Wiki target "Pay-to-play Magic training" sections s3,s5,s7,s8,s9,s10,s11,s14,s17,s30 were all pre-cached — zero new wikicli `get` calls needed, only Read on existing blobs.
+- Found train-magic-25.json and train-magic-43.json already present under /tmp/norm-s-magic (prior/concurrent run) — verified schema-valid and reused rather than duplicating effort.
+- Flagged one row/page mismatch: train-magic-70's "Bursting at Crabs" label has no matching crab entry in the page's own Ancient Magicks burst-location list; substituted the page's actual Frost Crab elemental-weakness option and noted the discrepancy instead of inventing a burst-crab claim.
+- xp_hr left "??" wherever the page gave only a range or no figure at all (splashing, crab-killing, Slayer/Zombie-pirate bursting, Arceuus book delivery outside its stated level-75 example) — no fabricated point estimates.
+- 5/5 rows contributed, all methods[0] preserve label/detail continuity with the held row.
+
+## norm-s-magic retro
+- Scope: 5 held rows (train-magic-25/43/55/70/94), page 'Pay-to-play Magic training' (title pre-resolved, no redirect).
+- Cache: s5/s11/s14/s17 pre-cached; fetched 6 new sections (s3,s7,s8,s9,s10,s30) within the <=6 budget.
+- CONCURRENT DUPLICATE: this exact task was already running/finished in parallel (same OUT dir, same 5 filenames, queue already done) by the time I contributed -- all 5 contribute calls hit 'duplicate key, skipped'. Idempotency absorbed it cleanly; no repair needed.
+- Canonical trigger for next wave: before dispatching/re-dispatching a normalization row, check queue.jsonl for an existing claimed/done entry with that exact key -- claim is advisory, not a lock.
+- xp/hr sourced as real numbers where the page states one (Low/High Alch 60k/78k, enchant-bolt table tiers, Superheat 97k, Tele-alch 144.6k/151.2k, Ice Burst 310k, Ice Barrage 400k, Blood Barrage 305k); left '??' for crabs, splashing (range not single number), Grand Library (formula not flat rate), Slayer-task bursting, dust-devil bursting.
+- Flagged one label/page mismatch: train-magic-70's 'Bursting at Crabs' has no matching burst-spell+crab combo on the page (s17's burst-location list never mentions crabs); noted in method notes rather than forced.
+- Skipped nothing outright; all 5 rows got 4 methods each, methods[0] matching row continuity per the brief.
+
+## norm-s-prayer retro (verify pass, ts ~15:44 — concurrent re-dispatch)
+- Found task already fully completed by a CONCURRENT instance sharing this same /tmp/norm-s-prayer dir (not sequential re-dispatch): contrib.jsonl already held all 4 methods:train-prayer-{22,43,52,74} keys (ts 15:43:38Z) and queue was already 'done' (ts 15:43:45Z) by the time this instance finished its own independent fetch pass.
+- Independently fetched s1,s4,s5,s14,s19,s31 (s5/s31 genuinely new fetches, not cache hits) and drafted parallel method rows; per idempotent-contribute discipline, no files were submitted since all 4 keys already existed.
+- Gap found in the pre-existing contribution: it fetched s21 (Sinister Offering bury-xp) and s23 (Ectofuntus) but never s31 ("Comparison between bone offering methods"), so it marked big-bones and wyvern-bones altar/Chaos xp_hr as "??" when s31 states them directly (big bones: 133,875 gilded / 105,000 Chaos xp/hr; wyvern bones: 642,600 gilded / 504,000 Chaos, same as dragon bones) — flagged for a future FIX-track pass since contribute won't overwrite existing keys.
+- Trigger for next wave: for Prayer training, s31's per-bone-type comparison table is the highest-value section for xp_hr grounding across ALL bands (gilded+Chaos+shards columns per bone type) and should be a default get, not an optional one.
+
+## norm-s-mining retro
+- 6 held rows (train-mining-15/30/45/60/75/99), 0 pre-existing methods: keys, 6 new methods: contributions.
+- Title pre-resolved correctly, no redirect trap; used 6 gets (budget: <=6) across s7/s8/s9/s10/s13/s20; s10 auto-pulled its s11 child (6895B), matching known parent-pulls-children behavior.
+- Page section layout groups by STRATEGY (Questing/Copper-Tin/Iron/Granite/Motherlode/Blast Mine/...) not by level band, so most rows drew 2-3 methods by cross-referencing a strategys stated level range against the rows own band, not a 1:1 section map.
+- xp/hr table (granite) and Blast Mine prose key on fixed levels (45/55/65/75/85/95/99) that rarely align to a rows lo/hi boundary; followed the established chinning-monkeys precedent and left xp_hr "??" everywhere, putting the real bracketing figures in notes instead of interpolating.
+- Conditional gates (Cape Conch needs partial Troubled Tortugans; desert-heat protection is a menu of 4 interchangeable items; Blast Mine needs dynamite+chisel+tinderbox) were only added to reqs where the page states a single hard item/skill gate; interchangeable option-menus went to notes instead of reqs.items.
+- members field left "??" throughout: page never states per-location membership status explicitly, only that the whole guide is P2P-scoped.
+
+## norm-s-smithing retro
+- 6/6 held rows (train-smithing-15/30/40/60/70/99) got methods:<id> contributions.
+- 6 gets used (budget cap): s3 (anvil 1-40), s4 (BF gold bars 40-99), s6 (Giants' Foundry 15-99), s7 (BF non-gold 15-99), s9 (steel cannonballs 35-99), s10 (armour 48-99). All manifest titles confirmed exact "Pay-to-play Smithing training", no redirect.
+- 2-4 methods/row except train-smithing-15 (1-15): only 1 sourced method fit within budget (section 2 "Questing 1-39" never fetched).
+- Several methods' xp_hr is "??" because their wiki subsection renders rates via unexpanded MMG-table templates (section 7 and its cousins), not because the page lacks the data -- see gotchas.log.
+- Dropped the row-30 continuity detail's "buy from GE" clause per the gather-not-GE hard rule; kept only the mine-it-yourself half as method[0].
+- Giants' Foundry (Sleeping Giants gate) recurs as a real alt across every band 15-99; Blast Furnace gold bars (Family Crest + The Giant Dwarf gate) recurs as a real high-xp alt from band 40 up through 99, not just the 40-60 band the row itself names it for.
+
+## norm-s-smithing retro
+- Task landed as a genuine concurrent duplicate dispatch (2nd of >=2 instances); winner contributed all 6 methods:train-smithing-{15,30,40,60,70,99} keys ~1-3min before this pass finished independent research.
+- All 6 of my own contribute calls hit "duplicate key, skipped" -- zero clobbering, idempotent-on-key discipline held under real concurrency, not just in theory.
+- Independently re-derived methods converged closely with the winning instance's: same continuity picks (anvil bronze/iron/steel, BF gold-bar gauntlets, BF non-gold bars), same Giants' Foundry/armour-smithing numbers pulled from the same tables (97,920/133,920/164,640/198,000/253,110 xp/h; 144,000/140,000/200,000/240,000 xp/h).
+- One divergence: I added Rune 3-bar items (s11, 210,000 xp/h, boostable 95/98) and dart-tip/cannonball low-attention options for the mid bands that the winner's set omitted -- both are sound extras, not corrections; the winner's set is complete and citation-accurate on its own.
+- Canonical trigger for next wave: before dispatching/re-dispatching a normalization row, grep queue.jsonl for the task key AND grep contrib.jsonl for its target key prefix -- claim is advisory, not a mutex, so both checks are needed to avoid wasted duplicate research passes (queue state alone can lag the actual contrib write).
+- Section-template gotcha reconfirmed independently: s7/s8/s9's rate tables use unexpanded MediaWiki templates under --strip, so non-gold Blast Furnace and dart-tip xp_hr are genuinely "??", not a fetch gap.
+## norm-s-mining retro (concurrent second pass)
+- Confirmed the SAME race pattern as norm-s-prayer: another instance shared this /tmp/norm-s-mining dir and won all 6 methods:train-mining-{15,30,45,60,75,99} keys (contrib.jsonl + queue done both already present when this pass finished its own independent draft).
+- Independently fetched s6,s7,s8,s9,s10,s13,s14,s18,s20 (s6/s14/s18 were the genuinely-new fetches beyond what the winner used) and drafted 6 parallel method rows; per idempotent-contribute discipline, all 6 contribute calls returned duplicate key, skipped -- no clobber.
+- Substance check: winners method families per band (Granite/Motherlode/Iron/Blast Mine) match this passes independent derivation closely; this pass additionally surfaced Gem rocks (s14, medium Karamja Diary gate) and Volcanic Mine (s18, Bone Voyage gate) as extra page-recommended alternatives for the 45-99 bands that the winner did not cite -- worth a FIX-track note since contribute wont overwrite existing keys.
+- Policy divergence: this pass reported an exact xp_hr number when a table row landed on a level inside the band (e.g. 87,000 at level 45 for the 30-45/45-60 bands); the winner left xp_hr "??" universally per the chinning-monkeys non-interpolation precedent. Canonical trigger for next wave: prefer the winners stricter rule (?? unless the band IS the single table level, not merely contains it) for consistency across skill-methods contributions.
+- Trigger for orchestrator: grep queue.jsonl/contrib.jsonl for an existing claimed/done+key set BEFORE dispatching a normalization row a second time -- this is now confirmed on ranged, melee, magic, prayer, AND mining, a systemic re-dispatch issue, not isolated incidents.
+## norm-s-fishing retro
+5/5 held rows (train-fishing-20/40/58/70/99) contributed as methods:train-fishing-* rows, 2-3 methods each, zero pre-existing contrib keys or queue history for this task. Title "Pay-to-play Fishing training" had no redirect trap as briefed. 6 new section fetches (s0,s3,s6,s7,s16,s19) + 2 free cache hits (s1,s4 already blob'd from steps.jsonl's original refs, byte-identical to current sections). Two bands (lobster cage 40-58, plain banked swordfish/tuna 58-70) had zero xp/hr coverage on the current page at all -- the Fastest-experience table has moved on to different top methods for those ranges, so those rows carry method+item info from the Equipment section only, xp_hr "??" throughout. Found one genuine held-data mismatch (train-fishing-99's "Infernal Harpoon anglerfish" phrase vs. the page's rod-based anglerfish method) and logged it rather than reconciling silently. Held strictly to non-interpolation discipline: every xp_hr is "??" with the page's real bracketing numbers in notes, even where a table value landed exactly on a band boundary (e.g. barb fishing 3-tick@70=120,200 and @99=144,400).
+## norm-s-cooking retro
+- 5/5 train-cooking-* rows got methods:<id> contributions (bands 1-20/20-40/40-58/58-74/74-99).
+- Fetches: 4 new gets (s2,s6,s7,s9) + 3 cache hits (s3,s4,s8) already warm from the rows' own legacy refs; stayed within the 6-get budget.
+- 3 of 5 rows had a legacy ref pointing at the wrong section (s3 cited for lobster/swordfish/karambwan content that's actually in s4/s8) -- corrected to the accurate section per-method rather than reusing the mismatch, since the content genuinely exists on the current page (unlike the ranged-page precedent where content was gone).
+- methods[0] kept continuity with each row's own label/detail in all 5 rows (shrimp/anchovies, trout/salmon, lobster, swordfish/shark, karambwan).
+- xp_hr left "??" almost everywhere -- karambwan/pie tables are keyed to non-band-aligned levels, fish tables give ranges not single numbers; only jug of wine's flat "490,000 xp/h from 68+" sentence was clean enough to report.
+- No new title-redirect trap: "Pay-to-play Cooking training" resolved as expected (Cooking keeps the prefix, unlike the known Herblore/Farming/etc. no-prefix exceptions).
+## norm-s-cooking retro
+- Task arrived as a duplicate dispatch: queue.jsonl showed norm-s-cooking already pending->claimed->done (15:49-15:53Z) before this run's claim (15:53:51Z).
+- All 5 methods:train-cooking-{20,40,58,74,99} keys already present in contrib.jsonl with matching timestamps — prior run had already mined sections s2/s3/s4/s6/s7/s8 of "Pay-to-play Cooking training".
+- Verified via manifest.jsonl: all cited slugs' title field is exactly "Pay-to-play Cooking training" (no redirect trap) — s3/s8 fish tables, s4 karambwan, s6 pies, s7 wine, s2 poison karambwan (1-20 skip).
+- Prior run's contributions already correct row[0]-continuity gaps: train-cooking-58 and train-cooking-74 originally cited s3/s4 (wrong sections for lobster/swordfish) and were re-pointed to s8 in the methods[0] entry notes.
+- No new wiki fetches or contribute calls were needed this run — idempotent skip confirmed by re-grep of contrib.jsonl before acting.
+- Trigger for next wave: dispatcher should check queue.jsonl status before re-dispatching a normalization task id to avoid duplicate agent spend on already-done work.
+## norm-s-firemaking retro
+- 5/5 held rows (train-firemaking-15/30/50/75/99) got methods: contributions, all idempotent-safe.
+- 3 fetches total (s3 burning-logs table cache hit, s6 Wintertodt, s2 pyre logs) covered all 5 bands -- the page's single combined burning-logs table (s3) spans the whole 1-99 range by log-type bracket, so no per-band re-fetch was needed.
+- Continuity method[0] (row's own label) matched a real page entry for 3/5 rows (maple, yew, wintertodt); for the other 2 (normal logs @1-15, oak logs @15-30) the page's own table groups that whole sub-range under coloured firelighter logs instead, so those rows cite the row's pre-existing refs per the established [normalize-s] continuity gotcha rather than inventing a citation the page doesn't support.
+- xp_hr reported "??" (not interpolated) for: normal/oak logs (no page entry), rosewood logs (page states log-count not xp/hr), and Wintertodt in the 75-99 band (level-75 falls between the table's 70/80 rows) -- bracketing numbers preserved in notes each time.
+- No fabricated numbers; all skill-band boundaries left untouched (out of scope per brief).
+## norm-s-woodcutting retro
+- 6 held rows (train-woodcutting-15/30/45/60/75/99), all 6 contributed as methods:<id> kind train-methods.
+- Fetches: 4 cache hits (s4,s5,s17,s18 already warm) + 7 new gets (s3,s6,s13,s19,s21,s23,s24) — one over the "<=6" soft budget because s3 (Questing alt-method) was needed for 2-4-methods compliance on bands 1 and 2.
+- Continuity honored: methods[0] always matches the row's own label/detail (regular->oak->willow->maple->yew->[redwood,magic]).
+- xp_hr left "??" wherever the location-bullet sections (willow/maple/yew/magic) state no rate; only teak (s6 tables) and redwood (s13 prose) had page-stated numbers, so those rows carry real xp_hr, others don't — expected, not a gap.
+- Trigger for next wave: when a P2P training page's "Fastest experience" subsection tree (numbered s3-s6 style) diverges from the row's per-band split, always fetch the intro "Fastest experience" summary section itself first — it names which techniques the page endorses as *fastest* vs merely *listed*, preventing an alt-method pick that the page itself already disclaims (teak-past-65 caveat).
+## norm-s-fishing retro
+- Fetched sections 0,1,3,4,5,6,7,10,12,16,19 of "Pay-to-play Fishing training" (8 pre-cached, 3 new: s5 drift net, s10 Tempoross, s12 Monkfish).
+- Found all 5 methods:train-fishing-{20,40,58,70,99} keys already contributed by an earlier run (ts 2026-07-12T15:52:54-55Z, same page/sections). contribute skipped all 5 as duplicates -- verified the existing rows are sound (correct continuity method[0], real page-sourced reqs/items, xp_hr conservatively left "??" when the page only gives per-level table rows rather than one band figure).
+- Net effect: 0 new contributions this run; prior work already covers the FISHING skill-methods scope.
+- Trigger for next brief: when dispatching normalization workers, check contrib.jsonl for existing methods:<skill>-* keys BEFORE building briefs -- this track was already fully done, so the fan-out re-ran an already-closed cell.
+## norm-s-woodcutting retro
+- Duplicate dispatch: all 6 methods:train-woodcutting-{15,30,45,60,75,99} keys pre-existed in contrib.jsonl (same-session prior run, ts 15:57:11Z).
+- Pre-start check used contrib.jsonl (not manifest.jsonl) per gotcha #31 -- manifest only tracks fetched blobs, not findings.
+- Verified all 11 cited Pay-to-play_Woodcutting_training.sN slugs (s3,s4,s5,s6,s13,s17,s18,s19,s21,s23,s24) exist in manifest.jsonl -- no stale citations.
+- Methods content matches the page structure documented by the prior runs gotchas #54-56 (Fastest-experience regular->oak->teak chain; willow/maple/yew/magic/redwood as location-only subsections with no stated xp/hr; teak self-caps at level 65 without tick manipulation).
+- queue add returned "already queued (done)"; claim succeeded anyway (advisory, not a mutex); queue done re-issued as confirmation.
+- Zero new wiki fetches, zero new contribute writes. Trigger for future waves: grep contrib.jsonl for methods:<prefix> before dispatching a normalization row, not just queue.jsonl/manifest.jsonl.
+
+## norm-s-crafting retro
+- 5/5 held rows (train-crafting-20/40/54/70/99) got 2-4 methods each, all contributed cleanly, zero pre-existing keys (fresh task).
+- Fetched s3/s4 (cache hits, pre-existing), plus new s5/s6/s8/s9 -- 6 sections total covered all 5 bands via cross-referencing wide method-organized sections against fixed row bands.
+- Two genuine held-data/wiki mismatches found and flagged in notes (not silently re-banded): train-crafting-54/-70's green/blue/red d'hide continuity levels (63/71/77) land one band later than the rows naming them; train-crafting-99's "unpowered orb" is actually Crafting 46, the band's real glassblowing match is empty light orb (87).
+- xp_hr correctly "??" almost everywhere (templated {{#expr}} calcs on s4/s5/s6/s9), except s8 Molten glass which uses plain literal numbers -- one exact figure kept (empty light orb, 122,500 xp/hr).
+- No reqs.items fabricated beyond what each section explicitly states (needle+thread s3, gold bar+mould s9, glassblowing pipe s8); battlestaff component recipe left as empty items[] since s5's fetched text never names it.
+- Canonical trigger for next wave: for skill-methods tasks, always check whether a training page's per-section xp/h column is a bare number or a template wrapper before defaulting to ?? -- it can differ section-to-section on the same page.
+
+## norm-s-runecraft retro
+- Task: generate 2-4 training methods per band for train-runecraft-{27,44,59,75,99}, continuity method first.
+- Fetched 6 sections (s7 Questing, s8 Talisman tiaras, s9 Lava runes, s14 GotR, s15 Ourania, s18 Arceuus blood/soul); no title redirect, matched held row refs title exactly.
+- Page is fully strategy-organized now, not level-band; 3/5 continuity methods (air/cosmic/nature altars) have no current section, cited base page only.
+- Applied non-interpolation rule for xp_hr across all bucketed/level-keyed tables; reported one real number only where a band sat fully inside one flat bucket (GotR 50-75 for train-runecraft-75).
+- All 5 rows contributed clean, zero pre-existing keys, zero concurrent-dispatch collision this run.
+- Canonical trigger for next wave: when a training pages sections no longer name the rows own continuity method by rune/monster/item, do not force a citation -- cite the base page slug and flag it in notes rather than mis-attributing a section.
+
+## norm-s-crafting retro
+- All 5 held rows (train-crafting-20/40/54/70/99) already had methods:* keys in contrib.jsonl from a prior run; my independently-derived JSON matched in substance, contribute skipped as idempotent duplicates (0 new writes).
+- Sections used (all manifest cache hits except s16, one real fetch): s3 leather, s4 gem cutting, s5 battlestaves, s6 d'hide bodies, s8 molten glass, s9 jewellery, s16 amethyst.
+- Confirmed real mismatch: row bands train-crafting-54 (40-54) and train-crafting-70 (54-70) name green/blue/red dragonhide bodies whose actual wiki level gates (63/71/77) sit above those bands' ceilings; not re-banded per brief, flagged in notes on both this run and the pre-existing contrib.
+- Trigger for next wave: before deriving methods, grep contrib.jsonl for the target methods:<row> keys first -- if already present, skip straight to verification/diff instead of re-fetching sections and re-deriving from scratch (saves a full derivation pass even when fetches are free cache hits).
+## norm-s-runecraft retro
+- Pre-start contrib.jsonl check (per gotcha #31/#60 discipline) found 0 existing methods:train-runecraft-* keys, so proceeded with full research: 5 held rows (train-runecraft-27/44/59/75/99), title "Pay-to-play Runecraft training" (base slug "Runecraft_training", section slugs "Pay-to-play_Runecraft_training.sN" -- mixed prefix, new gotcha).
+- Fetched 5 new sections (s23 Other combination runes, s25 Double cosmic, s27 Double nature, s29 Aether, s30 Wrath) plus reused 6 cache hits (s7/s8/s9/s14/s15/s18) already on disk -- within the 6-get budget.
+- Confirmed the page's strategy-oriented restructure dropped all plain single-rune-altar write-ups; train-runecraft-27/44/59's continuity methods (Air/Cosmic/Nature) are prior baseline knowledge, and s25/s27 explicitly discourage crafting cosmic/nature before level 59/91, well above this task's early bands.
+- By the time research + draft JSON was ready, a concurrent duplicate instance had already contributed all 5 methods:train-runecraft-* keys (ts 16:02:07Z) -- all 5 contribute calls returned duplicate-key-skipped, zero data loss, consistent with the magic/prayer/smithing/mining precedent.
+- Found one real content-accuracy issue in the already-landed row (train-runecraft-99: Wrath runes stated as level 90 when the page says 95, with an incorrectly attached Magic 82 requirement) via s30, which the winning instance hadn't fetched -- logged as a gotcha for a future fix pass since idempotent-contribute can't self-correct it.
+- queue add returned "already queued (claimed)" (advisory, not a mutex per prior precedent); claim succeeded; queue done issued cleanly at the end.
+## norm-s-farming retro
+- 5 held rows (train-farming-17/35/50/70/99, bands 1-17..70-99), all contributed as methods:train-farming-* (train-methods kind).
+- Wiki target "Farming training" resolved cleanly (no title-redirect surprise beyond the dual-slug-family gotcha logged above).
+- 6 gets total: s3 (bagged plants), s4/s5 (compost/allotments, 1-15 band), s7 (tree runs umbrella incl. fruit/hardwood/special tables), s16 (herb runs + allotment-at-47 subsection). Covered all 5 bands from one page.
+- methods[0] continuity held for all 5 rows (allotments/oak-willow/maple/yew/magic match each row's own label).
+- Skipped per-herb level gates (ranarr/snapdragon/torstol) as "??" — those live on a separate Seed Table page, out of this task's single-target scope; noted in row notes instead of fabricating.
+- Left the page's own stated ~2,500,000 xp/hr high-level composite-run figure out of any single method's xp_hr (it covers a mixed magic+dragonfruit+special-tree run, not any one method) — surfaced in the row-level notes instead to avoid misattribution.
+- Farming has zero F2P content, so members:true on every method with no uncertainty.
+## norm-s-herblore retro
+- 5/5 held rows (train-herblore-10/38/55/70/99) got methods:<id> contributions; all cited Herblore_training.s2/s3/s6/s7 (title has NO Pay-to-play prefix -- old cache slug was stale, see gotchas).
+- Making potions table (s3, ~69KB stripped) parsed by regex over its per-line wikitable cells (level -> plinkt potion/base/secondary/xp/xp-hr); caught 2 rows the naive parser mis-extracts (multi-base Super combat potion, rowspan-offset Stamina potion) via manual Read.
+- Two real band-boundary mismatches surfaced honestly rather than silently re-banded: super restore (needs 63) named as train-herblore-55's continuity method (band top 55); super combat potion (needs 90) named as train-herblore-70's continuity method (band top 70).
+- "Divine potions" named in train-herblore-99's detail do not exist anywhere on this page's potion table -- substituted the page's own top-xp/hour endgame recipe (Menaphite remedy, 500,000 xp/hr) instead, noted honestly.
+- All xp_hr values are literal numerals from the Making potions table's own XP/Hour column; herb-cleaning xp/hr left "??" since that table only exposes raw CleanHerbLine template params (level/xp/rate), not a rendered combined hourly figure.
+- No GE-buying method language used; all methods framed as combine-at-bank (gather secondaries), consistent with the never-GE-source rule.
+
+## norm-s-farming retro
+- Task was a duplicate dispatch: all 5 methods:train-farming-{17,35,50,70,99} keys already existed in contrib.jsonl at session start (prior instance completed the full research pass, ts 16:06:37Z).
+- Verified rather than re-derived: read back all 5 existing contributions, confirmed method-per-band content is sound (2-4 methods each, continuity-first ordering, xp_hr correctly "??" throughout since Farming has no stated per-method hourly rates on this page).
+- Cross-checked manifest.jsonl for all 5 cited slugs (Farming_training.s3/s4/s5/s7/s16) -- all present, no title-redirect drift, matches gotcha #60's note on the plain-title (no Pay-to-play prefix) slug family.
+- Round-tripped all 5 JSON payloads through contribute --file to confirm idempotent skip (5/5 duplicate-key-skipped), rather than assuming and skipping the check.
+- queue add/claim/done all completed cleanly; add reported "already queued (done)" confirming the prior run's terminal state.
+- No new wiki fetches needed (0 gets against budget of 6) since the winning instance's cached sections cover the page fully.
+- Nothing skipped; all 5 bands have contributed methods.
+## norm-s-thieving retro
+- 5/5 methods:train-thieving-{20,38,55,65,99} rows contributed (16 methods total, 2-4/band), zero pre-existing keys (no concurrent-dispatch collision this time).
+- Page fully reorganized by strategy (Fastest experience / Other methods), not by fixed band -- same pattern as Mining/Fishing/Crafting/Runecraft; 9 sections fetched (all fresh, zero cache hits), no redirect.
+- Two real held-data mismatches surfaced and flagged in notes rather than silently fixed: train-thieving-65's "Menaphite thugs/Desert Treasure" claim (actual: Pollnivnian bandits/Feud), train-thieving-99's "Master Farmers at 38+" claim (page recommends 94+ only).
+- train-thieving-38's H.A.M.-members continuity method has zero coverage on the current page (checked all 34 sections) -- resolved via the row's own pre-cached H.A.M. Member/Hideout refs rather than a new fetch, same as Prayer's bone-burial precedent.
+- Non-interpolation xp_hr discipline held throughout except Pyramid Plunder's single flat 91+ bucket (270,000), which fully covered a method's own sub-band and was reported directly.
+- Canonical trigger for next wave: for level-restructured P2P training pages, a normalizer should default to grep-ing all section titles for the row's continuity-method noun (e.g. "H.A.M") BEFORE assuming a fetch will find it -- absence is common enough now (Prayer, Runecraft, Thieving) to be the expected case, not a fetch failure.
+## norm-s-herblore retro
+- Concurrent dispatch again (5th skill in a row to see it, after magic/prayer/smithing/mining): other instance won by ~5min, all 5 methods:train-herblore-{10,38,55,70,99} keys were duplicate-key-skipped on my contribute pass. Zero data loss; idempotent-contribute discipline held.
+- Title-redirect trap confirmed exactly as briefed: real slug is Herblore_training.sN, not Pay-to-play_Herblore_training.sN (old steps.jsonl refs cite the latter, a redirect).
+- Two real held-row-vs-wiki mismatches independently reproduced by both instances: (1) train-herblore-55's "Super restore" continuity method actually needs Herblore 63, landing in the NEXT row's 55-70 band; (2) train-herblore-99's "divine potions" have zero presence on the fetched Making-potions table.
+- Divergence worth flagging: my instance left the unsourced "divine potions" method as an all-?? placeholder; the winner substituted Menaphite remedy (page's real top xp/hr recipe in-band) instead. Both non-fabricating, but inconsistent style across the corpus -- canonical trigger: decide once whether an unsourced continuity-named method gets a same-band real substitute or a visible-?? placeholder, and say so in the next wave's brief.
+- Herblore_training.s3's Level/XP/XP-per-Hour columns are plain literal text (not templated) -- cheap to cite directly, contrasted with s6's Herb-cleaning table where the XP/Hour column IS template-hidden despite both operands (per-herb xp, stated 10,000/hr assumption) being visible in prose.
+- Budget used: 4 gets (s2/s3/s6/s7), all cache hits (0 new fetches) since the concurrent instance had already warmed them.
+
+## norm-s-slayer retro
+Fresh (non-duplicate) dispatch; queue add/claim clean, 0 pre-existing methods:train-slayer-* keys.
+Fetched Slayer_training.s18 (locations), s22 (Task summary, 12965B, Duradel-only), s25 (Temple Trekking),
+s26 (Turael boosting) fresh; s2 (Access to masters) was already a cache hit from the row's own pre-existing
+refs. 4 gets used, within the 6-get budget.
+Page has zero per-band walkthrough; cross-referenced masters table (s2) + task summary (s22) + locations
+(s18) against the 6 fixed bands instead of a 1:1 section fetch. All 6 methods:train-slayer-* rows contributed
+clean (no dupes). Two genuine held-data mismatches flagged in row notes rather than silently fixed: abyssal
+demons (85 gate) sits above train-slayer-75's 50-75 band; "desert lizards" isn't on this page at all under
+any fetched section. Hydra's row-stated level 82 is unconfirmed (Konar-exclusive per s2 prose, absent from
+Duradel-only Task summary) -- left level_band/reqs "??" rather than trusting the row's own baseline number.
+Smoke devils' page-stated level 93 matches train-slayer-99's stated 93 for Thermonuclear Smoke Devil exactly,
+the one clean row-vs-page level agreement found this pass.
+## norm-s-thieving retro
+- Re-run of an already-completed normalization task.
+- All 5 held rows (train-thieving-20/38/55/65/99) already had methods:<id> keys in contrib.jsonl from a prior pass (ts 2026-07-12T16:11:11Z), and queue.jsonl already showed norm-s-thieving as done.
+- Verified via grep on contrib.jsonl (not manifest.jsonl -- manifest tracks fetched wiki pages, contrib.jsonl holds the actual key/value contributions) before doing any wiki fetching, per idempotent-contribute discipline.
+- No wikicli get calls were needed this pass since no new bands required mining.
+- Prior pass flagged several row-detail vs wiki-page mismatches worth downstream attention: Knights of Ardougne is a 55+ method not spanning 38-55; blackjacking at 55-65 targets Pollnivnian bandits (Feud partial) not Menaphite thugs (Desert Treasure); Master Farmers is pickpocketable at 38 but page recommends waiting to 94.
+- Takeaway for future briefs: check contrib.jsonl for existing keys BEFORE grepping manifest.jsonl or hitting the CLI -- saves a full mining pass when a prior identical-scope worker already ran.
+## norm-s-slayer retro
+- Task: mine "Slayer training" into per-band methods for 6 held rows (train-slayer-20/50/75/99, train-slayer-task-desert, train-slayer-task-morytania).
+- Genuine concurrent duplicate dispatch: another instance shared /tmp/norm-s-slayer and had already written+contributed all 6 methods:train-slayer-* keys (ts 16:12:43Z) before this instance finished its own independent read pass; all 6 contribute calls returned duplicate-key-skipped, zero data loss, figures cross-checked as matching.
+- Page shape: master-centric not band-centric. s2 "Access to Slayer masters" = one wikitable, all masters' location/reqs/points, covers every row. s22 "Task summary" is explicitly Duradel-only (own lead sentence says so) but has real literal xp/hr numbers per monster/style (rare for a training page -- most other skills' tables are {{#expr}} templated).
+- Canonical trigger for next wave: on multi-style monster cells (2-3 xp/hr numbers per row, one per combat style), citing the literal number for a SPECIFICALLY NAMED style/variant is sound (not fabrication) -- only collapse-to-?? applies when averaging across table ROWS/levels, not across style COLUMNS within one row.
+- Skipped: none of the 6 rows -- all in scope, all pre-contributed by the concurrent winner, verified sound and idempotently confirmed.
+
+## norm-s-agility retro
+- 7/7 held train-agility-* rows enriched with methods:<id> contributions (kind train-methods).
+- 6 gets used (budget cap): s7 rooftop table (huge payoff, covers 6 of 7 bands), s5 Hallowed Sepulchre, s15 Werewolf Course, s2 quest-XP shortcut, s3 Brimhaven Arena, s4 Wilderness Course.
+- Continuity held for all 7 methods[0] even where the current page no longer covers the row's named method (Gnome Stronghold) or covers it at a different level band than the row claims (Ardougne at 60-90 vs sourced 90-99) -- both logged as gotchas rather than silently "corrected".
+- No fabricated xp_hr/members: left "??" wherever the fetched section didn't state a number for that exact method+band pairing (Gnome Stronghold both rows, Ardougne 60-90, Hallowed Sepulchre location).
+- Did not touch/report xp band totals per the fixed-elsewhere rule.
+- Skipped Prifddinas Agility Course (75-99, section 16) and other unfetched "Other methods" sections (Ape Atoll, Shayzien, Colossal Wyrm, monkeybars, Barbarian Fishing, Agility Pyramid) -- stayed within the 6-get budget, page's own fastest-xp path (s7/s5/s3/s4) already covered every held band with 2-4 options.
+## norm-s-agility retro
+- Genuine concurrent duplicate: another instance finished first (all 7 methods:train-agility-* keys + 7 scratch JSONs already in /tmp/norm-s-agility and contrib.jsonl before this instance's own draft stage). All 7 contribute calls returned duplicate-key-skipped; zero data loss, zero new fetches beyond the independent verification pass.
+- Cross-checked all 7 winning contributions against an independently-derived draft from 6 fresh gets (s7 Rooftop table, s5 Hallowed Sepulchre, s15 Werewolf, s2 Questing, s3 Brimhaven, s4 Wilderness): content matched on every load-bearing point, no corrections needed.
+- Confirmed two real held-data mismatches (both already flagged by the winner): "Gnome Stronghold course" (train-agility-10/-30 continuity) is absent from the current page entirely; train-agility-90's "Ardougne Rooftop" continuity method is page-gated to 90-99, above the row's own 60-90 band.
+- Agility training's s7 Rooftop table is unusually clean for this corpus: near-1:1 level-band alignment to the fixed train-agility-* rows in a single fetch, unlike the scattered non-1:1 section structure seen on Mining/Fishing/Crafting/Runecraft/Thieving/Slayer.
+- Canonical trigger for next wave: when a task's shared /tmp/<task-id> scratch dir already contains populated <row>.json files at task start, skip straight to a contribute-and-verify pass (round-trip each file through `contribute`, confirm duplicate-skip, spot-read 2-3 for content sanity) instead of re-deriving from a fresh wiki fetch -- cache hits make re-fetching cheap but not free, and the verification pass is what actually catches winner-content errors (per the Wrath-rune precedent), not a from-scratch redo.
+
+## norm-s-hunter retro
+- 5/5 methods:train-hunter-{9,29,43,60,99} contributed fresh, no duplicate-key skips despite a concurrent queue claim (16:13:39Z, 16:14:08Z).
+- 6 wikicli gets used (s4,s5,s10,s12,s15,s17); leveraged two free cache-hit umbrella-section reads (s9, s19) left by the concurrent instance to cover 8 more subsections without extra fetch budget.
+- Title trap confirmed: manifest slug is exactly Hunter_training.sN, no Pay-to-play prefix, joining the established no-prefix skill set.
+- 3 real continuity mismatches surfaced and flagged in notes, not silently rewritten: rows 1/2's bird-snare creature names, row 3's Lumbridge-Swamp-vs-Slepe location + unnamed Barb-tailed Kebbits, rows 4/5's Piscatoris/Feldip chinchompa locations vs the page's actual Wilderness/Varlamore spots.
+- xp_hr populated only where the page states a literal single figure (13000/31000/28500/50000/130000/110000/265000/220000); every range ("20,000-45,000", "40,000-100,000" etc.) left ?? per the mining-precedent single-figure-representativeness rule (gotcha #73).
+- Canonical trigger for next wave: when a fan-out row's continuity method/location isn't on the current page at all, don't spend get-budget hunting for a nonexistent match -- flag the mismatch in notes using the row's own stated detail as methods[0], and spend the budget on the page's real per-band methods instead.
+
+## norm-s-hunter retro
+- Trigger for next wave: on skill-training pages, ALWAYS try one --strip get on the highest-level ancestor section before fetching leaves individually -- Hunter confirmed the Mining/Fishing/Runecraft/Slayer "parent pulls all children inline" behavior again (s9 -> 8 child bands, s19 -> 11 child bands), covering all 5 fixed row bands in 4 real fetches.
+- Genuine concurrent duplicate dispatch (7th skill in this pattern): another instance won the /tmp/norm-s-hunter race and contributed all 5 keys before this instance finished; all 5 contribute calls skipped as duplicates, zero data loss, independent research converged on the same conclusions.
+- Content finding worth flagging upstream: Hunter training has been restructured so thoroughly that ZERO of the 5 held rows continuity methods (crimson swifts, tropical wagtails, Piscatoris chinchompas) survive on the current page -- only fragments (Swamp Lizards half of row 43, Maniacal Monkeys half of row 99) verify. This is a stronger mismatch than any prior skill (Prayer/Slayer/Runecraft had 1-2 rows drift; Hunter has all 5).
+- Skipped: none of the 5 bands were skipped -- all 5 methods:train-hunter-* keys are present in contrib.jsonl (pre-existing from the winning concurrent instance, verified sound by independent review).
+## norm-s-construction retro
+- 5 held rows (bands 1-20/20-40/40-55/55-70/70-99), Construction_training title confirmed no-P2P-prefix, no redirect.
+- 6 section gets (s12,s13,s14,s16,s21,s22), all fresh (not cache hits), covering the Fastest-experience decade-chain plus Mahogany Homes/Teak-bench/Oak-door alternates.
+- No concurrent-dispatch collision this run -- zero pre-existing contrib keys, all 5 contributes landed clean.
+- Two genuine held-row/page mismatches surfaced and flagged (not silently fixed): train-construction-40's 'Oak chairs' (no such item on page, substituted oak dining table/carved oak table) and train-construction-55's 'Oak dungeon doors' (real item, but page gates it to level 74, above the row's 40-55 band).
+- Canonical trigger for next wave: when a row's continuity-method label doesn't literally match any wiki-table item name, check whether the page uses a different/no-prefix name for the same build (e.g. 'oak dungeon door' == 'oak door') before concluding it's absent -- confirmed via cross-section text ('switch to oak dungeon doors ... at level 74' inside the Oak-larder section pointing at the Oak-door section) rather than a direct item-page fetch.
+- xp_hr policy: blanket 'up to around X xp/hour' claims spanning a whole method's level window are citable directly wherever a sub-band sits fully inside that window; level-threshold-gated figures (e.g. 'from level 50 onwards') and stated ranges (Mahogany Homes tiers, Teak bench 500k-700k) stay ??.
+- Budget: 6 gets used (at the suggested cap), zero re-fetches needed, no manifest slug surprises beyond the already-known no-prefix trap.
+## norm-s-fletching retro
+Held rows: train-fletching-{20,40,55,70,99} (5 bands, 1-20/20-40/40-55/55-70/70-99).
+Wiki: "Fletching training" (no Pay-to-play prefix, stable title, no redirect). Budget used: 6 gets
+(s16 Bows -- the workhorse, one table spans 5-99 with literal xp/hr for fletch/knife/string;
+s15 Arrow shafts 1-5/10; s3 Darts zero-time -- transclusion, no literal data; s17 Battlestaves
+40-80 umbrella alt; s18 Redwood shields 92-99 endgame alt; s6 Bolt tips -- explored, unused,
+template-#expr xp/hr, marginal value vs the bows table already covering those bands).
+Contributed: 5/5 methods:train-fletching-* rows, all fresh (won a concurrent-dispatch race --
+this instance's contribute calls landed before the other instance's, matching the
+magic/prayer/smithing/mining/runecraft/hunter precedent that claim != contribute-win).
+Findings: continuity mismatches on 2 of 5 rows (maple longbow needs lvl 55 = row-70's band top;
+yew shortbow needs 65-70 = only row-55's band tail) -- flagged in notes, not re-banded.
+Dragon darts (row-99's other continuity method) is fully unverifiable: s3's rate table is a
+{{Table/Fletching/Darts}} transclusion --strip doesn't expand, and no RFD-gate text found in
+the fetched section -- reported "??" rather than trusting the row's own unsourced claim.
+Trigger for next wave: when a skill's training-methods page has ONE well-structured level-keyed
+table (like Fletching's Bows table) instead of scattered method-named sections, budget can drop
+below 6 gets -- check `sections` output first for a single large (>5KB) section whose title spans
+most of the level range before fanning out to smaller per-method sections.
+## norm-s-construction retro
+- 5/5 held rows (train-construction-20/40/55/70/99) got methods:<id> contributions; 0 skipped.
+- Trigger for next wave: for skill pages with a clean "Levels X-Y: Method" section structure (Construction, Firemaking, Herblore), one section fetch per named method covers 1-2 held bands each -- budget 6 gets comfortably covers a 5-band skill plus 1-2 wiki-cross-checks (full-page door/member grep) without exceeding it.
+- Real finding, not a normalizer bug: row train-construction-55's "Oak dungeon doors" continuity method is wiki-gated to level 74, not 40-55 -- flagged in-method rather than re-banded (rows are held, never re-banded by this track).
+- Mahogany Homes contract tiers (Beginner/Novice/Adept/Expert @ 1/20/50/70) turned out to be a clean cross-cutting non-GE alternative method usable in every one of this skill's bands; xp/hr always given as a range on the page so left "??" per no-fabrication rule, range paraphrased in notes instead.
+- Found and reused a fully-drafted, well-cited staging set from an earlier interrupted run of this same task id sitting in /tmp -- verified against independent fresh fetches before contributing rather than discarding and redoing.
+## norm-q-asgarnia-01 retro
+Scope: 2 quests (quest-grim-tales, quest-between-a-rock), quest-atomizer track.
+Fetches: 1 real get per quest (parent Walkthrough H2 pulled all subsections inline);
+Between a Rock's fetch was already cache-hit from a prior session, Grim Tales was a
+fresh fetch. Total 2 gets against a 5-get-per-quest budget.
+Output: questatoms:grim-tales (27 atoms, 4 checkpoints), questatoms:between-a-rock
+(32 atoms, 7 checkpoints) -- both contributed fresh, no duplicate-key skips, no
+concurrent-dispatch collision observed (queue add/claim/done all clean first-try).
+Coords: only Grim Tales had a real {{Map}} template (griffin path, 18 points, plane 0,
+envelope-sane); Between a Rock had zero map templates, coords[] left empty throughout
+rather than guessed.
+Gaps left as "??": Sylas's opening/quest-start dialogue text (Grim Tales, never spelled
+out on the quick guide), Ammo-mould coin cost (Between a Rock, unstated).
+Canonical trigger for next wave: when a quest micro-prompt says "budget <=5 gets", check
+`sections` output for a parent H2 whose own byte size looks like a bare header (tens of
+bytes) sitting over several substantial H3 children first -- fetching that ONE parent
+section is very likely to pull every child inline for free, the same pattern already
+seen across every skill-training page in this KB.
+## norm-q-asgarnia-02 retro
+Scope: 3 quests (Devious Minds, Heroes' Quest, Land of the Goblins), all first-touch (0 pre-existing contrib keys, 0 cache hits before this run). 15 Quick-guide walkthrough sections fetched total (4+5+6), all clean H3s, no transclusion/redirect traps. Emitted 3 questatoms:<slug> rows, 82 atoms total (18+24+40), all contributed fresh (no dup-key races this run).
+Load-bearing calls: (1) Heroes' Quest's armband checkpoint is real two-player co-op with a parallel instruction table -- atomized one gang's track only, folded the partner's mirrored actions into hints, and represented the final item hand-off as prose in the turn-in atom's detail since the closed verb enum has no trade primitive. (2) Land of the Goblins' 4-colour key cycle collapsed into one count=4 atom (never-unroll rule) rather than 4 near-clones. (3) Devious Minds' unnamed "search dead monk" reward item left as produces:{"items":{"??":1}} -- never-fabricate extends to atom-level item names, not just rates.
+Canonical trigger for next wave: when a checkpoint's wiki source is a two-column co-op instruction table (one column per partner role), the brief should say up front "atomize ONE role's column as the primary track, fold the other role's actions into hints" -- otherwise an agent may either duplicate both tracks as parallel atoms (breaking equal-grade/no-branching) or stall trying to force a trade/hand-off verb into the closed enum.
+No coordinate data available anywhere in this batch (no {{Map}}/{{NPC map}} templates in any of the 15 sections) -- coords[] empty on all 82 atoms, confirmed not a fetch gap.
+## norm-q-asgarnia-03 retro
+Scope: 4 quests (My Arm's Big Adventure, The Slug Menace, Troll Romance, Wanted!), quest-subchecklist track.
+Fetches: 4 gets total (one `--section 2` per quest quick guide), all budget-under-5, zero redirect/apostrophe traps hit (My Arm's/Wanted!'s manifest slugs resolved cleanly despite apostrophe/bang in titles).
+Output: 4 questatoms:<slug> rows, 28+26+20+21 = 95 atoms total, all contributed fresh (no duplicate-key skips -- first dispatch of this task id, no concurrent-instance collision observed this run).
+Canonical trigger for next wave: zone-transition+talk-to single-wiki-bullets ("go back to X and talk to Y") should ALWAYS split into walk-to + talk-to atoms regardless of bullet count on the source page -- the grain signal is zone-transition-ness, not the wiki's own bullet structure. Randomized multi-stop hunts with a stated item/location table but no fixed visit order (Wanted!'s Hunt for Solus) atomize as one until-loop citing the table by ref, never unrolled to a guessed subset. {{Map|mtype=polygon}} pins record every vertex as a separate coords entry, same treatment as mtype=line paths.
+No held-row/wiki mismatches surfaced this pass (unlike prior skill-training waves) -- all 4 quests' held detail text matched their quick guides closely; only soft gaps were unstated numeric quantities (hardy gout tuber count) and unstated timing thresholds (Trollweiss collection window), both left as null/"??" rather than guessed.
+## norm-q-asgarnia-04 retro
+- 5/5 quests atomized and contributed: questatoms:a-tail-of-two-cats (22), questatoms:animal-magnetism (28), questatoms:another-slice-of-h-a-m (26), questatoms:bear-your-soul (7), questatoms:black-knights-fortress (14). Total 97 atoms, 5 wikicli gets (1 per quest, all parent-Walkthrough-pulls-children), 5 contributes, all confirmed accepted (no idempotent skips -- first agent on all 5 keys).
+- Coordinate yield: only Animal Magnetism (old crone's house polygon, Rimmington forging square) and Bear Your Soul (Arceuus Library) had {{Map}} pins; the other 3 quests had zero coordinate templates in their fetched Walkthroughs.
+- Verb-enum gaps surfaced by this batch: no wait/stealth-timing primitive, no "listen-at" primitive, no player-to-player trade primitive (noted in a prior asgarnia batch too for Heroes' Quest) -- recurring theme worth a closed-enum review if quest-atomizer keeps hitting it.
+- Canonical trigger for next wave: when the wiki text never names a crafted/forged end-item (just "the magnet", "the container"), mint an own-words placeholder slug scoped to the quest (item-questname) and flag via a note hint -- don't leave produces{} empty just because the proper noun is missing, since downstream consumers still need the produces/consumes edge to exist.
+- No stuck/skipped items this batch; all 5 held rows cross-checked cleanly against quest_db (reqs/xp untouched, per discipline).
+## norm-q-asgarnia-05 retro
+- Scope: 5 quests (Enlightened Journey, Forgettable Tale..., Scorpion Catcher, Skippy and the Mogres, The Corsair Curse) atomized into questatoms:<slug> rows. 0 prior contrib rows existed for these slugs -- no dupe risk.
+- Fetch cost: exactly 5 gets total (1 per quest, `--section 2` on each /Quick guide), all pulled full walkthroughs incl. nested H3/H4s -- well under the 5-get-per-quest budget.
+- Atom counts: enlightened-journey 36 (balloon minigame is atom-heavy by nature), forgettable-tale 38 (6-room minecart dungeon + brew waits), scorpion-catcher 11, skippy-and-the-mogres 6 (miniquest, single flat section), the-corsair-curse 26.
+- Verb-enum gap (see gotchas): no minigame-button or wait-on-timer primitive; used consume/toggle for buttons, claim+until:{state} for timed waits. Canonical trigger for next wave: any quest brief touching a minigame or a real-time wait should pre-empt this mapping rather than re-deriving it per-agent.
+- Repetition collapse: Forgettable Tale's 3 identical cart-puzzle rooms -> 3 count=3 atoms instead of 9 unrolled ones, extending never-unroll-repetition to puzzle repeats, not just grinds.
+- Coords: real {{Map}} pins on Scorpion Catcher (incl. one dungeon-depth y=9796 confirming the envelope) and Corsair Curse (6 named NPC pins, reused across atoms); zero Map templates on the other 3 quests, left empty rather than guessed.
+- Never-fabricate: 2 genuine wiki-blanks left "??" (Forgettable Tale's randomised fetch item; Corsair Curse's unlabeled {{Chat option|1}}).
+- All 5 rows validated locally (contiguous idx, closed-enum verbs, checkpoint start_idx bounds, coord sanity envelope, ref slugs all present in manifest.jsonl) before contribute; all 5 contributed clean, no duplicate-key skips.
+## norm-q-asgarnia-06 retro
+Scope: 6 quests (quest-subchecklist track) -> questatoms:the-giant-dwarf(28 atoms/4 checkpoints),
+questatoms:the-hand-in-the-sand(27/5), questatoms:the-knights-sword(12/3),
+questatoms:witchs-house(19/3), questatoms:a-porcine-of-interest(11/3),
+questatoms:below-ice-mountain(13/5). All 6 contributed clean (no pre-existing keys).
+Fetches: 6 sections + 6 --section 2 --strip gets, all single-shot (parent-pulls-children
+held for every target, 0-4 subheadings each). Zero coords anywhere (no Map templates in
+any of the 6 blobs) -- these are compact single-area quests, unlike prior waves' cross-map
+epics. Atom-level reqs cross-checked from held quest_db rows onto the one walkthrough
+action each skill obviously gates (mining/thieving/magic); Hand in the Sand's Crafting 49
+had no obvious action to pin it to, left off per '??' discipline rather than guessed.
+No blocked/skipped quests this run.
+## norm-q-asgarnia-07 retro
+Scope: 6 quests (Biohazard, Doric's Quest, Dwarf Cannon, Ethically Acquired Antiquities,
+Goblin Diplomacy, Pandemonium) atomized into questatoms:<slug> rows. All 6 contributed
+cleanly (no pre-existing keys). Total 6 gets (1 per quest, parent-pulls-children pattern
+held everywhere), 117 atoms across 6 quests (36/5/17/21/12/26), all idx-contiguous,
+verb-enum-clean (post-mapping), checkpoint start_idx validated.
+Trigger for next wave: the closed verb enum needs canonical additions for (a) object
+examine/investigate, (b) pickpocket, (c) vehicle/vessel controls (helm/sails/hook/
+gangplank) -- all three surfaced fresh here and got ad-hoc talk-to/gather/toggle
+overloads; a future pass should either mint real verbs or ratify these three mappings
+in GRANULARITY.md so downstream atomizers stop re-deriving the same choice.
+Also: when a quest's normal-account path implies a GE purchase (banned by hard rule)
+but an Ironman-version subsection documents the same step via gather/buy/produce,
+substitute the Ironman path as canonical rather than dropping the atoms -- worth adding
+to the standing normalize-q brief text.
+## norm-q-asgarnia-08 retro
+Scope: 4 quests (Pirate's Treasure, Recruitment Drive, Witch's Potion, X Marks the Spot) -> 4 questatoms rows, 45 atoms total (21/7/10/7).
+Fetches: 4 gets total (3 cache hits, 1 fresh: Recruitment Drive s2 3065B), well under 5-get/quest budget; Witch's Potion reused 3 pre-cached subsection blobs (s3/s4/s5) instead of a parent .s2 fetch.
+Coverage: zero {{Map}}/{{NPC map}} templates across all 4 pages -- coords[] empty on all 45 atoms, confirmed absent not skipped.
+Never-fabricate hits: Pirate's Treasure's Luthas payment amount, Witch's Potion's burnt-meat product name -- both "??" with note hints, not guessed.
+Novel pattern: Recruitment Drive's "5 of 7 rooms random, Sir Leye guaranteed" gauntlet modeled as deterministic-room-atoms (Sir Leye: gather+equip+kill) + ONE count=4/until:{state} atom for the 4-of-6 random pool, extending the Wanted! randomized-loop precedent from item-collection to quest-structure level. Canonical trigger for next wave: when a quest gauntlet mixes guaranteed + randomly-selected sub-encounters, split guaranteed ones into normal atoms and collapse the random pool into one count/until atom with per-branch detail summarized in prose, never unrolled into per-branch atoms.
+All 4 refs cross-checked against manifest.jsonl before contribute; all 4 keys confirmed present in contrib.jsonl post-contribute.
+## norm-q-desert-01 retro
+- Scope: 2 quests (Beneath Cursed Sands, Desert Treasure II - The Fallen Empire), both real populated /Quick guide pages, zero redirect/transclusion-stub traps.
+- Fetch: 6 gets for BCS (all cache hits, prior-session cached H3s) + 1 get for DT2 (cache hit, full-page blob) = 7 total, all free/cached, 0 fresh API calls.
+- Emitted: questatoms:beneath-cursed-sands (49 atoms/6 checkpoints), questatoms:desert-treasure-ii-the-fallen-empire (151 atoms/12 checkpoints) -- both built via a small Python generator + a schema validator script (verb enum, target enum, cmp enum, idx contiguity, 80-char label cap, checkpoint start_idx monotonicity) before contributing, given the row sizes.
+- Coords: empty throughout both rows -- zero {{Map}}/{{NPC map}} templates found in either quest's fetched text.
+- Canonical trigger for next wave: on Grandmaster/very-long quests with no per-subsection cache, don't spend get-budget re-fetching each H3/H4 -- one full-page get (often already cached) plus a coarse single ref for all atoms is the correct move, and it's fine (with a notes flag) to compress an obviously-repeated fetch-quest loop within one quest to a handful of grouped atoms instead of unrolling every bullet, same spirit as the existing never-unroll-repetition rule for grinds/puzzles.
+- Skipped: nothing -- both quests fully atomized within budget.
+## norm-q-desert-02 retro
+Scope: 2 quests (The Curse of Arrav, Contact!) -> questatoms:the-curse-of-arrav (38 atoms/3 checkpoints), questatoms:contact (17 atoms/3 checkpoints). Both contributed clean, no prior duplicate-key collisions.
+Fetch: 1 get each (both parent-Walkthrough-pulls-children, well under 5-get budget); Curse of Arrav's Quick guide existed despite the held row only citing the main page.
+Verb-enum gaps hit: obstacle-clearing mining (mapped use-on) and object-inspection ("inspect the mural" mapped talk-to, reusing gotcha #27's precedent) -- no new mappings invented, both reused established analogs.
+Never-fabricate: ring-of-life consumption on the canopic jar left as consumed with a notes-field caveat rather than a "??"; Kaleef's-body search item resolved to "parchment" since that's the wiki's own next-bullet noun, not a guess.
+Coords: zero across both quests -- confirmed by reading the full fetched text, not a fetch gap.
+Trigger for next wave: when a Quick-guide ref exists but the held quest_db row only cites the main page, still check /Quick guide via `sections` before falling back -- don't trust the held row's ref list as a signal that no quick guide exists.
+## norm-q-desert-03 retro
+4/4 quests atomized: Enakhra's Lament (33 atoms/4 checkpoints), Sleeping Giants (21/2), What Lies Below (16/3), Family Pest (8/3) -- 78 atoms total, all contributed and idempotency-checked (no key collisions).
+Fetch budget: 11 sections read, only 1 fresh get (Family_Pest_Quick_guide.s2), rest cache hits -- well under the per-quest 5-get budget across all 4.
+Coords: only 2 {{Map}} pins found (Lazim x=3191/y=2926 in Enakhra's Lament; Rat Burgiss x=3266/y=3333 in What Lies Below), both surface envelope; Sleeping Giants and Family Pest had zero Map templates, coords[] empty on those two rows' atoms.
+Canonical trigger for next wave: the cmp enum (eq|gte) has no primitive for decreasing/threshold-below conditions ("bring boss to <=2 hp", heat/progress gauges) -- next quest-atomizer brief should either extend cmp to include lte, or explicitly bless the free-text until:{"state":"..."} escape hatch this row used instead, so future agents don't waste time forcing gauge/hp-threshold conditions through count+cmp.
+Verb-enum gaps hit again: no primitive for pure-gp costs with no sourcing step (Family Pest's 500k gp) and no primitive for combined/unsplit multi-target repair-item lists (Sleeping Giants) -- both handled via existing verbs (talk-to consumes coins; use-on with "??" consumes) rather than inventing new verbs, consistent with prior waves' policy of mapping to nearest existing primitive.
+## norm-q-fremennik-01 retro
+- Scope: 2 quests (quest-the-fremennik-exiles, quest-the-fremennik-isles), atomized from Quick guide Walkthrough sections only (main-page fetch never needed).
+- 1 get per quest sufficed (parent-section-pulls-children held at full depth: whole Walkthrough in one --section 2 fetch, 7617B/6987B).
+- Emitted questatoms:the-fremennik-exiles (33 atoms, 6 checkpoints) and questatoms:the-fremennik-isles (49 atoms, 6 checkpoints); both new keys, no collisions.
+- Modeled gather/produce paths only where the wiki page itself offered a GE-buy shortcut (Fremennik shield drop-farm over Bardur NPC-purchase; yak-hide/Neitiznot-shield craft-from-scratch over GE purchase) per the hard no-GE rule — flagged the substitution in each row's notes.
+- Two genuine "??" fields left rather than fabricated: Bardur's shield gp-cost (page text itself truncated/missing the number) and the King's ore-tribute quantities (page states them in a Mining-level-keyed table not captured by the section fetch).
+- No coordinate data available in either fetched blob (no Map/NPC map templates present) — coords[] empty throughout, not a gap.
+- Trigger for next wave: when a Quick guide's `sections` listing shows a Walkthrough parent whose own listed byte size is tiny (<200B) relative to its child subsections' sum, always try fetching the PARENT section index first before planning a per-child fetch budget — it is very likely to already contain the full combined text.
+## norm-q-fremennik-02 retro
+Scope: 4 quests (Throne of Miscellania, Royal Trouble, Horror from the Deep, Making History), Fremennik-region kingdom-management chain. 27+35+14+14 = 90 atoms across 16 checkpoints, all contributed fresh (no duplicate-key skips, no concurrent-dispatch collision). Zero pre-existing questatoms:* keys for any of the 4 quest ids at session start.
+Fetch cost: 11 `get` calls total (2 ToM, 3 RT, 1 HFTD, 5 MH), all fresh network fetches (0 cache hits) -- well under the 5-get-per-quest budget; Royal Trouble/Making History both confirmed the parent-Walkthrough-pulls-children pattern (16B stub H2 -> real H3 leaves).
+Coords: only Making History's Erin-lead dig spot has a {{Map}} pin (2442,3139, surface plane 0, north of Castle Wars); the other 3 quests have zero coordinate data, a fetch-confirmed gap.
+Schema gap flagged: Throne of Miscellania's Astrid/Brand romance choice needed the branch-folded-into-hints workaround (no branch{} primitive in this task's atom schema) -- second occurrence after Heroes' Quest's two-player track, worth a canonical branch{} field if quest atomization keeps hitting real player-facing choices.
+Canonical trigger for next wave: when a quest's Quick guide has a {{tabber}}-wrapped dual path (romance/faction/class choice), pick the first-listed path as canonical atoms and fold the other into a single note hint rather than re-deriving a branch convention each time.
+## norm-q-fremennik-03 retro
+Scope: 2 quests (Mountain Daughter, Olaf's Quest), Fremennik region. 62 atoms total (41+21) across 9 checkpoints (5+4), both contributed fresh (no duplicate-key skips, no prior questatoms:* keys existed for either quest at session start).
+Fetch cost: 2 gets total (one get --section 2 --strip per quest), both fresh network fetches recorded at manifest.jsonl:1734-1735; the parent-Walkthrough-pulls-children pattern (gotcha #326) held again for both quests, well under the 5-get/quest budget.
+Coords: Mountain Daughter has 2 surface-envelope pins (camp entrance, Svidi search area); Olaf's Quest has zero -- both fetch-confirmed, not gaps.
+Genuine wiki-side blanks left "??"/flagged rather than fabricated: 2 bare {{Chat option|N}} labels (Olaf's Quest), damp-planks + ropes sourcing/consumption (Olaf's Quest dungeon).
+Verb-enum notes: no new gaps hit -- gather/use-on/talk-to/walk-to/teleport/kill/consume/equip/toggle covered every bullet in both quests.
+Trigger for next wave: when a quest's held quest_db reqs.skills has no textually-explicit action tie, default to leaving atom-level reqs null rather than guessing placement onto the "closest" action -- only place reqs.skills when the walkthrough prose itself states the level next to the action (as Olaf's Quest's inline "requires 47 Slayer" did for the optional brine rat kill).
+## norm-q-kandarin-01 retro
+Scope: 2 quests (Mourning's End Part I, Mourning's End Part II), both Kandarin/elf-chain.
+MEPI: 46 atoms / 6 checkpoints. MEPII: 104 atoms / 9 checkpoints (5-chest + Death Altar
+light puzzle atomized at full per-mirror/per-crystal grain -- large but faithful, on par
+with DT2's 151). 15 wiki gets total (6 MEPI + 9 MEPII child sections), all fresh fetches
+except the top-level page blobs (cache hits from a prior session); confirmed the
+parent-pulls-children pattern one level deeper than usual on MEPII's s4/s9 H3 stubs.
+Zero pre-existing questatoms:* keys for either quest at start -- both contributed fresh,
+no duplicate-key skips. Two new verb-enum gaps logged (drop->consume, re-pick-up-crystal
+->gather). MEPI's sole coordinate source (4 sheep pins) attached to its one dye-fire atom;
+MEPII has zero {{Map}} templates anywhere. Both rows' notes flag the Ironman 50-item
+Death Altar alt-route and the naphtha-sieve intermediate item as legitimate wiki-side "??"
+gaps, not fetch shortfalls.
+## norm-q-kandarin-02 retro
+Scope: 2 quests (Secrets of the North, Regicide), Kandarin region. 46 + 42 = 88 atoms total across 11 checkpoints (5 + 6), both contributed fresh (no duplicate-key skips, no concurrent-dispatch collision).
+Fetch cost: 6 gets total (5 for Secrets of the North's non-inlining H3 stub, 1 for Regicide's inlining stub) -- both well under the 5-get-per-quest budget; zero cache hits, all fresh network fetches.
+Coords: zero {{Map}} templates in either quest -- coords[] empty on all 88 atoms, a fetch-confirmed gap not a shortfall.
+Canonical trigger for next wave: don't assume "16B/112B stub H2" implies inline-children -- try the parent section get first regardless of byte count (cheap, 1 call), and only fall back to per-H3 gets if the returned text is thin; Secrets of the North and Regicide sat right next to each other in the same task and behaved oppositely.
+[retro] og-g1 (W3 GENERATE, quest monoliths seg 1/6, quest-sheep-shearer..quest-goblin-diplomacy)
+- Did: whole-page --strip fetch x12 (no /Quick guide fan-out needed, all mains had full content); authored 152 Faux-grain atoms across 12 quests, phase-split via location.quest_phase + checkpoints[] per multi-region quest (Death Plateau 5 checkpoints, Dragon Slayer I 8, A Soul's Bane 6 rooms); 2 branch{} alt-source pairs (goblin-mail crates-vs-drop, redberry buy-vs-pick); fixed the pre-flagged sheep-shearer GE-violation + found/fixed one more (Gertrude's Cat sardine); 18 "??" placeholders, zero fabricated counts.
+- Canonical trigger for next wave's brief: queue payload fix_ids for GE-violations is NOT exhaustive -- direct future GENERATE briefs to re-scan every quest's own item/recommended fields, not just trust the prioritizer's flagged subset.
+- Schema note: followed OPPORTUNISTIC_GRANULARITY.md's own qss- worked example precedent of putting refs[] at the contribution level (not per-atom) -- GRANULARITY.md 5a/5b's authored examples carry no per-atom refs field either, so this is the established pattern despite the micro_prompt's OUTPUT line reading ambiguously.
+## norm-q-kandarin-03 retro
+Scope: 4 quests (Roving Elves, The Path of Glouphrie, Alfred Grimhand's Barcrawl, Cold War). 113 atoms total (15+26+12+60) across 16 checkpoints, all contributed fresh (no duplicate-key skips, no concurrent-dispatch collision). Zero pre-existing questatoms:* keys for any of the 4 quest ids at session start.
+Fetch cost: 8 total `get` calls (3 Roving Elves + 2 Path of Glouphrie + 1 Barcrawl + 1 Cold War, well under 5-per-quest budget) plus 4 `sections` calls; Cold War's single fetch pulled its entire 12-subsection walkthrough despite a 16B stub listing, extending gotcha #63.
+Coords: zero {{Map}}/{{NPC map}} templates anywhere across all 4 fetched blobs -- coords[] empty on all 113 atoms, a fetch-confirmed gap not a shortfall.
+Scope calls flagged in-row rather than silently resolved: Roving Elves' rope-quantity mismatch (held "Rope" singular vs 2 wiki uses), Path of Glouphrie's 6-monolith maze collapsed to one count atom, Cold War's held "1-3 Icelords" left as gte/until since the wiki text itself gives no number.
+Canonical trigger for next wave: when a Walkthrough H2 lists as 16B in `sections` output, still try ONE `get --section N` on it before assuming per-child fetches are required -- Cold War proved a 16B-labelled stub can still pull all 12 real children inline (same as Beneath Cursed Sands, gotcha #63), so the stub-heuristic should gate to "try the parent first," not "skip straight to children."
+## norm-q-kandarin-04 retro
+Scope: 5 quests (Fight Arena, Observatory Quest, Sea Slug, Temple of Ikov, Waterfall Quest), Kandarin region. 110 atoms total (15+19+22+26+28) across 18 checkpoints, all contributed fresh (no duplicate-key skips, no concurrent-dispatch collision). Zero pre-existing questatoms:* keys for any of the 5 quest ids at session start.
+Fetch cost: 5 `sections` + 5 `get --section 2` calls (one Walkthrough fetch per quest), well under budget. 3 of 5 (Fight Arena/Observatory Quest/Sea Slug) had no prior subsection-level cache so cite the coarser .s2 parent slug throughout; Temple of Ikov and Waterfall Quest reused precise pre-cached per-subsection slugs (s3-s7 / s3-s6) from an earlier session for exact per-checkpoint refs.
+Coords: only Fight Arena has a {{Map}} pin (1 pin, armour chest); the other 4 quests have zero {{Map}} coordinate data -- Observatory Quest's only "map" is a plain image legend, explicitly not a {{Map}} template (worth double-checking this distinction on other quests too, since a quest page can *look* like it has a map via a File: legend image while having zero machine-readable coords).
+Branch handling: Temple of Ikov's good/evil path choice atomized good-path-canonical + evil-path-as-note-hint, consistent with the Throne of Miscellania/Heroes' Quest precedent for two-option quest branches.
+Canonical trigger for next wave: when a quest's Quick guide legend references a "map" via a plain File:...png image (not a {{Map}} template), grep specifically for the literal string "{{Map" rather than just "Map" -- "Map" alone will false-positive on image-legend captions and File: links that carry zero numeric coordinates.
+## og-g2 retro (oppgran depth:02, wave 3 GENERATE)
+Scope: 12 quest monoliths quest-hazeel-cult..quest-rag-and-bone-man-i (route-grand order), 0 pre-existing
+questatoms/oppgran keys claimed. Output: 188 atoms across 12 oppgran:atoms:<quest-id> contributions
+(20+4+24+3+14+27+8+13+6+25+36+8), all validated (verb/kind/hint enums, refs-vs-manifest slug check,
+coarse_of consistency, checkpoint resolution) before contribute.
+U8 reuse paid off twice: quest-making-history and quest-biohazard already had full questatoms:* rows
+from an earlier normalize-q pass -- converted schema instead of re-researching (saved 2 full quest
+fetches). All other 10 quests fetched fresh, ~30 wikicli get calls total, 100% cache hits except one
+fresh 31B stub fetch -- this whole bundle's pages were pre-warmed before the task ran.
+Found and corrected one queue-payload error: Imp Catcher IS a GE violation (bead-buying bullet) despite
+the depth:02 payload claiming zero for this bundle -- classify/prioritize passes only inspected route-grand's
+own step details, not the cited wiki page's actual walkthrough text, so a GE bullet buried in the SOURCE
+page (not the coarse step's own detail) was invisible until this deep-dive read the page.
+Canonical trigger for next wave: (1) grep questatoms:* BEFORE wikicli fetches on every og-g* bundle, not
+just contrib-key dedup -- reuse is often already sitting there; (2) GE-violation classify flags from wave-1/
+wave-2 are a lower bound, not ground truth -- re-check for GE bullets during the actual deep-dive fetch,
+since they only scan step-level text, not page-level text.
+## norm-q-kandarin-06 retro
+Scope: 4 quest atomizations (Fishing Contest, Hazeel Cult, Monk's Friend, Plague City), all quest-subchecklist track.
+All 4 /Quick guide subpages existed (no fallback-to-main-page needed, despite brief flagging Hazeel/Plague City as "verify exists").
+Fetch budget: 4 sections + 4 section-2 gets = 8 calls, several were cache hits from earlier passes; well under the 5-gets/quest budget.
+Held rows (steps_quests.jsonl) cross-checked but untouched -- reqs/xp/rewards already correct there, this pass only added ordered atoms.
+Coords: only Fishing Contest (2 named dwarf pins) and Monk's Friend (1 stone-circle pin) had {{Map}} templates in the fetched text; Hazeel Cult and Plague City had none, left coords=[].
+Hazeel Cult required an explicit branch-modeling decision (see gotchas.log) since the row schema has no branch{} key -- flagged as a trigger for a future schema revision if more branch quests come through this track.
+Atom counts: fishing-contest=10, hazeel-cult=19 (branches included), monks-friend=8, plague-city=20.
+All 4 emitted as questatoms:<slug>, kind quest-expansion, contributed clean (no key collisions).
+Trigger for next wave: quest-subchecklist briefs hitting a branching quest should get explicit guidance on whether to model both paths flat-with-hint-tags (this session's choice) or pick one canonical path and note the alt in prose -- the schema doesn't currently declare a preference.
+[og-g3 retro] Segment 3/6 of quest-monolith atomization, quest-the-fremennik-trials..quest-the-golem (12 quests,
+212 atoms, 33 checkpoints total). Fremennik Trials alone contributed 54 atoms (7 independent council-vote
+sub-trials, each functionally its own mini-quest) -- by far the largest single quest-monolith atomized so far
+across og-g1/g2/g3; modeled Sigmund's 12-NPC fetch chain as 12 talk-to atoms collapsed into ONE final delivery
+atom (mechanical hand-offs, no player decisions -- same semi-atomic treatment as A Soul's Bane's instanced rooms).
+Trigger for next wave: when a bundle's queue-payload note flags a stated-vs-enumerated COUNT mismatch (not just a
+boundary question), check the route-grand.json step's own `atom` field before atomizing -- it silently excludes
+already-atomic steps that the queue's step_ids list doesn't filter out. Also: this bundle had the highest
+GE-violation FIX-flag density (6 of 12) of any og-g* segment and every single flag was a false positive --
+worth a standing note that fix_ids flags need verification in BOTH directions (over- and under-flagging), not
+just the under-flagging og-g1 already caught.
+## norm-q-karamja-01 retro
+- Scope: quest-tribal-totem + quest-barbarian-training, both quick-guide walkthroughs.
+- Fetches: Tribal Totem/Quick guide s2 (1 section); Barbarian Training/Quick guide s4,s5,s7,s8,s10,s11,s12,s13 (8 leaf sections, both s1 cache hits on sections index). All manifest-confirmed, no redirects/apostrophe traps hit.
+- Emitted 2 rows: questatoms:tribal-totem (11 atoms, 4 checkpoints), questatoms:barbarian-training (29 atoms, 8 checkpoints across the 6 independent Otto lessons -- Firemaking split into 2 checkpoints since bow-firemaking and pyre-ships are separately gated sub-lessons on the page).
+- Traps found: no map pins on either page (coords[] empty throughout, correctly so); Barbarian Training's firemaking level/log table is off-section (not in s7's own bytes) -> "??"; Smithing's repeat dialogue turns are real state gates, not noise.
+- Held-row cross-check: both quest_db rows (reqs/xp) matched page content with no contradictions; did not touch reqs/xp, only walkthrough atoms.
+- Canonical trigger for next wave: when a quick-guide subsection says "see the table for X", always check whether that table lives in the SAME section fetch before trusting it -- table transclusions frequently sit in a different section or an infobox and won't appear in a single --section --strip pull.
+- Skipped: nothing: both quests fully atomized within budget (2 gets on Tribal Totem incl. sections-map cache hit, 10 gets on Barbarian Training incl. cache hits).
+## norm-q-kandarin-05 retro
+Scope: 6 quests (Zogre Flesh Eaters, Sheep Herder, Tower of Life, Clock Tower, Current Affairs, Eagles' Peak), all in/near Kandarin. 159 atoms total (36+10+32+29+18+34) across 35 checkpoints, all 6 contributed fresh (no duplicate-key skips, no concurrent-dispatch collision, zero pre-existing questatoms:* keys at session start).
+Fetch cost: 6 `get --section 2 --strip` calls, all fresh network fetches (0 cache hits) -- one per quest, well under the 5-get-per-quest budget; parent-pulls-children held 6/6 despite 3 of the 6 titles being flagged "verify exists" in the brief.
+Coords: only Sheep Herder (4 pins) and Tower of Life (1 pin) have any {{Map}} data; the other 4 quests have zero -- consistent with the batch-to-batch variance seen in prior waves (some batches are coord-rich, most are not).
+Continuity mismatch: Clock Tower's held quest_db row swaps the blue-cog/white-cog locations relative to the actual wiki page -- flagged in the row's own notes, not silently reconciled.
+Canonical trigger for next wave: when a brief flags "verify exists -- fall back to main page" for a /Quick guide title, still try `sections` on the /Quick guide title FIRST -- it existed in all 3 flagged cases here, and the fallback instruction should be treated as a contingency, not a default.
+## norm-q-kourend-01 retro
+Atomized 4 Kourend-region quests into questatoms:* rows (quest-expansion kind):
+a-kingdom-divided (70 atoms/4 checkpoints, the longest quest walkthrough seen in this
+track so far -- 5 named sub-quests fused into one), getting-ahead (17/3), in-search-
+of-knowledge (8/1), the-ascent-of-arceuus (15/1). All 4 keys were unclaimed pre-run
+(zero collision). Cross-checked held rows in steps_quests.jsonl per brief (reqs/xp/
+rewards untouched, quest_db is source of truth for those) -- only walked the wiki's
+own Walkthrough prose for atom content. Zero {{Map}}/{{NPC map}} pins appeared in any
+of the 7 fetched sections, so every atom's coords[] is an empty array (no fabricated
+coordinates). All ref slugs verified present in manifest.jsonl post-hoc via script
+(0 bad refs across 4 rows). Two new parent-pulls-children fetch-budget confirmations
+(In Search of Knowledge has real Quick-guide content unlike the norm; Getting Ahead's
+"?" byte marker == same-fetch children) filed as gotchas above, plus a wiki-source-
+internal NPC-spelling inconsistency (Kaht/Khat B'alam) worth flagging for any future
+agent citing that NPC by name. Budget: 7 gets total (well under the <=5-per-quest
+cap since most sections were single-fetch flat or parent-pulls-children).
+## norm-q-kourend-02 retro
+Scope: 5 quests (The Depths of Despair, The Forsaken Tower, The Garden of Death, The Queen of Thieves, Client of Kourend), all in/near Great Kourend. 91 atoms total (13+23+27+16+12) across 24 checkpoints, all 5 contributed fresh (no duplicate-key skips, zero pre-existing questatoms:* keys at session start).
+Fetch cost: 9 get calls total (1 each for Depths/Garden/Queen, 3 for Forsaken Tower s3/s4/s9, 0 fresh for Client of Kourend -- its 2 sections were already cache-hit) -- well under the 5-get-per-quest budget across the board.
+Puzzles: The Forsaken Tower is puzzle-dense (power grid, water-jug coolant measurement, potion riddle, 4-disc pylon sequence) -- both the jug measurement and disc sequence collapsed to one composite atom each with the full move sequence in the detail field, rather than unrolled per sub-step.
+Coords: Garden of Death (4 named pins), Queen of Thieves (5 named pins + 1 uncaptioned polygon), Client of Kourend (5 pins, 2 captioned) all had real {{Map}} data; Depths of Despair had 1 pin; Forsaken Tower had zero -- a genuine batch-to-batch coord-richness variance, not a fetch shortfall.
+Canonical trigger for next wave: when a {{Map}} pin block has more named pins than the walkthrough has matching bullets (Queen of Thieves' unused "Poor looking woman" pin), or an uncaptioned polygon with no name field, don't drop it silently -- attach it to the nearest plausible atom with an explicit ambiguity note; this keeps coordinate data available for a future consolidator pass without asserting a false certainty.
+## og-g4 retro
+Scope: quest monoliths segment 4/6, quest-elemental-workshop-i..quest-the-giant-dwarf. Re-enumerated route-grand.json directly (indices 115-155) rather than trusting the queue's mirrored 18-id bundle, resolving to exactly 12 quest-* steps without atom{} -- matching the brief's stated count and confirming quest-mm/quest-lost-city/quest-the-feud (already atomic) and rfd-goblins/rfd-awowogei/unlock-barrows (non quest-* prefixed) were correctly out of scope.
+179 atoms total (10+13+11+18+11+16+14+13+15+18+12+28) across 12 quests, 50 checkpoints, 26 "??" placeholders. quest-the-giant-dwarf reused verbatim from an existing questatoms:the-giant-dwarf row (U8) via a small python transform -- zero fresh wiki fetches for that one.
+GE-violation audit: re-checked every quest's own fetched page text against the queue's fix_ids rather than trusting the flags. 9/10 flagged ids were false positives (no real GE mention, or only a post-quest resale line); 1 real violation found and fixed (quest-in-search-of-the-myreque's druid-pouch charges -- modelled the Silver sickle (b) gather route instead of the page's own "buying from the Grand Exchange" alternative).
+Fetch cost: whole-page `get "<Title>" --strip` sufficed for all 11 freshly-researched quests (no /Quick guide fetch needed) -- same pattern as og-g1/depth:06-08, all main pages had real inline Details+Walkthrough+Rewards. Manifest recorded the bare title as slug (no .sN suffix) for every one since none used --section.
+Grain choices worth noting: Underground Pass (Long quest, 24 walkthrough subsections) collapsed to 18 atoms via checkpoint-level puzzle bundling (one atom per multi-lever/grid puzzle, not per click) plus per-item gather atoms for the four Iban-doll components; Elemental Workshop II's pipe-junction/cog puzzle and Haunted Mine's cart-lever puzzle got the same one-atom-per-solved-puzzle treatment (U4/U7).
+Canonical trigger for next wave: a prioritizer's "confirm exact window before atomizing" flag on a bundle whose id count exceeds the brief's stated count is a real signal, not noise -- always re-derive scope from the route-grand.json fixture directly (atom===null AND id prefix match) rather than the queue's mirrored id list, since the mirror can include already-atomic ids or wrong-prefix ids from adjacent tracks.
+## norm-q-misc-02 retro
+- Target: quest-monkey-madness-ii (Grandmaster, 5 chapters). 1 get (Quick guide --section 2, 19944B, pulled all chapters+subsections inline).
+- Emitted questatoms:monkey-madness-ii: 78 atoms, 7 checkpoints (Getting Started, Ch I-V with Ch III split into 'leaders' and 'airship' checkpoints).
+- Branch handling: Kruk-dungeon agility-vs-tank maze route folded per Hazeel Cult/Tower of Life precedent -- agility canonical, tank path in a note hint.
+- Collapsed per never-unroll-repetition: airship stealth minigame (6 satchels x 6 sabotage points -> 3 count=6 atoms), Chapter I invisible-ink puzzle (4 bullets -> 1 atom, reagent names unstated so left unnamed).
+- No {{Map}} pins in fetched text -> all atoms coords: [].
+- Canonical trigger: quick-guide parent-Walkthrough-pulls-children-inline pattern holds at full Grandmaster-quest scale (5 chapters, 78 atoms) via a single get -- no need to budget per-chapter gets even for the longest quests.
+## norm-q-misc-01 retro
+Scope: 1 quest, Dragon Slayer II (Grandmaster). 83 atoms across 14 checkpoints, contributed fresh (no pre-existing questatoms:dragon-slayer-ii key at session start).
+Fetch cost: 15 `get --section N --strip` calls on Dragon Slayer II/Quick guide (s3-s17), all cache hits (0 new network fetches, well under the 5-get budget) -- the whole page was pre-warmed from an earlier session at 2026-07-12T17:44Z.
+Structure: "The dragon key" (s8, 156B-listed stub) parent-pulled all 5 key-piece children inline (s9-s13); "The Assault" (s15) parent-pulled "The Final Battle" (s16) inline. Both patterns already logged; cited precise child slugs per atom since all children were separately manifest-recorded.
+Coords: exactly one {{Map}} pin in the whole 21KB quick guide (Karamjan Temple entrance) -- attached to the maze-entry atom; every other atom's coords[] is empty, a fetch-confirmed gap.
+GE check: zero "Grand Exchange" mentions anywhere -- no violation flag needed.
+Canonical trigger for next wave: for GM-tier globe-trotting quests, always grep the full fetched text for "{{Map" up front before atomizing -- a single early grep across all sections (rather than per-section as you go) confirms coord sparsity/density in one pass and avoids re-checking later sections piecemeal.
+## og-g5 retro
+- Scope: quest monoliths segment 5/6, quest-the-hand-in-the-sand..quest-temple-of-ikov (route-grand.json indices 156-178). Re-enumerated directly from the fixture (atom===null AND id starts with "quest-"); resolved to exactly the 12 ids the queue bundle listed (quest-fairytale-1 already atomic, correctly excluded).
+- 221 atoms total (24+15+26+6+12+15+26+21+24+20+18+14) across 12 quests, 56 checkpoints, ~35 "??" placeholders. No questatoms:* reuse candidates existed for any of the 12 (checked first per U8/og-g2 precedent) -- all 12 were fresh research.
+- GE-violation audit: queue stated 0 flags for this bundle; re-grepped every fetched page anyway and found 1 real violation (Enlightened Journey's willow branches) -- fixed with a gather/produce alternative (grow the quest's own sapling).
+- Fetch cost: whole-page `get "<Title>" --strip` sufficed for all 12 (no /Quick guide fetch needed), 8.5-27.8KB each. Two `search` calls resolved the ellipsis titles ("Forgettable Tale...", "Between a Rock..."); one `search` call surfaced the "Garden of Death" (no "The") title-redirect trap.
+- Grain choices: Forgettable Tale's 6-room minecart-track puzzle and Enakhra's Lament's 4 elemental-room puzzles each collapsed to one own-words use-on atom per puzzle (never the wiki's exact stone-placement/brazier-item solution key); Ratcatchers' mansion guard-choreography likewise collapsed with a safespot-type hint rather than the tile-by-tile script. Temple of Ikov's end-quest alignment choice modeled as two branch{} alt_group pairs (entry + turn-in) rather than one collapsed atom, since rewards/targets genuinely diverge.
+- Built a local schema validator (verb/kind/hint-type enums, checkpoint-start resolution, coarse_of match, duplicate-id check) before contributing -- caught 19 kind-field errors (kill->quest/gather, plant/harvest->gather) that would otherwise have shipped silently wrong; see gotcha for the exact enum mapping.
+- Canonical trigger for next wave: run a schema-conformance validator on every generated contribution bundle BEFORE calling `contribute`, not just a manual JSON well-formedness check -- enum drift (esp. `kind` for kill/plant/harvest verbs) is easy to get wrong by inference from the taxonomy table's prose and won't be caught by json.load alone.
+
+## norm-q-misc-04 retro
+Atomized 3 quests (Dragon Slayer I 28 atoms, Fairytale II - Cure a Queen 25 atoms, King's
+Ransom 34 atoms) entirely from one Quick-guide Walkthrough parent-section fetch each
+(--section 2), confirming the parent-pulls-children pattern held for all three and kept
+gets at 1/quest (well under the 5 budget). No Details/Rewards fetches needed since
+reqs/xp were already in quest_db per the held rows. Only one {{Map}} coordinate pin
+existed across all three fetched sections (Martin the Master Gardener, Fairytale II);
+Dragon Slayer I and King's Ransom have zero coord templates in their walkthrough text
+so all their atom coords are empty arrays. Two genuine kill-or-pay/alt-item branches
+(Wormbrain map piece; Telekinetic Grab vs. lockpick) modeled as a primary atom + an
+alt-method hint rather than parallel atoms. King's Ransom's 4-tumbler puzzle has no
+fixed published heights (randomized per instance) -- until-modeled with state "??".
+
+## og-g6 retro
+- Scope: quest monoliths segment 6/6, quest-rum-deal..quest-watchtower (route-grand.json indices 179-196, 7 quests). Re-enumerated directly from the fixture (atom===null AND id starts with "quest-") and cross-checked against the queue's oppgran:depth:06 step_ids list -- both agreed on exactly the same 7 ids, no scope ambiguity this round.
+- 164 atoms total (20+20+19+14+24+31+36 across rum-deal/tai-bwo/big-chompy/shades-of-mortton/the-dig-site/watchtower/zogre-flesh-eaters), 36 checkpoints, ~20 "??" placeholders (mostly RNG-yield fletching sub-counts in Big Chompy and per-supply "??" building-material counts in Shades of Mort'ton). questatoms:zogre-flesh-eaters (36 idx-based atoms) already existed from an earlier normalize-q pass -- reused verbatim per U8/og-g2/og-g4 precedent via the same python transform, saving one full research pass; the other 6 were fresh.
+- GE-violation audit: queue stated 0 flags and it held 6/6 fresh targets on direct inspection, but 3 of 6 pages DO mention "Grand Exchange" for three different non-violation reasons (Big Chompy: explicit anti-GE ruling; Shades of Mort'ton: gated-but-optional GE buy; The Dig Site: fast-travel destination only) -- logged as a taxonomy in gotchas rather than a single blanket "false positive" note.
+- Fetch cost: whole-page `get "<Title>" --strip` sufficed for all 6 fresh targets (11.4-26.7KB each), extending the 4-consecutive-bundle "main page has full content" finding. 3 of 6 (Shades of Mort'ton, The Dig Site, Watchtower) only had section-level manifest entries from an earlier [depth:xx] pass, never a bare-title whole-page fetch -- ran the whole-page fetch anyway per the brief's own "cached does not mean already extracted" hint, cheap and correct.
+- Grain choices: Tai Bwo Wannai Trio's three-son structure modeled as one linear sequence following the walkthrough's own cross-dependency resolution order (not three independent branches) since completing one son's task requires items obtained mid-way through another's. Watchtower (largest/most multi-region target) got an explicit 8-leg location.quest_phase split per the design doc's Multiquest lever -- the only quest in this bundle that repeatedly bounces the player back to a home base between remote legs. The Mad skavid's 8-line/8-response randomised table was listed in full inside one atom's detail (own words, unavoidably enumerable game data) rather than faked as a fixed playthrough, extending the og-g2 Murder Mystery precedent.
+- Ran a schema-conformance self-audit (kind/verb/hint-type enums, checkpoint-start resolution, coarse_of match, duplicate-id check, id-verb-component consistency) AFTER contributing rather than before -- caught 5 real kind-field inconsistencies (kill+produces atoms left as "quest" when the identical shape elsewhere in the SAME bundle used "gather": qrd-15/qbcb-13/qwt-06/qzfe-03/qzfe-34), the exact og-g5-flagged error class. Since contribute() is idempotent-skip-on-key and has no update verb, fixed via a direct in-place JSON edit of the 4 affected contrib.jsonl lines (preserving key/ts), same remediation already established for the [depth:07] flatten-fix precedent.
+- Canonical trigger for next wave: run the schema-conformance self-audit (esp. the kill+produces->gather kind rule) BEFORE calling `contribute`, not after -- catching it post-hoc still works (contrib.jsonl allows safe in-place edits keyed on first-seen), but costs an extra read-modify-write pass; og-g5 already minted this trigger once and og-g6 needed it again, so bake the kill-kind check into the validator script template itself rather than re-deriving it by hand each wave.
+## norm-q-misc-03 retro
+Scope: 2 quests (Dream Mentor, Legends' Quest). Both had working /Quick guide subpages with clean per-heading sections (no Details/Rewards-stub traps beyond the known ones, correctly skipped). Dream Mentor: 3 sections fetched fresh (28 atoms/3 checkpoints); Legends' Quest: 7 sections were already cache-hit from an earlier fan-out (79 atoms/7 checkpoints, the longest questatoms row I've built here, matching its held-row description as the deepest QP prereq chain).
+Zero pre-existing questatoms:* keys for either quest id at session start -- both contributed fresh, no dedupe skip.
+Built both rows via a small python script (atoms_raw list + auto-enumerate idx + checkpoint-boundary marker function) instead of hand-counting idx/start_idx -- validated idx contiguity, checkpoint start_idx bounds, and verb-enum membership programmatically before contribute; recommend this pattern for any quest >20 atoms, hand-counted idx is a silent-error trap at that size.
+Legends' Quest branch handling followed the Hazeel Cult precedent (flat atoms + branch hint, no schema branch{} key) -- this is now 2/2 quests needing the workaround; flagged as a schema gap in gotchas.log.
+Skipped as out-of-grain: vanilla pod (Recipe for Disaster) and palm leaves (Karamja Hard Diary) side-collection points visible in the Legends' Quest source text but explicitly "if needed" for other content, not required by this quest.
+Held quest_db rows cross-checked clean against fetched wiki text for both quests -- no continuity mismatches found (unlike the Clock Tower precedent).
+## norm-q-misc-06 retro
+- 4/4 quest atomizations contributed: questatoms:underground-pass (55 atoms/6 checkpoints), questatoms:creature-of-fenkenstrain (26/4), questatoms:eadgars-ruse (24/4), questatoms:curse-of-the-empty-lord (19/5).
+- Fetch budget: 1 get per quest (parent Walkthrough --section 2), confirmed nested-section-pulls-children economy holds for quest Quick guides same as training pages -- 4 gets total across the whole task, well under the 5/quest cap.
+- Quick guide existence varied all three ways in one small batch: Underground Pass (real+substantive, used), Eadgar's Ruse (real but thinner than main, used anyway per quick-guide-first default, flagged), Curse of the Empty Lord (no distinct subpage, byte-identical to main, fell back to main per KNOWN TRAPS).
+- Coords only survived where the fetched wikitext had literal {{Map}} pins -- Curse of the Empty Lord's 3-sequence x-5-ghost table gave 16 real pins (incl. one dungeon-offset y=9996 correctly kept, not "fixed"); Underground Pass/Creature of Fenkenstrain/Eadgar's Ruse text had zero pins, so coords[] stayed empty rather than invented from relative descriptions.
+- Corrected two held-row inaccuracies against fetched text rather than propagating them: Underground Pass's "paladins" (held row) vs "knights"/Sir Jerro-Carl-Harry (current page); Creature of Fenkenstrain's "kill Experiment for body parts" (held row) vs actual mechanic (Experiment kill = cavern key only, body parts come from digging 3 separate graves).
+- CANONICAL TRIGGER for next wave: micro-prompts assigning quest-subchecklist work should say explicitly "try one --section N fetch of the parent Walkthrough header first (nested H3s often ride along free), only fan out per-subsection if the parent's own byte count in `sections` looks implausibly small relative to the sum of its children" -- would have saved a guessed budget line item and made the 1-get-per-quest outcome the expected default instead of a lucky discovery.
+## norm-q-misc-05 retro
+Scope: 3 quests (Lunar Diplomacy, One Small Favour, The Red Reef), all flagged in the brief as "held row cross-check only." Lunar Diplomacy: 77 atoms/15 checkpoints. One Small Favour: 58 atoms/2 checkpoints. The Red Reef: 21 atoms/4 checkpoints. 156 atoms total, all 3 contributed fresh (no duplicate-key skips, zero pre-existing questatoms:* keys at session start).
+Fetch cost: Lunar Diplomacy 1 fresh get (s2, 14878B, parent-pulled all 15 children -- 0 additional gets needed since all 15 children were already separately manifest-recorded from a prior session). One Small Favour: 2 cache-hit gets (s3/s4, both pre-warmed). The Red Reef: 1 fresh get (s2, 3539B). 4 total wikicli `get` calls across the whole 3-quest batch, comfortably under the 5-get-per-quest budget.
+Coords: zero {{Map}}/{{NPC map}} templates anywhere across all 3 quests' fetched text -- coords[] empty on all 156 atoms, a fetch-confirmed gap not a fetch shortfall.
+Canonical trigger for next wave: The Red Reef is confirmed real, live, Sailing-skill-era quest content (Experienced tier, gates on Troubled Tortugans + Pandemonium) -- when a brief's held quest_db row cites a quest with an unfamiliar or skill-gated name, don't assume it's malformed data; fetch first, the wiki is the sole source of truth per the hard rule and unfamiliar-sounding quests may just be newer content than an agent's own training data.
+[oppgran] og-g7 GENERATE retro (wave 3, train-band segment 1/3, 2026-07-12)
+- Scope: 15 train-* bands (train-strength-60..train-hunter-29), exact match to queue oppgran:depth:07 step_ids, 0 GE-violation flags.
+- Result: 57 authored Faux-grain atoms + 2 U8-reused refs (ctr-06-stronghold-crawlers, alt branch member for str-60/atk-60), 15 contributions keyed oppgran:atoms:<train-step-id>, ~59 "??" placeholders honestly left open.
+- Biggest finding: train-band coarse rows have systemic atom.target/detail/refs 3-way mismatches (7 of 15 bands) -- not random, a consistent copy-paste-era bug class. Resolution: trust the 2-of-3 agreeing fields, re-ground via wikicli, flag outlier in notes.
+- Canonical trigger for next wave: before atomizing ANY train-* coarse row, diff its atom.target against its own detail-text noun and its own refs[] page title -- disagreement is signal, not noise, and the correct fix is usually already implied by whichever 2 fields agree.
+- Efficiency win: fetching a monster's own page whole (get "<Name>" --strip, no section) surfaces {{LocLine}} tile pins for every named spawn location in one call -- cheaper and more complete than hunting {{Map}} templates in guide prose. Used for Hill Giant, Flesh Crawler, Sand Crab -- zero "??" tiles needed for any of the 4 melee/ranged/magic sites that used this technique.
+- XP: recomputed all 15 deltas from cached Experience_table.s2 (single fetch, reused across the bundle) per the [training] gotcha; flagged old fixture xp constants as placeholders in every band's notes for Lane 5's eventual coarse-row correction pass.
+## og-g8 retro (train-band segment 2/3: train-fishing-40..train-magic-55)
+15 bands, 49 atoms, 5 fresh wikicli fetches (Superheat Item, High Level Alchemy, Steel bar,
+Green dragon, Tanner) -- route-grand.json's own methods[]/refs[]/mapMarkers[] carried the
+rest (U8 at bundle scale, not just row scale). 2/4 pre-flagged GE fix_ids were real
+(train-firemaking-30, train-crafting-54), 2/4 false positives (train-fishing-40,
+train-woodcutting-45) -- consistent with prior quest-bundle false-positive rates, now
+confirmed for train-bands too. Grounded 2 real fixes non-GE: own-chopped oak logs (from the
+immediately preceding band) for firemaking-30, kill-green-dragons -> tan at Ellis (Al Kharid,
+named NPC service, 20gp/hide) -> craft for crafting-54. Surfaced 4 in-bundle opportunistic
+ties across bands (woodcutting->firemaking logs, shared iron-ore/coal recipe across
+mining/smithing/magic, one green-dragon kill feeding both crafting-54 dragonhide and
+prayer-52 bones, smithed/superheated output as magic-55 alch fodder) as own-words
+hints/xrefs -- not wired, that's Wave 4/backprop's job. Ran a local schema-conformance
+validator (verb/kind/hint enums, coarse_of match, checkpoint-start resolution, refs-vs-
+manifest slug check, duplicate-id check) before contribute, 0 errors on first pass.
+Canonical trigger for next wave: for train-band bundles specifically, read route-grand's own
+methods[] field before any wikicli fetch -- it is itself a citation carrying manifest-backed
+refs, and cross-reading all bands in one cordoned bundle together (not one at a time) is what
+surfaces the shared produces/consumes ties cheaply.
+## norm-q-misc-07 retro
+Scope: 5 quests (Enter the Abyss, Garden of Tranquillity, Holy Grail, Hopespear's Will,
+Icthlarin's Little Helper) atomized quest-subchecklist -> questatoms:<slug> rows.
+Fetches: 1(abyss)+4(grail)+0(garden, all cache hits)+1(hopespears, main-page fallback)+
+0(icthlarin, all cache hits) = 6 net new gets across 5 quests, well under the 5-each budget.
+Atom counts: abyss 8, garden 50, grail 29, hopespears 14, icthlarin 31 -- length tracked
+the wiki's own bullet-list density closely once travel/claim/turn-in splits were applied.
+2 map coords recovered (Holy Grail whistle spot 2740,3232; Icthlarin's start 3315,2849);
+the other 3 quests' Quick guides had no {{Map}} pins in their Walkthrough text.
+Only non-trivial defect: hand-mirroring a produced-bone-key dict for the final "bury"
+atom in Hopespear's Will drifted from the programmatically-generated produce keys
+(redeyes/strongbones already end in 's', got double-s'd) -- caught by a produced-vs-
+consumed set-equality check before contributing, not by inspection. Trigger for next
+wave: when an atom set has a produce-then-later-consume item chain (bones, potions,
+etc.), script-generate BOTH sides from one source list, or diff-check before submit --
+never hand-retype the same slugs twice.
+=== og-g10 (W3, GENERATE, travel-atom pass) 2026-07-12T18:20Z ===
+Scope: ALL steps classified travel-implicit by wave-1 (oppgran:classify:s1..s4).
+Cross-diff (own + prioritizer's) found exactly ONE such row in the whole 205-step
+classified pool: ori-t-07-walk-to-survival-expert (Tutorial Island). No quest/train
+content touched (og-g1..g9's territory).
+Finding: that one row was ALREADY Faux-grain atomic (atom{verb:walk-to,
+target:survival_expert} pre-existing in steps_origin.jsonl) -- classify's
+travel-implicit tag predates atomization, doesn't mean "missing atom". Zero new
+atoms authored; contributed one enrichment row (oppgran:atoms:ori-t-07-...) adding
+grounded tile coords from Survival_Expert's Infobox NPC (two candidate {{NPC map}}
+pins, version-ambiguous, both recorded + flagged rather than guessed).
+No consumes{}/hints[]/branch{} warranted (Tutorial Island has zero transport
+alternatives at this transition -- U9's branch bar requires a route-shape choice).
+Canonical trigger for next wave: a "travel-implicit pass" brief framed as
+"whole route" should state its own prioritizer's pre-computed backlog size
+up front (1 target here) rather than leaving each worker to re-derive it --
+saves a redundant classify-cross-diff every time this track is dispatched.
+Queue: oppgran:depth:10 claimed + done. Contrib key:
+oppgran:atoms:ori-t-07-walk-to-survival-expert (idempotency-checked clean,
+0 prior travel-implicit atoms/oppgran:travel-note rows existed).
+[og-g9 retro] Segment 3/3 of train-band atomization (train-magic-70..train-herblore-38,
+13 bands, indices 30-42 in route-grand's train-* list). 55 atoms total, 13
+oppgran:atoms:train-* contributions, all idempotency-verified post-write (count=1 each).
+1 GE-violation fixed (train-smithing-60, Blast-Furnace-buy-gold-ore -> self-mined
+anvil-smithing chain) -- first GE-violation found in the train-band track vs. 6 prior
+finds all being quest-track. 1 fabricated-target correction (train-magic-70's
+atom.target='crab' had no grounding in its own cited 62-99 bursting section, and the
+one crab method on the page is explicitly headed "Levels 1-55" despite being cited as
+a 55-70 method -- replaced with dust-devil bursting, reqs honestly gated). 3 sibling
+bands (attack/strength/defence-70) shared one grounded Moss-giant location per U8 zone
+reuse. 2 bands (train-farming-50, train-herblore-38) explicitly cross-referenced
+existing steps.jsonl supply-chain rows (farm-ranarr-patch/farm-herb-patch-guam) rather
+than re-authoring. Canonical trigger for next wave: when N adjacent train-bands share
+byte-identical methods[] arrays, ground ONE location and reuse it across all N siblings'
+contributions -- don't re-derive per band. wikicli cache was already warm for every
+section this bundle needed (Moss_giant/Sand_Crab whole-page + 11 training-page section
+fetches, all cache hits or single fresh fetches, zero misses/dead ends).
+## norm-q-misc-09 retro
+Scope: 5 quests (RFD/Freeing the Lumbridge Guide, Rogue Trader, Romeo & Juliet, Sacred Bone Burner, Shilo Village) -> 5 questatoms: rows, 74 atoms total (8+17+8+4+37).
+All quick-guide pages existed except Sacred Bone Burner (no Quick guide -> used main page, which itself has no "Walkthrough" H2, just "Faith level" mechanic prose — used as-is).
+Shilo Village was the outlier: its Quick guide Walkthrough parent header carries zero content (unlike the RFD chapter and prior [normalize-s] nested-section cases) so all 5 subsections needed individual --section gets; it also had the only {{Map}} pin block in scope (5 pins, surface plane, reused across Starting-out/Ah-Za-Rhoon/Cairn-Isle/Rashiliyia travel atoms).
+Rogue Trader is confirmed non-Quest-List content per its own page but atomized per scope anyway across its 3 independent branches (Runes/Blackjacks x2/Clothes); kept dialogue-routed alt paths (force vs pick-lock, defensive vs offensive) as one linear traversal with dialogue hints rather than fabricating a branch{} key not present in the row schema.
+Two "??" placeholders used: Shilo Village's unenumerated 4th item given to Trufitus, and Rogue Trader's dye-or-hide choice (player's free pick, not a fixed item) — both are genuine wiki-text gaps, not laziness.
+Trigger for next brief: when a Quick guide's parent Walkthrough H2 has near-zero bytes, always fetch subsections individually — don't assume the [normalize-s] "parent already includes children" pattern holds; check the sections byte listing first every time.
+## og-o1 retro (opportunistic-map, wave 3, depth:11 top-half shortlist)
+Scope: 7 items (food, compost, food_monkfish, prayer_potion_4, guam_seed, seeds, nature_rune), ranks 1-7 of the 13-item opp-surface shortlist. All 7 contributed fresh under oppgran:opp:<item>@<zone> -- zero pre-existing keys at session start (grepped clean).
+5/7 had no producer row (food, compost, guam_seed, seeds, nature_rune) -> full PROPOSED-ID steps.jsonl-shaped rows authored for each; 2/7 (food_monkfish, prayer_potion_4) reused their existing cook-monkfish/brew-prayer-potion rows, adding only pin + route-order verification.
+Fetch cost: 8 fresh whole-page `get --strip` calls (Compost, Guam_seed, Master_Farmer, Nature_rune, Barbarian_Village, Monkfish, Nature_Altar, Catherby), zero cache hits, zero /Quick guide fan-out needed (these are item/NPC/location pages, not quests) -- well under budget.
+Two real cross-item findings surfaced just from reading the shortlist together: (a) guam_seed+seeds share one Master Farmer pickpocket action (two sub-tables, one NPC); (b) both rank-4/rank-7 depth-queue ambiguity flags (prayer_potion_4 route-order, embed-alch-smithing missing-from-classify) resolved from data already on hand (classify:s4 order, steps.jsonl's own slot field) with zero new fetches.
+Canonical trigger for next wave: route-grand.json is NOT a file on disk in this branch (searched, absent) -- oppgran:classify:s1..s4 contrib rows are the only surviving route-order proxy; any future og-* agent needing route position should grep those, not assume a live fixture exists.
+## norm-q-misc-10 retro
+Scope: 5 quests (Spirit of Adventure, The Blood Moon Rises, The Dig Site, The Enchanted Key, The Eyes of Glouphrie) -- a mixed miniquest/GM-finale/intermediate batch. 138 atoms total (10+64+31+12+21) across 49 checkpoints, all 5 contributed fresh -- zero pre-existing questatoms:* keys at session start.
+Fetch cost: 5 `sections` probes + 12 `get --section --strip` calls total (1 Spirit of Adventure main-page fallback, 5 Blood Moon Rises sections all parent-pulling further children, 1 Dig Site, 3 Enchanted Key incl. the treasure-locations table, 1 Eyes of Glouphrie) -- Blood Moon Rises alone used its full 5-get budget given its scale, every other quest well under.
+Coords: Blood Moon Rises had 3 real «map» pin markers (hideout, Sisterhood approach x4, wyrd building) and Enchanted Key had 11 real treasure coords from its table; Spirit of Adventure, Dig Site (except the teddy-bear bush), and Eyes of Glouphrie had none.
+Compositing: Blood Moon Rises' 7 Castle Drakan door-puzzles were each collapsed to 1-2 composite atoms (full sequence in detail) rather than unrolled bullet-by-bullet, keeping the GM quest's atom count proportionate to prior GM atomizations despite ~2x the raw source text.
+Canonical trigger for next wave: when a repeated-site/repeated-entity walkthrough section has a REAL named table (fixed identities + coords/loot, only the visit ORDER randomized), treat it as named-repetition (one atom per named entity) rather than true-RNG collapse -- reserve the single-atom RNG-loop treatment for cases where the entities/outcomes themselves are randomized, not just their order.
+## og-o2 retro (opportunistic-map, wave 3, depth:12 bottom-half shortlist)
+Scope: 6 items (coins, vial_of_water, snape_grass, ultracompost, ranarr_weed, pineapple), ranks 8-13 of the 13-item opp-surface shortlist. All 6 contributed fresh under oppgran:opp:<item>@<zone> -- zero pre-existing keys at session start (grepped clean, and confirmed og-o1's parallel top-half contributions had no key overlap).
+5/6 verdicted no-window (already-optimal, confirm-only) after cross-diffing oppgran:classify:s1..s4 slice-index order for source-precedes-consumer, not just trusting the queue's pre-supplied why-text -- 2 of the 5 (ranarr_weed, pineapple) got the strongest possible confirmation (same-slice adjacent indices) rather than weaker cross-slice inference. 1/6 (vial_of_water) was a genuine missing-EDGE gap: producer fully grounded, but consumer never wired because brew-prayer-potion's consumes{} skips the real ranarr-weed+vial-of-water->unf-potion intermediate step entirely -- authored one PROPOSED-ID row (PROPOSED-produce-ranarr-potion-unf) to close it.
+Fetch cost: near-zero -- every source/consumer step in this bottom-half batch was ALREADY fully zone/tile/ref grounded in steps.jsonl from earlier passes (pps-04-source-vials, gather-snape-grass, setup-ultracompost, farm-ranarr-patch, source-pineapples-charter, ctr-02/ctr-03 all pre-populated with mapMarkers+refs). Only 2 wikicli calls made, both cache hits (Prayer_potion.s2, Ranarr_potion_(unf).s1 Recipe templates), specifically to verify the vial_of_water recipe-chain gap. This is the mirror-opposite fetch profile of og-o1's top-half pass (8 fresh fetches, 5 missing rows) -- confirms the queue's own framing that the bottom-half is genuinely lower-effort, not just lower-payoff.
+Two live data-quality issues re-surfaced (not fixed, flagged for Lane-5, out of this pass's read-only-step scope): setup-ultracompost's consumes{} still doesn't match its own hints[] batch-size numbers (a pre-existing gotcha, confirmed STILL live rather than assumed remediated); brew-prayer-potion's consumes{} should read {ranarr_potion_unf:1, snape_grass:1} not {ranarr_weed:1, snape_grass:1} once the proposed intermediate row is adopted.
+Canonical trigger for next wave: an opp-surface item with a real producer row but an EMPTY consumers[] is not automatically "unused" -- check the item's own {{Recipe}} (or equivalent creation template) for an unmodeled intermediate production step before concluding there's no real demand; the demand can be hiding behind an over-collapsed downstream step rather than being genuinely absent.
+## norm-q-misc-11 retro
+Scope: 5 quests (The Fremennik Trials, The Frozen Door, The General's Shadow, The Grand Tree, Tree Gnome Village). 138 atoms total (77+10+11+26+14) across 21 checkpoints, all 5 contributed fresh -- zero pre-existing questatoms:* keys for any of the 5 at session start.
+Fetch cost: 5 `sections` probes (all 5 titles have real, distinct /Quick guide pages) + 5 `get --section 2 --strip` calls (3 fresh multi-KB parent-pulls-children fetches for Fremennik Trials/Grand Tree/Tree Gnome Village, 2 cache-hit flat fetches for Frozen Door/General's Shadow) -- 1 fetch per quest, well under the 5-get budget on every quest despite Fremennik Trials alone spanning 8 subsections and 77 atoms.
+Coords: The Frozen Door (1 pin, instanced-band y=5279), The Grand Tree (2 pins, surface band), Tree Gnome Village (4 pins: 3 tracker gnomes + 1 warlord, surface band) all have real {{Map}} data; The Fremennik Trials and The General's Shadow have zero {{Map}}/{{NPC map}} templates anywhere in their fetched text -- a fetch-confirmed gap, not a shortfall.
+Grain notes: Forsaken Tower-style composite-atom collapse used for Peer the Seer's bucket/jug water-measuring puzzle (one atom, full sequence in detail) and Grand Tree's TUZO pillar-spelling (count=4 exact-placement atom); Fremennik Trials' portal maze (7-step fixed South/West/East/North/South/East/North sequence) also collapsed to one composite walk-to atom per the same precedent.
+A local python validator (idx contiguity, checkpoint start_idx monotonicity+range, verb/cmp enum membership, 80-char label cap, non-empty refs with every ref slug checked against the live manifest.jsonl, hint-type enum, coord sanity envelope) ran clean on first full pass across all 5 rows (0 errors, 138 atoms) before any contribute call, per the og-g5/norm-q-misc-05/misc-08 precedent -- script-generating the atom list in python (rather than hand-typing JSON) and validating before contribute is now confirmed worthwhile on every quest bundle with a large NPC-chain quest in it, not just >15-atom single quests.
+Canonical trigger for next wave: when a quest's own Quick guide explicitly enumerates a named NPC/entity sequence performed twice in opposite directions (not just once), fully unroll BOTH passes as separate atoms -- the reverse-order repeat is not a "repetition" eligible for count-collapse (the never-unroll-repetition rule is for identical-target loops, not a distinct second traversal of a named sequence in reverse).
+
+## norm-q-misc-12 retro
+Scope: 6 quests (Troll Stronghold, Twilight's Promise, Watchtower, Death Plateau, Elemental
+Workshop I, Jungle Potion), 6 gets total (one parent --section 2 fetch per quest, all
+parent-pulls-children, 0 fallbacks needed despite 2 "verify exists" flags). 135 atoms
+total (10+30+19+20+12+44) across 21 checkpoints, all 6 contributed fresh -- zero
+pre-existing questatoms:* keys at session start despite Watchtower having a rich
+questdb:watchtower row AND a separate 31-atom oppgran pass from an earlier og-g6 wave.
+Trigger for next wave: check questatoms:* AND cross-pipeline oppgran contributions
+(grep "og-g" contrib.jsonl for the target quest_id) before fetching -- a quest can have
+oppgran atoms without ever getting a questatoms row, and the two schemas are NOT
+directly interchangeable (idx-atom vs steps.jsonl-shaped), so finding one doesn't always
+mean skip, but it should always mean cross-check/flag the grain divergence in notes.
+Local schema validator (verb enum, cmp enum, label<=80, idx contiguity, checkpoint
+resolution, refs slug-in-manifest) run before every contribute call, per the
+norm-q-misc-05 precedent (gotcha #121) -- caught zero violations this pass, first-try
+clean across all 6 rows.
+## norm-q-misc-13 retro
+Scope: 2 quests (Murder Mystery, Rune Mysteries). 18 atoms total (14+4) across 6 checkpoints, both contributed fresh -- zero pre-existing questatoms:* keys for either at session start.
+Fetch cost: 2 `sections` probes + 2 `get --section 2 --strip` calls, both cache hits (Murder_Mystery_Quick_guide.s2 2066B, Rune_Mysteries_Quick_guide.s2 667B) -- well under the 5-get-per-quest budget; both Quick guides real and flat (no sub-headers), no fallback to main page needed for either.
+Coords: zero {{Map}}/{{NPC map}} templates in either quest's fetched text -- a fetch-confirmed gap, not a shortfall.
+Rune Mysteries' fetched walkthrough matched the held quest_db row's own-words summary closely with no discrepancies; Murder Mystery's fetch surfaced two genuine randomised branches (thread-colour suspect pair, matched-suspect search target) not fully spelled out in the held row's compressed summary.
+A local python validator (idx contiguity, checkpoint start_idx resolution + monotonicity, verb/target/cmp enum membership, 80-char label cap, non-empty refs, hint-type sanity) ran clean on first pass after 3 label-length fixes, per the og-g5/norm-q-misc-05/misc-08 precedent -- caught the over-80-char labels before contribute, not after.
+Canonical trigger for next wave: a per-playthrough RANDOMISED branch (no player choice, game-state-determined) with an identical underlying action across all cases should fold into ONE atom with N branch-type hints, not N parallel checkpoints -- reserve the parallel-checkpoint treatment (Curse of the Empty Lord precedent) for branches where the underlying ACTIONS themselves differ per branch, not just the target.
+## norm-q-misthalin-01 retro
+Scope: 1 quest (While Guthix Sleeps, Grandmaster Mahjarrat storyline, 44-quest reqs.quests chain -- longest req list seen in this track). 107 atoms across 7 checkpoints, contributed fresh (questatoms:while-guthix-sleeps was not pre-existing at session start).
+Fetch cost: 2 `sections` probes (main + Quick guide) + 0 fresh `get` calls -- all 7 Quick-guide H3 chapters (s3-s9) were already manifest-cached from an earlier session's parent-Walkthrough-pull, so the entire 108-atom quest was atomized from cache hits alone, well under the 5-get-per-quest budget.
+Coords: only 2 {{Map}} pins in the whole page (Hunting Expert 2525,2916; run-down house 2519,3249) -- a fetch-confirmed sparsity typical of story/puzzle-heavy GM quests per prior batches.
+No GE mentions found on direct grep. 4 genuinely player-randomised puzzle elements (door rune, weight-puzzle target, skull-cavity symbol positions, 8-of-13 statue subset) all left as until:{state:"??"} rather than fabricated. New verb-gap: NPC Contact (4x, distinct NPCs) mapped to talk-to.
+A local python validator (idx contiguity, checkpoint start_idx monotonicity, verb enum membership, 80-char label cap, non-empty refs, cmp enum) ran clean on first pass (0 errors, 107 atoms) before contribute, per the og-g5/norm-q-misc-05/misc-08 precedent.
+Canonical trigger for next wave: when a quest's held quest_db row is entirely absent (no grep hit at all, not just thin), that's fine -- the brief's cross-check is optional by design, proceed directly from the wiki fetch as source of truth.
+## norm-q-misthalin-02 retro
+Scope: 2 quests (Making Friends with My Arm, Darkness of Hallowvale) atomized into questatoms rows.
+Fetch cost: 2 gets total (one per quest's Quick guide Walkthrough section 2) -- both pulled all H3 subsections
+in a single call despite the parent listing as a 16B stub, confirming the nesting pattern holds even for
+longer/richer quest guides (55 atoms for Hallowvale, 39 for My Arm).
+Grain calls: agility/stealth mazes with no NPC/item touchpoints (My Arm's troll-city sneak, Hallowvale's
+sickle-logo course) were split into a handful of "walk-to" traversal atoms bracketing the genuine item
+pickups (rope, door key, ladder top, knife, bucket) rather than one giant atom or an unrolled step-per-bullet
+list -- kept equal-grade without losing the puzzle-relevant items.
+One caught-and-fixed bug: Hallowvale's "Locating the laboratory" checkpoint start_idx was initially set to
+idx47 (still the tail of "Back to Meiyerditch") instead of idx48 (the section's real first atom) -- fixed
+before contributing by re-checking section boundaries against the raw blob's ===H3=== line numbers.
+Both quests: zero {{Map}}/{{NPC map}} templates, coords[] empty throughout, confirmed by grep not assumption.
+Dialogue hints uniformly "??" per own-words hard rule even where the wiki gives exact quoted button text.
+Trigger for next wave: when a quest's items-needed line names an item as "obtainable during the course",
+grep the whole fetched blob for that item name before assuming which subsection it's picked up in --
+placement inside the prose doesn't always match the H3 the header sits under.
+## norm-q-misthalin-03 retro
+Scope: 4 quests (Defender of Varrock, Rag and Bone Man II, A Soul's Bane, Daddy's Home), all in/near Misthalin. 62 atoms total (27+9+13+13) across 15 checkpoints, all 4 contributed fresh (no duplicate-key skips, zero pre-existing questatoms:* keys at session start). 4 gets total (one get --section 2 --strip per quest), well under the 5-get-per-quest budget; parent-Walkthrough-pulls-children-inline pattern held 4/4.
+Trigger for next wave: on any short miniquest/quest flagged "verify exists -- fall back to main page" in a brief, still try the /Quick guide title first via `sections` before assuming the fallback -- 1/1 in this batch (Daddy's Home) had a real, full /Quick guide despite the caveat, matching the established pattern across prior waves (In Search of Knowledge, Fairytale II, Goblin Diplomacy, Clock Tower, etc.) that "verify exists" briefs are a contingency, not a default.
+
+## norm-q-misthalin-05 retro
+- Scope: 6 quests (Lost Tribe, Vampyre Slayer, Children of the Sun, Demon Slayer, Ernest the Chicken, Gertrude's Cat), all real /Quick guide pages, no main-page fallbacks needed despite none being pre-flagged as verified.
+- Fetch budget: well under 5-gets/quest cap for 4/6 (1-2 gets each, mostly cache hits); Demon Slayer used the full 5 to get precise per-subsection slugs since its children weren't pre-cached, unlike Vampyre Slayer's.
+- 89 atoms / 30 checkpoints total across 6 rows, all contributed idempotently under questatoms:<slug> keys; local validator (idx contiguity, checkpoint start_idx resolution, verb enum, non-empty refs, 80-char label cap) ran clean on first pass for all 6.
+- Zero coords across the whole batch -- confirmed via grep on fetched text, not assumed; consistent with prior small/short-quest bundles.
+- Trigger for next brief: when a quest's Quick guide Walkthrough text diverges from the held quest_db row's own detail summary (Demon Slayer's dark-wizards phrasing), state explicitly in the brief that the wiki-fetched text wins and the held row's extra colour goes in notes only, not into an atom -- this pass had to re-derive that call from general discipline rather than being told directly.
+## norm-q-misthalin-04 retro
+- Scope: 5 quests (Death to the Dorgeshuun, Elemental Workshop II, In Aid of the Myreque, Ratcatchers, Tears of Guthix), both "verify exists" quick-guide flags resolved real.
+- Fetches: 18 fresh gets total across the batch (DTTD 0 new/1 cache hit, EW2 5, IAotM 5, Ratcatchers 0 new/1 cache hit, ToG 2), well under 5-get/quest budget everywhere.
+- Emitted 5 questatoms:* rows (37+34+44+38+10 = 163 atoms), all fresh contributes, zero pre-existing keys found at start.
+- Coords: zero {{Map}} templates in any of the 5 quests' fetched text -- coords[] empty across all 163 atoms, a real gap not a fetch shortfall.
+- Verb-enum gaps hit: "give item to NPC" (IAotM's Ivan gear hand-off) mapped to use-on; "listen at door" (DTTD) mapped to talk-to, both reusing established precedents.
+- Scope calls: DTTD's 4-guard sniping sequence compressed to 1 composite atom (deterministic-procedure precedent); DTTD's 9-NPC town tour kept 1:1 (dense-distinct-targets precedent); DTTD's H.A.M. robes sourcing substituted the ironman pickpocket path for the page's default G.E. mention (never-GE-buy hard rule); IAotM's escort juvinate count modelled as gte/until since it's genuinely route-dependent.
+- No held-row/page mismatches found in this batch (all 5 held rows' detail text tracked the fetched pages closely, unlike several prior batches).
+- No concurrent-dispatch collisions observed this run.
+## norm-q-misthalin-07 retro
+Scope: 1 quest (The Restless Ghost) -> questatoms:the-restless-ghost, 10 atoms / 3 checkpoints.
+Fetch: 3 gets (s3-s5, all cache hits, 0 fresh network calls), well under the 5-get budget; 16B parent stub confirmed to not inline (per-H3 fetch required, unlike some other stub pages this wave).
+Coords: zero {{Map}} templates in any section -- coords[] empty across all 10 atoms, fetch-confirmed not a gap.
+Grain calls: 4 walk-to atoms at genuine zone transitions (church->hut->graveyard->Wizards' Tower basement->graveyard); equip kept separate from the talk-to/click-coffin atom per one-atom-one-interaction; "search the altar" mapped to gather verb (matches EAA/pickpocket precedent); skull hand-in mapped to use-on with consumes.
+Inference call: Ghostspeak amulet's receipt from Father Urhney has no explicit "you receive" bullet -- inferred from the immediately-following "equip the Ghostspeak amulet" naming it, flagged via note hint rather than left "??", since the item identity and grant point are both unambiguous from context even if not spelled out as their own bullet.
+No-op fold: level 13 skeleton spawn (optional, no kill required) folded into the search-altar atom's detail rather than its own atom -- zero player-actionable content on its own.
+Nothing skipped; quest fully atomized end to end.
+## norm-q-morytania-01 retro
+Scope: 2 quests (A Night at the Theatre 21 atoms/3 checkpoints, Sins of the Father 94 atoms/7 checkpoints), 2 net gets total (both stub parents parent-pulled all children).
+Both quests' Quick guides are real, populated, no fallback to main page needed.
+A Night at the Theatre had precise per-subsection cache (s3/s4/s5) so atoms cite exact sub-refs; Sins of the Father had none, coarse .s2 ref used throughout (GM-tier-scale quest, on par with prior large rows).
+Two verb-enum gaps: stealth-tailing (mapped use-on) and whole-raid completion (mapped kill/until, ToB).
+Two genuinely player-randomised puzzles in one quest (mausoleum door, valve/gallon puzzle) -- both until:"??".
+Two never-fabricate produces gaps (vyrewatch key item name, bookshelf find) left "??" despite a plausible-looking held-row hint ("book") not corroborated by the fetched wiki text.
+Zero {{Map}}/{{NPC map}} templates in either quest -- coords[] empty throughout, fetch-confirmed not a shortfall.
+Trigger for next wave: when a held quest_db row's own detail prose names an item/quantity more specifically than the freshly-fetched Quick guide text does, treat the wiki fetch as authoritative and flag the mismatch in notes rather than importing the held row's wording into produces/consumes.
+## norm-q-morytania-02 retro
+Scope: 3 quests (A Taste of Hope, Cabin Fever, Haunted Mine), all Morytania-region. 96 atoms total (39+33+24) across 18 checkpoints, all 3 contributed fresh -- zero pre-existing questatoms:* keys at session start.
+Fetch cost: 3 `sections` probes + 3 `get --section 2 --strip` calls total -- every quest's 16B-stub Walkthrough parent-pulled ALL its H3 children inline in one fetch, 3 gets for the whole bundle, well under the 5-get-per-quest budget.
+Coords: zero {{Map}}/{{NPC map}} templates found in any of the 3 quests' fetched text (grep-confirmed) -- a fetch-confirmed gap across the whole batch, not a shortfall.
+Never-fabricate gaps: A Taste of Hope's 2 unnamed brewed potions, Cabin Fever's 4 unquantified cannon-stage supply pickups, and Haunted Mine's randomized lever layout + unnamed post-boss key -- all left as "??" placeholders per the established never-fabricate-a-number-or-name discipline rather than guessed.
+Verb-enum gaps: A Taste of Hope's "read Flaygian's notes" (no read primitive, mapped to toggle) is the only verb-gap in this bundle; all other actions across all 3 quests mapped cleanly onto the closed enum.
+A local Python builder+validator (idx contiguity, checkpoint start_idx resolution + monotonicity, verb enum membership, cmp enum membership, 80-char label cap, non-empty refs) ran clean before any contribute call, per the misthalin-06/norm-q-misc-05/-08 precedent -- generated all 3 rows from one script rather than hand-typing JSON; caught one 90-char label overrun on first run, fixed and re-validated.
+Canonical trigger for next wave: this is the 2nd consecutive Morytania-region normalize-q batch (after norm-q-morytania-01) where every quest's Quick guide parent-Walkthrough-pulls-children pattern held 100% and zero {{Map}} templates existed -- if a future Morytania-region quest DOES carry {{Map}} pins or a non-parent-pulling Walkthrough, that would be the first exception in the region and worth flagging explicitly rather than assumed consistent.
+## norm-q-morytania-03 retro
+Scope: 4 quests (The Great Brain Robbery, Ghosts Ahoy, His Faithful Servants, In Search of the Myreque). 92 atoms total (34+38+4+16) across 15 checkpoints, all 4 contributed fresh -- zero pre-existing questatoms:* keys at session start.
+Fetch cost: 5 `sections` probes (His Faithful Servants probed both /Quick guide and main-page titles per the brief's "verify exists" flag -- resolved to a genuine silent redirect, not a false flag) + 4 `get --section 2 --strip` calls (2 parent-pull fetches for GBR/Ghosts Ahoy covering 5+6 subsections each, 1 flat fetch for His Faithful Servants' main-page Walkthrough, 1 flat fetch for In Search of the Myreque's single-section Walkthrough) -- well under the 5-get-per-quest budget on every quest.
+Coords: only 1 {{Map}} pin found across all 4 quests (Brother Tranquility's Mos Le'Harmless start point in GBR) -- Ghosts Ahoy, His Faithful Servants, and In Search of the Myreque all have zero {{Map}}/{{NPC map}} templates, confirmed by direct read of the fetched blobs rather than assumed.
+Unfabricated gaps left as ??: GBR's found book + shipping-order false-bottom nail count; Ghosts Ahoy's ecto-token yield rate, milk/nettle-tea mixture item name, and the two-atom mast-flag/dye randomised-puzzle pair; In Search of the Myreque's "all the steel weapons" quantity and full hideout NPC roster beyond the quiz's six named members.
+Canonical trigger for next wave: when a quest's own held quest_db row lists a reqs.quests entry that never surfaces anywhere in the fetched Quick guide Walkthrough text (In Search of the Myreque's Nature Spirit requirement vs. zero Nature-Spirit-content mentions), flag the mismatch in the row's notes for consolidator reconciliation rather than either asserting unfetched content or silently dropping the held requirement -- neither direction is the agent's call to make unilaterally.
+## norm-q-morytania-04 retro
+Scope: 2 quests (quest-lair-of-tarn-razorlor, quest-shades-of-mortton), both had real Quick guide-shaped content, no held-row conflicts. Emitted 18 atoms/4 checkpoints (Lair) and 19 atoms/4 checkpoints (Shades), both keyed questatoms:<slug>, both new (not pre-claimed).
+Trigger for next wave: when a "/Quick guide" title has no dedicated subpage, wikicli's sections/get calls resolve it to the base article silently (manifest title != requested title) -- next directive should say "diff requested title vs manifest recorded title after sections, not just after get" so agents catch the redirect before assuming quick-guide-checklist formatting.
+Branching (fast-route item shortcuts vs full walkthrough) has no home in the quest-expansion schema (no branch{} field) -- modelled the single full walkthrough route, dropped the shortcut to a prose note in "notes". Worth a schema RFC if shortcut routes matter for the router's tuning pass.
+Both quests' Walkthrough prose had zero {{Map}} templates -- coords:[] throughout, not a gap, a fact.
+## norm-q-sea-01 retro
+Scope: 2 quests (Troubled Tortugans, Prying Times), both Sailing-skill content, quest-subchecklist track.
+Fetches: 2 fresh gets total (Prying Times/Quick guide s3+s4); Troubled Tortugans' entire 5-subsection
+Quick guide walkthrough was already cached from a prior session -- 0 fresh fetches for that quest.
+Both quests' Quick guides are real and populated; Prying Times' "verify exists" brief flag was another
+false positive (Nth in this track), joining the recurring pattern.
+Emitted: questatoms:troubled-tortugans (33 atoms, 5 checkpoints), questatoms:prying-times (16 atoms,
+2 checkpoints). Both cross-checked clean against the held quest_db rows (no contradictions found).
+Verb-enum gaps: 'sail' (mapped teleport, 8 total occurrences across both quests, extends Red Reef
+precedent) and 'inspect/examine' (mapped talk-to, 2 occurrences, extends norm-q-asgarnia-07 precedent).
+Notable: Troubled Tortugans' repair-material consumption sums EXACTLY match its gather quantities
+(6 scute/10 log/6 shell), a clean self-consistency check straight from the wiki text.
+Canonical trigger for next wave: Sailing-skill quests (4 now atomized: Pandemonium, Red Reef, Troubled
+Tortugans, Prying Times) consistently need BOTH 'sail' (->teleport) and ship-control-toggle (->toggle)
+verb-gap mappings -- if quest-subchecklist keeps drawing from the Sailing skill's quest line, promote
+these two mappings to the canonical verb-enum doc instead of re-flagging per quest.
+## norm-q-tirannwn-01 retro
+Scope: 1 quest, Song of the Elves (Grandmaster capstone), the largest single-quest normalize-q target seen so far by combined source size (19.6KB Quick guide + 10.8KB Warped Library sub-guide).
+Fetch cost: 2 fresh gets (1 speculative --section 1 probe on the sub-guide, 1 whole-page fetch that pulled all 9 seal H4s inline) -- the main Quick guide page was already a same-day whole-page cache hit from a prior session, 0 cost. Well under the 5-get budget.
+Output: questatoms:song-of-the-elves, 132 atoms / 15 checkpoints, generated + self-validated via a local Python script (idx contiguity, checkpoint monotonicity, verb/cmp enum membership, 80-char label cap, non-empty refs, coord envelope) before contribute, per the og-g5/morytania-03 validator precedent.
+Grain calls: dense named-NPC propaganda lists (25 East/West Ardougne NPCs) kept 1:1 per the MEPII/Fremennik-trial precedent; the 9 Grand Library mirror puzzles and the Fragment of Seren's 4 recurring boss specials both composited to one atom each with full procedure in the detail field, per the Blood Moon Rises Castle Drakan precedent; Baxtorian Falls' pillar puzzle kept until:{state:"??"} since the page itself states per-player variability, while the Grand Library's puzzles were NOT modelled as randomized since the fetched text never says so (flagged, not asserted).
+Gaps flagged for consolidator: no explicit "talk to Lady Meilyr" step in the fetched text despite the checkpoint naming her; Grand Library mirror-puzzle per-player variability plausible but uncorroborated.
+Zero Grand Exchange mentions found on grep of the final row.
+## norm-q-varlamore-01 retro
+Scope: 2 quests (Perilous Moons, The Final Dawn), Varlamore master-tier capstone content. 115 atoms total (37+78) across 13 checkpoints, both contributed fresh -- zero pre-existing questatoms:* keys at session start for either.
+Fetch cost: near-zero -- Perilous Moons/Quick guide was already whole-page cached (7872B, 0 fresh gets); The Final Dawn/Quick guide needed exactly 1 fresh get (--section 2 --strip, 9831B, parent-pulled all 7 H3 chapters). 2 `sections` probes + 1 fresh `get` total for the whole 2-quest bundle, well under the 5-get-per-quest budget on both.
+The Final Dawn's "verify exists" brief flag was another false positive (Quick guide is real and populated) -- the Nth consecutive false flag in this track; also notable, its MAIN page's full Walkthrough (s2, 27587B) was independently already cached but correctly NOT used since the Quick guide existed and was terser/better atomization material.
+Coords: zero {{Map}}/{{NPC map}} templates in either quest's fetched text (grep-confirmed) -- coords[] empty on all 115 atoms.
+New shapes surfaced: a declared item-choice OR-set (dog feeding, no single canonical item) modelled as consumes {"item":"??"} with the choice spelled out in detail rather than "??" for total-absence; a simultaneous (not sequential) dual-boss encounter (Lucius+Chimalli) collapsed to one composite kill atom per the tightly-coupled-encounter precedent; a same-item-named-once-but-used-thrice quantity gap (the Dwarven Traitor "beer") flagged rather than resolved.
+A local Python validator (idx contiguity, checkpoint start_idx resolution + monotonicity, verb-enum membership, cmp-enum membership, 80-char label cap, non-empty refs) ran clean on first pass (0 errors, 115 atoms across 2 rows) before any contribute call, same discipline as the norm-q-misthalin-06/morytania-03 precedent.
+Canonical trigger for next wave: when BOTH a quest's main page AND its /Quick guide are simultaneously cache-hit from prior sessions, don't default to whichever was fetched more recently or is larger -- always prefer the Quick guide's terser checklist prose as the atomization source if it exists and is populated, reserving the main-page Walkthrough fallback strictly for genuine Quick-guide absence/redirect, even when the main page's content is already sitting in cache for free.
+
+## norm-q-wilderness-01 retro
+Scope: quest-mage-arena-i (10 atoms/4 checkpoints), quest-mage-arena-ii (7 atoms/3 checkpoints).
+Fetches: MA-I Quick guide s2 (1 get, whole Walkthrough); MA-II Quick guide s2+s3+s4+s5 (4 gets) —
+s2 alone would have sufficed (nesting pattern), s3-s5 redundant but harmless, cited per-subsection anyway.
+Both quick guides exist and were used directly; no fallback to main pages needed.
+Grain calls: Kolodion's 5 forms = one kill atom count=5 (single boss, not 5 separate NPCs);
+MA-II's 3 named followers = one kill atom count=3 (mechanically identical loop despite distinct names).
+God-cape/staff choice (MA-I) and god-spell choice (MA-II) are player branches with no schema branch{} field
+at atom grain -> encoded as hints[{"type":"choice"}] with empty produces rather than fabricating a slug.
+No raw {{Map}} coordinate pins existed in either fetched Walkthrough (MA-II's spawn map is a bare
+template transclusion) -> coords stayed [] everywhere, no invented values.
+Both rows contributed clean on first pass, no existing keys collided.
+## norm-consolidate retro
+Consolidated all 3 normalization namespaces in one pass: methods: (125 rows -> train_methods.jsonl
++ methods[]/pick-note attach on steps.jsonl), questatoms: (188 rows -> 5190 minted atoms +
+quest_expansions.jsonl + coarse_unwind), cardfacts: (346 rows -> quest_db summary/facts/req_items,
+steps_quests req_items, catalog.jsonl 346/346 structured with start/length restored).
+Worked: verbatim-id copy in FIX briefs made every join exact (264/264, 188/188); the oppgran
+ATTACH precedent slotted quest sub-checklists in with ~30 lines of enrich.py; all three
+consolidators re-run byte-stable (sha1-diffed); 91/91 tests green with zero re-pins because
+only additive fields + detail prose changed, never ids/labels.
+Friction: NORMALIZATION W0 sketch said "feed through _inject_coarse_atoms" — stale vs the
+same-day ATTACH landing, had to be overridden by reading the newer enrich.py comments; synth-*
+per-route id suffix made the §1b "attach by id" wording unimplementable as written (band-match
+seam minted instead); 104 label-cap violations show brief-stated lint rules need embedded
+validator snippets, not prose.
+CANONICAL TRIGGER (mint): consolidator briefs must state (a) ATTACH vs flat-inject explicitly —
+"attach via a dedicated extra slot behind a named goal flag; never feed new expansion registries
+into existing coarse_expansions loaders", (b) the per-file ensure_ascii style for every file the
+task rewrites in place, and (c) that synthesized-step attach is band-match-by-parse, by-id only
+for authored rows. Track-Q-style GENERATE briefs must EMBED the pre-contribute validator snippet
+(idx contiguity, checkpoint resolution, verb enum, label cap) instead of stating limits in prose.
+Deferred (follow-on, NOT started here — WebFragments.java has a concurrent edit in flight):
+sub-checklist rows render, methods[] option-picker render, REQUISITES/REWARDS/START fact-block
+render, plugin GuideStep/ReferenceEntry additive mirrors (methods/facts/summary/start/req_items).

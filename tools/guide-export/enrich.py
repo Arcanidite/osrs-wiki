@@ -771,6 +771,12 @@ def _train_step(step, phase, zones, checkpoint=None):
         out["checkpoint"] = checkpoint
     if step.get("refs"):
         out["refs"] = step["refs"]
+    # NORMALIZATION §1d — structured item requirements (req_items[], the mirror
+    # of the reqs.items prose strings) pass through verbatim so the REQUISITES
+    # block render has data, not paragraphs. Only steps_quests rows carry them
+    # today; absent field = byte-identical output (same pattern as refs/media).
+    if step.get("req_items"):
+        out["req_items"] = step["req_items"]
     # FRAMES_GALLERY §2 — captured frames/gifs pass through verbatim (same pattern as refs).
     if step.get("media"):
         out["media"] = step["media"]
@@ -1021,9 +1027,15 @@ def _coalesce_checkpoints(steps, checkpoint_member):
     return result
 
 
+# Planner-synthesized training band ids: synth-<skill>-<level>-<counter>. The
+# counter is per-route (deterministic within a route, different across routes),
+# so methods attach for these matches on skill+band, never on id.
+_SYNTH_ID_RE = re.compile(r"^synth-([a-z]+)-(\d+)-\d+$")
+
+
 def enrich(plan, catalog, steer_points, supply_chains=None,
            coarse_expansions=None, atoms_by_id=None, extra_by_id=None,
-           steps_bank=None, oppgran_opp_rows=None):
+           steps_bank=None, oppgran_opp_rows=None, methods_by_skill=None):
     goal = plan["goal"]
     zones = catalog.get("zones", {})
     reals = [s for s in plan["path"] if not s.get("_capstone")]
@@ -1052,6 +1064,15 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # per route (default OFF → byte-identical for every pinned fixture); only
     # plan-grand.mjs sets goal.opportunistic:true so far.
     opportunistic = bool(goal.get("opportunistic"))
+
+    # NORMALIZATION §1a — quest sub-checklists (questatoms fan-out, consolidated
+    # into quest_expansions.jsonl + steps_quest_atoms.jsonl). ATTACH model, same
+    # reasoning as `granular` above: 5k+ equal-grade atoms flat-injected would
+    # reorder every pinned route, so the quest step stays the routing/grant
+    # anchor and its atoms attach underneath as subChecklist{atoms,checkpoints}.
+    # Opt-in per route (default OFF → byte-identical); plan-quests.mjs and
+    # plan-grand.mjs set goal.quest_atoms:true.
+    quest_atoms = bool(goal.get("quest_atoms"))
 
     # [topo-quality] topo_xp_fold: a SEPARATE, additive opt-in knob for
     # topo_order's own XP fold, decoupled from xp_fold (which also flips on
@@ -1234,6 +1255,27 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
             s["methods"] = extra["methods"]
         if granular and not s.get("subChecklist") and extra.get("subChecklist"):
             s["subChecklist"] = extra["subChecklist"]
+        if quest_atoms and not s.get("subChecklist") and extra.get("questChecklist"):
+            s["subChecklist"] = extra["questChecklist"]
+
+    # Skill+band fallback for planner-SYNTHESIZED training steps: their ids
+    # (synth-<skill>-<level>-<n>) carry a per-route counter suffix, so the
+    # by-id train_methods.jsonl merge above can never reach them. Match the
+    # band instead: smallest train-<skill>-<to> with to >= level, else the
+    # skill's top band. Same opt-in flag as the by-id attach.
+    if train_methods and methods_by_skill:
+        for s in steps:
+            if s.get("methods"):
+                continue
+            m = _SYNTH_ID_RE.match(s.get("id") or "")
+            if not m:
+                continue
+            bands = methods_by_skill.get(m.group(1))
+            if not bands:
+                continue
+            level = int(m.group(2))
+            band = next((b for to, b in bands if to >= level), bands[-1][1])
+            s["methods"] = band
 
     return {
         "id": "route-" + goal["id"],
@@ -1301,7 +1343,8 @@ def _load_jsonl(path):
 # model). label carries through as the atom's own instruction text (mirrors
 # _train_step's instruction field); "id"/"kind" are always non-empty.
 _SUBCHECKLIST_ATOM_FIELDS = ("id", "label", "detail", "atom", "hints", "refs",
-                             "produces", "consumes", "location", "kind")
+                             "produces", "consumes", "location", "kind",
+                             "mapMarkers")
 
 
 def _project_subchecklist_atom(row):
@@ -1340,13 +1383,23 @@ def main():
     # Skill-methods picker data (train_methods.jsonl, minted by
     # consolidate_train_methods.py from the normalizer ledger). Merged by step
     # id; attached only when a goal opts in via train_methods:true (see enrich).
-    # Absent file or flag off = every fixture byte-identical.
+    # Absent file or flag off = every fixture byte-identical. methods_by_skill
+    # ({skill: [(to_level, methods)] sorted by to_level}) additionally serves
+    # the synth-<skill>-<level>-<n> band-match fallback (see enrich).
+    methods_by_skill = {}
     methods_file = data_dir / "train_methods.jsonl"
     if methods_file.exists():
         for r in _load_jsonl(methods_file):
             sid = r.get("step_id")
-            if sid:
-                extra_by_id.setdefault(sid, {})["methods"] = r.get("methods")
+            if not sid:
+                continue
+            extra_by_id.setdefault(sid, {})["methods"] = r.get("methods")
+            band = re.match(r"^train-([a-z]+)-(\d+)$", sid)
+            if band:
+                methods_by_skill.setdefault(band.group(1), []).append(
+                    (int(band.group(2)), r.get("methods")))
+        for bands in methods_by_skill.values():
+            bands.sort(key=lambda b: b[0])
 
     # Opportunistic-granularity sub-checklist data (steps_oppgran.jsonl atom
     # rows + coarse_expansions_oppgran.jsonl checkpoints, minted by W3). ATTACH
@@ -1367,6 +1420,23 @@ def main():
                 "checkpoints": exp.get("checkpoints", []),
             }
 
+    # NORMALIZATION §1a — quest sub-checklist data (steps_quest_atoms.jsonl atom
+    # rows + quest_expansions.jsonl registry, minted by consolidate_quest_atoms.py
+    # from the questatoms fan-out). Same ATTACH model as oppgran above, kept in
+    # its own extra slot (questChecklist) so the two opt-in flags stay
+    # independent; attached as subChecklist only when a goal sets
+    # quest_atoms:true (see enrich). Absent files or flag off = byte-identical.
+    quest_atoms_by_id = {r["id"]: r for r in _load_jsonl(data_dir / "steps_quest_atoms.jsonl")}
+    for exp in _load_jsonl(data_dir / "quest_expansions.jsonl"):
+        cid = exp.get("coarse_id")
+        atoms = [_project_subchecklist_atom(quest_atoms_by_id[sid])
+                 for sid in exp.get("steps", []) if sid in quest_atoms_by_id]
+        if cid and atoms:
+            extra_by_id.setdefault(cid, {})["questChecklist"] = {
+                "atoms": atoms,
+                "checkpoints": exp.get("checkpoints", []),
+            }
+
     # OPPORTUNISTIC_GRANULARITY §2/§4 O-track — wiki-grounded opportunity rows
     # (oppgran:opp:<item>@<zone> keys, contrib.jsonl idempotent ledger) feed
     # backprop.py's source index alongside steps.jsonl's own produces{} edges.
@@ -1379,7 +1449,8 @@ def main():
         enrich(payload, catalog, steer_points, supply_chains,
                coarse_expansions=coarse_expansions, atoms_by_id=atoms_by_id,
                extra_by_id=extra_by_id, steps_bank=raw_steps,
-               oppgran_opp_rows=oppgran_opp_rows),
+               oppgran_opp_rows=oppgran_opp_rows,
+               methods_by_skill=methods_by_skill),
         sys.stdout, indent=2
     )
 

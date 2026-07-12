@@ -171,6 +171,12 @@ const covered = {
   // in as subChecklist{atoms,checkpoints} underneath it (same opt-in shape
   // as train_methods above).
   granular: true,
+  // quest_atoms: true — attach each quest step's ordered sub-checklist
+  // (steps_quest_atoms.jsonl + quest_expansions.jsonl, minted by
+  // consolidate_quest_atoms.py from the questatoms normalizer fan-out) as
+  // subChecklist{atoms,checkpoints} — same ATTACH model as granular above,
+  // independent flag/registry (quest_expansions vs coarse_expansions_oppgran).
+  quest_atoms: true,
   // opportunistic: true — OPPORTUNISTIC_GRANULARITY.md §2b P8 weave: re-pin
   // each backprop-determined earliest-window supply/gather step at the
   // route's earliest already-in-position node (instead of a dedicated later
