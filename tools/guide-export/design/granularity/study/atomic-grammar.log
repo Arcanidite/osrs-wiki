@@ -1,0 +1,43 @@
+# GRANULARITY ATOMIC-GRAMMAR LOG (append-only; agents add atomic-verb observations)
+[laef-demonic] train-until: "train thieving 5→20" omits method selection (quest vs. pickpocket), location routing
+[laef-demonic] grind-with-count: agility (666 exact reps), alchemy (800+ nature runes), theft repeats until coin target
+[laef-demonic] gather-bounded: blessed bone shards 617–1600 from rumours; exact count task-dependent, not predetermined
+[laef-demonic] quest-atomic: "Death on the Isle" and "Ribbiting Tale" treated as single unlock points, not dialogue-unwound
+[laef-demonic] level-target-implicit: prayer "via libation bowl" specifies method but omits bury-click granularity cycling
+[laef-demonic] regional-unlock-gated: regions (Karamja, etc.) unlock via point threshold, not per-location-visit atomic steps
+[faux] pickpocket, talk-to, buy-item each one atomic action per interaction.
+[faux] quantities exact: 14+ cakes, 666 hops, 150 arrows, no fabricated ranges.
+[faux] inventory ops explicit: deposit-named, withdraw-named, keep-1 drop-rest.
+[faux] sequential-not-bulk: sell one-at-a-time, cut gems one-at-a-time efficiency.
+[faux] toggle-state atomic: Endless Harvest ON/OFF gates log banking behavior.
+[faux] blocklist persistent: set once per NPC, focus tasks branch explicitly.
+[re-varlamore] train: skill target named explicitly (e.g., Thieving 34), no intermediate checkpoint counts provided
+[re-varlamore] complete: quest/task/rumour marked as atomic milestone, internal steps left to player knowledge
+[re-varlamore] gather: resource quantities stated as exact or range, not per-action counts (50–100 nature runes total)
+[re-varlamore] lure: NPC pattern named but not decomposed; assumes player knows guard aggression mechanics
+[re-varlamore] claim: reward redemption treated as single atomic event (tier relic unlock, quest reward)
+[re-varlamore] catch: hunter activity quantified by level requirement, not individual trap/net actions
+[sonic-d1] select: choose relic from menu options without discovery burden
+[sonic-d1] navigate: travel between region checkpoints; often precedes interact
+[sonic-d1] interact: single click on NPC after reaching location (pet, pickpocket)
+[sonic-d1] perform: execute emote/action at designated spot; no quantity loop
+[sonic-d1] gather-loop: chop/pick/harvest cycle with undefined stop condition
+[sonic-d1] craft-loop: burn logs or fletch arrows; requires tool presence, repeatable
+[felkrane] withdraw + walk-to-location + click-ore/npc/enemy = atomic cluster bundled as 1 step in guide
+[felkrane] banking cycles implicit in "mine N ore" without explicit sub-step counts for return trips
+[felkrane] "until" open-ended (fish until 65, hunt until 72) requires trial-and-error if start level unknown
+[felkrane] inventory-drop waypoints treated as narrative beats, not mechanic actions (step 23 "sit nearby" = prepare for region)
+[felkrane] safespot-combat needs spatial knowledge + heal+attack loop; guide says "safespot" not "attack-click, heal, attack-click"
+[felkrane] quest-dialogue auto-advances after trigger; "complete quest" ≠ "beat final boss then talk-to-NPC then cutscene-play"
+[b0aty-hcim] withdraw-from-slot: bank inventory state machine—each "bank" is one withdrawal cycle, atoms emerge from slot-to-inventory bridge.
+[b0aty-hcim] talk-to + dialogue-branch: quest chains use NPC interaction as atomic trigger; no sub-dialogue parsing; one talk = one step.
+[b0aty-hcim] kill-N-creatures: combat granularity specifies exact kill count (20 blue dragons, 80 Tithe Farm laps) to unlock next atom, not "kill until level X."
+[b0aty-hcim] safespot-positioning: boss encounters name reusable atomic patterns (flinch, cage, mushroom obstacle, prayer toggle); positioning is prerequisites, not break-down further.
+[b0aty-hcim] farm-cycle-semi-detached: patch runs are semi-atomic—every 1–2 banks, trigger farm loop (check→plant→teleport) in parallel; NOT serialized into bank sequence.
+[b0aty-hcim] herblore-bottleneck-padding: Herblore farming is non-atomic loop backfill (medium contracts + herb runs span 10+ banks in-between quest steps); planner must surface as dynamic counter.
+[dunkingoreos] kill-N-loot-exact: "Kill imps until all 4 beads collected" with conditional keeper list (bones, talismans, vendor trash)
+[dunkingoreos] navigate-via-landmark: "Walk north to hall" + "avoid bats near Keep Le Faye" + discrete sub-steps per region
+[dunkingoreos] safespot-with-positioning: "Safespot mother behind rock" + "use protect from missiles" + exact tile or compass direction
+[dunkingoreos] craft-chain-with-branching: Sapphire necklace → enchant into games necklace; fallback paths if no drops (craft 10 if needed)
+[dunkingoreos] quest-dialogue-routing: "talk to Hassan, then Osman" + explicit option callouts ("dialogue option to skip tutorial")
+[dunkingoreos] grind-with-secondary-task: Fletch 1005 bronze arrows while running Draynor Rooftop laps; multitask validation checks
