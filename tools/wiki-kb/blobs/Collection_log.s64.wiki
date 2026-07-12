@@ -1,0 +1,946 @@
+==Clues==
+===Beginner Treasure Trails===
+There are a total of 16 items to collect from [[Clue scroll (beginner)|beginner Treasure Trails]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-BTT"
+! colspan="3" |Items
+|-
+| data-rowid="MS" | {{plink|Mole slippers}}
+| data-rowid="FS" | {{plink|Frog slippers}}
+| data-rowid="BF" | {{plink|Bear feet}}
+|-
+| data-rowid="DF" | {{plink|Demon feet}}
+| data-rowid="JC" | {{plink|Jester cape}}
+| data-rowid="SP" | {{plink|Shoulder parrot}}
+|-
+| data-rowid="MRT" | {{plink|Monk's robe top (t)}}
+| data-rowid="MR" | {{plink|Monk's robe (t)}}
+| data-rowid="AOD" | {{plink|Amulet of defence (t)}}
+|-
+| data-rowid="SLH" | {{plink|Sandwich lady hat}}
+| data-rowid="SLT" | {{plink|Sandwich lady top}}
+| data-rowid="SLB" | {{plink|Sandwich lady bottom}}
+|-
+| data-rowid="RSOK" | {{plink|Rune scimitar ornament kit (guthix)}}
+| data-rowid="RSOK2" | {{plink|Rune scimitar ornament kit (saradomin)}}
+| data-rowid="RSOK3" | {{plink|Rune scimitar ornament kit (zamorak)}}
+|-
+| data-rowid="BP" | {{plink|Black pickaxe}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Easy Treasure Trails===
+There are a total of 131 items to collect from [[Clue scroll (easy)|easy Treasure Trails]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-ETT"
+! colspan="4" |Items
+|-
+| data-rowid="TCZ" | {{plink|Team cape zero}}
+| data-rowid="TCI" | {{plink|Team cape i}}
+| data-rowid="TCX" | {{plink|Team cape x}}
+| data-rowid="COS" | {{plink|Cape of skulls}}
+|-
+| data-rowid="GCH" | {{plink|Golden chef's hat}}
+| data-rowid="GA" | {{plink|Golden apron}}
+| data-rowid="WS" | {{plink|Wooden shield (g)}}
+| data-rowid="BFH" | {{plink|Black full helm (t)}}
+|-
+| data-rowid="BP" | {{plink|Black platebody (t)}}
+| data-rowid="BP2" | {{plink|Black platelegs (t)}}
+| data-rowid="BP3" | {{plink|Black plateskirt (t)}}
+| data-rowid="BK" | {{plink|Black kiteshield (t)}}
+|-
+| data-rowid="BFH2" | {{plink|Black full helm (g)}}
+| data-rowid="BP4" | {{plink|Black platebody (g)}}
+| data-rowid="BP5" | {{plink|Black platelegs (g)}}
+| data-rowid="BP6" | {{plink|Black plateskirt (g)}}
+|-
+| data-rowid="BK2" | {{plink|Black kiteshield (g)}}
+| data-rowid="BS" | {{plink|Black shield (h1)}}
+| data-rowid="BS2" | {{plink|Black shield (h2)}}
+| data-rowid="BS3" | {{plink|Black shield (h3)}}
+|-
+| data-rowid="BS4" | {{plink|Black shield (h4)}}
+| data-rowid="BS5" | {{plink|Black shield (h5)}}
+| data-rowid="BH" | {{plink|Black helm (h1)}}
+| data-rowid="BH2" | {{plink|Black helm (h2)}}
+|-
+| data-rowid="BH3" | {{plink|Black helm (h3)}}
+| data-rowid="BH4" | {{plink|Black helm (h4)}}
+| data-rowid="BH5" | {{plink|Black helm (h5)}}
+| data-rowid="BP7" | {{plink|Black platebody (h1)}}
+|-
+| data-rowid="BP8" | {{plink|Black platebody (h2)}}
+| data-rowid="BP9" | {{plink|Black platebody (h3)}}
+| data-rowid="BP10" | {{plink|Black platebody (h4)}}
+| data-rowid="BP11" | {{plink|Black platebody (h5)}}
+|-
+| data-rowid="SFH" | {{plink|Steel full helm (t)}}
+| data-rowid="SP" | {{plink|Steel platebody (t)}}
+| data-rowid="SP2" | {{plink|Steel platelegs (t)}}
+| data-rowid="SP3" | {{plink|Steel plateskirt (t)}}
+|-
+| data-rowid="SK" | {{plink|Steel kiteshield (t)}}
+| data-rowid="SFH2" | {{plink|Steel full helm (g)}}
+| data-rowid="SP4" | {{plink|Steel platebody (g)}}
+| data-rowid="SP5" | {{plink|Steel platelegs (g)}}
+|-
+| data-rowid="SP6" | {{plink|Steel plateskirt (g)}}
+| data-rowid="SK2" | {{plink|Steel kiteshield (g)}}
+| data-rowid="IP" | {{plink|Iron platebody (t)}}
+| data-rowid="IP2" | {{plink|Iron platelegs (t)}}
+|-
+| data-rowid="IP3" | {{plink|Iron plateskirt (t)}}
+| data-rowid="IK" | {{plink|Iron kiteshield (t)}}
+| data-rowid="IFH" | {{plink|Iron full helm (t)}}
+| data-rowid="IP4" | {{plink|Iron platebody (g)}}
+|-
+| data-rowid="IP5" | {{plink|Iron platelegs (g)}}
+| data-rowid="IP6" | {{plink|Iron plateskirt (g)}}
+| data-rowid="IK2" | {{plink|Iron kiteshield (g)}}
+| data-rowid="IFH2" | {{plink|Iron full helm (g)}}
+|-
+| data-rowid="BP12" | {{plink|Bronze platebody (t)}}
+| data-rowid="BP13" | {{plink|Bronze platelegs (t)}}
+| data-rowid="BP14" | {{plink|Bronze plateskirt (t)}}
+| data-rowid="BK3" | {{plink|Bronze kiteshield (t)}}
+|-
+| data-rowid="BFH3" | {{plink|Bronze full helm (t)}}
+| data-rowid="BP15" | {{plink|Bronze platebody (g)}}
+| data-rowid="BP16" | {{plink|Bronze platelegs (g)}}
+| data-rowid="BP17" | {{plink|Bronze plateskirt (g)}}
+|-
+| data-rowid="BK4" | {{plink|Bronze kiteshield (g)}}
+| data-rowid="BFH4" | {{plink|Bronze full helm (g)}}
+| data-rowid="SB" | {{plink|Studded body (g)}}
+| data-rowid="SC" | {{plink|Studded chaps (g)}}
+|-
+| data-rowid="SB2" | {{plink|Studded body (t)}}
+| data-rowid="SC2" | {{plink|Studded chaps (t)}}
+| data-rowid="LB" | {{plink|Leather body (g)}}
+| data-rowid="LC" | {{plink|Leather chaps (g)}}
+|-
+| data-rowid="BWH" | {{plink|Blue wizard hat (g)}}
+| data-rowid="BWR" | {{plink|Blue wizard robe (g)}}
+| data-rowid="BS6" | {{plink|Blue skirt (g)}}
+| data-rowid="BWH2" | {{plink|Blue wizard hat (t)}}
+|-
+| data-rowid="BWR2" | {{plink|Blue wizard robe (t)}}
+| data-rowid="BS7" | {{plink|Blue skirt (t)}}
+| data-rowid="BWH3" | {{plink|Black wizard hat (g)}}
+| data-rowid="BWR3" | {{plink|Black wizard robe (g)}}
+|-
+| data-rowid="BS8" | {{plink|Black skirt (g)}}
+| data-rowid="BWH4" | {{plink|Black wizard hat (t)}}
+| data-rowid="BWR4" | {{plink|Black wizard robe (t)}}
+| data-rowid="BS9" | {{plink|Black skirt (t)}}
+|-
+| data-rowid="MRT" | {{plink|Monk's robe top (g)}}
+| data-rowid="MR" | {{plink|Monk's robe (g)}}
+| data-rowid="SRT" | {{plink|Saradomin robe top}}
+| data-rowid="SRL" | {{plink|Saradomin robe legs}}
+|-
+| data-rowid="GRT" | {{plink|Guthix robe top}}
+| data-rowid="GRL" | {{plink|Guthix robe legs}}
+| data-rowid="ZRT" | {{plink|Zamorak robe top}}
+| data-rowid="ZRL" | {{plink|Zamorak robe legs}}
+|-
+| data-rowid="ART" | {{plink|Ancient robe top}}
+| data-rowid="ARL" | {{plink|Ancient robe legs}}
+| data-rowid="ART2" | {{plink|Armadyl robe top}}
+| data-rowid="ARL2" | {{plink|Armadyl robe legs}}
+|-
+| data-rowid="BRT" | {{plink|Bandos robe top}}
+| data-rowid="BRL" | {{plink|Bandos robe legs}}
+| data-rowid="BRS" | {{plink|Bob's red shirt}}
+| data-rowid="BGS" | {{plink|Bob's green shirt}}
+|-
+| data-rowid="BBS" | {{plink|Bob's blue shirt}}
+| data-rowid="BBS2" | {{plink|Bob's black shirt}}
+| data-rowid="BPS" | {{plink|Bob's purple shirt}}
+| data-rowid="HM" | {{plink|Highwayman mask}}
+|-
+| data-rowid="BB" | {{plink|Blue beret}}
+| data-rowid="BB2" | {{plink|Black beret}}
+| data-rowid="WB" | {{plink|White beret}}
+| data-rowid="RB" | {{plink|Red beret}}
+|-
+| data-rowid="APW" | {{plink|A powdered wig}}
+| data-rowid="B" | {{plink|Beanie}}
+| data-rowid="IM" | {{plink|Imp mask}}
+| data-rowid="GM" | {{plink|Goblin mask}}
+|-
+| data-rowid="SC3" | {{plink|Sleeping cap}}
+| data-rowid="FT" | {{plink|Flared trousers}}
+| data-rowid="P" | {{plink|Pantaloons}}
+| data-rowid="BC" | {{plink|Black cane}}
+|-
+| data-rowid="SOBTC" | {{plink|Staff of bob the cat}}
+| data-rowid="RES" | {{plink|Red elegant shirt}}
+| data-rowid="REB" | {{plink|Red elegant blouse}}
+| data-rowid="REL" | {{plink|Red elegant legs}}
+|-
+| data-rowid="RES2" | {{plink|Red elegant skirt}}
+| data-rowid="GES" | {{plink|Green elegant shirt}}
+| data-rowid="GEB" | {{plink|Green elegant blouse}}
+| data-rowid="GEL" | {{plink|Green elegant legs}}
+|-
+| data-rowid="GES2" | {{plink|Green elegant skirt}}
+| data-rowid="BES" | {{plink|Blue elegant shirt}}
+| data-rowid="BEB" | {{plink|Blue elegant blouse}}
+| data-rowid="BEL" | {{plink|Blue elegant legs}}
+|-
+| data-rowid="BES2" | {{plink|Blue elegant skirt}}
+| data-rowid="AOM" | {{plink|Amulet of magic (t)}}
+| data-rowid="AOP" | {{plink|Amulet of power (t)}}
+| data-rowid="BP18" | {{plink|Black pickaxe}}
+|-
+| data-rowid="HJ" | {{plink|Ham joint}}
+| data-rowid="RB2" | {{plink|Rain bow}}
+| data-rowid="WCB" | {{plink|Willow comp bow}}
+|{{NA}}
+|}
+
+===Medium Treasure Trails===
+There are a total of 115 items to collect from [[Clue scroll (medium)|medium Treasure Trails]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MTT"
+! colspan="4" |Items
+|-
+| data-rowid="RB" | {{plink|Ranger boots}}
+| data-rowid="WB" | {{plink|Wizard boots}}
+| data-rowid="HS" | {{plink|Holy sandals}}
+| data-rowid="CB" | {{plink|Climbing boots (g)}}
+|-
+| data-rowid="SM" | {{plink|Spiked manacles}}
+| data-rowid="AFH" | {{plink|Adamant full helm (t)}}
+| data-rowid="AP" | {{plink|Adamant platebody (t)}}
+| data-rowid="AP2" | {{plink|Adamant platelegs (t)}}
+|-
+| data-rowid="AP3" | {{plink|Adamant plateskirt (t)}}
+| data-rowid="AK" | {{plink|Adamant kiteshield (t)}}
+| data-rowid="AFH2" | {{plink|Adamant full helm (g)}}
+| data-rowid="AP4" | {{plink|Adamant platebody (g)}}
+|-
+| data-rowid="AP5" | {{plink|Adamant platelegs (g)}}
+| data-rowid="AP6" | {{plink|Adamant plateskirt (g)}}
+| data-rowid="AK2" | {{plink|Adamant kiteshield (g)}}
+| data-rowid="AS" | {{plink|Adamant shield (h1)}}
+|-
+| data-rowid="AS2" | {{plink|Adamant shield (h2)}}
+| data-rowid="AS3" | {{plink|Adamant shield (h3)}}
+| data-rowid="AS4" | {{plink|Adamant shield (h4)}}
+| data-rowid="AS5" | {{plink|Adamant shield (h5)}}
+|-
+| data-rowid="AH" | {{plink|Adamant helm (h1)}}
+| data-rowid="AH2" | {{plink|Adamant helm (h2)}}
+| data-rowid="AH3" | {{plink|Adamant helm (h3)}}
+| data-rowid="AH4" | {{plink|Adamant helm (h4)}}
+|-
+| data-rowid="AH5" | {{plink|Adamant helm (h5)}}
+| data-rowid="AP7" | {{plink|Adamant platebody (h1)}}
+| data-rowid="AP8" | {{plink|Adamant platebody (h2)}}
+| data-rowid="AP9" | {{plink|Adamant platebody (h3)}}
+|-
+| data-rowid="AP10" | {{plink|Adamant platebody (h4)}}
+| data-rowid="AP11" | {{plink|Adamant platebody (h5)}}
+| data-rowid="MFH" | {{plink|Mithril full helm (g)}}
+| data-rowid="MP" | {{plink|Mithril platebody (g)}}
+|-
+| data-rowid="MP2" | {{plink|Mithril platelegs (g)}}
+| data-rowid="MP3" | {{plink|Mithril plateskirt (g)}}
+| data-rowid="MK" | {{plink|Mithril kiteshield (g)}}
+| data-rowid="MFH2" | {{plink|Mithril full helm (t)}}
+|-
+| data-rowid="MP4" | {{plink|Mithril platebody (t)}}
+| data-rowid="MP5" | {{plink|Mithril platelegs (t)}}
+| data-rowid="MP6" | {{plink|Mithril plateskirt (t)}}
+| data-rowid="MK2" | {{plink|Mithril kiteshield (t)}}
+|-
+| data-rowid="GDB" | {{plink|Green d'hide body (g)}}
+| data-rowid="GDB2" | {{plink|Green d'hide body (t)}}
+| data-rowid="GDC" | {{plink|Green d'hide chaps (g)}}
+| data-rowid="GDC2" | {{plink|Green d'hide chaps (t)}}
+|-
+| data-rowid="SM2" | {{plink|Saradomin mitre}}
+| data-rowid="SC" | {{plink|Saradomin cloak}}
+| data-rowid="GM" | {{plink|Guthix mitre}}
+| data-rowid="GC" | {{plink|Guthix cloak}}
+|-
+| data-rowid="ZM" | {{plink|Zamorak mitre}}
+| data-rowid="ZC" | {{plink|Zamorak cloak}}
+| data-rowid="AM" | {{plink|Ancient mitre}}
+| data-rowid="AC" | {{plink|Ancient cloak}}
+|-
+| data-rowid="AS6" | {{plink|Ancient stole}}
+| data-rowid="AC2" | {{plink|Ancient crozier}}
+| data-rowid="AM2" | {{plink|Armadyl mitre}}
+| data-rowid="AC3" | {{plink|Armadyl cloak}}
+|-
+| data-rowid="AS7" | {{plink|Armadyl stole}}
+| data-rowid="AC4" | {{plink|Armadyl crozier}}
+| data-rowid="BM" | {{plink|Bandos mitre}}
+| data-rowid="BC" | {{plink|Bandos cloak}}
+|-
+| data-rowid="BS" | {{plink|Bandos stole}}
+| data-rowid="BC2" | {{plink|Bandos crozier}}
+| data-rowid="RB2" | {{plink|Red boater}}
+| data-rowid="GB" | {{plink|Green boater}}
+|-
+| data-rowid="OB" | {{plink|Orange boater}}
+| data-rowid="BB" | {{plink|Black boater}}
+| data-rowid="BB2" | {{plink|Blue boater}}
+| data-rowid="PB" | {{plink|Pink boater}}
+|-
+| data-rowid="PB2" | {{plink|Purple boater}}
+| data-rowid="WB2" | {{plink|White boater}}
+| data-rowid="RH" | {{plink|Red headband}}
+| data-rowid="BH" | {{plink|Black headband}}
+|-
+| data-rowid="BH2" | {{plink|Brown headband}}
+| data-rowid="WH" | {{plink|White headband}}
+| data-rowid="BH3" | {{plink|Blue headband}}
+| data-rowid="GH" | {{plink|Gold headband}}
+|-
+| data-rowid="PH" | {{plink|Pink headband}}
+| data-rowid="GH2" | {{plink|Green headband}}
+| data-rowid="CH" | {{plink|Crier hat}}
+| data-rowid="CC" | {{plink|Crier coat}}
+|-
+| data-rowid="CB2" | {{plink|Crier bell}}
+| data-rowid="AC5" | {{plink|Adamant cane}}
+| data-rowid="AB" | {{plink|Arceuus banner}}
+| data-rowid="PB3" | {{plink|Piscarilius banner}}
+|-
+| data-rowid="HB" | {{plink|Hosidius banner}}
+| data-rowid="SB" | {{plink|Shayzien banner}}
+| data-rowid="LB" | {{plink|Lovakengj banner}}
+| data-rowid="CRS" | {{plink|Cabbage round shield}}
+|-
+| data-rowid="BUM" | {{plink|Black unicorn mask}}
+| data-rowid="WUM" | {{plink|White unicorn mask}}
+| data-rowid="CM" | {{plink|Cat mask}}
+| data-rowid="PM" | {{plink|Penguin mask}}
+|-
+| data-rowid="LH" | {{plink|Leprechaun hat}}
+| data-rowid="BLH" | {{plink|Black leprechaun hat}}
+| data-rowid="WM" | {{plink|Wolf mask}}
+| data-rowid="WC" | {{plink|Wolf cloak}}
+|-
+| data-rowid="PES" | {{plink|Purple elegant shirt}}
+| data-rowid="PEB" | {{plink|Purple elegant blouse}}
+| data-rowid="PEL" | {{plink|Purple elegant legs}}
+| data-rowid="PES2" | {{plink|Purple elegant skirt}}
+|-
+| data-rowid="BES" | {{plink|Black elegant shirt}}
+| data-rowid="WEB" | {{plink|White elegant blouse}}
+| data-rowid="BEL" | {{plink|Black elegant legs}}
+| data-rowid="WES" | {{plink|White elegant skirt}}
+|-
+| data-rowid="PES3" | {{plink|Pink elegant shirt}}
+| data-rowid="PEB2" | {{plink|Pink elegant blouse}}
+| data-rowid="PEL2" | {{plink|Pink elegant legs}}
+| data-rowid="PES4" | {{plink|Pink elegant skirt}}
+|-
+| data-rowid="GES" | {{plink|Gold elegant shirt}}
+| data-rowid="GEB" | {{plink|Gold elegant blouse}}
+| data-rowid="GEL" | {{plink|Gold elegant legs}}
+| data-rowid="GES2" | {{plink|Gold elegant skirt}}
+|-
+| data-rowid="GF" | {{plink|Gnomish firelighter}}
+| data-rowid="SA" | {{plink|Strength amulet (t)}}
+| data-rowid="YCB" | {{plink|Yew comp bow}}
+|{{NA}}
+|}
+
+===Hard Treasure Trails===
+There are a total of 134 items to collect from [[Clue scroll (hard)|hard Treasure Trails]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-HTT"
+! colspan="4" |Items
+|-
+| data-rowid="RHH" | {{plink|Robin hood hat}}
+| data-rowid="DBOK" | {{plink|Dragon boots ornament kit}}
+| data-rowid="RDOK" | {{plink|Rune defender ornament kit}}
+| data-rowid="TKOOK" | {{plink|Tzhaar-ket-om ornament kit}}
+|-
+| data-rowid="BNOK" | {{plink|Berserker necklace ornament kit}}
+| data-rowid="RFH" | {{plink|Rune full helm (t)}}
+| data-rowid="RP" | {{plink|Rune platebody (t)}}
+| data-rowid="RP2" | {{plink|Rune platelegs (t)}}
+|-
+| data-rowid="RP3" | {{plink|Rune plateskirt (t)}}
+| data-rowid="RK" | {{plink|Rune kiteshield (t)}}
+| data-rowid="RFH2" | {{plink|Rune full helm (g)}}
+| data-rowid="RP4" | {{plink|Rune platebody (g)}}
+|-
+| data-rowid="RP5" | {{plink|Rune platelegs (g)}}
+| data-rowid="RP6" | {{plink|Rune plateskirt (g)}}
+| data-rowid="RK2" | {{plink|Rune kiteshield (g)}}
+| data-rowid="ZFH" | {{plink|Zamorak full helm}}
+|-
+| data-rowid="ZP" | {{plink|Zamorak platebody}}
+| data-rowid="ZP2" | {{plink|Zamorak platelegs}}
+| data-rowid="ZP3" | {{plink|Zamorak plateskirt}}
+| data-rowid="ZK" | {{plink|Zamorak kiteshield}}
+|-
+| data-rowid="GFH" | {{plink|Guthix full helm}}
+| data-rowid="GP" | {{plink|Guthix platebody}}
+| data-rowid="GP2" | {{plink|Guthix platelegs}}
+| data-rowid="GP3" | {{plink|Guthix plateskirt}}
+|-
+| data-rowid="GK" | {{plink|Guthix kiteshield}}
+| data-rowid="SFH" | {{plink|Saradomin full helm}}
+| data-rowid="SP" | {{plink|Saradomin platebody}}
+| data-rowid="SP2" | {{plink|Saradomin platelegs}}
+|-
+| data-rowid="SP3" | {{plink|Saradomin plateskirt}}
+| data-rowid="SK" | {{plink|Saradomin kiteshield}}
+| data-rowid="AFH" | {{plink|Ancient full helm}}
+| data-rowid="AP" | {{plink|Ancient platebody}}
+|-
+| data-rowid="AP2" | {{plink|Ancient platelegs}}
+| data-rowid="AP3" | {{plink|Ancient plateskirt}}
+| data-rowid="AK" | {{plink|Ancient kiteshield}}
+| data-rowid="AFH2" | {{plink|Armadyl full helm}}
+|-
+| data-rowid="AP4" | {{plink|Armadyl platebody}}
+| data-rowid="AP5" | {{plink|Armadyl platelegs}}
+| data-rowid="AP6" | {{plink|Armadyl plateskirt}}
+| data-rowid="AK2" | {{plink|Armadyl kiteshield}}
+|-
+| data-rowid="BFH" | {{plink|Bandos full helm}}
+| data-rowid="BP" | {{plink|Bandos platebody}}
+| data-rowid="BP2" | {{plink|Bandos platelegs}}
+| data-rowid="BP3" | {{plink|Bandos plateskirt}}
+|-
+| data-rowid="BK" | {{plink|Bandos kiteshield}}
+| data-rowid="RS" | {{plink|Rune shield (h1)}}
+| data-rowid="RS2" | {{plink|Rune shield (h2)}}
+| data-rowid="RS3" | {{plink|Rune shield (h3)}}
+|-
+| data-rowid="RS4" | {{plink|Rune shield (h4)}}
+| data-rowid="RS5" | {{plink|Rune shield (h5)}}
+| data-rowid="RH" | {{plink|Rune helm (h1)}}
+| data-rowid="RH2" | {{plink|Rune helm (h2)}}
+|-
+| data-rowid="RH3" | {{plink|Rune helm (h3)}}
+| data-rowid="RH4" | {{plink|Rune helm (h4)}}
+| data-rowid="RH5" | {{plink|Rune helm (h5)}}
+| data-rowid="RP7" | {{plink|Rune platebody (h1)}}
+|-
+| data-rowid="RP8" | {{plink|Rune platebody (h2)}}
+| data-rowid="RP9" | {{plink|Rune platebody (h3)}}
+| data-rowid="RP10" | {{plink|Rune platebody (h4)}}
+| data-rowid="RP11" | {{plink|Rune platebody (h5)}}
+|-
+| data-rowid="SC" | {{plink|Saradomin coif}}
+| data-rowid="SDB" | {{plink|Saradomin d'hide body}}
+| data-rowid="SC2" | {{plink|Saradomin chaps}}
+| data-rowid="SB" | {{plink|Saradomin bracers}}
+|-
+| data-rowid="SDB2" | {{plink|Saradomin d'hide boots}}
+| data-rowid="SDS" | {{plink|Saradomin d'hide shield}}
+| data-rowid="GC" | {{plink|Guthix coif}}
+| data-rowid="GDB" | {{plink|Guthix d'hide body}}
+|-
+| data-rowid="GC2" | {{plink|Guthix chaps}}
+| data-rowid="GB" | {{plink|Guthix bracers}}
+| data-rowid="GDB2" | {{plink|Guthix d'hide boots}}
+| data-rowid="GDS" | {{plink|Guthix d'hide shield}}
+|-
+| data-rowid="ZC" | {{plink|Zamorak coif}}
+| data-rowid="ZDB" | {{plink|Zamorak d'hide body}}
+| data-rowid="ZC2" | {{plink|Zamorak chaps}}
+| data-rowid="ZB" | {{plink|Zamorak bracers}}
+|-
+| data-rowid="ZDB2" | {{plink|Zamorak d'hide boots}}
+| data-rowid="ZDS" | {{plink|Zamorak d'hide shield}}
+| data-rowid="BC" | {{plink|Bandos coif}}
+| data-rowid="BDB" | {{plink|Bandos d'hide body}}
+|-
+| data-rowid="BC2" | {{plink|Bandos chaps}}
+| data-rowid="BB" | {{plink|Bandos bracers}}
+| data-rowid="BDB2" | {{plink|Bandos d'hide boots}}
+| data-rowid="BDS" | {{plink|Bandos d'hide shield}}
+|-
+| data-rowid="AC" | {{plink|Armadyl coif}}
+| data-rowid="ADB" | {{plink|Armadyl d'hide body}}
+| data-rowid="AC2" | {{plink|Armadyl chaps}}
+| data-rowid="AB" | {{plink|Armadyl bracers}}
+|-
+| data-rowid="ADB2" | {{plink|Armadyl d'hide boots}}
+| data-rowid="ADS" | {{plink|Armadyl d'hide shield}}
+| data-rowid="AC3" | {{plink|Ancient coif}}
+| data-rowid="ADB3" | {{plink|Ancient d'hide body}}
+|-
+| data-rowid="AC4" | {{plink|Ancient chaps}}
+| data-rowid="AB2" | {{plink|Ancient bracers}}
+| data-rowid="ADB4" | {{plink|Ancient d'hide boots}}
+| data-rowid="ADS2" | {{plink|Ancient d'hide shield}}
+|-
+| data-rowid="RDB" | {{plink|Red d'hide body (t)}}
+| data-rowid="RDC" | {{plink|Red d'hide chaps (t)}}
+| data-rowid="RDB2" | {{plink|Red d'hide body (g)}}
+| data-rowid="RDC2" | {{plink|Red d'hide chaps (g)}}
+|-
+| data-rowid="BDB3" | {{plink|Blue d'hide body (t)}}
+| data-rowid="BDC" | {{plink|Blue d'hide chaps (t)}}
+| data-rowid="BDB4" | {{plink|Blue d'hide body (g)}}
+| data-rowid="BDC2" | {{plink|Blue d'hide chaps (g)}}
+|-
+| data-rowid="EH" | {{plink|Enchanted hat}}
+| data-rowid="ET" | {{plink|Enchanted top}}
+| data-rowid="ER" | {{plink|Enchanted robe}}
+| data-rowid="SS" | {{plink|Saradomin stole}}
+|-
+| data-rowid="SC3" | {{plink|Saradomin crozier}}
+| data-rowid="GS" | {{plink|Guthix stole}}
+| data-rowid="GC3" | {{plink|Guthix crozier}}
+| data-rowid="ZS" | {{plink|Zamorak stole}}
+|-
+| data-rowid="ZC3" | {{plink|Zamorak crozier}}
+| data-rowid="ZHTT" | {{plink|Zombie head (Treasure Trails)|txt=Zombie head}}
+| data-rowid="CH" | {{plink|Cyclops head}}
+| data-rowid="PH" | {{plink|Pirate's hat}}
+|-
+| data-rowid="RC" | {{plink|Red cavalier}}
+| data-rowid="WC" | {{plink|White cavalier}}
+| data-rowid="NC" | {{plink|Navy cavalier}}
+| data-rowid="TC" | {{plink|Tan cavalier}}
+|-
+| data-rowid="DC" | {{plink|Dark cavalier}}
+| data-rowid="BC3" | {{plink|Black cavalier}}
+| data-rowid="PH2" | {{plink|Pith helmet}}
+| data-rowid="EB" | {{plink|Explorer backpack}}
+|-
+| data-rowid="TB" | {{plink|Thieving bag}}
+| data-rowid="GDM" | {{plink|Green dragon mask}}
+| data-rowid="BDM" | {{plink|Blue dragon mask}}
+| data-rowid="RDM" | {{plink|Red dragon mask}}
+|-
+| data-rowid="BDM2" | {{plink|Black dragon mask}}
+| data-rowid="N" | {{plink|Nunchaku}}
+| data-rowid="DS" | {{plink|Dual sai}}
+| data-rowid="RC2" | {{plink|Rune cane}}
+|-
+| data-rowid="AOG" | {{plink|Amulet of glory (t)}}
+| data-rowid="MCB" | {{plink|Magic comp bow}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Elite Treasure Trails===
+There are a total of 59 items to collect from [[Clue scroll (elite)|elite Treasure Trails]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-ETT2"
+! colspan="4" |Items
+|-
+| data-rowid="ROA" | {{plink|Ring of 3rd age}}
+| data-rowid="FOK" | {{plink|Fury ornament kit}}
+| data-rowid="DCOK" | {{plink|Dragon chainbody ornament kit}}
+| data-rowid="DLOK" | {{plink|Dragon legs/skirt ornament kit|pic=Dragon legs+skirt ornament kit}}
+|-
+| data-rowid="DSSOK" | {{plink|Dragon sq shield ornament kit}}
+| data-rowid="DFHOK" | {{plink|Dragon full helm ornament kit}}
+| data-rowid="DSOK" | {{plink|Dragon scimitar ornament kit}}
+| data-rowid="LICK" | {{plink|Light infinity colour kit}}
+|-
+| data-rowid="DICK" | {{plink|Dark infinity colour kit}}
+| data-rowid="HW" | {{plink|Holy wraps}}
+| data-rowid="RG" | {{plink|Ranger gloves}}
+| data-rowid="RT" | {{plink|Rangers' tunic}}
+|-
+| data-rowid="RT2" | {{plink|Rangers' tights}}
+| data-rowid="BDB" | {{plink|Black d'hide body (g)}}
+| data-rowid="BDC" | {{plink|Black d'hide chaps (g)}}
+| data-rowid="BDB2" | {{plink|Black d'hide body (t)}}
+|-
+| data-rowid="BDC2" | {{plink|Black d'hide chaps (t)}}
+| data-rowid="RC" | {{plink|Royal crown}}
+| data-rowid="RS" | {{plink|Royal sceptre}}
+| data-rowid="RGT" | {{plink|Royal gown top}}
+|-
+| data-rowid="RGB" | {{plink|Royal gown bottom}}
+| data-rowid="MH" | {{plink|Musketeer hat}}
+| data-rowid="MT" | {{plink|Musketeer tabard}}
+| data-rowid="MP" | {{plink|Musketeer pants}}
+|-
+| data-rowid="DTJ" | {{plink|Dark tuxedo jacket}}
+| data-rowid="DT" | {{plink|Dark trousers}}
+| data-rowid="DTS" | {{plink|Dark tuxedo shoes}}
+| data-rowid="DTC" | {{plink|Dark tuxedo cuffs}}
+|-
+| data-rowid="DBT" | {{plink|Dark bow tie}}
+| data-rowid="LTJ" | {{plink|Light tuxedo jacket}}
+| data-rowid="LT" | {{plink|Light trousers}}
+| data-rowid="LTS" | {{plink|Light tuxedo shoes}}
+|-
+| data-rowid="LTC" | {{plink|Light tuxedo cuffs}}
+| data-rowid="LBT" | {{plink|Light bow tie}}
+| data-rowid="AS" | {{plink|Arceuus scarf}}
+| data-rowid="HS" | {{plink|Hosidius scarf}}
+|-
+| data-rowid="PS" | {{plink|Piscarilius scarf}}
+| data-rowid="SS" | {{plink|Shayzien scarf}}
+| data-rowid="LS" | {{plink|Lovakengj scarf}}
+| data-rowid="BDM" | {{plink|Bronze dragon mask}}
+|-
+| data-rowid="IDM" | {{plink|Iron dragon mask}}
+| data-rowid="SDM" | {{plink|Steel dragon mask}}
+| data-rowid="MDM" | {{plink|Mithril dragon mask}}
+| data-rowid="ADM" | {{plink|Adamant dragon mask}}
+|-
+| data-rowid="RDM" | {{plink|Rune dragon mask}}
+| data-rowid="K" | {{plink|Katana}}
+| data-rowid="DC" | {{plink|Dragon cane}}
+| data-rowid="B" | {{plink|Briefcase}}
+|-
+| data-rowid="BH" | {{plink|Bucket helm}}
+| data-rowid="BH2" | {{plink|Blacksmith's helm}}
+| data-rowid="D" | {{plink|Deerstalker}}
+| data-rowid="A" | {{plink|Afro}}
+|-
+| data-rowid="BPH" | {{plink|Big pirate hat}}
+| data-rowid="TH" | {{plink|Top hat}}
+| data-rowid="M" | {{plink|Monocle}}
+| data-rowid="SS2" | {{plink|Sagacious spectacles}}
+|-
+| data-rowid="FK" | {{plink|Fremennik kilt}}
+| data-rowid="GB" | {{plink|Giant boot}}
+| data-rowid="UH" | {{plink|Uri's hat}}
+|{{NA}}
+|}
+
+===Master Treasure Trails===
+There are a total of 49 items to collect from [[Clue scroll (master)|master Treasure Trails]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MTT2"
+! colspan="4" | Items
+|-
+| data-rowid="B" | {{plink|Bloodhound}}
+| data-rowid="ROA" | {{plink|Ring of 3rd age}}
+| data-rowid="AGOK" | {{plink|Armadyl godsword ornament kit}}
+| data-rowid="BGOK" | {{plink|Bandos godsword ornament kit}}
+|-
+| data-rowid="SGOK" | {{plink|Saradomin godsword ornament kit}}
+| data-rowid="ZGOK" | {{plink|Zamorak godsword ornament kit}}
+| data-rowid="OOK" | {{plink|Occult ornament kit}}
+| data-rowid="TOK" | {{plink|Torture ornament kit}}
+|-
+| data-rowid="AOK" | {{plink|Anguish ornament kit}}
+| data-rowid="DDOK" | {{plink|Dragon defender ornament kit}}
+| data-rowid="DKOK" | {{plink|Dragon kiteshield ornament kit}}
+| data-rowid="DPOK" | {{plink|Dragon platebody ornament kit}}
+|-
+| data-rowid="TOK2" | {{plink|Tormented ornament kit}}
+| data-rowid="HOD" | {{plink|Hood of darkness}}
+| data-rowid="RTOD" | {{plink|Robe top of darkness}}
+| data-rowid="RBOD" | {{plink|Robe bottom of darkness}}
+|-
+| data-rowid="GOD" | {{plink|Gloves of darkness}}
+| data-rowid="BOD" | {{plink|Boots of darkness}}
+| data-rowid="SK" | {{plink|Samurai kasa}}
+| data-rowid="SS" | {{plink|Samurai shirt}}
+|-
+| data-rowid="SG" | {{plink|Samurai greaves}}
+| data-rowid="SB" | {{plink|Samurai boots}}
+| data-rowid="SG2" | {{plink|Samurai gloves}}
+| data-rowid="AM" | {{plink|Ankou mask}}
+|-
+| data-rowid="AT" | {{plink|Ankou top}}
+| data-rowid="AG" | {{plink|Ankou gloves}}
+| data-rowid="AS" | {{plink|Ankou socks}}
+| data-rowid="AL" | {{plink|Ankou's leggings}}
+|-
+| data-rowid="MH" | {{plink|Mummy's head}}
+| data-rowid="MF" | {{plink|Mummy's feet}}
+| data-rowid="MH2" | {{plink|Mummy's hands}}
+| data-rowid="ML" | {{plink|Mummy's legs}}
+|-
+| data-rowid="MB" | {{plink|Mummy's body}}
+| data-rowid="SH" | {{plink|Shayzien hood}}
+| data-rowid="HH" | {{plink|Hosidius hood}}
+| data-rowid="AH" | {{plink|Arceuus hood}}
+|-
+| data-rowid="PH" | {{plink|Piscarilius hood}}
+| data-rowid="LH" | {{plink|Lovakengj hood}}
+| data-rowid="LDM" | {{plink|Lesser demon mask}}
+| data-rowid="GDM" | {{plink|Greater demon mask}}
+|-
+| data-rowid="BDM" | {{plink|Black demon mask}}
+| data-rowid="JDM" | {{plink|Jungle demon mask}}
+| data-rowid="ODM" | {{plink|Old demon mask}}
+| data-rowid="LEP" | {{plink|Left eye patch}}
+|-
+| data-rowid="BW" | {{plink|Bowl wig}}
+| data-rowid="AOTG" | {{plink|Ale of the gods}}
+| data-rowid="OC" | {{plink|Obsidian cape (r)}}
+| data-rowid="HMS" | {{plink|Half moon spectacles}}
+|-
+| data-rowid="FT" | {{plink|Fancy tiara}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Hard Treasure Trail Rewards (Rare)===
+There are a total of 24 rare items to collect from hard Treasure Trails.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-HTTRR"
+! colspan="4" |Items
+|-
+| data-rowid="ARC" | {{plink|3rd age range coif}}
+| data-rowid="ART" | {{plink|3rd age range top}}
+| data-rowid="ARL" | {{plink|3rd age range legs}}
+| data-rowid="AV" | {{plink|3rd age vambraces}}
+|-
+| data-rowid="ART2" | {{plink|3rd age robe top}}
+| data-rowid="AR" | {{plink|3rd age robe}}
+| data-rowid="AMH" | {{plink|3rd age mage hat}}
+| data-rowid="AA" | {{plink|3rd age amulet}}
+|-
+| data-rowid="AP" | {{plink|3rd age plateskirt}}
+| data-rowid="AP2" | {{plink|3rd age platelegs}}
+| data-rowid="AP3" | {{plink|3rd age platebody}}
+| data-rowid="AFH" | {{plink|3rd age full helmet}}
+|-
+| data-rowid="AK" | {{plink|3rd age kiteshield}}
+| data-rowid="GP" | {{plink|Gilded platebody}}
+| data-rowid="GP2" | {{plink|Gilded platelegs}}
+| data-rowid="GP3" | {{plink|Gilded plateskirt}}
+|-
+| data-rowid="GFH" | {{plink|Gilded full helm}}
+| data-rowid="GK" | {{plink|Gilded kiteshield}}
+| data-rowid="GMH" | {{plink|Gilded med helm}}
+| data-rowid="GC" | {{plink|Gilded chainbody}}
+|-
+| data-rowid="GSS" | {{plink|Gilded sq shield}}
+| data-rowid="GS" | {{plink|Gilded 2h sword}}
+| data-rowid="GS2" | {{plink|Gilded spear}}
+| data-rowid="GH" | {{plink|Gilded hasta}}
+|}
+
+===Elite Treasure Trail Rewards (Rare)===
+There are a total of 39 rare items to collect from elite Treasure Trails.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-ETTRR"
+! colspan="4" |Items
+|-
+| data-rowid="AL" | {{plink|3rd age longsword}}
+| data-rowid="AW" | {{plink|3rd age wand}}
+| data-rowid="AC" | {{plink|3rd age cloak}}
+| data-rowid="AB" | {{plink|3rd age bow}}
+|-
+| data-rowid="ARC" | {{plink|3rd age range coif}}
+| data-rowid="ART" | {{plink|3rd age range top}}
+| data-rowid="ARL" | {{plink|3rd age range legs}}
+| data-rowid="AV" | {{plink|3rd age vambraces}}
+|-
+| data-rowid="ART2" | {{plink|3rd age robe top}}
+| data-rowid="AR" | {{plink|3rd age robe}}
+| data-rowid="AMH" | {{plink|3rd age mage hat}}
+| data-rowid="AA" | {{plink|3rd age amulet}}
+|-
+| data-rowid="AP" | {{plink|3rd age plateskirt}}
+| data-rowid="AP2" | {{plink|3rd age platelegs}}
+| data-rowid="AP3" | {{plink|3rd age platebody}}
+| data-rowid="AFH" | {{plink|3rd age full helmet}}
+|-
+| data-rowid="AK" | {{plink|3rd age kiteshield}}
+| data-rowid="GS" | {{plink|Gilded scimitar}}
+| data-rowid="GB" | {{plink|Gilded boots}}
+| data-rowid="GP" | {{plink|Gilded platebody}}
+|-
+| data-rowid="GP2" | {{plink|Gilded platelegs}}
+| data-rowid="GP3" | {{plink|Gilded plateskirt}}
+| data-rowid="GFH" | {{plink|Gilded full helm}}
+| data-rowid="GK" | {{plink|Gilded kiteshield}}
+|-
+| data-rowid="GMH" | {{plink|Gilded med helm}}
+| data-rowid="GC" | {{plink|Gilded chainbody}}
+| data-rowid="GSS" | {{plink|Gilded sq shield}}
+| data-rowid="GS2" | {{plink|Gilded 2h sword}}
+|-
+| data-rowid="GS3" | {{plink|Gilded spear}}
+| data-rowid="GH" | {{plink|Gilded hasta}}
+| data-rowid="GC2" | {{plink|Gilded coif}}
+| data-rowid="GDV" | {{plink|Gilded d'hide vambraces}}
+|-
+| data-rowid="GDB" | {{plink|Gilded d'hide body}}
+| data-rowid="GDC" | {{plink|Gilded d'hide chaps}}
+| data-rowid="GP4" | {{plink|Gilded pickaxe}}
+| data-rowid="GA" | {{plink|Gilded axe}}
+|-
+| data-rowid="GS4" | {{plink|Gilded spade}}
+| data-rowid="RON" | {{plink|Ring of nature}}
+| data-rowid="LDM" | {{plink|Lava dragon mask}}
+|{{NA}}
+|}
+
+===Master Treasure Trail Rewards (Rare)===
+There are a total of 45 rare items to collect from master Treasure Trails.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MTTRR"
+! colspan="4" |Items
+|-
+| data-rowid="AP" | {{plink|3rd age pickaxe}}
+| data-rowid="AA" | {{plink|3rd age axe}}
+| data-rowid="AL" | {{plink|3rd age longsword}}
+| data-rowid="AW" | {{plink|3rd age wand}}
+|-
+| data-rowid="AC" | {{plink|3rd age cloak}}
+| data-rowid="AB" | {{plink|3rd age bow}}
+| data-rowid="ARC" | {{plink|3rd age range coif}}
+| data-rowid="ART" | {{plink|3rd age range top}}
+|-
+| data-rowid="ARL" | {{plink|3rd age range legs}}
+| data-rowid="AV" | {{plink|3rd age vambraces}}
+| data-rowid="ART2" | {{plink|3rd age robe top}}
+| data-rowid="AR" | {{plink|3rd age robe}}
+|-
+| data-rowid="AMH" | {{plink|3rd age mage hat}}
+| data-rowid="AA2" | {{plink|3rd age amulet}}
+| data-rowid="AP2" | {{plink|3rd age plateskirt}}
+| data-rowid="AP3" | {{plink|3rd age platelegs}}
+|-
+| data-rowid="AP4" | {{plink|3rd age platebody}}
+| data-rowid="AFH" | {{plink|3rd age full helmet}}
+| data-rowid="AK" | {{plink|3rd age kiteshield}}
+| data-rowid="ADRB" | {{plink|3rd age druidic robe bottoms}}
+|-
+| data-rowid="ADRT" | {{plink|3rd age druidic robe top}}
+| data-rowid="ADS" | {{plink|3rd age druidic staff}}
+| data-rowid="ADC" | {{plink|3rd age druidic cloak}}
+| data-rowid="GS" | {{plink|Gilded scimitar}}
+|-
+| data-rowid="GB" | {{plink|Gilded boots}}
+| data-rowid="GP" | {{plink|Gilded platebody}}
+| data-rowid="GP2" | {{plink|Gilded platelegs}}
+| data-rowid="GP3" | {{plink|Gilded plateskirt}}
+|-
+| data-rowid="GFH" | {{plink|Gilded full helm}}
+| data-rowid="GK" | {{plink|Gilded kiteshield}}
+| data-rowid="GMH" | {{plink|Gilded med helm}}
+| data-rowid="GC" | {{plink|Gilded chainbody}}
+|-
+| data-rowid="GSS" | {{plink|Gilded sq shield}}
+| data-rowid="GS2" | {{plink|Gilded 2h sword}}
+| data-rowid="GS3" | {{plink|Gilded spear}}
+| data-rowid="GH" | {{plink|Gilded hasta}}
+|-
+| data-rowid="GC2" | {{plink|Gilded coif}}
+| data-rowid="GDV" | {{plink|Gilded d'hide vambraces}}
+| data-rowid="GDB" | {{plink|Gilded d'hide body}}
+| data-rowid="GDC" | {{plink|Gilded d'hide chaps}}
+|-
+| data-rowid="GP4" | {{plink|Gilded pickaxe}}
+| data-rowid="GA" | {{plink|Gilded axe}}
+| data-rowid="GS4" | {{plink|Gilded spade}}
+| data-rowid="BH" | {{plink|Bucket helm (g)}}
+|-
+| data-rowid="ROC" | {{plink|Ring of coins}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Shared Treasure Trail Rewards===
+There are a total of 49 items to collect from shared Treasure Trail rewards.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-STTR"
+! colspan="4" |Items
+|-
+| data-rowid="SP" | {{plink|Saradomin page 1}}
+| data-rowid="SP2" | {{plink|Saradomin page 2}}
+| data-rowid="SP3" | {{plink|Saradomin page 3}}
+| data-rowid="SP4" | {{plink|Saradomin page 4}}
+|-
+| data-rowid="ZP" | {{plink|Zamorak page 1}}
+| data-rowid="ZP2" | {{plink|Zamorak page 2}}
+| data-rowid="ZP3" | {{plink|Zamorak page 3}}
+| data-rowid="ZP4" | {{plink|Zamorak page 4}}
+|-
+| data-rowid="GP" | {{plink|Guthix page 1}}
+| data-rowid="GP2" | {{plink|Guthix page 2}}
+| data-rowid="GP3" | {{plink|Guthix page 3}}
+| data-rowid="GP4" | {{plink|Guthix page 4}}
+|-
+| data-rowid="BP" | {{plink|Bandos page 1}}
+| data-rowid="BP2" | {{plink|Bandos page 2}}
+| data-rowid="BP3" | {{plink|Bandos page 3}}
+| data-rowid="BP4" | {{plink|Bandos page 4}}
+|-
+| data-rowid="AP" | {{plink|Armadyl page 1}}
+| data-rowid="AP2" | {{plink|Armadyl page 2}}
+| data-rowid="AP3" | {{plink|Armadyl page 3}}
+| data-rowid="AP4" | {{plink|Armadyl page 4}}
+|-
+| data-rowid="AP5" | {{plink|Ancient page 1}}
+| data-rowid="AP6" | {{plink|Ancient page 2}}
+| data-rowid="AP7" | {{plink|Ancient page 3}}
+| data-rowid="AP8" | {{plink|Ancient page 4}}
+|-
+| data-rowid="HB" | {{plink|Holy blessing}}
+| data-rowid="UB" | {{plink|Unholy blessing}}
+| data-rowid="PB" | {{plink|Peaceful blessing}}
+| data-rowid="WB" | {{plink|War blessing}}
+|-
+| data-rowid="HB2" | {{plink|Honourable blessing}}
+| data-rowid="AB" | {{plink|Ancient blessing}}
+| data-rowid="NT" | {{plink|Nardah teleport}}
+| data-rowid="MLT" | {{plink|Mos le'harmless teleport}}
+|-
+| data-rowid="MT" | {{plink|Mort'ton teleport}}
+| data-rowid="FHT" | {{plink|Feldip hills teleport}}
+| data-rowid="LIT" | {{plink|Lunar isle teleport}}
+| data-rowid="DT" | {{plink|Digsite teleport}}
+|-
+| data-rowid="PT" | {{plink|Piscatoris teleport}}
+| data-rowid="PCT" | {{plink|Pest control teleport}}
+| data-rowid="TBWT" | {{plink|Tai bwo wannai teleport}}
+| data-rowid="LT" | {{plink|Lumberyard teleport}}
+|-
+| data-rowid="ICT" | {{plink|Iorwerth camp teleport}}
+| data-rowid="MSB" | {{plink|Master scroll book|pic=Master scroll book (empty)}}
+| data-rowid="RF" | {{plink|Red firelighter}}
+| data-rowid="GF" | {{plink|Green firelighter}}
+|-
+| data-rowid="BF" | {{plink|Blue firelighter}}
+| data-rowid="PF" | {{plink|Purple firelighter}}
+| data-rowid="WF" | {{plink|White firelighter}}
+| data-rowid="CDJS" | {{plink|Charge dragonstone jewellery scroll}}
+|-
+| data-rowid="PS" | {{plink|Purple sweets|pic=Purple sweets 10}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Scroll Cases===
+There are a total of 13 items to collect from [[Scroll Cases]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-SC"
+! colspan="3" |Items
+|-
+| data-rowid="MIBSC" | {{plink|Minor beginner scroll case}}
+| data-rowid="MABSC" | {{plink|Major beginner scroll case}}
+| data-rowid="MIESC" | {{plink|Minor easy scroll case}}
+|-
+| data-rowid="MAESC" | {{plink|Major easy scroll case}}
+| data-rowid="MIMSC" | {{plink|Minor medium scroll case}}
+| data-rowid="MAMSC" | {{plink|Major medium scroll case}}
+|-
+| data-rowid="MIHSC" | {{plink|Minor hard scroll case}}
+| data-rowid="MAHSC" | {{plink|Major hard scroll case}}
+| data-rowid="MIELSC" | {{plink|Minor elite scroll case}}
+|-
+| data-rowid="MAELSC" | {{plink|Major elite scroll case}}
+| data-rowid="MIMSC" | {{plink|Minor master scroll case}}
+| data-rowid="MAMSC" | {{plink|Major master scroll case}}
+|-
+| data-rowid="MSC" | {{plink|Mimic scroll case}}
+|{{NA}}
+|{{NA}}
+|}

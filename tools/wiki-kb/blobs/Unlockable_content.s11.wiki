@@ -1,0 +1,67 @@
+==Locations==
+{| class="wikitable lighttable sortable"
+|-
+!Content!!Members!!Unlocked!!Notes
+|-
+|[[Abyss]]||{{members|yes}}||[[Enter the Abyss]] miniquest||Gives access to obtain more [[essence pouch]] drops from killing the creatures inside.
+|-
+|[[Ancient Cavern]]||{{Members|yes}}||Partial completion of [[Barbarian Training]] miniquest
+|-
+|[[Corsair Cove Resource Area]]||{{Members|no}}||[[Dragon Slayer I]] quest||
+|-
+|[[Crandor]]||{{Members|no}}||Partial completion of the [[Dragon Slayer I]] quest.||Including the northern portion of the [[Crandor and Karamja Dungeon]].
+|-
+|[[Dorgesh-Kaan]]||{{members|yes}}||[[Death to the Dorgeshuun]] quest||
+|-
+|[[Elemental Workshop]]||{{members|yes}}||[[Elemental Workshop I]] quest||
+|-
+|[[Fossil Island]]||{{members|yes}}||[[Bone Voyage]] quest||
+|-
+|[[God Wars Dungeon]]
+|{{members|yes}}
+|Partial completion of the [[Troll Stronghold]] quest
+and having talked to the [[God Wars Dungeon#The dying knight|the dying knight]].
+|
+|-
+|[[God Wars Dungeon#Ancient Prison|God Wars Dungeon (Ancient Prison)]]
+|{{Members|yes}}
+|[[The Frozen Door]] miniquest
+|Gives access to the [[Ancient Prison|Zarosian area]] of [[God Wars Dungeon]] and the ability to fight [[Nex]].
+|-
+|[[The Great Conch]]
+|{{members|yes}}
+|[[Troubled Tortugans]] quest
+|
+|-
+|[[Grotesque Guardians]]
+|{{members|yes}}
+|Used a [[Brittle key]] on the roof entrance on the top floor of the [[Slayer Tower]]
+|Obtained as drop from [[Gargoyle|Gargoyles]]
+|-
+|[[Iceberg]]||{{members|yes}}||Partial completion of the quest [[Cold War]]||Penguin base can be accessed if wearing a [[clockwork suit]]
+|-
+|[[Jatizso]]||{{members|yes}}||[[The Fremennik Trials]] quest||
+|-
+|[[Kharazi Jungle]]||{{members|yes}}||[[Legends' Quest]]
+|Partial completion with [[Radimus notes]]
+|-
+|[[Lunar Isle]]||{{members|yes}}||[[Lunar Diplomacy]] quest||
+|-
+|[[Miscellania]] and [[Etceteria]]||{{members|yes}}||[[The Fremennik Trials]] quest||Complete the [[Throne of Miscellania]] quest to unlock the [[Managing Miscellania]].
+|-
+|[[Morytania]]||{{members|yes}}||[[Priest in Peril]] quest||
+|-
+|[[Mos Le'Harmless]]||{{members|yes}}||[[Cabin Fever]] quest||
+|-
+|[[Motherlode Mine#Upper_level|Upper level of Motherlode Mine]]||{{members|yes}}||Purchased with 100 [[Golden nugget|golden nuggets]] from [[Prospector Percy]]||
+|-
+|[[Neitiznot]]||{{members|yes}}||[[The Fremennik Trials]] quest||
+|-
+|[[Prifddinas]]||{{members|yes}}||[[Song of the Elves]] quest||
+|-
+|[[Tirannwn]]||{{members|yes}}||Started [[Regicide]] quest||
+|-
+|[[Varlamore]]||{{members|yes}}||[[Children of the Sun]] quest||
+|-
+|[[Zanaris]]||{{members|yes}}||[[Lost City]] quest||
+|}

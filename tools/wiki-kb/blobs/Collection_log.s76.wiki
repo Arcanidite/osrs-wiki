@@ -1,0 +1,518 @@
+==Minigames==
+===Barbarian Assault===
+There are a total of 11 items to collect from [[Barbarian Assault]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-BA"
+! colspan="3" |Items
+|-
+| data-rowid="PPQ" | {{plink|Pet penance queen}}
+| data-rowid="FH" | {{plink|Fighter hat}}
+| data-rowid="RH" | {{plink|Ranger hat}}
+|-
+| data-rowid="RH2" | {{plink|Runner hat}}
+| data-rowid="HH" | {{plink|Healer hat}}
+| data-rowid="FT" | {{plink|Fighter torso}}
+|-
+| data-rowid="PS" | {{plink|Penance skirt}}
+| data-rowid="RB" | {{plink|Runner boots}}
+| data-rowid="PG" | {{plink|Penance gloves}}
+|-
+| data-rowid="GH" | {{plink|Granite helm}}
+| data-rowid="GB" | {{plink|Granite body}}
+|{{NA}}
+|}
+
+===Barracuda Trials===
+There are a total of 9 items to collect from [[Barracuda Trials]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-BT"
+! colspan="3" |Items
+|-
+| data-rowid="SK1" | {{plink|Stormy key}}
+| data-rowid="BS" | {{plink|Barrel stand}}
+| data-rowid="RFR" | {{plink|Ralph's fabric roll}}
+|-
+| data-rowid="FK" | {{plink|Fetid key}}
+| data-rowid="CWM" | {{plink|Captured wind mote}}
+| data-rowid="GFR1" | {{plink|Gurtob's fabric roll}}
+|-
+| data-rowid="SK2" | {{plink|Serrated key}}
+| data-rowid="HI" | {{plink|Heart of ithell}}
+| data-rowid="GFR2" | {{plink|Gwyna's fabric roll}}
+|}
+
+===Brimhaven Agility Arena===
+There are a total of 9 items to collect from the [[Brimhaven Agility Arena]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-BAA"
+! colspan="3" |Items
+|-
+| data-rowid="AAT" | {{plink|Agility arena ticket}}
+| data-rowid="BV" | {{plink|Brimhaven voucher}}
+| data-rowid="PH" | {{plink|Pirate's hook}}
+|-
+| data-rowid="GHAA" | {{plink|Graceful hood (Agility Arena)|txt=Graceful hood}}
+| data-rowid="GTAA" | {{plink|Graceful top (Agility Arena)|txt=Graceful top}}
+| data-rowid="GLAA" | {{plink|Graceful legs (Agility Arena)|txt=Graceful legs}}
+|-
+| data-rowid="GGAA" | {{plink|Graceful gloves (Agility Arena)|txt=Graceful gloves}}
+| data-rowid="GBAA" | {{plink|Graceful boots (Agility Arena)|txt=Graceful boots}}
+| data-rowid="GCAA" | {{plink|Graceful cape (Agility Arena)|txt=Graceful cape}}
+|}
+
+===Castle Wars===
+There are a total of 39 items to collect from [[Castle Wars]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CW"
+! colspan="3" |Items
+|-
+| data-rowid="DH" | {{plink|Decorative helm (red)}}
+| data-rowid="DFH" | {{plink|Decorative full helm (red)}}
+| data-rowid="DAP" | {{plink|Decorative armour (red platebody)}}
+|-
+| data-rowid="DS" | {{plink|Decorative sword (red)}}
+| data-rowid="DS2" | {{plink|Decorative shield (red)}}
+| data-rowid="DAP2" | {{plink|Decorative armour (red platelegs)}}
+|-
+| data-rowid="DAP3" | {{plink|Decorative armour (red plateskirt)}}
+| data-rowid="DB" | {{plink|Decorative boots (red)}}
+| data-rowid="DH2" | {{plink|Decorative helm (white)}}
+|-
+| data-rowid="DFH2" | {{plink|Decorative full helm (white)}}
+| data-rowid="DAP4" | {{plink|Decorative armour (white platebody)}}
+| data-rowid="DS3" | {{plink|Decorative sword (white)}}
+|-
+| data-rowid="DS4" | {{plink|Decorative shield (white)}}
+| data-rowid="DAP5" | {{plink|Decorative armour (white platelegs)}}
+| data-rowid="DAP6" | {{plink|Decorative armour (white plateskirt)}}
+|-
+| data-rowid="DB2" | {{plink|Decorative boots (white)}}
+| data-rowid="DH3" | {{plink|Decorative helm (gold)}}
+| data-rowid="DFH3" | {{plink|Decorative full helm (gold)}}
+|-
+| data-rowid="DAP7" | {{plink|Decorative armour (gold platebody)}}
+| data-rowid="DS5" | {{plink|Decorative sword (gold)}}
+| data-rowid="DS6" | {{plink|Decorative shield (gold)}}
+|-
+| data-rowid="DAP8" | {{plink|Decorative armour (gold platelegs)}}
+| data-rowid="DAP9" | {{plink|Decorative armour (gold plateskirt)}}
+| data-rowid="DB3" | {{plink|Decorative boots (gold)}}
+|-
+| data-rowid="CHS" | {{plink|Castlewars hood (Saradomin)|txt=Castlewars hood}}
+| data-rowid="CCS" | {{plink|Castlewars cloak (Saradomin)|pic=Castlewars cloak (Saradomin)|txt=Castlewars cloak}}
+| data-rowid="CHZ" | {{plink|Castlewars hood (Zamorak)|txt=Castlewars hood}}
+|-
+| data-rowid="CCZ" | {{plink|Castlewars cloak (Zamorak)|pic=Castlewars cloak (Zamorak)|txt=Castlewars cloak}}
+| data-rowid="SB" | {{plink|Saradomin banner}}
+| data-rowid="ZB" | {{plink|Zamorak banner}}
+|-
+| data-rowid="DAH" | {{plink|Decorative armour (magic hat)}}
+| data-rowid="DAT" | {{plink|Decorative armour (magic top)}}
+| data-rowid="DAL" | {{plink|Decorative armour (magic legs)}}
+|-
+| data-rowid="DAT2" | {{plink|Decorative armour (ranged top)}}
+| data-rowid="DAL2" | {{plink|Decorative armour (ranged legs)}}
+| data-rowid="DA" | {{plink|Decorative armour (quiver)}}
+|-
+| data-rowid="SH" | {{plink|Saradomin halo}}
+| data-rowid="ZH" | {{plink|Zamorak halo}}
+| data-rowid="GH" | {{plink|Guthix halo}}
+|}
+
+===Fishing Trawler===
+There are a total of 4 items to collect from [[Fishing Trawler]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-FT"
+! colspan="2" |Items
+|-
+| data-rowid="AH" | {{plink|Angler hat}}
+| data-rowid="AT" | {{plink|Angler top}}
+|-
+| data-rowid="AW" | {{plink|Angler waders}}
+| data-rowid="AB" | {{plink|Angler boots}}
+|}
+
+===Giants' Foundry===
+There are a total of 9 items to collect from [[Giants' Foundry]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-GF"
+! colspan="3" |Items
+|-
+| data-rowid="ST" | {{plink|Smiths tunic}}
+| data-rowid="ST2" | {{plink|Smiths trousers}}
+| data-rowid="SB" | {{plink|Smiths boots}}
+|-
+| data-rowid="SG" | {{plink|Smiths gloves}}
+| data-rowid="CB" | {{plink|Colossal blade}}
+| data-rowid="DAM" | {{plink|Double ammo mould}}
+|-
+| data-rowid="KG" | {{plink|Kovac's grog}}
+| data-rowid="SC" | {{plink|Smithing catalyst}}
+| data-rowid="OPGF" | {{plink|Ore pack (Giants' Foundry)|txt=Ore pack}}
+|}
+
+===Gnome Restaurant===
+There are a total of 4 items to collect from [[Gnome Restaurant]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-GR"
+! colspan="2" |Items
+|-
+| data-rowid="GSP" | {{plink|Grand seed pod}}
+| data-rowid="GS" | {{plink|Gnome scarf}}
+|-
+| data-rowid="GG" | {{plink|Gnome goggles}}
+| data-rowid="MC" | {{plink|Mint cake}}
+|}
+
+===Guardians of the Rift===
+There are a total of 17 items to collect from [[Guardians of the Rift]].
+
+{| class="wikitable lighttable individual" data-tableid="CL-GOTR"
+! colspan="5" |Items
+|-
+| data-rowid="AP" | {{plink|Abyssal protector}}
+| data-rowid="AP2" | {{plink|Abyssal pearls}}
+| data-rowid="CT" | {{plink|Catalytic talisman}}
+| data-rowid="AN" | {{plink|Abyssal needle}}
+|-
+| data-rowid="AGD" | {{plink|Abyssal green dye}}
+| data-rowid="ABD" | {{plink|Abyssal blue dye}}
+| data-rowid="ARD" | {{plink|Abyssal red dye}}
+| data-rowid="HOTE" | {{plink|Hat of the eye}}
+|-
+| data-rowid="RTOTE" | {{plink|Robe top of the eye}}
+| data-rowid="RBOTE" | {{plink|Robe bottoms of the eye}}
+| data-rowid="BOTE" | {{plink|Boots of the eye}}
+| data-rowid="ROTE" | {{plink|Ring of the elements}}
+|-
+| data-rowid="AL" | {{plink|Abyssal lantern}}
+| data-rowid="GE" | {{plink|Guardian's eye}}
+| data-rowid="IP" | {{plink|Intricate pouch}}
+| data-rowid="LB" | {{plink|Lost bag}}
+|-
+| data-rowid="TL" | {{plink|Tarnished locket}}
+| {{NA}}
+| {{NA}}
+| {{NA}}
+|}
+
+===Hallowed Sepulchre===
+There are a total of 16 items to collect from the [[Hallowed Sepulchre]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-HS"
+! colspan="4" |Items
+|-
+| data-rowid="HM" | {{plink|Hallowed mark}}
+| data-rowid="HT" | {{plink|Hallowed token}}
+| data-rowid="HG" | {{plink|Hallowed grapple}}
+| data-rowid="HF" | {{plink|Hallowed focus}}
+|-
+| data-rowid="HS" | {{plink|Hallowed symbol}}
+| data-rowid="HH" | {{plink|Hallowed hammer}}
+| data-rowid="HR" | {{plink|Hallowed ring}}
+| data-rowid="DD" | {{plink|Dark dye}}
+|-
+| data-rowid="DA" | {{plink|Dark acorn}}
+| data-rowid="SOL" | {{plink|Strange old lockpick}}
+| data-rowid="ROE" | {{plink|Ring of endurance}}
+| data-rowid="MP" | {{plink|Mysterious page}}
+|-
+| data-rowid="MP2" | {{plink|Mysterious page}}
+| data-rowid="MP3" | {{plink|Mysterious page}}
+| data-rowid="MP4" | {{plink|Mysterious page}}
+| data-rowid="MP5" | {{plink|Mysterious page}}
+|}
+
+===Last Man Standing===
+There are a total of 28 items and 4 unlocks to collect from the [[Justine's stuff for the Last Shopper Standing|Last Man Standing reward shop]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-LMS"
+! colspan="6" |Items
+|-
+| data-rowid="DCC" | {{plink|Deadman's chest#Cosmetic|pic=Deadman's chest (cosmetic)|txt=Deadman's chest}}
+| data-rowid="DLC" | {{plink|Deadman's legs#Cosmetic|pic=Deadman's legs (cosmetic)|txt=Deadman's legs}}
+| data-rowid="DCC2" | {{plink|Deadman's cape#Cosmetic|pic=Deadman's cape (cosmetic)|txt=Deadman's cape}}
+| data-rowid="AH" | {{plink|Armadyl halo}}
+|-
+| data-rowid="BH" | {{plink|Bandos halo}}
+| data-rowid="SH" | {{plink|Seren halo}}
+| data-rowid="AH2" | {{plink|Ancient halo}}
+| data-rowid="BH2" | {{plink|Brassica halo}}
+|-
+| data-rowid="AOG" | {{plink|Animation overrides#Godswords|txt=Golden armadyl special attack|pic=Armadyl hilt}}
+| data-rowid="AOG2" | {{plink|Animation overrides#Godswords|txt=Golden bandos special attack|pic=Bandos hilt}}
+| data-rowid="AOG3" | {{plink|Animation overrides#Godswords|txt=Golden saradomin special attack|pic=Saradomin hilt}}
+| data-rowid="AOG4" | {{plink|Animation overrides#Godswords|txt=Golden zamorak special attack|pic=Zamorak hilt}}
+|-
+| data-rowid="VC" | {{plink|Victor's cape (1)}}
+| data-rowid="VC2" | {{plink|Victor's cape (10)}}
+| data-rowid="VC3" | {{plink|Victor's cape (50)}}
+| data-rowid="VC4" | {{plink|Victor's cape (100)}}
+|-
+| data-rowid="VC5" | {{plink|Victor's cape (500)}}
+| data-rowid="VC6" | {{plink|Victor's cape (1000)}}
+| data-rowid="GC" | {{plink|Granite clamp}}
+| data-rowid="OMH" | {{plink|Ornate maul handle}}
+|-
+| data-rowid="SSUK" | {{plink|Steam staff upgrade kit}}
+| data-rowid="LSUK" | {{plink|Lava staff upgrade kit}}
+| data-rowid="DPUK" | {{plink|Dragon pickaxe upgrade kit}}
+| data-rowid="WUK" | {{plink|Ward upgrade kit}}
+|-
+| data-rowid="GDBP" | {{plink|Green dark bow paint}}
+| data-rowid="YDBP" | {{plink|Yellow dark bow paint}}
+| data-rowid="WDBP" | {{plink|White dark bow paint}}
+| data-rowid="BDBP" | {{plink|Blue dark bow paint}}
+|-
+| data-rowid="VWM" | {{plink|Volcanic whip mix}}
+| data-rowid="FWM" | {{plink|Frozen whip mix}}
+| data-rowid="GI" | {{plink|Guthixian icon}}
+| data-rowid="SB" | {{plink|Swift blade}}
+|}
+
+===Magic Training Arena===
+There are a total of 10 items and 1 unlock to collect from [[Mage Training Arena]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MTA"
+! colspan="3" |Items
+|-
+| data-rowid="BW" | {{plink|Beginner wand}}
+| data-rowid="AW" | {{plink|Apprentice wand}}
+| data-rowid="TW" | {{plink|Teacher wand}}
+|-
+| data-rowid="MW" | {{plink|Master wand}}
+| data-rowid="IH" | {{plink|Infinity hat}}
+| data-rowid="IT" | {{plink|Infinity top}}
+|-
+| data-rowid="IB" | {{plink|Infinity bottoms}}
+| data-rowid="IB2" | {{plink|Infinity boots}}
+| data-rowid="IG" | {{plink|Infinity gloves}}
+|-
+| data-rowid="MB" | {{plink|Mage's book}}
+| data-rowid="BTP" | {{plink|Bones to peaches|pic=Peach}}
+|{{NA}}
+|}
+
+===Mahogany Homes===
+There are a total of 8 items to collect from [[Mahogany Homes]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MH"
+! colspan="3" |Items
+|-
+| data-rowid="SCMH" | {{plink|Supply crate (Mahogany Homes)|txt=Supply crate}}
+| data-rowid="CH" | {{plink|Carpenter's helmet}}
+| data-rowid="CS" | {{plink|Carpenter's shirt}}
+|-
+| data-rowid="CT" | {{plink|Carpenter's trousers}}
+| data-rowid="CB" | {{plink|Carpenter's boots}}
+| data-rowid="AS" | {{plink|Amy's saw}}
+|-
+| data-rowid="PS" | {{plink|Plank sack}}
+| data-rowid="HB" | {{plink|Hosidius blueprints}}
+|{{NA}}
+|}
+
+===Mastering Mixology===
+There are a total of 7 items to collect from [[Mastering Mixology]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MM"
+! colspan="3" |Items
+|-
+| data-rowid="PG" | {{plink|Prescription goggles|pic=Prescription goggles (unfocused)}}
+| data-rowid="AL" | {{plink|Alchemist labcoat|pic=Alchemist labcoat (apron off)}}
+| data-rowid="AP" | {{plink|Alchemist pants|pic=Alchemist pants (apron off)}}
+|-
+| data-rowid="AG" | {{plink|Alchemist gloves}}
+| data-rowid="AA" | {{plink|Alchemist's amulet|pic=Alchemist's amulet (uncharged)}}
+| data-rowid="RP" | {{plink|Reagent pouch}}
+|-
+| data-rowid="CB" | {{plink|Chugging barrel (disassembled)|pic=Chugging_barrel_%28disassembled%29}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Pest Control===
+There are a total of 10 items to collect from [[Pest Control]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-PC"
+! colspan="3" |Items
+|-
+| data-rowid="VKM" | {{plink|Void knight mace}}
+| data-rowid="VKT" | {{plink|Void knight top}}
+| data-rowid="VKR" | {{plink|Void knight robe}}
+|-
+| data-rowid="VKG" | {{plink|Void knight gloves}}
+| data-rowid="VMH" | {{plink|Void mage helm}}
+| data-rowid="VMH2" | {{plink|Void melee helm}}
+|-
+| data-rowid="VRH" | {{plink|Void ranger helm}}
+| data-rowid="VS" | {{plink|Void seal(8)|pic=Void seal}}
+| data-rowid="EVT" | {{plink|Elite void top}}
+|-
+| data-rowid="EVR" | {{plink|Elite void robe}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Rogues' Den===
+There are a total of 5 items to collect from [[Rogues' Den]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-RD"
+! colspan="2" |Items
+|-
+| data-rowid="RM" | {{plink|Rogue mask}}
+| data-rowid="RT" | {{plink|Rogue top}}
+|-
+| data-rowid="RT2" | {{plink|Rogue trousers}}
+| data-rowid="RB" | {{plink|Rogue boots}}
+|-
+| data-rowid="RG" | {{plink|Rogue gloves}}
+|{{NA}}
+|}
+
+===Shades of Mort'ton===
+There are a total of 14 items to collect from [[Shades of Mort'ton (minigame)|Shades of Mort'ton]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-SOMT"
+! colspan="3" |Items
+|-
+| data-rowid="AOTD" | {{plink|Amulet of the damned}}
+| data-rowid="FB" | {{plink|Flamtaer bag}}
+| data-rowid="FC" | {{plink|Fine cloth}}
+|-
+| data-rowid="BL" | {{plink|Bronze locks}}
+| data-rowid="SL" | {{plink|Steel locks}}
+| data-rowid="BL2" | {{plink|Black locks}}
+|-
+| data-rowid="SL2" | {{plink|Silver locks}}
+| data-rowid="GL" | {{plink|Gold locks}}
+| data-rowid="ZH" | {{plink|Zealot's helm}}
+|-
+| data-rowid="ZRT" | {{plink|Zealot's robe top}}
+| data-rowid="ZRB" | {{plink|Zealot's robe bottom}}
+| data-rowid="ZB" | {{plink|Zealot's boots}}
+|-
+| data-rowid="TWJ" | {{plink|Tree wizards' journal}}
+| data-rowid="BN" | {{plink|Bloody notes}}
+|{{NA}}
+|}
+
+===Soul Wars===
+There are a total of 3 items to collect from [[Soul Wars]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-SW"
+! colspan="3" |Items
+|-
+| data-rowid="LC" | {{plink|Lil' creator}}
+| data-rowid="SC" | {{plink|Soul cape}}
+| data-rowid="E" | {{plink|Ectoplasmator}}
+|}
+
+===Temple Trekking===
+There are a total of 4 items to collect from [[Temple Trekking]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TT"
+! colspan="2" |Items
+|-
+| data-rowid="LH" | {{plink|Lumberjack hat}}
+| data-rowid="LT" | {{plink|Lumberjack top}}
+|-
+| data-rowid="LL" | {{plink|Lumberjack legs}}
+| data-rowid="LB" | {{plink|Lumberjack boots}}
+|}
+
+===Tithe Farm===
+There are a total of 7 items to collect from [[Tithe Farm]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TF"
+! colspan="2" |Items
+|-
+| data-rowid="FS" | {{plink|Farmer's strawhat}}
+| data-rowid="FJ" | {{plink|Farmer's jacket}}
+|-
+| data-rowid="FBT" | {{plink|Farmer's boro trousers}}
+| data-rowid="FB" | {{plink|Farmer's boots}}
+|-
+| data-rowid="SB" | {{plink|Seed box}}
+| data-rowid="GC" | {{plink|Gricoller's can}}
+|-
+| data-rowid="HS" | {{plink|Herb sack}}
+|{{NA}}
+|}
+
+===Trouble Brewing===
+There are a total of 30 items to collect from [[Trouble Brewing]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TB"
+! colspan="3" |Items
+|-
+| data-rowid="BNS" | {{plink|Blue naval shirt}}
+| data-rowid="BTH" | {{plink|Blue tricorn hat}}
+| data-rowid="BNS2" | {{plink|Blue navy slacks}}
+|-
+| data-rowid="GNS" | {{plink|Green naval shirt}}
+| data-rowid="GTH" | {{plink|Green tricorn hat}}
+| data-rowid="GNS2" | {{plink|Green navy slacks}}
+|-
+| data-rowid="RNS" | {{plink|Red naval shirt}}
+| data-rowid="RTH" | {{plink|Red tricorn hat}}
+| data-rowid="RNS2" | {{plink|Red navy slacks}}
+|-
+| data-rowid="BNS3" | {{plink|Brown naval shirt}}
+| data-rowid="BTH2" | {{plink|Brown tricorn hat}}
+| data-rowid="BNS4" | {{plink|Brown navy slacks}}
+|-
+| data-rowid="BNS5" | {{plink|Black naval shirt}}
+| data-rowid="BTH3" | {{plink|Black tricorn hat}}
+| data-rowid="BNS6" | {{plink|Black navy slacks}}
+|-
+| data-rowid="PNS" | {{plink|Purple naval shirt}}
+| data-rowid="PTH" | {{plink|Purple tricorn hat}}
+| data-rowid="PNS2" | {{plink|Purple navy slacks}}
+|-
+| data-rowid="GNS3" | {{plink|Grey naval shirt}}
+| data-rowid="GTH2" | {{plink|Grey tricorn hat}}
+| data-rowid="GNS4" | {{plink|Grey navy slacks}}
+|-
+| data-rowid="CF" | {{plink|Cutthroat flag}}
+| data-rowid="GSF" | {{plink|Gilded smile flag}}
+| data-rowid="BFF" | {{plink|Bronze fist flag}}
+|-
+| data-rowid="LSF" | {{plink|Lucky shot flag}}
+| data-rowid="TF" | {{plink|Treasure flag}}
+| data-rowid="PF" | {{plink|Phasmatys flag}}
+|-
+| data-rowid="TS" | {{plink|The stuff}}
+| data-rowid="R" | {{plink|Rum (red)|txt=Rum}}
+| data-rowid="R2" | {{plink|Rum (blue)|txt=Rum}}
+|}
+
+===Vale Totems===
+There are a total of 4 items to collect from [[Vale Totems]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-VT"
+! colspan="2" |Items
+|-
+| data-rowid="FK" | {{plink|Fletching knife}}
+| data-rowid="BSS" | {{plink|Bow string spool}}
+|-
+| data-rowid="EB" | {{plink|Ent branch}}
+| data-rowid="GM" | {{plink|Greenman mask}}
+|}
+
+===Volcanic Mine===
+There are a total of 7 items and 1 unlock to collect from the [[Volcanic Mine]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-VM"
+! colspan="4" |Items
+|-
+| data-rowid="ACT" | {{plink|Ash covered tome}}
+| data-rowid="LWC" | {{plink|Large water container|pic=Heat-proof vessel}}
+| data-rowid="VMT" | {{plink|Volcanic mine teleport}}
+| data-rowid="DP" | {{plink|Dragon pickaxe (broken)}}
+|-
+| data-rowid="PH" | {{plink|Prospector helmet}}
+| data-rowid="PJ" | {{plink|Prospector jacket}}
+| data-rowid="PL" | {{plink|Prospector legs}}
+| data-rowid="PB" | {{plink|Prospector boots}}
+|}

@@ -1,0 +1,39 @@
+==Guilds==
+{| class="wikitable lighttable sortable"
+|-
+!Content!!Members!!Unlocked!!Notes
+|-
+|[[Champions' Guild]]||{{Members|no}}||32 [[Quest points]]||
+|-
+|[[Cooks' Guild]]||{{Members|no}}||32 [[Cooking]]||Must wear a [[Chef's hat]] or [[Cooking cape]] to enter.
+|-
+|[[Crafting Guild]]||{{Members|no}}||40 [[Crafting]]||Must wear a [[Brown apron]] or [[Crafting cape]] to enter.
+|-
+|[[Edgeville Monastery|Prayer Guild]]
+|{{Members|no}}
+|31 [[Prayer]]
+|
+|-
+|[[Fishing Guild]]||{{Members|yes}}||68 [[Fishing]]||
+|-
+|[[Heroes' Guild]]||{{Members|yes}}||[[Heroes' Quest]] quest||
+|-
+|[[Legends' Guild]]||{{Members|yes}}||[[Legends' Quest]] quest||
+|-
+|[[Mining Guild]]||{{Members|no}}||60 [[Mining]]||
+|-
+|[[Myths' Guild]]||{{Members|yes}}||[[Dragon Slayer II]] quest||
+|-
+|[[Ranging Guild]]||{{Members|yes}}||40 [[Ranged]]||
+|-
+|[[Warriors' Guild]]||{{Members|yes}}||Combined total of 130 between [[Attack]] and [[Strength]] '''OR''' 99 [[Attack]]/[[Strength]]||
+|-
+|[[Wizards' Guild]]||{{Members|yes}}||66 [[Magic]]||
+|-
+|[[Woodcutting Guild]]||{{Members|yes}}||60 [[Woodcutting]]||
+|-
+|[[Hunter Guild]]
+|{{Members|yes}}
+|46 [[Hunter]]
+|
+|}

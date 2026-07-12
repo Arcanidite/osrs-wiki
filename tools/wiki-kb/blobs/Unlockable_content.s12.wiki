@@ -1,0 +1,91 @@
+==Magics==
+{| class="wikitable lighttable sortable"
+|-
+!Content!!Members!!Unlocked!!Notes
+|-
+|[[Ancient Magicks]]||{{members|yes}}||[[Desert Treasure I]] quest||
+|-
+|[[Ape Atoll Teleport (standard)|Ape Atoll Teleport]]||{{members|yes}}||[[Recipe for Disaster/Freeing King Awowogei]] quest||
+|-
+|[[Arceuus spellbook]]||{{members|yes}}||None||
+|-
+|[[Ardougne Teleport]]||{{members|yes}}||[[Plague City]] quest||
+|-
+|[[Bones to Peaches]]||{{members|yes}}||[[Mage Training Arena]] minigame||200 Telekinetic, 300 Alchemist, 2,000 Enchantment, and 200 Graveyard [[pizazz points]].
+|-
+|[[Charge]]||{{members|yes}}||[[Mage Arena I]] miniquest||One of the three god staves must be claimed to cast this spell.
+|-
+|[[Claws of Guthix]]||{{members|yes}}||[[Mage Arena I]] miniquest||Requires [[Guthix staff]] or [[Void knight mace]] to cast. This spell must be cast 100 times in the arena to use outside of the arena.
+|-
+|[[Corruption spells]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Dark Demonbane]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Dark Lure]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Death Charge]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Degrime]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Dream]]||{{members|yes}}||[[Dream Mentor]] quest||
+|-
+|[[Flames of Zamorak]]||{{members|yes}}||[[Mage Arena I]] miniquest||Requires [[Zamorak staff]], [[Staff of the dead]], or [[Toxic staff of the dead]] to cast. This spell must be cast 100 times in the arena to use outside of the arena.
+|-
+|[[Harmony Island Teleport]]||{{members|yes}}||[[The Great Brain Robbery]] quest||Needs [[Arceuus spellbook]] unlocked.
+|-
+|[[Humidify]]||{{members|yes}}||[[Dream Mentor]] quest||
+|-
+|[[Hunter Kit]]||{{members|yes}}||[[Dream Mentor]] quest||
+|-
+|[[Iban Blast]]||{{members|yes}}||[[Underground Pass]] quest||Requires [[Iban's staff]] to cast the spell.
+|-
+|[[Kourend Castle Teleport]]||{{members|yes}}||[[Client of Kourend]] quest||
+|-
+|[[Lunar spells]]||{{members|yes}}||[[Lunar Diplomacy]] quest||
+|-
+|[[Mark of Darkness]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Monster Examine]]||{{members|yes}}||[[Dream Mentor]] quest||
+|-
+|[[Offering spells]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Ourania Teleport]]||{{members|yes}}||Talk to [[Baba Yaga]]||Requires 71 [[Magic]] while being on the [[Lunar spellbook]]
+|-
+|[[Plank Make]]||{{members|yes}}||[[Dream Mentor]] quest||
+|-
+|[[Recharge Dragonstone]]||{{members|yes}}||Completion of hard [[Fremennik Diary]]||Level 89 [[Magic]] and [[Lunar spells]] unlocked.
+|-
+|[[Resurrection spells]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Saradomin Strike]]||{{members|yes}}||[[Mage Arena I]] miniquest||Requires [[Saradomin staff]] or [[Staff of light]] to cast. This spell must be cast 100 times in the arena to use outside of the arena.
+|-
+|[[Shadow Veil]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Skeletal Grasp]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Stat Spy]]||{{members|yes}}||[[Dream Mentor]] quest||
+|-
+|[[Superior Demonbane]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Spellbook Swap]]||{{members|yes}}||[[Dream Mentor]] quest||
+|-
+|[[Tan Leather]]||{{members|yes}}||Completion of hard [[Fremennik Diary]]||Level 78 [[Magic]] and [[Lunar spells]] unlocked.
+|-
+|[[Teleport to Target]]||{{members|yes}}||[[Target teleport scroll]]||500 points from the [[Bounty Hunter Shop]] or 250 points from [[Justine's stuff for the Last Shopper Standing]].
+|-
+|[[Trollheim Teleport]]||{{members|yes}}||[[Eadgar's Ruse]] quest||
+|-
+|[[Undead Grasp]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|Ultracomposted [[Fertile Soil]]||{{members|yes}}||[[Ash covered tome]]||40,000 points in [[Volcanic Mine]].
+|-
+|Upgraded [[Death Charge]]||{{members|yes}}||[[Rite of vile transference]]||Untradeable drop from [[Yama]], who requires [[A Kingdom Divided]] to fight.
+|-
+|[[Vile Vigour]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Ward of Arceuus]]||{{members|yes}}||[[A Kingdom Divided]] quest||
+|-
+|[[Watchtower Teleport]]||{{members|yes}}||[[Watchtower]] quest||
+|-
+|[[West Ardougne Teleport]]||{{members|yes}}||[[Biohazard]] quest||Needs [[Arceuus spellbook]] unlocked.
+|}

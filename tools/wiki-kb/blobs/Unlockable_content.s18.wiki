@@ -1,0 +1,104 @@
+==Transportation==
+
+{| class="wikitable lighttable sortable"
+|-
+!Content!!Members!!Unlocked!!Notes
+|-
+|[[Amulet of the eye]]
+|{{members|yes}}
+|Traded the [[Tarnished locket]] with the [[Lumbridge Guide]]
+|Reward from the [[Guardians of the Rift]] minigame, requiring the completion of the [[Temple of the Eye]] quest.
+|-
+|[[Andras]]' boat
+|{{members|yes}}
+|Completion of [[Priest in Peril]] quest
+|Can pay 1,000,000 [[coins]] to [[Andras]] to remove the 10,000 coin cost per trip from [[Port Phasmatys]] to [[Slepe]]
+|-
+|[[Balloon transport system]]||{{members|yes}}||[[Enlightened Journey]] quest||Need to unlock locations after completion of quest to travel to more locations.
+|-
+|[[Camulet]]||{{members|yes}}||[[Enakhra's Lament]] quest||Can pay 1,000,000 [[coins]] to [[Lazim]] to grant unlimited teleports, otherwise [[camel dung]] is needed to recharge.
+|-
+|[[Dragontooth Island]]
+|{{members|yes}}
+|Partial completion of [[Ghosts Ahoy]] quest
+|Can pay 500 [[Ecto-token|ecto-tokens]] to the [[ghost captain]] to remove the 25 token per trip fee.
+|-
+|[[Dorgesh-Kaan–Keldagrim train system]]||{{members|yes}}||[[Another Slice of H.A.M.]] quest||
+|-
+|[[Eagle transport system]]||{{members|yes}}||[[Eagles' Peak]] quest||Need to unlock locations after completion of quest to travel to more locations.
+|-
+|[[Ectophial]]||{{members|yes}}||[[Ghosts Ahoy]] quest||
+|-
+|[[Enchanted lyre(i)]]
+|{{members|yes}}
+|Imbue an un-enchanted [[lyre]] after completion of [[The Fremennik Trials]] by offering [[Fossegrimen]] a one-time offering of 1,000 [[raw shark]]s, [[raw bass]], [[raw manta ray]]s and [[raw sea turtle]]s. Price is reduced by 200 of each per diary tier completed.
+|Infinite teleports to [[Rellekka]]. After [[hard Fremennik Diary]], [[Waterbirth Island]]. After [[elite Fremennik Diary]], [[Jatizso]] and [[Neitiznot]].
+|-
+|[[Fairy rings]]||{{members|yes}}||Partial completion of the quest [[Fairytale II - Cure a Queen]]||Certain fairy rings have additional requirements to unlock, see the page for full details.
+|-
+|[[Gnome glider]]||{{members|yes}}||[[The Grand Tree]] quest||
+|-
+|[[Royal seed pod]]||{{members|yes}}||[[Monkey Madness II]] quest||
+|-
+|[[Keldagrim mine cart system]]||{{members|yes}}||Started [[The Giant Dwarf]]||
+|-
+|[[Lovakengj Minecart Network]]||{{members|yes}}||None||Completion of [[The Forsaken Tower]] removes the 20 coin cost per ride.
+|-
+|[[Shilo Village cart system]]||{{members|yes}}||[[Shilo Village]] quest||Varying cost of travel depending on the coin amount on player.
+|-
+|[[Spirit tree]]||{{members|yes}}||[[Tree Gnome Village]] quest||
+|-
+|[[Goblin village sphere]]||{{members|yes}}||[[Another Slice of H.A.M.]] quest||Purchase from [[Oldak]] for 2 [[Law rune]]s and a piece of [[Molten glass]].
+|-
+|[[Plain of mud sphere]]||{{members|yes}}||[[Land of the Goblins]] quest||Purchase from [[Oldak]] for 2 [[Law rune]]s and a piece of [[Molten glass]].
+|-
+|[[Ogre boat]]
+|{{members|yes}}
+|[[Recipe for Disaster/Freeing Skrach Uglogwee]] quest
+|Requires either two [[raw chompy|raw]] or [[cooked chompy]] (Feldip Hills to Karamja), or two ''"glug-glugs herbies"'' (i.e. [[snake weed]] or [[rogue's purse]]) (Karamja to Feldip Hills).
+|-
+|[[Canoe|Canoes]]
+|{{members|yes}}
+|12 woodcutting, or 57 for the wilderness station
+|
+|-
+|[[Pharaoh's sceptre]] [[Jaltevas Pyramid|Jaltevas]] attunement
+|{{members|yes}}
+|[[Beneath Cursed Sands]] quest
+|Commune with the [[Obelisk (Necropolis)|Obelisk]] in the [[Necropolis]] while having a [[Pharaoh's sceptre]] in your inventory
+|-
+|[[Mount Quidamortem|Xeric's Honour]] teleport
+|{{members|yes}}
+|Used [[Ancient tablet]] on [[Xeric's talisman]]
+|The tablet is obtained from the [[Chambers of Xeric]]
+|-
+|[[Slepe]] teleport
+|{{members|yes}}
+|Used [[Slepey tablet]] on [[Drakan's medallion]]
+|The tablet is obtained from [[Phosani's Nightmare]]
+|-
+|[[Ring of shadows]] teleports
+|{{members|yes}}
+|Used all 4 tablets ([[Frozen tablet]], [[Scarred tablet]], [[Sirenic tablet]], [[Strangled tablet]]) on [[Ring of shadows]]
+|The tablets are obtained from each of the respective [[Desert Treasure II - The Fallen Empire|Desert Treasure II]] bosses
+|-
+|[[Mountain Guide]]
+|{{members|yes}}
+|Talked to the [[Mountain Guide]] at the summit of [[Mount Quidamortem]]
+|
+|-
+|[[Quetzal Transport System]]
+|{{members|yes}}
+|Partial completion of [[Twilight's Promise]]
+|Certain locations require the construction of a [[landing site]] before they can be accessed via quetzal.
+|-
+|[[Ring of dueling]] Colosseum teleport
+|{{members|yes}}
+|Hero rank (12,000 [[glory]]) at the [[Fortis Colosseum]]
+|
+|-
+|[[Pendant of ates]] Aldarin teleport
+|{{members|yes}}
+|Obtained an [[Icon (Aldarin)|icon]] from [[Villa Lucens]]
+|Completing [[Death on the Isle]] quest is required to pickpocket [[Constantinius]] and loot his [[Fancy chest|chest]] and fountain.
+|}

@@ -1,0 +1,960 @@
+==Bosses==
+===Abyssal Sire===
+There are a total of 9 items to collect from the [[Abyssal Sire]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-AS"
+! colspan="3" |Items
+|-
+| data-rowid="AO" | {{plink|Abyssal orphan}}
+| data-rowid="U" | {{plink|Unsired}}
+| data-rowid="AH" | {{plink|Abyssal head}}
+|-
+| data-rowid="BS" | {{plink|Bludgeon spine}}
+| data-rowid="BC" | {{plink|Bludgeon claw}}
+| data-rowid="BAX" | {{plink|Bludgeon axon}}
+|-
+| data-rowid="JOM" | {{plink|Jar of miasma}}
+| data-rowid="AD" | {{plink|Abyssal dagger}}
+| data-rowid="AW" | {{plink|Abyssal whip}}
+|}
+
+===Alchemical Hydra===
+There are a total of 11 items to collect from the [[Alchemical Hydra]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-AH"
+! colspan="3" |Items
+|-
+| data-rowid="IH" | {{plink|Ikkle hydra|pic=Ikkle hydra (serpentine)}}
+| data-rowid="HC" | {{plink|Hydra's claw}}
+| data-rowid="HT" | {{plink|Hydra tail}}
+|-
+| data-rowid="HL" | {{plink|Hydra leather}}
+| data-rowid="HF" | {{plink|Hydra's fang}}
+| data-rowid="HE" | {{plink|Hydra's eye}}
+|-
+| data-rowid="HH" | {{plink|Hydra's heart}}
+| data-rowid="DK" | {{plink|Dragon knife}}
+| data-rowid="DT" | {{plink|Dragon thrownaxe}}
+|-
+| data-rowid="JOC" | {{plink|Jar of chemicals}}
+| data-rowid="AHH" | {{plink|Alchemical hydra heads}}
+|{{NA}}
+|}
+
+===Amoxliatl===
+There are a total of 4 items to collect from [[Amoxliatl]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-A"
+! colspan="2" |Items
+|-
+| data-rowid="M" | {{plink|Moxi}}
+| data-rowid="GT" | {{plink|Glacial temotli}}
+|-
+| data-rowid="POA" | {{plink|Pendant of ates (inert)}}
+| data-rowid="FT" | {{plink|Frozen tear}}
+|}
+
+===Araxxor===
+There are a total of 10 items to collect from [[Araxxor]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-A2"
+! colspan="3" |Items
+|-
+| data-rowid="N" | {{plink|Nid}}
+| data-rowid="AVS" | {{plink|Araxyte venom sac}}
+| data-rowid="SCT" | {{plink|Spider cave teleport}}
+|-
+| data-rowid="AF" | {{plink|Araxyte fang}}
+| data-rowid="NP" | {{plink|Noxious point}}
+| data-rowid="NB" | {{plink|Noxious blade}}
+|-
+| data-rowid="NP2" | {{plink|Noxious pommel}}
+| data-rowid="AH" | {{plink|Araxyte head}}
+| data-rowid="JOV" | {{plink|Jar of venom}}
+|-
+| data-rowid="CV" | {{plink|Coagulated venom}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Barrows Chests===
+There are a total of 25 items to collect from [[Barrows]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-BC"
+! colspan="4" |Items
+|-
+| data-rowid="KC" | {{plink|Karil's coif}}
+| data-rowid="KL" | {{plink|Karil's leathertop}}
+| data-rowid="KL2" | {{plink|Karil's leatherskirt}}
+| data-rowid="KC2" | {{plink|Karil's crossbow}}
+|-
+| data-rowid="AH" | {{plink|Ahrim's hood}}
+| data-rowid="AR" | {{plink|Ahrim's robetop}}
+| data-rowid="AR2" | {{plink|Ahrim's robeskirt}}
+| data-rowid="AS" | {{plink|Ahrim's staff}}
+|-
+| data-rowid="DH" | {{plink|Dharok's helm}}
+| data-rowid="DP" | {{plink|Dharok's platebody}}
+| data-rowid="DP2" | {{plink|Dharok's platelegs}}
+| data-rowid="DG" | {{plink|Dharok's greataxe}}
+|-
+| data-rowid="GH" | {{plink|Guthan's helm}}
+| data-rowid="GP" | {{plink|Guthan's platebody}}
+| data-rowid="GC" | {{plink|Guthan's chainskirt}}
+| data-rowid="GW" | {{plink|Guthan's warspear}}
+|-
+| data-rowid="TH" | {{plink|Torag's helm}}
+| data-rowid="TP" | {{plink|Torag's platebody}}
+| data-rowid="TP2" | {{plink|Torag's platelegs}}
+| data-rowid="TH2" | {{plink|Torag's hammers}}
+|-
+| data-rowid="VH" | {{plink|Verac's helm}}
+| data-rowid="VB" | {{plink|Verac's brassard}}
+| data-rowid="VP" | {{plink|Verac's plateskirt}}
+| data-rowid="VF" | {{plink|Verac's flail}}
+|-
+| data-rowid="BR" | {{plink|Bolt rack}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Brutus===
+There are a total of 4 items to collect from [[Brutus]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-B2"
+! colspan="2" |Items
+|-
+| data-rowid="B" | {{plink|Beef}}
+| data-rowid="M" | {{plink|Mooleta}}
+|-
+| data-rowid="BMB" | {{plink|Bottomless milk bucket (empty)}}
+| data-rowid="CS" | {{plink|Cow slippers}}
+|}
+
+===Bryophyta===
+There is a total of 1 item to collect from [[Bryophyta]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-B"
+!Items
+|-
+| data-rowid="BE" | {{plink|Bryophyta's essence}}
+|}
+
+===Callisto and Artio===
+There are a total of 6 items to collect from [[Callisto]] and [[Artio]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CAA"
+! colspan="2" |Items
+|-
+| data-rowid="CC" | {{plink|Callisto cub}}
+| data-rowid="TR" | {{plink|Tyrannical ring}}
+|-
+| data-rowid="DP" | {{plink|Dragon pickaxe}}
+| data-rowid="DS" | {{plink|Dragon 2h sword}}
+|-
+| data-rowid="COC" | {{plink|Claws of callisto}}
+| data-rowid="VH" | {{plink|Voidwaker hilt}}
+|}
+
+===Cerberus===
+There are a total of 7 items to collect from [[Cerberus]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-C"
+! colspan="3" |Items
+|-
+| data-rowid="H" | {{plink|Hellpuppy}}
+| data-rowid="EC" | {{plink|Eternal crystal}}
+| data-rowid="PC" | {{plink|Pegasian crystal}}
+|-
+| data-rowid="PC2" | {{plink|Primordial crystal}}
+| data-rowid="JOS" | {{plink|Jar of souls}}
+| data-rowid="SS" | {{plink|Smouldering stone}}
+|-
+| data-rowid="KMT" | {{plink|Key master teleport}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Chaos Elemental===
+There are a total of 3 items to collect from the [[Chaos Elemental]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CE"
+! colspan="3" |Items
+|-
+| data-rowid="PCE" | {{plink|Pet chaos elemental}}
+| data-rowid="DP" | {{plink|Dragon pickaxe}}
+| data-rowid="DS" | {{plink|Dragon 2h sword}}
+|}
+
+===Chaos Fanatic===
+There are a total of 3 items to collect from the [[Chaos Fanatic]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CF"
+! colspan="3" |Items
+|-
+| data-rowid="PCE" | {{plink|Pet chaos elemental}}
+| data-rowid="OS" | {{plink|Odium shard 1}}
+| data-rowid="MS" | {{plink|Malediction shard 1}}
+|}
+
+===Commander Zilyana===
+There are a total of 8 items to collect from [[Commander Zilyana]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CZ"
+! colspan="3" |Items
+|-
+| data-rowid="PZ" | {{plink|Pet zilyana}}
+| data-rowid="AC" | {{plink|Armadyl crossbow}}
+| data-rowid="SH" | {{plink|Saradomin hilt}}
+|-
+| data-rowid="SS" | {{plink|Saradomin sword}}
+| data-rowid="SL" | {{plink|Saradomin's light}}
+| data-rowid="GS" | {{plink|Godsword shard 1}}
+|-
+| data-rowid="GS2" | {{plink|Godsword shard 2}}
+| data-rowid="GS3" | {{plink|Godsword shard 3}}
+|{{NA}}
+|}
+
+===Corporeal Beast===
+There are a total of 7 items to collect from the [[Corporeal Beast]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CB"
+! colspan="3" |Items
+|-
+| data-rowid="PDC" | {{plink|Pet dark core}}
+| data-rowid="ES" | {{plink|Elysian sigil}}
+| data-rowid="SS" | {{plink|Spectral sigil}}
+|-
+| data-rowid="AS" | {{plink|Arcane sigil}}
+| data-rowid="HE" | {{plink|Holy elixir}}
+| data-rowid="SS2" | {{plink|Spirit shield}}
+|-
+| data-rowid="JOS" | {{plink|Jar of spirits}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Crazy archaeologist===
+There are a total of 3 items to collect from the [[Crazy archaeologist]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CA"
+! colspan="3" |Items
+|-
+| data-rowid="OS" | {{plink|Odium shard 2}}
+| data-rowid="MS" | {{plink|Malediction shard 2}}
+| data-rowid="F" | {{plink|Fedora}}
+|}
+
+===Dagannoth Kings===
+There are a total of 10 items to collect from the [[Dagannoth Rex]], [[Dagannoth Prime]] and [[Dagannoth Supreme]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-DK"
+! colspan="3" |Items
+|-
+| data-rowid="PDP" | {{plink|Pet dagannoth prime}}
+| data-rowid="PDS" | {{plink|Pet dagannoth supreme}}
+| data-rowid="PDR" | {{plink|Pet dagannoth rex}}
+|-
+| data-rowid="BR" | {{plink|Berserker ring}}
+| data-rowid="AR" | {{plink|Archers ring}}
+| data-rowid="SR" | {{plink|Seers ring}}
+|-
+| data-rowid="WR" | {{plink|Warrior ring}}
+| data-rowid="DA" | {{plink|Dragon axe}}
+| data-rowid="S" | {{plink|Seercull}}
+|-
+| data-rowid="MB" | {{plink|Mud battlestaff}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Deranged Archaeologist===
+There is a total of 1 item to collect from the [[Deranged archaeologist]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-DA"
+! colspan="2" |Items
+|-
+| data-rowid="SR" | {{plink|Steel ring}}
+|}
+
+===Doom of Mokhaiotl===
+There are a total of 6 items to collect from the [[Doom of Mokhaiotl]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-DM"
+! colspan="2" |Items
+|-
+| data-rowid="D" | {{plink|Dom}}
+| data-rowid="AT" | {{plink|Avernic treads}}
+|-
+| data-rowid="EA" | {{plink|Eye of ayak (uncharged)}}
+| data-rowid="MC" | {{plink|Mokhaiotl cloth}}
+|-
+| data-rowid="MW" | {{plink|Mokhaiotl waystone}}
+| data-rowid="DT" | {{plink|Demon tear}}
+|}
+
+===Duke Sucellus===
+There are a total of 10 items to collect from [[Duke Sucellus]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-DS"
+! colspan="3" |Items
+|-
+| data-rowid="B" | {{plink|Baron}}
+| data-rowid="EOTD" | {{plink|Eye of the duke}}
+| data-rowid="VM" | {{plink|Virtus mask}}
+|-
+| data-rowid="VRT" | {{plink|Virtus robe top}}
+| data-rowid="VRB" | {{plink|Virtus robe bottom}}
+| data-rowid="MV" | {{plink|Magus vestige}}
+|-
+| data-rowid="IQ" | {{plink|Ice quartz}}
+| data-rowid="FT" | {{plink|Frozen tablet}}
+| data-rowid="CI" | {{plink|Chromium ingot}}
+|-
+| data-rowid="AO" | {{plink|Awakener's orb}}
+|{{NA}}
+|{{NA}}
+|-
+|}
+
+===The Fight Caves===
+There are a total of 2 items to collect from the [[TzHaar Fight Cave]]s.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TFC"
+! colspan="2" |Items
+|-
+| data-rowid="TJ" | {{plink|Tzrek-jad}}
+| data-rowid="FC" | {{plink|Fire cape}}
+|}
+
+===Fortis Colosseum===
+There are a total of 9 items to collect from the [[Fortis Colosseum]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-FC"
+! colspan="3" |Items
+|-
+| data-rowid="SH" | {{plink|Smol heredit}}
+| data-rowid="DQ" | {{plink|Dizana's quiver (uncharged)}}
+| data-rowid="SFC" | {{plink|Sunfire fanatic cuirass}}
+|-
+| data-rowid="SFC2" | {{plink|Sunfire fanatic chausses}}
+| data-rowid="SFH" | {{plink|Sunfire fanatic helm}}
+| data-rowid="EC" | {{plink|Echo crystal}}
+|-
+| data-rowid="TOR" | {{plink|Tonalztics of ralos (uncharged)}}
+| data-rowid="SS" | {{plink|Sunfire splinters}}
+| data-rowid="UO" | {{plink|Uncut onyx}}
+|}
+
+===The Gauntlet===
+There are a total of 5 items to collect from [[The Gauntlet]] and the [[Corrupted Gauntlet]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TG"
+! colspan="2" |Items
+|-
+| data-rowid="Y" | {{plink|Youngllef}}
+| data-rowid="CAS" | {{plink|Crystal armour seed}}
+|-
+| data-rowid="CWS" | {{plink|Crystal weapon seed}}
+| data-rowid="ECWS" | {{plink|Enhanced crystal weapon seed}}
+|-
+| data-rowid="GC" | {{plink|Gauntlet cape}}
+|{{NA}}
+|}
+
+===General Graardor===
+There are a total of 8 items to collect from [[General Graardor]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-GG"
+! colspan="3" |Items
+|-
+| data-rowid="PGG" | {{plink|Pet general graardor}}
+| data-rowid="BC" | {{plink|Bandos chestplate}}
+| data-rowid="BT" | {{plink|Bandos tassets}}
+|-
+| data-rowid="BB" | {{plink|Bandos boots}}
+| data-rowid="BH" | {{plink|Bandos hilt}}
+| data-rowid="GS" | {{plink|Godsword shard 1}}
+|-
+| data-rowid="GS2" | {{plink|Godsword shard 2}}
+| data-rowid="GS3" | {{plink|Godsword shard 3}}
+|{{NA}}
+|}
+
+===Giant Mole===
+There are a total of 4 items to collect from the [[Giant Mole]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-GM"
+! colspan="3" |Items
+!
+|-
+| data-rowid="BM" | {{plink|Baby mole}}
+| data-rowid="MS" | {{plink|Mole skin}}
+| data-rowid="MC" | {{plink|Mole claw}}
+| data-rowid="IMS" | {{plink|Immaculate mole skin}}
+|}
+
+===Grotesque Guardians===
+There are a total of 7 items to collect from the [[Grotesque Guardians]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-GG2"
+! colspan="3" |Items
+|-
+| data-rowid="N" | {{plink|Noon}}
+| data-rowid="BTC" | {{plink|Black tourmaline core}}
+| data-rowid="GG" | {{plink|Granite gloves}}
+|-
+| data-rowid="GR" | {{plink|Granite ring}}
+| data-rowid="GH" | {{plink|Granite hammer}}
+| data-rowid="JOS" | {{plink|Jar of stone}}
+|-
+| data-rowid="GD" | {{plink|Granite dust}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Hespori===
+There are a total of 4 items to collect from [[Hespori]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-H"
+! colspan="2" |Items
+|-
+| data-rowid="BCB" | {{plink|Bottomless compost bucket}}
+| data-rowid="IS" | {{plink|Iasor seed}}
+|-
+| data-rowid="KS" | {{plink|Kronos seed}}
+| data-rowid="AS" | {{plink|Attas seed}}
+|}
+
+===The Hueycoatl===
+There are a total of 6 items to collect from the [[Hueycoatl]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TH"
+! colspan="3" |Items
+|-
+| data-rowid="H" | {{plink|Huberte}}
+| data-rowid="DHW" | {{plink|Dragon hunter wand}}
+| data-rowid="TOE" | {{plink|Tome of earth (empty)}}
+|-
+| data-rowid="SP" | {{plink|Soiled page}}
+| data-rowid="HH" | {{plink|Hueycoatl hide}}
+| data-rowid="HS" | {{plink|Huasca seed}}
+|}
+
+===The Inferno===
+There are a total of 2 items to collect from the [[Inferno]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TI"
+! colspan="2" |Items
+|-
+| data-rowid="JNR" | {{plink|Jal-nib-rek}}
+| data-rowid="IC" | {{plink|Infernal cape}}
+|}
+
+===Kalphite Queen===
+There are a total of 6 items to collect from the [[Kalphite Queen]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-KQ"
+! colspan="3" |Items
+|-
+| data-rowid="KP" | {{plink|Kalphite princess}}
+| data-rowid="KH" | {{plink|Kq head}}
+| data-rowid="JOS" | {{plink|Jar of sand}}
+|-
+| data-rowid="DS" | {{plink|Dragon 2h sword}}
+| data-rowid="DC" | {{plink|Dragon chainbody}}
+| data-rowid="DP" | {{plink|Dragon pickaxe}}
+|}
+
+===King Black Dragon===
+There are a total of 4 items to collect from the [[King Black Dragon]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-KBD"
+! colspan="2" |Items
+|-
+| data-rowid="PBD" | {{plink|Prince black dragon}}
+| data-rowid="KH" | {{plink|Kbd heads}}
+|-
+| data-rowid="DP" | {{plink|Dragon pickaxe}}
+| data-rowid="DV" | {{plink|Draconic visage}}
+|}
+
+===Kraken===
+There are a total of 4 items to collect from the [[Kraken]] (note: the trident of the seas dropped by Kraken is tracked separately from the [[uncharged trident]] dropped by [[cave kraken]]s).
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-K"
+! colspan="2" |Items
+|-
+| data-rowid="PK" | {{plink|Pet kraken}}
+| data-rowid="KT" | {{plink|Kraken tentacle}}
+|-
+| data-rowid="TOTS" | {{plink|Trident of the seas}}
+| data-rowid="JOD" | {{plink|Jar of dirt}}
+|}
+
+===Kree'arra===
+There are a total of 8 items to collect from [[Kree'arra]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-KA"
+! colspan="3" |Items
+|-
+| data-rowid="PK" | {{plink|Pet kree'arra}}
+| data-rowid="AH" | {{plink|Armadyl helmet}}
+| data-rowid="AC" | {{plink|Armadyl chestplate}}
+|-
+| data-rowid="AC2" | {{plink|Armadyl chainskirt}}
+| data-rowid="AH2" | {{plink|Armadyl hilt}}
+| data-rowid="GS" | {{plink|Godsword shard 1}}
+|-
+| data-rowid="GS2" | {{plink|Godsword shard 2}}
+| data-rowid="GS3" | {{plink|Godsword shard 3}}
+|{{NA}}
+|}
+
+===K'ril Tsutsaroth===
+There are a total of 8 items to collect from [[K'ril Tsutsaroth]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-KRT"
+! colspan="3" |Items
+|-
+| data-rowid="PKT" | {{plink|Pet k'ril tsutsaroth}}
+| data-rowid="SOTD" | {{plink|Staff of the dead}}
+| data-rowid="ZS" | {{plink|Zamorakian spear}}
+|-
+| data-rowid="SB" | {{plink|Steam battlestaff}}
+| data-rowid="ZH" | {{plink|Zamorak hilt}}
+| data-rowid="GS" | {{plink|Godsword shard 1}}
+|-
+| data-rowid="GS2" | {{plink|Godsword shard 2}}
+| data-rowid="GS3" | {{plink|Godsword shard 3}}
+|{{NA}}
+|}
+
+===The Leviathan===
+There are a total of 10 items to collect from [[The Leviathan]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TL"
+! colspan="3" |Items
+|-
+| data-rowid="L" | {{plink|Lil'viathan}}
+| data-rowid="LL" | {{plink|Leviathan's lure}}
+| data-rowid="VM" | {{plink|Virtus mask}}
+|-
+| data-rowid="VRT" | {{plink|Virtus robe top}}
+| data-rowid="VRB" | {{plink|Virtus robe bottom}}
+| data-rowid="VV" | {{plink|Venator vestige}}
+|-
+| data-rowid="SQ" | {{plink|Smoke quartz}}
+| data-rowid="ST" | {{plink|Scarred tablet}}
+| data-rowid="CI" | {{plink|Chromium ingot}}
+|-
+| data-rowid="AO" | {{plink|Awakener's orb}}
+|{{NA}}
+|{{NA}}
+|-
+|}
+
+===Maggot King===
+There are a total of 3 items to collect from the [[Maggot King]].
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MK"
+! colspan="3" |Items
+|-
+| data-rowid="MM" | {{plink|Maggot marquess}}
+| data-rowid="CK" | {{plink|Crimson kisten}}
+| data-rowid="EVF" | {{plink|Elder venator fang}}
+|}
+
+===Moons of Peril===
+There are a total of 13 items to collect from the [[Moons of Peril]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MOP"
+! colspan="3" |Items
+|-
+| data-rowid="EMC" | {{plink|Eclipse moon chestplate}}
+| data-rowid="EMT" | {{plink|Eclipse moon tassets}}
+| data-rowid="EMH" | {{plink|Eclipse moon helm}}
+|-
+| data-rowid="EA" | {{plink|Eclipse atlatl}}
+| data-rowid="BMC" | {{plink|Blue moon chestplate}}
+| data-rowid="BMT" | {{plink|Blue moon tassets}}
+|-
+| data-rowid="BMH" | {{plink|Blue moon helm}}
+| data-rowid="BMS" | {{plink|Blue moon spear}}
+| data-rowid="BMC2" | {{plink|Blood moon chestplate}}
+|-
+| data-rowid="BMT2" | {{plink|Blood moon tassets}}
+| data-rowid="BMH2" | {{plink|Blood moon helm}}
+| data-rowid="DM" | {{plink|Dual macuahuitl}}
+|-
+| data-rowid="AD" | {{plink|Atlatl dart}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Nex===
+There are a total of 8 items to collect from [[Nex]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-N"
+! colspan="3" | Items
+|-
+| data-rowid="N" | {{plink|Nexling}}
+| data-rowid="AH" | {{plink|Ancient hilt}}
+| data-rowid="NH" | {{plink|Nihil horn}}
+|-
+| data-rowid="ZV" | {{plink|Zaryte vambraces}}
+| data-rowid="TFH" | {{plink|Torva full helm (damaged)}}
+| data-rowid="TP" | {{plink|Torva platebody (damaged)}}
+|-
+| data-rowid="TP2" | {{plink|Torva platelegs (damaged)}}
+| data-rowid="NS" | {{plink|Nihil shard}}
+|{{NA}}
+|}
+
+===The Nightmare===
+There are a total of 12 items to collect from [[The Nightmare]] and [[Phosani's Nightmare]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TN"
+! colspan="3" |Items
+|-
+| data-rowid="LN" | {{plink|Little nightmare}}
+| data-rowid="IM" | {{plink|Inquisitor's mace}}
+| data-rowid="IGH" | {{plink|Inquisitor's great helm}}
+|-
+| data-rowid="IH" | {{plink|Inquisitor's hauberk}}
+| data-rowid="IP" | {{plink|Inquisitor's plateskirt}}
+| data-rowid="NS" | {{plink|Nightmare staff}}
+|-
+| data-rowid="VO" | {{plink|Volatile orb}}
+| data-rowid="HO" | {{plink|Harmonised orb}}
+| data-rowid="EO" | {{plink|Eldritch orb}}
+|-
+| data-rowid="JOD" | {{plink|Jar of dreams}}
+| data-rowid="ST" | {{plink|Slepey tablet}}
+| data-rowid="PE" | {{plink|Parasitic egg}}
+|}
+
+===Obor===
+There is a total of 1 item to collect from [[Obor]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-O"
+! colspan="2" |Items
+|-
+| data-rowid="HGC" | {{plink|Hill giant club}}
+|}
+
+===Phantom Muspah===
+There are a total of 6 items to collect from the [[Phantom Muspah]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-PM"
+! colspan="3" |Items
+|-
+| data-rowid="M" | {{plink|Muphin|pic=Muphin (ranged)}}
+| data-rowid="VS" | {{plink|Venator shard}}
+| data-rowid="AI" | {{plink|Ancient icon}}
+|-
+| data-rowid="CI" | {{plink|Charged ice}}
+| data-rowid="FC" | {{plink|Frozen cache}}
+| data-rowid="AE" | {{plink|Ancient essence}}
+|}
+
+===Royal Titans===
+There are a total of 7 items to collect from the [[Royal Titans]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-RT"
+! colspan="3" |Items
+|-
+| data-rowid="B" | {{plink|Bran}}
+| data-rowid="DPS" | {{plink|Deadeye prayer scroll}}
+| data-rowid="MVPS" | {{plink|Mystic vigour prayer scroll}}
+|-
+| data-rowid="GA" | {{plink|Giantsoul amulet (uncharged)}}
+| data-rowid="IESC" | {{plink|Ice element staff crown}}
+| data-rowid="FESC" | {{plink|Fire element staff crown}}
+|-
+| data-rowid="DP" | {{plink|Desiccated page}}
+|}
+
+===Sarachnis===
+There are a total of 5 items to collect from [[Sarachnis]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-S"
+! colspan="3" | Items
+|-
+| data-rowid="S" | {{plink|Sraracha}}
+| data-rowid="JOE" | {{plink|Jar of eyes}}
+| data-rowid="GES" | {{plink|Giant egg sac(full)}}
+|-
+| data-rowid="SC" | {{plink|Sarachnis cudgel}}
+| data-rowid="PSS" | {{plink|Pristine spider silk}}
+| {{NA}}
+|}
+
+===Scorpia===
+There are a total of 4 items to collect from [[Scorpia]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-S2"
+! colspan="3" |Items
+|-
+| data-rowid="SO" | {{plink|Scorpia's offspring}}
+| data-rowid="OS" | {{plink|Odium shard 3}}
+| data-rowid="MS" | {{plink|Malediction shard 3}}
+|-
+| data-rowid="DS" | {{plink|Dragon 2h sword}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Scurrius===
+There are a total of 2 items to collect from [[Scurrius]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-S3"
+! colspan="2" | Items
+|-
+| data-rowid="S" | {{plink|Scurry}}
+| data-rowid="SS" | {{plink|Scurrius' spine}}
+|}
+
+===Shellbane Gryphon===
+There are a total of 4 items to collect from the [[Shellbane Gryphon]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-SG"
+! colspan="2" | Items
+|-
+| data-rowid="G" | {{plink|Gull (pet)|txt=Gull}}
+| data-rowid="JF" | {{plink|Jar of feathers}}
+|-
+| data-rowid="BF" | {{plink|Belle's folly (tarnished)}}
+| data-rowid="GF" | {{plink|Gryphon feather}}
+|}
+
+===Skotizo===
+There are a total of 6 items to collect from [[Skotizo]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-S4"
+! colspan="3" |Items
+|-
+| data-rowid="S" | {{plink|Skotos}}
+| data-rowid="JOD" | {{plink|Jar of darkness}}
+| data-rowid="DC" | {{plink|Dark claw}}
+|-
+| data-rowid="DT" | {{plink|Dark totem}}
+| data-rowid="UO" | {{plink|Uncut onyx}}
+| data-rowid="AS" | {{plink|Ancient shard}}
+|}
+
+===Tempoross===
+There are a total of 12 items to collect from [[Tempoross]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-T"
+! colspan="3" | Items
+|-
+| data-rowid="TT" | {{plink|Tiny tempor}}
+| data-rowid="BH" | {{plink|Big harpoonfish}}
+| data-rowid="SAH" | {{plink|Spirit angler headband}}
+|-
+| data-rowid="SAT" | {{plink|Spirit angler top}}
+| data-rowid="SAW" | {{plink|Spirit angler waders}}
+| data-rowid="SAB" | {{plink|Spirit angler boots}}
+|-
+| data-rowid="TOW" | {{plink|Tome of water (empty)}}
+| data-rowid="SP" | {{plink|Soaked page}}
+| data-rowid="TB" | {{plink|Tackle box}}
+|-
+| data-rowid="FB" | {{plink|Fish barrel}}
+| data-rowid="DH" | {{plink|Dragon harpoon}}
+| data-rowid="SF" | {{plink|Spirit flakes}}
+|}
+
+===Thermonuclear smoke devil===
+There are a total of 5 items to collect from the [[Thermonuclear smoke devil]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TSD"
+! colspan="3" |Items
+|-
+| data-rowid="PSD" | {{plink|Pet smoke devil}}
+| data-rowid="ON" | {{plink|Occult necklace}}
+| data-rowid="SB" | {{plink|Smoke battlestaff}}
+|-
+| data-rowid="DC" | {{plink|Dragon chainbody}}
+| data-rowid="JOS" | {{plink|Jar of smoke}}
+|{{NA}}
+|}
+
+===Vardorvis===
+There are a total of 10 items to collect from [[Vardorvis]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-V"
+! colspan="3" |Items
+|-
+| data-rowid="B" | {{plink|Butch}}
+| data-rowid="EAH" | {{plink|Executioner's axe head}}
+| data-rowid="VM" | {{plink|Virtus mask}}
+|-
+| data-rowid="VRT" | {{plink|Virtus robe top}}
+| data-rowid="VRB" | {{plink|Virtus robe bottom}}
+| data-rowid="UV" | {{plink|Ultor vestige}}
+|-
+| data-rowid="BQ" | {{plink|Blood quartz}}
+| data-rowid="ST" | {{plink|Strangled tablet}}
+| data-rowid="CI" | {{plink|Chromium ingot}}
+|-
+| data-rowid="AO" | {{plink|Awakener's orb}}
+|{{NA}}
+|{{NA}}
+|-
+|}
+
+===Venenatis and Spindel===
+There are a total of 6 items to collect from [[Venenatis]] and [[Spindel]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-VAS"
+! colspan="2" |Items
+|-
+| data-rowid="VS" | {{plink|Venenatis spiderling}}
+| data-rowid="TR" | {{plink|Treasonous ring}}
+|-
+| data-rowid="DP" | {{plink|Dragon pickaxe}}
+| data-rowid="DS" | {{plink|Dragon 2h sword}}
+|-
+| data-rowid="FOV" | {{plink|Fangs of venenatis}}
+| data-rowid="VG" | {{plink|Voidwaker gem}}
+|}
+
+===Vet'ion and Calvar'ion===
+There are a total of 6 items to collect from [[Vet'ion]] and [[Calvar'ion]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-VIACI"
+! colspan="2" |Items
+|-
+| data-rowid="VJ" | {{plink|Vet'ion jr.}}
+| data-rowid="ROTG" | {{plink|Ring of the gods}}
+|-
+| data-rowid="DP" | {{plink|Dragon pickaxe}}
+| data-rowid="DS" | {{plink|Dragon 2h sword}}
+|-
+| data-rowid="SOV" | {{plink|Skull of vet'ion}}
+| data-rowid="VB" | {{plink|Voidwaker blade}}
+|}
+
+===Vorkath===
+There are a total of 6 items to collect from [[Vorkath]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-V2"
+! colspan="3" | Items
+|-
+| data-rowid="V" | {{plink|Vorki}}
+| data-rowid="VH" | {{plink|Vorkath's head}}
+| data-rowid="DV" | {{plink|Draconic visage}}
+|-
+| data-rowid="SV" | {{plink|Skeletal visage}}
+| data-rowid="JOD" | {{plink|Jar of decay}}
+| data-rowid="DN" | {{plink|Dragonbone necklace}}
+|}
+
+===The Whisperer===
+There are a total of 10 items to collect from [[The Whisperer]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TW"
+! colspan="3" |Items
+|-
+| data-rowid="W" | {{plink|Wisp}}
+| data-rowid="SS" | {{plink|Siren's staff}}
+| data-rowid="VM" | {{plink|Virtus mask}}
+|-
+| data-rowid="VRT" | {{plink|Virtus robe top}}
+| data-rowid="VRB" | {{plink|Virtus robe bottom}}
+| data-rowid="BV" | {{plink|Bellator vestige}}
+|-
+| data-rowid="SQ" | {{plink|Shadow quartz}}
+| data-rowid="ST" | {{plink|Sirenic tablet}}
+| data-rowid="CI" | {{plink|Chromium ingot}}
+|-
+| data-rowid="AO" | {{plink|Awakener's orb}}
+|{{NA}}
+|{{NA}}
+|-
+|}
+
+===Wintertodt===
+There are a total of 10 items to collect from the [[Wintertodt]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-W"
+! colspan="3" | Items
+|-
+| data-rowid="P" | {{plink|Phoenix}}
+| data-rowid="TOF" | {{plink|Tome of fire (empty)}}
+| data-rowid="BP" | {{plink|Burnt page}}
+|-
+| data-rowid="PG" | {{plink|Pyromancer garb}}
+| data-rowid="PH" | {{plink|Pyromancer hood}}
+| data-rowid="PR" | {{plink|Pyromancer robe}}
+|-
+| data-rowid="PB" | {{plink|Pyromancer boots}}
+| data-rowid="WG" | {{plink|Warm gloves}}
+| data-rowid="BT" | {{plink|Bruma torch}}
+|-
+| data-rowid="DA" | {{plink|Dragon axe}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Yama===
+There are a total of 11 items to collect from [[Yama]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-Y"
+! colspan="3" |Items
+|-
+| data-rowid="Y2" | {{plink|Yami}}
+| data-rowid="CTS" | {{plink|Chasm teleport scroll}}
+| data-rowid="OPS" | {{plink|Oathplate shards|pic=Oathplate shards 1}}
+|-
+| data-rowid="OPH" | {{plink|Oathplate helm}}
+| data-rowid="OPC" | {{plink|Oathplate chest}}
+| data-rowid="OPL" | {{plink|Oathplate legs}}
+|-
+| data-rowid="SFH" | {{plink|Soulflame horn}}
+| data-rowid="ROVT" | {{plink|Rite of vile transference}}
+| data-rowid="FGL" | {{plink|Forgotten lockbox}}
+|-
+| data-rowid="D2" | {{plink|Dossier}}
+| data-rowid="BODT" | {{plink|Barrel of demonic tallow (full)}}
+|{{NA}}
+|}
+
+===Zalcano===
+There are a total of 4 items to collect from [[Zalcano]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-Z"
+! colspan="2" |Items
+|-
+| data-rowid="S" | {{plink|Smolcano}}
+| data-rowid="CTS" | {{plink|Crystal tool seed}}
+|-
+| data-rowid="ZS" | {{plink|Zalcano shard}}
+| data-rowid="UO" | {{plink|Uncut onyx}}
+|}
+
+===Zulrah===
+There are a total of 10 items to collect from [[Zulrah]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-Z2"
+! colspan="3" |Items
+|-
+| data-rowid="PS" | {{plink|Pet snakeling}}
+| data-rowid="TM" | {{plink|Tanzanite mutagen}}
+| data-rowid="MM" | {{plink|Magma mutagen}}
+|-
+| data-rowid="JOS" | {{plink|Jar of swamp}}
+| data-rowid="MF" | {{plink|Magic fang}}
+| data-rowid="SV" | {{plink|Serpentine visage}}
+|-
+| data-rowid="TF" | {{plink|Tanzanite fang}}
+| data-rowid="ZAT" | {{plink|Zul-andra teleport}}
+| data-rowid="UO" | {{plink|Uncut onyx}}
+|-
+| data-rowid="ZS" | {{plink|Zulrah's scales}}
+|{{NA}}
+|{{NA}}
+|}

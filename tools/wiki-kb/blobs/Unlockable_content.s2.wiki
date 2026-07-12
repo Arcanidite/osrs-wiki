@@ -1,0 +1,78 @@
+==Doors and passages==
+
+{| class="wikitable lighttable sortable"
+!Content
+!Members
+!Unlocked
+!Notes
+|-
+|[[Crypt of the moon|Crypt of the Moon]]
+|{{members|yes}}
+|Used a [[temple coin]] on the [[stone relief]]
+|Obtained from [[Olbertus]] in the [[Forthos Dungeon]], either by trading him five cut [[Dragonstone|dragonstones]] or by attempting to kill him
+|-
+|[[Temple Door]]
+|{{members|yes}}
+|Used a [[temple key]] on one of the doors in [[Forthos Dungeon]]
+|Obtained by offering 100 (or 200 if the player attempted to attack [[Olbertus]] while speaking to him) [[babydragon bones]], [[dragon bones]], [[lava dragon bones]] or [[superior dragon bones]] to the [[sacred bone burner]] found at the [[Crypt of the moon|Crypt of the Moon]]
+|-
+|[[Blood rift]]
+|{{members|yes}}
+|Having crafted [[Blood rune|blood runes]] before having used a [[dark essence block]] or [[dark essence fragments]] on the [[blood rift]]
+|
+|-
+|[[Soul rift]]
+|{{members|yes}}
+|Having crafted [[Soul rune|soul runes]] before having used a [[dark essence block]] or [[dark essence fragments]] on the [[soul rift]]
+|
+|-
+|Northern entrance of [[Brimhaven Dungeon]]
+|{{members|yes}}
+|1,000,000 [[coins]] paid to [[Saniboch]]
+|875 [[coins]] fee if not unlocked permanently
+|-
+|Southern entrance of [[Brimhaven Dungeon]]
+|{{members|yes}}
+|5,000 [[trading sticks]] paid to [[Banisoch]]
+|
+|-
+|[[Crandor and Karamja Dungeon|Crandor Dungeon]] wall
+|{{members|no}}
+|Pass once from [[Crandor]] to [[Karamja]] or complete [[Dragon Slayer I]]
+|
+|-
+|[[Stronghold of Security]] portals
+|{{members|no}}
+|For each portal, complete the subsequent floor
+|
+|-
+|[[Fish shoal]] access
+|{{members|yes}}
+|200 [[Numulite|numulites]] per day
+|Can pay 20,000 [[Numulite|numulites]] to unlock permanently
+|-
+|[[Volcanic Mine]] access
+|{{members|yes}}
+|30 [[Numulite|numulites]] per entry
+|Can pay 3,000 [[Numulite|numulites]] to unlock permanently
+|-
+|[[Catacombs of Kourend]] north-western entrance
+|{{members|yes}}
+|Unlocked by using the rope from inside the catacombs.
+|Bring [[dragonfire protection]] and [[food]].
+|-
+|[[Catacombs of Kourend]] north-eastern entrance
+|{{members|yes}}
+|Unlocked by using the rope from inside the catacombs.
+|Bring [[food]] if low level
+|-
+|[[Catacombs of Kourend]] southern entrance
+|{{members|yes}}
+|Unlocked by using the rope from inside the catacombs.
+|Bring [[food]] if low level
+|-
+|[[Catacombs of Kourend]] south-eastern entrance
+|{{members|yes}}
+|Unlocked by using the rope from inside the catacombs.
+|Bring [[food]] if low level
+|}

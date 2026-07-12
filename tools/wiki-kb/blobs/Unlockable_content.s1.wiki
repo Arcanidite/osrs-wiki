@@ -1,0 +1,183 @@
+==Miscellaneous==
+{| class="wikitable lighttable sortable"
+!Content
+!Members
+!Unlocked
+!Notes
+|-
+|[[Mystic cards]]
+|{{members|yes}}
+|Redeemed code <code>v1r354cqu1r173und0</code> with [[Diango]]
+|
+|-
+|[[Broken sun altar]] [[praying]] animation
+|{{members|yes}}
+|Spoken to [[Knight of Varlamore (Kourend Castle)|Knight of Varlamore]] after completing [[In Search of Knowledge]] and unlocking the [[Crypt of the moon|Crypt of the Moon]]
+|
+|-
+|[[Contraband Yak Produce]]
+|{{members|yes}}
+|5,000 [[coins]] paid to [[Vanligga Gastfrihet]]
+|Found in [[Jatizso]]
+|-
+|[[~ Uglug's stuffsies ~]]
+|{{members|yes}}
+|Sold a [[relicym's balm]] (any dose) to [[Uglug Nar]] after completing [[Zogre Flesh Eaters]]
+|
+|-
+|[[Castle Wars|Castle wars]] [[Ava's accumulator|accumulator]] or [[attractor]] effect
+|{{members|yes}}
+|Used the device on [[Lanthus]]
+|Found in the [[Castle Wars]] lobby
+|-
+|[[Soul Wars]] [[Ava's accumulator|accumulator]] or [[attractor]] effect
+|{{members|yes}}
+|Used the device on [[Nomad]]
+|Found in the [[Soul Wars]] lobby
+|-
+|[[Ranging cape]] [[Ava's assembler|assembler]] effect
+|{{members|yes}}
+|Used [[Vorkath's head]] on [[Ranging cape]] or [[Max cape]]
+|Using it on either permanently applies the [[Ava's assembler|assembler]] effect to all applicable capes
+|-
+|[[Dizana's quiver]] [[Ava's attractor|attractor]], [[Ava's accumulator|accumulator]] or [[Ava's assembler|assembler]] effect
+|{{members|yes}}
+|Brought the quiver and the device to [[Ava]]
+|Ava permanently applies the device's effect to all applicable quivers
+|-
+|[[Slayer helmet|Slayer Helmet]] in place of a Shayzien helm when fighting [[Lizardman shaman|lizardman shamans]]
+|{{members|yes}}
+|After completing the [[hard Kourend & Kebos Diary]] and having obtained [[Shayzien helm (5)]], spoken to [[Captain Cleive]]
+|Found in the [[Lizardman Caves]]
+|-
+|Cheaper [[Crystal weapon seed]] re-enchantments
+|{{members|yes}}
+|Recharged the [[Crystal weapon seed]] 4 times
+|The lowest price becomes 180,000 [[coins]] for the [[Crystal bow]] or 150,000 [[coins]] for the [[Crystal shield]] or [[Crystal halberd]]
+|-
+|Freedom for [[Droalak]]'s soul
+|{{members|yes}}
+|Talked to [[Droalak]] after completing [[Making History]]
+|
+|-
+|Freedom for [[Klenter]]'s soul
+|{{members|yes}}
+|Talked to [[Klenter]] after completing [[Icthlarin's Little Helper]]
+|
+|-
+|Bigger bag in [[Motherlode Mine]]
+|{{members|yes}}
+|Purchased with 200 [[Golden nugget|golden nuggets]] from [[Prospector Percy]]
+|
+|-
+|[[Hosidius]]-themed [[house style]]
+|{{members|yes}}
+|Changed house-style with an [[Estate agent]] while having [[Hosidius blueprints]] in the inventory
+|Bought from the [[Mahogany Homes Reward Shop]]
+|-
+|[[Loot key]]
+|{{members|no}}
+|1,000,000 [[coins]] paid to [[Skully]] 
+|Loot keys store the loot from players defeated in PvP in a single inventory space. After being unlocked, this behaviour can be freely toggled at [[Skully]] in the [[Ferox Enclave]].
+|-
+|[[Knight of the Lion]]
+|{{members|yes}}
+|1% to encounter while opening regular [[Coffin (Hallowed Sepulchre)|coffins]] in the [[Hallowed Sepulchre]]
+|Wanders around in the lobby Hallowed Sepulchre afterwards
+|-
+|[[Knight of the Owl]]
+|{{members|yes}}
+|1% to encounter while opening regular [[Coffin (Hallowed Sepulchre)|coffins]] in the [[Hallowed Sepulchre]]
+|Wanders around in the lobby Hallowed Sepulchre afterwards
+|-
+|[[Knight of the Unicorn]]
+|{{members|yes}}
+|1% to encounter while opening regular [[Coffin (Hallowed Sepulchre)|coffins]] in the [[Hallowed Sepulchre]]
+|Wanders around in the lobby Hallowed Sepulchre afterwards
+|-
+|[[Knight of the Wolf]]
+|{{members|yes}}
+|1% to encounter while opening regular [[Coffin (Hallowed Sepulchre)|coffins]] in the [[Hallowed Sepulchre]]
+|Wanders around in the lobby Hallowed Sepulchre afterwards
+|-
+|[[Archpriest of the Unicorn]]
+|{{members|yes}}
+|1% to encounter while opening the [[Grand Hallowed Coffin]] in the [[Hallowed Sepulchre]]
+|Wanders around in the lobby Hallowed Sepulchre afterwards
+|-
+|Freedom for [[Darkmeyer Slave]]
+|{{members|yes}}
+|Gifted the [[Darkmeyer Slave]] 100 [[Hallowed marks]]
+|Dialogue is permanently changed when encountered in the future
+|-
+|[[Count Check]] [[Lamp]]
+|{{members|no}}
+|Asked [[Count Check]] to check your account after setting up a bank pin and linking to a [[Jagex Account]]
+|
+|-
+|[[Doomsayer]] warnings
+|{{members|yes}}
+|Triggered all 24 warnings seven times each to unlock the ability to toggle them off
+|A full checklist can be found on the [[Doomsayer]] page
+|-
+|[[Guardians of the Rift]] [[Essence pouch]] repair
+|{{members|yes}}
+|25 [[abyssal pearls]] paid to [[Apprentice Cordelia]]
+|
+|-
+|[[Grave|Gravestone]] cosmetic enhancement
+|{{members|no}}
+|200,000 coins paid to [[Death (NPC)|Death]] in [[Death's Office]]
+|
+|-
+|[[Museum Camp|Museum camp]] utilities
+|{{members|yes}} 
+|Various construction materials at detailed on the page. 
+|
+|-
+|Unlimited [[Gyr Falcon|gyr falcon]] access
+|{{members|yes}}
+|500,000 coins paid to [[Matthias]] at the [[Piscatoris falconry area]]
+|Otherwise costs 500 coins every time you want to obtain it
+|-
+|Extra [[bank space]]
+|{{members|no}}
+|Up to 888,000,000 coins to unlock all 400 extra bank slots.
+|First 40 slots cost 1,000,000 coins, and the last 40 cost 500,000,000 coins.
+|-
+|Access to the [[Bank chest]] inside the Colosseum lobby
+|{{members|yes}}
+|Brawler rank (2,000 [[glory]]) at the [[Fortis Colosseum]]
+|
+|-
+|Ability to peek into [[Hunter's End]].
+|{{members|yes}}
+|20 [[Artio]] killcount.
+|To enter Artio's lair, players must have completed the [[Wilderness Diary#Hard|hard Wilderness diary]], '''OR''' they must have a Callisto boss Slayer task (a bear Slayer task does not bypass the diary requirement).
+|-
+|Ability to peek into [[Callisto's Den]].
+|{{members|yes}}
+|20 [[Callisto]] killcount.
+|To enter Callisto's lair, players must have completed the [[Wilderness Diary#Hard|hard Wilderness diary]], '''OR''' they must have a Callisto boss Slayer task (a bear Slayer task does not bypass the diary requirement).
+|-
+|Ability to peek into the [[Web Chasm]].
+|{{members|yes}}
+|20 [[Spindel]] killcount.
+|To enter Spindel's lair, players must have completed the [[Wilderness Diary#Hard|hard Wilderness diary]], '''OR''' they must have a Venenatis boss Slayer task (a spider Slayer task does not bypass the diary requirement).
+|-
+|Ability to peek into the [[Silk Chasm]].
+|{{members|yes}}
+|20 [[Venenatis]] killcount.
+|To enter Venenatis's lair, players must have completed the [[Wilderness Diary#Hard|hard Wilderness diary]], '''OR''' they must have a Venenatis boss Slayer task (a spider Slayer task does not bypass the diary requirement).
+|-
+|Ability to peek into the [[Skeletal Tomb]].
+|{{members|yes}}
+|20 [[Calvar'ion]] killcount.
+|To enter Calvar'ion's lair, players must have completed the [[Wilderness Diary#Hard|hard Wilderness diary]], '''OR''' they must have a Vet'ion boss Slayer task (a skeleton Slayer task does not bypass the diary requirement).
+|-
+|Ability to peek into [[Vet'ion's Rest]].
+|{{members|yes}}
+|20 [[Vet'ion]] killcount.
+|To enter Vet'ion's lair, players must have completed the [[Wilderness Diary#Hard|hard Wilderness diary]], '''OR''' they must have a Vet'ion boss Slayer task (a skeleton Slayer task does not bypass the diary requirement).
+|-
+|}

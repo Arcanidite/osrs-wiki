@@ -1,0 +1,113 @@
+==Raids==
+===Chambers of Xeric===
+There are a total of 23 items to collect from the [[Chambers of Xeric]] and [[Chambers of Xeric/Challenge Mode|Chambers of Xeric Challenge Mode]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-COX"
+! colspan="3" |Items
+|-
+| data-rowid="O" | {{plink|Olmlet}}
+| data-rowid="MD" | {{plink|Metamorphic dust}}
+| data-rowid="TB" | {{plink|Twisted bow}}
+|-
+| data-rowid="EM" | {{plink|Elder maul}}
+| data-rowid="KI" | {{plink|Kodai insignia}}
+| data-rowid="DC" | {{plink|Dragon claws}}
+|-
+| data-rowid="AH" | {{plink|Ancestral hat}}
+| data-rowid="ART" | {{plink|Ancestral robe top}}
+| data-rowid="ARB" | {{plink|Ancestral robe bottom}}
+|-
+| data-rowid="DB" | {{plink|Dinh's bulwark}}
+| data-rowid="DPS" | {{plink|Dexterous prayer scroll}}
+| data-rowid="APS" | {{plink|Arcane prayer scroll}}
+|-
+| data-rowid="DHC" | {{plink|Dragon hunter crossbow}}
+| data-rowid="TB2" | {{plink|Twisted buckler}}
+| data-rowid="TPS" | {{plink|Torn prayer scroll}}
+|-
+| data-rowid="DR" | {{plink|Dark relic}}
+| data-rowid="O2" | {{plink|Onyx}}
+| data-rowid="TACK" | {{plink|Twisted ancestral colour kit}}
+|-
+| data-rowid="XG" | {{plink|Xeric's guard}}
+| data-rowid="XW" | {{plink|Xeric's warrior}}
+| data-rowid="XS" | {{plink|Xeric's sentinel}}
+|-
+| data-rowid="XG2" | {{plink|Xeric's general}}
+| data-rowid="XC" | {{plink|Xeric's champion}}
+|{{NA}}
+|}
+
+===Theatre of Blood===
+There are a total of 17 items to collect from the [[Theatre of Blood]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TOB"
+! colspan="3" | Items
+|-
+| data-rowid="LZ" | {{plink|Lil' zik}}
+| data-rowid="SOV" | {{plink|Scythe of vitur (uncharged)}}
+| data-rowid="GR" | {{plink|Ghrazi rapier}}
+|-
+| data-rowid="SS" | {{plink|Sanguinesti staff (uncharged)}}
+| data-rowid="JF" | {{plink|Justiciar faceguard}}
+| data-rowid="JC" | {{plink|Justiciar chestguard}}
+|-
+| data-rowid="JL" | {{plink|Justiciar legguards}}
+| data-rowid="ADH" | {{plink|Avernic defender hilt}}
+| data-rowid="VOB" | {{plink|Vial of blood}}
+|-
+| data-rowid="SST" | {{plink|Sinhaza shroud tier 1}}
+| data-rowid="SST2" | {{plink|Sinhaza shroud tier 2}}
+| data-rowid="SST3" | {{plink|Sinhaza shroud tier 3}}
+|-
+| data-rowid="SST4" | {{plink|Sinhaza shroud tier 4}}
+| data-rowid="SST5" | {{plink|Sinhaza shroud tier 5}}
+| data-rowid="SD" | {{plink|Sanguine dust}}
+|-
+| data-rowid="HOK" | {{plink|Holy ornament kit}}
+| data-rowid="SOK" | {{plink|Sanguine ornament kit}}
+|{{NA}}
+|}
+
+===Tombs of Amascut===
+There are a total of 27 items to collect from the [[Tombs of Amascut]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TOA"
+! colspan="3" |Items
+|-
+| data-rowid="TG" | {{plink|Tumeken's guardian}}
+| data-rowid="TS" | {{plink|Tumeken's shadow (uncharged)}}
+| data-rowid="EW" | {{plink|Elidinis' ward}}
+|-
+| data-rowid="MM" | {{plink|Masori mask}}
+| data-rowid="MB" | {{plink|Masori body}}
+| data-rowid="MC" | {{plink|Masori chaps}}
+|-
+| data-rowid="L" | {{plink|Lightbearer}}
+| data-rowid="OF" | {{plink|Osmumten's fang}}
+| data-rowid="TOE" | {{plink|Thread of elidinis}}
+|-
+| data-rowid="BOTS" | {{plink|Breach of the scarab}}
+| data-rowid="EOTC" | {{plink|Eye of the corruptor}}
+| data-rowid="JOTS" | {{plink|Jewel of the sun}}
+|-
+| data-rowid="JOA" | {{plink|Jewel of amascut}}
+| data-rowid="MOK" | {{plink|Menaphite ornament kit}}
+| data-rowid="CP" | {{plink|Cursed phalanx}}
+|-
+| data-rowid="MCK" | {{plink|Masori crafting kit}}
+| data-rowid="COR" | {{plink|Cache of runes}}
+| data-rowid="IS" | {{plink|Icthlarin's shroud (tier 1)}}
+|-
+| data-rowid="IS2" | {{plink|Icthlarin's shroud (tier 2)}}
+| data-rowid="IS3" | {{plink|Icthlarin's shroud (tier 3)}}
+| data-rowid="IS4" | {{plink|Icthlarin's shroud (tier 4)}}
+|-
+| data-rowid="IS5" | {{plink|Icthlarin's shroud (tier 5)}}
+| data-rowid="ROA" | {{plink|Remnant of akkha}}
+| data-rowid="ROBB" | {{plink|Remnant of ba-ba}}
+|-
+| data-rowid="ROK" | {{plink|Remnant of kephri}}
+| data-rowid="ROZ" | {{plink|Remnant of zebak}}
+| data-rowid="AR" | {{plink|Ancient remnant}}
+|}

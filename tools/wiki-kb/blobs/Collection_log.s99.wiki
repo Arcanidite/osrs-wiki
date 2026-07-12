@@ -1,0 +1,951 @@
+==Other==
+===Aerial Fishing===
+There are a total of 9 items to collect from [[Aerial Fishing]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-AF"
+! colspan="3" |Items
+|-
+| data-rowid="GT" | {{plink|Golden tench}}
+| data-rowid="PFR" | {{plink|Pearl fishing rod}}
+| data-rowid="PFFR" | {{plink|Pearl fly fishing rod}}
+|-
+| data-rowid="PBR" | {{plink|Pearl barbarian rod}}
+| data-rowid="FS" | {{plink|Fish sack}}
+| data-rowid="AH" | {{plink|Angler hat}}
+|-
+| data-rowid="AT" | {{plink|Angler top}}
+| data-rowid="AW" | {{plink|Angler waders}}
+| data-rowid="AB" | {{plink|Angler boots}}
+|}
+
+===All Pets===
+There are a total of 69 [[pet]]s to collect.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-AP"
+! colspan="4" |Items
+|-
+| data-rowid="AO" | {{plink|Abyssal orphan}}
+| data-rowid="IH" | {{plink|Ikkle hydra|pic=Ikkle hydra (serpentine)}}
+| data-rowid="CC" | {{plink|Callisto cub}}
+| data-rowid="H" | {{plink|Hellpuppy}}
+|-
+| data-rowid="PCE" | {{plink|Pet chaos elemental}}
+| data-rowid="PZ" | {{plink|Pet zilyana}}
+| data-rowid="PDC" | {{plink|Pet dark core}}
+| data-rowid="PDP" | {{plink|Pet dagannoth prime}}
+|-
+| data-rowid="PDS" | {{plink|Pet dagannoth supreme}}
+| data-rowid="PDR" | {{plink|Pet dagannoth rex}}
+| data-rowid="TJ" | {{plink|Tzrek-jad}}
+| data-rowid="PGG" | {{plink|Pet general graardor}}
+|-
+| data-rowid="BM" | {{plink|Baby mole}}
+| data-rowid="N" | {{plink|Noon}}
+| data-rowid="JNR" | {{plink|Jal-nib-rek}}
+| data-rowid="KP" | {{plink|Kalphite princess}}
+|-
+| data-rowid="PBD" | {{plink|Prince black dragon}}
+| data-rowid="PK" | {{plink|Pet kraken}}
+| data-rowid="PK2" | {{plink|Pet kree'arra}}
+| data-rowid="PKT" | {{plink|Pet k'ril tsutsaroth}}
+|-
+| data-rowid="SO" | {{plink|Scorpia's offspring}}
+| data-rowid="S" | {{plink|Skotos}}
+| data-rowid="PSD" | {{plink|Pet smoke devil}}
+| data-rowid="VS" | {{plink|Venenatis spiderling}}
+|-
+| data-rowid="VJ" | {{plink|Vet'ion jr.}}
+| data-rowid="V" | {{plink|Vorki}}
+| data-rowid="P" | {{plink|Phoenix}}
+| data-rowid="PS" | {{plink|Pet snakeling}}
+|-
+| data-rowid="O" | {{plink|Olmlet}}
+| data-rowid="LZ" | {{plink|Lil' zik}}
+| data-rowid="B" | {{plink|Bloodhound}}
+| data-rowid="PPQ" | {{plink|Pet penance queen}}
+|-
+| data-rowid="H2" | {{plink|Heron}}
+| data-rowid="RG" | {{plink|Rock golem}}
+| data-rowid="B2" | {{plink|Beaver}}
+| data-rowid="BC" | {{plink|Baby chinchompa|pic=Baby chinchompa (grey)}}
+|-
+| data-rowid="GS" | {{plink|Giant squirrel}}
+| data-rowid="T" | {{plink|Tangleroot}}
+| data-rowid="R" | {{plink|Rocky}}
+| data-rowid="RG2" | {{plink|Rift guardian|pic=Rift guardian (air)}}
+|-
+| data-rowid="H3" | {{plink|Herbi}}
+| data-rowid="CC2" | {{plink|Chompy chick}}
+| data-rowid="S2" | {{plink|Sraracha}}
+| data-rowid="S3" | {{plink|Smolcano}}
+|-
+| data-rowid="Y" | {{plink|Youngllef}}
+| data-rowid="LN" | {{plink|Little nightmare}}
+| data-rowid="LC" | {{plink|Lil' creator}}
+| data-rowid="TT" | {{plink|Tiny tempor}}
+|-
+| data-rowid="N2" | {{plink|Nexling}}
+| data-rowid="AP" | {{plink|Abyssal protector}}
+| data-rowid="TG" | {{plink|Tumeken's guardian}}
+| data-rowid="M" | {{plink|Muphin|pic=Muphin (ranged)}}
+|-
+| data-rowid="W" | {{plink|Wisp}}
+| data-rowid="B3" | {{plink|Baron}}
+| data-rowid="B4" | {{plink|Butch}}
+| data-rowid="L" | {{plink|Lil'viathan}}
+|-
+| data-rowid="S4" | {{plink|Scurry}}
+| data-rowid="SH" | {{plink|Smol heredit}}
+| data-rowid="Q" | {{plink|Quetzin}}
+| data-rowid="N3" | {{plink|Nid}}
+|-
+| data-rowid="H4" | {{plink|Huberte}}
+| data-rowid="M2" | {{plink|Moxi}}
+| data-rowid="BR" | {{plink|Bran}}
+| data-rowid="YA" | {{plink|Yami}}
+|-
+| data-rowid="DO" | {{plink|Dom}}
+| data-rowid="SOUP" | {{plink|Soup}}
+| data-rowid="GULL" | {{plink|Gull (pet)|txt=Gull}}
+| data-rowid="BEEF" | {{plink|Beef}}
+|-
+| data-rowid="MM" | {{plink|Maggot marquess}}
+| {{NA}}
+| {{NA}}
+| {{NA}}
+|}
+
+===Boat Paints===
+There are a total of 11 [[boat paint]]s to collect.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-BP"
+! colspan="3" |Items
+|-
+| data-rowid="GT" | {{plink|Barracuda paint}}
+| data-rowid="PFR" | {{plink|Shark paint}}
+| data-rowid="PFFR" | {{plink|Inky paint}}
+|-
+| data-rowid="PBR" | {{plink|Angler's paint}}
+| data-rowid="FS" | {{plink|Salvor's paint}}
+| data-rowid="AH" | {{plink|Armadylean paint}}
+|-
+| data-rowid="AT" | {{plink|Zamorakian paint}}
+| data-rowid="AW" | {{plink|Guthixian paint}}
+| data-rowid="AB" | {{plink|Saradominist paint}}
+|-
+| data-rowid="MP" | {{plink|Merchant's paint}}
+| data-rowid="SP" | {{plink|Sandy paint}}
+| {{NA}}
+|}
+
+===Camdozaal===
+There are a total of 10 items to collect from the [[Ruins of Camdozaal]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-C2"
+! colspan="3" |Items
+|-
+| data-rowid="BM" | {{plink|Barronite mace}}
+| data-rowid="BH" | {{plink|Barronite head}}
+| data-rowid="BH2" | {{plink|Barronite handle}}
+|-
+| data-rowid="BG" | {{plink|Barronite guard}}
+| data-rowid="AG" | {{plink|Ancient globe}}
+| data-rowid="AL" | {{plink|Ancient ledger}}
+|-
+| data-rowid="AA" | {{plink|Ancient astroscope}}
+| data-rowid="AT" | {{plink|Ancient treatise}}
+| data-rowid="AC" | {{plink|Ancient carcanet}}
+|-
+| data-rowid="IH" | {{plink|Imcando hammer}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Champion's Challenge===
+There are a total of 11 items to collect for [[Champions' Challenge]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CSC"
+! colspan="3" |Items
+|-
+| data-rowid="EWCS" | {{plink|Earth warrior champion scroll}}
+| data-rowid="GCS" | {{plink|Ghoul champion scroll}}
+| data-rowid="GCS2" | {{plink|Giant champion scroll}}
+|-
+| data-rowid="GCS3" | {{plink|Goblin champion scroll}}
+| data-rowid="HCS" | {{plink|Hobgoblin champion scroll}}
+| data-rowid="ICS" | {{plink|Imp champion scroll}}
+|-
+| data-rowid="JCS" | {{plink|Jogre champion scroll}}
+| data-rowid="LDCS" | {{plink|Lesser demon champion scroll}}
+| data-rowid="SCS" | {{plink|Skeleton champion scroll}}
+|-
+| data-rowid="ZCS" | {{plink|Zombie champion scroll}}
+| data-rowid="CC" | {{plink|Champion's cape}}
+|{{NA}}
+|}
+
+===Chompy Bird Hunting===
+There are a total of 19 items to collect from [[Chompy bird hunting]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CB2"
+! colspan="3" |Items
+|-
+| data-rowid="CC" | {{plink|Chompy chick}}
+| data-rowid="CBHB" | {{plink|Chompy bird hat (ogre bowman)}}
+| data-rowid="CBH" | {{plink|Chompy bird hat (bowman)}}
+|-
+| data-rowid="CBHY" | {{plink|Chompy bird hat (ogre yeoman)}}
+| data-rowid="CBH2" | {{plink|Chompy bird hat (yeoman)}}
+| data-rowid="CBHM" | {{plink|Chompy bird hat (ogre marksman)}}
+|-
+| data-rowid="CBH3" | {{plink|Chompy bird hat (marksman)}}
+| data-rowid="CBHW" | {{plink|Chompy bird hat (ogre woodsman)}}
+| data-rowid="CBH4" | {{plink|Chompy bird hat (woodsman)}}
+|-
+| data-rowid="CBHF" | {{plink|Chompy bird hat (ogre forester)}}
+| data-rowid="CBH5" | {{plink|Chompy bird hat (forester)}}
+| data-rowid="CBHB2" | {{plink|Chompy bird hat (ogre bowmaster)}}
+|-
+| data-rowid="CBH6" | {{plink|Chompy bird hat (bowmaster)}}
+| data-rowid="CBHE" | {{plink|Chompy bird hat (ogre expert)}}
+| data-rowid="CBH7" | {{plink|Chompy bird hat (expert)}}
+|-
+| data-rowid="CBHDA" | {{plink|Chompy bird hat (ogre dragon archer)}}
+| data-rowid="CBHA" | {{plink|Chompy bird hat (dragon archer)}}
+| data-rowid="CBHODA" | {{plink|Chompy bird hat (expert ogre dragon archer)}}
+|-
+| data-rowid="CBHDA2" | {{plink|Chompy bird hat (expert dragon archer)}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Colossal Wyrm Agility===
+There are a total of 8 items to collect from [[Colossal Wyrm Agility]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CWA"
+! colspan="4" |Items
+|-
+| data-rowid="CWTS" | {{plink|Colossal wyrm teleport scroll}}
+| data-rowid="CA" | {{plink|Calcified acorn}}
+| data-rowid="GHV" | {{plink|Graceful hood (Varlamore)|txt=Graceful hood}}
+|-
+| data-rowid="GTV" | {{plink|Graceful top (Varlamore)|txt=Graceful top}}
+| data-rowid="GLV" | {{plink|Graceful legs (Varlamore)|txt=Graceful legs}}
+| data-rowid="GGV" | {{plink|Graceful gloves (Varlamore)|txt=Graceful gloves}}
+|-
+| data-rowid="GBV" | {{plink|Graceful boots (Varlamore)|txt=Graceful boots}}
+| data-rowid="GCV" | {{plink|Graceful cape (Varlamore)|txt=Graceful cape}}
+|{{NA}}
+|}
+
+===Creature Creation===
+There are a total of 7 items to collect from [[Creature Creation]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-CC"
+! colspan="3" | Items
+|-
+| data-rowid="TF" | {{plink|Tea flask}}
+| data-rowid="PS" | {{plink|Plain satchel}}
+| data-rowid="GS" | {{plink|Green satchel}}
+|-
+| data-rowid="RS" | {{plink|Red satchel}}
+| data-rowid="BS" | {{plink|Black satchel}}
+| data-rowid="GS2" | {{plink|Gold satchel}}
+|-
+| data-rowid="RS2" | {{plink|Rune satchel}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Cyclopes===
+There are a total of 8 items to collect from [[cyclopes]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-C3"
+! colspan="3" |Items
+|-
+| data-rowid="BD" | {{plink|Bronze defender}}
+| data-rowid="ID" | {{plink|Iron defender}}
+| data-rowid="SD" | {{plink|Steel defender}}
+|-
+| data-rowid="BD2" | {{plink|Black defender}}
+| data-rowid="MD" | {{plink|Mithril defender}}
+| data-rowid="AD" | {{plink|Adamant defender}}
+|-
+| data-rowid="RD" | {{plink|Rune defender}}
+| data-rowid="DD" | {{plink|Dragon defender}}
+|{{NA}}
+|}
+
+===Elder Chaos Druids===
+There are a total of 3 items to collect from [[elder chaos druid]]s.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-ECD"
+! colspan="3" |Items
+|-
+| data-rowid="ECT" | {{plink|Elder chaos top}}
+| data-rowid="ECR" | {{plink|Elder chaos robe}}
+| data-rowid="ECH" | {{plink|Elder chaos hood}}
+|}
+
+===Forestry===
+There are a total of 23 items to collect from [[Forestry]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-F"
+! colspan="4" |Items
+|-
+| data-rowid="FW" | {{plink|Fox whistle}}
+| data-rowid="GPE" | {{plink|Golden pheasant egg}}
+| data-rowid="LH" | {{plink|Lumberjack hat}}
+| data-rowid="LT" | {{plink|Lumberjack top}}
+|-
+| data-rowid="LL" | {{plink|Lumberjack legs}}
+| data-rowid="LB" | {{plink|Lumberjack boots}}
+| data-rowid="FH" | {{plink|Forestry hat}}
+| data-rowid="FT" | {{plink|Forestry top}}
+|-
+| data-rowid="FL" | {{plink|Forestry legs}}
+| data-rowid="FB" | {{plink|Forestry boots}}
+| data-rowid="TG" | {{plink|Twitcher's gloves}}
+| data-rowid="FSL" | {{plink|Funky shaped log}}
+|-
+| data-rowid="LB2" | {{plink|Log basket}}
+| data-rowid="LB3" | {{plink|Log brace}}
+| data-rowid="CPB" | {{plink|Clothes pouch blueprint}}
+| data-rowid="CP" | {{plink|Cape pouch}}
+|-
+| data-rowid="FAH" | {{plink|Felling axe handle}}
+| data-rowid="PH" | {{plink|Pheasant hat}}
+| data-rowid="PL" | {{plink|Pheasant legs}}
+| data-rowid="PB" | {{plink|Pheasant boots}}
+|-
+| data-rowid="PC" | {{plink|Pheasant cape}}
+| data-rowid="PG" | {{plink|Petal garland}}
+| data-rowid="SBP" | {{plink|Sturdy beehive parts}}
+| {{NA}}
+|}
+
+===Fossil Island Notes===
+There are a total of 10 items to collect from the [[House on the Hill]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-FIN"
+! colspan="3" |Items
+|-
+| data-rowid="SN" | {{plink|Scribbled note}}
+| data-rowid="PN" | {{plink|Partial note}}
+| data-rowid="AN" | {{plink|Ancient note}}
+|-
+| data-rowid="AW" | {{plink|Ancient writings}}
+| data-rowid="EN" | {{plink|Experimental note}}
+| data-rowid="POT" | {{plink|Paragraph of text}}
+|-
+| data-rowid="MSN" | {{plink|Musty smelling note}}
+| data-rowid="HSN" | {{plink|Hastily scrawled note}}
+| data-rowid="OW" | {{plink|Old writing}}
+|-
+| data-rowid="SN2" | {{plink|Short note}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Glough's Experiments===
+There are a total of 6 items to collect from [[demonic gorilla]]s and [[tortured gorilla]]s.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-GSE"
+! colspan="3" |Items
+|-
+| data-rowid="ZS" | {{plink|Zenyte shard}}
+| data-rowid="LF" | {{plink|Light frame}}
+| data-rowid="HF" | {{plink|Heavy frame}}
+|-
+| data-rowid="BL" | {{plink|Ballista limbs}}
+| data-rowid="MT" | {{plink|Monkey tail}}
+| data-rowid="BS" | {{plink|Ballista spring}}
+|}
+
+===Hunter Guild===
+There are a total of 6 items to collect from the [[Hunter Guild]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-HG"
+! colspan="3" |Items
+|-
+| data-rowid="Q" | {{plink|Quetzin}}
+| data-rowid="HK" | {{plink|Huntsman's kit}}
+| data-rowid="GHH" | {{plink|Guild hunter headwear}}
+|-
+| data-rowid="GHT" | {{plink|Guild hunter top}}
+| data-rowid="GHL" | {{plink|Guild hunter legs}}
+| data-rowid="GHB" | {{plink|Guild hunter boots}}
+|}
+
+===Lost Schematics===
+There are a total of 12 [[lost schematics]] to collect.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-LS"
+! colspan="3" |Items
+|-
+| data-rowid="SS" | {{plink|Salvaging station schematic}}
+| data-rowid="GC" | {{plink|Gale catcher schematic}}
+| data-rowid="EB" | {{plink|Eternal brazier schematic}}
+|-
+| data-rowid="RCH" | {{plink|Rosewood cargo hold schematic}}
+| data-rowid="RH" | {{plink|Rosewood hull schematic}}
+| data-rowid="RCS" | {{plink|Rosewood & cotton sails schematic}}
+|-
+| data-rowid="DH" | {{plink|Dragon helm schematic}}
+| data-rowid="DK" | {{plink|Dragon keel schematic}}
+| data-rowid="DSH" | {{plink|Dragon salvaging hook schematic}}
+|-
+| data-rowid="DC" | {{plink|Dragon cannon schematic}}
+| data-rowid="BAS" | {{plink|Ballistic attractor schematic}}
+| data-rowid="BWS" | {{plink|Bosun's workbench schematic}}
+|}
+
+===Monkey Backpacks===
+There are a total of 6 items to collect from the [[Ape Atoll Agility Course]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MB"
+! colspan="3" |Items
+|-
+| data-rowid="KM" | {{plink|Karamjan monkey (item)|txt=Karamjan monkey}}
+| data-rowid="KJ" | {{plink|Kruk jr}}
+| data-rowid="MM" | {{plink|Maniacal monkey (item)|txt=Maniacal monkey}}
+|-
+| data-rowid="PM" | {{plink|Princely monkey}}
+| data-rowid="SM" | {{plink|Skeleton monkey (item)|txt=Skeleton monkey}}
+| data-rowid="ZM" | {{plink|Zombie monkey (item)|txt=Zombie monkey}}
+|}
+
+===Motherlode Mine===
+There are a total of 6 items to collect from the [[Motherlode Mine]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MM2"
+! colspan="3" |Items
+|-
+| data-rowid="CB" | {{plink|Coal bag}}
+| data-rowid="GB" | {{plink|Gem bag}}
+| data-rowid="PH" | {{plink|Prospector helmet}}
+|-
+| data-rowid="PJ" | {{plink|Prospector jacket}}
+| data-rowid="PL" | {{plink|Prospector legs}}
+| data-rowid="PB" | {{plink|Prospector boots}}
+|}
+
+===My Notes===
+There are a total of 26 items to collect for [[My notes]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-MN"
+! colspan="3" |Items
+|-
+| data-rowid="AP" | {{plink|Ancient page}}
+| data-rowid="AP2" | {{plink|Ancient page|pic=Ancient page (2)}}
+| data-rowid="AP3" | {{plink|Ancient page}}
+|-
+| data-rowid="AP4" | {{plink|Ancient page|pic=Ancient page (2)}}
+| data-rowid="AP5" | {{plink|Ancient page}}
+| data-rowid="AP6" | {{plink|Ancient page|pic=Ancient page (2)}}
+|-
+| data-rowid="AP7" | {{plink|Ancient page}}
+| data-rowid="AP8" | {{plink|Ancient page|pic=Ancient page (2)}}
+| data-rowid="AP9" | {{plink|Ancient page}}
+|-
+| data-rowid="AP10" | {{plink|Ancient page|pic=Ancient page (2)}}
+| data-rowid="AP11" | {{plink|Ancient page}}
+| data-rowid="AP12" | {{plink|Ancient page|pic=Ancient page (2)}}
+|-
+| data-rowid="AP13" | {{plink|Ancient page}}
+| data-rowid="AP14" | {{plink|Ancient page|pic=Ancient page (2)}}
+| data-rowid="AP15" | {{plink|Ancient page}}
+|-
+| data-rowid="AP16" | {{plink|Ancient page|pic=Ancient page (2)}}
+| data-rowid="AP17" | {{plink|Ancient page}}
+| data-rowid="AP18" | {{plink|Ancient page|pic=Ancient page (2)}}
+|-
+| data-rowid="AP19" | {{plink|Ancient page}}
+| data-rowid="AP20" | {{plink|Ancient page|pic=Ancient page (2)}}
+| data-rowid="AP21" | {{plink|Ancient page}}
+|-
+| data-rowid="AP22" | {{plink|Ancient page|pic=Ancient page (2)}}
+| data-rowid="AP23" | {{plink|Ancient page}}
+| data-rowid="AP24" | {{plink|Ancient page|pic=Ancient page (2)}}
+|-
+| data-rowid="AP25" | {{plink|Ancient page}}
+| data-rowid="AP26" | {{plink|Ancient page|pic=Ancient page (2)}}
+|{{NA}}
+|}
+
+===Ocean Encounters===
+There are a total of 11 items to collect from [[ocean encounters#Giant clam|ocean encounters]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-OE"
+! colspan="3" |Items
+|-
+| data-rowid="TINY" | {{plink|Tiny pearl}}
+| data-rowid="SMALL" | {{plink|Small pearl}}
+| data-rowid="SHINY" | {{plink|Shiny pearl}}
+|-
+| data-rowid="BRIGHT" | {{plink|Bright pearl}}
+| data-rowid="BIG" | {{plink|Big pearl}}
+| data-rowid="HUGE" | {{plink|Huge pearl}}
+|-
+| data-rowid="ENORM" | {{plink|Enormous pearl}}
+| data-rowid="SHIMMER" | {{plink|Shimmering pearl}}
+| data-rowid="GLISTEN" | {{plink|Glistening pearl}}
+|-
+| data-rowid="BRILL" | {{plink|Brilliant pearl}}
+| data-rowid="RADIANT" | {{plink|Radiant pearl}}
+| {{NA}}
+|}
+
+===Random Events===
+There are a total of 23 items to collect from [[Random events]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-RE"
+! colspan="3" |Items
+|-
+| data-rowid="CT" | {{plink|Camo top}}
+| data-rowid="CB" | {{plink|Camo bottoms}}
+| data-rowid="CH" | {{plink|Camo helmet}}
+|-
+| data-rowid="LT" | {{plink|Lederhosen top}}
+| data-rowid="LS" | {{plink|Lederhosen shorts}}
+| data-rowid="LH" | {{plink|Lederhosen hat}}
+|-
+| data-rowid="ZS" | {{plink|Zombie shirt}}
+| data-rowid="ZT" | {{plink|Zombie trousers}}
+| data-rowid="ZM" | {{plink|Zombie mask}}
+|-
+| data-rowid="ZG" | {{plink|Zombie gloves}}
+| data-rowid="ZB" | {{plink|Zombie boots}}
+| data-rowid="MM" | {{plink|Mime mask}}
+|-
+| data-rowid="MT" | {{plink|Mime top}}
+| data-rowid="ML" | {{plink|Mime legs}}
+| data-rowid="MG" | {{plink|Mime gloves}}
+|-
+| data-rowid="MB" | {{plink|Mime boots}}
+| data-rowid="FT" | {{plink|Frog token}}
+| data-rowid="SB" | {{plink|Stale baguette}}
+|-
+| data-rowid="BH" | {{plink|Beekeeper's hat}}
+| data-rowid="BT" | {{plink|Beekeeper's top}}
+| data-rowid="BL" | {{plink|Beekeeper's legs}}
+|-
+| data-rowid="BG" | {{plink|Beekeeper's gloves}}
+| data-rowid="BB" | {{plink|Beekeeper's boots}}
+|{{NA}}
+|}
+
+===Revenants===
+There are a total of 14 items to collect from [[revenant]]s.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-R"
+! colspan="3" |Items
+|-
+| data-rowid="VC" | {{plink|Viggora's chainmace (u)}}
+| data-rowid="CB" | {{plink|Craw's bow (u)}}
+| data-rowid="TS" | {{plink|Thammaron's sceptre (u)}}
+|-
+| data-rowid="AOA" | {{plink|Amulet of avarice}}
+| data-rowid="BOE" | {{plink|Bracelet of ethereum (uncharged)}}
+| data-rowid="AC" | {{plink|Ancient crystal}}
+|-
+| data-rowid="AR" | {{plink|Ancient relic}}
+| data-rowid="AE" | {{plink|Ancient effigy}}
+| data-rowid="AM" | {{plink|Ancient medallion}}
+|-
+| data-rowid="AS" | {{plink|Ancient statuette}}
+| data-rowid="AT" | {{plink|Ancient totem}}
+| data-rowid="AE2" | {{plink|Ancient emblem}}
+|-
+| data-rowid="RCT" | {{plink|Revenant cave teleport}}
+| data-rowid="RE" | {{plink|Revenant ether}}
+|{{NA}}
+|}
+
+===Rooftop Agility===
+There are a total of 7 items to collect from [[Rooftop Agility Courses|Rooftop Agility]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-RA"
+! colspan="3" |Items
+|-
+| data-rowid="MOG" | {{plink|Mark of grace}}
+| data-rowid="GH" | {{plink|Graceful hood}}
+| data-rowid="GC" | {{plink|Graceful cape}}
+|-
+| data-rowid="GT" | {{plink|Graceful top}}
+| data-rowid="GL" | {{plink|Graceful legs}}
+| data-rowid="GG" | {{plink|Graceful gloves}}
+|-
+| data-rowid="GB" | {{plink|Graceful boots}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Sailing Miscellaneous===
+There are a total of 12 miscellaneous Sailing items to collect.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-SM"
+! colspan="3" |Items
+|-
+| data-rowid="DMS" | {{plink|Dragon metal sheet}}
+| data-rowid="DN" | {{plink|Dragon nails}}
+| data-rowid="DC" | {{plink|Dragon cannonball}}
+|-
+| data-rowid="EP" | {{plink|Echo pearl}}
+| data-rowid="SAF" | {{plink|Swift albatross feather}}
+| data-rowid="NH" | {{plink|Narwhal horn}}
+|-
+| data-rowid="RB" | {{plink|Ray barbs}}
+| data-rowid="BDH" | {{plink|Broken dragon hook}}
+| data-rowid="BS" | {{plink|Bottled storm}}
+|-
+| data-rowid="DCB" | {{plink|Dragon cannon barrel}}
+| data-rowid="BB" | {{plink|Boat bottle (empty)}}
+| data-rowid="FB" | {{plink|Facility bottle (empty)}}
+|}
+
+===Sea Treasures===
+There are a total of 17 sea treasures to collect.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-ST"
+! colspan="3" |Items
+|-
+| data-rowid="MF1" | {{plink|Medallion fragment|pic=Medallion fragment (1)}}
+| data-rowid="MF2" | {{plink|Medallion fragment|pic=Medallion fragment (2)}}
+| data-rowid="MF3" | {{plink|Medallion fragment|pic=Medallion fragment (3)}}
+|-
+| data-rowid="MF4" | {{plink|Medallion fragment|pic=Medallion fragment (4)}}
+| data-rowid="MF5" | {{plink|Medallion fragment|pic=Medallion fragment (5)}}
+| data-rowid="MF6" | {{plink|Medallion fragment|pic=Medallion fragment (6)}}
+|-
+| data-rowid="MF7" | {{plink|Medallion fragment|pic=Medallion fragment (7)}}
+| data-rowid="MF8" | {{plink|Medallion fragment|pic=Medallion fragment (8)}}
+| data-rowid="SA" | {{plink|Sailors' amulet|pic=Sailors' amulet (inert)|txt=Sailors' amulet (inert)}}
+|-
+| data-rowid="RL" | {{plink|Rusty locket}}
+| data-rowid="MB" | {{plink|Mouldy block}}
+| data-rowid="DK" | {{plink|Dull knife}}
+|-
+| data-rowid="BC" | {{plink|Broken compass}}
+| data-rowid="RC" | {{plink|Rusty coin}}
+| data-rowid="BS" | {{plink|Broken sextant}}
+|-
+| data-rowid="MD" | {{plink|Mouldy doll}}
+| data-rowid="SM" | {{plink|Smashed mirror}}
+| {{NA}}
+|}
+
+===Shayzien Armour===
+There are a total of 25 armour pieces, obtainable from the [[Combat Ring (Shayzien)|Shayzien Combat Ring]] or by smithing [[Lovakite bar|Lovakite bars]]. The collection log slots are filled regardless of the method used.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-SA"
+! colspan="3" |Items
+|-
+| data-rowid="SG" | {{plink|Shayzien gloves (1)}}
+| data-rowid="SB" | {{plink|Shayzien boots (1)}}
+| data-rowid="SH" | {{plink|Shayzien helm (1)}}
+|-
+| data-rowid="SG2" | {{plink|Shayzien greaves (1)}}
+| data-rowid="SP" | {{plink|Shayzien platebody (1)}}
+| data-rowid="SG3" | {{plink|Shayzien gloves (2)}}
+|-
+| data-rowid="SB2" | {{plink|Shayzien boots (2)}}
+| data-rowid="SH2" | {{plink|Shayzien helm (2)}}
+| data-rowid="SG4" | {{plink|Shayzien greaves (2)}}
+|-
+| data-rowid="SP2" | {{plink|Shayzien platebody (2)}}
+| data-rowid="SG5" | {{plink|Shayzien gloves (3)}}
+| data-rowid="SB3" | {{plink|Shayzien boots (3)}}
+|-
+| data-rowid="SH3" | {{plink|Shayzien helm (3)}}
+| data-rowid="SG6" | {{plink|Shayzien greaves (3)}}
+| data-rowid="SP3" | {{plink|Shayzien platebody (3)}}
+|-
+| data-rowid="SG7" | {{plink|Shayzien gloves (4)}}
+| data-rowid="SB4" | {{plink|Shayzien boots (4)}}
+| data-rowid="SH4" | {{plink|Shayzien helm (4)}}
+|-
+| data-rowid="SG8" | {{plink|Shayzien greaves (4)}}
+| data-rowid="SP4" | {{plink|Shayzien platebody (4)}}
+| data-rowid="SG9" | {{plink|Shayzien gloves (5)}}
+|-
+| data-rowid="SB5" | {{plink|Shayzien boots (5)}}
+| data-rowid="SH5" | {{plink|Shayzien helm (5)}}
+| data-rowid="SG10" | {{plink|Shayzien greaves (5)}}
+|-
+| data-rowid="SB6" | {{plink|Shayzien body (5)}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Shooting Stars===
+There are a total of 2 items to collect from [[Dusuri's Star Shop]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-SS"
+! colspan="2" |Items
+|-
+| data-rowid="CR" | {{plink|Celestial ring (uncharged)}}
+| data-rowid="SF" | {{plink|Star fragment}}
+|}
+
+===Skilling Pets===
+There are a total of 9 [[Pet#Skilling pets|skilling pets]] to collect.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-SP"
+! colspan="3" |Items
+|-
+| data-rowid="H" | {{plink|Heron}}
+| data-rowid="RG" | {{plink|Rock golem}}
+| data-rowid="B" | {{plink|Beaver}}
+|-
+| data-rowid="BC" | {{plink|Baby chinchompa|pic=Baby chinchompa (grey)}}
+| data-rowid="GS" | {{plink|Giant squirrel}}
+| data-rowid="T" | {{plink|Tangleroot}}
+|-
+| data-rowid="R" | {{plink|Rocky}}
+| data-rowid="RG2" | {{plink|Rift guardian|pic=Rift guardian (air)}}
+| data-rowid="S" | {{plink|Soup}}
+|}
+
+===Slayer===
+There are a total of 90 items to collect from [[Slayer monster]]s.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-S5"
+! colspan="4" |Items
+|-
+| data-rowid="CH" | {{plink|Crawling hand (item)|txt=Crawling hand}}
+| data-rowid="CH2" | {{plink|Cockatrice head}}
+| data-rowid="BH" | {{plink|Basilisk head}}
+| data-rowid="KH" | {{plink|Kurask head}}
+|-
+| data-rowid="AH" | {{plink|Abyssal head}}
+| data-rowid="IH" | {{plink|Imbued heart}}
+| data-rowid="EG" | {{plink|Eternal gem}}
+| data-rowid="DB" | {{plink|Dust battlestaff}}
+|-
+| data-rowid="MB" | {{plink|Mist battlestaff}}
+| data-rowid="AW" | {{plink|Abyssal whip}}
+| data-rowid="GM" | {{plink|Granite maul}}
+| data-rowid="MH" | {{plink|Mudskipper hat}}
+|-
+| data-rowid="F" | {{plink|Flippers}}
+| data-rowid="BS" | {{plink|Brine sabre}}
+| data-rowid="LBS" | {{plink|Leaf-bladed sword}}
+| data-rowid="LBB" | {{plink|Leaf-bladed battleaxe}}
+|-
+| data-rowid="BM" | {{plink|Black mask (10)|txt=Black mask}}
+| data-rowid="GL" | {{plink|Granite longsword}}
+| data-rowid="GB" | {{plink|Granite boots}}
+| data-rowid="WV" | {{plink|Wyvern visage}}
+|-
+| data-rowid="GL2" | {{plink|Granite legs}}
+| data-rowid="GH" | {{plink|Granite helm}}
+| data-rowid="DV" | {{plink|Draconic visage}}
+| data-rowid="BB" | {{plink|Bronze boots}}
+|-
+| data-rowid="IB" | {{plink|Iron boots}}
+| data-rowid="SB" | {{plink|Steel boots}}
+| data-rowid="BB2" | {{plink|Black boots}}
+| data-rowid="MB2" | {{plink|Mithril boots}}
+|-
+| data-rowid="AB" | {{plink|Adamant boots}}
+| data-rowid="RB" | {{plink|Rune boots}}
+| data-rowid="DB2" | {{plink|Dragon boots}}
+| data-rowid="AD" | {{plink|Abyssal dagger}}
+|-
+| data-rowid="UT" | {{plink|Uncharged trident}}
+| data-rowid="KT" | {{plink|Kraken tentacle}}
+| data-rowid="DB3" | {{plink|Dark bow}}
+| data-rowid="ON" | {{plink|Occult necklace}}
+|-
+| data-rowid="DC" | {{plink|Dragon chainbody}}
+| data-rowid="DT" | {{plink|Dragon thrownaxe}}
+| data-rowid="DH" | {{plink|Dragon harpoon}}
+| data-rowid="DS" | {{plink|Dragon sword}}
+|-
+| data-rowid="DK" | {{plink|Dragon knife}}
+| data-rowid="BDH" | {{plink|Broken dragon hasta}}
+| data-rowid="DT2" | {{plink|Drake's tooth}}
+| data-rowid="DC2" | {{plink|Drake's claw}}
+|-
+| data-rowid="HT" | {{plink|Hydra tail}}
+| data-rowid="HF" | {{plink|Hydra's fang}}
+| data-rowid="HE" | {{plink|Hydra's eye}}
+| data-rowid="HH" | {{plink|Hydra's heart}}
+|-
+| data-rowid="MH2" | {{plink|Mystic hat (light)}}
+| data-rowid="MRT" | {{plink|Mystic robe top (light)}}
+| data-rowid="MRB" | {{plink|Mystic robe bottom (light)}}
+| data-rowid="MG" | {{plink|Mystic gloves (light)}}
+|-
+| data-rowid="MB3" | {{plink|Mystic boots (light)}}
+| data-rowid="MH3" | {{plink|Mystic hat (dark)}}
+| data-rowid="MRT2" | {{plink|Mystic robe top (dark)}}
+| data-rowid="MRB2" | {{plink|Mystic robe bottom (dark)}}
+|-
+| data-rowid="MG2" | {{plink|Mystic gloves (dark)}}
+| data-rowid="MB4" | {{plink|Mystic boots (dark)}}
+| data-rowid="MH4" | {{plink|Mystic hat (dusk)}}
+| data-rowid="MRT3" | {{plink|Mystic robe top (dusk)}}
+|-
+| data-rowid="MRB3" | {{plink|Mystic robe bottom (dusk)}}
+| data-rowid="MG3" | {{plink|Mystic gloves (dusk)}}
+| data-rowid="MB5" | {{plink|Mystic boots (dusk)}}
+| data-rowid="BJ" | {{plink|Basilisk jaw}}
+|-
+| data-rowid="AT" | {{plink|Aquanite tendon}}
+| data-rowid="DH2" | {{plink|Dagon'hai hat}}
+| data-rowid="DRT" | {{plink|Dagon'hai robe top}}
+| data-rowid="DRB" | {{plink|Dagon'hai robe bottom}}
+|-
+| data-rowid="BS2" | {{plink|Blood shard}}
+| data-rowid="ACM" | {{plink|Ancient ceremonial mask}}
+| data-rowid="ACT" | {{plink|Ancient ceremonial top}}
+| data-rowid="ACL" | {{plink|Ancient ceremonial legs}}
+|-
+| data-rowid="ACG" | {{plink|Ancient ceremonial gloves}}
+| data-rowid="ACB" | {{plink|Ancient ceremonial boots}}
+| data-rowid="WS" | {{plink|Warped sceptre (uncharged)}}
+| data-rowid="SB2" | {{plink|Sulphur blades}}
+|-
+| data-rowid="TAS" | {{plink|Teleport anchoring scroll}}
+| data-rowid="AB2" | {{plink|Aranea boots}}
+| data-rowid="GT" | {{plink|Glacial temotli}}
+| data-rowid="POA" | {{plink|Pendant of ates (inert)}}
+|-
+| data-rowid="FT" | {{plink|Frozen tear}}
+| data-rowid="ET" | {{plink|Earthbound tecpatl}}
+| data-rowid="AG" | {{plink|Antler guard}}
+| data-rowid="AS" | {{plink|Alchemist's signet}}
+|-
+| data-rowid="BA" | {{plink|Broken antler}}
+| data-rowid="DMS" | {{plink|Dragon metal sheet}}
+| data-rowid="HOP" | {{plink|Horn of plenty (empty)}}
+| data-rowid="GF" | {{plink|Gryphon feather}}
+|-
+| data-rowid="VT" | {{plink|Venator tooth}}
+| data-rowid="VF" | {{plink|Venator fang}}
+| {{NA}}
+| {{NA}}
+|}
+
+===Tormented Demons===
+There are a total of 3 items to collect from [[tormented demon]]s.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-TD"
+! colspan="3" |Items
+|-
+| data-rowid="TS" | {{plink|Tormented synapse}}
+| data-rowid="BC" | {{plink|Burning claw}}
+| data-rowid="GTT" | {{plink|Guthixian temple teleport}}
+|}
+
+===TzHaar===
+There are a total of 10 items to collect from the [[TzHaar]].
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-T2"
+! colspan="3" |Items
+|-
+| data-rowid="OC" | {{plink|Obsidian cape}}
+| data-rowid="TKX" | {{plink|Toktz-ket-xil}}
+| data-rowid="TKO" | {{plink|Tzhaar-ket-om}}
+|-
+| data-rowid="TXA" | {{plink|Toktz-xil-ak}}
+| data-rowid="TXE" | {{plink|Toktz-xil-ek}}
+| data-rowid="TMT" | {{plink|Toktz-mej-tal}}
+|-
+| data-rowid="TXU" | {{plink|Toktz-xil-ul}}
+| data-rowid="OH" | {{plink|Obsidian helmet}}
+| data-rowid="OP" | {{plink|Obsidian platebody}}
+|-
+| data-rowid="OP2" | {{plink|Obsidian platelegs}}
+|{{NA}}
+|{{NA}}
+|}
+
+===Miscellaneous===
+There are a total of 62 miscellaneous items to collect.
+
+{| class="wikitable lighttable individual" style="text-align:left;" data-tableid="CL-M"
+! colspan="4" |Items
+|-
+| data-rowid="H" | {{plink|Herbi}}
+| data-rowid="CC" | {{plink|Chompy chick}}
+| data-rowid="DW" | {{plink|Dragon warhammer}}
+| data-rowid="BS" | {{plink|Big swordfish}}
+|-
+| data-rowid="BS2" | {{plink|Big shark}}
+| data-rowid="BB" | {{plink|Big bass}}
+| data-rowid="GBK" | {{plink|Giant blue krill}}
+| data-rowid="GH" | {{plink|Golden haddock}}
+|-
+| data-rowid="O" | {{plink|Orangefin}}
+| data-rowid="HH" | {{plink|Huge halibut}}
+| data-rowid="P" | {{plink|Purplefin}}
+| data-rowid="SM" | {{plink|Swift marlin}}
+|-
+| data-rowid="LB" | {{plink|Long bone}}
+| data-rowid="CB" | {{plink|Curved bone}}
+| data-rowid="EK" | {{plink|Ecumenical key}}
+| data-rowid="PS" | {{plink|Pharaoh's sceptre (uncharged)}}
+|-
+| data-rowid="DTB" | {{plink|Dark totem base}}
+| data-rowid="DTM" | {{plink|Dark totem middle}}
+| data-rowid="DTT" | {{plink|Dark totem top}}
+| data-rowid="CB2" | {{plink|Chewed bones}}
+|-
+| data-rowid="DFH" | {{plink|Dragon full helm}}
+| data-rowid="SLH" | {{plink|Shield left half}}
+| data-rowid="DMS" | {{plink|Dragon metal slice}}
+| data-rowid="DML" | {{plink|Dragon metal lump}}
+|-
+| data-rowid="DL" | {{plink|Dragon limbs}}
+| data-rowid="DS" | {{plink|Dragon spear}}
+| data-rowid="AOEG" | {{plink|Amulet of eternal glory}}
+| data-rowid="SM" | {{plink|Shaman mask}}
+|-
+| data-rowid="ECH" | {{plink|Evil chicken head}}
+| data-rowid="ECW" | {{plink|Evil chicken wings}}
+| data-rowid="ECL" | {{plink|Evil chicken legs}}
+| data-rowid="ECF" | {{plink|Evil chicken feet}}
+|-
+| data-rowid="MG" | {{plink|Mining gloves}}
+| data-rowid="SMG" | {{plink|Superior mining gloves}}
+| data-rowid="EMG" | {{plink|Expert mining gloves}}
+| data-rowid="RSH" | {{plink|Right skull half}}
+|-
+| data-rowid="LSH" | {{plink|Left skull half}}
+| data-rowid="TOS" | {{plink|Top of sceptre}}
+| data-rowid="BOS" | {{plink|Bottom of sceptre}}
+| data-rowid="MK" | {{plink|Mossy key}}
+|-
+| data-rowid="GK" | {{plink|Giant key}}
+| data-rowid="HS" | {{plink|Hespori seed}}
+| data-rowid="FCC" | {{plink|Fresh crab claw}}
+| data-rowid="FCS" | {{plink|Fresh crab shell}}
+|-
+| data-rowid="XT" | {{plink|Xeric's talisman (inert)}}
+| data-rowid="MOR" | {{plink|Mask of ranul}}
+| data-rowid="ES" | {{plink|Elven signet}}
+| data-rowid="CG" | {{plink|Crystal grail}}
+|-
+| data-rowid="ECTS" | {{plink|Enhanced crystal teleport seed}}
+| data-rowid="DFH2" | {{plink|Dragonstone full helm}}
+| data-rowid="DP" | {{plink|Dragonstone platebody}}
+| data-rowid="DP2" | {{plink|Dragonstone platelegs}}
+|-
+| data-rowid="DG" | {{plink|Dragonstone gauntlets}}
+| data-rowid="DB" | {{plink|Dragonstone boots}}
+| data-rowid="UO" | {{plink|Uncut onyx}}
+| data-rowid="MT" | {{plink|Merfolk trident}}
+|-
+| data-rowid="OES" | {{plink|Orange egg sac}}
+| data-rowid="BES" | {{plink|Blue egg sac}}
+| data-rowid="BZA" | {{plink|Broken zombie axe}}
+| data-rowid="BZH" | {{plink|Broken zombie helmet}}
+|-
+| data-rowid="HTM" | {{plink|Helmet of the moon}}
+| data-rowid="SB" | {{plink|Squid beak}}
+|{{NA}}
+|{{NA}}
+|}

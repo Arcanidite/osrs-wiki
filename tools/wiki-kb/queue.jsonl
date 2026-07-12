@@ -576,3 +576,7 @@
 {"key": "depth:18-final-rfd-chain", "status": "done", "payload": {"contributed": 15, "skipped": 0}, "ts": "2026-07-12T09:37:55Z"}
 {"key": "depth:19-final-misc-late", "status": "claimed", "payload": null, "ts": "2026-07-12T09:37:57Z"}
 {"key": "depth:19-final-misc-late", "status": "done", "payload": {"contributed": 15, "skipped": 0}, "ts": "2026-07-12T09:43:27Z"}
+{"key": "wave4:minigames", "status": "claimed", "payload": null, "ts": "2026-07-12T10:17:31Z"}
+{"key": "wave4:minigames", "status": "done", "payload": {"result": "52 classify:minigame:* rows contributed (49 minigames + 3 D&D), 0 skipped"}, "ts": "2026-07-12T10:17:31Z"}
+{"key": "wave4:skill-unlocks", "status": "claimed", "payload": null, "ts": "2026-07-12T10:19:27Z"}
+{"key": "wave4:skill-unlocks", "status": "done", "payload": {"contributed": 115, "skipped": 0, "domain": "unlock", "source": "Unlockable content page, sections: Transportation/Magics/Locations/Guilds/Equipment/Doors and passages/Miscellaneous"}, "ts": "2026-07-12T10:22:22Z"}
