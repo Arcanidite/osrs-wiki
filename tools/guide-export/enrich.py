@@ -912,6 +912,12 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # other caller gets xp_fold=False, the exact pre-fix behavior.
     xp_fold = bool(goal.get("xp_fold"))
 
+    # Skill-methods picker: attach train_methods.jsonl methods[] onto the
+    # matching train-* steps (see main()'s extra_by_id merge + the attach loop
+    # below). Opt-in per route (default OFF → byte-identical for every pinned
+    # fixture); only training-heavy chains (grand) set goal.train_methods:true.
+    train_methods = bool(goal.get("train_methods"))
+
     # [topo-quality] topo_xp_fold: a SEPARATE, additive opt-in knob for
     # topo_order's own XP fold, decoupled from xp_fold (which also flips on
     # phased_steps' quest_first / phased_steps_with_steer's advances_steer —
@@ -1085,6 +1091,8 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
         if not s.get("mapMarkers") and extra.get("mapMarkers"):
             s["mapMarkers"] = [{**m, "plane": m.get("plane", 0)}
                                for m in extra["mapMarkers"]]
+        if train_methods and not s.get("methods") and extra.get("methods"):
+            s["methods"] = extra["methods"]
 
     return {
         "id": "route-" + goal["id"],
@@ -1173,6 +1181,17 @@ def main():
             extra_by_id[s["id"]] = {"refs": s.get("refs"), "mapMarkers": s.get("mapMarkers")}
     for r in _load_jsonl(data_dir / "step_refs.jsonl"):
         extra_by_id[r["id"]] = {"refs": r.get("refs"), "mapMarkers": r.get("mapMarkers")}
+
+    # Skill-methods picker data (train_methods.jsonl, minted by
+    # consolidate_train_methods.py from the normalizer ledger). Merged by step
+    # id; attached only when a goal opts in via train_methods:true (see enrich).
+    # Absent file or flag off = every fixture byte-identical.
+    methods_file = data_dir / "train_methods.jsonl"
+    if methods_file.exists():
+        for r in _load_jsonl(methods_file):
+            sid = r.get("step_id")
+            if sid:
+                extra_by_id.setdefault(sid, {})["methods"] = r.get("methods")
 
     json.dump(
         enrich(payload, catalog, steer_points, supply_chains,
