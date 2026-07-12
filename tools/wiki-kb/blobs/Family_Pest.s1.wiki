@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|start = Speak to [[Dimintheis]] in south-east Varrock.
+|startmap = 3279,3404
+|description = You've helped Dimintheis get his family crest back, but what's next? Surely he or his family have another quest for you... right?
+|difficulty = 2
+|length = Short
+|members = Yes
+|requirements = Completion of [[Family Crest]]
+|items = *500,000 coins
+|recommended = *[[Varrock Teleport]] or another method of teleportation to Varrock
+*[[Ring of dueling]] or another method of teleportation close to mines north of Al Kharid
+*[[Camelot Teleport]] or another method to travel to Catherby ([[Catherby Teleport]])
+*Method of travel to the Lumberyard ([[Varrock Teleport]], [[Lumberyard Teleport]], [[Ring of the Elements]], or [[Digsite pendant]])
+|leagueRegion = 
+Not completable, as it requires access to Misthalin.
+}}

@@ -1,0 +1,7 @@
+====Logging race====
+{{Checklist|*Step on the [[platform (Lunar Diplomacy)#Perceptive|north-eastern blue platform]].
+*Talk to [[Ethereal Perceptive]]. If you don't have an axe, he'll give you one. {{Chat option|1Ok, let's go!}}
+*Run west and chop 20 logs, depositing them on your log pile. (Warning: Pick up any items you dropped before handing in last log or you will be teleported away without time to grab them.)
+*He will teleport you once you've won the competition.
+*Talk to the Ethereal Being.
+}}

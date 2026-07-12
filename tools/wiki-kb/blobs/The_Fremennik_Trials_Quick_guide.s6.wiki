@@ -1,0 +1,14 @@
+===Back to Rellekka===
+{{Checklist|
+*Use a Rellekka house teleport to return, or simply walk back. If walking, left-click on your talisman to check if [[The Draugen]] is nearby on your way. If so, kill him.
+*'''Use''' the beer, or beer tankard, on the council workman by the bridge south of Rellekka to obtain [[strange object]].
+*Go north across the bridge, then walk a bit west until you see a small narrow path heading south into the water. (The large rib cage sticking out of the water on the left side of the bridge)
+*Use your raw shark/manta ray/sea turtle on the strange altar to enchant your lyre.
+*Follow your talisman by left-clicking on it and kill The Draugen now if you haven't already. Appears as a grey [[Butterfly (Draugen)|butterfly]] before locating the correct tile. 
+*Once done, head back into Rellekka and talk to Sigli at the entrance.
+*Head to the outside of the longhall to the pipe on the eastern wall. Use a tinderbox on your [[strange object]] and use the [[lit strange object]] on the pipe.
+*Enter the north-eastern back door of the longhall, walk onto the stage, and play your [[enchanted lyre]].
+*Exit the back door, enter the main long hall, and take a keg of beer off the table.
+*Use your [[low alcohol keg]] on the [[keg of beer]].
+*Challenge [[Manni]] to a drinking contest again. {{Chat option|1Yes}}
+}}

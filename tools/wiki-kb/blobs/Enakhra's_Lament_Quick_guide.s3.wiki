@@ -1,0 +1,16 @@
+===Building the statue===
+{{Map|name=Lazim|x=3191|y=2926|r=4|mtype=square|width=250|height=250|align=right|caption=The quest's start point.}}
+{{Needed|A [[pickaxe]], [[chisel]].|recommended=8 Inventory slots if mining granite pieces including an extra for [[King's Ransom]], otherwise 7. An [[Elemental staff]] to save inventory space.}}
+{{Checklist|
+*Talk to [[Lazim]] north-east of the [[Bandit Camp Quarry|quarry]]. {{Chat option|1Of course!|2Okay, I'll get on with it.}}
+*Bring him 32&nbsp;kg of sandstone, it doesn't have to be all at once. You can break down big pieces with a chisel.
+*Use your chisel on the sandstone (32&nbsp;kg).
+*Place the base on the flat ground.
+*Repeat the process for a 20&nbsp;kg body.
+*Use your chisel on the statue.
+*Talk to Lazim and pick any head (remember which head you picked).
+*Mine two 5&nbsp;kg pieces of granite (not sandstone!). (''Ironmen: Mine a 3rd piece of any size for [[King's Ransom]]'')
+*Make the head you chose ('''if you don't make the head you chose, you will have to make another head'''). The other 5&nbsp;kg granite piece is used later.
+*If you did not bring clay or coal, mine some now.
+*Talk to him and you'll fall into a temple.
+}}

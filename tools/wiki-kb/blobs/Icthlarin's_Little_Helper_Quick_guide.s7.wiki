@@ -1,0 +1,9 @@
+===Preparing for the ceremony===
+{{Needed|[[Bucket of sap]], [[pile of salt]] or [[bag of salt]], [[Linen (Icthlarin's Little Helper)|linen]], [[willow logs]].}}
+{{Checklist|
+*Talk to the High Priest. {{Chat option|1Sure, no problem.}}
+*Go to the house south of the church and talk to the [[Embalmer]] to give him the linen, salt, and sap.
+**If you don't have a linen, go north-east to the Spinning Wheel and talk to [[Raetul]] to buy linen for 30 coins. (Must need to ask the embalmer where to find linen befor Reatul let you buy linen)
+**If you need a pile of salt, it can be found by using an empty [[bucket]] on the pond north of [[Sophanem]] and then using the full bucket on the [[suntrap]] east of the Embalmer.
+*Go east and talk to the [[Carpenter]]. He will take your willow logs and give you a holy symbol.
+}}

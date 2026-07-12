@@ -459,3 +459,89 @@ one of the six scramblers, not just this one.
 - Read-only against the wiki this pass (directive: "quick pass -- no fetching"); all ranking
   came from contrib.jsonl/steps.jsonl/goals.jsonl/steer_points.jsonl/EXTRAPOLATION.md +
   general OSRS quest-unlock knowledge, not fresh fetches. No wikicli get/search calls made.
+
+## depth:01-orphan-gates-and-easy-diaries retro
+- 15/15 targets contributed at quick-guide grain (6 questdb + 9 diarydb, all Easy tier), zero
+  skips -- pre-pass grep of contrib.jsonl confirmed no existing questdb:/diarydb: rows for any
+  of the 15 slugs.
+- Six orphan quests: Rune Mysteries and Goblin Diplomacy have zero skill/quest/item
+  requirements (confirmed via each quest's own Details template, not assumed); the other four
+  (Eadgar's Ruse, Plague City, Sheep Shearer, Clock Tower) reqs/items/rewards pulled from the
+  MAIN quest page's Details+Rewards sections per the standing [quests] Quick-guide-Details-stub
+  gotcha (Quick guide pages were fetched only for Walkthrough own-words summaries).
+- Nine Easy-tier diaries: discovered the Overview section's {{DiarySkillStats}} tabber gives a
+  clean per-tier skill+quest aggregate, used it as ground truth over hand-parsing the tasks
+  table (logged as this session's gotcha, [depth:01]). Confirmed Rune Mysteries feeds directly
+  into two of these nine (Varrock Easy, Lumbridge & Draynor Easy) via the museum-teleport /
+  essence-mine-teleport tasks, closing the loop the queue payload's note gestured at.
+- Title/url redirects hit 3 of 9 diaries (Kourend & Kebos, Lumbridge & Draynor, Fremennik) --
+  refs[] built from manifest.jsonl's actual recorded title/url per row, not the searched title,
+  after the first contribute attempt would have silently cited a non-canonical url otherwise
+  (caught before contributing, not after a quarantine).
+- No atom-level unwinding performed (out of scope per the grain limit) -- all 15 rows stop at
+  quick-guide-walkthrough + reqs/rewards, matching depth:02/03/04's same schema for a
+  consistent later consolidation pass.
+=== depth:02-questcape-major-unlocks ===
+- Contributed 15/15 questdb:* rows (0 skipped, 0 pre-existing keys found on the upfront grep):
+  animal-magnetism, watchtower, underground-pass, lunar-diplomacy, the-fremennik-trials,
+  kings-ransom, legends-quest, heroes-quest, death-to-the-dorgeshuun, vampyre-slayer,
+  the-giant-dwarf, the-golem, icthlarins-little-helper, enakhras-lament, spirits-of-the-elid.
+  All targets were quests (no diarydb: rows needed for this bundle).
+- Pattern held per target: sections on both <Title> and <Title>/Quick guide, fetch main-page
+  Details + Rewards sections (per [quests] gotcha, Quick guide's Details H2 is always a stub),
+  fetch Quick guide Walkthrough subsections for own-words quick-guide-grain notes (a couple of
+  titles' main-page Walkthrough was equally compact and used directly instead -- see gotchas.log).
+  Grain held to quick-guide walkthrough summary, no atom-level step unwinding, per the brief's
+  hard limit.
+- Confirmed the queue payload's framing: Legends' Quest and Heroes' Quest are indeed deep
+  quest-cape-spine gates (Legends' requires 107 QP + Family Crest + the full Heroes'
+  Quest/Underground Pass/Shilo Village prereq trees; Heroes' Quest itself requires Shield of
+  Arrav + Lost City + Merlin's Crystal + Dragon Slayer I + a second-player partner). Watchtower/
+  Lunar Diplomacy/Fremennik Trials/King's Ransom each unlock broadly-reused infrastructure
+  (Ogre Enclave blue dragons, Lunar spellbook, Fremennik Isles sea access, Chivalry/Piety
+  prayers respectively) matching the brief's stated rationale.
+- 1 feedback line + 1 gotchas.log line filed (both tagged/dated per convention). Bundle key
+  claimed then marked done.
+=== depth:04-miniquest-unlocks-and-support ===
+15/15 targets contributed as questdb:* rows (0 skipped -- none of the 15 slugs collided with the 30 pre-existing questdb:/diarydb: keys). All 15 fetched clean with no title-redirect surprises (grep-verified against manifest.jsonl post-fetch). Grain held to quick-guide-level: reqs/rewards/start/length from each page's own {{Quest details}}/{{Quest rewards}} template plus a short own-words Walkthrough summary in notes; no atom-level step unwinding attempted, per the LIMITS clause.
+Notable: 3 of the 15 targets exposed brief-vs-ground-truth mismatches (Curse of the Empty Lord's Ectofuntus claim, Sea Slug's Fishing Guild claim, In Search of Knowledge's prayer-book claim) -- all corrected in-row and logged to gotchas.log as [depth:04]. Architectural Alliance is dead content (removed 10 Jan 2024) -- contributed anyway per the bundle's explicit ask, flagged clearly in its own notes field. Knight Waves and Rogue Trader are not real Quest-List miniquests -- Knight Waves' reqs/length had to be sourced from the Miniquests page's section-2 literal table (its own page lacks a Quest details template entirely), Rogue Trader's own page self-identifies as non-canonical.
+=== depth:03-medium-diaries-and-elf-chain ===
+15/15 targets contributed (0 skipped -- upfront grep found none of the 15 keys pre-existing;
+depth:01 had already covered western-provinces-easy and wilderness-easy's siblings but not
+those two easy tiers themselves, and only the Easy tier of the 9 core-region diaries, leaving
+Medium wide open). 11 diarydb:* rows (2 easy-tier: western-provinces, wilderness; 9 medium-tier:
+morytania, karamja, desert, kourend-and-kebos, kandarin, fremennik-province, falador, varrock,
+lumbridge-and-draynor) + 4 questdb:* rows (mournings-end-part-i, mournings-end-part-ii,
+roving-elves, regicide -- the elf-storyline precursor cluster).
+Diary pattern per [depth:01]'s established method: fetch region page's Overview section
+(section 1, contains a <tabber> with all 4 tiers' {{DiarySkillStats}} in one shot) + the
+target tier's task-list section + its Rewards section (task-list section's own trailing
+===Rewards=== sub-heading duplicates the standalone Rewards section verbatim -- only one
+fetch needed per tier in practice, kept both refs for citation completeness). Confirmed
+3 of 9 medium-tier region titles hit the same ampersand/dropped-word canonicalization traps
+[depth:01] already logged (Kourend and Kebos -> "Kourend & Kebos Diary", Lumbridge and Draynor
+-> "Lumbridge & Draynor Diary", Fremennik Province -> plain "Fremennik Diary") -- refs[] built
+from the actual manifest-recorded title/url in all three cases.
+Quest pattern per [quests]/[depth:02] gotchas: main-page Details (section 1, real content) +
+main-page Rewards + /Quick guide Walkthrough (own-words condensed, Quick guide's own Details H2
+confirmed still a stub on all 4). reqs.quests flattened the full nested prerequisite chain as
+literally nested in each page's own {{Quest details}} template, per [depth:02]'s established
+convention (e.g. Mourning's End Part II's chain runs 9 quests deep back through Underground
+Pass/Biohazard/Plague City). Mourning's End Part II's Temple of Light puzzle (5 chests + a
+Death Altar puzzle, ~14 numbered mirrors) was deliberately NOT unwound mirror-by-mirror in
+notes -- summarized as one paragraph, consistent with the quick-guide-grain limit; the
+Quick guide page itself has the full mirror sequence if a future atom-level pass needs it.
+One quest-identity trap caught and logged: "Sheep Herder" (real, Kandarin elf-series quest,
+literally cited in both Mourning quests' requirement chains) is a distinct page from "Sheep
+Shearer" (Lumbridge tutorial quest) -- both are valid manifest titles, so this is a
+same-ballpark-name collision rather than a title-redirect, easy to silently "correct" wrong.
+1 feedback line + 2 gotchas.log lines filed (both tagged/dated per convention). Bundle key
+claimed then marked done.
+Canonical trigger for next wave: this bundle's payload already correctly named the two-fetch
+diary pattern (Overview tabber + tier task-list) and the quests' quick-guide-walkthrough grain
+limit -- both held cleanly with zero rework. The one under-specified thing: "elf storyline
+prerequisite cluster" implicitly wanted the FULL nested reqs.quests chain (not just each
+target's direct prereqs), which only became clear by re-applying [depth:02]'s flattening
+convention; a future multi-quest-chain bundle brief should say explicitly "flatten nested
+quest prereqs per {{Quest details}}, not just direct parents" so agents don't have to infer
+it from an unrelated prior bundle's gotcha.

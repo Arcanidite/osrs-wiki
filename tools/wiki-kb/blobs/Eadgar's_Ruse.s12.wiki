@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Eadgar's Ruse
+|image = [[File:Eadgar's Ruse reward scroll.png|centre]]
+|qp = 1
+|rewards = *{{SCP|Herblore|11,000}} [[Herblore]] [[experience]]
+*The ability to grow and steal [[Goutweed]], which can be traded with Sanfew for herbs.
+*1 Burnt Meat
+*The ability to use the [[Trollheim Teleport]] spell.
+*The ability to use a [[Scroll of redirection]] to redirect a [[Teleport to house (tablet)|Teleport to house tablet]] to Trollheim.
+}}

@@ -1,0 +1,202 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|boostable=true
+|selectable=true
+|maxrefs=2
+|Thieving = 21
+|Hunter = 5
+|Total = 56
+}}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Icthlarin's Little Helper]]
+|}
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 37
+|Agility = 30
+|Herblore = 36
+|Ranged = 37
+|Thieving = 37
+|Prayer = 43
+|PrayerNotes = {{boostable|n}}
+|Crafting = 50
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 45
+|Magic = 39
+|Woodcutting = 35
+|Slayer = 22
+|Construction = 20
+|Hunter = 47
+|Total = 497
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|- data-rowid="The Golem"
+|[[The Golem]]
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Icthlarin's Little Helper]]
+|}
+|}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 50
+|Mining = 60
+|MiningNotes = {{boostable|n}}
+|Agility = 70
+|Smithing = 68
+|Defence = 40
+|DefenceNotes = {{boostable|n}}
+|Herblore = 36
+|Ranged = 40
+|RangedNotes = {{boostable|n}}
+|Thieving = 65
+|Prayer = 43
+|PrayerNotes = {{boostable|n}}
+|Crafting = 61
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 60
+|Magic = 68
+|Fletching = 10
+|Woodcutting = 55
+|WoodcuttingNotes = {{boostable|n}}
+|Slayer = 65
+|Construction = 20
+|Hunter = 47
+|Combat = 85
+|Total = 873
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Contact!"
+|[[Contact!]]
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|- data-rowid="The Feud"
+|[[The Feud]]
+|- data-rowid="The Golem"
+|[[The Golem]]
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Defeat the [[Kalphite Queen]]
+|}
+|}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 50
+|Mining = 60
+|MiningNotes = {{boostable|n}}
+|Agility = 70
+|Smithing = 68
+|Defence = 40
+|DefenceNotes = {{boostable|n}}
+|Herblore = 36
+|Ranged = 40
+|RangedNotes = {{boostable|n}}
+|Thieving = 91
+|ThievingNotes = {{boostable|n}}
+|Cooking = 85
+|Prayer = 85
+|PrayerNotes = {{boostable|n}}
+|Crafting = 61
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 60
+|Magic = 94
+|Fletching = 95
+|Woodcutting = 55
+|WoodcuttingNotes = {{boostable|n}}
+|Slayer = 65
+|Construction = 78
+|Hunter = 47
+|Combat = 85
+|Total = 1194
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Contact!"
+|[[Contact!]]
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|- data-rowid="The Feud"
+|[[The Feud]]
+|- data-rowid="The Golem"
+|[[The Golem]]
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Defeat the [[Kalphite Queen]] and obtain her ([[Kq head (tattered)|tattered]]) [[Kq head|head]]
+|-
+|Open the [[Grand Gold Chest]] in the final room of [[Pyramid Plunder]]
+|}
+|}
+
+|-|
+</tabber>

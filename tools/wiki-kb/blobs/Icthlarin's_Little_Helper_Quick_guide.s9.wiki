@@ -1,0 +1,10 @@
+===The fourth flashback===
+{{Checklist|
+*Exit the pyramid.
+*Talk to the High Priest in the temple.
+*'''Congratulations, quest complete!'''
+}}
+
+'''Note:''' If you equip your [[catspeak amulet]] and then talk to your [[cat]] about being confused, you will unlock another cutscene! Talking with your cat again about being confused will tell you the story of the quest as it understands it. If asked again, your cat will refuse to explain it again and instead tells you to ask one of your adventuring buddies and the chat option will go away.
+
+'''Talking to your cat to trigger the cutscene may result in your cat disappearing completely, which will require you to re-log into the game. It may seem like the cat has disappeared completely but it's still with you, just not visible to you.'''

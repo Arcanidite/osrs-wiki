@@ -1,0 +1,122 @@
+{{External|rs=Ali the Trader}}
+{{Has quick guide}}
+[[File:Ali's Discount Wares..png|300px|right|thumb|Ali's Discount Wares in Al Kharid.]]
+[[File:Rogue Trader logo.jpg|left]]
+'''Rogue Trader''' is a series of miniquest-like errands one can undertake after completing [[The Feud]] quest. It was released on [[15 August]] [[2005]]. There are 3 parts to Rogue Trader, each one unlocking additional stock from [[Ali's_Discount_Wares.|Ali Morrisane's store]].
+
+'''Note:''' This is not an official miniquest and as such does not appear in the quest list.
+
+==Details==
+{{Quest details
+|start = Speak to [[Ali Morrisane]] in [[Al Kharid]]
+|difficulty = Easy
+|requirements = Completion of following quests:
+*[[The Feud]]
+*[[Icthlarin's Little Helper]] (started, for access to [[Sophanem]])
+**[[Gertrude's Cat]]
+|items = *3 [[dyes]] of any colour (to unlock [[Menaphite clothing]]) OR 3 animal pelts of the same kind (to unlock the [[Desert outfit]]). This includes [[cowhide]], [[grey wolf fur]], [[snakeskin]], [[bear fur]], or [[wool]] (not [[balls of wool]])
+*100 coins (for blackjack street urchin, optional)
+|recommended = '''Recommended'''
+*~1,000 coins for carpet rides to [[Pollnivneach]] and Sophanem (and back to [[Shantay Pass]])
+*[[Ring of dueling]] to quickly get to [[Al Kharid]]
+*A teleport to [[Varrock]]
+|length = Short (if fully prepared) - Medium
+|leagueRegion = {{LeagueRegion|Desert}} (Cannot be fully completed, as Misthalin is required for the rune shop section)
+}}
+
+==Introduction==
+Before starting any of the sections, you will have to talk to [[Ali Morrisane]] in Al Kharid to discuss each business expansion.
+
+By asking what's in it for you, you will also unlock a discount on his [[magic carpet]] network: 100 coins per trip (down from 200), or 75 coins (down from 100) with the [[ring of charos (a)]]. If you do not do this now, you will still unlock the discount at the end of the miniquest.
+
+==Runes==
+Ali Morrisane will tell you to talk to [[Aubury]] in [[Varrock]] about a rune deal. Go to Aubury and speak to him about Ali's business proposal, then return to Ali.
+
+Ask to see Ali's rune stock, and he will complain that there is an odd lock mechanism on the caskets of runes and that he is unable to open them. There are 2 caskets: Small casket and large casket. For both caskets, players get these three options:
+
+*'''Force Box:''' higher chances of success with higher [[Strength]] levels, provides Strength experience
+*'''Pick Lock:''' higher chances of success with higher [[Thieving]] levels, provides Thieving experience
+*'''Examine Lock:''' players will see a sudoku puzzle with runes substituting the numbers
+
+The small casket contains elemental runes and is easier to open compared to the large casket. Players may choose any of the 3 options on the small casket.
+
+The large casket contains non-elemental runes and can only be opened via the puzzle – choose "Examine Lock". It cannot be successfully opened by forcing or picking the lock; attempting to do so always fails. You can either solve the sudoku puzzle yourself or use a sudoku solver ("runedoku solver"). The main objective is to line up the runes so that no runes are repeated in any row, line, or 3x3 grid.
+[[File:Rogue Trader - Sudoku.png|thumb|The Sudoku screen.]]
+[[File:Rogue Trader - Completed Sudoku.png|thumb|A completed Sudoku screen.]]
+
+Opening the caskets will allow you to purchase runes of the respective type from [[Ali Morrisane|Ali]]. Right after solving the puzzle, you will have the options of either choosing to buy all the runes for a specified discounted price or to see what the runes are first. If you decide to see the runes first, you lose a small portion of your discount (about a 6-10% cost difference). Doing each runedoku puzzle also unlocks [[Ali's Discount Wares.#Runes|Ali's standard rune stock]] for each type, which is slightly more expensive than the cost of the runes in the interface seen after opening the runedoku. You may also continue to do runedoku puzzles for slightly cheaper limited selections of runes.
+
+====Success chances====
+{{DropLogProject|jagex=yes|success=yes}}
+The chance to successfully force the lock of a small casket depends on both your Strength and Agility levels - you need to pass both [[stat_random|skilling success rolls]] to force the lock. Failing to force the lock will also drain your Strength and Agility levels by 0-3 levels (1/4 chance each, the same amount from both). Successfully forcing the lock gives 2.5 Strength and 2.5 Agility experience.
+
+The chance to successfully pick the lock of a small casket depends on your Thieving level and if you are carrying a [[lockpick]] - notably, failing to unlock the casket has a 1/5 chance to break a lockpick; breaking a lockpick gives 0.5 Thieving experience. Failing to pick the lock will also drain your Thieving level by 0–3 levels (1/4 chance each). Successfully picking the lock gives 5 Thieving experience.
+
+{{Skilling success chart|label=Breaking open a small casket
+|label1=Forcing the lock part 1 - Strength|low1=70|high1=170|req1=1|image1=Strength.png
+|label2=Forcing the lock part 2 - Agility|low2=120|high2=255|req2=1|image2=Agility.png
+|label3=Picking the lock|low3=70|high3=170|req3=1|image3=Thieving.png
+|label4=Picking the lock with a lockpick|low4=70|high4=240|req4=1|image4=Lockpick.png
+}}
+
+Large caskets can also be attempted to be picked open with a lockpick, but it always fails and drains levels like with the small casket and has a chance of the lockpick breaking, also granting 0.5 Thieving experience.
+
+===Strategy===
+A trick that works with the smaller rune caskets is to position the runes as shown.
+
+:1 2 3 4
+:4 3 2 1
+:3 4 1 2
+:2 1 4 3
+
+The placement of the starting runes varies, but the pattern is always the same. This pattern can always be performed regardless of starting placement.
+
+==Blackjacks==
+Head south to the town of [[Pollnivneach]] and talk to the [[Blackjack seller]] who is outside, just south of [[Ali the Kebab seller]]. Go through the conversation with him, and choose either 'cunning plan' option for defensive blackjacks or ask him to knock you out for offensive blackjacks.
+
+If choosing the cunning plan, talk to the urchin and pay him 100 coins to make him help you convince the Blackjack salesman that he needs to produce some different equipment. There will be a short cutscene. After that cutscene ends, talk to the Blackjack seller again.
+
+If choosing to get knocked out, you will have to successfully take two hits from the blackjack seller without getting knocked out. Simply go through the dialogue. If you get knocked out, you will take 3 damage and have to go through the dialogue again.
+
+Once you return to Al-Kharid, Ali Morrisane will now stock [[Ali's Discount Wares.#Blackjacks|offensive or defensive blackjacks]]. He will also ask that you return to Pollnivneach and ask the Blackjack seller to expand his wares further. This is optional and will switch Ali Morrisane's inventory between offensive and defensive blackjacks.
+
+====Success chance====
+{{DropLogProject|jagex=yes|success=yes}}
+
+The chance to successfully take the hit of the offensive blackjack depends on your Defence level.
+
+{{Skilling success chart|label=Taking a blackjack hit
+|label1=Taking a hit|low1=100|high1=255|req1=1|image1=Defence.png
+|label2=Taking 2 hits|low2=100|high2=255|req2=1|exponent2=2|image2=Maple blackjack.png
+}}
+
+==Clothes==
+This section requires the player to have started [[Icthlarin's Little Helper]] for access to Sophanem. Completing the quest will also unlock a carpet ride there from south Pollnivneach.
+
+Talk to [[Siamun]] in the building east of the silk stall with the spinning wheel in [[Sophanem]].
+
+Siamun is a rude, gruff character who wants either three dyes or three hides '''of the same animal'''. Siamun will accept [[cow hide|cowhide]], [[grey wolf fur]], [[snakeskin]] (not un-tanned [[snake hide]]), [[bear fur]], or [[wool]] (not [[balls of wool]]). He will not accept bank notes. Giving him dyes will cause Morrisane to stock [[Menaphite clothing]] and giving the hides will stock [[Desert outfit]]. Both sets are cosmetic variants of [[Desert clothing]] with identical stats.
+
+Once you have given Siamun the items, he will begin shipping clothing, unlocking the [[Ali's Discount Wares.#Clothing|clothing section of Ali's store]].
+
+If you talk to [[Ali Morrisane]] back in Al-Kharid, he will ask that you return to [[Sophanem]] and ask [[Siamun]] to make additional clothing. This is optional and will switch Morrisane's inventory between the two outfits.
+
+==Completion!==
+After completing all three tasks (rune boxes, blackjacks, and clothes), you will have unlocked full access to [[Ali's Discount Wares.]]
+
+If you did not get the magic carpet network discount earlier, Ali will also give it to you now as a token of his gratitude.
+
+==Post-errand task==
+After helping [[Ali Morrisane]] with runes, blackjacks and clothing, and completing [[Prince Ali Rescue]], you may engage in optional, additional dialogue with any shop owner within [[Al Kharid]], asking about their opinion of Ali. They will all claim that he is a shifty man, and that he's brought four men from the south to set up business, and has sent them to all the shop owners around Al Kharid to threaten them if they do not work for Ali Morrisane.
+
+These four men are [[Ali the Farmer]], [[Ali the Guard]], [[Ali the Smith]] and [[Ali the Tailor]], who appear south of Ali Morrisane's stall immediately after you complete his three errands. Speak to any of them, saying that you have heard that they work for Ali Morrisane. They will say that he has assisted them in setting up shop in exchange for a cut of their profits.
+
+Speak to Ali Morrisane. Tell him that you have heard of his plans of expanding business, and that his men are threatening the other shopkeepers. He will respond by expressing his regret over the situation, explaining that his men are simply overenthusiastic. He then reveals that his ultimate goal is to take control of all the shops in Al Kharid to put an end to these issues.
+
+==Transcript==
+{{Hastranscript|miniquest}}
+
+{{Miniquests}}
+{{Pollnivneach}}
+[[Category:Members]]
+[[Category:Needs skilling success chart]]

@@ -1,0 +1,13 @@
+=== Confronting Iban ===
+{{Checklist|*Head south from where you obtain Iban's dove until you reach the [[Bridge (Iban's Lair) | broken bridge]] you used to get over, from there head east and then south to the Disciples of Iban.
+*Kill a [[disciple of Iban]] in the middle of the maze and pick up his robes.
+*Equip the robes. (Following updates prior to the release of the [[Song of the Elves]] quest, you only need to equip the robes to enter the doors)
+**'''Do not''' drop anything that you are not willing to lose as using the doll on the well will teleport you to the entrance of the tunnels.
+*Enter Iban's temple, (Following updates prior to the release of the [[Song of the Elves]] quest Iban now has a chat dialogue) use this time to click one tile north of the well so that you can avoid any potential damage, '''right click''' use on the doll on the well, do not click investigate. 
+**'''{{Colour|red|Warning}}:''' Iban can deal a lot of damage quickly so be prepared.
+**Iban's spikes deal around 8 damage each and ''cannot'' be blocked with prayers. Running directly to the well should be fairly easy with one or two food items. 
+**Use the [[Doll of Iban]] on the well in the centre of the room. You may have to do this a few times, as his attacks may interrupt you. When you do manage to get the doll into the well, Iban will be destroyed and the temple will begin to collapse. 
+*Speak to Koftik to be transported back through the pass.
+*Head back to Ardougne Castle and speak with [[King Lathas]].
+*'''Congratulations, quest complete!'''
+}}

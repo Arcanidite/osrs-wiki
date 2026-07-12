@@ -1,0 +1,19 @@
+==Details==
+{{Quest details
+|description = Marlo's father requires someone to refurnish his disastrous house.
+|start = Speak to [[Marlo]] in the Estate Agent's house in north-east Varrock.
+|startmap = 3240,3474
+|difficulty = Novice
+|length = Short
+|members = Yes
+|requirements = None
+|items = *10 [[plank]]s – (oak/teak/mahogany will '''not''' work)
+*5 [[bolts of cloth]] (can be bought from the [[Sawmill]] for 650 coins per bolt)
+*At least 16 [[nails]] of any type, e.g. [[steel nails]] (more are recommended as nails bend when building furniture. 100 is recommended at 1 [[Construction]], obtainable from the [[Sawmill]] during the quest)
+*[[Hammer]] (Obtainable during the quest from Yarlo)
+*[[Saw]] (Obtainable during the quest)
+|recommended = *Fast travel to several locations
+**[[Varrock]] to start the quest - [[Varrock Teleport]] or [[Ring of wealth]] to [[Grand Exchange]] or [[Skills necklace]] to [[Cooks' Guild]] or [[Chronicle]]
+**[[Lumberyard]] east of [[Varrock]] (1 trip) - [[Lumberyard Teleport]] or [[Ring of the elements]] to [[Earth Altar]]
+|leagueRegion = Not completable, as it requires access to Misthalin.
+}}

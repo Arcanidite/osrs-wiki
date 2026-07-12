@@ -1,0 +1,15 @@
+====Bottom floor====
+[[File:Enakhras temple bottom floor.png|frame]]
+{{Needed|A [[chisel]], 8 Inventory slots.}}
+{{Checklist|
+*Talk to Lazim.
+**If you climb up the ladder and up the sand pile next to the statue now, you'll be able to exit and enter the temple from any outer room on the bottom floor later.
+*Use your chisel on the fallen statue four times to get all its limbs.
+* Talk to Lazim again to retrieve the statue head.
+*Take-sigil from the pedestal south of Lazim to get the M sigil.
+**Skip this step and come back after the next if you have no inventory space.
+*Go around all the rooms through the outer hallways and pick up the R, K and Z sigils. The matching limbs are automatically used and consumed to open the doors.
+*Go to the centre room after collecting all four sigils
+*Try to open the doors to place the sigils. Make sure to complete each dialogue.
+*Climb the ladder.
+}}

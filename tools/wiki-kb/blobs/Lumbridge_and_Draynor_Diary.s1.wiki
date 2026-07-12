@@ -1,0 +1,215 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 15
+|Fishing = 15
+|Firemaking = 15
+|Woodcutting = 15
+|Runecraft = 5
+|Slayer = 7
+|Total = 98
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Cook's Assistant"
+|[[Cook's Assistant]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|}
+| style="vertical-align: top" |
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Strength = 19
+|Mining = 15
+|Agility = 20
+|Smithing = 1
+|SmithingNotes = <ref name="IronMed">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 31 [[Prayer]] for [[Animal Magnetism]], and either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Fishing = 30
+|Ranged = 50
+|RangedNotes = {{boostable|n}}
+|Thieving = 38
+|Prayer = 1
+|PrayerNotes = <ref name="IronMed"/>
+|Crafting = 38
+|Firemaking = 15
+|Magic = 31
+|Fletching = 1
+|FletchingNotes = <ref name="IronMed"/>
+|Woodcutting = 36
+|Runecraft = 23
+|Slayer = 18
+|Hunter = 42
+|Combat = 70
+|Total = 394
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|- data-rowid="Cook's Assistant"
+|[[Cook's Assistant]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 50
+|Strength = 19
+|Agility = 46
+|Smithing = 40
+|SmithingNotes = <ref name="IronHard">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Herblore = 25
+|Fishing = 53
+|Ranged = 50
+|RangedNotes = {{boostable|n}}
+|Thieving = 53
+|Cooking = 70
+|Prayer = 52
+|PrayerNotes = {{boostable|n}}
+|Crafting = 70
+|Firemaking = 65
+|Magic = 60
+|Fletching = 10
+|FletchingNotes = <ref name="IronHard"/>
+|Woodcutting = 57
+|Runecraft = 59
+|Slayer = 18
+|Farming = 63
+|Hunter = 42
+|Combat = 70
+|Quest = 175
+|Total = 915
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|- data-rowid="Another Slice of H.A.M."
+|[[Another Slice of H.A.M.]]
+|- data-rowid="Recipe for Disaster"
+|[[Recipe for Disaster]] fully completed
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|- data-rowid="Tears of Guthix"
+|[[Tears of Guthix]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to the [[Bones to Peaches]] spell from the [[Mage Training Arena]]
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 50
+|AttackNotes = <ref name="WarriorsGuild">You'll need 130 combined levels in [[Attack]] and [[Strength]], or level 99 in either, to access the [[Warriors' Guild]] during [[While Guthix Sleeps]].</ref>
+|Hitpoints = 50
+|HitpointsNotes = {{boostable|n}}
+|Mining = 72
+|Strength = 70
+|StrengthNotes = <ref name="WarriorsGuild"/>
+|Agility = 70
+|AgilityNotes = {{boostable|n}}
+|Smithing = 88
+|Defence = 65
+|DefenceNotes = {{boostable|n}}
+|Herblore = 70
+|HerbloreNotes = {{boostable|n}}
+|Fishing = 62
+|Ranged = 70
+|Thieving = 78
+|Cooking = 70
+|Prayer = 52
+|PrayerNotes = {{boostable|n}}
+|Crafting = 70
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 75
+|FiremakingNotes = {{boostable|n}}
+|Magic = 75
+|MagicNotes = {{boostable|n}}
+|Fletching = 60
+|FletchingNotes = {{boostable|n}}
+|Woodcutting = 75
+|Runecraft = 76
+|RunecraftNotes = <ref name="RunecraftElite">The minimum required [[Runecraft]] level for the Elite diary tier is 60, but you'll need level 76 (boostable) if you have less than three [[Raiments of the Eye]] pieces.</ref>
+|Slayer = 69
+|SlayerNotes = {{boostable|n}}
+|Farming = 70
+|FarmingNotes = {{boostable|n}}
+|Construction = 70
+|ConstructionNotes = {{boostable|n}}
+|Hunter = 70
+|HunterNotes = {{boostable|n}}
+|Sailing = 52
+|SailingNotes = {{boostable|n}}
+|Combat = 85
+|Quest = {{Globals|quest points}}
+|Total = 1571
+|TotalNotes = <ref name="AllQuests">These skill requirements include the [[Quests#Skill_requirements|required levels]] to complete all quests. [[Ironman Mode|Ironmen]] may need even higher levels due to item requirements in certain quests.</ref>
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|-
+|[[Quests/List|All quests]] <ref name="AllQuests"/>
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to the [[Bones to Peaches]] spell from the [[Mage Training Arena]]
+|}
+|}
+{{Reflist}}
+
+|-|
+</tabber>

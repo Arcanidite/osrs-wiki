@@ -1,0 +1,9 @@
+===Seers' Village===
+{{Checklist|
+*Teleport to [[Camelot]] or walk to [[Seers' Village]].
+*If you are making the lyre yourself:
+**Spin the golden fleece into a ball of [[golden wool]] while in Seers' Village (upstairs in a house south-west of the bank).
+**Use the golden wool on your unstrung lyre.
+*Go to the Seers' Village pub and talk to the [[Poison Salesman]] to buy a [[low alcohol keg]] for 250 coins. {{Chat option|2Talk about the Fremennik Trials|1Yes}}
+*Buy a regular beer if you forgot to take a beer tankard. {{Chat option|2Beer please.}}
+}}

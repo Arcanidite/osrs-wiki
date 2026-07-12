@@ -1,0 +1,8 @@
+====The race====
+{{Checklist|
+*Step on the [[platform (Lunar Diplomacy)#Expert|eastern grey platform]].
+*Talk to [[Ethereal Expert]] and start the race. {{Chat option|1Ok.}}
+*Turn on run, and keep it on while jumping the hurdles.
+*Jump over the Hurdles. If you fail 3 times you will lose the race.
+*After you have won talk to the Ethereal Being.
+}}

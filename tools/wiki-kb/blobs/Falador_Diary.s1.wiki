@@ -1,0 +1,229 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 10
+|Agility = 5
+|Smithing = 13
+|Construction = 16
+|Total = 72
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|- data-rowid="The Knight's Sword"
+|[[The Knight's Sword]]
+|}
+| style="vertical-align: top" |
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 40
+|Strength = 37
+|Agility = 42
+|Smithing = 13 
+|SmithingNotes = <ref name="IronMed">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 47 [[Farming]] or the ability to kill [[gryphon]]s for a [[watermelon]], and either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Defence = 20
+|Ranged = 19
+|Thieving = 40
+|Cooking = 20
+|Prayer = 10
+|Crafting = 40
+|Firemaking = 49
+|Magic = 37
+|Fletching = 1
+|FletchingNotes = <ref name="IronMed"/>
+|Woodcutting = 30
+|Slayer = 32
+|Farming = 23
+|FarmingNotes = <ref name="IronMed"/>
+|Construction = 16
+|Quest = 12
+|Total = 484
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|- data-rowid="The Knight's Sword"
+|[[The Knight's Sword]]
+|- data-rowid="Recruitment Drive"
+|[[Recruitment Drive]]
+|- data-rowid="Skippy and the Mogres"
+|[[Skippy and the Mogres]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Partial completion of [[Ratcatchers]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 1
+|AttackNotes = <ref name="WarriorsGuild">You'll need 130 combined levels in [[Attack]] and [[Strength]], or level 99 in either, to access the [[Warriors' Guild]].</ref>
+|Mining = 60
+|Strength = 37
+|StrengthNotes = <ref name="WarriorsGuild"/>
+|Agility = 59
+|Smithing = 13 
+|SmithingNotes = <ref name="IronHard">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 47 [[Farming]] or the ability to kill [[gryphon]]s for a [[watermelon]], and either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Defence = 50
+|Ranged = 19
+|Herblore = 52
+|Fishing = 53
+|Thieving = 58
+|Cooking = 53
+|Prayer = 70
+|PrayerNotes =  {{Boostable|n}}
+|Crafting = 40
+|Firemaking = 49
+|Magic = 37
+|Fletching = 1
+|FletchingNotes = <ref name="IronHard"/>
+|Woodcutting = 71
+|Runecraft = 56
+|RunecraftNotes = <ref name="RunecraftHard">The minimally required [[Runecraft]] level is 42 with 3+ [[Raiments of the Eye]] pieces, or 56 with less.</ref>
+|Slayer = 72
+|Farming = 45
+|FarmingNotes = <ref name="IronHard"/>
+|Construction = 16
+|Quest = 55
+|Total = 971
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|- data-rowid="The Knight's Sword"
+|[[The Knight's Sword]]
+|- data-rowid="Skippy and the Mogres"
+|[[Skippy and the Mogres]]
+|- data-rowid="The Slug Menace"
+|[[The Slug Menace]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to the [[Warriors' Guild]] <ref name="WarriorsGuild"/>
+|-
+|Partial completion of [[Ratcatchers]]
+|-
+|Defeat the [[Giant Mole]]
+|-
+|Acquire a [[prospector helmet]] from the [[Motherlode Mine]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 1
+|AttackNotes = <ref name="WarriorsGuild">You'll need 130 combined levels in [[Attack]] and [[Strength]], or level 99 in either, to access the [[Warriors' Guild]].</ref>
+|Mining = 60
+|Strength = 37
+|StrengthNotes = <ref name="WarriorsGuild"/>
+|Agility = 80
+|Smithing = 13 
+|SmithingNotes = <ref name="IronElite">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Defence = 50
+|Ranged = 19
+|Herblore = 81
+|Fishing = 53
+|Thieving = 58
+|Cooking = 53
+|Prayer = 70 
+|PrayerNotes = {{Boostable|n}}
+|Crafting = 40
+|Firemaking = 49
+|Magic = 37
+|Fletching = 1
+|FletchingNotes = <ref name="IronElite"/>
+|Woodcutting = 75
+|Runecraft = 88
+|RunecraftNotes = <ref name="RunecraftElite">The minimally required [[Runecraft]] level is 55 with a full set of [[Raiments of the Eye]], 66 with 3 pieces, 77 with 2 pieces, and 88 with less.</ref>
+|Slayer = 72
+|Farming = 91
+|Construction = 16
+|Quest = 55
+|Total = 1080
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|- data-rowid="The Knight's Sword"
+|[[The Knight's Sword]]
+|- data-rowid="Skippy and the Mogres"
+|[[Skippy and the Mogres]]
+|- data-rowid="The Slug Menace"
+|[[The Slug Menace]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to the [[Warriors' Guild]] <ref name="WarriorsGuild"/>
+|-
+|Partial completion of [[Ratcatchers]]
+|-
+|Defeat the [[Giant Mole]]
+|-
+|Reach the rank of [[White Knights#Knight rankings|White Knight Master]]
+|-
+|Acquire a [[prospector helmet]] from the [[Motherlode Mine]]
+|-
+|Completion of all [[quest]]s, discovery of all [[Music|music tracks]], or [[Skill mastery|level 99]] in any skill
+|}
+|}
+{{Reflist}}
+
+|-|
+</tabber>

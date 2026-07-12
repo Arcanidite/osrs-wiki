@@ -1,0 +1,64 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Morytania" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Craft any [[Snelm]] from scratch in [[Morytania]].
+''Note: Must be done outside of [[Mort Myre Swamp]].
+|
+*{{SCP|Crafting|15|link=y}}
+*[[Chisel]] 
+*Any [[blamish shell]]
+|-
+|2. Cook a [[thin Snail]] on the [[Port Phasmatys]] [[range]].
+|
+*{{SCP|Cooking|12|link=y}}
+*[[Thin snail]]
+*2 [[Ecto-tokens]] or quest completion of [[Ghosts Ahoy]] to walk into [[Port Phasmatys]], or enough [[coins]] for a [[charter ship]].
+|-
+|3. Get a [[slayer task]] from the [[Mazchna|Slayer Master]] in [[Canifis]].
+|
+*{{SCP|Combat|20|link=y}}
+|-
+|4. Kill a [[Banshee]] in the [[Slayer Tower]].
+|
+*{{SCP|Slayer|15|link=y}}
+*[[Earmuffs]] or [[Slayer helmet]] recommended
+|-
+|5. Have [[Sbott]] in [[Canifis]] tan something for you.
+|
+*Any tannable [[hide]] and 2-45 [[coins]] depending on the type of hide
+|-
+|6. Enter [[Mort Myre Swamp]].
+|{{NA|None}}
+|-
+|7. Kill a [[Ghoul]].
+|
+*[[Weaponry]]
+|-
+|8. Place a [[Scarecrow]] in the Morytania [[Flower patch#Flower patches|flower patch]].
+|
+*{{SCP|Farming|23|link=yes}} ([[Ironman mode|Ironman accounts]] require {{SCP|Farming|47|link=yes}} or the ability to kill [[gryphon]]s)
+*[[Bronze spear]], [[watermelon]], and a [[hay sack]]
+|-
+|9. Offer some [[bonemeal]] at the [[Ectofuntus]].
+|
+*[[Pot]], [[bucket]], and any [[bones]]
+|-
+|10. Kill a [[werewolf]] in its human form using the [[Wolfbane|Wolfbane Dagger]]{{sic}}.
+|
+*[[Wolfbane]]
+|-
+|11. Restore your [[prayer points]] at the [[Nature Grotto|nature altar]].
+''Note: Requires you to have less than full [[Prayer points]]. If able, activate [[Piety]] while praying here to complete a [[#Hard|hard task]].''
+|
+*{{SCP|Quest}} Completion of [[Nature Spirit]]
+*[[Dramen staff|Dramen]] or [[Lunar staff]] recommended to travel to [[Fairy ring]] code {{Fairycode|bip}}
+|}
+
+===Rewards===
+*[[Morytania legs 1]]:
+**Two daily teleports to the [[Pool of Slime]] beneath the [[Ectofuntus]]
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill of at least level 30
+*[[Ghast]]s in the [[Mort Myre Swamp]] will ignore you half of the time
+*2.5% more [[Slayer]] experience in the [[Slayer Tower]] while on a [[Slayer task]]

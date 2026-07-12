@@ -1,0 +1,9 @@
+===The golem===
+{{Checklist|
+*Go back upstairs and talk to the golem.
+*With an [[vial|empty vial]] in your inventory, grind the black mushroom using a [[Pestle and mortar]].
+*Use the [[phoenix feather]] on the [[black dye]] to make a [[phoenix quill pen]].
+*Talk to the golem
+*Use the [[phoenix quill pen]] on a piece of [[papyrus]] to get the [[golem program]].
+*Use the strange implement on the golem then quickly use the newly acquired golem program on the golem.
+*'''Congratulations, quest complete!'''}}

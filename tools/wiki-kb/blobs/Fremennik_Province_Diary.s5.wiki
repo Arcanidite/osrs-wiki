@@ -1,0 +1,6 @@
+===Rewards===
+*[[Fremennik sea boots 2]]:
+**Three daily teleports to the [[Rellekka]] marketplace
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*10% increased chance of gaining approval in [[Managing Miscellania]] when fishing or woodcutting (other activities always give approval){{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1295656001136480256|date=18 August 2020|archiveurl=https://reldo.runescape.wiki/i/102109|archivedate=18 November 2022|quote=For Fishing & Woodcutting, approval tends to be given as a random chance of an increase; the 10% or 15% buff may not make much visible difference. And for the other skills, approval had a 100% chance of being given, so the buff is immaterial.|name=miscapprove}}
+*[[Fossegrimen]] will [[enchanted lyre(i)|imbue your lyre]] with infinite charges for 600 of each required fish, down from 800

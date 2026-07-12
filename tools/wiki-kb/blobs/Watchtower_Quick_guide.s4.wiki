@@ -1,0 +1,21 @@
+===Getting the relic pieces and the first crystal===
+{{Needed|2 [[rope]]s, [[dragon bones]], combat equipment to defeat a level 68 enemy and 3 empty inventory space. (Ironmen: [[dragon bones]] can be obtained by defeating [[Elvarg]] in the [[Nightmare Zone]] after [[Dragon Slayer I]].)}}{{Checklist|
+*Talk to [[Og]] north-west of Yanille to receive [[Toban's key]]. {{Chat option|1I seek entrance to the city of ogres.}}
+**[[Fairy ring]] {{fairycode|CIQ}} and head west. 
+**If you use a [[ring of dueling]], teleport to [[Castle Wars]] and head south past the bridges and then north-east until you find a tribe of ogres.
+*Head south and get onto the island by using a rope with the branch (not the tree) of the long-branched tree that is west of the island.
+*Talk to [[Grew]]. {{Chat option|1Don't eat me; I can help you.}}
+*Enter the hole south of [[Gu'Tanoth]] (the "Tunnel to Toban" on map above, dungeon icon south of [[Jiggig]], and north-west of some ruins).
+**To get there, use a [[Feldip Hills teleport]] and run north, use fairy ring {{fairycode|AKS}} or use a ring of dueling teleport to Castle Wars and run south past [[Jiggig]].
+**Pick up the [[death rune]] south of the hole if needed.
+*Kill [[Gorad]] and take his tooth (be sure to have room in your inventory or you won't receive the tooth).
+*Talk to [[Toban]]. {{Chat option|1I seek entrance to the city of ogres.|1I could do something for you...}}
+*Talk to Toban again with [[dragon bones]] in your inventory to receive [[Relic part 3]].
+*Search the chest and take [[Toban's gold|Toban's stolen gold]].
+**Take the rope if you need a second one.
+*Talk to Grew back on the Jangerberry island.
+**Take some [[Jangerberry|jangerberries]] if needed.
+*Go back and talk to Og.
+*Talk to the Watchtower Wizard, who will put the three relics together and give you an [[ogre relic]].
+**Take the lit candle if a light source is needed.
+}}

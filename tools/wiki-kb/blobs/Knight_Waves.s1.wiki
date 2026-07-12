@@ -1,0 +1,73 @@
+==The Knight Waves==
+{| class="wikitable align-center-1"
+!Wave
+! colspan="2" |Knight
+! align="center" |Level
+! align="center" |Hitpoints
+!Weak against
+!Stat(s) lowered
+|-
+| style="font-size:18px;" |1
+|[[File:Sir Bedivere.png|100x100px|link=Sir Bedivere]]
+|[[Sir Bedivere]]
+|110
+|90
+|[[Slash]], [[Stab weapons|Stab]] attacks
+|[[Strength]]
+|-
+| style="font-size:18px;" |2
+|[[File:Sir Pelleas.png|100x100px|link=Sir Pelleas]]
+|[[Sir Pelleas]]
+|112
+|99
+|[[Slash]], [[Crush weapons|Crush]] attacks
+|[[Defence]]
+|-
+| style="font-size:18px;" |3
+|[[File:Sir Tristram.png|100x100px|link=Sir Tristram]]
+|[[Sir Tristram]]
+|115
+|105
+|[[Slash weapons|Slash]], [[Stab]] attacks
+|[[Strength]]
+|-
+| style="font-size:18px;" |4
+|[[File:Sir Palomedes.png|100x100px|link=Sir Palomedes]]
+|[[Sir Palomedes]]
+|118
+|100
+|[[Crush]] attacks
+|[[Attack]]
+|-
+| style="font-size:18px;" |5
+|[[File:Sir Lucan.png|100x100px|link=Sir Lucan]]
+|[[Sir Lucan]]
+|120
+|105
+|[[Crush]], [[Slash weapons|Slash]] attacks
+|[[Defence]], [[Attack]]
+|-
+| style="font-size:18px;" |6
+|[[File:Sir Gawain.png|100x100px|link=Sir Gawain]]
+|[[Sir Gawain]]
+|122
+|110
+|[[Stab weapons|Stab]], [[Slash weapons|Slash]] attacks
+|[[Attack]]
+|-
+| style="font-size:18px;" |7
+|[[File:Sir Kay.png|100x100px|link=Sir Kay]]
+|[[Sir Kay]]
+|124
+|110
+|[[Stab]], [[Crush weapons|Crush]] attacks
+|[[Defence]]
+|-
+| style="font-size:18px;" |8
+|[[File:Sir Lancelot.png|100x100px|link=Sir Lancelot]]
+|[[Sir Lancelot]]
+|127
+|115
+|[[Slash]] attacks
+|[[Defence]], [[Strength]]
+|}

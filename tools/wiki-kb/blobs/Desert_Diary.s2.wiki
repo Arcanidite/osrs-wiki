@@ -1,0 +1,69 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Desert" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Catch a [[Golden Warbler]].
+|
+*{{SCP|Hunter|5|link=y}}
+*[[Bird snare]]
+*[[Necklace of passage]] recommended for quick access to Eagle's Eyrie, near the [[Uzer Hunter area]]
+|-
+|2. Mine 5 [[clay]] in the [[Uzer mine|north-eastern desert]].
+|
+*Any [[pickaxe]]
+*[[Necklace of passage]] recommended for quick access to Eagle's Eyrie, near the [[Uzer mine]]
+|-
+|3. Enter the [[Kalphite Lair|Kalphite Hive]].
+|
+*[[Rope]]
+|-
+|4. Enter the [[Desert]] with a set of [[Desert clothing|Desert robes]] equipped.
+''Note: Not to be confused with the [[desert outfit]], which doesn't count for this task. You also cannot use the [[black desert shirt]] or [[black desert robe]].
+|
+*[[Desert shirt]], [[desert robe]], and [[desert boots]]
+|-
+|5. Kill a [[Vulture]]
+''Note: These are found north of [[Menaphos]] or [[Sophanem]].''
+|
+*[[Weaponry]], preferably [[Ranged]] or [[Magic]]
+|-
+|6. Have the [[Zahur|Nardah Herbalist]] clean a [[Herb]] for you.
+''Note: You have to talk to Zahur to complete this task. Do not use the grimy herb on her to clean it.''
+|
+*Any [[grimy herb]] and 200 [[coins]]
+|-
+|7. Collect 5 [[Potato Cactus]]{{sic}} from the [[Kalphite Lair|Kalphite Hive]].
+''Note: You can bring a single [[potato cactus]] to the lair, then drop and pick it up five times.''
+|
+*[[Rope]]
+*[[Antipoison]] and [[food]] recommended if not bringing your own [[potato cactus]]
+|-
+|8. Sell some artefacts to [[Simon Templeton]].
+''Note: The [[pyramid top]] from the nearby [[Agility Pyramid]] does not count.''
+|
+* Players must have started [[Icthlarin's Little Helper]] for access to [[Sophanem]].
+
+*Any [[Pyramid_Plunder#Rewards|artefact]] from [[Pyramid Plunder]].
+|-
+|9. Open the [[Sarcophagus_(Pyramid_Plunder)|Sarcophagus]] in the first room of [[Pyramid Plunder]]
+|
+*{{SCP|Quest}} Started [[Icthlarin's Little Helper]]
+*{{SCP|Thieving|21|link=y}}
+|-
+|10. Cut a [[Kharidian cactus|desert cactus]] open to fill a [[waterskin]].
+|
+*[[Knife]] or a slash weapon, and an empty [[waterskin]]
+|-
+|11. Travel from the [[Shantay Pass]] to [[Pollnivneach]] by [[Magic Carpet]].
+|
+*200 [[coins]] and a [[Shantay pass (item)|Shantay Pass]] or another 5 coins.
+|}
+
+===Rewards===
+*[[Desert amulet 1]]:
+**No benefits aside from cosmetic purposes
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill of at least level 30
+*[[Pharaoh's sceptre]] will now hold up to 10 [[Pharaoh's sceptre#Recharging|charges]], up from 3
+*[[Desert goat horn]]s from [[goat]]s are now [[Bank note|noted]]
+*[[Simon Templeton]] now also buys artefacts in [[Bank note|noted]] form

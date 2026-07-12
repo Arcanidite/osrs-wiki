@@ -1,0 +1,31 @@
+==Details==
+{{Quest details
+|start = Talk to [[Juna]], deep inside the [[Lumbridge Swamp Caves]].
+|startmap = 3252,9516,plane:2
+|difficulty = Intermediate
+|description = Deep in the caves in the [[Lumbridge Swamp]] is an enchanted place where the tears shed by [[Guthix]] when it saw the destruction [[Saradomin]] and [[Zamorak]] had caused with their wars flow from the very walls. These tears are said to have magical properties to help players gain deeper understanding of the world. However, the cave is guarded by a loyal serpent named [[Juna]] who blocks passage from everyone. However, she has grown bored from three thousand years of sitting in the dark cave and wishes to hear stories of life above. Maybe you could come to some sort of arrangement...?
+|length = Very Short
+|requirements = * {{SCP|Quest|43|link=yes}} {{Questreqstart|yes}}
+* {{SCP|Firemaking|49|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Crafting|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} <ref>Adding the sapphire lens to a [[Bullseye lantern (unf)]] is boostable. Adding it to a [[Bullseye lantern (empty)]] or [[Bullseye lantern]] is not boostable.</ref>
+* {{SCP|Mining|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = * Lit [[sapphire lantern]] or the materials to make one
+** [[Bullseye lantern]] or [[bullseye lantern (unf)]] (filled with [[lamp oil]] at the [[chemist]] in [[Rimmington]] or the [[lamp still]] in [[Dorgesh-Kaan]])
+** Cut [[sapphire]]
+** [[Tinderbox]]
+* [[Chisel]]
+* [[Pickaxe]]
+* [[Rope]] (if you have not yet entered the [[Lumbridge Swamp Caves]])
+|recommended = * [[Spiny helmet]]/[[Slayer helmet]] to prevent damage from [[wall beast]]s, if you have not progressed far enough through [[The Lost Tribe]] to access the caves from the [[Lumbridge Castle]] cellar.
+|ironman = *A [[bullseye lantern]] (to create the required [[sapphire lantern]]), obtainable through one of the following:
+**Purchase from [[Miltog]] for 600 gp (after {{SCP|Quest}} [[Death to the Dorgeshuun]])
+**{{SCP|Smithing|49|link=yes}} {{Boostable|yes}} to create a [[bullseye lantern (unf)]]
+**{{SCP|Crafting|35|link=yes}} To complete {{SCP|Quest}} [[Haunted Mine]] to kill [[Skeleton_(Tarn's_Lair)#Low_level|Skeleton]] in [[Tarn's Lair]] 
+**{{SCP|Thieving|36|link=yes}} {{Boostable|yes}} for pickpocketing [[Cave goblin (Dorgesh-Kaan)|cave goblins]] (after {{SCP|Quest}} [[Death to the Dorgeshuun]]) for a bullseye lantern.
+**{{SCP|Slayer|35|link=yes}} {{Boostable|yes}} to kill [[wall beast]]s for a [[bullseye lantern (unf)]]
+**Item spawn in Darkmeyer (after {{SCP|Quest}} [[Sins of the Father]])
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}
+<references/>

@@ -1,0 +1,67 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Kourend & Kebos" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Mine some [[Iron ore|Iron]] at the [[Mount Karuulm mine]].
+|
+*{{SCP|Mining|15|link=y}}
+*Any [[pickaxe]]
+|-
+|2. Kill a [[Sand Crab|Sandcrab]]{{sic}}.
+|{{NA|None}}
+|-
+|3. Hand in a book at the [[Arceuus Library]].
+|{{NA|None}}
+|-
+|4. Steal from a [[Fruit Stall|Hosidius Food Stall]].
+|
+*{{SCP|Thieving|25|link=y}}
+|-
+|5. Browse the [[Warrens General Store]].
+|{{NA|None}}
+|-
+|6. Take a boat to [[Land's End]].
+''Note: You have to travel with [[Veos]] or [[Cabin Boy Herbert]] from [[Port Sarim]] or [[Port Piscarilius]].''
+|{{NA|None}}
+|-
+|7. Pray at the [[Altar]] in [[Kourend Castle]]
+''Note: This altar is found on the top floor of the castle.
+|{{NA|None}}
+|-
+|8. Dig up some [[Saltpetre (deposit)|Saltpetre]].
+|
+*[[Spade]]
+|-
+|9. Enter your [[Player-owned house|Player Owned House]] from [[Hosidius]].
+|
+*{{SCP|Construction|25|link=y}} {{Boostable|n}}
+*8,750 [[coins]] for an [[estate agent]] to move your house to [[Hosidius]] (can only be done after you've visited [[Great Kourend]])
+|-
+|10. Do a lap of either tier of the [[Shayzien Agility Course]].
+|{{NA|None}}
+|-
+|11. Create a [[Strength potion]] in the [[The Deeper Lode|Lovakengj Pub]].
+|
+*{{SCP|Quest}} Completion of [[Druidic Ritual]]
+*{{SCP|Herblore|12|link=y}}
+*[[Tarromin potion (unf)]] and [[limpwurt root]]
+|-
+|12. Fish a [[Raw trout|Trout]] from the [[River Molch]].
+''Note: The fishing spot is found south-east of the [[Farming Guild]].
+|
+*{{SCP|Fishing|20|link=y}}
+*[[Fly fishing rod]] and some [[feather]]s (bring enough feathers to account for fishing raw salmon multiple times before you get a raw trout)
+|-
+|}
+
+===Rewards===
+*[[Rada's blessing 1]]:
+**Three daily teleports to the [[Kourend Woodland]]
+**2% chance to catch two [[fish]] at once anywhere when equipped, excluding at [[Tempoross]]' [[Tempoross Cove|Cove]] (no additional experience granted)
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill of at least level 30
+*Entrance fee for the [[Crabclaw Isle]] lowered to 5,000 [[coins]], down from 10,000 [[coins]]
+*Doubled chance at receiving a [[Xeric's talisman]] from [[Lizardman|lizardmen]], [[lizardman brute]]s, and [[lizardman shaman]]s (1/125, up from 1/250)
+*20% discount on [[Eodan]]'s [[tanner|tanning]] services 
+*Access to the [[range|cooking ranges]] in the [[Hosidius Kitchen]], which have an additive 5% increased success rate over other ranges
+*The [[farming patch]]es in [[Hosidius]], south of the church, will never get [[Disease (Farming)|disease]]d

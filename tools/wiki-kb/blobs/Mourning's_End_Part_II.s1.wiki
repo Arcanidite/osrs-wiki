@@ -1,0 +1,45 @@
+==Details==
+{{Quest details
+|start = Talk to [[Arianwyn]] in [[Lletya]].
+|startmap = 2838,3285
+|difficulty = Master
+|description = This chapter of the quest takes our hero deep under the mountains of Arandar to put a stop to the evil plans of the mourners.
+
+If our hero is to succeed, they must solve one of the most complicated puzzles in all of Gielinor.
+|length = Long
+|requirements = *Completion of the following quests:
+**[[Mourning's End Part I]]
+***[[Roving Elves]]
+****[[Regicide]]
+*****[[Underground Pass]]
+******[[Biohazard]]
+*******[[Plague City]]
+****[[Waterfall Quest]]
+***[[Big Chompy Bird Hunting]]
+***[[Sheep Herder]]
+|items = *Full [[mourner gear|mourner clothes]]
+*A [[chisel]] (one can be found in the house south of the Mourner HQ)
+*A [[death talisman]]/[[death tiara|tiara]], [[catalytic talisman]]/[[catalytic tiara|tiara]], [[Runecraft cape]]  or [[Mourning's End Part II#The Death Altar|50 junk items]]
+*[[Rope]]
+|recommended = *{{SCP|Combat|65+|link=yes}}
+*{{SCP|Agility|75+|link=yes}} for lesser chances of failing obstacles (91 to never fail){{CiteTwitter|author=Mod Kieren|url=https://twitter.com/JagexKieren/status/700383893652955140|date=18 February 2016|archiveurl=https://reldo.runescape.wiki/i/96377|archivedate=30 May 2020|quote=Mourning end agility section... Nightmares come flooding back! Here are the odds on succeeding for those interested!}}
+*{{SCP|Prayer|43+|link=yes}} for [[Protect from Melee]] against the [[Shadow (Temple of Light)|shadows]]
+*Teleports to [[West Ardougne]]:
+**[[Minigames teleport]] to [[Rat Pits|Rat Pits (Ardougne)]] available every 20&nbsp;minutes after completion of [[Ratcatchers]] quest
+**[[West Ardougne Teleport]] or its [[West ardougne teleport (tablet)|tablet]]
+**[[Ardougne Teleport]] or its [[Ardougne teleport (tablet)|tablet]]
+*A [[teleport crystal]]
+*Lots of [[food]], [[prayer potion]]s (20 doses at 61 prayer), and [[stamina potion]]s (12+ doses). [[Summer pie]]s provide an excellent source of food, since they boost 5 Agility levels, restore 10% run energy, and give 22 health per pie. Alternatively, stackable [[purple sweets]], which restore 10% run energy and 2 health, may be used. An [[explorer's ring]] can be brought along as well, which can restore 50% run energy, twice a day. (Note: If using protection prayers in the temple, food will only be needed for the agility obstacle in the first and fifth puzzles)
+*High [[Prayer]] bonus armour (e.g. [[Proselyte armour|proselyte]] or [[initiate armour]], a [[god book]], a [[holy symbol]] or [[dragonbone necklace]] or [[bonecrusher necklace]], a [[god blessing]], a [[broodoo shield]]).
+*A [[melee weapon]] that provides a Prayer bonus, such as any mace, [[Godsword]], [[Zamorakian hasta]], [[ancient mace]], [[silver sickle (b)]], [[crozier]], [[dragon mace]], [[Void Knight mace]], the [[Ivandis flail]], [[blisterwood flail]], or [[Wolfbane]]. The [[ancient mace]]'s special attack can be useful as it refills prayer points. The Ivandis and blisterwood flails weigh 0 kg.
+*One [[pure essence]] to craft a [[Death rune]] once in the [[Death Altar]] at the end of the quest (requires {{SCP|Runecraft|65|link=yes}} {{Boostable|yes}}, needed for [[hard Ardougne Diary]]), can be done easier via the [[Abyss]] later but might save time for [[Ultimate Ironman|Ultimate]] or [[Hardcore Ironman|Hardcore Ironmen]]
+|kills = None (but powerful level 73 [[Shadow (Temple of Light)|shadows]] are aggressive to players inside the temple)
+|ironman =
+*A method of reaching the [[Death Altar]] at the end of the quest:
+**Handing in [[Mourning's End Part II#The Death Altar|50 junk items]] during the quest for a [[death talisman]] '''OR'''
+**{{SCP|Slayer|90|link=yes}} to kill [[dark beasts]] for a [[death talisman]] '''OR'''
+**Completion of [[Temple of the Eye]] to be able to participate in [[Guardians of the Rift]], where a [[catalytic talisman]] may be obtained randomly from the [[rewards guardian]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

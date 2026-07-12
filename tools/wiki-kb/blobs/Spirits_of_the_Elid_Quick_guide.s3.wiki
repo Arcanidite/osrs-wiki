@@ -1,0 +1,9 @@
+===Getting started===
+'''Items required:''' ''Tele Grab runes, needle and thread.''
+{{Checklist|
+*Head to [[Nardah]], south of [[fairy ring]] {{fairycode|DLQ}}, and talk to [[Awusah the Mayor]]. {{Chat option|1|2|1}}
+*Head to the house to the north and talk to [[Ghaslor the Elder]]. Make sure to receive [[ballad]]. {{Chat option|1I am trying to find out the cause of this town's curse.|1River spirits, what are they?}}
+*Head to the building north of the fountain and west of Ghaslor's house.
+*Search the north-west cupboard for a [[Torn robe (top)|torn robe top]] and [[Torn robe (bottom)|bottom]]. ''Click here to continue'' when searching or you must search it twice.
+*Use a [[needle]] and [[thread]] on the [[torn robe]]s (make sure you grab both top and bottom) and equip them
+*[[Telegrab]] the [[ancestral key]] on the table in the east side of the building.}}

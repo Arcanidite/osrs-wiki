@@ -1,0 +1,25 @@
+===Training or trade unlocks===
+{| class="wikitable lighttable"
+! Name
+! Requirements
+! Length
+! Unlock
+! How to start
+|-
+| [[Sacred Bone Burner]] restoration
+|
+* Five unnoted [[dragonstone]]s
+* 100 ([[Babydragon bones|baby]])[[dragon bones]], or 200 (baby)dragon bones
+| Medium
+| The [[Sacred Bone Burner]] and a shortcut
+| Talk to [[Olbertus]] in the [[Forthos Dungeon]]
+|-
+|[[Rogue Trader]]
+|
+* [[The Feud]]
+* [[Rune Mysteries]]
+* [[Icthlarin's Little Helper]]
+|Short - Medium
+|[[Ali Morrisane|Ali Morrisane's]] rune, blackjack, and clothing stores
+|Speak to [[Ali Morrisane]] in [[Al Kharid]]
+|}

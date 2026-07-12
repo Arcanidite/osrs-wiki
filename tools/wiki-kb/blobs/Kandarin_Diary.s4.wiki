@@ -1,0 +1,97 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Kandarin" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Complete a lap of the [[Barbarian Outpost Agility Course|Barbarian agility course]].
+|
+*{{SCP|Quest}} Completion of [[Alfred Grimhand's Barcrawl]]
+*{{SCP|Agility|35|link=y}}
+|-
+|2. Create a [[Superantipoison|Super Antipoison]]{{sic}} potion from scratch in the [[Seers' Village|Seers]]/[[Catherby]] Area.
+''Note: Completing or updating any other task in-between adding ingredients will reset the progress for this task.''
+|
+*{{SCP|Herblore|48|link=y}}
+*[[Vial of water]], [[irit leaf]], [[unicorn horn dust]]
+|-
+|3. Enter the [[Ranging guild]].
+|
+*{{SCP|Ranged|40|link=y}}
+|-
+|4. Use the [[Crossbow Tree|grapple shortcut]] to get from the [[Obelisk of Water|water obelisk]] to [[Catherby]] shore.
+''Note: With 56 [[Magic]], you can bring an [[unpowered orb]] and runes for [[Charge Water Orb]] to complete a [[#Hard|hard task]].
+|
+*{{SCP|Agility|36|link=y}}, {{SCP|Strength|22|link=y}}, and {{SCP|Ranged|39|link=y}}
+*[[Mith grapple]]{{efn|[[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].}} and any [[Crossbow (weapon)|crossbow]]
+*[[Dusty key]] or {{SCP|Agility|70|link=y}}
+*Protection from [[dragonfire]] recommended
+|-
+|5. Catch and cook a [[Bass]] in [[Catherby]].
+''Note: Completing or updating any other task in-between these steps will reset the progress for this task.''
+|
+*{{SCP|Fishing|46|link=y}} and {{SCP|Cooking|43|link=y}}
+*[[Big fishing net]]
+|-
+|6. Teleport to [[Camelot]].
+|
+*{{SCP|Magic|45|link=y}}
+*Means to cast [[Camelot Teleport]] ({{RuneReq|Air=5|Law=1}})
+|-
+|7. String a [[Maple shortbow]] in [[Seers' Village bank]].
+|
+*{{SCP|Fletching|50|link=y}}
+*[[Maple shortbow (u)]] and [[bow string]]
+|-
+|8. Pick some [[Limpwurt root]] from the [[farming patch]] in [[Catherby]].
+''Note: This is the [[flower patch]] next to [[Dantaera]].''
+|
+*{{SCP|Farming|26|link=y}}
+*[[Limpwurt seed]], [[seed dibber]] (or [[Barbarian Farming]]), and a [[rake]]
+*[[Ultracompost]] recommended
+|-
+|9. Create a [[Mind helmet]].
+''Note: This task is automatically completed during [[Elemental Workshop II]].''
+|
+*{{SCP|Quest}} Partial completion of [[Elemental Workshop II]]
+|-
+|10. Kill a [[Fire Giant]] inside [[Waterfall Dungeon|Baxtorian Waterfall]].
+|
+*{{SCP|Quest}} Started [[Waterfall Quest]]
+*[[Weaponry]]
+*[[Rope]]
+*[[Glarial's amulet]] only if [[Waterfall Quest]] isn't yet completed
+|-
+|11. Complete a wave of [[Barbarian Assault]].
+|
+* Completion of the [[Barbarian Assault tutorial]] to be able to play the minigame
+|-
+|12. Steal from the [[Chest (steel arrowtips)|chest]] in [[Hemenster]].
+''Note: This chest is located in the building between the buildings with the [[range]] and [[anvil]].
+|
+*{{SCP|Thieving|47|link=y}}
+*[[Lockpick]]
+*[[Combat bracelet]] recommended for quick access from the nearby [[Ranging Guild]]
+|-
+|13. Travel to [[McGrubor's Wood]] by [[Fairy Ring]].
+|
+*{{SCP|Quest}} Started [[Fairytale II - Cure a Queen]]
+*[[Dramen staff|Dramen]] or [[Lunar staff]] to travel to [[Fairy ring]] code {{Fairycode|als}}
+|-
+|14. Mine some [[coal]] near the [[coal trucks]].
+|
+*{{SCP|Mining|30|link=y}}
+*Any [[pickaxe]]
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Kandarin headgear 2]]:
+**No new benefits
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*[[Coal trucks]] can hold up to 280 [[coal]], up from 140
+*The [[flax keeper]] will offer you 60 [[Bank note|noted]] [[bow string]]s every day for 60 noted [[flax]], for a profit of {{NoCoins|({{GEP|Bow string}}-{{GEP|Flax}})*60}} [[coins]] on the [[Grand Exchange]]
+*10% more [[mark of grace|marks of grace]] from the [[Seers' Village Rooftop Course]], up from 5%
+*10% increased experience from cutting [[maple tree]]s in [[Seers' Village]] (stacks with the [[Lumberjack outfit]])
+*5% increased chance to save a [[Farming#Variable crop yield|"harvest life"]] at the [[herb patch]] in [[Catherby]], slightly increasing your harvest yield
+*The [[spinning wheel]] in [[Seers' Village]] spins 33% faster
+*[[Rope (Baxtorian Falls)|Ropes]] are now permanently secured at the [[Baxtorian Falls]] (with the completion of [[Waterfall Quest]])

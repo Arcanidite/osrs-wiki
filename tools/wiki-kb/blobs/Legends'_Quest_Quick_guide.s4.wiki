@@ -1,0 +1,14 @@
+===Kharazi Jungle===
+''Items needed: [[Radimus notes]] or 30 coins if lost, 3-5 [[papyrus]], 1-3 [[charcoal]], an [[Woodcutting axe|axe]], a [[Machete (weapon)|machete]], [[agility potion]] or [[summer pie]] (for boosting to 50 Agility). Recommended: Antipoison+''
+{{Checklist|
+*Head to the Kharazi Jungle, south of Shilo Village (fairy ring {{fairycode|CKR}} or gnome glider to Karamja (aka Gandius) then cross the stepping stones towards the south-west). You will need to chop through the jungle bush. (You can get papyrus and charcoal from Shilo village General store, if needed)
+*'''Note''': The [[vanilla pod]] needed for [[Recipe for Disaster/Freeing Sir Amik Varze]] is accessible at this point. It is on the southern coast between the West and Middle sections of the jungle. Finish the mapping before leaving to save yourself a trip. You do not need to have started the subquest in order to pick the vanilla pod.
+*Start mapping on either the east or west to save having to backtrack. For each part of the jungle (west, middle, and east), right-click Radimus notes and select the 'complete' option. Make sure you successfully map a section before moving to the next.
+*Use the notes on a [[Jungle forester]] south of Shilo to obtain the [[bullroarer]]. (If they don't want it, read the map first) {{Chat option|1Yes, go ahead make a copy!}}
+*Cut your way back into the Kharazi Jungle.
+*Swing the bullroarer by a totem pole to summon Gujuo (if it doesn't work, try another totem pole).
+*Talk to Gujuo.{{Chat option|1I was hoping to attract the attention of a native.|1I want to develop friendly relations with your people.|1Can you get your people together?|1What can we do instead then?|1How do we make the totem pole?|1I will release Ungadulu...}}
+*Search the [[Mossy rock]] at the north-western section of the jungle and crawl inside. (50 Agility required)
+*Investigate the [[Fire Wall]].{{Chat option|1How can I extinguish the flames?|1Where do I get pure water from?}}
+*Leave the cave and use the bullroarer again.{{Chat option|4I need some pure water to douse some magic flames.|5Where is the pool of sacred water?|5What kind of a vessel?}}
+}}

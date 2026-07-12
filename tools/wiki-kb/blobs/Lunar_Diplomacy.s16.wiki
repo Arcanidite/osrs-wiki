@@ -1,0 +1,16 @@
+==Rewards==
+{{Quest rewards
+|name = Lunar Diplomacy
+|image = [[File:Lunar Diplomacy reward scroll.png|centre]]
+|qp = 2
+|rewards = *{{SCP|Magic|5,000}} [[Magic]] [[experience]]
+*{{SCP|Runecraft|5,000}} [[Runecraft]] experience
+*A [[seal of passage]]
+*Access to [[Lunar Isle]] and [[Lunar equipment]]
+*Access to the [[Lunar spellbook]]
+*Access to the [[Astral Altar]]
+*50 [[Astral rune]]s
+
+Unlocks:
+* [[Me]] accessible in the [[Nightmare Zone]].
+}}

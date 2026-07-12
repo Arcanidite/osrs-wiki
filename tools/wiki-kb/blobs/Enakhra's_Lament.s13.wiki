@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Enakhra's Lament
+|image = [[File:Enakhra's Lament reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Crafting|7,000}} [[Crafting]] experience
+*{{SCP|Mining|7,000}} [[Mining]] experience
+*{{SCP|Firemaking|7,000}} [[Firemaking]] experience
+*{{SCP|Magic|7,000}} [[Magic]] experience
+*[[Camulet]], which allows you to talk to [[camel]]s and teleport to the temple four times. It can be recharged by using [[camel dung]] on it. You can pay Lazim 1 million gold pieces to give it unlimited charges.
+*[[Camel mask]] (Use a piece of [[soft clay]] on the pedestal with the globes on it to make.)
+}}

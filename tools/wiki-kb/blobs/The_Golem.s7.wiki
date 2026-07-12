@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = The Golem
+|image = [[File:The Golem reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Thieving|1,000}} [[Thieving]] experience
+*{{SCP|Crafting|1,000}} [[Crafting]] experience
+*2 cut [[Ruby|rubies]], [[emerald]]s, and [[sapphire]]s (collect these by using a [[chisel]] and [[hammer]] on the [[Throne (Thammaron's throne room)|throne]])
+*Unlock the carpet ride from [[Shantay Pass]] to [[Uzer]]
+}}

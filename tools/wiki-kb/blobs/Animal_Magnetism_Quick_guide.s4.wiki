@@ -1,0 +1,10 @@
+===Magnet===
+{{Map|x=2979|y=3240|mtype=square|r=4|align=right|caption=Approximate area of where to stand facing north|width=180|height=180}}
+'''''Items needed:''' 5 [[iron bar]]s, a [[hammer]], [[Skills necklace]] for teleport to [[Crafting Guild]], and your two [[undead chicken]]s.''
+{{Checklist|
+*Take your 5 iron bars, hammer, and two undead chickens back to the west wing of Draynor Manor and speak to [[Ava]].
+*Speak to the [[Witch]] in the north-west corner of Draynor Manor (inside the building).
+*Speak to the Witch again to receive a [[selected iron]].
+*Take the selected iron to the centre of the [[Rimmington mine]], face north, and use the hammer on it.
+*Return to Ava and give her the magnet.
+}}

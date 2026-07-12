@@ -1,0 +1,97 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Mourning's End Part I}}
+
+==Walkthrough==
+===Starting the quest===
+'''''Recommended items:''' a weapon, [[food]], [[necklace of passage]] to teleport to the Outpost to get to Arandar, 8 free inventory spaces, a [[ring of dueling]] (optional, recommended to teleport out after you kill the Mourner) [[energy potions]] or [[stamina potions]] (optional, bring these throughout the entire quest)''
+{{Checklist|
+*Talk to [[Eluned]]. {{Chat option|1Yes, I should go see him now.}}
+*Talk to [[Arianwyn]] in [[Lletya]].
+*Teleport to the [[Outpost]] using your [[necklace of passage]].
+*Go to the [[Arandar]] Pass gate, west of the Outpost, and kill a [[mourner]] (this will drain your stats including hp to 20).
+*Take everything it drops (7 items), and hold onto them.
+*(Optional) Use a [[ring of dueling]] teleport to [[Ferox Enclave]] and drink from the [[Pool of Refreshment]] to negate mourner potion resetting stats and hp}}
+
+===Top===
+{{Needed|A [[bucket of water]], [[bloody mourner top]]|recommended=teleportation method to Taverley and to a bank}}
+{{Checklist|
+*Make your way to [[Tegid]] by the [[Taverley]] lake, and talk to him.
+*Search his laundry basket to get [[Tegid's soap]]. {{Chat option|1Steal the soap.}}
+*Use the soap on the [[bloody mourner top]] with a [[bucket of water]] in your inventory to clean it.}}
+
+===Trousers===
+{{Needed|2 pieces of [[silk]], [[bear fur]], [[mourner trousers]], coins (if you need dyes), [[teleport crystal]]}}
+{{Checklist|
+*Teleport to [[Lletya]] using the [[teleport crystal]].
+*Talk to [[Arianwyn]].
+*Talk to [[Oronwen]] who is directly north-west of the teleport crystal's destination. {{Chat option|3Do you mend clothes?}}
+*Give her the silk, bear fur, and trousers.
+**''Buy dyes here if needed, you'll need more than 1 of each if you miss the target later on.''
+}}
+
+===The mourners===
+{{Needed
+|[[Mourner outfit]], [[mourner letter]], [[feather]], [[soft leather]], [[magic log]], [[toad crunchies]] or [[premade t'd crunch]], 1 free inventory space
+|recommended=[[West Ardougne Teleport]], or [[Ardougne Teleport|East Ardougne Teleport]] and walk west; alternatively, use the [[Lever (Edgeville)|Edgeville Wilderness teleport lever]] to reach [[Ardougne]]
+}}
+{{Checklist|
+*Go to [[West Ardougne]].
+*Equip the full mourner outfit.
+*Enter the [[mourner HQ]] in the north-east corner of [[West Ardougne]].
+*Go down the [[trapdoor (Mourner Headquarters)|trapdoor]] and talk to [[Essyllt]] in the basement. (2 free inventory spaces needed)
+*Talk to the gnome on a rack. Select the chat option about being tickled and [[toad crunchies]]. {{Chat option|3You said about toad crunchies and being tickled.}}
+*Use the [[feather]] on him.
+*Release the gnome and talk to him with [[soft leather]], a [[magic log]], and either [[toad crunchies]] or [[premade t'd crunch]].}}
+
+===The sheep===
+{{Map|align=right|mtype=pin|caption=Location of the sheep.
+|2609,3389,title:Location of the yellow sheep,icon:yellowPin,desc:
+|2620,3368,title:Location of the green sheep,icon:greenPin,desc:
+|2608,3346,title:Location of the red sheep,icon:redPin,desc:
+|2569,3383,title:Location of the blue sheep,icon:bluePin,desc:
+}}
+{{Needed
+|at least 1 [[red dye|red]], [[green dye|green]], [[blue dye|blue]], and [[yellow dye]]; [[ogre bellows]]; [[fixed device]]
+|recommended=[[West Ardougne Teleport]], or [[Ardougne Teleport|East Ardougne Teleport]] and walk west; alternatively, use the [[Lever (Edgeville)|Edgeville Wilderness teleport lever]] to reach [[Ardougne]]
+}}
+{{Checklist|
+*Go to the [[Feldip Hills]] swamp (east of fairy ring {{Fairycode|AKS}}) or the less dangerous swamp south-west of [[Castle Wars]] (north-east of fairy ring {{Fairycode|BKP}})
+*Use the desired [[dye]] on an empty [[ogre bellow]], then the dyed [[ogre bellows]] on a [[swamp toad]] to get a [[coloured toad]] (at least 1 of each colour).
+*Re-dye one sheep in each group their respective colour.
+**Go to a [[sick-looking sheep|coloured sheep]] herd north of [[East Ardougne]] used in the [[Sheep Herder]] quest.
+**Use the respective [[coloured toad]] on the [[fixed device]] and equip it.
+**Select the ''Aim and Fire'' attack style.
+**Use the controls to aim at a [[sick-looking sheep|coloured sheep]] and fire the [[fixed device]].
+}}
+
+===Poisoning the food supply===
+'''''Items needed:'''  [[barrel of naphtha]], [[mourner gear]], [[teleport crystal]], [[rotten apple]] (optional: necklace of passage, Ardougne teleport, & a teleport out)''
+{{Checklist|
+*Talk to the head mourner, [[Essyllt]].
+*Take the rotten apple, located north-west of the [[Mourner Headquarters]] by squeezing through the gap in the western fence.
+*Talk to [[Elena]] west of Ardougne log balance shortcut, you'll be given a [[sieve]].
+*Go to the [[apple orchard]] to the north-west, west of the [[Combat Training Camp]]. North-east of The Outpost using a [[necklace of passage]].
+*Pick up an empty barrel inside the orchard and use it on one of the Rotten Apple Piles.
+*Use your barrel of rotten apples on the apple press (slightly west of the rotten apple piles) to mash them.
+*Use your barrel of naphtha on your mushed apple barrel (in your inventory); then, use your sieve on it.
+**''See the [[Mourning's End Part I|full guide]] if you do not have a barrel of naphtha.''
+*Use the toxic naphtha on a '''range, not a fire'''. Make sure you have two open inventory spaces to receive both toxic powders.
+**There is a range in the mourner HQ that you can use to save time.
+*Add the toxic powder to grain sacks to poison any 2 of the food stores in [[West Ardougne]]. The closest 2 are:
+**The western room of the main building north of the town square.
+**The church south of the town square.
+*Talk to [[Essyllt]].
+*Talk to [[Arianwyn]] in [[Lletya]].
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|Mourning's End Part I}}
+
+==Required for completing==
+*[[Mourning's End Part II]] ([[Mourning's End Part II/Quick guide|Quick guide]])
+
+{{Mourning's End Part I}}

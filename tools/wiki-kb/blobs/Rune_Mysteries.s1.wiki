@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|description = After the first [[Wizards' Tower]] burned down a hundred years ago, the incantation allowing teleportation to the [[rune essence mine]] was lost. However, after much research from the [[Order of Wizards]], the incantation is on the verge of rediscovery...
+|start = Talk to [[Duke Horacio]] on the {{FloorNumber|uk=1}} of [[Lumbridge Castle]].
+|startmap = 3210,3222,plane:1
+|difficulty = Novice
+|length = Short
+|requirements = 
+|items = None
+|recommended = *Fast travel to several locations
+**[[Lumbridge]] to start the quest - [[Lumbridge Teleport]] or [[Lumbridge Home Teleport]]
+**[[Varrock]] (1 trip) - [[Varrock teleport]] or [[Chronicle]] or [[Skills necklace]] to [[Cooks' Guild]] ''([[Members only]])'' or [[Ring of wealth]] to [[Grand Exchange]] ''(Members only)''
+**[[Wizard's Tower]] (2 trips) - [[Necklace of passage]] or [[Amulet of the eye]] or [[Amulet of glory]] to [[Draynor Village]] ''(All Members only)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

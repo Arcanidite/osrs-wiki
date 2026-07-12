@@ -1,0 +1,20 @@
+==Rewards==
+{{Quest rewards
+|name=Heroes' Quest|image=[[File:Heroes' Quest reward scroll.png|centre]]|qp=1|rewards=*{{SCP|Attack|3,075}} [[Attack]] [[experience]]
+*{{SCP|Defence|3,075}} [[Defence]] experience
+*{{SCP|Strength|3,075}} [[Strength]] experience
+*{{SCP|Hitpoints|3,075}} [[Hitpoints]] experience
+*{{SCP|Ranged|2,075}} [[Ranged]] experience
+*{{SCP|Fishing|2,725}} [[Fishing]] experience
+*{{SCP|Cooking|2,825}} [[Cooking]] experience
+*{{SCP|Woodcutting|1,575}} [[Woodcutting]] experience
+*{{SCP|Firemaking|1,575}} [[Firemaking]] experience
+*{{SCP|Smithing|2,275}} [[Smithing]] experience
+*{{SCP|Mining|2,575}} [[Mining]] experience
+*{{SCP|Herblore|1,325}} [[Herblore]] experience
+*Access to the [[Heroes' Guild]]
+*The ability to purchase and wield [[dragon battleaxe]]s and [[Dragon mace|maces]]
+*Access to the [[Fountain of Heroes]], where players can recharge their [[amulets of glory]]
+*Ability to use [[Charge dragonstone jewellery scroll]]s.
+*Ability to recharge [[amulets of glory]] at the [[Fountain of Rune]] (This grants 6 charges instead of the usual 4)
+}}

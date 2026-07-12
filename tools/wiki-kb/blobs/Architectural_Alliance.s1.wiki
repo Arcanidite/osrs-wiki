@@ -1,0 +1,18 @@
+==Details==
+{{Quest details
+|start = Speak to [[Hosa]] by the [[Statue (King Rada I)|statue]] outside [[Kourend Castle]].
+|startmap = 1632,3669
+|difficulty = Experienced
+|description = Prove yourself to the five houses of Great Kourend and gain the support of several architects to rebuild the statue of King Rada I.
+|length = Long
+|requirements = Various skills depending on the [[favour]] activities done
+*{{SCP|Mining|42|link=yes}} for any [[Lovakengj]] activity
+|recommended = *Completion of [[Client of Kourend]]; distribution of the rewarded 20% favour to [[Piscarilius]]
+*{{SCP|Hunter|15|link=yes}} for hunting [[sandworms]]
+*{{SCP|Cooking|25|link=yes}} for making stews in the [[Mess]]
+*Ability to kill large numbers of [[poisonous]] level 53-75 [[lizardman|lizardmen]] and [[lizardman brute]]s
+*[[Kharedst's memoirs]] will speed up this quest significantly
+|items = Various items depending on the favour activities done
+|kills = [[Lizardmen]] ''(level 53 and 62) - optional''
+|leagueRegion = {{LeagueRegion|Kourend}} - location requirement
+}}

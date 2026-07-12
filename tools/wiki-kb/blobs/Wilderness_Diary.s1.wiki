@@ -1,0 +1,165 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 15
+|Agility = 15
+|Magic = 21
+|Total = 80
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]]
+|}
+| style="vertical-align: top" |
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 55
+|Strength = 1
+|StrengthNotes = <ref name="gwd">You'll need either 60 [[Strength]] or 60 [[Agility]] for the [[Wilderness God Wars Dungeon]], both of which are [[boostable]].</ref>
+|Agility = 52
+|AgilityNotes = <ref name="gwd"/>
+|Smithing = 50
+|Magic = 60
+|Woodcutting = 61
+|WoodcuttingNotes = {{boostable|n}}
+|Slayer = 50
+|Total = 362
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to the [[Wilderness God Wars Dungeon]] <ref name="gwd"/>
+|-
+|Partial completion of [[Between a Rock...]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 55
+|Agility = 64
+|Smithing = 75
+|Fishing = 53
+|Magic = 66
+|Woodcutting = 61
+|WoodcuttingNotes = {{boostable|n}}
+|Slayer = 68
+|Hunter = 67
+|Total = 533
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Death Plateau"
+|[[Death Plateau]]
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]]
+|- data-rowid="Mage Arena I"
+|[[Mage Arena I]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to at least one of the three [[god spells]]
+|-
+|Access to the [[Wilderness God Wars Dungeon]]
+|-
+|Partial completion of [[Between a Rock...]]
+|-
+|Defeat the [[Chaos elemental]]
+|-
+|Defeat the [[Crazy archaeologist]], [[Chaos fanatic]], and [[Scorpia]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 85
+|Agility = 64
+|Smithing = 90
+|Herblore = 10
+|Fishing = 85
+|Ranged = 40
+|Thieving = 84
+|Cooking = 90
+|Firemaking = 75
+|Magic = 96
+|Fletching = 10
+|Woodcutting = 75
+|Slayer = 83
+|Hunter = 67
+|Total = 972
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Death Plateau"
+|[[Death Plateau]]
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]]
+|- data-rowid="Mage Arena I"
+|[[Mage Arena I]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to at least one of the three [[god spells]]
+|-
+|Access to the [[Wilderness God Wars Dungeon]]
+|-
+|Partial completion of [[Between a Rock...]]
+|-
+|Defeat [[Callisto]]/[[Artio]], [[Venenatis]]/[[Spindel]], and [[Vet'ion]]/[[Calvar'ion]]
+|-
+|Defeat the [[Chaos elemental]]
+|-
+|Defeat the [[Crazy archaeologist]], [[Chaos fanatic]], and [[Scorpia]]
+|}
+|}
+{{Reflist}}
+
+|-|
+</tabber>

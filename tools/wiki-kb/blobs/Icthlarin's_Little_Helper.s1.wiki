@@ -1,0 +1,50 @@
+==Details==
+{{Quest details
+|description = In the deep south of the desert, unrest is brewing... The cities of the [[Menaphites]] have barred their gates to all. An unsettling desert wanderer may know of a secret entrance though, to [[Sophanem]] - the city of the dead.
+
+Will you become Icthlarin's Little Helper by entering? Enter into a titanic struggle for the soul of the high priest of Icthlarin in a land where the cat is top dog.
+|start = Talk to the [[wanderer]] in the camp west of the [[Agility Pyramid]].
+|startmap = 3315,2849
+|difficulty = Intermediate
+|length = Medium
+|requirements = * Completion of {{SCP|Quest}} [[Gertrude's Cat]]
+* The ability to defeat a level 91 monster.
+|items = * [[cat|Regular]] or [[overgrown cat|overgrown cat]], [[hellcat]], or [[kitten]]. No food is required as the kitten can stay in your inventory for the most part, or automatically go in/out of your inventory.
+* [[Tinderbox]]
+* [[Willow log]]
+* [[Bag of salt]] (can be bought from any [[Slayer Master]], other players, or the [[Grand Exchange]]) '''or''' an empty [[bucket]] to obtain a [[pile of salt]] in Sophanem
+* [[Bucket of sap]] (use a [[knife]] on an [[evergreen tree]] or a [[Tree#Single_canopy|regular tree]] with the description "a commonly found tree" with a bucket in your inventory)
+* Full [[waterskin]] to give away (can be bought for 30 coins at Shantay pass)
+* [[Linen (Icthlarin's Little Helper)|Linen]] (Can be bought on The Grand Exchange or bought from [[Raetul]] in Sophanem for 30 coins during the quest)
+* Means to enter the desert. (Such as the [[Shantay pass (item)|Shantay pass]], [[Teleport tablets]] or [[Teleport scrolls|scrolls]], [[Fairy rings]] or the [[Pharaoh's sceptre]])
+|recommended = * {{SCP|Combat|50|link=yes}}
+* {{SCP|Agility|35}} [[Agility]] to jump over the pit in the pyramid (higher agility helps even more)
+* [[Waterskin]]s for the [[desert heat]]
+* [[Knife]] to refill waterskins
+* [[Desert clothing]] to delay the desert heat effect
+* 1–2 [[antipoison]] or [[superantipoison]] potions
+* [[Energy potion]]s
+* [[Antidote]], or other anti-poison potions
+* [[Nardah teleport]]
+* [[Armour]] and some [[food]]
+* [[Ghostspeak amulet]] for story comprehension ([[Klenter]])
+|kills = * [[Possessed Priest]] ''(level 91)''
+* One of the level 75–81 guardians (chosen based on your stats):
+** [[Apparition#Apmeken]] ''(level 75)''—uses [[Magic]]
+** [[Apparition#Crondis]] ''(level 75)''—uses Magic
+** [[Apparition#Scabaras]] ''(level 75)''—uses [[Melee]]
+** [[Apparition#Het]] ''(level 81)''—uses Melee
+It is possible to know in advance which of these guardians you're going to get, based on which jar your character obtains during the quest. See the "Second Flashback" section below.
+|ironman = *A method to obtain [[willow logs]]:
+**{{SCP|Woodcutting|30|link=yes}} {{Boostable|yes}} to cut [[willow trees]]
+**1/16 drop from [[Vampyre Juvinates]] (requires starting {{SCP|Quest|[[In Aid of the Myreque]]}})
+**1/128 drop from [[Swamp Crab]]s (requires {{SCP|Quest|[[Priest in Peril]]}})
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}
+'''Note:''' If you need to leave Sophanem at any point during the quest, there is a [[Hole (Sophanem)|hole]] you can crawl through on the eastern wall. To get back in, enter the [[Rock (Agility Pyramid)|rocks]] on the east side of the Wanderer's tent.
+
+'''''Note:'''''  ''For the pit jump, 20% run energy is required, and it will be drained. Higher agility increases the chances of success.''

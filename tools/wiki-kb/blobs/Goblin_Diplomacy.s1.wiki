@@ -1,0 +1,18 @@
+==Details==
+{{Quest details
+|description = There's a disturbance in the Goblin Village. Help the goblins solve their dispute so the world doesn't have to worry about rioting goblins. Aim: to help the goblins decide which colour they will wear.
+|start = Talk to [[General Bentnoze]] or [[General Wartface]] in [[Goblin Village]].
+|startmap = 2957,3512
+|difficulty = Novice
+|length = Very Short
+|items = * 3 sets of [[Goblin mail]] (obtained during the quest)
+* 1 [[Blue dye]] (or 2 [[woad leaves]] and 5 coins to obtain a blue dye from [[Aggie]])
+** Offer 20 coins to [[Wyson the gardener]] and he will give you two woad leaves
+* 1 [[Orange dye]] – created by combining [[red dye]] with [[yellow dye]]
+** 1 [[Red dye]] (or 3 [[redberries]] and 5 coins to obtain a red dye from [[Aggie]])
+** 1 [[Yellow dye]] (2 [[onion]]s and 5 coins to obtain a yellow dye from [[Aggie]])
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

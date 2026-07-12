@@ -1,0 +1,7 @@
+====Copy cat====
+{{Checklist|
+*Step on the [[platform (Lunar Diplomacy)#Mimic|south-eastern green platform]].
+*Talk to [[Ethereal Mimic]]. {{Chat option|1Suppose I may as well have a go.}}
+*Click on him, then copy the emote that he performs. He teleports after each correct emote.
+*After 5 correct emotes, he'll teleport you back.
+}}

@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|start = Talk to [[Caroline]] just north of [[Witchaven]].
+|startmap = 2716,3302
+|difficulty = Intermediate
+|description = Something strange is happening on the [[Fishing Platform]].
+Missing fishermen and the presence of dozens of strange sea creatures gives cause for concern.
+Investigate the platform, discover the truth before it's too late.
+|length = Short
+|requirements = * {{SCP|Firemaking|30|link=yes}} {{Boostable|Yes}} {{Questreqstart|no}}
+|items = * [[Swamp paste]] (made by mixing [[flour]] with [[swamp tar]] then cooking the mixture on a fire; can also be bought from a [[Trader crewmember]] for 75 coins, from [[Rasolo]] for 60 coins west of the [[Fishing Guild]], or from the [[Khazard General Store]] for 42 coins at full stock)
+|recommended = * [[Small fishing net]] for [[Ardougne Diary#Medium|Ardougne Medium Diary]] (can be bought near quest start in Witchaven)
+* [[Unlit torch]] (a small glitch might occur where you do not receive the torch during the quest)
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}

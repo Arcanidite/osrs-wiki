@@ -1,0 +1,42 @@
+===The Skavids and the second crystal===
+{{Needed|[[Ogre relic]], a gold bar, 20 coins, vial, pestle & mortar (27 coins if buying the vial and pestle & mortar), [[death rune]], [[light source]] (depending on your light source you may need a tinderbox as well), 3 empty inventory spaces.}}
+{{Checklist|
+*Enter [[Gu'Tanoth]] via the path on the north-east corner of the hills, then head west towards the gate. Enter by talking to the Ogre Guard with the ogre relic in your inventory.
+*Go south-east to the market in the central area and steal a [[rock cake]] from the [[Counter (Gu'Tanoth)|counter]] on the southern side. 
+** If you need a [[pestle and mortar]] and a [[vial]], buy them from the [[Ogre merchant]] '''before''' stealing the rock cake. 
+*Go back to the upper walkway, then head around south until you encounter guards at a battlement. Climb the battlement. {{Chat option|1But I am a friend to ogres...}}
+*Talk to the guard again with the rock cake in your inventory.
+*Head north-east and attempt to jump the bridge, then agree to give the guards 20 coins. {{Chat option|1Okay, I'll pay it.}}
+*Talk to a City guard. {{Chat option|2I seek passage into the skavid caves.}}
+*Talk to a City guard again with a death rune in your inventory to receive a [[skavid map]].
+*Return back across the bridges, over the battlement, and through the north-west gate where you entered the city.
+*Walk east, then turn south towards the second city gate. 
+*Enter the [[Skavid caves]] just north of the gate.
+*Speak with the [[scared skavid]]. {{Chat option|2Okay, okay, I'm not going to hurt you.}}
+*Exit the cave, and speak with each regular Skavid inside the following 4 caves:
+**East of Gu'Tanoth outside the city around the east side of the mountain.
+**North-east of Gu'Tanoth along the main entrance path.
+**North of Gu'Tanoth and south of the cluster of trees.
+**North of Gu'Tanoth south of the west gate to Yanille. Grab one nightshade, which will complete an Ardougne Medium task.
+*The following responses should work. The first part is what the Skavid says. You must respond with the second part:
+**Tanath gor...Nod
+**Bidith tanath...Cur
+**Gor cur...Ar
+**Cur bidith...Ig
+*Exit the cave and go south to the Eastern City gate. Click on the gate to give a gold bar to the guard and gain access to the gate.
+*Continue past the gate and across the bridge into the cave. Speak to the Mad Skavid, who will say one of these options. Repeat with the second part again.
+**Ar cur...Gor
+**Bidith ig...Cur
+**Gor nod...Tanath
+**Cur tanath...Bidith
+**Bidith tanath...Cur
+**Tanath gor...Nod
+**Cur bidith...Ig
+**Gor cur...Ar
+*Take another [[cave nightshade]]. Make sure you have two of them. You can hop worlds for the second one.
+*Leave the way you came in (do <u>not</u> climb down the hole).
+*Return to the Gu'Tanoth market.
+*Use one nightshade on one of the [[Enclave guard]]s (be sure to complete the dialogue).
+*Enter the cave and watch the cutscene.
+*Teleport out or run north to the exit. 
+}}

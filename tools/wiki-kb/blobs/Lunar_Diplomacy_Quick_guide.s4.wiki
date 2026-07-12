@@ -1,0 +1,11 @@
+===Talking to the crew===
+
+'''''NOTE:''' You '''must''' talk to them in order.''
+{{Checklist|
+*Talk to [['Eagle-eye' Shultz]] at the very front (north-end) of the ship.
+*Talk to the [[Cabin boy]] up one deck from the captain (south).
+*Talk to [['Beefy' Burns]] on the lowest level of the ship.
+*Talk to [['Lecherous' Lee]] at the very top-rear of the ship.
+*Talk to [[First mate 'Davey-boy']], on the deck level, south room.
+*Climb back up to the top, talk to the [[Cabin boy]] (2 inventory spaces required).
+}}

@@ -1,0 +1,169 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Mourning's End Part II}}
+
+==Walkthrough==
+===Entering the temple===
+{{Needed|Full [[mourner gear]], [[chisel]].|recommended=[[teleport crystal|Elf teleport crystal]], teleport to [[Ardougne]], [[food]] and [[armour]]/[[prayer potions]] to run past high level monsters, 3 free inventory spaces}}
+[[File:Mourning's End Part II - Blackened crystal.png|275px|right|thumb|Map of the area and path to the blackened crystal.]]
+{{Checklist|
+*Talk to [[Arianwyn]] in [[Lletya]].
+*(optional) '''Note to Ironmen: ''' if you do not have a death talisman, search the bookshelves for a book titled [[Prifddinas' history]]. You might need it later as part of the 50 items and this will allow you to potentially save time and a charge on your teleport.
+*Wearing your mourner gear, talk to [[Essyllt]] under the hideout in [[West Ardougne]] (north-east corner of town). He gives you the [[new key]].
+*Run west through the cave, keep going until you find the dead bodies. There will be a cutscene.
+*Search a guard corpse for [[Edern's journal]].
+*Follow the red line in the map to get to the black crystal.
+*Use your chisel to chip off a piece.
+*Return and talk to [[Arianwyn]] in [[Lletya]] to enchant your crystal.
+}}
+
+===The light puzzles===
+{{Needed|Full [[mourner gear]], the [[new key]], [[rope]]. If you're planning to complete the puzzles in a single trip, bring a [[death talisman]]/[[death tiara]]/[[catalytic talisman]] and the [[newly made crystal]] too. A [[death talisman]] can be obtained from [[dark beast]]s. Ironmen without a death talisman will have to bring a list of 50 items instead after completing the puzzles.|recommended=[[Weight-reducing clothing]], high [[Prayer items|prayer bonus]] gear, [[prayer potion]]s, [[stamina potion]]s, [[food]], [[summer pie]]s/[[agility potion]]s, [[pure essence]] (for the [[hard Ardougne Diary]] task), 5 empty inventory spaces.}}
+
+====Chest #1====
+[[File:Mourning's End Part II - chest 1 solution.png|275px|right|thumb|Chest #1 solution.]]
+{{Checklist|
+*Go back to the [[Temple of Light]].
+*Take the eastern set stairs, that are directly in front of the entrance, to the middle floor.
+*Head to the area indicated by the rope on the guide map and use your rope on the rocks.
+*Drop your [[new key]].
+*Head to the area marked with mirror #1 just east of the stairs.
+*''Pull'' the crystal dispenser on the wall to reset the puzzle and then ''collect'' all of the items which includes mirrors and a {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}.{{Chat option|1Pull the lever.|1Pull it.|3Take all the items.}}
+*Place {{plinkp|Hand mirror}} Mirror #1 to shine the light north.
+*{{plinkp|Hand mirror}} Mirror #2 points west.
+*{{plinkp|Hand mirror}} Mirror #3 points south.
+*Place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}. The light will turn yellow.
+*{{plinkp|Hand mirror}} Mirror #4 points east.
+*Cross the gap to the other side. Use any agility boosts you have. You will have to cross this gap a second time later.
+*Open the chest to obtain 2 mirrors and a {{plink|Cyan crystal (Mourning's End Part II)|txt=Cyan crystal}}.
+}}{{clear}}
+
+====Chest #2====
+[[File:Mourning's End Part II - chest 2 solution.png|275px|right|thumb|Chest #2 solution.]]
+{{Checklist|
+*Reset the puzzle at the crystal dispenser and ''collect'' all items.
+*{{plinkp|Hand mirror}} Mirror #1 points north.
+*{{plinkp|Hand mirror}} Mirror #2 points west.
+*Place the {{plink|Cyan crystal (Mourning's End Part II)|txt=Cyan crystal}}. The light will turn cyan.
+*{{plinkp|Hand mirror}} Mirror #3 points north.
+*{{plinkp|Hand mirror}} Mirror #4 points east.
+*Place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}. The light will turn green.
+*Open the chest to obtain 2 mirrors.
+*Do NOT reset the puzzle.
+}}{{clear}}
+
+====Chest #3====
+[[File:Mourning's End Part II - chest 3 solution.png|275px|right|thumb|Chest #3 solution.]]
+{{Checklist|
+*Pick up the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}} and replace it with {{plinkp|Hand mirror}} Mirror #5 pointing up to the top floor. Long side of the mirror should be pointing east.
+*Climb the north ladder to the top floor.
+*{{plinkp|Hand mirror}} Mirror #6 points west. The light to the west turns blue.
+*Go back to the middle floor and take the south stairs up to the top floor.
+*{{plinkp|Hand mirror}} Mirror #7 points down toward the middle floor. Long side of the mirror should be pointing east.
+*Climb to the bottom floor.
+*Head to {{plinkp|Hand mirror}} Mirror #8, going through the eastern yellow barrier. Turn {{plinkp|Hand mirror}} Mirror #8 to point south.
+*Go through the southern barrier and follow the path. Open the chest to obtain 2 mirrors and a {{plink|Fractured crystal (horizontal)|txt=Fractured crystal}}.
+*Go back through the southern barrier and rotate the mirror to point east.
+*Exit through the eastern barrier.
+*Do NOT reset the puzzle.
+}}{{clear}}
+
+====Chest #4====
+[[File:Mourning's End Part II - chest 4 solution.png|275px|right|thumb|Chest #4 solution.]]
+{{Checklist|
+*Take the east stairs to the middle floor.
+*Take out the {{plink|Cyan crystal (Mourning's End Part II)|txt=Cyan crystal}} and place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}} instead. The light will now be yellow.
+*Climb up the south ladder to the top floor.
+*Rotate {{plinkp|Hand mirror}} Mirror #7 to shine the light south. This light should be red. Run south to mirror 8.
+*{{plinkp|Hand mirror}} Mirror #8 point down toward the middle floor. Long side of the mirror should be pointing north.
+*Climb down the south ladder to the middle floor.
+*Use the rope shortcut to reach the bottom floor.
+*Head to {{plinkp|Hand mirror}} Mirror #9 and open the chest to obtain a {{plink|Blue crystal (Mourning's End Part II)|txt=Blue crystal}}.
+}}{{clear}}
+
+====Chest #5====
+=====Part 1=====
+[[File:Mourning's End Part II - chest 5 solution - part 1.png|275px|right|thumb|Chest #5, part 1.]]
+{{Checklist|
+*Reset the puzzle
+*{{plinkp|Hand mirror}} Mirror #1 points north.
+*{{plinkp|Hand mirror}} Mirror #2 points west.
+*{{plinkp|Hand mirror}} Mirror #3 points south.
+*Place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}. The light will turn yellow.
+*{{plinkp|Hand mirror}} Mirror #4 points east.
+*Cross the gap to the other side.
+*Place the {{plink|Blue crystal (Mourning's End Part II)|txt=Blue crystal}}.
+*Remove {{plinkp|Hand mirror}} Mirror #4.
+*Rotate {{plinkp|Hand mirror}} Mirror #3 points up.
+*Use the south stairs to head to the top floor.}}{{clear}}
+
+=====Part 2=====
+[[File:Mourning's End Part II - chest 5 solution - part 2.png|275px|right|thumb|Chest #5, part 2.]]
+{{Checklist|
+*Place {{plinkp|Hand mirror}} Mirror #4 in the new position pointing south.
+*Place the {{plink|Fractured crystal (Mourning's End Part II)|txt=Fractured crystal|pic=Fractured crystal (horizontal)}}.
+*{{plinkp|Hand mirror}} Mirror #5 makes the western light point down. Long side of the mirror should be pointing east.
+*{{plinkp|Hand mirror}} Mirror #6 makes the southern light point east.
+*{{plinkp|Hand mirror}} Mirror #7 points down. Long side of the mirror should be pointing west.
+*Go to the bottom floor.
+*{{plinkp|Hand mirror}} Mirror #8 points south.
+*{{plinkp|Hand mirror}} Mirror #9 points east.
+*{{plinkp|Hand mirror}} Mirror #10 points north.
+*Open the chest to obtain 3 mirrors and a second {{plink|Fractured crystal (horizontal)|txt=Fractured crystal}}.
+}}{{clear}}
+
+====Death Altar Puzzle====
+[[File:Mourning's End Part II - Death Altar solution.png|275px|right|thumb|Death Altar solution.]]
+{{Checklist|
+*Reset the puzzle.
+*{{plinkp|Hand mirror}} Mirror #1 points north.
+*{{plinkp|Hand mirror}} Mirror #2 points down. Long side of the mirror should be pointing south.
+*Use the east stairs to go down to the bottom floor.
+*{{plinkp|Hand mirror}} Mirror #3 points west.
+*Place the {{plink|Fractured crystal (Mourning's End Part II)|txt=Fractured crystal|pic=Fractured crystal (vertical)}}.
+*{{plinkp|Hand mirror}} Mirror #4 points the northern light up.
+*Place the {{plink|Fractured crystal (Mourning's End Part II)|txt=Fractured crystal|pic=Fractured crystal (horizontal)}}.
+*{{plinkp|Hand mirror}} Mirror #5 points the western light up.
+*{{plinkp|Hand mirror}} Mirror #6 points the eastern light up.
+*Climb the east stairs to the middle floor.
+*Place the {{plink|Yellow crystal (Mourning's End Part II)|txt=Yellow crystal}}. The light will turn yellow.
+*Climb up the north ladder to the top floor.
+*{{plinkp|Hand mirror}} Mirror #7 points west. You should see the light turn red at the pillar to the west.
+*Climb down the north ladder to the middle floor.
+*Climb up the south ladder to the top floor.
+*{{plinkp|Hand mirror}} Mirror #8 points west.
+*{{plinkp|Hand mirror}} Mirror #9 points west.
+*{{plinkp|Hand mirror}} Mirror #10 points north.
+*Cross to the north part of the top floor via the middle stairs.
+*{{plinkp|Hand mirror}} Mirror #11 points west.
+*Place the {{plink|Blue crystal (Mourning's End Part II)|txt=Blue crystal}}. The light will turn blue.
+*{{plinkp|Hand mirror}} Mirror #12 points south.
+*{{plinkp|Hand mirror}} Mirror #13 points east.
+*Go down the middle stairs twice to the inner part of the ground floor.
+*Rotate {{plinkp|Hand mirror}} Mirror #14 so it points west.
+*Go through to the Death Altar.
+*'''When you're ready to leave, make sure to turn {{plinkp|Hand mirror}} Mirror #14 back towards the entrance door, otherwise to get back in here you will need to go through the Underground Pass.'''
+}}
+
+===Finishing up===
+{{Checklist|
+*If you do not have a [[death talisman]]/[[death tiara|tiara]] or [[catalytic talisman]]/[[catalytic tiara|tiara]], refer to the [[Mourning's End Part II#The Death Altar|full guide]] to get the 50 required items.
+**Returning to [[Thorgel]]: go up the eastern stairs, then south and up the ladder to the top floor to return to Thorgel. Climb the stairs down to the altar twice.
+*Make sure to bring your newly made crystal you obtained at the start of the quest.
+*Enter the [[Death Altar]].
+*Use the uncharged [[newly made crystal]] on the altar.
+*Use the charged [[newly made crystal]] on the black crystal on the top floor.
+*Travel to [[Lletya]].
+*Talk to [[Arianwyn]].
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|Mourning's End Part II}}
+
+==References==
+{{Reflist}}
+
+{{Mourning's End Part II}}

@@ -1,0 +1,14 @@
+===Anna's Trial===
+{{Checklist|
+*Travel south to the Seer's Village courthouse. (South-East of the bank).
+*Speak to Anna. {{Chat option|1}}
+*Walk down the stairs to begin the trial.
+''For this part you need to speak to the Judge in order to call next witness and then speak to the witnesses to ask them questions.''
+*Call the Dog Handler as a witness. Ask him about the '''poison'''.
+*Call the Butler as a witness by speaking to the judge. Ask him about the '''dagger'''.
+*Call the Maid as a witness. Ask her about '''the night of the murder'''.
+*Ask the Maid (or anyone else) about the '''thread'''.
+''(If done correctly Anna should be pronounced '''not guilty''' and balloons will fall.)''
+*Exit the courtroom by clicking on the gate.
+*Speak again with Anna in her cell.
+}}

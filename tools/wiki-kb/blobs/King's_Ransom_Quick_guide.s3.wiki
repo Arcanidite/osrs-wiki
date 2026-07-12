@@ -1,0 +1,14 @@
+===Sinclair's Mansion===
+{{Checklist|
+''Grab all the required items at the start. You do not have to make bank trips during this quest.''
+*Speak with [[Gossip]] outside of [[Sinclair Mansion]]. {{Chat option|1}}
+*Speak with the guard in the courtyard to the north.
+*Break into the Smashed Window on the East side of the mansion.
+*Grab the [[Scrap paper]] in the dining room next to the fire place ({{FloorNumber|uk=0}}).
+*Go up the stairs to the {{FloorNumber|uk=1}} and then to the library in the centre.
+*Take the [[Address Form]] off the table and read it.
+*Search the bookcase on the Western wall for a Black knight helm.
+*Return to the guard via the smashed window.
+*Speak to him, using all three options so that he takes each of your three items
+*Speak with the Gossip using all three options.
+}}

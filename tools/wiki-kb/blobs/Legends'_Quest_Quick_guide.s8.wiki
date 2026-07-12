@@ -1,0 +1,20 @@
+===Yommi tree & the final fight===
+''Items needed: [[Yommi totem]], [[Radimus notes]], bullroarer, combat equipment, axe & machete (if you banked before fight) (You need the sacred water and seeds at this step since the totem isn't created yet.)''
+{{Checklist|*''Skills needed: 45 Herblore (boostable)'' Use the germinated seeds on the [[Fertile Soil (scenery)|fertile soil]] patch (8 steps north and 5 steps west of the pool). '''Note''': It is possible to be unsuccessful when planting the seeds. Plant the seeds again until a sapling grows. If more seeds are needed, visit the cave and speak to [[Ungadulu]] for more.
+*Once planted, the yommi bush will grow leaves. Use the sacred water on it and it will become an adult yommi tree.
+*Use your axe on the adult yommi tree. Use your axe on the downed tree twice to make it into a totem.
+** {{Colour|red|'''Warning'''}} The yommi tree will rot if you take too much time before carving it and you will need to redo the process, including getting sacred water.
+*Lift it from the ground and you will now have a [[yommi totem]] in your inventory.
+*If "evil" path was chosen:
+**'''Turn on Protection from Melee ''<u>before</u>'' the next step, as you will take 4 hits without being able to move, eat, or turn on prayers - you can get hit for up to 72 damage all on the same tick. It is recommended to keep praying at ''all'' times.'''
+**Use your totem on any old, brown totem pole.
+**Kill the three skeletons that appear one at a time, then kill Nezikchened. <b>Keep your prayer active after each skeleton dies, as Nezikchened will reappear and hit you four more times.</b>
+*If "good" path was chosen:
+**'''Turn on Protection from Melee ''<u>before</u>'' the next step, as you will take 4 hits without being able to move, eat, or turn on prayers - you can get hit for up to 72 damage all on the same tick. It is recommended to keep praying at ''all'' times.'''
+**Use your totem on any old, brown totem pole.
+**Turn on [[Protect from Melee]] and defeat [[Nezikchened]].
+*Use your totem on the pole again.
+*Gujuo will appear and give you a [[gilded totem]]. If he doesn't show up, swing the bullroarer.
+*''Collect 5 [[palm leaves]] by shaking a [[Leafy Palm Tree]] near the Water Pool for the Karamja Hard Diary if needed (you can drop and pick up the same palm leaf several times).''
+*''Collect a [[vanilla pod]] south-west of the Water Pool for Recipe for Disaster if needed.''}}
+{{Map|2818,2895|align=right|mtype=square|r=3|caption=Location of the vanilla pods.}}

@@ -1,0 +1,46 @@
+==Details==
+{{Quest details
+|start = Talk to [[King Lathas]] on the {{FloorNumber|uk=1}} of [[Ardougne Castle]].
+|startmap = 2577,3293,plane:1
+|difficulty = Experienced
+|description = Continuing the Plague City series, the Regicide Quest takes you beyond the 'Well of Voyage' to a new realm.
+
+King Lathas will employ you once again, this time for the grim task of disposing of his brother.
+
+Upon travelling to the realm you will find yourself surrounded by new and strange plants, animals and even a new race.
+
+Once there, you will see that everything is not as serene as it first appears.
+|length = Long
+|requirements = * Completion of the following quests:
+** [[Underground Pass]]
+*** [[Biohazard]]
+**** [[Plague City]]
+* {{SCP|Crafting|10|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Agility|56|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 110 [[Tyras guard]] (can be [[safespotted]])
+|items = * 5 [[coal]] in the bank (although at least 25 is recommended; you may bring the coal noted to save you a bank trip)
+* [[Bow]] and some [[arrows]] (or [[fire arrows|lit fire arrows]] if you already have some.)
+* 2 [[rope]]s (3 in case you fail)
+* [[Spade]]
+* [[Limestone]] (or a [[pickaxe]] and {{SCP|Mining|10+|link=yes}}). Note that [[limestone brick]]s will '''not''' work.
+* [[Tinderbox]]
+* [[Strip of cloth]] (made on a [[loom]] with 4 [[balls of wool]]; '''not''' a [[bolt of cloth]] - you can use the [[loom]] at the [[Iorwerth Camp]] or at the [[Falador]] farm)
+* [[Pestle and mortar]]
+* [[Gloves]], the list on [[Quicklime]] shows all gloves that work.
+* [[Pot]]  (obtainable during quest)
+* [[Cooked rabbit]] (obtainable during quest) or [[roast rabbit]]
+|recommended = * {{SCP|Combat|60|link=yes}}
+* Some [[antidote++]] or [[antipoison]]s
+* [[Stamina potion]]s and [[weight-reducing gear]] (such as [[Boots of Lightness]] or the [[Graceful outfit]])
+* At least 3 [[Summer pie]]s to boost [[Agility]] for several obstacles, and to recover health from the traps
+* [[Ranged]], [[Magic]] or a [[Halberd]] to safespot the [[Tyras Guard]]
+* [[Coins]] to buy food in the [[Underground Pass (dungeon)|Underground Pass]]
+* Any [[axe]] to cook the raw rabbit anywhere
+* Fast travel to Rimmington such as [[Rimmington teleport]] tablets, [[Teleport to House]] if your house is in Rimmington, [[Ring of the elements]], [[Falador teleport]], or [[Explorer's Ring 2]] or higher.
+* Fast travel to the Underground Pass ([[West Ardougne teleport]] or travel from East Ardougne)
+* <b>OPTIONAL:</b> Your [[Iban's staff]] or [[Iban's staff (u)|its upgraded counterpart]] in order to recharge it for free by using it on the [[Well_(Paladin_badges)|well]] during the [[Underground Pass (dungeon)|Underground Pass]] section
+|kills = * [[Tyras guard]] ''(level 110)'' ''Safespottable''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

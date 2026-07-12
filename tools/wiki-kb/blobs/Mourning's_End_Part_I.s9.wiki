@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Mourning's End Part I
+|image = [[File:Mourning's End Part I reward scroll.png|centre]]
+|qp = 2
+|rewards = *{{SCP|Thieving|40,000}} [[Thieving]] experience
+*{{SCP|Hitpoints|25,000}} [[Hitpoints]] experience
+*Access to the [[Mourner HQ]] basement and the village of [[Lletya]]
+*[[Elf teleport crystal]]
+*The [[fixed device]]
+*Full [[Mourner gear|mourner clothing]]
+}}

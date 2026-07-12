@@ -1,0 +1,52 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Dwarven Boatman]] by the underground [[River Kelda]], accessible through the Keldagrim entrance east of [[Rellekka]], in the cave beyond the statues.
+|startmap = 2842,10129
+|difficulty = Intermediate
+|description = Five hundred years have passed since the rule of King Alvis, saviour of Keldagrim and victim of his own inventions.
+
+He founded the Consortium: the gathering of Mining companies that were to serve the monarchy. But, eventually, the monarchy came to serve the Consortium.
+
+By the time of his death, the monarchy was all but abolished. Now the Kings in Keldagrim are but a distant memory... with only the statue of King Alvis to remind the people of the old days, the dark days.
+
+So begins the Rise of the Red Axe, the new multi-part storyline centred around the dwarves and their capital of Keldagrim. The first quest, The Giant Dwarf, introduces the city and the powerful business Consortium that rules the dwarven realm. Discover weird goings-on, narrowly escape from falling chunks of rock, ride around in minecarts and... make sure you don't bump into the wrong person on the way to the city!
+|length = Medium
+|requirements = * {{SCP|Crafting|12|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Firemaking|16|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Magic|33|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Thieving|14|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = * 200 [[coins]] for the clothes
+* Means to cast [[Telekinetic Grab]] ([[air rune|air]] and [[law rune]])
+* [[Logs]] (most logs will work, however, arctic pine, redwood & coloured logs do not work)
+* [[Tinderbox]]
+* [[Coal]] (obtainable during the quest with 30 [[Mining]])
+* [[Iron bar]]
+* 3 cut [[sapphire]]s 
+* Various [[ores]] and [[bar]]s (mostly obtainable during the quest, see below)
+* [[Redberry pie]]
+|recommended = * Fast travel to several locations
+** Keldagrim, east of Rellekka ([[Fairy rings]] to {{fairycode|dks}}, [[Enchanted Lyre]], [[Rellekka teleport]] or [[Teleport to House]] if your house is in Rellekka)
+** Mudskipper Point ([[Fairy rings]] to {{fairycode|aiq}}, [[Rat Pits]] [[grouping]] teleport to Port Sarim, [[Rimmington teleport]] or [[Teleport to House]] if your house is in Rimmington)
+** Varrock, if you have not yet met [[Thurgo]] in [[The Knight's Sword]] ([[Varrock teleport]], [[Chronicle]], [[ring of wealth]] to the Grand Exchange or [[combat bracelet]] to the Champions' Guild)
+*[[Stamina potion|Stamina]] or [[energy potion]]s
+*About 10 of each of the following items in your bank, which may or may not be necessary for the [[The Giant Dwarf#Joining the consortium|timed delivery tasks]];
+**[[Clay]] (not [[soft clay]])
+**[[Copper ore]]
+**[[Tin ore]]
+**[[Iron ore]]
+**[[Silver ore]]
+**[[Gold ore]]
+**[[Mithril ore]]
+**[[Coal]]
+**[[Bronze bar]]
+**[[Iron bar]]
+**[[Silver bar]]
+**[[Gold bar]]
+**[[Steel bar]]
+**[[Mithril bar]]
+**Alternatively, you can gather all these materials, except clay, during the quest with {{SCP|Smithing|50|link=yes}}, and either about 5000 [[coins]] or a [[pickaxe]] and {{SCP|Mining|55|link=yes}}.
+*[[H.A.M. Robes]] (Optional)
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin to learn [[Thurgo]]'s location
+</poem>
+}}

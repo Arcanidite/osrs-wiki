@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|start = Speak to [[Kolodion]] at the [[Mage Arena]] bank located in level 53 [[Wilderness]].
+|startmap = 2538,4716
+|description = Prove your magical might to Kolodion and gain the ability to fight in his arena.
+|difficulty = Experienced
+|length = Short
+|requirements = *{{SCP|Magic|60|link=yes}} {{Boostable|No}}  {{Questreqstart|yes}}
+|items = *Runes or a [[powered staff]] to fight [[Kolodion]]
+*Something to cut webs ([[knife]], [[slash weapon]], or any [[Wilderness sword]])
+|recommended = *{{SCP|Combat|55|link=yes}}
+*[[Prayer Potion]]s
+*Food
+|kills = [[Kolodion#Demon|Kolodion]] in the form of a [[Black Demon]] (level 112)
+|ironman = '''{{Colour|red|Warning:}}''' [[File:Hardcore ironman chat badge.png]] This quest requires travel to the deep, level 56 [[Wilderness]]. Caution must be taken not only getting to the arena but also during the [[miniquest]]. [[Player-killers]] are able to attack you while you are doing the minigame fight.
+|leagueRegion = {{LeagueRegion|Wilderness}} - location requirement
+}}

@@ -1,0 +1,9 @@
+==Reward==
+{{Quest rewards
+|name = Goblin Diplomacy
+|image = [[File:Goblin Diplomacy reward scroll.png|centre]]
+|qp = 5
+|rewards = 
+* {{SCP|Crafting|200}} [[Crafting]] experience
+*A [[gold bar]]
+}}

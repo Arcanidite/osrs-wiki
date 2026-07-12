@@ -1,0 +1,32 @@
+==Details==
+{{Quest details
+|start = Talk to [[Mistag]] in the [[Dorgesh-Kaan mine]].
+|startmap = 3317,9613
+|difficulty = Intermediate
+|description = Humans have been visiting the Dorgeshuun mines for some time now, but no Dorgeshuun has visited the surface since the signing of the Lumbridge-Dorgeshuun treaty. The Dorgeshuun Council fears that the [[Humans Against Monsters|H.A.M.]] group may be planning another attack, and want to send an agent to the surface to investigate. But they do not want to send someone to the surface without a guide...
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[The Lost Tribe]]
+***[[Goblin Diplomacy]]
+***[[Rune Mysteries]]
+*{{SCP|Agility|23|link=yes}} {{Boostable|yes}} {{Questreqstart|no|}}
+*{{SCP|Thieving|23|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*The ability to defeat a level 50 enemy with [[Melee]] or [[Magic]]
+|items = *Any [[light source]] ([[lantern]]s are recommended - open light sources such as a [[candle]] can cause [[gas explosion]]s and require a [[tinderbox]])
+*2 full sets of [[H.A.M. robes]] (all 7 pieces) (chance to receive robes is significantly higher during the quest){{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1112039679547850752|date=30 March 2018|archiveurl=https://reldo.runescape.wiki/i/109636|archivedate=28 May 2020|quote=Are you on the bit of the quest where you need it? If so, the chance of you getting HAM kit is considerably higher.}}
+*[[Pickaxe]] (if not using a [[games necklace]] to teleport to [[Tears of Guthix (minigame)|Tears of Guthix]] - only usable after you have completed the [[Tears of Guthix]] quest)
+|recommended = *{{SCP|Combat|30|link=yes}}
+*[[Weapon]], [[armour]], and some [[food]]
+*[[Games necklace]] to Tears of Guthix (only usable after you have completed the [[Tears of Guthix]] quest)
+*[[Lumbridge teleport]] [[runes]] or [[Lumbridge teleport|teleportation tabs]]
+'''Optional (to quickly complete the [[Tears of Guthix]] quest while in the [[Lumbridge Swamp Caves]]):'''
+*A lit [[sapphire lantern]].
+*[[Chisel]]
+*[[Pickaxe]]
+*[[Rope]] (if using the [[Lumbridge Swamp]] entrance for the first time)
+|kills = *[[Sigmund]] ''(level 50)''
+*3 [[H.A.M. Guard]]s ''(level 22)'' (optional)
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

@@ -1,0 +1,23 @@
+===Orbs of light===
+'''''Items required:''' A [[plank]], a [[spade]], and 4 inventory spaces needed''
+{{Checklist|
+*You can now pray Rapid Heal for the duration of this step (there is an altar up ahead). Run west past the zombie camp, there will be five sets of odd markings along the walls of the corridor (You must attempt to disable the wall traps or walk past them).
+**Grab the plank by the furnace if you did not grab one earlier.
+*You will reach an altar, take the north path using the plank on the flat rocks.
+*Take the orb and walk back to the altar.
+*Take the north-west path with the ogres and blessed spiders. Take the orb.
+*Take the centre-most west path, traversing the flat rocks using the plank. Take the orb.
+*Take the final path, '''do not pick up the orb''', but search the rock beneath instead and disarm the trap to get the orb.
+*Return to the zombie camp to the east.
+*Use the 4 orbs on the furnace.
+*Return to the altar, turn off Rapid Heal/pray at altar and climb down the well.
+*'''Optional''': Search the two stacked crates in the room you landed in to find 2 [[salmon]] and 2 [[meat pie]]s.
+[[File:Underground Pass - Second area map.png|center]]
+*Go west and picklock the south-east [[Slave (Underground Pass)|slave]] cage gate.
+*Use your spade on the loose mud at ('''2''').
+*Go west and cross the ledge at ('''3''').
+**'''Note''': You may fall down off the ledge and have to go back to the slave cage again at ('''2''').
+*If you have 50 thieving, take the short cut at ('''5''') - avoid the bubbles!
+*If you lack 50 thieving, cross the stone bridge maze to get to the other side. ('''4''')
+*Squeeze-through the pipe at ('''6''').
+}}

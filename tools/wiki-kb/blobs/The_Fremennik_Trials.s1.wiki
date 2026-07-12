@@ -1,0 +1,54 @@
+==Details==
+{{Quest details
+|start = Talk to [[Brundt the Chieftain]] in the [[Rellekka]] longhall.
+|startmap = 2658,3668
+|difficulty = Intermediate
+|description = Council workmen have at last found the time to make repairs to the footbridge that connects Kandarin with the Barbarian town of Rellekka.
+
+Do you have what it takes to impress the barbarians who live there, and perhaps be welcomed as an honorary member of their clan?
+|length = Medium
+|requirements = * Ability to defeat a level-69 [[Draugen]]
+* Ability to defeat a [[Koschei|fairly strong warrior]] without [[armour]], [[weapons]], or [[spells]]
+|items = * 5,252 [[coins]]
+* [[Beer]] (obtainable during quest)
+* [[Tinderbox]]
+* Either a [[raw shark]], [[raw manta ray]], or [[raw sea turtle]]
+* [[Lyre]], obtainable as a drop from [[Lanzig]], [[Borrokar]], [[Lensa]], or [[Freidir]], or the skills and materials to make one:
+** {{SCP|Fletching|25|link=yes}}, {{SCP|Woodcutting|40|link=yes}}, and {{SCP|Crafting|40|link=yes}} (all [[boostable]])
+** Woodcutting [[axe]]
+** [[Knife]]
+** [[Potato]] (obtainable during quest)
+** [[Onion]] (obtainable during quest)
+** [[Cabbage]] (obtainable during quest)
+|recommended = * {{SCP|Combat|40|link=yes}}
+* {{SCP|Agility|48|link=yes}} (when locating the [[Draugen]])
+* [[Food]]
+* [[Armour]] and a [[weapon]] ('''note:''' Ranged is '''not''' effective)
+* 3-5 [[prayer potions]]
+* [[Stamina potion]]s
+* A [[super combat potion]] or [[super potion set|super set]]
+* [[Camelot teleport]]
+* [[Rellekka teleport]] or [[Teleport to House]] if your house is located in [[Rellekka]]
+** [[Fairy ring]] {{fairycode|AJR}} or {{fairycode|CJR}} may also be used 
+* 7 [[Ring of recoil|rings of recoil]] (only if attempting to defeat [[Koschei]]'s final form)
+|kills = * [[Koschei the deathless]] (first three forms)
+* [[Draugen]] ''(level 69)''
+'''OPTIONAL'''
+* [[Lanzig]], [[Borrokar]], [[Lensa]], or [[Freidir]] ''(level 48)'' (multiple times)
+|ironman = * {{SCP|Fishing|76|link=yes}} {{Boostable|yes}} is required to fish for [[raw shark]]s yourself, but there are multiple alternatives:
+** [[Rufus' Meat Emporium]] in [[Canifis]] sells a single [[raw shark]].
+** [[Frankie's Fishing Emporium]] in [[Port Piscarilius]] sells [[raw shark]].
+** [[River troll]]s in the [[Enchanted Valley]] drop them commonly, but require access to [[fairy rings]].
+** [[Waterfiend]]s, combat level 115, rarely drop noted [[raw shark]].
+** [[Mogre]]s, combat level 60, require completion of [[Skippy and the Mogres]], {{SCP|Slayer|32|link=yes}} {{Boostable|yes}}, and [[fishing explosives]] to attack. They can rarely drop a [[raw shark]].
+** [[Wintertodt]] can drop a [[raw shark]] after {{SCP|Fishing|43|link=yes}}, though it will be very rare, but chances increase with Fishing level. 
+** [[Raw shark]] has a slight chance to drop from salvaging [[Barracuda salvage]].
+* [[File:Ultimate ironman chat badge.png]] Sections of this quest have strict inventory requirements:
+** [[#Thorvald the Warrior|Thorvald the Warrior]]: No weapons, armour, or runes. (A [[Looting bag]] is not allowed, regardless of its contents)
+** [[#Peer the Seer|Peer the Seer]]: No items '''at all''' equipped or in your inventory.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}
+'''Note:''' If you start the quest, you will not be able to use [[Peer the Seer]] to bank your items, unless the player completes the easy [[Fremennik Diary|Fremennik Achievement Diary]] (requires completion of this quest), which re-enables his [[deposit box]] functionality. Before fighting Koschei the deathless, you are allowed to use the Peer the Seer to bank your forbidden items.

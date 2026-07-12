@@ -1,0 +1,54 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Karamja" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+| 1. Pick 5 [[banana]]s from the [[Banana plantation|plantation]] located east of the [[Karamja Volcano|volcano]].
+|{{NA|None}}
+|-
+| 2. Use the [[Ropeswing_(Brimhaven)|rope swing]] to travel to the [[Moss Giant Island]] north-west of [[Karamja]].
+| 
+*{{SCP|Agility|10|link=yes}}
+|-
+| 3. Mine some [[gold ore|gold]] from the rocks on the [[North Brimhaven mine|north-west peninsula]] of [[Karamja]].
+| 
+*{{SCP|Mining|40|link=yes}}
+*Any [[pickaxe]]
+|-
+| 4. Travel to [[Port Sarim]] via the dock, east of [[Musa Point]].
+|
+*30 [[coins]] or an activated [[Ring of charos (a)|ring of charos]]
+''This can also be completed by travelling to Port Sarim from [[The Pandemonium]] via [[Seaman Morris]].''
+|-
+| 5. Travel to [[Ardougne]] via the port near [[Brimhaven]].
+| 
+*30 [[coins]] or an activated [[Ring of charos (a)|ring of charos]]
+|-
+| 6. Explore [[Cairn Isle|Cairn Island]] to the west of [[Karamja]].
+| 
+*{{SCP|Agility|15|link=yes}}
+|-
+| 7. Use the [[Fishing spots]] north of the [[banana plantation]].
+''Note: Fishing at any of the [[fishing spots]] there will count for this task.
+|
+*[[Harpoon]] (or [[Barbarian_Training#Barbarian_Fishing|bare-handed fishing]]), [[lobster pot]], [[small fishing net]], or a [[fishing rod]] with [[Fishing bait|bait]], depending on the spot you fish at
+|-
+| 8. Collect 5 [[seaweed]] from anywhere on [[Karamja]].
+''Note: You can just drop and pick up the same [[seaweed]] five times. ''
+|
+*[[Seaweed]] (can be found near [[Jiminua's Jungle Store.|Jiminua's Jungle Store]])
+|-
+| 9. Attempt the [[TzHaar Fight Pit]]s or [[Fight Cave]].
+''Note: You can simply enter and leave after the first wave begins. No actual attempt is necessary, but the [[Fight Pits]] will not allow entrance without at least one other player.''
+|{{NA|None}}
+|-
+| 10. Kill a [[jogre]] in the [[Pothole dungeon]].
+|
+*[[Weaponry]]
+|}
+
+===Rewards===
+*[[Karamja gloves 1]]:
+**While worn, [[Brimhaven]]—[[Ardougne]] and [[Musa Point]]—[[Port Sarim]] boat trips cost 15 [[coins]] instead of 30 [[coins]]
+**While worn, items in [[Karamja gloves#Discounted shops|various shops]] around [[Karamja]] are sold at a discounted rate and bought for more
+*[[Antique lamp (Karamja Diary)|Antique lamp]] worth 1,000 experience in any skill of any level (instead of the usual [[Antique lamp (easy)|antique lamp]] for this tier)

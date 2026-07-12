@@ -1,0 +1,63 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Lumbridge & Draynor" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Complete a lap of the [[Draynor Village Rooftop Course|Draynor Village agility course]].
+|{{NA|None}}
+|-
+|2. Slay a [[Cave bug]] beneath [[Lumbridge Swamp Caves|Lumbridge Swamp]].
+|
+*{{SCP|Slayer|7|link=yes}}
+*[[Light source]]
+*[[Rope]] if the caves haven't been entered yet
+|-
+|3. Have [[Archmage Sedridor|Sedridor]] teleport you to the [[Rune essence mine]].
+|
+*{{SCP|Quest}} Completion of [[Rune Mysteries]]
+|-
+|4. Craft some [[water rune]]s from Essence.
+|
+*{{SCP|Runecraft|5|link=yes}}
+*[[Pure essence|Pure]], [[Daeyalt essence|daeyalt]], or [[rune essence]]
+*Access to the [[Water Altar]] ([[water talisman]]/[[water tiara|tiara]], [[elemental talisman]]/[[Elemental tiara|tiara]], or the [[Abyss]])
+|-
+|5. Learn your age from [[Hans]] in [[Lumbridge]].
+|{{NA|None}}
+|-
+|6. Pickpocket a [[man]] or [[woman]] in [[Lumbridge]].
+|{{NA|None}}
+|-
+|7. Chop and burn some [[oak logs]] in [[Lumbridge]].
+|
+*{{SCP|Woodcutting|15|link=yes}} and {{SCP|Firemaking|15|link=yes}}
+*Any [[axe]] and [[tinderbox]]
+|-
+|8. Kill a [[Zombie]] in [[Draynor Sewers]].
+|{{NA|None}}
+|-
+|9. Catch some [[Anchovies]] in [[Al Kharid]].
+|
+*{{SCP|Fishing|15|link=yes}}
+*[[Small fishing net]]
+|-
+|10. Bake some [[Bread]] on the [[Cooking range (Lumbridge Castle)|Lumbridge kitchen range]].
+|
+*{{SCP|Quest}} Completion of [[Cook's Assistant]]
+*[[Bread dough]], multiple recommended in case of [[Burnt bread|burning]] one (always successful at {{SCP|Cooking|34|link=yes}})
+|-
+|11. Mine some [[Iron ore]] at the [[Al Kharid mine]].
+|
+*{{SCP|Mining|15|link=yes}}
+*Any [[pickaxe]]
+|-
+|12. Enter the [[H.A.M. Hideout]].
+|
+*None, though a [[lockpick]] is recommended
+|}
+
+===Rewards===
+*[[Explorer's ring 1]]:
+**Can restore 50% of [[Energy|run energy]] twice a day
+**Allows 30 casts of [[Low Level Alchemy]] without [[runes]] each day (no experience granted unless done at the [[Alchemist's Playground]], still requires 21 [[Magic]])
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill level of at least level 30

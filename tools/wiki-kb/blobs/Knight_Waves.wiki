@@ -1,0 +1,165 @@
+{{External|rs=Knight Waves training ground}}
+{{Safe activity}}
+{{Infobox Activity
+|name = Knight Waves
+|image = [[File:Knight Waves.png|300px]]
+|release = [[24 July]] [[2007]]
+|update = King's Ransom
+|type = Quest
+|members = Yes
+|location = [[Camelot Castle]]
+|music = [[Camelot (music_track)|Camelot]]
+|map = {{Map|name=Knight Waves|x=2758|y=3507|height=300|width=300|zoom=2|plane=2}}
+|leagueRegion = Kandarin
+}}
+The '''Knight Waves''' activity is located on the top floor of [[Camelot Castle]] within the Camelot training grounds (climb up on the south-western tower ladder). Players must have completed the [[King's Ransom]] quest to enter. A [[Squire (Camelot)|squire]] standing outside the door of the training room will explain some of the restrictions present in the activity including that you can only use Melee, cannot use prayers, and respawn outside the training room if you die.
+
+After completing the training room, players unlock the [[Chivalry]] (level 60 [[Prayer]] and 65 [[Defence]]) and [[Piety]] (level 70 Prayer and 70 Defence) prayers.
+
+You have to fight a total of eight tough knights (all over level 100) who each will drain certain [[combat]] stats. You '''can not''' use [[Prayer]], [[Ranged]], or [[Magic]] within the Training Ground.
+
+High level players with 100+ combat can easily complete this minigame with full [[Guthan's set]].
+
+[[Stat restore potion]]s are '''vital''', especially to restore your Defence as some knights can lower your Defence extremely fast. Also note that as your Defence is lowered, knights will have an even higher chance of lowering your stats.
+
+'''Note:''' If you feel like you cannot win, it's better to let yourself die within the training ground because all stats and run energy are restored upon death, and because that way you don't have to start over at the first knight. (The squire says you must restart from the beginning if you fail, but he is incorrect.)
+
+'''The Camelot training room/Knight Waves Training Ground is a safe death for Hardcore Ironmen{{CiteForum|author=Mod Ronan|url=https://secure.runescape.com/m=forum/forums?380,381,345,65849743|archiveurl=https://reldo.runescape.wiki/i/5193706|title=Hardcore Ironman Mode|forum=Old School Announcements|postdate=10 November 2016|archivedate=16 Jan 2022}}, but it is not a safe death for Hardcore Group Ironmen.'''
+
+'''<u>Important</u>''': Do not leave the training room via door. It '''will''' reset your wave back to the first one. If you die, you go back to the knight you left off on. You can also freely teleport out of the training room and it will save your progress.
+
+==The Knight Waves==
+{| class="wikitable align-center-1"
+!Wave
+! colspan="2" |Knight
+! align="center" |Level
+! align="center" |Hitpoints
+!Weak against
+!Stat(s) lowered
+|-
+| style="font-size:18px;" |1
+|[[File:Sir Bedivere.png|100x100px|link=Sir Bedivere]]
+|[[Sir Bedivere]]
+|110
+|90
+|[[Slash]], [[Stab weapons|Stab]] attacks
+|[[Strength]]
+|-
+| style="font-size:18px;" |2
+|[[File:Sir Pelleas.png|100x100px|link=Sir Pelleas]]
+|[[Sir Pelleas]]
+|112
+|99
+|[[Slash]], [[Crush weapons|Crush]] attacks
+|[[Defence]]
+|-
+| style="font-size:18px;" |3
+|[[File:Sir Tristram.png|100x100px|link=Sir Tristram]]
+|[[Sir Tristram]]
+|115
+|105
+|[[Slash weapons|Slash]], [[Stab]] attacks
+|[[Strength]]
+|-
+| style="font-size:18px;" |4
+|[[File:Sir Palomedes.png|100x100px|link=Sir Palomedes]]
+|[[Sir Palomedes]]
+|118
+|100
+|[[Crush]] attacks
+|[[Attack]]
+|-
+| style="font-size:18px;" |5
+|[[File:Sir Lucan.png|100x100px|link=Sir Lucan]]
+|[[Sir Lucan]]
+|120
+|105
+|[[Crush]], [[Slash weapons|Slash]] attacks
+|[[Defence]], [[Attack]]
+|-
+| style="font-size:18px;" |6
+|[[File:Sir Gawain.png|100x100px|link=Sir Gawain]]
+|[[Sir Gawain]]
+|122
+|110
+|[[Stab weapons|Stab]], [[Slash weapons|Slash]] attacks
+|[[Attack]]
+|-
+| style="font-size:18px;" |7
+|[[File:Sir Kay.png|100x100px|link=Sir Kay]]
+|[[Sir Kay]]
+|124
+|110
+|[[Stab]], [[Crush weapons|Crush]] attacks
+|[[Defence]]
+|-
+| style="font-size:18px;" |8
+|[[File:Sir Lancelot.png|100x100px|link=Sir Lancelot]]
+|[[Sir Lancelot]]
+|127
+|115
+|[[Slash]] attacks
+|[[Defence]], [[Strength]]
+|}
+
+==Strategy==
+[[File:Camelot training room safespot.png|thumb|You can wait until the health bar disappears, hit, and then return to the safespot and repeat until the knight dies.]]
+'''Note:''' You have a limited amount of time to fight each knight. The Knights will '''despawn''' if you take too long to kill them, logging out  and back in or teleporting away will resume the fight starting on that knight allowing you to use a bank. Also note that [[Magic]], [[Ranged]], and [[Prayer]] will not work in these fights. 
+
+A safe method to kill the knights is to hide behind the [[dummy]] while positioning the knight to be diagonally across from you and behind the dummy. This way, you can run up to the knight and hit him without fear of retaliation as long as you run back behind the dummy (i.e. [[flinching]]). A reliable way of setting this up is to draw the knight toward the north-east corner of the room, then southward to a tile directly west of a dummy, then duck in between the dummies. A general rule of thumb on when it's safe to hit the knight is when the knight's health bar disappears. Using the [[Dragon dagger (p++)]] [[special]] with this method is a good way to take down the knight's health. Do keep in mind that the knights may despawn if the fight takes too long, however.
+
+If you are going to fight the knights head on, [[monkfish]] or better is suggested. [[Cooked karambwan|Karambwan]] would be ideal, for their [[fast foods#Attack_delay|reduced attack delay]]. The knights can hit very high, up to 23 for the final knight. Keep in mind that there are 4 [[Defence]]-lowering knights, 3 [[Strength]]-lowering knights, and 3 [[Attack]]-lowering knights. 
+
+With at least 65 Attack, Strength and Defence, the activity can be completed relatively easily with a setup including a [[zombie axe]] or [[Zamorakian hasta]] (as all knights are weak to either slash or crush), a [[dragon defender]], and [[rune armour]]. If the zombie axe and Zamorakian hasta are unavailable, other weapon options include the [[abyssal whip]] or [[dragon scimitar]] for the slash-weak knights, and [[dragon mace]] or [[sarachnis cudgel]] for the crush-weak knights. An inventory consisting of 2 [[restore potion]]s, 1 each of [[attack potion|attack]], [[strength potion|strength]], and [[defence potion|defence]] potions, a [[special attack|spec weapon]] such as the [[dragon dagger]] or [[dragon mace]], and the remainder filled with [[Cooked karambwan|karambwan]]s should suffice to defeat all of the knights in one go.
+
+
+
+With Attack and Defence 70 a secondary strategy can be used.  
+
+For this the following is required: [[Guthan's armour set]], 2 or 3 [[Restore potion]]s and fill the rest of the inventory with food. Using the passive healing effect of the armour set allows you to reduce the amount of food required or stretch the supplies you have.
+
+==Tips==
+
+*[[Restore potion]]s are recommended over [[Super restore potion]]s because you can't use prayer.  A single [[Menaphite remedy]] can also be used as a continuous stat restore.
+*Take multiple [[Restore potion|Restore]]s, [[Saradomin brew]]s, and [[Combat potion]]s if you plan on fighting the knights head on; however, this is not needed if you plan to use the aforementioned method involving the [[dummies]].
+*[[Lobsters]] or [[swordfish]] are good enough for the minigame if you plan on using the dummy method (assuming around at least 65+ [[Combat]] stats). If you are not confident in your combat stats or plan on fighting them head on, use [[sharks]] or [[Summer pie|summer pies]].
+*[[Dharok's set]] works very well in this minigame if you [[hit-and-run]] behind the dummies, although risky if you have bad timing or lag.
+*A [[poisoned]] [[dragon dagger]] works especially well due to the damage the [[special attack]] can provide and the poison's ability to whittle down the knights. A [[spear]] poisoned with [[karambwan paste]] is also a good option, as its poison does the same amount of damage as [[weapon poison(++)]].
+*Exploiting each knight's weakness is very effective. Taking a weapon (or multiple) capable of performing each [[attack style]] and switching to match your current opponent's weakness will show a noticeable improvement over simply using one attack style.
+*If you die to a knight, you can go to your bank and restock on supplies and return to the training room. When you re-enter the room, you will be fighting the last knight that killed you instead of starting over.
+
+==Rewards==
+*{{SCP|Attack|20,000}} [[Attack]] experience
+*{{SCP|Strength|20,000}} [[Strength]] experience
+*{{SCP|Defence|20,000}} [[Defence]] experience
+*{{SCP|Hitpoints|20,000}} [[Hitpoints]] experience
+*Access to two new [[prayers]]:
+**[[Chivalry]] (requiring 60 Prayer & 65 Defence)
+**[[Piety]] (requiring 70 Prayer & 70 Defence)
+*Ability to change one's [[Spawning#Respawn point|spawn point]] to [[Camelot]]
+
+==Required for completing==
+Completion of the Camelot training room is required for the following:
+*[[Hard Kandarin Diary]]
+*[[Hard Morytania Diary]]
+
+==Transcript==
+{{hastranscript|miniquest}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 15 December 2015
+|update = Christmas 2015
+|poll = 
+|change = The Knights in the Camelot training room are now immune to venom.
+}}
+{{Subject changes footer}}
+
+==References==
+{{reflist}}
+
+{{Miniquests}}
+{{King's Ransom}}
+{{Camelot}}
+[[Category:Members]]

@@ -1,0 +1,9 @@
+===Rewards===
+*[[Varrock armour 2]]:
+**While worn, 10% chance of mining double [[ore]]s up to and including [[mithril ore|mithril]], as well as [[Mining enhancers#List of affected rocks|various other minerals]] (experience granted for both minerals)
+**While worn, 10% chance of smelting 2 [[bar]]s at once, up to and including [[mithril bar|mithril]], when using the [[Edgeville furnace]] (experience granted for both bars)
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*[[Zaff]] will sell you 30 [[bank note|noted]] [[Battlestaff|battlestaves]] as a single stack every day for 210,000 [[coins]], resellable on the [[Grand Exchange]] for a profit of {{NoCoins|{{GEPT|Battlestaff|30}}-210000}} [[coins]] (after tax)<ref name="WhyWasThisInTheLead"/>
+*The ability to toggle the destination of [[Varrock Teleport]] from [[Varrock Square]] to the [[Grand Exchange]]
+*The [[skull sceptre]] will now hold up to 18 [[Skull_sceptre#Using_the_Sceptre|charges]], up from 14
+*Individual parts used to make the [[skull sceptre]] now give two extra [[Bone fragments|bone fragments]] per component when chiselled

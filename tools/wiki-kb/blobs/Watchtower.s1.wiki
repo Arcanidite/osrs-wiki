@@ -1,0 +1,56 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Watchtower Wizard]] in the [[Watchtower (building)|Watchtower]] north of [[Yanille]]; you must climb the [[trellis]] on the north side of the tower.
+|startmap = 2546,3116,plane:2
+|difficulty = Intermediate
+|description = The Wizards of the Yanille Watch Tower have been reporting increased ogre sightings recently. Use a wide variety of your skills to help the wizards recover their stolen power crystals and stop the advance of the ogre hordes!
+|length = Medium
+|requirements = * {{SCP|Magic|14|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Thieving|15|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Agility|25|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} <ref name="Note">Climbing the trellis to begin the quest requires 18 Agility.</ref>
+* {{SCP|Herblore|14|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Mining|40|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 68 [[Ogre]] and run past level 111 [[Blue dragons]]
+|items = * 20 [[coins]]
+* [[Gold bar]]
+* [[Tinderbox]]
+* [[Death rune]] (obtainable during the quest)
+* [[Pickaxe]]
+* [[Dragon bones]]
+* 2 [[rope]]s (2nd rope obtainable during the quest)
+* [[Guam potion (unf)]]
+**[[Guam leaf]] and [[vial of water]] if making your own potion (vial obtainable during the quest)
+* Any [[light source]] (obtainable during the quest)
+* [[Pestle and mortar]] (obtainable during the quest)
+* [[Bat bones]] (obtainable during the quest with a [[knife]] or [[slash weapon]], grinding the bat bones before starting the quest to leave the pestle and mortar in the bank is also an option)
+* [[Jangerberries]] (obtainable during the quest)
+|recommended = * {{SCP|Combat|35|link=yes}}
+* Any instant [[Transportation#Teleportation|teleportation]] method if you need to leave the Ogre cave
+* [[Weapon]], [[armour]] and some [[food]]
+* [[Stamina potion|Stamina]] or [[energy potions]]
+* [[Anti-dragon shield|Anti-dragon]]/[[Dragonfire shield]] and [[antifire potion]]s or a [[super antifire]] to greatly reduce the damage taken from the [[blue dragon]]s in the [[Ogre Enclave]] (using both or just [[super antifire]] completely negates [[dragonfire]] damage) 
+* {{SCP|Prayer|43|link=yes}} for [[protection prayers]]
+* Fast travel to the [[Watchtower (building)|Watchtower]] and the [[Ogre Enclave]] ([[Yanille teleport]], [[Teleport to house]] if your house is in Yanille, [[Nightmare Zone]] or [[Castle Wars]] [[minigame]] teleport, [[ring of dueling]] to Castle Wars or [[Fairy Rings]] to {{fairycode|ciq}})
+* {{SCP|Agility|39|link=yes}}, {{SCP|Ranged|21|link=yes}}, {{SCP|Strength|38|link=yes}}, a [[crossbow]] and a [[mith grapple]] for the shortcut over [[Yanille]]'s southern wall
+|kills = * [[Gorad]] ''(level 68)'' (safespottable)
+* [[Giant bat]] ''(level 27)'' (only if bat bones are needed)
+|ironman = *A method to obtain [[dragon bones]]:
+**Killing [[blue dragons]] in [[Taverley Dungeon]] or the [[Dragon Nest]] near [[Tal Teklan]] ([[Blue dragon#Safespotting|safespottable]])
+**Killing [[green dragons]] in the [[Wilderness]]
+**Killing [[red dragons]] in [[Brimhaven dungeon]]
+**Killing [[Elvarg]] in the [[Nightmare Zone]] after the completion of [[Dragon Slayer I]]
+**Killing [[Blue Dragon]] in [[Heroes' Guild]] after the completion of [[Heroes' Quest]] ([[Telekinetic Grab]] optional but recommended)
+*A method to obtain a [[gold bar]]:
+**{{SCP|Smithing|40|link=yes}} to smith one
+**{{SCP|Magic|33|link=yes}} to use [[Telekinetic Grab]] on the spawn in the [[Varrock]] west bank basement
+**Spawn in the [[Corsair Cove Dungeon]], requiring {{SCP|Quest|[[Dragon Slayer I]]}} unless using [[Telekinetic Grab]]
+**1/10 from [[eclectic implings]] with {{SCP|Hunter|50|link=yes}}
+**1/64 from [[cave slime]] with {{SCP|Slayer|17|link=yes}}
+*A method to obtain [[Guam leaves]]:
+**1/11.1 drop from [[chaos druid]]s for the grimy herb
+**Picking the herbs in the [[Sorceress's Garden]] winter garden for [[guam leaves]] (1/3.37). Requires completion of {{SCP|Quest|Prince Ali Rescue}}
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}
+<references/>

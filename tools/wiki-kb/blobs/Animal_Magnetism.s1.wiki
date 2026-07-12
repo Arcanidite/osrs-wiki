@@ -1,0 +1,44 @@
+==Details==
+{{Quest details
+|start = Talk to [[Ava]] in [[Draynor Manor]].
+|startmap = 3093,3358
+|difficulty = Intermediate
+|description = Draynor Manor has a new resident and, adventurers rejoice, she is a damsel in distress. Far from being Sleeping Beauty, she finds the Manor's beds not to her liking and is suffering from insomniac nights. If you fancy yourself able to aid Ava in her search for a good night's sleep, who knows what the budding scientist will produce as a reward?
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[The Restless Ghost]]
+**[[Ernest the Chicken]]
+**[[Priest in Peril]]
+*{{SCP|Slayer|18|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Crafting|19|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Ranged|30|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Woodcutting|35|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = *[[Mithril axe]] (required to obtain the [[blessed axe]]; no other type of axe will do)
+*5 [[iron bar]]s unnoted
+*[[Ghostspeak amulet]] ([[Morytania legs]] will not work)
+*20 [[ecto-token]]s (or 4 [[bones]], 4 [[bucket]]s, and 4 [[pot]]s to gain the tokens)
+*[[Hammer]]
+*[[Hard leather]]
+*[[Holy symbol]]
+*[[Polished buttons]]
+|recommended = *10 more [[ecto-tokens]] to purchase an [[Undead chicken (item)|undead chicken]] that you can keep
+*[[Stamina potion|Stamina]] or [[energy potion]]
+*Fast travel to several locations
+**Draynor Manor ([[Draynor Manor Teleport]], [[amulet of glory]] to Draynor Village, or fairy ring code {{fairycode|dis}} to the nearby Wizard's Tower)
+**Port Phasmatys ([[Ectophial]], [[charter ship]]s or [[fairy ring]] code {{fairycode|alq}})
+**Slayer Tower ([[Slayer ring]], [[Fenkenstrain's Castle Teleport]], [[Kharyrll Teleport]], [[Salve Graveyard Teleport]] or [[fairy ring]] code {{fairycode|cks}})
+**Burthorpe ([[Games necklace]], [[Burthorpe Games Room]] [[Minigame Teleport]], [[combat bracelet]] to the Warriors' Guild, [[Taverley teleport]], or [[Teleport to House]] if it is in Taverley)
+**Rimmington ([[Rimmington teleport]], [[Teleport to House]] if it is in Rimmington, [[skills necklace]] to the Crafting Guild, or [[Rat Pits]] [[Minigame Teleport]])
+|ironman = * [[Holy symbol]] ({{SCP|Prayer|31|link=yes}} {{Boostable|no}}) 
+*[[Mithril axe]] can be purchased at [[Lunami's Axe Shop]] in [[Auburnvale]]
+*A method of obtaining iron bars:
+**{{SCP|Mining|15}} [[Mining]] and {{SCP|Smithing|15}} [[Smithing]] if smelting [[iron ore]]
+**Spawn in [[Thurid's Brain Buckets]] on the [[Sunset Coast]] in [[Varlamore]] (requires {{SCP|Quest|[[Children of the Sun]]}})
+**Spawn in level 18 [[Wilderness]] north-west of the [[Ferox Enclave]], next to the bears west of the Graveyard of Shadows. Accessible via {{SCP|Minigame|Clan Wars}} [[Minigame Teleport]]
+**1/42.67 drop from [[dwarf|dwarves]] ({{SCP|Combat|10}}) in the mines under Falador
+**1/34.42 drop from sorting [[small salvage]] with {{SCP|Sailing|15|link=yes}}
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

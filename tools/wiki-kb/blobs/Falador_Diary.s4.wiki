@@ -1,0 +1,85 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Falador" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Light a [[Bullseye lantern]] at the [[Chemist|Chemist's]] in [[Rimmington]].
+|
+*{{SCP|Firemaking|49|link=yes}}
+*[[Tinderbox]] and a regular [[bullseye lantern]]
+|-
+|2. [[Telegrab]] some [[Wine of Zamorak]] at the [[Chaos Temple (Asgarnia)|Chaos Temple]] by the [[Wilderness]].
+''Note: This altar is located north-west of the [[Goblin Village]]. You have to be inside the building until the jug appears in your inventory for the task to register as completed.''
+|
+*{{SCP|Magic|33|link=yes}}
+*Means to cast [[Telegrab]] ({{RuneReq|Air=1|Law=1}})
+|-
+|3. Unlock the [[Crystal chest]] in [[Taverley]].
+|
+*[[Crystal key]]
+|-
+|4. Place a [[Scarecrow]] in the [[Falador farm]] flower patch.
+|
+*{{SCP|Farming|23|link=yes}} ([[Ironman mode|Ironman accounts]] require {{SCP|Farming|47|link=yes}} or the ability to kill [[gryphon]]s)
+*[[Bronze spear]], [[watermelon]], and a [[hay sack]] (you can fill an [[empty sack]] with hay at the [[hay bale]] in the chicken coop nearby.)
+|-
+|5. Kill a [[Mogre]] at [[Mudskipper Point]].
+|
+*{{SCP|Quest}} Completion of [[Skippy and the Mogres]]
+*{{SCP|Slayer|32|link=yes}}
+*[[Fishing explosive]]. 
+* It is not possible to skip having to complete Skippy and the Mogres, or needing a fishing explosive, by killing them through a boat cannon through the Sailing skill.
+|-
+|6. Visit the [[Port Sarim]] [[Rat Pits]].
+|
+*{{SCP|Quest}} Partial completion of [[Ratcatchers]]
+|-
+|7. Grapple up and then jump off the north [[Falador]] wall.
+|
+*{{SCP|Agility|11|link=yes}}, {{SCP|Strength|37|link=yes}}, and {{SCP|Ranged|19|link=yes}}
+*[[Mith grapple]]{{efn|[[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].}} and any [[Crossbow (weapon)|crossbow]]
+|-
+|8. Pickpocket a [[Falador]] [[guard]].
+|
+*{{SCP|Thieving|40|link=yes}}
+|-
+|9. Pray at the [[Stone circle|Altar of Guthix]] in [[Taverley]] whilst wearing full [[Initiate armour|Initiate]].
+|
+*{{SCP|Quest}} Completion of [[Recruitment Drive]]
+*{{SCP|Prayer|10|link=yes}} and {{SCP|Defence|20|link=yes}}
+*[[Initiate armour]]
+|-
+|10. Mine some [[Gold ore]] at the [[Crafting Guild]].
+|
+*{{SCP|Crafting|40|link=yes}} and {{SCP|Mining|40|link=yes}}
+*Any [[pickaxe]] and a [[brown apron]], [[golden apron]], or [[Crafting cape]]
+|-
+|11. Squeeze through the crevice in the [[Dwarven mine]]s.
+|
+*{{SCP|Agility|42|link=yes}}
+|-
+|12. Chop and burn some [[Willow logs]] in [[Taverley]].
+''Note: Willow trees can be found to the south-east along the lake. [[Willow tree (Farming)|Player-grown willow trees]] do not count towards completing the task.''
+|
+*{{SCP|Woodcutting|30|link=yes}} and {{SCP|Firemaking|30|link=yes}}
+*Any [[axe]] and a [[tinderbox]]
+|-
+|13. Craft a [[basket|fruit basket]] on the [[Falador Farm]] [[loom]].
+|
+*{{SCP|Crafting|36|link=yes}} (and {{SCP|Farming|30|link=yes}} for [[Ironman mode|Ironman accounts]])
+*6 [[Willow branch]]es
+|-
+|14. Teleport to [[Falador]].
+|
+*{{SCP|Magic|37|link=yes}}
+*Means to cast [[Falador Teleport]] ({{RuneReq|Air=3|Water=1|Law=1}})
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Falador shield 2]]:
+**Can restore 50% of [[prayer points]] once a day
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*10% more experience from the [[Falador farm|Falador farming patch]]
+*Access to the [[Dark tunnel (Motherlode Mine)|dark tunnel shortcut]] in the [[Motherlode Mine]] (with 54 [[Agility]]) 
+*Roughly 21% increased chance of receiving a [[clue scroll (medium)|medium clue scroll]] from a [[guard]] in [[Falador]] (from 1/128 to 1/106)

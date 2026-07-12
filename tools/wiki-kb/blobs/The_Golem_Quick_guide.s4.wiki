@@ -1,0 +1,16 @@
+===The statuette===
+{{Checklist|*Pick a [[black mushroom]] near the stairs east of the golem before heading down (or downstairs at your right).
+** Use the [[black mushroom]] on the pestle and mortar to get [[black dye]]. You can do this later if you don't have your [[pestle and mortar]].
+**'''Note:''' Take an extra black mushroom if you plan on completing [[Shadow of the Storm]] soon afterwards.
+*Climb down the stairs in the ruins.
+*Take the [[strange implement]] from the north-western room. 
+**'''Note:''' Keep the strange implement if you plan on completing [[Shadow of the Storm]] soon afterwards.
+*Speak to the Golem again {{Chat option|1How do I open the portal?}}
+*Head to the most north-eastern part of the [[Digsite]], near the large buried skeleton, and talk to [[Elissa]]. {{Chat option|3I found a letter in the desert with your name on.}} (make sure to read the letter if no 3rd option is seen)
+*Head to the [[Exam Centre]] just south of the Digsite.
+*Search the bookcase in the south-east corner and read [[Varmen's notes]].
+**Note: If you have not repaired the golem up to this point, or read Varmen's Notes the curator will not speak to you about the quest. {{Chat option|3Where is the statuette that Varmen took back from Uzer?}}
+*Talk to [[Curator Haig Halen]] in the [[Varrock Museum]] about the [[Statuette (The Golem)|statuette]]. {{Chat option|2I'm looking for a statuette recovered from the city of Uzer.|1I want to open a portal to the lair of an elder-demon.}} ({{Chat option|4|1}} if [[Bone Voyage]] is started)
+*Pickpocket him for the [[display cabinet key]].
+*Head upstairs, and open the second-most western case in the northern-most row. You will get a [[Statuette (The Golem)|statuette]].
+}}

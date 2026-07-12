@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Icthlarin's Little Helper
+|image = [[File:Icthlarin's Little Helper reward scroll.png|center]]
+|qp = 2
+|rewards = 
+*{{SCP|Thieving|4,500}} [[Thieving]] experience
+*{{SCP|Agility|4,000}} [[Agility]] experience
+*{{SCP|Woodcutting|4,000}} [[Woodcutting]] experience
+*[[Catspeak amulet]]
+*Access to the city of [[Sophanem]]
+*Unlock the carpet rides from [[Pollnivneach]] to [[Sophanem]] and [[Menaphos]]}}

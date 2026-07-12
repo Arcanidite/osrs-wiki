@@ -1,0 +1,128 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Karamja" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+| 1. Claim a ticket from the [[Brimhaven Agility Arena|Agility Arena]] in [[Brimhaven]].
+| 
+*200 [[coins]]
+*{{SCP|Agility|40|link=yes}} recommended''
+|-
+| 2. Discover [[Wall (Crandor and Karamja Dungeon)|hidden wall]]{{sic}} in the [[Crandor and Karamja Dungeon|dungeon]] below the [[Karamja Volcano|volcano]].
+|
+*{{SCP|Quest}} Started [[Dragon Slayer I]]
+|-
+| 3. Visit the [[Crandor|Isle of Crandor]] via the [[Crandor and Karamja Dungeon|dungeon]] below the [[Karamja Volcano|volcano]].
+''Note: You must go through the [[Wall (Crandor and Karamja Dungeon)|hidden wall]], past the [[lesser demon]]s, and then climb the rope to the surface of [[Crandor]] to complete this task.
+|
+*{{SCP|Quest}} Started [[Dragon Slayer I]]
+|-
+| 4. Use [[Vigroy]] and [[Hajedy]]'s [[Hajedy's cart|cart service]].
+|
+*{{SCP|Quest}} Completion of [[Shilo Village]]
+*200 [[coins]]
+|-
+| 5. Earn 100% favour in the village of [[Tai Bwo Wannai Cleanup|Tai Bwo Wannai]].
+|
+*{{SCP|Quest}} Completion of [[Jungle Potion]]
+*{{SCP|Woodcutting|10|link=yes}}
+*See the [[Tai Bwo Wannai Cleanup#Necessary items|recommendations]]
+|-
+| 6. Cook a [[Spider on stick|spider on a stick]].
+''Note: Cooking a [[Spider on shaft|spider on a shaft]] also counts for this task. This does not have to be done on [[Karamja]].''
+|
+*{{SCP|Cooking|16|link=yes}}
+*[[Spider carcass]], and a [[skewer stick]] or an [[arrow shaft]]
+|-
+| 7. Charter the [[Lady of the Waves]] from [[Cairn Isle]] to [[Port Khazard]].
+| 
+*{{SCP|Quest}} Completion of [[Shilo Village]]
+*[[Ship ticket]] or 20-50 [[coins]] (the price is random)
+|-
+| 8. Cut a log from a [[teak tree]].
+''Note: [[Teak tree]]s can be found in the [[Hardwood Grove]] or within the harder-to-access [[Kharazi Jungle]].''
+|
+*{{SCP|Quest}} Completion of [[Jungle Potion]]
+*{{SCP|Woodcutting|35|link=yes}}
+*Any [[axe]]
+*100 [[trading sticks]] and having helped{{efn|name=Favour|You must have gained some favour by repairing at least one [[village fence]] and then talking to [[Murcaily]] for [[trading sticks]]. Otherwise, you'll not be allowed to chop trees in the [[Hardwood Grove]] or trade for [[machete]]s with [[Safta Doc]].}} in [[Tai Bwo Wannai Cleanup]] (if using the [[Hardwood Grove]]) 
+*[[Machete]] or {{SCP|Agility|79|link=yes}}, and having started {{SCP|Quest}} [[Legends' Quest]] (if using the [[Kharazi Jungle]])
+|-
+| 9. Cut a log from a [[mahogany tree]].
+''Note: [[Mahogany tree]]s can be found in the [[Hardwood Grove]] or within the harder-to-access [[Kharazi Jungle]].''
+|
+*{{SCP|Quest}} Completion of [[Jungle Potion]]
+*{{SCP|Woodcutting|50|link=yes}}
+*Any [[axe]]
+*100 [[trading sticks]] and having helped{{efn|name=Favour}} in [[Tai Bwo Wannai Cleanup]] (if using the [[Hardwood Grove]]) 
+*[[Machete]] or {{SCP|Agility|79|link=yes}}, and having started {{SCP|Quest}} [[Legends' Quest]] (if using the [[Kharazi Jungle]])
+|-
+| 10. Catch a [[raw karambwan|karambwan]].
+|
+*{{SCP|Quest}} Partial completion of [[Tai Bwo Wannai Trio]]
+*{{SCP|Fishing|65|link=yes}}
+*[[Karambwan vessel]], some [[raw karambwanji]], and a [[small fishing net]]
+|-
+| 11. Exchange [[gems]] for a [[machete (weapon)|machete]].
+''Note: This is done by talking to [[Safta Doc]] with the required items.{{efn|name=Favour}}
+|
+*{{SCP|Quest}} Completion of [[Jungle Potion]]
+*[[Gout tuber]], as well one of the following:
+**300 [[trading stick]]s and 3 [[opal|cut]] or [[uncut opal]]s
+**600 [[trading stick]]s and 3 [[jade|cut]] or [[uncut jade]]s
+**1200 [[trading stick]]s and 3 [[red topaz|cut]] or [[uncut red topaz]]
+*You need to speak to [[Sharimika]] and go through the dialog options and you must have picked up some trading sticks from a villager as reward before the dialog options will show up for this diary step.
+
+|-
+| 12. Use the [[gnome glider]] to travel to [[Karamja]].
+| 
+*{{SCP|Quest}} Completion of [[The Grand Tree]]
+|-
+| 13. Grow a healthy [[fruit tree]] in the patch near [[Brimhaven]].
+|
+*{{SCP|Farming|27|link=yes}}
+*Any [[fruit tree sapling]], a [[spade]], and a [[rake]]
+|-
+| 14. Trap a [[horned graahk]].
+|
+*{{SCP|Hunter|41|link=yes}}
+*[[Teasing stick]] or [[Hunter's spear]], [[knife]], and any [[logs]].
+|-
+| 15. Chop the [[Vines (Brimhaven Dungeon)|vines]] to gain deeper access to [[Brimhaven Dungeon]].
+''Note: These are the vines found immediately within the [[Dungeon entrance (Brimhaven Dungeon)|main entrance]].
+| 
+*{{SCP|Woodcutting|10|link=yes}}
+*Any [[axe]] and 875 [[coins]]
+|-
+| 16. Cross the lava using the [[Stepping stones (Western Brimhaven Dungeon)|stepping stones]] within [[Brimhaven Dungeon]].
+''Note: Not to be confused with the [[Stepping stones (Eastern Brimhaven Dungeon)|stepping stones]] towards the [[red dragons]].
+|
+*{{SCP|Woodcutting|10|link=yes}} and {{SCP|Agility|12|link=yes}}
+*Any [[axe]] and 875 [[coins]]
+|-
+| 17. Climb the stairs within [[Brimhaven Dungeon]].
+''Note: You have to climb the stairs south of the [[Stepping stones (Western Brimhaven Dungeon)|stepping stones]] of the previous task, next to the [[moss giant]]s.''
+|
+*{{SCP|Woodcutting|10|link=yes}}
+*Any [[axe]] and 875 [[coins]]
+|-
+| 18. Charter a ship from the [[Shipyard (Karamja)|shipyard]] in the far east of [[Karamja]].
+''Note: The destination does not matter for this task.
+|
+*{{SCP|Quest}} Partial completion of [[The Grand Tree]]
+*Enough [[coins]] to pay the [[Charter ship#Fares|fare]] for a [[charter ship]].
+|-
+| 19. Mine a [[red topaz]] from a [[gem rock]].
+''Note: [[Gem rock]]s are found [[Shilo Village (location)|Shilo Village]] and rarely appear within the [[Tai Bwo Wannai Cleanup]] minigame.''
+| 
+*{{SCP|Quest}} Completion of [[Jungle Potion]], and either completion of [[Shilo Village]] or [[Tai Bwo Wannai Cleanup#Necessary items|items]] for [[Tai Bwo Wannai Cleanup]]
+*{{SCP|Mining|40|link=yes}}
+*Any [[pickaxe]]
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Karamja gloves 2]]:
+**While worn, 10% additional [[Agility]] experience from all obstacles in the [[Brimhaven Agility Arena]] and from [[Agility arena ticket]]s
+*[[Antique lamp (Karamja Diary)|Antique lamp]] worth 5,000 experience in any skill of at least level 30 (instead of the usual [[Antique lamp (medium)|antique lamp]] for this tier)
+*Access to the underground portion of the [[Shilo Village mine]]

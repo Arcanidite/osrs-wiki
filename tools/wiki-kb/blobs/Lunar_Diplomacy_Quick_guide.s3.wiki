@@ -1,0 +1,14 @@
+===Starting out===
+{{Needed|[[Tinderbox]], [[Bullseye lantern]] (one that you can light)
+|recommended=[[House teleport]] tablet or [[runes]].}}
+
+{{Checklist|
+*Talk to [[Lokar Searunner]] on the western most Rellekka docks.  D*K*S closest fairy ring. {{Chat option|2You've been away from these parts a while?|1Why did you leave?|1Why not, I've always wondered what the state of my innards are!}}
+*Speak to [[Brundt the Chieftain]] in the Longhall for a [[seal of passage]]. {{Chat option|1Ask about a Seal of Passage.}}
+*Return to [[Lokar Searunner]]. {{Chat option|1Arrr! Yar! Let's be on our way, yar!}}
+*Climb the ladders, and board the pirate ship. Talk to [[Captain Bentley]] about sailing to Lunar Isle. {{Chat option|4Can we sail to Lunar Isle now?}}
+*Speak to [[Captain Bentley]] again.
+*Climb down the nearby south stairs through the door, talk to [['Birds-Eye' Jack]].
+*Climb back up the stairs and talk to [[Captain Bentley]] again. {{Chat option|2Perhaps it's the Navigator's fault?}}
+*Climb back down the stairs and return to [['Birds-Eye' Jack]] again.
+}}

@@ -1,0 +1,21 @@
+==Details==
+{{Quest details
+|start = Talk to [[Morgan]] in his house in [[Draynor Village]], just north of [[Ned]]'s house.
+|startmap = 3098,3268
+|difficulty = Intermediate
+|description = The people of [[Draynor Village]] live in constant terror. Their numbers are dwindling, all due to the foul creature lurking in the manor to the north known as a vampyre.
+|length = Very Short
+|requirements = Able to defeat a [[combat level]] 34 [[Count Draynor|vampyre]] with a very high health recovery rate.
+|items = *[[Hammer]] (can be bought from the [[general store]] just north of the [[Blue Moon Inn]] for 1 [[coin]])
+* [[Beer]] (obtainable during the quest for 2 [[coins]])
+* [[Stake]] (obtained during the quest)
+|recommended = * {{SCP|Combat|20|link=yes}}
+* [[Garlic]], highly recommended to weaken the Count (obtainable during the quest)
+*Combat equipment - [[Magic]] is recommended if using the safespot
+* Fast travel to [[Varrock]] (such as the [[Varrock teleport]])
+* ''(Members only)'' Fast travel to [[Draynor Village]] ([[amulet of glory]] or [[Draynor Manor Teleport]])
+|kills = [[Count Draynor]] ''(level 34)'' - safespottable
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}

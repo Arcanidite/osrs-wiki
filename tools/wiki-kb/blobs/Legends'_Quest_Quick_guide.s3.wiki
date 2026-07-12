@@ -1,0 +1,5 @@
+===Radimus Erkle===
+{{Checklist|
+*Talk to a [[Legends' Guard]] east of [[Ardougne]] {{Chat option|3Can I speak to someone in charge?|1Can I go on the quest?|2Yes, I'd like to talk to Grand Vizier Erkle.}}. Fairy ring {{fairycode|blr}}.
+*Talk to [[Radimus]]. (''A machete can be obtained from the [[Cupboard (Legends' Quest)|cupboards]] next to Radimus Erkle. Papyrus can be obtained on the table next to him.)'' {{Chat option|1Yes actually, what's involved?|1Yes, it sounds great!}}
+}}

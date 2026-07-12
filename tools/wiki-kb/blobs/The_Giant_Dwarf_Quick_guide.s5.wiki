@@ -1,0 +1,6 @@
+===Halfway there===
+''Items required: [[Exquisite clothes]], [[Exquisite boots]], [[Dwarven battleaxe]]''
+{{Checklist|
+*Once in Blasidar's house, talk to [[Riki the sculptor's model]] to give him the clothes, axe and boots.
+*Talk to Blasidar. Watch the cutscene.
+}}

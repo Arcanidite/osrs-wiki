@@ -1,0 +1,27 @@
+==Details==
+{{Quest details
+|start = Talk to [[Edmond]] in the most north-western house of [[East Ardougne]].
+|startmap = 2569,3333
+|difficulty = Novice
+|description = The western part of Ardougne has been shut off as a deadly plague sweeps through the people. However, a young woman who went in to try to help those stricken by the illness has disappeared and her parents have become worried.
+|length = Very Short
+|items = * [[Dwellberries]] (Spawns in [[McGrubor's Wood]], squeeze through the loose railing, use {{Fairycode|ALS}}, or [[Telekinetic Grab]] them. They can be bought from [[Heckel Funch]] or [[Hudo]] in the [[Tree Gnome Stronghold]] or grown with 36 [[Farming]].)
+*[[Rope]] (Purchasable in the [[East Ardougne]] [[general store]], [[Port Khazard]] [[general store]], [[Ned]], or a spawn in [[Karamja]] general store.)
+*[[Spade]] (One spawns near Edmond.)
+*1-4 [[Bucket of water|buckets of water]] (four uses required, there is a [[water source]] and [[bucket]] spawn nearby)
+*[[Hangover cure]] or the ingredients to make one:
+**[[Chocolate dust]]
+***[[Chocolate bar]]
+***[[Knife]] or [[pestle and mortar]] (Knife spawn on the table in the house east of the altar)
+**[[Bucket of milk]] (Obtained by using a bucket on a [[dairy cow]], one is north of [[Ardougne]], or bought from [[Hudo]] or [[Heckel Funch]].)
+**[[Snape grass]] (Spawns west of the [[Crafting Guild]] or the peninsula north-east of [[Hosidius]]. It can be grown at 61 [[Farming]]. Can also be obtained from killing [[Tribesmen]] in [[Karamja]].)
+*[[Picture]] of [[Elena]] (Inside Alrena and Edmond's house)
+|recommended = *Fast travel to [[Ardougne]] to start the quest - [[Skills necklace]] to [[Fishing Guild]] or [[Spirit tree]] to [[Battlefield]] or [[fairy ring]] to {{fairycode|djp}} or [[Captain Barnaby]]'s ship from [[Rimmington]] or [[Brimhaven]]
+|ironman = * [[File:Ultimate ironman chat badge.png]] The [[hangover cure]] can be made before the quest starts by combining milk, chocolate dust, and snape grass to conserve inventory space.
+* [[File:Group ironman chat badge.png]] The [[hangover cure]] itself is an '''untradeable item''' so if preparing for Group Ironman, do not premake these as you will be unable to share them with your group through Group Storage or Trading.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

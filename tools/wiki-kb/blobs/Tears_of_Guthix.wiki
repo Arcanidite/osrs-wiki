@@ -1,0 +1,96 @@
+{{External|rs=Tears of Guthix (quest)}}
+{{Has quick guide}}
+{{Otheruses|the quest|the minigame|Tears of Guthix (minigame)|the music track|Tears of Guthix (music track)}}
+{{Infobox Quest
+|name = Tears of Guthix
+|number = 79
+|image = [[File:Tears of Guthix.png|300px]]
+|release = [[4 May]] [[2005]]
+|update = Earthquake Rocks Lumbridge
+|members = Yes
+|series = None
+|developer = John A
+}}
+'''Tears of Guthix''' is a [[quest]] where you must help [[Juna]], a follower of [[Guthix]], restore a cavern in the [[Lumbridge Swamp Caves]]. Within the dungeon the walls flow with tears, a relic of Guthix's horror at the destruction during the [[God Wars]]. Completion of the quest grants access to the [[Tears of Guthix (minigame)|eponymous minigame]], where it rewards [[experience]] in the player's lowest skill each time it is played.
+
+==Details==
+{{Quest details
+|start = Talk to [[Juna]], deep inside the [[Lumbridge Swamp Caves]].
+|startmap = 3252,9516,plane:2
+|difficulty = Intermediate
+|description = Deep in the caves in the [[Lumbridge Swamp]] is an enchanted place where the tears shed by [[Guthix]] when it saw the destruction [[Saradomin]] and [[Zamorak]] had caused with their wars flow from the very walls. These tears are said to have magical properties to help players gain deeper understanding of the world. However, the cave is guarded by a loyal serpent named [[Juna]] who blocks passage from everyone. However, she has grown bored from three thousand years of sitting in the dark cave and wishes to hear stories of life above. Maybe you could come to some sort of arrangement...?
+|length = Very Short
+|requirements = * {{SCP|Quest|43|link=yes}} {{Questreqstart|yes}}
+* {{SCP|Firemaking|49|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Crafting|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} <ref>Adding the sapphire lens to a [[Bullseye lantern (unf)]] is boostable. Adding it to a [[Bullseye lantern (empty)]] or [[Bullseye lantern]] is not boostable.</ref>
+* {{SCP|Mining|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = * Lit [[sapphire lantern]] or the materials to make one
+** [[Bullseye lantern]] or [[bullseye lantern (unf)]] (filled with [[lamp oil]] at the [[chemist]] in [[Rimmington]] or the [[lamp still]] in [[Dorgesh-Kaan]])
+** Cut [[sapphire]]
+** [[Tinderbox]]
+* [[Chisel]]
+* [[Pickaxe]]
+* [[Rope]] (if you have not yet entered the [[Lumbridge Swamp Caves]])
+|recommended = * [[Spiny helmet]]/[[Slayer helmet]] to prevent damage from [[wall beast]]s, if you have not progressed far enough through [[The Lost Tribe]] to access the caves from the [[Lumbridge Castle]] cellar.
+|ironman = *A [[bullseye lantern]] (to create the required [[sapphire lantern]]), obtainable through one of the following:
+**Purchase from [[Miltog]] for 600 gp (after {{SCP|Quest}} [[Death to the Dorgeshuun]])
+**{{SCP|Smithing|49|link=yes}} {{Boostable|yes}} to create a [[bullseye lantern (unf)]]
+**{{SCP|Crafting|35|link=yes}} To complete {{SCP|Quest}} [[Haunted Mine]] to kill [[Skeleton_(Tarn's_Lair)#Low_level|Skeleton]] in [[Tarn's Lair]] 
+**{{SCP|Thieving|36|link=yes}} {{Boostable|yes}} for pickpocketing [[Cave goblin (Dorgesh-Kaan)|cave goblins]] (after {{SCP|Quest}} [[Death to the Dorgeshuun]]) for a bullseye lantern.
+**{{SCP|Slayer|35|link=yes}} {{Boostable|yes}} to kill [[wall beast]]s for a [[bullseye lantern (unf)]]
+**Item spawn in Darkmeyer (after {{SCP|Quest}} [[Sins of the Father]])
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}
+<references/>
+
+==Walkthrough==
+===Getting started===
+To start, speak to [[Juna]] in the [[Chasm of Tears]], reached through an entrance at the south end of the [[Lumbridge Swamp Caves]]. You will need a [[light source]] to navigate the caves. Since the quest requires a [[sapphire lantern]] later, it is advised to use this as the light source, making it before entering the caves to save a trip. Making the sapphire lantern does not require starting the quest—players can simply make it by adding a cut [[sapphire]] to an unlit [[bullseye lantern]] or [[bullseye lantern (unf)]] and then lighting it with a [[tinderbox]]. The lantern must be filled with [[lamp oil]] by bringing [[swamp tar]] to the [[lamp oil still]] at the [[chemist's house]] in [[Rimmington]] or the [[lamp still]] at the [[Dorgesh-Kaan]] market. The lens must be swapped and the lantern lit before entering the caves, as the game will not allow you to extinguish the bullseye lantern while in the dungeon or the chasm of tears.
+
+'''If you have completed [[The Lost Tribe]] quest, you may skip to Option B. If not, use Option A. Partial completion is possible, you must only reach the point at which it is possible to obtain the [[brooch]].'''
+
+====Option A====
+Travel via the entrance in the [[Lumbridge swamp]]. You will need a [[rope]] if this is your first time entering the caves. Once inside, you will need to pass by several holes in the wall, which contain [[wall beast]]s that can grab you and do damage. A [[spiny helmet]] can be worn to reduce damage from the wall beasts, but an easier option is to just stop one square away from each hole and then run past it. Doing this will always successfully avoid the wall beast's grab. Be sure to also avoid getting hit by any [[cave crawler]]s as they can deal inflict a strong poison; they can be avoided by taking the south path. The small area in the middle south of the dungeon also contains swamp gas that will ignite any exposed light sources, dealing damage. This should not be an issue if only bringing the sapphire lantern.
+
+The [[Chasm of Tears]] is found at through an exit to the southeast of your starting location. You will have to cross an agility obstacle which can be failed, but since you are using a covered light source it will not be extinguished. No damage is taken upon failing the obstacle and the player will still end up at the other side. Once inside, climb down the rocks and talk to Juna.
+
+Skip to the '''Juna''' paragraph to continue.
+
+====Option B====
+If you have access to the second entrance from the [[Lumbridge cellar]], this provides a much faster and safer route to reach Juna, as there will be no wall beasts, cave crawlers, or swamp gas along the way. If this is your first time, you will have to use your pickaxe to clear the rocks to access the swamp caves. Simply head directly south from the entrance and cross the stepping stone to reach the Chasm of Tears, then climb down the rocks and talk to Juna.
+
+===Juna===
+Speak to [[Juna]] and choose to tell her stories about your adventures (you may also optionally choose to hear the lore about the place from her). She will tell you that you need to make a bowl to collect the tears, and that the only substance that can collect it is found in the rocks across the chasm. If you ask her how to cross the chasm, she will tell you the story of the [[light creature]]s and hint that they are drawn to their own colour. If you do not yet have a [[sapphire lantern]], you will need to exit the caves entirely to make it if the bullseye lantern is your only light source (see the section above).
+
+===The Light Creatures===
+[[File:Riding light creature.png|thumb|Riding a light creature.]]
+Head back towards the direction you came from and climb the rocks, then click "attract" on one of the nearby light creatures. The sapphire lantern will then attract it, causing it to pick you up and transport you to the other side of the cavern where the [[magical rocks]] are.
+
+===The Bowl===
+Use your [[pickaxe]] to get a [[Magic stone (Tears of Guthix)|magic stone]], and then use your [[chisel]] to craft it into a [[stone bowl]]. One will be enough. You must have told Juna a story to be able to make the stone bowl. After this, head east and climb down the rocks to get back to Juna. Give the bowl to her to complete the quest.
+
+'''Congratulations, quest complete!'''
+
+:'''Tip''': The sapphire lantern may be used again for [[While Guthix Sleeps]]. It is also possible to retrieve the sapphire by extinguishing the lantern and then using the lantern lens on it.
+
+==Rewards==
+{{Quest rewards
+|name = Tears of Guthix
+|image = [[File:Tears of Guthix reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Crafting|1,000}} [[Crafting]] experience
+*Ability to play the [[Tears of Guthix (minigame)|Tears of Guthix minigame]] once a week
+}}
+
+==Required for completing==
+Completion of Tears of Guthix is required for the following:
+* [[While Guthix Sleeps]]
+* [[Hard Lumbridge & Draynor Diary]]
+
+==Transcript==
+{{Hastranscript|quest}}
+
+{{Tears of Guthix}}

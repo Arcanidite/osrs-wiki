@@ -1,0 +1,8 @@
+===Finishing up===
+''Items needed: [[Gilded totem]], [[Radimus notes]]''
+{{Checklist|
+*Talk to Radimus at the Legends Guild (fairy ring {{fairycode|blr}}) with the gilded totem AND Radimus notes.
+*Talk to Radimus again in the main guild hall and select four skills for training.
+*Talk to Radimus one more time.
+*'''Congratulations, quest complete!'''
+}}

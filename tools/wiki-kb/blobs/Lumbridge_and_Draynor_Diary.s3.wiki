@@ -1,0 +1,5 @@
+===Rewards===
+*[[Explorer's ring 1]]:
+**Can restore 50% of [[Energy|run energy]] twice a day
+**Allows 30 casts of [[Low Level Alchemy]] without [[runes]] each day (no experience granted unless done at the [[Alchemist's Playground]], still requires 21 [[Magic]])
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill level of at least level 30

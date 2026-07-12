@@ -1,0 +1,40 @@
+===Restoring the pool===
+{{Map|align=right|mtype=pin|caption=The locations of the herbs for the bravery potion.
+|2875,3121,title:[[Ardrigal]],desc:
+|2764,3046,title:[[Snake weed]],desc:
+}}
+{{Checklist|
+''Items needed: [[Radimus notes]], [[ardrigal]], [[snake weed]], [[vial of water]], means to cast any [[Charge Orb]] spell (double amount if choosing long/"good" path), an [[unpowered orb]] (two if choosing long/"good" path), [[blessed gold bowl]], [[Yommi tree seeds]], a [[lockpick]], a [[rope]], a [[pickaxe]], combat equipment, food, prayer potion(s), '''Rune or Dragon''' axe (Any other axe will not work) and a [[machete]]. It is recommended to bring more than 1 lockpick if you can, in case you break it.''
+*Using the map above, collect the [[ardrigal]] (search the large-leaved [[palm tree (Ardrigal)|palm trees]]) and [[snake weed]] (search one of the marshy jungle vines) if extra were not obtained during [[Jungle Potion]]. Mix them with a vial of water for a [[bravery potion]].
+*Drink the potion now to save space. Prepare to go through the cave again. You do not need the SMELL runes.
+*Go through the cave to the chamber with the gem-pools where you found the binding book. Cast the charge orb spell on the north gate.
+*Use your rope on the [[Winch (Viyeldi caves)|winch]] and climb down. ''Drink the [[bravery potion]] first if you haven't already''
+**If you forgot a rope, smash a barrel. A monster may spawn from the barrel.
+**You can fall and will take a large amount of damage (10-20), so be sure your health is high.
+**The rope is not needed for future visits; search the winch to find your rope again.
+*'''Do not''' interact with the blue hat if you wish to choose the "good" path.
+*Climb over the [[Rocky Ledge|rocks]] to reach the bottom. You can again fall and take a lot of damage (40+).
+*Kill each of the 3 different skeletons (Lvl-106, Lvl-100, and Lvl-92) to get the 3 crystal pieces.
+*Use each crystal piece on the north-east [[Furnace (Viyeldi caves)|furnace]].
+*There is 1 searchable [[Mossy rock (Viyeldi caves)|mossy rock]] in the middle of this room. Use the [[Heart crystal|heart]] on it.
+*Run south-east and use the heart on the recess next to the barrier. Walk through the barrier.
+*Push one of the boulders to the west and then talk to Echned Zekin. {{Chat option|2Who's asking?|1What can I do about that?|1I'll do what I must to get the water.|1Ok, I'll do it.}}
+*'''For the "evil" short path:'''
+**Climb back to the top of the ridge, equip the dagger, try to take the hat, and kill [[Viyeldi]] by attacking him during the dialogue. '''Your dagger will be glowing after this step. Make sure this is the case before you go back down the ridge.'''
+**'''Warning: a level 187 demon will spawn as soon as this step is complete and drain your prayer points prior to the fight''' 
+**Go back and push the boulder. The ghost will take the dagger from you.
+**Defeat [[Nezikchened]].
+**Push the boulder.
+**Fill your bowl with water and use it on your seeds if you haven't done so already.
+**'''Note:''' Teleporting will evaporate the water! However, the water pool is now restored and you can get the water from there.
+*'''For the "good" long path:'''
+**Do not try to pick up the [[blue hat]] or talk to [[Viyeldi]].
+**Teleport out and bank if desired for traversing the cave again.
+**Go back to the beginning of the cave. Investigate the fire wall to pass through.
+**Use the [[dark dagger]] on [[Ungadulu]].
+**Head back into the cave as before, using another [[Charge Orb]] spell on the door.
+**Push the boulder.
+**Do not tell Zekin you lost the dagger; instead, cast the Holy Force spell to reveal his true form.
+**Defeat [[Nezikchened]].
+**Push the far west boulder out of the way, and collect sacred water.
+**'''Note:''' Teleporting will evaporate the water! However, the water pool is now restored and you can get the water from there.}}

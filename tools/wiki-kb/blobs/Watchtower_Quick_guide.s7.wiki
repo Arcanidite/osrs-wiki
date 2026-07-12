@@ -1,0 +1,18 @@
+===Getting the other crystals===
+{{Needed|[[Magic ogre potion]], an [[anti-dragon shield]], [[Cave nightshade]], a pickaxe, and combat equipment.}}
+{{Checklist|
+*Prepare to defend yourself against the various ogres and a [[blue dragon]] in the [[Ogre Enclave]]. Don't forget your [[anti-dragon shield]].
+*Return to the market square of Gu'Tanoth.
+*Use your nightshade on an Enclave guard to enter the cave again.
+*Use the magic ogre potion on all 6 [[ogre shaman]]s to get the 3rd crystal.
+**The pouring animation is a stall, activate protection from melee before using the potion to avoid taking stacked hits from the demons and dragons in the area.
+**You could aggro a skeleton or a spider to avoid taking hits from a dragon while using the potion.
+*Right-click mine the [[Rock of Dalgroth]] in the centre of the Enclave for the 4th crystal.
+*Talk to the Watchtower wizard and return the crystals. (Leave the room and return if crystals remain on pillars before you have placed them.)
+**NE: Magenta
+**SE: Grey
+**SW: Yellow
+**NW: Cyan
+*Pull the [[lever (Watchtower)|lever]] to the west.
+*'''Congratulations, quest complete!'''
+}}

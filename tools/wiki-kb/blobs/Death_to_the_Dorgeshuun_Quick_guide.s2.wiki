@@ -1,0 +1,39 @@
+==Walkthrough==
+{{Checklist|{{Bug|There is currently a glitch right before the Sigmund fight that can cause the player to lose their [[pet]] if they have one out when trying to leave the area. Players are thus advised not to bring a pet during this quest.}}
+*Follow Kazgar, who is through the hole in the wall under Lumbridge kitchen
+*Talk to [[Mistag]] at the Dorgeshuun mines to start the quest. {{Chat option|1What is this favour?|1Yes.}}
+*Bring two sets of [[H.A.M. robes]] to [[Zanik]] in Lumbridge cellar. (Can be purchased from the G.E.) {{Chat option|1Yes, I'm [player name]!|1Yes, I have two sets of robes!}}
+**[[Ironman mode|Ironmen]] should instead pickpocket [[H.A.M. member]]s after starting the quest to take advantage of the increased chance of pickpocketing each item of clothing. Wear each article as you receive them to reduce the chance of being thrown out.
+*[[Zanik]] will follow you, if you lose her go back to the cellar. Talk to the townspeople with her following.
+*# Talk to the [[Cook (Lumbridge)|Cook]]
+*# Talk to the [[Duke Horacio|Duke]]
+*# Talk to [[Hans]]
+*# Talk to any Man or Woman ([[Zanik]] must engage in the conversation. Try another if she does not.)
+*# Talk to [[Bob]]
+*# Talk to [[Father Aereck]]
+*# Talk to [[Lumbridge Guide]]
+*# Walk near a [[goblin]]. [[Zanik]] will talk to one.
+*# Talk to the [[Shop keeper (Lumbridge)|shopkeeper]]
+*Ask [[Zanik]], "Have you seen enough of Lumbridge yet?" {{Chat option|2Have you seen enough of Lumbridge yet?|1Yes}}
+*Put on your set of H.A.M. robes, and go to the [[H.A.M. Hideout]] (west of the general store) and pick the lock to the entrance trapdoor.
+*Talk to [[Johanhus Ulsbrecht]] south-east of the stage. {{Chat option|4Are you planning to do anything about the cave goblins?|3That's good.}}
+*Wander around the south of the stage, [[Zanik]] will spot a trapdoor.
+*Pick the trapdoor and go down. You'll need [[Zanik]] to kill the guards in this room to continue:
+*#Walk west past the first guard and talk to him, then [[Zanik]] will shoot him.
+*#Squeeze through the crack in the wall. Wait for the guard in the central corridor to walk by, then squeeze through the next crack in the wall. Run west behind the guard by the door and talk to him, then [[Zanik]] will shoot him.
+*#When the guard in the corridor starts walking east, talk to [[Zanik]] and say "Now!", and [[Zanik]] will snipe him.
+*#Move to the east side of the central corridor but stop with [[Zanik]] as far east as possible without joining the eastern corridor (this can be easily done by moving into that square and then walking one square west but be careful not to walk into the Eastern corridor). Talk to [[Zanik]] again and tell her to wait. Then, run west, south then east to the end of the corridor So the north eastern guard sees you and walks towards you. [[Zanik]] will shoot him as he passes the central corridor.
+*#For the final guard, again position [[Zanik]] as far north on as you can without the guard seeing you. Tell her to wait here and then head to the opposite position (top of the east/west corridors). Walk northward, causing the guard to walk towards you and [[Zanik]] will shoot him.
+*Listen at the door. A senior guard will appear and arrest you.
+*Pick the lock to escape the cell, then climb up the ladder and leave the hideout to find [[Zanik]], dead. Take her body.
+*Go to [[Juna]] in the [[Chasm of Tears]].
+** Either a [[games necklace]] teleport to Tears of Guthix, or by going down to the Lumbridge kitchen cellar, going through the hole and taking the path heading South. You will need to mine a blockage in the wall and hop over a stone between two waterfalls.
+*Talk to Juna and collect 20 Tears of Guthix to start the cutscene. Remember to have both hands free. {{Chat option|1Yes.}}
+*With your full H.A.M. robes and gear for the fight, return to the castle cellar and talk to [[Zanik]]. {{Chat option|1Let's go!}}
+*Go to the chicken farm near the water wheel ([[File:Dairy churn icon.png]] icon on the east side of the river) and go through the southern gate.
+*With both hands free, search one of the southern empty crates and [[Zanik]] will hide in it. {{Chat option|1I don't know, what are you thinking?|1Good idea.}}
+*While wearing the full H.A.M. robes, climb down the nearby trapdoor, and head to the western room. You will see [[Sigmund|Sigmund (level 50)]] and three [[H.A.M. Guard|Senior Guards (level 22)]].
+*Kill the guards first, then Sigmund. He will use [[protection prayers]], but will use only [[protect from missiles]] in the second phase. You can safespot the guards using [[Zanik]], and you can safespot Sigmund using the boxes.
+*Smash the nearby drilling machine, then head down the southern tunnel to the exit. A cutscene will appear.
+*'''Congratulations, quest complete!'''
+}}

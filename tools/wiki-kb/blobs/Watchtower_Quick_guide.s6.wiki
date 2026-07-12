@@ -1,0 +1,12 @@
+===The magic ogre potion===
+{{Needed|[[guam potion (unf)]], [[jangerberries]], [[bat bones]], and a [[pestle and mortar]].}}
+{{Checklist|
+*Go back to the Watchtower wizard and talk to him.
+**If needed, fill a vial with water at the fountain in front of the watchtower.
+*To a vial of water add in the <u>following order</u> (do not use the ground bat bones first or the water will evaporate and you will need more bones):
+**Guam leaf – to make a [[guam potion (unf)]]
+**Jangerberries (make sure to ''use, not eat'')
+**Ground bat bones (make sure to ''use, not bury'')
+***Use [[pestle and mortar]] on the [[bat bones]] now if you haven't already
+*Talk to the Watchtower wizard again, with the unfinished [[Potion (Watchtower)|potion]] in your inventory.
+}}

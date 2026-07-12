@@ -1,0 +1,23 @@
+==Details==
+{{Quest details
+|start = Talk to the mysterious ghost ([[Valdez]]) near [[Glarial's Tomb]].
+|startmap = 2554,3445
+|description = Follow the sad tale of woe from one cursed soul to the next and learn more of Zamorak's betrayal of Zaros.
+|length = Medium
+|requirements = *Started [[Desert Treasure I]] and [[The Restless Ghost]]
+**{{SCP|Thieving|53|link=yes}} {{Boostable|no}} {{Questreqstart|yes}} to obtain the [[Ring of visibility]]
+*{{SCP|Prayer|31|link=yes}} {{Boostable|no}} {{Questreqstart|no}} (Some players will need this to access the 2nd floor of the [[Edgeville Monastery]])
+|items = *[[Ring of visibility]]
+*[[Ghostspeak amulet]] ([[Morytania legs 2]] or higher may be used instead, except when otherwise noted)
+*Some players may need a [[knife]] or [[slash weapon]]
+|recommended = *{{SCP|Combat|50|link=yes}}
+*Various teleportation runes and/or jewellery (different for each player, described below)
+*[[Stamina potion]]s can be used to preserve [[run energy]]; this is especially useful when in the [[Wilderness]].
+|ironman = * [[File:Ultimate ironman chat badge.png]] You may need to visit [[Entrana]]
+* [[File:Hardcore ironman chat badge.png]] You will need to go into the [[Wilderness]]. To make this somewhat safer you can also do this in [[F2P]] worlds.
+|difficulty = Experienced
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the miniquest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the miniquest '''but will not auto-complete''' [[Desert Treasure I]]
+</poem>
+}}

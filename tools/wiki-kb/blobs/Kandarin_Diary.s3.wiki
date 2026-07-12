@@ -1,0 +1,8 @@
+===Rewards===
+*[[Kandarin headgear 1]]:
+**Acts as a [[light source]] when worn or held in the inventory
+**While worn, gain double [[logs]] from [[regular tree]]s (no additional experience granted)
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill of at least level 30
+*[[Coal trucks]] can hold up to 140 [[coal]], up from 120
+*The [[flax keeper]] will offer you 30 [[Bank note|noted]] [[bow string]]s every day for 30 noted [[flax]], for a profit of {{NoCoins|({{GEP|Bow string}}-{{GEP|Flax}})*30}} [[coins]] on the [[Grand Exchange]]
+*5% more [[mark of grace|marks of grace]] from the [[Seers' Village Rooftop Course]]

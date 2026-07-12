@@ -1,0 +1,45 @@
+==Details==
+{{Quest details
+|start = Talk to [[Sanfew]]  on the {{FloorNumber|uk=1}} of the [[Jatix's Herblore Shop|herbalist shop]] in [[Taverley]].
+|startmap = 2897,3427,plane:1
+|difficulty = Intermediate
+|description = Sanfew requires a rare herb for the next part of the purifying ritual.
+
+Travel back to the Troll Stronghold to find this herb that the trolls use as an ingredient for their favourite dish.
+|length = Medium
+|requirements = * Completion of the following quests:
+** [[Druidic Ritual]]
+** [[Troll Stronghold]]
+*** [[Death Plateau]]
+* {{SCP|Herblore|31|link=yes}} {{Boostable|yes}} {{Questreqstart|yes}}
+|items = * [[Climbing boots]] (or 12 [[coins]] to buy from Tenzing)
+* [[Vodka]] (sold by [[Funch's Fine Groceries|Heckel Funch]] at the [[Tree Gnome Stronghold]] bar for 5 coins)
+* [[Pineapple chunks]] (pineapples are sold by [[Funch's Fine Groceries|Heckel Funch]] at the [[Tree Gnome Stronghold]] bar or any [[Charter_ship|Charter Ship]], use a knife to dice the pineapple into chunks)
+* 1 [[Logs|Log]] (2 logs and a [[tinderbox]] are recommended)
+* 10 [[Grain]] (obtainable during the quest, just south of [[Tegid]] in Taverley)
+* 5 [[Raw chicken]] (there are chickens on the way at [[Tenzing]] the Sherpa's house. Undead chickens do not work)
+* [[Pestle and mortar]]
+* [[Ranarr potion (unf)]]
+|recommended = * {{SCP|Combat|50|link=yes}}
+* [[Armour]] and some [[food]]
+* [[Energy potion|Energy]]/[[stamina potion]]s and [[weight-reducing clothing]]
+* [[Tinderbox]] and an additional log for a fire
+* Fast travel to the Ardougne Zoo ([[Ardougne teleport]] or [[Ardougne cloak]])
+* Fast travel to Taverley ([[Games necklace]], [[Taverley teleport]], [[Teleport to House]] if your house is in Taverley, use the [[Balloon transport system]], or alternatively a [[Falador teleport]])
+'''God Wars Dungeon route to Trollheim:'''
+* [[Ghommal's hilt 1]] or better
+'''Burthorpe route to Trollheim:'''
+* Fast travel to Burthorpe ([[games necklace]] or [[combat bracelet]] to Warriors' Guild)
+* {{SCP|Agility|44|link=yes}} for shortcuts around the rockthrowing [[Trolls]] ({{SCP|Agility|47|link=yes}} for more shortcuts to Eadgar)
+'''Fremennik route to Trollheim:'''
+* Fast travel to Fremennik Slayer Dungeon ([[Slayer ring]] or [[Fairy Rings]] to {{fairycode|ajr}})
+|ironman = *A method of obtaining a [[ranarr potion (unf)]]:
+**Killing [[Chaos druids]] for [[grimy ranarr weed]] (1/32.4)
+**Picking the herbs in the [[Sorceress's Garden]] autumn garden for [[ranarr weed]] (1/11). Requires completion of {{SCP|Quest}} Prince Ali Rescue and {{SCP|Thieving|45|link=yes}}.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

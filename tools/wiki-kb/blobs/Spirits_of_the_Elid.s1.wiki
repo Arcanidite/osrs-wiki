@@ -1,0 +1,40 @@
+==Details==
+{{Quest details
+|start = Talk to [[Awusah the Mayor]] in [[Nardah]].
+|startmap = 3434,2917
+|difficulty = Intermediate
+|description = The people in the desert village of Nardah have a problem. Their town well has dried up and any water they try to bring back to the town from the river mysteriously disappears before they can get it back.
+
+The villagers suspect they have been cursed in some way. Can you unravel what is going on and save the village?
+|length = Short
+|requirements = *{{SCP|Magic|33|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Ranged|37|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Mining|37|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Thieving|37|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*Ability to defeat three level 75 golems
+|items = *Runes for [[Telekinetic Grab]] (One law and one air rune)
+*[[Needle]] (Note: a [[costume needle]] will not work)
+*1-2 [[thread]]
+*[[Crush weapon]]
+*[[Stab weapon]]
+*[[Slash weapon]]
+*[[Light source]]
+*[[Knife]] (or [[fletching knife]])
+*[[Rope]]
+*Any [[pickaxe]] that you have the Mining level to use (a [[bronze pickaxe]] can be obtained during the quest)
+*Some form of Ranged or Magic attack method, (a [[shortbow]] and [[bronze arrow]]s can be obtained during the quest)
+|recommended = *{{SCP|Combat|40|link=yes}}
+*[[Desert clothing]] to protect you from the [[desert heat]]
+*A few [[waterskin]]s
+*[[Nardah teleport]]s
+*[[Coins]] (if using [[magic carpet]] transportation)
+*[[Necklace of passage]] to Eagle's Eyrie or a [[Shantay pass (item)|Shantay pass]] to go through the gate at the [[Shantay Pass]]
+*A [[spear]], [[hasta]], or [[bladed staff]] to save inventory space since they can use all three melee [[attack types]]
+*[[Armour]] and some [[food]]
+|kills = *[[Black golem]] ''(level 75)''
+*[[Grey golem]] ''(level 75)''
+*[[White golem]] ''(level 75)''
+|leagueRegion = <poem>
+{{LeagueRegion|Desert}} — location requirement
+</poem>
+}}

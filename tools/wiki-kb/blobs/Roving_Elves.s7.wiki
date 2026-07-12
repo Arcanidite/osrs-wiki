@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Roving Elves
+|image = [[File:Roving Elves reward scroll.png|centre]]
+|qp = 1
+|rewards = *{{SCP|Strength|10,000}} [[Strength]] [[experience]]
+*[[Crystal shield]] or [[crystal bow|bow]] with 500 charges
+
+Unlocks:
+* [[Moss Guardian]] accessible in the [[Nightmare Zone]].
+* [[Isafdar painting]] for the [[Quest hall]], which is required for completing the [[Western Provinces Diary#Hard|hard Western Provinces Diary]].
+}}

@@ -1,0 +1,43 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Roving Elves}}
+
+==Walkthrough==
+===Tracking Islwyn===
+[[File:Isafdar map.png|thumb|350x350px]]
+{{Needed|recommended=teleport to Ardougne and either: [[ring of charos(a)]] & 1600gp '''''or''''' 3200gp for each trip.}}
+{{Checklist|*Head to [[Tirannwn]] (''[[Catherby teleport (tablet)]], use charter to Port Tyras'')
+*Track down [[Islwyn]], who will be either west of [[Lletya]] or north-east of the [[Tyras Camp]]. Use [[:File:Isafdar map.png|this map]] to assist you. (If the elves are not there, switch worlds until they appear)
+*Offer your help to Islwyn. {{Chat option|1Tell the truth?|1Maybe I could help.}}
+*Talk to [[Eluned]].}}
+===Obtaining the Seed===
+{{Needed|[[Glarial's pebble]]|recommended=[[skills necklace]], food, [[prayer potion]]s, [[ring of recoil]]}}
+{{Checklist|*Bank all your combat equipment, runes included.
+**Go to [[Tree Gnome Village dungeon]] and retrieve Glarial's pebble if you didn't save one from Waterfall Quest.
+*Travel north-west of the [[Fishing Guild]] and use [[Glarial's pebble]] on [[Glarial's tombstone]].
+*Kill a [[Moss Guardian]] (''level 84''). It will drop a [[consecration seed]].
+*Take the seed to Eluned.}}
+
+===Planting The Seed===
+{{Needed|rope, spade, consecration seed|recommended=[[games necklace]] (to [[Barbarian Outpost]]), Ardougne teleport.}}
+{{Checklist|*Enter the [[Waterfall Dungeon]].
+**Board the log raft north of [[Baxtorian Falls]].
+**Use a rope on the rock.
+**Use a rope on the dead tree.
+**Open the door to enter.
+*''(Skip this step if you already have the [[A key (Waterfall Dungeon)|key]].)'' Search the most northern crates in the east room for a key.
+*Take the west path all the way north.
+*Left click the seed in the final room to plant it.
+*Return to [[Islwyn]] to choose your reward.
+*'''Congratulations, quest complete!'''
+**Optional: Speak to Eluned to start Mourning's End Part I, which will allow you to receive the teleport crystal to Lletya.}}
+
+==Rewards==
+{{Quest rewards page|Roving Elves}}
+
+==Required for completing==
+*[[Mourning's End Part I]]
+
+{{Roving Elves}}

@@ -1,0 +1,14 @@
+===The Genie===
+'''Items required:''' ''Light source, Knife, Rope''
+{{Checklist|
+*Talk to [[Awusah the Mayor]].
+*Take the [[Shoes (Spirits of the Elid)|shoes]] by his door and use a [[knife]] on them whilst outside of the house to obtain [[sole]].
+*Head west from the [[Nardah General Store]] to a crevice. Make sure you have a [[light source]].
+*Use a [[rope]] on it and head through the door to the north.
+*Talk to the [[Genie (Spirits of the Elid)|Genie]] to the north {{Chat option|1I'm after a statue that was thrown down here.|1Maybe I can make a deal for it?|3Ok I agree to the deal.}}. Visiting the Genie is a Medium task in the [[Desert Diary]].
+*Talk to Genie again.
+*Head back to Nardah and use the [[Statuette (Spirits of the Elid)|statuette]] on the plinth in the [[Elidinis Statuette|Shrine to Elidinis]] north of the fountain.
+*'''Congratulations, quest complete!'''
+}}
+
+''' Note:''' Praying at the Nardah Shrine is a [[Desert Diary|Desert Medium Achievement Diary Requirement]]. You must not have full prayer points to get credit.

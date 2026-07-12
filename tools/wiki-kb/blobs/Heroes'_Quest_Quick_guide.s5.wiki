@@ -1,0 +1,54 @@
+===Master thieves' armband===
+'''The next part of this quest requires a companion who belongs to the opposite gang from the Shield of Arrav quest. Please note that characters who have already completed Heroes' Quest can still help friends complete the quest!'''
+
+<nowiki>*</nowiki>Joining the official Jagex clan chat channel "Osrs Soa" may be beneficial for those who are trying to find a partner in the opposite gang.
+
+{| class="wikitable lighttable" 
+|-
+! Instructions for Black Arm partner
+! Instructions for Phoenix partner
+|-
+|'''Note''': If you have already completed Heroes' Quest and you're helping a friend in the Phoenix gang, post-quest, skip to the final step and talk to Grip to receive a Miscellaneous key. If a key is already in your bank, Grip will not give you one. '''You do not need Black armour.''' {{Chat option|2 So what do my duties involve?|3 Anything I can do now?}}
+
+If you have NOT yet completed the quest, follow the steps below:
+*Go to south-west Varrock and talk to Katrine in the Black Arm gang headquarters. {{Chat option|2Is there any way I can get the rank of master thief?}}
+*Go to Brimhaven, the building directly south of the agility arena entrance.
+*Gang password: '''Four leaved clover'''
+*Talk to Trobert. {{Chat option|1So can you help me get Scarface Pete's candlesticks?|1I volunteer to undertake that mission!}}
+*Equip your Black armour.
+*Enter the large mansion in the north-west part of town.
+*Talk to Grip to receive a Miscellaneous key. If you already have a key in your bank, Grip will not give you another one. {{Chat option|2So what do my duties involve?|3Anything I can do now?}}
+|
+*Go to Varrock and talk to [[Straven]] in the Phoenix hideout
+*Gang password: '''Gherkin'''
+|-
+|Give the [[miscellaneous key]] to your partner
+|Go to Brimhaven, take the [[miscellaneous key]] from your partner
+|-
+|''Wait for your partner to finish''
+|
+*Inside Brimhaven food shop, talk to [[Alfonse the Waiter]] about gherkins {{Chat option|3Do you sell Gherkins?}}
+*Go through the door, talk to Charlie {{Chat option|1I'm looking for a gherkin...|2I want to steal Scarface Pete's candlesticks.}}
+*Enter the secret wall panel by the range, through the yard, into the side door, then use the key on the north door
+|-
+|
+*Enter the room north of the entrance and search the [[cupboard (Heroes' Quest)|cupboard]] {{Chat option|1He won't notice me having a quick look.}}
+*Grip will then come into the room. Close the door behind him
+|''Wait for your partner to finish''
+|-
+|''Wait for your partner to finish''
+|Kill Grip (with Ranged or Magic)
+|-
+|
+*Take Grip's key
+*Go to the north-west part of the building, use the key on the door
+*Take 2 candlesticks from the chest
+|''Wait for your partner to finish''
+|-
+|
+*Give your partner 1 candlestick
+*Take your candlestick back to [[Katrine]] to receive the [[Thieves' armband]] {{Chat option|2I have a candlestick now.}}
+|
+*Trade your partner for a candlestick
+*Take your candlestick back to [[Straven]] to receive the [[Thieves' armband]] {{Chat option|1I have a candlestick now.}}
+|}

@@ -1,0 +1,203 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 15
+|Herblore = 12
+|Fishing = 20
+|Thieving = 25
+|Construction = 25
+|ConstructionNotes = {{boostable|n}}
+|Total = 124
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Druidic Ritual"
+|[[Druidic Ritual]]
+|}
+| style="vertical-align: top" |
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 42
+|Strength = 16
+|Agility = 49
+|Herblore = 12
+|Fishing = 43
+|Thieving = 25
+|Crafting = 31
+|Firemaking = 50
+|Woodcutting = 50
+|Farming = 45
+|Construction = 30
+|Hunter = 53
+|Total = 466
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="The Ascent of Arceuus"
+|[[The Ascent of Arceuus]]
+|- data-rowid="The Depths of Despair"
+|[[The Depths of Despair]]
+|- data-rowid="The Forsaken Tower"
+|[[The Forsaken Tower]]
+|- data-rowid="The Queen of Thieves"
+|[[The Queen of Thieves]]
+|- data-rowid="Tale of the Righteous"
+|[[Tale of the Righteous]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Partial completion of [[Eagles' Peak]]
+|}
+|}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 65
+|Strength = 16
+|Agility = 49
+|Smithing = 70
+|Defence = 40
+|Herblore = 31
+|Fishing = 43
+|Thieving = 49
+|Crafting = 61
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 50
+|Magic = 66
+|Fletching = 25
+|Woodcutting = 60
+|Slayer = 62
+|Farming = 74
+|Construction = 30
+|Hunter = 53
+|Combat = 85
+|Total = 859
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="The Ascent of Arceuus"
+|[[The Ascent of Arceuus]]
+|- data-rowid="The Depths of Despair"
+|[[The Depths of Despair]]
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|- data-rowid="The Forsaken Tower"
+|[[The Forsaken Tower]]
+|- data-rowid="The Queen of Thieves"
+|[[The Queen of Thieves]]
+|- data-rowid="Tale of the Righteous"
+|[[Tale of the Righteous]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Partial completion of [[Eagles' Peak]]
+|-
+|Defeat a [[Lizardman shaman#Lizardman Temple|Lizardman Shaman]] in the [[Lizardman Temple]]
+|}
+|}
+
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 65
+|Strength = 16
+|Agility = 49
+|Smithing = 70
+|Defence = 40
+|Herblore = 31
+|Fishing = 82
+|Thieving = 49
+|Cooking = 84
+|Crafting = 61
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 50
+|Magic = 90
+|Fletching = 40
+|Woodcutting = 90
+|Runecraft = 77
+|Slayer = 95
+|Farming = 85
+|Construction = 30
+|Hunter = 53
+|Combat = 85
+|Total = 1170
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="The Ascent of Arceuus"
+|[[The Ascent of Arceuus]]
+|- data-rowid="The Depths of Despair"
+|[[The Depths of Despair]]
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|- data-rowid="The Forsaken Tower"
+|[[The Forsaken Tower]]
+|- data-rowid="The Queen of Thieves"
+|[[The Queen of Thieves]]
+|- data-rowid="Tale of the Righteous"
+|[[Tale of the Righteous]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Partial completion of [[Eagles' Peak]]
+|-
+|Completion of the [[Chambers of Xeric]]
+|-
+|Defeat a [[Hydra]] in the [[Karuulm Slayer Dungeon]]
+|-
+|Defeat a [[Lizardman shaman#Lizardman Temple|Lizardman Shaman]] in the [[Lizardman Temple]]
+|-
+|Defeat [[Skotizo]]
+|}
+|}
+
+|-|
+</tabber>

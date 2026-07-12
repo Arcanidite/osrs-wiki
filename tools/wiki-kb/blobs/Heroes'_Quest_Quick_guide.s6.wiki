@@ -1,0 +1,18 @@
+===Fire feather===
+[[File:Heroes' Quest - Ice Queen's Lair route.png|thumb]]
+Items Required: Pickaxe (if you do not have ice gloves); Stamina Potions recommended
+{{Checklist|
+''If you already have the [[ice gloves]], skip the first step.''
+*To obtain the ice gloves:
+**Equip combat gear and food to kill a level 111 [[Ice Queen]].
+**Go to [[White Wolf Mountain]]. Note: If you need to boost your mining to 50, bring the boost with you.
+**Walk to the northern part of the mountain, mine the rockslide.
+**Take the southern ladder.
+**Follow the tunnel south, go up the ladder.
+**Take the eastern ladder down.
+**Go through the long tunnel.
+**Go up the ladder.
+**Go down the northern ladder. Run north and kill the queen for her gloves.
+*Equip the [[ice gloves]].
+*Travel to [[Entrana]].
+*Kill the [[Firebird]] near the [[Law Altar]], take the fire feather.}}

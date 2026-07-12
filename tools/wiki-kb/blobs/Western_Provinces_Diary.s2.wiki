@@ -1,0 +1,66 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Western Provinces" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Catch a [[Copper Longtail]].
+|
+*{{SCP|Hunter|9|link=y}}
+*[[Bird snare]]
+|-
+|2. Complete a novice game of [[Pest Control]].
+''Note: You must've earnt [[Void Knight commendation points|commendation points]] for this task to count as completed. In Deadman Mode, the task is instead "Attempt to board the novice Pest Control lander with at least 40 combat."''
+|
+*{{SCP|Combat|40|link=y}}
+|-
+|3. Mine some [[Iron Ore]] near [[Piscatoris]].
+''Note: This must be done at the [[Piscatoris mine]].''
+|
+*{{SCP|Mining|15|link=y}}
+*Any [[pickaxe]]
+|-
+|4. Complete a lap of the [[Gnome Stronghold Agility Course|Gnome agility course]].
+|{{NA|None}}
+|-
+|5. Score a goal in a [[Gnome Ball|Gnomeball]] match.
+|{{NA|None}}
+|-
+|6. Claim any [[Chompy bird hat]] from [[Rantz]].
+''Note: You need to have a ([[comp ogre bow|comp]]) [[ogre bow]] in your inventory to claim hats.''
+|
+*{{SCP|Quest}} Completion of [[Big Chompy Bird Hunting]]
+*[[Ogre bellows]], ([[comp ogre bow|comp]]) [[ogre bow]], and [[ogre arrows|ogre]] or [[brutal arrows]]
+*30 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|-
+|7. Teleport to [[Pest Control]] using the [[Minigame Teleport]].
+''Note: In Deadman Mode, the task is instead "Travel to the Void Knight Outpost from Port Sarim."''
+|
+*{{SCP|Combat|40|link=y}}
+|-
+|8. Collect a [[Swamp toad (item)|swamp toad]] at the [[Tree Gnome Stronghold|Gnome Stronghold]].
+''Note: Only a [[Swamp toad (item)|swamp toad]] collected from the swamp pen north-west of [[Grand Tree]] counts for this task.''
+|{{NA|None}}
+|-
+|9. Have [[Brimstail]] teleport you to the [[Rune essence mine|Essence Mine]].
+''Note: You can right-click him to teleport.''
+|
+*{{SCP|Quest}} Completion of [[Rune Mysteries]]
+|-
+|10. Fletch an [[Oak Shortbow]] in the [[Tree Gnome Stronghold|Gnome Stronghold]].
+|
+*{{SCP|Fletching|20|link=y}}
+*[[Oak shortbow (u)]] and [[bow string]]
+|-
+|11. Kill a [[Terrorbird]] in the Terrorbird enclosure.
+''Note: This enclosure is found in the south-west of the [[Tree Gnome Stronghold]], across the river.
+|
+*[[Weaponry]]
+|}
+
+===Rewards===
+*[[Western banner 1]]:
+**Depicts a [[chompy bird]]
+**No benefits aside from being a [[crush weapon]]
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill of at least level 30
+*25% chance of two [[chompy bird]]s appearing at once when [[chompy bird hunting]]
+*[[Rantz]] offers you 25 [[ogre arrow]]s for free every day, worth a total of {{NoCoins|{{GEP|Ogre arrow|25}}}} [[coins]] on the [[Grand Exchange]]

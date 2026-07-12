@@ -1,0 +1,21 @@
+=== Manni the Reveller, Sigli the Huntsman, and Olaf the Bard ===
+{{Checklist|
+*Talk to [[Manni the Reveller]] while in the longhall. {{Chat option|1Yes}}
+*Take the [[Keg of beer (The Fremennik Trials)| keg of beer]] and challenge [[Manni]] to a drinking contest. You will lose. {{Chat option|1Yes}}
+*If you did not bring a [[beer]], grab the [[beer tankard]] now.
+*Talk to [[Sigli the Huntsman]] outside, near the entrance of the longhall, to obtain the [[Hunters' Talisman]]. {{Chat option|1What's a Draugen?|1Yes}}
+*Talk to [[Olaf the Bard]] just east of the longhall. {{Chat option|1Yes}}
+*Talk to Olaf again. {{Chat option|4I don't need a reminder}}
+*To get a [[lyre]], either make it yourself (Requires {{SCP|Fletching|25}} {{SCP|Woodcutting|40}} {{SCP|Crafting|40}} and 6 free inventory spaces) or kill [[Lanzig]] (1/17 drop rate). Killing lanzig takes '''longer''' on average. You must enchant it either way.
+**Option 1: Making the lyre yourself (Items required: Axe of any kind, knife)
+***Walk to the [[Swaying tree]] that is east of the entrance to Rellekka (north-west of the [[Golden Apple Tree]] at {{Fairycode|AJR}}) at the rare trees icon. Chop a branch and fletch an [[unstrung lyre]].
+***Talk to [[Lalli]] to the south-east of the Swaying tree, ask about the other human. {{Chat option|1Other human?}}
+***Talk to [[Askeladden]] just outside the longhall entrance to get a [[pet rock]].
+***Pick a cabbage, potato, and onion from the farming patch in the south-east corner of Rellekka.
+***Return to Lalli, and offer the pet rock.
+***Use the cabbage, potato, onion, and pet rock on [[Lalli's Stew]] (cauldron).
+***Talk to Lalli again to get the [[golden fleece]].
+***Spin the golden fleece on a spinning wheel and use it on the unstrung lyre. (See the next section to spin the wool)
+**Option 2: Killing Lanzig (takes a long time with bad luck)
+***[[Lanzig]] lives in a hut just east of the entrance to the longhall. Kill Lanzig until he drops the lyre (1/17 drop rate). Safespottable at the firepit or outside his door.
+}}

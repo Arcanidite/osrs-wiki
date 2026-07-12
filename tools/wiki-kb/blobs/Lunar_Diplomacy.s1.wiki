@@ -1,0 +1,52 @@
+==Details==
+{{Quest details
+|start = Talk to [[Lokar Searunner]] at the westernmost dock of [[Rellekka]].
+|startmap = 2620,3689
+|difficulty = Experienced
+|description = Can you make it to Moonclan Island and make peace between the Moonclan and the Fremenniks?
+|length = Long
+|requirements = *Completion of the following quests:
+** [[The Fremennik Trials]]
+** [[Lost City]]
+** [[Rune Mysteries]]
+** [[Shilo Village]]
+*** [[Jungle Potion]]
+**** [[Druidic Ritual]]
+*{{SCP|Herblore|5|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Crafting|61|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Defence|40|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Firemaking|49|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Magic|65|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Mining|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Woodcutting|55|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*The ability to kill multiple level 111 monsters.
+*Access to each of the elemental [[runic altars]] ([[Air Altar|Air]], [[Fire Altar|Fire]], [[Water Altar|Water]], [[Earth Altar|Earth]])
+|items = *A [[tinderbox]]
+*A few [[coins]] (1,000 is enough)
+*A [[guam leaf]] (common drop from a [[Suqah]] during the quest)
+*A [[marrentill]] (common drop from a Suqah during the quest)
+*A [[pestle and mortar]]
+*A [[hammer]] (or an [[Imcando hammer]])
+*A [[needle]] (a [[costume needle]] will also work) and 2 spools of [[thread]].
+*Any [[axe]] (bronze axe obtainable during quest)
+*Any [[pickaxe]]
+*A [[spade]]
+*A finished [[bullseye lantern]] ('''NOT [[bullseye lantern (unf)|(unf)]] NOR [[bullseye lantern (empty)|(empty)]]'''. If you cannot obtain one, bring [[Swamp tar]] to a [[lamp oil still]] instead. [[Swamp tar]] can be obtained during the quest.)
+*All elemental talismans or their respective tiaras ([[Air talisman|Air]], [[Water talisman|Water]], [[Earth talisman|Earth]], and [[Fire talisman|Fire]], or an [[Elemental talisman]]), or access to the [[Abyss]] or the [[Guardians of the Rift]] minigame
+*A [[dramen staff]]
+*[[Combat]] equipment
+|recommended = *{{SCP|Combat|50|link=yes}}
+*Fast travel to [[Rellekka]]: [[Enchanted lyre]] (obtained during [[The Fremennik Trials]]), [[Fremennik sea boots]], [[Rellekka teleport]] tablets, [[fairy ring]] (code {{Fairycode|DKS}}), or [[Camelot Teleport]] and run
+*Fast travel to each of the elemental altars (either via the [[Abyss]], the [[Guardians of the Rift]], or to the [[Air Altar|Air]] near the [[Crafting Guild]], [[Fire Altar|Fire]] near the [[Emir's Arena]], [[Water Altar|Water]] in [[Lumbridge Swamp]], [[Earth Altar|Earth]] near the [[Sawmill]])
+*Extra [[dramen staff|dramen staves]] (if interested in making more [[lunar staves]] for free)
+'''If you cannot obtain a [[bullseye lantern]], bring:'''
+*[[Teleport to House]] [[runes]]/[[Teleport to house|tablet]] (if [[POH]] is in [[Rimmington]], [[redirection scroll]]s if not) or other means to get to Rimmington.
+
+This is expensive but to save time you can also bring [[Ring of the elements]] to teleport to all of the altars as well as use an [[Elemental tiara]] to save 8 inventory slots.
+|kills = *Multiple [[Suqah]] ''(level 111)''
+*[[Me]] ''(level 79)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

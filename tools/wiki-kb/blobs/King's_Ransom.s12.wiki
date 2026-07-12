@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = King's Ransom
+|image = [[File:King's Ransom reward scroll.png|centre]]
+|qp = 1
+|rewards = * {{SCP|Defence|33,000}} experience
+* {{SCP|Magic|5,000}} experience
+*An [[Antique lamp (King's Ransom)|antique lamp]] granting 5,000 [[experience]] to any skill level 50 or above
+*Access to the [[Knight Waves Training Grounds]]
+*The ability to use the [[Chivalry]] and [[Piety]] prayers, with level 60 and 70 [[Prayer]], respectively, after completion of [[Knight Waves Training Grounds]]
+}}

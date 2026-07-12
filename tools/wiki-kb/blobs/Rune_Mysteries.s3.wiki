@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Rune Mysteries
+|image = [[File:Rune Mysteries reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*The ability to mine [[rune essence]]
+*An [[air talisman]]
+*The ability to use [[lamp]]s and [[Book of Knowledge|books of knowledge]] from [[random events]] on [[Runecraft]]
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]].
+}}

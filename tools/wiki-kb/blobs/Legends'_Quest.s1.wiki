@@ -1,0 +1,77 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Legends' Guard]]s just outside of the [[Legends' Guild]].
+|startmap = 2728,3349
+|difficulty = Master
+|description = Only the elite are allowed to call themselves a member of the Legends' Guild. Do you have what it takes to make it in?
+|length = Long
+|requirements = * {{SCP|Quest|107|link=yes}} {{Questreqstart|yes}}
+* {{SCP|Agility|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Crafting|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Herblore|45|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Magic|56|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Mining|52|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Prayer|42|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Smithing|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Strength|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Thieving|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Woodcutting|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* Completion of the following quests:
+** [[Family Crest]]
+** [[Heroes' Quest]]
+*** [[Shield of Arrav]]
+*** [[Lost City]]
+*** [[Merlin's Crystal]]
+*** [[Dragon Slayer I]]
+** [[Shilo Village]]
+*** [[Jungle Potion]]
+**** [[Druidic Ritual]]
+** [[Underground Pass]]
+*** [[Biohazard]]
+**** [[Plague City]]
+** [[Waterfall Quest]]
+* The ability to defeat a level 187 demon
+|items = * Any [[machete (weapon)|machete]] (obtainable during the quest)
+* 2 [[gold bar]]s (6 in case you fail or want more [[gold bowl]]s)
+* [[Hammer]] or [[Imcando hammer]]
+* [[Rope]]
+* [[rune axe|Rune]], [[dragon axe|Dragon]] or [[Infernal axe]]
+* [[Lockpick]] (2 in case you fail) ([[Strange old lockpick]] does not work)
+* [[Pickaxe]]
+* [[Vial of water]]
+* [[Ardrigal]] (obtainable during the quest)
+* [[Snake weed]] (obtainable during the quest)
+* One of each cut gem up to diamond:
+** [[Sapphire]]
+** [[Emerald]]
+** [[Ruby]]
+** [[Diamond]]
+** [[Opal]]
+** [[Jade]]
+** [[Red topaz]]
+* [[Soul rune]]
+* [[Mind rune]]
+* 2 [[law runes]]
+* [[Earth rune]]
+* [[Unpowered orb]] and runes to cast any [[Charge Orb]] once (requires the [[standard spellbook]] equipped - note that at Magic level 56 you can only cast the Charge Water Orb spell - two casts are needed if taking the "long path" during the second fight with the demon)
+* [[Charcoal]] (2-3 in case it breaks -- obtainable during the quest if travelling via Shilo Village)
+* 3 [[Papyrus]] (4-5 in case one is torn -- obtainable during the quest if travelling via Shilo Village or from the spawn on Radimus's desk)
+|recommended = * {{SCP|Combat|65|link=yes}}
+* [[Super restore]] potion if your levels are not far above the following required levels, as failing will reduce them and you might need them for certain objectives:
+** {{SCP|Agility|50|link=yes}} to squeeze through the crevice behind the [[Bookcase (Viyeldi caves)|bookcase]]
+** {{SCP|Thieving|50|link=yes}} to pick the first [[Ancient Gate]]
+** {{SCP|Mining|52|link=yes}} to smash the [[Boulder (Viyeldi caves)|boulders]]
+** {{SCP|Strength|50|link=yes}} to force the second [[Ancient Gate#Second gate|Ancient Gate]]
+* Items that give a [[temporary skill boost]] to skip some levels in skilling (such as [[Botanical pie]]s,[[Summer pie]]s, [[Dwarven stout(m)|Dwarven stout]]s, and [[Axeman's Folly]])
+* [[Weapon]], [[armour]], [[food]] and several [[prayer potion]]s
+* Fast travel to the Legends' Guild ([[Ardougne teleport]] or [[Fairy rings]] to {{fairycode|blr}})
+* Fast travel to the Karamja jungle ([[Brimhaven teleport]], [[Teleport to House]] if it is in Brimhaven, [[charter ship]] or ship from Ardougne to Brimhaven, [[Fairy rings]] to {{fairycode|ckr}} or [[amulet of glory]] to Karamja)
+|kills = * [[Ranalph Devere]] ''(level 92)'' — 2 times
+* [[Irvig Senay]] ''(level 100)'' — 2 times
+* [[San Tojalon]] ''(level 106)'' — 2 times
+* [[Nezikchened]] ''(level 187)'' — 3 times
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

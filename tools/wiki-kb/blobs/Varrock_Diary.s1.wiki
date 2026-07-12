@@ -1,0 +1,208 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 15
+|Agility = 13
+|Fishing = 20
+|Thieving = 5
+|Crafting = 8
+|Runecraft = 9
+|Total = 96
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Reach 50 [[kudos]] with the [[Varrock Museum]]
+|}
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 15
+|Agility = 30
+|Herblore = 10
+|Fishing = 20
+|Thieving = 25
+|Crafting = 36
+|Firemaking = 40
+|Magic = 25
+|MagicNotes = <ref name="IronHard">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 49 [[Magic]].</ref>
+|Runecraft = 9
+|Farming = 30
+|Combat = 40
+|Quest = 32
+|Total = 262
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="The Dig Site"
+|[[The Dig Site]]
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|- data-rowid="Garden of Tranquillity"
+|[[Garden of Tranquillity]]
+|- data-rowid="Gertrude's Cat"
+|[[Gertrude's Cat]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|- data-rowid="A Soul's Bane"
+|[[A Soul's Bane]]
+|- data-rowid="Tree Gnome Village"
+|[[Tree Gnome Village]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Own a [[Jagex Account]], or set up the older [[RuneScape Authenticator]]
+|-
+|Reach 50 [[kudos]] with the [[Varrock Museum]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 15
+|Agility = 51
+|Herblore = 10
+|Smithing = 20
+|Fishing = 20
+|Ranged = 40
+|Thieving = 53
+|Prayer = 52
+|Crafting = 36
+|Firemaking = 60
+|Magic = 54
+|Fletching = 10
+|Woodcutting = 60
+|Runecraft = 9
+|Farming = 68
+|Construction = 50
+|Hunter = 66
+|HunterNotes = {{boostable|n}} <ref name="IronKebbit">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 69 [[Hunter]] {{boostable|y}} to catch a [[dashing kebbit]].</ref>
+|Combat = 40
+|Quest = 32
+|Total = 689
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|- data-rowid="Garden of Tranquillity"
+|[[Garden of Tranquillity]]
+|- data-rowid="Gertrude's Cat"
+|[[Gertrude's Cat]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|- data-rowid="A Soul's Bane"
+|[[A Soul's Bane]]
+|- data-rowid="Tree Gnome Village"
+|[[Tree Gnome Village]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Own a [[Jagex Account]], or set up the older [[RuneScape Authenticator]]
+|-
+|Reach 153 [[kudos]] with the [[Varrock Museum]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 60
+|Agility = 51
+|Smithing = 89
+|Defence = 40
+|Herblore = 90
+|Fishing = 20
+|Ranged = 40
+|Thieving = 53
+|Cooking = 95
+|Prayer = 52
+|Crafting = 61
+|Firemaking = 60
+|Magic = 86
+|Fletching = 81
+|Woodcutting = 60
+|Runecraft = 78
+|RunecraftNotes = <ref name="RunecraftHard">The minimally required [[Runecraft]] level is 52 with 2+ [[Raiments of the Eye]] pieces, or 78 with less.</ref>
+|Farming = 68
+|Construction = 50
+|Hunter = 66
+|HunterNotes = <ref name="IronKebbit">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 69 [[Hunter]] {{boostable|y}} to catch a [[dashing kebbit]].</ref>
+|Combat = 40
+|Quest = 32
+|Total = 1187
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|- data-rowid="Garden of Tranquillity"
+|[[Garden of Tranquillity]]
+|- data-rowid="Gertrude's Cat"
+|[[Gertrude's Cat]]
+|- data-rowid="A Soul's Bane"
+|[[A Soul's Bane]]
+|- data-rowid="Tree Gnome Village"
+|[[Tree Gnome Village]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Own a [[Jagex Account]], or set up the older [[RuneScape Authenticator]]
+|-
+|Reach 153 [[kudos]] with the [[Varrock Museum]]
+|}
+|}
+{{Reflist}}
+
+|-|
+</tabber>

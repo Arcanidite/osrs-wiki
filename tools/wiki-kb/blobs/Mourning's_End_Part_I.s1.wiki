@@ -1,0 +1,53 @@
+==Details==
+{{Quest details
+|start = Talk to [[Eluned]] inside the elven woods of [[Isafdar]].
+|startmap = 2206,3159
+|difficulty = Master
+|description = It seems at last Arianwyn has need of your skills.
+
+He believes there is more to the Mourners than meets the eye and he wishes for you to find out just what they're up to. Can you gain the trust of the Mourners?
+|length = Medium
+|requirements = *{{SCP|Ranged|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Thieving|50|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*The ability to defeat a level 11 enemy with your combat stats set to 20 each.
+*Completion of the following quests:
+**[[Roving Elves]]
+***[[Regicide]]
+****[[Underground Pass]]
+*****[[Biohazard]]
+******[[Plague City]]
+***[[Waterfall Quest]]
+**[[Big Chompy Bird Hunting]]
+**[[Sheep Herder]]
+|items = *[[Bear fur]] (obtainable during the quest near Jorral's Outpost)
+*2 [[silk]]
+*Each of these [[dye]]s: [[red dye|red]], [[yellow dye|yellow]], [[green dye|green]], and [[blue dye|blue]] (can be bought during the quest for {{NoCoins|6|c}} each at the [[Lletya Seamstress]]).
+** You may want to bring additional dyes to collect multiple coloured toads in case you miss when firing the device.
+*[[Bucket of water]] (can be bought from the general store in Lletya during the quest, and used on the well)
+*[[Feather]]
+*[[Rotten apple]] ('''must''' be the rotten apple on the ground north of the [[Mourner Headquarters]] in [[West Ardougne]], obtainable during the quest)
+*[[Toad crunchies]] or [[Premade t'd crunch]]
+*[[Magic logs]]
+*[[Leather]]
+*[[Ogre bellows]] (obtainable during the quest)
+*[[Barrel of naphtha]], or 5-9 [[coal]] to make one
+*7 empty inventory spaces for the [[Mourner gear]]
+|recommended = *{{SCP|Combat|60|link=yes}}
+*[[Weapon]]
+*[[Food]] if your [[combat level]] is low
+*[[Ardougne teleport tablet|Ardougne]] or [[West Ardougne teleport tablet]]s (runes may be inconvenient as your [[Magic]] will be lowered by the [[Mourner]])
+*[[Ring of dueling]] to reset drained stats at the [[Pool of Refreshment]] in the [[Ferox Enclave]]
+*[[Necklace of passage]] for faster access to [[Arandar]], via the [[Outpost]]
+*Fast travel to [[Taverley]] ([[House teleport]], [[Balloon network]], [[Falador teleport]])
+*Fast travel to [[Feldip Hills]] ([[Feldip hills teleport]], [[Gnome glider]], [[Fairy rings]] to {{fairycode|aks}} or the [[Eagle transport system]] to the jungle)
+*Fast travel to [[Rimmington]], if you have not yet made a [[barrel of naphtha]] ([[Rimmington teleport]] or [[Teleport to House]] if it located there, [[Skills necklace]] to the Crafting Guild or a [[Falador teleport]])
+|kills = [[Mourner]] ''(level 11) (will decrease all combat skills to 20, including [[Hitpoints]])''
+|ironman = *A method to obtain [[magic logs]]:
+**{{SCP|Woodcutting|75|link=yes}} {{Boostable|yes}} for chopping [[magic tree]]s
+**{{SCP|Woodcutting|50|link=yes}} and {{SCP|Firemaking|50|link=yes}} {{Boostable|no}} to obtain magic logs as a possible reward for defeating the [[Wintertodt]] skilling boss
+** {{SCP|Woodcutting|50|link=yes}} and {{SCP|Hunter|46|link=yes}} {{Boostable|no}} to obtain magic logs as a possible reward for completing [[Hunters' Rumours]]
+** {{SCP|Hunter|58|link=yes}}{{Boostable|yes}} to obtain magic logs as a possible drop from [[nature implings]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

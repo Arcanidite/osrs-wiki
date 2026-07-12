@@ -1,0 +1,19 @@
+===Lava eel===
+''(Note: Bring a Summer Pie if boosting Agility for Taverley Dungeon shortcut and an Admiral's Pie if you need to boost Fishing. )''[[File:Heroes' Quest - Taverley Dungeon route.png|thumb|352x352px]]''Items needed: 1: Vial of water'' and Harralander or Harralander potion (unf), Fishing Rod, Fishing Bait, Dusty Key{{Checklist|
+*Talk to [[Gerrant]], the fishing shop owner in [[Port Sarim]] about lava eels. {{Chat option|3I want to find out how to catch a lava eel.}} He'll give you a bottle of [[blamish snail slime]].
+*Use the [[blamish snail slime]] on your harralander potion (unf) to create [[blamish oil]].
+*Buy a fishing rod and some bait if you do not have them.
+*Right-click to '''use''' the oil on your fishing rod.
+*Travel to the [[Taverley Dungeon]].
+**You ''can ''visit the Wilderness [[Lava Maze]] to obtain the eel, but it is advised against due to its location unless you want to also complete the hard [[Wilderness Diary]] task.
+**Alternatively, players with 60 [[Sailing]] (''non boostable'') can go to the [[Charred Dungeon]] located at the [[Charred Island]], the route is closer and doesn't require agility nor a key like [[Taverley Dungeon]] does but players will need to pass throught a bunch of [[lava Strykewyrms]].
+''If you already have a dusty key (steel key ring with dusty key works), or 70 [[Agility]], skip the next step.''
+*To obtain a dusty key:
+**Use the map (pictured right) to find Velrak the explorer. He is in the southern part of the dungeon.
+**Kill the Jailer standing by the prison and use the key he drops to get into Velrak's cell.
+**Talk to him for the [[dusty key]]. {{Chat option|1So do you know any good places to explore?|1Yes please!}} '''Do not ask for a reward.'''
+*Enter the area with the blue dragons, either by using your key on the locked door or take the [[agility shortcut]].
+*Run to the southernmost lava pool.
+*Catch a lava eel. You only need one, as they cannot be burned. (Catch extra in case you accidentally eat it.)
+*Cook the eel on a range or fire.
+}}

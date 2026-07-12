@@ -1,0 +1,172 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 40
+|Agility = 15
+|Total = 85
+}}
+| style="vertical-align:top;" |
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 40
+|Agility = 32
+|Herblore = 3
+|Fishing = 65
+|Cooking = 16
+|Crafting = 20
+|Woodcutting = 50
+|Farming = 27
+|Hunter = 41
+|Quest = 32
+|Total = 318
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="The Grand Tree"
+|[[The Grand Tree]]
+|- data-rowid="Shilo Village"
+|[[Shilo Village]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Partial completion of [[Dragon Slayer I]]
+|-
+|Partial completion of [[Tai Bwo Wannai Trio]]
+|-
+|Reach 100% [[Tai Bwo Wannai Cleanup]] favour
+|}
+|}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 52
+|Strength = 50
+|Agility = 53
+|Smithing = 40
+|SmithingNotes = <ref name="Iron">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Herblore = 25
+|Fishing = 65
+|Ranged = 42
+|Thieving = 50
+|Cooking = 53
+|Crafting = 50
+|Fletching = 1
+|FletchingNotes = <ref name="Iron"/>
+|Magic = 59
+|Woodcutting = 50
+|Runecraft = 44
+|Slayer = 50
+|SlayerNotes = <ref name="Duradel">You'll need either 50 [[Slayer]] and a [[Combat level]] of 100, or 99 [[Slayer]].</ref>
+|Farming = 27
+|Hunter = 41
+|Combat = 100
+|CombatNotes = <ref name="Duradel"/>
+|Quest = 107
+|Total = 767
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="The Grand Tree"
+|[[The Grand Tree]]
+|- data-rowid="Tai Bwo Wannai Trio"
+|[[Tai Bwo Wannai Trio]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Partial completion of [[Legends' Quest]]
+|-
+|Defeat a [[Ket-Zek]] in the [[TzHaar Fight Cave]] on the 31st wave
+|-
+|Reach 100% [[Tai Bwo Wannai Cleanup]] favour
+|}
+|}
+{{Reflist}}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 52
+|Strength = 50
+|Agility = 53
+|Smithing = 40
+|SmithingNotes = <ref name="Iron">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Herblore = 87
+|Fishing = 65
+|Ranged = 42
+|Thieving = 50
+|Cooking = 53
+|Crafting = 50
+|Fletching = 1
+|FletchingNotes = <ref name="Iron"/>
+|Magic = 59
+|Woodcutting = 50
+|Runecraft = 91
+|Slayer = 50
+|SlayerNotes = <ref name="Duradel">You'll need either 50 [[Slayer]] and a [[Combat level]] of 100, or 99 [[Slayer]].</ref>
+|Farming = 72
+|Hunter = 41
+|Combat = 100
+|CombatNotes = <ref name="Duradel"/>
+|Quest = 107
+|Total = 921
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="The Grand Tree"
+|[[The Grand Tree]]
+|- data-rowid="Tai Bwo Wannai Trio"
+|[[Tai Bwo Wannai Trio]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Partial completion of [[Legends' Quest]]
+|-
+|Completion of the [[TzHaar Fight Cave]]
+|-
+|Reach 100% [[Tai Bwo Wannai Cleanup]] favour
+|}
+|}
+{{Reflist}}
+
+|-|
+</tabber>

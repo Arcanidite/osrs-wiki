@@ -1,0 +1,13 @@
+===Searching for clues===
+{{Checklist|
+*Use the [[emerald lens]] on the [[bullseye lantern]] you brought. Light it with your tinderbox.
+**If you didn't bring a lightable lantern, you can make [[lamp oil]] in [[Rimmington]] and add it to the [[bullseye lantern (unf)]] given by the [[Cabin boy]], after using the [[emerald lens]] on it. If you lose your emerald lens for any reason, you can ask the Cabin boy for another one.
+**If you still own a [[sapphire lantern]] from the [[Tears of Guthix]] quest, you can use the emerald lens on the sapphire lantern.
+*Use the lantern on the following objects, and rub away the symbols:
+**'''Cannon''': Eastern cannon a few steps away (same level as [[Cabin boy]]).
+**'''Wallchart''': Climb down the stairs, southern-most room (on the wallchart north of the long wooden table).
+**'''Chest''': Lowest level of the ship, northern chest.
+**'''Support pillar''': Also lowest level, just north of Beefy Burns, the cook.
+**'''Crate''': Directly east of the [[cooking range]].
+*Talk to [[Captain Bentley]].
+}}

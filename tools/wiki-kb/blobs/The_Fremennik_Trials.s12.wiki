@@ -1,0 +1,18 @@
+==Rewards==
+{{Quest rewards
+|name=The Fremennik Trials|image=[[File:The Fremennik Trials reward scroll.png|centre]]|qp=3|rewards=*{{SCP|Agility|2,812.4}} [[Agility]] [[experience]]
+*{{SCP|Attack|2,812.4}} [[Attack]] experience
+*{{SCP|Crafting|2,812.4}} [[Crafting]] experience
+*{{SCP|Defence|2,812.4}} [[Defence]] experience
+*{{SCP|Fishing|2,812.4}} [[Fishing]] experience
+*{{SCP|Fletching|2,812.4}} [[Fletching]] experience
+*{{SCP|Hitpoints|2,812.4}} [[Hitpoints]] experience
+*{{SCP|Strength|2,812.4}} [[Strength]] experience
+*{{SCP|Thieving|2,812.4}} [[Thieving]] experience
+*{{SCP|Woodcutting|2,812.4}} [[Woodcutting]] experience
+*Access to the islands of [[Miscellania]], [[Etceteria]], [[Neitiznot]], and [[Jatizso]] along with access to the facilities in Rellekka.
+*Ability to wear the [[Fremennik]] [[Fremennik blade|blade]] and the [[Warrior helm|warrior]], [[Berserker helm|berserker]], [[Archer helm|archer]], and [[Farseer helm|farseer]] helms
+*Ability to have [[Fossegrimen]] create the [[enchanted lyre(i)]]
+*A [[herring]]}}
+*[[Jarvald]] will charge no fee for travelling to [[Waterbirth Island]]
+*A [[Fremennik name]] as part of becoming a [[titles|clansman]] in the Fremennik

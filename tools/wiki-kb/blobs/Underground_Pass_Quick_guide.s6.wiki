@@ -1,0 +1,19 @@
+===Iban's cavern===
+[[File:Underground Pass - Fourth area map.png|thumb|659x659px]]
+{{Checklist|'''Note''': You can now drop your spade and plank (and the extra rope, if you brought 2 in the beginning).
+*Run south as far as you can (see map), and descend into the cave (yellow dot on map).
+*Talk to [[Niloof]] the dwarf, you will also receive 2 meat pies and a [[meat pizza]]. 
+**'''Note''': You can also talk to Kamen and either accept his beer ('''reduces Agility level and causes damage''') or decline and purchase the food for 75 [[coin]]s. If you accept his beer, you take 5 damage and your Agility level is reduced by 3 each time you do. You need 4 free inventory slots in the next section.
+*Talk to [[Klank]] the dwarf. {{Chat option|1}} (Make sure to have one inventory slot available to receive his gauntlets.)
+*Go upstairs and search the [[Kardia|Witch's]] window from outside her house (Cross the [[Bridge (Iban's Lair) | broken bridge]] north-east of the house. Use the map pictured to find her).
+*Pick up the Witch's cat (use the map).
+*Use the cat on the Witch's door and then open the door.
+*Open the chest in her house for a few items (do not skip chat option on chest).
+**'''Note''': You will need 4 inventory spaces.
+*Kill the three demons west of the Witch and take their amulets.
+*Open the chest north of the middle demon.
+*Return to the Dwarf encampment on the lower level. Use a bucket on the brew barrel in the eastern house.
+**'''Note''': There is a bucket in the corner of the larger house to the west if you did not bring one.
+**'''Note''': If you did not bring a tinderbox, grab one from the eastern house for the next step.
+*Run to the south-east corner of the lower level and use the [[dwarf brew]] and the tinderbox on the [[tomb (Iban)|tomb]].
+}}

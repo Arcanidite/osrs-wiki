@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Watchtower
+|image = [[File:Watchtower reward scroll.png|centre]]
+|qp = 4
+|rewards = 
+*{{SCP|Magic|15,250}} [[Magic]] [[experience]]
+*5,000 [[Coins]]
+*A scroll, the reading of which gives you the ability to use [[Watchtower Teleport]]
+*Access to the ogre city, and [[Ogre Enclave]] where you can fight [[blue dragon]]s. (You will not need an extra nightshade to enter after the quest is complete.)
+*[[Titles|Designation]] by the Ogres of Gu'Tanoth as a "Friend of the Ogres"
+}}

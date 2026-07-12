@@ -1,0 +1,10 @@
+===The third flashback===
+{{Needed|A [[cat]], combat equipment.|recommended=Several [[stamina potion]] or [[super energy]] and some food.}}
+{{Checklist|
+*Enter the pyramid (right click, open door).
+*Jump the gap again to trigger the 3rd flashback.
+*Enter the east door and use the holy/unholy symbol on any sarcophagus. Exit the room.
+*Jump back across the pit and enter the eastern room again.
+*Kill the level 91 [[Possessed Priest]].
+*Talk to the High Priest.
+}}

@@ -1,0 +1,188 @@
+{{Gone|update=Children of the Sun}}
+{{Has quick guide|mini=1}}
+{{Infobox Miniquest
+|name = Architectural Alliance
+|image = [[File:Architectural Alliance.png|300px]]
+|release = [[3 March]] [[2016]]
+|update = Architectural Alliance
+|removal = [[10 January]] [[2024]]
+|removalupdate = Children of the Sun
+|members = Yes
+|series = [[Great Kourend quest series|Great Kourend]]
+|developer = 
+}}
+'''Architectural Alliance''' was a [[miniquest]] revolving around the architects of the five cities of [[Great Kourend]], where the player must earn their trust to rebuild the [[statue of King Rada I]], the first king of Great Kourend, after it was destroyed by a devastating storm.
+
+It was removed from the game on 10 January 2024 alongside the [[Kourend Favour]] system with the release of the [[Children of the Sun]] quest. 
+
+==Details==
+{{Quest details
+|start = Speak to [[Hosa]] by the [[Statue (King Rada I)|statue]] outside [[Kourend Castle]].
+|startmap = 1632,3669
+|difficulty = Experienced
+|description = Prove yourself to the five houses of Great Kourend and gain the support of several architects to rebuild the statue of King Rada I.
+|length = Long
+|requirements = Various skills depending on the [[favour]] activities done
+*{{SCP|Mining|42|link=yes}} for any [[Lovakengj]] activity
+|recommended = *Completion of [[Client of Kourend]]; distribution of the rewarded 20% favour to [[Piscarilius]]
+*{{SCP|Hunter|15|link=yes}} for hunting [[sandworms]]
+*{{SCP|Cooking|25|link=yes}} for making stews in the [[Mess]]
+*Ability to kill large numbers of [[poisonous]] level 53-75 [[lizardman|lizardmen]] and [[lizardman brute]]s
+*[[Kharedst's memoirs]] will speed up this quest significantly
+|items = Various items depending on the favour activities done
+|kills = [[Lizardmen]] ''(level 53 and 62) - optional''
+|leagueRegion = {{LeagueRegion|Kourend}} - location requirement
+}}
+
+==Walkthrough==
+{{Map|name=Statue|1637,3673|r=5|mtype=square|align=right|width=260|height=260|caption=Location of the statue}}
+Speak with [[Hosa]] by the statue of King Rada I in Great Kourend to start this miniquest. The Hosidius architect explains that he wishes to rebuild the statue of King Rada I in the [[Kourend Castle]] courtyard after it was heavily damaged in a storm. However, he is unable to receive the assistance of the other architects in their respective cities, and requests that you do so for him.
+
+In order to receive the assistance of a Great Kourend architect, players need to speak with them once they gain 100% [[favour]] with their respective city. Once players have spoken to an architect, they will then appear at the statue. In order to complete the miniquest and rebuild the statue of King Rada, players must gain 100% favour with all cities.
+
+The location of the architects are as follows:
+{|class=wikitable style="text-align:center;"
+! colspan=5|Locations
+|-
+|{{Map|name=Arcis|1652,3754|mtype=pin|icon=redPin|caption=[[Arcis]] in [[Arceuus]].|width=200|height=200}}
+|{{Map|name=Piliar|1794,3738|mtype=pin|icon=redPin|caption=[[Piliar]] in [[Port Piscarilius]].|width=200|height=200}}
+|{{Map|name=Lovada|1487,3833|mtype=pin|icon=redPin|caption=[[Lovada]] in [[Lovakengj]].|width=200|height=200}}
+|{{Map|name=Shayda|1532,3545|mtype=pin|icon=redPin|caption=[[Shayda]] in [[Shayzien]].|width=200|height=200}}
+|{{Map|name=Hosa|1631,3671|mtype=pin|icon=redPin|caption=[[Hosa]] in [[Hosidius]].|width=200|height=200}}
+|}
+
+==Gaining Favour==
+{{main|Kourend Favour}}
+[[File:Kourend Favour interface.png|frame|The Kourend Favour interface found within the [[Quest List]] [[interface]].]]
+[[Favour]] can be earned with houses by doing certain activities for them. These activities are marked on the [[minimap]] with the [[File:Kourend task icon.png]] icon. Favour can be earned with the houses in any order.
+
+The [[Client of Kourend]] [[quest]] will also reward the player with a [[Kourend favour certificate]] that grants 20% favour in a city of their choosing, which can serve as a head start. It is highly recommended to use this certificate on [[Piscarilius]], as its initial favour activities are significantly more tedious than the other houses'.
+
+===Recommended activities===
+The following order of activities can be used to gain 100% favour in all cities within around 7 hours. Note that this may not be the fastest or most efficient order, and that these are not the only activities that reward favour. This [[Architectural Alliance/Quick guide|quick guide]] method requires at least the following stats:
+
+*{{SCP|Hunter|15|link=yes}}
+*{{SCP|Strength|16|link=yes}}
+*{{SCP|Agility|18|link=yes}}
+*{{SCP|Thieving|20|link=yes}}
+*{{SCP|Mining|42|link=yes}}
+
+{| class="wikitable lighttable" style="width:900px;"
+|-
+! style="width:125px;" |City
+! style="width:75px;" |Favour
+! style="width:700px;" |Task
+|-
+|[[File:Arceuus symbol.png|30px]] [[Arceuus]]
+|0%-90%
+|Assist library customers finding books in the [[Arceuus Library]] until you have 90% favour. You may help [[Horphis]] as well once you have 20% favour.
+|-
+|[[File:Arceuus symbol.png|30px]] [[Arceuus]]
+|90%-100%
+|Complete [[The Ascent of Arceuus]] for the remaining favour.
+|-
+|[[File:Hosidius symbol.png|30px]] [[Hosidius]]
+|0%-5%
+|[[Plough]] the fields in Hosidius. You require a [[hammer]].
+|-
+|[[File:Hosidius symbol.png|30px]] [[Hosidius]]
+|5%-90%
+|Purchase 850 [[saltpetre]] and [[compost]], and combine them together to make [[sulphurous fertiliser]]. Place them in your bank (the clerk can just take them directly from your bank) and talk to the [[Clerk (Hosidius)|clerk in Hosidius]] to reach 90% favour.
+|-
+|[[File:Hosidius symbol.png|30px]] [[Hosidius]]
+|90%-100%
+|Complete [[The Depths of Despair]] for the remaining favour.
+|-
+|[[File:Lovakengj symbol.png|30px]] [[Lovakengj]]
+|0%-65%
+|Mine [[volcanic sulphur]] until you reach 65% favour. Requires a [[pickaxe]] and protection from gas ([[face mask]], [[gas mask]] or [[slayer helmet]]). Making [[dynamite]] is also an option, however [[juniper charcoal]] takes 16 passive hours to be made.
+|-
+|[[File:Lovakengj symbol.png|30px]] [[Lovakengj]]
+|65%-75%
+|Complete [[The Forsaken Tower]] for an additional 10% favour.
+|-
+|[[File:Lovakengj symbol.png|30px]] [[Lovakengj]]
+|75%-100%
+|Talk to [[Miriam]] and deliver the five [[minecart control scroll]]s to the [[Lovakengj Minecart Network|minecart operators]].
+|-
+|[[File:Port Piscarilius symbol.png|30px]] [[Piscarilius]]
+|0%-20%
+|Complete [[Client of Kourend]] and distribute the rewarded 20% favour to Piscarilius. If you have already distributed this favour elsewhere, repair [[fishing crane]]s (requires a [[hammer]], [[plank]]s and several [[nails]]) until 15% favour, then haul [[fresh fish]] until you reach 20% favour.
+|-
+|[[File:Port Piscarilius symbol.png|30px]] [[Piscarilius]]
+|20%-30%
+|Complete [[The Queen of Thieves]] for another 10% favour.
+|-
+|[[File:Port Piscarilius symbol.png|30px]] [[Piscarilius]]
+|30%-100%
+|Hunt [[sandworms]] until you reach 100% favour.
+|-
+|[[File:Shayzien symbol.png|30px]] [[Shayzien]]
+|0%-30%
+|Heal [[wounded soldier]]s in the Shayzien [[infirmary]] until 30% favour.
+|-
+|[[File:Shayzien symbol.png|30px]] [[Shayzien]]
+|30%-40%
+|Complete [[Tale of the Righteous]] for another 10% favour.
+|-
+|[[File:Shayzien symbol.png|30px]] [[Shayzien]]
+|40%-86%
+|[[Intelligence Gathering|Tackle organised crime]] until you reach 86% favour.
+|-
+|[[File:Shayzien symbol.png|30px]] [[Shayzien]]
+|86%-100%
+|Challenge soldiers in melee combat at the [[Combat Ring (Shayzien)|Shayzien Combat Ring]]. This allows you to obtain the first four tiers of [[Shayzien armour]] by the time 100% Shayzien favour is reached. If the armour set is not desired, then you can continue to tackle crime.
+|}
+
+==Finishing up==
+[[File:Completed Great Kourend statue.png|thumb|The rebuilt statue of King Rada I.]]
+Once players have gained the support of all five architects from each city, talk with any of the architects at the statue in the [[Kourend Castle]] courtyard. During the ensuing cutscene, the architects will rebuild the statue of King Rada I with their combined effort.
+
+'''Congratulations, miniquest complete!'''
+
+==Rewards==
+* [[Antique lamp (Architectural Alliance)|Antique lamp]] that grants 10,000 experience in a skill of your choice above level 40. This can be claimed by speaking to [[Hosa]]. ''This reward was added on [[7 February]] [[2019]] and players who have completed the miniquest prior to this date will also be able to claim this lamp from Hosa.''
+* Access to Xeric's Heart teleport on [[Xeric's talisman]], which teleports players to the statue. Doing so is a task for the [[hard Kourend & Kebos Diary]].
+
+==Required for completing==
+Completion of Architectural Alliance was required for the following:
+* [[A Kingdom Divided]]
+
+==Transcript==
+{{hastranscript|miniquest}}
+
+==Gallery==
+<gallery>
+File:Architectural Alliance cutscene.png|The final cutscene
+</gallery>
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 10 January 2024
+|update = Children of the Sun
+|poll = Varlamore Activities & Kourend Changes
+|change = Architectural Alliance was removed from the game, alongside the Kourend Favour system.
+}}
+{{Subject changes
+|date = 7 February 2019
+|update = X Marks The Spot
+|change = Speaking with [[Hosa]] after completion of the quest will now reward an [[antique lamp]], which grants 10,000 experience in a skill of the player's choice. Players who had completed this quest prior to the update can still claim this reward.
+}}
+{{Subject changes
+|date = 31 March 2016
+|update = Bugfixes & Combining Tentacles
+|change = Full stops that should have been question marks in Architectural Alliance are now question marks.
+}}
+{{Subject changes
+|date = 10 March 2016
+|update = Custom Nightmare Zone Rumbles
+|change = A few typos have been corrected in the Architectural Alliance miniquest.
+}}
+{{Subject changes footer}}
+
+==Trivia==
+* Architectural Alliance was the first miniquest exclusive to ''[[Old School RuneScape]]'', released as a means to allow players to gain 100% favour in all five cities of Great Kourend. After the favour mechanic was later modified so players did not lose favour in one house when working for another, the reward was changed to an experience lamp.
+
+{{Architectural Alliance}}
+{{Miniquests}}

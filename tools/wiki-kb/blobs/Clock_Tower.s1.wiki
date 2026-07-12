@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|start = Talk to [[Brother Kojo]] in the [[Clock Tower (building)|Clock Tower]] south of [[East Ardougne]].
+|startmap = 2569,3249
+|difficulty = Novice
+|description = Help the confused Brother Kojo find the missing cogs and fix his clock tower. Search the dungeon using brawn and brains to correctly place the four cogs.
+|length = Very Short
+|requirements = The ability to run past level 53 [[Ogre]]s
+|items = * [[Bucket of water]] (obtainable during quest) 
+** Alternatively, a [[Jug of water]], [[Ice gloves]], or [[Smiths gloves (i)]]
+|recommended = * {{SCP|Combat|15|link=yes}}
+*[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*Fast travel to [[Ardougne]] to start the quest - [[Ardougne cloak]] 1-4 or [[Ardougne Teleport]] or [[Spirit tree]] to [[Battlefield]] or [[fairy ring]] to {{fairycode|djp}} or [[Captain Barnaby]]'s ship from [[Rimmington]] or [[Brimhaven]]
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}

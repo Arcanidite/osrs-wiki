@@ -1,0 +1,70 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Fremennik" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Catch a [[Cerulean twitch]].
+''Note: These birds are found in the [[Rellekka Hunter area]]. While you're here, with a high enough [[Hunter]] level you can also complete a [[#Medium|medium]] and a [[#Hard|hard task]] by catching a [[Snowy knight]] and [[Sabre-toothed kyatt]], respectively.
+|
+*{{SCP|Hunter|11|link=y}}
+*[[Bird snare]]
+|-
+|2. Change your boots at [[Yrsa]]'s Shoe Store.
+''Note: Her [[Yrsa's Shoe Store|shoe store]] has been removed in an update. You'll now have to talk to her for a [[Makeover#Shoes|makeover]] for 500 [[coins]]. Alternatively, you can freely browse her [[Yrsa's Accoutrements|regular clothing store]] for the task to count as completed.
+|
+*{{SCP|Quest}} Completion of [[The Fremennik Trials]]
+*500 [[coins]] (optional)
+|-
+|3. Kill 5 [[Rock crab]]s.
+''Note: The [[giant rock crab]]s and [[rock lobster]]s on [[Waterbirth Island]] do not count.
+|
+*[[Weaponry]]
+|-
+|4. Craft a [[tiara]] from scratch in [[Rellekka]].
+''Note: You have to mine [[silver ore]] from the [[Rellekka mine]], then use it on the [[furnace]] in the city's westernmost building. Completing or updating any other task in-between these steps will reset the progress for this task.''
+|
+*{{SCP|Quest}} Completion of [[The Fremennik Trials]]
+*{{SCP|Crafting|23|link=y}}, {{SCP|Mining|20|link=y}} and {{SCP|Smithing|20|link=y}}
+*Any [[pickaxe]] (can be found north of the [[Rellekka mine]]) and a [[tiara mould]]
+|-
+|5. Browse the [[Stonemason|Stonemasons shop]].
+''Note: He is located in western [[Keldagrim]]. Right-click him to trade.
+|
+*{{SCP|Quest}} Started [[The Giant Dwarf]]
+*[[Dramen staff|Dramen]] or [[Lunar staff]] recommended to travel to [[Fairy ring]] code {{Fairycode|dks}} for quick access to the city
+|-
+|6. Collect 5 [[Snape grass]] on [[Waterbirth Island]].
+''Note: You can drop and pick up the same [[snape grass]] five times.''
+|
+*[[Waterbirth teleport (tablet)|Waterbirth teleport tablet]] to directly access the island, or either 1000 [[coins]] or quest completion of [[The Fremennik Trials]] to travel via [[Jarvald]]
+|-
+|7. Steal from the [[Keldagrim]] crafting or baker's stall.
+''Note: These are located on the eastern side of the [[Keldagrim Palace]].
+|
+*{{SCP|Quest}} Started [[The Giant Dwarf]]
+*{{SCP|Thieving|5|link=y}}
+|-
+|8. Fill a [[bucket]] with [[water]] at the [[Well|Rellekka well]].
+''Note: There's a [[bucket of milk]] north of the well that can be emptied and filled with water.
+|
+*[[Bucket]]
+|-
+|9. Enter the [[Troll Stronghold (location)|Troll Stronghold]].
+|
+*{{SCP|Quest}} Started [[Troll Stronghold]]
+*[[Climbing boots]]
+|-
+|10. Chop and burn some [[oak logs]] in the [[Fremennik Province]].
+''Note: [[Oak tree]]s can be found near the [[Portal (Player-owned house)|Rellekka house portal]].
+|
+*{{SCP|Woodcutting|15|link=y}} and {{SCP|Firemaking|15|link=y}}
+*Any [[axe]] (can be found north of the [[Rellekka mine]]) and a [[tinderbox]]
+|}
+
+===Rewards===
+*[[Fremennik sea boots 1]]:
+**One daily teleport to the [[Rellekka]] marketplace
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill of at least level 30
+*[[Peer the Seer]] will act as a [[bank deposit box]]
+*[[Fossegrimen]] gives your [[enchanted lyre]] an extra charge per offering
+*[[Fossegrimen]] will [[enchanted lyre(i)|imbue your lyre]] with infinite charges for 800 of each required fish, down from 1,000

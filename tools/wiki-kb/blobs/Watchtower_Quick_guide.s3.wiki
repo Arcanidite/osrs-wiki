@@ -1,0 +1,11 @@
+===Starting out===
+{{Needed|1 inventory space. Either bat bones or a slash weapon or a knife.}}
+{{Checklist|
+*Enter the top floor of the [[Watchtower (building)|Watchtower]].
+**It is possible to use another player's Watchtower portal to get here. Use [[Server#List of worlds|World 330 (House Party)]] to find a host, look for the "Yanille portal".
+**Otherwise, use the [[Nightmare Zone]] [[Minigame Teleport]] or use fairy ring {{Fairycode|CIQ}}. Climb the [[trellis]] outside the Watchtower and climb up the ladder to the second floor.
+*Talk to the [[Watchtower Wizard]]. {{Chat option|1What's the matter?|1So how come the spell doesn't work?|1Can I be of help?}}
+*Climb down 2 ladders and search the far north-west [[Bush (Watchtower)|bush]] to find [[fingernails]].
+**Kill a [[giant bat]] in the [[Yanille dungeon]] for [[bat bones]] if needed.
+*Talk to the Watchtower Wizard. {{Chat option|1What do you suggest I do?|1So what do I do?}}
+}}

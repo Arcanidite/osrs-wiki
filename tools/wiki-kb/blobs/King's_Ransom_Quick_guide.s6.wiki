@@ -1,0 +1,13 @@
+===Black Knights' Fortress===
+''Items needed: bronze med helm, iron chainbody, full black armour, granite, holy grail''{{Checklist|
+*Talk to [[Wizard Cromperty]] in [[Ardougne]] to receive an [[Animate rock scroll]].
+**You might already have the item in your bank from the quest [[One Small Favour]]. However, you must still talk to Cromperty. Be sure to go through all dialogue or else you will need to speak to him again.
+*Travel to the [[Black Knights' Fortress (location)|Black Knights' Fortress]] west of [[Edgeville]]/north of [[Ice Mountain]]. (Amulet of glory or combat bracelet (Monastery) provide convenient teleports)
+*Equip the [[black armour]] and enter the Black Knights' Fortress through the Sturdy door on the south wall.
+*Push the wall to the north.
+*Climb down the ladder.
+*Free [[King Arthur]] from his statue (requires the [[granite]]).
+*Talk to King Arthur to give him the [[bronze med helm]] and [[iron chainbody]].
+*Return to Camelot and speak to King Arthur in the castle by the round table.
+*'''Congratulations, quest complete!'''
+}}

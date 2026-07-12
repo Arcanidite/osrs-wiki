@@ -1,0 +1,86 @@
+{{External|rs=Enter the Abyss (miniquest)}}
+{{Has quick guide|mini=1}}
+{{Infobox Miniquest
+|name = Enter the Abyss
+|image = [[File:Enter the Abyss.png|300px]]
+|release = [[13 June]] [[2005]]
+|update = RuneCraft Update and Tweaks
+|members = Yes
+|series = [[Quests/Series#Order of Wizards|Order of Wizards]], #2
+|developer = James B
+}}
+'''Enter the Abyss''' is a [[miniquest]] during which the player helps the [[Zamorak]]ians access the [[rune essence mine]]s so that they can craft their own runes. Previously it had been a [[Saradomin]]ist secret, but the [[Mage of Zamorak]] asks for the player's help in learning it.
+
+==Details==
+{{Quest details
+|start = Speak to the [[Mage of Zamorak]] at the end of the [[River Lum]] in the [[Wilderness]] (Roams levels 4-7).
+|startmap = 3104,3561
+|difficulty = 2
+|description = Help the [[Zamorak Magical Institute]] access the [[rune essence mine]]s so that they can craft their own runes, and gain access to [[The Abyss]] in exchange.
+|length = Very Short
+|requirements = *Completion of [[Rune Mysteries]]
+|items = None
+|recommended = *[[Varrock]] and [[Ardougne]] teleport runes and a method of teleportation to [[Edgeville]] (e.g. [[Amulet of glory]]) would be helpful.
+*[[Necklace of passage]] for easy teleport to [[Wizards' Tower]].
+|ironman = '''{{Colour|red|Warning:}}''' [[File:Hardcore_ironman_chat_badge.png]] Hardcore Ironmen should be extremely cautious as the miniquest is started by travelling to level 4-7 [[Wilderness]], with a chance of getting killed by other players.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the miniquest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the miniquest
+Unlocking {{LeagueRegion|Wilderness}} {{okay}} will auto-complete the miniquest
+</poem>
+}}
+
+==Walkthrough==
+[[File:Enter the Abyss - River Lum.png|alt=River Lum|thumb|The [[River Lum]], passing through [[Edgeville]] into the [[Wilderness]].]]
+
+{{Map|3256,3391|3264,3391|3264,3380|3253,3380|3253,3386|3256,3386|mtype=polygon|align=right|caption=Location of the Chaos Temple in Varrock.|width=250|height=250}}
+
+===Starting off===
+'''Note:''' If you are wearing any [[Saradomin]] or [[Guthix]] items, the mage will''' NOT '''speak with you. Therefore, it is best to unequip any and all god related items (with the exception of Zamorakian items) before starting a conversation with the mage of Zamorak. Simply putting the items in your inventory is enough, you don't need to bank them.
+
+*Follow the [[River Lum]] near [[Edgeville]] until you reach the [[Mage of Zamorak]], or travel north over the [[Wilderness ditch]]; he wanders around Level 4-7 [[Wilderness]]. Talk to him, and he will explain to you that it is too dangerous to talk in the Wilderness.
+*Talk to the mage back in [[Varrock]] at the [[Zamorak]] chaos temple (south-east of [[Aubury's Rune Shop]]).
+*Ask him where he gets his [[runes]] from when the question is available. He will tell you about the [[Abyss]] and that he is having problems. Say that you will help him.
+
+===Getting the readings===
+*He will then give you a [[scrying orb]]. He will explain that you need to travel to the [[rune essence mine]] from three different locations with the orb in your inventory. This will give the scrying orb readings of where you travelled from and how you got there.
+*Travel to the rune essence mines from three of the five locations.
+**It is suggested you travel from [[Aubury]] in [[Varrock]], [[Archmage Sedridor]] in the basement of the [[Wizards' Tower]] (south of [[Draynor Village]]) and [[Wizard Cromperty]] in [[East Ardougne]] (north-east of the marketplace).
+**One may also travel from [[Brimstail]] at his cave south-west of the [[Grand Tree]] or [[Wizard Distentor]] at the [[Wizards' Guild]].
+*When you are done, go back to the chaos temple in Varrock. Speak to the Mage of Zamorak, and you will complete the [[miniquest]].
+{{Clear|left}}
+
+==Rewards==
+*Ability to enter the [[Abyss]]
+*{{SCP|Runecraft|1,000}} [[Runecraft]] [[experience]]
+*An [[abyssal book]]
+*A [[small pouch]] (able to carry 3 [[pure essence]] or [[rune essence]])
+
+==Required for completing==
+Completion of Enter the Abyss is required for the following:
+* [[Devious Minds]]
+* [[Temple of the Eye]]
+* [[Wanted!]] (partial completion)
+* [[Wilderness Easy Diary]]
+
+==Transcript==
+{{Hastranscript|miniquest}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 1 October 2025
+|update = Interface Uplift Round 2
+|change = Completing Enter the Abyss no longer allows players to receive [[Abyssal Demon]] [[Slayer task]]s without completion of [[Priest in Peril]] or [[Fairy Tale Part II]].
+}}
+{{Subject changes
+|date = 23 March 2022
+|update = Guardians of the Rift Launch
+|change = * Dialogue pertaining to the miniquest was rewritten to flow better and be consistent with established lore.
+* The [[scrying orb]] was given a "Destroy" option, so can no longer be dropped.
+}}
+{{Subject changes footer}}
+
+{{Enter the Abyss}}
+{{Miniquests}}
+{{Zamorak Magical Institute}}

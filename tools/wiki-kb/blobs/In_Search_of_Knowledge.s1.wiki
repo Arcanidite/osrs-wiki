@@ -1,0 +1,16 @@
+==Details==
+{{Quest details
+|start = [[Brother Aimeri]], towards the south-eastern end of the [[Forthos Dungeon]].
+|startmap = 1840,9926
+|difficulty = Experienced
+|description = Assist [[Brother Aimeri]] in uncovering the mysteries that lie in the [[Forthos Dungeon]].
+|length = Medium
+|requirements = None - but a high [[combat level]] is recommended.
+|items = * [[Combat equipment]]
+* 5 pieces of food (must be meat, fish or vegetables)
+* A [[slash weapon]] or [[knife]] to cut through webs
+|recommended = * {{SCP|Combat|45|link=yes}}
+|kills = Varies
+|leagueRegion = {{LeagueRegion|Kourend}} - location requirement
+}}
+'''Note:''' This miniquest is best completed while completing [[Slayer task/Spiders|spiders]], [[Slayer task/Zombies|zombies]], [[Slayer task/Red dragons|red dragons]], or [[Sarachnis|Sarachnis]] Slayer tasks, which effectively turns this miniquest into a passive grind, which saves time in the long run.

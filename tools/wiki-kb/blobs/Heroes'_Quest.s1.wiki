@@ -1,0 +1,51 @@
+==Details==
+{{Quest details
+|start = Talk to [[Achietties]] by the entrance to the [[Heroes' Guild]], between [[Taverley]] and [[Burthorpe]].
+|startmap = 2904,3511
+|difficulty = Experienced
+|description = Prove you are worthy to enter the Heroes' Guild. To prove your status as a hero you will need to obtain a number of items. There are many challenges standing between you and these items.
+|length = Medium
+|requirements = * A partner
+* {{SCP|Quest|55|link=yes}} {{Questreqstart|yes}}
+* {{SCP|Cooking|53|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Fishing|53|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Herblore|25|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Mining|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* Completion of the following quests:
+** [[Shield of Arrav]]
+** [[Lost City]]
+** [[Merlin's Crystal]]
+** [[Dragon Slayer I]]
+|items = * [[Ice gloves]] (obtainable during the quest) or [[Smiths gloves (i)]]
+* [[Fishing rod]] (obtainable during the quest)
+* [[Fishing bait]] (obtainable during the quest)
+* [[Dusty key]] (obtainable during the quest; if travelling to [[Taverley Dungeon]] for the [[lava eel]], without 70 [[Agility]]) '''OR''' a [[knife]] or [[slash weapon]] (if travelling to the [[Lava Maze]] for the [[lava eel]]) '''OR''' 60 [[Sailing]] level (if travelling to the [[Charred Dungeon]])
+* [[Harralander potion (unf)]] (or a [[harralander]] and a [[vial of water]])
+* [[Pickaxe]]
+'''If you are a [[Black Arm Gang]] member''' (Note: If you are returning to the mansion after the quest to help another player, you do not need the black armour anymore):
+* [[Black full helm]] (trimmed will not work)
+* [[Black platebody]] (trimmed will not work)
+* [[Black platelegs]] (plateskirt or trimmed will not work)
+'''If you are a [[Phoenix Gang]] member:'''
+* Some form of [[Ranged]] or [[Magic]] attack method
+|recommended = * {{SCP|Combat|50|link=yes}}
+* [[Weapons]] and [[armour]] to kill the [[Ice Queen]]
+* [[Stamina potion|Stamina]] or [[energy potion]]s
+* [[Anti-dragon shield|Anti-dragon]] or [[dragonfire shield]] to protect against the [[blue dragon]]s' [[dragonfire]] breath
+* [[Antifire potion]] to protect against [[dragonfire]] breath (Note: Using both the potion and shield fully negates dragonfire damage)
+* Fast travel to several locations
+** Burthorpe ([[games necklace]] or [[Burthorpe Games Room]] [[Minigame Teleport]])
+** Varrock ([[Varrock teleport]], [[Chronicle]], [[ring of wealth]] to the Grand Exchange or [[combat bracelet]] to the Champions' Guild)
+** Brimhaven ([[Brimhaven teleport]], [[Teleport to House]] if it is in Brimhaven, [[charter ship]] or ship from Ardougne or Rimmington to Brimhaven or [[amulet of glory]] to Karamja)
+|kills = * [[Ice Queen]] ''(level 111)'' (unless you already have Ice Gloves)
+* [[Entrana firebird]] ''(level 2)''
+* [[Jailer]] ''(level 47, optional)''
+* [[Grip]] ''(level 22)'' (for Phoenix Gang members only)
+|ironman = [[File:Ultimate ironman chat badge.png]] The player briefly visits [[Entrana]].
+*Obtaining black armour for Black Arm Gang members
+**The helm and legs can be purchased from the [[Champions' Guild]] and the platebody can be obtained from [[Horvik's Armour Shop]] in [[Varrock]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

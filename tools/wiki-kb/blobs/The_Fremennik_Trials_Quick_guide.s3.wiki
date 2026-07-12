@@ -1,0 +1,5 @@
+===Starting out===
+{{Checklist|
+*Talk to [[Brundt]] in the longhall to start the quest. (Fairy ring {{Fairycode|DKS}} and run south-west to Rellekka) {{Chat option|3Do you have any quests?|1Yes, I am interested.|1I want to become a Fremennik!}}, or {{Chat option|2Ask about anything else.|3Do you have any quests?|1Yes, I am interested.|1I want to become a Fremennik!}} if started or finished [[Mountain Daughter]]
+*The trials may be done in any order, however this quick guide will show you the fastest order.
+}}

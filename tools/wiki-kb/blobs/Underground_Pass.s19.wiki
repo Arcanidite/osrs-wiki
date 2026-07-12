@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = Underground Pass
+|image = [[File:Underground Pass reward scroll.png|centre]]
+|qp = 5
+|rewards = *{{SCP|Agility|3,000}} [[Agility]] [[experience]]
+*{{SCP|Attack|3,000}} [[Attack]] experience
+*[[Iban's staff]] and use of the [[Iban Blast]] spell
+*[[Klank's gauntlets]]
+}}

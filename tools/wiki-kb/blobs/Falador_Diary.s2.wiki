@@ -1,0 +1,56 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Falador" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Find out what your family crest is from [[Sir Renitee]]
+''Note: You must finish the dialogue.''
+|
+*{{SCP|Construction|16|link=yes}}
+|-
+|2. Climb over the western [[Falador]] wall.
+|
+*{{SCP|Agility|5|link=yes}}
+|-
+|3. Browse [[Sarah's Farming shop.|Sarah's farm shop]].
+|{{NA|None}}
+|-
+|4. Get a Haircut or a Shave from the [[Hairdresser|Falador Hairdresser]].
+|{{NA|None}}
+|-
+|5. Fill a [[bucket]] from the [[Waterpump (Falador)|pump]] north of [[Falador west bank]].
+|
+*[[Bucket]]
+|-
+|6. Kill a [[duck]] in [[Falador Park]].
+|
+*None, though using [[Magic]] or a [[Ranged#Weapons|Ranged weapon]] is recommended
+|-
+|7. Make a [[mind tiara]].
+|
+*[[Tiara]] and a [[mind talisman]]
+|-
+|8. Take the [[Monk_of_Entrana|boat]] to [[Entrana]].
+|
+*Have no [[weapons]] or [[armour]] equipped or in your inventory
+|-
+|9. Repair a [[broken strut]] in the [[Motherlode Mine]].
+|
+*[[Hammer]] and any [[pickaxe]]
+|-
+|10. Claim a [[security book]] from the [[Security guard]] at [[Port Sarim]] jail.
+''Note: The guard is found upstairs. Ask him about security and finish the dialogue.''
+|{{NA|None}}
+|-
+|11. Smith some [[Blurite Limbs]] on [[Doric]]'s anvil.
+|
+*{{SCP|Quest}} Completion of [[The Knight's Sword]] and [[Doric's Quest]]
+*{{SCP|Mining|10|link=yes}} and {{SCP|Smithing|13|link=yes}}
+*[[Hammer]] and a [[Blurite bar]]
+|}
+
+===Rewards===
+*[[Falador shield 1]]:
+**Can restore 25% of [[prayer points]] once a day
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill of at least level 30
+*Access to the [[Tight-gap (Goblin Village)|tight-gap shortcut]] from [[Burthorpe]] to the [[Chaos Temple (Asgarnia)|Chaos Temple]] (with 14 [[Agility]])

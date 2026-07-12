@@ -1,0 +1,458 @@
+====Memorization====
+{{Checklist|
+*Step on the [[platform (Lunar Diplomacy)#Guide|north-western grey platform]].
+*Talk to [[Ethereal Guide]].
+*Cross the chasm by jumping on the correct combination of Dream Puffs. Keep a note of the correct steps!
+}}
+
+
+{|class="underpasstable"
+|{{#vardefineecho:table|<table class="lighttable"><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr></table>}}
+|{{#var:table}}
+|{{#var:table}}
+|{{#var:table}}
+|}
+Patterns are when facing '''north'''. 
+{|
+|-
+|
+{|
+|-
+|
+{| class="wikitable"
+|+Path 1
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|
+|X
+|-
+|X
+|X
+|X
+|X
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|}
+|
+{| class="wikitable"
+|+Path 2
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|X
+|X
+|-
+|
+|
+|X
+|
+|-
+|
+|
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|X
+|X
+|X
+|-
+|
+|X
+|
+|
+|}
+|
+{| class="wikitable"
+|+Path 3
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|X
+|X
+|X
+|-
+|
+|X
+|
+|
+|-
+|
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|}
+|
+{| class="wikitable"
+|+Path 4
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|X
+|X
+|X
+|-
+|
+|X
+|
+|
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+{| class="wikitable"
+|+Path 5
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|X
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|X
+|X
+|X
+|X
+|-
+|X
+|
+|
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+{| class="wikitable"
+|+Path 6
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|X
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|-
+|X
+|X
+|X
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|
+|X
+|}
+|
+{| class="wikitable"
+|+Path 7
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|X
+|X
+|-
+|
+|X
+|X
+|
+|-
+|
+|X
+|
+|
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+{| class="wikitable"
+|+Path 8
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|-
+|
+|X
+|X
+|
+|-
+|X
+|X
+|
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+{| class="wikitable"
+|+Path 9
+| style="width:12px;" |
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+|-
+|X
+|X
+|X
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|X
+|
+|
+|-
+|
+|X
+|
+|
+|-
+|X
+|X
+|
+|
+|-
+|X
+|
+|
+|
+|-
+|X
+|
+|
+|
+|}
+|}
+
+{| class="wikitable"
+|+Path 10
+| style="width:12px;" |
+| style="width:12px;" |X
+| style="width:12px;" |
+| style="width:12px;" |
+|-
+|
+|X
+|X
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|
+|
+|X
+|-
+|
+|X
+|X
+|X
+|-
+|
+|X
+|
+|
+|-
+|
+|X
+|X
+|
+|-
+|
+|
+|X
+|
+|}
+|
+|}
+
+
+{{Checklist|
+*Once complete, talk to the Ethereal Being.
+}}

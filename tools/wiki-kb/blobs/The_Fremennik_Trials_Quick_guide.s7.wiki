@@ -1,0 +1,35 @@
+===Sigmund the Merchant and Swensen the Navigator===
+{{Checklist|
+NOTE: If at any point you start to get several members telling you something along the lines of "No, sorry, can't help." - You missed a step. Go back. 
+
+*Talk to [[Sigmund The Merchant]] in the market west of the longhall. {{Chat option|1Yes}}
+*Talk to the [[Sailor]] on the docks to the north-west. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Olaf the Bard]] just east of the longhall. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Yrsa]] at the clothing store west of the market. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Brundt the Chieftain]] in the longhall. {{Chat option|1Ask about the Merchant's trial}} or {{Chat option|2Ask about anything else|1Ask about the Merchant's trial}} if you are doing or have finished Mountain Daughter
+*Talk to [[Sigli the Huntsman]] just south of the longhall. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Skulgrimen]] in the hut just north of the longhall. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to the [[Fisherman (Rellekka)|Fisherman]] north of the market. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Swensen the Navigator]] in the building south of the market. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Swensen the Navigator|Swensen]] again. {{Chat option|2Ask about becoming a Fremennik|1Yes}}
+*Climb down the ladder and take the '''South''', '''West''', '''East''', '''North''', '''South''', '''East''', then '''North''' portals. Climb up the ladder.
+*Talk to [[Peer the Seer]] just north-west of Swensen. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Thorvald the Warrior]] in the hut just north of the longhall. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Manni the Reveller]] in the longhall. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Thora the Barkeep]] in the longhall. {{Chat option|1Ask about the Merchant's trial}}
+*Talk to [[Askeladden]] in front of the longhall, pay him 5,000 coins. {{Chat option|1Ask about the Merchant's trial|1Yes}}
+*Head back and talk to (in order): 
+**Thora
+**Manni
+**Thorvald
+**Peer
+**Swensen
+**Fisherman
+**Skulgrimen
+**Sigli
+**Brundt
+**Yrsa
+**Olaf
+**Sailor
+**Sigmund
+}}

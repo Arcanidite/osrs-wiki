@@ -1,0 +1,8 @@
+==Rewards==
+{{Quest rewards
+|name = Clock Tower
+|image = [[File:Clock Tower reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*500 [[coins]]
+}}

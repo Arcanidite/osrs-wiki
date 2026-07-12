@@ -1,0 +1,33 @@
+==Details==
+{{Quest details
+|description = Deep in the desert stand the ruins of the once great city of Uzer, where a lone survivor, an ancient clay golem, forever paces back and forth. It is badly damaged, and its mind cannot rest until it has completed the task for which it was created.
+
+It is up to you to uncover the secret of the lost city, and add the final chapter to a story started in the violence of the Third Age.
+|start = Talk to the [[clay golem]] in the ruins of [[Uzer]], east of the [[Shantay Pass]] in the [[Kharidian Desert]].
+|startmap = 3488,3089
+|difficulty = Intermediate
+|length = Short
+|requirements = * {{SCP|Crafting|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Thieving|25|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = * [[Vial]]
+* [[Pestle and mortar]]
+* [[Papyrus]] (can be bought from [[Ali Morrisane]] for 10gp)
+* 4 [[soft clay]] (or a [[bracelet of clay]] and a [[pickaxe]] to mine north-west of the ruins)
+* [[Phoenix feather]] (can be obtained north-west of the ruins)
+* Means to enter the desert (such as the [[Shantay pass (item)|Shantay pass]], [[Teleport tablets]] or [[Teleport scrolls|scrolls]], [[Fairy rings]] or the [[Pharaoh's sceptre]])
+|recommended = * Protective clothing for the [[desert heat]] ([[Desert boots]], [[Desert robe]], [[Desert shirt]])
+* [[Waterskin]]s
+* [[Stamina potion|Stamina]] or [[energy potion]]s
+* Fast travel to several locations:
+** [[Uzer]] to start the quest plus one additional trip - [[necklace of passage]] to Eagles' Eyrie or [[fairy ring]] {{Fairycode|dlq}}
+** [[Digsite]] (1 trip) - [[digsite pendant]], [[Digsite Teleport]] or [[gnome glider]]
+**[[Varrock Museum]] (1 trip) - [[Varrock Teleport]]
+* [[Hammer]] and [[chisel]] to remove gems from the [[Throne (Thammaron's throne room)|throne]]
+*Equipment to complete several optional [[Achievement Diary]] tasks:
+**A pickaxe for a easy [[Desert Diary]] task to mine [[clay]]
+**A woodcutting axe for a medium [[Desert Diary]] to cut a [[Teak tree]] with {{SCP|Woodcutting|35|link=yes}}
+**A [[bird snare]] for a easy [[Desert Diary]] task to catch a [[golden warbler]] with {{SCP|Hunter|5|link=yes}}
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}

@@ -1,0 +1,13 @@
+===Lunar Staff===
+{{Needed| [[Dramen staff]], ([[Air talisman|air]], [[Fire talisman|fire]], [[Water talisman|water]], and [[earth talisman]]) or ([[Air tiara|air]], [[Fire tiara|fire]], [[Water tiara|water]], and [[earth tiara]]) or ([[elemental talisman]]) or access to the [[Abyss]].
+|recommended=[[Amulet of glory]] or [[ring of dueling]] (if using the [[abyss]])}}
+
+'''Note:'''  if using fairy rings, you '''can not''' use lunar staves for fairy ring transport at this point in the quest.
+{{Checklist|
+*Use your Dramen staff/staves on the following altars '''in order''':
+**[[Air Altar]] (south of [[Falador]]).
+**[[Fire Altar]] (north of [[Al Kharid]] entrance of Emir's Arena).
+**[[Water Altar]] ([[Lumbridge Swamp]]).
+**[[Earth Altar]] (north-east of [[Varrock]]).
+*Travel back to Lunar Isle and give the [[Lunar staff]] to the [[Oneiromancer]]. Do not forget to bring your [[seal of passage]].
+}}

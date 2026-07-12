@@ -1,0 +1,18 @@
+==Details==
+{{Quest details
+|start = Speak to [[Kolodion]] at the [[Mage Arena]] bank located in level 53 [[Wilderness]].
+|startmap = 2538,4716
+|difficulty = Master
+|length = Medium
+|requirements = *Completion of [[Mage Arena I]]
+*{{SCP|Magic|75|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Cast [[Claws of Guthix]], [[Flames of Zamorak]], and [[Saradomin Strike]] each 100 times inside the Mage Arena.
+|kills = [[Porazdir]] (level 235), [[Justiciar Zachariah]] (level 348), and [[Derwen]] (level 235)
+|items = *[[God staves]]
+*Runes to cast [[god spells]] ([[Air rune|air]], [[Fire rune|fire]], and [[Blood rune|blood]])
+*Item to cut webs ([[knife]], [[slash weapon]] or any [[Wilderness sword]])
+|recommended = *{{SCP|Combat|80|link=yes}}
+|description = Can you defeat the followers of the gods?
+|ironman = '''{{Colour|red|Warning:}}''' [[File:Hardcore ironman chat badge.png]] This quest requires travel to the deep, level 56 Wilderness, and can require travel through various multi-combat Wilderness areas as well. Beware of Player-killers at all times.
+|leagueRegion = {{LeagueRegion|Wilderness}} - location requirement
+}}

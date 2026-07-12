@@ -1,0 +1,12 @@
+===The second flashback===
+{{Needed|A [[cat]], combat equipment.|recommended=Several [[stamina potion]] or [[super energy]] and some food.}}
+{{Checklist|
+*Return to the pyramid (right-click door and open) and jump the pit again to trigger the next flashback.
+*Open the western door (directly south of you) and take the canopic jar back (you can only pick up the correct one).
+*A level 75 or 81 enemy (see the guardians in the info box above) will appear, kill it and '''take the jar'''.
+*Leave the room and jump across the pit.
+*Jump back across the pit.
+*Solve the western door puzzle and drop the jar where you found it.
+*Leave the room again and jump across the pit once more.
+*Exit the pyramid via the entrance ladder.
+}}

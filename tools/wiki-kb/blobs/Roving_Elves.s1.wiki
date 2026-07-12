@@ -1,0 +1,35 @@
+==Details==
+{{Quest details
+|start = Talk to [[Islwyn]] inside the elven woods of [[Isafdar]].
+|startmap = 2206,3159
+|difficulty = Experienced
+|description = Deep in the elven forests of Isafdar, live a duo of roving elves: Islwyn a grumpy, old elf who dislikes humans and his companion, [[Eluned]], who is a beautiful, friendly, young female elf with a kind heart. In this quest, you are challenged to overcome Islwyn's prejudice against humans and alleviate the burdens of the past.
+|length = Short
+|requirements = * Completion of the following quests:
+** [[Regicide]]
+*** [[Underground Pass]]
+**** [[Biohazard]]
+***** [[Plague City]]
+** [[Waterfall Quest]]
+* The ability to defeat a level 84 enemy unarmed, with [[Glarial's Tomb#Restricted items|heavy restrictions]]
+* {{SCP|Agility|56|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}, unless travelling with a [[charter ship]] to the elven woods
+|items = * [[Glarial's pebble]] (obtainable during the quest)
+* [[Key (Waterfall Dungeon)|Key]] (obtainable during the quest)
+* [[Spade]]
+* [[Rope]]
+|recommended = * {{SCP|Combat|60|link=yes}}
+* The requirements to start [[Mourning's End Part I]] directly after this quest, to obtain the [[teleport crystal]]
+** {{SCP|Ranged|60|link=yes}} {{boostable|no}}
+** {{SCP|Thieving|50|link=yes}} {{boostable|no}}
+** Completion of [[Sheep Herder]] and [[Big Chompy Bird Hunting]]
+* [[Antipoison]] and [[food]]
+* [[Ring of recoil]], [[goblin paint cannon]], [[Prayer potion]]s (for players with 43 [[Prayer]] to sustain [[Protect from Melee]]), and a [[super combat potion]] in the fight against the [[Moss Guardian]].
+* Fast travel to the [[Waterfall Dungeon]] and [[Glarial's Tomb]] ([[games necklace]] or [[minigame teleport]] to the Barbarian Outpost, or [[skills necklace]] to the Fishing Guild, or [[fishing cape]])
+* Fast travel to [[Islwyn]] and [[Eluned]] ([[Iorwerth camp teleport]] or [[charter ship]] to [[Port Tyras]])
+* [[Ring of Charos (a)]] to reduce charter ship costs, if travelling with them
+|kills = * [[Moss Guardian]] ''(level 84)'' (has to be killed with [[Glarial's Tomb#Restricted items|restricted items]], can be [[flinched]])
+|ironman = [[File:Ultimate ironman chat badge.png]] You must briefly visit Glarial's Tomb which has [[Glarial's Tomb#Restricted items|significant item restrictions]]. Items dropped outside the tomb may be picked back up within three minutes.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

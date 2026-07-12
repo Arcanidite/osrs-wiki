@@ -1,0 +1,10 @@
+=== Rewards ===
+*[[Rada's blessing 2]]:
+**Five daily teleports to the [[Kourend Woodland]]
+**4% chance to catch two [[fish]] at once anywhere when equipped, excluding at [[Tempoross]]' [[Tempoross Cove|Cove]] (no additional experience granted)
+**Has a [[Prayer bonus]] of +1 when equipped, similar to the [[God blessing|god blessings]]
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*Free access to [[Crabclaw Isle]], down from a fee of 5,000 [[coins]]
+*40% discount on [[Eodan]]'s [[tanner|tanning]] services, up from 20%
+*5% chance to mine two [[dense essence block]]s at once
+*[[Thirus]] offers you 20 [[dynamite]] for free every day, worth a total of {{NoCoins|{{GEP|Dynamite}}*20}} [[coins]] on the [[Grand Exchange]]

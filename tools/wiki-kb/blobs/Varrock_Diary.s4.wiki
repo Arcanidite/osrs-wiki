@@ -1,0 +1,82 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Varrock" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Have the [[Apothecary]] in [[Varrock]] make you a [[strength potion]].
+|
+*[[Limpwurt root]], [[red spiders' eggs]], and 5 [[coins]]
+|-
+|2. Enter the [[Champions' Guild]].
+|
+*{{SCP|Quest|32|link=y}}
+|-
+|3. Select a colour for your [[kitten]].
+''Note: You can only have one [[kitten]] (or [[cat]]) following you at a time. If you already have one, you'll have to shoo it away, store it in a [[menagerie]], or sell it for [[death runes]] to [[Civilian|West Ardougne civilians]]. Storing it in your [[inventory]] or [[bank]] does not allow you to purchase a new one.''
+|
+*{{SCP|Quest}} Completion of [[Gertrude's Cat]] and partial completion of [[Garden of Tranquillity]]
+*100 [[coins]]
+*Wear an activated [[Ring of charos (a)|ring of charos]]
+|-
+|4. Use the [[spirit tree]] north of [[Varrock]].
+''Note: This tree is located in the north-eastern corner of the [[Grand Exchange]].
+|
+*{{SCP|Quest}} Completion of [[Tree Gnome Village]]
+|-
+|5. Perform the 4 emotes from the [[Stronghold of Security]].
+|
+*[[Jagex Account]] or the older [[RuneScape Authenticator]]
+*[[Food]], [[protection prayers]], and/or enough [[hitpoints]] to run through all four floors of the stronghold
+|-
+|6. Enter the [[Tolna's rift|Tolna dungeon]] after completing [[A Soul's Bane]].
+|
+*{{SCP|Quest}} Completion of [[A Soul's Bane]]
+|-
+|7. Teleport to the [[digsite]] using a [[Digsite pendant]].
+|
+*{{SCP|Quest}} Completion of [[The Dig Site]]
+*[[Digsite pendant]], or a [[mounted digsite pendant]] inside any [[player-owned house]] (see the [[House party]] worlds)
+**Creating the [[digsite pendant]] for the first time requires {{SCP|Magic|49|link=y}}, the [[clean necklace]], and means to cast [[Lvl-3 Enchant]] ({{RuneReq|Fire=5|Cosmic=1}})
+|-
+|8. Cast the teleport to [[Varrock]] spell.
+|
+*{{SCP|Magic|25|link=y}}
+*Means to cast [[Varrock Teleport]] ({{RuneReq|Law=1|Air=3|Fire=1}})
+|-
+|9. Get a [[Slayer task]] from [[Vannaka]].
+|
+*{{SCP|Combat|40|link=y}}
+|-
+|10. Make 20 [[Mahogany Plank]]s in one go.
+''Note: You can right-click the [[Sawmill operator]] to turn your logs into planks. You'll always need 20 [[mahogany logs]], regardless of whether you're using [[sawmill voucher]]s.''
+|
+*20 [[mahogany logs]] and 30,000 [[coins]]
+|-
+|11. Pick a [[White tree fruit]].
+|
+*{{SCP|Quest}} Completion of [[Garden of Tranquillity]]
+*{{SCP|Farming|25|link=y}}
+|-
+|12. Use the [[Balloon transport system|balloon]] to travel from [[Varrock]].
+''Note: The destination does not matter for this task. You can even pick a locked destination and not take the trip.''
+|
+*{{SCP|Quest}} Completion of [[Enlightened Journey]]
+*{{SCP|Farming|30|link=y}}
+*{{SCP|Firemaking|40|link=y}}
+*One set of [[Logs|normal logs]], [[oak logs]], [[yew logs]], or [[magic logs]], depending on the chosen destination
+*If the starting point in [[Varrock]] has not been unlocked yet, an additional 10 [[willow log]]s are needed to first [[Balloon_transport_system#Varrock|fly towards it]] from [[Entrana]]
+|-
+|13. Complete a lap of the [[Varrock Rooftop Course|Varrock Agility course]].
+|
+*{{SCP|Agility|30|link=y}}
+|}
+
+===Rewards===
+*[[Varrock armour 2]]:
+**While worn, 10% chance of mining double [[ore]]s up to and including [[mithril ore|mithril]], as well as [[Mining enhancers#List of affected rocks|various other minerals]] (experience granted for both minerals)
+**While worn, 10% chance of smelting 2 [[bar]]s at once, up to and including [[mithril bar|mithril]], when using the [[Edgeville furnace]] (experience granted for both bars)
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*[[Zaff]] will sell you 30 [[bank note|noted]] [[Battlestaff|battlestaves]] as a single stack every day for 210,000 [[coins]], resellable on the [[Grand Exchange]] for a profit of {{NoCoins|{{GEPT|Battlestaff|30}}-210000}} [[coins]] (after tax)<ref name="WhyWasThisInTheLead"/>
+*The ability to toggle the destination of [[Varrock Teleport]] from [[Varrock Square]] to the [[Grand Exchange]]
+*The [[skull sceptre]] will now hold up to 18 [[Skull_sceptre#Using_the_Sceptre|charges]], up from 14
+*Individual parts used to make the [[skull sceptre]] now give two extra [[Bone fragments|bone fragments]] per component when chiselled

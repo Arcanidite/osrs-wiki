@@ -1,0 +1,17 @@
+===Undead twigs===
+'''''Items needed:''' [[Mithril axe]], [[polished button]], [[hard leather]], [[games necklace]] for teleport to [[Burthorpe]], and a [[holy symbol]]''
+[[File:Translated notes interface.png|thumb|right|Translated notes]]
+{{Checklist|
+*Talk to Ava.
+*Use your axe on an [[Undead tree]] (not Dead tree) in front of the Manor (yellow examine).
+*Talk to Turael, the [[Slayer master]] in a house in south-eastern [[Burthorpe]]. {{Chat option|4I'm here about a quest.}}
+*Talk to Turael again to receive the Blessed axe, provided you have a Mithril axe and a Holy symbol in your inventory. {{Chat option|4Hello, I'm here about those trees again.|1I'd love one, thanks.}}
+*Return to the mansion and cut the undead tree again.
+*Bring the [[Undead twigs]] to Ava.
+*Talk to Ava again, and she will give you garbled [[Research notes (Animal Magnetism)|research notes]] that you need to solve.
+**To translate turn off all the green orbs except for the 2nd, 5th, and 9th (left to right, see image)
+*Talk to Ava again.
+*Combine the [[A pattern|solved notes]] with the polished button and the hard leather.
+*Give the container to Ava.
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,42 @@
+==Details==
+{{Quest details
+|start = Talk to [[King Lathas]] on the {{FloorNumber|uk=1}} of [[Ardougne Castle]].
+|startmap = 2577,3293,plane:1
+|difficulty = Experienced
+|description = There are rumours of a secret passageway that can be used to get to the other side of the mountains west of Ardougne. Now it's just a matter of finding it.
+|length = Long
+|requirements = * {{SCP|Ranged|25|link=yes}} {{Boostable|yes}}
+* Completion of the following quests:
+** [[Biohazard]]
+*** [[Plague City]]
+|items = * [[Rope]] (2 recommended)
+* [[Bow]]
+* 1-5 [[arrows]] (only non-poisoned arrows with metal [[arrowtips]] will work. [[Craw's bow]] does not work. Crossbows and bolts will not work. Broad arrows,  Ogre arrows, Ice arrows, and Training Arrows will also not work.)
+* [[Spade]]
+* [[Bucket]] (obtainable during quest)
+* [[Tinderbox]] (obtainable during quest)
+|recommended = * [[Plank]] (obtainable during quest)
+* {{SCP|Combat|60|link=yes}}
+* {{SCP|Agility|50+|link=yes}} to reduce the risk of failing obstacles.
+* {{SCP|Thieving|50|link=yes}} for a helpful shortcut.
+* [[Weapon]] or [[combat spells]]. Using the bow is recommended if you need to save inventory space.
+* [[Armour]] or {{SCP|Prayer|43|link=yes}} for [[Protect from Melee]].
+* ''Lots'' of [[food]] to survive traps and monsters. Taking a few [[Summer Pie]]s is highly recommended if under 60 [[Agility]], as eating these heals 22 in two bites and boosts your agility level by 5 per bite. Alternatively, [[Saradomin brew]]s or [[super restore]]s to reduce weight.
+** Coins to buy food from [[Kamen]] (75 coins each time for food that heals a total of 28 hitpoints).
+** Bones to peaches magic tablets (as there are weak mobs that can be killed for bones when you need food)
+* [[West Ardougne Teleport]] to quickly access the [[Underground Pass (dungeon)]] entrance.
+* Level 79 combat will make [[Blessed spider]]s non-aggressive, which saves some time while killing [[Kalrag]].
+* An [[explorer's ring]] and [[stamina potion|stamina]] or [[energy potions]]
+* 2+ [[Agility potion]]s if not taking [[summer pies]] (for players with a low [[Agility]] level).
+* [[Telekinetic Grab]] runes for the [[Amulet of othanian]]
+* Any instant [[Transportation#Teleportation|teleportation]] method if you need to leave the dungeon
+|kills = * 3 demons [[Doomion]], [[Othainian]], and [[Holthion]] ''(level 91)'' (easily [[safespot]]table)
+* 3 [[Paladin]]s ''(level 62)'' (easily [[safespot]]table)
+* [[Kalrag]] ''(level 89)'' ([[safespot]]table) (won't hit with [[Protect from Melee]])
+* [[Disciple of Iban]] ''(level 13)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

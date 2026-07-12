@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Mourning's End Part II
+|image = [[File:Mourning's End Part II reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+* {{SCP|Agility|60,000}} [[Agility]] [[experience]]
+* A [[crystal trinket]], which allows you to enter the Temple of Light again after the quest
+* Access to the [[Death Altar]]
+* [[Death talisman|Death talismans]] can be obtained via [[Guardians of the Rift]]
+* [[Death rune|Death runes]] can now be crafted during [[Guardians of the Rift]]
+* Access to [[Dark Beast]]s
+* [[Dark Beast]]s teleport enabled in [[Slayer ring]]s menu
+}}

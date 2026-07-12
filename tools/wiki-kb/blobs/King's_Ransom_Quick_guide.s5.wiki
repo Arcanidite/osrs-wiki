@@ -1,0 +1,14 @@
+===Camelot Castle's Prison===
+''Items needed: Telekinetic grab runes''{{Checklist|
+*Head east around [[Camelot Castle]], past the gate and to the north-east. Search the [[statue (King's Ransom)|statue]] to start a cutscene.
+'''''Clicking anywhere will end the cutscene and you will need to go through it again.'''''
+*Speak with [[Merlin]] inside the cell. {{Chat option|3What do we do now?}}
+*Reach for the [[vent (King's Ransom)|vent]] at the north of the cell.
+*Use [[Telekinetic Grab]] on the guard fixing his hair outside the cell
+**You can speak to the knights in the cell to receive a lockpick or runes for telekinetic grab.
+*Use the [[Hair clip]] or lockpick on the door to start a puzzle.
+**To complete this puzzle, you must set each of four tumblers to the correct height. The most foolproof way to do this (not necessarily the quickest) is to set all tumblers to the lowest height, and try the lock. If a tumbler shows a green circle, do not change that tumbler anymore (red and blue circles can be ignored). Increase the height by one on each other tumbler and try again. Continue until the lock unlocks. This method will take at most six attempts.
+*Climb up the staircases until you reach the top floor.
+*Search the [[table (King's Ransom)|table]].
+*Choose the round purple box second from the right.
+}}

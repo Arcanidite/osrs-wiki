@@ -1,0 +1,18 @@
+==Details==
+{{Quest details
+|start = Speak to the [[Mage of Zamorak]] at the end of the [[River Lum]] in the [[Wilderness]] (Roams levels 4-7).
+|startmap = 3104,3561
+|difficulty = 2
+|description = Help the [[Zamorak Magical Institute]] access the [[rune essence mine]]s so that they can craft their own runes, and gain access to [[The Abyss]] in exchange.
+|length = Very Short
+|requirements = *Completion of [[Rune Mysteries]]
+|items = None
+|recommended = *[[Varrock]] and [[Ardougne]] teleport runes and a method of teleportation to [[Edgeville]] (e.g. [[Amulet of glory]]) would be helpful.
+*[[Necklace of passage]] for easy teleport to [[Wizards' Tower]].
+|ironman = '''{{Colour|red|Warning:}}''' [[File:Hardcore_ironman_chat_badge.png]] Hardcore Ironmen should be extremely cautious as the miniquest is started by travelling to level 4-7 [[Wilderness]], with a chance of getting killed by other players.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the miniquest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the miniquest
+Unlocking {{LeagueRegion|Wilderness}} {{okay}} will auto-complete the miniquest
+</poem>
+}}

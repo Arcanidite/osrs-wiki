@@ -1,0 +1,202 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 15
+|Ranged = 30
+|RangedNotes = {{boostable|n}}
+|Cooking = 30
+|Fletching = 20
+|Hunter = 9
+|Combat = 40
+|Total = 131
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Big Chompy Bird Hunting"
+|[[Big Chompy Bird Hunting]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Reach 30 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|}
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 40
+|Agility = 37
+|Smithing = 30
+|Herblore = 18
+|Fishing = 46
+|Ranged = 30
+|RangedNotes = {{boostable|n}}
+|Cooking = 42
+|Crafting = 25
+|Firemaking = 35
+|Magic = 46
+|Fletching = 20
+|Woodcutting = 35
+|Construction = 5
+|Hunter = 31
+|Combat = 70
+|Total = 458
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Big Chompy Bird Hunting"
+|[[Big Chompy Bird Hunting]]
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Partial completion of [[Monkey Madness I]]
+|-
+|Partial completion of [[One Small Favour]]
+|-
+|Reach 125 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|}
+|}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 70
+|Agility = 56
+|Smithing = 45
+|Herblore = 18
+|Fishing = 62
+|Ranged = 70
+|RangedNotes = {{boostable|n}}
+|Thieving = 75
+|Cooking = 70
+|Crafting = 40
+|Firemaking = 50
+|Magic = 66
+|Fletching = 20
+|Woodcutting = 50
+|Farming = 68
+|Construction = 65
+|Hunter = 69
+|Combat = 100
+|Quest = 100
+|Total = 910
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|- data-rowid="Recipe for Disaster/King Awowogei"
+|[[Recipe for Disaster/Freeing King Awowogei]] subquest
+|- data-rowid="Swan Song"
+|[[Swan Song]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Mourning's End Part I]]
+|-
+|Defeat [[Zulrah]]
+|-
+|Reach 300 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 42
+|Hitpoints = 42
+|Mining = 70
+|Strength = 42
+|Agility = 85
+|Smithing = 45
+|Defence = 42
+|Herblore = 18
+|Fishing = 62
+|Ranged = 70
+|RangedNotes = {{boostable|n}}
+|Thieving = 85
+|Cooking = 70
+|Prayer = 22
+|Crafting = 40
+|Firemaking = 50
+|Magic = 66
+|Fletching = 85
+|Woodcutting = 50
+|Slayer = 93
+|SlayerNotes = {{boostable|n}}
+|Farming = 75
+|Construction = 65
+|Hunter = 69
+|Combat = 100
+|Quest = 100
+|Total = 1289
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|- data-rowid="Recipe for Disaster/King Awowogei"
+|[[Recipe for Disaster/Freeing King Awowogei]] subquest
+|- data-rowid="Swan Song"
+|[[Swan Song]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Mourning's End Part I]]
+|-
+|Defeat the [[Thermonuclear smoke devil]]
+|-
+|Defeat [[Zulrah]]
+|-
+|Reach 1,000 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|-
+|Acquire and wear any complete [[Void Knight equipment|void set]]
+|}
+|}
+
+|-|
+</tabber>

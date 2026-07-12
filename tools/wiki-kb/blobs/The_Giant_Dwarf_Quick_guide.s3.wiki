@@ -1,0 +1,7 @@
+===Starting out===
+''Items required: none''
+{{Checklist|
+*Speak to the [[Dwarven Boatman]]. ({{fairycode|DKS}} then go through the tunnel to the south west. Once inside proceed through the Cave Entrance directly ahead between the two statues. ) {{Chat option|1That's a deal!|1Yes, I'm ready and don't mind it taking a few minutes.}}
+*Finish the conversation with [[Commander Veldaban]]. {{Chat option|2Yes, I will do this.}}
+*Talk to [[Blasidar the sculptor]] on the east side of [[Keldagrim]], south of the kebab shop. {{Chat option|2Yes, I will do this.}}
+}}

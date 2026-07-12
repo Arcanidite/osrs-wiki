@@ -1,0 +1,77 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Lumbridge & Draynor" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Complete a lap of the [[Al Kharid Rooftop Course|Al Kharid agility course]].
+|
+*{{SCP|Agility|20|link=y}}
+|-
+|2. Grapple across the [[Broken Raft|River Lum]].
+|
+*{{SCP|Agility|8|link=y}}, {{SCP|Strength|19}} and {{SCP|Ranged|37}}
+*[[Mith grapple]]{{efn|[[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].}} and any [[Crossbow (weapon)|crossbow]]
+|-
+|3. Purchase an [[Ava's accumulator|upgraded device]] from [[Ava]].
+|
+*{{SCP|Quest}} Completion of [[Animal Magnetism]]
+*{{SCP|Ranged|50|link=y}}{{Boostable|no}}
+*75 [[steel arrows]] with [[Ava's attractor]], or 75 steel arrows with 999 [[coins]] 
+|-
+|4. Travel to the [[Wizards' Tower]] by [[Fairy ring]].
+|
+*{{SCP|Quest}} Started [[Fairytale II - Cure a Queen]]
+*[[Dramen staff|Dramen]] or [[Lunar staff]] to travel to [[Fairy ring]] code {{Fairycode|dis}}
+|-
+|5. Cast the [[Lumbridge Teleport|Teleport to Lumbridge]] spell.
+|
+*{{SCP|Magic|31|link=y}}
+*Means to cast [[Lumbridge Teleport]] ({{RuneReq|Law=1|Air=3|Earth=1}})
+|-
+|6. Catch some [[Salmon]] in [[Lumbridge]].
+|
+*{{SCP|Fishing|30|link=y}}
+*[[Fly fishing rod]] and some [[feather]]s
+|-
+|7. Craft a [[coif]] in the [[Lumbridge cow pen]].
+''Note: Not to be confused with a [[leather cowl|cowl]].
+|
+*{{SCP|Crafting|38|link=y}}
+*[[Leather]], and a [[needle]] and [[thread]] or the [[costume needle]]
+|-
+|8. Chop some [[willow logs]] in [[Draynor Village]].
+|
+*{{SCP|Woodcutting|30|link=y}}
+*Any [[axe]]
+|-
+|9. Pickpocket [[Martin the Master Gardener]].
+|
+*{{SCP|Thieving|38|link=y}}
+|-
+|10. Get a [[slayer task]] from [[Chaeldar]].
+|
+*{{SCP|Quest}} Completion of [[Lost City]]
+*{{SCP|Combat|70|link=y}}
+*[[Dramen staff|Dramen]] or [[Lunar staff]] to enter [[Zanaris]]
+|-
+|11. Catch an [[Essence impling|Essence]] or [[Eclectic impling]] in [[Puro-Puro]].
+|
+*{{SCP|Hunter|42|link=y}}
+*[[Dramen staff|Dramen]] or [[Lunar staff]] to enter [[Zanaris]]
+*[[Butterfly net]] and [[impling jar]]
+|-
+|12. Craft some [[Lava rune]]s at the [[fire altar]] in [[Al Kharid]].
+''Note: Use the [[earth rune]]s you brought on the altar, do not use the essence.
+|
+*{{SCP|Runecraft|23|link=y}}
+*[[Earth talisman]], [[earth runes]], and [[Pure essence|pure]] or [[daeyalt essence]]
+*Access to the [[Fire Altar]] ([[fire talisman]]/[[fire tiara|tiara]], [[elemental talisman]]/[[Elemental tiara|tiara]], or the [[Abyss]])
+*[[Binding necklace]] recommended to guarantee the runes are successfully crafted
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Explorer's ring 2]]:
+**Can restore 50% of [[Energy|run energy]] three times a day
+**Three daily teleports to the [[cabbage]] patch of [[South Falador Farm]]
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40

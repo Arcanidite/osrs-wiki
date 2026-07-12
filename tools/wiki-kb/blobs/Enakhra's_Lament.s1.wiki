@@ -1,0 +1,54 @@
+==Details==
+{{Quest details
+|start = Talk to [[Lazim]] just north-east of the [[Desert Quarry]].
+|startmap = 3191,2926
+|difficulty = Experienced
+|description = Lazim the sculptor has a sad tale to tell - his days of making art are over, and now all he can do is carp at adventurers as they make a statue for him in the desert. Although, isn't just south of the Bandit Camp an odd place to be putting up a statue?
+Help Lazim out with his artistic endeavours, and learn more as this quest goes deeper into the history of Gielinor than you might expect...
+|length = Medium
+|requirements = *{{SCP|Crafting|50|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+*{{SCP|Firemaking|45|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} {{Refn|Although Firemaking is listed as a requirement, it is only used during the quest to identify what item needs to go in what brazier. Investigating the braziers is not required, meaning that it is possible to just guess and check which item goes in what brazier, so the Firemaking level is not actually required.|group=q}}
+*{{SCP|Prayer|43|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+*{{SCP|Magic|39|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*Must be on the [[standard spellbook]]
+|items = *[[Chisel]]
+*One of the following: [[bread]], any kind of [[pie]], [[cake]] or [[chocolate cake]], any kind of [[pizza]], or a [[baked potato]] with topping (partial pies, cakes and pizzas do '''not''' work, and neither will burnt versions) 
+*[[Tinderbox]]
+*[[Candle]] (a [[black candle]] will '''not''' work)
+*[[Logs]]
+*[[Oak logs]]
+*[[Willow logs]]
+*[[Maple logs]]
+*[[Pickaxe]] (unless you already have the required items)
+*[[Soft clay]] (obtainable during quest if you bring a pickaxe and bucket or jug of water)
+*[[Coal]] (obtainable during quest with level {{SCP|Mining|30|link=yes}}{{Boostable|yes}} from the [[Bandit Camp Quarry]])
+*52&nbsp;kg of [[sandstone]] (obtainable during quest with level {{SCP|Mining|35|link=yes}} {{Boostable|yes}})
+*Two [[Granite (5kg)|5&nbsp;kg pieces of granite]] (obtainable during quest with level {{SCP|Mining|45|link=yes}} {{Boostable|yes}})
+*Runes to cast [[Fire Bolt]], [[Fire Blast]] or [[Fire Wave]]
+*Runes to cast [[Wind Bolt]], [[Wind Blast]] or [[Wind Wave]]
+*Runes to cast [[Crumble Undead]] (multiple casts recommended in case of splashing)
+*Enough remaining Prayer points to cast [[Protect from Melee]] for about five seconds
+|recommended = *{{SCP|Combat|25|link=yes}}
+*Take the free ferry south-west of [[Al Kharid]] to the [[Ruins of Unkah]] for easy access to the quest starting point (requires one [[Shantay pass (item)|shantay pass]]) -- alternatively, travel with a [[Pharaoh's Sceptre]] to Jaldraocht
+*One more [[soft clay]] if you would like your own [[camel mask]] (note that you can still make one after the quest has been completed)
+*Desert equipment ([[desert robes]] and [[waterskin]]s or [[Circlet of water]])
+*[[Stamina potion|Stamina]] or [[energy potion]]s.
+|ironman = *{{SCP|Mining|45|link=yes}} {{Boostable|yes}} to mine [[granite]]
+*A method to obtain [[maple logs]]:
+**{{SCP|Woodcutting|45|link=yes}} {{Boostable|yes}} to cut [[maple trees]]
+**Guaranteed from the [[Managing Miscellania]] activity (requires {{SCP|Quest|Throne of Miscellania}})
+**{{SCP|Firemaking|50|link=yes}} {{Boostable|No}}  for maple logs from the [[Wintertodt]] [[Reward Cart]] (drop chance based on {{SCP|Woodcutting}} level).
+**Completing [[Hunters' Rumours]] with {{SCP|Hunter|46|link=yes}} {{Boostable|no}} to receive [[Hunters' loot sack]] (drop chance based on {{SCP|Woodcutting}} level)
+**Using [[Serum 208]] for a 1/128 drop of maple logs from curing [[Afflicted]] (requires {{SCP|Quest|Shades of Mort'ton}}).
+*A method to obtain [[willow logs]]:
+**{{SCP|Woodcutting|30|link=yes}} {{Boostable|yes}} to cut [[willow trees]]
+**1/16 drop from [[Vampyre Juvinates]] (requires starting {{SCP|Quest|In Aid of the Myreque}})
+*A method to obtain [[oak logs]]:
+**{{SCP|Woodcutting|15|link=yes}} to chop [[oak trees]]
+**1/17.2 drop from sorting [[small salvage]] with {{SCP|Sailing|15|link=yes}}, 1/11.6 from [[fishy salvage]] with {{SCP|Sailing|26|link=yes}}, 1/5.68 from [[barracuda salvage]] with {{SCP|Sailing|35|link=yes}}
+**1/16.2 drop from [[Brutus]] ({{SCP|Combat|30}}), requiring completion of {{SCP|Quest|The Ides of Milk}}
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}
+{{Reflist|group=q}}

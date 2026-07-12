@@ -1,0 +1,82 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Kourend & Kebos" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Travel to the [[Fairy Ring]] south of [[Mount Karuulm]].
+|
+*{{SCP|Quest}} Started [[Fairytale II - Cure a Queen]]
+*[[Dramen staff|Dramen]] or [[Lunar staff]] to travel to [[Fairy ring]] code {{Fairycode|CIR}}
+|-
+|2. Kill a [[Lizardman]].
+|
+*[[Combat gear]]
+*[[Antipoison]] recommended
+|-
+|3. Use [[Kharedst's memoirs]] to teleport to all five cities in [[Great Kourend]].
+|
+*{{SCP|Quest}} Completion of [[The Depths of Despair]], [[The Queen of Thieves]], [[Tale of the Righteous]], [[The Forsaken Tower]] and [[The Ascent of Arceuus]]
+*[[Kharedst's memoirs]] or the [[book of the dead]]
+|-
+|4. Mine some [[Volcanic Sulphur]].
+|
+*{{SCP|Mining|42|link=y}}
+*Any [[pickaxe]]
+*[[Face mask]], [[gas mask]], or [[slayer helmet]]
+|-
+|5. Enter the [[Farming Guild]].
+''Note: You have to walk through the guild's main entrance.''
+|
+*{{SCP|Farming|45|link=y}}
+|-
+|6. Switch to the [[Arceuus spellbook|Necromancy Spellbook]] at [[Tyss]].{{sic}}
+|{{NA|None}}
+|-
+|7. Repair a [[Fishing crane|Piscarilius crane]].
+|
+*{{SCP|Crafting|30|link=y}} and {{SCP|Construction|30|link=yes}}
+*[[Hammer]], 3 regular [[planks]], and about 50 [[nail]]s of any variant
+|-
+|8. Deliver some [[intelligence]] to [[Captain Ginea]].
+|
+*[[Combat gear]]
+|-
+|9. Catch a [[Bluegill]] on [[Lake Molch|Molch Island]].
+|
+*{{SCP|Fishing|43|link=y}} and {{SCP|Hunter|35|link=y}}
+*[[King worm]]s (found on the island) or [[fish offcuts]]
+|-
+|10. Use the [[Boulder (dense essence mine)|boulder leap shortcut]] in the [[Dense essence mine|Arceuus essence mine]].
+|
+*{{SCP|Agility|49|link=y}}
+|-
+|11. Subdue the [[Wintertodt]]
+''Note: You must earn at least 500 [[Wintertodt#Reward_points|points]].
+|
+*{{SCP|Firemaking|50|link=y}}
+*Any [[axe]], [[tinderbox]], and [[warm clothing]]
+*[[Knife]] and a [[hammer]] or [[Imcando hammer]] recommended to score more points
+*[[Rejuvenation potion]]s recommended for learners (these are made in the minigame's lobby)
+|-
+|12. Catch a [[Chinchompa (Hunter)|Chinchompa]] in the [[Kourend Woodland]].
+|
+*{{SCP|Quest}} Partial completion of [[Eagles' Peak]]
+*{{SCP|Hunter|53|link=y}}
+*[[Box trap]]
+|-
+|13. Chop some [[Mahogany logs]] north of the [[Farming Guild]].
+|
+*{{SCP|Woodcutting|50|link=y}}
+*Any [[axe]]
+|}
+
+=== Rewards ===
+*[[Rada's blessing 2]]:
+**Five daily teleports to the [[Kourend Woodland]]
+**4% chance to catch two [[fish]] at once anywhere when equipped, excluding at [[Tempoross]]' [[Tempoross Cove|Cove]] (no additional experience granted)
+**Has a [[Prayer bonus]] of +1 when equipped, similar to the [[God blessing|god blessings]]
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*Free access to [[Crabclaw Isle]], down from a fee of 5,000 [[coins]]
+*40% discount on [[Eodan]]'s [[tanner|tanning]] services, up from 20%
+*5% chance to mine two [[dense essence block]]s at once
+*[[Thirus]] offers you 20 [[dynamite]] for free every day, worth a total of {{NoCoins|{{GEP|Dynamite}}*20}} [[coins]] on the [[Grand Exchange]]

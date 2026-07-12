@@ -1,0 +1,41 @@
+===Exploring the temple===
+====Bottom floor====
+[[File:Enakhras temple bottom floor.png|frame]]
+{{Needed|A [[chisel]], 8 Inventory slots.}}
+{{Checklist|
+*Talk to Lazim.
+**If you climb up the ladder and up the sand pile next to the statue now, you'll be able to exit and enter the temple from any outer room on the bottom floor later.
+*Use your chisel on the fallen statue four times to get all its limbs.
+* Talk to Lazim again to retrieve the statue head.
+*Take-sigil from the pedestal south of Lazim to get the M sigil.
+**Skip this step and come back after the next if you have no inventory space.
+*Go around all the rooms through the outer hallways and pick up the R, K and Z sigils. The matching limbs are automatically used and consumed to open the doors.
+*Go to the centre room after collecting all four sigils
+*Try to open the doors to place the sigils. Make sure to complete each dialogue.
+*Climb the ladder.
+}}
+
+====Middle floor====
+{{Needed|A [[chisel]], [[soft clay]], 5kg [[granite]] piece, the [[stone head]], [[bread]], runes to cast [[Fire bolt]], [[Wind bolt]], [[Blast]] or [[Wave]], [[Tinderbox]], [[Logs]], [[Oak logs]], [[Willow logs]], [[Maple logs]], [[Candle]], [[Coal]].}}
+{{Checklist|
+*Use soft clay on the pedestal. ''(Cast a fire spell on the frozen fountain if you still need a water source.)''
+*Use a chisel on the 5&nbsp;kg granite.
+*Place the new stone head in the pedestal. The original head will be slightly too small. The new head should fit perfectly and trigger a cutscene (Make sure to finish dialogue).
+*North-west: use your bread or cake or pie on [[Pentyn]]. You may have to right-click again on Pentyn to make sure you are using the food on him and '''not''' on the [[magic spell]]. {{Chat option|3It's okay, I don't need any help.}}
+*North-east: cast wind bolt, blast, wave, or surge on the [[furnace (Enakhra's Lament)|furnace]].
+*South-east: light the 6 [[brazier (Enakhra's Lament)|brazier]]s with the appropriate fuels.
+*South-west: cast fire bolt, blast, wave, or surge on the [[crust of ice|fountain]].
+*Pass through the [[magic barrier]] and climb the ladder. (If you can't pass through barrier, talk to Lazim)
+}}
+
+====Top floor====
+{{Needed|Runes for [[Crumble undead]], [[chisel]].}}
+{{Checklist|
+*Cast crumble undead on the [[boneguard]].
+*Climb down the stone ladder to the south.
+*Turn on Protect from Melee and talk to the new boneguard. {{Chat option|3Of course, I'll help you out.|4Okay, I'll start building.}}
+*Take 3 sandstones from the [[rubble (Enakhra's Lament)|rubble pile]].
+*Use a sandstone on the southern wall, then use your chisel on the wall. Repeat to completion.
+*Talk to the boneguard again.
+*'''Congratulations, quest complete!'''
+}}

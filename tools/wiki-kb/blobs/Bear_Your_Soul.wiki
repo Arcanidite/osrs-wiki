@@ -1,0 +1,68 @@
+{{Has quick guide|mini=1}}
+{{Infobox Miniquest
+|name = Bear Your Soul
+|image = [[File:Bear Your Soul.png]]
+|release = [[19 May]] [[2016]]
+|update = Sand Crabs & Soul Bearers
+|members = Yes
+|series = [[Great Kourend quest series|Great Kourend]]
+|developer = [[Mod Ash]]
+}}
+[[File:Soul bearer detail.png|left|150px|frameless]]
+'''Bear Your Soul''' is a [[miniquest]] that involves the player searching for a damaged ancient artefact.
+
+==Details==
+{{Quest details
+|start = Speak to [[Aretha]] after reading a book called [[soul journey]] in the [[Arceuus Library]].
+|startmap = 1815,3856
+|description = Discover and restore an ancient artefact.
+|release = [[19 May]] [[2016]]
+|update = Sand Crabs & Soul Bearers
+|length = Short
+|members = Yes
+|requirements = None
+|items = *[[Spade]]
+*[[Dusty key]] or {{SCP|Agility|70/80|link=yes}} {{Boostable|yes}} or [[Key master teleport]]
+|recommended = *Transportation to the [[Key Master]], such as [[Key master teleport]] or [[Falador Teleport]]
+*Transportation to Arceuus via [[Kharedst's memoirs]] ([[Book of the dead]]) or the [[fairy ring]] code {{Fairycode|CIS}}
+*[[Anti-dragon shield]] if going through [[Taverley Dungeon]] with less than {{SCP|Agility|70}}
+*[[Antipoison]] potion
+|difficulty = Intermediate
+|leagueRegion = <poem>
+{{LeagueRegion|Kourend}} - location requirement 
+{{LeagueRegion|Asgarnia}} - location requirement
+</poem>
+}}
+
+==Walkthrough==
+{{Map|1633,3808|align=right|caption=The Arceuus Library is found in the north-west section of the city.|width=280|height=280}}
+
+===Journey of Souls===
+[[File:Aretha chathead.png|left]]Begin the miniquest by making the trip to the [[Arceuus Library]]. The library can be reached by walking west from the ship you arrive in from in [[Port Piscarilius]], and then north-west once you reach [[Arceuus]]. Alternatively, you can use the [[fairy ring]] code {{Fairycode|CIS}} and walk southward.
+
+Once in the library, search for a book called ''[[Soul journey|The Journey of Souls]]'' (called "Soul journey" in the inventory). It is highly recommended to use a third-party client to narrow down the search for the book, as only certain bookshelves will ever contain a book, and the location will differ. If you are asked to find this book by other NPCs ([[Sam]], [[Professor Gracklebone]], and [[Villia]]), you can ask [[Biblia]] on the top floor to narrow-down its location.
+
+Once the book is obtained, read through it, and you will receive the message, {{Mes|The book referred to an artefact being buried in Kourend, but the author did not specify where it was buried. Maybe you could persuade her to change her mind.}}. If you do not get this message, read through the book again.
+
+Upon [[Examine|examining]] the book, you will find that it was written by [[Aretha]], who can be found by the [[Soul Altar]] in the northern part of [[Arceuus]]. Walk north from the library, then slight north-east past the [[Dark Altar]], and follow the green-bluish road to reach her.
+[[File:Arceuus church crypt stairs.png|thumb|The stairs leading to the crypt in the Arceuus church.]]At the Soul Altar, speak to Aretha and select the option ''"I've been reading your book..."'', and she will eventually mention the [[Key Master]], who may have the knowledge to repair the artefact. She will further state that the artefact, known as the Soul Bearer, is buried in the crypt in the Arceuus church.
+
+The church is located east of the library, in the area with blue around the edges and green in the middle on the minimap. Once you have reached the church, climb up the stairs to enter the building, and then climb down the stairs that follow to enter the centre area. Dig anywhere with a [[spade]] to obtain a [[damaged soul bearer]].
+
+===The Key Master===
+[[File:Key Master chathead.png|left|frameless]]
+[[File:Taverley Dungeon map.png|thumb|315x315px|The Key Master is located within an entrance in the hellhound area in the Taverley Dungeon.]]
+
+Head to the [[Key Master]], who is found in [[Cerberus' Lair]] within the [[Taverley Dungeon]] (refer to the map below for his location). Speak to him, and he will repair the damaged artefact into a usable [[soul bearer]]. If the player loses it, they can receive another from digging in the crypt in the Arceuus church.
+
+
+'''Congratulations, miniquest complete!'''[[File:Repairing soul bearer.gif|thumb|300x300px|'''The soul bearer being repaired by the Key Master.'''|center]]
+
+==Rewards==
+* [[Soul bearer]]
+
+==Transcript==
+{{hastranscript|miniquest}}
+
+{{Bear Your Soul}}
+{{Miniquests}}

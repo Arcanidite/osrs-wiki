@@ -1,0 +1,11 @@
+==Reward==
+{{Quest rewards
+|name = Vampyre Slayer
+|image = [[File:Vampyre Slayer reward scroll.png|centre]]
+|qp = 3
+|rewards =
+*{{SCP|Attack|4,825}} [[Attack]] [[experience]]
+
+Unlocks:
+* [[Count Draynor]] accessible in the [[Nightmare Zone]].
+}}

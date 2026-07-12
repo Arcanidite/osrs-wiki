@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|name = Death to the Dorgeshuun
+|image = [[File:Death to the Dorgeshuun reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Thieving|2,000}} [[Thieving]] experience
+*{{SCP|Ranged|2,000}} [[Ranged]] experience
+[[File:Welcome to Dorgesh-Kaan.png|thumb|You are granted access to the Dorgeshuun city!]]
+*Access to the [[H.A.M. Store room]], where you can loot gems, jewellery, and coins from chests
+*Access to the water wheel tunnel ([[Dartog]] will appear there, and you'll be able to travel between the [[Lumbridge Castle]] cellar, the [[Dorgeshuun Mines]] and the water wheel tunnel at will)
+*Ability to use the [[bone dagger]] and [[Dorgeshuun crossbow]] [[special attack]]s
+*Access to [[Dorgesh-Kaan]], the [[Dorgeshuun]] city
+*A [[torch]] if you did not have a light source in your inventory at the end of the quest
+}}

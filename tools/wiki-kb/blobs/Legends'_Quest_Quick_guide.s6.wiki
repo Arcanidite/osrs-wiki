@@ -1,0 +1,16 @@
+===Fighting Nezikchened===
+{{Checklist|
+''Items needed: [[Radimus notes]], axe, [[machete]], [[binding book]], [[golden bowl]], [[bullroarer]], combat equipment; [[Prayer potion]]s are highly recommended as prayer is drained at the start of the fight''
+*Teleport out to prepare for the fight against [[Nezikchened]], and return to the first room of the cave.
+*Refill your bowl with sacred water, if needed. (Leaving the jungle has a chance to evaporate the water.)
+*Use the golden bowl (be sure it is filled with sacred water) on the fire surrounding Ungadulu.
+*Use the binding book on Ungadulu (careful not to left-click attack him).
+*Defeat [[Nezikchened]]. (Lvl-187).
+**Your prayer will be drained to 1/10 of your level at the beginning of the fight. If you take too long to kill [[Nezikchened]], he will de-spawn and you must leave the circle and repeat the water & binding book steps.
+**[[Ranged]] or [[melee]] with [[Protect from Melee]] activated is recommended, as he has high magic resistance.
+*Talk to Ungadulu (careful not to left-click attack). {{Chat option|1I need to collect some Yommi tree seeds for Gujuo.|1How do I grow the Yommi tree?|1What will you do now?|2How do I get out of here?|3Ok, thanks...}}
+*Exit, then summon and speak with Gujuo. {{Chat option|1Ungadulu is free, he was possessed by a demon and I killed it.|2What do I do now?|3Ok thanks for your help.}}
+*Use your bowl of water on the seeds.
+*Cut some more reeds and attempt to refill the bowl.
+*Call and talk with Gujuo. {{Chat option|1The water pool has dried up and I need more water.|2Where is the source of the spring of pure water?|2If I went, could you help me?|5Ok thanks for your help.}}
+}}

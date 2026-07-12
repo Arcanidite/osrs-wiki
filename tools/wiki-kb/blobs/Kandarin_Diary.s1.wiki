@@ -1,0 +1,206 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Agility = 20
+|Fishing = 16
+|Crafting = 1
+|CraftingNotes = <ref name="IronFish">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either 42 [[Crafting]] or completion of [[Skippy and the Mogres]] with 32 [[Slayer]] for a [[fishbowl]].</ref>
+|Slayer = 1
+|SlayerNotes = <ref name="IronFish"/>
+|Farming = 13
+|Total = 78
+}}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Elemental Workshop I]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 30
+|Strength = 22
+|Agility = 36
+|Smithing = 30
+|SmithingNotes = <ref name="IronMith">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either access to the [[Ancient Cavern]] or 59 [[Smithing]] and 59 [[Fletching]] for a [[mith grapple]].</ref>
+|Herblore = 48
+|Fishing = 46
+|Crafting = 31
+|CraftingNotes = <ref name="IronFish">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either 42 [[Crafting]] or completion of [[Skippy and the Mogres]] with 32 [[Slayer]] for a [[fishbowl]].</ref>
+|Ranged = 40
+|Thieving = 47
+|Cooking = 43
+|Magic = 45
+|Fletching = 50
+|FletchingNotes = <ref name="IronMith"/>
+|Woodcutting = 36
+|Slayer = 1
+|SlayerNotes = <ref name="IronFish"/>
+|Farming = 26
+|Total = 577
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="Alfred Grimhand's Barcrawl"
+|[[Alfred Grimhand's Barcrawl]]
+|- data-rowid="Waterfall Quest"
+|[[Waterfall Quest]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Partial completion of [[Elemental Workshop II]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 20
+|Mining = 30
+|Strength = 50
+|Agility = 60
+|Smithing = 75
+|Defence = 70
+|DefenceNotes = {{boostable|n}}
+|Herblore = 48
+|Fishing = 70
+|Ranged = 40
+|Thieving = 53
+|Cooking = 43
+|Prayer = 70
+|PrayerNotes = {{boostable|n}}
+|Crafting = 31
+|CraftingNotes = <ref name="IronFish">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require either 42 [[Crafting]] or completion of [[Skippy and the Mogres]] with 32 [[Slayer]] for a [[fishbowl]].</ref>
+|Firemaking = 65
+|Magic = 56
+|Fletching = 70
+|Woodcutting = 60
+|Slayer = 1
+|SlayerNotes = <ref name="IronFish"/>
+|Farming = 26
+|Construction = 50
+|ConstructionNotes = {{boostable|n}}
+|Quest = 12
+|Total = 1000
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Alfred Grimhand's Barcrawl"
+|[[Alfred Grimhand's Barcrawl]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to [[Barbarian Fishing]], [[Barbarian Firemaking|Firemaking]], and [[Barbarian Smithing|Smithing]]
+|-
+|Started [[Desert Treasure I]]
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Partial completion of [[Elemental Workshop II]]
+|-
+|Completion of the [[Knight Waves Training Grounds]]
+|-
+|Defeat the [[Penance Queen]] and complete [[Barbarian Assault]]
+|}
+|}
+{{Reflist}}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 20
+|Mining = 60
+|MiningNotes = {{boostable|n}}
+|Strength = 50
+|Agility = 60
+|Smithing = 90
+|Defence = 70
+|DefenceNotes = {{boostable|n}}
+|Herblore = 86
+|Fishing = 76
+|Ranged = 40
+|Thieving = 53
+|Cooking = 80
+|Prayer = 70
+|PrayerNotes = {{boostable|n}}
+|Crafting = 85
+|Firemaking = 85
+|Magic = 87
+|Fletching = 70
+|Woodcutting = 60
+|Farming = 79
+|Construction = 50
+|ConstructionNotes = {{boostable|n}}
+|Quest = 12
+|Total = 1284
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Alfred Grimhand's Barcrawl"
+|[[Alfred Grimhand's Barcrawl]]
+|- data-rowid="Family Crest"
+|[[Family Crest]]
+|- data-rowid="Lunar Diplomacy"
+|[[Lunar Diplomacy]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to [[Barbarian Fishing]], [[Barbarian Firemaking|Firemaking]], [[Barbarian Smithing|Smithing]], and [[Barbarian Herblore|Herblore]]
+|-
+|Started [[Desert Treasure I]]
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Partial completion of [[Elemental Workshop II]]
+|-
+|Completion of the [[Knight Waves Training Grounds]]
+|-
+|Defeat the [[Penance Queen]] and acquire [[Barbarian_Assault#Rewards|level 5]] in all [[Barbarian Assault]] roles
+|}
+|}
+
+|-|
+</tabber>

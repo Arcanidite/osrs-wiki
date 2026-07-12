@@ -1,0 +1,22 @@
+==Details==
+{{Quest details
+|start = Speak to [[Aretha]] after reading a book called [[soul journey]] in the [[Arceuus Library]].
+|startmap = 1815,3856
+|description = Discover and restore an ancient artefact.
+|release = [[19 May]] [[2016]]
+|update = Sand Crabs & Soul Bearers
+|length = Short
+|members = Yes
+|requirements = None
+|items = *[[Spade]]
+*[[Dusty key]] or {{SCP|Agility|70/80|link=yes}} {{Boostable|yes}} or [[Key master teleport]]
+|recommended = *Transportation to the [[Key Master]], such as [[Key master teleport]] or [[Falador Teleport]]
+*Transportation to Arceuus via [[Kharedst's memoirs]] ([[Book of the dead]]) or the [[fairy ring]] code {{Fairycode|CIS}}
+*[[Anti-dragon shield]] if going through [[Taverley Dungeon]] with less than {{SCP|Agility|70}}
+*[[Antipoison]] potion
+|difficulty = Intermediate
+|leagueRegion = <poem>
+{{LeagueRegion|Kourend}} - location requirement 
+{{LeagueRegion|Asgarnia}} - location requirement
+</poem>
+}}

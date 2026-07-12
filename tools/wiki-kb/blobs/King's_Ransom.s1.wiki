@@ -1,0 +1,41 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Gossip]] outside [[Sinclair Mansion]].
+|startmap = 2742,3554
+|difficulty = Experienced
+|description = Life has been quiet at the Sinclair Mansion since you discovered the murderer... too quiet. So quiet, in fact, that the family has gone!
+
+Suspicions are running high that the Sinclairs' recent departure is tied to the disappearance of King Arthur and his knights. But time is running short and clues are scarce, will you crack the case in time?
+|length = Medium
+|requirements = *{{SCP|Magic|45|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Defence|65|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+**[[Black Knights' Fortress]]
+**[[Holy Grail]]
+***[[Merlin's Crystal]]
+**[[Murder Mystery]]
+**[[One Small Favour]]
+***[[Rune Mysteries]]
+***[[Shilo Village]]
+****[[Jungle Potion]]
+*****[[Druidic Ritual]]
+|items = *[[Granite]] (any size)
+*[[Telekinetic Grab]] runes (1 [[air rune]] and 1 [[law rune]]) (obtainable during the quest)
+*Full [[black armour]] ([[black full helm]], [[Black platebody|platebody]], and [[Black platelegs|platelegs]]/[[Black plateskirt|plateskirt]])—'''Note:''' Elite and trimmed versions of black armour will work. (h) versions will '''not''' work
+*A [[bronze med helm]] (can be purchased from [[Peksa]]'s [[Helmet Shop]] in the [[Barbarian Village]], or picked up inside [[Draynor Manor]] near the exit)
+*An [[iron chainbody]] (Both the [[iron chainbody]] and the [[bronze med helm]] can be bought upstairs in the [[Warrior Guild Armoury]]. If you can't access the [[Warriors' Guild]] you can get an [[Iron Chainbody]] from [[Wayne's Chains]] in Southern [[Falador]], [[Horvik's Armour Shop]] in central [[Varrock]], or the [[Grand Exchange]])
+*[[Animate rock scroll]] (obtainable during the quest). Note: if you have it in your bank, either destroy it or take it with you. You won't be able to receive another from [[Wizard Cromperty]] otherwise.
+|recommended = *A teleport to [[Ardougne]] to talk to [[Wizard Cromperty]]
+*A teleport to [[Camelot]] for a quick access to [[Seers' Village]] and [[Camelot]]
+*A [[combat bracelet]], [[amulet of glory]], or [[Lassar Teleport]] for fast access to the Black Knights' Fortress.
+*A [[Dramen staff]] or [[Lunar staff]] with code {{Fairycode|cjr}} for quick travel to [[Sinclair Mansion]]
+*[[Salve graveyard teleport]]s for quick access to fairy ring
+|ironman = *{{SCP|Mining|45|link=yes}} to mine [[granite]]
+*Obtaining black equipment:
+**[[Black full helm]] may be purchased from [[Valaine's Shop of Champions]] at the [[Champions Guild]] for {{Coins|1,372}}
+**[[Black platebody]] may be purchased from [[Horvik's Armour Shop]] in [[Varrock]] for {{Coins|3,840}}
+**[[Black platelegs]] may be purchased from [[Valaine's Shop of Champions]] at the [[Champions Guild]]  for {{Coins|2496}}
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

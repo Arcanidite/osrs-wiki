@@ -1,0 +1,76 @@
+==Medium==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Morytania" data-diary-tier="Medium"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Catch a [[Swamp lizard (Hunter)|swamp lizard]].
+|
+*{{SCP|Hunter|29|link=y}}
+*[[Rope]] and [[small fishing net]]
+|-
+|2. Complete a lap of the [[Canifis Rooftop Course|Canifis agility course]]. 
+|
+*{{SCP|Agility|40|link=y}}
+|-
+|3. Obtain some [[bark|Bark]] from a [[Hollow tree]].
+|
+*{{SCP|Woodcutting|45|link=y}}
+*Any [[axe]]
+|-
+|4. Travel to [[Dragontooth Island|Dragontooth Isle]].
+''Note: This task is automatically completed during [[Ghost Ahoy]].''
+|
+*[[Ghostspeak amulet]] and 25 [[ecto-token]]s (or 10 with the activated [[Ring_of_charos#Activated|ring of charos]])
+|-
+|5. Kill a [[terror dog|Terror Dog]].
+|
+*{{SCP|Quest}} Completion of [[Lair of Tarn Razorlor]]
+*{{SCP|Slayer|40|link=y}}
+*[[Weaponry]]
+*[[Slayer ring]] recommended for quick access to [[Tarn's Lair]]
+|-
+|6. Complete a game of [[trouble brewing]].
+''Note: You only have to complete the minigame once, winning it is optional. In Deadman Mode, the task is instead "Speak to Honest Jimmy about Trouble Brewing."''
+|
+*Completion of [[Cabin Fever]]
+*{{SCP|Cooking|40|link=y}}
+*Empty [[inventory]] and [[Worn_Equipment#Head_slot|head slot]]
+*At least one opposing player to start the game
+|-
+|7. Board the [[Swamp Boaty|Swampy boat]]{{Sic}} at the [[Hollows]].
+|
+*{{SCP|Quest}} Quest start of [[Nature Spirit]]
+*[[Dramen staff|Dramen]] or [[Lunar staff]] recommended to travel to [[Fairy ring]] code {{Fairycode|bkr}}
+|-
+|8. Make a batch of [[cannonball]]s at the [[Port Phasmatys]] furnace.
+|
+*{{SCP|Quest}} Completion of [[Dwarf Cannon]]
+*{{SCP|Smithing|35|link=y}}
+*[[Steel bar]] and [[ammo mould]] (or 2 [[steel bar]]s and [[double ammo mould]])
+|-
+|9. Kill a [[Fever Spider]] on [[Braindeath Island]].
+''Note: This task is automatically completed during [[Rum Deal]].''
+|
+*{{SCP|Quest}} Started [[Rum Deal]]
+*{{SCP|Slayer|42|link=y}}
+*[[Weaponry]] to fight at range, or means to negate [[disease]] (such as [[Slayer gloves]]), recommended
+|-
+|10. Use an [[ectophial]] to return to [[Port Phasmatys]].
+|
+*{{SCP|Quest}} Completion of [[Ghosts Ahoy]]
+*[[Ectophial]]
+|-
+|11. Mix a [[Guthix Balance]] potion while in [[Morytania]].
+|
+*{{SCP|Quest}} Partial completion of [[In Aid of the Myreque]]
+*{{SCP|Herblore|22|link=y}}
+*[[Restore potion]], [[garlic]], and [[silver dust]] (made by using a [[silver bar]] on the [[Bone grinder|Ectofuntus bone grinder]])
+|}
+
+===Rewards===
+*[[Morytania legs 2]]:
+**Five daily teleports to the [[Pool of Slime]] beneath the [[Ectofuntus]]
+**Acts as a [[ghostspeak amulet]] when worn
+*[[Antique lamp (medium)|Antique lamp]] worth 7,500 experience in any skill of at least level 40
+*[[Robin]] exchanges 13 [[Remains#Bones|bones]] of any kind daily for a [[bucket of slime]] and a pot of [[bonemeal]] each
+*5% more [[Slayer]] experience in the [[Slayer Tower]] while on a [[Slayer task]], up from 2.5%

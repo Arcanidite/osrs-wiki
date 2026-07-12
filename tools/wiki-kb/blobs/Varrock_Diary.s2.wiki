@@ -1,0 +1,79 @@
+==Easy==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Varrock" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Browse [[Thessalia's Fine Clothes|Thessalia's store]].
+|{{NA|None}}
+|-
+|2. Have [[Aubury]] teleport you to the [[Rune essence mine|Essence mine]].
+''Note: You can right-click him to teleport.''
+|
+*{{SCP|Quest}} Completion of [[Rune Mysteries]]
+|-
+|3. Mine some [[iron ore|Iron]] in the [[South-east Varrock mine|south-east mining patch]] near [[Varrock]].
+|
+*{{SCP|Mining|15|link=y}}
+*Any [[pickaxe]]
+|-
+|4. Make a [[Plank|normal plank]] at the [[Sawmill]].
+|
+*100 [[coins]]
+*[[Logs]], obtainable from a [[dying tree]] here with any [[axe]] for another easy task
+|-
+|5. Enter the second level of the [[Stronghold of Security]].
+|
+*[[Food]] recommended at low [[combat level]]s
+|-
+|6. Jump over the [[Fence (Varrock)|fence]] south of [[Varrock]].
+|
+*{{SCP|Agility|13|link=y}}
+|-
+|7. Chop down a [[dying tree]] in the [[Lumber Yard]].
+|
+*Any [[axe]]
+*100 [[coins]] recommended, to have the [[Sawmill operator]] turn the [[logs]] from the tree into a [[plank]] for another easy task
+|-
+|8. Buy a [[newspaper]].
+''Note: Can be bought from [[Benny]] in [[Varrock Square]].''
+|
+*50 [[coins]]
+|-
+|9. Give a [[Stray dog|dog]] a [[bone]]!
+''Note: This does not count when done during the investigation segment of [[Children of the Sun]].''
+|
+* [[Bones]]
+|-
+|10. Spin a [[bowl]] on the [[Potter's Wheel|pottery wheel]] and fire it in the [[pottery oven|oven]] in [[Barbarian Village|Barb Village]]{{sic}}.
+|
+*{{SCP|Crafting|8|link=y}}
+*[[Soft clay]]
+|-
+|11. Speak to [[Curator Haig Halen|Haig Halen]] after obtaining at least 50 [[Kudos]].
+|
+*See [[Kudos]] for all activities that grant them
+|-
+|12. Craft some [[Earth rune]]s from Essence.
+|
+*{{SCP|Runecraft|9|link=y}}
+*[[Pure essence|Pure]], [[Daeyalt essence|daeyalt]], or [[rune essence]]
+*Access to the [[Earth Altar]] ([[earth talisman]]/[[Earth tiara|tiara]], [[elemental talisman]]/[[Elemental tiara|tiara]], or the [[Abyss]])
+|-
+|13. Catch some [[trout]] in the [[River Lum]] at [[Barbarian Village]].
+|
+*{{SCP|Fishing|20|link=y}}
+*[[Fly fishing rod]] and some [[feather]]s
+|-
+|14. Steal from the [[Ye olde Tea Shoppe.|Tea stall]] in [[Varrock]].
+|
+*{{SCP|Thieving|5|link=y}}
+|}
+
+===Rewards===
+*[[Varrock armour 1]]:
+**While worn, 10% chance of mining double [[clay]], [[limestone]], [[guardian fragments]], [[tephra]], and [[ore]]s up to and including [[gold ore|gold]] (experience granted for both minerals)
+**While worn, 10% chance of smelting 2 [[bar]]s at once, up to [[steel bar|steel]], when using the [[Edgeville furnace]] (experience granted for both bars)
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 experience in any skill of at least level 30
+*[[Zaff]] will sell you 15 [[bank note|noted]] [[Battlestaff|battlestaves]] as a single stack every day for 105,000 [[coins]], resellable on the [[Grand Exchange]] for a profit of {{NoCoins|{{GEPT|Battlestaff|15}}-105000}} [[coins]] (after tax)<ref name="WhyWasThisInTheLead">Only one noted stack of [[Battlestaff|battlestaves]] can be claimed from [[Zaff]] each day, irrespective of the stack's size or the amount of diary tiers completed that day.</ref>
+*The [[skull sceptre]] will now hold up to 14 [[Skull_sceptre#Using_the_Sceptre|charges]], up from 10
+*Individual parts used to make the [[skull sceptre]] now give an extra [[Bone fragments|bone fragment]] per component when chiselled

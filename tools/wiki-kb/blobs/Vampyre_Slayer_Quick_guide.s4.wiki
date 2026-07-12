@@ -1,0 +1,5 @@
+===The ex-slayer===
+{{Checklist|*Talk to [[Dr Harlow]] in the [[Blue Moon Inn]] in [[Varrock]], south of Varrock Centre. {{Chat option|1I need your help dealing with a vampyre.}}
+**Buy a beer if you haven't already.
+*Talk to Dr Harlow again and receive a [[stake]].
+**Buy a hammer from the general store just north of the bar if you haven't already.}}

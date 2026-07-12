@@ -1,0 +1,10 @@
+===The first flashback===
+{{Needed|recommended=Several [[stamina potion]] or [[super energy]] and some food.}}
+[[File:Icthlarin's Little Helper - Puzzle solution.png|thumb|250px|Solution]]
+'''{{Colour|red|Warning}}:''' You cannot teleport out of this area! There are aggressive Level 84 [[Mummies]] scattered throughout the map, and [[Scarabs]] that can inflict [[poison]] (it is possible to run past the scarabs without taking damage or being poisoned by spam-clicking the minimap). If you need to leave you must walk back to the entrance and use the ladder.
+{{Checklist|
+*Navigate by clicking the minimap to automatically avoid the traps.
+*Jump the pit (20% minimum energy required, higher Agility increases your chances).
+*Go west and open the door.
+*Click on the large golden bird to reset the puzzle until it lands on the solution shown in the image on this page. Then click the tiles indicated on the picture.
+}}

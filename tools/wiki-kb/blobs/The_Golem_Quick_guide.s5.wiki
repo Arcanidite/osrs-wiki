@@ -1,0 +1,11 @@
+===The portal===
+{{Checklist|
+*Return to the [[Kharidian Desert]] (fairy ring {{Fairycode|DLQ}}), or teleport to [[Eagle's Eyrie]] with [[Necklace of passage]].
+**If you still need the [[Phoenix feather]], run north to the clay rocks east of River Elid and grab a feather from the [[Desert Phoenix|Phoenix]].
+*Return to the ruins of [[Ruins of Uzer|Uzer]] where you started the quest and again go down the stairs.
+*In the centre of the room will be four alcoves. Place the statuette in the empty one.
+*Turn the statues until they all point north.
+*Go north, through the double doors.
+*'''Optional:''' Use your chisel and hammer on the throne for 2 sapphires, emeralds, and rubies.
+*Otherwise, immediately go back through the south portal.
+}}

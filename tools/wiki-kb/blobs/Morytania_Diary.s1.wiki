@@ -1,0 +1,225 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Cooking = 12
+|Crafting = 15
+|Slayer = 15
+|Farming = 23
+|FarmingNotes = <ref name="IronMed">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 47 [[Farming]] or the ability to kill [[gryphon]]s for a [[watermelon]].</ref>
+|Combat = 20
+|Total = 93
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Nature Spirit"
+|[[Nature Spirit]]
+|}
+| style="vertical-align: top" |
+|}
+{{Reflist}}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 15
+|Ranged = 40
+|RangedNotes = {{boostable|n}}
+|Agility = 42
+|AgilityNotes = {{boostable|n}}
+|Smithing = 50
+|SmithingNotes = {{boostable|n}}
+|Herblore = 22
+|Fishing = 50
+|Cooking = 40
+|Prayer = 47
+|Crafting = 45
+|CraftingNotes = {{boostable|n}}
+|Magic = 7
+|Fletching = 5
+|Woodcutting = 45
+|Slayer = 42
+|SlayerNotes = {{boostable|n}}
+|Farming = 40
+|FarmingNotes = <ref name="IronMed">[[File:Ironman chat badge.png]] [[Ironman Mode|Ironmen]] require 47 [[Farming]] or the ability to kill [[gryphon]]s for a [[watermelon]].</ref>
+|Hunter = 29
+|Combat = 20
+|Total = 536
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Cabin Fever"
+|[[Cabin Fever]]
+|- data-rowid="Dwarf Cannon"
+|[[Dwarf Cannon]]
+|- data-rowid="Ghosts Ahoy"
+|[[Ghosts Ahoy]]
+|- data-rowid="Lair of Tarn Razorlor"
+|[[Lair of Tarn Razorlor]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[In Aid of the Myreque]]
+|}
+| style="vertical-align: top" |
+|}
+{{Reflist}}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 20
+|Mining = 55
+|Agility = 71
+|Smithing = 50
+|SmithingNotes = {{boostable|n}}
+|Defence = 70
+|DefenceNotes = {{boostable|n}}
+|Herblore = 22
+|Fishing = 50
+|Ranged = 40
+|RangedNotes = {{boostable|n}}
+|Thieving = 53
+|ThievingNotes = {{boostable|n}}
+|Cooking = 40
+|Prayer = 70
+|PrayerNotes = {{boostable|n}}
+|Crafting = 45
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 50
+|Magic = 66
+|Fletching = 10
+|Woodcutting = 50
+|Slayer = 58
+|Farming = 53
+|Construction = 50
+|Hunter = 29
+|Combat = 20
+|Quest = 12
+|Total = 964
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Dwarf Cannon"
+|[[Dwarf Cannon]]
+|- data-rowid="Ghosts Ahoy"
+|[[Ghosts Ahoy]]
+|- data-rowid="In Aid of the Myreque"
+|[[In Aid of the Myreque]]
+|- data-rowid="Lair of Tarn Razorlor"
+|[[Lair of Tarn Razorlor]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[The Great Brain Robbery]]
+|-
+|Completion of the [[Knight Waves Training Grounds]]
+|}
+|}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Attack = 20
+|AttackNotes = <ref name="Barrows">You'll either need 70 [[Ranged]] to complete [[Karil the Tainted's equipment|Karil's set]], or 70 [[Attack]] (both [[Temporary skill boost|unboostable]]) to complete the set of any of the other [[Barrows brothers]].</ref>
+|Mining = 60
+|MiningNotes = {{boostable|n}}
+|Strength = 76
+|Agility = 71
+|Smithing = 50
+|SmithingNotes = {{boostable|n}}
+|Defence = 70
+|DefenceNotes = {{boostable|n}}
+|Herblore = 22
+|Fishing = 96
+|Ranged = 40
+|RangedNotes = {{boostable|n}}<ref name="Barrows"/>
+|Thieving = 53
+|ThievingNotes = {{boostable|n}}
+|Cooking = 40
+|Prayer = 70
+|PrayerNotes = {{boostable|n}}
+|Crafting = 84
+|Firemaking = 80
+|Magic = 83
+|Fletching = 10
+|Woodcutting = 55
+|WoodcuttingNotes = {{boostable|n}}
+|Slayer = 85
+|Farming = 53
+|Construction = 50
+|Hunter = 29
+|Combat = 20
+|Quest = 12
+|Total = 1238
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|- data-rowid="Dwarf Cannon"
+|[[Dwarf Cannon]]
+|- data-rowid="Ghosts Ahoy"
+|[[Ghosts Ahoy]]
+|- data-rowid="In Aid of the Myreque"
+|[[In Aid of the Myreque]]
+|- data-rowid="Lair of Tarn Razorlor"
+|[[Lair of Tarn Razorlor]]
+|- data-rowid="Lunar Diplomacy"
+|[[Lunar Diplomacy]]
+|- data-rowid="Shades of Mort'ton"
+|[[Shades of Mort'ton]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Access to [[Barbarian Fishing]]
+|-
+|Started [[The Great Brain Robbery]]
+|-
+|Completion of the [[Knight Waves Training Grounds]]
+|-
+|Open the [[Chest (Barrows)|Barrows chest]] while wearing a full [[Barrows equipment|Barrows set]]
+|}
+|}
+{{Reflist}}
+
+|-|
+</tabber>

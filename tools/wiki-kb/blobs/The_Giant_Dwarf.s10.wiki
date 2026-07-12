@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = The Giant Dwarf
+|image = [[File:The Giant Dwarf reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Mining|2,500}} [[Mining]] experience
+*{{SCP|Smithing|2,500}} [[Smithing]] experience
+*{{SCP|Crafting|2,500}} [[Crafting]] experience
+*{{SCP|Magic|1,500}} [[Magic]] experience
+*{{SCP|Thieving|1,500}} [[Thieving]] experience
+*{{SCP|Firemaking|1,500}} [[Firemaking]] experience
+}}

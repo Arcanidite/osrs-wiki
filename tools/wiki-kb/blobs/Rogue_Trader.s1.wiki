@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|start = Speak to [[Ali Morrisane]] in [[Al Kharid]]
+|difficulty = Easy
+|requirements = Completion of following quests:
+*[[The Feud]]
+*[[Icthlarin's Little Helper]] (started, for access to [[Sophanem]])
+**[[Gertrude's Cat]]
+|items = *3 [[dyes]] of any colour (to unlock [[Menaphite clothing]]) OR 3 animal pelts of the same kind (to unlock the [[Desert outfit]]). This includes [[cowhide]], [[grey wolf fur]], [[snakeskin]], [[bear fur]], or [[wool]] (not [[balls of wool]])
+*100 coins (for blackjack street urchin, optional)
+|recommended = '''Recommended'''
+*~1,000 coins for carpet rides to [[Pollnivneach]] and Sophanem (and back to [[Shantay Pass]])
+*[[Ring of dueling]] to quickly get to [[Al Kharid]]
+*A teleport to [[Varrock]]
+|length = Short (if fully prepared) - Medium
+|leagueRegion = {{LeagueRegion|Desert}} (Cannot be fully completed, as Misthalin is required for the rune shop section)
+}}

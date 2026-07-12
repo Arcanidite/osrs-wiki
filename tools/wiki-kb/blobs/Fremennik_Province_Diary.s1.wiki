@@ -1,0 +1,215 @@
+==Overview==
+{{Sync}}
+<tabber>
+|-|
+Easy=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 20
+|Smithing = 20
+|Thieving = 5
+|Crafting = 23
+|Firemaking = 15
+|Woodcutting = 15
+|Hunter = 11
+|Total = 134
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[The Giant Dwarf]]
+|-
+|Started [[Troll Stronghold]]
+|}
+|}
+
+|-|
+Medium=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 40
+|Agility = 35
+|Smithing = 50
+|Defence = 30
+|Thieving = 42
+|Crafting = 31
+|Firemaking = 40
+|Woodcutting = 50
+|Slayer = 47
+|Construction = 37
+|Hunter = 35
+|Total = 458
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+! Quest requirements
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="Horror from the Deep"
+|[[Horror from the Deep]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Started [[The Giant Dwarf]]
+|-
+|Started [[Troll Stronghold]]
+|-
+|Partial completion of [[Olaf's Quest]]
+|}
+|}
+
+|-|
+Hard=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Mining = 70
+|Agility = 35
+|Smithing = 60
+|SmithingNotes = {{boostable|n}}
+|Defence = 40
+|DefenceNotes = {{boostable|n}}
+|Herblore = 66
+|Fishing = 53
+|Thieving = 75
+|Cooking = 53
+|Crafting = 61
+|CraftingNotes = {{boostable|n}}
+|Firemaking = 49
+|FiremakingNotes = {{boostable|n}}
+|Magic = 72
+|Woodcutting = 56
+|Slayer = 47
+|Construction = 37
+|Hunter = 55
+|Quest = 55
+|Total = 846
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|- data-rowid="Eadgar's Ruse"
+|[[Eadgar's Ruse]]
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="Horror from the Deep"
+|[[Horror from the Deep]]
+|- data-rowid="Lunar Diplomacy"
+|[[Lunar Diplomacy]]
+|- data-rowid="Throne of Miscellania"
+|[[Throne of Miscellania]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Started [[The Giant Dwarf]]
+|-
+|Partial completion of [[The Fremennik Isles]]
+|-
+|Partial completion of [[Olaf's Quest]]
+|}
+|}
+
+|-|
+Elite=
+{| class="diary-table" style="text-align:center;"
+| style="vertical-align:top" |
+{{DiarySkillStats
+|margin=no
+|maxrefs=2
+|boostable=true
+|selectable=true
+|Hitpoints = 70
+|HitpointsNotes = {{boostable|n}}
+|Mining = 70
+|Strength = 70
+|StrengthNotes = {{boostable|n}}
+|Agility = 80
+|Smithing = 60
+|SmithingNotes = {{boostable|n}}
+|Defence = 40
+|DefenceNotes = {{boostable|n}}
+|Herblore = 66
+|Fishing = 53
+|Ranged = 70
+|RangedNotes = {{boostable|n}}
+|Thieving = 75
+|Cooking = 53
+|Crafting = 80
+|Firemaking = 49
+|FiremakingNotes = {{boostable|n}}
+|Magic = 72
+|Woodcutting = 56
+|Runecraft = 82
+|Slayer = 83
+|Construction = 37
+|Hunter = 55
+|Quest = 55
+|Total = 1225
+}}
+| width="225px" style="vertical-align:top;" |
+{| class="wikitable lighttable qc-active" style="width:inherit;"
+!Quest requirements
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|- data-rowid="Eadgar's Ruse"
+|[[Eadgar's Ruse]]
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|- data-rowid="Horror from the Deep"
+|[[Horror from the Deep]]
+|- data-rowid="Lunar Diplomacy"
+|[[Lunar Diplomacy]]
+|- data-rowid="Throne of Miscellania"
+|[[Throne of Miscellania]]
+|}
+| width="400px" style="vertical-align:top" |
+{| class="wikitable lighttable qc-active"
+!Additional requirements
+|-
+|Started [[Fairytale II - Cure a Queen]]
+|-
+|Started [[The Giant Dwarf]]
+|-
+|Partial completion of [[Olaf's Quest]]
+|-
+|Defeat each of the [[Dagannoth Kings]]
+|-
+|Defeat all [[God_Wars_Dungeon#Generals|God Wars Dungeon generals]], except [[Nex]]
+|}
+|}
+
+|-|
+</tabber>

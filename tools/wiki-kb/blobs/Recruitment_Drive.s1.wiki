@@ -1,0 +1,22 @@
+==Details==
+{{Quest details
+|start = Talk to [[Sir Amik Varze]] on the {{FloorNumber|uk=2}} of the [[White Knights' Castle]]'s western tower in [[Falador]].
+|startmap = 2959,3336,plane:2
+|difficulty = Novice
+|description = The Temple Knights of Saradomin, a secret organisation founded many centuries ago by Saradomin himself, are currently looking to expand their ranks with some new blood. After the successful thwarting of the Black Knights' plans to take over Asgarnia, and with the personal recommendation of Sir Amik, you have now been offered the chance to apply for membership in this organisation... but are you up to the challenge?
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Black Knights' Fortress]]
+**[[Druidic Ritual]]
+|items = 
+|recommended = *{{SCP|Combat|10|link=yes}}
+*{{SCP|Strength|5|link=yes}}
+|kills = [[Sir Leye]] (level 20)
+|ironman = [[File:Hardcore ironman chat badge.png]] You will lose your Hardcore ironman status if you die to Sir Leye.<br/>
+[[File:Ultimate ironman chat badge.png]] This quest requires an empty inventory and no items worn.
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

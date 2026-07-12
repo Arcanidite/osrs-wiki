@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Animal Magnetism
+|image = [[File:Animal Magnetism reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Crafting|1,000|link=yes}} experience
+*{{SCP|Fletching|1,000|link=yes}} experience
+*{{SCP|Slayer|1,000|link=yes}} experience
+*{{SCP|Woodcutting|2,500|link=yes}} experience
+*[[Ava's attractor]] if your [[Ranged]] level is less than 50, or [[Ava's accumulator]] if your Ranged level is 50 or higher
+*[[Ballistic attractor schematic]] from talking to Ava if the [[Pandemonium]] quest is completed
+*The ability to trade with [[Ava]] and purchase her [[Ava's device|devices]]
+}}
