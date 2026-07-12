@@ -159,6 +159,11 @@ const covered = {
   // with phase_xp_fold:true, since quest_first is what reaches past it, not
   // the readiness fold itself).
   phase_xp_fold: true,
+  // train_methods: true — attach the skill-methods picker (1:many activity
+  // options per band, wiki-cited) onto every train-* step, replacing the
+  // single cited detail line. Flagship Step0→Endgame chain opts in first;
+  // enrich.py merges train_methods.jsonl by id (default OFF = byte-identical).
+  train_methods: true,
   // steer_points deliberately dropped too (barrows normally carries steer-
   // graceful/steer-ardougne-easy-diary — see route-p2p.json's own "Toward
   // Ardougne Easy Diary" phase for that waypoint-card UX). Carrying them
