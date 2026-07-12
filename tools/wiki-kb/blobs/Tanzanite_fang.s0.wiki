@@ -1,0 +1,23 @@
+{{Infobox Item
+|name = Tanzanite fang
+|image = [[File:Tanzanite fang.png]]
+|release = [[8 January]] [[2015]]
+|update = Zulrah - The Solo Snake Boss
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Dismantle, Drop
+|examine = Maybe you could use a chisel to fletch this into a blowpipe.
+|value = 110000
+|weight = 0.350
+|exchange = Yes
+|id = 12922
+|leagueRegion = Tirannwn
+}}
+[[File:Tanzanite fang detail.png|left|170px]]
+The '''tanzanite fang''' is obtained from killing [[Zulrah]]. It can be used with a [[chisel]] to create the [[toxic blowpipe (empty)]], requiring level 78 [[Fletching]] and granting 120 experience.
+
+Players can dismantle the fang to receive 20,000 [[Zulrah's scales]], resulting in a loss of {{NoCoins|{{GEP|Zulrah's scales|20000}}-{{GEP|Tanzanite fang}}|c}}.

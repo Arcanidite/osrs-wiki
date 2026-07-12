@@ -1,0 +1,25 @@
+{{Infobox Item
+|name = Twisted bow
+|image = [[File:Twisted bow.png]]
+|release = [[5 January]] [[2017]]
+|update = Chambers of Xeric
+|aka = Tbow
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A mystical bow carved from the twisted remains of the Great Olm.
+|value = 4000000
+|weight = 1.814
+|respawn = 100
+|exchange = Yes
+|id = 20997
+|leagueRegion = Kourend,Desert,Morytania
+}}
+[[File:Twisted bow detail.png|150px|left]]
+The '''twisted bow''' is a rare reward from the [[Chambers of Xeric]] that requires a [[Ranged]] level of 85 to wield. It can fire any type of arrow, including [[dragon arrow]]s. The twisted bow is extremely valuable due to its unmatched power against monsters with a high Magic level or accuracy bonus, such as [[Commander Zilyana]] and [[TzKal-Zuk]].
+
+Similar to the [[crystal bow]], the bow has an [[attack range]] of 10 tiles. As all attacks have a maximum of 10 range, [[Combat Options|longrange]] does not provide any attack distance benefit but may still be used to gain [[Defence]] XP.

@@ -1,0 +1,29 @@
+{{External|rs=Champion's Challenge}}
+{{HasStrategy}}
+{{Dangerous}}
+{{Infobox Activity
+|name = Champions' Challenge
+|image = [[File:Fighting Skeleton Champion.png|300px]]
+|release = [[12 December]] [[2005]]
+|update = Champions, Wyverns and Granite
+|type = Distraction and Diversion
+|members = Yes
+|location = [[Champions' Guild]]
+|skills = [[Combat]]
+|currency = None
+|music = [[Title Fight]], [[Victory is Mine]]
+|map = {{Map|name=Champions' Challenge|x=3169|y=9758|zoom=2|mapID=12}}
+|leagueRegion = Misthalin
+}}
+[[File:Champion's Challenge logo.jpg|left]]
+The '''Champions' Challenge''' is a [[Distraction and Diversion]] found in the basement of the [[Champions' Guild]]. While fighting various creatures of [[Gielinor]], a player may be challenged to a duel by the champion of certain races, which are offered by means of a [[champion's scroll]], which is received as an extremely rare drop ''(1/5,000 chance)''. These duels take place with certain rules, from limiting the player's [[armour]] to disallowing some items. In order to be eligible to receive a champion's scroll, a player must be on a [[members]] server and have at least 32 [[quest point]]s.
+
+Players cannot teleport out of the [[Champions' Guild]] basement. Attempting to do so will prompt [[Larxus]] to say ''"There's a ladder for a reason".'' If players need to escape the fight at any time, they must exit through the portcullis. Crossing through the portcullis does not end the fight or reset the Champion's hitpoints; rather, it ends once the ladder behind it is climbed up. This will not cause the Champion's scroll to be lost, it only disappears once players defeat the Champion. 
+
+If the player dies during a Champion fight, their gravestone will appear on the ground floor of the Champion's Guild, a few tiles away from the trapdoor. Their Champion's scroll will '''not''' disappear upon death in this manner: it can be recovered from the gravestone.
+
+There are eleven champions that may challenge the player, and each one lays down certain rules for the fight. It is possible to use a [[Dwarf multicannon]] in the arena in any fight where the use of range is not restricted. Thralls cannot be summoned. [[Ring of recoil|Rings of recoil]] '''can''' be used in the fights as a workaround for any combat-style restrictions; however, to get kill credit and thus complete the challenge, the player must be/have been actively engaged in combat with the champion.
+
+The Champions of Champions are those who are seated in the arena. There is a Champion for each of the races of [[Humans]], [[Dwarves]], [[TzHaar]], [[Werewolves]], [[Elves]], and [[Gnomes]], but only the Human champion, [[Leon D'Cour]], may be challenged.
+
+''Note for Ultimate Ironmen:'' Inventory must be '''completely empty''' during the Ghoul Champion and Leon d'Cour fights. Players must also have '''only an item equipped in weapon slot''' for the Ghoul Champion, but wearing anything in other slots for Leon d'Cour is accepted.

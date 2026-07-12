@@ -1,0 +1,12 @@
+==Creation==
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 78
+|skill1boostable = Yes
+|skill1exp = 120
+|members = Yes
+|ticks = 0
+|tools = Chisel
+|mat1 = Tanzanite fang
+|output1 = Toxic blowpipe (empty)
+}}

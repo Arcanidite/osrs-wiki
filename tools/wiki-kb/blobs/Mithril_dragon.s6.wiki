@@ -1,0 +1,12 @@
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLine|name=Rune battleaxe|quantity=1|rarity=8/128}}
+{{DropsLine|name=Rune dart(p)|quantity=14|rarity=7/128}}
+{{DropsLine|name=Rune battleaxe|quantity=1|rarity=4/128|raritynotes=<ref group="d">There is a chance players will receive a [[rune battleaxe]] together with a [[shark]]</ref>}}
+{{DropsLine|name=Rune knife|quantity=8|rarity=3/128}}
+{{DropsLine|name=Rune mace|quantity=1|rarity=3/128}}
+{{DropsLine|name=Rune spear|quantity=1|rarity=2/128}}
+{{DropsLine|name=Rune full helm|quantity=1|rarity=1/128}}
+{{DropsLine|name=Dragon full helm|quantity=1|rarity=1/32768}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}

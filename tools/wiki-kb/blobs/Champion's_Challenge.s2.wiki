@@ -1,0 +1,8 @@
+==Rewards==
+[[File:Champion's cape detail.png|left|90px]]
+{{Listen|align=right|title=Beating a champion|desc=|filename=A New Champion! (Champion's Challenge).ogg}}
+In addition to the [[Hitpoints]] and [[Slayer]] experience gained when defeating a champion, defeating them grants a banner hung on the northern wall of the basement. Players can also claim a [[Champion's lamp]] after defeating a champion, which awards ten times the experience that is given immediately after a champion's defeat. A total of 40,348 Hitpoints and Slayer experience is rewarded from defeating all the champions and claiming all the champion's lamps.
+
+Once players defeat all 11 champions, they receive [[Leon d'Cour]]'s [[champion's cape]]. The cape is purely cosmetic, and has no stats.
+
+{{clear|left}}

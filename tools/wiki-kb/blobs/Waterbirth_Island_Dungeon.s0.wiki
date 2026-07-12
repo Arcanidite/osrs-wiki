@@ -1,0 +1,15 @@
+{{External|rs}}
+{{Infobox Location
+|name = Waterbirth Island Dungeon
+|image = [[File:Waterbirth Island Dungeon 1.png|300px]]
+|release = [[1 August]] [[2005]]
+|update = Waterbirth Island
+|members = Yes
+|floors = 6
+|location = [[Fremennik Province]]
+|race = [[Dagannoth (Waterbirth Island)|Dagannoth]], [[Wallasalki]]s, [[Rock lobster]]s, and [[Giant rock crabs]]
+|music = [[The Monsters Below]], [[Subterranea]], [[Dagannoth Dawn]], [[Xenophobe]]
+|map = [[File:Waterbirth Dungeon Map.png|300px]]
+|leagueRegion = Fremennik
+}}
+'''Waterbirth Dungeon''' is a large [[dungeons|dungeon]] found on [[Waterbirth Island]] and consists of several sublevels that contain powerful, [[aggressive]] [[monster]]s. Players must be prepared to encounter all three [[combat styles]]. Few [[safespots]] are available, so those adventurers who wish to explore the dungeon must take caution.

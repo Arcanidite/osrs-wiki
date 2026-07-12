@@ -1,0 +1,5 @@
+==Item sources==
+{{Drop sources|Rune crossbow}}
+
+===Shop locations===
+{{Store locations list|Rune crossbow}}

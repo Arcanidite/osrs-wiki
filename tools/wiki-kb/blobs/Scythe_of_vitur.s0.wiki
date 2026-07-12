@@ -1,0 +1,41 @@
+{{Redirect|Scythe|scythes in general|Scythe (weapon)}}
+{{Infobox Item
+|defver = 2
+|version1 = Uncharged
+|version2 = Charged
+|name1 = Scythe of vitur (uncharged)
+|name2 = Scythe of vitur
+|image1 = [[File:Scythe of vitur (uncharged).png]]
+|image2 = [[File:Scythe of vitur.png]]
+|release = [[7 June]] [[2018]]
+|update = The Theatre of Blood
+|members = Yes
+|quest = No
+|tradeable1 = Yes
+|tradeable2 = No
+|equipable = Yes
+|stackable = No
+|noteable1 = Yes
+|noteable2 = No
+|options1 = Wield, Charge, Drop
+|options2 = Wield, Check, Uncharge, Drop
+|wornoptions = Check
+|examine1 = A powerful scythe. It is currently uncharged.
+|examine2 = A powerful scythe.
+|value = 4000000
+|weight = 3.175
+|exchange1 = Yes
+|exchange2 = No
+|id1 = 22486
+|id2 = 22325
+|leagueRegion = Morytania,Kourend,Desert
+}}
+{{Synced switch
+|version1 = [[File:Scythe of vitur (uncharged) detail.png|left|200px]]
+|version2 = [[File:Scythe of vitur detail.png|left|200px]]
+}}
+The '''Scythe of Vitur''' is a two-handed [[slash weapon]] requiring 80 [[Attack]] and 90 [[Strength]] to wield, available as a rare drop from the [[Theatre of Blood]]. The scythe is extremely valuable due to its immense power against most large monsters.
+
+The Scythe of Vitur was once wielded by the [[Gods#Founder of House Vitur|founder]] of House Vitur, a [[vampyre]] now worshipped as a god.{{CiteNews|url=http://services.runescape.com/m=news/the-theatre-of-blood?oldschool=1|title=The Theatre of Blood|newsdate=7 June 2018|quote=Of all of Lady Verzik's possessions, one of the most valuable is the Scythe of Vitur. This legendary weapon was once wielded by the founder of House Vitur, a vampyre now worshipped as a god.}}
+
+Although the Scythe of Vitur has a stab bonus, it does not have a Stab combat style.

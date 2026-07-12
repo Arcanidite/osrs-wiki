@@ -1,0 +1,5 @@
+==Item sources==
+{{Drop sources|Dragon scimitar}}
+
+===Shop locations===
+{{Store locations list|Dragon scimitar}}

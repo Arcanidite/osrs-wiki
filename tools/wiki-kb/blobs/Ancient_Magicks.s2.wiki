@@ -1,0 +1,35 @@
+==Skill and quest requirements==
+{{User stats
+|Mining = 
+|Strength =30
+|Agility = 15
+|Smithing = 20
+|Herblore = 10
+|Ranged = 40
+|Thieving = 53
+|Cooking = 
+|Prayer = 11
+|Crafting = 
+|Firemaking = 50
+|Magic = 50
+|Fletching = 10
+|Woodcutting = 
+|Runecraft = 
+|Slayer = 10
+|Farming = 
+|Construction = 
+|Hunter = 
+|Attack = 33
+|Combat = 28
+}}
+Because unlocking the Ancient Magicks spellbook requires completion of the [[Desert Treasure I]] quest, the following quests are also required:
+*[[The Dig Site]]
+*[[The Tourist Trap]]
+*[[Temple of Ikov]]
+*[[Priest in Peril]]
+*[[Troll Stronghold]]
+*[[Waterfall Quest]]
+*[[Druidic Ritual]]
+
+The prerequisite quest skill requirements, combined with the experience rewarded from these quests, means that the minimum skills required to obtain Ancient Magicks can be seen in the table to the right.
+{{Clear}}

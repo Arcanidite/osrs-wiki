@@ -1,0 +1,242 @@
+==Basic overview==
+{{Has calculator|Calculator:Gauntlet resources}}
+The map consists of a 7x7 grid of rooms, and the player starts adjacent to the centre room that contains The Gauntlet's boss: the [[Crystalline Hunllef]]. The player has 10 minutes to prepare to fight this boss, which is indicated by a timer. If the timer runs out, the player will automatically get teleported into the boss room. The player can also choose to manually enter the boss room before the timer ends.
+
+During this 10 minute preparation time, the player may use the resources of The Gauntlet's environment to create a set up to challenge the Crystalline Hunllef. This set up may consist of three tiers of halberds, staves, bows, helmets, body armours and leg armours, as well as food and a potion that restores [[run energy]] and [[prayer points]].
+
+===Starting items===
+{{Inventory|align=right
+|Crystal axe (The Gauntlet) |Crystal pickaxe (The Gauntlet) |Crystal harpoon (The Gauntlet) |Pestle and mortar (The Gauntlet)
+|Teleport crystal (The Gauntlet)\1 | | | 
+| | | | 
+| | | | 
+| | | | 
+| | | | 
+| | | | 
+}}
+The player starts with a few items in their inventory and they will be wielding a [[crystal sceptre]]. These items will be needed for exploring the rooms and collecting resources.
+
+{| class="wikitable align-center-1"
+|-
+! colspan=2 |Item
+!Effect
+|-
+|{{plinkt|Crystal sceptre}}
+|This item is required to light nodes (i.e. to visit new rooms). It can also be used as a weak melee weapon. 
+|-
+|{{plinkt|Crystal axe (The Gauntlet)|txt=Crystal axe}}
+|Used to chop {{plink|Phren bark}}
+|-
+|{{plinkt|Crystal pickaxe (The Gauntlet)|txt=Crystal pickaxe}}
+|Used to mine {{plink|Crystal ore}}
+|-
+|{{plinkt|Crystal harpoon (The Gauntlet)|txt=Crystal harpoon}}
+|Used to fish {{plink|Raw paddlefish}}
+|-
+|{{plinkt|Pestle and mortar (The Gauntlet)|txt=Pestle and mortar}}
+|Used to grind {{plink|Crystal shards (The Gauntlet)|txt=Crystal shards}}<sup>x10</sup> into [[Crystal dust (The Gauntlet)|Crystal dust]]<sup>x10</sup> and to grind each [[Crystal spike]]''',''' [[Crystal orb]]''',''' [[Crystalline bowstring]] into {{plink|Crystal shards (The Gauntlet)|txt=Crystal shards}}<sup>x80</sup>
+|-
+|{{plinkt|Teleport crystal (The Gauntlet)|txt=Teleport crystal}}
+|Single-use item for teleporting the player back to the starting room.
+|}
+{{Clear}}
+
+===Starting room===
+[[File:The Gauntlet Starting Room.png|200px|right|thumb|Features of the starting room]]
+The player will start adjacent to the central room. This room contains features that are used for processing the collected resources.
+*'''[[Crystal Singing Recipes]]:''' A bookstand players can click to get an overview of all recipes for armour and weaponry found within The Gauntlet.
+*'''[[Egniol Potions]]:''' A bookstand players can click to read a text describing the use and recipe of [[egniol potion]]s.
+*'''[[Range (The Gauntlet)|Range]]:''' Used to cook {{plink|Raw paddlefish}} into {{plink|Paddlefish}}.
+*'''[[Singing Bowl]]:''' Used to craft vials, teleport crystals, [[crystal paddlefish]], [[corrupted paddlefish]], armour and weapons.
+*'''[[Teleport Platform (The Gauntlet)|Teleport Platform]]:''' Used to abandon the current challenge.
+*'''[[Tool Storage]]:''' Used to re-obtain [[crystal sceptre]], [[Crystal axe (The Gauntlet)|crystal axe]], [[Crystal pickaxe (The Gauntlet)|crystal pickaxe]], [[Crystal harpoon (The Gauntlet)|crystal harpoon]] and [[Pestle and mortar (The Gauntlet)|pestle and mortar]]
+*'''[[Water Pump (The Gauntlet)|Water Pump]]:''' Used to turn {{plink|Vial (The Gauntlet)|txt=vials}} into {{plink|Water-filled vial|txt=water-filled vials}}, which are needed to make {{plink|Egniol potion (3)|txt=Egniol potions}}.
+{{Clear}}
+
+===Resource rooms===
+Each room in The Gauntlet, except for the starting room and the boss room, contains resource nodes and/or monsters. These resource nodes and monsters are farmed to collect resources that can be processed at the [[Singing Bowl]] in the starting room.
+
+====Resource nodes====
+[[File:Phren Roots.png|right|100px]]
+There are five types of resource nodes. Each resource room will contain zero to five resource nodes. A resource room may contain a combination of different resource nodes.
+*'''[[Crystal Deposit]]:''' Used to mine [[crystal ore]] from. Three crystal ores can be collected from each Crystal Deposit. Used for creating armour within The Gauntlet.
+*'''[[Linum Tirinum (plant)|Linum Tirinum]]:''' Used to pick [[linum tirinum]] from. Three linum tirinum can be collected from each Linum Tirinum plant. Used for creating armour within The Gauntlet.
+*'''[[Phren Roots]]:''' Used to chop [[phren bark]] from. Three phren barks can be collected from each Phren Roots plant. Used for creating armour within The Gauntlet.
+*'''[[Grym Root]]:''' Used to pick a [[grym leaf]] from. One grym leaf can be collected from each Grym Root plant. Used for creating Egniol potions within The Gauntlet.
+*'''[[Fishing Spot (The Gauntlet)|Fishing Spot]]:''' Used to fish [[raw paddlefish]] from. Four raw paddlefish can be collected from each Fishing Spot. Used for food within The Gauntlet, healing 20 Hitpoints when cooked. Also counts as a water source to fill vials.
+
+Collecting resources from the aforementioned nodes may reward the player with [[Crystal shards (The Gauntlet)|crystal shards]].
+
+The inner 3x3 area adjacent to the boss room is guaranteed to include 4 rooms containing each at least 3 Crystal Deposits, Linum Tirinum, Phren Roots and weak monsters respectively.
+This does not apply to the [[Corrupted Gauntlet]].
+
+====Monsters====
+There are nine types of monsters that can be found within the resource rooms, that can be categorized into three categories:
+*'''Weak monsters:''' [[Crystalline Spider]]s (level 22), [[Crystalline Rat]]s (level 24) and [[Crystalline Bat]]s (level 33).
+*'''Strong monsters:''' [[Crystalline Unicorn]]s (level 48), [[Crystalline Scorpion]]s (level 64) and [[Crystalline Wolf|Crystalline Wolves]] (level 74).
+*'''Demi-bosses:''' [[Crystalline Bear]]s (level 172), [[Crystalline Dragon]]s (level 172) and [[Crystalline Dark Beast]]s (level 172).
+
+[[File:Weapon frame detail.png|right|100px]]
+[[File:Crystal spike detail.png|right|100px]]
+The above monsters may be killed for the following items:
+*'''[[Crystal shards (The Gauntlet)|Crystal shards]]:''' Used for processing items at the [[Singing Bowl]].
+*'''[[Weapon frame]]:''' Used for creating the lowest tier bow, halberd or staff at the Singing Bowl.
+*'''[[Raw paddlefish]]:''' Used for food within The Gauntlet, healing 20 [[Hitpoints]] when eaten cooked.
+*'''[[Grym leaf]]:''' Used for creating [[Egniol potion]]s within The Gauntlet.
+*'''[[Teleport crystal (The Gauntlet)|Teleport crystal]]:''' Used for teleporting to the starting room.
+*'''[[Crystal spike]]:''' Used to create the highest tier halberd. Guaranteed drop from the first [[Crystalline Bear]] killed.
+*'''[[Crystal orb]]:''' Used to create the highest tier staff. Guaranteed drop from the first [[Crystalline Dragon]] killed.
+*'''[[Crystalline bowstring]]:''' Used to create the highest tier bow. Guaranteed drop from the first [[Crystalline Dark Beast]] killed.
+
+===Armour and weaponry===
+The Singing Bowl can be used to create armour and weapons. Since the Crystalline Hunllef uses [[protection prayers]], at least two different types of weapons are required.
+
+====Weapons====
+[[File:Crystal halberd (perfected) equipped male.png|right|x250px]]
+There are three types of weapons: bows ([[Ranged]]), halberds ([[Melee]]) and staves ([[Magic]]). These weapons are available in three tiers: basic, attuned and perfected. Higher tiers are created by upgrading from their previous tiers.
+
+The creation of each of the three weapon types requires the same resources:
+*'''Basic''' (tier 1): A [[weapon frame]] and 20 [[Crystal shards (The Gauntlet)|crystal shards]].
+*'''Attuned''' (tier 2): Basic weapon and 60 crystal shards.
+*'''Perfected''' (tier 3): Attuned weapon and a [[crystal spike]] (for the halberd), [[crystal orb]] (for the staff) or [[crystalline bowstring]] (for the bow).
+
+Weapons from higher tiers give the player higher accuracy and/or damage. See the table below for an overview of each weapon's bonuses:
+
+{{Infotable Bonuses|Crystal sceptre|Crystal halberd (basic)|Crystal halberd (attuned)|Crystal halberd (perfected)|Crystal bow (basic)|Crystal bow (attuned)|Crystal bow (perfected)|Crystal staff (basic)|Crystal staff (attuned)|Crystal staff (perfected)|nototals=yes|sort=amagic,arange,aslash}}
+
+====Armour====
+[[File:Perfected crystal armour (male) equipped.png|right|150px]]
+There are three armour pieces: helmets, bodies and legs, and they are available in three tiers: basic, attuned and perfected. Higher tiers are created by upgrading from their previous tiers.
+
+The creation of each armour piece requires the following resources:
+{| class="wikitable" style="vertical-align:bottom;"
+|- style="font-weight:bold; vertical-align:middle;"
+! rowspan="2" style="font-weight:normal;" | 
+! colspan="4" style="text-align:center; vertical-align:bottom;" | Tier 1
+! colspan="5" style="text-align:center; vertical-align:bottom;" | Tier 2
+! colspan="4" style="text-align:center; vertical-align:bottom;" | Tier 3
+! 
+|- style="font-weight:bold;"
+! Body
+! Legs
+! Helm
+! Total
+! Body
+! Legs
+! Helm
+! Total 
+!Total (1+2)
+! Body
+! Legs
+! Helm
+! Total
+! Total (All)
+|-
+! style="font-weight:bold;" | Ore
+| 1
+| 1
+| 1
+| 3
+| 2
+| 1
+| 1
+| 4
+|7
+| 2
+| 2
+| 2
+| 6
+| 13
+|-
+! style="font-weight:bold;" | Linum
+| 1
+| 1
+| 1
+| 3
+| 2
+| 1
+| 1
+| 4
+|7
+| 2
+| 2
+| 2
+| 6
+| 13
+|-
+! style="font-weight:bold;" | Bark
+| 1
+| 1
+| 1
+| 3
+| 2
+| 1
+| 1
+| 4
+|7
+| 2
+| 2
+| 2
+| 6
+| 13
+|-
+! style="font-weight:bold;" | Shards
+| 40
+| 40
+| 40
+| 120
+| 60
+| 60
+| 60
+| 180
+|300
+| 80
+| 80
+| 80
+| 240
+| 540
+|}
+
+Armour pieces from higher tiers give player higher defence bonuses and mitigate more damage of the Crystalline Hunllef's attacks. It appears that the damage reduction is roughly 13.33% per level. See the table below for each armour piece's bonuses:
+{{Infotable Bonuses|Crystal helm (basic)|Crystal helm (attuned)|Crystal helm (perfected)|nototals=yes|sort=dmagic|colwidth=42px|itemwidth=190px}}
+
+{{Infotable Bonuses|Crystal body (basic)|Crystal body (attuned)|Crystal body (perfected)|nototals=yes|sort=dmagic|colwidth=42px|itemwidth=190px}}
+
+{{Infotable Bonuses|Crystal legs (basic)|Crystal legs (attuned)|Crystal legs (perfected)|nototals=yes|sort=dmagic|colwidth=42px|itemwidth=190px}}
+
+Wearing pieces of the crystal armour will further reduce damage taken from the Crystalline Hunllef's attacks. The table below describes its max hit while wearing different combinations of armour while using the correct protection prayer against its magic and ranged attacks.
+
+{| class="wikitable"
+! colspan="2" |Armour combination
+!Tier sum
+!Crystalline Hunllef's max hit
+!Damage from tornadoes
+|-
+|{{NA}}||No armour
+|0||12||10-20
+|-
+|{{plinkp|Crystal helm (basic)}}{{plinkp|Crystal body (basic)}}{{plinkp|Crystal legs (basic)}}||Full T1 armour
+|3||10||10-16
+|-
+|{{plinkp|Crystal helm (attuned)}}{{plinkp|Crystal body (attuned)}}{{plinkp|Crystal legs (attuned)}}||Full T2 armour
+|6||8||7-13
+|-
+|{{plinkp|Crystal helm (perfected)}}{{plinkp|Crystal body (basic)}}{{plinkp|Crystal legs (attuned)}}
+|T3+T1+T2
+|6
+|8
+|7-13
+|-
+|{{plinkp|Crystal helm (perfected)}}{{plinkp|Crystal body (perfected)}}{{plinkp|Crystal legs (perfected)}}||Full T3 armour
+|9||6||5-10
+|}
+
+{{Reflist|group=A}}
+
+===Boss room===
+[[File:Crystalline Hunllef.png|right|150px]]
+After the 10 minute timer expires the player is automatically teleported into the boss room. The player may also choose to manually pass through the [[Barrier (The Gauntlet)|barrier]] into the boss room if they're ready before the timer has expired. During the fight, players who wish to escape must '''right-click''' the barrier and choose the "'''Escape'''" option.
+
+The boss room always lies directly adjacent to the starting room.
+
+If the player dies as the boss dies, kill count credit will not be awarded.

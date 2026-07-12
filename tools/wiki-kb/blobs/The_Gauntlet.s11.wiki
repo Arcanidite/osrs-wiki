@@ -1,0 +1,44 @@
+==Corrupted Gauntlet==
+[[File:The Corrupted Gauntlet.png|thumb|300px|A player in the Corrupted Gauntlet.]]
+After completing the Gauntlet once, players may try the Corrupted Gauntlet, which has increased difficulty compared to the regular Gauntlet.
+
+Differences include:
+*All monsters are Corrupted instead of Crystalline, with increased stats.
+*All items are Corrupted instead of Crystal, with the same stats.
+*The player only has 7 minutes and 30 seconds to prepare compared to the normal version at 10 minutes.
+*Resource generation of the inner 3x3 area adjacent to the boss room does not have randomness mitigation, with the exception of one room being guaranteed to contain 3 fishing spots.
+
+===Boss Room===
+*The boss room instead contains the [[Corrupted Hunllef]], which has 1000 health and increased aggressive stats. The table below describes its max hit while wearing different combinations of armour while using the correct protection prayer against its magic and ranged attacks.
+**If running full T2, consider making a T3 helm instead of a T2 body if you have spare shards. At the cost of 20 more shards, you'll gain +4 defence bonus stats whilst still retaining the T2 reduced damage effect, even though you technically did not have a full T2 set.
+***It appears that the sum of armour tiers being worn is what determines the max hit of Hunllef's attacks and tornadoes, as 2 T3 pieces provided the same damage reduction as a full set of T2 armour.
+
+{|class="wikitable"
+! colspan=2 | Armour combination
+!Tier sum
+!Corrupted Hunllef's max hit
+!Damage from tornadoes
+|-
+|{{NA}}||No armour
+|0||16||15-30
+|-
+|{{plinkp|Corrupted helm (basic)}}{{plinkp|Corrupted body (basic)}}{{plinkp|Corrupted legs (basic)}}||Full T1 armour
+|3||13||14-25
+|-
+|{{plinkp|Corrupted helm (attuned)}}{{plinkp|Corrupted body (attuned)}}{{plinkp|Corrupted legs (attuned)}}||Full T2 armour
+|6||10||10-20
+|-
+|{{plinkp|Corrupted helm (perfected)}}{{plinkp|Corrupted body (basic)}}{{plinkp|Corrupted legs (attuned)}}
+|T3+T1+T2
+|6
+|10
+|10-20
+|-
+|{{plinkp|Corrupted helm (perfected)}}{{plinkp|Corrupted body (perfected)}}{{plinkp|Corrupted legs (perfected)}}||Full T3 armour
+|9||8||8-15
+|}
+
+{{Reflist|group=A}}
+
+===Rewards===
+Completing the Corrupted Gauntlet rewards three rolls on an upgraded loot table. The player will also receive a {{plink|Gauntlet cape}} upon completion.

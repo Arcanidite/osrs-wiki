@@ -1,0 +1,70 @@
+{{Otheruses|the boss variant of cave kraken}}
+{{Instance|optional=true}}
+{{HasStrategy}}
+{{Infobox Monster
+|defver = 2
+|version1 = Whirlpool
+|version2 = Kraken
+|name1 = Whirlpool
+|name2 = Kraken
+|image1 = [[File:Whirlpool.png|290px]]
+|image2 = [[File:Kraken.png|290px]]
+|release = [[10 April]] [[2014]]
+|update = Easter & Slayer Updates
+|members = Yes
+|combat1 = N/A
+|combat2 = 291
+|size1 = 5
+|size2 = 4
+|examine1 = Something big lurking beneath the water.
+|examine2 = We'll fight, until world's end.
+|xpbonus = 0
+|max hit = 28
+|aggressive = No
+|poisonous = No
+|attack style = [[Typeless]] [[Magic]]
+|attack speed = 4
+|respawn = 10 - 14 ticks (6.0 - 8.4 seconds)
+|slaylvl = 87
+|slayxp = 255
+|cat = Cave Kraken, Bosses
+|assignedby = chaeldar,konar,nieve,duradel
+|hitpoints = 255
+|att = 1
+|str = 1
+|def = 1
+|mage = 1
+|range = 1
+|attbns = 0
+|strbns = 0
+|amagic = 0
+|mbns1 = 0
+|mbns2 = 50
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 130
+|dlight = 300
+|dstandard = 300
+|dheavy = 300
+|elementalweaknesstype1 = None
+|elementalweaknesstype2 = Earth
+|elementalweaknesspercent1 = 
+|elementalweaknesspercent2 = 50
+|poisonresistance = 0
+|venomresistance = Poison
+|immunecannon = Yes
+|immunethrall = No
+|id1 = 496
+|id2 = 494
+}}
+[[File:Cave kraken icon.png|left]]
+The '''Kraken''' is a stronger and larger version of the [[cave kraken]]. It requires level 87 [[Slayer]] to kill and cannot be boosted. Located at the [[Kraken Cove]], it can only be attacked if the player has it, or cave krakens as a [[Slayer task]], which also requires level 50 [[Magic]]. Alongside its [[Cave kraken|non-boss variants]], it is the only monster that drops the [[trident of the seas]] and [[Kraken tentacle]].
+
+Like its smaller brethren, the Kraken is submerged underwater. Magic is the only reliable way of damaging it, as Ranged{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1699360516488011950|date=6 September 2023|archiveurl=https://reldo.runescape.wiki/i/107527|archivedate=6 September 2023|quote=If you rolled 0 damage, it stays as 0. If you rolled >=1 damage, it's divided by 7, with a floor of 1. Accuracy is not affected.}} and Melee deal 1/7th of their normal damage. The Kraken cannot be reached with Melee weapons. To start the fight, players can use a [[fishing explosive]] on the large whirlpool. Otherwise, the four whirlpools around must first be disturbed; when all four whirlpools are disturbed, the larger one can be disturbed, which will result in the Kraken waking up. Either method will release level 112 [[Enormous Tentacle]]s. 
+
+Both the Kraken and Enormous Tentacles use [[typeless]] Magic, and as such [[Protect from Magic]] does '''not''' provide any degree of damage reduction. The Kraken can hit very hard, but has very poor accuracy, while the tentacles are much more accurate but deal less damage. The Kraken's projectile resembles [[Fire Wave]].
+
+Players can create a Kraken instance for 25,000 coins. This fee can be deducted directly from the bank; players do not need to carry coins on them to create the instance. The boss respawns more slowly in a private instance than the public arena.

@@ -1,0 +1,53 @@
+==Rewards==
+{{Main|Rewards Chest (Fortis Colosseum)}}
+{{Listen|filename=Glorious Champion (Fortis Colosseum).ogg|title=Ralos has smiled upon you...|desc=Music that plays when defeating Sol Heredit.}}
+Before starting a wave, an interface will appear indicating the loot from the current wave and loot from the upcoming wave. Players may choose to either continue and risk their rewards or end the run and claim all of their hard-won spoils. If the player dies, teleports out during a wave, or logs out, all accumulated loot will be lost. Ending a run or defeating Sol Heredit in wave 12 will result in a [[Rewards Chest (Fortis Colosseum)|rewards chest]] appearing in the centre part of the arena where rewards can be claimed. Minimus can be found beside the chest to allow players to exit the arena.
+
+Unique rewards can be obtained from wave 4 onwards. Every wave after that has a progressively higher chance of awarding unique items. Unique rewards from the chest include:
+* Pieces of the [[Sunfire fanatic armour]]:
+** {{plink|Sunfire fanatic helm}}
+** {{plink|Sunfire fanatic cuirass}}
+** {{plink|Sunfire fanatic chausses}}
+* {{plink|Dizana's quiver}}, guaranteed by beating the Colosseum
+* {{plink|Tonalztics of ralos}} (only obtainable from wave 7 onwards)
+* {{plink|Echo crystal}}, which can be combined with [[guardian boots]] to create [[echo boots]]
+* {{plink|Smol heredit}}, the boss pet of [[Sol Heredit]], obtained by beating the Colosseum
+
+{{plink|Sunfire splinters}} are also a common drop obtainable in addition to the above. They can be used to charge Dizana's quiver and the Tonalztics of Ralos. They are also used to create [[sunfire rune]]s, [[searing page]]s, and [[Jug of sunfire wine|sunfire wine]].
+
+Players can choose to exchange the [[Dizana's quiver]] with [[Minimus]] for an additional 1/200 chance to receive the [[Smol heredit]] pet<ref>{{DropLogProject|kills=6882}}</ref> or for 4,000 sunfire splinters. Players who already have the pet will not be offered the option to gamble quivers for the pet, but can still exchange them for sunfire splinters.
+
+===Glory===
+{{Main|Glory}}
+Every time the player completes a wave, they will earn [[Glory]], in which the amount gained is dependent on the player's performance – damage taken, time spent, errors made, and types of modifiers selected. A player's Glory does not accumulate like a currency, only their personal best matters.
+
+Gaining more Glory also gives various benefits outside the Colosseum, where citizens may reward you based on how much has been earned:
+{| class="wikitable lighttable"
+!Title
+!Glory required
+!Reward 
+|-
+|Brawler
+|2,000
+|Ability to use the bank chest inside the Colosseum lobby
+|-
+|Challenger
+|5,000
+|Ability to set Civitas illa Fortis as a [[respawn point]]
+|-
+|Gladiator
+|8,000
+|[[Oriana]] will purchase [[valuables]] for 65 coins each
+|-
+|Hero
+|12,000
+|Ability to teleport to the Colosseum via the [[ring of dueling]]
+|-
+|Champion
+|16,000
+|The [[herb patch]] in [[Outer Fortis]] will always be [[Disease (Farming)|disease]]-free
+|-
+|Grand Champion
+|20,000
+|Ability to perform the [[Fortis Salute]] emote
+|}

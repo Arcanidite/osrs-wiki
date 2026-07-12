@@ -1,0 +1,9 @@
+==Rewards==
+[[File:Fire cape detail animated.gif|frame|The fire cape]]
+If one is successful in defeating [[TzTok-Jad]], they will receive 8,032 [[Tokkul]] and the untradeable [[fire cape]] — one of the best melee capes in ''Old School RuneScape''. It provides much better protection than the [[cape of legends]] and the [[obsidian cape]], as well as slight offensive bonuses. The only strictly better melee cape is the [[infernal cape]], which is acquired from the [[Inferno]], a much harder version of the Fight Caves that requires sacrificing a fire cape to enter.
+
+Defeating TzTok-Jad has a 1/200 chance of awarding a pet [[TzRek-jad]]. This chance is boosted to 1/100 if TzTok-Jad is defeated while on a Slayer task. In addition, players may exchange a [[fire cape]] by speaking to [[TzHaar-Mej-Jal]] for an additional 1/200 chance of obtaining the pet.
+
+Tokkul is rewarded based on how many waves are completed, with each wave giving two more tokkul than the last. The total can be calculated as <math>2 + 4 + 6 + ...</math>, or more simply <math>N\cdot \left ( N  + 1 \right )</math>, where <math>N</math> is the number of waves completed. An additional 4,000 Tokkul are rewarded for killing TzTok-Jad.{{CiteTwitter|author=Mod Kieren|url=https://twitter.com/JagexKieren/status/847096840797523970|date=29 March 2017|archiveurl=https://reldo.runescape.wiki/i/105125|archivedate=6 November 2022|quote=Simple maths proofs: This formula is used for calculating your winnings from the Fight Caves :) Sum of n consecutive numbers}}{{CiteTwitter|author=Mod Kieren|url=https://twitter.com/JagexKieren/status/847366350636957696|date=30 March 2017|archiveurl=https://reldo.runescape.wiki/i/107765|archivedate=6 November 2022|quote=Defeating jad gives you an extra 4000 on top of the normal reward too}}
+
+Rewards for completing the [[Elite Karamja Diary]] include doubled [[Tokkul]] from the Fight Caves and one resurrection per day inside the Fight Caves.

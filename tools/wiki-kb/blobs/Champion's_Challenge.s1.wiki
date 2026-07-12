@@ -1,0 +1,26 @@
+==Champions==
+{| class="wikitable lighttable sortable"
+!Champion!!Level!!Rules!![[Xp]] to both [[Hitpoints]] and [[Slayer]]!!Scroll!!Scroll dropper
+|-
+|[[Imp Champion]]||14||No special attacks||160||{{plinkp|Imp champion scroll}}||[[Imp]], [[reanimated imp]], [[revenant imp]]
+|-
+|[[Goblin Champion]]||24||Only Magic attacks||128||{{plinkp|Goblin champion scroll}}||[[Cave goblin]], [[cave goblin guard]], [[goblin]], [[goblin guard]], [[reanimated goblin]], [[revenant goblin]], [[Sergeant Grimspike]], [[Sergeant Steelwill]], [[Sergeant Strongstack]]
+|-
+|[[Skeleton Champion]]||40||Only Ranged attacks||232||{{plinkp|Skeleton champion scroll}}||[[Calvar'ion]], [[giant skeleton]], [[greater skeleton hellhound]], [[Nazastarool]], [[skeleton]], [[skeleton brute]], [[Skeleton heavy]], [[Skeleton Hellhound (Calvar'ion)|skeleton hellhound (Calvar'ion)]],  [[Skeleton Hellhound (Vet'ion)|skeleton hellhound (Vet'ion)]], [[skeleton hero]], [[Skeleton Mage|skeleton mage]], [[Skeleton (Ape Atoll)|skeleton monkey]], [[skeleton thug]], [[skeleton warlord]], [[skogre]], [[undead one]], [[Vet'ion]]
+|-
+|[[Zombies Champion]]||51||No Magic attacks||240||{{plinkp|Zombie champion scroll}}||[[Afflicted]], [[armoured zombie]], [[Monkey Zombie|monkey zombie]], [[Nazastarool]], [[skogre]], [[Slash Bash]], [[sorebones]], [[Undead Druid|undead druid]], [[Undead Lumberjack|undead lumberjack]], [[undead one]], [[Undead Zealot|undead zealot]], [[zogre]], [[Zombie|zombie]], [[Zombie pirate (disambiguation)|zombie pirate]], [[zombie swab]]
+|-
+|[[Giant Champion]]||56||Only melee attacks||280||{{plinkp|Giant champion scroll}}||[[Black Knight Titan]], [[Bryophyta]], [[cyclops (Ardougne Zoo)]], [[fire giant]], [[Hill Giant|hill giant]], [[fire giant|ice giant]], [[moss giant]], [[Obor]], [[reanimated giant]]
+|-
+|[[Hobgoblin Champion]]||56||No melee attacks||232||{{plinkp|Hobgoblin champion scroll}}||[[Hobgoblin]], [[revenant hobgoblin]]
+|-
+|[[Ghoul Champion]]||85||No armour or inventory; only weapons||400||{{plinkp|Ghoul champion scroll}}||[[Ghoul]]
+|-
+|[[Earth Warrior Champion]]||102||No prayer allowed||432||{{plinkp|Earth warrior champion scroll}}||[[Earth warrior]]
+|-
+|[[Jogre Champion]]||107||No Ranged attacks||480||{{plinkp|Jogre champion scroll}}||[[Jogre]]
+|-
+|[[Lesser Demon Champion]]||162||No armour or weapons; only inventory||592||{{plinkp|Lesser demon champion scroll}}||[[Lesser demon]], [[Zakl'n Gritch]]
+|-
+|[[Leon d'Cour]]||141||No inventory||492||{{plinkp|Leon's champion scroll}}||[[Unobtainable items|Unobtainable]]
+|}

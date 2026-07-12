@@ -1,0 +1,6 @@
+==Item sources==
+===Uncharged trident===
+{{Drop sources|Uncharged trident}}
+
+===Trident of the seas (full)===
+{{Drop sources|Trident of the seas (full)}}

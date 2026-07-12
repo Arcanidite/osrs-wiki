@@ -1,0 +1,50 @@
+{{External|rs}}
+{{HasStrategy|page=Dagannoth Kings/Strategies}}
+{{HasTask|Dagannoth}}
+{{Infobox Monster
+|name = Dagannoth Rex
+|image = [[File:Dagannoth Rex.png|230px]]
+|release = [[7 November]] [[2005]]
+|update = Waterbirth Island - deeper, darker, deadlier!
+|members = Yes
+|combat = 303
+|size = 3
+|examine = Firstborn of the legendary dagannoth kings.
+|xpbonus = 30
+|max hit = 26
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Slash]]
+|attack speed = 4
+|respawn = 150
+|slayxp = 331.4
+|cat = Bosses, Dagannoth
+|assignedby = vannaka,chaeldar,konar,nieve,duradel
+|hitpoints = 255
+|att = 255
+|str = 255
+|def = 255
+|mage = 0
+|range = 255
+|attbns = 0
+|strbns = 0
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 255
+|dslash = 255
+|dcrush = 255
+|dmagic = 10
+|dlight = 255
+|dstandard = 255
+|dheavy = 255
+|elementalweaknesstype = Earth
+|elementalweaknesspercent = 35
+|poisonresistance = 0
+|venomresistance = Poison
+|immunecannon = No
+|immunethrall = No
+|id = 2267
+}}
+'''Dagannoth Rex''' is the [[Melee]]-based [[Dagannoth King]] found in the depths of the [[Waterbirth Island Dungeon]], along with fellow Dagannoth Kings, [[Dagannoth Supreme]] and [[Dagannoth Prime]]. Rex is the only monster to drop the [[Berserker ring|Berserker]] and [[Warrior ring]]s. He, along with the other [[Dagannoth (race)|Dagannoth]] Kings, can also drop the rare [[dragon axe]].

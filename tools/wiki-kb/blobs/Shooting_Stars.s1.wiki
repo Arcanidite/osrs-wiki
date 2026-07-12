@@ -1,0 +1,15 @@
+==Locating==
+[[File:Shooting Stars - telescope view.png|thumb|300px|A shooting star viewed through a telescope.]]
+Members can use a [[Telescope space|telescope]] in a [[Study|study room]] in a [[player-owned house]] to find the approximate area and time of the next landing. It is also possible to use telescopes in another player's house for this purpose.
+* If the telescope is blocked by another room in the house, (not including outdoor rooms such as the [[Menagerie]]), or the room is underground, it will not work.
+* Better telescopes provide a more accurate time window:
+** [[Oak telescope]] - 24-minute window
+** [[Teak telescope]] - 9-minute window
+** [[Mahogany telescope]] - 2-minute window
+* If a star has recently fallen, the following text appears:
+** "You look through the telescope but you don't see anything interesting."
+Join the Shooting Stars [[grouping]] chat via the grouping menu to share locations with other players. 
+
+There are also many websites available on the internet which list known star sites allowing players to quickly find stars meeting their criteria.
+
+If a player is standing near the crash site where a shooting star is falling, they will hear a whistling sound as it falls from the sky and the crash as it impacts the ground.

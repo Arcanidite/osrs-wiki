@@ -1,0 +1,19 @@
+{{External|rs=Shooting Star}}
+{{Infobox Activity
+|name = Shooting Stars
+|image = [[File:Shooting Stars.png|300px]]
+|release = [[17 March]] [[2021]]
+|update = Shooting Stars
+|type = Distraction and Diversion
+|members = No
+|location = Global
+|skills = [[Mining]]
+|currency = [[Stardust]]
+|music = Varies on location of star
+|map = {{Map|zoom=-1|x=3290|y=3353|width=400|align=right|group=Stars|caption=A map of landing sites.}}
+|leagueRegion = General
+}}
+
+'''Shooting Stars''' is a [[Distraction and Diversion]] activity in which players mine [[crashed star]]s for [[stardust]]. A star will crash roughly every 90 minutes on each [[server]] (with a variation of up to 15 minutes), falling at a random spot selected from a predetermined list. The activity is notable for providing idle [[Mining]] training, only requiring input every 7 minutes while mining a star.
+
+Stardust may be exchanged at [[Dusuri's Star Shop]] by the [[Mining Guild]] entrance in [[Falador]] for various [[Shooting Stars#Rewards|rewards]]. Although the activity is available in [[Free-to-play]], players will be unable to use the shop and receive half the experience points from mining the stars.

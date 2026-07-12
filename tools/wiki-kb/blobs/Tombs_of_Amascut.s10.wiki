@@ -1,0 +1,120 @@
+==Rewards==
+{{Main|Chest (Tombs of Amascut)}}
+[[File:Tombs of Amascut - receiving rare reward.gif|thumb|300px|A player receives the [[Masori body]] from Osmumten's sarcophagus.]]
+Upon defeating the Wardens, the party will be able to access the treasure room and receive their reward for helping [[Osmumten]] defeat [[Amascut]]'s thralls.
+
+Like the [[Theatre of Blood]], if a unique drop is rolled at the end of the raid, [[Sarcophagus (Osmumten)|Osmumten's sarcophagus]] will glow purple instead of white with the designated player being able to open it instead of the chests by the side. When the sarcophagus is opened, an animation plays which reveals the item. Only one unique can be obtained per raid, if any at all. If no unique item is rolled, then the chest will contain three rolls from the common drop table. The unique drops that players can obtain from the sarcophagus include:
+* Pieces of the [[Masori armour]]:
+** {{plink|Masori mask}}
+** {{plink|Masori body}}
+** {{plink|Masori chaps}}
+* {{Plink|Lightbearer}}
+* {{plink|Osmumten's fang}}
+* {{plink|Elidinis' ward}}
+* {{plink|Tumeken's shadow}}
+
+Additionally, there are tertiary items which can be rolled alongside any reward. The unique tertiary rewards from the Tombs of Amascut include
+* {{plink|Thread of elidinis}}, can be used to create the [[divine rune pouch]]
+* Jewels with the ability to enhance the [[keris partisan]]:
+** {{plink|Breach of the scarab}}
+** {{plink|Eye of the corruptor}}
+** {{plink|Jewel of the sun}}
+** {{plink|Jewel of amascut}}
+* And the pet from the raid, {{plink|Tumeken's guardian}}
+
+If the player finished the raid with fewer than 1,500 points, they will instead receive [[fossilised dung]].
+
+If the player leaves the room after opening the chest, rewards can be found through the rewards niche in the south-east corner of the lobby room. If the player re-enters the raid without claiming their rewards from the rewards niche, they will be lost; the player will be warned of this prior to entering another raid.
+
+Players can find six books during the raid.
+{| class="wikitable"
+|+
+!Book
+!Obtained via
+|-
+|{{plink|Apmeken's capture}}
+|Dropped by [[Ba-Ba]].
+|-
+|{{plink|Crondis' capture}}
+|Dropped by [[Zebak]].
+|-
+|{{plink|Het's capture}}
+|Dropped by [[Akkha]].
+|-
+|{{plink|Scabaras' capture}}
+|Dropped by [[Kephri]].
+|-
+|{{plink|The wardens}}
+|Dropped by either [[Tumeken's Warden]] or [[Elidinis' Warden]] depending on which is killed last.
+|-
+|{{plink|The jackal's torch}}
+|Found by searching the bags in [[Osmumten]]'s burial chamber.
+|}
+
+==== Icthlarin's shroud ====
+Players can earn Icthlarin's shrouds through repeated completions of the Tombs of Amascut, claimed from a chest in the lobby.
+{| class="wikitable"
+|+
+!Accolade
+!Earned at
+|-
+|{{plink|Icthlarin's shroud (tier 1)}}
+|100 completions of Normal/Expert mode
+|-
+|{{plink|Icthlarin's shroud (tier 2)}}
+|500 completions of Normal/Expert mode
+|-
+|{{plink|Icthlarin's shroud (tier 3)}}
+|1000 completions of Normal/Expert mode
+|-
+|{{plink|Icthlarin's shroud (tier 4)}}
+|1500 completions of Normal/Expert mode
+|-
+|{{plink|Icthlarin's hood (tier 5)}}
+{{plink|Icthlarin's shroud (tier 5)}}
+|2000 completions of Normal/Expert mode
+|}
+
+===Raid Summary===
+[[File:Tombs of Amascut - Raid Summary interface.png|thumb|350px|The Raid Summary interface, where the raid party can review their performance. The gold star denotes the Most Valuable Player (MVP).]]
+At the end of the raid, players can review their performance in the raid by reading the scoreboard on the eastern side of the burial chamber, where they can view a summary of the raid, including details such as total damage dealt and received, number of deaths, and an honorary title.
+
+The list of possible titles given in the Raid Summary interface are as follows:
+{| class=wikitable
+!Title
+!Description
+|-
+|The Leech || Earn the least amount of contribution points in at least five rooms.
+|-
+|The Swimmer || Spent at least 30 seconds in Zebak's pool.
+|-
+|The Specialist || Used the most special attack energy.
+|-
+|The Picky Eater || Used the least food.
+|-
+|The Peasant || Finished the raid with the lowest value loadout.
+|-
+|The Showoff || Finished the raid with the highest value loadout.
+|-
+|The Tank || Took the most damage.
+|-
+|The Baller || Dropped more than 20 orbs during the Akkha fight.
+|-
+|The Entomophobe || Killed the most scarabs.
+|-
+|The Moth || Died to a light beam in Het's path.
+|-
+|The Carry || Had the highest overall damage.
+|-
+|The Anchor || Died the most.
+|-
+|The Glutton || Ate the most food.
+|-
+|The Sorcerer || Dealt the most magic damage.
+|-
+|The Archer || Dealt the most ranged damage.
+|-
+|The Brawler || Dealt the most melee damage.
+|-
+|The Clutch || Finished off the Wardens on their own.
+|}

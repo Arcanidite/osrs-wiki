@@ -1,0 +1,7 @@
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLine|name=Rune longsword|quantity=1|rarity=10/128}}
+{{DropsLine|name=Adamant platebody|quantity=1|rarity=9/128}}
+{{DropsLine|name=Adamant kiteshield|quantity=1|rarity=3/128}}
+{{DropsLine|name=Dragon med helm|quantity=1|rarity=1/128}}
+{{DropsTableBottom}}

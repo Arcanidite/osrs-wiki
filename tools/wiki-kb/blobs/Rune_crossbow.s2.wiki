@@ -1,0 +1,12 @@
+==Creation==
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 69
+|skill1boostable = Yes
+|skill1exp = 50
+|members = Yes
+|ticks = 2
+|mat1 = Runite crossbow (u)
+|mat2 = Crossbow string
+|output1 = Rune crossbow
+}}

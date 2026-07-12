@@ -1,0 +1,12 @@
+==Creation==
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 80
+|skill1boostable = Yes
+|skill1exp = 83.3
+|members = Yes
+|ticks = 2
+|mat1 = Magic shortbow (u)
+|mat2 = Bow string
+|output1 = Magic shortbow
+}}

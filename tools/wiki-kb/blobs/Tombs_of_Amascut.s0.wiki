@@ -1,0 +1,24 @@
+{{Dangerous|irs=yes|deathinvocations=yes}}
+{{HasStrategy}}
+{{Infobox Activity
+|name = Tombs of Amascut
+|image = [[File:Tombs of Amascut.png|300px]]
+|release = [[24 August]] [[2022]]
+|update = Tombs of Amascut
+|aka = Raids 3, ToA
+|type = Raid
+|members = Yes
+|location = [[Jaltevas Pyramid]]
+|players = 1-8
+|skills = [[Combat]], [[Mining]]
+|music = [[Tombs of Amascut#Music|See below]]
+|map = {{Map|x=3345|y=2725}}
+|leagueRegion = Desert
+}}
+The '''Tombs of Amascut''' is a [[raid]] set in the [[Kharidian Desert]], within the [[Jaltevas Pyramid]] at the [[necropolis]]. To participate in the raid, players will have to complete the [[Beneath Cursed Sands]] [[quest]].
+
+Despite the name of the raid, the tomb is in actuality that of the Pharaoh [[Osmumten]], where players must help him drive [[Amascut]] away from his tomb by freeing the lesser gods of the [[Menaphite Pantheon]] from her control and stopping her from acquiring the divine weapons found within that would allow her to ascend to [[god]]hood. 
+
+Up to eight players may attempt the raid.
+
+[[Ironman_Mode|Ironmen]] are eligible for rewards from the raid when completing it alongside other players. [[Group Ironman Mode|Group ironman players]] will lose their [[Group Ironman Mode#Prestige|prestige]] upon entering the raid with a player outside of their group.

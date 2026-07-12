@@ -1,0 +1,8 @@
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLine|name=Rune 2h sword|quantity=1|rarity=3/128|bucket=No}}
+{{DropsLine|name=Rune battleaxe|quantity=1|rarity=3/128|bucket=No}}
+{{DropsLine|name=Rune sq shield|quantity=1|rarity=2/128|bucket=No}}
+{{DropsLine|name=Dragon med helm|quantity=1|rarity=1/128|bucket=No}}
+{{DropsLine|name=Rune kiteshield|quantity=1|rarity=1/128|bucket=No}}
+{{DropsTableBottom}}

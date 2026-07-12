@@ -1,0 +1,10 @@
+==Charging and degradation==
+While the scythe can be used uncharged, it is drastically stronger by charging it; once charged, it gains +20 stab/crush, +50 slash attack bonus, +4 slash and +10 crush defence bonus and +25 strength bonus.
+
+In order to charge it, players must add at least one [[vial of blood]] and a set of 200 [[blood rune]]s to the [[vyre well]] next to the bank in [[Ver Sinhaza]]. The vials of blood can be brought in noted form. This can be done without completing any quests in the Darkmeyer series. Additionally, once [[Sins of the Father]] quest is completed, there is a [[vyre well]] outside the bank in [[Darkmeyer]]. 
+
+Each vial and 200 blood runes adds 100 charges to the scythe, with it being able to hold up to 20,000 charges (costing {{NoCoins|{{GEP|Blood rune|2}}+{{GEP|Vial of blood|0.01}}}} coins per attack, and a total of {{NoCoins|{{GEP|Vial of blood|200}}+{{GEP|Blood rune|40000}}}} to fully charge it with 40,000 [[blood rune]]s and 200 [[vial of blood|vials of blood]]). One charge is deducted per attack, as long as one of the hits deals damage. The hourly rate of using the scythe is {{NoCoins|({{GEP|Blood rune|2}}+{{GEP|Vial of blood|0.01}})*1200}} coins.  The fully charged scythe will last for 16.66 hours of continuous combat before reverting to its uncharged form.
+
+Once the charges are added to the scythe, they can be returned by using the scythe on the vyre wells in Ver Sinhaza should players decide to uncharge the scythe. Charges left will be rounded down at 100 hits per charge; for example, with 1,275 hits remaining, 1,200 charges will be deposited. These charges may then be withdrawn from the well to receive the blood runes and vials of blood back. Uncharging outside the well, however, will not return blood runes or vials of blood.
+
+In the event of a PvP death, if the scythe is not protected, all charges will be lost and the person who gets the scythe will not receive any blood runes or vials of blood.

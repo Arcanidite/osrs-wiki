@@ -1,0 +1,12 @@
+==Transportation==
+The quickest methods of reaching the necropolis are as follows:
+* Teleporting to Jaltevas via the [[Pharaoh's sceptre]]. This method requires having used the sceptre on the [[Obelisk (Necropolis)|obelisk]] north of the necropolis mine.
+* Teleporting via [[fairy ring]] code {{fairycode|AKP}}. This method requires level 62 [[Agility]].
+
+Slower methods:
+* Using the [[magic carpet]] from Shantay Pass to Pollnivneach, another carpet from the south side of Pollnivneach to Sophanem, and then walk south-east. This costs 400 coins without completion of the [[Rogue Trader]] miniquest, 200 coins after Rogue Trader, or free after completion of the [[Desert Hard Diary]].
+** You can use the [[Construction cape]] or [[Pollnivneach teleport]] to teleport to [[Pollnivneach]] and then run south to the carpet to Sophanem.
+* Teleport to Nardah and run south-west.
+
+=== Lobby ===
+The lobby features a mass system as well as a bank.

@@ -1,0 +1,6 @@
+==Transportation==
+As with all of Varlamore, the Fortis Colosseum requires completion of the quest [[Children of the Sun]]. There are three main methods for travelling to the Fortis Colosseum. These options, ordered from fast to slow, are:
+* Players can use the [[ring of dueling]] teleport to Fortis Colosseum. (requires 12,000 glory)
+* Players can take a [[Quetzal Transport System|Quetzal]] to Fortis Colosseum and walk east.
+* Players can use the [[Civitas illa Fortis Teleport]] requiring 54 Magic and completion of [[Twilight's Promise]] and walk south-east.
+* Players can [[Charter ship|charter]] a ship to [[Civitas illa Fortis]] and walk south-east.

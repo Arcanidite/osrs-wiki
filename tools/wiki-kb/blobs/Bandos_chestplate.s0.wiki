@@ -1,0 +1,24 @@
+{{External|rs}}
+{{Confuse|Bandos platebody}}
+{{Infobox Item
+|name = Bandos chestplate
+|image = [[File:Bandos chestplate.png]]
+|release = [[17 October]] [[2013]]
+|update = The God Wars Dungeon has been uncovered!
+|aka = BCP
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Drop
+|examine = A sturdy chestplate.
+|value = 290010
+|weight = 12.000
+|exchange = Yes
+|id = 11832
+|leagueRegion = Asgarnia
+}}
+[[File:Bandos chestplate detail.png|left|100px]]
+The '''Bandos chestplate''' is a part of the [[Bandos armour]] set, which requires 65 [[Defence]] to wear. It is dropped by [[General Graardor]] and his bodyguards in the [[God Wars Dungeon]]. The Bandos chestplate provides a +4 [[Strength#Strength bonus|Strength bonus]], and more defensive bonuses than comparable body armours such as the [[fighter torso]] and [[inquisitor's hauberk]]. Despite seemingly being made of metal, the Bandos chestplate does not interfere with [[Ava's devices]].

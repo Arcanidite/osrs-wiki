@@ -1,0 +1,9 @@
+===Unique Rewards (Corrupted Mode)===
+{{DropsTableHead|bucket=No}}
+{{DropsLineReward|name=Gauntlet cape|quantity=1|rarity=Always}}
+{{DropsLineReward|name=Crystal shard|quantity=7-12|rarity=Always}}
+{{DropsLineReward|name=Crystal weapon seed|quantity=1|rarity=1/50|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsLineReward|name=Crystal armour seed|quantity=1|rarity=1/50|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsLineReward|name=Enhanced crystal weapon seed|quantity=1|rarity=1/400|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsLineReward|name=Youngllef|quantity=1|rarity=1/800|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsTableBottom}}

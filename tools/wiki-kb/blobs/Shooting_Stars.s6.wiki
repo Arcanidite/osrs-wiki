@@ -1,0 +1,27 @@
+==Rewards==
+{{Main|Dusuri's Star Shop}}
+[[Stardust]] is obtained by mining the [[crashed star]]. Stardust is used as currency at [[Dusuri's Star Shop]] to purchase the [[celestial ring]] along with other rewards.
+
+{| class="wikitable align-center-1"
+|+Dusuri's Star Shop
+! colspan="2" |Reward
+!Price sold at
+!Price bought at
+|-
+|{{plinkt|Celestial ring#Uncharged|pic=Celestial ring (uncharged)|txt=Celestial ring (uncharged)}}
+| {{Currency|Stardust|2000}}
+|{{Currency|Stardust|1600}}
+|-
+|{{plinkt|Star fragment}}
+|{{Currency|Stardust|3000}}
+|{{Currency|Stardust|2400}}
+|-
+|{{plinkt|Bag full of gems#Stardust|pic=Bag full of gems (stardust)|txt=Bag full of gems}}
+| {{Currency|Stardust|300}} 
+|{{Currency|Stardust|240}}
+|-
+|{{plinkt|Soft clay pack#Stardust|pic=Soft clay pack|txt=Soft clay pack}}
+|{{Currency|Stardust|150}} 
+|{{Currency|Stardust|120}}
+|}
+Experience rates vary greatly based on level, the tier of pickaxe used, and time spent locating stars. If mining consistently with a [[Dragon pickaxe]] and 90+ mining, players can expect approximately 30,000 experience per hour.

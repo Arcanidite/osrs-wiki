@@ -1,0 +1,24 @@
+{{External|rs}}
+{{Infobox Item
+|name = Dragon boots
+|image = [[File:Dragon boots.png]]
+|release = [[17 October]] [[2013]]
+|update = The God Wars Dungeon has been uncovered!
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Drop
+|examine = These will protect my feet.
+|value = 20000
+|weight = 1.000
+|exchange = Yes
+|id = 11840
+|leagueRegion = Asgarnia,Wilderness
+}}
+[[File:Dragon boots detail.png|left|150px]]
+'''Dragon boots''' are [[melee]] footwear requiring 60 [[Defence]] to wear. Like most other [[Dragon equipment|dragon items]], they cannot be made using the [[Smithing]] skill.
+
+Dragon boots offer the third-highest [[strength bonus]] of any boots in the game, while also offering some of the best defensive stats available for the feet slot. Coupled with their affordable price, they are popular among players for all melee combat purposes, even after all other Dragon armour being used has been replaced.

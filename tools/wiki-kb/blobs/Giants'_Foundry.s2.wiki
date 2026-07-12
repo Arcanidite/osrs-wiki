@@ -1,0 +1,8 @@
+==Transportation==
+The Giants' Foundry is located in a cave beneath the [[Giants' Plateau]]. Players can get there by using:
+
+* Using [[Minigame Teleport]] through the spellbook or the [[Grouping]] tab to the Giants' Foundry
+* An [[amulet of glory]] teleport to the [[Al Kharid]] [[Al Kharid Palace|Palace]]
+* A [[ring of dueling]] teleport to the [[Emir's Arena]]
+* The [[gnome glider]] flight to Kar-Hewo
+* The [[Al Kharid gate|toll gate]] from [[Lumbridge]]

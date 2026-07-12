@@ -1,0 +1,58 @@
+==Rewards==
+{{Main|Ancient chest}}
+[[File:Chambers of Xeric - lootbeam alternating purple green.gif|thumb|230px|A player receives both a unique drop and a twisted kit.]]
+Depending on the points obtained in the raid, players have a chance to obtain a reward from the [[Ancient chest|Ancient Chest]] via the unique drop table. If the player does not roll into the unique drop table, they will obtain two rolls of standard loot instead (both a different loot), with their quantity depending on points obtained.
+
+Regardless of whether a unique drop was obtained, players may always additionally obtain the [[dark journal]] if they do not have it already, and the [[metamorphic dust]]/[[twisted ancestral colour kit]] for players completing a [[Chambers of Xeric/Challenge Mode|challenge mode]] raid if successfully rolled on.
+
+The beam of light above the chest will vary for the player depending on the loot obtained: by default, the light is white; if the player obtained an item from the unique drop table, it is purple; if the player obtained a metamorphic dust, it is turquoise; if the player obtained a twisted ancestral colour kit, it is green. If multiple such drops are obtained simultaneously, the light alternates between each appropriate colour.
+
+Players can find books during the raid.
+{| class="wikitable"
+|+
+!Book
+!Obtained via
+|-
+|{{plink|Creature keeper's journal}}
+|Searching the corpse of the [[creature keeper]] in the [[Corrupted scavenger]] room.
+|-
+|{{plink|Houndmaster's diary}}
+|Dropped by [[Muttadile]].
+|-
+|{{plink|Nistirio's manifesto}}
+|Dropped by [[Vasa Nistirio]].
+|-
+|{{plink|Tekton's journal}}
+|Dropped by [[Tekton]].
+|-
+|{{plink|Vanguard judgement}}
+|Dropped by [[Vanguard]].
+|-
+|{{plink|Transdimensional notes}}
+|Dropped by [[Vespula]].
+|-
+|{{plink|Dark journal}}
+|Found in the [[Ancient chest]] after defeating the [[Great Olm]].
+|}
+
+Players can earn Xerician capes through repeated completions of the Chambers of Xeric, claimed from [[Captain Rimor]].
+{| class="wikitable"
+|+
+!Accolade
+!Earned at
+|-
+|{{plink|Xeric's guard}}
+|100 completions of Challenge mode
+|-
+|{{plink|Xeric's warrior}}
+|500 completions of Challenge mode
+|-
+|{{plink|Xeric's sentinel}}
+|1000 completions of Challenge mode
+|-
+|{{plink|Xeric's general}}
+|1500 completions of Challenge mode
+|-
+|{{plink|Xeric's champion}}
+|2000 completions of Challenge mode
+|}

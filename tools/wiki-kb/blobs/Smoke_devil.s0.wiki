@@ -1,0 +1,61 @@
+{{External|rs}}
+{{Otheruses|the Slayer monster|the boss|Thermonuclear smoke devil|the superior variant|Nuclear smoke devil}}
+{{HasStrategy}}
+{{HasTask|Smoke devils}}
+{{Infobox Monster
+|name = Smoke devil
+|image = [[File:Smoke devil.png|250px]]
+|release = [[10 April]] [[2014]]
+|update = Easter & Slayer Updates
+|members = Yes
+|combat = 160
+|size = 1
+|examine = Stay away from smoke, kids.
+|xpbonus = 0
+|max hit = 20
+|aggressive = No
+|poisonous = No
+|attack style = [[Magical ranged]]
+|attack speed = 4
+|respawn = 7
+|slaylvl = 93
+|slayxp = 185
+|cat = Smoke Devils
+|assignedby = konar,nieve,duradel
+|hitpoints = 185
+|att = 140
+|str = 130
+|def = 275
+|mage = 1
+|range = 195
+|attbns = 0
+|strbns = 0
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 600
+|dlight = 44
+|dstandard = 44
+|dheavy = 44
+|elementalweaknesstype = Air
+|elementalweaknesspercent = 30
+|poisonresistance = 100
+|venomresistance = 100
+|immunecannon = No
+|immunethrall = No
+|id = 498
+|leagueRegion = Kandarin
+}}
+[[File:Smoke devil icon.png|left]]
+The '''smoke devil''' is a stronger variant of the [[dust devil]], and can be found exclusively in the [[Smoke Devil Dungeon]]. These require a minimum of 93 [[Slayer]] and an active Slayer task to be harmed. A [[slayer helmet]], [[slayer helmet (i)]], or a [[facemask]] is required to kill these. This monster, along with its [[Thermonuclear smoke devil|boss variant]] and [[Nuclear smoke devil|superior variant]], are the only monsters to drop the [[occult necklace]].  However, only the [[Thermonuclear smoke devil|boss variant]] drops the [[Smoke battlestaff]].
+
+Smoke devils reside in a [[multi-combat area]], so players can [[burst]]/[[barrage]] or use [[chinchompas]] on them, though only the former is particularly effective. Given the fact that the smoke devil chamber is very large, bringing a [[Dwarf multicannon|cannon]] is recommended to get their attention. The various remains that litter the chamber act as "walls", so smoke devils can be stacked on top of one another for bursting/barraging quickly by hiding behind a pile of remains.
+[[File:Smoke Devil Dungeon cannon spot.png|left|thumb|Cannon location in the dungeon.]]
+
+When fighting them, using [[Protect from Missiles]] will negate their attacks.
+
+Although smoke devils are similar to dust devils, they do '''not''' count for dust devil tasks.

@@ -1,0 +1,23 @@
+{{External|rs|dw=Fight Cave}}
+{{Safe activity}}
+{{HasStrategy}}
+{{Otheruses|the minigame in which players must defeat waves of TzHaar|the minigame in which players fight against each other|TzHaar Fight Pit}}
+{{Infobox Activity
+|name = TzHaar Fight Cave
+|image = [[File:TzHaar Fight Cave.png|300px]]
+|release = [[4 October]] [[2005]]
+|update = TzHaar Fight Caves
+|type = Minigame
+|members = Yes
+|location = [[Mor Ul Rek]]
+|players = 1
+|currency = [[Tokkul]]
+|tutorial = No
+|music = [[TzHaar!]]
+|map = {{Map|name=TzHaar Fight Cave|x=2439|y=5172|zoom=3|mapID=23}}
+|leagueRegion = Karamja
+}}
+The '''TzHaar Fight Cave''', commonly referred to as the '''Fight Caves''', is a combat minigame in the outer area of [[Mor Ul Rek]], located within the [[Karamja]] volcano. Fully completing it is considered an early major challenge players will take on in Old School Runescape. 
+It involves single-handedly fighting off 63 waves of TzHaar creatures, including a boss fight against one of the strongest monsters in the game: [[TzTok-Jad]]. Players will be rewarded with [[Tokkul]] for playing this minigame, and if they manage to defeat TzTok-Jad, they will be rewarded with the [[fire cape]].
+
+Up until this update, the [[Kalphite Queen]] had been the [[strongest monster]] in ''RuneScape''. However, the introduction of the TzHaar Fight Cave introduced 2 new monsters, the level-360 [[Ket-Zek]] and the level-702 [[TzTok-Jad]], both of which are higher in level, and more powerful.

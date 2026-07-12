@@ -1,0 +1,67 @@
+==Rewards==
+{{Main|Monumental chest}}
+[[File:Verzik's treasure vault.png|thumb|300px|Verzik Vitur's treasure vault.]]
+Upon defeating Verzik Vitur, a trapdoor will open under her throne, leading to her treasure vault.
+
+Inside will be up to five large chests based on the amount of players in the team, with each player being able to loot one chest. An arrow will point to which chest is for that player to search.
+
+If a unique reward is obtained, a purple aura will emit from the chest, much like how the ray of light turns purple for the player who obtains a unique reward in the [[Chambers of Xeric]]. If no unique reward is found, the chest will contain three rolls from the common drop table. 
+
+The unique rewards that players can obtain from the chest include:
+* {{plink|Avernic defender hilt}}, used to upgrade the [[dragon defender]]
+* Pieces of the [[Justiciar armour]]:
+** {{plink|Justiciar faceguard}}
+** {{plink|Justiciar chestguard}}
+** {{plink|Justiciar legguards}}
+* {{plink|Ghrazi rapier}}
+* {{plink|Sanguinesti staff}}
+* {{plink|Scythe of vitur}}
+
+[[Vials of blood]] are also a common drop obtainable in addition to the above. They can be used to charge the scythe of Vitur and create [[bastion potion|bastion]] and [[battlemage potion]]s.
+
+Players can find books during the raid, as well as on the [[grand bookshelves]] in the treasure vault.
+{| class="wikitable"
+|+
+!Book
+!Dropped by
+|-
+|{{plink|Serafina's diary|txt=Serafina's Diary}}
+|[[The Maiden of Sugadinti]]
+|-
+|{{plink|The butcher|txt=The Butcher}}
+|[[Pestilent Bloat]]
+|-
+|{{plink|Arachnids of vampyrium|txt=Arachnids of Vampyrium}}
+|[[Nylocas Vasilias]]
+|-
+|{{plink|The shadow realm|txt=The Shadow Realm}}
+|[[Sotetseg]]
+|-
+|{{plink|The wild hunt|txt=The Wild Hunt}}
+|[[Xarpus]]
+|-
+|{{plink|Verzik vitur - patient record|txt=Verzik Vitur - Patient Record}}
+|[[Verzik Vitur]]
+|}
+
+Players can earn Sinhaza shrouds through repeated completions of the Theatre, claimed from the [[Mysterious Stranger]].
+{| class="wikitable"
+|+
+!Accolade
+!Earned at
+|-
+|{{plink|Sinhaza shroud tier 1}}
+|100 completions of Normal/Hard mode
+|-
+|{{plink|Sinhaza shroud tier 2}}
+|500 completions of Normal/Hard mode
+|-
+|{{plink|Sinhaza shroud tier 3}}
+|1000 completions of Normal/Hard mode
+|-
+|{{plink|Sinhaza shroud tier 4}}
+|1500 completions of Normal/Hard mode
+|-
+|{{plink|Sinhaza shroud tier 5}}
+|2000 completions of Normal/Hard mode
+|}

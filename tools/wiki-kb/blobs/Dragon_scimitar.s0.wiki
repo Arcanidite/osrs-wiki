@@ -1,0 +1,28 @@
+{{External|rs}}
+{{Infobox Item
+|name = Dragon scimitar
+|image = [[File:Dragon scimitar.png]]
+|release = [[29 March]] [[2005]]
+|update = Weapons Update
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A vicious, curved sword.
+|value = 100000
+|weight = 1.814
+|exchange = Yes
+|id = 4587
+|leagueRegion = kandarin
+}}
+[[File:Dragon scimitar detail.png|left|140px]]
+The '''dragon scimitar''' is the strongest [[scimitar]] available in ''[[Old School RuneScape]]''. It can only be wielded by players who have 60 [[Attack]] and have completed the [[Monkey Madness I]] quest.
+
+It may be purchased from [[Daga]] on [[Ape Atoll]] for 100,000 coins. A [[monkeyspeak amulet]] does not need to be worn, as players can just right-click 'Trade' on Daga; however, you still must be in [[Greegree|monkey form]], unless you have completed [[Monkey Madness II]] after which the monkey form is no longer required. Players who have freed [[King Awowogei]] in [[Recipe for Disaster]] can easily reach [[Marim]] through the [[Ape Atoll Teleport (standard)|Ape Atoll Teleport]] spell (requires 64 [[Magic]]) to access [[Daga's Scimitar Smithy|Daga's shop]] on Ape Atoll quicker. The scimitar is also a rare drop from the [[Wilderness]] boss [[Scorpia]] or the [[Zombie Pirate's Locker]].
+
+As with most [[dragon equipment]], the dragon scimitar '''cannot''' be made from raw materials using the [[Smithing]] skill.
+
+One good alternative is the [[Arkan blade]], which has very similar stats, the same 4-tick attack speed, and a great special attack, and is earned as a reward for completing [[The Final Dawn]] quest. This saves players the 100,000 coins used for purchasing the Dragon Scimitar.

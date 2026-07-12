@@ -1,0 +1,17 @@
+==Location==
+{{Map|mtype=pin|3281,6058|mapID=29|align=right|caption=The location of the teleport platform to Zalcano's lair}}
+{{LocTableHead}}
+{{LocLine
+|name = Zalcano
+|location = Volcanic caverns beneath [[Prifddinas]]
+|levels = 336
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:3031,y:6048
+|mtype = pin
+|leagueRegion = Tirannwn
+}}
+{{LocTableBottom}}
+
+The fastest route to travel to Zalcano is by using a [[teleport crystal]] or its [[Eternal teleport crystal|eternal counterpart]]. Other ways include using a spirit tree to [[Prifddinas]] or a [[teleport to house]] with your house location in Prifddinas or a [[scroll of redirection]] on a [[teleport to house (tablet)|tablet]].

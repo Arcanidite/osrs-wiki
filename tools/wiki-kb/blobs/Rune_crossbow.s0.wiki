@@ -1,0 +1,29 @@
+{{External|rs}}
+{{Infobox Item
+|name = Rune crossbow
+|image = [[File:Rune crossbow.png]]
+|release = [[31 July]] [[2006]]
+|update = Crossbows
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A runite crossbow.
+|value = 16200
+|weight = 6.000
+|exchange = Yes
+|id = 9185
+}}
+[[File:Rune crossbow detail.png|left|120px]]
+The '''rune crossbow''' is a [[crossbow (weapon)|crossbow]] that is stronger than the [[adamant crossbow]] but weaker than the [[dragon crossbow]]. It requires a [[Ranged]] level of 61 to wield, and can fire up to and including [[runite bolts]]. It is one-handed so it can be equipped alongside a [[shield]], such as an [[anti-dragon shield]] or [[god book]]. It has an attack range of 7 increased to 9 with longrange.
+
+Rune crossbows can be made through the [[Fletching]] skill at level 69; a player must first cut a [[yew stock]] for the crossbow from [[yew logs]], granting 50 Fletching [[experience]]. Then, a player must add [[runite limbs]] to the stock with a hammer in their inventory, granting 100 experience and making an [[Runite crossbow (u)|unstrung rune crossbow]]. Finally, a player must string the crossbow with a [[crossbow string]], granting 50 experience. Creating a rune crossbow from raw materials grants 200 Fletching experience in total, and doing so within Witchaven and/or Yanille is a task for the [[elite Ardougne Diary]].
+
+[[Ironmen]] may obtain a rune crossbow by defeating the [[crazy archaeologist]]. The rune crossbow is commonly used among ironmen and low-level players for Slayer tasks, and for [[TzHaar Fight Cave]], due to the ease of obtaining [[broad bolts]] and the ability to equip a shield. For Slayer tasks, a [[magic shortbow]] with [[Rune arrows|rune]] or [[Amethyst arrows|amethyst]] arrows is often a stronger weapon.
+
+The rune crossbow is commonly used even for high-level content due to its ability to fire [[Ruby bolts (e)|ruby]] and [[Diamond bolts (e)|diamond bolts]]. The [[Dragon crossbow|dragon]], [[Armadyl crossbow|Armadyl]], [[Zaryte crossbow|Zaryte]], and [[Dragon hunter crossbow|dragon hunter]] crossbows are stronger alternatives. 
+
+Using a [[Shattered relics variety ornament kit]] on the crossbow will change its appearance into that of an [[rune crossbow (or)]].

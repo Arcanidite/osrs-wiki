@@ -1,0 +1,17 @@
+{{HasStrategy}}
+{{Has calculator|Calculator:Smithing/Giants' Foundry}}
+{{Infobox Activity
+|name = Giants' Foundry
+|image = [[File:Giants' Foundry.png|300px]]
+|release = [[8 June]] [[2022]]
+|update = Giants' Foundry
+|type = Minigame
+|members = Yes
+|location = [[Giants' Plateau]]
+|skills = [[Smithing]]
+|music = [[The Foundry]]
+|map = {{Map|x=3360|y=3151|plane=0|r=4|mapID=0|mtype=pin}}
+|leagueRegion = Desert
+}}
+[[File:Giants' Foundry logo.png|left]]
+'''Giants' Foundry''' is a [[Smithing]] [[minigame]] in which players are tasked with creating giant weapons for [[Kovac]]. To participate in the minigame, players must complete the [[Sleeping Giants]] quest.

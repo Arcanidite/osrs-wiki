@@ -1,0 +1,39 @@
+==Rewards==
+{{main|Giants' Foundry Reward Shop}}
+Players can gain [[Foundry Reputation]] by completing commissions. Reputation is awarded equal to the final quality for the sword, calculated by adding the metal and mould scores and subtracting 5 for each mistake. It can be spent on additional moulds for each preform section, allowing for a higher base mould score at the beginning of forging, or in the Reward Shop.
+
+In addition, a gold reward based on the quality of the sword is also received. The gold reward is calculated as double the experience reward. Because of this, it is possible for forging swords to be profitable, especially using steel bars or a 14/14 steel and mithril blend, assuming no mistakes and optimal moulds are used.
+
+{| class="wikitable sortable lighttable align-left-2" style="text-align:center;"
+|+Giants Foundry Item Rewards
+! colspan="2" |Item
+!Foundry Reputation
+|-
+|{{plinkt|Double ammo mould|pic=Double ammo mould}}<ref group="n">Can only be purchased if the player has completed the [[Dwarf Cannon]] quest.</ref>
+|2,000
+|-
+|{{plinkt|Kovac's grog}}
+|300
+|-
+|{{plinkt|Smithing catalyst}}
+|15
+|-
+|{{plinkt|Ore pack (Giants' Foundry)|txt=Ore pack}}
+|200
+|-
+|{{plinkt|Smiths tunic}}
+|4,000
+|-
+|{{plinkt|Smiths trousers}}
+|4,000
+|-
+|{{plinkt|Smiths boots}}
+|3,500
+|-
+|{{plinkt|Smiths gloves}}<ref group="n">Can be used on a pair of [[ice gloves]] to create [[smiths gloves (i)]], which combine the effects of both.</ref>
+|3,500
+|-
+|{{plinkt|Colossal blade}}
+|5,000
+|}
+<references group="n" />

@@ -1,0 +1,55 @@
+{{Dangerous}}
+{{HasStrategy}}
+{{Infobox Monster
+|version1 = Armoured
+|version2 = Weakened
+|name = Zalcano
+|image1 = [[File:Zalcano.png|200px]]
+|image2 = [[File:Zalcano (weakened).png|280px]]
+|release = [[25 July]] [[2019]]
+|update = Song of the Elves
+|members = Yes
+|combat = 336
+|size = 5
+|examine = A former demon of Zamorak that has been turned to stone.
+|xpbonus = 
+|max hit1 = 53
+|max hit2 = N/A
+|aggressive = Yes
+|poisonous = No
+|attack style1 = Various
+|attack style2 = N/A
+|attack speed1 = 5
+|attack speed2 = N/A
+|respawn1 = 37
+|respawn2 = 
+|hitpoints1 = 300
+|hitpoints2 = 1000
+|att = 1
+|str = 1
+|def = 1
+|mage = 1
+|range = 1
+|attbns = 0
+|strbns = 0
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|dlight = 0
+|dstandard = 0
+|dheavy = 0
+|poisonresistance = 100
+|venomresistance = 100
+|id1 = 9049
+|id2 = 9050
+}}
+'''Zalcano''' is a [[demon]] imprisoned beneath [[Prifddinas]] that is fought using skilling rather than conventional combat. Being immune to traditional combat damage, players must use their [[Mining]], [[Smithing]], and [[Runecraft]] skills to create [[imbued tephra]] capable of destroying her stone armour. Once her armour has been destroyed, they must damage her by mining her with a [[pickaxe]].
+
+Zalcano's prison can be accessed from Prifddinas' [[Prifddinas#Trahaearn district|Trahaearn district]] via a [[Teleport_Platform#Zalcano_entrance|teleport plaform]] just west of the south-eastern [[bank]]. As Prifddinas requires completion of [[Song of the Elves]] to access, Zalcano requires a minimum of 70 [[Mining]] and [[Smithing]] to be fought, though higher levels in Mining, Smithing, and Runecraft will be advantageous, as well as higher [[Hitpoints]] to withstand her various attacks. All of Zalcano's attacks are [[typeless]], meaning that protection prayers cannot be used to reduce their chance of taking damage or the damage itself.
+
+[[Ironman_Mode|Ironmen]] are eligible for rewards from Zalcano when defeating it alongside other players.

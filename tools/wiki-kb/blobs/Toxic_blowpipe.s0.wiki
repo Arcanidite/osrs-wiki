@@ -1,0 +1,47 @@
+{{Infobox Item
+|defver = 2
+|version1 = Empty
+|version2 = Charged
+|name1 = Toxic blowpipe (empty)
+|name2 = Toxic blowpipe
+|image1 = [[File:Toxic blowpipe (empty).png]]
+|image2 = [[File:Toxic blowpipe.png]]
+|release = [[8 January]] [[2015]]
+|update = Zulrah - The Solo Snake Boss
+|aka = Bp, Blowpipe
+|members = Yes
+|quest = No
+|tradeable1 = Yes
+|tradeable2 = No
+|equipable = Yes
+|stackable = No
+|noteable1 = Yes
+|noteable2 = No
+|options1 = Dismantle, Drop
+|options2 = Wield, Check, Unload, Uncharge
+|wornoptions1 = None
+|wornoptions2 = Check
+|destroy1 = N/A
+|destroy2 = ''If you uncharge the blowpipe, all scales and darts will fall out.''
+|examine = Fires darts while coating them with venom.
+|value = 120000
+|weight1 = 0.300
+|weight2 = 0.500
+|exchange1 = Yes
+|exchange2 = No
+|id1 = 12924
+|id2 = 12926
+}}
+{{Synced switch
+|version1 = [[File:Toxic blowpipe (empty) detail.png|left|170px]]
+|version2 = [[File:Toxic blowpipe detail.png|left|170px]]
+}}
+The '''toxic blowpipe''' is a [[blowpipe]] that requires 75 [[Ranged]] to wield. It can be made by using a [[chisel]] on a [[tanzanite fang]], which requires 78 [[Fletching]]. Players using the blowpipe have a 25% chance of inflicting [[venom]] on their opponent with attacks or manually-cast combat spells. However, if the opponent is an NPC and the [[serpentine helm]] is worn in conjunction with the blowpipe, there is a 100% chance of envenoming them.
+
+The base [[attack speed]] of the toxic blowpipe varies; in [[player versus monster]] encounters, its attack speed is '''3''', or equal to darts. During [[player versus player]] combat, its attack speed is '''4''', or equal to a [[Shortbow (weapon)|shortbow]]. In addition, its [[attack range]] is '''+2''' higher than that of throwing darts, at '''5''' by default. Longrange increases attack range by 2.
+
+If the blowpipe is not [[Protect Item|protected]] upon death, all scale and dart charges will appear on the floor alongside the blowpipe. If the blowpipe IS protected upon death, ALL scale and dart charges will be maintained when you respawn. This makes it an effective weapon for ranging in the [[Wilderness]] as the weapon and the ammo is contained in one high-value item slot, being very effective at the [[Revenant Caves]] for those who are not [[Skull (status)|skulled]]. The blowpipe is only tradeable when uncharged (empty).
+
+Players can dismantle an uncharged blowpipe to receive 20,000 [[Zulrah's scales]], resulting in a loss of {{NoCoins|{{GEP|Zulrah's scales|20000}}-{{GEP|Toxic blowpipe (empty)}}|c}}.
+
+Players can toggle whether picked up ammunition is automatically reloaded into the blowpipe or remains in the inventory by talking to the [[Ranged combat tutor]] or by toggling the "ammo-picking behaviour" checkbox in the in-game settings.

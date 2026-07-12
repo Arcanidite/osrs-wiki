@@ -1,0 +1,3 @@
+==Transportation==
+*Using the "TzHaar Fight Pit" [[Minigame Teleport]].
+*Using the {{Fairycode|BLP}} fairy ring and running north.

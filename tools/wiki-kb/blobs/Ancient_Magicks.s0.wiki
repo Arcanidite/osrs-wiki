@@ -1,0 +1,7 @@
+{{External|rs}}
+{{redirect|Ancients|other uses|Ancient}}
+[[File:Ancient spells.png|frame|right|The Ancient Magicks spellbook.]]
+[[File:Ancient spellbook.png|left|Ancient Magicks spellbook icon]]
+'''Ancient Magicks''' (also known as '''Ancients''') are a series of [[Magic]] spells unlocked upon completion of the quest [[Desert Treasure I]]. Unlike the [[Lunar spellbook]], which primarily focuses on [[utility spells]], and both the [[standard spellbook]] and the [[Arceuus spellbook]], which feature a mixture of [[combat spells|combat]] and utility spells, the Ancient Magicks is significantly combat-oriented, including some of the most powerful combat spells in the game.
+
+Having far fewer spells than the other spellbooks, the Ancient Magicks only contains 16 combat spells and 9 [[teleport]]s. Ancient Magicks spells require multiples of expensive runes such as [[Death rune|death]] and [[blood rune]]s. Owing to their power (a minimum of 50 Magic is needed to even access the spellbook), Ancient Magick spells are popular in [[player-versus-player]] activities.

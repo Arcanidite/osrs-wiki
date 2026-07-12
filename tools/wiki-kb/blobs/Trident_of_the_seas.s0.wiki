@@ -1,0 +1,56 @@
+{{Infobox Item
+|defver = 3
+|version1 = Uncharged
+|version2 = Partially charged
+|version3 = Charged
+|name1 = Uncharged trident
+|name2 = Trident of the seas
+|name3 = Trident of the seas (full)
+|image1 = [[File:Uncharged trident.png]]
+|image2 = [[File:Trident of the seas.png]]
+|image3 = [[File:Trident of the seas (full).png]]
+|release = [[30 January]] [[2014]]
+|update = Release the Kraken!
+|members = Yes
+|quest = No
+|tradeable1 = Yes
+|tradeable2 = No
+|tradeable3 = Yes
+|equipable = Yes
+|stackable = No
+|noteable1 = Yes
+|noteable2 = No
+|noteable3 = Yes
+|options1 = Wield, Check, Drop
+|options2 = Wield, Check, Uncharge, Drop
+|options3 = Wield, Check, Uncharge, Drop
+|wornoptions = Check
+|examine1 = It needs to be charged with death runes, chaos runes, fire runes and coins.
+|examine2 = A weapon from the deep.
+|examine3 = A weapon from the deep.
+|value1 = 68000
+|value2 = 68500
+|value3 = 69000
+|weight = 1.814
+|exchange1 = Yes
+|exchange2 = No
+|exchange3 = Yes
+|id1 = 11908
+|id2 = 11907
+|id3 = 11905
+|leagueRegion = Kandarin,Tirannwn
+}}
+{{Synced switch
+|version1 = [[File:Uncharged trident detail.png|left|150x150px]]
+|version2 = [[File:Trident of the seas detail.png|left|150px]]
+|version3 = [[File:Trident of the seas (full) detail.png|left|150x150px]]
+}}
+The '''trident of the seas''' is a one-handed [[powered staff]] requiring 75 [[Magic]] to wield. Once charged with runes and coins, it can be used to attack with a built-in magic spell regardless of the player’s current [[spellbook]].
+
+It is available as a task-only drop from [[cave kraken]]s (or the [[kraken]] boss) with level 87 [[Slayer]]; normal cave krakens can drop an uncharged trident, whereas the kraken boss can drop a fully charged one. Similar to [[Barrows equipment]], the trident is only tradeable when either uncharged or fully charged.
+
+The trident of the seas has the same effect in [[drift net fishing]] as the [[merfolk trident]],{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1148163991405043713|date=8 July 2019|archiveurl=https://web.archive.org/save/https://twitter.com/JagexAsh/status/1148163991405043713|archivedate=26 August 2019|quote=[Does the trident of the seas have the same effect in driftnet fishing as the merfolk trident?] Yes.}} though it does not have the ability to hold [[pufferfish]] charges (convenient for breathing [[underwater]]).
+
+The staff's charge cannot be used against another player in dangerous PvP, only safe minigames.
+
+[[File:Trident of the seas spell.gif|thumb|250px|A player using the trident of the sea's built in spell.]]

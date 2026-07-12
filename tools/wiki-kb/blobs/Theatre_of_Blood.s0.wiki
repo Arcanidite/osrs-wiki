@@ -1,0 +1,26 @@
+{{Dangerous|irs=yes|tob=yes}}
+{{HasStrategy}}
+{{Infobox Activity
+|name = Theatre of Blood
+|image = [[File:Theatre of Blood logo.png|250px]]
+|release = [[7 June]] [[2018]]
+|update = The Theatre of Blood
+|aka = Raids 2, ToB
+|type = Raid
+|members = Yes
+|location = [[Ver Sinhaza]]
+|players = 1-5
+|skills = [[Combat]]
+|currency = None
+|tutorial = No
+|music = [[Theatre of Blood#Music|See below]]
+|map = {{Map|name=Theatre of Blood|x=3663|y=3219|zoom=2}}
+|leagueRegion = Morytania
+}}
+The '''Theatre of Blood''' is a [[raid]] located beneath the castle of [[Ver Sinhaza]]. It is a large arena used by the ruling [[vampyre]]s to host blood sports. The only hard requirement to participate in the raid is the completion of the [[Priest in Peril]] quest to be able to access [[Morytania]]. The raid is featured prominently in the quest [[A Night at the Theatre]] and also plays a part in [[The Blood Moon Rises]].
+
+Here, the citizens of [[Meiyerditch]] are encouraged to go to the theatre and fight against the various experiments and abominations contained within, with the promise of freedom from the [[blood tithe]]s and the right to leave [[Morytania]] should they succeed. The reward is revealed to be a ruse as the vampyres are unwilling to let go of their primary food source.
+
+While the theatre is only open to citizens of [[Meiyerditch]], this rule is rarely enforced. The vampyres are more entertained by outsiders than the citizens themselves, seeing as these are better prepared compared to the civilians who are inexperienced and poorly equipped. Following the completion of [[The Blood Moon Rises]], the rule is officially abandoned and the Theatre is rebranded as a proving ground for the strongest warriors from across [[Gielinor]] to test themselves in. 
+
+[[Ironman_Mode|Ironmen]] are eligible for rewards from the raid when completing it alongside other players. [[Group Ironman Mode|Group ironman players]] will lose their [[Group Ironman Mode#Prestige|prestige]] upon entering the raid with a player outside of their group.

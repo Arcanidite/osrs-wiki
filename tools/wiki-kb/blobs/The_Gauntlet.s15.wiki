@@ -1,0 +1,32 @@
+==Loot table==
+{{Main|Reward Chest (The Gauntlet)}}
+{{Listen
+|title = Gauntlet completed
+|align = right
+|filename = Clearing the Gauntlet.ogg
+|desc = The jingle that plays upon completing the Gauntlet.}}
+
+Upon completing The Gauntlet's challenge, players will receive two rolls on the regular loot table, several [[crystal shard]]s and a roll for the unique rewards. For more information on the loot table, visit the [[Reward Chest (The Gauntlet)|Reward Chest]]'s page.
+
+Upon completion of the Corrupted challenge, players will receive three rolls on an upgraded loot table, several crystal shards and a roll for the unique rewards with a higher chance of success.
+
+Upon failing the challenge, players might still get rewarded with some lower value loot.
+
+===Unique Rewards (Normal Mode)===
+{{DropsTableHead|bucket=No}}
+{{DropsLineReward|name=Crystal shard|quantity=5-9|rarity=Always}}
+{{DropsLineReward|name=Crystal weapon seed|quantity=1|rarity=1/120|raritynotes={{CiteTwitter|author=Mod Lenny|url=https://twitter.com/JagexLenny/status/1187713588653412355|date=25 October 2019|archiveurl=https://reldo.runescape.wiki/i/27963364|archivedate=07 April 2026|name=Drop Tables}}}}
+{{DropsLineReward|name=Crystal armour seed|quantity=1|rarity=1/120|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsLineReward|name=Enhanced crystal weapon seed|quantity=1|rarity=1/2000|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsLineReward|name=Youngllef|quantity=1|rarity=1/2000|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsTableBottom}}
+
+===Unique Rewards (Corrupted Mode)===
+{{DropsTableHead|bucket=No}}
+{{DropsLineReward|name=Gauntlet cape|quantity=1|rarity=Always}}
+{{DropsLineReward|name=Crystal shard|quantity=7-12|rarity=Always}}
+{{DropsLineReward|name=Crystal weapon seed|quantity=1|rarity=1/50|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsLineReward|name=Crystal armour seed|quantity=1|rarity=1/50|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsLineReward|name=Enhanced crystal weapon seed|quantity=1|rarity=1/400|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsLineReward|name=Youngllef|quantity=1|rarity=1/800|raritynotes={{NamedRef|Drop Tables}}}}
+{{DropsTableBottom}}
