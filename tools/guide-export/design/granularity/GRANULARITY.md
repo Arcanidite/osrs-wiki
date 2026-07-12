@@ -307,3 +307,19 @@ labels only, and every item keeps the two-way done/uncheck state.
 **Accuracy bar.** A line ships only when the wiki grounds it (tile, option text, interface
 behavior). Ungrounded → the step stays at atom grain with a queued research item; honest
 degradation over invented precision.
+
+### 7b. Cache-id binding + simulated verification (no guessing, no live-game setup)
+
+Every action line disambiguates its target by **RuneLite cache id** — item id / object id /
+npc id (+ model/interface where relevant) — displayed exactly as RuneLite renders it
+(our icon blob store already serves item icons by id; the same lazy-blob pattern extends
+to NPC/object imagery). Prose names are for narration; the id is the truth. Sources:
+the wiki's own infobox templates carry ids ({{Infobox Item|id=...}} — kept by --strip
+deliberately), and the prior-spike datasets (NPCList/items-complete) cross-check them.
+
+Verification loop: granular display claims (highlight targets, interface/widget behavior,
+what the user would see at step N) are validated against the **offline rsprot/rsprox test
+server** — simulating the client state for any progression point — never by hand-setting
+scenarios on a live account (slow, risky, one-shot capture). The plugin lane (Lane 4+)
+gates its rendering work on this harness. Live client stays untouched per the standing
+hard rules.
