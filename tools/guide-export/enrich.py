@@ -48,6 +48,64 @@ def skill_cond(skill, level):
     return {"type": "SKILL", "skill": SKILL_ENUM.get(skill, skill.upper()), "level": int(level)}
 
 
+# XP curve — ported verbatim from assets/js/world/xp.js (same anchors: 83xp->2,
+# 13,034,431xp->99). quest-chain fix: topo_order/phased_steps previously tracked
+# only trained skill FLOORS (state[skill] via grants), never quest reward XP —
+# invisible on routes with few quest-to-quest chains (P2P/corpus), but the real
+# router (graph.js effectiveLevel) DOES fold quest XP into effective skill level,
+# so a route that only becomes satisfiable through that folding (quest-progression,
+# where reqs.quests chains run deep) got stuck mid-walk and fell back to an
+# unordered dump of the remainder. _effective_lvl below re-derives the same fold
+# these three re-simulation passes need to stay in fidelity parity with the planner.
+_MAX_LEVEL = 99
+
+
+def _build_xp_table():
+    table = [0, 0]
+    points = 0
+    for lvl in range(1, _MAX_LEVEL):
+        points += int(lvl + 300 * (2 ** (lvl / 7)))
+        table.append(int(points / 4))
+    return table
+
+
+_XP_TABLE = _build_xp_table()
+
+
+def _xp_for_level(level):
+    return _XP_TABLE[max(1, min(_MAX_LEVEL, int(level)))]
+
+
+def _level_for_xp(xp):
+    lvl = 1
+    while lvl < _MAX_LEVEL and xp >= _XP_TABLE[lvl + 1]:
+        lvl += 1
+    return lvl
+
+
+def _make_effective_lvl(state, lvl):
+    """Return a fn(skill_key) -> level, folding accumulated state['xp:<skill>']
+    on top of the trained floor lvl(skill_key), mirroring model.js effectiveLevel."""
+    def effective(k):
+        base = lvl(k)
+        xp = state.get(f"xp:{k}", 0)
+        if not xp:
+            return base
+        eff = _level_for_xp(_xp_for_level(base) + xp)
+        return eff if eff > base else base
+    return effective
+
+
+def _accumulate_quest_xp(state, step):
+    """Fold a completed quest step's reward XP into state['xp:<skill>'] (additive,
+    same accumulator semantics as graph.js's 'add' cmp / model.js syncQualEdges)."""
+    if not _is_quest(step):
+        return
+    for sk, amt in (step.get("xp") or {}).items():
+        if isinstance(amt, (int, float)) and amt > 0 and sk in SKILL_ENUM:
+            state[f"xp:{sk}"] = state.get(f"xp:{sk}", 0) + amt
+
+
 # S3 — phase_name(): sole author of phase strings in this pipeline.
 # JS planner emits zero phase strings; only enrich.py produces them via this function.
 def phase_name(kind, label):
@@ -67,7 +125,7 @@ def phase_name(kind, label):
     return label  # fallback: pass-through
 
 
-def topo_order(steps):
+def topo_order(steps, xp_fold=False):
     """Valid play order: emit a step once its skill reqs, tag reqs AND quest deps
     are met. Produces/grants applied additively (local dict only — ordering guard,
     not planner state).
@@ -77,9 +135,22 @@ def topo_order(steps):
     reqs.quests AND location.quest_gate are enforced here too — this is what makes
     topo the real dep guard after hub_batches reorders a quest cluster (S7); on
     the pre-Lane-3 input (greedy's own order) this is always already satisfied, a
-    no-op, since greedy itself never emits a gated quest before its gate."""
+    no-op, since greedy itself never emits a gated quest before its gate.
+
+    quest-chain fix — xp_fold (default False, OFF): when a route's inter-quest
+    reqs.quests chains run deep (quest-progression), a step's real playability
+    depends on quest-reward XP folded into its effective skill level (graph.js
+    effectiveLevel), same as the live planner — without that fold this re-
+    simulation can get stuck (no remaining step's plain skill floor ever clears)
+    and falls back to an UNORDERED dump of the rest, silently losing the very
+    quest-order guarantee this function exists for. Folding XP unconditionally
+    changes P2P/corpus phase placement too (verified against the pinned
+    fixtures — same total steps, different pass each step is admitted on), so
+    it stays opt-in: only the quest-progression payload (plan-quests.mjs) sets
+    goal.xp_fold, keeping route-p2p.json/route-corpus.json byte-identical."""
     state, remaining, ordered = {}, list(steps), []
     lvl = lambda k: state.get(k, 1)
+    eff = _make_effective_lvl(state, lvl) if xp_fold else lvl
     has_tag = lambda t: state.get(f"tag:{t}", False)
     quest_done = lambda qid: state.get(f"quest:{qid}", False)
     while remaining:
@@ -89,7 +160,7 @@ def topo_order(steps):
             tag_reqs   = (s.get("reqs") or {}).get("tags",   []) or []
             quest_reqs = (s.get("reqs") or {}).get("quests", []) or []
             gate       = (s.get("location") or {}).get("quest_gate")
-            skills_ok  = all(lvl(k) >= v for k, v in skill_reqs.items())
+            skills_ok  = all(eff(k) >= v for k, v in skill_reqs.items())
             tags_ok    = all(has_tag(t) for t in tag_reqs)
             quests_ok  = all(quest_done(q) for q in quest_reqs)
             gate_ok    = quest_done(gate) if gate else True
@@ -107,6 +178,8 @@ def topo_order(steps):
                         state[k] = state.get(k, 0) + v
                 if _is_quest(s):
                     state[f"quest:{s['id']}"] = True
+                    if xp_fold:
+                        _accumulate_quest_xp(state, s)
                 remaining.remove(s)
                 progressed = True
         if not progressed:               # unmet dep -> append remainder verbatim
@@ -243,25 +316,54 @@ def reattach_overlays(path, overlays):
     return result
 
 
-def phased_steps(ordered, milestones):
+def phased_steps(ordered, milestones, xp_fold=False):
     """Segment steps into tight milestone episodes. Milestones are taken easiest
     first; each episode pulls exactly the not-yet-emitted training that advances
     toward its skill reqs, then emits the milestone as the episode's capstone.
-    Steps no milestone needs fall into a trailing 'Endgame & extras' phase."""
+    Steps no milestone needs fall into a trailing 'Endgame & extras' phase.
+
+    quest-chain fix: ready() previously checked only skill reqs, so this local
+    re-pick could pull a step ahead of its own reqs.quests/location.quest_gate
+    prereq even though topo_order (P7, upstream) already established a valid
+    order — invisible on routes with few/no inter-quest reqs.quests edges (P2P,
+    corpus), but a real ordering violation once a route chains many quests
+    (quest-progression). Mirrors topo_order's own quest_done tracking so this
+    re-pick can never invert what topo_order guaranteed. The reqs.quests/gate
+    check itself is unconditional (safe — verified byte-identical against the
+    pinned P2P/corpus fixtures); xp_fold (default False, see topo_order's
+    docstring) additionally folds quest-reward XP into the skill portion, and
+    stays opt-in for the same fixture-parity reason."""
     ms = sorted(milestones, key=_difficulty)
     remaining, state, out = list(ordered), {}, []
     lvl = lambda k: state.get(k, 1)
+    # eff() folds accumulated quest-reward XP on top of the trained floor —
+    # used ONLY for per-step readiness (below), matching graph.js effRead, so a
+    # step whose bank-side reqs.skills is only reachable via quest XP (not pure
+    # training) is still judged playable in the right relative order. met(target)
+    # (the milestone-episode completion check) deliberately keeps plain lvl() —
+    # unchanged from before this fix — so existing routes stay byte-identical.
+    eff = _make_effective_lvl(state, lvl) if xp_fold else lvl
+    quest_done = lambda qid: state.get(f"quest:{qid}", False)
 
     def apply(step):
         for k, v in (step.get("grants") or {}).items():
             if isinstance(v, (int, float)):
                 state[k] = max(lvl(k), v)
+        if _is_quest(step):
+            state[f"quest:{step['id']}"] = True
+            if xp_fold:
+                _accumulate_quest_xp(state, step)
 
     def met(reqs):
         return all(lvl(k) >= v for k, v in reqs.items())
 
     def ready(step):
-        return met(_skill_reqs(step))
+        quest_reqs = (step.get("reqs") or {}).get("quests", []) or []
+        gate = (step.get("location") or {}).get("quest_gate")
+        skill_reqs = _skill_reqs(step)
+        return (all(eff(k) >= v for k, v in skill_reqs.items())
+                and all(quest_done(q) for q in quest_reqs)
+                and (quest_done(gate) if gate else True))
 
     def advances(step, target):
         grants = step.get("grants") or {}
@@ -278,7 +380,17 @@ def phased_steps(ordered, milestones):
     for m in ms:
         phase, target = phase_name("toward", m["label"]), _skill_reqs(m)
         while not met(target):
-            step = take(lambda s: advances(s, target)) or take(lambda s: True)
+            # quest-chain fix (xp_fold-gated, same fixture-parity reasoning as
+            # above): quest steps never carry a `grants` skill entry (their reward
+            # is `xp`, not a level floor — see model.js), so advances() can never
+            # select one; a single broad-union milestone target (quest-progression)
+            # then has generic training out-prioritize every ready quest, front-
+            # loading the whole route with training instead of leading with the
+            # earliest playable quests (Cook's Assistant/Restless Ghost-grade).
+            # Pulling any ready quest first restores the expected quest-forward
+            # narrative; falls back to training exactly when no quest is unlocked.
+            quest_first = (lambda s: _is_quest(s)) if xp_fold else (lambda s: False)
+            step = take(quest_first) or take(lambda s: advances(s, target)) or take(lambda s: True)
             if step is None:
                 break                         # unmet prereq — capstone anyway
             out.append({"step": step, "phase": phase})
@@ -359,6 +471,7 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
     out = []
     lvl = lambda k: state.get(k, 1)
     has_tag = lambda t: state.get(f"tag:{t}", False)
+    quest_done = lambda qid: state.get(f"quest:{qid}", False)
 
     def apply_step(step):
         for k, v in (step.get("grants") or {}).items():
@@ -366,12 +479,27 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
                 state[k] = max(lvl(k), v)
             elif v is True:
                 state[f"tag:{k}"] = True
+        if _is_quest(step):
+            state[f"quest:{step['id']}"] = True
 
+    # quest-chain fix (mirrors phased_steps and topo_order, see phased_steps'
+    # docstring): ready() must also honor reqs.quests/location.quest_gate, or
+    # this local re-pick can invert an order topo_order already guaranteed.
+    # Deliberately NOT folding quest-reward XP here (unlike phased_steps) — this
+    # function is only reached when a goal declares steer_points (the P2P/barrows
+    # route), and folding XP into its skill readiness changed which steps land in
+    # which milestone episode (verified against the pinned P2P fixture). The
+    # quest-progression route never has steer_points, so it never runs this path;
+    # topo_order's XP fold is what keeps IT ordering-valid upstream regardless.
     def ready(step):
         reqs = _skill_reqs(step)
         tag_reqs = (step.get("reqs") or {}).get("tags", []) or []
+        quest_reqs = (step.get("reqs") or {}).get("quests", []) or []
+        gate = (step.get("location") or {}).get("quest_gate")
         return (all(lvl(k) >= v for k, v in reqs.items()) and
-                all(has_tag(t) for t in tag_reqs))
+                all(has_tag(t) for t in tag_reqs) and
+                all(quest_done(q) for q in quest_reqs) and
+                (quest_done(gate) if gate else True))
 
     def advances_skills(step, target_skills):
         grants = step.get("grants") or {}
@@ -750,6 +878,10 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     zones = catalog.get("zones", {})
     reals = [s for s in plan["path"] if not s.get("_capstone")]
     milestones = goal.get("goals", []) or []
+    # quest-chain fix — opt-in XP fold (see topo_order's docstring). Only the
+    # quest-progression payload (plan-quests.mjs) sets goal.xp_fold; every
+    # other caller gets xp_fold=False, the exact pre-fix behavior.
+    xp_fold = bool(goal.get("xp_fold"))
 
     # P5 — detach overlay nodes before hub/topo reordering.
     clean, overlays = detach_overlays(reals)
@@ -760,7 +892,7 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     batched = hub_batches(clean)
 
     # P7 — topo_order.
-    ordered = topo_order(batched)
+    ordered = topo_order(batched, xp_fold=xp_fold)
 
     # Inject atoms from authored coarse_expansions not already in the plan.
     # Handles the 'unwind via coarse_expansions' path (ctr-* combat atoms).
@@ -837,7 +969,7 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
                 ordered_with_overlays, milestones, steer_points, goal_steer_ids
             )
         else:
-            phased = phased_steps(ordered_with_overlays, milestones)
+            phased = phased_steps(ordered_with_overlays, milestones, xp_fold=xp_fold)
 
         # P11 — emit each record, injecting checkpoint headers before first atom of each group.
         steps = []
