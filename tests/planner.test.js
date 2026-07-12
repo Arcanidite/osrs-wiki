@@ -101,6 +101,36 @@ test("costFor styles (baseline semantics)", () => {
   assert.equal(costFor(xpStep, "balanced"), 1);
 });
 
+test("quest reward XP is credited toward skill level, pruning covered training", () => {
+  // A quest granting ~level-40 worth of Attack XP should cover an Attack-30 goal
+  // outright: the quest is routed and no train-attack band is grinded.
+  const steps = [
+    { id: "q-xp-dump", label: "XP dump quest", kind: "quest", tags: ["quest"],
+      reqs: { skills: {} }, grants: {}, xp: { attack: 35000 } },
+    { id: "train-attack-10", label: "Train Attack 1→10", reqs: { skills: {} }, grants: { attack: 10 }, xp: { attack: 1154 }, tags: ["combat"] },
+    { id: "train-attack-30", label: "Train Attack 10→30", reqs: { skills: { attack: 10 } }, grants: { attack: 30 }, xp: { attack: 12321 }, tags: ["combat"] },
+  ];
+  const goals = [{ id: "atk30", label: "Attack 30", reqs: { skills: { attack: 30 } }, grants: {}, terminal: null }];
+  const path = routeMulti(goals, steps, freshProfile(), makeEnv({ steps }));
+  const ids = path.map((s) => s.id);
+  assert.ok(ids.includes("q-xp-dump"), "the XP-reward quest is routed");
+  assert.ok(!ids.some((id) => id.startsWith("train-attack")), "quest XP pruned the dead-weight Attack training");
+  assert.ok(!path.some((s) => s._synthetic), "goal met by real steps, no synth fill");
+});
+
+test("quest prerequisites gate ordering (reqs.quests)", () => {
+  // Quest B requires quest A; the route must place A before B.
+  const steps = [
+    { id: "q-a", label: "Quest A", kind: "quest", tags: ["quest"], reqs: { skills: {} }, grants: {}, xp: { cooking: 5000 } },
+    { id: "q-b", label: "Quest B", kind: "quest", tags: ["quest"], reqs: { skills: {}, quests: ["q-a"] }, grants: {}, xp: { cooking: 5000 } },
+  ];
+  const goals = [{ id: "cook40", label: "Cooking 40", reqs: { skills: { cooking: 40 } }, grants: {}, terminal: "q-b" }];
+  const path = routeMulti(goals, steps, freshProfile(), makeEnv({ steps })).filter((s) => !s._capstone);
+  const ids = path.map((s) => s.id);
+  assert.ok(ids.indexOf("q-a") >= 0 && ids.indexOf("q-b") >= 0, "both quests routed");
+  assert.ok(ids.indexOf("q-a") < ids.indexOf("q-b"), "prerequisite quest A precedes B");
+});
+
 test("planner seam returns diagnostics", () => {
   const goals = data.goals.slice(0, 1).map(queueGoal);
   const { path, diagnostics } = plan(goals, data.steps, freshProfile(), makeEnv(data), { algorithm: "auto" });

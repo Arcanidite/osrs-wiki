@@ -3,14 +3,16 @@
 // payload format ("osrs-graph:v1"), now storage-injectable so the planner
 // can run headless (Node tests use the in-memory default).
 
+import { xpForLevel, levelForXp } from "../world/xp.js";
+
 // Unit separator (U+001F) avoids key collisions with arbitrary type/id values.
 const nk = (t, id) => `${t}\x1f${id}`;
 const ek = (t, f, to) => `${t}\x1f${f}\x1f${to}`;
 
 // Qualifier cmp registry — extend here to add new constraint types.
 // Each entry: { satisfies(cur, val), coalesce(cur, val), progresses(cur, grantVal, targetVal) }
-// Both shipped comparators are monotone (state only ever rises / turns on);
-// the planner's delete-free assumptions depend on this — keep new cmps monotone.
+// All comparators are monotone (state only ever rises / turns on); the
+// planner's delete-free assumptions depend on this — keep new cmps monotone.
 const _cmp = {
   gte: {
     satisfies:  (cur, val) => (cur ?? 0) >= val,
@@ -22,7 +24,35 @@ const _cmp = {
     coalesce:   ()         => true,
     progresses: (cur)      => cur !== true,
   },
+  // Additive XP accumulator (monotone-rising). Used by quest reward XP:
+  // `xp:<skill>` sums the reward XP of every completed quest. Skill-level
+  // reads (skill:<skill> gte) fold this XP in via effectiveLevel(), so a
+  // quest's XP reward prunes the training bands it already covers.
+  add: {
+    satisfies:  (cur, val) => (cur ?? 0) >= val,
+    coalesce:   (cur, val) => (cur ?? 0) + val,
+    progresses: (cur, gv)  => gv > 0,
+  },
 };
+
+// Effective level for a `skill:<sk>` state key: the training-floor level
+// raised by any accumulated quest reward XP (`xp:<sk>`). Pure — the read-side
+// bridge between the level economy (training) and the XP economy (quests).
+// baseLevel's own XP is the floor; quest XP stacks on top of wherever training
+// left the skill, so a quest never double-credits toward its own prereq.
+export function effectiveLevel(state, skillKey) {
+  const base = state[skillKey] ?? 1;
+  if (!skillKey.startsWith("skill:")) return base;
+  const xp = state["xp:" + skillKey.slice(6)] ?? 0;
+  if (!xp) return base;
+  const eff = levelForXp(xpForLevel(base) + xp);
+  return eff > base ? eff : base;
+}
+
+// Read a state value with XP-boost applied to skill keys (identity otherwise).
+function effRead(state, to) {
+  return to.startsWith("skill:") ? effectiveLevel(state, to) : state[to];
+}
 
 // In-memory storage — default for headless/test use.
 export function memoryStorage() {
@@ -76,9 +106,10 @@ export function createGraph(storage = memoryStorage()) {
     },
 
     // Qualifier queries — dispatch through _cmp registry, open to new types.
+    // Skill-key reads are XP-boosted via effRead so completed-quest XP counts.
     satisfies(edges, state) {
       return edges.every(({ to, data: { cmp, value } = {} }) =>
-        _cmp[cmp]?.satisfies(state[to], value) ?? false
+        _cmp[cmp]?.satisfies(effRead(state, to), value) ?? false
       );
     },
     coalesce(edges, state) {
@@ -93,7 +124,7 @@ export function createGraph(storage = memoryStorage()) {
         const te = targetEdges.find(e => e.to === ge.to);
         if (!te) return false;
         const { cmp, value: gv } = ge.data ?? {};
-        return _cmp[cmp]?.progresses(state[ge.to], gv, te.data?.value) ?? false;
+        return _cmp[cmp]?.progresses(effRead(state, ge.to), gv, te.data?.value) ?? false;
       });
     },
 

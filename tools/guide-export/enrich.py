@@ -463,7 +463,24 @@ def _train_step(step, phase, zones, checkpoint=None):
         out["coarse_of"] = step["coarse_of"]
     if checkpoint is not None:
         out["checkpoint"] = checkpoint
+    # Quest reward XP — the efficiency lever. The planner credits it toward skill
+    # progression (pruning covered training); surface it as a chip so the route
+    # shows the payoff of doing the quest instead of grinding.
+    if _is_quest(step) and step.get("xp"):
+        rewards = ", ".join(f"{sk} +{int(amt)}"
+                            for sk, amt in step["xp"].items()
+                            if isinstance(amt, (int, float)) and amt > 0)
+        if rewards:
+            out["hints"] = list(out.get("hints") or []) + [
+                {"type": "quest-xp", "target": None, "value": rewards,
+                 "note": "Quest reward XP — counts toward your skills, replacing that much training."}
+            ]
     return out
+
+
+def _is_quest(step):
+    """Quest steps carry the 'quest' tag or kind (mirrors model.js isQuestStep)."""
+    return "quest" in (step.get("tags") or []) or step.get("kind") == "quest"
 
 
 def _milestone_step(milestone, phase):

@@ -7,7 +7,8 @@
 //   weaveOverlays ‖ detach-overlays → hub_batches → topo_order →
 //   insert_supply_steps → re-attach → phased_steps_with_steer → emit
 
-import { normalizeReqs, reqQuals, toState, fromState, reqsSummary, syncQualEdges } from "../model.js";
+import { normalizeReqs, reqQuals, toState, fromState, reqsSummary, syncQualEdges, isQuestStep } from "../model.js";
+import { effectiveLevel } from "../graph.js";
 import { weaveOverlays } from "./overlay.js";
 import { burndownResolve } from "./burndown.js";
 
@@ -58,11 +59,29 @@ export function costFor(step, style) {
   // Supply steps are mandatory prerequisites — assign near-zero cost so they
   // are always preferred when useful (S6/S3 hard rule: supply before bossing).
   if (step._supply) return 0.0001;
+  // Quests with reward XP are the efficient-guide backbone: prefer them just
+  // below supply so quest XP is banked before any grind (they are only pulled
+  // when their XP still advances a needed skill — see isUseful). "quest primarily."
+  if (isQuestStep(step) && Object.keys(step.xp ?? {}).length) return 0.001;
   const xpSum = Object.values(step.xp ?? {}).reduce((a, b) => a + b, 0);
   if (style === "efficient") return xpSum > 0 ? 1 / xpSum : 100;
   if (style === "afk")       return step.inv_used ?? 1;
   if (style === "gp")        return (step.tags ?? []).includes("money") ? 0.5 : 1;
   return 1;
+}
+
+// A quest is "XP-useful" when its reward XP advances a skill still below the
+// goal's target — the hook that lets quest rewards substitute for training.
+// Gated to quests so training bands the XP already covers stay pruned (they
+// lose usefulness via graph.progresses on the XP-boosted level).
+function questXpUseful(step, state, targetEdges) {
+  if (!isQuestStep(step)) return false;
+  const xp = step.xp ?? {};
+  return targetEdges.some(te => {
+    if (!te.to.startsWith("skill:")) return false;
+    const sk = te.to.slice(6);
+    return xp[sk] > 0 && effectiveLevel(state, te.to) < (te.data?.value ?? 0);
+  });
 }
 
 export function locationAccessible(step, completedIds, excluded, completedQuests) {
@@ -80,6 +99,9 @@ function isUseful(env, step, state, targetEdges, terminal, neededGates) {
   // Supply-chain and quest-prereq steps are mandatory — treat as always-useful
   // when their own requirements are met (S8: demandSet overrides deferred_until).
   if (env.demandSet?.has(step.id)) return true;
+  // Quest reward XP that still advances a needed skill makes the quest useful
+  // (the quest-XP economy — lets quest completion substitute for training).
+  if (questXpUseful(step, state, targetEdges)) return true;
   return env.graph.progresses(env.graph.edgesFrom("step:grant", step.id), targetEdges, state);
 }
 
@@ -89,6 +111,9 @@ function routeGoal(env, steps, profile, goal, skills, completedIds, completedQue
   const terminal    = goal.terminal ?? null;
   const path        = [];
   let   state       = toState(skills);
+  // Seed completed quests as quest:<id> so dependents' quest prereqs (reqs.quests)
+  // resolve — quests done in an earlier goal / manualQuestDone carry over.
+  for (const id of completedQuests) state[`quest:${id}`] = true;
   let   invFree     = freeSlots ?? 28;
   const remaining   = new Set(
     steps.map((s) => s.id).filter((id) => !completedIds.has(id) && !env.pinnedExclusions.has(id))
@@ -171,9 +196,14 @@ export function synthFillGaps(env, path, goalReqs, finalSkills, allSkills) {
   const synths = [];
 
   Object.entries(goalReqs.skills ?? {}).forEach(([sk, needed]) => {
-    if ((finalState[`skill:${sk}`] ?? 1) >= needed) return;
+    // Effective level folds in quest reward XP — a skill covered by quest XP
+    // needs no synth even though its training-floor level never reached `needed`.
+    if (effectiveLevel(finalState, `skill:${sk}`) >= needed) return;
     const top     = maxGranted(`skill:${sk}`);
-    const fromLvl = top > -Infinity ? top : (allState[`skill:${sk}`] ?? 1);
+    const fromLvl = Math.max(
+      top > -Infinity ? top : (allState[`skill:${sk}`] ?? 1),
+      effectiveLevel(finalState, `skill:${sk}`)
+    );
     if (fromLvl >= needed) return;
     synths.push(makeSynth(
       `synth-${sk}-${needed}-${env.now()}`,

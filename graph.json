@@ -69,6 +69,40 @@
       }
     },
     {
+      "id": "quest-order",
+      "label": "Quest Order",
+      "url": "/tools/quest-order",
+      "type": "page",
+      "slots": [
+        "nav",
+        "sitemap",
+        "search"
+      ],
+      "meta": {
+        "page_class": "tool",
+        "icon": {
+          "name": "tool"
+        },
+        "summary": "Walk the recommended quest order gated by your stats — see what you can do now, what's blocked and why, and your next quest. Leagues region-lock aware.",
+        "tags": [
+          "tools"
+        ],
+        "preview": {
+          "excerpt": "The OSRS Wiki Optimal Quest Guide order (via Quest Helper), made interactive. Enter your stats, tick off quests, and each is marked done / can-do / blocked with the exact unmet requirements — and your next quest is highlighted.",
+          "stats": [
+            {
+              "label": "Type",
+              "value": "Tool"
+            },
+            {
+              "label": "Saves to",
+              "value": "localStorage"
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": "home",
       "label": "Home",
       "url": "/",
@@ -1880,6 +1914,11 @@
     {
       "from": "root",
       "to": "progression-router",
+      "rel": "child"
+    },
+    {
+      "from": "root",
+      "to": "quest-order",
       "rel": "child"
     },
     {
