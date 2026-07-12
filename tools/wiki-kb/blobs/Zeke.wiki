@@ -1,0 +1,71 @@
+{{External|rs|rsc}}
+{{Infobox NPC
+|name = Zeke
+|image = [[File:Zeke.png|120px]]
+|release = [[21 January]] [[2001]]
+|update = Newsletter 1
+|members = No
+|race = [[Human]]
+|location = [[Al Kharid]]
+|shop = [[Zeke's Superior Scimitars.]]
+|gender = Male
+|options = Talk-to, Trade
+|examine = Sells superior scimitars.
+|map = {{NPC map|x=3288|y=3190|r=3|mtype=square}}
+|id = 2875
+|leagueRegion = Desert
+}}
+[[File:Zeke chathead.png|left]]
+'''Zeke''' is the owner of [[Zeke's Superior Scimitars]] in [[Al Kharid]]. He sells [[scimitar]]s up to [[mithril scimitar|mithril]].
+
+If asked about [[dragon scimitar]]s, Zeke will say ''"A dragon scimitar? A DRAGON scimitar? No way, man! The banana-brained nitwits who make them would never dream of selling any to me. Seriously, you'll be a monkey's uncle before you'll ever hold a dragon scimitar."'' This is a reference to the [[Monkey Madness I]] [[quest]] which must be completed to wield a dragon scimitar, and in which the player pretends to be the uncle of a [[Monkey Child]]. If the player has completed the quest, they will respond with ''"Hmmm, funny you should say that..."''.
+
+Zeke plays an important role in the [[2021 Birthday event]]. [[Duke Horacio]] had heard Zeke's trap designs could safely trap monkeys and sent the player to talk to Zeke, where Zeke helps the player by supplying [[premium banana]]s and [[bamboo]] for the player at his shop to create [[monkey cage]]s. Later he was also invited by Duke Horacio to join the party as [[Zeke (2021 Birthday event)|one of the party guests]].
+
+==Treasure Trails==
+*{{CrypticNPC|Zeke|easy|Talk to Zeke in Al Kharid.}}
+
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=550|delta=20|bucket=No}}
+{{StoreLine|name=Bronze scimitar|stock=5|restock=100}}
+{{StoreLine|name=Iron scimitar|stock=3|restock=200}}
+{{StoreLine|name=Steel scimitar|stock=2|restock=600}}
+{{StoreLine|name=Mithril scimitar|stock=1|restock=4000}}
+{{StoreTableBottom}}
+
+==Dialogue==
+{{Hastranscript|npc}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 17 March 2021
+|update = Shooting Stars
+|change = [[2021 Birthday event]] dialogue was removed from Zeke.
+}}
+{{Subject changes
+|date = 17 February 2021
+|update = 8th Birthday Event and LMS Changes
+|change = New 2021 Birthday event dialogue was added to Zeke.
+}}
+{{Subject changes
+|date = 20 February 2006
+|update = Updates, updates and more updates...
+|change = The helmet in the NPC's chathead was recoloured.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Zeke chathead (historical).png]]
+|[[File:Zeke chathead.png]]
+|-
+|29 March 2004 –<br/>20 February 2006
+|20 February 2006 –<br/>present
+|}
+
+==Trivia==
+* A [[Zeke (2021 Birthday event)|variant]] of Zeke was located in the Lumbridge dining room during the [[2021 Birthday event]].
+
+{{Al Kharid}}
+{{2021 Birthday event}}

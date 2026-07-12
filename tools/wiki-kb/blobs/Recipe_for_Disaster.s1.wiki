@@ -1,0 +1,287 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Cook (Lumbridge)|Cook]] in the kitchen of [[Lumbridge Castle]].
+|startmap = 3208,3214
+|difficulty = Special
+|description = The cook in Lumbridge has a surprisingly small number of ingredients on hand in his kitchen, possibly as a result of an endless stream of newcomers with light fingers, taking anything that isn't nailed down from his kitchen.
+
+Luckily, in the past, a kind [[Cook's Assistant]] was willing to help him in his culinary duties, but a problem has now appeared that could spell... a '''Recipe For Disaster'''!
+
+Almost all members may attempt to solve his tricky predicament, and be rewarded accordingly, but only the very elite of Questers will be able to put an end to his problem permanently!
+|length = Very Long
+|requirements = '''To start the quest and finish the [[Recipe for Disaster/Another Cook's Quest|first chapter]]:'''
+*{{SCP|Cooking|10|link=yes}} {{Boostable|yes}}
+*Completion of [[Cook's Assistant]]
+'''To complete all chapters of the quest:'''
+*All prerequisite quest requirements
+*{{SCP|Quest|175|link=yes}} (9 are earned for the other parts of the quest, and 79 are gained by completing all required quests)
+*{{SCP|Cooking|70|link=yes}} {{Boostable|yes}}
+*{{SCP|Agility|48|link=yes}} {{Boostable|no}}
+*{{SCP|Mining|50|link=yes}} {{Boostable|yes}}
+*{{SCP|Fishing|53|link=yes}} {{Boostable|yes}}
+*{{SCP|Thieving|53|link=yes}} {{Boostable|no}}
+*{{SCP|Herblore|25|link=yes}} {{Boostable|yes}}
+*{{SCP|Magic|59|link=yes}} {{Boostable|yes}}
+*{{SCP|Smithing|40|link=yes}} {{Boostable|yes}}
+*{{SCP|Firemaking|50|link=yes}} {{Boostable|yes}}
+*{{SCP|Ranged|40|link=yes}} {{Boostable|no}}
+*{{SCP|Crafting|40|link=yes}} {{Boostable|yes}}
+*{{SCP|Fletching|10|link=yes}} {{Boostable|yes}}
+*{{SCP|Woodcutting|36|link=yes}} {{Boostable|yes}}
+*The ability to defeat high leveled monsters, several of which have to be defeated without using {{SCP|Prayer|link=yes}} 
+*Completion (or partial completion where stated) of the following quests:
+**[[Fishing Contest]]
+**[[Goblin Diplomacy]]
+**[[Big Chompy Bird Hunting]]
+**[[Murder Mystery]]
+**[[Nature Spirit]]
+***[[Priest in Peril]]
+***[[The Restless Ghost]]
+**[[Witch's House]]
+**[[Gertrude's Cat]]
+**[[Shadow of the Storm]]
+***[[Demon Slayer]]
+***[[The Golem]]
+**Started [[Legends' Quest]] up until gaining access to the [[Kharazi Jungle]]
+***[[Family Crest]]
+***[[Heroes' Quest]]
+****[[Shield of Arrav]]
+****[[Lost City]]
+****[[Merlin's Crystal]]
+****[[Dragon Slayer I]]
+***[[Shilo Village]]
+****[[Jungle Potion]]
+*****[[Druidic Ritual]]
+***[[Underground Pass]]
+****[[Biohazard]]
+*****[[Plague City]]
+**[[Monkey Madness I]]
+***[[The Grand Tree]]
+***[[Tree Gnome Village]]
+**[[Desert Treasure I]]
+***[[The Dig Site]]
+***[[The Tourist Trap]]
+***[[Temple of Ikov]]
+***[[Waterfall Quest]]
+***[[Troll Stronghold]]
+****[[Death Plateau]]
+**[[Horror from the Deep]]
+***[[Alfred Grimhand's Barcrawl]]
+|items = '''To start the quest and finish the [[Recipe for Disaster/Another Cook's Quest|first chapter]]:'''
+*[[Eye of newt]]
+*[[Greenman's ale]]
+*[[Rotten tomato]]
+*Any [[fruit blast]] excluding a [[premade fr' blast]]
+*[[Ashes]]
+'''To complete all chapters of the quest:'''
+*About 320 [[coins]] ''(or 120 if you have the activated [[Ring of charos]])''
+*[[Bowl of water]] ''(an [[empty bowl]] can be bought from the [[Culinaromancer's Chest]])''
+*[[Bucket of water]] ''(an [[Bucket|empty bucket]] can be bought from the [[Culinaromancer's Chest]])''
+*3 [[buckets of milk]] ''(can be bought from the [[Culinaromancer's Chest]])''
+*2 [[eggs]] ''(can be bought from the [[Culinaromancer's Chest]])''
+*[[Orange]]
+*[[Banana]] ''(obtainable during the quest)''
+*Any [[dye]] '''except''' red, yellow, or orange
+*[[Spice]] or [[gnome spice]] ''(can be bought from the [[Culinaromancer's Chest]])''
+*[[Gloves]] ''([[ice gloves]] are preferred)''
+*[[Charcoal]]
+*[[Fishing bait]]
+*[[Fishbowl]]
+*2 [[bread]]
+*[[Pestle and mortar]]
+*[[Needle]]
+*3 [[bronze wire]]s
+*[[Cake tin]] ''(can be bought from the [[Culinaromancer's Chest]])''
+*4 [[Asgarnian ale]] ''(6 recommended)''
+*Any [[cat]] except an [[overgrown cat]] ''(you'll be [[chase|chasing rats]], so a [[wily cat]] is recommended)''
+*Several bowls of [[stew]] ''(9 at most)''
+*[[Raw chompy]] ''(several recommended in case of burning)''
+*[[Raw chicken]]
+*[[Raw cod]]
+*[[Iron spit]]
+*Regular [[logs]]
+*[[Tinderbox]]
+*[[Ball of wool]]
+*[[Ogre bellows]] ''(obtainable during the quest)''
+*[[Ogre bow]] and several [[ogre arrows]] ''(10 is enough)''
+*2 [[pots of flour]] ''(can be bought from the [[Culinaromancer's Chest]])''
+*[[Pot of cornflour]] ''(or raw [[sweetcorn]] and an [[empty pot]])''
+*[[Pot of cream]] ''(can be bought from the [[Culinaromancer's Chest]])''
+*Any [[axe]]
+*Any [[pickaxe]]
+*Any [[machete]]
+*[[Knife]]
+*[[Dramen staff]] and [[Dramen branch|branch]]
+*[[M'speak amulet]]
+*[[gorilla greegree|Gorilla]], [[ninja greegree|ninja]] and [[zombie greegree]] ''(or 3000 [[coins]] and combat equipment if making the greegrees during the quest)''
+*[[Monkey nuts]] ''(or 3 [[coins]])''
+*[[Rope]]
+|kills = *[[Icefiend]] ''(level 13)'' (only if you lack [[ice gloves]])
+*5 [[Mudskipper]]s ''(level 30/31)''
+*[[Crab]] ''(level 21/23)''
+*[[Evil Chicken]] ''(level varies)'' (see below)
+*[[Black dragon]] ''(level 227)''
+*[[Big Snake]] ''(level 84)''
+*[[Zombie monkey]] ''(levels 82/129)''
+*[[Monkey guard]] ''(level 167)''
+*[[Ninja monkey]] ''(level 86)''
+*[[Agrith-Na-Na]] ''(Level 146)''
+*[[Flambeed]] ''(level 149)''
+*[[Karamel]] ''(level 136)''
+*[[Dessourt]] ''(level 121)''
+*[[Gelatinnoth Mother]] ''(level 130)''
+*[[Culinaromancer]] ''(level 75)''
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}</onlyinclude>
+
+===Another Cook's Quest===
+{{Main|Recipe for Disaster/Another Cook's Quest}}
+[[File:Cook (Lumbridge) chathead.png|left]]
+The cook is preparing for a party in [[Lumbridge]]. He tells the player that a hundred years ago, a very important meeting was held in Lumbridge. Supposedly his ancestor, [[Franizzard Van Lumbcook]], cooked such an amazing banquet for the occasion that he was offered a job as head cook, along with all his descendants, for life.
+
+This big, important meeting is held in Lumbridge every ten years and today is the 10th meeting. As he cannot think of a brilliant dish himself, he intends to use his ancestor's recipe for the feast. However, he needs help gathering the ingredients, again. Gather the ingredients and complete the subquest to receive an invitation to The Feast. All but the [[rotten tomato]] can be obtained from the Grand Exchange. You can buy one from [[Pelters' Veg Stall]] behind the [[Varrock General Store]], or head to the bank chest at the Emir's Arena in [[Al Kharid]] to obtain one from the barrel.
+
+Items required: [[eye of newt]], [[Greenman's ale|glass of greenman's ale]], [[rotten tomato]], and a [[Dirty blast|dirty blast]] ([[fruit blast]] + [[ashes]])
+
+===The Feast===
+{{Listen
+|title = The Secret Council
+|align = right
+|filename = The Secret Council.ogg
+|desc = The music that plays during the long cutscene.}}
+Enter the doors to the dining room to begin the feast. The members of the [[Lumbridge]] council are gathered at the table:
+
+*a [[Mountain Dwarf]] from [[White Wolf Mountain]]
+*[[Osman]] or [[Selim]] from [[Al Kharid]]
+*the goblin generals from [[Goblin Village]]
+*[[Pirate Pete]] from [[Braindeath Island]]
+*the [[Lumbridge Guide]]
+*[[Evil Dave]] from [[Edgeville]]
+*[[Skrach Uglogwee]] from the [[Feldip Hills]]
+*[[Sir Amik Varze]] from [[Falador]]
+*[[Awowogei]] from [[Ape Atoll]]
+*[[Duke Horacio]] himself
+*[[Aris]] from [[Varrock]], who is arriving late.
+
+Right before you enter, the Duke will get the [[strange box]] event and will leave the room to fiddle with it, and Osman will get taken away by [[Evil Bob]]. At this point, you will enter the room. A short while later, the [[Culinaromancer]] crashes the party and starts to attack everyone at the dining table with [[magic]] spells. Luckily, Aris will show up and freeze everyone in time (except the player and herself).
+<gallery>
+The Culinaromancer's return.png|The [[Culinaromancer]] arrives.
+Gypsy's Arrival.png|[[Aris]] arrives too late.
+Tempus Cessit.png|Aris casts "Tempus Cessit" to freeze the room in time.
+</gallery>
+
+===Freeing council members===
+[[Aris]] explains that the [[Culinaromancer]] was a cook in Lumbridge a hundred years ago and had threatened the secret council with death, only to be thwarted by the Duke's assistant, who managed to trap him in another dimension. This assistant was the cook's ancestor, and was made head cook for life.
+
+The current head cook, whom you helped build the feast, apparently created a powerful food-magic, which released the Culinaromancer from his prison. Seeing him, Aris casts the aforementioned spell, so that you both can protect the council from the Culinaromancer's attacks. While she can easily seal the Culinaromancer in a heartbeat, due to the fact you caused the Culinaromancer to awaken she holds you responsible and sends you to save them as the magic is causing a temporal paradox that could destroy the known reality with the magic.
+
+After the feast, you will be able to enter and exit the dining hall at will. However, the room will be in a dormant state. To release each member of the council from the Culinaromancer's spell, you must feed each of them their favourite food. Aris and Cook will both be there to help you. You can complete these subquests in any order, and start as many of them at a time as you want.
+
+After you give each member their favourite dish, Aris teleports them away to safety and tells you how many more council members are left. Each subquest gives 1 quest point and some access to the [[Culinaromancer's Chest]], as well as additional rewards such as items or lamps of experience.
+
+{| class="wikitable lighttable"
+! Name
+! Requirements
+|-
+| [[File:Mountain Dwarf icon.webp]] [[/Freeing the Mountain Dwarf|Freeing the Mountain Dwarf]]
+|
+* Able to kill a level 13 [[Icefiend]] (optional)
+* Completion of [[Fishing Contest]]
+|-
+| [[File:Goblin generals icon.webp]] [[/Freeing the Goblin generals|Freeing the Goblin generals]]
+|
+* Completion of [[Goblin Diplomacy]]
+|-
+| [[File:Pirate Pete icon.webp]] [[/Freeing Pirate Pete|Freeing Pirate Pete]]
+|
+* Level {{SCP|Cooking|31|link=y}}
+* Able to defeat five level 35 monsters
+|-
+| [[File:Lumbridge Guide icon (RFD).webp]] [[/Freeing the Lumbridge Guide|Freeing the Lumbridge Guide]]
+|
+* Level {{SCP|Cooking|40|link=y}}
+* Completion of the following quests:
+** [[Big Chompy Bird Hunting]]
+** [[Biohazard]]
+*** [[Plague City]]
+** [[Demon Slayer]]
+** [[Murder Mystery]]
+** [[Nature Spirit]]
+*** [[Priest in Peril]]
+*** [[The Restless Ghost]]
+** [[Witch's House]]
+|-
+| [[File:Evil Dave icon.webp]] [[/Freeing Evil Dave|Freeing Evil Dave]]
+|
+* {{SCP|Cooking|25|link=y}}
+* Completion of the following quests:
+** [[Gertrude's Cat]]
+** [[Shadow of the Storm]]
+*** [[Demon Slayer]]
+*** [[The Golem]]
+|-
+| [[File:Skrach Uglogwee icon.webp]] [[/Freeing Skrach Uglogwee|Freeing Skrach Uglogwee]]
+|
+* {{SCP|Cooking|41|link=y}} and {{SCP|Firemaking|20|link=y}}
+* Completion of [[Big Chompy Bird Hunting]]
+|-
+| [[File:Sir Amik Varze icon.webp]] [[/Freeing Sir Amik Varze|Freeing Sir Amik Varze]]
+|
+* {{SCP|Quest|107|link=y}}
+* Access to the [[Kharazi Jungle]] (started [[Legends' Quest]])
+* Completion of the following quests:
+** [[Family Crest]]
+** [[Heroes' Quest]]
+*** [[Shield of Arrav]]
+*** [[Lost City]]
+*** [[Merlin's Crystal]]
+*** [[Dragon Slayer I]]
+** [[Shilo Village]]
+*** [[Jungle Potion]]
+** [[Underground Pass]]
+*** [[Biohazard]]
+**** [[Plague City]]
+** [[Waterfall Quest]]
+* The ability to defeat a level 227 [[Black dragon]]
+|-
+| [[File:Monkey Ambassador icon.webp]] [[/Freeing King Awowogei|Freeing King Awowogei]]
+|
+* {{SCP|Cooking|70|link=y}} (boostable)
+* {{SCP|Agility|48|link=y}}
+* Able to defeat a level 84 [[Big Snake]]
+* Completion of the following quests:
+** [[Monkey Madness I]]
+*** [[The Grand Tree]]
+*** [[Tree Gnome Village]]
+|}
+
+===Defeating the Culinaromancer===
+{{Main|Recipe for Disaster/Defeating the Culinaromancer}}
+After saving the final member of the Secret Council, the Culinaromancer will retreat through a portal back into his own dimension. Aris tells you to go through the portal to finish him off before he causes more trouble.
+
+[[File:Ultimate ironman chat badge.png|left]]
+The safest way for an [[ultimate ironman]] to defeat the Culinaromancer is to suicide beforehand at the nettles in [[Edgeville]] and then only take the food and weapons that you require. After each fight you should repeat and restock on food at the [[Warriors' Guild]] and [[Alfonse the waiter]] in [[Brimhaven]].
+
+'''You can leave and stock up after defeating a boss without losing your progress. However, Prayer can never be used during any of the fights.'''
+{| class="wikitable lighttable"
+! Name
+! Requirements
+|-
+| [[File:Culinaromancer chathead.png|20px]] [[/Defeating the Culinaromancer|Defeating the Culinaromancer]]
+|
+*{{SCP|Quest|175}} [[Quest points]]
+*Able to defeat enemies up to level 149 without [[Prayer]]
+*Completion of the following quests:
+**[[Desert Treasure I]]
+***[[The Dig Site]]
+***[[Temple of Ikov]]
+***[[The Tourist Trap]]
+***[[Troll Stronghold]]
+****[[Death Plateau]]
+***[[Priest in Peril]]
+***[[Waterfall Quest]]
+**[[Horror from the Deep]]
+***[[Alfred Grimhand's Barcrawl]]
+|}

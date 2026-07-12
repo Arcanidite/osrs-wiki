@@ -1,0 +1,180 @@
+===Filling===
+A regular compost bin must be filled with 15 un-noted items before it can be closed to begin the rotting process.
+The big compost bin in the Farming Guild requires 30 items instead.
+Items cannot be retrieved from the bin once deposited, though the contents can be dumped out to discard them.
+Once closed, the bin cannot be opened until the rotting finishes after 35 to 70 minutes.
+
+What the compost bin produces depends on the items that were used:
+*[[Rotten tomato]]es if the bin was entirely filled with [[tomato]]es.
+*[[Supercompost]] if the bin was entirely filled with ''supercompostable'' items.
+*Regular [[compost]] if neither of the above apply.
+
+Most harvested products of Farming can be added to a compost bin.
+In general, a product is supercompostable if and only if growing it requires 47 [[Farming]] or higher, but several exceptions apply:
+* [[Potato cactus]] and [[cotton boll]] require greater than 47 Farming, but produce normal compost.
+* [[Toadflax]] and some [[tree roots (Farming)|tree roots]] do not require 47 Farming, but are supercompostable.
+* [[White tree fruit]] does not require 47 Farming, but requires completion of [[Garden of Tranquillity]] and is supercompostable.
+* [[Cactus spine]]s, [[nightshade]], and all kinds of tree logs cannot be composted.
+
+Items which are derived from products of Farming may or may not be compostable.
+For instance, [[watermelon slice]]s are compostable, but [[pineapple ring]]s are not.
+Any item may be used on a [[Group of Advanced Gardeners|farmer]] to check whether the item will make compost or supercompost.
+If the item does not make compost at all, the message {{mes|Nothing interesting happens.}} is displayed instead.
+
+{|class="wikitable mw-collapsible mw-collapsed"
+!colspan="3"|Compostable and supercompostable items
+|-
+! Category !! Compostable !! Supercompostable
+|-
+! Allotments
+|
+{{plink|Potato}}
+
+{{plink|Onion}}
+
+{{plink|Cabbage}}
+
+{{plink|Tomato}}<ref group="a">If a compost bin is filled entirely with tomatoes, it produces [[rotten tomato]]es instead of compost.</ref>
+
+{{plink|Sweetcorn}}
+
+{{plink|Strawberry}}
+
+{{plink|Watermelon slice}}
+|
+{{plink|Watermelon}}
+
+{{plink|Snape grass}}
+
+|-
+! Flowers
+|
+{{plink|Marigolds}}<ref group="a" name="a-limited">This item has little use outside of being composted.</ref>
+
+{{plink|Rosemary}}<ref group="a" name="a-limited" />
+
+{{plink|Nasturtiums}}<ref group="a" name="a-limited" />
+
+{{plink|Woad leaf}}<ref group="a" name="a-limited" />
+
+{{plink|Limpwurt root}}
+|
+{{plink|White lily}}<ref group="a" name="a-limited" />
+
+|-
+! Herbs
+|
+{{plink|Guam leaf}}
+
+{{plink|Marrentill}}
+
+{{plink|Tarromin}}
+
+{{plink|Harralander}}
+
+{{plink|Ranarr weed}}
+
+{{plink|Irit leaf}}
+|
+{{plink|Toadflax}}
+
+{{plink|Avantoe}}
+
+{{plink|Kwuarm}}
+
+{{plink|Snapdragon}}
+
+{{plink|Cadantine}}
+
+{{plink|Lantadyme}}
+
+{{plink|Dwarf weed}}
+
+{{plink|Torstol}}
+
+|-
+! Hops
+|
+{{plink|Barley}}
+
+{{plink|Hammerstone hops}}
+
+{{plink|Asgarnian hops}}
+
+{{plink|Jute fibre}}
+
+{{plink|Yanillian hops}}
+
+{{plink|Krandorian hops}}
+
+{{plink|Wildblood hops}}
+
+{{plink|Cotton boll}}
+|
+
+|-
+! Bushes
+|
+{{plink|Redberries}}
+
+{{plink|Cadava berries}}
+
+{{plink|Dwellberries}}
+|
+{{plink|Jangerberries}}
+
+{{plink|White berries}}
+
+{{plink|Poison ivy berries}}
+
+|-
+! Fruits
+|
+{{plink|Cooking apple}}
+
+{{plink|Banana}}
+
+{{plink|Orange}}
+
+{{plink|Curry leaf}}
+|
+{{plink|Pineapple}}
+
+{{plink|Papaya fruit}}
+
+{{plink|Coconut}}<ref group="a" name="a-coconut">Because coconut shells are also supercompostable, using this forfeits the [[coconut milk]] for no gain.</ref>
+
+{{plink|Half coconut}}<ref group="a" name="a-coconut" />
+
+{{plink|Coconut shell}}<ref group="a" name="a-limited" />
+
+{{plink|Dragonfruit}}
+
+|-
+! Other
+| 
+{{plink|Weeds}}
+
+{{plink|Kebab}}
+
+{{plink|Potato cactus}}
+
+{{plink|Seaweed}}
+
+{{plink|Giant seaweed}}
+|
+Any [[Tree roots (Farming)|tree roots]]
+
+{{plink|Mushroom}}
+
+{{plink|Calquat fruit}}
+
+{{plink|White tree fruit}}
+
+|-
+|colspan="3"|<references group="a" />
+|}
+
+Because every item added must be supercompostable for the bin to produce supercompost, a warning dialogue appears if the player attempts to mix compostable and supercompostable items.
+
+On normal worlds, compost bins can be filled while simultaneously harvesting a nearby allotment. Stand close to the bin and the nearest allotment patch, harvest a single crop, then click the allotment and use the crop already in your inventory on the bin in the same game tick. This does not work on [[PvP world]]s or [[Deadman Mode]] worlds.

@@ -1,0 +1,10 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=550|delta=20}}
+{{StoreLine|name=Bronze scimitar|stock=5|restock=100}}
+{{StoreLine|name=Iron scimitar|stock=3|restock=200}}
+{{StoreLine|name=Steel scimitar|stock=2|restock=600}}
+{{StoreLine|name=Mithril scimitar|stock=1|restock=4000}}
+{{StoreTableBottom}}
+
+{{Shops}}
+{{Al Kharid}}

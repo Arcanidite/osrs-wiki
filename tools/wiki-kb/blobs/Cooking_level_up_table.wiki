@@ -1,0 +1,407 @@
+{{external|rs}}
+{{Level up table
+|freeplayall =
+* Using the [[Cooking range (Lumbridge Castle)|Cook-o-matic 100]] provides a burn chance reduction.
+* For burn rates, see the [[Cooking/Burn level|Burn Level]] article.
+|membersall =
+* Using the [[Hosidius Kitchen]] and/or [[Cooking gauntlets]] provides a burn chance reduction.
+* Completing the {{SCP|Diary}} [[Elite Kourend & Kebos Diary]] will reduce the chance to burn inside the [[Hosidius]] city kitchens by an extra 5% (making it 10% reduced burn chance)
+* For burn rates, see the [[Cooking/Burn level|Burn Level]] article.
+|freeplay1 =
+* Bake {{plink|bread}}
+* Cook {{plink|anchovies}}
+* Cook {{plink|Cooked chicken|txt=chickens}}
+* Cook {{plink|Cooked meat|txt=meat}}
+* Cook {{plink|sardine}}s
+* Cook {{plink|shrimps}}
+|members1 =
+* Cook {{plink|Guanic bat (0)|txt=guanic bats}}
+* Cook {{plink|poison karambwan}}s
+* Cook {{plink|Pysk fish (0)|txt=psyk fish}}
+* Cook {{plink|Cooked rabbit|txt=rabbits}}
+* Cook {{plink|sinew}}
+* Cook {{plink|ugthanki kebab}}s
+* Cook {{plink|harpoonfish}}
+|freeplay2 =
+|members2 =
+|freeplay3 =
+|members3 =
+|freeplay4 =
+|members4 =
+|freeplay5 =
+* Cook {{plink|herring}}
+|members5 =
+* Build a {{ilink|Beer barrel}} (with {{SCP|Construction|7}})
+|freeplay6 =
+|members6 =
+* Mix {{plink|fruit blast}}s
+|freeplay7 =
+* Prepare {{plink|guppy|txt=guppies}} (with {{SCP|Quest}} [[Below Ice Mountain]] completed)
+|members7 =
+* Bake {{plink|baked potato}}es
+|freeplay8 =
+|members8 =
+* Mix {{plink|pineapple punch}}es
+|freeplay9 =
+|members9 =
+* Cook {{plink|spicy sauce}}s (topping ingredient)
+|freeplay10 =
+* Bake {{plink|redberry pie}}s
+|members10 =
+* Bake {{plink|Toad crunchies|txt=toad crunchies}}
+* Cook {{plink|mackerel}}
+* Required for {{SCP|Quest}} [[Recipe for Disaster/Another Cook's Quest]]
+|freeplay11 =
+|members11 =
+* Cook {{plink|chilli con carne}} (topping ingredient)
+* Cook {{plink|Roast bird meat|txt=roasted bird meat}}
+|freeplay12 =
+|members12 =
+* Bake {{plink|spicy crunchies}}
+* Cook {{plink|thin snail}}
+* Required to complete {{SCP|Diary}} [[Easy Morytania Diary]]
+|freeplay13 =* Cook {{plink|Cooked t-bone steak}}
+|members13 =
+* Cook {{plink|scrambled egg}}s (topping ingredient)
+|freeplay14 =
+|members14 =
+* Bake {{plink|worm crunchies}}
+* Brew {{plink|cider}}
+* Build a {{ilink|Cider barrel}} (with {{SCP|Construction|12}})
+|freeplay15 =
+* Cook {{plink|trout}}
+|members15 =
+* Cook {{plink|Prael bat (1)|txt=prael bats}}
+* Cook {{plink|Suphi fish (1)|txt=suphi fish}}
+|freeplay16 =
+|members16 =
+* Bake {{plink|chocchip crunchies}}
+* Cook {{plink|Roast rabbit|txt=roasted rabbit}}
+* Cook {{plink|Spider on stick|txt=spiders on stick}}
+* Required to complete {{SCP|Diary}} [[Easy Karamja Diary]]
+|freeplay17 =
+|members17 =
+* Cook {{plink|lean snail}}s
+|freeplay18 =
+|members18 =
+* Cook {{plink|cod}}
+* Mix {{plink|wizard blizzard}}s
+|freeplay19 =
+|members19 =
+* Brew {{plink|dwarven stout}}s
+|freeplay20 =
+* Bake {{plink|meat pie}}s
+* Cook {{plink|pike}}
+* Prepare {{plink|cavefish}} (with {{SCP|Quest}} [[Below Ice Mountain]] completed)
+|members20 =
+* Mix {{plink|short green guy}} (SGG)
+* Brew {{plink|nettle tea}}
+* Required for {{SCP|Quest}} [[Ghosts Ahoy]]
+|freeplay21 =
+|members21 =
+* Churn {{plink|Pot of cream|txt=pots of cream}}
+* Cook {{plink|Cooked giant crab meat|txt=giant crab meat}}
+* Cook {{plink|Roast beast meat|txt=roasted beast meat}}
+* Cook {{plink|red crab meat}}
+|freeplay22 =
+|members22 =
+* Cook {{plink|fat snail}}s
+* Required for {{SCP|Quest}} [[Forgettable Tale...]]
+|freeplay23 =
+|members23 =
+* Cook {{plink|egg and tomato}}es (topping ingredient)
+* Cook {{plink|Cooked wild kebbit|txt=wild kebbit}}s
+|freeplay24 =
+|members24 =
+* Brew {{plink|asgarnian ale}}s
+* Build an {{ilink|Asgarnian ale (barrel)|txt=Asgarnian ale barrel}} (with {{SCP|Construction|18}})
+|freeplay25 =
+* Cook {{plink|salmon}}
+* Cook {{plink|stew}}s
+|members25 =
+* Bake {{plink|fruit batta}}
+* Required for {{SCP|Quest}} [[Recipe for Disaster/Freeing Evil Dave]]
+|freeplay26 =
+|members26 =
+* Cook {{plink|toad batta}}
+|freeplay27 =
+|members27 =
+* Bake {{plink|worm batta}}
+|freeplay28 =
+|members28 =
+* Bake {{plink|vegetable batta}}
+* Cook {{plink|Cooked sweetcorn|txt=sweetcorn}}
+* Cook {{plink|slimy eel}}s
+|freeplay29 =
+|members29 =
+* Bake {{plink|Cheese+tom batta|txt=cheese and tomato batta}}
+* Bake {{plink|mud pie}}s
+* Brew {{plink|greenman's ale}}
+* Build a {{ilink|Greenman's ale (barrel)|txt=Greenman's ale barrel}} (with {{SCP|Construction|26}})
+|freeplay30 =
+* Bake {{plink|apple pie}}s
+* Cook {{plink|tuna}}
+|members30 =
+* Bake {{plink|worm hole}}s
+* Cook {{plink|Cooked chompy|txt=chompies}} (with {{SCP|Quest}} [[Big Chompy Bird Hunting]] completed)
+* Cook {{plink|Giral bat (2)|txt=giral bats}}
+* Cook {{plink|Cooked karambwan|txt=karambwan}}s thoroughly (with {{SCP|Quest}} [[Tai Bwo Wannai Trio]] completed and talked to [[Tinsay]] afterwards)
+* Cook {{plink|Leckish fish (2)|txt=leckish fish}}
+* Cook {{plink|Cooked moss lizard|txt=mossy lizards}} (with partial completion of {{SCP|Quest}} [[Perilous Moons]])
+* Required for {{SCP|Quest}} [[Big Chompy Bird Hunting]]
+* Required for {{SCP|Quest}} [[Tai Bwo Wannai Trio]]
+* Required to complete {{SCP|Diary}} [[Hard Karamja Diary]]
+|freeplay31 =
+|members31 =
+* Cook {{plink|Cooked larupia|txt=larupias}} (with 15 [[Rumours|Hunters' Rumours]] completed)
+* Cook {{plink|Cooked fishcake|txt=fishcakes}}
+* Required for {{SCP|Quest}} [[Recipe for Disaster/Freeing Pirate Pete]]
+|freeplay32 =
+* Access the [[Cooks' Guild]]
+|members32 =
+* Mix {{plink|drunk dragon}}s
+* Cook {{plink|Cooked barb-tailed kebbit|txt=barb-tailed kebbits}} (with 15 [[Rumours|Hunters' Rumours]] completed)
+|freeplay33 =
+* Prepare {{plink|tetra}} (with {{SCP|Quest}} [[Below Ice Mountain]] completed)
+|members33 =
+* Mix {{plink|choc saturday}}s
+|freeplay34 =
+|members34 =
+* Bake {{plink|Garden pie|txt=garden pie}}
+* Brew {{plink|Wizard's mind bomb|txt=wizard's mind bomb}}
+|freeplay35 =
+* Bake {{plink|Plain pizza|txt=plain pizza}}
+* Brew {{plink|Jug of wine|txt=jug of wine}}
+|members35 =
+* Bake {{plink|Veg ball|txt=veg ball}}
+* Cook {{plink|Rainbow fish|txt=rainbow fish}}
+* Make {{plink|forester's ration}}s (with {{SCP|Woodcutting|35}})
+|freeplay36 =
+|members36 =
+* Brew {{plink|damiana tea}}
+* Required for {{SCP|Quest}} [[Scrambled!]]
+|freeplay37 =
+|members37 =
+* Mix {{plink|blurberry special}}s
+|freeplay38 =
+|members38 =
+* Churn {{plink|Pat of butter|txt=pats of butter}}
+* Cook {{plink|cave eel}}s
+|freeplay39 =
+|members39 =
+* Bake {{plink|Potato with butter|txt=potatoes with butter}}
+* Brew {{plink|dragon bitter}}s
+* Build a {{ilink|Dragon bitter (barrel)|txt=Dragon bitter barrel}} (with {{SCP|Construction|36}})
+|freeplay40 =
+* Bake {{plink|cake}}s
+* Cook {{plink|lobster}}s
+|members40 =
+* Bake {{plink|tangled toad's legs}}
+* Required for {{SCP|Quest}} [[Recipe for Disaster/Freeing the Lumbridge Guide]]
+* Required to complete {{SCP|Diary}} [[Medium Morytania Diary]]
+|freeplay41 =
+|members41 =
+* Bake {{plink|chilli potato}}es
+* Cook {{plink|Cooked jubbly|txt=jubblies}}
+* Cook {{plink|Cooked graahk|txt=graahks}} (with 25 [[Rumours|Hunters' Rumours]] completed)
+* Required for {{SCP|Quest}} [[Recipe for Disaster/Freeing Skrach Uglogwee]]
+|freeplay42 =
+|members42 =
+* Cook {{plink|fried onions}} (topping ingredient)
+* Bake {{plink|chocolate bomb}}s
+* Required to complete {{SCP|Diary}} [[Medium Western Provinces Diary]]
+|freeplay43 =
+|members43 =
+* Cook {{plink|bass}}
+* Required to complete {{SCP|Diary}} [[Medium Kandarin Diary]]
+|freeplay44 =
+|members44 =
+* Brew {{plink|moonlight mead}}
+* Build a {{ilink|Chef's delight (barrel)|txt=Chef's delight barrel}} (with {{SCP|Construction|48}})
+|freeplay45 =
+* Bake {{plink|meat pizza}}s
+* Cook {{plink|swordfish}}
+|members45 =
+* Cook {{plink|Brawk fish (3)|txt=brawk fish}}
+* Cook {{plink|Phluxia bat (3)|txt=phluxia bats}}
+|freeplay46 =
+|members46 =
+* Cook {{plink|Fried mushrooms|txt=fried mushrooms}} (topping ingredient)
+* Prepare {{plink|catfish}} (with {{SCP|Quest}} [[Below Ice Mountain]] completed)
+|freeplay47 =
+|members47 =
+* Bake {{plink|Potato with cheese|txt=potatoes with cheese}}
+* Bake {{plink|fish pie}}s
+|freeplay48 =
+|members48 =
+* Churn {{plink|cheese}}
+* Cook {{plink|blue crab meat}}
+|freeplay49 =
+|members49 =
+* Brew {{plink|axeman's folly}}
+|freeplay50 =
+* Bake {{plink|chocolate cake}}s
+|members50 =
+|freeplay51 =
+|members51 =
+* Bake {{plink|egg potato}}es
+* Cook {{plink|Cooked kyatt|txt=kyatts}} (with 25 [[Rumours|Hunters' Rumours]] completed)
+|freeplay52 =
+|members52 =
+* Bake {{plink|Botanical pie|txt=botanical pie}}
+|freeplay53 =
+|members53 =
+* Cook {{plink|lava eel}}s (with {{SCP|Quest}} [[Heroes' Quest]] completed)
+* Required for {{SCP|Quest}} [[Heroes' Quest]]
+|freeplay54 =
+|members54 =
+* Brew {{plink|chef's delight}}
+|freeplay55 =
+* Bake {{plink|anchovy pizza}}s
+|members55 =
+|freeplay56 =
+|members56 =
+* Cook {{plink|swordtip squid}}s
+|freeplay57 =
+|members57 =
+* Cook {{plink|mushroom & onion}}s (topping ingredient)
+|freeplay58 =
+|members58 =
+* Bake {{plink|pitta bread}}
+|freeplay59 =
+|members59 =
+* Brew {{plink|slayer's respite}}
+* Cook {{plink|Cooked pyre fox|txt=pyre foxes}} (with 25 [[Rumours|Hunters' Rumours]] completed)
+|freeplay60 =
+|members60 =
+* Bake {{plink|mushroom pie}}s
+* Cook {{plink|curry}}
+* Cook {{plink|Kryket bat (4)|txt=kryket bats}}
+* Cook {{plink|Mycil fish (4)|txt=mycil fish}}
+|freeplay61 =
+|members61 =
+|freeplay62 =
+|members62 =
+* Cook {{plink|monkfish}} (with partial completion of {{SCP|Quest}} [[Swan Song]])
+* Required for {{SCP|Quest}} [[Swan Song]]
+* Required to complete {{SCP|Diary}} [[Hard Western Provinces Diary]]
+|freeplay63 =
+|members63 =
+|freeplay64 =
+|members64 =
+* Bake {{plink|mushroom potato}}es
+|freeplay65 =
+|members65 =
+* Bake {{plink|pineapple pizza}}s
+* Brew {{plink|wine of zamorak}}s
+|freeplay66 =
+|members66 =
+|freeplay67 =
+|members67 =
+* Cook {{plink|tuna and corn}} (topping ingredient)
+|freeplay68 =
+|members68 =
+* Bake {{plink|tuna potato}}es
+* Cook {{plink|Cooked sunlight antelope|txt=sunlight antelopes}} (with 50 [[Rumours|Hunters' Rumours]] completed)
+|freeplay69 =
+|members69 =
+* Cook {{plink|giant krill}}
+|freeplay70 =
+|members70 =
+* Bake {{plink|admiral pie}}s
+* Required for {{SCP|Quest}} [[Recipe for Disaster/Freeing King Awowogei]]
+|freeplay71 =
+|members71 =
+* Cook {{plink|jumbo squid}}s
+|freeplay72 =
+|members72 =
+* Dissect 3-5 {{plink|Zulrah's scales}} per {{plink|sacred eel}}
+* Required for {{SCP|Quest}} [[The Blood Moon Rises]]
+|freeplay73 =
+|members73 =
+* Bake {{plink|dragonfruit pie}}s
+* Cook {{plink|haddock}}
+|freeplay74 =
+|members74 =
+|freeplay75 =
+|members75 =
+* Cook {{plink|Murng bat (5)|txt=murng bats}}
+* Cook {{plink|Roqed fish (5)|txt=roqed fish}}
+|freeplay76 =
+|members76 =
+|freeplay77 =
+|members77 =
+* Cook {{plink|rainbow crab meat}}
+|freeplay78 =
+|members78 =
+|freeplay79 =
+|members79 =
+* Cook {{plink|yellowfin}}
+|freeplay80 =
+|members80 =
+* Cook {{plink|shark}}s
+* Dissect 4-6 {{plink|Zulrah's scales}} per {{plink|sacred eel}}
+* Required to complete {{SCP|Diary}} [[Elite Kandarin Diary]]
+|freeplay81 =
+|members81 =
+|freeplay82 =
+|members82 =
+* Cook {{plink|sea turtle}}s
+* Cook {{plink|Cooked dashing kebbit|txt=dashing kebbits}} (with 50 [[Rumours|Hunters' Rumours]] completed)
+|freeplay83 =
+|members83 =
+* Cook {{plink|halibut}}
+|freeplay84 =
+|members84 =
+* Cook {{plink|anglerfish}}
+* Required to complete {{SCP|Diary}} [[Elite Kourend & Kebos Diary]]
+|freeplay85 =
+|members85 =
+* Bake {{plink|wild pie}}s
+* Make an {{plink|Infernal harpoon}}
+* Required to complete {{SCP|Diary}} [[Elite Desert Diary]]
+|freeplay86 =
+|members86 =
+|freeplay87 =
+|members87 =
+* Cook {{plink|bluefin}}
+|freeplay88 =
+|members88 =
+* Dissect 5-7 {{plink|Zulrah's scales}} per {{plink|sacred eel}}
+|freeplay89 =
+|members89 =
+|freeplay90 =
+|members90 =
+* Cook {{plink|dark crab}}s
+* Cook {{plink|Kyren fish (6)|txt=kyren fish}}
+* Cook {{plink|Psykk bat (6)|txt=psykk bats}}
+* Required to complete {{SCP|Diary}} [[Elite Wilderness Diary]]
+|freeplay91 =
+|members91 =
+* Cook {{plink|manta ray}}s
+* Cook {{plink|marlin}}
+* Required to complete {{SCP|Diary}} [[Elite Ardougne Diary]]
+|freeplay92 =
+|members92 =
+* Cook {{plink|Cooked moonlight antelope|txt=moonlight antelopes}} (with 50 [[Rumours|Hunters' Rumours]] completed)
+|freeplay93 =
+|members93 =
+|freeplay94 =
+|members94 =
+|freeplay95 =
+|members95 =
+* Bake {{plink|summer pie}}s
+* Required to complete {{SCP|Diary}} [[Elite Varrock Diary]]
+|freeplay96 =
+|members96 =
+* Dissect 6-8 {{plink|Zulrah's scales}} per {{plink|sacred eel}}
+|freeplay97 =
+|members97 =
+|freeplay98 =
+|members98 =
+|freeplay99 =
+* [[Skill mastery]]
+|members99 =
+* Buy the {{plink|Cooking cape}} and {{plink|Cooking hood|txt=hood}} from the [[head chef]] in the [[Cooks' Guild]], and wear them
+}}
+{{Skill tables}}

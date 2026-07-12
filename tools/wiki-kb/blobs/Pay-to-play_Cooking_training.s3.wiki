@@ -1,0 +1,82 @@
+===Levels 1–30: Cooking fish===
+Alternatively, cook various fish for early experience. This is slower than cooking poison karambwan, but cheaper and less click-intensive.
+
+The fish needed for each level range are shown in the table below. Buy roughly 2.5 times more raw fish than the amount of successfully cooked fish needed, as the burn rate is fairly high at lower levels.
+{| class="wikitable align-center-1 align-center-2 align-center-3"
+!Levels
+!colspan="2" | Fish
+!XP each
+!XP total
+!Successfully cooked fish
+!Raw fish (approx.)
+!Price uncooked
+!Price cooked
+!Profit/Successfully cooked fish
+!Profit/XP (approx.)
+|-
+|1-5
+|{{plinkt|Sardine}}
+|40
+|388
+|10
+|25 {{plink|Raw sardine}}
+|{{Coins|{{GEP|Raw sardine}}}}
+|{{Coins|{{GEP|Sardine}}}}
+|{{Coins|{{GEP|Sardine}}-{{GEP|Raw sardine}}}}
+|{{Coins|({{GEP|Sardine}}-{{GEP|Raw sardine}}*2.5)/40}}
+|-
+|5-10
+|{{plinkt|Herring}}
+|50
+|766
+|16
+|40 {{plink|Raw herring}}
+|{{Coins|{{GEP|Raw herring}}}}
+|{{Coins|{{GEP|Herring}}}}
+|{{Coins|{{GEP|Herring}}-{{GEP|Raw herring}}}}
+|{{Coins|({{GEP|Herring}}-{{GEP|Raw herring}}*2.5)/50}}
+|-
+|10-15
+|{{plinkt|Mackerel}}
+|60
+|1,257
+|21
+|53 {{plink|Raw mackerel}}
+|{{Coins|{{GEP|Raw mackerel}}}}
+|{{Coins|{{GEP|Mackerel}}}}
+|{{Coins|{{GEP|Mackerel}}-{{GEP|Raw mackerel}}}}
+|{{Coins|({{GEP|Mackerel}}-{{GEP|Raw mackerel}}*2.5)/60}}
+|-
+|15-20
+|{{plinkt|Trout}}
+|70
+|2,059
+|30
+|75 {{plink|Raw trout}}
+|{{Coins|{{GEP|Raw trout}}}}
+|{{Coins|{{GEP|Trout}}}}
+|{{Coins|{{GEP|Trout}}-{{GEP|Raw trout}}}}
+|{{Coins|({{GEP|Trout}}-{{GEP|Raw trout}}*2.5)/70}}
+|-
+|20-25
+|{{plinkt|Pike}}
+|80
+|3,372
+|43
+|108 {{plink|Raw pike}}
+|{{Coins|{{GEP|Raw pike}}}}
+|{{Coins|{{GEP|Pike}}}}
+|{{Coins|{{GEP|Pike}}-{{GEP|Raw pike}}}}
+|{{Coins|({{GEP|Pike}}-{{GEP|Raw pike}}*2.5)/80}}
+|-
+|25-30
+|{{plinkt|Salmon}}
+|90
+|5,521
+|62
+|155 {{plink|Raw salmon}}
+|{{Coins|{{GEP|Raw salmon}}}}
+|{{Coins|{{GEP|Salmon}}}}
+|{{Coins|{{GEP|Salmon}}-{{GEP|Raw salmon}}}}
+|{{Coins|({{GEP|Salmon}}-{{GEP|Raw salmon}}*2.5)/90}}
+|}

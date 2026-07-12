@@ -1,0 +1,95 @@
+{{External|rs|rsc=Iron Scimitar}}
+{{Infobox Item
+|name = Iron scimitar
+|image = [[File:Iron scimitar.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A vicious, curved sword.
+|value = 112
+|weight = 1.814
+|respawn = 500
+|exchange = Yes
+|id = 1323
+}}
+
+[[File:Iron scimitar detail.png|left|130px]]
+The '''iron scimitar''' is a [[melee weapon]] that can be used in [[combat]]. It is stronger than the [[bronze scimitar]]. Players can make an iron scimitar with 20 [[Smithing]] using 2 [[iron bar]]s, giving 50 [[experience]].
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = +2
+|aslash = +10
+|acrush = -2
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = +1
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = +9
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 4
+|attackrange = 1
+|combatstyle = Slash Sword
+|image = [[File:Iron scimitar equipped male.png|120px]]
+|altimage = [[File:Iron scimitar equipped female.png|120px]]
+}}
+
+{{CombatStyles|Slash Sword|speed=4|attackrange=1}}
+
+==Creation==
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 20
+|skill1boostable = Yes
+|skill1exp = 50
+|members = No
+|ticks = 5
+|tools = Hammer
+|facilities = Anvil
+|mat1 = Iron bar
+|mat1quantity = 2
+|output1 = Iron scimitar
+}}
+
+==Treasure Trails==
+{{EmoteClueHeader}}
+{{EmoteClue|tier=easy|emote=Laugh|location=Crossroads south of [[Sinclair Mansion]], north-west of [[Camelot]]|item1=Iron scimitar|item2=leather cowl|item3=blue wizard robe}}
+{{EmoteClueBottom}}
+==Item sources==
+{{Drop sources|Iron scimitar}}
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Iron scimitar|location=[[Wilderness]] - [[Bone Yard]]|members=No|3214,3730|leagueRegion = Wilderness}}
+{{ItemSpawnLine|name=Iron scimitar|location=[[Ruins of Morra]] (must be [[telegrab]]bed)|members=Yes|1466,3513|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Iron scimitar|location=South-west corner of the south-western temple in [[the Stranglewood]] (must be [[telegrab]]bed)|members=Yes|1098,3339|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Iron scimitar|location=West of [[Ortus Farm]]|members=Yes|1500,3131|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Iron scimitar|location=Northern most villa in [[Aldarin]] - {{FloorNumber|uk=2}}|members=yes|1398,2977|plane=2|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Iron scimitar|location=[[Buccaneers' Haven]]|members=yes|2065,3692|spawns=1|leagueRegion = N/A}}
+{{ItemSpawnTableBottom}}
+
+===Shop locations===
+{{Store locations list|Iron scimitar}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 13 June 2005
+|update = RuneCraft Update and Tweaks
+|change = The item's examine was changed from "''A vicious curved sword.''" to "''A vicious, curved sword.''"
+}}
+{{Subject changes footer}}
+
+{{Slash weapons}}
+{{Iron equipment}}

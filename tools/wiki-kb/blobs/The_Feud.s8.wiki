@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|name = The Feud
+|image = [[File:The Feud reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Thieving|15,000}} [[Thieving]] [[experience]]
+*500 [[coins]]
+*An [[oak blackjack]]
+*A [[desert disguise]] (created during the quest)
+*A [[willow blackjack]] (as a drop from the [[tough guy]])
+*An [[adamant scimitar]] (as a drop from the [[bandit champion]])
+*Access to the [[Rogue Trader]] [[miniquest]] – Completing this will allow [[Ali Morrisane]] to sell [[blackjack]]s, various [[runes]], and different clothing from around the [[Kharidian Desert]]
+*The ability to pickpocket [[villager]]s, [[Bandit (Pollnivneach)|bandits]], and [[Menaphite thug]]s in Pollnivneach
+}}

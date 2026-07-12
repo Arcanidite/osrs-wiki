@@ -1,0 +1,120 @@
+==Courses==
+The following nine Agility courses are identified as Rooftop Agility Courses:
+<onlyinclude>
+{| class="wikitable sortable align-left-2 align-right-8" style="text-align:center;"
+! rowspan="2" |{{SCP|Agility}}
+! rowspan="2" |Course
+! rowspan="2" |Obstacles
+! rowspan="2" |Exp. per lap
+! rowspan="2" |Lap time<ref group="n">Including running back to the first obstacle. Measured in [[RuneScape clock|game ticks]], with 1 game tick being equal to 0.6 seconds.</ref>
+! colspan="3" |Hourly rates
+|-
+!Exp. per hour<ref group="n">These are the highest possible experience per hour rates, assuming perfect laps with no failures. Expect to get (slightly) lower rates, depending on Agility level and concentration.</ref>
+!{{plink|Mark of grace|txt=Marks of grace}}
+!Profit<ref group="n">If [[Mark of grace|marks of grace]] are used to buy [[amylase crystal]]s.</ref>
+|-
+|1
+|[[Draynor Village Rooftop Course]]
+|7
+|120
+|72t (43.2s)
+|10,000
+|10–13.8
+|{{Coins|{{GEP|Amylase crystal|10*13.8}}}}
+|-
+|20
+|[[Al Kharid Rooftop Course]]
+|8
+|216
+|107t (64.2s)
+|12,000
+|8–11.5
+|{{Coins|{{GEP|Amylase crystal|10*11.5}}}}
+|-
+|30
+|[[Varrock Rooftop Course]]
+|9
+|270
+|108–110t<ref group="n">It is possible to save 2 game ticks by running diagonally towards the 2nd gap obstacle after the wall obstacle.</ref> (64.8–66.0s)
+|14,000
+|8–11.3
+|{{Coins|{{GEP|Amylase crystal|10*11.3}}}}
+|-
+|40
+|[[Canifis Rooftop Course]]
+|8
+|240
+|73t (43.8s)
+|19,700
+|16–18<ref group="n">Notably, this rate stays the same at all levels.</ref>
+|{{Coins|{{GEP|Amylase crystal|10*18.0}}}}
+|-
+|50
+|[[Falador Rooftop Course]]
+|13
+|586
+|97t (58.2s)
+|35,000
+|10–12.1
+|{{Coins|{{GEP|Amylase crystal|10*12.1}}}}
+|-
+| rowspan="4" |60
+| rowspan="4" |[[Seers' Village Rooftop Course]]
+| rowspan="4" |6
+| rowspan="4" |570
+| rowspan="3" |73t (43.8s)
+| rowspan="3" |46,800
+|11–13.8 (base)
+|{{Coins|{{GEP|Amylase crystal|10*13.8}}}}
+|-
+|12-14.4 ([[Kandarin_Diary#Easy|easy diary]])
+|{{Coins|{{GEP|Amylase crystal|10*14.4}}}}
+|-
+|13-15 ([[Kandarin_Diary#Medium|medium diary]])
+|{{Coins|{{GEP|Amylase crystal|10*15.0}}}}
+|-
+|58–60t<ref group="n">This course is significantly faster when casting [[Camelot Teleport]] to the Seers' Village bank after each lap. The teleport location is unlocked upon completing the [[Kandarin Diary#Hard|hard Kandarin Diary]].</ref> (34.8–36.0s)
+| style="text-align:center;" |58,000
+|14–16.6 ([[Kandarin_Diary#Hard|hard diary]])
+|{{Coins|{{GEP|Amylase crystal|10*16.6}}}}
+|-
+| rowspan="2" |70
+| rowspan="2" |[[Pollnivneach Rooftop Course]]
+| rowspan="2" |9
+|890
+| rowspan="2" |101t (60.6s)
+|52,300
+|13-14 (base)
+|{{Coins|{{GEP|Amylase crystal|10*14}}}}
+|-
+|1,016
+|60,300 ([[Desert Diary#Hard|hard diary]])
+|16-18 ([[Desert Diary#Hard|hard diary]])
+|{{Coins|{{GEP|Amylase crystal|10*18}}}}
+|-
+| rowspan="2" |80
+| rowspan="2" |[[Rellekka Rooftop Course]]
+| rowspan="2" |7
+|780
+| rowspan="2" |85t (51.0s)
+|55,000
+|13–15.5 (base)
+| rowspan="2" |{{Coins|{{GEP|Amylase crystal|10*15.5}}}}
+|-
+|920
+|65,000 ([[Fremennik Diary#Hard|hard diary]])
+|16–19.5 ([[Fremennik Diary#Hard|hard diary]])
+|-
+| rowspan="2" |90
+| rowspan="2" |[[Ardougne Rooftop Course]]
+| rowspan="2" |7
+| rowspan="2" |889
+| rowspan="2" |76t (45.6s)
+| rowspan="2" |70,000
+|16–18.1 (base)
+|{{Coins|{{GEP|Amylase crystal|10*18.1}}}}
+|-
+| data-sort-value="22" |22 ([[Ardougne_Diary#Elite|elite diary]])
+| style="text-align:center;" |{{Coins|{{GEP|Amylase crystal|10*22}}}}
+|}
+<references group="n" /></onlyinclude>

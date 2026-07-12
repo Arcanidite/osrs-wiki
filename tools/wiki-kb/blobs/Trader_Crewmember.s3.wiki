@@ -1,0 +1,40 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=2500|buymultiplier=150|delta=20|bucket=No}}
+{{StoreLine|name=Pot|stock=5|restock=10}}
+{{StoreLine|name=Jug|stock=2|restock=100}}
+{{StoreLine|name=Empty jug pack|stock=6|gemw=no|restock=15}}
+{{StoreLine|name=Shears|stock=2|restock=100}}
+{{StoreLine|name=Bucket|stock=3|restock=10}}
+{{StoreLine|name=Empty bucket pack|stock=10|gemw=no|restock=10}}
+{{StoreLine|name=Bowl|stock=2|restock=50}}
+{{StoreLine|name=Cake tin|stock=2|restock=50}}
+{{StoreLine|name=Tinderbox|stock=2|restock=100}}
+{{StoreLine|name=Chisel|stock=2|restock=100}}
+{{StoreLine|name=Hammer|stock=5|restock=100}}
+{{StoreLine|name=Newcomer map|stock=5|gemw=No|restock=100}}
+{{StoreLine|name=Security book|stock=5|restock=100}}
+{{StoreLine|name=Rope|stock=2|restock=300}}
+{{StoreLine|name=Knife|stock=2|restock=100}}
+{{StoreLine|name=Pineapple|stock=15|restock=100}}
+{{StoreLine|name=Banana|stock=15|restock=100}}
+{{StoreLine|name=Orange|stock=10|restock=100}}
+{{StoreLine|name=Bucket of slime|stock=10|buy=N/A|gemw=No|restock=100}}
+{{StoreLine|name=Glassblowing pipe|stock=15|restock=100}}
+{{StoreLine|name=Bucket of sand|stock=10|restock=100}}
+{{StoreLine|name=Seaweed|stock=20|restock=100}}
+{{StoreLine|name=Soda ash|stock=10|restock=100}}
+{{StoreLine|name=Lobster pot|stock=20|restock=100}}
+{{StoreLine|name=Fishing rod|stock=20|restock=100}}
+{{StoreLine|name=Swamp paste|stock=30|restock=100}}
+{{StoreLine|name=Tyras helm|stock=25|restock=200}}
+{{StoreLine|name=Raw rabbit|stock=20|restock=100}}
+{{StoreLine|name=Right eye patch|stock=5|restock=100}}
+{{StoreLine|name=Bronze cannonball|displayname=Bronze cannonball|stock=250|restock=|gemw=No}}
+{{StoreTableBottom}}
+{{Reflist|group=t}}
+
+===Demonic Pacts League===
+The [[hunters' crossbow]] is only sold on [[Demonic Pacts League]] worlds in the [[Sunset Coast]] shop. [[Bronze cannonball]]s are not available.
+{{StoreTableHead|sellmultiplier=2500|buymultiplier=150|delta=20|namenotes=Demonic Pacts League|shopversion=(15)|bucket=no}}
+{{StoreLine|name=Hunters' crossbow|stock=5|restock=N/A}}
+{{StoreTableBottom}}

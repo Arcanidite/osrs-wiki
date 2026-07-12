@@ -1,0 +1,99 @@
+{{External|rs|rsc=Bronze Scimitar}}
+{{Infobox Item
+|name = Bronze scimitar
+|image = [[File:Bronze scimitar.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A vicious, curved sword.
+|value = 32
+|weight = 1.814
+|respawn = 100
+|exchange = Yes
+|id = 1321
+}}
+[[File:Bronze scimitar detail.png|left|120px]]
+The '''bronze scimitar''' is a [[scimitar]] made of [[Bronze equipment|bronze]]. The weakest scimitar in the game, it requires level 1 [[Attack]] to wield. Players can make a bronze scimitar with level 5 [[Smithing]] using 2 [[bronze bar]]s, granting 25 Smithing [[experience]]. Players can purchase this scimitar from [[Zeke's Superior Scimitars]] in [[Al Kharid]].
+
+One can be found for free on the top floor of a house in [[Rimmington]].
+
+There is also a bronze scimitar spawn in [[Corsair Cove]], in the hut with [[Arsen the Thief]] and [[Cabin Boy Colin]].
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = +1
+|aslash = +7
+|acrush = -2
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = +1
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = +6
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 4
+|attackrange = 1
+|combatstyle = Slash Sword
+|image = [[File:Bronze scimitar equipped male.png|120px]]
+|altimage = [[File:Bronze scimitar equipped female.png|120px]]
+}}
+
+{{CombatStyles|Slash Sword|speed=4|attackrange=1}}
+
+==Creation==
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 5
+|skill1boostable = Yes
+|skill1exp = 25
+|members = No
+|ticks = 5
+|tools = Hammer
+|facilities = Anvil
+|mat1 = Bronze bar
+|mat1quantity = 2
+|output1 = Bronze scimitar
+}}
+
+==Item sources==
+{{Drop sources|Bronze scimitar}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Bronze scimitar|location=[[Corsair Cove]] - [[Arsen the Thief]]'s house ({{FloorNumber|uk=1}})|members=No|plane=1
+|2557,2855|leagueRegion=Kandarin}}
+{{ItemSpawnLine|name=Bronze scimitar|location=[[Giants' Plateau]]|members=No|3362,3154|leagueRegion=Desert}}
+{{ItemSpawnLine|name=Bronze scimitar|location=[[Rimmington]] - [[Anja]] and [[Hengel]]'s house ({{FloorNumber|uk=1}})|members=No|plane=1
+|2965,3211|leagueRegion=Asgarnia}}
+{{ItemSpawnTableBottom}}
+
+===Shop locations===
+{{Store locations list|Bronze scimitar}}
+
+==Treasure Trails==
+{{EmoteClueHeader}}
+{{EmoteClue|tier=easy|emote=Jig|location=Behind the bar on [[the Pandemonium]]|item1=Right eye patch|item2=Bronze scimitar}}
+{{EmoteClueBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 13 June 2005
+|update = RuneCraft Update and Tweaks
+|change = The item's examine was changed from "''A vicious curved sword.''" to "''A vicious, curved sword.''"
+}}
+{{Subject changes footer}}
+
+{{Slash weapons}}
+{{Bronze equipment}}

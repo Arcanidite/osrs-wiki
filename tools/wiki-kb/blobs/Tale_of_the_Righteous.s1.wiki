@@ -1,0 +1,29 @@
+==Details==
+{{Quest details
+|start = Talk to [[Phileas Rimor]] in his house west of [[The Cloak and Stagger]] tavern in [[Shayzien]].
+|startmap = 1542,3570
+|difficulty = Intermediate
+|description = Over a thousand years ago, King Shayzien VII ordered an expedition to Mount Quidamortem. The expedition never returned and it was assumed that all members perished in the field. However, a recent discovery suggests this may not have been the case. Phileas Rimor is the descendant of the expedition leader and he is desperate to discover the truth. Join him and delve into a conspiracy a thousand years in the making in "Tale of the Righteous".
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Client of Kourend]]
+***[[X Marks the Spot]]
+*{{SCP|Strength|16|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Mining|10|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = *A [[pickaxe]]
+*A [[ranged]] weapon with ammunition. Darts and throwing knives also work.
+*Runes for 2-3 casts of any [[magic]] [[combat spell]]
+*A [[melee]] weapon of any kind ([[pickaxe]] will work)
+*[[Rope]]
+|recommended = *{{SCP|Combat|20|link=yes}}
+*[[Stamina potion]] and [[weight-reducing clothing]]
+*Any kind of [[antipoison]] or [[Shayzien armour (tier 5)]] as you will encounter various types of poison dealing [[Lizardman]], including the final boss.
+*[[Food]] for low level players without a shortcut to the top of [[Mount Quidamortem]]
+* 20 [[coins]] to use the [[Lovakengj Minecart Network]] and travel to [[Mount Quidamortem]] (free if [[The Forsaken Tower]] is completed)
+*A charged [[Xeric's talisman]] for teleporting to [[Mount Quidamortem]] (requires unlocking it with an [[Ancient tablet]]) and [[Xeric's Lookout]].
+*Ability to teleport to [[Arceuus Library]].
+|kills = [[Corrupt Lizardman]] (level 46)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kourend}} {{okay}} will auto-complete the quest
+</poem>
+}}

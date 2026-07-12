@@ -1,0 +1,10 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=700|delta=30}}
+{{StoreLine|name=Vial|stock=800|restock=100}}
+{{StoreLine|name=Empty vial pack|stock=800|restock=50|gemw=no}}
+{{StoreLine|name=Vial of water|stock=750|restock=100}}
+{{StoreLine|name=Water-filled vial pack|stock=750|restock=50|gemw=no}}
+{{StoreLine|name=Pestle and mortar|stock=3|restock=100}}
+{{StoreLine|name=Eye of newt|stock=800|restock=20}}
+{{StoreLine|name=Eye of newt pack|stock=100|gemw=no|restock=100}}
+{{StoreTableBottom}}

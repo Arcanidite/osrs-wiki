@@ -1,0 +1,72 @@
+==Easy==
+{| class="mw-collapsible mw-collapsed"
+! style="text-align:left;" | Task locations
+|-
+|
+{{Map|mtype=pin|zoom=0|width=400|height=400|align=right
+|x:2683,y:3326,title:[[Wizard Cromperty]],desc:1. Have [[Wizard Cromperty]] teleport you to the [[Rune Essence mine]]
+|x:2667,y:3310,title:[[Ardougne Baker's Stall.|Baker's Stall]],desc:2. Steal a [[cake]] from the [[Ardougne Baker's Stall.|Ardougne market stalls]].
+|x:2656,y:3301,title:[[Silk merchant]],desc:3. Sell [[Silk]] to [[Silk merchant|Silk trader]]{{sic}} in [[Ardougne]] for 60 coins each.
+|x:2618,y:3309,title:[[Altar]],desc:4. Use the altar in [[East Ardougne]]'s [[Ardougne church|church]].
+|x:2676,y:3170,title:[[Fishing Trawler]],desc:5. Go out fishing on the [[Fishing Trawler]]
+|x:2516,y:3356,title:[[Combat Training Camp]],desc:6. Enter the [[Combat Training Camp]] north of [[West Ardougne|W. Ardougne]].
+|x:2678,y:3153,title:[[Tindel Marchant]],desc:7. Have [[Tindel Marchant]] identify a [[Rusty sword|Rusted Sword]]{{sic}} for you.
+|x:2561,y:3311,title:[[Lever (Ardougne)|Ardougne lever]],desc:8. Use the [[Ardougne teleport lever|Ardougne Lever]] to teleport to the [[Wilderness]].
+|x:2567,y:3083,title:[[Aleck's Hunter Emporium.|Aleck's Hunter Emporium]],desc:9. View [[Aleck's Hunter Emporium.|Aleck's Hunter Emporium]] in [[Yanille]].
+|x:2621,y:3292,title:[[Probita]],desc:10. Check what [[pet]]s you have Insured with [[Probita]] in [[Ardougne]].
+}}
+|}
+
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Ardougne" data-diary-tier="Easy"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Have [[Wizard Cromperty]] teleport you to the [[Rune Essence mine]].
+''Note: You can right-click him to teleport.
+|
+*{{SCP|Quest}} Completion of [[Rune Mysteries]]
+|-
+|2. Steal a [[cake]] from the [[Ardougne Baker's Stall.|Ardougne market stalls]].
+|
+*{{SCP|Thieving|5|link=y}}
+|-
+|3. Sell [[Silk]] to [[Silk merchant|Silk trader]]{{sic}} in [[Ardougne]] for 60 coins each.
+''Note: You must first offer to sell your silk for 120 coins, then counter his bid with 60 coins. He'll refuse to speak to you if you've just stolen from [[Silk stall|his silk stall]], and his behaviour only resets after you've spent at least ten consecutive minutes outside of [[Ardougne]] without logging off.''
+|
+*[[Silk]]
+|-
+|4. Use the altar in [[East Ardougne]]'s [[Ardougne church|church]].
+''Note: Requires you to have less than full [[Prayer points]].''
+|{{NA|None}}
+|-
+|5. Go out fishing on the [[Fishing Trawler]]
+''Note: You only have to start this minigame, completing it is optional.
+|{{NA|None}}
+|-
+|6. Enter the [[Combat Training Camp]] north of [[West Ardougne|W. Ardougne]].
+|
+*{{SCP|Quest}} Completion of [[Biohazard]]
+|-
+|7. Have [[Tindel Marchant]] identify a [[Rusty sword|Rusted Sword]]{{sic}} for you.
+''Note: There is a 1/100 chance the sword turns out to be nothing, in which case you'll have to bring a new one.
+|
+*[[Rusty sword]] and 100 [[coins]]
+|-
+|8. Use the [[Ardougne teleport lever|Ardougne Lever]] to teleport to the [[Wilderness]].
+''Note: You can pull the [[Lever (Deserted Keep)|lever]] there to return.
+|{{NA|None}}
+|-
+|9. View [[Aleck's Hunter Emporium.|Aleck's Hunter Emporium]] in [[Yanille]].
+|{{NA|None}}
+|-
+|10. Check what [[pet]]s you have Insured with [[Probita]] in [[Ardougne]].
+''Note: You can right-click her to check.
+|{{NA|None}}
+|}
+
+===Rewards===
+*[[Ardougne cloak 1]]:
+**Unlimited teleports to the [[Ardougne Monastery]]
+*[[Antique lamp (easy)|Antique lamp]] worth 2,500 [[experience]] in any skill of at least level 30
+*Earn twice as many [[death rune]]s from trading in [[Cat|cats]] to [[Civilian|civilians]] in [[West Ardougne]]
+*Drops from [[Jubster]]s and [[Frogeel]]s will be [[noted]] in the [[Creature Creation]] activity

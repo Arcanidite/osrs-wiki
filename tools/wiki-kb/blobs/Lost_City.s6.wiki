@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Lost City
+|image = [[File:Lost City reward scroll.png|centre]]
+|qp = 3
+|rewards = 
+*Access to [[Zanaris]]
+*Ability to buy and wield [[dragon longsword]]s and [[dragon dagger]]s (with level 60 [[Attack]])
+*Ability to make [[cosmic rune]]s with the [[Runecraft]] skill
+*A permanent portal to [[Puro-Puro]] in the wheat field east of the [[fairy ring]] in [[Zanaris]].
+
+Unlocks:
+* [[Tree spirit]] accessible in the [[Nightmare Zone]].
+}}

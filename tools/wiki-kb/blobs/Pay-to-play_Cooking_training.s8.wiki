@@ -1,0 +1,115 @@
+===Levels 30–99: Cooking fish===
+Cooking various fish is a cheap or profitable low-effort alternative to the faster methods. Cooking an inventory of fish takes around 1 minute and 14 seconds in the Hosidius Kitchen, including banking.
+
+The [[cooking gauntlets]] from the [[Family Crest]] quest reduce the burn rate for [[lobster]]s, [[swordfish]], [[monkfish]], [[shark]]s, and [[anglerfish]] when worn. Having the gauntlets is required for optimal rates when cooking these fish. Expect much lower rates without the gauntlets.
+
+Completing the [[Kourend & Kebos Diary#Easy|easy Kourend & Kebos Diary]] grants access to the cooking ranges in the [[Hosidius Kitchen]]. They provide a 5% increased chance of successfully cooking food over standard cooking ranges. This is increased to 10% after completing the [[Kourend & Kebos Diary#Elite|elite Kourend & Kebos Diary]], which requires level 84 Cooking (boostable). Cooking fish in the Hosidius Kitchen offers comparable or slightly higher experience rates than at the ranges in [[Myths' Guild]] or [[Mor Ul Rek]] because of the increased cooked rate, despite the ranges being slightly further away from a bank. The Hosidius ranges remain comparable or better until level 93, after which it becomes faster to cook anglerfish on a normal range.
+
+The fish and experience needed for each level range are shown in the table below. The experience rates assume 1,365 fish cooked per hour in the Hosidius Kitchen, or 1,435 fish cooked per hour in Myths' Guild or Mor Ul Rek. The rates assume wearing the cooking gauntlets (where applicable) and using the Hosidius kitchen unless noted otherwise. Cooking in the Hosidius kitchens assumes completion of the elite [[Kourend & Kebos Diary]] from level 79 Cooking onwards (with a +5 boost to level 84). Experience and profit rates take the burn rates into account. The actual amounts of raw fish needed can vary depending on luck, so slightly more or less fish may be needed. Swordfish and monkfish offer very similar rates for levels 68–80, so choose whichever is more profitable.
+
+{| class="wikitable align-center-1 align-center-2 align-center-3 align-center-4" style="text-align:right;"
+!Levels
+!colspan="2" | Fish
+!XP each
+!Approx. XP/h (w/o burns)
+!XP total
+!Raw fish needed
+!Cooked fish needed
+!Price raw
+!Price cooked
+!Profit total
+!Profit/XP
+|-
+|30–40
+|{{plinkt|Tuna}}
+|100
+|85,000–100,000
+(143,500)
+|23,861
+|340
+|239
+|{{Coins|{{GEP|Raw tuna}}}}
+|{{Coins|{{GEPT|Tuna}}}}
+|{{Coins|({{GEPT|Tuna}}*239-{{GEP|Raw tuna}}*340)}}
+|{{Coins|({{GEPT|Tuna}}*239-{{GEP|Raw tuna}}*340)/(100*239)}}
+|-
+|40–68
+|{{plinkt|Lobster}}<ref group="n">The rates assume using the Hosidius kitchen for levels 40–61, and Rogues' Den for levels 61–68.</ref>
+|120
+|120,000–165,000
+(172,000)
+|567,808
+|4,970
+|4,732
+|{{Coins|{{GEP|Raw lobster}}}}
+|{{Coins|{{GEPT|Lobster}}}}
+|{{Coins|({{GEPT|Lobster}}*4732-{{GEP|Raw lobster}}*4970)}}
+|{{Coins|({{GEPT|Lobster}}*4732-{{GEP|Raw lobster}}*4970)/(120*4732)}}
+|-
+|68–80
+|{{plinkt|Swordfish}}<ref group="n">The rates assume using the Hosidius kitchen for levels 68–77, and Rogues' Den for levels 77–80. In addition, cooking gauntlets do not affect the burn rate at the Hosidius kitchen for cooking swordfish.</ref>
+|140
+|165,000–200,000
+(200,900)
+|1,381,036
+|10,186 
+|9,865
+|{{Coins|{{GEP|Raw swordfish}}}}
+|{{Coins|{{GEPT|Swordfish}}}}
+|{{Coins|({{GEPT|Swordfish}}*9865-{{GEP|Raw swordfish}}*10186)}}
+|{{Coins|({{GEPT|Swordfish}}*9865-{{GEP|Raw swordfish}}*10186)/(140*9865)}}
+|-
+|68–80
+|{{plinkt|Monkfish}}
+|150
+|165,000–200,000
+(215,200)
+|1,381,036
+|9,962
+|9,207
+|{{Coins|{{GEP|Raw monkfish}}}}
+|{{Coins|{{GEPT|Monkfish}}}}
+|{{Coins|({{GEPT|Monkfish}}*9207-{{GEP|Raw monkfish}}*9962)}}
+|{{Coins|({{GEPT|Monkfish}}*9207-{{GEP|Raw monkfish}}*9962)/(150*9207)}}
+|-
+|80–84
+|{{plinkt|Shark}}
+|210
+|275,000–285,000
+(301,300)
+|965,305
+|4,720
+|4,597
+|{{Coins|{{GEP|Raw shark}}}}
+|{{Coins|{{GEPT|Shark}}}}
+|{{Coins|({{GEPT|Shark}}*4597-{{GEP|Raw shark}}*4720)}}
+|{{Coins|({{GEPT|Shark}}*4597-{{GEP|Raw shark}}*4720)/(210*4597)}}
+|-
+|84–99
+|{{plinkt|Anglerfish}}<ref group="n">The rates assume using the Hosidius kitchen for levels 84–93, and Rogues' Den for levels 93–99.</ref>
+|230
+|305,000–330,000
+(330,000)
+|10,083,058
+|44,400
+|43,840
+|{{Coins|{{GEP|Raw anglerfish}}}}
+|{{Coins|{{GEPT|Anglerfish}}}}
+|{{Coins|({{GEPT|Anglerfish}}*43840-{{GEP|Raw anglerfish}}*44400)}}
+|{{Coins|({{GEPT|Anglerfish}}*43840-{{GEP|Raw anglerfish}}*44400)/(230*43840)}}
+|-
+|91–99
+|{{plinkt|Manta ray}}<ref group="n">The rates assume using the Hosidius kitchen for levels 91–99.</ref>
+|216.3
+|285,000–300,000
+(310,000)
+|7,131,600
+|37,900
+|32,980
+|{{Coins|{{GEP|Raw manta ray}}}}
+|{{Coins|{{GEPT|Manta ray}}}}
+|{{Coins|({{GEPT|Manta ray}}*32980-{{GEP|Raw manta ray}}*37900)}}
+|{{Coins|({{GEPT|Manta ray}}*32980-{{GEP|Raw manta ray}}*37900)/(216.3*43840)}}
+|}
+
+<references group="n" />

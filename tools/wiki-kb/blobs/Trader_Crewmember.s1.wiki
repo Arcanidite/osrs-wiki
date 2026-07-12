@@ -1,0 +1,180 @@
+==Locations==
+{{Incomplete|Needs Sailing locations (Pandemonium, Summer Shore, Deepfin, Port Roberts)}}
+{{LocTableHead}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Musa Point]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2954,y:3156|x:2954,y:3157
+|mtype = pin
+|leagueRegion = Karamja 
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Port Phasmatys]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3701,y:3502|x:3701,y:3503
+|mtype = pin
+|leagueRegion = Morytania
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Mos Le'Harmless]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3672,y:2930|x:3671,y:2930
+|mtype = pin
+|leagueRegion = Morytania
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Ship Yard]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3001,y:3033|x:3001,y:3034
+|mtype = pin
+|leagueRegion = Karamja
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Port Khazard]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2673,y:3144|x:2675,y:3144
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Catherby]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2796,y:3415|x:2797,y:3415
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Port Sarim]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3042,y:3192|x:3039,y:3193
+|mtype = pin
+|leagueRegion = Asgarnia
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Land's End]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1497,y:3404|x:1497,y:3403
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Port Piscarilius]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1808,y:3681|x:1807,y:3676
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Corsair Cove]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2589,y:2851|x:2587,y:2851
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Prifddinas]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2157,y:3330|x:2157,y:3329
+|mtype = pin
+|leagueRegion = Tirannwn
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Brimhaven]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2759,y:3239|x:2760,y:3239
+|mtype = pin
+|leagueRegion = Karamja
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Port Tyras]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2145,y:3122|x:2144,y:3122
+|mtype = pin
+|leagueRegion = Tirannwn
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Civitas illa Fortis]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1742,y:3133|x:1741,y:3137
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Sunset Coast]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1514,y:2972|x:1515,y:2975
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Trader Crewmember
+|location = [[Aldarin]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1455,y:2969|x:1452,y:2968
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocTableBottom}}

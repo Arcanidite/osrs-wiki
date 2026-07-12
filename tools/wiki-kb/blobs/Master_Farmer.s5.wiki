@@ -1,0 +1,10 @@
+===Pickpocketing info===
+{{Thieving info
+|name = Master Farmer
+|level = 38
+|xp = 43
+|type = Pickpocket
+|timename = [[Stun_(status)#Thieving|Stun]] Timer
+|time = 5s
+|damage = 3
+}}

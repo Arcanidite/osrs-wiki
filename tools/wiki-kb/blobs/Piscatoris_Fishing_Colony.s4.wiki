@@ -1,0 +1,4 @@
+=== Skill training spots ===
+The colony has long been a popular spot to train [[Fishing]] for higher-level players capable of completing the quest due to the experience rates of fishing for monkfish and the fishing spots' proximity to the colony [[Piscatoris bank|bank]]. In addition, a hunter area is located south of the colony. Players who have completed [[Swan Song]] may find the bank here useful when training [[Hunter]] in the [[Piscatoris Hunter area]].
+
+After completing the [[quest]], players may fish for monkfish from any of the [[fishing spots]] along the colony's northern coast. Players are also able to fish for tuna and swordfish at these same fishing spots using a [[harpoon]], though this is rarely done as better spots with fewer quest requirements exist for fishing of this type.

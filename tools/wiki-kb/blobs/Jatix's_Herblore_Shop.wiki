@@ -1,0 +1,40 @@
+{{External|rs=Jatix's Herblore Shop|rsc=Jatix's Olde Herbalist}}
+{{Infobox Shop
+|name = Jatix's Herblore Shop.
+|image = [[File:Jatix's Herblore Shop..png|300px]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|icon = [[File:Herbalist icon.png]]
+|location = [[Taverley]]
+|owner = [[Jatix]]
+|special = Herbalist
+|map = {{Map|name=Jatix's Herblore Shop.|mtype=polygon|2897,3432|2895,3430|2895,3427|2897,3425|2900,3425|2902,3427|2902,3430|2900,3432}}
+|leagueRegion = Asgarnia
+}}
+'''Jatix's Herblore Shop''' is a shop in [[Taverley]] owned by [[Jatix]] that sells [[Herblore]] supplies. This shop sells empty [[vial]]s and [[eye of newt|eyes of newt]] in packs.
+
+[[Sanfew]], who plays a part in various quests, is upstairs on the {{FloorNumber|uk=1}}.
+
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=700|delta=30}}
+{{StoreLine|name=Vial|stock=800|restock=100}}
+{{StoreLine|name=Empty vial pack|stock=800|restock=50|gemw=no}}
+{{StoreLine|name=Vial of water|stock=750|restock=100}}
+{{StoreLine|name=Water-filled vial pack|stock=750|restock=50|gemw=no}}
+{{StoreLine|name=Pestle and mortar|stock=3|restock=100}}
+{{StoreLine|name=Eye of newt|stock=800|restock=20}}
+{{StoreLine|name=Eye of newt pack|stock=100|gemw=no|restock=100}}
+{{StoreTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 23 May 2019
+|update = Hosidius Rework and Deadman Beta
+|change = The main [[Herblore shops]], such as Jatix's shop in [[Taverley]], now stock water-filled vials as well as empty ones.
+}}
+{{Subject changes footer}}
+
+{{Taverley}}
+{{Shops}}

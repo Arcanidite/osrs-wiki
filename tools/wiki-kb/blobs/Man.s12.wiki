@@ -1,0 +1,10 @@
+===Pickpocketing info===
+{{Thieving info
+|name = Man
+|level = 1
+|xp = 8
+|type = Pickpocket
+|timename = [[Stun_(status)#Thieving|Stun]] Timer
+|time = 4.8s
+|damage = 1
+}}

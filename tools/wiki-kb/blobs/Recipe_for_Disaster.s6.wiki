@@ -1,0 +1,29 @@
+==Rewards==
+{{Quest rewards
+|name = Recipe for Disaster
+|image = [[File:Recipe for Disaster (Defeating the Culinaromancer) reward scroll.png|centre]]
+In total, completing all 10 subquests for "Recipe for Disaster" awards:
+|qp = 10
+|rewards = 
+*An [[Antique lamp (Recipe for Disaster)|antique lamp]], which grants 20,000 experience to any skill above 50 (can be banked for later use)
+*Access to the following areas:
+**[[Mogre Camp]]
+**[[Evil Chicken's Lair]]
+*Ability to dive for crabs
+*Ability to cook [[crab meat]]
+*Ability to catch [[hell-rat]]s
+*Ability to own a [[hellcat]]
+*Ability to add coloured spices to [[stew]]s of any sort
+*Ability to use the boat trip to travel between [[Karamja]] and [[Feldip Hills]]
+*[[Ape Atoll Teleport (standard)|Ape Atoll Teleport]] spell
+*Full access to [[Culinaromancer's Chest]]
+**Access to [[Kitchen weaponry]]
+**Access to the banking chest (under Lumbridge Castle)
+**Access to a food store in the [[Culinaromancer's Chest]]
+**Access to buy [[Barrows gloves]]
+
+Unlocks:
+* [[Evil Chicken]] accessible in the [[Nightmare Zone]] on completion of [[Recipe for Disaster/Freeing Sir Amik Varze|Recipe for Disaster - Freeing Sir Amik Varze]] subquest.
+* [[Agrith-Na-Na]], [[Flambeed]], [[Karamel]], [[Dessourt]], [[Gelatinnoth Mother]], [[Culinaromancer]] accessible in the [[Nightmare Zone]] after quest completion.
+
+}}

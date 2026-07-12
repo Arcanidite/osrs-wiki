@@ -1,0 +1,15 @@
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Bandit (Pollnivneach)
+|location = [[Pollnivneach]]
+|levels = 41, 56
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3354,y:2987|x:3354,y:2994|x:3354,y:3000|x:3357,y:3001|x:3360,y:2999|x:3361,y:3003|x:3362,y:2988|x:3367,y:2997|x:3371,y:2984
+|mtype = pin
+|leagueRegion = Desert
+|dropversion = Bearded,No beard
+}}
+{{LocTableBottom}}

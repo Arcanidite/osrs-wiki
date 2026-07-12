@@ -1,0 +1,128 @@
+{{External|rs}}
+{{Redirect|Pisc|the port in [[Great Kourend]]|Port Piscarilius}}
+{{Infobox Location
+|name = Piscatoris Fishing Colony
+|image = [[File:Piscatoris Fishing Colony.png|300px]]
+|release = [[2 May]] [[2006]]
+|update = Return of the Wise Old Man!
+|members = Yes
+|location = [[Piscatoris]]
+|race = [[Human]]s, [[Sea troll]]s
+|teleport = {{*}} [[Piscatoris teleport]]<br/>{{*}} [[Western banner 3]]/[[Western banner 4|4]]
+|music = * [[Making Waves]]
+* [[Last Stand (music track)|Last Stand]] (during [[Swan Song]]
+|map = {{Map|name=Piscatoris Fishing Colony|x=2332|y=3683|height=350|width=300|zoom=2}}
+|leagueRegion = Kandarin
+}}
+[[File:Piscatoris icon detail.png|left|130px]]
+{{Relativelocation
+|location = Piscatoris Fishing Colony
+|north = Neitiznot
+|west = Western Ocean
+|south = Piscatoris Hunter area
+|east = Lighthouse
+}}
+The '''Piscatoris Fishing Colony''' is a settlement in the northern-most part of [[Piscatoris]]. Despite Piscatoris referring to the larger area, the settlement is often just called Piscatoris instead. [[Swan Song]] must be partially completed in order to enter the colony, though the area will be instanced until the quest is completed.
+
+==Transportation==
+The Piscatoris Fishing colony can be reached through several teleportation methods, listed here in order of shortest run to longest:
+
+* {{Plink|Western banner 3}} or {{Plink|Western banner 4|txt=4}}  — centre of the colony.
+* {{Plink|Piscatoris teleport}} — colony entrance.
+* {{Plink|Fairy ring|pic=Fairy ring (Construction) icon}} {{Fairycode|AKQ}} — Hunter area, shortly south of the entrance.
+* {{Plink|Necklace of passage}} — Outpost, well south of [[Kathy Corkat|Kathy]].
+
+[[Kathy Corkat]], outside of the west fence of the [[Tree Gnome Stronghold]], will ferry players up the river for 50 [[coins]], or for free after completion of [[Swan Song]].
+
+Players can also moor a [[boat]] on the north-western size of the colony, with 75 [[Sailing]] and full completion of Swan Song.
+
+== History ==
+{{LoreSources|Swan Song|Herman Caranos|Devin Mendelberg|George Laxmeister|dialogue2=yes|dialogue3=yes|dialogue4=yes}}
+
+The colony of Piscatoris is formed of people from all corners of [[Gielinor]]. The colony once thrived on the [[monkfish]] industry, due to being the only place in the world they can be caught. This prosperity was challenged when the colony came under attack from [[sea troll]]s, and the leader of the colony sent many of its residents away for their safety. 
+
+After an adventurer disburdened the town of the trolls, the colonists found themselves catching more monkfish than ever before, as the monkfish no longer had any natural predators. However, the evacuated colonists have yet to return, and [[skeleton mages]] have taken up residence in their dormitories, complicating the prospect of return.
+
+== Buildings ==
+{| class="wikitable"
+!Building
+!Description
+|-
+|Dining room
+|An empty building featuring a [[sink]] and a [[range]].
+|-
+|Herman's office
+|An office where players can find "[[Herman Caranos|Hermie]]" and [[Herman's book|his book]].
+|-
+|Metalworking building
+|A building with [[Ramara du Croissant|Ramara]], containing lots of machinery and a furnace.
+|-
+|Skeleton hall
+| rowspan="2" |Two buildings occupied by non-aggressive [[Skeleton Mage|skeleton mages]]. The mages have a meager drop table, and a cannon is difficult to set up for farming the [[skeleton champion scroll]], making these buildings poor locations for training. There are no other features in these buildings beyond a [[water source]].
+|-
+|Skeleton room
+|-
+|[[Piscatoris bank]]
+|The bank of Piscatoris, ran by [[Arnold Lydspor]].
+|}
+
+=== Skill training spots ===
+The colony has long been a popular spot to train [[Fishing]] for higher-level players capable of completing the quest due to the experience rates of fishing for monkfish and the fishing spots' proximity to the colony [[Piscatoris bank|bank]]. In addition, a hunter area is located south of the colony. Players who have completed [[Swan Song]] may find the bank here useful when training [[Hunter]] in the [[Piscatoris Hunter area]].
+
+After completing the [[quest]], players may fish for monkfish from any of the [[fishing spots]] along the colony's northern coast. Players are also able to fish for tuna and swordfish at these same fishing spots using a [[harpoon]], though this is rarely done as better spots with fewer quest requirements exist for fishing of this type.
+
+=== Spawns ===
+There are no direct spawns in the colony. However, there are two [[Net|nets]] in the north-east corner of the area, where [[seaweed]] can be collected every 3 seconds. This can be a useful method of obtaining seaweed, given the bank nearby.
+
+==Sailing info==
+Players can [[Mooring point|dock]] at Piscatoris with level 75 [[Sailing]] and completion of [[Swan Song]]. The dock offers the following utilities for sailors:
+
+* [[File:Salvaging_station_map_icon.png|link=Salvaging_station]] [[Salvaging station]]
+* [[File:Ledger_table_icon.png|link=Ledger_table]] [[Ledger table]]
+
+==Inhabitants==
+
+=== Personalities ===
+*{{Chatl|Arnold Lydspor}}, a banker and storekeeper thought to be a former barbarian.
+*{{Chatl|Devin Mendelberg}}, a native of [[Morytania]] who helps [[Franklin Caranos|Franklin]] with repair work.
+*{{Chatl|Franklin Caranos}}, a handyman who will buy [[iron sheet]]s for 20 [[GP]] each.
+*{{Chatl|George Laxmeister}}, a talkative citizen who gossips about his neighbours.
+*{{Chatl|Herman Caranos}}, an experienced fisherman who founded, and now runs, the colony.
+*{{Chatl|Kathy Corkat}}, a ferrywoman who transports players between the colony and [[Eagles' Peak (mountain)|Eagles' Peak]].
+*{{Chatl|Port master|pic=Port master (Piscatoris) chathead}}, who helps players with various [[Sailing]] tasks.
+*{{Chatl|Ramara du Croissant}}, a former [[Ardougne|Ardougnian]] baker who abandoned her stall to live in Piscatoris.
+The docks will also host a [[crewmate]] from the player's [[Sailing book|Sailing]] crew, if applicable.
+
+=== Monsters ===
+
+* [[Skeleton mage]] (x11)
+
+==Quests==
+*[[Swan Song]]
+
+== Music ==
+{| class="wikitable"
+!Name
+!Unlock location
+!Music track
+|-
+|[[Last Stand (music track)|Last Stand]]
+|Piscatoris, when fighting the [[Sea Troll Queen|sea troll queen]]
+|[[File:Last Stand.ogg|frameless]]
+|-
+|[[Making Waves]]
+|Piscatoris
+|[[File:Making Waves.ogg|frameless]]
+|}
+
+==Trivia==
+*Excluding islands, Piscatoris was previously the most north-western settlement on ''Old School RuneScape'' map, until the release of [[Great Kourend]] on [[Update:Zeah: Great Kourend|7 January 2016]].
+*The word ''piscatoris'' comes from the Latin ''piscator'', meaning "fisherman." ''Piscatoris'' is the genitive form, literally meaning "the fisherman's" or "of the fisherman."
+*The Latin name for the Northern European species of monkfish is ''lophius piscatorius''. It is a species of anglerfish, and is commonly called an angler. 
+*The doors in Piscatoris can be opened, but cannot be closed; players have to wait for them to manusally close on their own.
+
+{{Piscatoris Fishing Colony}}
+{{Piscatoris}}
+{{Swan Song}}
+[[Category:Quest locations]]
+[[Category:Kandarin]]

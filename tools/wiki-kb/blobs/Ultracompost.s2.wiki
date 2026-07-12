@@ -1,0 +1,107 @@
+==Creation==
+To make ultracompost, players must use two [[volcanic ash]] on a bucket of [[supercompost]]. To make it in a compost bin, players must add 25 volcanic ash to a [[compost bin]] (50 on a [[Big Compost Bin]]) containing supercompost, and then collect it using [[bucket]]s. 25 (or 50) volcanic ash is consumed regardless of the "fullness level" of the compost bin, so it is recommended to add it before removing any supercompost. Each bucket of ultracompost collected grants the player 10 Farming experience.
+
+After the player has read the [[ash covered tome]], they can use the [[Lunar spells|Lunar spell]] [[Fertile Soil]] on a patch with two [[volcanic ash]] in their inventory to give the same effect as ultracompost.
+
+{{Tabber
+|tab1 = Direct
+|tab1content = 
+{{Recipe
+|skill1 = Farming
+|skill1lvl = 1
+|skill1exp = 1.1
+|members = Yes
+|ticks = 2
+|mat1 = Supercompost
+|mat2 = Volcanic ash
+|mat2quantity = 2
+|output1 = Ultracompost
+|output1subtxt = Direct addition
+}}
+|tab2 = Compost bin
+|tab2content = 
+{{Recipe
+|skill1 = Farming
+|skill1lvl = 1
+|skill1exp = 10
+|members = Yes
+|ticks = 60
+|ticksnote = Filling 1 bucket takes 4 ticks, 60 ticks for 15.
+|facilities = Compost Bin
+|mat1 = Watermelon
+|mat1quantity = 15
+|mat2 = Volcanic ash
+|mat2quantity = 25
+|mat3 = Bucket
+|mat3quantity = 15
+|output1 = Ultracompost
+|output1quantity = 15
+|output1subtxt = Compost bin
+}}
+|tab3 = Big Compost Bin
+|tab3content = 
+{{Recipe
+|skill1 = Farming
+|skill1lvl = 45
+|skill1boostable = Yes
+|skill1exp = 10
+|members = Yes
+|ticks = 120
+|ticksnote = Filling 1 bucket takes 4 ticks, 120 ticks for 30.
+|facilities = Big Compost Bin
+|mat1 = Watermelon
+|mat1quantity = 30
+|mat2 = Volcanic ash
+|mat2quantity = 50
+|mat3 = Bucket
+|mat3quantity = 30
+|output1 = Ultracompost
+|output1quantity = 30
+|output1subtxt = Big compost bin
+}}
+|tab4 = Compost potion
+|tab4content = 
+{{Recipe
+|skill1 = Farming
+|skill1lvl = 1
+|skill1exp = 10
+|members = Yes
+|ticks = 60
+|ticksnote = Filling 1 bucket takes 4 ticks, 60 ticks for 15.
+|facilities = Compost Bin
+|mat1 = Weeds
+|mat1quantity = 15
+|mat2 = Compost potion(1)
+|mat2quantity = 1
+|mat3 = Volcanic ash
+|mat3quantity = 25
+|mat4 = Bucket
+|mat4quantity = 15
+|output1 = Ultracompost
+|output1quantity = 15
+|output1subtxt = Compost potion
+}}
+|tab5 = Compost potion (big bin)
+|tab5content = 
+{{Recipe
+|skill1 = Farming
+|skill1lvl = 45
+|skill1boostable = Yes
+|skill1exp = 10
+|members = Yes
+|ticks = 120
+|ticksnote = Filling 1 bucket takes 4 ticks, 120 ticks for 30.
+|facilities = Big Compost Bin
+|mat1 = Weeds
+|mat1quantity = 30
+|mat2 = Compost potion(1)
+|mat2quantity = 1
+|mat3 = Volcanic ash
+|mat3quantity = 50
+|mat4 = Bucket
+|mat4quantity = 30
+|output1 = Ultracompost
+|output1quantity = 30
+|output1subtxt = Compost potion (big bin)
+}}
+}}

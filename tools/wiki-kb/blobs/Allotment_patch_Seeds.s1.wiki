@@ -1,0 +1,152 @@
+==Allotment seeds==
+{{Obsolete|Experience amounts from planting have been moved to the end of the harvest or the check-health stage|update=Update:New Regional Worlds Launch TODAY!}}
+{{#if:{{{main|}}}|{{main|Allotment patch}}|}} 
+{| class="wikitable lighttable align-left-8 align-left-12" style="text-align:center"
+|-
+! rowspan="2" |Level
+! rowspan="2" |Seed
+! colspan="2" |Protection
+! rowspan="2" |Growth time{{efn|group=n|''N×10 mins'' means the crop will grow a little and can be watered again for each 10 minutes. This happens N times until it is fully grown.}}
+! rowspan="2" colspan="3" |Plant
+! rowspan="2" |Crop
+! colspan="2" |Experience
+! rowspan="2" |Uses
+|-
+!Flower
+!Farmer
+!Plant{{efn|group=n|The experience awarded once at the start when planting the crop.}}
+!Harvest{{efn|group=n|The experience awarded for each crop harvested. The expected yield depends on Farming level and equipment. See [[Variable crop yield]].}}
+|-
+|1
+|{{plinkp|Potato seed}}<br/>[[Potato seed|Potato]]
+|{{plinkp|Marigolds}} {{plinkp|White lily}} <br/>[[Marigold]] or [[White lily]]
+|{{plinkp|Compost}}<br/>[[Compost]]×2
+|4×10 mins
+(40 mins)
+|[[File:Potato (grown).png|link=Potato plant|50x50px]]
+|{{NoBorder}}
+|[[Potato plant|Potato]]
+|{{plinkp|Potato}}<br/>[[Potato]]
+|8
+|9
+| align="left" |
+*[[Cooking]] ingredient
+*Payment to protect [[onion]] plants (1 sack)
+|-
+|5
+|{{plinkp|Onion seed}}<br/>[[Onion seed|Onion]]
+|{{plinkp|Marigolds}} {{plinkp|White lily}} <br/>[[Marigolds]] or [[White lily]]
+|{{plinkp|Empty sack}}<br/>[[Potatoes|Potatoes(10)]]×1{{efn|group=n|name=sack|Each sack must be filled with 10 produce.}}
+|4×10 mins
+(40 mins)
+|[[File:Onion (grown).png|link=Onion plant|50x50px]]
+|{{NoBorder}}
+|[[Onion plant|Onion]]
+|{{plinkp|Onion}}<br/>[[Onion]]
+|9.5
+|10.5
+| align="left" |
+*[[Cooking]] ingredient
+*Payment to protect [[cabbage]] plants and [[Asgarnian hops]] (1 sack)
+|-
+|7
+|{{plinkp|Cabbage seed}}<br/>[[Cabbage seed|Cabbage]]
+|{{plinkp|Rosemary}} {{plinkp|White lily}} <br/>[[Rosemary]] or [[White lily]]
+|{{plinkp|Empty sack}}<br/>[[Onions|Onions(10)]]×1{{efn|group=n|name=sack}}
+|4×10 mins
+(40 mins)
+|[[File:Cabbages (grown).png|link=Cabbages (plant)|50x50px]]
+|{{NoBorder}}
+|[[Cabbages (plant)|Cabbages]]
+|{{plinkp|Cabbage}}<br/>[[Cabbage]]
+|10
+|11.5
+| align="left" |
+*[[Garden pie]] ingredient
+*Payment to protect [[tomato]] plants (2 sacks), [[Krandorian hops]] (3 sacks), and [[redberry]] bush (4 sacks)
+|-
+|12
+|{{plinkp|Tomato seed}}<br/>[[Tomato seed|Tomato]]
+|{{plinkp|Marigolds}} {{plinkp|White lily}} <br/>[[Marigolds]] or [[White lily]]
+|{{plinkp|Empty sack}}<br/>[[Cabbages|Cabbages(10)]]×2{{efn|group=n|name=sack}}
+|4×10 mins
+(40 mins)
+|[[File:Tomato (grown).png|link=Tomato plant|50x50px]]
+|{{NoBorder}}
+|[[Tomato plant|Tomato]]
+|{{plinkp|Tomato}}<br/>[[Tomato]]
+|12.5
+|14
+| align="left" |
+*[[Pizza]] ingredient
+*Payment to protect [[Yanillian hops]], [[Oak tree (Farming)|oak tree]] (1 basket), and [[cadavaberry]] bush (3 baskets)
+|-
+|20
+|{{plinkp|Sweetcorn seed}}<br/>[[Sweetcorn seed|Sweetcorn]]
+|{{plinkp|Scarecrow}}{{plinkp|White lily}} <br/>[[Scarecrow]] or [[White lily]]
+|{{plinkp|Jute fibre}}<br/>[[Jute fibre]]×10
+|6×10 mins
+(1 hr)
+|[[File:Sweetcorn (grown).png|link=Sweetcorn plant|50x50px]]
+|{{NoBorder}}
+|[[Sweetcorn plant|Sweetcorn]]
+|{{plinkp|Sweetcorn}}<br/>[[Sweetcorn]]
+|17
+|19
+| align="left" |
+*[[Cooking]] ingredient
+*Payment to protect [[apple tree]] (9 harvests)
+|-
+|31
+|{{plinkp|Strawberry seed}}<br/>[[Strawberry seed|Strawberry]]
+|{{plinkp|White lily}}<br/>[[White lily]]
+|{{plinkp|Apples(5)}}<br/>[[Apples|Apples(5)]]×1{{efn|group=n|Each basket must be filled with 5 produce.}}
+|6×10 mins
+(1 hr)
+|[[File:Strawberry (grown).png|link=Strawberry plant|50x50px]]
+|{{NoBorder}}
+|[[Strawberry plant|Strawberry]]
+|{{plinkp|Strawberry}}<br/>[[Strawberry]]
+|26
+|29
+| align="left" |
+*[[Summer pie]] ingredient
+*Payment to protect [[dwellberry]] bush (3 baskets) and [[orange tree]] (3 baskets)
+|-
+|47
+|{{plinkp|Watermelon seed}}<br/>[[Watermelon seed|Watermelon]]
+|{{plinkp|Nasturtiums}} {{plinkp|White lily}} <br/>[[Nasturtiums]] or [[White lily]]
+|{{plinkp|Curry leaf}}<br/>[[Curry leaf]]×10
+|8×10 mins
+(1 hr, 20 mins)
+|[[File:Watermelon (grown).png|link=Watermelons|50x50px]]
+|{{NoBorder}}
+|[[Watermelons]]
+|{{plinkp|Watermelon}}<br/>[[Watermelon]]
+|48.5
+|54.5
+| align="left" |
+*[[Summer pie]] ingredient
+*Used to make [[scarecrow]]
+*Payment to protect [[jangerberry]] bush (6 harvests) and [[pineapple tree]] (10 harvests)
+|-
+|61
+|{{plinkp|Snape grass seed}}<br/>[[Snape grass seed|Snape grass]]
+|{{plinkp|White lily}}<br/>[[White lily]]
+|{{plinkp|Jangerberries}}<br/>[[Jangerberries ]]×5
+|7×10 mins
+(1 hr, 10 mins)
+|[[File:Snape grass plant (grown).png|link=Snape grass plant|50x50px]]
+|{{NoBorder}}
+|[[Snape grass plant|Snape grass]]
+|{{plinkp|Snape grass}}<br/>[[Snape grass]]
+|82
+|82
+|
+*Used in the making of [[prayer potion]] and [[fishing potion]]
+*Used when making a [[hangover cure]]
+*Payment to protect [[Potato cactus]](x8)
+|}
+{{notelist|group=n}}<noinclude>
+[[Category:Farming]]
+</noinclude>

@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Fairytale I - Growing Pains
+|image = [[File:Fairytale I - Growing Pains reward scroll.png|centre]]
+|qp = 2
+|rewards = *[[Magic secateurs]] (increases [[Magic secateurs#Effects|some]] crop harvests when [[Farming]])
+*{{SCP|Farming|3,500}} [[Farming]] experience
+*{{SCP|Attack|2,000}} [[Attack]] experience
+*{{SCP|Magic|1,000}} [[Magic]] experience
+
+Unlocks:
+* [[Tanglefoot]] accessible in the [[Nightmare Zone]].
+}}

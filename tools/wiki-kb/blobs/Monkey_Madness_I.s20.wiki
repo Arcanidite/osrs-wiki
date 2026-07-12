@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Monkey Madness I
+|image = [[File:Monkey Madness I reward scroll.png|centre]]
+|qp = 3
+|rewards = *10,000 [[Coins]]
+*3 [[Diamond]]s
+*Speaking to [[Daero]] after the quest gives the choice of either, 35,000 [[experience]] in {{SCP|Attack}} [[Attack]] and {{SCP|Defence}} [[Defence]] and 20,000 [[experience]] in {{SCP|Strength}} [[Strength]] and {{SCP|Hitpoints}} [[Hitpoints]] '''OR''' 35,000 [[experience]] in {{SCP|Strength}} [[Strength]] and {{SCP|Hitpoints}} [[Hitpoints]] and 20,000 [[experience]] in {{SCP|Attack}} [[Attack]] and {{SCP|Defence}} [[Defence]]. The skills you tell Daero you want to focus on will receive 35,000 XP each, and the others 20,000 each.
+*The ability to buy and wield the [[Dragon scimitar]].
+*Full access to Ape Atoll, with the exception of the bank and javelin store, which are unlocked after [[Monkey Madness II]].
+}}
+
+After the quest, players retain the ability to turn into a monkey in Ape Atoll & [[Ardougne Zoo]], using the [[Monkey greegree]]. The [[Jungle Demon]] can also now be fought in the [[Nightmare Zone]].
+'''Note:''' while it was previously impossible to return to Ape Atoll after quest completion without receiving experience from Daero, an [[Update:The Garden of Death & More#Poll 77 Changes|update]] in November 2022 now allows the training to be ignored before returning.

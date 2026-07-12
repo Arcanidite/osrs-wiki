@@ -1,0 +1,4 @@
+==Starting off==
+Early levels can be skipped by completing [[Quest experience rewards#Prayer|quests that give Prayer experience]].
+
+Completing [[The Restless Ghost]], [[Priest in Peril]], [[Recruitment Drive]], and [[Holy Grail]] will grant a total of 14,531 Prayer experience, which will get the player from level 1 to 30. [[Spirits of the Elid]] has more requirements, but gives another 8,000 Prayer experience.

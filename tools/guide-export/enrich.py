@@ -441,6 +441,19 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
     return out
 
 
+def _step_markers(step, cat):
+    """Row-level mapMarkers (wiki-sourced {{Map}} pins from consolidation) override
+    the catalog zone's representative pin; fall back to the zone pin."""
+    own = step.get("mapMarkers") or []
+    if own:
+        return [{"x": m["x"], "y": m["y"], "plane": m.get("plane", 0),
+                 "label": m.get("label")} for m in own]
+    if cat:
+        return [{"x": cat["x"], "y": cat["y"], "plane": cat.get("plane", 0),
+                 "label": cat.get("label")}]
+    return []
+
+
 def _train_step(step, phase, zones, checkpoint=None):
     cat = zones.get((step.get("location") or {}).get("zone"))
     conds = [skill_cond(k, v) for k, v in (step.get("grants") or {}).items() if k in SKILL_ENUM]
@@ -450,8 +463,7 @@ def _train_step(step, phase, zones, checkpoint=None):
         "instruction": task_instruction(step),
         "detail": step.get("detail", ""),
         "highlights": [{"type": "NPC", "id": cat["npc"]}] if cat and cat.get("npc") else [],
-        "mapMarkers": [{"x": cat["x"], "y": cat["y"], "plane": cat.get("plane", 0),
-                        "label": cat.get("label")}] if cat else [],
+        "mapMarkers": _step_markers(step, cat),
         "completionConditions": conds or [{"type": "MANUAL"}],
     }
     # Pass-through granularity fields (nullable; existing routes unaffected)
@@ -660,7 +672,7 @@ def _coalesce_checkpoints(steps, checkpoint_member):
 
 
 def enrich(plan, catalog, steer_points, supply_chains=None,
-           coarse_expansions=None, atoms_by_id=None):
+           coarse_expansions=None, atoms_by_id=None, extra_by_id=None):
     goal = plan["goal"]
     zones = catalog.get("zones", {})
     reals = [s for s in plan["path"] if not s.get("_capstone")]
@@ -691,15 +703,17 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     checkpoint_start, checkpoint_member = _build_checkpoint_index(coarse_expansions)
     # Keep checkpoint members contiguous so each header renders exactly once.
     ordered_with_overlays = _coalesce_checkpoints(ordered_with_overlays, checkpoint_member)
-    # coarse_id lookup for _checkpoint_step id generation
-    step_to_coarse = {}
-    cp_counter = {}
+    # Registry-stable checkpoint ids: index each checkpoint by its position in the
+    # expansion's checkpoints[] list (registry order), NOT emission order — so
+    # chkpt-<coarse>-<idx> names the same checkpoint in every route (p2p, corpus, …)
+    # and by-id enrichment (refs sidecar, contributions) can target it.
+    step_to_cp = {}
     for exp in (coarse_expansions or []):
         if exp.get("status") != "authored":
             continue
         cid = exp["coarse_id"]
-        for cp in exp.get("checkpoints", []):
-            step_to_coarse[cp["start"]] = cid
+        for idx, cp in enumerate(exp.get("checkpoints", [])):
+            step_to_cp[cp["start"]] = (cid, idx)
 
     if not milestones:
         # Corpus/appendix: phase by region.
@@ -713,9 +727,7 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
             # Emit checkpoint header before first step of each checkpoint group
             if sid in checkpoint_start and sid not in emitted_checkpoints:
                 cp_label = checkpoint_start[sid]
-                coarse_id = step_to_coarse.get(sid, "unknown")
-                cp_idx = cp_counter.get(coarse_id, 0)
-                cp_counter[coarse_id] = cp_idx + 1
+                coarse_id, cp_idx = step_to_cp.get(sid, ("unknown", 0))
                 steps_out.append(_checkpoint_step(cp_label, phase, coarse_id, cp_idx))
                 emitted_checkpoints.add(sid)
             cp = checkpoint_member.get(sid)
@@ -758,13 +770,25 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
                 # Emit checkpoint header record before first step of each checkpoint group
                 if sid in checkpoint_start and sid not in emitted_checkpoints:
                     cp_label = checkpoint_start[sid]
-                    coarse_id = step_to_coarse.get(sid, "unknown")
-                    cp_idx = cp_counter.get(coarse_id, 0)
-                    cp_counter[coarse_id] = cp_idx + 1
+                    coarse_id, cp_idx = step_to_cp.get(sid, ("unknown", 0))
                     steps.append(_checkpoint_step(cp_label, phase, coarse_id, cp_idx))
                     emitted_checkpoints.add(sid)
                 cp = checkpoint_member.get(sid)
                 steps.append(_train_step(e["step"], phase, zones, checkpoint=cp))
+
+    # UNIVERSAL refs (consolidation contract §C): every emitted step carries refs[].
+    # Emitters that have no native refs field (milestone/steer/bg/checkpoint records
+    # and planner-synthesized steps) are filled from the by-id map built in main()
+    # (steps.jsonl rows + the step_refs.jsonl sidecar). Same for empty mapMarkers.
+    for s in steps:
+        extra = (extra_by_id or {}).get(s.get("id"))
+        if not extra:
+            continue
+        if not s.get("refs") and extra.get("refs"):
+            s["refs"] = extra["refs"]
+        if not s.get("mapMarkers") and extra.get("mapMarkers"):
+            s["mapMarkers"] = [{**m, "plane": m.get("plane", 0)}
+                               for m in extra["mapMarkers"]]
 
     return {
         "id": "route-" + goal["id"],
@@ -844,9 +868,20 @@ def main():
     raw_steps   = _load_jsonl(data_dir / "steps.jsonl")
     atoms_by_id = {s["id"]: s for s in raw_steps if s.get("coarse_of")}
 
+    # By-id refs/markers map: steps.jsonl rows first, then the step_refs.jsonl
+    # sidecar (wiki refs for emitted ids that are NOT steps.jsonl rows: milestone-*,
+    # steer-*, chkpt-*, synth-* and planner-synthesized bg/bootstrap steps).
+    extra_by_id = {}
+    for s in raw_steps:
+        if s.get("refs") or s.get("mapMarkers"):
+            extra_by_id[s["id"]] = {"refs": s.get("refs"), "mapMarkers": s.get("mapMarkers")}
+    for r in _load_jsonl(data_dir / "step_refs.jsonl"):
+        extra_by_id[r["id"]] = {"refs": r.get("refs"), "mapMarkers": r.get("mapMarkers")}
+
     json.dump(
         enrich(payload, catalog, steer_points, supply_chains,
-               coarse_expansions=coarse_expansions, atoms_by_id=atoms_by_id),
+               coarse_expansions=coarse_expansions, atoms_by_id=atoms_by_id,
+               extra_by_id=extra_by_id),
         sys.stdout, indent=2
     )
 

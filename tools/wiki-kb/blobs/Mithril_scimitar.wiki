@@ -1,0 +1,84 @@
+{{External|rs|rsc=Mithril Scimitar|dw=Mithril Scimitar}}
+{{Infobox Item
+|name = Mithril scimitar
+|image = [[File:Mithril scimitar.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A vicious, curved sword.
+|value = 1040
+|weight = 1.587
+|exchange = Yes
+|id = 1329
+}}
+
+[[File:Mithril scimitar detail.png|left|150px]]
+The '''Mithril scimitar''' is a [[scimitar]] stronger than the [[black scimitar]]. Like all [[mithril weapons]], it requires 20 [[Attack]] to wield. It can only be used in combat. Players can make a mithril scimitar with the [[Smithing]] skill at level 55 using 2 [[mithril bar]]s, giving 100 [[experience]].
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = +5
+|aslash = +21
+|acrush = -2
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = +1
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = +20
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 4
+|attackrange = 1
+|combatstyle = Slash Sword
+|image = [[File:Mithril scimitar equipped male.png|120px]]
+|altimage = [[File:Mithril scimitar equipped female.png|120px]]
+}}
+
+{{CombatStyles|Slash Sword|speed=4|attackrange=1}}
+
+==Creation==
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 55
+|skill1boostable = Yes
+|skill1exp = 100
+|members = No
+|ticks = 5
+|tools = Hammer
+|facilities = Anvil
+|mat1 = Mithril bar
+|mat1quantity = 2
+|output1 = Mithril scimitar
+}}
+
+==Treasure Trails==
+{{EmoteClueHeader}}
+{{EmoteClue|tier=medium|emote=Yawn|emote2=Shrug|location=[[Castle Wars]] bank|item1=Mithril scimitar|item2=ruby amulet|item3=team cape|img3=team-14 cape|cost3={{GEP|Team-14 cape}}}}
+{{EmoteClueBottom}}
+==Item sources==
+{{Drop sources|Mithril scimitar}}
+===Shop locations===
+{{Store locations list|Mithril scimitar}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 13 June 2005
+|update = RuneCraft Update and Tweaks
+|change = The item's examine was changed from "''A vicious curved sword.''" to "''A vicious, curved sword.''"
+}}
+{{Subject changes footer}}
+
+{{Slash weapons}}
+{{Mithril equipment}}

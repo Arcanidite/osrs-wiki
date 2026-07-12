@@ -1,0 +1,5 @@
+==Item sources==
+{{Drop sources|Volcanic ash}}
+
+===Shop locations===
+{{Store locations list|Volcanic ash}}

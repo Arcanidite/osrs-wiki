@@ -1,0 +1,4 @@
+===Levels 15–35: Oak trees===
+From level 15 to 35, the player should cut [[oak trees]]. Each log gives 37.5 Woodcutting experience. 534 logs are required to reach level 35.
+
+Even though [[willow tree]]s become available at level 30, cutting oak trees offers slightly faster experience at these levels.

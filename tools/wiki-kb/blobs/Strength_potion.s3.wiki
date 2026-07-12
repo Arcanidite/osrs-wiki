@@ -1,0 +1,12 @@
+===Herblore===
+{{Recipe
+|skill1 = Herblore
+|skill1lvl = 12
+|skill1boostable = Yes
+|skill1exp = 50
+|members = Yes
+|ticks = 2
+|mat1 = Tarromin potion (unf)
+|mat2 = Limpwurt root
+|output1 = Strength potion(3)
+}}

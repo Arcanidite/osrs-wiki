@@ -1,0 +1,247 @@
+==Herb seeds==
+{{#if:{{{main|}}}|{{main|Herb patch}}|}} 
+{| class="wikitable sortable lighttable align-left-4" style="text-align:center"
+|-
+! rowspan="2" |Level
+! rowspan="2" |Seed
+! rowspan="2" |Growth time{{efn|group=n|''N×20 mins'' means the crop will grow a little for each 20 minutes. This happens N times until it is fully grown.}}
+! rowspan="2" class="unsortable" |Plant
+! rowspan="2" class="unsortable" |Crop
+! colspan="3" |Experience
+! rowspan="2" class="unsortable" |Uses
+! rowspan="2" |Average Profit{{efn|group=n|The average profit is premised on the use of ultracompost, magic secateurs and the Farming cape. Assumes average of 8.8 herbs per seed in a standard (non-protected) herb patch based on an empirical sample. Use the farming calculator for a more accurate, player skill based average profit in the "see also" section below.}}
+|-
+!Plant{{efn|group=n|This experience is gained upon harvesting the final herb, rather than when planting the seed.}}
+!Harvest
+!Total{{efn|group=n|Assumes 8 herbs are picked.}}
+|-
+|9
+|{{plinkp|Guam seed}}<br/>[[Guam seed|Guam]]
+|4×20 mins
+|{{ilink|Guam leaf (plant)|txt=Guam|pic=Guam leaf stage 5|size=50x50}}
+|{{plinkp|Grimy guam leaf}}<br/>[[Grimy guam leaf]]
+|11
+|12.5
+|111
+| align="left" |Ingredient of
+*[[Attack potion]]
+*[[Guam tar]]
+*[[Guthix rest]]
+|{{Coins|({{GEP|Grimy guam leaf|8.8}}-{{GEP|Guam seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|14
+|{{plinkp|Marrentill seed}}<br/>[[Marrentill seed|Marrentill]]
+|4×20 mins
+|{{ilink|Marrentill (plant)|txt=Marrentill|pic=Marrentill stage 5|size=50x50}}
+|{{plinkp|Grimy marrentill}}<br/>[[Grimy marrentill]]
+|13.5
+|15
+|133.5
+| align="left" |Ingredient of
+*[[Antipoison]]
+*[[Guthix rest]]
+*[[Marrentill tar]]
+*Burning incense
+|{{Coins|({{GEP|Grimy marrentill|8.8}}-{{GEP|Marrentill seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|19
+|{{plinkp|Tarromin seed}}<br/>[[Tarromin seed|Tarromin]]
+|4×20 mins
+|{{ilink|Tarromin (plant)|txt=Tarromin|pic=Tarromin stage 5|size=50x50}}
+|{{plinkp|Grimy tarromin}}<br/>[[Grimy tarromin]]
+|16
+|18
+|160
+| align="left" |Ingredient of
+*[[Strength potion]]
+*[[Serum 207]]
+*[[Tarromin tar]]
+|{{Coins|({{GEP|Grimy tarromin|8.8}}-{{GEP|Tarromin seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|26
+|{{plinkp|Harralander seed}}<br/>[[Harralander seed|Harralander]]
+|4×20 mins
+|{{ilink|Harralander (plant)|txt=Harralander|pic=Harralander stage 5|size=50x50}}
+|{{plinkp|Grimy harralander}}<br/>[[Grimy harralander]]
+|21.5
+|24
+|213.5
+| align="left" |Ingredient of
+*[[Guthix rest]]
+*[[Compost potion]]
+*[[Restore potion]]
+*[[Guthix balance]]
+*[[Energy potion]]
+*[[Combat potion]]
+*[[Harralander tar]]
+*[[Goading potion]]
+|{{Coins|({{GEP|Grimy harralander|8.8}}-{{GEP|Harralander seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|29
+|{{plinkp|Gout tuber}}<br/>[[Gout tuber]]
+|4×20 mins
+|{{ilink|Goutweed (plant)|txt=Goutweed|pic=Goutweed (grown)|size=50x50}}
+|{{plinkp|Goutweed}}<br/>[[Goutweed]]
+|105
+|45
+|465
+| align="left" |
+Exchange with
+*[[Safta Doc]] for [[machete]]s
+*[[Sanfew]] for herbs
+|{{Coins|(0-{{GEP|Gout tuber|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|32
+|{{plinkp|Ranarr seed}}<br/>[[Ranarr seed|Ranarr]]
+|4×20 mins
+|{{ilink|Ranarr weed (plant)|txt=Ranarr|pic=Ranarr weed stage 5|size=50x50}}
+|{{plinkp|Grimy ranarr weed}}<br/>[[Grimy ranarr weed]]
+|27
+|30.5
+|271
+| align="left" |Ingredient of
+*[[Defence potion]]
+*[[Prayer potion]]
+|{{Coins|({{GEP|Grimy ranarr weed|8.8}}-{{GEP|Ranarr seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|38
+|{{plinkp|Toadflax seed}}<br/>[[Toadflax seed|Toadflax]]
+|4×20 mins
+|{{ilink|Toadflax (plant)|txt=Toadflax|pic=Toadflax stage 5|size=50x50}}
+|{{plinkp|Grimy toadflax}}<br/>[[Grimy toadflax]]
+|34
+|38.5
+|342
+| align="left" |Ingredient of
+*[[Agility potion]]
+*[[Antipoison+]]
+*[[Saradomin brew]]
+*[[Goblin potion]]
+|{{Coins|({{GEP|Grimy toadflax|8.8}}-{{GEP|Toadflax seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|44
+|{{plinkp|Irit seed}}<br/>[[Irit seed|Irit]]
+|4×20 mins
+|{{ilink|Irit leaf (plant)|txt=Irit|pic=irit leaf stage 5|size=50x50}}
+|{{plinkp|Grimy irit leaf}}<br/>[[Grimy irit leaf]]
+|43
+|48.5
+|431
+| align="left" |Ingredient of
+*[[Super attack]]
+*[[Super antipoison]]
+*[[Antipoison++]]
+*[[Irit tar]]
+|{{Coins|({{GEP|Grimy irit leaf|8.8}}-{{GEP|Irit seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|50
+|{{plinkp|Avantoe seed}}<br/>[[Avantoe seed|Avantoe]]
+|4×20 mins
+|{{ilink|Avantoe (plant)|txt=Avantoe|pic=Avantoe stage 5|size=50x50}}
+|{{plinkp|Grimy avantoe}}<br/>[[Grimy avantoe]]
+|54.5
+|61.5
+|546.5
+| align="left" |Ingredient of
+*[[Fishing potion]]
+*[[Super energy]]
+*[[Hunter potion]]
+|{{Coins|({{GEP|Grimy avantoe|8.8}}-{{GEP|Avantoe seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|56
+|{{plinkp|Kwuarm seed}}<br/>[[Kwuarm seed|Kwuarm]]
+|4×20 mins
+|{{ilink|Kwuarm (plant)|txt=Kwuarm|pic=Kwuarm stage 5|size=50x50}}
+|{{plinkp|Grimy kwuarm}}<br/>[[Grimy kwuarm]]
+|69
+|78
+|693
+| align="left" |Ingredient of
+*[[Super strength]]
+*[[Weapon poison]]
+|{{Coins|({{GEP|Grimy kwuarm|8.8}}-{{GEP|Kwuarm seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|62
+|{{plinkp|Snapdragon seed}}<br/>[[Snapdragon seed|Snapdragon]]
+|4×20 mins
+|{{ilink|Snapdragon (plant)|txt=Snapdragon|pic=Snapdragon stage 5|size=50x50}}
+|{{plinkp|Grimy snapdragon}}<br/>[[Grimy snapdragon]]
+|87.5
+|98.5
+|875.5
+| align="left" |Ingredient of
+*[[Super restore]]
+*[[Sanfew serum]]
+|{{Coins|({{GEP|Grimy snapdragon|8.8}}-{{GEP|Snapdragon seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|65
+|{{plinkp|Huasca seed}}<br/>[[Huasca seed|Huasca]]
+|4×20 mins
+|{{ilink|Huasca (plant)|txt=Huasca|pic=Huasca stage 5|size=50x50}}
+|{{plinkp|Grimy huasca}}<br/>[[Grimy huasca]]
+|86.5
+|110
+|966.5
+| align="left" |Ingredient of
+*[[Prayer regeneration potion]]
+|{{Coins|({{GEP|Grimy huasca|8.8}}-{{GEP|Huasca seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|67
+|{{plinkp|Cadantine seed}}<br/>[[Cadantine seed|Cadantine]]
+|4×20 mins
+|{{ilink|Cadantine (plant)|txt=Cadantine|pic=Cadantine stage 5|size=50x50}}
+|{{plinkp|Grimy cadantine}}<br/>[[Grimy cadantine]]
+|106.5
+|120
+|1066.5
+| align="left" |Ingredient of
+*[[Super defence]]
+*[[Bastion potion]]
+*[[Battlemage potion]]
+|{{Coins|({{GEP|Grimy cadantine|8.8}}-{{GEP|Cadantine seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|73
+|{{plinkp|Lantadyme seed}}<br/>[[Lantadyme seed|Lantadyme]]
+|4×20 mins
+|{{ilink|Lantadyme (plant)|txt=Lantadyme|pic=Lantadyme stage 5|size=50x50}}
+|{{plinkp|Grimy lantadyme}}<br/>[[Grimy lantadyme]]
+|134.5
+|151.5
+|1,346.5
+| align="left" |Ingredient of
+*[[Antifire potion]]
+*[[Magic potion]]
+|{{Coins|({{GEP|Grimy lantadyme|8.8}}-{{GEP|Lantadyme seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|79
+|{{plinkp|Dwarf weed seed}}<br/>[[Dwarf weed seed|Dwarf weed]]
+|4×20 mins
+|{{ilink|Dwarf weed (plant)|txt=Dwarf weed|pic=Dwarf weed stage 5|size=50x50}}
+|{{plinkp|Grimy dwarf weed}}<br/>[[Grimy dwarf weed]]
+|170.5
+|192
+|1,706.5
+| align="left" |Ingredient of
+*[[Ranging potion]]
+*[[Ancient brew]]
+*[[Menaphite remedy]]
+|{{Coins|({{GEP|Grimy dwarf weed|8.8}}-{{GEP|Dwarf weed seed|1}}-{{GEP|Ultracompost|1}})}}
+|-
+|85
+|{{plinkp|Torstol seed}}<br/>[[Torstol seed|Torstol]]
+|4×20 mins
+|{{ilink|Torstol (plant)|txt=Torstol|pic=Torstol stage 5|size=50x50}}
+|{{plinkp|Grimy torstol}}<br/>[[Grimy torstol]]
+|199.5
+|224.5
+|1,995.5
+| align="left" |Ingredient of
+*[[Zamorak brew]]
+*[[Surge potion]]
+*[[Super combat potion]]
+*[[Anti venom+]]
+|{{Coins|({{GEP|Grimy torstol|8.8}}-{{GEP|Torstol seed|1}}-{{GEP|Ultracompost|1}})}}
+|}
+{{notelist|group=n}}<noinclude>
+[[Category:Farming]]
+</noinclude>

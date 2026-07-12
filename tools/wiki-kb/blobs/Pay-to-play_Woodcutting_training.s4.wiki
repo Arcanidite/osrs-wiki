@@ -1,0 +1,2 @@
+===Levels 1–15: Regular trees===
+From level 1 to 15, the player should cut [[Tree|regular trees]]. Each log gives 25 Woodcutting experience. 97 logs are required to reach level 15.

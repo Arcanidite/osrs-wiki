@@ -1,0 +1,375 @@
+===Meats===
+{| class="wikitable sortable align-left-2" style="text-align:center;"
+|-
+!colspan=2 rowspan=2|Food
+!rowspan=2|[[Fire]]
+!rowspan=2|[[Range]]{{Note|Generally lower chance of burning than on an open fire. Value is N/A if it does not reduce burn chance.|?}}
+!colspan=2|[[Hosidius Kitchen|Hosidius]]{{Note|The Hosidius Kitchen range multiplies the chance-to-not-burn roll by 1.05 or 1.10 with the elite diary completed.|?}}
+!rowspan=2|[[Experience]]
+!rowspan=2|Members?
+|-
+!5%
+![[Kourend & Kebos Diary#Rewards 4|10%]]<ref group="h" name="kebos">The value will be N/A if the level required to not burn with the [[Elite Kourend & Kebos Diary]] completed is lower than the level required to complete the diary (level 84).</ref>
+|-
+|{{plinkt|Cooked meat}}
+|34
+|{{NA}}
+|31
+|{{NA}}
+|30
+|{{Members|no}}
+|-
+|{{plinkt|Cooked chicken}}
+|34
+|{{NA}}
+|31
+|{{NA}}
+|30
+|{{Members|no}}
+|-
+|{{plinkt|Cooked rabbit}}
+|34
+|{{NA}}
+|31
+|{{NA}}
+|30
+|{{Members|yes}}
+|-
+|{{plinkt|Shrimps}}
+|34
+|{{NA}}
+|31
+|{{NA}}
+|30
+|{{Members|no}}
+|-
+|{{plinkt|Anchovies}}
+|34
+|{{NA}}
+|31
+|{{NA}}
+|30
+|{{Members|no}}
+|-
+|{{plinkt|Sardine}}
+|38
+|{{NA}}
+|34
+|{{NA}}
+|40
+|{{Members|no}}
+|-
+|{{plinkt|Herring}}
+|41
+|{{NA}}
+|38
+|{{NA}}
+|50
+|{{Members|no}}
+|-
+|{{plinkt|Mackerel}}
+|45
+|{{NA}}
+|42
+|{{NA}}
+|60
+|{{Members|yes}}
+|-
+|{{plinkt|Thin snail meat}}
+|47
+|{{NA}}
+|43
+|{{NA}}
+|70
+|{{Members|yes}}
+|-
+|{{plinkt|Lean snail meat}}
+|47
+|50
+|47
+|{{NA}}
+|95
+|{{Members|yes}}
+|-
+|{{plinkt|Spider on shaft}}
+|48
+|{{NA}}
+|45
+|{{NA}}
+|80
+|{{Members|yes}}
+|-
+|{{plinkt|Spider on stick}}
+|48
+|{{NA}}
+|45
+|{{NA}}
+|80
+|{{Members|yes}}
+|-
+|{{plinkt|Paddlefish}}
+|{{NA}}
+|48
+|{{NA}}
+|{{NA}}
+|15
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked t-bone steak}}
+|49
+|{{NA}}
+|46
+|{{NA}}
+|90
+|{{Members|no}}
+|-
+|{{plinkt|Trout}}
+|49
+|{{NA}}
+|46
+|{{NA}}
+|70
+|{{Members|no}}
+|-
+|{{plinkt|Cooked wild kebbit}}
+|50
+|{{NA}}
+|47
+|{{NA}}
+|73
+|{{Members|yes}}
+|-
+|{{plinkt|Cod}}
+|51
+|49
+|46
+|{{NA}}
+|75
+|{{Members|yes}}
+|-
+|{{plinkt|Pike}}
+|54
+|{{NA}}
+|50
+|{{NA}}
+|80
+|{{Members|no}}
+|-
+|{{plinkt|Fat snail meat}}
+|56
+|{{NA}}
+|52
+|{{NA}}
+|95
+|{{Members|yes}}
+|-
+|{{plinkt|Salmon}}
+|58
+|{{NA}}
+|55
+|{{NA}}
+|90
+|{{Members|no}}
+|-
+|{{plinkt|Cooked larupia}}
+|59
+|{{NA}}
+|55
+|{{NA}}
+|92
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked slimy eel}}
+|61
+|{{NA}}
+|57
+|{{NA}}
+|95
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked giant crab meat}}
+|62
+|{{NA}}
+|59
+|{{NA}}
+|100
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked fishcake}}
+|62
+|{{NA}}
+|59
+|{{NA}}
+|100
+|{{Members|yes}}
+|-
+|{{plinkt|Tuna}}
+|63
+|{{NA}}
+|59
+|{{NA}}
+|100
+|{{Members|no}}
+|-
+|{{plinkt|Cooked barb-tailed kebbit}}
+|63
+|{{NA}}
+|60
+|{{NA}}
+|106
+|{{Members|yes}}
+|-
+|{{plinkt|Rainbow fish}}
+|64
+|{{NA}}
+|60
+|{{NA}}
+|110
+|{{Members|yes}}
+|-
+|{{plinkt|Cave eel}}
+|74
+|{{NA}}
+|70
+|{{NA}}
+|115
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked graahk}}
+|75
+|{{NA}}
+|71
+|{{NA}}
+|124
+|{{Members|yes}}
+|-
+|{{plinkt|Bass}}
+|79
+
+|{{NA}}
+|75
+|{{NA}}
+|130
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked pyre fox}}
+|93
+|92
+|87
+|{{NA}}
+|154
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked sunlight antelope}}
+| -
+|95
+|91
+|86
+|175
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked chompy}}
+|99
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|100
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked karambwan}}
+|99
+|{{NA}}
+|93
+|87
+|190
+|{{Members|yes}}
+|-
+|{{plinkt|Poison karambwan}}
+|99
+|{{NA}}
+|93
+|87
+|80
+|{{Members|yes}}
+|-
+|{{plinkt|Roast beast meat}}
+|99
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|82.5
+|{{Members|yes}}
+|-
+|{{plinkt|Roast bird meat}}
+|99
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|60
+|{{Members|yes}}
+|-
+|{{plinkt|Roast rabbit}}
+|99
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|72.5
+|{{Members|yes}}
+|-
+|{{plinkt|Ugthanki meat}}
+| -
+| -
+|95
+|90
+|40
+|{{Members|yes}}
+|-
+|{{plinkt|Sea turtle}}
+| -
+| -
+| -
+| -
+|211.3
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked dashing kebbit}}
+| -
+| -
+| -
+| -
+|215
+|{{Members|yes}}
+|-
+|{{plinkt|Dark crab}}
+| -
+| -
+| -
+| -
+|215
+|{{Members|yes}}
+|-
+|{{plinkt|Manta ray}}
+| -
+| -
+| -
+| -
+|216.3
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked moonlight antelope}}
+| -
+| -
+| -
+| -
+|220
+|{{Members|yes}}
+|-
+|{{plinkt|Cooked jubbly}}
+| -
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|160
+|{{Members|yes}}
+|}
+{{Reflist|group=h}}

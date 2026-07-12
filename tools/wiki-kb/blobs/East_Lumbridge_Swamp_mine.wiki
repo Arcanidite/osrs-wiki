@@ -1,0 +1,40 @@
+{{External|rs=Lumbridge south-east mine}}
+{{Infobox Location
+|name = East Lumbridge Swamp mine
+|image = [[File:Lumbridge Swamp training mine.png|300px]]
+|release = [[27 September]] [[2006]]
+|update = Skill Tutors
+|aka = Training mine
+|members = No
+|location = The south-east corner of [[Lumbridge Swamp]]
+|map = {{Map|name=East Lumbridge Swamp mine|x=3227|y=3148|plane=0}}
+|type = mine
+|leagueRegion = Misthalin
+}}
+The '''east Lumbridge Swamp mine''' is a [[List of mines|mine]] that may be found in the south-east section of the [[Lumbridge Swamp]] near a [[Fishing]] site.
+
+Originally, it was the only mine in the Lumbridge Swamp. It was a mine for experienced miners, with [[Coal rocks|coal]], [[Mithril rocks|mithril]], and [[adamantite rocks]]. However, those rocks were moved to the [[West Lumbridge Swamp mine|western mine site]], and the south-east mine has changed to be a new players' mine, with five [[Copper rocks|copper]] and [[tin rocks]].
+
+To get to this mine, players can follow the path which leads south from the graveyard in [[Lumbridge]].
+
+The closest [[bank]] to this mine is in [[Al Kharid]] via the [[crossbow (weapon)|crossbow]] [[Shortcuts|shortcut]]. Players may wish to mine equal quantities of [[Copper ore|copper]] and [[tin ore]] and smelt them into [[bronze bar]]s using Al Kharid's [[furnace]] on the way through. This will add some time to each run; however, the time saved having to run back and forth between the bank and the furnace later on more than makes up for it.
+
+==Rocks==
+{| class="wikitable sortable align-center-1 align-left-2" style="text-align:right;"
+! rowspan=2 colspan=2 | Rock
+! colspan=2 | {{SCP|Mining}} [[Mining]]
+! rowspan=2 | Quantity
+|-
+!Level
+!Exp
+|-
+|{{plinkp|Copper ore}}||[[Copper rock|Copper]]
+|1||17.5||5
+|-
+|{{plinkp|Tin ore}}||[[Tin rock|Tin]]
+|1||17.5||5
+|-
+|}
+
+{{Mines}}
+{{Lumbridge Swamp}}

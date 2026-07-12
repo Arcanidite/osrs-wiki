@@ -1,0 +1,33 @@
+==General information and tips==
+Tip for pickpocketing: Go to the options menu, go to the game controller at the top right, and select "Hidden" under "NPC 'Attack' options". This will turn the 'Pickpocket' option into a left-click, rather than a right-click. Also, one may pickpocket more than once in a single animation, so spam-clicking will maximise experience.
+
+===Ardougne Diary===
+Different tiers of the [[Ardougne Diary]] increase the chance of successfully pickpocketing various NPCs. The [[medium Ardougne Diary]] increases the player's chance of success when pickpocketing by 10% only within Ardougne. The [[hard Ardougne Diary]] extends this bonus to all of Gielinor. Having the [[Ardougne cloak]] equipped or in the inventory is not required to get this benefit.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/873096746355703809|date=9 June 2017|archiveurl=https://reldo.runescape.wiki/i/104806|archivedate=25 May 2020|quote=No, you just need to have unlocked the diary reward.|name=Thieving}}
+
+Additionally, each tier of the diary increases the maximum amount of [[coin pouch]]es that can be held before needing to open them:
+* None/Easy: 28
+* Medium: 56
+* Hard: 84
+* Elite: 140
+
+As a result of both of these benefits, it is beneficial to have at least the hard tier of the diary done, as this gives the player both a buff to their chances at pickpocketing along with allowing them to pickpocket for longer before needing to open coin pouches. This increases experience rates and allows for less attention needed when pickpocketing, respectively.
+
+===Rogue equipment===
+While wearing components of the [[rogue equipment]], there is a chance of pickpocketing twice the loot from an NPC. Wearing the full set guarantees double loot. Experience drops remain unaffected, however.
+
+The set consists of the [[rogue mask]], [[rogue top]], [[rogue trousers]], [[rogue gloves]] and [[rogue boots]]. Items from the outfit can be found while looting the [[wall safe]] at the end of the [[Rogues' Den]] minigame, which can be accessed at 50 Thieving, with 80 Thieving granting an additional shortcut to make it faster.
+
+===Dodgy necklace===
+[[Dodgy necklace]] gives the wearer a 25% chance to not be [[Stun (status)|stunned]] and damaged when failing to pickpocket an NPC. This will increase experience rates if the player can fail to pickpocket the NPC. The necklace has 10 charges until it crumbles to dust.
+
+===Shadow Veil===
+While under the effects of the [[Shadow Veil]] spell, players have a 15% chance to avoid being [[Stun (status)|stunned]] and damaged while [[pickpocketing]] [[NPC]]s. This stacks multiplicatively with the [[dodgy necklace]], for a total of 36.25% chance to not take damage from a failed pickpocket{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1408410617623498757|date=25 June 2021|archiveurl=https://reldo.runescape.wiki/i/106149|archivedate=25 June 2021|quote=The Veil tries first, with its 15% roll. If it succeeds, the NPC doesn't shout.
+If that fails, the NPC shouts, and then the necklace does its 25% roll.
+So your chance of dodging the penalty is indeed the 36.25% you calculated, and you can see which one happened to you.}}. 
+
+===Gloves of silence===
+[[Gloves of silence]] increase players' success rate while pickpocketing by 5% while they are equipped. Wearing them requires level 54 [[Hunter]]. Gloves of silence can be bought from the Grand Exchange for {{Coins|{{GEP|Gloves of silence}}}} each or created at the [[Fancy Clothes Store]] in [[Varrock]] from 2 [[dark kebbit fur]]s for a cost of {{Coins|600}}.
+
+The [[Ardougne Diary]] perks override the gloves of silence 5% success rate. Therefore, the gloves of silence become obsolete within Ardougne after completing the medium Ardougne Diary, or completely obsolete after completing the hard Ardougne Diary.
+
+Gloves of silence are damaged each time that the player is unsuccessful in a pickpocketing attempt. They are destroyed after 62 failures, if counted from when they are new. If a player has multiple gloves of silence then they will all display the same status when their condition is checked. However, if the gloves of silence currently being used do fall apart, then any other pairs that the player owns are reset to the "new" condition. The condition of the gloves is only relevant to the player owning them, and is not a property of the gloves themselves. Players with at least level 64 [[Crafting]] can restore their gloves of silence to "new" condition by using 1 dark kebbit fur, costing {{Coins|{{GEP|Dark kebbit fur}}}}, and [[thread]], costing {{Coins|{{GEP|Thread}}}}, on the gloves.

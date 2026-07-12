@@ -1,0 +1,88 @@
+{{External|rs|rsc=Steel Scimitar|dw=Steel Scimitar}}
+{{Infobox Item
+|name = Steel scimitar
+|image = [[File:Steel scimitar.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A vicious, curved sword.
+|value = 400
+|weight = 1.814
+|respawn = 1000
+|exchange = Yes
+|id = 1325
+}}
+[[File:Steel scimitar detail.png|left|120px]]
+The '''steel scimitar''' is a [[scimitar]] made by using 2 [[steel bar]]s on an [[anvil]], as long as you have a [[hammer]] and at least level 35 [[Smithing]], granting 75 experience. Players can purchase this scimitar from [[Zeke's Superior Scimitars]] in [[Al Kharid]].
+
+Players require 5 [[Attack]] to wield [[steel weapons]].
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = +3
+|aslash = +15
+|acrush = -2
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = +1
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = +14
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 4
+|attackrange = 1
+|combatstyle = Slash Sword
+|image = [[File:Steel scimitar equipped male.png|120px]]
+|altimage = [[File:Steel scimitar equipped female.png|120px]]
+}}
+
+{{CombatStyles|Slash Sword|speed=4|attackrange=1}}
+
+==Creation==
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 35
+|skill1boostable = Yes
+|skill1exp = 75
+|members = No
+|ticks = 5
+|tools = Hammer
+|facilities = Anvil
+|mat1 = Steel bar
+|mat1quantity = 2
+|output1 = Steel scimitar
+}}
+
+==Item sources==
+{{Drop sources|Steel scimitar}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Steel scimitar|location=[[Prifddinas]] - on a table in [[Iorwerth's Arms]]|members=Yes|mapID=-1|3258,6057|leagueRegion=Tirannwn}}
+{{ItemSpawnTableBottom}}
+
+===Shop locations===
+{{Store locations list|Steel scimitar}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 13 June 2005
+|update = RuneCraft Update and Tweaks
+|change = The item's examine was changed from "''A vicious curved sword.''" to "''A vicious, curved sword.''"
+}}
+{{Subject changes footer}}
+
+{{Slash weapons}}
+{{Steel equipment}}

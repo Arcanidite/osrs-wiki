@@ -1,0 +1,35 @@
+==Creation==
+{{tabber
+|tab1=Clean herb
+|tab1content={{Recipe
+|skill1 = Herblore
+|skill1lvl = 25
+|skill1boostable = Yes
+|skill1exp = 7.5
+|members = Yes
+|ticks = 0
+|mat1 = Grimy ranarr weed
+|output1 = Ranarr weed
+}}
+|tab2=Degrime spell
+|tab2content={{Recipe
+|skill1 = Magic
+|skill1lvl = 70
+|skill1boostable = Yes
+|skill1exp = 83
+|skill2 = Herblore
+|skill2lvl = 25
+|skill2boostable = Yes
+|skill2exp = 3.7
+|notes = {{SCP|Quest}} Completion of [[A Kingdom Divided]]
+|members = Yes
+|ticks = 
+|mat1 = Grimy ranarr weed
+|mat2 = Earth rune
+|mat2quantity = 4
+|mat3 = Nature rune
+|mat3quantity = 2
+|output1 = Ranarr weed
+|output1subtxt = Degrime
+}}
+}}

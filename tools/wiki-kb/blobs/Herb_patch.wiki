@@ -1,0 +1,106 @@
+{{External|rs}}
+'''Herb patches''' are [[farming patches]] in which players can grow [[herb]]s. Currently, there are a total of 10 [[Herb patch#Herb patches|Herb patches]]. Herbs are primarily used in the [[Herblore]] skill. Most herb patches also have a [[compost bin]], a [[tool leprechaun]], an [[allotment]], and a [[Flower (patch)|flower patch]] nearby. All herbs take approximately 80 minutes to fully grow. Each patch requires one seed to begin growing that herb type. A [[seed dibber]] is required to plant a herb seed (unless the player has completed the farming subsection of [[Barbarian Training]]) and a [[spade]] to harvest herbs.
+
+Unlike [[allotment]]s, there is no way to protect herbs from disease, except by using a disease-free patch. Players can check on herbs regularly and apply [[plant cure]] if necessary to save a diseased plant. Using the [[Lunar Spellbook]], players can also cure diseased plants with the spell [[Cure Plant]], and instantly check the status of all farming patches by casting the spell [[Geomancy]]. It is highly recommended to use [[ultracompost]] on valuable herb crops, as this will not only greatly decrease the risk of death, but also increase the minimum yield to 6 herbs per seed. Yield boosting equipment such as the [[magic secateurs]] is also highly recommended.
+
+Similar to allotments, players may increase harvesting speed over the automatic rate by harvesting, waiting 2 game ticks, then clicking again to harvest. This will harvest 2 herbs per animation, effectively doubling harvest rate for the patch. The increased speed can also be achieved without any need for precise timing by spam-clicking during the first two ticks of harvesting.
+
+{{:Allotment patch/Patches|herb=yes|title=Herb}}
+
+==Bonuses==
+Many herb patches possess unique bonuses either after unlocking or once a requirement is fulfilled:
+*10% increased experience using the patch south of [[Falador]] after completing the [[Falador Diary#Medium|Medium Falador Diary]].
+*5, 10, and 15% extra yield using the patch north of [[Catherby]] with completion of the [[Kandarin Diary#Medium|Medium]], [[Kandarin Diary#Hard|Hard]], and [[Kandarin Diary#Elite|Elite Kandarin diaries]] respectively.
+*5% extra yield using the patch in the second tier of the [[Farming Guild]] with completion of the [[Kourend & Kebos Diary|Hard Kourend & Kebos Diary]].
+*5% extra yield using the patch in [[Hosidius]] with completion of the [[Kourend & Kebos Diary#Hard|Hard Kourend & Kebos Diary]].
+*10% extra yield on all herb patches when wielding or having [[magic secateurs]] in the inventory.
+*5% extra yield on all herb patches when wearing a [[Farming cape]].
+*5% extra chance to save a [[Farming#Variable crop yield|harvest life]] on all herb patches with a planted [[attas seed]].{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1199288075186294784|date=26 November 2019|archiveurl=https://reldo.runescape.wiki/i/105451|archivedate=25 May 2020|quote=Percentage reduction on losing a life at each roll - specifically 5%.}}
+*Disease-free patches in [[Troll Stronghold]] and [[Weiss]] unlocked with [[My Arm's Big Adventure]] and [[Making Friends with My Arm]] respectively.
+*Disease-free patch in [[Hosidius]] with completion of the [[Kourend & Kebos Diary#Easy|Easy Kourend & Kebos Diary]].
+*Disease-free patch near [[Civitas illa Fortis]] upon reaching Champion rank at the [[Fortis Colosseum]].
+*Disease-free patch on [[Harmony Island]] with completion of the [[Morytania Diary#Elite|Elite Morytania Diary]].
+{{:Herb patch/Seeds}}
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 17 June 2026
+|update = Bank Tags, Trouver System Rework & More!
+|change =
+* Herb patches in Weiss and Trollheim now display what herb they contain.
+* The hitbox on Huasca herbs now matches that of other herbs.
+}}
+{{Subject changes
+|date = 3 June 2026
+|update = New Regional Worlds Launch TODAY!
+|change = Herb patches now show which herb they contain in the right-click options.
+}}
+{{Subject changes
+|date = 17 September 2025
+|update = Poll 85 - Bridges, Boots, Ropes & Roots
+|poll = Poll 85 - Clan Chat and Player Tweaks
+|change = The herb patch at [[Harmony Island]] is now disease-free.
+}}
+{{Subject changes
+|date = 26 February 2025
+|update = Game Jam: POH Improvements
+|change = Fixed a bug where on rare occasions Kwuarm patches would harvest Avantoe.
+}}
+{{Subject changes
+|date = 20 March 2024
+|update = Varlamore: Part One
+|change = There is now a new herb patch found west of [[Civitas illa Fortis]].
+}}
+{{Subject changes
+|date = 7 August 2024
+|update = Poll 82 Changes
+|change = The click radius for herb patches that can be harvested or cured has been increased to cover the entire 2x2 patch.
+}}
+{{Subject changes
+|change = There is now a new disease-free herb patch found outside of [[Weiss]]. Players can plant herbs here after completing [[Making Friends With My Arm]] and building the [[Fire of Nourishment]].
+|date = 6 September 2018
+|update = Making Friends With My Arm, Deadman Autumn Finals and Full Mobile Launch
+|poll = Raise your hands for My Arm?
+}}
+{{Subject changes
+|date = 28 April 2016
+|update = Calling Pets & Deadman Death
+|poll = Old School Content Poll 41: Bank placeholders & Skillcapes
+|change = It is now possible to add compost or supercompost to any farming patch during any growth stage of a crop.
+}}
+{{Subject changes
+|date = 18 June 2015
+|update = Multiple Clues & Midsummer
+|change = The increased herb yields from Catherby herb patch and better chances at higher ores when cleaning pay-dirt diary rewards are now correctly being applied.
+}}
+{{Subject changes
+|date = 5 March 2015
+|update = Achievement Diaries
+|poll = Old School Achievement Diary Rewards Poll
+|change = * There is now a herb patch located on [[Harmony Island]] that you can use if you have completed the [[Morytania Elite Diary]].
+* You now receive increased yields from the [[Catherby]] herb patch for the completion of [[Kandarin Diary|Kandarin Diaries]]:
+**5% more for the [[Kandarin Medium|medium diary]].
+**10% more for the [[Kandarin Hard Diary|hard diary]].
+**15% more for the [[Kandarin Elite|elite diary]].
+}}
+{{Subject changes footer}}
+
+==Trivia==
+[[File:Geomancy Harmony Island patch protection.png|right|Harmony Island patch protection icon]]
+[[File:Friends List.png|right|Hosidius patch protection icon]]
+* [[Lunar spellbook]]'s [[Geomancy]] spell has custom descriptions for protected patches:
+** Harmony Island's patch is described as being "permanently undead" and is indicated by a zombie variant of the [[Friends List]] icon.
+** Hosidius's patch is described as being protected by the "people of Hosidius" and is indicated by the [[Friends List]] icon.
+** Troll Stronghold and Weiss's patches use the generic protection description and icon.
+** Civitas illa Fortis has no custom description nor icon at all.
+
+==See also==
+*[[Farming/Patch locations]]
+*[[Herb yield]]
+*[[Growth tick]]
+*[[Calculator:Farming/Herbs]]
+
+==References==
+{{Reflist}}
+
+{{Farming patches}}

@@ -1,0 +1,39 @@
+==Obtaining==
+{| class="wikitable lighttable sortable align-left-2" style="text-align:center;"
+! colspan="2" | Item
+! Cost  
+! Weight<br/>reduction
+! Run energy<br/>restoration rate
+! Reduction<br/>(kg/{{plinkp|Mark of grace}})
+! Restoration<br/>(%/{{plinkp|Mark of grace}})
+|-
+| {{plinkt|Graceful hood|txt=Hood}}||{{plinkp|Mark of grace}}35||-3 kg||+3%||-0.086||0.086
+|-
+| {{plinkt|Graceful top|txt=Top}}||{{plinkp|Mark of grace}}55||-5 kg||+4%||-0.091||0.073
+|-
+| {{plinkt|Graceful legs|txt=Legs}}||{{plinkp|Mark of grace}}60||-6 kg||+4%||-0.100||0.067
+|-
+| {{plinkt|Graceful gloves|txt=Gloves}}||{{plinkp|Mark of grace}}30||-3 kg||+3%||-0.100||0.100
+|-
+| {{plinkt|Graceful boots|txt=Boots}}||{{plinkp|Mark of grace}}40||-4 kg||+3%||-0.100||0.075
+|-
+| {{plinkt|Graceful cape|txt=Cape}}||{{plinkp|Mark of grace}}40||-4 kg||+3%|||-0.100||0.075
+|-
+! colspan="2" | Complete set
+! {{plinkp|Mark of grace}}260
+! -25 kg
+! +30%<ref group="n">The total of the individual items is 20%, but the set effect adds another 10% increasing the total to 30%.</ref>
+! -0.096
+! 0.115
+|}
+<references group="n" />
+
+The graceful outfit can only be bought with [[Mark of grace|marks of grace]], which can only be obtained by running laps on certain [[Agility courses]]. Buying the entire set costs 260 marks. Selling the whole set back to [[Grace]] will yield 208 marks. It is important to note that only uncoloured pieces of the set can be refunded.
+
+The [[Canifis Rooftop Course]] is a popular rooftop course for obtaining the outfit due to its anomalously high rate of mark spawns. While the chance of receiving marks on courses that are 20 levels under a player's Agility level is decreased to 20% of their original rate{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/628223083858362368|date=3 August 2015|archiveurl=https://archive.is/r7dFR|archivedate=25 May 2020|quote=If your unboosted level is 20 higher than required for the course, the rate is reduced to 20% of its normal rate.}}, this reduction does not apply to the Canifis course,{{CiteDiscord|author=Mod Lenny|url=https://discord.com/channels/177206626514632704/269673599554551808/1060187143936417862|date=4 January 2023|quote=...there looks like there's been something wrong with canifis for potentially a long time (...) may just be kind of disregarding your level being higher, and also allowing for higher rates that say ardy would get (kind of, ish, maybe) (...) [okay if it's actually 400 instead of 40 that's fucking hilarious] (...) 140|archiveurl=https://reldo.runescape.wiki/i/27963017#chat-messages-269673599554551808-1060187143936417862|archivedate=9 March 2026}} making it the best course for marks until Ardougne. Obtaining the full graceful outfit starting at level 40 Agility on the Canifis Rooftop Course will take anywhere from 13-16 hours and 500-900 laps, which makes it the second fastest method in the game behind the [[Ardougne Rooftop Course]]. This will yield approximately 54-59 Agility by the time 260 marks of grace have been obtained with this method.
+
+Another popular method is getting to the [[Seers' Village Rooftop Course]] as soon as possible and obtaining marks there. Marks of Grace are earned there at ~75-90% of the rate as at Canifis (depending on the [[Kandarin Diary]] tier completed) with far higher experience rates. The experience rates of the [[Falador Rooftop Course|Falador Rooftop]] and [[Wilderness Agility Course]]s are also significantly higher than Canifis', but marks of grace are obtained at a lower rate on the Falador Rooftop Course while not at all on the Wilderness Agility Course. If long-term Agility or marks goals are desired, this method is more efficient.
+
+A full graceful set costs 260 marks of grace. If a player chooses to instead spend the same amount of marks on [[amylase pack]]s, they instead receive 2,600 [[amylase crystal]]s, which are currently worth {{NoCoins|{{GEP|Amylase crystal|2600}}|c}}. This can be viewed as the monetary "value" of the graceful set. Thus, it is worth considering whether or not the set is worthwhile enough to account for the potential lost profit. However, the outfit is useful in training various [[skills]], as well as [[Quests|questing]]. The graceful outfit can thus be seen as an investment that may pay off due to the amount of coins saved that would have otherwise been spent on [[stamina potion]]s. This is a one-way valuation of the graceful set, as it may only be purchased via marks of grace. Once marks are spent on amylase packs and these packs are sold for coins, the only way to obtain more marks is to continue completing rooftop courses.
+
+The weight reduction does not transfer to F2P worlds.

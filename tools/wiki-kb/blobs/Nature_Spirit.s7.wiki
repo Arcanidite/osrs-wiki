@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = Nature Spirit
+|image = [[File:Nature Spirit reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+* {{SCP|Crafting|3,000}} [[Crafting]] experience
+*{{SCP|Defence|2,000}} [[Defence]] experience
+*{{SCP|Hitpoints|2,000}} [[Hitpoints]] experience
+*Access to [[Mort Myre Swamp]] and the Nature Spirit altar, where you can replenish and temporarily boost your [[prayer]] points by 2
+*Ability to fight [[ghast]]s
+*3 meat pies and 3 apple pies unless they were rotted by the [[ghast]]s
+*Ability to build the [[fire of dehumidification]] after completion of [[Making Friends with My Arm]]
+}}

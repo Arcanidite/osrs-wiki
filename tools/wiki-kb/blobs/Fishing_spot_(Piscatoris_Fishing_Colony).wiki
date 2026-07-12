@@ -1,0 +1,71 @@
+{{External|rs}}
+{{Infobox NPC
+|name = Fishing spot
+|image = [[File:Fishing spot new.webp|300px]]
+|release = [[2 May]] [[2006]]
+|update = New fishing skill and more cooking
+|members = Yes
+|quest = [[Swan Song]]
+|location = [[Piscatoris Fishing Colony]]
+|options = Net, Harpoon
+|examine = I can see fish swimming in the water.
+|map = No
+|dropversion = Small net,Harpoon
+|id = 4316
+|leagueRegion = Kandarin
+}}
+'''Fishing spots''' can be found at the [[Piscatoris Fishing Colony]] during and after the [[Swan Song]] quest. These spots are the only place you can fish [[raw monkfish]], requiring a [[small net]]. Tuna and swordfish can also be caught from these fishing spots with a [[harpoon]].
+
+==Location==
+{{ObjectTableHead}}
+{{ObjectLocLine
+|name = Fishing spot (Piscatoris Fishing Colony)
+|location = [[Piscatoris Fishing Colony]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2310,y:3697|x:2311,y:3704|x:2326,y:3700|x:2343,y:3702|x:2349,y:3702
+|mtype = pin
+|leagueRegion = kandarin
+}}
+
+{{ObjectTableBottom}}
+
+==Net==
+{{Fishing info
+|name = Fishing spot 
+|level = 62
+|xp = 120
+|tool = {{plink|Small fishing net}}
+|bait = Nothing
+|bucket = No
+|dropversion = Small net
+}}
+{{DropsTableHead|dropversion=Small net}}
+{{DropsLineSkill|name=Raw monkfish|quantity=1|rarity=Always|skill=Fishing|level=62}}
+{{DropsTableBottom}}
+
+== Harpoon ==
+{{Fishing info
+|name = Fishing spot
+|level = 35
+|xp = Varies
+|tool = {{plink|Harpoon}}<br />OR<br />{{plink|Barb-tail harpoon}}
+|bait = Nothing
+|bucket = No
+|dropversion = Harpoon
+}}
+
+{{DropsTableHead|dropversion=Harpoon}}
+{{DropsLineSkill|name=Raw tuna|quantity=1|rarity=common|skill=Fishing}}
+{{DropsLineSkill|name=Raw swordfish|quantity=1|rarity=common|skill=Fishing}}
+{{DropsLineSkill|name=Big swordfish|quantity=1|rarity=very rare|skill=Fishing|raritynotes={{Refn|There is a 1/2500 chance to catch a [[big swordfish]] instead of a [[raw swordfish|normal swordfish]].{{CiteTwitter|name=bigFishDropRates|author=Mod Ash|url=https://twitter.com/JagexAsh/status/587574469616476162|date=13 April 2015|archiveurl=https://reldo.runescape.wiki/i/101775|archivedate=26 March 2019|quote=Bass = 1/1000. Swordfish = 1/2500. Shark = 1/5000.}}|group=d}}}}
+{{DropsTableBottom}}
+
+{{reflist|group=d}}
+
+==References==
+{{Reflist}}
+
+{{Piscatoris Fishing Colony}}
+{{Fishing spots}}

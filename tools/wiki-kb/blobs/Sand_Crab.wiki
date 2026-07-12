@@ -1,0 +1,280 @@
+{{HasTask|Crabs}}{{Otheruses|the normal monster|the stronger variant found in the Catacombs of Kourend|King Sand Crab}}
+{{Infobox Monster
+|version1 = Active
+|version2 = Hidden
+|name1 = Sand Crab
+|name2 = Sandy rocks
+|image1 = [[File:Sand Crab.png|250px]]
+|image2 = [[File:Sandy rocks.png|250px]]
+|release = [[19 May]] [[2016]]
+|update = Sand Crabs & Soul Bearers
+|members = Yes
+|combat = 15
+|size = 1
+|examine1 = No one likes crabs...
+|examine2 = A sandy outcrop.
+|xpbonus = 0
+|max hit = 1
+|aggressive1 = No
+|aggressive2 = Yes
+|poisonous = No
+|attack style = [[Crush]]
+|attack speed = 4
+|respawn = 50
+|slayxp = 60
+|cat = Crabs
+|assignedby = mazchna,vannaka,chaeldar
+|hitpoints = 60
+|att = 1
+|str = 1
+|def = 1
+|mage = 1
+|range = 1
+|attbns = 0
+|strbns = 0
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|dlight = 0
+|dstandard = 0
+|dheavy = 0
+|elementalweaknesstype = earth
+|elementalweaknesspercent = 20
+|poisonresistance = 0
+|venomresistance = 0
+|immunecannon = Yes
+|immunethrall = No
+|id1 = 5935,7206
+|id2 = 5936,7207
+|leagueRegion = Varlamore,Kourend,Misthalin
+}}
+'''Sand Crabs''' are [[aggressive]] monsters that look like harmless sandy rocks while disguised, but attack when walked by. They are found along the southern coast in [[Hosidius]], [[Crabclaw Caves]], [[Crabclaw Isle]], [[Isle of Souls]], and [[Avium Savannah]]. The [[dwarf multicannon]] cannot be used against them. Uniquely, the crabs found in [[Outer Fortis]] (south of the [[Fortis Colosseum]]) spawn in their active state, and are not aggressive towards players.
+
+Killing a Sand Crab is a task in the [[Easy Kourend & Kebos Diary]].
+
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Sand Crab
+|location =  [[Avium Savannah]] - southern coast
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1656,y:2882|x:1657,y:2883|x:1651,y:2884|x:1653,y:2885|x:1652,y:2886|x:1639,y:2887|x:1641,y:2888|x:1640,y:2889|x:1655,y:2889|x:1612,y:2890|x:1623,y:2890|x:1613,y:2891|x:1621,y:2891|x:1631,y:2891|x:1659,y:2891|x:1661,y:2891|x:1611,y:2892|x:1613,y:2892|x:1622,y:2892|x:1647,y:2893|x:1618,y:2895|x:1610,y:2896|x:1596,y:2901|x:1593,y:2903|x:1594,y:2904|x:1592,y:2905|x:1599,y:2905|x:1603,y:2905|x:1589,y:2906|x:1597,y:2910|x:1589,y:2914|x:1601,y:2914|x:1603,y:2915|x:1593,y:2916|x:1601,y:2916|x:1592,y:2917|x:1585,y:2918|x:1594,y:2918|x:1586,y:2919|x:1599,y:2920|x:1598,y:2925|x:1598,y:2926|x:1599,y:2927|x:1599,y:2935|x:1596,y:2940|x:1598,y:2941|x:1597,y:2942
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Sand Crab
+|location = [[Crabclaw Caves]]
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1678,y:9821|x:1680,y:9821|x:1672,y:9822|x:1680,y:9822|x:1671,y:9823|x:1678,y:9823|x:1669,y:9825|x:1670,y:9826|x:1675,y:9826|x:1672,y:9829|x:1673,y:9831|x:1667,y:9832|x:1669,y:9832|x:1667,y:9833
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Sand Crab
+|location = [[Crabclaw Isle]]
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1786,y:3403|x:1785,y:3404|x:1787,y:3404|x:1787,y:3405|x:1780,y:3406|x:1779,y:3407|x:1768,y:3408|x:1780,y:3408|x:1781,y:3408|x:1767,y:3409|x:1769,y:3409|x:1787,y:3409|x:1752,y:3410|x:1756,y:3410|x:1749,y:3411|x:1748,y:3412|x:1761,y:3412|x:1774,y:3412|x:1780,y:3412|x:1783,y:3412|x:1749,y:3413|x:1750,y:3413|x:1751,y:3424|x:1750,y:3425|x:1752,y:3425|x:1751,y:3426|x:1763,y:3426|x:1766,y:3427|x:1780,y:3427|x:1754,y:3429|x:1763,y:3429|x:1776,y:3429|x:1778,y:3429|x:1777,y:3432|x:1781,y:3432|x:1780,y:3437|x:1779,y:3438|x:1781,y:3438|x:1757,y:3439|x:1759,y:3439|x:1780,y:3439|x:1758,y:3440|x:1764,y:3444|x:1763,y:3445|x:1764,y:3446|x:1765,y:3446|x:1769,y:3447
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Sand Crab
+|location = East of the [[Hosidius]] [[vinery]]
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1863,y:3536|x:1861,y:3537|x:1857,y:3542|x:1863,y:3542|x:1864,y:3544|x:1868,y:3545|x:1874,y:3546|x:1858,y:3547|x:1879,y:3551|x:1860,y:3552|x:1870,y:3553|x:1876,y:3554|x:1868,y:3555|x:1876,y:3556|x:1869,y:3557|x:1874,y:3558|x:1859,y:3559|x:1861,y:3560|x:1863,y:3561|x:1868,y:3561|x:1871,y:3565|x:1870,y:3566
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Sand Crab
+|location = [[Hosidius]] - southern coast
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1815,y:3456|x:1822,y:3457|x:1833,y:3457|x:1834,y:3459|x:1831,y:3460|x:1773,y:3460|x:1817,y:3461|x:1844,y:3461|x:1772,y:3461|x:1698,y:3461|x:1842,y:3462|x:1774,y:3462|x:1802,y:3464|x:1844,y:3464|x:1731,y:3464|x:1748,y:3464|x:1772,y:3465|x:1786,y:3466|x:1694,y:3466|x:1766,y:3467|x:1790,y:3467|x:1737,y:3468|x:1750,y:3468|x:1764,y:3468|x:1766,y:3468|x:1775,y:3468|x:1777,y:3468|x:1797,y:3469|x:1733,y:3469|x:1738,y:3469|x:1757,y:3469|x:1766,y:3469|x:1776,y:3469|x:1791,y:3469|x:1733,y:3470|x:1748,y:3470|x:1750,y:3470|x:1694,y:3470|x:1753,y:3471|x:1787,y:3472|x:1695,y:3472|x:1741,y:3473|x:1688,y:3474|x:1675,y:3477|x:1676,y:3477|x:1674,y:3478|x:1684,y:3478|x:1685,y:3479|x:1690,y:3479|x:1698,y:3479|x:1696,y:3482|x:1697,y:3486|x:1683,y:3487|x:1694,y:3487|x:1685,y:3489|x:1686,y:3490
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Sand Crab
+|location = [[Isle of Souls]]
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:2285,y:2785|x:2297,y:2785|x:2252,y:2786|x:2290,y:2789|x:2257,y:2791|x:2261,y:2791|x:2282,y:2791|x:2267,y:2792|x:2276,y:2792|x:2278,y:2792|x:2286,y:2792|x:2287,y:2796|x:2273,y:2798|x:2282,y:2804|x:2284,y:2804|x:2283,y:2805|x:2277,y:2812|x:2281,y:2815
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{LocLine
+|name = Sand Crab
+|location = [[Outer Fortis]]
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1784,y:3049|x:1787,y:3048|x:1791,y:3052|x:1793,y:3050|x:1794,y:3054|x:1797,y:3052|x:1798,y:3051|x:1799,y:3053|x:1799,y:3056|x:1804,y:3054
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Sand Crab
+|location =  [[Tear of the Soul]]
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|zoom = 4
+|x:2315,y:2780|x:2316,y:2779|x:2325,y:2777|x:2326,y:2776|x:2327,y:2777|x:2327,y:2771|x:2326,y:2770|x:2327,y:2769
+|mtype = pin
+|leagueRegion = N/A
+}}
+{{LocLine
+|name = Sand Crab
+|location =  [[Wintumber Island]]
+|levels = 15
+|members = Yes
+|mapID = -1
+|plane = 0
+|zoom = 3
+|2065,2616|2066,2615|2067,2616|2075,2611|2074,2610|2075,2609|2071,2603|2069,2600|2070,2599|2069,2598|2066,2597
+|mtype = pin
+|leagueRegion = N/A
+}}
+{{LocTableBottom}}
+
+==Transportation==
+Recommended Sand Crab spots are located both on the southern coast of [[Hosidius]].
+
+Note that the sand crabs near Outer Fortis spawn in crab mode instead of spawning as boulders, meaning they are unaggressive and thus unsuitable for combat training.
+===Avium Savannah===
+If you've never been to [[Varlamore]] before, the only method of reaching the Avium Savannah is to travel to the east of [[Varrock]] and travel to [[Civitas illa Fortis]] using [[Primio]]. This requires the completion of [[Children of the Sun]]. Once in Civitas illa Fortis, travel directly south to the beach, then travel west to find the Sand Crabs.
+
+If [[Twilight's Promise]] has been completed, players can travel close to the coast with the [[Quetzal Transport System]] using [[Renu]], who is located in the centre of Civitas illa Fortis, close to Primo and the [[Civitas illa Fortis Teleport]] location. Use Renu to travel to [[Sunset Coast]] or the [[Colossal Wyrm]], which places the player near the beach.
+
+===Hosidius===
+If you've never been to Great Kourend before, there is only one method of reaching the beach containing most of the sand crabs: go to [[Port Sarim]] and speak to [[Veos]] (he is found on the north-east platform). Travel to [[Port Piscarilius]] and run all the way south to the beach (use the world map as you go along to avoid getting lost). It's a good idea to bring weight-reducing gear and bank any heavy items that bring your weight above 0.0 kg (lower actually doesn't make a difference in your [[Energy|run drain rate]]), as there is a bank chest in the centre of the beach.
+
+Other players have several ways to get to there.
+#Likely the fastest method, if your house is in [[Hosidius]], is to simply teleport outside your house and run south. You could also use [[scrolls of redirection]] on [[Teleport to house (tablet)|house teleport tablets]] (still requires 25 Construction) to teleport outside the portal if your house is located elsewhere.
+#The second fastest method by a small margin is [[Tithe Farm]] minigame teleport, which puts you directly north of the beach. This method is quick and free, but requires you to have entered Tithe Farm at least once and thus requires 34 [[Farming]].
+#Another very fast method is to use the [[Lovakengj Minecart Network]] destination "Hosidius South", provided that you have a quick way of reaching one of the other minecarts. Quick ways to access it are aplenty, including: [[Rada's blessing]] (any) woodlands teleport (fastest), [[Kharedst's memoirs]] or [[Book of the dead]] teleport to [[Lovakengj]] or [[Hosidius]], [[Arceuus Library Teleport]], [[Skills necklace]] to the [[Farming Guild]], or  "Xeric's Honour" on [[Xeric's talisman]]. Note that without having completed [[The Forsaken Tower]], a trip will cost 20 coins.
+Other, somewhat slower methods include:
+#Use the fairy ring code {{Fairycode|AKR}} and run south-west.
+#Use [[Xeric's talisman]] to teleport nearby using the teleport marked "[[Xeric's Glade]]".
+#Use the [[skills necklace]] to teleport to the [[Woodcutting Guild]] then run east.
+
+==Strategy==
+Sand Crabs effectively serve as an alternative to [[Rock Crab]]s and enable [[AFKing|AFK]] training due to their clusters in some spots, with little attention needed to train on them. Sand Crabs have 10 more [[Hitpoints]] than Rock Crabs and are otherwise identical in stats and behaviour, with clusters of multiple Sand Crabs next to each other in some spots, numbering 4 or more surrounding several spots on [[Crabclaw Isle]]. Players wishing to train on Crabclaw Isle must bring 10,000 coins and may also find these spots to be occupied. A recommended alternative are the Sand Crabs on the Avium Savannah in Varlamore, which face much less competition compared to the Sand Crabs in Hosidius.
+
+Like all other crabs, sand crabs start off aggressive but will become [[tolerance|tolerant]] of the player after ten minutes. As they must be active in order to be fought, players must [[Tolerance#Standard_monsters|reset their aggression timer]] once they become tolerant. To make the crabs aggressive again, exit the surrounding area - roughly the same distance as the diameter of the minimap - and enter again. As they are "dormant" (and cannot be seen on the [[minimap]]) until "awoken" by a passing player, Sand Crabs cannot be attacked until they are made aggressive once more.
+
+[[Ammonite Crab]]s have likewise mostly replaced Sand Crabs. Ammonite Crabs have 100 Hitpoints and level 1 in all other stats, like the other crabs, but have slightly different mechanics; they are spaced far apart, but also have a greater range of aggression. However, there are more available spots to attack Sand Crabs.
+
+There is an altar somewhat nearby the Sand Crabs in [[Hosidius]], so it may be advisable to recharge [[Prayer]] at this altar whenever resetting their aggression. Players planning to do so would do well to bring equipment with good Prayer bonuses. Additionally, for non-[[ironmen]] players, 55 Prayer unlocks [[Preserve]] and allows potions to last longer while training AFK.
+
+Due to the absence of aggression from the sand crabs found in Outer Fortis, they are not suitable for AFK training, as the player will need to manually attack each crab, and the area is single-way combat, so the player may not tag multiple crabs and then step away.
+
+The larger sand crab counterpart, [[King Sand Crab]]s, are located in the [[Catacombs of Kourend]] and the [[Crabclaw Caves]]. King Sand Crabs only share similarities in name, appearance, and in being dormant until walked near; they are powerful in offensive and defensive stats.
+
+==Drops==
+{{DropLogProject|kills=2239707}}
+
+{{Average drop value}}
+
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLine|name=Bronze pickaxe|quantity=1|rarity=6/128}}
+{{DropsLine|name=Iron pickaxe|quantity=1|rarity=5/128}}
+{{DropsTableBottom}}
+
+===Coins===
+{{DropsTableHead}}
+{{DropsLine|name=Coins|quantity=4|rarity=29/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=8|rarity=6/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=36|rarity=8/128|gemw=No}}
+{{DropsTableBottom}}
+
+===Seaweed===
+{{DropsTableHead}}
+{{DropsLine|name=Seaweed|quantity=1|rarity=4/128}}
+{{DropsLine|name=Seaweed|quantity=2|rarity=4/128}}
+{{DropsLine|name=Seaweed|quantity=5|rarity=2/128}}
+{{DropsLine|name=Edible seaweed|quantity=2|rarity=2/128}}
+{{DropsTableBottom}}
+
+===Ore===
+{{DropsTableHead}}
+{{DropsLine|name=Tin ore|quantity=3|rarity=4/128}}
+{{DropsLine|name=Iron ore|quantity=1|rarity=2/128}}
+{{DropsLine|name=Coal|quantity=2|rarity=2/128}}
+{{DropsLine|name=Copper ore|quantity=3|rarity=2/128}}
+{{DropsTableBottom}}
+
+===Oyster===
+{{DropsTableHead}}
+{{DropsLine|name=Oyster|quantity=1|rarity=9/128}}
+{{DropsLine|name=Oyster|quantity=2|rarity=12/128}}
+{{DropsLine|name=Empty oyster|quantity=1|rarity=3/128|gemw=No}}
+{{DropsLine|name=Empty oyster|quantity=3|rarity=1/128|gemw=No}}
+{{DropsLine|name=Oyster pearl|quantity=1|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Other===
+{{DropsTableHead}}
+{{DropsLine|name=Nothing|rarity=13/128}}
+{{DropsLine|name=Bucket of sand|quantity=1|rarity=6/128}}
+{{DropsLine|name=Opal bolt tips|quantity=5|rarity=2/128}}
+{{DropsLine|name=Fishing bait|quantity=10|rarity=2/128}}
+{{DropsLine|name=Spinach roll|quantity=1|rarity=1/128}}
+{{DropsLine|name=Casket|quantity=1|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Gem drop table===
+{{GemDropTable|1/128|chaostalisman=yes|naturetalisman=yes}}
+
+===Tertiary===
+{{DropsTableHead}}
+{{DropsLineClue|type=easy|rarity=1/128|raritynotes={{CiteTwitter|author=Mod Tide|url=https://twitter.com/JagexTide/status/1131933683714330624|date=24 May 2019|archiveurl=https://reldo.runescape.wiki/i/106558|archivedate=24 May 2019|quote=I know its been a while since the clue expansion but here is the information on clue scroll drop rates and loot chances! If anything changes I will keep you posted.|name=Clue rates tweet}}}}
+{{DropsTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|change = Sand Crabs now have a 20% [[elemental weakness]] to [[earth spells]].
+|date = 25 June 2025
+|update = Summer Sweep Up: Combat
+}}
+{{Subject changes
+|date = 26 March 2025
+|update = Poll 83 QoL Changes
+|poll = Poll 83 - Castle Wars, New Player Changes & More
+|change = Crabs can now be assigned as a [[Slayer task]] by [[Mazchna]], [[Vannaka]], and [[Chaeldar]].
+}}
+{{Subject changes footer}}
+
+==Trivia==
+* The sand crabs at [[Outer Fortis]] uniquely spawn as themselves rather than as sandy rocks.
+==References==
+{{Reflist}}
+
+{{Crabclaw Caves}}

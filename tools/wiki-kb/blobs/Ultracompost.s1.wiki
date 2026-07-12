@@ -1,0 +1,9 @@
+==Farming info==
+{{Skill info
+|name = Ultracompost
+|skill1name = Farming
+|skill1lvl = 1
+|skill1exp = 36
+|facilityname = [[Farming patch]]
+|facility = Any un-ultracomposted farming patch
+}}

@@ -1,0 +1,13 @@
+===Bearded Pollnivnian Bandit===
+{{Thieving info
+|version = Bearded
+|name = Bandit (bearded)
+|level = 45
+|xp = 65
+|type = Pickpocket
+|tool = [[Blackjack]]
+|dropversion = Bearded
+}}
+{{DropsTableHead|dropversion=Bearded}}
+{{DropsLineSkill|name=Coins|quantity=40|rarity=Always|skill=Thieving}}
+{{DropsTableBottom}}

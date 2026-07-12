@@ -1,0 +1,163 @@
+==Obtaining marks of grace==
+Marks of grace appear randomly as players complete laps of the following courses:
+
+* All [[Rooftop Agility Courses|Rooftop Agility courses]]
+* [[Gnome Stronghold Agility Course]]
+* [[Shayzien Agility Course]] (both the basic and advanced courses)
+* [[Barbarian Outpost Agility Course]]
+* [[Ape Atoll Agility Course]]
+* [[Werewolf Agility Course]]
+* [[Dorgesh-Kaan Agility Course]]
+
+Higher level courses have a greater chance of spawning marks. Marks spawned are player-specific, meaning players are only able to see and pick up marks spawned for them and not for other players.
+
+When a mark appears on the course, players have 10 minutes to pick it up before it will disappear. Marks spawn at semi-random times at specific locations along a course. It is possible for multiple marks to spawn on the same tile, which stacks the marks and resets the despawn timer to 10 minutes. Ardougne is an exception, as the marks can only spawn on one tile, and each new mark refreshes the 10 minute timer. When logged out, marks stay on the ground, and this timer is paused.
+
+Marks of grace can also be obtained indirectly via the [[Brimhaven Agility Arena]] or [[Colossal Wyrm Agility Course]], by exchanging [[Amylase packs]] with [[Grace]] at an exchange rate of 7.5 [[Brimhaven voucher]]s or 12.5 [[termite]]s per 1 mark of grace.
+
+===Achievement Diary boosts===
+Completing the easy, medium and hard [[Kandarin Diary]] increases the chance of receiving marks of grace during the [[Seers' Village Rooftop Course]] by rerolling for a mark after a failed spawn roll with a 5, 10, or 15 percent chance respectively.{{CiteTwitter|author=Mod Lenny|url=https://twitter.com/JagexLenny/status/1605196326156865539|date=21 December 2022|archiveurl=https://reldo.runescape.wiki/i/99024|archivedate=21 December 2022|quote=Just an extra 5/10/15% chance if you fail the first roll.}} This translates to an effective 10, 20, or 30 percent increase to the base rate of spawning marks (1/3).
+
+Similar to the Seers' course, completing the [[Ardougne Diary#Elite|elite Ardougne Diary]] adds a 25% reroll to failed mark rolls on the [[Ardougne Rooftop Course]]. In addition to this, 50% of the time the usual 3 minute cooldown is reduced to 2 minutes, which with the approximate 45 second lap time leads to an approximate 21% increase to the marks spawned per hour.{{CiteTwitter|author=Mod Lenny|url=https://twitter.com/JagexLenny/status/1604865515536912386|date=19 December 2022|archiveurl=https://reldo.runescape.wiki/i/99024|archivedate=21 December 2022|quote=There are two things that come into play for 25% better chances for marks of grace. Fails will roll again with a 25% chance and 50% of the time the cooldown will be a minute shorter.}}
+
+Completing the hard [[Desert Diary]] and hard [[Fremennik Diary]] gives a 1/3 chance to reduce the 3 minute cooldown to 2 minutes on the [[Pollnivneach Rooftop Course]] and [[Rellekka Rooftop Course]], respectively.{{CiteDiscord|author=Mod Lykos|url=https://discord.com/channels/177206626514632704/514602892292784139/1397002033911038144|date=21 July 2025|quote=for the Pollnivneach and Rellekka courses, there is a 1/3 chance to have the timer be two minutes if you've completed the hard tier of the respective diary|image=Lykos Desert and Frem diary mark of grace bonus.png|archiveurl=https://reldo.runescape.wiki/i/27962700#chat-messages-514602892292784139-1397002033911038144|archivedate=7 March 2026}}
+
+===Optimal strategies===
+[[Canifis Rooftop Course]] has the greatest chance at spawning marks for players between level 40 to 89 Agility, due to its higher-than-normal spawn rate of 2/3 instead of 1/3, and the lack of the 20-levels-over penalty that is applied to the other courses. Using the Canifis Rooftop Course will typically net players ~12-18 marks per hour, depending on luck. However, by timing the marks [[#Spawning_mechanics|spawn mechanics]] and [[#Timing_marks|strategically waiting]] players can net up to 20 marks per hour, luck depending, at the cost of lower Agility experience. However, if one plans on training Agility beyond what is needed for the graceful outfit, they may consider switching to the [[Falador Rooftop Course|Falador]] course when they can for increased experience rates. Compared to the Canifis course, the Falador course offers 25%–50% higher experience rates but sacrifices ~33% of the marks generated.
+
+====Timing marks====
+
+* Start the course, noting down the minute each time a lap is completed. For example, the Canifis course takes around 45 seconds. Starting at 00:00:00, lap one would complete at 00:45:00 which is minute 0, the second lap at 01:30:00 which is minute 1.<ref group="g">See [[#Spawning_mechanics|Spawning mechanics]].</ref>
+
+* When the first mark of grace is found, the cooldown becomes the ending minute of the previous lap plus the cooldown time (3 minutes for most courses). For instance, a mark found during a lap where the previous lap completed between 01:30:00 - 02:15:00 the cooldown timer will be set to 05:00:00.
+
+* Once a new mark is found, the player should wait at end of the lap for the cooldown minute to be reached before crossing the final obstacle and rolling a chance at a new mark. <ref group="g">Waiting is a good opportunity for players to train other skills such as [[Fletching]] or [[High Level Alchemy]].</ref>
+
+* If a new mark is found, repeat the process. If no new mark is found and the course lap time is under 60 seconds, complete another lap before the next minute is over. <ref group="g">Successfully completing two laps within a single minute rolls two chances of obtaining a mark of grace which increases probability from 1/3 to 5/9, and 2/3 to 8/9.</ref>
+
+====Sub-optimal with better experience====
+
+Not all players will want to sacrifice the majority of their Agility experience per hour for a slightly higher chance at marks of grace. A balanced approach can be taken where, instead of waiting, the player continues to complete more laps, only waiting when reaching the end of a lap and there is less time until the next cooldown minute than it would take to complete another full lap.
+
+For example, with a cooldown timer of 04:00:00, the player can complete 3 laps: 01:30:00 - 02:15:00, 02:15:00 - 03:00:00, and 03:00:00 - 03:45:00. However, upon reaching the end of lap 3, the player should wait the remaining 15 seconds until 04:00:00 before completing the lap.
+
+This strategy is not quite optimal as more laps increases the chance of failing obstacles, disrupting optimal course completion timing. However, the extra experience gained per hour may be an acceptable trade-off for most players, despite a slightly reduced rate of marks of grace.
+
+<references group="g" />
+
+==== Colossal Wyrm hybrid method ====
+[[Termites]] can be indirectly traded for marks of grace via [[Amylase pack|Amylase packs]]. They also have a separate spawn timer to marks of grace, meaning the theoretical fastest method for marks of grace per hour would be teleporting back and forth between the [[Colossal Wyrm Agility Course]] and your current best rooftop course for marks of grace each time you get either a termite or mark of grace drop. This method requires the [[Landing Site|Quetzal landing site]] closest to the Colossal Wyrm Agility Course, a constant supply of fresh meat to refill the [[Quetzal whistle]], and a teleport as close as possible to your chosen rooftop course (ie. [[Fremennik sea boots 4]], [[Camelot Teleport|Seer's village teleport]], or access to [[Ancient Magicks|ancients]] for [[Kharyrll Teleport]]).
+
+===Marks of grace per hour===
+{{Incomplete|Missing rates for non-rooftop courses}}
+{{Main|Rooftop Agility Courses}}
+{| class="wikitable sortable"
+|+
+!Course
+!Level
+!Marks/h<ref group="a">The following values are the approximate number of marks of grace spawned per hour of rooftop Agility training, assuming the player's Agility is not 20 levels or more above the course requirement (excluding the Canifis course), which would make the chance of spawning a mark of grace 5 times lower.</ref>
+|-
+|[[Gnome Stronghold Agility Course]]
+|1
+|''Unknown''
+|-
+|[[Brimhaven Agility Arena]]
+|1
+|8<ref group="a">By purchasing [[Amylase packs]] from [[Pirate Jackie the Fruit]] and selling them to [[Grace]].</ref>
+|-
+|[[Shayzien Agility Course#Basic course|Basic Shayzien Agility Course]]
+|1
+|''7-9''
+|-
+|[[Draynor Village Rooftop Course]]
+|1
+|10-13.8
+|-
+|[[Al Kharid Rooftop Course]]
+|20
+|8-11.5
+|-
+|[[Varrock Rooftop Course]]
+|30
+|8-11.3
+|-
+|[[Barbarian Outpost Agility Course]]
+|35
+|13.5-15
+|-
+|[[Canifis Rooftop Course]]
+|40
+|16-18<ref group="a">Notable, rate stays the same through all levels.</ref>
+|-
+|[[Shayzien Agility Course#Advanced course|Advanced Shayzien Agility Course]]
+|45
+|''~10''
+|-
+|[[Ape Atoll Agility Course]]
+|48
+|5-6
+|-
+|[[Falador Rooftop Course]]
+|50
+|10-12.1
+|-
+|[[Colossal Wyrm Agility Course|Colossal Wyrm Course (Basic)]]
+|50
+|11-13<ref group="a" name="wyrm">By purchasing [[Amylase packs]] from [[Worm Tongue]] and selling them to [[Grace]]. See more [[Colossal Wyrm Agility Course#Rewards|here]].</ref>
+|-
+|[[Werewolf Agility Course]]
+|60
+|10-15
+|-
+| rowspan="4" |[[Seers' Village Rooftop Course]]
+| rowspan="4" |60
+|11-13.8 (base)
+|-
+|12-14.4 ([[Easy Diary Kandarin|easy diary]])
+|-
+|13-15 ([[Medium Diary Kandarin|medium diary]])
+|-
+|14-16.6 ([[Hard Diary Kandarin|hard diary]])
+|-
+|[[Colossal Wyrm Agility Course|Colossal Wyrm Course (Advanced)]]
+|62
+|17-18<ref group="a" name="wyrm" />
+|-
+|[[Dorgesh-Kaan Agility Course]]
+|70
+|10-14
+|-
+| rowspan="2" |[[Pollnivneach Rooftop Course]]
+| rowspan="2" |70
+|13-14 (base)
+|-
+|16-18 ([[Hard Desert Diary|hard diary]])
+|-
+| rowspan="2" |[[Rellekka Rooftop Course]]
+| rowspan="2" |80
+|13-15.5 (base)
+|-
+|16-19.5 ([[Hard Fremennik Diary|hard diary]])
+|-
+| rowspan="2" |[[Ardougne Rooftop Course]]
+| rowspan="2" |90
+|16-18.1 (base)
+|-
+|22 ([[Elite Diary Ardougne|elite diary]])
+|}
+<references group="a" />
+
+
+===Spawning mechanics===
+Each course has a chance to spawn a mark of grace upon completion given that enough time has passed since the last mark of grace was spawned. For most courses this is '''three minutes''', though this timer has a chance to be reduced to '''two minutes''' on certain courses depending on achievement diary completion:
+* The Pollnivneach course has a 1/3 chance to have the timer be two minutes if the [[Desert Hard Diary]] is completed.{{CiteDiscord|author=Mod Lykos|url=https://discord.com/channels/177206626514632704/514602892292784139/1397002033911038144|date=21 July 2025|quote=for the Pollnivneach and Rellekka courses, there is a 1/3 chance to have the timer be two minutes if you've completed the hard tier of the respective diary|image=Lykos Desert and Frem diary mark of grace bonus.png|name=desertFrem|archiveurl=https://reldo.runescape.wiki/i/27962700#chat-messages-514602892292784139-1397002033911038144|archivedate=7 March 2026}}
+* The Rellekka course has a 1/3 chance to have the timer be two minutes if the [[Fremennik Hard Diary]] is completed.{{NamedRef|desertFrem}}
+* The Ardougne course has a 50% chance to have the timer be two minutes instead if the [[Ardougne Elite Diary]] is completed.
+
+This timer works on the scale of minutes, so if a mark of grace spawned at 00:00 game time, you would have another chance starting from the first tick of game time 00:03, regardless of what tick the mark spawned at during 00:00. This timer persists even after logging out or changing worlds.
+
+Upon completing a lap after the timer has expired, the chance to have a mark of grace spawn is 2/5 for the [[Rellekka Rooftop Course]], 2/3 for the [[Canifis Rooftop Course|Canifis]] and [[Ardougne Rooftop Course]], and 2/6 for all other rooftop courses. If the unboosted [[Agility]] level of the player is 20 levels or more over the course requirement, the chances of getting a mark are 80% lower than normal for that course.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/628223083858362368|date=3 August 2015|archiveurl=https://reldo.runescape.wiki/i/104544|archivedate=25 May 2020|quote=If your unboosted level is 20 higher than required for the course, the rate is reduced to 20% of its normal rate.}}{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/628523773856219136|date=4 August 2015|archiveurl=https://reldo.runescape.wiki/i/104969|archivedate=25 May 2020|quote=The nerfage does not increase gradually. Unless you get to level 110, Ardougne isn't nerfed.}} Any boost to the drop rate, such as the reward for completion of the Hard [[Kandarin Diary]], is applied after the 80% reduction.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/628994379622019072|date=5 August 2015|archiveurl=https://reldo.runescape.wiki/i/105078|archivedate=11 March 2021|quote=It's onto the rate after it got reduced to 20%.}} Due to a [[Glitch|coding error]], this rate reduction does not apply to the [[Canifis Rooftop Course]].{{CiteDiscord|author=Mod Lenny|url=https://discord.com/channels/177206626514632704/269673599554551808/1060187143936417862|date=4 January 2023|quote=...there looks like there's been something wrong with canifis for potentially a long time (...) may just be kind of disregarding your level being higher, and also allowing for higher rates that say ardy would get (kind of, ish, maybe) (...) [okay if it's actually 400 instead of 40 that's fucking hilarious] (...) 140|archiveurl=https://reldo.runescape.wiki/i/27963017#chat-messages-269673599554551808-1060187143936417862|archivedate=9 March 2026}}
+
+If the initial roll for the mark of grace is failed, another roll may happen depending on [[Achievement diary]] completion. With the easy, medium, and hard [[Kandarin Diary]], failing to roll for a mark of grace on the [[Seers' Village Rooftop Course]] results in a second roll for a 5%, 10%, or 15% chance for a mark respectively. With completion of the elite Ardougne diary, failing to roll for a mark on the Ardougne rooftop course results in a second roll for a 25% chance to spawn a mark of grace.
+
+{{Mark of grace spawns}}

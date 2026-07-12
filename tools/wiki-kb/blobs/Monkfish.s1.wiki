@@ -1,0 +1,24 @@
+==Creation==
+{{Recipe
+|skill1 = Cooking
+|skill1lvl = 62
+|skill1boostable = Yes
+|skill1exp = 150
+|members = Yes
+|ticks = 1
+|ticksnote = Increases to 4 when using an interface to select cooking option.
+|facilities = Cooking range
+|mat1 = Raw monkfish
+|output1 = Monkfish
+}}
+
+===Cooking chance===
+{{Skilling success chart|label=Monkfish cooking chance|showbefore=no
+|label1=Fire|low1=11|high1=275|req1=62|color1=orange|image1=Firemaking icon.png
+|label2=Range|low2=13|high2=280|req2=62|color2=saddlebrown|image2=Cooking range icon.png
+|label3=Gauntlets|low3=24|high3=290|req3=62|color3=grey|image3=Cooking gauntlets.png
+|label4=Hosidius +5%|low4=25|high4=292|req4=62|color4=red|image4=Cooking range icon.png
+|label5=Hosidius +10%|low5=38|high5=305|req5=79|color5=blue|image5=Cooking range icon.png
+|label6=Hosidius +5%, gauntlets|low6=36|high6=302|req6=62|color6=#ffcccb|image6=Cooking gauntlets.png
+|label7=Hosidius +10%, gauntlets|low7=49|high7=315|req7=79|color7=#ccccff|image7=Cooking gauntlets.png
+}}

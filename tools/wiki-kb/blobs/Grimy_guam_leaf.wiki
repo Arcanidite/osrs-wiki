@@ -1,0 +1,84 @@
+{{External|rs=Grimy guam|rsc=Herb (Guam leaf)}}
+{{Otheruses|the grimy herb|the cleaned herb|Guam leaf}}
+{{Infobox Item
+|name = Grimy guam leaf
+|image = [[File:Grimy guam leaf.png]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Clean, Drop
+|examine = It needs cleaning.
+|value = 13
+|weight = 0.007
+|respawn = 200
+|exchange = Yes
+|id = 199
+}}
+[[File:Grimy guam leaf detail.png|left|170px]]
+A '''grimy guam leaf''' is a [[herb]] that can be cleaned, requiring 3 [[Herblore]], and yielding a [[guam leaf]] and 2.5 Herblore [[experience]].
+
+Grimy guam leaves can be harvested from [[herb patch]]es after planting a [[guam seed]], requiring 9 [[Farming]].
+
+Guam leaves are used to make [[Attack potion]]s, [[Guthix rest]]s, and [[guam tar]].
+
+A grimy guam leaf spawns in the [[Deep Wilderness Dungeon]].
+
+When cleaned, the message {{Mes|You clean the Grimy guam leaf.}} is displayed.
+==Products==
+{{Uses material list|Grimy guam leaf}}
+==Item sources==
+{{Drop sources|Grimy guam leaf}}
+
+===Spawns===
+*{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Grimy guam leaf|location=[[Deep Wilderness Dungeon]]|members=Yes|mapID=26
+|3044,10313|leagueRegion=Wilderness}}
+{{ItemSpawnTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 9 March 2017
+|update = General QoL!
+|change = The item's value was increased from 1 to 13.
+}}
+{{Subject changes
+|date = 26 February 2015
+|update = The Grand Exchange
+|change = *The item was graphically updated to distinguish it from other grimy herbs.
+*The item was renamed from "Herb" to "Grimy guam leaf".
+*The item was made tradeable on the [[Trading Post]]/[[Grand Exchange]].
+*The "Identify" option was changed to a "Clean" option.
+}}
+{{Subject changes
+|date = 25 February 2013
+|update = Patch Notes (25 February 2013)
+|change = *The item was renamed from "Grimy guam" to "Herb".
+*The "Clean" option was changed to an "Identify" option.
+}}
+{{Subject changes
+|date = 22 February 2013
+|update = Patch Notes (22 February 2013)
+|change = *The item was renamed from "Herb" to "Grimy guam".
+*The "Identify" option was changed to a "Clean" option.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Grimy guam leaf (v1) detail.png|center|300x150px]]
+|[[File:Grimy guam leaf detail.png|center|300x150px]]
+|-
+|[[File:Grimy guam leaf v1.png|center]]
+|[[File:Grimy guam leaf.png|center]]
+|-
+|29 March 2004 –<br/>26 February 2015
+|26 February 2015 –<br/>present
+|}
+
+{{Herb}}

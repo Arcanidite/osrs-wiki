@@ -1,0 +1,10 @@
+===H.A.M. robes===
+{{DropsTableHead}}
+{{DropsLineSkill|name=Ham boots|quantity=1|rarity=1/102|altrarity=112/3125|raritynotes={{Refn|group=d|name=robe|During [[Death to the Dorgeshuun]], there is approximately a 1/4 chance to receive any piece of H.A.M. clothing.{{Efn|The exact probability (assuming easy combat achievements are not completed) is 49/50 * (1/5 * 1/7 + 4/5 * 1/100). There is a 49/50 chance to not receive a clue, 1/5 chance to hit the quest H.A.M. robe table, 1/7 chance to receive a specific piece on that table, a 4/5 chance to ''not'' hit the robe table, and a 1/100 chance to hit a specific piece on the main table.}}}}|skill=Thieving}}
+{{DropsLineSkill|name=Ham cloak|quantity=1|rarity=1/102|altrarity=112/3125|raritynotes={{Refn|group=d|name=robe}}|skill=Thieving}}
+{{DropsLineSkill|name=Ham gloves|quantity=1|rarity=1/102|altrarity=112/3125|raritynotes={{Refn|group=d|name=robe}}|skill=Thieving}}
+{{DropsLineSkill|name=Ham hood|quantity=1|rarity=1/102|altrarity=112/3125|raritynotes={{Refn|group=d|name=robe}}|skill=Thieving}}
+{{DropsLineSkill|name=Ham logo|quantity=1|rarity=1/102|altrarity=112/3125|raritynotes={{Refn|group=d|name=robe}}|skill=Thieving}}
+{{DropsLineSkill|name=Ham robe|quantity=1|rarity=1/102|altrarity=112/3125|raritynotes={{Refn|group=d|name=robe}}|skill=Thieving}}
+{{DropsLineSkill|name=Ham shirt|quantity=1|rarity=1/102|altrarity=112/3125|raritynotes={{Refn|group=d|name=robe}}|skill=Thieving}}
+{{DropsTableBottom}}

@@ -1,0 +1,16 @@
+{{Infobox Location
+|name = Ardougne Rooftop Course
+|image = [[File:Ardougne Rooftop Course (6).png]]
+|release = [[5 December]] [[2013]]
+|update = Rooftop Agility Courses
+|members = Yes
+|location = [[East Ardougne]] ([[Ardougne]])
+|map = {{Map|2673:3298|plane=0|r=3|mtype=square}}
+|type = agility course
+|leagueRegion = Kandarin
+}}
+The '''Ardougne Rooftop Agility Course''' is a [[Rooftop Agility Course]] located above the [[Ardougne]] marketplace available to players with an [[Agility]] level of 90 or over. It is preceded by the [[Rellekka Rooftop Course]]. Players stop failing this course at 95 [[Agility]]. It can be started by climbing the Wooden Beams outside of the house next to the [[Ardougne Gem Stall.|gem stall]] in the south-east corner of the marketplace.
+
+Being the last rooftop course, it has a very high chance of spawning [[mark of grace|marks of grace]], as well as having the highest experience rate, at approximately 70,000 experience per hour. A full lap of this course can be completed in 45.6 seconds (76 [[tick]]s) making the maximum experience per hour 70,184 assuming perfect laps.
+
+The [[Dorgesh-Kaan Agility Course]] offers a similar experience rate to the Ardougne course; however, Ardougne is typically preferred because it does not require energy restoration while training and it requires less concentration. Alternatively, [[Hallowed Sepulchre]] offers significantly higher experience rates for skilled players but requires more attention. As such, the Ardougne course is commonly used for easy semi-efficient training as well as for marks of grace.

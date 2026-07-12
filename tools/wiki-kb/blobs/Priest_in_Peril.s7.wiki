@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Priest in Peril
+|image = [[File:Priest in Peril reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+* {{SCP|Prayer|1,406}} [[Prayer]] experience
+*[[Wolfbane dagger]], prevents the citizens of [[Canifis]] from transforming into werewolves when attacked
+*Route to [[Canifis]] and [[Morytania]]
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]].
+}}

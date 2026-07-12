@@ -1,0 +1,4 @@
+==Loot==
+{{DropsTableHead|leagueRegion=Karamja,Asgarnia,Fremennik,Kandarin,Tirannwn,Varlamore}}
+{{DropsLineReward|name=Vial|quantity=100 (noted)|rarity=Always}}
+{{DropsTableBottom}}

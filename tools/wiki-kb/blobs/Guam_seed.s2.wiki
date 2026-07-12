@@ -1,0 +1,4 @@
+===Average harvest yield===
+Guam has a minimum of 3 [[Farming#Variable crop yield|harvest lives]], increasing by 1 for each tier of [[compost]] used (for a maximum of 6 when using [[ultracompost]]). While harvesting guam leaves, there is a chance to not consume a harvest life dependent on the player's Farming level. This chance scales from 10.2% at level 1 to 31.6% at level 99, interpolating linearly in between.
+
+{{Farming yield calculator|name=Guam leaf|lvlreq=9|low=25|high=80|diary=y|farmingCape=y}}

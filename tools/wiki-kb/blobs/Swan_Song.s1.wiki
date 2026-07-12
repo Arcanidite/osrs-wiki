@@ -1,0 +1,63 @@
+==Details==
+{{Quest details
+|start = Talk to [[Herman Caranos]] in the [[Piscatoris Fishing Colony]], accessed via a boat trip from the river to the west of the [[Tree Gnome Stronghold]].
+|startmap = 2353,3680
+|difficulty = Master
+|description = Out on the edge of the known world, the Piscatoris Fishing Colony stands on the brink of disaster. Angry sea trolls are emerging from the sea and attacking the colonists, preventing them from harvesting the valuable monkfish that live in those waters. A highly experienced adventurer will be needed to drive back the trolls for good. The Colony's director, Herman Caranos, has a particular adventurer in mind: the notoriously amoral Wise Old Man of Draynor Village (allegations of his involvement in a spectacular bank robbery have never been substantiated). If you're in the mood for a bit of combat, jump on the boat on the west side of the Gnome Stronghold, speak to the Colony's director and prepare to fight alongside the Wise Old Man as he embarks on his final adventure - his ''swan song''.
+|length = Medium
+|requirements = *{{SCP|Quest|100|link=yes}} {{Questreqstart|}}
+*{{SCP|Magic|66|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Cooking|62|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Fishing|62|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Smithing|45|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Firemaking|42|link=yes}} {{Boostable|Yes}} {{Questreqstart|no}}
+*{{SCP|Crafting|40|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*Completion of the following quests:
+**[[One Small Favour]]
+***[[Rune Mysteries]]
+***[[Shilo Village]]
+****[[Jungle Potion]]
+*****[[Druidic Ritual]]
+**[[Garden of Tranquillity]]
+***[[Creature of Fenkenstrain]]
+****[[Priest in Peril]]
+****[[The Restless Ghost]]
+*The ability to defeat a [[combat level]] 170 monster, which is able to use [[Magic]], [[Melee]] and can drain [[Prayer]].
+|items = *10 [[mist rune]]s
+*10 [[lava rune]]s
+*5 [[blood rune]]s
+*7 [[bones]] (obtainable during the quest)
+*An [[airtight pot]] – created by using a [[pot lid]] on a [[pot]]
+**[[Soft clay]] if making your own pot lid during the quest (2 if also making the pot), or a [[pickaxe]] to obtain the clay during the quest
+*5 [[iron bar]]s, or
+**a [[pickaxe]] (obtainable during the quest) if mining your own iron during quest
+*1 set of [[logs]] of any kind, or
+**an [[axe]] (obtainable during quest) if chopping your own [[logs]] during quest
+*A [[tinderbox]] (obtainable during the quest)
+*A [[hammer]] (obtainable during the quest)
+*A [[small fishing net]] (obtained during the quest)
+*A [[brown apron]] (obtained during the quest)
+|recommended = *{{SCP|Combat|60|link=yes}}
+*Teleportation method to the [[Piscatoris Fishing Colony]]:
+**Several [[Piscatoris teleport]]s can be used to teleport there directly
+**A [[Dramen staff]] or [[Lunar staff]] – if using [[fairy rings]] {{Fairycode|AKQ}}
+**50 [[coins]] or a [[ring of charos]] – if using [[Kathy Corkat]]'s boat from west of [[Tree Gnome Stronghold]]
+*An [[amulet of glory]] (to teleport to [[Draynor Village]])
+*A [[skills necklace]] (to teleport to the [[Crafting Guild]])
+*[[Watchtower teleport]] runes or tablet (requires completing [[Watchtower]]), or [[Nightmare Zone]] [[Minigame Teleport]]
+*It is best to bring 4 to 5 [[Admiral pie]]s if boosting [[Fishing]] level.
+*Some [[prayer potion]]s (to offset the [[Sea Troll Queen]]'s magical [[Prayer]]-draining attacks)
+*Some good food/healing
+*[[Cooking gauntlets]] (to reduce the chance of burning the 5 Monkfish caught during the quest)
+|kills = *11 [[Sea troll]]s (1 each of levels 65/87/101 and 8 of level 79)
+*[[Sea Troll Queen]] ''(level 170)''
+|ironman = Consider purchasing the necessary combination runes from the [[Rewards Guardian (Mage Training Arena)|Rewards Guardian]] in the [[Mage Training Arena]].
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}
+'''Note:''' Starting this quest will temporarily prevent you from progressing through part of the [[Recipe for Disaster/Freeing Sir Amik Varze|Sir Amik Varze subquest]] of [[Recipe for Disaster]]. The reason for this is the [[Wise Old Man]]'s Swan Song dialogue option prevents you from talking to him about the [[Evil Chicken]] during the Sir Amik subquest. You must complete Swan Song up through the "Repairing the Colony" section to enable you to continue with Sir Amik's subquest. 
+
+'''Note:''' You will only unlock the colony for [[Treasure Trails]] on full quest completion, as the colony will be [[instanced]] during the quest. Digging or talking to [[Arnold Lydspor]] for hard clues will not work during the instance.

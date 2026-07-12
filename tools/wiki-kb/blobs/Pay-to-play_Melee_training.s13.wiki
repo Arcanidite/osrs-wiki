@@ -1,0 +1,17 @@
+===Levels 40 to 60: Moss giants===
+{{Melee training monster
+|name = [[Moss giant]]
+|locations = [[Catacombs of Kourend]], [[Varrock Sewers]], West of the [[Fishing Guild]]
+|combat = 42
+|hitpoints = 60
+|requirements = Mid-level combat
+|recommendations = Food, armour, [[High alchemy]] runes, [[Teleport to house]] tablets for using another player's house to teleport to [[Kourend]] to reach the Catacombs, [[ring of dueling]] for banking
+|advantages = *Fairly high Hitpoints for level
+*Decent herb, seed, and alchable drops
+*Chance of dropping a [[Mossy key]], which allows the player to fight [[Bryophyta]], who also has good drops and a chance of dropping the valuable [[Bryophyta's essence]]
+*Chance of dropping pieces of the [[dark totem]], which allows the player to fight [[Skotizo]] once they are a higher level
+*Always drops [[big bones]] which can be sold for guaranteed profit or used for Prayer experience while training
+|disadvantages = *It can be hard to reach the [[Catacombs of Kourend]] for low-level players. Regular players should use the Kourend portal in the [[Player-owned house]] of another player on World 330.
+*Hits hard if you have low defence or armour
+*Without [[Mossy key]] or valuable seed drops, they are usually not worth the time and food it takes to kill
+}}

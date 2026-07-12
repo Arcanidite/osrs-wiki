@@ -1,0 +1,84 @@
+===Affected by cooking gauntlets===
+{| class="wikitable sortable align-left-2" style="text-align:center;"
+|-
+!colspan=2 rowspan=2|Food
+!rowspan=2|[[Fire]]
+!rowspan=2|[[Range]]<sup><span style="border-bottom:1px black dotted" title="Lower chance of burning than on an open fire.">?</span></sup>
+!colspan=2|[[Hosidius Kitchen|Hosidius]]<sup><span style="border-bottom:1px black dotted" title="The Hosidius Kitchen range multiplies the chance-to-not-burn roll by 1.05 or 1.10 with the elite diary completed.">?</span></sup>
+!colspan=3|[[Cooking gauntlets|Gauntlets]]
+!rowspan=2|[[Experience]]
+!rowspan=2|Members?
+|-
+!5%
+![[Kourend & Kebos Diary#Rewards 4|10%]]<ref group="h" name="kebos">The value will be N/A if the level required to not burn with the [[Elite Kourend & Kebos Diary]] completed is lower than the level required to complete the diary (level 84).</ref>
+!Default
+!Hosidius 5%
+![[Kourend & Kebos Diary#Rewards 4|Hosidius 10%]]<ref group=h name=kebos />
+|-
+|{{plinkt|Lobster}}
+|74
+|74
+|70
+|{{NA}}
+|64
+|60
+|{{NA}}
+|120
+|{{Members|no}}
+|-
+|{{plinkt|Swordfish}}
+|86
+|80
+|76
+|{{NA}}
+|80
+|76
+|{{NA}}
+|140
+|{{Members|no}}
+|-
+|{{plinkt|Cooked kyatt}}
+|86
+|80
+|76
+|{{NA}}
+|80
+|76
+|{{NA}}
+|143
+|{{Members|yes}}
+|-
+|{{plinkt|Monkfish}}
+|92
+|90
+|86
+|82
+|86
+|82
+|{{NA}}
+|150
+|{{Members|yes}}
+|-
+|{{plinkt|Shark}}
+| -
+| -
+| -
+|98
+|94
+|89
+|84
+|210
+|{{Members|yes}}
+|-
+|{{plinkt|Anglerfish}}
+| -
+| -
+| -
+| -
+|97
+|93
+|87
+|230
+|{{Members|yes}}
+|}
+{{Reflist|group=h}}

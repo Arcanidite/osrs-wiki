@@ -1,0 +1,24 @@
+==Details==
+{{Quest details
+|description = After saving the holy man Drezel, he's seeking some assistance again.
+This time he has a special request for any adventurous sorts to search for the Druid 'Filliman Tarlock' and brave the terrors that infest the swamp of Mort Myre.
+|start = Talk to [[Drezel]] in the basement of the [[Paterdomus Temple]] by the northern end of the [[River Salve]].
+|startmap = 3440,9894
+|difficulty = Intermediate
+|length = Short
+|requirements = * Completion of [[Priest in Peril]]
+* Completion of [[The Restless Ghost]]
+|items = * [[Silver sickle]]
+* [[Ghostspeak amulet]]
+* 6 empty inventory spaces
+|recommended = * {{SCP|Combat|20|link=yes}}
+* [[Weapon]], [[armour]] and some [[food]] ([[ghast]]s may rot some of this food during the quest, see swamp section for details)
+*[[Stamina potion|Stamina]] or [[energy potion]]s
+*[[Prayer potions]] for players with a low [[Prayer]] level
+*2 [[Salve Graveyard Teleport]]s to teleport near Drezel
+|kills = * 3 [[Ghast]]s ''(level 30)''
+|ironman = * {{SCP|Crafting|18|link=yes}} {{Boostable|yes}} to craft a [[silver sickle]] using a [[silver bar]] on a [[furnace]] with a [[sickle mould]] in your inventory. The [[silver bar]] may be purchased from the [[Silver merchant]] in [[Ardougne]].
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

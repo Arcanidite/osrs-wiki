@@ -1,0 +1,103 @@
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Master Farmer
+|location = [[Farming Guild]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1236,y:3727|x:1247,y:3750|x:1264,y:3725
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Hosidius]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1761,y:3633|x:1787,y:3592
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Master Farmer
+|location = North of [[East Ardougne]]{{refn|group=note|The [[Medium Ardougne Diary]] reward does not apply here{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/886602198699974656|date=16 July 2017|archiveurl=https://archive.is/YiyvS|archivedate=30 May 2020|quote=[Does the master farmer north of ardy count as "in" ardy for the medium diary?] No, that's a bit too far outside the city.}}}}
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2636,y:3364
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Draynor Village]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3080,y:3250
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{LocLine
+|name = Master Farmer
+|location = South of [[Varrock]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3240,y:3345
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Outer Fortis]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1635,y:3051|x:1682,y:3052|x:1736,y:3064|x:1750,y:3066|x:1584,y:3090
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Ortus Farm]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1582,y:3131
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Quetzacalli Gorge]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1495,y:3234
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Master Farmer
+|location = [[Kastori]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1366,y:3022|x:1367,y:3048|x:1351,y:3058|x:1371,y:3064
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocTableBottom}}
+{{reflist|group=note}}

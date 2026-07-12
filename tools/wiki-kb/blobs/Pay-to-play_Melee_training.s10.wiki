@@ -1,0 +1,12 @@
+===Levels 10 to 60: Rock Crabs===
+{{Melee training monster
+|name = [[Rock Crab]]
+|locations = North of [[Rellekka]], [[Waterbirth Island]]
+|combat = 13
+|hitpoints = 50
+|requirements = To access [[Waterbirth Island]], you must have started [[The Fremennik Trials]] quest. If you haven't finished the quest, it will cost 1,000 coins to travel there. There are also spots with no requirements
+|recommendations = Armour and food for low levels. [[Camelot teleport]] tabs or runes will bring you somewhat close
+|advantages = * Very, very high health targets with low Defence and Attack ability
+*High in number, easy to group and kill in groups
+|disadvantages = * Can be crowded, though not as much as their ammonite and sand variants are
+*Stops aggro after 10-15 minutes}}

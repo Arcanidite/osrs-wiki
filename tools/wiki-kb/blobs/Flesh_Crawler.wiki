@@ -1,0 +1,198 @@
+{{External|rs}}
+{{Infobox Monster
+|version1 = Level 28
+|version2 = Level 35
+|version3 = Level 41
+|name = Flesh Crawler
+|image = [[File:Flesh Crawler.png]]
+|release = [[4 July]] [[2006]]
+|update = Security and free-to-play update - the Stronghold of Security
+|members = No
+|combat1 = 28
+|combat2 = 35
+|combat3 = 41
+|size = 2
+|examine = I don't think insect repellent will work...
+|xpbonus = 0
+|max hit = 1
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Slash]]
+|attack speed = 3
+|respawn = 15
+|slayxp = 25
+|cat = Flesh Crawlers
+|assignedby = mazchna
+|hitpoints = 25
+|att1 = 60
+|att2 = 80
+|att3 = 100
+|str = 2
+|def = 10
+|mage = 1
+|range = 1
+|attbns = 0
+|strbns = 0
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 15
+|dslash = 15
+|dcrush = 15
+|dmagic = 15
+|dlight = 15
+|dstandard = 15
+|dheavy = 15
+|elementalweaknesstype = Fire
+|elementalweaknesspercent = 20
+|poisonresistance = 0
+|venomresistance = 0
+|immunecannon = No
+|immunethrall = No
+|dropversion = Members,Free-to-play
+|id1 = 2498
+|id2 = 2499
+|id3 = 2500
+}}
+'''Flesh Crawlers''' are medium level monsters found in the second level of the [[Stronghold of Security]]. They drop the [[bottom of sceptre]], one of four parts of the [[skull sceptre]]. Flesh crawlers drop [[herb]]s often, and are frequently killed for their uncommon [[Grimy ranarr weed|grimy ranarr]] drops.
+
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Flesh Crawler
+|location = [[Stronghold of Security]]: [[Catacomb of Famine]]
+|levels = 28
+|members = No
+|mapID = 18
+|plane = 0
+|x:1917,y:5141|x:1925,y:5141|x:1936,y:5135|x:1944,y:5135|x:1949,y:5137
+|mtype = pin
+|icon = greenPin
+|leagueRegion = misthalin
+|dropversion = Members, Free-to-play
+}}
+{{LocLine
+|name = Flesh Crawler
+|location = [[Stronghold of Security]]: [[Catacomb of Famine]]
+|levels = 35
+|members = No
+|mapID = 18
+|plane = 0
+|x:1941,y:5097|x:1942,y:5091|x:1944,y:5090|x:1945,y:5094|x:1946,y:5096|x:1947,y:5090|x:1948,y:5093|x:1949,y:5097
+|mtype = pin
+|icon = bluePin
+|leagueRegion = misthalin
+|dropversion = Members, Free-to-play
+}}
+{{LocLine
+|name = Flesh Crawler
+|location = [[Stronghold of Security]]: [[Catacomb of Famine]]
+|levels = 41
+|members = No
+|mapID = 18
+|plane = 0
+|x:1907,y:5106|x:1907,y:5109|x:1909,y:5103|x:1910,y:5106|x:1910,y:5109|x:1912,y:5105|x:1912,y:5108
+|mtype = pin
+|icon = redPin
+|leagueRegion = misthalin
+|dropversion = Members, Free-to-play
+}}
+{{LocLine
+|name = Flesh Crawler
+|location = [[Stronghold of Security]]: [[Catacomb of Famine]]
+|levels = 41
+|members = No
+|mapID = 18
+|plane = 0
+|x:1892,y:5139|x:1893,y:5143|x:1895,y:5146|x:1896,y:5139|x:1898,y:5143|x:1898,y:5145
+|mtype = pin
+|icon = redPin
+|leagueRegion = misthalin
+|dropversion = Members, Free-to-play
+}}
+{{LocTableBottom}}
+
+==Strategies==
+Flesh crawlers are aggressive to any level players. Ranged is a good style to use as there are [[safespot]]s in the rooms, such as in the south-west corner of the south-east room. It is possible to hide behind non-aggressive [[giant rat]]s in one room and range the flesh crawlers, protected from their rapid, albeit weak, attacks. Their attack speed is three ticks, or equivalent to the [[goblin paint cannon]]. Because these attacks max at 1 damage, using a [[regen bracelet]] can help to offset much of the damage taken, especially if the player has a strong defence.
+
+For minimal user-input (also known as afk or semi-afk training), turn on auto retaliate and let the crawlers come to you. When they lose their [[Tolerance|aggressiveness]], simply move to another room, then come back. Since flesh crawlers are 2x2 in size, when multiple players are afk training at once the flesh crawlers can get stuck on one another and stop attacking the player; this can be mitigated by standing on the same [[Game square|tile]] as other players who are already afk training on the same world, greatly increasing xp rates.
+
+To reduce banking trips needed, deposit all non-stackable drops when you are teleported to [[random events]], and drop all herbs aside from ranarr, as those are often more valuable than even the highest levelled herbs such as [[Grimy dwarf weed|dwarf weed]].
+
+[[File:Flesh crawler safespot.png|left|400px|thumb|Safespot in the south-west corner of the  south-easternmost room.]]
+
+{{Clear|left}}
+
+==Members' worlds drops==
+{{DropLogProject|kills=1215464}}
+
+The average flesh crawler kill on [[Members|members']] worlds is worth {{Coins|{{Average drop value|mob=Flesh Crawler#Members|raw=Yes}}}}.
+
+===Runes===
+{{DropsTableHead|dropversion=Members}}
+{{DropsLine|name=Body rune|quantity=3-12|rarity=10/100}}
+{{DropsLine|name=Fire rune|quantity=42|rarity=4/100}}
+{{DropsLine|name=Dust rune|quantity=3-9|rarity=10/100}}
+{{DropsLine|name=Nature rune|quantity=5|rarity=4/100}}
+{{DropsTableBottom}}
+
+===Materials===
+{{DropsTableHead|dropversion=Members}}
+{{DropsLine|name=Iron ore|quantity=1|rarity=5/100}}
+{{DropsLine|name=Iron ore|quantity=3-7 (noted)|rarity=12/100}}
+{{DropsLine|name=Silver bar|quantity=1|rarity=2/100}}
+{{DropsTableBottom}}
+
+===Other===
+{{DropsTableHead|dropversion=Members}}
+{{DropsLine|name=Coins|quantity=5-84|rarity=7/100|gemw=No}}
+{{DropsLine|name=Ashes|quantity=1|rarity=4/100}}
+{{DropsLine|name=Bottom of sceptre|quantity=1|rarity=3/100|raritynotes={{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1164190570698424320|date=21 August 2019|archiveurl=https://web.archive.org/web/20190909225421/https:/twitter.com/JagexAsh/status/1164190570698424320|archivedate=09 September 2019|quote=3% from ankou, 3% from fleshcrawlers 3/101 for catablepon, 3/101 for minotaurs.|name=Skull sceptre piece rates tweet}}|gemw=No}}
+{{DropsLine|name=Nothing|rarity=2/100}}
+{{DropsTableBottom}}
+
+===Herbs===
+{{HerbDropTableInfo|35/100}}
+{{DropsTableHead|dropversion=Members}}
+{{HerbDropLines|35/100}}
+{{DropsTableBottom}}
+
+===Gem drop table===
+{{GemDropTable|2/100|naturetalisman=yes|dropversion=Members}}
+
+==Free-to-play worlds drops==
+{{DropLogProject|kills=1464915}}
+
+The average flesh crawler kill on [[free-to-play]] worlds is worth {{Coins|{{Average drop value|mob=Flesh Crawler#Free-to-play|raw=Yes}}}}.
+
+{{DropsTableHead|dropversion=Free-to-play}}
+{{DropsLine|name=Body rune|quantity=3-12|rarity=19/100}}
+{{DropsLine|name=Coins|quantity=10|rarity=4/100|gemw=No}}
+{{DropsLine|name=Coins|quantity=5-84|rarity=7/100|gemw=No}}
+{{DropsLine|name=Iron ore|quantity=1|rarity=5/100}}
+{{DropsLine|name=Ashes|quantity=1|rarity=4/100}}
+{{DropsLine|name=Bottom of sceptre|quantity=1|rarity=3/100|raritynotes={{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1164190570698424320|date=21 August 2019|archiveurl=https://web.archive.org/web/20190909225421/https:/twitter.com/JagexAsh/status/1164190570698424320|archivedate=09 September 2019|quote=3% from ankou, 3% from fleshcrawlers 3/101 for catablepon, 3/101 for minotaurs.|name=Skull sceptre piece rates tweet}}|gemw=No}}
+{{DropsLine|name=Nothing|rarity=56/100}}
+{{DropsTableBottom}}
+
+===Gem drop table===
+{{GemDropTable|2/100|f2pOnly=yes|dropversion=Free-to-play}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 25 June 2025
+|update = Summer Sweep Up: Combat
+|change = Flesh Crawlers now have a 20% elemental weakness to [[fire spells]].
+}}
+{{Subject changes footer}}
+
+== Trivia ==
+
+* The Flesh Crawler shares the same examine text as the various [[Kalphite]] monsters, and is the only monster outside of the Kalphite category that displays the given text.
+
+==References==
+{{Reflist}}
+
+{{Stronghold of Security}}

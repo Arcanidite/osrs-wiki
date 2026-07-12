@@ -1,0 +1,39 @@
+==Obstacles==
+{| class="wikitable align-center-3"
+|+Experience per obstacle
+|-
+!Image
+!Obstacle
+!Experience
+|-
+|[[File:Draynor Village Rooftop Course (1).png|250px]]
+|[[Rough wall (Draynor Village Rooftop Course)|Rough wall]]
+|{{+=|xp|5|echo=2}}
+|-
+|[[File:Draynor Village Rooftop Course (2).png|250px]]
+|[[Tightrope (Draynor Village Rooftop Course)|Tightrope 1]]
+|{{+=|xp|8|echo=2}}
+|-
+|[[File:Draynor Village Rooftop Course (3).png|250px]]
+|[[Tightrope (Draynor Village Rooftop Course)#Tightrope 2|Tightrope 2]]
+|{{+=|xp|7|echo=2}}
+|-
+|[[File:Draynor Village Rooftop Course (4).png|250px]]
+|[[Narrow wall (Draynor Village Rooftop Course)|Narrow wall]]
+|{{+=|xp|7|echo=2}}
+|-
+|[[File:Draynor Village Rooftop Course (5).png|250px]]
+|[[Wall (Draynor Village Rooftop Course)|Wall]]
+|{{+=|xp|10|echo=2}}
+|-
+|[[File:Draynor Village Rooftop Course (6).png|250px]]
+|[[Gap (Draynor Village Rooftop Course)|Gap]]
+|{{+=|xp|4|echo=2}}
+|-
+|[[File:Draynor Village Rooftop Course (7).png|250px]]
+|[[Crate (Draynor Village Rooftop Course)|Crate]]
+|{{+=|xp|79|echo=2}}
+|-
+! colspan="2" style="text-align:right;" |Total
+!{{#var:xp}}
+|}

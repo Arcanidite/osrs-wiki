@@ -1,0 +1,48 @@
+===Levels 30 to 50: Crabs===
+{{Melee training monster
+|name = [[Gemstone Crab]]
+|locations = [[Tlati Rainforest]]
+|combat = 160
+|hitpoints = Infinite
+|requirements = [[Children of the Sun]]
+|recommendations = Gear required for looting if one of the top 16 damage dealers:
+*[[Pickaxe]] to mine for gems.
+*[[Chisel]] to cut and fletch semi-precious gems.
+*[[Gem bag]] for storing gem drops.
+|advantages = 
+*The best monster for training at medium and high combat levels.
+*Has infinite health with low [[Defence]] and [[Attack]] ability, meaning you won't need much food if any
+*Can be mined for gems by the 16 players who dealt the most damage.
+|disadvantages =
+*Switches locations after 10 minutes; must be pursued by entering a nearby cave.
+*Gives slightly less experience per hit compared to normal monsters (87.5% of the normal amount), though this is made up for by the fact there is no downtime between killing monsters as there is with the other crabs.
+}}
+
+{{Melee training monster
+|name = [[Ammonite Crab]]
+|locations = [[Fossil Island]]
+|combat = 25
+|hitpoints = 100
+|requirements = [[Bone Voyage]]
+|recommendations = Armour and food for low defence levels. [[Digsite pendant]]. Build the bank chest on Fossil Island to get access to a nearby bank. [[Ring of wealth]] to automatically pick up [[numulite]]s.
+|advantages = 
+*Very high health targets with low [[Defence]] and [[Attack]] ability, meaning you won't need much food if any
+*High in number, easy to group and kill in groups
+*Automatic aggro, meaning there are many AFK spots
+|disadvantages = * Often crowded
+*Stops aggro after 10 minutes. Must be reset by walking away and coming back. The distance required to reset their aggro status fluctuates but usually stays between 1 and 15 tiles. There are instances where it is further away
+}}
+
+{{Melee training monster
+|name = [[Sand Crab]]
+|locations = Beach south of [[Hosidius]], [[Crabclaw Isle]], [[Crabclaw Caves]], beach on the [[Avium Savannah]]
+|combat = 15
+|hitpoints = 60
+|requirements = 10,000 coins to enter [[Crabclaw Isle]], or have started [[The Depths of Despair]] to enter the [[Crabclaw Caves]]. There are also spots with no requirements
+|recommendations = Armour and food for low levels. If you are farming on the beach south of Hosidius, there is a bank chest nearby so inventory space is not a concern. Using a full inventory of [[super attack]] and [[super strength]] potions increases your DPS considerably, which ultimately increases the experience rates per hour. The spots on the Avium Savannah are also significantly less congested, so may be preferable.
+|advantages = * Very high health targets with low [[Defence]] and [[Attack]] ability
+*High in number, easy to group and kill in groups
+*Automatic aggro, meaning there are many AFK spots
+|disadvantages = * Often very crowded in Hosidius, but not the Avium Savannah
+*Stops aggro after about 10 minutes, must be reset by walking about one screen away
+}}

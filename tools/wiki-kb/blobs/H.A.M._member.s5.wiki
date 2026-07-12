@@ -1,0 +1,12 @@
+===Pickpocketing info===
+{{DropLogProject|kills=7042740|type=pickpockets}}
+
+{{Thieving info
+|name = H.A.M Member
+|level = 15
+|xp = 22.2
+|type = Pickpocket
+|timename = [[Stun_(status)#Thieving|Stun]] Timer
+|time = 4s
+|damage = 1-3
+}}

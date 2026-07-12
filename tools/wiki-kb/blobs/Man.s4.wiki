@@ -1,0 +1,5 @@
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLine|name=Bronze med helm|quantity=1|rarity=2/128}}
+{{DropsLine|name=Iron dagger|quantity=1|rarity=1/128}}
+{{DropsTableBottom}}

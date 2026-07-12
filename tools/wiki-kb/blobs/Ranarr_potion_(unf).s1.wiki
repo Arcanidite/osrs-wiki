@@ -1,0 +1,12 @@
+==Creation==
+{{Recipe
+|skill1 = Herblore
+|skill1lvl = 30
+|skill1boostable = Yes
+|skill1exp = 0
+|members = Yes
+|ticks = 1
+|mat1 = Ranarr weed
+|mat2 = Vial of water
+|output1 = Ranarr potion (unf)
+}}

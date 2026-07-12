@@ -1,0 +1,10 @@
+===Rewards===
+----
+{{Quest rewards
+|name = Recipe for Disaster/Another Cook's Quest
+|image = [[File:Another Cook's Quest reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*The invitation to the feast of a lifetime!
+*Access to the [[Culinaromancer's Chest]] (after watching the cut scene in the feast room).
+}}</onlyinclude>

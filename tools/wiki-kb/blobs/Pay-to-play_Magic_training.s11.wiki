@@ -1,0 +1,6 @@
+===Levels 43–55: Superheat Item===
+From level 43 to 55, one possible option is to cast [[Superheat Item]] to smelt ores into bars. The spell can be cast every 3 ticks, and each cast gives 53 Magic experience. This method offers relatively fast Magic experience at these levels and also gives passive [[Smithing]] experience. Casting the spell usually costs some money, depending on the Grand Exchange prices.
+
+With decent focus, players can gain up to 97,000 Magic experience per hour. The amount of Smithing experience gained varies depending on the ore used. It will take 2,195 casts to get from level 43 to 55.
+
+See the [[Superheat Item]] page for a table with the cost per experience for each type of bar.

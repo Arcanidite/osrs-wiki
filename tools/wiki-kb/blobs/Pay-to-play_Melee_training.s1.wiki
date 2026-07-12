@@ -1,0 +1,163 @@
+==General training notes==
+*The [[Waterfall Quest]] will get you to both 30 Attack and Strength if completed at level 3 combat.
+*Since experience rates are largely influenced by [[Strength]] level and [[strength bonus]], it is optimal to maintain balanced [[Melee|melee stats]] until reaching the minimum requirements for the best-in-slot [[Pay-to-play Melee training#Weapon choice|weapon]] and [[Pay-to-play Melee training#Equipment choice|equipment]]. After this, prioritizing Strength until [[Strength cape|99]], followed by [[Attack cape|Attack]] and finally [[Defence cape|Defence]], will result in the fastest route to max melee stats. For example, when training in the [[Nightmare Zone/Strategies|Nightmare Zone]] with [[Obsidian armour|Obsidian Armour]], a [[Berserker necklace|Berserker Necklace]], and the [[Toktz-xil-ak|Toktz-Xil-Ak]], Attack and Defence should remain at 60 until reaching 99 Strength for optimal experience gains.
+*Strength can be trained without training Hitpoints with [[barbarian fishing]] and at the [[Blast Furnace]] pump, which requires 30 Strength.
+*Defence can be trained by using [[Ancient Magicks]] on [[combat options#Defensive 2|defensive]] or [[chinchompas]] on Long fuse against [[Maniacal monkey]]s for more experience per hour than using melee.
+*Players can complete [[Slayer]] tasks to train Slayer while simultaneously training [[combat]] stats. This is an effective combat training method as well as providing profit in most cases.
+*When fighting dangerous monsters it is suggested to bring a [[teleportation]] [[tablet]] '''or''' if your [[Magic]] level is high enough, teleportation [[runes]] in order to quickly escape. Note that a tablet can be more easily clicked from your inventory and takes up less space than runes for a teleport spell.
+
+To start off, it is strongly recommended to complete [[Quest experience rewards|quests that give a lot of melee experience]]. This allows players to wear much better equipment and have much higher damage output when they start training.
+
+A lot of the quests are quick to complete and only have a few requirements. Most of them include boss fights, which can be made trivial with [[protection prayers]], and many of the bosses can be safespotted with Magic or Ranged. It is strongly recommended to complete [[Witch's House]] to get Hitpoints higher.
+
+The recommended quests for early melee experience are listed in the table below. Completing all of them would give the player a total of 65,275 Attack, 27,537.5 Strength, and 15,300 Defence experience. This would get the player up to level 45 Attack, level 37 Strength, and level 31 Defence without doing any melee training.
+
+{|class="wikitable lighttable qc-active"
+!Quest
+!XP rewards
+!Requirements
+!Enemies to defeat
+!Notes
+|-
+|[[Witch's House]]
+|{{SCP|Hitpoints|6,325}}
+|None
+|[[Witch's experiment]] (level 19, 30, 42, and 53)
+|The last two forms of the [[Witch's experiment]] can be safespotted. Using Magic is recommended throughout the fight.
+|-
+|[[Waterfall Quest]]
+|{{SCP|Attack|13,750}} and {{SCP|Strength|13,750}}
+|None
+|None
+|Players need to withstand and evade attacks from level 86 Fire Giants and level 84 Moss Guardian. Having at least level 17 {{SCP|Hitpoints}} is recommended so that the player cannot die in one hit from full Hitpoints.
+|-
+|[[Death Plateau]]
+|{{SCP|Attack|3,000}}
+|None
+|None
+|Unlocks [[spiritual creatures]] as a Slayer task.
+|-
+|[[Fight Arena]]
+|{{SCP|Attack|12,175}}
+|None
+|[[Khazard scorpion]] (level 44), [[Khazard ogre]] (level 63), [[Bouncer]] (level 137)
+|The bosses can be safespotted, and using Magic is recommended to defeat them.
+|-
+|[[Tree Gnome Village]]
+|{{SCP|Attack|11,450}}
+|None
+|[[Khazard Warlord]] (level 112)
+|The Khazard Warlord can be safespotted, or flinched by walking in and out of his attack radius. Using Magic is recommended.
+|-
+|[[Vampyre Slayer]]
+|{{SCP|Attack|4,825}}
+|None
+|[[Count Draynor]] (level 34)
+|Count Draynor is fairly easy to defeat with some combat stats.
+|-
+|[[The Grand Tree]]
+|{{SCP|Attack|18,400}}
+|{{SCP|Agility|25}}
+|[[Black Demon]] (level 172)
+|Completion of Tree Gnome Village is recommended for access to spirit trees. The Black Demon can be safespotted, and using Magic is recommended to defeat the monster.
+|-
+|[[Holy Grail]]
+|{{SCP|Defence|15,300}}
+|{{SCP|Attack|20}}, completion of [[Merlin's Crystal]]
+|[[Black Knight Titan]] (level 120)
+|The Black Knight Titan can be flinched by simply stepping out of his melee range.
+|-
+|[[Scorpion Catcher]]
+|{{SCP|Strength|6,625}}
+|{{SCP|Prayer|31}}, completion of [[Alfred Grimhand's Barcrawl]]
+|None
+|Requires being able to run past level 172 black demons and level 64 poison spiders.
+|-
+|[[Mountain Daughter]]
+|{{SCP|Attack|1,000}}
+|{{SCP|Agility|20}}
+|[[The Kendal]] (level 70)
+|The Kendal can be safespotted.
+|-
+|[[Horror from the Deep]]
+|{{SCP|Strength|4,662.5}}
+|{{SCP|Agility|35}}, completion of [[Alfred Grimhand's Barcrawl]]
+|Dagannoth (level 100) and [[Dagannoth Mother]] (level 100)
+|Unlocks dagannoth as a Slayer task. Having {{SCP|Prayer|40}} is strongly recommended for [[Protect from Missiles]] against the Dagannoth Mother's Ranged attacks. This quest is a prerequisite for the [[Recipe for Disaster/Defeating the Culinaromancer|final fights]] of [[Recipe for Disaster]].
+|-
+|[[Tai Bwo Wannai Trio]]
+|{{SCP|Attack|2,500}} and {{SCP|Strength|2,500}}
+|{{SCP|Agility|15}}, {{SCP|Cooking|30}}, {{SCP|Fishing|5}}, completion of [[Jungle Potion]]
+|[[Monkey]] (level 3)
+|Having access to [[fairy rings]] makes this quest faster.
+|-
+!colspan=2|XP rewards total
+!colspan=3|{{SCP|Attack|65,275}}, {{SCP|Strength|27,537.5}} and {{SCP|Defence|15,300}}
+|}
+
+===Additional quests===
+Other quests give [[Quest experience rewards#Attack|Attack]], [[Quest experience rewards#Strength|Strength]], and [[Quest experience rewards#Defence|Defence]] experience, but they have higher requirements. Some of them are listed in the table below.
+
+Once completed, the [[Recipe for Disaster]] quest gives access to the [[Culinaromancer's gloves]]. They provide significant offensive bonuses.
+
+{|class="wikitable lighttable qc-active"
+!Quest
+!XP rewards
+!Requirements
+!Enemies to defeat
+!Notes
+|-
+|[[Dragon Slayer I]]
+|{{SCP|Strength|18,650}} and {{SCP|Defence|18,650}}
+|{{SCP|Quest|32}}
+|[[Elvarg]] (level 83) and various other monsters
+|Unlocks all dragon tasks for Slayer. This quest is a prerequisite for [[Heroes' Quest]].
+|-
+|[[Heroes' Quest]]
+|{{SCP|Attack|3,075}}, {{SCP|Strength|3,075}}, {{SCP|Defence|3,075}}
+|{{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Fishing|53}}, {{SCP|Herblore|25}}, {{SCP|Mining|50}}; completion of [[Shield of Arrav]], [[Lost City]], [[Merlin's Crystal]], and [[Dragon Slayer I]]
+|[[Ice Queen]] (level 111) and various other monsters
+|This quest is a prerequisite for [[Legends' Quest]], which needs to be started for the [[Recipe for Disaster/Freeing Sir Amik Varze|Sir Amik Varze subquest]] of [[Recipe for Disaster]].
+|-
+|[[The Fremennik Trials]]
+|{{SCP|Attack|2,812}}, {{SCP|Strength|2,812}}, {{SCP|Defence|2,812}}
+|{{SCP|Fletching|25}}, {{SCP|Woodcutting|40}}, {{SCP|Crafting|40}} if crafting your own lyre
+|[[Draugen]] (level 69) and [[Koschei the deathless]]
+|Prerequisite for wearing [[Fremennik helmets]].
+|-
+|[[The Fremennik Isles]]
+|Two lots of {{SCP|Combat|10,000}} [[Combat]] experience (choose between {{SCP|Strength}} [[Strength]], {{SCP|Attack}} [[Attack]], {{SCP|Defence}} [[Defence]] or {{SCP|Hitpoints}} [[Hitpoints]]).
+|{{SCP|Agility|40}}, {{SCP|Construction|20}}, completion of [[The Fremennik Trials]]
+|[[Ice Troll King]] (level 122)
+|Awards the [[helm of neitiznot]] and the ability to wield it.
+|-
+|[[Olaf's Quest]]
+|{{SCP|Defence|12,000}}
+|{{SCP|Firemaking|40}}, {{SCP|Woodcutting|50}}, completion of [[The Fremennik Trials]]
+|[[Ulfric]] (level 100)
+|Unlocks [[brine rat]]s as a Slayer task.
+|-
+|[[Underground Pass]]
+|{{SCP|Attack|3,000}}
+|{{SCP|Ranged|25}}
+|Multiple (between level 13 and 91)
+|Prerequisite for [[Legends' Quest]].
+|-
+|[[Nature Spirit]]
+|{{SCP|Defence|2,000}}
+|Completion of [[Priest in Peril]] and [[The Restless Ghost]]
+|3 [[Ghast]]s (level 30)
+|Prerequisite for the [[Recipe for Disaster/Freeing the Lumbridge Guide|Lumbridge Guide subquest]] of [[Recipe for Disaster]], and unlocking [[fairy rings]].
+|-
+|[[Fairytale I - Growing Pains]]
+|{{SCP|Attack|2,000}}
+|Completion of [[Lost City]] and [[Nature Spirit]]
+|[[Tanglefoot]] (level 111)
+|Prerequisite for unlocking [[fairy rings]].
+|-
+|[[Haunted Mine]]
+|{{SCP|Strength|22,000}}
+|{{SCP|Crafting|35}}, completion of [[Priest in Peril]]
+|[[Treus Dayth]] (level 95)
+|Prerequisite for obtaining the [[Salve amulet]], which provides combat bonuses against undead creatures.
+|}

@@ -1,0 +1,39 @@
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLineSkill|name=Bronze arrow|quantity=1-13|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Bronze axe|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Bronze dagger|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Bronze pickaxe|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Iron axe|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Iron dagger|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Iron pickaxe|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Leather body|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Steel arrow|quantity=1-13|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Steel axe|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Steel dagger|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Steel pickaxe|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsTableBottom}}
+
+====Other====
+{{DropsTableHead}}
+{{DropsLineSkill|name=Buttons|quantity=1|rarity=4/102|gemw=No|skill=Thieving}}
+{{DropsLineSkill|name=Coin pouch|bucketname=Coin pouch (H.A.M. member)|image=Coin pouch (H.A.M. member).png|quantity=1|rarity=17/102|gemw=No|skill=Thieving}}
+{{DropsLineSkill|name=Feather|quantity=1-7|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Knife|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Logs|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Needle|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Raw anchovies|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Raw chicken|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Thread|quantity=1-10|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Tinderbox|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Uncut opal|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Coal|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Cowhide|quantity=1|rarity=3/102|skill=Thieving}}
+{{DropsLineSkill|name=Damaged armour|quantity=1|rarity=4/102|gemw=No|skill=Thieving}}
+{{DropsLineSkill|name=Grimy guam leaf|quantity=1|rarity=6/561|skill=Thieving}} 
+{{DropsLineSkill|name=Grimy marrentill|quantity=1|rarity=3/561|skill=Thieving}} 
+{{DropsLineSkill|name=Grimy tarromin|quantity=1|rarity=2/561|skill=Thieving}} 
+{{DropsLineSkill|name=Iron ore|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsLineSkill|name=Rusty sword|quantity=1|rarity=4/102|gemw=No|skill=Thieving}}
+{{DropsLineSkill|name=Uncut jade|quantity=1|rarity=2/102|skill=Thieving}}
+{{DropsTableBottom}}

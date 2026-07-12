@@ -1,0 +1,8 @@
+==Creation==
+{{Recipe
+|members = No
+|ticks = 1
+|facilities = Water
+|mat1 = Vial
+|output1 = Vial of water
+}}

@@ -1,0 +1,35 @@
+==Details==
+{{Quest details
+|start = Talk to [[Ali Morrisane]] east of the Gem Trader in northern [[Al Kharid]].
+|startmap = 3302,3211
+|difficulty = Intermediate
+|description = Ali Morrisane - Gielinor's self proclaimed 'greatest merchant' - is having difficulties. He is selling things at such a rate that he cannot keep his market stall in stock.
+
+Word has it that he is on the lookout for someone; someone who can recruit some help from his home town Pollnivneach - a somewhat anarchic place, south of the Shantay Pass.
+|length = Medium
+|requirements = * {{SCP|Thieving|30|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* The ability to kill a level 70 [[Bandit champion|bandit]] and a level 75 [[Tough Guy|Menaphite]] (both can be safespotted).
+|items = * 501+ [[coins]]
+* [[Gloves]] - (see [[Cactus (The Feud)|this page]] for gloves that '''do''' work; [[Barrows gloves]], [[ice gloves]], [[vambraces]],  and [[Slayer gloves]] do '''not''' work!)
+* [[Kharidian headpiece]] (can be bought from [[Ali Morrisane]])
+* [[Fake beard]] (can be bought from [[Ali Morrisane]])
+* 3 [[beer]]s (obtainable during the quest, bought from [[Ali the Barman]] for 2 coins each)
+* [[Bucket]] or [[Ugthanki dung]] (obtainable during the quest, spawns at the location it is needed – bring three extra buckets, four total, if you plan on doing [[My Arm's Big Adventure]] as three Ugthanki dung are needed for that quest). One more might be needed for [[Forgettable Tale...]] (1/25 chance for each player).
+* [[Snake charm]] (obtainable during the quest by putting a coin in the [[snake charmer]]'s [[money pot]], if you '''do not''' already have one in your bank)
+** If you have the [[snake charm]] in your bank already, you will need to retrieve it.
+* [[Snake basket]] (obtainable during quest by putting a coin in the [[snake charmer]]'s [[money pot]], whether or not you have one in your bank)
+|recommended = * {{SCP|Combat|40|link=yes}}
+* [[Stamina potion|Stamina]] or [[energy potion]]s
+* [[Armour]] and some [[food]]
+* [[Waterskin]] (one is enough)
+* Fast travel to Al Kharid ([[ring of dueling]] or an [[amulet of glory]])
+* Fast travel to [[Pollnivneach]] ([[Magic carpet]] or [[Pollnivneach teleport]], or [[House teleport]] if your house is in that city)
+** [[Ring of Charos (a)]] to save money on [[magic carpet]] rides
+|kills = * [[Bandit champion]] ''(level 70)''
+* [[Tough Guy]] ''(level 75)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

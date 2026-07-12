@@ -1,0 +1,14 @@
+===Levels 1 to 10: Chickens===
+{{Melee training monster
+|name = [[Chicken]]
+|locations = North-east of [[Lumbridge]] just east of [[River Lum]], south of [[River Lum]] in [[Farmer Fred]]'s chicken coop
+|combat = 1
+|hitpoints = 3
+|requirements = None
+|recommendations = 
+|advantages = * No food required
+*Feathers are dropped in groups of 5-15 are stackable and can be sold for some profit
+*Bones will drop frequently, allowing the player to train their prayer as well
+|disadvantages = * Only 3 Hitpoints (12 experience) per kill
+*Non-aggressive
+}}

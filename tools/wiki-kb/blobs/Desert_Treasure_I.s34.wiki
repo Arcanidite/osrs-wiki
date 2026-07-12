@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name=Desert Treasure|image=[[File:Desert Treasure I reward scroll.png|centre]]|qp=3|rewards=*{{SCP|Magic|20,006.9}} [[Magic]] [[experience]]{{CiteTwitter|author=Mod Ash|url=https://twitter.com/jagexash/status/1659205746851221507|date=18 May 2023|archiveurl=https://reldo.runescape.wiki/i/108236|archivedate=18 May 2023|quote=20,006.9, in fact!}}
+*The ability to use [[Ancient Magicks]]: At any time, you can pray at the [[Altar (Ancient Pyramid)|altar]] and change between the [[Standard spells|standard]] and Ancient Magicks spellbooks. After traversing the pyramid for the first time, you may enter via the back-door of the pyramid to gain a short cut to the altar. Be warned that changing spellbooks will drain your prayer to 0.
+*[[Ring of visibility]]: If you ever lose it, you can obtain another one from [[Rasolo]].
+*Access to [[ancient staff]]: You can buy one from [[Eblis]] for 80,000 [[coins]]. If you lose the staff, you will have to reobtain it from another source.
+*Access to the [[Smoke Dungeon]], which can be used for various [[Slayer task]]s.
+*Ability to talk to [[Eblis]] to obtain an [[ancient signet]].
+
+Unlocks:
+* [[Dessous]], [[Damis]], [[Fareed]], and [[Kamil]] accessible in the [[Nightmare Zone]].
+}}

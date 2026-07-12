@@ -1,0 +1,11 @@
+==Transportation==
+The Piscatoris Fishing colony can be reached through several teleportation methods, listed here in order of shortest run to longest:
+
+* {{Plink|Western banner 3}} or {{Plink|Western banner 4|txt=4}}  — centre of the colony.
+* {{Plink|Piscatoris teleport}} — colony entrance.
+* {{Plink|Fairy ring|pic=Fairy ring (Construction) icon}} {{Fairycode|AKQ}} — Hunter area, shortly south of the entrance.
+* {{Plink|Necklace of passage}} — Outpost, well south of [[Kathy Corkat|Kathy]].
+
+[[Kathy Corkat]], outside of the west fence of the [[Tree Gnome Stronghold]], will ferry players up the river for 50 [[coins]], or for free after completion of [[Swan Song]].
+
+Players can also moor a [[boat]] on the north-western size of the colony, with 75 [[Sailing]] and full completion of Swan Song.

@@ -1,0 +1,39 @@
+==Details==
+{{Quest details
+|start = Talk to [[Martin the Master Gardener]] by the pig pen in [[Draynor Village]].
+|startmap = 3077,3258
+|difficulty = Intermediate
+|description = Recently, farmers around Gielinor have been noticing some trouble with their farming patches. They just don't seem to have the same yields as before. What could be the source of this malady?
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[Lost City]]
+**[[Nature Spirit]]
+***[[Priest in Peril]]
+***[[The Restless Ghost]]
+*The ability to defeat a level 111 [[Tanglefoot]] with limited weaponry
+|items = *[[Secateurs]] (obtainable in [[Sarah's Farming shop]] north-west of the quest start for 5 coins)
+*[[Spade]] (obtainable multiple times during quest)
+*[[Ghostspeak amulet]]
+*[[Dramen staff]]
+*[[Draynor skull]] (obtainable during quest)
+*A combination of three items picked for you at random, see [[Fairytale I - Growing Pains#Blessed secateurs|list of potential items]].
+|recommended = *{{SCP|Combat|50|link=yes}}
+*Decent {{SCP|Strength|link=yes}} and/or {{SCP|Farming|link=yes}} levels for the fight with the [[Tanglefoot]] (a combined level of 40 is sufficient)
+*Fast travel to Draynor Village and Draynor Manor ([[Amulet of glory]] or [[Draynor Manor teleport]])
+*Fast travel to any five [[farm patches]] around [[Asgarnia]] and [[Misthalin]]
+**Falador cabbage patch ([[Amulet of glory]])
+**Falador park ([[Falador teleport]])
+**Rimmington ([[Rimmington teleport]], [[Teleport to House]] if your house is there or [[Skills necklace]] to the Crafting Guild)
+**Lumbridge ([[Lumbridge teleport]])
+**Champions' Guild ([[Chronicle]], [[Combat bracelet]] or [[Varrock teleport]])
+**Varrock Palace ([[Varrock teleport]])
+**Taverley ([[Taverley teleport]] or [[Teleport to House]] if your house is there)
+*Fast travel to the [[Filliman Tarlock|nature spirit]] ([[Mort'ton teleport]])
+*[[Druid pouch]]es (to prevent food from getting rotten by [[ghast]]s)
+|kills = [[Tanglefoot]] ''(level 111)'' - (may be flinched)
+|ironman = *Completion of [[Jungle Potion]] (to obtain [[proboscis]] if needed)
+*Ironmen who do not have the necessary [[Herblore]] level to clean possible herbs required to bless the [[secateurs]] will need to visit the [[Zahur|herblore shop]] in [[Nardah]] to clean the grimy herbs.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

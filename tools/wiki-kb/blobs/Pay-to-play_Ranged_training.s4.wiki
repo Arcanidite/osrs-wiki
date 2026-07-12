@@ -1,0 +1,17 @@
+===Levels 1–45: Using dwarf multicannon===
+{{Map|2398,3870|r=4|mtype=square|caption=Coal rocks safespot location.|align=right|width=250|height=250}}
+Using the [[dwarf multicannon]], once assembled, offers the fastest experience up to level 45. Players must have completed [[Dwarf Cannon]] quest to use and assemble their own dwarf multicannon, but there are no level requirements to assemble and use one. The cannon offers much higher damage output compared to other options at low levels, as it has a max hit of 30 with regular [[steel cannonball]]s regardless of the player's Ranged level. The [[Dwarf multicannon#Accuracy|accuracy of the multicannon]] is affected by the accuracy of the player's selected attack style, either ranged or melee, taking into account the attack bonus for that particular style. 
+
+Cannoning can be fairly expensive, however. At level 45, chinning becomes a lot faster and is usually a cheaper alternative.
+
+====Cannoning with Slayer====
+Training [[Slayer]] grants passive Ranged experience from using the dwarf multicannon. It is always worth using the cannon wherever applicable, as the cost of using the cannon is justified by the saved time compared to not using one. A melee task can take almost twice as long if not using the cannon. For example, in multi-combat areas such as during [[dagannoth]] and [[Kalphite Soldier|kalphite]] tasks the cannon will deal most of the damage, while the player is getting nearly as much Melee experience as they would without using a cannon. Should the player not be able to afford to use the cannon, it is better to make the money for the steel cannonballs than train Slayer without the cannon.
+
+The amount of Ranged experience gained from Slayer depends on the player's task list. Players can expect to gain around 2–4 million Ranged experience from level 99 Slayer.
+
+====Active cannoning methods====
+Alternatively, kill monsters with the dwarf multicannon to actively train Ranged.
+
+* [[Ogre]]s east of [[Castle Wars]] have no additional quest requirements, and cannoning them offers around 40,000 experience per hour from the cannon alone. They can be crowded, however.
+* [[Ogre]]s in the [[Combat Training Camp]] require completing [[Biohazard]], but can be less crowded.
+* Cannoning [[ice troll (disambiguation)|ice trolls]] north of [[Jatizso]] after completing [[The Fremennik Trials]] is a slower alternative at higher levels, but the drops cover the cost of the steel cannonballs. Use the coal rocks west of the eastern mining icon as a safespot. The trolls can deal heavy damage if not safespotted, so consider bringing backup food and runes for [[Telekinetic Grab]] for the loot.

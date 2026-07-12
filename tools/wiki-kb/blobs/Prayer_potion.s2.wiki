@@ -1,0 +1,13 @@
+==Creation==
+{{Recipe
+|skill1 = Herblore
+|skill1lvl = 38
+|skill1boostable = Yes
+|skill1exp = 87.5
+|members = Yes
+|ticks = 2
+|mat1 = Ranarr potion (unf)
+|mat2 = Snape grass
+|output1 = Prayer potion(3)
+|output1itemnote = When worn, an [[amulet of chemistry]] or [[alchemist's amulet]] can be helpful offsetting negative profits by creating Prayer potion(4) with 5% or 15% chance respectively.
+}}

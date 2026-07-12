@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Tale of the Righteous
+|image = [[File:Tale of the Righteous reward scroll.png|center]]
+|qp = 1
+|rewards =
+*8,000 [[coins]]
+*A page for [[Kharedst's memoirs]], '[[History and hearsay]].' It teleports players to the [[Graveyard of Heroes]] south-west of the Shayzien bank.
+*Ability to recolour the [[graceful outfit]] to the colours of [[Shayzien]].
+*Ability to fight the [[Corrupt Lizardman]] within the [[Nightmare Zone]].
+*3 [[Xerician fabric]] (dropped by Corrupt Lizardman)
+}}

@@ -1,0 +1,11 @@
+===Pickpocket chance===
+The chance of successfully pickpocketing a Master Farmer scales between 91/256 at level 1, and 241/256 at level 99.{{CiteTwitter|author=Mod Kieren|url=https://twitter.com/JagexKieren/status/691576301296164865|date=25 January 2016|archiveurl=https://archive.is/nVSVe|archivedate=30 May 2020|quote=Master farmers: 90/255 at lv1, 240/255 at 99.}}
+
+With the multiplicative +10% pickpocketing bonus from the hard [[Ardougne Diary]], players will stop failing to pickpocket them at level 94 Thieving.
+
+{{Skilling success chart|label=Master Farmer pickpocket chance
+|label1=Normal|low1=90|high1=240|req1=38|color1=gray|image1=Thief Master farmer.png
+|label2=Gloves of silence|low2=94|high2=252|req2=38|color2=darkblue|image2=Gloves of silence.png
+|label3=Ardougne Diary|low3=99|high3=264|req3=67|color3=black|image3=Ardougne cloak 3.png
+|label4=Thieving cape + Ardougne Diary|low4=108|high4=290|req4=99|color4=purple|image4=Thieving cape.png
+}}

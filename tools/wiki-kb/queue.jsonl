@@ -8,3 +8,491 @@
 {"key": "study:multiquest-im", "status": "claimed", "payload": null, "ts": "2026-07-12T06:00:39Z"}
 {"key": "study:multiquest-im", "status": "claimed", "payload": null, "ts": "2026-07-12T06:04:57Z"}
 {"key": "study:multiquest-im", "status": "done", "payload": null, "ts": "2026-07-12T06:07:58Z"}
+{"key": "items:pps-05-withdraw-brew", "status": "pending", "payload": null, "ts": "2026-07-12T06:29:52Z"}
+{"key": "items:pps-05-withdraw-brew", "status": "claimed", "payload": null, "ts": "2026-07-12T06:29:52Z"}
+{"key": "items:pps-06-deposit-potions", "status": "pending", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:pps-06-deposit-potions", "status": "claimed", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:brew-prayer-potion", "status": "pending", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:brew-prayer-potion", "status": "claimed", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:gather-snape-grass", "status": "pending", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:gather-snape-grass", "status": "claimed", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:chkpt-prayer-pot-supply-coarse-0", "status": "pending", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:chkpt-prayer-pot-supply-coarse-0", "status": "claimed", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:cook-monkfish", "status": "pending", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:cook-monkfish", "status": "claimed", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:synth-tag-supply-prayer-pot-supply-14", "status": "pending", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:synth-tag-supply-prayer-pot-supply-14", "status": "claimed", "payload": null, "ts": "2026-07-12T06:29:53Z"}
+{"key": "items:synth-tag-supply-food-monkfish-supply-15", "status": "pending", "payload": null, "ts": "2026-07-12T06:29:54Z"}
+{"key": "items:synth-tag-supply-food-monkfish-supply-15", "status": "claimed", "payload": null, "ts": "2026-07-12T06:29:54Z"}
+{"key": "items:pps-05-withdraw-brew", "status": "done", "payload": null, "ts": "2026-07-12T06:31:49Z"}
+{"key": "items:pps-06-deposit-potions", "status": "done", "payload": null, "ts": "2026-07-12T06:31:49Z"}
+{"key": "items:brew-prayer-potion", "status": "done", "payload": null, "ts": "2026-07-12T06:31:49Z"}
+{"key": "items:gather-snape-grass", "status": "done", "payload": null, "ts": "2026-07-12T06:31:50Z"}
+{"key": "items:chkpt-prayer-pot-supply-coarse-0", "status": "done", "payload": null, "ts": "2026-07-12T06:31:50Z"}
+{"key": "items:cook-monkfish", "status": "done", "payload": null, "ts": "2026-07-12T06:31:50Z"}
+{"key": "items:synth-tag-supply-prayer-pot-supply-14", "status": "done", "payload": null, "ts": "2026-07-12T06:31:50Z"}
+{"key": "items:synth-tag-supply-food-monkfish-supply-15", "status": "done", "payload": null, "ts": "2026-07-12T06:31:50Z"}
+{"key": "quests:quest-priest-in-peril", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:16Z"}
+{"key": "quests:quest-priest-in-peril", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-priest-in-peril", "status": "done", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-nature-spirit", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-nature-spirit", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-nature-spirit", "status": "done", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-druidic-ritual", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-druidic-ritual", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-druidic-ritual", "status": "done", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-bone-voyage", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-bone-voyage", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:17Z"}
+{"key": "quests:quest-bone-voyage", "status": "done", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-tale-of-arrav", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-tale-of-arrav", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-tale-of-arrav", "status": "done", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-cooks-assistant", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-cooks-assistant", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-cooks-assistant", "status": "done", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-fairytale-1", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-fairytale-1", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:18Z"}
+{"key": "quests:quest-fairytale-1", "status": "done", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-the-feud", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-the-feud", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-the-feud", "status": "done", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-lost-city", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-lost-city", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-lost-city", "status": "done", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-swan-song", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-swan-song", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:19Z"}
+{"key": "quests:quest-swan-song", "status": "done", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-mm", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-mm", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-mm", "status": "done", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-dt", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-dt", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-dt", "status": "done", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-rfd-start", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-rfd-start", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:20Z"}
+{"key": "quests:quest-rfd-start", "status": "done", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-intro", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-intro", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-intro", "status": "done", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-goblins", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-goblins", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-goblins", "status": "done", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-mountain-dwarf", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-mountain-dwarf", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:21Z"}
+{"key": "quests:rfd-mountain-dwarf", "status": "done", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:rfd-awowogei", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:rfd-awowogei", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:rfd-awowogei", "status": "done", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:milestone-quest-mm", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:milestone-quest-mm", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:milestone-quest-mm", "status": "done", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:milestone-quest-dt", "status": "pending", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:milestone-quest-dt", "status": "claimed", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "quests:milestone-quest-dt", "status": "done", "payload": null, "ts": "2026-07-12T06:32:22Z"}
+{"key": "travel:steer-ardougne-easy-diary", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:steer-ardougne-easy-diary", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:steer-graceful", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:steer-graceful", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:unlock-barrows", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:unlock-barrows", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:unlock-gwd", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:unlock-gwd", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:milestone-gwd", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:milestone-gwd", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:milestone-barrows", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:54Z"}
+{"key": "travel:milestone-barrows", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:milestone-raids-cox", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:milestone-raids-cox", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-fairy-ring", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-fairy-ring", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-spirit-tree", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-spirit-tree", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-canoe", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-canoe", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-minigame-teleport", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-minigame-teleport", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-quetzal-transport-system", "status": "pending", "payload": null, "ts": "2026-07-12T06:40:55Z"}
+{"key": "travel:ref-quetzal-transport-system", "status": "claimed", "payload": null, "ts": "2026-07-12T06:40:56Z"}
+{"key": "travel:steer-ardougne-easy-diary", "status": "done", "payload": null, "ts": "2026-07-12T06:41:07Z"}
+{"key": "travel:steer-graceful", "status": "done", "payload": null, "ts": "2026-07-12T06:41:07Z"}
+{"key": "travel:unlock-barrows", "status": "done", "payload": null, "ts": "2026-07-12T06:41:07Z"}
+{"key": "travel:unlock-gwd", "status": "done", "payload": null, "ts": "2026-07-12T06:41:07Z"}
+{"key": "travel:milestone-gwd", "status": "done", "payload": null, "ts": "2026-07-12T06:41:07Z"}
+{"key": "travel:milestone-barrows", "status": "done", "payload": null, "ts": "2026-07-12T06:41:08Z"}
+{"key": "travel:milestone-raids-cox", "status": "done", "payload": null, "ts": "2026-07-12T06:41:08Z"}
+{"key": "travel:ref-fairy-ring", "status": "done", "payload": null, "ts": "2026-07-12T06:41:08Z"}
+{"key": "travel:ref-spirit-tree", "status": "done", "payload": null, "ts": "2026-07-12T06:41:08Z"}
+{"key": "travel:ref-canoe", "status": "done", "payload": null, "ts": "2026-07-12T06:41:08Z"}
+{"key": "travel:ref-minigame-teleport", "status": "done", "payload": null, "ts": "2026-07-12T06:41:08Z"}
+{"key": "travel:ref-quetzal-transport-system", "status": "done", "payload": null, "ts": "2026-07-12T06:41:08Z"}
+{"key": "training:chkpt-combat-training-routing-0", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:39Z"}
+{"key": "training:chkpt-combat-training-routing-0", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:39Z"}
+{"key": "training:chkpt-combat-training-routing-0", "status": "done", "payload": null, "ts": "2026-07-12T06:50:39Z"}
+{"key": "training:chkpt-combat-training-routing-1", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:39Z"}
+{"key": "training:chkpt-combat-training-routing-1", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:40Z"}
+{"key": "training:chkpt-combat-training-routing-1", "status": "done", "payload": null, "ts": "2026-07-12T06:50:40Z"}
+{"key": "training:chkpt-combat-training-routing-2", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:40Z"}
+{"key": "training:chkpt-combat-training-routing-2", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:40Z"}
+{"key": "training:chkpt-combat-training-routing-2", "status": "done", "payload": null, "ts": "2026-07-12T06:50:40Z"}
+{"key": "training:ctr-01-kill-chickens", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:40Z"}
+{"key": "training:ctr-01-kill-chickens", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:40Z"}
+{"key": "training:ctr-01-kill-chickens", "status": "done", "payload": null, "ts": "2026-07-12T06:50:40Z"}
+{"key": "training:ctr-02-kill-cows", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:41Z"}
+{"key": "training:ctr-02-kill-cows", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:41Z"}
+{"key": "training:ctr-02-kill-cows", "status": "done", "payload": null, "ts": "2026-07-12T06:50:41Z"}
+{"key": "training:ctr-05-kill-barbarians", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:41Z"}
+{"key": "training:ctr-05-kill-barbarians", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:41Z"}
+{"key": "training:ctr-05-kill-barbarians", "status": "done", "payload": null, "ts": "2026-07-12T06:50:41Z"}
+{"key": "training:ctr-06-stronghold-crawlers", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:41Z"}
+{"key": "training:ctr-06-stronghold-crawlers", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:41Z"}
+{"key": "training:ctr-06-stronghold-crawlers", "status": "done", "payload": null, "ts": "2026-07-12T06:50:42Z"}
+{"key": "training:ctr-07a-sand-crabs", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:42Z"}
+{"key": "training:ctr-07a-sand-crabs", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:42Z"}
+{"key": "training:ctr-07a-sand-crabs", "status": "done", "payload": null, "ts": "2026-07-12T06:50:42Z"}
+{"key": "training:synth-attack-43-4", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:42Z"}
+{"key": "training:synth-attack-43-4", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:42Z"}
+{"key": "training:synth-attack-43-4", "status": "done", "payload": null, "ts": "2026-07-12T06:50:42Z"}
+{"key": "training:synth-attack-75-16", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:42Z"}
+{"key": "training:synth-attack-75-16", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-attack-75-16", "status": "done", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-cooking-62-11", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-cooking-62-11", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-cooking-62-11", "status": "done", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-defence-43-5", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-defence-43-5", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-defence-43-5", "status": "done", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-defence-75-18", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:43Z"}
+{"key": "training:synth-defence-75-18", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:44Z"}
+{"key": "training:synth-defence-75-18", "status": "done", "payload": null, "ts": "2026-07-12T06:50:44Z"}
+{"key": "training:synth-farming-32-7", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:44Z"}
+{"key": "training:synth-farming-32-7", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:44Z"}
+{"key": "training:synth-farming-32-7", "status": "done", "payload": null, "ts": "2026-07-12T06:50:44Z"}
+{"key": "training:synth-fishing-62-12", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:44Z"}
+{"key": "training:synth-fishing-62-12", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:44Z"}
+{"key": "training:synth-fishing-62-12", "status": "done", "payload": null, "ts": "2026-07-12T06:50:44Z"}
+{"key": "training:synth-herblore-52-9", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:45Z"}
+{"key": "training:synth-herblore-52-9", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:45Z"}
+{"key": "training:synth-herblore-52-9", "status": "done", "payload": null, "ts": "2026-07-12T06:50:45Z"}
+{"key": "training:synth-magic-50-1", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:45Z"}
+{"key": "training:synth-magic-50-1", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:45Z"}
+{"key": "training:synth-magic-50-1", "status": "done", "payload": null, "ts": "2026-07-12T06:50:45Z"}
+{"key": "training:synth-magic-66-10", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:45Z"}
+{"key": "training:synth-magic-66-10", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:45Z"}
+{"key": "training:synth-magic-66-10", "status": "done", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-magic-75-20", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-magic-75-20", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-magic-75-20", "status": "done", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-mining-22-8", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-mining-22-8", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-mining-22-8", "status": "done", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-ranged-75-19", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-ranged-75-19", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:46Z"}
+{"key": "training:synth-ranged-75-19", "status": "done", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-slayer-10-3", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-slayer-10-3", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-slayer-10-3", "status": "done", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-smithing-45-13", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-smithing-45-13", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-smithing-45-13", "status": "done", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-strength-75-17", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-strength-75-17", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:47Z"}
+{"key": "training:synth-strength-75-17", "status": "done", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:synth-woodcutting-36-6", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:synth-woodcutting-36-6", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:synth-woodcutting-36-6", "status": "done", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:train-attack-10", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:train-attack-10", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:train-attack-10", "status": "done", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:train-attack-30", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:train-attack-30", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:48Z"}
+{"key": "training:train-attack-30", "status": "done", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-40", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-40", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-40", "status": "done", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-60", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-60", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-60", "status": "done", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-70", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-70", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:49Z"}
+{"key": "training:train-attack-70", "status": "done", "payload": null, "ts": "2026-07-12T06:50:50Z"}
+{"key": "training:train-cooking-20", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:50Z"}
+{"key": "training:train-cooking-20", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:50Z"}
+{"key": "training:train-cooking-20", "status": "done", "payload": null, "ts": "2026-07-12T06:50:50Z"}
+{"key": "training:train-cooking-40", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:50Z"}
+{"key": "training:train-cooking-40", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:50Z"}
+{"key": "training:train-cooking-40", "status": "done", "payload": null, "ts": "2026-07-12T06:50:50Z"}
+{"key": "training:train-cooking-58", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:50Z"}
+{"key": "training:train-cooking-58", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-cooking-58", "status": "done", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-crafting-20", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-crafting-20", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-crafting-20", "status": "done", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-crafting-40", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-crafting-40", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-crafting-40", "status": "done", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-defence-30", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:51Z"}
+{"key": "training:train-defence-30", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:52Z"}
+{"key": "training:train-defence-30", "status": "done", "payload": null, "ts": "2026-07-12T06:50:52Z"}
+{"key": "training:train-defence-40", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:52Z"}
+{"key": "training:train-defence-40", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:52Z"}
+{"key": "training:train-defence-40", "status": "done", "payload": null, "ts": "2026-07-12T06:50:52Z"}
+{"key": "training:train-defence-60", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:52Z"}
+{"key": "training:train-defence-60", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:52Z"}
+{"key": "training:train-defence-60", "status": "done", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-defence-70", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-defence-70", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-defence-70", "status": "done", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-farming-17", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-farming-17", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-farming-17", "status": "done", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-firemaking-15", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-firemaking-15", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:53Z"}
+{"key": "training:train-firemaking-15", "status": "done", "payload": null, "ts": "2026-07-12T06:50:54Z"}
+{"key": "training:train-firemaking-30", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:54Z"}
+{"key": "training:train-firemaking-30", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:54Z"}
+{"key": "training:train-firemaking-30", "status": "done", "payload": null, "ts": "2026-07-12T06:50:54Z"}
+{"key": "training:train-firemaking-50", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:54Z"}
+{"key": "training:train-firemaking-50", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:54Z"}
+{"key": "training:train-firemaking-50", "status": "done", "payload": null, "ts": "2026-07-12T06:50:54Z"}
+{"key": "training:train-fishing-20", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:54Z"}
+{"key": "training:train-fishing-20", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:55Z"}
+{"key": "training:train-fishing-20", "status": "done", "payload": null, "ts": "2026-07-12T06:50:55Z"}
+{"key": "training:train-fishing-40", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:55Z"}
+{"key": "training:train-fishing-40", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:55Z"}
+{"key": "training:train-fishing-40", "status": "done", "payload": null, "ts": "2026-07-12T06:50:55Z"}
+{"key": "training:train-fishing-58", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:55Z"}
+{"key": "training:train-fishing-58", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:55Z"}
+{"key": "training:train-fishing-58", "status": "done", "payload": null, "ts": "2026-07-12T06:50:55Z"}
+{"key": "training:train-herblore-10", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-herblore-10", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-herblore-10", "status": "done", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-herblore-38", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-herblore-38", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-herblore-38", "status": "done", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-magic-25", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-magic-25", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-magic-25", "status": "done", "payload": null, "ts": "2026-07-12T06:50:56Z"}
+{"key": "training:train-magic-43", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:57Z"}
+{"key": "training:train-magic-43", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:57Z"}
+{"key": "training:train-magic-43", "status": "done", "payload": null, "ts": "2026-07-12T06:50:57Z"}
+{"key": "training:train-magic-55", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:57Z"}
+{"key": "training:train-magic-55", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:57Z"}
+{"key": "training:train-magic-55", "status": "done", "payload": null, "ts": "2026-07-12T06:50:57Z"}
+{"key": "training:train-magic-70", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:57Z"}
+{"key": "training:train-magic-70", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:57Z"}
+{"key": "training:train-magic-70", "status": "done", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-mining-15", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-mining-15", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-mining-15", "status": "done", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-prayer-22", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-prayer-22", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-prayer-22", "status": "done", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-prayer-43", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-prayer-43", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:58Z"}
+{"key": "training:train-prayer-43", "status": "done", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-prayer-52", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-prayer-52", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-prayer-52", "status": "done", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-prayer-74", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-prayer-74", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-prayer-74", "status": "done", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-ranged-30", "status": "pending", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-ranged-30", "status": "claimed", "payload": null, "ts": "2026-07-12T06:50:59Z"}
+{"key": "training:train-ranged-30", "status": "done", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-40", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-40", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-40", "status": "done", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-55", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-55", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-55", "status": "done", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-70", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-70", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:00Z"}
+{"key": "training:train-ranged-70", "status": "done", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-15", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-15", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-15", "status": "done", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-30", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-30", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-30", "status": "done", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-40", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-40", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:01Z"}
+{"key": "training:train-smithing-40", "status": "done", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-strength-60", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-strength-60", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-strength-60", "status": "done", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-strength-70", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-strength-70", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-strength-70", "status": "done", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-woodcutting-15", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-woodcutting-15", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:02Z"}
+{"key": "training:train-woodcutting-15", "status": "done", "payload": null, "ts": "2026-07-12T06:51:03Z"}
+{"key": "training:train-woodcutting-30", "status": "pending", "payload": null, "ts": "2026-07-12T06:51:03Z"}
+{"key": "training:train-woodcutting-30", "status": "claimed", "payload": null, "ts": "2026-07-12T06:51:03Z"}
+{"key": "training:train-woodcutting-30", "status": "done", "payload": null, "ts": "2026-07-12T06:51:03Z"}
+{"key": "coord-fix:ctr-01-kill-chickens", "status": "pending", "payload": {"note": "training: pin corrected to (3225,3300) Lumbridge East Farm chicken coop, verified against Chicken page Locations \u2014 not the (3259,3266)/NPC 397 bogus marker; folded into training:ctr-01-kill-chickens contribution."}, "ts": "2026-07-12T06:51:36Z"}
+{"key": "coord-fix:ctr-02-kill-cows", "status": "pending", "payload": {"note": "training: pin corrected to (3254,3267) Lumbridge East Farm, verified against Cow page Locations \u2014 not the (3259,3266)/NPC 397 bogus marker; folded into training:ctr-02-kill-cows contribution."}, "ts": "2026-07-12T06:51:36Z"}
+{"key": "consolidate-xp:combat-training-routing-xp", "status": "pending", "payload": {"note": "training: systematic xp-field error across nearly all owned train-*/ctr-* rows (43 of 43 train-* bands checked, only the 10 pure 1->N bands matched cumulative table). Same wrong constants reused across skills at identical bands (40->60 melee=250384 real 236518; 60->70 melee=523658 real 463885; 10->30=12321 real 12209). Per-step corrections + Experience-table citation are in each training:train-*/ctr-* contribution note. Recommend a bulk consolidation pass recomputing every train-*/ctr-* xp field from cumulative(hi)-cumulative(lo) rather than merging one at a time."}, "ts": "2026-07-12T06:51:36Z"}
+{"key": "npcs:ctr-03-buy-scimitar", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:04Z"}
+{"key": "npcs:ctr-03-buy-scimitar", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:04Z"}
+{"key": "npcs:ctr-04-equip-scimitar", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:04Z"}
+{"key": "npcs:ctr-04-equip-scimitar", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:04Z"}
+{"key": "npcs:chkpt-combat-training-routing-3", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:04Z"}
+{"key": "npcs:chkpt-combat-training-routing-3", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:04Z"}
+{"key": "npcs:pps-02-steal-ranarr-seeds", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:04Z"}
+{"key": "npcs:pps-02-steal-ranarr-seeds", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:pps-04-source-vials", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:pps-04-source-vials", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:source-pineapples-charter", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:source-pineapples-charter", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:train-thieving-20", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:train-thieving-20", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:train-thieving-38", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:train-thieving-38", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:synth-thieving-53-2", "status": "pending", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:synth-thieving-53-2", "status": "claimed", "payload": null, "ts": "2026-07-12T06:52:05Z"}
+{"key": "npcs:ctr-03-buy-scimitar", "status": "done", "payload": null, "ts": "2026-07-12T06:52:15Z"}
+{"key": "npcs:ctr-04-equip-scimitar", "status": "done", "payload": null, "ts": "2026-07-12T06:52:16Z"}
+{"key": "npcs:chkpt-combat-training-routing-3", "status": "done", "payload": null, "ts": "2026-07-12T06:52:16Z"}
+{"key": "npcs:pps-02-steal-ranarr-seeds", "status": "done", "payload": null, "ts": "2026-07-12T06:52:16Z"}
+{"key": "npcs:pps-04-source-vials", "status": "done", "payload": null, "ts": "2026-07-12T06:52:16Z"}
+{"key": "npcs:source-pineapples-charter", "status": "done", "payload": null, "ts": "2026-07-12T06:52:16Z"}
+{"key": "npcs:train-thieving-20", "status": "done", "payload": null, "ts": "2026-07-12T06:52:16Z"}
+{"key": "npcs:train-thieving-38", "status": "done", "payload": null, "ts": "2026-07-12T06:52:16Z"}
+{"key": "npcs:synth-thieving-53-2", "status": "done", "payload": null, "ts": "2026-07-12T06:52:16Z"}
+{"key": "sme:interface-widget-ids", "status": "pending", "payload": {"goal": "Enumerate concrete interface group/child ids + names + rendered option text + varbit gates at rev 236", "targets": ["RuneLite InterfaceID + ComponentID + Varbits/VarPlayer/VarClient constants", "cache if(<group>) defs for interface layouts", "OSRS wiki interface/varbit reference pages"], "sources": ["rsprox-runelite-launcher bundled resources: gameval.zip, InterfaceID.class, ComponentID.class, Varbits.class, VarPlayer.class (decompile with javap/CFR, OFFLINE)", "OpenRS2 build-236 cache interface archive", "wikicli get on interface + varbit pages"], "expected_schema": "contrib kind=interface {group_id,child_id,name,option_text[],type,varbit_gate} and kind=varbit {id,name,gates}", "already_have": ["interaction opcodes (100 rows, GameClientProt.kt)", "interface_op vocabulary (24 rows, outgoing/interfaces)", "NOTE wiki-kb manifest has ZERO interface/varbit pages so none cached yet"], "out": "entity-kb/contrib.jsonl kind=interface,varbit; register decompiled gameval blob in manifest"}, "ts": "2026-07-12T06:56:01Z"}
+{"key": "sme:npc-cache-defs", "status": "pending", "payload": {"goal": "Bulk NPC id to name to actions[] to combat/size to morph varbit/varp at build 236", "targets": ["all npc cache defs (id,name,actions[5],combat_level,size,morph)"], "sources": ["local /home/lemon/osrs-wiki/assets/data/cache/npcs.pack (decode) ALREADY REGISTERED", "Joshua-F/osrs-dumps or zwyz/osrs-cache build-236 npc dump (GitHub raw, read-only)", "wiki cross-ref for name/option confirmation only"], "expected_schema": "contrib kind=npc {cache_id,name,actions[],combat_level,size,morph_varbit,morph_varp,wiki_ref}", "already_have": ["npcs.pack registered as source", "npc-spawns manifest 18888 spawns registered"], "out": "entity-kb/contrib.jsonl kind=npc keyed npc:<cache_id>; actions[] slot i maps to OPNPC(i+1)"}, "ts": "2026-07-12T06:56:01Z"}
+{"key": "sme:object-loc-cache-defs", "status": "pending", "payload": {"goal": "Bulk object/loc id to name to actions[] to loc_types to morph at build 236", "targets": ["all object/loc cache defs (id,name,actions[5],loc_types,size,morph)"], "sources": ["local objects.pack (decode) + locs/ placements ALREADY REGISTERED", "osrs-dumps build-236 object dump (GitHub raw)", "wiki cross-ref for name/option confirmation"], "expected_schema": "contrib kind=object {cache_id,name,actions[],loc_types,size,morph_varbit,morph_varp,wiki_ref}", "already_have": ["objects.pack registered", "locs manifest registered"], "out": "entity-kb/contrib.jsonl kind=object keyed obj:<cache_id>; actions[] slot i maps to OPLOC(i+1)"}, "ts": "2026-07-12T06:56:01Z"}
+{"key": "sme:item-defs-actions", "status": "pending", "payload": {"goal": "Enrich item defs with inv_actions + ground_actions + equip slot join at rev 236", "targets": ["per-item inventory options and ground options (for OPOBJ) and equip slot"], "sources": ["local items.jsonl 13667 rows (id,name,examine,slot,flags) ALREADY REGISTERED", "items.pack (decode for action arrays) + equipment.pack ALREADY REGISTERED", "osrs-dumps build-236 item dump for actions[]"], "expected_schema": "contrib kind=item {cache_id,name,examine,stackable,equipable,slot,inv_actions,ground_actions,wiki_ref}", "already_have": ["items.jsonl + items.pack + equipment.pack registered as sources"], "out": "entity-kb/contrib.jsonl kind=item keyed item:<cache_id>; ground_actions map to OPOBJ1..5"}, "ts": "2026-07-12T06:56:01Z"}
+{"key": "sme:navigation-transport", "status": "pending", "payload": {"goal": "Structured transport network + tile collision for navigation/staging at rev 236", "targets": ["transports: teleports, fairy rings, spirit trees, canoes, quetzal, stairs, agility shortcuts with src/dst/code/reqs", "tile collision flags per staged region"], "sources": ["wikicli get on Transportation + Fairy ring + Spirit tree + Teleport pages (wiki-kb already has some travel refs: fairy-ring, spirit-tree, canoe, quetzal DONE)", "local collision/ + locs/ manifests ALREADY REGISTERED"], "expected_schema": "contrib kind=navigation nav_type=transport {method,src,dst,code,req_items,req_quests,req_skills} and nav_type=tile {region,x,y,plane,flags}", "already_have": ["collision + locs + map manifests registered", "wiki-kb travel refs: fairy-ring/spirit-tree/canoe/minigame-teleport/quetzal already DONE (dedupe against tools/wiki-kb/manifest.jsonl)"], "out": "entity-kb/contrib.jsonl kind=navigation"}, "ts": "2026-07-12T06:56:01Z"}
+{"key": "bg:bg-farm-allotment-setup", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:bg-farm-allotment-setup", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:farm-ranarr-patch", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:farm-ranarr-patch", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:farm-herb-patch-guam", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:farm-herb-patch-guam", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:pps-01-withdraw-compost-run", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:pps-01-withdraw-compost-run", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:pps-03-withdraw-herb-run", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:pps-03-withdraw-herb-run", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:gather-volcanic-ash", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:34Z"}
+{"key": "bg:gather-volcanic-ash", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:setup-ultracompost", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:setup-ultracompost", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:gather-monkfish", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:gather-monkfish", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:bootstrap-gather-guam_weed-prayer-pot-supply", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:bootstrap-gather-guam_weed-prayer-pot-supply", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-1", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-1", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-2", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-2", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-3", "status": "pending", "payload": null, "ts": "2026-07-12T06:59:35Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-3", "status": "claimed", "payload": null, "ts": "2026-07-12T06:59:36Z"}
+{"key": "bg:gather-volcanic-ash", "status": "done", "payload": null, "ts": "2026-07-12T07:02:29Z"}
+{"key": "bg:farm-herb-patch-guam", "status": "done", "payload": null, "ts": "2026-07-12T07:02:29Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-1", "status": "done", "payload": null, "ts": "2026-07-12T07:02:29Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-2", "status": "done", "payload": null, "ts": "2026-07-12T07:02:29Z"}
+{"key": "bg:chkpt-prayer-pot-supply-coarse-3", "status": "done", "payload": null, "ts": "2026-07-12T07:02:30Z"}
+{"key": "bg:pps-01-withdraw-compost-run", "status": "done", "payload": null, "ts": "2026-07-12T07:02:30Z"}
+{"key": "bg:setup-ultracompost", "status": "done", "payload": null, "ts": "2026-07-12T07:02:30Z"}
+{"key": "bg:bg-farm-allotment-setup", "status": "done", "payload": null, "ts": "2026-07-12T07:02:30Z"}
+{"key": "bg:bootstrap-gather-guam_weed-prayer-pot-supply", "status": "done", "payload": null, "ts": "2026-07-12T07:02:30Z"}
+{"key": "bg:pps-03-withdraw-herb-run", "status": "done", "payload": null, "ts": "2026-07-12T07:02:30Z"}
+{"key": "bg:gather-monkfish", "status": "done", "payload": null, "ts": "2026-07-12T07:02:31Z"}
+{"key": "bg:farm-ranarr-patch", "status": "done", "payload": null, "ts": "2026-07-12T07:02:31Z"}
+{"key": "sme:collision-flags-full", "status": "pending", "payload": {"goal": "Regenerate collision data as FULL 32-bit game collision flags (pathfinder-compatible) at rev 236", "why": "our collision/ pack is a reduced u16 (N/E/S/W walls, corners, full-block; see collision/manifest.json) but the BFS pathfinder consumes the full CollisionFlag vocabulary: projectile-blocker bank (0x200..0x20000), route-blocker bank (0x400000..0x40000000), FLOOR vs FLOOR_DECORATION, BLOCK_NPCS/BLOCK_PLAYERS/ROOF \u2014 cited blurite/pathfinder flag/CollisionFlag.kt", "targets": ["per-region per-plane IntArray of 32-bit flags computed from OpenRS2 2499 (build 236) map+locs, zone(8x8)-indexable"], "sources": ["OpenRS2 build-236 cache (id 2499) map squares + loc placements + XTEA keys (read-only HTTP)", "flag semantics reference: /home/lemon/scenario-capture/pathfinder-probe/src/main/kotlin/org/rsmod/pathfinder/flag/CollisionFlag.kt (ISC)", "extraction pipeline that produced assets/data/cache/collision (extend it rather than new tool)"], "expected_schema": "binary region blobs + manifest {format:'i32le per tile, y-major, full CollisionFlag vocab', regions:{...}} registered in entity-kb manifest; NOT per-tile contrib rows", "already_have": ["reduced u16 collision registered (cache-collision)", "pathfinder clone with authoritative flag tables"], "out": "new collision-full/ dataset + entity-kb/manifest.jsonl row"}, "ts": "2026-07-12T07:03:04Z"}
+{"key": "sme:navigation-transport", "status": "done", "payload": {"superseded": "payload refined after blurite/pathfinder evaluation (SME_NOTES.md #14); re-added below with door/plane-connector targets"}, "ts": "2026-07-12T07:03:19Z"}
+{"key": "sme:navigation-transport", "status": "done", "payload": {"superseded_by": "sme:navigation-transport-v2", "reason": "payload refined after blurite/pathfinder evaluation (SME_NOTES.md #14): added door/gate morph rows + plane connectors as targets; collision split to sme:collision-flags-full"}, "ts": "2026-07-12T07:03:30Z"}
+{"key": "sme:navigation-transport-v2", "status": "pending", "payload": {"goal": "Structured transport network + door/obstacle negotiation entities + tile collision for navigation/staging at rev 236", "targets": ["transports: teleports, fairy rings, spirit trees, canoes, quetzal, stairs, agility shortcuts with src/dst/code/reqs", "DOOR-LIKE locs: doors/gates/openable objects with Open/Close actions + closed<->open morph ids (from objects.pack + wiki) \u2014 the pathfinder lib (blurite/pathfinder, evaluated SME_NOTES #14) handles tile geometry ONLY; door negotiation is OUR planner layer and needs these rows", "plane connectors: stairs/ladders as loc rows with dst plane delta"], "sources": ["wikicli get on Transportation + Fairy ring + Spirit tree + Teleport pages (wiki-kb travel refs fairy-ring/spirit-tree/canoe/quetzal DONE \u2014 dedupe)", "local objects.pack for door/gate/stair defs ALREADY REGISTERED", "local collision/ + locs/ manifests ALREADY REGISTERED (NOTE: collision pack is reduced u16 \u2014 full 32-bit flags are a SEPARATE scope sme:collision-flags-full)"], "expected_schema": "contrib kind=navigation nav_type=transport {method,src,dst,code,req_items,req_quests,req_skills} | nav_type=door {loc_id,name,closed_id,open_id,actions,tiles} | nav_type=plane {loc_id,dst_plane_delta}", "already_have": ["collision+locs+map manifests registered", "wiki-kb travel refs done", "pathfinder capability boundary documented SME_NOTES.md #14"], "out": "entity-kb/contrib.jsonl kind=navigation"}, "ts": "2026-07-12T07:03:31Z"}
+{"key": "sme:leads-quest-steps", "status": "pending", "payload": {"goal": "Mine Quest Helper into machine-readable quest STEP SEQUENCES for checklist action lines", "lead_source_root": "github.com/Zoinkwiz/quest-helper (clone read-only; questhelpers/*.java)", "targets": ["per-quest ordered steps: {step_text, npc/object/item id, coord(x,y,plane), condition varbit/item gate}", "required + recommended items per quest", "skill/quest requirement gates"], "verification": "every contrib row MUST carry {lead_source:<repo/file>, verify_via:wiki:<page>|cache:<id>}; consolidation gates out rows where verified!=true. Truth order wiki->cache->sim. Public/open sources ONLY, no paid/SDN-ripped/cracked.", "verify_hint": "each step vs wiki <Quest>/Quick guide (many in wiki-kb) + entity id vs rev-236 cache", "expected_schema": "contrib kind=quest_step + LEAD ENVELOPE (SCHEMA.md); key quest:<slug>:step:<n>", "license": "open (RuneLite example-plugin lineage; verify LICENSE)", "out": "entity-kb/contrib.jsonl kind=quest_step"}, "ts": "2026-07-12T07:10:04Z"}
+{"key": "sme:leads-transport-graph", "status": "pending", "payload": {"goal": "Mine Shortest Path transport graph into navigation transport/door/obstacle EDGES (fills pathfinder gap)", "lead_source_root": "github.com/Skretzo/shortest-path (clone read-only; transports.tsv + destinations)", "targets": ["transport edges: fairy ring/spirit tree/glider/canoe/charter/teleport {src,dst,code,req_items,req_quests,req_skills}", "door/gate/shortcut edges {loc_id,name,src,dst,req}", "destination coord table"], "verification": "every contrib row MUST carry {lead_source:<repo/file>, verify_via:wiki:<page>|cache:<id>}; consolidation gates out rows where verified!=true. Truth order wiki->cache->sim. Public/open sources ONLY, no paid/SDN-ripped/cracked.", "verify_hint": "transport vs wiki Transportation/Fairy ring/etc + loc id vs rev-236 cache locs", "expected_schema": "contrib kind=navigation nav_type=transport|door|shortcut + LEAD ENVELOPE", "license": "open (RuneLite plugin; fork of Runemoro/shortest-path)", "synergy": "merges with sme:navigation-transport-v2; pathfinder handles tiles BETWEEN these edges (SME_NOTES #14)", "out": "entity-kb/contrib.jsonl kind=navigation"}, "ts": "2026-07-12T07:10:04Z"}
+{"key": "sme:leads-entity-metadata", "status": "pending", "payload": {"goal": "Cross-check bulk item/npc metadata from community DBs against our rev-236 packs (leads, not truth)", "lead_source_root": "github.com/0xNeffarion/osrsreboxed-db (maintained fork) + mejrs/data_osrs", "targets": ["item metadata id->name/slot/stats/drop-tables", "monster metadata id->combat/attributes"], "verification": "every contrib row MUST carry {lead_source:<repo/file>, verify_via:wiki:<page>|cache:<id>}; consolidation gates out rows where verified!=true. Truth order wiki->cache->sim. Public/open sources ONLY, no paid/SDN-ripped/cracked.", "verify_hint": "reconcile id vs our items.jsonl/npcs.pack (PRIMARY) + wiki; flag drift, do NOT duplicate what packs already have", "expected_schema": "contrib kind=item|npc enrichment + LEAD ENVELOPE; ONLY rows adding fields our packs lack", "license": "open (GPL-family; READ only)", "out": "entity-kb/contrib.jsonl (enrichment only)"}, "ts": "2026-07-12T07:10:04Z"}
+{"key": "sme:leads-method-setups", "status": "pending", "payload": {"goal": "Mine open-source bot scripts for METHOD SETUPS (gear/inventory/loop structure) as LEADS ONLY", "lead_source_root": "github.com/chsami/Microbot (BSD-2, open) + GitHub topic mirrors", "targets": ["method setups: gear loadout, inventory setup, banking routine, plotted path, loop STRUCTURE (repeating action sequence)", "concrete interaction patterns from Rs2* utils: object/npc/widget id + menu op"], "verification": "every contrib row MUST carry {lead_source:<repo/file>, verify_via:wiki:<page>|cache:<id>}; consolidation gates out rows where verified!=true. Truth order wiki->cache->sim. Public/open sources ONLY, no paid/SDN-ripped/cracked.", "verify_hint": "gear/items vs wiki + cache id; loop STRUCTURE ok but RATES/TIMING are confidence:low and go to measured/computed validation NOT wiki", "caution": "bot-origin -> strictly leads; nothing we build runs this against live (overlay-only rule)", "expected_schema": "contrib kind=method + LEAD ENVELOPE; rates carry confidence:low", "license": "2-Clause BSD (public)", "out": "entity-kb/contrib.jsonl kind=method"}, "ts": "2026-07-12T07:10:04Z"}
+{"key": "sme:leads-sdn-index", "status": "pending", "payload": {"goal": "Map each marketed RuneLite-shim/bot client's SDN / script-listing CONVENTION and harvest the OPEN mirrors + public listing METADATA", "why": "marketed clients expose a script repository/CDN with a manifest/listing convention; the rich game-interaction implementations there are harvestable where OPEN", "targets": ["first-party GOLD: github.com/runelite/plugin-hub manifest (plugins listed w/ rich interactions; BSD)", "Microbot script hub + in-repo scripts (chsami/Microbot, open)", "Simba/SRL open routines: github.com/Villavu/SRL-Development + WaspScripts listing (open OSRS interaction routines)", "public LISTING METADATA (name/author/category/described interactions) from DreamBot script list, RuneMate bot store, TRiBot repository, OSBot SDN \u2014 METADATA ONLY", "GitHub topic/org enumeration per client: topics dreambot/runemate/osbot/tribot/runescape-bots for OPEN-SOURCED script mirrors"], "verification": "every contrib row MUST carry {lead_source:<repo/file>, verify_via:wiki:<page>|cache:<id>}; consolidation gates out rows where verified!=true. Truth order wiki->cache->sim. Public/open sources ONLY, no paid/SDN-ripped/cracked.", "hard_limit": "harvest ONLY open-source script bodies + PUBLIC listing metadata; NEVER paid-SDN script source, NEVER cracked jars, NEVER auth-walled content", "expected_schema": "contrib kind=method|interaction + LEAD ENVELOPE with lead_source=<client>/<repo-or-listing-url>", "fetch": "git clone open repos read-only; WebFetch public listing pages", "out": "entity-kb/contrib.jsonl + a per-client SDN-convention note in SOURCES.md L7"}, "ts": "2026-07-12T07:10:04Z"}
+{"key": "lane5:items:pps-05-withdraw-brew", "status": "pending", "payload": {"from": "items:pps-05-withdraw-brew", "step_id": "pps-05-withdraw-brew", "flags": ["38, not 52)"], "proposed": [], "xrefs": ["npcs:pps-04-source-vials"]}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:items:pps-06-deposit-potions", "status": "pending", "payload": {"from": "items:pps-06-deposit-potions", "step_id": "pps-06-deposit-potions", "flags": ["base Prayer potion Recipe crafts a 3-dose potion (output1 = Prayer potion(3)), not (4) \u2014 a 4th dose only appears with amulet of chemistry (5% chance) or alchemist's amulet (15% chance) worn during mix"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:items:brew-prayer-potion", "status": "pending", "payload": {"from": "items:brew-prayer-potion", "step_id": "brew-prayer-potion", "flags": ["step says 'Requires Druidic Ritual and Herblore 52' \u2014 the wiki Recipe template states Herblore level 38 (skill1lvl=38), xp 87", "recipe mat1 is 'Ranarr potion (unf)' and mat2 'Snape grass' -> output 'Prayer potion(3)' \u2014 a 3-dose potion by default, not (4)", "supply_chains"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:items:cook-monkfish", "status": "pending", "payload": {"from": "items:cook-monkfish", "step_id": "cook-monkfish", "flags": ["step detail says 'Stop burning at 92 (68 with cooking gauntlets)' \u2014 the '68' figure does not match any column of the wiki's burn-stop table [ref: Cooking/Burn level, 'Affected by cooking gauntlets' ta"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:items:synth-tag-supply-prayer-pot-supply-14", "status": "pending", "payload": {"from": "items:synth-tag-supply-prayer-pot-supply-14", "step_id": "synth-tag-supply-prayer-pot-supply-14", "flags": [], "proposed": ["no new atomic step needed"], "xrefs": []}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:items:synth-tag-supply-food-monkfish-supply-15", "status": "pending", "payload": {"from": "items:synth-tag-supply-food-monkfish-supply-15", "step_id": "synth-tag-supply-food-monkfish-supply-15", "flags": [], "proposed": ["no new atomic step needed"], "xrefs": []}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:quests:quest-nature-spirit", "status": "pending", "payload": {"from": "quests:quest-nature-spirit", "step_id": "quest-nature-spirit", "flags": ["quest-xp wrong", "reqs incomplete"], "proposed": ["quest-restless-ghost"], "xrefs": []}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:quests:quest-druidic-ritual", "status": "pending", "payload": {"from": "quests:quest-druidic-ritual", "step_id": "quest-druidic-ritual", "flags": ["BRIEFING's own worked example (schema section iii) cites Kaqemeex at (2925,3486) \u2014 the wiki's actual {{Quest details|startmap=}} value is (2926,3484)"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:quests:quest-bone-voyage", "status": "pending", "payload": {"from": "quests:quest-bone-voyage", "step_id": "quest-bone-voyage", "flags": ["reqs incomplete"], "proposed": ["quest-dig-site"], "xrefs": []}, "ts": "2026-07-12T07:20:49Z"}
+{"key": "lane5:quests:quest-tale-of-arrav", "status": "pending", "payload": {"from": "quests:quest-tale-of-arrav", "step_id": "quest-tale-of-arrav", "flags": ["id/name mismatch confirmed", "reqs missing entirely", "quest-xp badly wrong"], "proposed": ["rename step_id to quest-tale-of-the-righteous"], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:quest-fairytale-1", "status": "pending", "payload": {"from": "quests:quest-fairytale-1", "step_id": "quest-fairytale-1", "flags": ["reqs", "quest-xp incomplete"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:quest-swan-song", "status": "pending", "payload": {"from": "quests:quest-swan-song", "step_id": "quest-swan-song", "flags": ["reqs incomplete \u2014 wiki also requires 100 Quest Points and completion of One Small Favour, Rune Mysteries, Shilo Village, Jungle Potion (Druidic Ritual already tracked), Garden of Tranquillity, Creatur", "quest-xp badly wrong"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:quest-mm", "status": "pending", "payload": {"from": "quests:quest-mm", "step_id": "quest-mm", "flags": ["reqs", "quest-xp badly wrong"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:quest-dt", "status": "pending", "payload": {"from": "quests:quest-dt", "step_id": "quest-dt", "flags": ["reqs incomplete \u2014 wiki also requires completion of The Dig Site, Temple of Ikov, The Tourist Trap, Troll Stronghold (+Death Plateau), and Waterfall Quest (Priest in Peril already tracked)"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:rfd-intro", "status": "pending", "payload": {"from": "quests:rfd-intro", "step_id": "rfd-intro", "flags": ["quest-xp wrong"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:rfd-goblins", "status": "pending", "payload": {"from": "quests:rfd-goblins", "step_id": "rfd-goblins", "flags": ["no {{Map}}/startmap coord found on this subpage for the Lumbridge Castle dining room start point \u2014 coords left empty rather than reused from a different room (Cook's Assistant kitchen is a distinct ro", "reqs incomplete", "quest-xp incomplete"], "proposed": ["quest-goblin-diplomacy"], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:rfd-mountain-dwarf", "status": "pending", "payload": {"from": "quests:rfd-mountain-dwarf", "step_id": "rfd-mountain-dwarf", "flags": ["existing step detail ('Prepare a Kelda stew using spiced stew with brown spice boosts", "reqs incomplete", "quest-xp incomplete"], "proposed": ["quest-fishing-contest"], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:rfd-awowogei", "status": "pending", "payload": {"from": "quests:rfd-awowogei", "step_id": "rfd-awowogei", "flags": ["reqs", "quest-xp badly wrong"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:quests:milestone-quest-mm", "status": "pending", "payload": {"from": "quests:milestone-quest-mm", "step_id": "milestone-quest-mm", "flags": ["this skill-gate has NO grounding in the quest's own |requirements= block \u2014 Monkey Madness I lists no skill-level requirement at all, only completion of The Grand Tree + Tree Gnome Village and 'ability"], "proposed": ["quest-grand-tree, quest-tree-gnome-village"], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:travel:steer-ardougne-easy-diary", "status": "pending", "payload": {"from": "travel:steer-ardougne-easy-diary", "step_id": "steer-ardougne-easy-diary", "flags": ["steer_points"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:travel:steer-graceful", "status": "pending", "payload": {"from": "travel:steer-graceful", "step_id": "steer-graceful", "flags": ["unlock_condition"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:50Z"}
+{"key": "lane5:travel:unlock-barrows", "status": "pending", "payload": {"from": "travel:unlock-barrows", "step_id": "unlock-barrows", "flags": ["existing unlock-barrows reqs"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:travel:unlock-gwd", "status": "pending", "payload": {"from": "travel:unlock-gwd", "step_id": "unlock-gwd", "flags": ["existing unlock-gwd reqs", "reqs"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-attack-43-4", "status": "pending", "payload": {"from": "training:synth-attack-43-4", "step_id": "synth-attack-43-4", "flags": [], "proposed": ["train-attack-43"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-attack-75-16", "status": "pending", "payload": {"from": "training:synth-attack-75-16", "step_id": "synth-attack-75-16", "flags": [], "proposed": ["train-attack-75"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-cooking-62-11", "status": "pending", "payload": {"from": "training:synth-cooking-62-11", "step_id": "synth-cooking-62-11", "flags": [], "proposed": ["train-cooking-62"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-defence-43-5", "status": "pending", "payload": {"from": "training:synth-defence-43-5", "step_id": "synth-defence-43-5", "flags": [], "proposed": ["train-defence-43"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-defence-75-18", "status": "pending", "payload": {"from": "training:synth-defence-75-18", "step_id": "synth-defence-75-18", "flags": [], "proposed": ["train-defence-75"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-farming-32-7", "status": "pending", "payload": {"from": "training:synth-farming-32-7", "step_id": "synth-farming-32-7", "flags": [], "proposed": ["train-farming-32"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-fishing-62-12", "status": "pending", "payload": {"from": "training:synth-fishing-62-12", "step_id": "synth-fishing-62-12", "flags": [], "proposed": ["train-fishing-62"], "xrefs": ["bg:gather-monkfish"]}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-herblore-52-9", "status": "pending", "payload": {"from": "training:synth-herblore-52-9", "step_id": "synth-herblore-52-9", "flags": [], "proposed": ["train-herblore-52"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-magic-50-1", "status": "pending", "payload": {"from": "training:synth-magic-50-1", "step_id": "synth-magic-50-1", "flags": [], "proposed": ["train-magic-50"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-magic-66-10", "status": "pending", "payload": {"from": "training:synth-magic-66-10", "step_id": "synth-magic-66-10", "flags": [], "proposed": ["train-magic-66"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-magic-75-20", "status": "pending", "payload": {"from": "training:synth-magic-75-20", "step_id": "synth-magic-75-20", "flags": [], "proposed": ["train-magic-75"], "xrefs": []}, "ts": "2026-07-12T07:20:51Z"}
+{"key": "lane5:training:synth-mining-22-8", "status": "pending", "payload": {"from": "training:synth-mining-22-8", "step_id": "synth-mining-22-8", "flags": [], "proposed": ["train-mining-22"], "xrefs": ["training:train-smithing-30"]}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:synth-ranged-75-19", "status": "pending", "payload": {"from": "training:synth-ranged-75-19", "step_id": "synth-ranged-75-19", "flags": [], "proposed": ["train-ranged-75"], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:synth-slayer-10-3", "status": "pending", "payload": {"from": "training:synth-slayer-10-3", "step_id": "synth-slayer-10-3", "flags": [], "proposed": ["train-slayer-10"], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:synth-smithing-45-13", "status": "pending", "payload": {"from": "training:synth-smithing-45-13", "step_id": "synth-smithing-45-13", "flags": [], "proposed": ["train-smithing-45"], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:synth-strength-75-17", "status": "pending", "payload": {"from": "training:synth-strength-75-17", "step_id": "synth-strength-75-17", "flags": [], "proposed": ["train-strength-75"], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:synth-woodcutting-36-6", "status": "pending", "payload": {"from": "training:synth-woodcutting-36-6", "step_id": "synth-woodcutting-36-6", "flags": [], "proposed": ["train-woodcutting-36"], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:train-attack-30", "status": "pending", "payload": {"from": "training:train-attack-30", "step_id": "train-attack-30", "flags": ["fixture xp=12,321 for the 10->30 band"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:train-attack-40", "status": "pending", "payload": {"from": "training:train-attack-40", "step_id": "train-attack-40", "flags": ["fixture xp=23,358 for 30->40"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:train-attack-60", "status": "pending", "payload": {"from": "training:train-attack-60", "step_id": "train-attack-60", "flags": ["fixture xp=250,384 for 40->60", "fixture claims 'Hill Giants or Flesh Crawlers' \u2014 the wiki's curated Melee-training page does NOT list Hill Giants at all, and Flesh Crawlers cap around combat lvl 28-41 in the Stronghold (already ctr-"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:train-attack-70", "status": "pending", "payload": {"from": "training:train-attack-70", "step_id": "train-attack-70", "flags": ["fixture xp=523,658 for 60->70"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:train-cooking-40", "status": "pending", "payload": {"from": "training:train-cooking-40", "step_id": "train-cooking-40", "flags": ["fixture xp=36,969 for 20->40"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:52Z"}
+{"key": "lane5:training:train-cooking-58", "status": "pending", "payload": {"from": "training:train-cooking-58", "step_id": "train-cooking-58", "flags": ["fixture xp=256,416 for 40->58"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-crafting-40", "status": "pending", "payload": {"from": "training:train-crafting-40", "step_id": "train-crafting-40", "flags": ["fixture xp=36,969 for 20->40"], "proposed": [], "xrefs": ["training:train-mining-15"]}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-defence-30", "status": "pending", "payload": {"from": "training:train-defence-30", "step_id": "train-defence-30", "flags": ["fixture xp=12,321 for 10->30"], "proposed": [], "xrefs": ["training:ctr-02-kill-cows"]}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-defence-40", "status": "pending", "payload": {"from": "training:train-defence-40", "step_id": "train-defence-40", "flags": ["fixture xp=23,358 for 30->40"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-defence-60", "status": "pending", "payload": {"from": "training:train-defence-60", "step_id": "train-defence-60", "flags": ["fixture xp=250,384 for 40->60"], "proposed": [], "xrefs": ["training:train-attack-60"]}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-defence-70", "status": "pending", "payload": {"from": "training:train-defence-70", "step_id": "train-defence-70", "flags": ["fixture xp=523,658 for 60->70"], "proposed": [], "xrefs": ["training:train-attack-70"]}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-farming-17", "status": "pending", "payload": {"from": "training:train-farming-17", "step_id": "train-farming-17", "flags": ["fixture xp=2,411 for 1->17"], "proposed": [], "xrefs": ["bg:setup-ultracompost"]}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-firemaking-50", "status": "pending", "payload": {"from": "training:train-firemaking-50", "step_id": "train-firemaking-50", "flags": ["fixture xp=97,433 for 30->50"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-fishing-40", "status": "pending", "payload": {"from": "training:train-fishing-40", "step_id": "train-fishing-40", "flags": ["fixture xp=36,969 for 20->40"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-fishing-58", "status": "pending", "payload": {"from": "training:train-fishing-58", "step_id": "train-fishing-58", "flags": ["fixture xp=256,416 for 40->58"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-magic-25", "status": "pending", "payload": {"from": "training:train-magic-25", "step_id": "train-magic-25", "flags": ["fixture xp=8,942 for 1->25"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-magic-43", "status": "pending", "payload": {"from": "training:train-magic-43", "step_id": "train-magic-43", "flags": ["fixture xp=55,649 for 25->43"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-magic-55", "status": "pending", "payload": {"from": "training:train-magic-55", "step_id": "train-magic-55", "flags": ["fixture xp=166,636 for 43->55"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:53Z"}
+{"key": "lane5:training:train-magic-70", "status": "pending", "payload": {"from": "training:train-magic-70", "step_id": "train-magic-70", "flags": ["fixture xp=737,627 for 55->70"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-prayer-22", "status": "pending", "payload": {"from": "training:train-prayer-22", "step_id": "train-prayer-22", "flags": ["fixture xp=4,470 for 1->22"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-prayer-43", "status": "pending", "payload": {"from": "training:train-prayer-43", "step_id": "train-prayer-43", "flags": ["fixture xp=49,909 for 22->43"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-prayer-52", "status": "pending", "payload": {"from": "training:train-prayer-52", "step_id": "train-prayer-52", "flags": ["fixture xp=116,688 for 43->52"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-prayer-74", "status": "pending", "payload": {"from": "training:train-prayer-74", "step_id": "train-prayer-74", "flags": ["fixture xp=1,210,421 for 52->74"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-ranged-40", "status": "pending", "payload": {"from": "training:train-ranged-40", "step_id": "train-ranged-40", "flags": ["fixture xp=36,969 for 30->40"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-ranged-55", "status": "pending", "payload": {"from": "training:train-ranged-55", "step_id": "train-ranged-55", "flags": ["fixture xp=166,636 for 40->55"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-ranged-70", "status": "pending", "payload": {"from": "training:train-ranged-70", "step_id": "train-ranged-70", "flags": ["fixture xp=737,627 for 55->70"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-smithing-40", "status": "pending", "payload": {"from": "training:train-smithing-40", "step_id": "train-smithing-40", "flags": ["fixture xp=36,969 for 30->40"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-strength-60", "status": "pending", "payload": {"from": "training:train-strength-60", "step_id": "train-strength-60", "flags": ["fixture xp=250,384 for 40->60"], "proposed": [], "xrefs": ["training:train-attack-60"]}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-strength-70", "status": "pending", "payload": {"from": "training:train-strength-70", "step_id": "train-strength-70", "flags": ["fixture xp=523,658 for 60->70"], "proposed": [], "xrefs": ["training:train-attack-70"]}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:training:train-woodcutting-30", "status": "pending", "payload": {"from": "training:train-woodcutting-30", "step_id": "train-woodcutting-30", "flags": ["fixture xp=13,363 for 15->30"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:54Z"}
+{"key": "lane5:npcs:pps-02-steal-ranarr-seeds", "status": "pending", "payload": {"from": "npcs:pps-02-steal-ranarr-seeds", "step_id": "pps-02-steal-ranarr-seeds", "flags": ["bad-marker -- existing step marker (3088,3255) 'Draynor Village' is close but not the Master Farmer's actual LocLine pin (3080,3250)"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "lane5:npcs:source-pineapples-charter", "status": "pending", "payload": {"from": "npcs:source-pineapples-charter", "step_id": "source-pineapples-charter", "flags": ["two discrepancies against the existing detail"], "proposed": [], "xrefs": ["bg:setup-ultracompost"]}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "lane5:npcs:train-thieving-20", "status": "pending", "payload": {"from": "npcs:train-thieving-20", "step_id": "train-thieving-20", "flags": ["bad-marker -- existing marker (3259,3266) labelled 'Lumbridge cows' is the known cross-domain bogus copy-paste (NPC 397 pattern flagged in the shared briefing)"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "lane5:npcs:synth-thieving-53-2", "status": "pending", "payload": {"from": "npcs:synth-thieving-53-2", "step_id": "synth-thieving-53-2", "flags": [], "proposed": ["replace synth-thieving-53-2 with a real bank row, e"], "xrefs": ["quests:quest-the-feud"]}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "lane5:bg:setup-ultracompost", "status": "pending", "payload": {"from": "bg:setup-ultracompost", "step_id": "setup-ultracompost", "flags": ["major discrepancy on both numbers AND the recipe shape"], "proposed": [], "xrefs": ["npcs:source-pineapples-charter"]}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "lane5:bg:bg-farm-allotment-setup", "status": "pending", "payload": {"from": "bg:bg-farm-allotment-setup", "step_id": "bg-farm-allotment-setup", "flags": [], "proposed": ["this step_id does not exist in steps"], "xrefs": []}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "lane5:bg:bootstrap-gather-guam_weed-prayer-pot-supply", "status": "pending", "payload": {"from": "bg:bootstrap-gather-guam_weed-prayer-pot-supply", "step_id": "bootstrap-gather-guam_weed-prayer-pot-supply", "flags": ["could not confirm specific monster drop sources (Hill Giants etc"], "proposed": ["no change to the id itself needed"], "xrefs": ["bg:farm-herb-patch-guam"]}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "lane5:bg:farm-ranarr-patch", "status": "pending", "payload": {"from": "bg:farm-ranarr-patch", "step_id": "farm-ranarr-patch", "flags": ["yield -- the step's detail claims '~6"], "proposed": [], "xrefs": []}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "lane5:xref-index", "status": "pending", "payload": {"note": "xref-only cross-pointers from W2 consolidation", "xrefs": {"items:chkpt-prayer-pot-supply-coarse-0": ["bg:setup-ultracompost"], "travel:milestone-gwd": ["travel:unlock-gwd"], "travel:milestone-barrows": ["travel:unlock-barrows"], "training:chkpt-combat-training-routing-1": ["npcs:chkpt-combat-training-routing-3"], "training:train-attack-10": ["training:ctr-01-kill-chickens"], "training:train-firemaking-30": ["training:train-woodcutting-30"], "bg:gather-volcanic-ash": ["training:synth-mining-22-8"], "bg:farm-herb-patch-guam": ["bg:bootstrap-gather-guam_weed-prayer-pot-supply"], "bg:chkpt-prayer-pot-supply-coarse-1": ["npcs:pps-02-steal-ranarr-seeds"], "bg:pps-01-withdraw-compost-run": ["npcs:source-pineapples-charter"], "travel:ref-minigame-teleport": ["travel:steer-graceful"], "travel:ref-quetzal-transport-system": ["travel:steer-graceful"]}}, "ts": "2026-07-12T07:20:55Z"}
+{"key": "wave3:dt-gwd-gates", "status": "pending", "payload": {"note": "WAVE-3 BRIEF (see study/EXTRAPOLATION.md \u00a73.1, gaps G2+G7). Ground the DT prerequisite chain AND the GWD quest gate in one pass \u2014 Troll Stronghold/Death Plateau serve both. Extract {{Quest details}} reqs/items/start + Walkthrough checklists per BRIEFING.md Part A discipline; contribute PROPOSED-ID rows quest-dig-site (minted), quest-temple-of-ikov, quest-death-plateau, quest-troll-stronghold, quest-waterfall; fix unlock-gwd quest_gate (Troll Stronghold partial) and the Str-60-OR-Agi-60 branch{} per travel:unlock-gwd flags.", "targets": ["quest-dt", "milestone-quest-dt", "unlock-gwd", "milestone-gwd", "quest-bone-voyage", "EXTRAPOLATION items 36, 89-92, 133"], "fetch": ["The Dig Site/Quick guide", "Temple of Ikov/Quick guide", "Death Plateau/Quick guide", "Troll Stronghold/Quick guide", "Waterfall Quest/Quick guide"], "have": ["The_Tourist_Trap_Quick_guide.s2", "Desert_Treasure_I_Quick_guide.s1", "Desert_Treasure_I_Quick_guide.s9", "Desert_Treasure_I.s1", "Desert_Treasure_I.s34", "God_Wars_Dungeon.s0", "God_Wars_Dungeon.s1", "Bone_Voyage_Quick_guide.s1", "Bone_Voyage.s1"], "prefix": "w3-dtgwd:", "done": "every target has a w3-dtgwd:* contribution or a blocked queue note; grep contrib.jsonl for w3-dtgwd: before starting"}, "ts": "2026-07-12T07:32:30Z"}
+{"key": "wave3:qp-spine-swansong", "status": "pending", "payload": {"note": "WAVE-3 BRIEF (EXTRAPOLATION.md \u00a73.2, gaps G3+G1). Swan Song's untracked prereq chain + the 100-QP threshold + Restless Ghost (also gates Nature Spirit; feeds Creature of Fenkenstrain). Extract reqs/items/start per quest; propose reqs.quests wiring for quest-swan-song per quests:quest-swan-song FLAG; model the QP threshold (currently unrepresentable in reqs \u2014 propose schema note, do not fabricate). PROPOSED-IDs: quest-restless-ghost (minted), quest-one-small-favour, quest-jungle-potion, quest-shilo-village, quest-garden-of-tranquillity, quest-creature-of-fenkenstrain.", "targets": ["quest-swan-song", "quest-nature-spirit", "gather-monkfish", "EXTRAPOLATION items 5, 98-102"], "fetch": ["The Restless Ghost/Quick guide", "One Small Favour/Quick guide", "Jungle Potion/Quick guide", "Shilo Village/Quick guide", "Garden of Tranquillity/Quick guide", "Creature of Fenkenstrain/Quick guide", "Quest points"], "have": ["Swan_Song_Quick_guide.s1", "Swan_Song_Quick_guide.s9", "Swan_Song.s1", "Swan_Song.s11", "Nature_Spirit.s1", "Nature_Spirit.s7", "Priest_in_Peril_Quick_guide.s1", "Piscatoris_Fishing_Colony.s1"], "prefix": "w3-qp:", "done": "all six quests + QP model contributed or blocked-queued; grep contrib.jsonl for w3-qp: first"}, "ts": "2026-07-12T07:32:30Z"}
+{"key": "wave3:gnome-mm1-gear", "status": "pending", "payload": {"note": "WAVE-3 BRIEF (EXTRAPOLATION.md \u00a73.3, gaps G4+G9). MM1's untracked prereqs + the scimitar gear ladder past mithril (shops unlock along the same quest spine). PROPOSED-IDs: quest-tree-gnome-village, quest-grand-tree (minted). Gear stops: rune scimitar via Zanaris shop (Jukat \u2014 StoreLine stock/price), dragon scimitar via Ape Atoll shop post-MM1 (Daga \u2014 StoreLine), wield levels from item pages; contribute buy/equip atoms per GRANULARITY (buy=gather kind, named vendor, non-GE). Also propose gear-stop rows at Attack 40/60 breakpoints referenced by ctr-03's re-visit note.", "targets": ["quest-mm", "milestone-quest-mm", "ctr-03-buy-scimitar", "synth-attack-43-4", "EXTRAPOLATION items 25, 84-88, 135"], "fetch": ["Tree Gnome Village/Quick guide", "The Grand Tree/Quick guide", "Jukat", "Daga's Scimitar Smithy", "Rune scimitar", "Dragon scimitar"], "have": ["Monkey_Madness_I_Quick_guide.s1", "Monkey_Madness_I_Quick_guide.s11", "Monkey_Madness_I.s1", "Monkey_Madness_I.s20", "Zanaris.s4", "Zeke's_Superior_Scimitars.s1", "Scimitar.s2", "Mithril_scimitar", "Maniacal_monkey"], "prefix": "w3-gnome:", "done": "both quests + 2 shops + wield-gate table contributed or blocked-queued; grep contrib.jsonl for w3-gnome: first"}, "ts": "2026-07-12T07:32:30Z"}
+{"key": "wave3:rfd-completion", "status": "pending", "payload": {"note": "WAVE-3 BRIEF (EXTRAPOLATION.md \u00a73.4, gap G5). Complete RFD to all 10 subquests \u2014 the Barrows-gloves reward needs the FULL chain + Culinaromancer (quests:quest-rfd-start flag). TEN grounding blobs are ALREADY FETCHED and unmined \u2014 extract reqs/items/kills/walkthrough from blobs first, fetch only the 2 missing pages. PROPOSED-IDs: rfd-pirate-pete, rfd-lumbridge-guide, rfd-evil-dave, rfd-skrach-uglogwee, rfd-sir-amik-varze, rfd-culinaromancer, quest-fishing-contest (minted), plus each subquest's prereq quests found in the blobs (only mint what a fetched page names).", "targets": ["quest-rfd-start", "rfd-goblins", "rfd-mountain-dwarf", "rfd-awowogei", "EXTRAPOLATION items 108-119"], "fetch": ["Recipe for Disaster/Freeing the Lumbridge Guide", "Fishing Contest/Quick guide"], "have": ["Recipe_for_Disaster_Freeing_Pirate_Pete", "Recipe_for_Disaster_Freeing_Evil_Dave", "Recipe_for_Disaster_Freeing_Skrach_Uglogwee", "Recipe_for_Disaster_Freeing_Sir_Amik_Varze", "Recipe_for_Disaster_Defeating_the_Culinaromancer", "Family_Crest", "Tai_Bwo_Wannai_Trio", "Rum_Deal", "Shadow_of_the_Storm", "Big_Chompy_Bird_Hunting", "Recipe_for_Disaster.s1", "Recipe_for_Disaster.s6", "Goblin_Diplomacy_Quick_guide.s3"], "prefix": "w3-rfd:", "done": "all 6 missing subquests + prereq map contributed or blocked-queued; grep contrib.jsonl for w3-rfd: first"}, "ts": "2026-07-12T07:32:30Z"}
+{"key": "wave3:morytania-prayer-pvm", "status": "pending", "payload": {"note": "WAVE-3 BRIEF (EXTRAPOLATION.md \u00a73.5, gaps G6 + G10-bones). Morytania PvM access + the Prayer supply spine, one region pass. (a) His Faithful Servants miniquest \u2014 the REAL Barrows crypt gate (travel:unlock-barrows flag); propose the missing step row. (b) Barrows Strategies section \u2014 brother order/kill methods per our loadout, mapMarkers. (c) Bones supply loop non-GE: where big/dragon bones come from at rate for Prayer 43\u219274; ground the altar branch \u2014 gilded altar (Construction ladder from Construction_training blob) vs Ectofuntus vs Chaos Temple, contribute branch{} alternatives per GRANULARITY \u00a73c.", "targets": ["unlock-barrows", "milestone-barrows", "train-prayer-43", "train-prayer-52", "train-prayer-74", "EXTRAPOLATION items 120-129"], "fetch": ["His Faithful Servants", "Barrows (Strategies section via sections+get)", "Blue dragon (bones source, only if the training blob names it)", "Gilded altar"], "have": ["Barrows.s0", "Barrows.s2", "Barrows.s3", "Ectofuntus", "Chaos_Temple_(hut).s1", "Construction_training", "Pay-to-play_Prayer_training.s1", "Pay-to-play_Prayer_training.s4", "Priest_in_Peril.s1"], "prefix": "w3-mory:", "done": "miniquest row + strategy notes + bones/altar branch contributed or blocked-queued; grep contrib.jsonl for w3-mory: first"}, "ts": "2026-07-12T07:32:30Z"}
+{"key": "wave3:agility-diary-kandarin", "status": "pending", "payload": {"note": "WAVE-3 BRIEF (EXTRAPOLATION.md \u00a73.6, gap G11). Kandarin steer pair: agility ladder + Ardougne Easy diary. (a) Biohazard \u2014 the real diary task-6 gate (travel:steer-ardougne-easy-diary flag corrected unlock_condition to Rune Mysteries + Biohazard + Thieving 5); Plague City blob already fetched as its prereq. (b) Rooftop ladder 10\u219260: per-course pages for start pins ({{Map}}) + level gates; marks rates stay ?? unless stated. (c) Propose the steps.jsonl agility rows the graceful steer implies (no agility train-* rows exist in the chain at all). Steer purchase gate is 260 marks exactly (Graceful_outfit.s1), NOT agility 60.", "targets": ["steer-graceful", "steer-ardougne-easy-diary", "EXTRAPOLATION items 69-74"], "fetch": ["Biohazard/Quick guide", "Al Kharid Rooftop Course", "Varrock Rooftop Course", "Canifis Rooftop Course", "Falador Rooftop Course", "Seers' Village Rooftop Course"], "have": ["Plague_City_Quick_guide.s2", "Rune_Mysteries_Quick_guide.s2", "Ardougne_Diary.s2", "Ardougne_Diary.s3", "Graceful_outfit.s1", "Marks_of_grace.s1", "Marks_of_grace.s9", "Rooftop_Agility_Course.s2", "Draynor_Village_Rooftop_Course.s0", "Draynor_Village_Rooftop_Course.s1", "Ardougne_Rooftop_Course.s0", "Agility_training"], "prefix": "w3-agi:", "done": "Biohazard + course ladder + proposed agility rows contributed or blocked-queued; grep contrib.jsonl for w3-agi: first"}, "ts": "2026-07-12T07:32:30Z"}
+{"key": "wave3:consumable-loops", "status": "pending", "payload": {"note": "WAVE-3 BRIEF (EXTRAPOLATION.md \u00a73.7, gap G10). Consumable supply loops the chain consumes but never produces \u2014 all four grounding training pages are ALREADY FETCHED, unmined; design each as a slot{}/RECURRING background row per SYNTHESIS S9 + GRANULARITY U7, non-GE only. (a) Feather\u2192arrow fletching loop for the Ranged ladder (feathers already produced by ctr-01). (b) Nature/law rune + alch-fodder loop for Magic 55 High Alch (what we alch must be gathered/produced \u2014 e.g. superheated bars from the Smithing lane; cite, do not assume). (c) GP model past early loot (StoreLine sell math from fetched shop blobs). Rates stay ?? unless a page states them.", "targets": ["train-ranged-30", "train-ranged-40", "train-ranged-55", "train-ranged-70", "train-magic-55", "train-magic-43", "EXTRAPOLATION items 65, 80-83, 144-145"], "fetch": ["only pages a fetched blob names as the concrete source (e.g. a specific rune source) \u2014 prefer mining the four blobs first"], "have": ["Fletching_training", "Runecraft_training", "Hunter_training", "Pay-to-play_Ranged_training.s4", "Pay-to-play_Ranged_training.s9", "Pay-to-play_Magic_training.s11", "Pay-to-play_Magic_training.s14", "Pay-to-play_Smithing_training.s7", "Chicken", "Lumbridge_General_Store.s1"], "prefix": "w3-loops:", "done": "3 loop rows (fletch/runes/gp) with PROPOSED-IDs contributed or blocked-queued; grep contrib.jsonl for w3-loops: first"}, "ts": "2026-07-12T07:32:30Z"}
+{"key": "wave3:cox-zeah-readiness", "status": "pending", "payload": {"note": "WAVE-3 BRIEF (EXTRAPOLATION.md \u00a73.8, gap G8). Zeah spine + endgame readiness. (a) Promote X Marks the Spot and Client of Kourend from study refs to tracked step rows (blobs fetched); wire them as reqs.quests of the RENAMED quest-tale-of-the-righteous (rename minted in quests:quest-tale-of-arrav \u2014 Tale of Arrav does not exist). (b) CoX raid-readiness: fetch the Chambers of Xeric Recommended/Items sections (page .s0/.s1 already cached \u2014 use sections first, fetch only the missing section numbers) and contribute the readiness spec for milestone-raids-cox. (c) NMZ entry requirements from the already-fetched Nightmare_Zone blob \u2014 grounds the 70s melee band's documented method.", "targets": ["quest-tale-of-arrav", "milestone-raids-cox", "train-attack-70", "train-strength-70", "train-defence-70", "EXTRAPOLATION items 130-132, 136-139"], "fetch": ["Chambers of Xeric \u2014 Recommended/Items sections only"], "have": ["X_Marks_the_Spot_Quick_guide.s1", "X_Marks_the_Spot_Quick_guide.s2", "Client_of_Kourend_Quick_guide.s2", "Client_of_Kourend.s1", "Client_of_Kourend.s2", "Tale_of_the_Righteous_Quick_guide.s1", "Tale_of_the_Righteous_Quick_guide.s3", "Tale_of_the_Righteous.s1", "Tale_of_the_Righteous.s7", "Chambers_of_Xeric.s0", "Chambers_of_Xeric.s1", "Nightmare_Zone", "Sand_Crab", "Pay-to-play_Melee_training.s6", "Pay-to-play_Melee_training.s7"], "prefix": "w3-cox:", "done": "2 promoted quest rows + rename wiring + CoX readiness + NMZ reqs contributed or blocked-queued; grep contrib.jsonl for w3-cox: first"}, "ts": "2026-07-12T07:32:31Z"}

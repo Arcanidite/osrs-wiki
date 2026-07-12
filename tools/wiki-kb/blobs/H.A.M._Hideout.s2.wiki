@@ -1,0 +1,4 @@
+==Notable features==
+*With 15 [[Thieving]], a player may [[pickpocket]] [[H.A.M. members]] for [[H.A.M. clothing]] and other items (including [[Clue scroll (easy)|easy clue scrolls]]).
+*If a player is caught thieving H.A.M. members multiple times, there is a chance that said player will be either kicked out of the dungeon or be locked up in the cell with Jimmy the Chisel, which will require the player to lockpick the door to exit. [[Home Teleport]] and other teleports can be used to escape.
+*If a player has a high [[Agility]] level, and/or is wearing a full set of H.A.M. robes ([[H.A.M. shirt|shirt]], [[H.A.M. robe|robe]], [[H.A.M. hood|hood]], [[H.A.M. cloak|cloak]], [[H.A.M. logo|logo]], [[H.A.M. boots|boots]] and [[H.a.m. gloves|gloves]].), the player is less likely to be kicked out when caught pickpocketing [[H.A.M._Member#Getting_thrown_out|H.A.M. Members]].

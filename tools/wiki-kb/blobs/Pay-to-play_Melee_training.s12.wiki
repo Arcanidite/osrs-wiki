@@ -1,0 +1,16 @@
+=== Levels 30 to 81: Ogres ===
+{{Melee training monster
+|name = [[Ogre]]
+|locations = East of [[Castle Wars]], West of [[Yanille]]
+|combat = 53
+|hitpoints = 60
+|requirements = None
+|recommendations = Armour and food for low defence levels.
+|advantages = *Drops valuable seeds
+*Very high health targets with low [[Defence]] and [[Attack]] ability
+*High in number, easy to group and kill in groups
+*Automatic aggro, meaning there are many AFK spots
+|disadvantages = * Often crowded
+* Popular spot for farming with a Cannon
+*Stops aggro after 10 minutes. Must be reset by walking away and coming back. The distance required to reset their aggro status fluctuates but usually stays between 1 and 15 tiles. There are instances where it is further away
+}}

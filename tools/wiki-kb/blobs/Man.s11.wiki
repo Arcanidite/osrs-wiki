@@ -1,0 +1,7 @@
+===Pickpocket chance===
+{{Skilling success chart|label=Man pickpocket chance
+|label1=Normal|low1=180|high1=240|req1=1|color1=gray|image1=Thief Man.png
+|label2=Gloves of silence|low2=189|high2=252|req2=1|color2=darkblue|image2=Gloves of silence.png
+|label3=Ardougne Diary|low3=198|high3=264|req3=1|color3=black|image3=Ardougne cloak 3.png
+|label4=Thieving cape + Ardougne Diary|low4=217|high4=290|req4=99|color4=purple|image4=Thieving cape.png
+}}

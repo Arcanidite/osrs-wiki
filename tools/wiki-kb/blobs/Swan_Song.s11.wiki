@@ -1,0 +1,17 @@
+==Rewards==
+{{Quest rewards
+|name = Swan Song
+|image = [[File:Swan Song reward scroll.png|centre]]
+|qp = 2
+|rewards = *{{SCP|Magic|15,000}} [[Magic]] [[experience]]
+*{{SCP|Prayer|10,000}} [[Prayer]] experience
+*{{SCP|Fishing|50,000}} [[Fishing]] experience
+*25,000 [[coins]]
+*Access to the [[Piscatoris Fishing Colony]]
+**The ability to fish [[raw monkfish|monkfish]]
+**The ability to use [[Skeleton Mage]]s for training
+**Use [[Kathy Corkat]]'s boat for free
+*Access to the following items from [[Malignius Mortifer]] upon request:
+**A [[brown apron]]
+**[[Bone seeds]] (requires an [[airtight pot]])
+}}

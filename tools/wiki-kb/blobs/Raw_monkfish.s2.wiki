@@ -1,0 +1,4 @@
+===Fishing chance===
+{{Skilling success chart|label=Monkfish fishing chance|showbefore=no
+|label1=Raw monkfish|low1=48|high1=90|req1=62|color1=saddlebrown|image1=Raw monkfish.png
+}}

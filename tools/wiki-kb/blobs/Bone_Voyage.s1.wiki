@@ -1,0 +1,30 @@
+==Details==
+{{Quest details
+|start = Talk to [[Curator Haig Halen]] in the [[Varrock Museum]].
+|startmap = 3260,3450
+|difficulty = Intermediate
+|description = Curator Haig Halen needs your help to finish the construction of a barge fit to take the Varrock museum crew to an unexplored landmass to the east. There have been many attempts to reach the island, but none were successful.
+
+This quest will have you venturing across Gielinor, aiding the Varrock museum and making the success of the voyage a possibility.
+|length = Short
+|requirements = 
+*100 [[Kudos]]
+*Completion of the following quest:
+**[[The Dig Site]]
+|items = 
+*2 [[vodka]]
+*[[Marrentill potion (unf)]]
+|recommended = 
+*Fast travel to the [[Digsite]] ([[Digsite teleport]] or [[Digsite pendant]]; 3-4 teleports recommended)
+*Fast travel to the [[Lumber Yard]] (short walk from the Digsite or use a [[Lumberyard teleport]] — alternatively, use the [[Balloon Transport System]], costing a [[Willow Log]] per flight; 2 teleports recommended)
+*Fast travel to the [[Woodcutting Guild]] ([[Skills necklace]] or [[Xeric's talisman]] to Xeric's Lookout)
+*Fast travel to [[Varrock]] ([[Varrock teleport]])
+*Fast travel to reach [[Port Sarim]] ([[Amulet of glory]] or [[Explorer's ring 2]])
+
+'''Post-quest recommended:'''
+*An [[iron bar]], 2 [[oak plank]]s, 5 [[nails]] and a [[hammer]] if you want to build the [[bank chest]] on [[Fossil Island]] ('''Note:''' This requires 21 [[Construction]])
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

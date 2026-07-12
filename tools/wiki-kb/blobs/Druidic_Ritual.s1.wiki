@@ -1,0 +1,20 @@
+==Details==
+{{Quest details
+|start = Talk to [[Kaqemeex]] in the stone circle north of [[Taverley]].
+|startmap = 2926,3484
+|difficulty = Novice
+|description = The Druids north of Taverley need help making a potion to reclaim the stone circle south of Varrock.
+|length = Very Short
+|items = 
+*[[Raw bear meat]]
+*[[Raw rat meat]]
+*[[Raw beef]]
+*[[Raw chicken]]
+|recommended = 
+*{{SCP|Combat|10|link=yes}}
+|kills = [[Suit of armour]] (level 19) (can be avoided)
+|ironman =
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

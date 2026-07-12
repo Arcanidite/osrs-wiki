@@ -1,0 +1,68 @@
+===Levels 30–99: Cooked karambwan===
+''Completion of the quest [[Tai Bwo Wannai Trio]] is required to successfully cook karambwan.''
+
+[[File:Tick manipulation - Cooking.gif|thumb|1-tick cooking karambwan.]]
+1-tick cooking [[Raw karambwan|karambwan]] provides the fastest Cooking experience. Karambwan can be cooked without tick delay by holding down 1 or space and rapidly using raw karambwan on a fire or range. This requires a lot of click accuracy and can be difficult to do consistently for long periods of time. Without tick manipulation this method offers much lower experience rates and is only recommended as a cheap low-effort alternative.
+
+Using one of the cooking locations right next to a bank offers the fastest experience rates for 1-ticking karambwan. These are located in [[Rogues' Den]], [[Myths' Guild]], and in the inner part of [[Mor Ul Rek]]. The [[Hosidius kitchen]] is not recommended for 1-ticking due to the increased distance to the bank, which will result in around 10–20% lower experience rates and make mistakes much more likely. Cooking gauntlets do not affect the burn rate for karambwan.
+
+Without tick manipulation the Hosidius kitchen is the best option up to level 96. The lower burn rate outweighs the faster cooking rate of Rogues' Den when not using tick manipulation, since the longer banking time will have less effect on experience rates at a lower cooking speed compared to 1-ticking. Completing the [[elite Kourend & Kebos Diary]] at level 79 is recommended for further decreased burn rates. At level 96, use one of the cooking locations right next to a bank for faster experience rates.
+
+The experience rates for 1-ticking assume using the Rogues' Den fire and cooking 5,000 karambwan per hour. At maximum efficiency, it is possible to cook up to 5,470 karambwan per hour. The AFK rates assume cooking 1,385 karambwan per hour at the Hosidius kitchen up to level 96 and 1,435 karambwan per hour in the Rogues' Den afterwards.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+!{{SCP|Cooking}} level
+!XP/h (1t)
+!XP/h (AFK)
+|-
+|30
+|464,000
+|141,000
+|-
+|40
+|534,000
+|160,000
+|-
+|50
+|605,000
+|180,000
+|-
+|60
+|672,000
+|198,000
+|-
+|70
+|742,000
+|218,000
+|-
+|80
+|813,000
+|251,000
+|-
+|90
+|883,000
+|263,000
+|-
+|99
+|950,000
+|273,000
+|}
+
+The below table shows the profit from level 30 to 99. The numbers for 1-ticking assume using the Rogues' Den fire, and the numbers for AFK assume using the Hosidius kitchen up to level 96 and the Rogues' Den fire afterwards.
+
+{|class="wikitable align-left-1 align-center-2" style="text-align:right;"
+!Method
+!{{plinkp|Raw karambwan}} needed
+!Profit total
+!GP/XP
+|-
+|1-tick
+|75,185
+|{{Coins|({{GEP|Cooked karambwan}}*68532-{{GEP|Raw karambwan}}*75185)}}
+|{{Coins|({{GEP|Cooked karambwan}}*68532-{{GEP|Raw karambwan}}*75185)/13021068}}
+|-
+|AFK
+|71,289
+|{{Coins|({{GEP|Cooked karambwan}}*68532-{{GEP|Raw karambwan}}*71289)}}
+|{{Coins|({{GEP|Cooked karambwan}}*68532-{{GEP|Raw karambwan}}*71289)/13021068}}
+|}

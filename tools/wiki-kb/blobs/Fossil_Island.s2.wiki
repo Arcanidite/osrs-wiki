@@ -1,0 +1,4 @@
+===Digsite pendant===
+The fastest way to travel to Fossil Island is to use a [[digsite pendant]], which will teleport the player near the barge at the Digsite, where they can fast travel to the [[Museum Camp]] by speaking to the [[barge guard]]. 
+[[File:Magic_Mushtree_map.png|thumb|200px|A map showing the locations of the magic mushtrees.]]
+The pendant can be used on the southernmost [[Strange Machine|strange machine]] inside the [[House on the Hill]], north-east of the Museum Camp, to unlock the 'Fossil Island' (or house) teleport option. There is also a [[Mycelium Transportation System|magic mushtree]] at the house that utilises the [[Mycelium Transportation System]]; this system of magic mushtrees allows transportation around Fossil Island, but in order to access them, they must be discovered by walking to their locations first and attempting to use them.

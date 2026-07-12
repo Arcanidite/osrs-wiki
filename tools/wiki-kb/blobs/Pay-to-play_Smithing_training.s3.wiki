@@ -1,0 +1,93 @@
+===Levels 1–40: Anvil smithing===
+From level 1 to 40, smith various items at the anvil just south of the west [[Varrock]] bank. Make the highest-level item available for the fastest experience rates. Higher-levelled items require more than one bar to make, fewer actions will be required and this will result in more experience per hour. This will result in a loss, but the overall loss is relatively small as reaching level 40 would only take less than an hour.
+
+The items and materials needed to reach level 40 are shown in the table below. While there are some items which are potentially cheaper to make, these low-level items are uncommonly traded on the Grand Exchange and their prices fluctuate a lot. Players who wish to save money are advised to do quests that give Smithing experience to skip most of the early levels.
+
+{| class="wikitable align-center-1 align-center-2 align-center-3"
+!Levels
+!XP needed
+!colspan="2" | Item
+!Bars required (each)
+!XP each
+!XP/h
+!# for goal
+!Bars required (total)
+!Profit
+|-
+|1–5
+|388
+|{{plinkt|Bronze dagger}}
+|1
+|12.5
+|13,900
+|32
+|32 {{plink|Bronze bar}}
+|{{Coins|({{GEP|Bronze dagger|32}} - {{GEP|Bronze bar|32}})}}
+|-
+|5–9
+|581
+|{{plinkt|Bronze scimitar}}
+|2
+|25
+|25,700
+|24
+|48 {{plink|Bronze bar}}
+|{{Coins|({{GEP|Bronze scimitar|24}} - {{GEP|Bronze bar|48}})}}
+|-
+|9–18
+|2,554
+|{{plinkt|Bronze warhammer}}
+|3
+|37.5
+|36,200
+|69
+|207 {{plink|Bronze bar}}
+|{{Coins|({{GEP|Bronze warhammer|69}} - {{GEP|Bronze bar|207}})}}
+|-
+|18–24
+|3,505
+|{{plinkt|Bronze platebody}}
+|5
+|62.5
+|52,100
+|57
+|285 {{plink|Bronze bar}}
+|{{Coins|({{GEP|Bronze platebody|57}} - {{GEP|Bronze bar|285}})}}
+|-
+|24–33
+|11,219
+|{{plinkt|Iron warhammer}}
+|3
+|75
+|72,300
+|150
+|450 {{plink|Iron bar}}
+|{{Coins|({{GEP|Iron warhammer|150}} - {{GEP|Iron bar|450}})}}
+|-
+|33–39
+|15,401
+|{{plinkt|Iron platebody}}
+|5
+|125
+|104,200
+|124
+|620 {{plink|Iron bar}}
+|{{Coins|({{GEP|Iron platebody|124}} - {{GEP|Iron bar|620}})}}
+|-
+|39–40
+|3,756
+|{{plinkt|Steel warhammer}}
+|3
+|112.5
+|108,500
+|34
+|102 {{plink|Steel bar}}
+|{{Coins|({{GEP|Steel warhammer|34}} - {{GEP|Steel bar|102}})}}
+|-
+!1–40
+!37,224
+!{{NA||colspan=6}}
+!572 {{plink|Bronze bar}}, 1,070 {{plink|Iron bar}},<br />
+and 102 {{plink|Steel bar}}
+!{{Coins|({{GEP|Bronze dagger|32}}+{{GEP|Bronze scimitar|24}}+{{GEP|Bronze warhammer|69}}+{{GEP|Bronze platebody|57}}+{{GEP|Iron warhammer|150}}+{{GEP|Iron platebody|124}}+{{GEP|Steel warhammer|34}}) - ({{GEP|Bronze bar|572}}+{{GEP|Iron bar|1070}}+{{GEP|Steel bar|102}})}}
+|}

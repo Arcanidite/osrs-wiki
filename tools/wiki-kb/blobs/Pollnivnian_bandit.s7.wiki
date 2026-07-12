@@ -1,0 +1,13 @@
+===Pollnivnian Bandit===
+{{Thieving info
+|version = No beard
+|name = Bandit (no beard)
+|level = 55
+|xp = 84.3
+|type = Pickpocket
+|tool = [[Blackjack]]
+|dropversion = No beard
+}}
+{{DropsTableHead|dropversion=No beard}}
+{{DropsLineSkill|name=Coins|quantity=50|rarity=Always|skill=Thieving}}
+{{DropsTableBottom}}

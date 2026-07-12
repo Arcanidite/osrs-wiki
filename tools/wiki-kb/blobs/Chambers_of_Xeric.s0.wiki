@@ -1,0 +1,27 @@
+{{redirect|Chambers|Chamber (disambiguation)}}
+{{Safe activity|instance=true}}
+{{HasStrategy}}
+{{Infobox Activity
+|name = Chambers of Xeric
+|image = [[File:Chambers of Xeric logo.png|250px]]
+|release = [[5 January]] [[2017]]
+|update = Chambers of Xeric
+|aka = Raids 1, CoX, Chambers
+|type = Raid
+|members = Yes
+|location = [[Mount Quidamortem]]
+|players = 1-100
+|skills = [[Combat]], [[Mining]], [[Woodcutting]], [[Herblore]], [[Farming]], [[Hunter]], [[Cooking]], [[Fishing]], [[Thieving]], [[Firemaking]], [[Agility]]
+|currency = N/A
+|tutorial = No
+|music = [[Lower Depths]], [[Upper Depths]], [[Fire in the Deep]]
+|map = {{Map|name=Chambers of Xeric|1245,3557|zoom=2}}
+|leagueRegion = Kourend
+}}
+The '''Chambers of Xeric''' is a [[raid]] located within a sprawling cave system beneath [[Mount Quidamortem]] in the [[Kebos Lowlands]]. It was the first raid introduced to ''[[Old School RuneScape]]''.
+
+Long ago, [[Xeric]] and some of his followers travelled to the mountain after his exile from the kingdom of [[Great Kourend]]. The Chambers themselves and the now-ruined temple that sits above them were built by Xeric's personal artisan, [[Tekton]]. The experiments conducted within the Chambers resulted in, among many other things, the creation of the [[Muttadile]], an attempted coup by Xeric's [[Vasa Nistirio|High Priest]] (which resulted in Xeric ordering the destruction of the temple), and accidentally letting in [[Vespula|a powerful Abyssal creature]].
+
+Even after Xeric took the power he sought within the Chambers, the caves still house the results of his many experiments, with [[Great Olm|the Guardian in the Deep]] Xeric himself fought against now protecting the weapons and armour he had created.
+
+[[Ironman_Mode|Ironmen]] are eligible for rewards from the raid when completing it alongside other players. [[Group Ironman Mode|Group ironman players]] will lose their [[Group Ironman Mode#Prestige|prestige]] upon entering the raid with a player outside of their group.

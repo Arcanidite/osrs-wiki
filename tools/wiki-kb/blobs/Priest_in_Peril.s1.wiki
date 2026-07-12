@@ -1,0 +1,21 @@
+==Details==
+{{Quest details
+|description = Recently contact has been lost with the temple to Saradomin on Misthalins' Eastern border. [[King Roald]] would be very interested to know what has caused this lack of communication, and seeks an adventurer willing to report back to him on the situation.
+|start = Talk to [[King Roald]] in the [[Varrock Palace]].
+|startmap = 3221,3473
+|difficulty = Novice
+|length = Short
+|members = Yes
+|items = * 50 unnoted [[rune essence]] or [[pure essence]] (can be mined by talking to [[Aubury]] in [[Varrock]], after completing [[Rune Mysteries]]. All 50 essence do not have to be of the same type) (does not needed to be handed in all at once; multiple trips can be made.)
+* [[Bucket]] (obtainable during the quest from Varrock general store for 2 coins)
+|recommended = * {{SCP|Combat|15|link=yes}}
+* [[Essence pouch]]es - optional, but helps to carry more essence.
+* [[Food]] (recommended for low levels)
+* 3 [[Varrock teleport]]s
+* [[Stamina potion]]s or [[Super energy|(super)]] [[energy potion]]s
+|kills = * [[Temple guardian]] dog ''(level 30) - can be safespotted or flinched, immune to [[Magic]]
+* [[Monk of Zamorak]] ''(level 30) - can be safespotted or flinched''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

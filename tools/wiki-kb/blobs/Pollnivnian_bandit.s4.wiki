@@ -1,0 +1,17 @@
+==Blackjacking==
+The probability to successfully knock out a bandit is independent of the blackjack used, and the same for both types of bandit (as well as for [[Menaphite Thug]]s). Knocking out either bandit rewards 10 Thieving experience.
+
+If the player has [[line of sight]] to a second bandit when attempting to knock one out, they will be unable to, with a chat message stating {{mes|Perhaps I shouldn't do this here, I think another bandit will see me.}} Attempting to knock them out while in combat also fails, producing the message {{mes|You can't knock-out the bandit during combat.}}
+
+{{DropLogProject|kills=30857735|success=yes}}
+
+{{Skilling success chart
+|label=Knock-Out chance
+|showbefore=no
+|label1=Bandit
+|low1=80
+|high1=240
+|req1=45
+|color1=darkgoldenrod
+|image1=Willow blackjack.png
+}}

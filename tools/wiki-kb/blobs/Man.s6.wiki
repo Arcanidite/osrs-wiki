@@ -1,0 +1,5 @@
+===Herbs===
+{{HerbDropTableInfo|23/128}}
+{{DropsTableHead}}
+{{HerbDropLines|23/128|f2p=yes}}
+{{DropsTableBottom}}

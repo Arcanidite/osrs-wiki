@@ -1,0 +1,19 @@
+==Yield==
+The amount of ash obtained is scaled to the player's [[Mining]] level, starting with one ash at level 22 and increasing by one for every 15 levels above 22, to a maximum of six ash at 97 (boosts can be used). [[Mining enhancers]] '''do not''' affect the yield when mining volcanic ash.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/906484443271061504|date=9 September 2017|archiveurl=https://reldo.runescape.wiki/i/107714|archivedate=25 May 2020|quote=[Do Varrock armor, mining cape and mining gloves affect mining volcanic ash?] No.}} At high Mining levels, it is possible to obtain over 6,500 ash per hour.
+
+{| class="wikitable" style="text-align:center;"
+|-
+! {{SCP|Mining}} level !! Ash obtained
+|-
+| 22 || 1
+|-
+| 37 || 2
+|-
+| 52 || 3
+|-
+| 67 || 4
+|-
+| 82 || 5
+|-
+| 97 || 6
+|}

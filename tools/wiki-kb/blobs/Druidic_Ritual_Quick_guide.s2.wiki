@@ -1,0 +1,8 @@
+==Walkthrough==
+[[File:Cauldron of Thunder location.png|[[Cauldron of Thunder]] location.|thumb]]
+{{Checklist|* Talk to [[Kaqemeex]] in the stone circle north of [[Taverley]]. {{Chat option|2I'm in search of a quest.|1Okay, I will try and help.}}
+* Talk to [[Sanfew]], who is upstairs in the Herb shop in Taverley. {{Chat option|1I've been sent to help purify the Varrock stone circle.|2Ok, I'll do that then.}}
+* Bring the four meats to the [[Cauldron of Thunder|Cauldron]] in [[Taverley Dungeon]], and use them on the Cauldron to enchant them.
+* Talk to [[Sanfew]].
+* Talk to [[Kaqemeex]].
+* '''Congratulations, quest complete!'''}}

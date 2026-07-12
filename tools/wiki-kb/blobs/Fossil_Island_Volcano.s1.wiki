@@ -1,0 +1,13 @@
+==Rocks==
+{| class="wikitable sortable align-center-1 align-left-2" style="text-align:right;"
+! rowspan=2 colspan=2 | Rock
+! colspan=2 | {{SCP|Mining}} [[Mining]]
+! rowspan=2 | Quantity
+|-
+!Level
+!Exp
+|-
+|{{plinkp|Volcanic ash}}||[[Ash pile|Volcanic ash]]
+|22||10||15
+|-
+|}

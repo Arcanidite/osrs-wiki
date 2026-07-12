@@ -1,0 +1,12 @@
+===Rewards===
+----
+{{Quest rewards
+|name = Recipe for Disaster/Freeing King Awowogei
+|image = [[File:Recipe for Disaster (Freeing King Awowogei) reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Cooking|10,000}} [[Cooking]] experience
+*{{SCP|Agility|10,000}} [[Agility]] experience
+*[[Ape Atoll Teleport (standard)|Ape Atoll Teleport]] spell
+*Further access to the [[Culinaromancer's Chest]]
+}}</onlyinclude>

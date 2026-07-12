@@ -1,0 +1,70 @@
+==Locations==
+
+{| class="wikitable lighttable align-center-1" style="width:1000px;max-width:100%"
+!style="width:25%;" |Location
+!style="width:55%;" |Closest teleports
+!class="unsortable" |Map
+|-
+|South of [[Falador]]
+|
+*[[Explorer's ring 2]]-[[Explorer's ring 4|4]]
+*[[Spirit tree (Farming)|Spirit tree]] at Port Sarim (requires 83 farming to plant)
+*[[Ring of the elements]] (air altar)
+*[[Amulet of glory]] (Draynor Village)
+|{{Map|3056, 3312|r=2.5|mtype=square|height=212|width=212}}
+|-
+|West of [[Port Phasmatys]]
+|
+*[[Fairy rings|Fairy ring]] (ALQ)
+*[[Ectophial]] teleport
+*[[Fenkenstrain's Castle Teleport|Fenkenstrain's Castle teleport]] (Arceuus spellbook)
+*[[Morytania legs]] teleport
+|{{Map|3610, 3522|r=2.5|mtype=square|height=212|width=212}}
+|-
+|North of [[East Ardougne|Ardougne]]
+|
+*[[Ardougne cloak 2]]-[[Ardougne cloak 4|4]]
+*[[Combat bracelet]] (Ranging Guild)
+*[[Ardougne Teleport|Ardougne teleport]]
+*[[Quest cape teleport]]
+*[[Fairy rings|Fairy ring]] (BLR)
+|{{Map|2661, 3375|r=2.5|mtype=square|height=212|width=212}}
+|-
+|North of [[Catherby]]
+|
+*[[Catherby Teleport]]
+*[[Camelot Teleport]]
+*[[Achievement diary cape#Teleports|Achievement cape]] teleport (Flax keeper)
+|{{Map|2804, 3464|r=2.5|mtype=square|height=212|width=212}}
+|-
+|South-west of [[Hosidius]]<br/><br/>''There is a '''non-functional''' compost bin north of Tithe Farm which can cause confusion. Its examine text reads "It's full of compost."
+|
+*[[Xeric's talisman]] glade teleport
+*[[Construct. cape|Construction cape]] / [[Max cape]] teleport
+*[[Tithe Farm]] Minigame teleport
+*[[Spirit tree (Farming)|Spirit tree]] at Hosidius (requires 83 farming to plant)
+|{{Map|1730, 3558|r=2.5|mtype=square|height=212|width=212}}
+|-
+|[[Farming Guild]] beginners wing<br/><br/>''This is a [[Big Compost Bin]], which can hold double the amount of compostable items, and thus double the amount of compost.
+|
+*[[Skills necklace]]
+*[[Farming cape]] / [[Max cape]]
+*[[Spirit tree (Farming)|Spirit tree]] at Farming Guild (requires 83 farming to plant)
+|{{Map|1272,3730|r=2.5|mtype=square|height=212|width=212}}
+|-
+|North-east [[Prifddinas]]
+|
+*[[Spirit tree]]
+*[[Teleport crystal]] / [[Eternal teleport crystal]]
+*[[Construct. cape|Construction cape]] / [[Max cape]] teleport
+|{{Map|3287, 6100|r=2.5|mtype=square|mapID=29|height=212|width=212}}
+|-
+|West of [[Civitas illa Fortis]]
+|
+*[[Civitas illa Fortis Teleport]]
+*[[Quetzal whistle|Quetzal Whistle]] (Hunter Guild)
+*[[Hunter cape]] / [[Max cape]]
+*[[Fairy rings|Fairy ring]] (AJP)
+|{{Map|1588, 3103|r=2.5|mtype=square|height=212|width=212}}
+|-
+|}

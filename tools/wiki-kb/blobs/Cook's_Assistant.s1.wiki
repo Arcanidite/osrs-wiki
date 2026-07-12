@@ -1,0 +1,19 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Cook (Lumbridge)|Cook]] in the kitchen of [[Lumbridge Castle]].
+|startmap = 3208,3214
+|difficulty = Novice
+|description = The Lumbridge Castle cook is in a mess. It is the Duke of Lumbridge's birthday and the cook is making the cake.
+
+He needs a lot of ingredients and doesn't have much time.
+|length = Very Short
+|items = * [[Egg]] (can be obtained during the quest)
+* [[Bucket of milk]]
+**A [[bucket]] (if obtaining the milk during the quest)
+* [[Pot of flour]]
+**A [[pot]] (if obtaining the flour during the quest)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

@@ -1,0 +1,9 @@
+==Mining info==
+{{Mining info
+|name = Ash pile
+|level = 22
+|xp = 10
+|rock = [[Ash pile]]
+|tool = [[Pickaxe]]
+|time = 30 seconds
+}}

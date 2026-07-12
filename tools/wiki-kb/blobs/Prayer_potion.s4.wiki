@@ -1,0 +1,2 @@
+==Products==
+{{Uses material list|Prayer potion(1)|Prayer potion(2)|Prayer potion(3)|Prayer potion(4)}}

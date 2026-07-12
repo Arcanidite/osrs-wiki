@@ -1,0 +1,76 @@
+===Levels 20–62/77/99: Cutting gems===
+{{Var|perHour|2780}}
+Cutting (uncut) gems offers the fastest experience up to level 77. However, cutting dragonstones is much more expensive compared to the lower-level gems, so it is recommended to keep cutting diamonds until level 62 and continue with fire battlestaves. Depending on the prices, it may be worthwhile to also skip cutting diamonds, and cut rubies until level 58 and continue with earth battlestaves. Using [[High Level Alchemy]] on gems is not recommended due to further profit loss, so the table below does not explore this avenue.
+
+Even though onyxes offer faster experience, they are not viable due to incredibly high cost and limited supply. 
+
+The experience rates and costs are shown in the table below. The rates assume players cut {{#var:perHour}} gems per hour.
+
+{|class="wikitable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+
+! rowspan="2" |{{SCP|Crafting}} Level
+! rowspan="2" colspan="2" |Gem
+! rowspan="2" |XP
+! rowspan="2" |XP/h
+! rowspan="2" |# to next
+! colspan="4" |Prices ([[Grand Exchange|GE]])
+|-
+!Buy
+!Profit 
+!Total profit 
+!GP/XP 
+|-
+|20
+|{{plinkt|Sapphire}}
+|{{Var|xpSapphire|50}} {{#var:xpSapphire}} 
+|{{formatnum:{{#expr:{{#var:xpSapphire}}*{{#var: perHour}}}}}}
+|{{Var|toNextSapphire|106}} {{#var:toNextSapphire}} 
+|{{Coins|{{GEP|Uncut sapphire}}}}
+|{{Coins|{{GEPT|Sapphire}}-{{GEP|Uncut sapphire}}}}
+|{{Coins|({{GEPT|Sapphire}}-{{GEP|Uncut sapphire}})*{{#var:toNextSapphire}}}}
+|{{Coins|({{GEPT|Sapphire}}-{{GEP|Uncut sapphire}})/{{#var:xpSapphire}}}}
+|-
+|27
+|{{plinkt|Emerald}}
+|{{Var|xpEmerald|67.5}} {{#var:xpEmerald}} 
+|{{formatnum:{{#expr:{{#var:xpEmerald}}*{{#var: perHour}}}}}}
+|{{Var|toNextEmerald|156}} {{#var:toNextEmerald}} 
+|{{Coins|{{GEP|Uncut emerald}}}}
+|{{Coins|{{GEPT|Emerald}}-{{GEP|Uncut emerald}}}}
+|{{Coins|({{GEPT|Emerald}}-{{GEP|Uncut emerald}})*{{#var:toNextEmerald}}}}
+|{{Coins|({{GEPT|Emerald}}-{{GEP|Uncut emerald}})/{{#var:xpEmerald}}}}
+|-
+|34
+|{{plinkt|Ruby}}
+|{{Var|xpRuby|85}} {{#var:xpRuby}} 
+|{{formatnum:{{#expr:{{#var:xpRuby}}*{{#var: perHour}}}}}}
+|{{Var|toNextRuby|355}} {{#var:toNextRuby}} 
+|{{Coins|{{GEP|Uncut ruby}}}}
+|{{Coins|{{GEPT|Ruby}}-{{GEP|Uncut ruby}}}}
+|{{Coins|({{GEPT|Ruby}}-{{GEP|Uncut ruby}})*{{#var:toNextRuby}}}}
+|{{Coins|({{GEPT|Ruby}}-{{GEP|Uncut ruby}})/{{#var:xpRuby}}}}
+|-
+|43
+|{{plinkt|Diamond}}
+|{{Var|xpDiamond|107.5}} {{#var:xpDiamond}} 
+|{{formatnum:{{#expr:{{#var:xpDiamond}}*{{#var: perHour}}}}}}
+|{{Var|toNextDiamond|1082}} {{#var:toNextDiamond}} 
+|{{Coins|{{GEP|Uncut diamond}}}}
+|{{Coins|{{GEPT|Diamond}}-{{GEP|Uncut diamond}}}}
+|{{Coins|({{GEPT|Diamond}}-{{GEP|Uncut diamond}})*{{#var:toNextDiamond}}}}
+|{{Coins|({{GEPT|Diamond}}-{{GEP|Uncut diamond}})/{{#var:xpDiamond}}}}
+|-
+| rowspan="2" |55
+| rowspan="2" |{{plinkp|Dragonstone}}
+| rowspan="2" |[[Dragonstone]]
+| rowspan="2" |{{Var|xpDragonstone|137.5}} {{#var:xpDragonstone}} 
+| rowspan="2" |{{formatnum:{{#expr:{{#var:xpDragonstone}}*{{#var: perHour}}}}}}
+|{{Var|to62Dragonstone|1216}} {{#var:to62Dragonstone}}<ref name="to62" group="n">To [[Crafting]] level 62.</ref> 
+| rowspan="2" |{{Coins|{{GEP|Uncut dragonstone}}}}
+| rowspan="2" |{{Coins|{{GEPT|Dragonstone}}-{{GEP|Uncut dragonstone}}}}
+|{{Coins|({{GEPT|Dragonstone}}-{{GEP|Uncut dragonstone}})*{{#var:to62Dragonstone}}}}<ref name="to62" group="n" />
+| rowspan="2" |{{Coins|({{GEPT|Dragonstone}}-{{GEP|Uncut dragonstone}})/{{#var:xpDragonstone}}}}
+|-
+|{{Var|to77Dragonstone|9520}} {{#var:to77Dragonstone}}<ref name="to77" group="n">To [[Crafting]] level 77.</ref> 
+|{{Coins|({{GEPT|Dragonstone}}-{{GEP|Uncut dragonstone}})*{{#var:to77Dragonstone}}}}<ref name="to77" group="n" />
+|}<references group="n" />

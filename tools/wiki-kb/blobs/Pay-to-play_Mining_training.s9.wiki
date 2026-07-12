@@ -1,0 +1,32 @@
+===Levels 15–45/70: Iron ore===
+[[File:Iron ore powermining.gif|thumb|Mining iron in the Mining Guild.]]
+From level 15 to 45, mine [[iron ore|iron]]. Players who are inexperienced with tick manipulation methods, or do not plan to use tick manipulation at all, are advised to mine iron up to level 70 and continuing with other methods such as the [[#Levels 70–99: Volcanic Mine|Volcanic Mine]].
+
+Wearing [[Varrock armour 1]] or higher increases the overall experience rate for this method, as it gives the player 10% chance to mine 2 ores at once while worn.
+
+From level 15 to 60, mine iron at a location that has three [[iron rocks]] in a triangle. This formation allows the player to mine all three rocks without moving. Drop the ores while waiting for the rocks to respawn. There are 16 such locations available at this level: 
+
+# [[Legends' Guild mine|Legends' Guild Mine]]
+# [[Al Kharid Mine]]
+# [[Piscatoris mine|Piscatoris Mine]]
+# [[Lovakengj mine|Lovakengj Mine]]
+# [[Verdant Valley]]
+# [[Mount Karuulm mine|Mount Karuulm Mine]]
+# [[Resource Area]] (level 51 [[Wilderness]])
+# [[South Mor Ul Rek mine|South Mor Ul Rek Mine]]
+# [[Isle of Souls]]
+# [[Sisterhood Sanctuary mine|Sisterhood Sanctuary Mine]]
+# [[The Stranglewood mine|Stranglewood Mine]]
+# [[Cam Torum mine|Cam Torum Mine]]
+# [[Salvager Overlook|Salvager Overlook Mine]] (east)
+# [[Pandemonium Cave]]
+# [[Deepfin Mine]] (Requires 67 [[Sailing]])
+# [[Ynysdail]] (Requires 73 [[Sailing]])
+
+If using [[tick manipulation]], the best place to mine iron is in the [[Legends' Guild mine]] or the [[Isle of Souls mine]]. Both locations have 4 iron rocks close to each other. Start the 3-tick cycle with a herb and tar (or other suitable items) while moving between rocks, and drop the ores in between mines. Because this method is much harder and more advanced than using a triangle spot, it is only recommended for players who plan on 3-tick mining granite from level 45 onwards.
+
+From level 60 onwards, the pay-to-play area of the [[Mining Guild]] becomes the best option, as the [[respawn]] time for rocks mined in this area is halved. This makes it so the players do not have to wait for the rocks to respawn or use tick manipulation. With correct timing and accurate clicks, players can drop the ore between mines and keep mining continuously.
+
+Players can gain around 45,000–55,000 experience per hour below level 60 when not using tick manipulation. From level 60 and above, the maximum experience rate in the Mining Guild caps at around 70,000–80,000 experience per hour, depending on performance and the pickaxe used.
+
+Banking the ores is not recommended as this slows down experience rates a lot and the iron ores are usually not worth very much. Ironmen who wish to bank their ores are advised to use the pay-to-play area in the Mining Guild, which has a triangle spot near to the bank chest. For those below level 60, an alternative location to bank iron ores is the [[South-east_Ardougne_mine|Monastery Mine]], using the [[Ardougne_cloak_1|Ardougne cloak]] to teleport to the mine and then a bank teleportation method such as the [[Ring_of_dueling#(8)|ring of dueling]] teleport to Castle Wars to bank your ore.

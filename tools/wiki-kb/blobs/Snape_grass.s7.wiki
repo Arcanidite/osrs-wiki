@@ -1,0 +1,8 @@
+==Trivia==
+* Snape grass appears to be based on some kind of {{WP|psammophile|psammophilic}} (sand-loving) beach grass, such as ''{{WP|Leymus arenarius}}'' or ''{{WP|Ammophila (plant)|Ammophila}}'', as snape grass is a spiky grass only found in the wild near coastlines.
+* According to the book ''[[Gielinor's flora - allotments]]'', "Snape grass has a subtle fruity flavour and is often used in teas. When crushed, the leaves emit a fruit smell which can be used to repel some insects, but interestingly has been known to attract bees." In addition, the leaves change colour from green to red during changing autumn temperatures, but this does not occur in-game.
+
+
+{{Farming produce}}
+{{Waterbirth Island}}
+{{Herblore secondaries}}

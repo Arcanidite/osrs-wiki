@@ -1,0 +1,35 @@
+==Details==
+{{Quest details
+|description = Can you find the legendary lost city of [[Zanaris]]?
+|start = Talk to the [[Warrior_(Lost_City)|warrior]] in the north-western corner of the [[Lumbridge Swamp]].
+|startmap = 3150,3205
+|difficulty = Intermediate
+|length = Short
+|requirements = *{{SCP|Crafting|31|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*{{SCP|Woodcutting|36|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*Ability to kill a level 101 [[Tree spirit (Lost City)|Tree spirit]] with limited [[armour]] and [[weapons]].
+|items = * [[Knife]]
+* [[Woodcutting]] [[axe]] (you will need to bank the axe before accessing [[Entrana]] - you cannot use a blessed axe)
+|recommended = * {{SCP|Combat|45|link=yes}}
+*[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*[[Food]] (armour is not allowed on Entrana)
+*If using [[Magic]] for the [[Entrana Dungeon]] (recommended):
+** {{SCP|Magic|13 }} [[Magic]] and enough runes to cast [[Fire Strike]] for the [[Tree spirit (Lost City)|Tree Spirit]] which has a 35% Fire weakness OR
+**{{SCP|Magic|39}} [[Magic]] and enough runes to cast [[Crumble Undead]] against the Zombies and the [[Tree spirit (Lost City)|Tree Spirit]], who are susceptible to it (about 65 casts should be enough)
+** A [[Celastrus bark]] to fletch into a [[battlestaff]] for the added Magic bonus (requires {{SCP|Fletching|40}} [[Fletching]])
+* If using [[Melee]] for the [[Entrana Dungeon]]:
+** [[Prayer potion]] (Prayer is almost fully drained when entering the dungeon)
+** [[Ring of recoil|Rings of recoil]]
+*If using [[Ranged]] as an alternative to Magic against the Zombies (not recommended for the Tree spirit):
+**[[Arrows]], [[bow string]] and an [[unstrung bow]]
+*Fast travel to several locations:
+**[[Lumbridge Swamp]] to start the quest (plus one additional trip) - [[Necklace of passage]] or [[Ring of the elements]] or [[Amulet of glory]] or [[Lumbridge Teleport]]
+**[[Entrana]] (1 trip) - [[Monk of Entrana]] on the second northern dock at [[Port Sarim]] or [[Balloon transport system]].
+**An instant [[teleport]] to leave the [[Entrana Dungeon]] (the only alternative is to leave via the Magic Door to level 32 wilderness)
+|kills = * [[Tree spirit (Lost City)|Tree Spirit]] ''(level 101)'' (Safespottable)  
+* Multiple [[Zombie (Entrana Dungeon)|Zombies]] ''(level 25)'' (for a [[bronze axe]])
+|ironman = [[File:Ultimate ironman chat badge.png]] The player is required to go to [[Entrana]].
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

@@ -1,0 +1,90 @@
+{{Infobox Item
+|name = Volcanic ash
+|image = [[File:Volcanic ash.png]]
+|release = [[7 September]] [[2017]]
+|update = Fossil Island
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Drop
+|examine = One of the ingredients for making ultra compost.
+|value = 200
+|weight = 0.000
+|exchange = Yes
+|id = 21622
+}}
+[[File:Volcanic ash detail.png|left|150px]]
+'''Volcanic ash''' is obtained from mining [[ash pile]]s found around the [[Fossil Island Volcano]]. Doing so requires level 22 [[Mining]] and grants 10 experience per drop, regardless of the number of ash mined at once.
+
+They can also be obtained as drops from various monsters on [[Fossil Island]] including [[wyvern]]s in the [[Wyvern Cave]].
+
+==Mining info==
+{{Mining info
+|name = Ash pile
+|level = 22
+|xp = 10
+|rock = [[Ash pile]]
+|tool = [[Pickaxe]]
+|time = 30 seconds
+}}
+
+==Money making==
+{{Mmgsection|Mining volcanic ash}}
+
+==Yield==
+The amount of ash obtained is scaled to the player's [[Mining]] level, starting with one ash at level 22 and increasing by one for every 15 levels above 22, to a maximum of six ash at 97 (boosts can be used). [[Mining enhancers]] '''do not''' affect the yield when mining volcanic ash.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/906484443271061504|date=9 September 2017|archiveurl=https://reldo.runescape.wiki/i/107714|archivedate=25 May 2020|quote=[Do Varrock armor, mining cape and mining gloves affect mining volcanic ash?] No.}} At high Mining levels, it is possible to obtain over 6,500 ash per hour.
+
+{| class="wikitable" style="text-align:center;"
+|-
+! {{SCP|Mining}} level !! Ash obtained
+|-
+| 22 || 1
+|-
+| 37 || 2
+|-
+| 52 || 3
+|-
+| 67 || 4
+|-
+| 82 || 5
+|-
+| 97 || 6
+|}
+
+==Products==
+{{Uses material list|Volcanic ash}}
+
+==Uses==
+Volcanic ashes are used to create a variety of farming-related items.
+
+*Two can be used on a bucket of [[supercompost]] to create [[ultracompost]].
+*25 can be used on a [[compost bin]] and 50 on a [[Big Compost Bin]], when the bins are completely filled with supercompost. This upgrades the supercompost into [[ultracompost]].
+*One is used with a [[harralander potion (unf)]] to create a [[compost potion]]. This requires 22 [[Herblore]].
+*If players have read the [[ash covered tome]], they can have the [[Fertile Soil]] spell treat a [[Farming/Patch locations|farming patch]] with [[ultracompost]] instead of [[supercompost]] by casting the spell while having two volcanic ash in their inventory.
+
+==Item sources==
+{{Drop sources|Volcanic ash}}
+
+===Shop locations===
+{{Store locations list|Volcanic ash}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 21 February 2019
+|update = 6th Birthday and QoL
+|poll = Quality of Life - Skilling Suggestions 2019
+|change = Volcanic ash now dropped by Fossil and Ancient Wyverns. Volcanic ash obtained by mining now scaled to Mining level.
+}}
+{{Subject changes footer}}
+
+==References==
+{{Reflist}}
+
+{{Mining}}
+{{Fossil Island}}
+{{Herblore secondaries}}
+[[Category:Needs skilling success chart]]

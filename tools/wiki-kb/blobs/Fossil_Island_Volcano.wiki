@@ -1,0 +1,38 @@
+{{external|rs=Anachronia Volcano}}
+{{Infobox Location
+|name = Fossil Island Volcano
+|image = [[File:Fossil Island Volcano.png|300px]]
+|release = [[7 September]] [[2017]]
+|update = Fossil Island
+|members = Yes
+|location = [[Fossil Island]]
+|map = {{Map|name=Fossil Island Volcano|x=3783|y=3783|height=300|width=300|zoom=1}}
+|type = volcano
+|leagueRegion = Misthalin
+}}
+The '''Fossil Island Volcano''' (marked '''Volcano''' on the [[world map]]) is a volcanic outcrop found on the eastern coast of [[Fossil Island]]. Periodically, there are [[volcanic eruption]]s shooting balls of lava out of the volcano. If one hits a player, it can inflict minor damage.
+
+The entrance to the [[Volcanic Mine]] can be found here. In addition, there are also many [[ash pile]]s found throughout the volcano, which can be mined for [[soda ash]] and [[volcanic ash]].
+
+Near the volcano, the [[Fossil Island mine]] and the [[Verdant Valley]] can be found.
+
+==Rocks==
+{| class="wikitable sortable align-center-1 align-left-2" style="text-align:right;"
+! rowspan=2 colspan=2 | Rock
+! colspan=2 | {{SCP|Mining}} [[Mining]]
+! rowspan=2 | Quantity
+|-
+!Level
+!Exp
+|-
+|{{plinkp|Volcanic ash}}||[[Ash pile|Volcanic ash]]
+|22||10||15
+|-
+|}
+
+==Treasure Trails==
+* Digging next to the fire near the [[Volcanic Mine]] entrance is the solution to an elite [[cryptic clue]]: ''Does one really need a fire to stay warm here?''
+
+{{Terrain}}
+{{Fossil Island}}
+[[Category:Terrain]]

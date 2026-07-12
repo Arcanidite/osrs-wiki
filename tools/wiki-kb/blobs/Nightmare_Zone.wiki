@@ -1,0 +1,951 @@
+{{External|rs=Dominion Tower}}
+{{Otheruses|the minigame|the boss|The Nightmare|other uses|Nightmare (disambiguation)}}
+{{Safe activity|instance=true}}
+{{HasStrategy}}
+{{Infobox Activity
+|name = Nightmare Zone
+|image = [[File:Nightmare Zone.png|300px]]
+|release = [[5 September]] [[2013]]
+|update = Will you wake up from the Nightmare Zone?
+|aka = NMZ
+|type = Minigame
+|members = Yes
+|location = [[Yanille]]
+|players = 1-5
+|skills = [[Combat]]
+|currency = Nightmare Zone Points
+|tutorial = No
+|music = [[Nightmare Zone#Music|See below]]
+|map = {{Map|name=Nightmare Zone|zoom=3|x=2605|y=3115}}
+|leagueRegion = No
+}}
+[[File:Nightmare Zone logo.png|left]]
+The '''Nightmare Zone''' is a [[combat]]-based [[minigame]] located north-west of [[Yanille]] [[bank]]. Players enter a "dream" to take on bosses they have previously defeated during completed [[quests]]. It is run by [[Dominic Onion]], a mage from [[Lunar Isle]]. The dreams that make up this minigame take place in an [[instance]] of the [[King Black Dragon Lair]].
+
+==History==
+[[Dominic]] did not plan on calling his business the Nightmare Zone; it was what the local folk have been calling it. The plan came to him in a vivid dream when he was younger where he saw himself running a successful business from a great structure. He told his father about it, who laughed and said he should be a [[banker]] like his ancestors. He refused and wanted to find out what that dream meant, so he studied to find out more about [[Magic]], particularly oneiromancy and dream interpretation. Once he had learned enough, he left [[Lunar Isle]] attempting to find the location where he built the huge tower. Since he had not found it or gathered enough money for its construction, he decided to set up a small business north of [[Yanille]] selling dreams to people.
+
+==Transportation==
+* Teleport using [[Minigame Teleport]], either through any spellbook or the [[Grouping]] interface, by selecting Nightmare Zone. (Only usable when the requirements for Nightmare Zone are met)
+* Casting [[Watchtower Teleport]] or using a [[Watchtower teleport]] tablet and running east. Both require completion of [[Watchtower]] quest to use.
+* Casting [[Teleport to House]] or using a [[Teleport to house]] tablet if your [[player-owned house]] is in Yanille, or using a [[scroll of redirection]] on a [[Teleport to house]] tablet to make a [[Yanille teleport]].
+* Using [[fairy ring]] code {{Fairycode|CLS}} and walking north-west or code {{Fairycode|CIQ}} and walking through Yanille.
+* Using a [[ring of dueling]] to teleport to [[Castle Wars]], then walking to Yanille.
+* Using the [[Spirit tree]] to teleport to [[Tree Gnome Village (location)|Tree Gnome Village]] and walking from there.
+* Using the [[Ardougne cloak 1]] to teleport to the [[Ardougne Monastery]] and walking south.
+* Teleport using [[Minigame Teleport]], either through any spellbook or the [[Grouping]] interface, by selecting Fishing Trawler and walking south-west.
+
+==Requirements==
+To begin the minigame, at least '''five''' of the following quests must be completed:
+{{Sync}}
+{| width="50%" class="lighttable wikitable individual qc-active" style="text-align: center; " 
+|[[The Ascent of Arceuus]]<ref name="NMZ Melee" group="n">This quest is highly recommended for [[Meleeing]].</ref>
+|[[Contact!]]
+|[[The Corsair Curse]]
+|-
+|[[The Depths of Despair]]<ref name="NMZ Melee" group="n" />
+|[[Desert Treasure I]]<ref name="NMZ Non-Melee" group="n">This quest is highly recommended for [[Smoke Barrage]]/[[Smoke Burst|Burst]] or [[chinning]].</ref>
+|[[Dragon Slayer I]]
+|-
+|[[Dream Mentor]]
+|[[Fairytale I - Growing Pains]]
+|[[Family Crest]]
+|-
+|[[Fight Arena]]<ref name="NMZ Melee" group="n" />
+|[[The Fremennik Isles]]
+|[[Getting Ahead]]
+|-
+|[[The Grand Tree]]
+|[[The Great Brain Robbery]]
+|[[Grim Tales]]
+|-
+|[[Haunted Mine]]
+|[[Holy Grail]]
+|[[Horror from the Deep]]
+|-
+|[[In Search of the Myreque]]
+|[[Legends' Quest]]
+|[[Lost City]]<ref name="NMZ Melee" group="n" /><ref name="NMZ Non-Melee" group="n" />
+|-
+|[[Lunar Diplomacy]]
+|[[Monkey Madness I]]
+|[[Mountain Daughter]]<ref name="NMZ Melee" group="n" />
+|-
+|[[My Arm's Big Adventure]]
+|[[One Small Favour]]
+|[[Recipe for Disaster]]
+|-
+|[[Roving Elves]]
+|[[Shadow of the Storm]]
+|[[Shilo Village]]
+|-
+|[[Song of the Elves]]
+|[[Tale of the Righteous]]
+|[[Tree Gnome Village]]<ref name="NMZ Melee" group="n" /><ref name="NMZ Non-Melee" group="n" />
+|-
+|[[Troll Romance]]
+|[[Troll Stronghold]]
+|[[Vampyre Slayer]]<ref name="NMZ Melee" group="n" /><ref name="NMZ Non-Melee" group="n" />
+|-
+|[[What Lies Below]]<ref name="NMZ Melee" group="n" /><ref name="NMZ Non-Melee" group="n" />
+|[[Witch's House]]<ref name="NMZ Non-Melee" group="n" />
+| class="nohighlight" |
+|}
+<references group="n" />
+
+==Playing==
+[[File:Nightmare Zone lobby.png|thumb|280px|right|The Nightmare Zone lobby.]]
+[[File:Dominic's coffer.png|70px|left|Dominic's coffer.]]
+Games are paid for by [[coins]] deposited into [[Dominic's coffer]]. They can only be deposited into and withdrawn from the coffer in multiples of 1000, up to a maximum of {{NoCoins|262,143,000}} coins.
+
+Once a game mode is chosen, the player will agree to pay any applicable fees and [[Dominic]] will prepare the [[Potion (Nightmare Zone, dream)|dream potion]] on a plinth in the centre of the lobby. Upon drinking the potion, an optional boss customization menu will appear, and after accepting the options the fee is deducted from the coffer and the player enters the Nightmare Zone arena. A dream can be cancelled prior to drinking the dream potion by speaking with Dominic which will not deduct money from the coffer.
+
+The arena can be safely exited at any time by drinking one of the [[Potion (Nightmare Zone, wake)|wake potion]]s on the north or south sides of the arena. Another player's dream can be spectated by drinking the red [[spectator potion]] outside the lobby area and entering the name of the player. The [[dwarf multicannon]] cannot be placed in the arena.
+
+Quest items previously required to kill bosses are not needed, except for [[ice gloves]]. For example, the [[Black Knight Titan (Nightmare Zone)|Black Knight Titan]] will die without [[Excalibur]], and items such as the [[magic secateurs (nz)]] are provided for [[Tanglefoot (Nightmare Zone)|Tanglefoot]], a [[rune pickaxe (nz)]] for [[Slagilith (Nightmare Zone)|Slagilith]], the [[anti-dragon shield (nz)]] for [[Elvarg (Nightmare Zone)|Elvarg]], and [[runes]] for [[Chronozon (Nightmare Zone)|Chronozon]] or the [[Dagannoth mother (Nightmare Zone)|Dagannoth mother]]. All items provided this way have '''(nz)''' at the end of their names, indicating that they will disappear when leaving the Nightmare Zone. [[Magic]] [[experience]] from casting spells by using '''(nz)''' runes is heavily reduced, but does not apply to experience gained from damage dealt. Players cannot cast most non-combat spells in the arena, the exceptions being [[Bones to Peaches]], [[Bones to Bananas]], and [[Monster Examine]].
+
+A [[bonecrusher]] can be used here as all bosses drop their bone-variation of drops, [[Tanglefoot (Nightmare Zone)|Tanglefoot]] drops [[leaves]], [[Karamel (Nightmare Zone)|Karamel]] drops [[Choc-ice]], [[Dad (Nightmare Zone)|Dad]] drops [[Big bones]], etc. [[Long bone]]s and [[curved bone]]s can also drop from monsters that normally drop them.
+
+{{Colour|red|'''Warning:'''}} For [[Group Ironman Mode|Hardcore Group Ironman]] deaths are '''not''' safe in Nightmare Zone. To avoid losing a life, exit the arena by drinking one of the dream potions on the north or south side of the arena.
+
+'''Note:''' Logging out while inside the arena ends the dream, returning the player to the Nightmare Zone lobby.
+
+==Game modes==
+[[File:Nightmare Zone rumble mode.png|thumb|280px|right|Two players participating in a rumble.]]
+There are 3 modes in Nightmare Zone: practice, endurance, and rumble. Each mode has a 'Normal' and 'Hard' difficulty.
+
+*In the '''normal''' difficulty, all [[Boss#Quest boss|quest boss]]es have the same stats they have in their respective [[quest]]s, as well as some of the mechanics.
+*In the '''hard''' difficulty, the bosses have increased [[Hitpoints]], [[Attack]], [[Strength]], [[Magic]], and [[Ranged]] levels where applicable. Their [[Defence]] and defensive bonuses remain unchanged, although there are a couple exceptions. Some bosses in the hard difficulty can only attack with Melee or lose some special fight mechanics, such as [[Ice Troll King (Nightmare Zone)|Ice Troll King]] and [[Jungle Demon (Nightmare Zone)|Jungle Demon]]. Some bosses gain extra mechanics, such as [[The Untouchable (Nightmare Zone)|The Untouchable]], which reflects 20% of any damage dealt.
+
+The cost of each mode varies depending on type and difficulty:
+
+{|class="wikitable"
+|+Cost per dream
+!Mode!!Normal!!Hard
+|-
+|Practice||Free||Free
+|-
+|Endurance||{{Coins|1000}}||{{Coins|5000}}
+|-
+|Rumble||{{Coins|2000}}||{{Coins|6000}}
+|-
+|Custom rumble||{{Coins|22000}}||{{Coins|26000}}
+|-
+|Custom rumble with<br/>maximum [[quest point]]s||{{Coins|12000}}||{{Coins|16000}}
+|}
+
+===Practice===
+In practice mode, a previously defeated boss can be selected to fight 1-on-1 until either the boss or player dies. Players do not gain any experience or Nightmare Zone points from defeating the boss, and the kill does not count for a Slayer assignment. Drops '''will''' be awarded upon defeat of the boss however, such as [[dragon bones]] from Elvarg.
+
+===Endurance===
+Endurance mode is a 1-on-1 fight with every unlocked boss in waves until either the player dies or defeats all unlocked bosses, earning points for each boss defeated (see 'Points Awarded' in the [[Nightmare Zone#Bosses|bosses]] table below).
+
+Beating every boss in normal endurance mode awards a total of 216,634 points and in hard endurance mode a total of 794,770.
+
+===Rumble===
+[[File:NMZ custom rumble interface.png|thumb|right|280px|The interface for customisable rumble dreams.]]
+Rumble mode allows a single player or group of up to 5 players to fight multiple bosses at the same time in a random order with duplicates. A solo player will only ever encounter a maximum of 4 bosses at once. Adding more players to the party increases the maximum bosses in the arena at one time. Killing a boss rewards points and causes another boss to spawn afterwards endlessly until the player dies or leaves.
+
+A standard rumble uses all unlocked bosses. For a higher cost players can select a customisable rumble, which upon starting gives the option to toggle any unlocked boss on or off. However, disabling bosses reduces the number of points rewarded for each kill. There is an additional mechanic to this where a large 83.33% point penalty is applied to all kills if the Dream Mentor bosses are enabled but the Desert Treasure I bosses are disabled. To avoid this make sure to only enable the Dream Mentor bosses in tandem with Desert Treasure I's ones or to disable them completely.{{CiteForum|author=Mod Ash|url=https://web.archive.org/web/20210202042440/https://secure.runescape.com/m=forum/forums?380,381,275,65762758,34,338179103#expand|postdate=2016-03-10|title=Custom Nightmare Zone Rumbles}}{{CiteReddit|author=Docter_Bogs|url=https://www.reddit.com/r/2007scape/comments/k6n3gg/i_figured_out_how_nightmare_zone_points_are/|title=I figured out how Nightmare Zone points are calculated. New meta for AFKing with absorption pots to get good XP/hr and decent points/hr!|quote=There is a previously-unknown mechanic in the Nightmare Zone that decreases all your points by a factor of 6 if the following conditions are met:
+Dream Mentor bosses are turned ON
+Desert Treasure bosses are turned OFF|date=04 December 2020|archiveurl=https://reldo.runescape.wiki/i/108580|archivedate=3 March 2021}}
+
+If starting a rumble with a group, all players involved must have the required amount of coins in the coffer. Only bosses that all players involved have unlocked are accessible. Partying with another player who has completed more or fewer quests than you does not affect points gained.
+
+To start a rumble, a player must first speak to [[Dominic]], and if grouping up, invite other participating players within the enclosure. Leaving the enclosure automatically removes that player from the group. Once the hosting player drinks the [[Dream potion]], players in the group will be prompted to either join the shared dream or leave the group.
+
+The maximum number of points that can be gained in one hard rumble is 1,048,575 (<math>2^{20} - 1</math>) points.
+
+Players can be in the Nightmare Zone for 6 hours before being [[6 hour log]]ged.
+
+===Power-ups===
+[[File:Nz power-up.png|thumb|right|280px|A player using the Zapper power-up in Rumble mode.]]
+In Rumble mode, there are power-ups that spawn in the arena randomly and giving the player that activates it a temporary advantage. Power-ups disappear after 1 minute if they are not activated.
+
+* '''Recurrent damage''' adds an additional hit which deals 3/4 of the initial damage. For example, hitting a 35 will deal an extra 26 damage. The extra damage does not give experience. This power-up is red in colour and lasts 45 seconds.
+* '''Zapper''' damages nearby monsters over time, and the attacks have a max hit of 8. The zapper does not damage bosses immune to normal attacks (such as the [[Dagannoth mother (Nightmare Zone)|Dagannoth mother]] and [[Tanglefoot (Nightmare Zone)|Tanglefoot]]). The zapper can only kill Count Draynor if a player has hit him at least once (the hit does not have to do damage). This power-up is purple in colour and lasts 1 minute.
+* '''Power surge''' fills the player's special attack bar and regenerates it by 20% per tick. This power-up is yellow in colour and lasts 45 seconds.
+* '''Ultimate force''' instantly kills all the bosses present in the arena. These kills do not award any points. This power-up is white in colour.
+** These kills will, however, count towards a [[Slayer task]] (if applicable) and grant [[Slayer]] [[experience]] as long as the player dealt at least 1 damage to the assigned monster.
+**Additionally, any bosses killed with Ultimate Force will not drop their 100% drop unless the player has dealt at least 1 damage to them.
+
+==Strategies==
+{{Main|Nightmare Zone/Strategies}}
+
+==Slayer training==
+Some monsters within the Nightmare Zone provide Slayer experience when killed on task. While this offers a lot slower experience than [[Slayer training|training Slayer normally]], it can be a decent low-effort option for some players.
+
+In order to start an instance, five bosses must be selected. To maximise Slayer experience per hour, it is recommended to use other bosses that are easy and quick to kill such as [[Count Draynor (Nightmare Zone)|Count Draynor]], [[Trapped Soul (Nightmare Zone)|Trapped Soul]], [[Sand Snake (Nightmare Zone)|Sand Snake]], and [[King Roald (Nightmare Zone)|King Roald]]. The use of all power-ups is recommended, including Ultimate Force if at least one point of damage has been dealt to the Slayer task monster.
+
+{|class="wikitable sortable lighttable qc-active"
+! data-sort-type="text"| Slayer task
+! Monster
+! data-sort-type="number"| {{SCP|Slayer}} XP gained (hard mode)
+! Quest
+|-
+| Birds||[[Evil Chicken (Nightmare Zone)|Evil Chicken]]||120 (240)||[[Recipe for Disaster/Freeing Sir Amik Varze|Recipe for Disaster - Sir Amik Varze]]
+|-
+| Birds||[[Giant Roc (Nightmare Zone)|Giant Roc]]||250 (255)||[[My Arm's Big Adventure]]
+|-
+| Black Demon||[[Black demon (Nightmare Zone)|Black demon]]||157 (255)||[[The Grand Tree]]
+|-
+| Dagannoth||[[Dagannoth mother (Nightmare Zone)|Dagannoth mother]]||126 (252)||[[Horror from the Deep]]
+|-
+| Green Dragon||[[Elvarg (Nightmare Zone)|Elvarg]]||80 (246)||[[Dragon Slayer I]]
+|-
+| Ice Warrior||[[Kamil (Nightmare Zone)|Kamil]]||146 (312)||[[Desert Treasure I]]
+|-
+| Lizardman||[[Corrupt Lizardman (Nightmare Zone)|Corrupt Lizardman]]||50 (150)||[[Tale of the Righteous]]
+|-
+| Scabarite||[[Giant Scarab (Nightmare Zone)|Giant Scarab]]||137 (280.5)||[[Contact!]]
+|-
+| Troll||[[Dad (Nightmare Zone)|Dad]]||126 (264)||[[Troll Stronghold]]
+|-
+| Troll||[[Arrg (Nightmare Zone)|Arrg]]||150.5 (299.6)||[[Troll Romance]]
+|-
+| Troll||[[Ice Troll King (Nightmare Zone)|Ice Troll King]]||161 (287)||[[The Fremennik Isles]]
+|-
+| Vampyre||[[Count Draynor (Nightmare Zone)|Count Draynor]]||35 (210)||[[Vampyre Slayer]]
+|-
+| Vampyre||[[Dessous (Nightmare Zone)|Dessous]]||220 (299.6)||[[Desert Treasure I]]
+|}
+
+==Bosses==
+All monsters that can be encountered within the Nightmare Zone are listed in the table below. The more [[quest]]s the player has completed, the more monsters the player has access to. Many bosses provide increased experience per damage dealt, such as Dad, Moss Guardian, Arrg, and the Ice Troll King.
+
+Point values increase based on the number of bosses included. The point values shown below are the '''maximum points''' that can be given, which assumes all quests have been completed and all bosses are enabled.
+
+In a team, points are split between those who attacked the monster. The person who did the most damage will take a larger percentage of the maximum points from that monster. In Rumble mode, the only bosses that appear are those that all participating players have access to.
+
+[[Headless Beast (Nightmare Zone)|Headless Beast]], [[Kamil (Nightmare Zone)|Kamil]], [[Elven traitor]], [[Essyllt (Nightmare Zone)|Essyllt]], and [[The Inadequacy (Nightmare Zone)|The Inadequacy]] are all immune to movement inhibitors from [[ice spell]]s, [[bind]], [[snare]], and [[entangle]].
+
+{| class="wikitable sortable lighttable sticky-header qc-active"
+!Name
+!data-sort-type="number"|Combat level (hard)
+!Size of Monster
+! data-sort-type="number" |Hitpoints (hard)
+!data-sort-type="number"|Defence level (hard)
+!Attack style
+!data-sort-type="number"|Points gained (normal)
+!data-sort-type="number"|Points gained (hard)
+!Notes and precautions
+!Quest
+!Drops
+|-
+|[[Trapped Soul (Nightmare Zone)|Trapped Soul]]||30 (101)
+|1x1||30 (98)||20||Melee||183||2,301||||[[The Ascent of Arceuus]]
+|
+|-
+|[[Count Draynor (Nightmare Zone)|Count Draynor]]||34 (177)
+|1x1||35 (210)||30||Melee||224||7,135||A [[hammer]] and [[stake]] are not required.<br/>Has increased hitpoint regeneration. Kills count towards [[vampyre]] Slayer tasks.||[[Vampyre Slayer]]
+|
+|-
+|[[Corsair Traitor]]||35 (103)
+|1x1||55 (160)||30 (80)||Magic||244||2,301||Casts weaken, lowering [[Defence]] by 5, or 15 in hard, per cast.||[[The Corsair Curse]]
+|[[Bones]]
+|-
+|[[Sand Snake (Nightmare Zone)|Sand Snake]]||36 (154)
+|3x3||60 (180)||20||Melee||244||5,294||||[[The Depths of Despair]]
+|
+|-
+|[[Corrupt Lizardman (Nightmare Zone)|Corrupt Lizardman]]||46 (152)
+|1x1||50 (150)||38||Melee, Ranged||427||5,294||Can poison, poison damage goes through [[absorption]] points||[[Tale of the Righteous]]
+|
+|-
+|[[King Roald (Nightmare Zone)|King Roald]]||47 (188)
+|1x1||75 (150)||30||Melee||448||8,056||Shouts various humorous phrases.||[[What Lies Below]]
+|[[Bones]]
+|-
+|[[Witch's experiment (Nightmare Zone)|Witch's experiment]]||19, 30, 42, 53 (47, 77, 90, 103)
+|1x1||21, 31, 41, 51 (63, 93, 102, 113)||19, 29, 39, 49||Melee||570||2,301||First form weakens Melee stats by 5%. Four forms must be defeated. A small amount of damage is dealt through protection prayers by the Skavid form.||[[Witch's House]]
+|[[Wolf bones]]
+|-
+|[[The Kendal (Nightmare Zone)|The Kendal]]||70 (210)
+|2x2||50 (150)||60||Melee||998||10,127||||[[Mountain Daughter]]
+|[[Bones]]
+|-
+|[[Me (Nightmare Zone)|Me]]||79 (201)
+|1x1||45 (135)||74||Melee||1,263 ||9,207||Shouts humorous one-sided dialogue.||[[Lunar Diplomacy]]
+|[[Bones]]
+|-
+|[[Headless Beast (Nightmare Zone)|Headless Beast]]||82 (233)
+|3x3||100 (320)||42||Melee||1,365||12,429||Occasionally stomps when in Melee range, dropping a ball of rock from the ceiling dealing high damage.||[[Getting Ahead]]
+|
+|-
+|[[Elvarg (Nightmare Zone)|Elvarg]]||83 (214)
+|4x4||80 (240)||70||Melee, Dragonfire||1,385||10,357||An [[anti-dragon shield]] is provided in the arena. [[Dragonfire]] protection is required. Without it, significant damage and high stat drain including [[Prayer]] instantly. Still drains Prayer every hit. Kills count towards [[green dragon]] Slayer tasks.||[[Dragon Slayer I]]
+|[[Dragon bones]]
+|-
+|[[Moss Guardian (Nightmare Zone)|Moss Guardian]]||84 (182)
+|2x2||120 (240)||60||Melee attack that sometimes hits with Magic instead||1,426||7,595||Attacks with either Melee or Magic melee, with the latter hitting through protection prayers. [[Protect from Melee]] recommended.||[[Roving Elves]]
+|[[Big bones]]
+|-
+|[[Slagilith (Nightmare Zone)|Slagilith]]||92 (202)
+|2x2||60 (150)||75||Melee||1,711||9,207||Damage from non-pickaxe weapons is reduced by 66% (Experience is awarded for pre-reduction damage). Low [[crush]] defence; a [[rune pickaxe]] is provided in the arena.||[[One Small Favour]]
+|
+|-
+|[[Nazastarool (Nightmare Zone)|Nazastarool]]||91, 68, 93 (176, 153, 181)
+|2x2||100, 75, 110 (154, 180, 176)||80, 58, 80||Melee||1,752||7,365||Has three forms.||[[Shilo Village]]
+|
+|-
+|[[Treus Dayth (Nightmare Zone)|Treus Dayth]]||95 (194)
+|1x1||100 (240)||100||Melee||1,834||8,516||Does not have any difficult mechanics other than disappearing after being in combat for a short while. Will fly away as a ghost and reappear a short ways away before walking back towards you. Will not be killed by Ultimate force if retreating.||[[Haunted Mine]]
+|
+|-
+|[[Skeleton Hellhound (Nightmare Zone)|Skeleton Hellhound]]|| 97 (198) 
+|2x2|| 55 (132)||100||Melee||1,915||8,976|| [[Demonbane weapons|Demonbane weapon's]] bonus damage activates against this monster.||[[In Search of the Myreque]]
+|[[Big bones]]
+|-
+|[[Dagannoth mother (Nightmare Zone)|Dagannoth mother]]||100 (201) 
+|3x3||120 (240)||81||Melee, Ranged ||2,038||9,207||Takes damage based on colour: white requires [[air spells]], blue requires [[water spells]], orange requires [[Melee]], brown requires [[earth spell]]s, red requires [[fire spell]]s, and green requires [[Ranged]]. ||[[Horror from the Deep]]
+|[[Bones]]
+|-
+|[[Agrith Naar (Nightmare Zone)|Agrith-Naar]]||100 (196)
+|3x3||95 (209)||82||Melee, Magic||2,038 || 8,746||Uses [[Magic]] and teleports the player to it when out of [[Melee]] range. [[Silverlight]] is not required. [[Demonbane weapons|Demonbane weapon's]] bonus damage activates against this monster.||[[Shadow of the Storm]]
+|[[Vile ashes]]
+|-
+|[[Tree spirit (Nightmare Zone)|Tree spirit]]||101 (199) 
+|1x1||85 (187)||80||Melee||2,078||8,976||Not considered undead.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/895337821103284224|date=9 August 2017|archiveurl=https://reldo.runescape.wiki/i/109004|archivedate=26 April 2020|quote=I don't see any in the list that look like they'd be classed as undead.}} Gets free pathing when player attacks and it cannot reach the player.||[[Lost City]]
+|
+|-
+|[[Dad (Nightmare Zone)|Dad]]||101 (201)
+|3x3||120 (240)||50||Melee||2,078||9,207||Knocks the player back several spaces and stuns. High Magic and Ranged defence. Kills count towards [[troll]] Slayer tasks. Standing next to a wall is helpful. or if using Ranged/magic use the other npcs as a barrier between you & the giant log wielding Trolly. ||[[Troll Stronghold]]
+|[[Big bones]]
+|-
+|[[Tanglefoot (Nightmare Zone)|Tanglefoot]]||111 (199)
+|1x1||102 (204)||91 || Melee||2,506||8,976||[[Magic secateurs]] required to deal damage, provided in the arena.||[[Fairytale I - Growing Pains]]
+|[[Leaves]]
+|-
+|[[Khazard warlord (Nightmare Zone)|Khazard warlord]]||112 (192)
+|1x1||169 (256)||80||Melee||2,547 ||8,286|| ||[[Tree Gnome Village]]
+|[[Bones]]
+|-
+|[[Arrg (Nightmare Zone)|Arrg]]||171 (210)
+|2x2||150 (255)||40||Ranged||2,588||10,127||Kills count towards troll Slayer tasks. ||[[Troll Romance]]
+|[[Big bones]]
+|-
+|[[Black Knight Titan (Nightmare Zone)|Black Knight Titan]]||120 (210)
+|1x1||141 (255)||91|| Melee||2,934||10,127||[[Excalibur]] is not required. Extremely high Magic and Ranged defence.||[[Holy Grail]]
+|[[Big bones]]
+|-
+|[[Ice Troll King (Nightmare Zone)|Ice Troll King]]||122 (213)
+|2x2||150 (255)||80||Normal: Melee, Ranged, Magic<br />Hard: Melee ||3,016||10,357||In normal: Attacks with [[Ranged]] when out of [[Melee]] range. Attacks with both [[Magic]] and [[Melee]] when in Melee range.
+Using [[Protect from Missiles]] causes him to instantly [[Ice Barrage]]. His Ice Barrage interrupts attacks and freezes.
+
+Using [[Protect from Melee]] causes him to knock you back several squares and start ranging you.
+
+In hard: Melee only with no other mechanics.
+
+Extremely high Magic and Ranged defence. 
+|[[The Fremennik Isles]]
+|
+|-
+|[[Bouncer (Nightmare Zone)|Bouncer]]||137 (244)
+|2x2||116 (232)||120||Melee||3,811||13,580||Doesn't count towards [[hellhound]] Slayer tasks, however [[Demonbane weapons|Demonbane weapon's]] bonus damage activates against this monster.||[[Fight Arena]]
+|[[Vile ashes]]
+|-
+|[[Glod (Nightmare Zone)|Glod]]||138 (276)
+|4x4||160 (255) ||110||Melee||3,872||17,493|| Occasionally makes the player either run away or run forward and attack him. Disables [[Prayer]] and lowers [[Prayer point]]s by a significant amount.||[[Grim Tales]]
+|[[Big bones]]
+|-
+|[[Evil Chicken (Nightmare Zone)|Evil Chicken]]|| 159 (286) 
+|1x1||120 (240)||126||Magic||5,135||18,644||Low damage, but quick [[Magic]] attacks.||[[Recipe for Disaster/Freeing Sir Amik Varze|Recipe for Disaster - Sir Amik Varze]]
+|[[Bones]]
+|-
+|[[Agrith-Na-Na (Nightmare Zone)|Agrith-Na-Na]]||146 (235)
+|3x3||200 (255)||82 || Melee, Magic||4,341||12,659||Teleports the player to it when out of [[Melee]] range.||[[Recipe for Disaster#Defeating the Culinaromancer|Recipe for Disaster - Final battle]]
+|[[Banana]]
+|-
+|[[Flambeed (Nightmare Zone)|Flambeed]]||149 (238)
+|5x5||210 (255)||75|| Melee, Magic in Melee range only||4,524||12,889||Use [[water spells]] otherwise [[ice gloves]] must be worn to attack or your weapon will be unequipped. Deals high damage.||[[Recipe for Disaster#Defeating the Culinaromancer|Recipe for Disaster - Final battle]]
+|[[Cake]]
+|-
+|[[Karamel (Nightmare Zone)|Karamel]]||136 (186) 
+|1x1||240 (255)||100||Magic ||3,750||7,825||Drains stats frequently, [[overload (Nightmare Zone)|overload]]s are recommended. Drains [[Prayer]] points by 3 until 3 or less points are left. Freezes interrupts auto-retaliate and movement orders, but does not stop the player from moving. While in Melee range, once all the player's stats reach less than 3, the freeze will do 3 damage until the player is less than 2 Hitpoints. [[Protect from Magic]] stops it from attacking. Teleports near the player.
+||[[Recipe for Disaster#Defeating the Culinaromancer|Recipe for Disaster - Final battle]]
+|[[Choc-ice]]
+|-
+|[[Dessourt (Nightmare Zone)|Dessourt]]||121 (217)
+|1x1|| 140 (255)||99|| Magic, Ranged|| 2,975||10,818|| Attacks with [[Magic]] and [[Ranged]] simultaneously up to 10 [[Hitpoints]]. [[Protect from Magic]] or [[Protect from Missiles|Missiles]] halves damage received.||[[Recipe for Disaster#Defeating the Culinaromancer|Recipe for Disaster - Final battle]]
+|[[Chocolate dust]]
+|-
+|[[Gelatinnoth Mother (Nightmare Zone)|Gelatinnoth Mother]]||130 (201) 
+|3x3||240 (240)||81||Ranged, Magic ||3,444||9,207||Takes damage based on colour: white requires [[air spells]], blue requires [[water spells]], orange requires [[Melee]], brown requires [[earth spell]]s, red requires [[fire spell]]s, and green requires [[Ranged]]. In hard mode, dealing high damage causes it to change colour early.||[[Recipe for Disaster#Defeating the Culinaromancer|Recipe for Disaster - Final battle]]
+|[[Bones]]
+|-
+|[[Culinaromancer (Nightmare Zone)|Culinaromancer]]||75 (209)
+|1x1||140 (255)|| 10||Magic||1,141 ||9,897||[[Magic]] attacks hit high; [[Protect from Magic]] recommended.||[[Recipe for Disaster#Defeating the Culinaromancer|Recipe for Disaster - Final battle]]
+|[[Cake]]
+|-
+|[[Chronozon (Nightmare Zone)|Chronozon]]||170 (297)
+|3x3||60 (120)|| 173||Melee||5,890 ||20,255||All four [[blast spells]] '''must''' deal damage before he can be killed. [[Runes]] are provided in the arena. [[Demonbane weapons|Demonbane weapon's]] bonus damage activates against this monster.||[[Family Crest]]
+|[[Vile ashes]]
+|-
+|[[Black demon (Nightmare Zone)|Black demon]]||172 (292) 
+|3x3||165 (255)|| 152||Melee||6,012||19,564|| Kills count towards black demon Slayer tasks. [[Demonbane weapons|Demonbane weapon's]] bonus damage activates against this monster.||[[The Grand Tree]]
+|[[Malicious ashes]]
+|-
+|[[Giant Roc (Nightmare Zone)|Giant Roc]]||172 (257) 
+|5x5||200 (255)||100||Ranged||6,012||15,191 ||Knocks the player several squares back and [[Stun (status)|stun]]s them. Ranged attack throwing a rock that deals high damage, using [[Protect from Missiles]] causes Giant Roc to not use this attack; otherwise run away to avoid it||[[My Arm's Big Adventure]]
+|[[Big bones]]
+|-
+|[[Dessous (Nightmare Zone)|Dessous]]||139 (217)
+|1x1|| 200 (255)||99|| Magic, Ranged|| 3,933||10,818||Attacks with [[Magic]] and [[Ranged]] simultaneously. Low Magic and stab defence. ||[[Desert Treasure I]]
+|[[Vampyre dust]]
+|-
+|[[Damis (Nightmare Zone)|Damis]]||103, 174 (200, 272)
+|1x1||90, 200 (198, 255)||90, 160||Melee||6,155|| 16,802||After the first form is defeated, he becomes stronger and drains [[Prayer]] at a high rate. [[Absorption]] potions are recommended.||[[Desert Treasure I]]
+|[[Bones]]
+|-
+|[[Fareed (Nightmare Zone)|Fareed]]||227 (299)
+|1x1||130 (255)||135|| Melee, Magic in Melee range only||5,665||20,485||Use [[water spells]] otherwise [[ice gloves]] must be worn to attack or your weapon will be unequipped. Deals high damage. ||[[Desert Treasure I]]
+|[[Ashes]]
+|-
+|[[Kamil (Nightmare Zone)|Kamil]]||154 (273)
+|1x1||130 (255)||135||Magic|| 4,830 ||17,032||Freezes frequently, stopping movement and interrupting auto-retaliate. Does not drain stats. Hits through [[Protect from Magic]], but it forces him into Melee range. Standing in the square next to him causes freeze to never deal damage.||[[Desert Treasure I]]
+|[[Chocolate cake]]
+|-
+|[[Nezikchened (Nightmare Zone)|Nezikchened]]||187 (295)
+|3x3||150 (150)||167||Magic||7,112||20,025||Stops attacking in Melee range. Can be used to trap other bosses.||[[Legends' Quest]]
+|[[Ashes]]
+|-
+|[[Barrelchest (Nightmare Zone)|Barrelchest]]||210 (380)
+|3x3||134 (255)|| 140||Melee||7,357||33,145||Deals high damage, drains [[Prayer]] and [[Defence]] continues to drain [[Attack]] if defence is 1, turns off [[protection prayers]] before every attack.||[[The Great Brain Robbery]]
+|
+|-
+|[[Giant Scarab (Nightmare Zone)|Giant Scarab]]||191 (316)
+|3x3|| 130 (255)||169 ||Melee, Ranged||7,418 ||22,787||Ranged attack looks like [[Earth Blast]]. Does not summon reinforcements like during [[Contact!]] and has a 50% [[Elemental weakness]] to fire spells.
+|[[Contact!]]
+|
+|-
+|[[Jungle Demon (Nightmare Zone)|Jungle Demon]]||195 (327)
+|3x3||170 (255)||170||Normal: Melee, Magic<br />Hard: Melee ||7,744 || 24,398||Deals high [[Magic]] and [[Melee]] damage in Melee range in normal mode. In hard mode, only uses Melee attacks. No help from the 10th Squad like during [[Monkey Madness I]]. [[Demonbane weapons|Demonbane weapon's]] bonus damage activates against this monster.||[[Monkey Madness I]]
+|[[Malicious ashes]]
+|-
+|[[Elven traitor]]||182 (368)
+|1x1||300 (300)||102||Ranged|| 6,746||31,073|| Green arrow deals high damage, purple arrow disables [[Prayer]], orange arrow is slow and dodgeable, but hits very high damage through Prayer.||[[Song of the Elves]]
+|
+|-
+|[[Essyllt (Nightmare Zone)|Essyllt]]||236 (395)
+|1x1||320 (320)||104||Melee, Magic, Ranged||22,662||71,814||Can attack from huge range, occasionally stuns the player and quickly throws a knife dealing up to 43+ damage, which can be blocked with [[Protect from Missiles]] if the player is fast enough. He also occasionally throws a vial with blue liquid that drains all the player's combat stats below 5 of their non-boosted level.||[[Song of the Elves]]
+|
+|-
+|[[The Untouchable (Nightmare Zone)|The Untouchable]]||274 (440)
+|2x2||90 (180)||434 ||Melee||15,285||44,423||In hard mode: Reflects the floor of 20% of all damage dealt, a minimum of 1||[[Dream Mentor]]
+|
+|-
+|[[The Everlasting (Nightmare Zone)|The Everlasting]]||223 (365)
+|3x3|| 230 (255)||120||Melee|| 10,129||30,613||Has very high [[Magic]] [[Defence]]; [[stab]] or [[Ranged]] attacks will deal better damage. Will be ignored by Zapper power-up||[[Dream Mentor]]
+|
+|-
+|[[The Inadequacy (Nightmare Zone)|The Inadequacy]]||343 (600)
+|5x5||180 (255)||240||Melee, Ranged||23,967||82,863|| Uses [[Melee]] attacks only when within Melee range; otherwise, it will only uses [[Ranged]] attacks. Does not summon [[doubt]]s like during [[Dream Mentor]]. [[Protection prayer]]s are effective.||[[Dream Mentor]]
+|
+|}
+
+==Rewards==
+{{main|Dom Onion's Reward Shop}}
+Players can purchase various rewards and imbues from a chest near [[Dominic Onion]]. These can only be purchased using the reward points obtained inside the minigame. Players can have up to 2,147,483,647 points at once.
+
+===Resources===
+[[File:Dom Onion's Reward Shop stock.png|thumb|300px|The rewards for participating in the Nightmare Zone.]]
+Resources include certain [[Herblore]] ingredients, elemental [[runes]], and items that are only obtainable via the minigame, such as [[herb box]]es and [[scroll of redirection|scrolls of redirection]]. Players can only buy up to 15 herb boxes per day.
+
+[[Ironman mode|Ironmen]] can only buy scrolls of redirection from this tab.
+
+{{StoreTableHead|currency=NMZ|bucket=no|hidege=yes|hidebuy=yes|hidestock=yes|hiderestock=yes|hidecaption=yes|column1=[[Grand Exchange|GE price]]|column2=GP per point}}
+{{StoreLine|stock=inf|buy=N/A|name=Flax|sell=75|column1={{Coins|{{GEP|Flax}}}}|column2={{Coins|{{GEP|Flax}}/75}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Bucket of sand|sell=200|column1={{Coins|{{GEP|Bucket of sand}}}}|column2={{Coins|{{GEP|Bucket of sand}}/200}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Seaweed|sell=200|column1={{Coins|{{GEP|Seaweed}}}}|column2={{Coins|{{GEP|Seaweed}}/200}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Compost potion(4)|sell=5000|column1={{Coins|{{GEP|Compost potion(4)}}}}|column2={{Coins|{{GEP|Compost potion(4)}}/5000}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Air rune|sell=25|column1={{Coins|{{GEP|Air rune}}}}|column2={{Coins|{{GEP|Air rune}}/25}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Water rune|sell=25|column1={{Coins|{{GEP|Water rune}}}}|column2={{Coins|{{GEP|Water rune}}/25}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Earth rune|sell=25|column1={{Coins|{{GEP|Earth rune}}}}|column2={{Coins|{{GEP|Earth rune}}/25}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Fire rune|sell=25|column1={{Coins|{{GEP|Fire rune}}}}|column2={{Coins|{{GEP|Fire rune}}/25}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Rune essence|sell=60|column1={{Coins|{{GEP|Rune essence}}}}|column2={{Coins|{{GEP|Rune essence}}/60}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Pure essence|sell=70|column1={{Coins|{{GEP|Pure essence}}}}|column2={{Coins|{{GEP|Pure essence}}/70}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Herb box|sell=9500|gemw=no|column1={{Coins|({{Average drop value|mob=herb box|raw=y}})}}{{efn|[[Herb box]] value approximated based on data located on its page.}}|column2={{Coins|{{#vardefineecho:NMZPointValue|({{Average drop value|mob=herb box|raw=y}}) / 9500}}}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Vial of water|sell=145|column1={{Coins|{{GEP|Vial of water}}}}|column2={{Coins|{{GEP|Vial of water}}/145}}}}
+{{StoreLine|stock=inf|buy=N/A|name=Scroll of redirection|sell=775|gemw=no|column1=N/A|column2=N/A}}
+{{StoreTableBottom}}
+{{Notelist}}
+
+===Upgrades===
+{{Nightmare Zone upgrades}}
+
+===Benefits===
+[[File:Overload usage.gif|frame|A player uses an overload potion.]]
+Benefits include certain potions that can only be used within the minigame. The potions are sold by the dose and are automatically stored in the nearby barrels, with each barrel being able to hold up to 255 doses of each potion. Players can freely withdraw the desired number of doses of each potion before entering a dream, [[empty vial]]s are not required. Upon death in a dream, any unused potions are not lost.
+
+All Nightmare Zone potions (excluding [[Overload (Nightmare Zone)|overloads]], due to the damage dealt) can be drunk extremely quickly and do not delay any hits. Like [[combo food]]s, 28 doses of [[Absorption|absorption potion]] can be drunk at the speed of cleaning an inventory of [[herb]]s, by clicking on them one by one. This can also be done with food/other potions with Nightmare Zone potions, without delaying any hits.
+
+{| class="wikitable align-left-2" style="text-align:center;"
+! colspan="2" |Item
+!Points per dose
+! Effective cost{{efn|Based on average value of herb boxes.}}
+|-
+| {{plinkt|Super ranging (1)}}
+|250
+|{{Coins|{{#var:NMZPointValue}} * 250}}
+|-
+| {{plinkt|Super magic potion (1)}}
+|250
+|{{Coins|{{#var:NMZPointValue}} * 250}}
+|-
+| {{plinkt|Overload (1) (Nightmare Zone)|txt=Overload (1)|pic=Overload (1)}}
+|1,500
+|{{Coins|{{#var:NMZPointValue}} * 1500}}
+|-
+| {{plinkt|Absorption (1)}}
+|1,000
+|{{Coins|{{#var:NMZPointValue}} * 1000}}
+|}
+{{Notelist}}
+
+==Development history==
+The overall concept for the Nightmare Zone, derived from ''RuneScape 3''{{'}}s {{RSL|Dominion Tower}} minigame, was first mentioned on 19 April 2013 in the [[Update:Dev Blog: Third Old School RuneScape Content Poll|Developer's Blog]] for the game's [[Poll:Old School feature poll 3 – April 2013|third content poll]], in a section detailing the development of future content and asking players to come up with some designs, keeping in mind the limitations of the team's development tools. One example the team gave was written as such:
+
+{{cquote2|An aged guardian stands by a lever near the Yanille bank. When you talk to her, she lists the boss monsters of various quests that you have completed. You select which one you'd like to fight again. Once you're ready, you pull the lever. You are teleported into a cave that looks exactly like the KBD lair, but instead of the KBD you meet the monster you wished to fight. It's a private cave, so you'd have the monster all to yourself. If you win, you get rewarded with yellow tokens. The aged guardian exchanges these for degradable yellow armour that absorbs monster damage but not PVP damage.|Mod Ash & Mod Nexus, Content Developers}}
+
+The concept, well received by players, was later expanded in [[Update:DevBlog: Something Bigger|another Developer's Blog]] on 13 May 2013. The blog outlined a provisional list of quests with bosses that the player would be able to re-fight, alongside Endurance and Rumble modes. The rewards mentioned in this blog offered only consumable resources (ex. flax, essence, and herblore ingredients).
+
+===First poll===
+[[Update:Dev Blog: Dom Onion Tower|An updated blog]] was released on 5 June 2013, which added fees for entering a dream, a hard mode for both Endurance and Rumble modes, in addition to offering more rewards alongside the aforementioned consumable resources:
+*Sets of degradeable tier 50 and 65 melee, ranged, or magic equipment. Charged with reward points, they would have had a random chance to restore health during combat.
+*Teleport scrolls to [[runic altar]]s
+*Teleport scrolls to [[Portal (Player-owned house)|player-owned house portals]]
+
+The minigame was put to a poll the next day in [[Poll:Old School feature poll 5 – Dom Onion Cave, and more...|Old School feature poll 5 – Dom Onion Cave, and more...]], passing with 77.4% of voters supporting the minigame's development, though all the offered rewards failed to pass. The poll also let players vote on the location and name of the minigame. The location with the most votes was Yanille (30.5%), while the name with the most votes was Nightmare Zone (25.2%).
+
+The other locations, in order of popularity, were:
+*Edgeville (24.8%)
+* Varrock (15.75%)
+*Seers' Village (11.8%)
+*Falador (11.2%)
+*East Ardougne (5.9%)
+
+The other names, in order of popularity, were:
+*Dom Onion's Cave (21.6%)
+* DreamArena (21.2%)
+*Dominic's Den (17.1%)
+*Domain of Morpheus (14.8%)
+
+===Rewards poll===
+[[File:Dom Onion's Reward Shop v1.png|thumb|250px|The Nightmare Zone's reward shop as it appeared on release.]]
+With the Nightmare Zone's release on 5 September 2013, the reward shop only offered resources and potions used inside the minigame. After player feedback, more rewards were offered in a [[Update:Dev blog: Content Poll 10 - New Rewards|Developer's Blog]] on 13 September 2013, and were polled five days later in [[Poll:Old School feature poll 10: New Rewards|Old School feature poll 10: New Rewards]].
+
+====Imbues ====
+The first set of rewards included using reward points to imbue certain rings and equipment:
+*Imbued Fremennik rings would have their stats doubled.
+*Imbued diamond rings would have a +5 Stab bonus, with +4 in all other Attack bonuses
+*Imbued dragonstone rings would have +5 Attack and Defence bonuses
+*Imbued onyx rings would have +6 Attack and Defence bonuses
+* Imbued black masks would have their negative Attack bonuses removed, and would give a +15% accuracy in Ranged and Magic, and a +15% damage bonus in Ranged, alongside the mask's original bonuses.
+
+All imbues, excluding the jewelled rings, passed the poll. The imbued black mask would later receive a +15% [[magic damage]] bonus in [[Poll:Old School feature poll 16|another poll]], while imbuing crystal equipment was removed with the release of [[Song of the Elves]], where their stats no longer degrade at all.
+
+====High-level potions====
+The second set of rewards included tradeable ingredients to create higher level potions.
+* '''Super anti-fire''' - Requiring level 89 Herblore to make (and level 93 to create the [[barbarian mix]] version), the potion would provide complete immunity to regular dragonfire (and reduced effects for the King Black Dragon's dragonfire attacks) for an unspecified amount of time.
+*'''Energy renewal''' - Requiring level 92 Herblore to make (and level 96 to create the barbarian mix version), the potion would fully restore [[run energy]], and keep it at 100% for 30 seconds.
+* '''Super prayer''' - Requiring level 94 Herblore to make (and level 98 to create the barbarian mix version), the potion would restore 4 more prayer points per dose than a normal [[prayer potion]], with the added benefit of being able to restore above the player's maximum Prayer points.
+
+All three failed the poll; the [[super antifire potion]] would later be released as part of [[Dragon Slayer II]], and the [[stamina potion]] could be considered as a reworked energy renewal potion.
+
+====Quest point cape (t)====
+[[File:Quest point cape trim recolour testing.png|frame|Early testing by Mod Ash of recolouring the cape's trimmed section.]]
+The [[quest point cape]] was offered to be trimmable upon completion of an Endurance dream alongside a small stat increase. 
+*Completing a normal Endurance dream would trim the cape blue, increasing the Defence bonuses from +9 to +11 and giving it a +2 Prayer bonus.
+*Completing a hard Endurance dream would trim the cape red, giving it +1 in all Attack bonuses, in addition to the blue-trimmed cape's bonus increases. This would give the red-trimmed cape identical bonuses to a [[fire cape]] (excluding its +4 Strength bonus).
+
+Both cape trims failed the poll. The quest point cape would later become trimmable on 5 March 2015, upon the completion of all [[Achievement Diaries]].
+
+====Other====
+Other rewards offered include:
+*[[Herb box]]es, which would provide ten rolls on the [[herb drop table]]. Though it passed a poll, the daily buy limit of 15 was not mentioned and was likely implemented as a balancing change.
+*[[Scroll of redirection]], which was offered once before as tradeable teleport scrolls to [[Portal (Player-owned house)|player-owned house portals]] and failed. The reworked scroll was made untradeable and would have to be used on [[Teleport to house (tablet)|teleport to house tablets]] instead, rather than being directly usable on its own.
+* [[Cow mask]], originally made as part of the [[Duke of Bridgelum]] [[random event]], was offered as a cosmetic reward. Though it failed the poll, it was later given for free as part of [[birthday event]]s alongside the full [[cow outfit]].
+*Additional resource rewards were offered to be purchasable, though only the vial of water passed the poll. 
+**[[Goat horn dust]]
+**[[Limpwurt root]]
+**[[Mort myre fungus]] (upon completion of [[Nature Spirit]])
+** [[Swamp tar]]
+**[[Unicorn horn dust]]
+**[[Vial of water]]
+**[[Wine of Zamorak]]
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 24 April 2024
+|update = Varlamore Tweaks, GameJam V Commences & More!
+|change = Fixed a bug where the [[Slayer helmet (i)]] wasn't refunding the points/scroll used to imbue it in some instances when lost on death.
+}}
+{{Subject changes
+|date = 10 April 2024
+|update = Undead Pirates, Colosseum Changes & more!
+|poll = Undead Pirates Rewards & More
+|change =
+* Manually uncharging an imbued item will refund 100% of the points, up from 80%
+* Dying with an imbued item that would be lost on death will now refund either the points or the Imbue Scroll used to create it.
+}}
+{{Subject changes
+|date = 30 August 2023
+|update = Poll 80 ToA Changes & DMM Tweaks
+|change = [[Dragon scale dust]] has been removed from the [[Dom Onion's Reward Shop|Nightmare Zone reward shop]].
+}}
+{{Subject changes
+|date = 13 April 2022
+|update = Easter 2022
+|change = Bosses now spawn with reduced delays in endurance fights.
+}}
+{{Subject changes
+|date = 2 April 2020
+|update = Easter Event (2 April 2020)
+|change = Some spammy messages that played in Nightmare Zone when a boss transitions to another form instead of dying have been filtered.
+}}
+{{Subject changes
+|date = 25 July 2019
+|update = Song of the Elves
+|poll = Song of the Elves rewards
+|change = With the release of [[Song of the Elves]], [[Crystal equipment]] no longer degrades from use and therefore are not able to be imbued.
+}}
+{{Subject changes
+|date = 4 July 2019
+|update = Forthos Dungeon
+|poll = The Forthos Dungeon
+|change = With the release of the [[Forthos Dungeon]], red spiders' eggs have now been removed from the resource shop. Prior to its removal, it cost 300 points.
+}}
+{{Subject changes
+|date = 10 January 2019
+|update = The Kebos Lowlands
+|poll = The Kebos Lowlands
+|change = With [[snape grass]] and [[potato cacti]] becoming farmable produce, they were removed from the resource shop. Prior to their removal, they cost 175 and 1,250 points respectively.
+}}
+{{Subject changes
+|date = 6 October 2016
+|update = The Hill Giant Boss
+|poll = 
+|change = Rock cakes and explosive Digsite liquids can now hit through the absorption potion in Nightmare Zone.
+}}
+{{Subject changes
+|date = 10 March 2016
+|update = Custom Nightmare Zone Rumbles
+|poll = Quality of Life - Top 10 General Suggestions
+|change = * Players can select their own set of bosses within normal and hard dreams by selecting the customisable options after selecting Rumble mode for 20,000 coins or 10,000 with maximum quest points.
+* Practice mode is available for free for all bosses.
+}}
+{{Subject changes
+|date = 18 February 2016
+|update = Dragon Claws & 3rd Birthday
+|change = The Nightmare Zone versions of Fareed and Flambeed will no longer have a chance of dropping weapons on the ground when you have a full inventory.
+}}
+{{Subject changes
+|date = 21 May 2015
+|update = World Switcher & RotG (i)
+|poll = Old School Content Poll 33
+|change = The Ring of the Gods can now be imbued at Nightmare Zone for 650,000 points with a holy wrench in inventory.
+}}
+{{Subject changes
+|date = 3 April 2014
+|update = Chaos Elemental Pet & World Map
+|change = Items at NMZ no longer show their colour tags.
+}}
+{{Subject changes
+|date = 17 October 2013
+|update = Patch Notes (17 October 2013)
+|poll = Old School feature poll 11: PvP Worlds and more
+|change = The Nightmare Zone reward shop now has Bank PIN protection.
+}}
+{{Subject changes
+|date = 10 October 2013
+|update = Patch Notes (10 October 2013)
+|change = We have also made the overload potion in Nightmare Zone hit you for 50 hitpoints of damage when you drink it, in a similar way to how it worked before EoC.
+}}
+{{Subject changes
+|date = 3 October 2013
+|update = Patch Notes (3 October 2013)
+|change = The overload effect from Nightmare Zone now resets itself more quickly if you leave unexpectedly.
+}}
+{{Subject changes
+|date = 26 September 2013
+|update = Patch Notes (26 September 2013)
+|poll = Old School feature poll 10: New Rewards
+|change = *The Seer, Archer, Warrior and Berserker rings can be imbued, improving their combat stats.
+*Crystal bows and shields can be imbued, making them keep their combat stats unchanged as they degrade.
+*Black Masks can be imbued, giving you combat bonuses when using Magic or Ranged attacks against your assigned Slayer target, and improving their combat stats a little.
+*The reward shop now sells Scrolls of Redirection that can be used to change the destination of a 'Teleport to House' tablet. You can choose a destination of any player-owned house portal, or Trollheim.
+*The reward shop now sells vials and a limited supply of herb boxes.
+}}
+{{Subject changes
+|date = 19 September 2013
+|update = Patch Notes (19 September 2013)
+|change = Some balancing changes have been made in Nightmare Zone to favour players who've completed a wider variety of quests, not just the Lunar series.
+}}
+{{Subject changes
+|date = 12 September 2013
+|update = Patch Notes (12 September 2013)
+|change = * The Dagannoth and Gelattinoth Mothers no longer notify you about their colour changes if you've left the Nightmare Zone arena.
+* Nightmare Zone now plays more appropriate music for the Ice Troll King.
+}}
+{{Subject changes
+|date = 5 September 2013
+|update = Will you wake up from the Nightmare Zone?
+|poll = Old School feature poll 5 – Dom Onion Cave, and more...
+|change = Added to the game.
+}}
+{{Subject changes footer}}
+
+==Music==
+Each boss has a music track associated with it that will play when fighting it. In rumble mode, the music track played will be randomly selected from one of the four bosses in the arena. However, the [[Trapped Soul (Nightmare Zone)|Trapped Soul]], [[Corsair Traitor]], [[Witch's experiment (Nightmare Zone)|Witch's experiment]], [[Tanglefoot (Nightmare Zone)|Tanglefoot]], and [[Chronozon (Nightmare Zone)|Chronozon]] do not have their own individual tracks, and instead play from a separate shared list of tracks.
+{| class="wikitable mw-collapsible mw-collapsed embed-audio-links"
+|+
+!Title
+!Boss
+!Music Track
+|-
+|[[Tiptoe]]
+|[[Count Draynor (Nightmare Zone)|Count Draynor]]
+|[[:File:Tiptoe.ogg|Play Track]]
+|-
+|[[Subterranea]]
+|[[Sand Snake (Nightmare Zone)|Sand Snake]]
+|[[:File:Subterranea.ogg|Play Track]]
+|-
+|[[Lower Depths]]
+|[[Corrupt Lizardman (Nightmare Zone)|Corrupt Lizardman]]
+|[[:File:Lower Depths.ogg|Play Track]]
+|-
+|[[Cave of Beasts]]
+|[[The Kendal (Nightmare Zone)|The Kendal]]
+|[[:File:Cave of Beasts.ogg|Play Track]]
+|-
+|[[Waking Dream]]
+|[[Me (Nightmare Zone)|Me]]
+|[[:File:Waking Dream.ogg|Play Track]]
+|-
+|[[Stuck in the Mire]]
+|[[Headless Beast (Nightmare Zone)|Headless Beast]]
+|[[:File:Stuck in the Mire.ogg|Play Track]]
+|-
+|[[Chickened Out]]
+|[[Evil Chicken (Nightmare Zone)|Evil Chicken]]
+|[[:File:Chickened Out.ogg|Play Track]]
+|-
+|[[Waterfall (music track)|Waterfall]]
+|[[Moss Guardian (Nightmare Zone)|Moss Guardian]]
+|[[:File:Waterfall.ogg|Play Track]]
+|-
+|[[Goblin Game]]
+|[[Slagilith (Nightmare Zone)|Slagilith]]
+|[[:File:Goblin Game.ogg|Play Track]]
+|-
+|[[Spooky Jungle]]
+|[[Nazastarool (Nightmare Zone)|Nazastarool]]
+|[[:File:Spooky Jungle.ogg|Play Track]]
+|-
+|[[Voodoo Cult]]
+|[[Nezikchened (Nightmare Zone)|Nezikchened]]
+|[[:File:Voodoo Cult.ogg|Play Track]]
+|-
+|[[Haunted Mine (music track)|Haunted Mine]]
+|[[Treus Dayth (Nightmare Zone)|Treus Dayth]]
+|[[:File:Haunted Mine.ogg|Play Track]]
+|-
+|[[Fangs for the Memory]]
+|[[Skeleton Hellhound (Nightmare Zone)|Skeleton Hellhound]]
+|[[:File:Fangs for the Memory.ogg|Play Track]]
+|-
+|[[Grip of the Talon]]
+|[[Agrith Naar (Nightmare Zone)|Agrith-Naar]]
+|[[:File:Grip of the Talon.ogg|Play Track]]
+|-
+|[[Underground (music track)|Underground]]
+|[[Tree spirit (Nightmare Zone)|Tree spirit]]
+|[[:File:Underground.ogg|Play Track]]
+|-
+|[[Contest]]
+|[[Dad (Nightmare Zone)|Dad]] & [[Arrg (Nightmare Zone)|Arrg]]
+|[[:File:Contest.ogg|Play Track]]
+|-
+|[[Emotion]]
+|[[Black Knight Titan (Nightmare Zone)|Black Knight Titan]]
+|[[:File:Emotion.ogg|Play Track]]
+|-
+|[[Fe Fi Fo Fum]]
+|[[Glod (Nightmare Zone)|Glod]]
+|[[:File:Fe Fi Fo Fum.ogg|Play Track]]
+|-
+|[[Chef Surprise]]
+|[[Flambeed (Nightmare Zone)|Flambeed]], [[Agrith-Na-Na (Nightmare Zone)|Agrith-Na-Na]], [[Karamel (Nightmare Zone)|Karamel]], 
+[[Dessourt (Nightmare Zone)|Dessourt]], [[Gelatinnoth Mother (Nightmare Zone)|Gelatinnoth Mother]] & [[Culinaromancer (Nightmare Zone)|Culinaromancer]]
+|[[:File:Chef Surprise.ogg|Play Track]]
+|-
+|[[Narnode's Theme]]
+|[[Black demon (Nightmare Zone)|Black demon]]
+|[[:File:Narnode's Theme.ogg|Play Track]]
+|-
+|[[Roc and Roll]]
+|[[Giant Roc (Nightmare Zone)|Giant Roc]]
+|[[:File:Roc and Roll.ogg|Play Track]]
+|-
+|[[Waterlogged]]
+|[[Dessous (Nightmare Zone)|Dessous]]
+|[[:File:Waterlogged.ogg|Play Track]]
+|-
+|[[Out of the Deep]]
+|[[Dagannoth mother (Nightmare Zone)|Dagannoth mother]]
+|[[:File:Out of the Deep.ogg|Play Track]]
+|-
+|[[Path of Peril]]
+|[[Damis (Nightmare Zone)|Damis]]
+|[[:File:Path of Peril.ogg|Play Track]]
+|-
+|[[Bone Dry]]
+|[[Fareed (Nightmare Zone)|Fareed]]
+|[[:File:Bone Dry.ogg|Play Track]]
+|-
+|[[Frostbite]]
+|[[Kamil (Nightmare Zone)|Kamil]]
+|[[:File:Frostbite.ogg|Play Track]]
+|-
+|[[Beetle Juice]]
+|[[Giant Scarab (Nightmare Zone)|Giant Scarab]]
+|[[:File:Beetle Juice.ogg|Play Track]]
+|-
+|[[Showdown]]
+|[[Jungle Demon (Nightmare Zone)|Jungle Demon]]
+|[[:File:Showdown.ogg|Play Track]]
+|-
+|[[The Fires of Lletya]]
+|[[Arianwyn (Nightmare Zone)|Elven traitor]]
+|[[:File:The Fires of Lletya.ogg|Play Track]]
+|-
+|[[No Pasaran]]
+|[[Essyllt (Nightmare Zone)|Essyllt]]
+|[[:File:No Pasaran.ogg|Play Track]]
+|-
+|[[Untouchable]]
+|[[The Untouchable (Nightmare Zone)|The Untouchable]]
+|[[:File:Untouchable.ogg|Play Track]]
+|-
+|[[Everlasting]]
+|[[The Everlasting (Nightmare Zone)|The Everlasting]]
+|[[:File:Everlasting.ogg|Play Track]]
+|-
+|[[Inadequacy]]
+|[[The Inadequacy (Nightmare Zone)|The Inadequacy]]
+|[[:File:Inadequacy.ogg|Play Track]]
+|-
+|[[Brain Battle]]
+|[[Barrelchest (Nightmare Zone)|Barrelchest]]
+|[[:File:Brain Battle.ogg|Play Track]]
+|-
+|[[Surok's Theme]]
+|[[King Roald (Nightmare Zone)|King Roald]]
+|[[:File:Surok's Theme.ogg|Play Track]]
+|-
+|[[King of the Trolls]]
+|[[Ice Troll King (Nightmare Zone)|Ice Troll King]]
+|[[:File:King of the Trolls.ogg|Play Track]]
+|-
+|[[Attack 1]]
+|[[Khazard warlord (Nightmare Zone)|Khazard warlord]]
+|[[:File:Attack 1.ogg|Play Track]]
+|-
+|[[Attack 2]]
+|[[Elvarg (Nightmare Zone)|Elvarg]]
+|[[:File:Attack 2.ogg|Play Track]]
+|-
+|[[Attack 4]]
+|[[Bouncer (Nightmare Zone)|Bouncer]]
+|[[:File:Attack 4.ogg|Play Track]]
+|}
+
+The [[Trapped Soul (Nightmare Zone)|Trapped Soul]], [[Corsair Traitor]], [[Witch's experiment (Nightmare Zone)|Witch's experiment]], [[Tanglefoot (Nightmare Zone)|Tanglefoot]], and [[Chronozon (Nightmare Zone)|Chronozon]] will play one of the following tracks when fought. Only the tracks on this list that have been previously unlocked by the player are played. As such, it is not possible to unlock any of these tracks through the Nightmare Zone.
+{| class="wikitable mw-collapsible mw-collapsed embed-audio-links"
+|+
+!Title
+!Music track
+|-
+|[[Karamja Jam]]
+|[[:File:Karamja Jam.ogg|Play Track]]
+|-
+|[[Aztec]]
+|[[:File:Aztec.ogg|Play Track]]
+|-
+|[[Dance of the Undead]]
+|[[:File:Dance of the Undead.ogg|Play Track]]
+|-
+|[[Claustrophobia]]
+|[[:File:Claustrophobia.ogg|Play Track]]
+|-
+|[[Attack 1]]
+|[[:File:Attack 1.ogg|Play Track]]
+|-
+|[[Attack 2]]
+|[[:File:Attack 2.ogg|Play Track]]
+|-
+|[[Attack 3]]
+|[[:File:Attack 3.ogg|Play Track]]
+|-
+|[[Attack 4]]
+|[[:File:Attack 4.ogg|Play Track]]
+|-
+|[[Attack 5]]
+|[[:File:Attack 5.ogg|Play Track]]
+|-
+|[[Attack 6]]
+|[[:File:Attack 6.ogg|Play Track]]
+|-
+|[[Victory is Mine]]
+|[[:File:Victory is Mine.ogg|Play Track]]
+|-
+|[[The Cellar Dwellers]]
+|[[:File:The Cellar Dwellers.ogg|Play Track]]
+|-
+|[[The Noble Rodent]]
+|[[:File:The Noble Rodent.ogg|Play Track]]
+|-
+|[[Scape Scared]]
+|[[:File:Scape Scared.ogg|Play Track]]
+|-
+|[[Pharaoh's Tomb]]
+|[[:File:Pharaoh's Tomb.ogg|Play Track]]
+|-
+|[[Scape Main]]
+|[[:File:Scape Main.ogg|Play Track]]
+|-
+|[[Dagannoth Dawn]]
+|[[:File:Dagannoth Dawn.ogg|Play Track]]
+|-
+|[[Ogre the Top]]
+|[[:File:Ogre the Top.ogg|Play Track]]
+|-
+|[[Woe of the Wyvern]]
+|[[:File:Woe of the Wyvern.ogg|Play Track]]
+|-
+|[[Close Quarters]]
+|[[:File:Woe of the Wyvern.ogg|Play Track]]
+|-
+|[[Storm Brew]]
+|[[:File:Storm Brew.ogg|Play Track]]
+|-
+|[[Into the Abyss]]
+|[[:File:Into the Abyss.ogg|Play Track]]
+|}
+
+==Trivia==
+* The Nightmare Zone was the first game update to introduce new content created specifically for ''Old School RuneScape''. It reuses assets like the [[King Black Dragon Lair]] and various quest bosses because Jagex had extremely limited access to developer tools at the time.
+** There is a very small chance for a [[Cow (Nightmare Zone)|cow]] to appear inside a dream. This is an easter egg referencing how Jagex’s lack of a proper map editor at the time caused a cow to occasionally wander into the minigame’s starting area. {{CiteReddit|author=Mod Mat K|url=https://www.reddit.com/r/2007scape/comments/35u038/legitimately_unsure_how_the_cow_got_into_nmz/cr86r9q/|title=Legitimately unsure how the Cow got into NMZ?|tdate=13 May 2015|notes=|name=|archiveurl=https://archive.is/XsIY8|archivedate=12 November 2025}} 
+*[[Dominic Onion]] is a play on "Dominion" as the minigame resembles the {{RSL|Dominion Tower}} in ''RuneScape 3''.
+*Trying to cast the [[Lunar spell]] [[Dream]] while in a dream within the Nightmare Zone yields the message: {{mes|You cannot perform Inception here. Dreaming within this dream will inevitably activate your Kick (i.e. death).}}, as a reference to the 2010 sci-fi movie ''{{wp|Inception}}''.
+* Trying to cast [[Low Level Alchemy|Low]] or [[High Level Alchemy]] while within the Nightmare Zone yields the message {{mes|You shouldn't need more cash in here; there are no shops.}}.
+
+== References==
+{{Reflist}}
+
+{{Nightmare Zone}}
+{{Currencies}}
+{{Activities}}
+{{Yanille}}

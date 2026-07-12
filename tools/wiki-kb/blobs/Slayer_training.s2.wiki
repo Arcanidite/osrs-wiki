@@ -1,0 +1,110 @@
+===Access to Slayer masters===
+In general, obtain tasks from the highest-level [[Slayer master]] that your Combat and [[Slayer]] levels allow. The monsters they assign generally give more experience than lower-level Slayer masters. [[Duradel]] is the best Slayer master to use for the fastest experience, but some players may find that [[Nieve]]'s (or [[Steve]]'s) task weighting better suit their preferences. Note that just because the player can access better Slayer masters, this does not directly translate to more experience per hour. That is, maximising experience per hour is not simply a matter of always taking tasks from the highest-level Slayer master that is currently available to the player.
+
+Some players train Slayer using only one master. However, players typically train Slayer by switching between two masters. They do this by using one specific Slayer master that is appropriate for (or lower than) their level, and then switch to using a different higher-levelled Slayer master in order to take advantage of completion milestones. There are Slayer completion milestones for every 10th, 50th, 100th, 250th and 1000th task completion that award additional Slayer points. Higher-levelled masters will assign more difficult tasks than the typical Slayer master would, either in monster assigned or quantity given, but the reward is a greater bonus of Slayer points.
+
+Each Slayer master usually assigns various monsters based on a weight rating, which determines how likely the player is to get that task. Some Slayer masters have unique tasks to themselves, such as [[Konar quo Maten]], who is the only one who assigns [[hydra]]s. The latter three Slayer masters usually have a shared pool of assignable monsters, albeit with modifications to either the quantity or weighting.
+
+Requirements or quests for accessing different Slayer masters and areas include:
+{| class="wikitable lighttable sortable"
+!Slayer Master
+!Location
+!Requirement to use
+!Points/task
+!10th
+!50th
+!100th
+!250th
+!1000th
+|-
+|[[Turael]]/[[Aya]]<ref group="n" name= "WGS">After [[While Guthix Sleeps]]</ref>
+|[[Burthorpe]]
+|Any level
+|0
+|0
+|0
+|0
+|0
+|0
+|-
+|[[Spria]]
+|[[Draynor Village]]
+|[[A Porcine of Interest]]
+|0
+|0
+|0
+|0
+|0
+|0
+|-
+|[[Mazchna]]/[[Achtryn]]<ref group="n" name= "WGS2">During [[While Guthix Sleeps]]</ref>
+|[[Canifis]]
+|[[Priest in Peril]], 20 combat or 99 Slayer
+|6
+|30
+|90
+|50
+|70
+|100
+|-
+|[[Vannaka]]
+|[[Edgeville Dungeon]]
+|40 combat or 99 Slayer
+|8
+|40
+|120
+|100
+|140
+|200
+|-
+|[[Chaeldar]]
+|[[Zanaris]]
+|[[Lost City]], 70 combat or 99 Slayer
+|10
+|50
+|150
+|250
+|350
+|500
+|-
+|[[Konar quo Maten]]
+|[[Mount Karuulm]]
+|75 combat or 99 Slayer
+|18<ref group="n" name="EliteKourendDiary">Completing the [[Kourend %26 Kebos Diary#Elite|elite Kourend & Kebos Diary]] increases Konar's points by approximately 11.1%, from a base task value of 18 to 20.</ref>
+|90<ref group="n" name="EliteKourendDiary" />
+|270<ref group="n" name="EliteKourendDiary" />
+|450<ref group="n" name="EliteKourendDiary" />
+|630<ref group="n" name="EliteKourendDiary" />
+|900<ref group="n" name="EliteKourendDiary" />
+|-
+|[[Nieve]]/[[Steve]]<ref group="n">After [[Monkey Madness II]]</ref>
+|[[Tree Gnome Stronghold]]
+|85 combat or 99 Slayer
+|12<ref group="n" name="EliteWPDiary">Completing the [[Western Provinces Diary#Elite|elite Western Provinces Diary]] increases Nieve's/Steve's points to match that of Duradel.</ref>
+|60<ref group="n" name="EliteWPDiary" />
+|180<ref group="n" name="EliteWPDiary" />
+|300<ref group="n" name="EliteWPDiary" />
+|420<ref group="n" name="EliteWPDiary" />
+|600<ref group="n" name="EliteWPDiary" />
+|-
+|[[Duradel]]/[[Kuradal]]<ref group="n" name= "WGS">After [[While Guthix Sleeps]]</ref>
+|[[Shilo Village (location)|Shilo Village]]
+|[[Shilo Village]], 100 combat+50 Slayer or 99 Slayer
+|15
+|75
+|225
+|375
+|525
+|750
+|-
+|[[Krystilia]]
+|[[Edgeville]]
+|Any level (Done at least 1 task)
+|25
+|125
+|375
+|625
+|875
+|1250
+|}
+<references group="n" />

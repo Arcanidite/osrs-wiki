@@ -1,0 +1,12 @@
+===Rewards===
+----
+{{Quest rewards
+|name = Recipe for Disaster/Freeing the Goblin generals
+|image = [[File:Recipe for Disaster (Freeing the Goblin generals) reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Cooking|1,000}} [[Cooking]] experience
+*{{SCP|Farming|1,000}} [[Farming]] experience
+*{{SCP|Crafting|1,000}} [[Crafting]] experience
+*Further access to the [[Culinaromancer's Chest]].
+}}</onlyinclude>

@@ -1,0 +1,1 @@
+{"parse": {"title": "Strength potion", "pageid": 18169, "redirects": [], "wikitext": "===Herblore===\n{{Recipe\n|skill1 = Herblore\n|skill1lvl = 12\n|skill1boostable = Yes\n|skill1exp = 50\n|members = Yes\n|ticks = 2\n|mat1 = Tarromin potion (unf)\n|mat2 = Limpwurt root\n|output1 = Strength potion(3)\n}}"}}

@@ -1,0 +1,8 @@
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Snape grass|location=[[Waterbirth Island]]|members=Yes|2500,3730|2500,3731|2501,3727|2501,3729|2501,3732|2502,3726|2502,3753|2502,3756|2502,3757|2503,3733|2503,3758|2503,3759|2504,3732|2504,3753|2506,3731|2525,3751|2527,3746|2528,3716|2529,3735|2531,3735|2532,3762|2540,3765|2542,3765|2546,3763|2552,3757|2553,3751|2553,3754|leagueRegion = Fremennik}}
+{{ItemSpawnLine|name=Snape grass|location=[[The Dibber]] by [[Hosidius]]|members=Yes|1835,3640|1843,3643|1840,3644|1840,3645|1842,3644|1835,3638|1836,3638|1836,3643|1837,3642|1838,3644|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Snape grass|location=[[Hobgoblin Peninsula]] west of the [[Crafting Guild]]|members=Yes|2906,3297|2907,3295|2917,3274|leagueRegion = Asgarnia}}
+{{ItemSpawnLine|name=Snape grass|location=[[Civitas illa Fortis]]{{Refn|name=telegrab|This spawn requires [[telekinetic grab]] to obtain.}}|members=Yes|1736,3168|leagueRegion = Varlamore}}
+{{ItemSpawnTableBottom}}
+{{reflist|name=telegrab}}

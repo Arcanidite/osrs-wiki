@@ -1,0 +1,84 @@
+{{External|rsc=Al-Kharid mine|rs}}
+{{Infobox Location
+|name = Al Kharid mine
+|image = [[File:Al Kharid mine.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|location = North of [[Al Kharid]] ([[Kharidian Desert]])
+|race = [[Scorpion]]s
+|map = {{Map|name=Al Kharid mine|x=3298|y=3293|height=310|zoom=2}}
+|type = mine
+|leagueRegion = Desert
+}}
+{{Listen 
+|title = Arabian 2
+|desc = The music which plays when inside the mine
+|filename = Arabian 2.ogg
+}}
+The '''Al Kharid mine''' (also called '''Scorpion mine''') is a [[Mining]] area located just north of the desert city of [[Al Kharid]].
+
+The mine is advantageous because it is near a [[bank]] and a [[furnace]] and is located in a very low-risk location for its high-value infrequent rocks, such as [[Gold rocks|gold]], [[Mithril rocks|mithril]], and [[Adamantite rocks|adamantite]]. In addition, this [[List of mines|mine]] is one of many where three iron rocks can be mined without moving, thus ideal for [[Iron rocks#Power-mining Locations|power-mining]].
+
+==Rocks==
+{| class="wikitable sortable align-center-1 align-left-2" style="text-align:right;"
+! rowspan=2 colspan=2 | Rock
+! colspan=2 | {{SCP|Mining}} [[Mining]]
+! rowspan=2 | Quantity
+|-
+!Level
+!Exp
+|-
+|{{plinkp|Copper ore}}||[[Copper rock|Copper]]
+|1||17.5||3
+|-
+|{{plinkp|Tin ore}}||[[Tin rock|Tin]]
+|1||17.5||1
+|-
+|{{plinkp|Iron ore}}||[[Iron rock|Iron]]
+|15||35||9
+|-
+|{{plinkp|Silver ore}}||[[Silver rock|Silver]]
+|20||40||5
+|-
+|{{plinkp|Coal}}||[[Coal rock|Coal]]
+|30||50||3
+|-
+|{{plinkp|Gold ore}}||[[Gold rock|Gold]]
+|40||65||2
+|-
+|{{plinkp|Mithril ore}}||[[Mithril rock|Mithril]]
+|55||80||2
+|-
+|{{plinkp|Adamantite ore}}||[[Adamantite rock|Adamant]]
+|70||95||2
+|-
+|}
+There are also two rocks that hold nothing.
+
+==Monsters==
+[[File:Al Kharid mine safespot.png|alt=This image depicts a method of safespotting the scorpions in the Al Kharid mine.|thumb|250px|If here to power mine iron, the scorpions can be safespotted by angling one scorpion around the corner as shown here. This will also prevent any other scorpions from reaching you.]]
+There are nine level 14 [[scorpion]]s in the [[Al Kharid]] mine. They are [[Aggressiveness|aggressive]] to players with a [[combat level]] of 28 or below, so low-levelled players should be careful.
+
+==Spawns==
+Two item [[Spawning|spawns]] are located in the mine. The first one is four [[water rune]]s and the second one is three [[fire rune]]s, both with a 60 second respawn timer.
+
+==NPCs==
+There is only one [[Non-player character|NPC]] located in the [[Al Kharid]] mine. He is called "Man" and cannot be attacked. During the [[Family Crest]] [[Quests|quest]], his name is revealed to be [[Avan]].
+
+==Agility shortcut==
+[[Members]] with 38 [[Agility]] can access (or exit) the Al Kharid mine via an [[Agility]] [[Shortcuts|shortcut]] located on the northern part of the mine.
+
+==Treasure Trails==
+{{EmoteClueHeader}}
+{{EmoteClue|tier=easy|emote=Headbang|location=
+{{StashLocation
+|x=3303
+|y=3289
+|text=Rock inside the entrance to the Al Kharid mine to the right
+}}
+|item1=Desert shirt|item2=Leather gloves|item3=Leather boots}}
+{{EmoteClueBottom}}
+
+{{Al Kharid}}
+{{Mines}}

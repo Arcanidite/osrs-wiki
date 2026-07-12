@@ -1,0 +1,4 @@
+==Rewards==
+{{Quest rewards
+|name=Bone Voyage|image=[[File:Bone Voyage reward scroll.png|centre]]|qp=1|rewards=*Access to [[Fossil Island]] - to disembark the boat upon arrival at Fossil Island, speak to the [[Junior Navigator]].}}
+*[[Fossil island note book]]

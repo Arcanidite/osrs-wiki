@@ -1,0 +1,2 @@
+==Standard scimitars==
+{{Infotable Bonuses|Bronze scimitar|Iron scimitar|Steel scimitar|Black scimitar|White scimitar|Mithril scimitar|Adamant scimitar|Rune scimitar|Dragon scimitar|sort=aslash|nototals=yes}}

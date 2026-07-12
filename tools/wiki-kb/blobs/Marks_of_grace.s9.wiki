@@ -1,0 +1,21 @@
+==Spending marks of grace==
+{{Main|Grace's Graceful Clothing}}
+Marks of grace can be traded in at the [[Rogues' Den]] through [[Grace]], an NPC who sells the [[graceful outfit]] as well as [[Amylase pack]]s for marks of grace. As 10 marks of grace can be traded in to receive 100 amylase crystals, and each crystal can be used to make one dose of stamina potion, each mark of grace is good for two and a half four-dose stamina potions. The price of each piece of the graceful outfit varies, with the full set costing 260 marks of grace.
+
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=800|delta=0|hidege=yes|currency=Mark of grace|column1=Weight<br/>reduction|column2=Run energy<br/>restoration rate|column3=Reduction<br/>(kg/{{plinkp|Mark of grace}})|column4=Restoration<br/>(%/{{plinkp|Mark of grace}})|bucket=No}}
+{{StoreLine|name=Graceful hood|restock=1|bucketname=Graceful hood#Inventory|stock=100|gemw=no|column1=-3 kg|column2=+3%|column3=-0.086|column4=0.086}}
+{{StoreLine|name=Graceful top|restock=1|bucketname=Graceful top#Inventory|stock=100|gemw=no|column1=-5 kg|column2=+4%|column3=-0.091|column4=0.073}}
+{{StoreLine|name=Graceful legs|restock=1|bucketname=Graceful legs#Inventory|stock=100|gemw=no|column1=-6 kg|column2=+4%|column3=-0.100|column4=0.067}}
+{{StoreLine|name=Graceful gloves|restock=1|bucketname=Graceful gloves#Inventory|stock=100|gemw=no|column1=-3 kg|column2=+3%|column3=-0.100|column4=0.100}}
+{{StoreLine|name=Graceful boots|restock=1|bucketname=Graceful boots#Inventory|stock=100|gemw=no|column1=-4 kg|column2=+3%|column3=-0.100|column4=0.075}}
+{{StoreLine|name=Graceful cape|restock=1|bucketname=Graceful cape#Inventory|stock=100|gemw=no|column1=-4 kg|column2=+3%|column3=-0.100|column4=0.075}}
+{{StoreLine|name=Amylase pack|restock=1|stock=1000|gemw=no|column1=N/A|column2=N/A|column3=N/A|column4=N/A}}
+{{StoreTableBottom}}
+
+Considering the price of [[amylase crystal]]s, a mark of grace can be valued at {{NoCoins|{{GEP|Amylase crystal|10}}|c}}.
+
+When amylase crystals are purchased and used to make [[Stamina potion|stamina potions]], each mark of grace is worth the equivalent of 255 [[Herblore]] experience.
+
+===Recolouring a graceful outfit===
+{{Main|Graceful outfit#Recolouring}}
+Players can pay 90 marks of grace to [[Graceful outfit#Recolouring|recolour]] an entire graceful outfit, or 15 marks of grace per graceful article, to one of six different [[Graceful outfit#Recolouring|colours]] by talking to [[Osten]] in [[Shayzien]] as long as the player has met the requirements. Other colourations are available by spending other Agility-related currencies or recolour kits.

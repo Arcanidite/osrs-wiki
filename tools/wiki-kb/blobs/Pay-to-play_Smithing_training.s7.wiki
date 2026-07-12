@@ -1,0 +1,5 @@
+===Levels 15–99: Blast Furnace===
+Smelting bars (other than gold or silver) at the [[Blast Furnace]] offers slow experience, but it usually provides decent profit. Having the [[ice gloves]] and [[coal bag]] is strongly recommended to significantly increase the number of bars created per hour. Players will also need weight-reducing clothing and stamina potions to always have run energy. Optimal bar patterns can be found on the [[Blast Furnace#Bar Patterns|Blast Furnace]] page. The capital required to run the furnace for a full hour may be considerable for some players.
+
+Experience and profit rates are listed in the table below. The numbers assume using one of the official worlds, having the coal bag, wearing ice gloves, and using 36 stamina potion doses per hour.
+{{Blast Furnace MMG Table}}

@@ -1,0 +1,109 @@
+===Levels 1/30–99: Burning logs===
+{{Inventory|align=right
+|Redwood logs;n\20000 |Redwood logs |Redwood logs |Redwood logs
+|Redwood logs |Redwood logs |Redwood logs |Redwood logs
+|Redwood logs |Redwood logs |Redwood logs |Redwood logs
+|Redwood logs |Tinderbox |Redwood logs |Redwood logs
+|Redwood logs |Redwood logs |Redwood logs |Redwood logs
+|Redwood logs |Redwood logs |Redwood logs |Redwood logs
+|Redwood logs |Redwood logs |Redwood logs |Redwood logs
+}}
+Burning logs is one of the fastest ways to train Firemaking. The best place to do this is at the eastern part of the [[Grand Exchange]]. The area has a lot of empty space and the bank is only one tile away from an area a log can be burned. When correctly timed, the player can move to another square in between lighting the logs, which allows the player to burn the logs in any formation. With fast enough banking and accurate clicks, it is possible to keep lighting the logs tick-perfectly every 4 ticks. Having noted logs in the inventory and unnoting them at the banker is recommended over using the bank interface.
+
+An easier but a slower alternative is to simply burn logs in a row from east to west. The best place to do this is at [[Varrock]]: use [[Varrock Teleport]], light the logs from the fountain and bank at the [[Varrock west bank]]. Alternatively, use [[Camelot Teleport]] and bank at [[Seers' Village]].
+
+The table below assumes 1,485 logs are burned per hour. Coloured logs offer the fastest experience rates for levels 1–30 as they are guaranteed to be lit successfully. See [[Calculator:Firemaking/Logs]] for a detailed gp/xp analysis of the logs that can be burned at each level, including burning logs from sailing.
+{| class="wikitable sortable"
+!Levels
+!Log type
+!Experience
+!XP/h
+!Logs needed
+!Log price
+!Money spent
+!GP/XP
+|-
+|1–30
+|{{MinPrice|White firelighter|Red firelighter|Purple firelighter|Green firelighter|Blue firelighter|format=none|link=n|var=firelighter}}{{plink|{{#explode:{{#var:firelighter_item}}| |0}} logs|pic={{#explode:{{#var:firelighter_item}}| |0}} logs}}
+|50
+|74,250<ref name="firelighter">Logs burnt with a [[firelighter]] applied to them light successfully at the first attempt, and provide an additional 10 experience per log. The cheapest firelighter is currently the [[{{#var:firelighter_item}}]].</ref>
+|268
+|{{Coins|{{GEP|Logs}}+{{#var:firelighter_price}}}}
+|{{Coins|-{{GEP|Logs|268}}-{{#var:firelighter_price}}*268}}
+|{{Coins|-({{GEP|Logs}}+{{#var:firelighter_price}})/50 round 2}}
+|-
+|30–35
+|{{plink|Willow logs|txt=Willow}}
+|90
+|107,000<ref name="failchance">Includes some time lost to failed attempts when lighting the logs.</ref>
+|101
+|{{Coins|{{GEP|Willow logs}}}}
+|{{Coins|-{{GEP|Willow logs|221}}}}
+|{{Coins|-{{GEP|Willow logs}}/90 round 2}}
+|-
+|35–42
+|{{plink|Teak logs|txt=Teak}}
+|105
+|138,000<ref name="failchance"/>
+|221
+|{{Coins|{{GEP|Teak logs}}}}
+|{{Coins|-{{GEP|Teak logs|221}}}}
+|{{Coins|-{{GEP|Teak logs}}/105 round 2}}
+|-
+|42–45
+|{{plink|Arctic pine logs|txt=Arctic pine}}
+|125
+|185,625
+|128
+|{{Coins|{{GEP|Arctic pine logs}}}}
+|{{Coins|-{{GEP|Arctic pine logs|128}}}}
+|{{Coins|-{{GEP|Arctic pine logs}}/125 round 2}}
+|-
+|45–50
+|{{plink|Maple logs|txt=Maple}}
+|135
+|200,475
+|295
+|{{Coins|{{GEP|Maple logs}}}}
+|{{Coins|-{{GEP|Maple logs|295}}}}
+|{{Coins|-{{GEP|Maple logs}}/135 round 2}}
+|-
+|50–60
+|{{plink|Mahogany logs|txt=Mahogany}}
+|157.5
+|233,887
+|1,095
+|{{Coins|{{GEP|Mahogany logs}}}}
+|{{Coins|-{{GEP|Mahogany logs|1095}}}}
+|{{Coins|-{{GEP|Mahogany logs}}/157.5 round 2}}
+|-
+|60–75
+|{{plink|Yew logs|txt=Yew}}
+|202.5
+|300,712
+|4,626
+|{{Coins|{{GEP|Yew logs}}}}
+|{{Coins|-{{GEP|Yew logs|4626}}}}
+|{{Coins|-{{GEP|Yew logs}}/202.5 round 2}}
+|-
+|75–90
+|{{plink|Magic logs|txt=Magic}}
+|303.8
+|451,143
+|13,614
+|{{Coins|{{GEP|Magic logs}}}}
+|{{Coins|-{{GEP|Magic logs|13614}}}}
+|{{Coins|-{{GEP|Magic logs}}/303.8 round 2}}
+|-
+|90–99
+|{{plink|Redwood logs|txt=Redwood}}
+|350
+|519,750
+|21,966
+|{{Coins|{{GEP|Redwood logs}}}}
+|{{Coins|-{{GEP|Redwood logs|21966}}}}
+|{{Coins|-{{GEP|Redwood logs}}/350 round 2}}
+|}
+Alternatively, at level 92, players can burn 24,318 {{plink|rosewood logs}} to reach level 99. This will save about {{Coins|{{GEP|Redwood logs|18621}}-{{GEP|Rosewood logs|24318}}}} compared to reaching 99 with redwoods, at the cost of an additional four hours.{{reflist}}
+
+Money spent in total, when not using coloured logs: {{Coins|-({{GEP|Logs|61}} + {{GEP|Oak logs|183}} + {{GEP|Willow logs|101}} + {{GEP|Teak logs|221}} + {{GEP|Arctic pine logs|128}} + {{GEP|Maple logs|295}} + {{GEP|Mahogany logs|1095}} + {{GEP|Yew logs|4626}} + {{GEP|Magic logs|13614}} + {{GEP|Redwood logs|21966}})}}

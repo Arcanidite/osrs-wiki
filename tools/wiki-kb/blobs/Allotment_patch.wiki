@@ -1,0 +1,36 @@
+{{External|rs}}
+'''Allotments''' are [[Farming/Patch locations|farming patches]] that players can grow [[vegetable]]s and [[fruits]] in with the [[Farming]] skill. Most allotment patches also have a [[compost bin]], a [[tool leprechaun]], a [[herb patch]], and a [[Flower (patch)|flower patch]] very near by. Particularly at high Farming levels and with the use of high tiers of compost and [[magic secateurs]], allotments yields can be exceptionally high. 
+
+Three allotment seeds are needed to plant in each allotment patch, though equipping an [[amulet of bounty]] gives a chance to consume only one. Allotments are the 2nd fastest growing type of crop, with a 10 minute [[farming cycle]]. Players can protect their allotments from disease by paying nearby farmers with the appropriate payment for ''each separate patch'', or through having the corresponding [[Flower patch|flower]] fully grown in the nearby patch; flowers that protect allotments are specific to the seed planted, though the [[white lily]] protects all crop types in an allotment patch.
+
+Players may also use varying types of compost to reduce disease chance, and can water their plants with a [[watering can]] at each growth stage to provide a modest reduction in disease chance.
+
+Players may increase harvesting speed over the automatic rate, by harvesting, waiting 2 game ticks, and clicking again to harvest. This will harvest 2 crops per animation, effectively doubling harvest rate for the patch. The increased speed can also be achieved without any need for precise timing by spam-clicking during the first two ticks of harvesting.
+
+{{:Allotment patch/Patches|allotment=yes|title=Allotment}}
+
+{{:Allotment patch/Seeds}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 28 April 2016
+|update = Calling Pets & Deadman Death
+|poll = Old School Content Poll 41: Bank placeholders & Skillcapes
+|change = It is now possible to add compost or supercompost to any farming patch during any growth stage of a crop.
+}}
+{{Subject changes
+|date = 22 October 2015
+|update = Abyssal Bludgeon Buff
+|poll = 
+|change = Catherby allotment patch data and Taverley tree patch data will now be transmitted from a larger area.
+}}
+{{Subject changes
+|date = 16 April 2015
+|update = Clan Wars Game Modes & More
+|change = Fixed the grammar on the description of onions growing in an allotment.
+}}
+{{Subject changes footer}}
+
+{{Farming patches}}
+{{Seeds}}

@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Cook's Assistant
+|image=[[File:Cook's Assistant reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+* {{SCP|Cooking|300|link=yes}} [[experience]]
+* Permission to use the [[Cooking range (Lumbridge Castle)|Cook-o-matic 100]], which reduces the chance of burning some [[food]]s.
+}}

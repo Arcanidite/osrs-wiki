@@ -1,0 +1,45 @@
+===Levels 1–20: Leather items===
+From level 1 to 20, craft the highest-level leather item available. [[Leather]] currently costs {{Coins|{{GEP|Leather}}}} each and all items only require one leather to craft. In order to craft any leather items, you need a [[needle]] and some [[thread]]. Since each thread is good for around 5 uses, to get to level 20 with this method, you will need around 50 [[thread]].
+
+{|class="wikitable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+!{{SCP|Crafting}} Level
+! colspan="2" |Leather item
+!XP
+!{{plinkp|Leather}} needed
+!Total cost
+|-
+|1–7
+|{{plinkt|Leather gloves|txt=Gloves}}
+|13.8||48
+|{{Coins|{{GEP|Leather|48}}}}
+|-
+|7–9
+|{{plinkt|Leather boots|txt=Boots}}
+|16.2||19
+|{{Coins|{{GEP|Leather|19}}}}
+|-
+|9–11
+|{{plinkt|Leather cowl|txt=Cowl}}
+|18.5||21
+|{{Coins|{{GEP|Leather|21}}}}
+|-
+|11–14
+|{{plinkt|Leather vambraces|txt=Vambraces}}
+|22||34
+|{{Coins|{{GEP|Leather|34}}}}
+|-
+|14–18
+|{{plinkt|Leather body|txt=Body}}
+|25||57
+|{{Coins|{{GEP|Leather|57}}}}
+|-
+|18-20
+|{{plinkt|Leather chaps|txt=Chaps}}
+|27||36
+|{{Coins|{{GEP|Leather|36}}}}
+|-
+! colspan="4" |Total
+! style="text-align:right;" |215
+! style="text-align:right;" |{{Coins|{{GEP|Leather|215}}}}
+|}
+This will require a total of 215 leather, for a total cost of {{Coins|{{GEP|Leather|215}}}}. Every leather item is created in 3 ticks (1.8 seconds), so the total creation time for all 215 leather items is 645 ticks (387 seconds).

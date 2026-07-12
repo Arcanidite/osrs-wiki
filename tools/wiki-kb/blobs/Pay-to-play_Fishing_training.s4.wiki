@@ -1,0 +1,57 @@
+===Levels 20–47/58: Fly fishing===
+{{Main|Raw trout|Raw salmon}}
+3-tick [[fly fishing]] [[raw trout|trout]] and [[raw salmon|salmon]] offers the fastest Fishing experience up to level 58 when using [[tick manipulation]]. Players will need a [[fly fishing rod]] and [[feathers]] to catch the fish. 3-tick fishing is done by using a herb on swamp tar (or other suitable items) and clicking on the fishing spot. When timed correctly, the player has a chance of receiving fish every three ticks instead of five. Drop the fish in between catches before clicking on the fishing spot.
+
+Without tick manipulation this method is only recommended as a low-effort alternative past level 35, as [[Tempoross]] offers faster experience. At level 47, drift net fishing becomes better than 3-tick fly fishing if the player also needs to train Hunter.
+
+Recommended fly fishing locations where the fishing spots have minimal movement or are useful otherwise:
+*South-east of the southern gate to [[Prifddinas]]. The fishing spots here never move nor reset, thus allowing for maximum AFK time with only needing to drop fish as necessary. This area requires partial completion of [[Regicide]]; completion of the quest allows for faster access via [[Iorwerth camp teleport]]s. 
+*[[Shilo Village (location)|Shilo Village]] is the best location if banking the fish. The area requires completion of the [[Shilo Village|Shilo Village quest]] to access. Alternatively [[Nemus Retreat]] offers a Bank to Players with Agility Levels of 24 right next to the fishing spots. With Level 36 Agility Players gain easier access to the fishing spots on the other side of the river.
+*[[Lunch by the lancalliums]] teleport is right next to multiple fishing spots and requires completion of [[The Depths of Despair]] quest to use. This location rivals Shilo Village if one has access to a good bank teleport such as the [[Crafting cape]] teleport, or [[Sailors' amulet|Sailor's amulet]] to [[Deepfin Point]] (requires 67 [[Sailing]]). 
+*South-east of the [[Farming Guild]].
+*North of the [[Chaos Druid Tower]] near [[East Ardougne]].
+*[[Barbarian Village]] has a permanent fire nearby where players can cook and drop the fish.
+
+The experience rates shown in the table below assume not wearing the angler's outfit. The AFK rates include the time spent dropping the fish, and the actual rates vary depending on how fast the fish are dropped. Using the spots south-east of Prifddinas will result in about 10% faster experience per hour when using a static spot.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+!{{SCP|Fishing}} level
+! XP/h (AFK)
+! XP/h (3-tick)
+|-
+| 20
+| 13,000
+| 23,000
+|-
+| 30
+| 25,000
+| 45,000
+|-
+| 40
+| 30,000
+| 53,000
+|-
+| 50
+| 34,000
+| 61,000
+|-
+| 60
+| 37,000
+| 68,000
+|-
+| 70
+| 41,000
+| 75,000
+|-
+| 80
+| 44,000
+| 81,000
+|-
+| 90
+| 47,000
+| 87,000
+|-
+| 99
+| 50,000
+| 93,000
+|}

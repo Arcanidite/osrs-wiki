@@ -1,0 +1,60 @@
+== Details ==
+<onlyinclude> 
+<includeonly>
+
+==Freeing the Goblin generals==
+===Details===
+</includeonly>
+{{Quest details
+|start = Inspect one of the goblin generals in the Lumbridge Castle dining room.
+|difficulty = Special
+|description = The goblin generals need a food that they'll both eat. Find a chef in [[Goblin Village]] to learn how to make it.
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Recipe for Disaster/Another Cook's Quest]]
+***[[Cook's Assistant]]
+**[[Goblin Diplomacy]]
+|items = *[[Bread]]
+*[[Orange slices]]
+** Use a [[knife]] on an [[orange]]
+*Either [[blue dye|blue]], [[black dye|black]], [[green dye|green]], or [[purple dye]] (purple dye spawns directly east of the [[spirit tree]] at the [[Khazard Battlefield]], south of the [[Ardougne Castle]])
+*[[Spice]] or [[gnome spice]] (can be bought or stolen from the [[Ardougne market]], bought from the [[Culinaromancer's Chest]] or bought in the [[Tree Gnome Stronghold]])
+*[[Fishing bait]]
+*[[Bucket of water]]
+*[[Charcoal]] or [[ground charcoal]] (buy in [[Shilo Village (location)|Shilo Village]], [[Jiminua's Jungle Store]], or [[Gunslik's Assorted Items]])
+|recommended = *[[Falador teleport]]
+*[[Lumbridge teleport]]
+*[[Goblin village sphere]] (requires [[Another Slice of H.A.M.]] quest)
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}
+
+===Walkthrough===
+----
+{{Needed|[[Bread]], an [[orange]], a [[knife]], [[dye]] (other than red, yellow, orange, or pink), [[spice]], [[fishing bait]], a [[bucket of water]], and [[charcoal]]}}
+[[File:General Bentnoze chathead.png|left]]
+'''First, inspect the frozen goblin statues in the Lumbridge Castle dining room to start the quest.'''
+
+Go to the [[Goblin Village]], enter the building just south of the generals and climb down the ladder. You will see [[Goblin Cook|Mudknuckles]], a goblin cook. He will tell you to get him some [[charcoal]] to finish a cooking recipe that he overheard two dwarves talking about. Give him the charcoal. He will add it to his cauldron, which will explode in a hilarious cutscene. Miraculously, you both survive.
+[[File:General Wartface chathead.png|left]]
+[[File:It worked!.png|thumb|220px|The chef claims it worked.]]
+Mudknuckles will then tell you that he has trouble with the food, as both the generals are bickering over it. To make food for the generals, he needs oranges that aren't orange, maggots that aren't bland, and bread that isn't crunchy. You can make the ingredients listed below:
+*[[Dyed orange]] - Use the [[dye]] on some [[orange slices]].
+*[[Spicy maggots]] - Use the [[spice]] on the [[fishing bait]].
+*[[Soggy bread]] - Use a [[bucket of water]] on some [[bread]].
+
+Give all three to Mudknuckles to get the [[Slop of compromise]]. Give it to the goblin generals in [[Lumbridge]] to complete this part of the quest.
+
+===Rewards===
+----
+{{Quest rewards
+|name = Recipe for Disaster/Freeing the Goblin generals
+|image = [[File:Recipe for Disaster (Freeing the Goblin generals) reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Cooking|1,000}} [[Cooking]] experience
+*{{SCP|Farming|1,000}} [[Farming]] experience
+*{{SCP|Crafting|1,000}} [[Crafting]] experience
+*Further access to the [[Culinaromancer's Chest]].
+}}</onlyinclude>

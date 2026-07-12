@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Druidic Ritual
+|image = [[File:Druidic Ritual reward scroll.png|centre]]
+|qp = 4
+|rewards = 
+* {{SCP|Herblore|250}} [[Herblore]] [[experience]]
+*The ability to use the [[Herblore]] [[Skills|skill]]
+}}

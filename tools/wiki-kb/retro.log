@@ -48,3 +48,188 @@ loadouts → background-loops (12). Checkpoint headers follow their member atoms
 Riskiest domain: training-methods — 68 steps; mitigated by per-skill page batching
 (~17 pages cover all ladders), but volume + 4 mandatory non-GE rewrites + synth
 PROPOSED-IDs make it the likeliest to finish with queued-blocked stragglers.
+
+## items retro
+- 8/8 contributed, 0 blocked. Chain math is shallow (2-3 hop recipes) so per-page
+  --strip fetches of Creation sections were enough; no full-page pulls needed.
+- Biggest find: the chain's Herblore-52 gate on brew-prayer-potion is simply wrong
+  (wiki Recipe says 38) and the same 52 is baked into supply_chains.jsonl's
+  prereq_skills — likely root cause for the synth-tag-supply-prayer-pot-supply-14
+  placeholder firing on accounts between 38-51 Herblore that should already qualify.
+- Second find: base Prayer potion recipe outputs a 3-dose potion, not 4 — the whole
+  chain models the terminal item as flat prayer_potion_4:1, which is optimistic;
+  flagged on both pps-06-deposit-potions and brew-prayer-potion rather than silently
+  renaming the item slug (would've orphaned downstream consumers of "prayer_potion_4").
+- Redirect-title traps cost the most time: 3 of 9 fetched pages resolved to a
+  different manifest title than searched ("Burn level"->"Cooking/Burn level" etc.);
+  wrote a quick python cross-check against manifest.jsonl before contributing rather
+  than trusting my own search-result title, which is the right general habit.
+- Canonical-trigger mint: the directive should have said up front "grep manifest.jsonl
+  for the actual title/slug of every fetched page before writing refs[] — search
+  results and section titles are not guaranteed to equal the canonical title";
+  I only caught this by accident cross-checking, and a scrambler that skipped that
+  step would've had contributions silently quarantined by the consolidator with no
+  feedback loop back to them.
+
+## quests retro
+- 19/19 contributed, 0 blocked. Every quest resolved to a real page; the one apparent
+  gap ("Tale of Arrav") turned out to be a stale step_id whose own label already said
+  the true quest name ("Tale of the Righteous") — flagged, not blocked.
+- Biggest find: quest-xp values in the chain are wrong far more often than right once
+  checked against Rewards sections — 6 of 19 owned steps had incorrect or missing xp
+  (Nature Spirit's whole reward category is wrong; Tale of the Righteous claims xp
+  that's actually coins; Swan Song is 5x undercounted; Monkey Madness I claims all
+  four stats at once when the real reward is a mutually-exclusive choice). None of
+  these were "??" placeholders — they were confident-looking wrong numbers, which is
+  worse than a gap because nothing signals "verify me".
+- Second find: reqs.quests chains are systematically incomplete — nearly every quest
+  has 1-3 untracked prerequisite quests (The Restless Ghost, The Dig Site, Goblin
+  Diplomacy, Fishing Contest, Client of Kourend, X Marks the Spot, Grand Tree, Tree
+  Gnome Village, plus Swan Song's 8-quest chain) that the planner currently has no
+  way to enforce; filed as PROPOSED-ID notes rather than inventing new steps myself.
+- Canonical-trigger mint: B1(ii) should have said up front "the /Quick guide page's
+  Details section is a transclusion stub — always fetch the main quest page's Details
+  instead" — I only found this by fetching all 16 Quick guide Details sections first
+  and getting 16 identical one-line stubs back before pivoting to main pages, which
+  cost a full redundant fetch pass across the whole domain.
+
+## travel retro
+- 7/7 owned steps + 5/5 transport references contributed, 0 blocked. All 5 transport
+  ref pages (Fairy rings, Spirit tree, Canoe, Minigame Teleport, Quetzal) were already
+  blobbed by prior agents — zero new fetches needed for those, just re-read + cite.
+- Biggest find: unlock-barrows/unlock-gwd reqs.skills are mostly author-invented
+  PvM-readiness numbers, not wiki gates — Barrows has NO combat-level entry req at
+  all (quest + miniquest-start only); GWD's real gate is Strength 60 OR Agility 60
+  (fixture has Strength-only), and Prayer 43 has zero wiki basis on either page.
+  Mirrored the same flags onto milestone-gwd/milestone-barrows since they gate on
+  the same conditions.
+- Second find: steer-ardougne-easy-diary's unlock_condition quests/skills
+  (sheep-shearer, clock-tower, fishing:15, cooking:15) don't match a single one of
+  the 10 real Easy-task gates (Rune Mysteries quest, Biohazard quest, Thieving 5) —
+  the fetched task table's own {{Map}} pin list happened to be in task order, which
+  let every task get a cited coord for free.
+- Fetching a parent section (Fairy rings "==Combinations==") pulled all 4 lettered
+  sub-tables + Sequences in one blob despite `sections` listing them as 5 separate
+  fetchable rows — checked existing blob line-counts before re-fetching, saved 3 calls.
+- Canonical-trigger mint: B3 should have said up front "before trusting a step's
+  reqs.skills block as a wiki-sourced gate, fetch the target page's own Requirements
+  section if one exists — chain-fixture skill numbers are frequently PvM-efficiency
+  targets invented by the route author, not entry conditions" — I only caught this
+  by habit (checking gotchas.log's [items] precedent for fixture-vs-wiki drift), and
+  it turned out to be the single highest-value finding across all 7 owned steps.
+## training retro
+All 68 owned steps contributed (0 blocked) — 43 train-*, 5 ctr-*, 17 synth-* (planner
+gaps, each with a PROPOSED-ID: train-<skill>-<level> row), 3 chkpt-* headers. Biggest
+single win: fetching Experience_table.s2 once and parsing its cumulative-xp table let me
+mechanically verify all 43 train-* + 5 ctr-* xp claims in one pass — found a systematic
+error (only 1->N bands were correct; every N->M band with N>1 used a wrong copy-pasted
+constant shared across unrelated skills). Filed as consolidate-xp:combat-training-routing-xp.
+Fixed all 4 hard-rule-4 (GE-sourcing) violations named in the brief: crafting-20 (cowhide
+from cows + Ellis the tanner, Al Kharid), firemaking-30 (self-chopped oak, flagged that the
+wiki's own optimal table skips oak entirely), smithing-30 (Al Kharid mine iron triangle,
+exact coords), herblore-38 (grounded the Strength potion recipe chain, left Limpwurt
+root's non-GE source as an honest "??" gap rather than guessed). Coord-fixed ctr-01/02
+(chicken/cow pins) away from the "Lumbridge cows (3259,3266)/NPC 397" bogus-marker pattern
+flagged system-wide in gotchas.log — filed as coord-fix: tickets per B3's safety-net note
+even though I own these steps directly. Chkpt-*-0/1/2 numbering is a guess (see gotchas/
+feedback) — the coarse_expansions.jsonl checkpoints array has 4 entries and npcs: owns
+index "-3" (Gear stop) per its brief, which doesn't match array position; I mapped my 3
+remaining checkpoints in array order and flagged the ambiguity rather than blocking on it.
+CANONICAL-TRIGGER MINT: the brief should have said up front "the work inventory lives in
+assets/data/tools/steps.jsonl + coarse_expansions.jsonl, NOT
+runelite-guide-chain/.../route-p2p.json (that path doesn't exist in this repo)" — I spent
+real time discovering the fixture had moved/never existed under the stated path before
+finding the actual data; a one-line path-confidence check ("if the named fixture doesn't
+exist, grep assets/data/tools/ before improvising") would have saved that detour for every
+one of the six scramblers, not just this one.
+
+## npcs retro
+- 9/9 contributed, 0 blocked. All refs[] validated clean against manifest.jsonl (scripted
+  cross-check before finishing, per the [items] retro's recommended habit).
+- Two vendor unknowns from the briefing both resolved: Zeke's Superior Scimitars stock
+  table gives Mithril as the top tier (stock 1, restock 4000s), and Jatix's Herblore Shop
+  in Taverley sells vial-of-water packs (stock 750, restock 100s) -- both non-GE, both
+  comfortably cover the chain's single-visit demand.
+- Two real discrepancies found and FLAGged: (1) Master Farmer's Draynor spawn is
+  (3080,3250), not the step's (3088,3255); (2) source-pineapples-charter names the wrong
+  NPC ("charter ship" vs. the real vendor "Trader Crewmember") AND overstates stock 6.7x
+  ("~100 per visit" vs. actual 15/restock-100s) -- both corrected with cited coords/stock.
+- train-thieving-20's marker was the known cross-domain "Lumbridge cows (3259,3266)"
+  bogus-pin plague; replaced with two real Man/Woman LocLine pins (Lumbridge + Edgeville).
+- synth-thieving-53-2 needed a level-53-appropriate NPC, not the briefing's suggested
+  "Menaphite Thug" (which actually requires level 65) -- cross-referenced the Blackjacking
+  method table and Bandit (Pollnivneach) page to find the correct target (Bearded
+  Pollnivnian Bandit, req 45, band 45-55), wrote the PROPOSED-ID against that instead of
+  blindly following the brief's NPC suggestion.
+- Canonical-trigger mint: the directive should have said "when a brief names a specific
+  NPC/page for a level-gated step, verify that NPC's own level requirement covers the
+  step's target level before citing it -- briefs are written from memory/convention and
+  can point at the wrong tier of an otherwise-correct method family."
+
+## bg retro
+- 12/12 contributed, 0 blocked. Work inventory confirmed against
+  assets/data/tools/steps.jsonl (route-p2p.json doesn't exist, per prior scramblers'
+  finding) -- 4 of 12 ids (bg-farm-allotment-setup, bootstrap-gather-guam_weed-*,
+  chkpt-prayer-pot-supply-coarse-1/2/3) had no steps.jsonl row at all; contributed
+  PROPOSED-ID/checkpoint-summary rows anyway rather than treating "not found" as "skip".
+- Major FLAG: setup-ultracompost's "30 pineapples + 15 volcanic ash" is wrong on three
+  independent axes vs. Ultracompost's own {{Recipe}} (real: 15 supercompostable items +
+  25 ash for a regular bin, or 30 items + 50 ash for the Big Compost Bin -- the chain
+  mismatched a big-bin item count with a non-big-bin ash count) and omits a simpler
+  direct method (2 ash per bucket of supercompost, no bin at all).
+- Resolved items domain's open flag from chkpt-prayer-pot-supply-coarse-0: the step's
+  location.zone="ectofuntus" isn't literally a bin site but sits ~50-90 tiles from the
+  real "west of Port Phasmatys" bin -- same sub-region, approximate not bogus.
+- All 4 teleport-to-patch claims in pps-03-withdraw-herb-run (Explorer's ring->Falador,
+  Camelot->Catherby, Ardougne cloak->Ardougne, Xeric's talisman->Hosidius) verified
+  correct against Allotment_patch/Patches' per-site teleport tables -- no FLAG needed.
+- gather-monkfish's Fishing 62 / xp 120 were both exactly right (rare fully-correct case
+  amid a chain otherwise full of wrong hardcoded numbers per other domains' retros).
+- Two dynamic templates ({{Drop sources}}, {{Store locations list}}) never resolve to
+  literal names in wikitext regardless of --strip; hit this on Grimy guam leaf's monster
+  sources and had to honestly degrade to "??" + the one literal spawn point found instead.
+- CANONICAL-TRIGGER MINT: the brief should have said "before starting, grep your owned
+  step ids against assets/data/tools/steps.jsonl (not just contrib/queue) -- ids missing
+  from steps.jsonl entirely are real authoring gaps (tests/fixtures may already reference
+  them) and still need a PROPOSED-ID contribution, they are not out-of-scope just because
+  grep comes back empty."
+
+## consolidate retro
+- Ingested 128 contributions (123 enrich, 5 travel references): 0 quarantined, 0 lint
+  failures, 0 GE-sourcing hits, 1 late-duplicate dropped (none existed). All refs
+  manifest-validated (slug present + title char-exact).
+- Merged: 86 steps.jsonl rows gained refs/atom/hints/mapMarkers; 37-entry step_refs.jsonl
+  sidecar minted for non-row emitted ids (milestone/steer/synth/chkpt/planner-bg); 93 rows
+  no scrambler covered got derived refs (17 new pages fetched: 6 training guides, NMZ,
+  Maniacal monkey, 5 quests, 5 RFD subpages). steps-with-refs: 123/123 route-p2p,
+  186/186 route-corpus; 0 refs point outside manifest.jsonl. npm test 73/73, no re-pin
+  (step sets/labels unchanged — enrichment is additive).
+- enrich.py: registry-stable chkpt ids (was per-route emission order), row mapMarkers
+  override catalog zone pins, universal by-id refs/markers fill pass (covers milestone/
+  steer/bg/checkpoint emitters that drop refs).
+- §C.5 PROPOSED-ID→new-rows deferred to Lane 5 as 78 lane5:* queue tickets (+1 xref-index):
+  proposals carry contributor-flagged ASSUMED prereqs, and minting rows renumbers synth-*
+  ids which would orphan this very pass's synth-keyed refs. Same for consolidate-xp fixes.
+- CANONICAL-TRIGGER MINT: when a briefing hands parallel agents generated ids
+  (chkpt-*/synth-*), it must state the id-generation rule and require quoting the
+  human-readable anchor (checkpoint label) beside the id — two domains numbered the same
+  checkpoints by different conventions and only the quoted labels made consolidation
+  unambiguous.
+
+## extrapolate retro
+- Read all four ledgers + chain + both design docs; wrote study/EXTRAPOLATION.md:
+  145 equal-grade checklist items (36 GAP insertions), 12 named gaps (G1-G12),
+  8 wave3:* scope bundles queued with self-contained JSON briefs.
+- Compounding held: every scope's "have" list names already-fetched manifest slugs
+  (10+ blobs fetched at consolidation were never mined — wave 3 mines before fetching);
+  net-new fetch surface across all 8 scopes is ~30 pages, versus ~36 gaps.
+- Equal-grade rule honored: scaffolded finer items (pps-*, ctr-*) sit at the same rank
+  as quests/milestones; grouping is PHASE/CHKPT labels only, per GRANULARITY §7.
+- G12 (data-fix backlog) deliberately got NO wave-3 scope: it is already grounded and
+  ticketed (78 lane5:* + coord-fix + consolidate-xp) — re-scoping it would duplicate
+  the ledger, the exact failure the compound rule exists to prevent.
+- CANONICAL-TRIGGER MINT: a directive that asks for "gaps vs the checklist" must state
+  whether already-ticketed known fixes count as gaps — this pass classed them as a gap
+  ROW (G12) but excluded them from wave scoping, and only the ledger cross-check made
+  that call defensible. Future extrapolation briefs should say: "gap = missing knowledge
+  or missing rows; open tickets are inventory, not gaps — list them once, scope them never."

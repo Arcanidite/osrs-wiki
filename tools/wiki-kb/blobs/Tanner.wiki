@@ -1,0 +1,191 @@
+{{External|rs|rsc}}
+[[File:Tanning_interface.png|frame|The Tanning Interface]]
+A '''tanner''' is a [[non-player character]] who, for a price, will tan unnoted hides into leather:
+
+*[[Cowhide]], which becomes [[leather]] or [[hard leather]]
+*[[Snake hide]], which becomes [[snakeskin]].
+*Green, blue, red, and black [[dragonhide]], which becomes [[dragon leather]] of the same colour.
+
+
+==Locations==
+Tanners can be found in the following locations, marked with the "Tanner" icon ([[File:Tannery icon.png]]).
+
+{| class="wikitable sortable"
+!Name
+!Location
+!Members
+!Bank distance
+!Notes
+!Maplink
+!League Region
+|-
+|[[Ellis]] 
+|[[Al Kharid]]
+|{{Members|no}}
+|29-35
+|Both the [[ring of dueling]] and the [[amulet of glory]] can be used to teleport to Al Kharid, and Ellis is near a bank.
+|{{Map|name=Ellis|3274,3192|rectX=9|rectY=7|mtype=rectangle|type=maplink}}
+|{{LeagueRegion|Desert}}
+|-
+|[[Tanner (Crafting Guild)|Tanner]]
+|[[Crafting Guild]] {{FloorNumber|uk=1}}
+|{{Members|no}}
+|4-10 (hard [[Falador Diary]] or 99 [[Crafting]])<br/>
+106-112 (otherwise)
+|Requires {{SCP|Crafting|40|link=yes}}.
+|{{Map|name=Tanner (Crafting Guild)|2933,3285|plane=1|r=5|mtype=square|type=maplink}}
+||{{LeagueRegion|Asgarnia}}
+|-
+|[[Leatherworker]]
+|[[Ranging Guild]]
+|{{Members|yes}}
+|106 ([[Seers' Village]])
+|Requires {{SCP|Ranged|40|link=yes}}, and does not have a right-click option to open the shop interface.
+|{{Map|name=Leatherworker|2677,3433|r=4|mtype=square|type=maplink}}
+|{{LeagueRegion|Kandarin}}
+|-
+|[[Sbott]]
+|[[Canifis]]
+|{{Members|yes}}
+|25-32
+|He charges higher prices for tanning, a bit over twice what other tanners charge.
+|{{Map|name=Sbott|3488,3500|r=4|mtype=square|type=maplink}}
+|{{LeagueRegion|Morytania}}
+|-
+|[[Eodan]]
+|Crypt of the Moon ([[Forthos Dungeon]])
+|{{Members|yes}}
+|~108 (assuming shortcuts are unlocked)
+|He tans hides at a higher cost than other tanners, but this can be reduced by completing parts of the [[Kourend & Kebos Diary]]. This tanner's main purpose is to tan [[Dragonhide|dragonhides]] for players killing the [[Red dragon|red dragons]] in the dungeon, and it is not recommended to use him for regular purposes.
+|{{Map|name=Eodan|1810,9951|mapID=32|r=3|mtype=square|type=maplink}}
+|{{LeagueRegion|Kourend}}
+|-
+|[[Mary (Getting Ahead)|Mary]]
+|[[Kebos Lowlands]]
+|{{Members|yes}}
+|63-69
+|Requires the completion of [[Getting Ahead]] to use.
+|{{Map|name=Mary (Getting Ahead)|1239,3680|r=3|mtype=square|type=maplink}}
+|{{LeagueRegion|Kourend}}
+|-
+|[[Chouani]]
+|[[Auburnvale]]
+|{{Members|yes}}
+|44-48
+|Requires the completion of [[Children of the Sun]] to use.  Her tanning prices are the same as [[Sbott]]'s.
+|{{Map|name=Chouani|mtype=polygon|1372,3362|1372,3363|1371,3364|1370,3364|1366,3360|1366,3359|1370,3355|1371,3355|1375,3359|1375,3360|1374,3361|1373,3361|type=maplink}}
+|{{LeagueRegion|Varlamore}}
+|}
+
+==Leathers==
+Players can also tan hides themselves with the [[Lunar spells|Lunar spell]] [[Tan Leather]], which requires 78 [[Magic]] and the [[Fremennik Diary#Hard|Fremennik Hard Diaries]], without paying any coins. The cost of the spell whilst wearing a source of infinite fire runes (such as a [[Staff of fire]] or a [[Tome of fire|Tome of fire)]]) is {{NoCoins|{{#vardefineecho:costpercast|{{#expr:{{GEP|Astral rune|2}}+{{GEP|Nature rune|1}}}}}}|c}}, tanning up to 5 hides at once.
+{| class="wikitable align-center-1 align-center-3"
+! colspan="2" rowspan="2" |Raw material
+! colspan="2" rowspan="2" |Product
+! rowspan="2" |{{SCP|Crafting}} Level<ref>There is no Crafting level required to use a tanner to tan hides. Listed here is the minimum Crafting level required to make something using the leather.</ref>
+! colspan="3" |Tanning price
+! colspan="4" |Tanning profit
+|-
+!Standard
+![[Sbott]] (Canifis)/[[Chouani]] (Auburnvale)
+![[Eodan]] (Forthos)<ref name="Eodan">Eodan's prices adjust for each completed tier of the [[Kourend & Kebos Diary]].</ref>
+!Standard
+![[Sbott]] (Canifis)/[[Chouani]] (Auburnvale)
+![[Eodan]] (Forthos)<ref name="Eodan"/>
+![[Tan Leather]]<ref>Tan leather can tan up to five hides at once. Values show profit per hide, for tanning one hide up to five at once.</ref>
+|-
+|{{plinkt|Cowhide}}
+|{{plinkt|Leather}}
+|1
+|{{Coins|1}}
+|{{Coins|2}}
+|{{Coins|2}}-{{NoCoins|10}}
+|{{Coins|{{GEP|Leather}}-{{GEP|Cowhide}}-1}}
+|{{Coins|{{GEP|Leather}}-{{GEP|Cowhide}}-2}}
+|{{Coins|{{GEP|Leather}}-{{GEP|Cowhide}}-10}}-{{NoCoins|{{GEP|Leather}}-{{GEP|Cowhide}}-2}}
+|{{Coins|{{GEP|Leather}}-{{GEP|Cowhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Leather}}-{{GEP|Cowhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Cowhide}}
+|{{plinkt|Hard leather}}
+|28
+|{{Coins|3}}
+|{{Coins|5}}
+|{{Coins|6}}-{{NoCoins|30}}
+|{{Coins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-3}}
+|{{Coins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-5}}
+|{{Coins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-30}}-{{NoCoins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-6}}
+|{{Coins|{{GEP|Hard leather}}-{{GEP|Cowhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Hard leather}}-{{GEP|Cowhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Snake hide}}
+|{{plinkt|Snakeskin}}
+|45
+|{{Coins|15}}
+|{{Coins|25}}
+|{{Coins|30}}-{{NoCoins|150}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-15}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-25}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-150}}-{{NoCoins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-30}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Snakeskin}}-{{GEP|Snake hide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Snake hide (swamp)}}
+|{{plinkt|Snakeskin}}
+|45
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-20}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-45}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-200}}-{{NoCoins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-40}}
+|{{Coins|{{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Snakeskin}}-{{GEP|Snake hide (swamp)}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Green dragonhide}}
+|{{plinkt|Green dragon leather}}
+|57
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-20}}
+|{{Coins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-45}}
+|{{Coins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-200}}-{{NoCoins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-40}}
+|{{Coins|{{GEP|Green dragon leather}}-{{GEP|Green dragonhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Green dragon leather}}-{{GEP|Green dragonhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Blue dragonhide}}
+|{{plinkt|Blue dragon leather}}
+|66
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-20}}
+|{{Coins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-45}}
+|{{Coins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-200}}-{{NoCoins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-40}}
+|{{Coins|{{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Blue dragon leather}}-{{GEP|Blue dragonhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Red dragonhide}}
+|{{plinkt|Red dragon leather}}
+|73
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-20}}
+|{{Coins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-45}}
+|{{Coins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-200}}-{{NoCoins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-40}}
+|{{Coins|{{GEP|Red dragon leather}}-{{GEP|Red dragonhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Red dragon leather}}-{{GEP|Red dragonhide}})-{{#var:costpercast}})/5}}
+|-
+|{{plinkt|Black dragonhide}}
+|{{plinkt|Black dragon leather}}
+|79
+|{{Coins|20}}
+|{{Coins|45}}
+|{{Coins|40}}-{{NoCoins|200}}
+|{{Coins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-20}}
+|{{Coins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-45}}
+|{{Coins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-200}}-{{NoCoins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-40}}
+|{{Coins|{{GEP|Black dragon leather}}-{{GEP|Black dragonhide}}-{{#var:costpercast}}}}-{{NoCoins|(5*({{GEP|Black dragon leather}}-{{GEP|Black dragonhide}})-{{#var:costpercast}})/5}}
+|}
+{{Reflist}}
+
+==Trivia==
+* In the early days of ''RuneScape'', there were plans to allow players to tan their leather themselves using the {{RSCL|tailoring|tailoring skill}}. This never came to fruition and instead the concept was merged into the [[Crafting]] skill.
+
+[[Category:Crafting]]
+[[Category:Non-player characters]]
