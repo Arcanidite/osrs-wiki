@@ -359,4 +359,74 @@ against our packs. 71/71 tests.
 
 ---
 
+### 2026-07-07 — Quest Order endpoint (Quest Helper mining)
+
+**What & why.** New tool at `/tools/quest-order`: the user's "walk the quest list top-to-bottom,
+see what I *can* do, then what I *should* do next" workflow, made interactive.
+
+**Sourcing (all real, nothing fabricated).** Mined the RuneLite **Quest Helper** plugin
+(`Zoinkwiz/quest-helper`) + RuneLite `Quest.java`:
+- **Order** = OSRS Wiki *Optimal quest guide*, read verbatim from `OptimalQuestGuide.java`.
+  Key finding: Quest Helper does NOT compute an order — `sortOptimalOrder()` sorts by index in
+  a hand-curated `ImmutableList`. So the order is a *curated recommendation, not a solved
+  optimum* — surfaced as such on the page and in GOTCHAS **[G-7]**.
+- **Requirements** from each helper's `getGeneralRequirements()` start-gate only (skills, prereq
+  quests, quest points, combat). Step-level item/varbit reqs excluded on purpose; quests whose
+  gate we can't fully read statically are flagged `req_partial` (43/272) — GOTCHAS **[G-8]**.
+- **Leagues** region tags from `LeagueQuestRegions.java` (207/272) → region-lock aware gating
+  (a quest is reachable only if all its regions are unlocked; enforces "best is relative", G-1).
+
+**Pieces.** `tools/build_quests.py` (extractor) → `assets/data/tools/quests.jsonl` (272 quests,
+260 in guide order, 0 dangling prereq refs). `tools/quest-order/index.html` +
+`assets/js/tools/quest-order.js` (vanilla ES module, localStorage state, done/can-do/blocked/
+region-locked per your stats, "your next quest" highlight). Registered via `graph.json` →
+`build.py` (regenerates nav/sitemap/catalog; hand-authored tool page preserved).
+
+**Honest gaps (deferred, not faked):** per-quest QP/XP *rewards* and durations are not included.
+
+---
+
 <!-- Add entries below as features are built out -->
+
+### 2026-07-12 — W2 consolidation: wiki refs universal on route-p2p/route-corpus
+
+**What.** Merged all 128 W2 scrambler contributions (`tools/wiki-kb/contrib.jsonl`) into
+`assets/data/tools/steps.jsonl` per the BRIEFING §C contract: refs[] (manifest-validated,
+slug-deduped), atom{}/hints[] onto rows lacking them, wiki `{{Map}}` coords → row
+`mapMarkers` (bad-marker plague pins replaced, e.g. train-thieving-20's "Lumbridge cows").
+New `assets/data/tools/step_refs.jsonl` sidecar carries refs/markers for emitted ids that
+are not steps.jsonl rows (milestone-*, steer-*, synth-*, chkpt-*, planner bg/bootstrap).
+93 uncovered rows got consolidator-derived refs (17 pages fetched: 6 skill-training guides,
+Nightmare Zone, Maniacal monkey, 5 quest pages, 5 RFD subpages).
+
+**enrich.py.** (1) checkpoint header ids are now REGISTRY-stable
+(`chkpt-<coarse>-<idx in coarse_expansions checkpoints[]>`) instead of per-route emission
+order — the same id names the same checkpoint in every route; (2) row-level mapMarkers
+override catalog zone pins; (3) universal by-id refs/markers fill pass so milestone/steer/
+bg/checkpoint emitters no longer drop refs.
+
+**Result.** steps-with-refs 123/123 (route-p2p), 186/186 (route-corpus); zero refs outside
+`manifest.jsonl`; `npm test` 73/73 (no baseline re-pin — step sets unchanged).
+
+**Deferred to Lane 5 (79 `lane5:*` queue tickets).** PROPOSED-ID row minting (would
+renumber synth-* ids and orphan this pass's synth-keyed refs; several proposals carry
+contributor-flagged ASSUMED prereqs), the consolidate-xp systematic xp corrections, and
+57 contribution FLAGs (wrong quest rewards incl. Nature Spirit/Swan Song/MM1, unlock-gwd
+Strength-OR-Agility gate, setup-ultracompost recipe wrong on three axes, unsourced
+prayer-43 gates, supply_chains herblore 52→38 root-cause for both synth-tag placeholders).
+
+## 2026-07-12 — Wiki-grounded guide-chain: full arc shipped
+
+Ultracode session. Everything below committed across osrs-wiki + runelite-guide-chain and deployed live to the box (http://127.0.0.1:7780/).
+
+**Chains (4, selectable):** Step 0 → Early Game (character creation → Tutorial Island → first quests, action grain), P2P Progression (milestone episodes + supply chains), Quest Progression (312 steps, 215/216 quests prereq-ordered), Full Corpus appendix.
+
+**Data:** quest_db.jsonl = 264 wiki-cited rows (191/191 quests, 48/48 diaries, 25 miniquests); reference catalog = 318 entries (+minigames/unlocks); ~557-item classify census. Every route step carries wiki refs[].
+
+**Web:** wiki citation chips → persistent local-blob lightbox (self-served; wiki blocks iframes); two-way checklist toggle (never one-way); coverage index; Library + Reference directories (kind tabs, search); frames gallery with REAL rev-236 in-world scenario captures (chickens/cows/Master Farmer); sticky detail; scroll-yank fixed.
+
+**Planner:** interleaved requisite-burndown (items = produces/consumes edges); Lane 1 steer phasing, Lane 2 burndown+supply chains, Lane 3 sequencer (defer/hub/passive/alternation), Lane 4 plugin RECURRING+panel parity, M2 speedrun cost-model (flag), F1 gallery, quests-first-class (reward XP prunes bands), granularity atom{}/hints[]/checkpoints[]/branch{}. Design in tools/guide-export/design/{SYNTHESIS,granularity/GRANULARITY,MATERIALIZATION,FRAMES_GALLERY}.md.
+
+**Capture harness (scenario-capture/):** rev-236 proto-server + rsprox-referenced protocol (RebuildLogin GPI-first, PlayerInfo op54, IF_OPENTOP, NPC spawn) → in-world scenario render WORKS, oracle-verified, captioned frames+gif per scenario. Off-JVM authored; no real creds. SME_NOTES.md.
+
+**Tooling/discipline:** wikicli (cached MediaWiki API, --strip, idempotent ledgers) + NOISEBENCH; .claude/agents/{wiki-researcher,noise-calibrator}; CLAUDE.md; fan-out discipline (classify-first micro-bursts, bash-write-only, read-ledger-first, canonical-trigger retros).
