@@ -1,0 +1,13 @@
+==Walkthrough==
+
+=== Starting off ===
+{{Checklist|*To start, talk to [[Hetty]] in her house in [[Rimmington]]. {{Chat option|1 I am in search of a quest.|1 Yes, help me become one with my darker side.}}}}
+===Collecting the items===
+{{Checklist|*Kill a [[rat]] in the archery store directly west of Hetty to get a [[rat's tail]].
+*Buy an [[eye of newt]] from [[Betty]] for 3gp.
+*Run to the chapel south of [[Port Sarim]]. Kill a giant rat and take the [[raw rat meat]]. Run back to Hetty's house. Use the [[raw rat meat]] on the [[fireplace]]. If you accidentally cook the meat you can re-cook it on the [[fireplace]] again to burn it.
+*Pick an onion from the field north of [[Rimmington]].}}
+===Finishing up===
+{{Checklist|*Talk to Hetty while carrying all four items.
+*Drink from the cauldron.
+*'''Congratulations, quest complete!'''}}

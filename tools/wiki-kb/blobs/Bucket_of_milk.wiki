@@ -1,0 +1,112 @@
+{{External|rs|rsc=Milk}}
+{{Infobox Item
+|name = Bucket of milk
+|image = [[File:Bucket of milk.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Empty, Drop
+|examine = It's a bucket of milk.
+|value = 6
+|weight = 2.200
+|respawn = 100
+|exchange = Yes
+|id = 1927
+}}
+[[File:Bucket of milk detail.png|left|130px]]
+A '''bucket of milk''' is a [[Cooking]] ingredient used to make a variety of drinks and foods such as [[choc saturday]]s and [[cake]]s, as well as several [[pet feeder space|feeders]]. Players can use a [[bucket]] on a [[dairy cow]] or [[dairy buffalo]] to create a bucket of milk, or simply click on the cow or buffalo with at least one empty bucket in the [[inventory]].
+
+Players can turn a bucket of milk into [[chocolatey milk]] by adding [[chocolate dust]], or add milk to [[nettle tea]] (though this does not add any effects). Depending on their Cooking level, [[Members]] can use a [[dairy churn]] to turn a bucket of milk into a [[pot of cream]], a [[pat of butter]], or a piece of [[cheese]].
+
+A bucket of milk is required to complete the [[quests]] [[Cook's Assistant]], [[Gertrude's Cat]], [[Plague City]] (to make a [[Hangover cure]]), and the [[Skippy and the Mogres]] [[Miniquests|miniquest]] (to make a hangover cure).
+
+This, alongside the [[chocolatey milk]], [[milky mixture]], and [[hangover cure]], can be stored in a [[bottomless milk bucket]]. Each bottomless milk bucket can only store one type of dairy product at a time.
+
+==Creation==
+{{Recipe
+|members = No
+|ticks = 3
+|ticksnote = Left-clicking a [[dairy cow]] or [[dairy buffalo|buffalo]] is 3 ticks, using a bucket is 4 ticks. Auto-milking after either of those two methods is 8 ticks. 
+|facilities = Dairy cow
+|mat1 = Bucket
+|mat1qty = 1
+|output1 = Bucket of milk
+|output1num = 1
+}}
+
+==Uses==
+===Quests===
+*[[Cook's Assistant]]: 1 × bucket of milk
+*[[Plague City]]: 1 × bucket of milk to make [[chocolatey milk]]
+*[[Gertrude's Cat]]: 1 × bucket of milk
+*[[Ghosts Ahoy]]: 1 × bucket of milk
+*[[A Tail of Two Cats]]: 1 × bucket of milk
+*[[Ratcatchers]]: 1 × bucket of milk
+*[[Recipe for Disaster]] ([[Recipe for Disaster/Freeing the Mountain Dwarf|Freeing the Mountain Dwarf]] subquest): 1 × bucket of milk
+
+===Miniquests===
+*[[Skippy and the Mogres]]: 1 × bucket of milk to make chocolatey milk
+
+===Pets===
+A bucket of milk can also be used to feed kittens. If fed to a [[hellcat]], it will turn back into a normal [[cat]].
+
+==Products==
+{{Uses material list|Bucket of milk}}
+
+==Item sources==
+{{Drop sources|Bucket of milk}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Bucket of milk|location=[[Rellekka]]|members=Yes|2685,3683|leagueRegion=Fremennik}}
+{{ItemSpawnTableBottom}}
+
+===Shop locations===
+{{Store locations list|Bucket of milk}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 28 March 2006
+|update = Temple Trekking
+|change = The item's inventory sprite was rotated.
+}}
+{{Subject changes
+|date = 22 March 2006
+|update = In Aid of the Myreque
+|change = The item was graphically updated.
+}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The ability to milk regular cows was removed with the release of dairy cows.
+}}
+{{Subject changes
+|daterange = 7 – 14 March 2005
+|change = An "Empty" option was added.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Bucket of milk detail (historical, v1).png|center|300x150px]]
+|[[File:Bucket of milk detail (historical, v2).png|center|300x150px]]
+|[[File:Bucket of milk detail.png|center|300x150px]]
+|-
+|[[File:Bucket of milk (historical, v1).png|center]]
+|[[File:Bucket of milk (historical, v2).png|center]]
+|[[File:Bucket of milk.png|center]]
+|-
+|29 March 2004 ⁠–<br/>22 March 2006
+|22 March 2006 –<br/>28 March 2006
+|28 March 2006 –<br/>present
+|}
+
+{{Buckets}}
+{{Cook's Assistant}}
+[[Category:Cooking]]

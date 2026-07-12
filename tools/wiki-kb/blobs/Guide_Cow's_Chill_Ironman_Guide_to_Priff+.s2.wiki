@@ -1,0 +1,104 @@
+== Starting Your Journey ==
+
+{{Checklist|title=Section 1|
+* Make a cool character
+* Lumbridge Kitchen
+** pick up a [[Knife#Item sources|Knife]], 1 [[Jug#Item sources|Jug]] and fill it with water
+* Go down the ladder
+** pick up 2 Buckets (hop worlds), Cabbage, and Leather Boots
+* Progress [https://oldschool.runescape.wiki/w/Rune_Mysteries Rune Mysteries] until you've finished talking with the [https://oldschool.runescape.wiki/w/Duke_Horacio Duke Horacio]
+* Top floor of Castle, Right-click light logs to 15 Firemaking, bank 5 Ashes
+* Setup 2fa on your account and set a bank pin
+* Bank everything, pick up 1 inventory of logs and bank them
+* Withdraw a knife, pickup logs and fletch until you have 1815 Arrow Shafts
+
+}}
+
+{{Checklist|title=Section 2|
+* withdraw GP, Knife, Mind Runes, Air Runes
+* Pickpocket [https://oldschool.runescape.wiki/w/Man Men] in front of the Lumbridge Castle until 235 GP
+**Die for more HP or pick up cabbages in basement to eat
+* Buy from [https://oldschool.runescape.wiki/w/Lumbridge_General_Store Lumbridge General Store]
+** Spade
+** Hammer
+** Chisel
+* Progress [https://oldschool.runescape.wiki/w/X_Marks_the_Spot X Marks the Spot] until you've [https://oldschool.runescape.wiki/w/X_Marks_the_Spot/Quick_guide#/media/File:X_Marks_the_Spot_-_first_clue.png dug up outside Bob's] 
+** Buy a Steel Axe from [https://oldschool.runescape.wiki/w/Bob%27s_Brilliant_Axes. Bob's Brilliant Axes]
+* Progress [https://oldschool.runescape.wiki/w/The_Restless_Ghost Restless Ghost] until you've spoken to [https://oldschool.runescape.wiki/w/Father_Aereck Father Aereck]
+* Complete [https://oldschool.runescape.wiki/w/Misthalin_Mystery Misthalin Mystery]
+* Progress [https://oldschool.runescape.wiki/w/The_Restless_Ghost Restless Ghost] until you get a [https://oldschool.runescape.wiki/w/Ghostspeak_amulet Ghostspeak Amulet]
+** Pick up Leather Gloves  in the hut
+{{Map|name=Chill Ironman Guide PVM Prep|x=3148|y=3177|plane=0|r=4|mapID=0|mtype=square}}
+* Get the [https://oldschool.runescape.wiki/w/Friendly_Forester Forestry Kit] in Draynor Village
+* Bank everything except gp
+* Train until 20 Agility at the [https://oldschool.runescape.wiki/w/Draynor_Village_Rooftop_Course Draynor Course]
+* Buy 26 [https://oldschool.runescape.wiki/w/Jug_of_wine Jugs of Wine] from [https://oldschool.runescape.wiki/w/Fortunato Fortunato]
+}}
+
+{{Checklist|title=Section 3|
+* Clan Wars minigame tele to [https://oldschool.runescape.wiki/w/Ferox_Enclave Clan Wars-Ferox Envclave]
+* Restore Run Energy at Pool. Deposit Everything, withdraw 3 wines
+* Grab 7 Iron Bars (hop) north-west of Ferox
+{{Map|name=Chill Ironman Guide PVM Prep|x=3111|y=3657|plane=0|r=4|mapID=0|mtype=square}}
+* Take portal to Soul Wars back in Ferox (Northeast, in cave), then exit the portal to Edgeville
+** This is an easy teleport to Edgeville + Energy Restore, use often
+* Bank everything
+* Run to [https://oldschool.runescape.wiki/w/Barbarian_Village Barbarian Village], pick up 20 Cooked Meat in the Longhall(hop)
+* Progress [https://oldschool.runescape.wiki/w/Stronghold_of_Security Stronghold of Security] for 10k
+* Take portals out and Bank in Edgeville
+}}
+
+{{Checklist|title=Section 4|
+* withdraw Knife, Jug of Water, Bronze Axe, Tinderbox, Leather Gloves, 5 wines, 1 log
+* Equip Leather Gloves & Bronze Axe
+* Close to the portal/lever, grab 2 [https://oldschool.runescape.wiki/w/Nettles Nettles]
+* Pull [https://oldschool.runescape.wiki/w/Lever_(Edgeville) lever to Wildy], then again to go to Ardy
+* Pull lever again to Wildy, then again to Ardy
+* Complete Quests
+** [https://oldschool.runescape.wiki/w/Clock_Tower Clock Tower]
+** [https://oldschool.runescape.wiki/w/Monk%27s_Friend Monks Friend]
+** [https://oldschool.runescape.wiki/w/Hazeel_Cult Hazeel Cult] - Side with Hazeel
+*** pick up 4 Purple Dyes (hop) outside the mansion for [https://oldschool.runescape.wiki/w/Hazeel_Cult Hazeel Cult]
+* Bank at Ardougne (Ardy), deposit everything
+* withdraw Steel Axe, Tinderbox, gp
+* Go south and chop/burn to 35 Woodcutting and 39 Firemaking. Swap to Oaks at 15 Woodcutting
+* [https://oldschool.runescape.wiki/w/Aemad%27s_Adventuring_Supplies. Ardy General Store] buy 3 Ropes, 1 Water-filled Vial Pack, 7 Papyrus, 30 Balls of Wool
+* Deposit all, withdraw 1 Ball of Wool and gp
+* Check pet insurance with [https://oldschool.runescape.wiki/w/Probita Probita]
+* Use your 1 Prayer point then pray at the Altar in [https://oldschool.runescape.wiki/w/Ardougne_church Ardy Church]
+* Buy 1 Unstrung Symbol and 2 Silver Bars from [https://oldschool.runescape.wiki/w/Silver_merchant Silver Merchant] (hop)
+** String the Symbol
+* Steal froom the [https://oldschool.runescape.wiki/w/Bakery_stall Bakery Stall] and bank until you have 100 Cakes + 14 Bread + 84 Silk
+** Discard Chocolate Cakes
+* Steal additional cakes until 12,449 Thieving XP
+* Bank, withdraw GP, Knife, Spade
+* Dig up [http://i.imgur.com/sOD5Zhz.png Clue Hunter]
+* Take boat to Brimhaven with [https://oldschool.runescape.wiki/w/Captain_Barnaby Captain Barnaby] in Ardy
+* Buy from [https://oldschool.runescape.wiki/w/Trader_Crewmember Charter Trader]
+** 1 Swamp Paste
+** 7 Soda Ash
+** 7 Buckets of Sand
+** 1 Cake Tin
+** 1 Glassblowing Pipe
+* Bank everything, withdraw 1 Swamp Paste, GP
+* Complete [https://oldschool.runescape.wiki/w/Sea_Slug Sea Slug]
+* Buy from [https://oldschool.runescape.wiki/w/Lovecraft%27s_Tackle Witchaven Fishing Shop]
+** 2 Fishing Rods
+** 1 Fly Fishing Rod
+** 1 Harpoon
+** 1 Lobster Pot
+** 10 Fishing Bait
+** 1 Raw Sardine
+* Obtain and Equip [https://oldschool.runescape.wiki/w/Boots_of_lightness Boots of Lightness] from the [https://oldschool.runescape.wiki/w/Temple_of_Ikov_(dungeon) Southern Ikov Dungeon]
+** Keep these on whenever questing
+* Complete [https://oldschool.runescape.wiki/w/Sheep_Herder Sheep Herder]
+* Sell [https://oldschool.runescape.wiki/w/Oyster_pearls Oyster Pearls] to [https://oldschool.runescape.wiki/w/Aemad%27s_Adventuring_Supplies. Ardy General Store]
+* Complete [[Tribal totem]]
+* Bank all in ardy, withdraw [https://oldschool.runescape.wiki/w/Silk Silk]
+* Sell all but 19 [https://oldschool.runescape.wiki/w/Silk Silk] back to [https://oldschool.runescape.wiki/w/Silk_merchant Silk Trader]
+** (120 GP start, 60 GP haggle)
+* Bank at Ardy. withdraw gp, and 25 Cakes
+{{Youtube|3TPpibZwkZA}}
+* Get 51 Agility afk at [https://oldschool.runescape.wiki/w/Brimhaven_Agility_Arena Brimhaven Course]. Bank in Ardy for cakes as you need them
+** You can train actively for more XP
+}}

@@ -1,0 +1,26 @@
+== Mage Training Arena and Teleport Unlocks ==
+
+{{Checklist|title=Section 17|
+* Minigame tele to Mage Training Arena, bank upstairs
+* Bank, withdraw Nature Runes, Water Runes, Staff of Earth, and 6 Food
+** Get 211 Graveyard Points
+* Bank, withdraw Law Runes and an Air Staff
+** Get 1150 Telekinetic Points total
+* Bank, withdraw Nature Runes and a Fire Staff
+** Get 1150 Alchemist Points total
+* Bank, withdraw Cosmic Runes and an Earth Staff
+** Get 9500 Enchantment Points total
+* Buy Bones to Peaches
+* Bank, withdraw Water Staff, Earth Runes, Nature Runes
+** Get 739 Graveyard Points total
+* Buy Rune Pouch, Infinity Boots, and Master Wand from the [https://oldschool.runescape.wiki/w/Rewards_Guardian_(Mage_Training_Arena) Rewards Guardian]
+* Train Construction to 50 (If you aren't there already)
+{{Youtube|GFH6-oJrJ0o}}
+* Bank, withdraw Earth Runes, Water Runes, Law Runes, Soul Runes, Air Runes, Hammer, Saw, 12 Teak Planks, 6 Limestone Bricks
+* Teleport to house, make a [https://oldschool.runescape.wiki/w/Portal_chamber#Portals Portal Chamber room, 3 Teak Portal Frames, and 1 Teleport Focus]
+* Direct the Focus
+** Draynor Manor Teleport
+** Salve Graveyard Teleport
+** Frankenstrain's Castle
+** Use these in the future when questing
+}}

@@ -1,0 +1,40 @@
+==Part 2: Zanaris, Aldarin & Gem Cutting==
+<div class="mw-collapsible">
+{{Checklist|
+* Run southeast to fairy ring
+* Fairy ring to [[Zanaris]]
+* Kill cow, pick up [[Cowhide]], bury bones
+* Claim slayer task from [[Chaeldar]]
+* Fairy ring to [[Aldarin]] (CKQ)
+* Run south, speak to [[Vineyard foreman]] (near big wine vats), ask if he needs help
+* Search the grape vineyards for 4 shimmering grape vines (Vineyard helper Runelite plugin if you're struggling)
+* Speak to [[Vineyard foreman]] to turn in, destroy [[Grape barrel]]
+* Run east to bank, deposit all
+* Withdraw coins (need 25+ GP), [[Chisel]]
+* Buy [[Chisel]] in General store to the north if you forgot to buy earlier
+* Run to [[Toci's Gem Store]] (northeast of bank)
+* '''Money making:''' Buy uncut [[Sapphire]]s, cut, then sell (1 at a time is 7x GP, 5 at a time is ~5x GP)
+* Stay as long as you want, upgrade to [[Emerald]]s and [[Ruby|Rubies]] when possible. I plan to stay for ~50k gp, and return later at 8x rate
+* When done, buy 3 [[Sapphire]]s, [[Emerald]]s, [[Ruby|Rubies]] for later. Run east to charters
+* Buy 5 [[Raw rabbit]], [[Tyras helm]], [[Bucket]], [[Tinderbox]]. 
+* Cook rabbit at range southwest, eat once you get a cooked one. Buy more if you failed
+* Kill a [[Seagull]]
+* Travel at [[Antonia]] to [[Sunset Coast]] (Don't charter)
+* Buy [[Torch]] in General store, Light torch and drop torch/tinderbox
+* Fill bucket at [[Sand pit]] (north), drop sand
+* Run to Fishing Shop (Southeast, look at map)
+* Buy 1,000 [[Feather]]s, [[Big fishing net]] (we'll buy more later)
+* Charter to [[Civitas illa Fortis]]
+* Buy 15 [[Pineapple]]s from charter, bank them
+* Run south to pond ("Park" on map)
+* Fish until [[Casket]], [[Old boot]], and [[House keys|House key]] (Can skip house key and come back later, 1/10 might take a while)
+* Run northwest to bar
+* Buy 1 [[Cup of tea]], 1 [[Moon-lite]], 1 [[Stew]], 1 [[Jug of wine]]. 
+* Drink [[Moon-lite]], [[Jug of wine]]
+* Run southwest, buy [[Player-owned house|POH]]
+* Run southeast to mace shop, buy [[Steel mace]]
+* Run to [[Bazaar|Civitas Bazaar]], thieve from citizen 10 times without failing
+* Buy 1 [[Silk]] from silk trader, sell it back
+* Run west near west bank. Give [[Oli]] a [[Stew]]
+}}
+</div>

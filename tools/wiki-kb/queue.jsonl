@@ -1,0 +1,10 @@
+{"key": "study:cows-chill", "status": "pending", "payload": {"note": "Extract checklist grammar, breadcrumb patterns, and template goldmines from Cow Chill Ironman guide"}, "ts": "2026-07-12T05:55:09Z"}
+{"key": "study:cows-chill", "status": "claimed", "payload": null, "ts": "2026-07-12T05:55:11Z"}
+{"key": "study:faux", "status": "pending", "payload": {"note": "extract checklist granularity from Faux starting guide"}, "ts": "2026-07-12T05:55:17Z"}
+{"key": "study:faux", "status": "claimed", "payload": null, "ts": "2026-07-12T05:55:19Z"}
+{"key": "study:cows-chill", "status": "done", "payload": null, "ts": "2026-07-12T05:59:40Z"}
+{"key": "study:faux", "status": "done", "payload": null, "ts": "2026-07-12T06:00:01Z"}
+{"key": "study:multiquest-im", "status": "pending", "payload": {"note": "extracting checklist grammar and breadcrumbs from Guide:Ironman Multiquest"}, "ts": "2026-07-12T06:00:35Z"}
+{"key": "study:multiquest-im", "status": "claimed", "payload": null, "ts": "2026-07-12T06:00:39Z"}
+{"key": "study:multiquest-im", "status": "claimed", "payload": null, "ts": "2026-07-12T06:04:57Z"}
+{"key": "study:multiquest-im", "status": "done", "payload": null, "ts": "2026-07-12T06:07:58Z"}

@@ -1,0 +1,9 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=650|delta=10|bucket=No}}
+{{StoreLine|name=Bronze platelegs|stock=5|restock=100}}
+{{StoreLine|name=Iron platelegs|stock=3|restock=400}}
+{{StoreLine|name=Steel platelegs|stock=2|restock=900}}
+{{StoreLine|name=Black platelegs|stock=1|restock=1200}}
+{{StoreLine|name=Mithril platelegs|stock=1|restock=2000}}
+{{StoreLine|name=Adamant platelegs|stock=1|restock=13000}}
+{{StoreTableBottom}}

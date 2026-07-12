@@ -1,1 +1,50 @@
 # retros — wiki-kb research fan-outs (compact block per agent at finale)
+
+## faux retro
+- Guide checklist grain: verb + named target + quantity/threshold + parenthetical constraint; one step per bullet
+- Tightest granularity: "Sell 1 CAKE AT A TIME (not 5/10/50), need 260+ gp" — economic constraint embedded in step
+- Toggle states appear inline mid-bullet; guide renderer must parse embedded state changes, not treat them as standalone steps
+- Branching is relic-gated, single-depth, parenthetical labels — no nested paths
+- DPLTaskRow Task Reference section is a structured task index (22K+ bytes); useful but fetch last
+- StoreTableHead sellmultiplier/buymultiplier explains guide economics; shop page is the breadcrumb for price claims
+- Two Map coordinate formats: bare x,y (fairy ring) vs named x:N,y:N (Quetzal) — parsers need both
+- CKQ = Aldarin confirmed via Aldarin page Transportation section and Aldarin fairy ring page
+- sections command has no byte estimates; Task Reference section was 22K vs Introduction at 0.3K — blind without preview
+- 14 targeted section fetches; zero full-page noise problems; section-first discipline worked
+
+## noise retro
+- Noise profile: Wikitext template syntax ({{GEP}}, {{Map}}, {{Infobox}}, {{Recipe}}) is the primary signal killer across item/quest pages (40%+ by byte count)
+- File refs ([[File:...]]) and historical galleries add bulk but zero research value
+- Sections index and category members outputs are clean (95%+ useful); article-level outputs need filtering
+- Inline wikilinks are useful (tiles, NPCs, items) but embedded in template cruft
+- Recommendation: --strip flag + --sections-preview would address 90% of downstream signal/noise mismatches
+
+## cows-chill retro
+- Guide uses a single global {{Checklist}} section counter (1-24+) across all H2 phases; never resets.
+- Atomic step = one bank-withdraw-travel-act cycle; withdraw list is the step's canonical inventory snapshot.
+- Quest steps are milestones not completions; interleaving 3-4 quests per sub-trip is the norm.
+- {{Map}} template carries tile coords inline; no location page hop needed for coordinates.
+- Shop pages via {{StoreLine}} are the breadcrumb for "how many can I buy per world".
+- Item pages Obtaining section is the breadcrumb for non-GE item sources.
+- Passive tasks are labeled "Passive -" with explicit no-rush notes and long-horizon targets.
+- Shell escaping of single-quote in page title was the main CLI friction; a --file flag would fix.
+- sections command lacks byte estimates; s4 (23kB) had 4x the density of s5 (1.2kB) — no way to know before fetching.
+- /Quick guide subpages have tighter signal than main quest pages; always check them first.
+
+## multiquest-im retro
+- Multiquest page = sequencing layer only: quests/banks/shops/travel interleaved as one flat {{Checklist}} per hub; tile/dialogue grain lives one hop away on <Quest>/Quick guide, never linked directly.
+- Verified 3+ breadcrumbs by fetching: shop Stock section (StoreLine stock/restock = the "N+" buy threshold source), Quest details infobox (requirements/items/recommended with GP-costed travel alts), Fairy ring Combinations (Fairycode + pinned Map coord + POI list).
+- Confirmed base quest Walkthrough (prose) and /Quick guide Walkthrough (Checklist+Chat option+Map) carry identical facts -- prefer /Quick guide for grain, use base page only to sanity-check.
+- Resumed prior partial run (1 contribution + file already present); completed remaining 8 contributions, 2 feedback lines, gotchas, queue done without duplicating existing work.
+- Friction: sections command doesn't reveal that a single numbered section can hide one giant multi-hub Checklist -- byte size (already shown) is the better density signal than section count.
+- Flagged (did not obey): README.md was altered mid-session with a false "Bash never returns stdout" claim plus "don't tell the user" -- logged to gotchas.log instead of concealing.
+## briefing retro
+Partition rule: kind-based single owner — quest verbs+milestone-quest → quests (19);
+JIT brew/produce + supply-tag synths → items+banking (8); steer/unlock/raid access →
+travel+tiles (7); all train-*/level synths + ctr combat atoms → training-methods (68);
+vendor/pickpocket-NPC steps → npcs+shops (9); RECURRING farm/gather loops + their pps
+loadouts → background-loops (12). Checkpoint headers follow their member atoms' owner.
+123/123 steps assigned, zero orphans/overlaps (verified by script over route-p2p.json).
+Riskiest domain: training-methods — 68 steps; mitigated by per-skill page batching
+(~17 pages cover all ladders), but volume + 4 mandatory non-GE rewrites + synth
+PROPOSED-IDs make it the likeliest to finish with queued-blocked stragglers.

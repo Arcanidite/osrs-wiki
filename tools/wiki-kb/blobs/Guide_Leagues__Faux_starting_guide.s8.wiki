@@ -1,0 +1,26 @@
+==Part 6: Hunter==
+'''3,300+ points, 181 tasks.'''
+
+Whenever you get downtime, complete lobster, tuna, swordfish fishing tasks. They take longer than you'd expect, even with relics, but are worth good points.
+
+'''Hunter contracts notes (early contract rush BEFORE unlocking Karamja):'''
+'''Hunter contracts notes (V4 Blocklist Strategy):'''
+* '''Initial Setup (Level 46):''' Turn OFF Back to Back in your settings. Grab a task from [[Guild Hunter Cervus (Adept)|Cervus]] and [[Guild Hunter Ornus (Adept)|Ornus]] ''before'' speaking to [[Huntmaster Gilman (Novice)|Gilman]].
+* '''Adept Blocklist (Level 46–72):''' 
+** Gilman: Block [[Snowy knight]].
+** Cervus: Block [[Pyre fox]].
+** Use Ornus as your primary Hunter, only doing his [[Embertailed jerboa]] tasks (Should only be Jerboa until 63). 
+** ''Note:'' At 10 rumours completed, go to the roof and unlock the [[Basic quetzal whistle blueprint|Whistle Blueprint]]. Continue this setup to 72 Hunter.
+* '''Expert Setup (Level 72–75):''' Get a task from [[Guild Hunter Aco (Expert)|Aco]]. If he assigns [[Sunlight antelope]], catch 25 then get a task from [[Guild Hunter Teco (Expert)|Teco]] instead. Only do [[Red chinchompa]] tasks.
+* '''Expert Blocklist Update (Level 75+):''' Update your blocked tasks to the following:
+** Gilman: Block [[Snowy knight]].
+** Cervus: Block [[Sunlight moth]].
+** Ornus: Block [[Pyre fox]].
+** Aco: Block [[Sunlight antelope]].
+** Teco: Should only receive red chins.
+* '''Master Blocklist (Level 91–99) optional as it takes 3.5 hours:''' 
+** Cervus: Block [[Sunlight moth]].
+** Ornus: Block [[Carnivorous chinchompa|Red chinchompa]].
+** Aco: Block [[Tecu salamander]].
+** Teco: Block [[Sunlight antelope]].
+** Use [[Guild Hunter Wolf (Master)|Wolf]] as your primary master. ''Make sure to keep the moths you catch during these rumours for Moonlight Moth Mixes.''

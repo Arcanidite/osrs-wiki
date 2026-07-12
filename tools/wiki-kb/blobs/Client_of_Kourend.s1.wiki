@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|start = Talk to [[Veos]] at [[Port Piscarilius]].
+|startmap = 1826,3690
+|difficulty = Novice
+|description = Will you help Veos handle a mysterious client?
+|length = Short
+|requirements = *Completion of the following quest:
+**[[X Marks the Spot]]
+|items = * [[Feather]] ''(a [[Stripy feather|stripy]] or coloured feather can also be used, but a [[magic gold feather]] cannot)''
+|recommended = *[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+*Fast travel to several locations
+**[[Port Sarim]] to start the quest - [[Amulet of glory]] to [[Draynor Village]] or [[Explorer's ring]] 2-4 or [[Teleport to House]] (Rimmington) or [[Skills necklace]] to [[Crafting Guild]]
+**[[Hosidius]] (1 trip) - [[Lovakengj Minecart Network]] for {{Coins|20}} or [[Fairy ring]] to {{fairycode|AKR}}
+**[[Shayzien]] (1 trip) - [[Lovakengj Minecart Network]] for {{Coins|20}} or [[Fairy ring]] to {{fairycode|DJR}}
+**[[Lovakengj]] (1 trip) - [[Lovakengj Minecart Network]] for {{Coins|20}} or [[Fairy ring]] to {{fairycode|DJR}}
+**[[Arceuus]] (1 trip) - [[Lovakengj Minecart Network]] for {{Coins|20}} or [[Fairy ring]] to {{fairycode|CIS}}
+**[[Dark Altar]] (1 trip) - [[Games necklace]] or [[Fairy ring]] to {{fairycode|CIS}}
+**[[Port Piscarilius]] (1 trip) - [[Lovakengj Minecart Network]] for {{Coins|20}}
+|kills = 
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kourend}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

@@ -1,0 +1,76 @@
+=== Spawns ===
+
+==== In Lumbridge Castle ====
+{| class="wikitable"
+!Item
+!Spawns
+!Location
+|-
+|{{Plink|Bowl}}
+|1
+|Kitchen
+|-
+|{{Plink|Bronze arrow}}
+|1
+|North stairs
+|-
+|{{Plink|Bronze dagger}}
+|1
+|{{FloorNumber|uk=1}}
+|-
+|{{Plink|Bronze pickaxe}}
+|2
+|Top of the gate towers
+|-
+|{{Plink|Bucket}}
+|1
+|Basement
+|-
+|{{Plink|Cabbage}}
+|1
+|Basement
+|-
+|{{Plink|Jug}}
+|2
+|Kitchen, basement
+|-
+|{{Plink|Knife}}
+|2
+|Kitchen, basement
+|-
+|{{Plink|Leather boots}}
+|1
+|Basement
+|-
+|{{Plink|Logs}}
+|4
+|Very top of castle
+|-
+|{{Plink|Mind rune}}
+|1
+|South stairs
+|-
+|{{Plink|Pot}}
+|1
+|Kitchen
+|}
+
+==== Outside the castle ====
+{| class="wikitable"
+!Item
+!Spawns
+!Location
+|-
+|{{Plink|Egg}}
+|2
+|Inside of and next to the chicken coop
+|-
+|{{Plink|Iron dagger}}
+|1
+|[[Lozar's house]] across the river
+|-
+|{{Plink|Onion}}
+|1
+|{{FloorNumber|uk=1}} of the general store
+|}
+[[File:Broken Raft (Shortcut - Lumbridge).png|thumb|The broken raft connecting Lumbridge and Al Kharid]]

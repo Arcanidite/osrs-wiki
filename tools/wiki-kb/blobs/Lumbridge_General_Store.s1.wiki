@@ -1,0 +1,18 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1300|buymultiplier=400|delta=30}}
+{{StoreLine|name=Pot|stock=5|restock=10}}
+{{StoreLine|name=Jug|stock=2|restock=100}}
+{{StoreLine|name=Empty jug pack|stock=5|gemw=No|restock=20}}
+{{StoreLine|name=Shears|stock=2|restock=100}}
+{{StoreLine|name=Knife|stock=5|restock=100}}
+{{StoreLine|name=Bucket|stock=3|restock=10}}
+{{StoreLine|name=Empty bucket pack|stock=15|gemw=no|restock=10}}
+{{StoreLine|name=Bowl|stock=2|restock=50}}
+{{StoreLine|name=Cake tin|stock=2|restock=50}}
+{{StoreLine|name=Tinderbox|stock=2|restock=100}}
+{{StoreLine|name=Chisel|stock=2|restock=100}}
+{{StoreLine|name=Spade|stock=5|restock=100}}
+{{StoreLine|name=Hammer|stock=5|restock=100}}
+{{StoreLine|name=Newcomer map|stock=5|gemw=no|restock=100}}
+{{StoreLine|name=Security book|stock=5|restock=100}}
+{{StoreTableBottom}}

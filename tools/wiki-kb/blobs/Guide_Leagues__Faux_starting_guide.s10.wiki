@@ -1,0 +1,166 @@
+==Task Reference==
+{{LeagueSync}}<div class="mw-collapsible">{{DPLTaskHeader}}
+{{DPLTaskRow|Open the Leagues Menu|Open the Leagues menu found within the [[Character Summary|journal panel]].|s=|other=|tier=easy|region=General|pactTask=yes|id=50}}
+{{DPLTaskRow|Complete the Leagues Tutorial|Complete the Leagues Tutorial and begin your adventure.|s=|other=|tier=easy|region=General|pactTask=yes|id=19}}
+{{DPLTaskRow|Turn off your run|Turn off your [[Energy|run]].|s=|other=|tier=easy|region=General|id=72}}
+{{DPLTaskRow|Pickpocket a Citizen|Pickpocket a [[man]] or a [[woman]].|s=|other=|tier=easy|region=General|id=54}}
+{{DPLTaskRow|Achieve Your First Level 5|Reach level 5 in any skill (not including [[Agility]], [[Hitpoints]] and [[Runecraft]]).|s=|other=|tier=easy|region=General|id=1}}
+{{DPLTaskRow|Fill something up from a water pump|Fill [[Water|something]] up from a [[Water pump (Varlamore)|water pump]].|s=|other=|tier=easy|region=Varlamore|id=91}}
+{{DPLTaskRow|Pet Renu|Pet [[Renu]].|s=|other=|tier=easy|region=Varlamore|id=96}}
+{{DPLTaskRow|Bow near a quetzal|[[Emotes|Bow]] near a [[quetzal]].|s=|other=|tier=easy|region=Varlamore|id=74}}
+{{DPLTaskRow|Travel using the Quetzal Transport System|Travel using the [[Quetzal Transport System]].|s=|other=|tier=easy|region=Varlamore|id=108}}
+{{DPLTaskRow|Cast Home Teleport|Cast the [[Home Teleport]] spell.|s=|other=|tier=easy|region=General|id=9}}
+{{DPLTaskRow|Attack a dummy|Attack a [[dummy]].|s=|other=|tier=easy|region=General|id=4}}
+{{DPLTaskRow|Cry near a child|[[Cry]] near a [[Child (disambiguation)|child]].|s=|other=|tier=easy|region=Varlamore|id=78}}
+{{DPLTaskRow|Steal some bread|Steal some bread from a [[bakery stall]].|s={{SCP|Thieving|5|link=yes}}|other=|tier=easy|region=General|id=68}}
+{{DPLTaskRow|Defeat a Rat|Defeat a [[rat]].|s=|other=|tier=easy|region=General|id=28}}
+{{DPLTaskRow|Salute next to a statue of Quoatlos|[[Salute]] next to a [[statue of Quoatlos]].|s=|other=|tier=easy|region=Varlamore|id=100}}
+{{DPLTaskRow|Activate a prayer near an altar|Activate a prayer near an [[altar]].|s=|other=|tier=easy|region=General|id=3}}
+{{DPLTaskRow|Pet Xolo in Civitas|Pet [[Xolo]] in [[Civitas illa Fortis]].|s=|other=|tier=easy|region=Varlamore|id=97}}
+{{DPLTaskRow|Drink from a bird bath|Drink from a [[bird bath]].|s=|other=|tier=easy|region=Varlamore|id=87}}
+{{DPLTaskRow|Chop Some Logs|Chop any kind of [[Woodcutting#Logs|logs]].|s=|other=Any [[axe]]|tier=easy|region=General|id=14}}
+{{DPLTaskRow|Burn Some Normal Logs|Burn some [[Logs|normal logs]].|s=|other=|tier=easy|region=General|id=6}}
+{{DPLTaskRow|Fletch Some Arrow Shafts|Fletch some [[arrow shafts]].|s=|other=|tier=easy|region=General|id=40}}
+{{DPLTaskRow|Talk to a Gladiator|Talk to a [[Gladiator (Fortis Colosseum)|Gladiator]].|s=|other=|tier=easy|region=Varlamore|id=105}}
+{{DPLTaskRow|Talk to any Port master|Talk to any [[port master]].|s=|other=|tier=easy|region=General|id=70}}
+{{DPLTaskRow|Achieve Your First Level 10|Reach level 10 in any skill (not including [[Agility]] and [[Hitpoints]]).|s=|other=|tier=easy|region=General|id=0}}
+{{DPLTaskRow|Achieve Your First Level 20|Reach level 20 in any skill.|s=|other=|tier=medium|region=General|id=227}}
+{{DPLTaskRow|Achieve Your First Level 30|Reach level 30 in any skill.|s=|other=|tier=medium|region=General|id=228}}
+{{DPLTaskRow|Achieve Your First Level 40|Reach level 40 in any skill.|s=|other=|tier=medium|region=General|id=229}}
+{{DPLTaskRow|Achieve Your First Level 50|Reach level 50 in any skill.|s=|other=|tier=medium|region=General|id=230}}
+{{DPLTaskRow|Achieve Your First Level 60|Reach level 60 in any skill.|s=|other=|tier=medium|region=General|id=231}}
+{{DPLTaskRow|Achieve Your First Level 70|Reach level 70 in any skill.|s=|other=|tier=hard|region=General|id=732}}
+{{DPLTaskRow|Defeat a Chicken|Defeat a [[chicken]].|s=|other=|tier=easy|region=General|id=25}}
+{{DPLTaskRow|Sit near a stolen cabbage|Sit near a [[stolen cabbage]].|s=|other=|tier=easy|region=Varlamore|id=103}}
+{{DPLTaskRow|Feed a dog some bones|Feed a dog (e.g., [[Chiribaya]]) some [[bones]].|s=|other=|tier=easy|region=General|id=39}}
+{{DPLTaskRow|Eat an Onion|Eat an [[onion]], raw.|s=|other=|tier=easy|region=General|id=34}}
+{{DPLTaskRow|Pick 6 wheat, 6 cabbages and 6 potatoes|Pick 6 [[wheat]], 6 [[cabbage]], and 6 [[potato]]es.|s=|other=|tier=easy|region=General|id=53}}
+{{DPLTaskRow|Make some Flour|Make some [[Flour]] in a [[windmill]].|s=|other=|tier=medium|region=General|id=346}}
+{{DPLTaskRow|Rake a Flower Patch|Rake a [[flower patch]].|s=|other=|tier=easy|region=General|id=58}}
+{{DPLTaskRow|Milk a Buffalo|Milk a [[Dairy Buffalo|Buffalo]].|s=|other=|tier=easy|region=Varlamore|id=94}}
+{{DPLTaskRow|Shear an Alpaca|Shear an [[Alpaca]].|s=|other=|tier=easy|region=Varlamore|id=102}}
+{{DPLTaskRow|Bury 6 bones|Bury 6 [[Remains#Bones|bones]] of any kind.|s=|other=|tier=easy|region=General|id=8}}
+{{DPLTaskRow|Fill a Grape Barrel for the Foreman|Fill a [[Grape barrel|Grape Barrel]] for the [[Vineyard foreman|Foreman]] in [[Aldarin]].|s=|other=|tier=medium|region=Varlamore|id=425}}
+{{DPLTaskRow|Cut a Ruby|Cut a [[ruby]].|s={{SCP|Crafting|34|link=yes}}|other=|tier=easy|region=General|id=24}}
+{{DPLTaskRow|Eat a Rabbit|Eat a [[cooked rabbit]].|s=|other=|tier=easy|region=General|id=33}}
+{{DPLTaskRow|Defeat a Seagull|Defeat a [[Seagull]].|s=|other=|tier=easy|region=Varlamore|id=82}}
+{{DPLTaskRow|Light a Torch|Light a [[torch]].|s=|other=|tier=easy|region=General|id=43}}
+{{DPLTaskRow|Fill a bucket with sand at the Sunset coast|Fill a [[bucket]] with [[Sand pit|sand]] at the [[Sunset Coast|Sunset coast]].|s=|other=|tier=easy|region=Varlamore|id=90}}
+{{DPLTaskRow|Charter a Ship From Sunset Coast to Civitas|Take a [[Charter Ship]] from [[Sunset Coast]] to [[Civitas illa Fortis]].|s=|other=|tier=easy|region=Varlamore|id=75}}
+{{DPLTaskRow|Obtain a Casket from Fishing|Obtain a [[casket]] from [[fishing]].|s={{SCP|Fishing|16|link=yes}}|other=|tier=easy|region=General|id=49}}
+{{DPLTaskRow|Obtain an old boot from a fishing spot|Obtain an [[old boot]] from a fishing spot.|s=|other=|tier=medium|region=General|id=355}}
+{{DPLTaskRow|Fish a House Key|Fish a [[House keys|House Key]].|s=|other=[[Big fishing net]]|tier=medium|region=Varlamore|id=426}}
+{{DPLTaskRow|Drink some moon-lite|Drink some [[moon-lite]].|s=|other=|tier=easy|region=Varlamore|id=88}}
+{{DPLTaskRow|Purchase a Player Owned House|Purchase a [[player-owned house]].|s=|other={{Coins|1000}}|tier=easy|region=General|id=57}}
+{{DPLTaskRow|Successfully pickpocket a Citizen 10 times in a row|Successfully pickpocket a [[Citizen (Civitas illa Fortis)|Citizen]] 10 times in a row without failing.|s=|other=|tier=medium|region=General|id=381}}
+{{DPLTaskRow|Sell some silk to a silk trader|Sell some [[silk]] to a [[Silk Merchant (Civitas illa Fortis)|silk trader]].|s=|other=|tier=easy|region=General|id=60}}
+{{DPLTaskRow|Give Oli some Stew|Give [[Oli]] some [[Stew]] in [[Civitas illa Fortis]].|s=|other=|tier=easy|region=Varlamore|id=92}}
+{{DPLTaskRow|Drink a cup of tea in auburn valley|Drink a [[cup of tea]] in the [[Auburn Valley]].|s=|other=|tier=easy|region=Varlamore|id=86}}
+{{DPLTaskRow|Turn any Logs Into a Plank|Use a [[sawmill]] to turn [[logs]] into a [[plank]].|s=|other=[[Logs]] and {{Coins|100}}|tier=easy|region=General|id=71}}
+{{DPLTaskRow|Craft Leather chaps|Craft [[leather chaps]].|s={{SCP|Crafting|18|link=yes}}|other=|tier=easy|region=General|id=22}}
+{{DPLTaskRow|Admire some beautiful scenery|Admire some [[Vale Totems#Admiring|beautiful scenery]] in [[Auburnvale]] or the [[Auburn Valley]].|s=|other=|tier=easy|region=Varlamore|id=73}}
+{{DPLTaskRow|Step onto an Ent trail|Step onto an [[Ent trail]].|s=|other=|tier=easy|region=Varlamore|id=104}}
+{{DPLTaskRow|Pick 6 flax|Pick 6 [[flax]].|s=|other=|tier=easy|region=General|id=52}}
+{{DPLTaskRow|Spin a Ball of Wool|Use a [[spinning wheel]] to spin a [[ball of wool]].|s=|other=|tier=easy|region=General|id=67}}
+{{DPLTaskRow|Burn Some Oak Logs|Burn some [[oak logs]].|s={{SCP|Firemaking|15|link=yes}}|other=|tier=easy|region=General|id=7}}
+{{DPLTaskRow|Fletch an Oak Shortbow|Fletch an [[oak shortbow]].|s={{SCP|Fletching|20|link=yes}}|other={{SCP|Woodcutting|15|link=yes}} if chopping own log|tier=easy|region=General|id=41}}
+{{DPLTaskRow|Fletch 25 Oak Stocks|Fletch 25 [[Oak Stock]]s.|s={{SCP|Fletching|24|link=yes}}|other=|tier=medium|region=General|id=324}}
+{{DPLTaskRow|Fully decorate an Oak totem in the Auburn Valley|Fully decorate an [[Oak totem]] in the [[Vale Totems|Auburn Valley]].|s={{SCP|Fletching|20|link=yes}}|other=[[Knife]] and 5 [[Oak logs]]|tier=medium|region=Varlamore|id=429}}
+{{DPLTaskRow|Fletch a Willow Shortbow (u)|Fletch a [[Willow shortbow (u)|Willow Shortbow (u)]].|s={{SCP|Fletching|35|link=yes}}|other=|tier=medium|region=General|id=326}}
+{{DPLTaskRow|Fletch 50 Willow longbow (u)|Fletch 50 [[Willow longbow (u)]].|s={{SCP|Fletching|40|link=yes}}|other=|tier=medium|region=General|id=325}}
+{{DPLTaskRow|Fully decorate a Willow totem in the Auburn Valley|Fully decorate a [[Willow totem]] in the [[Vale Totems|Auburn Valley]].|s={{SCP|Fletching|35|link=yes}}|other=[[Knife]] and 5 [[Willow logs]]|tier=medium|region=Varlamore|id=428}}
+{{DPLTaskRow|Fletch 1000 arrow shafts|Fletch 1000 [[arrow shafts]].|s=|other=|tier=medium|region=General|id=321}}
+{{DPLTaskRow|Chop 50 Maple Logs|Chop 50 [[Maple Logs]].|s={{SCP|Woodcutting|45|link=yes}}|other=|tier=medium|region=General|id=256}}
+{{DPLTaskRow|Fletch 25 Maple longbow (u)|Fletch 25 [[Maple longbow (u)]].|s={{SCP|Fletching|55|link=yes}}|other=|tier=medium|region=General|id=323}}
+{{DPLTaskRow|Complete the Vale totems miniquest|Complete the [[Vale Totems (miniquest)|Vale Totems miniquest]].|s={{SCP|Fletching|20|link=yes}}|other=|tier=easy|region=Varlamore|id=77}}
+{{DPLTaskRow|Dye a cape Purple|Dye a [[cape]] [[Purple dye|purple]].|s=|other=|tier=easy|region=General|id=32}}
+{{DPLTaskRow|Dance near a bard|[[Dance]] near a [[bard]].|s=|other=|tier=easy|region=Varlamore|id=79}}
+{{DPLTaskRow|Defeat a Frog|Defeat a [[frog]].|s=|other=|tier=easy|region=General|id=26}}
+{{DPLTaskRow|Shoot 6 iron arrows|Shoot 6 [[iron arrow]]s.|s=|other=|tier=easy|region=General|id=61}}
+{{DPLTaskRow|Snare 5 Crimson Swifts|Snare 5 [[crimson swift]]s.|s=|other=|tier=easy|region=General|id=65}}
+{{DPLTaskRow|Snare 15 Tropical Wagtails|Snare 15 [[tropical wagtail]]s.|s={{SCP|Hunter|19|link=yes}}|other=|tier=easy|region=General|id=64}}
+{{DPLTaskRow|Successfully Cook 5 Pieces of Food|Cook 5 pieces of food in a row without burning them.|s=|other=|tier=medium|region=General|id=380}}
+{{DPLTaskRow|Catch a Shrimp|Catch [[raw shrimp]] while [[fishing]].|s=|other=|tier=easy|region=General|id=12}}
+{{DPLTaskRow|Catch a Herring|Catch a [[raw herring]] whilst [[fishing]].|s={{SCP|Fishing|10|link=yes}}|other=|tier=easy|region=General|id=11}}
+{{DPLTaskRow|Catch an Anchovy|Catch a [[Raw anchovies|raw anchovy]] whilst [[fishing]].|s={{SCP|Fishing|15|link=yes}}|other=|tier=easy|region=General|id=13}}
+{{DPLTaskRow|Cook Shrimp|Cook [[raw shrimps]].|s=|other=|tier=easy|region=General|id=20}}
+{{DPLTaskRow|Defeat an Imp with an earth spell|Defeat an [[imp]] with an [[earth spell]].|s={{SCP|Magic|9|link=yes}}|other=|tier=easy|region=General|id=30}}
+{{DPLTaskRow|Pet a Caique|Pet a [[Caique]] near the [[Statue (Ates)|statue of Ates]] in [[Kastori]] or in the north of the [[Tlati Rainforest]].|s=|other=|tier=easy|region=Varlamore|id=98}}
+{{DPLTaskRow|Witness the gemstone Crab burrow away|Witness the [[Gemstone Crab|gemstone crab]] burrow away.|s=|other=|tier=easy|region=Varlamore|id=110}}
+{{DPLTaskRow|Defeat an Icefiend in Varlamore|Defeat an [[Icefiend]] in [[Varlamore]].|s=|other=|tier=easy|region=Varlamore|id=84}}
+{{DPLTaskRow|Defeat 5 Bunnies|Defeat 5 [[Rabbit|Bunnies]].|s=|other=|tier=medium|region=General|id=285}}
+{{DPLTaskRow|Scatter some Ashes in Yama's lair|Scatter some [[Ashes]] in [[Yama's Lair|Yama's lair]].|s=|other=|tier=easy|region=Varlamore|id=101}}
+{{DPLTaskRow|Jump on Yama's stepping stones 666 times|Jump on Yama's stepping stones in his [[Yama's Lair|League domain]] 666 times.|s={{SCP|Agility|1|link=yes}}|other=|tier=medium|region=Varlamore|id=430}}
+{{DPLTaskRow|Build a Room in Your Player Owned House|Build a room in your [[player-owned house]].|s=|other={{Coins|1000}}|tier=medium|region=General|id=234}}
+{{DPLTaskRow|Get a haircut|Go and [[Sonalo|get a haircut]].|s=|other=|tier=easy|region=General|id=42}}
+{{DPLTaskRow|Trim your beard in Cam torum|[[Sonalo|Trim your beard]] in [[Cam Torum]].|s=|other=|tier=easy|region=Varlamore|id=109}}
+{{DPLTaskRow|Cast Low Level Alchemy|Cast the [[Low Level Alchemy]] spell.|s={{SCP|Magic|21|link=yes}}|other=|tier=medium|region=General|id=241}}
+{{DPLTaskRow|Equip a Full Bronze Set|Equip a [[Bronze platebody|Bronze Platebody]], a [[Bronze full helm|Bronze Full Helm]] and either some [[Bronze platelegs|Bronze Platelegs]] or a [[Bronze plateskirt|Bronze Plateskirt]].|s=|other=|tier=medium|region=General|id=294}}
+{{DPLTaskRow|Equip an Iron dagger|Equip an [[iron dagger]].|s=|other=|tier=easy|region=General|id=38}}
+{{DPLTaskRow|Defeat a Guard in Varlamore underground|Defeat a [[Guard]] in [[Kualti Headquarters|Varlamore underground]].|s=|other=|tier=easy|region=Varlamore|id=81}}
+{{DPLTaskRow|Defeat a thief|Defeat a [[Thief (Varlamore)|thief]].|s=|other=|tier=easy|region=Varlamore|id=83}}
+{{DPLTaskRow|Defeat a Buffalo|Defeat a [[Buffalo]].|s=|other=|tier=easy|region=Varlamore|id=80}}
+{{DPLTaskRow|Churn some butter|Use a [[churn]] to make some [[butter]].|s={{SCP|Cooking|38|link=yes}}|other=|tier=medium|region=General|id=259}}
+{{DPLTaskRow|Butter a potato|Make a [[potato with butter]].|s={{SCP|Cooking|39|link=yes}}|other=|tier=medium|region=General|id=240}}
+{{DPLTaskRow|Pickpocket a Master Farmer|Successfully pickpocket from a [[Master farmer]].|s={{SCP|Thieving|38|link=yes}}|other=|tier=medium|region=General|id=358}}
+{{DPLTaskRow|Plant Seeds in an Allotment Patch|Plant some [[seeds]] in an [[allotment patch]].|s=|other=[[Seed dibber]]|tier=easy|region=General|id=55}}
+{{DPLTaskRow|Protect Your Crops|Pay a [[Group of Advanced Gardeners|farmer]] to protect any of your crops.|s=|other=Items requested by the farmer to protect the crop|tier=easy|region=General|id=56}}
+{{DPLTaskRow|Defeat a scorpion|Defeat a [[scorpion]].|s=|other=|tier=easy|region=General|id=29}}
+{{DPLTaskRow|Defeat a Scorpion with a Mithril Spear|Defeat a [[Scorpion]] with a [[mithril spear]] as the final hit.|s={{SCP|Attack|20|link=yes}}|other=|tier=medium|region=General|id=288}}
+{{DPLTaskRow|Equip a Mithril Weapon|Equip any [[Mithril equipment|Mithril weapon]].|s={{SCP|Attack|20|link=yes}}|other=|tier=medium|region=General|id=296}}
+{{DPLTaskRow|Mine 5 Tin Ore|Mine 5 [[tin ore]].|s=|other=|tier=easy|region=General|id=45}}
+{{DPLTaskRow|Defeat a Hill Giant|Defeat a [[hill giant]].|s=|other=|tier=easy|region=General|pactTask=yes|id=27}}
+{{DPLTaskRow|Mine some Clay|Mine some [[clay]].|s=|other=|tier=easy|region=General|id=46}}
+{{DPLTaskRow|Mine 50 Iron Ore|Mine 50 [[iron ore]].|s={{SCP|Mining|15|link=yes}}|other=|tier=medium|region=General|id=348}}
+{{DPLTaskRow|Mine 10 Silver|Mine 10 [[silver ore]].|s={{SCP|Mining|20|link=yes}}|other=|tier=medium|region=General|id=347}}
+{{DPLTaskRow|Mine 50 Mithril Ore|Mine 50 [[mithril ore]].|s={{SCP|Mining|55|link=yes}}|other=|tier=medium|region=General|id=349}}
+{{DPLTaskRow|Catch 20 mackerel|Catch 20 [[raw mackerel|mackerel]] whilst [[fishing]].|s={{SCP|Fishing|16|link=yes}}|other=|tier=medium|region=General|id=246}}
+{{DPLTaskRow|Catch 10 Cod|Catch 10 [[Raw cod|cod]].|s={{SCP|Fishing|23|link=yes}}|other=|tier=medium|region=General|id=243}}
+{{DPLTaskRow|Defeat a Oryx with melee|Defeat an [[Oryx]] in the Avium Savannah with melee.|s=|other=|tier=medium|region=Varlamore|id=410}}
+{{DPLTaskRow|Use the pottery oven in Civitas|Use the [[pottery oven]] in [[Civitas illa Fortis|Civitas]] to make something out of [[soft clay|clay]].|s=|other=|tier=medium|region=Varlamore|id=444}}
+{{DPLTaskRow|Smelt a Bronze Bar|Use a [[furnace]] to smelt a [[bronze bar]].|s=|other=|tier=easy|region=General|id=62}}
+{{DPLTaskRow|Smelt an Iron Bar|Use a [[furnace]] to smelt an [[iron bar]].|s={{SCP|Smithing|15|link=yes}}|other=|tier=easy|region=General|id=63}}
+{{DPLTaskRow|Smith 150 Iron Arrowtips|Use an Anvil to smith 150 [[Iron Arrowtips]].|s={{SCP|Smithing|20|link=yes}}|other=|tier=medium|region=General|id=376}}
+{{DPLTaskRow|Catch 50 Implings in Puro-Puro|Catch 50 [[impling]]s in [[Puro-Puro]].|s={{SCP|Hunter|17|link=yes}}|other=|tier=medium|region=General|id=247}}
+{{DPLTaskRow|Craft a Sapphire Amulet|Craft a [[sapphire amulet]].|s={{SCP|Crafting|24|link=yes}}|other=|tier=medium|region=General|id=281}}
+{{DPLTaskRow|Craft an Emerald Ring|Craft an [[Emerald Ring]].|s={{SCP|Crafting|27|link=yes}}|other=|tier=medium|region=General|id=282}}
+{{DPLTaskRow|Open 28 Coin Pouches At Once|Open 28 [[Coin Pouch]]es at once.|s=|other=|tier=medium|region=General|id=356}}
+{{DPLTaskRow|Defeat 3 chickens in 6 seconds|Defeat 3 [[chicken]]s in 6 seconds.|s=|other=|tier=medium|region=General|id=284}}
+{{DPLTaskRow|Cast an Earth Blast Spell|Cast an [[Earth Blast]] spell.|s={{SCP|Magic|53|link=yes}}|other=|tier=medium|region=General|id=242}}
+{{DPLTaskRow|Teleport to Civitas illa Fortis|Teleport to [[Civitas illa Fortis]] using the [[standard spellbook]].|s={{SCP|Magic|54|link=yes}}|other=|tier=medium|region=Varlamore|id=443}}
+{{DPLTaskRow|Receive an Agility Arena Ticket|Receive an [[Agility Arena Ticket]] from the [[Brimhaven Agility Arena]].|s=|other=|tier=easy|region=Karamja|id=185}}
+{{DPLTaskRow|Buy a Snapdragon From Pirate Jackie the Fruit|Buy a [[Snapdragon]] From [[Pirate Jackie the Fruit]] in [[Brimhaven]].|s=|other=|tier=medium|region=Karamja|id=448}}
+{{DPLTaskRow|Defeat a TzHaar|Defeat any [[TzHaar]] in [[Mor Ul Rek]].|s=|other=|tier=medium|region=Karamja|pactTask=yes|id=568}}
+{{DPLTaskRow|Fill a Crate With Bananas|Fill a crate with [[Banana]]s for [[Luthas]] at [[Musa Point]].|s=|other=|tier=easy|region=Karamja|id=172}}
+{{DPLTaskRow|Sleep in Paramaya Inn|Pay the barkeep to sleep in [[Paramaya Inn]], in [[Shilo Village (location)|Shilo Village]].|s=|other=|tier=medium|region=Karamja|id=687}}
+{{DPLTaskRow|Take a Shortcut Across the Shilo Village River|Use the [[Stepping stone (Shilo Village)|Stepping Stones Agility Shortcut]] in [[Shilo Village (location)|Shilo Village]].|s={{SCP|Agility|32|link=yes}}|other=|tier=medium|region=Karamja|id=704}}
+{{DPLTaskRow|Catch 75 Trout|Catch 75 [[Raw trout|trout]] whilst [[fishing]].|s={{SCP|Fishing|20|link=yes}}|other=|tier=medium|region=General|id=250}}
+{{DPLTaskRow|Catch a Salmon on Karamja|Catch a [[Raw salmon|Salmon]] on [[Karamja]].|s={{SCP|Fishing|30|link=yes}}|other=|tier=medium|region=Karamja|id=463}}
+{{DPLTaskRow|Defeat a Snake in Karamja|Defeat a [[Snake]] in [[Karamja]].|s=|other=|tier=easy|region=Karamja|id=154}}
+{{DPLTaskRow|Enter the Brimhaven Dungeon|Enter the [[Brimhaven Dungeon]].|s=|other=|tier=medium|region=Karamja|id=584}}
+{{DPLTaskRow|Defeat a Black Demon on Karamja|Defeat a [[Black Demon]] on [[Karamja]].|s=|other=|tier=medium|region=Karamja|id=538}}
+{{DPLTaskRow|Chop a dense jungle|Fully clear a [[Dense Jungle|dense jungle]] in the [[Tai Bwo Wannai Cleanup]].|s={{SCP|Woodcutting|35|link=yes}}|other=|tier=medium|region=Karamja|id=472}}
+{{DPLTaskRow|Catch a Karambwanji|Catch a [[Raw karambwanji|Karambwanji]] on [[Karamja]].|s={{SCP|Fishing|5|link=yes}}|other=|tier=easy|region=Karamja|id=119}}
+{{DPLTaskRow|Fill a Bucket With Supercompost|Fill a [[Bucket]] with [[Supercompost]] from a [[Compost Bin]].|s=|other=|tier=medium|region=General|id=318}}
+{{DPLTaskRow|Level up any of your skills for the first time|Level up any of your skills for the first time.|s=|other=|tier=easy|region=General|id=14740}}
+{{DPLTaskRow|Equip a Tyras helm|Equip a [[Tyras helm]].|s={{SCP|Defence|5|link=yes}}|other=|tier=easy|region=General|id=36}}
+{{DPLTaskRow|Equip an Elemental Staff|Equip a [[Elemental staves#Standard staves|basic elemental staff]].|s=|other=|tier=easy|region=General|id=37}}
+{{DPLTaskRow|Reach Total Level 100|Reach a Total Level of 100.|s=|other=|tier=medium|region=General|id=365}}
+{{DPLTaskRow|Reach Total Level 250|Reach a Total Level of 250.|s=|other=|tier=medium|region=General|id=366}}
+{{DPLTaskRow|Eat a piece of food that restores at least 6 hitpoints|Eat a piece of [[food]] that restores at least 6 [[hitpoints]].|s=|other=|tier=medium|region=General|id=290}}
+{{DPLTaskRow|Craft 20 Silver items|Craft 20 silver items using [[silver bars]].|s=|other=|tier=medium|region=General|id=278}}
+{{DPLTaskRow|Obtain 800 Coins From Coin Pouches At Once|Open a stack of [[Coin Pouch]]es and obtain at least 800 Coins.|s={{SCP|Thieving|40|link=yes}}|other=|tier=medium|region=General|id=351}}
+{{DPLTaskRow|Teleport Using Law Runes|Cast any teleport spell that uses [[Law Rune]]s.|s={{SCP|Magic|40|link=yes}}|other=|tier=medium|region=General|id=382}}
+{{DPLTaskRow|Sacrifice something to Death's Coffer|Sacrifice something to [[Death's Coffer]].|s=|other=|tier=medium|region=General|id=371}}
+{{DPLTaskRow|Convert an item into at least 500 coins|Cast the [[High Level Alchemy]] spell to convert an item into 500 [[coins]] or more.|s={{SCP|Magic|55|link=yes}}|other=|tier=medium|region=General|id=275}}
+{{DPLTaskRow|Enter a dark cave in Varlamore|Enter a [[Cave entrance (The Burrow)|dark cave]] in Varlamore, near the [[Hunter Guild]].|s={{SCP|Hunter|46|link=yes}}|other=|tier=medium|region=Varlamore|id=414}}
+{{DPLTaskRow|Catch a Jerboa|Catch an [[Embertailed jerboa]].|s={{SCP|Hunter|39|link=yes}}|other=[[Box trap]]|tier=medium|region=Varlamore|id=391}}
+{{DPLTaskRow|Catch a Pyre fox|Catch a [[Pyre fox]].|s={{SCP|Hunter|57|link=yes}}|other=[[Knife]] and [[Logs]]|tier=medium|region=Varlamore|id=392}}
+{{DPLTaskRow|Complete a Hunter Rumour|Complete a [[Hunter Rumour]].|s={{SCP|Hunter|46|link=yes}}|other=|tier=medium|region=Varlamore|id=401}}
+{{DPLTaskRow|Complete 10 Hunter Rumours|Complete 10 [[Hunter Rumours]].|s={{SCP|Hunter|46|link=yes}}|other=|tier=medium|region=Varlamore|id=393}}
+{{DPLTaskRow|Complete 25 Hunter Rumours|Complete 25 [[Hunter Rumours]].|s={{SCP|Hunter|46|link=yes}}|other=|tier=medium|region=Varlamore|id=395}}
+{{DPLTaskRow|Create a Quetzal Whistle|Create a [[Quetzal Whistle]].|s={{SCP|Hunter|46|link=yes}}|other=|tier=medium|region=Varlamore|id=404}}
+{{DPLTaskRow|Achieve Your First Level 80|Reach level 80 in any skill.|s=|other=|tier=hard|region=General|id=733}}
+{{DPLTaskRow|Achieve Your First Level 90|Reach level 90 in any skill.|s=|other=|tier=elite|region=General|id=1184}}
+{{DPLTaskBottom}}
+</div>

@@ -5,10 +5,12 @@ from memory — every item/npc/quest/coordinate cites a wiki page that has been
 fetched into this KB. `wikicli` is the only sanctioned access path (MediaWiki API
 wikitext — never HTML scraping; ~10× less token noise than page HTML).
 
-## Agent quickstart — Bash is WRITE-ONLY for you
+## Agent quickstart — treat Bash as WRITE-ONLY
 
-You do NOT get stdout back from Bash — ever. It is not stalling; it is not supposed to
-return output. **Redirect every command to a file, then use the Read tool on that file:**
+Depending on the runner configuration, Bash stdout may NOT be returned to you — and even
+where it is, it can truncate or vanish on context compaction. So the standing protocol is
+belt-and-braces: **never depend on stdout. Redirect every command to a file, then use the
+Read tool on that file.** Empty tool output is not a stall — re-Read your file:
 
 ```bash
 CLI=/home/lemon/osrs-wiki/tools/wiki-kb/wikicli

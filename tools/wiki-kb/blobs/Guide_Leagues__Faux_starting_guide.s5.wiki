@@ -1,0 +1,50 @@
+==Part 3: Auburnvale, Tal Teklan & Skilling==
+<div class="mw-collapsible">
+{{Checklist|
+* Run East to Quetzal ([[Renu]]), bird to [[Auburnvale]] (top left)
+* Run South across bridge, Drink [[Cup of tea]]
+* Run North to bank, deposit [[Steel mace]], [[Big fishing net]], [[Tyras helm]], [[Bucket]]
+* Withdraw [[Axe]], [[Knife]], [[Cowhide]], [[Wool]]
+* Run south to staff shop, buy [[Staff of air]] and [[Staff of fire]] (equip)
+* Run west to Axe shop, buy [[Steel axe]], [[Mithril axe]], and [[Adamant axe]]
+* Chop dead tree near river *Endless Harvest toggle autobank on* (stay until 45 logs banked if endless harvest)
+* Withdraw log from bank if EH
+* Make 1 [[Plank]] at [[Sawmill Operator (Auburnvale)|sawmill]] 
+* Run southwest, tan [[Cowhide]] into [[Leather|regular leather]]
+* Buy [[Needle]] and [[Thread]] in the general store
+* Craft [[Leather chaps]]
+* Admire beautiful logs just outside of gen store (east)
+* Step on [[Ent trail]] (near maple trees to the south, wait for Ent to walk by)
+* Run south to [[Nemus Retreat]]
+* Claim [[Forestry kit]] from Forestry shop (southwest of nemus retreat near water)
+* Equip forestry kit to enable Forestry events while WCing (lot of forestry tasks)
+* Pick 6 [[Flax]]
+* Spin [[Ball of wool]], 1 [[Bow string]]
+
+'''Endless Harvesters/Woodsman can do the following, others can skip for now if you want:'''
+* Fletch [[Headless arrow]]s until 20 [[Fletching]].
+* Complete [[Vale Totems]] miniquest, bring 5 oak logs, 5 willow logs, 5 maple logs
+* Chop oak to the south until 60 [[Oak logs]] banked. Complete Burn 1 oak log, Fletch 1 [[Oak shortbow]], fletch 25 [[Oak stock]]s, decorate [[Oak totem]] (5 oaks)
+* Chop willows until 100 burn task, then toggle Woodsman burn off and bank 56 [[Willow logs]]: 1 [[Willow shortbow]], 50 [[Willow longbow (u)|willow longbows]] fletched, decorate [[Willow totem]] (5 willows)
+* Finish 1000 [[Arrow shaft]]s with extra oaks or willows
+* Chop 50 [[Maple logs]] (burn 25, bank 25)
+* Fletch 25 [[Maple longbow (u)]]
+* Deposit all, withdraw coins, axe, 2 bird snares, red cape, steel mace
+
+* Run south to Rowboat, take boat to [[Tal Teklan]]
+* Run west to rune shop, buy 5 of each elemental rune pack, 5 mind rune packs, 5 cosmics, 75 natures, 1 chaos pack, 1 death rune
+* Cast [[Low Level Alchemy]] on anything for mage exp 
+* Run west, buy [[Purple dye]]. Dye cape purple
+* Run west, dance near [[Bard]]s on the dock
+* Run southeast to ranged shop, buy 10 [[Iron arrow]]s, [[Shortbow]]
+* Run to bank, deposit 5 nature runes
+* Run east out of Tal Teklan, kill [[Frog]] near Doom dungeon shortcut (shoot 6+ iron arrows)
+* Cut any regular tree
+
+'''(Can skip the next step if not Woodsman. Birds are painful non-woodsman tasks, but you'll have to skip later puro tasks too if you don't do these now)'''
+* Run north across bridge, then east to [[Crimson swift]]s
+* Catch 8 Crimson swifts (16 if not woodsman)
+* Run west to bridge, cross to the south then run southwest to [[Tropical wagtail]]s
+* Catch 15 Tropical wagtails 
+}}
+</div>

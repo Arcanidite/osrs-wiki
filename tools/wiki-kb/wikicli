@@ -17,13 +17,18 @@ Layout (everything lives beside this script):
 
 Commands (stdout = data, stderr = status; pipe-friendly):
   search <terms...>            title candidates (opensearch)
-  get <title> [--section N]    wikitext, cached (run `sections` first on big pages)
-  sections <title>             numbered section map (index  name)
+  get <title> [--section N] [--strip]
+                               wikitext, cached (run `sections` first on big pages);
+                               --strip = low-noise view (drops GE prices/File refs/<ref>,
+                               unwraps {{Checklist}}, compacts {{Map}} -> «map» coord
+                               lines; coords/quantities/steps always preserved)
+  sections <title>             numbered section map (index  bytes  name)
   links <title>                outgoing article links (breadcrumbs)
   members <category>           pages in a Category:... (breadth traversal)
   url <title>                  canonical url for citations
   manifest [substr]            cached blobs (optionally filtered)
   contribute '<json>'          append finding iff its "key" is unseen
+  contribute --file <path>     same, JSON read from a file (no shell-quoting pain)
   queue add <key> ['<json>']   idempotent enqueue
   queue claim <key>            mark claimed (append-only)
   queue done <key> ['<json>']  mark done
@@ -121,6 +126,70 @@ def parse_json_arg(raw, what):
         die(f"bad {what} json: {e}")
 
 
+# ── strip view (NOISEBENCH-gated: never lose coords/quantities/steps) ─────────
+
+def _template_spans(text, name):
+    """(start, end) spans of balanced {{name ...}} blocks (handles nesting)."""
+    spans = []
+    for m in re.finditer(r"\{\{\s*" + name + r"\b", text, flags=re.I):
+        end = _matching_close(text, m.start())
+        if end:
+            spans.append((m.start(), end))
+    return spans
+
+
+def _matching_close(text, start):
+    depth, i = 0, start
+    while i < len(text) - 1:
+        pair = text[i:i + 2]
+        if pair == "{{":
+            depth, i = depth + 1, i + 2
+            continue
+        if pair == "}}":
+            depth, i = depth - 1, i + 2
+            if depth == 0:
+                return i
+            continue
+        i += 1
+    return None
+
+
+def _compact_maps(text):
+    """{{Map ...}} -> one '«map» (x,y) desc; ...' line. Unknown coord dialect ->
+    keep the block verbatim (never silently lose coordinates)."""
+    for start, end in reversed(_template_spans(text, "Map")):
+        block = text[start:end]
+        pins = re.findall(r"x[:=]\s*(\d+)[,|\s]+y[:=]\s*(\d+)(?:,icon:[^,\n|]*)?(?:,desc:([^|}\n]*))?", block)
+        if not pins:
+            continue
+        line = "«map» " + "; ".join(f"({x},{y}){' ' + d.strip() if d else ''}" for x, y, d in pins)
+        text = text[:start] + line + text[end:]
+    return text
+
+
+def _unwrap_checklists(text):
+    """{{Checklist|*a\n*b}} -> the bare bullets (wrapper off, steps intact)."""
+    for start, end in reversed(_template_spans(text, "Checklist")):
+        inner = re.sub(r"^\{\{\s*Checklist\s*\|?", "", text[start:end - 2], flags=re.I)
+        text = text[:start] + inner + text[end:]
+    return text
+
+
+def strip_noise(text):
+    """--strip: cut render noise, KEEP load-bearing data. Drops GE prices, File/Image
+    refs, <ref> tags; unwraps Checklist; compacts Map to coord lines; collapses
+    [[link|label]] -> label. Infoboxes are kept — they carry ids/levels/data."""
+    text = re.sub(r"<ref[^>/]*>.*?</ref>|<ref[^>/]*/>", "", text, flags=re.S)
+    text = re.sub(r"\[\[(?:File|Image):[^\]]*\]\]", "", text)
+    for _ in range(3):   # innermost-out: {{Coins|{{GEP|..}}}} needs a second pass
+        text = re.sub(r"\{\{(?:GEP?|GEPrice|Coins)\|[^{}]*\}\}", "", text)
+    text = _compact_maps(text)
+    text = _unwrap_checklists(text)
+    text = re.sub(r"\[\[([^|\]]*)\|([^\]]*)\]\]", r"\2", text)
+    text = re.sub(r"\[\[([^\]]*)\]\]", r"\1", text)
+    return re.sub(r"\n{3,}", "\n\n", text)
+
+
 # ── commands ──────────────────────────────────────────────────────────────────
 
 def cmd_search(args):
@@ -133,12 +202,14 @@ def cmd_search(args):
 
 
 def cmd_get(args):
+    strip = "--strip" in args
+    args = [a for a in args if a != "--strip"]
     title, section = _title_and_section(args)
     slug = slugify(title) + (f".s{section}" if section else "")
     blob = BLOBS / f"{slug}.wiki"
     if blob.exists():
         say(f"cache hit: blobs/{blob.name} ({blob.stat().st_size}B)")
-        print(blob.read_text())
+        print(strip_noise(blob.read_text()) if strip else blob.read_text())
         return
     params = {"action": "parse", "page": title, "prop": "wikitext", "redirects": "1"}
     if section:
@@ -153,7 +224,7 @@ def cmd_get(args):
         "section": section, "sha1": hashlib.sha1(text.encode()).hexdigest()[:12],
         "bytes": len(text), "fetched": now()}))
     say(f"fetched {len(text)}B -> blobs/{blob.name}")
-    print(text)
+    print(strip_noise(text) if strip else text)
 
 
 def _title_and_section(args):
@@ -168,11 +239,29 @@ def _title_and_section(args):
 def cmd_sections(args):
     if not args:
         die("sections needs a title")
-    data = api({"action": "parse", "page": " ".join(args),
-                "prop": "sections", "redirects": "1"})
-    for s in data["parse"]["sections"]:
+    title = " ".join(args)
+    data = api({"action": "parse", "page": title, "prop": "sections", "redirects": "1"})
+    secs = data["parse"]["sections"]
+    total = _page_length(title)
+    for i, s in enumerate(secs):
         indent = "  " * (int(s.get("toclevel", 1)) - 1)
-        print(f"{s['index']}\t{indent}{s['line']}")
+        print(f"{s['index']}\t{_section_size(secs, i, total)}\t{indent}{s['line']}")
+
+
+def _page_length(title):
+    data = api({"action": "query", "prop": "info", "titles": title, "redirects": "1"})
+    pages = data.get("query", {}).get("pages", [])
+    return pages[0].get("length", 0) if pages else 0
+
+
+def _section_size(secs, i, total):
+    """Size from byteoffset deltas; '?' when the offset is null (template-transcluded
+    sections report no offset — a known undercount trap, see gotchas.log)."""
+    start = secs[i].get("byteoffset")
+    if start is None:
+        return "?"
+    nxt = next((s["byteoffset"] for s in secs[i + 1:] if s.get("byteoffset") is not None), total)
+    return f"{max(0, (nxt or total) - start)}B"
 
 
 def cmd_links(args):
@@ -211,7 +300,8 @@ def cmd_manifest(args):
 def cmd_contribute(args):
     if not args:
         die("contribute needs a json payload with a \"key\"")
-    obj = parse_json_arg(args[0], "contribution")
+    raw = Path(args[1]).read_text() if args[0] == "--file" and len(args) > 1 else args[0]
+    obj = parse_json_arg(raw, "contribution")
     key = obj.get("key")
     if not key:
         die("contribution needs a \"key\" field")

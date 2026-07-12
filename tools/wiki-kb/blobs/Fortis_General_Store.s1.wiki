@@ -1,0 +1,30 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1300|buymultiplier=400|delta=30}}
+{{StoreLine|name=Chisel|stock=5|restock=20}}
+{{StoreLine|name=Spade|stock=5|restock=20}}
+{{StoreLine|name=Hammer|stock=5|restock=20}}
+{{StoreLine|name=Knife|stock=5|restock=20}}
+{{StoreLine|name=Tinderbox|stock=5|restock=20}}
+{{StoreLine|name=Needle|stock=5|restock=20}}
+{{StoreLine|name=Thread|stock=30|restock=20}}
+{{StoreLine|name=Rope|stock=10|restock=30}}
+{{StoreLine|name=Pot|stock=15|restock=20}}
+{{StoreLine|name=Jug|stock=15|restock=20}}
+{{StoreLine|name=Bucket|stock=15|restock=20}}
+{{StoreLine|name=Bowl|stock=15|restock=20}}
+{{StoreLine|name=Cake tin|stock=15|restock=20}}
+{{StoreLine|name=Empty jug pack|stock=5|restock=30|gemw=no}}
+{{StoreLine|name=Empty bucket pack|stock=5|restock=30|gemw=no}}
+{{StoreTableBottom}}
+
+===Demonic Pacts League===
+The following items are only available from this store on a [[Demonic Pacts League]] world.
+{{StoreTableHead|sellmultiplier=1300|buymultiplier=400|delta=30|namenotes=Demonic Pacts League|hidecaption=y|hiderestock=y}}
+{{StoreLine|name=Bird snare|stock=5|restock=0}}
+{{StoreLine|name=Box trap|stock=5|restock=0}}
+{{StoreLine|name=Pestle and mortar|stock=10|restock=0}}
+{{StoreTableBottom}}
+
+{{Civitas illa Fortis}}
+{{General stores}}
+{{Shops}}

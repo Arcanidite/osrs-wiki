@@ -1,0 +1,14 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=700|delta=30}}
+{{StoreLine|name=Uncut sapphire|stock=3|restock=12000}}
+{{StoreLine|name=Uncut emerald|stock=2|restock=24000}}
+{{StoreLine|name=Uncut ruby|stock=1|restock=36000}}
+{{StoreLine|name=Uncut diamond|stock=0|restock=12000}}
+{{StoreLine|name=Sapphire|stock=3|restock=12000}}
+{{StoreLine|name=Emerald|stock=2|restock=24000}}
+{{StoreLine|name=Ruby|stock=1|restock=36000}}
+{{StoreLine|name=Diamond|stock=0|restock=12000}}
+{{StoreTableBottom}}
+
+{{Aldarin}}
+{{Shops}}

@@ -1,0 +1,70 @@
+==Part 5: Combat, Thieving & Advanced Skilling==
+<div class="mw-collapsible">
+{{Checklist|
+* Run east to bank, deposit herblore supplies (keep offensive mage spells, keep bronze, steel, mith, addy, rune pickaxe) 
+* Withdraw [[Big fishing net]]
+* Run to pub, buy 5 [[Jug of wine]]
+* League menu tele to Varlamore
+* Run west to blacksmith, buy [[Adamant platebody|addy platebody]]/[[Adamant platelegs|legs]], [[Bronze platebody|bronze platebody]]/[[Bronze platelegs|legs]], [[Mithril spear]], [[Steel platebody]], [[Iron dagger]]
+* Equip steel platebody, full bronze, iron dagger, mith spear. 
+* Low alch steel platebody
+* Run south to bank, deposit addy, bronze, iron dagger. Withdraw 15 [[Pineapple]]s, [[Bucket]], Chaos runes (Wind Bolt is fine), big net (fill rest of inventory with jugs of wine, may only be ~3). Equip mith spear and keep it with you.
+* Run northwest to nearby dungeon icon, go downstairs and kill [[Guard]]
+* Go upstairs, run to western Civitas wall, then north to other dungeon icon
+* Go down ladder, run northwest, up ladder
+* Kill [[Thief (Varlamore)|Thief]]
+* Run south, milk buffalo
+* Run south, kill buffalo
+* Go into house east of allotments, churn butter
+* Pick up [[Potato]] to the southwest, bake in previous house, add butter
+* Put 15 pineapples in [[Compost Bin]], close lid
+* Pickpocket [[Farmer]] until 3 [[Potato seed]]s
+* Buy [[Rake]] from Harminia
+* Rake allotment patch, plant potatoes, buy 2 compost from farmer, protect potato patch with Harminia
+* Run west, safespot [[Dire wolf]] over plants
+* Run southwest, kill [[Scorpion]] with mith spear
+* Mine 6+ [[Tin ore]], 1+ [[Copper ore]] (stay until 15 mining)
+* Run southeast to [[Jaguar]]s (east of Sunset coast), defeat without taking damage
+* Run southeast, kill a [[Hill Giant]] (Demonic pact point)
+* Run far east to [[Stonecutter Outpost]]
+* Mine 1 [[Clay]], 50 [[Iron ore]], 20 [[Silver ore]], 2 [[Coal]], 3 [[Gold ore]], 50 [[Mithril ore]]. Mine extra iron to get to level 55 for mithril 
+* Run east to coast, big net fish for 20 [[Raw mackerel|Mackerel]], 10 [[Raw cod|Cod]]
+* Run northwest to [[Oryx]] (northwest of hunter icon). Kill with melee (entire kill needs to be with melee)
+* Run north to Civitas crafting shop, buy [[Tiara mould]], [[Ring mould]], [[Amulet mould]].
+* Go upstairs, check for [[Soft clay]] (1 min respawn on table). Take if there, otherwise can take bucket of water and withdraw clay from bank.
+* Go downstairs, make anything on potters wheel, then fire at pottery oven
+* Withdraw 150 arrow shafts, 150 feathers. make 150 [[Headless arrow]]s (unless you made earlier)
+* Make at the furnace to the north: 1 [[Bronze bar]], 10 [[Iron bar]]s
+* Run South to anvil, smith 150 [[Iron arrowtips]]
+* Run back to furnace, make 150 [[Iron arrow]]s on the way
+* Smelt 20 [[Silver bar]]s, make 20 [[Silver tiara]]s 
+* Deposit all, withdraw coins, [[Dramen staff]], jugs of wine. Buy extra wine at bar for thieving training
+* Pickpocket Farmer south of varlamore to 36 [[Thieving]]
+* Run southwest to fairy ring, tele to [[Zanaris]]
+* Buy [[Slayer's staff]] (for Death's coffers task), [[Anti-dragon shield]]. Wear shield.
+* Enter [[Puro-Puro]] in wheat field (skip if you didn't get 17+ hunter earlier, come back whenever you feel like, it's not a quick task if you're not woodsman)
+* Claim [[Butterfly net]] from [[Elnock Inquisitor]] (can drop jugs of wine)
+* Catch 50 implings in puro puro (spawn camp 1 baby or young impling spawn)
+* Teleport to [[Aldarin]] (CKQ)
+* Run to [[Ruby harvest]]s to the west, catch 1
+* Go upstairs in house northeast of ruby harvests
+* Lockpick [[Chest (Aldarin Villas)|chests]] until 2 [[Gold bar]]s and 40+ [[Thieving]]. Run southwest to house if teleported outside. Keep uncut diamonds, gold bars, blessed bone shards, desirable seeds. Can drop anything else.
+* After 40 thieving/2 gold bars, league menu tele to Varlamore
+* Run southeast to bank, withdraw amulet mould, ring mould, cut sapphire, cut emerald. 
+* Make [[Sapphire amulet]], [[Emerald ring]] at furnace
+* Pickpocket Guards until 28 [[Coin pouch]]es (don't open until you get all)
+* Open 28 coin pouches at once
+* Run to southern varlamore gate
+* Pickpocket [[Master farmer]] south of Varlamore
+* Run east, defeat 3 [[Chicken]]s in 6 seconds (melee). Don't miss ticks. You can mage the 3rd for a better chance at a high hit if you're low str. You can cheese this by getting several to low hp and running away, then engaging when all 3 are prepped.
+}}
+</div>
+
+If you have the first magic pact, you can boost your level for the following 2 tasks by casting combat spells on any npcs. {{Colour|Red|If you weren't planning on going magic early, DO NOT TAKE THIS PACT JUST FOR THIS PERK.}} You only get 3 pact tree resets and you need to kill your first Echo boss to earn your first reset. Be smart about what you choose.
+
+<div class="mw-collapsible">
+{{Checklist|
+* Run to bank, withdraw death rune, cast [[Earth Blast]] if 53 magic 
+* Cast [[Civitas illa Fortis Teleport]] if 54 magic
+}}
+</div>

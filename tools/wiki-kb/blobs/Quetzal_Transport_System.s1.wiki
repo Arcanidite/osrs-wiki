@@ -1,0 +1,37 @@
+==Locations==
+[[File:Quetzal Transport System interface.png|thumb|300px|The interface for the Quetzal Transport System.]]
+There are currently 14 landing sites in total, 6 of which must first be built in person before they can be used.
+
+{| class="wikitable sortable lighttable sticky-header"
+!Location
+! class="unsortable" |Map
+!Default status
+|-
+|[[Aldarin]]||{{Map|ptype=object|name=Aldarin|x:1389,y:2899|mtype=pin|width=250|height=250}}||Built
+|-
+|[[Auburnvale]]||{{Map|ptype=object|name=Auburnvale|x:1410,y:3363|mtype=pin|width=250|height=250}}||Built
+|-
+|[[Civitas illa Fortis]]||{{Map|ptype=object|name=Civitas illa Fortis|x:1696,y:3141|mtype=pin|width=250|height=250}}||Built
+|-
+|[[Hunter Guild]]||{{Map|ptype=object|name=Hunter Guild|x:1584,y:3055|mtype=pin|width=250|height=200}}||Built
+|-
+|[[Quetzacalli Gorge]]||{{Map|ptype=object|name=Quetzacalli Gorge|x:1512,y:3222|mtype=pin|width=250|height=250}}||Built
+|-
+|[[Sunset Coast]]||{{Map|ptype=object|name=Sunset Coast|x:1548,y:2997|mtype=pin|width=250|height=200}}||Built
+|-
+|[[Tal Teklan]]||{{Map|ptype=object|name=Tal Teklan|x:1225,y:3089|mtype=pin|width=250|height=200}}||Built
+|-
+|[[The Teomat]]||{{Map|ptype=object|name=The Teomat|x:1437,y:3169|mtype=pin|width=250|height=200}}||Built
+|-
+|[[Cam Torum]] entrance||{{Map|ptype=object|name=Cam Torum|x:1448,y:3108|mtype=pin|icon=redPin|width=250|height=200}}||Unbuilt
+|-
+|[[Colossal Wyrm Remains]]||{{Map|ptype=object|name=Colossal Wyrm Remains|x:1672,y:2933|icon=redPin|mtype=pin|width=250|height=200}}||Unbuilt
+|-
+|[[Fortis Colosseum]]||{{Map|ptype=object|name=Fortis Colosseum|x:1776,y:3111|mtype=pin|icon=redPin|width=250|height=200}}||Unbuilt
+|-
+|[[Kastori]]||{{Map|ptype=object|name=Kastori|x:1343,y:3020|mtype=pin|icon=redPin|width=250|height=200}}||Unbuilt
+|-
+|[[Outer Fortis]]||{{Map|ptype=object|name=Outer Fortis|x:1703,y:3037|mtype=pin|icon=redPin|width=250|height=200}}||Unbuilt
+|-
+|[[Salvager Overlook]]||{{Map|ptype=object|name=Salvager Overlook|x:1613,y:3302|mtype=pin|icon=redPin|width=250|height=200}}||Unbuilt
+|}

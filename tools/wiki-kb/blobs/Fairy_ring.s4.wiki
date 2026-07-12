@@ -1,0 +1,92 @@
+==="A" combinations===
+{| class="wikitable sortable lighttable sticky-header align-center-1" width="95%" style="text-align:center"
+!Code
+!Map
+!Location
+!Points of Interest
+|- id="AIQ"
+|{{Fairycode|AIQ}}
+|{{Map|mapID=-1|title=Fairy ring (AIQ)|2996,3114|mtype=pin|height=200|width=200}}
+|[[Asgarnia]]: [[Mudskipper Point]]
+|[[Mogre]]s, [[Rimmington]], [[Port Sarim]], [[Asgarnia Ice Dungeon]]. 
+|- id="AIR"
+|{{Fairycode|AIR}}
+|{{Map|mapID=-1|title=Fairy ring (AIR)|2700,3247|mtype=pin|height=200|width=200}}
+|Islands: South-east of [[Ardougne]]
+|Empty island, used for [[clue scroll]] coordinates and the [[Ardougne Diary#Medium|medium Ardougne diary]].
+''This is also the first fairy ring in the sequence used to access the [[Fairy Resistance Hideout|Fairy Queen's hideout]] during and after the [[Fairytale II - Cure a Queen]] [[Quests|quest.]]''
+|- id="AIS"
+|{{Fairycode|AIS}}
+|{{Map|mapID=-1|title=Fairy ring (AIS)|1430,3323|mtype=pin|height=200|width=200}}
+|[[Varlamore]]: [[Auburn Valley]]
+|Requires having travelled to [[Civitas illa Fortis]] via [[Regulus Cento]], after completion of [[Children of the Sun]].
+Is in the route for [[Vale Totems (minigame)|Vale Totems]], allowing to bank then teleport back
+|- id="AJP"
+|{{Fairycode|AJP}}
+|{{Map|mapID=-1|title=Fairy ring (AJP)|1651,3010|mtype=pin|height=200|width=200}}
+|[[Varlamore]]: [[Avium Savannah]]
+|Requires having travelled to [[Civitas illa Fortis]] via [[Regulus Cento]], after completion of [[Children of the Sun]].
+A [[Hardwood tree patch|hardwood tree farming patch]] can be found near the fairy ring, available after the completion of [[The Ribbiting Tale of a Lily Pad Labour Dispute]].
+|- id="AJQ"
+|{{Fairycode|AJQ}}
+|{{Map|mapID=-1|title=Fairy ring (AJQ)|2735,5221|mtype=pin|height=200|width=200}}
+|[[Dungeons]]: [[Dorgesh-Kaan South Dungeon|Cave south of Dorgesh-Kaan]]
+|''Completion of [[Death to the Dorgeshuun]] is required and a [[light source]] is recommended but not required''.
+
+[[Cave crawler]]s, [[Cave bug]]s, [[Cave slime]]s and [[Molanisk]]s can be found here. The [[Dorgesh-Kaan Agility Course]] is also be found here.
+|- id="AJR"
+|{{Fairycode|AJR}}
+| {{Map|mapID=-1|title=Fairy ring (AJR)|2780,3613|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[Fremennik Slayer Dungeon|Slayer cave south-east of Rellekka]] 
+|[[Fremennik Slayer Dungeon]], [[Rellekka]] west of fairy ring.
+|- id="AJS"
+|{{Fairycode|AJS}}
+| {{Map|mapID=-1|title=Fairy ring (AJS)|2500,3896|mtype=pin|height=200|width=200}}
+|Islands: Penguins near [[Miscellania]].
+|Penguins; no other access.
+''This is also the fourth and final fairy ring in the sequence used to access the [[Fairy Resistance Hideout|Fairy Queen's hideout]] during and after the [[Fairytale II - Cure a Queen]] [[Quests|quest.]]''
+|- id="AKP"
+|{{Fairycode|AKP}}
+|{{Map|mapID=-1|title=Fairy ring (AKP)|3284,2705|mtype=pin|height=200|width=200}}
+|[[Kharidian Desert]]: [[Necropolis]]
+|[[Sophanem]] and [[Menaphos]] to the north, Necropolis to the east.
+''Unlocked by entering the [[Necropolis]] in the beginning of [[Beneath Cursed Sands]].''
+|- id="AKQ"
+|{{Fairycode|AKQ}}
+|{{Map|mapID=-1|title=Fairy ring (AKQ)|2319,3619|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[Piscatoris Hunter area]]
+|[[Kraken Cove]], [[Chinchompa]]s (grey), [[Mining]] spots, [[Piscatoris Fishing Colony]].
+|- id="AKR"
+|{{Fairycode|AKR}} 
+|{{Map|mapID=-1|title=Fairy ring
+(AKR)|1827,3538|mtype=pin|height=200|width=200}} 
+|[[Great Kourend]]: [[Hosidius Vinery]]
+|[[Hosidius Vinery]], [[Tithe Farm]] minigame.
+|- id="AKS"
+|{{Fairycode|AKS}}
+|{{Map|mapID=-1|title=Fairy ring (AKS)|2571,2956|mtype=pin|height=200|width=200}}
+|[[Feldip Hills]]: [[Feldip Hunter area]]
+|[[Hunter]] jungle area, [[Chompy]] hunting grounds, [[Gnome glider]].
+|- id="ALP"
+|{{Fairycode|ALP}}
+|{{Map|mapID=-1|title=Fairy ring (ALP)|2503,3636|mtype=pin|height=200|width=200}}
+|Islands: [[Lighthouse]]
+|[[Jossik]], [[Barbarian Outpost]], [[Rellekka]], [[Dagannoth]].
+|- id="ALQ"
+|{{Fairycode|ALQ}}
+|{{Map|mapID=-1|title=Fairy ring (ALQ)|3597,3495|mtype=pin|height=200|width=200}}
+|[[Morytania]]: [[Haunted Woods]] east of [[Canifis]]
+|Can be used in conjunction with the [[Ectophial]] to quickly access the fairy ring network, but this ring is surrounded by aggressive [[Vampyres]] and [[Leech]]es. [[Farming patch]], [[Port Phasmatys]] east.
+|- id="ALR"
+|{{Fairycode|ALR}}
+|{{Map|mapID=-1|title=Fairy ring (ALR)|3059,4875|mtype=pin|height=200|width=200}}
+|Other Realms: [[Abyssal Area]]
+|[[Abyssal leech]]es, [[Abyssal guardian|guardians]], [[Abyssal walker|walkers]], and [[Abyssal demon]]s. Alternative area for players to get [[essence pouch]]es.
+|- id="ALS"
+| {{Fairycode|ALS}}
+|{{Map|mapID=-1|title=Fairy ring (ALS)|2644,3495|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[McGrubor's Wood]] 
+|[[Seers' Village]], [[Coal trucks]], [[Fishing Guild]], [[Ranging Guild]], [[Hemenster]]
+
+Going here is required for the medium [[Kandarin Diary]].
+|}

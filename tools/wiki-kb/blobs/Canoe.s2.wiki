@@ -1,0 +1,25 @@
+==Locations==
+There are five canoe stations along the River Lum, but six destinations; whereas the River Dougne has only five of each.
+[[File:Locations for the canoes.png|thumb|Available destinations along the River Lum]]
+[[File:River Dougne_canoe_map.png|thumb|Available destinations along the River Dougne]]
+===River Lum===
+*[[Lumbridge]]: [[Barfy Bill]] is at this canoe station.
+**Taking a waka canoe from Lumbridge to Edgeville is a [[hard Lumbridge & Draynor Diary]] task.
+*[[Champions' Guild]]: [[Tarquin]] is at this canoe station.
+*[[Barbarian Village]]: [[Sigurd]] is at this canoe station.
+*[[Edgeville]]: [[Hari]] is at this canoe station.
+**Making a waka canoe at this station is a [[Varrock Diary|hard Varrock Diary]] task.
+*[[Ferox Enclave]]: [[Marten]] is at this canoe station. Of the four types of canoe, only a waka canoe can be rowed to it. 
+**Direct teleportation to the enclave can be accomplished using the [[Minigame Teleport]] to Last Man Standing or Clan Wars, providing 20 minutes has passed since last it was used. 
+**Another option would be to speak to either the [[Saradominist recruiter|Saradominist]] or [[Zamorakian recruiter]] in the south-west corner of the [[Grand Exchange|Grand exchange]], who can both teleport you to their respective [[Castle Wars]] waiting areas. Exiting to the lobby, and then clicking the double doors entrance will then ask if you want to return to the enclave. Note: You still can't carry anything disallowed by Castle Wars, but its lobby and Ferox enclave both have banks anyway.
+**If nothing else, the Ferox Enclave canoe station can also be reached on foot (potentially '''dangerous''' due to the enclave being surrounded by the [[Wilderness]]).
+**Once in the Ferox Enclave, only an axe, level 12 Woodcutting and the lowest tier of canoe are required to row to Edgeville (players cannot row from the Enclave to the Wilderness pond with a log canoe, dugout canoe, or stable dugout canoe, even though the Wilderness pond is only one stop away on the River Lum).
+*Wilderness pond, just south-east of the [[Lava Maze]]. Requires a waka canoe to travel to. '''There is no canoe station there''', so it is '''impossible''' to use a canoe '''to travel back''' down the river.
+===River Dougne===
+* Near [[Castle Wars]]: [[Lara]] is at this canoe station.
+* West of [[Tree Gnome Village]]: [[Porkai]] is at this canoe station.
+* South of [[Ardougne Zoo]]: [[Pete]] is at this canoe station.
+* East of the [[Chaos Druid Tower]]: [[Amergin]] is at this canoe station.
+* North of the [[Combat Training Camp]]: [[Kaiquir]] is at this canoe station.
+
+Making a canoe requires that you have an [[axe]] (either wielded, in your inventory, or stored at the canoe assistants) for which you have the required Woodcutting level to use. Axes held by the canoe assistants do not need to be taken out to be used, and this storage is shared among all assistants on both rivers. Note that the success rate of chopping with [[rune axe|rune]], [[dragon axe|dragon]], and [[crystal axe]]s are identical. Storing an axe better than rune at an assistant does not increase chopping speed. Costs can be reduced further by players with over level 78 Woodcutting, at which point [[adamant axe]]s achieve the same 100% success rate as higher level axes.

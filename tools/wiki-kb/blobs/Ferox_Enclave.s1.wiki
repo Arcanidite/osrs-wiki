@@ -1,0 +1,6 @@
+==Transportation==
+The level 13 [[Wilderness Obelisk|Wilderness obelisk]] is east of the Enclave. There are also a few safe methods of reaching Ferox Enclave that do not require players to traverse the Wilderness:
+* A [[ring of dueling]] will teleport directly here.
+* [[Minigame Teleport]] to the [[Last Man Standing]] and [[Clan Wars]] [[minigame]]s.
+* Exiting the [[Castle Wars]] area in a free-to-play world.
+* Using a [[waka canoe]] along the [[River Lum]] to row here (requires level 57 [[Woodcutting]]).

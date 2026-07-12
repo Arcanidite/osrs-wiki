@@ -1,0 +1,9 @@
+==Obtaining==
+
+The boots are found in the cellar of the [[Temple of Ikov (dungeon)|Temple of Ikov dungeon]], but does '''not''' require starting the [[Temple of Ikov]] [[quest]].
+
+The cellar is down a set of stairs directly west of the dungeon's entrance ladder. A [[light source]] and a [[slash weapon]] or [[knife]] are required to get to the spawn. Their [[respawn]] time is 60 seconds. Players can hop between worlds to quickly obtain multiple pairs.
+
+If lost they can be reobtained by:
+* Picking up the boots in the [[Temple of Ikov (dungeon)|Temple of Ikov dungeon]].
+* Purchasing them from [[Perdu]] for {{NoCoins|9800}} coins.

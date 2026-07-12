@@ -1,0 +1,23 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=700|delta=10|shopversion=(1),(2)}}
+{{StoreLine|name=Waterskin(4)|stock=100|restock=10}}
+{{StoreLine|name=Waterskin(0)|stock=100|restock=10}}
+{{StoreLine|name=Jug of water|stock=10|restock=100}}
+{{StoreLine|name=Bowl of water|stock=10|restock=100}}
+{{StoreLine|name=Bucket of water|stock=10|restock=100}}
+{{StoreLine|name=Knife|stock=10|restock=100}}
+{{StoreLine|name=Desert shirt|stock=10|restock=500}}
+{{StoreLine|name=Desert robe|stock=10|restock=500}}
+{{StoreLine|name=Desert boots|stock=10|restock=500}}
+{{StoreLine|name=Bronze bar|stock=10|restock=500}}
+{{StoreLine|name=Feather|stock=500|restock=50}}
+{{StoreLine|name=Feather pack|stock=50|gemw=no|restock=20}}
+{{StoreLine|name=Hammer|stock=10|restock=500}}
+{{StoreLine|name=Empty bucket pack|stock=15|restock=10|gemw=no}}
+{{StoreLine|name=Bucket|stock=0|restock=100}}
+{{StoreLine|name=Bowl|stock=0|restock=100}}
+{{StoreLine|name=Jug|stock=0|restock=100}}
+{{StoreLine|name=Empty jug pack|stock=0|restock=50|gemw=No}}
+{{StoreLine|name=Shantay pass (item)|displayname=Shantay pass|restock=1|stock=500}}
+{{StoreLine|name=Rope|stock=20|restock=200}}
+{{StoreTableBottom}}

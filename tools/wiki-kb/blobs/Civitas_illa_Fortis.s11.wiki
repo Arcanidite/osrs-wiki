@@ -1,0 +1,12 @@
+===Shops===
+* [[File:Crafting shop icon.png|Artima's Crafting Supplies]] [[Artima's Crafting Supplies]]
+* [[File:Cookery shop icon.png|Cobado's Groceries]] [[Cobado's Groceries]]
+* [[File:Pub icon.png|The Flaming Arrow]] [[The Flaming Arrow]]
+* [[File:Sword shop icon.png|Fortis Blacksmith]] [[Fortis Blacksmith]]
+* [[File:Clothes shop icon.png|Floria's Fashion]] [[Floria's Fashion]]
+* [[File:Food shop icon.png|Fortis Baker's Stall]] [[Fortis Baker's Stall]]
+* [[File:Fur trader icon.png|Fortis Fur Stall]] [[Fortis Fur Stall]]
+* [[File:Gem shop icon.png|Fortis Gem Stall]] [[Fortis Gem Stall]]
+* [[File:General store icon.png|Fortis General Store]] [[Fortis General Store]]
+* [[File:Silk trader icon.png|Fortis Silk Stall]] [[Fortis Silk Stall]]
+* [[File:Spice shop icon.png|Fortis Spice Stall]] [[Fortis Spice Stall]]

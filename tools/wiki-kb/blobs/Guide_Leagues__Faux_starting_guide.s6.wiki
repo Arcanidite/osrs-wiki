@@ -1,0 +1,39 @@
+==Part 4: Kastori, Crafting & Magic Preparation==
+<div class="mw-collapsible">
+{{Checklist|
+* Take rowboat near [[Tal Teklan]] to [[Kastori]]
+* Run southwest to fishing shop
+* Buy [[Small fishing net]], [[Fishing rod]], [[Fly fishing rod]], [[Harpoon]], [[Lobster pot]], 50 [[Bait]], fill inv with [[Raw sardine]]s
+* Cook sardines at range to the west (can buy more sardines if you didn't successfully cook 5)
+* Run southwest, fish shrimp until 10+ [[Fishing]] (EH toggle off auto bank until several raw shrimp in inv, then back on, catch at least 1 if already lv 10) 
+* Bait fish for [[Herring]] until 15 (catch at least 1 if already lv 15)
+* Net fish until [[Anchovy]] (stay until 16 fishing)
+* Run northeast, cook [[Raw shrimp|shrimp]] 
+* Run northeast to Dungeon icon, climb down ladder
+* Kill [[Imp]] with earth spell, pick up [[Fiendish ashes|ashes]] (save them)
+* Run north to [[Statue of Ates]]. Pet [[Caique]] (Bird on a rock)
+* Run north, observe the [[Gemstone Crab]] burrow. Get 20 attack on crab (steel mace), then train magic on defensive until burrow (get at least 5 defence)
+* Take closest rowboat to [[Gloomthorn Trail|Gloomthorn]]
+* Run east to [[Mons Gratia]], kill [[Icefiend]] (fire spells)
+* Run southeast to [[Quetzacalli Gorge]], kill 5 [[Rabbit|rabbits]] with mace, bury bones
+* Cast [[Home teleport]] to [[Yama's Lair]], bury ashes
+* Hop 666 hoppy stones (Stepping stones)
+* Return to [[Civitas illa Fortis]]
+* Quetzal to [[Aldarin]], run North to bank. Equip [[Tyras helm]]
+* Deposit all, withdaw coins, [[Chisel]]
+* Run north to POH portal, enter build mode
+* Build cheapest room
+* Cut rubies at Gem shop. Goal: 70 [[Crafting]] (Can leave at 60, but extra gp buys you runes in a few steps) (~400k gp profit)
+* Take boat to [[Sunset Coast]]
+* Run north to helmet shop, buy [[Bronze full helm|bronze]] and [[Adamant full helm|addy full helms]].
+* Run southeast to fishing shop
+* Buy raw fish to complete cooking tasks: 50 [[Raw tuna|tuna]], 100 [[Raw swordfish|swordfish]]
+* Run north to [[Cam Torum]]
+* Buy 1 vial of water pack, [[Pestle and mortar]], 1 eye of newt pack at herb shop
+* Buy Steel, mith, adamant, rune pickaxe from mining shop (buy steel/rune if barbarian, probably need to equip for task - no idea how this will work)
+* Get haircut in building to the east. There's no Pink Skirt type thing hidden in this guide, instead, model yourself after Faux (Samurai, Maroon color haircut)
+* Trim beard (clean shaven)
+* Run to rune shop, buy 50 [[Law rune]]s, 500 [[Nature rune]]s, 100 [[Death rune]]s (more if you made extra money from crafting), extra elemental runes if needed
+* Cast [[Low Level Alchemy]] on runes or junk while completing tasks for mage xp
+}}
+</div>

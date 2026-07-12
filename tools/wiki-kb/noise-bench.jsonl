@@ -1,0 +1,6 @@
+{"run": "baseline", "cmd": "sections \"Barrows\"", "bytes": 155, "useful_pct": 100, "ts": "2026-07-12T06:17:39Z"}
+{"run": "baseline", "cmd": "get \"Cook's Assistant/Quick guide\" --section 2", "bytes": 1339, "useful_pct": 75, "ts": "2026-07-12T06:17:39Z"}
+{"run": "baseline", "cmd": "get \"Bucket of milk\"", "bytes": 3988, "useful_pct": 55, "ts": "2026-07-12T06:17:39Z"}
+{"run": "baseline", "cmd": "get \"Guide:Leagues: Faux starting guide\" --section 1", "bytes": 301, "useful_pct": 85, "ts": "2026-07-12T06:17:39Z"}
+{"run": "baseline", "cmd": "links \"Lumbridge\" | head -40", "bytes": 510, "useful_pct": 90, "ts": "2026-07-12T06:17:39Z"}
+{"run": "baseline", "cmd": "members \"Free-to-play quests\" | head -20", "bytes": 367, "useful_pct": 95, "ts": "2026-07-12T06:17:39Z"}

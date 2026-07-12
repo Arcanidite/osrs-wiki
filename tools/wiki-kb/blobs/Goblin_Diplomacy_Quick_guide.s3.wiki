@@ -1,0 +1,10 @@
+===Ironman version===
+{{Checklist|*Offer to buy 2 [[woad leaves]] for 20 gp from [[Wyson the gardener]] in [[Falador Park]].
+*Take 2 [[onion|onions]] from the farm north of [[Rimmington]].
+*Buy 3 [[redberries]] from [[Wydin's Food Store]] in [[Port Sarim]] '''(hop worlds to replenish stock)'''. Buy 2 extra Redberries if you plan on doing [[The Knight's Sword]].
+*Take the ingredients, along with 15 gp to [[Aggie]] in [[Draynor Village]].
+**Use the woad leaves on her to make a [[blue dye]].
+**Use the redberries on her to make a [[red dye]].
+**Use the onions on her to make a [[yellow dye]] {{Colour|red|Warning:}} Do not eat with left-click.
+***Use the red dye on the yellow dye to create an [[orange dye]].
+*Continue with the normal guide.}}

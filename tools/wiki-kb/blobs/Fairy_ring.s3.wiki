@@ -1,0 +1,362 @@
+==Combinations==
+Currently, there are 55 working fairy ring codes out of a total possible 64 codes.
+
+==="A" combinations===
+{| class="wikitable sortable lighttable sticky-header align-center-1" width="95%" style="text-align:center"
+!Code
+!Map
+!Location
+!Points of Interest
+|- id="AIQ"
+|{{Fairycode|AIQ}}
+|{{Map|mapID=-1|title=Fairy ring (AIQ)|2996,3114|mtype=pin|height=200|width=200}}
+|[[Asgarnia]]: [[Mudskipper Point]]
+|[[Mogre]]s, [[Rimmington]], [[Port Sarim]], [[Asgarnia Ice Dungeon]]. 
+|- id="AIR"
+|{{Fairycode|AIR}}
+|{{Map|mapID=-1|title=Fairy ring (AIR)|2700,3247|mtype=pin|height=200|width=200}}
+|Islands: South-east of [[Ardougne]]
+|Empty island, used for [[clue scroll]] coordinates and the [[Ardougne Diary#Medium|medium Ardougne diary]].
+''This is also the first fairy ring in the sequence used to access the [[Fairy Resistance Hideout|Fairy Queen's hideout]] during and after the [[Fairytale II - Cure a Queen]] [[Quests|quest.]]''
+|- id="AIS"
+|{{Fairycode|AIS}}
+|{{Map|mapID=-1|title=Fairy ring (AIS)|1430,3323|mtype=pin|height=200|width=200}}
+|[[Varlamore]]: [[Auburn Valley]]
+|Requires having travelled to [[Civitas illa Fortis]] via [[Regulus Cento]], after completion of [[Children of the Sun]].
+Is in the route for [[Vale Totems (minigame)|Vale Totems]], allowing to bank then teleport back
+|- id="AJP"
+|{{Fairycode|AJP}}
+|{{Map|mapID=-1|title=Fairy ring (AJP)|1651,3010|mtype=pin|height=200|width=200}}
+|[[Varlamore]]: [[Avium Savannah]]
+|Requires having travelled to [[Civitas illa Fortis]] via [[Regulus Cento]], after completion of [[Children of the Sun]].
+A [[Hardwood tree patch|hardwood tree farming patch]] can be found near the fairy ring, available after the completion of [[The Ribbiting Tale of a Lily Pad Labour Dispute]].
+|- id="AJQ"
+|{{Fairycode|AJQ}}
+|{{Map|mapID=-1|title=Fairy ring (AJQ)|2735,5221|mtype=pin|height=200|width=200}}
+|[[Dungeons]]: [[Dorgesh-Kaan South Dungeon|Cave south of Dorgesh-Kaan]]
+|''Completion of [[Death to the Dorgeshuun]] is required and a [[light source]] is recommended but not required''.
+
+[[Cave crawler]]s, [[Cave bug]]s, [[Cave slime]]s and [[Molanisk]]s can be found here. The [[Dorgesh-Kaan Agility Course]] is also be found here.
+|- id="AJR"
+|{{Fairycode|AJR}}
+| {{Map|mapID=-1|title=Fairy ring (AJR)|2780,3613|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[Fremennik Slayer Dungeon|Slayer cave south-east of Rellekka]] 
+|[[Fremennik Slayer Dungeon]], [[Rellekka]] west of fairy ring.
+|- id="AJS"
+|{{Fairycode|AJS}}
+| {{Map|mapID=-1|title=Fairy ring (AJS)|2500,3896|mtype=pin|height=200|width=200}}
+|Islands: Penguins near [[Miscellania]].
+|Penguins; no other access.
+''This is also the fourth and final fairy ring in the sequence used to access the [[Fairy Resistance Hideout|Fairy Queen's hideout]] during and after the [[Fairytale II - Cure a Queen]] [[Quests|quest.]]''
+|- id="AKP"
+|{{Fairycode|AKP}}
+|{{Map|mapID=-1|title=Fairy ring (AKP)|3284,2705|mtype=pin|height=200|width=200}}
+|[[Kharidian Desert]]: [[Necropolis]]
+|[[Sophanem]] and [[Menaphos]] to the north, Necropolis to the east.
+''Unlocked by entering the [[Necropolis]] in the beginning of [[Beneath Cursed Sands]].''
+|- id="AKQ"
+|{{Fairycode|AKQ}}
+|{{Map|mapID=-1|title=Fairy ring (AKQ)|2319,3619|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[Piscatoris Hunter area]]
+|[[Kraken Cove]], [[Chinchompa]]s (grey), [[Mining]] spots, [[Piscatoris Fishing Colony]].
+|- id="AKR"
+|{{Fairycode|AKR}} 
+|{{Map|mapID=-1|title=Fairy ring
+(AKR)|1827,3538|mtype=pin|height=200|width=200}} 
+|[[Great Kourend]]: [[Hosidius Vinery]]
+|[[Hosidius Vinery]], [[Tithe Farm]] minigame.
+|- id="AKS"
+|{{Fairycode|AKS}}
+|{{Map|mapID=-1|title=Fairy ring (AKS)|2571,2956|mtype=pin|height=200|width=200}}
+|[[Feldip Hills]]: [[Feldip Hunter area]]
+|[[Hunter]] jungle area, [[Chompy]] hunting grounds, [[Gnome glider]].
+|- id="ALP"
+|{{Fairycode|ALP}}
+|{{Map|mapID=-1|title=Fairy ring (ALP)|2503,3636|mtype=pin|height=200|width=200}}
+|Islands: [[Lighthouse]]
+|[[Jossik]], [[Barbarian Outpost]], [[Rellekka]], [[Dagannoth]].
+|- id="ALQ"
+|{{Fairycode|ALQ}}
+|{{Map|mapID=-1|title=Fairy ring (ALQ)|3597,3495|mtype=pin|height=200|width=200}}
+|[[Morytania]]: [[Haunted Woods]] east of [[Canifis]]
+|Can be used in conjunction with the [[Ectophial]] to quickly access the fairy ring network, but this ring is surrounded by aggressive [[Vampyres]] and [[Leech]]es. [[Farming patch]], [[Port Phasmatys]] east.
+|- id="ALR"
+|{{Fairycode|ALR}}
+|{{Map|mapID=-1|title=Fairy ring (ALR)|3059,4875|mtype=pin|height=200|width=200}}
+|Other Realms: [[Abyssal Area]]
+|[[Abyssal leech]]es, [[Abyssal guardian|guardians]], [[Abyssal walker|walkers]], and [[Abyssal demon]]s. Alternative area for players to get [[essence pouch]]es.
+|- id="ALS"
+| {{Fairycode|ALS}}
+|{{Map|mapID=-1|title=Fairy ring (ALS)|2644,3495|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[McGrubor's Wood]] 
+|[[Seers' Village]], [[Coal trucks]], [[Fishing Guild]], [[Ranging Guild]], [[Hemenster]]
+
+Going here is required for the medium [[Kandarin Diary]].
+|}
+
+==="B" combinations===
+{| class="wikitable sortable sticky-header lighttable align-center-1" width="95%" style="text-align:center"
+! Code
+! Map 
+!Location
+!Points of Interest
+|- id="BIP"
+|{{Fairycode|BIP}}
+| {{Map|mapID=-1|title=Fairy ring (BIP)|3410,3324|mtype=pin|height=200|width=200}}
+|Islands: [[Mort Myre Swamp|South-west of Mort Myre]], on the river Salve
+|Empty island with a shortcut to enter Mort Myre, requiring level 50 Agility. This fairy ring is also used for the [[Treasure_Trails/Guide/Cryptic_clues#Hard_Cryptic_Clues|hard cryptic clue]] "''BIP 7013''".
+|- id="BIQ"
+|{{Fairycode|BIQ}}
+|{{Map|mapID=-1|title=Fairy ring (BIQ)|3251,3095|mtype=pin|height=200|width=200}}
+|[[Kharidian Desert]] near the [[Kalphite Hive]].
+|[[Kalphite Lair]] for [[Kalphite]]s and the [[Kalphite Queen]], [[Shantay Pass]] nearby.
+|- id="BIS"
+|{{Fairycode|BIS}}
+|{{Map|mapID=-1|title=Fairy ring (BIS)|2635,3266|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[Ardougne Zoo]] - [[Unicorn]]s
+|[[Unicorn]]s; no other access.
+
+Required for the medium [[Ardougne Diary]].
+|- id="BJP"
+|{{Fairycode|BJP}}
+|{{Map|mapID=-1|title=Fairy ring (BJP)|2267,2976|mtype=pin|height=200|width=200}}
+|Islands: [[Isle of Souls]]
+|[[Crumbling Tower]], [[Isle of Souls Dungeon]].
+|- id="BJR"
+|{{Fairycode|BJR}}
+|{{Map|mapID=-1|title=Fairy ring (BJR)|2650,4730|mtype=pin|height=200|width=200}}
+|Other Realms: [[Fisher Realm|Realm of the Fisher King]]
+|''Requires partial completion of the [[Holy Grail]] [[quest]]''.
+|- id="BJS"
+|{{Fairycode|BJS}} 
+|{{Map|mapID=-1|title=Fairy ring (BJS)|2150,3070|mtype=pin|height=200|width=200}}
+|Islands: Near [[Zul-Andra]]
+|''Requires completion of the [[Regicide]] [[quest]]''.
+76 [[Agility]] is needed to jump off the island.
+|- id="BKP"
+| {{Fairycode|BKP}}
+|{{Map|mapID=-1|title=Fairy ring (BKP)|2385,3035|mtype=pin|height=200|width=200}}
+|[[Feldip Hills]]: [[Chompy Marsh]], south of [[Castle Wars]]
+|[[Smoke Devil Dungeon]] and [[Chompy bird]] hunting grounds. [[Teak]] tree to the west, [[Castle Wars]] north.
+|- id="BKQ"
+|{{Fairycode|BKQ}}
+|{{Map|mapID=-1|title=Fairy ring (BKQ)|3041,4532|mtype=pin|height=200|width=200}}
+|Other Realms: [[Enchanted Valley]]
+|[[Tree spirit]]s.
+|- id="BKR"
+|{{Fairycode|BKR}}
+|{{Map|mapID=-1|title=Fairy ring (BKR)|3469,3431|mtype=pin|height=200|width=200}}
+|[[Morytania]]: [[Mort Myre Swamp]], south of [[Canifis]]
+|Swamp boat south-east (towards [[Barrows]] and [[Burgh de Rott]]).
+|- id="BKS"
+|{{Fairycode|BKS}}
+|{{Map|mapID=-1|title=Fairy ring (BKS)|2412,4434|mtype=pin|height=200|width=200}} 
+|Other Realms: [[Zanaris]]
+|[[Impetuous Impulses]], [[Chaeldar]], [[Cosmic Altar|Cosmic]] [[runic altar]].
+|- id="BLP"
+|{{Fairycode|BLP}}
+|{{Map|mapID=-1|title=Fairy ring (BLP)|2437,5126|mtype=pin|height=200|width=200}}
+|Dungeons: [[Mor Ul Rek|TzHaar area]]
+|[[TzHaar Fight Cave]], [[TzHaar Fight Pit]], TzHaar monsters.
+|- id="BLQ"
+|{{Fairycode|BLQ}}
+|{{Map|mapID=-1|title=Fairy ring (BLQ)|3573,4371|mtype=pin|height=200|width=200}}
+|Other Realms: [[Yu'biusk]]
+||''Requires partial completion of the [[Land of the Goblins]] [[quest]]''.
+Used during the [[Hopespear's Will]] [[miniquest]].
+|- id="BLR"
+|{{Fairycode|BLR}}
+|{{Map|mapID=-1|title=Fairy ring (BLR)|2740,3351|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[Legends' Guild]]
+|[[Legends' Guild]], [[Mining]] spots, [[Magic tree|Magic]] and [[Maple tree|Maple]] trees north, [[Witchaven]] south, [[East Ardougne]] west.
+|- id="BLS"
+|{{Fairycode|BLS}}
+|{{Map|mapID=-1|title=Fairy ring (BLS)|1295,3493|mtype=pin|height=200|width=200}} 
+|[[Kebos Lowlands]]: South of [[Mount Quidamortem]]
+|Rowboat to [[The Stranglewood]], [[Mountain Guide]] for quick access to the [[Chambers of Xeric]].
+|}
+
+==="C" combinations===
+{| class="wikitable sortable sticky-header lighttable align-center-1" width="95%" style="text-align:center"
+! Code
+!Map 
+!Location
+!Points of Interest
+|- id="CIP"
+|{{Fairycode|CIP}}
+|{{Map|mapID=-1|title=Fairy ring (CIP)|2513,3884|mtype=pin|height=200|width=200}}
+|Islands: [[Miscellania]]
+| ''Requires completion of [[The Fremennik Trials]] [[quest]].''
+
+[[Miscellania]], [[Etceteria]] east, [[Managing Miscellania]]
+
+Required for the medium [[Fremennik Diary]].
+|- id="CIQ"
+|{{Fairycode|CIQ}} 
+|{{Map|mapID=-1|title=Fairy ring (CIQ)|2528,3127|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: North-west of [[Yanille]]
+|[[Tree Gnome Village (location)|Tree Gnome Village]] north, [[Yanille]] south-east, [[Gu'Tanoth]] south, [[Castle Wars]] west.
+|- id="CIR"
+|{{Fairycode|CIR}}
+|{{Map|mapID=-1|title=Fairy ring (CIR)|1302,3762|mtype=pin|height=200|width=200}}
+|[[Kebos Lowlands]]: South of [[Mount Karuulm]]
+|''The player must have visited [[Great Kourend]] at least once to access this fairy ring''.
+
+Directly south of [[Mount Karuulm]], and north-east of the [[Farming Guild]].
+
+Required for the medium [[Kourend & Kebos Diary]].
+|- id="CIS"
+|{{Fairycode|CIS}}
+|{{Map|mapID=-1|title=Fairy ring (CIS)|1639,3868|mtype=pin|height=200|width=200}}
+|[[Great Kourend]]: [[Arceuus Library]]
+| ''The player must have visited Great Kourend at least once to access this fairy ring''.
+
+North of the [[Arceuus Library]] in [[Arceuus]].
+|- id="CJQ"
+|{{Fairycode|CJQ}}
+|{{Map|mapID=-1|title=Fairy ring (CJQ)|3178,2447|mtype=pin|height=200|width=200}}
+|[[The Great Conch]]
+|''The player must have visited The Great Conch at least once to access this fairy ring''.
+|- id="CJR"
+|{{Fairycode|CJR}}
+|{{Map|mapID=-1|title=Fairy ring (CJR)|2705,3576|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[Sinclair Mansion]] (east)
+|[[Sinclair Mansion]] east, [[Seers' Village]] south.
+|- id="CKP"
+|{{Fairycode|CKP}}
+|{{Map|mapID=-1|title=Fairy ring (CKP)|2075,4848|mtype=pin|height=200|width=200}}
+|Other Realms: [[Cosmic entity's plane]]
+|Used during the [[Fairytale II - Cure a Queen]] [[quest]].
+|- id="CKQ"
+|{{Fairycode|CKQ}}
+|{{Map|mapID=-1|title=Fairy ring (CKQ)|1359,2941|mtype=pin|height=200|width=200}}
+|[[Varlamore]]: [[Aldarin]]
+|Requires having travelled to Civitas illa Fortis via Regulus Cento, after completion of Children of the Sun.
+
+[[Mastering Mixology]] minigame.
+|- id="CKR"
+| {{Fairycode|CKR}}
+|{{Map|mapID=-1|title=Fairy ring (CKR)|2801,3003|mtype=pin|height=200|width=200}}
+|[[Karamja]]: South of [[Tai Bwo Wannai Village]]
+|[[Horned graahk|Graahks]], [[Shilo Village (location)|Shilo Village]] nearby, [[Tai Bwo Wannai Village]], [[Nature Altar]].
+|- id="CKS"
+|{{Fairycode|CKS}}
+|{{Map|mapID=-1|title=Fairy ring (CKS)|3447,3470|mtype=pin|height=200|width=200}}
+|[[Morytania]]: [[Canifis]]
+|[[Morytania Slayer Tower]], [[Canifis]] east, [[Paterdomus]] west, [[Mort Myre swamp]] south.
+|- id="CLP"
+|{{Fairycode|CLP}}
+|{{Map|mapID=-1|title=Fairy ring (CLP)|3082,3206|mtype=pin|height=200|width=200}}
+|Islands: [[Draynor island]]
+|This is the solution to the [[Treasure_Trails/Guide/Coordinates/Hard#Hard_Coordinates|hard coordinate clue]] "''01 degrees 30 minutes north, <br>20 degrees 01 minutes east ''".
+|- id="CLR"
+|{{Fairycode|CLR}}
+|{{Map|mapID=-1|title=Fairy ring (CLR)|2740,2738|mtype=pin|height=200|width=200}}
+|Islands: [[Ape Atoll]]
+|''Requires completion of the [[Monkey Madness I]] [[quest]]''. 
+In addition, 48 [[Agility]] and a [[Ninja monkey greegree]] or [[Kruk monkey greegree]] are required to exit the [[Ape Atoll Agility Course|agility course]] and travel to the city (note that other [[monkey greegree]] types are not sufficient) without taking damage. If you do not have the greegree, you can still attempt the rope swing but will automatically fail and fall to the beginning of the course, taking some damage. If you have the greegree, but lack the Agility requirement, you will be unable to exit into the city.
+|- id="CLS"
+|{{Fairycode|CLS}}
+|{{Map|mapID=-1|title=Fairy ring (CLS)|2682,3081|mtype=pin|height=200|width=200}}
+|Islands: [[Yanille Chain]]
+|[[Hazelmere]]'s house can be found here.
+|}
+
+==="D" combinations===
+{| class="wikitable sortable sticky-header lighttable align-center-1" width="95%" style="text-align:center"
+!Code
+!Map
+!Location
+!Points of Interest
+|- id="DIP"
+|{{Fairycode|DIP}}
+|{{Map|mapID=-1|title=Fairy ring (DIP)|3037,4763|mtype=pin|height=200|width=200}}
+|Other Realms: [[Abyssal Nexus]]
+|[[Abyssal Sire]].
+|-
+|{{Fairycode|DIQ}}
+|[[file:Superior_garden_built.png|200px|link=Superior garden]]
+|[[Player-owned house]] [[superior garden]]
+|Only works if the player has [[Fairy ring (Construction)|a fairy ring]] in their [[player-owned house|house]].
+|- id="DIR"
+|{{Fairycode|DIR}}
+|{{Map|mapID=-1|title=Fairy ring (DIR)|3038,5348|mtype=pin|height=200|width=200}}
+|Other Realms: [[Gorak Plane|Gorak's Plane]]
+|The only place [[Gorak]]s can be found other than the [[God Wars Dungeon]].
+|- id="DIS"
+|{{Fairycode|DIS}}
+|{{Map|mapID=-1|title=Fairy ring (DIS)|3108,3149|mtype=pin|height=200|width=200}}
+|[[Misthalin]]: [[Wizards' Tower]]
+|[[Wizards' Tower]], [[Rune essence mine]]
+
+Required for the medium [[Lumbridge & Draynor Diary]].
+|- id="DJP"
+|{{Fairycode|DJP}}
+|{{Map|mapID=-1|title=Fairy ring (DJP)|2658,3230|mtype=pin|height=200|width=200}}
+|[[Kandarin]]: [[Tower of Life (building)|Tower of Life]]
+|[[Ardougne Monastery]] and [[Ardougne cloak]] unlimited teleport west, [[East Ardougne]] and [[Spirit tree]] north-west, [[Port Khazard]] south.
+|- id="DJR"
+|{{Fairycode|DJR}}
+|{{Map|mapID=-1|title=Fairy ring (DJR)|1455,3658|mtype=pin|height=200|width=200}}
+|[[Great Kourend]]: [[Chasm of Fire]]
+| ''The player must have visited Great Kourend at least once to access this fairy ring''.
+
+[[Chasm of Fire]], north-west corner of [[Shayzien]].
+|- id="DKP"
+|{{Fairycode|DKP}}
+|{{Map|mapID=-1|title=Fairy ring (DKP)|2900,3111|mtype=pin|height=200|width=200}}
+|[[Karamja]]: Gnome glider
+|[[Raw karambwan|Karambwan]] [[fishing spots]].
+|- id="DKR"
+|{{Fairycode|DKR}}
+|{{Map|mapID=-1|title=Fairy ring (DKR)|3129,3496|mtype=pin|height=200|width=200}}
+|[[Misthalin]]: [[Edgeville]]
+|[[Grand Exchange]] east, [[Edgeville]] [[bank]] west, [[Wilderness]] north.
+|- id="DKS"
+| {{Fairycode|DKS}}
+|{{Map|mapID=-1|title=Fairy ring (DKS)|2744,3719|mtype=pin|height=200|width=200}}
+|[[Fremennik]]: [[Polar Hunter area]]
+|[[Keldagrim]] entrance, [[Brine Rat Cavern]], [[Rock crab]]s, [[Rellekka]] west.
+|-
+|{{Fairycode|DLP}}
+| {{Map|mapID=51|title=Fairy ring (DLP)|2923,10454|mtype=pin|height=200|width=200}}
+|[[Grimstone]]
+|[[Grimstone Dungeon]], available once Grimstone has been visited
+|- id="DLQ"
+|{{Fairycode|DLQ}}
+|{{Map|mapID=-1|title=Fairy ring (DLQ)|3423,3016|mtype=pin|height=200|width=200}}
+|[[Kharidian Desert]]: North of [[Nardah]]
+|[[Desert lizard]]s, [[Jackal]]s, [[Nardah]] south.
+|- id="DLR"
+|{{Fairycode|DLR}}
+|{{Map|mapID=-1|title=Fairy ring (DLR)|2213,3099|mtype=pin|height=200|width=200}}
+|Islands: [[Poison Waste]] south of [[Isafdar]]
+|Player can use [[Broken Handz]]'s [[Telescope (Poison Waste)|telescope]] to spectate players fighting [[Zulrah]]. There are also unattackable [[badger]]s on the island.
+''This is also the second fairy ring in the sequence used to access the [[Fairy Resistance Hideout|Fairy Queen's hideout]] during and after the [[Fairytale II - Cure a Queen]] [[quest]].''
+|- id="DLS"
+| {{Fairycode|DLS}} 
+|{{Map|mapID=-1|title=Fairy ring (DLS)|3447,9824|mtype=pin|height=200|width=200}} 
+|Dungeons: [[Myreque hideout]] under [[The Hollows]]
+| ''Requires completion of the [[In Search of the Myreque]] [[quest]]''.
+
+Find the cracks in the walls to enter the main tunnel under the [[Hair of the Dog]] pub in [[Canifis]].
+|}
+
+===Sequences===
+{| class="wikitable sortable sticky-header lighttable align-center-1" width="95%" style="text-align:center"
+! Code
+!Map 
+!Location
+!Points of Interest
+|- id="Hideout"
+|{{Fairycode|AIR}}
+
+{{Fairycode|DLR}}
+
+{{Fairycode|DJQ}}
+
+{{Fairycode|AJS}}
+|{{Map|mapID=-1|title=Fairy ring (hideout)|x=2343|y=4442|2328,4426|mtype=pin|height=200|width=200}}
+|[[Fairy Resistance Hideout]]
+|Four codes must be entered in this order to access the [[Fairy Resistance Hideout|Fairy Queen's hideout]] during and after the [[Fairytale II - Cure a Queen]] [[Quests|quest.]]
+|}

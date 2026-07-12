@@ -1,0 +1,15 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=700|delta=10|column1=Heals}}
+{{StoreLine|name=Pot of flour|stock=3|restock=100|column1=N/A}}
+{{StoreLine|name=Raw beef|stock=1|restock=100|column1=3<ref group="n" name="cooked">When cooked</ref>}}
+{{StoreLine|name=Raw chicken|stock=1|restock=100|column1=3<ref group="n" name="cooked" />}}
+{{StoreLine|name=Cabbage|stock=3|restock=100|column1=1}}
+{{StoreLine|name=Banana|stock=3|restock=100|column1=2}}
+{{StoreLine|name=Redberries|stock=1|restock=100|column1=N/A}}
+{{StoreLine|name=Bread|stock=0|restock=100|column1=5}}
+{{StoreLine|name=Chocolate bar|stock=1|restock=100|column1=3}}
+{{StoreLine|name=Cheese|stock=3|restock=100|column1=2}}
+{{StoreLine|name=Tomato|stock=3|restock=100|column1=2}}
+{{StoreLine|name=Potato|stock=1|restock=100|column1=4<ref group="n" name="cooked" />}}
+{{StoreTableBottom}}
+<references group="n" />

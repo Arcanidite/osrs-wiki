@@ -1,0 +1,40 @@
+=== Buildings and stores ===
+{| class="wikitable"
+!Building
+!Description
+|-
+|[[Bob's Brilliant Axes]]
+|Owned by [[Bob]], this store buys and sells a limited range of [[axe]]s, which include [[pickaxe]]s; [[Bronze axe|bronze]], [[Iron axe|iron]] and [[steel axe]]s; and [[Iron battleaxe|iron]], [[Steel battleaxe|steel]] and [[mithril battleaxe]]s. He also repairs [[Barrows equipment]], [[axe]]s and [[pickaxe]]s for a price. The store is advertised on [[flyer]]s dropped by many [[monsters]]. A building that is likely Bob's house is attached on the northern side.
+|-
+|[[Cooking tutor]]'s house
+|A small home with a [[range]] and a chef to tell you how to use it.
+|-
+|[[Father Urnhey]]'s house
+|The house of a hermit who provides players with the [[ghostspeak amulet]].
+|-
+|[[Lozar's house]]
+|A building located across the river overrun with level 2 and 5 goblins and an [[iron dagger]] [[Spawning|spawn]]. This area is a very popular area for new players to start training. Between the house and the river there are a [[Canoe|canoe station]] and a few [[fishing spots]].
+|-
+|[[H.A.M. Hideout|H.A.M. house]]
+|The ruins of a house that contain the entrance to the H.A.M. hidehout.
+|-
+|[[Lumbridge Castle]]
+|A large castle featuring [[Duke Horacio]] and his advisor [[Sigmund]]. The [[spinning wheel]], used in [[Crafting]], is also located upstairs. If you have started the [[Recipe for Disaster]] [[Quests|quest]], there is a [[Culinaromancer's Chest|bank]] in the [[Cook (Lumbridge)|Cook]]'s basement, as well as a wide variety of cooking ingredients and cooking implements to buy. Along with the Lumbridge tutors update, there is a [[Lumbridge Castle bank|bank]] was on the top floor of the castle.
+The basement contains the entrance to the [[Dorgesh-Kaan mine]] and the [[Culinaromancer's Chest]], which becomes accessible after the completion of [[Recipe for Disaster]].
+|-
+|[[Lumbridge church]]
+|[[Father Aereck]] watches over his 230+ year old church of [[Saradomin]] here. There is also an altar to recharge [[Prayer]] points and the [[Prayer tutor]]. South of the Saradomin Church is the [[Lumbridge Graveyard|Lumbridge graveyard]], featuring [[Nigel]] and [[Count Check]]. Next to the southern exit, a mausoleum house containing a coffin plays an important role in [[The Restless Ghost]].
+|-
+|[[Lumbridge General Store]]
+|A store which sells some items useful for new players. It also buys [[items]] from players for a small amount of [[coins]].
+|-
+|[[The Sheared Ram]]
+|A bar featuring [[Veos]], a treasure hunter from [[Great Kourend]]. Players who are new to [[clue scroll]]s may speak to [[Arthur the Clue Hunter]] to learn more about them. If players have [[Adventure Paths]], [[Adventurer Jon]] is found outside the pub on the southern wall.
+|-
+|Smiths' building
+|A building containing the [[Smithing tutor]], a [[furnace]], and an [[anvil]]. It's not recommended for training, since the anvil can only smith [[bronze equipment]] and no [[bank]] or mine is nearby.
+|-
+|[[Zanaris shed]]
+|An unassuming shed in the swamp that leads to the magical city of [[Zanaris]] after completing the [[Lost City]] [[quest]].
+|}
+[[File:Lumbridge Swamp Caves.png|thumb|The deadly swamp caves.]]

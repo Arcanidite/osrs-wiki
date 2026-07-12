@@ -1,0 +1,51 @@
+==Part 1: Starting Out in Varlamore==
+<div class="mw-collapsible">{{Checklist|
+* Open the Leagues Menu
+* Complete the Leagues Tutorial
+* Claim first relic (I'm going [[Endless Harvest (Demonic Pacts League)|Endless Harvest]]) *turn off auto bank for now*
+* Turn off your Run and back on
+* Collect Dramen Staff from league tutor
+* Pickpocket a [[Citizen]] (to level 5 [[Thieving]])
+* Go inside house to the east, fill [[Bucket]] at water pump
+* Run north, pet [[Renu]]
+* Perform the Bow emote near [[Renu]]
+* Travel with bird to anywhere
+* Cast [[Home teleport]] (might put you in [[Yama's Lair]], leave to [[Varlamore]] again)
+* Run west, attack dummy to level 8 [[Attack]] 
+* Run to [[Bazaar]] (market), cry near a [[Child (Civitas illa Fortis)|child]]
+* Thieve full inventory of [[Cake]]s (need 14+)
+* Run northwest to [[Fortis General Store]]
+* Sell 1 CAKE AT A TIME for maximum GP (not 5, 10, or 50), need 260+ gp 
+* Buy 1 [[Knife]], 1 [[Chisel]], 1 [[Spade]], 2 [[Bird snare]]s
+* Run south to clothing shop, buy [[Pink skirt]], [[Brown apron]], [[Red cape]] (red cape is 2gp, others are 32gp)
+* Run straight south of general store to southern [[Varlamore]] wall. Kill rat w/ bow
+* Run east to altar, Salute next to [[Statue of Quoatlos]] (southern)
+* Run next to Altar, activate [[Thick Skin]]
+* Run east, pet [[Xolo]] outside near [[Bird bath]]
+* Drink from [[Bird bath]]
+* Chop (or punch) 2 trees (Barbarian Gathering should get 15+ WC here)
+* Burn 1 log, fletch 1 log into arrow shafts 
+* Run to east bank, deposit all, withdraw coins 
+* Enter [[Fortis Colosseum]], run north and talk to [[Gladiator (Fortis Colosseum)|Gladiator]]
+* Exit, run north, talk to [[Port master]] (Sailing)
+* Run west and buy 10 [[Bucket of sand]], 10 [[Soda ash]], [[Glassblowing pipe]] from charter
+* Run south to furnace, make 10 [[Molten glass]], deposit at bank
+* Run back to charter, buy 10 more [[Bucket of sand]], 10 [[Soda ash]]
+* Run to furnace, make 10 [[Molten glass]] again, blow all glass into [[Empty oil lamp|oil lamps]] for 20 [[Crafting]]
+* Run to bank, deposit oil lamps, withdraw [[Bucket of water]] (empty it, keep bucket), [[Air rune]]s and [[Mind rune]]s, [[Dramen staff]] (equip), [[Spade]], [[Pot]]
+* Run west to crafting shop, buy [[Shears]] 
+* Run south of Varlamore from the bank
+* Pick 6 [[Cabbage]] (drop)
+* Kill 1 [[Chicken]], pick up bone
+* Run just south of the cabbage field and sit emote by the [[Stolen cabbage]] (near dogs)
+* Run west, pick [[Sweetcorn]] (drop)
+* Give [[Molossus]] bones (north/northwest of sweetcorn)
+* Run west, pick and eat 1 [[Onion]]
+* Run west, pick 6 [[Wheat]] (keep 1) (drop 5)
+* Make [[Flour]] in the windmill to the south-east (can drop flour)
+* Run northwest to [[Ortus Farm]], pick 6 [[Potato]]s (drop)
+* Buy [[Rake]] from [[Harminia]] (farming patch), rake [[Flower patch]]
+* Run north, milk [[Dairy Buffalo|Buffalo]]
+* Run west, shear 1 [[Alpaca]]
+}}
+</div>

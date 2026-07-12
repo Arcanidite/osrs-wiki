@@ -1,0 +1,8 @@
+==Walkthrough==
+{{Checklist|
+*Ask [[Duke Horacio]] in Lumbridge Castle for a quest and he'll give you an [[air talisman]]. {{Chat option|1 Have you any quests for me?|1 Yes.}}
+*Talk to [[Archmage Sedridor]] in the [[Wizards' Tower]] basement and give him the [[air talisman]]. {{Chat option|1 Okay, here you are.|2 Actually, I'm not interested.|1 Yes, certainly.}}
+*Talk to [[Aubury]] south of [[Varrock east bank]] in the [[Varrock rune shop]] and give him the [[research package]]. {{Chat option|1 I've been sent here with a package for you.}}
+*Take the [[Research notes (Rune Mysteries)|research notes]] back to Sedridor.
+*'''Congratulations, quest complete!'''
+}}

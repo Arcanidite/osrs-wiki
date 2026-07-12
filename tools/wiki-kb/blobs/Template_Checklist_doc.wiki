@@ -1,0 +1,54 @@
+{{Documentation}}
+
+This template creates a checklist. It relies on the gadgets [[MediaWiki:Gadget-checkboxList.js]] and [[MediaWiki:Gadget-checkboxList.css]].
+
+==Usage==
+Checklists may be used when the player needs to complete a series of tasks.
+
+Do not use checklists if the list requires more than one column, such [[Achievement Diary]]. These tables should use the standard <code>lighttable</code> class.
+
+* The first unnamed parameter is required and only takes unordered lists, created with an asterisk (<code>*</code>).
+* The <code>title</code> parameter is optional and allows you to add a heading to the checklist.
+* The <code>notoggleparent</code> parameter is optional and stops the parent checkbox being toggled when all the children are checked.
+* The <code>smallindent</code> parameter is optional and reduces the indentation size of each nested level of checkboxes. An example of a smaller indentation can be seen in [[Template:Quest details]].
+
+==Example==
+<pre>{{Checklist|title=Example heading|
+* Use a window on the nearby pillar.
+* Put a mirror in the pillar giving out the light, and reflect the light north.
+* Walk north to the next pillar. Add a mirror and reflect the light west.
+* Go west, add a mirror, and reflect the light south.
+* Go south to the next pillar. Use your yellow crystal on it to dye the light yellow.
+}}</pre>
+
+Produces:
+
+{{Checklist|title=Example heading|
+* Use a window on the nearby pillar.
+* Put a mirror in the pillar giving out the light, and reflect the light north.
+* Walk north to the next pillar. Add a mirror and reflect the light west.
+* Go west, add a mirror, and reflect the light south.
+* Go south to the next pillar. Use your yellow crystal on it to dye the light yellow.
+}}
+
+{{TemplateData|<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Checklist",
+			"type": "content",
+			"required": true,
+			"description": "The content of the checklist."
+		},
+		"notoggleparent": {},
+		"smallindent": {},
+		"title": {
+			"description": "Allows adding a heading to the checklist.",
+			"example": "Items required",
+			"type": "content"
+		}
+	},
+	"description": "Can be used to create a checklist."
+}
+</templatedata>}}
+<includeonly>[[Category:Transclusion templates|{{PAGENAME}}]]</includeonly>

@@ -1,0 +1,134 @@
+{{Infobox Location
+|name = Aldarin
+|image = [[File:Aldarin.png]]
+|release = [[25 September]] [[2024]]
+|update = Varlamore: The Rising Darkness is OUT NOW
+|members = Yes
+|location = [[Varlamore]]
+|race = [[Human]]s, [[dwarves]]
+|music = [[Isle of Serenity]], [[Mistrock (music track)|Mistrock]], [[Peace and Prosperity]]
+|map = {{Map|name=Aldarin|width=300|height=400|zoom=1|x=1391|y=2935}}
+|type = Island
+|leagueRegion = Varlamore
+}}
+[[File:Aldarin icon detail.png|left|130px]]
+{{Relative location
+|location = Aldarin
+|north = Kastori
+|east = Sunset Coast
+|west = Darkmoon Ravine
+|south = Mistrock
+}}
+'''Aldarin''' is a large island off the south-west coast of [[Varlamore]]. It is a lush and luxurious location, inhabited by wealthy citizens who live in villas, though its rocky south and west coasts are inhabited by [[Dwarf (race)|dwarves]] and [[Bandit (Varlamore)|bandits]].
+
+The island is most known for the famous [[Moonrise Brewery and Winery]], the oldest producer of alcohol in Varlamore. It is also home to the main facility of the [[Alchemical Society]], an organisation of herbalists who fuse techniques left behind by the [[Old Ones]] with traditional druidic practices to advance the study of [[Herblore]].
+
+==Transportation==
+There are several ways to reach Aldarin:
+* Using the western ship from [[Sunset Coast]]. Requires paying [[Antonia]] 20 [[coins]].
+* Using the [[Quetzal Transport System]].
+* [[Minigame Teleport]] to [[Mastering Mixology]]. Requires {{SCP|Herblore|60|link=yes}} (20 minute cooldown).
+* Using [[charter ships]].
+* Casting [[Teleport to house]] if the [[player-owned house]] is in Aldarin; otherwise a [[Teleport to house tablet]] with a [[Scroll of redirection]] (requiring 35 [[Construction]]), or the [[Construction cape]].
+* Using [[Fairy Ring]] {{Fairycode|CKQ}}.
+* North Aldarin teleport via the [[Pendant of ates]] (Requires completion of [[Death on the Isle]] and subsequent activation of the North Aldarin statue, see [[Icon (Aldarin)|here]] for details).
+
+==Points of interest==
+===Alchemical Society lab===
+In the main facility of the Alchemical Society, the player can partake in the [[Mastering Mixology]] minigame that offers [[Herblore]] experience and unlocks several related rewards, such as the [[prescription goggles]], [[reagent pouch]], [[potion storage]], [[chugging barrel]], [[alchemist's amulet]] and several potion packs. [[Aldarium]] can also be bought from here, which is a secondary ingredient for [[Goading potion|goading]] and [[Prayer regeneration potion|prayer regeneration potions]].
+
+===Villa Lucens===
+The largest villa on the island. Owned by [[Constantinius]], the quest [[Death on the Isle]] takes place here.
+
+===Market===
+Contains a [[Portal (Player-owned house)|house portal]] and three shops:
+* [[File:General store icon.png|link=Aldarin General Store]] [[Aldarin General Store]]
+* [[File:Food shop icon.png|link=Faustus' Fruit and Veg]] [[Faustus' Fruit and Veg]]
+* [[File:Gem shop icon.png|link=Toci's Gem Store]] [[Toci's Gem Store]]
+
+===Moonrise Brewery and Winery===
+The [[Moonrise Brewery and Winery]] is famously known for their unmatchable variety of wines that are sold at [[Moonrise Wines]], and also own the [[Sunlight's Sanctum]] pub just east.
+
+The facility possesses a [[fermenting vat]] that is usable by players, as well as a large field of grapevines which can be harvested when ripe if you have a [[grape barrel]] in your inventory, which can be obtained after talking to the [[vineyard foreman]]. After picking ripe grapes from 4 bushes, the player may hand in the full grape barrel to the vineyard foreman, which will reward the player with 5 noted [[grapes]].
+
+===Mistrock===
+A mining outpost located on the southern coast of Aldarin. [[Overseer Khougo]] manages the operations there.
+
+A [[Mistrock bank|bank]] can be found here, as well as many [[maple tree]]s and [[yew tree]]s. There are three shops found here:
+* [[File:Mining shop icon.png|link=Mistrock Mining Supplies]] [[Mistrock Mining Supplies]]
+* [[File:Pub icon.png|link=Stick Your Ore Inn]] [[Stick Your Ore Inn]]
+* [[File:Shield shop icon.png|link=Shields of Mistrock]] [[Shields of Mistrock]]
+
+===Mysterious Nest===
+There is a [[Nest (nice)|nest]] that sits at the top of the windmill that players can interact with, similar to that of the [[Woodcutting Guild]]. Instead of using [[Bird's egg|eggs]] from [[bird nest]]s, players can use any item from their inventory on the nest, and upon world-hopping or relogging, players may retrieve a different item to that they input.
+
+===Darkmoon Ravine===
+[[Darkmoon Ravine]] is currently an [[Inaccessible areas|inaccessible area]] on the west side of the island. There are a few [[Bandit (Varlamore)|bandits]] roaming the area. There is also a [[jug of wine]] in one of the buildings, and some [[seaweed]] on the north coast, one of which can be [[Telekinetic Grab|telegrabbed]].
+
+===Sunlight's Sanctum===
+[[Sunlight's Sanctum]] is a pub opposite to the [[Aldarin bank]] near the fountain in the centre of Aldarin. Owned by the Moonrise Brewery and Winery, they provide travellers with meals and a large variety of alcoholic drinks.
+
+==Sailing info==
+Players can [[mooring point|dock]] at Aldarin with level 46 [[Sailing]], provided they have also completed [[Children of the Sun]] and visited [[Varlamore]] at least once. The dock at the north-east of the island offers the following utilities for sailors:
+*[[File:Shipwright map icon.png|link=Shipwright]] [[Shipwright]]
+*[[File:Port task board icon.png|link=Notice board]] [[Notice board]]
+*[[File:Salvaging station map icon.png|link=Salvaging station]] [[Salvaging station]]
+*[[File:Ledger table icon.png|link=Ledger table]] [[Ledger table]]
+*[[File:Bank icon.png|link=Bank deposit box]] [[Bank deposit box]]
+
+===Port tasks===
+The notice board offers eight [[port tasks]] selected from the following lists.
+
+'''[[Bounty tasks]]'''
+{{BountyTaskList|location=Aldarin}}
+
+'''[[Courier tasks]]'''
+{{CourierTaskList|location=Aldarin}}
+
+==Resources==
+* Three [[magic trees]] are located along the north-western coast of the isle, and three [[yew trees]] are located along the north-eastern coast.
+* Two yew trees and 27 [[maple trees]] can be found around [[Mistrock]]. These are notably only about 10-15 tiles from a bank.
+* A [[hops patch]] is located directly next to the fairy ring.
+* A mining site exists on the south end of the island to the east of Mistrock, containing 5 [[gold rocks]], 5 [[silver rocks]], 6 [[coal rocks]], and 8 [[iron rocks]].
+* A [[wheat]] field and [[windmill]] are directly next to the Quetzal Transportation System waypoint.
+* [[Ruby harvests]] may be caught to the west of the vineyard, and [[copper longtails]] may be caught to the north.
+* The north coast of the island has fishing spots for [[Fishing spots|small net]] and [[Fishing spots|bait]] fishing as well as the south coast for [[Fishing spots|cage]] and [[Fishing spots|harpoon]] fishing.
+* A [[loom]] is located in a shack just north-west of the fairy ring.
+* [[Chest (Aldarin Villas)|Thievable chests]] in two of the villas containing various items such as gems.
+
+==Charter ship==
+*After completing the [[Cabin Fever]] quest, the price between two locations, as displayed below, will halve the charter costs to 50%.
+*The [[Ring of charos#Activated|ring of charos(a)]] also halves the charter costs to 50%.
+**These cost reductions can be combined to reduce the costs to 25%.
+*Keep in mind the variance between destination fares. Similar to a layover, chartering to another destination first or using a non-charter ship like from [[Port Sarim]] to [[Musa Point]] can net significant savings. For example, the 2,900 coins cost to travel from [[Port Phasmatys]] to [[Brimhaven]] can be reduced by first chartering to Musa Point for 1,100 coins, then to Brimhaven for 200 coins.
+**The only exception to this is [[Port Tyras]], which has the same fare to and from every other port.
+
+{{Charter ship fares}}
+
+==Quests==
+* [[Death on the Isle]]
+
+==Gallery==
+<gallery mode="packed" heights="160" style="text-align:left">
+Aldarin - marketplace.png|The marketplace by the port in Aldarin
+Moonrise Brewery and Winery.png|The Moonrise Brewery and Winery
+Villa Lucens.png|Villa Lucens
+Darkmoon Ravine.png|The Darkmoon Ravine
+Mistrock.png|Mistrock
+</gallery>
+
+===Concept art===
+<gallery mode="packed" heights="160" style="text-align:left">
+Aldarin civilians concept art.png|Concept art of Aldarin citizens, by [[Mod Jerv]].
+Aldarin workers concept art.png|Concept art of Aldarin workers, by Mod Jerv.
+Aldarin wallkit and decor concept art.png|Concept art of various wallkits and objects, by Mod Jerv.
+Aldarin house portal concept art.png|Concept art of the house portal in Aldarin, by [[Mod Grub]].
+</gallery>
+
+==Trivia==
+*The mysterious nest atop the windmill is likely a reference to the trope in {{WP|FromSoftware}} games (such as ''Dark Souls''), where players can often trade odd items with birdlike NPCs by dropping them into nests and reloading the area.
+
+{{Aldarin}}
+{{Varlamore}}
+
+[[Category:Locations]]

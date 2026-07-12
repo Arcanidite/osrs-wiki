@@ -1,0 +1,140 @@
+==Using fairy rings==
+[[File:Fairy rings selection.png|thumb|300px|The fairy ring code selection screen.]]
+To use the fairy rings, players must complete the following quests:
+*[[The Restless Ghost]]
+*[[Priest in Peril]]
+*[[Nature Spirit]]
+*[[Lost City]]
+*[[Fairytale I - Growing Pains]]
+*Partially completed [[Fairytale II - Cure a Queen]] (up until you're "granted permission" to use them)
+Players can quickly access the fairy ring network with any of the following teleports:
+{| class="wikitable sortable" style="text-align: left;"
+|-
+!Name
+!Fairy Ring
+!Distance, tiles
+!Directions to fairy ring
+|-
+|{{plink|Teleport to House}} ([[superior garden]])
+|{{Fairycode|diq}}
+|5
+|[[Superior garden]] in the [[player-owned house]] ([[Fairy ring (construction)|Fairy ring]] requires 85 [[Construction]] to build)
+|-
+|{{plink|Quest point cape}}
+|{{Fairycode|blr}}
+|12
+|Directly East of the [[Legends' Guild|Legend's Guild]]
+|-
+|{{plink|Slayer ring}} ([[Fremennik Slayer Dungeon]])
+| rowspan="2" |{{Fairycode|ajr}}
+| rowspan="2" |16
+| rowspan="2" |West of the [[Fremennik Slayer Dungeon]] entrance 
+|-
+|{{plink|Slayer ring (eternal)}} ([[Fremennik Slayer Dungeon]])
+|-
+|{{plink|Achievement diary cape}} ([[Le-sabrè]])
+| rowspan="2" |{{Fairycode|cks}}
+|20
+| West, next to the [[Mushroom patch]]
+|-
+|{{plink|Salve Graveyard Teleport}}
+|22
+|North-East, next to the [[Mushroom patch]]
+|-
+|{{plink|Arceuus Library Teleport}}
+|{{Fairycode|cis}}
+|34
+|North, guarded by [[Trossa]]
+|-
+|{{plink|Necklace of passage}} ([[Wizards' Tower]])
+|{{Fairycode|dis}}
+|39
+|South, behind the [[Wizards' Tower]]
+|-
+|{{plink|Battlefront Teleport}}
+|{{Fairycode|cir}}
+|42
+|West, at the base of [[Mount Karuulm]]
+|-
+|{{plink|Royal seed pod}}
+|{{Fairycode|aks}}
+|46 <small>(44 to 48)</small>
+|Top-floor option on the ladder <small>(2 ticks → 4 tiles)</small> + previous-destination option on [[Captain Errdo]] to [[Lemantolly Undri]] <small>(4-6 tiles + 5 ticks → 10 tiles to use the [[Gnome glider|glider]])</small> + run south-east to the fairy ring <small>(26-28 tiles)</small>. Requires completion of [[One Small Favour]].
+|-
+|{{plink|Ring of wealth}} ([[Miscellania]]) 
+|{{Fairycode|cip}}
+|48
+|North-West, between the Castle and [[Coal rocks]]
+|-
+|{{plinkp|Minigame Teleport}} [[Guardians of the Rift]] [[Minigame Teleport]]
+|{{Fairycode|dis}}
+|50
+|Leave the Rift through the portal to enter the [[Wizards' Tower]] basement. Leave the basement via the North ladder, exit the Wizards' Tower, and head south
+|-
+|{{plink|Ardougne cloak 1}}
+|{{Fairycode|djp}}
+|51 <small>(49 to 54)</small>
+| East, past the [[Tower of Life (building)|Tower of Life]]
+|-
+|{{plink|Basic quetzal whistle}} 
+| rowspan="3" |{{Fairycode|ais}}
+| rowspan="3" |52
+| rowspan="3" |Travel via [[Quetzal Transport System|Quetzal]] to [[Auburnvale]], head South across the bridge. Requires completion of [[Twilight's Promise]].
+|-
+|{{plink|Enhanced quetzal whistle}}
+|-
+|{{plink|Perfected quetzal whistle}}
+|-
+|{{plink|Kharyrll Teleport}}
+|{{Fairycode|cks}}
+|56
+|West, next to the [[Mushroom patch]]
+|-
+| {{plink|Watchtower Teleport}} ([[Yanille]])
+| rowspan="2" |{{Fairycode|ciq}}
+| rowspan="2" |60
+| rowspan="2" |Leave [[Yanille]] through the West gates, then head North
+|-
+|{{plink|Teleport to House}} ([[Yanille]])
+|-
+| {{plink|Amulet of the eye}} 
+|{{Fairycode|dis}} 
+|70
+| Leave the Rift through the portal to enter the Wizards' Tower basement. Leave the basement via the North ladder, exit the Wizards' Tower, and head south
+|-
+|-
+| {{plink|Rada's blessing 1}} ([[Kourend Woodland]])
+|{{Fairycode|cis}} 
+|77 <small>(72 to 82)</small>
+| Run to the Minecart station to the north-east, travel to Arceuus, and then head north
+|-
+|{{plink|Ring of wealth}} ([[Grand Exchange]])
+| rowspan="2" |{{Fairycode|dkr}}
+| rowspan="2" |82
+| rowspan="2" | North-West to the 21 [[Agility]] [[Shortcuts|shortcut]], then head south.
+Alternatively if the Agility requirement is not met, head south-west, leaving the Grand Exchange, following the wall, then north through a fence
+|-
+|{{plink|Varrock Teleport}} ([[Grand Exchange]])
+|-
+|{{plink|Amulet of glory|pic=Amulet of glory(4)}} ([[Edgeville]])
+|{{Fairycode|dkr}}
+|90
+|East, across the bridge spanning the river, then head south
+|-
+|{{plink|Ectophial}}
+|{{Fairycode|alq}} 
+|92 
+|South-west, leaving the [[Ectofuntus]] and past the [[Port Phasmatys]] gates, then head directly West
+|-
+|{{plink|Skull sceptre}} ([[Barbarian Village]])
+|{{Fairycode|dkr}}
+|100
+|East, across the bridge spanning the river, then head North
+|-
+| {{plink|Skills necklace}} ([[Farming Guild]])
+| rowspan="2" | {{Fairycode|cir}} 
+| rowspan="2" |106 (26+spirit tree teleport)
+| rowspan="2" |Leave the [[Farming Guild]] and head North-East to the base of [[Mount Karuulm]] or use the [[Spirit tree]] in the north of the guild if you have a fairy ring or [[Spirit tree & fairy ring]] at your house
+|-
+|{{plink|Farming cape}}
+|}
