@@ -1,0 +1,20 @@
+===The spymaster's second task===
+'''Items required''': ''[[Silly jester hat]]; [[Silly jester top]]; [[Silly jester tights]]; [[Silly jester boots]]; [[Yak-hide armour (top)]] and [[Yak-hide armour (legs)]] OR 15 [[coins]], [[needle]], one or more [[thread]], and three [[yak hide]]; [[Neitiznot shield]] OR two [[Arctic pine logs]], one [[bronze nail]], a [[hammer]], and [[rope]].''
+{{Checklist|
+*Quick travel to [[Neitiznot]] via [[Maria]].
+*Speak with Spymaster [[Slug Hemligssen]] again.
+*Equip only the jester outfit again.
+*Speak with [[Mawnis]] to induce another Jester cutscene.
+*Speak with Slug once again. {{Chat option|1Yes, I am.|2They are in a secluded bay, near Etceteria.|1They will be given some potions.|3I have been helping Neitiznot.}}
+*Ferry back to [[Rellekka]] and then to [[Jatizso]].
+*Speak to [[King Gjuki Sorvott IV]] to obtain the [[royal decree]] (1 inv spot needed, otherwise you have to repeat dialogue).
+*Travel back to Neitiznot and speak with Mawnis. (Don't forget to take off the jester outfit)
+*Buy [[yak-hide armour]] (top and leggings), along with the [[Neitiznot shield]] from the Grand Exchange, or for Ironmen:
+**Kill three [[yak]]s and take their hides.
+**Have them cured by [[Thakkrad Sigmundson]] for 5gp each.
+**Use thread and needle on the hides to craft a body and leggings.
+*Speak with Mawnis, who will instruct you to craft a shield. For Ironmen:
+**Grab two [[Arctic pine logs]], one [[bronze nail]], a hammer, and a rope.
+**Use these items on the stump in the middle of the village.
+*Speak with Mawnis again.
+}}

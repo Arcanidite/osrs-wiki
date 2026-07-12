@@ -1,0 +1,54 @@
+==Details==
+{{Quest details
+|start = Talk to [[Veliaf Hurtz]] outside the church in [[Slepe]].
+|startmap = 3729,3319
+|difficulty = Master
+|description = A darkness has fallen over Morytania. The Myreque freedom fighters have achieved their first major victory over the vampyres with the death of [[Ranis Drakan]]. However, their newly found hope is unlikely to last. After many years of absence, [[Lord Lowerniel Vergidiyad Drakan|Lord Lowerniel Drakan]], the vampyre overlord of Morytania, has finally emerged from his castle. He has but one goal. To avenge his brother and eradicate the Myreque once and for all.
+|length = Long
+|requirements = *Completion of the following quests:
+**[[Vampyre Slayer]]
+**[[A Taste of Hope]]
+***[[Darkness of Hallowvale]]
+****[[In Aid of the Myreque]]
+*****[[In Search of the Myreque]]
+******[[Nature Spirit]]
+*******[[Priest in Peril]]
+*******[[The Restless Ghost]]
+*{{SCP|Woodcutting|62|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Fletching|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Crafting|56|link=yes}} {{Boostable|no}}  {{Questreqstart|yes}}
+*{{SCP|Agility|52|link=yes}} {{Boostable|no}}  {{Questreqstart|yes}}
+*{{SCP|Attack|50|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Slayer|50|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Magic|49|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+|items = *Any [[axe]]
+*[[Vyrewatch outfit]] ([[Vyrewatch top|top]], [[Vyrewatch legs|legs]], and [[Vyrewatch shoes|shoes]]) or 1,950 coins to purchase it from [[Trader Sven's Black-market Goods]] (can be obtained during quest)
+*[[Ivandis flail]]
+*[[Ruby]]
+*[[Knife]] (can be obtained during quest)
+*[[Chisel]]
+*Runes for [[Lvl-3 Enchant]] (1 [[cosmic rune]], 5 [[fire rune]]s) or an [[enchant ruby or topaz]] tablet
+|kills = *[[Kroy]] (level 133)
+*[[Nail beast]] (level 143 & 67 twice)
+*[[Vampyre Juvinate#Level 119|Vampyre Juvinate]] (level 119) twice
+*[[Mutated Bloodveld]] (level 123)
+*[[Damien Leucurte]] (level 204)
+*[[Vampyre Juvenile]] (level 122)
+*[[Vanstrom Klause]] (level 459)
+|recommended = * {{SCP|Combat|95|link=yes}}
+* Teleport to Haunted Woods (fairy ring {{Fairycode|ALQ}}, Fenkenstrain's Castle Teleport, Kharyrll Teleport, or [[ectophial]] will get you close).
+* [[Drakan's medallion]] (optionally, with a [[Slepey tablet]] used on it) or 10,000 coins to pay [[Andras]] for a trip to [[Slepe]].
+* Any [[pickaxe]] if using the [[Daeyalt essence mine]] as a shortcut (20 [[Mining]] required, bronze pickaxe obtainable during quest)
+* A [[hammer]] OR any [[axe]] which you have the [[Attack]] level to wield (bronze axe obtainable during quest).
+* [[Stamina potion]]s or [[energy potion]]s
+* [[Antipoison]] or [[Superantipoison]] potions
+* [[Morytania legs 3]] ([[Hard Morytania Diary|Hard Diary]])
+* Combat equipment
+* [[Efaritay's aid]] for use against Vanstrom
+* Food
+* [[Prayer Potion]]
+|leagueRegion = <poem>
+{{LeagueRegion|Morytania}} — location requirement
+</poem>
+Players attempting to start the quest may find that [[Veliaf Hurtz]] is not present in [[Slepe]]. If this happens, he must first be interacted with in the [[Burgh de Rott]] basement, and he will then appear in Slepe.
+}}

@@ -1,0 +1,37 @@
+==Details==
+{{Quest details
+|start = Talk to an [[examiner]] in the [[Exam Centre]] south of the [[Digsite]].
+|startmap = 3361,3340
+|difficulty = Intermediate
+|description = Feeling uneducated? Desperate for buried treasure?
+
+"There's gold in them there hills" (well stream actually) as well as many other items that can be found at the digsite. Join the students in their attempt to be a qualified archaeologist, and become experienced in making the earth move!
+
+Have you got what it takes to unearth the hidden altar to one of RuneScape's lesser-known Gods?
+|length = Medium
+|requirements = * {{SCP|Agility|10|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Herblore|10|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Thieving|25|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = * [[Pestle and mortar]]
+* [[Vial]]
+* [[Tinderbox]]
+* [[Cup of tea]] (can be stolen from the [[Varrock]] [[Ye Olde Tea Shoppe|tea stall]]) or [[nettle tea]] or [[cup of tea (nettle)]]
+* 2 [[rope]]s
+* [[Opal]] or uncut opal (small chance to acquire while panning for a quest item)
+* [[Charcoal]] (obtainable during the quest, but may take some time)
+* [[Specimen brush]] (obtained during the quest)
+* [[Specimen jar]] (obtained during the quest)
+* [[Panning tray]] (obtained during the quest)
+* [[Trowel]] (obtained during the quest)
+|recommended =
+*[[Weight-reducing clothing]] and [[Stamina potion|stamina]] or [[energy potion]]s
+* Fast travel to several locations:
+** [[Exam Centre]] south of [[The Digsite]] to start the quest, plus 1 additional trip - [[Digsite Teleport]], [[gnome glider]], or [[Varrock Teleport]]
+** [[Varrock museum]] (1-2 trips, extra trip if claiming post quest rewards) - [[Varrock Teleport]], [[Chronicle]], [[ring of wealth]] to [[Grand Exchange]], or [[skills necklace]] to [[Cooking Guild]]
+** [[The Digsite]] (2-4 trips from the Exam Centre, this saves minimal time) - [[Digsite Teleport]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

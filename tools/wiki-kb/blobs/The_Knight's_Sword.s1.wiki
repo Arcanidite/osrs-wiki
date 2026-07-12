@@ -1,0 +1,34 @@
+==Details==
+{{Quest details
+|start = Talk to the [[squire]] in the courtyard of the [[White Knights' Castle]] in [[Falador]].
+|startmap = 2977,3342
+|difficulty = Intermediate
+|description = Sir Vyvin's squire is in trouble. He has accidentally lost Sir Vyvin's ceremonial sword. Help him find a replacement without Sir Vyvin finding out.
+|length = Short
+|requirements = * {{SCP|Mining|10|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to run from [[combat level|level]] 57 [[ice warrior]]s and level 53 [[ice giant]]s could help.
+|items = * [[Redberry pie]] (not [[half a redberry pie]])
+* 2 or 4 [[iron bar]]s (4 if you want your own [[blurite sword]])
+*1-3 [[Blurite ore]] (obtained during the quest) - optionally an additional ore each for your own blurite sword and the Falador easy diary ''(Members only)''
+* Any [[pickaxe]] (one spawns in Rimmington)
+|recommended = * {{SCP|Combat|20|link=yes}}
+* [[Armour]] and some [[food]] for aggressive enemies near the [[blurite rocks]]
+* Fast travel to several locations:
+**[[Falador]] to start the quest plus 2 additional trips - [[Falador Teleport]], [[Ring of wealth]] ''([[Members only]])''
+**[[Varrock]] (1 trip) - [[Varrock Teleport]], [[Chronicle]], [[Skills necklace]] to [[Cooks' Guild]] ''([[Members only]])'' or [[Ring of wealth]] to [[Grand Exchange]] ''(Members only)''
+**[[Mudskipper Point]] (2 trips) - [[fairy ring]] {{fairycode|aiq}} ''(Members only)'', [[Teleport to House]] (Rimmington) ''(Members only)'', [[Rat Pits]] minigame teleport ''(Members only)'', or [[Falador Teleport]]
+|ironman = 
+*A method to obtain iron bars:
+**{{SCP|Mining|15}} [[Mining]] and {{SCP|Smithing|15}} [[Smithing]] if smelting [[iron ore]]
+**Spawn in level 18 [[Wilderness]] north-west of the [[Ferox Enclave]], next to the bears west of the Graveyard of Shadows. Accessible via {{SCP|Minigame|Clan Wars}} [[Minigame Teleport]]
+**1/42.67 drop from [[dwarf|dwarves]] ({{SCP|Combat|10}}) in the mines under Falador
+**''(Members only)'' Spawn in [[Thurid's Brain Buckets]] on the [[Sunset Coast]] in [[Varlamore]] (requires {{SCP|Quest|[[Children of the Sun]]}})
+**''(Members only)'' 1/34.42 drop from sorting [[small salvage]] with {{SCP|Sailing|15|link=yes}}
+*A method to obtain a redberry pie:
+**{{SCP|Cooking|10}} [[Cooking]] to cook one. A pie dish can be found in the [[Varrock Palace]] kitchen, and [[redberries]] can be picked just west of the [[South-east Varrock mine]]
+**''(Members only)'' Purchased from [[Romily Weaklax]] in the [[Cooks' Guild]] with {{SCP|Cooking|32|link=yes}} and a [[chef's hat]]
+**''(Members only)'' Partial completion of [[Perilous Moons]] to purchase a Redberry pie from [[Yarnio]]
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

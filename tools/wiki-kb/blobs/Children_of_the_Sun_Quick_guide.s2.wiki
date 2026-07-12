@@ -1,0 +1,18 @@
+==Walkthrough==
+[[File:Children of the Sun - suspicious guard path.png|thumb|right|The path to take when following the guard.]]
+{{Checklist|
+* Talk to either [[Noah]] or [[Alina]] east of [[Varrock Square]]. Ask when the delegation will arrive.{{Chat option|1 Yes.|3 When will this delegation arrive?}}
+* Follow the guard without being seen by him:
+** Run inside [[Lowe's Archery Emporium]] and wait. 
+** Hide behind the northern wall of the building south of the archery shop.
+** Walk to the south-eastern corner of the building.
+** Hide behind the western wall of [[Old Man Yarlo]]'s house.
+** Hide either inside Old Man Yarlo's house or near the building south of [[Aubury's Rune Shop]].
+* Return to Varrock Square and talk to the [[Sergeant Tobyn]] by the castle wall.
+* Identify the bandits posing as guards. Click on these guards to 'mark' them. They are in the following locations:
+** The first guard can be found directly outside [[Aris]]'s tent. He is standing with his hands on his hips with no weapon.
+** The second guard is found near [[Benny]] and his news stand. She is not wearing a helmet.
+** The third guard can be found directly outside Lowe's Archery Emporium on the east path. He is leaning on the wall with his arms crossed, without a weapon.
+** The fourth guard can be found further along the east path between the archery shop and [[Varrock east bank]]. He wields a mace instead of a sword.
+* Talk to the sergeant again.
+}}

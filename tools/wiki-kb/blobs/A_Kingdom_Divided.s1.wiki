@@ -1,0 +1,56 @@
+==Details==
+{{Quest details
+|start = Talk to [[Martin Holt]] at the entrance to [[Kourend Castle]] in [[Kingstown]].
+|startmap = 1664,3672
+|difficulty = Experienced
+|description = Great Kourend: a land of wealth, comfort and security. Across its five cities, the people of this Kingdom work to bring peace and prosperity. However, all is not as it seems. Beneath this delicate façade lies an uncomfortable truth: the kingdom of Great Kourend is A Kingdom Divided.
+
+Since the death of the last king, [[Great Kourend]] has been ruled by the [[Kourend Council]]. Under the watchful gaze of the Council, Kourend has enjoyed a golden age of progression. But not all of its citizens are happy, and, spurred by the recent arrest of Councillor [[Sophia Hughes]], allegations of corruption are growing.
+
+However, the political games of the Council may be the least of Kourend's concerns. A darker power is gathering in the Kingdom - one that could change the face of Gielinor forever...
+|length = Long
+|requirements = *Completion of the following quests:
+**[[The Depths of Despair]]
+**[[The Queen of Thieves]]
+**[[The Ascent of Arceuus]]
+**[[The Forsaken Tower]]
+**[[Tale of the Righteous]]
+**The above quests all require the following quests to be completed:
+***[[Client of Kourend]]
+****[[X Marks the Spot]]
+*{{SCP|Agility|54|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Thieving|52|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Woodcutting|52|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Herblore|50|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Mining|42|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Crafting|38|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Magic|35|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = * Normal spellbook, and runes to cast a [[Fire spells|fire spell]] ([[fire bolt]] or better)
+* Any [[axe]]
+* A [[defence potion]] (3 or 4 doses)
+* [[Volcanic sulphur]]
+* [[Molten glass]]
+* A [[dark essence block]] or a [[pickaxe]] and [[chisel]] (the latter is found at the mine) to obtain one
+|kills = * [[Judge of Yama (A Kingdom Divided)|Judge of Yama]] (Level 168)
+* 2 [[Assassin (A Kingdom Divided)|Assassins]] (Level 132)
+* [[Lizardman brute]] (Level 75)
+* [[Xamphur]] (level 239)
+* [[Barbarian Warlord]] (Level 91)
+|recommended = * {{SCP|Combat|70|link=yes}}
+* {{SCP|Prayer|43|link=yes}} for [[overhead]] protection [[Prayer]]s
+* [[Melee]] / [[Ranged]] equipment (weapons/armour/potions/food) to defeat a level 239 enemy, and a level 168 creature that can only be damaged with Melee.
+* [[Stamina potion|Stamina]] or [[energy potion]]s
+* [[Antipoison]]
+* [[Kharedst's memoirs]]
+* [[Xeric's talisman]] or access to it
+* [[Games necklace]] to teleport to Wintertodt
+* [[Skills necklace]] to teleport to Woodcutting Guild
+* [[Rada's blessing|Rada's blessing 3+]] to teleport to Mount Karuulm, or [[Rada's blessing|Rada's blessing 1+]] to teleport to Kourend Woodland
+* Access to [[fairy rings]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kourend}} {{okay}} will auto-complete the quest
+The [[book of the dead]] and the two experience lamps can be claimed by speaking with [[Commander Fullore]].
+* Note: It may be ideal to not claim this too early as the lamps require a skill to be 40+ to be used in. If the book is not needed early on, it may be best in one's interest to hold off until they have a preferred skill or two at 40+, and/or have their preferred Leagues XP multiplier. 
+* If inventory space is an issue, the lamps '''can be''' safely destroyed and claimed again at a later time.
+</poem>
+}}

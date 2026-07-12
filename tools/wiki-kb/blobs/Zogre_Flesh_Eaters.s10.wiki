@@ -1,0 +1,18 @@
+==Rewards==
+{{Quest rewards
+|name = Zogre Flesh Eaters
+|image = [[File:Zogre Flesh Eaters reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*3 [[ourg bones]]
+*2 [[zogre bones]]
+*{{SCP|Fletching|2,000|link=yes}} experience
+*{{SCP|Ranged|2,000|link=yes}} experience
+*{{SCP|Herblore|2,000|link=yes}} experience
+*Ability to make [[Relicym's balm]]
+*Ability to fletch [[comp ogre bow]]s and [[brutal arrow]]s
+*Ability to wear [[inoculation bracelet]]s
+*Give a 2-, 3-, or 4-dose [[Relicym's balm]] to Uglug to gain access to [[~ Uglug's stuffsies ~]]
+}}
+
+'''Bonus:''' Take the [[black prism]] to either [[Zavistic Rarve]] in the [[Wizards' Guild]] for {{NoCoins|2000|c}} or to [[Yanni Salika]] in [[Shilo Village (location)|Shilo Village]] for {{NoCoins|5000|c}}.

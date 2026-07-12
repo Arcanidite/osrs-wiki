@@ -1,0 +1,37 @@
+==Details==
+{{Quest details
+|start = Talk to [[Jamila]] at her stall in [[Sophanem]].
+|startmap = 3309,2779
+|difficulty = Master
+|description = When Sophanem was beset by a series of plagues, the gates to the golden city of Menaphos quickly closed. The city has been locked down ever since, with no one allowed to leave or enter. However, rumours have escaped of strange happenings inside Menaphos and there are stories of citizens mysteriously disappearing. These odd happenings need to be investigated, but few are willing to do so. Maisa, a spy from Al Kharid, has grown tired of inaction. She is determined to solve this mystery herself, but she won't be able to do it alone... are you up for the challenge?
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[Contact!]]
+***[[Prince Ali Rescue]]
+***[[Icthlarin's Little Helper]]
+****[[Gertrude's Cat]]
+*{{SCP|Agility|62|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Crafting|55|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Firemaking|55|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|recommended = *{{SCP|Combat|85|link=yes}}
+* Protection against the [[desert heat]], such as [[waterskin]]s or [[Desert amulet 4]]
+* Some form of [[antipoison]]
+* [[Dramen staff]] to use fairy ring {{fairycode|AKP}}
+* A [[pharaoh's sceptre]] for a direct teleport to the necropolis (Once you arrive in the [[necropolis]], use the Commune option on the [[Obelisk (Necropolis)|obelisk]] by the [[Necropolis mine|mine]])
+* Food
+* Both melee and ranged combat gear
+* [[Stamina potion]]s are helpful in the dungeon
+* A method of teleporting to [[Nardah]] (e.g: [[Nardah teleport]] or [[Desert amulet|Desert amulet 2+]])
+|items = * [[Coal]]
+* [[Iron bar]]
+* [[Tinderbox]] (obtainable during quest)
+* [[Spade]] (obtainable during quest) 
+* Any cooked or raw meat (fish, raw bird meat, raw yak meat, raw pyre fox, raw chompy, and raw t-bone steak will not work; purchasable from shop during quest)
+|kills = * [[Head Menaphite Guard]] (level 174) without the use of [[protection prayers]]
+* Two [[Scarab Mage]]s (level 119)
+* The [[Champion of Scabaras]] (level 379) 
+* [[Menaphite Akh]] (level 351)
+|leagueRegion = <poem>
+{{LeagueRegion|Desert}} — location requirement
+</poem>
+}}

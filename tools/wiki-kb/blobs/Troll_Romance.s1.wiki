@@ -1,0 +1,46 @@
+==Details==
+{{Quest details
+|start = Talk to [[Ug]] at the [[Troll Stronghold (location)|Troll Stronghold]].
+|startmap = 2827,10065,plane:1
+|difficulty = Intermediate
+|description = Ug loves Aga, but Aga is together with Arrg. Since Arrg is a lot stronger than Ug, Ug can't follow the regular mating ritual, which involves ripping the opponent into pieces. Will you be able to find out what will impress the troll female more than a display of violence? Will you survive the journey to help a lonely troll find love?
+|length = Short
+|requirements = * {{SCP|Agility|28|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* Completion of the following quests:
+** [[Troll Stronghold]]
+*** [[Death Plateau]]
+* The ability to defeat a level 113 [[Arrg|troll]]
+|items = * An [[iron bar]]
+* [[Maple logs|Maple]] or [[yew logs]]
+* [[Rope]]
+* [[Climbing boots]] (not needed if using [[Trollheim Teleport]])
+* [[Wax]] (can be made ahead of time)
+** A [[bucket of wax]] (use [[insect repellent]] on a beehive followed by a [[bucket]])
+** A [[cake tin]]
+** [[Swamp tar]]
+|recommended = * {{SCP|Combat|50|link=yes}}
+* [[Teleportation]] [[runes]] to [[Trollheim]] if completed [[Eadgar's Ruse]], or a [[Ghommal's hilt 1]] for 2 daily Trollheim teleports
+* A [[Games necklace]]
+* A [[Slayer ring]]
+* A [[Dramen staff]] or [[Lunar staff]] and partial completion of [[Fairytale II - Cure a Queen]] for access to [[Fairy rings]]
+* [[Prayer potion]]s and decent [[food]] for the fight with [[Arrg]]
+* A [[Gem bag]] to store the reward
+|kills = [[Arrg]] ''(level 113)'' ([[safespot]]table; difficult to reach) '''Note:''' This fight is not a safe death.
+|ironman = * {{SCP|Woodcutting|45|link=yes}} {{Boostable|yes}} to cut a maple log
+** '''OR''' Enough combat stats and supplies to get a 1/128 drop of yew logs from [[Swamp Crab]]s (requires {{SCP|Quest|[[Priest in Peril]]}}).
+** '''OR''' Enough supply of [[Serum 208]] to get a 1/128 drop of maple logs from curing [[Afflicted]] (requires {{SCP|Quest|[[Shades of Mort'ton]]}}).
+** '''OR''' [[Throne of Miscellania]] completed to obtain maple logs from [[managing Miscellania]].
+** '''OR''' {{SCP|Firemaking|50|link=yes}} {{Boostable|No}} to get a maple/yew log from [[Reward Cart]] via [[Wintertodt]].
+** '''OR''' Completing [[Hunters' Rumours]] with {{SCP|Hunter|46|link=yes}} {{Boostable|no}} to receive [[Hunters' loot sack]] (drop chance based on {{SCP|Woodcutting}} level)
+** '''OR''' High enough combat stats to kill [[Giant Mole]] for a 1/12.8 drop of yew logs.
+*A method to obtain an iron bar:
+**{{SCP|Mining|15}} [[Mining]] and {{SCP|Smithing|15}} [[Smithing]] if smelting [[iron ore]]
+**Spawn in [[Thurid's Brain Buckets]] on the [[Sunset Coast]] in [[Varlamore]] (requires {{SCP|Quest|[[Children of the Sun]]}})
+**Spawn in level 18 [[Wilderness]] north-west of the [[Ferox Enclave]], next to the bears west of the Graveyard of Shadows. Accessible via {{SCP|Minigame|Clan Wars}} [[grouping]] teleport
+**1/42.67 drop from [[dwarf|dwarves]] ({{SCP|Combat|10}}) in the mines under Falador
+**1/34.42 drop from sorting [[small salvage]] with {{SCP|Sailing|15|link=yes}}
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+{{LeagueRegion|Kandarin}} — location requirement (for a [[bucket of wax]])
+</poem>
+}}

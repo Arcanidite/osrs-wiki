@@ -1,0 +1,10 @@
+====Fix the pipe machine====
+[[File:Tower of Life Pipe Puzzle.png|thumb|250px|The completed puzzle.]]
+{{Checklist|
+*Take the following supplies:
+**4 [[Pipe (Tower of Life)|Pipes]]
+**5 [[Pipe ring]]s
+**6 [[Rivets]] (these are stackable)
+*Head up two floors.
+*Fix the [[pipe machine]] on the south side of the room. You should see a message that says "The machine is working!" when you have completed the puzzle.
+}}

@@ -1,0 +1,7 @@
+===Mage of Zamorak===
+'''''Items required: 20 unnoted [[rune essence]] or [[pure essence]] (Must all be the same type), [[Commorb]].'''''
+{{Checklist|
+*Talk to the [[Mage of Zamorak]] {{Chat option|1Solus Dellagar}} (or {{Chat option|2}} if [[Temple of the Eye]] is completed.) in [[Varrock]] at the  [[Varrock#Altars_of_Zamorak|Altar of Chaos]].
+**If you have not yet started the [[Enter the Abyss]] miniquest, you must first talk to him in the Wilderness north-east of [[Edgeville]]. He will then tell you to talk to him in [[Varrock]].
+*Speak to him again to give him the 20 rune or pure essence. {{Chat option|1Solus Dellagar}}
+}}

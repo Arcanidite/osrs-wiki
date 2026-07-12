@@ -1,0 +1,28 @@
+==Rewards==
+{{Quest rewards
+|name = Dragon Slayer II
+|image = [[File:Dragon Slayer II reward scroll.png|center]]
+|qp = 5
+|rewards = 
+*{{SCP|Smithing|80,000|link=yes}} [[experience]]
+*{{SCP|Mining|60,000|link=yes}} experience
+*{{SCP|Agility|50,000|link=yes}} experience
+*{{SCP|Thieving|50,000|link=yes}} experience
+*Ability to speak to cats without the [[Catspeak amulet]]
+*Access to the [[Myths' Guild]]
+**Access to the pettable [[Dog (Myths' Guild)|dog]]
+**Ability to make [[super antifire potion]]s by speaking to [[Primula]]
+**4x 25,000 experience in [[Magic]], [[Ranged]], [[Strength]], [[Attack]], [[Defence]], or [[Hitpoints]] by speaking to [[Ellen]]
+**Access to [[Fountain of Uhld]] where dragonstone jewellery (excluding the [[ring of wealth]]) can be recharged
+**Access to the [[Pool of Dreams]] where players can choose to fight [[Galvek]] again or rewatch [[cutscene]]s from the quest
+**Access to the [[Wrath Altar]]
+**Access to the shop to buy the [[mythical cape]]
+*Access to [[adamant dragon|adamant]] and [[rune dragon]]s in the [[Lithkren Vault]]
+*Access to a stronger version of [[Vorkath]] on [[Ungael]]
+*Ability to reforge the [[dragon platebody]] and [[dragon kiteshield|kiteshield]]
+*Ability to have a [[Rune dragon (Construction)|rune dragon]] as a [[Treasure Room]] guardian (requiring 99 [[Construction]] and 25,000,000 [[coins]])
+*Ability to create an [[Ava's assembler]] by bringing [[Vorkath's head]], 75 [[Mithril arrow]]s, and 4,999 coins (or [[Ava's accumulator]]) to [[Ava]] in [[Draynor Manor]]
+*Ability to craft [[Ferocious gloves]] from [[Hydra leather]] in the [[Lithkren Vault]] (requires a hammer)
+*Ability to construct [[Mythical cape (mounted)]] in your POH
+*Ability to go back through the [[ancient doors]] on [[Lithkren]] and use your [[Digsite pendant]] on the Strange Machine north of the dragons. This will allow you to teleport there.
+*[[Locator orb]]}}

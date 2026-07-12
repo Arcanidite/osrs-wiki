@@ -1,0 +1,36 @@
+==Details==
+{{Quest details
+|start = Talk to [[Zuma]] or [[Attala]] at the entrance to [[Cam Torum]].
+|startmap = 1436,3122
+|difficulty = Master
+|description = Beneath the steep and jagged cliffs of Ralos' Rise sits the dwarven town of Cam Torum. Its strong fortifications have kept it safe through all of Varlamore's history... but now the inhabitants face a new challenge.<br><br>Lurking below the surface is an ancient temple, built to contain powerful entities. Now, the earth has been disturbed – and the dwarves need your help to keep these strange beings contained!
+|length = Medium
+|requirements = * {{SCP|Slayer|48|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Hunter|20|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Fishing|20|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Runecraft|20|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Construction|10|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+** [[Twilight's Promise]]
+*** [[Children of the Sun]]
+|items = * [[Knife]] (obtainable during quest)
+* [[Big fishing net]] (obtainable during quest)
+* [[Rope]] (obtainable during quest)
+* [[Pestle and mortar]] (obtainable during quest)
+* Combat equipment for multiple [[PvM]] encounters.
+|recommended = * {{SCP|Combat|75|link=yes}}
+* 60+ {{SCP|Attack|link=yes}}, {{SCP|Strength|link=yes}}, and {{SCP|Defence|link=yes}}
+* {{SCP|Hunter|50|link=yes}}/{{SCP|Cooking|60|link=yes}} for [[Cooked moss lizard]]/[[Cooked bream]] health scaling
+* {{SCP|Herblore|55|link=yes}} for [[Moonlight potion]] scaling
+* Some form of energy regeneration
+* [[Antipoison]], if below {{SCP|Combat|100}}, for aggressive [[Grimy lizard]]s 
+* 5 empty inventory spaces (for building supplies)
+* 10 [[quetzal feed]], 4 [[soft clay]], 3 [[limestone brick]]s (to build a [[landing site]] for the [[Quetzal Transport System]])
+|kills = * [[Sulphur Nagua (Perilous Moons)|Sulphur Nagua]] (level 98)
+* [[Blue Moon]] (level 329)
+* [[Blood Moon]] (level 329)
+* [[Eclipse Moon]] (level 329)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

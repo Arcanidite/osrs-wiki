@@ -1,0 +1,23 @@
+==Details==
+{{Quest details
+|start = Talk to [[Captain Tock]] at the crossroads north of [[Port Sarim]].
+|startmap = 3030,3273
+|difficulty = Intermediate
+|description = From the newly revealed town of Corsair Cove, deep in the south of Feldip Hills, the captain of the Corsairs has sailed to Port Sarim seeking help. His crew is sick, and he suspects that a curse has been laid upon them.
+
+If you can unravel the fearful and conflicting tales of ogre relics, vengeful mermaids and demonic possession, maybe you can help his ailing crew overcome The Corsair Curse.
+|length = Short
+|requirements =
+|items =
+* [[Spade]] (obtainable during quest)
+* [[Tinderbox]] (obtainable during quest)
+|recommended = 
+* {{SCP|Combat|20|link=yes}}
+* [[Energy potion]]s or ''([[members]] only)'' [[stamina potion]]s
+* [[Weapon]], [[armour]] and some [[food]]
+|kills = [[Ithoi the Navigator]] (level 35)
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}

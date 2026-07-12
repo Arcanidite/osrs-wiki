@@ -1,0 +1,97 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|The Dig Site}}
+
+==Walkthrough==
+===Starting out===
+{{Checklist|
+*Go to the Exam Centre.
+*Ask an examiner about an exam. {{Chat option|1Can I take an exam?}}
+*Go to the Varrock museum and talk to Curator Haig Halen. He will give you a Sealed letter. {{Chat option|1Have you any interesting news?}}
+**(Optional) Steal a cup of tea from the tea stall if you don't have one already. (This is a Varrock easy diary requirement)
+*Go back to the Exam Centre and talk to an examiner. The chat options do not matter; you will fail the exam regardless.
+}}
+
+===Lost and found===
+{{Map|x=3360|y=3388|height=500|width=300|zoom=2|align=right
+|mtype:media,3357:3372,title:Teddy,img:Teddy.png
+|mtype:media,3369:3378,title:Panning tray,img:Panning tray.png
+|mtype:media,3374:3378,title:Chest (Chemical Powder),img:Chemical powder.png
+|mtype:media,3364:3378,title:Barrel (Nitroglycerin),img:Unidentified liquid.png
+
+|mtype:media,3376:3379,title:Panning guide,img:Panning guide chathead.png
+|mtype:media,3348:3424,title:Student 1 (Teddy),img:Student (Teddy) chathead.png
+|mtype:media,3363:3397,title:Student 2 (Animal Skull),img:Student (Animal skull) chathead.png
+|mtype:media,3370:3416,title:Student 3 (Special cup),img:Student (Special cup) chathead.png
+
+|mtype:polygon, 3348:3332, 3368:3332, 3368:3349, 3357:3349, 3357:3338, 3348:3338, desc:Exam Centre
+|mtype:polygon,3350:3404,3358:3404,3358:3413,3350:3413,desc:Level 3 Dig,stroke:#FF0000,fill:#FF0000
+|mtype:polygon,3370:3437,3370:3438,3371:3438,3371:3442,3373:3442,3373:3443,3375:3443,3375:3442,3377:3442,3377:3440,3378:3440,3378:3437,desc:Level 3 Dig,stroke:#FF0000,fill:#FF0000
+|mtype:dot,3376:3372,3378:3374,3378:3375,3379:3377,3381:3378,3384:3381,stroke:#FFDE21,fill:#FFDE21,desc:Panning point
+|mtype:dot,3370:3428,3353:3417,desc:Winches,stroke:#6B3CAA,fill:#6B3CAA
+|caption=
+{{Legend|#3388ff|caption=[[Exam Centre]]}}
+{{Legend|#FFDE21|caption=[[Panning point]]}}
+{{Legend|#6B3CAA|caption=[[Winch]]}}
+{{Legend|#FF0000|caption=Level 3 Dig}}
+}}
+{{Checklist|
+*North of the exam centre at the hilltop with the blue urn, search the second [[Bush (The Dig Site)|bush]] to the east of the blue urn to find a teddy bear.
+*Take the panning tray.
+*Use the cup of tea on the nearby panning guide.
+*Pan the water at the [[panning point]]s until you find a Special cup (browse through dialogue if stopped – referred to as "Shiny Cup" in dialogue). If you need an opal continue panning until you get one.
+*Steal from the workman near the panning points until you get an animal skull and specimen brush.
+*Run north to the female student with blonde hair and pigtails on the '''north-west end''' of the dig and give her the "teddy" by talking to her twice.
+*Run east to the student with a beard and a reddish-orange shirt and give him the [[Special cup]] by talking to him twice.
+*Run south to the student in a green shirt and give him the [[Animal skull]] by talking to him twice.
+}}
+
+===Exams===
+{{Checklist|
+*Return to an examiner. {{Chat option|1Yes, I certainly am.|1The study of the earth, its contents and history.|3All that have passed the appropriate Earth Sciences exam.|2Gloves and boots to be worn at all times; proper tools must be used.}} – You should receive 'Level 1 Certificate'
+*Talk to all 3 students again.
+*Return to an examiner to take the second exam. {{Chat option|1I am ready for the next exam.|3Samples taken in rough form; kept only in sealed containers.|1Finds must be carefully handled, and gloves worn.|2Always handle with care; strike cleanly on its cleaving point.}} – You should receive 'Level 2 Certificate'
+*Talk to all 3 students – the female student will demand an opal (can be obtained by panning). '''Talk to her two times.'''
+*Return to an examiner for the final exam. {{Chat option|1I am ready for the last exam...|1Samples cleaned, and carried only in specimen jars.|1Brush carefully and slowly using short strokes.|3Handle bones very carefully and keep them amay from other samples.}} – You should receive 'Level 3 Certificate'
+**Save all of your certificates to hand in to [[Curator Haig Halen]] at the [[Varrock Museum]] in exchange for a [[fruit blast]], a required item for [[Recipe for Disaster]] subquest [[Another Cook's Quest]] or a [[chocolate cake]].
+}}
+
+===Helping the expert===
+{{Checklist|
+*Back at the Exam Center, go in the western room and search the cupboards on the north and south walls to get a rock pick and a specimen jar, respectively.
+*If you haven't already, steal a specimen brush from the [[Digsite workman]].
+*Use the trowel on the soil in either level 3 digsite until you obtain an [[ancient talisman]]. '''Note''': This step can take several minutes depending upon luck.
+*Talk to [[Terry Balando]] in the exam centre.
+*Use the invitation on any [[Digsite workman]] '''except''' the one by the western winch.
+*Use a [[rope]] on the western winch, then climb down. 
+*Pick up one of the [[arcenia root]] in the room, search the bricks to the east, then climb back up.
+*Walk north-east to the northern winch, use the rope on the winch, and climb down.
+*Talk to [[Doug Deeping]] about the rocks. {{Chat option|4How could I move a large pile of rocks?}} Climb up the rope.
+}}
+
+===Explosives expert===
+{{Checklist|
+*Walk to the tent to the south (marked with the orange vial), unlock the [[chest (Chemical powder)|chest]] with the [[Chest key (Digsite)|Chest Key]] and search to obtain [[chemical powder]].
+*Use the trowel on the closed barrel to the west of the tent.
+*Use a vial on the barrel to get an [[unidentified liquid]]. If dropped, it will deal 25 non-fatal damage, and destroy the vial requiring you to re-open the barrel and collect more.
+*Grind the [[charcoal]] with your [[pestle and mortar]].
+**If you don't have [[charcoal]], search the tray a few steps north.
+*Return to the exam centre and use the [[chemical powder]] and the [[unidentified liquid]] on [[Terry Balando]] ('''Note:''' make sure you right-click the liquid otherwise you'll empty it).
+*Mix the [[nitroglycerin]] and [[ammonium nitrate]] together to create [[mixed chemicals]], then add [[ground charcoal]] and finally [[arcenia root]] to produce [[chemical compound]].
+*Climb down the western winch.
+*Use the compound on the bricks (not the rocks).
+*Use your [[tinderbox]] on the bricks.
+*Enter the large chamber, take the [[Stone tablet (The Dig Site)|stone tablet]]. Low-levels should be wary of Level 22 [[skeletons]].}}
+
+===Finishing up===
+{{Checklist|
+*Use the tablet on [[Terry Balando]].
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|The Dig Site}}
+
+{{The Dig Site}}

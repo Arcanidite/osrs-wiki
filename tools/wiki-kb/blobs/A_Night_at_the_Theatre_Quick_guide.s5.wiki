@@ -1,0 +1,8 @@
+===Theatre of Blood===
+'''''Note:''''' ''If you have completed the Theatre of Blood before (any mode), you will be given the option to skip this section.''{{Main|Theatre of Blood/Strategies}}
+{{Needed|High-level combat gear of all styles, a method to inflict poison, food, potions, etc. to do a [[Theatre of Blood]] raid if never completed one, optionally more party members if you have trouble alone}}
+{{Checklist|
+*Complete a [[Theatre of Blood]] raid (any mode works, although entry mode is recommended). See [[Theatre of Blood/Strategies|this page]] for details on mechanics of the bosses.
+*Talk to the [[Mysterious Stranger]] again after completing the raid. Watch two cutscenes.
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,12 @@
+===Fighting Slash Bash===
+'''''Note: '''[[Slash Bash]] uses [[Ranged]] and [[Melee]], easiest method is to use Ranged from a [[safespot]] with [[Protect from Missiles]] [[prayer]] turned on. Alternatively, one may use the spell Crumble Undead if they prefer to use magic.''
+{{Checklist|
+*Head back down into [[Jiggig]].
+*Travel west until you reach two sets of doors.
+*Go through both doors and go down the stairs.
+*Follow the chamber to the end and search the [[stand (Zogre Flesh Eaters)|stand]].
+*Kill [[Slash Bash]] and collect the [[Zogre bones]] and [[Ogre artefact]] that he drops.
+*Return and speak to [[Grish]]. {{Chat option|1}}
+**You can now sell the [[Black prism]] to [[Zavistic Rarve]] for 2000 coins or [[Yanni Salika]] for 5000 coins, after the quest.
+*'''Congratulations, quest complete!'''
+}}

@@ -1,0 +1,47 @@
+==Details==
+{{Quest details
+|start = Talk to [[Grish]] in [[Jiggig]], just south of [[Castle Wars]].
+|startmap = 2444,3051
+|difficulty = Intermediate
+|description = Run for your lives...the zombie ogres are here for your flesh! An ogre ceremonial dance area, used to communicate with ancient ogrish ancestors, has been overrun with diseased undead ogres.
+
+How could something like this have happened? And what sort of rewards could an enterprising adventurer gain from exploring the tombs of such a place?
+|length = Short
+|requirements = * Completion of the following quests:
+** [[Big Chompy Bird Hunting]]
+** [[Jungle Potion]]
+*** [[Druidic Ritual]]
+* You must be able to defeat a level 111 enemy.
+* {{SCP|Smithing|4|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* {{SCP|Herblore|8|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* {{SCP|Ranged|30|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+|items = * 5 free inventory spaces are needed to receive items near the start of the quest
+* [[Knife]] (obtainable during quest)
+* A [[comp ogre bow]] (not needed if using [[Crumble Undead]]  in final battle) '''or''':
+** [[Wolf bones]]
+** [[Achey logs]] (obtainable during quest)
+** [[Axe]] of your [[Woodcutting]] level
+** [[Bow string]]
+* [[Brutal arrows]] (not needed if using [[Crumble Undead]] in final battle) '''or''':
+** [[Achey logs]] (obtainable during quest)
+** [[Nails]] (the best you can fletch into brutal arrows)
+** [[Hammer]]
+** [[Feather]]s (4 per 1 brutal arrow)
+|recommended = * {{SCP|Combat|45|link=yes}}
+* {{SCP|Prayer|43|link=yes}} for [[protection prayers]]
+* {{SCP|Strength|10+|link=yes}} (otherwise it is very difficult to open the chest below the stairs in the north-west corner. [[Strength#Temporary boosts|Strength boosts]] are useful here)
+* {{SCP|Fletching|30|link=yes}} {{Boostable|yes}} (is needed if you want to create your own [[Comp ogre bow]] and {{SCP|Fletching|33|link=yes}} is needed to fletch [[Brutal arrows]].)
+* [[Strength potion]] if your strength is low. Opening the ogre tomb seems to require strength and lowers your level each time you fail.
+* [[Vial of water]], [[Rogue's purse]] and [[Snake weed]] if you choose to learn the technique that allows you to mix [[Relicym's balm]] (pretty much necessary if < 89 combat, unless you have sanfew serum).
+* A [[Sanfew serum]] would be helpful to prevent disease and restore stats. [[Relicym's balm]] is a cheap alternative to the Sanfew serum
+* [[Ava's accumulator]] to conserve arrows
+* To save the [[super restore]] obtained during the quest to combat disease, [[combat potion|combat]], [[ranged potion|ranged]], or [[magic potion|magic potion]]s can be used after normal [[restore potion]]s.
+* A [[ring of dueling]] to teleport to [[Castle Wars]] and [[Ferox Enclave]] to restore your stats and cure disease with the pools. 
+* A [[Yanille Teleport]]
+|kills = * [[Slash Bash]] ''(level 111)'' (can be safespotted)
+* [[Zombie (Zogre Flesh Eaters)|Zombie]] ''(level 39)''
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+Unlocking {{LeagueRegion|Morytania}} {{okay}} will auto-complete the quest
+</poem>
+}}

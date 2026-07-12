@@ -1,0 +1,12 @@
+==Details==
+{{Quest details
+|start = Talk to [[Noah]] or [[Alina]] in [[Varrock]] square.
+|startmap = 3225,3428
+|difficulty = Novice
+|description = Children of the Sun begins on the familiar streets of Varrock, where a delegation from Varlamore has arrived to sign a treaty with the rulers of Misthalin. It’s a day for celebration, but something’s amiss… you’d better find out what’s going on!
+|length = Very Short
+|recommended = Fast travel to [[Varrock]] to start the quest - [[Varrock Teleport]] or [[Chronicle]] or [[Ring of wealth]] to [[Grand Exchange]] or [[Skills necklace]] to [[Cooks' Guild]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

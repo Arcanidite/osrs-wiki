@@ -1,0 +1,19 @@
+==Details==
+{{Quest details
+|start = Talk to [[Effigy]] at the [[Tower of Life (building)|Tower of Life]] just east of the [[Ardougne Monastery]].
+|startmap = 2639,3218
+|difficulty = Novice
+|description = The construction of a mysterious tower is almost complete, but the builders working on it have gone on strike. Losing patience, the alchemists that hired them are looking for anybody to help them. When the world of magic and the world of logic combine you can expect dangerous results, but a true adventurer would cherish such things... wouldn't they?
+|length = Medium
+|requirements = *{{SCP|Construction|10|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = *[[Hammer]] (or [[Imcando hammer]])
+*[[Saw]] (or [[crystal saw]])
+*[[Beer]] (must be a regular beer - other beers do not work.)
+|recommended = *At least 11 free [[inventory]] spaces and 4 more if not wearing the [[builder's costume]]
+*One [[raw chicken]] and [[raw swordfish]] to kill a [[swordchick]] for a Medium [[Ardougne Diary]] task after the quest
+*[[Fairy Ring]] teleport DJP right next to quest start south of East Ardougne
+*Ardougne cloak for teleports back to effigy
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}

@@ -1,0 +1,9 @@
+===Rewards===
+*[[Kandarin headgear 4]]:
+**Unlimited teleports to [[Sherlock]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*The first 200 [[coal]] placed in the [[coal trucks]] every day will automatically be transported to your [[bank]]
+*The [[flax keeper]] will offer you 250 [[Bank note|noted]] [[bow string]]s every day for 250 noted [[flax]], for a profit of {{NoCoins|({{GEP|Bow string}}-{{GEP|Flax}})*250}} [[coins]] on the [[Grand Exchange]]
+*15% increased chance to save a [[Farming#Variable crop yield|"harvest life"]] at the [[herb patch]] in [[Catherby]], up from 10%
+*50% discount on [[Thormac]]s' [[Mystic staff|enchanting]] services, up from 25% (requires completion of [[Scorpion Catcher]])
+*[[Otto Godblessed]] now turns your [[Zamorakian spear]] into a [[Zamorakian hasta]] for 150,000 [[coins]], down from 300,000 [[coins]]

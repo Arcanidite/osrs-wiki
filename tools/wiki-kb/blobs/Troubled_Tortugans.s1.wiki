@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|start = Talk to the [[injured tortugan]] on a [[Remote Island]] in the [[Unquiet Ocean]].
+|startmap = 2958,2606
+|difficulty = Experienced
+|description = Help a stranded tortugan and gain access to the Great Conch.
+|length = Medium
+|requirements = * {{SCP|Slayer|51|link=yes}}{{Boostable|no}}{{Questreqstart|yes}}
+* {{SCP|Construction|48|link=yes}}{{Boostable|no}}{{Questreqstart|yes}}
+* {{SCP|Sailing|45|link=yes}}{{Boostable|no}}{{Questreqstart|yes}}
+* {{SCP|Hunter|45|link=yes}}{{Boostable|no}}{{Questreqstart|yes}}
+* {{SCP|Woodcutting|40|link=yes}}{{Boostable|no}}{{Questreqstart|yes}}
+* {{SCP|Crafting|34|link=yes}}{{Boostable|no}}{{Questreqstart|yes}}
+*Completion of [[Pandemonium]]
+|items = * Any [[axe]] (a bronze axe can be found during the quest, but bringing a better one is recommended for cutting 10 logs)
+* [[Hammer]] (obtainable during the quest) or [[Imcando hammer]]
+* [[Saw]] (obtainable during the quest) or [[Amy's saw]]
+|recommended = * At least 4 free inventory spaces (or up to 22 for all the construction materials at once, as there is a bank easily accessible)
+* {{SCP|Combat|60|link=yes}}
+* Food and combat gear
+* [[Stamina Potion]]
+|kills = *[[Gryphon (Troubled Tortugans)|Gryphon]] (level 95)
+*[[Shellbane gryphon (Troubled Tortugans)|Shellbane gryphon]] (level 235)
+|ironman = 
+|leagueRegion = Not accessible in the [[Demonic Pacts League]]
+}}

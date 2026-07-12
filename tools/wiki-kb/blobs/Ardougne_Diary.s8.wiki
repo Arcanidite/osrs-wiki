@@ -1,0 +1,61 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Ardougne" data-diary-tier="Elite"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Catch a [[Manta ray]] in the [[Fishing Trawler]] and cook it in [[Port Khazard]].
+''Note: Completing or updating any other task in-between these steps will reset the progress for this task.''
+|
+*{{SCP|Fishing|81|link=y}}{{Boostable|no}} and {{SCP|Cooking|91|link=y}}{{Boostable|yes}}
+*[[Raw manta ray]], multiple recommended in case of [[Burnt manta ray|burning]] one
+|-
+|2. Picklock the door to the basement of [[Yanille Agility Dungeon]].
+|
+*{{SCP|Thieving|82|link=y}} {{Boostable|yes}}
+*[[Lockpick]]
+|-
+|3. Pickpocket a [[Hero]].
+|
+*{{SCP|Thieving|80|link=y}} {{Boostable|yes}}
+|-
+|4. Make a [[rune crossbow]] yourself from scratch within [[Witchaven]] or [[Yanille]].
+
+''Note: You must use the [[spinning wheel]] in [[Witchaven]] to make the [[crossbow string]] and the [[anvil]] in [[Yanille]] to make the [[runite limbs]]. Fletching the [[yew stock]] and completing the [[rune crossbow]] can be done in either settlement. Completing or updating any other task in-between these steps will reset the progress for this task.''
+|
+*{{SCP|Crafting|10|link=y}}, {{SCP|Smithing|91|link=y}}{{Boostable|yes}} and {{SCP|Fletching|69|link=y}}
+*[[Yew logs]], [[runite bar]], [[hammer]], [[knife]], and [[sinew]] or a [[tree root]]
+|-
+|5. Imbue a [[Salve amulet]] at [[Nightmare Zone]], or equip a Salve amulet that was [[Salve amulet(i)|imbued]] there.
+''Note: You cannot use a [[Scroll of imbuing]] from [[Emir's Arena]] or use [[Zeal Tokens]] from [[Soul Wars]].''{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1356917400210448389|date=3 February 2021|archiveurl=https://reldo.runescape.wiki/i/100999|archivedate=5 February 2021|quote=Yes. Seems to be the case for everything that can be imbued in the two different places - rings, amulets, etc. I suspect that was to stop people getting the imbue in one place, then trying to refund it in the other place.}} ''In Deadman Mode, the task is "Attempt to equip an imbued Salve amulet at the Nightmare Zone plinth." NOTE: Whilst the text reads imbued, you must wear a Salve (ei) not Salve (i)''
+|
+*{{SCP|Quest}} Completion of the [[Haunted Mine]] 
+*Access to the [[Nightmare Zone]]
+*[[Salve amulet(i)]] or [[Salve amulet(ei)]], or 800,000 [[Nightmare_Zone#Upgrades|Nightmare Zone points]] points to imbue the [[Salve amulet|normal one]] (reduced to 400,000 points with the [[Combat_Achievements/Hard|hard tier]] of the {{SCP|combatachievement}} [[Combat Achievements]] completed)
+|-
+|6. Pick some [[Torstol]] from the [[Herb patch|patch]] north of [[Ardougne]].
+|
+*{{SCP|Farming|85|link=y}}
+*[[Torstol seed]], [[seed dibber]] (or [[Barbarian Farming]]), and a [[rake]]
+*[[Ultracompost]] recommended
+|-
+|7. Complete a lap of [[Ardougne Rooftop Course|Ardougne's rooftop agility course]].
+|
+*{{SCP|Agility|90|link=y}} {{Boostable|yes}}
+|-
+|8. Cast [[Ice Barrage]] on another player within [[Castle Wars]].
+''Note: You have to successfully hit the player, so multiple casts are recommended. In Deadman Mode, the task is "Visit the Castle Wars lobby with at least 94 Magic after completing Desert Treasure I."
+|
+*{{SCP|Quest}} Completion of [[Desert Treasure I]]
+*{{SCP|Magic|94|link=y}} {{Boostable|yes}}
+*Means to cast [[Ice Barrage]] ({{RuneReq|Death=4|Blood=2|Water=6}} or a [[Blighted ancient ice sack]] for every cast)
+|}
+
+===Rewards===
+*[[Ardougne cloak 4]]:
+**Unlimited teleports to the [[farming patch]] at the [[Ardougne farm]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 [[experience]] in any skill of at least level 70
+*[[Bert]] automatically delivers 84 [[buckets of sand]] to your bank each day you log in, unless asked to stop. ([[Ironman_Mode#Ultimate|Ultimate Ironmen]] are ineligible)
+*[[Wizard Cromperty]] offers you 250 [[noted]] [[pure essence]] for free every day
+*50% more [[fish]] from [[Fishing Trawler]]
+*25% more [[marks of grace]] from the [[Ardougne Rooftop Course]]
+*Hold up to 140 [[coin pouch]]es at a time, up from 84

@@ -1,0 +1,16 @@
+==Rewards==
+{{Quest rewards
+|name = Perilous Moons
+|image = [[File:Perilous Moons reward scroll.png|center]]
+|qp = 2
+|rewards = 
+* {{SCP|Slayer|40,000|link=yes}} experience
+* {{SCP|Runecraft|5,000|link=yes}} experience
+* {{SCP|Hunter|5,000|link=yes}} experience
+* {{SCP|Fishing|5,000|link=yes}} experience
+* Access to [[Neypotzli]] and the [[Moons of Peril]]
+* The ability to be assigned [[lesser nagua]] as a [[Slayer task]].
+
+In addition, completing the quest counts as a normal defeat of the Moons of Peril, allowing the player to loot the [[Lunar Chest]] for further rewards.
+The chest may be reached by starting from the central chamber, travelling into the south-western chamber, past a group of [[Sulphur Nagua]] to the south-western passage, OR through the safer north-eastern chamber, to the south-eastern passage.
+}}

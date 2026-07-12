@@ -1,0 +1,12 @@
+===The Great Conch===
+{{Checklist|
+* Floopa will board your boat automatically. Sail to the south shore of The Great Conch.
+* Disembark and talk to Floopa on the Docks.
+* Enter the village to the north and speak with [[Elder Raley]] (first house on the right, south-east of town) to receive a [[list of repairs]].
+* Acquire the following repair materials; this can be done in batches if low on inventory space:
+** A saw can be found in Elder Raley's house if you did not bring one.
+** Take a hammer from the building with the anvil and furnace. 
+** Pick up 6 [[Tortugan scute|Tortugan Scute]] scattered around town.
+** Run west and chop 10 [[Jatoba logs|Jatoba Logs]] from the [[Jatoba Trees]] (there is a bronze axe which can be picked up from a tree stump north of the calquat tree patch).
+** Pick up 6 [[sea shell]]s near beach (closest spawn is to the south-east of town).
+}}

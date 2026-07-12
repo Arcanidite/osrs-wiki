@@ -1,0 +1,4 @@
+===Relocating the ceremonial grounds===
+{{Checklist|*Return and speak to [[Grish]] {{Chat option|1I found who's responsible for the Zogres being here.}}. He will give you an Ogre gate key to access the Ceremonial chamber.
+*Talk to Grish again ''"There must be an easier way to kill these [[Zogre]]s" ''to learn how to equip [[Composite ogre bow]]s {{Chat option|2}}.
+*Prepare to fight [[Slash Bash]] (level 111). If you are using an [[comp ogre bow]] instead of [[Crumble Undead]], follow the "optional" steps below.}}

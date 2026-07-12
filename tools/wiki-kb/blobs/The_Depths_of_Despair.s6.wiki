@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = The Depths of Despair
+|image = [[File:The Depths of Despair reward scroll.png|center]]
+|qp = 1
+|rewards =
+*{{SCP|Agility|1,500}} [[Agility]] experience
+*4,000 [[coins]]
+*A page for [[Kharedst's memoirs]], '[[Lunch by the lancalliums]]'. It teleports players to just east of the [[Hosidius Kitchen]].
+*Ability to recolour the [[graceful outfit]] to the colours of [[Hosidius]].
+*Ability to fight the [[Sand Snake]] within the [[Nightmare Zone]].
+}}

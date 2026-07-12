@@ -1,0 +1,67 @@
+==Walkthrough==
+===Finding the stranded Tortugan===
+{{Checklist|
+* Talk to the [[Injured Tortugan]] on the remote island north-west of [[The Great Conch]], far south of The Pandemonium. {{Chat option|1 Yes.}}
+* Pick up some seaweed. Shake any palm tree and pick up a [[palm leaf]].
+* Use the seaweed on the palm leaf to make a bandage.
+* Talk to the Injured Tortugan.
+}}
+
+===The Great Conch===
+{{Checklist|
+* Floopa will board your boat automatically. Sail to the south shore of The Great Conch.
+* Disembark and talk to Floopa on the Docks.
+* Enter the village to the north and speak with [[Elder Raley]] (first house on the right, south-east of town) to receive a [[list of repairs]].
+* Acquire the following repair materials; this can be done in batches if low on inventory space:
+** A saw can be found in Elder Raley's house if you did not bring one.
+** Take a hammer from the building with the anvil and furnace. 
+** Pick up 6 [[Tortugan scute|Tortugan Scute]] scattered around town.
+** Run west and chop 10 [[Jatoba logs|Jatoba Logs]] from the [[Jatoba Trees]] (there is a bronze axe which can be picked up from a tree stump north of the calquat tree patch).
+** Pick up 6 [[sea shell]]s near beach (closest spawn is to the south-east of town).
+}}
+
+===Making repairs===
+{{Checklist|
+* Repair [[Elder Krill]]'s stall (the fish stall on the north side of the marketplace):
+** 1 sea shell, 1 Tortugan scute, 2 Jatoba logs.
+* Repair the south wall of Elder Krill's store (directly north of his marketplace stall):
+** 2 Tortugan scute, 2 Jatoba logs.
+* Repair the north wall of [[Elder Strom]]'s store (west of the marketplace):
+** 2 Tortugan scutes, 2 Jatoba logs.
+* Repair Elder Strom's crate (On the west side of the marketplace, east outside of his store):
+** 2 sea shells, 1 Jatoba log.
+* Repair [[Elder Coco]]'s stall (on the south side of the marketplace - Crafting stall)
+** 1 sea shell, 1 Tortugan scute, 2 Jatoba logs.
+* Repair Elder Coco's crate (directly south of his marketplace stall, north of the building)
+** 2 sea shells, 1 Jatoba log.
+* Speak to [[Elder Raley]] again.
+}}
+
+===Tracking the Gryphon===
+'''Items required:''' ''Any axe, combat gear, and food to defeat a level 95 [[Gryphon]]''
+{{Checklist|
+* Track the Gryphon:
+** Inspect the monument in the center of the market to reveal footprints.
+** Where the trail ends, inspect nearby objects like flowers, rockslides, and plants to pick up the trail again.
+** Clear the roots blocking the cave entrance with your axe.
+* Enter cave and defeat the Gryphon (level 95).
+* Exit the cave and return to [[Elder Raley]] in town.
+** You can climb the rocks south of the cave (with level 50 Agility) for a quick way back to town.
+}}
+
+===Attack on the Little Pearl===
+'''Items required:'''  ''Combat gear, food, and prayer to defeat the level 235 [[Shellbane gryphon (Troubled Tortugans)|Shellbane Gryphon]]. Your cape slot will be filled with the Tortugan shield.''
+{{Checklist|
+* Talk to [[Elder Blunn]] at the north-eastern stall in the marketplace to receive a [[Tortugan shield]], a cape-slot item. Keep this equipped for the fight!
+* Use the bank in town to prepare for battle.
+* Sail to [[The Little Pearl]], south-east of The Great Conch.
+* Disembark and a cutscene will play. Immediately after the cutscene, the battle will begin. Defeat the [[Shellbane gryphon (Troubled Tortugans)|shellbane gryphon]].
+** Use either Protect from Melee or Ranged.
+** Fighting with Ranged or Magic is recommended to negate one of his mechanics. This fight can be done without taking damage if using ranged and mechanics are handled properly, but supplies are still suggested.
+** It can charge you and perform a knockback that hits for up to 65 damage if your '''equipped''' weight is under 40 kg. If blocked by a tree or eggs, it will not perform this.
+** It will occasionally spit out an orange orb. Move 1 tile away.
+** When "The gryphon aggressively flaps it wings..." is displayed in the chatbox, whirlwinds will spawn under you for a few seconds and then explode shortly after. Move repeatedly off of the affected tiles to avoid damage.
+* '''Don't leave yet''': Talk to Korel about the strange ship you saw.
+* Return to The Great Conch and talk to Elder Raley again.
+*'''Congratulations, quest complete!'''
+}}

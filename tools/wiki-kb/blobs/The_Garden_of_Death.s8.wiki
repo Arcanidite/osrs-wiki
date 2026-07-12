@@ -1,0 +1,8 @@
+==Rewards==
+{{Quest rewards
+|name = The Garden of Death
+|image = [[File:The Garden of Death reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*{{SCP|Farming|10,000|link=yes}} [[experience]]
+}}

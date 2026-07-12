@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Beneath Cursed Sands
+|image = [[File:Beneath Cursed Sands reward scroll.png|center]]
+|qp = 2
+|rewards =
+*{{SCP|Agility|50,000}} [[Agility]] experience
+*Access to the [[Tombs of Amascut]]
+*A [[Keris partisan]]. (If your inventory was full, you may claim one for free from [[Selim]] in front of Al Kharid Palace.)
+*The [[circlet of water]], an untradeable helm that acts like a [[waterskin]] when worn. (If your inventory was full, you may claim one for free from the [[High_Priest_(Sophanem)|High Priest in Sophanem]].)
+*Access to a fairy ring on a small island south-west of the [[necropolis]], code {{Fairycode|AKP}}. (Unlocked when entering the necropolis at the beginning of the quest.)
+*Jaltevas teleport option on the [[Pharaoh's sceptre]]. (Unlocked by selecting Commune on an obelisk in the necropolis, by the [[Necropolis mine|mine]].)
+}}

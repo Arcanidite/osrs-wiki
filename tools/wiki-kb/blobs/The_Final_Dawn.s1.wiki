@@ -1,0 +1,36 @@
+==Details==
+{{Quest details
+|start = Talk to [[Servius, Teokan of Ralos|Servius]] in the [[Sunrise Palace]].
+|startmap = 1678,3168
+|difficulty = Master
+|description = Bring an end to the plots of a deadly cult and unlock a new boss.
+|length = Long
+|requirements = * {{SCP|Thieving|66|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Runecraft|52|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Fletching|52|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+** [[The Heart of Darkness]]
+*** [[Twilight's Promise]]
+**** [[Children of the Sun]]
+** [[Perilous Moons]]
+*** [[Twilight's Promise]]
+**** [[Children of the Sun]]
+|items = * [[Emissary robes]]
+*Any kind of [[bones]] (except [[sun-kissed bones]]) or [[raw meat]]/[[cooked meat]]
+*A [[knife]] (obtainable during the quest)
+*A [[beer]] (obtainable during the quest)
+|recommended = * {{SCP|Combat|85|link=yes}}
+* Combat gear (melee and ranged)
+* Food
+* [[Pendant of ates]]
+* [[Quetzal whistle]]
+|kills = * [[Emissary Enforcer]] (lvl-196)
+* [[Chimalli]] (lvl-160) and [[Lucius]] (lvl-160)
+* Multiple waves of Emissary cultists (lvl-70 to lvl-90)
+* [[Ennius Tullus]] (lvl-306)
+* [[Augur Metzli]] (lvl-396)
+|ironman = 
+|leagueRegion = <poem>
+{{LeagueRegion|Varlamore}} — location requirement
+</poem>
+}}

@@ -1,0 +1,11 @@
+===Entering the house===
+{{Checklist|*Talk to the [[Boy]] south-east of the long garden in [[Taverley]], next to the members gate. {{Chat option|1What's the matter?|1Ok, I'll see what I can do.}}
+*Head west, then north to the front door of the [[witch's house (location)|house]], across from the [[player-owned house]] portal.
+*Look-under the potted plant closest to the door for a [[Door key (Witch's House)|door key]] and enter the door.
+*Read the Diary on the table
+*Climb down the ladder to the north, equip gloves, and enter the [[gate (witch's house)|gate]]. (The [[boxes (witch's house)|boxes]] can be searched for a pair of [[leather gloves]].)
+*Equip your leather gloves before opening the gate.
+*Search the [[cupboard (witch's house)|cupboard]] for a [[Magnet (Witch's House)|magnet]].
+*Climb up the ladder and go to the small southern room.
+*Drop cheese in the room and a [[Mouse (Witch's House)|mouse]] will come out.
+*'''QUICKLY''' use the magnet on the mouse.}}

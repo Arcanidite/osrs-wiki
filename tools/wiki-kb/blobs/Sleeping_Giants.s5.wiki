@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Sleeping Giants
+|image = [[File:Sleeping Giants reward scroll.png|center]]
+|qp = 1
+|rewards =
+* {{SCP|Smithing|6,000}} [[Smithing]] experience
+* Access to the [[Giants' Foundry]]
+}}

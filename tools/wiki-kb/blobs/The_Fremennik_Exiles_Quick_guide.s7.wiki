@@ -1,0 +1,10 @@
+====Polishing rock====
+'''Items required''': ''[[Pet rock]], [[Fishing rod]], [[V sigil (e)]], [[Lunar glass]], [[Ice gloves]], [[Glassblowing pipe]], [[Fremennik shield]].'' 
+
+'''Recommended:''' ''2 teleports to the [[Mountain Camp]] ([[Slayer ring]] or [[Fairy rings]] access code {{Fairycode|AJR}}), a teleport back to [[Rellekka]] ([[Enchanted lyre|Enchanted Lyre]] or [[Fremennik sea boots 4|Fremennik Sea boots]]) and stamina potion''
+{{Checklist|*Head east of Rellekka to the [[Mountain Camp]]
+*Follow the path north of the [[Mountain Camp]] and inspect the [[Large Geyser]]. Use your pet rock on the Geyser. {{Chat option|1It's for the good of the Province!}}
+*Go to Rellekka and talk to [[Peer the Seer]] found south-west of the Rellekka market.
+*Return to the geyser and wear the [[ice gloves]], if you forget you may re-equip them and try again.
+*Inspect the large geyser to the west to get the [[polishing rock]].
+*Use any of the components together while having a [[glassblowing pipe]] in the inventory to create [[V's shield]].}}

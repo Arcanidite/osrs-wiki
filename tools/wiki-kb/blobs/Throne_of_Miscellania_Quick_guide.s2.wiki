@@ -1,0 +1,59 @@
+==Walkthrough==
+{{Checklist|
+''Grab all the items needed for the quest before you start. You do not need to make bank trips during this quest.''
+*Travel to [[Miscellania]] (Either go to [[Rellekka]] middle dock to travel by sailor or fairy code: {{Fairycode|CIP}})
+*If you do not have flowers yet, buy some from the [[Flower Girl]] in the castle courtyard for 15gp.
+*Speak with [[King Vargas]] on the {{FloorNumber|uk=1}} of the south-west castle. {{Chat option|1}}
+The next part of the quest varies on which character is chosen by the player. Press the appropriate button.
+}}
+<tabber>
+If you choose Princess Astrid=
+{{Checklist|
+*Speak with [[Princess Astrid]] in the room directly north of the King. Continue to speak with her each time the dialogue box closes, until the dialogue is just "''Good Day''".
+**''"Archery is a noble art!"''
+**''"He's been very helpful"''
+**''"Hahahaha"''
+*Use the flowers on the princess (You will not get them back)
+*Now use the dance emote '''inside her room'''
+*Keep speaking with her, choosing the flattering options (see below) until the dialogue is just ''"Good Day"''.
+**''"That sounds like a good idea."''
+**''"What happened next?"''
+**''"I'm quite fond of it myself"''
+**''"And what a great bard he makes!"''
+**''"I suppose you don't have much opportunity to."''
+**''"It's a lovely little country."''
+*Use the bow in your inventory on her (you will not get it back)
+*Speak with her again
+*Use the blow kiss emote
+*Repeat the agreeing process once more until she calls you ''"Dear"'' or ''"Darling"''
+*Use the blow kiss emote again
+*Use the ring in your inventory on her (you will not get it back)
+}}
+|-|
+If you choose Prince Brand=
+{{Checklist|
+*Speak with [[Prince Brand]] in the room directly south of the King. Continue to speak with him each time the dialogue box closes, until the dialogue is just ''"Good Day"''.
+*After he recites the poem select ''"Be still, my heart''"
+*Use the Clap or Cheer emote in his room
+*Keep speaking with him, agreeing with everything he says. Eventually the dialogue will just be ''"Good Day"''.
+*Use the flowers on the prince
+*Repeat the agreeing process
+*Use (do not eat) the cake on him
+*Repeat the agreeing process
+*Once the dialogue goes ''"Hello, dear."'' and ''"Hello Darling."'' use the blow kiss emote in his room
+* Use your ring on him and he will agree to marry you (silver and pineapple rings do not work)}}
+</tabber>
+{{Checklist|
+*Exit the castle and head east, across the bridge to the other castle. It's advised to clear the weeds from the herb and flax crops outside the main gates of the Miscellania castle every time you run past to save time on gaining favour which you need later on in the quest. If doing this, players can expect to have around 60% favour by the time they will need to gain the remaining favour.
+*Speak with [[Queen Sigrid]] upstairs
+*Return west and speak with King Vargas
+*Return east and speak with the Queen again
+*Go back again and speak with [[Prince Brand]] in the room south of King Vargas to receive the [[Awful anthem]]
+*Speak with Advisor Ghrim who is next to the King {{Chat option|1}} to turn the Awful anthem into a [[Good anthem]]
+*Take the Good Anthem to the Queen to the East to get the [[Treaty]]
+*Take the treaty back to King Vargas
+*Leave the castle and head north to the anvil symbol
+*Speak with [[Derrik]] with an [[iron bar]] in your inventory {{Chat option|2}} to receive a [[giant nib]]
+*Use the giant nib on the logs in your inventory to create a [[Giant pen]]
+*Return to the King
+}}

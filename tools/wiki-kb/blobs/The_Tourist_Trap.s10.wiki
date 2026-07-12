@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = The Tourist Trap
+|image = [[File:The Tourist Trap reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*4,650 [[Experience]] in your choice of two skills (you may pick same skill twice): {{SCP|Agility}} [[Agility]], {{SCP|Fletching}} [[Fletching]], {{SCP|Smithing}} [[Smithing]], or {{SCP|Thieving}} [[Thieving]].
+*The ability to smith [[dart tip]]s.
+*The [[wrought iron key]] - allows access to a special door inside the [[Desert Mining Camp]], which has several higher tier ores inside, including [[mithril ore]] and [[adamantite ore]].
+*Full [[slave robes]]
+*6 [[bronze dart]]s
+*The ability to hire [[Ex-Captain Siad]] as a [[crewmate]] with {{SCP|Sailing|50|link=yes}}.
+}}

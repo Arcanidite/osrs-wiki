@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Witch's House
+|image = [[File:Witch's House reward scroll.png|centre]]
+|qp = 4
+|rewards = 
+* {{SCP|Hitpoints|6,325}} [[Hitpoints]] [[experience]]
+
+Unlocks:
+* [[Witch's experiment]] (multiple forms) accessible in the [[Nightmare Zone]].
+}}

@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name=The Fremennik Exiles|image=[[File:The Fremennik Exiles reward scroll.png|centre]]|qp=2|rewards=*[[V's shield]]
+*Access to the [[Island of Stone]]
+* Ability to kill a [[Basilisk Knight]] as a [[Slayer]] Task
+*A Fremennik honorific, Dräpare, added to the player's [[Fremennik name]]
+*Ability to create and equip the [[Neitiznot faceguard]]
+*{{SCP|Slayer|50,000}} [[Slayer]] experience
+*{{SCP|Crafting|50,000}} [[Crafting]] experience
+*{{SCP|Runecraft|30,000}} [[Runecraft]] experience}}

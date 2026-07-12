@@ -1,0 +1,32 @@
+==Walkthrough==
+{{Map|zoom=1|mtype=pin|align=right|caption=Key locations:<br>
+'''Red:''' Guild Hunter Fox and smooth leaves.<br>
+'''Yellow:''' Sticky leaves and embertailed jerboas.<br>
+'''Green:''' Atza
+|1618,2979,icon:redPin,desc:Guild Hunter Fox/smooth leaves
+|1673,2992,icon:yellowPin,desc:Sticky leaves and jerboas
+|1697,3064,icon:greenPin,desc:Atza}}
+{{Checklist|
+* Speak to [[Guildmaster Apatura]] in the [[Hunters' Guild]]. {{Chat option|2Can I help you with anything?}}
+* Go down the stairs in the big tree in the middle of Hunters' Guild.
+* Speak to [[Guild Scribe Verity]] behind the bar.
+* Talk to [[Guild Hunter Wolf (Master)]] just west of the bar to get a [[toy mouse]].
+* Wind up the toy mouse and then use it on [[Guild Hunter Kiko]] to distract him.
+* Check Kiko's [[Cat bed (At First Light)|cat bed]].
+* Return to Wolf and talk to her again.
+* Buy a box trap from [[Imia's Supplies]] if you do not have one. Pick up the needle spawn in the fur shop for later use.
+* Go back up the stairs and head south-east from the guild towards the mine to find [[Guild Hunter Fox]] laying down. He can be found south-east of the mining symbol (south-west of Fairy Ring {{fairycode|AJP}})
+* Talk to Fox.
+* Take a leaf from the [[leafy bush]]. The bush is south-west of him and browner than the other bushes. 
+* Go east to the [[Locus Oasis]] and pick from the [[rough-looking bush]] for a second leaf. The bush is south of the hunter symbol on the map, on the west coast of the oasis.
+* While here, catch two [[Embertailed jerboa]] using a box trap for their tails.
+* Use the [[Jerboa tail]] on the leaves to create [[Makeshift poultice]].
+* Return to Fox and talk to him again.
+* Head to [[Atza]], who is in one of the buildings just east of the southern gate of [[Civitas illa Fortis]] (west of the pub). Talk to her.
+* Set-up the [[pile of equipment]] in the middle of the room. (A hammer is available in the house to the north.)
+* Talk to Atza to get the [[trimmed fur]].
+* Return to Fox. He will give you [[Fox's report|a report]] for the guild.
+* Return to Guild Scribe Verity, down the stairs in the [[Hunter Guild]], and give her the report.
+* Use the remaining jerboa tail on the cat bed to fix it.
+* Head back upstairs, and talk to Guildmaster Apatura.
+* '''Congratulations, quest complete!'''}}

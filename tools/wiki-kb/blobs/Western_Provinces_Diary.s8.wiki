@@ -1,0 +1,60 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Western Provinces" data-diary-tier="Elite"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Fletch a [[Magic Longbow]] in [[Tirannwn]].
+|
+*{{SCP|Quest}} Started [[Regicide]]
+*{{SCP|Fletching|85|link=y}} {{boostable|y}}
+*[[Magic longbow (u)]] and a [[bow string]]
+|-
+|2. Kill the [[Thermonuclear Smoke Devil]].
+''Note: While this boss normally requires a [[Slayer task]], this is not needed for the first kill. You do not have to contact a [[Slayer master]] for this task.''
+
+''You must be in the room when its death animation ends, or the task will not be completed. Be mindful of this if you are attempting the [[Thermonuclear_smoke_devil#Combat_Achievements|Combat Achievements]]. If this occurs, you will still be able to kill it again without a slayer task.''
+|
+*{{SCP|Slayer|93|link=y}} {{Boostable|n}}
+*See the [[Thermonuclear smoke devil/Strategies|strategy guide]]
+|-
+|3. Have [[Prissy Scilla]] protect your [[Magic tree (Farming)|Magic tree]].
+|
+*{{SCP|Farming|75|link=y}} {{boostable|y}}
+*[[Magic sapling]], 25 [[coconut]]s, [[rake]], and a [[spade]]
+|-
+|4. Use the [[Rocks (Tirannwn)#Advanced|Elven overpass advanced cliffside shortcut]].
+|
+*{{SCP|Quest}} Completion of [[Underground Pass]]
+*{{SCP|Agility|85|link=y}} {{Boostable|y}}
+|-
+|5. Equip any complete [[Void Knight equipment|void set]].
+''Note: In Deadman Mode, the task is instead "Speak to the Elite Void Knight after claiming the Western hard diary reward."
+|
+*{{SCP|Combat|40|link=y}}, {{SCP|Prayer|22|link=y}}, {{SCP|Attack|42|link=y}}, {{SCP|Strength|42|link=y}}, {{SCP|Defence|42|link=y}}, {{SCP|Hitpoints|42|link=y}}, {{SCP|Ranged|42|link=y}}, and {{SCP|Magic|42|link=y}}
+*Any [[Void Knight helmet|void helm]] ([[Void melee helm|melee]], [[Void ranger helm|ranger]], or [[Void mage helm|mage helm]])
+*[[Void knight top]], [[Void knight robe|robe]], and [[Void knight gloves|gloves]]
+|-
+|6. Claim a [[Chompy bird hat]] from [[Rantz]] after registering at least 1,000 kills.
+''Note: You need to have a ([[comp ogre bow|comp]]) [[ogre bow]] in your inventory to claim hats.''
+|
+*{{SCP|Quest}} Completion of [[Big Chompy Bird Hunting]]
+*[[Ogre bellows]], ([[comp ogre bow|comp]]) [[ogre bow]], and [[ogre arrows|ogre]] or [[brutal arrows]]
+*1,000 [[chompy bird|chompy]] or [[jubbly bird]] kills
+|-
+|7. Pickpocket an [[Elf (thieving)|Elf]].
+|
+*{{SCP|Quest}} Started [[Mourning's End Part I]]
+*{{SCP|Thieving|85|link=y}} {{Boostable|y}}
+|}
+
+===Rewards===
+*[[Western banner 4]]:
+**Depicts an [[Elf|elven]] pattern
+**Unlimited teleports to the [[Piscatoris Fishing Colony]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 [[experience]] in any skill of at least level 70
+*Two [[chompy bird]]s will always appear at once when [[chompy bird hunting]]
+*Chance of receiving a [[chompy chick]] when [[chompy bird hunting]], at a rate of 1/500
+*[[Rantz]] offers you 150 [[ogre arrow]]s for free every day, worth a total of {{NoCoins|{{GEP|Ogre arrow|150}}}} [[coins]] on the [[Grand Exchange]]
+*[[Nieve]]/[[Steve]] now grant as many [[slayer reward point]]s as [[Duradel]]/[[Kuradal]]
+*Resurrect with full health and restored stats once per day when you reach 0 [[hitpoints]] against [[Zulrah]], allowing you to continue on with the fight (the task list of this diary will show you whether you've used this daily resurrection, and this is considered a "safe death" for [[Ironman Mode#Hardcore|Hardcore Ironman]] players)
+{{Reflist|group=h}}

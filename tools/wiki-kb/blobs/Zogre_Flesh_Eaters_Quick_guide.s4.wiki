@@ -1,0 +1,10 @@
+===The cave===
+'''''Note:''' You may now (or already have been) become diseased if under 89 combat and a [[Zogre]] or [[Skogre]] attacks you (level 44). '''Carry [[Super restore potion]]s at all times.''' The [[disease]] lowers a random skill 10 levels every minute or so!''
+{{Checklist|
+*Run north-west to an area with a blackened floor, a short cut scene will begin.
+*Search the [[skeleton]] next to the [[Broken Lecturn]]. A [[Zombie (Zogre Flesh Eaters)|Zombie]] will appear and attack, kill it to obtain the [[Ruined backpack]].
+*Open the [[Ruined backpack]] to obtain a [[Dragon inn tankard]], some [[rotten food]] and a [[knife]].
+*Search the [[broken lecturn]] for the [[Torn page]] (make sure you keep this).
+*Attempt to search the [[coffin]] west of the [[Skeleton]], and then use a [[knife]] on it.
+*Attempt to open coffin (may take a couple of tries), search the coffin for the [[Black prism]].
+}}

@@ -1,0 +1,18 @@
+==Details==
+{{Quest details
+|start = Talk to [[Patzi]] by the entrance to [[Villa Lucens]].
+|startmap = 1413,2937
+|difficulty = Intermediate
+|description = Solve a mysterious murder on the island of Aldarin.
+|length = Medium
+|requirements = *{{SCP|Thieving|34|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Agility|32|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+**[[Children of the Sun]]
+|items = None
+|recommended =*{{SCP|Combat|40}}
+|kills = Two low-level enemies must be fought with no equipment, but you can’t die to them
+|leagueRegion = <poem>
+{{LeagueRegion|Varlamore}} — location requirement
+</poem>
+}}

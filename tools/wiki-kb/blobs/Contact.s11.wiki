@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|name = Contact!
+|image = [[File:Contact! reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Thieving|7,000}} [[Thieving]] [[experience]]
+*Bankable [[Combat lamp]] granting 2 x 7,000 experience in {{SCP|Attack}} [[Attack]], {{SCP|Strength}} [[Strength]], {{SCP|Defence}} [[Defence]], {{SCP|Hitpoints}} [[Hitpoints]], {{SCP|Ranged}} [[Ranged]], or {{SCP|Magic}} [[Magic]]
+*The [[Keris]] dagger
+*Access to [[Sophanem]]'s shops including: [[bank]], [[Blades by Urbi.]], [[Nathifa's Bake Stall.]], [[The Spice Is Right.]]
+*The music track [[Back to Life]] and [[The Spymaster]]
+
+Unlocks:
+* [[Giant scarab]] accessible in the [[Nightmare Zone]].
+}}

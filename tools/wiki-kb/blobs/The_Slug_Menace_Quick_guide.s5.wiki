@@ -1,0 +1,14 @@
+===The pages===
+[[File:The Slug Menace page puzzle.png|thumb|325px|The solution of the puzzle.]]
+''Items required: 1 swamp paste, the Commorb, a dead seaslug, and 5 free inventory spaces''
+{{Checklist|
+*Talk to [[Col. O'Niall]].
+*Talk to [[Brother Maledict]].
+*Go to the mayor's house and search the [[study desk (The Slug Menace)|study desk]] until you get a [[page 1|page]].
+*Talk to [[Ezekial Lovecraft]] in the fishing store (make sure you have one free inventory space).
+*Talk to Col. O'Niall (make sure you have 3 free inventory spaces)
+*Use swamp paste on one of the fragments. Savant will stop you.
+*Talk to [[Jeb]] (near Holgart) and travel to the Fishing Platform.
+*Talk to [[Bailey]] on the south-west part Fishing Platform, give him the dead slug.
+*Use the sea slug glue on a fragment, then solve the puzzle.
+}}

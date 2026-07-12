@@ -1,0 +1,32 @@
+==Details==
+{{Quest details
+|start = Talk to [[Elder Raley]] at his home on the [[Great Conch]].
+|startmap = 3188,2405
+|difficulty = Experienced
+|description = Investigate the dealings of the Red Reef Trading Company and gain access to some trees to cut.
+|length = Medium
+|requirements = * {{SCP|Sailing|52|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Smithing|48|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*Completion of the following quests:
+**[[Troubled Tortugans]]
+***[[Pandemonium]]
+|items = * A [[boat]]
+* [[Cannon (facility)|Cannons]] on your boat for ship combat, or [[Magic]]/[[Ranged]] gear to skip it
+|recommended = * {{SCP|Combat|65|link=yes}}
+* {{SCP|Prayer|40|link=yes}} for [[Protect from Missiles]] during boat combat.
+* At least 300 hitpoints in [[repair kits]] (for players with weaker gear/cannons), preferably [[Teak repair kit|teak]] or better.
+|kills = * 2 pirate ships (or the crew on the ship)
+** [[Oaky Doak]] (level 77)
+** [[Boatswain Bill Teak]] (level 77)
+** [[Mister U.]] (level 77)
+** [[Captain Ruban Acer]] (level 95)
+** [[Old Jack]] (level 77)
+** [[Mute Jack]] (level 77)
+** [[Bloody Jack]] (level 77)
+** [[Captain Jack]] (level 95)
+* 6 [[Pirate (The Red Reef)|pirates]] (level 52)
+* [[Black Eye Bethel]] (level 191)
+* [[Giant lobster (The Red Reef)|Giant lobster]] (level 112, safespottable)
+|ironman = 
+|leagueRegion = Not accessible in the [[Demonic Pacts League]]
+}}

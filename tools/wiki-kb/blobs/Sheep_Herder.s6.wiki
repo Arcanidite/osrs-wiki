@@ -1,0 +1,8 @@
+==Rewards==
+{{Quest rewards
+|name = Sheep Herder
+|image = [[File:Sheep Herder reward scroll.png|centre]]
+|qp = 4
+|rewards =
+*3,100 [[coins]]
+}}

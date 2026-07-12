@@ -1,0 +1,37 @@
+==Details==
+{{Quest details
+|start = Talk to the [[High Priest (Sophanem)|High Priest of Icthlarin]] in [[Sophanem]].
+|startmap = 3281,2771
+|difficulty = Experienced
+|description = The High Priest of Icthlarin has problems again - this time with the inhabitants of Menaphos. Sophanem is recovering from the plague, yet most of its citizens are still trapped on the other side of the river. Diplomacy has failed and subterfuge beckons. Clearly, this is the sort of job that a shifty adventurer could excel in.
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Prince Ali Rescue]]
+**[[Icthlarin's Little Helper]]
+***[[Gertrude's Cat]]
+|items = *A [[Light sources|light source]] ([[Kandarin headgear]], [[Firemaking cape]], [[Abyssal lantern]], or a [[bruma torch]] are strongly recommended as they can't be extinguished by traps in the [[Sophanem Dungeon|dungeon]]). If you don't have one, the [[Sophanem guard]] under the temple of the lesser deities will sell you an [[unlit torch]] for 200 [[coins]].
+*A [[tinderbox]] (unless you have a non extinguishable light source such as [[Kandarin headgear]], [[Firemaking cape]], [[Abyssal lantern]], or a [[bruma torch]]). If you don't have one, the [[Sophanem guard]] will sell you one for 50 coins.
+|kills = * [[Giant Scarab]] ''(level 191)''
+* Summoned by the Giant Scarab:
+** [[Locust rider]] ''(level 68)'' - Ranged and melee
+** [[Scarab Mage]]s ''(level 119 & 66)''
+|recommended = *{{SCP|Combat|70|link=yes}}
+*{{SCP|Agility|50|link=yes}}
+*{{SCP|Thieving|50|link=yes}}
+*{{SCP|Prayer|40|link=yes}} for using [[Protect from Missiles]] against the [[Giant Scarab]] boss if ranging or maging, otherwise the fight may prove very difficult. Melee users should pray Protect from Melee instead, requiring 43 Prayer.
+*[[Antipoison]] potion
+*[[Combat]] equipment
+*[[Food]]
+*[[Prayer potion]]s 
+*The [[Pharaoh's sceptre]] or a [[Nardah teleport]] (to get to [[Sophanem]])
+*3 [[Nardah teleport]]s to get to Nardah
+*An emergency escape [[Teleportation|teleport]]
+*[[Desert robes]]
+*[[Waterskin]]s
+*A [[ring of dueling]] or [[amulet of glory]] (to quickly return to [[Al Kharid]])
+*~800 [[coins]] (if using [[Magic carpet]] transportation)
+*A [[Shantay pass (item)|Shantay pass]] (entry to the [[Kharidian Desert]])
+|leagueRegion = <poem>
+{{LeagueRegion|Desert}} — location requirement
+</poem>
+}}

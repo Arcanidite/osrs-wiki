@@ -1,0 +1,28 @@
+===All the King's Men===
+Speak to King located in the inn about your predicament. She will tell you that she has to stay and man the bar, but has capable men who are up to the task. She will direct you to three people.
+
+====Acatzin====
+[[Acatzin]] is also in the inn. He will help you as soon as he gets his axe back from the [[Blacksmith (Tal Teklan)|blacksmith]]. Head south-west to the furnace and speak to the blacksmith, who will tell you that his whetstone has broken and needs repairing.
+
+Take the hammer nearby and repair the whetstone. He will then give you [[Acatzin's axe]] (not knowing that it is his) and ask you to repair it instead. Repair the axe on the whetstone then return to Acatzin and he will be on his merry way to Tal Teok.
+
+Before leaving, take the empty bowl on the table.
+
+====Nezketi====
+[[Nezketi]] is found at the temple directly south of the inn. In order to help you, he will need to be on top of his game - he will need tea made from [[damiana leaves]]. Agree to get his tea, and he will give you an empty cup.
+
+[[Damiana]] can be found directly outside of the south-eastern walls of Tal Teklan. While you are there, head a bit further south-west and pick up the two [[plank]]s.
+
+Acquire a [[bowl of water]]; if you didn't take a bowl earlier, pick it up on a table in [[The King's Inn]]. A fountain is right outside to fill the bowl. Use the [[damiana leaves]] on the bowl of water, then head into the [[Tal Teklan General Store]] just south of the bank, and use the bowl on the oven to boil the [[damiana water]]. Finally, use the bowl of tea on the empty cup to finally create [[damiana tea]].
+
+Head back to the temple and talk to Nezketi, who you will automatically give the tea to. Freshly energised, he will depart for the temple immediately after.
+
+====Kauayotl====
+[[File:Scrambled! - repairing racing cart.png|thumb|250px|Repairing Kauayotl's racing cart.]]
+From the temple, head directly east to the eastern entrance of Tal Teklan, where you will find [[Kauayotl]] with a damaged cart. In order to help you, he will first need to sort out his racing cart. Offer to help repair it, and he will tell you what you'll need:
+* Two planks - if you did not pick up two planks earlier, there are two spawns south of the city.
+* Nails - search the [[Blacksmith (Tal Teklan)|blacksmith's]] workbench for 20 [[iron nails]].
+* Hammer - spawns on the table south-west of the workbench
+* Saw - spawns on a table in [[Arcuani's Archery Supplies]] just south of the blacksmith.
+
+Return to Kauayotl, repair the damaged cart, and speak to him again to have him on his way to the temple.

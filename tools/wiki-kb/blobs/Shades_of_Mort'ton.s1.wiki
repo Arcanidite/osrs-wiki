@@ -1,0 +1,33 @@
+==Details==
+{{Quest details
+|start = Search the shelf in the southern-western house of [[Mort'ton]].
+|startmap = 3481,3279
+|difficulty = Intermediate
+|description = The townsfolk of [[Mort'ton]] have some form of strange affliction and the town is full of Shades. Can you find some way to reverse this?
+|length = Short
+|requirements = * Completion of the following quests:
+** [[Priest in Peril]]
+* {{SCP|Crafting|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Herblore|15|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Firemaking|5|link=yes}} {{Boostable|Yes}}  {{Questreqstart|no}}
+* Must be able to defeat 5 level-40 [[Loar Shade]]s.
+* Must be able to survive an onslaught when rebuilding the Temple (Being surrounded by many players makes this much easier).
+* Access to [[Mort'ton]]
+|items = * 1000+ [[coins]] (bring plenty of money just in case)
+* 2 [[Tarromin potion (unf)]] OR 2 [[vials of water]] and 2 [[tarromins]] (both obtainable during the quest)
+* 2 [[ashes]]
+*[[Tinderbox]]
+*[[Logs]] OR an [[axe]] to obtain some
+* 1 [[hammer]]
+**Using a [[Flamtaer hammer]] is '''highly recommended''' in case the minigame is unpopulated, as a regular hammer is insufficient to build the temple alone. An additional 13,000 coins (or {{Coins|{{GEP|Flamtaer hammer}}}} on the [[Grand Exchange]]) allows you to buy a [[Flamtaer hammer]] from Razmire.
+|recommended = * {{SCP|Combat|25|link=yes}}
+* [[Combat equipment]]
+* [[Food]]
+* 1-4 [[Flamtaer bracelet]]s (HIGHLY recommended; the minigame is occasionally unpopulated)
+* 11 free inventory slots
+* Fast travel to [[Mort'ton]] to start the quest -  [[Mort'ton Teleport]], [[Barrows Teleport]], [[fairy ring]]  {{Fairycode|bkr}} and take the [[swamp boaty]], or [[Morytania legs 3]]+
+|kills = * 5 [[Loar Shade]]s ''(level 40)''
+|leagueRegion = <poem>
+{{LeagueRegion|Morytania}} — location requirement
+</poem>
+}}

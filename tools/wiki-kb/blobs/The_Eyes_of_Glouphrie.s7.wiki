@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = The Eyes of Glouphrie
+|image = [[File:The Eyes of Glouphrie reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Magic|12,000}} [[Magic]] [[experience]]
+*{{SCP|Woodcutting|2,500}} [[Woodcutting]] experience
+*{{SCP|Runecraft|6,000}} [[Runecraft]] experience
+*{{SCP|Construction|250}} [[Construction]] experience
+*A [[crystal saw seed]] — Either take it to [[Ilfeen]] in [[Tirannwn]] or use it on the singing bowl by [[Brimstail]] to get an enchanted [[crystal saw]]. It allows items (that require a [[saw]]) to be made three levels above your [[Construction]]. It has a limited number of charges (28), but the recharge is free - use the bowl again.
+}}
+*Using the crystal seed with the singing bowl and getting a crystal saw is a medium task in the [[Western Provinces Diary]].

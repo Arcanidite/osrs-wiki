@@ -1,0 +1,48 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Karamja" data-diary-tier="Elite"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+| 1. Craft 56 [[Nature rune]]s simultaneously from Essence without the use of [[Runic extract|Extracts]].
+|
+*{{SCP|Runecraft|91|link=y}}{{Boostable|yes}}
+*28 [[Pure essence|pure]] or [[daeyalt essence]] (less may suffice with [[Raiments of the Eye]] pieces){{efn|To guarantee the task completes, bring at least 26 essence with 1 piece, 24 with 2 pieces, 22 with 3 pieces, or 19 with the full [[Raiments of the Eye]] set.}}
+*Access to the [[Nature Altar]] ([[nature talisman]]/[[Nature tiara|tiara]], [[catalytic talisman]]/[[Catalytic tiara|tiara]], or the [[Abyss]])
+|-
+| 2. Equip a [[Fire Cape]] or [[Infernal Cape]] in [[Mor Ul Rek]].
+|
+*See the [[TzHaar Fight Cave/Strategies|strategy guide]] for the [[TzHaar Fight Cave]]
+*[[Fire cape]] or [[infernal cape]]
+|-
+| 3. Check the health of a [[palm tree]] in [[Brimhaven]].
+|
+*{{SCP|Farming|68|link=y}}
+*[[Palm sapling]], [[spade]] and [[rake]]
+*15 [[papaya fruit]] recommended to pay the [[Garth|gardener]]
+|-
+| 4. Create an [[Anti-venom|antivenom]] potion whilst standing in the [[Horseshoe mine|horse shoe mine]].
+|
+*{{SCP|Herblore|87|link=y}}{{Boostable|yes}}
+*[[Antidote++]] and 5-20 [[Zulrah's scales]] (5 per dose)
+|-
+| 5. Check the health of your [[Calquat tree]] patch.
+''Note: This is the [[farming patch]] next to [[Imiago]].
+| 
+*{{SCP|Farming|72|link=y}}
+*[[Calquat sapling]], [[spade]] and [[rake]]
+*8 [[poison ivy berries]] recommended to pay the [[Imiago|gardener]]
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Karamja gloves 4]]:
+**Unlimited teleports to [[Duradel]]/[[Kuradal]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*10% chance of receiving two [[Agility arena ticket]]s and [[Brimhaven voucher]]s, instead of one, when successfully tagging a [[ticket dispenser]] at the [[Brimhaven Agility Arena]]
+*Free usage of Shilo Village's [[furnace]], down from a fee of 20 [[coins]] per use
+*Free access to the [[Hardwood Grove]], down from a fee of 100 [[trading sticks]]
+*Free [[Shilo Village cart system|cart rides]] between [[Brimhaven]] and [[Shilo Village]], down from a fee of 10-200 [[coins]]
+*[[Red dragonhide]] from [[red dragon]]s in the [[Brimhaven Dungeon]] is now [[Bank note|noted]] (cannot be disabled)
+*[[Bar]]s from [[Dragon_(race)#Metal_dragons|metal dragon]]s in the [[Brimhaven Dungeon]] are now [[noted]], unless this feature is disabled by talking to [[Pirate Jackie the Fruit]]
+*Double [[Tokkul]] from the [[TzHaar Fight Cave]], the [[Inferno]], and [[TzHaar-Ket-Rak's Challenges]]
+*Resurrect with full health and restored stats once per day when you reach 0 hitpoints in the [[TzHaar Fight Cave]], allowing you to continue on with the fight (the task list of this diary will show you whether you've used this daily resurrection)

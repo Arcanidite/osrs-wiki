@@ -1,0 +1,26 @@
+===Putting Humphrey together again===
+Head back north to Tal Teok and speak to any of the three men. It quickly becomes apparent that all of King's men couldn't put Pumpty Lumpty together again, and that replacing him is the only option. However, the three argue over which type of egg is suitable: a large chicken's, a dragon's, or a... jaguar's. You will offer to get all three and have them pick a suitable one.
+
+Head to the small chicken farm directly south of the Tal Teok temple in the north of Tal Teklan, and search the pile of eggs. A level-16 [[large chicken]] will attack; defeat it, then search the eggs again to obtain a [[large egg]].
+[[File:Scrambled! - red dragon safespot.png|thumb|250px|Safespotting the red dragon using their own eggs.]]
+The entrance to the [[Dragon Nest]] is found to the south-east of Tal Teok temple, across the river. Once inside, make your way to the south-east and search the pile of eggs. A level-106 [[Red dragon (Scrambled!)|red dragon]] will attack. Players can safespot the dragon using the eggs; defeat it, then search the eggs again to obtain a [[Dragon egg (Scrambled!)|dragon egg]].
+
+Head back outside, and run eastwards until you reach a campsite. Search the pile of eggs, and a level-88 [[Black jaguar (Scrambled!)|black jaguar]] will attack; as it has routefinding capabilities, you will have to trick the jaguar by standing next to tropical tree and a fern to safespot it. After triumphing over the egglaying jaguar search the eggs again to obtain a [[jaguar egg]].
+[[File:Scrambled! - egg piecing solution.png|thumb|250px|The nearly-reassembled Lumpty Mumpty.]]
+Return to Tal Teok and speak to each of King's men, who will each paint the egg to resemble Rumpty Bumpty as best they can. Once all three eggs have been given, a cutscene will play in which the eggs are judged. The chicken egg is deemed too small to be Wumty Scrumpty, the dragon egg's innate heat is melting the paint, and the jaguar egg is deemed to be the best replacement for Mumpty Rumpty.
+
+However, gravity is a cruel mistress and claims the lives of all the eggs, resulting in three additional great falls. With no options left, you and King's men must put Humphrey Dumphrey together again.
+
+There are many pieces to reassemble, but players can hover over the puzzle piece icon to view the solution. When a piece is rotated in the correct orientation and placed in the correct location, it will stay in place indicating the correct placement.
+
+Upon putting Scrumpty Lumpy back together again, a cutscene will play in which you thank King's men before they take their leave, and Alan returns none the wiser. As you head down to help him bring in the food, he reflects on his life, finally sure of himself and his place in the world. However, gravity is apparently out for blood, giving Alan a great fall.
+
+'''Note:''' Players who wish to keep [[Alan's bones]] as a souvenir should ensure they do not have a [[bonecrusher]] or [[bonecrusher necklace]] on their person before fixing Bumpty Numpty, as the bonecrusher deems the player responsible for his death and will automatically crush his bones.
+
+<gallery captionalign="center" heights="200" widths="300">
+File:Scrambled! - judging eggs.png|The player and King's men judging their eggs.
+File:Scrambled! - three great falls.png|Gravity causes several great falls.
+File:Scrambled! - Alan's great fall.webm|Alan has a great fall.
+</gallery>
+
+'''Congratulations, quest complete!'''

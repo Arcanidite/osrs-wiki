@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = The Curse of Arrav
+|image = [[File:The Curse of Arrav reward scroll.png|center]]
+|qp = 2
+|rewards = 
+* {{SCP|Mining|40,000|link=yes}} [[experience]]
+* {{SCP|Thieving|40,000|link=yes}} [[experience]]
+* {{SCP|Agility|40,000|link=yes}} [[experience]]
+* Access to [[Zemouregal's Fort]].
+}}

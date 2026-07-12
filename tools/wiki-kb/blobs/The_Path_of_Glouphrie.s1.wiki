@@ -1,0 +1,39 @@
+==Details==
+{{Quest details
+|start = Speak to [[King Bolren]] in the [[Tree Gnome Village (location)|Tree Gnome Village]].
+|startmap = 2540,3171
+|difficulty = Experienced
+|description = King Bolren has a new pet. Unfortunately, it's another watcher, like the ones unmasked in the Tree Gnome Stronghold during The Eyes of Glouphrie. Has Glouphrie been watching the Tree Gnome Village, too? If you investigate further you'll find out more about Glouphrie, the history of the gnomes (and their unusual monarchy) and maybe you'll get within a hair's breadth of the lost city of Arposandra...
+|length = Medium
+|requirements = * Completion of the following quests:
+** [[The Eyes of Glouphrie]]
+*** [[The Grand Tree]]
+** [[Waterfall Quest]]
+** [[Tree Gnome Village]]
+* {{SCP|Strength|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Slayer|56|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Thieving|56|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Ranged|47|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Agility|45|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = * [[Key (Tree Gnome Village Dungeon)|Tree Gnome Village Dungeon key]] (unless [[Roving Elves]] has been started) (obtainable during the quest)
+* Combat equipment and some food
+* [[Mith Grapple]]
+* Any [[Crossbow_(weapon)|crossbow]]
+|recommended = * [[Earmuffs]] or a [[slayer helmet]] to reduce damage dealt by the [[warped terrorbird]]'s ranged attacks
+* [[Grand seed pod|Grand]] or [[royal seed pod]] (for fast access to the [[Gnome Stronghold]])
+* Grand Exchange [[Varrock teleport]]s (for fast access to a [[spirit tree]])
+* Access to [[fairy ring]]s
+* Several [[stamina potion|stamina]] or [[energy potion]]s
+* A [[tangled toad's legs]] to claim an optional [[mint cake]] reward from [[Longramble]] worth {{Coins|{{GEP|mint cake}}}}
+* High healing [[food]]
+* [[Prayer potion]]s
+|kills = *3 [[Warped Terrorbird]]s (level 138)
+*[[Evil Creature]] (level 1)
+|ironman = * {{SCP|Fletching|59|link=yes}} {{Boostable|yes}} to make a [[mith grapple]]
+* {{SCP|Smithing|59|link=yes}} {{Boostable|yes}} to make a [[mith grapple tip]]
+'''OR'''
+* {{SCP|Firemaking|35|link=yes}} {{Boostable|no}} for [[Barbarian Firemaking]], to access the [[Ancient Cavern]], and the means to defeat level 132 enemies for a 1/42.67 chance at a [[mith grapple]] drop (ideally the [[skeleton brute]]).
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}

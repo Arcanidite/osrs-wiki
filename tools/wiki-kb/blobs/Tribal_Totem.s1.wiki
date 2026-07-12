@@ -1,0 +1,16 @@
+==Details==
+{{Quest details
+|start = Talk to [[Kangai Mau]] at [[The Shrimp and Parrot]] restaurant in [[Brimhaven]].
+|startmap = 2791,3182
+|difficulty = Intermediate
+|description = Lord Handelmort of Ardougne is a collector of exotic artefacts. A recent addition to his private collection is a strange looking totem from Karamja. The Rantuki tribe are not happy about the recent disappearance of their totem.
+|length = Very Short
+|requirements = * {{SCP|Thieving|21|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+|items = None
+|recommended = 
+*Fast travel to [[Brimhaven]] to start the quest - [[Brimhaven teleport]], [[Teleport to House]] (Brimhaven), 30 [[coins]] to travel from [[Ardougne]] docks using [[Captain Barnaby]], or take a [[charter ship]]
+*30 [[coins]] to travel from [[Brimhaven]] docks with [[Captain Barnaby]] to [[Ardougne]]. This is the recommended route to [[Ardougne]] as you end up by the next part of the quest, but you can otherwise use an [[Ardougne Teleport]]
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}

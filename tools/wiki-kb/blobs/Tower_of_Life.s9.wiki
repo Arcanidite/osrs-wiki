@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Tower of Life
+|image = [[File:Tower of Life reward scroll.png|centre]]
+|qp = 2
+|rewards =
+*{{SCP|Construction|1,000}} [[Construction]] [[experience]]
+*{{SCP|Crafting|500}} [[Crafting]] experience
+*{{SCP|Thieving|500}} [[Thieving]] experience
+*Access to [[Creature Creation]]
+*[[Builder's costume]]
+}}

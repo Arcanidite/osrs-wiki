@@ -1,0 +1,16 @@
+===Making repairs===
+{{Checklist|
+* Repair [[Elder Krill]]'s stall (the fish stall on the north side of the marketplace):
+** 1 sea shell, 1 Tortugan scute, 2 Jatoba logs.
+* Repair the south wall of Elder Krill's store (directly north of his marketplace stall):
+** 2 Tortugan scute, 2 Jatoba logs.
+* Repair the north wall of [[Elder Strom]]'s store (west of the marketplace):
+** 2 Tortugan scutes, 2 Jatoba logs.
+* Repair Elder Strom's crate (On the west side of the marketplace, east outside of his store):
+** 2 sea shells, 1 Jatoba log.
+* Repair [[Elder Coco]]'s stall (on the south side of the marketplace - Crafting stall)
+** 1 sea shell, 1 Tortugan scute, 2 Jatoba logs.
+* Repair Elder Coco's crate (directly south of his marketplace stall, north of the building)
+** 2 sea shells, 1 Jatoba log.
+* Speak to [[Elder Raley]] again.
+}}

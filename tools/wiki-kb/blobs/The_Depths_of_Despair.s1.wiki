@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|start = Talk to [[Lord Kandur Hosidius]] at his home in [[Hosidius]], north-west of the [[Vinery]].
+|startmap = 1782,3570
+|difficulty = Intermediate
+|description = Artur Hosidius has gone missing, and Lord Kandur Hosidius needs your help to find his son and bring him home.
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Client of Kourend]]
+***[[X Marks the Spot]]
+*{{SCP|Agility|18|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Ability to kill a level 36 [[Sand Snake]]
+|items = 
+|kills = [[Sand Snake]] ''(level 36)''
+|recommended = *{{SCP|Combat|15|link=yes}}
+*[[Skills necklace]] to teleport to [[Woodcutting Guild]]
+*[[Xeric's talisman]]
+*[[Super energy]]/[[Stamina potion]]s
+*A [[weapon]]
+*[[Food]] (if low level)
+*An [[Arceuus Library Teleport]]
+*[[Dramen staff|Dramen]]/[[Lunar staff]] for [[fairy ring]] teleport to [[Arceuus]], [[Ardougne cloak 1]]'s monastery teleport brings you close to a fairy ring as well as the amulet of glory to Edgeville then running east to the grand exchange fairy ring. Alternatively, if you haven't completed the Ardougne easy diary, a [[Games necklace]] to teleport to Wintertodt.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kourend}} {{okay}} will auto-complete the quest
+</poem>
+}}

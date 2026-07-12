@@ -1,0 +1,15 @@
+==Rewards==
+{{Quest rewards
+|name = The Great Brain Robbery
+|image = [[File:The Great Brain Robbery reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Prayer|6,000}} [[Prayer]] experience
+*{{SCP|Crafting|3,000}} [[Crafting]] experience
+*{{SCP|Construction|2,000}} [[Construction]] experience
+*[[Blessed lamp]] ({{SCP|Overall|5,000}} experience in a chosen skill above level 30 and can be placed in your bank)
+*[[Barrelchest anchor]] (To repair your barrelchest anchor, return to [[Mos Le'Harmless]] and make sure you have a [[book o' piracy]] in your inventory; then, go to the docks south of the bank and talk to "[[Smith]]." He can fix your anchor for 230,000 coins.)
+*[[Prayer book]]
+*Ability to cast [[Harmony Island Teleport]] on the [[Arceuus spellbook]]
+*Ability to fight the [[Barrelchest]] within the [[Nightmare Zone]].
+}}

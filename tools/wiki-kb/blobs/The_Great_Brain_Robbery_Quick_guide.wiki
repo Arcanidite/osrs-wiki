@@ -1,0 +1,78 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|The Great Brain Robbery}}
+
+==Walkthrough==
+===Scouting===
+{{Needed|4 planks, at least 20 nails, a hammer, & equipment to breathe underwater([[fishbowl helmet]] & [[diving apparatus]], or [[Medallion of the deep]]).|recommended=A teleport to [[Edgeville Monastery]] if continuing to the next section immediately, and bring 3 [[watermelon seed]]s, a [[rake]], and a [[seed dibber]] to complete the hard [[Morytania Diary]] task.}}
+:'''Note:''' Don't bring any [[pet]]s!
+{{Map|name=Brother Tranquility|x=3681|y=2963|r=3|mtype=square|align=right|width=250|height=250|caption=The quest's start point.}}
+{{Checklist|
+*Talk to [[Brother Tranquility]] on [[Mos Le'Harmless]] near the dock. {{Chat option|1}} (Finish the dialogue, or you will be teleported back to Mos Le' Harmless)
+**When doing the Hard [[Morytania Diary]] task, plant [[watermelon seed]]s now to be able to harvest them at the end of the quest.
+**Beware of aggressive Level 57 [[Zombie pirate (Harmony Island)|zombie pirates]] throughout the island.
+*Leave the windmill and head north, pull on the statue and climb down.
+*Equip your item(s) to breath underwater then descend.
+*Repair the stairs at the end of the tunnel and climb up.
+*Climb up the ladder then peer through the peephole.
+*Return to [[Brother Tranquility]], talk to him to be transported back to Mos Le' Harmless {{Chat option|1}}, then talk to him again there.}}
+
+===The prayer book===
+{{Needed|A [[Holy symbol]]|recommended=[[Ectophial]]}}
+{{Checklist|*Go to the [[Edgeville Monastery]] and search the bookcase in the south-west corner of the {{FloorNumber|uk=0}}. (This is a good time to bless your symbol if it isn't already, see [[Brother Jered]])
+*Read the book.
+*Equip a [[Holy Symbol]] and return to [[Mos Le' Harmless]].
+*Talk to [[Brother Tranquility]] to return to Harmony Island.
+*Right click the book "recite prayer" inside of the windmill.
+*Talk to Brother Tranquility. {{Chat option|1}}
+}}
+
+===The doctor===
+{{Needed|[[Ring of Charos]], 4 [[plank]]s (14 if making the [[wooden cat]]s, 10 pieces of fur), 10 wooden cats, 100 nails (to be sure you have enough), and a hammer, 2 free spaces. Crate parts and wolf whistle are needed but obtained during this section.|recommended=Ectophial or Mos' Le Harmless teleport scroll to teleport away once the final step is complete.}}
+{{Checklist|
+*Talk to [[Dr Fenkenstrain]] (jail on the top floor of his castle north-east of [[Canifis]]).
+** To get to the jail take the stairs to the east or west.
+** Walk through the metal gate.
+** Go up the ladder.
+*Equip your [[Ring of Charos]], keep it equipped through this section.
+*Talk to [[Rufus]] in Canifis (food store). {{Chat option|1}} (until you receive a [[wolf whistle]] and a [[crate part]])
+*Make 10 [[wooden cat]]s on a clockmaker's bench in your house (10 planks and 10 furs).
+*Build a crate next to Dr Fenkenstrain, add a false bottom (4 planks and nails), and fill it with the wooden cats.
+*Blow the wolf whistle.
+*Rufus will appear and will give you a [[Shipping order]].
+*Put the Shipping order on the crate.
+}}
+
+===Making the transplants===
+{{Needed|A hammer (the [[Imcando hammer]] does not work), equipment to breathe underwater ([[fishbowl helmet]] & [[diving apparatus]], or [[Medallion of the deep]]), combat equipment and 7 empty inventory slots.}}
+{{Checklist|
+*Return to [[Harmony Island]] and enter the windmill basement.
+*Talk to [[Dr Fenkenstrain]].
+*Equip your item(s) to breath underwater before leaving the windmill and go north to the shipwreck.
+*Search the [[locker (The Great Brain Robbery)|locker]] for a [[fuse (The Great Brain Robbery)|fuse]]. Climb the ladder and get a [[tinderbox]] and a [[Keg (The Great Brain Robbery)|keg]]. 
+*Go south a bit to the monastery and use the keg and fuse on the door. Light the fuse.
+*Enter and kill 4 [[Sorebones]] for a Cranial clamp, Brain tongs, 3 Bell jars, and 30 Skull staples.
+*Climb-down the ladder in the mill and talk to Dr Fenkenstrain.
+*Climb up and talk to [[Brother Tranquility]], prepare for the fight.
+}}
+
+===The big battle===
+{{Needed|Combat equipment & equipment to breath underwater([[fishbowl helmet]] & [[diving apparatus]], or [[Medallion of the deep]]).}}
+{{Instance}}
+{{Checklist|
+*Return to the Harmony island monastery and Confront [[Mi-Gor]] to start the fight against [[Barrelchest]].
+**You must wear your equipment to breath underwater.
+**Each attack will disable your prayer and remove a few prayer points.
+**When adjacent he will only attack with melee.
+**Re-enabling prayer after each attack will prevent you from taking any damage.
+**Alternatively you can leave the monastery and re-enter; the boss will get stuck and can be safespotted from the entrance.
+*Talk to [[Brother Tranquility]].
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|The Great Brain Robbery}}
+
+{{The Great Brain Robbery}}

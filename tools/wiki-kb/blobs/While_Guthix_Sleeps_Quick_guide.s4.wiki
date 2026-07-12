@@ -1,0 +1,66 @@
+===Monitoring Movario===
+{{Needed|500 [[coins]] or [[ring of Charos(a)]], [[logs]], [[knife]], 5 free inventory spaces|recommended=A [[Taverley teleport|teleport back to Taverley]] and a [[Dramen Staff]]; [[Lunar staff]]; or completed the Lumbridge Elite Diary}}
+{{Checklist|
+* Head to the [[Fight Arena (location)|Fight Arena]] just north of [[Yanille]].
+* Speak to the [[Khazard Launderer]] at the laundry house, two buildings north of the [[Fight Arena Bar]]. Charm the launderer with either the [[ring of Charos(a)]] or bribe him with 500 coins for information on Movario. {{Chat option|1Would 500 coins change your mind?}}
+* Head to [[Feldip Hills]] ([[fairy ring]] code {{fairycode|AKS}}), and talk to the [[Hunting Expert]] ({{Map|type=maplink|x=2525|y=2916|r=2|mtype=square}}). {{Chat option|2A creature to help track down a person.}} ({{Chat option|3A creature to help track down a person.}} if you're 99 Hunter)
+* Set up a pit trap to the west and bait it.
+* Dismantle the trap to receive an [[unconscious broav]], then return to the expert to have her train it.
+* With the trained [[broav]], head to the run-down house in the [[battlefield]] ({{Map|type=maplink|x=2519|y=3249|mtype=pin}}) where a broken table will be found. '''Drop''' the [[broav]] (not release) and use the [[dirty shirt]] on the broav; once it *squeals*, you will be able to right-click "Search" on the broken table.
+* Climb-down the trapdoor to [[Movario's base]].
+* Run north-west, and search the open chest for a number of runes.
+* Climb down the stairs.
+* Inspect the old battered door, and pay close attention to the word "PROHIBITED"; one of the letters is stylised after a rune, which is the rune you must use to open the door, which is different for every player. 
+**Warning: Using an incorrect rune will result in the door dealing 20+ damage to you. However, if you do choose incorrectly, the spell's colour indicates the correct rune:
+}}
+{|class=wikitable style="text-align:center;"
+|-
+!Symbol
+!Letter
+!Rune
+!Blast colour
+|-
+| [[File:Old battered door - stylised O (mind).png|link=]]
+| O
+| {{plinkp|Mind rune}}
+| Purple
+|-
+| [[File:Old battered door - stylised H (earth).png|link=]]
+| H
+| {{plinkp|Earth rune}}
+| Green 
+|-
+| [[File:Old battered door - stylised E (air).png|link=]]
+| E
+| {{plinkp|Air rune}}
+| White
+|-
+| [[File:Old battered door - stylised E (fire).png|link=]]
+| E
+| {{plinkp|Fire rune}}
+| Red
+|-
+| [[File:Old battered door - stylised D (water).png|link=]]
+| D
+| {{plinkp|Water rune}}
+| Blue
+|}
+{{Checklist|
+* Upon using the correct rune, open the door.  NOTE: You must be above a certain weight. If you're wearing graceful/weight-reducing items, unequip them.
+* Once inside, search the bookcases until the chatbox indicates that you hear a click as you pull a lever (or an audible click sound).
+* From that initial bookcase, follow the floor wires that illuminate to search the subsequent bookcase, continuing to do so until the chatbox indicates the electric gate deactivating.
+* Open the gate which is no longer electrified. Right-click search the spiral staircase to disable the trap, and then climb the spiral staircase.
+* Search the desk to obtain [[Movario's notes (volume 1)]], and read through it (22 pages) (do not interact with the [[Treasure pile]] to the north west as it will deal 20+ damage to you).
+* Pick up the waste-paper basket next to the desk, then search it for a [[Ruby key (While Guthix Sleeps)|ruby key]].
+* Use the key on the north-western most bookcase in the room, against the west wall.
+* Climb the staircase and search the bed, then use the ruby key on the bed chest.
+*  Search the bed chest to disable the trap, then attempt to open the bed chest. If you don't do this you will get hit for 18+ damage.
+* Search the bed chest again, then open it for [[Movario's notes (volume 2)]]; read through it.
+* Head back downstairs and head to the southern side of the room and inspect the painting on the wall, pull the lever and cross over the broken wall.
+* Inside, search the drawers to obtain some [[notes on pressure]], and read through it.
+* Check the pressure gauge, which displays a number in the unit of "tickits"; this value represents how much you weighed upon entering the room with the wires in the beginning.
+* Check your weight in the [[Equipment Stats]] interface, and take from the pile of weights nearby with 1kg, 2kg, and 5kg being available.
+* Pick out the weights as needed to match the pressure gauge's value. If you weigh more than the required tickit, place weights on the statue in the room by the desk. If you weigh less, pick up weights and keep it in the inventory. 
+**If you weigh 11 kg, and the pressure gauge says 9 tickits. You need to pick up a 2 kg stone and place it on the stone statue. If the pressure gauge says 13 kg and you weigh 11 kg, pick up a 2 kg rock and keep it in your inventory.
+* Exit via the eastern door and leave the base (you will be attacked by the [[Elite Khazard Guard]]s again upon exit).
+}}

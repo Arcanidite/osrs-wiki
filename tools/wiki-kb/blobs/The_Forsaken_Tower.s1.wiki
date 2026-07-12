@@ -1,0 +1,28 @@
+==Details==
+{{Quest details
+|start = Talk to [[Lady Vulcana Lovakengj]] in [[Lovakengj]].
+|startmap = 1483,3748
+|difficulty = Intermediate
+|description = For thousands of years, the Wintertodt has remained safely sealed behind the great Doors of Dinh. Alas, despite the best attempts of the Lovakengj smiths and the Arceuus mages, the doors are failing. Only Dinh himself knew the secrets behind the creation of these doors. Without his knowledge, there may be nothing to stop the Wintertodt escaping and bringing ruin upon Kourend. It is up to you to recover this knowledge.
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Client of Kourend]]
+***[[X Marks the Spot]]
+|items = *[[Tinderbox]] (obtainable during quest)
+|recommended = *[[Antipoison]]
+*[[Food]]
+*[[Stamina potion]]
+*80 Coins to use the [[Lovakengj Minecart Network]]
+*Teleports to the quest start, [[Lovakengj Assembly]]:
+**[[Xeric's talisman]]
+**[[Fairy ring]] code {{fairycode|djr}}, may require a [[dramen staff|dramen]] or [[lunar staff]]
+**[[Battlefront teleport]]
+**[[Kharedst's memoirs]] with Shayzien teleport
+*[[Wintertodt]] Teleport:
+**[[Games necklace]]
+*Bring 6 [[Coal]] and 1 [[Adamantite ore]] to complete a [[Hard Kourend & Kebos Diary]] task (requires {{SCP|Smithing|70|link=yes}} {{Boostable|yes}})
+|kills = None
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kourend}} {{okay}} will auto-complete the quest
+</poem>
+}}

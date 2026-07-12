@@ -1,0 +1,58 @@
+==Details==
+{{Quest details
+|start = Talk to [[Brundt the Chieftain]] in [[Rellekka]].
+|startmap = 2658,3668
+|difficulty = Master
+|description = The Fremennik bards often sing tales of the past. Of great battles, deadly foes and heroes long gone. However, in recent years, things have been much quieter in the Province, as there's increasingly less to sing about. All that is about to change though, as what starts off as a simple investigation soon leads to one of the greatest threats the Fremennik have ever seen.
+|length = Medium
+|requirements = *{{SCP|Crafting|65|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Slayer|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Smithing|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Fishing|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Runecraft|55|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Mining|60|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+*Completion of the following quests:
+**[[The Fremennik Isles]]
+***[[The Fremennik Trials]]
+**[[Lunar Diplomacy]]
+***[[Lost City]]
+***[[Rune Mysteries]]
+***[[Shilo Village]]
+****[[Jungle Potion]]
+*****[[Druidic Ritual]]
+**[[Mountain Daughter]]
+**[[Heroes' Quest]]
+***[[Dragon Slayer I]]
+***[[Lost City]]
+***[[Merlin's Crystal]]
+***[[Shield of Arrav]]
+|items = *[[Combat equipment]]
+*[[Mirror shield]]
+*2 [[Kegs of beer]] (cannot be obtained in Rellekka during quest, buy from [[Thora the Barkeep]] before starting the quest)
+*1 [[Molten glass]]
+*100 [[Astral rune]]s
+*[[Pet rock]]
+*[[Fishing rod]] or [[fly fishing rod]]
+*[[Fremennik shield]] (this is '''not''' the tradeable [[Neitiznot shield]])
+**Alternatively, get it from [[Bardur]] AFTER being exiled, for either {{coins|150000}} '''or''' for free using a [[Ring of charos (a)]]
+**Recommended: [[Rune thrownaxe]]s or {{SCP|Agility|85|link=yes}} to get to [[Bardur]] in the [[Waterbirth Island Dungeon]]
+*[[Ice gloves]] or [[Smiths gloves (i)]]
+*[[Hammer]]
+*[[Glassblowing pipe]]
+*3 [[Lunar bar|Lunar bars]]
+**Or a [[pickaxe]] to obtain 3  [[Lunar ore|ores]] to turn into [[Lunar bar|Lunar bars]] (requires {{SCP|Mining|60|link=yes}} {{Boostable|yes}}). 
+*[[Seal of Passage]] (if the [[Fremennik diaries|elite Fremennik diaries]] aren't completed)
+|recommended = *{{SCP|Combat|80|link=yes}}
+*[[Stamina potion]]s
+*[[Moonclan teleport (tablet)]]s
+*[[Food]] ([[Monkfish]] or better)
+*[[Enchanted lyre]], [[Fremennik sea boots]], or other means to return to [[Rellekka]]
+|kills = *[[Basilisk Youngling]] (level 53)
+*[[Basilisk]] (level 61)
+*[[Monstrous Basilisk (The Fremennik Exiles)|Monstrous Basilisk]] (level 135)
+*[[Typhor]] (level 218)
+*[[The Jormungand]] (level 363)
+|leagueRegion = <poem>
+{{LeagueRegion|Fremennik}} — location requirement
+</poem>
+}}

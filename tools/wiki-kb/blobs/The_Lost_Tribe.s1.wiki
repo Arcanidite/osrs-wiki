@@ -1,0 +1,26 @@
+==Details==
+{{Quest details
+|start = Talk to [[Sigmund]] in [[Lumbridge Castle]].
+|startmap = 3210,3222,plane:1
+|difficulty = Intermediate
+|description = Sigmund is the advisor to the [[Duke Horacio|Duke]] of Lumbridge, but the [[Duke Horacio|Duke]] does not always take his advice.
+
+When part of the cellar wall collapses the [[Duke Horacio|Duke]] insists the damage was caused by an earthquake, but Sigmund is worried about a monster attack.
+
+If you investigate this mystery it will lead you through treacherous caves to uncover something lost by the Gods for thousands of years.
+|length = Short
+|requirements = * Completion of the following quests:
+** [[Goblin Diplomacy]]
+** [[Rune Mysteries]]
+* {{SCP|Agility|13|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* {{SCP|Thieving|13|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+* {{SCP|Mining|17|link=yes}} {{Boostable|yes}} {{Questreqstart|}}
+|items = * [[Pickaxe]]
+* [[Light source]] ('''Note:''' [[Candle]]s, [[torch]]es, and [[oil lamp]]s can cause [[swamp gas]] explosions if going off-route, and need a tinderbox to stay lit)
+|recommended = * Fast travel to [[Varrock]], [[Falador]], [[Lumbridge]], and [[Mind Altar Teleport]] ([[teleport spells]] or [[teleport tablet|tablets]])
+* [[Lockpick]] for the [[H.A.M. Hideout]] if Thieving is low.
+* Stamina potion if below 70 Agility
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

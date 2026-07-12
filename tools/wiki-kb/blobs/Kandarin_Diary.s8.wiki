@@ -1,0 +1,65 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Kandarin" data-diary-tier="Elite"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Read the [[Blackboard (Barbarian Assault)|Blackboard]] at [[Barbarian Assault]] after reaching level 5 in every role.
+''Note: These levels are [[Barbarian Assault#Rewards|bought]] with [[honour points]]. Assuming no points are spent on armour or [[Barbarian Assault/Gambles|gambles]], you'll need a total of 5,600 points (1,400 per role). In Deadman Mode, the task is instead "Read the Blackboard at Barbarian Assault after finishing your training."''
+|
+*See the [[Barbarian_Assault#Gameplay|gameplay overview]] and the [[Barbarian Assault/Strategies|strategy guide]]
+|-
+|2. Pick some [[Dwarf weed]] from the [[herb patch]] at [[Catherby]].
+''Note: This is the [[herb patch]] next to [[Dantaera]].''
+|
+*{{SCP|Farming|79|link=y}}
+*[[Dwarf weed seed]], [[spade]], [[seed dibber]] (or [[Barbarian Farming]]), and a [[rake]]
+*[[Ultracompost]] recommended
+|-
+|3. Fish and Cook 5 [[Shark]]s in [[Catherby]] using the [[Cooking gauntlets]].
+''Note: You specifically have to use the [[range]] in the building between the [[Catherby bank]] and the [[Hickton's Archery Emporium.|archery shop]], the one in the building immediately north of that doesn't count.''
+
+''Extra [[shark]]s provided by [[Rada's blessing]] don't add up to the required number. Completing or updating any other task in-between these steps will reset the progress for this task.''
+|
+*{{SCP|Quest}} Completion of [[Family Crest]]
+*{{SCP|Fishing|76|link=y}} and {{SCP|Cooking|80|link=y}}
+*[[Harpoon]] (or [[Barbarian Training|Barbarian Fishing]]) and [[cooking gauntlets]]
+|-
+|4. Mix a [[Stamina Mix]] on top of the [[Seers' Village bank]].
+''Note: You have to start the [[Seers' Village Agility Course]] to climb on top of the bank.
+|
+*Access to [[Barbarian Herblore]]
+*{{SCP|Herblore|86|link=y}} and {{SCP|Agility|60|link=y}}
+*[[Stamina potion (2)]] and [[caviar]]{{efn|[[Ironman Mode|Ironmen]] must either have access to [[Fossil Island]] to kill [[Lobstrosity|lobstrosities]] for the [[caviar]], or use a [[knife]] on a [[leaping sturgeon]] (see the first [[#Hard|hard task]] of this diary for the requirements to catch one).}}
+|-
+|5. Smith a [[Rune Hasta]] at [[Otto's Grotto]].
+|
+*Access to [[Barbarian Smithing]]
+*{{SCP|Smithing|90|link=y}}
+*[[Runite bar]], [[magic logs]], and a [[hammer]]
+|-
+|6. Construct a [[Pyre ship]] from [[Magic Logs]].
+''Note: You must use [[chewed bones]] for the ship, not [[mangled bones]].''
+|
+*Access to [[Barbarian Firemaking]]
+*{{SCP|Firemaking|85|link=y}} {{boostable|y}} and {{SCP|Crafting|85|link=y}} {{boostable|y}} 
+*[[Magic logs]], [[chewed bones]], [[tinderbox]], and any [[woodcutting axe]]
+|-
+|7. Teleport to [[Catherby]].
+''Note: [[Tele Group Catherby]] will also work here.''
+|
+*{{SCP|Quest}} Completion of [[Lunar Diplomacy]]
+*{{SCP|Magic|87|link=y}}
+*[[Lunar spellbook]] selected
+*Means to cast [[Catherby Teleport]] ({{RuneReq|Law=3|Astral=3|Water=10}})
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Kandarin headgear 4]]:
+**Unlimited teleports to [[Sherlock]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*The first 200 [[coal]] placed in the [[coal trucks]] every day will automatically be transported to your [[bank]]
+*The [[flax keeper]] will offer you 250 [[Bank note|noted]] [[bow string]]s every day for 250 noted [[flax]], for a profit of {{NoCoins|({{GEP|Bow string}}-{{GEP|Flax}})*250}} [[coins]] on the [[Grand Exchange]]
+*15% increased chance to save a [[Farming#Variable crop yield|"harvest life"]] at the [[herb patch]] in [[Catherby]], up from 10%
+*50% discount on [[Thormac]]s' [[Mystic staff|enchanting]] services, up from 25% (requires completion of [[Scorpion Catcher]])
+*[[Otto Godblessed]] now turns your [[Zamorakian spear]] into a [[Zamorakian hasta]] for 150,000 [[coins]], down from 300,000 [[coins]]

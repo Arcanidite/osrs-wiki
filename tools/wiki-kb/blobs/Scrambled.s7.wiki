@@ -1,0 +1,9 @@
+====Kauayotl====
+[[File:Scrambled! - repairing racing cart.png|thumb|250px|Repairing Kauayotl's racing cart.]]
+From the temple, head directly east to the eastern entrance of Tal Teklan, where you will find [[Kauayotl]] with a damaged cart. In order to help you, he will first need to sort out his racing cart. Offer to help repair it, and he will tell you what you'll need:
+* Two planks - if you did not pick up two planks earlier, there are two spawns south of the city.
+* Nails - search the [[Blacksmith (Tal Teklan)|blacksmith's]] workbench for 20 [[iron nails]].
+* Hammer - spawns on the table south-west of the workbench
+* Saw - spawns on a table in [[Arcuani's Archery Supplies]] just south of the blacksmith.
+
+Return to Kauayotl, repair the damaged cart, and speak to him again to have him on his way to the temple.

@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = The Hand in the Sand
+|image = [[File:The Hand in the Sand reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Thieving|1,000}} [[Thieving]] experience
+*{{SCP|Crafting|9,000}} [[Crafting]] experience
+*Ability to buy [[pink dye]] from [[Betty]]
+*A secret reward from [[Bert]] - He simply loves sand, and wasn't in the job for the money. He will ship 84 [[buckets of sand]] to your bank if you talk to him after the quest. This can be done once per day (UTC). Asking Bert to take sand to your bank is also an [[Ardougne Medium]] task.
+*Access to the [[Wizards' Guild]] [[Magic Guild Store (Runes and Staves)|rune store]]
+}}

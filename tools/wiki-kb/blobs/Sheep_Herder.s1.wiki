@@ -1,0 +1,16 @@
+==Details==
+{{Quest details
+|start = Talk to [[Councillor Halgrive]] outside of the [[East Ardougne]] church.
+|startmap = 2617,3299
+|difficulty = Novice
+|description = Dispose of plagued sheep and save Ardougne!
+|length = Short
+|items = * 100 [[coins]]
+|recommended = * [[Energy restoring items]]
+*Fast travel to [[East Ardougne]] to start the quest - [[Ardougne Teleport]] or [[Skills necklace]] to [[Fishing Guild]] or [[Spirit tree]] to [[Battlefield]] or [[fairy ring]] to {{fairycode|djp}} or [[Captain Barnaby]]'s ship from [[Rimmington]] or [[Brimhaven]]
+*Optionally a [[Skills necklace]] to save some time when walking from [[East Ardougne]] to the [[Fishing Guild]]
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

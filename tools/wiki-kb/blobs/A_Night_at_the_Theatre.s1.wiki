@@ -1,0 +1,43 @@
+==Details==
+{{Quest details
+|start = Talk to the [[Mysterious Stranger]] inside [[Ver Sinhaza]], south-east of [[Meiyerditch]].
+|startmap = 3673,3224
+|difficulty = Master
+|description = The Mysterious Stranger lurks outside of the mighty Theatre of Blood, the centrepiece of Ver Sinhaza. This shadowy figure has a new request for you – to humiliate a vampyre noble by the name of Lady Verzik Vitur. Take on the challenges that lie within the Theatre to reach her and bring a blush to her bloodless face!
+|length = Medium
+|requirements = 
+*Completion of the following quests:
+**[[A Taste of Hope]]
+***[[Darkness of Hallowvale]]
+****[[In Aid of the Myreque]]
+*****[[In Search of the Myreque]]
+******[[Nature Spirit]]
+*******[[Priest in Peril]]
+*******[[The Restless Ghost]]
+|items =*[[Ivandis flail]] or [[Blisterwood flail]]
+*[[Saw]] ([[crystal saw]] also works)
+*[[Ghostspeak amulet]] ([[Morytania legs 2]] or better also work)
+*Any [[axe]] besides the [[blessed axe]]
+|recommended =
+*{{SCP|Combat|95|link=yes}}
+*[[Stamina potion|Stamina]] or [[Energy Potion]]s
+*[[Drakan's medallion]]
+*[[Anti-venom]] or 2 doses of [[antipoison]] to cure venom.
+**Additional [[antipoison]] when fighting the [[Hespori (A Night at the Theatre)|hespori]].
+*Access to [[fairy rings]] for quick access to the [[Nature Grotto]].
+*[[Druid pouch]] to protect food whilst in [[Mort Myre Swamp]], or have lit the [[Fire of Dehumidification]]
+*High-end combat equipment with the ability to poison or venom, and high healing food. Bringing all combat styles is highly recommended.
+|kills =*[[Vyrewatch]] (Level 105)
+*Several venomous [[araxyte]] (Levels 96 and 146) (can be avoided)
+*[[Hespori (A Night at the Theatre)|Hespori]] (Level 302)
+*All [[Theatre of Blood]] bosses (optional, if a kill count has been acquired before starting the quest):
+**[[The Maiden of Sugadinti]] and [[Nylocas Matomenos]]
+**[[Pestilent Bloat]]
+**[[Nylocas Toxobolos]], [[Nylocas Hagios]], [[Nylocas Ischyros]] and [[Nylocas Vasilias]]
+**[[Sotetseg]]
+**[[Xarpus]]
+**[[Verzik Vitur]], [[Nylocas Athanatos]] and Nylocas Matamenos
+|leagueRegion = <poem>
+{{LeagueRegion|Morytania}} — location requirement
+</poem>
+}}

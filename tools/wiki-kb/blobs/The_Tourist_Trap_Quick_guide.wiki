@@ -1,0 +1,92 @@
+{{external|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|The Tourist Trap}}
+
+==Walkthrough==
+===Getting started===
+{{Checklist|
+*Begin the quest by talking to [[Irena]], located just south of [[Shantay Pass]] (fairy ring {{Fairycode|BIQ}}, then run north-east). {{Chat option|1What's the matter?}}
+}}
+
+===Getting into the camp===
+'''''Recommended:''' [[Food]] and combat equipment.''
+{{Checklist|
+*Go to the [[Desert Mining Camp]] entrance (south of Irena).
+*Talk to the [[Mercenary Captain]]. {{Chat option|1Wow! A real captain!|2I'd love to work for a tough guy like you!|2Can't I do something for a strong Captain like you?|2Sorry Sir, I don't think I can do that.|1It's a funny captain who can't fight his own battles!}}
+*He will attack you. Kill him and get the [[Metal key|key]] of the gate. (All damage can be dealt via recoil)
+}}
+'''{{Colour|Red|Warning}}:''' You will be arrested if you skip the dialogue and attack him, or sent into the desert without waterskins during which time heat damage can be queued instantly killing players with low health.
+
+'''Note''': A [[dwarf multicannon]] can be set up west of the gate and the mercenary captain can be lured to the edge of his roaming area where the cannon will be able to hit him.
+
+{{Checklist|
+*Unequip any weapons AND armour and enter the gate.
+Note: Graceful outfit does not get you jailed as long as its not worn in place of the desert clothing.}}
+'''{{Colour|Red|Warning}}:''' You will be jailed if you equip armour or weapons or unequip your slave clothing while inside the camp! <u>Guards are also occasionally aggressive toward the player, so low-levels should be careful.</u>
+
+===Getting into the mine===
+{{Checklist|
+*Talk to the Male slave on the east wall (not the south-east wall) when a guard is not nearby. {{Chat option|1I've just arrived.|2Oh yes, that sounds interesting.|1What's that then?|1I can try to undo them for you.|1It's funny you should say that...|1Yeah, okay, let's give it a go.|1}} If you've already talked to him. {{Chat option|1Yeah, okay, let's give it a go.|1Yes, I'll trade.}} If they spot you attempting to break the slave's cuffs you will be sent to the jail. To escape the jail you must bend the bars on the window, climb out, then climb over the rock wall and cliff. Then enter through the gate again.
+*Equip the slave's clothes
+*Enter the mine to the north
+Warning: There are aggressive NPCs in this mine be careful if you are low level
+
+*Follow the path until you reach a guarded cave entrance.
+*Talk to one of the guards until he mentions a Tenti pineapple. {{Chat option|2I'd like to mine in a different area.|2Yes sir, you're quite right sir.|2Yes sir, we understand each other perfectly.}}
+*Run back to the surface, unequip ALL pieces of your slave robes and leave the desert camp through the front gate, or return to fairy ring {{Fairycode|BIQ}}.
+}}
+'''{{Colour|Red|Warning}}:''' You will be jailed if you don't unequip your slave robes before leaving the camp through the front gate OR if you exit the mine through the doors with them unequipped!
+
+===The plans===
+{{Checklist|
+*Talk to [[Al Shabim]] in the south tent in the [[Bedabin Camp]] (directly west of the Desert Mining Camp). You will be given a [[Bedabin key]]. {{Chat option|1I am looking for a pineapple.|1Yes, I'm interested.}}
+*Go back to the Desert Mining Camp. '''(Make sure to put on your slave outfit (and unequip anything else) before entering the gate. If you inadvertently dropped your slave outfit, you can get another one from a slave by repeating the earlier trade with the desert clothing.)'''
+*Go up the ladder in the jail building and search the southernmost [[bookcase (The Tourist Trap)|bookcase]] on the western wall. A message should pop up stating '''"You notice several books on the subject of sailing."'''
+*In the same room, talk to [[Captain Siad]]. {{Chat option|1I wanted to have a chat?|5You seem to have a lot of books!|3So, you're interested in sailing?|1I could tell by the cut of your jib.}}
+*Open the chest to obtain the [[technical plans]]. (Make sure you click continue, so the plans go to your inventory)
+*Go back to the Bedabin Camp and show Al Shabim the plans. {{Chat option|1Yes, I'm very interested.|1Yes, I'm kind of curious.}}
+*Use the anvil in the northern tent. Following the plans, create a [[prototype dart]].
+**Use a bronze bar to create a [[prototype dart tip]].
+**Use 10 feathers on the tip to create the dart.
+*Take the dart to Al Shabim, who will in return give you the [[Tenti pineapple]].
+}}
+
+===Finding Ana===
+{{Checklist|
+*Equip your Slave outfit and head back to the guards in the mine with your pineapple and give it to one of them.
+*Go through the cave entrance and head east until you're beside the mine cart.
+*Right-click search the nearby barrels to get a barrel. {{Chat option|1Yeah, cool!}}
+*Get into the mine cart by right-click searching it. {{Chat option|1Yes, of course.}} (If you fail to start the cutscene redo this step)
+}}
+'''{{Colour|Red|Warning}}:''' Do not talk to Ana, she will alert the guards.
+{{Checklist|
+*Take the west-north-west path and use a barrel on [[Ana]] (blonde hair at the end of the second north-western path).
+}}
+'''{{Colour|Red|Warning}}:''' Do not try to teleport with Ana in your inventory, the barrel will drop first.
+===Saving Ana===
+{{Checklist|
+*Head back to the mine cart. Put Ana in the mine cart, then take the cart yourself. {{Chat option|1Yes, of course.}}
+*'''Search''' nearby barrels to find Ana.
+*Put Ana on the [[winch bucket]] (north-west area of room).
+*Don't raise the guard's suspicions when he offers help. {{Chat option|1Yes please.|1I said you were very gregarious!}}
+}}
+'''{{Colour|Red|Warning}}:''' Do not remove clothes to go to jail. If you do, you will have to mine 15 rocks to get out.
+{{Checklist|
+*Head back to the surface.
+*Operate the [[winch (The Tourist Trap)|winch]] (south-west in the camp), then search the barrel west of the winch to find Ana. (Do not go through the gate)
+*Put Ana on the [[wooden cart (The Tourist Trap)|wooden cart]] at the centre of the Camp.
+*Talk to the [[mine cart driver]]. {{Chat option|2Nice cart.|2One wagon wheel says to the other, 'I'll see you around'.|1'One good turn deserves another.'|3Fired... no, shot perhaps!|3In for a penny in for a pound.|3Well, you see, it's like this...|1Prison riot in ten minutes, get your cart out of here!|2You can't leave me here, I'll get killed!}}
+*Get on the cart by searching it. {{Chat option|1Yes, I'll get on.}}
+*Head back to Irena for your reward.
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|The Tourist Trap}}
+
+==Required for completing==
+* [[Desert Treasure I]]
+
+{{The Tourist Trap}}

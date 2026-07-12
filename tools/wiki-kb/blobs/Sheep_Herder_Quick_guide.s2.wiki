@@ -1,0 +1,21 @@
+==Walkthrough==
+{{Map|align=right|mtype=pin|caption=Location of the sheep.
+|2609,3389,title:Location of the yellow sheep,icon:yellowPin,desc:
+|2620,3368,title:Location of the green sheep,icon:greenPin,desc:
+|2608,3346,title:Location of the red sheep,icon:redPin,desc:
+|2569,3383,title:Location of the blue sheep,icon:bluePin,desc:
+}}
+{{Checklist|*Talk to [[Councillor Halgrive]] outside the [[East Ardougne]] church. Ensure that you have at least 1 empty inventory slot. {{Chat option|1What's wrong?|1I can do that for you.}}
+*Talk to [[Doctor Orbon]] in the church. {{Chat option|1Okay, I'll take it.}}
+*Put on the [[plague jacket]] and [[plague trousers|trousers]] and go to the enclosure north-west of the Ardougne north bank.
+*Pick up & wield the [[cattleprod]] next to the incinerator.
+*There are sheep to the north-west (blue), north (yellow), east (green), and south (red) of the incinerator.
+*Prod one sheep of each colour through the gate.
+** Blue sheep
+** Yellow sheep
+** Green sheep
+** Red sheep
+*Feed your sheep [[sheep feed]] until they're all dead.
+*Pick up the bones and use them on the incinerator.
+*Return to [[Councillor Halgrive]] to complete the quest.
+*'''Congratulations, quest complete!'''}}

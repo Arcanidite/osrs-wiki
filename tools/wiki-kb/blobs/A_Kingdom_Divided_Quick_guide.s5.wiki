@@ -1,0 +1,28 @@
+===The Mysterious Mage===
+{{Needed|Combat equipment melee or ranged (as [[Xamphur]] has high melee defence, ranged is the preferred method)
+|recommended=[[Xeric's talisman]] or access to one, anti-poison, [[Kharedst's memoirs]], use of [[fairy rings]], [[Arceuus Library Teleport]], pickaxe, [[Facemask]]}}
+
+{{Checklist|
+* Exit the shack and go south to [[Molch]].
+* Go east to the furthest dwelling in Molch and enter the [[Lizard dwelling]].
+* Go north and talk to [[Kaht B'alam]]. {{Chat option|2 Do you think you could help me find a mage?}}
+* Exit the temple by jumping in the hole to the west.
+* Go south-west into the [[Kebos Swamp]] and cross the stone bridge.
+* Search the south-eastern Lizardman eggs, and you will be attacked by a level 75 [[lizardman brute]]. You do not need to kill it.
+* Go back into the temple and give the Lizardman egg to Khat B'alam for the key. {{Chat option|1 So, about the key to that door...}}
+* Open the door that is located on the north wall of the main corridor, south-west of Khat B'alam. The door is indicated by a keyhole on the wall. {{Chat option|1 Yes.}}
+* Kill the spirit boss [[Xamphur]].
+** Pray Protect from Magic throughout the fight.
+** Kill summoned hands to avoid corruption and avoid the falling hand mechanic by walking in a straight line back and forth, similar to Vorkath mechanics.
+* Search the northern table in the lab.
+* Return to the shack north-east of the [[farming guild]], directly west of fairy ring {{fairycode|cir}}, and go downstairs by inspecting the crates again.
+* After the cut-scene, go and talk with:
+** [[Lord Trobin Arceuus]] - {{FloorNumber|uk=1}} of the [[Tower of Magic]], west of the [[Arceuus Library]] ([[Kharedst's memoirs]] - Arceuus or [[Arceuus Library Teleport]]).
+** [[Lord Kandur Hosidius]] - In his home in Hosidius, south-east of the bank ([[Xeric's talisman]] - 2. Xeric's Glade)
+** [[Lady Vulcana Lovakengj]] - South-western Lovakengj, in the [[Lovakengj Assembly]] at [[The Forsaken Tower]] quest icon ([[Kharedst's memoirs]] - Lovakengj or [[Xeric's talisman]] - 3. Xeric's Inferno)
+*** Collect a [[Volcanic Sulphur]] from the [[Sulphur Mine]] to the north-west if you haven't already.
+** [[Lady Shauna Piscarilius]] - In [[The Warrens]] under Port Piscarilius ([[Kharedst's memoirs]] - Piscarilius)
+** [[Lord Shiro Shayzien]] - {{FloorNumber|uk=1}} of the [[War Tent]] in the [[Shayzien Encampment]], by the northern bank icon ([[Kharedst's memoirs]] - Shayzien)
+* Go to [[Xeric's Lookout]] and talk to Commander Fullore ([[Xeric's talisman]] - 1. Xeric's Lookout)
+* After the cut-scene, speak with Commander Fullore again then talk with all 5 Lords again. They are on different floors of the lookout house, including the basement. Lord Arceuus is just outside (make sure you receive the [[broken redirector]] from him).
+}}

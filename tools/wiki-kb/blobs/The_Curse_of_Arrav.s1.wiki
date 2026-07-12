@@ -1,0 +1,57 @@
+==Details==
+{{Quest details
+|start = Talk to [[Elias White]] at the [[Uzer Oasis]].
+|startmap = 3505,3038
+|difficulty = Master
+|description = The icy waste to the north of the troll country is as mysterious as any land in Gielinor, no less because of the interest the Mahjarrat take in it. Elias White thinks that he might have found a way for you to discover more about this strange area to the north. Uncover more of the mysteries of the Mahjarrat and learn about the dark magic that was used to enslave Arrav for these last few millennia.
+|length = Medium
+|requirements = * {{SCP|Mining|64|link=yes}}{{Boostable|no}}{{Questreqstart|}}
+* {{SCP|Ranged|62|link=yes}}{{Boostable|no}}{{Questreqstart|}}
+* {{SCP|Thieving|62|link=yes}}{{Boostable|no}}{{Questreqstart|}}
+* {{SCP|Agility|61|link=yes}}{{Boostable|no}}{{Questreqstart|}}
+* {{SCP|Strength|58|link=yes}}{{Boostable|no}}{{Questreqstart|}}
+* {{SCP|Slayer|37|link=yes}}{{Boostable|}}{{Questreqstart|}}
+*Completion of the following quests:
+** [[Defender of Varrock]]
+*** [[Shield of Arrav]]
+*** [[Temple of Ikov]]
+*** [[Below Ice Mountain]]
+*** [[Family Crest]]
+*** [[Garden of Tranquillity]]
+**** [[Creature of Fenkenstrain]]
+***** [[Priest in Peril]]
+***** [[The Restless Ghost]]
+*** [[What Lies Below]]
+**** [[Rune Mysteries]]
+*** [[Romeo & Juliet]]
+*** [[Demon Slayer]]
+** [[Troll Romance]]
+*** [[Troll Stronghold]]
+**** [[Death Plateau]]
+|items = *3 [[dwellberries]]
+*[[Ring of life]]
+*Any [[pickaxe]]
+*Any [[Crossbow (weapon)|crossbow]] (except the [[love crossbow]])
+*[[Mith grapple]] ([[Hallowed grapple]] will not work)
+*[[Insulated boots]]
+|recommended = *{{SCP|Combat|85|link=yes}}
+*Combat gear, [[Prayer potion]]s, [[Super combat potion]]s, and food for the final fight
+*[[Salve amulet]] for the final fight
+*Quick access to [[fairy rings]]
+*[[Lumberyard teleport]], [[digsite pendant]], or [[ring of the elements]] for quick access to [[Zemouregal's Base]]
+*[[Trollheim Teleport]], [[stony basalt]], or any [[Ghommal's hilt]] for quick access to [[Trollheim]]
+*[[Stamina potion]]
+*[[Anti-venom]] or [[Serpentine helm]] with 75 defence. 
+*Any [[ranged]] weapon (or suitable [[bolts]] for the crossbow already brought), or [[magic]]; recommended way to kill the toxic zombies during the fight against Arrav.
+*Emergency teleport
+*[[Lockpick]] unlocking code key chest towards the end to avoid small lockpick fails
+|kills = * [[Golem guard]] ''(level 141)''
+* [[Arrav]] ''(level 339)''
+|ironman = * {{SCP|Fletching|59|link=yes}} {{Boostable|yes}} to make a [[mith grapple]]
+* {{SCP|Smithing|59|link=yes}} {{Boostable|yes}} to make a [[mith grapple tip]]
+'''OR'''
+* {{SCP|Firemaking|35|link=yes}} {{Boostable|no}} for [[Barbarian Firemaking]], to access the [[Ancient Cavern]], and the means to defeat level 132 enemies for a 1/42.67 chance at a [[mith grapple]] drop (ideally the [[skeleton brute]]).
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

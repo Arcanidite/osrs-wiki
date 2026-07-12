@@ -1,0 +1,107 @@
+==Details==
+{{Quest details
+|start = Investigate the [[Ancient Vault]] north-east of [[Nardah]].
+|startmap = 3511,2971
+|difficulty = Grandmaster
+|description = During Gielinor's Second Age, the world was dominated by an empire the likes of which had never been seen. The areas now known as Asgarnia, Misthalin and even the Wilderness all once flourished under the banner of the Empty Lord. With the grand city of Senntisten at its heart, this civilisation washed over Gielinor like an unstoppable tide, pushing the boundaries of magic and science, while crushing any who stood in their way.
+
+Fast forward to today, the Fifth Age, and you won't find much trace of this ancient empire. Indeed, Saradominists and Zamorakians alike have spent many lifetimes purging all remnants of it. However, small fragments of this fallen empire remain, for those who know where to look.
+
+Perhaps you’ve already encountered some of these remains. Maybe you’ve met the monstrous Nex, sealed behind the Frozen Door for millennia. Or perhaps you’ve visited the bandits of the Kharidian Desert, the final human followers of the Empty Lord. You might even have encountered some mysterious Mahjarrat hidden away beneath those same sands. However, there are other parts of this forgotten empire that even you won’t have encountered yet. For example, this story begins deep in the desert, within a mysterious vault...
+|length = Very Long
+|requirements = * {{SCP|Firemaking|75|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Magic|75|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Thieving|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Herblore|62|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Runecraft|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Construction|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+**[[Desert Treasure I]]
+***[[The Dig Site]]
+***[[Temple of Ikov]]
+***[[The Tourist Trap]]
+***[[Troll Stronghold]]
+****[[Death Plateau]]
+***[[Priest in Peril]]
+***[[Waterfall Quest]]
+**[[Secrets of the North]]
+***[[Making Friends with My Arm]]
+****[[My Arm's Big Adventure]]
+*****[[Eadgar's Ruse]]
+******[[Druidic Ritual]]
+******[[Troll Stronghold]]
+*******[[Death Plateau]]
+*****[[The Feud]]
+*****[[Jungle Potion]]
+****[[Swan Song]]
+*****[[One Small Favour]]
+******[[Rune Mysteries]]
+******[[Shilo Village]]
+*****[[Garden of Tranquillity]]
+******[[Creature of Fenkenstrain]]
+*******[[Priest in Peril]]
+*******[[The Restless Ghost]]
+****[[Cold War]]
+****[[Romeo & Juliet]]
+***[[The General's Shadow]]
+****[[Curse of the Empty Lord]], for full [[ghostly robes]]
+****[[Fight Arena]]
+***[[Devious Minds]]
+****[[Wanted!]]
+*****[[Recruitment Drive]]
+******[[Black Knights' Fortress]]
+******[[Druidic Ritual]]
+*****[[The Lost Tribe]]
+******[[Goblin Diplomacy]]
+******[[Rune Mysteries]]
+*****[[Priest in Peril]]
+****[[Troll Stronghold]]
+*****[[Death Plateau]]
+****[[Doric's Quest]]
+****[[Enter the Abyss]]
+***[[Hazeel Cult]]
+**[[Enakhra's Lament]]
+**[[Temple of the Eye]]
+***[[Enter the Abyss]]
+****[[Rune Mysteries]]
+**[[The Garden of Death]]
+**[[Below Ice Mountain]]
+**[[His Faithful Servants]]
+***[[Priest in Peril]]
+|items = * Be on the [[Ancient Magicks]] spellbook
+* Runes to cast [[Blood Burst]], [[Ice Burst]], [[Smoke Burst]], and [[Shadow Burst]]
+**8 [[Death rune]]s 
+**16 [[Chaos rune]]s 
+**2 [[Fire rune]]s 
+**3 [[Air rune]]s 
+**4 [[Water rune]]s 
+**2 [[Soul rune]]s 
+**2 [[Blood rune]]s
+* [[Ring of visibility]]
+* [[Tinderbox]] (obtainable during the quest)
+* [[Pestle and mortar]] (obtainable during the quest)
+* [[Pickaxe]] (obtainable during the quest)
+* [[Facemask]] or [[Slayer helm]]
+|recommended = * {{SCP|Combat|100|link=yes}}
+* [[Digsite teleport]]
+* [[Desert heat]] protection
+* [[Desert amulet 4]] or [[Nardah teleport]]
+* [[Xeric's talisman]] or access to it in [[POH]]
+* [[Stamina potion]]s
+|kills = * [[Ancient Guardian (Desert Treasure II)|Ancient Guardian]] (level 153)
+* [[Vardorvis]] (level 572)
+* [[Kasonde]] (level 193)
+* A number of lesser demons, black demons, and abyssal creatures
+* [[The Leviathan]] (level 593)
+* [[Jhallan]] (level 491)
+* [[Duke Sucellus]] (level 538)
+* [[The Whisperer]] (level 587)
+* [[Mysterious Figure]] (level 271)
+* [[The Forsaken Assassin]] (level 252)
+* [[Ketla the Unworthy]] (level 236)
+* [[Kasonde the Craven]] (level 221)
+* [[Persten the Deceitful]] (level 264)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

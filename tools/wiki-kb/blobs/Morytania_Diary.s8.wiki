@@ -1,0 +1,59 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Morytania" data-diary-tier="Elite"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Catch a [[shark]] in [[Burgh de Rott]] with your bare hands.
+|
+*{{SCP|Quest}} Completion of [[In Aid of the Myreque]]
+*Access to [[Barbarian Fishing]]
+*{{SCP|Fishing|96|link=y}} and {{SCP|Strength|76|link=y}} (both are [[Temporary skill boost|boostable]])
+*[[Shark lure]] recommended
+*If you are boosting with the [[Dragon harpoon]] special attack, you need to bank the harpoon before catching the shark. Having it in the inventory will use it by default and it will not count as bare handed.
+|-
+|2. Cremate any [[Shade remains]] on a [[Magic pyre logs|Magic]] or [[Redwood pyre logs|Redwood pyre]].
+|
+*{{SCP|Quest}} Completion of [[Shades of Mort'ton]]
+*{{SCP|Firemaking|80|link=y}} {{Boostable|yes}}
+*[[Magic pyre logs|Magic]] or [[Redwood pyre logs]], any [[shade remains]], and a [[tinderbox]]
+|-
+|3. Fertilize the [[Morytania]] [[herb patch]] using [[Lunar spells|Lunar Magic]].
+''Note: This herb patch is located west of [[Port Phasmatys]].''
+|
+*{{SCP|Quest}} Completion of [[Lunar Diplomacy]]
+*{{SCP|Magic|83|link=y}}
+*[[Lunar spellbook]] selected
+*Means to cast [[Fertile Soil]] ({{RuneReq|Nature=2|Astral=3|Earth=15}})
+|-
+|4. Craft a [[Black d'hide body|Black dragonhide body]] in [[Canifis bank]].
+|
+*{{SCP|Crafting|84|link=y}}
+*3 [[black dragon leather]], and a [[needle]] and [[thread]] or the [[costume needle]]
+|-
+|5. Kill an [[Abyssal demon]] in the [[Slayer Tower]].
+''Note: [[Abyssal demon]]s on the {{FloorNumber|uk=2}} do not require a [[Slayer task]] to kill like those in the basement.''
+|
+*{{SCP|Slayer|85|link=y}}
+*[[Weaponry]]
+|-
+|6. Loot the [[Barrows chest]] while wearing any complete [[Barrows equipment|barrows set]].
+''Note: This includes the weapon that is part of the equipped set.
+|
+*{{SCP|Defence|70|link=y}}{{boostable|no}} 
+*Various other skill requirements depending on the set used, none of which can be [[Temporary skill boost|boosted]]:
+**{{SCP|Attack|70|link=y}} and {{SCP|Magic|70|link=y}} for [[Ahrim the Blighted's equipment|Ahrim's]]
+**{{SCP|Attack|70|link=y}} and {{SCP|Strength|70|link=y}} for [[Dharok the Wretched's equipment|Dharok's]] or [[Torag the Corrupted's equipment|Torag's]]
+**{{SCP|Attack|70|link=y}} for [[Guthan the Infested's equipment|Guthan's]] or [[Verac the Defiled's equipment|Verac's]]
+**{{SCP|Ranged|70|link=y}} for [[Karil the Tainted's equipment|Karil's]]
+|}
+
+===Rewards===
+*[[Morytania legs 4]]:
+**Prevents [[ghast]]s from turning your [[food]] into [[rotten food]] when worn
+**Unlimited teleports to the [[Pool of Slime]] beneath the [[Ectofuntus]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*[[Robin]] exchanges 39 [[Remains#Bones|bones]] of any kind daily for a [[bucket of slime]] and a pot of [[bonemeal]] each, up from 26
+*50% more [[Firemaking]] experience when burning [[shade remains]]
+*Bones buried via the [[Bonecrusher]] now grant full [[Prayer]] experience
+*Access to the disease-free [[herb patch]] on [[Harmony Island]]
+*10% more [[Slayer]] experience in the [[Slayer Tower]] while on a [[Slayer task]], up from 7.5%

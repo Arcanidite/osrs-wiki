@@ -1,0 +1,5 @@
+===Checkal===
+{{Checklist|*Speak to [[Checkal]] in [[Barbarian Village]] near the pottery oven building.
+*Speak to [[Atlas]] in [[The Long Hall]] tavern in Barbarian Village and complete training. {{Chat option|1Yes.}}
+**Take some [[cooked meat]] and a [[beer]] from the tables in [[The Long Hall]] if you do not have them already.
+*Return to Checkal and use the [[Flex]] emote when prompted.}}

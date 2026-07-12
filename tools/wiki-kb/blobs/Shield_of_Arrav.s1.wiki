@@ -1,0 +1,20 @@
+==Details==
+{{Quest details
+|start = Talk to [[Reldo]] in the [[Varrock]] library, located within the northern end of [[Varrock Castle]].
+|startmap = 3209,3495
+|difficulty = Novice
+|description = Varrockian literature tells of a valuable shield, stolen long ago from the museum of [[Varrock]], by a gang of professional thieves. See if you can track down this shield and return it to the museum. You will need a friend to help you complete this quest.
+|length = Short
+|requirements = * A trustworthy friend or partner. Players can join the official [[chat-channel]] "OSRS SOA" to look for a partner.
+|items = *Phoenix Gang: 20 [[coins]]
+*Black Arm Gang: 2 [[Phoenix crossbow]]s (obtained during the quest)
+|recommended = 
+* {{SCP|Combat|10|link=yes}}
+|kills = *Black Arm Gang: [[Weaponsmaster]] ''(level 23)''
+*Phoenix Gang: [[Jonny the Beard]] ''(level 2)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

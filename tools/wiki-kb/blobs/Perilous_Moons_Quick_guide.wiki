@@ -1,0 +1,99 @@
+{{Quick Guide}}
+{{Confuse|text=the [[Moons of Peril]], the bosses fought during this quest}}
+==Details==
+{{Quest details page|Perilous Moons}}
+
+==Walkthrough==
+{{Needed|Combat gear to kill [[Sulphur Nagua (Perilous Moons)]] (level 98)}}
+{{Checklist|
+* Speak to [[Attala]] near the temple entrance at the southern base of Ralos' Rise to start the quest.
+* Climb the rocks to the north-east (requires 47 agility) or walk back up Ralos' Rise and kill the [[Sulphur Nagua]] at the south-east ledge.
+* Return to [[Attala]].  Cross the drawbridge and enter [[Cam Torum]].
+* Go directly north and attempt to speak with [[Jessamine]].  A guard will interrupt you.  Speak with Jessamine in the northern part of the city. {{Chat option|1}}.
+* Pass through the entrance to the north into the [[Neypotzli]] dungeon.  
+* Speak to Attala, [[Zuma]], and Jessamine, in that order.
+}}
+
+==Setting Up Camp==
+{{Needed|recommended=[[Stamina potion]]}}
+{{Checklist|
+* Take from the crate of building supplies just west of Jessamine.  You will receive a hammer, saw, and three Building supplies.
+* You will need to build the three camp sites by going through the various entrances in the corners of the dungeon.  Note that camp spots are marked on your mini map as a cooking range icon:
+** Ancient Prison
+*** Pass through the south-western entrance in the dungeon
+*** Be aware of the level 98 [[Sulphur Nagua]] in this area.  [[Protect from Melee]] will negate damage.
+*** Run south, then west, then north through the large hallway to the north-west corner
+*** Build the camp spot and return back to the Antechamber. You will need to go back the way you came in.
+** Streambound Cavern
+*** Pass through the north-eastern entrance in the dungeon
+*** Go north, then east across the bridge.  Follow the trail up the south stairs.  The camp spot is just south of the stairs.
+*** Build the camp spot and return back to the Antechamber.  You will need to go back the way you came in.
+** Earthbound Cavern
+*** Pass through the north-western entrance in the dungeon
+*** Follow the trail west then south down the stairs.
+*** Build the camp spot and return back to the Antechamber.  You can now drop the hammer and saw.
+}}
+
+==Talismans==
+{{Checklist|
+* Speak to Attala in the Antechamber {{Chat option|1What does the inscription say?|1What do we do now?}} to receive a [[Water talisman]] and [[Earth talisman]]
+* Exit the Neypotzli to the south.  Go south to the magic shop and speak to [[Nahta]]{{Chat option|3Actually, I've been sent by Attala}}.
+* Go north-east to the furnace and speak to the blacksmith {{Chat option|2I need your help with these talismans|1Can you help?}}.
+* Return to Attala in the Neypotzli to the north.
+* Use the two infused talismans to locate [[Eyatlalli]].  The direction in which the earth and water talismans point—north/south or east/west—is different for each player. You may need to enter one of the chambers in the 4 corners. You may also need to enter the ancient shrine, which is accessible through either the streambound cavern or the ancient prison.   Keep using the talisman until Eyatlalli appears. Like hot/cold clues.
+** This location varies from player to player
+* Return to the Antechamber and attempt to speak to any of the three.  Eyatlalli will appear again.  After the dialogue ends, speak with Eyatlalli again.
+}}
+
+==Preparing for the Battle==
+{{Checklist|
+* Go to the Streambound Cavern to the north-east.  Follow the path to the camp spot.
+* Optionally, grab supplies from the Supply crate or make a cup of tea to restore run energy at the Cooking stove.
+* Collect from a [[Grubby sapling]] to the east of the camp spot.  Use the [[Moonlight grub]] on a [[Pestle and mortar]] to receive a [[Moonlight grub paste]]
+* Go to the river south-east of the camp spot, and fish the fishing spot up the stairs on the bridge to catch a [[Raw bream]]. Use a knife on the bream to receive [[Bream scales]].
+* Walk north down the stairs, and enter the small entrance.
+* Walk west to reach some rocks that you can trap.  Click on 2 separate rocks to set a trap and then Rustle a bush to trap a moss lizard. 
+* Pick up the [[Raw moss lizard]].  Use a knife on the lizard to receive a [[Moss lizard tail]].
+* Exit the Earthbound Cavern to return to the Antechamber. 
+* Speak to Eyatlalli with the three items to begin the ritual.
+}}
+
+==Battling the Moons of Peril==
+{{Checklist|
+* Prepare to battle three Moons of Peril located in the three chambers of the dungeon.  The south-eastern entrance is inaccessible.
+* During the boss fights, you will need to stand in the highlighted circle to safely deal damage to the boss.  The highlighted circle occasionally changes in a clockwise direction.
+* When the highlighted circle reaches the full and empty moon circles, the boss will use one of their unique special attacks.
+* Each boss has a melee attack style that they are weak to.  However, high level players may not find this to be an issue.  The Moons have very high magic and range defence and are immune to poison and venom.  Damage cannot be negated with protection prayers.
+* Damage dealt during a special attack phase counts towards the overall boss damage.
+* After a boss fight ends, you will be teleported to a camp in another chamber so you can quickly move onto the next encounter.
+** The [[Blue Moon]]
+*** Note: This boss is weak to crush
+*** Enter the north-western chamber and follow the trail past the camp spot.  Go east past the camp spot until you reach another entrance to enter the boss encounter.
+*** The [[Blue Moon]] uses two special attacks:
+**** '''Weapon freeze''' - The Moon unequips your weapon and puts it in a block of ice. Punch the ice to deal damage to release it. The Moon will periodically spawn ice spikes on the floor around the block of ice which must be avoided by stepping off of them.
+**** '''Brazier''' - The Moon extinguishes the two braziers at the edges of the room, similar to the braziers in Wintertodt. Run to each brazier in the room and reignite it while avoiding the moving tornadoes that deal damage and turn off your run energy.
+** The [[Blood Moon]]
+*** Note: This boss is weak to slash
+*** Enter the south-western chamber and follow the path to the boss entrance.
+*** The [[Blood Moon]] uses two special attacks:
+**** '''Raining Blood''' - The Moon will disappear and rain blood from above, forming pools of blood throughout the room. Move off of the blood pools on the floor to avoid standing on them.
+**** '''Blood Jaguar''' - [[Blood jaguar]]s spawn around the room, along with a damaging square of blood pools. Run to [[Eyatlalli]]'s glyph and attack the jaguar. Damage taken by stepping onto the pool too early or not stepping out of the jaguar's attack range will heal the Blood Moon for 3x the damage taken.
+** The [[Eclipse Moon]]
+*** Note: This boss is weak to stab
+*** Enter the north-eastern chamber and follow the path to the boss entrance.
+*** The [[Eclipse Moon]] uses two special attacks:
+**** '''Eclipse Shield''' - The Moon will spawn a moon shield and begins attacking rapidly with rays of light. Keep the moon shield between you and the boss to prevent damage from the attacks. The shield will move quickly around the boss in a circle.
+**** '''Mimic''' - You are teleported to the centre of the room and frozen in place. Clones of the Moon will spawn around you, attacking you. You must face your character toward each clone as it spawns to prevent damage. One method is to click the tile below each clone as it spawns.  Reacting to the clone has no delay so it is advised to use your strongest weapon ([[Crystal Halberd]]), no matter the speed.
+}}
+
+==Finishing Up==
+{{Checklist|
+* After defeating the three Moons, return to the Antechamber.
+* Speak to all three in the Antechamber.
+* Speak to Eyatlalli to finish the quest.
+}}
+
+==Rewards==
+{{Quest rewards page|Perilous Moons}}
+
+{{Perilous Moons}}

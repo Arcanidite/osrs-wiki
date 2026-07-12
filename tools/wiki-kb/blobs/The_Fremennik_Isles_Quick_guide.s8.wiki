@@ -1,0 +1,19 @@
+===The troll king===
+'''Items required''': ''[[Neitiznot shield]], one-handed weapon, food, [[Prayer potions]], combat potions, emergency teleport.''
+
+'''Note''': '''''Use a Melee weapon''''' as ''the troll king has high Magic and Ranged Defence.
+{{Instance}}
+{{Checklist|*Equip the [[Neitiznot shield]] and combat items to fight the [[Ice Troll King]].
+**Equipping it is actually not required to enter the cave, or to fight the king, but it will heavily reduce damage, thus it is highly recommended.}}'''Note''': This is a '''multi-combat zone. Melee and Ranged Ice Trolls will attack you.'''
+{{Checklist|Make sure to equip the Neitiznot shield.
+*Use Protect from Melee while running to the east side cave entrance of the farthest north isle.
+*Enter the cave to start a cutscene.
+**Talk to [[Bork Sigmundson]] to obtain 10 [[Tuna]], 3 [[Prayer potion (3)]], and 3 [[Strength potion (4)]]. If you do not have enough inventory space  when you request the items, you will not be able to obtain them again.
+*Kill ten trolls, you will see a message saying ''"You have defeated enough trolls to attack the King."''
+*Turn on Protect from Missiles before crossing the bridge.
+*Turn on Protect from Magic for the duration of the fight. Kill the troll king. DO NOT use Protect from Melee because King will use the long distance attack as [[Dad]] does.
+*Decapitate the troll king's corpse.
+*Return to [[Mawnis Burowgar]].
+Optional: Make sure to claim the prayer potions from Bork Sigmundson at the entrance.
+*'''Congratulations, quest complete!'''
+}}

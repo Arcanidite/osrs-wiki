@@ -1,0 +1,18 @@
+==Rewards==
+{{Quest rewards
+|name = While Guthix Sleeps
+|image = [[File:While Guthix Sleeps reward scroll.png|center]]
+|qp = 5
+|rewards = 
+* {{SCP|Thieving|80,000|link=yes}} [[experience]]
+* {{SCP|Farming|75,000|link=yes}} [[experience]]
+* {{SCP|Herblore|75,000|link=yes}} [[experience]]
+* {{SCP|Hunter|50,000|link=yes}} [[experience]]
+* Access to the [[Ancient Guthixian Temple]] and [[tormented demon]]s
+* [[Duradel's notes]], obtained from [[Kuradal]], which grants {{SCP|Slayer|link=yes}} [[experience]] equal to 15x the player's Slayer level when read, as well as the ability to craft the [[emberlight]], [[scorching bow]], and [[purging staff]]
+* 100 [[death runes]], 100 [[fire runes]], 100 [[coal]], and 100 [[magic logs]] can be looted from [[Movario's base]]
+* [[Elite black armour]] and [[Dark Squall robes]]
+* Access to the [[Black Knight Catacombs]]
+* The [[broav]], if kept
+
+}}

@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = At First Light
+|image = [[File:At First Light reward scroll.png|center]]
+|qp = 1
+|rewards =
+* {{SCP|Hunter|4,500|link=yes}} [[experience]]
+* {{SCP|Construction|800|link=yes}} [[experience]]
+* {{SCP|Herblore|500|link=yes}} [[experience]]
+* Access to Master Tier [[Hunters' Rumours]]
+}}

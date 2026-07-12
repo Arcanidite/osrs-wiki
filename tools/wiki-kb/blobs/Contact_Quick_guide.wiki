@@ -1,0 +1,68 @@
+{{External|rs}}
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Contact!}}
+
+==Walkthrough==
+{{Checklist|
+*Talk to the [[High Priest (Sophanem)|High Priest]] in [[Sophanem]]. {{Chat option|1Sounds like a quest for me; I can't turn that down!|4Is there any way into Menaphos from below?}}
+*Go to the most north-eastern building in Sophanem and talk to [[Jex]].  {{Chat option|2Better get down there.}}
+*Climb-down the ladder in the building, then the trapdoor.
+*Follow the red line on the map to the ladder and/or use the provided tile markers for guidance. Protection from magic is recommended. It is also recommended to '''turn off auto-retaliate''' in the combat tab.
+*You will encounter one scarab trap via this path. '''BE HIGHLY CAUTIOUS''' as triggering it would drop you to a multi combat lower level.
+}}
+
+The provided tile markers give a short route that is as safe as possible to the ladder required for the quest.
+* '''Green markers''' indicate the correct direction to travel when the path forks.
+* '''Yellow markers''' indicate the correct tiles to stand on carefully, when dealing with traps or other threats.
+* '''Red markers''' contain other warnings.
+
+The markers additionally indicate when specific other actions should be performed (e.g. swapping protection prayers or right clicking on particular tiles).
+[[File:Sophanem dungeon map.png|right|thumb|A map of the [[Sophanem Dungeon]].]]
+{{Tile markers box|Module:Tile markers/Sophanem Dungeon Labyrinth.json}}
+{| class="wikitable"
+!Image
+!Description
+|-
+|[[File:Floor trap.png|150px]]
+|'''Floor trap:''' Search floor to pass. Walking over them will deal 10% of current hitpoints, rounded down, plus 10 damage
+|-
+|[[File:Odd markings.png|150px]]
+|'''Wall trap:''' Search the wall to pass. Walking past them will deal 10% of current hitpoints, rounded down, plus 10 damage
+|-
+|[[File:Wall crusher.png|150px]]
+|'''Crusher Blocks:''' Move diagonally between them or use the minimap to automatically navigate ('''Note:''' This may sometimes fail). Failure will hit 8 damage.
+|-
+|[[File:Contact! - Sand pit.png|150px]]
+|'''Sand pits:''' Avoid by walking around the pit. If you step on these, the ground will crack open and a [[Scarab swarm]] will come out.
+|-
+|[[File:Scarab trap.png|150px]]
+|'''Scarab trap:''' Avoid standing directly under these. Otherwise a pit will appear, dropping you to the lower level.
+|}
+{{Checklist|
+*Search Kaleef's body.
+*Read the parchment.
+*Talk to [[Maisa]] to the west. {{Chat option|2Draynor Village|3Leela}}
+*Speak to [[Osman]] in front of the Al Kharid palace. {{Chat option|2I want to talk to you about Sophanem|3It would drive a wedge between the Menaphite cities.}}
+*Travel to Sophanem and speak to Osman again outside the gates. {{Chat option|3I know of a secret entrance to the north.}}
+{{Instance}}
+*Navigate the tunnels to the ladder again.
+*Kill the level 191 [[Giant scarab]].  
+**If you decide to mage the Giant Scarab, it can be safespotted by standing near Kaleef's body, use [[Protect from Missiles]]. '''Note:''' The Giant Scarab can still spawn mages and riders that can attack you which you should be highly careful of. The Giant Scarab CAN extinguish bullseye lanterns; bring a tinderbox.
+*Talk to Osman.
+*Pick up [[Keris]] if you wish (needed for [[Desert Diary#Hard|Desert hard diary]]).
+**(Tip: '''Do not teleport out''' if you wish to complete a task for Desert hard diary, instead return to the maze and kill a Locust rider with the Keris.)
+*Return to Sophanem and talk to the High Priest.
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|Contact!}}
+
+==Required for completing==
+Completion of Contact! is required for the following:
+*[[Beneath Cursed Sands]]
+*Hard tier of the [[Desert Diary]]
+
+{{Contact!}}

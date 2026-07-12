@@ -1,0 +1,22 @@
+===Island of Stone===
+'''Items required''': ''[[V's shield]], combat equipment to fight [[Typhor]] (level 218) and [[The Jormungand]] (level 363), a one-handed weapon '''(must wield [[V's shield]])'''''
+
+'''Recommended:''' ''1-2 [[super restore(4)]], high-healing [[food]]. Sarachnis Cudgel, [[Leaf-bladed battleaxe]], [[Zombie axe]], [[dragon mace]], or a [[dragon warhammer]] are good weapon choices as the monster is weak to crush. Note that the [[Zombie helmet]] provides the highest crush boost of all helmets.''
+{{Checklist|
+*Speak with [[Brundt]] to explain the cave door puzzle.
+*Solve the cave door puzzle ([[Wikipedia:Mastermind (board game)|Mastermind]]).
+**Each red check means one rune is correct but in the wrong position.
+**Each green check means one rune is correct and in the right position.
+{{Instance|irs=Brundt the Chieftain|cost=50000}}
+*Equip V's shield and keep it equipped for the full fight.
+*Enter the cave.
+*Fight [[Typhor]] (level 218)
+**Pray against either [[Protect from Magic|Magic]] or [[Protect from Melee|Melee]], depending on which attack style you are weaker against.
+*There is a checkpoint after Typhor is defeated. You may wish to teleport out between fights to resupply. If you do, you can return to the Island of Stone by talking to [[Haskell]] on the western-most pier in Rellekka (the same one the Waterbirth Island boat is on)
+*Fight [[The Jormungand]] (level 363). There are two special attacks to avoid:
+**When the screen turns red, click to face away from the attack (can hit for 50+ damage and drains your stats a little).
+**When frozen in rock, click to attack the snake repeatedly to break free (otherwise take 30+ damage as the rock explodes).
+**Pray [[Protect from Magic]].
+**It is weak to [[crush]] attacks.
+*'''Congratulations, quest complete!'''
+}}

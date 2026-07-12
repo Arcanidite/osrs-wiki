@@ -1,0 +1,109 @@
+==Details==
+{{Quest details
+|start = Talk to [[Ivy Sophista]] in [[Taverley]].
+|startmap = 2907,3449
+|difficulty = Grandmaster
+|description = This Grandmaster quest sees you continue the Mahjarrat storyline, hunting down one of the most powerful artefacts in existence while ensuring it doesn't fall into the wrong hands.
+
+This artefact is known by many names – most recently, the Stone of Jas. It has shaped the course of Gielinor’s history, from the creation of the first Runes to the fall of Zaros. It was last seen at the devastating end of the God Wars, when Zamorak, in a fit of rage, used it to reduce the land of Forinthry to the Wilderness we know today.
+
+Angered by Zamorak’s actions, Guthix rose from his age-long slumber and banished the gods. He hid the Stone of Jas far underground, where it could never disturb the balance again...
+
+But while Guthix sleeps, nefarious forces have been gathering: the Mahjarrat. Shaped by war and deadly ritual, their plans for the Stone can only lead to catastrophe.
+
+Facing off against the Mahjarrat is nothing new for dedicated adventurers – at every turn, they seem to grow in power and wage war against the people of Gielinor. In their last attempt, we saw them set out to tear Varrock apart with an undead army in Defender of Varrock. What are they plotting now?
+|length = Very Long
+|requirements = * {{SCP|Quest|180|link=yes}} {{Questreqstart|}}
+* {{SCP|Thieving|72|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Magic|67|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Agility|66|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Farming|65|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Herblore|65|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Hunter|62|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Firemaking|49|link=yes}} (To light the [[Sapphire Lantern]])
+* Ability to enter the [[Warriors' Guild]] (the sum of your [[Attack]] and [[Strength]] must be at or above 130; OR {{SCP|Attack|99|link=yes}}, OR {{SCP|Strength|99|link=yes}}) {{Boostable|no}} {{Questreqstart|}}
+*Completion of the following quests:
+**[[Defender of Varrock]]
+***[[Shield of Arrav]]
+***[[Temple of Ikov]]
+***[[Below Ice Mountain]]
+***[[Family Crest]]
+***[[What Lies Below]]
+***[[Romeo & Juliet]]
+***[[Demon Slayer]]
+***[[Garden of Tranquillity]]
+****[[Creature of Fenkenstrain]]
+*****[[Priest in Peril]]
+*****[[The Restless Ghost]]
+**[[The Path of Glouphrie]]
+*** [[The Eyes of Glouphrie]]
+**** [[The Grand Tree]]
+*** [[Waterfall Quest]]
+*** [[Tree Gnome Village]]
+**[[Fight Arena]]
+**[[Dream Mentor]]
+***[[Eadgar's Ruse]]
+****[[Druidic Ritual]]
+****[[Troll Stronghold]]
+*****[[Death Plateau]]
+***[[Lunar Diplomacy]]
+****[[The Fremennik Trials]]
+****[[Lost City]]
+****[[Rune Mysteries]]
+****[[Shilo Village]]
+*****[[Jungle Potion]]
+**[[The Hand in the Sand]]
+**[[Wanted!]]
+***[[Recruitment Drive]]
+****[[Black Knights' Fortress]]
+****[[Druidic Ritual]]
+***[[The Lost Tribe]]
+****[[Goblin Diplomacy]]
+**[[Temple of the Eye]]
+***[[Enter the Abyss]]
+****[[Rune Mysteries]]
+**[[Tears of Guthix]]
+**[[Nature Spirit]]
+***[[Priest in Peril]]
+***[[The Restless Ghost]]
+**[[A Tail of Two Cats]]
+***[[Icthlarin's Little Helper]]
+****[[Gertrude's Cat]]
+|items = * [[Ring of charos(a)]] or 500 coins
+* [[Knife]]
+* [[Seed dibber]] (only if Barbarian Farming Training has not been completed)
+* [[Lantern lens]]
+* [[Unpowered orb]]
+* [[Bronze med helm]]
+* [[Iron chainbody]]
+* [[Sapphire lantern]]
+* Runes to cast the [[NPC Contact]] spell four times (8 [[air rune]]s, 4 [[astral rune]], 4 [[cosmic rune]])
+* Runes for any charge orb spell (30 runes of a chosen element and 3 [[cosmic rune]]s)
+* Equipment for two different combat styles
+* Runes for the following spells: multiple casts of all four elemental spells, [[Snare]]/[[Entangle]], [[Weaken]]/[[Enfeeble]], [[Telekinetic Grab]], and [[Low Level Alchemy|Low]]/[[High Level Alchemy]]; ([[air rune|Air]], [[water rune|Water]], [[earth rune|Earth]], [[fire rune|Fire]], [[body rune|Body]]/[[soul rune|Soul]], [[nature rune|Nature]], [[law rune|Law]], and the highest of [[mind rune|Mind]]/[[chaos rune|Chaos]]/[[death rune|Death]]/[[blood rune|Blood]]/[[wrath rune|Wrath]] that you can use to cast all four elemental spells)
+'''Obtainable during quest:'''
+* [[Mort myre fungus]]
+* 1 [[log]] of any type except redwood (you can obtain one using a bronze axe next to the [[Hunting Expert]], but you must not already have an axe in your inventory (a [[Zombie axe]] counts, even though it can not be used to cut down trees)
+* [[Pink dye]] (or 20 coins)
+* [[Snapdragon seed]]
+* [[Papyrus]] and [[charcoal]]
+* [[Restore potion]]
+* One of each of the following runes: [[air rune|air]], [[water rune|water]], [[earth rune|earth]], [[fire rune|fire]], [[mind rune|mind]], [[law rune|law]], [[death rune|death]]
+|recommended = *{{SCP|Combat|95|link=yes}}
+* [[Taverley teleport]]
+* Access to [[fairy rings]]
+* [[Feldip hills teleport]]
+* [[Ardougne Cloak 1]] or greater
+* Multiple [[Falador Teleport]]s, or a [[Ring of returning]] with your respawn set in [[Falador]]
+* [[Antipoison]] or items that can cure [[poison]]
+|kills = * 2 [[Assassin (While Guthix Sleeps)|Assassins]] ''(level 167)''
+* 2 [[Mercenary axeman|Mercenary axemen]] ''(level 131)''
+* [[Mercenary mage]] ''(level 112)''
+* 3 [[Elite Black Knight]]s ''(level 138)''
+* [[Surok Magis]] ''(level 265)''
+* [[Balance Elemental]] ''(level 524)''
+* 2 [[Tormented Demon]]s ''(level 450)''
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

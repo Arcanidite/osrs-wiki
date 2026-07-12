@@ -1,0 +1,18 @@
+==Walkthrough==
+{{Checklist|
+* Speak to [[Marcellus]] at the [[Locus Oasis]].
+* Speak to the blue frogs on the north-east side of the pond.
+* Speak to Marcellus.
+* Speak to [[Gary]] or [[Sue]] (the blue frogs) again to select a leader.
+* Go south to speak to [[Jane]] or [[Dave]], the yellow frogs. Distract them by chopping down the [[Orange tree (Locus Oasis)|Orange tree]] near them. An axe spawn can be found next to Marcellus.
+* While they are distracted, sabotage the lily pad in the pond near them.
+* Speak to Gary or Sue to start the election.
+* Speak to Marcellus.
+* Speak to Gary or Sue to blame the flies.
+* Go into Marcellus' house and open the chest. The combination is 'NALIA'.
+* Go east to plant the [[plushy]] into the [[Capybara Dung]].
+* Defeat [[Cuthbert]] (1 hp). For non-combat accounts, Cuthbert can be killed with recoil damage.
+* Speak to Marcellus.
+* Speak to Gary or Sue for the final time.
+'''Congratulations, quest complete!'''
+}}

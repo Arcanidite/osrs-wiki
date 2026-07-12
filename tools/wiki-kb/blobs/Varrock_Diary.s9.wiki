@@ -1,0 +1,9 @@
+===Rewards=== 
+*[[Varrock armour 4]]:
+**Can be worn in place of a [[prospector jacket]] for [[clue step]]s, and provides the experience bonus of the [[Prospector kit|full outfit]]
+**While worn, 10% chance of mining double of any [[ore]], as well as [[Mining enhancers#List of affected rocks|various other minerals]] (experience granted for both minerals)
+**While worn, 10% chance of smelting 2 [[bar]]s at once, of any kind, when using the [[Edgeville furnace]] (experience granted for both bars)
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*[[Zaff]] will sell you 120 [[bank note|noted]] [[Battlestaff|battlestaves]] as a single stack every day for 840,000 [[coins]], resellable on the [[Grand Exchange]] for a profit of {{NoCoins|{{GEPT|Battlestaff|120}}-840000}} [[coins]] (after tax)<ref name="WhyWasThisInTheLead"/>
+*The [[skull sceptre]] will now hold up to 26 [[Skull_sceptre#Using_the_Sceptre|charges]], up from 22
+*Individual parts used to make the [[skull sceptre]] now give four extra [[Bone fragments|bone fragments]] per component when chiselled

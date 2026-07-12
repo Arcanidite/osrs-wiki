@@ -1,0 +1,35 @@
+==Details==
+{{Quest details
+|start = Talk to [[King Vargas]] in the [[Miscellania Castle]].
+|startmap = 2501,3859
+|difficulty = Experienced
+|description = Rumours have been coming back from Miscellania that all is not well, it is said that the king has been turned into a monster!
+
+An exceptional hero is required to investigate. Experience in ruling kingdoms, wooing royalty, and negotiating peace would be an advantage.
+|length = Medium
+|requirements = * Completion of the following quests:
+** [[Heroes' Quest]]
+*** [[Shield of Arrav]]
+*** [[Lost City]]
+*** [[Merlin's Crystal]]
+*** [[Dragon Slayer I]]
+** [[The Fremennik Trials]]
+|items = * [[Iron bar]]
+* Any common, non-silver [[ring]] (such as a [[gold ring]]) that you're willing to lose ''(not [[Onyx ring|onyx]]/[[Dragonstone ring|dragonstone]]/[[Explorer's ring|explorer]]/[[Beacon Ring|beacon]]/[['perfect' ring]]/[[Ring of nature|nature]]/[[Pineapple ring|pineapple]]/[[Ring of charos|Charos]]/[[Fremennik rings|fremennik]]/[[Ancient rings|ancient]])''
+*At least one of the following to gain favour during the quest
+**{{Coins|1875}} to buy flowers from [[Flower Girl]] (fastest method, but click intensive)
+**An axe and {{SCP|Woodcutting|45|link=yes}} to cut [[maple tree]]s (slower, but more AFK than buying flowers manually, since one click yields multiple logs and therefore multiple instances of favour)
+**A rake and {{SCP|Farming|10|link=yes}} to rake flax
+**A pickaxe and {{SCP|Mining|35|link=yes}} to mine [[coal]]
+**A [[harpoon]] or [[lobster pot]] and {{SCP|Fishing|35|link=yes}} to fish [[tuna]], [[lobsters]] or [[swordfish]]
+* [[Logs]] (obtainable during the quest if you bring an axe)
+|recommended = * [[Flowers]] you are willing to lose ''(can be bought from [[Flower Girl]] in [[Miscellania]] for 15 [[coins]], or you can plant and pick [[mithril seeds]]; [[trollweiss]] or any of the [[Farming]] flowers will not work.)''
+* '''If seeking the Prince's trust:''' a [[cake]] ([[chocolate cake]]s work too)
+* '''If seeking the Princess's trust:''' any [[bow]] (except [[Composite bow|composite]], [[Ogre bow|ogre]] or [[Training bow|training]]) you are willing to lose
+* [[Weight-reducing clothing]]
+* [[Stamina potion|Stamina]] or [[energy potions]]
+* [[Dramen staff|Dramen]]/[[Lunar staff]] for [[fairy rings]]
+|leagueRegion = <poem>
+{{LeagueRegion|Fremennik}} — location requirement
+</poem>
+}}

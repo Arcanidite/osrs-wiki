@@ -1,0 +1,54 @@
+==Details==
+{{Quest details
+|start = Talk to [[Sir Tiffy Cashien]] in [[Falador Park]].
+|startmap = 2997,3373
+|difficulty = Intermediate
+|description = A wanted man is on the loose. Can you track him down?
+|length = Medium
+|requirements = *{{SCP|Quest|32|link=yes}} {{Questreqstart|yes}}
+*Completion of the following quests:
+**[[Recruitment Drive]]
+***[[Black Knights' Fortress]]
+***[[Druidic Ritual]]
+**[[The Lost Tribe]]
+***[[Rune Mysteries]]
+***[[Goblin Diplomacy]]
+**[[Priest in Peril]]
+**[[Enter the Abyss]]
+*The ability to defeat a level 32 [[Black Knight (Wanted!)|Black Knight]].
+|items = *10,000 [[coins]], or:
+** [[Law rune]]
+** [[Enchanted gem]] (bought from a [[Slayer Master]])
+** [[Molten glass]]
+*20 un-noted [[Rune essence]] or [[pure essence]] (you'll get them back)
+**[[File:Ultimate ironman chat badge.png]] The player must deliver all 20 rune essence at once
+* [[Light source]] ('''Note:''' [[Candle]]s, [[torch]]es and [[oil lamp]]s can cause [[swamp gas]] explosions if going off-route, and need a tinderbox to stay lit)
+|kills = *[[Black Knight (Wanted!)|Black Knight]] ''(level 32)''
+*[[Solus Dellagar]]
+|ironman = [[File:Ultimate ironman chat badge.png]] The player must have 20 inventory spots to deliver all 20 rune essence at once. If the miniquest [[Enter the Abyss]] has been completed, the table in the rune shop may be used to hold rune essence from multiple trips to bring to the nearby chaos altar while inventory items are dropped without the worry of them despawning.
+|recommended = *{{SCP|Combat|15|link=yes}}
+*[[Armour]] and some [[food]].
+*[[Stamina potion|Stamina]] or [[energy potion]]s.
+*Fast travel to several locations that are always visited during the quest
+**Falador ([[Falador teleport]])
+**Canifis ([[Kharyrll Teleport]], [[Ectophial]], [[Salve Graveyard Teleport]], [[Fenkenstrain's Castle Teleport]], [[Fairy Rings]] to {{Fairycode|cks}} or [[Slayer ring]] to the Slayer Tower)
+**Champions' Guild and Varrock ([[combat bracelet]], [[Chronicle]] or [[Varrock teleport]])
+**Lumbridge ([[Lumbridge teleport]])
+*Fast travel to several randomly chosen locations
+**Ardougne ([[Ardougne teleport]])
+**Brimhaven (travel from Ardougne)
+**Rellekka ([[Enchanted lyre]] or [[Fremennik sea boots]], or [[House teleport]] if your house is in Rellekka)
+**Castle Wars ([[ring of dueling]])
+**Al Kharid ([[ring of dueling]])
+**Musa Point ([[amulet of glory]] to Karamja)
+**Draynor Village ([[amulet of glory]])
+**Tree Gnome Stronghold ([[gnome glider]], [[Balloon Transport System]], [[Spirit trees]] or [[Slayer ring]] to Stronghold Slayer Cave)
+**Goblin Village (walk from Falador)
+**Yanille ([[Watchtower teleport]])
+**McGrubor's Wood ([[combat bracelet]] to Ranging Guild or [[Fairy Rings]] to {{Fairycode|als}})
+**Grave of Scorpius ([[Ourania Teleport]], [[spirit tree]] to Battle of Khazard, or [[ring of dueling]] to Castle Wars)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Fremennik}} {{okay}} will auto-complete the quest
+</poem>
+}}

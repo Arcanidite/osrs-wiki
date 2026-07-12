@@ -1,0 +1,9 @@
+===What is this? A workshop for giants?===
+{{Needed|3 [[oak logs]], 1 [[wool]], 10 [[nails]], 1 [[hammer]], 1 [[chisel]], 1 [[bucket of water]] or [[ice gloves]], 20 free inventory spaces after the repairs (there is a bank)}}
+{{Checklist|* [[Minigame Teleport]] to "Giants' Foundry"
+* Speak to [[Kovac]] (strike the Hill Giant) in the [[Giants' Plateau]]. {{Chat option|1Yes.}}
+* Go inside the [[Giants' Foundry]].
+* Repair the [[polishing wheel]], [[grindstone]], and [[trip hammer]] using the required items.
+* Speak to Kovac twice.
+* Search the crate for items.
+* Deposit all the items into the [[crucible]] (large bucket) hanging to the east by the bank. Different items are input separately.}}

@@ -1,0 +1,19 @@
+==Details==
+{{Quest details
+|start = Talk to [[Ennius Tullus]] or [[Furia Tullus]] in front of the [[Sunrise Palace]].
+|startmap = 1686,3141
+|difficulty = Intermediate
+|description = Take your first steps into [[Varlamore]] and unlock the [[Quetzal Transport System]].
+|length = Short
+|requirements = * Completion of the following quests:
+** [[Children of the Sun]]
+|items = * Items for two different [[combat classes]] or a [[poisoned]] weapon (be warned that the poison method is much slower).
+|recommended = * {{SCP|Combat|40|link=yes}}
+* Some [[stamina potion]]s
+* Food
+|kills = * [[Knight of Varlamore (Twilight's Promise)|Knight of Varlamore]] (level 81)
+* 8 [[cultist]]s (level 34)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}

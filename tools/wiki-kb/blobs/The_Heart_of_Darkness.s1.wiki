@@ -1,0 +1,32 @@
+==Details==
+{{Quest details
+|start = Talk to [[Prince Itzla Arkan]] at [[the Teomat]].
+|startmap = 1453,3173
+|difficulty = Experienced
+|description = Uncover the secrets of a mysterious cult and unlock a new dungeon.
+|length = Medium
+|requirements = *{{SCP|Mining|55|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Thieving|48|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Slayer|48|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Agility|46|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+**[[Twilight's Promise]]
+***[[Children of the Sun]]
+|items = * 30 [[coins]]
+* Up to 4 empty inventory slots
+|recommended = *{{SCP|Combat|65}} [[Combat level]]
+*{{SCP|Prayer|43}} or higher [[Prayer]] level for [[Protect from Melee]]
+* Combat gear
+* Food
+* 10 [[Quetzal feed]], 3 [[limestone brick]], and 4 [[soft clay]] to build the [[Unbuilt Landing Site]] in [[Salvager Overlook]]
+* [[Prayer potion]]s or [[Super restore potion]]s
+* [[Super combat potion]]s or similar
+|kills = * Several [[Emissary Brawler]]s ''(levels 74 and 86)''
+* Several [[Emissary Conjurer]]s ''(level 71)''
+* [[Prince Itzla Arkan]] ''(level 167)''
+* [[Amoxliatl]] ''(level 263)''
+|ironman = [[File:Ultimate ironman chat badge.png]] You will need 3-4 empty inventory slots at multiple parts of the quest.
+|leagueRegion = <poem>
+{{LeagueRegion|Varlamore}} — location requirement
+</poem>
+}}

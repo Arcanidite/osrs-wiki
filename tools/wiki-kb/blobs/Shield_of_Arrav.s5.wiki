@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Shield of Arrav
+|image = [[File:Shield of Arrav reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*600 [[coins]]
+*Ability to claim 5 [[Kudos]] and an [[Antique lamp (Varrock Museum)#Shield of Arrav|Antique lamp]] rewarding 1,000 XP in any skill of at least level 20 from [[Historian Minas]] after completion of the quest (members only)
+}}

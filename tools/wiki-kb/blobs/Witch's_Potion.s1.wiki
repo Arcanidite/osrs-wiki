@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|start = Talk to [[Hetty]] in her house in [[Rimmington]], south of [[Falador]] and west of [[Port Sarim]].
+|startmap = 2967,3205
+|difficulty = Novice
+|description = Become one with your darker side. Tap into your hidden depths of magical potential by making a potion with the help of Hetty the Rimmington witch.
+|length = Very Short
+|items = *[[Burnt meat]]
+*[[Eye of newt]]
+*[[Onion]]
+*[[Rat's tail]] ''(only obtainable after starting the quest)''
+|recommended = *Fast travel to [[Rimmington]] to start the quest - [[Teleport to House]] (the default house location is Rimmington) or [[Skills necklace]] to [[Crafting Guild]]
+|kills = [[Rat]] ''(level 1)''
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+</poem>
+}}

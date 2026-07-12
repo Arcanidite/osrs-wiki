@@ -1,0 +1,9 @@
+===Daquarius===
+'''''Items required: Combat equipment, [[Commorb]].'''''
+{{Checklist|
+*Head over to [[Taverley Dungeon]].
+*Follow the dungeon north, then east and then south, down to the [[Black Knights' Base]].
+*Talk to [[Lord Daquarius]] in the south-western most room.
+*Kill a level 33 [[Black Knight]]; Daquarius will automatically speak to you once a knight is killed. You '''must''' finish this dialogue before speaking to him again!
+*Talk to Lord Daquarius again.
+}}

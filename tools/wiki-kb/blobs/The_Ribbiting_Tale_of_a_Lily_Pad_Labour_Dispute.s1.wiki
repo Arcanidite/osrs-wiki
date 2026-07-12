@@ -1,0 +1,17 @@
+==Details==
+{{Quest details
+|start = Talk to [[Marcellus]] at the [[Locus Oasis]].
+|startmap = 1684,2973
+|difficulty = Novice
+|description = Solve a ribbiting dispute and gain access to a new [[Special_patches#Special_tree_patches|hardwood Farming patch]].
+|length = Very Short
+|requirements = * {{SCP|Woodcutting|15|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* Completion of the following quests:
+** [[Children of the Sun]]
+|items = * Any axe (a [[bronze axe]] is obtainable during the quest)
+|recommended = 
+|kills = * [[Cuthbert, Lord of Dread]] (level 1)
+|leagueRegion = <poem>
+{{LeagueRegion|Varlamore}} — location requirement
+</poem>
+}}

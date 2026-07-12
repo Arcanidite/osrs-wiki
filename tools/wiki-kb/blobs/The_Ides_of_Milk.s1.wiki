@@ -1,0 +1,15 @@
+==Details==
+{{Quest details
+|start = Talk to [[Cassius]] by the [[Lumbridge pond]].
+|startmap = 3168,3275
+|difficulty = Novice
+|description = Lumbridge, the iconic city for all the fresh-faced arrivals and budding adventurers. Home to regular citizens of Gielinor, they chop the trees, work the fields, and tend to the animals of the realm, except there has been a disturbance in the nearby cow pen and the steaks have never been higher! Distress runs through the herd and while they have always feared adventurers claiming their lives, a new threat has entered their domain bringing the beef...
+|length = Short
+|requirements = None
+|items = None
+|recommended = {{SCP|Combat|15|link=yes}}
+|kills = A [[Brutus|bull]]
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

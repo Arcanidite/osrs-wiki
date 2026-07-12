@@ -1,0 +1,14 @@
+====Fix the pressure machine====
+{{Checklist|
+*Take the following supplies (by searching the crates inside the tower):
+**4 [[Valve wheel]]s
+**3 [[Metal sheet]]s
+**4 [[Coloured ball]]s
+*Head up the first staircase on the west side of the tower.
+*Fix the [[pressure machine]] on the north side of the room.
+*Complete the puzzle (turn the valves until all holes are plugged, pull the levers when necessary).
+**Pipe 2: Pull down the left lever, and then turn the 2nd valve left twice. Turn it right until the pipe is filled with water.
+**Pipe 4: Pull down the right lever and turn the 4th valve right three times, then left once. Turn it right until the pipe is filled with water.
+**Pipe 3: Lift the right lever back up, and turn the 3rd valve right twice and then left once. Turn it right until the pipe is filled with water.
+**Pipe 1: Lift up the left lever and turn the 1st valve left twice. Turn it right until the pipe is filled with water.
+*Once all the holes are plugged, make sure to turn the valves until all of the pipes are filled with water. You should see a message that says "The machine is working!" when you have completed the puzzle.}}

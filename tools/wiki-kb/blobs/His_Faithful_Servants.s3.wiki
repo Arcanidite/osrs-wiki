@@ -1,0 +1,3 @@
+==Rewards==
+* A [[dusty lamp]], which awards 20,000 [[Prayer]] experience.
+* A [[crypt map]] that upon studying permanently reveals the minimap while in the Barrows crypt and is then destroyed.

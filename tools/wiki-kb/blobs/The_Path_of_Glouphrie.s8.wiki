@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = The Path of Glouphrie
+|image = [[File:The Path of Glouphrie reward scroll.png|center]]
+|qp = 2
+|rewards =
+* Four [[Magic lamp (The Path of Glouphrie)|magic lamps]] offering a total of {{SCP|Slayer|20,000}} [[Slayer]] XP,  {{SCP|Thieving|5,000}} [[Thieving]] XP,  {{SCP|Strength|30,000}} [[Strength]] XP, and  {{SCP|Magic|5,000}} [[Magic]] XP
+* Access to the [[Poison Waste Dungeon]]
+* Ability to unlock [[Slayer task/Warped creatures|Warped creatures]] as a [[Slayer task]] which drop the [[warped sceptre]]
+* Access to a new [[spirit tree]] destination in the [[Poison Waste]]
+}}

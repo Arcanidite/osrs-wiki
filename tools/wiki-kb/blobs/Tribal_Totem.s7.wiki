@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Tribal Totem
+|image = [[File:Tribal Totem reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Thieving|1,775}} [[Thieving]] [[experience]]
+*5 [[Swordfish]]
+}}

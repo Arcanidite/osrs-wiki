@@ -1,0 +1,23 @@
+===Incriminating Sithik===
+{{Checklist|
+*Speak to [[Sithik Ints]] in his bed in the upstairs bedroom in the guest house north of the [[Wizards' Guild]] {{Chat option|3Do you mind if I look around?}}
+*Search the [[drawers (Zogre Flesh Eaters)|drawers]], [[cupboard (Zogre Flesh Eaters)|cupboard]] and [[wardrobe (Zogre Flesh Eaters)|wardrobe]] for [[Book of portraiture]], [[Necromancy book]], [[papyrus]], [[charcoal]], and a [[Book of 'h.a.m'|Book of 'H.A.M']].
+*Read all three books.
+*Use all three books on [[Sithik Ints|Sithik]].
+*Use [[Papyrus]] on Sithik.
+*Use [[Sithik portrait|portrait]] on Sithik.
+**'''Note:''' He must appreciate the "honesty" of the portrait, not the "truth". More [[papyrus]] can be found in the drawers.
+**'''Note:''' The portrait's examine text must say "A classic realist charcoal portrait of Sithik."
+**'''Note:''' The odds of getting the correct portrait seem to be drastically reduced with a very low Crafting level (1-10). 20+ is recommend to speed up the process."
+*Go to the [[Dragon Inn]] in [[Yanille]] and use the Dragon Inn Tankard, then the [[Sithik portrait|portrait]] on the Bartender.
+}}
+''The Bartender will [[signed portrait|sign the portrait]] as an affidavit.''
+{{Checklist|
+*Speak to [[Zavistic Rarve]] while holding the [[Necromancy book]], [[Book of 'h.a.m'|Book of 'H.A.M']], the tankard and the [[Sithik portrait|signed portrait]]. {{Chat option|3I have some items that I'd like you to look at.}} or {{Chat option|1I'm here about the sicks...err Zogres}{Chat option|3I have some items that I'd like you to look at.}} if you have started [[Hand in the Sand]].
+}}
+''[[Zavistic Rarve]] will give you a [[Strange potion]].''
+{{Checklist|
+*Use the [[Strange potion]] on the [[Cup of tea]] on top of [[Sithik Ints|Sithik's]] drawers.
+*Go downstairs and back upstairs.
+*Speak to [[Sithik Ints|Sithik]], obtain answers to all three questions in order to make [[Relicym's balm]] and [[Brutal arrows]] {{Chat option|1How do I remove the effects of the spell from the area?|2How do I get rid of the undead ogres|3How do I get rid of the disease|4Sorry, I have to go.}}.
+}}

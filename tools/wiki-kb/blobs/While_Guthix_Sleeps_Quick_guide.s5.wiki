@@ -1,0 +1,21 @@
+===Forming a fellowship===
+{{Needed|[[Movario's notes (volume 1)]], [[Movario's notes (volume 2)]], combat equipment, [[lantern lens]], [[seed dibber]] (if [[Barbarian Farming]] is not unlocked), 20 coins|recommended=Several [[Falador teleport|teleports to Falador]], a [[Dramen Staff]], [[Lunar staff]], or Lumbridge Elite Diary}}
+
+{{Checklist|
+* Return to Thaerisk in Taverley with both volumes of Movario's notes.
+* Head to [[McGrubor's Wood]] ([[fairy ring]] code {{fairycode|ALS}}).
+* Head to the building by way of the loose railing to the east to view a cutscene.
+* Defeat the mercenaries and speak to [[Idria]].
+* Head to [[White Knights' Castle]] and speak to [[Akrisae]] who is on the ground floor to the east, until you receive a [[teleorb]] from him.
+* Speak to [[Akrisae]] to receive a one-time teleport to [[Draynor Village]]. {{Chat option|1Yes.}}
+* Use the teleorb on any [[shady stranger]]s in the vicinity. One can be found just south of [[Diango's Toy Store]].
+* After planting the teleorb, return back to [[White Knights' Castle]] and speak to [[Akrisae]].
+* After the cutscene, finish the conversation with [[Thaerisk]] and *MAKE SURE* to obtain the [[snapdragon seed]] from him, before accepting his offer to teleport you to [[Port Sarim]]. {{Chat option|1Could I have that seed?|1Yes.}}
+* Head west to [[Betty's Magic Emporium]]. Purchase a [[pink dye]] from [[Betty]] in exchange for 20 [[coins]]. {{Chat option|3Could I buy some more pink dye?|1Sounds good.}}
+* Use the pink dye on the [[lantern lens]] for a [[rose-tinted lens]].
+* Speak to [[Betty]] again. {{Chat option|2Could you help me make some enriched snapdragon?}}
+* Stand in the doorway of the shop and use the lens on the counter to enrich the snapdragon seed.
+* Take-from the counter to pick up the [[enriched snapdragon seed]].
+* Travel back to Falador and climb up the westernmost stairs of the castle all the way to the top.
+* Plant the [[enriched snapdragon seed]] at the special patch.
+}}

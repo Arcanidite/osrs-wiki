@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Scrambled!
+|image = [[File:Scrambled! reward scroll.png|center]]
+|qp = 1
+|rewards =
+*{{SCP|Construction|5,000|link=yes}} [[experience]]
+*{{SCP|Cooking|5,000|link=yes}} experience
+*{{SCP|Smithing|5,000|link=yes}} experience
+*An [[Egg (Scrambled!)|Egg]] can be obtained by talking to the egg on the wall, which can be placed in the [[pet house]]
+*[[Alan's bones]] can be picked up from just south of the temple (if the player is wearing the [[Bonecrusher necklace]] the bones will automatically be buried and the player will receive 1.5 prayer xp).
+}}

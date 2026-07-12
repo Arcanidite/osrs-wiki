@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = The Red Reef
+|image = [[File:The Red Reef reward scroll.png|centre]]
+|qp = 2
+|rewards =
+*{{SCP|Sailing|15,000|link=yes}} experience
+*{{SCP|Smithing|5,000|link=yes}} experience
+*Access to [[Red Rock]] (partial completion)
+**Ability to unlock Red Rock as a teleport destination on the [[Sailor's amulet]] by inspecting the [[Sailors' Marker]] just west of the bank
+*Access to the [[Sacred Grove]]
+*[[Bosun's workbench schematic]]
+}}

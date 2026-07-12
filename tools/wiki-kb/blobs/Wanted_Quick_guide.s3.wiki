@@ -1,0 +1,12 @@
+===Tiffy/Amik===
+'''''Items required: [[Law rune]], [[Enchanted gem]] and [[Molten glass]] '''OR''' 10k [[Coins]].'''''
+{{Checklist|
+*Speak with [[Sir Tiffy Cashien]] in [[Falador Park]]. {{Chat option|1Do you have any jobs for me yet?|1Yes, I'm interested.|1Ask about the Wanted! Quest|1How will all that help?}}
+*Go talk to [[Sir Amik Varze]] in the [[White Knights' Castle]] on the west side of the {{FloorNumber|uk=2}}. {{Chat option|3No, not right now...}}
+*Report back to Sir Tiffy. {{Chat option|1Ask about the Wanted! Quest}}
+*Head back to Sir Amik and talk to him again. {{Chat option|3Sure, I'll help you!}}
+*Report once more to Tiffy. {{Chat option|1Ask about the Wanted! Quest}}
+**{{Chat option|1Buy One}}: If you want to pay 10k coins for the [[Commorb]].
+**{{Chat option|2Have One Made|1YES}}: If you have the required materials to make the Commorb.
+*Use the "contact" option on the Commorb. {{Chat option|1Current Assignment}}
+}}

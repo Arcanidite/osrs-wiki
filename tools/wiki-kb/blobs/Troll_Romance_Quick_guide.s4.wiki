@@ -1,0 +1,9 @@
+===Survival Techniques===
+{{Checklist|
+'''Items Required:''' ''[[rope]], [[maple Logs|maple]] or [[yew logs]], [[iron bar]], [[swamp tar]], [[bucket of wax]], [[cake tin]].''
+*Talk to [[Tenzing]] in the hut west of the Warriors' Guild in Burthorpe. {{Chat option|4Do you know where I can find Trollweiss?|2What would I need to make such a sled?}}
+*Talk to [[Dunstan]] at the anvil in north-eastern Burthorpe. {{Chat option|1Talk about a quest.|2I need a sled!!|1Yes.}}
+*Talk to him again to get the sled. {{Chat option|1Talk about a quest.}}
+*Use the [[swamp tar]] on the [[bucket of wax]] to get Wax.
+*Use the Wax on your Sled.
+}}

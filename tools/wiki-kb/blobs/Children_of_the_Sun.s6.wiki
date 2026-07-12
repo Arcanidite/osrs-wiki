@@ -1,0 +1,8 @@
+==Rewards==
+{{Quest rewards
+|name = Children of the Sun
+|image = [[File:Children of the Sun reward scroll.png|centre]]
+|qp = 1
+|rewards =
+* Access to [[Varlamore]] through the [[Quetzal Transport System]] and [[fairy rings]]
+}}

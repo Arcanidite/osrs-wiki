@@ -1,0 +1,18 @@
+==Walkthrough==
+{{Map|name=Rat Burgiss|x=3266|y=3333|r=4|mtype=square|align=right|width=250|height=250|caption=Rat Burgiss's location.}}
+{{Checklist|*Talk to [[Rat Burgiss]] at the crossing south of [[Varrock]]. {{Chat option|3Shall I get them back for you?|1Of course! Tell me what you need me to do.}}
+*Kill 5 [[Outlaw]]s just west of the [[Grand Exchange]] (from Grand Exchange, use the [[Underwall tunnel (Grand Exchange)|tunnel]] and walk south) and collect 5 [[rat's paper]]. 
+*Fill the folder with 5 papers.
+*Return the folder to [[Rat Burgiss]].
+*Talk to [[Surok Magis]] in the Varrock library (the northern-most room in Varrock Palace). {{Chat option|1Go on, then!}}
+*Read [[Sin'keth's diary]].
+*Enter the [[Chaos Altar]] and use the wand on the altar with 15 chaos runes in your inventory.
+**''To avoid entering the wilderness, see [[What Lies Below#Option 1|an alternative entrance in the full guide]].''
+*Return to Surok Magis with the infused wand and an empty bowl. {{Chat option|1I have the things you wanted!}}
+*Talk to Rat Burgiss. {{Chat option|1Yes! I have a letter for you!}}
+*Talk to [[Zaff]]. {{Chat option|4Rat Burgiss sent me!}}
+*Talk to Surok Magis. {{Chat option|1Bring it on!}}
+*Bring [[King Roald]] to low health (2 hitpoints or less) then operate the [[Beacon ring]]. Your chatbox will show "Now would be a good time to summon Zaff!" when the ring is ready to be operated. '''(Instanced)'''
+**Take the [[Dagon'hai history]] from the north-east bookshelf to bring to [[Historian Minas]] for 5 Kudos after the quest.
+*Talk to Rat Burgiss.
+*'''Congratulations, quest complete!'''}}

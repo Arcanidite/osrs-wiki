@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name=Troll Romance|image=[[File:Troll Romance reward scroll.png|centre]]|qp=2|rewards=*{{SCP|Agility|8,000}} [[Agility]] experience
+*{{SCP|Strength|4,000}} [[Strength]] experience
+*1 [[uncut diamond]], 2 [[uncut ruby|uncut rubies]], and 4 [[uncut emerald]]s 
+*A [[sled]] (required to complete a hard and two elite [[clue scroll]] steps)
+*Sledding route from [[Trollweiss Mountain]]
+
+Unlocks:
+* [[Arrg]] accessible in the [[Nightmare Zone]].
+}}

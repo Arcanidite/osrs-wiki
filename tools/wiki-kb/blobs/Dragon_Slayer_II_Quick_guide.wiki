@@ -1,0 +1,263 @@
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Dragon Slayer II}}
+
+==Walkthrough==
+===Starting off===
+'''Items required:''' ''[[Pickaxe]], gear for killing a level 100 monster. '''Recommended''': [[Amulet of glory]], [[digsite pendant]].''
+
+{{Checklist|
+*Talk to [[Alec Kincade]] outside the [[Myths' Guild]] (spirit tree to Feldip Hills) to start the quest. {{Chat option|2How can I gain access to the Guild?|1Yes.}}
+*Talk to [[Dallas Jones]] at the Karamja pub at [[Musa Point]]. The fastest way there is amulet of glory to karamja, alternativley to take the boat from [[Port Sarim]].{{Chat option|2Yes I know it well.}}
+*Go to Elvarg's Lair under [[Crandor]] and talk to Dallas Jones (shortcut via the volcano on Karamja).
+*Right-click use your pickaxe on the Northern wall in the room you defeated Elvarg, then enter the tunnel. (Marked on minimap red wall line)
+*Investigate the [[Ancient Mural]] to the north. A level 100 [[Spawn (Dragon Slayer II)|spawn]] will attack you. Kill it.
+*Investigate the mural again.
+*Talk to Dallas Jones.
+}}
+
+===The House on the Hill===
+'''''Recommended:''' Hand in the map pieces received in the house before heading outside the house (Open Stone Chest upstairs and downstairs)''
+[[File:Dragon Slayer II map puzzle solution.png|thumb|right|The solved map puzzle.]]
+
+{{Checklist|
+*Head to [[Fossil Island]] in the basement of the [[House on the Hill]] and talk to [[Dallas Jones]]. {{Chat option|1Ask about the island.}}
+*Find the missing 24 map pieces and use them on the map in the middle of the room. '''Note: You can hand your pieces to Dallas to save inventory space - Hand in 8 map pieces within the house before heading outside to save time.'''
+**Search the open chest north of the map for 5 pieces. 
+**Go upstairs, search the open stone chest on the north wall for 3 pieces.
+**Go outside, search the Fungi just north of the staircase for 4 pieces.
+**Search the Hook briar south of the house for 7 pieces.
+**Run to the east, search the mushtree for 5 pieces.
+*Talk to Dallas Jones and solve the map puzzle. {{Chat option|1Let's talk about the investigation.|1Let's do it!}}
+**Pieces can be clicked to rotate them, and also dragged to swap them.
+*Talk to Dallas Jones again.
+*Talk to [[Jardric]] at the [[museum camp]].
+}}
+
+===To Lithkren!===
+'''Items required:''' ''8 [[oak plank]]s, 10 [[swamp paste]], at least 12 [[nail]]s, a [[hammer]] and a [[saw]].'' {{Checklist|
+*Bring 8 [[oak plank]]s, 10 [[swamp paste]], 12 [[nail]]s (more may be needed as you may bend them), a [[hammer]], and a [[saw]] to the west side of the island (on the coast just south-west of the "Mushroom Meadow" [[Magic Mushtree]]) and build a rowboat.
+*Talk to Dallas Jones and board the boat. {{Chat option|1I'm ready.}}
+*Head north-west from the boat to the ruined courtyard, and climb up the western stairs.
+*Climb down the [[trapdoor (Lithkren)|trapdoor]] to the south, down the staircase to the north, and north down another staircase.
+*Talk to Dallas Jones.
+*Search the skeleton to the east and read [[Aivas' diary]].
+*Talk to Dallas Jones again.
+}}
+===Bob the Cat===
+'''Items required:''' ''[[Catspeak amulet (e)]].'' '''Recommended:''' ''Quick transportation to Sophanem.''
+{{Checklist|
+*Find [[Bob (cat)|Bob the Cat]] using your Catspeak amulet (e) and talk to him. (After finishing A Tail of Two Cats he will not be found at the Draynor Manor or Varrock west anvils but roams as usual. After an update he can be found in Burthorpe, else you will have to locate him using the Catspeak amulet (e))
+*Talk to the [[Sphinx]] in [[Sophanem]]. {{Chat option|1Ask the Sphinx for help with Bob's memories.}}
+**The sphinx will enchant you. You can now talk to cats without the catspeak amulet!
+}}
+
+===Robert the Strong===
+'''Items required:''' [[Seal of passage]], 1 [[astral rune]], a [[hammer]], a [[pestle and mortar]], [[goutweed]], [[dream vial]], a [[tinderbox]], melee gear (keep gear in the bank until lighting the brazier to save run energy).
+
+'''Recommended:''' A ''good crush weapon, food and prayer potion as the fight at the end might need it. An emergency teleport DOES work here.''
+{{Checklist|
+{{Instance|irs=at a chest near the brazier|cost=100000}}
+*'''Bring your seal of passage and make sure you have 1 free inventory space!''' Note: You can still use the bank run by [['Bird's-Eye' Jack]] without the seal; however, it is needed to speak to the [[Oneiromancer]].
+*Head to [[Lunar Isle]] and talk to the [[Oneiromancer]]. {{Chat option|3Bob's memories.|1.Yes.}}
+*Crush the astral rune with a hammer, then grind the [[astral rune shards]] with a pestle and mortar.
+*Make a [[dream potion]] by filling the [[dream vial]] with water (sink west of bank in town) and adding your [[goutweed]] and [[ground astral rune]].
+*Gear up for a fight, light the Ceremonial Brazier (located in the largest building on the island), and use your Dream potion on the flame.
+**You may leave to prepare by using the giant history book at the entrance, then rejoin the fight at any time by talking to Bob again.
+*Talk to [[Bob (cat)|Bob]] and [[Not Bob]], then exit out of the dream to gear up if you are not fully prepared. This also allows you to clear out the [[tinderbox]] and fill up with combat supplies.
+*Re-enter the dream by talking to Bob outside the brazier, and then head through the barrier and kill [[Robert the Strong]].
+**He can't be fought with ranged or magic, bring melee gear and a crush weapon.
+**He can hit heavy damage through [[Protect from Missiles]] but it reduces damage taken. Using [[chivalry]] or [[piety]] is recommended to speed up the fight, as the most challenging part about this fight is lasting long enough through the damage taken.
+**When he shouts {{overhead|See if you can hide from this!}}, run behind one of the pillars to avoid his special attack. If it hits you, it can deal up to 60 damage and will knock off your prayers.
+**[[Super combat potion]], an inventory full of food and a [[prayer potion]] are highly recommended. Do not underestimate this fight!
+}}
+*'''Note:''' If you leave the dream, you do '''NOT''' have to remake the dream potion! Talk to Bob to re-enter the dream.
+
+===The dragon key===
+{{Checklist|
+*Talk to [[Bob (cat)|Bob]] again.
+*You now need to collect the four parts of the key to open the door on [[Lithkren]].
+}}
+====Karamja key piece====
+{{Map|mtype=square|r=12|2946,2900|align=right|width=300|height=300|caption=Karamjan Temple entrance.|zoom=0}}
+'''Items required:''' ''[[Food]] to survive traps, [[prayer potion]]s to keep prayer on for long amounts of time, [[Machete]], any [[axe]]'' '''Note:''' Players with 79 [[Agility]] (boostable) can access a vine [[shortcut]] into the [[Kharazi Jungle]] without needing an axe or machete''.'' '''Recommended:''' ''Bring plenty of food and stamina potions as well as at least one prayer potion! Take the [[gnome glider]] to Karamja or bring {{coins|200}} for the [[Brimhaven]] cart ride. You can also teleport to the Gem Mine beneath Shilo Village using [[Karamja Gloves 3]] or 4.''
+{{Checklist|
+*Head to the south-eastern coast of the Kharazi Jungle and down the staircase into the maze. '''Turn off [[Auto Retaliate]]'''.
+*Navigate to the centre of the maze and take the key piece.
+**Avoid spikes and traps with thieving and agility.
+**Use protection prayers to protect from the golems' attacks.
+***Red: Melee
+***Green: Ranged
+***Blue: Magic
+*Once you have taken the [[Dragon key piece]], the plinth can be used to transport you out.
+}}
+[[File:Dragon Slayer II - Karamjan Temple maze route.png|thumb|center|300px|The route to the centre of the temple's maze. This map is flipped, making the top part south, and bottom part north.]]
+
+====Morytania key piece====
+'''Items required:''' ''[[Ghostspeak amulet]], a [[dragonstone]], 2 [[molten glass]], [[glassblowing pipe]], [[chisel]], and a [[spade]].'' '''Recommended:''' ''[[Ectophial]], [[amulet of glory]] or Draynor Manor tab, plenty of food (and filled [[druid pouch]]es if you have not lit the [[fire of dehumidification]]), [[stamina potion]].''
+[[File:Dragon Slayer II - Morytania key piece dig strategy.png|thumb|600px|A map of possible key piece locations, which splits Mort Myre Swamp into 6 sections, starting at the {{Fairycode|BKR}} fairy ring, then further subdivides sections past that.]]
+{{Checklist|
+*Talk to [[Reldo]] in the [[Varrock Castle]] library. {{Chat option|1Ask about Tristan.}}
+*Search the second bookcase from the north on the west side of the central row (see [[:File:Varrock census records location.png|this image]]).
+*Talk to Reldo again. {{Chat option|1Ask about Tristan.}}
+*Go to [[Port Phasmatys]] and speak to [[Sarah (Port Phasmatys)|Sarah]], west of the bank.
+*Bring a [[dragonstone]], 2 [[molten glass]], a [[glassblowing pipe]], and a [[chisel]] to [[Ava]] in [[Draynor Manor]]. {{Chat option|3I need your help with a key piece.}}
+*Use your glassblowing pipe on your dragonstone and use the [[inert locator orb]] on Ava to get a [[locator orb]].
+*Head to [[Mort Myre Swamp]] and use the locator to find the buried key piece. Bring food as the locator hurts you every time you use it.
+** The location is random inside the swamp. Each time you use the locator it will tell you which direction to go.
+** Start at {{Fairycode|BKR}} and feel your locator device.
+** If you get north-east, it will always be the lone purple spot that you need to cross the bridge to get to.
+** If you get south-west, south, or south-east, go to the centre of the subdivided area and scan again. For example, if you got west, go to the centre of the blue subdivision and scan there again. If you get west again, you've narrowed it down to a single dig spot.
+*Dig up the [[dragon key piece]].
+}}
+
+====Ungael key piece====
+'''Items required:''' ''Ranged gear, [[dragonfire]] and [[venom]] protection, food, and prayer.'' '''Recommended:''' ''[[Crumble Undead]] runes, [[toxic blowpipe]], [[salve amulet(ei)]], [[super antifire potion]], [[anti-venom+]], [[ranging potion]], [[prayer potion]], [[Cooked karambwan|karambwans]] and [[dark crab]]s or similar high healing foods.''
+
+{{Instance|irs=Torfinn|cost=100000}}
+
+[[File:Vorkath - deadly dragonfire.mp4|thumb|300px|Vorkath's deadly dragonfire attack directly striking a player.]]
+
+{{Checklist|
+*Ask [[Brundt the Chieftain]] in [[Rellekka]] about the dragonkin fortress. {{Chat option|2Ask about the dragonkin fortress.}} or {{Chat option|3Ask about the dragonkin fortress.}} if you don't own a [[seal of passage]] or {{Chat option|4Ask about the dragonkin fortress.}} if you haven't started the Fremennik Exiles quest, whichever refers to the fortress.
+*Prepare for a fight with [[Vorkath]]. See [[Vorkath/Strategies]] for recommended setups.
+**[[Super antifire]]s and [[Anti-venom+]] potions are highly recommended.
+**Set your quick prayers to [[protect from Magic]] and your best ranged attack prayer to allow easy re-enabling prayers.
+**[[Elite Void Knight equipment]] together with a crossbow and [[Ruby bolts (e)|ruby]]/[[Diamond bolts (e)|diamond]] bolts is recommended.
+**Turn off run to make evading the fire barrage special attack easier. Use Ctrl+click on tiles to run to that tile whenever necessary.
+*Talk to [[Torfinn]] on the dock to the north to go to [[Ungael]]. {{Chat option|1Yes please.}}
+*Kill [[Vorkath]].
+**Before the fight, put on [[Protect from Magic]] and drink your [[Anti-venom+]], [[Super antifire]], and [[Ranging potion]]s.
+***'''Make sure to re-pot during the fight''', Super antifire and anti-venom has a short duration (both 3 minutes).
+**Vorkath has several different regular attacks, including a melee attack. The two important ones are:
+***Orange fireball shot into the air - Move '''at least''' two squares away from your current location.
+***Pink fireball shot at you - Your prayers will be knocked off, turn them back on (using quick prayers).
+**After every six regular attacks, Vorkath will use one of his special attacks:
+***He will spit acid all over the crater and start firing fireballs very rapidly at your current location. Find a straight line clear of acid spots and '''walk''' back and forth along it to avoid the fireballs. See [[Vorkath/Strategies#Acid Pool Quickfire Barrage|the Vorkath strategy page]] for advanced tactics.
+***He will hit you with Dragonfire barrage, freezing you in an ice block. He will then summon a [[Zombified spawn]] that slowly walks to you, if it reaches you it will deal 30 damage. Kill it before it gets you, using [[Crumble Undead]] will guarantee a one-hit kill. You will stay frozen and Vorkath will stop attacking you until you kill the spawn or it reaches you. A possible strategy is to bring a [[slayer staff]] and setting the auto-cast to Crumble Undead, to reduce the need to click as accurately right away.
+*After you kill him, climb over the [[ice chunks (Vorkath)|ice chunks]] in the north of the crater (if required you can teleport out to restock for a dungeon part, Vorkath will remain dead). 
+*Walk along the path to the north-west of the island and enter the cave.
+**There are venomous spiders inside, don't forget your Anti-venom+.
+*Pull the [[lever (Ungael laboratory)|lever]] in the south-west section, then run to the room on the east wall before the timer runs out (you must have at least 15% run energy).
+*Search the [[stone chest (Ungael laboratory)|stone chest]] for a [[dragon key piece]] and an [[Ancient key (Dragon Slayer II)|ancient key]].
+}}
+
+====Kourend key piece====
+'''Items required:''' ''Food, light source, gear to protect from high level skeletons.''
+
+'''Recommended:''' ''Stamina potions''
+[[File:Dragon Slayer II crypt map.png|thumb|right|Map of the crypt.]]{{Checklist|
+*Enter the crypt whose entrance is found in the southern part of the [[Graveyard of Heroes]]. Follow the dirt path south to a small building.
+**Caution: The crypt is full of powerful aggressive skeletons and zombies that attack with all three combat styles.
+*Head to the bottom of the crypt and inspect the tomb to find the puzzle.
+*The solution to the puzzle is different for everyone. Refer to the table below to solve this puzzle.
+**"The one from '''[Location]''' sat at the north of the table": Place this statue '''north'''.
+**"Opposite the one with '''[Weapon]'''": Place this statue '''south.'''
+**"The one with '''[Weapon]''' asked the .....": Place this statue '''west.'''
+**Place the final statue '''east'''.
+*Search the tomb to get the [[Dragon key piece]].
+}}
+{| class="wikitable"
+!Person
+!Weapon
+!Location
+|-
+!Aivas
+|Crossbow
+|Zartharim
+|-
+!Camorra
+|Axe
+|Saranthium
+|-
+!Robert
+|Bow
+|Arkney
+|-
+!Tristan
+|Sword
+|Karville
+|}
+
+====Reforging the key====
+'''Items required:''' ''The 4 [[dragon key piece]]s, [[hammer]], [[Ancient key (Dragon Slayer II)|ancient key]], 3 casts of [[Fire Wave]] (21 [[fire rune]]s, 15 [[air rune]]s, 3 [[blood rune]]s).'' '''Recommended:''' ''Food, dragonfire protection, [[games necklace]], [[digsite pendant]].''
+{{Checklist|*Go to the [[Ancient Cavern]] (use a [[games necklace]] to teleport to Barbarian Outpost and run south to the whirlpool).
+*Descend the stairs and run south to another set of stairs which lead to the [[mithril dragon]] area.
+*Run west and open the [[mithril door]] in the middle of the area (with the three mithril dragons clumped together). You need the ancient key to open this door.
+*Cast [[Fire Wave]] or [[Fire Surge]] on the three dragon heads.
+*Leave the room and go east down the staircase, and then go to the south-western area of the caverns, and climb up the rough hewn steps there.
+*Use one of the anvils here to forge the [[dragon key]].
+*Return to Fossil Island and use the Rowboat to Lithkren (west of Mushroom Meadow Mushtree). Return to the area where Dallas Jones is.
+*Use the Dragon key on the [[ancient doors]].
+*Enter the doors and head up north and speak to Dallas to start a cutscene.
+*After the cutscene, make sure to finish the dialogue with Jardric and Bob.
+}}
+
+===A World United===
+'''Recommended:''' ''Teleports to Falador, Ardougne, Rellekka, and 2 teleports to Varrock.''
+{{Checklist|
+*Travel to [[Varrock]] and speak with [[King Roald]] about the dragon threat. {{Chat option|1Talk about the dragon threat.}}
+*Speak with the following rulers "about the dragon threat" in any order:
+**[[Sir Amik Varze]] in [[Falador]] {{Chat option|1Talk about the dragon threat.}}
+**[[King Lathas]] ([[King Thoros]] after [[Song of the Elves]]) in [[East Ardougne]] {{Chat option|1Talk about the dragon threat.}}
+**[[Brundt the Chieftain]] in [[Rellekka]] {{Chat option|2Talk about the dragon threat.}} or {{Chat option|3Talk about the dragon threat.}} if you completed [[The Fremennik Exiles]], whichever refers to the threat.
+*Return to Varrock and enter the dining room north of the throne room. {{Chat option|1It's a good plan.}}
+*Make sure to talk to [[Bob (cat)|Bob]] after exiting the dining room.}}
+
+===The Assault===
+'''Items required:'''   ''4 free inventory spaces, dragonfire protection, combat gear, plenty of food.'' '''Recommended:''' ''[[Antidote++]], ranged gear, [[toxic blowpipe]], [[super antifire potion]], [[stamina potion]], [[insulated boots]].''
+{{Instance|irs=Torfinn|cost=100000}}
+{{Checklist|
+*Return to Rellekka and take the boat back to Ungael by speaking to Torfinn.
+*Hold off the assault on your ship for 4 minutes.
+**Click leaks to fill them.
+**Click fires to douse them.
+**Click injured Fremennik warriors to heal them.
+**Click damaged masts to repair them.
+*'''''There is a checkpoint after defending the ship from the assault.'''''
+*'''Put on your dragonfire protection.'''
+*Make your way towards Varrock's grand ship, fighting a [[red dragon]], [[iron dragon]], and [[brutal green dragon]] on the way.
+*Kill the two [[Green dragon|green]] and two [[Blue dragon|blue]] dragons battling the Varrockian soldiers.
+*'''''There is a checkpoint after killing these four dragons.''''' If necessary, teleport out and prepare for the next wave.
+*Kill the [[Black dragon|black]], [[Steel dragon|steel]] then [[brutal red dragon]]s that arrive on the ship one at a time.
+**When [[Galvek]] does a casting animation, '''run away from your current location.'''
+*'''''There is a checkpoint after killing the brutal red dragon.''''' If necessary, teleport out to prepare for the next three dragons.
+*Kill the [[Mithril dragon|mithril]], [[Adamant dragon|adamant]] then [[Rune dragon|rune]] dragons that arrive on the ship one at a time.
+**When [[Galvek]] does a casting animation, '''run away from your current location.'''
+**These three dragons have a melee, ranged, magic, and dragonfire attack.
+**The adamant dragon also has two special attacks:
+***A ranged attack with the [[Ruby bolts (e)|Blood Forfeit]] effect (hits through [[Protect from Missiles]]).
+***A poison attack that splashes and lands on nearby squares dealing lots of damage.
+****It is recommended to use [[Antidote++]] or other poison immunity to minimise this damage.
+**The rune dragon also has two special attacks:
+***A ranged attack with the [[Onyx bolts (e)|Life Leech]] effect (hits through [[Protect from Missiles]]).
+***An electric attack that hits nearby squares and arcs around the player, dealing rapid damage.
+****It is recommended to wear [[Insulated boots]] to minimise this damage.
+*'''''There is a checkpoint after killing the rune dragon.''''' Teleport out and stock up for the final battle.
+}}
+====The Final Battle====
+'''Items required:''' ''Dragonfire protection (both shield and potion are required, super antifire potions do '''not''' provide full protection!), ranged gear.'' '''Recommended:''' ''[[Ruby bolts (e)]] or [[ruby dragon bolts (e)]], 3-4 [[super restore(4)]], [[ranging potion(4)]], high-healing [[food]], [[stamina potion]], one-click teleport.  (TURN AUTO RETALIATE OFF IN ADVANCE as it is not really necessary for the fight and is likely to get you killed in the third phase). Thralls '''cannot''' be summoned in this fight.''
+{{Instance|irs=Torfinn|cost=100000}}
+{{Checklist|
+*Kill [[Galvek]] - he has four phases that have 300 hitpoints each.
+**Keep avoiding his ground-targeted fireballs.
+**Turn your prayers back on after his pink dragonfire knocks them off.
+***Setting your quick prayers to Protect from Magic and Eagle Eye/Rigour is beneficial to counter this attack.
+**Use [[Protect from Magic]] in phase 1, use [[Protect from Missiles]] in phases 2, 3 and 4.
+***Phase 1: Drops eight fire traps- don't get near them or you will be hit for all your health. Stay along the north side of the ship, one square directly south of Galvek, and run two squares south from your location to avoid the fireball, and return to your original position once the attack has failed to hit you.
+***Phase 2: Launches transparent projectile which drains stats, especially run energy.
+***Phase 3: Summons waves from either the north or south end, avoid them by standing in the gap. Turn off auto retaliate to not get pulled away from the gap.
+***Phase 4: Launches earth projectiles. Avoid these or you will be bound, and probably die.
+}}
+
+===Ending===
+{{Checklist|
+*Return to [[Alec Kincade]] outside the [[Myths' Guild]]. {{Chat option|2Let's talk about my quest.}}
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|Dragon Slayer II}}
+
+{{Dragon Slayer II}}

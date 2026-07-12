@@ -1,0 +1,12 @@
+{{Has quick guide}}
+{{Infobox Quest
+|name = Death on the Isle
+|number = 167
+|image = [[File:Death on the Isle.png|300px]]
+|release = [[25 September]] [[2024]]
+|update = Varlamore: The Rising Darkness is OUT NOW
+|members = Yes
+|series = None
+|developer = [[Mod Other]]
+}}
+'''Death on the Isle''' is a murder mystery quest set on the island of [[Aldarin]].

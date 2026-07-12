@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = The Dig Site
+|image = [[File:The Dig Site reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*{{SCP|Mining|15,300}} [[Mining]] exp
+*{{SCP|Herblore|2,000}} [[Herblore]] exp
+*2 [[gold bar]]s
+*Giving the museum [[Curator Haig Halen|curator]] the [[Level 3 certificate]] allows you to pick between something to drink ([[Fruit blast]]) or something to eat ([[chocolate cake]]). '''You will lose the reward if you exit the dialogue after he has taken your certificate but before you have chosen the reward.''' You do not need to give him the other two certificates to receive the reward. Get the cake for [[Desert Treasure I]] or the [[fruit blast]] for [[Recipe for Disaster]]. 
+*The ability to do [[Kudos#Uncleaned finds|Varrock Museum specimen cleaning]] to obtain a [[Digsite pendant]].
+*The [[Ancient talisman]] can be viewed in the Digsite Exhibit at the museum on the {{FloorNumber|uk=0}}.
+}}

@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = The Lost Tribe
+|image = [[File:The Lost Tribe reward scroll.png|centre]]
+|qp = 1
+|rewards = *{{SCP|Mining|3,000}} [[Mining]] [[experience]]
+*The ability to use the [[Goblin Bow]] and [[Goblin Salute]] [[emotes]]
+*Access to the [[Dorgesh-Kaan mine]]
+*A [[ring of life]]
+*Access to [[Nardok's Bone Weapons|Nardok's Bone Weapon's store]] where players can purchase the [[Dorgeshuun crossbow]], [[bone bolts]] and other [[bone weapons]].
+*A [[mining helmet]] from giving the [[brooch]] back to [[Mistag]].
+}}

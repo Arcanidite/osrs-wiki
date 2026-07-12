@@ -1,0 +1,10 @@
+===Fight with the Menaphite Akh ===
+{{Needed|Melee combat equipment|recommended=Means to combat [[desert heat]]}}
+{{Checklist|
+* Go to the [[necropolis]] and talk to Maisa, located directly south of the south-eastern gate of Sophanem by the bend in the path.
+* At the end of the cutscene, defeat the [[Menaphite Akh]]. The Menaphite Akh attacks using melee, and will occasionally use special attacks. 
+** When she twitches, she will perform a lightning bolt attack and direct it in front of her. This attack can hit 70+ if not evaded. '''Always be prepared to walk behind or beside her to avoid this attack.'''
+** During the fight she will also summon a [[Menaphite Shadow]] that attacks with ranged or magic. Run to attack it quickly (but still watch out for the lightning attack). If not killed promptly, the shadow can switch places with the Akh, and the player must attack the real one or suffer large amounts of damage.
+**If you leave the fight, speak to Osman just outside Maisa's camp to restart the fight. If players die during the fight, they can return here to reclaim their items.
+* Go back to Sophanem and talk to Maisa or the High Priest.
+*'''Congratulations, quest complete!'''}}

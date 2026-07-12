@@ -1,0 +1,21 @@
+===The Ruins of Ullek===
+{{Needed|Combat equipment, [[coal]], [[tinderbox]] (obtainable), [[spade]] (obtainable), [[iron bar]]|recommended=A means to cure/prevent poison, protection from desert heat, Stamina potion and lots of food}}
+{{Checklist|
+* Go back to Maisa's camp and talk to her.
+* If you need a tinderbox, you can search the camping equipment by the tent to get one. A spade can be found at the north side of the campsite.
+* From the campsite, head south, east around the cliffs, and then north to a set of stairs to the [[Ruins of Ullek]].
+* Use the coal and tinderbox on the furnace (marked on the minimap) to ignite it.
+* Search the well to receive a [[Stone tablet (Beneath Cursed Sands)|stone tablet]]. Read it.
+** This is a good time to refill waterskins at the well. 
+* Head back down the stairs and head south to the southernmost ritual pillar. Dig in front of it (north).
+* Open the [[Chest (Beneath Cursed Sands)|chest]] with the passcode "1118513".
+* Return to the furnace with the [[scarab mould]] and [[iron bar]], and craft a [[scarab emblem#Iron|scarab emblem]].
+* Go further north to the pillar, and insert the emblem.
+* Rotate the scarab on the emblem so that it faces downward (pincers facing upward).
+* Climb down the stairs and defeat the two [[Scarab Mage]]s. (Logging out will place you outside the cave.)
+* Climb down the stairs again.
+* Avoid the projectiles and run west to the junction, south, and east to the lever.
+* Pull the lever at the end and run as fast as you can back to the junction, then follow the path north and east.
+** '''Warning:''' There is approximately one minute before it resets the lever.
+* At the other end, pull the other lever. If successful, the traps will be disabled.
+* Go through the door west of the junction.}}

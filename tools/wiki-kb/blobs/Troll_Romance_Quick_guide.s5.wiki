@@ -1,0 +1,9 @@
+===Sledding===
+{{Checklist|
+'''Items Required:''' ''[[sled]], [[climbing Boots]](If not teleporting)''', Recommended: '''[[armour]], [[stamina potion]]s, [[energy potion]]s.''
+*Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family ([[Troll child]] if you haven't done Desert Treasure.)
+*Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.
+*Run to the end and exit through the crevasse.
+*Equip your sled, go south, and click to slide down the slope.
+*After the first Sled ride cutscene, walk west and pick some of the [[Trollweiss|rare flowers]]. (Warning: don't start the next cutscene before collecting the flowers)
+}}

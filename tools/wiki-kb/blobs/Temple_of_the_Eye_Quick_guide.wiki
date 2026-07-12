@@ -1,0 +1,73 @@
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|Temple of the Eye}}
+
+==Walkthrough==
+===An Eye for a Favour===
+{{Needed|A [[bucket of water]], 1 free inventory slot|recommended=[[Ring of dueling]], [[Lumbridge Teleport]], [[Varrock Teleport]]}}
+{{Checklist|
+* Speak with [[Wizard Persten]] west of the [[Emir's Arena]] to obtain the [[eye amulet]]. {{Chat option|2What's a wizard doing in Al Kharid?|1Yes.}}
+* Go to the [[Mage of Zamorak]] at the [[Varrock#Altars of Zamorak|Altar of Chaos]] in south-eastern Varrock; use the eye amulet on him.
+* Speak to the [[Tea Seller]] at the eastern entrance to Varrock. {{Chat option|3Could I have a strong cup of tea?}}
+**Note: Do not steal from the [[Tea stall]] or you won't be able to continue for 10 minutes of in-game time.
+* Use the strong cup of tea on the Mage of Zamorak, and accept the teleport to the Abyss. {{Chat option|1Yes.}}
+* Use the eye amulet on the [[Dark Mage (Abyss)|Dark Mage]].
+* Now there will be runic energies surrounding the rift. Touch each colour until they all turn white; the order is random for every player. Remember the order as you try out different combinations as it will reset with each failed order.
+* Speak to the Dark Mage to receive an [[abyssal incantation]].
+}}
+
+===Help from Some Wizards===
+{{Needed|[[Eye amulet]] & [[abyssal incantation]]}}
+{{Checklist|
+* Go back to [[Wizard Persten]] in Al Kharid (Recommend exiting the abyss via Fire Altar, will place you just east of Persten) and accept the teleport to the [[Wizards' Tower]]. {{Chat option|1Yes.}}
+* Go to the basement and use the abyssal incantation on [[Archmage Sedridor]].
+* Climb up the ladder and stairs once, then speak to [[Wizard Traiborn]]. {{Chat option|2I need your apprentices to help with an incantation.}}
+* Speak with the three apprentice wizards on the {{FloorNumber|uk=1}} of the wizards tower, [[Apprentice Felix]], [[Apprentice Tamara|Tamara]], and [[Apprentice Cordelia|Cordelia]], in no particular order and view their riddles.
+* Speak to Traiborn, and answer 11 when prompted. {{Chat option|2I think I know what a thingummywut is!}}
+* Speak to Archmage Sedridor or Wizard Persten in the basement. {{Chat option|1Let's do it.}}
+}}
+
+===Guardians of the Rift===
+{{Needed|[[Chisel]] and [[pickaxe]] (both obtainable during the relevant section)}}
+''Be advised this section has arrow prompts ([[File:Yellow arrow map marker.png|link=]]) throughout the tutorial. Follow the arrows to complete the quest.''
+{{Checklist|
+* Speak to each of the apprentices in no particular order.
+* Speak to Wizard Persten. The [[Guardians of the Rift]] tutorial begins after this step.
+* Speak to Apprentice Cordelia.
+* Speak to Apprentice Felix, then take a [[weak cell]] from the table.
+* Speak to Apprentice Tamara, then place the weak cell on the inactive cell tile near her.
+* Speak to Apprentice Felix.
+* Take a weak cell from the table, then click on the essence pile to assemble a guardian.
+* Repeat the previous step for the other essence pile.
+* Speak to Apprentice Tamara.
+* Mine five guardian fragments from the guardian remains.
+* Speak to Apprentice Felix.
+* Work at the workbench to turn guardian fragments into guardian essence.
+* Speak to Apprentice Tamara.
+* Take an [[uncharged cell]] from the table.
+* Enter the [[Mind Altar]] and click the altar.
+* Speak to Apprentice Tamara.
+* Click the weak cell tile, then power-up [[The Great Guardian]].
+* Speak to Apprentice Tamara.
+* Repeat the process of mining five guardian fragments and turning them into guardian essence.
+* Enter the [[Water Altar]] and click the altar
+* Power-up [[The Great Guardian]].
+* Speak to Apprentice Tamara.
+* Click on the Essence pile again to assemble another guardian. 
+* Speak to Apprentice Tamara.
+* Repeat the process of mining guardian fragments and turning them into guardian essence.
+* Take an uncharged cell from the table and use the water portal talisman on the water guardian.
+* Click the Water Altar.
+* Leave the altar and speak to Apprentice Tamara.
+* Place the cell you made on the cell tile.
+* Speak to Apprentice Tamara.
+* Power-up [[The Great Guardian]].
+* Upon completion of the tutorial, you will automatically exit and speak to Archmage Sedridor.
+*'''Congratulations, quest complete!'''
+}}
+
+==Rewards==
+{{Quest rewards page|Temple of the Eye}}
+
+{{Temple of the Eye}}

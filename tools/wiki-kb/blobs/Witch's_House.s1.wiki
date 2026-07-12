@@ -1,0 +1,20 @@
+==Details==
+{{Quest details
+|start = Talk to the [[boy]] near the gate entrance of [[Taverley]].
+|startmap = 2928,3456
+|difficulty = Intermediate
+|description = A young boy who lives in Taverley has kicked his ball into the garden of a scary old lady.
+
+He asks you to get it back for him. This proves more difficult than it first sounds.
+|length = Very Short
+|requirements = * The ability to defeat 4 monsters from level 19 to 53 without a break.
+|items = *[[Cheese]] (You may wish to bring several in case you mess up. One source is in [[Draynor Village]] - [[Aggie]]'s house)
+*[[Leather gloves]] or any of the gloves listed [[Gate (witch's house)#Gloves|here]] (obtainable during the quest, may take some time)
+|recommended = * {{SCP|Combat|35|link=yes}}
+* [[Weapon]], [[armour]] and some [[food]]
+* 4 free inventory slots
+|kills = *[[Witch's experiment]] ''(level 19, 30, 42 and 53)''
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+</poem>
+}}

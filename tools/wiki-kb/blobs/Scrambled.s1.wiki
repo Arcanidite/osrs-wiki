@@ -1,0 +1,29 @@
+==Details==
+{{Quest details
+|start = Talk to [[Alan (Scrambled!)|Alan]] at the temple of [[Tal Teok]] north of [[Tal Teklan]].
+|startmap = 1247,3166
+|difficulty = Intermediate
+|length = Short
+|description = Egg.
+|requirements = * {{SCP|Construction|38|link=yes}}  {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Cooking|36|link=yes}}  {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Smithing|35|link=yes}}  {{Boostable|no}} {{Questreqstart|yes}}
+* Completion of the following quests:
+** [[Children of the Sun]]
+|items =
+All items obtainable during quest:
+* [[Bowl of water]] (two spawn in town, fountain next to bank)
+* 2 [[planks]] (south of the town near the water)
+* 6 [[nails]] (more recommended as they can bend, 20 nails may be found on the workbench)
+* [[Saw]] (spawn in range shop) 
+* [[Hammer]] (spawn in furnace house)
+|recommended = * {{SCP|Combat|50|link=yes}}
+* Combat equipment with [[dragonfire]] protection
+|kills = * [[Large chicken]] ''(level 16)''
+* [[Black jaguar (Scrambled!)|Black jaguar]] ''(level 88)'' - can be safespotted
+* [[Red dragon (Scrambled!)|Red dragon]] ''(level 106)'' - can be safespotted
+|ironman = 
+|leagueRegion = <poem>
+{{LeagueRegion|Varlamore}} — location requirement
+</poem>
+}}

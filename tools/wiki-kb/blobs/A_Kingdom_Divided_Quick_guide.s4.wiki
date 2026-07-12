@@ -1,0 +1,23 @@
+===Kourend's Last Princess===
+{{Needed|Runes for fire bolt or better, any axe, combat equipment|recommended=[[Xeric's talisman]] or access to one, [[skills necklace]],  [[games necklace]], [[Kharedst's memoirs]], use of [[fairy rings]]}}
+
+{{Checklist|
+* Go to the [[Forthos Ruins]], north-east of [[Woodcutting guild]].
+* Speak to Martin Holt.  {{Chat option|4I'll get searching.}}
+* Search the Stone Piles around the ruins to find a combination of numbers for the panel. Take note of these (unique to each player).
+* Cut the vines to the west, squeeze-through the vines, and use the unique combination for 'ROSE' on the panel on the wall. 
+** For example, if the piles tell you the following: R - 1, O - 3, S - 3, E - 7, your code will be '1337'.
+* Read the note then show it to Martin Holt. {{Chat option|4Alright.  I'll see you soon.}}
+* Go to the [[Settlement Ruins]], south-west of [[Wintertodt]].
+* Speak with Martin Holt in the north-west building after running past the Ice Spiders, Ice Giants, and Ice Wolves.
+* Kill the [[Assassin (A Kingdom Divided)|assassin]] that spawns.
+* Cast fire bolt (or above) on the ice chunks south-west of Martin, search the melted ice chunk and open the panel on the western wall. 
+* Read the note and speak to Martin.
+* Go to [[The Legless Faun]], in southern [[Piscarilius]], on land, speak to Martin and climb the southern pillar.
+* Check the panel upstairs. Note the order of each house.
+* Go back down the wall and push the statue panels on the [[Statue (Great Kourend)|statues]] in the order specified from the panel.
+* Check the panel upstairs again.
+* After the cutscene, read the note.
+* Head to the shack north-east of the [[farming guild]], directly west of fairy ring {{fairycode|cir}}, and search the [[bed (tatty note)|bed]].
+* Read the [[tatty note]], then inspect the crates in the north-western corner and climb down the trap door. {{Chat option|1 Climb through it.}}
+}}

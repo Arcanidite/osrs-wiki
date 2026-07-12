@@ -1,0 +1,28 @@
+==Details==
+{{Quest details
+|start = Talk to [[Irena]] by the [[Shantay Pass]], south of [[Al Kharid]].
+|startmap = 3303,3113
+|difficulty = Intermediate
+|description = South of Al Kharid a new desert pass has opened up, leading to the dangers of the Kharid desert.
+Equip your desert garb and make sure your waterskin is full before heading off into the trackless dunes in search of desert adventure.
+|length = Medium
+|requirements = * {{SCP|Fletching|10|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Smithing|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 47 enemy
+|items = '''Note that all of the required items can be bought from [[Shantay]] at the [[Shantay Pass]].'''
+* [[Desert shirt]], [[Desert robe|robe]], and [[Desert boots|boots]] (black versions do not work)
+* A [[hammer]]
+* One [[bronze bar]] (recommended to bring at least 2 additional bars, 24-96% chance to succeed based on Smithing level)
+* Ten [[feather]]s (30-50+ recommended at lower [[Fletching]] levels)
+* Means to enter the desert, such as the [[Shantay pass (item)|Shantay pass]],  [[desert amulet 2]], [[teleport tablet]]s or [[Teleport scrolls|scrolls]], [[fairy rings]] or the [[pharaoh's sceptre]]
+|recommended = * {{SCP|Combat|20|link=yes}}
+* Combat equipment to defeat a level 47 [[Mercenary Captain]], and the inventory space to unequip it immediately afterwards
+* 1-2 full [[waterskin]]s and a [[knife]] or [[slash weapon]] to refill them by cutting cacti
+* [[Stamina potion|Stamina]] or [[energy potion]]s
+* [[Pickaxe]] if caught in the mine to mine 15 rocks to get out
+|kills = * [[Mercenary Captain]] ''(level 47)'' - safespottable
+|ironman = [[File:Ultimate ironman chat badge.png]] You need to unequip your armour and weapons, and require two empty slots in addition to that. Failing dialogue will require 15 empty inventory spaces.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}

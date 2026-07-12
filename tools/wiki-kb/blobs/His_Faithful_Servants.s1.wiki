@@ -1,0 +1,25 @@
+==Details==
+{{Quest details
+|start = Speak to the [[Strange Old Man]] wandering in the [[Barrows]], east of [[Mort'ton]].
+|startmap = 3565,3292
+|difficulty = Experienced
+|description = The Strange Old Man at the Barrows in Morytania has been acting even stranger than usual...
+|length = Very Short
+|requirements = *[[Priest in Peril]]
+|items = * Combat equipment to defeat the [[Barrows Brothers]]
+* [[Spade]]
+|recommended = *{{SCP|Combat|70|link=yes}}
+*Teleports to [[Barrows]]
+*[[Strange old lockpick]]
+*[[Ghommal's hilt 2]] or higher - removes Prayer drain when worn
+|kills = * [[Verac the Defiled]] (level 115)
+* [[Dharok the Wretched]] (level 115)
+* [[Ahrim the Blighted]] (level 98)
+* [[Torag the Corrupted]] (level 115)
+* [[Karil the Tainted]] (level 98)
+* [[Guthan the Infested]] (level 115)
+|leagueRegion = <poem>
+{{LeagueRegion|Morytania}} - location requirement
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the miniquest
+</poem>
+}}

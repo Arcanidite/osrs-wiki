@@ -1,0 +1,25 @@
+==Details==
+{{Quest details
+|start = Talk to [[Guildmaster Apatura]] at the [[Hunter Guild]].
+|startmap = 1555,3033
+|difficulty = Intermediate
+|description = Learn about the role of the Hunter Guild and unlock higher tier rumours.
+|length = Short
+|requirements = * {{SCP|Hunter|46|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Herblore|30|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Construction|27|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* Completion of the following quests:
+** [[Children of the Sun]]
+** [[Eagles' Peak]]
+|items = * [[Needle]] or [[costume needle]] (one needle spawns in [[Pellem's Fur Store]] nearby)
+* [[Hammer]] (obtainable during quest) or [[Imcando hammer]]
+* 2 [[jerboa tail]]s (obtainable during quest)
+** or a [[Box trap]] (can be bought from [[Imia's Supplies]] nearby)
+|recommended = * [[Stamina potion]]
+* [[Catspeak amulet]] for extra dialogue
+* [[Quetzal whistle]]
+|kills = None
+|leagueRegion = <poem>
+{{LeagueRegion|Varlamore}} — location requirement
+</poem>
+}}

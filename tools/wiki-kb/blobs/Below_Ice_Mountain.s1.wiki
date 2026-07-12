@@ -1,0 +1,31 @@
+==Details==
+{{Quest details
+|start = Talk to [[Willow (Below Ice Mountain)|Willow]] on the path south of [[Ice Mountain]].
+|startmap = 3002,3436
+|difficulty = Novice
+|description = Willow, an energetic archaeologist (perhaps suspiciously so) is hunting for her next big discovery. She believes she has found the entrance to ancient underground ruins found to the west of Ice Mountain. There's a catch though - the entrance is sealed tight and she needs to re-unite her old crew to help her break in. Naturally, she has to stay close to the ruins in order to lay claim to the find, so it falls to you to bring her rag-tag group back together for one last caper and a final big pay-off.
+
+Burntof is an old dwarf with a penchant for demolition, Checkal is a well-built lifter of heavy things and Marley is a cunning thief with a knack for disarming traps.
+
+Together, they have the talents it will take to gain entry to the secret ruins. But persuading them might not be easy. See, the gang aren't all too keen on working with Willow again, and her intentions might not be as honourable as she claims...
+|length = Short
+|requirements = *{{SCP|Quest|16|link=yes}} {{Questreqstart|yes}}
+|items = * [[Cooked meat]] (obtainable during the quest)
+* [[Bread]]
+* [[Knife]]
+* [[Beer]] (obtainable during the quest)
+** Alternatively [[Asgarnian ale]], [[Dwarven stout]], or a [[Wizard's mind bomb]]
+|recommended = * {{SCP|Combat|15|link=yes}}
+* [[Armour]] and some [[food]]
+* [[Pickaxe]] and {{SCP|Mining|10|link=yes}} {{Boostable|Yes}} to kill the [[Ancient Guardian]] without combat
+* Fast travel to Falador ([[Falador teleport]])
+* Fast travel to Varrock ([[Varrock teleport]], [[Chronicle]] or ''([[members]] only)'' [[combat bracelet]] to the Champions' Guild)
+* Fast travel to Edgeville, the Ice Mountain and the Barbarian Village ([[Skull Sceptre]] or [[Chronicle]] PLUS a woodcutting axe for [[Canoe]] or ''(members only)'' [[combat bracelet]] to the Monastery or [[amulet of glory]] to Edgeville)
+* [[Energy potion]]s or ''(members only)'' [[stamina potion]]s
+* ''(Members only)'' [[Weight-reducing clothing]]
+|kills = [[Ancient Guardian]] ''(level 25)'' (optional with a [[pickaxe]] and {{SCP|Mining|10|link=yes}} {{Boostable|Yes}})
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Asgarnia}} {{okay}} will auto-complete the quest
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}

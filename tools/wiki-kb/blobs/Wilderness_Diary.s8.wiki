@@ -1,0 +1,63 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Wilderness" data-diary-tier="Elite"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Kill [[Callisto]], [[Venenatis]] & [[Vet'ion]].
+''Note: The lesser versions of these bosses ([[Artio]], [[Spindel]], and [[Calvar'ion]]) also count towards this task. You must have claimed the rewards from the [[#Hard|hard diary tasks]] before you can access these lesser bosses.''
+
+''While these bosses can be killed in any order, completing or updating any other task in-between will reset the progress for this task.''
+|
+*Completion of the Medium Wilderness diary is required to kill the greater versions, and completion of the Hard Wilderness diary is required to kill the lesser versions
+*See the individual strategy guides for [[Callisto/Strategies|Callisto]], [[Venenatis/Strategies|Venenatis]], and [[Vet'ion/Strategies|Vet'ion]], or those for the weaker bosses [[Artio/Strategies|Artio]], [[Spindel/Strategies|Spindel]], and [[Calvar'ion/Strategies|Calvar'ion]]
+|-
+|2. Teleport to [[Ghorrock]].
+|
+*{{SCP|Quest}} Completion of [[Desert Treasure I]]
+*{{SCP|Magic|96|link=y}}
+*[[Ancient Magicks]] selected
+*Means to cast [[Ghorrock Teleport]] ({{RuneReq|Law=2|Water=8}})
+|-
+|3. Fish and Cook{{sic}} a [[Raw dark crab|Dark Crab]] in the [[Resource Area]].
+|
+*{{SCP|Fishing|85|link=y}} and {{SCP|Cooking|90|link=y}}
+*[[Lobster pot]] and [[dark fishing bait]]
+*3,750-7,500 [[coins]]{{efn|name=FeeElite|The regular fee to enter the [[Resource Area]] is 7,500 [[coins]]. This is reduced to 6,000 [[coins]] when the rewards for the [[#Medium|medium tasks]] are claimed, and further down to 3,750 [[coins]] with the rewards of the [[#Hard|hard tasks]].}}
+|-
+|4. Smith a [[rune scimitar]] from scratch in the [[Resource Area]].
+''Note: You must kill two separate [[Runite Golem]]s and mine them each for [[runite ore]]s, smelt two [[runite bar]]s in the nearby [[furnace]] ([[Superheat Item]] does not work), then smith the [[rune scimitar]] on the [[anvil]]. The steps for mining the ores are still completed if the ores are destroyed by an [[infernal pickaxe]].''
+
+''Completing or updating any other task in-between these steps will reset the progress for this task.''
+|
+*{{SCP|Mining|85|link=y}} and {{SCP|Smithing|90|link=y}}
+*[[Weaponry]], any [[pickaxe]], [[hammer]], and 16 [[coal]]
+*3,750-7,500 [[coins]]{{efn|name=FeeElite}}
+|-
+|5. Steal from the [[Chest (Rogues' Castle)|Rogues' chest]].
+''Note: You must right-click the chest to search for traps. You'll then be attacked by all nearby [[Rogue#Level_135|rogue]]s.
+|
+*{{SCP|Thieving|84|link=y}}
+|-
+|6. Slay a [[spiritual mage]] inside the [[Wilderness God Wars Dungeon|wilderness Godwars Dungeon]]{{sic}}.
+|
+*{{SCP|Agility|60|link=y}} or {{SCP|Strength|60|link=y}}, and {{SCP|Slayer|83|link=y}}
+*[[Weaponry]] and [[God_Wars_Dungeon#God-related_protection|god equipment]]
+|-
+|7. Cut and burn some [[magic logs]] in the [[Resource Area]].
+''Note: Logs burnt by an [[infernal axe]] do not count towards this task. Logs may also be burnt on the Forester's Campfire. Completing or updating any other task in-between these steps will reset the progress for this task.''
+|
+*{{SCP|Woodcutting|75|link=y}} and {{SCP|Firemaking|75|link=y}}
+*Any [[axe]] and [[tinderbox]]
+*3,750-7,500 [[coins]]{{efn|name=FeeElite}}
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Wilderness sword 4]]:
+**Identical stats to an [[adamant sword]] (only weighs negligibly less)
+**Unlimited teleports to the [[Fountain of Rune]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*Free access to the [[Resource Area]], down from a fee of 3,750 [[coins]]
+*[[Lundail]] offers you 200 random [[runes]] for free every day, worth a total average of {{NoCoins|{{#var:avgrune}}*200}} [[coins]] on the [[Grand Exchange]]
+*[[Dragon bones]] from [[dragon]]s killed in the [[Wilderness]] are now [[noted]], unless this feature is disabled by talking to the [[Lesser Fanatic]] in [[Edgeville]] (this excludes the dragon bones of [[King Black Dragon]], as his [[King Black Dragon Lair|lair]] is considered to be outside of the [[Wilderness]])
+*Catch rate of [[raw dark crab|dark crabs]] increased by 112.5%

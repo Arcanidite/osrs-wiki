@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = A Night at the Theatre
+|image = [[File:A Night at the Theatre reward scroll.png|centre]]
+|qp = 2
+|rewards =
+* Four [[Antique lamp (A Night at the Theatre)|antique lamps]], each offering 20,000 experience in {{SCP|Attack}} [[Attack]], {{SCP|Strength}} [[Strength]], {{SCP|Defence}} [[Defence]], {{SCP|Ranged}} [[Ranged]], {{SCP|Magic}} [[Magic]], or {{SCP|Hitpoints}} [[Hitpoints]] at level 50 or above.
+** If players completed the quest before 28 July 2021 and have already used the original two antique lamps that were rewarded, they will only receive two additional antique lamp upon re-completing the quest.
+}}

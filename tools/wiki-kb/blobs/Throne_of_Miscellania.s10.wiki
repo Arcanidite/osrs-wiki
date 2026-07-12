@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Throne of Miscellania
+|image = [[File:Throne of Miscellania reward scroll.png|centre]]
+|qp = 1
+|rewards = *[[Managing Miscellania|Management of Miscellania]]
+* 10,000 [[coins]] (inside the Miscellania coffers)
+* The ability to teleport to [[Miscellania]] using a [[ring of wealth]]
+}}

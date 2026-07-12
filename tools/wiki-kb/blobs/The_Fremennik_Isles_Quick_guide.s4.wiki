@@ -1,0 +1,10 @@
+===The spymaster's first task===
+'''Items required''': ''Silly jester hat, silly jester top, silly jester tights, silly jester boots''
+{{Checklist|
+*Quick travel to [[Neitiznot]] via [[Maria Gunnars]] on the docks next to Mord.
+*Remove anything from your weapon and shield slots and put on the Jester outfit (hat, boots, tights, top)
+*Speak with [[Slug Hemligssen]] north of the bank. {{Chat option|4Free stuff please.|1I am ready.}}
+*Talk to [[Mawnis Burowgar]] in the building south of the bank.
+*During the cutscene, follow the commands Mawnis gives using the right-side panel.
+*Return to Slug Hemligssen. He will give you 2500 coins. {{Chat option|1Yes I have.|3They will be ready in two days.|2Seventeen militia have been trained.|1There are two bridges to repair.}},
+}}

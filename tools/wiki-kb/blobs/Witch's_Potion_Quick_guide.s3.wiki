@@ -1,0 +1,2 @@
+=== Starting off ===
+{{Checklist|*To start, talk to [[Hetty]] in her house in [[Rimmington]]. {{Chat option|1 I am in search of a quest.|1 Yes, help me become one with my darker side.}}}}

@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = Ethically Acquired Antiquities
+|image = [[File:Ethically Acquired Antiquities reward scroll.png|centre]]
+|qp = 1
+|rewards =
+* {{SCP|Thieving|6,000|link=yes}} experience
+* 5,000 [[coins]]
+}}

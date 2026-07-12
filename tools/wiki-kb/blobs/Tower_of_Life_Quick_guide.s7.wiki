@@ -1,0 +1,23 @@
+====Finishing up====
+{{Checklist|
+*Talk to [[Effigy]].
+*Go to the top floor for a [[cutscene]] involving the alchemists and the [[Homunculus]].
+*Go outside to talk to Effigy.
+*Return to the top floor and answer the Homunculus' questions until the bar is filled with either 'Logic' or 'Magic'.
+**{{Chat option|1|3|3|1|2|2|3}} to solve with 'Logic'.
+**{{Chat option|2|2|1Runecraft, enchant jewellery, perform alchemy.|3Turn them into bananas or peaches!|3Depends where you are headed, but teleport spells are a safe bet.|1Yes, you can make magic potions to boost your skills.|1By harnessing the power of the gods!}} to solve with 'Magic'.
+*Talk to Effigy again.
+*Go to the dungeon floor inside the tower via the trapdoor to the south and talk to the Homunculus to the north.
+}}
+'''Congratulations, quest complete!'''
+
+{{Checklist|
+*Optional: Medium [[Ardougne Diary]] task - kill a "[[swordchick]]" (requires 1 raw swordfish and 1 raw chicken.
+**Talk to Homunculus again about creating monsters.
+**Run south-south-west to the "Symbol of life" altar.
+***Use a [[raw chicken]] on the altar.
+***Use a [[raw swordfish]] on the altar.
+***Activate the altar.
+***Kill the [[swordchick]].
+*'''Congratulations, quest complete!'''
+}}

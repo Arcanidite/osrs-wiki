@@ -1,0 +1,14 @@
+===Entranced Menaphites===
+{{Needed|Combat equipment, food, combat potions|recommended=[[Stamina potion]], [[Pharaoh's sceptre]], and means to combat [[desert heat]]}}
+{{Checklist|
+* Talk to [[Jamila]] in Sophanem ([[File:Crafting shop icon.png]] icon on the [[minimap]]) to start the quest. {{Chat option|2What's this special item?|1Yes.}}
+* Read the [[Message (Beneath Cursed Sands)|message]] she gives you. 
+* Make your way to the campsite, east of Sophanem, directly north of the small mining site by the cliffs.
+**For a quicker journey, exit from the south-eastern gate in Sophanem.
+**After entering the Necropolis for the first time, players with level 62 Agility can reach it once more by way of [[Fairy rings|fairy ring]] using the code {{Fairycode|AKP}}. 
+* Talk to [[Maisa]] {{Chat option|1Let's go.}}
+** If you have a Pharaoh's sceptre, commune with the [[Obelisk (Necropolis)|obelisk]] directly north of the [[necropolis mine]] to allow teleportation back here, via the "Jaltevas" teleport option on the sceptre.
+* Inspect the blocked entry at the [[Jaltevas Pyramid]].
+* Talk to either a citizen or Menaphite Guard.
+* Fight the [[Head Menaphite Guard]]. '''Do not''' use [[Protect from Melee]], or he will damage you for 1/3rd of your total hitpoints. Boosting prayers like [[piety]] can still be used.
+*Talk to Maisa}}

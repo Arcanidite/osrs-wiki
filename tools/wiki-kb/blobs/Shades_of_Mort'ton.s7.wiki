@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Shades of Mort'ton
+|image = [[File:Shades of Mort'ton reward scroll.png|centre]]
+|qp = 3
+|rewards = 
+*{{SCP|Herblore|2,000}} [[Herblore]] experience
+*{{SCP|Crafting|2,000}} [[Crafting]] experience
+*Ability to play the [[Shades of Mort'ton (minigame)|Shades of Mort'ton minigame]]
+*Ability to use the Shades of Mort'ton [[minigame teleport]]
+*Bonus: If you take the [[Diary (Shades of Mort'ton)|Diary of Herbi Flax]] to the [[Apothecary]] in [[Varrock]], you'll get an extra 335 [[Herblore]] experience (can only be done once).
+}}

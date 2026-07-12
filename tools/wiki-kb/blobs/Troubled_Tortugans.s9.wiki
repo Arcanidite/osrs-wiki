@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Troubled Tortugans
+|image = [[File:Troubled Tortugans reward scroll.png|centre|488px]]
+|qp = 1
+|rewards =
+*{{SCP|Sailing|10,000|link=yes}} experience
+*{{SCP|Slayer|8,000|link=yes}} experience
+*Access to the [[Great Conch]] and its facilities (such as the [[fairy ring]] {{fairycode|CJQ}} and [[notice board]])
+*Ability to fight [[gryphon]]s
+}}

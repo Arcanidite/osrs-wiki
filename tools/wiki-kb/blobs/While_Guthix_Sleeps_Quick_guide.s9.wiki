@@ -1,0 +1,32 @@
+===Balance Elemental and Lucien's demons===
+{{Needed|Combat gear for all three combat styles, [[lit sapphire lantern]]|recommended=Some means of reaching the [[Chasm of Tears]] (ex. a [[games necklace]]), food and [[Super restore|Super restore]]s for the fight, [[Menaphite remedy]]}}
+{{Checklist|
+*Leave the temple and prepare for the last fight battles ahead. Bank the Dark Squall's robes and bring your best gear.
+*Bring:
+**Equipment for all 3 combat styles
+**3-4 [[super restore]]s
+**1 [[Menaphite remedy]] (one dose before the fight begins and a second dose if you need more time)
+**10-12 combo food ([[shark]]s and [[karambwan]] are fine)
+**A [[sapphire lantern]] to attract a light creature to enter the chasm
+**An emergency teleport (not runes, as the Elemental can lower your magic to 1 if you run out of supplies)
+* Proceed past the huge door until you reach the [[Stone of Jas|Mysterious Stone]].
+* Upon arriving in the room, a small cutscene will happen and the fight with the [[Balance Elemental]] will then begin. It can use a magical, stat-lowering attack after every 3-4 attacks, then proceeding to change attack styles based on the player's protection prayer.
+* Fight overview: 
+** Fiery / Orange -> attacks with Ranged
+** Airy / White -> attacks with Melee
+** Watery / Blue -> attacks with Magic
+** The Elemental will start praying against your attack styles at 50% of its hitpoints.
+** At 25% the Elemental will attack faster, harder and have double prayers up. Be sure to correctly pray against the style it uses, since it can hit high 30s on a 2-tick speed attack whilst switching attack styles as well.
+**Make sure you drink your restores if the Elemental reduces your stats or bring a menaphite remedy and drink it before the fight starts so it will restore your stats when weakened.
+**It is recommended that you use one of the pillars at 25% since you can exchange hits 1:1 and take your time to have the right prayer protection up. Or focus on prayers first, and then your switches, as you only have 1 tick to react. If the attack hits you off prayer it will drain your stats and prayer. (You are able to use the pillar the entire fight if you are a lower level/hardcore who is worried about death)
+* If you die while fighting the Balance Elemental, your grave will appear at the top of the chasm at Tears of Guthix.
+* Upon defeating it, search the Stone again to view a cutscene.
+* Fight the two [[Tormented Demon]]s alongside the Guardians of Armadyl.
+** They are surrounded by a flame shield that reduces damage done by non-[[demonbane weapons]]/[[demonbane spells|spells]] and non-[[abyssal weapons]] by 20%, though this should not be an issue for this fight thanks to the extremely high boost from the [[Stone of Jas]].
+** They can use protection prayers, switching prayers after taking a certain amount of damage.
+** They can also switch attack styles based on the player's protection prayers every 16 seconds or so.
+** Sitting behind the south-western column and waiting for the Guardians of Armadyl to finish off the demons is viable and completely removes any combat from the encounter if you do so wish. (Very slow, but completely safe for HCIM)
+* Upon defeating the demons, speak to Idria and have her teleport you to White Knights' Castle.
+* Speak to Idria again to complete the quest.
+* '''Congratulations, quest complete!'''
+}}

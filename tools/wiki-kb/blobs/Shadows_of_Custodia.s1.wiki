@@ -1,0 +1,32 @@
+==Details==
+{{Quest details
+|start = Read the [[Noticeboard (Shadows of Custodia)|notice board]] in [[Auburn Pub]].
+|startmap = 1396,3356
+|difficulty = Experienced
+|length = Short
+|description = Solve the case of some missing people and unlock a new dungeon.
+|requirements = *Completion of the following quests:
+** [[Children of the Sun]]
+* {{SCP|Slayer|54|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Fishing|45|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Construction|41|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+* {{SCP|Hunter|36|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = *4 [[willow longbow]]s
+**Can be purchased from [[Arcuani's Archery Supplies]] in [[Tal Teklan]] or [[Lowe's Archery Emporium]] in [[Varrock]]
+*4 [[maple logs]] (obtainable during quest)
+*[[Fishing rod]]  (obtainable during quest) ([[Oily fishing rod]], [[Pearl fishing rod]], or [[Barbarian rod]] also works)
+*[[Hammer]] (obtainable during quest)
+|recommended = * Any [[axe]] (if gathering logs during the quest)
+*1 [[stamina potion]] or other means of [[energy]] restoration
+* {{SCP|Combat|60|link=yes}}
+|kills = 3 [[Strange creature (Shadows of Custodia)|Strange creatures]] (level 93)
+|ironman = *A method to obtain [[maple logs]]:
+**{{SCP|Woodcutting|45|link=yes}} {{Boostable|yes}} to cut [[maple trees]]
+**Guaranteed from the [[Managing Miscellania]] activity (requires {{SCP|Quest|Throne of Miscellania}})
+**{{SCP|Firemaking|50|link=yes}} {{Boostable|No}}  for maple logs from the [[Wintertodt]] [[Reward Cart]] (drop chance based on {{SCP|Woodcutting}} level).
+**Completing [[Hunters' Rumours]] with {{SCP|Hunter|46|link=yes}} {{Boostable|no}} to receive [[Hunters' loot sack]] (drop chance based on {{SCP|Woodcutting}} level)
+**Using [[Serum 208]] for a 1/128 drop of maple logs from curing [[Afflicted]] (requires {{SCP|Quest|Shades of Mort'ton}}).
+|leagueRegion = <poem>
+{{LeagueRegion|Varlamore}} — location requirement
+</poem>
+}}

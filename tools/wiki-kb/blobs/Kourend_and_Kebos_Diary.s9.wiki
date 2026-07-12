@@ -1,0 +1,14 @@
+===Rewards===
+*[[Rada's blessing 4]]:
+**Unlimited teleports to the top of [[Mount Karuulm]]
+**8% chance to catch two [[fish]] at once anywhere when equipped, excluding at [[Tempoross]]' [[Tempoross Cove|Cove]] (no additional experience granted)
+**Has a [[Prayer bonus]] of +2, up from +1, the highest of any item in the [[Worn_Equipment#Ammunition_slot|ammunition slot]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*Roughly 11% more [[slayer reward point]]s from [[Konar quo Maten]]'s tasks, including milestone tasks
+*10% additive success rate when using the [[range|cooking ranges]] in the [[Hosidius Kitchen]], up from 5%
+*Permanent protection from the burning effect in the [[Karuulm Slayer Dungeon]] without the need for protective footwear
+*Ashes scattered via the [[Ash sanctifier]] now grant full [[Prayer]] experience
+*80% discount on [[Eodan]]'s [[tanner|tanning]] service, up from 60%
+*10% additional [[blood runes]] from the [[Blood Altar (Kourend)|false blood altar]] (no additional experience granted)
+*10% increased chance of obtaining higher-tier [[ore]]s in the [[Blast mine]]
+*[[Thirus]] offers you 80 [[dynamite]] for free every day, worth a total of {{NoCoins|{{GEP|Dynamite}}*80}} [[coins]] on the [[Grand Exchange]]

@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = The Knight's Sword
+|image = [[File:The Knight's Sword reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+* {{SCP|Smithing|12,725}} [[Smithing]] [[experience]]
+*A [[blurite sword]] (if you got [[Thurgo]] to make you an extra one)
+*The ability to smelt [[blurite ore]] into [[blurite bar]]s (members only)
+}}

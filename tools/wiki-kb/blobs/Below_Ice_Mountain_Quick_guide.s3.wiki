@@ -1,0 +1,2 @@
+===Starting off===
+{{Checklist|*Talk to [[Willow (Below Ice Mountain)|Willow]] on the path south of Ice Mountain, north of Falador. {{Chat option|1Yes.}}}}

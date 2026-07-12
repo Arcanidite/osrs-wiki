@@ -1,0 +1,88 @@
+==Details== 
+{{Quest details
+|start = Talk to [[Edmond]] in [[East Ardougne]], at his home north of the [[Flying Horse Inn]].
+|startmap = 2569,3333
+|difficulty = Grandmaster
+|description = Our story begins with you, the hero, answering the call to adventure when Edmond, a resident of Ardougne, asks for your aid. By rescuing his daughter Elena from Plague City, the quarantined West Ardougne, you begin to unravel the mystery surrounding the disease. With her help, you discover the plague is a hoax - a plot by King Lathas to section off the West Ardougne. By confronting him, you find out this was done to protect the rest of Gielinor from the threat in the elven lands.
+
+The king sends you on a mission to travel through the Underground Pass and help his ally, Lord Iorwerth, in eradicating his brother King Tyras who threatens to revive the mysterious Dark Lord. After an arduous journey through the pass, you meet with Iorwerth and his forces to end Tyras' evil once and for all.
+
+Upon your return to Lathas you are intercepted by Arianwyn, a rebel elf who opposes Lord Iorwerth. He informs you of Lathas and Iorwerth's deception. They manipulated you into removing their final opposition and were now free to bring the Dark Lord back to Gielinor for their own intentions. You work with the elven rebellion to discover the purpose of the plague was to disguise the digsite of the long lost Temple of Light. An ancient place that is key to bringing back the Dark Lord.
+
+To make amends for your past mistakes and put a halt in King Lathas' and Lord Iorwerth's plans, you solve the intricate light puzzle designed to protect the Death Altar within the temple. After sealing off the temple and preventing the return of the Dark Lord, it's now time to turn your attention to King Lathas and Lord Iorwerth to end their schemes once and for all in Song of the Elves.
+|length = Very Long
+|requirements = *Completion of the following quests:
+**[[Mourning's End Part II]]
+***[[Mourning's End Part I]]
+****[[Big Chompy Bird Hunting]]
+****[[Sheep Herder]]
+****[[Roving Elves]]
+*****[[Waterfall Quest]]
+*****[[Regicide]]
+******[[Underground Pass]]
+*******[[Biohazard]]
+********[[Plague City]]
+**[[Making History]]
+***[[Priest in Peril]]
+***[[The Restless Ghost]]
+**[[Druidic Ritual]]
+*{{SCP|Agility|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Construction|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Farming|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Herblore|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Hunter|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Mining|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Smithing|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Woodcutting|70|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = *[[Steel full helm]]
+*[[Steel platebody]]
+*[[Steel platelegs]]
+*[[Red dye]]
+*[[Purple dye]]
+*[[Mourner gear]] including [[gas mask]] ([[plague jacket]] and [[plague trousers|trousers]] do not work)
+*[[Silk]]
+*[[Runite bar]]
+*[[Limestone brick]] x 8
+*[[Tinderbox]]
+*[[Rope]]
+*[[Nature rune]]
+*[[Flowers]] from [[mithril seeds]] or [[adamant seeds]], or an [[irit leaf]]
+*[[Adamant chainbody]] (consumed during the quest)
+*[[Wine of zamorak]] OR [[Zamorak brew|Zamorak brew(4)]]
+*[[Cabbage]] (obtainable during the quest)
+*[[Black knife]] OR [[black dagger]]
+*[[Cadantine seed]]
+*[[Seed dibber]] (or partial completion of the [[Farming]] portion of the [[Barbarian Training]] [[miniquest]])
+*[[Vial of water]]
+*[[Pestle and mortar]]
+*[[Hammer]]
+*[[Saw]]
+*[[Pickaxe]]
+*[[Axe]]
+*[[Spade]]
+|kills = *21 [[Mourner (Song of the Elves)|Mourners]] (level 24, 51, and 106)
+*[[Paladin (Song of the Elves)|Paladin]] (level 49 and 118)
+*[[Knight of Ardougne (Song of the Elves)|Knight of Ardougne]] (level 27 and 53)
+*Several [[Iorwerth Archer]]s and [[Iorwerth Warrior|Warriors]] (level 90 and 108)
+*[[Arianwyn]] (level 212)
+*[[Essyllt]] (level 236)
+*[[Fragment of Seren]] (level 494)
+|recommended = *{{SCP|Combat|95|link=yes}}
+*{{SCP|Magic|80+|link=yes}} for the [[Fragment of Seren]].
+*{{SCP|Prayer|40|link=yes}} to be able to use [[Protect from Missiles]] at boss fight.
+*Completion of [[Desert Treasure I]] for [[Ancient Magicks]].
+*High healing food, such as [[monkfish]] or [[sharks]].
+*[[West Ardougne Teleport]]
+*[[Games necklace]] for teleportation to [[Baxtorian Falls]].
+*[[Weight-reducing clothing]] and energy restoration items such as [[stamina potion]].
+*Charged [[teleport crystal]]s to skip large amounts of walking.
+*3x [[Iorwerth camp teleport]] or equivalent method.
+*[[Zul-Andra teleport]]
+|ironman = Obtaining a [[runite bar]]:
+*Exchange [[rune platelegs]] at the Aldarin windmill [[Nest (nice)|nest]] to obtain it. [[Rune platelegs]] can be purchased at [[Scavvo's Rune Store.]] in the [[Champions Guild]] for {{Coins|64,000}}.
+*1/21 drop from [[magpie implings]], requires {{SCP|Hunter|65|link=yes}}.
+*Guaranteed drop from [[Rune dragons]], requires completion of [[Dragon Slayer II]].
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Tirannwn}} {{okay}} will auto-complete the quest
+</poem>
+}}

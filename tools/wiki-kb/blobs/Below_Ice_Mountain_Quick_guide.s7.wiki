@@ -1,0 +1,6 @@
+===Entering the dungeon===
+'''Items recommended:''' Some food for low combat players, and any [[pickaxe]] or a weapon and armour to kill a level 25 monster.
+{{Checklist|*Go to the [[Blocked entry|entrance]] of the [[Ruins of Camdozaal]], at the west side of the [[Ice Mountain]], and talk to Willow (dungeon icon on minimap). {{Chat option|1Yes.}}
+*After the cutscene, kill the level 25 [[Ancient Guardian]] by attacking it or mining the 4 [[structural pillar]]s in the corners.
+*'''Congratulations, quest complete!'''
+**After the quest is complete, your character will speak with Ramarno, an Imcando dwarf found in the ruins.}}

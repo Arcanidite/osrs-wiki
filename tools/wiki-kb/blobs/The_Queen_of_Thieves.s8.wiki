@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = The Queen of Thieves
+|image = [[File:The Queen of Thieves reward scroll.png|center]]
+|qp = 1
+|rewards = 
+*{{SCP|Thieving|2,000}} [[Thieving]] experience
+*2,000 [[coins]]
+*A page for [[Kharedst's memoirs]], '[[The fisher's flute]].' It teleports players to the centre of Port Piscarilius.
+*Ability to recolour the [[graceful outfit]] to the colours of [[Port Piscarilius]].
+}}

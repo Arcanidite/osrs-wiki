@@ -1,0 +1,42 @@
+==Walkthrough==
+'''Note''': Use [[fairy ring]] {{fairycode|AJR}}, or a [[slayer ring]] to quickly get to [[Troll Stronghold (location)|Troll Stronghold]] through the Secret Door just north-east of the [[Fremennik Slayer Dungeon]] in the [[Fremennik Province]]. ([[Climbing boots]] are needed for a shortcut if you are taking this path to the Secret Door!)
+
+===Hitch===
+{{Checklist|
+'''Items Required:''' ''Climbing boots''.
+*Talk to [[Ug]] in the south-west corner of the [[Troll Stronghold (location)|Troll Stronghold's]] middle level. Offer him your help. {{Chat option|1Aww, you poor troll. What seems to be the problem?|3Don't worry now, I'll see what I can do.}}
+*Talk to [[Aga]] in the room to the north. {{Chat option|2So... how's your... um... love life?|1Errr... I've got to go.}}
+*Talk to [[Ug]] again.
+}}
+
+===Survival Techniques===
+{{Checklist|
+'''Items Required:''' ''[[rope]], [[maple Logs|maple]] or [[yew logs]], [[iron bar]], [[swamp tar]], [[bucket of wax]], [[cake tin]].''
+*Talk to [[Tenzing]] in the hut west of the Warriors' Guild in Burthorpe. {{Chat option|4Do you know where I can find Trollweiss?|2What would I need to make such a sled?}}
+*Talk to [[Dunstan]] at the anvil in north-eastern Burthorpe. {{Chat option|1Talk about a quest.|2I need a sled!!|1Yes.}}
+*Talk to him again to get the sled. {{Chat option|1Talk about a quest.}}
+*Use the [[swamp tar]] on the [[bucket of wax]] to get Wax.
+*Use the Wax on your Sled.
+}}
+
+===Sledding===
+{{Checklist|
+'''Items Required:''' ''[[sled]], [[climbing Boots]](If not teleporting)''', Recommended: '''[[armour]], [[stamina potion]]s, [[energy potion]]s.''
+*Run north-west from the Trollheim teleport to reach a cave just north-west of the Troll family ([[Troll child]] if you haven't done Desert Treasure.)
+*Enter the cave to the north-west (Not through the icy gate) then run north-west past the ice trolls.
+*Run to the end and exit through the crevasse.
+*Equip your sled, go south, and click to slide down the slope.
+*After the first Sled ride cutscene, walk west and pick some of the [[Trollweiss|rare flowers]]. (Warning: don't start the next cutscene before collecting the flowers)
+}}
+
+===The Things We Do For Love===
+{{Checklist|
+'''Items Required:''' [[Trollweiss]], Food, Armour, and a Weapon.''
+*Return to [[Ug]].
+'''{{Colour|red|Warning}}:''' Arrg will attack '''immediately''' after the next step, using a combination of <u>melee</u> AND <u>ranged</u> attacks that can hit in the 30s, so be prepared!
+*Talk to [[Arrg]]. {{Chat option|1I am here to kill you!}} He will teleport you into the arena.
+*Kill Arrg.
+::Arrg can de-spawn if not killed fast enough using the safe-spot, so killing him could be difficult on a low level account.
+*Return to Ug.
+*'''Congratulations, quest complete!'''
+}}

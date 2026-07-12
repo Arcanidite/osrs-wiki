@@ -1,0 +1,19 @@
+==Details==
+{{Quest details
+|start = Talk to [[Tomas Lawry]] outside the [[Port Piscarilius]] bank.
+|startmap = 1796,3782
+|difficulty = Intermediate
+|description = The gangs of Kourend have recently been uniting under a mysterious figure called the Queen of Thieves, somewhere in Port Piscarilius. This novice quest tasks the player with infiltrating the gangs of Kourend in order to find the Queen of Thieves.
+|length = Very Short
+|requirements = *Completion of the following quests:
+**[[Client of Kourend]]
+***[[X Marks the Spot]]
+* {{SCP|Thieving|20|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = * [[Stew]] ''(Cooking ingredients can be obtained during quest for 6 [[coins]]. Requires 25 [[Cooking]])''
+|recommended = *[[Stamina potion]]
+*[[Coins]]
+*[[Kourend Castle Teleport]]
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kourend}} {{okay}} will auto-complete the quest
+</poem>
+}}

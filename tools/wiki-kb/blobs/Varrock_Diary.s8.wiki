@@ -1,0 +1,51 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style="width:750px;" data-diary-name="Varrock" data-diary-tier="Elite"
+! style="width:50%;" |Task
+! style="width:50%;" |Requirements 
+|-
+|1. Create a [[super combat potion]] in [[Varrock west bank]].
+|
+*{{SCP|Quest}} Completion of [[Druidic Ritual]]
+*{{SCP|Herblore|90|link=y}}
+*[[Super attack (4)]], [[super strength (4)]], [[super defence (4)]], and a [[torstol]]
+|-
+|2. Use [[Lunar magic]] to make 20 [[mahogany plank]]s at the [[Lumberyard]].
+''Note: You must stand within the [[Lumber Yard]], past the fence.''
+|
+*{{SCP|Quest}} Completion of [[Dream Mentor]]
+*{{SCP|Magic|86|link=y}}
+*[[Lunar spellbook]] selected
+*21,000 [[coins]] and 20 [[mahogany logs]]{{efn|name=voucher|You may use ten [[sawmill voucher]]s to halve the required items and runes for the [[Plank Make]] task.}}
+*Means to cast [[Plank Make]] twenty times ({{RuneReq|Nature=20|Astral=40|Earth=300}}){{efn|name=voucher}}
+|-
+|3. Bake a [[summer pie]] in the [[Cooks' Guild|Cooking Guild]].
+''Note: Instead of using a [[range]], you can use the [[Bake Pie]] spell to prevent burning the pie.
+|
+*{{SCP|Cooking|95|link=y}}
+*[[Raw summer pie]]
+*[[Chef's hat]], [[golden chef's hat]], [[Varrock armour 3]], or [[Cooking cape]]
+|-
+|4. Smith and fletch ten [[rune dart]]s within [[Varrock]].
+|
+*{{SCP|Quest}} Completion of [[The Tourist Trap]]
+*{{SCP|Smithing|89|link=y}} and {{SCP|Fletching|81|link=y}}
+*[[Runite bar]], 10 [[feather]]s and a [[hammer]]
+|-
+|5. Craft 100 or more [[earth runes]] simultaneously from Essence without the use of [[Runic extract|Extracts]].
+|
+*{{SCP|Runecraft|78|link=y}}
+*{{SCP|Runecraft|52|link=y}} with 2+ [[Raiments of the Eye]] pieces
+*28 [[Pure essence|pure]], [[Daeyalt essence|daeyalt]], or [[rune essence]] (fewer may suffice with more [[Raiments of the Eye]] pieces)
+*Access to the [[Earth Altar]] ([[earth talisman]]/[[Earth tiara|tiara]], [[elemental talisman]]/[[Elemental tiara|tiara]], or the [[Abyss]])
+|}
+{{Notelist}}
+
+===Rewards=== 
+*[[Varrock armour 4]]:
+**Can be worn in place of a [[prospector jacket]] for [[clue step]]s, and provides the experience bonus of the [[Prospector kit|full outfit]]
+**While worn, 10% chance of mining double of any [[ore]], as well as [[Mining enhancers#List of affected rocks|various other minerals]] (experience granted for both minerals)
+**While worn, 10% chance of smelting 2 [[bar]]s at once, of any kind, when using the [[Edgeville furnace]] (experience granted for both bars)
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*[[Zaff]] will sell you 120 [[bank note|noted]] [[Battlestaff|battlestaves]] as a single stack every day for 840,000 [[coins]], resellable on the [[Grand Exchange]] for a profit of {{NoCoins|{{GEPT|Battlestaff|120}}-840000}} [[coins]] (after tax)<ref name="WhyWasThisInTheLead"/>
+*The [[skull sceptre]] will now hold up to 26 [[Skull_sceptre#Using_the_Sceptre|charges]], up from 22
+*Individual parts used to make the [[skull sceptre]] now give four extra [[Bone fragments|bone fragments]] per component when chiselled

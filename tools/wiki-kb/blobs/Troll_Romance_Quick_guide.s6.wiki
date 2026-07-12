@@ -1,0 +1,11 @@
+===The Things We Do For Love===
+{{Checklist|
+'''Items Required:''' [[Trollweiss]], Food, Armour, and a Weapon.''
+*Return to [[Ug]].
+'''{{Colour|red|Warning}}:''' Arrg will attack '''immediately''' after the next step, using a combination of <u>melee</u> AND <u>ranged</u> attacks that can hit in the 30s, so be prepared!
+*Talk to [[Arrg]]. {{Chat option|1I am here to kill you!}} He will teleport you into the arena.
+*Kill Arrg.
+::Arrg can de-spawn if not killed fast enough using the safe-spot, so killing him could be difficult on a low level account.
+*Return to Ug.
+*'''Congratulations, quest complete!'''
+}}

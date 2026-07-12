@@ -1,0 +1,11 @@
+===Tracking the Gryphon===
+'''Items required:''' ''Any axe, combat gear, and food to defeat a level 95 [[Gryphon]]''
+{{Checklist|
+* Track the Gryphon:
+** Inspect the monument in the center of the market to reveal footprints.
+** Where the trail ends, inspect nearby objects like flowers, rockslides, and plants to pick up the trail again.
+** Clear the roots blocking the cave entrance with your axe.
+* Enter cave and defeat the Gryphon (level 95).
+* Exit the cave and return to [[Elder Raley]] in town.
+** You can climb the rocks south of the cave (with level 50 Agility) for a quick way back to town.
+}}

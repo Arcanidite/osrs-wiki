@@ -1,0 +1,63 @@
+==Details==
+{{Quest details
+|start = Talk to [[Sarius Guile]] in the [[Icyene Graveyard]].
+|startmap = 3696,3184
+|difficulty = Grandmaster
+|description = Long ago, before the vampyres were united as one, they lived in disparate clans in their ancestral home of Vampyrium. For the Drakan clan, strength ruled above all else. Clan leaders were selected during a brutal festival of combat known as the Night of the Blood Moon. Along with leadership of the clan, the victor of this festival was granted a title: they became known as the Blood Moon.
+
+Now, thousands of years later, Lord Lowerniel Drakan, the last Blood Moon has returned. He has but one goal: to return his people to the old ways and reclaim his former title, even if he has to sacrifice every life in Morytania to do it.
+
+For Drakan, this is the endgame. Failure is not an option and he does not intend to let anyone stand in his way. No matter what, the Blood Moon will rise once more.
+|length = Very Long
+|requirements = * {{SCP|Slayer|74|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Woodcutting|74|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Smithing|72|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Cooking|72|link=no}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Fletching|70|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Mining|66|link=yes}} {{Boostable|}} {{Questreqstart|}}
+* {{SCP|Hunter|65|link=yes}} {{Boostable|}} {{Questreqstart|}}
+* {{SCP|Crafting|64|link=yes}} {{Boostable|}} {{Questreqstart|}}
+* {{SCP|Herblore|64|link=yes}} {{Boostable|}} {{Questreqstart|}}
+* {{SCP|Magic|57|link=yes}} {{Boostable|}} {{Questreqstart|}}
+*Completion of the following quests:
+**[[A Night at the Theatre]]
+**[[Sins of the Father]]
+***[[Vampyre Slayer]]
+***[[A Taste of Hope]]
+****[[Darkness of Hallowvale]]
+*****[[In Aid of the Myreque]]
+******[[In Search of the Myreque]]
+*******[[Nature Spirit]]
+********[[Priest in Peril]]
+********[[The Restless Ghost]]
+|items = * [[Blisterwood flail]] or 40,000 [[coins]]
+* [[Vyre noble clothing]] (obtainable for free during quest from the [[Closed Chest (vyre noble clothing)|chest]] in the [[Myreque Hideout]] under [[Old Man Ral]]'s house)
+* Melee combat gear
+* [[Tinderbox]] (obtainable during quest)
+* [[Pickaxe]] (a bronze pickaxe is obtainable during quest from [[Ivan Strom]])
+* [[Hammer]] (obtainable during quest)
+* [[Knife]] (obtainable during quest)
+* [[Chisel]] (obtainable during quest)
+* [[Blisterwood logs]] (obtainable during quest)
+|recommended = * {{SCP|Combat|110|link=yes}}
+* Fast-hitting ranged and magic weapons
+* [[Dramen staff]] or Lumbridge elite
+* Some [[Efaritay's aid]]s for speeding up various encounters
+* Some [[food]] and [[prayer potion]]s for various encounters
+* Some [[stamina potion]]s
+* [[Drakan's Medallion]] (unlock the teleport to [[Castle Drakan]] during the quest by inspecting the [[Shrine (Castle Drakan)|shrine]] inside the castle, by the front door)
+* [[Morytania legs 3]] (or higher) for faster travel to Burgh de Rott and Icyene Graveyard
+|kills = * Several [[vyrewatch]] and [[vyrewatch sentinels]] during various encounters
+* Several [[Monk of Zamorak]] (level  36)
+* Several level 106 [[Sanguidae]]
+* Several level 98 [[Webbed-winged Crow]]s
+* A level 200 [[Venator]] (as well as a few more optional ones)
+* Four [[Ancient feral vyre]]s
+* Several waves of [[Nylocas]]
+* [[The Maiden of Sugadinti]]
+* [[Nylocas Vasilias]]
+* [[Wyrd]] (level 564)
+* [[Lowerniel Drakan]] (level 1063) (four total fights)
+|ironman = 
+|leagueRegion = N/A
+}}

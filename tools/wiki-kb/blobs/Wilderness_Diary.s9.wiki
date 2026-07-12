@@ -1,0 +1,9 @@
+===Rewards===
+*[[Wilderness sword 4]]:
+**Identical stats to an [[adamant sword]] (only weighs negligibly less)
+**Unlimited teleports to the [[Fountain of Rune]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*Free access to the [[Resource Area]], down from a fee of 3,750 [[coins]]
+*[[Lundail]] offers you 200 random [[runes]] for free every day, worth a total average of {{NoCoins|{{#var:avgrune}}*200}} [[coins]] on the [[Grand Exchange]]
+*[[Dragon bones]] from [[dragon]]s killed in the [[Wilderness]] are now [[noted]], unless this feature is disabled by talking to the [[Lesser Fanatic]] in [[Edgeville]] (this excludes the dragon bones of [[King Black Dragon]], as his [[King Black Dragon Lair|lair]] is considered to be outside of the [[Wilderness]])
+*Catch rate of [[raw dark crab|dark crabs]] increased by 112.5%

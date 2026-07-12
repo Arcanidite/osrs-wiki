@@ -1,0 +1,8 @@
+===The Crux Eqal===
+{{Needed|Combat equipment to kill two assassins, and an antipoison.}}{{Checklist|
+* Speak to [[Ivy Sophista]] in [[Taverley]], in the building where the [[crystal chest]] is found. {{Chat option|1Yes.}}
+* Climb up the ladder to the east and speak with [[Thaerisk]].
+* Kill the two [[Assassin (While Guthix Sleeps)|assassins]] that appear. Pray [[Protect from Missiles]]. Every few attacks the assassin that attacks you will say {{overhead|Now!}} and launch an arrow towards you; swap to Protect from Melee after the arrow lands, and then focus back on the assassin.
+** Note that there is currently a small glitch where the player may not be able to attack the second assassin, so let Thaerisk kill him off if this occurs. Thaerisk cannot die during this fight.
+* Finish the conversation with Thaerisk.
+}}

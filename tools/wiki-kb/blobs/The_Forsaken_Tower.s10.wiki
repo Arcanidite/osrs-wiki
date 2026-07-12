@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = The Forsaken Tower
+|image = [[File:The Forsaken Tower reward scroll.png|center]]
+|qp = 1
+|rewards =
+*{{SCP|Mining|500}} [[Mining]] experience
+*{{SCP|Smithing|500}} [[Smithing]] experience
+*6,000 [[coins]]
+*Free use of the [[Lovakengj Minecart Network]]
+*A page for [[Kharedst's memoirs]], '[[Jewellery of jubilation]].' It teleports players north-east of the bank in Lovakengj.
+*Ability to recolour the [[graceful outfit]] to the colours of [[Lovakengj]].
+}}

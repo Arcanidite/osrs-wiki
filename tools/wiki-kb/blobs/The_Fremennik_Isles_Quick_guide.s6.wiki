@@ -1,0 +1,20 @@
+===The king's tax collector===
+'''Optional items''': ''5000 [[coins]] for black market yak trading after the quest''
+{{Checklist|
+*Quick travel to [[Jatizso]] via [[Mord]].
+*Speak with [[King Gjuki Sorvott IV]] in the building west of the bank.
+*Tax the shop keepers of Jatizso:
+**[[Hring Hring]] must pay 8,000, he is in the south-western most house.
+**[[Skuli Myrka]] must pay 6,000, north from Hring.
+**[[Vanligga Gastfrihet]] must pay 5,000, north from kings palace. ''(Offer to pay her taxes for her; this provides the capability to trade in black market yak goods after the quest.)''
+**[[Keepa Kettilon]] must pay 5,000, east from Vanligga.
+*Talk to King Gjuki Sorvott IV.
+*Collect taxes from the following people for 1,000:
+**Hring Hring.
+**[[Raum Urda-Stein]] in the same house as Hring Hring.
+**Skuli Myrka.
+**Keepa Kettilon.
+**[[Flosi Dalksson]] in the same house as Keepa Kettilon.
+*Speak with King Gjuki Sorvott IV.
+*Quick travel back to [[Rellekka]] via Mord.
+}}

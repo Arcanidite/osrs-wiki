@@ -1,0 +1,19 @@
+==Details==
+{{Quest details
+|start = Inspect the [[Empty display (Xerna's Diadem)|empty display]] on the ground floor of the [[Grand Museum]] in [[Civitas illa Fortis]].
+|startmap = 1720,3165
+|difficulty = Novice
+|description = Investigate a mysterious theft from the Fortis Grand Museum.
+|length = Short
+|requirements = *{{SCP|Thieving|25|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*Completion of the following quests:
+**[[Children of the Sun]]
+**[[Shield of Arrav]]
+|items = 
+|recommended = * 3,000 [[coins]] for the charter ship to [[Port Sarim]], [[Ring of charos]] for reduced charter cost, or [[Explorer's ring 2]] or better for teleport.
+* [[Varrock Teleport]]
+* [[Civitas illa Fortis Teleport]] or a charged quetzal whistle
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

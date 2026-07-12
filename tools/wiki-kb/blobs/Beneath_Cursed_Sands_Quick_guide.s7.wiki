@@ -1,0 +1,14 @@
+===Cure Me Pox===
+{{Needed|[[Raw beef]] or [[cooked meat]] (can be purchased)|recommended=A means to combat [[desert heat]]; teleports to [[Nardah]] and [[Sophanem]]}}
+{{Checklist|
+* Go to [[Nardah]] and talk to [[Maisa]] or [[Zahur]] in the building directly south of the fountain.
+* If you don't already have [[raw beef]] or [[cooked meat]], purchase one from the [[Nardah General Store]].
+* Head west until you reach the [[River Elid]] and see an island with lilies growing on it.
+* Attempt to jump to the stepping stones, and throw the meat to the crocodile.
+* Pick the [[Lily of the Elid]].
+* Go back to [[Zahur]].
+* Warm up her chemistry equipment by adjusting the individual heats until the overall temperature is at the marked level.
+** Solution: Increase the middle and right-hand bars to their maximum capacities. Then drop the right-hand bar to half way. Finally, lower the middle bar until the puzzle is completed.
+* Talk to Zahur to receive the [[cure crate]] then bring it to [[High Priest (Sophanem)|High Priest]] in [[Sophanem]].
+* Before leaving for the necropolis, gear up for a fight against a level-351 boss using melee equipment.
+}}

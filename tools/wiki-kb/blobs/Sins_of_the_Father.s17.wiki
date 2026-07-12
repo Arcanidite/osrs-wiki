@@ -1,0 +1,24 @@
+==Rewards==
+{{Quest rewards
+|name = Sins of the Father
+|image = [[File:Sins of the Father reward scroll.png|center]]
+|qp = 2
+|rewards = 
+*Access to [[Darkmeyer]]
+**Access to the [[Daeyalt Essence Mine]]
+**Access to the [[Hallowed Sepulchre]]
+**Ability to shop at stores in Darkmeyer while wearing [[Vyre noble clothing]]
+**Ability to purchase [[long rope]] from the [[Darkmeyer General Store]], which can be used to build the following Agility shortcuts:
+***The [[Wall (Darkmeyer)|wall]] on the eastern side of Darkmeyer, requiring 63 Agility.
+***The [[Rocks (Viyeldi caves)|rocks]] on the tall cliff at the end of the [[Viyeldi caves]], requiring 91 [[Agility]] and completion of [[Legends' Quest]].
+*A [[Tome of experience (Sins of the Father)|tome of experience]], granting 15,000 experience to any skill (level 60 or higher). This reward can be utilised six times and may be used for the same skill.
+*The [[Blisterwood flail]]
+*Darkmeyer teleport via [[Drakan's medallion]]
+*Boat travel between [[Burgh de Rott]], [[Slepe]] and the [[Icyene Graveyard]]
+*Access to the [[mutated bloodvelds]] section of Meiyerditch Laboratories
+*Access to the [[True Blood Altar]] (with a [[Blood talisman]])
+**Access to the [[Guardian of Blood]] in the [[Guardians of the Rift]] minigame
+*Promotion to the rank of Lieutenant within The Myreque and its associated [[title]]
+}}
+
+''Note:'' If your inventory is full when the quest is completed, you will not receive the tome of experience. The tome is also lost on death, but can be recovered. Existing reward tomes will also be dropped, but will be recovered from Ivan. Speak to [[Ivan Strom]] after the quest to claim the reward.

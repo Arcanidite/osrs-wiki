@@ -1,0 +1,9 @@
+===Final Battle===
+'''''Items required: Combat equipment, Commorb.'''''
+{{Checklist|
+{{Instance}}
+*Head to the [[rune essence mine]] by talking to one of the teleporting mages.
+*Kill [[Solus]].
+*Head back to [[Falador]] and talk to [[Sir Amik Varze]] in the [[White Knights' Castle]].
+*'''Congratulations, quest complete!'''
+}}

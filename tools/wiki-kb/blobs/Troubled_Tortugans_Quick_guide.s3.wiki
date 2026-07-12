@@ -1,0 +1,7 @@
+===Finding the stranded Tortugan===
+{{Checklist|
+* Talk to the [[Injured Tortugan]] on the remote island north-west of [[The Great Conch]], far south of The Pandemonium. {{Chat option|1 Yes.}}
+* Pick up some seaweed. Shake any palm tree and pick up a [[palm leaf]].
+* Use the seaweed on the palm leaf to make a bandage.
+* Talk to the Injured Tortugan.
+}}

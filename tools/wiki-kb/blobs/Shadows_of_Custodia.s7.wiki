@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = Shadows of Custodia
+|image = [[File:Shadows of Custodia reward scroll.png|center]]
+|qp = 2
+|rewards = 
+*{{SCP|Slayer|10,000}} [[Slayer]] experience 
+*{{SCP|Hunter|4,000}} [[Hunter]] experience 
+*{{SCP|Fishing|3,000}} [[Fishing]] experience 
+*{{SCP|Construction|3,000}} [[Construction]] experience 
+* Access to the [[Stalker Den]] containing [[Custodian stalker]]s
+}}

@@ -1,0 +1,62 @@
+==Details==
+{{Quest details
+|start = Talk to [[Sir Tiffy Cashien]] in [[Falador Park]].
+|startmap = 2997,3373
+|difficulty = Intermediate
+|description = The small village of [[Witchaven]] was all but deserted when the [[Fishing Platform]] was built a short ways off the coast. Now, some of the inhabitants of the village have been acting somewhat strangely....
+|length = Medium
+|requirements = *Completion of the following quests:
+**[[Wanted!]]
+***[[Recruitment Drive]]
+****[[Black Knights' Fortress]]
+****[[Druidic Ritual]]
+***[[The Lost Tribe]]
+****[[Rune Mysteries]]
+****[[Goblin Diplomacy]]
+***[[Enter the Abyss]]
+***[[Priest in Peril]]
+**[[Sea Slug]]
+*{{SCP|Crafting|30|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*{{SCP|Runecraft|30|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Slayer|30|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Thieving|30|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+*The ability to defeat a level 62 enemy with [[Melee]].
+*You must have the [[Commorb]] in your inventory to start the quest.
+|items = *[[Commorb]] (can get another by speaking to [[Sir Tiffy]])
+*[[Swamp paste]] (not consumed)
+*[[Dead sea slug]] (obtainable during the quest)
+*At least 5 [[rune essence|rune]]/[[pure essence]] (bring 15–20 in case they shatter; succeeding with 5 is very unlikely)
+*[[Chisel]]
+*5 open inventory slots
+*Access to the [[Air Altar|Air]], [[Water Altar|Water]], [[Earth Altar|Earth]], [[Fire Altar|Fire]], and [[Mind Altar]]s
+**[[Elemental talisman]] '''OR''' [[air talisman|Air]], [[water talisman|Water]], [[earth talisman|Earth]], and [[fire talisman|Fire]] [[talisman]]s or [[tiara (disambiguation)|tiara]]s
+**[[Mind talisman]] or [[mind tiara|tiara]]
+*:'''OR'''
+**Travelling through the [[Abyss]] or using a [[Runecraft cape]]
+*:'''OR'''
+**Access to [[Guardians of the Rift]]
+|kills = [[Slug Prince]] ''(level 62)''
+|recommended = *{{SCP|Combat|35|link=yes}}
+*Charged [[abyssal bracelet]] if going through the Abyss
+*[[Stamina potion|Stamina]] or [[energy potion]]s
+*Fast travel to several locations
+**Falador ([[Falador teleport]])
+**Witchaven ([[Ardougne teleport]] or [[fairy rings]] to {{fairycode|blr}})
+**Outpost ([[necklace of passage]])
+**[[Ring of the Elements]]
+**Air Altar (Falador teleport, [[skills necklace]] to the Crafting Guild, or travelling through the [[Abyss]])
+**Water Altar ([[Lumbridge teleport]], necklace of passage to the Wizards' Tower, or the Abyss)
+**Earth Altar ([[Varrock teleport]], [[Lumberyard teleport]], [[Digsite pendant]], [[balloon transport system]], or the Abyss)
+**Fire Altar ([[ring of dueling]] or [[amulet of glory]] to Al Kharid, [[gnome glider]] or the Abyss)
+**Mind Altar ([[Mind Altar teleport tablet]], [[Falador teleport]], or the Abyss)
+**Abyss, if using that method (amulet of glory to Edgeville, [[ring of wealth]] to the Grand Exchange, or fairy rings to {{fairycode|dkr}})
+**Wizards' Tower, if using Guardians of the Rift to access the altars (necklace of Passage, amulet of glory to Draynor Village, or fairy rings to {{Fairycode|dis}})
+*[[Armour]] and some [[food]]
+*[[Melee]] weapon to defeat the Slug Prince, which cannot be damaged in other ways
+*[[Prayer potion]]s to counter the Slug Prince's prayer drain
+|leagueRegion = <poem>
+{{LeagueRegion|Asgarnia}} — location requirement
+{{LeagueRegion|Kandarin}} — location requirement
+{{LeagueRegion|Desert}} - for Wanted! autocompletion and location requirement to access runic altars through [[Guardians of the Rift]]
+</poem>
+}}

@@ -1,0 +1,51 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Lumbridge & Draynor" data-diary-tier="Elite"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Steal from a [[Dorgesh-Kaan Rich Chest|Dorgesh-Kaan rich chest]].
+|
+*{{SCP|Quest}} Completion of [[Death to the Dorgeshuun]]
+*{{SCP|Thieving|78|link=y}}
+*[[Lockpick]]
+|-
+|2. Grapple across a pylon on the [[Dorgesh-Kaan Agility Course]].
+|
+*{{SCP|Quest}} Completion of [[Death to the Dorgeshuun]]
+*{{SCP|Agility|70|link=y}}, {{SCP|Ranged|70|link=y}} and {{SCP|Strength|70|link=y}}
+*[[Mith grapple]]{{efn|[[Ironman Mode|Ironmen]] require one of: <ul><li>Access to the [[Ancient Cavern]]</li><li>59 [[Smithing]] and 59 [[Fletching]] to make a mith grapple</li><li>99 Fletching for a [[mith grapple]] from the [[Fletching cape]]</li></ul>}}, any [[Crossbow (weapon)|crossbow]], and a [[light source]]
+|-
+|3. Chop some [[magic logs]] at the [[Mage Training Arena]].
+|
+*{{SCP|Woodcutting|75|link=y}}
+*Any [[axe]]
+|-
+|4. Smith an [[Adamant platebody]] down [[Draynor sewer]].{{sic}}
+|
+*{{SCP|Smithing|88|link=y}}
+*5 [[adamantite bar]]s and a [[hammer]]
+|-
+|5. Craft 140 or more [[Water runes]] simultaneously from Essence without the use of [[Runic extract|Extracts]].
+|
+*{{SCP|Runecraft|76|link=y}}
+*{{SCP|Runecraft|57|link=y}} with 3 [[Raiments of the Eye]] pieces
+*{{SCP|Runecraft|38|link=y}} with 4 [[Raiments of the Eye]] pieces (random chance, not guaranteed)
+*28 [[Pure essence|pure]], [[Daeyalt essence|daeyalt]], or [[rune essence]] (less may suffice at higher [[Runecraft]] levels)
+*Access to the [[Water Altar]] ([[water talisman]]/[[water tiara|tiara]], [[elemental talisman]]/[[Elemental tiara|tiara]], or the [[Abyss]])
+|-
+|6. Perform the [[Quest point cape|Quest cape]] emote in the [[Wise Old Man|Wise Old Man's]] house.
+|
+*{{SCP|Quest}} Completion of all quests
+*[[Quest point cape]]
+|}
+{{Notelist}}
+
+===Rewards===
+*[[Explorer's ring 4]]:
+**Can restore full [[Energy|run energy]] three times a day
+**Allows 30 casts of [[High Level Alchemy]] without [[runes]] each day (no experience granted unless done at the [[Alchemist's Playground]], still requires 55 [[Magic]])
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*20% discount on items in the [[Culinaromancer's Chest]]
+*Steal twice as many [[cave goblin wire]]s in [[Dorgesh-Kaan]]
+*Ability to use [[fairy rings]] without the need of a [[Dramen staff|Dramen]] or [[Lunar staff]]
+*Unlocks the seventh slot for blocking [[Slayer task|Slayer tasks]]

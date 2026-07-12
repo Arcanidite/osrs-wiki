@@ -1,0 +1,14 @@
+{{External|rs|rsc}}
+{{Has quick guide}}
+{{Otheruses|the quest|the shield itself|Shield of arrav (item)|the book about the shield|Book (Shield of Arrav)}}
+{{Infobox Quest
+|name = Shield of Arrav
+|number = 6
+|image = [[File:Shield of Arrav.png|300px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|series = None
+|developer = [[Paul Gower]]
+}}
+'''Shield of Arrav''' is a quest where the shield of the famous [[Arrav]] of [[Avarrocka]] has been stolen by organised crime syndicates in Varrock.

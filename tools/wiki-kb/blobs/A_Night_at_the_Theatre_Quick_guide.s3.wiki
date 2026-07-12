@@ -1,0 +1,22 @@
+===Memories of a "Friend"===
+{{Needed|Combat gear, some food, [[ivandis flail]] or [[blisterwood flail]], [[Saw]], one dose of [[anti-venom]] or two doses of [[antipoison]]|recommended=[[Ectophial]] for fast access to [[Port Phasmatys]], [[Drakan's medallion]], [[Super energy]] or [[Stamina potions]]}}
+{{Checklist|
+*Talk to the [[Mysterious Stranger]] by the entrance to the [[Theatre of Blood]].
+**''No Theatre of Blood raids completed:''{{Chat option|2What's all this really about?|1Yes.}}
+**''Completed at least 1 Theatre of Blood raid:''{{Chat option|1Speaking of your associates, what's all this really about?|1Yes.}}
+*Go down the stairs to the north-east of the Mysterious Stranger. Bring a [[saw]] and [[blisterwood flail]].
+*Kill a [[vyrewatch]] for a key.
+*Unlock the gate to the south and open the coffin.
+*Return to the Mysterious Stranger with [[Ranis' head]] and watch the cutscene. {{Chat option|1Yes.}}
+*Go to the [[Morytania Spider Cave|dungeon (cave)]] north of [[Darkmeyer]] (south of [[Port Phasmatys]]).
+*Follow the path north, then east to the egg sac.
+*Search the nearby skeleton.
+*Read the [[sticky note]].
+*Speak to [[Daer Krand]] {{Chat option|3Got any sulphuric acid?}} in the [[Sisterhood Sanctuary]] to obtain [[sulphuric acid]]. 
+**The entrance is located south of the graveyard in Slepe.
+**To reach Daer Krand, make your way toward the centre of the sanctuary, then follow the path east, then north. He is located upstairs.
+*Return to the dungeon (cave) north of Darkmeyer.
+*Use [[sulphuric acid]] on the egg sac. You do not need to kill any spiders.
+**The spiders here can [[envenom]] you. Drink a dose of [[anti-venom]] or two doses of [[anti-poison]] to cure it.
+*Return to the Mysterious Stranger {{Chat option|1I found some of those eggs.}} with the [[strange spider eggs]]. Watch two cutscenes.
+}}

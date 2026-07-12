@@ -1,0 +1,30 @@
+==Details==
+{{Quest details
+|description = A travelling trader has been stranded south of Varrock after his cart was attacked by local outlaws. He needs the help of a hero to recover his lost documents, but that's not all...
+
+The Varrock Palace Secret Guard (VPSG) are on the trail of treacherous dealings with the Monks of Zamorak. Will you be able to help the VPSG and uncover what lies below?
+|start = Talk to [[Rat Burgiss]] south of [[Varrock]].
+|startmap = 3266,3333
+|difficulty = Intermediate
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Rune Mysteries]]
+*{{SCP|Runecraft|35|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = *[[Empty bowl]]
+*15 [[chaos rune]]s
+*Access to the [[Chaos Altar]] ([[Chaos talisman]] or [[Chaos tiara|tiara]], [[Catalytic talisman]] or [[Catalytic tiara|tiara]], or travelling through the [[Abyss]] or Temple of the Eye)
+|kills = *5 [[Outlaw]]s ''(level 32)''
+*[[King Roald]] ''(level 47)''
+|recommended = *{{SCP|Combat|30|link=yes}}
+*{{SCP|Mining|42|link=yes}} {{Boostable|no}}
+*[[Weapon]], [[armour]], and some food if low leveled
+*[[Bronze pickaxe]] to avoid going into the Wilderness (a bronze pickaxe can be obtained during the quest)
+*Fast travel to several locations around [[Varrock]];
+**Varrock square ([[Varrock teleport]])
+**Outlaw camp ([[ring of wealth]] to the Grand Exchange, [[skills necklace]] to the Cooks' Guild or Varrock teleport if medium [[Varrock Diary]] completed)
+**South of Varrock ([[Chronicle]], [[Combat bracelet]] to the Champions' Guild, or [[Senntisten teleport]])
+**The [[canoe]] system (requires axe and level 27 woodcutting for the Dugout canoe)
+|leagueRegion = <poem>
+Not completable, as it requires access to Misthalin.
+</poem>
+}}

@@ -1,0 +1,16 @@
+==Rewards==
+{{Quest rewards
+|name = What Lies Below
+|image = [[File:What Lies Below reward scroll.png|centre]]
+|qp = 1
+|rewards = 
+*{{SCP|Runecraft|8,000}} [[Runecraft]] experience
+*{{SCP|Defence|2,000}} [[Defence]] experience
+*The [[Beacon ring]]
+*Access to a shortcut to the [[Chaos Altar]]
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]], while holding the [[Dagon'hai history]] book.
+*5 [[Battlestaff|Battlestaves]] in stock of [[Zaff's Superior Staffs!]] store (after defeating [[King Roald]] - the quest doesn't need to be completed)
+
+Unlocks:
+* [[King Roald]] accessible in the [[Nightmare Zone]].
+}}

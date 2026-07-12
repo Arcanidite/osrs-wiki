@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = The Ides of Milk
+|image = [[File:The Ides of Milk reward scroll.png|center]]
+|qp = 1
+|rewards = 
+* Access to [[Brutus]], the cow boss.
+* Additional rewards from [[Gillie Groats]]:
+** [[Cowbell amulet]]
+** A [[Magic lamp (The Ides of Milk)|magic lamp]] providing 1,000 experience in any combat skill, including [[Prayer]].
+}}

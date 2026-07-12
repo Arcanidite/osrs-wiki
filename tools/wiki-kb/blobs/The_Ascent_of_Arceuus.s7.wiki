@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name=The Ascent of Arceuus
+|image=[[File:The Ascent of Arceuus reward scroll.png|centre]]
+|qp=1
+|rewards=*2,000 [[coins]]
+*{{SCP|Hunter|1,500|link=yes}} [[experience]]
+*{{SCP|Runecraft|500|link=yes}} experience
+*A page for [[Kharedst's memoirs]], '[[A dark disposition]].' It teleports players to the centre of Arceuus.
+*Ability to recolour the [[graceful outfit]] to the colours of [[Arceuus]].
+*Ability to fight the [[Trapped Soul]] within the [[Nightmare Zone]].
+}}

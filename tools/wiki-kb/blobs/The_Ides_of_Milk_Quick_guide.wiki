@@ -1,0 +1,25 @@
+{{Quick Guide}}
+
+==Details==
+{{Quest details page|The Ides of Milk}}
+
+==Walkthrough==
+{{Checklist|
+*Speak to [[Cassius]] by the pond Northwest of [[Lumbridge]] {{Chat option|1Yes.}}
+*Speak to [[Gillie Groats]] {{Chat option|3Can you share what makes your cows so productive?}}
+*Speak to [[Seth Groats]]
+*Search the [[shelves (The Ides of Milk)|shelves]] in Seth's farmhouse for [[The groats principles]] book
+*Return to [[Cassius]] with the book, receiving a [[Milk sample]] from him
+*Drink the [[Milk sample]] in front of [[Cassius]], who will give you a second [[Milk sample]] to take to [[Duke Horacio]]
+*Speak to [[Duke Horacio]] in [[Lumbridge Castle]]
+*Speak to [[Gillie Groats]]
+*Drink the [[Milk sample]] in front of [[Gillie Groats]], who will offer you a permit for dealing with the [[Brutus|bull]]
+*Open the pen in the north-east corner of the cow farm and fight the [[Brutus|bull]]
+*Speak to [[Gillie Groats]]
+*Speak to [[Cassius]]
+*Speak to [[Gillie Groats]] for rewards.}}
+
+==Rewards==
+{{Quest rewards page|The Ides of Milk}}
+
+{{The Ides of Milk}}

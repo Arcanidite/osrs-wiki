@@ -1,0 +1,51 @@
+==Elite==
+{| class="wikitable lighttable qc-active diary-table" style=width:750px; data-diary-name="Desert" data-diary-tier="Elite"
+! style="width:50%;" | Task
+! style="width:50%;" | Requirements
+|-
+|1. Bake a [[wild pie]] at the [[Nardah]] [[Clay oven|Clay Oven]].
+|
+*{{SCP|Cooking|85|link=y}} {{Boostable|y}}
+*[[Raw wild pie]]
+|-
+|2. Cast [[Ice Barrage]] against a foe in the [[Desert]]
+''Note: The spell must be cast outside of a desert settlement, and must successfully hit.
+|
+*{{SCP|Quest}} Completion of [[Desert Treasure I]]
+*{{SCP|Magic|94|link=y}} {{Boostable|y}}
+*Means to cast [[Ice Barrage]] ({{RuneReq|Death=4|Blood=2|Water=6}})
+|-
+|3. Fletch some [[Dragon dart]]s at the [[Bedabin Camp]].
+|
+*{{SCP|Fletching|95|link=y}} {{Boostable|y}}
+*[[Dragon dart tip]] and [[feather]]
+|-
+|4. Speak to the [[Kalphite Queen head (mounted)|KQ head]] in your [[POH]].
+''Note: The [[Kalphite Queen]] has a 1/128 chance of dropping her [[Kq head|head]] on death, and is guaranteed to drop a [[kq head (tattered)|tattered head]] on the 256th kill, both of which can be used to create the [[Kalphite Queen head (mounted)|KQ head]].''
+|
+*{{SCP|Quest}} Completion of [[Priest in Peril]]
+*{{SCP|Construction|78|link=y}} {{Boostable|y}}
+*2 [[mahogany plank]]s, 2 [[gold leaves]], [[saw]], and [[hammer]]
+*[[Kq head]] or [[Kq head (tattered)]], and 50,000 [[coins]] to have the [[taxidermist]] [[Stuffed_kq_head|stuff]] it
+*Additional 15,000 [[coins]] to construct a [[Hall_(skill_trophies)|Skill Hall]] if you haven't already
+|-
+|5. Steal from the [[Grand Gold Chest]] in the final room of [[Pyramid Plunder]].
+|
+*{{SCP|Quest}} Started [[Icthlarin's Little Helper]]
+*{{SCP|Thieving|91|link=y}} {{Boostable|n}}
+|-
+|6. Restore at least 85 [[Prayer points]] when praying at the [[Altar (Sophanem)|Altar]] in [[Sophanem]].
+|
+*{{SCP|Quest}} Started [[Icthlarin's Little Helper]]
+*{{SCP|Prayer|85|link=y}} {{Boostable|n}}
+|}
+
+===Rewards===
+*[[Desert amulet 4]]:
+**Unlimited teleports to [[Nardah]], closer to the [[Elidinis Statuette]] than the previous amulets
+**Unlimited teleports to the entrance of the [[Kalphite Cave]]
+**Fully protects against [[desert heat]] while worn
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*[[Pharaoh's sceptre]] will now hold up to 100 [[Pharaoh's sceptre#Recharging|charges]], up from 50
+*Free passage through [[Shantay Pass]] and the similar pass at [[Ruins of Unkah]], down from a fee of 5 [[coins]]
+*Access to the [[Crevice (Kalphite Lair)|crevice shortcut]] in the [[Kalphite Lair]] (with 86 [[Agility]])

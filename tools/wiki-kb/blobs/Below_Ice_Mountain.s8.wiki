@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Below Ice Mountain
+|image = [[File:Below Ice Mountain reward scroll.png|center]]
+|qp = 1
+|rewards =
+*2,000 coins
+*Access to the [[Ruins of Camdozaal]]
+*[[Flex]] emote
+*The ability to make a [[steak sandwich]]
+}}

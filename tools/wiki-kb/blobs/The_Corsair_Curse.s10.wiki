@@ -1,0 +1,12 @@
+==Rewards==
+{{Quest rewards
+|name = The Corsair Curse
+|image = [[File:The Corsair Curse reward scroll.png|center]]
+|qp = 2
+|rewards =
+*Access to [[Yusuf]]'s bank in the [[Corsair Cove]].
+*The ability to dock your [[Boat]] at the Corsair Cove Port
+
+Unlocks:
+* [[Corsair Traitor]] accessible in the [[Nightmare Zone]].
+}}

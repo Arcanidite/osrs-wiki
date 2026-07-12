@@ -1,0 +1,18 @@
+===Bridge repairs===
+'''Items required''': ''8 [[rope]], 8 [[split log]]s, a [[knife]], one free inventory space''
+
+'''Optional''': ''Food, [[Prayer potions]], armour to tank the level 85 Ice trolls.''
+{{Checklist|
+*Speak to [[Mawnis Burowgar]] again without the Jester Outfit
+*Speak to Mawnis Burowgar with the ropes, split logs, and knife in your inventory with at least one empty inventory slot.
+**If you do not have split logs, chop Arctic Pine trees until you have eight logs and use them on the Woodcutting stumps just east of the bank.
+**If you are crafting your own shield, then cut two extra logs now.
+**If you do not have any rope, kill [[yak]]s outside in the yak pen and spin their [[hair]] in the south-easternmost building.
+*Speak to [[Thakkrad]] to learn how to repair the bridges. {{Chat option|1How do I repair these bridges again?}}
+}}
+'''Note''': '''''Keep Protect from Missiles on at all times while repairing the bridges as any damage taken is stacked and applied after the bridge repair animation completes.'''''
+{{Checklist|
+*Travel north, across the rope bridge and repair the broken bridges on the east and west sides of the island (right-click option to repair).
+*Talk to Mawnis Burowgar.
+*Quick travel back to Rellekka via [[Maria Gunnars]] at the dock to the south-west.
+}}

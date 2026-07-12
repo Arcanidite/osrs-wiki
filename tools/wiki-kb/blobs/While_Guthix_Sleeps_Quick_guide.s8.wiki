@@ -1,0 +1,57 @@
+===Into the Chasm===
+{{Needed|[[Dark Squall robes]], a lit [[sapphire lantern]], sufficient prayer points to cast [[Bloom]], [[Silver Sickle]] (obtained during quest) or [[Ivandis Flail]] to cast [[Bloom]]|recommended=Some means of reaching the [[Chasm of Tears]] (ex. a [[games necklace]]), filled [[druid pouch]]es, [[stamina potion]]s, 8-10 empty inventory slots}}
+{{Checklist|
+* Talk to Idria.
+* Head to the [[Chasm of Tears]] and speak to [[Movario]] whilst wearing the Dark Squall's robes.
+* Use a lit [[sapphire lantern]] on a [[light creature]] to be transported into the chasm.
+* Search the nearby skeletal remains for the following items: a [[spade]], a [[hammer]], and a [[chisel]].
+* Use the spade on the pile of rocks to uncover a brazier, then use the chisel on it to obtain a [[fire orb]].
+* Head further west and do the same to the lone pile of rocks for an [[earth orb]].
+* Head directly south, and use a chisel on the intact brazier there for an [[air orb]].
+* Head east, and use a chisel on the intact brazier there for a [[water orb]].
+* Head all the way south to reach three skull cavities.
+* Examine each recessed block and use the each of the three corresponding orbs on them for the matching elemental block. (The first three recessed blocks are found right next to the cavity entrances)
+* Climb up the walls next to the centre skull to find the last recessed block, and use the fourth orb on it for the block.
+* Head back down and unequip items from your weapon and shield slots.
+* Enter each of the skull nose cavities and crawl to the end, using the correct elemental block on each mechanism by matching the symbols. The specific positions are individual to each player.
+* Climb back up to the fourth skull. Use the fire block on the recessed block.
+* Inspect the stone cube and enter the cave opening in the skull. Drop the tools you obtained earlier if more space is needed.
+* Make your way south to the central chamber where the stone table is found, split into multiple forked paths leading to statues.
+* Search the skeleton to receive a [[silver sickle (b)]] and six [[druid pouch]]es.
+* There are 13 possible statues, with 8 being found at the end of these paths, differing between players. 
+* Along the paths, use the druid pouch on the [[druid spirit]]s to receive herblore ingredients that are used for a statue. These are a one-off reward, so make sure to have plenty of inventory space to pick them all up. If you run out of charges, cast [[Bloom]] while standing on the vines to get [[vine flower]]s for more charges. 
+* Examine the statues and use the corresponding ingredients on them, using the table below. The druid spirits should give you the exact amount of ingredients needed.  NOTE: If you are using a third-party plugin that hides ground items based on value, you might miss an ingredient!
+** If you mess up or accidentally use the wrong working combination, teleport out to bank, teleport back to Tears of Guthix and finish the remaining statues.
+* Once you receive all eight dolmens, use them on the stone table to open the huge door. You may use them one at a time to free up inventory space.
+}}
+{| class="wikitable lighttable" style="max-width: 1000px"
+|+
+! width="100" | Keyword
+!Ingredients
+|-
+|Agility||{{plink|Toadflax}} + {{Plink|Toad's legs}}
+|-
+|Attack||{{plink|Guam leaf}} + {{plink|Eye of newt}} '''or''' {{plink|Irit leaf}} + {{plink|Eye of newt}}
+|-
+|Balance||{{plink|Harralander}} + {{plink|Red spiders' eggs}} + {{plink|Garlic}} + {{plink|Silver dust}}
+|-
+|Combat||{{plink|Harralander}} + {{plink|Goat horn dust}}
+|-
+|Defence||{{plink|Ranarr weed}} + {{plink|White berries}}
+|-
+|Energy||{{plink|Avantoe}} + {{plink|Mort myre fungus}} '''or''' {{plink|Harralander}} + {{plink|Chocolate dust}}
+|-
+|Fishing||{{plink|Avantoe}} + {{plink|Snape grass}}
+|-
+|Hunter||{{plink|Avantoe}} + {{plink|Kebbit teeth dust}}
+|-
+|Magic||{{plink|Lantadyme}} + {{plink|Potato cactus}}
+|-
+|Prayer||{{plink|Ranarr weed}} + {{plink|Snape grass}}
+|-
+|Ranging||{{plink|Dwarf weed}} + {{plink|Wine of zamorak}}
+|-
+|Restoration||{{plink|Snapdragon}} + {{plink|Red spiders' eggs}} '''or''' {{plink|Harralander}} + {{plink|Red spiders' eggs}}
+|-
+|Strength||{{plink|Tarromin}} + {{plink|Limpwurt root}} '''or''' {{plink|Kwuarm}} + {{plink|Limpwurt root}}
+|}

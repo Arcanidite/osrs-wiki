@@ -1,0 +1,30 @@
+==Rewards==
+{{Quest rewards
+|name = Song of the Elves
+|image = [[File:Song of the Elves reward scroll.png|center]]
+|qp = 4
+|rewards = 
+*{{SCP|Agility|40,000|link=yes}} experience
+*{{SCP|Construction|40,000|link=yes}} experience
+*{{SCP|Farming|40,000|link=yes}} experience
+*{{SCP|Herblore|40,000|link=yes}} experience
+*{{SCP|Hunter|40,000|link=yes}} experience
+*{{SCP|Mining|40,000|link=yes}} experience
+*{{SCP|Smithing|40,000|link=yes}} experience
+*{{SCP|Woodcutting|40,000|link=yes}} experience
+*Access to [[Prifddinas]]
+**Ability to fight [[Zalcano]]
+**Access to [[The Gauntlet]]
+**Access to [[Trahaearn Mine]]
+**Access to [[Iorwerth Dungeon]]
+**Ability to change [[respawn]] point to [[Prifddinas]]
+**Ability to move [[Player-owned house]] to [[Prifddinas]]
+**Ability to teleport to [[Prifddinas]] with a [[teleport crystal]]
+**Access to a new [[spirit tree]] destination in [[Prifddinas]]
+**Ability to make [[divine potion]]s
+**Ability to make [[crystal equipment|crystal tools, armour and weaponry]]
+Unlocks:
+* [[Arianwyn]] (as ''Elven Traitor'') and [[Essyllt]] accessible in the [[Nightmare Zone]].
+* The ability to dock at Prifddinas and utilise its port services
+* The ability to use Port Tyras' notice board
+}}

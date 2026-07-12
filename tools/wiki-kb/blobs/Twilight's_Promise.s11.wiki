@@ -1,0 +1,10 @@
+==Rewards==
+{{Quest rewards
+|name = Twilight's Promise
+|image=[[File:Twilight's Promise reward scroll.png|centre]]
+|qp = 1 
+|rewards =
+* Ability to use the [[Civitas illa Fortis Teleport]] spell
+* Ability to use the [[Quetzal Transport System]]
+* {{SCP|Thieving|3,000|link=yes}} experience 
+}}

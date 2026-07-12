@@ -1,0 +1,14 @@
+{{External|rs}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Contact!
+|number = 117
+|image = [[File:Contact!.png|300px]]
+|release = [[10 January]] [[2007]]
+|update = Contact!
+|members = Yes
+|series = [[Quests/Series#Kharidian|Kharidian]], #3
+|developer = Chris J, Matt H
+}}
+'''Contact!''' is the sequel to [[Icthlarin's Little Helper]] and the third installment in the [[List of quest series#Kharidian|desert quest series]]. It deals with the quarantine of [[Sophanem]] imposed by neighbouring [[Menaphos]].
+{{cquote2|Deep within the Kharidian Desert, south of Shantay Pass, unrest is growing within the cities of Menaphos and Sophanem. With the threat of the Devourer still lurking in the shadows, the High Priest of Icthlarin has deemed it time to make contact with the citizens of Sophanem who had fled to Menaphos in the face of the recent plague. Thus far his attempts have proved futile, however, as Menaphos remains wary of the contagion and refuses to comply.}}

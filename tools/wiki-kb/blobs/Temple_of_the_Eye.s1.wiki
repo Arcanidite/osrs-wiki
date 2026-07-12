@@ -1,0 +1,21 @@
+==Details==
+{{Quest details
+|start = Talk to [[Wizard Persten]] north of [[Al Kharid]], near the gate from [[Lumbridge]].
+|startmap = 3286,3232
+|difficulty = Intermediate
+|description = The Abyss: a deadly realm filled with ancient power. The secrets of this plane have long eluded the denizens of the Wizards' Tower, though some would give anything to properly uncover them. One of these wizards is Persten. While many in the Tower aren't convinced by her unorthodox methods, a recent discovery means she may now hold the key to the knowledge they crave the most. However, nothing is simple when the Abyss is involved, and Persten won't be able to get to the bottom of her discovery without your help...
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Enter the Abyss]]
+***[[Rune Mysteries]]
+*{{SCP|Runecraft|10|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|recommended = * Method of [[teleportation]] to [[Varrock]]
+* Method of [[teleportation]] to [[Al Kharid]] ([[ring of dueling]]/[[Lumbridge Teleport]]/[[amulet of glory]])
+|items = * [[Bucket of water]]
+* [[Chisel]] (obtainable during quest) 
+* [[Pickaxe]] (obtainable during quest)
+|kills = 
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}

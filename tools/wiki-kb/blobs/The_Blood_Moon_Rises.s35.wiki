@@ -1,0 +1,18 @@
+==Rewards==
+{{Quest rewards
+|name = The Blood Moon Rises
+|image= [[File:The Blood Moon Rises reward scroll.png|centre]]
+|qp= 4
+|rewards = 
+* Access to [[Vampyrium]]
+** Access to the [[Maggot King]] boss, [[bloodwood tree]]s, [[seeking arrows]], [[leechfin]] fishing, [[stymphike]] and [[letvek]] hunting, and [[venator]] slaying.
+*A [[Tome of experience (The Blood Moon Rises)|tome of experience]], granting 30,000 experience to any skill over level 70. This reward can be utilised six times and may be used for the same skill.
+** This tome can be destroyed and reclaimed from from [[Efaritay Hallow]] at [[Castle Drakan]] at a future time if desired
+* [[Hallowed flail]]
+* [[Sunspear]]
+* A new [[fermenting vat]] for [[brewing]], located in the [[Burgh de Rott]] [[Myreque Hideout]]. The pub itself is restored, and is run by [[Veliaf Hurtz]].
+** As the [[monk of Zamorak|monks of Zamorak]] are cleared out of [[Paterdomus]] during the quest, [[Ivan Strom|Ivan]] now resides there. His role of selling vampyrebane weapons is taken over by [[Efaritay Hallow|Efaritay]].
+* The vyres of Morytania will now be tolerant to the player, and Darkmeyer services can be used without utilising a [[vyre noble outfit]]. This is unlocked before the final fight with Lowerniel.
+** The Vyrewatch can bring players to the [[Meiyerditch mine]] upon request, and players can leave without needing to mine 15 [[daeyalt ore]] or wearing the outfit to leave the mines.
+** [[Vyrewatch Sentinel]]s will no longer be aggressive to the player by default. To reactivate their aggression, players must complete the quest, then speak to the [[Werewolf (Darkmeyer)|werewolf]] that was hired by Mischa Myrmel (south of the teleport). He will offer [[garlic cocktail]]s for 20 coins each, and when these are in the player's inventory, vyres will become aggressive to them.
+}}

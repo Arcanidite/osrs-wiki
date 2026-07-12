@@ -1,0 +1,7 @@
+===Starting off===
+{{Checklist|
+*Speak to [[Grish]] located in [[Jiggig]] west of the [[Gu'Tanoth]] and south of [[Castle Wars]] (east of [[Fairy rings|fairy ring]] {{Fairycode|bkp}}) and offer to help. {{Chat option|2What do you mean sickies?|4Can I help in any way?|1Yes.}}
+''Grish will give you two [[Super restore potion]]s and three [[Cooked chompy|Cooked chompy birds]].''
+*Speak to [[Ogre guard]] to the east, he will remove the barricade to gain access to the Zogre-infested area.
+*Climb over the [[crushed barricade]] and run east to a set of stairs going downwards, go down these stairs.
+}}

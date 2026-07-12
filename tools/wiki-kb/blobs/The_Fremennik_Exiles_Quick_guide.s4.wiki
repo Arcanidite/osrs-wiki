@@ -1,0 +1,36 @@
+===Redeeming the exile===
+You can do the following sections in any order as long as you use them on each other while you have a [[glassblowing pipe]].
+
+====Fremennik shield====
+'''Items required:''' ''[[Rune thrownaxe]] and [[pet rock]] for option 3.'' 
+
+'''Recommended''': ''[[Stamina potions]], [[food]], [[Ring of charos (a)]].''
+{{Checklist|
+*Obtain a [[Fremennik shield]] (this is '''not''' the tradeable [[Neitiznot shield]]).
+**Option 1: Go to [[Waterbirth Island]] and kill [[Dagannoth (Waterbirth Island)|dagannoth]] until they drop the shield (uncommon drop).
+**Option 2: Go to [[Rellekka]] and kill [[Market Guard]]s or [[Warrior (Rellekka)|Warriors]] until they drop the shield (rare drop).
+**Option 3: Travel to [[Bardur]] deep in the [[Waterbirth Island Dungeon|Waterbirth Dungeon]] and wear a [[Ring of charos (a)]] to get the shield for free. Without the ring it will cost {{Coins|150000}}.
+}}
+
+====Lunar glass and V's sigil====
+'''Items required''': ''[[Seal of passage]], [[molten glass]], 100 [[astral rune]]s, any [[pickaxe]], [[hammer]], and an amulet of glory for a fast teleport to a furnace.''
+{{Checklist|
+*Go to [[Baba Yaga]] on [[Lunar Isle]] to turn your molten glass into [[molten glass (i)]]. {{Chat option|3}} or {{Chat option|4}} if using lunar spellbook and Ourania teleport is not unlocked.
+*Head north-east of the town to [[Lunar Isle mine]] and mine stalagmites for 3 [[lunar ore]].
+*Leave the mine and travel to the [[Astral Altar]] with 100 [[astral rune]]s in your inventory and craft on the altar to obtain [[Lunar glass]]. Then return to Rellekka.
+**Optional: Destroy the [[Seal of passage]] and talk to the [[Oneiromancer]] to be teleported there. This guide will remind you later to re-obtain it at a convenient moment.
+*Smelt 3 [[lunar bar]]s in a [[furnace]] (Rellekka is convenient) or you can use [[Superheat Item]].
+*Smith the [[V sigil]] on an [[anvil]] (Rellekka is convenient).
+*Talk to the [[Fossegrimen]] to enchant the sigil. (Found by summoning at the Strange altar south-west of Rellekka) {{Chat option|3Ask about V's Sigil.}}.
+}}
+
+====Polishing rock====
+'''Items required''': ''[[Pet rock]], [[Fishing rod]], [[V sigil (e)]], [[Lunar glass]], [[Ice gloves]], [[Glassblowing pipe]], [[Fremennik shield]].'' 
+
+'''Recommended:''' ''2 teleports to the [[Mountain Camp]] ([[Slayer ring]] or [[Fairy rings]] access code {{Fairycode|AJR}}), a teleport back to [[Rellekka]] ([[Enchanted lyre|Enchanted Lyre]] or [[Fremennik sea boots 4|Fremennik Sea boots]]) and stamina potion''
+{{Checklist|*Head east of Rellekka to the [[Mountain Camp]]
+*Follow the path north of the [[Mountain Camp]] and inspect the [[Large Geyser]]. Use your pet rock on the Geyser. {{Chat option|1It's for the good of the Province!}}
+*Go to Rellekka and talk to [[Peer the Seer]] found south-west of the Rellekka market.
+*Return to the geyser and wear the [[ice gloves]], if you forget you may re-equip them and try again.
+*Inspect the large geyser to the west to get the [[polishing rock]].
+*Use any of the components together while having a [[glassblowing pipe]] in the inventory to create [[V's shield]].}}

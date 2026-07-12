@@ -1,0 +1,14 @@
+==Rewards==
+{{Quest rewards
+|name = The Final Dawn
+|image = [[File:The Final Dawn reward scroll.png|centre]]
+|qp = 3
+|rewards =
+* [[Arkan blade]]
+* {{SCP|Thieving|55,000}} experience
+* {{SCP|Runecraft|25,000}} experience
+* {{SCP|Fletching|25,000}} experience
+* A [[Antique lamp (The Final Dawn)|lamp]] granting 55,000 experience to any combat skill of at least level 40, including [[Prayer]]
+* Access to the [[Crypt of Tonali]]
+* Access to the [[Doom of Mokhaiotl]] (also known as Osto-Ayak) 'delve' boss
+}}

@@ -1,0 +1,35 @@
+===Riddle of the Tomb===
+[[File:Beneath Cursed Sands - urn riddle.png|thumb|280px|The riddle indicating where to put the urns, which is random for each player.<br><br>In this example, the solution would be to place the baboon, crocodile, scarab, and human emblems from the northern to southern urns.]]
+{{Checklist|* Inspect the south-western plaque to get four emblems.
+* Inspect the north-western plaque and read it.
+* The solution to the puzzle is different for everyone. Refer to the table below to solve this puzzle.
+** {{mes|To the one that arrived first, he offered ['''item 1'''].}} – Place the emblem corresponding to '''item 1''' in the '''centre-south urn'''.
+** {{mes|The one that was offered ['''item 2'''] came from just south...}} – Place the emblem corresponding to '''item 2''' in the '''southernmost urn'''.
+** {{mes|['''God 1'''] arrived just before ['''god 2''']...}} – Place the emblem corresponding to '''god 1''' in the '''northernmost urn''' and the emblem corresponding to '''god 2''' in the '''centre-north urn'''.
+}}
+{| class="wikitable"
+|+
+!Emblem
+!God
+!Item
+|-
+|Scarab
+|Isolation
+|Carving
+|-
+|Human
+|Health
+|Wine
+|-
+|Crocodile
+|Resourcefulness
+|Necklace
+|-
+|Baboon
+|Companionship
+|Linen
+|}
+{{Checklist|* Pull the lever to the south-west and continue to the next area.
+* Speak to the [[Mehhar|Spirit]].
+* Take the [[rusty key]] from the urn in the back of the room.
+}}

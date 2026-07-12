@@ -1,0 +1,13 @@
+==Rewards==
+{{Quest rewards
+|name = Desert Treasure II - The Fallen Empire
+|image = [[File:Desert Treasure II - The Fallen Empire reward scroll.png|center]]
+|qp = 5
+|rewards = 
+* Three [[ancient lamp]]s, each offering 100,000 experience in {{SCP|Attack}} [[Attack]], {{SCP|Strength}} [[Strength]], {{SCP|Defence}} [[Defence]], {{SCP|Hitpoints}} [[Hitpoints]], {{SCP|Ranged}} [[Ranged]], {{SCP|Magic}} [[Magic]], or {{SCP|Prayer}} [[Prayer]] at level 60 or above.
+* Access to [[Scar essence mine]]
+* [[Ring of shadows]]
+* The ability to wear [[ancient rings]].
+* The ability to repeat [[the Forgotten Four]] encounters as boss fights, along with the ability to challenge their [[Awakener's orb|awakened]] variants.
+* The ability to fight [[Demonic Brutus]] using [[abyssal potato]]es.
+}}

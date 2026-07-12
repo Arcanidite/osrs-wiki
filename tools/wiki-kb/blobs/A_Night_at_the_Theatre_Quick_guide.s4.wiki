@@ -1,0 +1,9 @@
+===In Touch with Nature===
+{{Needed|[[Ghostspeak amulet]] or [[Morytania legs]] 2+, any [[axe]], equipment and food to kill a level 302 [[Hespori (A Night at the Theatre)|hespori]]|recommended=[[Dramen staff]] for fast travel to the Grotto, [[Super combat potion]], [[Antipoison]], [[Drakan's medallion]], [[Druid pouch]] or a lit [[Fire of Dehumidification]] to protect food from [[ghast]]s}}
+{{Checklist|
+*With [[ghostspeak amulet]] or [[Morytania legs 2]]+ (and [[druid pouch]] to protect food), go to the [[Nature Grotto]] (fairy ring {{fairycode|BIP}}), and speak to the Nature Spirit [[Filliman Tarlock]] inside the grotto. 
+*Go to the island on the east side of Mort Myre (directly east of the grotto, just west of [[Castle Drakan]]).
+**Look for the island north of the [[Shades of Mort'ton (minigame)|Shades of Mort'ton]] minigame symbol.
+*Cross the stepping stone and kill the [[Hespori (A Night at the Theatre)|hespori]] and chop it afterwards to obtain [[hespori bark]].
+*Return to the Mysterious Stranger. {{Chat option|1I found a hespori.}} Watch two cutscenes.
+}}

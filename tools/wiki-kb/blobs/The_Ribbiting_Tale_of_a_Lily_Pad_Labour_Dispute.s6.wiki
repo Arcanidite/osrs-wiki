@@ -1,0 +1,9 @@
+==Rewards==
+{{Quest rewards
+|name = The Ribbiting Tale of a Lily Pad Labour Dispute
+|image=[[File:The Ribbiting Tale of a Lily Pad Labour Dispute reward scroll.png|centre]]
+|qp =1 
+|rewards =
+*{{SCP|Woodcutting|2,000|link=yes}} experience
+* Access to a new [[Hardwood]] Farming patch 
+}}

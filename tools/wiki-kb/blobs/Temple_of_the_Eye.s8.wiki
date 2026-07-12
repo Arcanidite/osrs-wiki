@@ -1,0 +1,11 @@
+==Rewards==
+{{Quest rewards
+|name = Temple of the Eye
+|image = [[File:Temple of the Eye reward scroll.png|center]]
+|qp = 1
+|rewards =
+* {{SCP|Runecraft|5,000}} [[Runecraft]] experience
+**An additional {{SCP|Runecraft}} 4,210 [[Runecraft]] XP is gained during the quest, for a total of 9,210 XP
+* Access to the [[Guardians of the Rift]] minigame
+* A [[medium pouch]] (if not already acquired)
+}}

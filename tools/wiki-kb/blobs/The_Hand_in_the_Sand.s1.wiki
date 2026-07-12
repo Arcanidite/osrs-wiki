@@ -1,0 +1,32 @@
+==Details==
+{{Quest details
+|start = Talk to [[Bert]] in [[Yanille]], near the [[sand pit]].
+|startmap = 2550,3100
+|difficulty = Intermediate
+|description = Bert the Sandman in Yanille is in a spot of bother. A [[Sandy hand|mysterious severed hand]] has appeared in his sand box. Help find out whose hand it is and, more to the point, how it got in Bert's sand box.
+|length = Short
+|requirements = *{{SCP|Thieving|17|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+*{{SCP|Crafting|49|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = *[[Beer]] (obtainable during the quest)
+*About 150 [[coins]]
+*1 empty [[vial]]
+*[[Redberries]] (purchasable during the quest from the [[Food Store]] in [[Port Sarim]])
+*[[White berries]]
+*[[Lantern lens]]
+*5 [[earth rune]]s (can be bought from [[Betty]] for 20 gp)
+*[[Bucket of sand]] (obtainable during quest if you bring a [[bucket]])
+|recommended = * 1 extra [[vial]] to pay for fast travel to [[Port Sarim]]
+* Fast travel to [[Yanille]] ([[Yanille teleport]], [[Watchtower teleport]], [[Nightmare Zone]] [[Minigame Teleport]] or [[House teleport]] if your house is in Yanille, or [[Fairy Rings|Fairy Ring]] to {{fairycode|ciq}})
+* Fast travel to [[Brimhaven]] ([[Brimhaven teleport]], [[Teleport to House]] if your house is in Brimhaven, via a [[charter ship]] or via [[Captain Barnaby]]'s ship from [[Ardougne]] using the [[Ardougne teleport]] or [[Ardougne cloak]])
+* Fast travel to [[Port Sarim]]
+|ironman = [[File:Ultimate ironman chat badge.png|Ultimate Ironman]] The player briefly visits [[Entrana]].
+*A method to acquire [[White berries]]:
+**{{SCP|Farming|59|link=yes}} {{Boostable|yes}} and a [[whiteberry seed]]
+**Spawn on the [[Lava Dragon Isle]] in the [[Wilderness]]
+**Spawn in [[Isadfar]], north of the [[Elf Tracker]] (requires partial completion of {{SCP|Quest}} [[Regicide]])
+**1/25.6 drop from [[cave crawlers]] (requires {{SCP|Slayer|10}})
+**1/25.6 drop from the [[Chaos druid warrior]]s in the [[Yanille Agility Dungeon]] (requires {{SCP|Agility|40}})
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kandarin}} {{okay}} will auto-complete the quest
+</poem>
+}}

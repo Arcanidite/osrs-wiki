@@ -1,0 +1,16 @@
+===Amassing the masters===
+{{Needed|Runes for four casts of [[NPC Contact]] (Total: 8 [[air runes]], 4 [[cosmic runes]], 4 [[astral runes]]), the [[Lunar spellbook]] activated|recommended=[[Combat bracelet]], [[games necklace]], or [[Strength cape]] to teleport to the Warriors' Guild}}
+
+{{Checklist|
+* Speak to [[Idria]].
+* Cast [[NPC Contact]] and contact [[Turael]], [[Mazchna]], [[Cyrisus]], and [[Duradel]] each; choose the option regarding [[Lucien]]. You can also go and visit Turael, Mazchna, and Duradel in person if necessary, though [[NPC Contact]] is needed for Cyrisus.
+* Return to the [[White Knights' Castle]] and harvest the [[enriched snapdragon]].
+* Speak to [[Thaerisk]] and he'll give you some [[Truth serum (While Guthix Sleeps)|truth serum]].
+* Use the [[enriched snapdragon]] on the serum to create the [[super truth serum]].
+* You will now need to obtain [[charcoal]] and [[papyrus]] from the drawers just south of the jail cell.
+* Enter the jail cell and use the super truth serum on the shady stranger.
+* Once you create a [[suspect sketch]], exit the jail cell and give it to [[Idria]].
+* Head to the [[Warriors' Guild]] and recruit [[Ghommal]], [[Harrallak Menarous]], and [[Sloane]] (found north-east on the {{FloorNumber|uk=1}}) by asking about [[Lucien]].
+** [[Ghommal]] and [[Harrallak]] can be found right by the guild's entrance, whilst [[Sloane]] can be found one floor above to the north-east through the heavy door.
+* Optional: If you do not already have a disguise to enter the Black Knights' Fortress, you can buy a [[bronze med helm]] and [[iron chainbody]] from the [[Warrior Guild Armoury]] on the {{FloorNumber|uk=1}} while here.
+}}

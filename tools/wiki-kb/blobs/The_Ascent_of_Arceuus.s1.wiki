@@ -1,0 +1,28 @@
+==Details==
+{{Quest details
+|start = Talk to [[Mori]] in [[Arceuus]].
+|startmap = 1700,3742
+|difficulty = Intermediate
+|description = A long time ago, the citizens of Arceuus house gave up their human bodies and claimed immortality. This event was known as the Ascent of Arceuus and it marked the end of death within Arceuus house. Or so they believed. For the first time in a thousand years, a member of Arceuus house has fallen. You will need to solve the mystery of this death. However, time is of the essence and the fate of Arceuus house lies in your hands.
+|length = Short
+|requirements = *Completion of the following quests:
+**[[Client of Kourend]]
+***[[X Marks the Spot]]
+*{{SCP|Hunter|12|link=yes}} {{Boostable|no}} {{Questreqstart|yes}}
+|items = None<br/>
+|recommended = *{{SCP|Combat|15|link=yes}}
+*Runes to cast [[Crumble Undead]]({{RuneReq|Earth=2|Air=2|Chaos=1}}) on [[Tormented Soul]]s and [[Trapped Soul]]
+*Access to [[fairy rings]] ([[Dramen staff|Dramen]]/[[Lunar staff]] and started {{SCP|Quest}} [[Fairytale II - Cure a Queen]])
+*Two [[Battlefront teleport]]s, or use the fairy ring  {{Fairycode|CIR}}
+*A [[Stamina potion]]
+*[[Xeric's Talisman]] or runes for [[Kourend Castle Teleport]] ({{RuneReq|Law=2|Water=1|Fire=1}})
+*[[Skills necklace]] for teleportation to the [[Farming Guild]], just south-west of [[Mount Karuulm]], or via fairy ring {{Fairycode|CIR}}
+*[[Arceuus library teleport]] tablets
+* A [[pickaxe]] to complete an easy [[Kourend & Kebos Diary]] step
+* A weapon
+|kills = *5 [[Tormented Soul]]s (Level 16)
+*[[Trapped Soul]] (Level 30)
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Kourend}} {{okay}} will auto-complete the quest
+</poem>
+}}

@@ -1,0 +1,9 @@
+===Rewards===
+*[[Fremennik sea boots 4]]:
+**Unlimited teleports to the [[Rellekka]] marketplace
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*[[Dagannoth bones]] from the [[Dagannoth Kings]] are now [[noted]], unless this feature is disabled by talking to [[Thorodin]] south of [[Rellekka]]
+*15% increased chance of gaining approval in [[Managing Miscellania]] when fishing or woodcutting (other activities always give approval)<ref name="miscapprove"/>
+*[[Enchanted lyre]] and its [[Enchanted lyre(i)|imbued variant]] can now be played to teleport to [[Waterbirth Island]], [[Jatizso]], and [[Neitiznot]], aside from [[Rellekka]]
+*The [[seal of passage]] is no longer needed to interact with anyone on [[Lunar Isle]], which means you'll no longer be kicked off the island to [[Rellekka]] for doing so (you'll instead gain access to the [[Return Orb]] as a new way of reaching Rellekka)
+*[[Fossegrimen]] will [[enchanted lyre(i)|imbue your lyre]] with infinite charges for 200 of each required fish, down from 400

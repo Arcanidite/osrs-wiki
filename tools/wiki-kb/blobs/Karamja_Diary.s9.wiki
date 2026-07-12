@@ -1,0 +1,12 @@
+===Rewards===
+*[[Karamja gloves 4]]:
+**Unlimited teleports to [[Duradel]]/[[Kuradal]]
+*[[Antique lamp (elite)|Antique lamp]] worth 50,000 experience in any skill of at least level 70
+*10% chance of receiving two [[Agility arena ticket]]s and [[Brimhaven voucher]]s, instead of one, when successfully tagging a [[ticket dispenser]] at the [[Brimhaven Agility Arena]]
+*Free usage of Shilo Village's [[furnace]], down from a fee of 20 [[coins]] per use
+*Free access to the [[Hardwood Grove]], down from a fee of 100 [[trading sticks]]
+*Free [[Shilo Village cart system|cart rides]] between [[Brimhaven]] and [[Shilo Village]], down from a fee of 10-200 [[coins]]
+*[[Red dragonhide]] from [[red dragon]]s in the [[Brimhaven Dungeon]] is now [[Bank note|noted]] (cannot be disabled)
+*[[Bar]]s from [[Dragon_(race)#Metal_dragons|metal dragon]]s in the [[Brimhaven Dungeon]] are now [[noted]], unless this feature is disabled by talking to [[Pirate Jackie the Fruit]]
+*Double [[Tokkul]] from the [[TzHaar Fight Cave]], the [[Inferno]], and [[TzHaar-Ket-Rak's Challenges]]
+*Resurrect with full health and restored stats once per day when you reach 0 hitpoints in the [[TzHaar Fight Cave]], allowing you to continue on with the fight (the task list of this diary will show you whether you've used this daily resurrection)
