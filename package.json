@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/",
-    "fixtures": "node tests/generate-fixtures.js"
+    "fixtures": "node tests/generate-fixtures.js",
+    "fixtures:quest-superset": "node tests/generate-quest-superset.js"
   },
   "repository": {
     "type": "git",
