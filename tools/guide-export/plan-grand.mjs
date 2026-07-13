@@ -67,24 +67,60 @@
 //     trigger condition never fires. Not a missing-content gap, a route-shape
 //     difference between the narrow p2p bake and the superset spine.
 //
-// goal-quest-cape vs goal-quest-spine (SUBSET, documented per the build brief's
-// own escape hatch: "a converging honest subset beats a broken superset"):
-// goal-quest-cape's reqs.skills union tops out at Thieving/Hunter/Smithing 99
-// (driven by its own 216-quest reqs.quests set, not by anything Barrows/GWD/CoX
-// need) — _difficulty in enrich.py's phased_steps sorts milestones by
-// (max skill req, sum), so including quest-cape would place ITS episode after
-// raids-cox's (max skill 75), ending the "Full Progression" route on the quest-
-// cape capstone instead of Chambers of Xeric — the actual endgame anchor asked
-// for. goal-quest-spine's reqs.skills top out at 74 (Cooking) < raids-cox's 75
-// (Attack/Strength/Defence/Ranged), so the spine's episode sorts BEFORE CoX's —
-// early_game -> gwd -> barrows -> quest_spine -> raids-cox, ending at CoX as
-// intended. Swapping in quest-cape is a one-line change (DEFAULT_GOALS below)
-// if a future pass wants the full 216-quest superset and a different ending.
+// goal-quest-cape vs goal-quest-spine as the ROUTED goal set (SUBSET, per the
+// build brief's own escape hatch: "a converging honest subset beats a broken
+// superset"): goal-quest-cape's reqs.skills union tops out at
+// Thieving/Hunter/Smithing 99 (driven by its own 216-quest reqs.quests set,
+// not by anything Barrows/GWD/CoX need) — _difficulty in enrich.py's
+// phased_steps sorts milestones by (max skill req, sum), so ROUTING quest-cape
+// as an 8th goal here would place ITS OWN capstone card after raids-cox's,
+// demoting Chambers of Xeric from the route's anchor spot, AND would let
+// routeMulti's combined 8-goal cost search jointly re-optimize (risking
+// reshuffled content in the EXISTING 7 goals' episodes, not a clean append).
+// DEFAULT_GOALS below stays the 7-goal set unchanged for exactly this reason.
+//
+// CONSOLIDATION.md §5 lane A2 (quest-cape EPILOGUE, gated on Lane B's
+// id-space reconciliation — osrs-wiki c1d2cdd8 made quest_atoms cover grand's
+// quest steps id-agnostically, so absorbing ~127 more quest ids no longer
+// risks the task #9 79->62 coverage-split failure shape at 2.4x the count):
+// absorbs the quest-cape RESIDUE (every route-quests.json id absent from this
+// driver's own routedPath — quest-/rfd-* quest steps plus the handful of
+// train-<skill>-<level> bands the deep reqs.quests chain needs that
+// barrows/gwd/quest-spine/raids-cox never happened to train) as an EXPLICIT
+// EPILOGUE spliced onto the tail of `path`, AFTER routedPath — same
+// explicit-array-splice trick as the ORIGIN PREFIX above, just at the other
+// end: raw steps concatenated directly into `path`, bypassing routeMulti/
+// goal-based routing entirely, so _difficulty's episode-sort never sees
+// "goal-quest-cape" as a competing milestone. route-quests.json is read
+// READ-ONLY, purely for its id LIST + ORDER (a previously-validated
+// topological route for the full 216-quest superset); every id then resolves
+// to ITS raw router step from THIS file's own `stepById` merged bank
+// (steps.jsonl/steps_quests.jsonl), never from route-quests.json's own
+// content — that fixture is ENRICHED shape (instruction/completionConditions),
+// not a router step, and reusing FIXED bank ids (verified: route-quests.json's
+// non-quest residue is 100% steps.jsonl's fixed `train-<skill>-<level>` ids,
+// never a route-specific `synth-*` counter) sidesteps the synth-id divergence
+// CONSOLIDATION.md §2 already flags for route-p2p's OWN stale-artifact
+// uniques. The one id with no raw bank row — `milestone-goal-quest-cape`,
+// route-quests.json's own synthesized capstone (there is no "goal-quest-cape"
+// entry in THIS driver's `goals`, so enrich.py never mints it here) — is
+// hand-authored below (EPILOGUE CAPSTONE) reusing that fixture's own
+// wiki-cited completionConditions data verbatim, gated via location.quest_gate
+// on the residue's own last quest id so it can only ever land at the tail
+// (topo_order/phased_steps' ready() enforces quest_gate ahead of any
+// skill-grant-driven `advances()` priority — see enrich.py), closing the
+// overlap spike's unique count to 0 without needing goal-quest-cape routed.
 //
 // Usage: node tools/guide-export/plan-grand.mjs
+import { readFileSync } from "node:fs";
 import { loadFixtures, readData, makeEnv, freshProfile, queueGoal } from "../../tests/helpers.js";
 import { routeMulti } from "../../assets/js/router/planner/greedy.js";
 import { burndownResolve } from "../../assets/js/router/planner/burndown.js";
+
+// Canonical plugin fixtures path (CLAUDE.md-designated plugin repo), same
+// hardcoded-constant convention spikes/consolidation-overlap.mjs already uses.
+const GUIDE_CHAIN_FIXTURES = "/home/lemon/runelite-guide-chain/src/main/resources/fixtures";
+const CAPE_MILESTONE_ID = "milestone-goal-quest-cape";
 
 const DEFAULT_GOALS = ["goal-early-game", "goal-quest-spine", "quest-dt", "quest-mm", "barrows", "gwd", "raids-cox"];
 
@@ -127,7 +163,72 @@ const routedPath = routeMulti(queued, mergedSteps, freshProfile(), env);
 // Tutorial Island instructor sequence -> Lumbridge arrival, mirrors plan-
 // origin.mjs's ORDER constant minus the 4 quest openers, which arrive via
 // routedPath instead so they carry the SAME single copy other chains reuse).
-const path = [...originSteps, ...routedPath];
+
+// EPILOGUE — quest-cape residue (see the file-header comment above for the
+// full rationale). `grandIds` = every id this driver's own routing already
+// covers; residue = route-quests.json's id order minus that set. `chkpt-*`
+// ids are enrich.py-synthesized checkpoint-group headers (`_checkpoint_step`,
+// registry-stable by coarse_expansions index — NOT per-bake), same synthesis
+// class as `milestone-*`: they have no raw router-step counterpart to splice,
+// and don't need one — grand's OWN enrich.py pass re-derives them for free
+// from `coarse_expansions` once the underlying member steps are present in
+// its path (steps.jsonl-sourced content, shared across every bake), so they
+// are excluded here rather than treated as unresolved residue.
+const grandIds = new Set([...originSteps.map((s) => s.id), ...routedPath.map((s) => s.id)]);
+const questCapeBake = JSON.parse(readFileSync(`${GUIDE_CHAIN_FIXTURES}/route-quests.json`, "utf8")).steps;
+const isSynthesizedMarkerId = (id) => id.startsWith("chkpt-");
+const residueIds = questCapeBake.map((s) => s.id)
+  .filter((id) => !grandIds.has(id) && !isSynthesizedMarkerId(id));
+const isQuestId = (id) => /^(quest-|rfd-)/.test(id);
+
+const residueSteps = [];
+const unresolvedResidueIds = [];
+for (const id of residueIds) {
+  const raw = stepById.get(id);
+  if (raw) residueSteps.push(raw);
+  else unresolvedResidueIds.push(id);
+}
+const unexpectedUnresolved = unresolvedResidueIds.filter((id) => id !== CAPE_MILESTONE_ID);
+if (unexpectedUnresolved.length) {
+  console.error("plan-grand: quest-cape residue ids missing from the merged step bank:", unexpectedUnresolved);
+  process.exit(1);
+}
+
+// EPILOGUE CAPSTONE — route-quests.json's own "milestone-goal-quest-cape"
+// synthesized capstone has no raw router-step counterpart in `stepById`
+// (enrich.py's `_milestone_step` mints it from the goals[] list, which THIS
+// driver deliberately never adds "goal-quest-cape" to — see the file-header
+// comment). Hand-author it here so the overlap spike's id-set comparison
+// still resolves to grand's own copy: same id, same wiki-cited
+// completionConditions data (copied verbatim from that fixture's own SKILL
+// list — not fabricated), rendered via enrich.py's ordinary _train_step path
+// (grants -> SKILL conditions) rather than _milestone_step. `quest_gate`
+// pins it behind the residue's own last quest id, so topo_order/phased_steps'
+// ready() gate (checked ahead of any grants-driven `advances()` pull) keeps
+// it pinned at the very tail regardless of how many milestone target skills
+// its 23-skill grants union happens to touch.
+if (unresolvedResidueIds.includes(CAPE_MILESTONE_ID)) {
+  const capeFixtureRow = questCapeBake.find((s) => s.id === CAPE_MILESTONE_ID);
+  const lastResidueQuestId = [...residueIds].reverse().find(isQuestId);
+  residueSteps.push({
+    id: CAPE_MILESTONE_ID,
+    label: "★ Quest cape",
+    kind: "milestone",
+    reqs: { skills: {}, quests: [] },
+    grants: Object.fromEntries(
+      (capeFixtureRow.completionConditions || [])
+        .filter((c) => c.type === "SKILL")
+        .map((c) => [c.skill.toLowerCase(), c.level])
+    ),
+    xp: {},
+    tags: [],
+    location: { region: "global", zone: null, quest_gate: lastResidueQuestId, quest_phase: "after" },
+    refs: capeFixtureRow.refs || [],
+    detail: capeFixtureRow.detail || "",
+  });
+}
+
+const path = [...originSteps, ...routedPath, ...residueSteps];
 
 // Run burndown separately to get sanitized goals (with supply tag-bridge
 // applied), same pattern as plan-multi.mjs/plan-quests.mjs. goal-early-game
