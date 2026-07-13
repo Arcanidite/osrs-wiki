@@ -430,3 +430,33 @@ Ultracode session. Everything below committed across osrs-wiki + runelite-guide-
 **Capture harness (scenario-capture/):** rev-236 proto-server + rsprox-referenced protocol (RebuildLogin GPI-first, PlayerInfo op54, IF_OPENTOP, NPC spawn) → in-world scenario render WORKS, oracle-verified, captioned frames+gif per scenario. Off-JVM authored; no real creds. SME_NOTES.md.
 
 **Tooling/discipline:** wikicli (cached MediaWiki API, --strip, idempotent ledgers) + NOISEBENCH; .claude/agents/{wiki-researcher,noise-calibrator}; CLAUDE.md; fan-out discipline (classify-first micro-bursts, bash-write-only, read-ledger-first, canonical-trigger retros).
+
+## 2026-07-13 — Native-engine boot-free renderer becomes the checklist's capture source
+
+`scenario-capture/native-render/` (Rust, stateless cache reader + rasterizer, no JVM/Xvfb/
+network) reached 25/25 scenarios rendering and 11/25 PARITY with the Java client capture
+(byte-position-verified decoders, `PARITY_REPORT.md`). This session made it pay off:
+
+**Roof-ridge spike cosmetic, fixed.** The one disclosed PARITY gap (`quest_restless_ghost`/
+`draynor_bank`'s roofline showing white spike artifacts) was root-caused to a real cache
+field, `ModelDefinition.faceRenderTypes`, that the crate decoded at the correct byte offset
+for several sessions but never actually read — 2 of a roof-ridge model's 36 faces carry
+render type 2 (RuneLite's own normal-computation loop only branches on 0/1; anything else
+isn't ordinary visible surface). `Face` gained `render_type`/`is_standard_surface()`; every
+mesh builder now filters on it. Verified scoped via a full-sweep debug counter (non-standard
+faces exist only in building-architecture models) and zero pinned-golden regressions
+(9/11 reproducible goldens byte-identical, the other 2 covered by the same zero-affected-
+faces proof since they render through the chicken/tree/player-identkit models, which have
+none). See `native-render/PARITY_REPORT.md`'s "N14" section.
+
+**10 checklist steps switched from Java-client to native captures** (the PARITY_REPORT.md
+rows that both match Java AND map to a wired step): `ctr-01-kill-chickens`,
+`ctr-02-kill-cows`, `ctr-05-kill-barbarians`, `ori-t-01-claim-character-creation`,
+`pps-01-withdraw-compost-run`, `quest-the-restless-ghost`, `train-cooking-20`,
+`train-mining-15`, `train-thieving-20`, `train-woodcutting-15` — captured via
+`run_scenario.py --engine native` (0.2-4s per scenario vs ~30-35s Java boot alone),
+wired through `assets/data/tools/steps.jsonl`/`steps_origin.jsonl`/`steps_quests.jsonl`
+`media[]` (`state.engine:"native"` marks the row reproducible in one command). Every
+NON-parity step's Java capture is untouched — `login_render` is PARITY but has no wired
+checklist step, so it's not switched either. `npm test` 91/91; all 5 guide-chain
+`fixtures/route-*.json` regenerated, diffs confirmed media-field-only.
