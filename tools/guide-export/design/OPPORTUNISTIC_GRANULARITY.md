@@ -173,14 +173,52 @@ route-order faults (`ranarr_seed` sourced at [170] AFTER its consumer at
 gaps the fan-out fills. `npm test`: 86/86 green, zero baseline shifts (new
 module is not yet wired into any pass; the spike is analysis-only).
 
+### 2-epoch. EPOCH SCOPE — QoL/unlock payoffs vs loot-grind loops (added 2026-07-13)
+
+The route is a SPEEDRUN spine, not a grind log. Two distinct epochs; only ONE is
+opportunistically woven:
+
+- **Ordered-requisite SPINE** (character-creation → endgame): a dependency-ordered
+  sequence of QoL/unlock milestones (goals/steer-points — progression-philosophy:
+  goals = QoL/unlock milestones with `anchor_weight`). Its requisites are a
+  **fox/hen/feed** chain — upstream acquisitions interleaved so each is in hand
+  exactly when the next needs it, sourced at the EARLIEST in-position window. **This
+  is the weave's demand horizon.**
+- **Loot/grind EPOCHS** (Barrows, GWD, raids): loot loops the spine unlocks ACCESS
+  to. Their consumables (food, brews, prayer pots) are a SELF-CONTAINED intra-epoch
+  supply loop — NOT spine requisites. The weave must NOT back-propagate a grind
+  loop's supplies onto the spine.
+
+**Correction to the demand horizon (§2 step 1):** horizon demands come from the
+QoL/unlock milestone set + their ordered requisite chains, NOT from a grind epoch's
+`consumes{}`. A goal tagged a loot/grind epoch contributes NO spine demands; it owns
+its own supply loop. The §2-proof `food_monkfish → barrows` demand is exactly this
+mis-classification: barrows-ACCESS is a spine milestone (weave its requisites);
+barrows-loot GRINDING is a separate epoch, and its monkfish is intra-epoch, never a
+spine payoff.
+
+**Payoff is COMPOUNDING, not one-shot.** A QoL/unlock fetched early pays its dividend
+across EVERY subsequent step. `paysOff.at` names the compounding benefit ("fairy rings
+— every trip after"), not a single consumer. Worked (ordered + compounding): unlock
+fairy rings via Lost City (cut dramen branch → dramen staff) → Fairytale I & II pt.1 →
+rings live; the weave sources the dramen branch the first time the player is in-position
+during Lost City, because the payoff compounds for the whole rest of the run. Pure-QoL
+flavor: while already at a rooftop course for an Agility requisite, passively bank marks
+of grace → graceful → permanent run-energy regen (zero-detour, dividend every future run).
+
 ### 2a. Data (all additive-nullable)
 
 1. **`_payoff` — KEEP the demand edge burndown already computes.**
    `burndown.js resolveStepDeps/resolveChain/burndownResolve` learn, for every
    injected supply step, which step/goal consumes its output — and drop it.
-   Change (~10 lines): stamp `_payoff: {consumer: "<step-id>", goal:
-   "<goal-id>", item: "<slug>"}` on each injected supply step alongside the
-   existing `_supply`/`_supply_chain` annotations.
+   Change (~10 lines): stamp `_payoff: {consumer: "<step-id>", goal: "<goal-id>",
+   item: "<slug>", kind: "qol-unlock"|"ordered-requisite", epoch: "spine",
+   compounds: <bool>}` on each injected supply step alongside the existing
+   `_supply`/`_supply_chain` annotations. `kind`/`epoch`/`compounds` scope the weave
+   to the spine (§2-epoch): a loot-grind supply loop is `epoch:"grind"` and is never
+   back-propagated onto the spine; `compounds:true` marks a QoL/unlock whose dividend
+   accrues over the whole remaining run (paysOff renders the compounding benefit, not
+   a one-shot hand-in).
 2. **`opp{}` on steps.jsonl (authored, nullable) — the in-position trigger.**
    ```jsonc
    "opp": {

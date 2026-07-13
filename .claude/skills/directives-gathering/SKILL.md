@@ -84,6 +84,15 @@ Read the ones your domain touches; when in doubt read more, not fewer.
   xp is synthetic → recompute from `Experience_table.s2`. Coords only from `{{Map}}` pins.
 - **Checkpoint ids** are registry-stable `chkpt-<coarse>-<N>` (index in checkpoints[], not
   emission order); labels = own-words renames of the wiki walkthrough headers.
+- **Opportunistic weave = SPINE-ONLY, QoL/unlock payoffs** (OPPORTUNISTIC_GRANULARITY.md
+  §2-epoch): the route is a speedrun spine, not a grind log. Back-prop demand horizon =
+  QoL/unlock milestones (goals/steer-points w/ `anchor_weight`) + their ordered
+  **fox/hen/feed** requisite chains, sourced at the EARLIEST in-position window; `_payoff`
+  carries `kind`(qol-unlock|ordered-requisite) / `epoch`(spine) / `compounds`; `paysOff.at`
+  names the COMPOUNDING benefit ("fairy rings — every trip after"), not a one-shot consumer.
+  **Loot/grind epochs (Barrows/GWD/raids) own self-contained intra-epoch supply loops —
+  NEVER back-propagate their consumables (food/brews/pots) onto the spine.** (barrows-ACCESS
+  = spine milestone; barrows-loot GRINDING = separate epoch.)
 
 ## Augmenting this skill
 When a wave teaches you a durable convention or gotcha: (1) add/adjust it in §Registry, (2) add
