@@ -1,0 +1,218 @@
+=={{{title|Allotment/Flower/Herb}}} patches==
+{{#if:{{{main|}}}|{{main|{{{main}}}}}|}}
+{{#if:{{{seealso|}}}|{{see also|Allotment patch|Flower patch|Herb patch}}|}}
+{| class="wikitable sortable lighttable align-center-2" style="width:1000px;max-width:100%"
+!style="width:15%;" |Types
+!style="width:15%;" |Location
+!style="width:40%;" |Closest teleport
+!class="unsortable" |Map
+!class="sortable leagues-global-flag" |[[League]] region
+!style="width:30%;" |Bonus
+{{#ifeq:{{{herb|}}}|only||{{!}}-
+{{!}}
+*Two [[Allotment patch|Allotment]]
+*[[Flower patch|Flower]]
+*[[Herb patch|Herb]]
+{{!}}South of [[Falador]]<br/>''Gardener: [[Elstan]]
+{{!}}
+*[[Explorer's ring 2]] or higher
+*[[Ring of the elements]] to [[Air Altar]]
+*[[Spirit tree]] to [[Port Sarim]]
+*[[Draynor Manor Teleport]]
+*[[Amulet of glory]] to [[Draynor Village]]
+*[[Skills necklace]] to [[Mining Guild]]
+*[[Ring of wealth]] to [[Falador Park]]
+*[[Falador Teleport]]
+{{!}}{{Map|3055,3308|r=6|mtype=square|height=212|width=212|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Asgarnia}}
+{{!}}
+*10% increased experience after completing the [[Medium Falador]] diary.}}
+{{#ifeq:{{{herb|}}}|only||{{!}}-
+{{!}}
+*Two [[Allotment patch|Allotment]]
+*[[Flower patch|Flower]]
+*[[Herb patch|Herb]]
+{{!}}Morytania, West of [[Port Phasmatys]]<br/>''Gardener: [[Lyra]]
+{{!}}
+*[[Ectophial]]
+*[[Fairy rings|Fairy ring]] code {{Fairycode|alq}}
+*[[Fenkenstrain's Castle Teleport]]
+*[[Kharyrll Teleport]]
+*[[Charter ship]] to [[Port Phasmatys]]
+{{!}}{{Map|3602,3526|r=6|mtype=square|height=212|width=212|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Morytania}}
+{{!}}}}
+{{#ifeq:{{{herb|}}}|only||{{!}}-
+{{!}}
+*Two [[Allotment patch|Allotment]]
+*[[Flower patch|Flower]]
+*[[Herb patch|Herb]]
+{{!}}North of [[Catherby]]<br/>''Gardener: [[Dantaera]]
+{{!}}
+*[[Catherby Teleport]]
+*[[Camelot Teleport]] then run east
+*[[Charter ship]] to Catherby (costs between {{NoCoins|480}} and {{NoCoins|3560}} [[coins]])
+{{!}}{{Map|2810,3464|r=6|mtype=square|height=212|width=212|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Kandarin}}
+{{!}}
+*5% extra herb yield after completing the [[Medium Kandarin]] diary.
+*10% extra herb yield after completing the [[Hard Kandarin]] diary.
+*15% extra herb yield after completing the [[Elite Kandarin]] diary.}}
+
+{{#ifeq:{{{herb|}}}|only||{{!}}-
+{{!}}
+*Two [[Allotment patch|Allotment]]
+*[[Flower patch|Flower]]
+*[[Herb patch|Herb]]
+{{!}}[[Hemenster|North]] of [[Ardougne]]<br/>''Gardener: [[Kragen]]
+{{!}}
+*[[Ardougne cloak 2]] or higher
+*[[Skills necklace]] to [[Fishing Guild]]
+*[[Fishing Guild Teleport]]
+*[[Combat bracelet]] to [[Ranging Guild]]
+*[[Quest point cape]] teleport
+*[[Fairy rings|Fairy ring]] code {{Fairycode|blr}}
+*[[Ardougne Teleport]]
+{{!}}{{Map|2667,3375|r=6|mtype=square|height=212|width=212|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Kandarin}}
+{{!}}}}
+{{#ifeq:{{{herb|}}}|only||{{!}}-
+{{!}}
+*Two [[Allotment patch|Allotment]]
+*[[Flower patch|Flower]]
+*[[Herb patch|Herb]]
+{{!}}South-west corner of [[Hosidius]]<br/>''Gardener: [[Marisi]]
+{{!}}
+*[[Xeric's talisman]] to [[Xeric's Glade]]
+*[[Hosidius]] portal: [[Teleport to House]] spell or [[scroll of redirection|redirected]] [[Teleport to house (tablet)|house tab]]
+*[[Kharedst's memoirs]] to Lunch by the lancalliums
+*[[Tithe Farm]] minigame teleport
+*[[Spirit tree]] to Hosidius (with 45 [[Agility]] for the river jump [[Shortcuts|shortcut]])
+*[[Fairy rings|Fairy ring]] code {{Fairycode|akr}} to Hosidius Vinery, then run west
+*[[Skills Necklace]] to [[Woodcutting Guild]], then run east (45 [[Agility]] for the Hosidius river jump [[Shortcuts|shortcut]])
+{{!}}{{Map|1735,3555|r=6|mtype=square|height=212|width=212|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Kourend}}
+{{!}}
+*All patches become disease-free after completing the [[Easy Kourend & Kebos Diary]].
+*5% extra herb yield after completing the [[Hard Kourend & Kebos]] diary.}}
+{{#if:{{{herb|}}}{{{flower|}}}||{{!}}-
+{{!}}
+*[[Allotment patch|Allotment]]
+{{!}}[[Harmony Island]]
+{{!}}
+*[[Harmony Island Teleport]]
+*[[Mos le'harmless teleport]] scroll then talk to [[Brother Tranquility]]
+*[[Ectophial]], run to [[Port Phasmatys]] docks and take a boat ride to [[Mos Le'Harmless]] via [[Bill Teach]], then talk to Brother Tranquility
+*[[Minigame teleport]] to [[Trouble Brewing]] then run west to Mos le'harmless and talk to Brother Tranquility
+{{!}}{{Map|3794,2836|rectX=3|rectY=8|mtype=rectangle|height=212|width=212|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Morytania}}
+{{!}}}}
+{{#if:{{{herb|}}}||{{!}}-
+{{!}}
+*Two [[Allotment patch|Allotment]]
+*[[Flower patch|Flower]]
+{{!}}[[Farming Guild]]<br/>''Gardener: [[Alan (Farming Guild)|Alan]]
+{{!}}
+*[[Farming cape]] teleport
+*[[Skills necklace]] to Farming Guild
+*[[Spirit tree]] if planted in Farming Guild
+*[[Lovakengj Minecart Network]] to Farming Guild
+*[[Fairy rings|Fairy ring]] code {{Fairycode|CIR}}, then run south-west
+*[[Battlefront Teleport]] to [[Battlefront]], then run west
+{{!}}{{Map|height=212|width=212|mtype=polygon|1266,3738|1274,3738|1274,3722|1259,3722|1259,3728|1266,3728|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Kourend}}
+{{!}}}}
+{{#if:{{{herb|}}}||{{!}}-
+{{!}}
+*Two [[Allotment patch|Allotment]]
+*[[Flower patch|Flower]]
+{{!}}[[Prifddinas]]<br/>''Gardener: [[Oswallt]]
+{{!}}
+*[[Spirit tree]] located north-west
+*[[Teleport crystal]] to Prifddinas
+*[[Prifddinas]] house portal: [[Teleport to House]] spell or [[scroll of redirection|redirected]] [[Teleport to house (tablet)|house tab]]
+{{!}}{{Map|3291,6100|rectX=8|rectY=12|mtype=rectangle|height=212|width=212|mapID=29|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Tirannwn}}
+{{!}}}}
+{{#if:{{{flower|}}}{{{allotment|}}}||{{!}}-
+{{!}}
+*[[Herb patch|Herb]]
+{{!}}Roof of the [[Troll Stronghold (location)|Troll Stronghold]]<br/>''Gardener: [[My Arm]] or [[Drunken Dwarf's Leg]]''
+(requires completion of [[My Arm's Big Adventure]])
+{{!}}
+*[[Stony basalt]] teleport (requires completion of [[Making Friends with My Arm]], can be accessed via a [[Portal Chamber]] or [[Portal Nexus]])
+*[[Trollheim Teleport]], then west. The agility shortcut requires {{SCP|Agility|73|link=yes}}. Otherwise, the patch can be accessed from a ladder inside the [[Troll Stronghold (location)#Map of the stronghold|Troll Stronghold]].
+*[[scroll of redirection|Redirected]] [[Teleport to house (tablet)|house tab]]
+{{!}}{{Map|2828,3696|r=3|mtype=square|height=212|width=212|group=herb}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Asgarnia}}
+{{!}}
+*Disease-free unlocked with [[My Arm's Big Adventure]].}}
+{{#if:{{{flower|}}}{{{allotment|}}}||{{!}}-
+{{!}}
+*[[Herb patch|Herb]]
+{{!}}[[Harmony Island]]
+([[Elite Morytania Diary]] required)
+{{!}}
+*[[Harmony Island Teleport]]
+*[[Mos le'harmless teleport]] scroll then talk to [[Brother Tranquility]]
+*[[Ectophial]], run to [[Port Phasmatys]] docks and take a boat ride to [[Mos Le'Harmless]] via [[Bill Teach]]. Talk to Brother Tranquility to arrive at Harmony Island
+*[[Minigame teleport]] to [[Trouble Brewing]] then run west then south to Brother Tranquility
+{{!}}{{Map|3790,2838|r=3|mtype=square|height=212|width=212|group=herb}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Morytania}}
+{{!}}
+*Disease-free unlocked with completion of the [[Elite Morytania]] Diary.}}
+{{#if:{{{flower|}}}{{{allotment|}}}||{{!}}-
+{{!}}
+*[[Herb patch|Herb]]
+{{!}}[[Weiss]]<br/>''Gardener: [[Boulder]]''
+(The [[Fire of Nourishment]] must be built)
+{{!}}
+*[[Icy basalt]] (Can be accessed via a [[Portal Chamber]] or [[Portal Nexus]])
+*[[Fairy ring]] code {{Fairycode|dks}}, then travel on [[Larry]]'s boat on the coast north-west, then run to the patch on the west side of Weiss.
+*[[Ring of shadows]] to [[Ghorrock Dungeon]] (requires completion of [[Desert Treasure II - The Fallen Empire]] and having obtained a [[frozen tablet]] from [[Duke Sucellus]])
+{{!}}{{Map|2847,3933|r=3|mtype=square|height=212|width=212|group=herb}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Fremennik}}
+{{!}}
+*Disease-free unlocked with [[Making Friends with My Arm]].}}
+{{#if:{{{flower|}}}{{{allotment|}}}||{{!}}-
+{{!}}
+*[[Herb patch|Herb]]
+{{!}}[[Farming Guild]]
+({{SCP|Farming|65|link=yes}} required)
+{{!}}
+*[[Farming cape]] teleport
+*[[Skills necklace]] to Farming Guild
+*[[Spirit tree]] planted in the Farming Guild
+*[[Lovakengj Minecart Network]] to Farming Guild
+*[[Fairy rings|Fairy ring]] code {{Fairycode|CIR}}, then run south-west
+*[[Battlefront Teleport]] to [[Battlefront]], then run west
+{{!}}{{Map|1239,3727|r=3|mtype=square|height=212|width=212|group=herb}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Kourend}}
+{{!}}
+*5% extra yield after completing the [[Hard Kourend & Kebos]] diary.}}
+{{#ifeq:{{{herb|}}}|only||{{!}}-
+{{!}}
+*Two [[Allotment patch|Allotment]]
+*[[Flower patch|Flower]]
+*[[Herb patch|Herb]]
+{{!}}[[Ortus Farm]]<br/>''Gardener: [[Harminia]]
+{{!}}
+*[[Quetzal whistle]] or [[Hunter skillcape]] teleport to the [[Hunter Guild]], then run north
+*[[Civitas illa Fortis Teleport]], then take the [[Quetzal Transport System]] teleport to the [[Hunter Guild]], then run north
+*[[Fairy rings|Fairy ring]] code {{Fairycode|AJP}}, then run north-west
+{{!}}{{Map|1586,3099|r=6|mtype=square|height=212|width=212|group=allotment}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Varlamore}}
+{{!}}
+*The herb patch becomes disease-free upon reaching Champion rank at the [[Fortis Colosseum]].}}
+{{#if:{{{herb|}}}{{{allotment|}}}||{{!}}-
+{{!}}
+*[[Flower patch|Flower]]
+{{!}}[[Kastori]]
+{{!}}
+*[[Civitas illa Fortis Teleport]], then take the [[Quetzal Transport System]] teleport to [[Kastori]]
+*[[Pendant of ates]] to Kastori, then run south
+{{!}}{{Map|1353,3023|r=3|mtype=square|height=212|width=212|group=flower}}
+{{!}}class="leagues-global-flag"{{!}}{{LeagueRegion|Varlamore}}
+{{!}}}}
+
+|}<noinclude>[[Category:Farming]]</noinclude>

@@ -1,0 +1,26 @@
+{{external|rs}}
+{{Infobox Location
+|name = Burthorpe
+|image = [[File:Burthorpe.png|300px]]
+|release = [[9 August]] [[2004]]
+|update = Death Plateau Quest
+|members = Yes
+|location = [[Asgarnia]]
+|race = [[Human]]s
+|teleport = [[Games necklace]], [[Minigame Teleport]]
+|music = [[Principality]]
+|map = {{Map|name=Burthorpe|zoom=1|x=2870|y=3544|height=170}}
+|type = settlement
+|leagueRegion = Asgarnia
+}}
+[[File:Asgarnian standard banner.png|left|100px]]
+{{Relativelocation
+|location = Burthorpe
+|north = Death Plateau (location){{!}}Death Plateau
+|west = Warriors' Guild
+|south = Taverley
+|east = Wilderness
+}}
+The '''Principality of Burthorpe''', referred to colloquially as '''Burthorpe''', is a military principality north-west of [[Falador]] and north of [[Taverley]]. It's led by [[Prince Anlaf|Crown Prince Anlaf]] and is home to the [[Burthorpe Imperial Guard]], who defend the [[Burthorpe Castle|citadel]] standing between Burthorpe and [[Trollheim]] against [[trolls]] in the ongoing [[Burthorpe–Troll Country War]].
+
+Burthorpe is one of the only locations in [[Asgarnia]] that isn't directly controlled by the [[White Knights]], who many of Burthorpe's residents believe are taking advantage of Asgarnia's [[King Vallance|King]], the father of Prince Anlaf.

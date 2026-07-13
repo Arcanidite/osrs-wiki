@@ -1,0 +1,30 @@
+{{External|rs|rsc}}
+{{Infobox NPC
+|version1 = Normal
+|version2 = Defender of Varrock
+|name = Dimintheis
+|image1 = [[File:Dimintheis.png|120px]]
+|image2 = [[File:Dimintheis (Defender of Varrock).png|120px]]
+|release1 = [[9 April]] [[2002]]
+|release2 = [[21 February]] [[2024]]
+|update1 = New members quest online!
+|update2 = Defender of Varrock
+|members1 = No
+|members2 = Yes
+|race = [[Human]]
+|quest1 = [[Family Crest]]
+|quest2 = [[Defender of Varrock]]
+|location1 = South of the [[Varrock]] east entrance, beside the fancy dress shop
+|location2 = [[Varrock Palace]]
+|gender = Male
+|options1 = Talk-to
+|options2 = Examine
+|examine = A well dressed nobleman.
+|map1 = {{Map|name=Dimintheis|x=3281|y=3404|r=4|mtype=square}}
+|map2 = No
+|id1 = 4984
+|id2 = 12629
+|leagueRegion = Misthalin
+}}
+[[File:Dimintheis chathead.png|left]]
+'''Dimintheis Fitzharmon''' is a noble of [[Varrock]]. He is featured heavily in the quest [[Family Crest]], and plays a crucial role in the quest [[Defender of Varrock]]. He is a descendant of an important Elder of [[Avarrocka]], and is the father of [[Avan]], [[Caleb]], and [[Johnathon]] Fitzharmon. His house is located south of Varrock's east gate, north of the Fancy dress shop in the fenced off area.

@@ -1,0 +1,20 @@
+{{External|rs=Air altar}}
+{{Infobox Scenery
+|name = Altar
+|image = [[File:Altar (air).png|300px]]
+|release = [[29 March]] [[2004]]
+|update = RS2 Launched!
+|members = No
+|quest = No
+|location = South of [[Falador]]
+|options = Craft-rune
+|examine = A mysterious power emanates from this shrine.
+|map = {{Map|mtype=pin|x = 2843|y = 4833|mapID=-1}}
+|id = 34760
+|leagueRegion = Asgarnia
+}}
+The '''Air Altar''' is a [[runic altar]] upon which [[air rune]]s are crafted from [[rune essence]] or [[pure essence]], providing 5 [[Runecraft]] [[experience]] per essence imbued.
+
+Players may create an [[air tiara]] here by using either an [[air talisman]] or [[tiara]] on the altar whilst having both in their inventory, granting 25 [[Runecraft]] [[experience]]. An [[elemental tiara]] can also be created here by using an [[elemental talisman]] and [[gold tiara]], granting 40 Runecraft experience.
+
+Upon entering the Air Altar, the [[music]] track [[Serene]] plays.

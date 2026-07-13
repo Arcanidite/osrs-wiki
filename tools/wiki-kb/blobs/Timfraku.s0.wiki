@@ -1,0 +1,20 @@
+{{External|rs}}
+{{Infobox NPC
+|name = Timfraku
+|image = [[File:Timfraku.png|130px]]
+|release = [[14 September]] [[2004]]
+|update = Tai Bwo Wannai Trio
+|members = Yes
+|race = [[Human]]
+|quest = [[Tai Bwo Wannai Trio]]
+|location = [[Tai Bwo Wannai]]
+|shop = Yes
+|gender = Male
+|options = Talk-to
+|examine = The imposing Chief of Tai Bwo Wannai.
+|map = {{Map|name=Timfraku|x=2783|y=3088|plane=1|r=5|mtype=square}}
+|id = 4698
+|leagueRegion = Karamja
+}}
+[[File:Timfraku chathead.png|left]]
+'''Timfraku''' is the leader of the [[Tai Bwo Wannai]] village. He has three sons, [[Tamayu]], [[Tiadeche]], and [[Tinsay]], who you must bring back to the village during the [[Tai Bwo Wannai Trio]] [[quest]]. Unlike other villagers, he does not give you [[trading sticks]] if you have favour from [[Tai Bwo Wannai Cleanup]]. He can be found up the ladder in the hut north-west of [[Tai Bwo Wannai]].

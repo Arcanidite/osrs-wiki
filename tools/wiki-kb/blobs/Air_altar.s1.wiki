@@ -1,0 +1,12 @@
+==Transportation==
+{{Map|name=Air Altar|align=left|mtype=pin|x = 2984|y = 3291|height = 275|width = 275|caption = The location of the mysterious ruins used to enter the Air Altar.}}
+The entrance to the altar can be found south of [[Falador]], north-west of the first T-junction players come across after exiting the south gate, the altar can also be accessed through the [[Abyss]]. The [[ring of the elements]] can be used to teleport to the altar.
+
+To enter the [[Mysterious ruins#Air|mysterious ruins]], players either have to use an [[air talisman]] on the ruins, or click "Enter" on the ruins while wearing an [[air tiara]]. Alternatively, an [[elemental talisman]] or [[elemental tiara|tiara]] can be used.
+
+The closest bank from there is Falador's east bank.
+
+Players who have completed the hard [[Falador Diary]] have the ability to use a [[bank chest]] in the [[Crafting Guild]]. Using the [[skills necklace]] to teleport there will provide a shorter run back to the Air Altar.
+
+Players may leave this location either by entering the [[Portal (Air Altar)|exit portal]] to return to the mysterious ruins, or by using any method of teleportation.
+{{clear|left}}

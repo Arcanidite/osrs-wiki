@@ -1,0 +1,103 @@
+{{External|rs|rsc|dw=Smithing Anvil}}
+{{Infobox Scenery
+|version1 = Regular
+|version2 = Doric's
+|version3 = Rellekka
+|version4 = Keldagrim
+|version5 = Dorgesh-Kaan
+|version6 = Lovakengj
+|version7 = Myths' Guild
+|version8 = Dragon forge
+|version9 = Ancient Prison
+|version10 = Cam Torum
+|name = Anvil
+|image1 = [[File:Anvil.png|200px]]
+|image2 = [[File:Anvil (Doric).png|200px]]
+|image3 = [[File:Anvil (Rellekka).png|200px]]
+|image4 = [[File:Anvil (Keldagrim).png|200px]]
+|image5 = [[File:Anvil (Dorgesh-Kaan).png|200px]]
+|image6 = [[File:Anvil (Lovakengj).png|200px]]
+|image7 = [[File:Anvil (Myths' Guild).png|200px]]
+|image8 = [[File:Anvil (Dragon forge).png|200px]]
+|image9 = [[File:Anvil (Lovakengj).png|200px]]
+|image10 = [[File:Anvil (Cam Torum).png|200px]]
+|release1 = [[4 January]] [[2001]]
+|release2 = [[6 April]] [[2001]]
+|release3 = [[2 November]] [[2004]]
+|release4 = [[31 May]] [[2005]]
+|release5 = [[20 March]] [[2007]]
+|release6 = [[7 January]] [[2016]]
+|release7 = [[4 January]] [[2018]]
+|release8 = [[4 January]] [[2018]]
+|release9 = [[5 January]] [[2022]]
+|release10 = [[20 March]] [[2024]]
+|update1 = Runescape beta is now online!
+|update2 = Massive update!
+|update3 = The Fremennik Trials
+|update4 = Keldagrim - The Dwarven City
+|update5 = Dorgesh-Kaan
+|update6 = Zeah: Great Kourend
+|update7 = Dragon Slayer II
+|update8 = Dragon Slayer II
+|update9 = Nex: The Fifth General
+|update10 = Varlamore: Part One
+|members1 = No
+|members2 = Yes
+|members3 = Yes
+|members4 = Yes
+|members5 = Yes
+|members6 = Yes
+|members7 = Yes
+|members8 = Yes
+|members9 = Yes
+|members10 = Yes
+|quest1 = No
+|quest2 = [[Doric's Quest]]
+|quest3 = No
+|quest4 = No
+|quest5 = No
+|quest6 = No
+|quest7 = No
+|quest8 = Yes
+|quest9 = No
+|quest10 = No
+|location1 = ''See below''
+|location2 = [[Doric's hut]], north of [[Falador]]
+|location3 = [[Rellekka]]
+|location4 = [[Keldagrim]] and the [[Blast Furnace]]
+|location5 = South [[Dorgesh-Kaan]]
+|location6 = [[Lovakengj]]
+|location7 = [[Myths' Guild]]
+|location8 = [[Ancient Cavern]]
+|location9 = [[Ancient Prison]]
+|location10 = [[Cam Torum]]
+|options = Smith
+|examine1 = Used for fashioning metal items.
+|examine2 = It says 'Property of Doric the dwarf' on the side.
+|examine3 = Used for fashioning metal items.
+|examine4 = Useful for making weapons.
+|examine5 = Three anvils in one.
+|examine6 = An immensely solid anvil.
+|examine7 = Three anvils in one.
+|examine8 = An ancient metallic anvil, completely undamaged or corroded despite its age.
+|examine9 = An immensely solid anvil.
+|examine10 = Used for fashioning metal items.
+|map = no
+|id1 = 2097,39242
+|id2 = 2031
+|id3 = 4306
+|id4 = 6150
+|id5 = 22725
+|id6 = 28563
+|id7 = 31623
+|id8 = 32215, 32216
+|id9 = 28563
+|id10 = 51501
+}}
+An '''anvil''' is used to smith items through the [[Smithing]] [[skill]]. An anvil can be used to smith items by click on an anvil or using a [[bar]] on it while the player has a [[hammer]] in their [[inventory]] or is wielding an [[Imcando hammer]]. Upon interaction, a selection screen will come up allowing the player to choose an item to make. Multiple players can use the same anvil simultaneously.
+
+There are several anvils located around [[Gielinor]] which are identified with an anvil [[File:Anvil icon.png]] [[icon]] on the [[minimap]] and [[world map]]. 
+
+The most convenient anvil may be that in western [[Varrock]], since it is directly opposite a [[bank]] and close to the [[Grand Exchange]]. Players who have completed [[Song of the Elves]] can use the anvil in [[Prifddinas]] near the south-eastern bank, and it is the closest to a [[bank]] and a [[furnace]].
+
+There are several unusual types of anvils. Included among these are the experimental anvil that players use in [[The Tourist Trap]] to help make a prototype dart and the [[barbarian anvil]] in [[Otto's Grotto]], used to smith [[spear]]s and [[hasta]]e. Additionally, the [[rusted anvil]] in [[Lumbridge]] allows players to smith only [[bronze]] items.

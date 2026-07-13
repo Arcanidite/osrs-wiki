@@ -1,0 +1,380 @@
+===Normal anvils===
+{| class="wikitable sortable"
+!Anvil location
+!data-sort-type="number"|Distance from bank
+!Members
+!Notes
+!class="leagues-global-flag" | [[Raging Echoes League|League region]]
+!style="min-width: 7em;" | Map 
+|-
+|South-Eastern [[Prifddinas]]
+|8 (2.4 seconds)
+|{{Members|yes}}
+|Closest anvil to a bank, usable after completing {{SCP|quest|[[Song of the Elves]]}}. Directly adjacent to a furnace, making it the closest anvil to a furnace.
+|class="leagues-global-flag"|{{LeagueRegion|Tirannwn}}
+|{{Map|name=Anvil|mapID=29|plane=0|x:3287,y:6055|x:3285,y:6054|x:3288,y:6053|mtype=pin|type=maplink}}
+|-
+|[[Charred Island]]
+|9 (3 seconds)
+|{{Members|yes}}
+|Requires {{SCP|Sailing|60|link=yes}} and {{SCP|Construction|43|link=yes}} for building the anvil. Optionally requires {{SCP|Construction|70|link=yes}} for building the [[Bank chest (amenity)|bank chest]].
+|class="leagues-global-flag"|{{LeagueRegion|NA}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2645,y:2392|mtype=pin|type=maplink}}
+|-
+|Western [[Varrock]]
+|10 (3 seconds)
+|{{Members|no}}
+|Close to a bank.
+|class="leagues-global-flag"|{{LeagueRegion|Misthalin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3246,y:3404|x:3248,y:3404|x:3188,y:3426|x:3188,y:3424|x:3188,y:3421|x:3228,y:3436|x:3228,y:3434|mtype=pin|type=maplink}}
+|-
+|[[Fortis Colosseum]]
+|11 (3.6 seconds)
+|{{Members|yes}}
+|Requires 2000 Glory in the Colosseum for bank access.
+|class="leagues-global-flag"|{{LeagueRegion|Varlamore}}
+|{{Map|name=Anvil|mapID=-1|plane=0|x:1801,y:9489|x:1805,y:9501|mtype=pin|type=maplink}}
+|-
+|[[Port Khazard]]
+|12 (3.6 seconds)
+|{{Members|yes}}
+|Just west of the [[Fishing Trawler]] [[minigame]].
+|class="leagues-global-flag"|{{LeagueRegion|Kandarin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2652,y:3164|x:2650,y:3164|x:2652,y:3166|mtype=pin|type=maplink}}
+|-
+|[[The Summer Shore]]
+|12 (3.6 seconds)
+|{{Members|yes}}
+|Requires {{SCP|Sailing|45|link=yes}}.<br>North of the bank on [[The Summer Shore]] located on [[The Great Conch]]. This anvil is also next to a furnace.
+|class="leagues-global-flag"|{{LeagueRegion|NA}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3178,y:2427|mtype=pin|type=maplink}}
+|-
+|[[Deepfin Point]]
+|14 (4.2 seconds)
+|{{Members|yes}}
+|Requires {{SCP|Sailing|67|link=yes}} to access. This anvil is also 6 tiles away from a furnace.
+|class="leagues-global-flag"|{{LeagueRegion|NA}}
+|{{Map|x:1949,y:2761|mapID=-1|mtype=pin|name=Anvil|plane=0|type=maplink}}
+|-
+|[[Void Knights' Outpost]]
+|15 (4.8 seconds)
+|{{Members|yes}}
+|West of the bank.
+|class="leagues-global-flag"|{{LeagueRegion|Asgarnia}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2652,y:2658|x:2650,y:2658|mtype=pin|type=maplink}}
+|-
+|[[Yanille]]
+|16 (4.8 seconds)
+|{{Members|yes}}
+|Just south of the bank; also near the [[Wizards' Guild]].
+|class="leagues-global-flag"|{{LeagueRegion|Kandarin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2613,y:3081|x:2616,y:3081|x:2613,y:3078|mtype=pin|type=maplink}}
+|-
+|[[Auburnvale]]
+|17 (5.4 seconds)
+|{{Members|yes}}
+|In [[Lunami's Axe Shop]] south west of the bank.
+|class="leagues-global-flag"|{{LeagueRegion|Varlamore}}
+|{{Map|type=maplink|mtype=pin|x=1403|y=3341|zoom=3}}
+|-
+|[[Blast Furnace]]
+|20 (6 seconds)
+|{{Members|yes}}
+|Requires {{SCP|Smithing|60|link=yes}}.
+|class="leagues-global-flag"|{{LeagueRegion|Fremennik}}
+|{{Map|name=Anvil|mapID=10022|plane=0|x:1938,y:4971|x:1940,y:4971|x:1942,y:4971|mtype=pin|type=maplink}}
+|-
+|[[Ruins of Camdozaal]]
+|22 (6.6 seconds)
+|{{Members|no}}
+|Two anvils near [[Ramarno]], close to a bank chest and directly north of the entrance to the [[Ruins of Camdozaal]].
+|class="leagues-global-flag"|{{LeagueRegion|Asgarnia}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2960,y:5803|x:2955,y:5802|mtype=pin|type=maplink}}
+|-
+|[[Jatizso]]
+|25 (7.8 seconds)
+|{{Members|yes}}
+|North of the [[Armour Shop (Jatizso)|platebody shop]]. Requires {{SCP|quest|[[The Fremennik Trials]]}}.
+|class="leagues-global-flag"|{{LeagueRegion|Fremennik}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2397,y:3805|x:2394,y:3796|mtype=pin|type=maplink}}
+|-
+|[[Cam Torum]]
+|27 (8.4 seconds)
+|{{Members|yes}}
+|In the [[Blacksmith (Cam Torum)|Blacksmith's]] [[Cam Torum Blacksmith|shop]], which also contains a furnace.
+|class="leagues-global-flag"|{{LeagueRegion|Varlamore}}
+|{{Map|name=Anvil|mapID=-1|plane=1|x:1446,y:9582|x:1446,y:9586|mtype=pin|type=maplink}}
+|-
+|[[Keldagrim]]
+|28 (8.4 seconds)
+|{{Members|yes}}
+|Several anvils in Keldagrim: one by the bank, one by the general store, and three by the [[Blast Furnace]].
+|class="leagues-global-flag"|{{LeagueRegion|Fremennik}}
+|{{Map|name=Anvil|mapID=10|plane=0|x:2828,y:10201|x:2869,y:10202|mtype=pin|type=maplink}}
+|-
+|[[Mistrock]]
+|28 (8.4 seconds)
+|{{Members|yes}}
+|In [[Mistrock Mining Supplies]].
+|class="leagues-global-flag"|{{LeagueRegion|Varlamore}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:1401,y:2863|mtype=pin|type=maplink}}
+|-
+|[[Tal Teklan]]
+|30 (9 seconds)
+|{{Members|yes}}
+|Just outside the [[Blacksmith (Tal_Teklan)|blacksmith's]].
+|class="leagues-global-flag"|{{LeagueRegion|Varlamore}}
+|{{Map|type=maplink|mtype=pin|x=1214|y=3110|zoom=3}}
+|-
+|[[Seers' Village]]
+|31 (9.6 seconds)
+|{{Members|yes}}
+|West of the bank.
+|class="leagues-global-flag"|{{LeagueRegion|Kandarin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2713,y:3492|x:2712,y:3495|x:2714,y:3495|mtype=pin|type=maplink}}
+|-
+|Central [[Varrock]]
+|31 (9.6 seconds)
+|{{Members|no}}
+|Two anvils in [[Horvik]]'s shop.
+|class="leagues-global-flag"|{{LeagueRegion|Misthalin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3246,y:3404|x:3248,y:3404|x:3188,y:3426|x:3188,y:3424|x:3188,y:3421|x:3228,y:3436|x:3228,y:3434|mtype=pin|type=maplink}}
+|-
+|[[Ancient Prison]]
+|32 (9.6 seconds)
+|{{Members|yes}}
+|Zaros protection is highly recommended. The bank requires Zaros essense or [[ecumenical key]]s to access.
+|class="leagues-global-flag"|{{LeagueRegion|Asgarnia}}
+|{{Map|name=Anvil|mapID=-1|plane=0|x:2881,y:5223|mtype=pin|type=maplink}}
+|-
+|[[Kourend Castle]]
+|33 (10.2 seconds)
+|{{Members|yes}}
+|South-west tower on the {{FloorNumber|uk=0}}.
+|class="leagues-global-flag"|{{LeagueRegion|Kourend}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:1596,y:3664|mtype=pin|type=maplink}}
+|-
+|[[Myths' Guild]]
+|33 (10.2 seconds)
+|{{Members|yes}}
+|On the {{FloorNumber|uk=2}}. Requires {{SCP|quest|[[Dragon Slayer II]]}}.
+|class="leagues-global-flag"|{{LeagueRegion|Kandarin}}
+|{{Map|name=Anvil|mapID=0|plane=2|x:2464,y:2848|mtype=pin|type=maplink}}
+|-
+|[[Shipyard]]
+|34 (10.2 seconds): Deepfin Point Bank Chest 
+|{{Members|yes}}
+|No nearby mine
+|class="leagues-global-flag"|{{LeagueRegion|NA}}
+|{{Map|2066,2719|type=maplink|mtype=pin}}
+|-
+|Eastern [[Varrock]]
+|35 (10.8 seconds)
+|{{Members|no}}
+|Two anvils just south of the bank on the west side.
+|class="leagues-global-flag"|{{LeagueRegion|Misthalin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3246,y:3404|x:3248,y:3404|x:3188,y:3426|x:3188,y:3424|x:3188,y:3421|x:3228,y:3436|x:3228,y:3434|mtype=pin|type=maplink}}
+|-
+|[[Wilderness]]
+|41 (12.6 seconds)
+|{{Members|yes}}
+|West of the [[Mage Arena]].
+|class="leagues-global-flag"|{{LeagueRegion|Wilderness}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3062,y:3952|mtype=pin|type=maplink}}
+|-
+|[[Nardah]]
+|45 (13.8 seconds)
+|{{Members|yes}}
+|In the [[Seddu's Adventurer's Store.|platelegs shop]].
+|class="leagues-global-flag"|{{LeagueRegion|Desert}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3409,y:2921|mtype=pin|type=maplink}}
+|-
+|[[Buccaneers' Haven]]
+|47 (14.4 seconds)
+|{{Members|yes}}
+|Requires {{SCP|Sailing|76|link=yes}} and {{SCP|Construction|43|link=yes}} for building the anvil.<br>Optionally, requires {{SCP|Construction|56|link=yes}} for building a furnace and {{SCP|Construction|70|link=yes}} for building the [[Bank chest (amenity)|bank chest]].
+|class="leagues-global-flag"|{{LeagueRegion|NA}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2645,y:2392|mtype=pin|type=maplink}}
+|-
+|[[Lovakengj]]
+|52 (15.6 seconds): Blast Mining Bank<br/>94 (28.2 seconds): Lovakengj Bank
+|{{Members|yes}}
+|North-west of prayer altar.
+|class="leagues-global-flag"|{{LeagueRegion|Kourend}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:1529,y:3832|x:1530,y:3829|x:1527,y:3829|mtype=pin|type=maplink}}
+|-
+|[[Giants' Plateau]]
+|57 (17.4 seconds): [[Giants' Foundry]] bank{{(m)}}<br/>150 (45 seconds): [[Al Kharid]] bank
+|{{Members|no}}
+|East of Al Kharid, west of [[Citharede Abbey]].
+|class="leagues-global-flag"|{{LeagueRegion|Desert}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3360,y:3155|mtype=pin|type=maplink}}
+|-
+|[[Burthorpe]]
+|71 (21.6 seconds)
+|{{Members|yes}}
+|In the north-east corner.
+|class="leagues-global-flag"|{{LeagueRegion|Asgarnia}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2918,y:3573|mtype=pin|type=maplink}}
+|-
+|[[Mudskipper Point]]
+|72 (~24.6 seconds<ref>The teleport animation on [[fairy rings]] takes approximately 3 seconds to complete</ref>): Zanaris via the [[fairy ring]]
+182 (~54.6 seconds): Draynor via [[Underwall tunnel (Draynor Village)|shortcut]]
+216 (65.8 seconds): Draynor without the shortcut
+|{{Members|no}}
+|South of [[Port Sarim]], near [[Thurgo]], though there is little reason to smith here. Close to a [[fairy ring]] ({{Fairycode|aiq}}).
+| class="leagues-global-flag" |{{LeagueRegion|Asgarnia}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2999,y:3144|mtype=pin|type=maplink}}
+|-
+|[[Hemenster]]
+|73 (22.2 seconds): Fishing Guild<br />86 (25.8 seconds): Ardougne North
+|{{Members|yes}}
+|West of the [[Ranging Guild]].
+| class="leagues-global-flag" |{{LeagueRegion|Kandarin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2639,y:3420|x:2637,y:3418|x:2635,y:3416|mtype=pin|type=maplink}}
+|-
+|[[Draynor Village]]
+|74 (22.2 seconds) either way
+|{{Members|no}}
+|In the [[Draynor Sewers|sewer dungeon]], where [[Zombie (common)|zombies]] and [[skeleton]]s lurk.
+| class="leagues-global-flag" |{{LeagueRegion|Misthalin}}
+|{{Map|name=Anvil|mapID=12|plane=0|x:3112,y:9689|mtype=pin|type=maplink}}
+|-
+|[[Outer Fortis]]
+|87 (26.4 seconds)
+|{{Members|yes}}
+|In [[Spike]]'s [[Spike's Spikes|shop]].
+| class="leagues-global-flag" |{{LeagueRegion|Varlamore}}
+|{{Map|name=Anvil|mapID=-1|plane=0|x:1778,y:3057|x:1778,y:3060|mtype=pin|type=maplink}}
+|-
+|[[Isle of Souls]]
+|89 (27 seconds)
+|{{Members|yes}}
+|In the southern part of the island.
+| class="leagues-global-flag" |{{LeagueRegion|Misthalin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2218,y:2784|mtype=pin|type=maplink}}
+|-
+|[[Dwarven Mine]]
+|90 (~27 seconds): [[MLM]] bank, with the shortcut
+106 (~31.8 seconds): with the <span style="white-space:nowrap;">[[Narrow crevice (Dwarven Mine)|Agility shortcut]]({{SCP|Agility|42}})</span>
+143 (43.2 seconds): F2P
+|{{Members|no}}
+|A [[Disk of returning]] can be used to reach them quickly. [[Superheat Item]] may be useful if mining the ores nearby, as the closest furnace is in Falador from the south entrance.
+| class="leagues-global-flag" |{{LeagueRegion|Asgarnia}}
+|{{Map|name=Anvil|mapID=6|plane=0|x:3012,y:9814|x:3012,y:9811|mtype=pin|type=maplink}}
+|-
+|Wilderness [[Resource Area]]
+|91 (27.6 seconds): Edgeville bank<br />107 (32.4 seconds): Mage arena
+|{{Members|yes}}
+|Very close to minable rocks and a furnace. [[Piles]] can turn items to banknotes for a fee, possibly replacing the need for banking.
+| class="leagues-global-flag" |{{LeagueRegion|Wilderness}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3190,y:3938|mtype=pin|type=maplink}}
+|-
+|[[Falador]]
+|93 (28.2 seconds)
+|{{Members|no}}
+|In [[Doric's hut]] to the north, a fair walk away, and you must have completed {{SCP|quest|[[Doric's Quest]]}} to use them.
+| class="leagues-global-flag" |{{LeagueRegion|Asgarnia}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2950,y:3452|x:2950,y:3451|mtype=pin|type=maplink}}
+|-
+|[[Miscellania]]
+|95 (28.8 seconds)
+|{{Members|yes}}
+|Next to the coal mine (although coal will automatically be given to the people of [[Miscellania]]).
+| class="leagues-global-flag" |{{LeagueRegion|Fremennik}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2551,y:3898|mtype=pin|type=maplink}}
+|-
+|[[Dorgesh-Kaan]]
+|96 (28.8 seconds)
+|{{Members|yes}}
+|No nearby mine.
+| class="leagues-global-flag" |{{LeagueRegion|Misthalin}}
+|{{Map|name=Anvil|mapID=5|plane=0|x:2710,y:5273|mtype=pin|type=maplink}}
+|-
+|[[Rellekka]]
+|99 (30 seconds): Jatizso<br />107 (32.4 seconds): Neitiznot
+|{{Members|yes}}
+|In the south-west corner there are 3. Second-closest anvil to a furnace at 2 squares away.
+| class="leagues-global-flag" |{{LeagueRegion|Fremennik}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2620,y:3665|x:2620,y:3663|x:2620,y:3661|mtype=pin|type=maplink}}
+|-
+|[[The Warrens]]
+|108 (32.4 seconds)
+|{{Members|yes}}
+|North-west room.
+| class="leagues-global-flag" |{{LeagueRegion|Kourend}}
+|{{Map|name=Anvil|mapID=-1|plane=0|x:1766,y:10158|mtype=pin|type=maplink}}
+|-
+|[[Corsair Cove Dungeon]]
+|119 (36 seconds): Myths' guild bank
+153 (46.2 seconds): Corsair Cove bank
+|{{Members|no}}
+|The dungeon contains coal, mithril, adamantite, and runite rocks.
+| class="leagues-global-flag" |{{LeagueRegion|Kandarin}}
+|{{Map|name=Anvil|mapID=31|plane=0|x:1962,y:9072|mtype=pin|type=maplink}}
+|-
+|[[Darkmeyer]]
+|134 (40.2 seconds)
+|{{Members|yes}}
+|Western part of the city, quite far from bank. Requires [[Vyre noble clothing]] to use safely.
+| class="leagues-global-flag" |{{LeagueRegion|Morytania}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3664,y:3363|x:3664,y:3361|x:3666,y:3363|x:3666,y:3361|mtype=pin|type=maplink}}
+|-
+|[[Lovakengj]]
+|147 (44.4 seconds)
+|{{Members|yes}}
+|South-east of [[The Forsaken Tower (location)|the Forsaken Tower]] path.
+| class="leagues-global-flag" |{{LeagueRegion|Kourend}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:1402,y:3755|x:1400,y:3758|mtype=pin|type=maplink}}
+|-
+|[[Wilderness]]
+|154 (46.2 seconds): [[Ferox Enclave]]
+|{{Members|no}}
+|In the [[Western Ruins]], at level 23 [[Wilderness]]. May be useful to smith bars made at [[Eastern Ruins]] furnace and make room for some more ores from the [[Bandit Camp Mine]].
+| class="leagues-global-flag" |{{LeagueRegion|Wilderness}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2991,y:3689|mtype=pin|type=maplink}}
+|-
+|[[Lassar Undercity]]
+|158 (47.4 seconds)
+|{{Members|yes}}
+|In the Science District house with the two furnaces. Does not have minimap icon.
+| class="leagues-global-flag" |{{LeagueRegion|Asgarnia}}
+|{{Map|name=Anvil|mapID=-1|plane=0|x:2615,y:6366|mtype=pin|type=maplink}}
+|-
+|[[West Ardougne]]
+|168 (~50.4 seconds): East Ardougne with <span style="white-space:nowrap;">[[Log balance (East Ardougne)|shortcut]] ({{SCP|Agility|33|link=yes}})</span>
+197 (59.4 seconds): without shortcut
+|{{Members|yes}}
+|In a building along the north wall.
+| class="leagues-global-flag" |{{LeagueRegion|Kandarin}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2501,y:3330|x:2499,y:3332|mtype=pin|type=maplink}}
+|-
+|[[Slepe]]
+|200 (60 seconds): [[Ver Sinhaza]] bank
+|{{Members|yes}}
+|No nearby mine.
+|class="leagues-global-flag"|{{LeagueRegion|Morytania}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3754,y:3318|x:3754,y:3320|mtype=pin|type=maplink}}
+|-
+|[[Ruins of Ullek]]
+|220 (66 seconds): Sophanem bank<br/>236: Nardah bank
+|{{Members|yes}}
+|In the middle of the Ruins of Ullek.
+|class="leagues-global-flag"|{{LeagueRegion|Desert}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:3406,y:2834|mtype=pin|type=maplink}}
+|-
+|[[Underground Pass (dungeon)|Underground Pass]]
+|284 (~85.2 seconds): East Ardougne with <span style="white-space:nowrap;">[[Log balance (East Ardougne)|shortcut]] ({{SCP|Agility|33|link=yes}})</span>
+316 (94.8 seconds): without shortcut
+|{{Members|yes}}
+|In the south-west corner in one of the houses near [[Niloof]], [[Klank]] and [[Kamen]].
+|class="leagues-global-flag"|{{LeagueRegion|Kandarin}}
+|{{Map|name=Anvil|mapID=-1|plane=0|x:2441,y:6086|mtype=pin|type=maplink}}
+|-
+|[[Karamja]]
+|304 (91.2 seconds): Shilo Village
+|{{Members|yes}}
+|North of [[Tai Bwo Wannai]].
+|class="leagues-global-flag"|{{LeagueRegion|Karamja}}
+|{{Map|name=Anvil|mapID=0|plane=0|x:2790,y:3101|mtype=pin|type=maplink}}
+|}

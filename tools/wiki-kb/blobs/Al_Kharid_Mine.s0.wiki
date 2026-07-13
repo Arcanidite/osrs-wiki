@@ -1,0 +1,21 @@
+{{External|rsc=Al-Kharid mine|rs}}
+{{Infobox Location
+|name = Al Kharid mine
+|image = [[File:Al Kharid mine.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|location = North of [[Al Kharid]] ([[Kharidian Desert]])
+|race = [[Scorpion]]s
+|map = {{Map|name=Al Kharid mine|x=3298|y=3293|height=310|zoom=2}}
+|type = mine
+|leagueRegion = Desert
+}}
+{{Listen 
+|title = Arabian 2
+|desc = The music which plays when inside the mine
+|filename = Arabian 2.ogg
+}}
+The '''Al Kharid mine''' (also called '''Scorpion mine''') is a [[Mining]] area located just north of the desert city of [[Al Kharid]].
+
+The mine is advantageous because it is near a [[bank]] and a [[furnace]] and is located in a very low-risk location for its high-value infrequent rocks, such as [[Gold rocks|gold]], [[Mithril rocks|mithril]], and [[Adamantite rocks|adamantite]]. In addition, this [[List of mines|mine]] is one of many where three iron rocks can be mined without moving, thus ideal for [[Iron rocks#Power-mining Locations|power-mining]].

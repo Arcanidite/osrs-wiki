@@ -1,0 +1,14 @@
+{{otheruses|the quest|the player-owned house painted armour|Heraldic crest|the Treasure Trails reward|Heraldic armour (Treasure Trails)}}
+{{External|rs|rsc}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Family Crest
+|number = 24
+|image = [[File:Family Crest.png|300px]]
+|release = [[9 April]] [[2002]]
+|update = New members quest online!
+|members = Yes
+|series = None
+|developer = [[Paul Gower]]
+}}
+'''Family Crest''' is a quest in which the player must retrieve three family crest pieces from the Fitzharmon brothers and return the crest to their father.

@@ -1,0 +1,24 @@
+{{External|rs|rsc=Curator}}
+{{Otheruses|the Curator of the [[Varrock Museum]]|the Curator of the [[Grand Museum]]|Curator Herminius}}
+{{Infobox NPC
+|name = Curator Haig Halen
+|image = [[File:Curator Haig Halen.png|120px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|race = [[Human]]
+|quest = [[The Golem]]<br/>[[Shield of Arrav]]<br/>[[The Dig Site]]<br/>[[Bone Voyage]]<br/>[[Ethically Acquired Antiquities]]
+|location = [[Varrock Museum]]
+|gender = Male
+|options = Talk-to, Pickpocket
+|examine = Curator of the museum.
+|map = {{Map|name=Curator Haig Halen|3260,3451|mtype=square|r=3}}
+|id = 5214
+|leagueRegion = Misthalin
+}}
+[[File:Curator Haig Halen chathead.png|left]]
+'''Haig Halen''' is the Curator of the [[Varrock Museum]]. He can be found on the ground floor. When asked about treasure, he'll tell the player that the museum is "full of treasures" and that anything the museum found took some time to acquire. You can trade him 250 cut [[Ruby|rubies]], 100 [[cosmic rune]]s, 500 [[fire rune]]s and a [[Digsite pendant]] for a [[curator's medallion]].
+
+You may speak to him after gaining 50 [[Kudos]] to complete an [[Varrock Diary#Easy|easy achievement diary task]]. He is also overseeing the construction of the [[Canal barge|barge]], which requires 100 [[Kudos]] to [[Bone Voyage|assist with]].
+
+[[Kudos#Salvaging_relics|Relics]] obtained from [[shipwreck salvaging]] can be given to him in exchange for 1 Kudos and an [[antique lamp (salvaging)|antique lamp]]. After turning in all eight relics, he will start saying various lines similar to those found inscribed on the relics, though it is unclear if he is being possessed by something, or if the player is hallucinating what he is saying, as he does not remember saying anything unusual himself.

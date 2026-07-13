@@ -1,0 +1,21 @@
+{{External|rsc|rs}}
+{{Otheruses|the city|the music track|Al Kharid (music track)}}
+{{Infobox Location
+|name = Al Kharid
+|image = [[File:Al Kharid.png]]
+|release = [[19 January]] [[2001]]<ref>[http://web.archive.org/web/20010303014542/http://www.tip.it/runescape/oldnews.htm Tip.it "More news about Update !!!"]</ref>
+|update = Newsletter 1
+|members = No
+|location = [[Kharidian Desert]]
+|race = [[Human]]s
+|teleport = {{*}} [[Amulet of glory]]<br/>{{*}} [[Ring of dueling]] ([[Emir's Arena]])
+|music = * [[Al Kharid (music track)|Al Kharid]]
+* [[Arabian]]
+* [[Arabian 2]]
+|map = {{Map|name=Al Kharid|x=3290|y=3185|height=300|width=300|zoom=2}}
+|type = settlement
+|leagueRegion = Desert
+}}
+'''Al Kharid''' is a large city in the north of the [[Kharidian Desert]], and the only desert city open to [[Free-to-play|non-members]]. Players in the city do not suffer from the [[Desert heat|desert effect]]. 
+
+Al Kharid is popular among free-to-play players because it contains one of the closest [[Al Kharid bank|banks]] to a [[range]] and to a furnace, two reasonably close [[fishing spots]], and a [[tanner]], [[Ellis]]. Also popular is the nearby [[Al Kharid mine|mining site]], which contains almost all ores up to and including [[Adamantite ore|adamant]].

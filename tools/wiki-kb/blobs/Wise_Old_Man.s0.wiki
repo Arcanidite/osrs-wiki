@@ -1,0 +1,75 @@
+{{External|rs|dw}}
+{{Infobox NPC
+|version1 = Normal
+|version2 = Poor
+|version3 = Dragon Slayer II
+|version4 = Young
+|name1 = Wise Old Man
+|name2 = Wise Old Man
+|name3 = Wise Old Man
+|name4 = Wise Young Man
+|image1 = [[File:Wise Old Man.png|130px]]
+|image2 = [[File:Wise Old Man (mortarboard).png|130px]]
+|image3 = [[File:Wise Old Man (DS2).png|130px]]
+|image4 = [[File:Wise Young Man.png|130px]]
+|release1 = [[6 June]] [[2005]]
+|release2 = [[6 June]] [[2005]]
+|release3 = [[4 January]] [[2018]]
+|release4 = [[6 September]] [[2018]]
+|update1 = Seeds, Bankspace And Advisors
+|update2 = Seeds, Bankspace And Advisors
+|update3 = Dragon Slayer II
+|update4 = Making Friends With My Arm, Deadman Autumn Finals and Full Mobile Launch
+|aka = Dionysius, Deesus{{CiteText|author=Herman Caranos|text=Herman's book|quote=One tribe, now disbanded, used to tell of a strange mystical warrior named 'Deesus'- surely a corruption of 'Dionysius'-who helped defend their camp from the monsters that roam the northern lands.}}, WOM
+|level = 144
+|members1 = No
+|members2 = No
+|members3 = Yes
+|members4 = Yes
+|race = [[Human]]
+|quest1 = {{*}} [[Swan Song]]<br/>{{*}} [[Dragon Slayer II]]<br/>{{*}} [[Recipe For Disaster]]<br/>{{*}} [[Making Friends with My Arm]]<br/>{{*}} [[Garden of Tranquillity]]
+|quest2 = [[Swan Song]]
+|quest3 = [[Dragon Slayer II]]
+|quest4 = [[Making Friends with My Arm]]
+|location1 = [[Draynor Village]]
+|location2 = [[Draynor Village]]
+|location3 = [[Northern Ocean]]
+|location4 = N/A
+|shop1 = [[Quest point cape]]
+|shop2 = No
+|shop3 = No
+|shop4 = No
+|gender = Male
+|options = Talk-to
+|examine1 = A venerable and rich sage.
+|examine2 = A venerable sage.
+|examine3 = A venerable and rich sage.
+|examine4 = Maybe not all that wise yet, but pretty smart.
+|map1 = {{Map|name=Wise Old Man|x=3089|y=3254|mtype=pin}}
+|map2 = No
+|map3 = No
+|map4 = No
+|id1 = 2108,2112,2113,4306,4307,8052,8407,8409
+|id2 = 2110,2111
+|id3 = 8154,8162,8170
+|id4 = 8410
+|leagueRegion1 = Misthalin
+|leagueRegion2 = Misthalin
+|leagueRegion3 = Fremennik
+|leagueRegion4 = Fremennik
+}}
+{{Synced switch
+|version1 = [[File:Wise Old Man chathead.png|left]]
+|version2 = [[File:Wise Old Man (mortarboard) chathead.png|left]]
+|version3 = [[File:Wise Old Man chathead.png|left]]
+|version4 = [[File:Wise Young Man chathead.png|left]]
+}}
+'''Dionysius''', also known as the '''Wise Old Man''', is a legendary and very powerful [[Saradominist]] wizard and former adventurer, currently residing in [[Draynor Village]]. He is infamous for the [[Draynor bank robbery]]. He wears light brown robes, a regular [[blue cape]], [[partyhat & specs]], and wields a short [[staff]].
+
+When asked, he tells the player about his feats throughout [[Gielinor]], and recognises players' own accomplishments &ndash; he sells the [[quest point cape]] and the [[quest point hood]] for 99,000 [[coins]] once all [[quest]]s have been completed, a total of {{Globals|quest points}} [[Quest points]].
+
+He also offers a service to remove quest items or "junk" from the bank. Players can enter their bank pin to access the "[[Wise Old Man's Recycling Centre]]" showing unusable or otherwise worthless items, mostly from completed quests, which can all be removed from the bank at once.
+
+Lastly, if the player asks "Is there anything I can do for you?" he can assign [[Wise Old Man tasks|various tasks]] on [[members]]' worlds, in exchange for small rewards and experience. 
+
+Being an iconic character, he has featured in various [[holiday events]], some as minor cameos, and others with more significant roles, like the [[2017 Christmas event]] in which he took over for [[Santa]] that year.

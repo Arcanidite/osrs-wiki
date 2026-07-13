@@ -1,0 +1,18 @@
+{{External|rs}}
+{{Infobox NPC
+|name = Orlando Smith
+|image = [[File:Orlando Smith.png|111px]]
+|release = [[29 May]] [[2007]]
+|update = Varrock's New Look
+|members = Yes
+|race = [[Human]]
+|location = [[Varrock Museum]]
+|gender = Male
+|options = Talk-to
+|examine = Looks very young.
+|map = {{Map|x=1759|y=4956|r=3|mapID=-1|mtype=square}}
+|id = 6001
+|leagueRegion = Misthalin
+}}
+[[File:Orlando Smith chathead.png|left]]
+'''Orlando Smith''' is a natural historian found on the basement floor of the [[Varrock Museum]]. He runs the [[Natural history quiz]] there, in which he asks players to go around and look at the plaques on all of the museum exhibits, testing their knowledge of the creatures of [[Gielinor]]. He will reward players who finish the quiz with museum [[kudos]] and 1,000 [[Slayer]] and [[Hunter]] [[experience]]. Once a player has 153 kudos, they may speak to him to complete a step in the [[Hard Varrock Diary]].
