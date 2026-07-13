@@ -42,6 +42,12 @@ Read the ones your domain touches; when in doubt read more, not fewer.
   machinery training/quest enrichment must reuse (never hand-edit fixtures).
 - **Opportunistic weave:** `design/OPPORTUNISTIC_GRANULARITY.md`; **consolidation:**
   `design/CHAIN_CONSOLIDATION.md`, `design/CONSOLIDATION.md`.
+- **Meta exemplars (external — STRUCTURE + research-priority ONLY, NOT citable):**
+  `design/META_EXEMPLARS.md` — macroefficient-ironman goal-variants (well-rounded-maxing /
+  CG-rush / UIM as lenses over one spine) + a wiki-research priority queue for
+  moneymakers/afk/PvM/CG. HARD BOUNDARY: never scrape/copy/cite the external guides (pastebins,
+  docs, YT, Discord); they set STRUCTURE, the wiki sets FACTS. (Tamibro's UIM guide is the one
+  exception — it's wiki-hosted, so citable.)
 - **Voice + conventions-with-provenance:** `design/PLAYER_DIRECT_GRANULAR.md` (§7 is the cited
   convention registry; keep it and this skill in sync).
 - **Gotchas (quote verbatim to agents):** `tools/wiki-kb/gotchas.log`,
