@@ -1,0 +1,187 @@
+{{External|rs|rsc=Cook's Range}}
+{{Infobox Scenery
+|name = Cooking range
+|image = [[File:Cooking range (Lumbridge Castle).png|250px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = [[Cook's Assistant]]
+|location = [[Lumbridge Castle]]
+|options = Cook
+|examine = An appliance for cooking with.
+|map = {{Map|x=3212|y=3215|plane=0|r=2|mapID=0|mtype=square}}
+|id = 114
+}}
+This '''Cooking range''', referred to as the '''Cook-o-matic 100''' by the [[Cook (Lumbridge)|Lumbridge Cook]] (more commonly referred to as the '''Lumbridge Castle Range''' or simply the '''Cook's range''') is a special [[cooking range|range]], located in the kitchen, on the {{FloorNumber|uk=0}} of the [[Lumbridge Castle]]. 
+
+It is notable as it improves the chances of cooking certain foods, especially [[mushroom pie|mushroom]] and [[botanical pie]]s. This makes it particularly helpful for players without access to other special cooking ranges, or a [[cooking cape]].
+
+But only those who have completed the [[Cook's Assistant]] quest may use it. If one tries before then, the cook will stop them.
+
+==Burn level==
+{{Main|Cooking/Burn level}}
+
+The range can reduce the burn chance of the following foods:
+
+{| class="wikitable sortable align-left-2" style="text-align:center;"
+! rowspan="2" colspan="2" |Food
+! rowspan="2" |[[Cooking]]<br/>level
+! rowspan="2" |Experience<br/>Gained
+! colspan="2" |Level to stop burning
+|-
+!Default
+!Lumbridge range
+|-
+|{{plinkt|Bread}}
+|1
+|40
+|38
+|34
+|-
+|{{plinkt|Cooked meat}}
+|1
+|30
+|34
+|31
+|-
+|{{plinkt|Cooked chicken}}
+|1
+|30
+|34
+|31
+|-
+|{{plinkt|Shrimps}}
+|1
+|30
+|34
+|31
+|-
+|{{plinkt|Anchovies}}
+|1
+|30
+|34
+|31
+|-
+|{{plinkt|Giant carp}}
+|1
+|0
+|45
+|41
+|-
+|{{plinkt|Sardine}}
+|5
+|40
+|38
+|34
+|-
+|{{plinkt|Herring}}
+|5
+|50
+|41
+|38
+|-
+|{{plinkt|Mackerel}}
+|10
+|60
+|45
+|41
+|-
+|{{plinkt|Redberry pie}}
+|10
+|78
+|45
+|42
+|-
+|{{plinkt|Thin snail meat}}
+|12
+|70
+|47
+|43
+|-
+|{{plinkt|Trout}}
+|15
+|70
+|49
+|45
+|-
+|{{plinkt|Lean snail meat}}
+|17
+|80
+|47
+|46
+|-
+|{{plinkt|Cod}}
+|18
+|75
+|51
+|46
+|-
+|{{plinkt|Pike}}
+|20
+|80
+|54
+|49
+|-
+|{{plinkt|Meat pie}}
+|20
+|110
+|54
+|49
+|-
+|{{plinkt|Fat snail meat}}
+|22
+|95
+|56
+|51
+|-
+|{{plinkt|Stew}}
+|25
+|117
+|58
+|54
+|-
+|{{plinkt|Salmon}}
+|25
+|90
+|58
+|55
+|-
+|{{plinkt|Botanical pie}}
+|52
+|180
+|84
+|52 
+|-
+|{{plinkt|Mushroom pie}}
+|60
+|200
+|89
+|60 
+|}
+
+==Products==
+{{Uses facility list|Cooking range}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 24 April 2006
+|update = Wilderness graphical update
+|change = The scenery was graphically updated.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Cooking range (Lumbridge Castle) (historical).png|center|300x150px]]
+|[[File:Cooking range (Lumbridge Castle).png|center|300x150px]]
+|-
+|29 March 2004 –<br>24 April 2006
+|24 April 2006 –<br>present
+|}
+
+==Trivia==
+* The range is referred to by the Cook as the "Cook-o-matic 100", but in ''[[rsw:RuneScape|RuneScape]]'' it's referred to as the "Cook-o-matic 25" by the cook-o-matic manual. It is unknown why this is inconsistent.
+
+{{Cook's Assistant}}
+[[Category:Cooking]]

@@ -1,0 +1,382 @@
+{{External|rs=Copper rock|rsc=Copper rock|dw=Copper Ore Node}}
+{{Infobox Scenery
+|version1 = Variant 1
+|version2 = Variant 2
+|version3 = Tutorial Island
+|name = Copper rocks
+|image1 = [[File:Copper rocks.png|220px]]
+|image2 = [[File:Copper rocks (2).png|220px]]
+|image3 = [[File:Copper rocks (Tutorial Island).png|220px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|location = Varies
+|options = Mine
+|icon1 = [[File:Map icon - Copper rocks.png]]
+|icon2 = [[File:Map icon - Copper rocks.png]]
+|icon3 = No
+|examine = A rocky outcrop.
+|map = No
+|id1 = 11161
+|id2 = 10943
+|id3 = 10079,37944
+|dropversion1 = Varlamore
+|dropversion2 = Varlamore
+|dropversion3 =
+}}
+'''Copper rocks''' are a type of rock that contains [[copper ore]]; they can be mined with a [[Mining]] level of 1. They are one of the first rocks that can be mined, along with [[tin rocks]]. Each time a player successfully mines a copper rock, they gain 17.5 Mining [[experience]]. 
+
+Mining 14 [[tin ore]] and 14 copper ore (wielding the pickaxe as a [[weapon]] to free the 28th [[inventory]] space) and smelting them to [[Bronze bar|bronze bars]] is a slow but accessible way to train Mining and [[Smithing]], especially in [[free-to-play]] worlds.
+
+For [[members]], players can [[power level]] the [[Mining]] skill with copper ore in the [[Port Khazard mine]] and amass ore. This is because of two fast [[respawn]]ing copper rocks that are very close to a [[bank deposit box]]. These two copper rocks are the closest mining rocks to a fast [[bank]] source, which surpasses the [[West Falador mine]] and level 5 [[Agility]] [[shortcut]].
+
+On the other hand, free-to-play players can best gather their ores at the [[East Varrock Mine]], banking at [[Varrock east bank]]. There is an [[aggressive]] level 6 [[giant rat]] for players under 13 [[combat level|combat]] en route to the bank, however.
+
+The rocks on [[Tutorial Island]] are slightly darker in colour, and do not grant experience past level 3 Mining.
+
+==Locations==
+{{ObjectTableHead}}
+{{ObjectLocLine
+|name = Copper ore veins
+|location = [[Abandoned Mine]] - level 1
+|x:3418,y:9646|x:3418,y:9645|x:3420,y:9648|x:3422,y:9646
+|members = Yes
+|mtype = pin
+|leagueRegion = Morytania
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper ore veins
+|location = [[Abandoned Mine]] - level 2
+|x:2805,y:4581|x:2807,y:4581
+|members = Yes
+|mtype = pin
+|leagueRegion = Morytania
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper ore veins
+|location = [[Abandoned Mine]] - level 3
+|x:2712,y:4492|x:2716,y:4492|x:2717,y:4489|x:2711,y:4492|x:2715,y:4492|x:2717,y:4491
+|members = Yes
+|mtype = pin
+|leagueRegion = Morytania
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Al Kharid mine]]
+|x:3301,y:3318|x:3297,y:3315|x:3296,y:3314
+|members = No
+|mtype = pin
+|leagueRegion = Desert
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Battlefield mine]]
+|x:2472,y:3256|x:2475,y:3256|x:2470,y:3255
+|members = Yes
+|mtype = pin
+|leagueRegion = Kandarin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Camdozaal Mines]]
+|x:2921,y:5818|x:2939,y:5808|x:2913,y:5806
+|members = No
+|mtype = pin
+|leagueRegion = Asgarnia
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Deepfin Point]]
+|x:1943,y:2800|x:1943,y:2808|x:1945,y:2803|x:1948,y:2807
+|members = Yes
+|mtype = pin
+|leagueRegion = N/A
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Desert Mining Camp]] (surface)
+|x:3300,y:3017|x:3299,y:3015|x:3301,y:3016|x:3302,y:3015
+|members = Yes
+|mtype = pin
+|leagueRegion = Desert
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Dwarven Mine]]
+|x:3027,y:9802|x:3024,y:9798|x:3040,y:9784|x:3039,y:9783|x:3033,y:9828|x:3030,y:9826|x:3030,y:9825|x:3021,y:9801|x:3026,y:9801|x:3039,y:9781|x:3038,y:9780
+|members = No
+|mtype = pin
+|leagueRegion = Asgarnia
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[East Fremennik Isles mine]]
+|x:2406,y:3869|x:2405,y:3868|x:2407,y:3868
+|members = Yes
+|mtype = pin
+|leagueRegion = Fremennik
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[East Lumbridge Swamp mine]]
+|x:3230,y:3147|x:3228,y:3144|x:3229,y:3148|x:3229,y:3145|x:3230,y:3145
+|members = No
+|mtype = pin
+|leagueRegion = Misthalin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Edgeville Dungeon mine]]
+|x:3141,y:9880|x:3143,y:9877
+|members = No
+|mtype = pin
+|leagueRegion = Misthalin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Fight Arena mine]]
+|x:2630,y:3145|x:2630,y:3137
+|members = Yes
+|mtype = pin
+|leagueRegion = Kandarin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Hosidius mine]]
+|x:1781,y:3495|x:1778,y:3491|x:1775,y:3485|x:1773,y:3493|x:1785,y:3491|x:1779,y:3490|x:1778,y:3489|x:1771,y:3488|x:1781,y:3486|x:1783,y:3486|x:1784,y:3486
+|members = Yes
+|mtype = pin
+|leagueRegion = Kourend
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Isle of Souls mine]]
+|x:2204,y:2795|x:2203,y:2797|x:2205,y:2788
+|members = Yes
+|mtype = pin
+|leagueRegion = Misthalin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Keldagrim south-west mine]]
+|x:2872,y:10115|x:2873,y:10115
+|members = Yes
+|mtype = pin
+|leagueRegion = Fremennik
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Northern Conch mine]]
+|x:3184,y:2507|x:3185,y:2508|x:3186,y:2506
+|members = Yes
+|mtype = pin
+|leagueRegion = N/A
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Pandemonium Cave]]
+|3051,9365|3057,9368|3060,9365
+|members = Yes
+|mtype = pin
+|leagueRegion = N/A
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Piscarilius mine]]
+|x:1764,y:3719|x:1757,y:3718|x:1765,y:3720|x:1769,y:3720|x:1757,y:3717
+|members = Yes
+|mtype = pin
+|leagueRegion = Kourend
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Piscatoris mine]]
+|x:2338,y:3642|x:2337,y:3643
+|members = Yes
+|mtype = pin
+|leagueRegion = Kandarin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Port Khazard mine]]
+|x:2640,y:3153|x:2640,y:3151
+|members = Yes
+|mtype = pin
+|leagueRegion = Kandarin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Ralos' Rise mine]]
+|x:1483,y:3089|x:1483,y:3083|x:1481,y:3079|x:1482,y:3078
+|members = Yes
+|mtype = pin
+|leagueRegion = Varlamore
+|dropversion = Varlamore
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Rimmington mine]]
+|x:2978,y:3248|x:2977,y:3247|x:2979,y:3248|x:2976,y:3247|x:2977,y:3245
+|members = No
+|mtype = pin
+|leagueRegion = Asgarnia
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Ruins of Unkah mine]]
+|x:3175,y:2868
+|members = Yes
+|mtype = pin
+|leagueRegion = Desert
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[South-east Varrock mine]]
+|x:3282,y:3369|x:3286,y:3364|x:3288,y:3361|x:3282,y:3368|x:3287,y:3365|x:3289,y:3363|x:3290,y:3362|x:3285,y:3361|x:3287,y:3361
+|members = No
+|mtype = pin
+|leagueRegion = Misthalin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = South-west [[Tlati Rainforest]] 
+|members = Yes
+|mapID = -1
+|1231,3054|1230,3053|1237,3051|1241,3051|1232,3048|1231,3047|1229,3043|1230,3040|1228,3037|1236,3032|1235,3031|1242,3035|1242,3033
+|mtype = pin
+|leagueRegion = Varlamore
+|dropversion = Varlamore
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[Tutorial Island mine]]
+|x:3085,y:9503|x:3087,y:9503|x:3087,y:9502|x:3088,y:9502|x:3083,y:9501|x:3085,y:9501|x:3086,y:9501|x:3088,y:9501|x:3090,y:9501|x:3091,y:9501|x:3084,y:9500|x:3085,y:9500|x:3091,y:9500|x:3085,y:9499|x:3086,y:9499|x:3088,y:9499|x:3089,y:9499|x:3085,y:9498|x:3086,y:9498|x:3088,y:9498
+|members = No
+|mtype = pin
+|leagueRegion = Misthalin
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[West Falador mine]]
+|x:2907,y:3361|x:2909,y:3364
+|members = Yes
+|mtype = pin
+|leagueRegion = Asgarnia
+|mapID = -1
+}}
+{{ObjectLocLine
+|name = Copper rocks
+|location = [[West Fremennik Isles mine]]
+|x:2312,y:3858|x:2313,y:3859|x:2311,y:3858
+|members = Yes
+|mtype = pin
+|leagueRegion = Fremennik
+|mapID = -1
+}}
+{{ObjectTableBottom}}
+
+==Mining info==
+{{Mining info
+|name = Copper rocks
+|level = 1
+|xp = 17.5
+|tool = [[Pickaxe]]
+|time = 2.4 seconds
+|dropversion = Varlamore
+}}
+
+Rocks deplete and produce one [[copper ore]] on every successful mining attempt, though more ore can be gained using [[#Equipment|special equipment]].
+
+{{DropsTableHead}}
+{{DropsLineSkill|name=Copper ore|quantity=1|rarity=Always|skill=Mining}}
+{{DropsTableBottom}}
+
+The probability to succeed on a given mining attempt scales with Mining level according to the figure below.
+
+{{Skilling success chart|label=Copper rocks mining chance|showbefore=no
+|label1=Copper rocks|low1=100|high1=350|req1=1|color1=#dc7e37|image1=Copper ore.png
+}}
+
+===Pre-roll===
+{{MiningPreGemDropTable}}
+
+===Tertiary===
+The following items can drop together with the main resource. The rates shown are for a successful mining attempt.
+
+{{DropsTableHead}}
+{{SkillingTertiaryDropLines|skill=mining|baserate=741600|minlevel=1|maxlevel=99|varlamore=yes}}
+{{DropsTableBottom}}
+
+==Equipment==
+*{{plink|Varrock armour 1}}, 2, 3, and and 4 give a 10% chance to receive an extra ore.
+*{{plink|Mining gloves}} allow one additional ore to be mined before the rocks deplete.
+*{{plink|Superior mining gloves}} allow two additional ores to be mined before the rocks deplete.
+*{{plink|Expert mining gloves}} allow three additional ores to be mined before the rocks deplete.
+*{{plink|Celestial ring}}s and [[Celestial signet|signets]] provide an invisible +4 boost to Mining level, regardless of charges. When charged with [[stardust]], they also give a 10% chance to receive an extra ore.
+*{{plink|Prospector kit|pic=Prospector helmet}} boosts Mining experience by 2.5%.
+*{{plink|Amulet of glory|pic=Amulet of glory(4)}} increases the chance of obtaining gems when charged.
+*{{plink|Mining cape}}s give a 5% chance to receive an extra ore.
+*Varrock armour, celestial rings, and Mining capes roll independently; multiple bonus resources can be given.
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 20 March 2024
+|update = Varlamore: Part One
+|change = Map icon changed from [[File:Map icon - Rock 2.png]] to [[File:Map icon - Copper rocks.png]].
+}}
+{{Subject changes
+|date = 15 March 2023
+|update = The Last of Poll 78
+|poll= New Skill: Community Consultation and Poll 78
+|change = * The object has been renamed from "Rocks" to "Copper rocks".
+* The "Prospect" option was removed.
+}}
+{{Subject changes
+|date = 7 December 2022
+|update = Quest Speedrunning: Batch 3 & More
+|poll = Old School Content Poll 77: Quality of Life
+|change = The random tick delay after mining copper has been removed.
+}}
+{{Subject_changes
+|date = 21 January 2016
+|update = The Dragon Warhammer
+|poll = Old School Content Poll 37: Skillcape Perks
+|change = The object was graphically updated
+}}
+{{Subject changes footer}}
+
+==See also==
+*[[Copper ore vein]]
+
+==References==
+{{Reflist}}
+
+{{Mining}}
+
+[[Category:Needs skilling success chart]]

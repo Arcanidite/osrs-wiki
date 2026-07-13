@@ -1,0 +1,63 @@
+{{External|rs|rsc}}
+{{Redirect|Cakemix|a tin with cake ingredients mixed together|Uncooked cake}}
+{{Infobox NPC
+|name = Kaqemeex
+|image = [[File:Kaqemeex.png|120px]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|race = [[Human]]
+|quest = [[Druidic Ritual]]
+|location = The [[Druid's circle]] in [[Taverley]]
+|shop = [[Herblore cape]]
+|gender = Male
+|options = Talk-to
+|examine = A wise druid.
+|map = {{Map|name=Kaqemeex|x=2926|y=3484|plane=0|r=5|mtype=square}}
+|id = 5045
+|leagueRegion = Asgarnia
+}}
+[[File:Kaqemeex chathead.png|left]]
+'''Kaqemeex''' (pronounced "cake mix") is a [[Guthix]]ian [[druid]] who can be found in the [[Druid's circle]] in [[Taverley]].
+
+Kaqemeex is the start point of the quest [[Druidic Ritual]], the quest required to start learning the skill of [[Herblore]]. During the quest, players learn that he is the master for Herblore. Players with level 99 in Herblore may buy the [[Herblore cape]] from him for 99,000 [[coins]].
+
+==Stock==
+Note: If a player has multiple [[Skill mastery|99s]], they will receive the trimmed variant of the cape instead.
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y}}
+{{StoreLine|name=Herblore cape|stock=inf|sell=99000|buy=N/A|gemw=n}}
+{{StoreLine|name=Herblore cape(t)|stock=inf|sell=99000|buy=N/A|gemw=n}}
+{{StoreTableBottom}}
+
+==Dialogue==
+{{hastranscript|NPC}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 18 June 2015
+|update = Multiple Clues & Midsummer
+|change = The midsummer ritual and event will begin tomorrow. Make sure to head over to Kaqemeex in Taverly{{sic}} tomorrow to give him a helping hand.
+}}
+{{Subject changes
+|date = 18 October 2006
+|update = Capes of Achievement... and Goats!
+|change = The NPC was graphically updated.
+}}
+{{Subject changes footer}}
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Kaqemeex (historical).png|center|300x150px]]
+|[[File:Kaqemeex.png|center|300x150px]]
+|-
+|29 March 2004 –<br/>18 October 2006
+|18 October 2006 –<br/>present
+|}
+
+==Trivia==
+*Kaqemeex was the main NPC during the [[2014 Midsummer event|2014]] and [[2015 Midsummer event]], where players would solve Riddles given to them by [[Thordur]], for rewards such as the [[half full wine jug]] and the untradeable [[druidic wreath]]. Players could also keep the [[disk of returning]] given to them by Thordur.
+
+{{Taverley}}
+{{Druidic Ritual}}
+{{Skillcape}}
+[[Category:Guthixians]]

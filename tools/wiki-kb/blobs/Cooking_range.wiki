@@ -1,0 +1,289 @@
+{{External|rs|rsc}}
+{{Otheruses|def=no|the skill and form of combat|Ranged|the Sailing facility on a ship|Range (facility)}}
+{{Infobox Scenery
+|version1 = Common
+|version2 = Darkmeyer (1)
+|version3 = Darkmeyer (2)
+|version4 = Darkmeyer (3)
+|version5 = Dorgesh-Kaan (1)
+|version6 = Dorgesh-Kaan (2)
+|version7 = Falador
+|version8 = Kourend
+|version9 = Lassar Undercity
+|version10 = Piscarilius
+|version11 = Piscatoris
+|version12 = Port Phasmatys
+|version13 = Rimmington
+|version14 = Sinclair Mansion
+|version15 = Slepe
+|version16 = Sorceress's Garden
+|version17 = Tirannwn
+|version18 = Unused (1)
+|version19 = Unused (2)
+|version20 = Varrock (1)
+|version21 = Varrock (2)
+|version22 = Zanaris
+|version23 = Zemouregal's Base
+|name = Range
+|image1 = [[File:Range.png|200px]]
+|image2 = [[File:Range (Darkmeyer Gold).png|200px]]
+|image3 = [[File:Range (Darkmeyer Silver).png|200px]]
+|image4 = [[File:Range (Darkmeyer Black).png|200px]]
+|image5 = [[File:Range (Dorgesh-Kaan Frog).png|200px]]
+|image6 = [[File:Range (Dorgesh-Kaan Grubs).png|200px]]
+|image7 = [[File:Range (Falador).png|200px]]
+|image8 = [[File:Range (Kourend).png|200px]]
+|image9 = [[File:Range (Lassar Undercity).png|200px]]
+|image10 = [[File:Range (Piscarilius).png|200px]]
+|image11 = [[File:Range (Piscatoris).png|200px]]
+|image12 = [[File:Range (Port Phasmatys).png|200px]]
+|image13 = [[File:Range (Rimmington).png|200px]]
+|image14 = [[File:Range (Sinclair Mansion).png|200px]]
+|image15 = [[File:Range (Slepe).png|200px]]
+|image16 = [[File:Range (Sorceress's Garden).png|200px]]
+|image17 = [[File:Range (Tirannwn).png|200px]]
+|image18 = [[File:Range (Unknown).png|200px]]
+|image19 = [[File:Range (Unused).png|200px]]
+|image20 = [[File:Range (Varrock).png|200px]]
+|image21 = [[File:Range (Varrock Vented).png|200px]]
+|image22 = [[File:Range (Zanaris).png|200px]]
+|image23 = [[File: Range (Zemouregal's Base).png|200px]]
+|release1 = [[4 January]] [[2001]]
+|release2 = [[4 June]] [[2020]]
+|release3 = [[4 June]] [[2020]]
+|release4 = [[4 June]] [[2020]]
+|release5 = [[20 March]] [[2007]]
+|release6 = [[20 March]] [[2007]]
+|release7 = [[26 August]] [[2020]]
+|release8 = [[8 January]] [[2016]]
+|release9 = [[26 July]] [[2023]]
+|release10 = [[8 January]] [[2016]]
+|release11 = [[2 May]] [[2006]]
+|release12 = [[15 February]] [[2005]]
+|release13 = [[26 February]] [[2005]]
+|release14 = 
+|release15 = [[31 May]] [[2018]]
+|release16 = [[12 February]] [[2007]]
+|release17 = 
+|release18 = No
+|release19 = No
+|release20 = [[6 March]] [[2007]]
+|release21 = [[6 March]] [[2007]]
+|release22 = 
+|release23 = [[6 November]] [[2024]]
+|update1 = Runescape beta is now online!
+|update2 = Darkmeyer
+|update3 = Darkmeyer
+|update4 = Darkmeyer
+|update5 = Dorgesh-Kaan
+|update6 = Dorgesh-Kaan
+|update7 = Mahogany Homes
+|update8 = Great Kourend Tweaks
+|update9 = Desert Treasure II - The Fallen Empire
+|update10 = Great Kourend Tweaks
+|update11 = Return of the Wise Old Man!
+|update12 = Ghosts Ahoy and Slayer Update
+|update13 = New graphics for Port Sarim, Rimmington and Thurgo's Peninsula
+|update14 = 
+|update15 = Fixes to Slepe and A Taste of Hope
+|update16 = A sq'irk a day...
+|update17 = 
+|update18 = No
+|update19 = No
+|update20 = Varrock's New Look
+|update21 = Varrock's New Look
+|update22 = 
+|update23 = The Curse of Arrav & Mobile Anniversary Update
+|members1 = No
+|members2 = Yes
+|members3 = Yes
+|members4 = Yes
+|members5 = Yes
+|members6 = Yes
+|members7 = No
+|members8 = Yes
+|members9 = Yes
+|members10 = Yes
+|members11 = Yes
+|members12 = Yes
+|members13 = No
+|members14 = Yes
+|members15 = Yes
+|members16 = No
+|members17 = Yes
+|members18 = No
+|members19 = No
+|members20 = No
+|members21 = No
+|members22 = Yes
+|members23 = Yes
+|quest = No
+|location1 = Throughout [[Gielinor]]
+|location2 = [[Darkmeyer]]
+|location3 = [[Darkmeyer]]
+|location4 = [[Darkmeyer]]
+|location5 = [[Dorgesh-Kaan]]
+|location6 = [[Dorgesh-Kaan]]
+|location7 = [[Falador]]
+|location8 = [[Kourend]]
+|location9 = [[Lassar Undercity]]
+|location10 = [[Piscarilius]]
+|location11 = [[Piscatoris]]
+|location12 = [[Port Phasmatys]]
+|location13 = [[Rimmington]]
+|location14 = [[Sinclair Mansion]]
+|location15 = [[Slepe]]
+|location16 = [[Sorceress's Garden]]
+|location17 = [[Tirannwn]]
+|location18 = N/A
+|location19 = N/A
+|location20 = [[Varrock]]
+|location21 = [[Varrock]]
+|location22 = [[Zanaris]]
+|location23 = [[Zemouregal's Base]]
+|options1 = Cook
+|options2 = Cook
+|options3 = Cook
+|options4 = Cook
+|options5 = Cook
+|options6 = Cook
+|options7 = Cook
+|options8 = Cook
+|options9 = Cook
+|options10 = Cook
+|options11 = Cook
+|options12 = Cook
+|options13 = Cook
+|options14 = Cook
+|options15 = Cook
+|options16 = Cook
+|options17 = Cook
+|options18 = Cook
+|options19 = None
+|options20 = Cook
+|options21 = Cook
+|options22 = Cook
+|options23 = Cook
+|examine1 = Ideal for cooking on.
+|examine2 = Ideal for cooking on.
+|examine3 = Ideal for cooking on.
+|examine4 = Ideal for cooking on.
+|examine5 = Be careful; it's hot!
+|examine6 = Be careful; it's hot!
+|examine7 = Ideal for cooking on.
+|examine8 = Cook some delicious food on here!
+|examine9 = Ideal for cooking on.
+|examine10 = Ideal for cooking on.
+|examine11 = Ideal for cooking on.
+|examine12 = Smells of fried fish.
+|examine13 = Ideal for cooking on.
+|examine14 = Ideal for cooking on.
+|examine15 = Ideal for cooking on.
+|examine16 = Ideal for Cooking on.
+|examine17 = Ideal for cooking on.
+|examine18 = Cook some delicious food on here!
+|examine19 = Smells of food.
+|examine20 = Ideal for cooking on.
+|examine21 = Ideal for cooking on.
+|examine22 = Ideal for cooking on.
+|examine23 = Ideal for cooking on.
+|map = no
+|id1 = 9736,26181
+|id2 = 39458
+|id3 = 39490
+|id4 = 39391
+|id5 = 22713
+|id6 = 22714
+|id7 = 40149,40297
+|id8 = 27517
+|id9 = 47925,48169
+|id10 = 27724
+|id11 = 12611
+|id12 = 16641
+|id13 = 9682
+|id14 = 25730
+|id15 = 32739
+|id16 = 21792
+|id17 = 8750,35877
+|id18 = 27516
+|id19 = 47392
+|id20 = 7183
+|id21 = 7184
+|id22 = 12102
+|id23 = 50563
+}}
+A '''range''' is used to cook [[food]] through the [[Cooking]] skill. Except for special cases, any food that can be cooked on a [[fire]] can be cooked on a range. To cook food, simply 'use' it on the range. Ranges are marked on a player's [[map]] by the [[File:Cooking range icon.png]] [[icon]]. [[Clay oven]]s and [[oven]]s also serve the same function as a range.
+
+Cooking on a range reduces the [[burn chance]] for certain foods. The range in [[Lumbridge Castle]] (referred to as the "[[Cooking range (Lumbridge Castle)|Cook-o-matic 100]]"), which requires completion of [[Cook's Assistant]] to use, has an even lower burn rate for certain foods. Lastly, the clay ovens in the [[Hosidius Kitchen]] give the best reduction in burn rates, provided the player has completed the [[easy Kourend & Kebos Diary]].
+
+A table of the levels where cooking food items becomes successful 100% of the time can be found [[Cooking/Burn level|here]].
+
+==Tips on leveling cooking==
+For players training Cooking with a low Cooking level, ranges can come in handy, especially the ranges within [[chicken]] farms. A common tactic would be to collect as many [[raw chicken]]s as possible, and cook them in the range by selecting "cook all". A good place to train at low levels is in the [[Champions' Guild]]. You can easily kill chickens, cook them, then sell them upstairs.
+
+It is highly recommended to use a Range over a Fire, as it will greatly reduce your burn rate, and thus increase your experience gained. Even better is to use the range on the ground floor of [[Lumbridge Castle]], the [[Cooking range (Lumbridge Castle)|Cook-o-matic 100]], after completion of [[Cook's Assistant]].
+
+The best place for levelling cooking is the bank chest in the [[Myths' Guild]], which requires completion of [[Dragon Slayer II]]. The range and bank border the same tile, meaning no walking is required to cook at this location. Another area, which has lower requirements, is in the [[Cooks' Guild]]. This requires the completion of the [[Varrock Hard Diary]] in order to access the bank. The range there is right next to the bank, so the time between banking and cooking is only a tiny bit slower than at the [[Rogues' Den|Rogues' Den Fire]] in [[Burthorpe]]. The time lost is more than compensated for, however, by the reduced burn rate when cooking on a range.
+
+If you do not have the requirements for the [[Cooks' Guild]] bank area, the second best place to level cooking is in [[Hosidius Kitchen]]. Completion of the [[easy Kourend & Kebos Diary]] is required to use the clay ovens here, but there is a bank only 6 spaces away, and it also provides a 5% lower burn chance.
+
+When cooking certain [[fish]], you should always be wearing the [[Cooking gauntlets]], a possible reward from the [[Family Crest]] quest. These gauntlets significantly decrease the likelihood of burning [[Lobster|lobsters]], [[swordfish]], [[monkfish]], [[sharks]] and [[anglerfish]].
+
+==Range distances from a nearby bank==
+===Free-to-play===
+* 13 spaces + a set of double doors that periodically shut - [[Falador]] [[PvP world|'''(PvP world)''']] - Range south-west of bank chest, within and around the [[White Knights' Castle|White Knight's Castle]] courtyard. '''In the area between the range and double doors, PvP is enabled; allowing players ±15 levels your own combat level to attack.'''
+* 22 spaces - [[Al Kharid]] - Range north of bank.
+*24 spaces - [[Clan Hall]] - Oven south of bank.
+* 25 spaces - [[Edgeville]] - Stove west of bank — there is a gate and a door that periodically shuts.
+* 29 spaces - Falador - Range east of the east bank.
+* 22 spaces + 2 extra clicks - [[Lumbridge Castle]] - Requires completion of [[Cook's Assistant]]. [[Cooking range (Lumbridge Castle)|Cook-o-matic 100]] on the ground floor of the castle. Provides a lower burn chance for [[Cooking range (Lumbridge Castle)#Burn level|certain foods]].
+*32 spaces - Juliet's house west of [[Varrock]].
+*118 spaces -  In [[Bandit Camp (Wilderness)]]
+
+===Pay-to-play===
+* 0 spaces - [[Myths' Guild]] - Requires completion of [[Dragon Slayer II]].
+* 0 spaces - [[Bank boat]] - Build a [[Range (facility)|range]] on your boat with 16 [[Sailing]] and place your boat next to the banker.
+* 2 spaces - [[Cooks' Guild]] in [[Varrock]] - Requires [[Varrock Hard Diary]] or 99 Cooking to access the bank.
+* 3 spaces - [[Sunbleak Island]] - Requires construction of both the [[Cooking pot (amenity)|cooking pot]] and the bank chest.
+* 5 spaces - [[The Hueycoatl]] - the [[Campfire (The Darkfrost)|campfire]] acts as a range.
+* 6 spaces - [[Ruins of Unkah]] - the fire acts as a range.
+* 6 spaces - [[Hosidius Kitchen]] - Requires completion of the [[easy Kourend & Kebos Diary]]. Clay oven north of bank. Provides a 5% lower burn chance.
+* 9 spaces - [[Nardah]] - Clay oven just south-east of bank.
+* 12 spaces - [[Museum Camp]] on [[Fossil Island]] - [[Cooking pot (Museum Camp)|Cooking pot]] north-west of the bank chest. Requires completion of [[Bone Voyage]] and 24 [[Construction]] along with 2 [[logs]], [[tinderbox]], [[iron bar]], 3 [[soft clay]] to build.
+* 13 spaces - [[Quetzacalli Gorge]] - May require the occasional extra click to open the door. Requires completion of [[Children of the Sun]] for access to [[Varlamore]].
+* 14 spaces - [[Neitiznot]] - Requires partial completion of [[The Fremennik Isles]] to access. Clay oven north-east of bank.
+* 14 spaces - [[Prifddinas]] - Requires completion of [[Song of the Elves]] to access. Just north of the Tower of Light.
+* 17 spaces - [[Catherby]] - Range in building east of bank.
+* 17 spaces - [[Hunter Guild]] - Requires completion of [[Children of the Sun]] to access. Oven next to [[Guildmaster Apatura]]. Does not require level 46 [[Hunter]] to access the inner guild.
+* 19 spaces - [[Zanaris]] - Requires completion of [[The Lost City]] to access. Range south of bank.
+* 18 spaces + 1 extra click - [[Lumbridge Castle]] - Requires starting [[Recipe for Disaster]] for bank access from the [[Culinaromancer's Chest]]. [[Cooking range (Lumbridge Castle)|Cook-o-matic 100]] on the ground floor of the castle. Provides a lower burn chance for certain foods (refer to the list at the top of this page).
+
+==Products==
+{{Uses facility list|Cooking range}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 27 August 2015
+|update = Cerberus - The Hellhound Boss
+|change = Fixed occasional render issue with certain ranges during the cooking animation.
+}}
+{{Subject changes footer}}
+
+==Gallery==
+Several notable ranges:
+<gallery>
+File:Cooking range (Lumbridge Castle) (historical).png|A common range as found in many places in Gielinor
+File:Cooking_range_(Lumbridge_Castle).png|A variant with a wooden pedestal, such as the [[Cooking range (Lumbridge Castle)|version]] found in [[Lumbridge Castle]].
+File:Cooking Range (The Fremennik Trials).png|A brown variant, such as the [[Cooking_range_(The_Fremennik_Trials)|version]] found in [[Rellekka]].
+File:Steel range built.png|A [[Steel range|steel range]] as built in the [[Player Owned House]].
+File:Fancy_range_built.png|A [[Fancy range|fancy range]] as built in the [[Player Owned House]].
+File:Range (The Gauntlet).png|A [[Range (The Gauntlet)|blue range]] as found in [[The Gauntlet]].
+File:Range_(The_Corrupted_Gauntlet).png|A [[Range (The Corrupted Gauntlet)|red range]] as found in [[The Corrupted Gauntlet]].
+</gallery>
+
+
+
+[[Category:Cooking]]
+[[Category:Interactive scenery]]
+[[Category:Free-to-play scenery]]

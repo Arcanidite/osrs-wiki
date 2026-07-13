@@ -1,0 +1,20 @@
+{{External|rs=Lumbridge Church}}
+{{Infobox Location
+|name = Lumbridge church
+|image = [[File:Lumbridge church.png|300px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|aka = Church of Lumbridge
+|members = No
+|location = East of the [[Lumbridge Castle]]
+|map = {{Map|name=Lumbridge church||zoom=2|mtype=polygon|3240,3216|3240,3212|3238,3212|3238,3209|3240,3209|3240,3204|3248,3204|3248,3216}}
+|type = building
+|leagueRegion = Misthalin
+}}
+The '''Lumbridge church''', referred to in-game as the ''' Church of Holy Saradomin''' by [[Father Aereck]], is the official church of [[Lumbridge]]. The church is the starting place for the [[Restless Ghost]] [[quest]], and also contains the [[Prayer tutor]]. There's a playable [[Church organ|organ]] behind the [[altar]].
+
+According to Father Aereck, the church was built over 230 years ago.
+
+{{Lumbridge}}
+{{Places of worship}}
+[[Category:Asgarnia]]

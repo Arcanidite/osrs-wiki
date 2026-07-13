@@ -1,0 +1,21 @@
+{{External|rs|rsc}}
+{{otheruses|the altars used to recharge Prayer|other uses|Altar (disambiguation)}}
+{{Redirect|Prayer table|a list of Prayer unlocks|Prayer/Level up table}}
+[[File:Pray-at.gif|thumb|right|250px|A player using an altar to recharge [[prayer points]].]]
+An '''altar''' is an interactive piece of scenery which allows a player to recharge their [[Prayer]] points. To pray at an altar, you must left click on the altar, or right click and select the ''Pray'' or ''Pray-at'' option. Your character will kneel by the altar and your prayer points will be recharged. To locate an altar, look for the altar icon ([[File:Altar icon.png]]) on the [[World map]] or [[Minimap]]. A player will receive the message, "You fear the wrath of the gods!" if the player uses an object on an altar that does not create an interaction, similarly to the message, "Nothing interesting happens."
+
+{{/Locations}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 5 April 2023
+|update = Easter 2023
+|change = Praying at an altar will now reset the timer on any [[Prayer points|Prayer point]] draining effects. 
+}}
+{{Subject changes footer}}
+
+==Trivia==
+*The [[Saradomin]] symbol on the [[Altar_(Saradomin)#Flipped|altar]] at [[Camelot]] is oriented the opposite way from most in the game. As this orientation is what would have been the norm in Medieval Europe, it is possible that this is a reference to Camelot's mythical origins.
+
+{{Prayer}}

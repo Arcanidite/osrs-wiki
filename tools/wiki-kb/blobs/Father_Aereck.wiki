@@ -1,0 +1,73 @@
+{{External|rs|rsc=Priest}}
+{{Infobox NPC
+|name = Father Aereck
+|image = [[File:Father Aereck.png|120px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|race = [[Human]]
+|quest = <ul><li>[[The Restless Ghost]]</li><li>[[The Lost Tribe]]</li><li>[[Death to the Dorgeshuun]]</li></ul>
+|location = [[Lumbridge]]
+|gender = Male
+|options = Talk-to
+|examine = Looks a bit holy.
+|map = {{Map|name=Father Aereck|x=3243|y=3210|r=6|mtype=square}}
+|id = 2812
+|leagueRegion = Misthalin
+}}
+[[File:Father Aereck chathead.png|left]]
+'''Father Aereck''' is a [[Saradomin]]ist priest who maintains the over 230-year-old [[church of Lumbridge]].
+
+He is the person players must speak with to start [[The Restless Ghost]] [[Quests|quest]].
+
+He also plays a role in [[The Lost Tribe]] quest as one of the citizens of Lumbridge which you should speak to about the strange goings-on beneath [[Lumbridge Castle]].
+
+From his younger days, Father Aereck is friends with another priest named [[Father Urhney]], who currently resides in the [[Lumbridge Swamp]] as a hermit. According to Urhney, Aereck always "gets himself into lots of problems", such as the instance when he "kept on getting stuck, up bell rope" when the two were priest initiates.
+
+==Treasure Trails==
+*{{Anagram|Father Aereck|medium|[[Clue scroll (medium) - AREA CHEF TREK|AREA CHEF TREK]]}}. The answer to his challenge scroll is '''19''' (20 if players failed to save [[Jarvis]] during the [[2017 Halloween event]]).
+*{{CrypticNPC|Father Aereck|elite|[[Clue scroll (elite) - A reck you say|A reck you say; let's pray there aren't any ghosts.]]}}
+
+==Dialogue==
+{{Hastranscript|npc}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 17 March 2021
+|update = Shooting Stars
+|change = [[Father Aereck (2021 Birthday event)]] was replaced with the regular Father Aereck. Father Aereck's NPC ID changed to <var>2812</var>.
+}}
+{{Subject changes
+|date = 17 February 2021
+|update = 8th Birthday Event and LMS Changes
+|change = Father Aereck was removed from the world and replaced with a nameless NPC in the game's cache. [[Father Aereck (2021 Birthday event)]] took his place in the world for the [[2021 Birthday event]].
+}}
+{{Subject changes
+|date = 22 May 2006
+|update = Royal Trouble
+|change = *The NPC was graphically updated with the rework of The Restless Ghost.
+*The NPC now always appears above players standing in the same tile.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Father Aereck (historical).png|300x150px]]
+|[[File:Father Aereck.png|300x150px]]
+|-
+|[[File:Father Aereck chathead (historical).png]]
+|[[File:Father Aereck chathead.png]]
+|-
+|29 March 2004 –<br/>22 May 2006
+|22 May 2006 –<br/>present
+|}
+
+==Trivia==
+* Father Aereck's name (pronounced Eric) is a reference to one half of the famous British comedy duo act Morecambe and Wise. Specifically Eric Morecambe. They had a comedy sketch where Eric Morecambe and Ernie Wise ( [[Father Urhney]], found in the Lumbridge Swamp) were both Monks. One sketch involved bell ringing, which in [[The Restless Ghost]], [[Father Urhney]] lets it be known that [[Father Aereck]] gets himself into lots of problems, ''"Yeah. For example, when we were trainee priests he kept on getting stuck up bell ropes."'' 
+* [[Father Aereck (2021 Birthday event)|Father Aereck]] was one of the [[Lumbridge]] citizens attacked by a monkey during the [[2021 Birthday event]].
+
+{{The Restless Ghost}}
+{{The Lost Tribe}}
+{{Death to the Dorgeshuun}}
+{{Lumbridge}}

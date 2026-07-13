@@ -1,0 +1,481 @@
+<noinclude>
+This list only lists non-[[construction altar]]s which can be used to recharge prayer points
+</noinclude>
+<onlyinclude>==Altar locations==
+{| class="wikitable sortable align-center-4"
+!Name
+!Location
+!Members
+![[God]]
+!Maplink
+!Comments
+|-
+|[[Chaos altar (Prayer)#Varrock|Chaos altar]]
+|South-east [[Varrock]]
+|{{Members|Yes}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|type=maplink|mtype=pin|x=3259|y=3381}}
+| Has a "Check" option.
+|-
+|[[Chaos altar (Prayer)|Chaos altar]]
+|[[Underground Pass (dungeon)|Underground Pass]]
+|{{Members|Yes}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|type=maplink|mtype=pin|mapID=10163|x = 2414|y = 9680}}
+|
+|-
+|[[Chaos altar (Prayer)|Chaos altar]]
+|[[Ourania Cave]] entrance
+|{{Members|Yes}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|x:2454,y:3231|type=maplink|mtype=pin}}
+|
+|-
+|[[Chaos altar (Prayer)|Chaos altar]]
+|Wilderness [[Chaos Temple (Wilderness)|Chaos Temple]]
+|{{Members|No}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|x:3239,y:3608|type=maplink|mtype=pin}}
+|
+|-
+|[[Chaos altar (Prayer)|Chaos altar]]
+|[[Black Knights' Fortress (location)|Black Knights' Fortress]]
+|{{Members|No}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|x:3027,y:3510|mtype=pin|type=maplink|plane=1}}
+|
+|-
+|[[Chaos altar (Prayer)|Chaos altar]]
+|[[Chaos Temple (Asgarnia)|Chaos Temple]] near [[Goblin Village]]
+|{{Members|No}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|x:2932,y:3513|mtype=pin|type=maplink}}
+|
+|-
+|[[Chaos altar (Prayer)|Chaos altar]]
+|Deep wilderness [[Chaos Temple (hut)|Chaos Temple]]
+|{{Members|No}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|x:2947,y:3820|mtype=pin|type=maplink}}
+|[[Members]] can offer bones for 3.5 times the prayer experience, and a 50% chance to not consume the bone.
+|-
+|[[Chaos altar (Prayer)#Yanille Dungeon|Chaos altar]]
+|[[Yanille Agility dungeon]]
+|{{Members|Yes}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|type=maplink|x:2571,y:9499|mtype=pin|mapID=27}}
+|Praying here opens a trapdoor.
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Tutorial Island]]
+|{{Members|No}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 3121|y = 3106|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Lumbridge]] church
+|{{Members|No}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 3243|y = 3207|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|Between [[Rimmington]], [[Port Sarim]] and [[Thurgo]]
+|{{Members|No}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2995|y = 3177|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Emir's Arena]] lobby
+|{{Members|No}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 3376|y = 3285|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Varrock Palace]]
+|{{Members|No}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 3208|y = 3494|plane=1|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Seers' Village]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2694|y = 3462|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[East Ardougne]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2617|y = 3309|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[West Ardougne]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2529|y = 3286|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Ardougne Monastery]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x:2604,y:3208|x:2607,y:3208|mtype=pin}}
+|Features two altars in the same building.
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Paterdomus]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 3416|y = 3488|mtype=pin}}
+|
+|-
+|[[Altar (Entrana)|Altar]]
+|[[Entrana]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2853|y = 3348|mtype=pin}}
+|Plays a role in [[Devious Minds]] [[quest]]
+|-
+|[[Altar (Edgeville Monastery)|Altar]]
+|[[Edgeville Monastery]]
+|{{Members|No}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 3051|y = 3498|plane=1|mtype=pin}} 
+|Requires 31 prayer, boosts prayer to 2 points above the normal maximum.
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Well of Voyage]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2341|y = 9629|mapID=-1|mtype=pin}}
+|
+|-
+|[[Altar (Seren)|Altar]]
+|[[Lletya]]
+|{{Members|Yes}}
+|[[File:Seren symbol.png|link=Seren|x16px]]
+|{{Map|type=maplink|x = 2356|y = 3171|plane=1|mtype=pin}}
+|
+|-
+|[[Altar (Seren)|Altar]]
+|[[Tower of Voices]]
+|{{Members|Yes}}
+|[[File:Seren symbol.png|link=Seren|x16px]]
+|{{Map|type=maplink|mapID=29|x = 3263|y = 6091|plane=2|mtype=pin}}
+|
+|-
+|[[Altar (Seren)|Altar]]
+|[[Prifddinas]]
+|{{Members|Yes}}
+|[[File:Seren symbol.png|link=Seren|x16px]]
+|{{Map|type=maplink|mapID=29|x = 3246|y = 6116|mtype=pin}}
+|
+|-
+|[[Altar (Seren)|Altar]]
+|[[Gorlah]]
+|{{Members|Yes}}
+|[[File:Seren symbol.png|link=Seren|x16px]]
+|{{Map|type=maplink|x = 2283|y = 3427|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|North-eastern [[Varrock]]
+|{{Members|No}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 3253|y = 3486|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Kourend Castle]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 1617|y = 3672|plane=2|mtype=pin}}
+|''Pray'' instead of ''Pray-at''.
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Witchaven]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2728|y = 3282|mtype=pin}}
+|''Pray'' instead of ''Pray-at''.
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Camelot]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2749|y = 3496|plane=1|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Heroes' Guild]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 2889|y = 3510|plane=1|mtype=pin}}
+|
+|-
+|[[Altar (Sophanem)|Altar]]
+|[[Sophanem]]
+|{{Members|Yes}}
+|[[File:Icthlarin symbol.png|link=Icthlarin|x16px]]
+|{{Map|type=maplink|x = 3280|y = 2774|mtype=pin}}
+|Requires access to [[Sophanem]].
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Hosidius]]' church
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 1733|y = 3572|mtype=pin}}
+|''Pray'' instead of ''Pray-at''.
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Hosidius]] monk's camp
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 1743|y = 3500|mtype=pin}}
+|''Pray'' instead of ''Pray-at''.
+|-
+|[[Altar (Arceuus)|Altar]]
+|[[Arceuus]] church
+|{{Members|Yes}}
+|''None''
+|{{Map|type=maplink|x = 1688|y = 3792|plane=2|mtype=pin}}
+|
+|-
+|[[Altar (Lovakengj)|Altar]]
+|[[Lovakengj]]
+|{{Members|Yes}}
+|''Unknown''
+|{{Map|type=maplink|x = 1547|y = 3807|mtype=pin}}
+|''Pray'' instead of ''Pray-at''.
+|-
+|[[Altar (Xeric)|Altar]]
+|[[Molch]]
+|{{Members|Yes}}
+|[[File:Xeric symbol.png|link=Xeric|x16px]]
+|{{Map|type=maplink|x = 1282|y = 3677|mtype=pin}}
+|
+|-
+|[[Altar (Xeric)|Altar]]
+|[[Xeric's Shrine]] in [[Kebos Swamp]]
+|{{Members|Yes}}
+|[[File:Xeric symbol.png|link=Xeric|x16px]]
+|{{Map|type=maplink|x = 1310|y = 3619|mtype=pin}}
+|
+|-
+|[[Altar (Myths' Guild)|Altar]]
+|[[Myths' Guild]]
+|{{Members|Yes}}
+|''Unknown''
+|{{Map|type=maplink|x = 1310|y = 3619|mtype=pin}}
+|Requires completion of [[Dragon Slayer II]].
+|-
+|[[Altar (Forthos Dungeon)|Altar]]
+|[[Forthos Dungeon]]
+|{{Members|Yes}}
+|[[File:Ranul symbol.png|link=Ranul|x16px]]
+|{{Map|type=maplink|x=1802|y=9950|mapID=32|mtype=pin}}
+|Becomes [[Cursed Altar|cursed]] when fighting [[Olbertus]], drains prayer & deals damage when cursed.
+|-
+|[[Altar (Ferox Enclave)|Altar]]
+|[[Ferox Enclave]]
+|{{Members|No}}
+|[[File:Zaros symbol.png|link=Zaros|x16px]]
+|{{Map|type=maplink|x:3177,y:3625|x:3126,y:3635|mtype=pin}}
+|
+|-
+|[[Altar (Ferox Enclave)|Altar]]
+|East of [[Ferox Enclave]]
+|{{Members|No}}
+|[[File:Zaros symbol.png|link=Zaros|x16px]]
+|{{Map|type=maplink|x:3177,y:3625|x:3177,y:3625|mtype=pin}}
+|
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Citharede Abbey]] on [[Giants' Plateau]]
+|{{Members|No}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 3421|y = 3179|mtype=pin}}
+|''Pray'' instead of ''Pray-at''.
+|-
+|[[Altar (Saradomin)|Altar]]
+|[[Shayzien]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|type=maplink|x = 1497|y = 3562|mtype=pin}}
+|
+|-
+|[[Altar (Clan Hall)|Altar]]
+|[[Clan Hall]] chapel 
+|{{Members|No}}
+|''None''
+|
+|Requires access to [[Clan Hall]]. 
+|-
+|[[Altar of Guthix]]
+|[[Taverley]] [[stone circle]]
+|{{Members|Yes}}
+|[[File:Guthix symbol.png|link=Guthix|x16px]]
+|{{Map|type=maplink|x = 2925|y = 3484|mtype=pin}} 
+| Looks like a [[Dolmen]].
+|-
+|[[Altar of nature]]
+|[[Nature grotto]] in [[Mort Myre Swamp]]
+|{{Members|Yes}}
+|[[File:Guthix symbol.png|link=Guthix|x16px]]
+|{{Map|type=maplink|mtype=pin|mapID=-1|plane=1|x = 3441|y = 9740}}
+|Requires completion of [[Nature Spirit]], gives 2 extra prayer points.
+|-
+|[[Zamorak Altar]]
+|[[God Wars Dungeon]]
+|{{Members|Yes}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|type=maplink|mapID=7|x=2937|y=5323|mtype=pin}}
+|Has a ''Teleport'' option to exit the boss room. Gives extra prayer points for Zamorak equipment.
+|-
+|[[Saradomin Altar]]
+|[[God Wars Dungeon]]
+|{{Members|Yes}}
+|[[File:Saradomin symbol.png|link=Saradomin|x16px]]
+|{{Map|mapID=7|type=maplink|x = 2900|y = 5237|mtype=pin}}
+|Has a ''Teleport'' option to exit the boss room. Gives extra prayer points for Saradomin equipment.
+|-
+|[[Armadyl Altar]]
+|[[God Wars Dungeon]]
+|{{Members|Yes}}
+|[[File:Armadyl symbol.png|link=Armadyl|x16px]]
+|{{Map|type=maplink|mapID=7|x=2821|y=5301|mtype=pin}}
+|Has a ''Teleport'' option to exit the boss room. Gives extra prayer points for Armadyl equipment.
+|-
+|[[Bandos Altar]]
+|[[God Wars Dungeon]]
+|{{Members|Yes}}
+|[[File:Bandos symbol.png|link=Bandos|x16px]]
+|{{Map|type=maplink|mapID=7|x=2869|y=5370|mtype=pin}}
+|Has a ''Teleport'' option to exit the boss room. Gives extra prayer points for Bandos equipment.
+|-
+|[[Altar (Ancient_Prison)|Altar]]
+|[[God Wars Dungeon]]
+|{{Members|Yes}}
+|[[File:Zaros symbol.png|link=Zaros|x16px]]
+|{{Map|type=maplink|mapID=7|x=2939|y=5202|mtype=pin}}
+|Has a ''Teleport'' option to exit the boss room. If Zaros equipment is worn, also restores [[hitpoints]], [[run energy]], and [[special attack]] energy, plus extra prayer points.
+|-
+|[[Altar (Shade Catacombs)|Altar]]
+|[[Shade Catacombs]]
+|{{Members|Yes}}
+|''Unknown''
+|{{Map|type=maplink|mapID=14|y=9671|x=3494|mtype=pin}}
+|Requires [[bleached bones]] for prayer restore.
+|-
+|[[Altar of Zamorak]]
+|[[Slepe]] church
+|{{Members|Yes}}
+|[[File:Zamorak symbol.png|link=Zamorak|x16px]]
+|{{Map|type=maplink|x = 3738|y = 3307|mtype=pin}} 
+|
+|-
+|[[Altar (Goblin Temple)]]
+|[[Goblin Temple]]
+|{{Members|Yes}}
+|[[File:Bandos symbol.png|link=Bandos|x16px]]
+|{{Map|type=maplink|mapID=-1|x=3743|y=4320|mtype=pin}}
+|Initially gives the message {{mes|The Big High War God does not answer your prayer}}, but starts working later in [[Land of the Goblins]].
+|-
+|[[Broken sun altar]]
+|[[Forthos dungeon]]
+|{{Members|Yes}}
+|[[File:Ralos symbol.png|link=Ralos|x16px]]
+|{{Map|type=maplink|x=1795|y=9949|mapID=32|mtype=pin}}
+| Changed praying animation when [[Knight of Varlamore (Kourend Castle)|Knight of Varlamore]] is there after the [[In Search of Knowledge]] [[quest]].
+|-
+|[[Shrine]]
+|[[Woodcutting Guild]]
+|{{Members|Yes}}
+|[[Evil Chicken]]
+|{{Map|type=maplink|x = 1612|y = 3513|mtype=pin}}
+|Offering [[bird's egg]]s gives prayer experience and can give [[evil chicken outfit]].
+|-
+|[[Tribal Statue]]
+|[[Tai Bwo Wannai]]
+|{{Members|Yes}}
+|[[Karamjan gods]]
+|{{Map|type=maplink|x=2796|y=3091|mtype=pin}}
+| Requires completion of [[Tai Bwo Wannai Trio]].
+|-
+|[[Statue (Darkmeyer)|Statue]]
+|[[Darkmeyer]]
+|{{Members|Yes}}
+|''Unknown''
+|{{Map|type=maplink|x = 3604|y = 3354|mtype=pin}}
+|Drains [[hitpoints]] in return for restoring prayer points.
+|-
+|[[Gorilla Statue]]
+|[[Temple of Marimbo]]
+|{{Members|Yes}}
+|[[File:Marimbo symbol.png|link=Marimbo|x16px]]
+|{{Map|mtype=pin|x:2797,y:2794|zoom=3|type=maplink}}
+| One altar on each floor.
+|-
+|[[Elidinis Statuette]]
+|[[Nardah]]
+|{{Members|Yes}}
+|[[File:Elidinis symbol.png|link=Elidinis|x16px]]
+|{{Map|mtype=pin|x:3426,y:2930|zoom=3|type=maplink}} 
+| Requires completion of the [[Spirits of the Elid]] [[quest]]. Also restores run and special attack and boosts hitpoints.
+|-
+|[[Statue_(Darkmeyer)|Statue]]
+|[[Old School Museum]] in the [[Falador Party Room]]
+|{{Members|No}}
+|''Unknown''
+|{{Map|type=maplink|mtype=pin|mapID=10124|x = 3036|y = 9974}}
+|The only altar in Falador. Similar in appearance to the [[Statue (Darkmeyer)|Statue]] in [[Darkmeyer]], but does not drain hitpoints. Located at the bottom floor, in the north-east section.
+|-
+|[[Shrine of Ralos]]
+|[[Civitas illa Fortis]]
+|{{Members|Yes}}
+|[[File:Ralos symbol.png|link=Ralos|x16px]]
+|{{Map|mtype=pin|x:1701,y:3085|zoom=3|type=maplink}}
+|Can also be used to create [[sunfire rune]]s and upgrade [[Dizana's quiver]].
+|-
+|[[Shrine of Ralos]]
+|North of [[Ortus Farm]]
+|{{Members|Yes}}
+|[[File:Ralos symbol.png|link=Ralos|x16px]]
+|{{Map|mtype=pin|x:1569,y:3166|zoom=3|type=maplink}}
+|Can also be used to create [[sunfire rune]]s and upgrade [[Dizana's quiver]].
+|-
+|[[Shrine of Ralos]]
+|[[The Teomat]]
+|{{Members|Yes}}
+|[[File:Ralos symbol.png|link=Ralos|x16px]]
+|{{Map|mtype=pin|x:1449,y:3171|zoom=3|type=maplink}}
+|Can also be used to create [[sunfire rune]]s and upgrade [[Dizana's quiver]].
+|-
+|[[Shrine of Ralos]]
+|[[Stonecutter Outpost]]
+|{{Members|Yes}}
+|[[File:Ralos symbol.png|link=Ralos|x16px]]
+|{{Map|mtype=pin|x:1734,y:2927|zoom=3|type=maplink}}
+|Can also be used to create [[sunfire rune]]s and upgrade [[Dizana's quiver]].
+|-
+|[[Shrine of Ralos]]
+|[[Outer Fortis]]
+|{{Members|Yes}}
+|[[File:Ralos symbol.png|link=Ralos|x16px]]
+|{{Map|mtype=pin|x:1681,y:3031|zoom=3|type=maplink}}
+|Can also be used to create [[sunfire rune]]s and upgrade [[Dizana's quiver]].
+|-
+|[[Altar (Varlamore)]]
+|[[Tal Teklan]]
+|{{Members|Yes}}
+|[[File:Ralos symbol.png|link=Ralos|x16px]]
+|{{Map|mtype=pin|x:1225,y:3103|zoom=2|type=maplink}}
+|
+|}</onlyinclude>
