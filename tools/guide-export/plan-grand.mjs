@@ -91,35 +91,43 @@
 // explicit-array-splice trick as the ORIGIN PREFIX above, just at the other
 // end: raw steps concatenated directly into `path`, bypassing routeMulti/
 // goal-based routing entirely, so _difficulty's episode-sort never sees
-// "goal-quest-cape" as a competing milestone. route-quests.json is read
-// READ-ONLY, purely for its id LIST + ORDER (a previously-validated
-// topological route for the full 216-quest superset); every id then resolves
-// to ITS raw router step from THIS file's own `stepById` merged bank
-// (steps.jsonl/steps_quests.jsonl), never from route-quests.json's own
-// content — that fixture is ENRICHED shape (instruction/completionConditions),
-// not a router step, and reusing FIXED bank ids (verified: route-quests.json's
-// non-quest residue is 100% steps.jsonl's fixed `train-<skill>-<level>` ids,
-// never a route-specific `synth-*` counter) sidesteps the synth-id divergence
-// CONSOLIDATION.md §2 already flags for route-p2p's OWN stale-artifact
-// uniques. The one id with no raw bank row — `milestone-goal-quest-cape`,
-// route-quests.json's own synthesized capstone (there is no "goal-quest-cape"
-// entry in THIS driver's `goals`, so enrich.py never mints it here) — is
-// hand-authored below (EPILOGUE CAPSTONE) reusing that fixture's own
-// wiki-cited completionConditions data verbatim, gated via location.quest_gate
-// on the residue's own last quest id so it can only ever land at the tail
-// (topo_order/phased_steps' ready() enforces quest_gate ahead of any
-// skill-grant-driven `advances()` priority — see enrich.py), closing the
-// overlap spike's unique count to 0 without needing goal-quest-cape routed.
+// "goal-quest-cape" as a competing milestone. The quest-cape id LIST + ORDER
+// (a previously-validated topological route for the full 216-quest superset)
+// used to come from reading the guide-chain repo's shipped route-quests.json
+// fixture READ-ONLY — but that fixture is CONSUMER build output (the
+// guide-chain repo, not this one) and Lane C deleted it (d6bc8aa), which left
+// plan-grand.mjs unrunnable on a clean checkout (ENOENT). Fixed [defect-A]:
+// regenerate the equivalent content SELF-CONTAINED, in-process, by running
+// plan-quests.mjs's own default goal-quest-cape route through THIS repo's
+// own enrich.py — the exact pipeline that fixture was always baked from —
+// synchronously, in-memory, never touching a checked-in file (see
+// `questCapeBake` below). Every id then resolves to ITS raw router step from
+// THIS file's own `stepById` merged bank (steps.jsonl/steps_quests.jsonl),
+// never from the regenerated blob's own content — that blob is ENRICHED
+// shape (instruction/completionConditions), not a router step, and reusing
+// FIXED bank ids (verified: the quest-cape residue's non-quest ids are 100%
+// steps.jsonl's fixed `train-<skill>-<level>` ids, never a route-specific
+// `synth-*` counter) sidesteps the synth-id divergence CONSOLIDATION.md §2
+// already flags for route-p2p's OWN stale-artifact uniques. The one id with
+// no raw bank row — `milestone-goal-quest-cape`, the regenerated blob's own
+// synthesized capstone (there is no "goal-quest-cape" entry in THIS driver's
+// `goals`, so enrich.py never mints it here) — is hand-authored below
+// (EPILOGUE CAPSTONE) reusing that blob's own wiki-cited completionConditions
+// data verbatim, gated via location.quest_gate on the residue's own last
+// quest id so it can only ever land at the tail (topo_order/phased_steps'
+// ready() enforces quest_gate ahead of any skill-grant-driven `advances()`
+// priority — see enrich.py), closing the overlap spike's unique count to 0
+// without needing goal-quest-cape routed.
 //
 // Usage: node tools/guide-export/plan-grand.mjs
-import { readFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { loadFixtures, readData, makeEnv, freshProfile, queueGoal } from "../../tests/helpers.js";
 import { routeMulti } from "../../assets/js/router/planner/greedy.js";
 import { burndownResolve } from "../../assets/js/router/planner/burndown.js";
 
-// Canonical plugin fixtures path (CLAUDE.md-designated plugin repo), same
-// hardcoded-constant convention spikes/consolidation-overlap.mjs already uses.
-const GUIDE_CHAIN_FIXTURES = "/home/lemon/runelite-guide-chain/src/main/resources/fixtures";
+const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const CAPE_MILESTONE_ID = "milestone-goal-quest-cape";
 
 const DEFAULT_GOALS = ["goal-early-game", "goal-quest-spine", "quest-dt", "quest-mm", "barrows", "gwd", "raids-cox"];
@@ -166,16 +174,32 @@ const routedPath = routeMulti(queued, mergedSteps, freshProfile(), env);
 
 // EPILOGUE — quest-cape residue (see the file-header comment above for the
 // full rationale). `grandIds` = every id this driver's own routing already
-// covers; residue = route-quests.json's id order minus that set. `chkpt-*`
-// ids are enrich.py-synthesized checkpoint-group headers (`_checkpoint_step`,
-// registry-stable by coarse_expansions index — NOT per-bake), same synthesis
-// class as `milestone-*`: they have no raw router-step counterpart to splice,
-// and don't need one — grand's OWN enrich.py pass re-derives them for free
-// from `coarse_expansions` once the underlying member steps are present in
-// its path (steps.jsonl-sourced content, shared across every bake), so they
-// are excluded here rather than treated as unresolved residue.
+// covers; residue = the regenerated quest-cape blob's id order minus that
+// set. `chkpt-*` ids are enrich.py-synthesized checkpoint-group headers
+// (`_checkpoint_step`, registry-stable by coarse_expansions index — NOT
+// per-bake), same synthesis class as `milestone-*`: they have no raw
+// router-step counterpart to splice, and don't need one — grand's OWN
+// enrich.py pass re-derives them for free from `coarse_expansions` once the
+// underlying member steps are present in its path (steps.jsonl-sourced
+// content, shared across every bake), so they are excluded here rather than
+// treated as unresolved residue.
 const grandIds = new Set([...originSteps.map((s) => s.id), ...routedPath.map((s) => s.id)]);
-const questCapeBake = JSON.parse(readFileSync(`${GUIDE_CHAIN_FIXTURES}/route-quests.json`, "utf8")).steps;
+
+// SELF-CONTAINED REGEN [defect-A] — `node plan-quests.mjs | python3
+// enrich.py`, run synchronously in-process, in-memory (never touches disk).
+// This is literally the pipeline the deleted route-quests.json fixture was
+// always baked from (CLAUDE.md: "plan-multi.mjs | enrich.py > fixtures/
+// route-*.json"), just run fresh instead of read from a stale checked-in
+// snapshot — so plan-grand.mjs no longer depends on the guide-chain repo's
+// (or any repo's) build output existing on disk. plan-quests.mjs defaults to
+// goal-quest-cape with no args (see its own DEFAULT_GOALS), matching what
+// route-quests.json always represented.
+const planQuestsRaw = execFileSync("node", [join(SCRIPT_DIR, "plan-quests.mjs")],
+  { encoding: "utf8", maxBuffer: 1 << 28 });
+const questCapeBake = JSON.parse(
+  execFileSync("python3", [join(SCRIPT_DIR, "enrich.py")],
+    { input: planQuestsRaw, encoding: "utf8", maxBuffer: 1 << 28 })
+).steps;
 const isSynthesizedMarkerId = (id) => id.startsWith("chkpt-");
 const residueIds = questCapeBake.map((s) => s.id)
   .filter((id) => !grandIds.has(id) && !isSynthesizedMarkerId(id));
@@ -194,21 +218,23 @@ if (unexpectedUnresolved.length) {
   process.exit(1);
 }
 
-// EPILOGUE CAPSTONE — route-quests.json's own "milestone-goal-quest-cape"
-// synthesized capstone has no raw router-step counterpart in `stepById`
-// (enrich.py's `_milestone_step` mints it from the goals[] list, which THIS
-// driver deliberately never adds "goal-quest-cape" to — see the file-header
-// comment). Hand-author it here so the overlap spike's id-set comparison
-// still resolves to grand's own copy: same id, same wiki-cited
-// completionConditions data (copied verbatim from that fixture's own SKILL
-// list — not fabricated), rendered via enrich.py's ordinary _train_step path
+// EPILOGUE CAPSTONE — the regenerated quest-cape blob's own
+// "milestone-goal-quest-cape" synthesized capstone has no raw router-step
+// counterpart in `stepById` (enrich.py's `_milestone_step` mints it from the
+// goals[] list, which THIS driver deliberately never adds "goal-quest-cape"
+// to — see the file-header comment). Hand-author it here so the overlap
+// spike's id-set comparison still resolves to grand's own copy: same id,
+// same wiki-cited completionConditions data (copied verbatim from that
+// blob's own SKILL list — not fabricated; ultimately sourced from
+// goals_quests.jsonl's goal-quest-cape reqs.skills, same as `_milestone_step`
+// itself derives it), rendered via enrich.py's ordinary _train_step path
 // (grants -> SKILL conditions) rather than _milestone_step. `quest_gate`
 // pins it behind the residue's own last quest id, so topo_order/phased_steps'
 // ready() gate (checked ahead of any grants-driven `advances()` pull) keeps
 // it pinned at the very tail regardless of how many milestone target skills
 // its 23-skill grants union happens to touch.
 if (unresolvedResidueIds.includes(CAPE_MILESTONE_ID)) {
-  const capeFixtureRow = questCapeBake.find((s) => s.id === CAPE_MILESTONE_ID);
+  const capeCapstoneRow = questCapeBake.find((s) => s.id === CAPE_MILESTONE_ID);
   const lastResidueQuestId = [...residueIds].reverse().find(isQuestId);
   residueSteps.push({
     id: CAPE_MILESTONE_ID,
@@ -216,15 +242,15 @@ if (unresolvedResidueIds.includes(CAPE_MILESTONE_ID)) {
     kind: "milestone",
     reqs: { skills: {}, quests: [] },
     grants: Object.fromEntries(
-      (capeFixtureRow.completionConditions || [])
+      (capeCapstoneRow.completionConditions || [])
         .filter((c) => c.type === "SKILL")
         .map((c) => [c.skill.toLowerCase(), c.level])
     ),
     xp: {},
     tags: [],
     location: { region: "global", zone: null, quest_gate: lastResidueQuestId, quest_phase: "after" },
-    refs: capeFixtureRow.refs || [],
-    detail: capeFixtureRow.detail || "",
+    refs: capeCapstoneRow.refs || [],
+    detail: capeCapstoneRow.detail || "",
   });
 }
 
