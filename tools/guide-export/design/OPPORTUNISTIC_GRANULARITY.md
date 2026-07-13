@@ -230,6 +230,32 @@ the opp node is listed first (preference), the stub is `optional: true` so
 skipping the opportunity never blocks the chain — the ITEM_HELD condition on
 the stub self-completes when the early gather happened.
 
+**Known gap — P10 `phased_steps` can lose an opp node's positional promise**
+(task #8 spike, route-grand): P8 re-pins a node at its `collectAtIdx` in
+`ordered_with_overlays`, but P10 (`phased_steps`) runs a SEPARATE from-scratch
+re-simulation over that array afterward, grouping steps per-milestone via
+`take(quest_first) or take(advances(target)) or take(True)`. An opp node's
+`grants` is empty (it's a gather/produce step, not training) so it can never
+match `advances()` — it only ever surfaces via the position-blind catch-all,
+`next(s for s in remaining if ready(s))`. If ITS OWN `ready()` (skill/tag/
+quest/gate) doesn't clear until deep into a LATER milestone's loop, while an
+unrelated non-opportunistic step sitting earlier in `remaining` clears sooner,
+P10 picks that other step first — silently drifting the opp node away from
+the anchor P8 chose, potentially even past its own consumer (a "look — the
+`_anchor` didn't crash, the wrong node just won the position" bug, not a
+crash). Mitigation landed: `take()` gained an `opp_pred` tier between
+`advances()` and the plain catch-all, so a ready opp node always wins over
+generic filler — this closes the common case (the node's `ready()` gate
+clears around the same time as the steps it would otherwise lose to). It is
+NOT a full fix: two-or-more simultaneously-ready opp nodes still tie-break on
+plain array order, and an opp node gated on a quest no active milestone's
+target needs can still be deferred arbitrarily long. A full fix would need
+P10 to track each opp node's intended anchor-adjacency directly (e.g. pull it
+immediately once `ready()`, ahead of even `advances()`/`quest_first`, the
+instant its anchor is emitted) rather than treating it as one more flavor of
+catch-all filler — left as a documented follow-up since it enlarges P10's own
+contract, not a `take()`-ordering tweak.
+
 **Extend P4 (`overlay.js weaveOverlays`) — opportunity chips at breaks
 (v2, optional).** Recurring/partial sources ("while banking here, also top up
 N× X") behave exactly like bg cadence chips: the existing `isBreak()` anchor

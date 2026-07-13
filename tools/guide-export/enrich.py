@@ -465,11 +465,23 @@ def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
     # unchanged from before this fix — so existing routes stay byte-identical.
     eff = _make_effective_lvl(state, lvl) if xp_fold else lvl
     quest_done = lambda qid: state.get(f"quest:{qid}", False)
+    # task #8 fix — has_tag was missing entirely from this function (present in
+    # topo_order AND phased_steps_with_steer, but never ported here): a
+    # reqs.tags gate (the S7 bootstrap-<chain>/tag-bridge ordering mechanism —
+    # burndown.js's own docstring, "topo enforces order") was silently NOT
+    # enforced by this re-simulation, so P10 could re-pick a tag-gated step
+    # ahead of the step that grants its tag even though P7 topo_order (upstream)
+    # already guaranteed the correct order — same invisible-until-a-route-
+    # actually-exercises-it shape as the reqs.quests/location.quest_gate fix
+    # this function's own docstring already documents above.
+    has_tag = lambda t: state.get(f"tag:{t}", False)
 
     def apply(step):
         for k, v in (step.get("grants") or {}).items():
             if isinstance(v, (int, float)):
                 state[k] = max(lvl(k), v)
+            elif v is True:
+                state[f"tag:{k}"] = True
         if _is_quest(step):
             state[f"quest:{step['id']}"] = True
             if xp_fold:
@@ -480,9 +492,11 @@ def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
 
     def ready(step):
         quest_reqs = (step.get("reqs") or {}).get("quests", []) or []
+        tag_reqs = (step.get("reqs") or {}).get("tags", []) or []
         gate = (step.get("location") or {}).get("quest_gate")
         skill_reqs = _skill_reqs(step)
         return (all(eff(k) >= v for k, v in skill_reqs.items())
+                and all(has_tag(t) for t in tag_reqs)
                 and all(quest_done(q) for q in quest_reqs)
                 and (quest_done(gate) if gate else True))
 
@@ -511,7 +525,34 @@ def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
             # Pulling any ready quest first restores the expected quest-forward
             # narrative; falls back to training exactly when no quest is unlocked.
             quest_first_pred = (lambda s: _is_quest(s)) if quest_first else (lambda s: False)
-            step = take(quest_first_pred) or take(lambda s: advances(s, target)) or take(lambda s: True)
+            # P10 positional-promise fix (task #8): a P8-woven opportunistic node
+            # (_opportunistic, re-pinned at its in-position collection window —
+            # OPPORTUNISTIC_GRANULARITY.md §2b) never carries a `grants` skill
+            # entry either (it's a gather/produce step, not training), so it can
+            # ONLY ever land via the position-blind catch-all below, same failure
+            # shape as the quest case above — this local re-pick has no concept
+            # of "P8 already chose this exact position for a reason" and can
+            # silently drift it away from its anchor once ready() only clears
+            # deep in some LATER milestone's loop while an unrelated, earlier-
+            # ready, non-opportunistic step wins the catch-all first. Prioritizing
+            # a ready opportunistic node over generic catch-all filler preserves
+            # its earlier array position (P8's placement) whenever it's already
+            # eligible, closing the gap for the common case; it is NOT a full fix
+            # — two-or-more simultaneously-ready opportunistic nodes still race on
+            # plain array order, and one gated on a quest this milestone's target
+            # never needs can still be deferred past steps that logically follow
+            # it. Residual gap documented, not silently papered over. Widened
+            # (still task #8) to cover PLAIN `_supply` steps too, not just P8's
+            # opportunistic re-pins — a burndown-injected supply/bootstrap step
+            # (setup-ultracompost, farm-ranarr-patch, ...) has the exact same
+            # empty-`grants` shape and the exact same catch-all-only fate, and
+            # P3 (greedy, costFor) already treats `_supply` as "near-zero cost,
+            # pick ASAP once useful" — this mirrors that priority one level
+            # below quest/advances instead of leaving supply chains to win or
+            # lose the catch-all lottery against whatever else is ready.
+            supply_or_opp_pred = lambda s: bool(s.get("_opportunistic")) or bool(s.get("_supply"))
+            step = (take(quest_first_pred) or take(lambda s: advances(s, target))
+                    or take(supply_or_opp_pred) or take(lambda s: True))
             if step is None:
                 break                         # unmet prereq — capstone anyway
             out.append({"step": step, "phase": phase})
@@ -1009,10 +1050,55 @@ def _select_branch_drops(coarse_expansions, atoms_by_id):
 def _coalesce_checkpoints(steps, checkpoint_member):
     """Keep steps sharing a checkpoint contiguous (stable, first-appearance block order).
     A later member is pulled up next to its block's current last member so the checkpoint
-    header renders once; non-members keep their relative position."""
+    header renders once; non-members keep their relative position.
+
+    task #8 fix: `steps` (ordered_with_overlays) is ALREADY a topologically valid
+    order by this point — P7 topo_order plus the S7 tag-bridge mechanism (grant a
+    tag from a source step, require it on a consumer) guarantee every reqs.skills/
+    tags/quests/location.quest_gate dependency is satisfied in route position
+    order. A blind "pull the later member up next to the first" is a PURE
+    render-contiguity move with no dependency awareness — it can silently drag a
+    step past something it depends on (e.g. two DIFFERENT checkpoint groups
+    within the same supply chain, where group B's first-seen member happens to
+    sit earlier in the array than group A's, even though a member of B needs a
+    member of A's grants). Caught empirically on route-grand's prayer-pot-supply
+    chain: pulling brew-prayer-potion into the "Secondaries + brew" cluster
+    dragged it ahead of farm-ranarr-patch's "Herb-run loop" cluster, resurrecting
+    a source-after-consumer fault P7/P8 had already fixed. Guard: before pulling
+    a member up, re-check its OWN ready() gate against the grants state the
+    (result-so-far) prefix up to the target position actually establishes; if
+    the pull would place it somewhere its own reqs aren't yet met, leave it at
+    its natural (later, topo-correct) position instead — a checkpoint header
+    rendering twice is cosmetic, a dependency violation is not."""
     if not checkpoint_member:
         return steps
+
     result, block_end = [], {}
+
+    def state_before(pos):
+        state = {}
+        for s in result[:pos]:
+            for k, v in (s.get("grants") or {}).items():
+                if isinstance(v, (int, float)):
+                    state[k] = max(state.get(k, 1), v)
+                elif v is True:
+                    state[f"tag:{k}"] = True
+            if _is_quest(s):
+                state[f"quest:{s['id']}"] = True
+        return state
+
+    def ready_at(step, pos):
+        state = state_before(pos)
+        lvl = lambda k: state.get(k, 1)
+        skill_reqs = _skill_reqs(step)
+        tag_reqs = (step.get("reqs") or {}).get("tags", []) or []
+        quest_reqs = (step.get("reqs") or {}).get("quests", []) or []
+        gate = (step.get("location") or {}).get("quest_gate")
+        return (all(lvl(k) >= v for k, v in skill_reqs.items())
+                and all(state.get(f"tag:{t}", False) for t in tag_reqs)
+                and all(state.get(f"quest:{q}", False) for q in quest_reqs)
+                and (state.get(f"quest:{gate}", False) if gate else True))
+
     for s in steps:
         cp = checkpoint_member.get(s.get("id"))
         if cp is None or cp not in block_end:
@@ -1021,6 +1107,9 @@ def _coalesce_checkpoints(steps, checkpoint_member):
                 block_end[cp] = len(result) - 1
             continue
         pos = block_end[cp] + 1
+        if not ready_at(s, pos):
+            result.append(s)
+            continue
         result.insert(pos, s)
         block_end = {k: (v + 1 if v >= pos and k != cp else v) for k, v in block_end.items()}
         block_end[cp] = pos

@@ -1,0 +1,119 @@
+{{External|rs|rsc|dw}}
+{{Otheruses|about the tool|the wieldable spade weapon|large spade|the Easter event reward|Eastfloor spade}}
+{{Infobox Item
+|name = Spade
+|image = [[File:Spade.png]]
+|release = [[21 January]] [[2001]]
+|update = Newsletter 1
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Dig, Drop
+|examine = A slightly muddy spade.
+|value = 3
+|weight = 1.814
+|respawn = 100
+|exchange = Yes
+|id = 952
+}}
+[[File:Spade detail.png|left|120px]]
+A '''spade''' is a multi-functional tool used for a variety of activities. One of its major uses is in the [[Farming]] skill, though it also comes in handy for many [[quests]] and [[Treasure Trails]]. A spade is also needed to enter the [[Barrows]] crypts and the [[Mole Hole]].
+
+Spades are sold in [[farming shop]]s and many [[general store]]s, and an infinite supply can be added to the [[player-owned house]] by making a [[tool store 2]]. They can also be obtained from a [[rogue kit]], or taken from [[Spade (scenery)|scenery objects]] found in various places. Finally, players can ask [[Konoo]] at the saltpetre mine in [[Hosidius]] for a spare spade.
+
+==Uses==
+===Quests===
+*[[Olaf's Quest]]: 1x Spade to dig into [[Brine Rat Cavern]]
+*[[Ernest the Chicken]]: 1 × spade to search [[compost heap]]
+*[[Fishing Contest]]: 1 × spade to collect [[red vine worm]]
+*[[Ghosts Ahoy]]: 1 x spade to dig on the island
+*[[Pirate's Treasure]]: 1 × spade to unearth [[Casket (Pirate's Treasure)|One-Eyed Hector's chest]]
+*[[Plague City]]: 1 × spade to dig [[Dug hole#mud patch|mud patch]]
+*[[X Marks the Spot]]:  1 × spade to find clues and treasure
+
+==Money making==
+{{Mmgsection|Collecting spades}}
+
+==Item sources==
+{{Drop sources|Spade}}
+
+===Item spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Spade|location=[[Barrows]] - entrance|members=Yes|3572,3312|3571,3310|leagueRegion = Morytania}}
+{{ItemSpawnLine|name=Spade|location=[[Corsair Cove Dungeon]]|members=No|mapID=31|2031,8984|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Spade|location=[[Draynor Manor]]|members=No|3120,3359|leagueRegion = Misthalin}}
+{{ItemSpawnLine|name=Spade|location=[[East Ardougne]] - [[Edmond]] and [[Alrena]]'s house|members=Yes|2566,3330|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Spade|location=[[Falador]] - [[estate agent]]|members=No|2981,3370|leagueRegion = Asgarnia}}
+{{ItemSpawnLine|name=Spade|location=[[Farming Guild]]|members=Yes|1251,3735|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Spade|location=[[Hosidius]] - outside [[Watson's house]]|members=Yes|1657,3569|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Spade|location=[[Keldagrim]] - [[Blast Furnace]]|members=Yes|mapID=10022|1951,4964|leagueRegion = Fremennik}}
+{{ItemSpawnLine|name=Spade|location=[[Necropolis]]|members=Yes|mapID=-1|3355,2758|3338,2751|3334,2719|3333,2702|leagueRegion = Desert}}
+{{ItemSpawnLine|name=Spade|location=[[Outer Fortis]]|members=Yes|1641,3052|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Spade|location=[[Prifddinas]] - west in [[Alwyn]]'s house (estate agent)|members=Yes|mapID=29|3219,6058|leagueRegion = Tirannwn}}
+{{ItemSpawnLine|name=Spade|location=[[Shayzien Encampment]]|members=Yes|1500,3655|1514,3613|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Spade|location=[[Slayer Tower]] basement (requires Telekinetic Grab)|members=Yes|mapID=14|3426,9958|leagueRegion = Morytania}}
+{{ItemSpawnLine|name=Spade|location=[[Varrock General Store]] ({{FloorNumber|uk=1}})|members=No|plane=1|3218,3412|leagueRegion = Misthalin}}
+{{ItemSpawnLine|name=Spade|location=[[Aldarin]]|members=Yes|1405,2938|leagueRegion = Varlamore}}
+{{ItemSpawnTableBottom}}
+
+=== Scenery object spawns ===
+{{ObjectTableHead}}
+{{ObjectLocLine|1374,3694|1367,3743|1382,3733|name=Spade (scenery, common)|location=[[Battlefront]]|members=Yes|mapID=-1|plane=0|mtype=pin|leagueRegion=Kourend}}
+{{ObjectLocLine|1728,3102|name=Spade (scenery, common)|location=[[Civitas illa Fortis]]|members=Yes|mapID=-1|plane=0|mtype=pin|leagueRegion=Varlamore}}
+{{ObjectLocLine|2979,3241|name=Spade (scenery, common)|location=[[Rimmington mine]]|members=No|mapID=-1|plane=0|mtype=pin|leagueRegion=Asgarnia}}
+{{ObjectLocLine|2552,2846|name=Spade (scenery, Corsair Cove)|location=[[Corsair Cove]]|members=No|mapID=-1|plane=0|mtype=pin|leagueRegion=Kandarin}}
+{{ObjectLocLine|3379,2797|name=Spade (scenery, Ruins of Ullek)|location=[[Ruins of Ullek]]|members=Yes|mapID=-1|plane=0|mtype=pin|leagueRegion=Desert}}
+{{ObjectLocLine|3203,3170|name=Tools (gardening)|location=[[Lumbridge Swamp]] - A set of [[Tools (gardening)|tools]] in the [[Shed (Lumbridge Swamp)|Lumbridge Swamp shed]]|members=Yes|mapID=-1|plane=0|mtype=pin|leagueRegion=Misthalin}}
+{{ObjectTableBottom}}
+
+===Shop locations===
+{{Store locations list|Spade}}
+
+==Sound effects==
+{{SFXTableHead}}
+{{SFXLine|file=Spade.wav|desc=Digging}}
+{{SFXTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The item's inventory sprite was rotated.
+}}
+{{Subject changes
+|date = 6 June 2005
+|update = Seeds, Bankspace And Advisors
+|change = The item was graphically updated.
+}}
+{{Subject changes
+|date = 22 February 2005
+|update = Wilderness Capes, and Changes
+|change = The item was graphically updated.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Spade detail (historical v1).png|center|300x150px]]
+|[[File:Spade detail (historical v2).png|center|300x150px]]
+|[[File:Spade detail (historical v3).png|center|300x150px]]
+|[[File:Spade detail.png|center|300x150px]]
+|-
+|[[File:Spade (historical, v1).png|center]]
+|[[File:Spade (historical, v2).png|center]]
+|[[File:Spade (historical, v3).png|center]]
+|[[File:Spade.png|center]]
+|-
+|29 March 2004 –<br/>22 February 2005
+|22 February 2005 –<br/>6 June 2005
+|6 June 2005 –<br/>11 July 2005
+|11 July 2005 –<br/>present
+|}
+
+{{Farming tools}}
+[[Category:Items exempt from Grand Exchange tax]]
+[[Category:Tools]]

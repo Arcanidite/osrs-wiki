@@ -1,0 +1,33 @@
+{{external|rs=Zanaris shed}}
+{{Infobox Location
+|name = Shed
+|image = [[File:Lumbridge swamp shed.png|300px]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|location = [[Lumbridge Swamp]]
+|map = {{Map|name=Shed (Lumbridge Swamp)|x=3204|y=3169|plane=0|r=3|mtype=square}}
+|leagueRegion = Misthalin
+}}
+{{Relative location
+|location = Lumbridge Swamp
+|north = Lumbridge
+|west = Wizards' Tower
+|south = Kalphite Lair
+|east = Al Kharid
+}}
+{{main|Zanaris|Lost City}}
+The '''Lumbridge Swamp shed''' is a seemingly inconspicuous storage shed located at the heart of the swamp, east of the mysterious runes for the [[water altar]]. Entering the shed can only be done on [[members]] worlds, and entering without wielding either a [[Dramen staff]] or [[Lunar staff]] will simply allow the player to enter the building. However, while wielding either of the staves, the player will be teleported to the entry fairy ring of [[Zanaris]]. 
+
+There are [[frog]]s, [[big frog]]s, and [[giant frog]]s as well as [[giant rat]]s that spawn outside the shed.
+
+As the shed is not too far from the entrance of the [[water altar]], it can be a point of travel for [[Runecraft]]ing [[water rune]]s by using a bank near a [[fairy ring]], teleporting to Zanaris through that fairy ring and then heading to the entry fairy ring that exits out to the shed, then heading  to the mysterious ruins.
+
+==Features==
+* There is an inconspicuous hole just outside of the shed for an easy-level [[STASH]] unit.
+* There is a pair of [[tools (gardening)|tools]] that the player can take to obtain a [[rake]] and a [[spade]].
+
+{{Lost City}}
+{{Zanaris}}
+{{Lumbridge Swamp}}
+{{Lumbridge}}
