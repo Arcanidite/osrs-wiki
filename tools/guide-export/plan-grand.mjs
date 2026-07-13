@@ -18,14 +18,54 @@
 //      same reuse-not-duplicate mapping plan-origin.mjs documents (the 4 opener
 //      quests keep their steps.jsonl/steps_quests.jsonl id, not re-authored).
 //   2. ROUTED CHAIN — routeMulti over the ordered goal set [goal-early-game,
-//      goal-quest-spine, barrows, gwd, raids-cox] on the merged step corpus
-//      (steps.jsonl + steps_quests.jsonl, deduped by id — no id collisions
-//      today, but steps.jsonl rows win ties defensively, same precedence
-//      plan-quests.mjs/plan-origin.mjs use). goal-early-game is queued (not just
-//      decorative): it's what forces quest-sheep-shearer/quest-the-restless-ghost/
-//      quest-x-marks-the-spot into the routed set — goal-quest-spine's own
-//      reqs.quests only happens to include quest-cooks-assistant, not the other
-//      three openers.
+//      goal-quest-spine, quest-dt, quest-mm, barrows, gwd, raids-cox] on the
+//      merged step corpus (steps.jsonl + steps_quests.jsonl, deduped by id —
+//      no id collisions today, but steps.jsonl rows win ties defensively, same
+//      precedence plan-quests.mjs/plan-origin.mjs use). goal-early-game is
+//      queued (not just decorative): it's what forces quest-sheep-shearer/
+//      quest-the-restless-ghost/quest-x-marks-the-spot into the routed set —
+//      goal-quest-spine's own reqs.quests only happens to include
+//      quest-cooks-assistant, not the other three openers.
+//
+// CONSOLIDATION.md §5 lane A1 — quest-dt/quest-mm queued directly (same ids
+// plan-multi.mjs's own DEFAULT_GOALS use), placed AFTER goal-quest-spine
+// deliberately: goal-quest-spine's reqs.quests already lists quest-dt/quest-mm,
+// so their underlying quest steps are already routed by the time these two
+// goals are processed — both their targetEdges and terminal step are already
+// satisfied, so adding them is a FREE capstone/milestone card (0 incremental
+// real steps; verified via plan-grand's raw path before/after this change).
+// This absorbs 2 of route-p2p's 7 real content uniques
+// (milestone-quest-mm/milestone-quest-dt). The remaining 5
+// (steer-ardougne-easy-diary, steer-graceful, unlock-gwd,
+// alternation-train-attack-30, alternation-cook-monkfish) are NOT fixable by
+// adding goal ids — verified by direct cause, not guessed:
+//   - steer-ardougne-easy-diary/steer-graceful come from barrows'
+//     steer_points, which this driver deliberately zeroes below (see that
+//     comment) because carrying them flips enrich.py onto
+//     phased_steps_with_steer, whose advances_steer() take() is a
+//     position-blind hunt through `remaining` — same failure shape as
+//     quest_first, empirically pulls a quest step ahead of the origin prefix.
+//     Re-verified on this pass: still true with today's flag set
+//     (topo_xp_fold/phase_xp_fold/opportunistic/granular/quest_atoms all on).
+//   - unlock-gwd (gwd's own terminal step) fails meetsReqs on reqs.inv_free:6
+//     because grand's much longer route has depleted invFree (down to 3) by
+//     the time gwd's routeGoal turn comes — a real step-ordering/inventory
+//     side effect of the bigger merged route, not a missing-goal problem
+//     (gwd's skill reqs are already met via barrows' own reqs by that point,
+//     so synthFillGaps has no skill gap to backfill either).
+//   - alternation-train-attack-30/alternation-cook-monkfish are overlay.js
+//     synthetic markers minted over 3+ consecutive same-region ACTIVE steps
+//     (overlay.js's weaveOverlays). alternation-train-attack-30's anchor id is
+//     itself a p2p training-band artifact (grand trains attack via
+//     train-attack-60/70, not the 10/30/40 band p2p used, so that exact anchor
+//     id never exists in grand's route). alternation-cook-monkfish is
+//     different: its 3 members (cook-monkfish, gather-monkfish,
+//     quest-swan-song) all individually exist in grand — verified at
+//     positions 178/192/185 in the current 215-step bake — but grand's denser
+//     interleave (opportunistic weave + the full quest spine sharing the same
+//     region) never lands them as 3 CONSECUTIVE steps, so the marker's own
+//     trigger condition never fires. Not a missing-content gap, a route-shape
+//     difference between the narrow p2p bake and the superset spine.
 //
 // goal-quest-cape vs goal-quest-spine (SUBSET, documented per the build brief's
 // own escape hatch: "a converging honest subset beats a broken superset"):
@@ -46,7 +86,7 @@ import { loadFixtures, readData, makeEnv, freshProfile, queueGoal } from "../../
 import { routeMulti } from "../../assets/js/router/planner/greedy.js";
 import { burndownResolve } from "../../assets/js/router/planner/burndown.js";
 
-const DEFAULT_GOALS = ["goal-early-game", "goal-quest-spine", "barrows", "gwd", "raids-cox"];
+const DEFAULT_GOALS = ["goal-early-game", "goal-quest-spine", "quest-dt", "quest-mm", "barrows", "gwd", "raids-cox"];
 
 const data = loadFixtures();
 const questSteps = readData("steps_quests");
