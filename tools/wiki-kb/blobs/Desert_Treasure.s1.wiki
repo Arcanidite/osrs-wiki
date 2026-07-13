@@ -1,0 +1,69 @@
+==Details==
+{{Quest details
+|start = Talk to [[Asgarnia Smith]] at the [[Bedabin Camp]].
+|startmap = 3178,3043
+|difficulty = Master
+|description = Rumours abound throughout Varrock and Al Kharid that an archaeologist has discovered clues to a hoard of treasure hidden deep in the desert, south of Al Kharid.
+
+Anybody prepared to offer him assistance in his treasure hunting could well find themselves benefitting from a very large reward indeed...
+|length = Long
+|requirements = * Completion of the following quests:
+** [[The Dig Site]]
+** [[Temple of Ikov]]
+** [[The Tourist Trap]]
+** [[Troll Stronghold]]
+*** [[Death Plateau]]
+** [[Priest in Peril]]
+** [[Waterfall Quest]]
+* {{SCP|Thieving|53|link=yes}} {{Boostable|no}} {{Questreqstart|no}}
+* {{SCP|Magic|50|link=yes}} {{Boostable|no}} {{Questreqstart|}}
+* {{SCP|Firemaking|50|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Slayer|10|link=yes}} {{Boostable|no}}  {{Questreqstart|no}} '''or''' the [[gas mask]] from [[Plague City]]
+* Access to [[Morytania Graveyard]]
+|items = * 10+ [[Shantay pass (item)|Shantay pass]]es '''or''' a way to enter the [[Kharidian Desert]] without one
+* 650 [[Coins]]
+* 12 [[Magic logs]] (can be noted)
+* 6 [[Steel bar]] (can be noted)
+* 6 [[Molten glass]] (can be noted)
+* [[Ashes]]
+* [[Charcoal]]
+* 1 [[blood rune]]
+* [[Bones]] (can be noted to prevent accidental burial)
+* A [[silver bar]]
+* [[Garlic powder]] (made by grinding [[garlic]] in a [[pestle and mortar]])
+* [[Spice]] ([[gnome spice]] and [[Evil Dave]]'s spices will '''not''' work)
+* A sweet ([[cake]], [[chocolate cake]] (part cakes are accepted), [[chocolate bar]], [[cooking apple]], or [[pineapple pizza]])
+* [[Spiked boots]] (obtainable during the quest by bringing [[Dunstan]] [[climbing boots]] and an [[iron bar]]; do so '''before''' attempting to obtain the [[ice diamond]])
+* [[Climbing boots]] (if [[Eadgar's Ruse]] isn't completed and/or you lack 61 [[Magic]] for the [[Trollheim Teleport]])
+* A [[facemask]], [[slayer helmet]], or [[gas mask]]
+* A [[tinderbox]]
+* 20-50+ [[lockpick]]s
+|recommended = * {{SCP|Combat|70|link=yes}}
+* Started [[Nature Spirit]] to enter [[Mort Myre Swamp]]
+* High-healing [[Food]] 
+* [[Prayer potion]]s ('''highly''' recommended)
+* [[Super restore]] or [[Menaphite remedy]] potions ('''highly''' recommended)
+* [[Antidote++]] or [[antipoison]]s (especially if [[Ironman]]) ('''highly''' recommended)
+* [[Ice gloves]] or [[Smiths gloves (i)]] (to be able to wield a weapon against [[Fareed]] if not using [[water spells]] with runes only)
+* [[stamina potion|Stamina]], [[super energy potion|super energy]] or [[energy potion]]s
+* [[Weight-reducing clothing]] to lower [[run energy]] drain and restore [[run energy]] faster
+* [[Coin]]s for [[magic carpet]] rides (bring a [[ring of charos (a)]] for discounted rides)
+* [[Ring of dueling]] (easy access to [[Kharidian Desert]])
+* [[Digsite pendant]] (easy access to [[Exam Centre]])
+* [[Ectophial]] (easy access to [[Morytania]])
+* [[Skills necklace]] or [[Necklace of passage]] (easy access to [[Rasolo]])
+* Runes to cast [[Paddewwa Teleport]] to complete a [[Varrock_Diary#Hard|Varrock Hard Diary]] task
+* 80,000 [[Coins]] if purchasing an [[Ancient Staff]] after the quest from [[Eblis]]
+|kills = * [[Dessous]] ''(level 139)''
+* 5 [[ice troll]]s ''(level 120-124)''
+* [[Kamil]] ''(level 154)''
+* [[Fareed]] ''(level 167)''
+* [[Damis]] ''(2 forms, levels 103 and 174)''
+* You will also need to tank hits by many high level enemies throughout most parts of the quest.
+|ironman = * [[File:Ultimate ironman chat badge.png]] The player briefly visits [[Entrana]].
+*Player will need to obtain [[Magic logs]]; see the "enchanting the mirrors" section for more information
+*Lockpicks and antipoisons may be pickpocketed from the [[Bandit (Bandit Camp)|Bandits]] in the vicinity of the chest where they're needed.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}

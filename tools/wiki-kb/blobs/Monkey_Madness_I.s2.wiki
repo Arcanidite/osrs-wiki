@@ -1,0 +1,8 @@
+==Introduction ==
+[[File:Monkey Madness I - Ape Atoll map.png|thumb|400px|All the routes you'll need to take in the quest.]]
+
+[[Ape Atoll]] is one of the most dangerous areas in the game. All native creatures other than the level 5 [[Bird|birds]] will be [[aggressive]] towards you, regardless of your [[combat level]], whenever you're not wearing the [[monkey greegree]] (made later in the quest). Players can hug the coasts of Ape Atoll when moving to avoid the poisonous snakes and spiders; some snakes may still be encountered this way, but players can simply wait for them to move.
+
+When going to the island, make sure to bring plenty of [[food]], [[Antipoison|antipoison potions]], and an emergency [[teleport]], in addition to any other required items. Switching off [[Auto Retaliate|auto retaliate]] and utilising [[protection prayers]] will greatly improve your chances of survival.
+
+At any point, you can teleport or flee from [[Ape Atoll]] to restock items without losing your progress. To leave the island by boat, simply talk to [[Lumdo]] in the landing area to go from Ape Atoll back to [[Crash Island]], and then talk to [[Waydar]] on Crash Island to go back to the [[Tree Gnome Stronghold]]. To resume the quest, talk to [[Daero]] on the {{FloorNumber|uk=1}} of the [[Grand Tree]] to go back to the hangar, talk to Waydar in the hangar to go back to Crash Island, and finally, talk to Lumdo on Crash Island to return to Ape Atoll.

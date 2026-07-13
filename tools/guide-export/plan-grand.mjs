@@ -204,12 +204,17 @@ const covered = {
   // single cited detail line. Flagship Step0→Endgame chain opts in first;
   // enrich.py merges train_methods.jsonl by id (default OFF = byte-identical).
   train_methods: true,
-  // granular: true — KEPT (task #9): naively dropping it regressed route-grand
-  // quest coverage 79→62, because quest_atoms keys off steps_quests.jsonl ids
-  // while route-grand routes several quests via steps.jsonl ids (quest-dt,
-  // quest-mm, …) — the id-spaces only partially overlap. Both mechanisms run
-  // (granular wins per enrich.py's guard); unifying properly means reconciling
-  // the quest id-spaces so quest_atoms alone covers all 89, a documented gap.
+  // granular: true — the task-#9 79→62 id-space split is now RECONCILED
+  // (CONSOLIDATION.md Lane B / gap-idspace-01): consolidate_quest_atoms.py
+  // additively accepts steps.jsonl short ids (quest-dt/quest-mm/rfd-*) as
+  // quest-expansion parents, so quest_atoms ALONE now covers all 89 of
+  // route-grand's quest steps (was 79 via the split, then 89 once RFD's 10
+  // chapters were authored). enrich.py attaches quest_atoms BEFORE granular,
+  // so quest_atoms wins for every quest. granular is KEPT because it is still
+  // the load-bearing bank for NON-quest coarse ids (train-*/synth-* etc,
+  // which quest_atoms never touches) — for quests it is now a redundant
+  // fallback, not the covering mechanism. See tools/reconcile_quest_idspace.py
+  // + design/gap-idspace-01-analysis.md.
   granular: true,
   // quest_atoms: true — attach each quest step's ordered sub-checklist
   // (steps_quest_atoms.jsonl + quest_expansions.jsonl, minted by

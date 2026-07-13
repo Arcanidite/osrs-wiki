@@ -930,3 +930,12 @@
 {"key": "norm-q-wilderness-01", "status": "pending", "payload": {"note": "normalization fan-out"}, "ts": "2026-07-12T19:32:43Z"}
 {"key": "norm-q-wilderness-01", "status": "claimed", "payload": null, "ts": "2026-07-12T19:32:43Z"}
 {"key": "norm-q-wilderness-01", "status": "done", "payload": null, "ts": "2026-07-12T19:32:48Z"}
+{"key": "gap-idspace-01", "status": "pending", "payload": {"note": "Lane B id-space reconciliation, orchestrator pass"}, "ts": "2026-07-13T13:33:50Z"}
+{"key": "gap-idspace-01", "status": "claimed", "payload": null, "ts": "2026-07-13T13:33:50Z"}
+{"key": "gap-rfd-01", "status": "pending", "payload": {"note": "RFD sub-checklist gap fill: rfd-intro, quest-rfd-start, rfd-mountain-dwarf, rfd-goblins, rfd-pirate-pete"}, "ts": "2026-07-13T13:36:20Z"}
+{"key": "gap-rfd-01", "status": "claimed", "payload": null, "ts": "2026-07-13T13:36:20Z"}
+{"key": "gap-rfd-02", "status": "pending", "payload": {"note": "RFD chapters 6-10: evil-dave, skrach, sir-amik, awowogei, finale"}, "ts": "2026-07-13T13:36:34Z"}
+{"key": "gap-rfd-02", "status": "claimed", "payload": null, "ts": "2026-07-13T13:36:35Z"}
+{"key": "gap-rfd-01", "status": "done", "payload": null, "ts": "2026-07-13T13:38:31Z"}
+{"key": "gap-rfd-02", "status": "done", "payload": {"contributed": ["questatoms:rfd-evil-dave", "questatoms:rfd-skrach", "questatoms:rfd-sir-amik", "questatoms:rfd-awowogei", "questatoms:rfd-finale"], "atoms_total": 89}, "ts": "2026-07-13T13:40:20Z"}
+{"key": "gap-idspace-01", "status": "done", "payload": {"resolution": "quest_atoms alone 89/89; granular redundant for quests; RFD 10 chapters authored via gap-rfd-01/02"}, "ts": "2026-07-13T13:46:18Z"}

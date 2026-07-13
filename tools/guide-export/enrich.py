@@ -1253,10 +1253,19 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
                                for m in extra["mapMarkers"]]
         if train_methods and not s.get("methods") and extra.get("methods"):
             s["methods"] = extra["methods"]
-        if granular and not s.get("subChecklist") and extra.get("subChecklist"):
-            s["subChecklist"] = extra["subChecklist"]
+        # Lane B (CONSOLIDATION.md §5/§7, gap-idspace-01): quest_atoms checked
+        # FIRST — it's the higher-citation bank (100% refs vs oppgran's
+        # partial coverage) and, post-reconciliation, covers every quest
+        # granular used to cover alone (see reconcile_quest_idspace.py +
+        # consolidate_quest_atoms.py's steps.jsonl short-id parent fallback).
+        # granular stays as the true fallback for anything quest_atoms
+        # doesn't (yet) reach — redundant for quests, not deleted; still
+        # load-bearing for non-quest coarse ids (train-*/synth-* etc, which
+        # quest_atoms never touches).
         if quest_atoms and not s.get("subChecklist") and extra.get("questChecklist"):
             s["subChecklist"] = extra["questChecklist"]
+        if granular and not s.get("subChecklist") and extra.get("subChecklist"):
+            s["subChecklist"] = extra["subChecklist"]
 
     # Skill+band fallback for planner-SYNTHESIZED training steps: their ids
     # (synth-<skill>-<level>-<n>) carry a per-route counter suffix, so the

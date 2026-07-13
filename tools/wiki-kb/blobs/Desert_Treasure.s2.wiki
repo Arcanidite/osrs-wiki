@@ -1,0 +1,9 @@
+==Introduction==
+Desert Treasure is one of ''[[Old School RuneScape]]''{{'}}s most well-known quests, and is commonly completed by [[player killers]] for its reward of the [[Ancient Magicks]]. Due to the difficulty of the quest's bosses, players are '''highly advised''' to read through each section before starting the fights, as each boss has unique fight mechanics that heavily favour certain combat styles, including immunity to specific spells. [[Pures]] wishing to avoid gaining [[Hitpoints]] experience should note that all of the bosses may be defeated with the help of a [[Dwarf multicannon|cannon]], but should be prepared to use 500 or more [[Cannonball|cannonballs]] due to the high amount of combat throughout the quest. See the "notes for pures" section under each boss for more information.
+
+==== Stranger Danger ====
+Before starting, note that if you're carrying one or more of the [[Diamonds of Azzanadra]], you may be attacked by a level 95 [[Stranger]] who appears next to you and carries a [[poison]]ed [[dragon dagger]]. This is random and does not happen to everyone, but can happen at any point where the diamonds are in your inventory.
+
+To be safe, players may want to carry a [[teleport]] and [[antipoison]] when moving the diamonds and ensure having some spare [[prayer point]]s until the quest is completed. Players can flee from him when he appears. Simply banking the diamonds will prevent him from appearing further, but players should be warned that he can strike almost immediately after the diamonds are received from their respective bosses.
+
+[[Ultimate ironmen]] can deposit each diamond into the pyramid as they acquire them so as not to risk attack; see the [[Desert Treasure I#The Ancient Pyramid|Ancient Pyramid section]] below for more information.

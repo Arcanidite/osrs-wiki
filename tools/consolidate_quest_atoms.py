@@ -33,6 +33,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(REPO, "assets/data/tools")
 CONTRIB = os.path.join(REPO, "tools/wiki-kb/contrib.jsonl")
 STEPS_QUESTS = os.path.join(DATA, "steps_quests.jsonl")
+STEPS = os.path.join(DATA, "steps.jsonl")
 ATOMS_OUT = os.path.join(DATA, "steps_quest_atoms.jsonl")
 EXPANSIONS_OUT = os.path.join(DATA, "quest_expansions.jsonl")
 
@@ -154,8 +155,27 @@ def lint(row, warns):
             warns.append(f"{row['id']}: coord ({m['x']},{m['y']}) outside envelope")
 
 
-def consolidate():
+def load_parents():
+    """Quest parent-row lookup for quest_id resolution. steps_quests.jsonl
+    (long-id space) is primary; CONSOLIDATION.md Lane B additive fallback:
+    ids not there but present in steps.jsonl's own quest-/rfd- rows (the
+    SHORT-id spine space, e.g. quest-mm/quest-dt/rfd-*) resolve to their own
+    steps.jsonl row as parent — no id is renamed/duplicated, this only widens
+    where consolidate() will accept a quest_id from. Resolves gap-idspace-01:
+    quest_atoms previously covered only the long-id space, so grand's 27
+    short-id-routed quests fell back to granular's oppgran registry alone."""
     parents = {r["id"]: r for r in read_jsonl(STEPS_QUESTS)}
+    for r in read_jsonl(STEPS):
+        rid = r["id"]
+        if rid in parents:
+            continue
+        if rid.startswith("quest-") or rid.startswith("rfd-"):
+            parents[rid] = r
+    return parents
+
+
+def consolidate():
+    parents = load_parents()
     seen, atom_rows, expansions, warns = set(), [], [], []
     unwind = {}
     for row in read_jsonl(CONTRIB):
