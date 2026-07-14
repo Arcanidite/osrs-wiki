@@ -24,6 +24,25 @@ Each step carries the state it LEAVES the player in:
 Transitions ARE the atoms: withdraw(bank→inv) · equip(inv→worn) · gather/kill(inv+) ·
 produce/consume(inv Δ) · deposit(inv→bank). The simulator applies them → `state_after`.
 
+## 2b. INVENTORY REALISM (v1 state_scan was naive — accumulated "ever produced"; FIX)
+The first `state_scan` treated `inventory` as a monotonically-growing SET of everything ever
+produced/withdrawn — so by step 363 (Rum Deal) it lists 70× pineapple + bones + every loadout,
+which is nonsense. The model MUST be a real OSRS inventory, not a cumulative pile:
+- **28-slot cap.** Inventory holds ≤28 slots. Non-stackables take 1 slot each; STACKABLES
+  (coins, runes, ammo, feathers, and any NOTED item) occupy ONE slot regardless of count. Track
+  each item's `noted` flag (banknotes stack) and `stackable` property (from the wiki item infobox).
+- **Add AND remove.** withdraw(bank→inv) · gather/produce/buy(inv+) · consume/sell/use-on(inv−)
+  · deposit(inv→bank) · equip(inv→worn). A consumed/deposited/equipped item LEAVES inventory.
+  When a band ends and you bank, inventory empties to the next loadout — it does NOT carry the
+  whole route's history forward.
+- **Three distinct containers:** `inventory` (≤28, current loadout only), `equipped` (worn gear
+  slots), `bank` (unbounded staged stock). An item lives in exactly one. `loadout:<name>`
+  placeholders must be ITEMIZED (resolve the withdraw atom's actual items) or shown as `"??"`,
+  never as opaque pseudo-items in the inventory list.
+- **Overflow is a signal:** if adds exceed 28 the model FLAGS it (a real design fault to fix in
+  the route, e.g. "drop/bank here"), never silently overflows.
+The `state_after.inventory` shown per step = ONLY what the player realistically holds THEN.
+
 ## 3. Requisite inventory/gear/bank management (first-class)
 Per interaction specify: the LOADOUT to withdraw (exact inventory for the block, within the
 28-slot budget — food/potion/tool/space arithmetic), the gear to equip, what stays banked,
@@ -44,6 +63,13 @@ per step (skills already accumulate; add inventory/equipped/bank via the atom tr
 Consolidation VERIFIES each step against wiki (wikicli) + calculated values (xp from
 `Experience_table.s2`; gp/xp from the cost model) + the state simulator — never by eye —
 and writes the annotations back through the SIDECARS (never hand-edit route JSON).
+
+## 7. CHECKLIST UI — sub-atoms must be TICKABLE (not prose steps)
+The subChecklist currently renders as prose "steps." Each atom must be a CHECKABLE leaf: a
+checkbox + persisted checked-state (mirror the main step's done-state in `gc-state`), so the
+player ticks individual micro-actions and sees sub-progress (e.g. "3/5 done"). Checkpoints are
+group headers; the atoms beneath them are the checkable items. Methods[] pick-one stays a
+radio-style pick. Overlay-only, no game input; reuse the existing done/skip persistence path.
 
 ## 6. Conventions honored
 Wiki=SoT via wikicli; own-words; gather-not-GE; `"??"` over guesses; atom node shape + 17-verb
