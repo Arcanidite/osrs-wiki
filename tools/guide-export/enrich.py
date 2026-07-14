@@ -172,12 +172,21 @@ def topo_order(steps, xp_fold=False):
             gate_ok    = quest_done(gate) if gate else True
             if skills_ok and tags_ok and quests_ok and gate_ok:
                 ordered.append(s)
-                # Apply grants: skill levels + boolean tags
+                # Apply grants: boolean tags + skill levels. bool FIRST —
+                # isinstance(True, int) is True in Python, so the numeric
+                # branch silently swallowed every tag grant ({"has-x": true}
+                # became a level-1 "skill"), leaving the S7 tag-bridge
+                # UNENFORCED in this re-simulation: tag-gated supply steps
+                # (setup-ultracompost → farm-ranarr-patch → brew-prayer-potion
+                # cascade) could never become ready and always fell into the
+                # unordered-dump fallback at the route's tail. Measured on
+                # route-grand via route_feasibility.mjs (unlock-barrows/gwd
+                # 140+ steps before their potion producers).
                 for k, v in (s.get("grants") or {}).items():
-                    if isinstance(v, (int, float)):
-                        state[k] = max(lvl(k), v)
-                    elif v is True:
+                    if v is True:
                         state[f"tag:{k}"] = True
+                    elif isinstance(v, (int, float)):
+                        state[k] = max(lvl(k), v)
                 # Apply produces additively (S7 — local ordering guard only)
                 for k, v in (s.get("produces") or {}).items():
                     if isinstance(v, (int, float)):
@@ -239,6 +248,9 @@ def _opp_fallback_stub(item, consumer, source_step):
         "reqs": {"skills": {}}, "grants": {}, "tags": [],
         "branch": {"alt_group": f"opp-{item}-{consumer}", "when": {}, "optional": True},
         "_opportunistic_stub": True,
+        # P10 anchor pin (demand_gate routes): stubs re-detach before phased_steps
+        # and re-attach at the consumer, same as their opp node — see _detach_pinned.
+        "_opp_anchor": consumer, "_opp_side": "before",
     }
 
 
@@ -300,6 +312,10 @@ def _weave_opportunistic(ordered, steps_bank, oppgran_rows, xp_fold):
             "_supply": True, "_supply_chain": source_step.get("_supply_chain") or source_step.get("supply_chain"),
             "_opportunistic": True,
             "paysOff": {"at": earliest["consumer_id"], "item": item},
+            # P10 anchor pin (demand_gate routes): keeps the P8-chosen collection
+            # window through phased_steps' re-pick — OPPORTUNISTIC_GRANULARITY §2b's
+            # documented positional-promise gap, closed by _detach_pinned/_reattach_phased.
+            "_opp_anchor": earliest["collect_at_id"], "_opp_side": "after",
         })
         overlays.append({"anchor_id": earliest["collect_at_id"], "side": "after", "node": source_step})
         for plan in group:
@@ -423,11 +439,88 @@ def reattach_overlays(path, overlays):
     return result
 
 
-def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
+# P10a (demand_gate routes only) — re-detach every anchor-pinned node before
+# phased_steps' from-scratch re-pick: P5 overlay nodes (_bg/_alternation, pinned
+# via _anchor/_side) AND P8 opportunistic re-pins + their skip-stubs (pinned via
+# _opp_anchor/_opp_side, stamped in _weave_opportunistic). phased_steps has no
+# concept of "P4/P8 already chose this exact position"; letting it re-pick these
+# nodes is exactly OPPORTUNISTIC_GRANULARITY §2b's documented positional-promise
+# gap (measured on route-grand: a compost gather drifted to step 7, before
+# character creation). The nodes ride around P10 and re-attach at their anchors
+# in the PHASED output via _reattach_phased, inheriting the anchor's phase.
+def _detach_pinned(path):
+    clean, pinned = [], []
+    for step in path:
+        if step.get("_opportunistic") or step.get("_opportunistic_stub"):
+            anchor, side = step.get("_opp_anchor"), step.get("_opp_side", "after")
+        elif step.get("_bg") or step.get("_alternation"):
+            anchor, side = step.get("_anchor"), step.get("_side", "before")
+        else:
+            anchor = None
+        if not anchor:
+            clean.append(step)
+            continue
+        pinned.append({"anchor_id": anchor, "side": side, "node": step})
+    return clean, pinned
+
+
+# P10b — mirror of reattach_overlays for the phased {step|milestone|steer, phase}
+# entry shape. Orphans (anchor absent from the phased output) append at the tail
+# in the endgame phase — visible, never silently dropped.
+def _reattach_phased(phased, pinned):
+    if not pinned:
+        return phased
+    by_anchor = {}
+    for ov in pinned:
+        slot = by_anchor.setdefault(ov["anchor_id"], {"before": [], "after": []})
+        slot[ov["side"]].append(ov["node"])
+    result, attached = [], set()
+    for entry in phased:
+        sid = entry["step"].get("id") if "step" in entry else None
+        slot = by_anchor.get(sid)
+        if slot:
+            attached.add(sid)
+            result.extend({"step": n, "phase": entry["phase"]} for n in slot["before"])
+        result.append(entry)
+        if slot:
+            result.extend({"step": n, "phase": entry["phase"]} for n in slot["after"])
+    endgame = phase_name("endgame", "")
+    result.extend({"step": ov["node"], "phase": endgame}
+                  for ov in pinned if ov["anchor_id"] not in attached)
+    return result
+
+
+def phased_steps(ordered, milestones, xp_fold=False, quest_first=None,
+                 demand_gate=False, anchored_nodes=None, chain_order=None):
     """Segment steps into tight milestone episodes. Milestones are taken easiest
     first; each episode pulls exactly the not-yet-emitted training that advances
     toward its skill reqs, then emits the milestone as the episode's capstone.
     Steps no milestone needs fall into a trailing 'Endgame & extras' phase.
+
+    demand_gate (opt-in, default False → byte-identical for every existing
+    caller; only plan-grand.mjs sets goal.demand_gate) — the OPPORTUNISTIC
+    §2-epoch placement contract, mechanized: a supply loop belongs where its
+    producer's reqs AND a downstream consumer's demand both exist, never
+    front-loaded. Three effects, all inside this re-pick only:
+      * SUPPLY DEMAND-HOLD — a _supply/supply_chain step is not ready() until
+        the episode of the first milestone whose reqs.tags carries
+        supply-<chain> (the S6 tag-bridge burndown.js already writes). Without
+        this, zero-req scaffolding (pps-* withdraws/deposits) wins the
+        supply-priority tier in the very first episode — the measured
+        "making prayer potions on step 11" fault.
+      * REQS.ITEMS GATE — a step's reqs.items classes ("food",
+        "prayer_potion") must be covered by accumulated produces{} keys
+        (class match: key == name or key startswith name+"_", the
+        supply_chains.jsonl output_item slug convention). Holds
+        unlock-barrows/unlock-gwd behind brew-prayer-potion/cook-monkfish.
+        Greedy never sees item state (S6); this re-pick is where play order
+        is finalized, so it is where the edge must hold.
+      * ORDERED ENDGAME DRAIN — the trailing remainder is drained through the
+        same ready()-gated take() loop (all demand epochs open) instead of a
+        verbatim array dump, so producer→consumer edges hold in the tail too.
+    Steps stamped _pin_prefix (plan-grand's origin prefix) always win the
+    take() priority chain — the route's bootstrap block precedes everything;
+    stamp-driven, so routes without stamps are untouched.
 
     quest-chain fix: ready() previously checked only skill reqs, so this local
     re-pick could pull a step ahead of its own reqs.quests/location.quest_gate
@@ -457,6 +550,65 @@ def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
     ms = sorted(milestones, key=_difficulty)
     remaining, state, out = list(ordered), {}, []
     lvl = lambda k: state.get(k, 1)
+    # demand_gate state: chain → index of the FIRST milestone (episode order)
+    # whose reqs.tags demands supply-<chain>; produced{} keys accumulated for
+    # the reqs.items class gate; epoch[0] = current episode index.
+    chain_of = lambda s: s.get("_supply_chain") or s.get("supply_chain")
+    demand_epoch = {}
+    if demand_gate:
+        for mi, m in enumerate(ms):
+            for tag in ((m.get("reqs") or {}).get("tags", []) or []):
+                if tag.startswith("supply-"):
+                    demand_epoch.setdefault(tag[len("supply-"):], mi)
+    produced, epoch = set(), [0]
+    emitted_ids = set()
+    remaining_ids = {s.get("id") for s in remaining}
+    step_by_id = {s.get("id"): s for s in remaining}
+
+    def held(step):
+        if not demand_gate:
+            return False
+        chain = chain_of(step)
+        if not chain:
+            return False
+        if chain in demand_epoch and epoch[0] < demand_epoch[chain]:
+            return True
+        # Chain-registry queue (supply_chains.jsonl steps[] order): a member is
+        # takeable only once every earlier registry member has emitted, AND the
+        # next present member's own core reqs already clear. Without the first
+        # half, zero-req scaffolding (pps-05 withdraw-brew, pps-06 deposit-
+        # potions) outruns the skill-gated loop cores by 100+ steps — the
+        # "bank the potions before brewing them" detachment; without the
+        # second, the registry HEAD (pps-01 withdraw-compost-run) leads the
+        # block by the same margin because nothing precedes it. Members absent
+        # from the route are skipped; unregistered members (synth bootstraps)
+        # are always queue-eligible (their tag grants already order them).
+        order = (chain_order or {}).get(chain)
+        sid = step.get("id")
+        if not order or sid not in order:
+            return False
+        my_idx = order[sid]
+        if any(oid != sid and oidx < my_idx and oid not in emitted_ids
+               and oid in remaining_ids
+               for oid, oidx in order.items()):
+            return True
+        # Pairwise wait applies ONLY to pure scaffolding (no grants, no
+        # produces — bank withdraws/deposits): a producer must stay exempt or
+        # producer→consumer pairs deadlock (gather-volcanic-ash would wait on
+        # setup-ultracompost, whose core needs volcanic ash's own tag grant).
+        if (step.get("grants") or {}) or (step.get("produces") or {}):
+            return False
+        nxt = min(((oidx, oid) for oid, oidx in order.items()
+                   if oidx > my_idx and oid in remaining_ids), default=None)
+        return bool(nxt) and not core_ok(step_by_id[nxt[1]])
+
+    def items_ok(step):
+        if not demand_gate:
+            return True
+        names = [it if isinstance(it, str) else (it or {}).get("item")
+                 for it in ((step.get("reqs") or {}).get("items", []) or [])]
+        return all(any(k == n or k.startswith(n + "_") for k in produced)
+                   for n in names if n)
     # eff() folds accumulated quest-reward XP on top of the trained floor —
     # used ONLY for per-step readiness (below), matching graph.js effRead, so a
     # step whose bank-side reqs.skills is only reachable via quest XP (not pure
@@ -477,20 +629,34 @@ def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
     has_tag = lambda t: state.get(f"tag:{t}", False)
 
     def apply(step):
+        # bool BEFORE numeric — isinstance(True, int) is True; see topo_order's
+        # tag-grant comment for the measured fault this dispatch order fixes.
         for k, v in (step.get("grants") or {}).items():
-            if isinstance(v, (int, float)):
-                state[k] = max(lvl(k), v)
-            elif v is True:
+            if v is True:
                 state[f"tag:{k}"] = True
+            elif isinstance(v, (int, float)):
+                state[k] = max(lvl(k), v)
+        produced.update((step.get("produces") or {}).keys())
         if _is_quest(step):
             state[f"quest:{step['id']}"] = True
             if xp_fold:
                 _accumulate_quest_xp(state, step)
+        # P10a-detached nodes (_detach_pinned) re-attach at this anchor AFTER
+        # the re-pick — their grants/produces must still enter THIS simulation's
+        # state at the anchor's own emission point, or a downstream reqs.items
+        # consumer (unlock-barrows needing cook-monkfish's food_monkfish) can
+        # never clear its gate.
+        for node in (anchored_nodes or {}).get(step.get("id"), []):
+            emitted_ids.add(node.get("id"))
+            apply(node)
 
     def met(reqs):
         return all(lvl(k) >= v for k, v in reqs.items())
 
-    def ready(step):
+    def core_ok(step):
+        """Readiness minus the demand-gate queue — skills/tags/quests/gate +
+        the reqs.items class gate. held() consults this for the NEXT chain
+        member (never the queue itself, so no recursion)."""
         quest_reqs = (step.get("reqs") or {}).get("quests", []) or []
         tag_reqs = (step.get("reqs") or {}).get("tags", []) or []
         gate = (step.get("location") or {}).get("quest_gate")
@@ -498,7 +664,11 @@ def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
         return (all(eff(k) >= v for k, v in skill_reqs.items())
                 and all(has_tag(t) for t in tag_reqs)
                 and all(quest_done(q) for q in quest_reqs)
-                and (quest_done(gate) if gate else True))
+                and (quest_done(gate) if gate else True)
+                and items_ok(step))
+
+    def ready(step):
+        return core_ok(step) and not held(step)
 
     def advances(step, target):
         grants = step.get("grants") or {}
@@ -509,10 +679,20 @@ def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
         if step is None:
             return None
         remaining.remove(step)
+        remaining_ids.discard(step.get("id"))
+        emitted_ids.add(step.get("id"))
         apply(step)
         return step
 
-    for m in ms:
+    # _pin_prefix (stamp-driven, no flag): the route's mandated opening block
+    # (plan-grand's Tutorial Island origin prefix) outranks every other pick —
+    # priority preds (advances/supply) used to reach PAST it, putting "kill
+    # chickens" and bank-withdraw scaffolding before character creation.
+    pin_pred = lambda s: bool(s.get("_pin_prefix"))
+    supply_or_opp_pred = lambda s: bool(s.get("_opportunistic")) or bool(s.get("_supply"))
+
+    for mi, m in enumerate(ms):
+        epoch[0] = mi
         phase, target = phase_name("toward", m["label"]), _skill_reqs(m)
         while not met(target):
             # quest-chain fix (quest_first-gated, same fixture-parity reasoning as
@@ -550,15 +730,25 @@ def phased_steps(ordered, milestones, xp_fold=False, quest_first=None):
             # pick ASAP once useful" — this mirrors that priority one level
             # below quest/advances instead of leaving supply chains to win or
             # lose the catch-all lottery against whatever else is ready.
-            supply_or_opp_pred = lambda s: bool(s.get("_opportunistic")) or bool(s.get("_supply"))
-            step = (take(quest_first_pred) or take(lambda s: advances(s, target))
+            step = (take(pin_pred) or take(quest_first_pred)
+                    or take(lambda s: advances(s, target))
                     or take(supply_or_opp_pred) or take(lambda s: True))
             if step is None:
                 break                         # unmet prereq — capstone anyway
             out.append({"step": step, "phase": phase})
         out.append({"milestone": m, "phase": phase})
+    endgame = phase_name("endgame", "")
+    if demand_gate:
+        # Ordered drain: all demand epochs open; keep pulling ready steps so the
+        # tail honors producer→consumer edges instead of dumping array order.
+        epoch[0] = len(ms)
+        while remaining:
+            step = take(pin_pred) or take(supply_or_opp_pred) or take(lambda s: True)
+            if step is None:
+                break                         # genuinely stuck residue — dump below, visible
+            out.append({"step": step, "phase": endgame})
     for step in remaining:
-        out.append({"step": step, "phase": phase_name("endgame", "")})
+        out.append({"step": step, "phase": endgame})
     return out
 
 
@@ -636,11 +826,12 @@ def phased_steps_with_steer(ordered, milestones, all_steer_points, goal_steer_id
     quest_done = lambda qid: state.get(f"quest:{qid}", False)
 
     def apply_step(step):
+        # bool BEFORE numeric — see topo_order's tag-grant comment.
         for k, v in (step.get("grants") or {}).items():
-            if isinstance(v, (int, float)):
-                state[k] = max(lvl(k), v)
-            elif v is True:
+            if v is True:
                 state[f"tag:{k}"] = True
+            elif isinstance(v, (int, float)):
+                state[k] = max(lvl(k), v)
         if _is_quest(step):
             state[f"quest:{step['id']}"] = True
 
@@ -1078,11 +1269,12 @@ def _coalesce_checkpoints(steps, checkpoint_member):
     def state_before(pos):
         state = {}
         for s in result[:pos]:
+            # bool BEFORE numeric — see topo_order's tag-grant comment.
             for k, v in (s.get("grants") or {}).items():
-                if isinstance(v, (int, float)):
-                    state[k] = max(state.get(k, 1), v)
-                elif v is True:
+                if v is True:
                     state[f"tag:{k}"] = True
+                elif isinstance(v, (int, float)):
+                    state[k] = max(state.get(k, 1), v)
             if _is_quest(s):
                 state[f"quest:{s['id']}"] = True
         return state
@@ -1154,6 +1346,12 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # per route (default OFF → byte-identical for every pinned fixture); only
     # plan-grand.mjs sets goal.opportunistic:true so far.
     opportunistic = bool(goal.get("opportunistic"))
+
+    # OPPORTUNISTIC_GRANULARITY §2-epoch — demand-gated placement in P10 (see
+    # phased_steps' docstring: supply demand-hold + reqs.items gate + ordered
+    # endgame drain + P10a/P10b anchor-pin round-trip). Opt-in per route
+    # (default OFF → byte-identical); only plan-grand.mjs sets goal.demand_gate.
+    demand_gate = bool(goal.get("demand_gate"))
 
     # NORMALIZATION §1a — quest sub-checklists (questatoms fan-out, consolidated
     # into quest_expansions.jsonl + steps_quest_atoms.jsonl). ATTACH model, same
@@ -1300,6 +1498,19 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
             phased = phased_steps_with_steer(
                 ordered_with_overlays, milestones, steer_points, goal_steer_ids
             )
+        elif demand_gate:
+            # P10a/P10b — anchor-pinned nodes ride around the re-pick (see
+            # _detach_pinned); phased_steps runs demand-gated on the rest.
+            base, pinned = _detach_pinned(ordered_with_overlays)
+            anchored = {}
+            for ov in pinned:
+                anchored.setdefault(ov["anchor_id"], []).append(ov["node"])
+            chain_order = {c["id"]: {sid: i for i, sid in enumerate(c.get("steps", []))}
+                           for c in (supply_chains or [])}
+            phased = phased_steps(base, milestones, xp_fold=phase_xp_fold,
+                                  quest_first=xp_fold, demand_gate=True,
+                                  anchored_nodes=anchored, chain_order=chain_order)
+            phased = _reattach_phased(phased, pinned)
         else:
             phased = phased_steps(ordered_with_overlays, milestones,
                                    xp_fold=phase_xp_fold, quest_first=xp_fold)

@@ -171,6 +171,13 @@ const routedPath = routeMulti(queued, mergedSteps, freshProfile(), env);
 // Tutorial Island instructor sequence -> Lumbridge arrival, mirrors plan-
 // origin.mjs's ORDER constant minus the 4 quest openers, which arrive via
 // routedPath instead so they carry the SAME single copy other chains reuse).
+// _pin_prefix stamps (copies — never mutate the shared steps_origin rows that
+// mergedSteps/routeMulti also hold): enrich.py phased_steps' priority preds
+// (advances/supply) are position-blind hunts that used to reach PAST this
+// block — measured: "kill chickens" at step 2 and pps-* bank scaffolding at
+// steps 3-12, before character creation at 13. The stamp makes the origin
+// block the take() chain's top tier, so it opens the route unconditionally.
+const pinnedOrigin = originSteps.map((s) => ({ ...s, _pin_prefix: true }));
 
 // EPILOGUE — quest-cape residue (see the file-header comment above for the
 // full rationale). `grandIds` = every id this driver's own routing already
@@ -254,7 +261,7 @@ if (unresolvedResidueIds.includes(CAPE_MILESTONE_ID)) {
   });
 }
 
-const path = [...originSteps, ...routedPath, ...residueSteps];
+const path = [...pinnedOrigin, ...routedPath, ...residueSteps];
 
 // Run burndown separately to get sanitized goals (with supply tag-bridge
 // applied), same pattern as plan-multi.mjs/plan-quests.mjs. goal-early-game
@@ -349,6 +356,18 @@ const covered = {
   // subChecklist{atoms,checkpoints} — same ATTACH model as granular above,
   // independent flag/registry (quest_expansions vs coarse_expansions_oppgran).
   quest_atoms: true,
+  // demand_gate: true — OPPORTUNISTIC_GRANULARITY.md §2-epoch placement,
+  // mechanized in enrich.py phased_steps (P10): supply chains are HELD until
+  // the episode of the first milestone whose reqs.tags demands supply-<chain>
+  // (burndown's own S6 tag-bridge), reqs.items classes gate their consumers
+  // (unlock-barrows/unlock-gwd wait for brew-prayer-potion/cook-monkfish),
+  // anchor-pinned P4/P8 nodes ride around the re-pick (P10a/P10b), and the
+  // endgame tail drains ready()-ordered. Fixes the two route_feasibility
+  // fault families measured on this chain: pps-* scaffolding front-loaded to
+  // steps 3-12 (before character creation) while the real brew sat at ~369,
+  // and unlock-barrows/gwd landing ~140 steps before their potion/food
+  // producers. Validation gate: node route_feasibility.mjs → 0 faults.
+  demand_gate: true,
   // opportunistic: true — OPPORTUNISTIC_GRANULARITY.md §2b P8 weave: re-pin
   // each backprop-determined earliest-window supply/gather step at the
   // route's earliest already-in-position node (instead of a dedicated later

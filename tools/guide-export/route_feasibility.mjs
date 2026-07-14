@@ -9,6 +9,24 @@
 // reqs are NOT satisfied where it lands. Catches ordering faults like the prayer-pot supply
 // chain front-loaded before Herblore/Thieving/Farming or even character creation exist.
 //
+// MODEL PARITY (extended as the planner model grew — each rule mirrors a shipped planner
+// semantic, verified against the code it cites; none is a relaxation invented here):
+//   * QUEST-XP FOLD — quest reward XP raises effective skill levels (graph.js
+//     effectiveLevel / enrich.py _make_effective_lvl; ba2ce570 made greedy PRUNE training
+//     bands covered by quest XP, so plain grant-floors alone under-model every route that
+//     leans on reward XP — the pruned band never exists to grant the level).
+//   * QUEST CREDIT BY KIND — a step is a quest iff kind=="quest" or tags include "quest"
+//     (model.js isQuestStep); its completion key is coarse_of (expansion member) else its
+//     own id. The old id-prefix test missed rfd-* chapter rows entirely.
+//   * SYNTH-BAND GRANTS — planner-synthesized steps (synth-<skill>-<lvl>-<n>) exist only
+//     per-route, never in a bank; their fixture completionConditions SKILL entries ARE
+//     their grants (enrich.py _train_step derives conds from grants — same data, other
+//     direction), so bankless route steps contribute those levels.
+//   * ITEM CLASSES — bank reqs.items name item CLASSES ("food", "prayer_potion") while
+//     produces{} keys are concrete slugs ("food_monkfish", "prayer_potion_4"); a produced
+//     key satisfies a class when equal or prefixed "<class>_" (the slug convention
+//     supply_chains.jsonl output_item rows follow).
+//
 // Usage:
 //   node route_feasibility.mjs [route.json]              # audit whole route → fault report
 //   node route_feasibility.mjs [route.json] --at <id>    # state available at a step + verdict
@@ -40,7 +58,24 @@ function loadBank() {
   }
   return bank;
 }
-const routeIds = () => (JSON.parse(fs.readFileSync(ROUTE, 'utf8')).steps || []).map(s => s.id);
+const routeSteps = () => JSON.parse(fs.readFileSync(ROUTE, 'utf8')).steps || [];
+
+// XP curve — same anchors as assets/js/world/xp.js / enrich.py _build_xp_table.
+const MAX_LEVEL = 99;
+const XP_TABLE = (() => {
+  const t = [0, 0]; let pts = 0;
+  for (let lvl = 1; lvl < MAX_LEVEL; lvl++) {
+    pts += Math.floor(lvl + 300 * 2 ** (lvl / 7));
+    t.push(Math.floor(pts / 4));
+  }
+  return t;
+})();
+const xpForLevel = l => XP_TABLE[Math.max(1, Math.min(MAX_LEVEL, l | 0))];
+function levelForXp(xp) {
+  let l = 1;
+  while (l < MAX_LEVEL && xp >= XP_TABLE[l + 1]) l++;
+  return l;
+}
 
 // grants.skills OR grants{skill:lvl}; the band's atom.until.skill also grants that level
 function skillGrants(step) {
@@ -51,14 +86,32 @@ function skillGrants(step) {
   if (until) for (const [k, v] of Object.entries(until)) out[k] = Math.max(out[k] || 0, v);
   return out;
 }
+// Bankless (per-route synthesized) steps: SKILL completionConditions are the fixture-side
+// mirror of grants (enrich.py _train_step) — the only requisite data such a step has.
+function condGrants(routeStep) {
+  const out = {};
+  for (const c of routeStep.completionConditions || [])
+    if (c.type === 'SKILL' && c.skill && typeof c.level === 'number')
+      out[c.skill.toLowerCase()] = c.level;
+  return out;
+}
+const isQuest = step => (step.tags || []).includes('quest') || step.kind === 'quest';
+function effLevel(state, sk) {
+  const base = state.skills[sk] || 1;
+  const xp = state.xp[sk] || 0;
+  if (!xp) return base;
+  return Math.max(base, levelForXp(xpForLevel(base) + xp));
+}
+const itemHeld = (state, cls) =>
+  [...state.items].some(k => k === cls || k.startsWith(cls + '_'));
+
 function apply(state, step) {
   for (const [sk, lvl] of Object.entries(skillGrants(step)))
     if (typeof lvl === 'number') state.skills[sk] = Math.max(state.skills[sk] || 1, lvl);
-  const isQuest = step.kind === 'quest' || (step.id || '').startsWith('quest-');
-  if (isQuest) {
-    const qid = (step.coarse_of || '').startsWith('quest-') ? step.coarse_of
-      : (step.id || '').startsWith('quest-') ? step.id : null;
-    if (qid) state.quests.add(qid);
+  if (isQuest(step)) {
+    state.quests.add(step.coarse_of || step.id);
+    for (const [sk, amt] of Object.entries(step.xp || {}))
+      if (typeof amt === 'number' && amt > 0) state.xp[sk] = (state.xp[sk] || 0) + amt;
   }
   for (const q of (step.grants && step.grants.quests) || []) state.quests.add(q);
   for (const it of Object.keys(step.produces || {})) state.items.add(it);
@@ -67,37 +120,46 @@ function apply(state, step) {
 }
 function unmetReqs(state, step) {
   const u = [], r = step.reqs || {};
-  for (const [sk, lvl] of Object.entries(r.skills || {}))
-    if ((state.skills[sk] || 1) < lvl) u.push(`skill ${sk} ≥ ${lvl} (have ${state.skills[sk] || 1})`);
+  for (const [sk, lvl] of Object.entries(r.skills || {})) {
+    const eff = effLevel(state, sk);
+    if (eff < lvl) u.push(`skill ${sk} ≥ ${lvl} (have ${eff})`);
+  }
   for (const q of r.quests || []) if (!state.quests.has(q)) u.push(`quest ${q} not done`);
-  for (const it of r.items || []) { const n = typeof it === 'string' ? it : it.item; if (n && !state.items.has(n)) u.push(`item ${n} not held`); }
+  for (const it of r.items || []) { const n = typeof it === 'string' ? it : it.item; if (n && !itemHeld(state, n)) u.push(`item ${n} not held`); }
   return u;
 }
 
 const bank = loadBank();
-const ids = routeIds();
-const state = { skills: {}, quests: new Set(), items: new Set(), unlocks: new Set() };
+const steps = routeSteps();
+const state = { skills: {}, xp: {}, quests: new Set(), items: new Set(), unlocks: new Set() };
 const faults = [];
 let inBank = 0;
-for (let i = 0; i < ids.length; i++) {
-  const step = bank.get(ids[i]);
-  if (AT && ids[i] === AT) {
+for (let i = 0; i < steps.length; i++) {
+  const id = steps[i].id;
+  const step = bank.get(id);
+  if (AT && id === AT) {
     console.log(`state ACCUMULATED before [${i}] ${AT}:`);
-    console.log('  skills:', JSON.stringify(state.skills));
+    const eff = Object.fromEntries(Object.keys({ ...state.skills, ...state.xp })
+      .map(k => [k, effLevel(state, k)]));
+    console.log('  skills (effective, quest XP folded):', JSON.stringify(eff));
     console.log('  quests:', state.quests.size, '| items:', state.items.size, '| unlocks:', [...state.unlocks].slice(0, 12));
     if (step) { const u = unmetReqs(state, step); console.log('  VERDICT:', u.length ? 'INFEASIBLE — ' + u.join('; ') : 'FEASIBLE'); }
-    else console.log('  (step not in requisite bank — synthetic/checkpoint)');
+    else console.log('  (step not in requisite bank — synthetic/checkpoint; SKILL conds credit as grants)');
     process.exit(0);
   }
-  if (!step) continue;
+  if (!step) {
+    for (const [sk, lvl] of Object.entries(condGrants(steps[i])))
+      state.skills[sk] = Math.max(state.skills[sk] || 1, lvl);
+    continue;
+  }
   inBank++;
   const u = unmetReqs(state, step);
-  if (u.length) faults.push({ i, id: ids[i], unmet: u });
+  if (u.length) faults.push({ i, id, unmet: u });
   apply(state, step);
 }
 
-if (JSON_OUT) { console.log(JSON.stringify({ total: ids.length, inBank, faults }, null, 1)); process.exit(faults.length ? 1 : 0); }
-console.log(`route ${ROUTE.split('/').pop()}: ${ids.length} steps | ${inBank} have requisites in bank | INFEASIBLE-at-position: ${faults.length}`);
+if (JSON_OUT) { console.log(JSON.stringify({ total: steps.length, inBank, faults }, null, 1)); process.exit(faults.length ? 1 : 0); }
+console.log(`route ${ROUTE.split('/').pop()}: ${steps.length} steps | ${inBank} have requisites in bank | INFEASIBLE-at-position: ${faults.length}`);
 console.log(`accumulated by end: ${Object.keys(state.skills).length} skills, ${state.quests.size} quests, ${state.items.size} item-types`);
 console.log('\n=== FAULTS (step requires something the accumulated state lacks at its position) ===');
 for (const f of faults.slice(0, 50)) console.log(`  [${f.i}] ${f.id}\n        NEED: ${f.unmet.join('; ')}`);

@@ -96,3 +96,25 @@ stubbed for Lane 2+:
 - plugin RECURRING condition, lifecycleState persistence, loops-lane panel — Lane 4
 - full bg step bank (herb-run, birdhouses etc.), steer catalog expansion — Lane 5
 integrator must redeploy: rebuild runelite-guide-chain with updated fixture files (route-p2p.json, route-corpus.json)
+
+## feasibility-gate retro (2026-07-14, route-grand 60→0 faults)
+Load-bearing decision: 47/60 checker faults were MODEL artifacts, not route faults — route_feasibility.mjs
+now folds quest-reward XP (graph.js effectiveLevel parity; ba2ce570 prunes bands quest XP covers, so the
+pruned band can never grant the plain floor), credits quests by kind/tag (rfd-* rows), credits bankless
+synth-* bands via their SKILL completionConditions, and class-matches reqs.items ("prayer_potion" ~
+"prayer_potion_4"). The 13 real faults were all one root bug + one missing contract:
+  (1) isinstance(True, int) is True in Python — topo_order/phased_steps/phased_steps_with_steer/
+      _coalesce_checkpoints all dispatched numeric grants BEFORE `v is True`, so EVERY boolean tag grant
+      ({"has-volcanic-ash": true}) became a level-1 "skill" and the S7 tag-bridge was silently unenforced
+      in the re-simulations; tag-gated supply cores always fell to the unordered tail dump. bool-first now.
+  (2) P10 phased_steps had no demand model: goal.demand_gate (grand-only opt-in) adds §2-epoch supply
+      demand-hold (chain held until the episode of the first milestone whose reqs.tags demands
+      supply-<chain>), chain-registry queue + scaffolding pairwise-wait (withdraws sit adjacent to their
+      gated cores), reqs.items class gate (unlock-barrows/gwd wait for brew/cook), ordered endgame drain,
+      P10a/P10b anchor-pin round-trip (opp/bg nodes ride around the re-pick; their grants/produces still
+      enter P10 state at the anchor), and _pin_prefix stamps (origin prefix owns the route opening).
+Deferred: route-corpus keeps 3 item faults (region-phased appendix, no milestone episodes → demand_gate
+does not apply); plan-multi/plan-corpus order-only diffs (id-sets equal) are the tag-bridge finally
+enforcing — intentional re-bakes, npm 93/93 both before and after.
+MUST-NOT-MISS: any new re-simulation that applies grants MUST dispatch `v is True` before isinstance
+int/float; route_feasibility.mjs is the standing 0-fault gate for ordering work on the grand spine.
