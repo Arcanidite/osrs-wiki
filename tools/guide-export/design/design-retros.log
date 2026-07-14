@@ -182,3 +182,53 @@ MUST-NOT-MISS: state_after is route-POSITION-dependent (same step id at a differ
 would carry different state), so it is NOT portable across routes/re-orders — regenerate the sidecar
 (state_scan.mjs <fresh-route> --emit state_after.jsonl) after any change to route-grand's step order,
 BEFORE the next enrich pass, or the attached state_after will describe stale positions.
+
+## inventory-realism + tickable-substep retro (2026-07-14, state_scan.mjs rewrite + guide-chain substep checkboxes)
+Two concrete bugs, both root-caused before touching code (STATE_CONSOLIDATION §2b/§7).
+BUG 1 (inventory accumulation): the v1 state-consolidation retro above shipped "0 slot-overflow
+flags" as a clean result — it was actually the SYMPTOM. Three compounding defects, all in
+state_scan.mjs, none in the data: (1) `doWithdraw` only ever ADDED the new loadout, never cleared
+the prior one — a real bank trip ("you banked before withdrawing," §2b) was modeled as pure
+accumulation, so pps-01/03/05's three loadout placeholders + every tutorial item ever produced
+coexisted at quest-rum-deal (step 363). (2) `bump()`'s removal path conjured PHANTOM entries: calling
+invRemove on an item never actually held (e.g. a `consumes:{food:"??"}` atom against the CLASS name
+"food" when only concrete keys like `food_monkfish` were ever added) created a new qty-0 approx map
+entry instead of no-op'ing — this is why a bare "food" kept showing up route-wide. (3) `applyInventory`'s
+generic produces/consumes fallback blindly added EVERY key from those maps, including reward-XP/point
+pseudo-resources (`attack_xp`, `slayer_points`, `prayer_points`, ...) that ride alongside real items in
+the same JSON object — 27 such keys corpus-wide, never physical, never inventory. Fix: `doWithdraw`
+now calls a forceful `depositAll` first (bank-trip boundary, ignores the sticky-approx convention that
+governs partial per-atom removal — a bank trip is a hard clear); `bump()` gained a guard clause (can't
+remove what was never held); `NON_ITEM_RESOURCES`/`isNonItemKey` filters XP/point keys out of all
+inv/bank modeling; `loadout:<name>` opaque pseudo-items became the literal "??" placeholder (parsing
+the withdraw atoms' prose `detail` into item slugs would have fabricated names the data never
+structurally stated — hard-rule violation, so "??" per the brief's own explicit fallback). Slot-cap
+counting also went from "1 slot per distinct item regardless of count" (silently wrong for bulk
+non-stackable holds) to per-unit counting with a narrow, non-guessed stackable allowlist (`coins` +
+any `*_noted` suffix) — this SURFACED 6 real overflow flags (a 100-pineapple charter-buy atom, etc.)
+that were previously hidden by the old always-1-slot math; all 6 turned out to be `timing:"ahead-of-time"`
+supply-chain stockpile rows (7 corpus-wide) whose own `detail` prose already says "ahead-of-time
+stockpile" — routed those to bank instead of inv, closing all 6 flags legitimately (0 remain).
+RESIDUAL, NOT closed here: the first ~280 of 372 steps (character creation through the first real
+top-level bank-trip step) have NO withdraw/deposit atom as a TOP-LEVEL route-grand.json step — granular
+bank-trip atoms only exist nested inside a coarse step's subChecklist (steps_oppgran.jsonl, attached by
+enrich.py via coarse_of, never emitted as their own route.steps[] entries), so state_scan's per-route-step
+walk can't see them. Early tutorial items (bones/bread/bronze_dagger/cooked_shrimps/feather/rake/spade/
+coins/cowhide) still sit in inv, CAPPED (not growing) at ~9 items, for that whole span — gone completely
+for the remaining ~90 steps after step 281 (the pps-01 loadout withdraw). Closing this needs state_scan
+to additionally walk each coarse step's own steps_oppgran.jsonl children in `coarse_of` order before
+computing that step's state_after — same transition functions, different granularity of walk — deferred
+as a scoped follow-up (bigger surface, its own test pass), not attempted here.
+BUG 2 (tickable sub-checklist): mirrored the main step's existing done/skip persistence path exactly
+rather than inventing a new one. GuideStore gained a `Set<String> substepDone` (compound key
+`<stepKey>::<atomId>`, since one step hosts many atoms) + `toggleSubstep`/`isSubstepDone`, persisted in
+the SAME state.json atomic-write path as everything else. GuideWebServer gained `POST
+/actions/toggle-substep` (form: key, atom) — reuses `sendPlanAfterAction` (same HX-Trigger:
+guide-store-changed the main step-check uses), so both the plan-list inline sub-checklist and an open
+detail-pane sub-checklist pick up a toggle together without a bespoke swap target. WebFragments' two
+sub-checklist renderers (`appendSubChecklist` detail-pane, `appendInlineSubChecklist` plan-list) both
+gained a real `<input type=checkbox>` per atom + an "N/M done" progress readout; checkpoint dividers
+stay non-interactive group headers. Verified end-to-end against a live GuideWebMain boot (not just
+compiled): toggled a real atom, confirmed state.json's substepDone set updated, confirmed the checked
+state AND "1/4 done"/"1/15 done" survived a full JVM process restart against the same --dir (genuine
+disk persistence, not just in-memory session state).

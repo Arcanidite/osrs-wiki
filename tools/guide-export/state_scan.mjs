@@ -5,28 +5,55 @@
 // each step can be annotated with the state it LEAVES the player in (`state_after`).
 //
 // STATE MODEL (additive on top of route_feasibility's {skills,xp,quests,items,unlocks}):
-//   inv   — Map<item, {qty:number, approx:boolean}>  the 28-slot loadout at this point.
+//   inv   — Map<item, {qty:number, approx:boolean}>  the 28-slot loadout SINCE THE LAST
+//           BANK TRIP ONLY (STATE_CONSOLIDATION §2b) — never the route's whole history.
 //   worn  — Set<item>                                equipped gear.
 //   bank  — Map<item, {qty:number, approx:boolean}>  staged/produced stock, off the 28.
-// Transitions ARE the atoms (STATE_CONSOLIDATION.md §2): withdraw(bank→inv) ·
-// equip(inv→worn) · gather/kill/buy(inv+ via produces) · produce/use-on/consume/sell
-// (inv Δ via consumes/produces) · deposit(inv→bank) · teleport/plant(inv− via consumes) ·
-// harvest(inv+ via produces). Steps with no atom{} (most coarse train-*/quest-* rows) fall
-// back to the row's own top-level produces{}/consumes{} generically — same data, no verb
-// to special-case.
+// Transitions ARE the atoms (STATE_CONSOLIDATION.md §2/§2b):
+//   * withdraw(bank→inv) is a BANK-TRIP BOUNDARY — "you banked before withdrawing", so it
+//     first moves everything still held from the PRIOR loadout to bank (depositAll), THEN
+//     sets inv to the new loadout. This is what makes inv a real segmented-by-trip loadout
+//     instead of a monotonically-growing pile (the v1 bug this file was rewritten to fix).
+//   * deposit(inv→bank) moves one named held item, or — for a loadout-suffixed/category
+//     target with no matching held item ("everything", "combat-loadout", loot-dump labels)
+//     — the whole current loadout (depositAll), since GRANULARITY atoms don't itemize
+//     those categories either. A deposit atom carrying its own `consumes{}` (e.g. Dominic's
+//     coffer coin fees) SPENDS those items instead (removed, never banked — they left the
+//     game, not the inventory).
+//   * equip(inv→worn) — unchanged; worn gear never returns to bank in this model (no
+//     `unequip` verb in the closed 17-verb enum), a known, documented gap.
+//   * gather/kill/buy/produce/use-on/consume/sell/teleport/plant/harvest (inv Δ via
+//     produces{}/consumes{}) — same for steps with no atom{} at all (coarse train-*/
+//     quest-* rows falling back to their own top-level produces{}/consumes{}).
+//   * XP/point pseudo-resources (produces/consumes keys like `attack_xp`, `slayer_points`,
+//     `prayer_points`, `kudos` — reward-XP and minigame-point bookkeeping the granular
+//     atoms carry alongside real items) are NEVER physical inventory items and are
+//     excluded from inv/bank modeling entirely (see NON_ITEM_KEY) — the v1 bug let these
+//     leak into the inv list as fake "70 attack_xp"-style entries.
 //
 // HONEST-DEGRADATION LIMITATIONS (documented, not hidden — "??" over guesses, project
 // hard rule):
 //   * A `raw` value that is not a number (the "??" placeholder used everywhere quantities
 //     are unmeasured) marks that item `approx: true` — displayed by NAME ONLY, never a
 //     fabricated count. Once an item is touched by any approx op it stays approx for the
-//     rest of the walk (a real count could still exist upstream; we never claim one).
+//     rest of the walk (a real count could still exist upstream; we never claim one) —
+//     UNTIL a bank trip (withdraw/deposit-all) clears it for real (depositAll forcibly
+//     removes every held entry, approx or not — a bank trip is a hard boundary).
 //   * `withdraw`/`deposit` atoms whose `target` is a generic "<x>-loadout" label (the
 //     bank-setup atoms of GRANULARITY U1) have NO itemized list in structured data — the
-//     itemization lives only in the row's prose `detail`. Those emit ONE symbolic
-//     `loadout:<target>` inv entry. Slot-overflow flags are therefore a LOWER BOUND when a
-//     loadout placeholder is present (real usage could be higher) — every such step is
-//     called out separately in the overflow report, never silently folded into the count.
+//     itemization lives only in the row's prose `detail` (free text like "Withdraw: coins
+//     (charter fare + 30 pineapples...), Digsite pendant..."). Parsing that prose into item
+//     slugs would fabricate names the wiki/data never structurally stated (own-words/no-
+//     fabrication hard rule) — so this resolves to the literal "??" tuning placeholder
+//     instead, NEVER an opaque "loadout:X" pseudo-item.
+//   * Stackability is read from the item key where the data encodes it structurally (a
+//     `coins` special-case — currency is always stackable, a foundational game-engine rule,
+//     not a per-item guess — and any `*_noted` suffix, since noted items always stack).
+//     Every other item defaults to NON-stackable for slot-counting (the majority case for
+//     ore/logs/fish/bars/unfinished-potions) — a real per-item stackable/noted flag from
+//     the wiki infobox would sharpen this, but is out of this pass's scope; the effect is
+//     conservative (flags real overflows rather than hiding them, per §2b "never silently
+//     overflow" — a false-positive flag is auditable, a false negative is not).
 //   * Equipped gear does not consume an inventory slot (matches live-game behavior).
 //
 // Usage:
@@ -48,16 +75,29 @@ const JSON_OUT = argv.includes('--json');
 const EMIT = (i => i >= 0 ? argv[i + 1] : null)(argv.indexOf('--emit'));
 const SLOT_CAP = 28;
 
-const qtyOf = raw => typeof raw === 'number' ? raw : null;
+// Reward-XP / minigame-point pseudo-resources that ride along in produces{}/consumes{}
+// maps alongside real items — never physical, never inventory (file header). `_xp` is a
+// closed suffix convention every skill-xp key follows; the rest are the concrete named
+// point-currencies the corpus carries today.
+const NON_ITEM_RESOURCES = new Set(['slayer_points', 'carpenter_points', 'nmz_points', 'prayer_points', 'kudos']);
+const isNonItemKey = k => /_xp$/.test(k) || NON_ITEM_RESOURCES.has(k);
+const physicalEntries = map => Object.entries(map || {}).filter(([k]) => !isNonItemKey(k));
+
+// Slot-counting stackability (file header LIMITATIONS): read structurally from the item
+// key, never guessed. `coins` is the one foundational always-stackable case; `*_noted`
+// is a data-encoded suffix convention (noted items always stack).
+const isStackableForSlot = item => item === 'coins' || /_noted$/.test(item);
 
 function bump(map, item, raw, sign) {
   if (!item) return;
-  const cur = map.get(item) || { qty: 0, approx: false };
+  const cur = map.get(item);
+  if (sign < 0 && !cur) return; // can't remove what isn't held — never conjure a phantom entry
+  const base = cur || { qty: 0, approx: false };
   const numeric = typeof raw === 'number';
-  const approx = cur.approx || !numeric;
-  const qty = cur.qty + (numeric ? raw : 1) * sign;
+  const approx = base.approx || !numeric;
+  const qty = base.qty + (numeric ? raw : 1) * sign;
   if (qty <= 0 && !approx) { map.delete(item); return; }
-  map.set(item, { qty: Math.max(qty, approx ? cur.qty : 0), approx });
+  map.set(item, { qty: Math.max(qty, approx ? base.qty : 0), approx });
 }
 const invAdd = (s, item, raw) => bump(s.inv, item, raw, 1);
 const invRemove = (s, item, raw) => bump(s.inv, item, raw, -1);
@@ -65,8 +105,26 @@ const bankAdd = (s, item, raw) => bump(s.bank, item, raw, 1);
 const bankRemove = (s, item, raw) => bump(s.bank, item, raw, -1);
 const isLoadoutLabel = t => !!t && /(-|_)loadout$/.test(t);
 
+/** Forcibly moves one held inv entry to bank (approx or not) — a bank trip is a hard boundary, unlike a partial per-atom `invRemove`. */
+function moveInvToBank(state, item) {
+  const held = state.inv.get(item);
+  if (!held) return;
+  state.inv.delete(item);
+  const cur = state.bank.get(item) || { qty: 0, approx: false };
+  const approx = cur.approx || held.approx;
+  state.bank.set(item, { qty: approx ? Math.max(cur.qty, held.qty) : cur.qty + held.qty, approx });
+}
+/** "You banked before withdrawing" (STATE_CONSOLIDATION §2b) — everything still held moves to bank. The `??` loadout placeholder was never really "held," so it's simply dropped. */
+function depositAll(state) {
+  for (const item of [...state.inv.keys()]) {
+    if (item === '??') { state.inv.delete(item); continue; }
+    moveInvToBank(state, item);
+  }
+}
+
 function doWithdraw(state, step, atom) {
-  const explicit = Object.entries(step.consumes || {});
+  depositAll(state); // bank-trip boundary — clears the PRIOR loadout first
+  const explicit = physicalEntries(step.consumes);
   if (explicit.length) {
     for (const [item, raw] of explicit) { invAdd(state, item, raw); bankRemove(state, item, raw); }
     return;
@@ -78,22 +136,27 @@ function doWithdraw(state, step, atom) {
     return;
   }
   // Generic bank-setup loadout (GRANULARITY U1) — itemization lives in prose `detail`
-  // only; see file header. One symbolic slot placeholder, never a guessed item list.
-  invAdd(state, `loadout:${target || '??'}`, null);
+  // only; see file header. The honest tuning placeholder, never a guessed item list or
+  // an opaque "loadout:X" pseudo-item.
+  invAdd(state, '??', null);
 }
 function doDeposit(state, step, atom) {
-  const target = atom.target;
-  if (target && !isLoadoutLabel(target)) {
-    const held = state.inv.get(target);
-    if (held) { invRemove(state, target, held.approx ? null : held.qty); bankAdd(state, target, held.approx ? null : held.qty); }
+  // A deposit atom carrying its own consumes{} SPENDS those items (e.g. Dominic's coffer
+  // coin fee) — they leave the game, not the inventory, so remove-only, never bank.
+  const spend = physicalEntries(step.consumes);
+  if (spend.length) {
+    for (const [item, raw] of spend) invRemove(state, item, raw);
     return;
   }
-  // "Bank: deposit all" — move every non-placeholder held item to bank.
-  for (const [item, v] of [...state.inv.entries()]) {
-    if (item.startsWith('loadout:')) continue;
-    invRemove(state, item, v.approx ? null : v.qty);
-    bankAdd(state, item, v.approx ? null : v.qty);
+  const target = atom.target;
+  if (target && !isLoadoutLabel(target) && state.inv.has(target)) {
+    moveInvToBank(state, target);
+    return;
   }
+  // Loadout-suffixed target, or a category/loot-dump label with no matching held item
+  // ("everything", "combat-loadout", "barbarian_loot", ...) — GRANULARITY atoms don't
+  // itemize these either, so the closest honest model is "bank the whole current loadout."
+  depositAll(state);
 }
 function doEquip(state, step, atom) {
   const target = atom.target;
@@ -108,9 +171,17 @@ function applyInventory(state, step) {
   if (verb === 'deposit') return doDeposit(state, step, atom);
   if (verb === 'equip') return doEquip(state, step, atom);
   // Generic verb (gather/kill/buy/produce/use-on/consume/sell/teleport/plant/harvest) OR
-  // no atom{} at all (coarse train-*/quest-* rows) — apply the row's own produces/consumes.
-  for (const [item, raw] of Object.entries(step.consumes || {})) invRemove(state, item, raw);
-  for (const [item, raw] of Object.entries(step.produces || {})) invAdd(state, item, raw);
+  // no atom{} at all (coarse train-*/quest-* rows) — apply the row's own produces/consumes,
+  // excluding XP/point pseudo-resources (never physical, see NON_ITEM_RESOURCES).
+  // `timing:"ahead-of-time"` supply-chain producers (7 rows corpus-wide — pineapple/
+  // volcanic-ash/ultracompost/monkfish/ranarr-seed stockpiling) route to BANK, not the
+  // active 28-slot loadout: their own `detail` prose says so explicitly ("ahead-of-time
+  // stockpile before herb runs") — they represent staged stock built up over unspecified
+  // background time, never literally carried, matching the opportunistic-weave rule that
+  // background supply loops stay off the spine's held inventory.
+  const [add, remove] = step.timing === 'ahead-of-time' ? [bankAdd, bankRemove] : [invAdd, invRemove];
+  for (const [item, raw] of physicalEntries(step.consumes)) remove(state, item, raw);
+  for (const [item, raw] of physicalEntries(step.produces)) add(state, item, raw);
 }
 
 function fmtEntry([item, v]) {
@@ -122,7 +193,16 @@ function fmtMap(map, cap = 20) {
   const shown = entries.slice(0, cap).map(fmtEntry);
   return entries.length > cap ? [...shown, `+${entries.length - cap} more`] : shown;
 }
-function slotCount(state) { return state.inv.size; }
+/** Slots one inv entry occupies: 1 for a stackable/noted item or an unmeasured (approx) qty, else its own count (STATE_CONSOLIDATION §2b). */
+function entrySlots([item, v]) {
+  if (item === '??' || v.approx || isStackableForSlot(item)) return 1;
+  return Math.max(1, v.qty);
+}
+function slotCount(state) {
+  let n = 0;
+  for (const entry of state.inv.entries()) n += entrySlots(entry);
+  return n;
+}
 
 // Snapshot the bits state_after needs to diff against, BEFORE apply()/applyInventory().
 function preSnapshot(state, step) {
@@ -207,8 +287,8 @@ if (JSON_OUT) {
 }
 
 console.log(`state_scan ${ROUTE.split('/').pop()}: ${steps.length} steps annotated`);
-console.log(`slot-overflow (inv distinct-items > ${SLOT_CAP}, unflagged = clean): ${overflows.length}`);
-for (const o of overflows.slice(0, 30)) console.log(`  [${o.i}] ${o.id} — ${o.slots} distinct items held`);
+console.log(`slot-overflow (inv slots > ${SLOT_CAP}, unflagged = clean): ${overflows.length}`);
+for (const o of overflows.slice(0, 30)) console.log(`  [${o.i}] ${o.id} — ${o.slots} inv slots held`);
 console.log(`loadout-placeholder steps (itemization lives in prose only — slot count is a LOWER BOUND here): ${loadoutSteps.length}`);
 for (const l of loadoutSteps.slice(0, 20)) console.log(`  [${l.i}] ${l.id} — ${l.target}`);
 process.exit(overflows.length ? 1 : 0);
