@@ -29,6 +29,16 @@ Magic Imbue).
   alch/Magic Imbue while questing+skilling → 90-99 BXP from Slayer.
 - **Prayer:** 1-70/96 Hydra/Dragon bones on Gilded/Chaos altar → 70-96 superior bones on
   Chaos altar → 96-99 BXP from ash sanctifier + bonecrusher during Slayer/chinning.
+  *(Alt/opportunistic — Ectofuntus offering at Port Phasmatys: best xp-per-bone but slow;
+  WEAVE it in-position while doing Animal Magnetism (the "Ava's device" quest, Port Phasmatys
+  area) so the trip does double duty — an opportunistic QoL fetch, not a dedicated detour.)*
+  **ANTI-PATTERN to REPLACE (the current route grinds Hill Giants for big bones — a huge
+  time-waste):** Prayer XP comes FIRST from QUEST REWARDS (`Quest_experience_rewards` — many
+  quests hand big Prayer lamps/XP; a large chunk of early Prayer is "free" from the quest
+  spine you're already doing), THEN from bones gathered PASSIVELY during combat/Slayer offered
+  on the gilded/chaos altar (+ Ectofuntus opportunistic + ash-sanctifier/bonecrusher BXP).
+  NEVER a dedicated big-bone grind. General principle: a training band's method must be the
+  EFFICIENT meta one, not a naive kill-loop — audit every band against this.
 - **Hitpoints:** 10-24 Witch's House → 24-99 BXP from combat/Slayer.
 - **Slayer:** 1-50 Wildy Slayer (viggora/craws + cannon; block Fire giant/Black demon/
   Hellhound; to ~1000 pts) → 4-9 Turael tasks → 50-99 Duradel (100 cb). Point-spend order:
@@ -97,6 +107,11 @@ Magic Imbue).
 - Barb-fishing gives Agility+Strength BXP (multiskill anchor for early Agility 1-60/62).
 - Quests are a first-class XP source across skills — `Quest_experience_rewards` (do every quest
   you can for the reward xp); many bands OPEN with "quests + diary lamps".
+- Ectofuntus prayer training woven during Animal Magnetism (Port Phasmatys) — opportunistic
+  in-position QoL, not a dedicated detour (see Prayer, §A).
+- ACHIEVEMENT DIARIES are first-class cornerstones — see `ACHIEVEMENT_DIARIES.md`. Their
+  rewards (teleports, XP lamps, run-energy, method unlocks, better drops) are compounding
+  QoL-payoffs; their tasks interleave with training/quests and should be fetched in-position.
 
 ## Standing
 Follow this ordering; wiki-ground every fact; produce faux-grain atoms + between-step flow +
