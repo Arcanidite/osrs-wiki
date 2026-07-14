@@ -53,6 +53,9 @@ Read the ones your domain touches; when in doubt read more, not fewer.
 - **Training ordering (STRUCTURE, wiki-grounds facts):** `design/TRAINING_META_ORDERING.md` —
   the community 1-99 per-skill method spine + cross-skill dependency seeds; the ordering the
   fine-grained training breakdown follows (external → order only, wiki sets facts).
+- **Quest optimal guides (lean fan-out):** `design/QUEST_OPTIMAL_GUIDES.md` — optimal
+  step-by-step quest walkthroughs + play tips; FABLE orchestrates, terse per-quest workers,
+  lean self-contained briefs, file seams + one-line receipts (deepen the quest sidecars).
 - **Achievement diaries (first-class lane):** `design/ACHIEVEMENT_DIARIES.md` — diaries as
   granular quest-like tasks + compounding QoL reward-milestones (diary_expansions /
   steps_diary_atoms sidecars, mirror the quest machinery).
