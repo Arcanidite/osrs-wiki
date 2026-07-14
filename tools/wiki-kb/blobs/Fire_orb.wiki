@@ -1,0 +1,65 @@
+{{External|rs|rsc}}
+{{Infobox Item
+|name = Fire orb
+|image = [[File:Fire orb.png]]
+|release = [[18 March]] [[2002]]
+|update = Latest RuneScape News (18 March 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = A magic glowing orb.
+|value = 300
+|weight = 0.453
+|exchange = Yes
+|id = 569
+}}
+[[File:Fire orb detail.png|left|150px]]
+A '''fire orb''' is a glass orb that has been charged at the [[Obelisk of Fire]] by using the [[Charge Fire Orb]] spell, requiring 63 [[Magic]], on the obelisk. The spell requires an [[unpowered orb]], 30 [[fire rune]]s, and 3 [[cosmic rune]]s, yielding 73 Magic [[experience]]. [[Obelisk of Fire|The Fire Obelisk]] is located at the end of [[Taverley Dungeon]], west of the [[black dragon]]s.
+
+A fire orb can be used on a [[battlestaff]], requiring 62 [[Crafting]], yielding a [[fire battlestaff]] and 125 Crafting experience.
+
+They are also obtainable by [[pickpocketing]] [[gnomes]], [[hero]]es, and [[Elf (Thieving)|elves]] or from killing [[Cerberus]], [[killerwatt]]s, [[lava dragon]]s, [[Tormented Demon|tormented demons]] or level 61 [[Zombie (Tarn's Lair)|zombie]]s in [[Tarn's Lair]].
+
+==Creation==
+{{Recipe
+|skill1 = Magic
+|skill1lvl = 63
+|skill1boostable = Yes
+|skill1exp = 73
+|members = Yes
+|ticks = 3
+|ticksnote = Make-X is 6 ticks.
+|facilities = Obelisk of Fire
+|mat1 = Unpowered orb
+|mat2 = Fire rune
+|mat2quantity = 30
+|mat3 = Cosmic rune
+|mat3quantity = 3
+|output1 = Fire orb
+}}
+
+==Money making==
+{{Mmgsection|Charging fire orbs}}
+
+==Products==
+{{Uses material list|Fire orb}}
+
+==Item sources==
+{{Drop sources|Fire orb}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 10 September 2020
+|update = A Porcine of Interest
+|poll =
+|change = The Grand Exchange buy limit was changed from 10,000 to 11,000.
+}}
+{{Subject changes footer}}
+
+{{Orb}}
+[[Category:Crafting items]]

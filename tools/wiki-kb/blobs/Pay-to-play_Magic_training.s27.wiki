@@ -1,0 +1,6 @@
+===Levels 86–99: Plank Make ===
+''Completion of the quest [[Dream Mentor]] is required to cast [[Plank Make]].''
+
+At level 86, players can auto-cast Plank Make on mahogany logs. This method will generate around 90,000 Magic experience per hour, which is around 1,000 casts, or less depending on banking speed, as well as generating a small amount of profit. Each inventory takes around 90 seconds, meaning it is a quite idle method of training. Alternatively, players can manually cast Plank Make on each log for around 166,000 Magic experience per hour. By casting [[Magic Imbue]] between every 7th manual cast of Plank Make, players can achieve over 180,000 Magic experience per hour. 
+
+The only downside is that mahogany logs can be expensive to buy in bulk if starting with a low amount of money, and the spell is locked behind Dream Mentor. [[Managing Miscellania]] can be a way of accumulating mahogany logs at a discount, after completing [[Royal Trouble]].

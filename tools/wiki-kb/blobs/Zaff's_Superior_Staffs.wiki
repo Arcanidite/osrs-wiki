@@ -1,0 +1,112 @@
+{{External|rs=Zaff's Superior Spellcasting|rsc=Zaff's staff shop}}
+{{Infobox Shop
+|name = Zaff's Superior Staffs!
+|image = [[File:Zaff's Superior Staffs!.png|300px]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|icon = [[File:Staff shop icon.png]]
+|location = [[Varrock]]
+|owner = [[Zaff]]
+|special = Staff shop
+|map = {{Map|name=Zaff's Superior Staffs!|3203,3434|mtype=rectangle|rectX=4|rectY=7}}
+|leagueRegion = Misthalin
+}}
+'''Zaff's Superior Staffs''' is a staff shop located near central [[Varrock]], owned by [[Zaff]]. It is the main source of [[battlestaves]] and of [[elemental staves]] for [[free player]]s.
+
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=550|delta=20}}
+{{StoreLine|name=Battlestaff|displayname=Battlestaff<ref group=d name=requirement>Only after completing most of [[What Lies Below]].</ref>|stock=5|restock=100}}
+{{StoreLine|name=Staff|stock=5|restock=100}}
+{{StoreLine|name=Magic staff|stock=5|restock=200}}
+{{StoreLine|name=Staff of air|stock=2|restock=1000}}
+{{StoreLine|name=Staff of water|stock=2|restock=1000}}
+{{StoreLine|name=Staff of earth|stock=2|restock=1000}}
+{{StoreLine|name=Staff of fire|stock=2|restock=1000}}
+{{StoreTableBottom}}
+{{Reflist|group=d}}
+
+In [[Deadman Mode]], battlestaves will restock in '''1 tick''' instead of 100 ticks.
+
+==Varrock Diary discount perk==
+Players who have completed tiers of the [[Varrock Diary]] may buy noted [[Battlestaff|battlestaves]] at a discounted price of 7,000 coins each once per day from the [[Barrel (Zaff's Superior Staffs!)|barrel]] on the {{FloorNumber|uk=0}} of the shop. The number of staves available depends on the player's progress in the Varrock Diary.
+
+Buying discounted [[Battlestaff|battlestaves]] is a good daily moneymaking method, as players can immediately sell them on the [[Grand Exchange]], where they usually go for over 8,000 coins each. The current price of a [[Battlestaff|battlestaff]] is {{Coins|{{GEP|Battlestaff}}}}. Players can also choose not to sell them and use them to train [[Crafting]] by making [[elemental battlestaves]], which is especially useful for [[Ironmen]].
+
+The table below shows the corresponding number of available [[Battlestaff|battlestaves]] for each of the Varrock Diary sets, and the profit made from selling them on the Grand Exchange.
+{| class="wikitable align-left-1" style="text-align: right;"
+!Diary
+!Daily stock
+!Total price
+!Profit
+!Profit per 14 days
+!Profit per 30 days
+|-
+|[[Easy Varrock Diary|Easy]]
+|15
+|{{Coins|105000}}
+|{{Coins|{{GEP|Battlestaff|15}}-105000}}
+|{{Coins|({{GEP|Battlestaff|15}}-105000)*14}}
+|{{Coins|({{GEP|Battlestaff|15}}-105000)*30}}
+|-
+|[[Medium Varrock Diary|Medium]]
+|30
+|{{Coins|210000}}
+|{{Coins|{{GEP|Battlestaff|30}}-210000}}
+|{{Coins|({{GEP|Battlestaff|30}}-210000)*14}}
+|{{Coins|({{GEP|Battlestaff|30}}-210000)*30}}
+|-
+|[[Hard Varrock Diary|Hard]]
+|60
+|{{Coins|420000}}
+|{{Coins|{{GEP|Battlestaff|60}}-420000}}
+|{{Coins|({{GEP|Battlestaff|60}}-420000)*14}}
+|{{Coins|({{GEP|Battlestaff|60}}-420000)*30}}
+|-
+|[[Elite Varrock Diary|Elite]]
+|120
+|{{Coins|840000}}
+|{{Coins|{{GEP|Battlestaff|120}}-840000}}
+|{{Coins|({{GEP|Battlestaff|120}}-840000)*14}}
+|{{Coins|({{GEP|Battlestaff|120}}-840000)*30}}
+|}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 23 July 2025
+|update = Varlamore: The Final Dawn Out Now
+|change = Players are no longer required to log out and in again to trigger the daily reset of Zaff's discount staff barrel.
+}}
+{{Subject changes
+|date = 8 June 2017
+|update = Pest Control & Open Weekend
+|change = Zaff's barrel now appears differently once a player has purchased their daily ration of discounted staffs.
+}}
+{{Subject changes
+|date = 3 December 2015
+|update = Skill Cape Perks
+|change = When purchasing battlestaves as part of the Varrock diary reward from Zaff's barrel, you will no longer be told your inventory is full when it already contains a stack of noted battlestaves.
+}}
+{{Subject changes
+|date = 30 April 2015
+|update = Mutagens, Mo & Much More
+|change = You can no longer purchase battlestaves from Zaff's barrel on F2P worlds.
+}}
+{{Subject changes
+|date = 5 March 2015
+|update = Achievement Diaries
+|poll = Old School Achievement Diary Rewards Poll
+|change = [[Zaff]] now provides discounted (7000gp) [[battlestaff|battlestaves]] once per day for the completion of [[Varrock Diary|Varrock Diaries]]:
+*15 battlestaves for the [[Easy Varrock|easy diary]].
+*30 battlestaves for the [[Medium Varrock|medium diary]].
+*60 battlestaves for the [[Hard Varrock|hard diary]].
+*120 battlestaves for the [[Elite Varrock|elite diary]].
+}}
+{{Subject changes footer}}
+
+==Trivia==
+*Laying on the northern table inside the shop, there appears to be a [[Pharaoh's sceptre]], a [[Slayer's staff]], and a [[rod of ivandis]]. Additionally, against the wall are some staves with heads similar to that of [[Ahrim's staff]]. However, Zaff does not sell any of these in his shop.
+
+{{Shops}}
+{{Varrock}}

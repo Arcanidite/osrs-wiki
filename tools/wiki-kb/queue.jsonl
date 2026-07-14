@@ -939,3 +939,57 @@
 {"key": "gap-rfd-01", "status": "done", "payload": null, "ts": "2026-07-13T13:38:31Z"}
 {"key": "gap-rfd-02", "status": "done", "payload": {"contributed": ["questatoms:rfd-evil-dave", "questatoms:rfd-skrach", "questatoms:rfd-sir-amik", "questatoms:rfd-awowogei", "questatoms:rfd-finale"], "atoms_total": 89}, "ts": "2026-07-13T13:40:20Z"}
 {"key": "gap-idspace-01", "status": "done", "payload": {"resolution": "quest_atoms alone 89/89; granular redundant for quests; RFD 10 chapters authored via gap-rfd-01/02"}, "ts": "2026-07-13T13:46:18Z"}
+{"key": "tenrich:methods:woodcutting", "status": "pending", "payload": {"note": "deeply granular methods+atoms for woodcutting bands"}, "ts": "2026-07-13T20:39:47Z"}
+{"key": "tenrich:methods:woodcutting", "status": "claimed", "payload": null, "ts": "2026-07-13T20:39:47Z"}
+{"key": "tenrich:methods:woodcutting", "status": "done", "payload": null, "ts": "2026-07-13T20:39:48Z"}
+{"key": "tenrich:methods:cooking", "status": "pending", "payload": {"note": "cooking full-skill methods+atoms authored for job 479f4b39"}, "ts": "2026-07-13T20:48:23Z"}
+{"key": "tenrich:methods:cooking", "status": "claimed", "payload": null, "ts": "2026-07-13T20:48:23Z"}
+{"key": "tenrich:methods:cooking", "status": "done", "payload": null, "ts": "2026-07-13T20:48:23Z"}
+{"key": "tenrich:methods:fishing", "status": "pending", "payload": {"note": "deeply granular fishing training content, 5 bands"}, "ts": "2026-07-13T20:50:50Z"}
+{"key": "tenrich:methods:fishing", "status": "claimed", "payload": null, "ts": "2026-07-13T20:50:50Z"}
+{"key": "tenrich:methods:fishing", "status": "done", "payload": null, "ts": "2026-07-13T20:50:51Z"}
+{"key": "tenrich-hunter", "status": "claimed", "payload": null, "ts": "2026-07-13T21:49:31Z"}
+{"key": "tenrich-hunter", "status": "done", "payload": null, "ts": "2026-07-13T21:49:43Z"}
+{"key": "tenrich:attack", "status": "pending", "payload": {"note": "compose methods+atoms for attack skill, all 7 bands"}, "ts": "2026-07-13T22:01:24Z"}
+{"key": "tenrich:attack", "status": "claimed", "payload": null, "ts": "2026-07-13T22:01:24Z"}
+{"key": "tenrich:attack", "status": "done", "payload": {"bands": 7, "methods": 22, "atoms": 35, "new_atom_bundles": ["train-attack-10", "train-attack-30", "train-attack-40", "train-attack-80", "train-attack-99"], "reused_atom_bundles": ["train-attack-60", "train-attack-70"], "deliverable": "/home/lemon/.claude/jobs/479f4b39/tmp/tenrich/methods/attack.json"}, "ts": "2026-07-13T22:02:02Z"}
+{"key": "tenrich:methods:woodcutting", "status": "done", "payload": null, "ts": "2026-07-13T22:31:39Z"}
+{"key": "tenrich:firemaking", "status": "pending", "payload": {"note": "player-direct granular training content: methods+checkpoints+full-shape atoms for all 5 train-firemaking-* bands"}, "ts": "2026-07-13T22:36:45Z"}
+{"key": "tenrich:firemaking", "status": "claimed", "payload": null, "ts": "2026-07-13T22:36:45Z"}
+{"key": "tenrich:firemaking", "status": "done", "payload": null, "ts": "2026-07-13T22:36:46Z"}
+{"key": "tenrich:methods:fletching", "status": "pending", "payload": {"note": "granular player-direct methods+atoms for fletching, 5 bands"}, "ts": "2026-07-13T23:12:36Z"}
+{"key": "tenrich:methods:fletching", "status": "claimed", "payload": null, "ts": "2026-07-13T23:12:36Z"}
+{"key": "tenrich:methods:fletching", "status": "done", "payload": null, "ts": "2026-07-13T23:12:37Z"}
+{"key": "tenrich-atoms-herblore", "status": "pending", "payload": {"note": "player-direct granular atoms for herblore bands (tenrich job 479f4b39)"}, "ts": "2026-07-13T23:13:53Z"}
+{"key": "tenrich-atoms-herblore", "status": "claimed", "payload": null, "ts": "2026-07-13T23:13:53Z"}
+{"key": "tenrich:runecraft", "status": "pending", "payload": {"note": "player-direct granular atoms + methods for train-runecraft-* (tenrich job 479f4b39)"}, "ts": "2026-07-13T23:22:31Z"}
+{"key": "tenrich:runecraft", "status": "claimed", "payload": null, "ts": "2026-07-13T23:22:31Z"}
+{"key": "tenrich-atoms-herblore", "status": "done", "payload": null, "ts": "2026-07-13T23:22:50Z"}
+{"key": "tenrich:runecraft", "status": "done", "payload": null, "ts": "2026-07-13T23:25:54Z"}
+{"key": "tenrich:methods:agility", "status": "pending", "payload": {"note": "agility methods+atoms file: schema repair of duplicate-dispatch legacy-shape file (fishing/mining precedent)"}, "ts": "2026-07-13T23:32:40Z"}
+{"key": "tenrich:methods:agility", "status": "claimed", "payload": null, "ts": "2026-07-13T23:32:40Z"}
+{"key": "tenrich:methods:agility", "status": "done", "payload": null, "ts": "2026-07-13T23:34:10Z"}
+{"key": "tenrich-thieving", "status": "pending", "payload": {"note": "player-direct granular atoms+methods for all 5 train-thieving-* bands -> jobs/479f4b39 tenrich/methods/thieving.json"}, "ts": "2026-07-13T23:37:49Z"}
+{"key": "tenrich-thieving", "status": "claimed", "payload": null, "ts": "2026-07-13T23:37:50Z"}
+{"key": "tenrich-thieving", "status": "done", "payload": null, "ts": "2026-07-13T23:37:51Z"}
+{"key": "tenrich:methods:slayer", "status": "pending", "payload": {"note": "player-direct granular methods+atoms for slayer, 6 bands incl. task-desert/task-morytania; repair of legacy-shape slayer.json"}, "ts": "2026-07-13T23:41:20Z"}
+{"key": "tenrich:methods:slayer", "status": "claimed", "payload": null, "ts": "2026-07-13T23:41:20Z"}
+{"key": "tenrich:methods:slayer", "status": "done", "payload": null, "ts": "2026-07-13T23:46:51Z"}
+{"key": "tenrich:hunter", "status": "pending", "payload": {"note": "player-direct granular training content, skill=hunter, 5 bands"}, "ts": "2026-07-14T00:02:46Z"}
+{"key": "tenrich:hunter", "status": "claimed", "payload": null, "ts": "2026-07-14T00:02:46Z"}
+{"key": "tenrich:hunter", "status": "done", "payload": null, "ts": "2026-07-14T00:02:46Z"}
+{"key": "tenrich:construction", "status": "pending", "payload": {"note": "tenrich granular pass: methods+atoms for train-construction-* (repair of duplicate-dispatch flat-shape file)"}, "ts": "2026-07-14T00:04:33Z"}
+{"key": "tenrich:construction", "status": "claimed", "payload": null, "ts": "2026-07-14T00:04:33Z"}
+{"key": "tenrich:construction", "status": "done", "payload": null, "ts": "2026-07-14T00:04:33Z"}
+{"key": "tenrich:methods:defence", "status": "pending", "payload": {"note": "player-direct granular methods+atoms for defence, 6 bands"}, "ts": "2026-07-14T00:28:53Z"}
+{"key": "tenrich:methods:defence", "status": "claimed", "payload": null, "ts": "2026-07-14T00:28:53Z"}
+{"key": "tenrich:methods:defence", "status": "done", "payload": null, "ts": "2026-07-14T00:28:53Z"}
+{"key": "tenrich:methods:prayer", "status": "pending", "payload": {"note": "player-direct granular methods+atoms for prayer, 4 bands (22/43/52/74) -> jobs/479f4b39 tenrich/methods/prayer.json"}, "ts": "2026-07-14T00:41:48Z"}
+{"key": "tenrich:methods:prayer", "status": "claimed", "payload": null, "ts": "2026-07-14T00:41:48Z"}
+{"key": "tenrich:methods:magic", "status": "pending", "payload": {"note": "player-direct granular training content, 5 bands, methods+checkpoints+atoms"}, "ts": "2026-07-14T00:45:42Z"}
+{"key": "tenrich:methods:magic", "status": "claimed", "payload": null, "ts": "2026-07-14T00:45:42Z"}
+{"key": "tenrich:methods:magic", "status": "done", "payload": null, "ts": "2026-07-14T00:45:42Z"}
+{"key": "tenrich:methods:prayer", "status": "done", "payload": null, "ts": "2026-07-14T00:51:44Z"}
+{"key": "tenrich-hitpoints", "status": "pending", "payload": {"note": "compose player-direct methods+atoms for hitpoints bands 20/50"}, "ts": "2026-07-14T00:56:31Z"}
+{"key": "tenrich-hitpoints", "status": "claimed", "payload": null, "ts": "2026-07-14T00:56:31Z"}
+{"key": "tenrich-hitpoints", "status": "done", "payload": null, "ts": "2026-07-14T00:56:32Z"}

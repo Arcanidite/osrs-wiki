@@ -1,0 +1,10 @@
+===Power-ups===
+[[File:Nz power-up.png|thumb|right|280px|A player using the Zapper power-up in Rumble mode.]]
+In Rumble mode, there are power-ups that spawn in the arena randomly and giving the player that activates it a temporary advantage. Power-ups disappear after 1 minute if they are not activated.
+
+* '''Recurrent damage''' adds an additional hit which deals 3/4 of the initial damage. For example, hitting a 35 will deal an extra 26 damage. The extra damage does not give experience. This power-up is red in colour and lasts 45 seconds.
+* '''Zapper''' damages nearby monsters over time, and the attacks have a max hit of 8. The zapper does not damage bosses immune to normal attacks (such as the [[Dagannoth mother (Nightmare Zone)|Dagannoth mother]] and [[Tanglefoot (Nightmare Zone)|Tanglefoot]]). The zapper can only kill Count Draynor if a player has hit him at least once (the hit does not have to do damage). This power-up is purple in colour and lasts 1 minute.
+* '''Power surge''' fills the player's special attack bar and regenerates it by 20% per tick. This power-up is yellow in colour and lasts 45 seconds.
+* '''Ultimate force''' instantly kills all the bosses present in the arena. These kills do not award any points. This power-up is white in colour.
+** These kills will, however, count towards a [[Slayer task]] (if applicable) and grant [[Slayer]] [[experience]] as long as the player dealt at least 1 damage to the assigned monster.
+**Additionally, any bosses killed with Ultimate Force will not drop their 100% drop unless the player has dealt at least 1 damage to them.

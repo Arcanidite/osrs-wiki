@@ -1,0 +1,7 @@
+==Level 60+/81+: Mastering Mixology==
+{{Main|Mastering Mixology}}
+At level 60 and with completion of [[Children of the Sun]], players can go to [[Aldarin]] and take part in the [[Mastering Mixology]] minigame, however it will become more efficient at higher levels, with the last unlock at level 81 Herblore. Mastering Mixology does not require specific herbs or any secondaries, and grants much more experience per herb compared to other methods. It is also the only source of some powerful utility items and features, such as the [[Prescription goggles]], [[Alchemist's amulet]], [[Chugging barrel]], and [[Potion storage]], so it can be advisable to do even if Herblore experience is not needed. A player with level 81 Herblore can expect to earn up to 105k xp/hour.
+
+{{Training guides}}
+[[Category:Herblore]]
+[[Category:Members]]

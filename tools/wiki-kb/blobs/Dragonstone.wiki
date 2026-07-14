@@ -1,0 +1,264 @@
+{{External|rs|rsc|dw}}
+{{Infobox Item
+|name = Dragonstone
+|image = [[File:Dragonstone.png]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = This looks valuable.
+|value = 10000
+|weight = 0.002
+|exchange = Yes
+|id = 1615
+}}
+[[File:Dragonstone detail.png|left|130px]]
+'''Dragonstones''' are rare [[gems]] which can be cut from [[uncut dragonstone]]s, requiring 55 [[Crafting]] and yielding 137.5 [[experience]]. It can then be made into dragonstone [[jewellery]] by using a [[furnace]] along with a [[gold bar]] and a [[mould]].
+
+[[Monster]]s with access to the [[rare drop table]] have a chance to drop cut dragonstones.
+
+[[Dragonstone (Mage Training Arena)|Dragonstone]]s from the [[Mage Training Arena]] [[minigame]] are different, providing [[pizazz points]] when [[enchantment spells]] are used on them and they cannot be taken outside the [[Mage Training Arena#Enchanting Chamber|enchanting chamber]].
+
+5 dragonstones can be given to [[Olbertus]] in the [[Forthos Dungeon]] to receive a [[temple coin]] and unlock the [[Sacred Bone Burner]].
+
+==Creation==
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 55
+|skill1boostable = Yes 
+|skill1exp = 137.5
+|members = Yes
+|ticks = 2
+|tools = Chisel
+|mat1 = Uncut dragonstone
+|output1 = Dragonstone
+}}
+
+==Products==
+{{Uses material list|Dragonstone}}
+
+==Training==
+===Crafting===
+[[Crafting]] dragonstones into jewellery at a [[furnace]] requires a [[gold bar]] and the appropriate [[mould]].
+{|class="wikitable sortable" style="text-align: center;"
+|-
+!{{SCP|Crafting}} Level
+!Inputs
+!Material Cost{{Refn|Cost calculated with inputs purchased from the [[Grand Exchange]].}}
+!Output
+!Sell Price
+!Profit/loss
+!{{SCP|Crafting}} XP/Craft
+!XP/Hour
+!Coins/XP
+!High Alch
+|-
+|55
+|{{plink|Dragonstone}} {{plink|Gold bar}}
+|{{Coins|{{GEP|Dragonstone}}+{{GEP|Gold bar}}}}
+|{{plink|Dragonstone ring}}
+|{{Coins|{{GEP|Dragonstone ring}}}}
+|{{Coins|{{GEP|Dragonstone ring}}-{{GEP|Gold bar}}-{{GEP|Dragonstone}}}}
+|100
+|<span title="XP rates based on an assumed 1250 crafted items per hour" style="cursor:help; border-bottom:1px dotted;">125,000</span>
+|{{Coins|({{GEP|Dragonstone ring}}-{{GEP|Gold bar}}-{{GEP|Dragonstone}})/100}}
+|{{Coins|{{Alch|Dragonstone ring}}}}
+|-
+|72
+|{{plink|Dragonstone}} {{plink|Gold bar}}
+|{{Coins|{{GEP|Dragonstone}}+{{GEP|Gold bar}}}}
+|{{plink|Dragon necklace}}
+|{{Coins|{{GEP|Dragon necklace}}}}
+|{{Coins|{{GEP|Dragon necklace}}-{{GEP|Gold bar}}-{{GEP|Dragonstone}}}}
+|105
+|<span title="XP rates based on an assumed 1250 crafted items per hour" style="cursor:help; border-bottom:1px dotted;">131,250</span>
+|{{Coins|({{GEP|Dragon necklace}}-{{GEP|Gold bar}}-{{GEP|Dragonstone}})/105}}
+|{{Coins|{{Alch|Dragon necklace}}}}
+|-
+|74
+|{{plink|Dragonstone}} {{plink|Gold bar}}
+|{{Coins|{{GEP|Dragonstone}}+{{GEP|Gold bar}}}}
+|{{plink|Dragonstone bracelet}}
+|{{Coins|{{GEP|Dragonstone bracelet}}}}
+|{{Coins|{{GEP|Dragonstone bracelet}}-{{GEP|Gold bar}}-{{GEP|Dragonstone}}}}
+|110
+|<span title="XP rates based on an assumed 1250 crafted items per hour" style="cursor:help; border-bottom:1px dotted;">137,500</span>
+|{{Coins|({{GEP|Dragonstone bracelet}}-{{GEP|Gold bar}}-{{GEP|Dragonstone}})/110}}
+|{{Coins|{{Alch|Dragonstone bracelet}}}}
+|-
+|80
+|{{plink|Dragonstone}} {{plink|Gold bar}}
+|{{Coins|{{GEP|Dragonstone}}+{{GEP|Gold bar}}}}
+|{{plink|Dragonstone amulet (u)}}
+|{{Coins|{{GEP|Dragonstone amulet (u)}}}}
+|{{Coins|{{GEP|Dragonstone amulet (u)}}-{{GEP|Gold bar}}-{{GEP|Dragonstone}}}}
+|150
+|<span title="XP rates based on an assumed 650 crafted items per hour" style="cursor:help; border-bottom:1px dotted;">187,500</span>
+|{{Coins|({{GEP|Dragonstone amulet (u)}}-{{GEP|Gold bar}}-{{GEP|Dragonstone}})/150}}
+|{{Coins|{{Alch|Dragonstone amulet (u)}}}}
+|-
+|1
+|{{plink|Dragonstone amulet (u)}} {{plink|Ball of wool}}
+|{{Coins|{{GEP|Dragonstone amulet (u)}}+{{GEP|Ball of wool}}}}
+|{{plink|Dragonstone amulet}}
+|{{Coins|{{GEP|Dragonstone amulet}}}}
+|{{Coins|{{GEP|Dragonstone amulet}}-{{GEP|Ball of wool}}-{{GEP|Dragonstone amulet (u)}}}}
+|4
+|<span title="XP rates based on an assumed 2000 strung amulets per hour" style="cursor:help; border-bottom:1px dotted;">8,000</span>
+|{{Coins|({{GEP|Dragonstone amulet}}-{{GEP|Ball of wool}}-{{GEP|Dragonstone amulet (u)}})/4}}
+|{{Coins|{{Alch|Dragonstone amulet}}}}
+|-
+|}
+{{Reflist}}
+
+===Fletching===
+{|class="wikitable sortable" style="text-align: center;"
+|-
+!{{SCP|Fletching}} Level
+!Input
+!Material Cost<ref>Cost calculated assuming all inputs are purchased from the [[Grand Exchange]].</ref>
+!Output
+!Sell Price
+!Profit/Loss
+!{{SCP|Fletching}} XP/Fletch
+!XP/Hour
+!Coins/XP
+|-
+|71
+|{{plink|Dragonstone}}
+|{{Coins|{{GEP|Dragonstone}}}}
+|{{plink|Dragonstone bolt tips}} x12
+|{{Coins|{{GEP|Dragonstone bolt tips|12}}}}
+|{{Coins|{{GEP|Dragonstone bolt tips|12}}-{{GEP|Dragonstone}}}}
+|8.2
+|N/A
+|{{Coins|({{GEP|Dragonstone bolt tips|12}}-{{GEP|Dragonstone}})/8.2}}
+|-
+|}
+{{Reflist|group="c"}}
+
+===Magic===
+Dragonstone jewellery is enchanted using [[Lvl-5 Enchant]], requiring 68 [[Magic]], 1 [[cosmic rune]], 15 [[earth rune]]s, 15 [[water rune]]s along with the piece of dragonstone [[jewellery]]. Charged dragonstone jewellery is some of the few usable [[teleportation]] methods beyond level 20 up to level 30 [[Wilderness]] along with the [[Pharaoh's sceptre]], [[grand seed pod]], [[royal seed pod]], [[slayer ring]] and [[ring of life]].
+{|class="wikitable sortable" style="text-align: center;"
+|-
+!Unenchanted
+!Price
+!Input Cost{{Refn|Cost calculated using a [[mud battlestaff]] (provides unlimited [[earth rune|earth]] and [[water rune|water runes]]) and [[cosmic rune]]s.}}
+!Product
+!Product Price
+!Profit/Loss
+!{{SCP|Magic}} XP/Cast
+!XP/Hour{{Refn|Rates based on 1600 casts per hour.}}
+!Coins/XP
+|-
+|{{plink|Dragonstone ring}}
+|{{Coins|{{GEP|Dragonstone ring}}}}
+|{{Coins|{{GEP|Cosmic rune}}+{{GEP|Dragonstone ring}}}}
+|{{plink|Ring of wealth (uncharged)}}
+|{{Coins|{{GEP|Ring of wealth}}}}
+|{{Coins|{{GEP|Ring of wealth}}-{{GEP|Cosmic rune}}-{{GEP|Dragonstone ring}}}}
+|78
+|124,800
+|{{Coins|({{GEP|Ring of wealth}}-{{GEP|Cosmic rune}}-{{GEP|Dragonstone ring}})/78}}
+|-
+|{{plink|Dragon necklace}}
+|{{Coins|{{GEP|Dragon necklace}}}}
+|{{Coins|{{GEP|Cosmic rune}}+{{GEP|Dragon necklace}}}}
+|{{plink|Skills necklace (uncharged)}}
+|{{Coins|{{GEP|Skills necklace}}}}
+|{{Coins|{{GEP|Skills necklace}}-{{GEP|Cosmic rune}}-{{GEP|Dragon necklace}}}}
+|78
+|124,800
+|{{Coins|({{GEP|Skills necklace}}-{{GEP|Cosmic rune}}-{{GEP|Dragon necklace}})/78}}
+|-
+|{{plink|Dragonstone bracelet}}
+|{{Coins|{{GEP|Dragonstone bracelet}}}}
+|{{Coins|{{GEP|Cosmic rune}}+{{GEP|Dragonstone bracelet}}}}
+|{{plink|Combat bracelet (uncharged)}}
+|{{Coins|{{GEP|Combat bracelet}}}}
+|{{Coins|{{GEP|Combat bracelet}}-{{GEP|Dragonstone bracelet}}-{{GEP|Cosmic rune}}}}
+|78
+|124,800
+|{{Coins|({{GEP|Combat bracelet}}-{{GEP|Dragonstone bracelet}}-{{GEP|Cosmic rune}})/78}}
+|-
+|{{plink|Dragonstone amulet}}
+|{{Coins|{{GEP|Dragonstone amulet}}}}
+|{{Coins|{{GEP|Cosmic rune}}+{{GEP|Dragonstone amulet}}}}
+|{{plink|Amulet of glory (uncharged)}}
+|{{Coins|{{GEP|Amulet of glory}}}}
+|{{Coins|{{GEP|Amulet of glory}}-{{GEP|Dragonstone amulet}}-{{GEP|Cosmic rune}}}}
+|78
+|124,800
+|{{Coins|({{GEP|Amulet of glory}}-{{GEP|Dragonstone amulet}}-{{GEP|Cosmic rune}})/78}}
+|}
+{{Reflist}}
+
+===Combined===
+Requires 68 Magic; for experience rates and Crafting requirements, see above tables. Assumes a [[mud battlestaff]] is wielded for enchantment and a [[staff of fire]] is wielded for alchemy. [[High Alchemy]] profits account for the price of a [[nature rune]].
+{|class="wikitable sortable" style="text-align: center;"
+! Materials
+! Material cost
+! Product
+! Product value
+! Profit
+! Product value (HA)
+! Profit (HA)
+|-
+|{{plink|Dragonstone}} {{plink|Gold bar}} {{plink|Cosmic rune}}
+|{{Coins|{{GEP|Dragonstone}}+{{GEP|Gold bar}}+{{GEP|Cosmic rune}}}}
+|{{plink|Ring of wealth (uncharged)}}
+|{{Coins|{{GEP|Ring of wealth}}}}
+|{{Coins|{{GEP|Ring of wealth}}-{{GEP|Dragonstone}}-{{GEP|Gold bar}}-{{GEP|Cosmic rune}}}}
+|{{Coins|{{HA|Ring of wealth}}}}
+|{{Coins|{{HA|Ring of wealth}}-{{GEP|Dragonstone}}-{{GEP|Gold bar}}-{{GEP|Nature rune}}-{{GEP|Cosmic rune}}}}
+|-
+|{{plink|Dragonstone}} {{plink|Gold bar}} {{plink|Cosmic rune}}
+|{{Coins|{{GEP|Dragonstone}}+{{GEP|Gold bar}}+{{GEP|Cosmic rune}}}}
+|{{plink|Skills necklace (uncharged)}}
+|{{Coins|{{GEP|Skills necklace}}}}
+|{{Coins|{{GEP|Skills necklace}}-{{GEP|Dragonstone}}-{{GEP|Gold bar}}-{{GEP|Cosmic rune}}}}
+|{{Coins|{{HA|Skills necklace}}}}
+|{{Coins|{{HA|Skills necklace}}-{{GEP|Dragonstone}}-{{GEP|Gold bar}}-{{GEP|Nature rune}}-{{GEP|Cosmic rune}}}}
+|-
+|{{plink|Dragonstone}} {{plink|Gold bar}} {{plink|Cosmic rune}}
+|{{Coins|{{GEP|Dragonstone}}+{{GEP|Gold bar}}+{{GEP|Cosmic rune}}}}
+|{{plink|Combat bracelet (uncharged)}}
+|{{Coins|{{GEP|Combat bracelet}}}}
+|{{Coins|{{GEP|Combat bracelet}}-{{GEP|Dragonstone}}-{{GEP|Gold bar}}-{{GEP|Cosmic rune}}}}
+|{{Coins|{{HA|Combat bracelet}}}}
+|{{Coins|{{HA|Combat bracelet}}-{{GEP|Dragonstone}}-{{GEP|Gold bar}}-{{GEP|Nature rune}}-{{GEP|Cosmic rune}}}}
+|-
+|{{plink|Dragonstone}} {{plink|Gold bar}} {{plink|Cosmic rune}} {{plink|Ball of wool}}
+|{{Coins|{{GEP|Dragonstone}}+{{GEP|Gold bar}}+{{GEP|Cosmic rune}}+{{GEP|Ball of wool}}}}
+|{{plink|Amulet of glory (uncharged)}}
+|{{Coins|{{GEP|Amulet of glory}}}}
+|{{Coins|{{GEP|Amulet of glory}}-{{GEP|Dragonstone}}-{{GEP|Gold bar}}-{{GEP|Cosmic rune}}-{{GEP|Ball of wool}}}}
+|{{Coins|{{HA|Amulet of glory}}}}
+|{{Coins|{{HA|Amulet of glory}}-{{GEP|Dragonstone}}-{{GEP|Gold bar}}-{{GEP|Ball of wool}}-{{GEP|Nature rune}}-{{GEP|Cosmic rune}}}}
+|}
+
+==Item sources==
+{{Drop sources|Dragonstone}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|change = You can now recharge dragonstone jewellery at the [[Fountain of Rune]].
+|date = 27 March 2014
+|update = Wilderness Feedback Update
+}}
+{{Subject changes footer}}
+
+==Trivia==
+* When attempting to cut a dragonstone, the option to stop cutting the dragonstone into tips is "No! Don't cut my lovely dragonstone!"
+**If the dragonstone is left intact, the player will receive a chatbox message: {{mes|You carefully take the chisel away from the expensive dragonstone.}}
+* Dragonstone was used as one of the tiers of post count badges on the [[RuneScape Forums|official Runescape Forums]]. Players had to have made 500,000 posts to be given the dragonstone badge.
+
+{{Dragonstone}}
+{{Gems}}
+[[Category:Crafting items]]

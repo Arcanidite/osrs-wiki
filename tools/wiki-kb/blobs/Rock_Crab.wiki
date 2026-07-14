@@ -1,0 +1,224 @@
+{{External|rs=Rock crab}}
+{{HasTask|Crabs}}
+{{Infobox Monster
+|version1 = Active
+|version2 = Hidden
+|name1 = Rock Crab
+|name2 = Rocks
+|image1 = [[File:Rock crab (exposed).png|200px]]
+|image2 = [[File:Rock crab (hidden).png|200px]]
+|release = [[2 November]] [[2004]]
+|update = The Fremennik Trials
+|members = Yes
+|combat = 13
+|size = 1
+|examine1 = No one likes crabs...
+|examine2 = A rocky outcrop.
+|xpbonus = 0
+|max hit = 1
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Crush]]
+|attack speed = 4
+|respawn = 50
+|slayxp = 50
+|cat = Crabs
+|assignedby = mazchna,vannaka,chaeldar
+|hitpoints = 50
+|att = 1
+|str = 1
+|def = 1
+|mage = 1
+|range = 1
+|attbns = 0
+|strbns = 0
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|dlight = 0
+|dstandard = 0
+|dheavy = 0
+|elementalweaknesstype = Earth
+|elementalweaknesspercent = 20
+|poisonresistance = 0
+|venomresistance = 0
+|immunecannon = No
+|immunethrall = No
+|id1 = 100,102
+|id2 = 101,103
+|leagueRegion = Fremennik,Kourend
+}}
+[[File:Multiple rock crabs.png|thumb|A player in combat with multiple rock crabs.]]
+'''Rock Crabs''' are [[aggressive]] monsters that look like harmless rocks while disguised, but attack when walked by. Unlike most other enemies and [[NPCs]], Rock Crabs are not marked with yellow dots on the player's [[minimap]]; this is probably due to the crabs' appearance, which camouflages them as rocks.
+
+Players can tell if a rock is a Rock Crab by looking at the rock's shape; Rock Crabs are tall and oval shaped while normal rocks in their area are mostly in large clusters of shattered pieces. Another way to tell is by right clicking on them. If the text colour is yellow, it is a Rock Crab. If the text is blue, it is just a prop.
+
+Rock Crabs are excellent for training at low-mid [[combat level]]s due to their low [[Defence]] and relatively high [[Hitpoints]], though low level players should consider bringing [[food]]. The more numerous, closer-knit and higher health [[Sand Crab|sand]], [[Frost Crab|frost]] and [[Ammonite Crab|ammonite crabs]] have made rock crabs less popular amongst players, especially at higher levels.
+
+Like all other crabs, rock crabs start off aggressive but will become [[tolerance|tolerant]] of the player after ten minutes. As they must be active in order to be fought, players must [[Tolerance#Standard_monsters|reset their aggression timer]] once they become tolerant. To make the crabs aggressive again, exit the surrounding area (halfway to the entrance to the village in [[Rellekka]], or by entering and exiting the entrance to [[Keldagrim]]) and enter again. As they are "dormant" until "awoken" by a passing player, rock crabs cannot be attacked until they are made aggressive once more.
+
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Rock Crab
+|location = North of [[Rellekka]]
+|levels = 13
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2694,y:3724|x:2700,y:3718|x:2701,y:3728|x:2702,y:3720|x:2703,y:3716|x:2704,y:3727|x:2705,y:3725|x:2708,y:3719|x:2711,y:3715|x:2712,y:3719|x:2712,y:3725|x:2715,y:3729|x:2716,y:3721|x:2719,y:3719|x:2663,y:3716|x:2666,y:3715|x:2667,y:3727|x:2669,y:3718|x:2670,y:3727|x:2671,y:3724|x:2672,y:3732|x:2673,y:3716|x:2675,y:3729|x:2676,y:3713|x:2677,y:3717|x:2677,y:3721|x:2677,y:3733|x:2678,y:3729|x:2681,y:3727|x:2681,y:3733|x:2683,y:3716|x:2684,y:3720|x:2686,y:3713|x:2687,y:3724
+|mtype = pin
+|leagueRegion = fremennik
+}}
+{{LocLine
+|name = Rock Crab
+|location = [[Waterbirth Island]]
+|levels = 13
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2529,y:3740|x:2512,y:3765|x:2512,y:3766|x:2514,y:3766|x:2521,y:3756|x:2530,y:3762|x:2532,y:3760|x:2537,y:3765|x:2541,y:3757|x:2543,y:3754|x:2548,y:3734|x:2553,y:3746|x:2522,y:3716|x:2523,y:3723|x:2524,y:3724|x:2531,y:3721|x:2534,y:3719|x:2501,y:3755|x:2502,y:3754
+|mtype = pin
+|leagueRegion = fremennik
+}}
+{{LocLine
+|name = Rock Crab
+|location = West of [[Mount Quidamortem]]
+|levels = 13
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1197,y:3587|x:1199,y:3584|x:1200,y:3588|x:1204,y:3590|x:1213,y:3596|x:1199,y:3562|x:1200,y:3565|x:1200,y:3579|x:1201,y:3553|x:1201,y:3559|x:1202,y:3562|x:1202,y:3577|x:1202,y:3581|x:1203,y:3546|x:1203,y:3551|x:1203,y:3554|x:1204,y:3557|x:1204,y:3563|x:1205,y:3544|x:1207,y:3538|x:1208,y:3541|x:1209,y:3533|x:1210,y:3535|x:1210,y:3543|x:1211,y:3538|x:1212,y:3532|x:1213,y:3539|x:1214,y:3535
+|mtype = pin
+|leagueRegion = kourend
+}}
+{{LocLine
+|name = Rock Crab
+|location = [[Waterbirth Island Dungeon]]
+|levels = 13
+|members = Yes
+|mapID = 25
+|plane = 0
+|x:2442,y:10159|x:2443,y:10158|x:2443,y:10159|x:2449,y:10160|x:2449,y:10164|x:2451,y:10165|x:2454,y:10159|x:2455,y:10164|x:2456,y:10161|x:2458,y:10160|x:2459,y:10166|x:2460,y:10153|x:2460,y:10155|x:2461,y:10154|x:2464,y:10165|x:2464,y:10167|x:2470,y:10164|x:2472,y:10162
+|mtype = pin
+|leagueRegion = fremennik
+}}
+{{LocLine
+|name = Rock Crab
+|location = [[Brine Rat Cavern]]
+|levels = 13
+|members = Yes
+|mapID = 10026
+|plane = 0
+|x:2748,y:10166|x:2739,y:10153|x:2706,y:10159|x:2710,y:10168
+|mtype = pin
+|leagueRegion = fremennik
+}}
+{{LocLine
+|name = Rock Crab
+|location = [[Charred Island]]
+|levels = 13
+|members = Yes
+|mapID = -1
+|plane = 0
+|zoom=3
+|2650,2405|2648,2408|2646,2409|2646,2414|2650,2411|2652,2415|2656,2419
+|mtype = pin
+|leagueRegion = N/A
+}}
+{{LocTableBottom}}
+
+==Drops==
+{{DropLogProject|jagex=yes}}
+
+{{Average drop value}}
+===Weapons===
+{{DropsTableHead}}
+{{DropsLine|name=Bronze pickaxe|quantity=1|rarity=6/128}}
+{{DropsLine|name=Iron pickaxe|quantity=1|rarity=5/128}}
+{{DropsTableBottom}}
+
+===Seaweed===
+{{DropsTableHead}}
+{{DropsLine|name=Seaweed|quantity=1|rarity=4/128}}
+{{DropsLine|name=Seaweed|quantity=2|rarity=4/128}}
+{{DropsLine|name=Seaweed|quantity=5|rarity=2/128}}
+{{DropsLine|name=Edible seaweed|quantity=2|rarity=2/128}}
+{{DropsTableBottom}}
+
+===Ores===
+{{DropsTableHead}}
+{{DropsLine|name=Tin ore|quantity=3|rarity=4/128}}
+{{DropsLine|name=Iron ore|quantity=1|rarity=2/128}}
+{{DropsLine|name=Coal|quantity=2|rarity=2/128}}
+{{DropsLine|name=Copper ore|quantity=3|rarity=2/128}}
+{{DropsTableBottom}}
+
+===Oyster===
+{{DropsTableHead}}
+{{DropsLine|name=Oyster|quantity=2|rarity=12/128}}
+{{DropsLine|name=Oyster|quantity=1|rarity=9/128}}
+{{DropsLine|name=Empty oyster|quantity=1|rarity=3/128|gemw=No}}
+{{DropsLine|name=Empty oyster|quantity=3|rarity=1/128|gemw=No}}
+{{DropsLine|name=Oyster pearl|quantity=1|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Coins===
+{{DropsTableHead}}
+{{DropsLine|name=Coins|quantity=4|rarity=29/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=8|rarity=6/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=36|rarity=8/128|gemw=No}}
+{{DropsTableBottom}}
+
+===Other===
+{{DropsTableHead}}
+{{DropsLine|name=Nothing|rarity=19/128}}
+{{DropsLine|name=Fishing bait|quantity=10|rarity=2/128}}
+{{DropsLine|name=Opal bolt tips|quantity=5|rarity=2/128}}
+{{DropsLine|name=Spinach roll|quantity=1|rarity=1/128|gemw=No}}
+{{DropsLine|name=Casket|quantity=1|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Gem drop table===
+{{GemDropTable|1/128|naturetalisman=yes}}
+
+===Tertiary===
+{{DropsTableHead}}
+{{DropsLine|name=Clue scroll (elite)|quantity=1|rarity=Always|raritynotes=<ref name=elite group=d>Elite clue scrolls or elite caskets are only dropped when completing an [[Treasure Trails/Full guide/Elite#Cryptic clues|elite cryptic clue]] asking the player to kill a Rock Crab.</ref>|gemw=No|bucket=No}}
+{{DropsLine|name=Reward casket (elite)|quantity=1|rarity=Always|raritynotes=<ref name=elite group=d />|gemw=No}}
+{{DropsLineClue|type=easy|rarity=1/128}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+==Treasure Trails==
+*{{CrypticNPC|Killing a rock crab|elite|You might have to turn over a few stones to progress.}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 25 June 2025
+|update = Summer Sweep Up: Combat
+|change = Rock crabs now have a 20% [[elemental weakness]] to [[earth spells]].
+}}
+{{Subject changes
+|date = 26 March 2025
+|update = Poll 83 QoL Changes
+|poll = Poll 83 - Castle Wars, New Player Changes & More
+|change = Crabs can now be assigned as a [[Slayer task]] by [[Mazchna]], [[Vannaka]], and [[Chaeldar]].
+}}
+{{Subject changes footer}}
+
+==See also==
+*[[Sand Crab]] ([[King Sand Crab|King]])
+*[[Swamp Crab]]
+*[[Ammonite Crab]]
+*[[Gemstone Crab]]
+*[[Experiment]]
+
+{{Brine Rat Cavern}}
+{{Waterbirth Island}}

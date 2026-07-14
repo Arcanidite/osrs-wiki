@@ -1,0 +1,15 @@
+==Official worlds==
+The following [[Server#Themed servers/worlds|official worlds]] are assigned to Guardians of the Rift:
+
+{| class="wikitable sortable align-center-1 align-center-3" style="text-align: left;"
+!World
+!Location
+!Members
+!Activity
+{{WorldLine|409|United States (west)|mems=yes|Guardians of the Rift}}
+{{WorldLine|445|United States (west)|mems=yes|Guardians of the Rift}}
+{{WorldLine|464|Germany|mems=yes|Guardians of the Rift}}
+{{WorldLine|478|United States (east)|mems=yes|Guardians of the Rift}}
+{{WorldLine|522|United Kingdom|mems=yes|Guardians of the Rift}}
+{{WorldLine|534|Australia|mems=yes|Guardians of the Rift}}
+|}

@@ -1,0 +1,90 @@
+{{External|rs}}
+{{Infobox Item
+|name = Steel nails
+|image = [[File:Steel nails.png]]
+|release = [[23 September]] [[2001]]
+|update = Dragon quest online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Drop
+|examine = Keeps things in place fairly permanently.
+|value = 3
+|weight = 0.000
+|exchange = Yes
+|id = 1539
+}}
+[[File:Steel nails detail.png|left|150px]]
+'''Steel nails''' are [[nails]] made with a [[steel bar]] on an [[anvil]] with a hammer in the player's [[inventory]], requiring 34 [[Smithing]], yielding 15 steel nails and granting 37.5 Smithing experience per bar.
+
+These nails are the only nails that can be made in [[free-to-play]] because they are required in the [[Dragon Slayer I]] [[quest]]. Steel nails are tradeable and the [[sawmill operator]] will sell them to members for {{NoCoins|3}} [[coins]] each.
+
+[[Members]] can use steel nails to [[construct]] certain types of wooden [[furniture]]. With 56 [[Construction]], five steel nails can be used along with two [[planks]] to repair broken bridges in the [[Hallowed Sepulchre]], granting 150 Construction experience; without a [[hallowed hammer]] in the player's inventory, there is a chance of failing to repair the bridge and breaking nails in the process. With 33 [[Fletching]], they can be used on [[flighted ogre arrow]]s to create [[steel brutal]] arrows, granting 5.1 Fletching experience per arrow. With 62 [[Crafting]], fifteen steel nails can be used with a [[maple shield]] and two pieces of [[green dragon leather]] to craft a [[green d'hide shield]], granting 124 Crafting experience per shield.
+
+==Creation==
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 34
+|skill1boostable = Yes
+|skill1exp = 37.5
+|members = No
+|ticks = 5
+|tools = Hammer
+|facilities = Anvil
+|mat1 = Steel bar
+|output1 = Steel nails
+|output1quantity = 15
+}}
+
+==Uses==
+===Quests===
+*[[Dragon Slayer I]]: 90 × steel nails to repair hole
+*[[Horror from the Deep]]: 60 × steel nails
+*[[In Search of the Myreque]]: 225 × steel nails
+*[[Cold War]]: 10 × steel nails
+*[[Sleeping Giants]]: 10 × nails of any type
+
+==Products==
+{{Uses material list|Steel nails}}
+
+==Item sources==
+{{Drop sources|Steel nails}}
+
+===Shop locations===
+{{Store locations list|Steel nails}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 27 May 2026
+|update = Changes to Sailing & LMS Rewards Eligibility
+|change = The item was graphically updated to better match other steel items.
+}}
+{{Subject changes
+|change = 15 steel nails are crafted per bar instead of 2.
+}}
+{{Subject changes
+|date = 21 March 2005
+|update = Between a Rock...
+|change = The item was renamed from "Nails" to "Steel nails".
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Steel nails v1 detail.png|center|300x150px]]
+|[[File:Steel nails detail.png|center|300x150px]]
+|-
+|[[File:Steel nails v1.png|center]]
+|[[File:Steel nails.png|center]]
+|-
+|23 September 2001 –<br/>27 May 2026
+|27 May 2026 –<br/>Present
+|}
+
+{{Construction items}}
+{{Steel equipment}}
+[[Category:Nails]]

@@ -1,0 +1,43 @@
+==Locations==
+{{ObjectTableHead}}
+{{ObjectLocLine
+|name = Sawmill
+|location = [[Lumber Yard]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3302,y:3492
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{ObjectLocLine
+|name = Sawmill
+|location = [[Woodcutting Guild]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1623,y:3500
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{ObjectLocLine
+|name = Sawmill
+|location = [[Prifddinas]] Courtyard
+|members = Yes
+|mapID = 29
+|plane = 0
+|x:3316,y:6118
+|mtype = pin
+|leagueRegion = Tirannwn
+}}
+{{ObjectLocLine
+|name = Sawmill
+|location = [[Auburnvale]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1393,y:3370
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{ObjectTableBottom}}[[Auburnvale]]'s sawmill is currently the closest one to a bank.

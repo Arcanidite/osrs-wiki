@@ -1,0 +1,14 @@
+===Lobster pots===
+[[File:Caging.png|thumb|300px|This player is using a [[lobster pot]] to catch [[Raw lobster|lobster]]s.]]
+[[Raw lobster|Lobster]]s are caught in the sea by using [[lobster pot]]s. When a player has found a [[Fishing spots|fishing spot]], they can then use their lobster pot if the option "cage fishing spot" is available. This is also true for [[Raw Dark Crab|Dark Crabs]], with the only difference being [[Dark Fishing Bait]] must also be in a player's inventory.
+
+{| class="wikitable sortable"
+!colspan="2"|Equipment
+!Level
+!Members
+|-
+|{{Plinkt|Lobster pot}}
+|{{SCP|Fishing|40}}
+|{{Members|No}}
+|-
+|}

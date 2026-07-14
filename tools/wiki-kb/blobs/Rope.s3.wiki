@@ -1,0 +1,9 @@
+===Ned===
+{{Recipe
+|members = No
+|ticks = 1
+|facilities = Ned
+|mat1 = Ball of wool
+|mat1quantity = 4
+|output1 = Rope
+}}

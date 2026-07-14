@@ -1,0 +1,2 @@
+===Accurate===
+When using the '''accurate''' style, for every point of damage a player deals, they gain 4 experience in [[Attack]] and 1.33 experience in [[Hitpoints]]. Using the '''accurate '''style provides an invisible +3 boost to your Attack level.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/496978405909614592|date=6 August 2014|archiveurl=https://reldo.runescape.wiki/i/27963840|archivedate=11 April 2026|quote=It treats you as if your Attack stat were +3 higher than it does for Aggressive or Defensive. Controlled would do +1.|name=Attack}}

@@ -375,6 +375,17 @@ const covered = {
   // Endgame chain opts in first; enrich.py default OFF = byte-identical for
   // every other route (p2p/corpus/quests/origin never set this).
   opportunistic: true,
+  // state_after: true — STATE_CONSOLIDATION.md: attach the per-step
+  // state_after{skills_delta,inv,worn,bank,unlocks_new} snapshot minted by
+  // `state_scan.mjs --emit assets/data/tools/state_after.jsonl` (a state
+  // simulator over THIS route, keyed by step id — sidecar, never hand-edited
+  // route JSON). enrich.py merges it by id like refs/mapMarkers; default OFF
+  // = byte-identical for every other route. Regenerate the sidecar after any
+  // change to route-grand's step ORDER (state_after is position-dependent);
+  // re-running state_scan against the freshly re-baked route.json before the
+  // next enrich pass keeps it a stable fixed point (state_scan reads only
+  // the requisite bank, never the sidecar itself, so no feedback loop).
+  state_after: true,
   // steer_points deliberately dropped too (barrows normally carries steer-
   // graceful/steer-ardougne-easy-diary — see route-p2p.json's own "Toward
   // Ardougne Easy Diary" phase for that waypoint-card UX). Carrying them

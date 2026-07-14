@@ -1,0 +1,76 @@
+==Standard axes==
+{| class="wikitable align-center-1 align-center-3 align-center-4 align-right-5 align-right-6"
+!colspan=2|Item
+!{{SCP|Woodcutting}}
+!{{SCP|Attack}}
+!Shop price
+![[Grand Exchange|GE]] price
+!Weight
+|-
+|{{plinkt|Bronze axe}}
+|1
+|1
+|{{coins|16}}{{efn|Sold by [[Bob]].|name="Bob"}}{{efn|Sold by [[Lunami]].|name="Lunami"}}
+|{{coins|{{GEP|Bronze axe}}}}
+|1.360&nbsp;kg
+|-
+|{{plinkt|Iron axe}}
+|1
+|1
+|{{coins|56}}{{efn|Sold by [[Bob]].|name="Bob"}}{{efn|Sold by [[Lunami]].|name="Lunami"}}
+|{{coins|{{GEP|Iron axe}}}}
+|1.360&nbsp;kg
+|-
+|{{plinkt|Steel axe}}
+|6
+|5
+|{{coins|200}}{{efn|Sold by [[Bob]].|name="Bob"}}{{efn|Sold by [[Lunami]].|name="Lunami"}}
+|{{coins|{{GEP|Steel axe}}}}
+|1.360&nbsp;kg
+|-
+|{{plinkt|Black axe}}
+|11
+|10
+|{{NA|Not sold}}
+|{{coins|{{GEP|Black axe}}}}
+|1.360&nbsp;kg
+|-
+|{{plinkt|Mithril axe}}
+|21
+|20
+|{{coins|520}}{{efn|Sold by [[Lunami]].|name="Lunami"}}
+|{{coins|{{GEP|Mithril axe}}}}
+|1.133&nbsp;kg
+|-
+|{{plinkt|Adamant axe}}
+|31
+|30
+|{{coins|1,280}}{{efn|Sold by [[Lunami]].|name="Lunami"}}
+|{{coins|{{GEP|Adamant axe}}}}
+|1.587&nbsp;kg
+|-
+|{{plinkt|Rune axe}}
+|41
+|40
+|{{coins|40,960}}{{efn|Sold by [[Perry]].|name="Perry"}}
+|{{coins|{{GEP|Rune axe}}}}
+|1.360&nbsp;kg
+|-
+|{{plinkt|Dragon axe}}
+|61
+|60
+|{{NA|Not sold}}
+|{{coins|{{GEP|Dragon axe}}}}
+|1.360&nbsp;kg
+|-
+|{{plinkt|Crystal axe}}{{efn|Also requires the [[Song of the Elves]] quest and 50 [[Agility]] to use.}}
+|71
+|70
+|{{NA|Not sold}}
+|{{NA|Untradeable}}
+|0.907&nbsp;kg
+|}
+{{Notelist}}
+
+===Bonuses===
+{{Infotable Bonuses|Bronze axe|Iron axe|Steel axe|Black axe|Mithril axe|Adamant axe|Rune axe|Dragon axe|Crystal axe#Active|sort=aslash|nototals=yes}}

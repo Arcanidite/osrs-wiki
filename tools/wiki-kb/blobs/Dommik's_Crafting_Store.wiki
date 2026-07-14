@@ -1,0 +1,35 @@
+{{External|rs=Dommik's Crafting Store|rsc=Dommik's Crafting Equipment Shop}}
+{{Infobox Shop
+|name = Dommik's Crafting Store.
+|image = [[File:Dommik's Crafting Store..png|300px]]
+|release = [[23 June]] [[2001]]
+|update = New tailoring ability
+|members = No
+|icon = [[File:Crafting shop icon.png]]
+|location = [[Al Kharid]]
+|owner = [[Dommik]]
+|special = Crafting shop
+|map = {{Map|3321,3194|mtype=rectangle|rectX=6|rectY=7|bucket=yes}}
+|leagueRegion = Desert
+}}
+'''Dommik's Crafting Store''' is a [[Crafting shops|Crafting supplies store]] owned by [[Dommik]] located in north-eastern [[Al Kharid]]. It is a convenient place to buy [[Crafting]] supplies due to its close proximity to a [[bank]] and a [[tanner]].
+
+Dommik's Crafting Store has an identical stock to that of [[Rommik's Crafty Supplies]] in [[Rimmington]].
+
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=650|delta=20|column1=Members}}
+{{StoreLine|name=Chisel|stock=2|restock=100|column1={{Members|No}}}}
+{{StoreLine|name=Ring mould|stock=4|restock=100|column1={{Members|No}}}}
+{{StoreLine|name=Necklace mould|stock=2|restock=100|column1={{Members|No}}}}
+{{StoreLine|name=Amulet mould|stock=2|restock=100|column1={{Members|No}}}}
+{{StoreLine|name=Needle|stock=3|restock=100|column1={{Members|No}}}}
+{{StoreLine|name=Thread|stock=100|restock=5|column1={{Members|No}}}}
+{{StoreLine|name=Holy mould|stock=3|restock=100|column1={{Members|No}}}}
+{{StoreLine|name=Sickle mould|stock=6|restock=15|column1={{Members|Yes}}}}
+{{StoreLine|name=Tiara mould|stock=10|restock=10|column1={{Members|No}}}}
+{{StoreLine|name=Bolt mould|stock=10|restock=10|column1={{Members|Yes}}}}
+{{StoreLine|name=Bracelet mould|stock=5|restock=100|column1={{Members|Yes}}}}
+{{StoreTableBottom}}
+
+{{Shops}}
+{{Al Kharid}}

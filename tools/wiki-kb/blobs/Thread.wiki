@@ -1,0 +1,56 @@
+{{external|rs|rsc}}
+{{Otheruses|def=no|the Tombs of Amascut reward|Thread of elidinis}}
+{{Infobox Item
+|name = Thread
+|image = [[File:Thread.png]]
+|release = [[23 June]] [[2001]]
+|update = New tailoring ability
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Drop
+|examine = Used with a needle to make clothes.
+|value = 1
+|weight = 0.000
+|respawn = 100
+|exchange = Yes
+|id = 1734
+}}
+[[File:Thread detail.png|left|100px]]
+'''Thread''' is used along with a [[needle]] to make armour out of [[leather]], [[dragon leather]] and [[cured yak-hide]]. Each thread spool has 5 uses before it is consumed. A "use" means an action performed, not number of leathers used (e.g. making vambraces, which use 1 hide each, consumes thread at the same rate as making chaps, which use 2 hides each). 
+
+After completion of [[Death on the Isle]], a [[Costume needle]] can be used for crafting without needing thread.
+
+==Uses==
+===Quests===
+*[[Elemental Workshop I]]: 1 × thread to fix [[Bellows (Elemental Workshop)|bellows]]
+*[[Ghosts Ahoy]]: 1 × thread to repair model ship
+*[[Lunar Diplomacy]]: 2 × thread to tan [[Suqah hide]]
+*[[Creature of Fenkenstrain]]: 5 x thread to sew [[Lord Rologarth]]'s new body together
+
+==Products==
+{{Uses material list|Thread}}
+
+==Item sources==
+Thread can also be obtained during the [[King's Ransom]] prison sequence by asking [[Sir Lancelot]] to empty his pockets.
+{{Drop sources|Thread}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Thread|location=[[Varrock]] - [[Jolly Boar Inn]]|members=No|3286,3491,qty:1|leagueRegion = Misthalin}}
+{{ItemSpawnLine|name=Thread|location=[[Darkmeyer Seamstress]]|members=Yes|3599,3379|leagueRegion = Morytania}}
+{{ItemSpawnLine|name=Thread|location=[[Kebos Lowlands]] - [[Mary (Getting Ahead)|Mary]] and [[Gordon]]'s house ({{FloorNumber|uk=1}})|members=Yes|plane=1
+|1244,3684,qty:1|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Thread|location=[[Prifddinas]] - west inside [[Lliann's Wares]]|members=Yes|mapID=29|3229,6069|leagueRegion = Tirannwn}}
+{{ItemSpawnLine|name=Thread|location=[[Shayzien Styles]]|members=Yes|1511,3591,qty:1|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Thread|location=[[Civitas illa Fortis]]|members=Yes|1656,3096|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Thread|location=[[Quetzacalli Gorge]]|members=Yes|1499,3251|leagueRegion = Varlamore}}
+{{ItemSpawnTableBottom}}
+
+===Shop locations===
+{{Store locations list|Thread}}
+
+[[Category:Crafting items]]

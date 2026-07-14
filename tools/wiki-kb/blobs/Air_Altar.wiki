@@ -1,0 +1,86 @@
+{{External|rs=Air altar}}
+{{Infobox Scenery
+|name = Altar
+|image = [[File:Altar (air).png|300px]]
+|release = [[29 March]] [[2004]]
+|update = RS2 Launched!
+|members = No
+|quest = No
+|location = South of [[Falador]]
+|options = Craft-rune
+|examine = A mysterious power emanates from this shrine.
+|map = {{Map|mtype=pin|x = 2843|y = 4833|mapID=-1}}
+|id = 34760
+|leagueRegion = Asgarnia
+}}
+The '''Air Altar''' is a [[runic altar]] upon which [[air rune]]s are crafted from [[rune essence]] or [[pure essence]], providing 5 [[Runecraft]] [[experience]] per essence imbued.
+
+Players may create an [[air tiara]] here by using either an [[air talisman]] or [[tiara]] on the altar whilst having both in their inventory, granting 25 [[Runecraft]] [[experience]]. An [[elemental tiara]] can also be created here by using an [[elemental talisman]] and [[gold tiara]], granting 40 Runecraft experience.
+
+Upon entering the Air Altar, the [[music]] track [[Serene]] plays.
+
+==Transportation==
+{{Map|name=Air Altar|align=left|mtype=pin|x = 2984|y = 3291|height = 275|width = 275|caption = The location of the mysterious ruins used to enter the Air Altar.}}
+The entrance to the altar can be found south of [[Falador]], north-west of the first T-junction players come across after exiting the south gate, the altar can also be accessed through the [[Abyss]]. The [[ring of the elements]] can be used to teleport to the altar.
+
+To enter the [[Mysterious ruins#Air|mysterious ruins]], players either have to use an [[air talisman]] on the ruins, or click "Enter" on the ruins while wearing an [[air tiara]]. Alternatively, an [[elemental talisman]] or [[elemental tiara|tiara]] can be used.
+
+The closest bank from there is Falador's east bank.
+
+Players who have completed the hard [[Falador Diary]] have the ability to use a [[bank chest]] in the [[Crafting Guild]]. Using the [[skills necklace]] to teleport there will provide a shorter run back to the Air Altar.
+
+Players may leave this location either by entering the [[Portal (Air Altar)|exit portal]] to return to the mysterious ruins, or by using any method of teleportation.
+{{clear|left}}
+
+==Combination runes==
+It is possible to make [[mist rune]]s, [[dust rune]]s, and [[smoke rune]]s while at this altar, but at a 50% success rate. This will result in fewer runes than normal being made. To make a combination rune, the player needs one set of elemental runes, a stack of pure essence, and 2 talismans.
+
+Note that players need to use the opposing rune on the altar to craft combination runes. Simply clicking on the altar would just result in regular elemental runes.
+
+[[Magic Imbue]] negates the need of a talisman.
+
+If the player equips a [[binding necklace]], the success rate will increase to 100%. The necklace has a total of 16 uses before breaking. A charge is used each time a batch of combination runes is crafted, instead of each time the altar is entered or for each rune crafted.
+{| class="wikitable"
+! rowspan="2" |To make...
+! colspan="3" |Players need...
+|-
+!Talisman
+!Rune
+!Essence
+|-
+|{{plink|Mist rune}}s
+|{{plink|Water talisman}}
+|{{plink|Water rune}}s
+| rowspan="3" |{{plink|Pure essence}}
+|-
+|{{plink|Dust rune}}s
+|{{plink|Earth talisman}}
+|{{plink|Earth rune}}s
+|-
+|{{plink|Smoke rune}}s
+|{{plink|Fire talisman}}
+|{{plink|Fire rune}}s
+|}
+
+==Products==
+{{Uses facility list|Air Altar, Elemental runic altar}}
+
+==Changes==
+
+{{Subject changes header}}
+{{Subject changes
+|date = 23 March 2022
+|update = Guardians of the Rift Launch
+|poll = Old School Content Poll 76: Game Improvements
+|change = The pre-existing delay after using Essence on Runecraft Altars has been removed.
+}}
+{{Subject changes footer}}
+
+==Gallery==
+<gallery mode="packed" heights="160">
+Air Altar outside.png|The entrance to the Air Altar.
+Air Altar inside.png|The inside of the Air Altar.
+</gallery>
+
+{{Runecraft}}
+[[Category:Asgarnia]]

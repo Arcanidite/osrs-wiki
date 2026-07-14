@@ -1,0 +1,152 @@
+==Experience rates/profit at level 99==
+Players may earn more experience (and its respective profit) with the felling axe/rations, Forestry/Lumberjack outfit, and other experience-boosting items.
+
+'''Note:''' The profit per hour for some logs is interpolated, and as such, may only be used as an approximation.
+
+{| class="wikitable sortable align-center-1 align-left-2 align-center-3 align-left-8" style="text-align:right;"
+! colspan="2" |Log
+!{{SCP|Woodcutting}} Level
+!XP
+!XP/hr
+!Profit/hr at {{SCP|Woodcutting|99}}
+!Members
+! class="unsortable" |Notes
+|-
+|{{plinkt|Logs|txt=Normal}}
+|1
+|25
+|12,500–18,750
+|{{Coins|{{GEP|Logs|500}}}}
+|{{Members|No}}
+|Includes [[Dead tree|dead]], [[Jungle tree|jungle]], [[Evergreen tree|evergreen]], and [[tree|normal trees]]. The most common trees in ''Old School RuneScape''. Each tree only provides one [[log]].
+|-
+|{{plinkt|Achey tree logs|txt=Achey}}
+|1
+|25
+|17,000
+|{{Coins|{{GEP|Achey tree logs|680}}}}
+|{{Members|Yes}}
+|[[Achey tree]]s are used primarily to [[fletch]] Ogre [[Ranged]] equipment. They are located around [[Feldip Hills]] and near [[Castle Wars]]. One log per tree.
+|-
+|{{plinkt|Oak logs|txt=Oak}}
+|15
+|37.5
+|40,000
+|{{Coins|{{GEP|Oak logs|1066}}}}
+|{{Members|No}}
+|[[Oak tree]]s are fairly common in ''Old School RuneScape''. A single oak tree can provide multiple logs.
+|-
+|{{plinkt|Willow logs|txt=Willow}}
+|30
+|67.5
+|74,000
+|{{Coins|{{GEP|Willow logs|1095}}}}
+|{{Members|No}}
+|[[Willow tree]]s are found near water and provide the fastest experience for free players. [[Members]] locations include [[Port Sarim]], [[Draynor Village]], [[Lumbridge]], [[Rimmington]], [[Catherby]], [[Barbarian Outpost]], [[Seers' Village]], and the [[Woodcutting Guild]].
+|-
+|{{plinkt|Teak logs|txt=Teak}}
+|35
+|85
+|90,000–255,000
+|{{Coins|{{GEP|Teak logs|1118}} - {{GEP|Trading sticks|11180}}}} - {{Coins|{{GEP|Teak logs|2236}} - {{GEP|Trading sticks|22360}}}}
+|{{Members|Yes}}
+|[[Teak tree]]s are found in the [[Hardwood Grove]] (entry requires 100 [[Trading sticks]]), [[Kharazi Jungle]], [[Ape Atoll]], [[Prifddinas]], [[Isle of Souls]], south-east of [[Ruins of Ullek]], west of [[Kastori]], and the woods south of [[Castle Wars]]. They can also be grown on [[Fossil Island]]. Without tick-manipulation, the experience is 90,000 per hour.
+|-
+|{{plinkt|Juniper logs|txt=Juniper}}
+|42
+|35
+|
+|{{NA}}
+|{{Members|Yes}}
+|[[Juniper tree]]s are found in [[Hosidius]]. They are used to make [[dynamite]].
+|-
+|{{plinkt|Arctic pine logs|txt=Arctic}}
+|54
+|40
+|19,000–21,000
+|{{Coins|{{GEP|Arctic pine logs|500}}}}
+|{{Members|Yes}}
+|[[Arctic pine tree]]s are found in [[Neitiznot]] by the [[yak]]s.
+|-
+|{{plinkt|Maple logs|txt=Maple}}
+|45
+|100<ref group="n">Maple logs yield 110 experience with the completion of the [[Kandarin Diary#Medium|medium Kandarin Diary]].</ref>
+|48,000–52,800<ref name=":0" group="n">This rate is obtained at Seers' Village with the completion of the [[Medium Kandarin|medium Kandarin Diary]].</ref>
+|{{Coins|{{GEP|Maple logs|480}}}}
+|{{Members|No}}
+|There are many [[maple tree]]s between [[Rellekka]] and the [[Sinclair Mansion]], several behind the [[Seers' Village]] bank, as well as 13 located in the [[Woodcutting Guild]].
+|-
+|{{plinkt|Bark}}
+|45
+|82.5
+|70,000
+|{{Coins|{{GEP|Bark|848}}}}<ref group="n">Bark is exchanged infrequently, therefore prices may be inaccurate.</ref>
+|{{Members|Yes}}
+|[[Hollow tree]]s are found in the [[Haunted Woods]]. The trees provide [[bark]]. Bark can be made into [[splitbark armour]].
+|-
+|{{plinkt|Mahogany logs|txt=Mahogany}}
+|50
+|125
+|46,500
+|{{Coins|{{GEP|Mahogany logs|372}}}}
+|{{Members|Yes}}
+|[[Mahogany tree]]s are found primarily in the [[Hardwood Grove]] (entry requires 100 Trading sticks), [[Ape Atoll]], the [[Kharazi Jungle]], [[Prifddinas]], [[Isle of Souls]], south-east of [[Ruins of Ullek]], north of the [[Farming Guild]], south of [[Tal Teklan]], southwest of [[Crypt of Tonali]], [[the Great Conch]], and [[Mos Le'Harmless]]. They can also be grown on [[Fossil Island]].
+|-
+|{{plinkt|Yew logs|txt=Yew}}
+|60
+|175
+|47,000<ref name=":1" group="n">This rate is obtained with the invisible +7 boost inside the [[Woodcutting Guild]].</ref>
+|{{Coins|{{GEP|Yew logs|265}}}}
+|{{Members|No}}
+|[[Yew tree]]s can be found by [[members]] at locations such as the [[Seers' Village]] churchyard, west of [[Catherby]], [[Tree Gnome Stronghold]], [[Prifddinas]] (between the southern bank and Zalcano portal),  [[Nemus Retreat]],  and the [[Woodcutting Guild]]. [[Free-to-play|Free players]] can find yew trees at [[Edgeville]], south of [[Falador]], in the [[Varrock Castle]],and the [[Lumbridge]] graveyard.
+|-
+|{{plinkt|Blisterwood logs|txt=Blisterwood}}
+|62
+|76
+|85,000
+|{{NA}}
+|{{Members|Yes}}
+|[[Blisterwood tree]]s are found in Darkmeyer after [[Sins of the Father]]. It is a low intensity way to get fast woodcutting experience. There is a bank nearby, and the logs can be burned for fast [[firemaking]] experience.
+|-
+|{{plinkt|Camphor logs|txt=Camphor}}
+|66
+|143
+|70,000
+|{{Coins|{{GEP|Camphor logs|348}}}}
+|{{Members|Yes}}
+|[[Camphor tree]]s are found on [[The Great Conch]], requiring 45 [[Sailing]] and partial completion of [[Troubled Tortugans]] to access. There are trees west of [[The Summer Shore]] that are relatively close to a bank. They can be chopped at the [[Sacred Grove]] after completion of [[The Red Reef]], which has a deposit box and an altar.  They can also be grown in a [[hardwood tree patch]].
+|-
+|{{plinkt|Magic logs|txt=Magic}}
+|75
+|250
+|27,500<ref name=":1" group="n" />
+|{{Coins|{{GEP|Magic logs|94}}}}
+|{{Members|Yes}}
+|[[Magic tree]]s are found at the [[Mage Training Arena]], [[Sorcerer's Tower]], [[Lletya]], [[Seers' Village]], [[Prifddinas]], [[Nemus Retreat]], the [[Myths' Guild]], [[Auburnvale]], and the [[Woodcutting Guild]]. Players should use a [[dragon axe]] on these trees. The Nemus Retreat location is near a [[Vale Totems|Vale Totem]], potentially giving some extra [[Fletching]] experience as well as reduced need to bank.
+|-
+|{{plinkt|Ironwood logs|txt=Ironwood}}
+|80
+|175
+|80,000-110,000
+|{{Coins|{{GEP|Ironwood logs|400}}}}
+|{{Members|Yes}}
+|[[Ironwood trees]] are found on [[Sunbleak island]] requiring 72 [[Sailing]] to dock. A [[bank chest space]] can be built to easily bank the logs.
+|-
+|{{plinkt|Redwood logs|txt=Redwood}}
+|90
+|380
+|70,000-85,000
+|{{Coins|{{GEP|Redwood logs|184}}}}
+|{{Members|Yes}}
+|[[Redwood tree]]s are found in the [[Woodcutting Guild]] and in the [[Farming Guild]] (requiring 90 [[Farming]]).
+|
+|-
+|{{plinkt|Rosewood logs|txt=Rosewood}}
+|92
+|212.5
+|85,000
+|{{Coins|{{GEP|Rosewood logs|175}}}}
+|{{Members|Yes}}
+|[[Rosewood trees]] are found on [[Drumstick Isle]] requiring 79 [[Sailing]] to dock. Players can use [[Teleport to boat]] in combination with a [[Greater teleport focus (facility)|Greater teleport focus]] to bank the logs easily.
+|}
+<references group="n" />

@@ -1,0 +1,6 @@
+==Transportation==
+The blast mine is located in the northern section of [[Lovakengj]] and may be accessed via a number of ways:
+
+# Run north from the Xeric's Inferno option on the [[Xeric's talisman]].
+# Run north from the [[jewellery of jubilation]] teleport on the [[Kharedst's memoirs]] or [[book of the dead]].
+# Run north from Lovakengj station on the [[Lovakengj Minecart Network]].

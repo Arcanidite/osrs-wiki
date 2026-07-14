@@ -1,0 +1,17 @@
+{{External|rs|rsc}}
+{{Infobox Location
+|name = Mining Guild
+|image = [[File:Mining Guild upstairs.png|300px]]
+|release = [[13 August]] [[2001]]
+|update = Wilderness system online
+|members = No
+|location = South-east [[Falador]]
+|requirement = {{SCP|Mining|60}}
+|map = {{Map|name=Mining Guild|3032,9728|mapID=6}}
+|type = guild
+|leagueRegion = Asgarnia
+}}
+{{Map|name=Mining Guild|x=3019|y=3339|caption=The above-ground Mining Guild entrance|align=right|r=2.5|mtype=square}}
+The '''Mining Guild''', located in and beneath [[Falador]], is a guild for expert miners available to players with at least 60 [[Mining]] (can be [[Temporary skill boost#Mining|boosted]]). The [[List of mines|mine]] is accessible from either the Mining Guild's above-ground complex in the south-east of the city, or through the gate at the southern end of the [[Dwarven Mine]]. Both of these entrances are guarded by [[Dwarf (Mining Guild)|dwarves]] who will answer questions about the guild and stop players without the requirements from entering the guild. The guildmaster, [[Gadrin]], also sells the [[Mining cape]] to those who have achieved level 99 Mining.
+
+This [[List of mines|mine]] is one of many where three iron rocks can be mined without moving, thus ideal for [[Iron rocks#Power-mining Locations|power-mining]].

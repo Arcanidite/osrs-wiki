@@ -1,0 +1,143 @@
+{{External|rs|rsc=Oak Logs|dw=Oak Logs}}
+{{Infobox Item
+|name = Oak logs
+|image = [[File:Oak logs.png]]
+|release = [[25 March]] [[2002]]
+|update = Latest RuneScape News (25 March 2002)
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Logs cut from an oak tree.
+|value = 20
+|weight = 2.000
+|exchange = Yes
+|id = 1521
+}}
+[[File:Oak logs detail.png|left|130px]]
+'''Oak logs''' are logs obtained from [[woodcutting|cutting]] [[oak tree]]s at level 15 [[Woodcutting]] and give 37.5 [[experience]] points each. Players can burn these logs using the [[Firemaking]] skill at level 15 for 60 experience each. [[Members]] can also [[fletching|fletch]] these logs.
+
+[[Members]] training [[Construction]] can bring oak logs to a [[sawmill]] to make [[oak plank]]s at a cost of 250 [[coins]] each. Alternatively, the [[Lunar spell]] [[Plank Make]] can allow players to convert them to planks at a lower cost, but at the expense of [[runes]]. The use of oak planks in Construction increased the price of oak logs.
+
+Oak logs are used to travel to the [[Crafting Guild]] on the [[Balloon Transport System]].
+
+Training Woodcutting via oak trees is a fairly quick method of obtaining [[Bird nest|nests]].
+
+6 oak logs can be used to light an [[Abyssal lantern (oak logs)|Abyssal lantern]], requiring 15 Firemaking.
+
+==Skill info==
+{{Woodcutting info
+|name = Oak tree
+|level = 15
+|xp = 37.5
+|tree = [[Oak tree]]
+|tool = [[Axe]]
+|time = 8.4 seconds
+}}
+
+{{Firemaking info
+|craftxp = 15
+|bowlevel = 35
+|pyrelevel = 25
+|version1 = Tinderbox
+|version2 = Bow
+|version3 = Barbarian pyre
+|version4 = Bonfire
+|skill2name = Crafting
+|name = Oak logs
+|skill1lvl1 = 15
+|skill1lvl2 = 35
+|skill1lvl3 = 25
+|skill2lvl3 = 25
+|skill1lvl4 = 15
+|skill1exp1 = 60
+|skill1exp2 = 60
+|skill1exp3 = 60
+|skill1exp4 = 60
+|facility1 = N/A
+|facility2 = N/A
+|facility3 = [[Funeral pyre (Barbarian)|Barbarian funeral pyre]]
+|facility4 = [[Fire]] or [[Forester's Campfire]]
+|tool1 = [[Tinderbox]]
+|tool2 = [[Bow]]
+|tool3 = [[Tinderbox]] or [[bow]], and an [[axe]]
+|tool4 = N/A
+|type = logs
+}}
+
+==Money making==
+{{Mmgsection|Cutting oak logs}}
+
+==Popularity==
+===Free players===
+A popular spot to chop oak logs would be at the east entrance to Varrock where there are several [[oak tree]]s or a little bit south-west of [[Varrock west bank]]. Also, due to the close proximity to banks and the fact that oak logs sell for higher prices than [[willow logs]], this area has become a strategic Woodcutting spot. Often, it is crowded since many find it favourable.
+
+It is also recommended to go to [[Lumbridge]] since there are a few oak trees behind [[Lumbridge Castle]]. Players [[power levelling]] Woodcutting off oaks can just sell their logs to the nearby [[Lumbridge General Store]].
+
+There are a few oak trees by the [[Grand Exchange]]. You can sell the logs after you cut them, so it is recommended that you cut here.
+
+There is another spot in [[Draynor]] right next to the bank. Two oak trees are right there. East of [[Draynor bank]] is another rarely used spot to cut oaks, as most players are busy cutting the nearby [[willows]] instead.
+
+There are also two oak trees next to [[Falador east bank]], one right next to the bank and one behind the [[Estate agent]] building. The place is rarely crowded.
+
+When training [[Runecraft]] at the [[Air Altar]], one can equip an axe and chop the oak trees on the way to the [[Falador east bank]].
+
+===Members===
+The closest members spot is just north of the Hosidius bank, with a number of oak trees surrounding the bank.
+
+There is also a very good spot for [[members]] at the west part of [[Falador]] if you take the [[Agility shortcut]] by [[Falador west bank]]. It requires level 5 [[Agility]].
+
+There are also several oak trees around the [[Tree Gnome Stronghold]] bank.
+
+Another good spot is under the [[Castle Wars]] area. Many oak trees and a bank is close by.
+
+==Tree locations==
+*[[Draynor Village]] east of bank (4)
+*Just south of [[Seers' Village|Seers village]] bank
+*[[Varrock]] South
+*Varrock East (4)
+*[[Catherby]] west of bank
+*[[Castle Wars]]
+*West of [[Catherby]]
+*Just north of and in [[Rimmington]]
+*Just north of [[Port Sarim]]
+*By [[Yanille]]
+*All over [[Tree Gnome Stronghold]], including around the banks.
+*The [[Woodcutting Guild]]
+==Products==
+{{Uses material list|Oak logs}}
+==Item sources==
+{{Drop sources|Oak logs}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The item was graphically updated with the release of [[Farming]].
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Oak logs detail (beta).png|center|300x150px]]
+|[[File:Oak logs detail (historical).png|center|300x150px]]
+|[[File:Oak logs detail.png|center|300x150px]]
+|-
+|[[File:Oak logs (beta).png|center]]
+|[[File:Oak logs (historical).png|center]]
+|[[File:Oak logs.png|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 ⁠–<br/>11 July 2005
+|11 July 2005 ⁠–<br/>present
+|}
+
+{{Logs}}
+{{Fletching}}
+[[Category:Firemaking]]
+[[Category:Woodcutting]]
+[[Category:Construction]]

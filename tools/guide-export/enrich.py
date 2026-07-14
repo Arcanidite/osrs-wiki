@@ -1362,6 +1362,13 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
     # plan-grand.mjs set goal.quest_atoms:true.
     quest_atoms = bool(goal.get("quest_atoms"))
 
+    # STATE_CONSOLIDATION.md §2/§5 — per-step state_after{skills_delta,inv,
+    # worn,bank,unlocks_new} minted by state_scan.mjs over THIS route (a
+    # simulator, not authored content) and merged by id like refs/mapMarkers
+    # below. Opt-in per route (default OFF → byte-identical); only
+    # plan-grand.mjs sets goal.state_after:true so far.
+    state_after = bool(goal.get("state_after"))
+
     # [topo-quality] topo_xp_fold: a SEPARATE, additive opt-in knob for
     # topo_order's own XP fold, decoupled from xp_fold (which also flips on
     # phased_steps' quest_first / phased_steps_with_steer's advances_steer —
@@ -1567,6 +1574,8 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
             s["subChecklist"] = extra["questChecklist"]
         if granular and not s.get("subChecklist") and extra.get("subChecklist"):
             s["subChecklist"] = extra["subChecklist"]
+        if state_after and not s.get("state_after") and extra.get("state_after"):
+            s["state_after"] = extra["state_after"]
 
     # Skill+band fallback for planner-SYNTHESIZED training steps: their ids
     # (synth-<skill>-<level>-<n>) carry a per-route counter suffix, so the
@@ -1708,6 +1717,14 @@ def main():
             extra_by_id[s["id"]] = {"refs": s.get("refs"), "mapMarkers": s.get("mapMarkers")}
     for r in _load_jsonl(data_dir / "step_refs.jsonl"):
         extra_by_id[r["id"]] = {"refs": r.get("refs"), "mapMarkers": r.get("mapMarkers")}
+
+    # STATE_CONSOLIDATION.md — state_after.jsonl sidecar (minted by
+    # `state_scan.mjs <route> --emit assets/data/tools/state_after.jsonl`, a
+    # state SIMULATOR over the requisite bank, not authored content). Keyed
+    # by step id; merged additively like refs/mapMarkers above. Absent file
+    # or goal.state_after unset = byte-identical output.
+    for r in _load_jsonl(data_dir / "state_after.jsonl"):
+        extra_by_id.setdefault(r["id"], {})["state_after"] = r.get("state_after")
 
     # Skill-methods picker data (train_methods.jsonl, minted by
     # consolidate_train_methods.py from the normalizer ledger). Merged by step

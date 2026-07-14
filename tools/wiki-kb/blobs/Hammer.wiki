@@ -1,0 +1,141 @@
+{{External|rs|rsc}}
+{{Redirect2|Hammers|the wieldable hammer|Imcando hammer|the crate of hammers on [[Tempoross Cove]]|Hammers (Tempoross Cove)}}
+{{Infobox Item
+|name = Hammer
+|image = [[File:Hammer.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Good for hitting things!
+|value = 1
+|weight = 0.907
+|respawn = 100
+|exchange = Yes
+|id = 2347
+}}
+[[File:Hammer detail.png|left|120px]] A '''hammer''' is a tool used for smithing items on an [[Anvil]], and it is vital to level the [[Smithing]] skill. Hammers can be bought from most [[general store]]s and will never break. Alternatively, players can obtain a hammer by talking to the [[Master smithing tutor]] at the West [[Varrock]] anvil.  A hammer is also used in the [[Construction]] skill when making furniture, and it is required for some minigames.  At 15 Construction, members can make a [[Tool store 1]] for the workshop room of their house; this tool store provides an unlimited supply of hammers.
+
+A hammer is required to access Bandos' stronghold in the [[God Wars Dungeon]]; warhammers are an acceptable substitute.
+
+The [[Imcando hammer]] can be used instead of a hammer when performing tasks like [[Construction]] or [[Smithing]].
+
+==Uses==
+===Quests===
+*[[Vampyre Slayer]]: 1 × hammer to kill [[Count Draynor]]
+*[[Dragon Slayer I]]: 1 × hammer to repair hole
+*[[Merlin's Crystal]]
+*[[The Tourist Trap]]
+*[[Dwarf Cannon]]: 1 × hammer to repair railings
+*[[Legends' Quest]]
+*[[Elemental Workshop I]]: 1 × hammer to make [[elemental shield]]
+*[[Shades of Mort'ton]]
+*[[Horror from the Deep]]
+*[[In Search of the Myreque]]
+*[[One Small Favour]]
+*[[Between a Rock...]]
+*[[The Golem]]
+*[[Zogre Flesh Eaters]]
+*[[Garden of Tranquillity]]
+*[[Mourning's End Part II]]
+*[[Shadow of the Storm]]
+*[[Cabin Fever]]
+*[[In Aid of the Myreque]]
+*[[Swan Song]]
+*[[Lunar Diplomacy]]
+*[[The Eyes of Glouphrie]]
+*[[Darkness of Hallowvale]]
+*[[Elemental Workshop II]]
+*[[Animal Magnetism]]
+*[[Cold War]]
+*[[The Fremennik Isles]]
+*[[Tower of Life]]
+*[[The Great Brain Robbery]]
+*[[Dream Mentor]]
+*[[Monkey Madness II]]
+*[[Bone Voyage]]
+*[[Dragon Slayer II]]
+*[[Making Friends with My Arm]]
+*[[Song of the Elves]]
+*[[The Fremennik Exiles]]
+*[[Sins of the Father]]
+*[[Getting Ahead]]
+*[[Sleeping Giants]]
+*[[Scrambled!]]
+*[[Shadows of Custodia]]
+
+===Miniquests===
+*[[Daddy's Home]]: 1 × hammer to make furniture ([[Old Man Yarlo]] can give you one if not already in the inventory)
+*[[The Frozen Door]]
+
+==Products==
+{{Uses material list|Hammer}}
+
+==Item sources==
+{{Drop sources|Hammer}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Hammer|location=[[Aldarin]]|members=Yes|1373,2949|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[Auburnvale]]|1381,3370|1399,3341|members=Yes|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[Buccaneers' Haven]] ({{FloorNumber|uk=1}})|2091,3681|plane=1|members=Yes|leagueRegion = N/A}}
+{{ItemSpawnLine|name=Hammer|location=[[Burgh de Rott]] - upstairs|3492,3242|plane=1|members=Yes|leagueRegion = Morytania}}
+{{ItemSpawnLine|name=Hammer|location=[[Cam Torum Blacksmith]]|mapID=-1|1452,9587|plane=1|members=Yes|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[Civitas illa Fortis]]|1770,3114|members=Yes|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[Colossal Wyrm Remains]]|1639,2924|members=Yes|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[Crafting Guild]]|2934,3286|members=No|leagueRegion = Asgarnia}}
+{{ItemSpawnLine|name=Hammer|location=[[Giants' Plateau]]|3350,3162|members=No|leagueRegion = Desert}}
+{{ItemSpawnLine|name=Hammer|location=[[Coal Trucks]] - East of [[Captain Lawgof]]|2579,3463|members=Yes|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Hammer|location=[[East Ardougne]]|2684,3318|members=Yes|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Hammer|location=[[Falador]] - upstairs of the furnace building|2975,3368|plane=1|members=No|leagueRegion = Asgarnia}}
+{{ItemSpawnLine|name=Hammer|location=[[Hosidius]] - west of the [[Tithe Farm]]|1778,3507|members=Yes|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Hammer|location=[[Isle of Souls]]|2157,2803|members=Yes|leagueRegion = Misthalin}}
+{{ItemSpawnLine|name=Hammer|location=[[Karamja]] - [[Shipyard (Karamja)|Shipyard]]|2954,3060|2963,3058|2986,3048|2989,3061|members=Yes|leagueRegion = Karamja}}
+{{ItemSpawnLine|name=Hammer|location=[[Kebos Lowlands]] - [[Mary (Getting Ahead)|Mary]] and [[Gordon]]'s farm|1259,3686|members=Yes|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Hammer|location=[[Keldagrim]] - [[Blast Furnace]]|mapID=10022|1953,4974|members=Yes|leagueRegion = Fremennik}}
+{{ItemSpawnLine|name=Hammer|location=[[Mistrock]]|members=Yes|plane=0|mapID=-1|1401,2866|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[Observatory Dungeon]]|mapID=10122|2351,9383|members=Yes|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Hammer|location=[[Outer Fortis]]|1773,3060|1696,3070|members=Yes|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[The Pandemonium]] - on a crate on the dock|mapID=-1|3057,2980|members=Yes|leagueRegion = N/A}}
+{{ItemSpawnLine|name=Hammer|location=[[Prifddinas]] - on a table in [[Aneirin's Armour]]|mapID=29|3251,6061|members=Yes|leagueRegion = Tirannwn}}
+{{ItemSpawnLine|name=Hammer|location=[[Ralos' Rise]]|1420,3186|members=Yes|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[Red Rock]]|2789,2524|members=Yes|leagueRegion = N/A}}
+{{ItemSpawnLine|name=Hammer|location=[[Ruins of Camdozaal]]|mapID=39|2961,5802|members=No|leagueRegion = Asgarnia}}
+{{ItemSpawnLine|name=Hammer|location=[[Ruins of Ullek]]|mapID=0|3435,2835|members=Yes|leagueRegion = Desert}}
+{{ItemSpawnLine|name=Hammer|location=[[Slayer Tower]] basement|mapID=14|3429,9931|3442,9946|members=Yes|leagueRegion = Morytania}}
+{{ItemSpawnLine|name=Hammer|location=[[Sunset Coast]]|1513,2996|members=Yes|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[Tal Teklan]]|1207,3108|members=Yes|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Hammer|location=[[The Onyx Crest]]|2981,2284|members=Yes|leagueRegion = N/A}}
+{{ItemSpawnLine|name=Hammer|location=[[The Summer Shore]]|3176,2426|members=Yes|leagueRegion = N/A}}
+{{ItemSpawnTableBottom}}
+
+Players can also obtain hammers in the following locations by:
+*Searching crates at the [[Motherlode Mine]].
+*Searching a supply crate with hammers at the [[Wintertodt]].
+*Searching a supply crate with hammers at the [[Tempoross]].
+
+===Shop locations===
+{{Store locations list|Hammer}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 9 December 2021
+|update = Grand Exchange Tax & Item Sink
+|change = Hammers have been exempted from the [[Grand Exchange#Convenience fee and item sink|Grand Exchange convenience fee]].
+}}
+{{Subject changes
+|date = 
+|update =
+|change = [[Gems]] available on [[free-to-play]] worlds can no longer be crushed with a hammer to receive a [[members object]] ([[crushed gem]]).
+}}
+{{Subject changes footer}}
+
+{{Tools}}
+{{Vampyre Slayer}}
+[[Category:Items exempt from Grand Exchange tax]]

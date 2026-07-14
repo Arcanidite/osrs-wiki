@@ -1,0 +1,92 @@
+{{External|rs|rsc}}
+{{Infobox Item
+|name = Uncut emerald
+|image = [[File:Uncut emerald.png]]
+|release = [[17 March]] [[2001]]
+|update = This weeks update
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = This would be worth more cut.
+|value = 50
+|weight = 0.003
+|exchange = Yes
+|id = 1621
+}}
+[[File:Uncut emerald detail.png|left|130px]]
+An '''uncut emerald''' is a precious [[gem]] used in [[Crafting]]. It can be cut with a [[chisel]] to make an [[emerald]], requiring 27 Crafting and yielding 67.5 [[experience]].
+
+Uncut emeralds can be obtained in several ways: randomly while [[mining]] [[ore]]s, as drops from [[monster]]s (mainly those which have access to the [[rare drop table]]), [[gem shop]]s, or as a reward from certain [[minigames]] and  [[random events]]. They are also a common reward from [[Managing Miscellania]]. 
+
+With level 40 [[Mining]] and the quest [[Shilo Village]] completed, players can mine the [[gem rocks]] in [[Shilo Village (location)|Shilo Village]]. Gem rocks may also appear while playing the [[Tai Bwo Wannai Cleanup]] activity, where players can mine them 3 times. Another method to get uncut emeralds is by cracking [[Wall safe (lobby)|wall safes]] in the [[Rogues' Den]], but this requires level 50 [[Thieving]].
+
+==Training==
+===Crafting===
+{|class="wikitable sortable" style="text-align: center;"
+!{{SCP|Crafting}} Level
+!Input
+!Material Cost{{Refn|Cost calculated assuming all inputs are purchased from the [[Grand Exchange]].|group=t}}
+!Output
+!Sell Price
+!Profit / loss
+!{{SCP|Crafting}} XP/Craft
+!XP/Hour
+!Coins/XP
+|-
+|27
+|{{plink|Uncut emerald}}
+|{{Coins|{{GEP|Uncut emerald}}}}
+|{{plink|Emerald}}
+|{{Coins|{{GEP|Emerald}}}}
+|{{Coins|{{GEP|Emerald}}-{{GEP|Uncut emerald}}}}
+|67.5
+|195,750{{Refn|XP rates based on an assumed 2,900 cuts per hour|group=t}}
+|{{Coins|({{GEP|Emerald}}-{{GEP|Uncut emerald}})/67.5}}
+|}
+{{Reflist|group=t}}
+
+==Products==
+{{Uses material list|Uncut emerald}}
+
+==Item sources==
+{{Drop sources|Uncut emerald}}
+
+===Shop locations===
+{{Store locations list|Uncut emerald}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 6 August 2007
+|update = Clan Chat
+|change = The item was graphically updated.
+}}
+{{Subject changes
+|date = 
+|update =
+|change = Gems available on [[free-to-play]] worlds can no longer be crushed with a [[hammer]] to receive a [[members object]] ([[crushed gem]]).
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Uncut emerald detail (beta).png|center|300x150px]]
+|[[File:Uncut emerald detail (historical).png|center|300x150px]]
+|[[File:Uncut emerald detail.png|center|300x150px]]
+|-
+|[[File:Uncut emerald (beta).png|center]]
+|[[File:Uncut emerald (historical).png|center]]
+|[[File:Uncut emerald.png|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 –<br/>6 August 2007
+|6 August 2007 –<br/>present
+|}
+
+{{Emerald}}
+{{Gems}}
+[[Category:Crafting items]]

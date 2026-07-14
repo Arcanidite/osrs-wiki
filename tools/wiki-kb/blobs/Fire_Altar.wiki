@@ -1,0 +1,82 @@
+{{External|rs=Fire altar}}
+{{Infobox Scenery
+|name = Altar
+|image = [[File:Altar (fire).png|300px]]
+|release = [[29 March]] [[2004]]
+|update = RS2 Launched!
+|members = No
+|quest = No
+|location = North of [[Al Kharid]]
+|options = Craft-rune
+|examine = A mysterious power emanates from this shrine.
+|map = {{Map|mtype=pin|x = 2584|y = 4837|mapID=-1}}
+|id = 34764
+|leagueRegion = Desert
+}}
+The '''Fire Altar''' is a [[runic altar]] upon which [[fire rune]]s are crafted from [[rune essence]] or [[pure essence]], providing 7 [[Runecraft]] [[experience]] per essence imbued. Level 14 [[Runecraft]] is required to craft fire runes.
+
+Players may create a [[fire tiara]] here by using either a [[fire talisman]] or a [[tiara]] on the altar whilst having both in their inventory, granting 35 [[Runecraft]] [[experience]]. An [[elemental tiara]] can also be created here by using an [[elemental talisman]] and [[gold tiara]], granting 40 Runecraft experience.
+
+Upon entering the Fire Altar, the [[music]] track [[Quest (music track)|Quest]] plays.
+
+==Transportation==
+{{Map|name=Fire Altar|align=left|mtype=pin|x = 3312|y = 3254|height = 275|width = 275|caption = The location of the mysterious ruins used to enter the Fire Altar.}}
+The entrance to the altar can be found north of [[Al Kharid]], west of the [[Emir's Arena]], the altar can also be accessed through the [[Abyss]]. The [[ring of the elements]] can be used to teleport to the altar.
+
+To enter the [[Mysterious ruins#Fire|mysterious ruins]], players either have to use a [[fire talisman]] on the ruins, or click "Enter" on the ruins while wearing a [[fire tiara]]. Alternatively, an [[elemental talisman]] or [[elemental tiara|tiara]] can be used.
+
+==Experience==
+Crafting fire runes with a [[ring of dueling]] is one of the fastest ways to 44 Runecraft. With duel ring teleports, the average round-trip time if walking to the Fire Altar is ~35 seconds if minimising game tick loss (i.e. teleporting right after the animation finishes). This allows for ~20,000 experience an hour. If running to the altar + teleports, one can expect ~27,000 experience an hour, if minimising tick loss. The average round-trip time in this case is ~26 seconds.
+
+==Combination runes==
+It is possible to make [[steam rune]]s, [[smoke rune]]s, and [[lava rune]]s while at this altar, but at a 50% success rate. This will result in less runes than normal being made. To make a combination rune, the player needs one set of elemental runes, a stack of pure essence, and 2 talismans.
+
+Note that players need to use the opposing rune on the altar to craft combination runes. Simply clicking on the altar would just result in regular elemental runes.
+
+[[Magic Imbue]] negates the need of a talisman.
+
+If the player equips a [[binding necklace]], the success rate will increase to 100%. The necklace has a total of 16 uses before breaking. A charge is used each time a batch of combination runes is crafted, instead of each time the altar is entered or for each rune crafted.
+{| class="wikitable"
+!rowspan="2"|To make...
+!colspan="3"|Players need...
+|-
+!Talisman
+!Rune
+!Essence
+|-
+|{{plink|Steam rune}}s
+|{{plink|Water talisman}}
+|{{plink|Water rune}}
+|rowspan="3"|{{plink|Pure essence}}
+|-
+|{{plink|Smoke rune}}s
+|{{plink|Air talisman}}
+|{{plink|Air rune}}s
+|-
+|{{plink|Lava rune}}s
+|{{plink|Earth talisman}}
+|{{plink|Earth rune}}s
+|}
+
+==Products==
+{{Uses facility list|Fire Altar, Elemental runic altar}}
+
+==Changes==
+
+{{Subject changes header}}
+{{Subject changes
+|date = 23 March 2022
+|update = Guardians of the Rift Launch
+|poll = Old School Content Poll 76: Game Improvements
+|change = The pre-existing delay after using Essence on Runecraft Altars has been removed.
+}}
+{{Subject changes footer}}
+
+==Gallery==
+<gallery mode="packed" heights="160">
+Fire Altar outside.png|The entrance to the Fire Altar.
+Fire Altar inside.png|The inside of the Fire Altar.
+</gallery>
+
+{{Runecraft}}
+[[Category:Locations]]

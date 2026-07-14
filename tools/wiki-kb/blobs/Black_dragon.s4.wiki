@@ -1,0 +1,84 @@
+==Drops==
+{{DropLogProject|jagex=yes}}
+
+{| class="wikitable"
+! rowspan="2" |[[Konar quo Maten|Konar]] task
+! colspan="2" |Average drop value
+|-
+![[Grand Exchange|GE]]
+![[High Level Alchemy|HA]]
+|-
+|{{No}}
+|{{Coins|{{Average drop value|mob=Black dragon#Regular|raw=y}}}}
+|{{Coins|{{Average drop value|mob=Black dragon#Regular|alch=yes|raw=y}}}}
+|-
+|{{Yes}}
+|{{Coins|{{Average drop value|mob=Black dragon#Regular|brimstone=yes|raw=y}}}}
+|{{Coins|{{Average drop value|mob=Black dragon#Regular|brimstone=yes|alch=yes|raw=y}}}}
+|}
+
+===100%===
+{{DropsTableHead|dropversion=Regular}}
+{{DropsLine|name=Dragon bones|quantity=1|rarity=Always|raritynotes=<ref group=d>Dragon bones are dropped in [[bank note]] form if players have completed the elite [[Wilderness Diary]] and are killing black dragons in the [[Wilderness]].</ref>}}
+{{DropsLine|name=Black dragonhide|quantity=1|rarity=Always}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Pre-roll===
+{{DropsTableHead|dropversion=Regular}}
+{{DropsLine|name=Dragon token|quantity=1|rarity=Always|raritynotes=<ref group=d>The dragon token overrides normal drops, and is only dropped during the [[Recipe for Disaster#Sir Amik Varze|Sir Amik Varze subquest]] of [[Recipe for Disaster]] if the player doesn't have one already.</ref>|gemw=No}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Weapons and armour===
+{{DropsTableHead|dropversion=Regular}}
+{{DropsLine|name=Mithril 2h sword|quantity=1|rarity=4/128}}
+{{DropsLine|name=Mithril axe|quantity=1|rarity=3/128}}
+{{DropsLine|name=Mithril battleaxe|quantity=1|rarity=3/128}}
+{{DropsLine|name=Rune knife|quantity=2|rarity=3/128}}
+{{DropsLine|name=Mithril kiteshield|quantity=1|rarity=1/128}}
+{{DropsLine|name=Adamant platebody|quantity=1|rarity=1/128}}
+{{DropsLine|name=Rune longsword|quantity=1|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Runes and ammunition===
+{{DropsTableHead|dropversion=Regular}}
+{{DropsLine|name=Adamant javelin|quantity=30|rarity=20/128}}
+{{DropsLine|name=Adamant dart(p)|quantity=16|rarity=7/128}}
+{{DropsLine|name=Fire rune|quantity=50|rarity=8/128}}
+{{DropsLine|name=Blood rune|quantity=15|rarity=3/128}}
+{{DropsLine|name=Air rune|quantity=75|rarity=1/128}}
+{{DropsLine|name=Law rune|quantity=10|rarity=5/128}}
+{{DropsTableBottom}}
+
+===Coins===
+{{DropsTableHead|dropversion=Regular}}
+{{DropsLine|name=Coins|quantity=196|rarity=40/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=330|rarity=10/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=690|rarity=1/128|gemw=No}}
+{{DropsTableBottom}}
+
+===Other===
+{{DropsTableHead|dropversion=Regular}}
+{{DropsLine|name=Dragon javelin tips|quantity=10|rarity=6/128|raritynotes=<ref group=d>Dragon javelin tips are only dropped after completion of [[Monkey Madness II]]. If players have not completed the quest, they will receive nothing.</ref>}}
+{{DropsLine|name=Adamantite bar|quantity=1|rarity=3/128}}
+{{DropsLine|name=Chocolate cake|quantity=1|rarity=3/128}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Rare and Gem drop table===
+{{RareDropTable|2/128|3/128|chaostalisman=yes|naturetalisman=yes|dropversion=Regular}}
+
+===Tertiary===
+{{DropsTableHead|dropversion=Regular}}
+{{DropsLine|name=Looting bag|quantity=1|rarity=1/3|raritynotes=<ref group=d>Looting bags are only dropped by those found in the [[Wilderness]].</ref>|gemw=No|leagueRegion=Wilderness}}
+{{DropsLine|name=Ensouled dragon head|quantity=1|rarity=1/35}}
+{{DropsLine|name=Brimstone key|quantity=1|rarity={{Brimstone rarity|227}}|raritynotes=<ref group=d>Brimstone keys are only dropped if killed on a [[Slayer task]] given by [[Konar quo Maten]].</ref>|gemw=No|leagueRegion=Asgarnia&Kourend,Kandarin&Kourend,Misthalin&Fremennik&Kourend}}
+{{DropsLineClue|type=hard|rarity=1/128|raritynotes=<ref group=d>The hard clue scroll rarity changes to 1/64 if a [[Ring of wealth (i)]] is worn.</ref>|altrarity=1/64}}
+{{DropsLineClue|type=elite|rarity=1/500|raritynotes=<ref group=d>The elite clue scroll rarity changes to 1/250 if a [[Ring of wealth (i)]] is worn.</ref>|altrarity=1/250}}
+{{DropsLine|name=Draconic visage|quantity=1|rarity=1/10000}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Wilderness Slayer tertiary===
+{{WildernessSlayerDropTable|combat=227|hitpoints=190|dropversion=Regular}}

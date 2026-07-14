@@ -1,0 +1,60 @@
+{{Infobox Scenery
+|name = Altar
+|image = [[File:Altar (wrath).png|300px]]
+|release = [[4 January]] [[2018]]
+|update = Dragon Slayer II
+|members = Yes
+|quest = No
+|location = [[Myths' Guild]]
+|options = Craft-rune
+|examine = A mysterious power emanates from this shrine.
+|map = {{Map|mtype=pin|x = 2334|y = 4833|mapID=-1}}
+|id = 34772
+|leagueRegion = Kandarin
+}}
+The '''Wrath Altar''' is a [[runic altar]] upon which [[wrath rune]]s are crafted from [[pure essence]], providing 8 [[Runecraft]] [[experience]] per essence imbued. Level 95 [[Runecraft]] and completion of the [[quest]] [[Dragon Slayer II]] is required to craft wrath runes. [[Skeleton (Wrath Altar)|Skeletons]] can be seen fighting each other across the chasm where the altar is.
+
+Players may create a [[wrath tiara]] here by using either a [[wrath talisman]] or a [[tiara]] on the altar whilst having both in their inventory, granting 52.5 [[Runecraft]] [[experience]]. A [[catalytic tiara]] can also be created here by using a [[catalytic talisman]] and [[gold tiara]], granting 60 Runecraft experience.
+
+Knowledge of the Wrath Altar was lost sometime during the [[God Wars]] in the [[Third Age]],{{CiteNews|url=https://secure.runescape.com/m=news/qa-summary-07042022?oldschool=1|title=Q&A Summary 07/04/2022|newsdate=12 April 2022|notes="...the Wrath Altar was already lost at that point [during the God Wars]."}} and was rediscovered sometime during the [[Runecrafting Crusades]] in the [[Fifth Age]], as a result of the sheer wrath that the Fremennik crusaders, the Gunnites, had wrought upon the runic temples of the world.{{CiteNPC|npc=Erdan|quote=And so the rune temples that man had created were under threat, all were destroyed and thus forgotten, but the wrath that these Gunnites embraced rippled through the pocket dimensions and a new altar of power was discovered.}} Upon its rediscovery, a temple was built around it, but was shortly destroyed by the Gunnites upon completion.{{CiteNPC|npc=Erdan|quote=The temple [of Wrath] was destroyed just as construction had finished.}}
+
+The [[Sect of Uhld]], who witnessed its destruction, founded the [[Myths' Guild]] in response,{{CiteNPC|npc=Erdan|quote=...a nearby nomadic group called the Sect of Uhld were not pleased with the brutality they witnessed. Quickly they established this guild with information preservation as their core goal.}} and upon studying the Wrath Altar, they were able to create [[surge spells]] and destroyed the Gunnites of the southern crusade.{{CiteNPC|npc=Erdan|quote=...the Sect of Uhld had used the information gained from the wrath altar, and with a spell of their own making, they destroyed the southern runecrafting crusade with much ease.}} Today, knowledge of the Wrath Altar is restricted to members of the guild, so much so that even [[Archmage Sedridor]], the chief of research and leader of the [[Order of Wizards]], considered it to be a myth.{{CitePostbag|issue=27|author=[[Archmage Sedridor]]|letter=2|quote=I had heard of these so-called ‘Wrath Runes', although I didn't know what to make of the rumours. They're not referenced in any of the ancient texts I've studied, so I'll confess until you mentioned them just now, I assumed they were a myth.}} However, members of the [[Zamorak Magical Institute]] appear to know of its existence.
+
+Upon entering the Wrath Altar, the [[music]] track [[Cursed]] plays.
+
+==Transportation==
+As with most other [[runic altar]]s, it can be accessed via the [[Mysterious ruins#Wrath|mysterious ruins]] found in the [[Myths' Guild]]. However, it '''cannot''' be accessed via the [[Abyss]].
+
+To reach the ruins, players must climb down the [[Mythic Statue]], and run south through the [[Corsair Cove Dungeon]] to a [[cave (Myths' Guild)|cave]] leading to the island it is located on. This tunnel is inhabited by [[chromatic dragons]], so some form of [[dragonfire]] protection is recommended.
+
+To enter the mysterious ruins, players either have to use a [[wrath talisman]] on the ruins, or click "Enter" on the ruins while wearing a [[wrath tiara]]. Alternatively, a [[catalytic talisman]] or [[catalytic tiara|tiara]] can be used.
+{{Map|name=Wrath Altar|mtype=pin|x = 2445|y = 2824|height = 275|width = 275|caption = The location of the mysterious ruins used to enter the Wrath Altar.}}
+
+==Products==
+{{Uses facility list|Wrath Altar, Catalytic runic altar}}
+
+==Changes==
+
+{{Subject changes header}}
+{{Subject changes
+|date = 23 March 2022
+|update = Guardians of the Rift Launch
+|poll = Old School Content Poll 76: Game Improvements
+|change = The pre-existing delay after using Essence on Runecraft Altars has been removed.
+}}
+{{Subject changes footer}}
+
+==Gallery==
+<gallery mode="packed" heights="160">
+Wrath Altar outside.png|The entrance to the Wrath Altar.
+Wrath Altar inside.png|The inside of the Wrath Altar.
+</gallery>
+
+==Trivia==
+* The Wrath Altar is one of two runic altars that cannot be reached via the [[Abyss]], the other being the [[Astral Altar]]. When polled if it should be accessible through the Abyss, the question failed with 73.6% support.
+
+==References==
+{{reflist}}
+
+{{Runecraft}}
+{{Myths' Guild}}

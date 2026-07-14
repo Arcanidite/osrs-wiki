@@ -118,3 +118,67 @@ does not apply); plan-multi/plan-corpus order-only diffs (id-sets equal) are the
 enforcing — intentional re-bakes, npm 93/93 both before and after.
 MUST-NOT-MISS: any new re-simulation that applies grants MUST dispatch `v is True` before isinstance
 int/float; route_feasibility.mjs is the standing 0-fault gate for ordering work on the grand spine.
+
+## state-consolidation retro (2026-07-14, state_scan.mjs + state_after on all 372 steps)
+Load-bearing decision: state_after is a SIMULATOR output, not authored content, so it can cover the
+whole route mechanically instead of needing the "prefix to full depth, brief the rest" fallback the
+task offered — state_scan.mjs (sibling to route_feasibility.mjs, refactored to export its bank/xp/
+skill engine behind an `isMain` guard so both tools share one source of truth) extends the existing
+{skills,quests,unlocks} accumulator with inv/worn/bank Maps driven by atom{}.verb transitions
+(withdraw/deposit/equip specially; every other verb — or no atom{} at all, most coarse rows — falls
+back to the row's own top-level produces{}/consumes{}). Values touched by any "??" placeholder are
+marked `approx` and rendered by NAME ONLY, never a fabricated count — same "??"-over-guesses rule as
+everywhere else, just applied to a Map instead of a JSON field. Wired through the SAME sidecar/attach
+pattern as methods[]/subChecklist (state_after.jsonl -> enrich.py extra_by_id merge, gated on new
+goal.state_after opt-in, plan-grand.mjs only) — verified a fixed point: state_scan run against the
+freshly re-baked route reproduces byte-identical sidecar content (it reads only the requisite bank,
+never its own prior output), and a second full rebake reproduces byte-identical route JSON.
+Result: 372/372 steps carry state_after; 0 slot-overflow flags; 3 loadout-placeholder steps (the
+prayer-pot-supply pps-01/03/05 withdraw atoms) are flagged as a documented LOWER BOUND on slot count
+since their itemized contents live only in prose `detail`, never structured data — a real Lane-5 gap
+(the withdraw atoms should eventually carry an itemized consumes{}), not a state_scan bug.
+route_feasibility.mjs itself gained real coverage during this pass: steps_origin.jsonl (the
+character-creation/Tutorial-Island ori-t-* prefix, ~24 rows) was never in its BANKS join, so those
+steps silently fell into the bankless/synthetic fallback the whole time — added it (in-bank coverage
+316->339/372), still 0 faults (all origin rows are reqs:{} in practice).
+Heap-scan (order_audit.mjs, new tool): computed readyAt (first position a bank step's reqs clear,
+valid because state only accumulates — feasibility=0 already proves this) vs takenAt for every bank
+step; 206 candidates with gap>=20. IMPORTANT CAVEAT for whoever reads this next: route_feasibility's
+0-fault invariant means NONE of these 206 are correctness violations by construction (a dependency can
+never be scheduled after its dependent, or feasibility would fault) — the gap metric measures SLACK,
+not bugs. Triage: the ~144 QoL/unlock gaps are dominated by trivial-reqs quests (ready@0) that the P10
+milestone-episode/demand_gate machinery deliberately clusters into the episode of the goal that needs
+them rather than front-loading in isolation — WORKING AS INTENDED (avoids fragmenting the route into
+one-off detours, serves the proximity criterion better than max-front-loading would). The pps-*
+supply-chain gaps (pps-01..06, 281-302) are the documented demand_gate chain-hold (ec2d4b9b) — also
+intentional. ONE real, actionable recommendation surfaced: quest-rune-mysteries has by far the highest
+downstream fan-out in the bank (22 other bank rows name it in their own reqs.quests — a crude
+single-hop proxy, real fan-out is likely higher) and trivial reqs (ready@0), yet carries no
+milestone/steer anchor pulling it forward (taken@115) — textbook criterion-#1 "compounding QoL unlock"
+that a future ordering pass should consider anchoring early. Runners-up by the same signal:
+quest-children-of-the-sun (12), quest-shield-of-arrav (10), rfd-intro (9), quest-creature-of-
+fenkenstrain (9), quest-big-chompy (8), quest-underground-pass (7). NOT reordered here — ordering
+stays the planner's — flagged for the ordering agent.
+Calc cross-check (Experience_table.s2, wikicli-verified): project's own XP_TABLE formula (route_
+feasibility.mjs / assets/js/world/xp.js / enrich.py _build_xp_table) matches the live wiki table
+EXACTLY at every level checked (15/30/45/60/75/99) — the formula itself is trustworthy. The STORED
+`xp` field on train-* bank rows is a different story: 66/120 checked rows mismatch the verified
+formula (all level-99 rows share one wrong constant 12862000 vs the real 13034431; other levels show
+a scattered pattern consistent with cross-skill/cross-level copy-paste). This is the EXACT issue
+gotchas.log's `[training]` line already named ("xp fixture fields are synthetic/wrong for non-level-1
+bands") — now quantified. NOT bulk-fixed here (Lane-5 content-authoring scope, and the field is
+provably inert: route_feasibility.apply() only folds xp for kind=="quest" rows, never train-*, and
+state_scan's skills_delta is computed from grants/effLevel, never this field — so the bad data cannot
+leak into feasibility or state_after). MUST-NOT-MISS for Lane 5: recompute every train-*/synth-* `xp`
+field from XP_TABLE before ever rendering it player-facing (a `quest-xp` style hint chip, methods xp/hr
+comparison, etc.) — the formula is right, the stored numbers are not.
+Render (WebFragments.java/app.css/GuideStep.java, runelite-guide-chain): state_after attaches to
+GuideStep as field `state_after` (NOT camelCase `stateAfter` — this codebase's convention is the
+literal snake_case JSON key as the Java field name, no @SerializedName anywhere; caught this via a
+live Gson smoke-parse of route-grand.json before trusting the compile, since compileJava alone can't
+catch a field-name/JSON-key mismatch that just silently deserializes to null). Compact "After this →"
+chip line, same reused-in-both-contexts placement as paysOff/branch; overlay-only.
+MUST-NOT-MISS: state_after is route-POSITION-dependent (same step id at a different route position
+would carry different state), so it is NOT portable across routes/re-orders — regenerate the sidecar
+(state_scan.mjs <fresh-route> --emit state_after.jsonl) after any change to route-grand's step order,
+BEFORE the next enrich pass, or the attached state_after will describe stale positions.

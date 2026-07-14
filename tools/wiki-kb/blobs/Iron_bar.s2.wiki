@@ -1,0 +1,53 @@
+==Creation==
+<tabber>
+Standard= 
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 15
+|skill1boostable = Yes
+|skill1exp = 12.5
+|members = No
+|ticks = 4
+|ticksnote = Make-All option available
+|facilities = Furnace
+|mat1 = Iron ore
+|output1 = Iron bar
+|output1quantitynote = 50% chance without [[ring of forging]]
+|output1subtxt = Normal furnace
+}}
+|-|
+Blast Furnace=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 15
+|skill1boostable = Yes
+|skill1exp = 12.5
+|members = Yes
+|ticks = 11
+|ticksnote = Multiple bars are completed at once
+|facilities = Blast Furnace
+|mat1 = Iron ore
+|output1 = Iron bar
+|output1subtxt = Blast Furnace
+}}
+|-|
+Superheat=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 15
+|skill1boostable = Yes
+|skill1exp = 12.5
+|skill2 = Magic
+|skill2lvl = 43
+|skill2boostable = Yes
+|skill2exp = 53
+|members = No
+|ticks = 3
+|mat1 = Iron ore
+|mat2 = Nature rune
+|mat3 = Fire rune
+|mat3quantity = 4
+|output1 = Iron bar
+|output1subtxt = Superheat
+}}
+</tabber>

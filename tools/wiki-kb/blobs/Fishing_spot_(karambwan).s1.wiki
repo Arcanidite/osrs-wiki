@@ -1,0 +1,13 @@
+==Location==
+{{ObjectTableHead}}
+{{ObjectLocLine
+|name = Fishing spot (karambwan)
+|location = North-eastern [[Karamja]] {{Fairycode|dkp}}
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2899,y:3119|x:2912,y:3119|x:2768,y:3165|x:2928,y:3112
+|mtype = pin
+|leagueRegion = karamja
+}}
+{{ObjectTableBottom}}

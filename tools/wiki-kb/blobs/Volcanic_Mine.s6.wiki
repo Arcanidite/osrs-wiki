@@ -1,0 +1,91 @@
+===Boulder===
+{{Main|Boulder (Volcanic Mine)}}
+
+The primary goal of the minigame is to mine the [[Boulder (Volcanic Mine)|boulder]] in the lava channel, which yields ore fragments and points for [[Petrified Pete's Ore Shop]], among other resources.
+
+If fewer than ten players are participating, one boulder will spawn in the central channel.  If there are ten or more players, another boulder will spawn in the western channel. If twenty or more are present, a third boulder will spawn in the eastern channel. It starts as a giant boulder attached to the cavern, then each time it is mined it shrinks slightly and floats north until coming to a rest, at which point it can be mined again.
+
+Should players manage to completely mine the boulder, it will fall into a lava vortex at the northern end of the mine, and all players will earn an additional 100 points.
+
+On a successful mining attempt, the boulder grants [[Mining]] [[experience]], reward points for [[Petrified Pete's Ore Shop]], and either one ore fragment or just the [[game message]] {{Mes|You chip off a part of the boulder.}} The chance to receive an ore fragment increases as the boulder becomes smaller, increasing the number of points and experience obtained. If there is no available inventory space when an ore fragment is rolled, only 1 point and 5 experience will be awarded.
+
+While mining the boulder, players may also obtain [[calcite]], [[pyrophosphite]], [[numulite]], [[unidentified fossils]], or the [[rock golem]] pet.
+
+{| class="wikitable align-center-2"
+!Size
+!Fragment<br>chance
+|-
+|Giant (attached)
+|class="table-bg-orange" | 1/20
+|-
+|Giant (unattached)
+|class="table-bg-yellow" | 1/12
+|-
+|Large
+|class="table-bg-yellow" |1/8
+|-
+|Medium
+|class="table-bg-green" |1/5
+|-
+|Small
+|class="table-bg-green" | 1/3
+|}
+
+{| class="wikitable align-left-2" style="text-align:center;"
+!colspan=2|Ore fragment
+!Mining level<br/>to obtain
+!Points
+!Experience
+|-
+|{{plinkp|Nothing|pic=Bank filler}}
+|"Part of the boulder"
+|50
+|1
+|5
+|-
+|{{plinkt|Iron ore fragment}}
+|50
+|15
+|10
+|-
+|{{plinkt|Silver ore fragment}}
+|50
+|20
+|20
+|-
+|{{plinkt|Coal fragment}}
+|50
+|25
+|30
+|-
+|{{plinkt|Gold ore fragment}}
+|50
+|34
+|40
+|-
+|{{plinkt|Mithril ore fragment}}
+|55
+|44
+|60
+|-
+|{{plinkt|Adamantite ore fragment}}
+|70
+|55
+|100
+|-
+|{{plinkt|Runite ore fragment}}
+|85
+|70
+|150
+|}
+
+When an ore fragment is rolled, the likelihood of obtaining each fragment type varies with Mining level:
+{{Skilling success chart|label=Volcanic Mine ore fragments|xlabel=Mining level|cascade=yes|showbefore=no
+|label1=Runite ore fragment|low1=-10|high1=80|req1=85|color1=steelblue|image1=Runite ore fragment.png
+|label2=Adamantite ore fragment|low2=-90|high2=90|req2=70|color2=seagreen|image2=Adamantite ore fragment.png
+|label3=Mithril ore fragment|low3=-75|high3=150|req3=55|color3=slateblue|image3=Mithril ore fragment.png
+|label4=Gold ore fragment|low4=-40|high4=160|req4=50|color4=goldenrod|image4=Gold ore fragment.png
+|label5=Coal fragment|low5=-20|high5=170|req5=50|color5=black|image5=Coal fragment.png
+|label6=Silver ore fragment|low6=0|high6=185|req6=50|color6=silver|image6=Silver ore fragment.png
+|label7=Iron ore fragment|low7=0|high7=510|req7=50|color7=maroon|image7=Iron ore fragment.png 
+}}

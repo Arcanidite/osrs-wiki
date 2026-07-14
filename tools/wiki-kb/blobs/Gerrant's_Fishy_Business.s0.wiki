@@ -1,0 +1,19 @@
+{{External|rs=Gerrant's Fishy Business|rsc=Gerrant's Fishing Supplies}}
+{{Infobox Shop
+|name = Gerrant's Fishy Business.
+|image = [[File:Gerrant's Fishy Business..png|300px]]
+|release = [[11 June]] [[2001]]
+|update = New fishing skill and more cooking
+|members = No
+|icon = [[File:Fishing shop icon.png]]
+|location = [[Port Sarim]]
+|owner = [[Gerrant]]
+|special = Fishing shop
+|map = {{Map|mtype=polygon|3011,3230|3011,3220|3015,3220|3018,3223|3018,3230|bucket=yes}}
+|leagueRegion = Asgarnia
+}}
+'''Gerrant's Fishy Business''' is located in [[Port Sarim]]. The shop sells [[Fishing]] supplies. It is run by [[Gerrant]].
+
+Near the back of the store there is a [[white apron]] [[Spawning|respawn]], potentially useful for those doing the [[Pirate's Treasure]] [[Quests|quest]].
+
+Gerrant's Fishy Business shares its stock with [[Lovecraft's Tackle]], so any alteration in stock of one store causes an alteration in stock in the other store.

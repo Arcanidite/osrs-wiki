@@ -1,0 +1,8 @@
+== Requirements ==
+Participating in mixology requires level 60 [[Herblore]] {{Boostable|no}} and completion of [[Children of the Sun]], although higher levels will be advantageous as they allow for faster experience and point rewards due to having access to more potion recipes, with all potion recipes available from level 81.
+
+[[Herb#Cleaning grimy herbs|Clean herbs]] or the corresponding [[Unfinished potion (disambiguation)|unfinished potions]] must be brought to refine into paste. There is a bank chest available. Herbs must be un-noted.
+
+Only 1 inventory space is needed for making a potion, but 3 empty inventory spaces are recommended for the most efficient play when turning in 3 orders at once.
+
+Some movement is involved, but lightweight clothing is not necessary.

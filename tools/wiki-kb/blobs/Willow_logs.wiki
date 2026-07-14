@@ -1,0 +1,113 @@
+{{External|rs|rsc=Willow Logs}}
+{{Infobox Item
+|name = Willow logs
+|image = [[File:Willow logs.png]]
+|release = [[25 March]] [[2002]]
+|update = Latest RuneScape News (25 March 2002)
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Logs cut from a willow tree.
+|value = 40
+|weight = 2.000
+|exchange = Yes
+|id = 1519
+}}
+[[File:Willow logs detail.png|130x130px|left]]
+'''Willow logs''' are logs, which can be cut from [[willow tree]]s using the [[Woodcutting]] [[skill]]. Cutting willow logs from a willow tree requires an [[axe]] and level 30 [[Woodcutting]] and grants 67.5 Woodcutting [[experience]] per log. Players can burn willow logs using the [[Firemaking]] skill and a [[tinderbox]]. This requires level 30 Firemaking and grants 90 Firemaking experience per log.
+
+[[Members]] may also use the [[Fletching]] skill and a [[knife]] to carve willow logs into [[arrow shaft]], [[willow shortbow (u)]], [[willow longbow (u)]], [[willow shield]]s or [[willow stock]]s. This requires levels 30, 35, 40, 42 and 39 Fletching respectively and grants 15, 33.3, 41.5, 83 and 22 experience. However, you need 2 willow logs for the willow shield.
+
+Willow logs are also used to travel to [[Varrock]] using the [[Balloon transport system]].
+
+Willows can be a very cost-effective way of getting to 99 Firemaking. It takes no more than {{formatnum:{{Items Needed|Goal= 99|Level= 30|ItemXp= 90}}}} willows to get from 30-99 Firemaking.
+
+6 willow logs can be used to light an [[Abyssal lantern (willow logs)|Abyssal lantern]], requiring 30 Firemaking. 
+
+[[File:Cutting Willows.png|thumb|right|300px|A player chopping a willow tree.]]
+
+==Skill info==
+{{Woodcutting info
+|name = Willow tree
+|level = 30
+|xp = 67.5
+|tree = [[Willow tree]]
+|tool = [[Axe]]
+|time = 8.4 seconds
+}}
+
+{{Firemaking info
+|craftxp = 22.5
+|pyrelevel = 40
+|version1 = Tinderbox
+|version2 = Bow
+|version3 = Barbarian pyre
+|version4 = Bonfire
+|skill2name = Crafting
+|name = Willow logs
+|skill1lvl1 = 30
+|skill1lvl2 = 50
+|skill1lvl3 = 40
+|skill2lvl3 = 40
+|skill1lvl4 = 30
+|skill1exp1 = 90
+|skill1exp2 = 90
+|skill1exp3 = 90
+|skill1exp4 = 90
+|facility1 = N/A
+|facility2 = N/A
+|facility3 = [[Funeral pyre (Barbarian)|Barbarian funeral pyre]]
+|facility4 = [[Fire]] or [[Forester's Campfire]]
+|tool1 = [[Tinderbox]]
+|tool2 = [[Bow]]
+|tool3 = [[Tinderbox]] or [[bow]], and an [[axe]]
+|tool4 = N/A
+|type = logs
+}}
+
+==Experience from logs==
+*Each log gives 67.5 [[Woodcutting]] [[experience]] when cut (Woodcutting level 30 required).
+*Lighting a log gives 90 [[Firemaking]] experience (Firemaking level 30 required).
+*Making an unstrung [[willow shortbow]] gives 33.3 [[Fletching]] experience and 33.3 additional experience when adding [[bow string]] (Fletching level 35 required).
+*Making an unstrung [[willow longbow]] gives 41.5 Fletching experience and 41.5 additional experience when adding bow string (Fletching level 40 required).
+*Making a full [[willow stock]] gives 22 Fletching experience (Fletching level 39 required).
+*Making a [[willow shield]] requires two willow logs and gives 83 Fletching experience ([[Fletching]] level 42 required)
+
+==Products==
+{{Uses material list|Willow logs}}
+
+==Item sources==
+{{Drop sources|Willow logs}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The item was graphically updated with the release of [[Farming]].
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Willow logs detail (beta).png|center|300x150px]]
+|[[File:Willow logs detail (historical).png|center|300x150px]]
+|[[File:Willow logs detail.png|center|300x150px]]
+|-
+|[[File:Willow logs (beta).png|center]]
+|[[File:Willow logs (historical).png|center]]
+|[[File:Willow logs.png|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 ⁠–<br/>11 July 2005
+|11 July 2005 ⁠–<br/>present
+|}
+
+{{Logs}}
+{{Fletching}}
+[[Category:Fletching]]
+[[Category:Firemaking]]

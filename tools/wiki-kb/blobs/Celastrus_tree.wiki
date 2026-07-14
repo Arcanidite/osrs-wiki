@@ -1,0 +1,215 @@
+{{Multi Infobox
+|text1 = Grown
+|item1 =
+{{Infobox Scenery
+|version1 = Grown
+|version2 = 3 bark
+|version3 = 2 bark
+|version4 = 1 bark
+|version5 = Empty
+|version6 = Stump
+|name1 = Celastrus tree
+|name2 = Celastrus tree
+|name3 = Celastrus tree
+|name4 = Celastrus tree
+|name5 = Harvested Celastrus tree
+|name6 = Celastrus tree stump
+|image1 = [[File:Celastrus tree (grown).png|x300px]]
+|image2 = [[File:Celastrus tree (3 bark).png|x300px]]
+|image3 = [[File:Celastrus tree (2 bark).png|x300px]]
+|image4 = [[File:Celastrus tree (1 bark).png|x300px]]
+|image5 = [[File:Harvested Celastrus tree (empty).png|x300px]]
+|image6 = [[File:Celastrus tree stump.png|x300px]]
+|release = [[10 January]] [[2019]]
+|update = The Kebos Lowlands
+|members = Yes
+|quest = No
+|location = [[Celastrus patch]]
+|options1 = Check-health, Inspect, Guide
+|options2 = Harvest, Inspect, Guide
+|options3 = Harvest, Inspect, Guide
+|options4 = Harvest, Inspect, Guide
+|options5 = Chop, Inspect, Guide
+|options6 = Clear, Inspect, Guide
+|examine1 = A Celastrus tree has been planted in this patch.
+|examine2 = A Celastrus tree has been planted in this patch.
+|examine3 = A Celastrus tree has been planted in this patch.
+|examine4 = A Celastrus tree has been planted in this patch.
+|examine5 = A fully harvested Celastrus tree.
+|examine6 = A Celastrus tree stump
+|map = No
+|id1 = 33704
+|id2 = 33717
+|id3 = 33718
+|id4 = 33719
+|id5 = 33720
+|id6 = 33721
+|leagueRegion = kourend
+}}
+|text2 = Growing
+|item2 =
+{{Infobox Scenery
+|version1 = Stage 1
+|version2 = Stage 2
+|version3 = Stage 3
+|version4 = Stage 4
+|version5 = Stage 5
+|name = Celastrus tree
+|image1 = [[File:Celastrus tree (stage 1).png|x300px]]
+|image2 = [[File:Celastrus tree (stage 2).png|x300px]]
+|image3 = [[File:Celastrus tree (stage 3).png|x300px]]
+|image4 = [[File:Celastrus tree (stage 4).png|x300px]]
+|image5 = [[File:Celastrus tree (stage 5).png|x300px]]
+|release = [[10 January]] [[2019]]
+|update = The Kebos Lowlands
+|members = Yes
+|quest = No
+|location = [[Celastrus patch]]
+|options = Inspect, Guide
+|examine = A Celastrus tree has been planted in this patch.
+|map = No
+|id1 = 33699
+|id2 = 33700
+|id3 = 33701
+|id4 = 33702
+|id5 = 33703
+|leagueRegion = kourend
+}}
+|text3 = Diseased
+|item3 =
+{{Infobox Scenery
+|version1 = Diseased, stage 1
+|version2 = Diseased, stage 2
+|version3 = Diseased, stage 3
+|version4 = Diseased, stage 4
+|version5 = Diseased, stage 5
+|version6 = Diseased, stage 6 (unused)
+|name = Diseased celastrus tree
+|image1 = [[File:Diseased celastrus tree (stage 1).png|x300px]]
+|image2 = [[File:Diseased celastrus tree (stage 2).png|x300px]]
+|image3 = [[File:Diseased celastrus tree (stage 3).png|x300px]]
+|image4 = [[File:Diseased celastrus tree (stage 4).png|x300px]]
+|image5 = [[File:Diseased celastrus tree (stage 5).png|x300px]]
+|image6 = [[File:Diseased celastrus tree (stage 6).png|x300px]]
+|release = [[10 January]] [[2019]]
+|update = The Kebos Lowlands
+|members = Yes
+|quest = No
+|location = [[Celastrus patch]]
+|options = Prune, Inspect, Guide
+|examine = A Celastrus tree has been planted in this patch.
+|map = No
+|dropversion1 = Diseased
+|dropversion2 = Diseased
+|dropversion3 = Diseased
+|dropversion4 = Diseased
+|dropversion5 = Diseased
+|dropversion6 = None
+|id1 = 33705
+|id2 = 33706
+|id3 = 33707
+|id4 = 33708
+|id5 = 33709
+|id6 = 33710
+|leagueRegion = kourend
+}}
+|text4 = Dead
+|item4 =
+{{Infobox Scenery
+|version1 = Dead, stage 1
+|version2 = Dead, stage 2
+|version3 = Dead, stage 3
+|version4 = Dead, stage 4
+|version5 = Dead, stage 5
+|version6 = Dead, stage 6 (unused)
+|name = Dead celastrus tree
+|image1 = [[File:Dead celastrus tree (stage 1).png|x300px]]
+|image2 = [[File:Dead celastrus tree (stage 2).png|x300px]]
+|image3 = [[File:Dead celastrus tree (stage 3).png|x300px]]
+|image4 = [[File:Dead celastrus tree (stage 4).png|x300px]]
+|image5 = [[File:Dead celastrus tree (stage 5).png|x300px]]
+|image6 = [[File:Dead celastrus tree (stage 6).png|x300px]]
+|release = [[10 January]] [[2019]]
+|update = The Kebos Lowlands
+|members = Yes
+|quest = No
+|location = [[Celastrus patch]]
+|options = Clear, Inspect, Guide
+|examine = A Celastrus tree has been planted in this patch.
+|map = No
+|id1 = 33711
+|id2 = 33712
+|id3 = 33713
+|id4 = 33714
+|id5 = 33715
+|id6 = 33716
+|leagueRegion = kourend
+}}
+}}
+A '''Celastrus tree''' is a high-level tree that can be grown with the [[Farming]] skill. Players with at least level 85 Farming may plant a [[celastrus sapling]] in the high-tier area of the [[Farming Guild]]. The nearby farmer can be paid 8 [[potato cacti]] to protect a planted celastrus tree from becoming [[Disease (Farming)|diseased]].
+
+Celastrus trees are grown by first planting a [[celastrus seed]] in a [[filled plant pot]], which will turn into a [[celastrus sapling]] after being watered and allowed to grow. The celastrus sapling is then planted in the [[celastrus patch]], in the advanced tier of the [[Farming Guild]], using a spade.
+
+Once fully grown, checking the health of the tree yields 14,130 Farming experience and can then be chopped with an [[axe]] to produce a minimum of three [[celastrus bark]] for 23.5 Farming experience per bark. The yield of celastrus bark can be improved by composting the patch before it is fully grown,{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1088630402284224512|date=24 January 2019|archiveurl=https://reldo.runescape.wiki/i/98850|archivedate=28 May 2020|quote=Yes, celastrus would be helped by composting.}} having [[Magic secateurs]] equipped or in your inventory,{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1092832728830095360|date=05 February 2019|archiveurl=https://reldo.runescape.wiki/i/109014|archivedate=28 May 2020|quote=I can't offer to go read the code for you from here, but I think so.}} having a higher Farming level, and having an [[Attas seed]] planted.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1250487359730302978|date=15 April 2020|archiveurl=https://reldo.runescape.wiki/i/105048|archivedate=28 May 2020|quote=Yes, that effect is tied into the core of harvesting where it does indeed affect Celastrus.}} [[Nature offerings]] do '''not''' increase the yield of Celastrus bark, however. Once all of the bark has been harvested the tree will remain depleted until removed. The fully harvested tree must be cut down and then cleared using a spade.
+
+Due to the high cost of [[Celastrus seed|celastrus seeds]], it is recommended to pay the farmer for protection, as this only requires 8 [[potato cactus]] which is incredibly cheap compared to the cost of the seed. Additionally, players should use [[ultracompost]] and [[Magic secateurs]] to increase the yield from each tree.
+
+Growing a celastrus tree, harvesting the [[celastrus bark]], and using a knife to create a [[Battlestaff]] is required for a [[Kourend & Kebos Diary|Kourend & Kebos Elite Diary]] task.
+
+==Farming info==
+{{Farming info
+|name = Celastrus tree
+|level = 85
+|patch = [[Celastrus patch]]
+|seed = {{plink|Celastrus seed}}
+|seedling = {{plink|Celastrus seedling}}
+|sapling = {{plink|Celastrus sapling}}
+|seedsper = 1
+|payment = 8 {{plink|potato cactus|txt=potato cacti}}
+|time = 800 min (5x160 min = 13.33 hours)
+|crop = {{plink|Celastrus bark}}
+|plant = [[Celastrus tree]]
+|yield = 3+
+|regrow = No
+|plantxp = 200
+|checkxp = 14130
+|harvestxp = 23.5
+|dropversion = Diseased
+}}
+
+{{DropsTableHead}}
+{{DropsLineSkill|name=Celastrus bark|quantity=1|rarity=Always|skill=Farming}}
+{{DropsLineSkill|name=Leaves|quantity=1|rarity=Always|raritynotes=<ref group="d">Requires pruning with ([[magic secateurs|magic]]) [[secateurs]] to cure disease.</ref>|skill=Farming|dropversion=Diseased}}
+{{DropsTableBottom}}
+{{reflist|group=d}}
+
+==Growth stages==
+{{Growth stages
+|stage1 = [[File:Celastrus tree (stage 1).png|2px]]
+|stage2 = [[File:Celastrus tree (stage 2).png|10px]]
+|stage3 = [[File:Celastrus tree (stage 3).png|47px]]
+|stage4 = [[File:Celastrus tree (stage 4).png|58px]]
+|stage5 = [[File:Celastrus tree (stage 5).png|78px]]
+|stage6 = [[File:Celastrus tree (grown).png|95px]]
+|diseased1 = [[File:Diseased celastrus tree (stage 1).png|2px]]
+|diseased2 = [[File:Diseased celastrus tree (stage 2).png|10px]]
+|diseased3 = [[File:Diseased celastrus tree (stage 3).png|47px]]
+|diseased4 = [[File:Diseased celastrus tree (stage 4).png|58px]]
+|diseased5 = [[File:Diseased celastrus tree (stage 5).png|78px]]
+|dead1 = [[File:Dead celastrus tree (stage 1).png|2px]]
+|dead2 = [[File:Dead celastrus tree (stage 2).png|10px]]
+|dead3 = [[File:Dead celastrus tree (stage 3).png|47px]]
+|dead4 = [[File:Dead celastrus tree (stage 4).png|58px]]
+|dead5 = [[File:Dead celastrus tree (stage 5).png|78px]]
+}}
+
+==Trivia==
+*''{{WP|Celastrus}}'' is a genus of shrubs and vines commonly known as staff vines, staff trees, and bittersweets.
+*Vines in the genus ''Celasturs'' often coil around themselves, leading to common names such as "twinning vine"
+
+==References==
+{{Reflist}}
+
+{{Trees}}
+{{Farming plants}}
+[[Category:Farming]]

@@ -1,0 +1,117 @@
+{{Infobox Location
+|name = Woodcutting Guild
+|image = [[File:Woodcutting Guild.png|300px]]
+|release = [[2 June]] [[2016]]
+|update = The Woodcutting Guild
+|members = Yes
+|location = [[Hosidius]]
+|requirement = {{SCP|Woodcutting|60}}
+|map = {{Map|name=Woodcutting Guild|height=200|zoom=1|mtype=polygon|1565,3499|1563,3497|1563,3478|1564,3477|1582,3477|1587,3472|1595,3472|1596,3473|1596,3480|1601,3485|1601,3497|1607,3497|1607,3492|1612,3487|1617,3487|1623,3493|1632,3493|1633,3492|1633,3490|1634,3489|1648,3489|1656,3497|1656,3502|1657,3502|1658,3503|1658,3507|1655,3510|1655,3516|1654,3517|1633,3517|1631,3519|1624,3519|1621,3516|1612,3516|1610,3514|1608,3514|1607,3513|1607,3511|1604,3511|1604,3506|1607,3506|1607,3501|1601,3501|1601,3503|1600,3504|1582,3504|1577,3499}}
+|type = guild
+|leagueRegion = Kourend
+}}
+The '''Woodcutting Guild''' is a [[members]]-only [[guild]] located in the south-western corner of [[Hosidius]]. In order to enter the guild, players must have at least level 60 in [[Woodcutting]] (which can be [[Temporary skill boost#Woodcutting|boosted]]).
+
+While inside the guild, players will receive an invisible +7 level boost to their Woodcutting. This boost will stack with any existing boosts the player already has,{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/740931209543487488|date=9 June 2016|archiveurl=https://reldo.runescape.wiki/i/102483|archivedate=30 May 2020|quote=[With the +7 boost in the WC guild, does it make the dragon axe special pointless? Or would that increase it to +10?] They stack.}} such as the visible +3 boost from using the [[dragon axe]]'s [[special attack]], though visible boosts are capped to level 99.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1375844352098975753|date=27 March 2021|archiveurl=https://reldo.runescape.wiki/i/98237|archivedate=29 March 2021|quote=I did a little more trawling of the code, and can confirm that the visible stat is now treated as 99 if it's above 99 - that is a recent change. It seems to have been applied to Mining, Fishing and Woodcutting.}} However, the invisible boost '''will not''' allow a player to perform actions above their base level. In addition, [[forestry]] events will not occur while inside the Woodcutting Guild. There is no group Woodcutting bonus whilst cutting trees inside the guild.
+
+Entering the Woodcutting Guild is a task in the [[hard Kourend & Kebos Diary]].
+
+==Transportation==
+*Use a [[skills necklace]] to teleport directly outside the front gate.
+*Use [[Rada's blessing]] to teleport to [[Kourend Woodland]] and run north-east to enter through the back.
+*[[Lovakengj Minecart Network]] to Hosidius West and run south, or to [[Kourend Woodland]] and run west then north.
+*[[Minigame Teleport]] to [[Tithe Farm]] and use the [[Lovakengj Minecart Network]], or run West.
+*Right click [[Veos]], who is located on the northern dock of [[Port Sarim]], to travel to [[Land's End]] and head north-east.
+*[[Teleport to House]] while the player's [[POH]] is in [[Hosidius]]. Redirecting a [[Teleport to house]] tablet to a [[Hosidius teleport]] tablet via the use of a [[scroll of redirection]] works as well.
+*Take the [[Fairy rings|Fairy Ring]] to Hosidius Vinery  ({{Fairycode|AKR}}) and then run west.
+*Use [[Xeric's talisman]] to teleport to [[Xeric's Lookout]] and run south.
+*Use a fully grown [[spirit tree]] to teleport north-east of the guild entrance. Requires 83 [[Farming]].
+*Casting [[Kourend Castle Teleport]] and running south. Requires completion of [[Client of Kourend]].
+*[[Minigame Teleport]] to [[Pest Control]] (or a [[Pest control teleport]]), take the boat back to [[Port Sarim]], then to [[Land's End]] via [[Veos]] and run north-east upon arrival.
+
+==Features==
+
+=== Bank chest ===
+The guild features a [[bank chest]] near in the western section. This is useful for players looking to bank their [[Redwood logs|redwood]] or [[magic logs]].
+
+===Trees===
+[[File:Chopping redwood.png|thumb|280px|A group of players chopping redwood. The entrance to the upper level can be seen on the right tree.]]
+Within the guild players can find the following types of trees:
+*11 [[Tree]]s
+*4 [[Oak tree]]s
+*7 [[Willow tree]]s
+*13 [[Maple tree]]s
+*17 [[Yew tree]]s
+*8 [[Magic tree]]s
+*2 [[Redwood tree]]s (24 walls to chop)
+
+===Ent dungeon===
+{{Map|1572,9888|mapID=32|align=right|width=250|height=250|caption=A map of the Woodcutting Guild dungeon.}}
+[[File:Woodcutting Guild ent area.png|thumb|left|The ent habitat found underneath the Woodcutting Guild.]]
+The Woodcutting Guild dungeon, accessible through the [[cave (Woodcutting Guild)|cave entrance]] near the sawmill, contains 22 [[Ents]] (combat level 86) and a [[bank chest]]. It is the only place outside the [[Wilderness]] where players can kill and woodcut ent remains. Unlike the wilderness ents, the ents in the dungeon will only reward one noted log instead of two for every successful chop. If the player is using a boost to enter the guild, level 60 Woodcutting (not boostable) is also required to enter the dungeon.
+
+==== Bank Chest ====
+Another bank chest can be found in the back of the ent dungeon. The chest is one of the most-unused banks in the game, making it a potential location for players looking to train bankable skills quietly.
+
+===Sawmill===
+There is a [[sawmill]] available for use in the east side of the guild. It is the 2nd closest sawmill to a bank by foot, losing to [[Auburnvale]]. This sawmill can be the fastest to process banked logs by teleporting to it via a [[skills necklace]] and then using a [[ring of dueling]] to return to the bank.
+
+===Perry's Chop-chop Shop===
+[[Perry's Chop-chop Shop]] can be found by the entrance inside the guild. This is the only shop in ''[[Old School RuneScape]]'' that sells [[rune axe]]s.
+
+Within the shop, there is a [[bank deposit box]] that is not shown on the minimap, which is convenient for the 3 yew trees directly north of the shop and the 1 yew tree and several maple trees west of the shop.
+
+===Shrine===
+[[File:Offering god eggs.gif|thumb|180px|A player offers [[bird's egg]]s to the shrine.]]
+
+The [[shrine]] is a large bird's nest located outside the entrance to the Ent dungeon. It is marked by the [[File:Altar icon.png]] on the minimap. Players can use the shrine to recharge their prayer, and offer [[bird egg]]s to this shrine to receive 100 [[Prayer]] experience and a [[bird nest]] containing [[tree]] or [[fruit tree]] seeds. There is also a 1/300 chance of receiving a piece of the [[evil chicken outfit]] for each egg offered.
+
+==Personalities==
+*[[Berry (Woodcutting Guild)|Berry]]
+*[[Guildmaster Lars]]
+*[[Murfet]]
+*[[Nesty]]
+*[[Kai]]
+*[[Forester]]
+*[[Perry]]
+*[[Imp]]s may be encountered inside the guild.
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 24 January 2024
+|update = Scurrius, the Rat King
+|change = [[Berry (Woodcutting Guild)|Berry]] will no longer interrupt players with a chat box every time they enter the Woodcutting Guild.
+}}
+{{Subject changes
+|date = 10 January 2024
+|update = Children of the Sun
+|poll = Varlamore Activities & Kourend Changes
+|change = As [[Kourend Favour]] has been removed, accessing the guild no longer requires it.
+}}
+{{Subject changes
+|date = 9 June 2016
+|update = The Catacombs of Kourend
+|change =
+* [[Perry's Chop-chop Shop]] has been added to the Woodcutting Guild.
+* A [[bank deposit box]] has been added to the Woodcutting Guild [[bank]].
+* The Woodcutting Guild now provides a hidden +7 [[Woodcutting]] boost.
+}}
+{{Subject changes
+|date = 2 June 2016
+|update = The Woodcutting Guild
+|poll = Old School Content Poll 43: Great Kourend Content
+|change = The Woodcutting Guild is added.
+}}
+{{Subject changes footer}}
+
+==Soundtrack==
+The music played in the Woodcutting Guild has changed several times throughout its history. In 2016, [[Country Jig]] was played, but after complaints that it didn't suit the guild, the theme was changed to [[The Forlorn Homestead]]. In 2019, the theme changed again to [[A Walk in the Woods]].
+
+==References==
+{{Reflist}}
+
+{{Woodcutting Guild}}
+{{Guilds}}
+{{Hosidius}}
+[[Category:Temporary skill boost]]

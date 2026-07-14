@@ -1,0 +1,194 @@
+{{External|rs|dw=Green Dragonhide Leather}}
+{{Infobox Item
+|name = Green dragon leather
+|image = [[File:Green dragon leather.png]]
+|release = [[29 March]] [[2004]]
+|update = RS2 Launched!
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = It's a piece of prepared green dragonhide.
+|value = 50
+|weight = 3.175
+|exchange = Yes
+|id = 1745
+}}
+[[File:Green dragon leather detail.png|120px|left]]
+'''Green dragon leather''' is used in the [[Crafting]] skill to make [[green dragonhide armour]]. It can be created by giving a [[green dragonhide]] to a [[tanner]]. Tanners can be found in [[Al Kharid]], the [[Ranging Guild]], [[Forthos Dungeon]], [[Kebos Lowlands]], [[Auburnvale]], [[Canifis]], and the [[Crafting Guild]]. Alternatively, green dragon leather can be made using the [[Tan Leather spell]]. Crafting any piece of green dragonhide armour will grant the player 62 experience per hide.
+
+==Creation==
+===Tanners===
+<tabber>
+Standard=
+{{Recipe
+|members = Yes
+|ticks = 1
+|ticksnote = A full inventory is processed in 1 tick.
+|facilities = Tannery
+|mat1 = Green dragonhide
+|mat2 = Coins
+|mat2quantity = 20
+|mat2cost = 1
+|output1 = Green dragon leather
+|output1subtxt = Normal tanner
+}}
+|-|
+Sbott=
+{{Recipe
+|members = Yes
+|ticks = 1
+|ticksnote = A full inventory is processed in 1 tick.
+|facilities = Sbott
+|mat1 = Green dragonhide
+|mat2 = Coins
+|mat2quantity = 45
+|mat2cost = 1
+|output1 = Green dragon leather
+|output1subtxt = Sbott
+}}
+|-|
+Eodan=
+
+{{Switch infobox
+|text1 = No Diary
+|item1 = {{Recipe
+|members = Yes
+|ticks = 1
+|ticksnote = A full inventory is processed in 1 tick.
+|facilities = Eodan
+|mat1 = Green dragonhide
+|mat2 = Coins
+|mat2quantity = 200
+|mat2cost = 1
+|mat2itemnote = Each tier of [[Kourend & Kebos Diary]] completed reduces price by 20%
+|output1 = Green dragon leather
+|output1subtxt = Eodan
+|bucket = No
+}}
+|text2 = Easy
+|item2 = {{Recipe
+|notes = {{SCP|Diary}} Completion of [[Kourend & Kebos Diary#Easy|Easy Kourend & Kebos Diary]]
+|members = Yes
+|ticks = 1
+|ticksnote = A full inventory is processed in 1 tick.
+|facilities = Eodan
+|mat1 = Green dragonhide
+|mat2 = Coins
+|mat2quantity = 160
+|mat2cost = 1
+|mat2itemnote = Each tier of [[Kourend & Kebos Diary]] completed reduces price by 20%
+|output1 = Green dragon leather
+|output1subtxt = Eodan
+|bucket = No
+}}
+|text3 = Medium
+|item3 = {{Recipe
+|notes = {{SCP|Diary}} Completion of [[Kourend & Kebos Diary#Medium|Medium Kourend & Kebos Diary]]
+|members = Yes
+|ticks = 1
+|ticksnote = A full inventory is processed in 1 tick.
+|facilities = Eodan
+|mat1 = Green dragonhide
+|mat2 = Coins
+|mat2quantity = 120
+|mat2cost = 1
+|mat2itemnote = Each tier of [[Kourend & Kebos Diary]] completed reduces price by 20%
+|output1 = Green dragon leather
+|output1subtxt = Eodan
+|bucket = No
+}}
+|text4 = Hard
+|item4 = {{Recipe
+|notes = {{SCP|Diary}} Completion of [[Kourend & Kebos Diary#Hard|Hard Kourend & Kebos Diary]]
+|members = Yes
+|ticks = 1
+|ticksnote = A full inventory is processed in 1 tick.
+|facilities = Eodan
+|mat1 = Green dragonhide
+|mat2 = Coins
+|mat2quantity = 80
+|mat2cost = 1
+|mat2itemnote = Each tier of [[Kourend & Kebos Diary]] completed reduces price by 20%
+|output1 = Green dragon leather
+|output1subtxt = Eodan
+|bucket = No
+}}
+|text5 = Elite
+|item5 = {{Recipe
+|notes = {{SCP|Diary}} Completion of [[Kourend & Kebos Diary#Elite|Elite Kourend & Kebos Diary]]
+|members = Yes
+|ticks = 1
+|ticksnote = A full inventory is processed in 1 tick.
+|facilities = Eodan
+|mat1 = Green dragonhide
+|mat2 = Coins
+|mat2quantity = 40
+|mat2cost = 1
+|mat2itemnote = Each tier of [[Kourend & Kebos Diary]] completed reduces price by 20%
+|output1 = Green dragon leather
+|output1subtxt = Eodan
+|bucket = No
+}}
+}}
+</tabber>
+
+===Tan Leather Spell===
+{{Recipe
+|skill1 = Magic
+|skill1lvl = 78
+|skill1boostable = Yes
+|skill1exp = 81
+|notes = {{SCP|Diary}} Completion of [[Fremennik Diary#Hard|Hard Fremennik Diary]]
+|members = Yes
+|ticks = 3
+|mat1 = Green dragonhide
+|mat1quantity = 5
+|mat2 = Nature rune
+|mat3 = Astral rune
+|mat3quantity = 2
+|mat4 = Fire rune
+|mat4quantity = 5
+|output1 = Green dragon leather
+|output1quantity = 5
+|output1subtxt = Tan Leather spell
+}}
+
+==Products==
+{{Uses material list|Green dragon leather}}
+
+==Item sources==
+{{Drop sources|Green dragon leather}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 12 March 2015
+|update = Diary Skillcape Emote
+|change = The item was renamed from "Green d-leather" to "Green dragon leather".
+}}
+{{Subject changes
+|daterange = 14 – 22 November 2005
+|change = *The item was renamed from "Dragon leather" to "Green d-leather".
+*The item's examine was changed from "''It's a piece of prepared dragonhide.''" to "''It's a piece of prepared green dragonhide.''"
+}}
+{{Subject changes
+|daterange = 14 September –<br/>5 October 2004
+|change = The item's value was increased from 0 to 50.
+}}
+{{Subject changes
+|date = 29 March 2004
+|update = RS2 Launched!
+|change = The item became permanently available with the launch of ''RuneScape 2''.
+}}
+{{Subject changes
+|date = 1 December 2003
+|update = RuneScape 2 Beta is Here!
+|change = The item was added to the ''RuneScape 2'' Beta.
+}}
+{{Subject changes footer}}
+
+{{Leather}}

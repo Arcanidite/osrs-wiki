@@ -1,0 +1,22 @@
+==General advice==
+* [[Overload (Nightmare Zone)|Overload]]s require at least 51 remaining Hitpoints to drink a dose.
+** They provide the same boost as a [[Super attack]], [[Super strength]], and [[Super defence]], but provide a stronger boost than a [[Ranging potion]] and [[Saturated heart]].
+** Overload damage happens over several seconds. If you use a [[locator orb]] or [[dwarven rock cake]] while the overload still has damage left to deal, you can die.
+** Due to the high cost (1,500 points) and effect (sudden Hitpoints loss followed by gain every 5 minutes), some players prefer to use regular [[Super combat potion|super combat potions]] or [[Ranging potion|ranging potions]], especially when playing less attentively.
+* [[Absorption]] potions are most efficiently used with 1 [[Hitpoints]] accomplished with a [[dwarven rock cake]] or [[locator orb]]. Having 1 Hitpoints remaining means any damage taken has a max hit of 1, at most draining a single absorption point. 2 Hitpoints means it is possible to take a max hit of 2, draining absorption points nearly twice as fast.
+** To remain at 1 Hitpoints, [[flick]] [[Rapid Heal]] on and then off at least once per minute.
+** The ability to stay low hitpoints synergises well with [[Dharok the Wretched's equipment]], preventing death even at low hitpoints.
+** Use the [[dwarven rock cake]] ''right-click'' option ''Guzzle'' to get to 1 Hitpoints (the ''eat'' option '''only''' brings Hitpoints down to 2). 
+* Leaving the Nightmare Zone arena resets all stats to normal.
+* In rumble mode:
+** Completing all [[quest]]s will reduce costs by {{NoCoins|10000}} per run.
+** More bosses enabled rewards a higher percentage of their total points per kill. Disabling bosses that are unlocked from completing quests reduces points per kill.
+** Some bosses are recommended to almost always be disabled based on their mechanics: [[Glod (Nightmare Zone)|Glod]], [[Elvarg (Nightmare Zone)|Elvarg]], [[Corrupt Lizardman (Nightmare Zone)|Corrupt Lizardman]], [[Chronozon (Nightmare Zone)|Chronozon]], and [[Barrelchest (Nightmare Zone)|Barrelchest]].
+** Disabling a boss also disables every boss from that quest, e.g. disabling [[Damis (Nightmare Zone)|Damis]] also disables [[Dessous (Nightmare Zone)|Dessous]], [[Fareed (Nightmare Zone)|Fareed]], [[Kamil (Nightmare Zone)|Kamil]]. Because of this mechanic all bosses from [[Dream Mentor]], [[Recipe for Disaster]], and [[Desert Treasure I]] should always be enabled when trying to maximise points per hour.
+** If the Dream Mentor bosses are enabled but the Desert Treasure I bosses are disabled a large 83.33% point penalty will be applied to all kills. To avoid this make sure to only enable the Dream Mentor bosses in tandem with the Desert Treasure I ones or to disable them completely. The Recipe for Disaster bosses have no effect on this.
+** Some bosses provide increased experience per damage dealt: [[Moss Guardian (Nightmare Zone)|Moss Guardian]] (+7.5%; 4.3xp), [[Dad (Nightmare Zone)|Dad]] (+10%; 4.4xp), [[Ice Troll King (Nightmare Zone)|Ice Troll King]] (+12.5%; 4.5xp), and [[Arrg (Nightmare Zone)|Arrg]] (+17.5%; 4.7xp).
+** Avoid using Ultimate Force [[Nightmare Zone#Power-ups|power-up]]s unless there are many bosses that you cannot damage.
+** Activate all other power-ups. With Power Surge, use a special attack weapon such as [[dragon claws]] or [[Granite maul (ornate handle)|granite maul with an ornate handle]]. Damage dealt by Zapper or Recurrent Damage results in more points but does not yield experience; they do not greatly impact experience rates unless the player kills bosses too quickly.
+** The [[Ancient mace]] special attack can be used to greatly extend prayer use within the Nightmare Zone, especially when paired with the power surge power-up, which enables constant usage.
+** The [[Bonecrusher necklace]] can be worn in conjunction with a set of bosses that drop bones.  This can allow consistent usage of [[Preserve]] to make Super Combat potions function closer to Overloads, as well as [[Burst of Strength]] to make up for the lost strength bonus in comparison to another neck slot item.
+** Points per boss is not accurate, and reduced since most recent update.

@@ -1,0 +1,303 @@
+{{Otheruses|the Slayer monster|the superior variant|Shadow Wyrm|the Slayer monster in [[Neypotzli]]|Wyrmling}}
+{{External|rs=Wyrms}}
+{{HasTask|Wyrms}}
+{{Infobox Monster
+|version1 = Idle
+|version2 = Attacking
+|name = Wyrm
+|image1 = [[File:Wyrm.png|250px]]
+|image2 = [[File:Wyrm (attacking).png|200px]]
+|release = [[10 January]] [[2019]]
+|update = The Kebos Lowlands
+|members = Yes
+|combat = 97
+|size = 3
+|examine = Don't let it wyrm its way in.
+|attributes = dragon
+|xpbonus = 2.5
+|flatarmour = 1
+|max hit = 13 ([[Magic]]), 10 ([[Melee]])
+|aggressive = No
+|poisonous = No
+|attack style = [[Magic]], [[Slash]]
+|attack speed = 4
+|respawn = 15
+|slaylvl = 62
+|slayxp = 123
+|cat = Wyrms
+|assignedby = chaeldar,konar,nieve,duradel
+|hitpoints = 120
+|att = 85
+|str = 60
+|def = 80
+|mage = 80
+|range = 80
+|attbns = 0
+|strbns = 30
+|amagic = 0
+|mbns = 30
+|arange = 0
+|rngbns = 0
+|dstab = 10
+|dslash = 50
+|dcrush = 50
+|dmagic = 50
+|dlight = 20
+|dstandard = 20
+|dheavy = 10
+|elementalweaknesstype = Earth
+|elementalweaknesspercent = 50
+|poisonresistance = 100
+|venomresistance = 100
+|immunecannon = Yes
+|immunethrall = No
+|id1 = 8610
+|id2 = 8611
+}}
+[[File:Wyrm icon.png|left]]
+[[File:Strategy to safespot Wyrms.png|alt=Strategy to safespot Wyrms|thumb|right|Wyrms south/southeast of marked white tile can be attacked from a white tile and dragged next to it. Once the wyrm is lured there, player should run to marked blue tile and proceed to kill the wyrm from there.]]
+'''Wyrms''' are [[Draconic (attribute)|draconic]] creatures found in the lower level of the [[Karuulm Slayer Dungeon]] in [[Mount Karuulm]] requiring level 62 [[Slayer]] to kill. Players can get there quickly by using the [[fairy ring]] {{fairycode|cir}} located south of the mountain.  Players can also directly teleport to Mount Karuulm with [[Rada's blessing]] 3 or 4. As they are only found within the volcano, '''players must wear the [[boots of stone]], [[boots of brimstone]], or [[granite boots]] to protect themselves from the extreme heat of the dungeon floor.''' Players who have completed the [[Elite Kourend & Kebos Diary]] do not need to wear this footwear to avoid being rapidly burned.
+
+Killing a wyrm is required for the [[Hard Kourend & Kebos Diary]] and is an [[Easy Combat Achievements|Easy Combat Achievement.]]
+
+Wyrms were an ancient race of [[dragons]], said to be capable of destroying cities and armies on their own. They slowly disappeared due to their heavy involvement in the [[God Wars]]. The current wyrms in the dungeon are an attempted recreation of the powerful wyrms of old by a [[Dragonkin]] named [[Karuulm]].
+
+Wyrms do '''not''' require any form of [[dragonfire protection]]. When encountered, they will be slithering on the ground. However, once attacked, they will levitate off the ground and attack the player. They can still be hit with melee. Wyrms attack with both [[Melee]] and [[Magic]]; however, if attacked from a distance, they will only use their magic attack. This makes the [[Ranged]] attack style while using a form of magic protection, such as [[Protect from Magic]], or armour with high magic defence bonuses like [[dragonhide armour|dragonhide]], a viable method for killing wyrms.
+
+They are the only monsters to drop the [[dragon sword]] and [[dragon harpoon]].
+
+Wyrms are vulnerable to the effects of [[dragonbane weapons]], which include the [[dragon hunter lance]], [[dragon hunter crossbow]], and [[dragon hunter wand]]. A [[dwarf multicannon]] cannot be set up in the area as a message will appear "The electricity here is too powerful for you to set up a cannon here". They are also immune to both venom and poison. When leaving their idle stance, they will clear any [[burn]] effects.
+
+Players may kill [[wyrmling]]s or [[lava Strykewyrm|lava strykewyrm]]s in place of normal wyrms for their Slayer task. These have additional requirements; the former require starting [[Perilous Moons]] for access to [[Neypotzli]] and the latter requires 60 [[Sailing]]{{boostable|n}} for access to [[Charred Island]].
+
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Wyrm
+|location = [[Karuulm Slayer Dungeon]] - lower level
+|levels = 97
+|members = Yes
+|mapID = 33
+|plane = 0
+|x:1260,y:10192|x:1262,y:10184|x:1264,y:10197|x:1268,y:10179|x:1268,y:10191|x:1270,y:10186|x:1275,y:10181|x:1275,y:10189|x:1280,y:10186
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocLine
+|name = Wyrm
+|location = [[Karuulm Slayer Dungeon]] - lower level (task-only)
+|levels = 97
+|members = Yes
+|mapID = 33
+|plane = 0
+|x:1252,y:10159|x:1255,y:10147|x:1259,y:10154|x:1259,y:10159|x:1266,y:10152|x:1267,y:10157|x:1273,y:10158
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocTableBottom}}
+
+==Money making==
+{{Mmgsection|Killing Wyrms (Slayer)}}
+
+==Safespotting==
+If the player is on a Slayer task, any idle wyrms on the eastern alcove of the second island can be attacked and then lured to the corner to trap them, allowing players to range them at a specific spot while staying out of their magic attack range of 6 squares. Wyrms will return to their idle state after being unable to retaliate for several hits, and may walk out of the safespot area in the process. This can cause the player to run after the wyrm and start taking damage. For this reason, it is recommended to pay some attention even while using this method. A player can ensure more idle time by attacking with a weapon that has an attack speed of 5 ticks (e.g., [[magic longbow]] or [[rune crossbow]] in with their attack style set to rapid). If timed correctly, the attack will hit the wyrm as soon as its "re-idling" animation ends, preventing it from moving away and undoing the safespot.
+
+Furthermore, if the wyrm manages to move away and enter the platform's northern "corridor", the player can avoid having to reposition it by setting up a safespot along the second island's north-western edge, 6 squares from the corner.
+
+To set up this safespot, attack a wyrm when it is in the eastern alcove and run to the shown tile. The more north and east the wyrm is, the higher the chance of instant success. You may have to run to the back of the northern alcove to lure the wyrm's character box past the western wall of the northern alcove if the wyrm doesn't automatically get stuck on said western wall. Note that the [[Shadow_Wyrm|shadow wyrm]] cannot be safespotted.
+
+==Drops==
+{{DropLogProject|kills=847282}}{{#vardefine:wyrmOntask|{{#expr:
+(1/2000) * 1 * {{GEP|Dragon sword}} +
+(1/2000) * 1 * {{GEP|Dragon harpoon}} +
+(1/2000) * 112.5 * {{GEP|Dragon knife}} +
+(1/2000) * 112.5 * {{GEP|Dragon thrownaxe}}
+}}}}{{#vardefine:wyrmOfftask|{{#expr:
+(1/10000) * 1 * {{GEP|Dragon sword}} +
+(1/10000) * 1 * {{GEP|Dragon harpoon}} +
+(1/10000) * 112.5 * {{GEP|Dragon knife}} +
+(1/10000) * 112.5 * {{GEP|Dragon thrownaxe}}
+}}}}{{#vardefine:onewyrmLoot|{{#expr:
+
+1*{{GEP|Wyrm bones}} +
+
+{{#vardefineecho:wyrmReg|{{#expr:
+(10/76) * 200 * {{GEP|Fire rune}} +
+(10/76) * 112.5 * {{GEP|Earth rune}} +
+(5/76) * 17.5 * {{GEP|Soul rune}} +
+(5/76) * 27.5 * {{GEP|Blood rune}} +
+(3/76) * 1 * {{GEP|Red d'hide chaps}} +
+(2/76) * 1 * {{GEP|Adamant axe}} +
+(2/76) * 1 * {{GEP|Adamant sq shield}} +
+(2/76) * 1 * {{GEP|Adamant battleaxe}} +
+(2/76) * 1 * {{GEP|Adamant 2h sword}} +
+(2/76) * 1 * {{GEP|Rune med helm}} +
+(1/76) * 1 * {{GEP|Earth battlestaff}} +
+(1/76) * 1 * {{GEP|Rune battleaxe}} +
+(1/76) * 1 * {{GEP|Dragon dagger}} +
+(4/76 * 32/128) * 1.5 * {{GEP|Grimy guam leaf}} +
+(4/76 * 24/128) * 1.5 * {{GEP|Grimy marrentill}} +
+(4/76 * 18/128) * 1.5 * {{GEP|Grimy tarromin}} +
+(4/76 * 14/128) * 1.5 * {{GEP|Grimy harralander}} +
+(4/76 * 11/128) * 1.5 * {{GEP|Grimy ranarr weed}} +
+(4/76 * 8/128) * 1.5 * {{GEP|Grimy irit leaf}} +
+(4/76 * 6/128) * 1.5 * {{GEP|Grimy avantoe}} +
+(4/76 * 5/128) * 1.5 * {{GEP|Grimy kwuarm}} +
+(4/76 * 4/128) * 1.5 * {{GEP|Grimy cadantine}} +
+(4/76 * 3/128) * 1.5 * {{GEP|Grimy lantadyme}} +
+(4/76 * 3/128) * 1.5 * {{GEP|Grimy dwarf weed}} +
+
+(3/76 * 47/238) * 1 * {{GEP|Toadflax seed}} +
+(3/76 * 32/238) * 1 * {{GEP|Irit seed}} +
+(3/76 * 31/238) * 1 * {{GEP|Belladonna seed}} +
+(3/76 * 22/238) * 1 * {{GEP|Poison ivy seed}} +
+(3/76 * 22/238) * 1 * {{GEP|Avantoe seed}} +
+(3/76 * 21/238) * 1 * {{GEP|Cactus seed}} +
+(3/76 * 15/238) * 1 * {{GEP|Potato cactus seed}} +
+(3/76 * 15/238) * 1 * {{GEP|Kwuarm seed}} +
+(3/76 * 10/238) * 1 * {{GEP|Snapdragon seed}} +
+(3/76 * 7/238) * 1 * {{GEP|Cadantine seed}} +
+(3/76 * 5/238) * 1 * {{GEP|Lantadyme seed}} +
+(3/76 * 4/238) * 3 * {{GEP|Snape grass seed}} +
+(3/76 * 3/238) * 1 * {{GEP|Dwarf weed seed}} +
+(3/76 * 2/238) * 1 * {{GEP|Torstol seed}} +
+
+(8/76) * 1200 * 1 +
+(7/76) * 1 * {{GEP|Bass}} +
+(3/76) * 250 * {{GEP|Pure essence}} +
+(2/76) * 10 * {{GEP|Rune arrowtips}} +
+(2/76) * 10 * {{GEP|Adamant arrowtips}} +
+(1/76) * 1 * {{GDTValue}}
+}}}}
+}} }}
+
+The average wyrm kill, including [[wyrm bones]] and its unique drops, is worth either {{Coins|floor({{#var:onewyrmLoot}}+{{#var:wyrmOfftask}})}} when you are not on a wyrm [[Slayer task]], or {{Coins|floor({{#var:onewyrmLoot}}+{{#var:wyrmOntask}})}} when you are on a wyrm Slayer task.
+
+The average wyrm kill while on a [[Konar]] task is worth {{Coins|floor({{#var:onewyrmLoot}}+{{#var:wyrmOntask}}+(1/80)*{{Average drop value|Brimstone chest|raw=yes}})}}.
+
+===100%===
+{{DropsTableHead}}
+{{DropsLine|name=Wyrm bones|quantity=1|rarity=Always}}
+{{DropsTableBottom}}
+
+===Pre-roll===
+{{DropsTableHead}}
+{{DropsLine|name=Dragon sword|quantity=1|rarity=1/10000|raritynotes=<ref name=wyrmunique group=a>The rarity changes to 1/2,000 while on a wyrm [[Slayer task]].</ref>{{CiteTwitter|author=Mod Munro|url=https://twitter.com/JagexMunro/status/1095752074099339264|date=13 February 2019|archiveurl=https://reldo.runescape.wiki/i/106227|archivedate=9 March 2020|quote=As I mentioned on the Q & A, here are the pictures of the drop rates for various parts of Kebos. This time with the correct drop rate for the pieces of the Brimstone Ring.|name=mun}}|altrarity=1/2000}}
+{{DropsLine|name=Dragon harpoon|quantity=1|rarity=1/10000|raritynotes=<ref name=wyrmunique group=a />{{NamedRef|mun}}|altrarity=1/2000}}
+{{DropsLine|name=Dragon knife|quantity=75-150|rarity=1/10000|raritynotes=<ref name=wyrmunique group=a />{{NamedRef|mun}}|altrarity=1/2000}}
+{{DropsLine|name=Dragon thrownaxe|quantity=75-150|rarity=1/10000|raritynotes=<ref name=wyrmunique group=a />{{NamedRef|mun}}|altrarity=1/2000}}
+{{DropsTableBottom}}
+{{Reflist|group=a}}
+
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLine|name=Adamant axe|quantity=1|rarity=2/76}}
+{{DropsLine|name=Red d'hide chaps|quantity=1|rarity=3/76}}
+{{DropsLine|name=Adamant sq shield|quantity=1|rarity=2/76}}
+{{DropsLine|name=Adamant battleaxe|quantity=1|rarity=2/76}}
+{{DropsLine|name=Adamant 2h sword|quantity=1|rarity=2/76}}
+{{DropsLine|name=Earth battlestaff|quantity=1|rarity=1/76}}
+{{DropsLine|name=Rune med helm|quantity=1|rarity=2/76}}
+{{DropsLine|name=Rune battleaxe|quantity=1|rarity=1/76}}
+{{DropsLine|name=Dragon dagger|quantity=1|rarity=1/76}}
+{{DropsTableBottom}}
+
+===Runes===
+{{DropsTableHead}}
+{{DropsLine|name=Fire rune|quantity=200|rarity=10/76}}
+{{DropsLine|name=Earth rune|quantity=75-150|rarity=10/76}}
+{{DropsLine|name=Soul rune|quantity=15-20|rarity=5/76}}
+{{DropsLine|name=Blood rune|quantity=25-30|rarity=5/76}}
+{{DropsTableBottom}}
+
+===Herbs===
+''Two random herbs are dropped when this herb drop table is rolled.''
+{{HerbDropTableInfo|4/76}}
+{{DropsTableHead}}
+{{HerbDropLines|4/76|1-2}}
+{{DropsTableBottom}}
+
+===Seeds===
+{{RareSeedDropTableInfo|3/76}}
+{{DropsTableHead}}
+{{RareSeedDropLines|3/76}}
+{{DropsTableBottom}}
+
+===Other===
+{{DropsTableHead}}
+{{DropsLine|name=Coins|quantity=950-1450|rarity=8/76|gemw=No}}
+{{DropsLine|name=Bass|quantity=1|rarity=7/76}}
+{{DropsLine|name=Pure essence|quantity=200-300 (noted)|rarity=3/76}}
+{{DropsLine|name=Rune arrowtips|quantity=8-12|rarity=2/76}}
+{{DropsLine|name=Adamant arrowtips|quantity=8-12|rarity=2/76}}
+{{DropsTableBottom}}
+
+===Gem drop table===
+{{GemDropTable|1/76|naturetalisman=yes}}
+
+===Tertiary===
+{{DropsTableHead}}
+{{DropsLine|name=Brimstone key|quantity=1|rarity={{Brimstone rarity|99|bonus=yes}}|raritynotes=<ref group=d>[[Brimstone key]]s are only dropped if killed on a [[Slayer task]] given by [[Konar quo Maten]].</ref>|gemw=No}}
+{{DropsLineClue|type=hard|rarity=1/256|raritynotes={{NamedRef|mun}}}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+==Combat Achievements==
+{{Sync}}
+{{Combat Achievements list|Wyrm}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 25 June 2025
+|update = Summer Sweep Up: Combat
+|change = 
+* Wyrm's [[Hitpoints]] have been reduced from 130 to 120.
+* Wyrm's [[flat armour]] has been increased from 0 to 1.
+}}
+{{Subject changes
+|date = 29 May 2024
+|update = Project Rebalance: Combat Changes
+|change = * Wyrm's heavy [[Ranged]] defence has been decreased from 20 to 10.
+* Wyrm's [[stab]] defence has been decreased from 20 to 10.
+* Wyrms now have a 50% weakness to earth spells.
+}}
+{{Subject changes
+|date = 23 May 2024
+|update = Minigame Tweaks, Skilling Adjustments & more!
+|change = The animations of wyrms has been adjusted to make them more accessible.
+}}
+{{Subject changes
+|date = 7 July 2021
+|update = Small Changes & Tweaks
+|change = Wyrms now preserve the player's attacks when switching to idle or attacking style.
+}}
+{{Subject changes
+|date = 17 October 2019
+|update = Bounty Hunter Rework Beta
+|change = Wyrm's idle form now has a more continuous click-zone to make it easier to attack.
+}}
+{{Subject changes
+|date = 14 March 2019
+|update = Updated Quest Panel, Sandstone Grinder and QoL
+|change = Wyrms no longer drop regular [[bones]] if they die in their idle form.
+}}
+{{Subject changes footer}}
+
+==Gallery==
+<gallery captionalign="center" widths="200">
+Wyrm walk animation.gif|The walking animation of a wyrm, created by [[Mod Ghost]]
+Wyrm transition animation.gif|The wyrm's transition animation
+</gallery>
+
+==Trivia==
+*{{Wp|European dragon|Wyrms}}, from the Old English word meaning "serpent", are legendary dragons in European mythology. Unlike the wyrm's in-game model, wyrms were described as legless in early Germanic sagas.
+*Being a wingless, four-legged draconic creature, the wyrm resembles depictions of the Lung or Chinese dragon
+*According to [[Juna]], wyrms took part in the [[God Wars]], and the strength of dragons pale in comparison. It is unknown who the wyrms served in the war.
+**The wyrms found today are a failed attempt by the [[dragonkin]] [[Karuulm]] at recreating the great wyrms of the past.
+
+==References==
+{{Reflist}}
+
+{{Slayer monsters}}
+{{Dragon}}

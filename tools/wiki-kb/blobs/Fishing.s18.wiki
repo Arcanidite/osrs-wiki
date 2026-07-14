@@ -1,0 +1,31 @@
+====Bare Handed Fishing====
+[[File:Barbarian Fishing (shark).gif|thumb|200px|A player catches a shark with barehanded fishing.]]
+Starting at level 55, the player can learn how to fish [[Raw tuna|tuna]], [[Raw harpoonfish|harpoonfish]], [[Raw swordfish|swordfish]], and [[Raw shark|sharks]] without a [[harpoon]]. Using this method requires a higher Fishing level as well as a Strength level equivalent to the Fishing level needed to catch the fish normally. However, it provides small amounts of Strength experience. At level 55, players can expect rates of 10,000 Fishing experience per hour, steadily increasing to 13,000 experience per hour at level 69. At level 70, catching both tuna and swordfish nets roughly 24,000 Fishing experience per hour.
+ 
+ {| class="wikitable align-center-1 align-left-2" style="text-align:right;"
+! colspan="2" rowspan="2" |Fish
+! colspan="2" |Level
+! colspan="3" |Experience
+|-
+!{{SCP|Fishing}}
+!{{SCP|Strength}}
+!{{SCP|Fishing}}
+!{{SCP|Strength}}
+!{{SCP}}
+|-
+|{{plinkt|Raw harpoonfish}}
+|55||35
+|8.5||10||18.5
+|-
+|{{plinkt|Raw tuna}}
+|55||35
+|80||8||88
+|-
+|{{plinkt|Raw swordfish}}
+|70||50
+|100||10||110
+|-
+|{{plinkt|Raw shark}}
+|96||76
+|110||11|| 121
+|}

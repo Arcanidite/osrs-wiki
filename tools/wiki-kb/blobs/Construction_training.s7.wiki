@@ -1,0 +1,6 @@
+==== Servants ====
+At level 40, hire a [[servant]] from the [[Servants' Guild]] in East [[Ardougne]] to unnote more planks. To be able to hire a servant, the player's house must have at least two [[bedroom]]s with beds constructed in each one. Using a servant is much faster than unnoting planks at Phials. This costs money, but the increased speed is well worth the extra cost.
+
+Use the [[Butler]] from level 40 to 50, and the [[Demon butler]] from level 50 onwards. Using lower-level servants is not recommended, because all other servants below the human butler are slower than manually using Phials.
+
+Servants will request a payment after 8 services completed. At lower levels, players will need to have coins in their inventory to pay them. At level 58, build the [[servant's money bag]] in one of the bedrooms and put coins in it to automatically pay the servant while they perform tasks. This also skips the dialogue of the servant requesting payment, which will save time.

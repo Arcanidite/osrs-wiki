@@ -1,0 +1,45 @@
+==Experience rates==
+Based on the rune distribution shown above, the chance of getting a specific rune is the same for 10 levels, e.g. the chance of getting a Death Rune is the exact same at level 30-39 but will increase significantly at level 40.
+
+These experience rates assume players are using a [[rune pouch]], have all of the [[essence pouch]]es available at each level, and the [[Ourania Teleport]] spell is being used. The rates are calculated under the assumption of 48s per lap, with an additional loss of 15s per hour per pouch tier unlocked due to [[NPC Contact]]. Tick-perfect rates will be marginally (~5%) higher.
+
+You may also expect roughly 4k Magic xp/hr from the [[Ourania Teleport]] and [[NPC Contact]] casts. 
+
+{| class="wikitable align-center-1 align-center-2 align-center-3 align-center-4 align-center-5"
+! rowspan="2" |{{SCP|Runecraft}} level
+! colspan="2" |XP/h
+! colspan="2" |XP/essence
+|-
+![[Pure essence|Pure]]
+![[Daeyalt essence|Daeyalt]]
+![[Pure essence|Pure]]
+![[Daeyalt essence|Daeyalt]]
+|- 
+|1–9||{{formatnum:{{#expr:9.39*29*3600/48 round 0}}}}||{{formatnum:{{#expr:1.5*9.39*29*3600/48 round 0}}}}||9.39||{{formatnum:{{#expr:1.5*9.39  round 2}}}}
+|-
+|10–19||{{formatnum:{{#expr:10.52*29*3600/48 round 0}}}}||{{formatnum:{{#expr:1.5*10.52*29*3600/48 round 0}}}}||10.52||{{formatnum:{{#expr:1.5*10.52  round 2}}}}
+|-
+|20–24||{{formatnum:{{#expr:11.34*29*3600/48 round 0}}}}||{{formatnum:{{#expr:1.5*11.34*29*3600/48 round 0}}}}||11.34||{{formatnum:{{#expr:1.5*11.34  round 2}}}}
+|-
+|25–29||{{formatnum:{{#expr:11.34*34*(3600-15)/48 round 0}}}}||{{formatnum:{{#expr:1.5*11.34*34*(3600-15)/48 round 0}}}}||11.34||{{formatnum:{{#expr:1.5*11.34  round 2}}}}
+|-
+|30–39||{{formatnum:{{#expr:12.27*34*(3600-15)/48 round 0}}}}||{{formatnum:{{#expr:1.5*12.27*34*(3600-15)/48 round 0}}}}||12.27||{{formatnum:{{#expr:1.5*12.27  round 2}}}}
+|-
+|40–49||{{formatnum:{{#expr:12.90*34*(3600-15)/48 round 0}}}}||{{formatnum:{{#expr:1.5*12.90*34*(3600-15)/48 round 0}}}}||12.90||{{formatnum:{{#expr:1.5*12.90  round 2}}}}
+|-
+|50–59||{{formatnum:{{#expr:13.47*42*(3600-30)/48 round 0}}}}||{{formatnum:{{#expr:1.5*13.47*42*(3600-30)/48 round 0}}}}||13.47||{{formatnum:{{#expr:1.5*13.47  round 2}}}}
+|-
+|60–69||{{formatnum:{{#expr:13.63*42*(3600-30)/48 round 0}}}}||{{formatnum:{{#expr:1.5*13.63*42*(3600-30)/48 round 0}}}}||13.63||{{formatnum:{{#expr:1.5*13.63  round 2}}}}
+|-
+|70–74||{{formatnum:{{#expr:14.59*42*(3600-30)/48 round 0}}}}||{{formatnum:{{#expr:1.5*14.59*42*(3600-30)/48 round 0}}}}||14.59||{{formatnum:{{#expr:1.5*14.59  round 2}}}}
+|-
+|75–79||{{formatnum:{{#expr:14.59*53*(3600-45)/48 round 0}}}}||{{formatnum:{{#expr:1.5*14.59*53*(3600-45)/48 round 0}}}}||14.59||{{formatnum:{{#expr:1.5*14.59  round 2}}}}
+|-
+|80–84||{{formatnum:{{#expr:14.90*53*(3600-45)/48 round 0}}}}||{{formatnum:{{#expr:1.5*14.90*53*(3600-45)/48 round 0}}}}||14.90||{{formatnum:{{#expr:1.5*14.90  round 2}}}}
+|-
+|85–89||{{formatnum:{{#expr:14.90*66*(3600-60)/48 round 0}}}}||{{formatnum:{{#expr:1.5*14.90*66*(3600-60)/48 round 0}}}}||14.90||{{formatnum:{{#expr:1.5*14.90  round 2}}}}
+|-
+|90–98||{{formatnum:{{#expr:15.35*66*(3600-60)/48 round 0}}}}||{{formatnum:{{#expr:1.5*15.35*66*(3600-60)/48 round 0}}}}||15.35||{{formatnum:{{#expr:1.5*15.35  round 2}}}}
+|-
+|99||{{formatnum:{{#expr:15.58*66*3600/48 round 0}}}}||{{formatnum:{{#expr:1.5*15.58*66*3600/48 round 0}}}}||15.58||{{formatnum:{{#expr:1.5*15.58  round 2}}}}
+|}

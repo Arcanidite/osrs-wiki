@@ -1,0 +1,22 @@
+{{External|rs|rsc|dw=Copper Ore}}
+{{redirect3|Copper|For the rock that copper ore is mined from, see [[copper rocks]]}}
+{{Infobox Item
+|name = Copper ore
+|image = [[File:Copper ore.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = This needs refining.
+|value = 3
+|weight = 2.267
+|exchange = Yes
+|id = 436
+}}
+[[File:Copper ore detail.png|left|130px]]
+'''Copper ore''' can be mined at level 1 [[Mining]] providing 17.5 Mining experience. After mining [[copper rocks]], it will take 2.4 seconds until it reappears. Copper ore is used with [[tin ore]] to smelt [[bronze bar]]s, or used with [[nickel ore]] to smelt [[Cupronickel bar|Cupronickel bars]]. Smelting a bronze bar gives 6.2 [[Smithing]] experience.

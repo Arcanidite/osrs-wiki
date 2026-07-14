@@ -1,0 +1,53 @@
+==Creation==
+<tabber>
+Standard= 
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 1
+|skill1exp = 6.2
+|members = No
+|ticks = 5
+|ticksnote = Make-X is 4, then 5. A single bar is 6.
+|facilities = Furnace
+|mat1 = Copper ore
+|mat2 = Tin ore
+|output1 = Bronze bar
+|output1subtxt = Normal furnace
+}}
+|-|
+Blast Furnace=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 1
+|skill1exp = 6.2
+|members = Yes
+|ticks = 11
+|ticksnote = Multiple bars are completed at once
+|facilities = Blast Furnace
+|mat1 = Copper ore
+|mat2 = Tin ore
+|output1 = Bronze bar
+|output1subtxt = Blast Furnace
+}}
+|-|
+Superheat=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 1
+|skill1boostable = Yes
+|skill1exp = 6.2
+|skill2 = Magic
+|skill2lvl = 43
+|skill2boostable = Yes
+|skill2exp = 53
+|members = No
+|ticks = 3
+|mat1 = Copper ore
+|mat2 = Tin ore
+|mat3 = Nature rune
+|mat4 = Fire rune
+|mat4quantity = 4
+|output1 = Bronze bar
+|output1subtxt = Superheat
+}}
+</tabber>

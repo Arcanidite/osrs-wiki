@@ -1,0 +1,234 @@
+==Experience costs==
+Each plank gives a specific amount of experience depending on whether it is used to build or repair something. They give less than if used in a [[player-owned house]], however the player is awarded a substantial amount of construction experience once they complete the contract. Pieces needing repairs typically include a hat stand, mirror, or range. These pieces only require one plank or bar per repair. Pieces that need to be built typically include tables, beds, dressers, cupboards, etc. Higher tier contracts will typically require more furniture to be repaired or replaced, resulting in more materials being used per contract on average.
+
+The average XP/plank values below were calculated based on crowdsourced data, which details all of the possible hotspot layouts in each difficulty tier. For more information, see [[Mahogany Homes/Mechanics]].
+
+{| class="wikitable"
+|-
+!colspan=2|Item
+!XP/Material (Build)
+!XP/Material (Repair)
+!Completion XP
+!Average XP/Plank
+!Average XP/Plank<br/>(with [[Construction outfit|Outfit]])
+|-
+|{{plinkt|Plank}}
+|22.5
+|127.5
+|500
+|{{#vardefineecho:avg_xp_plank_beginner|93.7}}
+|96.0
+|-
+|{{plinkt|Oak plank}}
+|48
+|160
+|1,250
+|{{#vardefineecho:avg_xp_plank_novice|200.0}}
+|205.0
+|-
+|{{plinkt|Teak plank}}
+|72
+|190
+|2,250
+|{{#vardefineecho:avg_xp_plank_adept|287.9}}
+|295.1
+|-
+|{{plinkt|Mahogany plank}}
+|112
+|240
+|2,750
+|{{#vardefineecho:avg_xp_plank_expert|346.1}}
+|354.8
+|-
+|{{plinkt|Steel bar}}
+| -
+|120
+| -
+| -
+| -
+|}
+
+Based on the total average experience per plank, these level milestones will take the following amount of planks '''on average'''. Expect your results to vary by ±10%. These estimates do not include the [[Construction outfit]] bonus.
+
+* Level 1 to 20 [[Construction]] will require {{#expr:ceil({{XP|20}} / {{#var:avg_xp_plank_beginner}})}} {{plink|Plank|pic=Plank|txt=Planks}}
+* Level 20 to 50 [[Construction]] will require {{#expr:ceil(({{XP|50}}-{{XP|20}}) / {{#var:avg_xp_plank_novice}})}} {{plink|Oak plank|pic=Oak plank|txt=Oak planks}}
+* Level 50 to 70 [[Construction]] will require either:
+** {{formatnum:{{#expr:ceil(({{XP|70}}-{{XP|50}}) / {{#var:avg_xp_plank_novice}})}}}} {{plink|Oak plank|pic=Oak plank|txt=Oak planks}}, or
+** {{formatnum:{{#expr:ceil(({{XP|70}}-{{XP|50}}) / {{#var:avg_xp_plank_adept}})}}}} {{plink|Teak plank|pic=Teak plank|txt=Teak planks}}
+* Level 70 to 83 [[Construction]] (a common goal for the [[Ornate jewellery box]]) will require either:
+** {{formatnum:{{#expr:ceil(({{XP|83}}-{{XP|70}}) / {{#var:avg_xp_plank_novice}})}}}} {{plink|Oak plank|pic=Oak plank|txt=Oak planks}}, or
+** {{formatnum:{{#expr:ceil(({{XP|83}}-{{XP|70}}) / {{#var:avg_xp_plank_adept}})}}}} {{plink|Teak plank|pic=Teak plank|txt=Teak planks}}, or
+** {{formatnum:{{#expr:ceil(({{XP|83}}-{{XP|70}}) / {{#var:avg_xp_plank_expert}})}}}} {{plink|Mahogany plank|pic=Mahogany plank|txt=Mahogany planks}}
+* Level 83 to 99 [[Construction]] will require either:
+** {{formatnum:{{#expr:ceil(({{XP|99}}-{{XP|83}}) / {{#var:avg_xp_plank_novice}})}}}} {{plink|Oak plank|pic=Oak plank|txt=Oak planks}}, or
+** {{formatnum:{{#expr:ceil(({{XP|99}}-{{XP|83}}) / {{#var:avg_xp_plank_adept}})}}}} {{plink|Teak plank|pic=Teak plank|txt=Teak planks}}, or
+** {{formatnum:{{#expr:ceil(({{XP|99}}-{{XP|83}}) / {{#var:avg_xp_plank_expert}})}}}} {{plink|Mahogany plank|pic=Mahogany plank|txt=Mahogany planks}}
+
+The average costs and experience '''per contract''' are listed below. These values were calculated from crowdsourced data to determine all possible contract layouts. For more information, see [[Mahogany Homes/Mechanics]].
+{{Var|avg_planks_beginner|10.06}}{{Var|avg_planks_novice|10.09}}{{Var|avg_planks_adept|11.63}}{{Var|avg_planks_expert|12.85}}{{Var|avg_bars_beginner|0.40}}{{Var|avg_bars_novice|0.40}}{{Var|avg_bars_adept|0.49}}{{Var|avg_bars_expert|0.52}}{{Var|avg_xp_beginner|879.3}}{{Var|avg_xp_novice|1894.1}}{{Var|avg_xp_adept|3260.2}}{{Var|avg_xp_expert|4378.8}}{{Var|avg_xp_outfit_beginner|901.3}}{{Var|avg_xp_outfit_novice|1941.5}}{{Var|avg_xp_outfit_adept|3341.7}}{{Var|avg_xp_outfit_expert|4488.3}}{{Var|sawmill_cost_plank|100}}{{Var|sawmill_cost_oak|250}}{{Var|sawmill_cost_teak|500}}{{Var|sawmill_cost_mahog|1500}}{{Var|butler_cost_per_plank|48.07}}
+<tabber>
+|-|Grand Exchange=
+The costs below assume that you will buy all of your [[planks]] and [[steel bar]]s from the [[Grand Exchange]].
+
+{| class="wikitable"
+! Tier !!colspan=2| Item
+! Average planks<br/>(per contract)
+! Average<br/>{{plink|Steel bar}}
+! Average cost<br/>(per contract)
+! Average xp<br/>(per contract)
+! GP/xp
+! Average xp<br/>([[Construction outfit|Outfit]])
+! GP/xp<br/>(with [[Construction outfit|Outfit]])
+|-
+| '''Beginner'''
+| {{plinkt|Plank}}
+| {{#var:avg_planks_beginner}}
+| {{#var:avg_bars_beginner}}
+| {{Coins|-({{GEP|Plank}}*{{#var:avg_planks_beginner}}+{{GEP|Steel bar}}*{{#var:avg_bars_beginner}}) round 0}}
+| {{#var:avg_xp_beginner}}
+| {{Coins|-({{GEP|Plank}}*{{#var:avg_planks_beginner}}+{{GEP|Steel bar}}*{{#var:avg_bars_beginner}}) / {{#var:avg_xp_beginner}} round 2}}
+| {{#var:avg_xp_outfit_beginner}}
+| {{Coins|-({{GEP|Plank}}*{{#var:avg_planks_beginner}}+{{GEP|Steel bar}}*{{#var:avg_bars_beginner}}) / {{#var:avg_xp_outfit_beginner}} round 2}}
+|-
+| '''Novice'''
+| {{plinkt|Oak plank}}
+| {{#var:avg_planks_novice}}
+| {{#var:avg_bars_novice}}
+| {{Coins|-({{GEP|Oak plank}}*{{#var:avg_planks_novice}}+{{GEP|Steel bar}}*{{#var:avg_bars_novice}}) round 0}}
+| {{#var:avg_xp_novice}}
+| {{Coins|-({{GEP|Oak plank}}*{{#var:avg_planks_novice}}+{{GEP|Steel bar}}*{{#var:avg_bars_novice}}) / {{#var:avg_xp_novice}} round 2}}
+| {{#var:avg_xp_outfit_novice}}
+| {{Coins|-({{GEP|Oak plank}}*{{#var:avg_planks_novice}}+{{GEP|Steel bar}}*{{#var:avg_bars_novice}}) / {{#var:avg_xp_outfit_novice}} round 2}}
+|-
+| '''Adept'''
+| {{plinkt|Teak plank}}
+| {{#var:avg_planks_adept}}
+| {{#var:avg_bars_adept}}
+| {{Coins|-({{GEP|Teak plank}}*{{#var:avg_planks_adept}}+{{GEP|Steel bar}}*{{#var:avg_bars_adept}}) round 0}}
+| {{#var:avg_xp_adept}}
+| {{Coins|-({{GEP|Teak plank}}*{{#var:avg_planks_adept}}+{{GEP|Steel bar}}*{{#var:avg_bars_adept}}) / {{#var:avg_xp_adept}} round 2}}
+| {{#var:avg_xp_outfit_adept}}
+| {{Coins|-({{GEP|Teak plank}}*{{#var:avg_planks_adept}}+{{GEP|Steel bar}}*{{#var:avg_bars_adept}}) / {{#var:avg_xp_outfit_adept}} round 2}}
+|-
+| '''Expert'''
+| {{plinkt|Mahogany plank}}
+| {{#var:avg_planks_expert}}
+| {{#var:avg_bars_expert}}
+| {{Coins|-({{GEP|Mahogany plank}}*{{#var:avg_planks_expert}}+{{GEP|Steel bar}}*{{#var:avg_bars_expert}}) round 0}}
+| {{#var:avg_xp_expert}}
+| {{Coins|-({{GEP|Mahogany plank}}*{{#var:avg_planks_expert}}+{{GEP|Steel bar}}*{{#var:avg_bars_expert}}) / {{#var:avg_xp_expert}} round 2}}
+| {{#var:avg_xp_outfit_expert}}
+| {{Coins|-({{GEP|Mahogany plank}}*{{#var:avg_planks_expert}}+{{GEP|Steel bar}}*{{#var:avg_bars_expert}}) / {{#var:avg_xp_outfit_expert}} round 2}}
+|}
+|-|Sawmill + Demon Butler=
+The costs below assume that you will pay your [[Demon butler]] to run all of your [[planks]] to the [[Sawmill]].<br/>
+This assumes you give the butler 26 planks per trip, which means you will pay him {{NoCoins|-{{#var:butler_cost_per_plank}}}} per plank.<br/>
+These costs do not include the price of [[steel bar]]s. Include an additional ~5-10% cost if you plan on buying your ores from the [[Blast Furnace]].
+
+{| class="wikitable"
+|-
+! Tier !!colspan=2| Item
+! Average planks<br/>(per contract)
+! Average<br/>{{plink|Steel bar}}
+! Average cost<br/>(per contract)
+! Average xp<br/>(per contract)
+! GP/xp
+! Average xp<br/>([[Construction outfit|Outfit]])
+! GP/xp<br/>(with [[Construction outfit|Outfit]])
+|-
+| '''Beginner'''
+| {{plinkt|Plank}}
+| {{#var:avg_planks_beginner}}
+| {{#var:avg_bars_beginner}}
+| {{Coins|-(({{#var:sawmill_cost_plank}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_beginner}}) round 0}}
+| {{#var:avg_xp_beginner}}
+| {{Coins|-(({{#var:sawmill_cost_plank}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_beginner}}) / {{#var:avg_xp_beginner}} round 2}}
+| {{#var:avg_xp_outfit_beginner}}
+| {{Coins|-(({{#var:sawmill_cost_plank}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_beginner}}) / {{#var:avg_xp_outfit_beginner}} round 2}}
+|-
+| '''Novice'''
+| {{plinkt|Oak plank}}
+| {{#var:avg_planks_novice}}
+| {{#var:avg_bars_novice}}
+| {{Coins|-(({{#var:sawmill_cost_oak}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_novice}}) round 0}}
+| {{#var:avg_xp_novice}}
+| {{Coins|-(({{#var:sawmill_cost_oak}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_novice}}) / {{#var:avg_xp_novice}} round 2}}
+| {{#var:avg_xp_outfit_novice}}
+| {{Coins|-(({{#var:sawmill_cost_oak}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_novice}}) / {{#var:avg_xp_outfit_novice}} round 2}}
+|-
+| '''Adept'''
+| {{plinkt|Teak plank}}
+| {{#var:avg_planks_adept}}
+| {{#var:avg_bars_adept}}
+| {{Coins|-(({{#var:sawmill_cost_teak}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_adept}}) round 0}}
+| {{#var:avg_xp_adept}}
+| {{Coins|-(({{#var:sawmill_cost_teak}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_adept}}) / {{#var:avg_xp_adept}} round 2}}
+| {{#var:avg_xp_outfit_adept}}
+| {{Coins|-(({{#var:sawmill_cost_teak}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_adept}}) / {{#var:avg_xp_outfit_adept}} round 2}}
+|-
+| '''Expert'''
+| {{plinkt|Mahogany plank}}
+| {{#var:avg_planks_expert}}
+| {{#var:avg_bars_expert}}
+| {{Coins|-(({{#var:sawmill_cost_mahog}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_expert}}) round 0}}
+| {{#var:avg_xp_expert}}
+| {{Coins|-(({{#var:sawmill_cost_mahog}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_expert}}) / {{#var:avg_xp_expert}} round 2}}
+| {{#var:avg_xp_outfit_expert}}
+| {{Coins|-(({{#var:sawmill_cost_mahog}}+{{#var:butler_cost_per_plank}})*{{#var:avg_planks_expert}}) / {{#var:avg_xp_outfit_expert}} round 2}}
+|}
+|-|Sawmill only=
+The costs below assume that you will run all of your [[planks]] to the [[Sawmill]].<br/>
+These costs do not include the price of [[steel bar]]s. Include an additional ~5-10% cost if you plan on buying your ores from the [[Blast Furnace]].
+
+{| class="wikitable"
+|-
+! Tier !!colspan=2| Item
+! Average planks<br/>(per contract)
+! Average<br/>{{plink|Steel bar}}
+! Average cost<br/>(per contract)
+! Average xp<br/>(per contract)
+! GP/xp
+! Average xp<br/>([[Construction outfit|Outfit]])
+! GP/xp<br/>(with [[Construction outfit|Outfit]])
+|-
+| '''Beginner'''
+| {{plinkt|Plank}}
+| {{#var:avg_planks_beginner}}
+| {{#var:avg_bars_beginner}}
+| {{Coins|-({{#var:sawmill_cost_plank}}*{{#var:avg_planks_beginner}}) round 0}}
+| {{#var:avg_xp_beginner}}
+| {{Coins|-({{#var:sawmill_cost_plank}}*{{#var:avg_planks_beginner}}) / {{#var:avg_xp_beginner}} round 2}}
+| {{#var:avg_xp_outfit_beginner}}
+| {{Coins|-({{#var:sawmill_cost_plank}}*{{#var:avg_planks_beginner}}) / {{#var:avg_xp_outfit_beginner}} round 2}}
+|-
+| '''Novice'''
+| {{plinkt|Oak plank}}
+| {{#var:avg_planks_novice}}
+| {{#var:avg_bars_novice}}
+| {{Coins|-({{#var:sawmill_cost_oak}}*{{#var:avg_planks_novice}}) round 0}}
+| {{#var:avg_xp_novice}}
+| {{Coins|-({{#var:sawmill_cost_oak}}*{{#var:avg_planks_novice}}) / {{#var:avg_xp_novice}} round 2}}
+| {{#var:avg_xp_outfit_novice}}
+| {{Coins|-({{#var:sawmill_cost_oak}}*{{#var:avg_planks_novice}}) / {{#var:avg_xp_outfit_novice}} round 2}}
+|-
+| '''Adept'''
+| {{plinkt|Teak plank}}
+| {{#var:avg_planks_adept}}
+| {{#var:avg_bars_adept}}
+| {{Coins|-({{#var:sawmill_cost_teak}}*{{#var:avg_planks_adept}}) round 0}}
+| {{#var:avg_xp_adept}}
+| {{Coins|-({{#var:sawmill_cost_teak}}*{{#var:avg_planks_adept}}) / {{#var:avg_xp_adept}} round 2}}
+| {{#var:avg_xp_outfit_adept}}
+| {{Coins|-({{#var:sawmill_cost_teak}}*{{#var:avg_planks_adept}}) / {{#var:avg_xp_outfit_adept}} round 2}}
+|-
+| '''Expert'''
+| {{plinkt|Mahogany plank}}
+| {{#var:avg_planks_expert}}
+| {{#var:avg_bars_expert}}
+| {{Coins|-({{#var:sawmill_cost_mahog}}*{{#var:avg_planks_expert}}) round 0}}
+| {{#var:avg_xp_expert}}
+| {{Coins|-({{#var:sawmill_cost_mahog}}*{{#var:avg_planks_expert}}) / {{#var:avg_xp_expert}} round 2}}
+| {{#var:avg_xp_outfit_expert}}
+| {{Coins|-({{#var:sawmill_cost_mahog}}*{{#var:avg_planks_expert}}) / {{#var:avg_xp_outfit_expert}} round 2}}
+|}
+</tabber>

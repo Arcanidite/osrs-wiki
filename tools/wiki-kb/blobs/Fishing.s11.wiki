@@ -1,0 +1,77 @@
+===Harpoon===
+[[File:Harpooning.png|thumb|300px|This player is using a [[harpoon]] to fish.]]
+[[Harpoon]]s are required for mid and high level [[fish]]. Harpoons can only be used in the seas. When a player has found a [[fishing spot]], they can then use their harpoon if the option "harpoon fishing spot" is available. [[raw swordfish|Swordfish]] and [[raw tuna|tuna]] are caught in cage/harpoon fishing spots, while [[raw shark|sharks]] are caught in net/harpoon spots.
+
+There are five types of harpoons - the regular harpoon, the [[barb-tail harpoon]], the [[dragon harpoon]], the [[infernal harpoon]], and the [[crystal harpoon]]. The dragon harpoon and infernal harpoon both have a 20% faster catch rate than the regular harpoon, and the crystal harpoon has a 35% faster catch rate. The barb-tail harpoon, dragon harpoon, infernal harpoon, and crystal harpoon can all be wielded. Many players prefer these harpoons as it saves an [[inventory]] space.
+
+After being taught by [[Otto Godblessed]], a player can catch fish that are harpoonable with just their hands. The Fishing level requirement is 20 levels higher and it also requires a [[Strength]] level equal to the Fishing level needed to catch the fish normally, but a small amount of strength experience is gained and the player doesn't need a harpoon equipped or in their inventory.
+
+{| class="wikitable sortable"
+!colspan="2"|Equipment
+!Level
+!Members
+|-
+|{{Plinkt|Harpoon}}
+|{{SCP|Fishing|35}}
+|{{Members|No}}
+|-
+|{{Plinkt|Barb-tail harpoon}}
+|{{SCP|Hunter|33}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Dragon harpoon}}
+|{{SCP|Fishing|61}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Infernal harpoon}}
+|{{SCP|Fishing|75}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Crystal harpoon}}
+|{{SCP|Fishing|71}}
+|{{Members|Yes}}
+|-
+|}
+
+====Lantern harpooning====
+{{Main|Lantern harpooning}}
+A lit lantern and a harpoon are required to fish at specific [[Fishing_spot_(lantern)|lantern harpooning fishing spots]], only accessible with the [[Sailing]] skill, to catch [[raw swordtip squid|swordtip squid]] and [[raw jumbo squid|jumbo squid]]. A minimum Sailing level of {{SCP|Sailing|47}} is required, enabling access to the spots at [[The Onyx Crest]].
+
+Of the available lanterns, the [[bug lantern]] and [[abyssal lantern]] may be preferable, as they can be wielded to save an inventory space.
+
+In addition to being able to be cooked for food or cut for offcuts like most fish, raw squid may also be [[pestle and mortar|crushed]] for [[squid paste]], and cutting raw squid can rarely produce a [[squid beak]] in addition to the offcuts.
+
+{| class="wikitable sortable"
+!colspan="2"|Equipment
+!Level
+!Members
+|-
+|{{Plinkt|Candle lantern|pic=Candle lantern (lit white)}}
+|{{SCP|Fishing|52}} {{SCP|Firemaking|4}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Oil lantern|pic=Oil lantern (lit)}}
+|{{SCP|Fishing|52}} {{SCP|Firemaking|26}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Bug lantern|pic=Lit bug lantern}}
+|{{SCP|Fishing|52}} {{SCP|Firemaking|33}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Bullseye lantern|pic=Bullseye lantern (lit)}}
+|{{SCP|Fishing|52}} {{SCP|Firemaking|49}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Sapphire lantern|pic=Sapphire lantern (lit)}}
+|{{SCP|Fishing|52}} {{SCP|Firemaking|49}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Emerald lantern|pic=Emerald lantern (lit)}}
+|{{SCP|Fishing|52}} {{SCP|Firemaking|49}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Abyssal lantern|pic=Abyssal lantern (normal logs)}}
+|{{SCP|Fishing|52}} {{SCP|Runecraft|10}}
+|{{Members|Yes}}
+|-
+|}

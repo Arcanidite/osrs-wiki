@@ -1,0 +1,58 @@
+==Experience rates==
+
+The below only accounts for the cost of materials and does not include the cost of runes or teleports.
+{| class="wikitable"
+!Tier
+!Estimated XP/hr
+!Estimated XP/hr
+(plank sack)
+!Planks/hr
+!Planks/hr
+(plank sack)
+!Bars/hr
+!Estimated GP/hr
+!Estimated GP/hr
+(plank sack)
+|-
+|Beginner
+|30,000–35,000
+|35,000–40,000
+|350–400
+|375–425
+|~18
+|{{Coins|-({{GEP|Plank|375}} + {{GEP|Steel bar|18}})}}
+|{{Coins|-({{GEP|Plank|400}} + {{GEP|Steel bar|18}})}}
+|-
+|Novice
+|65,000–75,000
+|75,000–85,000
+|375–425
+|425–475
+|~22
+|{{Coins|-({{GEP|Oak plank|400}} + {{GEP|Steel bar|22}})}}
+|{{Coins|-({{GEP|Oak plank|450}} + {{GEP|Steel bar|22}})}}
+|-
+|Adept
+|130,000–150,000
+|155,000–200,000
+|475–520
+|565–700
+|~36
+|{{Coins|-({{GEP|Teak plank|425}} + {{GEP|Steel bar|23}})}}
+|{{Coins|-({{GEP|Teak plank|475}} + {{GEP|Steel bar|23}})}}
+|-
+|Expert
+|165,000–190,000
+|190,000–270,000
+|425–500
+|535–760
+|~27-38
+|{{Coins|-({{GEP|Mahogany plank|463}} + {{GEP|Steel bar|25}})}}
+|{{Coins|-({{GEP|Mahogany plank|760}} + {{GEP|Steel bar|38}})}}
+|}
+
+With high focus and efficient use of [[teleport]]s, as well as the [[NPC Contact]] spell from the [[Lunar spellbook]], one can expect up to 20-30% greater experience rates than mentioned above. Experience rates per hour can increase when using a [[plank sack]] due to less time spent banking. Its use in conjunction with NPC Contact can also increase the chance of being able to do two consecutive contracts located very close to each other, thus significantly decreasing downtime between contracts. When using the [[Carpenter's outfit]], players may be able to achieve up to 280,000 [[Construction]] experience per hour depending on their efficiency.
+
+With sufficient funds, starting at as low as level 67 Construction (with a +5 [[spicy stew]] boost to build a [[Portal nexus|Portal Nexus]] room) players have access to one of the most effective strategies for teleporting to each location for Mahogany Homes contracts. A Portal Nexus with a [[Mounted xeric's talisman|mounted Xeric's talisman]] and a [[marble portal nexus]] (configured with teleports to [[Varrock]], [[Falador]] and [[Ardougne]]) allows players to effectively teleport to the vicinity of each [[Mahogany Homes#Contract locations|Mahogany Homes location]] with just a [[Teleport to house (tablet)|house teleport tablet]]. Combining this with NPC Contact and the Carpenter's outfit should result in close to maximum efficiency. Pieces of the outfit may be substituted with those of the [[Graceful outfit]].
+
+A similar alternative at lower Construction and [[Magic]] levels (minimum 51 Magic for [[Ardougne Teleport]], no NPC Contact or Lunar spellbook access), and/or without a mounted Xeric's talisman, one could consider moving their player-owned house to [[Hosidius]] and using a [[rune pouch]] filled with [[Law rune|law]], [[Dust rune|dust]] and [[Steam rune|steam runes]] (or, alternatively, using elemental runes and/or a relevant [[combination battlestaff]]). This effectively allows teleporting to each contract location, as the Hosidius house portal is located south of the contract locations in the Hosidius area. [[Amy]] is close to the Falador teleport, and is close to a bank herself, which can be useful for obtaining new contracts and resupplying using this method.

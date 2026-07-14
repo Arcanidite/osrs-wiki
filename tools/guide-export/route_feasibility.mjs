@@ -39,14 +39,21 @@ const ROUTE = process.argv[2] && !process.argv[2].startsWith('--')
 const AT = (i => i >= 0 ? process.argv[i + 1] : null)(process.argv.indexOf('--at'));
 const JSON_OUT = process.argv.includes('--json');
 
-const BANKS = [
+// steps_origin.jsonl added (state-consolidation pass, 2026-07-14): the
+// character-creation/Tutorial-Island prefix (ori-t-*) lives in its own
+// sidecar (plan-origin.mjs) and was never joined here, so those ~24 steps
+// silently fell into the bankless/synthetic path (condGrants-only, no
+// reqs/produces/consumes checked). They're all reqs:{} in practice so this
+// adds coverage without introducing faults — verified empirically (still 0).
+export const BANKS = [
   'assets/data/tools/steps.jsonl',
   'assets/data/tools/steps_oppgran.jsonl',
   'assets/data/tools/steps_quests.jsonl',
   'assets/data/tools/steps_quest_atoms.jsonl',
+  'assets/data/tools/steps_origin.jsonl',
 ].map(p => '/home/lemon/osrs-wiki/' + p);
 
-function loadBank() {
+export function loadBank() {
   const bank = new Map();
   for (const f of BANKS) {
     if (!fs.existsSync(f)) continue;
@@ -58,11 +65,11 @@ function loadBank() {
   }
   return bank;
 }
-const routeSteps = () => JSON.parse(fs.readFileSync(ROUTE, 'utf8')).steps || [];
+export const routeSteps = (route = ROUTE) => JSON.parse(fs.readFileSync(route, 'utf8')).steps || [];
 
 // XP curve — same anchors as assets/js/world/xp.js / enrich.py _build_xp_table.
-const MAX_LEVEL = 99;
-const XP_TABLE = (() => {
+export const MAX_LEVEL = 99;
+export const XP_TABLE = (() => {
   const t = [0, 0]; let pts = 0;
   for (let lvl = 1; lvl < MAX_LEVEL; lvl++) {
     pts += Math.floor(lvl + 300 * 2 ** (lvl / 7));
@@ -70,15 +77,15 @@ const XP_TABLE = (() => {
   }
   return t;
 })();
-const xpForLevel = l => XP_TABLE[Math.max(1, Math.min(MAX_LEVEL, l | 0))];
-function levelForXp(xp) {
+export const xpForLevel = l => XP_TABLE[Math.max(1, Math.min(MAX_LEVEL, l | 0))];
+export function levelForXp(xp) {
   let l = 1;
   while (l < MAX_LEVEL && xp >= XP_TABLE[l + 1]) l++;
   return l;
 }
 
 // grants.skills OR grants{skill:lvl}; the band's atom.until.skill also grants that level
-function skillGrants(step) {
+export function skillGrants(step) {
   const g = step.grants || {};
   const out = { ...(g.skills || {}) };
   if (!g.skills) for (const [k, v] of Object.entries(g)) if (typeof v === 'number') out[k] = v;
@@ -88,24 +95,24 @@ function skillGrants(step) {
 }
 // Bankless (per-route synthesized) steps: SKILL completionConditions are the fixture-side
 // mirror of grants (enrich.py _train_step) — the only requisite data such a step has.
-function condGrants(routeStep) {
+export function condGrants(routeStep) {
   const out = {};
   for (const c of routeStep.completionConditions || [])
     if (c.type === 'SKILL' && c.skill && typeof c.level === 'number')
       out[c.skill.toLowerCase()] = c.level;
   return out;
 }
-const isQuest = step => (step.tags || []).includes('quest') || step.kind === 'quest';
-function effLevel(state, sk) {
+export const isQuest = step => (step.tags || []).includes('quest') || step.kind === 'quest';
+export function effLevel(state, sk) {
   const base = state.skills[sk] || 1;
   const xp = state.xp[sk] || 0;
   if (!xp) return base;
   return Math.max(base, levelForXp(xpForLevel(base) + xp));
 }
-const itemHeld = (state, cls) =>
+export const itemHeld = (state, cls) =>
   [...state.items].some(k => k === cls || k.startsWith(cls + '_'));
 
-function apply(state, step) {
+export function apply(state, step) {
   for (const [sk, lvl] of Object.entries(skillGrants(step)))
     if (typeof lvl === 'number') state.skills[sk] = Math.max(state.skills[sk] || 1, lvl);
   if (isQuest(step)) {
@@ -118,7 +125,7 @@ function apply(state, step) {
   for (const t of (step.grants && step.grants.tags) || []) state.unlocks.add(t);
   for (const t of step.tags || []) if (/unlock|access|gate/i.test(t)) state.unlocks.add(t);
 }
-function unmetReqs(state, step) {
+export function unmetReqs(state, step) {
   const u = [], r = step.reqs || {};
   for (const [sk, lvl] of Object.entries(r.skills || {})) {
     const eff = effLevel(state, sk);
@@ -128,40 +135,46 @@ function unmetReqs(state, step) {
   for (const it of r.items || []) { const n = typeof it === 'string' ? it : it.item; if (n && !itemHeld(state, n)) u.push(`item ${n} not held`); }
   return u;
 }
+export const newState = () => ({ skills: {}, xp: {}, quests: new Set(), items: new Set(), unlocks: new Set() });
 
-const bank = loadBank();
-const steps = routeSteps();
-const state = { skills: {}, xp: {}, quests: new Set(), items: new Set(), unlocks: new Set() };
-const faults = [];
-let inBank = 0;
-for (let i = 0; i < steps.length; i++) {
-  const id = steps[i].id;
-  const step = bank.get(id);
-  if (AT && id === AT) {
-    console.log(`state ACCUMULATED before [${i}] ${AT}:`);
-    const eff = Object.fromEntries(Object.keys({ ...state.skills, ...state.xp })
-      .map(k => [k, effLevel(state, k)]));
-    console.log('  skills (effective, quest XP folded):', JSON.stringify(eff));
-    console.log('  quests:', state.quests.size, '| items:', state.items.size, '| unlocks:', [...state.unlocks].slice(0, 12));
-    if (step) { const u = unmetReqs(state, step); console.log('  VERDICT:', u.length ? 'INFEASIBLE — ' + u.join('; ') : 'FEASIBLE'); }
-    else console.log('  (step not in requisite bank — synthetic/checkpoint; SKILL conds credit as grants)');
-    process.exit(0);
+// CLI entrypoint — guarded so state_scan.mjs (and any other importer) can
+// reuse every helper above without triggering this script's own stdout/exit.
+const isMain = process.argv[1] && import.meta.url === `file://${process.argv[1]}`;
+if (isMain) {
+  const bank = loadBank();
+  const steps = routeSteps();
+  const state = newState();
+  const faults = [];
+  let inBank = 0;
+  for (let i = 0; i < steps.length; i++) {
+    const id = steps[i].id;
+    const step = bank.get(id);
+    if (AT && id === AT) {
+      console.log(`state ACCUMULATED before [${i}] ${AT}:`);
+      const eff = Object.fromEntries(Object.keys({ ...state.skills, ...state.xp })
+        .map(k => [k, effLevel(state, k)]));
+      console.log('  skills (effective, quest XP folded):', JSON.stringify(eff));
+      console.log('  quests:', state.quests.size, '| items:', state.items.size, '| unlocks:', [...state.unlocks].slice(0, 12));
+      if (step) { const u = unmetReqs(state, step); console.log('  VERDICT:', u.length ? 'INFEASIBLE — ' + u.join('; ') : 'FEASIBLE'); }
+      else console.log('  (step not in requisite bank — synthetic/checkpoint; SKILL conds credit as grants)');
+      process.exit(0);
+    }
+    if (!step) {
+      for (const [sk, lvl] of Object.entries(condGrants(steps[i])))
+        state.skills[sk] = Math.max(state.skills[sk] || 1, lvl);
+      continue;
+    }
+    inBank++;
+    const u = unmetReqs(state, step);
+    if (u.length) faults.push({ i, id, unmet: u });
+    apply(state, step);
   }
-  if (!step) {
-    for (const [sk, lvl] of Object.entries(condGrants(steps[i])))
-      state.skills[sk] = Math.max(state.skills[sk] || 1, lvl);
-    continue;
-  }
-  inBank++;
-  const u = unmetReqs(state, step);
-  if (u.length) faults.push({ i, id, unmet: u });
-  apply(state, step);
+
+  if (JSON_OUT) { console.log(JSON.stringify({ total: steps.length, inBank, faults }, null, 1)); process.exit(faults.length ? 1 : 0); }
+  console.log(`route ${ROUTE.split('/').pop()}: ${steps.length} steps | ${inBank} have requisites in bank | INFEASIBLE-at-position: ${faults.length}`);
+  console.log(`accumulated by end: ${Object.keys(state.skills).length} skills, ${state.quests.size} quests, ${state.items.size} item-types`);
+  console.log('\n=== FAULTS (step requires something the accumulated state lacks at its position) ===');
+  for (const f of faults.slice(0, 50)) console.log(`  [${f.i}] ${f.id}\n        NEED: ${f.unmet.join('; ')}`);
+  if (faults.length > 50) console.log(`  ... +${faults.length - 50} more`);
+  process.exit(faults.length ? 1 : 0);
 }
-
-if (JSON_OUT) { console.log(JSON.stringify({ total: steps.length, inBank, faults }, null, 1)); process.exit(faults.length ? 1 : 0); }
-console.log(`route ${ROUTE.split('/').pop()}: ${steps.length} steps | ${inBank} have requisites in bank | INFEASIBLE-at-position: ${faults.length}`);
-console.log(`accumulated by end: ${Object.keys(state.skills).length} skills, ${state.quests.size} quests, ${state.items.size} item-types`);
-console.log('\n=== FAULTS (step requires something the accumulated state lacks at its position) ===');
-for (const f of faults.slice(0, 50)) console.log(`  [${f.i}] ${f.id}\n        NEED: ${f.unmet.join('; ')}`);
-if (faults.length > 50) console.log(`  ... +${faults.length - 50} more`);
-process.exit(faults.length ? 1 : 0);

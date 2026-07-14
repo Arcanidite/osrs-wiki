@@ -1,0 +1,433 @@
+==Gameplay==
+Mastering Mixology involves refining herbs into their basic elements and using the resulting pastes to brew potions based on the order given.
+
+===Refining herbs===
+To begin, refine herbs into [[Mox paste|mox]], [[Lye paste|lye]], and [[aga paste]]. To do so, put clean herbs or the corresponding unfinished potions into the [[refiner]], located next to the bank chest in the south-east of the facility. This process happens automatically every 2 [[ticks]], but the pace can be doubled by clicking the refiner every tick. Depositing herbs or unfinished potions will also give the player 6 [[Herblore]] experience per item.
+
+Approximately 2,750 herbs can be processed per hour for 16,500 Herblore xp when processing passively. This rate can be nearly doubled by actively clicking.
+
+Add the paste to the [[Hopper (Mastering Mixology)|hopper]] located next to the levers. The hopper can hold up to 3,000 of each paste at a time.
+
+{{#switch:{{Min|{{GEP|Guam leaf}}/10 | {{GEP|Marrentill}}/13 | {{GEP|Tarromin}}/15 | {{GEP|Harralander}}/20}}|{{#expr:{{GEP|Guam leaf}}/10}} = {{#vardefine:input|Guam}}{{#vardefine:price|{{GEP|Guam leaf}}/10}}|{{#expr:{{GEP|Marrentill}}/13}} = {{#vardefine:input|Marrentill}}{{#vardefine:price|{{GEP|Marrentill}}/13}}|{{#expr:{{GEP|Tarromin}}/15}} = {{#vardefine:input|Tarromin }}{{#vardefine:price|{{GEP|Tarromin}}/15}}|{{#expr:{{GEP|Harralander}}/20}} = {{#vardefine:input|Harralander}}{{#vardefine:price|{{GEP|Harralander}}/20}}}}The most economical clean herbs to use are [[{{#var:input}}]] at {{NoCoins|{{#var:price}}|c}} per [[mox paste]], 
+{{#switch:{{Min|{{GEP|Irit leaf}}/30 | {{GEP|Huasca}}/20 | {{GEP|Cadantine}}/34 | {{GEP|Lantadyme}}/40 | {{GEP|Dwarf weed}}/42 | {{GEP|Torstol}}/44}}|{{#expr:{{GEP|Irit leaf}}/30}} = {{#vardefine:input|Irit leaf}}{{#vardefine:price|{{GEP|Irit leaf}}/30}}|{{#expr:{{GEP|Huasca}}/20 }}= {{#vardefine:input|Huasca}}{{#vardefine:price|{{GEP|Huasca}}/20}}|{{#expr:{{GEP|Cadantine}}/34}} = {{#vardefine:input|Cadantine}}{{#vardefine:price|{{GEP|Cadantine}}/34}}|{{#expr:{{GEP|Lantadyme}}/40 }}= {{#vardefine:input|Lantadyme}}{{#vardefine:price|{{GEP|Lantadyme}}/40}}|{{#expr:{{GEP|Dwarf weed}}/42}} = {{#vardefine:input|Dwarf weed}}{{#vardefine:price|{{GEP|Dwarf weed}}/42}}|{{#expr:{{GEP|Torstol}}/44 }}= {{#vardefine:input|Torstol}}{{#vardefine:price|{{GEP|Torstol}}/44}}}}[[{{#var:input}}]] at {{NoCoins|{{#var:price}}|c}} per [[aga paste]], and 
+{{#switch:{{Min|{{GEP|Ranarr weed}}/26 | {{GEP|Toadflax}}/32 | {{GEP|Avantoe}}/30 | {{GEP|Kwuarm}}/33 | {{GEP|Snapdragon}}/40}}|{{#expr:{{GEP|Ranarr weed}}/26}} = {{#vardefine:input|Ranarr weed}}{{#vardefine:price|{{GEP|Ranarr weed}}/26}}|{{#expr:{{GEP|Toadflax}}/32}} = {{#vardefine:input|Toadflax}}{{#vardefine:price|{{GEP|Toadflax}}/32}}|{{#expr:{{GEP|Avantoe}}/30 }}= {{#vardefine:input|Avantoe}}{{#vardefine:price|{{GEP|Avantoe}}/30}}|{{#expr:{{GEP|Kwuarm}}/33 }}= {{#vardefine:input|Kwuarm}}{{#vardefine:price|{{GEP|Kwuarm}}/33}}|{{#expr:{{GEP|Snapdragon}}/40 }}= {{#vardefine:input|Snapdragon}}{{#vardefine:price|{{GEP|Snapdragon}}/40}}}}[[{{#var:input}}]] at {{NoCoins|{{#var:price}}|c}} per [[lye paste]].
+
+Grimy herbs are typically cheaper and in greater supply than their cleaned counterpart, but cannot be used in mixology until cleaned.
+
+{| class="wikitable sortable align-center-1 align-center-4 align-right-5 align-right-6 lighttable selectable"
+! rowspan="2" colspan="2" |Herb
+! colspan="2" |Paste
+! colspan="3" |Cost/paste
+|-
+!Type
+!Qty
+!Herb
+!(unf)
+!Grimy
+|-
+| {{plinkt|Guam leaf}}
+| {{plink|Mox paste|txt=Mox}}
+| 10
+| {{Coins|{{GEP|Guam leaf}}/10}}
+| {{Coins|{{GEP|Guam potion (unf)}}/10}}
+| {{Coins|{{GEP|Grimy guam leaf}}/10}}
+|-
+| {{plinkt|Marrentill}}
+| {{plink|Mox paste|txt=Mox}}
+|13
+| {{Coins|{{GEP|Marrentill}}/13}}
+| {{Coins|{{GEP|Marrentill potion (unf)}}/13}}
+| {{Coins|{{GEP|Grimy marrentill}}/13}}
+|-
+| {{plinkt|Tarromin}}
+| {{plink|Mox paste|txt=Mox}}
+|15
+| {{Coins|{{GEP|Tarromin}}/15}}
+| {{Coins|{{GEP|Tarromin potion (unf)}}/15}}
+| {{Coins|{{GEP|Grimy tarromin}}/15}}
+|-
+| {{plinkt|Harralander}}
+| {{plink|Mox paste|txt=Mox}}
+|20
+| {{Coins|{{GEP|Harralander}}/20}}
+| {{Coins|{{GEP|Harralander potion (unf)}}/20}}
+| {{Coins|{{GEP|Grimy harralander}}/20}}
+|-
+| {{plinkt|Ranarr weed}}
+| {{plink|Lye paste|txt=Lye}}
+|26
+| {{Coins|{{GEP|Ranarr weed}}/26}}
+| {{Coins|{{GEP|Ranarr potion (unf)}}/26}}
+| {{Coins|{{GEP|Grimy ranarr weed}}/26}}
+|-
+| {{plinkt|Toadflax}}
+| {{plink|Lye paste|txt=Lye}}
+|32
+| {{Coins|{{GEP|Toadflax}}/32}}
+| {{Coins|{{GEP|Toadflax potion (unf)}}/32}}
+| {{Coins|{{GEP|Grimy toadflax}}/32}}
+|-
+| {{plinkt|Irit leaf}}
+| {{plink|Aga paste|txt=Aga}}
+|30
+| {{Coins|{{GEP|Irit leaf}}/30}}
+| {{Coins|{{GEP|Irit potion (unf)}}/30}}
+| {{Coins|{{GEP|Grimy irit leaf}}/30}}
+|-
+| {{plinkt|Avantoe}}
+| {{plink|Lye paste|txt=Lye}}
+|30
+| {{Coins|{{GEP|Avantoe}}/30}}
+| {{Coins|{{GEP|Avantoe potion (unf)}}/30}}
+| {{Coins|{{GEP|Grimy avantoe}}/30}}
+|-
+| {{plinkt|Kwuarm}}
+| {{plink|Lye paste|txt=Lye}}
+|33
+| {{Coins|{{GEP|Kwuarm}}/33}}
+| {{Coins|{{GEP|Kwuarm potion (unf)}}/33}}
+| {{Coins|{{GEP|Grimy kwuarm}}/33}}
+|-
+| {{plinkt|Huasca}}
+| {{plink|Aga paste|txt=Aga}}
+|20
+|{{Coins|{{GEP|Huasca}}/20}}
+|{{Coins|{{GEP|Huasca potion (unf)}}/20}}
+|{{Coins|{{GEP|Grimy huasca}}/20}}
+|-
+| {{plinkt|Snapdragon}}
+| {{plink|Lye paste|txt=Lye}}
+|40
+| {{Coins|{{GEP|Snapdragon}}/40}}
+| {{Coins|{{GEP|Snapdragon potion (unf)}}/40}}
+| {{Coins|{{GEP|Grimy snapdragon}}/40}}
+|-
+| {{plinkt|Cadantine}}
+| {{plink|Aga paste|txt=Aga}}
+|34
+| {{Coins|{{GEP|Cadantine}}/34}}
+| {{Coins|{{GEP|Cadantine potion (unf)}}/34}}
+| {{Coins|{{GEP|Grimy cadantine}}/34}}
+|-
+| {{plinkt|Lantadyme}}
+| {{plink|Aga paste|txt=Aga}}
+|40
+| {{Coins|{{GEP|Lantadyme}}/40}}
+| {{Coins|{{GEP|Lantadyme potion (unf)}}/40}}
+| {{Coins|{{GEP|Grimy lantadyme}}/40}}
+|-
+| {{plinkt|Dwarf weed}}
+| {{plink|Aga paste|txt=Aga}}
+|42
+| {{Coins|{{GEP|Dwarf weed}}/42}}
+| {{Coins|{{GEP|Dwarf weed potion (unf)}}/42}}
+| {{Coins|{{GEP|Grimy dwarf weed}}/42}}
+|-
+| {{plinkt|Torstol}}
+| {{plink|Aga paste|txt=Aga}}
+|44
+| {{Coins|{{GEP|Torstol}}/44}}
+| {{Coins|{{GEP|Torstol potion (unf)}}/44}}
+| {{Coins|{{GEP|Grimy torstol}}/44}}
+|}
+{{Notelist}}
+
+===Mixing===
+[[File:Mastering Mixology HUD.png|frame|The minigame HUD.]]
+Entering the main area of the minigame will cause the HUD to appear on the top left of the player's game client. This shows the potion bases that must be made, how they should be processed, and how much reagent (paste) remains in the hopper. Each usage of a reagent requires 10 paste. For example, a [[mystic mana amalgam]] requires two inputs of mox and one of aga, for a total of 20 mox paste and 10 aga paste.
+
+Players can pull the respective levers in any order. The pastes are not consumed until the potion base is taken from the [[mixing vessel]] behind them. If all three spots in the mixer are full, pulling any of the levers will also override the oldest element selected. This allows for correcting mistakes '''without wasting any paste'''. For example, if the currently selected mixture is mox-lye-mox, then pulling the [[aga lever]] once will remove the first mox paste and result in a lye-mox-aga mix. If the hopper does not contain sufficient paste to create the potion indicated by the inputs, the player will be prevented from taking the potion from the mixer. Lacking the appropriate Herblore level for a potion will also prevent the player from taking it out of the mixer. The player can boost to get orders requiring higher-level potions, the level requirements stop you from receiving orders of that type, and pulling the potion out of the [[Mixing vessel]].
+
+Lastly, the names of each base act as a mnemonic and give a hint to their ingredient combination. For example, '''M'''arley's '''M'''oon'''L'''ight is made from mox-mox-lye and '''A'''qua'''L'''ux '''A'''malgam is made from aga-lye-aga.
+
+Each possible order has a weight value: the higher this value, the more likely the order is to be assigned. Since players can only receive orders they have the [[Herblore]] requirement for, the chance of getting any particular order can be calculated as the weight of that order divided by the sum of all available orders' weights. As such, a player at level 60 or 78 will receive orders requiring mox, aga, and lye in a 1:1:1 ratio on average, while a player at level 75 will receive orders requiring a 39:35:31 ratio of the pastes.
+
+Players will earn only 10 [[Mox resin|mox]], [[Aga resin|aga]], or [[Lye resin|lye]] if the fulfilled order is not currently required. Players will also only get a third of the experience compared to if it was an ordered potion. This will still refresh the list of potions ordered, giving players 3 new potions. However, it is recommended to always make potions that are required.
+<tabber>
+Ordered=
+{| class="wikitable lighttable sortable" style="text-align: center;"
+|-
+! rowspan="2" colspan="2" | Base
+! rowspan="2" | Combination
+! colspan="4" | Points
+! rowspan="2" | {{SCP|Herblore}} Level
+! rowspan="2" | XP
+! rowspan="2" | Weight
+|-
+! {{plinkp|Mox resin}} Mox
+! {{plinkp|Aga resin}} Aga
+! {{plinkp|Lye resin}} Lye
+! Total
+|-
+| {{plinkp|Alco-augmentator}}
+| [[Alco-augmentator|'''A'''lco-'''A'''ugment'''A'''tor]] (AAA)
+| {{plinkp|Aga paste}}{{plinkp|Aga paste}}{{plinkp|Aga paste}}
+| 0
+| 20
+| 0
+| 20
+| {{SCP|Herblore|60}}
+| {{SCP|Herblore|190}}
+| 5
+|-
+| {{plinkp|Mammoth-might mix}}
+| [[Mammoth-might mix|'''M'''ammoth-'''M'''ight '''M'''ix]] (MMM)
+| {{plinkp|Mox paste}}{{plinkp|Mox paste}}{{plinkp|Mox paste}}
+| 20
+| 0
+| 0
+| 20
+| {{SCP|Herblore|60}}
+| {{SCP|Herblore|190}}
+| 5
+|-
+| {{plinkp|Liplack liquor}}
+| [[Liplack liquor|'''L'''ip'''L'''ack '''L'''iquor]] (LLL)
+| {{plinkp|Lye paste}}{{plinkp|Lye paste}}{{plinkp|Lye paste}}
+| 0
+| 0
+| 20
+| 20
+| {{SCP|Herblore|60}}
+| {{SCP|Herblore|190}}
+| 5
+|-
+| {{plinkp|Mystic mana amalgam}}
+| [[Mystic mana amalgam|'''M'''ystic '''M'''ana '''A'''malgam]] (MMA)
+| {{plinkp|Mox paste}}{{plinkp|Mox paste}}{{plinkp|Aga paste}}
+| 20
+| 10
+| 0
+| 30
+| {{SCP|Herblore|63}}
+| {{SCP|Herblore|215}}
+| 4
+|-
+| {{plinkp|Marley's moonlight}}
+| [[Marley's moonlight|'''M'''arley's '''M'''oon'''L'''ight]] (MML)
+| {{plinkp|Mox paste}}{{plinkp|Mox paste}}{{plinkp|Lye paste}}
+| 20
+| 0
+| 10
+| 30
+| {{SCP|Herblore|66}}
+| {{SCP|Herblore|240}}
+| 4
+|-
+| {{plinkp|Azure aura mix}}
+| [[Azure aura mix|'''A'''zure '''A'''ura '''M'''ix]] (AAM)
+| {{plinkp|Aga paste}}{{plinkp|Aga paste}}{{plinkp|Mox paste}}
+| 10
+| 20
+| 0
+| 30
+| {{SCP|Herblore|69}}
+| {{SCP|Herblore|265}}
+| 4
+|-
+| {{plinkp|Aqualux amalgam}}
+| [[Aqualux amalgam|'''A'''qua'''L'''ux '''A'''malgam]] (ALA)
+| {{plinkp|Aga paste}}{{plinkp|Lye paste}}{{plinkp|Aga paste}}
+| 0
+| 20
+| 10
+| 30
+| {{SCP|Herblore|72}}
+| {{SCP|Herblore|290}}
+| 4
+|-
+| {{plinkp|Megalite liquid}}
+| [[Megalite liquid|'''M'''ega'''L'''ite '''L'''iquid]] (MLL)
+| {{plinkp|Mox paste}}{{plinkp|Lye paste}}{{plinkp|Lye paste}}
+| 10
+| 0
+| 20
+| 30
+| {{SCP|Herblore|75}}
+| {{SCP|Herblore|315}}
+| 4
+|-
+| {{plinkp|Anti-leech lotion}}
+| [[Anti-leech lotion|'''A'''nti-'''L'''eech '''L'''otion]] (ALL)
+| {{plinkp|Aga paste}}{{plinkp|Lye paste}}{{plinkp|Lye paste}}
+| 0
+| 10
+| 20
+| 30
+| {{SCP|Herblore|78}}
+| {{SCP|Herblore|340}}
+| 4
+|-
+| {{plinkp|Mixalot}}
+| [[Mixalot|'''M'''ix'''AL'''ot]] (MAL)
+| {{plinkp|Mox paste}}{{plinkp|Aga paste}}{{plinkp|Lye paste}}
+| 20
+| 20
+| 20
+| 60
+| {{SCP|Herblore|81}}
+| {{SCP|Herblore|365}}
+| 3
+|}
+|-|
+Not ordered=
+{| class="wikitable lighttable sortable" style="text-align: center;"
+|-
+!colspan="2" | Base
+!Combination
+!Points
+!{{SCP|Herblore}} Level
+!XP
+!Weight
+|-
+| {{plinkp|Alco-augmentator}}
+| [[Alco-augmentator|'''A'''lco-'''A'''ugment'''A'''tor]] (AAA)
+| {{plinkp|Aga paste}}{{plinkp|Aga paste}}{{plinkp|Aga paste}}
+| {{plinkp|Aga resin}} 10 [[Aga resin|Aga]]
+| {{SCP|Herblore|60}}
+| {{SCP|Herblore|63}}
+| 5
+|-
+| {{plinkp|Mammoth-might mix}}
+| [[Mammoth-might mix|'''M'''ammoth-'''M'''ight '''M'''ix]] (MMM)
+| {{plinkp|Mox paste}}{{plinkp|Mox paste}}{{plinkp|Mox paste}}
+| {{plinkp|Mox resin}} 10 [[Mox resin|Mox]]
+| {{SCP|Herblore|60}}
+| {{SCP|Herblore|63}}
+| 5
+|-
+| {{plinkp|Liplack liquor}}
+| [[Liplack liquor|'''L'''ip'''L'''ack '''L'''iquor]] (LLL)
+| {{plinkp|Lye paste}}{{plinkp|Lye paste}}{{plinkp|Lye paste}}
+| {{plinkp|Lye resin}} 10 [[Lye resin|Lye]]
+| {{SCP|Herblore|60}}
+| {{SCP|Herblore|63}}
+| 5
+|-
+| {{plinkp|Mystic mana amalgam}}
+| [[Mystic mana amalgam|'''M'''ystic '''M'''ana '''A'''malgam]] (MMA)
+| {{plinkp|Mox paste}}{{plinkp|Mox paste}}{{plinkp|Aga paste}}
+| {{plinkp|Aga resin}} 10 [[Aga resin|Aga]]
+| {{SCP|Herblore|63}}
+| {{SCP|Herblore|72}}
+| 4
+|-
+| {{plinkp|Marley's moonlight}}
+| [[Marley's moonlight|'''M'''arley's '''M'''oon'''L'''ight]] (MML)
+| {{plinkp|Mox paste}}{{plinkp|Mox paste}}{{plinkp|Lye paste}}
+| {{plinkp|Lye resin}} 10 [[Lye resin| Lye]]
+| {{SCP|Herblore|66}}
+| {{SCP|Herblore|80}}
+| 4
+|-
+| {{plinkp|Azure aura mix}}
+| [[Azure aura mix|'''A'''zure '''A'''ura '''M'''ix]] (AAM)
+| {{plinkp|Aga paste}}{{plinkp|Aga paste}}{{plinkp|Mox paste}}
+| {{plinkp|Aga resin}} 10 [[Aga resin|Aga]]
+| {{SCP|Herblore|69}}
+| {{SCP|Herblore|88}}
+| 4
+|-
+| {{plinkp|Aqualux amalgam}}
+| [[Aqualux amalgam|'''A'''qua'''L'''ux '''A'''malgam]] (ALA)
+| {{plinkp|Aga paste}}{{plinkp|Lye paste}}{{plinkp|Aga paste}}
+| {{plinkp|Lye resin}} 10 [[Lye resin| Lye]]
+| {{SCP|Herblore|72}}
+| {{SCP|Herblore|96}}
+| 4
+|-
+| {{plinkp|Megalite liquid}}
+| [[Megalite liquid|'''M'''ega'''L'''ite '''L'''iquid]] (MLL)
+| {{plinkp|Mox paste}}{{plinkp|Lye paste}}{{plinkp|Lye paste}}
+| {{plinkp|Lye resin}} 10 [[Lye resin| Lye]]
+| {{SCP|Herblore|75}}
+| {{SCP|Herblore|105}}
+| 4
+|-
+| {{plinkp|Anti-leech lotion}}
+| [[Anti-leech lotion|'''A'''nti-'''L'''eech '''L'''otion]] (ALL)
+| {{plinkp|Aga paste}}{{plinkp|Lye paste}}{{plinkp|Lye paste}}
+| {{plinkp|Lye resin}} 10 [[Lye resin| Lye]]
+| {{SCP|Herblore|78}}
+| {{SCP|Herblore|113}}
+| 4
+|-
+| {{plinkp|Mixalot}}
+| [[Mixalot|'''M'''ix'''AL'''ot]] (MAL)
+| {{plinkp|Mox paste}}{{plinkp|Aga paste}}{{plinkp|Lye paste}}
+| {{plinkp|Lye resin}} 10 [[Lye resin| Lye]]
+| {{SCP|Herblore|81}}
+| {{SCP|Herblore|122}}
+| 3
+|}
+</tabber>
+
+===Processing===
+[[File:Mastering Mixology overview.png|thumb|400px|An overview of the Alchemical Society's lab.]]
+After making the unfinished potion base, players must either concentrate, homogenise, or crystalise it at the corresponding workstation (the [[retort]], [[agitator]], and [[alembic]] respectively) to complete the potion. Potions do not follow a recipe beyond prior mixing; a potion may need to be homogenised once, but the same potion on a later order may require crystallisation instead. Once the potion is made, complete the order by placing it on the conveyor belt. Players with a higher Herblore level will process unfinished potion bases faster. If the machine is left-clicked, the first unprocessed potion in the player's inventory will be input to the machine, regardless if it fulfills a current order. If the player has multiple unprocessed potions in their inventory, a specific potion can be used on the machine, to avoid incorrectly processing a different potion.
+
+The processing machines will progress at different rates depending on player input, as well as reward additional [[Herblore]] experience.
+
+Without player input, the Alembic and Agitator take the same number of ticks, while the Retort is ~10% faster by default.
+{| class="wikitable align-center-1-2"
+! colspan="2" | Workstation
+! Process
+! Time saved with player input
+!Extra Herblore XP
+!Details
+|-
+| [[File:Crystalise.png]]
+| [[Alembic]]
+| Crystallising
+! 33%
+|{{SCP|Herblore|14}}
+|Click it once to begin, then do so again when the bellows fully opens for the 4th time.
+
+* If clicked too early or too late, some progress will be deducted, but the bonus may still be obtained by clicking again on the 7th pump ''after'' the initial failure.
+* The pump count resets if the player leaves the alembic and starts pumping again, though the bonus will not be awarded more than once.
+|-
+| [[File:Concentrate.png]]
+| [[Retort]]
+| Concentrating
+! 50%
+|{{SCP|Herblore|2}} per tick
+|Click it constantly every tick to speed up the process, rewarding 2 bonus Herblore experience per click. The total amount of bonus Herblore experience gained varies, as lower-level players can get more clicks in because they take a longer time to process their potions.
+|-
+| [[File:Homogenise.png]]
+| [[Agitator]]
+| Homogenising
+! 33% / 66%
+|{{SCP|Herblore|14}} / {{SCP|Herblore|16}}
+|Click it once to begin, click again within 2 ticks of the sound/visual effect (will always occurs within the first 33% of processing time) to speed up the process. With proper timing, clicks can be done in each tick of the 2-tick window, netting double bonus progress. This results in 14 bonus Herblore experience for the first click, and 2 bonus Herblore experience for the second click per potion. Each successful click saves 33% of the total processing time.
+
+* If the player's latency is too high and keeps missing this window regularly, it can be faster to simply not click again rather than incur the progress penalty for missing the window.
+|}
+<gallery mode="packed" heights="200" style="text-align:left">
+Mastering Mixology - speeding up agitator.mp4|Speeding up the homogenising process at an agitator.
+Mastering Mixology - speeding up alembic.mp4|Speeding up the crystallising process at an alembic.
+Mastering Mixology - speeding up retort.mp4|Speeding up the concentrating process at a retort.
+</gallery>
+
+===Depositing===
+After processing potions, players may deposit them on the conveyor belt to the north.
+
+Clicking the conveyor belt will deposit up to three potions, fulfiling as many of the current orders as possible from anywhere in the player's inventory. If none of the current orders can be fulfiled, the player will deposit the first potion from their inventory for reduced rewards. In either case, all three orders will be refreshed.
+
+Players will receive [[mox resin]], [[aga resin]], and [[lye resin]] and Herblore experience depending on the potion made. If the player fulfils multiple orders, more resin is given per potion; fulfiling two orders at once rewards 20% more resin, while fulfiling all three in one go rewards 40% more resin.
+
+If the player deposits a potion that does not fulfil any of the current orders, they will receive a third of the experience, and 10 of the resin of the highest 'tier' given by that potion (e.g. Marley's moonlight would award 10 lye resin). Rewards require a mix of all resin, so players may choose to fill orders that reward the type of resin they require points for.
+
+Playing actively with all speedups, a player with level 81 Herblore can expect to earn approximately 70,000 xp/hour along with 3,000 of each type of resin at a cost of 2,000 of each type of paste. Inputs and rewards will vary according to play strategy.
+
+Playing passively without any speedups, on the other hand, a player with level 81 Herblore can expect to earn approximately 45,000 xp/hour.
+
+If a player's Herblore level falls between 63-77, paste consumption won't be balanced between all three types, and by extension, rewarded resin won't be equally distributed. This is caused by the first two additional base potions favouring the use of [[mox paste]], with the following two favouring [[aga paste]], and the last two favouring [[lye paste]]. At level 78 Herblore, all 6 additional potion bases are unlocked, alongside the three initial potion bases, giving equal odds of all three types of paste being used on average. This doesn't change when the last potion base is unlocked at level 81 Herblore as it uses all three pastes and rewards all three resins evenly.
+
+===Digweed===
+Occasionally a young [[digweed]] plant will mature and bloom into a flower in one of the corners of the room, indicated by a chatbox message. Clicking on matured digweed will allow players to collect it, even if it dies before the player reaches the plant. The spawn rate scales with Herblore level; at level 81 Herblore it will spawn roughly every 7 minutes of active play. It does not spawn if not playing, even when standing inside the room.
+
+Digweed can be added to any potion, before or after processing, doubling the amount of experience and resin gained from that potion. Players must use the digweed before exiting the minigame area (4 game tiles away from the hopper, towards the bank), or the digweed will wither and die thus disappearing from their inventory. Players can take digweed outside the minigame area by dropping it, leaving the minigame area, and [[Telekinetic Grab|telegrabbing]] the digweed. However, players cannot bank the digweed, so there is no reason to do this. Players can only use one digweed on a given potion; attempting to add another will give the message {{mes|This potion has already been improved with digweed.}}
+
+Holding digweed in the inventory seems to stop new spawns from appearing. However, plants will still appear if digweed is dropped on the floor, or mixed into a potion. Because of this, it is advisable to either mix digweed into a potion of choice for a later order or to stack digweed on the floor on a selected tile to allow digweed to continue to spawn while waiting for preferred potion orders. Digweed that is dropped on the floor does not despawn immediately if players leave the area, unlike digweed in the inventory. Note that if choosing to stack on the floor, players have a 3-minute timer to pick up and drop the stack before the digweed despawns.
+
+To maximise benefits, an easy-to-remember rule of thumb is that the higher experience bases use two [[lye paste]] while lower experience bases use two [[mox paste]]. Alternatively, if players need points for a specific resin, focus on bases using two of the corresponding paste with the third paste used following the same ''L'' > ''A'' > ''M'' rule-of-thumb for slightly higher experience. No matter which strategy players prefer, avoid using digweed with the ''MMM'', ''AAA'', and ''LLL'' bases as they yield the least resin and experience per paste. For those with at least level 81 Herblore, one strategy to maximise resin and experience is to immediately mix any digweed into an unprocessed [[mixalot]] base. Players can then save the unprocessed base until an order for mixalot appears and process it as necessary or store it in the bank to avoid processing accidentally. If players choose to bank the base, remember to add in the digweed '''before''' leaving the minigame area or it will decay from the inventory. Bases will not stack in the bank, even if they are identical.

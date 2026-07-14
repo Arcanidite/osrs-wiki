@@ -1,0 +1,127 @@
+{{External|rs|rsc}}
+{{otheruses|def=no|battlestaves in general|Battlestaves}}
+{{Infobox Item
+|name = Battlestaff
+|image = [[File:Battlestaff.png]]
+|release = [[18 March]] [[2002]]
+|update = Latest RuneScape News (18 March 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = It's a slightly magical stick.
+|value = 7000
+|weight = 2.267
+|exchange = Yes
+|id = 1391
+}}
+[[File:Battlestaff detail.png|left|120px]]
+A '''battlestaff''' is a [[Members|members-only]] [[Weapons#Magic%20weapons|magic weapon]] which provides standard magical bonuses, heightened melee bonuses, and the [[autocast]] option when equipped. It requires 30 [[Attack]] and 30 [[Magic]] to wield. Due to not having any [[Elemental staves|elemental]] features, this staff has limited long-term use. Its advantage over [[Elemental staves|basic tier elemental staves]] and other lesser staves are its melee and magic bonuses.
+
+The staff can be purchased from [[Zaff's Superior Staffs!]] in [[Varrock]] after the completion of the quest [[What Lies Below]], and he'll stock 15 to 120 extra staves daily for players who have fully completed task tiers of the [[Varrock Diary]] (they can be obtained by interacting with the barrel in the north-west corner of the shop). The magic store owner in the [[Wizards' Guild]] and [[Baba Yaga]] on the [[Lunar Isle]] also stock them. It can also be bought on the [[Grand Exchange]], obtained through other players, dropped by various enemies, or fletched from [[Celastrus bark]] with level 40 [[Fletching]].
+
+Battlestaves can be used to make [[elemental battlestaves]]. By using the appropriate ([[Charge Air Orb|air]], [[Charge Water Orb|water]], [[Charge Earth Orb|earth]], [[Charge Fire Orb|fire]]) charge orb spell on an [[Obelisk]] with an [[unpowered orb]] in their [[inventory]], a player can make an elemental orb, which can then be used on a battlestaff to make the corresponding elemental battlestaff. Elemental battlestaves can be upgraded to [[mystic staves]] by giving {{Coins|40000}} to [[Thormac]] after the completion of the quest [[Scorpion Catcher]]. After completion of the [[Hard Kandarin Diary]] and [[Elite Kandarin Diary]], Thormac will only require {{Coins|30000}} and {{Coins|20000}} respectively.
+[[File:Battlestaff crafting.gif|frame|A player attaching an orb to a battlestaff.]]
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 7
+|aslash = -1
+|acrush = 25
+|amagic = 12
+|arange = 0
+|dstab = 2
+|dslash = 3
+|dcrush = 1
+|dmagic = 12
+|drange = 0
+|str = 32
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 5
+|attackrange = staff
+|combatstyle = Staff
+|image = [[File:Battlestaff equipped.png|110px]]
+|altimage = [[File:Battlestaff equipped female.png|110px]]
+}}
+{{CombatStyles|Staff|speed=5|attackrange=staff}}
+{{Autocasting|standard=yes|arceuus=no|ancient=no}}
+==Creation==
+{{Recipe
+|skill1 = Fletching
+|skill1lvl = 40
+|skill1boostable = Yes
+|skill1exp = 80
+|members = Yes
+|ticks = 4
+|tools = Knife
+|mat1 = Celastrus bark
+|output1 = Battlestaff
+}}
+
+==Money making==
+{{Mmgsection|Buying battlestaves from Zaff}}
+
+==Products==
+{{Uses material list|Battlestaff}}
+
+==Item sources==
+{{Drop sources|Battlestaff}}
+
+===Shop locations===
+{{Store locations list|Battlestaff}}
+In [[Deadman Mode]], battlestaves from [[Zaff's Superior Staffs]] will restock in '''1 tick''' instead of 100 ticks.
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 22 September 2021
+|update = Wilderness & Equipment Rebalance Changes
+|change = The Magic Attack and Defence bonuses of battlestaves have been increased from +10 to +12.
+}}
+{{Subject changes
+|date = 9 February 2017
+|update = Colourful Golems & Graphical Improvements
+|poll = Old School Content Poll 50: Models, Anims and More
+|change = Making battlestaves now have an animation.
+}}
+{{Subject changes
+|date = 3 December 2015
+|update = Skill Cape Perks
+|change = When purchasing battlestaves as part of the Varrock diary reward from Zaff's barrel, you will no longer be told your inventory is full when it already contains a stack of noted battlestaves.
+}}
+{{Subject changes
+|date = 5 March 2015
+|update = Achievement Diaries
+|poll = Old School Achievement Diary Rewards Poll
+|change = You can now acquire discounted (7000gp) battlestaves from [[Zaff]] once per day for the completion of [[Varrock Diary|Varrock Diaries]]:
+*15 battlestaves for the [[Easy Varrock|easy diary]].
+*30 battlestaves for the [[Medium Varrock|medium diary]].
+*60 battlestaves for the [[Hard Varrock|hard diary]].
+*120 battlestaves for the [[Elite Varrock|elite diary]].
+}}
+{{Subject changes
+|daterange = 29 November 2004 -<br/>17 January 2005
+|change = The item's inventory sprite was adjusted.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Battlestaff detail (historical).png|center|300x150px]]
+|[[File:Battlestaff detail.png|center|300x150px]]
+|-
+|[[File:Battlestaff (historical).png|center]]
+|[[File:Battlestaff.png|center]]
+|-
+|29 March 2004 –<br/>Nov. 2004-Jan. 2005
+|Nov. 2004-Jan. 2005 –<br/>present
+|}
+
+{{Magic weapons}}
+[[Category:Crafting items]]

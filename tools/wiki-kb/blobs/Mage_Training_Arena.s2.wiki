@@ -1,0 +1,4 @@
+==Requirements==
+Players need a minimum of level 7 [[Magic]] to participate in the minigame, although that will allow the use of only [[Lvl-1 Enchant|a single spell]]. At level 33 Magic (required for [[Telekinetic Grab]]), a player can participate in all 4 activities. Level 93 ([[Lvl-7 Enchant]]) will allow players to use all spells in all areas of the minigame, though practically speaking only level 87 Magic ([[Lvl-6 Enchant]]) is useful. The higher the level of [[Magic]], the more [[experience]] points the player will receive.
+
+[[Clue scroll]]s and [[casket]]s are not allowed in any of the rooms. [[Coins]] and [[coin pouch]]es cannot be brought into the Alchemists' Playground, while bananas and peaches cannot be brought into the Creature Graveyard.

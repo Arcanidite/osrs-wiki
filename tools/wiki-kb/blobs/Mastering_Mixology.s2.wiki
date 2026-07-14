@@ -1,0 +1,8 @@
+==Transportation==
+* Teleport using [[Minigame Teleport]], either through any spellbook or the [[Grouping]] interface, by selecting Mastering Mixology. (20 minute cooldown)
+* Use the [[Fairy rings|fairy ring]] code {{Fairycode|CKQ}} and run south-east (requires partial completion of [[Fairytale II - Cure a Queen]]).
+* Use the [[Quetzal Transport System]] to Aldarin, then run north (requires partial completion of [[Twilight's Promise]]; construction of [[Landing Site|landing site]] not required).
+* Ship ride from [[Sunset Coast]] (requires 20 [[coins]]), then run due south.
+* Teleport to your [[player-owned house]] on [[Aldarin]], or to the portal with a [[Construction cape]] or by using a [[Aldarin teleport|Aldarin teleport tablet]], then run south.
+* Charter a [[charter ship]] to Aldarin, then run south.
+* Teleport to North Aldarin using a [[Pendant of ates|Pendant of Ates]] (requires completion of [[Death on the Isle]] and unlocking the teleport location), then run south-west.

@@ -1,0 +1,50 @@
+===Levels 1–99: Shipwrights' workbench===
+Boat [[repair kits]] and [[hull parts]] can be constructed at a [[shipwrights' workbench]] near a bank and resold to other players, which is different from most other Construction training methods which use resources without producing items. The quest [[Pandemonium]] is required in order to use the shipwrights' workbench.
+
+Planks are worth roughly half as much experience each at a shipwrights' workbench, reducing the overall experience per hour, but the resale value can make this method worthwhile for some players. It is also more relaxed than traditional Construction, with up to 29 seconds per inventory (or longer with a [[plank sack]]) of [[idle]] time.
+
+The closest shipwrights' workbench to a bank is in [[Red Rock]], being only 2 tiles apart from one another, however this requires completion of [[The Red Reef]]. The closest setup without a Sailing requirement is in [[Port Khazard]], being just 5 tiles apart.
+
+====Repair kits====
+With high efficiency, players can make around 1,200 repair kits per hour (without a plank sack) when using the shipwrights' workbench in [[Deepfin Point]]. Both [[Amy's saw]] and [[Imcando hammer]] will save an inventory space each, slightly increasing the overall experience rates.
+
+Note that a plank sack will cause constructed repair kits to drop to the ground. Ironwood and rosewood repair kits produce more output than they take as input, so inventory space '''must''' be left for these or you will not be allowed to construct them.
+{| class="wikitable sortable"
+|-
+! colspan=2 | Tier !! {{SCP|Construction}} level !! Number made!! Materials cost !! Constructed value !! Profit !! XP !! XP/h !! GP/XP
+|-
+| {{plinkt|Repair kit}} || 1 || 2 || {{Coins|{{GEP|Plank}}*2 + {{GEP|Bronze nails}}*10 + {{GEP|Swamp paste}}*5}} || {{Coins|{{GEP|Repair kit}}*2}} || {{Coins|{{GEP|Repair kit}}*2 - ({{GEP|Plank}}*2 + {{GEP|Bronze nails}}*10 + {{GEP|Swamp paste}}*5)}} || 43.5 || 52,200 || {{Coins|({{GEP|Repair kit}}*2 - ({{GEP|Plank}}*2 + {{GEP|Bronze nails}}*10 + {{GEP|Swamp paste}}*5)) / 43.5}}
+|-
+| {{plinkt|Oak repair kit}} || 19 || 2 || {{Coins|{{GEP|Oak plank}}*2 + {{GEP|Iron nails}}*10 + {{GEP|Swamp paste}}*5}} || {{Coins|{{GEP|Oak repair kit}}*2}} || {{Coins|{{GEP|Oak repair kit}}*2 - ({{GEP|Oak plank}}*2 + {{GEP|Iron nails}}*10 + {{GEP|Swamp paste}}*5)}} || 90 || 108,000 || {{Coins|({{GEP|Oak repair kit}}*2 - ({{GEP|Oak plank}}*2 + {{GEP|Iron nails}}*10 + {{GEP|Swamp paste}}*5)) / 90}}
+|-
+| {{plinkt|Teak repair kit}} || 30 || 2 ||  {{Coins|{{GEP|Teak plank}}*2 + {{GEP|Steel nails}}*10 + {{GEP|Swamp paste}}*5}} || {{Coins|{{GEP|Teak repair kit}}*2}} || {{Coins|{{GEP|Teak repair kit}}*2 - ({{GEP|Teak plank}}*2 + {{GEP|Steel nails}}*10 + {{GEP|Swamp paste}}*5)}} || 135 || 162,000 || {{Coins|({{GEP|Teak repair kit}}*2 - ({{GEP|Teak plank}}*2 + {{GEP|Steel nails}}*10 + {{GEP|Swamp paste}}*5)) / 135}}
+|-
+| {{plinkt|Mahogany repair kit}} || 47 || 2 ||  {{Coins|{{GEP|Mahogany plank}}*2 + {{GEP|Mithril nails}}*10 + {{GEP|Swamp paste}}*5}} || {{Coins|{{GEP|Mahogany repair kit}}*2}} || {{Coins|{{GEP|Mahogany repair kit}}*2 - ({{GEP|Mahogany plank}}*2 + {{GEP|Mithril nails}}*10 + {{GEP|Swamp paste}}*5)}} || 210 || 252,000 || {{Coins|({{GEP|Mahogany repair kit}}*2 - ({{GEP|Mahogany plank}}*2 + {{GEP|Mithril nails}}*10 + {{GEP|Swamp paste}}*5)) / 210}}
+|-
+| {{plinkt|Camphor repair kit}} || 66 || 2 || {{Coins|{{GEP|Camphor plank}}*2 + {{GEP|Adamantite nails}}*10 + {{GEP|Swamp paste}}*5}} || {{Coins|{{GEP|Camphor repair kit}}*2}} || {{Coins|{{GEP|Camphor repair kit}}*2 - ({{GEP|Camphor plank}}*2 + {{GEP|Adamantite nails}}*10 + {{GEP|Swamp paste}}*5)}} || 255 || 306,000 || {{Coins|({{GEP|Camphor repair kit}}*2 - ({{GEP|Camphor plank}}*2 + {{GEP|Adamantite nails}}*10 + {{GEP|Swamp paste}}*5)) / 255}}
+|-
+| {{plinkt|Ironwood repair kit}} || 80 || 3 ||  {{Coins|{{GEP|Ironwood plank}}*1 + {{GEP|Rune nails}}*10 + {{GEP|Swamp paste}}*5}} || {{Coins|{{GEP|Ironwood repair kit}}*3}} || {{Coins|{{GEP|Ironwood repair kit}}*3 - ({{GEP|Ironwood plank}}*1 + {{GEP|Rune nails}}*10 + {{GEP|Swamp paste}}*5)}} || 300 || 360,000 || {{Coins|({{GEP|Ironwood repair kit}}*3 - ({{GEP|Ironwood plank}}*1 + {{GEP|Rune nails}}*10 + {{GEP|Swamp paste}}*5)) / 300}}
+|-
+| {{plinkt|Rosewood repair kit}} || 92 || 3 ||  {{Coins|{{GEP|Rosewood plank}}*1 + {{GEP|Dragon nails}}*5 + {{GEP|Swamp paste}}*5}}|| {{Coins|{{GEP|Rosewood repair kit}}*3}} || {{Coins|{{GEP|Rosewood repair kit}}*3 - ({{GEP|Rosewood plank}}*1 + {{GEP|Dragon nails}}*5 + {{GEP|Swamp paste}}*5)}}|| 330 || 396,000 || {{Coins|({{GEP|Rosewood repair kit}}*3 - ({{GEP|Rosewood plank}}*1 + {{GEP|Dragon nails}}*5 + {{GEP|Swamp paste}}*5)) / 330}}
+|}
+{{reflist|group=f}}
+
+====Hull parts====
+With high efficiency, players can make around 1,000 hull parts per hour (without a plank sack) when using the shipwrights' workbench in [[Deepfin Point]]. 
+{|class="wikitable sortable"
+! colspan=2 | Tier !! {{SCP|Construction}} level !! Materials cost !! Constructed value !! Profit !! XP !! XP/h !! GP/XP 
+|-
+| {{plinkt|Wooden hull parts}} || 1 || {{Coins|{{GEP|Plank}}*5}} || {{Coins|{{GEP|Wooden hull parts}}}} || {{Coins|{{GEP|Wooden hull parts}} - {{GEP|Plank}}*5}} || 72.5 || 72,500 || {{Coins|({{GEP|Wooden hull parts}} - {{GEP|Plank}}*5) / 72.5}}
+|-
+| {{plinkt|Oak hull parts}} || 8 || {{Coins|{{GEP|Oak plank}}*5}} || {{Coins|{{GEP|Oak hull parts}}}} || {{Coins|{{GEP|Oak hull parts}} - {{GEP|Oak plank}}*5}} || 150 || 150,000 || {{Coins|({{GEP|Oak hull parts}} - {{GEP|Oak plank}}*5) / 150}}
+|-
+| {{plinkt|Teak hull parts}} || 23 || {{Coins|{{GEP|Teak plank}}*5}} || {{Coins|{{GEP|Teak hull parts}}}} || {{Coins|{{GEP|Teak hull parts}} - {{GEP|Teak plank}}*5}} || 225 || 225,000 || {{Coins|({{GEP|Teak hull parts}} - {{GEP|Teak plank}}*5) / 225}}
+|-
+| {{plinkt|Mahogany hull parts}} || 41 || {{Coins|{{GEP|Mahogany plank}}*5}} || {{Coins|{{GEP|Mahogany hull parts}}}} || {{Coins|{{GEP|Mahogany hull parts}} - {{GEP|Mahogany plank}}*5}} || 350 || 350,000 || {{Coins|({{GEP|Mahogany hull parts}} - {{GEP|Mahogany plank}}*5) / 350}}
+|-
+| {{plinkt|Camphor hull parts}} || 53 || {{Coins|{{GEP|Camphor plank}}*5}} || {{Coins|{{GEP|Camphor hull parts}}}} || {{Coins|{{GEP|Camphor hull parts}} - {{GEP|Camphor plank}}*5}} || 400 || 400,000 || {{Coins|({{GEP|Camphor hull parts}} - {{GEP|Camphor plank}}*5) / 400}}
+|-
+| {{plinkt|Ironwood hull parts}} || 77 || {{Coins|{{GEP|Ironwood plank}}*5}} || {{Coins|{{GEP|Ironwood hull parts}}}} || {{Coins|{{GEP|Ironwood hull parts}} - {{GEP|Ironwood plank}}*5}} || 437.5 || 437,500 || {{Coins|({{GEP|Ironwood hull parts}} - {{GEP|Ironwood plank}}*5) / 437.5}}
+|-
+| {{plinkt|Rosewood hull parts}} || 84 || {{Coins|{{GEP|Rosewood plank}}*5}} || {{Coins|{{GEP|Rosewood hull parts}}}} || {{Coins|{{GEP|Rosewood hull parts}} - {{GEP|Rosewood plank}}*5}} || 475 || 475,000 || {{Coins|({{GEP|Rosewood hull parts}} - {{GEP|Rosewood plank}}*5) / 475}}
+|}

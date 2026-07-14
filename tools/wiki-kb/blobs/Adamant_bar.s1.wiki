@@ -1,0 +1,76 @@
+==Creation==
+<tabber>
+Standard=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 70
+|skill1boostable = Yes
+|skill1exp = 37.5
+|members = No
+|ticks = 4
+|facilities = Furnace
+|mat1 = Adamantite ore
+|mat2 = Coal
+|mat2quantity = 6
+|output1 = Adamantite bar
+|output1subtxt = Normal furnace
+}}
+|-|
+Blast Furnace=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 70
+|skill1boostable = Yes
+|skill1exp = 37.5
+|members = Yes
+|ticks = 11
+|ticksnote = Multiple bars are completed at once. Smelting process does not begin until sufficient adamantite ore and coal is deposited at once
+|facilities = Blast Furnace
+|mat1 = Adamantite ore
+|mat2 = Coal
+|mat2quantity = 3
+|output1 = Adamantite bar
+|output1subtxt = Blast Furnace
+}}
+|-|
+Catalysed=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 70
+|skill1boostable = Yes
+|skill1exp = 75
+|members = Yes
+|ticks = 4
+|facilities = Furnace
+|mat1 = Adamantite ore
+|mat2 = Coal
+|mat2quantity = 3
+|mat3 = Smithing catalyst
+|mat3cost = {{GEP|Kovac's grog}} * (15 / 300)
+|mat3costnote = Value based on the potential profit of using [[Foundry Reputation]] to instead purchase [[Kovac's grog]] from the [[Giants' Foundry Reward Shop]]
+|output1 = Adamantite bar
+|output1subtxt = Catalysed
+}}
+|-|
+Superheat=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 70
+|skill1boostable = Yes
+|skill1exp = 37.5
+|skill2 = Magic
+|skill2lvl = 43
+|skill2boostable = Yes
+|skill2exp = 53
+|members = No
+|ticks = 3
+|mat1 = Adamantite ore
+|mat2 = Coal
+|mat2quantity = 6
+|mat3 = Nature rune
+|mat4 = Fire rune
+|mat4quantity = 4
+|output1 = Adamantite bar
+|output1subtxt = Superheat
+}}
+</tabber>

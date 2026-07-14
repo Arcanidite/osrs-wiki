@@ -1,0 +1,13 @@
+{{External|rs|rsc=Fishing contest}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Fishing Contest
+|number = 26
+|image = [[File:Fishing Contest.png|300px]]
+|release = [[28 May]] [[2002]]
+|update = Latest RuneScape News (28 May 2002)
+|members = Yes
+|series = None
+|developer = [[Paul Gower]]
+}}
+'''Fishing Contest''' is a quest in which the player has to earn the friendship of two dwarven brothers by securing a fishing trophy for them. Afterwards, they allow the player to use the dwarven passage underneath the mountain.

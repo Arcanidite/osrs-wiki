@@ -1,0 +1,20 @@
+{{HasStrategy}}
+{{Infobox Activity
+|name = Blast mine
+|image = [[File:Blast mine.png|300px]]
+|release = [[7 January]] [[2016]]
+|update = Zeah: Great Kourend
+|type = Activity
+|members = Yes
+|location = [[Lovakengj]]
+|currency = None
+|map = {{Map|name=Blast mine|x=1489|y=3864|zoom=2}}
+|leagueRegion = Kourend
+}}
+The '''blast mine''' is an activity which grants [[Mining]] and [[Firemaking]] experience.
+
+Blast mining requires level 43 Mining to participate, as well as a [[chisel]], [[tinderbox]], and [[dynamite]]. Dynamite can be made by combining [[volcanic sulphur]], [[juniper charcoal]], [[saltpetre]], and a [[pot]], then adding a [[ball of wool]] to the resulting [[dynamite pot]]. Alternatively, dynamite can be obtained from [[Thirus]] nearby.
+
+Players use dynamite to blast chunks of valuable [[ores]] from within hard rock, which must then be washed before the chunks disintegrate.
+
+There are bank chests in the area which players can use to retrieve dynamite as needed and to deposit collected ores.

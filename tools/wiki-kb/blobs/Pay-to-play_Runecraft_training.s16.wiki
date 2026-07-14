@@ -1,0 +1,37 @@
+===Setup===
+{{Equipment
+|align = right
+|head = Hat of the eye
+|cape = Hitpoints cape
+|neck = Amulet of fury
+|ammo = Rada's blessing 4
+|weapon = Dust battlestaff
+|torso = Robe top of the eye
+|legs = Robe bottoms of the eye
+|shield = Crystal shield
+|gloves = Regen bracelet
+|boots = Boots of the eye
+|ring = Ring of endurance
+}}{{Inventory|Colossal pouch|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Daeyalt essence|Rune pouch
+|align = right
+}}To quickly access the bank, players need to pay 20 of any kind of rune (excluding combination runes) by setting a quick-payment deal with [[Eniola]]. [[Mind rune|Mind]] or elemental runes are usually the cheapest option. Clear the rune pouch and essence pouch space holders and fill the entire bank with bank fillers (or use the bank's 'Deposit Lock Settings'). This way, the player can quickly deposit all the crafted runes without depositing any necessary items. Have essence, 1-dose [[stamina potion]]s, and [[cosmic rune]]s near the 'Deposit inventory' button for efficient banking.
+
+The optimal setup consists of the following:
+*All essence pouches available
+*[[Dust battlestaff]] (or a [[staff of earth]] and [[air rune]]s) for casting [[Ourania Teleport]] and [[NPC Contact]]
+*[[Rune pouch]] holding payment, [[astral rune|astral]], and [[law rune]]s. Bring [[cosmic rune]]s as well if using the [[divine rune pouch]].
+*Some defensive equipment (not needed if using alternative accounts to lure the monsters)
+*[[Raiments of the Eye]] set for extra profit (optional but recommended)
+*[[Ring of endurance]] with at least 500 charges (optional)
+
+Players who find that they are taking a lot of damage can wear the [[Hitpoints cape]] along with a [[regen bracelet]]. This will most likely outheal any damage taken. Lower-level players are advised to bring more defensive equipment (such as wearing a [[black d'hide body]] and a [[helm of neitiznot]]) and use cheap food to heal themselves if needed. A [[ring of suffering (i)]] can be considered as an alternative to the [[ring of endurance]] if greater defensive bonuses are desired, or the [[steel ring]]/[[granite ring (i)]] if the ring of suffering is too expensive.
+
+{{Rune pouch|Aether rune|Law rune|Astral rune|Mind rune
+| align = right
+}}
+
+Players who do not have level 71 [[Magic]] to cast [[Ourania Teleport]] can use the [[Ourania teleport (tablet)|respective teleport tablets]] instead, though this will require an extra inventory slot.
+
+At level 75 Runecraft and higher, players may opt to replace [[law rune]]s in the rune pouch with [[cosmic rune]]s. This removes the need to withdraw cosmic runes for casting [[NPC Contact]], and at higher levels it is very unlikely that the player will not craft any law runes at the altar. Players with the [[divine rune pouch]] can bring cosmic runes without this consideration.
+
+The inventory and gear setup provided assumes using the [[Lunar spellbook]] with 96 Magic to cast [[Spellbook Swap]] to [[Arceuus spellbook]] and castinng [[Vile Vigour]] for run energy as needed (otherwise utilise [[stamina potion]]s). [[Mind rune]]s should be set up to be used as default when banking with [[Eniola]].

@@ -1,0 +1,36 @@
+{{external|rs=Bonfire}}
+{{Otheruses|the fire created and maintained by players|the scenery object|camp fire}}
+{{Confuse|Bonfire}}
+{{Infobox Scenery
+|version1 = Regular
+|version2 = Red
+|version3 = Green
+|version4 = Blue
+|version5 = White
+|version6 = Purple
+|name = Forester's Campfire
+|image1 = [[File:Forester's Campfire.png|220px]]
+|image2 = [[File:Forester's Campfire (red logs).png|220px]]
+|image3 = [[File:Forester's Campfire (green logs).png|220px]]
+|image4 = [[File:Forester's Campfire (blue logs).png|220px]]
+|image5 = [[File:Forester's Campfire (white logs).png|220px]]
+|image6 = [[File:Forester's Campfire (purple logs).png|220px]]
+|release = [[25 October]] [[2023]]
+|update = Forestry: Part Two
+|members = No
+|location = Made by the player. Cannot be created within 5 tiles of another campfire.
+|options = Tend-to, Check, Rest
+|examine = A cosy campfire that emits sweet smelling smoke.
+|map = No
+|id1 = 49927
+|id2 = 49928
+|id3 = 49929
+|id4 = 49930
+|id5 = 49931
+|id6 = 49932
+}}
+A '''forester's campfire''' is a fire that can be created by using [[Log (disambiguation)|logs]] on an already-existing [[fire]]. Logs can be continuously added to a forester's campfire via a similar interface to the cooking skill, granting the same [[Firemaking]] [[experience]] as burning that log normally. [[Pyre logs (disambiguation)|Pyre logs]] and coloured logs '''do not''' work, though the latter can be used as a regular fire that can have logs added to it. The duration of the forester's campfire is dependent only on the type of log that is added to an existing fire, '''not''' the log that started the fire. A tinderbox is '''not''' needed to tend a forester's campfire, but '''is'''  required to start one.
+
+Campfires must have at least 5 [[Game square|tiles]] between them; attempting to create one within this range gives the message {{mes|There's a Forester's Campfire nearby, help tend to that one or move further away.}}
+
+Players can use the "Rest" option to sit at the campfire, however this is a strictly visual effect, and does not provide any benefits to the player. Players cannot rest at the campfire while in a PvP zone.

@@ -1,0 +1,19 @@
+{{HasStrategy}}
+{{Dangerous|irs=yes}}
+{{Infobox Activity
+|name = Hallowed Sepulchre
+|image = [[File:Hallowed Sepulchre lobby.png]]
+|release = [[4 June]] [[2020]]
+|update = Darkmeyer
+|type = Minigame
+|members = Yes
+|location = [[Darkmeyer]]
+|players = 1
+|skills = [[Agility]], [[Thieving]], [[Construction]], [[Prayer]], [[Magic]]
+|currency = [[Hallowed mark]]
+|tutorial = No
+|music = [[Well Hallowed Air]], [[Watch Your Step]]
+|map = {{Map|name=Hallowed Sepulchre|3654,3387|mtype=rectangle|rectX=5|rectY=4}}
+|leagueRegion = Morytania
+}}
+The '''Hallowed Sepulchre''' is an [[Agility]] activity set in an ancient [[Saradomin]]ist burial ground of the city [[Hallowvale]], located beneath [[Darkmeyer]] available to players with level 52 [[Agility]] and completion of [[Sins of the Father]]. There are five floors available scaling with the player's Agility level. In order to receive [[hallowed marks]], the [[Coffin (Hallowed Sepulchre)|coffins]] must be looted, with deeper floors providing more marks per looted coffin. [[Noticeboard (Hallowed Sepulchre)|Noticeboards]] are located next to the stairs on either side of the lobby, where players can check their personal statistics within the Sepulchre, as well as the global statistics.

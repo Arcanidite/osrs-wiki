@@ -1,0 +1,26 @@
+{{External|rs=Constitution|rsc=Hits|dw=Health}}
+{{Otheruses|def=no|a list of all requirements and unlockables within the Hitpoints skill|Hitpoints/Level up table}}
+{{Has skill guide|members=Pay-to-play Hitpoints training|free=Free-to-play Hitpoints training|iron=Ironman Guide/Hitpoints|UIM=Ultimate Ironman Guide/Hitpoints}}
+{{Infobox Skill
+|name = Hitpoints
+|image = [[File:Hitpoints icon.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|aka = HP
+|members = No
+|type = Combat
+}}
+[[File:Hitpoints icon (detail).png|left]]
+'''Hitpoints''' (also known as "health" or "HP") represent a player's health. If they reach zero, the player will [[Death|die]]. Hitpoints is the only skill for which players start with any experience initially - with 1,154 [[experience]] points, placing them at exactly level 10 on [[Tutorial Island]].
+
+{{Listen
+|align = right
+|title = Hitpoints level up - levels 11-49
+|filename = Hitpoints Level Up! (2-49).ogg
+|desc = The music that plays when achieving levels 11-49.}}
+
+{{Listen
+|align = right
+|title = Hitpoints level up - levels 50-99
+|filename = Hitpoints Level Up! (50-99).ogg
+|desc = The music that plays when achieving levels 50-99.}}

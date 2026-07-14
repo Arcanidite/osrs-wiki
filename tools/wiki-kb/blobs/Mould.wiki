@@ -1,0 +1,30 @@
+{{External|rs|rsc}}
+'''Moulds''' can be used to form a distinct object from a [[metal bar]], such as a [[holy symbol]] out of a [[silver bar]]. Moulds are most often used for crafting, though the ammo mould is used in conjunction with [[Smithing]].
+
+Most of the moulds can be bought from [[crafting]] shops. In free-to-play one may be found in [[Al Kharid]] and the other one in [[Rimmington]]. The ammo mould can be bought from [[Nulodion]] in the west building at the dwarven mines (after [[Dwarf Cannon]]).
+
+*[[Ammo mould]]
+*[[Amulet mould]]
+*[[Bracelet mould]]
+*[[Bolt mould]]
+*[[Camel mould (p)]]
+*[[Conductor mould]]
+*[[Demonic sigil mould]]
+*[[Gnomebowl mould]]
+*[[Holy mould]]
+*[[Lens mould]]
+*[[M'amulet mould]]
+*[[Necklace mould]]
+*[[Ring mould]]
+*[[Rod mould]]
+*[[Scarab mould]]
+*[[Sickle mould]]
+*[[Tiara mould]]
+*[[Unholy mould]]
+The following moulds are currently [[Unobtainable items|unobtainable]], having been specific to [[events]].
+
+* [[Egg mould (2017 Easter event)|Egg mould (2017)]]
+* [[Egg mould (2018 Easter event)|Egg mould (2018)]]
+* [[Egg mould (2023 Easter event)|Egg mould (2023)]]
+* [[Rabbit mould]]
+{{Mould}}

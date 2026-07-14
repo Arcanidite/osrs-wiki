@@ -1,0 +1,101 @@
+==Experience and efficiency==
+The experience and profit rates of Motherlode Mine can vary greatly based on level, the tier of pickaxe used, the amount of other players mining, and whether the upper floor is used.
+
+Compared to other methods, Motherlode Mine requires significantly lower effort, while still offering moderate experience and profit. Mining [[iron ore]] or [[granite]] provides significantly higher experience rates at the cost of being more click-intensive and offering no profit, as items are dropped when mining.
+
+Due to the ore vein timer starting after the first ore is mined, mining veins on low population worlds that are not in use by other players will provide more consistent timings and require less effort; though it also means that the [[strut]]s are less likely to be repaired by another player, which can be especially inconvenient when using the hopper on the upper level of the mine.
+
+To maximize the capacity of the sack, players should have an inventory with only 1 space occupied by a hammer '''or''' gem/coal bag with an [[Imcando hammer (off-hand)]] equipped. This setup will result with 4 trips (7 trips with the upgraded sack) with a full inventory of pay-dirt before having to empty the sack.
+
+Players can expect the following XP rates, assuming the following unlocks:
+
+* Upper level is unlocked at level 57 [[Mining]].  
+* [[Dragon pickaxe]] is used from level 61 Mining.   
+* [[Prospector kit|Prospector's outfit]] is worn.   
+* The upper floor Super Hopper is unlocked.
+
+{| class="wikitable"
+|+Experience and profit per hour
+!Level
+!Xp/hour
+!Profit
+|-
+|30
+|13,000
+|{{Coins|floor(215*({{GEP|Coal|1}}*0.9727))}}
+|-
+|40
+|26,000
+|{{Coins|floor(250*({{GEP|Gold ore|1}}*0.1026+{{GEP|Coal|1}}*0.8701))}}
+|-
+|50
+|33,000
+|{{Coins|floor(365*({{GEP|Gold ore|1}}*0.1672+{{GEP|Coal|1}}*0.8055))}}
+|-
+|61
+|45,000
+|{{Coins|floor(480*({{GEP|Mithril ore|1}}*0.1824+{{GEP|Gold ore|1}}*0.1883+{{GEP|Coal|1}}*0.6020))}}
+|-
+|70
+|48,000
+|{{Coins|floor(570*({{GEP|Adamantite ore|1}}*0.0380+{{GEP|Mithril ore|1}}*0.2154+{{GEP|Gold ore|1}}*0.2191+{{GEP|Coal|1}}*0.5001))}}
+|-
+|80
+|52,000
+|{{Coins|floor(635*({{GEP|Adamantite ore|1}}*0.0912+{{GEP|Mithril ore|1}}*0.2410+{{GEP|Gold ore|1}}*0.2377+{{GEP|Coal|1}}*0.4028))}}
+|-
+|90
+|59,000
+|{{Coins|floor(730*({{GEP|Runite ore|1}}*0.0152+{{GEP|Adamantite ore|1}}*0.1421+{{GEP|Mithril ore|1}}*0.2580+{{GEP|Gold ore|1}}*0.2438+{{GEP|Coal|1}}*0.3135))}}
+|-
+|99
+|64,000
+|{{Coins|floor(845*({{GEP|Runite ore|1}}*0.0227+{{GEP|Adamantite ore|1}}*0.1885+{{GEP|Mithril ore|1}}*0.2693+{{GEP|Gold ore|1}}*0.2422+{{GEP|Coal|1}}*0.2460))}}
+|}
+The following table compares experience rates with other methods, with the highest rates bolded:
+
+{| class="wikitable"
+!{{SCP|Mining}} Level
+!Iron ore 
+!3-tick Granite
+!Motherlode Mine
+!Blast Mine
+|-
+|31
+|'''55,344'''
+|N/A
+|15,500
+|N/A
+|-
+|41
+|'''62,863'''
+|N/A
+|26,100
+|N/A
+|-
+|61
+|81,529
+|'''108,512'''
+|45,000
+|48,000{{fact}}
+|-
+|75
+|84,000
+|'''116,677'''
+|50,000
+|76,200
+|-
+|85
+|84,000
+|'''121,999'''
+|54,000
+|86,766
+|-
+|99
+|87,818
+|'''134,409'''
+|64,000
+|101,600
+|}
+
+However, [[Volcanic Mine]] always offers the highest experience rates behind 3-tick granite mining.

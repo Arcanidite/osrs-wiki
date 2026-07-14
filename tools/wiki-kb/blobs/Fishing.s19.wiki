@@ -1,0 +1,17 @@
+====Heavy Rod Fishing====
+Starting at level 48, the player can learn how to do heavy rod fishing; this method requires a [[barbarian rod]] (found under Otto's bed) and any type of bait (except for [[Stripy feather|stripy]]/coloured feathers), as well as a [[knife]] to gut the fish. In order to catch the special fish in Otto's lake or at [[Mount Quidamortem]], a [[Strength]] and [[Agility]] level is needed in addition to the fishing requirement. The [[leaping fish]] obtained can be used with a knife to obtain [[roe]] and [[caviar]] for use in the [[Herblore]] [[skill]], and catching them gives small amounts of [[experience]] in Strength and Agility. The [[Pearl barbarian rod]] is cosmetic and not an improvement over the basic Barbarian rod, although it can be equipped which frees up a single inventory slot.
+
+{| class="wikitable sortable"
+! colspan="2" |Equipment
+!Level
+!Members
+|-
+|{{Plinkt|Barbarian rod}}
+|{{SCP|Fishing|48}} 
+|{{Members|Yes}}
+|-
+|{{Plinkt|Pearl barbarian rod}}
+|{{SCP|Fishing|48}}
+|{{Members|Yes}}
+|-
+|}

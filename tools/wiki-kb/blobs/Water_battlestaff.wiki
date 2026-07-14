@@ -1,0 +1,119 @@
+{{External|rs|rsc=Battlestaff of water}}
+{{Infobox Item
+|name = Water battlestaff
+|image = [[File:Water battlestaff.png]]
+|release = [[18 March]] [[2002]]
+|update = Latest RuneScape News (18 March 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = It's a slightly magical stick.
+|value = 15500
+|weight = 2.267
+|exchange = Yes
+|id = 1395
+}}
+[[File:Water battlestaff detail.png|left|110px]]
+The '''water battlestaff''' is an [[elemental staff]] requiring 30 [[Attack]] and 30 [[Magic]] to wield. In addition to increased Melee and Magic Attack bonuses, the staff provides unlimited amounts of [[water rune]]s as well as the [[autocast]] option when equipped.
+
+This staff can be created at level 54 [[Crafting]] by combining a [[water orb]] and [[battlestaff]]. It can also be upgraded to a [[mystic water staff]] by paying [[Thormac]] 40,000 [[coins]] to upgrade it (less with the completion of certain [[Kandarin Diary|Kandarin Diaries]]). The mystic water staff is an even stronger alternative, providing better melee and magic stat bonuses.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 7
+|aslash = -1
+|acrush = 28
+|amagic = 12
+|arange = 0
+|dstab = 2
+|dslash = 3
+|dcrush = 1
+|dmagic = 12
+|drange = 0
+|str = 35
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 5
+|attackrange = staff
+|combatstyle = Staff
+|image = [[File:Water battlestaff equipped.png|100px]]
+|altimage = [[File:Water battlestaff equipped female.png|90px]]
+}}
+{{CombatStyles|Staff|speed=5|attackrange=staff}}
+{{Autocasting|standard=yes|arceuus=no|ancient=no}}
+==Creation==
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 54
+|skill1boostable = Yes
+|skill1exp = 100
+|members = Yes
+|ticks = 2
+|ticksnote = Make-X is 3t, then 2t for the remainder.
+|mat1 = Water orb
+|mat2 = Battlestaff
+|output1 = Water battlestaff
+}}
+
+===Player-owned house===
+{{Tabber
+|tab1=Air battlestaff
+|tab1content={{Recipe
+|notes = {{SCP|Construction|54|link=yes}} if building one's own [[crystal ball space|crystal ball]]
+|ticks = 
+|members = Yes
+|facilities = Crystal ball space
+|mat1 = Air battlestaff
+|mat2 = Water rune
+|mat2quantity = 100
+|output1 = Water battlestaff
+|output1quantity = 1
+}}
+|tab2=Earth battlestaff
+|tab2content={{Recipe
+|notes = {{SCP|Construction|54|link=yes}} if building one's own [[crystal ball space|crystal ball]]
+|ticks = 
+|members = Yes
+|facilities = Crystal ball space
+|mat1 = Earth battlestaff
+|mat2 = Water rune
+|mat2quantity = 100
+|output1 = Water battlestaff
+|output1quantity = 1
+}}
+|tab3=Fire battlestaff
+|tab3content={{Recipe
+|notes = {{SCP|Construction|54|link=yes}} if building one's own [[crystal ball space|crystal ball]]
+|ticks = 
+|members = Yes
+|facilities = Crystal ball space
+|mat1 = Fire battlestaff
+|mat2 = Water rune
+|mat2quantity = 100
+|output1 = Water battlestaff
+|output1quantity = 1
+}}
+}}
+
+==Products==
+{{Uses material list|Water battlestaff}}
+
+==Item sources==
+{{Drop sources|Water battlestaff}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 22 September 2021
+|update = Wilderness & Equipment Rebalance Changes
+|change = The Magic Attack and Defence bonuses of battlestaves have been increased from +10 to +12.
+}}
+{{Subject changes footer}}
+
+{{Magic weapons}}

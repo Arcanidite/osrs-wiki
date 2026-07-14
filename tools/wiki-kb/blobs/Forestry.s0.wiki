@@ -1,0 +1,18 @@
+{{HasStrategy}}
+{{Affiliated Discord|name=ForestryCC|invite=https://discord.gg/forestrycc|discussion=Forum:Discord collaboration:ForestryCC Discord}}
+{{Infobox Activity
+|name = Forestry
+|image = [[File:Forestry logo.png|250px]]
+|release = [[28 June]] [[2023]]
+|update = Forestry: The Way of the Forester - Part One
+|members = No
+|location = Various
+|skills = [[Woodcutting]]
+|currency = [[Anima-infused bark]]
+|map = No
+|leagueRegion = No
+}}
+[[File:Forestry.png|thumb|300px|Players participating in a Forestry event.]]
+'''Forestry: The Way of the Forester'''<ref>Known during conception in the [[Update:Gielinor Gazette - April 2022|Gielinor Gazette - April 2022]] as '''Woodcutting: Way of the Forester'''</ref> is a social-focused expansion to core [[Woodcutting]], announced during the [[Winter Summit 2022]]. It aims to make Woodcutting a more social experience by "removing resource competition, introducing new events, and expanding the skill's economic offerings". All of these features can be found within Gielinor, wherever trees are, excluding the [[Woodcutting Guild]].
+
+The expansion was [[Poll:2023 Releases|polled]] with 90.7% of the votes in favour of its addition. The first phase was released on 28 June 2023, and the second phase was released on 25 October 2023.

@@ -1,0 +1,192 @@
+===Access to Slayer tasks===
+Some Slayer task monsters can be found during a quest or in other locations but require quests to be completed before they can be assigned as Slayer assignments.
+
+====Quests====
+{| class="wikitable lighttable sortable"
+!rowspan="2"|Quest
+!rowspan="12"|Monster
+!rowspan="12"|Assigned by
+|-
+|rowspan="2"|[[Barbarian Training]]
+
+|-
+|[[Waterfiend]]
+|[[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Bone Voyage]]
+|rowspan="2"|[[Fossil Island Wyverns]]
+|rowspan="2"|[[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Elemental Workshop I]]
+|-
+|rowspan="2"|[[Cabin Fever]]
+|[[Cave horror]]
+|[[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Jungle horror]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]]
+|-
+|[[Contact!]]
+|[[Scabarites|Scabarite]]
+|[[File:Nieve chathead.png|x30px|link=Nieve]]
+|-
+|[[Death to the Dorgeshuun]]
+|[[Molanisk]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]]
+|-
+|rowspan="2"|[[Death Plateau]]
+|[[Aviansie]] (can be toggled on/off)
+|[[File:Krystilia chathead.png|x30px|link=Krystilia]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Spiritual creatures]]
+|[[File:Krystilia chathead.png|x30px|link=Krystilia]][[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Desert Treasure I]]
+|[[Dust devil]]
+|[[File:Krystilia chathead.png|x30px|link=Krystilia]][[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|rowspan="6"|[[Dragon Slayer I]] (started)
+|[[Black dragon]]
+|[[File:Krystilia chathead.png|x30px|link=Krystilia]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Blue dragon]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Bronze dragon]]
+|[[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]]
+|-
+|[[Iron dragon]]
+|[[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Red dragon]] (can be toggled on/off)
+|[[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Steel dragon]]
+|[[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|rowspan="2"|[[Dragon Slayer II]]
+|[[Adamant dragon]]
+|[[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Rune dragon]]
+|[[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Elemental Workshop I]]
+|[[Skeletal wyvern]]
+|[[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Ernest the Chicken]]
+|[[Killerwatt]]
+|[[File:Mazchna chathead.png|x30px|link=Mazchna]]
+|-
+|[[The Fremennik Exiles]]
+|[[Basilisk knight]] (alternative to normal [[basilisk]])
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Haunted Mine]]
+|[[Terror Dog]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]]
+|-
+|[[Horror from the Deep]]
+|[[Dagannoth]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Legends' Quest]]
+|[[Shadow warrior]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]]
+|-
+|rowspan="2"|[[Lost City]]
+|[[Mutated zygomite]]
+|[[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Otherworldly being]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]]
+|-
+|[[Lunar Diplomacy]]
+|[[Suqah]]
+|[[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Monkey Madness II]]
+|[[Demonic gorilla]] (alternative to [[black demon]])
+|[[File:Turael chathead.png|x30px|link=Turael]][[File:Spria chathead.png|x30px|link=Spria]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Mourning's End Part II]]
+|[[Dark beast]]
+|[[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Olaf's Quest]] (partial completion)
+|[[Brine rat]]
+|[[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|rowspan="2"|[[Path of Glouphrie]]
+|[[Warped terrorbird]] (can be toggled on/off)
+|[[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Warped tortoise]] (can be toggled on/off)
+|[[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Perilous Moons]]
+|[[Lesser nagua]]
+|[[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]]
+|-
+|[[A Porcine of Interest]]
+|[[Sourhog]]
+|[[File:Spria chathead.png|x30px|link=Spria]]
+|-
+|rowspan="12"|[[Priest in Peril]]
+|[[Aberrant spectre]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Abyssal demon]] (or completion of [[Fairytale II - Cure a Queen]])
+|[[File:Krystilia chathead.png|x30px|link=Krystilia]][[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Araxyte]]
+|[[File:Turael chathead.png|x30px|link=Turael]][[File:Spria chathead.png|x30px|link=Spria]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Banshee]]
+|[[File:Turael chathead.png|x30px|link=Turael]][[File:Spria chathead.png|x30px|link=Spria]][[File:Mazchna chathead.png|x30px|link=Mazchna]]
+|-
+|[[Bloodveld]]
+|[[File:Krystilia chathead.png|x30px|link=Krystilia]][[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Crawling hand]]
+|[[File:Turael chathead.png|x30px|link=Turael]][[File:Spria chathead.png|x30px|link=Spria]][[File:Mazchna chathead.png|x30px|link=Mazchna]]
+|-
+|[[Gargoyle]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Ghoul]]
+|[[File:Mazchna chathead.png|x30px|link=Mazchna]][[File:Vannaka chathead.png|x30px|link=Vannaka]]
+|-
+|[[Infernal mage]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]]
+|-
+|[[Nechryael]]
+|[[File:Krystilia chathead.png|x30px|link=Krystilia]][[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Vampyre]]
+|[[File:Mazchna chathead.png|x30px|link=Mazchna]][[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Konar quo Maten chathead.png|x30px|link=Konar quo Maten]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Werewolf]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]]
+|-
+|[[Regicide]] (partial completion)
+|[[Slayer task/Elves|Elves]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|-
+|[[Royal Trouble]]
+|[[Sea snake]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]]
+|-
+|[[Rum Deal]]
+|[[Fever spider]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]]
+|-
+|[[Skippy and the Mogres]]
+|[[Mogres]]
+|[[File:Mazchna chathead.png|x30px|link=Mazchna]][[File:Vannaka chathead.png|x30px|link=Vannaka]]
+|-
+|[[Troubled Tortugans]]
+|[[Gryphon|Gryphons]]
+|[[File:Vannaka chathead.png|x30px|link=Vannaka]][[File:Chaeldar chathead.png|x30px|link=Chaeldar]][[File:Nieve chathead.png|x30px|link=Nieve]][[File:Duradel chathead.png|x30px|link=Duradel]]
+|}

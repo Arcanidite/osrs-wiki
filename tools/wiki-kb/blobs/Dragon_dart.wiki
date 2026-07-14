@@ -1,0 +1,163 @@
+{{External|rs}}
+{{Infobox Item
+|version1 = Unpoisoned
+|version2 = Poison
+|version3 = Poison+
+|version4 = Poison++
+|bucketname1 = (unp)
+|bucketname2 = (p)
+|bucketname3 = (p+)
+|bucketname4 = (p++)
+|name1 = Dragon dart
+|name2 = Dragon dart(p)
+|name3 = Dragon dart(p+)
+|name4 = Dragon dart(p++)
+|image1 = [[File:Dragon dart.png]]
+|image2 = [[File:Dragon dart(p).png]]
+|image3 = [[File:Dragon dart(p+).png]]
+|image4 = [[File:Dragon dart(p++).png]]
+|release = [[11 June]] [[2007]]
+|update = Impetuous Impulses
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = Yes
+|noteable = No
+|options = Wield, Drop
+|examine1 = A deadly throwing dart with a dragon tip.
+|examine2 = A deadly poisoned dart with a dragon tip.
+|examine3 = A deadly poisoned dart with a dragon tip.
+|examine4 = A deadly poisoned dart with a dragon tip.
+|value = 500
+|weight = 0.000
+|exchange = Yes
+|id1 = 11230
+|id2 = 11231
+|id3 = 11233
+|id4 = 11234
+}}
+{{Synced switch
+|version1 = [[File:Dragon dart detail.png|left|100px]]
+|version2 = [[File:Dragon dart(p) detail.png|left|100px]]
+|version3 = [[File:Dragon dart(p+) detail.png|left|100px]]
+|version4 = [[File:Dragon dart(p++) detail.png|left|100px]]
+}}
+'''Dragon darts''' are a type of [[Ranged]] throwing weapons. Dragon darts require level 60 Ranged to wield. They can be obtained by using the [[Fletching]] skill, [[trading]] with another player, or via [[dragon impling]]s. Dragon darts can be [[Poison#Weapon poisoning|poisoned]] and can be wielded with a [[shield]] or [[god book]] for protection, or added into a [[toxic blowpipe]].
+
+To create dragon darts the player must have at least level 95 Fletching. Players must obtain [[dragon dart tip]]s (these cannot be [[smithed]]) and then attach [[feather]]s to the dart tips. 250 Fletching experience is given per set of dragon darts created.
+
+Fletching some dragon darts while in the [[Bedabin Camp]] is required to complete the [[Desert Diary#Elite|Elite Desert Diary]].
+
+==Combat stats==
+{{Infobox Bonuses
+|version1 = Unpoisoned
+|version2 = Poison
+|version3 = Poison+
+|version4 = Poison++
+|bucketname1 = (unp)
+|bucketname2 = (p)
+|bucketname3 = (p+)
+|bucketname4 = (p++)
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = 0
+|rstr = +35
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 3
+|attackrange = 3
+|combatstyle = Thrown
+|image = [[File:Dragon dart equipped.png|100px]]
+|altimage = [[File:Dragon dart equipped female.png|100px]]
+}}
+
+{{CombatStyles|Thrown|speed=3|attackrange=3}}
+
+==Creation==
+{{Switch infobox
+|text1 = Unpoisoned
+|item1 = {{Recipe
+|skill1 = Fletching
+|skill1lvl = 95
+|skill1boostable = Yes
+|skill1exp = 250
+|members = Yes
+|ticks = 0
+|mat1 = Dragon dart tip
+|mat1quantity = 10
+|mat2 = Feather
+|mat2quantity = 10
+|output1 = Dragon dart
+|output1quantity = 10
+}}
+|text2 = Poison
+|item2 = {{Recipe
+|members = Yes
+|ticks = 0
+|mat1 = Dragon dart
+|mat1quantity = 5
+|mat2 = Weapon poison
+|mat2quantity = 1
+|output1 = Dragon dart(p)
+|output1quantity = 5
+}}
+|text3 = Poison+
+|item3 = {{Recipe
+|members = Yes
+|ticks = 0
+|mat1 = Dragon dart
+|mat1quantity = 5
+|mat2 = Weapon poison(+)
+|mat2quantity = 1
+|output1 = Dragon dart(p+)
+|output1quantity = 5
+}}
+|text4 = Poison++
+|item4 = {{Recipe
+|members = Yes
+|ticks = 0
+|mat1 = Dragon dart
+|mat1quantity = 5
+|mat2 = Weapon poison(++)
+|mat2quantity = 1
+|output1 = Dragon dart(p++)
+|output1quantity = 5
+}}
+}}
+
+==Item sources==
+{{Drop sources|Dragon dart}}
+
+==Used in recommended equipment==
+{{Used in recommended equipment|Dragon dart}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 30 June 2021
+|update = Phosani's Nightmare
+|change = The dragon dart's ranged bonuses has been changed:
+* Ranged Attack bonus decreased from +18 to 0.
+* Ranged Strength bonus increased from +20 to +35.
+}}
+{{Subject changes footer}}
+
+==Trivia==
+[[File:Toxic blowpipe - dragon darts.gif|thumb|right|200px|The unique projectile animation when using a toxic blowpipe with dragon darts.]]
+* As they do not have the colour of [[Orikalkum]], they are most likely made from parts of a dragon instead, similar to [[Dragon arrowtips]].
+* Unlike other darts, Dragon darts have a unique projectile animation when thrown or shot out of a [[toxic blowpipe]].
+* Dragon darts are the only [[Dragon equipment#Weapons|dragon weapon]] aside from the [[dragon cane]] that does not possess a [[special attack]].
+{{Ranged weapons}}
+{{Dragon equipment}}
+[[Category:Darts]]
+[[Category:Weapons that inflict poison]]

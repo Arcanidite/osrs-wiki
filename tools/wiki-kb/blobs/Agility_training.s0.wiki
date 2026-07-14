@@ -1,0 +1,4 @@
+{{External|rs|rsc}}
+'''Agility''' training involves a lot of point-clicking and some methods may require a lot of focus to maximise experience gain. Higher [[Agility]] level increases one's ability to regenerate [[run energy]] and grants access to various [[shortcuts]].
+
+For the fastest rates, players should always run and use [[stamina potion]]s (or some other form of run energy restoration) to maintain run energy if needed. Keeping [[Weight-reducing clothing|weight at 0 or below]] is helpful, but not necessary. It is recommended to boost the Agility level by using [[summer pies]] or [[agility potion]]s to train on a higher-level course earlier than it is available. Players who are failing obstacles very frequently or have low [[Hitpoints]] are advised to bring some food to restore health.

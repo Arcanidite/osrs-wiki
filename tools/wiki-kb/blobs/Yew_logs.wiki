@@ -1,0 +1,118 @@
+{{External|rs|rsc=Yew Logs|dw=Yew Logs}}
+{{Infobox Item
+|name = Yew logs
+|image = [[File:Yew logs.png]]
+|release = [[25 March]] [[2002]]
+|update = Latest RuneScape News (25 March 2002)
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Logs cut from a yew tree.
+|value = 160
+|weight = 2.000
+|exchange = Yes
+|id = 1515
+}}
+[[File:Yew logs detail.png|130x130px|left]]
+'''Yew logs''' are logs obtained from cutting [[yew tree]]s, which require at least level 60 [[Woodcutting]] for players to cut. They give 175 [[experience]] when cut with an [[axe]]. Players can burn these logs with the [[Firemaking]] skill at level 60, granting 202.5 Firemaking experience.
+
+Yew logs can also be made into bows, stock, and arrow shafts using the [[Fletching]] skill. When the log is cut into a [[yew longbow (u)]] at level 70, it yields 75 experience. Cutting a [[yew shortbow (u)]] at level 65 will give 67.5 experience. Stringing the unstrung bows will give the same experience as for cutting them.
+
+One full inventory of yew logs gives 4,900 Woodcutting experience. Players would need to cut {{formatnum:{{Items Needed|Goal=99|Level=60|ItemXp=175}}}} yew logs to go from 60 to 99 Woodcutting.
+
+Yew logs can also be used to travel to [[Castle Wars]] on the [[Balloon transport system]], costing 10 logs on the initial trip, and 1 log for every trip following that.
+
+6 yew logs can be used to light an [[Abyssal lantern (yew logs)|Abyssal lantern]], requiring 60 Firemaking.
+
+==Skill info==
+{{Woodcutting info
+|name = Yew tree
+|level = 60
+|xp = 175
+|tree = [[Yew tree]]
+|tool = [[Axe]]
+|time = 59.4 seconds
+}}
+
+{{Firemaking info
+|version1 = Tinderbox
+|version2 = Bow
+|version3 = Barbarian pyre
+|version4 = Bonfire
+|skill2name = Crafting
+|name = Yew logs
+|skill1lvl1 = 60
+|skill1lvl2 = 80
+|pyrelevel = 70
+|craftxp = 50.6
+|skill1lvl3 = 70
+|skill2lvl3 = 70
+|skill1lvl4 = 60
+|skill1exp1 = 202.5
+|skill1exp2 = 202.5
+|skill1exp3 = 202.5
+|skill1exp4 = 202.5
+|facility1 = N/A
+|facility2 = N/A
+|facility3 = [[Funeral pyre (Barbarian)|Barbarian funeral pyre]]
+|facility4 = [[Fire]] or [[Forester's Campfire]]
+|tool1 = [[Tinderbox]]
+|tool2 = [[Bow]]
+|tool3 = [[Tinderbox]] or [[bow]], and an [[axe]]
+|tool4 = N/A
+|type = logs
+}}
+
+==Money making==
+{{Mmgsection|Cutting yew logs|Cutting yew logs (free-to-play)}}
+
+==Experience from logs==
+
+*Each log gives 175 [[Woodcutting]] [[experience]] when cut (Woodcutting level 60 required). When wearing the full [[Lumberjack outfit]], each log gives 179.5 experience when cut.
+*Lighting a log gives 202.5 [[Firemaking]] experience (Firemaking level 60 required).
+*Making 75 [[arrow shafts]] gives 25 [[Fletching]] experience (Fletching level 60 required).
+*Making an [[Yew shortbow (u)|unstrung yew shortbow]] gives 67.5 [[Fletching]] experience and 67.5 additional experience when adding [[bow string]] (Fletching level 65 required).
+*Making an [[Yew longbow (u)|unstrung yew longbow]] gives 75 Fletching experience and 75 additional experience when adding bow string (Fletching level 70 required).
+*Making a full [[yew stock]] gives 50 Fletching experience (Fletching level 69 required).
+*Making a [[yew shield]] requires two logs and gives 150 Fletching experience, or 75 experience per log (Fletching level 72 required).
+==Products==
+{{Uses material list|Yew logs}}
+==Item sources==
+{{Drop sources|Yew logs}}
+
+==Treasure Trails==
+*{{SherlockChallenge|Cutting yew logs|elite}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The item was graphically updated with the release of [[Farming]].
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Yew logs detail (beta).png|center|300x150px]]
+|[[File:Yew logs detail (historical).png|center|300x150px]]
+|[[File:Yew logs detail.png|center|300x150px]]
+|-
+|[[File:Yew logs (beta).png|center]]
+|[[File:Yew logs (historical).png|center]]
+|[[File:Yew logs.png|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 ⁠–<br/>11 July 2005
+|11 July 2005 ⁠–<br/>present
+|}
+
+{{Logs}}
+{{Fletching}}
+[[Category:Woodcutting]]
+[[Category:Fletching]]
+[[Category:Firemaking]]

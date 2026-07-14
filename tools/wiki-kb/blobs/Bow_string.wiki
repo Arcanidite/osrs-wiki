@@ -1,0 +1,138 @@
+{{External|rs=Bowstring|rsc}}
+{{Infobox Item
+|name = Bow string
+|image = [[File:Bow string.png]]
+|release = [[25 March]] [[2002]]
+|update = Latest RuneScape News (25 March 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = I need a bow stave to attach this to.
+|value = 10
+|weight = 0.014
+|exchange = Yes
+|id = 1777
+}}
+
+[[File:Bow string detail.png|left|120px]]
+A '''bow string''' is used in the [[Fletching]] [[skill]] to create [[bows]]. It is created by using [[flax]] on a [[spinning wheel]], or by casting the [[Spin Flax]] spell.
+
+Using a spinning wheel, it takes 50.2 seconds to spin a full [[inventory]] of 28 [[flax]], requiring 10 [[Crafting]] and granting a total of 420 [[experience]]. 
+
+The [[Medium Kandarin Diary]] allows players to spin flax 33% faster at the spinning wheel in [[Seers' Village]]. A full inventory of 28 flax takes 33.6 seconds after completion of the diary, not including banking time.
+
+==Creation==
+===Spinning wheel===
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 10
+|skill1boostable = Yes
+|skill1exp = 15
+|members = Yes
+|ticks = 3
+|facilities = Spinning wheel
+|mat1 = Flax
+|output1 = Bow string
+|output1subtxt = Spinning wheel
+}}
+
+===Spin Flax===
+{{Recipe
+|skill1 = Magic
+|skill1lvl = 76
+|skill1boostable = Yes
+|skill1exp = 75
+|skill2 = Crafting
+|skill2lvl = 61
+|skill2boostable = Yes
+|skill2exp = 75
+|notes = {{SCP|Quest}} Completion [[Lunar Diplomacy]]
+|members = Yes
+|ticks = 5
+|mat1 = Flax
+|mat1quantity = 5
+|mat2 = Nature rune
+|mat2quantity = 2
+|mat3 = Astral rune
+|mat4 = Air rune
+|mat4quantity = 5
+|output1 = Bow string
+|output1quantity = 5
+|output1subtxt = Spin Flax
+}}
+
+== Strategy ==
+
+=== Manual Spinning ===
+
+==== Picking ====
+Historically, the most popular place to spin flax into bowstrings was Seers' Village, as there is a [[flax field]] not far from the spinning wheel and bank. 
+
+It is also an option to pick flax in the south-east corner of [[Lletya]], spin it at the wheel in Lletya, and bank.
+
+There is also a spinning wheel in [[Quetzacalli Gorge]] with flax about 10 tiles away from the wheel, and the bank 20 tiles away from the wheel.
+
+Lastly, there is a spinning wheel at [[Nemus Retreat]] within [[Auburn Valley]] located approximately 6 tiles away from the flax and 17 tiles away from the bank.
+
+If you decide to pick and spin the flax yourself, having 30 [[Agility]] and 0kg as weight, you can average around 840 bowstrings per hour picking flax at [[Land's End]] and spinning it at Lumbridge, 740 bowstrings per hour picking flax at [[Gnome Stronghold]] and spinning it at Lumbridge, and 650 bowstrings per hour picking and spinning flax at Seers' Village.
+
+==== Pre-picked ====
+With the addition of the [[bank]] at the top of [[Lumbridge]] Castle, it became on par with, or slightly better than, Seers' Village, if flax is pre-picked. Including travel time, an inventory can be spun in approximately 75 seconds here, which equates to 48 inventories, 1344 bow strings, and just over 20,000 Crafting experience per hour.
+
+With completion of [[The Fremennik Isles]] [[quest]], an even better spinning wheel can be used on [[Neitiznot]]. While technically farther from a bank than Lumbridge, travelling to the bank in Neitiznot does not require passing through a staircase, thus making travel easier. In order to use the spinning wheel, players must have started and have reached the section of the quest where they are able to travel to Neitiznot.
+
+Another alternative is for those who have completed the [[Bone Voyage]] quest, and repaired the spinning wheel in the [[Museum Camp|Museum Camp.]] At 24 tiles and one click from the bank, this spinning wheel provides an even closer option for those spinning pre-picked [[flax]].
+
+==== Bales of Flax ====
+As of Varlamore: The Final Dawn, it is now possible to use [[Bale of flax|bales of flax]], obtained from rummaging through [[vale offerings]], with a [[bow string spool]] at the Seers' Village spinning wheel to remove the downside of running to and from the bank and to take full advantage of the increased speed of the spinning wheel. This can drastically reduce banking time depending on the capacity the player has unlocked for the bow string spool.
+
+=== Spin Flax Spell ===
+Perfect usage of the [[Spin Flax]] spell can result in approximately 6000 bow strings an hour, and can most easily be achieved through the use of a [[Rune pouch]], [[Bow string spool]], and [[Bale of flax|Bales of flax]]. With the required runes in the rune pouch, simply open a bale of flax, cast Spin Flax five times, then open the next bale of flax while the fifth casts to continue the process.
+
+The following is recommended when utilising this method:
+
+* Upgrade the Bow string spool to minimise downtime,
+* Place the bales of flax in the inventory such that the item overlaps with the Spin Flax spell when swapping between the inventory and spell book,
+* Utilise [[Keybind|Keybindings]] to swap between the inventory and spell book using the keyboard, leaving the mouse cursor free to hover over the inventory.
+
+=== Temple Trekking ===
+The best way for early to mid-game [[Ironmen]] to get bow strings is the [[Temple Trekking]] minigame, requiring minimal [[combat]] stats and supplies.
+
+Picking the easiest route with the easiest follower allows them to avoid all combat events and can yield about 3,000 bow strings an hour. Using potions to restore run energy and the [[plank sack]] to repair the bridges can yield upwards of 5,000 bow strings an hour.
+
+==Money making==
+{{Mmgsection|Casting Spin Flax|Spinning flax to bow strings}}
+
+==Products==
+{{Uses material list|Bow string}}
+==Item sources==
+{{Drop sources|Bow string}}
+===Shop locations===
+{{Store locations list|Bow string}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|daterange = 26 – 31 January 2005
+|change = The item's inventory sprite was slightly adjusted.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Bow string detail (historical).png|center|300x150px]]
+|[[File:Bow string detail.png|center|300x150px]]
+|-
+|[[File:Bow string (historical).png|center]]
+|[[File:Bow string.png|center]]
+|-
+|29 March 2004 ⁠–<br/>26-31 January 2005
+|26-31 January 2005 –<br/>present
+|}
+
+{{Fletching}}
+[[Category:Crafting items]]

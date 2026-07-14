@@ -1,0 +1,35 @@
+==Making Guthix rest==
+{{See also|Money making guide/Making Guthix rests}}
+A medium-intensity but profitable way to train Herblore is to make [[Guthix rest]], requiring 18 Herblore and partial completion of the [[One Small Favour]] quest. Brewing Guthix rest differs from other methods of training the skill, as care must be taken to not add extra herbs to the [[herb tea mix]]; doing so grants no experience and ruins the tea. If all ingredients are in the player's inventory, they can make the tea in one step, and subsequent teas are automatically made after making just one of them, granting 59 experience for each tea. Players should note that the [[amulet of chemistry]] has no effect when brewing Guthix rest. 
+
+Making Guthix Rest requires a [[cup of hot water]], 2 [[Guam leaf|guam]], 1 [[marrentill]], and  1 [[harralander]]. Using a cup of hot water with any of the herbs will start the process. [[Ironman Mode|Ironman]] accounts or anyone looking to save money on ingredients can acquire cups of hot water by casting [[Humidify]] on an [[empty cup]] then using the [[cup of water]] on a range.
+
+Due to the number of ingredients per tea, only five can be made per inventory, requiring 5 cups of hot water, 10 guam, 5 marrentill, and 5 harralander. 
+
+With moderate concentration it is possible to make around 1400 cups of 3-dose Guthix rest per hour, costing {{Coins|{{GEP|Cup of hot water|1400}}+{{GEP|Guam leaf|2800}}+{{GEP|Marrentill|1400}}+{{GEP|Harralander|1400}}}}. This results in 82,600 Herblore experience gained and a profit of {{Coins|{{GEPT|Guthix rest(4)|1050}}-({{GEP|Cup of hot water|1400}}+{{GEP|Guam leaf|2800}}+{{GEP|Marrentill|1400}}+{{GEP|Harralander|1400}})}} when using [[Bob Barter (herbs)|Bob Barter]] at the [[Grand Exchange]] to decant the teas into 4-dose variants before selling.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-4 align-center-6"
+!{{SCP|Herblore}} Level
+! colspan="2" |Potion
+! colspan="2" |Base
+! colspan="2" |Secondary
+!XP
+!XP/Hour
+!Ingredient cost
+!Cost/XP
+!Profit/Potion
+!Profit/XP
+!Profit/Hour
+|-
+|18
+|{{plinkt|Guthix rest}}
+|{{plinkt|Cup of hot water}}
+|{{plinkp|Guam leaf}}<br />{{plinkp|Marrentill}}<br />{{plinkp|Harralander}}||[[Guam leaf]] (x2)<br />[[Marrentill]]<br />[[Harralander]]
+|59
+|82,600
+|{{Coins|{{GEP|Guam leaf|2)}}+{{GEP|Marrentill}}+{{GEP|Harralander}}}}
+|{{Coins|({{GEP|Cup of hot water}}+{{GEP|Guam leaf|2)}}+{{GEP|Marrentill}}+{{GEP|Harralander}})/59}}
+|{{Coins|{{GEPT|Guthix rest(4)|0.75}}-{{GEP|Cup of hot water}}-{{GEP|Guam leaf|2)}}-{{GEP|Marrentill}}-{{GEP|Harralander}}}}
+|{{Coins|({{GEPT|Guthix rest(4)|0.75}}-({{GEP|Cup of hot water}}+{{GEP|Guam leaf|2}}+{{GEP|Marrentill}}+{{GEP|Harralander}}))/59}}
+|{{Coins|{{GEPT|Guthix rest(4)|1050}}-({{GEP|Cup of hot water|1400}}+{{GEP|Guam leaf|2800}}+{{GEP|Marrentill|1400}}+{{GEP|Harralander|1400}})}}
+|}

@@ -1,0 +1,16 @@
+==Creation==
+{{Recipe
+|notes = {{SCP|Quest}} Partial completion of [[Monkey Madness II]]
+|members = Yes
+|ticks = 
+|facilities = Zooknock
+|mat1 = Monkey talisman
+|mat1cost = No
+|mat2 = Kruk's paw
+|mat2cost = No
+|output1 = Kruk monkey greegree
+|output1cost = No
+}}
+
+{{Monkey greegrees}}
+{{Monkey Madness II}}

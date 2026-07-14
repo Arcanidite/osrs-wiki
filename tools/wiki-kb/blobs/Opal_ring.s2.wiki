@@ -1,0 +1,13 @@
+==Creation==
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 10
+|members = Yes
+|ticks = 3
+|tools = Ring mould
+|facilities = Furnace
+|mat1 = Opal
+|mat2 = Silver bar
+|output1 = Opal ring
+}}

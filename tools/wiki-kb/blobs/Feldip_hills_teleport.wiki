@@ -1,0 +1,34 @@
+{{Infobox Item
+|name = Feldip hills teleport
+|image = [[File:Feldip hills teleport.png]]
+|release = [[12 June]] [[2014]]
+|update = Treasure Trail Expansion
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Teleport, Drop
+|examine = Teleports you to Feldip hills.
+|value = 10
+|weight = 0.000
+|exchange = Yes
+|id = 12404
+|leagueRegion = General
+}}
+[[File:Feldip hills teleport detail.png|left|170px]]
+'''Feldip hills teleport''' scrolls are consumable [[teleport scrolls]] that teleport the player to the [[Feldip Hills]], near the [[Hunting expert]]. They can be obtained from all levels of [[Treasure Trails]] except beginner.
+
+There are no requirements to use this teleport.[[File:Reading teleport scroll.gif|left|frame|A player using a scroll to teleport.]]
+
+==Destination==
+{{Map|2541,2925|mtype=square|r=2|align=left}}{{clear|left}}
+
+==Item sources==
+{{Drop sources|Feldip hills teleport}}
+
+{{Universal clue rewards}}
+[[Category:Feldip Hills]]
+{{Teleportation items}}
+[[Category:Collection log items]]

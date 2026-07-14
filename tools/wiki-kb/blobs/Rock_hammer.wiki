@@ -1,0 +1,34 @@
+{{External|rs}}
+{{Infobox Item
+|name = Rock hammer
+|image = [[File:Rock hammer.png]]
+|release = [[26 January]] [[2005]]
+|update = Slayer Skill
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = I can even smash stone with this.
+|value = 500
+|weight = 2.267
+|exchange = Yes
+|id = 4162
+}}
+[[File:Rock hammer detail.png|left|130px]]
+A '''rock hammer''' is [[Slayer#Slayer equipment|Slayer equipment]] that is required to kill [[gargoyle]]s. Players can buy a rock hammer from any [[Slayer Master]] for 500 coins.
+
+While damage can be done to them with a regular weapon at 75 [[Slayer]], the hammer must be used on gargoyles to finish them off when they have 10 [[hitpoints]] or less left, unless the player has unlocked the ''Gargoyle Smasher'' ability via spending 120 [[slayer reward point#Rewards|Slayer reward points]], which allows players to automatically use the hammer to finish off the gargoyle.
+
+==Shop locations==
+{{Store locations list|Rock hammer}}
+
+==Trivia==
+*Players cannot wield the rock hammer.
+*The rock hammer is never actually seen in the gargoyle killing animation; instead, the player slams their currently equipped weapon downward as if it were a hammer.
+*Despite the fact that the examine information says it can smash stone, it cannot be used to do anything besides finishing off gargoyles.
+*Its inventory sprite resembles that of the [[granite maul]]. Prior to the debut of the [[Grand Exchange]], this item was frequently used in scams, and it is still advisable to exercise caution when dealing with these items through the trade screen.
+
+{{Slayer equipment}}

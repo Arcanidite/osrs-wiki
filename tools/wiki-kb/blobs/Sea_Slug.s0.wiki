@@ -1,0 +1,14 @@
+{{External|rs|rsc}}
+{{Redirect|Sea slug|the species|Sea slug (race)}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Sea Slug
+|number = 36
+|image = [[File:Sea Slug.png|300px]]
+|release = [[9 September]] [[2002]]
+|update = Sea Slug Quest
+|members = Yes
+|series = [[Quests/Series#Temple Knight|Temple Knight]], #3
+|developer = [[Mod Tom|Tom W]]
+}}
+'''Sea Slug''' is the first quest in the Sea Slug series, and is the only piece of content to prominently feature the [[Fishing Platform]].

@@ -1,0 +1,32 @@
+==Quests for Firemaking experience==
+{{Main|Quest experience rewards}}
+{| class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!data-sort-type="number"|Firemaking<br/>requirement
+!Other requirements
+!Enemy to defeat
+|-
+|[[The Giant Dwarf]]||1,500||{{SCP|Firemaking|16|sort=yes}}||{{SCP|Crafting|12}}, {{SCP|Magic|33}}, {{SCP|Thieving|14}}
+|None
+|-
+|[[Heroes' Quest]]||1,575|| -||{{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Fishing|53}}, {{SCP|Herblore|25}}, {{SCP|Mining|50}}
+|Multiple high level NPCs
+|-
+|[[Enlightened Journey]]||4,000||{{SCP|Firemaking|20|sort=yes}}||{{SCP|Quest|20}}, {{SCP|Farming|30}}, {{SCP|Crafting|36}}
+|None
+|-
+|[[Enakhra's Lament]]||7,000||{{SCP|Firemaking|45|sort=yes}}||{{SCP|Crafting|50}}, {{SCP|Prayer|43}}, {{SCP|Magic|39}}, {{SCP|Mining|45}}
+|None
+|-
+|[[Making Friends with My Arm]]||40,000||{{SCP|Firemaking|66|sort=yes}}||{{SCP|construction|35}}, {{SCP|mining|72}}, {{SCP|Agility|68}}
+|Multiple high level NPCs
+|-
+!Total
+!54,075
+!colspan="2"|
+!
+|}
+{{Training guides}}
+[[Category:Firemaking]]
+[[Category:Members]]

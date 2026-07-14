@@ -1,0 +1,269 @@
+{{External|rs|rsc}}
+{{Infobox Item
+|name = Molten glass
+|image = [[File:Molten glass.png]]
+|release = [[18 March]] [[2002]]
+|update = Latest RuneScape News (18 March 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Hot glass ready to be blown into useful objects.
+|value = 3
+|weight = 0.907
+|exchange = Yes
+|id = 1775
+}}
+[[File:Molten glass detail.png|left|140px]]
+'''Molten glass''' is used in the [[Crafting]] and [[Construction]] skills, as well as some [[quests]], to form glass items. It is created through the Crafting skill by using a [[bucket of sand]] and [[soda ash]] on a [[furnace]], granting 20 Crafting [[experience]]. This only requires level 1 Crafting. Alternatively, players can use the [[Lunar spell]] [[Superglass Make]], which combines all buckets of sand and all [[seaweed]] or soda ash in the player's inventory into molten glass, granting 10 Crafting experience per pair of items.
+
+Molten glass is used in some quests such as [[Observatory Quest]], [[Horror from the Deep]], [[Wanted!]], [[Desert Treasure I]], [[Another Slice of H.A.M.]] and [[The Fremennik Exiles]]. Although molten glass cannot be bought in any shop, buckets of sand and soda ash are available from the [[charter ship shop]]s. This is especially useful for [[ironmen]], who could buy both items and then smelt them in a furnace. For larger amounts, [[giant seaweed]] and [[sandstone]] are efficient sources of the materials required; as a result, making and blowing glass is a common method of training Crafting.
+
+==Comparing yield and experience==
+When using [[soda ash]] and [[buckets of sand]] in a [[furnace]], the [[molten glass]] yield is 1.0 molten glass per soda ash and bucket of sand.
+
+When using [[Superglass Make]] with [[soda ash]] and [[buckets of sand]], the [[molten glass]] yield is 1.3 molten glass per soda ash and bucket of sand.
+
+When used on a fire, giant seaweed turns into six [[soda ash]] upon successfully cooking, rather than just one given by [[seaweed|normal seaweed]]. You can however fail, resulting in only one [[soda ash]]. Note that [[Cooking gauntlets]] '''do not''' decrease the cooking fail chance, however the [[Hosidius Kitchen]] cooking range effect still applies.
+
+When used in conjunction with the [[Superglass Make]] spell, giant seaweed similarly acts as six regular seaweed and gives 60 [[Crafting]] experience per seaweed when cast. The combination of two giant seaweed and 12 buckets of sand yields on average 1.45 [[molten glass]] per bucket of sand, while the combination of three giant seaweed and 18 buckets of sand yields an average of 1.6 glass per sand, although with the latter some of the glass will fall on the floor as it overflows from the inventory. If it is not picked up, it results in an average of 1.45 glass per sand. Not picking up the glass will result in a higher rate of production, at a higher cost of materials. Since both methods using three giant seaweed and 18 buckets result in both a higher yield and rate, the combination of two giant seaweed and 12 buckets of sand is not recommended.
+
+To increase input resource efficiency, Superglass Make can be cast in [[Ferox Enclave]] with an open [[looting bag]] to allow for quickly picking up the extra glass that goes on the floor. However, due to the [[Wilderness]] restrictions, spell icons will not grow in size to reduce empty space in the [[spellbook]] while filters are enabled on desktop clients.
+
+The average Crafting experience per [[giant seaweed]] and rate of glass production varies:
+*For an average of 1.45 glass per sand (two giant seaweed and 12 buckets of sand), each giant seaweed equals 538.5 experience when making [[lantern lens]]es or 669 experience when making [[empty light orb]]s. Using this method can produce glass at a rate of approximately 10,000 per hour;
+*For an average of 1.45 glass per sand (three giant seaweed and 18 buckets of sand ''without'' picking up the excess), each giant seaweed equals 538.5 experience when making lantern lenses or 669 experience when making empty light orbs. Using this method can produce glass at a rate of approximately 15,000 per hour;
+*For an average of 1.6 glass per sand (three giant seaweed and 18 buckets of sand ''and'' picking up the excess), each giant seaweed equals 588 experience when making lantern lenses or 732 experience when making empty light orbs. Using this method can produce glass at a rate of approximately 13,500 per hour.
+These numbers include the experience from casting Superglass Make.
+
+==Creation==
+===Furnace===
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 20
+|members = Yes
+|ticks = 2
+|facilities = Furnace
+|mat1 = Bucket of sand
+|mat2 = Soda ash
+|output1 = Molten glass
+|output1subtxt = Normal furnace
+}}
+===Superglass Make===
+Due to the random nature of the [[Superglass Make]] spell, the displayed output quantities are averages.
+{{Switch infobox
+|text1 = Giant seaweed
+|item1 = {{Recipe
+|skill1 = Crafting
+|skill1lvl = 61
+|skill1boostable = Yes
+|skill1exp = 180
+|skill2 = Magic
+|skill2lvl = 77
+|skill2boostable = Yes
+|skill2exp = 78
+|notes = {{SCP|Quest}} Requires completion of [[Lunar Diplomacy]]
+|members = Yes
+|ticks = 6
+|mat1 = Bucket of sand
+|mat1quantity = 18
+|mat2 = Giant seaweed
+|mat2quantity = 3
+|mat3 = Astral rune
+|mat3quantity = 2
+|mat4 = Fire rune
+|mat4quantity = 6
+|mat5 = Air rune
+|mat5quantity = 10
+|output1 = Molten glass
+|output1quantity = 28.8
+|output1quantitynote = On average
+|output1subtxt = Superglass Make - giant seaweed
+}}
+|text2 = Seaweed
+|item2 = {{Recipe
+|skill1 = Crafting
+|skill1lvl = 61
+|skill1boostable = Yes
+|skill1exp = 130
+|skill2 = Magic
+|skill2lvl = 77
+|skill2boostable = Yes
+|skill2exp = 78
+|notes = {{SCP|Quest}} Requires completion of [[Lunar Diplomacy]]
+|members = Yes
+|ticks = 6
+|mat1 = Bucket of sand
+|mat1quantity = 13
+|mat2 = Seaweed
+|mat2quantity = 13
+|mat3 = Astral rune
+|mat3quantity = 2
+|mat4 = Fire rune
+|mat4quantity = 6
+|mat5 = Air rune
+|mat5quantity = 10
+|output1 = Molten glass
+|output1quantity = 16.9
+|output1quantitynote = On average
+|output1subtxt = Superglass Make - seaweed
+}}
+|text3 = Soda ash
+|item3 = {{Recipe
+|skill1 = Crafting
+|skill1lvl = 61
+|skill1boostable = Yes
+|skill1exp = 130
+|skill2 = Magic
+|skill2lvl = 77
+|skill2boostable = Yes
+|skill2exp = 78
+|notes = {{SCP|Quest}} Requires completion of [[Lunar Diplomacy]]
+|members = Yes
+|ticks = 6
+|mat1 = Bucket of sand
+|mat1quantity = 13
+|mat2 = Soda ash
+|mat2quantity = 13
+|mat3 = Astral rune
+|mat3quantity = 2
+|mat4 = Fire rune
+|mat4quantity = 6
+|mat5 = Air rune
+|mat5quantity = 10
+|output1 = Molten glass
+|output1quantity = 16.9
+|output1quantitynote = On average
+|output1subtxt = Superglass Make - soda ash
+}}
+|text4 = Swamp weed
+|item4 = {{Recipe
+|skill1 = Crafting
+|skill1lvl = 61
+|skill1boostable = Yes
+|skill1exp = 130
+|skill2 = Magic
+|skill2lvl = 77
+|skill2boostable = Yes
+|skill2exp = 78
+|notes = {{SCP|Quest}} Requires completion of [[Lunar Diplomacy]]
+|members = Yes
+|ticks = 6
+|mat1 = Bucket of sand
+|mat1quantity = 13
+|mat2 = Swamp weed
+|mat2quantity = 13
+|mat3 = Astral rune
+|mat3quantity = 2
+|mat4 = Fire rune
+|mat4quantity = 6
+|mat5 = Air rune
+|mat5quantity = 10
+|output1 = Molten glass
+|output1quantity = 16.9
+|output1quantitynote = On average
+|output1subtxt = Superglass Make - swamp weed
+}}
+}}
+
+==Crafting table==
+Molten glass can be made into glass items using the Crafting skill by using a [[glassblowing pipe]] on them. Each item requires one piece of molten glass to create. At peak efficiency just over 1800 glass items can be crafted in one hour.
+
+{| class="wikitable" style="text-align:center;"
+!{{SCP|Crafting}} Level
+! colspan="2" |Item
+!Experience
+![[GE]] Price
+!GP/XP
+|-
+|1
+|{{plinkt|Beer glass|txt=Beer glass}}
+|17.5
+|{{Coins|{{GEP|Beer glass}}}}
+|{{Coins|({{GEP|Beer glass}}-{{GEP|Molten glass}})/17.5}}
+|-
+|4
+|{{plinkt|Empty candle lantern|txt=Empty candle lantern}}
+|19
+|{{Coins|{{GEP|Empty candle lantern}}}}
+|{{Coins|({{GEP|Empty candle lantern}}-{{GEP|Molten glass}})/19}}
+|-
+|12
+|{{plinkt|Empty oil lamp|txt=Empty oil lamp}}
+|25
+|{{Coins|{{GEP|Empty oil lamp}}}}
+|{{Coins|({{GEP|Empty oil lamp}}-{{GEP|Molten glass}})/25}}
+|-
+|33
+|{{plinkt|Vial|txt=Vial}}
+|35
+|{{Coins|{{GEP|Vial}}}}
+|{{Coins|({{GEP|Vial}}-{{GEP|Molten glass}})/35}}
+|-
+|42
+|{{plinkt|Empty fishbowl|txt=Empty fishbowl}}
+|42.5
+|{{Coins|{{GEP|Empty fishbowl}}}}
+|{{Coins|({{GEP|Empty fishbowl}}-{{GEP|Molten glass}})/42.5}}
+|-
+|46
+|{{plinkt|Unpowered orb|txt=Unpowered orb}}
+|52.5
+|{{Coins|{{GEP|Unpowered orb}}}}
+|{{Coins|({{GEP|Unpowered orb}}-{{GEP|Molten glass}})/52.5}}
+|-
+|49
+|{{plinkt|Lantern lens|txt=Lantern lens}}
+|55
+|{{Coins|{{GEP|Lantern lens}}}}
+|{{Coins|({{GEP|Lantern lens}}-{{GEP|Molten glass}})/55}}
+|-
+|87
+|{{plinkt|Empty light orb|txt=Empty light orb}}
+|70
+|{{Coins|{{GEP|Light orb}}}}<ref group="MG">This is the Grand Exchange price after adding a [[Cave goblin wire]] to make a [[Light orb]]. The [[Empty light orb]] is not able to be sold on the Grand Exchange.</ref>
+|{{Coins|(-{{GEP|Molten glass}})/70}}
+|}
+<references group="MG" />
+
+==Products==
+{{Uses material list|Molten glass}}
+
+==Item sources==
+{{Drop sources|Molten glass}}
+
+===Shop locations===
+{{Store locations list|Molten glass}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 17 July 2007
+|update = Game Improvements (July 2007)
+|change = *The item was graphically updated with the rework of the Observatory Quest.
+*The item's value was increased from 2 to 3.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Molten glass detail (historical).png|center|300x150px]]
+|[[File:Molten glass detail.png|center|300x150px]]
+|-
+|[[File:Molten glass (historical).png|center]]
+|[[File:Molten glass.png|center]]
+|-
+|29 March 2004 ⁠–<br/>17 July 2007
+|17 July 2007 ⁠–<br/>present
+|}
+
+==Notes==
+*All the ingredients for making molten glass (seaweed and sand) can be found on the island of [[Entrana]], except [[bucket]]s, but there is a [[Tool leprechaun]] found near the [[Hops patch]] on Entrana from whom you can withdraw buckets if you have them. There is a sandpit, seaweed spawns, a range for cooking seaweed into soda ash and a furnace to make the molten glass. There is even a glassblowing pipe spawn in a nearby house.
+*If you have completed [[Swan Song]] and a stockpile of [[Bucket of sand|Buckets of sand]], the [[Piscatoris Fishing Colony]] has a bank, seaweed spawning facilities, range, and furnace to make and store molten glass.
+
+{{Glass}}
+[[Category:Crafting items]]

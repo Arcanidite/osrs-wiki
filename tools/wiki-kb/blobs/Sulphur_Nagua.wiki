@@ -1,0 +1,184 @@
+{{otheruses|the slayer monster|the quest variant|Sulphur Nagua (Perilous Moons)}}
+{{HasTask|Lesser Nagua}}
+{{Infobox Monster
+|name = Sulphur Nagua
+|image = [[File:Sulphur Nagua.png|180px]]
+|release = [[20 March]] [[2024]]
+|update = Varlamore: Part One
+|members = Yes
+|combat = 98
+|size = 2
+|examine = Brittle, rocky skin hiding pockets of volatile explosive sulphur.
+|attributes = spectral
+|xpbonus = 5
+|flatarmour = -4
+|max hit = 11 total [6+5]
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Slash]]
+|attack speed = 4
+|respawn = 50
+|slaylvl = 48
+|slayxp = 105
+|cat = Lesser Nagua
+|assignedby = chaeldar,konar
+|hitpoints = 100
+|att = 90
+|str = 105
+|def = 40
+|mage = 50
+|range = 1
+|attbns = 90
+|strbns = 0
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 50
+|dslash = 50
+|dcrush = 10
+|dmagic = 200
+|dlight = 200
+|dstandard = 200
+|dheavy = 200
+|elementalweaknesstype = air
+|elementalweaknesspercent = 15
+|poisonresistance = 0
+|venomresistance = 0
+|id = 13033
+}}
+[[File:Lesser nagua icon.png|left]]
+'''Sulphur nagua''' are [[slayer monster]]s that require level 48 [[Slayer]] to kill. They are found in the Ancient Prison within [[Neypotzli]], accessed from the south-west entrance of the antechamber. Partial completion of [[Perilous Moons]] is required for access.
+
+Their attacks are unique in that they hit twice per attack, rolling damage normally and splitting it in two [[hitsplats]]. After five attacks they will use a special attack in which they raise their weapon, and if the player remains within their melee range (including diagonal spaces) after three ticks, they will have 5 [[prayer points]] drained.
+
+They are [[Spectral (attribute)|spectral]] creatures but not [[Undead (attribute)|undead]], meaning the [[Ectoplasmator]] will provide prayer experience for defeating them, but the [[Salve amulet]] and its variants will not affect them.
+
+Sulphur nagua have -4 [[flat armour]], so all successful hits will do an extra 4 damage to them. This incentivizes using faster weapons or [[multi-hit weapons]]. 
+
+A common strategy for replenishing prayer points while killing sulphur nagua is to create [[moonlight potion]]s, which also boost melee combat stats. Alternatively, players with level 75 [[Hunter]] may choose to catch [[moonlight moth]]s with a butterfly net (or barehanded with 85) to replenish prayer points, however due to their lack of additional boosting effects - along with catching one interfering with the player's attacks - relying solely on them is not recommended.
+
+'''The respawn locations of each sulphur nagua are indicated by a sun icon on the floor.''' This can be an easy way to ensure players are standing in a spot where several of them will be aggressive towards the player.
+
+It is possible to safespot sulphur nagua by hiding behind the [[cooking stove]], although the presence of free supplies within Neypotzli will likely render this unnecessary.
+
+Another location to safespot sulphur naga is by luring one towards the hallway with the entrance while having Protect from Melee active, then getting it stuck on the rubble along the east wall of the hallway, attacking with a ranged weapon will move your character, but you will not be within the attack range of the naga this way.
+
+==Location==
+{{LocTableHead}}
+{{LocLine
+|name = Sulphur Nagua
+|location = [[Neypotzli]] - Ancient Prison
+|levels = 98
+|members = Yes
+|mapID = 45
+|plane = 0
+|x:1351,y:9574|x:1358,y:9573|x:1352,y:9568|x:1359,y:9567|x:1355,y:9563|x:1350,y:9558|x:1358,y:9556|x:1352,y:9552|x:1359,y:9550|x:1372,y:9563|x:1378,y:9563|x:1375,y:9560|x:1372,y:9557|x:1378,y:9557
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocTableBottom}}
+
+== Prayer Info ==
+{{Prayer info
+|level = 40
+|xp = 20
+|type = spectral
+}}
+
+==Money making==
+{{Mmgsection|Killing sulphur naguas|mobname=Sulphur Nagua}}
+
+==Drops==
+{{DropLogProject|kills=1455248}}
+
+{| class="wikitable"
+! rowspan="2" |[[Konar quo Maten|Konar]] task
+! colspan="2" |Average drop value
+|-
+![[Grand Exchange|GE]]
+![[High Level Alchemy|HA]]
+|-
+|{{No}}
+|{{Coins|{{Average drop value|mob=Sulphur Nagua|raw=y}}}}
+|{{Coins|{{Average drop value|mob=Sulphur Nagua|alch=yes|raw=y}}}}
+|-
+|{{Yes}}
+|{{Coins|{{Average drop value|mob=Sulphur Nagua|brimstone=yes|raw=y}}}}
+|{{Coins|{{Average drop value|mob=Sulphur Nagua|brimstone=yes|alch=yes|raw=y}}}}
+|}
+
+===Pre-roll===
+{{DropsTableHead}}
+{{DropsLine|name=Sulphur blades|quantity=1|rarity=1/450}}
+{{DropsTableBottom}}
+
+===Runes and ammunition===
+{{DropsTableHead}}
+{{DropsLine|name=Chaos rune|quantity=40-60|rarity=4/128|raritynotes={{CiteNews|url=https://secure.runescape.com/m=news/summer-sweep-up-combat--loot?oldschool=1|title=Summer Sweep-Up: Combat & Loot|newsdate=30 May 2025|quote=[https://docs.google.com/spreadsheets/d/e/2PACX-1vT5aIwPYJGCdUuO5rpNtYQE7FnERytSuj99zXkTBXf3XSIumSzjMQ9T1EXczWpMPZsRyZAcezWaQc6t/pubhtml Check out this handy spreadsheet] featuring nerfs, buffs or more complex 'adjustments' to a variety of runes, herbs, seeds, gems and fish.|name=sweepup}}}}
+{{DropsLine|name=Death rune|quantity=40-60|rarity=1/128}}
+{{DropsLine|name=Fire rune|quantity=10-40|rarity=26/128}}
+{{DropsLine|name=Fire rune|quantity=40-60|rarity=1/128}}
+{{DropsLine|name=Nature rune|quantity=5-10|rarity=4/128}}
+{{DropsTableBottom}}
+
+===Resources===
+{{DropsTableHead}}
+{{DropsLine|name=Sulphurous essence|quantity=6-10|rarity=4/128}}
+{{DropsLine|name=Coal|quantity=5-10 (noted)|rarity=13/128}}
+{{DropsLine|name=Coal|quantity=1|rarity=21/128}}
+{{DropsLine|name=Copper ore|quantity=10-15 (noted)|rarity=3/128}}
+{{DropsLine|name=Iron ore|quantity=5-10 (noted)|rarity=27/128}}
+{{DropsLine|name=Silver ore|quantity=5-10 (noted)|rarity=12/128}}
+{{DropsLine|name=Tin ore|quantity=10-15 (noted)|rarity=5/128}}
+{{DropsLine|name=Mithril ore|quantity=5-10 (noted)|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Gem drop table===
+{{GemDropTable|3/128|naturetalisman=yes|rolls=2|override=There is a 3/128 chance of rolling the [[gem drop table]] twice.}}
+
+===Tertiary===
+{{DropsTableHead}}
+{{DropsLine|name=Clue scroll (hard)|quantity=1|rarity=1/256|approx=Yes}}
+{{DropsLine|name=Brimstone key|quantity=1|rarity={{Brimstone rarity|98|bonus=yes}}|raritynotes=<ref group=d>[[Brimstone key]]s are only dropped if killed on a [[Slayer task]] given by [[Konar quo Maten]].</ref>|gemw=No|leagueRegion=Varlamore&Kourend}}
+{{DropsTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 25 June 2025
+|update = Summer Sweep Up: Combat
+|change = Sulphur Naguas now have a 15% [[elemental weakness]] to [[air spells]].
+}}
+{{Subject changes
+|date = 25 June 2025
+|update = Summer Sweep Up: Combat
+|change = The following drop rates were decreased:
+* Chaos runes: 11/128 to 4/128
+* Death runes: 2/128 to 1/128
+* 40-60 Fire runes: 14/128 to 1/128
+* A drop of 1x coal at 21/128 was added to compensate.
+}}
+{{Subject changes
+|date = 24 April 2024
+|update = Varlamore Tweaks, GameJam V Commences & More!
+|change = Sulphur nagua are now classified as [[Spectral (attribute)|spectral]] creatures.
+}}
+{{Subject changes
+|date = 3 April 2024
+|update = Varlamore Tweaks & Drop Rates
+|change = The sulphur nagua's special attack will no longer force them to be temporarily out of combat. Previously, this allowed other sulphur naguas to attack the player if they have not yet gained [[tolerance]].
+}}
+{{Subject changes footer}}
+
+==Gallery==
+<gallery mode="packed" heights="200" style="text-align:left">
+Sulphur Nagua concept art.png|Concept art of a Sulphur Nagua, by [[Mod Jerv]].
+Sulphur Nagua - death animation.mp4|Death animation of a Sulphur Nagua, by [[Mod Hend]].
+</gallery>
+
+==References==
+{{Reflist}}
+
+{{Slayer monsters}}
+{{Neypotzli}}

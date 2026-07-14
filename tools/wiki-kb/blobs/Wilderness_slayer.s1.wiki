@@ -1,0 +1,34 @@
+==Slayer==
+Krystilia is a Slayer master who assigns the player [[monsters]] found within the [[Wilderness]]. '''Only''' kills within the Wilderness count towards her tasks. Before being assigned a Wilderness task, she will warn you that she will assign '''any''' monster regardless of your combat level.
+
+She will refuse to assign tasks to players who are still Level 1 in Slayer, insisting that they first need to speak to the [[Burthorpe]] Slayer Master [[Turael]] so that he teaches the player about the how the skill works. One good way to get around this is by doing the [[Natural history quiz]] at the Varrock Museum, which will give 1,000 XP both in Slayer and in [[Hunter]], bringing both skills to Level 9, assuming both were at Level 1.
+
+Unlike other slayer masters, Krystilia's tasks have a separate counter from the normal slayer masters, thus players must complete five tasks from her to begin their Wilderness point streak. Despite using two different counters, players '''cannot''' have both a normal and Wilderness slayer task at the same time. However, if the player is given a task they do not want and cannot skip it, they can go to [[Turael]] to remove it (provided that he cannot assign it), though this will remove the Wilderness task streak and require players to complete another five tasks from her to start gaining points again.
+
+For a kill to count towards a Krystilia task, the player must be physically located inside the Wilderness when the monster's death occurs. A player who is using a [[dwarf multicannon]] will receive the standard "As your slayer task is from Krystilia, you can only perform it inside the Wilderness" message if they teleport out of the Wilderness to restock and remain outside of it when their cannon kills the monster. The safe zone buffer immediately outside the [[Ferox Enclave]] counts as the Wilderness for task purposes, but the Enclave itself does not. Thus a player using the [[pool of refreshment]] to resupply will not receive credit for the kill if they are inside the Enclave. 
+
+In return for completing her tasks in the Wilderness, players will have a chance to roll for [[Larran's key]] and [[Slayer's enchantment]] drops. Due to the nature of the Wilderness and the varying location(s) of the assigned monster(s), it is recommended that players do not bring items they are not willing to lose, as it is possible to be killed at any time from other players. She also awards significantly more slayer points than any other master.
+
+Completion of a task assigned by Krystilia '''from 5th task streak and beyond''' will grant:
+{|class=wikitable style="text-align:center;"
+!Task interval
+!Points given
+|-
+|Every task
+|25
+|-
+|Every 10th
+|125
+|-
+|Every 50th
+|375
+|-
+|Every 100th
+|625
+|-
+|Every 250th
+|875
+|-
+|Every 1,000th
+|1,250
+|}

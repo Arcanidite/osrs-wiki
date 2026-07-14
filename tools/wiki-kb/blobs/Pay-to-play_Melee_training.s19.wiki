@@ -1,0 +1,17 @@
+=== Levels 60/70 to 99: Pest Control ===
+{{Melee training monster
+|name=[[Pest Control]]
+|locations=[[Void Knight Outpost]]
+|requirements=70 Combat (for Intermediate Lander), 100 Combat (for Veteran Lander)
+|recommendations=At least the medium tier of [[Combat Achievements|combat achievements]] completed
+|combat=Varies
+|hitpoints=Varies
+|advantages=
+*Fastest melee XP in the game at higher levels with the hard combat achievements completed, as XP is gained both from combat and commendation points simultaneously
+*No competition from other players - in fact this method benefits from having more people participating
+*Stats get restored at the end of each game, allowing for frequent use of special attacks and negating the need for prayer potions
+*Earns a small amount of coins
+|disadvantages=
+*Depends on having enough people playing for optimal XP rates
+*Requires a high amount of attention as the games move quickly
+}}

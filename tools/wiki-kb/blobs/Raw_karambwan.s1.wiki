@@ -1,0 +1,9 @@
+==Fishing info==
+{{Fishing info
+|name = Raw karambwan
+|level = 65
+|xp = 50
+|spot = [[Fishing spot (karambwan)]]
+|tool = {{plink|Karambwan vessel}}
+|bait = {{plink|Raw karambwanji}}
+}}

@@ -1,0 +1,109 @@
+{{external|dw=Ring of Pursuit}}
+{{Infobox Item
+|name = Ring of pursuit
+|image = [[File:Ring of pursuit.png]]
+|release = [[2 February]] [[2017]]
+|update = Silver Jewellery, Tournament World & QoL!
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Check, Break, Drop
+|wornoptions = Check
+|examine = This ring can reveal a hunter creature's track.
+|value = 1050
+|weight = 0.006
+|exchange = Yes
+|id = 21126
+}}
+[[File:Ring of pursuit detail.png|left|130px]]
+A '''ring of pursuit''' is an [[opal ring]] enchanted via the [[Lvl-1 Enchant]] spell. When worn, it will reveal the entire track of [[hunter creatures]] (excluding [[herbiboar]]s) caught via [[noose wand]]. The ring will provide 10 charges before disappearing. 
+
+The number of charges is specific to the player, not the ring, so swapping, dropping, or casting [[alchemy spells]] on rings before all charges are used will '''not''' reset the number of charges the player has left before a ring breaks. Players can right-click a ring of pursuit to either "check" how many charges remain in it or "break" it and reset the next one they use to its maximum charges.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = ring
+}}
+==Creation==
+{{Recipe
+|skill1 = Magic
+|skill1lvl = 7
+|skill1boostable = Yes
+|skill1exp = 17.5
+|members = Yes
+|ticks = 1
+|ticksnote = Manual casting is 3 ticks, auto-casting is 7 ticks
+|mat1 = Opal ring
+|mat2 = Cosmic rune
+|mat3 = Water rune
+|output1 = Ring of pursuit
+}}
+
+==Dialogue==
+{{hastranscript|scenery}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 8 May 2024
+|update = Project Rebalance: Skilling & Poll 81 MTA Changes
+|change = The ring of pursuit's effect is now guaranteed to activate, up from a 25% chance.
+}}
+{{Subject changes
+|date = 24 April 2024
+|update = Varlamore Tweaks, GameJam V Commences & More!
+|change = The ring of pursuit can now be stored in the [[huntsman's kit]].
+}}
+{{Subject changes
+|date = 9 March 2023
+|update = Even More Poll 78 Changes
+|change = The inventory icon has been re-centred.
+}}
+{{Subject changes 
+|date = 16 February 2017
+|update = Party Pete's Birthday Bash
+|change = The item's inventory sprite was rotated, so that unenchanted silver jewellery now has non-standard angles instead.
+}}
+{{Subject changes
+|date = 9 February 2017
+|update = Colourful Golems & Graphical Improvements
+|change = The "Break" option was added.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Ring of pursuit detail v1.png|center|300x150px]]
+|[[File:Ring of pursuit detail v2.png|center|300x150px]]
+|[[File:Ring of pursuit detail.png|center|300x150px]]
+|-
+|[[File:Ring of pursuit v1.png|center]]
+|[[File:Ring of pursuit v2.png|center]]
+|[[File:Ring of pursuit.png|center]]
+|-
+|2 February 2017 –<br/>16 February 2017
+|16 February 2017 –<br/>9 March 2023
+|9 March 2023 –<br/>present
+|}
+
+{{Rings}}
+{{Opal}}
+
+[[Category:Items with charges]]

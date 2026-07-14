@@ -1,0 +1,16 @@
+===Levels 60/70 to 99: Scurrius===
+{{Melee training monster
+|name = [[Scurrius]]
+|combat = 200 (Solo) <br/> 250 (Group)
+|hitpoints = 500 (Solo) <br/> 1,500 (Group)
+|requirements = None
+|recommendations = Combat level 60-90, armour, food, prayer potions, and (super) combat potions
+|advantages =
+* Faster experience than Nightmare Zone at lower levels (base 70 combat stats offer 100k+ exp/hr when soloing the Group variant)
+* Teaches mechanics useful in higher-level PvM encounters, such as prayer switching and dodging attacks
+* Can be fought alone in an [[instance]] or with a group
+|disadvantages=
+* Drops will not yield a profit but will cover the costs of supplies
+* Best experience rates at lower levels requires the [[bone mace]], created from [[Scurrius' spine]] dropped at a rate of 1/33
+|locations = [[Varrock Sewers]]
+}}

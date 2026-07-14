@@ -1,0 +1,14 @@
+=== Levels 60/70 to 99: Sulphur Naguas ===
+{{Melee training monster|name=[[Sulphur Nagua]]|locations=[[Neypotzli]]|combat=98|hitpoints=100|requirements=48 Slayer 
+20 Hunter
+20 Fishing 
+20 Runecraft 
+10 Construction (Requirements for Perilous Moons, partial completion for access to Sulphur Nagua)
+55 Attack for [[Glacial temotli]]. [[Sulphur blades]] are a cheaper alternative.
+43 Prayer for Protect from Melee|recommendations=70 Attack and 75 Strength for Dual Macuahuitl 
+High Herblore
+70 Prayer for Piety
+Full Blood Moon set|advantages=*[[Moonlight potion]] restores prayer and boosts combat stats, and is made in Neypotzli requiring no materials
+* >100k xp/hr due to the Sulphur Nagua's negative flat armour and double hit weapons. If praying Piety with dual macuahuitl and full blood moon set, expect up to 170k xp/hr.
+*Passive low amounts of runecraft from turning in Sulphur Essence that are dropped, and prayer experience if carrying an [[ectoplasmator]]. 
+*Decent profit made up of noted ores and runes|disadvantages=*[[Dual macuahuitl]] are required for the best rates, a concern for Ironmen. However, glacial temotli and sulphur blades only perform marginally worse, roughly 10% less xp per hour.}}

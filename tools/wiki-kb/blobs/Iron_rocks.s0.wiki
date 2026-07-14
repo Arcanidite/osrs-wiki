@@ -1,0 +1,51 @@
+{{External|rs=Iron rock|rsc=Iron rock|dw=Iron Ore Node}}
+{{Infobox Scenery
+|version1 = Variant 1
+|version2 = Variant 2
+|version3 = The Node
+|version4 = Prifddinas
+|name = Iron rocks
+|image1 = [[File:Iron rocks.png|220px]]
+|image2 = [[File:Iron rocks (2).png|220px]]
+|image3 = [[File:Iron rocks (2).png|220px]]
+|image4 = [[File:Iron rocks (Prifddinas).png|220px]]
+|release1 = [[4 January]] [[2001]]
+|release2 = [[4 January]] [[2001]]
+|release3 = [[6 October]] [[2021]]
+|release4 = [[25 July]] [[2019]]
+|update1 = Runescape beta is now online!
+|update2 = Runescape beta is now online!
+|update3 = Group Ironman
+|update4 = Song of the Elves
+|members1 = No
+|members2 = No
+|members3 = No
+|members4 = Yes
+|quest = No
+|location1 = Varies
+|location2 = Varies
+|location3 = The Node
+|location4 = Trahaearn mine
+|options = Mine
+|icon1 = [[File:Map icon - Iron rocks.png]]
+|icon2 = [[File:Map icon - Iron rocks.png]]
+|icon3 = [[File:Map icon - Rock 2.png]]
+|icon4 = [[File:Map icon - Rock 2.png]]
+|examine = A rocky outcrop.
+|map = No
+|id1 = 11365
+|id2 = 11364
+|id3 = 42833
+|id4 = 36203
+|dropversion1 = Varlamore,Mining Guild
+|dropversion2 = Varlamore,Mining Guild
+|dropversion3 =
+|dropversion4 = Prifddinas
+}}
+'''Iron rocks''' are a type of protruding rock that contains [[iron ore]]. Players with a [[Mining]] level of 15 or higher can mine iron ore from rocks found in various [[List of mines|mines]], granting 35 Mining [[experience]] for each ore mined. After being mined, an iron rock takes 5.4 seconds to [[respawn]]. When inside the [[members]]' area of the [[Mining Guild]], that time is reduced to 2.4 seconds; the faster respawn time makes it the best place to [[Pay-to-play Mining training#Fastest experience|power-mine]] iron, with an experience rate of up to 70k xp/h. 
+
+Iron is the most popular ore that [[free-to-play]] players power-mine for experience. For locations where there are three rocks in a triangle formation suitable for proper power-mining, see [[Iron rocks#Power-mining Locations|here]].
+
+Wearing [[mining gloves]], [[superior mining gloves]], or [[expert mining gloves]] makes the rock not deplete upon mining iron, allowing players to mine one, two, or three additional ore, respectively, before depleting.
+
+The rocks in [[the Node mine]] provide iron ore, but no experience past level 3 Mining. As the rocks require level 15 to mine, it is impossible under standard conditions to receive experience.

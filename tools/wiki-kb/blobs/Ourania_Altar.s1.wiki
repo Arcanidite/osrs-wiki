@@ -1,0 +1,6 @@
+==Transportation==
+*Casting [[Ourania Teleport]] (requires 71 [[Magic]]), using an [[Ourania teleport (tablet)|Ourania teleport tablet]], or the [[Ourania Portal|Ourania house teleport]] places the player on the path to the cave entrance. Requires completion of [[Lunar Diplomacy]].
+*Use [[spirit tree]]s, requiring completion of [[Tree Gnome Village]], to teleport to the [[Battlefield]] and walk south-west.
+*Cast [[Ardougne Teleport]], requiring 51 Magic and [[Plague City]], and head south-west.
+*Teleport to the [[Ardougne Monastery]] with the [[Ardougne cloak]], and walk west.
+*Teleport to [[Castle Wars]] with the [[ring of dueling]] or [[Minigame Teleport]] and walk north from the lobby.

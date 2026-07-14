@@ -1,0 +1,12 @@
+==Cost==
+{{Spell cost table
+|Rune1 = chaos
+|Rune1num = 4
+|Rune2 = death
+|Rune2num = 2
+|Rune3 = fire
+|Rune3num = 2
+|Rune4 = air
+|Rune4num = 2
+|is_offensive = y
+}}

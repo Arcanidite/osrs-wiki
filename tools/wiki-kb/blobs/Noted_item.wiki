@@ -1,0 +1,68 @@
+{{External|rs=Note}}
+{{redirect3|Note|For other uses, see [[Notes]]}}
+{{Infobox Item
+|name = Template for cert
+|image = [[File:Bank note.png]]
+|release = [[10 February]] [[2004]]
+|update = Bank Notes!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Drop
+|examine = It's a Template for cert.
+|value = 1
+|weight = 0.000
+|id = 799
+}}
+[[File:Bank note detail.png|left|150px]]
+A '''bank note''' or '''note''' is a stackable certificate that represents an item. It is equivalent in value to the item it represents, but cannot be used physically until exchanged for the real thing. Almost all [[Items#Tradeability|tradeable]] items can be 'noted' and 'unnoted' in the [[Bank#Features|bank interface]], with very few exceptions (such as [[mysterious emblem]]s).
+
+Notes are useful for players who wish to trade large amounts of items at a time. They can also be used for training magic or for converting into [[coins]] via the [[Low Level Alchemy|Low]] or [[High Level Alchemy]] spells.
+
+== Conversion ==
+Storing a note in a bank, selling it to a shop, or 'using' it on a [[bank booth]], [[bank chest]], or [[banker]] will convert the note to its item equivalent. Players do '''not''' need to enter their [[Bank PIN]] to unnote items.
+
+For a small fee, items may also be unnoted by banknote exchange merchants when farther from a bank. This may be useful when training skills that require a lot of resources. These include:
+
+* [[Phials]] in [[Rimmington]]
+* [[Aisles]] in [[Tai Bwo Wannai]]
+* [[Tiles]] in the [[Bandit Camp (Kharidian Desert)|Bandit Camp]]
+* [[Biles]] on the [[Tear of the Soul]] (requires 61 [[Sailing]])
+* The [[Banknote Exchange Merchant]] in [[Pollnivneach]]
+* The [[Elder Chaos druid (NPC)|Elder Chaos druid]] outside the [[Chaos Temple (hut)|Chaos Temple]] (bones only)
+* [[Virilis]] on [[Ralos' Rise]] (bones only)
+* [[Servant]]s in [[player-owned house]]s (excluding bones)
+A separate set of NPCs will note items, including:
+
+* [[Piles]] in the [[Resource Area|Wilderness Resource Area]]
+* [[Tool Leprechaun]]s (harvested Farming items only)
+* [[Snowflake]] in [[Weiss]] (basalt only)
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 
+|update = 
+|change = The full stop was removed from the examine text.
+}}
+{{Subject changes
+|date = 7 February 2006
+|update = Cabin Fever
+|change = The item's name of "Template for cert" was removed.
+}}
+{{Subject changes footer}}
+
+==Trivia==
+*In ''[[RuneScape Classic]]'', players could only get [[classicrsw:Certificates|certificates]] for a few selected items—the item can then only be "un-noted" by the shop of which it can be bought from.
+*The actual bank note item is unobtainable by players, and uses the name '''Template for cert'''.
+*[[Transcript:Priest in Peril#Bringing Drezel noted essence|According to Drezel during Priest in Peril]], bank notes contain text reading "I promise to pay the bearer on demand the listed number of <item>s".
+**This is likely in reference to [[Wikipedia:Banknotes of the pound sterling|Bank of England banknotes]], which bear the text "I promise to pay the bearer on demand the sum of <value> pounds".{{CiteGeneral|url=https://www.bankofengland.co.uk/faq/banknote#General_banknote_questions|title=Banknote FAQs|author=|date=|accessdate=2025-10-22|publisher=|archiveurl=https://web.archive.org/web/20250000000000*/https://www.bankofengland.co.uk/faq/banknote#General_banknote_questions|archivedate=12 August 2025|quote=}}
+*The Bank Note system is loosely based on the old english monetary system. A system in which a pound note entitled you to the ownership of a 1lb of sterling silver that was under safe keeping of the bank. Similar to how a note of an item entitles you to the ownership of one of those items that is under safe keeping of the bank.
+
+==References==
+{{Reflist}}
+
+{{Banknote merchant}}

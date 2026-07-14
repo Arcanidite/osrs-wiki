@@ -1,0 +1,63 @@
+==Locations==
+{{NPCTableHead}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Varrock]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3240,y:3476
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Falador]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2983,y:3369
+|mtype = pin
+|leagueRegion = Asgarnia
+}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Seers' Village]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2737,y:3502
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Ardougne]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2639,y:3291
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Hosidius]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1781,y:3628
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{NPCLocLine
+|name=Estate Agent
+|x:1703,y:3101
+|location=[[Civitas illa Fortis]]
+|mapID=0
+|members=Yes
+|mtype=pin
+|plane=0
+|leagueRegion = Varlamore
+}}
+{{NPCTableBottom}}

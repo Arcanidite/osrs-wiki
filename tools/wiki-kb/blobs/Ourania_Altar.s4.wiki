@@ -1,0 +1,49 @@
+==Mechanics==
+[[File:Crafting at Ourania Altar.png|thumb|200px|Players crafting runes at the Ourania Altar.]]
+The player is able to craft all runes that are available in the game (except [[combination runes]], [[wrath runes]], and [[sunfire rune]]s), despite not having the required level or [[quest]] requirements. However, the higher the player's [[Runecraft]] level, the higher-levelled the crafted runes will be. The experience here is 1.7 times what players would normally get for each pure essence.
+
+Crafting runes at the Ourania Altar will only result in a single rune per essence, even if the player has reached a level where [[multiple runes]] per essence would be crafted at their regular altars. Additionally, extracts obtained from the [[scar essence mine]] will '''not''' be consumed to grant additional runes. However, some multipliers can be applied to increase the runes per essence obtained. The [[medium Ardougne Diary]] will boost the runes crafted by type. See [[#Ardougne diary|below]] for information about that. Furthermore, wearing the full [[Raiments of the Eye]] set will boost the runes crafted by 60%, in the same way the robes function on regular [[runic altar]]s.
+
+When using [[Daeyalt essence]] at the Ourania Altar, the experience is calculated as <math>1.5 \times 1.7 \times \mathit{BaseXP}</math>
+
+===Ardougne diary===
+Completion of the [[medium Ardougne Diary]] adds a chance of crafting an extra rune at the Ourania Altar, though no extra experience is gained. The cloak does not need to be equipped for this to occur. 
+
+The chance to double the rune crafted varies by type, with the following estimates:
+{|class="wikitable"
+!colspan=2|Rune!!Chance
+|-
+|{{plinkt|Air rune|txt=Air}}||25%
+|-
+|{{plinkt|Mind rune|txt=Mind}}||25%
+|-
+|{{plinkt|Water rune|txt=Water}}||25%
+|-
+|{{plinkt|Earth rune|txt=Earth}}||25%
+|-
+|{{plinkt|Fire rune|txt=Fire}}||25%
+|-
+|{{plinkt|Body rune|txt=Body}}||25%
+|-
+|{{plinkt|Cosmic rune|txt=Cosmic}}||25%
+|-
+|{{plinkt|Chaos rune|txt=Chaos}}||25%
+|-
+|{{plinkt|Astral rune|txt=Astral}}||25%
+|-
+|{{plinkt|Nature rune|txt=Nature}}||22.5%
+|-
+|{{plinkt|Law rune|txt=Law}}||20%
+|-
+|{{plinkt|Death rune|txt=Death}}||17.5%
+|-
+|{{plinkt|Blood rune|txt=Blood}}||15%
+|-
+|{{plinkt|Soul rune|txt=Soul}}||10%
+|}
+
+===Rune distribution===
+The distribution of runes given at the Ourania Altar depends on the player's [[Runecraft]] level. There are separate distributions defined for each ten-level band: one for level 1 to 9, another for 10 to 19, 20 to 29, and so on, with level 99 having its own distribution.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/jagexash/status/1312893446395506688|date=4 October 2020|archiveurl=https://archive.vn/o4Xg0|archivedate=5 October 2020|quote=A number up to 10,000 is picked, and compared against the contents of the enclosed table.
+E.g. For a player with level 20, values 0-7 would give a soul rune, 8-22 give a blood rune, 23-54 give a death rune, 55-109 give a law rune, etc. [https://pbs.twimg.com/media/EjhU5x4XYAAu2qa?format=png]}}
+{{Ourania Altar Table}}
+{{Ourania Altar Chart}}

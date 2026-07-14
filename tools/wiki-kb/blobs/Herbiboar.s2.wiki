@@ -1,0 +1,17 @@
+==Location==
+{{LocTableHead}}
+{{LocLine
+|Name = Herbiboar
+|location = [[Mushroom Forest]] on [[Fossil Island]]
+|levels = N/A
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3710,y:3883|x:3697,y:3876|x:3683,y:3870|x:3681,y:3865|x:3753,y:3851|x:3717,y:3840|x:3705,y:3827|x:3704,y:3808|x:3696,y:3796
+|mtype = pin
+|leagueRegion = misthalin
+}}
+
+{{LocTableBottom}}
+
+*There are a total of 5 areas where you can start, each indicated by a hunter icon ([[File:Hunter icon.png]]) on the map.

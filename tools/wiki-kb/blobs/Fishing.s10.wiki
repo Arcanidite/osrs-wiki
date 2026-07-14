@@ -1,0 +1,19 @@
+===Fly fishing rods and feathers===
+[[Fly fishing rod]]s are also required for mid level Fishing. These rods can only be used in rivers. Along with a fly fishing rod, players also need [[feather]]s. They can be bought from the [[Shilo Village (location)|Shilo Village]] and [[Port Sarim]] [[Gerrant's Fishy Business|fishing shop]], but are also dropped by [[chicken]]s. When a player has found a [[Fishing spots|fishing spot]], they can then use their fly fishing rod if the option "lure fishing spot" is available.
+
+[[Stripy feather]]s (introduced with the [[Hunter]] [[skill]]) can be used for fly fishing, as well. Those feathers work the same as normal feathers, but players will only be able to fish [[Raw rainbow fish|rainbow fish]], rather than the usual [[Raw trout|trout]] and [[Raw salmon|salmon]]. The [[Pearl fly fishing rod]] is cosmetic and not an improvement over the basic fly fishing rod, although it can be equipped which frees up a single inventory slot.
+
+{| class="wikitable sortable"
+!colspan="2"|Equipment
+!Level
+!Members
+|-
+|{{Plinkt|Fly fishing rod}}
+|{{SCP|Fishing|20}}
+|{{Members|No}}
+|-
+|{{Plinkt|Pearl fly fishing rod}}
+|{{SCP|Fishing|20}}
+|{{Members|Yes}}
+|-
+|}

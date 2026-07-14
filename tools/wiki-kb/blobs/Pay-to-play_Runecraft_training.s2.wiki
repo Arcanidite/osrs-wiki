@@ -1,0 +1,34 @@
+===Recommended quests===
+The quests listed in the table below offer very useful rewards for a lot of training methods. Completing them is strongly recommended before doing a lot of Runecraft training.
+
+{| class="wikitable
+!Quest
+!Requirements
+!Notes
+|-
+|[[Rune Mysteries]]
+|None
+|Prerequisite for many quests, including ones below.
+|-
+|[[Enter the Abyss]]
+|Completion of [[Rune Mysteries]]
+|Required for repairing [[essence pouch]]es. Also awards 1,000 Runecraft experience.
+|-
+|[[Temple of the Eye]]
+|Completion of [[Enter the Abyss]]<br>
+{{SCP|Runecraft|10|link=yes}}
+|A total of 9,210 Runecraft experience is earned by completing the quest. Unlocks the [[Guardians of the Rift]] minigame. Awards a [[medium pouch]].
+|-
+|[[The Eyes of Glouphrie]]
+|Completion of [[The Grand Tree]]<br>
+{{SCP|Construction|5|link=yes}}<br>
+{{SCP|Magic|46|link=yes}}
+|Awards 6,000 Runecraft experience, which will allow the player to skip most of the early levels.
+|-
+|[[Lunar Diplomacy]]
+|Various, see the [[Lunar Diplomacy|quest page]].
+|The [[Lunar spellbook]] gives access to very useful spells used in some of the fastest training methods. The quest also awards 5,000 Runecraft experience.
+*[[NPC Contact]] can be used to quickly repair essence pouches. Casting this spell requires level 67 Magic.
+*[[Ourania Teleport]] provides a very fast access to the [[Ourania Altar]]. Casting this spell requires level 71 Magic.
+*[[Magic Imbue]] negates the need for a talisman when crafting [[combination rune]]s. Casting this spell requires level 82 Magic.
+|}

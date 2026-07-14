@@ -1,0 +1,12 @@
+==Banking==
+[[Eniola]] will allow players to access their bank in exchange for 20 of any one type of rune. Using inexpensive runes including elemental, body, and mind runes is common payment from players. Players can speak to him to set up a quick-payment deal, where they can choose which runes Eniola will automatically take from the player upon banking. He can take the payment runes from a [[rune pouch]]. Combination runes cannot be used in order to access the bank.{{MinPrice|format=none|coins=f|link=p|var=cheaprune|Air rune|Mind rune|Water rune|Earth rune|Fire rune|Body rune|Cosmic rune|Chaos rune|Nature rune|Law rune|Death rune|Astral rune|Blood rune|Soul rune}} The best runes for payment, if buying them from the [[Grand Exchange]], are {{#var:cheaprune_item}}s which cost {{Coins|{{#expr:{{#var:cheaprune_price}}*20}}}} coins per trip, at {{Coins|{{#var:cheaprune_price}}}} each rune.
+
+Usage of locking inventory spots is highly recommended with crafting runes at the Ourania Altar due to multiple runes being crafted and needing to be banked. This enables a player to have the ability to click the Deposit Inventory button without depositing any rune pouches or runes used to bank.
+
+There are a few other methods of banking when training Runecraft at the Ourania Altar:
+
+*Teleport up and down between [[Lunar Isle]] ([[Home Teleport]] or [[Moonclan Teleport]]) and the Ourania Altar ([[Ourania Teleport]]). [[Tele Group Moonclan]] tends to land the player a few squares closer to the bank than Moonclan Teleport.
+*The [[ring of dueling]] will teleport to the [[Castle Wars]] lobby.
+*[[Crafting cape]] to teleport to the [[Crafting Guild|Crafting guild]].
+*The [[amulet of glory]] can be used to teleport to [[Edgeville]]. This is effective for players with 89 Magic who have completed the [[Hard Fremennik Diary]], as they have access to the [[Recharge Dragonstone]] spell. Players can also use the [[Charge dragonstone jewellery scroll]].
+*[[Sailors' amulet]] to teleport to [[Deepfin Point]].

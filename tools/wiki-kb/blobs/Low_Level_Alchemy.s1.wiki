@@ -1,0 +1,11 @@
+==Cost==
+The [[Explorer's ring 1]] can be used to cast Low Level Alchemy up to 30 times per day without requiring any runes; however, no experience is granted.
+
+It is possible to cast this spell at the Fountain of Rune, requiring no runes, resulting in greater profit, however no experience is granted. Like most activities in the [[Wilderness]], this is attempted at one's own risk.
+
+{{Spell cost table
+|Rune1 = fire
+|Rune1num = 3
+|Rune2 = nature
+|Rune2num = 1
+}}

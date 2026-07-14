@@ -1,0 +1,28 @@
+{{External|rs|rsc}}
+{{Infobox Item
+|name = Tinderbox
+|image = [[File:Tinderbox.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Useful for lighting a fire.
+|value = 1
+|weight = 0.035
+|respawn = 100
+|exchange = Yes
+|id = 590
+}}
+[[File:Tinderbox detail.png|left|120px]]
+The '''tinderbox''' is used primarily for [[Firemaking|lighting fires]] by clicking 'use' on the tinderbox, then clicking a log. A tinderbox can be bought in most general stores. It is also used to light and relight [[candle]]s and [[lantern]]s, so any player venturing into a dark area such as the [[Lumbridge Caves]] should bring one in case their [[light source]] goes out.
+
+When used on logs that the player has the [[Firemaking]] level to light, the messages {{Mes|You attempt to light the logs.}} and {{Mes|The fire catches and the logs begin to burn.}} are displayed. If the player does not have the Firemaking level, a variation of the message will display {{Mes|You need a Firemaking level of X to burn X logs.}}
+
+If the player is standing on a tile where they are unable to light logs, the message {{Mes|You can't light a fire here.}} is displayed instead.
+
+The tinderbox is also used regularly in many [[quests]].

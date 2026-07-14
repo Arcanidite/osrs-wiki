@@ -1,0 +1,201 @@
+==Other methods==
+===Levels 1–99: Burning logs on a campfire===
+Burning logs on a [[Forester's Campfire|forester's campfire]] is a low-effort alternative to the faster methods. Choose a location where a campfire can be lit right next to a bank, such as the [[Grand Exchange]], [[Rogues' Den]], or the [[Crafting Guild]]. Burning an inventory of logs takes around 150 seconds.
+
+Experience rates and costs are shown in the table below. The first log added to the campfire takes 6 ticks to burn, and the following logs take 9 ticks. Allowing the logs to continue to be added to the campfire automatically results in roughly 665 logs burned per hour, while tending to the campfire manually while holding down spacebar results in up to 975 logs per hour.
+
+{| class="wikitable sortable align-center-1 align-left-2" style="text-align: right;"
+|-
+! colspan="2" |Log type
+!Levels
+!XP ea
+!XP/h Automatic
+!XP/h Manual
+!Logs needed
+!Log price
+!GP/XP
+!Money spent
+|-
+|{{plinkt|Logs}}
+|1–15||40||26,600||39,000
+|61
+|{{Coins|-{{GEP|Logs}}}}
+|{{Coins|-{{GEP|Logs}}/40}}
+|{{Coins|-{{GEP|Logs}}*61}}
+|-
+|{{plinkt|Oak logs}}
+|15–30||60||39,900||58,500
+|183
+|{{Coins|-{{GEP|Oak logs}}}}
+|{{Coins|-{{GEP|Oak logs}}/60}}
+|{{Coins|-{{GEP|Oak logs}}*183}}
+|-
+|{{plinkt|Willow logs}}
+|30–35||90||59,850||87,750
+|101
+|{{Coins|-{{GEP|Willow logs}}}}
+|{{Coins|-{{GEP|Willow logs}}/90}}
+|{{Coins|-{{GEP|Willow logs}}*101}}
+|-
+|{{plinkt|Teak logs}}
+|35–42||105||69,825||102,375
+|221
+|{{Coins|-{{GEP|Teak logs}}}}
+|{{Coins|-{{GEP|Teak logs}}/105}}
+|{{Coins|-{{GEP|Teak logs}}*221}}
+|-
+|{{plinkt|Arctic pine logs}}
+|42–45||125||83,125||121,875
+|128
+|{{Coins|-{{GEP|Arctic pine logs}}}}
+|{{Coins|-{{GEP|Arctic pine logs}}/125}}
+|{{Coins|-{{GEP|Arctic pine logs}}*128}}
+|-
+|{{plinkt|Maple logs}}
+|45–50||135||89,775||131,625
+|295
+|{{Coins|-{{GEP|Maple logs}}}}
+|{{Coins|-{{GEP|Maple logs}}/135}}
+|{{Coins|-{{GEP|Maple logs}}*295}}
+|-
+|{{plinkt|Mahogany logs}}
+|50–60||157.5||104,737||153,562
+|1,095
+|{{Coins|-{{GEP|Mahogany logs}}}}
+|{{Coins|-{{GEP|Mahogany logs}}/157.5}}
+|{{Coins|-{{GEP|Mahogany logs}}*1095}}
+|-
+|{{plinkt|Yew logs}}
+|60–75||202.5||134,662||197,437
+|4,626
+|{{Coins|-{{GEP|Yew logs}}}}
+|{{Coins|-{{GEP|Yew logs}}/202.5}}
+|{{Coins|-{{GEP|Yew logs}}*4626}}
+|-
+|{{plinkt|Magic logs}}
+|75–90||303.8||202,027||296,205
+|13,614
+|{{Coins|-{{GEP|Magic logs}}}}
+|{{Coins|-{{GEP|Magic logs}}/303.8}}
+|{{Coins|-{{GEP|Magic logs}}*13614}}
+|-
+|{{plinkt|Redwood logs}}
+|90–99||350||232,750||341,250
+|21,966
+|{{Coins|-{{GEP|Redwood logs}}}}
+|{{Coins|-{{GEP|Redwood logs}}/350}}
+|{{Coins|-{{GEP|Redwood logs}}*21966}}
+|}
+
+Total money spent with this method: {{Coins|-{{GEP|Logs}}*61-{{GEP|Oak logs}}*183-{{GEP|Willow logs}}*101-{{GEP|Teak logs}}*221-{{GEP|Arctic pine logs}}*128-{{GEP|Maple logs}}*295-{{GEP|Mahogany logs}}*1095-{{GEP|Yew logs}}*4626-{{GEP|Magic logs}}*13614-{{GEP|Redwood logs}}*21966}}
+
+To reduce cost, the more expensive logs like hardwoods and magic logs can be skipped over, resulting in this alternative progression:
+
+{| class="wikitable sortable align-center-1 align-left-2" style="text-align: right;"
+|-
+! colspan="2" |Logs
+!Levels
+!Exp
+!XP/h Automatic
+!XP/h Manual
+!Logs needed
+!Log price
+!GP/XP
+!Money spent
+|-
+|{{plinkt|Logs}}
+|1-15||40||26,600||39,000
+|61
+|{{Coins|-{{GEP|Logs}}}}
+|{{Coins|-{{GEP|Logs}}/40}}
+|{{Coins|-{{GEP|Logs}}*61}}
+|-
+|{{plinkt|Oak logs}}
+|15-30||60||39,900||58,500
+|183
+|{{Coins|-{{GEP|Oak logs}}}}
+|{{Coins|-{{GEP|Oak logs}}/60}}
+|{{Coins|-{{GEP|Oak logs}}*183}}
+|-
+|{{plinkt|Willow logs}}
+|30-45||90||59,850||87,750
+|535
+|{{Coins|-{{GEP|Willow logs}}}}
+|{{Coins|-{{GEP|Willow logs}}/90}}
+|{{Coins|-{{GEP|Willow logs}}*535}}
+|-
+|{{plinkt|Maple logs}}
+|45-60||135||89,775||131,625
+|1,573
+|{{Coins|-{{GEP|Maple logs}}}}
+|{{Coins|-{{GEP|Maple logs}}/135}}
+|{{Coins|-{{GEP|Maple logs}}*1573}}
+|-
+|{{plinkt|Yew logs}}
+|60-80||202.5||134,662||197,437
+|8,456
+|{{Coins|-{{GEP|Yew logs}}}}
+|{{Coins|-{{GEP|Yew logs}}/202.5}}
+|{{Coins|-{{GEP|Yew logs}}*8456}}
+|-
+|{{plinkt|Ironwood logs}}
+|80-90||220.5||146,632||214,987
+|15,240
+|{{Coins|-{{GEP|Ironwood logs}}}}
+|{{Coins|-{{GEP|Ironwood logs}}/220.5}}
+|{{Coins|-{{GEP|Ironwood logs}}*15240}}
+|-
+|{{plinkt|Redwood logs}}
+|90-99||350||232,750||341,250
+|21,966
+|{{Coins|-{{GEP|Redwood logs}}}}
+|{{Coins|-{{GEP|Redwood logs}}/350}}
+|{{Coins|-{{GEP|Redwood logs}}*21966}}
+|}
+
+Total money spent with this method: {{Coins|-{{GEP|Logs}}*61-{{GEP|Oak logs}}*183-{{GEP|Willow logs}}*535-{{GEP|Maple logs}}*1573-{{GEP|Yew logs}}*8456-{{GEP|Ironwood logs}}*15240-{{GEP|Redwood logs}}*21966}}
+
+===Levels 50–99: Wintertodt===
+[[File:Burning brazier (Wintertodt).png|right|179x179px]]
+Subduing [[Wintertodt]] from level 50 Firemaking onwards is a slower, but profitable and low-effort alternative to burning logs. It also grants passive [[Woodcutting]] experience from chopping the [[bruma root]]s, and the [[Pyromancer outfit]], which increases Firemaking experience by 2.5%.
+The fastest way to gain Firemaking experience from Wintertodt is to be on an official World (307, 309, 311, 389), which have fast games that usually last around 4 minutes. Light a brazier as soon as the round starts, chop bruma roots until you have a full inventory and burn them in the brazier. Fix and relight the brazier if needed. Fletching the bruma roots into [[Bruma kindling|kindlings]] is only recommended when the player would not meet the 500-point mark for the extra experience gained at the end of the round. Otherwise, bruma roots should not be fletched into kindlings as this significantly hampers experience rates.
+
+Players can gain extra experience in between rounds by doing other activities during the downtime, such as burning logs, fletching [[dart]]s or making [[Jug of wine|jugs of wine]].
+
+Experience rates scale depending on the player's level. It takes around 600 rounds and 50 hours (assuming an average kill length of 4 minutes and a 60 second pause) to get from level 50 to level 99 Firemaking if you fletch every log, and about 500 rounds and 40 hours if you do not.
+{| class="wikitable"
+!{{SCP|Firemaking}} level
+!{{SCP|Firemaking}} experience per hour
+!{{SCP|Woodcutting}} level
+!{{SCP|Woodcutting}} experience per hour
+|-
+|50
+|161,000
+|50
+|10,000
+|-
+|60
+|193,000
+|60
+|12,000
+|-
+|70
+|226,000
+|70
+|15,000
+|-
+|80
+|258,000
+|80
+|17,000
+|-
+|90
+|290,000
+|90
+|19,000
+|-
+|99
+|320,000
+|99
+|21,000
+|}

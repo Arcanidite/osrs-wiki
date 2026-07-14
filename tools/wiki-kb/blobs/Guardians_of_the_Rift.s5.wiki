@@ -1,0 +1,254 @@
+==Gameplay==
+{{Main|Guardians of the Rift/Strategies}}
+The objective of the minigame is to allow the Great Guardian to charge up enough power to close the rift where Abyssal creatures are coming through.
+[[File:Guardians of the Rift - Temple overview.png|thumb|500px|An overview of the Temple of the Eye, where the minigame takes place.]]
+Players will need to do the following throughout the battle:
+* Imbue essence acquired during the minigame at runic altars to power up the Great Guardian
+* Create elemental and catalytic guardians to fight against the incoming Abyssal creatures
+* Create/repair barriers to protect the Great Guardian from Abyssal creatures
+
+To imbue essence, players must obtain [[guardian fragments]] from guardian remains of varying sizes in the Temple. There are three nodes that can be mined off of: [[guardian parts]], [[guardian remains]], and [[large guardian remains]]. Parts and normal remains can be found in the edges of the temple area, while the larger remains are past some rubble in the mid-east of the Temple area, requiring level 56 [[Agility]] {{boostable|no}} to access.
+
+The huge guardian remains, which give [[guardian essence]] when mined, are found at the mid-western area of the temple. Though normally inaccessible, portals will occasionally appear that take players there, spawning approximately every 2 minutes. Portals remain active for around 25 seconds.
+
+The doubling effect of certain [[mining enhancers]]—such as [[Varrock armour]] (all tiers) and charged [[celestial ring]]s—will apply when mining for guardian fragments and essence.
+
+<gallery captionalign="center" widths="200">
+Guardians of the Rift - mining guardian fragments.png|Mining guardian fragments
+Guardians of the Rift - yellow portals.png|Portals that takes players to the huge guardian remains.
+</gallery>
+
+===Imbuing essence===
+[[File:Guardians of the Rift UI.png|frame|left|The UI showing the time remaining for the active earth and blood Portal Guardians and the portal to the huge guardian remains, among other things.]]
+[[File:Guardians of the Rift - making guardian essence.png|thumb|280px|Creating guardian essence on the workbench. Crafted runes can be deposited into a bank via the Deposit Pool next to it.]]
+[[Guardian fragments]] are converted into [[guardian essence]], which are storable in [[essence pouch]]es. They are brought to runic altars to be imbued via entering Portal Guardians surrounding the centre of the Temple. Only two portals are active at a time: one elemental and one catalytic. Imbuing guardian essence requires the same Runecraft level as crafting them regularly in the corresponding altar. Note that imbuing on runic altars during the minigame will not give players the [[rift guardian]] [[pet]].{{CiteTwitter|author=Mod Elena|url=https://twitter.com/JagexElena/status/1509180405156622342|date=30 March 2022|archiveurl=https://reldo.runescape.wiki/i/103668|archivedate=30 March 2022|quote=[is it possible to get the rift guardian pet during a game of Guardians of the Rift?] Nope}}
+
+In addition, for every guardian essence imbued, there is a 1/250 chance that players will receive a [[portal talisman]],{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1668137185898377217|date=12 June 2023|archiveurl=https://reldo.runescape.wiki/i/103167|archivedate=12 June 2023|quote=If I'm reading my colleagues' code correctly, it rolls 1/250 per rune obtained, until you get one [portal talisman]. That's buffed to 1/200 for the 20% boost.}}{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1668580037145112580|date=13 June 2023|archiveurl=https://reldo.runescape.wiki/i/97784|archivedate=13 June 2023|quote=Oh, yeah, sorry - per essence.}} which can be used on the Portal Guardians to take them back to the runic altar they previously used, even if the portal is closed for that altar. These cannot be kept after the game ends, so players should use them whenever possible. Players can right-click "Toggle-talisman" on a Portal Guardian to stop receiving portal talismans of the selected type.
+
+Once players imbue their essence into either an [[Elemental guardian stone|elemental]] or [[catalytic guardian stone]], they can return to the Temple and power up the Great Guardian. Each guardian stone will give '''two energy of the respective type'''; if crafting [[combination rune]]s, players will instead receive [[polyelemental guardian stone]]s, which give '''three elemental energy''' when used on the Great Guardian.
+
+The number of guardian stones required to fully charge up the Great Guardian scales with player count: the Great Guardian must be powered up with 250 guardian stones for each player inside the temple in order to reach 100%.{{CiteTwitter|author=Mod Elena|url=https://twitter.com/JagexElena/status/1621497474597666816|date=3 February 2023|archiveurl=https://reldo.runescape.wiki/i/27963847|archivedate=10 November 2023|quote=The max charge for the Great Guardian is 250 in a solo. Every essence adds +1 towards that goal. (In larger teams this scales linearly, increasing the max by +250 per person)}} If there are over 20 players, every player beyond the 20th grants a 20% scaling penalty on the charge required to power up the Great Guardian, meaning 200 essence is required for each player after the 20th rather than 250.
+
+When powering up the Great Guardian, the player's [[Energy|run energy]] will be restored by 1% for each guardian stone granted to the Guardian. In addition, a small bonus amount is restored based on the player's current [[Special attacks|special attack energy]], ranging from 1% extra with a totally depleted special energy bar up to 11% additional run energy when the special bar is completely full.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1603796197826756608|date=16 December 2022|archiveurl=https://reldo.runescape.wiki/i/96904|archivedate=16 December 2022|quote=At GotR, it looks like 1% per essence with a bonus for how much special attack energy you've got at the time.}} 
+
+Be aware that players need to have completed certain quests to be able to enter some Portal Guardians:
+* [[Guardian of Cosmic]] - [[Lost City]]
+* [[Guardian of Law]] - [[Troll Stronghold]] 
+* [[Guardian of Death]] - [[Mourning's End Part II]]
+* [[Guardian of Blood]] - [[Sins of the Father]]
+
+===Charging cells===
+Charged cells are used to create [[Rift guardian (combatant)|rift guardians]] and erect barriers. [[Uncharged cell]]s are obtained from a container near the entry barrier, and are charged in the same way guardian essence is. Players can hold up to ten uncharged cells and have only one charged cell at a time.
+[[File:Guardians of the Rift - barriers.png|thumb|280px|Barriers and rift guardians protecting the Great Guardian from Abyssal creatures.]]
+Rift guardians are created with a [[chisel]] via the essence piles near the tables at the south, and can either be elemental (east) or catalytic (west). These will follow the elemental/catalytic guides in the outer ring. Only ten rift guardians can be active at any time.
+
+Barriers are created by using charged cells on the cell tiles at the front-centre. Using increasingly higher tiers of cells in order (ex. medium to strong cells) will also strengthen them. Using lesser charged cells (ex. a strong cell on an overcharged barrier) will instead recharge the barriers by "healing" them. Should a barrier break, the cell tile will need to be repaired, which requires 12 guardian fragments.
+
+The strength of the cell corresponds to the Runecraft level of the runic altar it is charged in:
+
+====Standard runes====
+
+{| class="wikitable sortable align-left-3 align-left-5 align-left-7" style="text-align:center; width:225px;"
+! {{SCP|Runecraft}} Level
+! colspan="2" | Type
+! colspan="2" | Tier
+! colspan="2" | Alignment
+|-
+| 1
+| {{plinkt|Air rune|txt=Air}}
+| data-sort-value="1" | {{plinkp|Weak cell}}
+| [[Weak cell|Weak]]
+| {{plinkt|Elemental guardian stone|txt=Elemental}}
+|-
+| 5
+| {{plinkt|Water rune|txt=Water}}
+| data-sort-value="2" | {{plinkp|Medium cell}}
+| [[Medium cell|Medium]]
+| {{plinkt|Elemental guardian stone|txt=Elemental}}
+|-
+| 9
+| {{plinkt|Earth rune|txt=Earth}}
+| data-sort-value="3" | {{plinkp|Strong cell}}
+| [[Strong cell|Strong]]
+| {{plinkt|Elemental guardian stone|txt=Elemental}}
+|-
+| 14
+| {{plinkt|Fire rune|txt=Fire}}
+| data-sort-value="4" | {{plinkp|Overcharged cell}}
+| [[Overcharged cell|Overcharged]]
+| {{plinkt|Elemental guardian stone|txt=Elemental}}
+|-
+| 2
+| {{plinkt|Mind rune|txt=Mind}}
+| data-sort-value="1" | {{plinkp|Weak cell}}
+| [[Weak cell|Weak]]
+| {{plinkt|Catalytic guardian stone|txt=Catalytic}}
+|-
+| 20
+| {{plinkt|Body rune|txt=Body}}
+| data-sort-value="1" | {{plinkp|Weak cell}}
+| [[Weak cell|Weak]]
+| {{plinkt|Catalytic guardian stone|txt=Catalytic}}
+|-
+| 27
+| {{plinkt|Cosmic rune|txt=Cosmic}}
+| data-sort-value="2" | {{plinkp|Medium cell}}
+| [[Medium cell|Medium]]
+| {{plinkt|Catalytic guardian stone|txt=Catalytic}}
+|-
+| 35
+| {{plinkt|Chaos rune|txt=Chaos}}
+| data-sort-value="2" | {{plinkp|Medium cell}}
+| [[Medium cell|Medium]]
+| {{plinkt|Catalytic guardian stone|txt=Catalytic}}
+|-
+| 44
+| {{plinkt|Nature rune|txt=Nature}}
+| data-sort-value="3" | {{plinkp|Strong cell}}
+| [[Strong cell|Strong]]
+| {{plinkt|Catalytic guardian stone|txt=Catalytic}}
+|-
+| 54
+| {{plinkt|Law rune|txt=Law}}
+| data-sort-value="3" | {{plinkp|Strong cell}}
+| [[Strong cell|Strong]]
+| {{plinkt|Catalytic guardian stone|txt=Catalytic}}
+|-
+| 65
+| {{plinkt|Death rune|txt=Death}}
+| data-sort-value="4" | {{plinkp|Overcharged cell}}
+| [[Overcharged cell|Overcharged]]
+| {{plinkt|Catalytic guardian stone|txt=Catalytic}}
+|-
+| 77
+| {{plinkt|Blood rune|txt=Blood}}
+| data-sort-value="4" | {{plinkp|Overcharged cell}}
+| [[Overcharged cell|Overcharged]]
+| {{plinkt|Catalytic guardian stone|txt=Catalytic}}
+|}
+
+====Combination runes====
+Since each combination rune can be made on either of two altars, the cell tier is determined by the elemental altar that's used.
+
+{| class="wikitable sortable align-left-3 align-left-5 align-left-7" style="text-align:center; width:225px;"
+! {{SCP|Runecraft}} Level
+! colspan="2" | Type
+! colspan="2" | Alignment
+! colspan="4" | Component runes
+|-
+| 6
+| {{plinkt|Mist rune|txt=Mist}}
+| {{plinkt|Polyelemental guardian stone|txt=Polyelemental}}
+| {{plinkt|Air rune|txt=Air}}
+| {{plinkt|Water rune|txt=Water}}
+|-
+| 10
+| {{plinkt|Dust rune|txt=Dust}}
+| {{plinkt|Polyelemental guardian stone|txt=Polyelemental}}
+| {{plinkt|Air rune|txt=Air}}
+| {{plinkt|Earth rune|txt=Earth}}
+|-
+| 13
+| {{plinkt|Mud rune|txt=Mud}}
+| {{plinkt|Polyelemental guardian stone|txt=Polyelemental}}
+| {{plinkt|Water rune|txt=Water}}
+| {{plinkt|Earth rune|txt=Earth}}
+|-
+| 15
+| {{plinkt|Smoke rune|txt=Smoke}}
+| {{plinkt|Polyelemental guardian stone|txt=Polyelemental}}
+| {{plinkt|Air rune|txt=Air}}
+| {{plinkt|Fire rune|txt=Fire}}
+|-
+| 19
+| {{plinkt|Steam rune|txt=Steam}}
+| {{plinkt|Polyelemental guardian stone|txt=Polyelemental}}
+| {{plinkt|Water rune|txt=Water}}
+| {{plinkt|Fire rune|txt=Fire}}
+|-
+| 23
+| {{plinkt|Lava rune|txt=Lava}}
+| {{plinkt|Polyelemental guardian stone|txt=Polyelemental}}
+| {{plinkt|Earth rune|txt=Earth}}
+| {{plinkt|Fire rune|txt=Fire}}
+|-
+|90
+|{{plinkt|Aether rune|txt=Aether}}
+|{{plinkt|Polycatalytic guardian stone|txt=Polycatalytic}}
+| {{plinkt|Cosmic rune|txt=Cosmic}}
+| {{plinkt|Soul rune|txt=Soul}}
+|}
+
+===Gaining energy===
+Players can gain energy by either using cells, by using guardian stones on the Great Guardian, or by repairing a barrier. For each stone used, players will get 5 Runecraft experience and two energy in elemental or catalytic depending on the type of essence used; if crafting combination runes, players will get a polyelemental guardian stone instead, which gives three elemental energy. If players use twelve fragments on repairing a cell tile they will gain 25 energy in both types.
+
+Each cell can be used in one of four ways: to build a barrier, to recharge a barrier, to strengthen a barrier (one tier at a time), or to create a guardian. Higher level cells give more energy, except for when building barriers, which always gives 2 energy in both types. Using cells on barriers gives equal energy in elemental and catalytic, whereas creating a guardian gives energy only in the energy type matching the guardian they created. Creating a guardian awards <math>2x+1</math> energy, where <math>x</math> is the energy that would be awarded for strengthening a barrier with the same cell.
+
+{| class="wikitable align-left-2" style="text-align:center; width:750px;"
+! colspan="2" rowspan="2" | Tier
+! colspan="5" | Barrier
+! colspan="2" | Guardian
+|-
+! Placing
+! Strengthening
+! Recharging
+! Health restored
+! XP
+!Creating<ref group="n">Creating rift guardians only yields energy in either elemental or catalytic, while other uses of cells yield equal energy in both.</ref>
+!XP
+|-
+| data-sort-value="1" | {{plinkp|Weak cell}}
+| [[Weak cell|Weak]]
+| 17
+| {{NA}}
+| 2
+| [[File:Heal hitsplat.png|link=]] 10
+| {{SCP|Runecraft|30}}
+| 6
+| {{SCP|Runecraft|30}}<br/>{{SCP|Crafting|80}}
+|-
+| data-sort-value="2" | {{plinkp|Medium cell}}
+| [[Medium cell|Medium]]
+| 20
+| 7
+| 5
+| [[File:Heal hitsplat.png|link=]] 25
+| {{SCP|Runecraft|100}}
+| 15
+| {{SCP|Runecraft|100}}<br/>{{SCP|Crafting|80}}
+|-
+| data-sort-value="3" | {{plinkp|Strong cell}}
+| [[Strong cell|Strong]]
+| 24
+| 13
+| 9
+| [[File:Heal hitsplat.png|link=]] 50
+| {{SCP|Runecraft|180}}
+| 27
+| {{SCP|Runecraft|180}}<br/>{{SCP|Crafting|80}}
+|-
+| data-sort-value="4" | {{plinkp|Overcharged cell}}
+| [[Overcharged cell|Overcharged]]
+| 30
+| 22
+| 15
+| [[File:Heal hitsplat.png|link=]] 100
+| {{SCP|Runecraft|250}}
+| 45
+| {{SCP|Runecraft|250}}<br/>{{SCP|Crafting|80}}
+|}
+<references group="n" />
+
+===Phases of the battle===
+[[File:Guardians of the Rift - rift closes.png|thumb|280px|Charged with enough power, the Great Guardian closes the rift.]]
+The battle is split into three phases:
+
+The first phase is short, giving players two minutes to prepare by obtaining guardian essence and uncharged cells to create and power up guardians. Initially, there are some [[weak cell]]s used in the beginning stages of the battle that should be used to erect barriers.
+
+After the two minutes pass, abyssal creatures will begin spawning from the rift, consisting of mostly [[Abyssal leech (Guardians of the Rift)|abyssal leeches]] and [[Abyssal guardian (Guardians of the Rift)|guardians]]. There will be a few [[Abyssal walker (Guardians of the Rift)|walkers]] among them. The monsters will attempt to attack the Great Guardian, with their attacks draining its energy. They will also attack barriers and rift guardians, although they only retaliate back for the latter, not actively targeting them. Should the Great Guardian's energy level reach 0%, the encounter will fail.
+
+When the guardian reaches 60% charge, the temple will rumble as the rift glows more intensely, damaging all active barriers by 50 health (in a mass) and spewing out more guardians and walkers compared to leeches. Players should heal the barriers and create more rift guardians if necessary.
+
+When the guardian reaches 100% charge, it will seal the rift. All abyssal creatures and rift guardians will automatically die once this occurs and there is a brief period of respite for players inside to leave or reposition themselves.
+
+At the beginning of a new game, all guardian fragments, essence, and portal talismans acquired during the game will be removed from the player's possession. This also applies when leaving the minigame area.

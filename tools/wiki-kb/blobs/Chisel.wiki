@@ -1,0 +1,70 @@
+{{External|rs|rsc}}
+{{Infobox Item
+|name = Chisel
+|image = [[File:Chisel.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Good for detailed crafting.
+|value = 1
+|weight = 0.453
+|respawn = 100
+|exchange = Yes
+|id = 1755
+}}
+[[File:Chisel detail.png|left|120px]]
+A '''chisel''' is a tool used in the [[Crafting]] [[skill]] to cut and shape hard non-metals, mainly [[gem]]s and [[limestone]]. Chisels are also used in [[Fletching]] to cut gems into [[gem bolt tips|bolt tips]]. Chisels can be purchased for 1 [[coin]] at all [[general store]]s, except for those in [[Dorgesh-Kaan]] and [[Ardougne]]. There is a [[free-to-play]] chisel spawn in the [[Crafting Guild]]. 
+
+At level 15 [[Construction]], [[members]] can make a [[tool store 1]] for the [[workshop]] room of their [[house]], which will provide an unlimited supply of chisels.
+
+==Usage==
+A chisel is necessary for the following recipes: 
+{{Uses tool list|Chisel}}
+
+==Item sources==
+{{Drop sources|Chisel}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Chisel|location=[[Abandoned Mine]] - level 4|members=Yes|mapID=10003
+|2800,4500|2803,4491|leagueRegion = Morytania}}
+{{ItemSpawnLine|name=Chisel|location=[[Cam Torum]] - on a crate in blacksmith basement|members=Yes|mapID=-1|1452,9585|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Chisel|location=[[Civitas illa Fortis]] - on a crate in the [[Fortis Blacksmith]] store|members=Yes|1657,3142|leagueRegion = Varlamore}}
+{{ItemSpawnLine|name=Chisel|location=[[Crafting Guild]]|members=No|2935,3286|leagueRegion = Asgarnia}}
+{{ItemSpawnLine|name=Chisel|location=[[Dense essence mine]]|members=Yes|1764,3863|leagueRegion = Kourend}}
+{{ItemSpawnLine|name=Chisel|location=[[East Ardougne]] - [[Wizard Cromperty]]'s house|members=Yes|2683,3318|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Chisel|location=[[Guardians of the Rift]]|members=Yes|mapID=-1|2407,5645|leagueRegion = Desert}}
+{{ItemSpawnLine|name=Chisel|location=[[Isle of Souls]] - bench near anvil|members=Yes|2217,2789|leagueRegion = Misthalin}}
+{{ItemSpawnLine|name=Chisel|location=[[Necropolis mine]] - south-east of [[Sophanem]]|members=Yes|3320,2708|leagueRegion = Desert}}
+{{ItemSpawnLine|name=Chisel|location=[[Necropolis]] camps - south-east of [[Sophanem]]|members=Yes|3325,2740|leagueRegion = Desert}}
+{{ItemSpawnLine|name=Chisel|location=[[Prifddinas]] - on a table in [[Aneirin's Armour]]|members=Yes|mapID=29|3252,6061|leagueRegion = Tirannwn}}
+{{ItemSpawnLine|name=Chisel|location=[[West Ardougne]] - office east of the church|members=Yes|2543,3287|leagueRegion = Kandarin}}
+{{ItemSpawnLine|name=Chisel|location=[[The Summer Shore]]|3154,2407|members=Yes|leagueRegion = N/A}}
+{{ItemSpawnTableBottom}}
+
+===Shop locations===
+{{Store locations list|Chisel}}
+
+==Sound effects==
+{{SFXTableHead}}
+{{SFXLine|file=Chisel.wav|desc=Using a chisel on items.}}
+{{SFXTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 9 December 2021
+|update = Grand Exchange Tax & Item Sink
+|change = Chisels have been exempted from the [[Grand Exchange#Convenience fee and item sink|Grand Exchange convenience fee]].
+}}
+{{Subject changes footer}}
+
+{{Tools}}
+[[Category:Items exempt from Grand Exchange tax]]
+[[Category:Crafting items]]

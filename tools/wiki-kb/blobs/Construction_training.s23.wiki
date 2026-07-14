@@ -1,0 +1,44 @@
+=== Levels 30–99 Fishing crane repair ===
+
+Repairing [[fishing crane]]s in [[Port Piscarilius]] is a low-intensity, click-light training method for both Construction and Crafting, available from level 30 in both skills.
+
+Each repair grants experience equal to '''4 × your current level''' in both Construction and Crafting. Cranes break again quickly (roughly every 30–60 seconds), allowing for continuous training with minimal movement.
+
+==== Requirements ====
+* Level 30 Construction
+* Level 30 Crafting
+* Hammer
+* 3 [[Plank]]
+* ~15 [[Bronze nails]]
+
+==== Method ====
+# Travel to the fishing crane area in Port Piscarilius.
+# Repair broken cranes using planks and nails.
+# Move between cranes as they break to maintain activity.
+# Repeat continuously for steady XP in both skills.
+
+This method is slower than traditional Construction training but significantly cheaper and provides '''dual-skill experience''', making it efficient for balanced account progression.
+
+==== Experience and cost overview ====
+
+{| class="wikitable"
+! Level !! XP per repair (per skill) !! Cost per repair !! Cost per XP
+|-
+| 30 || 120 || {{Coins|-({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15)}}|| {{Coins|-(({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15) / 120 round 2)}}
+|-
+| 40 || 160 || {{Coins|-({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15)}}|| {{Coins|-(({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15) / 160 round 2)}}
+|-
+| 50 || 200 || {{Coins|-({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15)}}|| {{Coins|-(({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15) / 200 round 2)}}
+|-
+| 60 || 240 || {{Coins|-({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15)}}|| {{Coins|-(({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15) / 240 round 2)}}
+|-
+| 70 || 280 || {{Coins|-({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15)}}|| {{Coins|-(({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15) / 280 round 2)}}
+|-
+| 80 || 320 || {{Coins|-({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15)}}|| {{Coins|-(({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15) / 320 round 2)}}
+|-
+| 90 || 360 || {{Coins|-({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15)}}|| {{Coins|-(({{GEP|Plank}}*3 + {{GEP|Bronze nails}}*15) / 360 round 2)}}
+|}
+
+{{Training guides}}
+[[Category:Construction]]
+[[Category:Members]]

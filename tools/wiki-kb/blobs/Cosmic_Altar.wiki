@@ -1,0 +1,71 @@
+{{External|rs=Cosmic altar}}
+{{Infobox Scenery
+|name = Altar
+|image = [[File:Altar (cosmic).png|300px]]
+|release = [[29 March]] [[2004]]
+|update = RS2 Launched!
+|members = Yes
+|quest = Yes
+|location = [[Zanaris]]
+|options = Craft-rune
+|examine = A mysterious power emanates from this shrine.
+|map = {{Map|mtype=pin|x = 2141|y = 4832|mapID=-1}}
+|id = 34766
+|leagueRegion = General
+}}
+The '''Cosmic Altar''' is a [[runic altar]] upon which [[cosmic rune]]s are crafted from [[pure essence]], providing 8 [[Runecraft]] [[experience]] per essence imbued. Level 27 [[Runecraft]] and completion of the [[Lost City]] quest is required to craft cosmic runes.
+
+Players may create a [[cosmic tiara]] here by using either a [[cosmic talisman]] or a [[tiara]] on the altar whilst having both in their inventory, granting 40 [[Runecraft]] [[experience]]. A [[catalytic tiara]] can also be created here by using a [[catalytic talisman]] and [[gold tiara]], granting 60 Runecraft experience.
+
+Upon entering the Cosmic Altar, the [[music]] track [[Stratosphere]] plays.
+
+==Transportation==
+{{Map|name=Cosmic Altar|align=left|mtype=pin|x = 2407|y = 4376|mapID = -1|height = 275|width = 275|caption = The location of the mysterious ruins used to enter the Cosmic Altar.}}
+The entrance to the altar can be found in southern [[Zanaris]], just outside the [[shady grove]]. It can also be accessed through the [[Abyss]].
+
+There are two [[agility]] [[shortcut]]s that allow faster access, one requiring 46 Agility for the [[Jutting wall (Zanaris)#Medium|medium shortcut]], and 66 Agility for the [[Jutting wall (Zanaris)#Advanced|advanced shortcut]]. Players will take four damage if they fail these shortcuts.
+
+To enter the [[Mysterious ruins#Cosmic |mysterious ruins]], players either have to use a [[cosmic talisman]] on the ruins, or click "Enter" on the ruins while wearing a [[cosmic tiara]]. Alternatively, a [[catalytic talisman]] or [[catalytic tiara|tiara]] can be used.
+
+==Experience==
+Crafting 1 essence into a [[cosmic rune]] grants 8 experience.
+
+*An inventory of 28 pure essence grants 224 EXP.
+*An inventory of 30 ([[small pouch]]) grants 240 EXP.
+*An inventory of 35 ([[small pouch]] + [[medium pouch]]) grants 280 EXP.
+*An inventory of 43 ([[small pouch]] + [[medium pouch]] + [[large pouch]]) grants 344 EXP.
+*An inventory of 54 ([[small pouch]] + [[medium pouch]] + [[large pouch]] + [[giant pouch]]) grants 432 EXP.
+*An inventory of 67 ([[Colossal pouch]]) grants 536 EXP.
+
+From level 59 on (boostable) there are 2 cosmics created per essence, without giving any additional experience.
+
+This is required for the [[Lumbridge & Draynor Diary]] hard task of creating 56 cosmic runes simultaneously.
+
+==Products==
+{{Uses facility list|Cosmic Altar, Catalytic runic altar}}
+
+==Changes==
+
+{{Subject changes header}}
+{{Subject changes
+|date = 23 March 2022
+|update = Guardians of the Rift Launch
+|poll = Old School Content Poll 76: Game Improvements
+|change = The pre-existing delay after using Essence on Runecraft Altars has been removed.
+}}
+{{Subject changes footer}}
+
+==Gallery==
+<gallery mode="packed" heights="160">
+Cosmic Altar outside.png|The entrance to the Cosmic Altar.
+Cosmic Altar inside.png|The inside of the Cosmic Altar.
+Cosmic Rune Altar Sign.png|The sign outside the Cosmic Altar.  Reads: Cosmic Rune Altar 
+</gallery>
+
+==Trivia==
+* When a player enters the altar, they are randomly sent to one of the four portals inside.
+* The projectiles that fly throughout the altar resemble [[Wind Blast]].
+* The Cosmic altar and Cosmic runes are oriented upside down from each other, with the north of the altar as the top side when viewed from above, as most other altars are.
+
+{{Runecraft}}
+{{Zanaris}}

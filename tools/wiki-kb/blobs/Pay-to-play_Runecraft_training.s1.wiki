@@ -1,0 +1,111 @@
+==General information and tips==
+Most Runecraft training methods involve using essence. [[Pure essence]] is most commonly used, as it can be used for all rune types and is typically cheaper than [[rune essence]].
+
+The [[Raiments of the Eye]] set grants 60% more runes when the full outfit is worn, though no extra experience is given. The outfit can be obtained through the [[Guardians of the Rift]] minigame. Getting the outfit is recommended if the player plans to train with profitable methods.
+
+Drinking [[stamina potion]]s is generally the best option for restoring run energy. The [[ring of endurance]] is also useful, as it reduces the run energy drain and doubles the duration of the stamina potion effect when charged. 
+
+===Recommended quests===
+The quests listed in the table below offer very useful rewards for a lot of training methods. Completing them is strongly recommended before doing a lot of Runecraft training.
+
+{| class="wikitable
+!Quest
+!Requirements
+!Notes
+|-
+|[[Rune Mysteries]]
+|None
+|Prerequisite for many quests, including ones below.
+|-
+|[[Enter the Abyss]]
+|Completion of [[Rune Mysteries]]
+|Required for repairing [[essence pouch]]es. Also awards 1,000 Runecraft experience.
+|-
+|[[Temple of the Eye]]
+|Completion of [[Enter the Abyss]]<br>
+{{SCP|Runecraft|10|link=yes}}
+|A total of 9,210 Runecraft experience is earned by completing the quest. Unlocks the [[Guardians of the Rift]] minigame. Awards a [[medium pouch]].
+|-
+|[[The Eyes of Glouphrie]]
+|Completion of [[The Grand Tree]]<br>
+{{SCP|Construction|5|link=yes}}<br>
+{{SCP|Magic|46|link=yes}}
+|Awards 6,000 Runecraft experience, which will allow the player to skip most of the early levels.
+|-
+|[[Lunar Diplomacy]]
+|Various, see the [[Lunar Diplomacy|quest page]].
+|The [[Lunar spellbook]] gives access to very useful spells used in some of the fastest training methods. The quest also awards 5,000 Runecraft experience.
+*[[NPC Contact]] can be used to quickly repair essence pouches. Casting this spell requires level 67 Magic.
+*[[Ourania Teleport]] provides a very fast access to the [[Ourania Altar]]. Casting this spell requires level 71 Magic.
+*[[Magic Imbue]] negates the need for a talisman when crafting [[combination rune]]s. Casting this spell requires level 82 Magic.
+|}
+
+===Essence pouches===
+[[File:Large_pouch_detail.png|right|thumb|120px|The [[large pouch]].]]
+[[Essence pouch]]es can be filled with essence and then emptied to add the essence back into the player's inventory. This allows the player to carry more essence per run, which will increase experience rates in most cases. A [[small pouch]] is given to the player after completing [[Enter the Abyss]]. A medium pouch is awarded after completing [[Temple of the Eye]].
+
+To fill an essence pouch, simply click on it while having essence in the inventory. The pouches can be filled without closing the bank interface. A filled essence pouch can be emptied by holding the Shift key and then clicking on the pouch. To enable the Shift-click empty configuration, toggle on 'Shift click to drop items' through [[settings]].
+
+Essence pouches are dropped by [[abyssal leech]]es, [[Abyssal guardian|guardians]], and [[Abyssal walker|walkers]]. They reside in the [[Abyss]] and in the [[Abyssal Area]]. The Abyss can be accessed through the [[Mage of Zamorak]] in level 5 [[Wilderness]] north of Edgeville, and the Abyssal Area through the [[Fairy rings|fairy ring]] {{Fairycode|ALR}}. The pouches are dropped in increasing size; a player who already has the [[small pouch]] will get a [[medium pouch]] next, and so on. The pouches can be obtained prior to having the required Runecraft levels to use them. However, players cannot store any essence inside of them without the Runecraft level requirement.
+
+The [[colossal pouch]] is made by using an [[abyssal needle]] to stitch together a [[Small pouch|small]], [[Medium pouch|medium]], [[Large pouch|large]], and [[giant pouch]]. This requires unboosted levels of 25 [[Runecraft]] and 56 [[Crafting]].
+
+The pouches above small [[Degradation|degrade]] after enough use. When degraded, they will hold less essence than they normally would. To repair the pouches, talk to the [[Dark Mage (Abyss)|Dark Mage]] in the [[Abyss]] or via [[NPC Contact]]. The player can alternatively have [[Apprentice Cordelia]] repair the pouches for 1 [[abyssal pearls|abyssal pearl]] after unlocking the service for 25 abyssal pearls. Repair the pouches right before they become degraded or as soon as they do. If the pouches are not repaired, they will eventually vanish after enough use, in which case the player will have to get new ones. The small pouch can be obtained from the Dark Mage for free if lost.
+
+{| class="wikitable align-center-1"
+! colspan="2" |Type
+!{{SCP|Runecraft}} level
+!Capacity
+!Cumulative capacity
+!Uses before decay (approx.)
+|-
+|{{plinkt|Small pouch}}
+|1
+|3
+|3
+|No decay
+|-
+|{{plinkt|Medium pouch}}
+|25
+|6
+|9
+|45
+|-
+|{{plinkt|Large pouch}}
+|50
+|9
+|18
+|29
+|-
+|{{plinkt|Giant pouch}}
+|75
+|12
+|30
+|10
+|-
+|{{plinkt|Colossal pouch}}
+|85
+|40
+|40
+|8
+|}
+
+===Rune pouch===
+[[File:Rune_pouch_detail.png|right|thumb|120px|The [[rune pouch]].]]
+The [[rune pouch]] (not to be confused with [[essence pouch]]es) can store 16,000 of three types of runes. It saves inventory space for methods where runes are used for casting spells, such as [[NPC Contact]] for repairing essence pouches. This will increase experience rates for those methods. To get a rune pouch, buy a [[rune pouch note]] from the [[Grand Exchange]] and use it on a banker in exchange for a rune pouch. A rune pouch note currently costs {{Coins|{{GEP|Rune pouch note}}}}.
+
+===Using daeyalt essence===
+Players who have completed [[Sins of the Father]] can obtain untradeable [[daeyalt essence]] through mining [[daeyalt shard]]s. Mining the shards requires level 60 Mining. Daeyalt essence can be used and stored in [[essence pouch]]es like [[pure essence]], but provides a 50% bonus to Runecraft experience when used. The experience bonuses of daeyalt essence and [[Ourania Altar]] stack multiplicatively for a total of 255%. Like with pure essence, the daeyalt essence cannot be used in place of [[dark essence fragments]] to craft [[Blood rune|blood]] or [[soul rune]]s at the Kourend altars.
+
+Obtaining and using daeyalt essence is slower overall than buying pure essence from the [[Grand Exchange]] and using it. The efficiency can be calculated using this formula:
+
+<math>\frac{1.5}{1 + \frac{X}{Y}}</math>
+Where <math>X</math> is essence used per hour and <math>Y</math> is shards mined per hour.
+
+'''Example''':
+
+Someone uses up 2538 essence per hour at the [[Ourania Altar]]{{CiteReddit|author=Nowimnotalurker|url=https://www.reddit.com/r/2007scape/comments/8qli8f/stats_from_7077_rc_at_zmi_altar/|title=Stats from 70-77 rc at ZMI altar|quote=Pure essence: Amount used: 46,953. Time Taken: 18.5hrs.|date=12 June 2018|archiveurl=https://reldo.runescape.wiki/i/106465|archivedate=9 September 2020}}, and they mine about 4400 Shards at [[daeyalt essence mine]] per hour.
+
+This results in <math>\approx 0.95128</math> or  <math>95.128\% </math> efficiency. That means, in this example, spending the time to mine [[daeyalt essence]] and then crafting it, yields <math>95.128\% </math> of the experience you would get if you were to craft runes using bought [[pure essence]] instead. 
+
+While the efficiency is below 100% most of the time, it is still a lower-effort alternative to training [[Runecraft]]. Since you can spend one third of your training time AFK Mining, then only two thirds of the time actively running the essence to any altar while still getting (for example) 95% of the experience you would normally get. There is also little variance in daeyalt mining opposed to the fast clicks and quick banking required to Runecraft. If you can be 95% efficient mining Daeyalt, but only 75% efficient runecrafting, daeyalt will benefit your gameplay style, and may be more efficient overall. Maximum theoretical efficiency of mining shards with a [[dragon pickaxe]] is 4856 an hour.

@@ -1,0 +1,69 @@
+{{otheruses|the greegree that transforms the user into [[Kruk]]|the other types|Greegree}}
+{{Infobox Item
+|name = Kruk monkey greegree
+|image = [[File:Kruk monkey greegree.png]]
+|release = [[6 May]] [[2016]]
+|update = Monkey Madness II
+|members = Yes
+|quest = [[Monkey Madness II]]
+|tradeable = No
+|equipable = Yes
+|stackable = No
+|noteable = No
+|options = Hold, Drop
+|examine = A magical talisman in the shape of Kruk's head.
+|value = 6000
+|alchable = No
+|weight = 0.085
+|id = 19525
+}}
+[[File:Kruk monkey greegree detail.png|left|150px]]
+'''Kruk monkey greegree''' (also known as a '''large ninja greegree''') is used for transforming into [[Kruk]] on [[Ape Atoll]] during [[Monkey Madness II]]. To make one, a player must take a [[monkey talisman]] and [[Kruk's paw]] to [[Zooknock]], located at the very end of the [[Ape Atoll Dungeon]].
+
+A glitch exists where if the player gets caught and they try to transform back, there is a small chance they will lose their greegree; however, this glitch is not common. If the player has a full inventory, and teleports from Ape Atoll without removing their greegree, they will lose it. 
+
+After Monkey Madness II, it can be reobtained from [[Zooknock]] in the [[Tree Gnome Stronghold]], north-west of the Gnome Ball Field, if lost by selecting the 'Large Ninja' greegree, as it is not listed as Kruk monkey greegree. No materials are required. If it is lost during the quest, you can get it back talking with [[Zooknock]] at the end of the [[Ape Atoll Dungeon]].
+
+The greegree can be used for training [[Agility]] at the [[Ape Atoll Agility Course]] or to hunt [[Maniacal monkey (Hunter)|maniacal monkeys]].
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = N/A
+|attackrange = 1
+|combatstyle = Unarmed
+|image = [[File:Kruk.png|250px]]
+}}
+
+{{CombatStyles|Unarmed|speed=N/A|attackrange=1}}
+
+==Creation==
+{{Recipe
+|notes = {{SCP|Quest}} Partial completion of [[Monkey Madness II]]
+|members = Yes
+|ticks = 
+|facilities = Zooknock
+|mat1 = Monkey talisman
+|mat1cost = No
+|mat2 = Kruk's paw
+|mat2cost = No
+|output1 = Kruk monkey greegree
+|output1cost = No
+}}
+
+{{Monkey greegrees}}
+{{Monkey Madness II}}

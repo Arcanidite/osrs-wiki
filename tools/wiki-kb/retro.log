@@ -1750,3 +1750,163 @@ Canonical trigger for next wave: a directive naming a steps.jsonl id whose row's
 - rfd-finale's brief-mandated `until: {"state":"quest-varbit:??"}` on kill atoms turned out to be well-grounded, not just a hedge: the page's own prose states bosses unlock strictly in sequence ("too strong to be defeated until you've defeated the first five"), so the varbit-gate framing matches real game structure even though the exact varbit id is unsourced.
 - rfd-awowogei's greegree modelling (reqs.items on the consuming atom, not a separate equip atom, no MM1 re-unwind) worked cleanly against the brief's instruction and against the wiki's own "skip this section if already held" framing -- a reusable pattern for any future quest gating on a prior quest's unlocked item.
 - Canonical trigger for next wave: a brief targeting an already-fully-researched quest family (RFD, or any [depth:XX] page previously deep-fetched) should say up front "grep manifest.jsonl / read the blobs directly, budget 0 new `get` calls unless a gap surfaces" instead of budgeting 5 gets per target by default -- the get-budget language implicitly signals "expect fresh fetches" when the real bottleneck for a mature KB is authoring atoms from already-cached text, not fetching.
+
+## tenrich-fishing retro
+- Wrote 5-band fishing methods.json (15 methods, 28 atoms) to jobs/479f4b39/tmp/tenrich/methods/fishing.json. Most band-40/58/70 methods AND their granular atom checklists already existed in contrib.jsonl from prior waves (methods:train-fishing-*, oppgran:atoms:train-fishing-40/58/70) -- reused/carried them forward with a "reuse" provenance pointer instead of re-authoring, only authoring atoms fresh for bands 20 and 99.
+- Corrected prior over-conservatism on xp_hr: earlier fishing contribs left band-40 fly-fishing at "??" even though the page's table has an EXACT row at level 40 (30,000/53,000). The "never interpolate" gotcha only blocks values BETWEEN table rows, not values that land exactly on a row -- re-verified this distinction against the chinning-table example in the gotcha and applied it consistently (used exact-row cites for 40/70/99, left genuinely-non-matching 58/70-subrow cases as "??").
+- New grounded methods added beyond what earlier waves captured: Drift net fishing (combined Fishing+Hunter, Fossil Island, band 58) and Tempoross (minigame, bands 40+99) -- both sourced from Pay-to-play_Fishing_training's own sections plus direct Tempoross-page fetches, satisfying the brief's FASTEST/AFK/MINIGAME/COMBINED spread requirement.
+- members:<bool> determination required checking LOCATION not just TOOL membership (e.g. lobster pot is F2P gear but Catherby's spot is P2P while Karamja's is F2P) -- cross-referenced via the Fishing_spot_(small_net,_bait) per-location table since Fishing's own harpoon/lobster-spot list doesn't tag most locations.
+- Canonical trigger for next wave: a train-methods brief for a skill with substantial prior contrib.jsonl coverage should say up front "grep contrib.jsonl for methods:<step_id> and oppgran:atoms:<step_id> first -- treat found rows as inputs to enrich/carry-forward via a reuse pointer, not a blank slate" instead of implying fresh authorship for every band; this task's directive didn't flag that fishing was already ~70% pre-researched, costing an initial exploration pass that a one-line hint would have skipped.
+
+## tenrich:herblore retro
+- methods:train-herblore-{10,38,55,70,99} were ALREADY fully researched+contributed by a prior norm-s-herblore pass (contrib.jsonl ts 2026-07-12T16:06:49Z) and baked verbatim into steps.jsonl; reused those methods[] arrays instead of re-deriving from Herblore_training.s3's 69KB potions table.
+- oppgran:atoms:train-herblore-38 (5-atom strength-potion chain) was also pre-authored; reused verbatim via reuse pointers (U8) rather than re-granularizing band 38's checkpoint.
+- fresh work this pass: band_xp corrections for all 4 non-level-1 bands (steps.jsonl's xp fields were wrong for 38/55/70/99, band-99's especially -- 12862000 doesn't even match any cumulative(hi)-cumulative(lo) pairing); added Mastering Mixology (MINIGAME, fetched dedicated page + training-page summary, flagged their xp/hr disagreement rather than picking one) to bands 70 and 99; added Making Guthix rest (AFK) to band 38; authored all 25 atoms/9 checkpoints fresh except band 38's 5 reused atoms, reusing 4 existing steps.jsonl gather/produce rows (farm-herb-patch-guam, farm-ranarr-patch, gather-snape-grass, brew-prayer-potion, pps-04-source-vials, pps-05-withdraw-brew) for bands 10/55/70 rather than re-authoring gather chains that already exist.
+- CANONICAL TRIGGER: the brief should have said 'grep contrib.jsonl for methods:train-<skill>-* AND oppgran:atoms:train-<skill>-* BEFORE fetching training-page sections' as its own numbered step, not just 'read gotchas.log + grep contrib for your keys' -- I got lucky finding the prior herblore pass by checking queue.jsonl's norm-s-herblore entries first; a directive that doesn't name the exact key prefixes to grep risks a full from-scratch re-fetch of a 69KB table that's already been paid for.
+## tenrich:farming retro
+- Farming is the rare skill where the wiki page is organized entirely by METHOD (bagged plants/compost/allotments/tree-run umbrella/herb runs), not by level band, and a prior norm-s pass had already grounded all 5 train-farming-* methods[] plus 2 of 5 atom sets before this run started -- U8 reuse cut fetch work to near zero; only genuinely new work was atoms for bands 35/70/99 and pulling one real xp/hr number (90,000-100,000/hr, Farming_training s20) by fetching the page's own dedicated Tithe Farm subsection, which none of the 5 prior methods[] arrays had cited despite Tithe Farm being a named extra_page.
+- Every other farming method on the entire skill (tree runs at every tier, all herb runs, allotments, hardwood, special trees) has NO stated flat xp/hr anywhere in the fetched sections -- the page states an aggregate ~2.5M xp/hr composite-run figure once but never attributes it to a single method, so "??" is correct and complete there, not a fetch gap.
+- Trigger for next wave's brief: when a brief names an extra_page (here "Tithe Farm") alongside a skill whose existing methods[] contribs predate that extra_page's citation, explicitly instruct the agent to check whether the extra_page's OWN subsection on the main training page (not just the extra_page itself) is what carries the real number -- Farming_training.s20's "Tithe Farm" subsection had the only cited rate on the whole skill, and it's a 20-section-deep, easy-to-miss child of the training page, not something you'd find by just re-reading the already-fetched s3/s4/s5/s7/s16 blobs.
+## tenrich-woodcutting retro
+Duplicate dispatch: output file pre-existed; audited all claims against 17 cached blobs (zero new fetches — cache made verification free), applied 13 in-place fixes. Root defect pattern: a section-header scope claim (s15 "rates at level 99") dropped during table extraction, silently re-attributing benchmark rates to band levels — table extraction should always re-read the section header, not just the rows. Shape drift: the whole tenrich wave settled on a flat atom shape despite briefs mandating the nested GRANULARITY §5 node; flagged to the consolidator rather than diverging solo.
+
+## tenrich-fm (firemaking granular, job 479f4b39) retro
+- Rewrote methods/firemaking.json: a prior interrupted run left LEGACY flat atoms (top-level verb/target, string hints, no kind/coarse_of/location); re-authored to the full GRANULARITY §5 node shape, ids re-minted fm-01..fm-21 (old fm-15-01-* pointers stale).
+- 5 bands, 20 methods, 21 atoms; every ref slug verified present in manifest.jsonl; xp deltas sum exactly to cumulative(99)=13,034,431.
+- Self-supplied ladder decision: willows->45 then maples->60 per the page's OWN alternative progression (s4), because fastest-table teak/arctic-pine need WC 35 remote / WC 54; mahogany chop level absent from fetched sections ("??").
+- Wintertodt xp_hr at 75 stays "??" (brackets 226k@70 / 258k@80, non-interpolation rule); loop grounded in WT s2/s4/s5/s13/s14 incl. the 500-point kindling rule and reward-cart skill-scaled loot.
+- Canonical trigger: the brief should state up front "if <skill>.json already exists, VALIDATE its atom shape against §5 before trusting it -- prior waves used a flat legacy schema; re-author, don't patch" and "ground members flags from the WC/host page's own Members column before defaulting to ??".
+## tenrich-fishing retro (repair pass)
+Found tenrich:methods:fishing already contributed+done; per duplicate-dispatch discipline
+verified instead of re-deriving. Research was sound (22/22 slugs in manifest, xp figures
+match cached blobs) but the file violated the atom grammar: flat fields, 9 out-of-enum
+hint types, 2 dangling checkpoint starts, 1 stale travel claim (Tempoross "Land's End" vs
+fetched s2's Ruins-of-Unkah dock). Rewrote the deliverable to full node shape with
+branch{} alt-groups; ledger row left untouched (idempotent). Canonical trigger: the brief
+should say "if the methods/<skill>.json already exists, VALIDATE it against the closed
+enums + atom{} nesting + checkpoint ids before returning its receipt -- prior waves wrote
+pre-spec shapes under the same key."
+## tenrich-cooking retro
+All sources pre-cached (0 wiki hits): PC-training s2-s9, Burn_level s2/s4, Rogues'_Den s0/s1,
+Raw_karambwan s1, Fishing_spot_(karambwan) s1, Lumbridge range, PF-training s4.
+Authored 5 bands / 18 methods / 21 atoms -> tenrich methods/cooking.json; U8-reused
+gather-monkfish + cook-monkfish for the 68-80 alt. Flagged cook-monkfish burn-level
+contradiction and synthetic train-cooking xp (recomputed deltas in file).
+Canonical trigger: brief should state "cooking corpus is fully cached; existing row xp is
+synthetic — recompute from Experience_table.s2 before authoring".
+## tenrich-smithing-repair retro
+Wave found smithing.json already written by a concurrent instance (correct research,
+broken schema: flat atoms, 8 invented hint types) -- applied the established
+duplicate-dispatch REPAIR protocol instead of re-researching: verify claims against
+cached blobs, rebuild atoms to the SS5 node shape, keep ids that reuse pointers cite,
+fix content errors (furnace failure chance is iron-only; in-band bar gates 70/85).
+Zero new wiki fetches; Al_Kharid_mine's cached full page closed every mining-site gap
+except runite. Canonical trigger: a tenrich brief should state up front "if
+methods/<skill>.json already exists, your job is schema-audit + blob re-verification +
+targeted fixes (fishing precedent), and name the exact closed enums to lint against."
+## tenrich-crafting retro
+Composed player-direct granular crafting bands (5 bands, 15 methods, 25 atoms) into tenrich scratch from cached blobs only (0 new wiki fetches -- all 20 cited slugs pre-existed in manifest). Rewrote a prior-wave crafting.json that violated the closed hint enum + atom shape. Canonical trigger for next wave's briefs: "enum-lint any pre-existing methods/<skill>.json in scratch before trusting it." Band xp recomputed from Experience_table.s2; fixture xp wrong on 4/5 crafting rows (-70 row holds cumulative, not delta).
+## tenrich-fletching retro
+Repaired the duplicate-dispatch methods/fletching.json (flat-atom schema drift) into the full GRANULARITY sec-5 node shape: 5 bands, 18 methods, 43 atoms, 12 checkpoints, between-step flow as first-class gather/withdraw/produce/deposit atoms with s16 logs-for-goal counts as quantities. 3 fresh gets (Dragon_dart, Celastrus_tree, Bow_string) closed all three inherited "??" gaps; every other claim re-verified against already-cached blobs. Flags for downstream: train-fletching-99 RFD gate uncorroborated (s3: Tourist Trap not needed to fletch darts); battlestaff alt = hidden Farming 85; stringing = members via Bow_string infobox.
+Trigger to mint into next wave's briefs: "the deliverable file may pre-exist from a duplicate dispatch -- validate enums + atom{} nesting first and repair, don't re-research."
+## tenrich-herblore retro (2026-07-13)
+- Composed player-direct granular content for all 5 herblore bands (18 methods, 21 atoms, 5 reused steps.jsonl ids) into job 479f4b39 methods/herblore.json; zero new wiki hits beyond one tiny Betty's full-page get -- everything else was cache/manifest reuse of Herblore_training.s2/s3/s6/s9, Minigame_teleport.s1, Jatix/Ranarr-unf slugs.
+- Verified every cited rate against raw s3 cells (16 recipes read at line level); norm-s flags (super restore 63 / super combat 90 band mismatches, divine-potion nonexistence) all re-confirmed independently.
+- CANONICAL TRIGGER: the directive should say "for produce-skill bands, the loop core must follow the page's IN-BAND recipe ladder and the continuity method may be gate-mismatched -- state the page gate in level_band and keep it methods[0]"; and "list the specific secondaries whose non-GE source is already ??-flagged so agents don't re-derive (herblore: limpwurt/eggs/fungus/berries/scale dust/wine/amylase/lily)."
+## tenrich-runecraft retro
+Authored player-direct granular atoms + methods for all 5 train-runecraft-* bands into the tenrich job scratch (methods/runecraft.json: 18 methods, 22 atoms, 13 checkpoints).
+Zero wiki fetches: 100% cache hits on blobs fetched by earlier norm-s/media-capture waves — the cached-KB flywheel working as designed.
+Canonical trigger: the brief SHOULD have said "altar infobox pages carry exact xp-per-essence — derive band essence counts from them x Experience-table deltas (exact U2 counts), and expect lava to consume an equal earth-rune stack (hidden supply chain)".
+Known held-data faults inherited & flagged (not rewritten): wrath gate 95+DS2 (contrib #95), air-altar zone mismatch (gotcha #31).
+## tenrich-agility-repair retro
+Scope: agility, 7 bands, repair-in-place of a duplicate-dispatch methods/agility.json (21 methods, 36 atoms, 16 checkpoints).
+What worked: ledger-first discipline surfaced the existing file + the fishing/firemaking/mining repair precedent before any wiki work, so the whole pass cost zero fresh fetches -- research reused verbatim, only shape/enum/grounding gaps fixed.
+Net-new grounding: 13 {{Map}} pins grep-recovered from already-cached course blobs; band-xp deltas from Experience_table.s2; branch{} alt_groups so alt loops don't double-count band xp.
+Canonical trigger for next wave's briefs: "methods/<skill>.json may already exist (duplicate dispatch) -- verify+repair in place to GRANULARITY section-5 shape + closed enums, don't re-author; grep cached blobs for {{Map}} pins before shipping empty mapMarkers."
+## tenrich-thieving retro
+Composed player-direct granular atoms (20) + methods (17) for all 5 train-thieving-* bands
+into jobs/479f4b39 tenrich/methods/thieving.json; zero fresh wiki fetches (all 9 training
+sections + H.A.M./Feud/Man pages were cache hits from the norm-s/npcs passes).
+Canonical trigger: the directive should have said "atoms cut at the PAGE's own level
+brackets inside a band (men->bakery at 5, fruit->artefacts at 49, thugs->finisher at 91),
+not one loop stretched across the row band" -- and should have pre-declared how a
+level-gated method-switch is modeled (branch{alt_group} finisher pair; one semi-atomic
+atom per arm since alt_group members are mutually exclusive).
+Deferred: Pollnivneach/Hosidius travel means "??" (uncited on page); PP arm expansion if
+branch{} ever supports multi-atom arms.
+## tenrich-slayer retro
+Repair-pass wave: prior duplicate dispatch left slayer.json in the legacy flat atom shape
+(7 invented hint types) with 2 of 6 bands missing. Grep-first paid off three ways:
+methods:train-slayer-* (all 6) + oppgran:atoms:train-slayer-50 + 10 cached
+Slayer_training sections meant only 2 fresh fetches (Nieve, Wyrms) were needed.
+Canonical trigger: a "compose methods+atoms for skill X" brief should state that
+classify.json's band list may EXCEED the wiki page's own band structure (slayer's two
+task-region bands have no page section at all -- they ground via s22 Task-summary rows +
+s18 locations + pre-existing methods: contrib keys), and should require an enum-lint of
+any pre-existing scratch file before trusting its shape.
+## tenrich-farming (repair) retro
+Duplicate dispatch: methods/farming.json existed (prior instance, legacy flat shape). Repair not rewrite:
+re-verified every claim against 15 cached blobs (0 new fetches), rebuilt 24 atoms/10 checkpoints in the
+full node shape with a pre-write enum/checkpoint/manifest-slug lint (caught nothing post-design because
+the lint ran during authoring -- run it BEFORE writing, not after). Canonical trigger: a tenrich brief
+should state "if methods/<skill>.json exists, this is a REPAIR pass -- lint it against the closed enums
++ atom{} nesting first, verify claims against cached blobs second, and only fetch for genuine gaps";
+mine said compose-from-scratch and only the inherited sibling gotchas prevented a full re-derivation.
+Grounded gaps closed with zero fetches: snapdragon 62 / torstol 85 (Herb_patch_Seeds.s1 was already
+cached), Tithe seed-table mechanics (Tithe_Farm.s1/.s3 cached). The wiki page's own tables beat its
+prose for atom detail: s7 carries literal payments/check-xp/growth-times per tier.
+## tenrich-hunter retro
+Composed player-direct granular hunter content (5 bands, 18 methods, 32 atoms) entirely from cached blobs + 5 light fetches (Bird_house_trapping s1/s2, Herbiboar s2/s4/s7).
+Prior norm-s-hunter + oppgran contribs were the map: read contrib keys first, inherited the page-restructure findings, avoided re-deriving.
+Canonical trigger: hunter briefs should state up-front that Hunter_training s1/s4/s5/s9/s19 are cached and methods:train-hunter-* contribs exist -- direct agents to extra_pages only.
+Friction: none blocking; sections byte-sizes + umbrella-section pattern worked as documented.
+## tenrich-construction retro (repair, 2026-07-14)
+Duplicate-dispatch repair, 5th instance of the same drift (fishing/smithing/mining/agility precedent held exactly):
+prior file's RESEARCH was sound (every number re-verified against cached blobs, zero fresh wiki fetches) but its
+SCHEMA was legacy-flat (no atom{} nesting, bare-string hints, no withdraw atoms). Fixed the file in place: s5 node
+shape, closed enums, 10 new U1 bank-loadout atoms (original 34 ids kept stable), branch{alt_group,optional} on ALT
+chains, band xp from Experience_table.s2, contractor {{Map}} pins minted.
+CANONICAL TRIGGER: a "compose methods+atoms for skill X" brief should state "if methods/<skill>.json already exists,
+your task IS the schema+content audit: check nested atom{} against the 17-verb enum, hints against the 9-type enum,
+checkpoint.start resolution, U1 withdraw atoms present, refs in manifest -- fix the file, verify numbers against
+cached blobs before any new fetch, keep existing atom ids stable." Five waves have now re-derived that instruction
+from gotchas instead of reading it in the brief.
+## attack-atoms retro
+Composed player-direct granular content for attack (9 bands, 28 methods, 25 atoms, 11 checkpoints)
+into jobs/479f4b39 tenrich/methods/attack.json. All loop cores + between-step flow grounded in
+cached Pay-to-play Melee training s1-s17, NMZ s2/s3/s4/s8/s16, NMZ/Strategies s1/s3/s4 (subpage
+fetched this run), Stronghold s3, monster pages. Band xp recomputed from Experience_table.s2.
+CANONICAL TRIGGER: briefs for NMZ-touching skills must say "fetch the Nightmare Zone/Strategies
+SUBPAGE - the parent page's Strategies section is a 51-byte stub; the rock-cake/absorption loop
+and the only page-cited melee xp/hr rates live on the subpage."
+## tenrich-strength retro
+Repaired the duplicate-dispatch legacy-flat strength.json in place (fishing/mining precedent):
+8 bands (added missing train-mm-tunnels), 25 methods, 46 atoms in the full GRANULARITY s5
+node shape, closed enums only (2 invalid hint types folded into detail), grants/xp on
+primary loop cores summing exactly to 13,034,431 per Experience_table.s2. Zero fresh wiki
+fetches -- every claim re-verified by Reading already-manifest blobs, which caught 2
+fabricated xp_hr ints (Scurrius 100k, Nagua 170k) and 1 phantom gate (Nagua Attack 55).
+Contributed tenrich:atoms:train-strength-{10..99}+train-mm-tunnels (all fresh keys).
+Canonical trigger for next wave's briefs: "methods/<skill>.json may already exist --
+REPAIR to the s5 shape in place and re-grep every inherited number against its cited
+cached blob; '??' anything absent." attack.json/woodcutting.json still flat -- same audit
+needed.
+## tenrich-defence retro
+Scope: defence, 6 bands (10/30/40/60/70/80), wiki_title Pay-to-play Melee training. 17 methods, 25 atoms, 8 checkpoints; all ref slugs manifest-validated, enum-linted clean.
+Two fresh fetches only (Combat_Options.s5/.s6) -- everything else rode cached blobs + the two-prefix ledger grep (methods:train-defence-*, oppgran:atoms:train-defence-*) plus sibling attack.json/strength.json research.
+Canonical trigger: a combat-skill brief should say "the per-damage xp-split mechanism (which style trains this stat) is on Combat_Options, NOT the melee training page -- fetch its 300-byte style section and thread a toggle-state hint through every loop atom"; defence differs from its att/str siblings by exactly that one hint plus the style-specific alternatives (Venator bow long-range, Ancient Magicks defensive), so the delta-vs-sibling is small and the sibling file is the right base to imitate.
+## tenrich-magic retro
+Composed player-direct granular magic training (5 bands, 20 methods, 26 atoms) into
+tenrich/methods/magic.json, reusing prior methods:train-magic-* contrib research and
+correcting three level-gate-broken oppgran atom sets (loop spell gated at the band's own
+endpoint). New grounding: 6 spell Cost sections, MTA requirements, Plank Make + Magic
+Imbue sections, training-page s2/s12. Zero groundable {{Map}} pins in the corpus (crab/
+monkey pages are LocLine-only); dropped one inherited below-bar pin. Canonical trigger
+minted: brief should say "a band's loop atom must cite a section whose own level range
+CONTAINS the band; gate==endpoint means next band's loop."
+## tenrich-prayer retro
+Scope: prayer, 4 bands (22/43/52/74), wiki_title Pay-to-play Prayer training -> jobs/479f4b39 tenrich/methods/prayer.json (15 methods, 15 atom rows: 4 fresh + 11 U8 reuse pointers into oppgran:atoms:train-prayer-{43,52,74}).
+Two-prefix grep first (methods:/oppgran:atoms:) surfaced ~75% pre-done; fresh work = band-22 atoms (none existed), supply gathers (Hill Giants big bones, green-dragon re-run sized ~1,930), Elder-Chaos-druid un-note atom, and 4 fetches (Gilded_altar/Big_bones/Chaos_Temple_(hut)/Blessed_bone_shards) that grounded every "??" members flag + big-bone xp_hr.
+Canonical trigger: a prayer/offering-skill brief should say "fetch the BONE ITEM's own page first -- its offering list grounds per-venue xp and the members flag in one fetch" and "an infobox members field can carry a load-bearing parenthetical; quote it whole."
+## tenrich-hitpoints retro
+Composed methods/hitpoints.json (2 bands, 7 methods, 8 atoms) from Pay-to-play_Hitpoints_training.s0-s4 + Hitpoints.s0 + Combat_Options.s3/s4/s5 (5+1+2 fresh gets, everything else cache hits). Hitpoints modeled as a rider: reused ctr-01/ctr-02 (steps.jsonl) and oppgran:atoms:train-attack-30 scaffolding per U8; one fresh until-hitpoints loop atom per band. Fixture xp wrong for both bands (HP's 1,154-xp level-10 start): 3,316 / 96,863 recomputed. Canonical trigger the brief should have carried: "hitpoints is a disambig title -- research Pay-to-play Hitpoints training; recompute band xp from a level-10 floor; reuse the melee lanes' atom chains, author only the until:{hitpoints:N} cores."

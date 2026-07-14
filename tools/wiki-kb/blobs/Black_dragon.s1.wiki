@@ -1,0 +1,99 @@
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Black dragon
+|location = [[Charred Dungeon]]
+|levels = 227
+|members = Yes
+|mapID = -1
+|x:2643,y:8851|x:2644,y:8869|x:2647,y:8863|x:2649,y:8853|x:2652,y:8858
+|mtype = pin
+|leagueRegion = N/A
+|dropversion = Regular
+}}
+{{LocLine
+|name = Black dragon
+|location = [[Corsair Cove Dungeon]]/[[Myths' Guild|Myths' Guild (basement)]] <ref group="l">Requires completion of [[Dragon Slayer II]]</ref>
+|levels = 227
+|members = Yes
+|mapID = 31
+|plane = 0
+|x:1942,y:8967|x:1946,y:8971
+|mtype = pin
+|leagueRegion = Kandarin
+|dropversion = Regular
+}}
+{{LocLine
+|name = Black dragon
+|location = [[Evil Chicken's Lair]]<ref group="l">Requires partial completion of [[Recipe for Disaster: Sir Amik Varze]]</ref>
+|levels = 227
+|members = Yes
+|mapID = 10058
+|plane = 0
+|x:2448,y:4359|x:2454,y:4370|x:2459,y:4359|x:2460,y:4376
+|mtype = pin
+|leagueRegion = Misthalin&fremennik
+|dropversion = Regular
+}}
+{{LocLine
+|name = Black dragon
+|location = [[Lava Maze Dungeon]]
+|levels = 227
+|members = Yes
+|mapID = 26
+|plane = 0
+|x:3048,y:10266|x:3054,y:10269
+|mtype = pin
+|leagueRegion = Wilderness
+|dropversion = Regular
+}}
+{{LocLine
+|name = Black dragon
+|location = [[Mynydd]]<ref group="l">Requires completion of [[Song of the Elves]]</ref>
+|levels = 227
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2155,y:3427
+|mtype = pin
+|leagueRegion = Tirannwn
+|dropversion = Regular
+}}
+{{LocLine
+|name = Black dragon
+|location = [[Taverley Dungeon]]<ref group="l"> Requires either a [[dusty key]] or {{SCP|Agility|70|link=yes}}.</ref>
+|levels = 227
+|members = Yes
+|mapID = 20
+|plane = 0
+|x:2829,y:9826|x:2835,y:9824
+|mtype = pin
+|leagueRegion = Asgarnia
+|dropversion = Regular
+}}
+{{LocLine
+|name = Black dragon
+|location = [[Taverley Dungeon]] (Upper Level)<ref group="l"> Requires a black dragon [[Slayer task]].</ref>
+|levels = 227
+|members = Yes
+|mapID = 20
+|plane = 0
+|x:2774,y:9620|x:2775,y:9611|x:2775,y:9642|x:2777,y:9634|x:2783,y:9646|x:2785,y:9616|x:2785,y:9631|x:2796,y:9649|x:2798,y:9617|x:2798,y:9636|x:2799,y:9626|x:2807,y:9622
+|mtype = pin
+|leagueRegion = Asgarnia
+|dropversion = Regular
+}}
+{{LocLine
+|name = Black dragon
+|location = [[Wilderness Slayer Cave]]
+|levels = 247
+|members = Yes
+|mapID = 26
+|plane = 0
+|x:3356,y:10157|x:3361,y:10159|x:3366,y:10155
+|mtype = pin
+|leagueRegion = Wilderness
+|dropversion = Wilderness Slayer Cave
+}}
+{{LocTableBottom}}
+{{reflist|group=l}}

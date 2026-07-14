@@ -1,0 +1,9 @@
+==Mining info==
+{{Mining info
+|name = Copper Rock
+|level = 1
+|xp = 17.5
+|rock = [[Copper rocks]]
+|tool = [[Pickaxe]]
+|time = 2.4 seconds
+}}

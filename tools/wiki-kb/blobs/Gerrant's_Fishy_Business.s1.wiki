@@ -1,0 +1,22 @@
+==Stock==
+{{StoreTableHead|sellmultiplier=1000|buymultiplier=700|delta=10}}
+{{StoreLine|name=Small fishing net|stock=5|restock=100}}
+{{StoreLine|name=Fishing rod|stock=5|restock=100}}
+{{StoreLine|name=Fly fishing rod|stock=5|restock=100}}
+{{StoreLine|name=Harpoon|stock=2|restock=400}}
+{{StoreLine|name=Lobster pot|stock=2|restock=400}}
+{{StoreLine|name=Fishing bait|stock=1500|restock=1}}
+{{StoreLine|name=Bait pack|stock=80|gemw=No|restock=5}}
+{{StoreLine|name=Feather|stock=1000|restock=1}}
+{{StoreLine|name=Feather pack|stock=100|restock=2|gemw=No}}
+{{StoreLine|name=Raw shrimps|stock=0|restock=300}}
+{{StoreLine|name=Raw sardine|stock=200|restock=1}}
+{{StoreLine|name=Raw herring|stock=0|restock=900}}
+{{StoreLine|name=Raw anchovies|stock=0|restock=1200}}
+{{StoreLine|name=Raw trout|stock=0|restock=1500}}
+{{StoreLine|name=Raw pike|stock=0|restock=1800}}
+{{StoreLine|name=Raw salmon|stock=0|restock=2100}}
+{{StoreLine|name=Raw tuna|stock=0|restock=2300}}
+{{StoreLine|name=Raw lobster|stock=0|restock=2600}}
+{{StoreLine|name=Raw swordfish|stock=0|restock=2900}}
+{{StoreTableBottom}}

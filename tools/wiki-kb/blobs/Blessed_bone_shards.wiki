@@ -1,0 +1,621 @@
+{{Otheruses|def=no|the item used to charge the [[skull sceptre]]|bone fragments}}
+{{Infobox Item
+|name = Blessed bone shards
+|image = [[File:Blessed bone shards.png]]
+|release = [[20 March]] [[2024]]
+|update = Varlamore: Part One
+|members = Yes
+|quest = No
+|tradeable = No
+|bankable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Drop
+|examine = Blessed bones that have been broken down into smaller pieces.
+|value = 18
+|alchable = No
+|weight = 0.000
+|id = 29381
+|leagueRegion = Varlamore
+}}
+[[File:Blessed bone shards detail.png|150px|left]]
+'''Blessed bone shards''' are used to make sacrifices at the [[libation bowl]] at [[the Teomat]], requiring level 30 [[Prayer]]. Each bone shard sacrificed gives 5 [[Prayer]] experience with [[Jug of blessed wine|blessed wine]], or 6 experience with [[Jug of blessed sunfire wine|blessed sunfire wine]].  One jug of blessed wine needs to be used for every 400 bone shards.
+
+To make sacrifices, the libation bowl must be filled with [[Jug of blessed wine|jugs of blessed wine]] or [[Jug of blessed sunfire wine|jugs of blessed sunfire wine]], and the player must have at least 2 [[Prayer points]] to perform it. The passive effect of [[Zealot's robes]] can be used to save some shards while sacrificing them. The chance to preserve material is calculated for each individual shard, rather than the entire set of 100 for every action taken.
+
+Up to 100 shards can be sacrificed per action at the libation bowl. Each jug of blessed (sunfire) wine poured into the libation bowl allows for 400 shards to be sacrificed.
+
+===How to obtain===
+Blessed bone shards can be obtained from various activities in [[Varlamore]], such as breaking down [[sun-kissed bones]] and [[blessed bone statuette]]s, mining [[calcified rocks]], blessing bones at the [[exposed altar]], and rummaging through offerings from [[Vale Totems]]. Additionally, you have a chance at obtaining shards when opening [[Hunters' loot sack|Hunters' loot sacks]] after completing [[Hunters' Rumours]], when opening the [[Lunar Chest]], and by doing the [[Colossal Wyrm Agility Course]].
+
+==Prayer info==
+{{Prayer info
+|version1 = Jug of blessed wine
+|version2 = Jug of blessed sunfire wine
+|name = Ralos' Rise sacrifices
+|level = 30
+|xpnote1 = Requires 1 [[Jug of blessed wine|jug of blessed wine]] and 8 [[Prayer]] points per 400 shards.
+|xpnote2 =
+|xp = 5
+|xp2 = 6
+|type = other
+|facility = [[Libation bowl]]
+}}
+
+==Blessing bones==
+{{See also|Calculator:Prayer/Blessed bone shards|Pay-to-play Prayer training#Comparison between bone offering methods}}
+[[File:Sacrificing at libation bowl.gif|thumb|200px|Sacrificing blessed bone shards at the libation bowl.]]
+Breaking down blessed bones with a [[chisel]] requires first blessing the bones at the [[exposed altar]], found south of [[the Teomat]].
+
+{{#vardefine: BonesBaseXP|4.5}}{{#vardefine: BatBaseXP|5.3}}{{#vardefine: BigBaseXP|15}}{{#vardefine: ZogreBaseXP|22.5}}{{#vardefine: WyrmlingBaseXP|21}}{{#vardefine: BabyDragonBaseXP|30}}{{#vardefine: WyrmBaseXP|50}}{{#vardefine: StrykewyrmBaseXP|60}}{{#vardefine: WyvernBaseXP|72}}{{#vardefine: DragonBaseXP|72}}{{#vardefine: DrakeBaseXP|80}}{{#vardefine: FayrgBaseXP|84}}{{#vardefine: LavaDragonBaseXP|85}}{{#vardefine: RaurgBaseXP|96}}{{#vardefine: FrostDragonBaseXP|100}}{{#vardefine: HydraBaseXP|110}}{{#vardefine: DagannothBaseXP|125}}{{#vardefine: OurgBaseXP|140}}{{#vardefine: SuperiorDragonBaseXP|150}}{{#vardefine: BonesShards|4}}{{#vardefine: BatShards|5}}{{#vardefine: BigShards|12}}{{#vardefine: ZogreShards|18}}{{#vardefine: WyrmlingShards|21}}{{#vardefine: BabyDragonShards|24}}{{#vardefine: StrykewyrmShards|37}}{{#vardefine: WyrmShards|42}}{{#vardefine: SunKissedShards|45}}{{#vardefine: WyvernShards|58}}{{#vardefine: DragonShards|58}}{{#vardefine: DrakeShards|67}}{{#vardefine: FayrgShards|67}}{{#vardefine: LavaDragonShards|68}}{{#vardefine: RaurgShards|77}}{{#vardefine: FrostDragonShards|84}}{{#vardefine: HydraShards|93}}{{#vardefine: DagannothShards|100}}{{#vardefine: OurgShards|112}}{{#vardefine: SuperiorDragonShards|121}}{{#vardefine: StatuetteShards|125}}{{#vardefine: BlessedMod|5}}{{#vardefine: BlessedSunfireMod|6}}
+{| class=" wikitable sortable" style="text-align:left;width:auto;height:auto"
+|+
+!colspan=2 rowspan=2 | Item
+!rowspan=2 | Number of Shards
+!rowspan=2 | Base Bone GP/XP
+!colspan=3 | [[Jug of blessed wine]]
+!colspan=3 | [[Jug of blessed sunfire wine]]
+|-
+!{{SCP|Prayer}}XP per bone
+!Base XP multiplier
+!GP/XP
+!{{SCP|Prayer}}XP per bone
+!Base XP multiplier
+!GP/XP{{Efn|Includes the cost per bone shard of the [[Sunfire splinters]] used to create the [[Jug of blessed sunfire wine]].}}
+|-
+|{{plinkt|Blessed bones}}
+|{{#var: BonesShards}}
+|{{Coins|-{{GEP|Bones}}/{{#var: BonesBaseXP}}}}
+|{{#expr:{{#var: BonesShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: BonesShards}}*{{#var: BlessedMod}}/{{#var: BonesBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Bones}}/({{#expr:{{#var: BonesShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: BonesShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: BonesShards}}*{{#var: BlessedSunfireMod}}/{{#var: BonesBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: BonesShards}}))/({{#expr:{{#var: BonesShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed bat bones}}
+|{{#var: BatShards}}
+|{{Coins|-{{GEP|Bat bones}}/{{#var: BatBaseXP}}}}
+|{{#expr:{{#var: BatShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: BatShards}}*{{#var: BlessedMod}}/{{#var: BatBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Bat bones}}/({{#expr:{{#var: BatShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: BatShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: BatShards}}*{{#var: BlessedSunfireMod}}/{{#var: BatBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Bat bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: BatShards}}))/({{#expr:{{#var: BatShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed big bones}}
+|{{#var: BigShards}}
+|{{Coins|-{{GEP|Big bones}}/{{#var: BigBaseXP}}}}
+|{{#expr:{{#var: BigShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: BigShards}}*{{#var: BlessedMod}}/{{#var: BigBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Big bones}}/({{#expr:{{#var: BigShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: BigShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: BigShards}}*{{#var: BlessedSunfireMod}}/{{#var: BigBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Big bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: BigShards}}))/({{#expr:{{#var: BigShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed zogre bones}}
+|{{#var: ZogreShards}}
+|{{Coins|-{{GEP|Zogre bones}}/{{#var: ZogreBaseXP}}}}
+|{{#expr:{{#var: ZogreShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: ZogreShards}}*{{#var: BlessedMod}}/{{#var: ZogreBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Zogre bones}}/({{#expr:{{#var: ZogreShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: ZogreShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: ZogreShards}}*{{#var: BlessedSunfireMod}}/{{#var: ZogreBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Zogre bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: ZogreShards}}))/({{#expr:{{#var: ZogreShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed babywyrm bones}}
+|{{#var: WyrmlingShards}}
+|{{Coins|-{{GEP|Wyrmling bones}}/{{#var: WyrmlingBaseXP}}}}
+|{{#expr:{{#var: WyrmlingShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: WyrmlingShards}}*{{#var: BlessedMod}}/{{#var: WyrmlingBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Wyrmling bones}}/({{#expr:{{#var: WyrmlingShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: WyrmlingShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: WyrmlingShards}}*{{#var: BlessedSunfireMod}}/{{#var: WyrmlingBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Wyrmling bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: WyrmlingShards}}))/({{#expr:{{#var: WyrmlingShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed babydragon bones}}
+|{{#var: BabyDragonShards}}
+|{{Coins|-{{GEP|Babydragon bones}}/{{#var: BabyDragonBaseXP}}}}
+|{{#expr:{{#var: BabyDragonShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: BabyDragonShards}}*{{#var: BlessedMod}}/{{#var: BabyDragonBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Babydragon bones}}/({{#expr:{{#var: BabyDragonShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: BabyDragonShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: BabyDragonShards}}*{{#var: BlessedSunfireMod}}/{{#var: BabyDragonBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Babydragon bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: BabyDragonShards}}))/({{#expr:{{#var: BabyDragonShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed strykewyrm bones}}
+|{{#var: StrykewyrmShards}}
+|{{Coins|-{{GEP|Strykewyrm bones}}/{{#var: StrykewyrmBaseXP}}}}
+|{{#expr:{{#var: StrykewyrmShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: StrykewyrmShards}}*{{#var: BlessedMod}}/{{#var: StrykewyrmBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Strykewyrm bones}}/({{#expr:{{#var: StrykewyrmShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: StrykewyrmShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: StrykewyrmShards}}*{{#var: BlessedSunfireMod}}/{{#var: StrykewyrmBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Strykewyrm bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: StrykewyrmShards}}))/({{#expr:{{#var: StrykewyrmShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed wyrm bones}}
+|{{#var: WyrmShards}}
+|{{Coins|-{{GEP|Wyrm bones}}/{{#var: WyrmBaseXP}}}}
+|{{#expr:{{#var: WyrmShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: WyrmShards}}*{{#var: BlessedMod}}/{{#var: WyrmBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Wyrm bones}}/({{#expr:{{#var: WyrmShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: WyrmShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: WyrmShards}}*{{#var: BlessedSunfireMod}}/{{#var: WyrmBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Wyrm bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: WyrmShards}}))/({{#expr:{{#var: WyrmShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Sun-kissed bones}}{{Efn|Sun-kissed bones do not need to be blessed to be broken apart}}
+|{{#var: SunKissedShards}}
+|N/A
+|{{#expr:{{#var: SunKissedShards}}*{{#var: BlessedMod}}}}
+|N/A
+|N/A
+|{{#expr:{{#var: SunKissedShards}}*{{#var: BlessedSunfireMod}}}}
+|N/A
+|N/A
+|-
+|{{plinkt|Blessed wyvern bones}}
+|{{#var: WyvernShards}}
+|{{Coins|-{{GEP|Wyvern bones}}/{{#var: WyvernBaseXP}}}}
+|{{#expr:{{#var: WyvernShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: WyvernShards}}*{{#var: BlessedMod}}/{{#var: WyvernBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Wyvern bones}}/({{#expr:{{#var: WyvernShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: WyvernShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: WyvernShards}}*{{#var: BlessedSunfireMod}}/{{#var: WyvernBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Wyvern bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: WyvernShards}}))/({{#expr:{{#var: WyvernShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed dragon bones}}
+|{{#var: DragonShards}}
+|{{Coins|-{{GEP|Dragon bones}}/{{#var: DragonBaseXP}}}}
+|{{#expr:{{#var: DragonShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: DragonShards}}*{{#var: BlessedMod}}/{{#var: DragonBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Dragon bones}}/({{#expr:{{#var: DragonShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: DragonShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: DragonShards}}*{{#var: BlessedSunfireMod}}/{{#var: DragonBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Dragon bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: DragonShards}}))/({{#expr:{{#var: DragonShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed drake bones}}
+|{{#var: DrakeShards}}
+|{{Coins|-{{GEP|Drake bones}}/{{#var: DrakeBaseXP}}}}
+|{{#expr:{{#var: DrakeShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: DrakeShards}}*{{#var: BlessedMod}}/{{#var: DrakeBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Drake bones}}/({{#expr:{{#var: DrakeShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: DrakeShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: DrakeShards}}*{{#var: BlessedSunfireMod}}/{{#var: DrakeBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Drake bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: DrakeShards}}))/({{#expr:{{#var: DrakeShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed fayrg bones}}
+|{{#var: FayrgShards}}
+|{{Coins|-{{GEP|Fayrg bones}}/{{#var: FayrgBaseXP}}}}
+|{{#expr:{{#var: FayrgShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: FayrgShards}}*{{#var: BlessedMod}}/{{#var: FayrgBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Fayrg bones}}/({{#expr:{{#var: FayrgShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: FayrgShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: FayrgShards}}*{{#var: BlessedSunfireMod}}/{{#var: FayrgBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Fayrg bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: FayrgShards}}))/({{#expr:{{#var: FayrgShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed lava dragon bones}}
+|{{#var: LavaDragonShards}}
+|{{Coins|-{{GEP|Lava dragon bones}}/{{#var: LavaDragonBaseXP}}}}
+|{{#expr:{{#var: LavaDragonShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: LavaDragonShards}}*{{#var: BlessedMod}}/{{#var: LavaDragonBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Lava dragon bones}}/({{#expr:{{#var: LavaDragonShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: LavaDragonShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: LavaDragonShards}}*{{#var: BlessedSunfireMod}}/{{#var: LavaDragonBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Lava dragon bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: LavaDragonShards}}))/({{#expr:{{#var: LavaDragonShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed raurg bones}}
+|{{#var: RaurgShards}}
+|{{Coins|-{{GEP|Raurg bones}}/{{#var: RaurgBaseXP}}}}
+|{{#expr:{{#var: RaurgShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: RaurgShards}}*{{#var: BlessedMod}}/{{#var: RaurgBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Raurg bones}}/({{#expr:{{#var: RaurgShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: RaurgShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: RaurgShards}}*{{#var: BlessedSunfireMod}}/{{#var: RaurgBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Raurg bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: RaurgShards}}))/({{#expr:{{#var: RaurgShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed frost dragon bones}}
+|{{#var: FrostDragonShards}}
+|{{Coins|-{{GEP|Frost dragon bones}}/{{#var: FrostDragonBaseXP}}}}
+|{{#expr:{{#var: FrostDragonShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: FrostDragonShards}}*{{#var: BlessedMod}}/{{#var: FrostDragonBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Frost dragon bones}}/({{#expr:{{#var: FrostDragonShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: FrostDragonShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: FrostDragonShards}}*{{#var: BlessedSunfireMod}}/{{#var: FrostDragonBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Frost dragon bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: FrostDragonShards}}))/({{#expr:{{#var: FrostDragonShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed hydra bones}}
+|{{#var: HydraShards}}
+|{{Coins|-{{GEP|Hydra bones}}/{{#var: HydraBaseXP}}}}
+|{{#expr:{{#var: HydraShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: HydraShards}}*{{#var: BlessedMod}}/{{#var: HydraBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Hydra bones}}/({{#expr:{{#var: HydraShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: HydraShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: HydraShards}}*{{#var: BlessedSunfireMod}}/{{#var: HydraBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Hydra bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: HydraShards}}))/({{#expr:{{#var: HydraShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Dagannoth bones (blessed)|txt=Blessed dagannoth bones}}{{Efn|When blessed, Dagannoth Bones do not have a new name but they have a break-apart option}}
+|{{#var: DagannothShards}}
+|{{Coins|-{{GEP|Dagannoth bones}}/{{#var: DagannothBaseXP}}}}
+|{{#expr:{{#var: DagannothShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: DagannothShards}}*{{#var: BlessedMod}}/{{#var: DagannothBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Dagannoth bones}}/({{#expr:{{#var: DagannothShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: DagannothShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: DagannothShards}}*{{#var: BlessedSunfireMod}}/{{#var: DagannothBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Dagannoth bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: DagannothShards}}))/({{#expr:{{#var: DagannothShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed ourg bones}}
+|{{#var: OurgShards}}
+|{{Coins|-{{GEP|Ourg bones}}/{{#var: OurgBaseXP}}}}
+|{{#expr:{{#var: OurgShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: OurgShards}}*{{#var: BlessedMod}}/{{#var: OurgBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Ourg bones}}/({{#expr:{{#var: OurgShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: OurgShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: OurgShards}}*{{#var: BlessedSunfireMod}}/{{#var: OurgBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Ourg bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: OurgShards}}))/({{#expr:{{#var: OurgShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed superior dragon bones}}{{Efn|Blessing [[Superior dragon bones]] requires 70 [[Prayer]].}}
+|{{#var: SuperiorDragonShards}}
+|{{Coins|-{{GEP|Superior dragon bones}}/{{#var: SuperiorDragonBaseXP}}}}
+|{{#expr:{{#var: SuperiorDragonShards}}*{{#var: BlessedMod}}}}
+|{{#expr:({{#var: SuperiorDragonShards}}*{{#var: BlessedMod}}/{{#var: SuperiorDragonBaseXP}})*100 round 2}}%
+|{{Coins|-{{GEP|Superior dragon bones}}/({{#expr:{{#var: SuperiorDragonShards}}*{{#var: BlessedMod}}}})}}
+|{{#expr:{{#var: SuperiorDragonShards}}*{{#var: BlessedSunfireMod}}}}
+|{{#expr:({{#var: SuperiorDragonShards}}*{{#var: BlessedSunfireMod}}/{{#var: SuperiorDragonBaseXP}})*100 round 2}}%
+|{{Coins|-({{GEP|Superior dragon bones}}+(({{GEP|Sunfire splinters}}/200)*{{#var: SuperiorDragonShards}}))/({{#expr:{{#var: SuperiorDragonShards}}*{{#var: BlessedSunfireMod}}}})}}
+|-
+|{{plinkt|Blessed bone statuette|pic=Blessed bone statuette (fox)}}{{Efn|Bone statuettes are already "blessed", and can be broken down once received.}}
+|{{#var: StatuetteShards}}
+|N/A
+|{{#expr:{{#var: StatuetteShards}}*{{#var: BlessedMod}}}}
+|N/A
+|N/A
+|{{#expr:{{#var: StatuetteShards}}*{{#var: BlessedSunfireMod}}}}
+|N/A
+|N/A
+|}
+{{Notelist}}
+
+The following bones cannot be blessed:
+* [[Bleached bones]]
+* [[Burnt bones]]
+* [[Jogre bones]]
+* [[Monkey bones]]
+* [[Shaikahan bones]]
+* [[Wolf bones]]
+* [[Long bone]]
+* [[Curved bone]]
+* [[Mangled bones]]
+* [[Chewed bones]]
+
+==Creation==
+<div style="width:500px">
+<tabber>
+Bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed bones
+|output1 = Blessed bone shards
+|output1quantity = 4
+}}
+|-|
+Alan's bones = 
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Alan's blessed bones
+|output1 = Blessed bone shards
+|output1quantity = 5
+}}
+|-|
+Bat bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed bat bones
+|output1 = Blessed bone shards
+|output1quantity = 5
+|output2 = Token (Varlamore)
+|output2txt = Token
+|output2quantity = 1
+|output2itemnote = If [[Token_(Varlamore)#Eligibility_for_tokens|eligible]].
+}}
+|-|
+Big bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed big bones
+|output1 = Blessed bone shards
+|output1quantity = 12
+}}
+|-|
+Zogre bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed zogre bones
+|output1 = Blessed bone shards
+|output1quantity = 18
+}}
+|-|
+Babywyrm bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed babywyrm bones
+|output1 = Blessed bone shards
+|output1quantity = 21
+}}
+|-|
+Baby dragon bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed babydragon bones
+|output1 = Blessed bone shards
+|output1quantity = 24
+}}
+|-|
+Strykewyrm bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed strykewyrm bones
+|output1 = Blessed bone shards
+|output1quantity = 37
+}}
+|-|
+Wyrm bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed wyrm bones
+|output1 = Blessed bone shards
+|output1quantity = 42
+}}
+|-|
+Sun-kissed Bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Sun-kissed bones
+|mat1pic = Sun-kissed bones
+|output1 = Blessed bone shards
+|output1quantity = 45
+}}
+|-|
+Wyvern bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed wyvern bones
+|output1 = Blessed bone shards
+|output1quantity = 58
+}}
+|-|
+Dragon bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed dragon bones
+|output1 = Blessed bone shards
+|output1quantity = 58
+}}
+|-|
+Drake bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed drake bones
+|output1 = Blessed bone shards
+|output1quantity = 67
+}}
+|-|
+Fayrg bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed fayrg bones
+|output1 = Blessed bone shards
+|output1quantity = 67
+}}
+|-|
+Lava dragon bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed lava dragon bones
+|output1 = Blessed bone shards
+|output1quantity = 68
+}}
+|-|
+Raurg bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed raurg bones
+|output1 = Blessed bone shards
+|output1quantity = 77
+}}
+|-|
+Frost dragon bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed frost dragon bones
+|output1 = Blessed bone shards
+|output1quantity = 84
+}}
+|-|
+Hydra bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed hydra bones
+|output1 = Blessed bone shards
+|output1quantity = 93
+}}
+|-|
+Dagannoth bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Dagannoth bones (blessed)
+|output1 = Blessed bone shards
+|output1quantity = 100
+}}
+|-|
+Ourg bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed ourg bones
+|output1 = Blessed bone shards
+|output1quantity = 112
+}}
+|-|
+Superior dragon bones =
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|skill2 = Prayer
+|skill2lvl = 70
+|skill2exp = 0
+|skill2boostable = No
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed superior dragon bones
+|output1 = Blessed bone shards
+|output1quantity = 121
+}}
+|-|
+Statuette=
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 1
+|skill1exp = 5
+|members = Yes
+|ticks = 0
+|ticksnote = Auto-crushing is 0, then 4 ticks.
+|tools = Chisel
+|mat1 = Blessed bone statuette
+|mat1pic = Blessed bone statuette (eagle)
+|output1 = Blessed bone shards
+|output1quantity = 125
+}}
+</tabber>
+</div>
+
+==Item sources==
+{{Drop sources|Blessed bone shards}}
+
+{{The Teomat}}
+{{Colossal Wyrm Agility Course}}
+[[Category:Blessed bones]]
+[[Category:Prayer]]
+[[Category:Varlamore]]

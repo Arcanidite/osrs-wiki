@@ -1,0 +1,43 @@
+{{External|rs|dw}}
+{{Otheruses|the item|the rock this item is extracted from|Granite rocks|the [[armour]] and [[weaponry]]|Granite equipment|the untradeable item used to create granite cannonballs|granite dust}}
+{{Infobox Item
+|version1 = 500g
+|version2 = 2kg
+|version3 = 5kg
+|name1 = Granite (500g)
+|name2 = Granite (2kg)
+|name3 = Granite (5kg)
+|image1 = [[File:Granite (500g).png]]
+|image2 = [[File:Granite (2kg).png]]
+|image3 = [[File:Granite (5kg).png]]
+|release = [[23 January]] [[2006]]
+|update = Enakhra's Lament
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine1 = A tiny chunk of granite.
+|examine2 = A small chunk of granite.
+|examine3 = A medium-sized chunk of granite.
+|value = 1
+|weight1 = 0.500
+|weight2 = 2.000
+|weight3 = 5.000
+|exchange = Yes
+|id1 = 6979
+|id2 = 6981
+|id3 = 6983
+}}
+{{Synced switch
+|version1 = [[File:Granite (500g) detail.png|left|120px]]
+|version2 = [[File:Granite (2kg) detail.png|left|120px]]
+|version3 = [[File:Granite (5kg) detail.png|left|120px]]
+}}
+[[Granite]] is a rock mined from [[granite rocks]], requiring 45 [[Mining]]. Granite rocks can be found in the [[Bandit Camp Quarry]] south of [[Bandit Camp (Kharidian Desert)|Bandit Camp]], at the [[Necropolis mine]] in the [[Necropolis]], and at the [[Cape Conch mine]] on [[The Great Conch]] island. The first two areas are subject to [[desert heat]], so players mining there need [[waterskin]]s, the [[circlet of water]], or the [[Desert amulet 4]] to avoid taking damage.
+
+A piece of granite (any size) is required in the quest [[King's Ransom]], and two 5kg pieces of granite are required in the quest [[Enakhra's Lament]]. In a [[player-owned house]], five pieces of granite (5kg) can be used to upgrade an outdoor [[menagerie]] to a volcanic habitat, or two pieces of granite (5kg) can be used to build a [[volcanic theme]] in a [[superior garden]]. A piece of granite (any size) can be used to recolour the mining pet, the [[Rock golem]].
+
+Unlike [[sandstone]], larger pieces of granite cannot be [[chisel]]ed down into smaller pieces. Attempting to chisel a 5kg piece outside of Enakhra's Lament displays the message {{mes|You don't need to craft the granite into anything.}}, and attempting to chisel down a 1kg or 2kg piece displays the message {{mes|This block of granite is too small to craft into anything.}}

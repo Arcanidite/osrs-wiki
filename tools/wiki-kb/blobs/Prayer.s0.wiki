@@ -1,0 +1,30 @@
+{{External|rs|rsc}}
+{{Otheruses|def=no|a list of all requirements and unlockables within the Prayer skill|Prayer/Level up table}}
+{{Has calculator|Calculator:Prayer}}
+{{Has skill guide|members=Pay-to-play Prayer training|free=Free-to-play Prayer training|iron=Ironman Guide/Prayer|UIM=Ultimate Ironman Guide/Prayer}}
+{{Infobox Skill
+|name = Prayer
+|image = [[File:Prayer icon.png]]
+|release = [[4 January]] [[2001]]
+|update = Runescape beta is now online!
+|members = No
+|type = Combat
+}}
+[[File:Prayer icon (detail).png|left]]
+'''Prayer''' is a [[F2P|non-members]] [[combat]] [[skill]], trained by using [[remains]] in various ways. 
+
+[[Remains#Bones|Bones]] can be buried, offered to [[gilded altar]]s with [[incense burner]]s, offered to the altar in the [[Chaos Temple (hut)|Chaos Temple]], converted into [[Ectofuntus]], converted to [[Blessed bone shards]] and offered at the [[Libation bowl]], or have [[Sinister Offering]] cast on them. [[Remains#Demonic ashes|Demonic ashes]] can be scattered or converted into experience with [[Demonic Offering]]. Players can also kill [[monsters]] that were reanimated with [[reanimation spells]], or [[Shades of Mort'ton (minigame)|cremate shade remains]] to unlock chests. These chests can drop pieces of the [[zealot's robes]], a [[skilling outfit]] which gives a 1.25% chance per piece to save most [[remains]] when used.
+
+[[#Prayers list|Prayers]] are unlocked as the level in the skill goes up. They can assist the player in combat, for instance, with boosted [[Attack]], immunity to [[Magic]] damage, or faster [[Hitpoints|Hitpoint]] regeneration. Prayers are activated by clicking relevant prayer icons on the prayer tab, or by clicking on the prayer orb after quick prayers are selected.
+
+As long as prayers are activated, the player's [[prayer points]] are slowly drained. These points are required to have prayers enabled, and can be regained by praying at any [[altar]]. Using the [[#Prayer flicking|prayer flicking]] mechanic can be beneficial for saving prayer points.
+
+{{Listen
+|align = right
+|title = Prayer level up - normal
+|filename = Prayer Level Up!.ogg
+|desc = The music that plays when levelling up.}}Most active prayers are not visible to either the player or others without viewing the prayer tab. The exceptions are overhead prayers, which display an icon above the player’s head when active.{{Listen
+|align = right
+|title = Prayer level up - with unlocks
+|filename = Prayer Level Up! (Unlocks).ogg
+|desc = The music that plays when levelling up and unlocking new content.}}

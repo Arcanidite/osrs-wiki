@@ -1,0 +1,8 @@
+==Seeds==
+To arm the trap, players need 10 low level or 5 high level [[hop seed]]s, [[herb seeds]], [[flower seeds]], [[bush seeds]], or [[allotment seeds]]. By using less seeds than the required amount, different types of seeds can be used to set up the same trap (for example, it's possible to use a stack of 7 Barley seeds and fill the remaining 3 with Hammerstone).
+
+All seeds give the exact same rewards, so it is recommended to use the seeds that are cheapest or easiest to obtain.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1019209471015387138|date=17 July 2018|archiveurl=https://reldo.runescape.wiki/i/105153|archivedate=27 May 2020|quote=[Do the seeds you place in birdhouses have an effect on the amount of nests you get?] No.|name=ashseedstweet}}
+
+Low-level ironmen can buy a wide variety of seeds from [[Draynor Seed Market]] or [[Amelia's Seed Shop]] in the farming guild at a relative low price. The 135 seeds in stock can be bought for 377 gp. Nevertheless, ironmen should consider hopping worlds as the number of seeds in stock varies between 5 and 20 per world (with a restock time of 1 minute). Ironmen may also find [[pickpocketing]] a [[Master Farmer]] to be a great source of surplus low level seeds. 
+
+{{/Seeds}}

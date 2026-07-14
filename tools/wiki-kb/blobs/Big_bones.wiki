@@ -1,0 +1,83 @@
+{{External|rs|rsc=Big Bones}}
+{{Infobox Item
+|name = Big bones
+|image = [[File:Big bones.png]]
+|release = [[13 August]] [[2001]]
+|update = Wilderness system online
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Bury, Drop
+|examine = Ew it's a pile of bones.
+|value = 1
+|weight = 0.800
+|respawn = 50
+|exchange = Yes
+|id = 532
+}}
+[[File:Big bones detail.png|left|150px]]
+'''Big bones''' are a bigger variant of [[bones]]. They are always dropped by certain large monsters including [[giants]], [[ogre]]s, [[troll]]s, [[Cyclops|cyclopes]], and the [[lizard]]s in the Kharidian Desert just north of [[Nardah]]. A few spawns of big bones can also be found in the [[Bone Yard]] in the Wilderness, and in the area around the [[Colossal Wyrm Remains]] located in [[Varlamore|Varlamore's]] [[Avium Savannah]]. 
+
+Big bones are also used to charge teleports on the [[giantsoul amulet]], with each set of big bones and a law rune providing one teleport charge. Players can exchange excess amulets for 30 bones by speaking to the [[Odd Old Man]] with the amulets in their inventory.
+
+Big bones give 15 [[Prayer]] experience when buried. As a member, this can be increased by offering the bones in different ways: 
+* 45 XP when casting [[Sinister Offering]].
+*45 XP when offered at the [[sacred bone burner]] after the appropriate faith level has been achieved.
+* 52.5 XP when offered at a [[gilded altar]] with two burners lit.
+* 60 XP when offered at the [[Ectofuntus]] in the form of [[big bonemeal]].
+* 60 XP when [[Blessed big bones|blessed]] and broken down into [[blessed bone shards]] and offered at the [[libation bowl]], or 72 XP when offered with a [[jug of blessed sunfire wine]]. [[Virilis]] outside the altar will exchange noted bones for 10 coins each.
+*105 XP on average when offered at the [[Chaos Temple (hut)|Chaos Temple]] in the Wilderness. Each offering gives 52.5 XP, which is the same as the gilded altars with two burners lit, but with an additional 50% chance to not consume the bones.
+
+==Prayer info==
+{{Prayer info
+|name = Big bones
+|level = 1
+|shardQty = 12
+|xp = 15
+|type = bone
+}}
+
+==Money making==
+{{Mmgsection|Collecting big bones from the Bone Yard}}
+
+==Item sources==
+{{Drop sources|Big bones}}
+
+==Products==
+{{Uses material list|Big bones}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Big bones|location=[[Shayzien]] - [[Giant Pit]]|members=Yes|mapID=-1|1441,3616|1446,3604|1448,3602|leagueRegion=kourend}}
+{{ItemSpawnLine|name=Big bones|location=[[Wolf Den]] - after killing the [[Dire Wolf Alpha]]|members=Yes|mapID=-1|plane=1|1475,9498|1477,9499|1478,9497|leagueRegion=varlamore}}
+{{ItemSpawnLine|name=Big bones|location=[[Trollweiss Mountain]] summit|members=Yes|mapID=-1|2767,3855|leagueRegion=asgarnia}}
+{{ItemSpawnLine|name=Big bones|location=[[Wilderness]] - [[Bone Yard]]|members=No|mapID=-1|3214,3733|3220,3746|3226,3745|3243,3742|3253,3736|3263,3735|leagueRegion=wilderness}}
+{{ItemSpawnLine|name=Big bones|location=[[Colossal Wyrm Remains]] (one requires telegrab)|members=Yes|mapID=-1|1626,2930|1631,2908|1657,2914|1658,2922|1646,2907|leagueRegion=varlamore}}
+{{ItemSpawnLine|name=Big bones|location=[[Here be minotaurs]]|mapID=-1|zoom=4|members=Yes|1943,9514|1944,9512|1945,9509|1948,9512|1951,9511|1954,9508|1954,9512|1956,9515|1957,9510|leagueRegion = N/A}}
+{{ItemSpawnLine|name=Big bones|location=[[Isle of Bones]]|mapID=-1|zoom=4|members=Yes|2535,2538|2528,2531|2529,2526|2527,2524|2531,2521|leagueRegion = N/A}}
+{{ItemSpawnTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 15 April 2004
+|update = The Underground Pass
+|change = The item was graphically updated.
+}}
+{{Subject changes footer}}
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Big bones detail (beta).png|center|300x150px]]
+|[[File:Big bones detail.png|center|300x150px]]
+|-
+|[[File:Big bones (beta).png|center]]
+|[[File:Big bones.png|center]]
+|-
+|29 March 2004 –<br/>15 April 2004
+|15 April 2004 –<br/>present
+|}
+
+{{Bones}}

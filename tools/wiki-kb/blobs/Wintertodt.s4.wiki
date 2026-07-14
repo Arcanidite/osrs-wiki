@@ -1,0 +1,14 @@
+==Official worlds==
+The following [[Server#Themed servers/worlds|official worlds]] are assigned to Wintertodt:
+
+{| class="wikitable sortable" style="text-align: left;"
+!World
+!Location
+!Members
+!Activity
+{{WorldLine|307|United States (west)|mems=yes|Wintertodt}}
+{{WorldLine|309|United Kingdom|mems=yes|Wintertodt}}
+{{WorldLine|311|Germany|mems=yes|Wintertodt}}
+{{WorldLine|389|Australia|mems=yes|Wintertodt}}
+{{WorldLine|402|United States (east)|mems=yes|Wintertodt}}
+|}

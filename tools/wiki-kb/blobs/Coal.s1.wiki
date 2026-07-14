@@ -1,0 +1,9 @@
+==Mining info==
+{{Mining info
+|name = Coal rocks
+|level = 30
+|xp = 50
+|rock = [[Coal rocks]]
+|tool = [[Pickaxe]]
+|time = 30 seconds
+}}

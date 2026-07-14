@@ -1,0 +1,57 @@
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Red dragon
+|location = [[Brimhaven Dungeon]]
+|levels = 152
+|members = y
+|mapID = -1
+|plane = 0
+|x:2697,y:9506|x:2702,y:9504|x:2703,y:9522|x:2703,y:9532|x:2706,y:9516|x:2708,y:9508|x:2711,y:9500|x:2714,y:9526|x:2717,y:9516|x:2721,y:9522|x:2724,y:9516|x:2704,y:9539|x:2704,y:9546|x:2711,y:9537|x:2711,y:9550|x:2712,y:9543
+|mtype = pin
+|leagueRegion = Karamja
+}}
+{{LocLine
+|name = Red dragon
+|location = [[Charred Dungeon]]
+|levels = 152
+|members = yes
+|mapID = -1
+|x:2661,y:8867|x:2666,y:8861|x:2668,y:8868|x:2672,y:8863
+|mtype = pin
+|leagueRegion = N/A
+}}
+{{LocLine
+|name = Red dragon
+|location = [[Corsair Cove Dungeon]]/[[Myths' Guild|Myths' Guild (basement)]]<ref group "l">Requires completion of [[Dragon Slayer II]]</ref>
+|levels = 152
+|members = y
+|mapID = -1
+|plane = 1
+|x:1910,y:8995|x:1911,y:9002|x:1918,y:9005
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{LocLine
+|name = Red dragon
+|location = [[Dragon Nest]]
+|levels = 152
+|members = y
+|mapID = -1
+|plane = 0
+|x:1260,y:9505|x:1253,y:9500|x:1258,y:9495|x:1255,y:9490|x:1260,y:9500
+|mtype = pin
+|leagueRegion = Varlamore
+}}
+{{LocLine
+|name = Red dragon
+|location = [[Forthos Dungeon]]
+|levels = 152
+|members = y
+|mapID = -1
+|plane = 0
+|x:1812,y:9933|x:1815,y:9937|x:1816,y:9927|x:1821,y:9929|x:1822,y:9937|x:1823,y:9933
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{LocTableBottom}}<references group "l"/>

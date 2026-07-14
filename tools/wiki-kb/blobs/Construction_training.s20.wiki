@@ -1,0 +1,38 @@
+===Levels 50–99: Mounted mythical capes===
+[[Mythical cape (mounted)|Mounted mythical cape]]s are a cheaper alternative to mahogany or other teak furniture. They require 3 teak planks each along with a [[mythical cape]]. The cape is returned after removing the furniture. Each mounted mythical cape gives 370 experience, granting more experience per [[teak plank]] than other teak furniture. However, oak larders offer faster experience and are usually similar in cost.
+
+Building mounted mythical capes requires completion of [[Dragon Slayer II]], which requires having at least level 50 Construction. In case of mistakes, have an equipable item in the inventory as players cannot remove a mounted mythical cape if they have a full inventory of planks.
+
+#Send the demon butler away with 6 planks still in your inventory.
+#Remove and build 2 mounted mythical capes.
+#After the second remove, wait 1 tick and the butler will return with 24 planks.
+
+Players can gain up to around 430,000 experience per hour with maximum efficiency. Expect lower rates if making mistakes.
+
+{| class="wikitable"
+!Levels
+!XP needed
+!colspan=2 | Object
+!# for goal
+!Planks required
+!Plank cost
+!Servant cost
+!Cost per XP
+|-
+|50–66
+|394,921
+|{{plinkt|Mythical cape (mounted)|pic=Mythical cape (mounted) icon|txt=Mounted mythical cape|rowspan=2}}
+|{{plinkp|Mythical cape (mounted)|pic=Mythical cape (mounted) icon}} 1,068
+|{{plinkp|Teak plank}} 3,204
+|{{Coins|-{{GEP|Teak plank|3204}}}}
+|{{Coins|{{#expr:-3204*10000/8/24 round 0}}}} 
+|rowspan=2|{{Coins|-(3*({{GEP|Teak plank}}+10000/8/24))/370 round 2}}<ref group=e>Cost per XP with servant.</ref><br/>/ {{Coins|-(3*{{GEP|Teak plank}})/370 round 2}}<ref group=e>Cost per XP without servant.</ref>
+|-
+|50–99
+|12,933,098
+|{{plinkp|Mythical cape (mounted)|pic=Mythical cape (mounted) icon}} 34,955
+|{{plinkp|Teak plank}} 104,865
+|{{Coins|-{{GEP|Teak plank|104865}}}}
+|{{Coins|{{#expr:-104865*10000/8/24 round 0}}}}
+|}
+{{reflist|group=e}}

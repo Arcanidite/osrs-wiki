@@ -1,0 +1,100 @@
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Blue dragon
+|location = [[Corsair Cove Dungeon]]/[[Myths' Guild|Myths' Guild (basement)]]{{Refn|Requires completion of [[Dragon Slayer II]].|group=l}}
+|levels = 111
+|members = Yes
+|mapID = -1
+|plane = 1
+|x:1925,y:8968|x:1928,y:8973|x:1930,y:8986|x:1931,y:8967|x:1931,y:8979
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{LocLine
+|name = Blue dragon
+|location = [[Heroes' Guild]] Basement{{Refn|Requires completion of [[Heroes' Quest]].|group=l}}
+|levels = 111
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:2908,y:9905
+|mtype = pin
+|leagueRegion = Asgarnia
+}}
+{{LocLine
+|name = Blue dragon
+|location = [[Isle of Souls Dungeon]]
+|levels = 111
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:2120,y:9305|x:2122,y:9300|x:2127,y:9299|x:2129,y:9304
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{LocLine
+|name = Blue dragon
+|location = [[Ogre Enclave]]{{Refn|Requires completion of [[Watchtower]].|group=l}}
+|levels = 111
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:2590,y:9461|x:2592,y:9431|x:2609,y:9459|x:2568,y:9437|x:2579,y:9445|x:2604,y:9443
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{LocLine
+|name = Blue dragon
+|location = [[Taverley Dungeon]]{{NamedRef|Taverley|group=l}}
+|levels = 111
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:2897,y:9797|x:2899,y:9802|x:2904,y:9802|x:2903,y:9780|x:2903,y:9786|x:2906,y:9774|x:2911,y:9787|x:2912,y:9779|x:2920,y:9784
+|mtype = pin
+|leagueRegion = Asgarnia
+}}
+{{LocLine
+|name = Blue dragon
+|location = [[Taverley Dungeon]] (Upper Level){{Refn|Requires a blue dragon [[Slayer task]].|group=l}}{{Refn|Requires either a [[dusty key]] or {{SCP|Agility|70|link=yes}}.|name=Taverley|group=l}}
+|levels = 111
+|members = Yes
+|group = 1
+|mapID = -1
+|plane = 1
+|x:2889,y:9804|x:2891,y:9810|x:2896,y:9813|x:2917,y:9812|x:2922,y:9809|x:2926,y:9812|x:2942,y:9818|x:2944,y:9809|x:2946,y:9824|x:2951,y:9814|x:2953,y:9827|x:2955,y:9821
+|mtype = pin
+|leagueRegion = Asgarnia
+}}
+{{LocLine
+|name = Blue dragon
+|location = [[Ruins of Tapoyauik]] (Bottom floor){{Refn|Requires completion of [[Heart of Darkness]].|group=l}}
+|levels = 111
+|members = Yes
+|mapID = -1
+|plane = 0
+|x:1610,y:9608|x:1575,y:9611|x:1576,y:9605|x:1581,y:9614|x:1588,y:9611|x:1589,y:9605|x:1592,y:9617
+|leagueRegion = varlamore
+|mtype = pin
+}}
+{{LocLine
+|name=Blue dragon
+|location=[[Dragon Nest]]
+|levels=111
+|members=Yes
+|mapID= -1
+|plane = 0
+|1230,9491|1233,9497|1236,9489|1238,9500|1239,9494
+|leagueRegion = Varlamore
+}}
+{{LocTableBottom}}
+{{reflist|group=l}}
+<gallery>
+Blue dragon (Heroes' Guild) safespot.png|Safespot found in the [[Heroes' Guild]].
+Blue dragon (Ogre Enclave) safespot.png|Safespot found within the [[Ogre Enclave]].
+Blue dragon (Ogre Enclave) safespot 2.png|A safespot for two dragons found in the Ogre Enclave.
+Blue dragon (Taverley Dungeon) safespot.png|Safespot found within the [[Taverley Dungeon]]. Can be used with either Ranged, Magic, or Melee.
+Blue dragon (Isle of Souls Dungeon) safespot.png|Safespot found within the [[Isle of Souls Dungeon]]. 
+Blue dragon (Dragon Nest) safespot.png|Safespot found within the [[Dragon Nest]] east of [[Tal Teklan]]. 
+</gallery>

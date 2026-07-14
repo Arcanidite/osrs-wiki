@@ -1,0 +1,139 @@
+==Tree locations==
+{{ObjectTableHead}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = North of the [[Farming Guild]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|1235,3772|1239,3769
+|mtype=pin
+|leagueRegion = Kourend
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = [[Etceteria]] (no logs)<ref group=n>Mahogany trees can only be chopped in [[Etceteria]] with [[Queen Sigrid]]'s approval upon completion of [[Royal Trouble]] and '''do not''' reward logs.</ref>
+|members = Yes
+|mapID = 0
+|plane = 0
+|2598,3894|2607,3895|2613,3890
+|mtype=pin
+|leagueRegion = Fremennik
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = [[Ape Atoll]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|2717,2709|2727,2735
+|mtype=pin
+|leagueRegion = Kandarin
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = [[Hardwood Grove]]<ref group=n>Players must pay 100 [[trading sticks]] to [[Murcaily]] in order to enter. Free entry if the [[Elite Karamja Diary]] is completed.</ref>
+|members = Yes
+|mapID = 0
+|plane = 0
+|2819,3079|2819,3087|2821,3083|2823,3079
+|mtype=pin
+|leagueRegion = Karamja
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = Eastern [[Kharazi Jungle]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|2946,2905|2946,2910|2951,2922
+|mtype=pin
+|leagueRegion = Karamja
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = Islands north of [[Mos Le'Harmless]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|3811,3063|3825,3055
+|mtype=pin
+|leagueRegion = Morytania
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = [[Prifddinas]]
+|members = Yes
+|mapID = 29
+|plane = 0
+|3301,6128|3301,6132|3304,6127
+|mtype=pin
+|leagueRegion = Tirannwn
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = [[Uzer Oasis]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|3509,3015|3511,3017
+|mtype=pin
+|leagueRegion = Desert
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = [[Isle of Souls]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|2191,2994|2207,2990
+|mtype=pin
+|leagueRegion = Misthalin
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = [[Tlati Rainforest]]<ref group=n>Level 43 [[Agility]] required to access</ref>
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1256,y:3005|x:1257,y:2999|x:1263,y:2998|x:1267,y:3001
+|mtype=pin
+|leagueRegion = Varlamore
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = South-east of [[Tal Teklan]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|1249,3076
+|mtype=pin
+|leagueRegion = Varlamore
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = East side of [[The Great Conch]]<ref group=n>Partial completion of [[Troubled Tortugans]] is required to access [[The Great Conch]].</ref>
+|members = Yes
+|mapID = 0
+|plane = 0
+|3248,2396|3244,2400
+|mtype=pin
+|leagueRegion = N/A
+}}
+{{ObjectLocLine
+|name = Mahogany tree
+|location = [[Shimmering Atoll]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|1586,2789|1589,2785
+|mtype=pin
+|leagueRegion = N/A
+}}
+{{ObjectTableBottom}}
+{{reflist|group=n}}
+
+===Notable Locations===
+* [[Tai Bwo Wannai]] - Requires 100 [[Trading sticks]] to enter, but completion of the [[Elite Karamja Diary]] permits free access. The nearby Tai Bwo Wannai Parcel Service can transport logs to your bank for 10 trading sticks each.
+* [[Tlati Rainforest]] - Able to obtain [[Ent seed]] and [[Loop half of key (moon key)]] drops.
+* [[Prifddinas]] - Able to receive [[Crystal shard]] drops.

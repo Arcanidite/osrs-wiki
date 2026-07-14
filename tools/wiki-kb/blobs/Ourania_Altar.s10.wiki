@@ -1,0 +1,60 @@
+==Method==
+<div style="float:right;">
+{{Loadout
+|loadoutname = ZMI Runecraft
+|loadouticon = Ourania teleport (tablet)
+| head = Hat of the eye (red)
+| cape = Hitpoints cape(t)
+| neck = Amulet of fury
+| ammo = Rada's blessing 4
+| weapon = Dust battlestaff
+| torso = Robe top of the eye (red)
+| legs = Robe bottoms of the eye (red)
+| shield = Blessed spirit shield
+| gloves = Regen bracelet
+| boots = Boots of the eye
+| ring = Ring of endurance
+|Colossal pouch|Pure essence|Pure essence|Pure essence
+|Pure essence|Pure essence|Pure essence|Pure essence
+|Pure essence|Pure essence|Pure essence|Pure essence
+|Pure essence|Pure essence|Pure essence|Pure essence
+|Pure essence|Pure essence|Pure essence|Pure essence
+|Pure essence|Pure essence|Pure essence|Extended stamina potion(1)
+|Pure essence|Pure essence|Pure essence|Divine rune pouch
+|rune1 = Law rune\700
+|rune2 = Astral rune\1500
+|rune3 = Cosmic rune\100
+|rune4 = Mind rune\14000
+|spell1 = Ourania Teleport
+|spell2 = NPC Contact
+|spell3 = 
+|spell4 = 
+|spell5 = 
+}}
+</div>
+If the player does not own the [[Raiments of the Eye]], the next best equipment to wear is [[weight-reducing clothing]] and higher defence gear for the members of the [[Zamorak Magical Institute]], who are aggressive and fight with all three styles. It is recommended to prioritise [[Magic]] defence. Players can use [[Protect from Missiles]] and recharge [[Prayer]] at the altar by the ladder to the underground cave; this is convenient should players be using [[Ourania Teleport]]. Wearing a [[Hitpoints cape]] and [[regen bracelet]] can also help reduce the risk of needing food. [[Blessed spirit shield]] offers good protection while being lightweight and affordable; [[elysian spirit shield]] is more effective due to its damage reduction, but it has a much higher cost. An example setup is shown to the right.
+
+It is recommended to take the short path whilst playing on one of the designated Ourania Altar worlds, 327(DE) or 480(US), which is often filled with other runecrafters running to the altar, causing damage to be spread across multiple players and, as such, protection prayers and armour aren't as needed.
+
+When choosing an inventory setup, the use of several spells should be considered:
+* [[Ourania Teleport]] for banking
+* [[NPC Contact]] to repair [[essence pouch]]es
+* [[Spellbook Swap]] (with 96 Magic), for:
+** [[Vile Vigour]] on the [[Arceuus spellbook]] after completion of [[A Kingdom Divided]] to convert prayer points into run energy, or
+** [[Teleport to House]] on the [[standard spellbook]] for use of a [[revitalisation pool]] (or better)
+
+Ideally, carrying a [[dust battlestaff]] with [[astral rune]]s, [[cosmic rune]]s, [[law rune]]s covers the player for all spells other than [[Vile Vigour]], but at higher levels the [[soul rune]]s required will be frequently obtained from the altar so do not need to be carried. However, 20 runes for access to [[Eniola]] for banking is strongly recommended, and it is common to carry a low value rune like [[mind rune]]s to cover this cost. 
+
+Alternatively, without access to a dust battlestaff, players may wish to carry [[earth rune]]s instead of mind runes and use a [[staff of air]] or equivalent. It is also possible to forego law runes and rely on using ones crafted at the altar to teleport out, although there is a small chance of this leaving the player without a teleport out.
+
+Equipping a [[desert amulet 4]] also allows one to teleport to Nardah and restore their stats between runs without the need for Vile Vigour and Spellbook Swap.
+
+Rather than selecting the follow option, it is recommended to use an item on another player or to trade them as it will allow the player to follow them the entire way to the altar without getting trapped behind the walls.
+
+Use [[Bank#Deposit_lock_settings|Deposit Lock Settings]] to lock the [[colossal pouch]] and [[divine rune pouch]], allowing crafted runes to be quickly banked after each trip.
+
+When worn, the [[Runecraft cape]] or [[max cape]] prevents [[essence pouch]]es from degrading, removing the need for the [[NPC Contact]] spell.
+
+It is also possible to instead walk directly to the altar from [[Eniola]] on [[RuneLite]] or the [[mobile]]/[[official client]], although the means to is slightly different on each:
+* On the mobile or official client, you can click on the ground by the altar to walk to it, so long as you have draw distance turned up to the maximum in the [[settings]]. However, you cannot select any option on the altar itself from that distance, only walk to it.
+* On RuneLite, the '''GPU''' or '''117 HD''' plugins allow the player to click directly on the altar from next to Eniola with the 'Draw distance' and 'Extended map loading' plugin settings at their maximum.

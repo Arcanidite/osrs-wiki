@@ -1,0 +1,78 @@
+==Drops==
+{{DropLogProject|jagex=yes}}
+
+{| class="wikitable"
+! rowspan="2" |[[Konar quo Maten|Konar]] task
+! colspan="2" |Average drop value
+|-
+![[Grand Exchange|GE]]
+![[High Level Alchemy|HA]]
+|-
+|{{No}}
+|{{Coins|{{Average drop value|mob=Blue dragon|raw=y}}}}
+|{{Coins|{{Average drop value|mob=Blue dragon|alch=yes|raw=y}}}}
+|-
+|{{Yes}}
+|{{Coins|{{Average drop value|mob=Blue dragon|brimstone=yes|raw=y}}}}
+|{{Coins|{{Average drop value|mob=Blue dragon|brimstone=yes|alch=yes|raw=y}}}}
+|}
+
+===100%===
+{{DropsTableHead}}
+{{DropsLine|name=Blue dragonhide|quantity=1|rarity=Always}}
+{{DropsLine|name=Dragon bones|quantity=1|rarity=Always}}
+{{DropsTableBottom}}
+
+===Weapons and armour===
+{{DropsTableHead}}
+{{DropsLine|name=Steel platelegs|quantity=1|rarity=4/128}}
+{{DropsLine|name=Mithril axe|quantity=1|rarity=3/128}}
+{{DropsLine|name=Steel battleaxe|quantity=1|rarity=3/128}}
+{{DropsLine|name=Mithril spear|quantity=1|rarity=2/128}}
+{{DropsLine|name=Adamant full helm|quantity=1|rarity=1/128}}
+{{DropsLine|name=Mithril kiteshield|quantity=1|rarity=1/128}}
+{{DropsLine|name=Rune dagger|quantity=1|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Runes===
+{{DropsTableHead}}
+{{DropsLine|name=Water rune|quantity=75|rarity=8/128}}
+{{DropsLine|name=Nature rune|quantity=15|rarity=5/128}}
+{{DropsLine|name=Law rune|quantity=3|rarity=3/128}}
+{{DropsLine|name=Fire rune|quantity=37|rarity=1/128}}
+{{DropsTableBottom}}
+
+===Herbs===
+{{HerbDropTableInfo|15/128}}
+{{DropsTableHead}}
+{{HerbDropLines|15/128}}
+{{DropsTableBottom}}
+
+===Coins===
+{{DropsTableHead}}
+{{DropsLine|name=Coins|quantity=44|rarity=29/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=132|rarity=25/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=200|rarity=10/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=11|rarity=5/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=440|rarity=1/128|gemw=No}}
+{{DropsTableBottom}}
+
+===Other===
+{{DropsTableHead}}
+{{DropsLine|name=Adamantite ore|quantity=1|rarity=3/128}}
+{{DropsLine|name=Bass|quantity=1|rarity=3/128}}
+{{DropsTableBottom}}
+
+===Gem drop table===
+{{GemDropTable|5/128|naturetalisman=yes|chaostalisman=yes}}
+
+===Tertiary===
+{{DropsTableHead}}
+{{DropsLine|name=Ensouled dragon head|quantity=1|rarity=1/50}}
+{{DropsLine|name=Scaly blue dragonhide|quantity=1|rarity=1/50}}
+{{DropsLine|name=Brimstone key|quantity=1|rarity={{Brimstone rarity|111}}|raritynotes={{Refn|Brimstone keys are only dropped if killed on a [[Slayer task]] given by [[Konar quo Maten]].|group=d}}|gemw=No|leagueRegion=Misthalin&Kourend,Kandarin&Kourend,Varlamore&Kourend,Asgarnia&Kourend}}
+{{DropsLine|name=Frozen tear|quantity=8|rarity=1/100|approx=yes|raritynotes=<ref name=row group=d>Only dropped in [[Ruins of Tapoyauik]]</ref>|leagueRegion=Varlamore}}
+{{DropsLine|name=Tooth half of key (moon key)|quantity=1|rarity=1/636|raritynotes=<ref name=row group=d/>|gemw=no|leagueRegion=Varlamore}}
+{{DropsLineClue|type=hard|rarity=1/128}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}

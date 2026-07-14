@@ -1,0 +1,263 @@
+{{External|rsc|rs}}
+{{Otheruses|the city|the music track|Al Kharid (music track)}}
+{{Infobox Location
+|name = Al Kharid
+|image = [[File:Al Kharid.png]]
+|release = [[19 January]] [[2001]]<ref>[http://web.archive.org/web/20010303014542/http://www.tip.it/runescape/oldnews.htm Tip.it "More news about Update !!!"]</ref>
+|update = Newsletter 1
+|members = No
+|location = [[Kharidian Desert]]
+|race = [[Human]]s
+|teleport = {{*}} [[Amulet of glory]]<br/>{{*}} [[Ring of dueling]] ([[Emir's Arena]])
+|music = * [[Al Kharid (music track)|Al Kharid]]
+* [[Arabian]]
+* [[Arabian 2]]
+|map = {{Map|name=Al Kharid|x=3290|y=3185|height=300|width=300|zoom=2}}
+|type = settlement
+|leagueRegion = Desert
+}}
+'''Al Kharid''' is a large city in the north of the [[Kharidian Desert]], and the only desert city open to [[Free-to-play|non-members]]. Players in the city do not suffer from the [[Desert heat|desert effect]]. 
+
+Al Kharid is popular among free-to-play players because it contains one of the closest [[Al Kharid bank|banks]] to a [[range]] and to a furnace, two reasonably close [[fishing spots]], and a [[tanner]], [[Ellis]]. Also popular is the nearby [[Al Kharid mine|mining site]], which contains almost all ores up to and including [[Adamantite ore|adamant]].
+
+==Transportation==
+[[File:Pay-toll.png|thumb|280px|[[Border Guard]]s at the Al Kharid gate.]]
+*{{Plink|Amulet of glory}} — {{FloorNumber|uk=0}} of the palace.
+*{{Plink|Gnome glider|pic=Gnome goggles}} — northern Al Kharid.
+*{{Plink|Ring of dueling}} — [[Emir's Arena]], just north-east of Al Kharid.
+*{{Plink|Ring of the elements}} — near to the [[Fire Altar]] entrance, north of the city.
+*{{plink|Minigame teleport|pic=Minigame icon}} — [[Rat Pits|Sorceress's Garden]]. Usable once every 20 minutes, and only after asking [[Osman]]/[[Selim]] if they need any help.
+*{{Plink|Achievement diary cape}} — [[Shantay Pass]], just south of the city.
+*{{plink|Desert amulet 4|pic=Minigame icon}} — [[Kalphite Cave|Kalphite cave]], near the [[Shantay Pass]].
+*{{Plink|Cowbell amulet}} — inside the [[Lumbridge cow field|cow field]], just beyond the western gate.
+*{{Plink|Lumbridge Teleport}} — [[Lumbridge Castle]], decently west of the city.
+From [[Lumbridge]], players can use the toll gate which costs either 10 [[coins]], or nothing if you have completed the [[Prince Ali Rescue]] [[Quests|quest]]. Alternatively, members can use the level 8 [[Agility]] [[shortcut]] to grapple to and from the [[Lumbridge Swamp]].
+
+From [[Varrock]], players can go south via the road alongside the [[Al Kharid mine]]. Members can also get to Al Kharid via the one-way [[Fairy rings|fairy ring]] from [[Zanaris]]' market area, which brings them to the bank.[[File:Zeke's Superior Scimitars..png|thumb|250px|[[Zeke's Superior Scimitars]]]]
+
+== History ==
+Al Kharid has a long history. Most recently, in the year 169, [[Prince Ali]], the Emir's son, was kidnapped by the infamous [[Lady Keli]], causing the greatly upset Emir to retreat to his private chambers. However, [[Chancellor Hassan]] was able to enlist an adventurer to rescue the prince. The city is still ruled by the [[the Emir|Emir]], although the vast majority of the work has been taken over by [[Hassan|Chancellor Hassan]] since the Emir's son was kidnapped.
+
+==Features==
+
+=== Buildings ===
+{| class="wikitable"
+!Building
+!Description
+|-
+|Agility course finish line
+|The final building of the [[Rooftop Agility Courses|rooftop course]]. The building itself contains many pieces of pottery, 2 statues, and some [[leather boots]].
+|-
+|[[Al Kharid bank]]
+|A [[Al Kharid bank|bank]] in the south-west of the city, often heavily-populated due to the proximity of the [[tanner]], [[range]], and [[furnace]].
+|-
+|[[Al Kharid General Store]]
+|A [[general store]] east of the [[Al Kharid Palace|palace]]. The store is a popular among [[Ironman Mode|ironmen]] selling recently-[[Crafting#Leather|crafted]] [[leather armour]].
+|-
+|[[Al Kharid Palace]]
+|The largest building in Al Kharid, the residence of [[the Emir]], and the seat of government for the emirate of Al Kharid.
+|-
+|Al Kharid workshop
+|A workshop just north of the bank, containing a valuable furnace location for [[free-to-play]] players.
+|-
+|[[Dommik's Crafting Store.|Dommik's Crafting Store]]
+|A [[Crafting]] [[Shop|store]] north-east of the [[Al Kharid Palace|palace]], stocking various Crafting supplies such as [[Chisel|chisels]], [[Needle|needles]], [[Thread|threads]], and almost all [[Mould|moulds]].
+|-
+|[[Karim]]'s kitchen
+|A building with [[range]], directly north of the [[Al Kharid bank|bank]]. A kebab can be bought from Karim for {{Coins|1}}, but must be done through dialogue.
+|-
+|[[Louie's Armoured Legs Bazaar.|Louie's Armoured Legs Bazaar]]
+|A [[Platelegs|plateleg]] [[Shop|store]] south of the [[Al Kharid General Store|general store]]. It sells all standard metal platelegs up to and including [[adamant]].
+|-
+|[[Ranael's Super Skirt Store.|Ranael's Super Skirt Store]]
+|A [[plateskirt]] [[Shop|store]] east of the [[Al Kharid Palace|palace]] which stocks identical merchandise to Louie's Armoured Legs Bazaar, except the [[armour]] is plateskirts.
+|-
+|[[Sorceress]]' home
+|Home of the Sorceress, who will let players into [[Sorceress's Garden|her garden]].
+|-
+|[[Zeke's Superior Scimitars.|Zeke's Superior Scimitars]]
+|A [[scimitar]] [[shop]] north-east of the [[Al Kharid bank|bank]] which sells all [[scimitars]] up to and including [[mithril]].
+|}
+Two other buildings, immediately east and west of the [[silk trader]], are decorated but have no known owner. There is also an empty tent west of [[Dommik]], containing nothing but a [[bucket]].
+
+=== Vendors and stalls ===
+[[File:Dommik's Crafting Store..png|thumb|250px|[[Dommik's Crafting Store.]]]]
+
+[[File:Louie's Armoured Legs Bazaar..png|thumb|250px|[[Louie's Armoured Legs Bazaar]]]]
+
+Al Kharid also features several vendors without their own building:
+
+* [[Ali Morrisane]] is found east of the [[gem trader]] to the north-east of the city near the blue star [[Quests|quest]] [[icon]] {{SCP|Quest}}. He sells various [[items]], and, once [[The Feud]] is completed, he will open various other [[shop]]s if you set up merchanting opportunities for him.
+* The [[Gem Trader|gem trader]] east of the gate to [[Lumbridge]] sells one cut and uncut sapphire and emerald, and will buy rubies and diamonds. Players can buy them if they've  they've been sold to the shop by someone else.
+* [[Osman]], just outside the [[Al Kharid Palace|Al Kharid palace]], can replace lost [[Keris]] daggers for 20,000 coins after [[Contact!]]. Additionally, [[Thieving]] experience rewards can be claimed by trading in [[Sq'irkjuice|Sq'irk juice]] obtained in the [[Sorceress's Garden]] minigame.
+* The [[silk trader]], north-east of the [[Zeke's Superior Scimitars]], is a quick and easy way for newer [[members]] to gain small amounts of money. If the player is prepared to click through a lengthy dialogue, they can buy [[silk]] cheaply (3 [[coins]]) which can be sold for a profit at a [[general store]] other than the one in Al Kharid. If you refuse at the first time, he'll lower the price to 2 coins.
+
+[[File:Ali's Discount Wares..png|thumb|250px|[[Ali's Discount Wares.]]]]
+
+=== Skill training areas ===
+
+* The [[Al Kharid Rooftop Course|Al Kharid Agility course]] is a [[Rooftop Agility Courses|rooftop course]] which can be started on the wall of [[Ellis]]' store building.
+* The [[Al Kharid mine]], north of the city, contains rocks up to and including [[Adamantite ore|adamant ore]].
+* There is a [[cactus patch]] on the east side of the city, used in the [[Farming]] [[Skills|skill]].
+* The [[ferry]] just south of the bank can be used to reach the [[Tempoross]] [[Minigames|minigame]].
+* The [[Fire Altar]], used in the [[Runecraft]] skill, is located just north of the [[Emir's Arena]]
+* There is a [[furnace]] north of [[Al Kharid bank|the bank]]. In [[Free-to-play Melee training|free-to-play]], it is the second only to the [[Edgeville furnace]] in terms of closeness to a bank.
+* The [[Sorceress's Garden]] can be accessed from the [[Sorceress]]' home near the Shantay PAss. It offers an alternative method for training [[Thieving]].
+
+=== Other ===
+
+* The [[Shantay Pass]] south of the city acts as a barrier between Al kharid and the rest of the desert. Players must buy a pass for {{Coins|10}} coins to pass through. They can also get thrown in the jail or sent to [[Port Sarim]] for belligerence.
+* The [[Emir's Arena]] is a massive combat area found north-east of Al Kharid. The building acts as a [[Player killing|PvP]] arena which lets players fight under set rules or account types.
+
+[[File:Al Kharid Rooftop Course (7).png|thumb|width=250x250|A player completing the [[Agility]] course.]]
+
+=== Spawns ===
+{| class="wikitable"
+!Item
+!Spawns
+!Locations
+|-
+|{{Plink|Waterskin (0)|pic=Waterskin(0)}}
+|1
+|Palace throne room
+|-
+|{{Plink|Cabbage}}
+|1
+|Western palace room
+|-
+|{{Plink|Jug of water}}
+|1
+|Eastern palace room
+|-
+|{{Plink|Body rune}}
+|1
+|Zeke's, on the {{FloorNumber|uk=1}}
+|-
+|{{Plink|Leather boots}}
+|1
+|Agility course ending building
+|-
+|{{Plink|Bucket}}
+|1
+|Tent west of Dommik
+|-
+|{{Plink|Bronze mace}}
+|1
+|Sorceress' home
+|-
+|{{Plink|Fire rune}}
+|1
+|Al Kharid mine
+|-
+|{{Plink|Water rune}}
+|1
+|Al Kharid mine
+|}
+
+== Quests ==
+[[File:Al Kharid.png|thumb|width=250x250|The palace, seen from outside.]]
+The following [[quests]] involve Al Kharid:
+* [[Beneath Cursed Sands]]
+* [[Contact!]]
+* [[The Enchanted Key|Enchanted Key]]
+* [[Family Crest]]
+* [[The Feud]] (started by speaking to [[Ali Morrisane]])
+* [[Prince Ali Rescue]] (started by speaking to [[Chancellor Hassan]])
+
+*[[Shadow of the Storm]] (started by speaking to [[Father Reen]])
+
+==Inhabitants==
+
+=== Personalities ===
+
+* {{Chatl|Al the Camel}}, who produces poems and prose.
+* {{Chatl|Ali Morrisane}}, a trickster with whom trading is troublesome.
+* {{Chatl|Apprentice}}, an eager enchantress who's spotted sweeping.
+* {{Chatl|Avan}}, a jaunty gentleman with some gold-altering gloves.
+* {{Chatl|Ayesha}}, who keeps cacti from collapsing.
+* 5 {{Chatl|Banker (Al Kharid)|pic=Banker (Al Kharid, male) chathead|text=bankers}}, who facilitate finance.
+* 2 {{Chatl|Border Guard|text=border guards}}, who guard the gate and garnish gold for going-through.
+* {{Chatl|Cam the Camel}}, a camel characterised by calmness.
+* 2 {{Chatl|Camel|text=camels}}.
+* {{Chatl|Captain Dalbur}}, a gnome navigator.
+* {{Chatl|Chancellor Hassan}}, an altruistic adjudicator of Al-Kharidian affairs.
+* {{Chatl|Dommik}}, a connoisseur who closes on [[Crafting]] commodities.
+* {{Chatl|Ellis}}, a low-cost leathermaker.
+* {{Chatl|Elly the Camel}}, a camel who is concerned with the cause of camel-care.
+* {{Chatl|Father Reen}}, an aerophobic elder who enjoins evil.
+* {{Chatl|Ferryman Sathwood}}, who ferries fisherfolk to a far-off frontier. 
+* {{Chatl|Gem trader}}, a boulder-bartering businessman.
+* {{Chatl|Jarr}}, a sociable citizen who discusses [[Desert Diary|diaries]].
+* {{Chatl|Karim}}, who keeps [[Kebab|kebabs]] for commercial causes.
+* {{Chatl|Louie Legs}}, a protection-pusher who provides powerful [[platelegs]].
+* {{Chatl|Ollie the Camel}}, a conversing camel who hopes to hover to the heavens.
+* {{Chatl|Prince Ali}}, recent royalty who was kidnapped by [[Lady Keli|Keli]].
+* {{Chatl|Ranael}}, a skillful seller of strengthened [[Skirt|skirts]].
+* {{Chatl|Selim}}, a slippery sleuth who seeks out [[Sq'irk|sq'irks]].
+* {{Chatl|Shantay}}, a masterly merchant.
+* 4 {{Chatl|Shantay Guard|text=Shantay guards}}, who patrol their pathway to prevent payment-free passage.
+* {{Chatl|Shop assistant (Al Kharid)|text=Shop assistant}}, who assists in auctioning appurtenances.
+* {{Chatl|Shop keeper (Al Kharid)|text=Shop keeper}}, who sells stuff to citizens of the city.
+* {{Chatl|Silk trader}}, a dapper dickerer who dabbles in drapery.
+* {{Chatl|Sorceress}}, a reticent recluse with a field of fresh fruits.
+* {{Chatl|Tool Leprechaun|txt=Tool leprechaun}}, a green guy who can store supplies.
+* {{Chatl|Zeke}}, a superior [[scimitar]] seller.
+
+=== Monsters or attackable NPC's ===
+*[[Al Kharid warrior]] (x9)
+*[[Man]] (x6)
+*[[Scorpion]] (x10)
+*[[Spider]] (x3)
+
+== Music ==
+{| class="wikitable sortable"
+!Name
+! class="unsortable" |Unlock location
+! class="unsortable" |Music track
+|-
+|[[Al Kharid (music track)|Al Kharid]]
+|Al Kharid
+|[[File:Al Kharid.ogg]]
+|-
+|[[Arabian]]
+|Al Kharid
+|[[File:Arabian.ogg]]
+|-
+|[[Arabian 2]]
+|Al Kharid
+|[[File:Arabian 2.ogg]]
+|}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 27 April 2022
+|update = Beneath Cursed Sands
+|change = Many texts referring to Al Kharid as "Al-Kharid" has been converted.
+}}
+{{Subject changes
+|date = 16 July 2020
+|update = Ferox Enclave
+|change = Clan Wars has been moved from the hill east of Al Kharid to [[Ferox Enclave]].
+}}
+{{Subject changes
+|date = 12 November 2015
+|update = Monster Examine & Deadman
+|poll = 
+|change = Parts of a palm tree near Al Kharid palace are no longer invisible with roofs selectively hidden.
+}}
+{{Subject changes
+|date = 19 June 2014
+|update = Clan Wars is here!
+|poll = Old School feature poll 19
+|change = [[Clan Wars]] is added east of Al Kharid.
+}}
+{{Subject changes footer}}
+
+==Trivia==
+*There was no [[bank]] in Al Kharid until the release of [[members]] on [[27 February]] [[2002]].
+
+==References==
+{{Reflist}}
+
+{{Al Kharid}}

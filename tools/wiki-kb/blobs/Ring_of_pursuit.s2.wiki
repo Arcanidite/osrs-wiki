@@ -1,0 +1,14 @@
+==Creation==
+{{Recipe
+|skill1 = Magic
+|skill1lvl = 7
+|skill1boostable = Yes
+|skill1exp = 17.5
+|members = Yes
+|ticks = 1
+|ticksnote = Manual casting is 3 ticks, auto-casting is 7 ticks
+|mat1 = Opal ring
+|mat2 = Cosmic rune
+|mat3 = Water rune
+|output1 = Ring of pursuit
+}}

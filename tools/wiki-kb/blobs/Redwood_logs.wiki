@@ -1,0 +1,88 @@
+{{Infobox Item
+|name = Redwood logs
+|image = [[File:Redwood logs.png]]
+|release = [[2 June]] [[2016]]
+|update = The Woodcutting Guild
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Logs cut from a redwood tree.
+|value = 450
+|weight = 2.000
+|exchange = Yes
+|id = 19669
+|leagueRegion = Morytania, Kourend
+}}
+[[File:Redwood logs detail.png|left|130x130px]]
+'''Redwood logs''' are logs received from cutting [[redwood]]s, which are found in the [[Woodcutting Guild]] or can be grown from a [[redwood sapling]] in the [[Farming Guild]] (with level 90 [[Farming]]). They require a [[Woodcutting]] level of 90 to chop and yield 380 Woodcutting [[experience]] per log. 
+
+Redwood logs can be burnt with a [[Firemaking]] level of 90, giving 350 experience per log. They can be [[Fletching|fletched]] into 105 [[arrow shaft]]s, a [[redwood shield]], or a [[redwood hiking staff]]. They are also used in creation of [[redwood pyre logs]], [[redwood bird house]], building a [[redwood fence]] in the [[superior garden]] of a [[player-owned house]], lighting the [[Abyssal lantern (redwood logs)|Abyssal lantern]] (requiring 90 Firemaking), or to craft a [[perfected quetzal whistle]].
+
+==Skilling info==
+{{Woodcutting info
+|name = Redwood
+|level = 90
+|xp = 380
+|tree = [[Redwood tree]]
+|tool = [[Axe]]
+|time = 119.4 seconds
+}}
+{{Firemaking info
+|craftxp = 87
+|bowlevel = 99
+|pyrelevel = 95
+|version1 = Tinderbox
+|version2 = Bow
+|version3 = Barbarian pyre
+|version4 = Bonfire
+|skill2name = Crafting
+|name = Redwood logs
+|skill1lvl1 = 90
+|skill1lvl2 = 99
+|skill1lvl3 = 95
+|skill2lvl3 = 95
+|skill1lvl4 = 90
+|skill1exp1 = 350
+|skill1exp2 = 350
+|skill1exp3 = 350
+|skill1exp4 = 350
+|facility1 = N/A
+|facility2 = N/A
+|facility3 = [[Funeral_pyre_(Barbarian)|Barbarian funeral pyre]]
+|facility4 = [[Fire]] or [[Forester's Campfire]]
+|tool1 = [[Tinderbox]]
+|tool2 = [[Bow]]
+|tool3 = [[Tinderbox]] or [[bow]], and an [[axe]]
+|tool4 = N/A
+|type = logs
+}}
+
+==Money making==
+{{Mmgsection|Cutting redwood logs|iskph=yes|Making redwood pyre logs}}
+
+==Products==
+{{Uses material list|Redwood logs}}
+
+==Item sources==
+{{Drop sources|Redwood logs}}
+
+==Treasure Trails==
+*{{SherlockChallenge|Burning a redwood log|master}}
+*{{SherlockChallenge|Chopping a redwood log whilst wearing the full [[lumberjack outfit]]|master}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 2 June 2016
+|update = The Woodcutting Guild
+|poll = Old School Content Poll 43: Great Kourend Content
+|change = Redwood logs are added along with redwood trees in the Woodcutting Guild.
+}}
+{{Subject changes footer}}
+
+{{Logs}}
+{{Fletching}}

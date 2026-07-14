@@ -1,0 +1,1 @@
+{"parse": {"title": "Ring of pursuit", "pageid": 92783, "redirects": [], "wikitext": "==Creation==\n{{Recipe\n|skill1 = Magic\n|skill1lvl = 7\n|skill1boostable = Yes\n|skill1exp = 17.5\n|members = Yes\n|ticks = 1\n|ticksnote = Manual casting is 3 ticks, auto-casting is 7 ticks\n|mat1 = Opal ring\n|mat2 = Cosmic rune\n|mat3 = Water rune\n|output1 = Ring of pursuit\n}}"}}

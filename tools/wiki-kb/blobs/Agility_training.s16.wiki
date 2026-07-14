@@ -1,0 +1,5 @@
+===Levels 75–99: Prifddinas Agility Course===
+
+The [[Prifddinas Agility Course]] offers a less click-intensive training option from level 75 onwards, being similar to the [[Rooftop Agility Course]]s. Players must have completed [[Song of the Elves]] to access this course. Players can find [[crystal shard]]s by using portals that randomly appear around the course, which act as [[shortcuts]]. These portal shortcuts are unique to each player, and grant the player a [[crystal shard]] every time they pass through them.
+
+Players can gain up to around 60,000 experience per hour at level 75, increasing to 65,000 experience per hour from level 90 onwards. Expect lower rates if idling. At maximum rates, players can also find 48.5 [[Crystal shard|crystal shards]] per hour, worth approximately {{NoCoins|({{GEPT|Divine super combat potion(4)}} - {{GEP|Super combat potion(4)}}) / 0.4 * 48.5|c}} if used to create [[divine super combat potion]]s.

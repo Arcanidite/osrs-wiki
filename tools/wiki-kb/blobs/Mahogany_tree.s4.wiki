@@ -1,0 +1,32 @@
+==Woodcutting info==
+{{Woodcutting info
+|name = Mahogany tree
+|level = 50
+|xp = 125
+|tool = [[Axe]]
+|time = 8.4 seconds
+|dropversion = Prifddinas
+}}
+
+{{DropsTableHead}}
+{{DropsLineSkill|name=Mahogany logs|quantity=1|rarity=Common|skill=Woodcutting}}
+{{DropsTableBottom}}
+
+===Conditional drops===
+The following table shows items that can be received in addition to the main resource.
+
+{{DropsTableHead}}
+{{DropsLineSkill|name=Beaver|quantity=1|rarity=Very rare|skill=Woodcutting|raritynotes=<ref group=d>Scales from 1 in 219,373 chance at level 50 to 1 in 218,148 chance at level 99.</ref>|gemw=no}}
+{{DropsLineSkill|name=Ent seed|quantity=1|rarity=1/400|skill=Woodcutting|raritynotes=<ref group=d name=varlamore></ref>|image=Ent seed 3.png|gemw=no|leagueRegion=Varlamore}}
+{{DropsLineSkill|name=Loop half of key (moon key)|quantity=1|rarity=1/1470|raritynotes=<ref group=d name=varlamore>Only in [[Varlamore]].</ref>|skill=Woodcutting|gemw=no|leagueRegion=Varlamore}}
+{{DropsLineSkill|name=Clue nest|quantity=1|rarity=Rare|skill=Woodcutting|image=Clue nest (beginner).png|raritynotes=<ref group=d name=twitcher>[[Twitcher's gloves]] can increase the chance of spawning by 20%.</ref>|namenotes=<ref group=d>Clue nests will drop as [[Bird nest (empty)]] and [[scroll boxes]] after the completion of [[X Marks the Spot]]</ref>|gemw=no}}
+{{DropsLineSkill|name=Crystal shard|quantity=1|rarity=1/40|skill=Woodcutting|raritynotes=<ref group=d>Only in [[Prifddinas]].</ref>|image=Crystal shard 5.png|gemw=no|dropversion=Prifddinas|leagueRegion=Tirannwn}}
+{{DropsTableBottom}}
+
+===[[Bird nest|Bird nests]]===
+Bird nests have a 1/256<sup>(1/230 with the [[Woodcutting cape]])</sup> chance to be received instead of a log. They will be placed on the ground and despawn after 2 minutes.
+{{DropsTableHead}}
+{{DropsLineSkill|name=Bird nest (egg)|quantity=1|rarity=Very Rare|skill=Woodcutting|raritynotes=<ref group=d name=twitcher></ref><ref group=d name=rabbit></ref>|image=Bird nest (blue egg).png|gemw=no}}
+{{DropsLineSkill|name=Bird nest (seeds)|quantity=1|rarity=Rare|skill=Woodcutting|raritynotes=<ref group=d name=twitcher>[[Twitcher's gloves]] allow the wearer to a specific type of nest 20% more likely to appear.</ref><ref group=d name=rabbit>The [[Strung rabbit foot]] makes seeds nests slightly less likely to appear, increasing the chances of receiving a ring or egg nest.</ref>|gemw=no}}
+{{DropsLineSkill|name=Bird nest (ring)|quantity=1|rarity=Rare|raritynotes=<ref group=d name=twitcher></ref><ref group=d name=rabbit></ref>|skill=Woodcutting|gemw=no}}
+{{DropsTableBottom}}

@@ -1,0 +1,12 @@
+==Training Hitpoints through combat==
+Each point of damage dealt directly by the player yields 1.33 Hitpoints XP. Therefore, any combat training method that offers a high XP rate will also train Hitpoints at a high rate.
+
+*[[Pay-to-play melee training|Melee training]]
+*[[Pay-to-play Magic training|Magic training]]
+*[[Pay-to-play Ranged training|Ranged training]]
+
+===Ice Burst/Barrage===
+After completion of [[Monkey Madness I]] and [[Desert Treasure I]], with at least 70 Magic, players can cast [[Ice Burst]]/[[Ice Barrage]] on the [[Skeleton (Ape Atoll)|Skeletal Monkeys]] in the [[Ape Atoll Dungeon]], granting a high amount of Magic and Hitpoints experience per hour. After completion of [[Monkey Madness II]], killing [[Maniacal monkey|maniacal monkeys]] with [[Ice Burst]]/[[Ice Barrage]] is another method that offers even more experience per hour.
+
+===Chinchompas===
+[[Red chinchompa|Red]] or [[Black chinchompa|black]] chinchompas can be used in a similar way to barrage spells, by using them on maniacal monkeys on Ape Atoll for fast Ranged and Hitpoints XP.

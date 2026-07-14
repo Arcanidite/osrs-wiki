@@ -1,0 +1,88 @@
+{{External|rs|rsc}}
+{{Infobox Item
+|name = Uncut dragonstone
+|image = [[File:Uncut dragonstone.png]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = This would be worth more cut.
+|value = 1000
+|weight = 0.003
+|exchange = Yes
+|id = 1631
+}}
+[[File:Uncut dragonstone detail.png|left|130px]]
+'''Uncut dragonstones''' are rare [[gems]] which can be cut into [[dragonstones]], requiring 55 [[Crafting]] and granting 137.5 [[experience]]. They can be obtained from the [[crystal chest]] in [[Taverley]], unlocked with a [[crystal key]], along with other various items.
+
+While uncut dragonstones are available from the gem shop within [[Mor Ul Rek]] for 1,500 [[Tokkul]], they are not in stock unless sold by another player. Their cut counterparts are dropped very rarely by a wide variety of [[monsters]].
+
+==Training==
+===Crafting===
+{|class="wikitable sortable" style="text-align: center;"
+!{{SCP|Crafting}} Level
+!Input
+!Material Cost{{Refn|Cost calculated assuming all inputs are purchased from the [[Grand Exchange]].|group=t}}
+!Output
+!Sell Price
+!Profit / loss
+!{{SCP|Crafting}} XP/Craft
+!XP/Hour
+!Coins/XP
+|-
+|55
+|{{plink|Uncut dragonstone}}
+|{{Coins|{{GEP|Uncut dragonstone}}}}
+|{{plink|Dragonstone}}
+|{{Coins|{{GEP|Dragonstone}}}}
+|{{Coins|{{GEP|Dragonstone}}-{{GEP|Uncut dragonstone}}}}
+|137.5
+|398,750{{Refn|XP rates based on an assumed 2,900 cuts per hour|group=t}}
+|{{Coins|({{GEP|Dragonstone}}-{{GEP|Uncut dragonstone}})/137.5}}
+|}
+{{Reflist|group=t}}
+
+==Products==
+{{Uses material list|Uncut dragonstone}}
+
+==Item sources==
+{{Drop sources|Uncut dragonstone}}
+
+===Shop locations===
+{{Store locations list|Uncut dragonstone}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 6 August 2007
+|update = Clan Chat
+|change = The item was graphically updated.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Uncut dragonstone detail (beta).png|center|300x150px]]
+|[[File:Uncut dragonstone detail (historical).png|center|300x150px]]
+|[[File:Uncut dragonstone detail.png|center|300x150px]]
+|-
+|[[File:Uncut dragonstone (beta).png|center]]
+|[[File:Uncut dragonstone (historical).png|center]]
+|[[File:Uncut dragonstone.png|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 –<br/>6 August 2007
+|6 August 2007 –<br/>present
+|}
+
+==Trivia==
+*In the [[Tower of Life]] quest, the player has to answer a question to the [[Homunculus]] about how dragons can breathe [[Dragonfire|fire]]. One of the answers suggests that this is done with the power of 'magical dragonstones'. The other answer states that it happens through the ignition of gas when the dragon exhales. It is possible that the ignition of dragonfire is mediated through some magical property of dragonstone crystals.
+
+{{Dragonstone}}
+{{Gems}}
+[[Category:Crafting items]]

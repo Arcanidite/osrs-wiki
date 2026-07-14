@@ -1,0 +1,36 @@
+{{External|rs=Aleck's Hunter Emporium}}
+{{Infobox Shop
+|name = Aleck's Hunter Emporium.
+|image = [[File:Aleck's Hunter Emporium..png|300px]]
+|release = [[21 November]] [[2006]]
+|update = HUNTER SKILL!
+|members = Yes
+|icon = [[File:Hunter shop icon.png]]
+|location = [[Yanille]]
+|owner = [[Aleck]]
+|special = Hunter shop
+|map = {{Map|name=Aleck's Hunter Emporium.|2567,3082|mtype=square|r=3.5}}
+|leagueRegion = Kandarin
+}}
+'''Aleck's Hunter Emporium''' is a shop in [[Yanille]] run by [[Aleck]], just east of the tavern. The shop sells [[Hunter]] items and is managed and owned by [[Aleck]]. It is one of four Hunter shops, the others being the [[Nardah Hunter Shop]] in [[Nardah]], [[Elder Strom's Hunting Stall]] in [[The Summer Shore]], and [[Imia's Supplies]] in the [[Hunter Guild]]. It is located conveniently close to the [[Feldip Hills|Feldip]] hunting grounds. Viewing the shop is a requirement for the [[Easy Ardougne Diary]].
+
+Also found in the shop is [[Leon]], who sells the [[Hunters' crossbow]].
+
+==Stock==
+{{StoreTableHead|sellmultiplier=1200|buymultiplier=700|delta=20}}
+{{StoreLine|name=Butterfly net|stock=5|restock=10}}
+{{StoreLine|name=Butterfly jar|stock=100|restock=10}}
+{{StoreLine|name=Magic box|stock=30|restock=50}}
+{{StoreLine|name=Noose wand|stock=50|restock=5}}
+{{StoreLine|name=Bird snare|stock=50|restock=5}}
+{{StoreLine|name=Box trap|stock=25|restock=10}}
+{{StoreLine|name=Teasing stick|stock=5|restock=10}}
+{{StoreLine|name=Unlit torch|stock=20|restock=10}}
+{{StoreLine|name=Rabbit snare|stock=10|restock=10}}
+{{StoreLine|name=Bird snare pack|stock=3|gemw=no|restock=10}}
+{{StoreLine|name=Box trap pack|stock=3|gemw=no|restock=10}}
+{{StoreLine|name=Magic imp box pack|stock=3|gemw=no|restock=10}}
+{{StoreTableBottom}}
+
+{{Yanille}}
+{{Shops}}

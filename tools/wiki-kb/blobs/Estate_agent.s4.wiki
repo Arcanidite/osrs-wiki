@@ -1,0 +1,39 @@
+==Stock==
+Note: If a player has multiple [[Skill mastery|99s]], they will receive the trimmed variant of the cape instead.
+<tabber>
+Varrock =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(1)|location=[[Varrock]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Falador =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(2)|location=[[Falador]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Seers' Village =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(3)|location=[[Seers' Village]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Ardougne =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(4)|location=[[Ardougne]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Hosidius =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(5)|location=[[Hosidius]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Civitas illa Fortis =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(6)|location=[[Civitas illa Fortis]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+</tabber>

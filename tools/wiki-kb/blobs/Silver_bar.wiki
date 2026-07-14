@@ -1,0 +1,100 @@
+{{External|rs|rsc|dw=Silver Bar}}
+{{Infobox Item
+|name = Silver bar
+|image = [[File:Silver bar.png]]
+|release = [[12 July]] [[2001]]
+|update = Improved prayer system and more!
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = It's a bar of silver.
+|value = 150
+|weight = 1.814
+|exchange = Yes
+|id = 2355
+}}
+[[File:Silver bar detail.png|left|120px]]
+A '''silver bar''' is a [[bar]] of metal, refined through the [[Smithing]] skill by smelting a [[silver ore]] in a furnace, requiring 20 Smithing and granting 13.7 Smithing experience. It may also be bought (or stolen) from a [[silver merchant]], such as the one in Ardougne market, or from other players.
+
+The primary use of a silver bar is to create [[jewellery]] with the [[Crafting]] skill. To craft silver bars into jewellery players must use a silver bar on a furnace with a proper [[mould]] in their inventory. If players wish to craft jewellery with [[gems]] inset, the cut gems must be present in the player's inventory before crafting the jewellery. One silver bar is used during the [[Creature of Fenkenstrain]] quest, and another during [[Shadow of the Storm]].
+
+Unlike [[gold bar]]s, which cannot be made into weapons, silver bars can be made into [[silver sickle]]s. They can also be ground to [[silver dust]] in the [[Ectofuntus]] grinder for use as an ingredient in the [[guthix balance]] potion.
+
+Currently, smelting a silver bar yields a profit of {{Coins|{{GEP|Silver bar}}-{{GEP|Silver ore}}}}.
+
+One effective method of gathering silver bars is exchanging [[reward token]]s gained for completing [[Temple Trekking]] minigame. This method is commonly used by ironman players, as it can net upwards of 1000 silver bars per hour.
+==Recipe==
+<tabber>
+Standard=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 20
+|skill1boostable = Yes
+|skill1exp = 13.7
+|members = No
+|ticks = 4
+|facilities = Furnace
+|mat1 = Silver ore
+|output1 = Silver bar
+|output1subtxt = Regular furnace
+}}
+|-|
+Blast Furnace=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 20
+|skill1boostable = Yes
+|skill1exp = 13.7
+|members = Yes
+|ticks = 11
+|ticksnote = Multiple bars are completed at once
+|facilities = Blast Furnace
+|mat1 = Silver ore
+|output1 = Silver bar
+|output1subtxt = Blast Furnace
+}}
+|-|
+Superheat=
+{{Recipe
+|skill1 = Smithing
+|skill1lvl = 20
+|skill1boostable = Yes
+|skill1exp = 13.7
+|skill2 = Magic
+|skill2lvl = 43
+|skill2boostable = Yes
+|skill2exp = 53
+|members = No
+|ticks = 3
+|mat1 = Silver ore
+|mat2 = Nature rune
+|mat3 = Fire rune
+|mat3quantity = 4
+|output1 = Silver bar
+|output1subtxt = Superheat
+}}
+</tabber>
+
+==Money making==
+{{Mmgsection|Smelting silver bars}}
+
+==Products==
+{{Uses material list|Silver bar}}
+
+==Item sources==
+{{Drop sources|Silver bar}}
+
+===Shop locations===
+{{Store locations list|Silver bar}}
+
+==Trivia==
+* Silver was used as one of the tiers of post count badges on the [[RuneScape Forums|official Runescape Forums]]. Players needed to have made 200 posts to be given the silver badge.
+
+{{Bar}}
+{{Silver}}
+{{Herblore secondaries}}
+[[Category:Crafting items]]

@@ -1,0 +1,164 @@
+{{External|rs}}
+{{Infobox Item
+|name = Box trap
+|image = [[File:Box trap.png]]
+|release = [[21 November]] [[2006]]
+|update = HUNTER SKILL!
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = Yes
+|noteable = No
+|options = Lay, Drop
+|examine = If a creature goes inside, the box should then slam shut.
+|value = 32
+|weight = 0.000
+|respawn = 100
+|exchange = Yes
+|id = 10008
+}}
+[[File:Box trap detail.png|left|110px]]
+A '''box trap''' is a type of trap used in the [[Hunter]] skill to catch [[ferret]]s, [[Embertailed jerboa|embertailed jerboas]] and [[Chinchompa (disambiguation)|chinchompa]]s. Using a box trap requires the specific Hunter level needed for the prey, as well as partial completion of the [[Eagles' Peak]] [[quest]].
+
+Whenever prey passes a trap, it has a chance of either being caught in the trap or evading it. If the prey is successfully caught, the box trap will close in around the animal and start shaking, at which point the player will have the option to "check" the trap for loot and experience. If the prey evades the trap, the trap will simply close, at which point the player will have to reset it.
+
+Box traps may be bought from [[Aleck's Hunter Emporium.|Aleck's Hunter Emporium]] in [[Yanille]], the [[Nardah Hunter Shop]] in [[Nardah]], or [[Imia's Supplies]] in the [[Hunter Guild]]. One can also be obtained for free by searching the [[crate (Land's End)|crate]] adjacent to the bookcases in the north-western house at [[Land's End]]. They can also be obtained from [[Hunter kit]]s.
+
+==Creatures==
+The following [[Hunter creatures]] may be caught using the box trapping technique.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-4"
+!{{SCP|Hunter}}
+! colspan="2" |Creature
+!Exp.
+!Location
+!Preferred bait
+|-
+|27 ||{{plinkt|Ferret (Hunter)|pic=Ferret|txt=Ferret}}||115 ||[[Piscatoris Hunter area]]||None
+|-
+|39 ||{{plinkt|Embertailed jerboa|pic=Jerboa tail}}
+||137 ||[[Locus Oasis]] and west of [[Hunter Guild]]||None
+|-
+|53 ||{{plinkt|Chinchompa (Hunter)|pic=Chinchompa|txt=Chinchompa}}||198.4 ||[[Piscatoris Hunter area]], [[Isle of Souls]], and [[Kourend Woodland]]||[[Spicy tomato]]
+|-
+|63 ||{{plinkt|Carnivorous chinchompa|pic=Red chinchompa}}||265 ||[[Feldip Hunter area]], [[red chinchompa hunting ground]], [[Tlati Rainforest]], [[Gwenith Hunter area]] and [[Chinchompa Island]]||[[Spicy minced meat]]
+|-
+|73 ||{{plinkt|Black chinchompa (Hunter)|pic=Black chinchompa|txt=Black chinchompa}}||315 ||[[Wilderness]]||[[Spicy minced meat]]
+|-
+|76 ||{{plinkt|Letvek|pic=Letvek|txt=Letvek}}||208.5 ||[[Apsul Hunting Ground]], [[Virer Hunting Ground]]||None
+|}
+
+==Multiple traps==
+Box trapping can be done with multiple traps at once, with the maximum amount of traps depending on the player's Hunter level.
+
+An extra trap may be set while hunting [[Black chinchompa (Hunter)|black chinchompa]]s in the [[wilderness]].
+
+{| class="wikitable align-center-2 align-center-4"
+! {{SCP|Hunter}}
+! Traps
+|-
+| 1 || 1
+|-
+| 20 || 2
+|-
+| 40 || 3
+|-
+| 60 || 4
+|-
+| 80 || 5
+|}
+
+==Mechanics==
+Once a box trap has been set, it will make an attempt every 3 ticks (1.8 seconds) to lure in an animal that is currently in range.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/832525340417343488|date=17 February 2017|archiveurl=https://reldo.runescape.wiki/i/97797|archivedate=14 April 2023|quote=The trap hunts the NPC rather than vice-versa. It's looking approximately every 3 cycles.}} Any ferret or chinchompa within a 2-tile radius of the box trap (forming a 5x5 square centred on the trap) can be attracted.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1155568204279943168|date=28 July 2019|archiveurl=https://reldo.runescape.wiki/i/108152|archivedate=14 April 2023|quote=I'm a little unfamiliar with the code for that one, but it looked like 2 tiles last time I saw it.}} Box traps won't trap prey if players are standing on the trap itself.
+
+The way an animal becomes drawn to a box trap uses the same system of [[aggressiveness]] through which a monster becomes focused on the player.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1195370888356618245|date=15 November 2019|archiveurl=https://reldo.runescape.wiki/i/104604|archivedate=16 April 2023|quote=Again, as it's using the same engine code as NPC aggression, I'd be surprised by such an effect, since it'd manifest as "if one NPC decides to focus on you, everything else in the room becomes permanently non-aggressive", which we do not observe.}}
+
+=== Baiting ===
+Adding a creature's corresponding bait to a box trap will increase the catch rate by 3% .{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/793829284288851968|date=2 November 2016|archiveurl=https://reldo.runescape.wiki/i/105762|archivedate=15 August 2019|quote=+2% for the smoke, +3% for the bait.}} Due to the low increase of the catch rate, most players believe that adding bait to traps doesn't justify the extra cost or clicks.
+
+=== Smoking ===
+Smoking a box trap with a [[Lit torch|torch]] or [[bruma torch]] will increase the catch rate by 2%. A trap may only be smoked once, and smoking a trap does not extinguish the torch. Players may find this beneficial due not having any cost associated, but will need to click two extra times per trap.
+
+Alternatively, players can bring [[Anti-odour salt|anti-odour salts]], which smoke traps automatically but are consumed in the process.
+
+=== Tick manipulation ===
+[[File:Tick manipulation - 1t Hunter.gif|thumb|A player using the trap resetting technique.]]
+{{main|Hunter_training#Levels_73/80–99:_Carnivorous_chinchompas|Hunter_training#Levels_73–99:_Black_chinchompas}}
+Players can use [[tick manipulation]] to place box traps more quickly.
+
+==Prohibited areas==
+Within the following areas, a box trap may not be laid:
+*While in legacy duels at the [[Emir's Arena]]
+*At the [[Blast Furnace]] 
+*[[Taverley]], [[Dwarven Mine]] and [[Mining Guild]] 
+*[[Wintertodt]] (including the waiting area)  and [[Ungael]]'s crater 
+*[[Tempoross Cove]]
+*[[Hallowed Sepulchre]] and [[The Nightmare]] fight
+*On [[fairy rings]] 
+*Inside most indoor areas
+*[[Farming Guild]]
+*[[Basement of Doom]] - while spectating your cat through a curtain
+*[[Lizardman Temple]]
+*[[Player-owned house]]s
+*Inside [[bank]]s and next to various [[bank chest]]s 
+**(But next to the bank chest at [[Trouble Brewing]], and the [[Rogues' Den]] bank chest is possible)
+*[[Hespori]]'s cave  
+*[[Zulrah's shrine]] 
+*[[Catacombs of Kourend]] 
+*In underwater areas 
+*[[Theatre of Blood]] 
+*Near [[Shura]] and [[Sisterhood Sanctuary]] lobby 
+*In the [[Soul Wars Lobby]] 
+**(However, box traps may be smuggled in to the [[Soul Wars Arena]] with the [[Hunter Kit (spell)|Hunter Kit spell]]).
+*[[Jiggig]] 
+
+==Item sources==
+{{Drop sources|Box trap}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Box trap|location=[[Isle of Souls]] - near spinning wheel (telegrab) 
+Note: Ironmen cannot loot it.|members=Yes|2164,2983|leagueRegion = Misthalin}}
+{{ItemSpawnLine|name=Box trap|location=[[Civitas illa Fortis]] - upstairs on a table in the small building in south-west corner. Note: Ironmen cannot loot it.|members=Yes|1628,3093|leagueRegion = Varlamore}}
+{{ItemSpawnTableBottom}}
+
+===Shop locations===
+{{Store locations list|Box trap}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 20 August 2025
+|update = More Doom Tweaks, Poll 84, & Summer Sweep Up Changes
+|change =
+* The item is now stackable.
+* The weight was reduced from 0.226 to 0.
+}}
+{{Subject changes
+|date = 22 September 2021
+|update = Wilderness & Equipment Rebalance Changes
+|change = Box traps can no longer be placed on top of flowers indoors.
+}}
+{{Subject changes
+|date = 25 October 2018
+|update = Halloween 2018 Event and Tutorial Island Improvements
+|change = Box traps may no longer be placed at [[Blast Furnace]].
+}}
+{{Subject changes
+|date = 28 June 2018
+|update = Game Integrity Changes: Part 1
+|change = Placement of box traps now requires partial completion of [[Eagles' Peak]].
+}}
+{{Subject changes footer}}
+
+==Trivia==
+*If the player attempts to lay a box trap at [[Ungael]]'s crater, the chatbox will state ''"It's far too cold for you to setup a trap here."'' even though other cold areas such as the [[Ice Path]] do allow players to set up traps.
+*Box traps may be laid to temporarily prevent [[rockfall]]s from blocking a path at [[Motherlode Mine]], until the box trap collapses and for a short period thenafter. The falling rocks will still damage the player.
+*The animation used for laying a box trap is identical to that of the [[tinderbox]].
+*Box traps can be used to move while [[frozen]], as long as you are no longer in [[combat]] (ten seconds after the initial freeze). For spells with freezes lasting longer than ten seconds, this means that frozen players can use box traps similarly to mithril seeds when players freeze them and then try to log out under them.
+
+==References==
+{{Reflist}}
+
+{{Hunter}}[[Category:Tools]]

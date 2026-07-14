@@ -1,0 +1,305 @@
+==Making barbarian mixes==
+{{StaticCalculator}}
+Barbarian mixes are generally not made as they are rarely traded and may have low value. It is not recommended to make barbarian mixes unless planning to use them. This calculator assumes buying 4 dose potions and decanting them to 2 dose potions as prices of 2 dose potions are less stable.
+{| class="wikitable sortable align-center-1 align-center-2 align-center-4 align-center-6 sticky-header"
+!{{SCP|Herblore}} Level
+! colspan=2 |Potion
+! colspan=2 |Base
+! colspan="2" |Secondary
+!XP
+!Ingredient cost
+!Final potion price
+!Profit/Potion
+!Profit/XP
+|-
+|4
+|{{plinkt|Attack mix(2)|pic=Attack mix(2)}}
+|{{plinkt|Attack potion(2)}}
+|{{plinkt|Roe}}
+|8
+|{{Coins|({{GEP|Attack potion(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Attack mix(2)}}}}
+|{{Coins|{{GEPT|Attack mix(2)}} - ({{GEP|Attack potion(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Attack mix(2)}} - ({{GEP|Attack potion(4)}}/2) - {{GEP|Roe}})/8}}
+|-
+|6
+|{{plinkt|Antipoison mix(2)|pic=Antipoison mix(2)}}
+|{{plinkt|Antipoison(2)}}
+|{{plinkt|Roe}}
+|12
+|{{Coins|({{GEP|Antipoison(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Antipoison mix(2)}}}}
+|{{Coins|{{GEPT|Antipoison mix(2)}} - ({{GEP|Antipoison(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Antipoison mix(2)}} - ({{GEP|Antipoison(4)}}/2) - {{GEP|Roe}})/12}}
+|-
+|9
+|{{plinkt|Relicym's mix(2)|pic=Relicym's mix(2)}}
+|{{plinkt|Relicym's balm(2)}}
+|{{plinkt|Roe}}
+|14
+|{{Coins|({{GEP|Relicym's balm(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Relicym's mix(2)}}}}
+|{{Coins|{{GEPT|Relicym's mix(2)}} - ({{GEP|Relicym's balm(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Relicym's mix(2)}} - ({{GEP|Relicym's balm(4)}}/2) - {{GEP|Roe}})/14}}
+|-
+|14
+|{{plinkt|Strength mix(2)|pic=Strength mix(2)}}
+|{{plinkt|Strength potion(2)}}
+|{{plinkt|Roe}}
+|17
+|{{Coins|({{GEP|Strength potion(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Strength mix(2)}}}}
+|{{Coins|{{GEPT|Strength mix(2)}} - ({{GEP|Strength potion(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Strength mix(2)}} - ({{GEP|Strength potion(4)}}/2) - {{GEP|Roe}})/17}}
+|-
+|24
+|{{plinkt|Restore mix(2)|pic=Restore mix(2)}}
+|{{plinkt|Restore potion(2)}}
+|{{plinkt|Roe}}
+|21
+|{{Coins|({{GEP|Restore potion(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Restore mix(2)}}}}
+|{{Coins|{{GEPT|Restore mix(2)}} - ({{GEP|Restore potion(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Restore mix(2)}} - ({{GEP|Restore potion(4)}}/2) - {{GEP|Roe}})/21}}
+|-
+|29
+|{{plinkt|Energy mix(2)|pic=Energy mix(2)}}
+|{{plinkt|Energy potion(2)}}
+|{{plinkt|Caviar}}
+|23
+|{{Coins|({{GEP|Energy potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Energy mix(2)}}}}
+|{{Coins|{{GEPT|Energy mix(2)}} - ({{GEP|Energy potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Energy mix(2)}} - ({{GEP|Energy potion(4)}}/2) - {{GEP|Caviar}})/23}}
+|-
+|33
+|{{plinkt|Defence mix(2)|pic=Defence mix(2)}}
+|{{plinkt|Defence potion(2)}}
+|{{plinkt|Caviar}}
+|25
+|{{Coins|({{GEP|Defence potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Defence mix(2)}}}}
+|{{Coins|{{GEPT|Defence mix(2)}} - ({{GEP|Defence potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Defence mix(2)}} - ({{GEP|Defence potion(4)}}/2) - {{GEP|Caviar}})/25}}
+|-
+|37
+|{{plinkt|Agility mix(2)|pic=Agility mix(2)}}
+|{{plinkt|Agility potion(2)}}
+|{{plinkt|Caviar}}
+|27
+|{{Coins|({{GEP|Agility potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Agility mix(2)}}}}
+|{{Coins|{{GEPT|Agility mix(2)}} - ({{GEP|Agility potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Agility mix(2)}} - ({{GEP|Agility potion(4)}}/2) - {{GEP|Caviar}})/27}}
+|-
+|40
+|{{plinkt|Combat mix(2)|pic=Combat mix(2)}}
+|{{plinkt|Combat potion(2)}}
+|{{plinkt|Caviar}}
+|28
+|{{Coins|({{GEP|Combat potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Combat mix(2)}}}}
+|{{Coins|{{GEPT|Combat mix(2)}} - ({{GEP|Combat potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Combat mix(2)}} - ({{GEP|Combat potion(4)}}/2) - {{GEP|Caviar}})/28}}
+|-
+|42
+|{{plinkt|Prayer mix(2)|pic=Prayer mix(2)}}
+|{{plinkt|Prayer potion(2)}}
+|{{plinkt|Caviar}}
+|29
+|{{Coins|({{GEP|Prayer potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Prayer mix(2)}}}}
+|{{Coins|{{GEPT|Prayer mix(2)}} - ({{GEP|Prayer potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Prayer mix(2)}} - ({{GEP|Prayer potion(4)}}/2) - {{GEP|Caviar}})/29}}
+|-
+|47
+|{{plinkt|Superattack mix(2)|pic=Superattack mix(2)}}
+|{{plinkt|Super attack(2)}}
+|{{plinkt|Caviar}}
+|33
+|{{Coins|({{GEP|Super attack(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Superattack mix(2)}}}}
+|{{Coins|{{GEPT|Superattack mix(2)}} - ({{GEP|Super attack(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Superattack mix(2)}} - ({{GEP|Super attack(4)}}/2) - {{GEP|Caviar}})/33}}
+|-
+|51
+|{{plinkt|Anti-poison supermix(2)|pic=Anti-poison supermix(2)}}
+|{{plinkt|Superantipoison(2)}}
+|{{plinkt|Caviar}}
+|35
+|{{Coins|({{GEP|Superantipoison(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Anti-poison supermix(2)}}}}
+|{{Coins|{{GEPT|Anti-poison supermix(2)}} - ({{GEP|Superantipoison(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Anti-poison supermix(2)}} - ({{GEP|Superantipoison(4)}}/2) - {{GEP|Caviar}})/35}}
+|-
+|53
+|{{plinkt|Fishing mix(2)|pic=Fishing mix(2)}}
+|{{plinkt|Fishing potion(2)}}
+|{{plinkt|Caviar}}
+|38
+|{{Coins|({{GEP|Fishing potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Fishing mix(2)}}}}
+|{{Coins|{{GEPT|Fishing mix(2)}} - ({{GEP|Fishing potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Fishing mix(2)}} - ({{GEP|Fishing potion(4)}}/2) - {{GEP|Caviar}})/38}}
+|-
+|56
+|{{plinkt|Super energy mix(2)|pic=Super energy mix(2)}}
+|{{plinkt|Super energy(2)}}
+|{{plinkt|Caviar}}
+|39
+|{{Coins|({{GEP|Super energy(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super energy mix(2)}}}}
+|{{Coins|{{GEPT|Super energy mix(2)}} - ({{GEP|Super energy(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super energy mix(2)}} - ({{GEP|Super energy(4)}}/2) - {{GEP|Caviar}})/39}}
+|-
+|58
+|{{plinkt|Hunting mix(2)|pic=Hunting mix(2)}}
+|{{plinkt|Hunter potion(2)}}
+|{{plinkt|Caviar}}
+|40
+|{{Coins|({{GEP|Hunter potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Hunting mix(2)}}}}
+|{{Coins|{{GEPT|Hunting mix(2)}} - ({{GEP|Hunter potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Hunting mix(2)}} - ({{GEP|Hunter potion(4)}}/2) - {{GEP|Caviar}})/40}}
+|-
+|59
+|{{plinkt|Super str. mix(2)|pic=Super str. mix(2)}}
+|{{plinkt|Super strength(2)}}
+|{{plinkt|Caviar}}
+|42
+|{{Coins|({{GEP|Super strength(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super str. mix(2)}}}}
+|{{Coins|{{GEPT|Super str. mix(2)}} - ({{GEP|Super strength(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super str. mix(2)}} - ({{GEP|Super strength(4)}}/2) - {{GEP|Caviar}})/42}}
+|-
+|61
+|{{plinkt|Magic essence mix(2)|pic=Magic essence mix(2)}}
+|{{plinkt|Magic essence(2)}}
+|{{plinkt|Caviar}}
+|43
+|{{Coins|{{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Magic essence mix(2)}}}}
+|{{Coins|{{GEPT|Magic essence mix(2)}} - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Magic essence mix(2)}} - {{GEP|Caviar}})/43}}
+|-
+|67
+|{{plinkt|Super restore mix(2)|pic=Super restore mix(2)}}
+|{{plinkt|Super restore(2)}}
+|{{plinkt|Caviar}}
+|48
+|{{Coins|({{GEP|Super restore(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super restore mix(2)}}}}
+|{{Coins|{{GEPT|Super restore mix(2)}} - ({{GEP|Super restore(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super restore mix(2)}} - ({{GEP|Super restore(4)}}/2) - {{GEP|Caviar}})/48}}
+|-
+|71
+|{{plinkt|Super def. mix(2)|pic=Super def. mix(2)}}
+|{{plinkt|Super defence(2)}}
+|{{plinkt|Caviar}}
+|50
+|{{Coins|({{GEP|Super defence(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super def. mix(2)}}}}
+|{{Coins|{{GEPT|Super def. mix(2)}} - ({{GEP|Super defence(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super def. mix(2)}} - ({{GEP|Super defence(4)}}/2) - {{GEP|Caviar}})/50}}
+|-
+|74
+|{{plinkt|Antidote+ mix(2)|pic=Antidote+ mix(2)}}
+|{{plinkt|Antidote+(2)}}
+|{{plinkt|Caviar}}
+|52
+|{{Coins|({{GEP|Antidote+(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Antidote+ mix(2)}}}}
+|{{Coins|{{GEPT|Antidote+ mix(2)}} - ({{GEP|Antidote+(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Antidote+ mix(2)}} - ({{GEP|Antidote+(4)}}/2) - {{GEP|Caviar}})/52}}
+|-
+|75
+|{{plinkt|Antifire mix(2)|pic=Antifire mix(2)}}
+|{{plinkt|Antifire potion(2)}}
+|{{plinkt|Caviar}}
+|53
+|{{Coins|({{GEP|Antifire potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Antifire mix(2)}}}}
+|{{Coins|{{GEPT|Antifire mix(2)}} - ({{GEP|Antifire potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Antifire mix(2)}} - ({{GEP|Antifire potion(4)}}/2) - {{GEP|Caviar}})/53}}
+|-
+|80
+|{{plinkt|Ranging mix(2)|pic=Ranging mix(2)}}
+|{{plinkt|Ranging potion(2)}}
+|{{plinkt|Caviar}}
+|54
+|{{Coins|({{GEP|Ranging potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Ranging mix(2)}}}}
+|{{Coins|{{GEPT|Ranging mix(2)}} - ({{GEP|Ranging potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Ranging mix(2)}} - ({{GEP|Ranging potion(4)}}/2) - {{GEP|Caviar}})/54}}
+|-
+|83
+|{{plinkt|Magic mix(2)|pic=Magic mix(2)}}
+|{{plinkt|Magic potion(2)}}
+|{{plinkt|Caviar}}
+|57
+|{{Coins|({{GEP|Magic potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Magic mix(2)}}}}
+|{{Coins|{{GEPT|Magic mix(2)}} - ({{GEP|Magic potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Magic mix(2)}} - ({{GEP|Magic potion(4)}}/2) - {{GEP|Caviar}})/57}}
+|-
+|85
+|{{plinkt|Zamorak mix(2)|pic=Zamorak mix(2)}}
+|{{plinkt|Zamorak brew(2)}}
+|{{plinkt|Caviar}}
+|58
+|{{Coins|({{GEP|Zamorak brew(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Zamorak mix(2)}}}}
+|{{Coins|{{GEPT|Zamorak mix(2)}} - ({{GEP|Zamorak brew(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Zamorak mix(2)}} - ({{GEP|Zamorak brew(4)}}/2) - {{GEP|Caviar}})/58}}
+|-
+|86
+|{{plinkt|Stamina mix(2)|pic=Stamina mix(2)}}
+|{{plinkt|Stamina potion(2)}}
+|{{plinkt|Caviar}}
+|60
+|{{Coins|({{GEP|Stamina potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Stamina mix(2)}}}}
+|{{Coins|{{GEPT|Stamina mix(2)}} - ({{GEP|Stamina potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Stamina mix(2)}} - ({{GEP|Stamina potion(4)}}/2) - {{GEP|Caviar}})/60}}
+|-
+|91
+|{{plinkt|Extended antifire mix(2)|pic=Extended antifire mix(2)}}
+|{{plinkt|Extended antifire(2)}}
+|{{plinkt|Caviar}}
+|61
+|{{Coins|({{GEP|Extended antifire(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Extended antifire mix(2)}}}}
+|{{Coins|{{GEPT|Extended antifire mix(2)}} - ({{GEP|Extended antifire(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Extended antifire mix(2)}} - ({{GEP|Extended antifire(4)}}/2) - {{GEP|Caviar}})/61}}
+|-
+|92
+|{{plinkt|Ancient mix(2)|pic=Ancient mix(2)}}
+|{{plinkt|Ancient brew(2)}}
+|{{plinkt|Caviar}}
+|63
+|{{Coins|({{GEP|Ancient brew(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Ancient mix(2)}}}}
+|{{Coins|{{GEPT|Ancient mix(2)}} - ({{GEP|Ancient brew(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Ancient mix(2)}} - ({{GEP|Ancient brew(4)}}/2) - {{GEP|Caviar}})/63}}
+|-
+|98
+|{{plinkt|Super antifire mix(2)|pic=Super antifire mix(2)}}
+|{{plinkt|Super antifire potion(2)}}
+|{{plinkt|Caviar}}
+|70
+|{{Coins|({{GEP|Super antifire potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super antifire mix(2)}}}}
+|{{Coins|{{GEPT|Super antifire mix(2)}} - ({{GEP|Super antifire potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super antifire mix(2)}} - ({{GEP|Super antifire potion(4)}}/2) - {{GEP|Caviar}})/70}}
+|-
+|99
+|{{plinkt|Extended super antifire mix(2)|pic=Extended super antifire mix(2)}}
+|{{plinkt|Extended super antifire(2)}}
+|{{plinkt|Caviar}}
+|78
+|{{Coins|({{GEP|Extended super antifire(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Extended super antifire mix(2)}}}}
+|{{Coins|{{GEPT|Extended super antifire mix(2)}} - ({{GEP|Extended super antifire(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Extended super antifire mix(2)}} - ({{GEP|Extended super antifire(4)}}/2) - {{GEP|Caviar}})/78}}
+|-
+|}

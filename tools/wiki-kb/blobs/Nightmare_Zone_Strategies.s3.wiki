@@ -1,0 +1,25 @@
+==Getting your first points==
+If it is your first time playing Nightmare Zone, you will not have any points for [[absorption]]s or [[overload (Nightmare Zone)|overload]]s. Follow either the '''Melee (Prayer)''' setup below with the recommended bosses or use hard endurance mode, killing every boss up to [[Elvarg (Nightmare Zone)|Elvarg]]. Bring combat potions and enough prayer potions or food to survive until you gather enough points. If looking to save supplies, bring prayer gear, combat potions, and use protection prayers until your prayer runs out. 
+
+Playing on normal difficulty is also an option, however the amount of time and money it takes to earn a sustainable amount of points will increase as well, as some bosses like [[Ice Troll King (Nightmare Zone)|Ice Troll King]] and [[Jungle Demon (Nightmare Zone)|Jungle Demon]] using more attack styles than just melee making it harder to survive.
+
+For hard endurance dreams, the following bosses require special mechanics or extra items brought with you, making it far less AFK:
+* [[Corrupt Lizardman (Nightmare Zone)|Corrupt Lizardman]] - [[Poison]] protection
+* [[Elvarg (Nightmare Zone)|Elvarg]] - [[Anti-dragon shield]] equipped - provided
+* [[Slagilith (Nightmare Zone)|Slagilith]] - Optional: Pickaxe - provided
+* [[Dagannoth mother (Nightmare Zone)|Dagannoth mother]] - Only takes one type of damage in one form at a time
+* [[Dad (Nightmare Zone)|Dad]] - Stuns and knocks back
+* [[Tanglefoot (Nightmare Zone)|Tanglefoot]] - Equip [[Magic secateurs]] to deal damage - provided. You will always hit and deal your secateurs max hit (based on Strength and farming) when using the secateurs against tanglefoot.
+* [[Headless Beast (Nightmare Zone)|Headless Beast]] - Drops rock from the ceiling when in melee range
+* [[Glod (Nightmare Zone)|Glod]] - Disables and drains [[Prayer]], causes you to run towards or away from him
+* [[Flambeed (Nightmare Zone)|Flambeed]] - Equip [[ice gloves]] to deal damage
+* [[Gelatinnoth Mother (Nightmare Zone)|Gelatinnoth Mother]] - Only takes one type of damage in one form at a time
+* [[Karamel (Nightmare Zone)|Karamel]] - Drains stats and [[Prayer]], interrupts auto-retaliate and movement
+* [[Chronozon (Nightmare Zone)|Chronozon]] - Can only be killed after using all four [[blast spells]]
+* [[Giant Roc (Nightmare Zone)|Giant Roc]] - Stuns and knocks back
+* [[Damis (Nightmare Zone)|Damis]] - Second form drains [[Prayer]] quickly.
+* [[Fareed (Nightmare Zone)|Fareed]] - Equip [[ice gloves]] to deal damage
+* [[Kamil (Nightmare Zone)|Kamil]] - Interrupts movement
+* [[Barrelchest (Nightmare Zone)|Barrelchest]] - Deals high damage, drains Prayer, Attack, and Defence, turns off protection prayers before attacking.
+* [[Elven traitor|Elven traitor (Arianwyn)]] - High damage and prayer disabling arrows
+* [[Essyllt (Nightmare Zone)|Essyllt]]- Long ranged attacks, stat drain and stuns

@@ -1,0 +1,136 @@
+{{External|rs|rsc=Maple Logs}}
+{{Infobox Item
+|name = Maple logs
+|image = [[File:Maple logs.png]]
+|release = [[25 March]] [[2002]]
+|update = Latest RuneScape News (25 March 2002)
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Logs cut from a maple tree.
+|value = 80
+|weight = 2.000
+|exchange = Yes
+|id = 1517
+}}
+[[File:Maple logs detail.png|left|130px]]
+'''Maple logs''' are received from cutting [[maple tree]]s requiring a [[Woodcutting]] level of 45 and yield 100 Woodcutting [[experience]] (110 with [[Kandarin Diary|Kandarin Medium Diary]]) per log. Maple logs can be burned with a [[Firemaking]] level of 45, giving 135 experience per log. Maple logs can also be [[Fletching|fletched]] into different items: [[arrow shaft]]s, [[maple shortbow (u)]], [[maple longbow (u)]], [[maple stock]] and [[maple shield]].
+
+Because of their low price and the moderate experience they provide, maple logs are commonly used for training Firemaking.
+
+6 maple logs can be used to light an [[Abyssal lantern (maple logs)|Abyssal lantern]], requiring 45 Firemaking.
+
+==Skill info==
+{{Woodcutting info
+|version1 = Normal
+|version2 = Medium Kandarin Diary
+|name = Maple tree
+|level = 45
+|tree = [[Maple tree]]
+|xp1 = 100
+|xp2 = 110
+|xpnote2 = Requires [[Medium Kandarin Diary]] completion.
+|tool = [[Axe]]
+|time = 35.4 seconds
+|loc1 = Various
+|loc2 = [[Seers' Village]]
+}}
+
+{{Firemaking info
+|craftxp = 33.7
+|pyrelevel = 55
+|version1 = Tinderbox
+|version2 = Bow
+|version3 = Barbarian pyre
+|version4 = Bonfire
+|skill2name = Crafting
+|name = Maple logs
+|skill1lvl1 = 45
+|skill1lvl2 = 65
+|skill1lvl3 = 55
+|skill2lvl3 = 55
+|skill1lvl4 = 45
+|skill1exp1 = 135
+|skill1exp2 = 135
+|skill1exp3 = 135
+|skill1exp4 = 135
+|facility1 = N/A
+|facility2 = N/A
+|facility3 = [[Funeral pyre (Barbarian)|Barbarian funeral pyre]]
+|facility4 = [[Fire]] or [[Forester's Campfire]]
+|tool1 = [[Tinderbox]]
+|tool2 = [[Bow]]
+|tool3 = [[Tinderbox]] or [[bow]], and an [[axe]]
+|tool4 = N/A
+|type = logs
+}}
+
+==Experience from logs==
+*Each log gives 100 [[Woodcutting]] [[experience]] when cut (Woodcutting level 45 required).
+*Lighting a log gives 135 [[Firemaking]] experience (Firemaking level 45 required).
+*Burning a log in a [[Forester's Campfire]] gives 135 [[Firemaking]] experience (Firemaking level 45 required).
+*Making 60 [[arrow shafts]] gives 20 [[Fletching]] experience (Fletching level 45 required).
+*Making an unstrung [[maple shortbow]] gives 50 [[Fletching]] experience and 50 additional experience when adding [[bow string]] (Fletching level 50 required).
+*Making an unstrung [[maple longbow]] gives 58.3 Fletching experience and 58.2 additional experience when adding bow string (Fletching level 55 required).
+*Making a full [[maple stock]] gives 32 Fletching experience (Fletching level 54 required).
+*Making a [[maple shield]] requires two logs and gives 116.5 Fletching experience, or 58.25 experience per log (Fletching level 57 required).
+
+==Products==
+{{Uses material list|Maple logs}}
+==Item sources==
+{{Drop sources|Maple logs}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 25 June 2015
+|update = Boss Room Counters & Platinum Tokens
+|poll = Old School Content Poll 34: XP droplets & Slayer
+|change = The inventory icons of maple logs and maple pyre logs have been reverted to match other logs in game.
+}}
+{{Subject changes
+|date = 22 January 2015
+|update = Zulrah, Bank Space & More
+|poll = Old_School_Content_Poll_29:_Grand_Exchange
+|change = The item's inventory sprite was rotated, to distinguish it from [[Yew logs]].
+}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The item was graphically updated with the release of [[Farming]].
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Maple logs detail (beta).png|center|300x150px]]
+|[[File:Maple logs detail (historical).png|center|300x150px]]
+|[[File:Maple logs detail.png|center|300x150px]]
+|[[File:Maple logs (v1) detail.png|center|300x150px]]
+|[[File:Maple logs detail.png|center|300x150px]]
+|-
+|[[File:Maple logs (beta).png|center]]
+|[[File:Maple logs (historical).png|center]]
+|[[File:Maple logs.png|center]]
+|[[File:Maple logs v1.png|center]]
+|[[File:Maple logs.png|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 ⁠–<br/>11 July 2005
+|11 July 2005 ⁠⁠–<br/>22 January 2015
+|22 January 2015 ⁠–<br/>25 June 2015
+|25 June 2015 ⁠–<br/>present
+|}
+
+==Trivia==
+*Maple trees used to be only available to Members, but with the [[Corsair Cove]] update on [[7 December]] [[2017]], 4 maple trees were placed in a free-to-play area.
+*The appearance of Maple logs in a player's inventory was changed in an update, making them resemble Achey logs. This was an attempt to prevent scams where players would swap Yew logs for Maples while Trading. However, due to complaints the appearance was reverted.
+
+{{Logs}}
+{{Fletching}}
+[[Category:Fletching]]
+[[Category:Firemaking]]

@@ -1,0 +1,31 @@
+
+{{HasStrategy}}
+{{Infobox NPC
+|version1 = Surfaced
+|version2 = Submerged
+|version3 = Enraged
+|name = Tempoross
+|image1 = [[File:Tempoross.png|300px]]
+|image2 = [[File:Tempoross (submerged).png|300px]]
+|image3 = [[File:Tempoross (enraged).png|300px]]
+|release = [[24 March]] [[2021]]
+|update = Fishing Skill Boss and Easter Event
+|members = Yes
+|race = Sea spirit
+|location = [[Tempoross Cove]]
+|examine1 = A mass of angry wet.
+|examine2 = Full of energised fish.
+|examine3 = Phew, what a Tempor!
+|map = {{Map|name=Tempoross Cove|zoom=2|x=3035|y=2850}}
+|id1 = 10572
+|id2 = 10574
+|id3 = 10575
+|leagueRegion = Desert
+}}
+'''Tempoross''' is a cooperative [[minigame]]-style [[boss]] that is fought using skills rather than combat. 35 [[Fishing]] is required to fight it, with players assisting the [[Spirit Anglers]] in depleting its energy by fishing for and cooking [[harpoonfish]] to be loaded as cannon ammunition, then reducing its essence by fishing for energised fish.
+
+During the encounter, players earn points towards reward permits which allow the [[reward pool]] to be searched. [[Ironmen]] are eligible for rewards from Tempoross when defeating it alongside other players.
+
+The activity is popular as a fairly low intensity [[Fishing]] training method, offering unique drops such as the [[tome of water]], [[fish barrel]], [[tackle box]], and [[dragon harpoon]].
+
+Subduing Tempoross 100 times is one of the requirements in order to utilise the crewmember [[Spotter Virginia]], along with 90 [[Sailing]].

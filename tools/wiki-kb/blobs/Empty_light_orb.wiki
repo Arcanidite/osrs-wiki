@@ -1,0 +1,43 @@
+{{External|rs}}
+{{Infobox Item
+|name = Empty light orb
+|image = [[File:Empty light orb.png]]
+|release = [[20 March]] [[2007]]
+|update = Dorgesh-Kaan
+|members = Yes
+|quest = No
+|tradeable = No
+|equipable = No
+|stackable = No
+|noteable = No
+|options = Drop
+|examine = Add a wire to complete it.
+|value = 250
+|weight = 0.001
+|id = 10980
+}}
+[[File:Empty light orb detail.png|left|150px]]
+'''Empty light orbs''' can be made with level 87 [[Crafting]] by blowing [[molten glass]], granting 70 experience. Attaching a [[cave goblin wire]] to an empty orb creates a [[light orb]], which gives 104 Crafting experience when the wire and empty light orb are combined. The light orb can be used to repair broken lamps in [[Dorgesh-Kaan]] for [[Firemaking]] and Crafting experience.
+
+Empty light orbs cannot be traded.  Coupled with the purchase cost or slow rate of collection of cave goblin wire, light orbs are an undesirable Crafting training method.
+==Creation==
+{{Recipe
+|skill1 = Crafting
+|skill1lvl = 87
+|skill1boostable = Yes 
+|skill1exp = 70
+|members = Yes
+|ticks = 3
+|tools = Glassblowing pipe
+|mat1 = Molten glass
+|output1 = Empty light orb
+|output1cost = No
+}}
+==Products==
+{{Uses material list|Empty light orb}}
+==Item sources==
+{{Drop sources|Empty light orb}}
+
+{{Orb}}
+{{Glass}}
+{{Dorgesh-Kaan}}

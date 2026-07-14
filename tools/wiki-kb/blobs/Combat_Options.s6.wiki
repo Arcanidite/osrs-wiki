@@ -1,0 +1,2 @@
+===Controlled===
+When using the '''controlled''' style, for every point of damage a player deals, they gain 1.33 experience each in [[Attack]], [[Strength]], [[Hitpoints]], and [[Defence]]. Using the '''controlled '''style provides an invisible +1 boost to your Attack, Strength and Defence levels.{{NamedRef|Attack}} This attack style is only available for certain melee weapons: [[longsword]]s, [[scimitars]], [[maces]], [[spears]], [[halberds]], [[hastae]], [[claws]], and [[whips]].

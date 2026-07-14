@@ -1,0 +1,49 @@
+==Gameplay==
+[[File:Dynamite explosion.png|thumb|The dynamite explodes, blasting rock out of the cavity.]]
+Players must first excavate hard rock using a [[chisel]], then use a pot of [[dynamite]] on the resulting cavity. Then, they must light the dynamite with a [[tinderbox]] and run at least two squares away from it, or take about 15 damage.
+
+Once the dynamite explodes, players should collect the [[blasted ore]] from the ground and deposit it into an [[ore sack]] near a working [[operator]]. Players have three minutes to deposit the blasted ore before it disintegrates, so it is important to be quick. When there are at least 900 of any single type of ore in the sack, it will become full and the player will need to collect it before being able to excavate any more; the nearby operator will notify them of this. Players can talk to the brown-haired operator on the east side of the machine to collect the ore they mined in noted form, along with [[Mining]] experience according to the ores obtained.
+
+Excavating the hard rock earns 20 [[Mining]] experience, and lighting the dynamite earns 50 [[Firemaking]] experience. Additional Mining experience is awarded along with the cleaned ores. 
+
+The blast mine allows players to obtain ores as though their Mining level were 10 levels higher (e.g. a player can obtain [[runite ore]] with only 75 Mining instead of the usual 85). Temporary boosts work, and must be active before the blasted ore spawns. The experience gained per hour varies depending on Mining level and overall efficiency. Additionally, players who have completed the [[elite Kourend & Kebos Diary]] have a 10% increased chance to obtain higher-tier ores.
+
+{| class="wikitable"
+!Ore
+!Base experience
+|-
+|{{plink|Coal}}
+|33
+|-
+|{{plink|Gold ore}}
+|66
+|-
+|{{plink|Mithril ore}}
+|120
+|-
+|{{plink|Adamantite ore}}
+|190
+|-
+|{{plink|Runite ore}}
+|260
+|}
+
+Assuming 330 dynamite used per hour, at level 70, players can expect approximately 55,000 Mining experience and 310,000 coins per hour. This scales up to 88,000 and 800,000 respectively at level 99, with the profit increasing significantly at level 75 with runite ore becoming available. In addition, Firemaking experience is gained at 16,500 per hour, which does not scale.
+
+Unlike level boosts, the [[prospector kit]] affects the experience received while collecting the washed ore. It is not required to wear it while blasting ore and depositing blasted ore to obtain the bonus experience. However, the experience of excavating the rock wall is increased by 0.5 experience per excavation with the full outfit.
+
+A breakdown of the ore distribution at level 99 mining with the [[elite Kourend & Kebos Diary]] and a [[celestial ring]] to provide the invisible +4 mining boost is approximately:
+{| class="wikitable"
+|-
+! Ore !! Distribution
+|-
+| {{plink|Coal}} || 4.5%
+|-
+| {{plink|Gold ore}} || 14.3%
+|-
+| {{plink|Mithril ore}} || 31.4%
+|-
+| {{plink|Adamantite ore}} || 38.6%
+|-
+| {{plink|Runite ore}} || 11.2%
+|}

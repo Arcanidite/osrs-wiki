@@ -1,0 +1,9 @@
+==Mining info==
+{{Mining info
+|name = Tin rocks
+|level = 1
+|xp = 17.5
+|rock = [[Tin rocks]]
+|tool = [[Pickaxe]]
+|time = 2.4 seconds
+}}

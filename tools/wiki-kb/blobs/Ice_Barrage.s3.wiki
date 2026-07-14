@@ -1,0 +1,19 @@
+==Cost==
+{{Spell cost table
+|Rune1 = death
+|Rune1num = 4
+|Rune2 = blood
+|Rune2num = 2
+|Rune3 = water
+|Rune3num = 6
+|is_offensive = y
+}}
+{| class="wikitable"
+|+
+! colspan="3" |Wilderness-only casting
+|-
+|{{CostLine|Blighted ancient ice sack}}
+
+|}
+{{Ancient Magicks}}
+{{Combat spells}}

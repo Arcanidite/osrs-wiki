@@ -1,0 +1,186 @@
+{{External|rs}}
+{{Infobox NPC
+|version1 = Mainland
+|version2 = Varlamore
+|name1 = Estate agent
+|name2 = Estate Agent
+|image1 = [[File:Estate agent.png|150px]]
+|image2 = [[File:Estate Agent (Varlamore).png|140px]]
+|release1 = [[31 May]] [[2006]]
+|release2 = [[20 March]] [[2024]]
+|update1 = PLAYER-OWNED HOUSES!
+|update2 = Varlamore: Part One
+|members = Yes
+|race = [[Human]]
+|location1 = [[Varrock]], [[Falador]], [[Seers' Village]], [[Ardougne]], [[Hosidius]]
+|location2 = [[Civitas illa Fortis]]
+|shop = [[Player-owned house]]s, [[Construct. cape|Skillcape of construction]]
+|gender1 = Male
+|gender2 = Female
+|options = Talk-to, Relocate, Redecorate
+|examine1 = A fancy businessman with a mighty fine hat.
+|examine2 = A fancy businesswoman.
+|map = No
+|shopversion1 = (1),(2),(3),(4),(5)
+|shopversion2 = (6)
+|id1 = 3097
+|id2 = 13343
+|leagueRegion1 = Misthalin,Asgarnia,Kandarin,Kourend
+|leagueRegion2 = Varlamore
+}}
+{{Synced switch
+|version1 = [[File:Estate agent chathead.png|left]]
+|version2 = [[File:Estate Agent (Varlamore) chathead.png|left]]
+}}
+'''Estate agents''' are memebers of the Gielinor Housing Agency that sell [[player]]s land to build [[player-owned house]]s (POH) on, as well as decorating them and/or moving them. These agents can be found in several major cities: [[Varrock]], [[Falador]], [[Seers' Village]], [[East Ardougne]], [[Hosidius]], and [[Varlamore]] as well as [[Alwyn]] taking up the role in the Ithell district of [[Prifddinas]]. They are identified on the [[minimap]] by a symbol of a small house ([[File:Estate Agent icon.png]]). 
+
+Players may either pay 1,000 [[coins]] or complete the quest [[Daddy's Home]] to get their first house in [[Rimmington]]. With ownership of a house, players are able to claim [[Construction guide|construction guides]] for free and start training the [[Construction]] skill.
+
+Estate agents also sell the [[Construct. cape|Construction cape]] for 99,000 coins to anyone with level 99 in Construction.
+
+==Locations==
+{{NPCTableHead}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Varrock]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:3240,y:3476
+|mtype = pin
+|leagueRegion = Misthalin
+}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Falador]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2983,y:3369
+|mtype = pin
+|leagueRegion = Asgarnia
+}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Seers' Village]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2737,y:3502
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Ardougne]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2639,y:3291
+|mtype = pin
+|leagueRegion = Kandarin
+}}
+{{NPCLocLine
+|name = Estate agent
+|location = [[Hosidius]]
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:1781,y:3628
+|mtype = pin
+|leagueRegion = Kourend
+}}
+{{NPCLocLine
+|name=Estate Agent
+|x:1703,y:3101
+|location=[[Civitas illa Fortis]]
+|mapID=0
+|members=Yes
+|mtype=pin
+|plane=0
+|leagueRegion = Varlamore
+}}
+{{NPCTableBottom}}
+
+==Relocation==
+Estate agents can move a POH from its starting location in [[Rimmington]] to any of the other [[house portal]]s locations identified by the portal icon ([[File:House portal icon.png]]) on the [[minimap]]. These locations include [[Rimmington]], [[Taverley]], [[Pollnivneach]], [[Hosidius]], [[Rellekka]], [[Brimhaven]], [[Yanille]], and [[Prifddinas]]. Boosts can not be used to meet the level requirements.
+
+{{Table/POH locations}}
+
+==Redecoration==
+{{Main|House styles}}
+Estate agents can also change the [[House style]] of a POH. This is a cosmetic change to the ground and walls of the house, and does not affect the layout or content.
+
+Note: Decorating your house with Fancy Stone at the [[Varrock]] and [[Seers' Village]] estate agents are [[Hard Varrock Diary]] and [[Hard Kandarin Diary]] tasks respectively. 
+
+{{Table/POH redecoration}}
+
+==Stock==
+Note: If a player has multiple [[Skill mastery|99s]], they will receive the trimmed variant of the cape instead.
+<tabber>
+Varrock =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(1)|location=[[Varrock]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Falador =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(2)|location=[[Falador]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Seers' Village =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(3)|location=[[Seers' Village]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Ardougne =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(4)|location=[[Ardougne]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Hosidius =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(5)|location=[[Hosidius]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+|-|
+Civitas illa Fortis =
+{{StoreTableHead|hidebuy=y|hidege=y|hidecaption=y|hidestock=y|hiderestock=y|shopversion=(6)|location=[[Civitas illa Fortis]]}}
+{{StoreLine|name=Construct. cape|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreLine|name=Construct. cape(t)|stock=inf|sell=99,000|buy=N/A|restock=|gemw=n}}
+{{StoreTableBottom}}
+</tabber>
+
+==Dialogue==
+{{Hastranscript|npc}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 18 October 2006
+|update = Capes of Achievement... and Goats!
+|change = The NPC was graphically updated.
+}}
+{{Subject changes footer}}
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Estate agent (historical).png|center|300x150px]]
+|[[File:Estate agent.png|center|300x150px]]
+|-
+|31 May 2006 –<br/>18 October 2006
+|18 October 2006 –<br/>present
+|}
+
+==Trivia==
+* If the player has not completed the Song of the Elves quest, the Estate agent will claim to have never heard of Prifddinas when the player tries to relocate their house there. However, the agent will reference the sawmill in Prifddinas when explaining houses to the player.
+* A [[Estate agent (2021 Halloween event)|variant]] estate agent was involved in the [[2021 Halloween event]], during which he tried to sell the [[Edgeville Monastery]] to [[Oziach]].
+* The Construction cape can be purchased from estate agents and is the only cape that may be bought from multiple NPCs.
+
+{{Skillcape}}
+{{East Ardougne}}
+{{House}}
+{{Song of the Elves}}

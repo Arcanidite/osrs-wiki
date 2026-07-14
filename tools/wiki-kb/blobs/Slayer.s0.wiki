@@ -1,0 +1,29 @@
+{{External|rs}}
+{{Otheruses|def=no|a list of all requirements and unlockables within the Slayer skill|Slayer/Level up table}}
+{{Has skill guide|members=Slayer training|iron=Ironman Guide/Slayer|UIM=Ultimate Ironman Guide/Slayer}}
+{{Infobox Skill
+|name = Slayer
+|image = [[File:Slayer icon.png]]
+|release = [[26 January]] [[2005]]
+|update = Slayer Skill
+|members = Yes
+|type = Utility
+}}
+[[File:Slayer icon (detail).png|left]]
+'''Slayer''' is a [[skill]] that allows players to kill [[monster]]s that may otherwise be untargetable by players (players would be prompted with a message stating they do not possess the required Slayer level to attack the monster). Players must visit a [[Slayer Master]], who will assign them a [[Slayer task|task]] to kill certain monsters based on the player's [[Combat level]]. Slayer [[experience]] is awarded each time the player kills an assigned monster, and is equal to the monster's [[Hitpoints]] multiplied by its [[experience bonus]].
+
+Many players primarily train [[Combat]] by completing [[Slayer task]]s, as Combat experience is still given as normal while fighting [[Slayer monsters]]. At higher levels, Slayer becomes more profitable, as higher-leveled slayer monsters tend to have more lucrative drops both in common and uniques. Some [[boss]]es are additionally unique to Slayer and can only be killed when assigned it or their lesser category as an assignment.
+
+After completing a set amount of tasks, players will begin to earn [[slayer reward point]]s, which can be used for a wide array of purposes, such as beneficial buffs on specific tasks or some cosmetics.
+
+{{Listen
+|align = right
+|title = Slayer level up - normal
+|filename = Slayer Level Up!.ogg
+|desc = The music that plays when levelling up.}}
+
+{{Listen
+|align = right
+|title = Slayer level up - with unlocks
+|filename = Slayer Level Up! (Unlocks).ogg
+|desc = The music that plays when levelling up and unlocking new content.}}

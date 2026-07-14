@@ -1,0 +1,17 @@
+===Nets===
+[[File:Small net fishing.png|thumb|300px|A player fishing on a [[Fishing spots|fishing spot]].]]The first few fish players can catch require nets. Players can use [[small fishing net]]s and [[big fishing net]]s. The big nets only allow players to catch different types of fish and sometimes items, such as [[casket]]s. When a player has found a [[fishing spot]], they can then use their net if the option "net fishing spot" is available. "Net fishing spot" can be found in: [[Draynor Village]], [[Lumbridge Swamp]], [[Musa Point]], the coastline near [[Rimmington]], the [[Wilderness Bandit Camp]], [[Al Kharid]], and [[Corsair Cove]]. A "[[Fishing spot (Civitas illa Fortis)|cast fishing spot]]" is available at the park in [[Civitas illa Fortis]]. House keys, gems, [[Half key|key halves]], and clue bottles, can be obtained from this spot.
+
+{| class="wikitable sortable"
+!colspan="2"|Equipment
+!Level
+!Members
+|-
+|{{Plinkt|Small fishing net}}
+|{{SCP|Fishing|1}}
+|{{Members|No}}
+|-
+|{{Plinkt|Big fishing net}}
+|{{SCP|Fishing|16}}
+|{{Members|Yes}}
+|-
+|}

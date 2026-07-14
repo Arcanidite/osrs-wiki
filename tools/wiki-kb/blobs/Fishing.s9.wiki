@@ -1,0 +1,28 @@
+===Fishing rods and bait===
+[[File:Baiting.png|thumb|300px|This player is using a [[fishing rod]].]]
+[[Fishing rod]]s are required for mid level Fishing in both rivers and seas. Along with a Fishing rod, players also need [[Fishing bait|bait]]. Bait can be bought in stores (3 [[coins]] each at the [[Port Sarim]] [[Gerrant's Fishy Business|fishing shop]]), but is also dropped by some [[monsters]] and [[random events]]. When a player has found a [[Fishing spots|fishing spot]], they can then use their fishing rod if the option "bait fishing spot" is available. For every [[fish]] you catch, you lose one piece of bait.
+
+The [[oily fishing rod]] is a [[members]] only item required to catch [[infernal eels]] when used with [[ice gloves]] and to catch [[Raw lava eel|lava eels]] for the [[Heroes' Quest]]. The pearl variants such as the [[Pearl fishing rod]] are cosmetic and not improvements over the basic fishing rod, although they can be equipped which frees up a single inventory slot.
+
+{| class="wikitable sortable"
+!colspan="2"|Equipment
+!Level
+!Members
+|-
+|{{Plinkt|Fishing rod}}
+|{{SCP|Fishing|5}}
+|{{Members|No}}
+|-
+|{{Plinkt|Pearl fishing rod}}
+|{{SCP|Fishing|5}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Oily fishing rod}}
+|{{SCP|Fishing|5}}
+|{{Members|Yes}}
+|-
+|{{Plinkt|Oily pearl fishing rod}}
+|{{SCP|Fishing|5}}
+|{{Members|Yes}}
+|-
+|}

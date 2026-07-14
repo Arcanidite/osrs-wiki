@@ -1,0 +1,8 @@
+===Level 82+: Magic Imbue===
+''Completion of the quest [[Lunar Diplomacy]] is required to cast [[Magic Imbue]].''
+
+At level 82, players can cast [[Magic Imbue]] on the [[Lunar spellbook]]. It is mainly used when training [[Runecraft]] through crafting [[lava rune]]s (or other [[combination runes]]), as casting the spell negates the need for talismans. If training Runecraft this way, players will gain a decent amount of passive Magic experience over time.
+
+Similarly to High Level Alchemy, Magic Imbue can also be cast for the Magic experience alone while doing other activities. Magic Imbue only requires one click to cast and does not interrupt any actions, such as fishing. However, it can only be cast once every 21 ticks (12.6 seconds), costs money, and offers very slow experience by itself.
+
+Players can gain up to around 20,000–24,000 passive Magic experience per hour. Casting the spell costs {{Coins|-{{GEP|Astral rune|2}}/86 round 1}} per experience, assuming the player is wielding a steam battlestaff (or an equivalent combination, such as [[water battlestaff]] with a [[tome of fire]] or [[fire battlestaff]] with a [[tome of water]]).

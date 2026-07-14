@@ -1,0 +1,35 @@
+==Prices==
+{| class="wikitable"
+|-
+!colspan=2|Item
+!Cost
+!colspan=2|Log needed
+|-
+|{{plinkt|Plank}}
+|{{coins|100}}
+|{{plinkt|Logs}}
+|-
+|{{plinkt|Oak plank}}
+|{{coins|250}}
+|{{plinkt|Oak logs}}
+|-
+|{{plinkt|Teak plank}}
+|{{coins|500}}
+|{{plinkt|Teak logs}}
+|-
+|{{plinkt|Mahogany plank}}
+|{{coins|1500}}
+|{{plinkt|Mahogany logs}}
+|-
+|{{plinkt|Camphor plank}}
+|{{coins|2500}}
+|{{plinkt|Camphor logs}}
+|-
+|{{plinkt|Ironwood plank}}
+|{{coins|5000}}
+|{{plinkt|Ironwood logs}}
+|-
+|{{plinkt|Rosewood plank}}
+|{{coins|7500}}
+|{{plinkt|Rosewood logs}}
+|}

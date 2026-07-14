@@ -1,0 +1,135 @@
+==Experience per herb comparison==
+Below is a table comparing the experience earned per herb making commonly used or created products against the experience gained per herb from refining herbs for Mastering Mixology. The amount of experience obtained per herb is not static, as paste has a variable value depending on the potion created.
+
+The minimum amount of experience assumes that the paste was used to create a [[mammoth-might mix]], [[alco-augmentator]], or [[liplack liquor]]. The maximum amount of experience assumes that the paste was used to create a [[mixalot]]. These values are doubled if used in a potion with [[digweed]]. In reality, most experience earned per herb is in between these values, slightly varying between potions; due to the number of factors involved, an all-encompassing average value cannot be calculated per herb.
+
+However, lye paste has the highest average value per paste, and aga has a higher average value per paste than mox paste, as the potions that require multiple lye and aga give more experience than potions that require multiple mox, excluding the pure potions that require 3 of the same paste.
+
+{| class="wikitable sortable style="text-align:center; width:250px;"
+! colspan="2" rowspan="2" | Herb
+! rowspan="2" | Paste
+! rowspan="2" | Product
+! colspan="3" | Experience
+|-
+! Paste{{efn|Includes the 6 experience from refining the herb and 14 experience from speeding up the processing. Using 3 of the same paste gives the least experience while using one of each gives the most.}}
+! Product
+! Bonus
+|-
+| {{plinkt|Guam leaf}}
+| {{plink|Mox paste|txt=Mox}}
+| {{plink|Guam tar}}
+| {{SCP|Herblore|74 - 132.3}}
+| {{SCP|Herblore|30}}
+| 2.47 - 4.41x
+|-
+| {{plinkt|Marrentill}}
+| {{plink|Mox paste|txt=Mox}}
+| {{plink|Marrentill tar}}
+| {{SCP|Herblore|94.4 - 170.2}}
+| {{SCP|Herblore|42.5}}
+| 2.22 - 4.01x
+|-
+| {{plinkt|Tarromin}}
+| {{plink|Mox paste|txt=Mox}}
+| {{plink|Tarromin tar}}
+| {{SCP|Herblore|108 - 195.5}}
+| {{SCP|Herblore|55}}
+| 1.96 - 3.55x
+|-
+| {{plinkt|Harralander}}
+| {{plink|Mox paste|txt=Mox}}
+| {{plink|Harralander tar}}
+| {{SCP|Herblore|142 - 258.7}}
+| {{SCP|Herblore|72.5}}
+| 1.96 - 3.57x
+|-
+| {{plinkt|Ranarr weed}}
+| {{plink|Lye paste|txt=Lye}}
+| {{plink|Prayer potion}}
+| {{SCP|Herblore|182.8 - 334.5}}
+| {{SCP|Herblore|87.5}}
+| 2.09 - 3.82x
+|-
+| {{plinkt|Toadflax}}
+| {{plink|Lye paste|txt=Lye}}
+| {{plink|Saradomin brew}}
+| {{SCP|Herblore|223.6 - 410.3}}
+| {{SCP|Herblore|180}}
+| 1.24 - 2.28x
+|-
+| {{plinkt|Irit leaf}}
+| {{plink|Aga paste|txt=Aga}}
+| {{plink|Super attack}}
+| {{SCP|Herblore|210 - 385}}
+| {{SCP|Herblore|100}}
+| 2.1 - 3.85x
+|-
+| rowspan="2" | {{plinkp|Avantoe}}
+| rowspan="2" | [[Avantoe]]
+| rowspan="2" | {{plink|Lye paste|txt=Lye}}
+| {{plink|Super energy}}
+| rowspan="2" | {{SCP|Herblore|190 - 385}}
+| {{SCP|Herblore|117.5}}
+| 1.79 - 3.28x
+|-
+
+| {{plink|Extended stamina potion}}
+| {{SCP|Herblore|276.5}}{{efn|name=totalxp|Total experience per herb, including making each intermediary potion}}
+| 0.69 - 1.39
+|-
+| {{plinkt|Kwuarm}}
+| {{plink|Lye paste|txt=Lye}}
+| {{plink|Super strength}}
+| {{SCP|Herblore|230.4 - 422.9}}
+| {{SCP|Herblore|125}}
+| 1.84 - 3.38x
+|-
+| {{plinkt|Huasca}}
+| {{plink|Aga paste|txt=Aga}}
+| {{plink|Prayer regeneration potion|txt=Prayer regeneration}}
+| {{SCP|Herblore|142 - 258.7}}
+| {{SCP|Herblore|132}}
+| 1.08 - 1.96x
+|-
+| {{plinkt|Snapdragon}}
+| {{plink|Lye paste|txt=Lye}}
+| {{plink|Super restore}}
+| {{SCP|Herblore|278 - 511.3}}
+| {{SCP|Herblore|142.5}}
+| 1.95 - 3.59x
+|-
+| {{plinkt|Cadantine}}
+| {{plink|Aga paste|txt=Aga}}
+| {{plink|Super defence}}
+| {{SCP|Herblore|237.2 - 435.5}}
+| {{SCP|Herblore|150}}
+| 1.58 - 2.9x
+|-
+| rowspan="2" | {{plinkp|Lantadyme}}
+| rowspan="2" | [[Lantadyme]]
+| rowspan="2" | {{plink|Aga paste|txt=Aga}}
+| {{plink|Antifire potion}}
+| rowspan="2" | {{SCP|Herblore|278 - 511.3}}
+| {{SCP|Herblore|157.5}}
+| 1.77 - 3.25x
+|-
+
+|{{plink|Extended super antifire}}
+|{{SCP|Herblore|375}}{{efn|name=totalxp}}
+| 0.74 - 1.36x
+|-
+| {{plinkt|Dwarf weed}}
+| {{plink|Aga paste|txt=Aga}}
+| {{plink|Ranging potion}}
+| {{SCP|Herblore|291.6 - 536.6}}
+| {{SCP|Herblore|162.5}}
+| 1.79 - 3.3x
+|-
+| {{plinkt|Torstol}}
+| {{plink|Aga paste|txt=Aga}}
+| {{plink|Super combat potion}}
+| {{SCP|Herblore|305.2 - 561.9}}
+| {{SCP|Herblore|150}}
+| 2.03 - 3.75x
+|}
+{{Notelist}}

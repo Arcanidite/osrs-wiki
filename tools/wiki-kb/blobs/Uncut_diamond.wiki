@@ -1,0 +1,94 @@
+{{External|rs|rsc}}
+{{Infobox Item
+|name = Uncut diamond
+|image = [[File:Uncut diamond.png]]
+|release = [[17 March]] [[2001]]
+|update = This weeks update
+|members = No
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = This would be worth more cut.
+|value = 200
+|weight = 0.003
+|exchange = Yes
+|id = 1617
+}}
+[[File:Uncut diamond detail.png|left|130px]]
+An '''uncut diamond''' is a precious [[gem]] used in [[Crafting]]. It can be cut with a [[chisel]] to make a [[diamond]], requiring 43 Crafting and yielding 107.5 [[experience]].
+
+Uncut diamonds can be obtained in several ways: randomly while [[mining]] [[ore]]s, as drops from [[monster]]s (mainly those which have access to the [[rare drop table]]), [[gem shop]]s, or as a reward from certain [[minigames]] and [[random events]]. They are also a common reward from [[Managing Miscellania]].
+
+With level 40 [[Mining]] and the quest [[Shilo Village]] completed, players can mine the [[gem rocks]] in [[Shilo Village (location)|Shilo Village]]. Gem rocks may also appear while playing the [[Tai Bwo Wannai Cleanup]] activity, where players can mine them 3 times. Another method to get uncut diamonds is by cracking [[Wall safe (lobby)|wall safes]] in the [[Rogues' Den]], but this requires level 50 [[Thieving]].
+
+An uncut diamond is a reward from the [[Troll Romance]] quest and is dropped by the [[Slagilith]] during [[One Small Favour]].
+
+==Training==
+===Crafting===
+{|class="wikitable sortable" style="text-align: center;"
+!{{SCP|Crafting}} Level
+!Input
+!Material Cost{{Refn|Cost calculated assuming all inputs are purchased from the [[Grand Exchange]].|group=t}}
+!Output
+!Sell Price
+!Profit / loss
+!{{SCP|Crafting}} XP/Craft
+!XP/Hour
+!Coins/XP
+|-
+|43
+|{{plink|Uncut diamond}}
+|{{Coins|{{GEP|Uncut diamond}}}}
+|{{plink|Diamond}}
+|{{Coins|{{GEP|Diamond}}}}
+|{{Coins|{{GEP|Diamond}}-{{GEP|Uncut diamond}}}}
+|107.5
+|311,750{{Refn|XP rates based on an assumed 2,900 cuts per hour|group=t}}
+|{{Coins|({{GEP|Diamond}}-{{GEP|Uncut diamond}})/107.5}}
+|}
+{{Reflist|group=t}}
+
+==Products==
+{{Uses material list|Uncut diamond}}
+
+==Item sources==
+{{Drop sources|Uncut diamond}}
+
+===Shop locations===
+{{Store locations list|Uncut diamond}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 6 August 2007
+|update = Clan Chat
+|change = The item was graphically updated.
+}}
+{{Subject changes
+|date = 
+|update =
+|change = Gems available on [[free-to-play]] worlds can no longer be crushed with a [[hammer]] to receive a [[members object]] ([[crushed gem]]).
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Uncut diamond detail (beta).png|center|300x150px]]
+|[[File:Uncut diamond detail (historical).png|center|300x150px]]
+|[[File:Uncut diamond detail.png|center|300x150px]]
+|-
+|[[File:Uncut diamond (beta).png|center]]
+|[[File:Uncut diamond (historical).png|center]]
+|[[File:Uncut diamond.png|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 –<br/>6 August 2007
+|6 August 2007 –<br/>present
+|}
+
+{{Diamond}}
+{{Gems}}
+[[Category:Crafting items]]

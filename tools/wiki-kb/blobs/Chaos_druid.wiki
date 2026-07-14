@@ -1,0 +1,192 @@
+{{External|rs|rsc=Chaos Druid}}
+{{otheruses|the stronger variant|Chaos druid warrior|the elder druid|Elder Chaos druid|def=no}}
+{{Infobox Monster
+|name = Chaos druid
+|image = [[File:Chaos druid.png|130px]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = Yes
+|combat = 13
+|size = 1
+|examine = A crazy, evil druid.
+|xpbonus = 0
+|max hit = 2 ([[Melee]])
+|aggressive = Yes
+|poisonous = No
+|attack style = [[Crush]], [[Magic]]
+|attack speed = 4
+|respawn = 25
+|slayxp = 20
+|cat = Chaos Druids
+|assignedby = krystilia
+|hitpoints = 20
+|att = 8
+|str = 8
+|def = 12
+|mage = 10
+|range = 1
+|attbns = 0
+|strbns = 0
+|amagic = 0
+|mbns = 0
+|arange = 0
+|rngbns = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|dlight = 0
+|dstandard = 0
+|dheavy = 0
+|poisonresistance = 0
+|venomresistance = 0
+|immunecannon = No
+|immunethrall = No
+|id = 520
+}}
+'''Chaos druids''' are low-level [[human]]s commonly killed for their frequent drops of [[herb]]s. Unlike other druids, they worship [[Zamorak]]. They attack with their fists and make use of a spell that appears to be a combination of the [[Confuse]] and [[Bind]] spells, binding their target very briefly if successful.
+
+Players who decide to kill chaos druids in the [[Edgeville Dungeon]] should beware of [[Player killing|player killers]] who disguise themselves in [[Zamorak monk robes|Zamorak robes]] to take on the appearance of a chaos druid. If you attack another player, you will become [[Skull (status)|skulled]] and potentially lose all of your items.
+
+==Locations==
+{{LocTableHead}}
+{{LocLine
+|name = Chaos druid
+|location = [[Chaos Druid Tower]]<ref>Chaos Druid Tower north-west of [[East Ardougne]] requires 46 [[Thieving]].</ref>
+|levels = 13
+|members = Yes
+|mapID = 0
+|plane = 0
+|x:2561,y:3355|x:2561,y:3357|x:2563,y:3355|x:2563,y:3358
+|mtype = pin
+|leagueRegion = kandarin
+}}
+
+{{LocLine
+|name = Chaos druid
+|location = Top of [[Slepe]] Church
+|levels = 13
+|members = Yes
+|mapID = 0
+|plane = 3
+|x:3736,y:3318|x:3738,y:3314|x:3739,y:3313|x:3739,y:3321|x:3742,y:3317
+|mtype = pin
+|leagueRegion = morytania
+}}
+
+{{LocLine
+|name = Chaos druid
+|location = [[Edgeville Dungeon]] (Wilderness)
+|levels = 13
+|members = Yes
+|mapID = 12
+|plane = 0
+|x:3104,y:9942|x:3105,y:9936|x:3106,y:9940|x:3107,y:9943|x:3109,y:9931|x:3110,y:9941|x:3111,y:9936|x:3111,y:9939|x:3114,y:9929|x:3115,y:9925|x:3115,y:9932
+|mtype = pin
+|leagueRegion = wilderness
+}}
+
+{{LocLine
+|name = Chaos druid
+|location = [[Taverley Dungeon]]
+|levels = 13
+|members = Yes
+|mapID = 20
+|plane = 0
+|x:2929,y:9848|x:2931,y:9846|x:2932,y:9852|x:2936,y:9846|x:2936,y:9852|x:2937,y:9849
+|mtype = pin
+|leagueRegion = asgarnia
+}}
+
+{{LocLine
+|name = Chaos druid
+|location = [[Yanille Agility Dungeon]]<ref>The chaos druids in Yanille Agility Dungeon require 57 [[Agility]] to access if using the northern entrance, or 82 Thieving if using the southern entrance.</ref>
+|levels = 13
+|members = Yes
+|mapID = 27
+|plane = 0
+|x:2611,y:9483|x:2611,y:9487|x:2612,y:9488|x:2613,y:9482|x:2614,y:9483|x:2615,y:9487|x:2616,y:9484|x:2613,y:9521|x:2614,y:9521|x:2614,y:9525|x:2616,y:9522
+|mtype = pin
+|leagueRegion = kandarin
+}}
+{{LocTableBottom}}
+{{Reflist}}
+
+==Money making==
+{{Mmgsection|Killing chaos druids}}
+
+==Drops==
+{{DropLogProject|jagex=yes}}
+
+{{Average drop value}}
+===100%===
+{{DropsTableHead}}
+{{DropsLine|name=Bones|quantity=1|rarity=Always}}
+{{DropsTableBottom}}
+
+===Runes and ammunition===
+{{DropsTableHead}}
+{{DropsLine|name=Law rune|quantity=2|rarity=7/128}}
+{{DropsLine|name=Mithril bolts|quantity=2-12|rarity=4/128|raritynotes=<ref group=d>If [[Observatory Quest]] has not been completed, the drop rate of mithril bolts are 5/128.</ref>|altrarity=5/128}}
+{{DropsLine|name=Air rune|quantity=36|rarity=3/128}}
+{{DropsLine|name=Body rune|quantity=9|rarity=2/128}}
+{{DropsLine|name=Earth rune|quantity=9|rarity=2/128}}
+{{DropsLine|name=Mind rune|quantity=12|rarity=2/128}}
+{{DropsLine|name=Nature rune|quantity=3|rarity=1/128}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Herbs===
+{{HerbDropTableInfo|override=There is a 46/128 chance of rolling the [[herb drop table]]. The chance of one herb is 35/128 and the chance of two herbs is 11/128 leading to an average of 1.23 herbs per roll, and 0.4453 herbs per druid kill.}}
+{{DropsTableHead}}
+{{HerbDropLines|46/128|1-2}}
+{{DropsTableBottom}}
+
+===Coins===
+{{DropsTableHead}}
+{{DropsLine|name=Coins|quantity=3|rarity=5/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=8|rarity=5/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=29|rarity=3/128|gemw=No}}
+{{DropsLine|name=Coins|quantity=35|rarity=1/128|gemw=No}}
+{{DropsTableBottom}}
+
+===Other===
+{{DropsTableHead}}
+{{DropsLine|name=Nothing|rarity=33/128}}
+{{DropsLine|name=Vial of water|quantity=1|rarity=10/128}}
+{{DropsLine|name=Bronze longsword|quantity=1|rarity=1/128}}
+{{DropsLine|name=Snape grass|quantity=1|rarity=1/128}}
+{{DropsLine|name=Unholy mould|quantity=1|rarity=1/128|raritynotes=<ref group=d>Unholy moulds are only dropped after completion of [[Observatory Quest]].</ref>|gemw=No}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Gem drop table===
+{{GemDropTable|1/128|chaostalisman=yes|naturetalisman=yes}}
+
+===Tertiary===
+{{DropsTableHead}}
+{{DropsLine|name=Looting bag|quantity=1|rarity=1/11|raritynotes=<ref group=d>Looting bags are only dropped by those found in the [[Wilderness]].</ref>|gemw=No|leagueRegion=Wilderness}}
+{{DropsLine|name=Ensouled chaos druid head|quantity=1|rarity=1/35}}
+{{DropsTableBottom}}
+{{Reflist|group=d}}
+
+===Wilderness Slayer tertiary===
+{{WildernessSlayerDropTable|combat=13|hitpoints=20}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|daterange = 29 November 2004 –<br/>17 January 2005
+|change = The NPC's examine was changed from "''A crazy evil druid.''" to "''A crazy, evil druid.''"
+}}
+{{Subject changes footer}}
+
+==See also==
+*[[Druid]]
+*[[Elder chaos druid]]
+*[[Undead druid]]
+
+{{Slepe}}
+{{Edgeville Dungeon}}
+{{Taverley Dungeon}}
+[[Category:Zamorakians]]

@@ -1,0 +1,139 @@
+{{External|rs|rsc=Magic Logs}}
+{{Infobox Item
+|name = Magic logs
+|image = [[File:Magic logs.png]]
+|release = [[25 March]] [[2002]]
+|update = Latest RuneScape News (25 March 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Logs cut from a magic tree.
+|value = 320
+|weight = 2.000
+|exchange = Yes
+|id = 1513
+}}
+[[File:Magic logs detail.png|left|130px]]
+'''Magic logs''' are logs that can be acquired using the [[Woodcutting]] [[skill]] from [[magic tree]]s. Cutting magic trees requires a Woodcutting level of 75 or higher and yields 250 Woodcutting [[experience]] per log cut. Due to the slow speed at which magic trees are cut at this level, it is advised that players wait until they have a Woodcutting level of at least 85 before chopping magic trees. Players can expect to gain up to 130 magic logs per hour using a [[dragon axe]].
+
+Magic logs can be fletched into [[Magic shortbow (u)|unstrung magic shortbows]] with a [[Fletching]] level of 80, granting 83.3 Fletching experience, or into [[Magic longbow (u)|unstrung magic longbows]] with a Fletching level of 85, granting 91.5 Fletching experience.
+
+Magic logs can also be burnt with a [[Firemaking]] level of 75, granting 303.8 Firemaking experience.
+
+Magic logs are needed for three quests: twelve for [[Desert Treasure I]], one for [[Mourning's End Part I]], and three for unlocking the [[Gnome Stronghold]] [[balloon route]] (requirement for [[Monkey Madness II]]), requiring sixteen magic logs in total.
+
+[[Ultimate Ironmen]] can permanently store magic logs with the [[Friendly Forester]] log storage or balloon transport [[log storage]].
+
+6 magic logs can be used to light an [[Abyssal lantern (magic logs)|Abyssal lantern]], requiring 75 Firemaking.
+
+==Skilling info==
+{{Woodcutting info
+|name = Magic Tree
+|level = 75
+|xp = 250
+|tree = [[Magic tree]]
+|tool = [[Axe]]
+|time = 119.4 seconds
+}}
+
+{{Firemaking info
+|version1 = Tinderbox
+|version2 = Bow
+|version3 = Barbarian pyre
+|version4 = Bonfire
+|skill2name = Crafting
+|name = Magic logs
+|skill1lvl1 = 75
+|skill1lvl2 = 95
+|pyrelevel = 85
+|craftxp = 75.9
+|skill1lvl3 = 85
+|skill2lvl3 = 85
+|skill1lvl4 = 75
+|skill1exp1 = 303.8
+|skill1exp2 = 303.8
+|skill1exp3 = 303.8
+|skill1exp4 = 303.8
+|facility1 = N/A
+|facility2 = N/A
+|facility3 = [[Funeral pyre (Barbarian)|Barbarian funeral pyre]]
+|facility4 = [[Fire]] or [[Forester's Campfire]]
+|tool1 = [[Tinderbox]]
+|tool2 = [[Bow]]
+|tool3 = [[Tinderbox]] or [[bow]], and an [[axe]]
+|tool4 = N/A
+|type = logs
+}}
+
+==Money making==
+{{Mmgsection|Cutting magic logs|Making magic pyre logs}}
+
+==Obtaining magic logs==
+Aside from chopping [[magic tree]]s, there are other ways to obtain magic logs, which is particularly useful for [[ironmen]] accounts.
+
+They are available from the [[Reward Cart]] from the [[Wintertodt]] and [[Hunters' loot sack]] from [[Hunters' Rumours]]. Both sources require minimum level 50 Woodcutting to obtain Magic logs as a reward, and rarity scales with Woodcutting level.
+
+They can also be obtained from [[Brimstone chest]] (1/30 chance) by completing Slayer tasks for [[Konar quo Maten]] if you have 75 combat and get a [[Brimstone key]], and [[Larran's big chest]] (1/30 chance) if you are doing [[Krystilia|Wilderness Slayer]] and obtain a [[Larran's key]]. Magic logs can also be obtained from taking [[Barbarian Assault/Gambles#High Gambles|High Gambles]] with points from the [[Barbarian Assault/Gambles#High Gambles|Barbarian Assault]] minigame. 
+
+Towards the end of the [[Legends' Quest]], it is possible to obtain them by allowing [[yommi tree|Yommi sapling]]s to die and chopping them down, which will yield magic logs about 27% of the time. '''This cannot be done once the quest is complete.''' This is a slow and tedious process (~2–4 hours to get the 16 needed), but may be preferable to other options. Approximately 200 seeds are required for 16 magic logs to complete Desert Treasure I, Mourning's End Part 1 and the Gnome Stronghold Balloon Route.
+
+In addition, there are several NPCs from whom players can receive magic logs, found in the list below.
+
+==Products==
+{{Uses material list|Magic logs}}
+
+==Item sources==
+{{Drop sources|Magic logs}}
+
+==Treasure Trails==
+*{{SherlockChallenge|Burning a magic log|master}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 17 July 2007
+|update = Game Improvements (July 2007)
+|change = The item was graphically updated to distinguish it from [[Willow logs]].
+}}
+{{Subject changes
+|date = 2 May 2006
+|update = Return of the Wise Old Man!
+|change = The item's examine was changed from "''Logs made from magical wood.''" to "''Logs cut from a magic tree.''"
+}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The item was graphically updated with the release of [[Farming]].
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Magic logs detail (beta).png|center|300x150px]]
+|[[File:Magic logs detail (historical v1).png|center|300x150px]]
+|[[File:Magic logs detail (historical v2).png|center|300x150px]]
+|[[File:Magic logs detail animated.gif|center|300x150px]]
+|-
+|[[File:Magic logs (beta).png|center]]
+|[[File:Magic logs (historical, v1).png|center]]
+|[[File:Magic logs (historical, v2).png|center]]
+|[[File:Magic logs animated.gif|center]]
+|-
+|RuneScape 2<br/>Beta
+|29 March 2004 -<br/>11 July 2005
+|11 July 2005 -<br/>17 July 2007
+|17 July 2007 -<br/>present
+|}
+
+==Trivia==
+[[File:Magic logs animated.gif|right]]
+*There is a glitch which can sometimes occur when opening your bank, or scrolling too quickly within your bank where the inventory icon may become animated. This also affects other animated items such as the [[Fire cape]] and [[Dramen branch]].
+[[File:Magic logs texture.png|right]]
+*The animated texture that covers Magic logs and [[Magic tree]]s contains two purple pixels, which can occasionally be seen ingame.
+
+{{Logs}}
+{{Fletching}}

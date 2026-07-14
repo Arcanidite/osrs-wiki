@@ -1,0 +1,61 @@
+{{External|rs|rsc}}
+{{Infobox Item
+|name = Glassblowing pipe
+|image = [[File:Glassblowing pipe.png]]
+|release = [[18 March]] [[2002]]
+|update = Latest RuneScape News (18 March 2002)
+|members = Yes
+|quest = No
+|tradeable = Yes
+|equipable = No
+|stackable = No
+|noteable = Yes
+|options = Drop
+|examine = Used to form molten glass into useful items.
+|value = 2
+|weight = 0.056
+|respawn = 100
+|exchange = Yes
+|id = 1785
+}}
+[[File:Glassblowing pipe detail.png|left|100px]]
+A '''glassblowing pipe''' is a tool used to make items from [[molten glass]] using the [[Crafting]] skill. It is required to make glass items. The item can be obtained from [[Fritz the Glassblower]]'s house found in the south-western area of [[Entrana]], taken from a [[tool store 3]] in a [[player-owned house]] (required 35 [[Construction]]), from [[Grandpa Jack]]'s house (from [[Fishing Contest]] quest), bought from the [[Piscatoris Fishing Colony]] after finishing [[Swan Song]], or bought from [[charter ship]] locations (from the crew).
+
+==Products==
+{{Uses tool list|Glassblowing pipe}}
+
+==Item sources==
+{{Drop sources|Glassblowing pipe}}
+
+===Spawns===
+{{ItemSpawnTableHead}}
+{{ItemSpawnLine|name=Glassblowing pipe|location=[[Hemenster]] - [[Grandpa Jack]]'s house|members=Yes|2652,3454|leagueRegion=Kandarin}}
+{{ItemSpawnLine|name=Glassblowing pipe|location=[[Entrana]] - house west of furnace|members=Yes|2822,3355|leagueRegion=Asgarnia}}
+{{ItemSpawnTableBottom}}
+
+===Shop locations===
+{{Store locations list|Glassblowing pipe}}
+[[File:Glassblowing.gif|thumb|right|100px|A player using the Glassblowing pipe.]]
+
+==Sound effects==
+{{SFXTableHead}}
+{{SFXLine|file=Glassblowing.wav|desc=Blowing glass}}
+{{SFXTableBottom}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 9 December 2021
+|update = Grand Exchange Tax & Item Sink
+|change = Glassblowing pipes have been exempted from the [[Grand Exchange#Convenience fee and item sink|Grand Exchange convenience fee]].
+}}
+{{Subject changes
+|date = 7 February 2006
+|update = Cabin Fever
+|change = The item's examine was changed from undefined ("''It's a Glassblowing pipe.''") to "''Used to form molten glass into useful items.''"
+}}
+{{Subject changes footer}}
+
+{{Glass}}
+[[Category:Items exempt from Grand Exchange tax]][[Category:Tools]]
+[[Category:Crafting items]]

@@ -1,0 +1,100 @@
+{{External|rs|rsc=Evil Altar}}
+{{otheruses|the temple in level 38 [[Wilderness]]|other uses|Chaos Temple}}
+{{Infobox Location
+|name = Chaos Temple
+|image = [[File:Chaos Temple (hut) exterior.png|300px]]
+|release = [[27 February]] [[2002]]
+|update = Latest RuneScape News (27 February 2002)
+|members = No (Using bones on altar is members only)
+|location = [[Wilderness]]
+|wilderness = 38
+|map = {{Map|name=Chaos Temple (hut)|mtype=polygon|2958,3823|2954,3823|2953,3824|2953,3825|2952,3825|2951,3826|2950,3825|2949,3825|2949,3824|2948,3823|2947,3823|2947,3822|2946,3821|2947,3820|2947,3819|2948,3819|2949,3818|2949,3817|2950,3817|2951,3816|2952,3817|2953,3817|2953,3818|2954,3819|2958,3819}}
+|leagueRegion = Wilderness
+}}
+{{Relativelocation
+|north = Frozen Waste Plateau
+|west = Lucien's camp
+|location = Chaos Temple (hut)
+|east = Lava Maze
+|south = Forgotten Cemetery
+}}
+The '''Chaos Temple''' is a structure in level 38 [[Wilderness]], west of the [[Lava Maze]]. It contains a [[Chaos altar (Prayer)|Chaos altar]] where players can recharge and train their [[Prayer]] using [[Remains#Bones|bones]] on the altar (other [[remains]] such as [[Remains#Demonic ashes|demonic ashes]] do not work). Free players may visit the temple, however only members may take advantage of the altar's benefits.
+
+Praying at the Chaos altar inside is a requirement for the [[Easy Wilderness Diary]].
+
+==Transportation==
+* Teleport via use of a [[burning amulet]]'s teleport to [[Lava Maze]] entrance and run south-west (be wary of player killers)
+* Teleport via [[Ghorrock Teleport]] (Level 96 Magic) on [[Ancient Magicks]] and run south
+* Teleport via [[Cemetery Teleport]] (Level 71 Magic) on the [[Arceuus spellbook]] and run north
+* Players who have an [[Obelisk (Construction)|Obelisk]] in their [[player-owned house]] can use it to teleport to level 44 Wilderness and then run south
+* If [[Wilderness Diary|Hard Wilderness Diary]] is complete, any Obelisk can be used to teleport to level 44 Wilderness and then run south
+
+==Features==
+[[File:Chaos Temple (hut).png|thumb|left|The Chaos Temple hut in Level 38 Wilderness]]
+A [[wine of Zamorak]] spawns on a table inside the hut, which can only be obtained by casting [[Telekinetic Grab]]. Players who have completed the [[hard Wilderness Diary]] will receive them in noted form. The wine respawns approximately every 20 seconds.
+
+Players who kill the [[Chaos Fanatic]] may use the Chaos altar to recharge their Prayer as it is very close.
+
+Due to the altar's use for Prayer training while being in multi-combat, it is frequently targeted by [[Player killing|player killers]].
+
+There is also the [[Elder Chaos druid (NPC)|Elder Chaos druid]] who can unnote any type of [[bones]] for a fee of {{Coins|50}} per bone.
+{{Clear|left}}
+
+==Chaos Altar==
+[[Members]] can offer [[bones]] on the [[Chaos altar (Prayer)|Chaos altar]] in the Wilderness, granting 3.5x Prayer [[experience]] per bone, the same bonus as a [[gilded altar]] with two burners lit. However, every bone offered on the altar has a 50% chance to not be consumed, which can activate for the same bone repeatedly. Therefore, the average experience per bone is 2x the amount from a [[player-owned house]] [[gilded altar]] with both [[incense burner]]s lit, or 7x the normal burying experience.  When this effect activates and a bone is saved, the message {{Mes|The Dark Lord spares your sacrifice but still rewards you for your efforts.}} is displayed. It is recommended to buy extra bones to mitigate any bad luck with offerings. Players who buy 53% of the bones that they would need at a gilded altar with two burners lit have a ~97% chance to reach their goal.
+
+The 5% Prayer experience bonus of the [[Zealot's robes]] stacks multiplicatively with the Chaos altar's bonus, yielding a 52.5% chance to not consume a bone, meaning they can effectively be sacrificed an average of 2.1 times. This results in an effective 7.37x the normal burying experience per bone.
+
+=={{FloorNumber|uk=1|caps=y|nohelp=y}}==
+The {{FloorNumber|uk=1}} is accessed from [[Lucien's camp]] during the quest [[While Guthix Sleeps]]. It cannot be accessed from the {{FloorNumber|uk=0}} and is not considered part of the Wilderness PvP areas.
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 10 July 2024
+|update = While Guthix Sleeps
+|type = hotfix
+|change = The Chaos Temple was reverted to a [[multicombat area]].{{CiteReddit|author=[[Mod Goblin]]|url=https://www.reddit.com/r/2007scape/comments/1dztkpf/comment/lchz0bk/|title=PSA: All of chaos altar is now singles|quote=Counter-PSA: This has been hotfixed and was not intended!|date=10 July 2024|archiveurl=https://reldo.runescape.wiki/i/27964058|archivedate=26 May 2026}}
+}}
+{{Subject changes
+|date = 10 July 2024
+|update = While Guthix Sleeps
+|change = 
+* The Chaos Temple's roof was graphically updated.
+* The Chaos Temple was unintentionally made a [[single-way combat]] area.
+}}
+{{Subject changes
+|date = 22 February 2023
+|update = 10th Birthday Event
+|change = Sacrificed bones will now be consumed starting from the top left of the [[Inventory]], rather than using the bone that was clicked on. 
+}}
+{{Subject changes
+|date = 11 December 2017
+|update = It's Christmas Time
+|change = A confirmation message has been added for players trying to bury bones in the temple.
+}}
+{{Subject changes
+|date = 7 December 2017
+|update = The Corsair Curse and Wilderness Chaos Altar
+|poll = Wilderness Rejuvenation II
+|change = The Prayer training benefits were added.
+}}
+{{Subject changes
+|date = 2 March 2017
+|update = Wilderness & PvP Improvements
+|poll = Quality of Life - PvP-related Suggestions
+|change = The [[wine of zamorak]] spawn was added.
+}}
+{{Subject changes footer}}
+
+== Trivia ==
+* The {{FloorNumber|uk=1}} is available for free to play, although you need to reach it via members world.
+
+== See also ==
+* [[Pay-to-play Prayer training#Offering bones at the Chaos Temple|Pay-to-play Prayer training § Offering bones at the Chaos Temple]]
+
+== References ==
+{{Reflist}}
+
+{{Wilderness}}
+{{Places of worship}}

@@ -1,0 +1,9 @@
+==Transportation==
+* Teleport using [[Minigame Teleport]], either through any spellbook or the [[Grouping]] interface, by selecting Tithe Farm. Requires having entered Tithe Farm once before. 
+* Use the [[Lovakengj Minecart Network]] to Hosidius South to travel directly south of the Tithe Farm
+* Use the [[fairy ring]] '''{{Fairycode|akr}},''' to teleport to the [[Hosidius Vinery]] and go south
+* Use a [[Hosidius teleport]] or exit a [[player-owned house]] in Hosidius and go east
+* Use a [[Xeric's talisman]] to teleport to [[Xeric's Glade]] and go south-east
+* Reminisce using the [[Kharedst's memoirs]] or [[book of the dead]] to Hosidius and go south-east
+* Use a [[skills necklace]] to teleport to the [[Woodcutting Guild]] and go east
+* Use a [[Kourend Castle Teleport]] and go south-east

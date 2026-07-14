@@ -1,0 +1,22 @@
+===Forestry events===
+Participating in [[Forestry]] events offers decent Woodcutting experience and some profit from purchasing the rewards with anima-infused bark. Forestry events will appear while collecting logs in the overworld (excluding regular trees, hollow trees, and trees within the Woodcutting Guild).
+
+The official forestry worlds for members are '''388, 444, 487,''' and '''510.''' Using one of these worlds is recommended, as they are likely to have more players chopping trees in popular locations, such as:
+* Willows south of the [[Draynor Village]] bank
+* Maple trees in [[Mistrock]], south of Aldarin (1 tile away from a bank deposit box, 5 tiles away from a bank)
+* Maple trees north of the [[Seers' Village]] bank
+* Yews in [[Mistrock]], south of Aldarin (4 tiles away from a bank deposit box, 9 tiles away from a bank)
+* Yews at the [[Seers' Village]] church
+* Yews next to the south-eastern bank in [[Prifddinas]]
+* Teaks south of [[Civitas illa Fortis]]
+* Teaks on the northern part of [[Isle of Souls]]
+* Teaks in the north-east corner of [[Prifddinas]]
+* Magic trees in the [[Myths' Guild]]
+* Magic trees south of the [[Hosidius]] bank
+* Magic trees near the southernmost [[Vale Totems|totem]] in [[Auburn Valley]]
+* Camphor trees to the west of [[The Summer Shore]]
+* Camphor trees in [[The Sacred Grove]] (6 tiles away from a bank deposit box)
+* Ironwood trees on [[Sunbleak Island]] (Requires 72 [[Sailing]]{{Boostable|no}}, has a bank nearby)
+* Rosewood trees on [[Drumstick Isle|Drumstick isle]] (Requires 79 [[Sailing]]{{Boostable|No}})
+
+Experience rates vary depending on the tree cut and the amount of other players. When cutting yews and participating in the events, players can gain somewhere around 80,000–90,000 experience per hour at level 99.

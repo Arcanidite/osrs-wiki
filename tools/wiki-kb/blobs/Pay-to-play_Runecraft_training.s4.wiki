@@ -1,0 +1,3 @@
+===Rune pouch===
+[[File:Rune_pouch_detail.png|right|thumb|120px|The [[rune pouch]].]]
+The [[rune pouch]] (not to be confused with [[essence pouch]]es) can store 16,000 of three types of runes. It saves inventory space for methods where runes are used for casting spells, such as [[NPC Contact]] for repairing essence pouches. This will increase experience rates for those methods. To get a rune pouch, buy a [[rune pouch note]] from the [[Grand Exchange]] and use it on a banker in exchange for a rune pouch. A rune pouch note currently costs {{Coins|{{GEP|Rune pouch note}}}}.

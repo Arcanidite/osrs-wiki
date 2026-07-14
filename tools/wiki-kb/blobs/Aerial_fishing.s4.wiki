@@ -1,0 +1,64 @@
+==Experience rates==
+Below is a list of experience gained per hour, based on levels (provided 1,600 fish are caught per hour).
+
+{|class="wikitable align-center-1 align-center-2" style="text-align:right;"
+! colspan="2" | Level
+! colspan="3" | XP/h {{SCP|Fishing}} + {{SCP|Hunter}}
+! colspan="2" |XP/h (Total)
+|-
+! {{SCP|Fishing}}
+! {{SCP|Hunter}}
+! {{SCP|Fishing}}
+! {{SCP|Hunter}}
+! {{SCP}} Total
+!{{SCP|Cooking}}
+!{{SCP}}Total
+|-
+| 43
+| 35
+| 18,400
+| 26,400
+| 44,800
+|5,600
+|50,400
+|-
+| 56
+| 51
+| 20,088
+| 28,088
+| 48,976
+|5,985
+|54,161
+|-
+| 73
+| 68
+| 32,856
+| 42,659
+| 75,515
+|9,870
+|85,385
+|-
+|85
+|77
+|45,200
+|58,600
+|103,800
+|14,234
+|118,034
+|-
+| 91
+| 87
+| 51,649
+| 68,188
+| 119,837
+|19,155
+|138,992
+|-
+| 99
+| 99
+| 62,593
+| 82,311
+| 144,904
+|24,978
+|169,882
+|}
