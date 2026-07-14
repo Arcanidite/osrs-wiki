@@ -53,6 +53,10 @@ Read the ones your domain touches; when in doubt read more, not fewer.
 - **Training ordering (STRUCTURE, wiki-grounds facts):** `design/TRAINING_META_ORDERING.md` —
   the community 1-99 per-skill method spine + cross-skill dependency seeds; the ordering the
   fine-grained training breakdown follows (external → order only, wiki sets facts).
+- **State-annotated consolidation:** `design/STATE_CONSOLIDATION.md` — the ideal step-0→endgame
+  heap/quicksort scan, per-step `state_after` (skills/inventory/gear/bank + item states),
+  requisite inventory/gear/bank management, and the player-POV MICRO-gotchas category
+  (`tools/wiki-kb/micro_gotchas.log`). Verify state via `route_feasibility.mjs` + wiki + calc.
 - **Gotchas (quote verbatim to agents):** `tools/wiki-kb/gotchas.log`,
   `design/design-retros.log`, `tools/wiki-kb/GAME_GOTCHAS.md`, `tools/wiki-kb/GAME_KB.md`.
 - **Memories:** player-direct-granular, guide-burndown-model, opportunistic-granularity,
