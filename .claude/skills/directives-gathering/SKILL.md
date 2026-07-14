@@ -50,6 +50,9 @@ Read the ones your domain touches; when in doubt read more, not fewer.
   exception — it's wiki-hosted, so citable.)
 - **Voice + conventions-with-provenance:** `design/PLAYER_DIRECT_GRANULAR.md` (§7 is the cited
   convention registry; keep it and this skill in sync).
+- **Training ordering (STRUCTURE, wiki-grounds facts):** `design/TRAINING_META_ORDERING.md` —
+  the community 1-99 per-skill method spine + cross-skill dependency seeds; the ordering the
+  fine-grained training breakdown follows (external → order only, wiki sets facts).
 - **Gotchas (quote verbatim to agents):** `tools/wiki-kb/gotchas.log`,
   `design/design-retros.log`, `tools/wiki-kb/GAME_GOTCHAS.md`, `tools/wiki-kb/GAME_KB.md`.
 - **Memories:** player-direct-granular, guide-burndown-model, opportunistic-granularity,
@@ -99,6 +102,16 @@ Read the ones your domain touches; when in doubt read more, not fewer.
   **Loot/grind epochs (Barrows/GWD/raids) own self-contained intra-epoch supply loops —
   NEVER back-propagate their consumables (food/brews/pots) onto the spine.** (barrows-ACCESS
   = spine milestone; barrows-loot GRINDING = separate epoch.)
+
+## Consulting tools (run these to VALIDATE, don't eyeball)
+- **State-feasibility gate:** `node tools/guide-export/route_feasibility.mjs [route.json]` —
+  joins the ordered route with the steps.jsonl requisite bank, accumulates prefix state
+  (skills/quests/items/unlocks), and flags every step whose reqs aren't met where it lands.
+  `--at <id>` prints the state available at a step + its verdict; `--json` for machine parse.
+  ANY ordering/breakdown work MUST end with this at 0 faults (or documented-acceptable). It is
+  how "is the hypothesized next step doable given the computed state" gets answered — never by
+  eye. Cross-check calculated values (band xp) against `Experience_table.s2`, facts against the
+  wiki (wikicli). Extend it (new checks: item-math, quest-varbit gates) as the model grows.
 
 ## Augmenting this skill
 When a wave teaches you a durable convention or gotcha: (1) add/adjust it in §Registry, (2) add
