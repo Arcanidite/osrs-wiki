@@ -1124,7 +1124,8 @@ _SYNTH_ID_RE = re.compile(r"^synth-([a-z]+)-(\d+)-\d+$")
 
 def enrich(plan, catalog, steer_points, supply_chains=None,
            coarse_expansions=None, atoms_by_id=None, extra_by_id=None,
-           steps_bank=None, oppgran_opp_rows=None, methods_by_skill=None):
+           steps_bank=None, oppgran_opp_rows=None, methods_by_skill=None,
+           subchecklists_by_skill=None):
     goal = plan["goal"]
     zones = catalog.get("zones", {})
     reals = [s for s in plan["path"] if not s.get("_capstone")]
@@ -1375,6 +1376,25 @@ def enrich(plan, catalog, steer_points, supply_chains=None,
             band = next((b for to, b in bands if to >= level), bands[-1][1])
             s["methods"] = band
 
+    # Same skill+band fallback for the granular sub-checklist (tenrich wave):
+    # a synth-<skill>-<level>-<n> training step renders the nearest authored
+    # band's atoms — the atoms' own until{skill:level} caps may name the
+    # band's target rather than the synth level, which is honest (the loop is
+    # the same; the stop point is the step's completionCondition). Gated on
+    # the same `granular` opt-in as the by-id attach.
+    if granular and subchecklists_by_skill:
+        for s in steps:
+            if s.get("subChecklist"):
+                continue
+            m = _SYNTH_ID_RE.match(s.get("id") or "")
+            if not m:
+                continue
+            bands = subchecklists_by_skill.get(m.group(1))
+            if not bands:
+                continue
+            level = int(m.group(2))
+            s["subChecklist"] = next((b for to, b in bands if to >= level), bands[-1][1])
+
     return {
         "id": "route-" + goal["id"],
         "name": f"{goal['label']} — Milestone Route",
@@ -1507,16 +1527,32 @@ def main():
     # granular:true (see enrich). Absent sidecar or flag off = every fixture
     # byte-identical. Atom order follows each expansion's own `steps` list
     # (same ordering contract _inject_coarse_atoms/_select_branch_drops use).
+    # U8 reuse fallback (tenrich wave): an expansion's steps[] may reference an
+    # atom that lives in steps.jsonl rather than the oppgran sidecar (pointer
+    # stubs like ctr-01-kill-chickens, external supply reuses like
+    # pps-02-steal-ranarr-seeds) — resolve those from steps.jsonl so the reuse
+    # renders instead of silently dropping out of the sub-checklist. Sidecar
+    # wins on id collision (it carries the corrected/enriched copy).
+    # methods_by_skill's shape is mirrored by subchecklists_by_skill for the
+    # synth-<skill>-<level>-<n> band-match fallback (see enrich).
     oppgran_by_id = {r["id"]: r for r in _load_jsonl(data_dir / "steps_oppgran.jsonl")}
+    steps_by_id = {s["id"]: s for s in raw_steps}
+    subchecklists_by_skill = {}
     for exp in _load_jsonl(data_dir / "coarse_expansions_oppgran.jsonl"):
         cid = exp.get("coarse_id")
-        atoms = [_project_subchecklist_atom(oppgran_by_id[sid])
-                 for sid in exp.get("steps", []) if sid in oppgran_by_id]
-        if cid and atoms:
-            extra_by_id.setdefault(cid, {})["subChecklist"] = {
-                "atoms": atoms,
-                "checkpoints": exp.get("checkpoints", []),
-            }
+        atoms = [_project_subchecklist_atom(oppgran_by_id.get(sid) or steps_by_id[sid])
+                 for sid in exp.get("steps", [])
+                 if sid in oppgran_by_id or sid in steps_by_id]
+        if not cid or not atoms:
+            continue
+        checklist = {"atoms": atoms, "checkpoints": exp.get("checkpoints", [])}
+        extra_by_id.setdefault(cid, {})["subChecklist"] = checklist
+        band = re.match(r"^train-([a-z]+)-(\d+)$", cid)
+        if band:
+            subchecklists_by_skill.setdefault(band.group(1), []).append(
+                (int(band.group(2)), checklist))
+    for bands in subchecklists_by_skill.values():
+        bands.sort(key=lambda b: b[0])
 
     # NORMALIZATION §1a — quest sub-checklist data (steps_quest_atoms.jsonl atom
     # rows + quest_expansions.jsonl registry, minted by consolidate_quest_atoms.py
@@ -1548,7 +1584,8 @@ def main():
                coarse_expansions=coarse_expansions, atoms_by_id=atoms_by_id,
                extra_by_id=extra_by_id, steps_bank=raw_steps,
                oppgran_opp_rows=oppgran_opp_rows,
-               methods_by_skill=methods_by_skill),
+               methods_by_skill=methods_by_skill,
+               subchecklists_by_skill=subchecklists_by_skill),
         sys.stdout, indent=2
     )
 
